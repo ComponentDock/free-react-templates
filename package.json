@@ -1,0 +1,17 @@
+{
+  "name": "free-react-templates",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @free-react-templates/web",
+    "build": "npm run build --workspace @free-react-templates/web",
+    "preview": "npm run preview --workspace @free-react-templates/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present"
+  }
+}
