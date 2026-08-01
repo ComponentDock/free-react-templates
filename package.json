@@ -20,7 +20,7 @@
     "test:coverage": "vitest run --coverage",
     "knip": "knip",
     "fallow": "fallow audit --gate all && fallow health && fallow dead-code && fallow dupes",
-    "spec:validate": "openspec validate",
+    "spec:validate": "openspec validate --specs",
     "prepare": "husky"
   },
   "lint-staged": {
