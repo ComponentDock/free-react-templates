@@ -33,9 +33,10 @@ the template (e.g. Aurora lives in `apps/aurora`, package `@free-react-templates
 - The user **reviews, approves, and merges PRs manually**. The job NEVER merges,
   never force-pushes, and never deletes branches.
 - The job **waits for the PR to be merged** before implementing the next template.
-- While waiting, it may **prepare** the next template (spec, docs, tasks/todo) on
-  its own branch `feat/template-<next>` — but **no implementation** (no source
-  code, no tests) until the current PR is merged.
+- While waiting, it may **prepare specs and docs for upcoming templates** (one
+  at a time, in TEMPLATES.md order) on their own `feat/template-<name>` branches
+  — but **no implementation** (no source code, no tests) until the current PR is
+  merged.
 
 ### State detection (each run)
 
@@ -52,10 +53,16 @@ the template (e.g. Aurora lives in `apps/aurora`, package `@free-react-templates
 - **B · Implementing** — continue on the existing branch; when complete: full
   gate → push → `gh pr create` → report PR URL → start prep for the next
   template (state C).
-- **C · Waiting (PR open)** — do NOT touch the template branch. Prepare the next
-  template only: `openspec/specs/template-<next>/spec.md` + tasks/docs outline on
-  branch `feat/template-<next>` (rebase onto `origin/main` first if it exists).
-  No implementation code. If prep exists unchanged, do nothing.
+- **C · Waiting (PR open)** — do NOT touch the template branch. **Prepare specs
+  and docs for upcoming templates, one at a time, in TEMPLATES.md order**: start
+  with the first `- [ ]` item after the current one whose spec does not yet
+  exist, on its own branch `feat/template-<name>` (rebase onto `origin/main`
+  first if it exists) — OpenSpec spec + tasks/todo outline + docs only. No
+  implementation code, no tests, no `apps/<name>` folder. If that prep is done
+  and the PR is still open, **continue to the following template** and prepare
+  its spec/docs the same way — keep advancing down the checklist while the PR
+  remains open (specs/docs only, never implementation). Stop when all remaining
+  templates are prepared (report idle-waiting) or when the PR merges.
 - **D · Merged** — on main: pull, mark the template's `TEMPLATES.md` lines
   `[~]` → `[x]` (the only direct-to-main commit allowed), then start the next
   template (rebase prep branch onto main → `[~]` → implement, or state A).
