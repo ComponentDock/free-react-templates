@@ -1,0 +1,4 @@
+{
+  "ignoreBinaries": ["fallow"],
+  "ignoreDependencies": ["lint-staged"]
+}

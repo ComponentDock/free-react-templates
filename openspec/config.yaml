@@ -1,0 +1,34 @@
+schema: spec-driven
+
+context: |
+  free-react-templates: a monorepo of free React website templates (npm workspaces:
+  apps/*, packages/*). Each app in apps/ is one standalone template; shared UI lives
+  in packages/ui.
+
+  Tech stack: Vite (latest), React 19, Tailwind CSS 4 (class-based dark mode via
+  @custom-variant dark), TypeScript (strict). Tests: Vitest + Testing Library,
+  100% coverage enforced (root vitest.config.ts thresholds). Lint: oxlint. Format:
+  prettier. Dead code: knip + fallow.
+
+  Conventions: conventional commits, husky pre-commit (lint-staged) + pre-push
+  (typecheck, lint, test, build, knip, fallow). Templates are recreated from
+  colorlib.com designs under different names (see TEMPLATES.md checklist, one
+  spec per template in openspec/specs/template-<name>/).
+
+rules:
+  proposal:
+    - Keep proposals under 500 words
+    - Always include a "Non-goals" section
+  tasks:
+    - Break tasks into chunks of max 2 hours
+    - Every task must include its test (TDD — tests first)
+
+operations:
+  apply:
+    guidance:
+      - Tests are written first (red), then implementation (green). Keep 100% coverage.
+      - Run `npm run typecheck && npm run lint && npm test && npm run build && npm run knip && npm run fallow` before finishing.
+  archive:
+    guidance:
+      - Update TEMPLATES.md: mark the template's checklist item as done
+      - Summarize the template and its coverage

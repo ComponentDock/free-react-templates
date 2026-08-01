@@ -12,6 +12,35 @@
     "build": "npm run build --workspace @free-react-templates/web",
     "preview": "npm run preview --workspace @free-react-templates/web",
     "typecheck": "npm run typecheck --workspaces --if-present",
-    "lint": "npm run lint --workspaces --if-present"
+    "lint": "oxlint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "knip": "knip",
+    "fallow": "fallow audit --gate all && fallow health && fallow dead-code && fallow dupes",
+    "spec:validate": "openspec validate",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "oxlint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css,html}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@fission-ai/openspec": "^1.7.0",
+    "@vitest/coverage-v8": "^4.1.10",
+    "husky": "^9.1.7",
+    "jsdom": "^30.0.1",
+    "knip": "^6.31.0",
+    "lint-staged": "^17.3.0",
+    "oxlint": "^1.76.0",
+    "prettier": "^3.9.6",
+    "vitest": "^4.1.10"
   }
 }

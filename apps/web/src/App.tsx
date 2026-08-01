@@ -12,6 +12,9 @@ export function App() {
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', dark)
+    return () => {
+      document.documentElement.classList.remove('dark')
+    }
   }, [dark])
 
   return (
@@ -33,8 +36,8 @@ export function App() {
             <span className="text-primary-600 dark:text-primary-400"> React templates</span>
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-gray-600 dark:text-gray-400">
-            Copy a template, run it, and ship. Shared UI lives in packages/ui —
-            components are never duplicated across templates.
+            Copy a template, run it, and ship. Shared UI lives in packages/ui — components are never
+            duplicated across templates.
           </p>
           <div className="mt-6 flex justify-center gap-3">
             <Button>Browse templates</Button>
