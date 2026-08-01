@@ -11,7 +11,7 @@ Run in order; all must succeed:
 npm run typecheck      # tsc --noEmit per workspace
 npm run lint           # oxlint (0 warnings, 0 errors)
 npm run test:coverage  # vitest run --coverage (100% lines/functions/branches/statements)
-npm run build          # aurora: tsc --noEmit && vite build
+npm run build          # tsc --noEmit && vite build per workspace (--workspaces --if-present)
 npm run knip           # unused exports/deps/binaries
 npm run fallow         # audit --gate all + health + dead-code + dupes
 ```

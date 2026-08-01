@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "dev": "npm run dev --workspace @free-react-templates/aurora",
-    "build": "npm run build --workspace @free-react-templates/aurora",
+    "build": "npm run build --workspaces --if-present",
     "preview": "npm run preview --workspace @free-react-templates/aurora",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "lint": "oxlint",
