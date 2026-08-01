@@ -48,6 +48,7 @@ Key decisions (details in `docs/adr/`):
 | Language | TypeScript 7, strict, `noUncheckedIndexedAccess` |
 | Tests | Vitest 4 + Testing Library + jsdom |
 | Coverage | v8 provider, 100% thresholds (root `vitest.config.ts`) |
+| Form validation | zod (typed schemas; `z.infer` form types) |
 | Lint | oxlint (`react-in-jsx-scope` off — automatic runtime) |
 | Format | Prettier |
 | Dead code | knip + fallow-rs (`.fallowrc.json`) |

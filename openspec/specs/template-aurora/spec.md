@@ -98,5 +98,5 @@ The system SHALL compose all sections in a single page with a main landmark and 
 #### Scenario: Full page render
 - **GIVEN** the Aurora app is rendered
 - **WHEN** the page loads
-- **THEN** all sections (Navbar, Hero, About, Services, Testimonials, Contact, Footer) SHALL be present in the main landmark
+- **THEN** the page SHALL compose all sections: the Navbar in the banner landmark, Hero, About, Services, Testimonials, and Contact in the main landmark, and the Footer in the contentinfo landmark
 - **AND** the document title SHALL be "Aurora — Personal Template"
