@@ -25,6 +25,8 @@ free-react-templates/
 ├── openspec/
 │   └── specs/template-<name>/spec.md   # Per-template specs (GitHub Spec Kit)
 ├── docs/                     # AI context, conventions, contracts, ADRs
+│   └── templates/<name>/     # Per-template prep: tasks/todo outline, notes
+│                             # (prepared on main while a PR awaits review)
 ├── .specify/                 # Spec Kit workflow scaffolding
 ├── TEMPLATES.md              # ColorLib backlog checklist (1,646 items)
 ├── AGENTS.md                 # AI coding rules (read first)
