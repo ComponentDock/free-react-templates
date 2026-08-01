@@ -57,6 +57,10 @@ Tests: Vitest + Testing Library with **100% coverage enforced**.
    in `TEMPLATES.md`. Mark it `[~]` when starting, `[x]` when done.
 4. Write/update the spec, then the tests (red), then the implementation (green).
 5. Run the full verification chain (see rule 4) until everything passes.
-6. Self-review (rule 9), update docs/checklist, commit conventionally, push.
-7. If nothing needs doing: do NOT create an empty commit — report the repo is
+6. Self-review (rule 9), update docs/checklist, commit conventionally.
+7. **Templates ship via PRs** (see `CRONJOB.md`): work on `feat/template-<name>`
+   branches, open a PR to `main`, and let the user review/merge manually. Never
+   merge a PR yourself. While a PR is open, you may prepare the next template's
+   spec/docs but not implement it.
+8. If nothing needs doing: do NOT create an empty commit — report the repo is
    green and idle.

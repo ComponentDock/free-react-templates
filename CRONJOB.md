@@ -24,36 +24,54 @@ checklist is `TEMPLATES.md` (1,646 items — `[ ]` not started · `[~]` in progr
 `[x]` done). Every template lives in its own app folder under `apps/`, named after
 the template (e.g. Aurora lives in `apps/aurora`, package `@free-react-templates/aurora`).
 
-### Process (each run)
+### PR-based workflow (one template at a time)
 
-1. **Assess** — `git log --oneline -10`, first `[~]`/`[ ]` item in `TEMPLATES.md`,
-   existing specs in `openspec/specs/`, existing apps in `apps/`.
-2. **Priority** — if a spec exists whose template app is missing (currently
-   `template-aurora`), implement that first; mark its `TEMPLATES.md` item `[~]`
-   when starting and `[x]` when finished. Otherwise pick the first `- [ ]` item,
-   mark it `[~]`, and create `apps/<template-name>` (copy the simplest existing
-   app, rename the package to `@free-react-templates/<template-name>`).
-3. **Spec-first** — write `openspec/specs/template-<name>/spec.md` with Gherkin
-   requirements + scenarios (navigation, hero, about, services, features,
-   testimonials, contact form, footer, composition). Validate with
-   `npm run spec:validate`.
-4. **TDD** — write Vitest + Testing Library tests first (red), then implement,
-   reusing `packages/ui`. Run `npm run test:coverage` until 100%
-   lines/functions/branches/statements.
-5. **Verify** — run until all pass:
-   `npm run typecheck` → `npm run lint` → `npm run test:coverage` →
-   `npm run build` → `npm run knip` → `npm run fallow` (never disable or ignore
-   failing checks).
-6. **Commit** — focused atomic commits with conventional messages.
-7. **Push** — to `origin main`; report honestly if credentials block the push.
-8. **Idle** — if everything is green and nothing is in progress, do NOT create an
-   empty commit; report the pipeline is idle.
+- Each template is implemented on its **own branch** created from `main`:
+  `feat/template-<name>`.
+- When a template is finished and fully verified, the job pushes the branch and
+  opens a **Pull Request to `main`** (`gh pr create`).
+- The user **reviews, approves, and merges PRs manually**. The job NEVER merges,
+  never force-pushes, and never deletes branches.
+- The job **waits for the PR to be merged** before implementing the next template.
+- While waiting, it may **prepare** the next template (spec, docs, tasks/todo) on
+  its own branch `feat/template-<next>` — but **no implementation** (no source
+  code, no tests) until the current PR is merged.
+
+### State detection (each run)
+
+1. `git fetch origin`, `git status`, `git branch -a`, `gh pr list --state open`
+   (and merged) for `feat/template-*` branches.
+2. Current in-progress template = first `[~]` item in `TEMPLATES.md`; if none,
+   the pipeline is idle.
+
+### Per-state actions
+
+- **A · Idle** — start the next template: first `- [ ]` item → branch
+  `feat/template-<name>` from latest `origin/main`, mark `[~]`, spec-first TDD,
+  full gate, push, open PR.
+- **B · Implementing** — continue on the existing branch; when complete: full
+  gate → push → `gh pr create` → report PR URL → start prep for the next
+  template (state C).
+- **C · Waiting (PR open)** — do NOT touch the template branch. Prepare the next
+  template only: `openspec/specs/template-<next>/spec.md` + tasks/docs outline on
+  branch `feat/template-<next>` (rebase onto `origin/main` first if it exists).
+  No implementation code. If prep exists unchanged, do nothing.
+- **D · Merged** — on main: pull, mark the template's `TEMPLATES.md` lines
+  `[~]` → `[x]` (the only direct-to-main commit allowed), then start the next
+  template (rebase prep branch onto main → `[~]` → implement, or state A).
+- **E · Closed without merge** — report honestly; wait for user direction.
+
+### Verification chain (before opening a PR)
+
+`npm run typecheck` → `npm run lint` → `npm run test:coverage` (100%) →
+`npm run build` → `npm run knip` → `npm run fallow` (+ `npm run spec:validate`).
+Fix root causes; never disable checks; never bypass hooks with `--no-verify`.
 
 ### Report (each run)
 
-Templates started/completed, spec created/updated, test count + coverage,
-files modified, verification results, commit hashes, push status, next queued
-template.
+Detected state (A–E), template worked on, branch name, PR number/URL, prep
+progress for the next template, files modified, verification results, coverage,
+commit hashes, push status, and what the job is waiting on.
 
 ---
 
