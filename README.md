@@ -17,12 +17,15 @@ production-ready starting point built with the latest versions of the core stack
 ```
 free-react-templates/
 ├── apps/
-│   └── web/              # The Vite + React demo app
+│   └── aurora/          # Template: Aurora (personal/business landing)
 ├── packages/
-│   └── ui/               # Shared UI components (Button, Card, Badge, cn)
-├── package.json          # npm workspaces root
-└── tsconfig.base.json    # Shared strict TypeScript config
+│   └── ui/              # Shared UI components (Button, Card, Badge, cn)
+├── package.json         # npm workspaces root
+└── tsconfig.base.json   # Shared strict TypeScript config
 ```
+
+> **One app per template:** every template lives in its own folder under `apps/`,
+> named after the template (e.g. `apps/aurora` for the Aurora template).
 
 ## Getting started
 
@@ -51,7 +54,7 @@ npm run typecheck  # typecheck every workspace
 
 1. Pick the next unchecked item in `TEMPLATES.md`.
 2. Write its spec in `openspec/specs/template-<name>/spec.md` (requirements + scenarios).
-3. Copy `apps/web` to `apps/<template-name>` — or convert it if it's the next template.
+3. Create the app folder `apps/<template-name>` (copy an existing template, e.g. `apps/aurora`).
 4. Write tests first, implement until coverage is 100%.
 5. Run the pre-push chain locally: `npm run typecheck && npm run lint && npm run test:coverage && npm run build && npm run knip && npm run fallow`.
 6. Mark the `TEMPLATES.md` item `[x]` and commit conventionally.

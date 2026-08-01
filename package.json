@@ -8,9 +8,9 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "npm run dev --workspace @free-react-templates/web",
-    "build": "npm run build --workspace @free-react-templates/web",
-    "preview": "npm run preview --workspace @free-react-templates/web",
+    "dev": "npm run dev --workspace @free-react-templates/aurora",
+    "build": "npm run build --workspace @free-react-templates/aurora",
+    "preview": "npm run preview --workspace @free-react-templates/aurora",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "lint": "oxlint",
     "format": "prettier --write .",

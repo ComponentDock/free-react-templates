@@ -8,7 +8,7 @@ ColorLib free "Maze" personal website template design (see TEMPLATES.md),
 built under a different name with the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
 
-Aurora lives in `apps/web` and uses shared components from `packages/ui`
+Aurora lives in `apps/aurora` and uses shared components from `packages/ui`
 (Button, Badge, Card, cn).
 
 ## Requirements
