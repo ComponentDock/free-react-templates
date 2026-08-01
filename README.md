@@ -52,6 +52,9 @@ verification gates, self-review). Supporting docs:
 | [`docs/adr/`](docs/adr/) | Architecture decision records |
 | [`CRONJOB.md`](CRONJOB.md) | The hourly scheduled jobs driving this repo |
 
+> **Model note:** development agents working on this repo run on
+> `opencode-go/deepseek-v4-flash` (via Hermes Agent, opencode-go provider).
+
 ## Development workflow
 
 - **Spec-driven:** every template has a spec in `openspec/specs/template-<name>/spec.md`
