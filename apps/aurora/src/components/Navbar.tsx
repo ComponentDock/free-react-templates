@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Button } from '@free-react-templates/ui'
-import { ButtonLink } from './button-link'
+import { Button, ButtonLink } from '@free-react-templates/ui'
 
 const links = [
   { href: '#about', label: 'About' },

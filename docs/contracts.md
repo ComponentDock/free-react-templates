@@ -18,6 +18,7 @@ from '@free-react-templates/ui'` (resolves to `src/index.ts`).
 | --- | --- |
 | `cn(...inputs: ClassValue[])` | Returns merged Tailwind class string (clsx + tailwind-merge). Never returns `undefined`. |
 | `Button` | `forwardRef<HTMLButtonElement, ButtonProps>`; props: `variant?: 'primary'\|'outline'\|'ghost'\|'danger'` (default `primary`), `size?: 'sm'\|'md'\|'lg'` (default `md`), `type` default `'button'`, extends `ButtonHTMLAttributes`. |
+| `ButtonLink` | Anchor styled as a button. Props: `variant?: 'primary'\|'outline'` (default `primary`), `size?: 'sm'\|'md'` (default `md`), extends `AnchorHTMLAttributes<HTMLAnchorElement>`. Renders a real `<a>` (for navigation). |
 | `Badge` | props: `variant?: 'default'\|'success'\|'warning'\|'danger'` (default `default`), extends `HTMLAttributes<HTMLSpanElement>`. |
 | `Card` | Compound: `Card` + `Card.Header` + `Card.Content` + `Card.Footer` (also exported standalone). Extends `HTMLAttributes<HTMLDivElement>`. |
 
