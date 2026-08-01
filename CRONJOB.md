@@ -34,9 +34,9 @@ the template (e.g. Aurora lives in `apps/aurora`, package `@free-react-templates
   never force-pushes, and never deletes branches.
 - The job **waits for the PR to be merged** before implementing the next template.
 - While waiting, it **prepares specs and docs for upcoming templates** (one at a
-  time, in TEMPLATES.md order) and **commits them directly to `main`** — docs
-  only, never implementation code. Each template's prepared artifacts live in
-  their own separate folders to avoid merge conflicts:
+  time, in TEMPLATES.md order) and **commits and pushes them directly to `main`**
+  — docs only, never implementation code. Each template's prepared artifacts
+  live in their own separate folders to avoid merge conflicts:
   `openspec/specs/template-<name>/spec.md` + `docs/templates/<name>/`.
 
 ### State detection (each run)
@@ -56,16 +56,16 @@ the template (e.g. Aurora lives in `apps/aurora`, package `@free-react-templates
   template (state C).
 - **C · Waiting (PR open)** — do NOT touch the template branch and do NOT
   implement anything. **Prepare specs and docs for upcoming templates, one at a
-  time, in TEMPLATES.md order, and commit them directly to `main`** (pull latest
-  `origin/main` first): start with the first `- [ ]` item after the current one
-  whose spec does not yet exist on main, writing ONLY prep artifacts in its own
-  folders — `openspec/specs/template-<name>/spec.md` + `docs/templates/<name>/`
-  (tasks/todo outline, notes) — committed with a `docs:` message and pushed. If
-  that prep is done and the PR is still open, **continue to the following
-  template** and prepare its spec/docs the same way. Keep advancing down the
-  checklist while the PR remains open (specs/docs only, never implementation).
-  Stop when all remaining templates are prepared on main (report idle-waiting)
-  or when the PR merges.
+  time, in TEMPLATES.md order, and commit AND push them directly to `main`**
+  (pull latest `origin/main` first): start with the first `- [ ]` item after the
+  current one whose spec does not yet exist on main, writing ONLY prep artifacts
+  in its own separate folders — `openspec/specs/template-<name>/spec.md` +
+  `docs/templates/<name>/` (tasks/todo outline, notes) — committed with a `docs:`
+  message and pushed. If that prep is done and the PR is still open, **continue
+  to the following template** and prepare its spec/docs the same way. Keep
+  advancing down the checklist while the PR remains open (specs/docs only, never
+  implementation). Stop when all remaining templates are prepared and pushed on
+  main (report idle-waiting) or when the PR merges.
 - **D · Merged** — on main: pull, mark the template's `TEMPLATES.md` lines
   `[~]` → `[x]` (bookkeeping commit), then start the next template: branch
   `feat/template-<next>` from main (its spec/docs are already on main from prep),
