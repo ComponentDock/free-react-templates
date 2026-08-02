@@ -96,9 +96,14 @@ screenshot and say so in the PR.
   remaining templates are prepared and pushed on main (report idle-waiting) or
   when the PR merges.
 - **D · Merged** — on main: pull, mark the template's `TEMPLATES.md` lines
-  `[~]` → `[x]` (bookkeeping commit), then start the next template: branch
-  `feat/template-<next>` from main (its spec/docs are already on main from prep),
-  mark `[~]`, implement (state B); or state A if no spec exists yet.
+  `[~]` → `[x]` **and append the live Surge URL**
+  (`· [<name>](https://free-react-templates-<name>.surge.sh)`), set
+  `"homepage"` to that URL in the app's `package.json` (bookkeeping commit),
+  then start the next template: branch `feat/template-<next>` from main (its
+  spec/docs are already on main from prep), mark `[~]`, implement (state B); or
+  state A if no spec exists yet.
+  - Deployment is **automatic** via `.github/workflows/deploy-surge.yml` when
+    the user merges — the job never deploys.
 - **E · Closed without merge** — report honestly; wait for user direction.
 
 ### Verification chain (before opening a PR)
