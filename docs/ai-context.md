@@ -17,7 +17,8 @@ free-react-templates/
 ├── apps/                     # One folder per template (e.g. aurora/, drift/)
 │   ├── aurora/               # Template "Aurora" — personal/business landing
 │   ├── drift/                # Template "Drift" — 404 error page
-│   └── orbit/                # Template "Orbit" — 404 error page (space theme)
+│   ├── orbit/                # Template "Orbit" — 404 error page (space theme)
+│   └── vista/                # Template "Vista" — 404 error page (image background)
 │       ├── src/              # main.tsx, App.tsx, components/, test setup
 │       ├── index.html
 │       ├── vite.config.ts    # react + tailwindcss plugins, '@' alias -> ./src
@@ -37,6 +38,7 @@ free-react-templates/
 ```
 
 Key decisions (details in `docs/adr/`):
+
 - **Monorepo, one app per template** (`ADR-0001`) — apps/ contains only templates.
 - **Spec-driven with OpenSpec/Spec Kit** (`ADR-0002`) — each template has a spec.
 - **TDD with 100% coverage + guard chain** (`ADR-0003`) — husky pre-commit
@@ -44,24 +46,25 @@ Key decisions (details in `docs/adr/`):
 
 ## Stack & tooling
 
-| Concern | Tool |
-| --- | --- |
-| Build / dev | Vite 8 |
-| UI | React 19 (automatic JSX runtime — no `React` import needed) |
-| Styling | Tailwind CSS 4 (`@import 'tailwindcss'`, `@custom-variant dark` for class-based dark mode, `@theme` tokens) |
-| Language | TypeScript 7, strict, `noUncheckedIndexedAccess` |
-| Tests | Vitest 4 + Testing Library + jsdom |
-| Coverage | v8 provider, 100% thresholds (root `vitest.config.ts`) |
-| Form validation | zod (typed schemas; `z.infer` form types) |
-| Lint | oxlint (`react-in-jsx-scope` off — automatic runtime) |
-| Format | Prettier |
-| Dead code | knip + fallow-rs (`.fallowrc.json`) |
-| Specs | OpenSpec CLI 1.7 (`@fission-ai/openspec`) |
-| Hooks | husky: pre-commit (lint-staged) + pre-push (full gate) |
+| Concern         | Tool                                                                                                        |
+| --------------- | ----------------------------------------------------------------------------------------------------------- |
+| Build / dev     | Vite 8                                                                                                      |
+| UI              | React 19 (automatic JSX runtime — no `React` import needed)                                                 |
+| Styling         | Tailwind CSS 4 (`@import 'tailwindcss'`, `@custom-variant dark` for class-based dark mode, `@theme` tokens) |
+| Language        | TypeScript 7, strict, `noUncheckedIndexedAccess`                                                            |
+| Tests           | Vitest 4 + Testing Library + jsdom                                                                          |
+| Coverage        | v8 provider, 100% thresholds (root `vitest.config.ts`)                                                      |
+| Form validation | zod (typed schemas; `z.infer` form types)                                                                   |
+| Lint            | oxlint (`react-in-jsx-scope` off — automatic runtime)                                                       |
+| Format          | Prettier                                                                                                    |
+| Dead code       | knip + fallow-rs (`.fallowrc.json`)                                                                         |
+| Specs           | OpenSpec CLI 1.7 (`@fission-ai/openspec`)                                                                   |
+| Hooks           | husky: pre-commit (lint-staged) + pre-push (full gate)                                                      |
 
 ## Workflows
 
 ### Template pipeline (driven by an hourly cron job)
+
 1. Pick first `[~]`/`- [ ]` item in `TEMPLATES.md`.
 2. Write `openspec/specs/template-<name>/spec.md` (requirements + scenarios).
 3. Create `apps/<name>` (copy simplest existing app; rename workspace package).
@@ -69,6 +72,7 @@ Key decisions (details in `docs/adr/`):
 5. Full gate → commit conventionally → push → mark `TEMPLATES.md` item `[x]`.
 
 ### Daily development
+
 `npm run dev` (aurora workspace) · `npm test` · `npm run test:coverage` ·
 `npm run typecheck` · `npm run lint` · `npm run build` · `npm run knip` ·
 `npm run fallow` · `npm run spec:validate`.
