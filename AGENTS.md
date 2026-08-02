@@ -17,6 +17,9 @@ Tests: Vitest + Testing Library with **100% coverage enforced**.
 
 1. **Read the docs first.** Start with `docs/ai-context.md`, then
    `docs/conventions.md`, `docs/contracts.md`, `docs/verification.md`.
+   For template work, load `skills/research/colorlib-template-replication`
+   (mandatory fidelity process). The full agent skill library is mirrored in
+   `skills/`.
 2. **Spec-first.** No implementation without a spec:
    `openspec/specs/template-<name>/spec.md` (Gherkin requirements + scenarios).
    Validate with `npm run spec:validate`.
