@@ -56,8 +56,10 @@ screenshot and say so in the PR.
   `feat/template-<name>`.
 - When a template is finished and fully verified, the job pushes the branch and
   opens a **Pull Request to `main`** (`gh pr create`).
-- The user **reviews, approves, and merges PRs manually**. The job NEVER merges,
-  never force-pushes, and never deletes branches.
+- The user **reviews and merges PRs manually** during a **3-hour review
+  window** (measured from the PR's `createdAt`). If a PR is still open after 3
+  hours, the job **auto-merges it** (`gh pr merge --squash --delete-branch`) so
+  work never stalls — then proceeds to the next template. It never force-pushes.
 - The job **waits for the PR to be merged** before implementing the next template.
 - While waiting, it **prepares specs and docs for upcoming templates** (one at a
   time, in TEMPLATES.md order) and **commits and pushes them directly to `main`**
@@ -81,8 +83,12 @@ screenshot and say so in the PR.
   gate → push → `gh pr create` → report PR URL → start prep for the next
   template (state C).
 - **C · Waiting (PR open)** — do NOT touch the template branch and do NOT
-  implement anything. **Prepare specs and docs for upcoming templates, one at a
-  time, in TEMPLATES.md order, and commit AND push them directly to `main`**
+  implement anything while the PR is open. **First check the auto-merge
+  condition:** if the PR's `createdAt` is older than 3 hours and it is
+  `MERGEABLE`, auto-merge it (`gh pr merge --squash --delete-branch`), pull
+  main, and go to state D. Otherwise **prepare specs and docs for upcoming
+  templates, one at a time, in TEMPLATES.md order, and commit AND push them
+  directly to `main`**
   (pull latest `origin/main` first): start with the first `- [ ]` item after the
   current one whose spec does not yet exist on main, writing ONLY prep artifacts
   in its own separate folders — `openspec/specs/template-<name>/spec.md` +
