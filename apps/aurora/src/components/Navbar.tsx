@@ -1,75 +1,64 @@
-import { useEffect, useState } from 'react'
-import { Button, ButtonLink } from '@free-react-templates/ui'
+import { useState } from 'react'
+import { Menu, X } from 'lucide-react'
+import { cn } from '@free-react-templates/ui'
 
 const links = [
-  { href: '#about', label: 'About' },
-  { href: '#services', label: 'Services' },
-  { href: '#testimonials', label: 'Testimonials' },
-  { href: '#contact', label: 'Contact' },
-] as const
+  { label: 'Home', href: '#home' },
+  { label: 'Arrivals', href: '#arrivals' },
+  { label: 'Gallery', href: '#gallery' },
+  { label: 'Features', href: '#features' },
+  { label: 'Contact', href: '#contact' },
+]
 
 export function Navbar() {
-  const [dark, setDark] = useState(false)
   const [open, setOpen] = useState(false)
 
-  useEffect(() => {
-    document.documentElement.classList.toggle('dark', dark)
-    return () => {
-      document.documentElement.classList.remove('dark')
-    }
-  }, [dark])
-
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/80 backdrop-blur dark:border-gray-800 dark:bg-gray-950/80">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-        <span className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">Aurora</span>
+    <header className="bg-blush-400">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6">
+        <a href="#home" className="text-xl font-bold uppercase tracking-widest text-white">
+          Aurora
+        </a>
 
-        <nav aria-label="Primary" className="hidden items-center gap-6 md:flex">
+        {/* Desktop nav */}
+        <nav aria-label="Primary" className="hidden items-center gap-8 md:flex">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-gray-600 transition-colors hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400"
+              className="text-sm font-medium uppercase tracking-wide text-white/90 transition-colors hover:text-white"
             >
               {link.label}
             </a>
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
-          <ButtonLink href="#contact" size="sm" className="hidden sm:inline-flex">
-            Get in touch
-          </ButtonLink>
-          <Button variant="ghost" size="sm" onClick={() => setDark((d) => !d)}>
-            {dark ? 'Light mode' : 'Dark mode'}
-          </Button>
-          <Button
-            variant="ghost"
-            size="sm"
-            className="md:hidden"
-            aria-label="Toggle navigation"
-            aria-expanded={open}
-            aria-controls="mobile-menu"
-            onClick={() => setOpen((o) => !o)}
-          >
-            {open ? '✕' : '☰'}
-          </Button>
-        </div>
+        {/* Mobile toggle */}
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          aria-controls="mobile-menu"
+          aria-label={open ? 'Close menu' : 'Open menu'}
+          className="text-white md:hidden"
+        >
+          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </button>
       </div>
 
+      {/* Mobile nav */}
       <nav
         id="mobile-menu"
         aria-label="Mobile"
-        hidden={!open}
-        className="border-t border-gray-200 px-4 py-3 md:hidden dark:border-gray-800"
+        className={cn('md:hidden', open ? 'block' : 'hidden')}
       >
-        <ul className="flex flex-col gap-3">
+        <ul className="space-y-1 px-4 pb-4">
           {links.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="block text-sm font-medium text-gray-600 transition-colors hover:text-primary-600 dark:text-gray-300 dark:hover:text-primary-400"
+                className="block rounded px-2 py-2 text-sm font-medium uppercase tracking-wide text-white/90 hover:bg-white/10 hover:text-white"
               >
                 {link.label}
               </a>

@@ -1,26 +1,30 @@
 import { useEffect } from 'react'
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
-import { About } from './components/About'
-import { Services } from './components/Services'
-import { Testimonials } from './components/Testimonials'
-import { Contact } from './components/Contact'
+import { Arrivals } from './components/Arrivals'
+import { Parallax } from './components/Parallax'
+import { Gallery } from './components/Gallery'
+import { Features } from './components/Features'
+import { Performance } from './components/Performance'
+import { Newsletter } from './components/Newsletter'
 import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Aurora — Personal Template'
+    document.title = 'Aurora — Style & Fashion Template'
   }, [])
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900 transition-colors dark:bg-gray-950 dark:text-white">
+    <div className="min-h-screen bg-white font-sans text-gray-900">
       <Navbar />
       <main>
         <Hero />
-        <About />
-        <Services />
-        <Testimonials />
-        <Contact />
+        <Arrivals />
+        <Parallax />
+        <Gallery />
+        <Features />
+        <Performance />
+        <Newsletter />
       </main>
       <Footer />
     </div>

@@ -1,25 +1,23 @@
 @import 'tailwindcss';
 
-/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
-   default prefers-color-scheme media query. */
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-primary-50: #eef2ff;
-  --color-primary-100: #e0e7ff;
-  --color-primary-200: #c7d2fe;
-  --color-primary-300: #a5b4fc;
-  --color-primary-400: #818cf8;
-  --color-primary-500: #6366f1;
-  --color-primary-600: #4f46e5;
-  --color-primary-700: #4338ca;
-  --color-primary-800: #3730a3;
-  --color-primary-900: #312e81;
-  --color-primary-950: #1e1b4b;
-}
+  /* Aurora brand palette — recreated from the ColorLib "Maze" design
+     (banner pink #f66483). */
+  --color-blush-50: #fef2f4;
+  --color-blush-100: #fde3e8;
+  --color-blush-200: #fbccd5;
+  --color-blush-300: #f8a4b4;
+  --color-blush-400: #f66483;
+  --color-blush-500: #f14a6e;
+  --color-blush-600: #e02e56;
+  --color-blush-700: #bd1f45;
+  --color-blush-800: #9c1c3d;
+  --color-blush-900: #821c38;
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
+  /* Poppins — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
 }
