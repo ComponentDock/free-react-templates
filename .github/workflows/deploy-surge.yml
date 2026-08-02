@@ -1,0 +1,92 @@
+# Deploy templates to Surge.sh — one subdomain per template.
+#
+# Triggers:
+#   1. A pull request is MERGED (manually by the user). The workflow figures out
+#      which app folder(s) the PR changed and deploys each of them to
+#      https://free-react-templates-<app>.surge.sh
+#   2. Manual run (workflow_dispatch) — deploy a single app (input "app",
+#      e.g. "aurora") or all apps (empty input).
+#
+# REQUIRED repository secrets (Settings > Secrets and variables > Actions):
+#   SURGE_LOGIN — the Surge.sh account email
+#   SURGE_TOKEN — from `npx surge token` (after `npx surge login`)
+#
+# The deploy itself runs `scripts/deploy-template.sh <app>`, which builds the
+# workspace, adds the SPA 200.html fallback, and runs `npx surge` (headless,
+# authenticated via the two secrets).
+
+name: Deploy to Surge.sh
+
+on:
+  pull_request:
+    types: [closed]
+  workflow_dispatch:
+    inputs:
+      app:
+        description: 'App folder to deploy (e.g. aurora). Leave empty to deploy all apps.'
+        required: false
+        type: string
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  deploy:
+    name: Deploy templates to Surge.sh
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Determine apps to deploy
+        id: apps
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            if [ -n "${{ inputs.app }}" ]; then
+              APPS="${{ inputs.app }}"
+            else
+              APPS="$(ls -d apps/*/ | xargs -n1 basename | tr '\n' ' ')"
+            fi
+          else
+            # Changed files of the merged PR, via the GitHub API (robust even
+            # if the PR branch was deleted after squash-merge).
+            APPS="$(gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
+              --paginate --jq '.[].filename' \
+              | sed -n 's|^apps/\([^/]*\)/.*|\1|p' \
+              | sort -u \
+              | tr '\n' ' ')"
+          fi
+          echo "APPS=${APPS}" >> "$GITHUB_ENV"
+          echo "Detected app(s): ${APPS:-none}"
+
+      - name: Deploy each template to its Surge subdomain
+        if: env.APPS != ''
+        env:
+          SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+        run: |
+          for app in $APPS; do
+            echo "==> Deploying ${app} to https://free-react-templates-${app}.surge.sh"
+            bash scripts/deploy-template.sh "${app}"
+          done
+
+      - name: Summary
+        run: |
+          if [ -z "$APPS" ]; then
+            echo "No template app changed in this event — nothing deployed."
+          else
+            echo "Deployed: ${APPS}"
+          fi
