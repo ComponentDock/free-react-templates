@@ -3,18 +3,12 @@ import { render, screen } from '@testing-library/react'
 import { Footer } from './Footer'
 
 describe('Footer', () => {
-  it('renders the site name, tagline, and social links', () => {
+  it('renders the logo, tagline and social links', () => {
     render(<Footer />)
-
-    expect(screen.getByText('Aurora')).toBeInTheDocument()
-    expect(screen.getByText(/crafting digital experiences/i)).toBeInTheDocument()
-
-    const github = screen.getByRole('link', { name: 'GitHub' })
-    expect(github).toHaveAttribute('href', 'https://github.com')
-    expect(github).toHaveAttribute('target', '_blank')
-    expect(github).toHaveAttribute('rel', 'noreferrer')
-
-    expect(screen.getByRole('link', { name: 'X' })).toHaveAttribute('href', 'https://x.com')
-    expect(screen.getByRole('link', { name: 'LinkedIn' })).toHaveAttribute('href', 'https://linkedin.com')
+    expect(screen.getByRole('link', { name: 'Aurora' })).toBeInTheDocument()
+    expect(screen.getByText(/Style & fashion, recreated in React/i)).toBeInTheDocument()
+    for (const label of ['Facebook', 'Twitter', 'Instagram', 'LinkedIn']) {
+      expect(screen.getByRole('link', { name: label })).toHaveAttribute('target', '_blank')
+    }
   })
 })

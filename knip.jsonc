@@ -1,4 +1,4 @@
 {
-  "ignoreBinaries": ["fallow", "surge"],
-  "ignoreDependencies": ["lint-staged", "surge"]
+  "ignoreBinaries": ["fallow"],
+  "ignoreDependencies": ["surge"]
 }

@@ -1,6 +1,6 @@
 {
   "ignorePatterns": [],
-  "ignoreDependencies": ["tailwindcss", "@tailwindcss/vite", "@fission-ai/openspec"],
+  "ignoreDependencies": ["tailwindcss", "@tailwindcss/vite", "@fission-ai/openspec", "surge"],
   "duplicates": {
     "ignore": ["apps/*/src/**"]
   },

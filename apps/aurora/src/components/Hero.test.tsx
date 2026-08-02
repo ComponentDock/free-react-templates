@@ -3,18 +3,20 @@ import { render, screen } from '@testing-library/react'
 import { Hero } from './Hero'
 
 describe('Hero', () => {
-  it('renders the headline, subtitle, CTAs, and portrait image', () => {
+  it('renders the headline, subtext and CTA', () => {
     render(<Hero />)
+    expect(
+      screen.getByRole('heading', { level: 1, name: /New Styles, Suited for You/i }),
+    ).toBeInTheDocument()
+    expect(screen.getByText(/Fresh fashion, curated every season/i)).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Send Message/i })).toBeInTheDocument()
+  })
 
-    const heading = screen.getByRole('heading', { level: 1 })
-    expect(heading.textContent).toMatch(/Alex Morgan/)
-
-    expect(screen.getByText(/design and build fast, accessible web experiences/i)).toBeInTheDocument()
-
-    expect(screen.getByRole('link', { name: 'View my work' })).toHaveAttribute('href', '#services')
-    expect(screen.getByRole('link', { name: 'Get in touch' })).toHaveAttribute('href', '#contact')
-
-    const portrait = screen.getByRole('img', { name: /portrait of alex morgan/i })
-    expect(portrait).toHaveAttribute('src', '/portrait.svg')
+  it('renders the portrait image with an accessible name', () => {
+    render(<Hero />)
+    expect(screen.getByRole('img', { name: 'Aurora featured look' })).toHaveAttribute(
+      'src',
+      expect.stringContaining('picsum.photos'),
+    )
   })
 })

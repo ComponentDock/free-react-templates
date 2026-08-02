@@ -1,81 +1,43 @@
 import { describe, expect, it } from 'vitest'
-import { render, screen, within } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { Navbar } from './Navbar'
 
-const desktopLinks: ReadonlyArray<readonly [label: string, href: string]> = [
-  ['About', '#about'],
-  ['Services', '#services'],
-  ['Testimonials', '#testimonials'],
-  ['Contact', '#contact'],
-]
-
 describe('Navbar', () => {
-  it('shows the site name, section links, and CTA on desktop', () => {
+  it('renders the logo and desktop links', () => {
     render(<Navbar />)
-    expect(screen.getByText('Aurora')).toBeInTheDocument()
-
-    const primary = screen.getByRole('navigation', { name: 'Primary' })
-    for (const [label, href] of desktopLinks) {
-      const link = within(primary).getByRole('link', { name: label })
-      expect(link).toHaveAttribute('href', href)
+    expect(screen.getByRole('link', { name: 'Aurora' })).toHaveAttribute('href', '#home')
+    for (const label of ['Home', 'Arrivals', 'Gallery', 'Features', 'Contact']) {
+      expect(screen.getAllByRole('link', { name: label }).length).toBeGreaterThanOrEqual(1)
     }
-
-    expect(screen.getByRole('link', { name: 'Get in touch' })).toHaveAttribute('href', '#contact')
   })
 
-  it('opens and closes the mobile menu', async () => {
+  it('hides the mobile menu initially and toggles it open/closed', async () => {
     const user = userEvent.setup()
     render(<Navbar />)
 
-    const toggle = screen.getByRole('button', { name: 'Toggle navigation' })
-
+    const toggle = screen.getByRole('button', { name: 'Open menu' })
     expect(toggle).toHaveAttribute('aria-expanded', 'false')
-    expect(screen.queryByRole('navigation', { name: 'Mobile' })).not.toBeInTheDocument()
+    expect(document.getElementById('mobile-menu')).toHaveClass('hidden')
 
     await user.click(toggle)
-    expect(toggle).toHaveAttribute('aria-expanded', 'true')
-    const mobile = screen.getByRole('navigation', { name: 'Mobile' })
-    expect(mobile).toBeVisible()
-    expect(within(mobile).getByRole('link', { name: 'About' })).toHaveAttribute('href', '#about')
+    expect(screen.getByRole('button', { name: 'Close menu' })).toHaveAttribute(
+      'aria-expanded',
+      'true',
+    )
+    expect(document.getElementById('mobile-menu')).not.toHaveClass('hidden')
 
-    // clicking a link closes the menu again
-    await user.click(within(mobile).getByRole('link', { name: 'Services' }))
-    expect(toggle).toHaveAttribute('aria-expanded', 'false')
-    expect(screen.queryByRole('navigation', { name: 'Mobile' })).not.toBeInTheDocument()
-
-    // and the toggle flips it back open
-    await user.click(toggle)
-    expect(toggle).toHaveAttribute('aria-expanded', 'true')
-    expect(screen.getByRole('navigation', { name: 'Mobile' })).toBeVisible()
-    await user.click(toggle)
-    expect(toggle).toHaveAttribute('aria-expanded', 'false')
-    expect(screen.queryByRole('navigation', { name: 'Mobile' })).not.toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: 'Close menu' }))
+    expect(document.getElementById('mobile-menu')).toHaveClass('hidden')
   })
 
-  it('toggles dark mode on and off on the document root', async () => {
+  it('closes the mobile menu when a mobile link is clicked', async () => {
     const user = userEvent.setup()
     render(<Navbar />)
-
-    expect(document.documentElement.classList.contains('dark')).toBe(false)
-
-    await user.click(screen.getByRole('button', { name: 'Dark mode' }))
-    expect(document.documentElement.classList.contains('dark')).toBe(true)
-    expect(screen.getByRole('button', { name: 'Light mode' })).toBeInTheDocument()
-
-    await user.click(screen.getByRole('button', { name: 'Light mode' }))
-    expect(document.documentElement.classList.contains('dark')).toBe(false)
-    expect(screen.getByRole('button', { name: 'Dark mode' })).toBeInTheDocument()
-  })
-
-  it('removes the dark class from the document root on unmount', async () => {
-    const user = userEvent.setup()
-    const { unmount } = render(<Navbar />)
-
-    await user.click(screen.getByRole('button', { name: 'Dark mode' }))
-    expect(document.documentElement.classList.contains('dark')).toBe(true)
-
-    unmount()
-    expect(document.documentElement.classList.contains('dark')).toBe(false)
+    await user.click(screen.getByRole('button', { name: 'Open menu' }))
+    const galleryLinks = screen.getAllByRole('link', { name: 'Gallery' })
+    const mobileLink = galleryLinks[galleryLinks.length - 1]!
+    await user.click(mobileLink)
+    expect(document.getElementById('mobile-menu')).toHaveClass('hidden')
   })
 })

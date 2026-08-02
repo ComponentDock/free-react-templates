@@ -1,22 +1,27 @@
 import { describe, expect, it } from 'vitest'
-import { render, screen, within } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { App } from './App'
 
 describe('App', () => {
-  it('composes every section in the main landmark and sets the document title', () => {
+  it('sets the document title', () => {
     render(<App />)
+    expect(document.title).toBe('Aurora — Style & Fashion Template')
+  })
 
-    expect(document.title).toBe('Aurora — Personal Template')
-
-    const main = screen.getByRole('main')
-    expect(within(main).getByRole('heading', { level: 1 })).toHaveTextContent(/Alex Morgan/)
-    expect(within(main).getByRole('heading', { level: 2, name: /about/i })).toBeInTheDocument()
-    expect(within(main).getByRole('heading', { level: 2, name: /services/i })).toBeInTheDocument()
-    expect(within(main).getByRole('heading', { level: 2, name: /testimonials/i })).toBeInTheDocument()
-    expect(within(main).getByRole('heading', { level: 2, name: /contact/i })).toBeInTheDocument()
-
+  it('composes every section in the main landmark', () => {
+    render(<App />)
     expect(screen.getByRole('banner')).toBeInTheDocument()
-    expect(screen.getByRole('navigation', { name: 'Primary' })).toBeInTheDocument()
+    expect(screen.getByRole('main')).toBeInTheDocument()
     expect(screen.getByRole('contentinfo')).toBeInTheDocument()
+
+    expect(screen.getByRole('heading', { name: /New Styles, Suited for You/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /What's New/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Peak Collection' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Lookbook' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Why Aurora' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Built to Perform' })).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { name: /Subscribe for our Newsletter/i }),
+    ).toBeInTheDocument()
   })
 })
