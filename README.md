@@ -17,9 +17,10 @@ production-ready starting point built with the latest versions of the core stack
 ```
 free-react-templates/
 ├── apps/
-│   └── aurora/          # Template: Aurora (personal/business landing)
+│   ├── aurora/          # Template: Aurora (personal/business landing)
+│   └── drift/           # Template: Drift (404 error page)
 ├── packages/
-│   └── ui/              # Shared UI components (Button, Card, Badge, cn)
+│   └── ui/              # Shared UI components (Button, ButtonLink, Card, Badge, cn)
 ├── package.json         # npm workspaces root
 └── tsconfig.base.json   # Shared strict TypeScript config
 ```

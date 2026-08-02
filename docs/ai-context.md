@@ -14,14 +14,15 @@ scratch.
 
 ```
 free-react-templates/
-├── apps/                     # One folder per template (e.g. aurora/)
-│   └── aurora/               # Template "Aurora" — personal/business landing
+├── apps/                     # One folder per template (e.g. aurora/, drift/)
+│   ├── aurora/               # Template "Aurora" — personal/business landing
+│   └── drift/                # Template "Drift" — 404 error page
 │       ├── src/              # main.tsx, App.tsx, components/, test setup
 │       ├── index.html
 │       ├── vite.config.ts    # react + tailwindcss plugins, '@' alias -> ./src
 │       └── vitest.config.ts  # jsdom, globals, setup file
 ├── packages/
-│   └── ui/                   # Shared UI: Button, Card (compound), Badge, cn()
+│   └── ui/                   # Shared UI: Button, ButtonLink, Card (compound), Badge, cn()
 ├── openspec/
 │   └── specs/template-<name>/spec.md   # Per-template specs (GitHub Spec Kit)
 ├── docs/                     # AI context, conventions, contracts, ADRs

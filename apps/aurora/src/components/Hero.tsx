@@ -1,4 +1,4 @@
-import { ButtonLink } from './button-link'
+import { ButtonLink } from '@free-react-templates/ui'
 
 export function Hero() {
   return (

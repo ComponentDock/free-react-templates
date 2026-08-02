@@ -1,5 +1,5 @@
 import type { AnchorHTMLAttributes } from 'react'
-import { cn } from '@free-react-templates/ui'
+import { cn } from './cn'
 
 type Variant = 'primary' | 'outline'
 type Size = 'sm' | 'md'
@@ -20,12 +20,7 @@ const sizeClasses: Record<Size, string> = {
   md: 'h-10 px-4 text-sm',
 }
 
-export function ButtonLink({
-  className,
-  variant = 'primary',
-  size = 'md',
-  ...props
-}: ButtonLinkProps) {
+export function ButtonLink({ className, variant = 'primary', size = 'md', ...props }: ButtonLinkProps) {
   return (
     <a
       className={cn(
