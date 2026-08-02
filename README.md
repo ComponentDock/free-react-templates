@@ -44,16 +44,18 @@ This repo is optimized for AI-driven development. **Start at [`AGENTS.md`](./AGE
 it is the binding contract for AI agents (read docs first, spec-first, TDD,
 verification gates, self-review). Supporting docs:
 
-| Doc | Contents |
-| --- | --- |
-| [`docs/ai-context.md`](docs/ai-context.md) | Architecture, stack, workflows, known issues |
-| [`docs/conventions.md`](docs/conventions.md) | File structure, naming, component/error-handling patterns |
-| [`docs/contracts.md`](docs/contracts.md) | Public API and data contracts |
-| [`docs/verification.md`](docs/verification.md) | The full gate: commands, failure policy, coverage |
-| [`docs/deployment.md`](docs/deployment.md) | Surge.sh deploys — one subdomain per template |
-| [`docs/self-review.md`](docs/self-review.md) | Change-impact analysis + self-review checklists |
-| [`docs/adr/`](docs/adr/) | Architecture decision records |
-| [`CRONJOB.md`](CRONJOB.md) | The hourly scheduled jobs driving this repo |
+| Doc                                            | Contents                                                                            |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------- |
+| [`docs/ai-context.md`](docs/ai-context.md)     | Architecture, stack, workflows, known issues                                        |
+| [`docs/conventions.md`](docs/conventions.md)   | File structure, naming, component/error-handling patterns                           |
+| [`docs/contracts.md`](docs/contracts.md)       | Public API and data contracts                                                       |
+| [`docs/verification.md`](docs/verification.md) | The full gate: commands, failure policy, coverage                                   |
+| [`docs/replication.md`](docs/replication.md)   | Faithful template recreation: preview DOM + CSS tokens + screenshot                 |
+| [`docs/deployment.md`](docs/deployment.md)     | Surge.sh deploys — one subdomain per template                                       |
+| [`docs/self-review.md`](docs/self-review.md)   | Change-impact analysis + self-review checklists                                     |
+| [`docs/adr/`](docs/adr/)                       | Architecture decision records                                                       |
+| [`skills/`](skills/README.md)                  | The agent skill library (version-controlled, incl. `colorlib-template-replication`) |
+| [`CRONJOB.md`](CRONJOB.md)                     | The hourly scheduled jobs driving this repo                                         |
 
 > **Model note:** development agents working on this repo run on
 > `opencode-go/deepseek-v4-flash` (via Hermes Agent, opencode-go provider).

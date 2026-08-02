@@ -1,0 +1,13 @@
+{
+  "ignorePatterns": [],
+  "ignoreDependencies": ["tailwindcss", "@tailwindcss/vite", "@fission-ai/openspec"],
+  "duplicates": {
+    "ignore": ["apps/*/src/**"]
+  },
+  "health": {
+    "maxCyclomatic": 20,
+    "maxCognitive": 20,
+    "maxCrap": 60,
+    "ignore": ["**/__tests__/**", "**/*.test.ts", "**/*.test.tsx"]
+  }
+}

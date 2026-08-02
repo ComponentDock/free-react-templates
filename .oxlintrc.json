@@ -4,6 +4,7 @@
     "correctness": "error",
     "suspicious": "warn"
   },
+  "ignorePatterns": ["skills/**"],
   "rules": {
     "react-in-jsx-scope": "off"
   }
