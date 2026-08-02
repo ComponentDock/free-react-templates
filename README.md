@@ -50,6 +50,7 @@ verification gates, self-review). Supporting docs:
 | [`docs/conventions.md`](docs/conventions.md) | File structure, naming, component/error-handling patterns |
 | [`docs/contracts.md`](docs/contracts.md) | Public API and data contracts |
 | [`docs/verification.md`](docs/verification.md) | The full gate: commands, failure policy, coverage |
+| [`docs/deployment.md`](docs/deployment.md) | Surge.sh deploys — one subdomain per template |
 | [`docs/self-review.md`](docs/self-review.md) | Change-impact analysis + self-review checklists |
 | [`docs/adr/`](docs/adr/) | Architecture decision records |
 | [`CRONJOB.md`](CRONJOB.md) | The hourly scheduled jobs driving this repo |

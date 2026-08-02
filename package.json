@@ -21,6 +21,8 @@
     "knip": "knip",
     "fallow": "fallow audit --gate all && fallow health && fallow dead-code && fallow dupes",
     "spec:validate": "openspec validate --specs",
+    "deploy": "bash scripts/deploy-template.sh",
+    "deploy:aurora": "bash scripts/deploy-template.sh aurora",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -41,6 +43,7 @@
     "lint-staged": "^17.3.0",
     "oxlint": "^1.76.0",
     "prettier": "^3.9.6",
+    "surge": "^0.41.2",
     "vitest": "^4.1.10"
   }
 }
