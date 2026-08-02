@@ -18,7 +18,8 @@ production-ready starting point built with the latest versions of the core stack
 free-react-templates/
 ├── apps/
 │   ├── aurora/          # Template: Aurora (personal/business landing)
-│   └── drift/           # Template: Drift (404 error page)
+│   ├── drift/           # Template: Drift (404 error page)
+│   └── orbit/           # Template: Orbit (404 error page, space theme)
 ├── packages/
 │   └── ui/              # Shared UI components (Button, ButtonLink, Card, Badge, cn)
 ├── package.json         # npm workspaces root
