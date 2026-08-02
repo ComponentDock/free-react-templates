@@ -20,6 +20,7 @@ free-react-templates/
 │   ├── aurora/          # Template: Aurora (personal/business landing)
 │   ├── drift/           # Template: Drift (404 error page)
 │   ├── orbit/           # Template: Orbit (404 error page, space theme)
+│   ├── tears/           # Template: Tears (404 error page, crying emoji)
 │   └── vista/           # Template: Vista (404 error page, image background)
 ├── packages/
 │   └── ui/              # Shared UI components (Button, ButtonLink, Card, Badge, cn)
