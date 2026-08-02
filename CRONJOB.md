@@ -5,10 +5,10 @@ fresh session with no chat context, so every prompt below is fully self-containe
 
 ## Current status
 
-| Job                             | State                            | Notes                                                                                                                               |
-| ------------------------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| 1 · Templates pipeline          | ⏸️ **paused** (2026-08-02 08:41) | Paused during the manual Aurora redesign to avoid two agents writing to the same working tree. Resume when the redesign PR is done. |
-| 2 · Continuous audit (firebase) | ⏸️ **paused** (2026-08-01 21:27) | Paused at the user's request.                                                                                                       |
+| Job                             | State                              | Notes                                                                                                        |
+| ------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| 1 · Templates pipeline          | ▶️ **running** (2026-08-02 ~12:00) | Aurora redesign PR (#3) merged 2026-08-02T11:30:30Z — resumed; next template: Vista (Colorlib Error 404 11). |
+| 2 · Continuous audit (firebase) | ⏸️ **paused** (2026-08-01 21:27)   | Paused at the user's request.                                                                                |
 
 ---
 
