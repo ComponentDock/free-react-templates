@@ -1,8 +1,9 @@
 # Deployment — Surge.sh
 
 Every template deploys to its **own Surge.sh subdomain**:
-`https://<template-name>.surge.sh` (e.g. the Aurora template →
-`https://aurora.surge.sh`). One deployment per template, no shared hosting.
+`https://free-react-templates-<template-name>.surge.sh` (e.g. the Aurora
+template → `https://free-react-templates-aurora.surge.sh`). One deployment per
+template, no shared hosting.
 
 ## One-time setup
 
@@ -31,7 +32,7 @@ The script:
 1. Builds the template's workspace (`npm run build --workspace @free-react-templates/<name>`).
 2. Copies `dist/index.html` → `dist/200.html` (SPA fallback so client-side
    routes work on refresh).
-3. Runs `npx surge apps/<name>/dist https://<name>.surge.sh`.
+3. Runs `npx surge apps/<name>/dist https://free-react-templates-<name>.surge.sh`.
 
 Re-running the same command updates the existing deployment (Surge replaces
 the files; no downtime).
