@@ -16,7 +16,8 @@ scratch.
 free-react-templates/
 ├── apps/                     # One folder per template (e.g. aurora/, drift/)
 │   ├── aurora/               # Template "Aurora" — personal/business landing
-│   └── drift/                # Template "Drift" — 404 error page
+│   ├── drift/                # Template "Drift" — 404 error page
+│   └── orbit/                # Template "Orbit" — 404 error page (space theme)
 │       ├── src/              # main.tsx, App.tsx, components/, test setup
 │       ├── index.html
 │       ├── vite.config.ts    # react + tailwindcss plugins, '@' alias -> ./src
