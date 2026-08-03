@@ -27,6 +27,7 @@ free-react-templates/
 │   ├── lagoon/          # Template: Lagoon (404 error page, teal sad-face)
 │   ├── nova/            # Template: Nova (404 error page, gradient 404 + social tiles)
 │   ├── orbit/           # Template: Orbit (404 error page, space theme)
+│   ├── punch/           # Template: Punch (404 error page, bold Oops + orange CTA)
 │   ├── scarlet/         # Template: Scarlet (404 error page, photo + red overlay)
 │   ├── slice/           # Template: Slice (404 error page, tight cut digits)
 │   ├── sky/             # Template: Sky (404 error page, blue zero + search bar)
