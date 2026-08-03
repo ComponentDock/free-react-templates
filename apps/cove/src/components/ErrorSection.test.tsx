@@ -9,7 +9,7 @@ describe('ErrorSection', () => {
     const emoji = screen.getByRole('img', { name: /confused face/i })
     expect(emoji).toBeInTheDocument()
 
-    const circle = emoji.parentElement
+    const circle = emoji.previousElementSibling
     expect(circle).toHaveClass('bg-circle')
   })
 

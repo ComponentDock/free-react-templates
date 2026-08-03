@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Cove brand blue — from the original ColorLib "Error 404 V18"
+     stylesheet (css/style.css): the "Back to homepage" link color. */
+  --color-brand: #388dbc;
+
+  /* Text colors from the original stylesheet. */
+  --color-ink: #151723;
+  --color-body: #999fa5;
+
+  /* Light-gray circle behind the emoji (scaled 2.4x in the original). */
+  --color-circle: #f2f5f8;
+
+  /* Original font: "Nunito" via Google Fonts (loaded in index.html). */
+  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
