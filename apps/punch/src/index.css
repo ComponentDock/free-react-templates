@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Punch brand orange — from the original ColorLib "Error 404 V4"
+     stylesheet (css/style.css): the "Go TO Homepage" button background
+     (#ff6300). */
+  --color-brand: #ff6300;
+
+  /* Near-black display color from the original stylesheet (the "Oops!"
+     headline and hover fill). */
+  --color-ink: #211b19;
+
+  /* Original font: "Montserrat" (weights 200/400/700) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
