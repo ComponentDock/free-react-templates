@@ -37,15 +37,15 @@
 
 ## Tasks
 
-- [ ] Write `openspec/specs/template-cove/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-cove/spec.md` (Gherkin requirements +
       scenarios + replication findings) — DONE on main (this prep).
-- [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/cove` (copy `apps/scarlet`; rename package to
+- [x] Validate spec: `npm run spec:validate`.
+- [x] Create `apps/cove` (copy `apps/scarlet`; rename package to
       `@free-react-templates/cove`).
-- [ ] TDD: tests first for Navbar, ErrorSection (emoji illustration + circle,
+- [x] TDD: tests first for Navbar, ErrorSection (emoji illustration + circle,
       404 content, homepage pill), Footer, App composition; run red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
+- [x] Implement components (green) at 100% coverage.
+- [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
 - [ ] Update TEMPLATES.md status `[~]` → `[x]` after merge (bookkeeping on
       main, state D).
