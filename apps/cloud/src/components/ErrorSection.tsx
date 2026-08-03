@@ -25,7 +25,7 @@ export function ErrorSection() {
         The page you are looking for might have been removed had its name changed or is temporarily
         unavailable. Don&apos;t worry — even the sky clears up.
       </p>
-      <ButtonLink href="/" size="lg" className="mt-8">
+      <ButtonLink href="/" size="md" className="mt-8">
         Back to home
       </ButtonLink>
       <div className="mt-10">
