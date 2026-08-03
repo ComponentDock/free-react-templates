@@ -23,6 +23,9 @@ illustration is recreated as an original inline SVG (no assets copied).
   (`https://preview.colorlib.com/theme/colorlib-error-404-18/` and variants)
   returns 404, but the ColorLib template page's "Preview" target hosts the
   rendered page — that DOM is the reference below.
+  Re-verified during implementation (2026-08-03): page HTML 4.4KB, stylesheet
+  1.8KB; tokens below confirmed 1:1 (Nunito, `#151723`, `#999fa5`, `#388dbc`,
+  `#f2f5f8`).
 - **Structure (1:1, section order):**
   1. Full-viewport `#notfound` container (height 100vh).
   2. Centered `.notfound` block (max-width 560px, padding-left 160px):

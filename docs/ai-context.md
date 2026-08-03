@@ -18,6 +18,7 @@ free-react-templates/
 │   ├── aurora/               # Template "Aurora" — personal/business landing
 │   ├── blaze/                # Template "Blaze" — 404 error page (bold red exclamation)
 │   ├── cloud/                # Template "Cloud" — 404 error page (minimalist cloud)
+│   ├── cove/                 # Template "Cove" — 404 error page (emoji in light circle)
 │   ├── drift/                # Template "Drift" — 404 error page
 │   ├── flick/                # Template "Flick" — 404 error page (animated spark)
 │   ├── lagoon/               # Template "Lagoon" — 404 error page (teal sad-face)
