@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Nova brand coral — from the original ColorLib "Error 404 V19"
+     stylesheet (css/style.css): the "Return to homepage" link color and
+     gradient end (#ff6f68); gradient start is #ffa34f (orange). */
+  --color-brand: #ff6f68;
+  --color-flame: #ffa34f;
+
+  /* Original font: "Kanit" (weight 200) via Google Fonts (loaded in
+     index.html). */
+  --font-sans: 'Kanit', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
