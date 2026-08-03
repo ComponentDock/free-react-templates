@@ -20,6 +20,7 @@ free-react-templates/
 │   ├── cloud/                # Template "Cloud" — 404 error page (minimalist cloud)
 │   ├── drift/                # Template "Drift" — 404 error page
 │   ├── flick/                # Template "Flick" — 404 error page (animated spark)
+│   ├── lagoon/               # Template "Lagoon" — 404 error page (teal sad-face)
 │   ├── orbit/                # Template "Orbit" — 404 error page (space theme)
 │   ├── scarlet/              # Template "Scarlet" — 404 error page (photo + red overlay)
 │   ├── tears/                # Template "Tears" — 404 error page (crying emoji)

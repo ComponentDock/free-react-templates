@@ -35,16 +35,16 @@
 
 ## Tasks
 
-- [ ] Write `openspec/specs/template-lagoon/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-lagoon/spec.md` (Gherkin requirements +
       scenarios + replication findings) — DONE on main (this prep).
-- [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/lagoon` (copy `apps/scarlet`; rename package to
+- [x] Validate spec: `npm run spec:validate`.
+- [x] Create `apps/lagoon` (copy `apps/scarlet`; rename package to
       `@free-react-templates/lagoon`).
-- [ ] TDD: tests first for Navbar, ErrorSection (teal emoticon, 404 content,
+- [x] TDD: tests first for Navbar, ErrorSection (teal emoticon, 404 content,
       home page pill, hover state), Footer, App composition; run red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
+- [x] Implement components (green) at 100% coverage.
+- [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
 - [ ] Update TEMPLATES.md status `[~]` → `[x]` after merge (bookkeeping on
       main, state D).
-- [ ] Update README structure + `docs/ai-context.md` app list.
+- [x] Update README structure + `docs/ai-context.md` app list.
