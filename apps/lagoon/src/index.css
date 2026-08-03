@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Lagoon brand teal — inspired by the original ColorLib "Error 404
+     V17" error page (teal `:(` emoticon and hover background). */
+  --color-brand: #00b5c3;
+
+  /* Text colors from the original stylesheet (css/style.css). */
+  --color-ink: #292929;
+  --color-body: #333333;
+
+  /* Original fonts: "Passion One" (900 display emoticon) + "Raleway"
+     (body/heading) via Google Fonts (loaded in index.html). */
+  --font-display: 'Passion One', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
