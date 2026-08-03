@@ -5,12 +5,24 @@ fresh session with no chat context, so every prompt below is fully self-containe
 
 ## Current status
 
-| Job                             | State                              | Notes                                                                                                        |
-| ------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| 1 · Templates pipeline          | ▶️ **running** (2026-08-02 ~12:00) | Aurora redesign PR (#3) merged 2026-08-02T11:30:30Z — resumed; next template: Vista (Colorlib Error 404 11). |
-| 2 · Continuous audit (firebase) | ⏸️ **paused** (2026-08-01 21:27)   | Paused at the user's request.                                                                                |
+| Job                                | State                            | Notes                                                        |
+| ---------------------------------- | -------------------------------- | ------------------------------------------------------------ |
+| 1 · Templates pipeline (track A)   | ✅ scheduled (hourly)            | Working tree `/root/free-react-templates`                    |
+| 2 · Continuous audit (firebase)    | ⏸️ **paused** (2026-08-01 21:27) | Paused at the user's request                                 |
+| 3 · Templates pipeline B (track B) | ✅ scheduled (hourly)            | Working tree `/root/free-react-templates-b` — parallel track |
 
 ---
+
+## Parallel tracks
+
+Jobs 1 and 3 run the **same pipeline in parallel** (two templates in flight at
+once), each on its own clone of the repo. Coordination is via the **claim
+rule**: before starting a template a job fetches origin, picks the first
+`- [ ]` item not claimed (no open `feat/template-*` branch/PR, not `[~]` on
+main), and claims it by pushing a `[~]` marker commit to main **before**
+creating the implementation branch. If a claim push fails (sibling moved
+origin), it refetches and picks the next available item. PRs are merged
+immediately (`gh pr merge --squash --delete-branch`) and kept as documentation.
 
 ## Job 1: Templates pipeline — next template + audit
 
@@ -153,6 +165,24 @@ code, React anti-patterns, security issues, missing tests, etc.
 checks. Security findings on Cloud-Function-returned URLs (Stripe, Storage signed
 URLs) are known false positives — verify, don't churn. Commit conventionally,
 push to `origin main`, and report honestly (including "nothing to fix").
+
+---
+
+## Job 3: Templates pipeline B (parallel track)
+
+| Field         | Value                                         |
+| ------------- | --------------------------------------------- |
+| **Job ID**    | `24bddb765dc0`                                |
+| **Schedule**  | every 60 minutes                              |
+| **Workspace** | `/root/free-react-templates-b` (second clone) |
+| **Toolsets**  | terminal, file                                |
+| **Delivery**  | origin (this chat)                            |
+
+Identical mission, process and claim rule as Job 1 (see above), running on its
+own clone so the two tracks never share a working tree. Each track handles one
+template per run; together they double template throughput. Both tracks merge
+their PRs immediately and rely on the same `.github/workflows/deploy-surge.yml`
+for automatic deployment.
 
 ---
 
