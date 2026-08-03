@@ -24,6 +24,7 @@ free-react-templates/
 │   ├── lagoon/               # Template "Lagoon" — 404 error page (teal sad-face)
 │   ├── orbit/                # Template "Orbit" — 404 error page (space theme)
 │   ├── scarlet/              # Template "Scarlet" — 404 error page (photo + red overlay)
+│   ├── sky/                  # Template "Sky" — 404 error page (blue zero + search bar)
 │   ├── tears/                # Template "Tears" — 404 error page (crying emoji)
 │   └── vista/                # Template "Vista" — 404 error page (image background)
 │       ├── src/              # main.tsx, App.tsx, components/, test setup
