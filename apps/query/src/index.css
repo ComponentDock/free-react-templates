@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Query brand blue — from the original ColorLib "Error 404 V5"
+     stylesheet (css/style.css): the "Search" button background, the
+     "Go Back" link color, and the input focus border (#57a3f8). */
+  --color-brand: #57a3f8;
+
+  /* Display and text colors from the original stylesheet. */
+  --color-mist: #e3e3e3;
+  --color-ink: #222;
+
+  /* Original font: "Poppins" (weights 400/700) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
