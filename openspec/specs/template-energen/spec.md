@@ -1,0 +1,201 @@
+# Template: Energen (Spa & Beauty Center Landing)
+
+## Purpose
+
+Energen is a single-page spa & beauty center template in the
+free-react-templates monorepo. It is an original React recreation of the
+ColorLib free "Energen" design (see TEMPLATES.md), built under the monorepo
+stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+
+The original is a gold-accented spa page: a full-height hero ("Spa & Beauty
+Center"), an intro band ("Benefits of Doing Spa & Massage" with Book Your
+Treatment / Great Gift Packages / Special Offer & Deal cards), a services
+row (Aromatherapy, Skin Care, Herbal Spa, Body Massage), a Treatments grid
+(Salt & Aroma, Hydro, Hot Stone, Aroma), a Spa/Massage Therapies section
+(Relaxation, Athlete, Thai, Rose), pricing tables (Year/Monthly/Weekly
+Cards — "Enjoy All The Features"), a "Successful Stories" testimony band, a
+counter band, a "Recent Posts" blog row, a "See the latest photos" gallery,
+and a footer with Popular Links / Quick Links / "Have a Questions?".
+Energen recreates that structure section-for-section with matching layout,
+colors, typography, and content types (no ColorLib assets copied).
+
+## Design reference (replication findings)
+
+- **Original:** ColorLib "Energen" — free spa & beauty website template
+  (source: https://colorlib.com/wp/template/energen/).
+- **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/energen/`
+  (HTTP 200, 55.6KB) + stylesheet `css/style.css` (74.3KB). The rendered DOM
+  is the reference below; the TEMPLATES.md screenshot
+  (`energen-free-template.jpg`) confirms the visual design (light sections,
+  gold accents).
+- **Section order (1:1):**
+  1. Navbar (`ftco_navbar`): logo + nav (Home, About, Treatments,
+     Specialists, Pricing, Blog, Contact).
+  2. Hero (`hero-wrap js-fullheight`): "Spa & Beauty Center" headline.
+  3. Intro (`ftco-section ftco-intro`): "Benefits of Doing Spa & Massage" +
+     3 cards (Book Your Treatment, Great Gift Packages, Special Offer &
+     Deal).
+  4. Services (`ftco-section-services bg-light`): "Services" + 4 icon cards
+     (Aromatherapy, Skin Care, Herbal Spa, Body Massage).
+  5. Treatments (`ftco-section`): "Treatments" + grid (Salt & Aroma, Hydro,
+     Hot Stone, Aroma).
+  6. Therapies (`ftco-section bg-light`): "Spa Therapies" / "Massage
+     Therapies" + 4 cards (Relaxation, Athlete, Thai, Rose).
+  7. Pricing (`ftco-section`): "Pricing Treatments" + 3 cards (Year Card,
+     Monthly Card, Weekly Card — "Enjoy All The Features").
+  8. Testimony (`testimony-section`): "Successful Stories" band.
+  9. Counter (`ftco-counter img`): stats band.
+  10. Blog (`ftco-section bg-light`): "Recent Posts" + post cards ("Is
+      wellness the new luxury").
+  11. Gallery (`ftco-gallery`): "See the latest photos" + photo tiles.
+  12. Footer (`ftco-footer`): brand + Popular Links / Quick Links / "Have a
+      Questions?".
+- **Design tokens extracted from `css/style.css`:**
+  - Brand color: **#d9bf77** (gold — accents, buttons, headings) + dark
+    **#212529** text; light **#f8f9fa** / `bg-light` section backgrounds.
+  - Font: **"Open Sans"** (sans — body) via Google Fonts; Ionicons icon
+    font.
+  - Sections: white with alternating `bg-light` bands.
+  - Buttons: gold filled, uppercase.
+- **Recreation decisions:** repo-standard Navbar (site name, Home link,
+  dark-mode toggle) + Footer chrome; hero = seeded picsum background photo
+  with headline; intro cards; services with lucide icons; treatments grid;
+  therapies cards; pricing cards; testimony band; counter band; blog cards
+  with seeded photos; gallery grid; footer with link columns; all images
+  picsum-seeded (`picsum.photos/seed/energen-N/w/h`); Google Fonts via
+  `<link>`.
+
+Energen lives in `apps/energen` and uses shared components from `packages/ui`
+(Button, ButtonLink, Card, Badge, cn).
+
+## Requirements
+
+### Requirement: Navigation bar
+
+The system SHALL render a top navigation bar with the site name "Energen", a
+"Home" link, and a dark-mode toggle button.
+
+#### Scenario: Navbar content
+
+- **GIVEN** the Energen page is rendered
+- **WHEN** the page loads
+- **THEN** the navbar SHALL show the site name "Energen" and a "Home" link pointing to the page root
+- **AND** the navbar SHALL show a dark-mode toggle button
+
+#### Scenario: Dark mode toggle
+
+- **GIVEN** the page is rendered
+- **WHEN** the user presses the dark-mode toggle
+- **THEN** the `.dark` class SHALL be toggled on the document root element
+- **AND** the toggle SHALL reflect the current mode
+
+### Requirement: Welcome hero
+
+The system SHALL render a full-width hero section with a headline.
+
+#### Scenario: Hero content
+
+- **GIVEN** the page is rendered
+- **WHEN** the hero section is displayed
+- **THEN** it SHALL show a level-1 headline (e.g. "Spa & Beauty Center")
+
+### Requirement: Intro cards
+
+The system SHALL render an intro section with a heading and three cards.
+
+#### Scenario: Intro content
+
+- **GIVEN** the page is rendered
+- **WHEN** the intro section is displayed
+- **THEN** it SHALL show the heading "Benefits of Doing Spa & Massage"
+- **AND** it SHALL render three cards (Book Your Treatment, Great Gift Packages, Special Offer & Deal)
+
+### Requirement: Services
+
+The system SHALL render a "Services" section with at least four icon cards.
+
+#### Scenario: Service cards
+
+- **GIVEN** the page is rendered
+- **WHEN** the services section is displayed
+- **THEN** it SHALL show the heading "Services"
+- **AND** it SHALL render four icon cards (Aromatherapy, Skin Care, Herbal Spa, Body Massage)
+
+### Requirement: Treatments
+
+The system SHALL render a "Treatments" section with at least four tiles.
+
+#### Scenario: Treatments grid
+
+- **GIVEN** the page is rendered
+- **WHEN** the treatments section is displayed
+- **THEN** it SHALL show the heading "Treatments"
+- **AND** it SHALL render four treatment tiles (Salt & Aroma, Hydro, Hot Stone, Aroma)
+
+### Requirement: Therapies
+
+The system SHALL render a therapies section with at least four cards.
+
+#### Scenario: Therapy cards
+
+- **GIVEN** the page is rendered
+- **WHEN** the therapies section is displayed
+- **THEN** it SHALL show the headings "Spa Therapies" and "Massage Therapies"
+- **AND** it SHALL render four therapy cards (Relaxation, Athlete, Thai, Rose)
+
+### Requirement: Pricing tables
+
+The system SHALL render a "Pricing Treatments" section with at least three
+pricing cards.
+
+#### Scenario: Pricing cards
+
+- **GIVEN** the page is rendered
+- **WHEN** the pricing section is displayed
+- **THEN** it SHALL show the heading "Pricing Treatments"
+- **AND** it SHALL render three pricing cards (Year Card, Monthly Card, Weekly Card)
+
+### Requirement: Testimony band
+
+The system SHALL render a "Successful Stories" testimony band.
+
+#### Scenario: Testimony content
+
+- **GIVEN** the page is rendered
+- **WHEN** the testimony band is displayed
+- **THEN** it SHALL show the heading "Successful Stories"
+
+### Requirement: Blog posts
+
+The system SHALL render a "Recent Posts" section with at least three post
+cards.
+
+#### Scenario: Blog cards
+
+- **GIVEN** the page is rendered
+- **WHEN** the blog section is displayed
+- **THEN** it SHALL show the heading "Recent Posts"
+- **AND** it SHALL render at least three post cards
+
+### Requirement: Gallery
+
+The system SHALL render a gallery section with the heading "See the latest
+photos" and at least six photo tiles.
+
+#### Scenario: Gallery content
+
+- **GIVEN** the page is rendered
+- **WHEN** the gallery section is displayed
+- **THEN** it SHALL show the heading "See the latest photos"
+- **AND** it SHALL render at least six photo tiles
+
+### Requirement: Footer
+
+The system SHALL render a footer with the site name and link columns.
+
+#### Scenario: Footer content
+
+- **GIVEN** the page is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL show the site name "Energen"
+- **AND** it SHALL show link columns (Popular Links, Quick Links)
