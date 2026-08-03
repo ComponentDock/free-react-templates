@@ -19,6 +19,7 @@ free-react-templates/
 ├── apps/
 │   ├── aurora/          # Template: Aurora (personal/business landing)
 │   ├── blaze/           # Template: Blaze (404 error page, bold red exclamation)
+│   ├── cloud/           # Template: Cloud (404 error page, minimalist cloud)
 │   ├── drift/           # Template: Drift (404 error page)
 │   ├── orbit/           # Template: Orbit (404 error page, space theme)
 │   ├── tears/           # Template: Tears (404 error page, crying emoji)
