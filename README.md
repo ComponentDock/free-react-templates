@@ -18,6 +18,7 @@ production-ready starting point built with the latest versions of the core stack
 free-react-templates/
 ├── apps/
 │   ├── aurora/          # Template: Aurora (personal/business landing)
+│   ├── azure/           # Template: Azure (404 error page, watermark + blue pill)
 │   ├── blaze/           # Template: Blaze (404 error page, bold red exclamation)
 │   ├── cloud/           # Template: Cloud (404 error page, minimalist cloud)
 │   ├── cove/            # Template: Cove (404 error page, emoji in light circle)

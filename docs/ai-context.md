@@ -16,6 +16,7 @@ scratch.
 free-react-templates/
 ├── apps/                     # One folder per template (e.g. aurora/, drift/)
 │   ├── aurora/               # Template "Aurora" — personal/business landing
+│   ├── azure/                # Template "Azure" — 404 error page (watermark + blue pill)
 │   ├── blaze/                # Template "Blaze" — 404 error page (bold red exclamation)
 │   ├── cloud/                # Template "Cloud" — 404 error page (minimalist cloud)
 │   ├── cove/                 # Template "Cove" — 404 error page (emoji in light circle)
