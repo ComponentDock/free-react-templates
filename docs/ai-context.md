@@ -23,6 +23,7 @@ free-react-templates/
 │   ├── drift/                # Template "Drift" — 404 error page
 │   ├── flick/                # Template "Flick" — 404 error page (animated spark)
 │   ├── lagoon/               # Template "Lagoon" — 404 error page (teal sad-face)
+│   ├── nova/                 # Template "Nova" — 404 error page (gradient 404 + social tiles)
 │   ├── orbit/                # Template "Orbit" — 404 error page (space theme)
 │   ├── scarlet/              # Template "Scarlet" — 404 error page (photo + red overlay)
 │   ├── slice/                # Template "Slice" — 404 error page (tight cut digits)
