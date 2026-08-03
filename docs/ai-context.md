@@ -19,7 +19,9 @@ free-react-templates/
 │   ├── blaze/                # Template "Blaze" — 404 error page (bold red exclamation)
 │   ├── cloud/                # Template "Cloud" — 404 error page (minimalist cloud)
 │   ├── drift/                # Template "Drift" — 404 error page
+│   ├── flick/                # Template "Flick" — 404 error page (animated spark)
 │   ├── orbit/                # Template "Orbit" — 404 error page (space theme)
+│   ├── scarlet/              # Template "Scarlet" — 404 error page (photo + red overlay)
 │   ├── tears/                # Template "Tears" — 404 error page (crying emoji)
 │   └── vista/                # Template "Vista" — 404 error page (image background)
 │       ├── src/              # main.tsx, App.tsx, components/, test setup
