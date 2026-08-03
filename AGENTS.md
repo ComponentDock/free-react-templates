@@ -62,10 +62,9 @@ Tests: Vitest + Testing Library with **100% coverage enforced**.
 5. Run the full verification chain (see rule 4) until everything passes.
 6. Self-review (rule 9), update docs/checklist, commit conventionally.
 7. **Templates ship via PRs** (see `CRONJOB.md`): work on `feat/template-<name>`
-   branches, open a PR to `main`, and let the user review/merge manually during
-   the 3-hour review window. If a PR is still open after 3 hours, auto-merge it
-   (`gh pr merge --squash --delete-branch`) so the pipeline doesn't stall.
-   While a PR is open, you may prepare the next template's spec/docs but not
+   branches, open a PR to `main` for documentation, then **merge it immediately**
+   (`gh pr merge --squash --delete-branch`). Never force-push. While a merge is
+   blocked (rare), you may prepare the next template's spec/docs but not
    implement it.
 8. If nothing needs doing: do NOT create an empty commit — report the repo is
    green and idle.
