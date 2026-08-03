@@ -22,7 +22,7 @@
 - [x] **Colorlib Error 404 14** — [colorlib](https://colorlib.com/wp/template/colorlib-error-404-14/) · [cloud](https://free-react-templates-cloud.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-error-404-14.jpg)
 - [x] **Colorlib Error 404 15** — [colorlib](https://colorlib.com/wp/template/colorlib-error-404-15/) · [flick](https://free-react-templates-flick.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-error-404-15.jpg)
 - [x] **Colorlib Error 404 16** — [colorlib](https://colorlib.com/wp/template/colorlib-error-404-16/) · [scarlet](https://free-react-templates-scarlet.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-error-404-16.jpg)
-- [ ] **Colorlib Error 404 17** — [colorlib](https://colorlib.com/wp/template/colorlib-error-404-17/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-error-404-17.jpg)
+- [~] **Colorlib Error 404 17** — [colorlib](https://colorlib.com/wp/template/colorlib-error-404-17/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-error-404-17.jpg)
 - [ ] **Colorlib Error 404 18** — [colorlib](https://colorlib.com/wp/template/colorlib-error-404-18/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-error-404-18.jpg)
 - [ ] **Colorlib Error 404 19** — [colorlib](https://colorlib.com/wp/template/colorlib-error-404-19/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-error-404-19.jpg)
 - [ ] **Colorlib Error 404 2** — [colorlib](https://colorlib.com/wp/template/colorlib-error-404-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-error-404-2.jpg)
