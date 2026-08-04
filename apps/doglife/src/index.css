@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Doglife brand burgundy — from the original ColorLib "Doglife"
+     stylesheet (css/style.css): .btn-primary, .site-footer background,
+     .ul-check.primary checks, heading accents. */
+  --color-brand: #9c2c2c;
+
+  /* On-brand text tones: body text and headings on the brand background. */
+  --color-brand-muted: #f3d9d9;
+  --color-brand-strong: #7a2020;
+
+  /* Feature-check accent — ul-check.success (#71bc42) in light sections. */
+  --color-mint: #71bc42;
+
+  /* Light section background — bg-light (#f8f9fa, bootstrap !important). */
+  --color-paper: #f8f9fa;
+
+  /* Premium pricing plan background — bg-dark (#212529). */
+  --color-night: #212529;
+
+  /* Original fonts: "Open Sans" (body) and "Vollkorn" serif (display
+     headings + testimonial quotes) via Google Fonts (loaded in index.html). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Vollkorn', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
