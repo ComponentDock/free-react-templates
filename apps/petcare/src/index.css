@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Petcare brand red — from the original ColorLib "Petcare" stylesheet
+     (assets/css/style.css): primary buttons (`.header-btn`, `.btn`),
+     accents, hover states. */
+  --color-brand: #ff2121;
+
+  /* Navy heading/alt accent — `.counter-area`, `.call-area` backgrounds
+     and `#1f2b7b` heading accents. */
+  --color-navy: #1f2b7b;
+
+  /* Alt heading tone `#415094` (section titles, genric-btn.default). */
+  --color-heading: #415094;
+
+  /* Light section backgrounds `#f9f9ff` / `#f0e9ff`. */
+  --color-paper: #f9f9ff;
+  --color-lavender: #f0e9ff;
+
+  /* Muted body text `#999999` / `#a3a3a3`. */
+  --color-muted: #999999;
+
+  /* Original fonts: "Muli" (body) + "Roboto" (alt) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
