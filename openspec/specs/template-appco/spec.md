@@ -20,7 +20,8 @@ placeholder images (no assets copied).
 - **Original:** ColorLib "Appco" — free app landing page template
   (source: https://colorlib.com/wp/template/appco/).
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/appco/`
-  (HTTP 200) + `assets/css/style.css` (HTTP 200).
+  (HTTP 200, fetched 2026-08-04, title "Appco - Powerful App for Better
+  Productivity") + `assets/css/style.css` (HTTP 200).
 - **Structure (1:1, section order):**
   1. Header — nav: Home, Feature, Services, Pricing, Pages, Blog, Contact +
      "Download" button.
