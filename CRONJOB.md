@@ -12,6 +12,7 @@ fresh session with no chat context, so every prompt below is fully self-containe
 | 3 · Templates pipeline B        | ✅ scheduled           | every 15m | `/root/free-react-templates-b`  | this chat   |
 | 4 · Templates pipeline C        | ✅ scheduled           | every 15m | `/root/free-react-templates-c`  | local files |
 | 5 · Templates pipeline D        | ✅ scheduled           | every 15m | `/root/free-react-templates-d`  | local files |
+| 6 · Cron status report          | ✅ scheduled           | every 10m | — (pure script)                 | this chat   |
 
 ---
 
