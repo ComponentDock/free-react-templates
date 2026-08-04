@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Thepetcare brand pink — from the original ColorLib "Thepetcare"
+     stylesheet (assets/css/style.css): .btn background #FF3E7E. */
+  --color-brand: #ff3e7e;
+
+  /* Dark navy — headings/alt sections (#140C40, #232F55, #023C5A). */
+  --color-navy: #140c40;
+  --color-navy2: #232f55;
+  --color-navy3: #023c5a;
+
+  /* Heading color (#415094). */
+  --color-heading: #415094;
+
+  /* Light section background — services area (#f9f9ff). */
+  --color-paper: #f9f9ff;
+
+  /* Icon chip background — lavender (#f0e9ff). */
+  --color-lavender: #f0e9ff;
+
+  /* Accent teal (#4cd3e3). */
+  --color-sky: #4cd3e3;
+
+  /* Body text gray (#999999). */
+  --color-mist: #999999;
+
+  /* Original fonts: "Fredoka One" (display) + "DM Sans" (body) via
+     Google Fonts (loaded in index.html). */
+  --font-display: 'Fredoka One', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
