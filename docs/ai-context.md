@@ -31,6 +31,7 @@ free-react-templates/
 │   ├── slice/                # Template "Slice" — 404 error page (tight cut digits)
 │   ├── sky/                  # Template "Sky" — 404 error page (blue zero + search bar)
 │   ├── tears/                # Template "Tears" — 404 error page (crying emoji)
+│   ├── thepetcare/           # Template "Thepetcare" — animal care & donation landing
 │   └── vista/                # Template "Vista" — 404 error page (image background)
 │       ├── src/              # main.tsx, App.tsx, components/, test setup
 │       ├── index.html

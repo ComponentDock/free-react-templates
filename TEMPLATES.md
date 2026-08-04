@@ -49,7 +49,7 @@
 - [x] **Petcare** — [colorlib](https://colorlib.com/wp/template/petcare/) · [petcare](https://free-react-templates-petcare.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petcare-free-template.jpg)
 - [x] **Petsitting** — [colorlib](https://colorlib.com/wp/template/petsitting/) · [petsitting](https://free-react-templates-petsitting.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petsitting-free-template.jpg)
 - [x] **Petvet** — [colorlib](https://colorlib.com/wp/template/petvet/) · [petvet](https://free-react-templates-petvet.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petvet-free-template.jpg)
-- [~] **Thepetcare** — [colorlib](https://colorlib.com/wp/template/thepetcare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thepetcare-free-template.jpg)
+- [x] **Thepetcare** — [colorlib](https://colorlib.com/wp/template/thepetcare/) · [thepetcare](https://free-react-templates-thepetcare.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thepetcare-free-template.jpg)
 
 ## App Landing Page (35)
 
