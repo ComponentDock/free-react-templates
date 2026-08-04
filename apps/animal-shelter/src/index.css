@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Animal Shelter brand gold — from the original ColorLib "Animal
+     Shelter" stylesheet (css/main.css): the primary button background
+     and ::selection color (#fab700). */
+  --color-brand: #fab700;
+
+  /* Light section background — select-pet band and process area
+     (#f9f9ff). */
+  --color-paper: #f9f9ff;
+
+  /* Near-black text used on the white volunteer buttons (#222222). */
+  --color-ink: #222222;
+
+  /* Body text color (#777777). */
+  --color-mist: #777777;
+
+  /* Footer background (#1e1c27). */
+  --color-night: #1e1c27;
+
+  /* Original font: "Poppins" (weights 300/400/500/600) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
