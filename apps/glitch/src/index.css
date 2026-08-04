@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Glitch brand pink — from the original ColorLib "Error 404 V6"
+     stylesheet (css/style.css): the neon 3D shadow bottom-right offset
+     and the "Homepage" link text/border (#ff005a). */
+  --color-glow: #ff005a;
+
+  /* Neon purple — the 3D shadow top-left offset, the "Page not found"
+     drop shadow, and the link hover color (#8400ff). */
+  --color-flare: #8400ff;
+
+  /* Near-black page background and "404" glyph fill (#030005) — the
+     fill matches the background so only the neon 3D shadow reads. */
+  --color-abyss: #030005;
+
+  /* Original font: "Montserrat" (weights 700/900) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Neon 3D offset on the "404" display (matches the original
+   text-shadow: -1px -1px 0 #8400ff, 1px 1px 0 #ff005a). */
+@utility text-shadow-neon {
+  text-shadow:
+    -1px -1px 0 var(--color-flare),
+    1px 1px 0 var(--color-glow);
+}
+
+/* Purple drop shadow under the "Page not found" label (matches the
+   original text-shadow: 0 2px 0 #8400ff). */
+@utility text-shadow-label {
+  text-shadow: 0 2px 0 var(--color-flare);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
