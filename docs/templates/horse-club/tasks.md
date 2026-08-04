@@ -46,21 +46,22 @@
   LinkedIn) inline SVG.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
-- Base implementation on `apps/sage` (multi-section landing architecture with
-  pricing/testimonials) once the pipeline reaches it.
+- Implementation based on `apps/thepetcare` (multi-section landing with
+  forms/dark mode); booking + newsletter forms validated with zod
+  (per spec), native HTML attributes for required fields.
 
 ## Tasks
 
-- [ ] Write `openspec/specs/template-horse-club/spec.md` (Gherkin
+- [x] Write `openspec/specs/template-horse-club/spec.md` (Gherkin
       requirements + scenarios + replication findings) — DONE on main (this
       prep).
-- [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/horse-club` (copy `apps/sage`; rename package to
-      `@free-react-templates/horse-club`).
-- [ ] TDD: tests first for Navbar, Hero, About/Video, Features, Home About,
+- [x] Validate spec: `npm run spec:validate`.
+- [x] Create `apps/horse-club` (based on `apps/thepetcare`; package
+      `@free-react-templates/horse-club`, registered in package-lock.json).
+- [x] TDD: tests first for Navbar, Hero, About/Video, Features, Home About,
       Pricing, Booking form, Testimonials, Blog, Gallery, Footer, App
       composition; run red.
-- [ ] Implement components (green) at 100% coverage.
+- [x] Implement components (green) at 100% coverage.
 - [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
 - [ ] Update TEMPLATES.md status `[~]` → `[x]` after merge (bookkeeping on
