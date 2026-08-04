@@ -2,6 +2,7 @@
   "name": "@free-react-templates/petsitting",
   "private": true,
   "version": "0.1.0",
+  "homepage": "https://free-react-templates-petsitting.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",
