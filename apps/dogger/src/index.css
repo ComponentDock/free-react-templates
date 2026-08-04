@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Dogger brand sage green — from the original ColorLib "Dogger"
+     stylesheet (css/style.css): --primary, .btn-primary, navbar
+     active/hover, .hover-1 overlay, accordion open toggle, testimonial
+     blockquote background, trainers + pricing section background. */
+  --color-brand: #a2c0be;
+
+  /* On-brand text tones: body text and headings on the brand background. */
+  --color-brand-muted: #567876;
+  --color-brand-strong: #405a58;
+
+  /* Light section background — bg-light (#f8f9fa, bootstrap !important). */
+  --color-paper: #f8f9fa;
+
+  /* Footer background (#333333). */
+  --color-night: #333333;
+
+  /* Original fonts: "Open Sans" (body + headings) and "Vollkorn" serif
+     (testimonial quotes) via Google Fonts (loaded in index.html). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Vollkorn', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
