@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Farmie brand green — from the original ColorLib "Farmie" stylesheet
+     (style.css): primary buttons, icons, headings accents, hover states. */
+  --color-brand: #77b122;
+
+  /* On-brand text tones: body text and headings on the brand background. */
+  --color-brand-muted: #e8f5d5;
+  --color-brand-strong: #5c8a1a;
+
+  /* Light section background — bg-gray (#f8f9fa / #f2f4f5). */
+  --color-paper: #f8f9fa;
+
+  /* Dark text / footer background (#303030 / #212529). */
+  --color-night: #303030;
+
+  /* Original font: "Karla" (400/700, body + headings) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Karla', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
