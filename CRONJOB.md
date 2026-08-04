@@ -5,32 +5,18 @@ fresh session with no chat context, so every prompt below is fully self-containe
 
 ## Current status
 
-| Job                             | State                  | Schedule  | Working tree                    | Delivery    |
-| ------------------------------- | ---------------------- | --------- | ------------------------------- | ----------- |
-| 1 · Templates pipeline A        | ✅ scheduled           | every 15m | `/root/free-react-templates`    | this chat   |
-| 2 · Continuous audit (firebase) | ⏸️ paused (2026-08-01) | every 60m | `/root/free-templates-firebase` | this chat   |
-| 3 · Templates pipeline B        | ✅ scheduled           | every 15m | `/root/free-react-templates-b`  | this chat   |
-| 4 · Templates pipeline C        | ✅ scheduled           | every 15m | `/root/free-react-templates-c`  | local files |
-| 5 · Templates pipeline D        | ✅ scheduled           | every 15m | `/root/free-react-templates-d`  | local files |
-| 6 · Cron status report          | ✅ scheduled           | every 10m | — (pure script)                 | this chat   |
+| Job                             | State                  | Schedule  | Working tree                    | Delivery  |
+| ------------------------------- | ---------------------- | --------- | ------------------------------- | --------- |
+| 1 · Templates pipeline          | ✅ scheduled           | every 15m | `/root/free-react-templates`    | this chat |
+| 2 · Continuous audit (firebase) | ⏸️ paused (2026-08-01) | every 60m | `/root/free-templates-firebase` | this chat |
+| 6 · Cron status report          | ✅ scheduled           | every 10m | — (pure script)                 | this chat |
+
+Parallel tracks B/C/D (jobs 3–5) were **retired 2026-08-04** after a short
+experiment: the single agent process serialized the runs (queued runs, API
+timeouts under load), so one pipeline job delivers the same throughput with far
+less noise. Their clone repos (`-b`, `-c`, `-d`) were deleted.
 
 ---
-
-## Parallel tracks
-
-Jobs 1, 3, 4 and 5 run the **same pipeline in parallel** (up to four templates
-in flight at once), each on its own clone of the repo. Coordination is via the
-**claim rule**: before starting a template a job fetches origin, picks the first
-`- [ ]` item not claimed (no open `feat/template-*` branch/PR, not `[~]` on
-main), and claims it by pushing a `[~]` marker commit to main **before**
-creating the implementation branch. If a claim push fails (sibling moved
-origin), it refetches and picks the next available item. PRs are merged
-immediately (`gh pr merge --squash --delete-branch`) and kept as documentation.
-
-Note on the 15-minute cadence: each run typically lasts much longer than 15
-minutes, so the tracks are effectively always working — at least one agent is
-running at any time, usually all four. Runs that die on the 600s API-idle
-timeout simply resume on the next tick (state B continues the existing branch).
 
 ## Job 1: Templates pipeline — next template + audit
 
@@ -173,44 +159,6 @@ code, React anti-patterns, security issues, missing tests, etc.
 checks. Security findings on Cloud-Function-returned URLs (Stripe, Storage signed
 URLs) are known false positives — verify, don't churn. Commit conventionally,
 push to `origin main`, and report honestly (including "nothing to fix").
-
----
-
-## Job 3: Templates pipeline B (parallel track)
-
-| Field         | Value                                         |
-| ------------- | --------------------------------------------- |
-| **Job ID**    | `24bddb765dc0`                                |
-| **Schedule**  | every 15 minutes                              |
-| **Workspace** | `/root/free-react-templates-b` (second clone) |
-| **Toolsets**  | terminal, file                                |
-| **Delivery**  | origin (this chat)                            |
-
-## Job 4: Templates pipeline C (parallel track)
-
-| Field         | Value                                        |
-| ------------- | -------------------------------------------- |
-| **Job ID**    | `2173ce3cd45b`                               |
-| **Schedule**  | every 15 minutes                             |
-| **Workspace** | `/root/free-react-templates-c` (third clone) |
-| **Toolsets**  | terminal, file                               |
-| **Delivery**  | local files (no chat spam)                   |
-
-## Job 5: Templates pipeline D (parallel track)
-
-| Field         | Value                                         |
-| ------------- | --------------------------------------------- |
-| **Job ID**    | `964c998e8b17`                                |
-| **Schedule**  | every 15 minutes                              |
-| **Workspace** | `/root/free-react-templates-d` (fourth clone) |
-| **Toolsets**  | terminal, file                                |
-| **Delivery**  | local files (no chat spam)                    |
-
-Jobs 3–5 are identical in mission, process and claim rule to Job 1 (see above),
-each running on its own clone so the tracks never share a working tree. Together
-the four tracks double/quadruple template throughput. All tracks merge their
-PRs immediately and rely on the same `.github/workflows/deploy-surge.yml` for
-automatic deployment.
 
 ---
 
