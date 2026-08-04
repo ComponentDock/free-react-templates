@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Glow brand amber — from the original ColorLib "Error 404 V8"
+     stylesheet (css/style.css): the "0" outline and the home-link
+     hover color (#ffab00). */
+  --color-brand: #ffab00;
+
+  /* Orange glow around the "0" (text-shadow, #ff8700). */
+  --color-flare: #ff8700;
+
+  /* Outline gray — the 404 neon outline, paragraph text, and the
+     home-link border/text (#c9c9c9). */
+  --color-mist: #c9c9c9;
+
+  /* Near-black page background and 404 glyph fill (#222) — the fill
+     matches the background so only the neon outline reads. */
+  --color-ink: #222;
+
+  /* Original font: "Josefin Sans" (weights 400/700) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
