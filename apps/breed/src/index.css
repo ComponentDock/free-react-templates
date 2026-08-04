@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Breed brand amber — from the original ColorLib "Breed" stylesheet
+     (css/style.css): .section-heading .small-sub-heading, footer links,
+     navbar brand span (#ffc107); button hover fill (#ffce3a). */
+  --color-brand: #ffc107;
+  --color-brand-hover: #ffce3a;
+
+  /* Light section background — team area (bg-light #f8f9fa). */
+  --color-paper: #f8f9fa;
+
+  /* Footer background (#262626). */
+  --color-night: #262626;
+
+  /* Original font: "Open Sans" via Google Fonts (loaded in index.html). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
