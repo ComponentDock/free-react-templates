@@ -39,7 +39,7 @@
 
 - [x] **Animal Shelter** — [colorlib](https://colorlib.com/wp/template/animal-shelter/) · [animal-shelter](https://free-react-templates-animal-shelter.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/animalshelter-free-template-1.jpg)
 - [x] **Anipat** — [colorlib](https://colorlib.com/wp/template/anipat/) · [pawcare](https://free-react-templates-pawcare.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/anipat-free-template.jpg)
-- [~] **Breed** — [colorlib](https://colorlib.com/wp/template/breed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/breed-free-template.jpg)
+- [x] **Breed** — [colorlib](https://colorlib.com/wp/template/breed/) · [breed](https://free-react-templates-breed.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/breed-free-template.jpg)
 - [ ] **Dogger** — [colorlib](https://colorlib.com/wp/template/dogger/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dogger-free-template.jpg)
 - [ ] **Doglife** — [colorlib](https://colorlib.com/wp/template/doglife/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/doglife-free-template.jpg)
 - [ ] **Farmie** — [colorlib](https://colorlib.com/wp/template/farmie/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/farmie-free-template.jpg)
