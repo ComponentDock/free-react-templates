@@ -33,27 +33,34 @@
   (`--color-brand: #FF3E7E`, navy scale); seeded picsum placeholders
   `https://picsum.photos/seed/thepetcare-<n>/<w>/<h>`; lucide-react icons
   (GraduationCap for training, Droplets for hygienic care, Stethoscope for
-  treatment); newsletter form with client-side validation (zod);
-  repo-standard Navbar (dark-mode toggle) and Footer chrome; social icons
-  (GitHub, X, LinkedIn) inline SVG.
-- Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
-  duplicate components.
-- Base implementation on `apps/sage` (multi-section landing architecture with
-  services/about/CTA/footer newsletter).
+  treatment); newsletter form with client-side validation; repo-standard
+  Navbar (dark-mode toggle) and Footer chrome; social icons (Facebook,
+  Twitter, Dribbble, Behance) inline SVG.
+- Reuse `packages/ui` (Button, cn) — do NOT duplicate components.
+- Base implementation on `apps/pawcare` (multi-section landing architecture
+  with services/about/CTA/footer newsletter). NOTE: the earlier prep note
+  suggested `apps/sage`, but sage does not exist on main; pawcare is the
+  closest multi-section pet landing app.
 
 ## Tasks
 
-- [ ] Write `openspec/specs/template-thepetcare/spec.md` (Gherkin
+- [x] Write `openspec/specs/template-thepetcare/spec.md` (Gherkin
       requirements + scenarios + replication findings) — DONE on main (this
-      prep).
-- [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/thepetcare` (copy `apps/sage`; rename package to
+      prep); re-verified against the live preview (structure + tokens match
+      1:1) during implementation.
+- [x] Validate spec: `npm run spec:validate` (221 specs pass).
+- [x] Create `apps/thepetcare` (copied `apps/pawcare`; renamed package to
       `@free-react-templates/thepetcare`).
-- [ ] TDD: tests first for Navbar, Hero, About, Services, Video block,
-      Quote, Emergency, Volunteer, Footer, App composition; run red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
+- [x] TDD: tests first for Navbar, Hero, About, Services, Video block,
+      Quote, Emergency, Volunteer, Footer, App composition; ran red (10
+      failing files), then green.
+- [x] Implement components (green) at 100% coverage — 13 tests, all
+      thepetcare files at 100% lines/functions/branches/statements.
+- [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
 - [ ] Update TEMPLATES.md status `[~]` → `[x]` after merge (bookkeeping on
-      main, state D).
+      main, state D) + append live Surge URL.
+- [ ] Set `"homepage"` in `apps/thepetcare/package.json` to
+      `https://free-react-templates-thepetcare.surge.sh` (bookkeeping, state
+      D).
 - [ ] Update README structure + `docs/ai-context.md` app list.
