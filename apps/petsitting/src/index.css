@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Petsitting brand green — from the original ColorLib "Petsitting"
+     stylesheet (css/style.css): primary buttons, accents, hover states. */
+  --color-brand: #00bd56;
+
+  /* Brand green hover/strong tone (#00bd55). */
+  --color-brand-strong: #00a34a;
+
+  /* Accent blue — secondary links/highlights (#207dff). */
+  --color-accent: #207dff;
+
+  /* Light section background — `bg-light` (#f8f9fa). */
+  --color-paper: #f8f9fa;
+
+  /* Dark text / footer background (#212529 / #343a40). */
+  --color-night: #212529;
+
+  /* Original font: "Montserrat" (body + headings) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
