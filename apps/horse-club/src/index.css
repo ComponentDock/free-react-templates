@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Horse Club brand pink-red — from the original ColorLib "Horse Club"
+     stylesheet (css/main.css): .banner-area / .btn background #f6214b. */
+  --color-brand: #f6214b;
+
+  /* Feature-icon palette (css/main.css): cyan, yellow, blue, orange, red. */
+  --color-cyan: #4cd3e3;
+  --color-sun: #f4e700;
+  --color-azure: #38a4ff;
+  --color-tangerine: #f45622;
+  --color-coral: #f44a40;
+
+  /* Headings (#222222) and muted text (#777777). */
+  --color-ink: #222222;
+  --color-muted: #777777;
+
+  /* Light section background — features/price areas (#f9f9ff). */
+  --color-paper: #f9f9ff;
+
+  /* Original font: "Poppins" (body + headings) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
