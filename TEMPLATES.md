@@ -48,7 +48,7 @@
 - [~] **Pawpal** — [colorlib](https://colorlib.com/wp/template/pawpal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pawpal-template-1770211334322.jpg)
 - [x] **Petcare** — [colorlib](https://colorlib.com/wp/template/petcare/) · [petcare](https://free-react-templates-petcare.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petcare-free-template.jpg)
 - [x] **Petsitting** — [colorlib](https://colorlib.com/wp/template/petsitting/) · [petsitting](https://free-react-templates-petsitting.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petsitting-free-template.jpg)
-- [~] **Petvet** — [colorlib](https://colorlib.com/wp/template/petvet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petvet-free-template.jpg)
+- [x] **Petvet** — [colorlib](https://colorlib.com/wp/template/petvet/) · [petvet](https://free-react-templates-petvet.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petvet-free-template.jpg)
 - [ ] **Thepetcare** — [colorlib](https://colorlib.com/wp/template/thepetcare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thepetcare-free-template.jpg)
 
 ## App Landing Page (35)
@@ -1126,7 +1126,7 @@
 - [ ] **Pato** — [colorlib](https://colorlib.com/wp/template/pato/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pato-free-modern-restuarant-website-template.jpg)
 - [ ] **Persuit** — [colorlib](https://colorlib.com/wp/template/persuit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/persuit-free-template.jpg)
 - [ ] **Pestcontrol** — [colorlib](https://colorlib.com/wp/template/pestcontrol/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pestcontrol-colorlib-template.jpg)
-- [~] **Petvet** — [colorlib](https://colorlib.com/wp/template/petvet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petvet-free-template.jpg)
+- [x] **Petvet** — [colorlib](https://colorlib.com/wp/template/petvet/) · [petvet](https://free-react-templates-petvet.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petvet-free-template.jpg)
 - [ ] **Pexcon** — [colorlib](https://colorlib.com/wp/template/pexcon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pexcon-free-template.jpg)
 - [ ] **Pexman** — [colorlib](https://colorlib.com/wp/template/pexman/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pexman-colorlib-template.jpg)
 - [ ] **Pharma** — [colorlib](https://colorlib.com/wp/template/pharma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pharma-free-template.jpg)
