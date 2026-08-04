@@ -39,8 +39,8 @@
   icons (GitHub, X, LinkedIn) inline SVG.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
-- Base implementation on `apps/sage` (multi-section landing architecture with
-  services/gallery/team/blog/footer).
+- Base implementation on `apps/farmie` (multi-section landing architecture with
+  navbar/hero/services/counters/commitment/gallery/CTA/team/blog/footer).
 
 ## Tasks
 

@@ -45,7 +45,18 @@ copied).
     **#a3a3a3** (muted), **#f9f9ff** / **#f0e9ff** (light sections), white
     sections.
   - Fonts: **"Muli"** (body) + **"Roboto"** (alt) via Google Fonts.
-  - Buttons: filled red `btn` (rounded, uppercase).
+  - Buttons: filled red `btn` (rounded, uppercase) — `.header-btn` is a red
+    pill (`border-radius: 30px`, `#ff2121`), `.white-btn` is white with red
+    text (used on the navy call band).
+- **Confirmed copy (from the live preview DOM):** header phone
+  `01654.066.456`; hero CTA `Contact Now`; counters include `354+` with a
+  "Successful Treatments" label; team members **Mike Janathon**, **Mike J
+  Smith**, **Pule W Smith** (all role "Doctor"); blog posts **"Amazing Places
+  To Visit In Summer"**, **"Developing Creativithout Losing Visual"**,
+  **"Winter Photography Tips from Glenn"**; call band phone `+880 4664 216`;
+  the call band's big heading in the original is recycled ColorLib copy
+  ("World's Leading Law Consultency Agency !") — paraphrased to a pet-care
+  message in this recreation.
 - **Recreation decisions:** the repo-standard Navbar (with dark-mode toggle)
   wraps the header; sections recreated with Tailwind tokens
   (`--color-brand` = `#ff2121`, navy `#1f2b7b` accent in `@theme`);
