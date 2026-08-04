@@ -11,7 +11,7 @@
   200). The classic preview portal (`preview.colorlib.com/theme/pawpal/`
   and variants) 404s — the portal's `products.js` manifest maps `#pawpal` to
   this Cloudflare Pages demo, which is the reference. Stylesheet:
-  `/_astro/Base.<hash>.css` (Tailwind-based).
+  `/_astro/Base.BfUsFLRD.css` (Tailwind-based).
 - **Structure observed (1:1, section order):**
   1. Header — fixed top nav (transparent → solid): Services, About, Gallery,
      Team, Contact + "Book Now".
@@ -23,42 +23,48 @@
   4. Why Us — "A Place Where Pets Come First": Certified Staff, Fear-Free
      Certified, Premium Products, Climate Controlled.
   5. Gallery — "Happy Pets Gallery" image grid.
-  6. Testimonials — "What Pet Parents Say" quote cards.
+  6. Testimonials — "What Pet Parents Say" quote cards (Sarah Mitchell,
+     Jessica Thompson, Michael Park, David Martinez).
   7. CTA band — "Ready to Pamper Your Pet?" on pink gradient.
   8. Footer (dark) — brand + blurb (Austin, TX · since 2015), Services /
      Company / Support columns, Hours / Contact / Location.
 - **Design tokens:** brand pink **#db2777** (primary), hover **#be185d**,
   tints **#f472b6**/**#fbcfe8**/**#fce7f3**; dark text **#111827**/**#1f2937**,
   muted **#9ca3af**/**#4b5563**; fonts **Poppins** + **Lora** (serif
-  accents) via Google Fonts; filled rounded pink pill buttons.
+  headings) via Google Fonts; filled rounded pink pill buttons.
 - **Recreation name:** Pawpal (keeps the original name — it is already a
   distinct working name, not a ColorLib brand). App folder `apps/pawpal`,
   package `@free-react-templates/pawpal`.
-- **Design approach:** pink brand tokens in `@theme`
-  (`--color-brand: #db2777`); light/pink section alternation; seeded picsum
-  placeholders `https://picsum.photos/seed/pawpal-<n>/<w>/<h>`; lucide-react
-  icons (Scissors, Bath, PawPrint, Moon for boarding, etc.); stat counters
-  as static numbers; repo-standard Navbar (dark-mode toggle) and Footer
+- **Design approach:** pink primary scale in `@theme`
+  (`--color-primary-600: #db2777` — drives shared ui Button/ButtonLink);
+  light/pink section alternation; seeded picsum placeholders
+  `https://picsum.photos/seed/pawpal-<n>/<w>/<h>`; lucide-react icons
+  (Scissors, Bath, Dog, Moon, Hand, Baby, BadgeCheck, Heart, Sparkles,
+  Snowflake, Quote); repo-standard Navbar (dark-mode toggle) and Footer
   chrome; social icons (GitHub, X, LinkedIn) inline SVG.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
-- Base implementation on `apps/sage` (multi-section landing architecture) —
-  the demo itself is Tailwind-native, so the recreation maps 1:1 onto the
-  monorepo stack.
+- Base implementation on `apps/horse-club` (most recent full multi-section
+  landing architecture — `apps/sage` referenced in early prep never existed
+  in git history) — the demo itself is Tailwind-native, so the recreation
+  maps 1:1 onto the monorepo stack.
 
 ## Tasks
 
-- [ ] Write `openspec/specs/template-pawpal/spec.md` (Gherkin requirements +
-      scenarios + replication findings) — DONE on main (this prep).
-- [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/pawpal` (copy `apps/sage`; rename package to
-      `@free-react-templates/pawpal`).
-- [ ] TDD: tests first for Navbar, Hero (headline, CTAs, stats), Services,
-      Why Us, Gallery, Testimonials, CTA band, Footer, App composition; run
-      red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
-      spec:validate.
+- [x] Write `openspec/specs/template-pawpal/spec.md` (Gherkin requirements +
+      scenarios + replication findings) — DONE on main (this prep); refined
+      on `feat/template-pawpal` with fetched demo DOM/CSS findings
+      (2026-08-04).
+- [x] Validate spec: `npm run spec:validate` (221 specs pass).
+- [x] Create `apps/pawpal` (copy `apps/horse-club`; rename package to
+      `@free-react-templates/pawpal`; drop unused zod dep).
+- [x] TDD: tests first for Navbar, Hero, Services, WhyUs, Gallery,
+      Testimonials, Cta, Footer, App composition; 11 tests, all green.
+- [x] Implement components (green) at 100% coverage.
+- [x] Full gate: typecheck → lint → test:coverage (100/100/100/100) →
+      build → knip → fallow → spec:validate — all pass.
 - [ ] Update TEMPLATES.md status `[~]` → `[x]` after merge (bookkeeping on
       main, state D).
-- [ ] Update README structure + `docs/ai-context.md` app list.
+- [ ] Update README structure + `docs/ai-context.md` app list (bookkeeping
+      on main, per Horse Club precedent shared docs are not touched on the
+      feature branch).
