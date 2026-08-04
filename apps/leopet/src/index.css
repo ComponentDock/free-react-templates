@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Leopet brand teal — from the original ColorLib "Leopet" stylesheet
+     (css/style.css): primary buttons, icons, accents. */
+  --color-brand: #53c9bb;
+
+  /* Darker teal hover tone derived from the brand. */
+  --color-brand-strong: #3fb3a4;
+
+  /* Secondary accent red — hover/CTA highlights from the original CSS. */
+  --color-accent: #ff5b5b;
+
+  /* Headings purple — #415094 from the original stylesheet. */
+  --color-heading: #415094;
+
+  /* Light section background — #f9f9ff / #f0e9ff from the original CSS. */
+  --color-paper: #f9f9ff;
+
+  /* Dark footer / night background — deep purple derived from #415094. */
+  --color-night: #2c3563;
+
+  /* Original font: "Quicksand" (body + headings) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
