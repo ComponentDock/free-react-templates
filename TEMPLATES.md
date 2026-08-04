@@ -53,7 +53,7 @@
 
 ## App Landing Page (35)
 
-- [ ] **Appco** — [colorlib](https://colorlib.com/wp/template/appco/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appco-free-template.jpg)
+- [~] **Appco** — [colorlib](https://colorlib.com/wp/template/appco/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appco-free-template.jpg)
 - [ ] **Applab** — [colorlib](https://colorlib.com/wp/template/applab/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/applab-free-template.jpg)
 - [ ] **Appli** — [colorlib](https://colorlib.com/wp/template/appli/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appli-free-template.jpg)
 - [ ] **Appru** — [colorlib](https://colorlib.com/wp/template/appru/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appru-free-template.jpg)

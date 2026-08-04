@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Appco brand purple — from the ColorLib "Appco" stylesheet
+     (assets/css/style.css): primary buttons/accents #8f1bdc, pink accent
+     #f9218d. Purple scale keyed on purple-600 so the shared ui
+     Button/ButtonLink "primary" variant works. */
+  --color-primary-50: #f7edfc;
+  --color-primary-100: #eedaf8;
+  --color-primary-200: #dcb5f1;
+  --color-primary-300: #c68fe8;
+  --color-primary-400: #a95edc;
+  --color-primary-500: #9737d4;
+  --color-primary-600: #8f1bdc;
+  --color-primary-700: #7c16c0;
+  --color-primary-800: #6812a1;
+  --color-primary-900: #530e82;
+
+  /* Pink accent #f9218d (secondary highlights). */
+  --color-accent: #f9218d;
+
+  /* Headings (#222222, #415094) and muted text (#999999, #828bb2). */
+  --color-ink: #222222;
+  --color-navy: #415094;
+  --color-muted: #999999;
+  --color-mist: #828bb2;
+
+  /* Light section backgrounds — features/pricing areas (#f9f9ff, #f0e9ff). */
+  --color-paper: #f9f9ff;
+  --color-lavender: #f0e9ff;
+
+  /* Original fonts: "Poppins" + "Nunito" via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
