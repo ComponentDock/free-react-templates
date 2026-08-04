@@ -37,7 +37,7 @@
 
 ## Animal (13)
 
-- [~] **Animal Shelter** — [colorlib](https://colorlib.com/wp/template/animal-shelter/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/animalshelter-free-template-1.jpg)
+- [x] **Animal Shelter** — [colorlib](https://colorlib.com/wp/template/animal-shelter/) · [animal-shelter](https://free-react-templates-animal-shelter.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/animalshelter-free-template-1.jpg)
 - [ ] **Anipat** — [colorlib](https://colorlib.com/wp/template/anipat/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/anipat-free-template.jpg)
 - [ ] **Breed** — [colorlib](https://colorlib.com/wp/template/breed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/breed-free-template.jpg)
 - [ ] **Dogger** — [colorlib](https://colorlib.com/wp/template/dogger/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dogger-free-template.jpg)
