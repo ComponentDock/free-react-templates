@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Petvet brand pink/rose — from the original ColorLib "Petvet" stylesheet
+     (css/style.css): primary buttons, headings accents. */
+  --color-brand: #fd4c82;
+
+  /* Darker rose hover tone derived from the brand. */
+  --color-brand-strong: #e0356b;
+
+  /* Secondary accent green — highlights from the original CSS. */
+  --color-accent: #91c235;
+
+  /* Light section background — #f8f9fa (bg-light) from the original CSS. */
+  --color-paper: #f8f9fa;
+
+  /* Dark footer / night background — derived from the original dark footer. */
+  --color-night: #1a1a2e;
+
+  /* Original font: "Roboto" (body + headings) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
