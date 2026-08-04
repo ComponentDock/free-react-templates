@@ -54,13 +54,26 @@ imagery is recreated with seeded placeholder images (no assets copied).
     sections), white sections.
   - Fonts: **"Montserrat"** (body + headings) via Google Fonts.
   - Buttons: filled green `btn` (rounded, uppercase).
+- **Confirmed copy (from the live preview DOM):** nav links Home / About /
+  Veterinarian / Services / Gallery / Pricing / Blog / Contact; hero h1
+  "Highest Quality Care For Pets You'll Love"; intro blocks Dog Walking, Pet
+  Daycare, Pet Grooming; four "Why Choose Us?" features (Care Advices,
+  Customer Supports, Emergency Services, Veterinary Help); FAQ questions
+  "How to train your pet dog?", "How to manage your pets?", "What is the best
+  grooming for your pets?", "What are those requirements for sitting pets?";
+  pricing plans Starter / Professional / Premium; gallery breeds Persian Cat,
+  Pomeranian, Sphynx Cat, British Shorthair, Beagle, Pug; the original blog
+  posts all reuse recycled ColorLib placeholder copy ("Even the
+  all-powerful Pointing has no control about the blind texts") — paraphrased
+  to distinct pet-care topics in this recreation; consultation heading "Free
+  Consultation".
 - **Recreation decisions:** the repo-standard Navbar (with dark-mode toggle)
   wraps the header; sections recreated with Tailwind tokens
   (`--color-brand` = `#00bd56`, green scale in `@theme`); placeholder images
   via `https://picsum.photos/seed/petsitting-<n>/<w>/<h>`; icons from
   lucide-react; pricing monthly/yearly toggle as a stateful control;
-  consultation form with client-side validation (zod); social icons inline
-  SVG; no assets copied.
+  consultation form with client-side validation (regex-based, matching the
+  repo's existing form pattern); social icons inline SVG; no assets copied.
 
 Petsitting lives in `apps/petsitting` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, Badge, cn).
