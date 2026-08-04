@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pawcare brand red-orange — from the original ColorLib "Anipat"
+     stylesheet (css/style.css): the .boxed-btn outline, its hover fill,
+     and accent colors (#ff3500). */
+  --color-brand: #ff3500;
+
+  /* Light section background — services area (#f9f9ff). */
+  --color-paper: #f9f9ff;
+
+  /* Icon chip background — lavender (#f0e9ff). */
+  --color-lavender: #f0e9ff;
+
+  /* Heading / dark text (#222222). */
+  --color-ink: #222222;
+
+  /* Body text gray (#999999). */
+  --color-mist: #999999;
+
+  /* Original font: "Poppins" via Google Fonts (loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
