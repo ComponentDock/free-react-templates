@@ -36,4 +36,43 @@ describe('Booking', () => {
     expect(screen.getByRole('heading', { name: 'Fannie Rowe' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Hulda Sutton' })).toBeInTheDocument()
   })
+
+  it('blocks submission and shows per-field errors for an invalid appointment', async () => {
+    const user = userEvent.setup()
+    render(<Booking />)
+
+    await user.click(screen.getByRole('button', { name: 'Book Appointment' }))
+
+    expect(screen.getByText('Please enter your name')).toBeInTheDocument()
+    expect(screen.getByText('Please enter a valid phone number')).toBeInTheDocument()
+    expect(screen.getByText('Please enter a valid email')).toBeInTheDocument()
+    expect(screen.getByText('Please choose a service')).toBeInTheDocument()
+    expect(screen.queryByRole('status')).not.toBeInTheDocument()
+  })
+
+  it('validates an invalid email address', async () => {
+    const user = userEvent.setup()
+    render(<Booking />)
+
+    await user.type(screen.getByLabelText('Name'), 'Jane Rider')
+    await user.type(screen.getByLabelText('Phone'), '555-0100')
+    await user.type(screen.getByLabelText('Email'), 'not-an-email')
+    await user.selectOptions(screen.getByLabelText('Service'), 'Training')
+
+    await user.click(screen.getByRole('button', { name: 'Book Appointment' }))
+
+    expect(screen.getByText('Please enter a valid email')).toBeInTheDocument()
+    expect(screen.queryByRole('status')).not.toBeInTheDocument()
+  })
+
+  it('clears a field error as soon as the user fixes the field', async () => {
+    const user = userEvent.setup()
+    render(<Booking />)
+
+    await user.click(screen.getByRole('button', { name: 'Book Appointment' }))
+    expect(screen.getByText('Please enter your name')).toBeInTheDocument()
+
+    await user.type(screen.getByLabelText('Name'), 'Jane Rider')
+    expect(screen.queryByText('Please enter your name')).not.toBeInTheDocument()
+  })
 })
