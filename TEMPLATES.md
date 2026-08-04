@@ -33,7 +33,7 @@
 - [x] **Colorlib Error 404 6** — [colorlib](https://colorlib.com/wp/template/colorlib-error-404-6/) · [glitch](https://free-react-templates-glitch.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-error-404-6.jpg)
 - [x] **Colorlib Error 404 7** — [colorlib](https://colorlib.com/wp/template/colorlib-error-404-7/) · [pop](https://free-react-templates-pop.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-error-404-7.jpg)
 - [x] **Colorlib Error 404 8** — [colorlib](https://colorlib.com/wp/template/colorlib-error-404-8/) · [glow](https://free-react-templates-glow.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-error-404-8.jpg)
-- [~] **Colorlib Error 404 9** — [colorlib](https://colorlib.com/wp/template/colorlib-error-404-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-error-404-9.jpg)
+- [x] **Colorlib Error 404 9** — [colorlib](https://colorlib.com/wp/template/colorlib-error-404-9/) · [diamond](https://free-react-templates-diamond.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-error-404-9.jpg)
 
 ## Animal (13)
 
