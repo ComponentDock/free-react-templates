@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Diamond brand amber — from the original ColorLib "Error 404 V9"
+     stylesheet (css/style.css): the rotated diamond badge background
+     (#ffa200). */
+  --color-brand: #ffa200;
+
+  /* Pill button gray — the "home page" link background (#8f8f8f). */
+  --color-smoke: #8f8f8f;
+
+  /* Pill button hover — the darkened link background (#2c2c2c). */
+  --color-charcoal: #2c2c2c;
+
+  /* Original font: "Cabin" (weights 400/700) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Cabin', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
