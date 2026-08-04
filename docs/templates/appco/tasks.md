@@ -8,7 +8,8 @@
 - **Original:** ColorLib "Appco" — free app landing page template
   (source: https://colorlib.com/wp/template/appco/).
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/appco/`
-  (HTTP 200) + stylesheet `assets/css/style.css` (HTTP 200).
+  (HTTP 200, fetched 2026-08-04, title "Appco - Powerful App for Better
+  Productivity") + stylesheet `assets/css/style.css` (HTTP 200).
 - **Structure observed (1:1, section order):**
   1. Header — nav (Home, Feature, Services, Pricing, Pages, Blog, Contact)
      - "Download".
@@ -23,9 +24,10 @@
      - "Get Started".
   7. Testimonials — "What Our Customers Have to Say": Sarah Johnson, Michael
      Chen, Emily Rodriguez, David Kim.
-  8. FAQ — "Frequently Asked Questions": 6 questions.
+  8. FAQ — "Frequently Asked Questions": 6 questions (accordion).
   9. Download CTA — "Our App Available For Any Device Download now".
-  10. Integrations — "Integrates With Your Favorite Tools" logo grid.
+  10. Integrations — "Integrates With Your Favorite Tools" logo grid (Slack,
+      Trello, Dropbox, GitHub, Figma, Notion).
   11. Metrics — "Say Hello To The Collaboration Hub.": 50K+, 250K+, 4.9,
       120+.
   12. Footer — about, Quick Links / Support / Newsletter columns, bottom
@@ -37,31 +39,39 @@
 - **Recreation name:** Appco (keeps the original name — it is already a
   distinct working name, not a ColorLib brand). App folder `apps/appco`,
   package `@free-react-templates/appco`.
-- **Design approach:** purple brand tokens in `@theme`
-  (`--color-brand: #8f1bdc`, accent `#f9218d`); seeded picsum placeholders
-  `https://picsum.photos/seed/appco-<n>/<w>/<h>`; lucide-react icons (Sliders
-  for customize, ShieldCheck for security, Headset for support, Palette for
-  design); FAQ accordion as stateful component; repo-standard Navbar
-  (dark-mode toggle) and Footer chrome; social icons (GitHub, X, LinkedIn)
+- **Design approach:** purple primary scale in `@theme`
+  (`--color-primary-600: #8f1bdc` — drives shared ui Button/ButtonLink),
+  accent `#f9218d`; seeded picsum placeholders
+  `https://picsum.photos/seed/appco-<n>/<w>/<h>`; lucide-react icons (Sliders,
+  ShieldCheck, Headset, Palette, Workflow, CreditCard, MessageSquare, Quote,
+  Star, ChevronDown); FAQ accordion as stateful component (native `hidden`
+  attribute for visibility); repo-standard Navbar (dark-mode toggle) and
+  Footer chrome with newsletter form; social icons (GitHub, X, LinkedIn)
   inline SVG.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
-- Base implementation on `apps/sage` (multi-section landing architecture with
-  features/pricing/testimonials/FAQ/footer newsletter).
+- Base implementation on `apps/pawpal` (most recent full multi-section
+  landing architecture — `apps/sage` referenced in early prep never existed
+  in git history) — the demo is Tailwind-native, so the recreation maps 1:1
+  onto the monorepo stack.
 
 ## Tasks
 
-- [ ] Write `openspec/specs/template-appco/spec.md` (Gherkin requirements +
-      scenarios + replication findings) — DONE on main (this prep).
-- [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/appco` (copy `apps/sage`; rename package to
+- [x] Write `openspec/specs/template-appco/spec.md` (Gherkin requirements +
+      scenarios + replication findings) — DONE on main (this prep); refined
+      on `feat/template-appco` with fetched preview DOM/CSS findings
+      (2026-08-04).
+- [x] Validate spec: `npm run spec:validate` (221 specs pass).
+- [x] Create `apps/appco` (copy `apps/pawpal`; rename package to
       `@free-react-templates/appco`).
-- [ ] TDD: tests first for Navbar, Hero, Features, Services, Video demo,
-      Pricing, Testimonials, FAQ, Download CTA, Metrics, Footer, App
-      composition; run red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
-      spec:validate.
+- [x] TDD: tests first for Navbar, Hero, Features, Services, Video demo,
+      Pricing, Testimonials, FAQ, Download CTA, Integrations, Metrics,
+      Footer, App composition; 17 tests, all green.
+- [x] Implement components (green) at 100% coverage.
+- [x] Full gate: typecheck → lint → test:coverage (100/100/100/100) →
+      build → knip → fallow → spec:validate — all pass.
 - [ ] Update TEMPLATES.md status `[~]` → `[x]` after merge (bookkeeping on
       main, state D).
-- [ ] Update README structure + `docs/ai-context.md` app list.
+- [ ] Update README structure + `docs/ai-context.md` app list (bookkeeping
+      on main, per Horse Club precedent shared docs are not touched on the
+      feature branch).
