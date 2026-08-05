@@ -42,17 +42,21 @@
 
 ## Tasks
 
-- [ ] Write `openspec/specs/template-applab/spec.md` (Gherkin requirements +
-      scenarios + replication findings) — DONE on main (this prep).
-- [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/applab` (copy `apps/sage`; rename package to
+- [x] Write `openspec/specs/template-applab/spec.md` (Gherkin requirements +
+      scenarios + replication findings) — DONE on main (this prep); refined
+      on `feat/template-applab` with fetched preview DOM/CSS findings
+      (2026-08-05).
+- [x] Validate spec: `npm run spec:validate` (221 specs pass).
+- [x] Create `apps/applab` (copy `apps/appco`; rename package to
       `@free-react-templates/applab`).
-- [ ] TDD: tests first for Navbar, Hero, Feature blocks, How-it-works,
+- [x] TDD: tests first for Navbar, Hero, Feature blocks, How-it-works,
       Features strip, Testimonials, Pricing, CTA, Footer, App composition;
-      run red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
-      spec:validate.
+      13 tests, all green.
+- [x] Implement components (green) at 100% coverage.
+- [x] Full gate: typecheck → lint → test:coverage (100/100/100/100) →
+      build → knip → fallow → spec:validate — all pass.
 - [ ] Update TEMPLATES.md status `[~]` → `[x]` after merge (bookkeeping on
       main, state D).
-- [ ] Update README structure + `docs/ai-context.md` app list.
+- [ ] Update README structure + `docs/ai-context.md` app list (bookkeeping
+      on main, per Horse Club precedent shared docs are not touched on the
+      feature branch).

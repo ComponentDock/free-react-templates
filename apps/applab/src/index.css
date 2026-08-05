@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Applab brand orange — from the ColorLib "Applab" stylesheet
+     (css/style.css): primary buttons/accents #ff5e13. Orange scale keyed on
+     primary-600 so the shared ui Button/ButtonLink "primary" variant works. */
+  --color-primary-50: #fff4ec;
+  --color-primary-100: #ffe6d5;
+  --color-primary-200: #ffcba8;
+  --color-primary-300: #ffa873;
+  --color-primary-400: #ff8442;
+  --color-primary-500: #ff6b24;
+  --color-primary-600: #ff5e13;
+  --color-primary-700: #e04e0a;
+  --color-primary-800: #b63e08;
+  --color-primary-900: #933206;
+
+  /* Green accent #37ef8d (success highlights, star ratings). */
+  --color-accent: #37ef8d;
+
+  /* Blue accent #0181f5 (secondary highlights). */
+  --color-sky: #0181f5;
+
+  /* Headings (#415094) and muted text (#999999). */
+  --color-navy: #415094;
+  --color-muted: #999999;
+
+  /* Light section backgrounds (#f9f9ff, #f0e9ff). */
+  --color-paper: #f9f9ff;
+  --color-lavender: #f0e9ff;
+
+  /* Original fonts: "Poppins" (headings) + Roboto (body) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
