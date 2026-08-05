@@ -12,7 +12,8 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 - **Original:** ColorLib "Apps" — app landing / software showcase site
   (source: https://colorlib.com/wp/template/apps/).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/apps/
-  (HTTP 200, full rendered DOM + `css/main.css` (37KB) extracted).
+  (HTTP 200, full rendered DOM + `css/main.css` (37KB) extracted;
+  re-fetched and confirmed 2026-08-05 during implementation).
   The TEMPLATES.md screenshot (`apps-free-app-website-template.jpg`) is the
   visual reference; the design below is reconstructed from the DOM structure
   and CSS tokens.
@@ -31,12 +32,13 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   App Store / Play Store) → Footer (Top Products, Newsletter, Instagram,
   copyright).
 - **Design tokens extracted from `main.css`:**
-  - Primary **cyan-blue `#42d1ff`** (buttons, accents) with supporting
-    `#4cd3e3`, `#38a4ff`.
+  - Primary **gradient `linear-gradient(0deg, #3ea7ff 0%, #42d1ff 100%)`**
+    (buttons `.primary-btn`, accents, stat numerals) — cyan `#42d1ff` with
+    gradient-start blue `#3ea7ff`; supporting `#4cd3e3`, `#38a4ff`.
   - Light section backgrounds `#f9f9ff`, `#f1f1f1`; dark footer `#222222`;
     muted text `#777777`.
   - Font: **"Poppins"** (Google Fonts).
-  - Buttons: `.primary-btn` — height 42px, 40px side padding,
+  - Buttons: `.primary-btn` — line-height 42px, 40px side padding,
     **border-radius 25px** (pill), white text.
 - **Recreation decisions:** photos → seeded picsum placeholders
   (`picsum.photos/seed/apps-<n>/<w>/<h>`); icons → lucide-react; the video
@@ -148,7 +150,7 @@ stats row with four figures.
 
 - **GIVEN** the page is rendered
 - **WHEN** the FAQ section is displayed
-- **THEN** it SHALL contain a heading "Frequently Asked Questions" with at least three expandable questions
+- **THEN** it SHALL contain a heading "Frequently Asked Questions" with at least three expandable questions ("Are your Templates responsive?", "Does it have all the plugin as mentioned?", "Can i use the these theme for my client?")
 - **AND** it SHALL show stats for 5962 Projects Completed, 2394 New Projects, 1439 Tickets Submitted, and 933 Cups of Coffee
 
 #### Scenario: FAQ toggle
