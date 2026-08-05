@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Crafted brand colors — from the ColorLib "Crafted" stylesheet
+     (main.css): primary blue #4ba0f9, accent gradient
+     linear-gradient(90deg, #4ba0f9 0%, #85f3f9 100%) on hover/CTA areas,
+     yellow #f8b600 and cyan #4cd3e3 accents, dark sections #222222,
+     light sections #f9f9ff, counter band #f4f8ff, body text #777777. */
+  --color-primary-50: #eff8ff;
+  --color-primary-100: #dbeeff;
+  --color-primary-200: #b6dcff;
+  --color-primary-300: #85c6ff;
+  --color-primary-400: #4ba0f9;
+  --color-primary-500: #4ba0f9;
+  --color-primary-600: #2b7fd9;
+  --color-primary-700: #1f63ab;
+  --color-primary-800: #1a4d84;
+  --color-primary-900: #163a63;
+
+  --color-sun: #f8b600;
+  --color-aqua: #4cd3e3;
+
+  --color-ink: #222222;
+  --color-paper: #f9f9ff;
+  --color-counter: #f4f8ff;
+  --color-body: #777777;
+
+  /* Original fonts: "Playfair Display" (display) + "Roboto" (body),
+     loaded via Google Fonts <link> in index.html. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
