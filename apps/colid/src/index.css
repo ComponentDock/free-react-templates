@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Colid brand blues — from the ColorLib "Colid" stylesheet (style.css):
+     sky gradient linear-gradient(to bottom, #75cbe7 0%, #138fc2 100%)
+     (.sky-bg / .overlay:before) and royal-blue buttons #2f60c3. Scale
+     keyed on primary-500 (#138fc2) so the shared ui Button/ButtonLink
+     "primary" variant works. */
+  --color-primary-50: #eaf7fc;
+  --color-primary-100: #cdecf8;
+  --color-primary-200: #9edcf2;
+  --color-primary-300: #75cbe7;
+  --color-primary-400: #3baad8;
+  --color-primary-500: #138fc2;
+  --color-primary-600: #2f60c3;
+  --color-primary-700: #274f9f;
+  --color-primary-800: #1f3d7c;
+  --color-primary-900: #172d5c;
+
+  /* Section backgrounds from style.css: gray-bg #f2fefe (light cyan),
+     hero dark photo over #000, price area parallax photo. */
+  --color-paper: #f2fefe;
+  --color-night: #000000;
+  --color-muted: #515656;
+
+  /* Original font: "Poppins" (Google Fonts, loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
