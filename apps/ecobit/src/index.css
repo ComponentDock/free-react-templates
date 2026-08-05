@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Ecobit brand colors — from the ColorLib "Ecobit" stylesheet
+     (style.css): primary orange #ff4800 (57 refs — buttons, accents,
+     h1 span), light section backgrounds #f9f9ff and #f0e9ff, dark
+     heading text #182028, muted body text #888888/#999999, secondary
+     accents cyan #4cd3e3, blue #38a4ff, purple #7c32ff, yellow #f4e700. */
+  --color-primary-50: #fff4f0;
+  --color-primary-100: #ffe6dc;
+  --color-primary-200: #ffcbb8;
+  --color-primary-300: #ffa585;
+  --color-primary-400: #ff7a52;
+  --color-primary-500: #ff5c2b;
+  --color-primary-600: #ff4800;
+  --color-primary-700: #d63c00;
+  --color-primary-800: #a82f00;
+  --color-primary-900: #7a2200;
+
+  --color-paper: #f9f9ff;
+  --color-mist: #f0e9ff;
+  --color-fog: #f7f7f7;
+  --color-ink: #182028;
+  --color-body: #888888;
+  --color-aqua: #4cd3e3;
+  --color-skyblue: #38a4ff;
+  --color-violet: #7c32ff;
+  --color-sun: #f4e700;
+
+  /* Original fonts: "Barlow Semi Condensed" (body + headings) and
+     "Rajdhani" (blurbs, section subtext, buttons), loaded via Google
+     Fonts <link> in index.html. */
+  --font-sans: 'Barlow Semi Condensed', ui-sans-serif, system-ui, sans-serif;
+  --font-accent: 'Rajdhani', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
