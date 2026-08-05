@@ -30,7 +30,10 @@
      Aguilar, Robert Spears, Bruce Rogers**.
   8. Blog (`bg-light`): "Create Beautiful Website In Less Than An Hour" —
      **Ham Brook** and **James Phelps** + **Continue Reading...**.
-  9. Footer: columns + social + copyright.
+  9. CTA band (`bg-primary`): full-width "Hire Us & Let's Get Started".
+  10. Footer (`#333333`): About Us blurb, Features links (About Us,
+      Services, Testimonials, Contact Us), Follow Us socials, Subscribe
+      Newsletter form (email + Send), copyright.
 - **Design tokens extracted from `style.css`:**
   - Primary **indigo `#0d0cb5`** (buttons, accents).
   - Light bgs `#edf0f5`, `#f4f5f9`; dark text `#25262a`.
@@ -50,6 +53,9 @@
 - [x] Write `openspec/specs/template-chimper/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
+- [x] Refine spec on `feat/template-chimper` with full replication pass
+      (preview DOM + `css/style.css` + Bootstrap theme CSS; CTA band, top
+      bar, typed words, carousel controls recorded).
 - [ ] Create `apps/chimper` (copy the section-rich landing app pattern —
       Aurora; rename package to `@free-react-templates/chimper`).
 - [ ] TDD: tests first for each section component; run red.
