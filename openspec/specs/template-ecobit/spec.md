@@ -13,22 +13,38 @@ CSS 4 + TypeScript.
 - **Original:** ColorLib "Ecobit" — app / networking landing page
   (source: https://colorlib.com/wp/template/ecobit/).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/ecobit/
-  (HTTP 200, full rendered DOM + `css/style.css` (160KB) extracted).
-  The TEMPLATES.md screenshot (`ecobit-free-template.jpg`) is the visual
-  reference; the design below is reconstructed from the DOM structure and
-  CSS tokens.
-- **Section order (1:1):** Navbar (Home, features, pricing, Blog, pages,
-  Elements, Contact + sing up) → Hero ("Building Networks For People" +
-  try for free) → Feature tiles (Fully Secured, Unique Design, A Volunteer)
-  → Split ("Easy To Access Social Media" + learn more) → Split ("With
-  efficiency to unlock more opportunities" + learn more) → Pricing ("Simple
-  Pricing" + Standard $50.00 / Business $50.00 + Purchase Now) → Reviews →
-  Subscribe → Clients → Footer.
-- **Design tokens extracted from `style.css`:**
-  - Primary **orange `#ff4800`** (buttons, accents).
-  - Light section backgrounds `#f9f9ff`, `#f0e9ff`.
+  (HTTP 200 — full rendered DOM + `css/style.css` (161 KB) extracted;
+  Bootstrap 4 + owl.carousel + slick + flaticon/themify icon fonts).
+  The TEMPLATES.md screenshot (`ecobit-free-template.jpg`) matches this
+  reconstruction.
+- **Section order (1:1):**
+  1. Navbar (`main_menu`): logo "ecobit" + Home, Features, Pricing, Blog,
+     Pages, Elements, Contact + "Sing Up" button.
+  2. Hero (`banner_part`): "Building Networks For People" + blurb + "try
+     for free" button.
+  3. Feature tiles (`use_sasu`): "Fully Secured", "Unique Design", "A
+     Volunteer" (icon + title + blurb; original repeats lorem copy).
+  4. Split (`about_us`): "Easy To Access Social Media" + blurb + "learn
+     more" link.
+  5. Split (`about_us right_time`): "With efficiency to unlock more
+     opportunities" + blurb + "learn more" link.
+  6. Pricing (`pricing_part`): "Simple Pricing" + "Standard $50.00 / mo"
+     (2GB Bandwidth, Two Account, 15GB Storage, Sale After Service, 3 Host
+     Domain, 24/7 Support) + "Business" plan + "Purchase Now" buttons.
+  7. Reviews (`review_part`): quote carousel with attribution.
+  8. Subscribe (`subscribe_part`): "Experience the most simple way to
+     manage business" + free-trial blurb + email + subscribe button.
+  9. Clients (`client_logo`): client logo strip.
+  10. Footer (`footer_part`): About Us / Quick Links columns + social
+      icons + copyright.
+- **Design tokens extracted from `style.css` (fresh re-verification):**
+  - Primary **orange `#ff4800`** (57 refs — buttons, accents, headings).
+  - Light section backgrounds **`#f9f9ff`** and **`#f0e9ff`**; dark text
+    **`#182028`**; muted body text **`#888888`** / **`#999999`**.
+  - Secondary accents: cyan **`#4cd3e3`**, blue **`#38a4ff`**, purple
+    **`#7c32ff`**, yellow **`#f4e700`**.
   - Fonts: **"Barlow Semi Condensed"** + **"Rajdhani"** (Google Fonts).
-  - Orange buttons with white text.
+  - Orange buttons with white text, square-ish (small radius).
 - **Recreation decisions:** photos → seeded picsum placeholders
   (`picsum.photos/seed/ecobit-<n>/<w>/<h>`); icons → lucide-react; forms
   prevent default (no backend); no assets copied.
@@ -105,6 +121,42 @@ plans, each with a price and a purchase button.
 - **WHEN** the pricing section is displayed
 - **THEN** it SHALL contain a heading "Simple Pricing"
 - **AND** it SHALL show a "Standard" plan at $50.00/month and a "Business" plan, each with a feature list and a "Purchase Now" button
+
+### Requirement: Reviews section
+
+The system SHALL render a reviews carousel with quotes and navigation
+controls.
+
+#### Scenario: Reviews content
+
+- **GIVEN** the page is rendered
+- **WHEN** the reviews section is displayed
+- **THEN** it SHALL show a quote with an attribution
+- **AND** the visible quote SHALL change when the next arrow is pressed
+
+### Requirement: Subscribe band
+
+The system SHALL render a subscribe band with a heading, a blurb, an email
+input, and a subscribe button.
+
+#### Scenario: Subscribe content
+
+- **GIVEN** the page is rendered
+- **WHEN** the subscribe band is displayed
+- **THEN** it SHALL contain the heading "Experience the most simple way to manage business"
+- **AND** it SHALL show an email input and a subscribe button
+- **AND** submitting the form SHALL NOT reload the page
+
+### Requirement: Clients strip
+
+The system SHALL render a strip of client logo tiles between the subscribe
+band and the footer.
+
+#### Scenario: Clients content
+
+- **GIVEN** the page is rendered
+- **WHEN** the clients strip is displayed
+- **THEN** it SHALL show at least four client logo tiles
 
 ### Requirement: Footer
 
