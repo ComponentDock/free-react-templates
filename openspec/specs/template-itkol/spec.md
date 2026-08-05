@@ -124,6 +124,31 @@ Quote" button, and stats.
 - **THEN** it SHALL contain a heading "ITKol - Partner for Your Business"
 - **AND** it SHALL show a "Request a Quote" button and at least three stats
 
+### Requirement: CTA band
+
+The system SHALL render a full-width call-to-action band with the heading
+"Innovative IT Solution for your Business & Startup" and a "Get Started Now"
+button.
+
+#### Scenario: CTA band content
+
+- **GIVEN** the page is rendered
+- **WHEN** the CTA band is displayed
+- **THEN** it SHALL contain the heading "Innovative IT Solution for your Business & Startup"
+- **AND** it SHALL show a "Get Started Now" button
+
+### Requirement: Case studies
+
+The system SHALL render a case-studies section with the heading "Some of Our
+Great Stuffs" and three case-study cards.
+
+#### Scenario: Case studies content
+
+- **GIVEN** the page is rendered
+- **WHEN** the case-studies section is displayed
+- **THEN** it SHALL contain the heading "Some of Our Great Stuffs"
+- **AND** it SHALL show three case-study cards
+
 ### Requirement: Footer
 
 The system SHALL render a footer with link columns, social links, and a
