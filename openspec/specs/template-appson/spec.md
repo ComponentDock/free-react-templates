@@ -12,27 +12,43 @@ with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 - **Original:** ColorLib "Appson" — apps landing HTML template
   (source: https://colorlib.com/wp/template/appson/).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/appson/
-  (HTTP 200, full rendered DOM + `css/preview.css` (4KB) extracted).
-  The TEMPLATES.md screenshot (`appson-free-template.jpg`) is the visual
-  reference; the design below is reconstructed from the DOM structure and
-  CSS tokens. Note: the ColorLib preview for this entry is a product
-  showcase page ("Appson Preview — Apps Landing Html Template") advertising
-  the template's home-page variants and blog layouts.
-- **Section order (1:1):** Navbar (Appson + "Appson Preview" tagline) →
-  Hero ("MAKE YOUR WEBSITE WITH OUR Apps Awesome Landing TEMPALTE" +
-  PURCHASE NOW!) → Showcase list ("7 HOME PAGE | AND OTHER LAYOUT'S": #1
-  Gradiant, #2 Backgroudn Video, #3 Video Gradiant, #4 Background Image,
-  #5 Background Gradiant, #6 Rain Drops Canvas, #7 Slider) → Blog layouts
-  (Blog Standard, Blog With Sidebar, Blog Left Sidebar, Blog Details) →
-  Footer (copyright, Colorlib credit).
-- **Design tokens extracted from `preview.css`:**
-  - Dark showcase theme (near-black background, white text) with a
-    **gradient accent** on buttons; the advertised template itself uses
-    gradient hero variants.
-  - Font: system sans stack ("Open Sans"-family default).
-- **Recreation decisions:** this entry is recreated as the same kind of
-  showcase page (hero + variant grid + layout links), with gradient
-  swatches rendered as styled cards; no assets copied.
+  (HTTP 200). The wrapper preview page is a product showcase, so the **real
+  theme DOM** was fetched from
+  `https://preview.colorlib.com/theme/appson/appson/index.html`
+  (HTTP 200, 42KB, "Appson || App Landing Html Template") together with
+  `assets/css/style.css` (32KB) and `assets/css/typography.css`.
+  Re-fetched and confirmed 2026-08-05 during implementation. The
+  TEMPLATES.md screenshot (`appson-free-template.jpg`) is the visual
+  reference.
+- **Section order (1:1):** Navbar (Home, About, Features, Screenshot,
+  download, Pricing, Review, Contact) → Hero ("Perfect Landing Page" + "The
+  Best Template For Your Mobile App To Showcase And Acquire New Customers
+  All" + phone mockup + Download Now) → About ("Work the way you live" +
+  blurbs + feature list + mobile screen image) → Features (orange band
+  "Best Features": .Unlimited Features / .Cloud Storage / .Modern Design /
+  Android Platform / Strategy Solutions / Fully Responsive Design) →
+  Screenshots ("Screenshots", 4 phone screens) → Download (orange band
+  "Download Appson" + store buttons) → Pricing ("Pricing Plan": Basic
+  $50/m, Premium $150/m, Unlimited $250/m, each with 10 User / 50 Email
+  Accounts / 100 MB Disk Space / 2 Subdomains / Free Updates / Support 24/7
+  - purchase) → Team ("Meet my team", 4 members e.g. John Deo —
+    front-end developer) + stats (20K / 5K / 30K / 50) → Testimonial
+    ("Testimonial", quote by John Deo — CEO Of iphone) → Blog ("Our Latest
+    Blog", 3 posts "Work For Success" + Read More) → Contact ("Contact US",
+    form: Your Name / Your Email address / Your Subject / Your Message) →
+    Newsletter ("Subscribe to our Newsletter" + Sign Up) → Footer (copyright
+  - Colorlib credit).
+- **Design tokens extracted from `style.css` / `typography.css`:**
+  - Primary brand **orange `#ff6818`** (`.bg-theme` section backgrounds —
+    Features and Download bands — plus buttons/accents); shades `#fe5f1b`,
+    `#ff6719`, `#ff5700`.
+  - Supporting blue accent `#00b0ff`; dark headings `#272727`; muted body
+    text `#666666` / `#696969`; light section background `#f3f3f3`, white.
+  - Font: **"Montserrat"** (body via `body { font-family: 'Montserrat' }`
+    in typography.css), Google Fonts.
+- **Recreation decisions:** photos → seeded picsum placeholders
+  (`picsum.photos/seed/appson-<n>/<w>/<h>`); icons → lucide-react; store
+  buttons → ButtonLink with lucide icons; no assets copied.
 
 Appson lives in `apps/appson` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
@@ -41,14 +57,14 @@ Appson lives in `apps/appson` and uses shared components from `packages/ui`
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Appson"
-and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name "Appson",
+anchor links to the page's sections, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
 - **GIVEN** the Appson page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Appson"
+- **THEN** the navbar SHALL show the site name "Appson" and links to Home, About, Features, Screenshot, Pricing, Review, and Contact
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -60,37 +76,128 @@ and a dark-mode toggle button.
 
 ### Requirement: Hero section
 
-The system SHALL render a hero with a headline, a blurb, and a purchase
-button.
+The system SHALL render a hero with a headline, a blurb, a phone mockup,
+and a download button.
 
 #### Scenario: Hero content
 
 - **GIVEN** the page is rendered
 - **WHEN** the hero is displayed
-- **THEN** it SHALL contain a level-1 heading "Make your website with our apps awesome landing template"
-- **AND** it SHALL show a blurb and a "Purchase Now" button
+- **THEN** it SHALL contain a level-1 heading "Perfect Landing Page"
+- **AND** it SHALL show a blurb mentioning the mobile app template
+- **AND** it SHALL show a "Download Now" button
 
-### Requirement: Showcase section
+### Requirement: About section
 
-The system SHALL render a showcase section listing the template's home-page
-variants.
+The system SHALL render an about section with a heading, blurbs, a feature
+list, and a screen image.
 
-#### Scenario: Showcase variants
-
-- **GIVEN** the page is rendered
-- **WHEN** the showcase section is displayed
-- **THEN** it SHALL show a heading announcing "7 home page" variants
-- **AND** it SHALL list at least seven variants including Gradient, Video, Background Image, Rain Drops, and Slider
-
-### Requirement: Blog layouts section
-
-The system SHALL render a section listing available blog layouts.
-
-#### Scenario: Blog layouts
+#### Scenario: About content
 
 - **GIVEN** the page is rendered
-- **WHEN** the blog layouts section is displayed
-- **THEN** it SHALL list "Blog Standard", "Blog With Sidebar", "Blog Left Sidebar", and "Blog Details"
+- **WHEN** the about section is displayed
+- **THEN** it SHALL contain a level-2 heading "Work the way you live"
+- **AND** it SHALL list the features "Fully Responsive Design", "Android Platform", and "Strategy Solutions"
+
+### Requirement: Features section
+
+The system SHALL render a features band on the brand background with a
+heading and six feature tiles.
+
+#### Scenario: Features content
+
+- **GIVEN** the page is rendered
+- **WHEN** the features section is displayed
+- **THEN** it SHALL contain a heading "Best Features"
+- **AND** it SHALL show tiles "Unlimited Features", "Cloud Storage", "Modern Design", "Android Platform", "Strategy Solutions", and "Fully Responsive Design"
+
+### Requirement: Screenshots section
+
+The system SHALL render a screenshots section with a heading and four phone
+screens.
+
+#### Scenario: Screenshots content
+
+- **GIVEN** the page is rendered
+- **WHEN** the screenshots section is displayed
+- **THEN** it SHALL contain a heading "Screenshots"
+- **AND** it SHALL show four screen images with accessible labels
+
+### Requirement: Download band
+
+The system SHALL render a download band on the brand background with a
+heading and store buttons.
+
+#### Scenario: Download content
+
+- **GIVEN** the page is rendered
+- **WHEN** the download band is displayed
+- **THEN** it SHALL contain a heading "Download Appson"
+- **AND** it SHALL show "App Store" and "Google Play" buttons
+
+### Requirement: Pricing section
+
+The system SHALL render three pricing plans, each with a name, a price, a
+feature list, and a purchase button.
+
+#### Scenario: Pricing plans
+
+- **GIVEN** the page is rendered
+- **WHEN** the pricing section is displayed
+- **THEN** it SHALL contain a heading "Pricing Plan"
+- **AND** it SHALL show plans "Basic" ($50/m), "Premium" ($150/m), and "Unlimited" ($250/m), each with a feature list and a "Purchase" button
+
+### Requirement: Team and stats section
+
+The system SHALL render a team section with four members and a stats row.
+
+#### Scenario: Team content
+
+- **GIVEN** the page is rendered
+- **WHEN** the team section is displayed
+- **THEN** it SHALL contain a heading "Meet my team"
+- **AND** it SHALL show four team members with names and roles
+- **AND** it SHALL show stats for 20K, 5K, 30K, and 50
+
+### Requirement: Testimonial section
+
+The system SHALL render a testimonial with a quote and an author.
+
+#### Scenario: Testimonial content
+
+- **GIVEN** the page is rendered
+- **WHEN** the testimonial section is displayed
+- **THEN** it SHALL contain a heading "Testimonial" and a quote
+- **AND** it SHALL show the author "John Deo" with the role "CEO Of iphone"
+
+### Requirement: Blog section
+
+The system SHALL render a blog section with a heading and three posts.
+
+#### Scenario: Blog content
+
+- **GIVEN** the page is rendered
+- **WHEN** the blog section is displayed
+- **THEN** it SHALL contain a heading "Our Latest Blog"
+- **AND** it SHALL show three posts titled "Work For Success" with "Read More" links
+
+### Requirement: Contact section
+
+The system SHALL render a contact section with a heading, a form, and a
+newsletter signup.
+
+#### Scenario: Contact content
+
+- **GIVEN** the page is rendered
+- **WHEN** the contact section is displayed
+- **THEN** it SHALL contain a heading "Contact US" with fields for Name, Email address, Subject, and Message
+- **AND** it SHALL show a newsletter heading "Subscribe to our Newsletter" with a "Sign Up" button
+
+#### Scenario: Newsletter signup
+
+- **GIVEN** the contact section is displayed
+- **WHEN** the user submits the newsletter form with an email
+- **THEN** the form SHALL submit and clear the input
 
 ### Requirement: Footer
 
