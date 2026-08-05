@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Gaas brand colors — from the ColorLib "GaaS" stylesheet
+     (style.css): primary purple #8252fa (95 refs — buttons, headings,
+     accents), pink #eca2f1 accent (73 refs), yellow #f8b600, dark
+     sections #222222, light sections #f9f9ff, muted body #777777,
+     cyan #4cd3e3 accent. */
+  --color-primary-50: #f6f3ff;
+  --color-primary-100: #ece4ff;
+  --color-primary-200: #dccfff;
+  --color-primary-300: #c3aaff;
+  --color-primary-400: #a47dff;
+  --color-primary-500: #8f5cff;
+  --color-primary-600: #8252fa;
+  --color-primary-700: #6a35e0;
+  --color-primary-800: #562bb5;
+  --color-primary-900: #45278c;
+
+  --color-blossom: #eca2f1;
+  --color-sun: #f8b600;
+  --color-aqua: #4cd3e3;
+  --color-ink: #222222;
+  --color-paper: #f9f9ff;
+  --color-body: #777777;
+
+  /* Original fonts: "Rajdhani" (display/headings) + "Roboto" (body),
+     both via Google Fonts <link> in index.html. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Rajdhani', 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
