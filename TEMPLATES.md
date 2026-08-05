@@ -56,7 +56,7 @@
 - [x] **Appco** — [colorlib](https://colorlib.com/wp/template/appco/) · [appco](https://free-react-templates-appco.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appco-free-template.jpg)
 - [x] **Applab** — [colorlib](https://colorlib.com/wp/template/applab/) · [applab](https://free-react-templates-applab.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/applab-free-template.jpg)
 - [x] **Appli** — [colorlib](https://colorlib.com/wp/template/appli/) · [appli](https://free-react-templates-appli.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appli-free-template.jpg)
-- [~] **Appru** — [colorlib](https://colorlib.com/wp/template/appru/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appru-free-template.jpg)
+- [x] **Appru** — [colorlib](https://colorlib.com/wp/template/appru/) · [appru](https://free-react-templates-appru.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appru-free-template.jpg)
 - [ ] **Apps** — [colorlib](https://colorlib.com/wp/template/apps/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apps-free-app-website-template.jpg)
 - [ ] **Appson** — [colorlib](https://colorlib.com/wp/template/appson/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appson-free-template.jpg)
 - [ ] **Appy** — [colorlib](https://colorlib.com/wp/template/appy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appy-free-template.jpg)
