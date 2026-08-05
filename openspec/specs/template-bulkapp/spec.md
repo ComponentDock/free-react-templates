@@ -86,7 +86,8 @@ tiles, each with an icon, a title, and a blurb.
 
 The system SHALL render two about sections sharing the heading "We Believe
 that Interior beautifies the Total Architecture", each with a blurb and a
-"See Details" link.
+"See Details" link. The second section SHALL embed a product tour video
+thumbnail with a play button.
 
 #### Scenario: About content
 
@@ -95,17 +96,25 @@ that Interior beautifies the Total Architecture", each with a blurb and a
 - **THEN** it SHALL contain the heading "We Believe that Interior beautifies the Total Architecture"
 - **AND** it SHALL show a blurb and a "See Details" link
 
+#### Scenario: Embedded video
+
+- **GIVEN** the page is rendered
+- **WHEN** the second about section is displayed
+- **THEN** it SHALL show a video thumbnail image and a "Play the BulkApp video" link
+
 ### Requirement: Pricing section
 
 The system SHALL render a pricing section with a heading, a plan with a
-name, an audience line, a price, a feature list, and a purchase button.
+name, an audience line, a price, a feature list, and a purchase button. The
+original ColorLib design renders the same "Standard" card three times in a
+three-column row; the recreation keeps that 1:1.
 
 #### Scenario: Pricing content
 
 - **GIVEN** the page is rendered
 - **WHEN** the pricing section is displayed
 - **THEN** it SHALL contain a heading "Pricing Table"
-- **AND** it SHALL show a "Standard" plan for "the individuals" at £199 with a feature list and a "Purchase Plan" button
+- **AND** it SHALL show three "Standard" plan cards, each for "the individuals" at £199 with a five-item feature list and a "Purchase Plan" button
 
 ### Requirement: Screenshots section
 
@@ -130,6 +139,30 @@ a reviewer.
 - **WHEN** the testimonials section is displayed
 - **THEN** it SHALL contain a heading "Testimonials"
 - **AND** it SHALL show a quote from "Mark Alviro Wiens", CEO at Google
+
+### Requirement: Download CTA
+
+The system SHALL render a download call-to-action section with a heading, a
+blurb, and two store links.
+
+#### Scenario: Download content
+
+- **GIVEN** the page is rendered
+- **WHEN** the download section is displayed
+- **THEN** it SHALL contain a heading "Download This App Today!"
+- **AND** it SHALL show "Available on App Store" and "Available on Google Play" links
+
+### Requirement: Latest news section
+
+The system SHALL render a latest news section with a heading and three
+article cards, each with a date, a title, and a blurb.
+
+#### Scenario: News content
+
+- **GIVEN** the page is rendered
+- **WHEN** the news section is displayed
+- **THEN** it SHALL contain a heading "Latest News"
+- **AND** it SHALL show three article cards with dates, titles, and blurbs
 
 ### Requirement: Footer
 

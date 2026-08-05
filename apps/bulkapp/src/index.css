@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* BulkApp brand purple — from the ColorLib "BulkApp" stylesheet
+     (css/style.css): buttons/accents use the gradient
+     linear-gradient(to right, #bc2bff 0%, #7249fb 51%, #bc2bff 100%),
+     with supporting #6247ea. Scale keyed on primary-500 (#7249fb) so the
+     shared ui Button/ButtonLink "primary" variant works. */
+  --color-primary-50: #f5f1fe;
+  --color-primary-100: #eae1fd;
+  --color-primary-200: #d6c4fb;
+  --color-primary-300: #b99ff8;
+  --color-primary-400: #9e74f5;
+  --color-primary-500: #7249fb;
+  --color-primary-600: #6247ea;
+  --color-primary-700: #5237c8;
+  --color-primary-800: #432da1;
+  --color-primary-900: #372780;
+
+  /* Gradient endpoints for hero + download CTA backgrounds. */
+  --color-brand-start: #bc2bff;
+  --color-brand-end: #7249fb;
+
+  /* Light section backgrounds #f9f9ff; dark footer #222222; body text
+     #777777 (from css/style.css). */
+  --color-paper: #f9f9ff;
+  --color-night: #222222;
+  --color-muted: #777777;
+
+  /* Original fonts: body "Roboto", headings "Open Sans" (Google Fonts,
+     loaded in index.html). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

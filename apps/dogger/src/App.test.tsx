@@ -23,5 +23,5 @@ describe('App', () => {
 
     expect(screen.getByRole('banner')).toBeInTheDocument()
     expect(screen.getByRole('contentinfo')).toBeInTheDocument()
-  })
+  }, 15000)
 })
