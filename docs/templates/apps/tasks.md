@@ -66,11 +66,11 @@
 - [x] Write `openspec/specs/template-apps/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/apps` (copy the section-rich landing app pattern —
-      Aurora; rename package to `@free-react-templates/apps`).
-- [ ] TDD: tests first for each section component; run red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
+- [x] Create `apps/apps` (copy the section-rich landing app pattern —
+      Appru; rename package to `@free-react-templates/apps`).
+- [x] TDD: tests first for each section component; run red.
+- [x] Implement components (green) at 100% coverage.
+- [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
 - [ ] Push `feat/template-apps`, open PR (source template, preview URL,
       design tokens, what differs).

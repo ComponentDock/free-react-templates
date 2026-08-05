@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Apps brand blues — from the ColorLib "Apps" stylesheet (css/main.css):
+     primary gradient `linear-gradient(0deg, #3ea7ff 0%, #42d1ff 100%)`.
+     Scale keyed on primary-600 (#3ea7ff) so the shared ui Button/ButtonLink
+     "primary" variant works. */
+  --color-primary-50: #eef6ff;
+  --color-primary-100: #d9ecff;
+  --color-primary-200: #b8dbff;
+  --color-primary-300: #8cc4ff;
+  --color-primary-400: #5aa9ff;
+  --color-primary-500: #3ea7ff;
+  --color-primary-600: #3ea7ff;
+  --color-primary-700: #2f86d6;
+  --color-primary-800: #276da8;
+  --color-primary-900: #225c87;
+
+  /* Cyan brand accent #42d1ff (gradient end, hovers). */
+  --color-azure: #42d1ff;
+
+  /* Dark footer #222222, light section backgrounds, muted text. */
+  --color-night: #222222;
+  --color-paper: #f9f9ff;
+  --color-fog: #f1f1f1;
+  --color-muted: #777777;
+
+  /* Original font: "Poppins" (Google Fonts, loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
