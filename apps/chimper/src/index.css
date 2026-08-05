@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Chimper brand indigo/navy #0d0cb5 — from the ColorLib "Chimper"
+     Bootstrap 4 theme (--primary) and css/style.css (active nav link,
+     section-heading underline, carousel dots, play button). Scale keyed
+     on primary-500 (#0d0cb5) so the shared ui Button/ButtonLink "primary"
+     variant works. */
+  --color-primary-50: #ecebfb;
+  --color-primary-100: #d6d5f6;
+  --color-primary-200: #adaaf0;
+  --color-primary-300: #837fe9;
+  --color-primary-400: #4d4bcf;
+  --color-primary-500: #0d0cb5;
+  --color-primary-600: #0b0a9c;
+  --color-primary-700: #090880;
+  --color-primary-800: #070762;
+  --color-primary-900: #050542;
+
+  /* Section backgrounds from css/style.css: bg-light #ccc, black band
+     #000 (ft-feature-1), footer #333333, ghost numbers #f2f4f5, body
+     text #4d4d4d, footer/muted text #737373. */
+  --color-paper: #cccccc;
+  --color-band: #000000;
+  --color-night: #333333;
+  --color-ghost: #f2f4f5;
+  --color-ink: #4d4d4d;
+  --color-muted: #737373;
+
+  /* Original font: "Quicksand" (Google Fonts, loaded in index.html). */
+  --font-sans: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
