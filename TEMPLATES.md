@@ -54,7 +54,7 @@
 ## App Landing Page (35)
 
 - [x] **Appco** — [colorlib](https://colorlib.com/wp/template/appco/) · [appco](https://free-react-templates-appco.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appco-free-template.jpg)
-- [~] **Applab** — [colorlib](https://colorlib.com/wp/template/applab/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/applab-free-template.jpg)
+- [x] **Applab** — [colorlib](https://colorlib.com/wp/template/applab/) · [applab](https://free-react-templates-applab.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/applab-free-template.jpg)
 - [ ] **Appli** — [colorlib](https://colorlib.com/wp/template/appli/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appli-free-template.jpg)
 - [ ] **Appru** — [colorlib](https://colorlib.com/wp/template/appru/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appru-free-template.jpg)
 - [ ] **Apps** — [colorlib](https://colorlib.com/wp/template/apps/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apps-free-app-website-template.jpg)
