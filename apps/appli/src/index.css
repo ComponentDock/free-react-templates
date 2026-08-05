@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Appli brand indigo — from the ColorLib "Appli" stylesheet
+     (assets/css/style.css): primary buttons/accents #404DFF. Scale keyed on
+     primary-600 so the shared ui Button/ButtonLink "primary" variant works. */
+  --color-primary-50: #eef0ff;
+  --color-primary-100: #e0e3ff;
+  --color-primary-200: #c7ccff;
+  --color-primary-300: #a3abff;
+  --color-primary-400: #7d88ff;
+  --color-primary-500: #5c68ff;
+  --color-primary-600: #404dff;
+  --color-primary-700: #343fd6;
+  --color-primary-800: #2b34ab;
+  --color-primary-900: #273082;
+
+  /* Hero / band gradient #c054ff → #5274ff (purple → blue). */
+  --color-grape: #c054ff;
+  --color-cobalt: #5274ff;
+
+  /* CTA button #F067FF (wantToWork band) and icon badge #CC51FF. */
+  --color-blush: #f067ff;
+  --color-orchid: #cc51ff;
+
+  /* Headings (#1D2547) and muted body text (#717b9b / #A5A7C5). */
+  --color-navy: #1d2547;
+  --color-muted: #717b9b;
+  --color-muted-light: #a5a7c5;
+
+  /* Light section backgrounds (#f9f9ff, #f0e9ff). */
+  --color-paper: #f9f9ff;
+  --color-lavender: #f0e9ff;
+
+  /* Original fonts: "Raleway" (headings/buttons) + "Muli" (body) via
+     Google Fonts (loaded in index.html). */
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
