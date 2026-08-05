@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Appson brand orange — from the ColorLib "Appson" stylesheet
+     (assets/css/style.css): `.bg-theme { background-color: #ff6818; }`.
+     Scale keyed on primary-600 (#ff6818) so the shared ui
+     Button/ButtonLink "primary" variant works. */
+  --color-primary-50: #fff4ec;
+  --color-primary-100: #ffe6d5;
+  --color-primary-200: #ffc9a8;
+  --color-primary-300: #ffa670;
+  --color-primary-400: #ff8340;
+  --color-primary-500: #ff6f26;
+  --color-primary-600: #ff6818;
+  --color-primary-700: #e0550c;
+  --color-primary-800: #b8450d;
+  --color-primary-900: #93390f;
+
+  /* Supporting blue accent #00b0ff (from style.css). */
+  --color-azure: #00b0ff;
+
+  /* Dark headings #272727, near-black #1a1a1a. */
+  --color-ink: #272727;
+  --color-night: #1a1a1a;
+
+  /* Light section backgrounds (#f3f3f3, white) and muted body text
+     (#666666). */
+  --color-paper: #f3f3f3;
+  --color-muted: #666666;
+
+  /* Original font: "Montserrat" (body via typography.css), Google Fonts
+     loaded in index.html. */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
