@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Favison brand colors — from the ColorLib "Favison" stylesheet
+     (style.css): primary pink/rose #f84b67 (41 refs — buttons, accents,
+     headings), yellow #f8b600 accent, dark sections #1d1d1d/#2a2a2a,
+     light sections #f9f9ff/#f0e9ff, muted body #888888/#999999, cyan
+     #4cd3e3 accent. */
+  --color-primary-50: #fef2f4;
+  --color-primary-100: #fde3e7;
+  --color-primary-200: #fbcbd2;
+  --color-primary-300: #f8a5b2;
+  --color-primary-400: #f4738a;
+  --color-primary-500: #f95f77;
+  --color-primary-600: #f84b67;
+  --color-primary-700: #d63a55;
+  --color-primary-800: #a82e44;
+  --color-primary-900: #7a2132;
+
+  --color-sun: #f8b600;
+  --color-aqua: #4cd3e3;
+  --color-ink: #1d1d1d;
+  --color-coal: #2a2a2a;
+  --color-paper: #f9f9ff;
+  --color-mist: #f0e9ff;
+  --color-body: #888888;
+
+  /* Original font: "Poppins" (Google Fonts <link> in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
