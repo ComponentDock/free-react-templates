@@ -57,7 +57,7 @@
 - [x] **Applab** — [colorlib](https://colorlib.com/wp/template/applab/) · [applab](https://free-react-templates-applab.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/applab-free-template.jpg)
 - [x] **Appli** — [colorlib](https://colorlib.com/wp/template/appli/) · [appli](https://free-react-templates-appli.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appli-free-template.jpg)
 - [x] **Appru** — [colorlib](https://colorlib.com/wp/template/appru/) · [appru](https://free-react-templates-appru.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appru-free-template.jpg)
-- [~] **Apps** — [colorlib](https://colorlib.com/wp/template/apps/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apps-free-app-website-template.jpg)
+- [x] **Apps** — [colorlib](https://colorlib.com/wp/template/apps/) · [apps](https://free-react-templates-apps.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apps-free-app-website-template.jpg)
 - [ ] **Appson** — [colorlib](https://colorlib.com/wp/template/appson/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appson-free-template.jpg)
 - [ ] **Appy** — [colorlib](https://colorlib.com/wp/template/appy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appy-free-template.jpg)
 - [ ] **Bold** — [colorlib](https://colorlib.com/wp/template/bold/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bold-free-template.jpg)
@@ -2007,7 +2007,7 @@
 ## Landing Page (96)
 
 - [x] **Appli** — [colorlib](https://colorlib.com/wp/template/appli/) · [appli](https://free-react-templates-appli.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appli-free-template.jpg)
-- [ ] **Apps** — [colorlib](https://colorlib.com/wp/template/apps/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apps-free-app-website-template.jpg)
+- [x] **Apps** — [colorlib](https://colorlib.com/wp/template/apps/) · [apps](https://free-react-templates-apps.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apps-free-app-website-template.jpg)
 - [ ] **Art Museum** — [colorlib](https://colorlib.com/wp/template/art-museum/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/artmuseum-free-template-1.jpg)
 - [ ] **Author** — [colorlib](https://colorlib.com/wp/template/author/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/author-free-template.jpg)
 - [ ] **Barber** — [colorlib](https://colorlib.com/wp/template/barber/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barber-free-barber-website-template.jpg)
