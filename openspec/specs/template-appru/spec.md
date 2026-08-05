@@ -12,22 +12,30 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 - **Original:** ColorLib "Appru" — app landing / mobile app marketing site
   (source: https://colorlib.com/wp/template/appru/).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/appru/
-  (HTTP 200, full rendered DOM + `css/main.css` (68KB) extracted).
+  (HTTP 200, full rendered DOM + `css/main.css` (68KB) extracted;
+  re-fetched and confirmed 2026-08-05 during implementation).
   The TEMPLATES.md screenshot (`appru-free-template.jpg`) is the visual
   reference; the design below is reconstructed from the DOM structure and CSS
   tokens.
-- **Section order (1:1):** Navbar (Home, About, Pricing, Pages, Elements,
-  Blog, Contact) → Hero ("App That Suits You Better" + blurb + "Available on
-  App Store" / "Available on Play Store" + phone mockup) → Stats band
-  (100K+ Total Downloads, 10K+ Positive Reviews, 50K+ Daily Visitors, 0.02%
-  Uninstallation Rate, 15K+ Pro User) → Features ("Unique Features" + 3
-  tiles: Expert Technicians, Professional Service, Great Support) → About
-  ("We Believe that Interior beautifies the Total Architecture" + Get
-  Details) → About-video (same heading + video play button + store buttons)
-  → Testimonials (Fanny Spencer quote carousel) → Screenshots ("Featured
-  Screens") → Pricing ("Suitable Pricing Plans" + Standard £199 / Business
-  £399 / Ultimate £499 + Purchase Plan) → Footer (Top Products, Quick Links,
-  Resources columns + copyright).
+- **Section order (1:1):** Navbar (logo with cyan left border + Home, About,
+  Pricing, Pages, Blog, Contact; transparent over the dark hero, cyan when
+  scrolled) → Hero (`home-banner-area`, photo bg + overlay: h1 "App That
+  Suits You Better" + blurb + dark "Available on App Store" / "Available on
+  Play Store" boxes + phone mockup) → Stats band (`fact-area`, shadowed box:
+  100K+ Total Downloads, 10K+ Positive Reviews, 50K+ Daily Visitors, 0.02%
+  Uninstallation Rate, 15K+ Pro User — gradient numerals) → Features
+  ("Unique Features" + 3 white tiles: Expert Technicians, Professional
+  Service, Great Support — gradient icon square, title, blurb) → About
+  (`about-area`, TWO alternating rows: iphone mockup + "We Believe that
+  Interior beautifies the Total Architecture" + blurb + square gradient
+  "Get Details" button; then the same heading + store buttons + iphone) →
+  About-video (`about-video-area`, full-bleed photo bg + centered round play
+  button) → Testimonials (Fanny Spencer + 5 stars + quote, 4 slides) →
+  Screenshots ("Featured Screens" + 4 images) → Pricing ("Suitable Pricing
+  Plans" + Standard £199 / Business £399 / Ultimate £499 — each: audience
+  line, 5 features, bordered light "Purchase Plan" button) → Footer (dark
+  #04091e; Top Products, Quick Links, Features, Resources link columns +
+  Newsletter email form + copyright + store buttons).
 - **Design tokens extracted from `main.css`:**
   - Primary **gradient `linear-gradient(0deg, #46dbf9 0%, #204be3 100%)`**
     (cyan → blue) — buttons, accents, stat numbers.

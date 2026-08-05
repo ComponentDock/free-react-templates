@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Appru brand blues — from the ColorLib "Appru" stylesheet
+     (css/main.css): primary gradient `linear-gradient(0deg, #46dbf9 0%,
+     #204be3 100%)`. Scale keyed on primary-600 (#204be3) so the shared ui
+     Button/ButtonLink "primary" variant works. */
+  --color-primary-50: #eef4fd;
+  --color-primary-100: #dce9fb;
+  --color-primary-200: #b9d2f7;
+  --color-primary-300: #8ab4f1;
+  --color-primary-400: #5a8fea;
+  --color-primary-500: #3a6ee6;
+  --color-primary-600: #204be3;
+  --color-primary-700: #1a3cb8;
+  --color-primary-800: #163091;
+  --color-primary-900: #122a78;
+
+  /* Cyan brand accent #46dbf9 (gradient start, hover accents). */
+  --color-azure: #46dbf9;
+
+  /* Dark footer #04091e, near-black #222222. */
+  --color-night: #04091e;
+  --color-ink: #222222;
+
+  /* Light section backgrounds (#f9f9ff, #f8fcff, #fcfdff) and muted text
+     (#777777). */
+  --color-paper: #f9f9ff;
+  --color-mist: #f8fcff;
+  --color-muted: #777777;
+
+  /* Original fonts: "Poppins" (headings) + Roboto (body) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
