@@ -16,6 +16,12 @@ with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   The TEMPLATES.md screenshot (`appy-free-template.jpg`) is the visual
   reference; the design below is reconstructed from the DOM structure and
   CSS tokens.
+- **Section title pattern:** every section pairs a small uppercase kicker
+  (`<h2 class="title">` — e.g. "Features", "Pricing Plan", "FAQ") with a
+  large heading rendered as `<p class="h3">` (e.g. "Powerful Features As
+  Always", "Our Awesome Pricing Plan", "Frequently Asked Questions"). The
+  React recreation renders the large title as the section `h2` heading and
+  the kicker as a small styled label, keeping one `h2` per section.
 - **Section order (1:1):** Navbar (Home, About, Features, Gallery, Pricing,
   FAQ, Blog, Contacts + Sign Up) → Hero ("Start your amazing stuff through
   appy." + Download App) → About ("About Appy" + Our Progress) → Split
@@ -172,6 +178,13 @@ questions.
 - **WHEN** the FAQ section is displayed
 - **THEN** it SHALL contain a heading "Frequently Asked Questions"
 - **AND** it SHALL show at least three expandable questions with answers
+
+#### Scenario: FAQ accordion toggling
+
+- **GIVEN** the FAQ section is displayed
+- **WHEN** the user activates a question
+- **THEN** the question SHALL expand and reveal its answer
+- **AND** when the user activates the same question again, it SHALL collapse and hide the answer
 
 ### Requirement: Footer
 
