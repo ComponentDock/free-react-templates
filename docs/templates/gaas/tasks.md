@@ -51,13 +51,13 @@
 - [x] Write `openspec/specs/template-gaas/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/gaas` (copy the section-rich landing app pattern —
-      Aurora; rename package to `@free-react-templates/gaas`).
-- [ ] TDD: tests first for each section component; run red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
+- [x] Create `apps/gaas` (copy the section-rich landing app pattern —
+      Favison; rename package to `@free-react-templates/gaas`).
+- [x] TDD: tests first for each section component; run red.
+- [x] Implement components (green) at 100% coverage.
+- [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [ ] Push `feat/template-gaas`, open PR (source template, preview URL,
+- [x] Push `feat/template-gaas`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).

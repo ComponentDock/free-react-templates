@@ -107,6 +107,54 @@ button.
 - **THEN** it SHALL contain the heading "We Believe that Inner beauty Lasts Long"
 - **AND** it SHALL show a blurb and a "Learn More" button
 
+### Requirement: Features specs
+
+The system SHALL render a features-specs section with the heading "Amazing
+Features That make it Awesome!" and a blurb.
+
+#### Scenario: Features specs content
+
+- **GIVEN** the page is rendered
+- **WHEN** the features-specs section is displayed
+- **THEN** it SHALL contain the heading "Amazing Features That make it Awesome!"
+- **AND** it SHALL show a blurb and supporting copy
+
+### Requirement: Pricing plans
+
+The system SHALL render three pricing plans named "Real Basic", "Real
+Standard", and "Real Ultimate", each with a purchase button.
+
+#### Scenario: Pricing content
+
+- **GIVEN** the page is rendered
+- **WHEN** the pricing section is displayed
+- **THEN** it SHALL show plans titled "Real Basic", "Real Standard", and "Real Ultimate"
+- **AND** each plan SHALL show a purchase button
+
+### Requirement: Client brands
+
+The system SHALL render a brands strip with a "What Our Clients Say About Us"
+heading and brand logos.
+
+#### Scenario: Brands content
+
+- **GIVEN** the page is rendered
+- **WHEN** the brands section is displayed
+- **THEN** it SHALL contain the heading "What Our Clients Say About Us"
+- **AND** it SHALL show a row of brand logos
+
+### Requirement: Impress band
+
+The system SHALL render a full-width call-to-action band with the heading
+"Got Impressed to our features?" and a call-to-action button.
+
+#### Scenario: Impress band content
+
+- **GIVEN** the page is rendered
+- **WHEN** the impress band is displayed
+- **THEN** it SHALL contain the heading "Got Impressed to our features?"
+- **AND** it SHALL show a call-to-action button
+
 ### Requirement: Footer
 
 The system SHALL render a footer with link columns, social links, and a
