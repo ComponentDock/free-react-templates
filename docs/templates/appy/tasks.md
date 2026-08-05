@@ -64,13 +64,13 @@
 - [x] Write `openspec/specs/template-appy/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/appy` (copy the section-rich landing app pattern —
+- [x] Create `apps/appy` (copy the section-rich landing app pattern —
       Aurora; rename package to `@free-react-templates/appy`).
-- [ ] TDD: tests first for each section component; run red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
+- [x] TDD: tests first for each section component; run red.
+- [x] Implement components (green) at 100% coverage.
+- [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [ ] Push `feat/template-appy`, open PR (source template, preview URL,
+- [x] Push `feat/template-appy`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).

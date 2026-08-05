@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Appy brand blue — from the ColorLib "Appy" stylesheet (style.css):
+     primary #5e88fc with supporting #4a7aff, #768ede, #8790af.
+     Scale keyed on primary-600 (#5e88fc) so the shared ui
+     Button/ButtonLink "primary" variant works. */
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #dfe7fe;
+  --color-primary-200: #c3d2fd;
+  --color-primary-300: #9ab3fb;
+  --color-primary-400: #7a99fa;
+  --color-primary-500: #6a8af9;
+  --color-primary-600: #5e88fc;
+  --color-primary-700: #4a6de8;
+  --color-primary-800: #3d58c4;
+  --color-primary-900: #354b9e;
+
+  /* Supporting blue accent #768ede. */
+  --color-azure: #768ede;
+
+  /* Dark text #434345, dark footer #2b2b3d. */
+  --color-ink: #434345;
+  --color-night: #2b2b3d;
+
+  /* Light section backgrounds (#f5f6ff, #f2f3fc) and muted text
+     (#8790af). */
+  --color-paper: #f5f6ff;
+  --color-mist: #f2f3fc;
+  --color-muted: #8790af;
+
+  /* Original font: "Open Sans" (Google Fonts, loaded in index.html). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
