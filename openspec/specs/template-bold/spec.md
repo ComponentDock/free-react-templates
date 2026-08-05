@@ -32,6 +32,10 @@ TypeScript.
   - Light section backgrounds `#f8f9fa`, `#f9f9f9`; dark text `#000`.
   - Font: **"Raleway"** (Google Fonts).
   - Rounded buttons with coral background and white text.
+- **Form fields (confirmed from live DOM):** `input` ×4, `select`
+  (Company size: 1 / 2 / 3+), `textarea`, submit — recreated as Name,
+  Email, Company size, Message + "Send message" button; submit prevents
+  default (no backend) and shows a thank-you status.
 - **Recreation decisions:** photos → seeded picsum placeholders
   (`picsum.photos/seed/bold-<n>/<w>/<h>`); icons → lucide-react; form
   prevents default (no backend); no assets copied.

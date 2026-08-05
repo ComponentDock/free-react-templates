@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Bold brand coral — from the ColorLib "Bold" stylesheet
+     (css/style.css): primary #ff926b with lighter #ffa585.
+     Scale keyed on primary-500 (#ff926b) so the shared ui
+     Button/ButtonLink "primary" variant works. */
+  --color-primary-50: #fff5f0;
+  --color-primary-100: #ffe8dd;
+  --color-primary-200: #ffd1bd;
+  --color-primary-300: #ffb594;
+  --color-primary-400: #ffa585;
+  --color-primary-500: #ff926b;
+  --color-primary-600: #f57a4d;
+  --color-primary-700: #e05f33;
+  --color-primary-800: #c24a24;
+  --color-primary-900: #a03a1c;
+
+  /* Dark text #000, dark footer #262626. */
+  --color-ink: #000000;
+  --color-night: #262626;
+
+  /* Light section backgrounds (#f8f9fa, #f9f9f9) and muted text
+     (#7b7b7b). */
+  --color-paper: #f8f9fa;
+  --color-mist: #f9f9f9;
+  --color-muted: #7b7b7b;
+
+  /* Original font: "Raleway" (Google Fonts, loaded in index.html). */
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
