@@ -67,11 +67,13 @@
 - [x] Write `openspec/specs/template-appru/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/appru` (copy the section-rich landing app pattern —
-      Aurora; rename package to `@free-react-templates/appru`).
-- [ ] TDD: tests first for each section component; run red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
+- [x] Create `apps/appru` (copy `apps/appli`; rename package to
+      `@free-react-templates/appru`; `npm install` at root for lockfile).
+- [x] TDD: tests first for Navbar, Hero (+StoreButtons), Stats, Features,
+      About (×2), Video, Testimonials, Screenshots, Pricing, Footer,
+      App composition — 14 tests, all green.
+- [x] Implement components (green) at 100% coverage.
+- [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
 - [ ] Push `feat/template-appru`, open PR (source template, preview URL,
       design tokens, what differs).
