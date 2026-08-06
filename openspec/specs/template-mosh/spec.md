@@ -24,7 +24,9 @@ CSS 4 + TypeScript.
   clients love our work") → Services ("What you get if you start your
   business with us" + Development, Design, SEO) → Feature cards (No1 in
   Sales!, Documentation inside, Modern Design, Marketing Strategist) →
-  Footer.
+  Portfolio ("Our Work / See our Online Portfolio") → Workflow ("This is
+  how we work on Projects" + numbered steps) → Call-to-action ("give us a
+  shout / Are you Ready to have a Talk?" + Contact Us) → Footer.
 - **Design tokens extracted from `style.css`:**
   - Primary **blue `#4a7aec`** with light blue `#a2baff`.
   - Dark text `#211b31`, `#404551`; light gray backgrounds.
