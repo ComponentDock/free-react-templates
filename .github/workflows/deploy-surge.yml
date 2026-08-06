@@ -78,10 +78,24 @@ jobs:
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
         run: |
+          # Deploy every app even if some fail; report failures and fail the
+          # job only when at least one deploy failed.
+          set +e
+          failed=""
           for app in $APPS; do
             echo "==> Deploying ${app} to https://free-react-templates-${app}.surge.sh"
-            bash scripts/deploy-template.sh "${app}"
+            if bash scripts/deploy-template.sh "${app}"; then
+              echo "==> OK: ${app}"
+            else
+              echo "==> FAILED: ${app}"
+              failed="${failed} ${app}"
+            fi
           done
+          if [ -n "$failed" ]; then
+            echo "::error::One or more deploys failed:${failed}"
+            exit 1
+          fi
+          echo "All deploys succeeded."
 
       - name: Summary
         run: |

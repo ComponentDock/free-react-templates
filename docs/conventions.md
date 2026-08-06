@@ -6,6 +6,9 @@ Consistent patterns for structure, naming, components, and error handling.
 
 - One template = one app folder: `apps/<template-name>/` (kebab-case, matches
   the template name; e.g. `apps/aurora`). Never two templates in one folder.
+- **Templates get NEW, original names** — never reuse the ColorLib source name.
+  The app folder/package is the NEW name; the source mapping
+  (`colorlib.com/wp/template/<slug>/`) is recorded in the spec and PR.
 - **When creating a new app/workspace, ALWAYS run `npm install` at the repo
   root before committing** so `package-lock.json` registers the new workspace —
   the deploy GitHub Action runs `npm ci` and fails with
