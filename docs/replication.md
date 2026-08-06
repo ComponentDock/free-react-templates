@@ -26,7 +26,12 @@ For any template slug in `TEMPLATES.md`:
 
 ## Fidelity rules
 
-- Match the **section structure and order** 1:1 (navbar → hero → cards →
+- **Name it differently**: every recreation MUST get a NEW, original name that
+  differs from the ColorLib source (folder `apps/<new-name>`, package
+  `@free-react-templates/<new-name>`). Never reuse the source slug/name (e.g.
+  ColorLib "Thepetcare" → "Vetly"). The mapping is recorded in the spec and PR:
+  `apps/<new-name>` recreates `https://colorlib.com/wp/template/<slug>/`.
+- Match section structure + order 1:1.
   parallax → gallery → features → newsletter → footer).
 - Match the **design tokens**: brand color(s), font, button shapes, spacing
   rhythm, dark/light treatment. Put the brand color in `@theme` and use it via

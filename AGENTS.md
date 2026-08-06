@@ -30,9 +30,11 @@ Tests: Vitest + Testing Library with **100% coverage enforced**.
    `npm run build` → `npm run knip` → `npm run fallow`.
    Never ignore a failing gate; never disable lint/tests/typechecking. Fix the
    root cause.
-5. **One app per template.** New templates get a new folder `apps/<name>`
-   (copy the simplest existing app, rename the package to
-   `@free-react-templates/<name>`). Never put two templates in one app folder.
+5. **One app per template, new name.** New templates get a new folder
+   `apps/<new-name>` (copy the simplest existing app, rename the package to
+   `@free-react-templates/<new-name>`). The name must be NEW and DIFFERENT from
+   the ColorLib source template (never reuse the source name). Never put two
+   templates in one app folder.
 6. **Reuse before build.** Use `packages/ui` components and `cn()` instead of
    duplicating. Avoid new dependencies unless truly necessary.
 7. **Follow existing patterns.** Match file structure, naming, component

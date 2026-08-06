@@ -1,5 +1,5 @@
 {
   "ignoreBinaries": ["fallow"],
-  "ignoreDependencies": ["surge", "lint-staged"],
+  "ignoreDependencies": ["surge"],
   "ignore": ["skills/**"]
 }
