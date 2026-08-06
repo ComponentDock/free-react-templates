@@ -8,7 +8,7 @@ describe('Testimonials', () => {
 
     expect(screen.getByRole('heading', { name: 'Feedback from Customers' })).toBeInTheDocument()
     expect(screen.getByText('Mark Alviro Wiens')).toBeInTheDocument()
-    expect(screen.getByRole('img', { name: '5 out of 5 stars' })).toBeInTheDocument()
+    expect(screen.getAllByRole('img', { name: '5 out of 5 stars' }).length).toBe(3)
     expect(screen.getAllByRole('blockquote').length).toBe(3)
   })
 })

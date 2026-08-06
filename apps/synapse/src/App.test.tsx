@@ -9,7 +9,8 @@ describe('App', () => {
     expect(document.title).toBe('Synapse — SaaS Landing Template')
 
     expect(screen.getByRole('banner')).toBeInTheDocument()
-    expect(screen.getByRole('navigation')).toBeInTheDocument()
+    expect(screen.getByRole('navigation', { name: 'Main navigation' })).toBeInTheDocument()
+    expect(screen.getAllByRole('navigation').length).toBeGreaterThanOrEqual(4)
 
     const main = screen.getByRole('main')
     expect(main).toBeInTheDocument()
