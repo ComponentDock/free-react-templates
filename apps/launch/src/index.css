@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Launch brand colors — extracted from the ColorLib "Launch" preview
+     stylesheet (https://preview.colorlib.com/theme/launch/css/style.css):
+     primary blue #407BFF (buttons/accents, gradients to #0d58ff), dark navy
+     #16213e (footer/dark sections), text #212529, muted #6c757d. */
+  --color-primary-50: #f0f4ff;
+  --color-primary-100: #dbe6ff;
+  --color-primary-200: #b8ceff;
+  --color-primary-300: #85aaff;
+  --color-primary-400: #5287ff;
+  --color-primary-500: #407bff;
+  --color-primary-600: #1a60ff;
+  --color-primary-700: #004af0;
+  --color-primary-800: #003dc7;
+  --color-primary-900: #0032a3;
+
+  --color-ink: #212529;
+  --color-paper: #f8f9fa;
+  --color-navy: #16213e;
+
+  /* Nunito (Google Fonts <link> in index.html) — the original's font. */
+  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
