@@ -37,15 +37,15 @@ function GithubIcon() {
 const inputClasses =
   'w-full rounded-lg border border-gray-200 bg-white px-3.5 py-2.5 text-sm text-ink outline-none transition-colors focus:border-primary-500 focus:ring-2 focus:ring-primary-500/30 dark:border-gray-800 dark:bg-gray-900 dark:text-gray-100'
 
+function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  event.preventDefault()
+}
+
 export function AuthModal({ open, onClose }: { open: boolean; onClose: () => void }) {
   const [tab, setTab] = useState<'signin' | 'signup'>('signin')
 
   if (!open) {
     return null
-  }
-
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
   }
 
   return (

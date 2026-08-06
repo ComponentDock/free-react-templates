@@ -3,11 +3,11 @@ import { Mail, MapPin, Phone } from 'lucide-react'
 import { Button } from '@free-react-templates/ui'
 import { SocialLinks } from './SocialLinks'
 
-export function Contact() {
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
-  }
+function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  event.preventDefault()
+}
 
+export function Contact() {
   return (
     <section id="contact" aria-label="Contact" className="bg-white py-16 sm:py-24 dark:bg-gray-950">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">

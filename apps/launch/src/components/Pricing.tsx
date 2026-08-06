@@ -2,7 +2,18 @@ import { useState } from 'react'
 import { Check } from 'lucide-react'
 import { Button, cn } from '@free-react-templates/ui'
 
-const plans = [
+interface Plan {
+  name: string
+  blurb: string
+  monthly: number
+  yearly: number
+  save?: string
+  popular?: boolean
+  features: string[]
+  cta: string
+}
+
+const plans: Plan[] = [
   {
     name: 'Starter',
     blurb: 'Perfect for individuals and small projects',
@@ -48,7 +59,7 @@ const plans = [
     ],
     cta: 'Contact Sales',
   },
-] as const
+]
 
 export function Pricing() {
   const [yearly, setYearly] = useState(false)
