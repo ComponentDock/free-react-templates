@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Verve brand colors — from the ColorLib "Racks" preview
+     (https://preview.colorlib.com/theme/racks/ + css/style.css):
+     a services platform theme with a cyan #78d5ef primary, a pink
+     #ee76ad accent (used on the achievements band), a blue #448ef6
+     hero overlay, and tinted circular service icons. */
+  --color-primary-50: #eaf8fd;
+  --color-primary-100: #d2f0fa;
+  --color-primary-200: #a8e3f5;
+  --color-primary-300: #78d5ef;
+  --color-primary-400: #56caeb;
+  --color-primary-500: #29bae4;
+  --color-primary-600: #1a9ecb;
+  --color-primary-700: #1580a8;
+  --color-primary-800: #136686;
+  --color-primary-900: #124f66;
+
+  /* Hero overlay blue (ColorLib .slider-item .overlay). */
+  --color-hero: #448ef6;
+
+  /* Pink accent (ColorLib .ftco-counter background). */
+  --color-accent-400: #f29bc4;
+  --color-accent-500: #ee76ad;
+  --color-accent-600: #e05599;
+
+  /* Service icon tinted pairs (ColorLib .services .icon.color-1..4). */
+  --color-mint: #79efb4;
+  --color-peach: #efac78;
+
+  --color-ink: #404044;
+
+  /* Work Sans (display + body) via Google Fonts <link> in index.html. */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
