@@ -44,7 +44,7 @@ export function Blog() {
               <div className="aspect-[4/3] overflow-hidden bg-gray-100">
                 <img
                   src={`https://picsum.photos/seed/${post.seed}/640/480`}
-                  alt=""
+                  alt={`${post.title} blog post cover`}
                   loading="lazy"
                   className="h-full w-full object-cover"
                 />
