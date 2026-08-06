@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Mosh brand colors — extracted from the ColorLib "Mosh" preview
+     stylesheet (https://preview.colorlib.com/theme/mosh/style.css):
+     primary blue #4a7aec (buttons/accents), light blue #a2baff, dark text
+     #211b31, secondary text #404551, light gray #f1f2f3. */
+  --color-primary-50: #eef2fd;
+  --color-primary-100: #dde6fc;
+  --color-primary-200: #b9caf8;
+  --color-primary-300: #8ba6f1;
+  --color-primary-400: #6689ed;
+  --color-primary-500: #4a7aec;
+  --color-primary-600: #3b63d6;
+  --color-primary-700: #2f4fb3;
+  --color-primary-800: #273f8f;
+  --color-primary-900: #1f3372;
+
+  --color-ink: #211b31;
+  --color-muted: #404551;
+  --color-paper: #f1f2f3;
+
+  /* Roboto (Google Fonts <link> in index.html) — the original's font. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
