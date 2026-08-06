@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Landing brand colors — sampled programmatically from the ColorLib
+     "Landing Page Wordpress Themes" screenshot (landing-page-themes.jpg,
+     1200×891): white/very light-gray backgrounds (#ffffff, #f4f4f4,
+     #fafafa) with a violet brand. Deep violet #7020c0 (buttons/CTAs),
+     mid violet #7c44d6 (average of all sampled violet pixels — primary),
+     light violet #8060e0 (gradients/accents). */
+  --color-primary-50: #f7f3fc;
+  --color-primary-100: #efe7f9;
+  --color-primary-200: #dfd0f2;
+  --color-primary-300: #c3a8e8;
+  --color-primary-400: #a37cdd;
+  --color-primary-500: #7c44d6;
+  --color-primary-600: #6d22bd;
+  --color-primary-700: #5a1b9c;
+  --color-primary-800: #4a1680;
+  --color-primary-900: #3d1266;
+
+  --color-ink: #1d1d1d;
+  --color-paper: #f4f4f4;
+
+  /* Poppins (Google Fonts <link> in index.html) — approximation, the
+     original font is not extractable from a screenshot. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
