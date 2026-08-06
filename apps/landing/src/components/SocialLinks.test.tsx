@@ -12,4 +12,11 @@ describe('SocialLinks', () => {
       expect(link).toHaveAttribute('target', '_blank')
     }
   })
+
+  it('renders the inverted variant with solid brand backgrounds', () => {
+    render(<SocialLinks inverted />)
+
+    const link = screen.getByRole('link', { name: 'GitHub' })
+    expect(link.className).toContain('bg-primary-600')
+  })
 })
