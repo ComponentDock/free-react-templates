@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Appdeck brand colors — from the ColorLib "Prantokon" preview
+     (https://preview.colorlib.com/theme/prantokon/ + css/preview.css):
+     a dark showcase theme with a blue #0F7CDD accent. */
+  --color-primary-50: #e8f4fd;
+  --color-primary-100: #cce8fb;
+  --color-primary-200: #9fd1f7;
+  --color-primary-300: #66b3f1;
+  --color-primary-400: #3399ec;
+  --color-primary-500: #0f7cdd;
+  --color-primary-600: #0d68c0;
+  --color-primary-700: #0b549c;
+  --color-primary-800: #094278;
+  --color-primary-900: #073159;
+
+  /* Hero purchase buttons: ColorLib's standard `btn-orange` pill
+     (exact hex not exposed in the preview stylesheets — approximated). */
+  --color-accent-500: #ff9800;
+  --color-accent-600: #e08600;
+
+  --color-ink: #1f2937;
+
+  /* Poppins (display + body) via Google Fonts <link> in index.html. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
