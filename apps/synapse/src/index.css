@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Synapse brand colors — sampled programmatically from the ColorLib
+     "Nexus" live stylesheet (css/style.css, 66KB): primary blue #3bacf0,
+     cyan #62ddff, deep blue #4dabff, yellow accent #f8b600, dark #222222,
+     light #f9f9ff. */
+  --color-primary-50: #eef8fd;
+  --color-primary-100: #d7f0fb;
+  --color-primary-200: #b0e2f8;
+  --color-primary-300: #62ddff;
+  --color-primary-400: #4dabff;
+  --color-primary-500: #3bacf0;
+  --color-primary-600: #2e92d4;
+  --color-primary-700: #2778b0;
+  --color-primary-800: #205f8c;
+  --color-primary-900: #1a4a6b;
+
+  --color-accent-500: #f8b600;
+
+  --color-ink: #222222;
+  --color-paper: #f9f9ff;
+
+  /* Heebo (display) + Roboto (body) via Google Fonts <link> in
+     index.html — the original fonts from the ColorLib stylesheet. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Heebo', ui-sans-serif, system-ui, sans-serif;
+}
