@@ -21,6 +21,7 @@
     "knip": "knip",
     "fallow": "fallow audit --gate all && fallow health && fallow dead-code && fallow dupes",
     "spec:validate": "openspec validate --specs",
+    "readme:status": "node scripts/update-readme-status.mjs",
     "deploy": "bash scripts/deploy-template.sh",
     "deploy:aurora": "bash scripts/deploy-template.sh aurora",
     "prepare": "husky"
