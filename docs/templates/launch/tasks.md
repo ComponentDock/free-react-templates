@@ -43,13 +43,13 @@
 - [x] Write `openspec/specs/template-launch/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/launch` (copy the section-rich landing app pattern —
-      Aurora; rename package to `@free-react-templates/launch`).
-- [ ] TDD: tests first for each section component; run red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
+- [x] Create `apps/launch` (copied the section-rich landing app pattern;
+      package `@free-react-templates/launch`).
+- [x] TDD: tests first for each section component; ran red.
+- [x] Implement components (green) at 100% coverage (21 tests, 11 files).
+- [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [ ] Push `feat/template-launch`, open PR (source template, preview URL,
+- [x] Push `feat/template-launch`, open PR (source template, preview URL,
       design tokens, what differs).
-- [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
+- [x] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
