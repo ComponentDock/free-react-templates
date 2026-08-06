@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Massive brand colors — extracted from the ColorLib "Massive" preview
+     stylesheet (https://preview.colorlib.com/theme/massive/style.css):
+     primary teal/cyan gradient #00e2d9 → #1193d4 with accents #81ee8e,
+     #2deab6, #00d7f2, #00c9fd; accent red #ef494d; dark navy #1a264a;
+     ink #292929. */
+  --color-aqua: #81ee8e;
+  --color-mint: #2deab6;
+  --color-teal: #00e2d9;
+  --color-cyan: #00d7f2;
+  --color-sky: #00c9fd;
+  --color-ocean: #1193d4;
+  --color-accent: #ef494d;
+  --color-navy: #1a264a;
+  --color-ink: #292929;
+
+  /* Open Sans (body) + Libre Baskerville (display serif) — Google Fonts
+     <link> in index.html, matching the original's font pairing. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Libre Baskerville', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

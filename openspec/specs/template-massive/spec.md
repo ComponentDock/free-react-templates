@@ -105,6 +105,102 @@ The system SHALL render a video section with a heading and a play button.
 - **THEN** it SHALL contain a heading "Description With Video"
 - **AND** it SHALL show a "Play The Video" button
 
+### Requirement: Work section
+
+The system SHALL render a how-it-works section with a heading and four steps.
+
+#### Scenario: Work content
+
+- **GIVEN** the page is rendered
+- **WHEN** the work section is displayed
+- **THEN** it SHALL contain a heading "How it work"
+- **AND** it SHALL show steps titled "Unique Design", "Data Analysis",
+  "Temparature Test", and "Show Progress"
+
+### Requirement: Screenshots section
+
+The system SHALL render a screenshots section with a heading and a row of
+app screenshots.
+
+#### Scenario: Screenshots content
+
+- **GIVEN** the page is rendered
+- **WHEN** the screenshots section is displayed
+- **THEN** it SHALL contain a heading "Awesome Screenshot"
+- **AND** it SHALL show at least three screenshot images
+
+### Requirement: Testimonials section
+
+The system SHALL render a testimonials section with a heading and client
+quotes.
+
+#### Scenario: Testimonials content
+
+- **GIVEN** the page is rendered
+- **WHEN** the testimonials section is displayed
+- **THEN** it SHALL contain a heading "What's say our Clients"
+- **AND** it SHALL show at least one client quote
+
+### Requirement: Download section
+
+The system SHALL render a download section with a heading and app store
+buttons.
+
+#### Scenario: Download content
+
+- **GIVEN** the page is rendered
+- **WHEN** the download section is displayed
+- **THEN** it SHALL contain a heading "Get Download Massive app"
+- **AND** it SHALL show "Download From Google Play" and "Download On The App
+  Store" buttons
+
+### Requirement: Team section
+
+The system SHALL render a team section with a heading and team member cards.
+
+#### Scenario: Team content
+
+- **GIVEN** the page is rendered
+- **WHEN** the team section is displayed
+- **THEN** it SHALL contain a heading "Our Expert Team"
+- **AND** it SHALL show at least three team member cards with names and roles
+
+### Requirement: Pricing section
+
+The system SHALL render a pricing section with a heading and four pricing
+plans.
+
+#### Scenario: Pricing content
+
+- **GIVEN** the page is rendered
+- **WHEN** the pricing section is displayed
+- **THEN** it SHALL contain a heading "Pricing Table"
+- **AND** it SHALL show plans titled "Basic", "Premium", "Standard", and
+  "Business"
+
+### Requirement: Blog section
+
+The system SHALL render a blog section with a heading and at least three
+post cards.
+
+#### Scenario: Blog content
+
+- **GIVEN** the page is rendered
+- **WHEN** the blog section is displayed
+- **THEN** it SHALL contain a heading "From Blog"
+- **AND** it SHALL show at least three post cards with titles
+
+### Requirement: Contact section
+
+The system SHALL render a contact section with a heading and a contact form.
+
+#### Scenario: Contact content
+
+- **GIVEN** the page is rendered
+- **WHEN** the contact section is displayed
+- **THEN** it SHALL contain a heading "Get In Touch"
+- **AND** it SHALL show a contact form with name, email, and message fields
+
 ### Requirement: Footer
 
 The system SHALL render a footer with link columns, social links, and a
