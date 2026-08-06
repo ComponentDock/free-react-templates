@@ -7,6 +7,9 @@ export default defineConfig({
     // heavy App renders in jsdom can exceed the 5s default under CPU
     // contention (observed as flaky "Test timed out" failures in the
     // pre-push gate). 15s gives legitimately slow renders headroom.
+    // NOTE: this root value only applies to the root project — each
+    // workspace's vitest.config.ts must set its own `testTimeout: 15000`
+    // (all apps/* and packages/* configs carry it).
     testTimeout: 15000,
     coverage: {
       provider: 'v8',
