@@ -70,7 +70,7 @@
 - [x] **Gaas** — [colorlib](https://colorlib.com/wp/template/gaas/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gaas-free-template.jpg) · [Gaas](https://free-react-templates-gaas.surge.sh)
 - [x] **Itkol** — [colorlib](https://colorlib.com/wp/template/itkol/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/itkol-free-template.jpg) · [Itkol](https://free-react-templates-itkol.surge.sh)
 - [x] **Landing Page Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/landing-page-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/landing-page-themes.jpg) · [Landing](https://free-react-templates-landing.surge.sh)
-- [~] **Launch** — [colorlib](https://colorlib.com/wp/template/launch/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/launch-free-template.jpeg)
+- [x] **Launch** — [colorlib](https://colorlib.com/wp/template/launch/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/launch-free-template.jpeg) · [Launch](https://free-react-templates-launch.surge.sh)
 - [ ] **Massive** — [colorlib](https://colorlib.com/wp/template/massive/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/massive-free-template.jpg)
 - [ ] **Mosh** — [colorlib](https://colorlib.com/wp/template/mosh/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mosh-free-template.jpg)
 - [ ] **Nexus** — [colorlib](https://colorlib.com/wp/template/nexus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nexus-free-template.jpg)
