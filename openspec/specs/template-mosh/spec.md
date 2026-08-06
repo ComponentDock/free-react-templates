@@ -24,7 +24,9 @@ CSS 4 + TypeScript.
   clients love our work") → Services ("What you get if you start your
   business with us" + Development, Design, SEO) → Feature cards (No1 in
   Sales!, Documentation inside, Modern Design, Marketing Strategist) →
-  Footer.
+  Portfolio ("Our Work / See our Online Portfolio") → Workflow ("This is
+  how we work on Projects" + numbered steps) → Call-to-action ("give us a
+  shout / Are you Ready to have a Talk?" + Contact Us) → Footer.
 - **Design tokens extracted from `style.css`:**
   - Primary **blue `#4a7aec`** with light blue `#a2baff`.
   - Dark text `#211b31`, `#404551`; light gray backgrounds.
@@ -82,6 +84,18 @@ items.
 - **WHEN** the highlights section is displayed
 - **THEN** it SHALL show numbered items including "No1 in Sales!", "Online Marketing", and "Modern Design"
 
+### Requirement: Clients section
+
+The system SHALL render a clients section with a heading and a row of client
+logos.
+
+#### Scenario: Clients content
+
+- **GIVEN** the page is rendered
+- **WHEN** the clients section is displayed
+- **THEN** it SHALL contain a heading "All our clients love our work"
+- **AND** it SHALL show at least four client logo images
+
 ### Requirement: Services section
 
 The system SHALL render a services section with a heading and at least three
@@ -93,6 +107,52 @@ service items.
 - **WHEN** the services section is displayed
 - **THEN** it SHALL contain a heading "What you get if you start your business with us"
 - **AND** it SHALL show services titled "Development", "Design", and "SEO"
+
+### Requirement: Feature cards section
+
+The system SHALL render a feature-cards section with at least three cards
+titled with value propositions.
+
+#### Scenario: Feature cards content
+
+- **GIVEN** the page is rendered
+- **WHEN** the feature cards section is displayed
+- **THEN** it SHALL show cards titled "No1 in Sales!", "Documentation inside", and "Modern Design"
+
+### Requirement: Portfolio section
+
+The system SHALL render a portfolio section with a heading and a grid of
+project cards.
+
+#### Scenario: Portfolio content
+
+- **GIVEN** the page is rendered
+- **WHEN** the portfolio section is displayed
+- **THEN** it SHALL contain a heading "See our Online Portfolio"
+- **AND** it SHALL show at least four project cards with images
+
+### Requirement: Workflow section
+
+The system SHALL render a workflow section with a heading and four steps.
+
+#### Scenario: Workflow content
+
+- **GIVEN** the page is rendered
+- **WHEN** the workflow section is displayed
+- **THEN** it SHALL contain a heading "This is how we work on Projects"
+- **AND** it SHALL show four steps including "This is the first step"
+
+### Requirement: Call-to-action section
+
+The system SHALL render a call-to-action band with a heading and a "Contact
+Us" button.
+
+#### Scenario: Call-to-action content
+
+- **GIVEN** the page is rendered
+- **WHEN** the call-to-action section is displayed
+- **THEN** it SHALL contain a heading "Are you Ready to have a Talk?"
+- **AND** it SHALL show a "Contact Us" button
 
 ### Requirement: Footer
 
