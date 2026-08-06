@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Itkol brand colors — from the ColorLib "IT-Solution" stylesheet
+     (assets/css/style.css): primary pink #ff4495 (41 refs — buttons,
+     accents, headings), navy #232f55 + dark violet #140c40 (dark hero
+     sections), light sections #f9f9ff/#f0e9ff, muted body #999999,
+     cyan #4cd3e3 accent. */
+  --color-primary-50: #fff0f7;
+  --color-primary-100: #ffe0ef;
+  --color-primary-200: #ffc2de;
+  --color-primary-300: #ff94c5;
+  --color-primary-400: #ff55a7;
+  --color-primary-500: #ff4495;
+  --color-primary-600: #f01f7c;
+  --color-primary-700: #d11264;
+  --color-primary-800: #a1124f;
+  --color-primary-900: #861344;
+
+  --color-navy: #232f55;
+  --color-violet: #140c40;
+  --color-aqua: #4cd3e3;
+  --color-paper: #f9f9ff;
+  --color-mist: #f0e9ff;
+  --color-body: #999999;
+
+  /* Original fonts: "Josefin Sans" (display/headings) + "Mulish" (body),
+     both via Google Fonts <link> in index.html. */
+  --font-sans: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Josefin Sans', 'Mulish', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

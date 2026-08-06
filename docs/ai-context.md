@@ -102,6 +102,11 @@ Key decisions (details in `docs/adr/`):
   `name: /.../`.
 - **Testing Library cleanup:** workspace vitest configs set `globals: true` —
   required for RTL auto-cleanup. Do not remove.
+- **Vitest timeout is per-workspace:** the root `vitest.config.ts`
+  `testTimeout: 15000` only applies to the root project. Each workspace
+  `vitest.config.ts` sets its own `testTimeout: 15000` (added to fix flaky
+  "Test timed out in 5000ms" failures for heavy App renders in the parallel
+  suite). Keep the line in any new app's config.
 - **Tailwind v4 dark mode:** `dark:` utilities require the
   `@custom-variant dark (&:where(.dark, .dark *))` in `src/index.css`; toggling
   is done by a `.dark` class on `<html>`.
