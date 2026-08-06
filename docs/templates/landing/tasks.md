@@ -12,10 +12,11 @@
   `landing-page-themes`, `landing-page` also 404). Per
   `docs/replication.md`, fall back to the screenshot
   (`landing-page-themes.jpg`, HTTP 200) as the sole visual reference.
-- **Visual design (from screenshot):** classic marketing landing — top
+- **Visual design (from screenshot, programmatic color analysis of
+  `landing-page-themes.jpg` 1200×891):** classic marketing landing — top
   nav with logo + menu links, hero with headline + CTA over a light
-  background, feature/service cards with icons, an about split, dark footer
-  with link columns; blue accent color.
+  background, feature/service cards with icons, an about split, footer
+  with link columns; **violet** brand color on white/light-gray.
 - **Structure (planned, standard ColorLib landing):**
   1. Navbar: logo "Landing" + Home, Features, About, Contact + dark-mode
      toggle.
@@ -24,15 +25,16 @@
   4. About split: heading + blurb + CTA.
   5. CTA band (optional): call-to-action strip.
   6. Footer: link columns + social (GitHub, X, LinkedIn) + copyright.
-- **Design tokens (from screenshot):** light background, **blue** accent
-  (approximated as repo primary indigo `#4f46e5` unless a specific brand
-  color is visible); white cards; dark footer.
+- **Design tokens (from screenshot):** light background `#ffffff` /
+  `#f4f4f4` / `#fafafa`, **violet** accent — deep `#7020c0` (buttons/CTAs),
+  mid `#7c44d6` (primary, avg of sampled violet pixels), light `#8060e0`
+  (gradients/accents); white cards.
 - **Recreation name:** Landing (distinct from existing names). App folder
   `apps/landing`, package `@free-react-templates/landing`.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/landing-<n>/<w>/<h>`); lucide-react icons; system
-  font stack; blue primary in `@theme`; repo-standard Navbar (dark-mode
-  toggle) + Footer chrome.
+  (`picsum.photos/seed/landing-<n>/<w>/<h>`); lucide-react icons; Poppins
+  via Google Fonts `<link>` (approximation); violet primary in `@theme`;
+  repo-standard Navbar (dark-mode toggle) + Footer chrome.
 - Reuse `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
 ## Tasks
