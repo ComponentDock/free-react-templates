@@ -13,20 +13,32 @@ CSS 4 + TypeScript.
 - **Original:** ColorLib "Landing Page Wordpress Themes" — a landing-page
   website template from the free catalog
   (source: https://colorlib.com/wp/template/landing-page-wordpress-themes/).
-- **Live preview UNREACHABLE:** `https://preview.colorlib.com/theme/landing-page-wordpress-themes/`
+  NOTE: the URL 301-redirects to a roundup article ("42 Best Landing Page
+  WordPress Themes (Free & Premium)"), so the item is treated as a single
+  landing-page design; the TEMPLATES.md screenshot is the reference.
+- **Live preview UNREACHABLE (re-verified 2026-08-06):**
+  `https://preview.colorlib.com/theme/landing-page-wordpress-themes/`
   returned HTTP 404 (variants `landing-page-wordpress`, `landing-page-themes`,
-  `landing-page` also 404). Per `docs/replication.md`, the design is
-  reconstructed from the TEMPLATES.md screenshot (`landing-page-themes.jpg`,
-  HTTP 200) as the sole visual reference.
-- **Design reference (from screenshot):** a classic marketing landing page —
-  top navigation with logo and menu links, a hero with headline + CTA button
-  over a light background, feature/service cards with icons, an about split,
-  and a dark footer with link columns. Typical ColorLib landing layout with a
-  blue accent color.
+  `landing-page` also 404; note `/theme/landing/` returns 200 but belongs to
+  the separate "Landing" checklist item). Per `docs/replication.md`, the
+  design is reconstructed from the TEMPLATES.md screenshot
+  (`landing-page-themes.jpg`, HTTP 200) as the sole visual reference.
+- **Design reference (from screenshot, programmatic color analysis):** the
+  screenshot (1200×891) shows a classic marketing landing page — white/very
+  light-gray background (`#ffffff`, `#f4f4f4`, `#fafafa`) with a **violet
+  brand color** (23712 violet-dominant pixels sampled):
+  - Deep violet `#7020c0` / `#6020b0` (buttons/CTAs)
+  - Mid violet `#7c44d6` (average of all violet pixels — primary)
+  - Light violet `#8060e0` / `#9050e0` (gradients/accents)
+    Structure (from screenshot + genre): top navigation with logo and menu
+    links, hero with headline + CTA button, feature/service cards with icons,
+    an about split, and a footer.
 - **Recreation decisions:** standard landing structure (Navbar → Hero →
-  Features → Split → CTA → Footer); photos → seeded picsum placeholders
-  (`picsum.photos/seed/landing-<n>/<w>/<h>`); icons → lucide-react; blue
-  primary in `@theme`; no assets copied.
+  Features → About split → CTA band → Footer); photos → seeded picsum
+  placeholders (`picsum.photos/seed/landing-<n>/<w>/<h>`); icons →
+  lucide-react; violet primary in `@theme`; "Poppins" (Google Fonts) as the
+  display/body font (approximation — not extractable from a screenshot); no
+  assets copied.
 
 Landing Page lives in `apps/landing` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
