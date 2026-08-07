@@ -98,7 +98,7 @@
 - [x] **Architect** — [colorlib](https://colorlib.com/wp/template/architect/) · [Foundry](https://free-react-templates-foundry.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/architect-free-template.jpg)
 - [x] **Archlab** — [colorlib](https://colorlib.com/wp/template/archlab/) · [Beamline](https://free-react-templates-beamline.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archlab-free-template.jpg)
 - [x] **Arclabs** — [colorlib](https://colorlib.com/wp/template/arclabs/) · [Facade](https://free-react-templates-facade.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/arclabs-free-template.jpg)
-- [~] **Astral** — [colorlib](https://colorlib.com/wp/template/astral/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/astral-free-template.jpg)
+- [x] **Astral** — [colorlib](https://colorlib.com/wp/template/astral/) · [masonry](https://free-react-templates-masonry.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/astral-free-template.jpg)
 - [ ] **Belara** — [colorlib](https://colorlib.com/wp/template/belara/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/belara-colorlib-template.jpg)
 - [ ] **Buildarch** — [colorlib](https://colorlib.com/wp/template/buildarch/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildarch-free-template.jpg)
 - [ ] **Constructed** — [colorlib](https://colorlib.com/wp/template/constructed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/constructed-free-template.jpg)
