@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Keystone brand red — from the original ColorLib "Archi" preview
+     (assets/css/style.css): #ff1f1f accents, #ff1313 buttons. */
+  --color-brand: #ff1f1f;
+
+  /* Deeper red for hover states. */
+  --color-brand-dark: #d91818;
+
+  /* Navy — headlines and dark accents (#1f2b7b). */
+  --color-navy: #1f2b7b;
+
+  /* Ink — section title color (#1d2434). */
+  --color-ink: #1d2434;
+
+  /* Light section backgrounds (#f9f9ff, #f0e9ff). */
+  --color-paper: #f9f9ff;
+  --color-lilac: #f0e9ff;
+
+  /* Muted secondary text (#888888). */
+  --color-mist: #888888;
+
+  /* Footer charcoal (#292c37 from the original stylesheet). */
+  --color-coal: #292c37;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand red. */
+  --color-primary-50: #fff1f1;
+  --color-primary-100: #ffdfdf;
+  --color-primary-200: #ffbfbf;
+  --color-primary-300: #ff9494;
+  --color-primary-400: #ff5c5c;
+  --color-primary-500: #ff1f1f;
+  --color-primary-600: #e81a1a;
+  --color-primary-700: #c21515;
+  --color-primary-800: #9c1212;
+  --color-primary-900: #7d1010;
+
+  /* Original fonts: "Rajdhani" (display) + "Poppins" (body), Google Fonts. */
+  --font-display: 'Rajdhani', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
