@@ -1,9 +1,18 @@
 # Verification
 
+## FAST_MODE (temporarily active — see docs/FAST_MODE.md)
+
+The local gate is **per-app**: `bash scripts/verify-app.sh <app>` (typecheck +
+lint + 100% coverage tests + build for one workspace, ~2–3 min), enforced by
+the pre-push hook for the apps a push touches. The **full gate**
+(`npm run gate`) runs in CI on every merge and on a nightly sweep
+(`.github/workflows/nightly-gate.yml`). When the template backlog is done,
+restore the original full local gate per docs/FAST_MODE.md.
+
+## The full gate (original contract, still available as `npm run gate`)
+
 Every change must pass the full gate. This document defines the gate, the
 commands, and the failure policy.
-
-## The gate (pre-push, enforced by husky)
 
 Run in order; all must succeed:
 

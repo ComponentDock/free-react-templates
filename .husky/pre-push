@@ -1,1 +1,28 @@
-npm run typecheck && npm run lint && npm run test:coverage && npm run build && npm run knip && npm run fallow
+#!/bin/sh
+# FAST_MODE pre-push: verify only the apps touched by the pushed commits
+# (see docs/FAST_MODE.md — the FULL gate runs in CI on merge + nightly).
+set -e
+
+changed_apps() {
+  base="$(git merge-base HEAD origin/main 2>/dev/null || true)"
+  if [ -z "$base" ]; then
+    base="HEAD~1"
+  fi
+  git diff --name-only "${base}...HEAD" 2>/dev/null \
+    | grep -oE '^apps/[^/]+' \
+    | cut -d/ -f2 \
+    | sort -u
+}
+
+npm run lint
+
+apps="$(changed_apps)"
+if [ -z "$apps" ]; then
+  echo "pre-push: no app changes — per-app gate skipped (full gate: npm run gate)"
+  exit 0
+fi
+
+for app in $apps; do
+  bash scripts/verify-app.sh "$app"
+done
+echo "pre-push: per-app gate passed for: $(echo $apps | tr '\n' ' ')"

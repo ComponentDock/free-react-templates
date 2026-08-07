@@ -20,6 +20,8 @@
     "test:coverage": "vitest run",
     "knip": "knip",
     "fallow": "fallow audit --gate all && fallow health && fallow dead-code && fallow dupes",
+    "gate": "npm run typecheck && npm run lint && npm run test:coverage && npm run build && npm run knip && npm run fallow",
+    "verify:app": "bash scripts/verify-app.sh",
     "spec:validate": "openspec validate --specs",
     "readme:status": "node scripts/update-readme-status.mjs",
     "deploy": "bash scripts/deploy-template.sh",

@@ -1,0 +1,40 @@
+# Nightly full verification gate (FAST_MODE safety net — see docs/FAST_MODE.md).
+#
+# In FAST_MODE the local pre-push gate only verifies changed apps; the FULL
+# gate (npm run gate: typecheck → lint → test:coverage → build → knip →
+# fallow) runs here every night on main so regressions surface loudly even if
+# a merge slipped through. Also runnable manually via workflow_dispatch.
+
+name: Nightly full gate
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    name: Full gate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run full gate
+        run: npm run gate
+
+      - name: Report regression
+        if: failure()
+        run: echo "::error::Nightly full gate FAILED — a regression slipped through; fix it before the next merge."
