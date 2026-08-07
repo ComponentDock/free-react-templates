@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Halcyon brand peach — from the original ColorLib "Wellspa" preview
+     (css/style.css + vendored bootstrap `$primary` override): #ffa188.
+     Button hover #ff8362; border hover #ff7955. */
+  --color-brand: #ffa188;
+
+  /* Deeper peach for hover states. */
+  --color-brand-dark: #ff8362;
+
+  /* Dark slate used for accents (footer overlays, nav shadows). */
+  --color-slate: #364d59;
+
+  /* Near-black headings/body text. */
+  --color-ink: #212529;
+
+  /* Light section background (bootstrap-style neutrals). */
+  --color-paper: #f8f9fa;
+
+  /* Borders / dividers. */
+  --color-line: #ced4da;
+
+  /* Secondary body text. */
+  --color-mist: #6c757d;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand peach. */
+  --color-primary-50: #fff5f1;
+  --color-primary-100: #ffe9e1;
+  --color-primary-200: #ffd3c2;
+  --color-primary-300: #ffb99d;
+  --color-primary-400: #ffa188;
+  --color-primary-500: #ff8e6b;
+  --color-primary-600: #ff8362;
+  --color-primary-700: #ef6a4a;
+  --color-primary-800: #d14f31;
+  --color-primary-900: #a83a20;
+
+  /* Original fonts: "Muli" (body/nav sans) + "Playfair Display" (serif
+     headings/wordmark), loaded via Google Fonts in index.html. */
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
