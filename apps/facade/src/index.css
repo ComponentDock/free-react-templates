@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Facade brand tan — from the original ColorLib "Arclabs" preview
+     (css/main.css): #cea06c buttons, section-title accents, hover fills. */
+  --color-brand: #cea06c;
+
+  /* Deeper tan for hover states. */
+  --color-brand-dark: #b98a55;
+
+  /* Ink — headings and dark text (navy #263a4e from the original). */
+  --color-ink: #263a4e;
+
+  /* Mist — muted body text (#87898f from the original). */
+  --color-mist: #87898f;
+
+  /* Paper — light section backgrounds (#f9f9ff / #f7f7f7). */
+  --color-paper: #f9f9ff;
+
+  /* Coal — footer background (#0e1424 from the original stylesheet). */
+  --color-coal: #0e1424;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand tan. */
+  --color-primary-50: #faf3ea;
+  --color-primary-100: #f3e3d0;
+  --color-primary-200: #e8cba4;
+  --color-primary-300: #dcb17a;
+  --color-primary-400: #cea06c;
+  --color-primary-500: #b98a55;
+  --color-primary-600: #a07346;
+  --color-primary-700: #7f5a38;
+  --color-primary-800: #61452c;
+  --color-primary-900: #46311f;
+
+  /* Original fonts: "Roboto Condensed" (headings) + "Roboto" (body). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Roboto Condensed', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
