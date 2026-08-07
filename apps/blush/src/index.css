@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Blush brand colors — from the ColorLib "Selene" preview
+     (https://preview.colorlib.com/theme/selene/ + style.css):
+     an app landing theme with a pink #ff4c8b primary, darker pink
+     #fb397d, light pink #fa91b9, a lime #ccfa87 accent, dark ink
+     #292d4f, and muted text #9597a6. */
+  --color-primary-50: #fff0f6;
+  --color-primary-100: #fa91b9;
+  --color-primary-200: #ff7aa8;
+  --color-primary-300: #ff6398;
+  --color-primary-400: #ff4c8b;
+  --color-primary-500: #fb397d;
+  --color-primary-600: #e02a6b;
+
+  /* Lime accent (ColorLib .welcome-bg-shape / highlights #ccfa87). */
+  --color-accent-300: #e0fdc2;
+  --color-accent-400: #ccfa87;
+
+  /* Muted copy (ColorLib #9597a6). */
+  --color-smoke: #9597a6;
+
+  --color-ink: #292d4f;
+
+  /* Poppins (headings) + Open Sans (body) via Google Fonts <link> in
+     index.html — recreating the ColorLib Century Gothic/Futura + Open
+     Sans pairing with widely available fonts. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
