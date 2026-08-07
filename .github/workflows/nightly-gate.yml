@@ -32,6 +32,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install fallow (release binary — not an npm dependency)
+        run: |
+          curl -fsSL -o /usr/local/bin/fallow https://github.com/fallow-rs/fallow/releases/latest/download/fallow-linux-x64-gnu
+          chmod +x /usr/local/bin/fallow
+          fallow --version
+
       - name: Run full gate
         run: npm run gate
 
