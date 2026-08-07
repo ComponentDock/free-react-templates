@@ -103,7 +103,7 @@ TBD
 
 ## Templates
 
-**Status:** 70 / 1646 templates recreated · **1576 remaining**.
+**Status:** 71 / 1646 templates recreated · **1575 remaining**.
 
 > Updated automatically after every template merge
 > (`node scripts/update-readme-status.mjs`). Each row is an original React
@@ -181,3 +181,4 @@ TBD
 | 68  | **Violet**         | Recreation of ColorLib **"Sierra"** website template design (https://colorlib.com/wp/template/sierra/), built under a DIFFERENT name ("Violet" — th… | App Landing Page, Bootstrap, Business, Landing Page, Startup      | [violet.surge.sh](https://free-react-templates-violet.surge.sh)                 |
 | 69  | **Vista**          | Recreation of ColorLib "Colorlib Error 404 V11" error page design.                                                                                   | 404 Error                                                         | [vista.surge.sh](https://free-react-templates-vista.surge.sh)                   |
 | 70  | **Wordpressapp**   | It is an original React recreation of the ColorLib "Wordpress App Themes" entry in TEMPLATES.md (App Landing Page category).                         | App Landing Page, Bootstrap, Landing Page, One Page, Seo, Startup | [wordpressapp.surge.sh](https://free-react-templates-wordpressapp.surge.sh)     |
+| 71  | **Zest**           | Recreation of ColorLib "Zeedapp" website template design, built under the new name **Zest** with the monorepo stack: Vite + React 19 + Tailwind CSS… | App Landing Page, Bootstrap, Landing Page, One Page               | [zest.surge.sh](https://free-react-templates-zest.surge.sh)                     |
