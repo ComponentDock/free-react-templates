@@ -1,3 +1,5 @@
+import { ButtonLink } from '@free-react-templates/ui'
+
 const projects = [
   { title: 'California Mega Mall', location: 'Los Angeles, USA' },
   { title: 'Commercial Building', location: 'New York, USA' },
@@ -39,12 +41,12 @@ export function Work() {
         </ul>
 
         <div className="mt-12 text-center">
-          <a
+          <ButtonLink
             href="#work"
-            className="inline-block bg-brand px-10 py-4 font-display text-sm font-semibold uppercase tracking-[0.2em] text-ink transition-colors hover:bg-brand-dark"
+            className="rounded-none bg-brand px-10 py-4 font-display text-sm font-semibold uppercase tracking-[0.2em] text-ink hover:bg-brand-dark hover:text-ink"
           >
             View All Projects
-          </a>
+          </ButtonLink>
         </div>
       </div>
     </section>

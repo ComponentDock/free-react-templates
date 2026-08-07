@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Button } from '@free-react-templates/ui'
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
@@ -53,12 +54,12 @@ export function Newsletter() {
             placeholder="Enter your email"
             className="w-full flex-1 border border-white/20 bg-white/10 px-4 py-3 text-white placeholder:text-white/50 focus:border-brand focus:outline-none"
           />
-          <button
+          <Button
             type="submit"
-            className="bg-brand px-8 py-3 font-display text-sm font-semibold uppercase tracking-[0.2em] text-ink transition-colors hover:bg-brand-dark"
+            className="rounded-none bg-brand px-8 py-3 font-display text-sm font-semibold uppercase tracking-[0.2em] text-ink hover:bg-brand-dark hover:text-ink"
           >
             Subscribe
-          </button>
+          </Button>
         </form>
 
         {error && (
