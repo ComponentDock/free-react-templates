@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Chroma brand colors — from the ColorLib "Transcend" preview
+     (https://preview.colorlib.com/theme/transcend/ + css/main.css):
+     a creative-studio theme with a magenta #cc147f primary, a teal
+     #26bfb5 secondary accent, near-black #000/#111 backgrounds, and
+     muted text #626262. */
+  --color-primary-50: #fceef7;
+  --color-primary-100: #f8d5ea;
+  --color-primary-200: #f0a8d3;
+  --color-primary-300: #e56fb4;
+  --color-primary-400: #cc147f;
+  --color-primary-500: #b31270;
+  --color-primary-600: #8f0e59;
+
+  /* Teal accent (ColorLib #26bfb5). */
+  --color-accent-300: #7fdcd6;
+  --color-accent-400: #26bfb5;
+
+  /* Muted copy (ColorLib #626262). */
+  --color-smoke: #626262;
+
+  --color-ink: #0a0a0a;
+
+  /* Domine (serif display) + Poppins (sans body) via Google Fonts
+     <link> in index.html — approximating the ColorLib Domine +
+     Metropolis pairing. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Domine', ui-serif, Georgia, serif;
+}
