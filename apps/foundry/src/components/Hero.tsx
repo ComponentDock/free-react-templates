@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ButtonLink, cn } from '@free-react-templates/ui'
 
 const taglines = [
   'Constructing Spaces For You',
@@ -53,12 +54,12 @@ export function Hero() {
           {taglines[index]}
         </p>
 
-        <a
+        <ButtonLink
           href="#work"
-          className="mt-10 inline-block bg-brand px-10 py-4 font-display text-sm font-semibold uppercase tracking-[0.2em] text-ink transition-colors hover:bg-brand-dark"
+          className="mt-10 rounded-none bg-brand px-10 py-4 font-display text-sm font-semibold uppercase tracking-[0.2em] text-ink hover:bg-brand-dark hover:text-ink"
         >
           View Projects
-        </a>
+        </ButtonLink>
       </div>
 
       <div className="absolute bottom-8 left-1/2 flex -translate-x-1/2 items-center gap-2">
@@ -74,7 +75,7 @@ export function Hero() {
           <span
             key={tagline}
             aria-hidden="true"
-            className={`h-2 w-2 rounded-full ${i === index ? 'bg-brand' : 'bg-white/40'}`}
+            className={cn('h-2 w-2 rounded-full', i === index ? 'bg-brand' : 'bg-white/40')}
           />
         ))}
         <button

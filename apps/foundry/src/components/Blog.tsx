@@ -1,3 +1,5 @@
+import { ButtonLink } from '@free-react-templates/ui'
+
 const posts = [
   {
     title: 'Construction was awarded with "The Best Construction Company" prize',
@@ -48,12 +50,12 @@ export function Blog() {
         </div>
 
         <div className="mt-12 text-center">
-          <a
+          <ButtonLink
             href="#blog"
-            className="inline-block bg-brand px-10 py-4 font-display text-sm font-semibold uppercase tracking-[0.2em] text-ink transition-colors hover:bg-brand-dark"
+            className="rounded-none bg-brand px-10 py-4 font-display text-sm font-semibold uppercase tracking-[0.2em] text-ink hover:bg-brand-dark hover:text-ink"
           >
             View All Blog Post
-          </a>
+          </ButtonLink>
         </div>
       </div>
     </section>
