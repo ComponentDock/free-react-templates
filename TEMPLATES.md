@@ -96,7 +96,7 @@
 - [x] **Arcade** — [colorlib](https://colorlib.com/wp/template/arcade/) · [Trestle](https://free-react-templates-trestle.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/arcade-free-template.jpg)
 - [x] **Archi** — [colorlib](https://colorlib.com/wp/template/archi/) · [Keystone](https://free-react-templates-keystone.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archi-free-template.jpg)
 - [x] **Architect** — [colorlib](https://colorlib.com/wp/template/architect/) · [Foundry](https://free-react-templates-foundry.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/architect-free-template.jpg)
-- [~] **Archlab** — [colorlib](https://colorlib.com/wp/template/archlab/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archlab-free-template.jpg)
+- [x] **Archlab** — [colorlib](https://colorlib.com/wp/template/archlab/) · [Beamline](https://free-react-templates-beamline.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archlab-free-template.jpg)
 - [ ] **Arclabs** — [colorlib](https://colorlib.com/wp/template/arclabs/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/arclabs-free-template.jpg)
 - [ ] **Astral** — [colorlib](https://colorlib.com/wp/template/astral/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/astral-free-template.jpg)
 - [ ] **Belara** — [colorlib](https://colorlib.com/wp/template/belara/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/belara-colorlib-template.jpg)
@@ -1329,7 +1329,7 @@
 
 - [x] **Arcade** — [colorlib](https://colorlib.com/wp/template/arcade/) · [Trestle](https://free-react-templates-trestle.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/arcade-free-template.jpg)
 - [x] **Architect** — [colorlib](https://colorlib.com/wp/template/architect/) · [Foundry](https://free-react-templates-foundry.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/architect-free-template.jpg)
-- [~] **Archlab** — [colorlib](https://colorlib.com/wp/template/archlab/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archlab-free-template.jpg)
+- [x] **Archlab** — [colorlib](https://colorlib.com/wp/template/archlab/) · [Beamline](https://free-react-templates-beamline.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archlab-free-template.jpg)
 - [ ] **Bee** — [colorlib](https://colorlib.com/wp/template/bee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bee-free-template.jpg)
 - [ ] **Braxit** — [colorlib](https://colorlib.com/wp/template/braxit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/braxit-free-template.jpg)
 - [ ] **Buildcraft** — [colorlib](https://colorlib.com/wp/template/buildcraft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildcraft-template-1771943678540.jpg)
