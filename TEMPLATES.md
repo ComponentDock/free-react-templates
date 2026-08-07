@@ -91,7 +91,7 @@
 
 ## Architects (30)
 
-- [~] **Alpha** — [colorlib](https://colorlib.com/wp/template/alpha/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alpha-free-template.jpg)
+- [x] **Alpha** — [colorlib](https://colorlib.com/wp/template/alpha/) · [Archon](https://free-react-templates-archon.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alpha-free-template.jpg)
 - [ ] **Ararat** — [colorlib](https://colorlib.com/wp/template/ararat/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ararat-free-template.jpg)
 - [ ] **Arcade** — [colorlib](https://colorlib.com/wp/template/arcade/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/arcade-free-template.jpg)
 - [ ] **Archi** — [colorlib](https://colorlib.com/wp/template/archi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archi-free-template.jpg)
