@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Soar brand colors — from the ColorLib "Raptor" preview
+     (https://preview.colorlib.com/theme/raptor/ + css/style.css):
+     a domain & hosting theme with a teal #2ebdc4 primary, a green
+     #68e5b2 accent (hero diagonal gradient), light-blue #78d5ef
+     buttons, and green #22d47b accents. */
+  --color-primary-50: #e6fbfc;
+  --color-primary-100: #c4f4f6;
+  --color-primary-200: #92e9ee;
+  --color-primary-300: #5fd9e1;
+  --color-primary-400: #2ebdc4;
+  --color-primary-500: #27a7ad;
+  --color-primary-600: #1f878c;
+  --color-primary-700: #1b6d71;
+  --color-primary-800: #17575a;
+  --color-primary-900: #13474a;
+
+  /* Green accent (ColorLib hero gradient end + accents). */
+  --color-accent-300: #a3f0d0;
+  --color-accent-400: #85eac2;
+  --color-accent-500: #68e5b2;
+  --color-accent-600: #3fd698;
+
+  /* Light-blue button color (ColorLib .btn-primary). */
+  --color-skyblue: #78d5ef;
+
+  /* Green CTA accent (ColorLib domain search). */
+  --color-limegreen: #22d47b;
+
+  --color-ink: #3a4348;
+
+  /* Poppins (body) + Work Sans (display) via Google Fonts <link> in
+     index.html — matching the ColorLib font pairing. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
