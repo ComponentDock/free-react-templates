@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Showkit brand palette — recreated from the ColorLib "SuSan" preview
+     (https://preview.colorlib.com/theme/susan/ + css/style.css):
+     pink accent #f8395d, purple gradient partner #a640d0, dark ink
+     #191919, muted caption #4f4f4f, light section #f7f7f7, footer
+     #161716. */
+  --color-primary-50: #fef2f4;
+  --color-primary-100: #fde3e8;
+  --color-primary-200: #fbcbd5;
+  --color-primary-300: #f8a3b5;
+  --color-primary-400: #f56482;
+  --color-primary-500: #f8395d;
+  --color-primary-600: #e0214a;
+  --color-primary-700: #bd1a3e;
+  --color-primary-800: #9c1a37;
+  --color-primary-900: #841a33;
+
+  /* Purple gradient partner (ColorLib #a640d0). */
+  --color-grape-400: #b95ee0;
+  --color-grape-500: #a640d0;
+  --color-grape-600: #8b2fb3;
+  --color-grape-700: #732795;
+
+  /* Dark ink (ColorLib #191919) + muted caption (ColorLib #4f4f4f). */
+  --color-ink: #191919;
+  --color-caption: #4f4f4f;
+
+  /* Montserrat (body, hero headline, buttons) + Open Sans (tagline,
+     section titles) — matching the ColorLib font pairing (Google Fonts
+     via index.html). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
