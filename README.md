@@ -103,7 +103,7 @@ TBD
 
 ## Templates
 
-**Status:** 61 / 1646 templates recreated · **1585 remaining**.
+**Status:** 62 / 1646 templates recreated · **1584 remaining**.
 
 > Updated automatically after every template merge
 > (`node scripts/update-readme-status.mjs`). Each row is an original React
@@ -171,4 +171,5 @@ TBD
 | 58  | **Tears**          | Recreation of ColorLib "Colorlib Error 404 V12" error page design.                                                                                   | 404 Error                                                     | [tears.surge.sh](https://free-react-templates-tears.surge.sh)                   |
 | 59  | **Thepetcare**     | Recreation of ColorLib "Thepetcare" design.                                                                                                          | Animal                                                        | [thepetcare.surge.sh](https://free-react-templates-thepetcare.surge.sh)         |
 | 60  | **Verve**          | Recreation of ColorLib "Racks" website template design (https://colorlib.com/wp/template/racks/), built under a **different name** with the monorep… | App Landing Page, Bootstrap, Business, Startup                | [verve.surge.sh](https://free-react-templates-verve.surge.sh)                   |
-| 61  | **Vista**          | Recreation of ColorLib "Colorlib Error 404 V11" error page design.                                                                                   | 404 Error                                                     | [vista.surge.sh](https://free-react-templates-vista.surge.sh)                   |
+| 61  | **Violet**         | Recreation of ColorLib **"Sierra"** website template design (https://colorlib.com/wp/template/sierra/), built under a DIFFERENT name ("Violet" — th… | App Landing Page, Bootstrap, Business, Landing Page, Startup  | [violet.surge.sh](https://free-react-templates-violet.surge.sh)                 |
+| 62  | **Vista**          | Recreation of ColorLib "Colorlib Error 404 V11" error page design.                                                                                   | 404 Error                                                     | [vista.surge.sh](https://free-react-templates-vista.surge.sh)                   |
