@@ -94,7 +94,7 @@
 - [x] **Alpha** — [colorlib](https://colorlib.com/wp/template/alpha/) · [Archon](https://free-react-templates-archon.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alpha-free-template.jpg)
 - [x] **Ararat** — [colorlib](https://colorlib.com/wp/template/ararat/) · [Atrium](https://free-react-templates-atrium.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ararat-free-template.jpg)
 - [x] **Arcade** — [colorlib](https://colorlib.com/wp/template/arcade/) · [Trestle](https://free-react-templates-trestle.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/arcade-free-template.jpg)
-- [~] **Archi** — [colorlib](https://colorlib.com/wp/template/archi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archi-free-template.jpg)
+- [x] **Archi** — [colorlib](https://colorlib.com/wp/template/archi/) · [Keystone](https://free-react-templates-keystone.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archi-free-template.jpg)
 - [ ] **Architect** — [colorlib](https://colorlib.com/wp/template/architect/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/architect-free-template.jpg)
 - [ ] **Archlab** — [colorlib](https://colorlib.com/wp/template/archlab/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archlab-free-template.jpg)
 - [ ] **Arclabs** — [colorlib](https://colorlib.com/wp/template/arclabs/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/arclabs-free-template.jpg)
@@ -1957,7 +1957,7 @@
 ## Interior Design (29)
 
 - [ ] **Approach** — [colorlib](https://colorlib.com/wp/template/approach/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/approach-free-template.jpg)
-- [~] **Archi** — [colorlib](https://colorlib.com/wp/template/archi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archi-free-template.jpg)
+- [x] **Archi** — [colorlib](https://colorlib.com/wp/template/archi/) · [Keystone](https://free-react-templates-keystone.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archi-free-template.jpg)
 - [ ] **Archirio** — [colorlib](https://colorlib.com/wp/template/archirio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archirio-free-template.jpg)
 - [ ] **Archs** — [colorlib](https://colorlib.com/wp/template/archs/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archs-free-template.jpg)
 - [ ] **Balay** — [colorlib](https://colorlib.com/wp/template/balay/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/balay-free-template.jpg)
