@@ -1,11 +1,11 @@
 import { ButtonLink } from '@free-react-templates/ui'
-import { BrandIcon } from './BrandIcon'
+import { BrandIcon, type BrandName } from './BrandIcon'
 
-const socials = [
+const socials: ReadonlyArray<{ label: string; name: BrandName }> = [
   { label: 'Facebook', name: 'facebook' },
   { label: 'X', name: 'x' },
   { label: 'Instagram', name: 'instagram' },
-] as const
+]
 
 export function Hero() {
   return (

@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { Button } from '@free-react-templates/ui'
-import { BrandIcon } from './BrandIcon'
+import { BrandIcon, type BrandName } from './BrandIcon'
 
 const columns = [
   {
@@ -21,11 +21,11 @@ const columns = [
   },
 ] as const
 
-const socials = [
+const socials: ReadonlyArray<{ label: string; name: BrandName }> = [
   { label: 'Facebook', name: 'facebook' },
   { label: 'X', name: 'x' },
   { label: 'LinkedIn', name: 'linkedin' },
-] as const
+]
 
 export function Footer() {
   const [email, setEmail] = useState('')
