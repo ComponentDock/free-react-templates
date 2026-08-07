@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Zest brand pink/red — from the original ColorLib "Zeedapp" style.css:
+     copy-right #f26367 and demo-title #f16266. */
+  --color-brand: #f26367;
+  --color-punch: #f16266;
+
+  /* Dark text / hero overlay from the original (#372940). */
+  --color-ink: #372940;
+  --color-ink-strong: #444;
+
+  /* Counter labels (#555) and light section backgrounds. */
+  --color-mist: #555;
+  --color-paper: #f9f9f9;
+  --color-fog: #f3f3f3;
+
+  /* Original font: system sans stack (monospace reserved for demo titles). */
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
