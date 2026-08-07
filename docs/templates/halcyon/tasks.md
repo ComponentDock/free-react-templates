@@ -87,13 +87,13 @@ rgba(255,255,255,0.2)`, hover `background: rgba(255,255,255,0.1)`.
 - [x] Write `openspec/specs/template-halcyon/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/halcyon` (copy the simplest app; rename package to
+- [x] Create `apps/halcyon` (copy the simplest app; rename package to
       `@free-react-templates/halcyon`).
-- [ ] TDD: tests first for each section component; run red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
+- [x] TDD: tests first for each section component; run red.
+- [x] Implement components (green) at 100% coverage.
+- [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate (local per-app gate in FAST_MODE).
-- [ ] Push `feat/template-halcyon`, open PR (source template, preview URL,
+- [x] Push `feat/template-halcyon`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
