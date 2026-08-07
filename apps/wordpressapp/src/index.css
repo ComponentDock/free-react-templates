@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* WordpressApp brand purple — from the original ColorLib "Wordpress App
+     Themes" screenshot (app-wordpress-themes.jpg): the hero is a deep
+     purple→violet gradient (#6a1b9a → #4a148c). */
+  --color-brand: #6a1b9a;
+
+  /* Hot-pink accent used for the primary CTA ("BUY NOW" button). */
+  --color-punch: #ec2d8e;
+
+  /* Deep violet for gradient end stops. */
+  --color-grape: #4a148c;
+
+  /* Light section background and borders (bootstrap-style neutrals). */
+  --color-paper: #f8f9fa;
+  --color-line: #dee2e6;
+
+  /* Near-black headings/text. */
+  --color-ink: #212529;
+
+  /* Secondary body text. */
+  --color-mist: #6c757d;
+
+  /* Original font: "Open Sans" (weights 300–700) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

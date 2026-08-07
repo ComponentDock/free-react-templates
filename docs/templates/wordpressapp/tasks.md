@@ -22,9 +22,10 @@
   4. App split: heading + blurb + CTA.
   5. CTA band (optional): call-to-action strip.
   6. Footer: link columns + social (GitHub, X, LinkedIn) + copyright.
-- **Design tokens (from screenshot):** light background, **blue** accent
-  (approximated as repo primary indigo `#4f46e5` unless a specific brand
-  color is visible); white cards; dark footer.
+- **Design tokens (from screenshot):** hero purple→violet gradient
+  (`#6a1b9a` → `#4a148c`), hot-pink CTA `#ec2d8e`; white content areas on
+  `#f8f9fa` paper; white text on the hero; dark-mode variants use the repo
+  standard gray-950.
 - **Recreation name:** WordpressApp (distinct from existing names). App
   folder `apps/wordpressapp`, package `@free-react-templates/wordpressapp`.
 - **Recreation approach:** seeded picsum placeholders

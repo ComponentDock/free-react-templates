@@ -16,15 +16,18 @@ TypeScript.
   returned HTTP 404. Per `docs/replication.md`, the design is reconstructed
   from the TEMPLATES.md screenshot (`app-wordpress-themes.jpg`) as the sole
   visual reference.
-- **Design reference (from screenshot):** a classic marketing landing page —
-  top navigation with logo and menu links, a hero with headline + CTA button
-  over a light background, feature/service cards with icons, an app showcase
-  split, and a dark footer with link columns. Typical ColorLib app-landing
-  layout with a blue accent color.
-- **Recreation decisions:** standard landing structure (Navbar → Hero →
-  Features → App split → CTA → Footer); photos → seeded picsum placeholders
-  (`picsum.photos/seed/wordpressapp-<n>/<w>/<h>`); icons → lucide-react;
-  blue primary in `@theme`; no assets copied.
+- **Design reference (from screenshot):** a classic marketing/app landing page —
+  top navigation with logo and menu links, a full-viewport hero over a deep
+  **purple→violet gradient** (`#6a1b9a` → `#4a148c`) with a large white
+  headline, white blurb, a **hot-pink** (`#ec2d8e`) "BUY NOW" button and a
+  transparent white-bordered "MORE INFO" button, a smartphone mockup showing a
+  calendar app, and a white wave transition into a light content area.
+  Below: feature/service cards with icons on white, an app showcase split on
+  light gray, and a footer with link columns.
+- **Recreation decisions:** standard landing structure (Navbar → Hero with
+  phone mockup → Features → App split → Footer); photos → seeded picsum
+  placeholders (`picsum.photos/seed/wordpressapp-<n>/<w>/<h>`); icons →
+  lucide-react; brand purple + hot-pink accent in `@theme`; no assets copied.
 
 WordpressApp lives in `apps/wordpressapp` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
