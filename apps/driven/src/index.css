@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Driven brand colors — from the ColorLib "Sasu" preview
+     (https://preview.colorlib.com/theme/sasu/ + css/style.css):
+     a digital-marketing app landing theme with a blue #0ab6ff primary,
+     a blue button gradient (#00b4ff -> #57ddff), light section
+     backgrounds #f9f9ff / #f0e9ff, and muted text #999999 / #7f7f7f. */
+  --color-primary-50: #e8f9ff;
+  --color-primary-100: #c9f0ff;
+  --color-primary-200: #9ce5ff;
+  --color-primary-300: #5ed5ff;
+  --color-primary-400: #0ab6ff;
+  --color-primary-500: #00a3f0;
+  --color-primary-600: #0081c4;
+  --color-primary-700: #02689c;
+  --color-primary-800: #0a577d;
+  --color-primary-900: #0e4968;
+
+  /* Button gradient end (ColorLib .btn_1 gradient #00b4ff -> #57ddff). */
+  --color-accent-300: #7fe0ff;
+  --color-accent-400: #57ddff;
+  --color-accent-500: #38c9f2;
+
+  /* Light section backgrounds (ColorLib .feature_part / .cta_part). */
+  --color-mist: #f9f9ff;
+  --color-lavender: #f0e9ff;
+
+  /* Muted copy (ColorLib #999999 / #7f7f7f). */
+  --color-smoke: #7f7f7f;
+
+  --color-ink: #1a1a1a;
+
+  /* Poppins (headings) + Roboto (body) via Google Fonts <link> in
+     index.html — matching the ColorLib font pairing. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

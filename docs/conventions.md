@@ -14,6 +14,14 @@ Consistent patterns for structure, naming, components, and error handling.
   the deploy GitHub Action runs `npm ci` and fails with
   "Missing: @free-react-templates/<name> from lock file" on a stale lockfile.
   Verify with `grep -c "free-react-templates/<name>" package-lock.json`.
+- **Every app's `vite.config.ts` MUST register `injectUiSource()`** (defined
+  inline in each config): Tailwind v4.3's vite plugin silently drops RELATIVE
+  `@source` paths, so classes used only in `packages/ui` (e.g. `inline-flex`,
+  `h-10`) never get generated — shared Button/ButtonLink lose their flex
+  centering (icon+label stacking). The helper injects an absolute `@source`
+  derived from the config's own directory, which is portable across
+  machines/CI. Copy the pattern from any existing app; never remove it or
+  replace it with a relative `@source` in `index.css`.
 - App source layout:
   - `src/main.tsx` — entry (excluded from coverage)
   - `src/App.tsx` — composes the template's sections

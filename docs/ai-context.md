@@ -21,6 +21,7 @@ free-react-templates/
 │   ├── cloud/                # Template "Cloud" — 404 error page (minimalist cloud)
 │   ├── cove/                 # Template "Cove" — 404 error page (emoji in light circle)
 │   ├── drift/                # Template "Drift" — 404 error page
+│   ├── driven/               # Template "Driven" — app/digital-marketing landing (ColorLib Sasu)
 │   ├── flick/                # Template "Flick" — 404 error page (animated spark)
 │   ├── lagoon/               # Template "Lagoon" — 404 error page (teal sad-face)
 │   ├── nova/                 # Template "Nova" — 404 error page (gradient 404 + social tiles)
