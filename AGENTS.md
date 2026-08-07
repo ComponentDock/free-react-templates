@@ -25,11 +25,14 @@ Tests: Vitest + Testing Library with **100% coverage enforced**.
    Validate with `npm run spec:validate`.
 3. **TDD.** Write tests before implementation. `npm run test:coverage` must stay
    at 100% lines/functions/branches/statements. Never disable coverage.
-4. **Verification gates.** Every change must pass ALL of:
-   `npm run typecheck` → `npm run lint` → `npm run test:coverage` →
-   `npm run build` → `npm run knip` → `npm run fallow`.
-   Never ignore a failing gate; never disable lint/tests/typechecking. Fix the
-   root cause.
+4. **Verification gates.** FAST_MODE (see `docs/FAST_MODE.md` — restore when
+   the template backlog is done): the local pre-push gate verifies only the
+   changed app(s) (`scripts/verify-app.sh <app>`: typecheck + lint + 100%
+   coverage tests + build, ~2–3 min). The FULL gate (`npm run gate`:
+   typecheck → lint → test:coverage → build → knip → fallow) still runs in CI
+   on every merge and on a nightly sweep, so regressions cannot merge
+   silently. Never ignore a failing gate; never disable
+   lint/tests/typechecking. Fix the root cause.
 5. **One app per template, new name.** New templates get a new folder
    `apps/<new-name>` (copy the simplest existing app, rename the package to
    `@free-react-templates/<new-name>`). The name must be NEW and DIFFERENT from

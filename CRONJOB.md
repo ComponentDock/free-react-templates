@@ -7,14 +7,36 @@ fresh session with no chat context, so every prompt below is fully self-containe
 
 | Job                             | State                  | Schedule  | Working tree                    | Delivery  |
 | ------------------------------- | ---------------------- | --------- | ------------------------------- | --------- |
-| 1 · Templates pipeline          | ✅ scheduled           | every 15m | `/root/free-react-templates`    | this chat |
+| 1 · Templates pipeline (impl 1) | ✅ scheduled           | every 15m | `/root/free-react-templates`    | this chat |
 | 2 · Continuous audit (firebase) | ⏸️ paused (2026-08-01) | every 60m | `/root/free-templates-firebase` | this chat |
 | 6 · Cron status report          | ✅ scheduled           | every 10m | — (pure script)                 | this chat |
 
-Parallel tracks B/C/D (jobs 3–5) were **retired 2026-08-04** after a short
-experiment: the single agent process serialized the runs (queued runs, API
-timeouts under load), so one pipeline job delivers the same throughput with far
-less noise. Their clone repos (`-b`, `-c`, `-d`) were deleted.
+## FAST_MODE: three concurrent streams (2026-08-07, see docs/FAST_MODE.md)
+
+Cron jobs in one agent process serialize, so streams 2 and 3 are **spawned
+`hermes chat -q` processes** (truly concurrent), each with its own clone:
+
+| Stream         | Role                       | Clone                           | Runner script                              | Log                                      |
+| -------------- | -------------------------- | ------------------------------- | ------------------------------------------ | ---------------------------------------- |
+| 1 (cron job 1) | Implementer                | `/root/free-react-templates`    | — (cron)                                   | —                                        |
+| 2              | Implementer                | `/root/free-react-templates-p2` | `~/.hermes/scripts/stream2-implementer.sh` | `~/.hermes/logs/stream2-implementer.log` |
+| 3              | Prep (specs/research only) | `/root/free-react-templates-p3` | `~/.hermes/scripts/stream3-prep.sh`        | `~/.hermes/logs/stream3-prep.log`        |
+
+- Prompts: `~/.hermes/scripts/pipeline-implementer.prompt` (streams 1+2),
+  `~/.hermes/scripts/pipeline-prep.prompt` (stream 3).
+- Coordination: claim rule — implementers push a `[~]` mark to main before
+  branching (retry next item on race); prep stream takes the first `- [ ]`
+  item without a spec and never sets `[~]`.
+- Stop streams 2/3: kill the runner processes
+  (`pkill -f stream2-implementer.sh`, `pkill -f stream3-prep.sh`).
+- FAST_MODE also relaxes the LOCAL gate to per-app (`scripts/verify-app.sh`);
+  the full gate (`npm run gate`) runs in CI on merge + nightly. Restore
+  checklist: docs/FAST_MODE.md.
+
+Tracks B/C/D (jobs 3–5) were **retired 2026-08-04** after a short experiment:
+the single agent process serialized the runs (queued runs, API timeouts under
+load), so one pipeline job delivers the same throughput with far less noise.
+Their clone repos (`-b`, `-c`, `-d`) were deleted.
 
 ---
 
