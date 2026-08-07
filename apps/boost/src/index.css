@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Boost brand orange — from the original ColorLib "WebApp" stylesheet
+     (css/style.css): .btn-primary { background: #fd7e14; border-color:
+     #fd7e14; color: #fff; }. */
+  --color-brand: #fd7e14;
+
+  /* Light section background (bg-light #f8f9fa) and borders (#dee2e6). */
+  --color-paper: #f8f9fa;
+  --color-line: #dee2e6;
+
+  /* Near-black headings/text (#212529). */
+  --color-ink: #212529;
+
+  /* Secondary body text (#6c757d). */
+  --color-mist: #6c757d;
+
+  /* Original font: "Open Sans" (weights 300–700) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
