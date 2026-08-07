@@ -92,7 +92,7 @@
 ## Architects (30)
 
 - [x] **Alpha** — [colorlib](https://colorlib.com/wp/template/alpha/) · [Archon](https://free-react-templates-archon.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alpha-free-template.jpg)
-- [~] **Ararat** — [colorlib](https://colorlib.com/wp/template/ararat/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ararat-free-template.jpg)
+- [x] **Ararat** — [colorlib](https://colorlib.com/wp/template/ararat/) · [Atrium](https://free-react-templates-atrium.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ararat-free-template.jpg)
 - [ ] **Arcade** — [colorlib](https://colorlib.com/wp/template/arcade/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/arcade-free-template.jpg)
 - [ ] **Archi** — [colorlib](https://colorlib.com/wp/template/archi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archi-free-template.jpg)
 - [ ] **Architect** — [colorlib](https://colorlib.com/wp/template/architect/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/architect-free-template.jpg)
@@ -886,7 +886,7 @@
 - [ ] **Approach** — [colorlib](https://colorlib.com/wp/template/approach/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/approach-free-template.jpg)
 - [x] **Appy** — [colorlib](https://colorlib.com/wp/template/appy/) · [appy](https://free-react-templates-appy.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appy-free-template.jpg)
 - [ ] **Aranoz** — [colorlib](https://colorlib.com/wp/template/aranoz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aranoz-free-template.jpg)
-- [ ] **Ararat** — [colorlib](https://colorlib.com/wp/template/ararat/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ararat-free-template.jpg)
+- [x] **Ararat** — [colorlib](https://colorlib.com/wp/template/ararat/) · [Atrium](https://free-react-templates-atrium.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ararat-free-template.jpg)
 - [ ] **Arcade** — [colorlib](https://colorlib.com/wp/template/arcade/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/arcade-free-template.jpg)
 - [ ] **Archirio** — [colorlib](https://colorlib.com/wp/template/archirio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archirio-free-template.jpg)
 - [ ] **Arclabs** — [colorlib](https://colorlib.com/wp/template/arclabs/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/arclabs-free-template.jpg)
