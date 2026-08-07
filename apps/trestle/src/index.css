@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Trestle brand lime — from the original ColorLib "Arcade" preview
+     (css/style.css): #baff00. */
+  --color-brand: #baff00;
+
+  /* Slightly deeper lime for hover states. */
+  --color-brand-dark: #a8e600;
+
+  /* Near-black ink: headings, dark sections. */
+  --color-ink: #222222;
+
+  /* Deep charcoal for the footer / dark bands. */
+  --color-coal: #121212;
+
+  /* Light section band (hero background). */
+  --color-paper: #ededed;
+
+  /* Muted secondary text. */
+  --color-mist: #727272;
+
+  /* Borders / dividers. */
+  --color-line: #e6e6e6;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand lime. */
+  --color-primary-50: #fcffe9;
+  --color-primary-100: #f6ffc7;
+  --color-primary-200: #eeff94;
+  --color-primary-300: #e4ff55;
+  --color-primary-400: #d9ff26;
+  --color-primary-500: #baff00;
+  --color-primary-600: #93cc00;
+  --color-primary-700: #709b02;
+  --color-primary-800: #587a08;
+  --color-primary-900: #4b670c;
+
+  /* Original font: "Roboto" (Google Fonts). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
