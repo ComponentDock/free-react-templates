@@ -19,18 +19,18 @@ CI (on merge) and a nightly sweep. Three concurrent pipeline streams
 
 ## Checklist — everything changed (restore these)
 
-| #   | File / thing                         | Original (production) behavior                                                                                             | FAST_MODE behavior                                                                                                                                                                 |
-| --- | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | `.husky/pre-push`                    | Full gate: `npm run typecheck && npm run lint && npm run test:coverage && npm run build && npm run knip && npm run fallow` | Per-app gate via `scripts/verify-app.sh` for each changed app (root lint always)                                                                                                   |
-| 2   | `package.json` scripts               | `test`, `test:coverage`, etc.                                                                                              | Added `gate` (= original full chain, still runnable), `verify:app` (per-app gate). Original scripts unchanged                                                                      |
-| 3   | `AGENTS.md` rule 4                   | "Every change must pass ALL of: typecheck → lint → test:coverage → build → knip → fallow"                                  | Local gate = per-app; full gate = `npm run gate` on demand + CI on merge + nightly sweep                                                                                           |
-| 4   | `docs/verification.md`               | Defined full gate as the only gate                                                                                         | Documents both gates + FAST_MODE section                                                                                                                                           |
-| 5   | `.github/workflows/deploy-surge.yml` | Deploy only                                                                                                                | Added `verify` job running the FULL gate (`npm run gate`) before deploy                                                                                                            |
-| 6   | `.github/workflows/nightly-gate.yml` | — (new)                                                                                                                    | Nightly full-gate sweep (GitHub Actions schedule) that fails loudly on regression                                                                                                  |
-| 7   | Cron job "Templates pipeline" prompt | Verification = full 6-step gate                                                                                            | Verification = `scripts/verify-app.sh <app>` for the new app; full gate runs in CI                                                                                                 |
-| 8   | Pipeline concurrency                 | 1 stream (cron job A, `/root/free-react-templates`)                                                                        | 3 streams: cron A (main tree) + stream 2 implementer (`/root/free-react-templates-p2`, spawned `hermes chat` loop) + stream 3 prep (`/root/free-react-templates-p3`, spawned loop) |
-| 9   | `CRONJOB.md`                         | Documents single pipeline                                                                                                  | Documents 3 streams + how to stop them                                                                                                                                             |
-| 10  | `scripts/verify-app.sh`              | — (new)                                                                                                                    | Per-app gate: typecheck + lint + vitest (100% coverage) + build for ONE workspace                                                                                                  |
+| #   | File / thing                           | Original (production) behavior                                                                                             | FAST_MODE behavior                                                                                                                                         |
+| --- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | `.husky/pre-push`                      | Full gate: `npm run typecheck && npm run lint && npm run test:coverage && npm run build && npm run knip && npm run fallow` | Per-app gate via `scripts/verify-app.sh` for each changed app (root lint always)                                                                           |
+| 2   | `package.json` scripts                 | `test`, `test:coverage`, etc.                                                                                              | Added `gate` (= original full chain, still runnable), `verify:app` (per-app gate). Original scripts unchanged                                              |
+| 3   | `AGENTS.md` rule 4                     | "Every change must pass ALL of: typecheck → lint → test:coverage → build → knip → fallow"                                  | Local gate = per-app; full gate = `npm run gate` on demand + CI on merge + nightly sweep                                                                   |
+| 4   | `docs/verification.md`                 | Defined full gate as the only gate                                                                                         | Documents both gates + FAST_MODE section                                                                                                                   |
+| 5   | `.github/workflows/deploy-surge.yml`   | Deploy only                                                                                                                | Added `verify` job running the FULL gate (`npm run gate`) before deploy                                                                                    |
+| 6   | `.github/workflows/nightly-gate.yml`   | — (new)                                                                                                                    | Nightly full-gate sweep (GitHub Actions schedule) that fails loudly on regression                                                                          |
+| 7   | Cron job "Templates pipeline watchdog" | Job A ran the implementer prompt (full 6-step gate verification)                                                           | no_agent watchdog (`~/.hermes/scripts/cron-watchdog.sh`, every 15m) that restarts dead streams; all LLM work runs in spawned `hermes chat -q` streams 1–3  |
+| 8   | Pipeline concurrency                   | 1 stream (cron job A, `/root/free-react-templates`)                                                                        | 3 spawned streams (see CRONJOB.md): stream 1 implementer (main tree), stream 2 implementer (`-p2`), stream 3 prep (`-p3`) — all without cron idle timeouts |
+| 9   | `CRONJOB.md`                           | Documents single pipeline                                                                                                  | Documents 3 streams + how to stop them                                                                                                                     |
+| 10  | `scripts/verify-app.sh`                | — (new)                                                                                                                    | Per-app gate: typecheck + lint + vitest (100% coverage) + build for ONE workspace                                                                          |
 
 **Unchanged (never relaxed):** spec-first (OpenSpec), TDD with 100% coverage on
 changed code, replication fidelity mandate, conventional commits, PR +
@@ -55,19 +55,21 @@ CI + nightly, so no regression can silently merge.
 
 ## Restore procedure
 
-1. **Stop streams 2 & 3** (kill their runner processes; see CRONJOB.md).
-2. **Restore `.husky/pre-push`** to the original full gate:
+1. **Stop streams 1–3** (kill the runner processes; see CRONJOB.md).
+2. **Restore job A as the implementer cron** (watchdog → prompt-driven):
+   via `cronjob` update: `no_agent=false`, clear the script, restore the
+   implementer prompt (see git history / CRONJOB.md), keep `every 15m`.
+3. **Restore `.husky/pre-push`** to the original full gate:
    ```bash
    printf 'npm run typecheck && npm run lint && npm run test:coverage && npm run build && npm run knip && npm run fallow\n' > .husky/pre-push && chmod +x .husky/pre-push
    ```
-3. **Restore `AGENTS.md` rule 4** and `docs/verification.md` to the full-gate
+4. **Restore `AGENTS.md` rule 4** and `docs/verification.md` to the full-gate
    contract (git history: `git show <last-main-commit>~1:AGENTS.md`).
-4. **Remove the nightly workflow** `.github/workflows/nightly-gate.yml` and the
+5. **Remove the nightly workflow** `.github/workflows/nightly-gate.yml` and the
    `verify` job in `deploy-surge.yml` (or keep — they are additive and safe).
-5. **Update the cron prompt** verification section back to the full gate.
 6. **Delete clones** `/root/free-react-templates-p2` and `-p3` (~300 MB each).
 7. **Optional:** remove `scripts/verify-app.sh`, `npm run gate`,
-   `npm run verify:app`, and this file.
+   `npm run verify:app`, the stream runner scripts, and this file.
 8. Update `CRONJOB.md` + `README.md` accordingly; commit as `docs: restore
 full verification gate (FAST_MODE off)`.
 

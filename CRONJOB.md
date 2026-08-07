@@ -5,22 +5,24 @@ fresh session with no chat context, so every prompt below is fully self-containe
 
 ## Current status
 
-| Job                             | State                  | Schedule  | Working tree                    | Delivery  |
-| ------------------------------- | ---------------------- | --------- | ------------------------------- | --------- |
-| 1 · Templates pipeline (impl 1) | ✅ scheduled           | every 15m | `/root/free-react-templates`    | this chat |
-| 2 · Continuous audit (firebase) | ⏸️ paused (2026-08-01) | every 60m | `/root/free-templates-firebase` | this chat |
-| 6 · Cron status report          | ✅ scheduled           | every 10m | — (pure script)                 | this chat |
+| Job                             | State                   | Schedule  | Working tree                    | Delivery  |
+| ------------------------------- | ----------------------- | --------- | ------------------------------- | --------- |
+| 1 · Templates pipeline watchdog | ✅ scheduled (no_agent) | every 15m | — (restarts streams)            | this chat |
+| 2 · Continuous audit (firebase) | ⏸️ paused (2026-08-01)  | every 60m | `/root/free-templates-firebase` | this chat |
+| 6 · Cron status report          | ✅ scheduled            | every 10m | — (pure script)                 | this chat |
 
 ## FAST_MODE: three concurrent streams (2026-08-07, see docs/FAST_MODE.md)
 
-Cron jobs in one agent process serialize, so streams 2 and 3 are **spawned
-`hermes chat -q` processes** (truly concurrent), each with its own clone:
+The cron is a **token-free watchdog** (`~/.hermes/scripts/cron-watchdog.sh`,
+no_agent — no LLM, no idle timeout) that keeps the three stream processes
+alive. The streams are spawned `hermes chat -q` loops (truly concurrent;
+cron jobs in one agent process would serialize), each with its own clone:
 
-| Stream         | Role                       | Clone                           | Runner script                              | Log                                      |
-| -------------- | -------------------------- | ------------------------------- | ------------------------------------------ | ---------------------------------------- |
-| 1 (cron job 1) | Implementer                | `/root/free-react-templates`    | — (cron)                                   | —                                        |
-| 2              | Implementer                | `/root/free-react-templates-p2` | `~/.hermes/scripts/stream2-implementer.sh` | `~/.hermes/logs/stream2-implementer.log` |
-| 3              | Prep (specs/research only) | `/root/free-react-templates-p3` | `~/.hermes/scripts/stream3-prep.sh`        | `~/.hermes/logs/stream3-prep.log`        |
+| Stream | Role                       | Clone                           | Runner script                              | Log                                      |
+| ------ | -------------------------- | ------------------------------- | ------------------------------------------ | ---------------------------------------- |
+| 1      | Implementer                | `/root/free-react-templates`    | `~/.hermes/scripts/stream1-implementer.sh` | `~/.hermes/logs/stream1-implementer.log` |
+| 2      | Implementer                | `/root/free-react-templates-p2` | `~/.hermes/scripts/stream2-implementer.sh` | `~/.hermes/logs/stream2-implementer.log` |
+| 3      | Prep (specs/research only) | `/root/free-react-templates-p3` | `~/.hermes/scripts/stream3-prep.sh`        | `~/.hermes/logs/stream3-prep.log`        |
 
 - Prompts: `~/.hermes/scripts/pipeline-implementer.prompt` (streams 1+2),
   `~/.hermes/scripts/pipeline-prep.prompt` (stream 3).
