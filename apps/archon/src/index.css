@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Archon brand coral — from the original ColorLib "Alpha" preview
+     (css/style.css): #ff926b, hover #ffa585. */
+  --color-brand: #ff926b;
+
+  /* Lighter coral for hover states. */
+  --color-brand-dark: #ffa585;
+
+  /* Near-black ink: headings, hero box border, CTA pill. */
+  --color-ink: #000000;
+
+  /* Light section band (mission / news / testimonials backgrounds). */
+  --color-paper: #f5f5f5;
+
+  /* Muted secondary text. */
+  --color-mist: #878787;
+
+  /* Footer charcoal. */
+  --color-coal: #191919;
+
+  /* Borders / dividers. */
+  --color-line: #e6e6e6;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand coral. */
+  --color-primary-50: #fff5f1;
+  --color-primary-100: #ffe9e1;
+  --color-primary-200: #ffd3c2;
+  --color-primary-300: #ffb99d;
+  --color-primary-400: #ffa585;
+  --color-primary-500: #ff926b;
+  --color-primary-600: #f07f56;
+  --color-primary-700: #d96843;
+  --color-primary-800: #b54f30;
+  --color-primary-900: #8f3a21;
+
+  /* Original font: "Montserrat" (Google Fonts). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
