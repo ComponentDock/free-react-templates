@@ -229,7 +229,7 @@
 - [ ] **Serenite** — [colorlib](https://colorlib.com/wp/template/serenite/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/serenite-template-1771943746919.jpg)
 - [ ] **Shopmax** — [colorlib](https://colorlib.com/wp/template/shopmax/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shopmax-free-template.jpg)
 - [ ] **Stylistic** — [colorlib](https://colorlib.com/wp/template/stylistic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stylistic-free-template.jpg)
-- [ ] **Topmodel** — [colorlib](https://colorlib.com/wp/template/topmodel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/topmodel-free-template.jpg)
+- [~] **Topmodel** — [colorlib](https://colorlib.com/wp/template/topmodel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/topmodel-free-template.jpg)
 - [~] **Vogue** — [colorlib](https://colorlib.com/wp/template/vogue/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vogue-free-template.jpg)
 - [ ] **Wellspa** — [colorlib](https://colorlib.com/wp/template/wellspa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wellspa-free-template.jpg)
 - [ ] **Wordpress Wedding Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-wedding-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wedding-wordpress-themes.jpg)
