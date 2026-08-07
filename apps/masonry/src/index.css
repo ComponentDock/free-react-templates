@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Masonry brand yellow — from the original ColorLib "Astral" preview
+     (css/style.css): #f9cc41 primary buttons, accents, hover fills. */
+  --color-brand: #f9cc41;
+
+  /* Deeper yellow for hover states (#f8b600 from the original). */
+  --color-brand-dark: #f8b600;
+
+  /* Ink — headings and dark text (#222222 from the original). */
+  --color-ink: #222222;
+
+  /* Mist — muted body text (#777777 from the original). */
+  --color-mist: #777777;
+
+  /* Paper — light section backgrounds (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Coal — footer background (#000410 from the original stylesheet). */
+  --color-coal: #000410;
+
+  /* Accents used sparingly in the original (#4cd3e3 cyan, #38a4ff blue). */
+  --color-aqua: #4cd3e3;
+  --color-sky-blue: #38a4ff;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand yellow. */
+  --color-primary-50: #fef9e8;
+  --color-primary-100: #fdf0c2;
+  --color-primary-200: #fbdf85;
+  --color-primary-300: #f9cc41;
+  --color-primary-400: #f2b51d;
+  --color-primary-500: #d99410;
+  --color-primary-600: #b3720c;
+  --color-primary-700: #8f530e;
+  --color-primary-800: #774212;
+  --color-primary-900: #663714;
+
+  /* Original fonts: "Oswald" (display) + "Roboto" (body). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

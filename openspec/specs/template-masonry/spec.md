@@ -1,8 +1,8 @@
-# Template: Astral (Architecture Template)
+# Template: Masonry (Architecture Template)
 
 ## Purpose
 
-Astral is a single-page architecture landing template in the
+Masonry is a single-page architecture landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Astral" website template design (see TEMPLATES.md), built
 under a different name with the monorepo stack: Vite + React 19 + Tailwind
@@ -17,41 +17,42 @@ CSS 4 + TypeScript.
   The TEMPLATES.md screenshot (`astral-free-template.jpg`) is the visual
   reference; the design below is reconstructed from the DOM structure and
   CSS tokens.
-- **Section order (1:1):** Navbar (Home, About, Services, Projects,
-  Elements, Blog, Blog Details, Contact + get started) → Hero ("Precise
-  Created Only For You" + carousel + get started) → About ("We Are Creating
-  Since 1990" + fact boxes "1990 Projects done") → Services ("Our Service
-  Offerings" + Total Architecture / Interior Solution / Construction
-  Guideline + view all services) → Portfolio ("Our Portfolio Museum" +
-  Featured Projects + view all projects) → Testimonials ("Falcon Astle" +
-  quote slider) → Contact ("Send Us Messages" + view contact info) →
-  Footer (Recent Blog Posts, social links).
+- **Section order (1:1):** Navbar (Home, About, Services, Portfolio,
+  Contact + dark-mode toggle) → Hero ("Precise Created Only For You" +
+  blurb + get started) → About ("We Are Creating Since 1990" + fact boxes
+  "1990 Projects done") → Services ("Our Service Offerings" + Total
+  Architecture / Interior Solution / Construction Guideline + view all
+  services) → Portfolio ("Our Portfolio Museum" + Featured Projects +
+  view all projects) → Testimonials ("Falcon Astle" quote slider) →
+  Contact ("Send Us Messages" + view contact info) → Footer (Recent Blog
+  Posts, link columns, social links, copyright).
 - **Design tokens extracted from `style.css`:**
   - Primary **yellow `#f9cc41`** (buttons, accents), darker yellow
     `#f8b600`.
   - Dark text `#222222`; light backgrounds `#f9f9ff`, `#ffffff`.
   - Accent `#4cd3e3` (cyan) and `#38a4ff` (blue) used sparingly.
+  - Footer background `#000410` (near-black navy).
   - Fonts: **"Oswald"** (display, serif) + **"Roboto"** (body).
   - Square (border-radius 0) yellow buttons with white text, 50px tall.
 - **Recreation decisions:** photos → seeded picsum placeholders
   (`picsum.photos/seed/astral-<n>/<w>/<h>`); icons → lucide-react; forms
   prevent default (no backend); no assets copied.
 
-Astral lives in `apps/astral` and uses shared components from `packages/ui`
+Masonry lives in `apps/masonry` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Astral",
+The system SHALL render a top navigation bar with the site name "Masonry",
 anchor links to the page's sections, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Astral page is rendered
+- **GIVEN** the Masonry page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Astral" and links to Home, About, Services, and Contact
+- **THEN** the navbar SHALL show the site name "Masonry" and links to Home, About, Services, Portfolio, and Contact
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -150,7 +151,13 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Astral app is rendered
+- **GIVEN** the Masonry app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Astral — Architecture Template"
+- **AND** the document title SHALL be "Masonry — Architecture Template"
+
+## Verification checklist
+
+- [ ] `npm run spec:validate`
+- [ ] `bash scripts/verify-app.sh masonry` (typecheck + lint + 100% coverage tests + build)
+- [ ] Screenshot review: sections, order, yellow brand, Oswald/Roboto fonts
