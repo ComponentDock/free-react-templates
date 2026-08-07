@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Violet brand colors — from the ColorLib "Sierra" preview
+     (https://preview.colorlib.com/theme/sierra/ + css/style.css):
+     a startup theme with a purple #9b8aff primary, blue #6ebdfe accent
+     (hero + buttons are a blue→purple gradient), dark navy #0b1033,
+     and muted text #7c8d93. */
+  --color-primary-50: #f3f1ff;
+  --color-primary-100: #e7e2ff;
+  --color-primary-200: #d4ccff;
+  --color-primary-300: #b8acff;
+  --color-primary-400: #9b8aff;
+  --color-primary-500: #8574f5;
+  --color-primary-600: #6e5de0;
+
+  /* Blue accent (ColorLib #6ebdfe / #70bafe). */
+  --color-accent-300: #9fd3ff;
+  --color-accent-400: #6ebdfe;
+
+  /* Muted copy (ColorLib #7c8d93). */
+  --color-smoke: #7c8d93;
+
+  --color-ink: #0b1033;
+
+  /* Open Sans (body) + Roboto (headings) via Google Fonts <link> in
+     index.html — matching the ColorLib font pairing. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
