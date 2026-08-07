@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Beamline brand green — from the original ColorLib "Archlab" preview
+     (css/style.css): #96bb7c buttons, accents, process band, quote overlay. */
+  --color-brand: #96bb7c;
+
+  /* Deeper green for hover states. */
+  --color-brand-dark: #7da363;
+
+  /* Ink — headings and dark text (#212529). */
+  --color-ink: #212529;
+
+  /* Mist — muted body text (#6c757d). */
+  --color-mist: #6c757d;
+
+  /* Paper — light section backgrounds (#f8f9fa). */
+  --color-paper: #f8f9fa;
+
+  /* Coal — footer background (#0f101c from the original stylesheet). */
+  --color-coal: #0f101c;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand green. */
+  --color-primary-50: #f2f7ee;
+  --color-primary-100: #e3efdb;
+  --color-primary-200: #c8dfba;
+  --color-primary-300: #a8cb94;
+  --color-primary-400: #96bb7c;
+  --color-primary-500: #7da363;
+  --color-primary-600: #6b8f53;
+  --color-primary-700: #567244;
+  --color-primary-800: #445a37;
+  --color-primary-900: #35472c;
+
+  /* Original font: "Nunito Sans" (Google Fonts). */
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
