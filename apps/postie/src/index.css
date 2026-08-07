@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Postie brand colors — from the ColorLib "Standout" preview
+     (https://preview.colorlib.com/theme/standout/ + css/main.css):
+     a mail-app theme with a green #00a650 primary, dark green #006933,
+     near-black #121619, on a white background. */
+  --color-primary-50: #e9f9f0;
+  --color-primary-100: #c9efda;
+  --color-primary-200: #93dfb5;
+  --color-primary-300: #4fcb89;
+  --color-primary-400: #00a650;
+  --color-primary-500: #00934a;
+  --color-primary-600: #006933;
+
+  /* Near-black ink (ColorLib #121619). */
+  --color-ink: #121619;
+
+  /* Muted copy. */
+  --color-smoke: #6b747b;
+
+  /* IBM Plex Sans (body) + IBM Plex Serif (headings) via Google Fonts
+     <link> in index.html — matching the ColorLib font pairing. */
+  --font-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'IBM Plex Serif', ui-serif, Georgia, serif;
+}
