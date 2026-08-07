@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Atrium brand orange — from the original ColorLib "Ararat" preview
+     (css/style.css): #ff5e13 (accents, link hovers, focus). */
+  --color-brand: #ff5e13;
+
+  /* Deeper orange for hover states. */
+  --color-brand-dark: #e04e0a;
+
+  /* Dark ink used for headings, borders, and button outlines. */
+  --color-ink: #131313;
+
+  /* Light neutral tints from the original (section backgrounds). */
+  --color-paper: #f9f9ff;
+
+  /* Secondary body text gray. */
+  --color-mist: #808080;
+
+  /* Footer / muted text gray. */
+  --color-fog: #9e9e9e;
+
+  /* Kickers, borders, placeholder gray. */
+  --color-line: #c9c9c9;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand orange. */
+  --color-primary-50: #fff4ee;
+  --color-primary-100: #ffe6d7;
+  --color-primary-200: #ffcbae;
+  --color-primary-300: #ffa87a;
+  --color-primary-400: #ff8b4d;
+  --color-primary-500: #ff6b1f;
+  --color-primary-600: #ff5e13;
+  --color-primary-700: #e04e0a;
+  --color-primary-800: #b83f08;
+  --color-primary-900: #933306;
+
+  /* Original fonts: "Roboto" (headings, nav, buttons) + "Playfair
+     Display" (serif wordmark, quote, body), via Google Fonts. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
