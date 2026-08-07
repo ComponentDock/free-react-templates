@@ -87,7 +87,7 @@
 - [x] **Unapp** — [colorlib](https://colorlib.com/wp/template/unapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unapp-free-template.jpg) · [blueprint](https://free-react-templates-blueprint.surge.sh)
 - [x] **Webapp** — [colorlib](https://colorlib.com/wp/template/webapp/) · [boost](https://free-react-templates-boost.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webapp-free-template.jpg)
 - [x] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · [wordpressapp](https://free-react-templates-wordpressapp.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
-- [ ] **Zeedapp** — [colorlib](https://colorlib.com/wp/template/zeedapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeedapp-free-template.jpg)
+- [~] **Zeedapp** — [colorlib](https://colorlib.com/wp/template/zeedapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeedapp-free-template.jpg)
 
 ## Architects (30)
 
@@ -540,7 +540,7 @@
 - [ ] **Yaseen** — [colorlib](https://colorlib.com/wp/template/yaseen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yaseen-creative-photography-website-landing-page-template.jpg)
 - [ ] **Yoga** — [colorlib](https://colorlib.com/wp/template/yoga/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yoga-free-template.jpg)
 - [ ] **Yogaflex** — [colorlib](https://colorlib.com/wp/template/yogaflex/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogaflex-free-template.jpg)
-- [ ] **Zeedapp** — [colorlib](https://colorlib.com/wp/template/zeedapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeedapp-free-template.jpg)
+- [~] **Zeedapp** — [colorlib](https://colorlib.com/wp/template/zeedapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeedapp-free-template.jpg)
 
 ## Bootstrap 5 (89)
 
@@ -2101,7 +2101,7 @@
 - [ ] **Wordpress Business Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-business-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-business-themes1.jpg)
 - [ ] **Workshop** — [colorlib](https://colorlib.com/wp/template/workshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workshop-free-template.jpg)
 - [ ] **Yaseen** — [colorlib](https://colorlib.com/wp/template/yaseen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yaseen-creative-photography-website-landing-page-template.jpg)
-- [ ] **Zeedapp** — [colorlib](https://colorlib.com/wp/template/zeedapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeedapp-free-template.jpg)
+- [~] **Zeedapp** — [colorlib](https://colorlib.com/wp/template/zeedapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeedapp-free-template.jpg)
 
 ## Landscaping (3)
 
@@ -2370,7 +2370,7 @@
 - [x] **Webapp** — [colorlib](https://colorlib.com/wp/template/webapp/) · [boost](https://free-react-templates-boost.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webapp-free-template.jpg)
 - [x] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · [wordpressapp](https://free-react-templates-wordpressapp.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
 - [ ] **Workout** — [colorlib](https://colorlib.com/wp/template/workout/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workout-free-template.jpg)
-- [ ] **Zeedapp** — [colorlib](https://colorlib.com/wp/template/zeedapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeedapp-free-template.jpg)
+- [~] **Zeedapp** — [colorlib](https://colorlib.com/wp/template/zeedapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeedapp-free-template.jpg)
 
 ## Personal (53)
 
