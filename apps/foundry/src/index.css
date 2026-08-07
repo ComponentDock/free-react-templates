@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Foundry brand yellow — from the original ColorLib "Architect" preview
+     (css/style.css): #FFCD00 buttons and accents. */
+  --color-brand: #ffcd00;
+
+  /* Deeper yellow for hover states. */
+  --color-brand-dark: #f7af1d;
+
+  /* Ink — headings and dark text (#252525, #333333 from the stylesheet). */
+  --color-ink: #252525;
+
+  /* Light section backgrounds (#fafafa from the stylesheet). */
+  --color-paper: #fafafa;
+
+  /* Muted secondary text (#999999). */
+  --color-mist: #999999;
+
+  /* Footer charcoal (#1E2022 from the original stylesheet). */
+  --color-coal: #1e2022;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand yellow. */
+  --color-primary-50: #fffbe6;
+  --color-primary-100: #fff5c2;
+  --color-primary-200: #ffec8a;
+  --color-primary-300: #ffe04d;
+  --color-primary-400: #ffd21a;
+  --color-primary-500: #ffcd00;
+  --color-primary-600: #d9a800;
+  --color-primary-700: #b38900;
+  --color-primary-800: #8f6d00;
+  --color-primary-900: #755a00;
+
+  /* Original font: "Montserrat" (display + body), Google Fonts. */
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
