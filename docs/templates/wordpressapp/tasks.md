@@ -39,13 +39,13 @@
 - [x] Write `openspec/specs/template-wordpressapp/spec.md` (Gherkin
       requirements + scenarios reflecting the screenshot-based design).
 - [x] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/wordpressapp` (copy the section-rich landing app pattern —
+- [x] Create `apps/wordpressapp` (copy the section-rich landing app pattern —
       Aurora; rename package to `@free-react-templates/wordpressapp`).
-- [ ] TDD: tests first for each section component; run red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
-      spec:validate.
-- [ ] Push `feat/template-wordpressapp`, open PR (source template, preview
-      URL (unreachable — screenshot fallback), design tokens, what differs).
-- [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
-      (bookkeeping on main, state D).
+- [x] TDD: tests first for each section component; run red.
+- [x] Implement components (green) at 100% coverage.
+- [x] Per-app gate (`scripts/verify-app.sh wordpressapp`): typecheck → lint →
+      test:coverage (100%) → build → spec:validate. Full gate runs in CI on
+      merge (FAST_MODE).
+- [x] Open PR, merge immediately (deploy Action ships the app to Surge).
+- [x] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
+      (bookkeeping on main).
