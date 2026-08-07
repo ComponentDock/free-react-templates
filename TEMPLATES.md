@@ -86,7 +86,7 @@
 - [x] **Transcend** — [colorlib](https://colorlib.com/wp/template/transcend/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/transcend-free-template-1.jpg) · [chroma](https://free-react-templates-chroma.surge.sh)
 - [x] **Unapp** — [colorlib](https://colorlib.com/wp/template/unapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unapp-free-template.jpg) · [blueprint](https://free-react-templates-blueprint.surge.sh)
 - [x] **Webapp** — [colorlib](https://colorlib.com/wp/template/webapp/) · [boost](https://free-react-templates-boost.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webapp-free-template.jpg)
-- [ ] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
+- [~] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
 - [ ] **Zeedapp** — [colorlib](https://colorlib.com/wp/template/zeedapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeedapp-free-template.jpg)
 
 ## Architects (30)
@@ -531,7 +531,7 @@
 - [ ] **Wellspa** — [colorlib](https://colorlib.com/wp/template/wellspa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wellspa-free-template.jpg)
 - [ ] **Wemeet** — [colorlib](https://colorlib.com/wp/template/wemeet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wemeet-free-template.jpg)
 - [ ] **Wines** — [colorlib](https://colorlib.com/wp/template/wines/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wines-free-template.jpg)
-- [ ] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
+- [~] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
 - [ ] **Wordpress Business Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-business-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-business-themes1.jpg)
 - [ ] **Wordpress Dentist Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-dentist-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-wordpress-themes-1.jpg)
 - [ ] **Workout** — [colorlib](https://colorlib.com/wp/template/workout/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workout-free-template.jpg)
@@ -2097,7 +2097,7 @@
 - [ ] **Virtualassistant** — [colorlib](https://colorlib.com/wp/template/virtualassistant/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/virtualassistant-free-template.jpg)
 - [ ] **Watch** — [colorlib](https://colorlib.com/wp/template/watch/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/watch-free-template.jpg)
 - [ ] **Webhost** — [colorlib](https://colorlib.com/wp/template/webhost/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webhost-free-template-1.jpg)
-- [ ] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
+- [~] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
 - [ ] **Wordpress Business Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-business-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-business-themes1.jpg)
 - [ ] **Workshop** — [colorlib](https://colorlib.com/wp/template/workshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workshop-free-template.jpg)
 - [ ] **Yaseen** — [colorlib](https://colorlib.com/wp/template/yaseen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yaseen-creative-photography-website-landing-page-template.jpg)
@@ -2368,7 +2368,7 @@
 - [x] **Unapp** — [colorlib](https://colorlib.com/wp/template/unapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unapp-free-template.jpg) · [blueprint](https://free-react-templates-blueprint.surge.sh)
 - [ ] **Unearth** — [colorlib](https://colorlib.com/wp/template/unearth/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unearth-free-template.jpg)
 - [x] **Webapp** — [colorlib](https://colorlib.com/wp/template/webapp/) · [boost](https://free-react-templates-boost.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webapp-free-template.jpg)
-- [ ] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
+- [~] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
 - [ ] **Workout** — [colorlib](https://colorlib.com/wp/template/workout/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workout-free-template.jpg)
 - [ ] **Zeedapp** — [colorlib](https://colorlib.com/wp/template/zeedapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeedapp-free-template.jpg)
 
@@ -2783,7 +2783,7 @@
 - [ ] **Seo** — [colorlib](https://colorlib.com/wp/template/seo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/seo-free-seo-website-template.jpg)
 - [ ] **Seogo** — [colorlib](https://colorlib.com/wp/template/seogo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/seogo-free-template.jpg)
 - [ ] **Seos** — [colorlib](https://colorlib.com/wp/template/seos/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/seos-free-template.jpg)
-- [ ] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
+- [~] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
 
 ## Sidebar (20)
 
@@ -2861,7 +2861,7 @@
 - [ ] **Startup 2** — [colorlib](https://colorlib.com/wp/template/startup-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/startup2-free-template.jpg)
 - [ ] **Startupbusiness** — [colorlib](https://colorlib.com/wp/template/startupbusiness/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/startupbusiness-free-template.jpg)
 - [ ] **Thestartup** — [colorlib](https://colorlib.com/wp/template/thestartup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thestartup-free-template.jpg)
-- [ ] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
+- [~] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
 
 ## Table (25)
 
