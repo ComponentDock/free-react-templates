@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Maison brand palette — recreated from the ColorLib "Loaft" design
+     (css/style.css): gold #f5ca56 accents + hover #f8b600. */
+  --color-brand: #f5ca56;
+  --color-brand-dark: #f8b600;
+
+  /* Ink — headings (#222222 from the original). */
+  --color-ink: #222222;
+
+  /* Mist — muted body text (#777777 from the original). */
+  --color-mist: #777777;
+
+  /* Paper — light section backgrounds (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Coal — dark footer band (#000410 from the original). */
+  --color-coal: #000410;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand gold. */
+  --color-primary-50: #fdf8e8;
+  --color-primary-100: #fbf0c9;
+  --color-primary-200: #f8e19a;
+  --color-primary-300: #f5ca56;
+  --color-primary-400: #f0b22b;
+  --color-primary-500: #d99a17;
+  --color-primary-600: #b87d12;
+  --color-primary-700: #946113;
+  --color-primary-800: #7a4e16;
+  --color-primary-900: #684118;
+
+  /* Original fonts: "Roboto" (body) + "Rajdhani" (display) via Google
+     Fonts in index.html. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Rajdhani', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
