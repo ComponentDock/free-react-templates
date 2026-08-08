@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Gable brand gold — from the original ColorLib "Kd" preview
+     (css/style.css): #ccb78f accents on dark sections. */
+  --color-brand: #ccb78f;
+
+  /* Deeper gold for hover states. */
+  --color-brand-dark: #b59a68;
+
+  /* Ink — headings and dark text (#212529 from the original). */
+  --color-ink: #212529;
+
+  /* Mist — muted body text (#6c757d from the original). */
+  --color-mist: #6c757d;
+
+  /* Paper — light section backgrounds (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Coal — dark footer/hero background (#000000 from the original). */
+  --color-coal: #000000;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand gold. */
+  --color-primary-50: #faf6ef;
+  --color-primary-100: #f3ead9;
+  --color-primary-200: #e6d4b1;
+  --color-primary-300: #ccb78f;
+  --color-primary-400: #c0a474;
+  --color-primary-500: #b28f58;
+  --color-primary-600: #a17b49;
+  --color-primary-700: #86633e;
+  --color-primary-800: #6e5037;
+  --color-primary-900: #5a432f;
+
+  /* Original fonts: "Work Sans" (display) + "Poppins" (body). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
