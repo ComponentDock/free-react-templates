@@ -119,7 +119,7 @@
 - [x] **Reshape** — [colorlib](https://colorlib.com/wp/template/reshape/) · [Chisel](https://free-react-templates-chisel.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/reshape-free-template.jpg)
 - [x] **Sparsh** — [colorlib](https://colorlib.com/wp/template/sparsh/) · [pinnacle](https://free-react-templates-pinnacle.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sparsh-free-template.jpg)
 - [x] **Square** — [colorlib](https://colorlib.com/wp/template/square/) · [Facet](https://free-react-templates-facet.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/square-free-template.jpg)
-- [~] **Tough** — [colorlib](https://colorlib.com/wp/template/tough/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tough-free-template.jpg)
+- [x] **Tough** — [colorlib](https://colorlib.com/wp/template/tough/) · [bastion](https://free-react-templates-bastion.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tough-free-template.jpg)
 - [ ] **Woodrox** — [colorlib](https://colorlib.com/wp/template/woodrox/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/woodrox-free-template.jpg)
 
 ## Astro (48)
@@ -1983,7 +1983,7 @@
 - [x] **Square** — [colorlib](https://colorlib.com/wp/template/square/) · [Facet](https://free-react-templates-facet.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/square-free-template.jpg)
 - [ ] **Staging** — [colorlib](https://colorlib.com/wp/template/staging/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/staging-free-template.jpg)
 - [ ] **Theinterior** — [colorlib](https://colorlib.com/wp/template/theinterior/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theinterior-free-template.jpg)
-- [~] **Tough** — [colorlib](https://colorlib.com/wp/template/tough/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tough-free-template.jpg)
+- [x] **Tough** — [colorlib](https://colorlib.com/wp/template/tough/) · [bastion](https://free-react-templates-bastion.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tough-free-template.jpg)
 - [ ] **Woodrox** — [colorlib](https://colorlib.com/wp/template/woodrox/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/woodrox-free-template.jpg)
 
 ## Job Board (15)
@@ -2567,7 +2567,7 @@
 - [ ] **Strategy** — [colorlib](https://colorlib.com/wp/template/strategy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/strategy-free-template.jpg)
 - [ ] **Sun** — [colorlib](https://colorlib.com/wp/template/sun/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sun-free-template.jpg)
 - [ ] **Sunzine** — [colorlib](https://colorlib.com/wp/template/sunzine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sunzine-free-template.jpg)
-- [~] **Tough** — [colorlib](https://colorlib.com/wp/template/tough/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tough-free-template.jpg)
+- [x] **Tough** — [colorlib](https://colorlib.com/wp/template/tough/) · [bastion](https://free-react-templates-bastion.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tough-free-template.jpg)
 - [x] **Transcend** — [colorlib](https://colorlib.com/wp/template/transcend/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/transcend-free-template-1.jpg) · [chroma](https://free-react-templates-chroma.surge.sh)
 - [ ] **Tulen** — [colorlib](https://colorlib.com/wp/template/tulen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tulen-free-template.jpg)
 - [ ] **Unfold** — [colorlib](https://colorlib.com/wp/template/unfold/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unfold-free-template.jpeg)
