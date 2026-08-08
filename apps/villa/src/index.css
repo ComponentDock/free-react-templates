@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Villa brand palette — recreated from the ColorLib "Layal" design
+     (css/main.css): sky blue #77d5f7 accents + indigo #3c50ca gradient
+     partner for buttons. */
+  --color-brand: #77d5f7;
+  --color-brand-dark: #3c50ca;
+
+  /* Ink — headings (#222222 from the original). */
+  --color-ink: #222222;
+
+  /* Mist — muted body text (#777777 from the original). */
+  --color-mist: #777777;
+
+  /* Paper — light section backgrounds (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Coal — dark feature band (#000000 from the original). */
+  --color-coal: #000000;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand sky blue. */
+  --color-primary-50: #f0faff;
+  --color-primary-100: #dcf3fd;
+  --color-primary-200: #bceafc;
+  --color-primary-300: #8ddcf8;
+  --color-primary-400: #77d5f7;
+  --color-primary-500: #38b9ec;
+  --color-primary-600: #1b9fd9;
+  --color-primary-700: #1780b0;
+  --color-primary-800: #19698f;
+  --color-primary-900: #1a5776;
+
+  /* Original font: "Poppins" (Google Fonts via index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

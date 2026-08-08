@@ -18,11 +18,12 @@ TypeScript.
   is the visual reference; the design below is reconstructed from the DOM
   structure and CSS tokens.
 - **Section order (1:1):** Navbar (Home, About, Services, Projects,
-  Contact) → Feature ("Becoming A Dvd Repair Expert Online" numbered
-  steps 01/02/03 on a black band) → Services ("Our Offred Services" +
-  "Reasons To Choose Notebook" cards) → Projects ("Our latest Projects"
-  gallery on a dark photo band) → Newsletter ("Subscribe Us" email band)
-  → Footer.
+  Contact) → Hero (banner-area: headline "Design with love", intro
+  paragraph, "Get Started" pill CTA, feature photo) → Feature
+  ("Becoming A Dvd Repair Expert Online" numbered steps 01/02/03 on a
+  black band) → Services ("Our Offred Services" + "Reasons To Choose
+  Notebook" cards) → Projects ("Our latest Projects" gallery on a dark
+  photo band) → Newsletter ("Subscribe Us" email band) → Footer.
 - **Design tokens extracted from `css/main.css`:**
   - Primary **sky blue `#77d5f7`** (accents) + **indigo `#3c50ca`**
     (buttons/gradient partner).
@@ -117,7 +118,7 @@ copyright line.
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
 - **THEN** it SHALL show link columns and a copyright line
-- **AND** it SHALL show social links (GitHub, X, LinkedIn)
+- **AND** it SHALL show social links (Facebook, X, LinkedIn, Instagram)
 
 ### Requirement: Page composition
 
