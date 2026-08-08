@@ -1,4 +1,7 @@
 import { ArrowRight, ShieldCheck } from 'lucide-react'
+import { ButtonLink, cn } from '@free-react-templates/ui'
+
+const trust = ['No credit card required', 'Cancel anytime', '30-day money-back guarantee'] as const
 
 export function CtaBand() {
   return (
@@ -14,33 +17,28 @@ export function CtaBand() {
               today.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <a
+              <ButtonLink
                 href="#signup"
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 font-semibold text-primary-700 shadow-lg transition-opacity hover:opacity-90"
+                className="rounded-xl bg-white px-8 py-4 text-primary-700 shadow-lg hover:bg-white hover:opacity-90"
               >
                 Get Started Free
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </a>
-              <a
+              </ButtonLink>
+              <ButtonLink
                 href="#courses"
-                className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-white/30 px-8 py-4 font-semibold text-white transition-colors hover:bg-white/10"
+                variant="outline"
+                className="rounded-xl border-white/30 bg-transparent px-8 py-4 text-white hover:border-white/30 hover:bg-white/10 hover:text-white"
               >
                 Browse Courses
-              </a>
+              </ButtonLink>
             </div>
             <ul className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm text-primary-100">
-              <li className="flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4" aria-hidden="true" />
-                No credit card required
-              </li>
-              <li className="flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4" aria-hidden="true" />
-                Cancel anytime
-              </li>
-              <li className="flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4" aria-hidden="true" />
-                30-day money-back guarantee
-              </li>
+              {trust.map((item) => (
+                <li key={item} className={cn('flex items-center gap-2')}>
+                  <ShieldCheck className="h-4 w-4" aria-hidden="true" />
+                  {item}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
