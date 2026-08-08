@@ -1,0 +1,90 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Tradewell brand colors — from the ColorLib "Investpro" demo stylesheet
+     (investpro-colorlib.pages.dev/_astro/Base.eMwR1-en.css, Tailwind v4
+     oklch values): primary = blue scale hue 250 (primary-500: oklch(55% .15
+     250), primary-600: oklch(48% .15 250), primary-950: oklch(18% .05 250)
+     for the dark navy security section), accent = green hue 155 (gains /
+     success), danger = red hue 25 (losses in the ticker). */
+  --color-primary-100: #dbe3fb;
+  --color-primary-200: #bccaf9;
+  --color-primary-300: #8fa6f5;
+  --color-primary-400: #5f7ff0;
+  --color-primary-500: #2f6af0;
+  --color-primary-600: #2452d0;
+  --color-primary-700: #1e43ac;
+  --color-primary-800: #1b388b;
+  --color-primary-900: #182f6e;
+  --color-primary-950: #0c1530;
+
+  --color-accent-100: #ccf8e6;
+  --color-accent-200: #9cf0cd;
+  --color-accent-300: #66e3b1;
+  --color-accent-400: #38d495;
+  --color-accent-500: #1cb87a;
+  --color-accent-600: #159564;
+  --color-accent-700: #12784f;
+  --color-accent-900: #0b422e;
+
+  --color-danger-100: #fbdcd6;
+  --color-danger-200: #f7b8ad;
+  --color-danger-300: #f08d7e;
+  --color-danger-400: #e85f4e;
+  --color-danger-500: #d93a2b;
+  --color-danger-600: #b32f24;
+  --color-danger-700: #8f2820;
+
+  /* Original fonts (Google Fonts <link> in index.html): Plus Jakarta Sans
+     for display/headings, Inter for body, JetBrains Mono for numbers. */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Scrolling market ticker: duplicate the quote list and translate -50%
+     for a seamless marquee loop (same technique as the original demo's
+     .ticker-animate, 40s linear). */
+  --animate-ticker: ticker-scroll 40s linear infinite;
+  --animate-pulse-live: pulse-live 2s ease-in-out infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-delayed: float 6s ease-in-out 3s infinite;
+
+  @keyframes ticker-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes pulse-live {
+    0%,
+    to {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes float {
+    0%,
+    to {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
