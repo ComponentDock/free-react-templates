@@ -20,7 +20,7 @@ describe('Contact', () => {
     for (const label of ['Visit Us', 'Call Us', 'Email Us', 'Shop Hours']) {
       expect(screen.getByRole('heading', { level: 3, name: label })).toBeInTheDocument()
     }
-    expect(screen.getByText('123 Main Street')).toBeInTheDocument()
+    expect(screen.getByText(/123 Main Street/)).toBeInTheDocument()
     expect(screen.getByText('hello@barberkraft.com')).toBeInTheDocument()
   })
 

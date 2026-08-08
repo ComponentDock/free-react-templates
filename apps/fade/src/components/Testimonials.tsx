@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     quote:
-      'I tried at least five barbers before finding Fade. Tony understood exactly what I wanted with my hair texture. Finally found my go-to spot.',
+      'I tried at least five barbers before finding Fade. Tony understood exactly what I wanted with my Asian hair texture. Finally found my go-to spot.',
     name: 'Kevin Tran',
     role: 'Client for 2 years',
     initial: 'K',
