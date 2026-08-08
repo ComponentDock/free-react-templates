@@ -28,8 +28,8 @@ describe('Services', () => {
       ['Teen Cut (12-17)', '$30'],
     ]
     for (const [name, price] of expectedServices) {
-      expect(screen.getByText(name)).toBeInTheDocument()
-      expect(screen.getAllByText(price).length).toBeGreaterThan(0)
+      expect(screen.getByText(name!)).toBeInTheDocument()
+      expect(screen.getAllByText(price!).length).toBeGreaterThan(0)
     }
   })
 
