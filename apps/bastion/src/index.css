@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Bastion brand palette — recreated from the ColorLib "Tough"
+     design (css/style.css): primary mint #53d397 (17 refs) /
+     #79efb4 (17 refs), dark canvas #1b212c (22 refs). */
+  --color-brand: #53d397;
+  --color-brand-dark: #3fbf82;
+
+  /* Accent — lighter mint used on hover states. */
+  --color-accent: #79efb4;
+
+  /* Ink — headings (#1b212c from the original). */
+  --color-ink: #1b212c;
+
+  /* Mist — muted body text (#6c757d / #4a5562 from the original). */
+  --color-mist: #6c757d;
+
+  /* Paper — light chip backgrounds (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Charcoal — dark hero/footer background (#1b212c from the original). */
+  --color-charcoal: #1b212c;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand mint. */
+  --color-primary-50: #eefaf3;
+  --color-primary-100: #d5f3e2;
+  --color-primary-200: #aee8c8;
+  --color-primary-300: #7fdaa9;
+  --color-primary-400: #53d397;
+  --color-primary-500: #3fbf82;
+  --color-primary-600: #2ea86e;
+  --color-primary-700: #268a5a;
+  --color-primary-800: #1f6e49;
+  --color-primary-900: #185438;
+
+  /* Original font: Montserrat (Google Fonts link in index.html). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
