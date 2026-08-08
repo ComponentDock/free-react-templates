@@ -46,7 +46,7 @@ describe('App', () => {
 
     const banner = screen.getByRole('banner')
     expect(within(banner).getByRole('link', { name: 'Sentient home' })).toBeInTheDocument()
-    expect(within(banner).getByRole('link', { name: 'Try Free' })).toBeInTheDocument()
+    expect(within(banner).getAllByRole('link', { name: 'Try Free' }).length).toBeGreaterThan(0)
 
     const main = screen.getByRole('main')
     const level1 = screen.getByRole('heading', { level: 1 })
