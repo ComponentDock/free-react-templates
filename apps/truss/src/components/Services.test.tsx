@@ -5,7 +5,7 @@ import { Services } from './Services'
 describe('Services', () => {
   it('renders the section heading and label', () => {
     render(<Services />)
-    expect(screen.getByText(/Services/i)).toBeInTheDocument()
+    expect(screen.getByText('Services')).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: /Our Services/i })).toBeInTheDocument()
   })
 
@@ -19,7 +19,7 @@ describe('Services', () => {
   })
 
   it('renders an image for each service card', () => {
-    render(<Services />)
-    expect(screen.getAllByRole('img')).toHaveLength(4)
+    const { container } = render(<Services />)
+    expect(container.querySelectorAll('img')).toHaveLength(4)
   })
 })

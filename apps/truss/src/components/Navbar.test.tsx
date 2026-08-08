@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { Navbar } from './Navbar'
 
@@ -39,7 +39,8 @@ describe('Navbar', () => {
     const user = userEvent.setup()
     render(<Navbar />)
     await user.click(screen.getByRole('button', { name: /Open menu/i }))
-    await user.click(screen.getByRole('link', { name: /Projects/i }))
+    const mobileNav = screen.getByRole('navigation', { name: /Mobile menu/i })
+    await user.click(within(mobileNav).getByRole('link', { name: /Projects/i }))
     expect(screen.queryByRole('navigation', { name: /Mobile menu/i })).not.toBeInTheDocument()
   })
 })

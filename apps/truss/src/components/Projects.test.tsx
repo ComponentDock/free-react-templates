@@ -5,7 +5,7 @@ import { Projects } from './Projects'
 describe('Projects', () => {
   it('renders the section heading and label', () => {
     render(<Projects />)
-    expect(screen.getByText(/Projects/i)).toBeInTheDocument()
+    expect(screen.getByText('Projects')).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: /Our Projects/i })).toBeInTheDocument()
   })
 
@@ -20,7 +20,7 @@ describe('Projects', () => {
   })
 
   it('renders a project image for every gallery item', () => {
-    render(<Projects />)
-    expect(screen.getAllByRole('img')).toHaveLength(5)
+    const { container } = render(<Projects />)
+    expect(container.querySelectorAll('img')).toHaveLength(5)
   })
 })

@@ -9,7 +9,7 @@ describe('Hero', () => {
     expect(
       screen.getByRole('heading', { level: 1, name: /Creates Smart Architecture\./i }),
     ).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /Read more/i })).toBeInTheDocument()
+    expect(screen.getAllByRole('link', { name: /Read more/i })).toHaveLength(2)
   })
 
   it('renders the three stat counters', () => {
