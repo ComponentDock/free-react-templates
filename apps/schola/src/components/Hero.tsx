@@ -1,4 +1,5 @@
 import { ArrowRight, Award, Clock, PlayCircle, Star } from 'lucide-react'
+import { ButtonLink } from '@free-react-templates/ui'
 
 const stats = [
   { value: '100K+', label: 'Active Learners' },
@@ -32,12 +33,13 @@ export function Hero() {
                 Browse Courses
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </a>
-              <a
+              <ButtonLink
                 href="#pricing"
-                className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-gray-200 bg-white px-7 py-3.5 font-semibold text-gray-700 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-gray-800"
+                variant="outline"
+                className="rounded-xl border-2 border-gray-200 px-7 py-3.5 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-gray-800"
               >
                 View Pricing
-              </a>
+              </ButtonLink>
             </div>
           </div>
 
