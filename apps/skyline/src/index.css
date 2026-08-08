@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Skyline brand red — from the original ColorLib "Dreamrs" preview
+     (css/style.css): #ff3334 buttons, accents, hero overlay. */
+  --color-brand: #ff3334;
+
+  /* Deeper red for hover states. */
+  --color-brand-dark: #e02b2c;
+
+  /* Secondary blue-violet used for link hovers (#415094 from the original). */
+  --color-secondary: #415094;
+
+  /* Ink — headings and dark text. */
+  --color-ink: #2c2c2c;
+
+  /* Mist — muted body text (#999999 from the original). */
+  --color-mist: #999999;
+
+  /* Paper — light section backgrounds (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Lavender — alternating section background (#f0e9ff from the original). */
+  --color-lavender: #f0e9ff;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand red. */
+  --color-primary-50: #feecec;
+  --color-primary-100: #fdcfcf;
+  --color-primary-200: #fb9f9f;
+  --color-primary-300: #f76f70;
+  --color-primary-400: #ff4b4c;
+  --color-primary-500: #ff3334;
+  --color-primary-600: #e02b2c;
+  --color-primary-700: #b82425;
+  --color-primary-800: #8f1e1f;
+  --color-primary-900: #6d1819;
+
+  /* Original font: "Poppins" (Google Fonts). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
