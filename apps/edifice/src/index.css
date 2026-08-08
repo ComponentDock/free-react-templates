@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Edifice brand yellow — from the original ColorLib "Construction"
+     preview (css/main.css): #fab700 buttons, accents, overline labels. */
+  --color-brand: #fab700;
+
+  /* Deeper amber for hover states. */
+  --color-brand-dark: #e6a500;
+
+  /* Ink — headings and dark text (#222222 from the original). */
+  --color-ink: #222222;
+
+  /* Mist — muted body text (#777777 from the original). */
+  --color-mist: #777777;
+
+  /* Paper — light section backgrounds (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Coal — dark CTA/footer background (#1a1a1a from the original). */
+  --color-coal: #1a1a1a;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand yellow. */
+  --color-primary-50: #fefce8;
+  --color-primary-100: #fef9c3;
+  --color-primary-200: #fef08a;
+  --color-primary-300: #fde047;
+  --color-primary-400: #facc15;
+  --color-primary-500: #fab700;
+  --color-primary-600: #d99a00;
+  --color-primary-700: #b57e00;
+  --color-primary-800: #926600;
+  --color-primary-900: #755100;
+
+  /* Original font: "Poppins" (Google Fonts). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
