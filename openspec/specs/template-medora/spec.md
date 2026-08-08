@@ -42,10 +42,11 @@ CSS 4 + TypeScript.
     "QUALITY CARE" + sub-headline "Your Health is our priority." + short
     paragraph + bright blue "LEARN MORE" button; left/right arrow controls
     (carousel);
-  - **quick-access bar**: row of four light-blue boxes with white icons and
-    caps labels — DEPARTMENTS (hospital-building icon), MEDICAL SERVICES
-    (open-book icon), FIND A DOCTOR (doctor-with-stethoscope icon), REQUEST
-    AN APPOINTMENT (calendar/clipboard icon);
+  - **quick-access bar**: a horizontal blue GRADIENT band (left `#0c65ae` →
+    right `#6cb4f2`, pixel-verified from the screenshot) with four tiles of
+    white icons + caps labels + small subtexts — DEPARTMENTS (hospital-building
+    icon), MEDICAL SERVICES (open-book icon), FIND A DOCTOR (doctor-with-
+    stethoscope icon), REQUEST AN APPOINTMENT (calendar/clipboard icon);
   - **Welcome section** (white): "WELCOME TO MEDICUS CLINIC" heading +
     paragraph on the left ("We've built a long standing relationship based on
     trust..."), photo of a modern multi-story medical building with trees on
@@ -84,7 +85,7 @@ CSS 4 + TypeScript.
 | Ink                 | `#111827`                                                                                  | headings on light sections                                                            |
 | Body text           | `#374151`                                                                                  | paragraphs                                                                            |
 | Secondary grey      | `#4b5563`                                                                                  | meta / small text                                                                     |
-| Light blue boxes    | `#e8f1fb`–`#dbe9fa` (approx. from screenshot's four feature boxes)                         | quick-access feature bar tiles                                                        |
+| Quick-access band   | horizontal blue gradient `#0c65ae` → `#6cb4f2` (pixel-verified from screenshot)            | feature tiles: white icons, caps labels, small subtexts                               |
 | Utility bar bg      | `#f5f6f7` (light grey, approx. from screenshot)                                            | top bar                                                                               |
 | White               | `#ffffff`                                                                                  | header, page bg, hero caption text, feature-box icons                                 |
 | Hero overlay        | dark semi-transparent (rgba ~`0,0,0,0.55` over photo)                                      | hero caption box                                                                      |
@@ -217,11 +218,13 @@ labels linking to their sections.
 
 - **GIVEN** the feature bar is displayed
 - **WHEN** the tiles are rendered
-- **THEN** they SHALL appear as a four-column row of light-blue tiles
-- **AND** each tile SHALL show a white line icon and a caps label
-  (Departments, Medical Services, Find a Doctor, Request an Appointment)
+- **THEN** they SHALL appear as a four-column row of tiles on a blue
+  gradient band (`#0c65ae` → `#6cb4f2`)
+- **AND** each tile SHALL show a white line icon, a caps label
+  (Departments, Medical Services, Find a Doctor, Request an Appointment),
+  and a short subtext
 - **AND** each tile SHALL anchor-scroll to its target section
-- **AND** hovering a tile SHALL fill it with the brand blue `#1a73e8`
+- **AND** hovering a tile SHALL darken it slightly (black overlay)
 
 ### Requirement: Welcome section
 
@@ -339,6 +342,6 @@ credit link.
 - [ ] `"homepage": "https://free-react-templates-medora.surge.sh"`
       in `apps/medora/package.json`
 - [ ] PR title: `feat: Medora — medical clinic website template (ColorLib
-    Medical Wordpress Themes)`; body includes the source URL, the
+  Medical Wordpress Themes)`; body includes the source URL, the
       double-redirect note (roundup article), the 404 preview URL, tokens,
       and the three-copy TEMPLATES.md note

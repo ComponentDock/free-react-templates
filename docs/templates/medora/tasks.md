@@ -34,9 +34,10 @@ Shows the "HealthFlex" medical clinic WordPress theme demo:
   (blurred female colleague in blue scrubs behind); dark semi-transparent
   overlay box right: "QUALITY CARE" + "Your Health is our priority." +
   paragraph + blue "LEARN MORE" button; left/right carousel arrows
-- quick-access bar: 4 light-blue tiles with white icons — DEPARTMENTS
-  (building), MEDICAL SERVICES (open book), FIND A DOCTOR (stethoscope),
-  REQUEST AN APPOINTMENT (calendar)
+- quick-access bar: horizontal blue GRADIENT band (left `#0c65ae` → right
+  `#6cb4f2`, pixel-verified) with 4 tiles — white icons + caps labels +
+  subtexts: DEPARTMENTS (building), MEDICAL SERVICES (open book), FIND A
+  DOCTOR (stethoscope), REQUEST AN APPOINTMENT (calendar)
 - Welcome section (white): "WELCOME TO MEDICUS CLINIC" + paragraph left,
   multi-story clinic building photo right
 - "Modern Medical Facilities" section: text left, building photo right
@@ -58,7 +59,9 @@ recreated; the entry list informs the Departments/Services cards.
 - accent `#1a73e8` (`--wpex-accent`), accent-alt `#1464cc`
   (`--wpex-accent-alt`), body 16px system sans-serif, no Google Font import
 - grays `#111827` (ink), `#374151` (body), `#4b5563` (meta)
-- light-blue feature tiles ≈ `#e8f1fb`–`#dbe9fa`; utility bar ≈ `#f5f6f7`
+- light-blue feature tiles ≈ `#e8f1fb`–`#dbe9fa` (CORRECTED by implementer:
+  the screenshot band is a solid blue gradient `#0c65ae` → `#6cb4f2`);
+  utility bar ≈ `#f5f6f7`
 - primary button: solid `#1a73e8`, white text, radius ~4px, bold caps;
   hover → `#1464cc`
 - hero caption: dark overlay (rgba ~0,0,0,.55) over photo, white text
@@ -74,9 +77,9 @@ recreated; the entry list informs the Departments/Services cards.
    caption box right: "Quality Care" + "Your Health Is Our Priority." +
    paragraph + blue "Learn More" (→ departments); hover `#1464cc`. Carousel
    arrows optional — single slide is fine.
-4. **FeatureBar** — 4 light-blue tiles (Departments / Medical Services /
-   Find a Doctor / Request an Appointment) with white lucide icons,
-   anchor-scroll, hover → `#1a73e8`.
+4. **FeatureBar** — blue gradient band (`#0c65ae` → `#6cb4f2`) with 4 tiles
+   (Departments / Medical Services / Find a Doctor / Request an Appointment),
+   white lucide icons + subtexts, anchor-scroll, hover → black overlay.
 5. **Welcome** — "Welcome to Medora Clinic" + 2 paragraphs left, building
    photo right (picsum `medora-2`).
 6. **Departments** — "Our Departments" 3-col grid, 6 cards (Cardiology,
