@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Congregate brand palette — recreated from the ColorLib "Hopefoundation"
+     design. The primary scale IS the warm amber brand color (#f59e0b) so the
+     shared packages/ui Button/ButtonLink render in brand amber, and the
+     charcoal neutral scale + cream tint drive the light/dark section rhythm. */
+  --color-primary-50: #fffbeb;
+  --color-primary-100: #fef3c7;
+  --color-primary-200: #fde68a;
+  --color-primary-300: #fcd34d;
+  --color-primary-400: #fbbf24;
+  --color-primary-500: #f59e0b;
+  --color-primary-600: #d97706;
+  --color-primary-700: #b45309;
+  --color-primary-800: #92400e;
+  --color-primary-900: #78350f;
+
+  /* Custom charcoal neutral scale (light section bg → near-black surfaces) */
+  --color-charcoal-50: #f7f7f7;
+  --color-charcoal-100: #e3e3e3;
+  --color-charcoal-200: #c8c8c8;
+  --color-charcoal-300: #a4a4a4;
+  --color-charcoal-400: #818181;
+  --color-charcoal-500: #666;
+  --color-charcoal-600: #515151;
+  --color-charcoal-700: #434343;
+  --color-charcoal-800: #383838;
+  --color-charcoal-900: #1a1a1a;
+
+  /* Warm cream tint for alternating light sections */
+  --color-cream-50: #fefdfb;
+
+  /* Outfit (300–800) — the original's font, via Google Fonts <link> */
+  --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+}
