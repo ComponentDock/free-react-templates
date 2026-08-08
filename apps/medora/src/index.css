@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Medora brand palette — recreated from the ColorLib "Medical
+     Wordpress Themes" screenshot (HealthFlex demo): brand blue #1a73e8,
+     accent-alt #1464cc (from the source roundup page CSS vars
+     --wpex-accent / --wpex-accent-alt). */
+  --color-brand: #1a73e8;
+  --color-brand-dark: #1464cc;
+  --color-brand-50: #eef4fc;
+  --color-brand-100: #d9e8fa;
+
+  /* Ink — headings (#111827 from the source page CSS). */
+  --color-ink: #111827;
+
+  /* Body — paragraph text (#374151 from the source page CSS). */
+  --color-body: #374151;
+
+  /* Mist — muted / meta text (#4b5563 from the source page CSS). */
+  --color-mist: #4b5563;
+
+  /* Paper — utility bar + light section backgrounds (#f5f6f7). */
+  --color-paper: #f5f6f7;
+
+  /* Charcoal — dark navy footer. */
+  --color-charcoal: #0f1b2d;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand blue (#1a73e8) with the #1464cc hover. */
+  --color-primary-50: #eef4fc;
+  --color-primary-100: #d9e8fa;
+  --color-primary-200: #b0d1f5;
+  --color-primary-300: #83b8f0;
+  --color-primary-400: #4d9ceb;
+  --color-primary-500: #2a86e9;
+  --color-primary-600: #1a73e8;
+  --color-primary-700: #1464cc;
+  --color-primary-800: #1152a8;
+  --color-primary-900: #0e4186;
+
+  /* Original uses a system sans-serif stack (no Google Font import). */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Keep anchored sections clear of the sticky header. */
+    scroll-padding-top: 4.5rem;
+  }
+}
