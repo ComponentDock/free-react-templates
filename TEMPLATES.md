@@ -125,7 +125,7 @@
 ## Astro (48)
 
 - [x] **Academix** — [colorlib](https://colorlib.com/wp/template/academix/) · [schola](https://free-react-templates-schola.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academix-template-1770211029932.jpg)
-- [ ] **Agentforge** — [colorlib](https://colorlib.com/wp/template/agentforge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agentforge-template-1771944000058.jpg)
+- [~] **Agentforge** — [colorlib](https://colorlib.com/wp/template/agentforge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agentforge-template-1771944000058.jpg)
 - [ ] **Ai Summit** — [colorlib](https://colorlib.com/wp/template/ai-summit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aisummit-template-1770211095695.jpg)
 - [ ] **Alex Rivera** — [colorlib](https://colorlib.com/wp/template/alex-rivera/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alexrivera-template-1771943723675.jpg)
 - [ ] **Apiforge** — [colorlib](https://colorlib.com/wp/template/apiforge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apiforge-template-1771944059634.jpg)
@@ -2845,7 +2845,7 @@
 
 ## Startup (17)
 
-- [ ] **Agentforge** — [colorlib](https://colorlib.com/wp/template/agentforge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agentforge-template-1771944000058.jpg)
+- [~] **Agentforge** — [colorlib](https://colorlib.com/wp/template/agentforge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agentforge-template-1771944000058.jpg)
 - [ ] **Apiforge** — [colorlib](https://colorlib.com/wp/template/apiforge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apiforge-template-1771944059634.jpg)
 - [ ] **Appru** — [colorlib](https://colorlib.com/wp/template/appru/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appru-free-template.jpg)
 - [ ] **Bueno** — [colorlib](https://colorlib.com/wp/template/bueno/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bueno-free-template.jpg)
@@ -2894,7 +2894,7 @@
 ## Tailwind Css (48)
 
 - [x] **Academix** — [colorlib](https://colorlib.com/wp/template/academix/) · [schola](https://free-react-templates-schola.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academix-template-1770211029932.jpg)
-- [ ] **Agentforge** — [colorlib](https://colorlib.com/wp/template/agentforge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agentforge-template-1771944000058.jpg)
+- [~] **Agentforge** — [colorlib](https://colorlib.com/wp/template/agentforge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agentforge-template-1771944000058.jpg)
 - [ ] **Ai Summit** — [colorlib](https://colorlib.com/wp/template/ai-summit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aisummit-template-1770211095695.jpg)
 - [ ] **Alex Rivera** — [colorlib](https://colorlib.com/wp/template/alex-rivera/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alexrivera-template-1771943723675.jpg)
 - [ ] **Apiforge** — [colorlib](https://colorlib.com/wp/template/apiforge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apiforge-template-1771944059634.jpg)
