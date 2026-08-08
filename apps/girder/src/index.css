@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Girder brand red — from the original ColorLib "Constructed" preview
+     (css/style.css): #eb1c24 buttons, eyebrow labels, "Learn more" links. */
+  --color-brand: #eb1c24;
+
+  /* Deeper red for hover states. */
+  --color-brand-dark: #ee3e45;
+
+  /* Ink — headings and dark text (#212529 from the original). */
+  --color-ink: #212529;
+
+  /* Mist — muted body text (#6c757d from the original). */
+  --color-mist: #6c757d;
+
+  /* Paper — light section backgrounds (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Coal — dark CTA/footer background (#252837 from the original). */
+  --color-coal: #252837;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand red. */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fde3e3;
+  --color-primary-200: #fbcccc;
+  --color-primary-300: #f7a6a6;
+  --color-primary-400: #f07272;
+  --color-primary-500: #eb1c24;
+  --color-primary-600: #d6141c;
+  --color-primary-700: #b31218;
+  --color-primary-800: #941318;
+  --color-primary-900: #7a151a;
+
+  /* Original fonts: "Roboto" (body) + "Montserrat" (display headings). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
