@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { act, render, screen } from '@testing-library/react'
 import { Reveal } from './Reveal'
 
 class MockIntersectionObserver {
@@ -69,7 +69,9 @@ describe('Reveal', () => {
     expect(wrapper).toHaveClass('opacity-0')
     expect(MockIntersectionObserver.instances).toHaveLength(1)
 
-    MockIntersectionObserver.instances[0]!.trigger(true)
+    act(() => {
+      MockIntersectionObserver.instances[0]!.trigger(true)
+    })
     expect(wrapper).toHaveClass('opacity-100')
 
     const { unmount } = render(<Reveal />)
