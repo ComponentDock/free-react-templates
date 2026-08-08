@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Mint brand teal — from the original ColorLib "Interior Design"
+     preview (css/style.css): #98ccd3 buttons, accents, overlays. */
+  --color-brand: #98ccd3;
+
+  /* Deeper teal for hover states. */
+  --color-brand-dark: #7dbfc8;
+
+  /* Ink — headings and dark text (#212529 from the original). */
+  --color-ink: #212529;
+
+  /* Mist — muted body text (#6c757d from the original). */
+  --color-mist: #6c757d;
+
+  /* Paper — light section backgrounds (#edf0f5 from the original). */
+  --color-paper: #edf0f5;
+
+  /* Coal — dark footer background (#212529 from the original). */
+  --color-coal: #212529;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand teal. */
+  --color-primary-50: #f0f9fa;
+  --color-primary-100: #d9f0f2;
+  --color-primary-200: #b6e2e6;
+  --color-primary-300: #98ccd3;
+  --color-primary-400: #6fb3bd;
+  --color-primary-500: #559aa6;
+  --color-primary-600: #447e89;
+  --color-primary-700: #3a6871;
+  --color-primary-800: #33565d;
+  --color-primary-900: #2e484f;
+
+  /* Original font: "Nunito Sans" (body + display). */
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
