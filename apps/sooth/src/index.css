@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Sooth brand palette — recreated from the ColorLib "Serenite" design.
+     The primary scale IS the rose brand color (#e11d48) used for pill
+     buttons, links, the headline accent and feature icons. */
+  --color-primary-50: #fff1f2;
+  --color-primary-100: #ffe4e6;
+  --color-primary-200: #fecdd3;
+  --color-primary-300: #fda4af;
+  --color-primary-400: #fb7185;
+  --color-primary-500: #f43f5e;
+  --color-primary-600: #e11d48;
+  --color-primary-700: #be123c;
+  --color-primary-800: #9f1239;
+  --color-primary-900: #881337;
+  --color-primary-950: #4c0519;
+
+  /* Gold accent — hairline dividers, star ratings, gradient stops */
+  --color-accent-100: #fef3c7;
+  --color-accent-200: #fde68a;
+  --color-accent-300: #fcd34d;
+  --color-accent-400: #fbbf24;
+  --color-accent-500: #f59e0b;
+  --color-accent-600: #d97706;
+  --color-accent-700: #b45309;
+
+  /* Body font — the original's Google Fonts pairing (Lora serif body) */
+  --font-sans: 'Lora', ui-serif, Georgia, serif;
+
+  /* Display font — Playfair Display for headings */
+  --font-heading: 'Playfair Display', Georgia, serif;
+
+  /* Soft card shadows from the demo stylesheet */
+  --shadow-soft: 0 4px 16px -4px rgb(0 0 0 / 0.1);
+  --shadow-soft-lg: 0 12px 32px -8px rgb(0 0 0 / 0.16);
+}
+
+/* Rose → gold gradient text (hero accent phrase, from the demo's
+   .text-gradient: #f43f5e → #f59e0b) */
+.text-gradient {
+  background-image: linear-gradient(90deg, #f43f5e, #f59e0b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
