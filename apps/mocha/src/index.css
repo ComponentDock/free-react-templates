@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Mocha brand colors — from the ColorLib "Brewhouse" demo stylesheet
+     (_astro/Base.*.css): brand brown #846358 (buttons/accents, hover
+     #6f574d), cream surfaces #fdf8f6/#f2e8e5/#eaddd7, deep brown #4a3b34
+     (primary-900 dark sections), light mocha tints #d2bab0/#e0cec7,
+     amber #eab308/#facc15 (Popular/Bestseller badges, star ratings),
+     dark surfaces #030712/#111827/#1f2937. */
+  --color-primary-50: #fdf8f6;
+  --color-primary-100: #f2e8e5;
+  --color-primary-200: #eaddd7;
+  --color-primary-300: #e0cec7;
+  --color-primary-400: #d2bab0;
+  --color-primary-500: #a18072;
+  --color-primary-600: #846358;
+  --color-primary-700: #6f574d;
+  --color-primary-800: #5c4a41;
+  --color-primary-900: #4a3b34;
+  --color-primary-950: #362b26;
+
+  /* Original fonts: "Playfair Display" (display) + "DM Sans" (body) via
+     Google Fonts <link> in index.html. */
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
