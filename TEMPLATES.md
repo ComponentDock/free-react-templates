@@ -100,7 +100,7 @@
 - [x] **Arclabs** — [colorlib](https://colorlib.com/wp/template/arclabs/) · [Facade](https://free-react-templates-facade.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/arclabs-free-template.jpg)
 - [x] **Astral** — [colorlib](https://colorlib.com/wp/template/astral/) · [masonry](https://free-react-templates-masonry.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/astral-free-template.jpg)
 - [x] **Belara** — [colorlib](https://colorlib.com/wp/template/belara/) · [abode](https://free-react-templates-abode.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/belara-colorlib-template.jpg)
-- [ ] **Buildarch** — [colorlib](https://colorlib.com/wp/template/buildarch/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildarch-free-template.jpg)
+- [~] **Buildarch** — [colorlib](https://colorlib.com/wp/template/buildarch/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildarch-free-template.jpg)
 - [ ] **Constructed** — [colorlib](https://colorlib.com/wp/template/constructed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/constructed-free-template.jpg)
 - [ ] **Construction** — [colorlib](https://colorlib.com/wp/template/construction/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/construction-free-construction-website-template.jpg)
 - [ ] **Dreamrs** — [colorlib](https://colorlib.com/wp/template/dreamrs/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dreamrs-free-template.jpg)
