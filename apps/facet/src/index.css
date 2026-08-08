@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Facet brand palette — recreated from the ColorLib "Square"
+     design (css/style.css): primary green #2e9e5b (55 refs), accent
+     yellow #fdb72c (21 refs). */
+  --color-brand: #2e9e5b;
+  --color-brand-dark: #268a4f;
+
+  /* Accent — yellow #fdb72c from the original. */
+  --color-accent: #fdb72c;
+
+  /* Ink — headings (#000000 from the original). */
+  --color-ink: #000000;
+
+  /* Mist — muted body text (#8f8f8f / #6c757d from the original). */
+  --color-mist: #6c757d;
+
+  /* Paper — light chip backgrounds (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Charcoal — dark footer (#212529 from the original). */
+  --color-charcoal: #212529;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand green. */
+  --color-primary-50: #eef8f1;
+  --color-primary-100: #d7efe0;
+  --color-primary-200: #aedec1;
+  --color-primary-300: #7fd29d;
+  --color-primary-400: #4db878;
+  --color-primary-500: #2e9e5b;
+  --color-primary-600: #268a4f;
+  --color-primary-700: #1f7042;
+  --color-primary-800: #185834;
+  --color-primary-900: #114125;
+
+  /* Original font: Rubik (Google Fonts link in index.html). */
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

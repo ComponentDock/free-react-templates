@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pinnacle brand palette — recreated from the ColorLib "Sparsh"
+     design (css/style.css): primary yellow #f9cc41 (71 refs), dark
+     navy #262533 (25 refs), light background #f9f9ff, muted gray
+     #8f8f8f. */
+  --color-brand: #f9cc41;
+  --color-brand-dark: #e2b62a;
+
+  /* Ink — dark navy headings/buttons (#262533 from the original). */
+  --color-ink: #262533;
+
+  /* Mist — muted body text (#8f8f8f from the original). */
+  --color-mist: #8f8f8f;
+
+  /* Paper — light section background (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Night — dark section background (#262533 hero/footer base). */
+  --color-night: #262533;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand yellow. */
+  --color-primary-50: #fef9e7;
+  --color-primary-100: #fdf0c4;
+  --color-primary-200: #fbe28e;
+  --color-primary-300: #f9d455;
+  --color-primary-400: #f9cc41;
+  --color-primary-500: #f0b91f;
+  --color-primary-600: #d9a312;
+  --color-primary-700: #b5840e;
+  --color-primary-800: #8f680c;
+  --color-primary-900: #6b4d09;
+
+  /* Original fonts: Oswald (display) + Roboto (body) via Google Fonts
+     link in index.html. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
