@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Rafter brand palette — recreated from the ColorLib "Woodrox"
+     design (css/style.css): primary yellow #faba00 (50 refs),
+     dark ink #222222 (44 refs). */
+  --color-brand: #faba00;
+  --color-brand-dark: #d89f00;
+
+  /* Accent — brighter yellow used on hover states. */
+  --color-accent: #ffc93c;
+
+  /* Ink — headings & footer (#222222 from the original). */
+  --color-ink: #222222;
+
+  /* Mist — muted body text (#777777 from the original). */
+  --color-mist: #777777;
+
+  /* Paper — light chip backgrounds (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Charcoal — dark hero/footer background (#222222 from the original). */
+  --color-charcoal: #222222;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand yellow. */
+  --color-primary-50: #fffbea;
+  --color-primary-100: #fff3c4;
+  --color-primary-200: #ffe685;
+  --color-primary-300: #ffd43d;
+  --color-primary-400: #faba00;
+  --color-primary-500: #e0a800;
+  --color-primary-600: #c28e00;
+  --color-primary-700: #9a7200;
+  --color-primary-800: #7a5a00;
+  --color-primary-900: #5c4400;
+
+  /* Original fonts: Heebo (display) + Roboto (body) via Google Fonts
+     link in index.html. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Heebo', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
