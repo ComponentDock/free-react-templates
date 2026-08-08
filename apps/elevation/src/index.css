@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Elevation brand lime — from the original ColorLib "Buildarch" preview
+     (css/style.css): #a7cb00 buttons, feature icons, link hovers. */
+  --color-brand: #a7cb00;
+
+  /* Deeper lime for hover states. */
+  --color-brand-dark: #8fae00;
+
+  /* Sun — secondary yellow accent (#f8b600 from the original). */
+  --color-sun: #f8b600;
+
+  /* Ink — headings and dark text (#000 from the original). */
+  --color-ink: #000000;
+
+  /* Mist — muted body text (#777777 from the original). */
+  --color-mist: #777777;
+
+  /* Paper — light section backgrounds (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Coal — footer background (#000410 from the original). */
+  --color-coal: #000410;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand lime. */
+  --color-primary-50: #fbfee6;
+  --color-primary-100: #f4fcc0;
+  --color-primary-200: #e8f886;
+  --color-primary-300: #d7ee42;
+  --color-primary-400: #c2dc12;
+  --color-primary-500: #a7cb00;
+  --color-primary-600: #8fae00;
+  --color-primary-700: #6b8202;
+  --color-primary-800: #556708;
+  --color-primary-900: #48570c;
+
+  /* Original fonts: "Roboto" (body + headings) + "Heebo" (display). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Heebo', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
