@@ -120,7 +120,7 @@
 - [x] **Sparsh** — [colorlib](https://colorlib.com/wp/template/sparsh/) · [pinnacle](https://free-react-templates-pinnacle.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sparsh-free-template.jpg)
 - [x] **Square** — [colorlib](https://colorlib.com/wp/template/square/) · [Facet](https://free-react-templates-facet.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/square-free-template.jpg)
 - [x] **Tough** — [colorlib](https://colorlib.com/wp/template/tough/) · [bastion](https://free-react-templates-bastion.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tough-free-template.jpg)
-- [~] **Woodrox** — [colorlib](https://colorlib.com/wp/template/woodrox/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/woodrox-free-template.jpg)
+- [x] **Woodrox** — [colorlib](https://colorlib.com/wp/template/woodrox/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/woodrox-free-template.jpg) · [rafter](https://free-react-templates-rafter.surge.sh)
 
 ## Astro (48)
 
@@ -1984,7 +1984,7 @@
 - [ ] **Staging** — [colorlib](https://colorlib.com/wp/template/staging/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/staging-free-template.jpg)
 - [ ] **Theinterior** — [colorlib](https://colorlib.com/wp/template/theinterior/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theinterior-free-template.jpg)
 - [x] **Tough** — [colorlib](https://colorlib.com/wp/template/tough/) · [bastion](https://free-react-templates-bastion.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tough-free-template.jpg)
-- [~] **Woodrox** — [colorlib](https://colorlib.com/wp/template/woodrox/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/woodrox-free-template.jpg)
+- [x] **Woodrox** — [colorlib](https://colorlib.com/wp/template/woodrox/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/woodrox-free-template.jpg) · [rafter](https://free-react-templates-rafter.surge.sh)
 
 ## Job Board (15)
 
