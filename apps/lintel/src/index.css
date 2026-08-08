@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Lintel brand palette — recreated from the ColorLib "Marga" design
+     (css/style.css): teal #43ab92 accents (21 references). Hover shade
+     #36907b approximates Bootstrap's 7.5% darken of the primary. */
+  --color-brand: #43ab92;
+  --color-brand-dark: #36907b;
+
+  /* Ink — headings (#000 / #212529 from the original). */
+  --color-ink: #212529;
+
+  /* Mist — muted body text (#666666 from the original). */
+  --color-mist: #666666;
+
+  /* Paper — light section backgrounds (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Coal — footer band (#c9ccd4 from the original). */
+  --color-coal: #c9ccd4;
+
+  /* Slate — dark accent (#364d59 from the original). */
+  --color-slate: #364d59;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand teal. */
+  --color-primary-50: #effaf7;
+  --color-primary-100: #d7f2ea;
+  --color-primary-200: #b3e4d6;
+  --color-primary-300: #85d1bd;
+  --color-primary-400: #5cbda5;
+  --color-primary-500: #43ab92;
+  --color-primary-600: #36907b;
+  --color-primary-700: #2d7464;
+  --color-primary-800: #285d52;
+  --color-primary-900: #234d45;
+
+  /* Original font: "DM Sans" (Google Fonts, linked in index.html). */
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
