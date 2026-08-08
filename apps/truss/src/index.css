@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Truss brand orange — from the original ColorLib "Kraft" preview
+     (css/style.min.css): #ff5200 buttons, links, active nav, stat
+     numbers, logo dot. */
+  --color-brand: #ff5200;
+
+  /* Slightly lighter orange for hover states (#ff6014 from the original). */
+  --color-brand-hover: #ff6014;
+
+  /* Ink — headings and primary text (#000000 from the original). */
+  --color-ink: #000000;
+
+  /* Mist — muted body text (#888 from the original footer, #333 body). */
+  --color-mist: #888888;
+
+  /* Faint — small uppercase section labels (#bfbfbf subtext). */
+  --color-faint: #bfbfbf;
+
+  /* Paper — light footer background (#efefef from the original). */
+  --color-paper: #efefef;
+
+  /* Coal — dark surfaces (#000000 from the original). */
+  --color-coal: #000000;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand orange. */
+  --color-primary-50: #fff6f2;
+  --color-primary-100: #ffe9df;
+  --color-primary-200: #ffd0bd;
+  --color-primary-300: #ffab8a;
+  --color-primary-400: #ff7d4d;
+  --color-primary-500: #ff5c1f;
+  --color-primary-600: #ff5200;
+  --color-primary-700: #e04700;
+  --color-primary-800: #b83a00;
+  --color-primary-900: #8f2d00;
+
+  /* Original font: Bootstrap system sans stack — recreated with Inter. */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
