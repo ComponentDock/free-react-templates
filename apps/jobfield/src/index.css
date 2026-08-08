@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Jobfield brand colors — from the ColorLib "HireHub" demo stylesheet
+     (hirehub-colorlib.pages.dev/_astro/Base.Bv7s6dFD.css, Tailwind v4
+     oklch values converted to hex): primary = indigo scale (#4f46e5
+     primary-600 brand / solid buttons, #4338ca primary-700 hover),
+     accent = emerald scale (#10b981 pulse dots, #059669 icon-tile text,
+     #047857 badge text). */
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --color-primary-800: #3730a3;
+  --color-primary-900: #312e81;
+  --color-primary-950: #1e1b4b;
+
+  --color-accent-100: #d1fae5;
+  --color-accent-300: #6ee7b7;
+  --color-accent-400: #34d399;
+  --color-accent-500: #10b981;
+  --color-accent-600: #059669;
+  --color-accent-700: #047857;
+  --color-accent-900: #064e3b;
+
+  /* Original font (Google Fonts <link> in index.html): Inter for everything —
+     headings font-bold/font-extrabold, body font-normal/font-medium. */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  /* Floating decorative circles in the gradient hero (Tailwind v4 keyframes
+     live inside @theme so `animate-hero-float` utilities are generated). */
+  --animate-hero-float: hero-float 8s ease-in-out infinite;
+  --animate-hero-float-reverse: hero-float-reverse 10s ease-in-out infinite;
+
+  @keyframes hero-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-16px);
+    }
+  }
+
+  @keyframes hero-float-reverse {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(14px);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
