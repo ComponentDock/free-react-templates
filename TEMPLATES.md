@@ -109,7 +109,7 @@
 - [x] **Interior** — [colorlib](https://colorlib.com/wp/template/interior/) · [Foyer](https://free-react-templates-foyer.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/interior-free-template-1.jpg)
 - [x] **Interior Design** — [colorlib](https://colorlib.com/wp/template/interior-design/) · [Mint](https://free-react-templates-mint.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/interiordesign-free-template.jpg)
 - [x] **Kd** — [colorlib](https://colorlib.com/wp/template/kd/) · [Gable](https://free-react-templates-gable.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kd-free-template.jpg)
-- [ ] **Kraft** — [colorlib](https://colorlib.com/wp/template/kraft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kraft-free-template.jpg)
+- [~] **Kraft** — [colorlib](https://colorlib.com/wp/template/kraft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kraft-free-template.jpg)
 - [ ] **Layal** — [colorlib](https://colorlib.com/wp/template/layal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/layal-free-interior-design-wwebsite-template.jpg)
 - [ ] **Loaft** — [colorlib](https://colorlib.com/wp/template/loaft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/loaft-free-template.jpg)
 - [ ] **Marga** — [colorlib](https://colorlib.com/wp/template/marga/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/marga-free-template.jpg)
