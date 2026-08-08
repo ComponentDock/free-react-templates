@@ -1,8 +1,8 @@
-# Template: Buildcraft (Astro Template)
+# Template: Parapet (Astro Template)
 
 ## Purpose
 
-Buildcraft is a single-page construction landing template in the
+Parapet is a single-page construction landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Buildcraft" website template design (see TEMPLATES.md), built
 under a different name with the monorepo stack: Vite + React 19 + Tailwind
@@ -28,10 +28,10 @@ CSS 4 + TypeScript.
   - Font: **"Outfit"** (Google Fonts).
   - Rounded cards, pill buttons.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/buildcraft-<n>/<w>/<h>`); icons → lucide-react; no
+  (`picsum.photos/seed/parapet-<n>/<w>/<h>`); icons → lucide-react; no
   assets copied.
 
-Buildcraft lives in `apps/buildcraft` and uses shared components from
+Parapet lives in `apps/parapet` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
 ## Requirements
@@ -39,14 +39,14 @@ Buildcraft lives in `apps/buildcraft` and uses shared components from
 ### Requirement: Navigation bar
 
 The system SHALL render a top navigation bar with the site name
-"Buildcraft", anchor links to the page's sections, and a dark-mode toggle
+"Parapet", anchor links to the page's sections, and a dark-mode toggle
 button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Buildcraft page is rendered
+- **GIVEN** the Parapet page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Buildcraft" and links to Services, Projects, and Contact
+- **THEN** the navbar SHALL show the site name "Parapet" and links to Services, Projects, and Contact
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -108,7 +108,7 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Buildcraft app is rendered
+- **GIVEN** the Parapet app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Buildcraft — Astro Template"
+- **AND** the document title SHALL be "Parapet — Astro Template"
