@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Terracotta brand orange — from the original ColorLib "Heaven" preview
+     (css/style.css): #ff7e00 buttons, eyebrow tags, contact block. */
+  --color-brand: #ff7e00;
+
+  /* Deeper orange for hover states. */
+  --color-brand-dark: #e56f00;
+
+  /* Ink — headings and dark text (#2c2c2c from the original). */
+  --color-ink: #2c2c2c;
+
+  /* Mist — muted body text (#999999 from the original). */
+  --color-mist: #999999;
+
+  /* Paper — light section backgrounds (#f9f9ff / #f0e9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Coal — dark footer background (#242429 from the original). */
+  --color-coal: #242429;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand orange. */
+  --color-primary-50: #fff7ed;
+  --color-primary-100: #ffedd5;
+  --color-primary-200: #fed7aa;
+  --color-primary-300: #fdba74;
+  --color-primary-400: #fb923c;
+  --color-primary-500: #ff7e00;
+  --color-primary-600: #ea6a00;
+  --color-primary-700: #c2570a;
+  --color-primary-800: #9a4610;
+  --color-primary-900: #7c3a12;
+
+  /* Original font: "Poppins" (body + display). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
