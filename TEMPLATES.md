@@ -2903,7 +2903,7 @@
 - [x] **Brewhouse** — [colorlib](https://colorlib.com/wp/template/brewhouse/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brewhouse-template-1770211139958.jpg) · [mocha](https://free-react-templates-mocha.surge.sh)
 - [x] **Brightsmile** — [colorlib](https://colorlib.com/wp/template/brightsmile/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brightsmile-template-1771943701965.jpg) · [dentora](https://free-react-templates-dentora.surge.sh)
 - [x] **Buildcraft** — [colorlib](https://colorlib.com/wp/template/buildcraft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildcraft-template-1771943678540.jpg) · [parapet](https://free-react-templates-parapet.surge.sh)
-- [ ] **Cloudnest** — [colorlib](https://colorlib.com/wp/template/cloudnest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cloudnest-template-1771944017064.jpg)
+- [x] **Cloudnest** — [colorlib](https://colorlib.com/wp/template/cloudnest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cloudnest-template-1771944017064.jpg) · [Stratos](https://free-react-templates-stratos.surge.sh)
 - [x] **Creativex 3** — [colorlib](https://colorlib.com/wp/template/creativex-3/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/creativex-template-1770211073725.jpg) · [kreativ](https://free-react-templates-kreativ.surge.sh)
 - [x] **Elena Voss** — [colorlib](https://colorlib.com/wp/template/elena-voss/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elenavoss-template-1771943801609.jpg) · [shutter](https://free-react-templates-shutter.surge.sh)
 - [ ] **Estatehub** — [colorlib](https://colorlib.com/wp/template/estatehub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/estatehub-template-1770211352442.jpg)
@@ -3047,7 +3047,7 @@
 
 - [ ] **Bhost** — [colorlib](https://colorlib.com/wp/template/bhost/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bhost-free-template.jpg)
 - [ ] **Cloud83** — [colorlib](https://colorlib.com/wp/template/cloud83/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cloud83-free-template.jpg)
-- [ ] **Cloudnest** — [colorlib](https://colorlib.com/wp/template/cloudnest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cloudnest-template-1771944017064.jpg)
+- [x] **Cloudnest** — [colorlib](https://colorlib.com/wp/template/cloudnest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cloudnest-template-1771944017064.jpg) · [Stratos](https://free-react-templates-stratos.surge.sh)
 - [ ] **Cloudtemplate** — [colorlib](https://colorlib.com/wp/template/cloudtemplate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cloudtemplate-free-template.jpg)
 - [ ] **Cohost** — [colorlib](https://colorlib.com/wp/template/cohost/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cohost-free-template.jpg)
 - [ ] **Deerhost** — [colorlib](https://colorlib.com/wp/template/deerhost/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/deerhost-free-template.jpg)
