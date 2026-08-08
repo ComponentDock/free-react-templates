@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Uplift brand palette — recreated from the ColorLib "Hopehand" design.
+     The primary scale IS the emerald brand color (#059669) so the shared
+     packages/ui Button/ButtonLink render in brand emerald, and Tailwind's
+     built-in gray scale drives the light/dark section rhythm. */
+  --color-primary-50: #ecfdf5;
+  --color-primary-100: #d1fae5;
+  --color-primary-200: #a7f3d0;
+  --color-primary-300: #6ee7b7;
+  --color-primary-400: #34d399;
+  --color-primary-500: #10b981;
+  --color-primary-600: #059669;
+  --color-primary-700: #047857;
+  --color-primary-800: #065f46;
+  --color-primary-900: #064e3b;
+
+  /* Warm orange accent — the highlighted word in the hero headline and
+     secondary highlights (accent-500 #f97316). */
+  --color-accent-400: #fb923c;
+  --color-accent-500: #f97316;
+  --color-accent-600: #ea580c;
+
+  /* Manrope (300–800) — the original's font, via Google Fonts <link> */
+  --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+}
