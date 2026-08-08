@@ -95,8 +95,8 @@ export function Hero() {
               </ButtonLink>
               <ButtonLink
                 href="#how-it-works"
-                variant="ghost"
-                className="px-6 py-3 text-base text-gray-300 hover:bg-gray-800/60"
+                variant="outline"
+                className="border-transparent px-6 py-3 text-base text-gray-300 hover:bg-gray-800/60"
               >
                 <Play className="h-4 w-4" aria-hidden="true" />
                 Watch Demo
