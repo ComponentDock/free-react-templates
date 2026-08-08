@@ -1,7 +1,8 @@
-# Academix (Colorlib Academix) — Tasks & Design Notes
+# Schola (Colorlib Academix) — Tasks & Design Notes
 
-> Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
-> Implementation ships later on `feat/template-academix`.
+> Recreation of ColorLib "Academix" (education landing). Prep artifacts were
+> originally written under the source name; the implementer renamed them to
+> the new template name **Schola** (source names are never reused).
 
 ## Design notes (replication findings)
 
@@ -12,43 +13,51 @@
   demo hosted on Cloudflare Pages per the ColorLib preview portal).
 - **Visual design (from DOM + Tailwind classes):** modern education landing
   — light gray neutrals with dark-mode support, DM Sans + Space Grotesk
-  fonts, "Forge Your Future with Expert-Led Courses" hero, course cards, a
-  "Browse by Category" grid (Software Engineering, Creative Design, Digital
-  Marketing, Data & Analytics, Cloud & DevOps, Leadership & Management,
-  Cybersecurity), instructors, and pricing.
+  fonts, teal (#008574) primary + orange (#e65f2a) accent, rounded-2xl
+  cards, gradient CTA with glow.
 - **Structure (1:1, section order):**
-  1. Navbar: Courses, Categories, Instructors, Pricing, About, Sign in,
-     Get Started.
-  2. Hero: "Forge Your Future with Expert-Led Courses" + CTA.
-  3. Courses: "Complete Machine Learning & AI Bootcamp" cards.
-  4. Categories: "Browse by Category" grid.
-  5. Instructors: profile cards.
-  6. Pricing: plans.
-  7. Footer: columns + social + copyright.
+  1. Navbar: geometric logo, Courses, Categories, Instructors, Pricing,
+     About, Sign in, Get Started, dark-mode toggle, mobile menu.
+  2. Hero: "New: AI & Machine Learning Track" badge, H1 "Forge Your Future
+     with Expert-Led Courses", blurb, Browse Courses / View Pricing CTAs,
+     course-card visual, stats strip (100K+ learners, 500+ courses, 95%
+     completion, 4.9 rating).
+  3. Categories: "Browse by Category" — 8 colored icon tiles.
+  4. Featured Courses: 5 course cards with badges, level, instructor,
+     rating, price.
+  5. Features: "Everything You Need to Succeed" — 6 tiles.
+  6. Instructors: "Learn from Industry Leaders" — 5 profiles.
+  7. Testimonials: "What Our Learners Say" — 4 quotes.
+  8. Pricing: "Choose Your Learning Path" — monthly/yearly toggle, Explorer
+     (free), Professional ($39/mo), Enterprise ($79/mo).
+  9. CTA band: "Ready to Start Your Learning Journey?" + trust bullets.
+  10. Footer: 4 link columns + socials + copyright.
 - **Design tokens extracted from the DOM:**
-  - Light gray neutrals (`gray-50/100/900`), dark-mode aware (`dark:`
-    classes); accent category colors (red, pink, cyan, violet tiles).
-  - Fonts: **"DM Sans"** + **"Space Grotesk"** (Google Fonts `<link>`).
-- **Recreation name:** Academix (kept — matches ColorLib name). App folder
-  `apps/academix`, package `@free-react-templates/academix`.
+  - Primary teal scale (primary-500 ≈ `#008574`, oklch(55% .14 180)).
+  - Accent orange (accent-500 ≈ `#e65f2a`, oklch(65% .18 40)).
+  - Gray neutrals, `bg-gray-100/50` section bands, dark-mode aware.
+  - Fonts: **"DM Sans"** (body) + **"Space Grotesk"** (display) via Google
+    Fonts `<link>`.
+- **Recreation name:** Schola (NEW name — the ColorLib source name
+  "Academix" is never reused). App folder `apps/schola`, package
+  `@free-react-templates/schola`.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/academix-<n>/<w>/<h>`); lucide-react icons; DM Sans
-  - Space Grotesk via Google Fonts; repo-standard Navbar (dark-mode toggle)
-  - Footer chrome.
+  (`picsum.photos/seed/schola-<n>/<w>/<h>`); lucide-react icons + inline SVG
+  brand icons; DM Sans + Space Grotesk via Google Fonts; repo-standard
+  Navbar (dark-mode toggle) + Footer chrome.
 - Reuse `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-academix/spec.md` (Gherkin
+- [x] Write `openspec/specs/template-schola/spec.md` (Gherkin
       requirements + scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/academix` (copy the section-rich landing app pattern —
-      Aurora; rename package to `@free-react-templates/academix`).
+- [ ] Create `apps/schola` (copy the section-rich landing app pattern —
+      Synapse; rename package to `@free-react-templates/schola`).
 - [ ] TDD: tests first for each section component; run red.
 - [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
-      spec:validate.
-- [ ] Push `feat/template-academix`, open PR (source template, preview URL,
+- [ ] Per-app gate: `scripts/verify-app.sh schola` + `npm run spec:validate`.
+- [ ] Push `feat/template-schola`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).

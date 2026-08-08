@@ -1,0 +1,77 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Schola brand colors — sampled from the ColorLib "Academix" live demo
+     (academix-colorlib.pages.dev, Astro build): primary teal
+     oklch(55% .14 180) ≈ #008574, accent orange oklch(65% .18 40) ≈
+     #e65f2a, gray neutrals, light gray section bands (gray-100/50). */
+  --color-primary-50: #e6f7f4;
+  --color-primary-100: #c8ede7;
+  --color-primary-200: #97dccf;
+  --color-primary-300: #5fc4b1;
+  --color-primary-400: #2ba892;
+  --color-primary-500: #008574;
+  --color-primary-600: #006f61;
+  --color-primary-700: #005a4f;
+  --color-primary-800: #00463e;
+  --color-primary-900: #003730;
+
+  --color-accent-50: #fdf1eb;
+  --color-accent-100: #fbe0d2;
+  --color-accent-300: #f29762;
+  --color-accent-400: #ee7b3d;
+  --color-accent-500: #e65f2a;
+  --color-accent-600: #c74e1f;
+  --color-accent-700: #a23d18;
+  --color-accent-900: #5c210c;
+
+  /* Ink — headings on light surfaces (gray-900). */
+  --color-ink: #111827;
+
+  /* DM Sans (body) + Space Grotesk (display) via Google Fonts <link> in
+     index.html — the original fonts from the demo stylesheet. */
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Demo utilities (from the Academix demo stylesheet): hover lift for
+   cards and a blurred gradient glow behind primary CTAs. */
+.card-hover {
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+}
+
+.btn-glow {
+  position: relative;
+}
+
+.btn-glow::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--color-primary-500), var(--color-accent-500));
+  filter: blur(12px);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s;
+}
+
+.btn-glow:hover::before {
+  opacity: 0.6;
+}
