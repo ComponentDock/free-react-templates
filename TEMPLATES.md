@@ -139,7 +139,7 @@
 - [x] **Elena Voss** — [colorlib](https://colorlib.com/wp/template/elena-voss/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elenavoss-template-1771943801609.jpg) · [shutter](https://free-react-templates-shutter.surge.sh)
 - [x] **Estatehub** — [colorlib](https://colorlib.com/wp/template/estatehub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/estatehub-template-1770211352442.jpg) · [keyhaven](https://free-react-templates-keyhaven.surge.sh)
 - [x] **Eventor** — [colorlib](https://colorlib.com/wp/template/eventor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventor-template-1770211156837.jpg) · [podium](https://free-react-templates-podium.surge.sh)
-- [ ] **Faithcommunity** — [colorlib](https://colorlib.com/wp/template/faithcommunity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/faithcommunity-template-1770211119687.jpg)
+^- [~] **Faithcommunity** — [colorlib](https://colorlib.com/wp/template/faithcommunity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/faithcommunity-template-1770211119687.jpg)
 - [ ] **Financeflow** — [colorlib](https://colorlib.com/wp/template/financeflow/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/financeflow-template-1770211224122.jpg)
 - [ ] **Flavor 6** — [colorlib](https://colorlib.com/wp/template/flavor-6/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/flavor-template-1770211372273.jpg)
 - [ ] **Forever Always** — [colorlib](https://colorlib.com/wp/template/forever-always/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foreveralways-template-1771943944925.jpg)
