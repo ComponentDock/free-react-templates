@@ -31,4 +31,12 @@ describe('Navbar', () => {
     await user.click(screen.getByRole('button', { name: /Close menu/i }))
     expect(screen.queryByRole('navigation', { name: /Mobile menu/i })).not.toBeInTheDocument()
   })
+
+  it('closes the mobile menu when a link is chosen', async () => {
+    const user = userEvent.setup()
+    render(<Navbar />)
+    await user.click(screen.getByRole('button', { name: /Open menu/i }))
+    await user.click(screen.getByRole('navigation', { name: /Mobile menu/i }).querySelector('a')!)
+    expect(screen.queryByRole('navigation', { name: /Mobile menu/i })).not.toBeInTheDocument()
+  })
 })
