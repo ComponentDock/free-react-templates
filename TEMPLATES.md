@@ -105,7 +105,7 @@
 - [x] **Construction** — [colorlib](https://colorlib.com/wp/template/construction/) · [Edifice](https://free-react-templates-edifice.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/construction-free-construction-website-template.jpg)
 - [x] **Dreamrs** — [colorlib](https://colorlib.com/wp/template/dreamrs/) · [Skyline](https://free-react-templates-skyline.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dreamrs-free-template.jpg)
 - [x] **Heaven** — [colorlib](https://colorlib.com/wp/template/heaven/) · [terracotta](https://free-react-templates-terracotta.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/heaven-free-template.jpg)
-- [ ] **Industrie** — [colorlib](https://colorlib.com/wp/template/industrie/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/industrie-free-template.jpg)
+- [~] **Industrie** — [colorlib](https://colorlib.com/wp/template/industrie/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/industrie-free-template.jpg)
 - [ ] **Interior** — [colorlib](https://colorlib.com/wp/template/interior/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/interior-free-template-1.jpg)
 - [ ] **Interior Design** — [colorlib](https://colorlib.com/wp/template/interior-design/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/interiordesign-free-template.jpg)
 - [ ] **Kd** — [colorlib](https://colorlib.com/wp/template/kd/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kd-free-template.jpg)

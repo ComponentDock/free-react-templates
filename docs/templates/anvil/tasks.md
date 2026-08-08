@@ -1,7 +1,8 @@
-# Industrie (Colorlib Industrie) — Tasks & Design Notes
+# Anvil (ColorLib Industrie) — Tasks & Design Notes
 
-> Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
-> Implementation ships later on `feat/template-industrie`.
+> Prep artifacts prepared on `main` under the ColorLib source name
+> "industrie"; the recreation ships as **Anvil** on `feat/template-industrie`
+> (renamed to `apps/anvil`, package `@free-react-templates/anvil`).
 
 ## Design notes (replication findings)
 
@@ -30,10 +31,11 @@
     `#343a40`; light `#edf0f5`.
   - Fonts: **"Nunito Sans"** (Google Fonts `<link>`) + **"Roboto Mono"**
     (mono accents).
-- **Recreation name:** Industrie (kept — matches ColorLib name). App folder
-  `apps/industrie`, package `@free-react-templates/industrie`.
+- **Recreation name:** Anvil (original name — the ColorLib source name
+  "Industrie" is never reused). App folder `apps/anvil`, package
+  `@free-react-templates/anvil`, surge `free-react-templates-anvil.surge.sh`.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/industrie-<n>/<w>/<h>`); lucide-react icons;
+  (`picsum.photos/seed/anvil-<n>/<w>/<h>`); lucide-react icons;
   Nunito Sans via Google Fonts; forms prevent default (no backend); red
   primary in `@theme`; repo-standard Navbar (dark-mode toggle) + Footer
   chrome.
@@ -41,15 +43,14 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-industrie/spec.md` (Gherkin
+- [x] Write `openspec/specs/template-anvil/spec.md` (Gherkin
       requirements + scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/industrie` (copy the section-rich landing app pattern —
-      Aurora; rename package to `@free-react-templates/industrie`).
+- [x] Create `apps/anvil` (copy the section-rich landing app pattern —
+      Terracotta; rename package to `@free-react-templates/anvil`).
 - [ ] TDD: tests first for each section component; run red.
 - [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
-      spec:validate.
+- [ ] Per-app gate: `bash scripts/verify-app.sh anvil` + spec:validate.
 - [ ] Push `feat/template-industrie`, open PR (source template, preview
       URL, design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
