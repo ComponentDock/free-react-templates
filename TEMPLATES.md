@@ -134,7 +134,7 @@
 - [x] **Brewhouse** — [colorlib](https://colorlib.com/wp/template/brewhouse/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brewhouse-template-1770211139958.jpg) · [mocha](https://free-react-templates-mocha.surge.sh)
 - [x] **Brightsmile** — [colorlib](https://colorlib.com/wp/template/brightsmile/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brightsmile-template-1771943701965.jpg) · [dentora](https://free-react-templates-dentora.surge.sh)
 - [x] **Buildcraft** — [colorlib](https://colorlib.com/wp/template/buildcraft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildcraft-template-1771943678540.jpg) · [parapet](https://free-react-templates-parapet.surge.sh)
-- [ ] **Cloudnest** — [colorlib](https://colorlib.com/wp/template/cloudnest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cloudnest-template-1771944017064.jpg)
+- [~] **Cloudnest** — [colorlib](https://colorlib.com/wp/template/cloudnest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cloudnest-template-1771944017064.jpg)
 - [ ] **Creativex 3** — [colorlib](https://colorlib.com/wp/template/creativex-3/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/creativex-template-1770211073725.jpg)
 - [ ] **Elena Voss** — [colorlib](https://colorlib.com/wp/template/elena-voss/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elenavoss-template-1771943801609.jpg)
 - [ ] **Estatehub** — [colorlib](https://colorlib.com/wp/template/estatehub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/estatehub-template-1770211352442.jpg)
