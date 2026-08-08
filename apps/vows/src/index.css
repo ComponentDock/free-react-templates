@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Vows brand colors — from the ColorLib "Forever Always" demo stylesheet
+     (foreveralways-colorlib.pages.dev/_astro/Base.BBoypNgN.css, Tailwind v4
+     oklch values converted to hex): primary = rose scale
+     (#e11d48 primary-600 buttons/badges/links, #be123c primary-700 hover,
+     #fff1f2 primary-50 hero gradient, #9f1239 primary-800 gradient end). */
+  --color-primary-50: #fff1f2;
+  --color-primary-100: #ffe4e6;
+  --color-primary-200: #fecdd3;
+  --color-primary-300: #fda4af;
+  --color-primary-400: #fb7185;
+  --color-primary-500: #f43f5e;
+  --color-primary-600: #e11d48;
+  --color-primary-700: #be123c;
+  --color-primary-800: #9f1239;
+  --color-primary-900: #881337;
+  --color-primary-950: #82181a;
+
+  /* Original fonts (Google Fonts <link> in index.html): Playfair Display
+     for headings/logo/stat numbers (font-serif), Lora for body/nav/buttons
+     (font-sans). */
+  --font-sans: 'Lora', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Gentle floating motion for the decorative hero blur circles. The `translate`
+   property is used (not `transform`) so the circles keep their layout
+   transforms (e.g. -translate-x-1/2) from Tailwind classes. */
+@keyframes hero-float {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -24px;
+  }
+}
+
+.animate-hero-float {
+  animation: hero-float 8s ease-in-out infinite;
+}
+
+.animate-hero-float-reverse {
+  animation: hero-float 10s ease-in-out infinite reverse;
+}
