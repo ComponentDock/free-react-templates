@@ -156,7 +156,7 @@
 - [x] **Pawpal** — [colorlib](https://colorlib.com/wp/template/pawpal/) · [pawpal](https://free-react-templates-pawpal.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pawpal-template-1770211334322.jpg)
 - [x] **Pipelineiq** · [dealflow](https://free-react-templates-dealflow.surge.sh) — [colorlib](https://colorlib.com/wp/template/pipelineiq/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pipelineiq-template-1771943984801.jpg)
 - [x] **Saasify** — [colorlib](https://colorlib.com/wp/template/saasify/) · [zenith](https://free-react-templates-zenith.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/saasify-template-1770211006733.jpg)
-- [ ] **Serenite** — [colorlib](https://colorlib.com/wp/template/serenite/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/serenite-template-1771943746919.jpg)
+- [~] **Serenite** — [colorlib](https://colorlib.com/wp/template/serenite/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/serenite-template-1771943746919.jpg)
 - [ ] **Serenity** — [colorlib](https://colorlib.com/wp/template/serenity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/serenity-template-1770211390595.jpg)
 - [ ] **Shieldguard** — [colorlib](https://colorlib.com/wp/template/shieldguard/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shieldguard-template-1771943902281.jpg)
 - [ ] **Shieldnet** — [colorlib](https://colorlib.com/wp/template/shieldnet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shieldnet-template-1771944037639.jpg)
