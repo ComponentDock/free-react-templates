@@ -1,8 +1,8 @@
-# Template: Interior (Architecture Template)
+# Template: Foyer (Interior Design Template)
 
 ## Purpose
 
-Interior is a single-page architecture landing template in the
+Foyer is a single-page interior design landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Interior" website template design (see TEMPLATES.md), built
 under a different name with the monorepo stack: Vite + React 19 + Tailwind
@@ -30,24 +30,24 @@ CSS 4 + TypeScript.
   - Font: **"Poppins"** (Google Fonts).
   - Gold buttons with white text.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/interior-<n>/<w>/<h>`); icons → lucide-react; forms
+  (`picsum.photos/seed/foyer-<n>/<w>/<h>`); icons → lucide-react; forms
   prevent default (no backend); no assets copied.
 
-Interior lives in `apps/interior` and uses shared components from
+Foyer lives in `apps/foyer` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Interior",
+The system SHALL render a top navigation bar with the site name "Foyer",
 anchor links to the page's sections, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Interior page is rendered
+- **GIVEN** the Foyer page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Interior" and links to Home, About, Services, and Contact
+- **THEN** the navbar SHALL show the site name "Foyer" and links to Home, About, Services, and Contact
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -134,7 +134,7 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Interior app is rendered
+- **GIVEN** the Foyer app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Interior — Architecture Template"
+- **AND** the document title SHALL be "Foyer — Interior Design Template"
