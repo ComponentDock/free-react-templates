@@ -37,6 +37,10 @@ describe('Pricing', () => {
     expect(screen.getByText('$239')).toBeInTheDocument()
     expect(screen.getByText('billed annually ($468/year)')).toBeInTheDocument()
     expect(screen.getByText('billed annually ($0/year)')).toBeInTheDocument()
+
+    await user.click(toggle)
+    expect(toggle).toHaveAttribute('aria-checked', 'false')
+    expect(screen.getByText('$49')).toBeInTheDocument()
   })
 
   it('lists features for every tier', () => {
