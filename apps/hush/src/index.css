@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Hush brand palette — recreated from the ColorLib "Serenity" design.
+     The primary scale IS the sage/forest green (#4d5b4a) used for pill
+     buttons, logo mark, dark bands and eyebrow accents. */
+  --color-primary-100: #e3e7e2;
+  --color-primary-200: #c6cfc4;
+  --color-primary-300: #a2b09f;
+  --color-primary-400: #7d8f79;
+  --color-primary-500: #63735f;
+  --color-primary-600: #4d5b4a;
+  --color-primary-700: #3f4a3d;
+  --color-primary-800: #363f34;
+  --color-primary-900: #2d332c;
+  --color-primary-950: #1d211c;
+
+  /* Warm stone neutrals — section bands (stone-100), footer / dark bands
+     (stone-900 #594d44), and muted text. */
+  --color-stone-50: #faf9f7;
+  --color-stone-100: #f3f1ec;
+  --color-stone-200: #e6e1d8;
+  --color-stone-300: #d6cfc3;
+  --color-stone-400: #b3a99a;
+  --color-stone-500: #94887a;
+  --color-stone-600: #7a6d60;
+  --color-stone-700: #6c5d51;
+  --color-stone-800: #5c4f45;
+  --color-stone-900: #594d44;
+  --color-stone-950: #3a322b;
+
+  /* Body font — the original's Google Fonts pairing (Inter sans) */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  /* Display font — Cormorant Garamond serif for headings */
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+
+  /* Soft shadows from the demo stylesheet (btn-primary shadow) */
+  --shadow-soft: 0 10px 15px -3px rgb(77 91 74 / 0.2);
+  --shadow-soft-lg: 0 20px 30px -8px rgb(77 91 74 / 0.28);
+}
