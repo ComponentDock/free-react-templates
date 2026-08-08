@@ -1,8 +1,8 @@
-# Template: Industrie (Architecture Template)
+# Template: Anvil (Industrial & Technical Solutions Template)
 
 ## Purpose
 
-Industrie is a single-page architecture landing template in the
+Anvil is a single-page industrial landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Industrie" website template design (see TEMPLATES.md), built
 under a different name with the monorepo stack: Vite + React 19 + Tailwind
@@ -17,36 +17,39 @@ CSS 4 + TypeScript.
   The TEMPLATES.md screenshot (`industrie-free-template.jpg`) is the visual
   reference; the design below is reconstructed from the DOM structure and
   CSS tokens.
-- **Section order (1:1):** Navbar (Home, About, Services, Projects, News,
-  Contact) → Hero ("Industrie / Specialized Technical Solutions" + Get In
-  Touch) → Stats ("Let the number speaks for us." + 7000+, 90+, 2900+
-  counters) → Services ("Our Specialty" + Automative Manufacturing,
-  Mechanical Engineering, Oil & Gas Energy, Industrial Construction) →
-  Projects → Testimonials → Footer.
+- **Section order (1:1):** Navbar (topbar email/phone + Home, About,
+  Services, Projects, News, Contact) → Hero ("Specialized Technical
+  Solutions" + Download / Get In Touch) → Stats ("Let the number speaks for
+  us." + 7000+, 90+, 2900+ counters) → Services ("Our Specialty" +
+  Automative Manufacturing, Mechanical Engineering, Oil & Gas Energy,
+  Industrial Construction) → Grow section ("Let's grow together" checklist
+  - testimonial quote) → Projects ("See Our Video" gallery) → Promo
+    ("Contact us for quotations") → Footer (Company / Navigations / Quick
+    Menu / Europe / USA columns).
 - **Design tokens extracted from `style.css`:**
   - Primary **red `#f23a2e`** (buttons, accents); dark `#25262a`,
-    `#343a40`.
+    `#343a40`; light `#edf0f5`.
   - Fonts: **"Nunito Sans"** (body) + **"Roboto Mono"** / icomoon (icons).
   - Red buttons with white text.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/industrie-<n>/<w>/<h>`); icons → lucide-react; no
+  (`picsum.photos/seed/anvil-<n>/<w>/<h>`); icons → lucide-react; no
   assets copied.
 
-Industrie lives in `apps/industrie` and uses shared components from
+Anvil lives in `apps/anvil` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Industrie",
+The system SHALL render a top navigation bar with the site name "Anvil",
 anchor links to the page's sections, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Industrie page is rendered
+- **GIVEN** the Anvil page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Industrie" and links to Home, About, Services, and Contact
+- **THEN** the navbar SHALL show the site name "Anvil" and links to Home, About, Services, and Contact
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -92,6 +95,18 @@ service cards.
 - **THEN** it SHALL contain a heading "Our Specialty"
 - **AND** it SHALL show at least four service cards with titles (Automative Manufacturing, Mechanical Engineering, Oil & Gas Energy, Industrial Construction) and blurbs
 
+### Requirement: Grow section with testimonial
+
+The system SHALL render a "Let's grow together" section with a checklist
+and a testimonial quote.
+
+#### Scenario: Grow content
+
+- **GIVEN** the page is rendered
+- **WHEN** the grow section is displayed
+- **THEN** it SHALL contain a heading "Let's grow together"
+- **AND** it SHALL show a testimonial quote with an attribution
+
 ### Requirement: Projects section
 
 The system SHALL render a projects section with a heading and a project
@@ -102,6 +117,17 @@ gallery.
 - **GIVEN** the page is rendered
 - **WHEN** the projects section is displayed
 - **THEN** it SHALL show at least three project images with captions
+
+### Requirement: Promo strip
+
+The system SHALL render a promo strip inviting visitors to request a
+quotation.
+
+#### Scenario: Promo content
+
+- **GIVEN** the page is rendered
+- **WHEN** the promo strip is displayed
+- **THEN** it SHALL show "Contact us for quotations" and a contact button
 
 ### Requirement: Footer
 
@@ -122,7 +148,7 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Industrie app is rendered
+- **GIVEN** the Anvil app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Industrie — Architecture Template"
+- **AND** the document title SHALL be "Anvil — Industrial & Technical Solutions Template"

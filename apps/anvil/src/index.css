@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Anvil brand red — from the original ColorLib "Industrie" preview
+     (css/style.css): #f23a2e buttons, accents, form focus. */
+  --color-brand: #f23a2e;
+
+  /* Deeper red for hover states. */
+  --color-brand-dark: #d92a1f;
+
+  /* Ink — headings and dark text (#343a40 / #25262a from the original). */
+  --color-ink: #343a40;
+
+  /* Mist — muted body text (#6c757d from the original). */
+  --color-mist: #6c757d;
+
+  /* Paper — light section backgrounds (#edf0f5 from the original). */
+  --color-paper: #edf0f5;
+
+  /* Coal — dark section background (#25262a from the original). */
+  --color-coal: #25262a;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand red. */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fde4e3;
+  --color-primary-200: #fbcdcb;
+  --color-primary-300: #f7a7a3;
+  --color-primary-400: #f2736d;
+  --color-primary-500: #f23a2e;
+  --color-primary-600: #e02b20;
+  --color-primary-700: #bc2117;
+  --color-primary-800: #9b2018;
+  --color-primary-900: #802019;
+
+  /* Original fonts: "Nunito Sans" (body) + "Roboto Mono" (mono accents). */
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Roboto Mono', ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
