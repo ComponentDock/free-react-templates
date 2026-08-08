@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Blastoff brand palette — recreated from the ColorLib "Launchpad" design.
+     The primary scale IS the indigo brand color (#4f46e5) so the shared
+     packages/ui Button/ButtonLink render in brand indigo, and Tailwind's
+     built-in gray scale drives the light/dark section rhythm. */
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --color-primary-800: #3730a3;
+  --color-primary-900: #312e81;
+
+  /* Manrope (300–800) — the original's font, via Google Fonts <link> */
+  --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+}
