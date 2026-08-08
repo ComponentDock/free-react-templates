@@ -30,7 +30,7 @@ TypeScript.
   1. Navbar: IronForge logo, links About, Programs, Schedule, Trainers,
      Pricing, Blog, Contact, dark-mode toggle, "Join Now" pill button.
   2. Hero (dark gym photo, heavy gradient overlay): badge "Now Open 24/7",
-     H1 "Push Beyond Your Expectations" (two-tone: white + orange), blurb,
+     H1 "Push Beyond Your Limits" (two-tone: white + orange), blurb,
      buttons "Start Free Trial" + "View Programs" + "Watch Demo", stats row
      (5,000+ Members / 50+ Classes/Week / 15+ Expert Trainers / 24/7
      Access).
@@ -48,7 +48,7 @@ TypeScript.
      each with photo + Instagram/Twitter icon links + bio.
   7. Choose Your Plan: monthly/yearly billing toggle ("Save 20%"), 3 tiers
      — Basic, Pro, Elite, each with "Start Free Trial" link.
-  8. Real Results, Real People: testimonial carousel (4 slides, prev/next
+  8. Real Results, Real People: testimonial carousel (6 slides, prev/next
      arrows + slide dots).
   9. Frequently Asked Questions: 5 accordion items — freeze membership,
      personal training, group classes, locker room with showers, bringing a
@@ -119,7 +119,7 @@ a blurb, three CTAs, and a stats row.
 - **GIVEN** the page is rendered
 - **WHEN** the hero is displayed
 - **THEN** it SHALL contain a badge "Now Open 24/7" and a level-1 heading
-  "Push Beyond Your Expectations"
+  "Push Beyond Your Limits"
 - **AND** it SHALL show "Start Free Trial", "View Programs", and
   "Watch Demo" buttons
 - **AND** it SHALL show gym stats including 5,000+ Members and 24/7 Access
