@@ -154,7 +154,7 @@
 - [x] **Logitrans** · [freightly](https://free-react-templates-freightly.surge.sh) — [colorlib](https://colorlib.com/wp/template/logitrans/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logitrans-template-1770211309698.jpg)
 - [x] **Neuralflow** · [sentient](https://free-react-templates-sentient.surge.sh) — [colorlib](https://colorlib.com/wp/template/neuralflow/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/neuralflow-template-1771943830583.jpg)
 - [x] **Pawpal** — [colorlib](https://colorlib.com/wp/template/pawpal/) · [pawpal](https://free-react-templates-pawpal.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pawpal-template-1770211334322.jpg)
-- [ ] **Pipelineiq** — [colorlib](https://colorlib.com/wp/template/pipelineiq/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pipelineiq-template-1771943984801.jpg)
+^- [~] **Pipelineiq** — [colorlib](https://colorlib.com/wp/template/pipelineiq/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pipelineiq-template-1771943984801.jpg)
 - [ ] **Saasify** — [colorlib](https://colorlib.com/wp/template/saasify/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/saasify-template-1770211006733.jpg)
 - [ ] **Serenite** — [colorlib](https://colorlib.com/wp/template/serenite/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/serenite-template-1771943746919.jpg)
 - [ ] **Serenity** — [colorlib](https://colorlib.com/wp/template/serenity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/serenity-template-1770211390595.jpg)
