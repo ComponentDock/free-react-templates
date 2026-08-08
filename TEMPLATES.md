@@ -126,7 +126,7 @@
 
 - [x] **Academix** — [colorlib](https://colorlib.com/wp/template/academix/) · [schola](https://free-react-templates-schola.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academix-template-1770211029932.jpg)
 - [x] **Agentforge** — [colorlib](https://colorlib.com/wp/template/agentforge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agentforge-template-1771944000058.jpg) · [cortex](https://free-react-templates-cortex.surge.sh)
-- [~] **Ai Summit** — [colorlib](https://colorlib.com/wp/template/ai-summit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aisummit-template-1770211095695.jpg)
+- [x] **Ai Summit** — [colorlib](https://colorlib.com/wp/template/ai-summit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aisummit-template-1770211095695.jpg) · [keynote](https://free-react-templates-keynote.surge.sh)
 - [ ] **Alex Rivera** — [colorlib](https://colorlib.com/wp/template/alex-rivera/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alexrivera-template-1771943723675.jpg)
 - [ ] **Apiforge** — [colorlib](https://colorlib.com/wp/template/apiforge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apiforge-template-1771944059634.jpg)
 - [ ] **Atelier** — [colorlib](https://colorlib.com/wp/template/atelier/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/atelier-template.jpg)
@@ -1664,7 +1664,7 @@
 
 - [ ] **Advent** — [colorlib](https://colorlib.com/wp/template/advent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/advent-free-template.jpg)
 - [ ] **Agenda** — [colorlib](https://colorlib.com/wp/template/agenda/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agenda-free-template.jpg)
-- [~] **Ai Summit** — [colorlib](https://colorlib.com/wp/template/ai-summit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aisummit-template-1770211095695.jpg)
+- [x] **Ai Summit** — [colorlib](https://colorlib.com/wp/template/ai-summit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aisummit-template-1770211095695.jpg) · [keynote](https://free-react-templates-keynote.surge.sh)
 - [ ] **Confe** — [colorlib](https://colorlib.com/wp/template/confe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/confe-free-template.jpg)
 - [ ] **Confer** — [colorlib](https://colorlib.com/wp/template/confer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/confer-free-template-1.jpg)
 - [ ] **Conference** — [colorlib](https://colorlib.com/wp/template/conference/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/conference-free-template.jpg)
@@ -2895,7 +2895,7 @@
 
 - [x] **Academix** — [colorlib](https://colorlib.com/wp/template/academix/) · [schola](https://free-react-templates-schola.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academix-template-1770211029932.jpg)
 - [x] **Agentforge** — [colorlib](https://colorlib.com/wp/template/agentforge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agentforge-template-1771944000058.jpg) · [cortex](https://free-react-templates-cortex.surge.sh)
-- [~] **Ai Summit** — [colorlib](https://colorlib.com/wp/template/ai-summit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aisummit-template-1770211095695.jpg)
+- [x] **Ai Summit** — [colorlib](https://colorlib.com/wp/template/ai-summit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aisummit-template-1770211095695.jpg) · [keynote](https://free-react-templates-keynote.surge.sh)
 - [ ] **Alex Rivera** — [colorlib](https://colorlib.com/wp/template/alex-rivera/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alexrivera-template-1771943723675.jpg)
 - [ ] **Apiforge** — [colorlib](https://colorlib.com/wp/template/apiforge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apiforge-template-1771944059634.jpg)
 - [ ] **Atelier** — [colorlib](https://colorlib.com/wp/template/atelier/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/atelier-template.jpg)
