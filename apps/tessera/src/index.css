@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Tessera brand palette — recreated from the ColorLib "Mosaic"
+     design (css/style.css): brand blue #0033c7 (service icon circles,
+     26 color refs), Bootstrap action blue #007bff (buttons, hover
+     #0069d9). */
+  --color-brand: #0033c7;
+  --color-brand-dark: #00299e;
+
+  /* Ink — headings (#212529 from the original). */
+  --color-ink: #212529;
+
+  /* Mist — muted body text (#6c757d from the original). */
+  --color-mist: #6c757d;
+
+  /* Paper — light section backgrounds (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Charcoal — footer background (#141313 from the original). */
+  --color-charcoal: #141313;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the Mosaic action blue (#007bff, hover #0069d9). */
+  --color-primary-50: #e8f1ff;
+  --color-primary-100: #cfe2ff;
+  --color-primary-200: #9dc2ff;
+  --color-primary-300: #66a0ff;
+  --color-primary-400: #3380ff;
+  --color-primary-500: #0f63f2;
+  --color-primary-600: #007bff;
+  --color-primary-700: #0069d9;
+  --color-primary-800: #0052a3;
+  --color-primary-900: #00337a;
+
+  /* Original font: Poppins (Google Fonts link in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
