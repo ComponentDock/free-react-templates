@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Endpoint brand colors — from the ColorLib "Apiforge" demo stylesheet
+     (_astro/Base.*.css): primary orange (Tailwind orange scale,
+     #f97316 orange-500 buttons/accents, #ea580c orange-600 hover),
+     dark surfaces #030712/#111827/#1f2937, light surfaces #f9fafb/#f3f4f6,
+     heading text #111827, muted body #6b7280/#9ca3af. */
+  --color-primary-50: #fff7ed;
+  --color-primary-100: #ffedd5;
+  --color-primary-200: #fed7aa;
+  --color-primary-300: #fdba74;
+  --color-primary-400: #fb923c;
+  --color-primary-500: #f97316;
+  --color-primary-600: #ea580c;
+  --color-primary-700: #c2410c;
+  --color-primary-800: #9a3412;
+  --color-primary-900: #7c2d12;
+
+  --color-paper: #f9fafb;
+  --color-ink: #111827;
+  --color-body: #6b7280;
+  --color-muted: #9ca3af;
+  --color-night: #030712;
+  --color-carbon: #111827;
+  --color-slate: #1f2937;
+
+  /* Original font: "Outfit" (Google Fonts <link> in index.html). */
+  --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
