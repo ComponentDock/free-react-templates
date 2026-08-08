@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Trellis brand palette — recreated from the ColorLib "Monarch"
+     design (css/style.css): sage green #8db1ab accents (28 color refs,
+     13 background refs). Hover shade #7b9c96 approximates Bootstrap's
+     7.5% darken of the primary. */
+  --color-brand: #8db1ab;
+  --color-brand-dark: #7b9c96;
+
+  /* Ink — headings (#212529 from the original). */
+  --color-ink: #212529;
+
+  /* Mist — muted body text (#6c757d from the original). */
+  --color-mist: #6c757d;
+
+  /* Paper — light chip backgrounds (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Charcoal — dark navbar + copyright bar (#141b25 from the original). */
+  --color-charcoal: #141b25;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand sage. */
+  --color-primary-50: #f4f8f7;
+  --color-primary-100: #e2eeec;
+  --color-primary-200: #c5ddd9;
+  --color-primary-300: #a4c7c1;
+  --color-primary-400: #8db1ab;
+  --color-primary-500: #7ba39c;
+  --color-primary-600: #6b9189;
+  --color-primary-700: #5a7a73;
+  --color-primary-800: #4a645e;
+  --color-primary-900: #3b4f4a;
+
+  /* Original font: Bootstrap system sans stack (no Google Font link). */
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-display:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
