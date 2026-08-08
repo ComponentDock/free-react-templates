@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Ticker brand colors — from the ColorLib "Financeflow" demo stylesheet
+     (financeflow-colorlib.pages.dev/_astro/Base.BbxbqmCU.css, Tailwind v4
+     oklch values converted to hex): primary = amber/orange scale
+     (#CC7800 primary-500 brand / gradient start, #AB5900 primary-600
+     gradient end, #8F4700 primary-700 gold-gradient end), success = green
+     (#2ECB84 400, #1C985A 500, badge/win-rate 600), danger = red
+     (#DE3B3D 500 for negative changes). */
+  --color-primary-300: #ebb25f;
+  --color-primary-400: #dc932e;
+  --color-primary-500: #cc7800;
+  --color-primary-600: #ab5900;
+  --color-primary-700: #8f4700;
+  --color-primary-800: #713408;
+
+  --color-success-400: #2ecb84;
+  --color-success-500: #1c985a;
+  --color-success-600: #1e7f4e;
+
+  --color-danger-500: #de3b3d;
+
+  --color-paper: #f6f9fc;
+  --color-ink: #08090a;
+  --color-night: #030304;
+
+  /* Original fonts (Google Fonts <link> in index.html): Sora for display
+     headings (font-display), Inter for body/nav/buttons (font-sans),
+     JetBrains Mono for ticker prices and numbers (font-mono). */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Sora', ui-sans-serif, system-ui, sans-serif;
+  --font-mono:
+    'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Infinite marquee for the live-price ticker bar: the content row is
+   rendered twice and translated -50% for a seamless loop. */
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-animate {
+  animation: ticker-scroll 32s linear infinite;
+}
