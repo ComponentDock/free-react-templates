@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Chisel brand palette — recreated from the ColorLib "Reshape"
+     design (css/style.css): primary blue #0779e4 (25 refs), hover
+     #0883f7; secondary black buttons #000000 (hover #0a0a0a). */
+  --color-brand: #0779e4;
+  --color-brand-dark: #0883f7;
+
+  /* Ink — headings (#000000 from the original). */
+  --color-ink: #000000;
+
+  /* Mist — muted body text (#6c757d bootstrap muted from the original). */
+  --color-mist: #6c757d;
+
+  /* Paper — light chip backgrounds (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Charcoal — dark footer (#222 from the original). */
+  --color-charcoal: #222222;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand blue. */
+  --color-primary-50: #eef6fe;
+  --color-primary-100: #d8ebfd;
+  --color-primary-200: #b3d6fb;
+  --color-primary-300: #85bdf8;
+  --color-primary-400: #4d9ef3;
+  --color-primary-500: #0779e4;
+  --color-primary-600: #066ecf;
+  --color-primary-700: #055fb2;
+  --color-primary-800: #044f93;
+  --color-primary-900: #033d72;
+
+  /* Original font: Mulish (Google Fonts link in index.html). */
+  --font-sans: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
