@@ -49,23 +49,25 @@ TypeScript.
      prev/next round buttons (quotes from VP of Sales TechScale Inc.,
      Sales Director GrowthWave, Sales Manager DataBridge, + 3 more),
      names/roles visible.
-  5. Contact: "Talk to Our Sales Team" — 4 cards (Phone (555) 234-5678,
-     Email sales@pipelineiq.com, Address, Office Hours Mon–Fri 8:00 AM –
-     6:00 PM PST) + "Ready to transform your sales process?" blurb.
+  5. Contact: "Talk to Our Sales Team" — eyebrow label "Get In Touch" above the
+     heading, 4 cards (Phone (555) 234-5678, Email sales@pipelineiq.com →
+     sales@dealflow.app, Address, Office Hours Mon–Fri 8:00 AM – 6:00 PM PST)
+     - "Ready to transform your sales process?" blurb.
   6. FAQ: "Frequently Asked Questions" — accordion (6 questions: setup
      time, CRM import, integrations, data security, free trial, support;
      "Can I import data from my existing CRM?", "Do you offer a free
      trial?", "What kind of support is available?" confirmed in DOM) +
      "Contact our support team" hint.
   7. CTA: "Ready to Close More Deals?" — "Join 10,000+ sales teams already
-     using PipelineIQ..." + "Book a Demo" / "Start Trial" buttons
-     (gradient `from-primary-600 to-primary-800` band).
+     using PipelineIQ..." + "Start Free Trial" (white pill) / "Book a Demo"
+     (primary pill) buttons (gradient `from-primary-600 to-primary-800` band;
+     verified in live demo DOM).
   8. Footer (dark bg-gray-900): brand + blurb "Smart CRM that closes
-     deals...", columns Product (Features, Pricing, Integrations, About,
-     Blog) / Company (About, Careers, Blog, Press) / Support (Help Center,
-     API Docs, Status, Contact), contact (phone, email), copyright +
-     Privacy Policy / Terms of Service, cookie consent banner (Accept All
-     / Decline), back-to-top round button.
+     deals...", columns Product (Pipeline, Contacts, Analytics, Automation) /
+     Company (About, Careers, Blog, Press) / Support (Help Center, API Docs,
+     Status, Contact) — verified 1:1 from live demo footer, contact (phone,
+     email), copyright + Privacy Policy / Terms of Service / Style Guide,
+     cookie consent banner (Accept All / Decline), back-to-top round button.
 - **Design tokens extracted from `Base.BWd83FKH.css` + DOM:**
   - Brand color: **#2563eb** (blue-600; scale #1d4ed8, #3b82f6, #60a5fa,
     #93c5fd) — primary CTAs, links, headline highlight, back-to-top.
@@ -205,7 +207,7 @@ The system SHALL render a closing CTA band with a headline and demo buttons.
 - **GIVEN** the page is rendered
 - **WHEN** the CTA section is displayed
 - **THEN** it SHALL contain a heading "Ready to Close More Deals?"
-- **AND** it SHALL show "Book a Demo" and "Start Trial" buttons
+- **AND** it SHALL show "Start Free Trial" and "Book a Demo" buttons
 
 ### Requirement: Footer
 

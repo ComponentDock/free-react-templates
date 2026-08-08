@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Dealflow brand palette — recreated from the ColorLib "PipelineIQ" design.
+     The primary scale IS the brand blue (#2563eb) used for CTAs, links,
+     headline highlights, the CTA band gradient and the back-to-top button. */
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+  --color-primary-950: #172554;
+
+  /* Body font — the original's Google Fonts pairing (Inter) */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
