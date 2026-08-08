@@ -132,7 +132,7 @@
 - [x] **Atelier** — [colorlib](https://colorlib.com/wp/template/atelier/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/atelier-template.jpg) · [forma](https://free-react-templates-forma.surge.sh)
 - [x] **Barberkraft** — [colorlib](https://colorlib.com/wp/template/barberkraft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barberkraft-template.jpg) · [fade](https://free-react-templates-fade.surge.sh)
 - [x] **Brewhouse** — [colorlib](https://colorlib.com/wp/template/brewhouse/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brewhouse-template-1770211139958.jpg) · [mocha](https://free-react-templates-mocha.surge.sh)
-- [ ] **Brightsmile** — [colorlib](https://colorlib.com/wp/template/brightsmile/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brightsmile-template-1771943701965.jpg)
+- [~] **Brightsmile** — [colorlib](https://colorlib.com/wp/template/brightsmile/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brightsmile-template-1771943701965.jpg)
 - [ ] **Buildcraft** — [colorlib](https://colorlib.com/wp/template/buildcraft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildcraft-template-1771943678540.jpg)
 - [ ] **Cloudnest** — [colorlib](https://colorlib.com/wp/template/cloudnest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cloudnest-template-1771944017064.jpg)
 - [ ] **Creativex 3** — [colorlib](https://colorlib.com/wp/template/creativex-3/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/creativex-template-1770211073725.jpg)
@@ -1500,7 +1500,7 @@
 
 ## Dentist (14)
 
-- [ ] **Brightsmile** — [colorlib](https://colorlib.com/wp/template/brightsmile/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brightsmile-template-1771943701965.jpg)
+- [~] **Brightsmile** — [colorlib](https://colorlib.com/wp/template/brightsmile/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brightsmile-template-1771943701965.jpg)
 - [ ] **Dentacare** — [colorlib](https://colorlib.com/wp/template/dentacare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentacare-free-template.jpg)
 - [ ] **Dental** — [colorlib](https://colorlib.com/wp/template/dental/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dental-colorlib-template.jpg)
 - [ ] **Dentamax** — [colorlib](https://colorlib.com/wp/template/dentamax/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentamax-free-template.jpg)
@@ -2901,7 +2901,7 @@
 - [x] **Atelier** — [colorlib](https://colorlib.com/wp/template/atelier/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/atelier-template.jpg) · [forma](https://free-react-templates-forma.surge.sh)
 - [x] **Barberkraft** — [colorlib](https://colorlib.com/wp/template/barberkraft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barberkraft-template.jpg) · [fade](https://free-react-templates-fade.surge.sh)
 - [x] **Brewhouse** — [colorlib](https://colorlib.com/wp/template/brewhouse/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brewhouse-template-1770211139958.jpg) · [mocha](https://free-react-templates-mocha.surge.sh)
-- [ ] **Brightsmile** — [colorlib](https://colorlib.com/wp/template/brightsmile/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brightsmile-template-1771943701965.jpg)
+- [~] **Brightsmile** — [colorlib](https://colorlib.com/wp/template/brightsmile/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brightsmile-template-1771943701965.jpg)
 - [ ] **Buildcraft** — [colorlib](https://colorlib.com/wp/template/buildcraft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildcraft-template-1771943678540.jpg)
 - [ ] **Cloudnest** — [colorlib](https://colorlib.com/wp/template/cloudnest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cloudnest-template-1771944017064.jpg)
 - [ ] **Creativex 3** — [colorlib](https://colorlib.com/wp/template/creativex-3/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/creativex-template-1770211073725.jpg)
