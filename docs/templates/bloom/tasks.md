@@ -1,7 +1,7 @@
-# Pretty (Colorlib Pretty) — Tasks & Design Notes
+# Bloom (ColorLib Pretty) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Cove PR awaits review.
-> Implementation ships later on `feat/template-pretty`.
+> Implementation ships later on `feat/template-bloom`.
 
 ## Design notes
 
@@ -23,14 +23,14 @@
 - **Design tokens:** brand hot pink **#fa5bdd** + sky blue **#78d5ef**;
   light bgs `#f8f9fa`/white; headings **Montserrat** + body **Work Sans**
   via Google Fonts; pink filled rounded uppercase buttons.
-- **Recreation name:** Pretty. App folder `apps/pretty`, package
-  `@free-react-templates/pretty`.
+- **Recreation name:** Bloom. App folder `apps/bloom`, package
+  `@free-react-templates/bloom`.
 - **Design approach:** light theme with pink accents; hero = seeded picsum
   photo + headline; about split; team cards with initials avatars; discount
   band; portfolio tiles with seeded photos; pricing tiers; counter stats;
   blog cards with seeded photos; appointment form; footer with
   contact/hours + social links; all images picsum-seeded
-  (`picsum.photos/seed/pretty-N/w/h`); Google Fonts via `<link>`.
+  (`picsum.photos/seed/bloom-N/w/h`); Google Fonts via `<link>`.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
 - Base implementation on `apps/aurora` (multi-section landing with
@@ -39,10 +39,10 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-pretty/spec.md` (Gherkin requirements + scenarios + replication findings) — DONE on main (this prep).
+- [x] Write `openspec/specs/template-bloom/spec.md` (Gherkin requirements + scenarios + replication findings) — DONE on main (this prep).
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/pretty` (copy `apps/aurora`; rename package to
-      `@free-react-templates/pretty`).
+- [ ] Create `apps/bloom` (copy `apps/aurora`; rename package to
+      `@free-react-templates/bloom`).
 - [ ] TDD: tests first for Navbar, Hero, About, Team, Work, Pricing,
       Blog, Appointment, Footer, App composition; run red.
 - [ ] Implement components (green) at 100% coverage.
