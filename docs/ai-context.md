@@ -15,6 +15,7 @@ scratch.
 ```
 free-react-templates/
 ├── apps/                     # One folder per template (e.g. aurora/, drift/)
+│   ├── amber/                # Template "Amber" — barber shop landing (ColorLib The Barber)
 │   ├── aurora/               # Template "Aurora" — personal/business landing
 │   ├── azure/                # Template "Azure" — 404 error page (watermark + blue pill)
 │   ├── blaze/                # Template "Blaze" — 404 error page (bold red exclamation)
