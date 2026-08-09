@@ -171,7 +171,7 @@
 - [x] **Wanderlust** — [colorlib](https://colorlib.com/wp/template/wanderlust/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wanderlust-template-1770211435145.jpg) · [roamly](https://free-react-templates-roamly.surge.sh)
 - [x] **Wealthwise** — [colorlib](https://colorlib.com/wp/template/wealthwise/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wealthwise-template-1770211049269.jpg) · [vaultly](https://free-react-templates-vaultly.surge.sh)
 - [x] **Workhub** — [colorlib](https://colorlib.com/wp/template/workhub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workhub-template-1771943925457.jpg) · [Deskly](https://free-react-templates-deskly.surge.sh)
-- [~] **Youthconnect** — [colorlib](https://colorlib.com/wp/template/youthconnect/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youthconnect-template-1770211452999.jpg)
+- [x] **Youthconnect** — [colorlib](https://colorlib.com/wp/template/youthconnect/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youthconnect-template-1770211452999.jpg) · [ignite](https://free-react-templates-ignite.surge.sh)
 
 ## Automotive (8)
 
@@ -1238,7 +1238,7 @@
 - [ ] **Yoga Studio** — [colorlib](https://colorlib.com/wp/template/yoga-studio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogastudio-free-template.jpg)
 - [ ] **Yogafun** — [colorlib](https://colorlib.com/wp/template/yogafun/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogafun-free-template.jpg)
 - [ ] **Youragent** — [colorlib](https://colorlib.com/wp/template/youragent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youragent-free-template.jpg)
-- [ ] **Youthconnect** — [colorlib](https://colorlib.com/wp/template/youthconnect/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youthconnect-template-1770211452999.jpg)
+- [x] **Youthconnect** — [colorlib](https://colorlib.com/wp/template/youthconnect/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youthconnect-template-1770211452999.jpg) · [ignite](https://free-react-templates-ignite.surge.sh)
 - [ ] **Yummy 2** — [colorlib](https://colorlib.com/wp/template/yummy-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-free-template.jpg)
 - [ ] **Zeta** — [colorlib](https://colorlib.com/wp/template/zeta/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeta-free-template.jpg)
 
