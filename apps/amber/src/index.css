@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Amber brand palette — recreated from the ColorLib "The Barber" design
+     (css/style.css): orange #ff5e13 accents/buttons, gold #BC9321,
+     dark brown #4A3600 headings/footer, light bgs #f9f9ff / #f0e9ff. */
+  --color-brand: #ff5e13;
+  --color-brand-dark: #e04e0a;
+  --color-gold: #bc9321;
+
+  /* Ink — dark brown headings/footer (#4A3600 from the original). */
+  --color-ink: #4a3600;
+  --color-ink-dark: #382a03;
+
+  /* Soapstone — light section background (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Lavender — secondary light section background (#f0e9ff). */
+  --color-lavender: #f0e9ff;
+
+  /* Mist — muted body text (#999999 from the original). */
+  --color-mist: #999999;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the orange. */
+  --color-primary-50: #fff4ed;
+  --color-primary-100: #ffe6d5;
+  --color-primary-200: #ffc8aa;
+  --color-primary-300: #ffa274;
+  --color-primary-400: #ff7c3d;
+  --color-primary-500: #ff5e13;
+  --color-primary-600: #e04e0a;
+  --color-primary-700: #ba3f08;
+  --color-primary-800: #93320a;
+  --color-primary-900: #782b0c;
+
+  /* Original fonts: "Playfair Display" (headings) + "Roboto" (body). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
