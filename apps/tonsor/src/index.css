@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Tonsor brand palette — recreated from the ColorLib "Barcut" barbershop
+     design (css/main.css): gold gradient #ba9236 → #fdc136, dark gold
+     #bb9236 accents, body text #777777, price cards #f9f9f9, black
+     footer #000000. */
+  --color-brand: #ba9236;
+  --color-gold: #fdc136;
+  --color-ink: #212529;
+  --color-mist: #777777;
+  --color-fog: #f9f9f9;
+  --color-line: #e9ecef;
+  --color-night: #000000;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the gold. */
+  --color-primary-50: #faf6ec;
+  --color-primary-100: #f3ead0;
+  --color-primary-200: #e6d5a0;
+  --color-primary-300: #d9c070;
+  --color-primary-400: #cbab4d;
+  --color-primary-500: #ba9236;
+  --color-primary-600: #a8842f;
+  --color-primary-700: #8f6f26;
+  --color-primary-800: #6e561d;
+  --color-primary-900: #4d3c14;
+
+  /* Original fonts: Roboto body + Playfair Display serif headings via
+     Google Fonts. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
