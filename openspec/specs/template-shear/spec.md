@@ -1,18 +1,18 @@
-# Template: Barberz (Barber Shop Landing)
+# Template: Shear (Barber Shop Landing)
 
 ## Purpose
 
-Barberz is a single-page barber-shop landing template in the
+Shear is a single-page barber-shop landing template in the
 free-react-templates monorepo. It is an original React recreation of the
-ColorLib free "Barberz" design (see TEMPLATES.md), built under the monorepo
-stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+ColorLib free "Barberz" design (https://colorlib.com/wp/template/barberz/),
+built under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The original is a clean, light barber landing page with red accents: a
 full-screen photo hero ("More Than Just A Haircut"), a welcome split with a
 "3 years in excellent service" badge, a services & pricing carousel, a "More
 Hair Styles" photo grid, a photo "More Services" band, testimonials, a blog
 row, a "Quality Haircut" CTA band, and a light footer with newsletter.
-Barberz recreates that structure section-for-section with matching layout,
+Shear recreates that structure section-for-section with matching layout,
 colors, typography, and content types (no ColorLib assets copied).
 
 ## Design reference (replication findings)
@@ -62,21 +62,21 @@ colors, typography, and content types (no ColorLib assets copied).
   seeded photos; newsletter input in the footer. All images picsum-seeded,
   icons lucide-react (no assets copied).
 
-Barberz lives in `apps/barberz` and uses shared components from `packages/ui`
+Shear lives in `apps/shear` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Barberz", a
+The system SHALL render a top navigation bar with the site name "Shear", a
 "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Barberz page is rendered
+- **GIVEN** the Shear page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Barberz" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Shear" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -107,7 +107,7 @@ badge, and a heading.
 
 - **GIVEN** the page is rendered
 - **WHEN** the welcome section is displayed
-- **THEN** it SHALL show the heading "Welcome To Barberz!"
+- **THEN** it SHALL show the heading "Welcome To Shear!"
 - **AND** it SHALL show a years-of-service badge (e.g. "3 years in excellent service")
 
 ### Requirement: Services & Pricing
@@ -154,7 +154,7 @@ links, a newsletter field, and social links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Barberz" and quick links
+- **THEN** it SHALL show the site name "Shear" and quick links
 - **AND** it SHALL show a newsletter input and social links (GitHub, X, LinkedIn)
 
 ### Requirement: Page composition
@@ -164,7 +164,7 @@ a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Barberz app is rendered
+- **GIVEN** the Shear app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Barberz — Barber Shop Template"
+- **AND** the document title SHALL be "Shear — Barber Shop Template"
