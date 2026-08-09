@@ -41,7 +41,7 @@ types (no ColorLib assets copied).
      "The beauty is not luxurious imagination".
   5. Numbered services (`ftco-section ftco-services`): 01 Manicure &
      Pedicure, 02 Haircut & Coloring, 03 Professional Makeup, 04 Body Spa
-     - "Get Offer" buttons.
+     - "Explore" links (pink `btn-custom`).
   6. Booking (`ftco-section ftco-no-pt ftco-booking`): "Make an
      Appointment" + service select (Professional Makeup, Manicure Pedicure,
      Body Treatment, Haircut Coloring).
@@ -135,7 +135,7 @@ numbered service cards.
 - **WHEN** the services section is displayed
 - **THEN** it SHALL show the heading "Services"
 - **AND** it SHALL render four numbered service cards (Manicure & Pedicure, Haircut & Coloring, Professional Makeup, Body Spa)
-- **AND** each card SHALL show a "Get Offer" button
+- **AND** each card SHALL show an "Explore" link
 
 ### Requirement: Booking band
 

@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Peony brand palette — recreated from the ColorLib "Camille" design
+     (css/style.css): rose pink #f18c8e accents + buttons, dark plum
+     #563b4c headings, light pink #f7b9bb, light section bg #f7f5f6. */
+  --color-brand: #f18c8e;
+  --color-brand-dark: #d96a6c;
+  --color-plum: #563b4c;
+  --color-blush: #f7b9bb;
+
+  /* Paper — light section backgrounds (default white, alt #f7f5f6). */
+  --color-paper: #f7f5f6;
+
+  /* Mist — muted body text (#6c757d from the original). */
+  --color-mist: #6c757d;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the rose pink. */
+  --color-primary-50: #fdf2f3;
+  --color-primary-100: #fbe5e6;
+  --color-primary-200: #f8cfd1;
+  --color-primary-300: #f4adb0;
+  --color-primary-400: #f18c8e;
+  --color-primary-500: #ec7174;
+  --color-primary-600: #e2565a;
+  --color-primary-700: #c64549;
+  --color-primary-800: #a23c3f;
+  --color-primary-900: #863639;
+
+  /* Original fonts: "Pacifico" (cursive brand/hero display), "Playfair
+     Display" (serif section headings), "Work Sans" (sans body) via
+     Google Fonts. */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+  --font-script: 'Pacifico', cursive;
+}
