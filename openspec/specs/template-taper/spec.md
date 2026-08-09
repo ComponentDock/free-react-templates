@@ -1,18 +1,19 @@
-# Template: Brber (Barber Shop Landing)
+# Template: Taper (Barber Shop Landing)
 
 ## Purpose
 
-Brber is a single-page barber-shop landing template in the free-react-templates
+Taper is a single-page barber-shop landing template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Brber"
 design (see TEMPLATES.md), built under the monorepo stack: Vite + React 19 +
-Tailwind CSS 4 + TypeScript.
+Tailwind CSS 4 + TypeScript. The recreation carries the NEW name "Taper"
+(never the source name).
 
 The original is a light barber landing page with tan/gold accents: a
 full-screen dual-slide hero ("Our Hair Style make your look elegance"), an
 about split with a "52 Years Of Experience" badge, a three-card services grid,
 a four-member barbers team, a two-column pricing table with 12 services, a
 photo gallery, a testimonial slider, a blog row, and a newsletter footer.
-Brber recreates that structure section-for-section with matching layout,
+Taper recreates that structure section-for-section with matching layout,
 colors, typography, and content types (no ColorLib assets copied).
 
 ## Design reference (replication findings)
@@ -71,21 +72,21 @@ colors, typography, and content types (no ColorLib assets copied).
   blog cards with seeded photos; newsletter input in the footer. All images
   picsum-seeded, icons lucide-react (no assets copied).
 
-Brber lives in `apps/brber` and uses shared components from `packages/ui`
+Taper lives in `apps/taper` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Brber", a
+The system SHALL render a top navigation bar with the site name "Taper", a
 "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Brber page is rendered
+- **GIVEN** the Taper page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Brber" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Taper" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -175,7 +176,7 @@ links, a newsletter field, and social links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Brber" and quick links
+- **THEN** it SHALL show the site name "Taper" and quick links
 - **AND** it SHALL show a newsletter input and social links (GitHub, X, LinkedIn)
 
 ### Requirement: Page composition
@@ -185,7 +186,7 @@ a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Brber app is rendered
+- **GIVEN** the Taper app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Brber — Barber Shop Template"
+- **AND** the document title SHALL be "Taper — Barber Shop Template"

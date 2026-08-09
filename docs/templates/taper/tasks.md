@@ -1,7 +1,8 @@
-# Brber (Colorlib Brber) — Tasks & Design Notes
+# Taper (Colorlib Brber) — Tasks & Design Notes
 
-> Prep artifacts prepared on `main` while the Lagoon PR awaits review.
-> Implementation ships later on `feat/template-brber`.
+> Prep artifacts prepared on `main` (originally as "Brber"); implementation
+> ships on `feat/template-taper`. Recreation name: **Taper** (NEW name — the
+> ColorLib source keeps its name "Brber").
 
 ## Design notes
 
@@ -31,34 +32,35 @@
 #d19f68`, font **Oswald**, uppercase, padding 27px 44px, no radius;
   headings/buttons **Oswald** + body **Poppins**/Open Sans via Google Fonts;
   light sections white/`#f9f9ff`; footer `section-bg` photo band; body text
-  dark gray `#999999`/`#7c7c7c`.
-- **Recreation name:** Brber. App folder `apps/brber`, package
-  `@free-react-templates/brber`.
+  dark gray `#999999`/`#7c7c7c`; heading color `#1d2434`.
+- **Recreation name:** Taper. App folder `apps/taper`, package
+  `@free-react-templates/taper`.
 - **Design approach:** light theme with tan/gold accents; hero = seeded
   picsum photo + headline; about split with years-of-experience badge;
   services with lucide icons; team cards with initials avatars; pricing as a
   two-column price list; gallery with seeded photo tiles; testimonial with
   initials avatar; blog cards with seeded photos; newsletter input in the
-  footer; all images picsum-seeded (`picsum.photos/seed/brber-N/w/h`);
-  Google Fonts via `<link>`.
+  footer; all images picsum-seeded (`picsum.photos/seed/taper-N/w/h`);
+  Google Fonts via `<link>` (Oswald + Poppins).
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
-- Base implementation on `apps/aurora` (multi-section landing with
-  Navbar/Hero/Sections/Footer structure) — the closest existing multi-section
-  app; adapt patterns from the 404 apps' Navbar/SocialLinks.
+- Base implementation on `apps/buzz` (barber landing with
+  Navbar/Hero/About/Services/Team/Testimonials/Footer structure) — the
+  closest existing barber app; adapt patterns for gallery/pricing/blog.
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-brber/spec.md` (Gherkin requirements +
-      scenarios + replication findings) — DONE on main (this prep).
+- [x] Write `openspec/specs/template-taper/spec.md` (Gherkin requirements +
+      scenarios + replication findings) — prep done on main as "Brber",
+      renamed to Taper on the feature branch.
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/brber` (copy `apps/aurora`; rename package to
-      `@free-react-templates/brber`).
+- [ ] Create `apps/taper` (copy `apps/buzz`; rename package to
+      `@free-react-templates/taper`).
 - [ ] TDD: tests first for Navbar, Hero, About, Services, Team, Pricing,
       Gallery, Testimonials, BlogSection, Footer, App composition; run red.
 - [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
-      spec:validate.
+- [ ] Per-app gate: `bash scripts/verify-app.sh taper` (typecheck → lint →
+      100% coverage tests → build) + spec:validate.
 - [ ] Update TEMPLATES.md status `[~]` → `[x]` after merge (bookkeeping on
       main, state D).
 - [ ] Update README structure + `docs/ai-context.md` app list.
