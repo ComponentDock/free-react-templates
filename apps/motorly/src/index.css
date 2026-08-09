@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Motorly brand palette — recreated from the ColorLib "Automotive" design
+     (css/style.css): indigo #5F67FF buttons/accents. */
+  --color-brand: #5f67ff;
+  --color-brand-dark: #454dd6;
+
+  /* Ink — headings (#353535 / #323232 from the original). */
+  --color-ink: #353535;
+
+  /* Mist — muted body text (#727171 from the original). */
+  --color-mist: #727171;
+
+  /* Paper — light section backgrounds (#f7f7f7 from the original). */
+  --color-paper: #f7f7f7;
+
+  /* Coal — dark top bar / footer (#000000 from the original). */
+  --color-coal: #000000;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand indigo. */
+  --color-primary-50: #eef0ff;
+  --color-primary-100: #dfe2ff;
+  --color-primary-200: #c4c9ff;
+  --color-primary-300: #a0a8ff;
+  --color-primary-400: #7d86ff;
+  --color-primary-500: #5f67ff;
+  --color-primary-600: #454dd6;
+  --color-primary-700: #3a41b8;
+  --color-primary-800: #31379a;
+  --color-primary-900: #2a2f80;
+
+  /* Original font: "Public Sans" (Google Fonts via index.html). */
+  --font-sans: 'Public Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Public Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
