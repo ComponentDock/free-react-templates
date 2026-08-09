@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Taper brand palette — recreated from the ColorLib "Brber" design
+     (assets/css/style.css): tan/gold #d19f68 accents, light section bg
+     #f9f9ff, dark heading #1d2434, muted body text #999999/#7c7c7c. */
+  --color-brand: #d19f68;
+  --color-brand-dark: #af804d;
+  --color-brand-light: #e0bb8f;
+
+  /* Paper — light section backgrounds (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Ink — headings (#1d2434 from the original). */
+  --color-ink: #1d2434;
+
+  /* Mist — muted body text (#999999 from the original). */
+  --color-mist: #999999;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand tan. */
+  --color-primary-50: #faf3ea;
+  --color-primary-100: #f3e3d0;
+  --color-primary-200: #e8cba7;
+  --color-primary-300: #dcb07b;
+  --color-primary-400: #d3a374;
+  --color-primary-500: #d19f68;
+  --color-primary-600: #c08a4e;
+  --color-primary-700: #af804d;
+  --color-primary-800: #8f6638;
+  --color-primary-900: #6f4f2c;
+
+  /* Original fonts: "Oswald" (condensed display) for headings/buttons +
+     "Poppins" (sans-serif) for body (Google Fonts in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
