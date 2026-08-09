@@ -1,8 +1,8 @@
-# Template: Akame (Hair Salon Landing)
+# Template: Gilded (Hair Salon Landing)
 
 ## Purpose
 
-Akame is a single-page hair-salon landing template in the free-react-templates
+Gilded is a single-page hair-salon landing template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Akame"
 design (see TEMPLATES.md), built under the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
@@ -13,7 +13,7 @@ about split, an "Our Services" row (Coloring, Haircut, Hairstyle), a
 "Why Choose Us" band, an "Our Work" portfolio grid, an "Our Experts" team
 (Mila Hartley, Teigan Duran, Tanya Ramsay, Donna Carr), a certificate band,
 a "Latest News" blog row, a CTA band, and a footer with opening times and
-contact details. Akame recreates that structure section-for-section with
+contact details. Gilded recreates that structure section-for-section with
 matching layout, colors, typography, and content types (no ColorLib assets
 copied).
 
@@ -57,23 +57,23 @@ copied).
   portfolio grid with seeded photo tiles; expert cards with initials
   avatars; blog cards with seeded photos; CTA band; footer with opening
   times and social links; all images picsum-seeded
-  (`picsum.photos/seed/akame-N/w/h`); Google Fonts via `<link>`.
+  (`picsum.photos/seed/gilded-N/w/h`); Google Fonts via `<link>`.
 
-Akame lives in `apps/akame` and uses shared components from `packages/ui`
+Gilded lives in `apps/gilded` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Akame", a
+The system SHALL render a top navigation bar with the site name "Gilded", a
 "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Akame page is rendered
+- **GIVEN** the Gilded page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Akame" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Gilded" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -95,6 +95,18 @@ a level-1 headline, and a call-to-action button.
 - **THEN** it SHALL show a level-1 headline (e.g. "Beautiful Hair Comes From A Legendary.")
 - **AND** it SHALL show a call-to-action button
 
+### Requirement: About
+
+The system SHALL render an about split section with a heading and
+introductory copy.
+
+#### Scenario: About content
+
+- **GIVEN** the page is rendered
+- **WHEN** the about section is displayed
+- **THEN** it SHALL show the heading "The House of Hair Salon & Spa"
+- **AND** it SHALL show a paragraph of introductory copy
+
 ### Requirement: Services
 
 The system SHALL render an "Our Services" section with at least three service
@@ -106,6 +118,18 @@ cards.
 - **WHEN** the services section is displayed
 - **THEN** it SHALL show the heading "Our Services"
 - **AND** it SHALL render three service cards (Coloring, Haircut, Hairstyle)
+
+### Requirement: Why Choose Us
+
+The system SHALL render a "Why Choose Us" band with at least four feature
+items.
+
+#### Scenario: Why-choose-us content
+
+- **GIVEN** the page is rendered
+- **WHEN** the why-choose-us band is displayed
+- **THEN** it SHALL show the heading "Why Choose Us"
+- **AND** it SHALL render at least four feature items
 
 ### Requirement: Our Work portfolio
 
@@ -131,6 +155,29 @@ cards.
 - **THEN** it SHALL show the heading "Our Experts"
 - **AND** it SHALL render at least four member cards (Mila Hartley, Teigan Duran, Tanya Ramsay, Donna Carr)
 
+### Requirement: Blog
+
+The system SHALL render a "Latest News" section with at least three post
+cards.
+
+#### Scenario: Blog content
+
+- **GIVEN** the page is rendered
+- **WHEN** the blog section is displayed
+- **THEN** it SHALL show the heading "Latest News"
+- **AND** it SHALL render at least three post cards with a title and a date
+
+### Requirement: CTA band
+
+The system SHALL render a call-to-action band with a headline and a button.
+
+#### Scenario: CTA content
+
+- **GIVEN** the page is rendered
+- **WHEN** the CTA band is displayed
+- **THEN** it SHALL show the headline "Make Gilded Your Number One Choice"
+- **AND** it SHALL show a call-to-action button
+
 ### Requirement: Footer
 
 The system SHALL render a footer with the site name, opening times, and social
@@ -140,7 +187,7 @@ links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Akame" and opening times
+- **THEN** it SHALL show the site name "Gilded" and opening times
 - **AND** it SHALL show social links (GitHub, X, LinkedIn)
 
 ### Requirement: Page composition
@@ -150,7 +197,7 @@ a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Akame app is rendered
+- **GIVEN** the Gilded app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Akame — Hair Salon Template"
+- **AND** the document title SHALL be "Gilded — Hair Salon Template"
