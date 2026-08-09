@@ -202,7 +202,7 @@
 - [x] **Pretty** — [colorlib](https://colorlib.com/wp/template/pretty/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pretty-free-template.jpg) · [bloom](https://free-react-templates-bloom.surge.sh)
 - [x] **Remake** — [colorlib](https://colorlib.com/wp/template/remake/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/remake-free-template.jpg) · [sienna](https://free-react-templates-sienna.surge.sh)
 - [x] **The Barber** — [colorlib](https://colorlib.com/wp/template/the-barber/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thebarber-free-template.jpg) · [amber](https://free-react-templates-amber.surge.sh)
-- [ ] **Trim** — [colorlib](https://colorlib.com/wp/template/trim/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/trim-free-template.jpg)
+- [~] **Trim** — [colorlib](https://colorlib.com/wp/template/trim/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/trim-free-template.jpg)
 
 ## Beauty (28)
 
