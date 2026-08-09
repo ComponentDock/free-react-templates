@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Airwave brand red — Tailwind red scale extracted from the original
+     ColorLib "The Hustle Hour" demo stylesheet (Base.fzo6El3r.css):
+     primary 600 #dc2626 for buttons/CTAs, 500 #ef4444 for hover + gradient
+     text start, 900 #7f1d1d for decorative hero blobs. */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #ef4444;
+  --color-primary-600: #dc2626;
+  --color-primary-700: #b91c1c;
+  --color-primary-800: #991b1b;
+  --color-primary-900: #7f1d1d;
+  --color-primary-950: #450a0a;
+
+  /* Accent purple — 500 #a855f7 (gradient text end), 600 #9333ea
+     (newsletter card gradient end). */
+  --color-accent-400: #c084fc;
+  --color-accent-500: #a855f7;
+  --color-accent-600: #9333ea;
+
+  /* Original font: "Outfit" (300–800) via Google Fonts (loaded in
+     index.html). */
+  --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
