@@ -1,8 +1,8 @@
-# Template: Barbero (Barber Shop Landing)
+# Template: Razor (Barber Shop Landing)
 
 ## Purpose
 
-Barbero is a single-page barber-shop landing template in the
+Razor is a single-page barber-shop landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Barbero" design (see TEMPLATES.md), built under the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -10,10 +10,10 @@ stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 The original is a dark, gold-accented barber landing page: a full-screen photo
 hero ("We Will Make Your Style of Your Dreams"), a 4-card services row, an
 about split, a photo counter band, an expert team section, a video band, a
-gallery grid, testimonials, an appointment form, a blog row, and a dark
-multi-column footer. Barbero recreates that structure section-for-section with
-matching layout, colors, typography, and content types (no ColorLib assets
-copied).
+gallery grid, pricing, testimonials, an appointment form, a blog row, and a
+dark multi-column footer. Razor recreates that structure section-for-section
+with matching layout, colors, typography, and content types (no ColorLib
+assets copied).
 
 ## Design reference (replication findings)
 
@@ -21,32 +21,36 @@ copied).
   (source: https://colorlib.com/wp/template/barbero/).
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/barbero/`
   (HTTP 200, 50KB) + stylesheet `css/style.css` (90KB). The rendered DOM is
-  the reference below; the TEMPLATES.md screenshot (`barbero-free-template.jpg`)
-  confirms the visual design (dark with gold accents, photo hero).
+  the reference below; the TEMPLATES.md screenshot (`barbero-colorlib-template.jpg`)
+  confirms the visual design (dark with gold accents, photo hero, tan services
+  band with circular photo thumbnails).
 - **Section order (1:1):**
-  1. Header/navbar: logo + nav (Home, About, Services, Gallery, Blog,
+  1. Header/navbar: logo + nav (Home, About, Pricing, Gallery, Team, Blog,
      Contact).
-  2. Hero (`hero-wrap`, photo background, right-aligned): "Welcome to
-     Barbero" subheading, "We Will Make Your Style of Your Dreams" headline
-     with gold `<span>` emphasis, blurb, "Learn More About Us" button.
-  3. Services (`ftco-services bg-light`): 4 photo cards — Hair Styles ·
-     Beard Trim · Hot Shave · Hair Shampoo (image + title + blurb).
+  2. Hero (`hero-wrap`, photo background, centered): "Welcome to Barbero"
+     subheading, "We Will Make Your Style of Your Dreams" headline with gold
+     `<span>` emphasis, blurb, ghost "Learn More About Us" button.
+  3. Services (`ftco-services bg-light`): 4 photo cards — Hair Styles · Beard
+     Trim · Hot Shave · Hair Shampoo (circular image + title + blurb).
   4. About (`ftco-about img`): "About Barber" / "A Smooth Barber Experience
      In Your Town" + paragraphs + image.
   5. Counter band (`ftco-counter img`, photo background): 4 counters —
      Places · Events · Photos · Speakers.
-  6. Team (`bg-darken`): "Our Expert Team" + tabbed team members.
+  6. Team (`bg-darken`): "Our Expert Team" + team member cards.
   7. Video band (`video-image img`): play button + "Watch Our Video Popular
      Hair Style".
   8. Gallery (`ftco-section ftco-no-pb`): "Photos of Our Events" + photo
      grid with search icons.
-  9. Testimonials (`testimony-section bg-light`): "People Say About Our
-     Barber" + quote cards.
-  10. Appointment (`ftco-intro img`, photo background): "Make An
-      Appointment" + form (First Name, Last Name, …).
-  11. Blog row: post cards (image, meta, title "Beginners Guide to Hair
+  9. Pricing (`ftco-pricing`): "Price & Plans" + 3 plan cards ($78 / $88 /
+     $98, service list, "Get Started").
+  10. Testimonials (`testimony-section bg-light`): "People Say About Our
+      Barber" + quote cards.
+  11. Appointment (`ftco-intro img`, photo background): "Make An
+      Appointment" + form (Select Your Services, First Name, Last Name,
+      Phone, submit).
+  12. Blog row: post cards (image, meta, title "Beginners Guide to Hair
       Styling", excerpt).
-  12. Footer (`ftco-footer`, dark): logo blurb + social icons + Explore
+  13. Footer (`ftco-footer`, dark): logo blurb + social icons + Explore
       links + Info links + contact column + copyright bar.
 - **Design tokens extracted from `css/style.css`:**
   - Brand color: **#bf925b** (gold — accents, headings, buttons) on dark
@@ -63,21 +67,21 @@ copied).
   zod; blog cards with seeded photos. All images picsum-seeded, icons
   lucide-react (no assets copied).
 
-Barbero lives in `apps/barbero` and uses shared components from `packages/ui`
+Razor lives in `apps/razor` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Barbero", a
+The system SHALL render a top navigation bar with the site name "Razor", a
 "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Barbero page is rendered
+- **GIVEN** the Razor page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Barbero" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Razor" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -96,7 +100,7 @@ subheading, a level-1 headline, and a call-to-action button.
 
 - **GIVEN** the page is rendered
 - **WHEN** the hero is displayed
-- **THEN** it SHALL show a subheading (e.g. "Welcome to Barbero") and a level-1 headline
+- **THEN** it SHALL show a subheading (e.g. "Welcome to Razor") and a level-1 headline
 - **AND** it SHALL show a "Learn More About Us" button
 
 ### Requirement: Services
@@ -141,6 +145,18 @@ The system SHALL render a "Photos of Our Events" gallery with a photo grid.
 - **THEN** it SHALL show the heading "Photos of Our Events"
 - **AND** it SHALL render at least four gallery images
 
+### Requirement: Pricing
+
+The system SHALL render a "Price & Plans" pricing section with three plan
+cards.
+
+#### Scenario: Plan cards
+
+- **GIVEN** the page is rendered
+- **WHEN** the pricing section is displayed
+- **THEN** it SHALL show the heading "Price & Plans"
+- **AND** it SHALL render three plan cards with a "Get Started" button each
+
 ### Requirement: Appointment form
 
 The system SHALL render an appointment form with at least first name and last
@@ -162,7 +178,7 @@ links, and social links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Barbero" and quick links
+- **THEN** it SHALL show the site name "Razor" and quick links
 - **AND** it SHALL show social links (GitHub, X, LinkedIn)
 
 ### Requirement: Page composition
@@ -172,7 +188,7 @@ a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Barbero app is rendered
+- **GIVEN** the Razor app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Barbero — Barber Shop Template"
+- **AND** the document title SHALL be "Razor — Barber Shop Template"

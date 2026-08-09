@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Razor brand palette — recreated from the ColorLib "Barbero" design
+     (css/style.css): gold #bf925b accents on near-black #090601
+     backgrounds, mixed with light (bg-light) content sections. */
+  --color-brand: #bf925b;
+  --color-brand-dark: #9a7340;
+
+  /* Ink — headings + footer background (#090601 from the original). */
+  --color-ink: #090601;
+
+  /* Mist — body text (#777777-ish from the original). */
+  --color-mist: #777777;
+
+  /* Paper — light section backgrounds (bg-light tan #ebe8de family). */
+  --color-paper: #ebe8de;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand gold. */
+  --color-primary-50: #faf5ee;
+  --color-primary-100: #f3e8d6;
+  --color-primary-200: #e6cfab;
+  --color-primary-300: #d8b27a;
+  --color-primary-400: #cc9d57;
+  --color-primary-500: #c08a3f;
+  --color-primary-600: #bf925b;
+  --color-primary-700: #9a7340;
+  --color-primary-800: #7a5a32;
+  --color-primary-900: #5e4527;
+
+  /* Original fonts: "Barlow Condensed" (display) + "Poppins" (body)
+     via Google Fonts in index.html. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Barlow Condensed', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
