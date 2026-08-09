@@ -16,6 +16,10 @@ fi
 echo "==> verify-app: ${APP} (per-app gate)"
 npm run typecheck --workspace "${PKG}"
 npm run lint
+# Whole-repo knip: catches unused exports (e.g. `export type X` never imported)
+# that the per-app typecheck/lint/test/build miss — those used to slip past
+# the per-app gate and kill the CI gate AFTER merge (tressly BrandName, 2026-08-09).
+npm run knip
 # Deterministic coverage run. `vitest run --project <pkg>` with the root
 # config's `test.projects` is racy in Vitest 4.1.10: the empty core-project
 # instance finishes instantly and its cleanAfterRun() wipes the shared
