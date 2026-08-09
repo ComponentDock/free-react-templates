@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Rouge brand palette — recreated from the ColorLib "Diva" design
+     (css/style.css): hot pink #e22b63 accents on photo-backed dark bands. */
+  --color-rouge-50: #fef2f6;
+  --color-rouge-100: #fde5ee;
+  --color-rouge-200: #fbcbdc;
+  --color-rouge-300: #f8a1bf;
+  --color-rouge-400: #f36d99;
+  --color-rouge-500: #ea4278;
+  --color-rouge-600: #e22b63;
+  --color-rouge-700: #c11c4f;
+  --color-rouge-800: #a11b45;
+  --color-rouge-900: #861b3e;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand hot pink. */
+  --color-primary-50: #fef2f6;
+  --color-primary-100: #fde5ee;
+  --color-primary-200: #fbcbdc;
+  --color-primary-300: #f8a1bf;
+  --color-primary-400: #f36d99;
+  --color-primary-500: #ea4278;
+  --color-primary-600: #e22b63;
+  --color-primary-700: #c11c4f;
+  --color-primary-800: #a11b45;
+  --color-primary-900: #861b3e;
+
+  /* Ink — dark text (#1e1e1e / #4a4a4a from the original). */
+  --color-ink: #1e1e1e;
+
+  /* Original font: "Futura LT" (commercial) — substituted with the similar
+     free Google Font Jost; Montserrat as body fallback. */
+  --font-sans: 'Jost', 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
