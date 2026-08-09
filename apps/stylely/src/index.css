@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Stylely brand palette — recreated from the ColorLib "Hipstyle" design
+     (css/style.css): brand red #f81c1c accents/buttons, coral #f44a40 hover,
+     light section bgs #f9f9ff + lavender #f0e9ff, dark charcoal #30383b
+     headings + footer, muted text #999999. */
+  --color-brand: #f81c1c;
+  --color-brand-dark: #d91414;
+  --color-brand-light: #f44a40;
+
+  /* Ink — headings + dark footer (#30383b from the original). */
+  --color-ink: #30383b;
+  --color-ink-dark: #242b2e;
+
+  /* Paper — light section backgrounds (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Lavender — alternating light section background (#f0e9ff original). */
+  --color-lavender: #f0e9ff;
+
+  /* Mist — muted body text (#999999 from the original). */
+  --color-mist: #999999;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand red. */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #f81c1c;
+  --color-primary-600: #d91414;
+  --color-primary-700: #b31212;
+  --color-primary-800: #8c0e0e;
+  --color-primary-900: #660a0a;
+
+  /* Original fonts: "Rufina" (serif headings) + "Roboto" (sans body). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Rufina', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
