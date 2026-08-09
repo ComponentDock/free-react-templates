@@ -42,8 +42,8 @@ copied).
   7. Testimonials (`testimonial_area`, photo band): "Testimonial" heading +
      quote slider (author: "Watson, web developer").
   8. Make an Appointment (`make_apppointment_area`, `#fdf9f6`): "Make an
-     Appointment" heading + blurb + booking form (Choose services dropdown,
-     Choose Barbers dropdown, Submit button).
+     Appointment" heading + blurb + booking form (Name, Email, Send message
+     button).
   9. Footer (`footer`, `#0d0e0f`): Visit our studio address + Message us
      contacts + Working Hours + About blurb + Information links + Services
      links + Follow Us social + copyright.
