@@ -51,6 +51,24 @@ describe('Navbar', () => {
     await user.click(closeButtons[1]!)
     expect(screen.queryByRole('navigation', { name: 'Mobile' })).not.toBeInTheDocument()
   })
+
+  it('closes the menu from its nav links, logo, and submit link', async () => {
+    const user = userEvent.setup()
+    render(<Navbar />)
+
+    await user.click(screen.getByRole('button', { name: 'Open menu' }))
+    const mobile = screen.getByRole('navigation', { name: 'Mobile' })
+    await user.click(withinNav(mobile, 'Models'))
+    expect(screen.queryByRole('navigation', { name: 'Mobile' })).not.toBeInTheDocument()
+
+    await user.click(screen.getByRole('button', { name: 'Open menu' }))
+    await user.click(screen.getAllByRole('link', { name: /allure/i })[1]!)
+    expect(screen.queryByRole('navigation', { name: 'Mobile' })).not.toBeInTheDocument()
+
+    await user.click(screen.getByRole('button', { name: 'Open menu' }))
+    await user.click(screen.getAllByRole('link', { name: /submit your portfolio/i })[1]!)
+    expect(screen.queryByRole('navigation', { name: 'Mobile' })).not.toBeInTheDocument()
+  })
 })
 
 function withinNav(nav: HTMLElement, label: string) {
