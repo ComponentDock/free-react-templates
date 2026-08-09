@@ -1,7 +1,7 @@
-# Br (Colorlib Br) — Tasks & Design Notes
+# Buzz (Colorlib Buzz) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Lagoon PR awaits review.
-> Implementation ships later on `feat/template-br`.
+> Implementation ships later on `feat/template-buzz`.
 
 ## Design notes
 
@@ -25,13 +25,13 @@
   **Lato** (sans-serif) via Google Fonts; `boxed-btn` style (white bg, 1px
   solid #EB592D border, uppercase, letter-spacing 3px); hero slides 900px
   tall cover backgrounds.
-- **Recreation name:** Br. App folder `apps/br`, package
-  `@free-react-templates/br`.
+- **Recreation name:** Buzz. App folder `apps/buzz`, package
+  `@free-react-templates/buzz`.
 - **Design approach:** light theme with orange accents; hero = seeded picsum
   photo + headline; about split with opening hours; services with lucide
   icons; pricing with tabbed category headers and price rows; team cards with
   initials avatars; appointment section with booking form; testimonial with
-  initials avatar; all images picsum-seeded (`picsum.photos/seed/br-N/w/h`);
+  initials avatar; all images picsum-seeded (`picsum.photos/seed/buzz-N/w/h`);
   Google Fonts via `<link>`.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT duplicate
   components.
@@ -41,11 +41,11 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-br/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-buzz/spec.md` (Gherkin requirements +
       scenarios + replication findings) — DONE on main (this prep).
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/br` (copy `apps/aurora`; rename package to
-      `@free-react-templates/br`).
+- [ ] Create `apps/buzz` (copy `apps/aurora`; rename package to
+      `@free-react-templates/buzz`).
 - [ ] TDD: tests first for Navbar, Hero, About, Services, Pricing, Team,
       Testimonials, Appointment, Footer, App composition; run red.
 - [ ] Implement components (green) at 100% coverage.

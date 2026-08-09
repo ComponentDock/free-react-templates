@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Buzz brand palette — recreated from the ColorLib "Br" design
+     (css/style.css): orange-red #eb592d accents, warm light section bg
+     #fdf9f6, near-black footer #0d0e0f, body text #777777. */
+  --color-brand: #eb592d;
+  --color-brand-dark: #c94a24;
+  --color-brand-light: #f4815e;
+
+  /* Paper — warm light section backgrounds (#fdf9f6 from the original). */
+  --color-paper: #fdf9f6;
+
+  /* Ink — headings (dark charcoal #222222 from the original). */
+  --color-ink: #222222;
+
+  /* Mist — muted body text (#777777 from the original). */
+  --color-mist: #777777;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand orange. */
+  --color-primary-50: #fef3ef;
+  --color-primary-100: #fde3da;
+  --color-primary-200: #fbc5b3;
+  --color-primary-300: #f8a084;
+  --color-primary-400: #f3734f;
+  --color-primary-500: #ef552b;
+  --color-primary-600: #eb592d;
+  --color-primary-700: #c94a24;
+  --color-primary-800: #a53e20;
+  --color-primary-900: #86331c;
+
+  /* Original fonts: "Yeseva One" (display/cursive) for headings + "Lato"
+     (sans-serif) for body (Google Fonts in index.html). */
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Yeseva One', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
