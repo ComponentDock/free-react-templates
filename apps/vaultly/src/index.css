@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Vaultly brand purple — extracted from the live Wealthwise demo CSS
+     (/_astro/Base.DLOtl97a.css): 500 #6d49f4 (buttons, logo, links,
+     gradient start), 700 #5b3ee0 (hover), 800 #260c66 + 900 #11023a
+     (deep navy-purple dark-mode backgrounds). */
+  --color-primary-50: #f5f3fe;
+  --color-primary-100: #ebe7fd;
+  --color-primary-200: #d9d1fb;
+  --color-primary-300: #bcadf8;
+  --color-primary-400: #9a85f6;
+  --color-primary-500: #7a5cf5;
+  --color-primary-600: #6d49f4;
+  --color-primary-700: #5b3ee0;
+  --color-primary-800: #260c66;
+  --color-primary-900: #11023a;
+  --color-primary-950: #0b0324;
+
+  /* Secondary teal — accent text/icons, success states: 500 #00978a,
+     dark #00322d. */
+  --color-secondary-100: #ccf2ef;
+  --color-secondary-300: #33b3a9;
+  --color-secondary-500: #00978a;
+  --color-secondary-700: #00756a;
+  --color-secondary-900: #00322d;
+
+  /* Original fonts (Google Fonts, loaded in index.html): Plus Jakarta
+     Sans for display/headings, Inter for body, JetBrains Mono for
+     numeric/dashboard figures. */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
