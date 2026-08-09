@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Movere brand blue — Tailwind blue scale extracted from the original
+     ColorLib "SwiftMove" demo stylesheet (Base.Ce97irTr.css): primary 600
+     #2563eb for buttons/links, 500 #3b82f6 accents, 700 #1d4ed8 hovers,
+     50 #eff6ff for the hero gradient + icon chips. */
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+  --color-primary-950: #172554;
+
+  /* Movere accent orange — Tailwind orange scale from the same stylesheet:
+     accent 500 #f97316 for the navbar CTA + headline gradient end,
+     600 #ea580c hovers, 50 #fff7ed for chips. */
+  --color-accent-50: #fff7ed;
+  --color-accent-100: #ffedd5;
+  --color-accent-200: #fed7aa;
+  --color-accent-300: #fdba74;
+  --color-accent-400: #fb923c;
+  --color-accent-500: #f97316;
+  --color-accent-600: #ea580c;
+  --color-accent-700: #c2410c;
+  --color-accent-800: #9a3412;
+  --color-accent-900: #7c2d12;
+
+  /* Original font: "Outfit" (300–800) via Google Fonts (loaded in
+     index.html). */
+  --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Headline gradient from the original: linear-gradient(to right in oklab,
+   #2563eb → #f97316) with background-clip: text. */
+@utility text-gradient {
+  background-image: linear-gradient(to right in oklab, #2563eb, #f97316);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
