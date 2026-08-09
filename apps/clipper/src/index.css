@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Clipper brand palette — recreated from the ColorLib "Alotan" design
+     (css/style.css): orange #ff6d24 primary accents / quick-info strip. */
+  --color-brand: #ff6d24;
+  --color-brand-dark: #e65a14;
+
+  /* Ink — headings (dark gray from the original). */
+  --color-ink: #343a40;
+
+  /* Mist — muted body text (#999999 from the original). */
+  --color-mist: #6c757d;
+
+  /* Paper — light section/footer backgrounds (#f9f9f9 from the original). */
+  --color-paper: #f9f9f9;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand orange. */
+  --color-primary-50: #fff3ec;
+  --color-primary-100: #ffe3d1;
+  --color-primary-200: #ffc4a3;
+  --color-primary-300: #ff9d6b;
+  --color-primary-400: #ff8f57;
+  --color-primary-500: #ff7a38;
+  --color-primary-600: #ff6d24;
+  --color-primary-700: #e65a14;
+  --color-primary-800: #c24a0f;
+  --color-primary-900: #9c3d10;
+
+  /* Original font: "Roboto" (Google Fonts via index.html); script wordmark
+     uses "Dancing Script". */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Dancing Script', cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
