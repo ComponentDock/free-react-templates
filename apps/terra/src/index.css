@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Terra brand palette — recreated from the ColorLib "Kayelux" design
+     (css/style.css): terracotta brand #e95b3a (buttons, headings, hovers),
+     dark text #212529/#111111, light blush backgrounds #f8ebe6. */
+  --color-brand: #e95b3a;
+  --color-brand-deep: #d14a2c;
+  --color-brand-soft: #f8ebe6;
+  --color-ink: #111111;
+  --color-muted: #6c757d;
+  --color-cream: #f8ebe6;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the terracotta brand. */
+  --color-primary-50: #fdf1ec;
+  --color-primary-100: #fbe0d4;
+  --color-primary-200: #f6c0aa;
+  --color-primary-300: #f19976;
+  --color-primary-400: #ee7449;
+  --color-primary-500: #e95b3a;
+  --color-primary-600: #d14a2c;
+  --color-primary-700: #ad3a21;
+  --color-primary-800: #8a2c1a;
+  --color-primary-900: #6b2113;
+
+  /* Original fonts: "Prata" (serif — headings), "Poppins" (sans — body) via
+     Google Fonts. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Prata', ui-serif, Georgia, serif;
+}
