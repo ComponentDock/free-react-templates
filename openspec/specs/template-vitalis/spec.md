@@ -1,20 +1,20 @@
-# Template: Aesthetic (Medical & Cosmetic Surgery Landing)
+# Template: Vitalis (Medical & Cosmetic Surgery Landing)
 
 ## Purpose
 
-Aesthetic is a single-page medical/cosmetic-surgery landing template in the
+Vitalis is a single-page medical/cosmetic-surgery landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Aesthetic" design (see TEMPLATES.md), built under the
 monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The original is a clean medical page with teal accents: a photo hero
 ("Take the world's best quality Treatment" + Contact us), a consultation
-band, a "Find Best Doctors With AESTHETIC" choose-us row (Advanced
+band, a "Find Best Doctors With VITALIS" choose-us row (Advanced
 equipment, Qualified doctors, Certified services, Emergency care), a
 procedures grid (Body procedures, Facial Procedures, Breast procedures,
 Skin care & Beauty), an "Our Expert Doctors" team (Caroline Grant, Dr.
 Maria Angel, Nathan Mullins), a "Skin care tips" blog row, and a footer
-with subscribe/company/quick-links/contact columns. Aesthetic recreates
+with subscribe/company/quick-links/contact columns. Vitalis recreates
 that structure section-for-section with matching layout, colors,
 typography, and content types (no ColorLib assets copied).
 
@@ -33,7 +33,7 @@ typography, and content types (no ColorLib assets copied).
   2. Hero (`hero spad set-bg`): "Take the world's best quality Treatment" +
      "Contact us" CTA.
   3. Consultation (`consultation`): consultation band with form/CTA.
-  4. Choose us (`chooseus spad`): "Find Best Doctors With AESTHETIC" + 4
+  4. Choose us (`chooseus spad`): "Find Best Doctors With VITALIS" + 4
      icon cards (Advanced equipment, Qualified doctors, Certified services,
      Emergency care).
   5. Services (`services spad set-bg`): procedures grid (Body procedures,
@@ -57,9 +57,9 @@ typography, and content types (no ColorLib assets copied).
   icons; procedures grid with photo cards; doctor cards with initials
   avatars; blog cards with seeded photos; footer with newsletter/contact
   columns and social links; all images picsum-seeded
-  (`picsum.photos/seed/aesthetic-N/w/h`); Google Fonts via `<link>`.
+  (`picsum.photos/seed/vitalis-N/w/h`); Google Fonts via `<link>`.
 
-Aesthetic lives in `apps/aesthetic` and uses shared components from
+Vitalis lives in `apps/vitalis` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
@@ -67,13 +67,13 @@ Aesthetic lives in `apps/aesthetic` and uses shared components from
 ### Requirement: Navigation bar
 
 The system SHALL render a top navigation bar with the site name
-"Aesthetic", a "Home" link, and a dark-mode toggle button.
+"Vitalis", a "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Aesthetic page is rendered
+- **GIVEN** the Vitalis page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Aesthetic" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Vitalis" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -104,7 +104,7 @@ cards.
 
 - **GIVEN** the page is rendered
 - **WHEN** the choose-us section is displayed
-- **THEN** it SHALL show a heading (e.g. "Find Best Doctors With AESTHETIC")
+- **THEN** it SHALL show a heading (e.g. "Find Best Doctors With VITALIS")
 - **AND** it SHALL render four icon cards (Advanced equipment, Qualified doctors, Certified services, Emergency care)
 
 ### Requirement: Procedures
@@ -139,7 +139,7 @@ details, and social links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Aesthetic" and quick links
+- **THEN** it SHALL show the site name "Vitalis" and quick links
 - **AND** it SHALL show contact details and social links (GitHub, X, LinkedIn)
 
 ### Requirement: Page composition
@@ -149,7 +149,7 @@ a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Aesthetic app is rendered
+- **GIVEN** the Vitalis app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Aesthetic — Medical & Cosmetic Surgery Template"
+- **AND** the document title SHALL be "Vitalis — Medical & Cosmetic Surgery Template"
