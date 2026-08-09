@@ -186,7 +186,7 @@
 
 ## Barber (17)
 
-- [ ] **Alotan** — [colorlib](https://colorlib.com/wp/template/alotan/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alotan-free-template.jpg)
+- [~] **Alotan** — [colorlib](https://colorlib.com/wp/template/alotan/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alotan-free-template.jpg)
 - [ ] **Barber** — [colorlib](https://colorlib.com/wp/template/barber/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barber-free-barber-website-template.jpg)
 - [ ] **Barbero** — [colorlib](https://colorlib.com/wp/template/barbero/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barbero-colorlib-template.jpg)
 - [ ] **Barberz** — [colorlib](https://colorlib.com/wp/template/barberz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barberz-free-template.jpg)
