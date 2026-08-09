@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Crewcut brand palette — recreated from the ColorLib "Barber" design
+     (css/main.css): pink→purple gradient #f61daf → #691cff on the navbar,
+     banner, primary buttons, and hover accents. */
+  --color-brand: #f61daf;
+  --color-brand-dark: #691cff;
+
+  /* Ink — headings + footer background (#222222 from the original). */
+  --color-ink: #222222;
+
+  /* Mist — body text (#777777 from the original). */
+  --color-mist: #777777;
+
+  /* Paper — light section backgrounds (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand pink. */
+  --color-primary-50: #fdf0fa;
+  --color-primary-100: #fbdff3;
+  --color-primary-200: #f8bfe8;
+  --color-primary-300: #f48fd6;
+  --color-primary-400: #ee52bd;
+  --color-primary-500: #e62ba8;
+  --color-primary-600: #f61daf;
+  --color-primary-700: #d31294;
+  --color-primary-800: #b3127c;
+  --color-primary-900: #94156a;
+
+  /* Original font: "Poppins" (Google Fonts via index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
