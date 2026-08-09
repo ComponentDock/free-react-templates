@@ -1,18 +1,19 @@
-# Template: Br (Barber Shop Landing)
+# Template: Buzz (Barber Shop Landing)
 
 ## Purpose
 
-Br is a single-page barber-shop landing template in the free-react-templates
+Buzz is a single-page barber-shop landing template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Br" design
 (see TEMPLATES.md), built under the monorepo stack: Vite + React 19 + Tailwind
-CSS 4 + TypeScript.
+CSS 4 + TypeScript. The recreation carries the NEW name "Buzz" (never the
+source name).
 
 The original is a light barber landing page with orange-red accents: a
 900px photo slider hero ("Modern barber shop in center of the city"), an
 about split with opening hours, a three-card services grid, a tabbed pricing
 section with six $8 price rows, a three-member barbers team, a photo
 testimonial band, a "Make an Appointment" section with a booking form, and a
-near-black footer. Br recreates that structure section-for-section with
+near-black footer. Buzz recreates that structure section-for-section with
 matching layout, colors, typography, and content types (no ColorLib assets
 copied).
 
@@ -59,25 +60,24 @@ copied).
   dark-mode toggle) + Footer chrome; hero uses a seeded picsum photo with the
   headline; about split with opening hours; services with lucide icons;
   pricing with tabbed category headers and price rows; team cards with
-  initials avatars; appointment section with a booking form (dropdowns +
-  submit); testimonial with initials avatar; newsletter input in the footer.
+  initials avatars; appointment section with a booking form (name/email + submit); testimonial with initials avatar; newsletter input in the footer.
   All images picsum-seeded, icons lucide-react (no assets copied).
 
-Br lives in `apps/br` and uses shared components from `packages/ui` (Button,
-ButtonLink, Card, Badge, cn).
+Buzz lives in `apps/buzz` and uses shared components from `packages/ui`
+(Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Br", a
+The system SHALL render a top navigation bar with the site name "Buzz", a
 "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Br page is rendered
+- **GIVEN** the Buzz page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Br" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Buzz" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -168,7 +168,7 @@ links, a newsletter field, and social links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Br" and quick links
+- **THEN** it SHALL show the site name "Buzz" and quick links
 - **AND** it SHALL show a newsletter input and social links (GitHub, X, LinkedIn)
 
 ### Requirement: Page composition
@@ -178,7 +178,7 @@ a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Br app is rendered
+- **GIVEN** the Buzz app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Br — Barber Shop Template"
+- **AND** the document title SHALL be "Buzz — Barber Shop Template"
