@@ -3,11 +3,14 @@
 ## FAST_MODE (temporarily active — see docs/FAST_MODE.md)
 
 The local gate is **per-app**: `bash scripts/verify-app.sh <app>` (typecheck +
-lint + 100% coverage tests + build for one workspace, ~2–3 min), enforced by
-the pre-push hook for the apps a push touches. The **full gate**
-(`npm run gate`) runs in CI on every merge and on a nightly sweep
-(`.github/workflows/nightly-gate.yml`). When the template backlog is done,
-restore the original full local gate per docs/FAST_MODE.md.
+lint + knip + fallow + 100% coverage tests + build for one workspace,
+~2–3 min), enforced by the pre-push hook for the apps a push touches. The
+**merge gate in CI** verifies only the changed apps (plus `packages/ui` when
+touched), and the **nightly sweep** (`.github/workflows/nightly-gate.yml`)
+runs the full repo-wide checks partitioned into shards — so regressions still
+surface within 24h. `npm run gate` runs the original full chain on demand.
+When the template backlog is done, restore the original full local gate per
+docs/FAST_MODE.md.
 
 ## The full gate (original contract, still available as `npm run gate`)
 
