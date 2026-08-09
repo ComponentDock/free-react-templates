@@ -212,7 +212,7 @@
 - [ ] **Barcut** — [colorlib](https://colorlib.com/wp/template/barcut/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barcut-free-template.jpg)
 - [x] **Camille** — [colorlib](https://colorlib.com/wp/template/camille/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/camille-free-template.jpg) · [peony](https://free-react-templates-peony.surge.sh)
 - [ ] **Diva** — [colorlib](https://colorlib.com/wp/template/diva/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/diva-free-template.jpg)
-- [ ] **Divisima** — [colorlib](https://colorlib.com/wp/template/divisima/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/divisima-free-template.jpg)
+- [~] **Divisima** — [colorlib](https://colorlib.com/wp/template/divisima/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/divisima-free-template.jpg)
 - [ ] **Energen** — [colorlib](https://colorlib.com/wp/template/energen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/energen-free-template.jpg)
 - [ ] **Erase** — [colorlib](https://colorlib.com/wp/template/erase/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/erase-free-template.jpg)
 - [ ] **Haircare** — [colorlib](https://colorlib.com/wp/template/haircare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/haircare-free-template.jpg)
