@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Tressly brand palette — recreated from the ColorLib "HairSal" design
+     (brand light green #8bc34a, light section bgs #edf0f5/#f4f5f9,
+     footer dark #25262a). */
+  --color-leaf-50: #f7fbf0;
+  --color-leaf-100: #edf7dd;
+  --color-leaf-200: #dbeebd;
+  --color-leaf-300: #c2e294;
+  --color-leaf-400: #a8d76a;
+  --color-leaf-500: #8bc34a;
+  --color-leaf-600: #6aa52f;
+  --color-leaf-700: #527f26;
+  --color-leaf-800: #436522;
+  --color-leaf-900: #385521;
+
+  /* primary = brand green (drives shared Button/ButtonLink defaults) */
+  --color-primary-50: #f7fbf0;
+  --color-primary-100: #edf7dd;
+  --color-primary-200: #dbeebd;
+  --color-primary-300: #c2e294;
+  --color-primary-400: #a8d76a;
+  --color-primary-500: #8bc34a;
+  --color-primary-600: #6aa52f;
+  --color-primary-700: #527f26;
+  --color-primary-800: #436522;
+  --color-primary-900: #385521;
+
+  --color-mist-100: #f4f5f9;
+  --color-mist-200: #edf0f5;
+  --color-ink-900: #25262a;
+
+  /* Poppins (body) + Display Playfair (display headings) — the original
+     template's typefaces (Google Fonts via index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
