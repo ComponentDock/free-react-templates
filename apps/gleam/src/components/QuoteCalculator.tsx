@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import { Minus, Plus } from 'lucide-react'
 import { cn } from '@free-react-templates/ui'
 
-export const propertyTypes = ['House', 'Apartment', 'Condo', 'Office'] as const
+const propertyTypes = ['House', 'Apartment', 'Condo', 'Office'] as const
 export const frequencies = ['One-Time', 'Weekly', 'Bi-Weekly', 'Monthly'] as const
 
 const PROPERTY_FACTOR: Record<(typeof propertyTypes)[number], number> = {
