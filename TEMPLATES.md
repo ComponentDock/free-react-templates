@@ -170,7 +170,7 @@
 - [x] **Vitality** — [colorlib](https://colorlib.com/wp/template/vitality/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vitality-template-1770211473540.jpg) · [cura](https://free-react-templates-cura.surge.sh)
 - [x] **Wanderlust** — [colorlib](https://colorlib.com/wp/template/wanderlust/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wanderlust-template-1770211435145.jpg) · [roamly](https://free-react-templates-roamly.surge.sh)
 - [x] **Wealthwise** — [colorlib](https://colorlib.com/wp/template/wealthwise/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wealthwise-template-1770211049269.jpg) · [vaultly](https://free-react-templates-vaultly.surge.sh)
-- [~] **Workhub** — [colorlib](https://colorlib.com/wp/template/workhub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workhub-template-1771943925457.jpg)
+- [x] **Workhub** — [colorlib](https://colorlib.com/wp/template/workhub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workhub-template-1771943925457.jpg) · [Deskly](https://free-react-templates-deskly.surge.sh)
 - [ ] **Youthconnect** — [colorlib](https://colorlib.com/wp/template/youthconnect/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youthconnect-template-1770211452999.jpg)
 
 ## Automotive (8)
@@ -1232,7 +1232,7 @@
 - [ ] **Wordpress Business Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-business-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-business-themes1.jpg)
 - [ ] **Wordpress Restaurant Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-restaurant-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jevelin-restaurant-website-template.jpg)
 - [ ] **Work** — [colorlib](https://colorlib.com/wp/template/work/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/work-free-template.jpg)
-- [ ] **Workhub** — [colorlib](https://colorlib.com/wp/template/workhub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workhub-template-1771943925457.jpg)
+[x] **Workhub** — [colorlib](https://colorlib.com/wp/template/workhub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workhub-template-1771943925457.jpg) · [Deskly](https://free-react-templates-deskly.surge.sh)
 - [ ] **Workout** — [colorlib](https://colorlib.com/wp/template/workout/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workout-free-template.jpg)
 - [ ] **Xgym** — [colorlib](https://colorlib.com/wp/template/xgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/xgym-free-template.jpg)
 - [ ] **Yoga Studio** — [colorlib](https://colorlib.com/wp/template/yoga-studio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogastudio-free-template.jpg)
