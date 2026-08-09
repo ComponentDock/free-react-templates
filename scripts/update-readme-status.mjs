@@ -16,6 +16,28 @@ const TEMPLATES_PATH = 'TEMPLATES.md'
 
 const templates = read(TEMPLATES_PATH)
 
+// Marketplace catalog (Component Dock / free-templates-firebase): any TPW
+// template already listed there gets a ✅ marker in the table. Reads the
+// firebase repo's generated catalog.json when it exists (CIA's 6.6 work),
+// otherwise falls back to the mock template names in api.ts.
+const MARKETPLACE_CATALOG = '/root/free-templates-firebase/src/data/catalog.json'
+const MARKETPLACE_MOCK = '/root/free-templates-firebase/src/lib/api.ts'
+const inMarketplace = new Set()
+const catalogRaw = read(MARKETPLACE_CATALOG)
+if (catalogRaw) {
+  try {
+    const cat = JSON.parse(catalogRaw)
+    const items = Array.isArray(cat) ? cat : (cat.templates ?? [])
+    for (const t of items) if (t.slug) inMarketplace.add(String(t.slug).toLowerCase())
+  } catch {
+    /* ignore malformed catalog — no markers */
+  }
+} else {
+  for (const m of read(MARKETPLACE_MOCK).matchAll(/name: '([^']+)'/g)) {
+    inMarketplace.add(m[1].toLowerCase().replace(/[^a-z0-9]+/g, '-'))
+  }
+}
+
 const statusRe = /^- \[( |x|~)\] \*\*(.+?)\*\*/ // any checklist item
 const surgeRe = /\[(\S+?)\]\((https:\/\/free-react-templates-(\S+?)\.surge\.sh)\)/
 
@@ -77,7 +99,7 @@ const rows = apps
     const info = recreated.get(app)
     const cats = [...info.categories].sort().join(', ')
     const title = app[0].toUpperCase() + app.slice(1)
-    return `| ${i + 1} | **${title}** | ${describe(app, info.source)} | ${cats} | [${app}.surge.sh](${info.preview}) |`
+    return `| ${i + 1} | **${title}**${inMarketplace.has(app) ? ' ✅' : ''} | ${describe(app, info.source)} | ${cats} | [${app}.surge.sh](${info.preview}) |`
   })
   .join('\n')
 
@@ -88,6 +110,8 @@ const section = `## Templates
 > Updated automatically after every template merge
 > (\`node scripts/update-readme-status.mjs\`). Each row is an original React
 > recreation of a ColorLib design, deployed to its own Surge subdomain.
+> Templates marked **✅** are also listed in the Component Dock marketplace
+> (free-templates-firebase mock catalog / Firestore).
 
 | # | Template | Description | Categories | Preview |
 | --- | --- | --- | --- | --- |
