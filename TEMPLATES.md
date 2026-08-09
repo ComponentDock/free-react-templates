@@ -159,7 +159,7 @@
 - [x] **Serenite** — [colorlib](https://colorlib.com/wp/template/serenite/) · [sooth](https://free-react-templates-sooth.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/serenite-template-1771943746919.jpg)
 - [x] **Serenity** · [hush](https://free-react-templates-hush.surge.sh) — [colorlib](https://colorlib.com/wp/template/serenity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/serenity-template-1770211390595.jpg)
 - [x] **Shieldguard** — [colorlib](https://colorlib.com/wp/template/shieldguard/) · [coverly](https://free-react-templates-coverly.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shieldguard-template-1771943902281.jpg)
-- [~] **Shieldnet** — [colorlib](https://colorlib.com/wp/template/shieldnet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shieldnet-template-1771944037639.jpg)
+- [x] **Shieldnet** — [colorlib](https://colorlib.com/wp/template/shieldnet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shieldnet-template-1771944037639.jpg) · [aegis](https://free-react-templates-aegis.surge.sh)
 - [ ] **Shopper** — [colorlib](https://colorlib.com/wp/template/shopper/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shopper-template-1770211205661.jpg)
 - [ ] **Solarshift** — [colorlib](https://colorlib.com/wp/template/solarshift/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solarshift-template.jpg)
 - [ ] **Solestyle** — [colorlib](https://colorlib.com/wp/template/solestyle/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solestyle-template-1770211411401.jpg)
