@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Allure brand palette — recreated from the ColorLib "Modelo" design
+     (styles/main_styles.css): brand purple #690772 (logo period, nav active
+     block, title spans, counters, hover states), deep purple #751b7e
+     (filters, buttons, input focus border). */
+  --color-brand: #690772;
+  --color-brand-deep: #751b7e;
+  --color-brand-dark: #5c0964;
+
+  /* Dark surfaces — header #0b0208 with bottom border #5b0857, near-black
+     headings #121212, pure black bands/contact block. */
+  --color-header: #0b0208;
+  --color-header-border: #5b0857;
+  --color-ink: #121212;
+
+  /* Grey scale — #505050 nav text, #616161 copyright, #777777 body/footer
+     list, #949494 stat values, #a4a4a4 placeholders, #cecfd1 tagline,
+     #dcdce1 dividers. */
+  --color-navtext: #505050;
+  --color-copyright: #616161;
+  --color-mist: #777777;
+  --color-fog: #949494;
+  --color-placeholder: #a4a4a4;
+  --color-tagline: #cecfd1;
+  --color-rule: #dcdce1;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the brand purple. */
+  --color-primary-50: #faf3fb;
+  --color-primary-100: #f4e6f6;
+  --color-primary-200: #e7cbec;
+  --color-primary-300: #d3a3dc;
+  --color-primary-400: #b872c6;
+  --color-primary-500: #9c4aab;
+  --color-primary-600: #690772;
+  --color-primary-700: #5c0964;
+  --color-primary-800: #4d0a54;
+  --color-primary-900: #3f0c45;
+
+  /* Original fonts: "Poppins" 500/700 stands in for the proprietary
+     HelveticaNeueLTPro headings/buttons, "Roboto" for body/nav/social via
+     Google Fonts. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

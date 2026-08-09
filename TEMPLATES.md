@@ -221,7 +221,7 @@
 - [ ] **Kayelux** — [colorlib](https://colorlib.com/wp/template/kayelux/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kayelux-colorlib-template.jpg)
 - [ ] **Makeupartist** — [colorlib](https://colorlib.com/wp/template/makeupartist/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/makeupartist-colorlib-template.jpg)
 - [x] **Medical Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/medical-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medical-website-templates.jpg) · [medora](https://free-react-templates-medora.surge.sh)
-- [ ] **Modelo** — [colorlib](https://colorlib.com/wp/template/modelo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modelo-free-template.jpg)
+- [~] **Modelo** — [colorlib](https://colorlib.com/wp/template/modelo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modelo-free-template.jpg)
 - [ ] **Modist** — [colorlib](https://colorlib.com/wp/template/modist/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modist-free-template.jpg)
 - [ ] **Muscle** — [colorlib](https://colorlib.com/wp/template/muscle/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/muscle-free-template.jpg)
 - [x] **Pretty** — [colorlib](https://colorlib.com/wp/template/pretty/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pretty-free-template.jpg) · [bloom](https://free-react-templates-bloom.surge.sh)
