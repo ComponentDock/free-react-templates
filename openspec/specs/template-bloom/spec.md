@@ -1,8 +1,8 @@
-# Template: Pretty (Beauty Salon Landing)
+# Template: Bloom (Beauty Salon Landing)
 
 ## Purpose
 
-Pretty is a single-page beauty-salon landing template in the
+Bloom is a single-page beauty-salon landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Pretty" design (see TEMPLATES.md), built under the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -60,23 +60,23 @@ content types (no ColorLib assets copied).
   portfolio tiles with seeded photos; pricing tiers; counter stats; blog
   cards with seeded photos; appointment form; footer with contact/hours and
   social links; all images picsum-seeded
-  (`picsum.photos/seed/pretty-N/w/h`); Google Fonts via `<link>`.
+  (`picsum.photos/seed/bloom-N/w/h`); Google Fonts via `<link>`.
 
-Pretty lives in `apps/pretty` and uses shared components from `packages/ui`
+Bloom lives in `apps/bloom` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Pretty", a
+The system SHALL render a top navigation bar with the site name "Bloom", a
 "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Pretty page is rendered
+- **GIVEN** the Bloom page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Pretty" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Bloom" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -143,7 +143,7 @@ opening hours, and social links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Pretty" and contact details
+- **THEN** it SHALL show the site name "Bloom" and contact details
 - **AND** it SHALL show opening hours and social links (GitHub, X, LinkedIn)
 
 ### Requirement: Page composition
@@ -153,7 +153,7 @@ a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Pretty app is rendered
+- **GIVEN** the Bloom app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Pretty — Beauty Salon Template"
+- **AND** the document title SHALL be "Bloom — Beauty Salon Template"
