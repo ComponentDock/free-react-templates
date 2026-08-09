@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Serenity brand palette — recreated from the ColorLib "Energen" spa design
+     (css/style.css): gold #d9bf77 accents + buttons, dark #212529 text,
+     muted body #a6a6a6, light #f8f9fa section bands, dark footer. */
+  --color-brand: #d9bf77;
+  --color-ink: #212529;
+  --color-mist: #a6a6a6;
+  --color-fog: #f8f9fa;
+  --color-line: #e9ecef;
+  --color-night: #212529;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the gold. */
+  --color-primary-50: #fbf7ec;
+  --color-primary-100: #f6eed7;
+  --color-primary-200: #edddae;
+  --color-primary-300: #e4cc85;
+  --color-primary-400: #ddc47c;
+  --color-primary-500: #d9bf77;
+  --color-primary-600: #c6a95e;
+  --color-primary-700: #b08f45;
+  --color-primary-800: #8e7236;
+  --color-primary-900: #6f5829;
+
+  /* Original fonts: "Open Sans" body (300, 18px, line-height 1.8) + "Prata"
+     serif display (hero h1, uppercase, wide letter-spacing) via Google Fonts. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Prata', ui-serif, Georgia, serif;
+}
