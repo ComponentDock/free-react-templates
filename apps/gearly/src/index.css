@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Gearly brand palette — recreated from the ColorLib "Dreams" design
+     (css/style.css): gold #f3bd00 primary buttons/accents. */
+  --color-brand: #f3bd00;
+  --color-brand-dark: #d9a800;
+
+  /* Navy — dark footer/secondary buttons (#0c2b4b from the original). */
+  --color-navy: #0c2b4b;
+
+  /* Ink — headings (#111111 from the original). */
+  --color-ink: #111111;
+
+  /* Mist — muted body text (#444444 from the original). */
+  --color-mist: #444444;
+
+  /* Paper — light section backgrounds (#f5f5f5 from the original). */
+  --color-paper: #f5f5f5;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand gold. */
+  --color-primary-50: #fffbe6;
+  --color-primary-100: #fff4bf;
+  --color-primary-200: #ffe980;
+  --color-primary-300: #ffdb40;
+  --color-primary-400: #fccc00;
+  --color-primary-500: #f3bd00;
+  --color-primary-600: #e0a800;
+  --color-primary-700: #c99300;
+  --color-primary-800: #a87a00;
+  --color-primary-900: #8a6500;
+
+  /* Original font: "Open Sans" (Google Fonts via index.html). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
