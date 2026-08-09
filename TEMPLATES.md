@@ -206,7 +206,7 @@
 
 ## Beauty (28)
 
-- [ ] **Aesthetic** — [colorlib](https://colorlib.com/wp/template/aesthetic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aesthetic-free-template.jpg)
+- [~] **Aesthetic** — [colorlib](https://colorlib.com/wp/template/aesthetic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aesthetic-free-template.jpg)
 - [ ] **Akame** — [colorlib](https://colorlib.com/wp/template/akame/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/akame-free-template.jpg)
 - [x] **Barberkraft** — [colorlib](https://colorlib.com/wp/template/barberkraft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barberkraft-template.jpg) · [fade](https://free-react-templates-fade.surge.sh)
 - [ ] **Barcut** — [colorlib](https://colorlib.com/wp/template/barcut/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barcut-free-template.jpg)
