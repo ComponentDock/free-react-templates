@@ -182,7 +182,7 @@
 - [x] **Carepair** — [colorlib](https://colorlib.com/wp/template/carepair/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carepair-free-template-1.jpg) · [fixly](https://free-react-templates-fixly.surge.sh)
 - [x] **Carrent** — [colorlib](https://colorlib.com/wp/template/carrent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carrent-free-template.jpg) · [drively](https://free-react-templates-drively.surge.sh)
 - [ ] **Dreams** — [colorlib](https://colorlib.com/wp/template/dreams/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dreams-free-template.jpg)
-- [ ] **Hvac** — [colorlib](https://colorlib.com/wp/template/hvac/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hvac-free-template.jpg)
+- [~] **Hvac** — [colorlib](https://colorlib.com/wp/template/hvac/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hvac-free-template.jpg)
 
 ## Barber (17)
 
