@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Slick brand palette — recreated from the ColorLib "Narosundar" design
+     (assets/css/style.css): brand red #FB0000 accents/buttons, CTA blue
+     #2845BA (Free Quote / Book Now), light section bgs #f9f9ff + lavender
+     #f0e9ff, dark bands #150303 (prices band + footer), muted text #999999. */
+  --color-brand: #fb0000;
+  --color-brand-dark: #d40000;
+  --color-cta: #2845ba;
+  --color-cta-dark: #1f3694;
+
+  /* Coal — dark bands + footer (#150303 from the original). */
+  --color-coal: #150303;
+  --color-coal-dark: #0c0202;
+
+  /* Paper — light section backgrounds (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Lavender — alternating light section background (#f0e9ff original). */
+  --color-lavender: #f0e9ff;
+
+  /* Mist — muted body text (#999999 from the original). */
+  --color-mist: #999999;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand red. */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #fb0000;
+  --color-primary-600: #d40000;
+  --color-primary-700: #b30000;
+  --color-primary-800: #8a0000;
+  --color-primary-900: #660000;
+
+  /* Original fonts: "Chivo" (sans headings) + "Open Sans" (body). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Chivo', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
