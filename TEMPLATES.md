@@ -166,7 +166,7 @@
 - [x] **Sparkleclean** — [colorlib](https://colorlib.com/wp/template/sparkleclean/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sparkleclean-template.jpg) · [gleam](https://free-react-templates-gleam.surge.sh)
 - [x] **Swiftmove** — [colorlib](https://colorlib.com/wp/template/swiftmove/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/swiftmove-template-1771943964825.jpg) · [movere](https://free-react-templates-movere.surge.sh)
 - [ ] **The Grand Azure** — [colorlib](https://colorlib.com/wp/template/the-grand-azure/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/grandazure-template-1771943856380.jpg)
-- [ ] **The Hustle Hour** — [colorlib](https://colorlib.com/wp/template/the-hustle-hour/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hustlehour-template-1771943880509.jpg)
+- [~] **The Hustle Hour** — [colorlib](https://colorlib.com/wp/template/the-hustle-hour/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hustlehour-template-1771943880509.jpg)
 - [ ] **Vitality** — [colorlib](https://colorlib.com/wp/template/vitality/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vitality-template-1770211473540.jpg)
 - [ ] **Wanderlust** — [colorlib](https://colorlib.com/wp/template/wanderlust/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wanderlust-template-1770211435145.jpg)
 - [ ] **Wealthwise** — [colorlib](https://colorlib.com/wp/template/wealthwise/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wealthwise-template-1770211049269.jpg)
