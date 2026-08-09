@@ -1,8 +1,8 @@
-# Template: Hairsal (Hair Salon Landing)
+# Template: Tressly (Hair Salon Landing)
 
 ## Purpose
 
-Hairsal is a single-page hair-salon landing template in the
+Tressly is a single-page hair-salon landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "HairSal" design (see TEMPLATES.md), built under the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -11,7 +11,7 @@ The original is a clean salon page with green accents: a hero slider
 ("Welcome to Hairsal" / "Hair Salon Expert" / "Beautiful Hair, Healthy
 You!"), an about split with opening hours, a featured-services row (Barber
 Razor, Location Pin, Barber Shave), a second about block, and a dark footer
-with quick links and a newsletter form. Hairsal recreates that structure
+with quick links and a newsletter form. Tressly recreates that structure
 section-for-section with matching layout, colors, typography, and content
 types (no ColorLib assets copied).
 
@@ -31,40 +31,41 @@ types (no ColorLib assets copied).
      Expert" / "Beautiful Hair, Healthy You!" headlines + CTA.
   3. About (`site-section bg-light`): "Welcome to Hair Salon" + copy +
      "Opening Hours" panel.
-  4. Featured services (`site-section`): "Experience Our Outstanding
-     Services" + 4 icon cards (Barber Razor, Location Pin, Barber Shave,
-     New hairstyle!).
-  5. About Hairsal (`site-section`): "About Hairsal" + copy + stats.
-  6. Footer: "Quick Menu" links + "Subscribe Newsletter" form + copyright.
+  4. Featured services (`site-section`): "Featured Services" + icon cards
+     (Barber Razor, Location Pin, Barber Shave).
+  5. "New hairstyle!" band + "Experience Our Outstanding Services" image
+     band with white display text.
+  6. Footer: "About Hairsal" / "Quick Menu" links + "Subscribe Newsletter"
+     form + copyright.
 - **Design tokens extracted from `css/style.css`:**
   - Brand color: **#8bc34a** (light green — accents, buttons).
   - Dark text: **#25262a**; light section backgrounds `#edf0f5`/`#f4f5f9`;
     footer dark `#25262a`.
   - Font: **"Display Playfair"** for display headings (recreated with Google
-    Font **Playfair Display**) + sans body.
+    Font **Playfair Display**) + Poppins sans body.
   - Buttons: green filled, uppercase.
 - **Recreation decisions:** repo-standard Navbar (site name, Home link,
   dark-mode toggle) + Footer chrome; hero = seeded picsum photo slider with
   the headline; about split with opening hours; featured services with
   lucide icons; second about block with stats; footer with newsletter form;
-  all images picsum-seeded (`picsum.photos/seed/hairsal-N/w/h`); Google
+  all images picsum-seeded (`picsum.photos/seed/tressly-N/w/h`); Google
   Fonts via `<link>`.
 
-Hairsal lives in `apps/hairsal` and uses shared components from `packages/ui`
+Tressly lives in `apps/tressly` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Hairsal", a
+The system SHALL render a top navigation bar with the site name "Tressly", a
 "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Hairsal page is rendered
+- **GIVEN** the Tressly page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Hairsal" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Tressly" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -107,19 +108,31 @@ cards.
 
 - **GIVEN** the page is rendered
 - **WHEN** the featured services section is displayed
-- **THEN** it SHALL show the heading "Experience Our Outstanding Services"
+- **THEN** it SHALL show the heading "Featured Services"
 - **AND** it SHALL render three service cards (Barber Razor, Location Pin, Barber Shave)
 
-### Requirement: About Hairsal
+### Requirement: Experience band
 
-The system SHALL render an "About Hairsal" section with a heading and
-supporting copy.
+The system SHALL render a full-width "Experience Our Outstanding Services"
+band with a background image and a play link.
 
-#### Scenario: About Hairsal content
+#### Scenario: Experience band content
 
 - **GIVEN** the page is rendered
-- **WHEN** the About Hairsal section is displayed
-- **THEN** it SHALL show the heading "About Hairsal"
+- **WHEN** the experience band is displayed
+- **THEN** it SHALL show the heading "Experience Our Outstanding Services"
+- **AND** it SHALL show a play link ("Play salon video")
+
+### Requirement: About Tressly
+
+The system SHALL render an "About Tressly" section with a heading and
+supporting copy.
+
+#### Scenario: About Tressly content
+
+- **GIVEN** the page is rendered
+- **WHEN** the About Tressly section is displayed
+- **THEN** it SHALL show the heading "About Tressly"
 - **AND** it SHALL show at least one lead paragraph
 
 ### Requirement: Footer
@@ -131,7 +144,7 @@ newsletter form, and social links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Hairsal" and quick links
+- **THEN** it SHALL show the site name "Tressly" and quick links
 - **AND** it SHALL show a newsletter form (e.g. "Subscribe Newsletter")
 - **AND** it SHALL show social links (GitHub, X, LinkedIn)
 
@@ -142,7 +155,7 @@ a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Hairsal app is rendered
+- **GIVEN** the Tressly app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Hairsal — Hair Salon Template"
+- **AND** the document title SHALL be "Tressly — Hair Salon Template"
