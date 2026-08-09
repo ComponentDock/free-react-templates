@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Modish brand palette — recreated from the ColorLib "Divisima" design
+     (css/style.css): hot pink #f51167 accents + buttons, dark #414141
+     body text, #111111 headings, #f0f0f0/#ebebeb light section bgs,
+     #282828 footer. */
+  --color-brand: #f51167;
+  --color-brand-dark: #ec105a;
+  --color-ink: #414141;
+  --color-coal: #111111;
+  --color-night: #282828;
+  --color-fog: #f0f0f0;
+  --color-mist: #8f8f8f;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the hot pink. */
+  --color-primary-50: #fde7ef;
+  --color-primary-100: #fbcfe0;
+  --color-primary-200: #f79fc1;
+  --color-primary-300: #f36fa2;
+  --color-primary-400: #f53e84;
+  --color-primary-500: #f51167;
+  --color-primary-600: #e20d5b;
+  --color-primary-700: #ec105a;
+  --color-primary-800: #b30b48;
+  --color-primary-900: #8a0938;
+
+  /* Original font: "Josefin Sans" (sans-serif headings + body) via
+     Google Fonts. */
+  --font-sans: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+}
