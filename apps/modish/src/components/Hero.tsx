@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
-import { ButtonLink } from '@free-react-templates/ui'
+import { ButtonLink, cn } from '@free-react-templates/ui'
 
 const slides = [
   {
@@ -43,26 +42,26 @@ export function Hero() {
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
-      <div className="relative mx-auto flex max-w-6xl flex-col items-start justify-center px-4 py-28 sm:px-6 lg:min-h-[640px] lg:py-36">
+      <div className="relative mx-auto flex min-h-[640px] max-w-6xl flex-col items-start justify-center px-4 py-28 sm:px-6 lg:py-36">
         <div aria-live="polite" className="max-w-xl">
-          <span className="text-sm font-semibold uppercase tracking-[0.3em] text-brand">
+          <span className="text-lg font-semibold uppercase tracking-[0.2em] text-white/90">
             {slide.eyebrow}
           </span>
-          <h1 className="mt-3 text-5xl font-bold uppercase text-white sm:text-6xl">
+          <h1 className="mt-3 text-5xl font-bold uppercase leading-tight text-white sm:text-6xl">
             {slide.title}
           </h1>
-          <p className="mt-4 text-white/70">{slide.copy}</p>
+          <p className="mt-4 text-lg font-light text-white/70">{slide.copy}</p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <ButtonLink
               href="#latest"
-              className="rounded-full bg-brand px-8 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-white transition-colors hover:bg-brand-dark"
+              variant="outline"
+              className="rounded-full border border-white bg-transparent px-8 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10 dark:border-white dark:text-white dark:hover:bg-white/10"
             >
               Discover
             </ButtonLink>
             <ButtonLink
               href="#top-selling"
-              variant="outline"
-              className="rounded-full border-white/50 px-8 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-white/10 dark:border-white/50 dark:text-white dark:hover:bg-white/10"
+              className="rounded-full bg-white px-8 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-coal transition-colors hover:bg-white/80"
             >
               Add to Cart
             </ButtonLink>
@@ -71,35 +70,39 @@ export function Hero() {
 
         <div
           aria-label={`Offer: from $${slide.price}`}
-          className="absolute right-10 top-28 hidden h-36 w-36 rotate-45 items-center justify-center rounded-2xl bg-brand text-center text-white shadow-xl md:flex lg:right-24"
+          className="absolute right-10 top-28 hidden h-36 w-36 rotate-45 items-center justify-center rounded-full bg-brand text-center text-white shadow-xl ring-4 ring-blush/60 md:flex lg:right-24"
         >
           <div className="-rotate-45">
             <p className="text-xs font-medium uppercase tracking-widest">from</p>
-            <p className="text-3xl font-bold">${slide.price}</p>
+            <p className="text-4xl font-normal">${slide.price}</p>
             <p className="text-[10px] font-semibold uppercase tracking-widest">Shop Now</p>
           </div>
         </div>
 
         <div className="mt-10 flex items-center gap-3">
-          <button
-            type="button"
-            onClick={() => goTo(index - 1)}
-            aria-label="Previous slide"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 text-white/80 transition-colors hover:border-brand hover:text-brand"
+          <span
+            aria-label={`Slide ${index + 1} of ${slides.length}`}
+            className="text-2xl font-bold text-white"
           >
-            <ChevronLeft className="h-5 w-5" aria-hidden="true" />
-          </button>
-          <button
-            type="button"
-            onClick={() => goTo(index + 1)}
-            aria-label="Next slide"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 text-white/80 transition-colors hover:border-brand hover:text-brand"
-          >
-            <ChevronRight className="h-5 w-5" aria-hidden="true" />
-          </button>
-          <span className="ml-2 text-sm tracking-[0.2em] text-white/60">
-            {index + 1} / {slides.length}
+            {index + 1}
+            <span aria-hidden="true" className="mx-2 inline-block h-6 w-px rotate-12 bg-white/60" />
+            {slides.length}
           </span>
+          <div className="ml-4 flex items-center gap-2">
+            {slides.map((_, dotIndex) => (
+              <button
+                key={dotIndex}
+                type="button"
+                onClick={() => goTo(dotIndex)}
+                aria-label={`Go to slide ${dotIndex + 1}`}
+                aria-current={dotIndex === index}
+                className={cn(
+                  'h-2 rounded-full transition-all',
+                  dotIndex === index ? 'w-6 bg-brand' : 'w-2 bg-white/40 hover:bg-white/70',
+                )}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

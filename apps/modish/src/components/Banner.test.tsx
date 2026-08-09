@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react'
 import { Banner } from './Banner'
 
 describe('Banner', () => {
-  it('renders the promo label, headline and shop button', () => {
+  it('renders the green NEW tag, eyebrow, headline and shop button', () => {
     render(<Banner />)
     expect(screen.getByText('New')).toBeInTheDocument()
     expect(screen.getByText('New Arrivals')).toBeInTheDocument()

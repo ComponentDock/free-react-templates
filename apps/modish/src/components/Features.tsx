@@ -1,15 +1,17 @@
-import { Gem, ShieldCheck, Truck } from 'lucide-react'
+import { Gem, Lock, Truck } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
+import { cn } from '@free-react-templates/ui'
 
 interface Feature {
   icon: LucideIcon
   title: string
   copy: string
+  highlighted?: boolean
 }
 
 const features: Feature[] = [
   {
-    icon: ShieldCheck,
+    icon: Lock,
     title: 'Fast Secure Payments',
     copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
   },
@@ -17,6 +19,7 @@ const features: Feature[] = [
     icon: Gem,
     title: 'Premium Products',
     copy: 'Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas.',
+    highlighted: true,
   },
   {
     icon: Truck,
@@ -27,23 +30,36 @@ const features: Feature[] = [
 
 export function Features() {
   return (
-    <section id="features" className="bg-fog py-16 transition-colors dark:bg-gray-900">
-      <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:grid-cols-3 sm:px-6">
+    <section id="features" className="bg-white transition-colors dark:bg-gray-950">
+      <div className="mx-auto grid max-w-6xl md:grid-cols-3">
         {features.map((feature) => {
           const Icon = feature.icon
           return (
             <div
               key={feature.title}
-              className="flex items-start gap-4 rounded-lg bg-white p-6 shadow-sm transition-colors dark:bg-gray-800"
+              className={cn(
+                'flex items-center gap-4 px-6 py-6',
+                feature.highlighted
+                  ? 'bg-brand text-white'
+                  : 'bg-snow text-coal dark:bg-gray-900 dark:text-white',
+              )}
             >
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand/10 text-brand">
+              <span
+                className={cn(
+                  'flex h-12 w-12 shrink-0 items-center justify-center rounded-full',
+                  feature.highlighted ? 'bg-white/20' : 'bg-brand/10 text-brand',
+                )}
+              >
                 <Icon className="h-6 w-6" aria-hidden="true" />
               </span>
               <div>
-                <h2 className="font-semibold uppercase tracking-wide text-coal dark:text-white">
-                  {feature.title}
-                </h2>
-                <p className="mt-2 text-sm leading-relaxed text-mist dark:text-white/60">
+                <h2 className="text-lg font-semibold uppercase tracking-wide">{feature.title}</h2>
+                <p
+                  className={cn(
+                    'mt-1 text-sm leading-relaxed',
+                    feature.highlighted ? 'text-white/80' : 'text-mist dark:text-white/60',
+                  )}
+                >
                   {feature.copy}
                 </p>
               </div>

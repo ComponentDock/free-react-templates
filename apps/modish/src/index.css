@@ -11,10 +11,14 @@
      #282828 footer. */
   --color-brand: #f51167;
   --color-brand-dark: #ec105a;
+  --color-blush: #f96790;
   --color-ink: #414141;
   --color-coal: #111111;
   --color-night: #282828;
   --color-fog: #f0f0f0;
+  --color-snow: #f8f8f8;
+  --color-ash: #ebebeb;
+  --color-mint: #50e550;
   --color-mist: #8f8f8f;
 
   /* Primary scale so shared ui Button/ButtonLink `primary` variants

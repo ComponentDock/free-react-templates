@@ -8,13 +8,13 @@ export function Banner() {
         alt=""
         className="absolute inset-0 h-full w-full object-cover"
       />
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-white/40" />
       <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 py-20 text-center sm:px-6">
-        <span className="text-xs font-bold uppercase tracking-[0.3em] text-brand">New</span>
-        <p className="mt-2 text-sm font-medium uppercase tracking-[0.3em] text-white/80">
-          New Arrivals
-        </p>
-        <h2 className="mt-3 text-4xl font-bold uppercase tracking-wider text-white sm:text-5xl">
+        <span className="absolute right-6 top-6 rounded-full bg-mint px-4 py-1.5 text-sm font-bold uppercase tracking-widest text-white">
+          New
+        </span>
+        <p className="text-lg font-semibold uppercase tracking-[0.2em] text-coal">New Arrivals</p>
+        <h2 className="mt-2 text-4xl font-bold uppercase tracking-wider text-night sm:text-5xl">
           Striped Shirts
         </h2>
         <ButtonLink

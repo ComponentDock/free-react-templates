@@ -9,7 +9,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Modish — eCommerce Template'
+    document.title = 'Modish — Fashion Store'
   }, [])
 
   return (

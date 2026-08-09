@@ -5,13 +5,14 @@ import { App } from './App'
 describe('App', () => {
   it('sets the document title', () => {
     render(<App />)
-    expect(document.title).toBe('Modish — eCommerce Template')
+    expect(document.title).toBe('Modish — Fashion Store')
   })
 
-  it('composes the navbar, sections and footer in their landmarks', () => {
+  it('composes the header, sections and footer in their landmarks', () => {
     render(<App />)
     const banner = screen.getByRole('banner')
     expect(within(banner).getByRole('link', { name: /modish/i })).toBeInTheDocument()
+    expect(within(banner).getByRole('link', { name: /shopping cart/i })).toBeInTheDocument()
 
     const main = screen.getByRole('main')
     expect(

@@ -3,10 +3,15 @@ import { render, screen } from '@testing-library/react'
 import { Footer } from './Footer'
 
 describe('Footer', () => {
-  it('renders the brand, about text and question link columns', () => {
+  it('renders the centered logo and the about widget with payment icons', () => {
     render(<Footer />)
     expect(screen.getByText('Modish')).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /about/i })).toBeInTheDocument()
     expect(screen.getByText(/donec vitae purus nunc/i)).toBeInTheDocument()
+  })
+
+  it('renders the question link columns', () => {
+    render(<Footer />)
     expect(screen.getByRole('heading', { name: /questions/i })).toBeInTheDocument()
     for (const item of [
       'About Us',
@@ -35,14 +40,30 @@ describe('Footer', () => {
     expect(screen.getAllByRole('link', { name: 'Read More' })).toHaveLength(2)
   })
 
-  it('renders the contact details and social links', () => {
+  it('renders the contact widget with letter marks', () => {
     render(<Footer />)
     expect(screen.getByRole('heading', { name: /contact/i })).toBeInTheDocument()
-    expect(screen.getByText('C. Your Company Ltd')).toBeInTheDocument()
+    expect(screen.getByText('C.')).toBeInTheDocument()
+    expect(screen.getByText('Your Company Ltd')).toBeInTheDocument()
+    expect(screen.getByText('B.')).toBeInTheDocument()
     expect(screen.getByText(/1481 Creekside Lane/i)).toBeInTheDocument()
-    expect(screen.getByText('T. +53 345 7953 32453')).toBeInTheDocument()
-    expect(screen.getByText('E. office@youremail.com')).toBeInTheDocument()
-    for (const label of ['Instagram', 'Facebook', 'Twitter', 'Linkedin', 'Pinterest']) {
+    expect(screen.getByText('T.')).toBeInTheDocument()
+    expect(screen.getByText('+53 345 7953 32453')).toBeInTheDocument()
+    expect(screen.getByText('E.')).toBeInTheDocument()
+    expect(screen.getByText('office@youremail.com')).toBeInTheDocument()
+  })
+
+  it('renders the social strip with seven brand links', () => {
+    render(<Footer />)
+    for (const label of [
+      'Instagram',
+      'Google Plus',
+      'Pinterest',
+      'Facebook',
+      'Twitter',
+      'YouTube',
+      'Tumblr',
+    ]) {
       expect(screen.getByRole('link', { name: label })).toBeInTheDocument()
     }
   })

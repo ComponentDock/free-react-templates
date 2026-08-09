@@ -1,28 +1,28 @@
-import { useEffect, useState } from 'react'
-import { Menu, ShoppingCart, X } from 'lucide-react'
+import { useState } from 'react'
+import { Menu, Search, ShoppingBag, User, X } from 'lucide-react'
 import { cn } from '@free-react-templates/ui'
 
-const links = [
+interface NavLink {
+  label: string
+  href: string
+  tag?: string
+}
+
+const navLinks: NavLink[] = [
   { label: 'Home', href: '#home' },
-  { label: 'Latest', href: '#latest' },
-  { label: 'Top Selling', href: '#top-selling' },
-  { label: 'Features', href: '#features' },
-  { label: 'Contact', href: '#contact' },
-] as const
+  { label: 'Women', href: '#latest' },
+  { label: 'Men', href: '#top-selling' },
+  { label: 'Jewelry', href: '#banner', tag: 'New' },
+  { label: 'Shoes', href: '#latest' },
+  { label: 'Pages', href: '#top-selling' },
+  { label: 'Blog', href: '#banner' },
+]
 
 export function Navbar() {
-  const [dark, setDark] = useState(false)
   const [open, setOpen] = useState(false)
 
-  useEffect(() => {
-    document.documentElement.classList.toggle('dark', dark)
-    return () => {
-      document.documentElement.classList.remove('dark')
-    }
-  }, [dark])
-
   return (
-    <header className="sticky top-0 z-50 border-b border-ink/10 bg-white/95 backdrop-blur transition-colors dark:border-white/10 dark:bg-gray-950/95">
+    <header className="bg-white transition-colors dark:bg-gray-950">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <a
           href="#home"
@@ -31,37 +31,50 @@ export function Navbar() {
           Modish<span className="text-brand">.</span>
         </a>
 
-        <nav aria-label="Primary" className="hidden items-center lg:flex">
-          {links.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className={cn(
-                'px-3 py-2 text-sm font-medium uppercase tracking-wide text-ink/70 transition-colors hover:text-brand dark:text-white/70',
-              )}
+        <form
+          role="search"
+          aria-label="Site search"
+          className="hidden flex-1 justify-center md:flex"
+          onSubmit={(event) => event.preventDefault()}
+        >
+          <div className="relative w-full max-w-xs">
+            <input
+              type="search"
+              placeholder="Search on modish ...."
+              aria-label="Search on modish"
+              className="h-11 w-full rounded-full border-none bg-fog px-5 pr-11 text-sm text-coal outline-none transition-shadow placeholder:text-mist focus:ring-2 focus:ring-brand/40 dark:bg-gray-800 dark:text-white"
+            />
+            <button
+              type="submit"
+              aria-label="Search"
+              className="absolute right-1 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full text-mist transition-colors hover:text-brand"
             >
-              {link.label}
-            </a>
-          ))}
-        </nav>
+              <Search className="h-4 w-4" aria-hidden="true" />
+            </button>
+          </div>
+        </form>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-5">
           <a
-            href="#top-selling"
-            aria-label="Shopping cart"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-ink/20 text-ink/80 transition-colors hover:border-brand hover:text-brand dark:border-white/20 dark:text-white/80"
+            href="#home"
+            className="hidden items-center gap-2 text-sm font-medium text-ink/80 transition-colors hover:text-brand dark:text-white/80 lg:flex"
           >
-            <ShoppingCart className="h-5 w-5" aria-hidden="true" />
+            <User className="h-4 w-4" aria-hidden="true" />
+            Sign In or Create Account
           </a>
 
-          <button
-            type="button"
-            onClick={() => setDark((current) => !current)}
-            aria-label="Toggle dark mode"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-ink/20 text-ink/80 transition-colors hover:border-brand hover:text-brand dark:border-white/20 dark:text-white/80"
+          <a
+            href="#top-selling"
+            className="flex items-center gap-2 text-sm font-medium text-ink/80 transition-colors hover:text-brand dark:text-white/80"
           >
-            {dark ? '☀' : '☾'}
-          </button>
+            <span className="relative">
+              <ShoppingBag className="h-5 w-5" aria-hidden="true" />
+              <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-brand text-[10px] font-bold text-white">
+                0
+              </span>
+            </span>
+            <span className="hidden sm:inline">Shopping Cart</span>
+          </a>
 
           <button
             type="button"
@@ -79,23 +92,46 @@ export function Navbar() {
         </div>
       </div>
 
-      {open && (
-        <nav
-          aria-label="Mobile"
-          className="border-t border-ink/10 bg-white/95 px-4 py-3 lg:hidden dark:border-white/10 dark:bg-gray-950/95"
-        >
-          {links.map((link) => (
+      <nav aria-label="Primary" className="bg-night text-white transition-colors dark:bg-gray-950">
+        <div className="mx-auto hidden max-w-6xl items-center gap-1 px-4 sm:px-6 lg:flex">
+          {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              onClick={() => setOpen(false)}
-              className="block py-2 text-sm font-medium uppercase tracking-wide text-ink/70 transition-colors hover:text-brand dark:text-white/70"
+              className={cn(
+                'flex items-center gap-1.5 px-4 py-4 text-base font-medium uppercase tracking-wide text-white/90 transition-colors hover:text-brand',
+              )}
             >
               {link.label}
+              {link.tag && (
+                <span className="rounded-full bg-brand px-2 py-0.5 text-[10px] font-bold uppercase text-white">
+                  {link.tag}
+                </span>
+              )}
             </a>
           ))}
-        </nav>
-      )}
+        </div>
+
+        {open && (
+          <nav aria-label="Mobile" className="border-t border-white/10 px-4 py-3 lg:hidden">
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="flex items-center gap-2 py-2 text-sm font-medium uppercase tracking-wide text-white/80 transition-colors hover:text-brand"
+              >
+                {link.label}
+                {link.tag && (
+                  <span className="rounded-full bg-brand px-2 py-0.5 text-[10px] font-bold uppercase text-white">
+                    {link.tag}
+                  </span>
+                )}
+              </a>
+            ))}
+          </nav>
+        )}
+      </nav>
     </header>
   )
 }

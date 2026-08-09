@@ -19,21 +19,27 @@ describe('Hero', () => {
       '#top-selling',
     )
     expect(screen.getByLabelText('Offer: from $29')).toBeInTheDocument()
-    expect(screen.getByText('1 / 2')).toBeInTheDocument()
+    expect(screen.getByLabelText('Slide 1 of 2')).toBeInTheDocument()
   })
 
-  it('advances and wraps with the next and previous buttons', () => {
+  it('moves between slides with the dots and keeps the content in place', () => {
     render(<Hero />)
-    fireEvent.click(screen.getByRole('button', { name: 'Next slide' }))
+    expect(screen.getByRole('button', { name: 'Go to slide 1' })).toHaveAttribute(
+      'aria-current',
+      'true',
+    )
+
+    fireEvent.click(screen.getByRole('button', { name: 'Go to slide 2' }))
     expect(screen.getByRole('heading', { name: /summer dresses/i })).toBeInTheDocument()
-    expect(screen.getByText('2 / 2')).toBeInTheDocument()
     expect(screen.getByLabelText('Offer: from $45')).toBeInTheDocument()
+    expect(screen.getByLabelText('Slide 2 of 2')).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Go to slide 2' })).toHaveAttribute(
+      'aria-current',
+      'true',
+    )
 
-    fireEvent.click(screen.getByRole('button', { name: 'Next slide' }))
+    fireEvent.click(screen.getByRole('button', { name: 'Go to slide 1' }))
     expect(screen.getByRole('heading', { name: /denim jackets/i })).toBeInTheDocument()
-
-    fireEvent.click(screen.getByRole('button', { name: 'Previous slide' }))
-    expect(screen.getByRole('heading', { name: /summer dresses/i })).toBeInTheDocument()
   })
 
   it('auto-advances the slider and cleans up its timer', () => {
