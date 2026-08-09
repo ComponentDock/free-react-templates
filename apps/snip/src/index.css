@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Snip brand palette — recreated from the ColorLib "Hairsalone" design
+     (assets/css/style.css): hot pink #FF4495 accents, navy #00044A/#140C40
+     headings, light section bgs #f9f9ff + lavender #f0e9ff, dark navy
+     footer. */
+  --color-brand: #ff4495;
+  --color-brand-dark: #d92d7d;
+  --color-brand-light: #ff7cb3;
+
+  /* Navy — headings + dark footer (#00044A / #140C40 from the original). */
+  --color-navy: #140c40;
+  --color-navy-dark: #0a0630;
+
+  /* Paper — light section backgrounds (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Lavender — alternating light section background (#f0e9ff original). */
+  --color-lavender: #f0e9ff;
+
+  /* Mist — muted body text (#999999 from the original). */
+  --color-mist: #999999;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand pink. */
+  --color-primary-50: #fff0f7;
+  --color-primary-100: #ffdceb;
+  --color-primary-200: #ffb8d6;
+  --color-primary-300: #ff8fbe;
+  --color-primary-400: #ff66a5;
+  --color-primary-500: #ff4495;
+  --color-primary-600: #d92d7d;
+  --color-primary-700: #b02064;
+  --color-primary-800: #871a4d;
+  --color-primary-900: #5e1336;
+
+  /* Original fonts: "Rufina" (serif headings) + "Karla" (sans body). */
+  --font-sans: 'Karla', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Rufina', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

@@ -1,8 +1,8 @@
-# Template: Hairsalone (Barber Shop Landing)
+# Template: Snip (Barber Shop Landing)
 
 ## Purpose
 
-Hairsalone is a single-page barber-shop landing template in the
+Snip is a single-page barber-shop landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Hairsalone" design (see TEMPLATES.md), built under the
 monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -12,10 +12,10 @@ headings: a photo slider hero ("Good Look Guaranteed" / "Experienced and
 traditional stylish barber shop"), an about split with a framed photo, a
 services row (Stylish hair cut, Cut & hair style, Color & hair wash), a
 pricing list (Stylish hair cut, Hair color, Wedding style, Hair straight), a
-three-member expert team, and a dark navy footer with useful links and
-contact details. Hairsalone recreates that structure section-for-section
-with matching layout, colors, typography, and content types (no ColorLib
-assets copied).
+two-member expert team, and a dark navy footer with useful links and
+contact details. Snip recreates that structure section-for-section with
+matching layout, colors, typography, and content types (no ColorLib assets
+copied).
 
 ## Design reference (replication findings)
 
@@ -33,13 +33,14 @@ assets copied).
      traditional stylish barber shop" + "Book An Appointment" / "About Us"
      buttons; second slide "Connect with your dream style" + lead copy.
   3. About (`about-area section-padding2`): framed photo + copy.
-  4. Categories (`categories-area bottom-padding`): category cards.
+  4. Categories (`categories-area bottom-padding`): "Our Services" section
+     intro heading + copy.
   5. Services: "Our Services" + 3 icon cards (Stylish hair cut, Cut & hair
      style, Color & hair wash).
   6. Pricing (`pricing-area section-padding2`): "Pricing List" + priced rows
-     (Stylish hair cut, Hair color, Wedding style, Hair straight).
+     (Stylish hair cut $40, Hair color, Wedding style, Hair straight).
   7. Team (`team-area section-padding`): "Expert Team" + member cards
-     (Marvin Gardens, Tara Zona) with social icons.
+     (Marvin Gardens, Tara Zona — Cutting Master) with social icons.
   8. Footer (`footer-area footer-bg`): logo + blurb, "Useful Links" (Design
      & creatives, Telecommunication, Restaurant, Programing, Architecture),
      "Contact us" (78/A, Green lane, Kings road, NYC-1989 ·
@@ -57,24 +58,24 @@ assets copied).
   headline and dual CTAs; about split with framed photo; services with
   lucide icons; pricing as priced rows; team cards with initials avatars and
   social icons; footer with contact details and social links; all images
-  picsum-seeded (`picsum.photos/seed/hairsalone-N/w/h`); Google Fonts via
+  picsum-seeded (`picsum.photos/seed/snip-N/w/h`); Google Fonts via
   `<link>`.
 
-Hairsalone lives in `apps/hairsalone` and uses shared components from
-`packages/ui` (Button, ButtonLink, Card, Badge, cn).
+Snip lives in `apps/snip` and uses shared components from `packages/ui`
+(Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name
-"Hairsalone", a "Home" link, and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name "Snip", a
+"Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Hairsalone page is rendered
+- **GIVEN** the Snip page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Hairsalone" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Snip" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -84,17 +85,23 @@ The system SHALL render a top navigation bar with the site name
 - **THEN** the `.dark` class SHALL be toggled on the document root element
 - **AND** the toggle SHALL reflect the current mode
 
-### Requirement: Hero
+### Requirement: Hero slider
 
-The system SHALL render a full-width hero with a background image, a level-1
-headline, and call-to-action buttons.
+The system SHALL render a full-width hero slider with background images, a
+level-1 headline per slide, and call-to-action buttons.
 
 #### Scenario: Hero content
 
 - **GIVEN** the page is rendered
 - **WHEN** the hero is displayed
 - **THEN** it SHALL show a level-1 headline (e.g. "Experienced and traditional stylish barber shop")
-- **AND** it SHALL show call-to-action buttons (e.g. "Book An Appointment")
+- **AND** it SHALL show a call-to-action button ("Book An Appointment")
+
+#### Scenario: Slide navigation
+
+- **GIVEN** the hero slider is displayed
+- **WHEN** the user presses the next-slide control
+- **THEN** the displayed headline SHALL change to the following slide
 
 ### Requirement: About section
 
@@ -104,12 +111,12 @@ The system SHALL render an about section with a heading and supporting copy.
 
 - **GIVEN** the page is rendered
 - **WHEN** the about section is displayed
-- **THEN** it SHALL show a heading and at least one lead paragraph
+- **THEN** it SHALL show a heading (e.g. "About Us")
+- **AND** it SHALL show at least one paragraph of copy
 
-### Requirement: Services grid
+### Requirement: Services
 
-The system SHALL render a "Our Services" section with at least three service
-cards.
+The system SHALL render a services section with at least three icon cards.
 
 #### Scenario: Service cards
 
@@ -118,28 +125,27 @@ cards.
 - **THEN** it SHALL show the heading "Our Services"
 - **AND** it SHALL render three service cards (Stylish hair cut, Cut & hair style, Color & hair wash)
 
-### Requirement: Pricing list
+### Requirement: Pricing
 
-The system SHALL render a pricing section with priced rows.
+The system SHALL render a pricing list with at least three priced rows.
 
-#### Scenario: Pricing content
+#### Scenario: Pricing rows
 
 - **GIVEN** the page is rendered
 - **WHEN** the pricing section is displayed
 - **THEN** it SHALL show the heading "Pricing List"
-- **AND** it SHALL render priced rows (e.g. Stylish hair cut, Hair color, Wedding style, Hair straight)
+- **AND** it SHALL render priced rows (Stylish hair cut, Hair color, Wedding style, Hair straight)
 
-### Requirement: Team
+### Requirement: Expert team
 
-The system SHALL render a team section with at least two member cards with
-names.
+The system SHALL render an expert team section with member cards.
 
 #### Scenario: Team cards
 
 - **GIVEN** the page is rendered
 - **WHEN** the team section is displayed
 - **THEN** it SHALL show the heading "Expert Team"
-- **AND** it SHALL render at least two member cards (e.g. Marvin Gardens, Tara Zona)
+- **AND** it SHALL render at least two member cards (Marvin Gardens, Tara Zona)
 
 ### Requirement: Footer
 
@@ -150,8 +156,8 @@ details, and social links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Hairsalone" and useful links
-- **AND** it SHALL show contact details (e.g. phone number)
+- **THEN** it SHALL show the site name "Snip" and useful links
+- **AND** it SHALL show contact details (address, email, phone)
 - **AND** it SHALL show social links (GitHub, X, LinkedIn)
 
 ### Requirement: Page composition
@@ -161,7 +167,7 @@ a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Hairsalone app is rendered
+- **GIVEN** the Snip app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Hairsalone — Barber Shop Template"
+- **AND** the document title SHALL be "Snip — Barber Shop Template"
