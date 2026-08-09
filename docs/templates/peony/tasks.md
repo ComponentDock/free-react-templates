@@ -1,7 +1,7 @@
-# Camille (Colorlib Camille) — Tasks & Design Notes
+# Peony (Colorlib Camille) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Cove PR awaits review.
-> Implementation ships later on `feat/template-camille`.
+> Implementation ships later on `feat/template-peony`.
 
 ## Design notes
 
@@ -31,15 +31,15 @@
   **Playfair Display** (serif) + brand display **Pacifico** (cursive) +
   body **Work Sans** via Google Fonts; rose-pink filled rounded uppercase
   buttons (`btn-primary`).
-- **Recreation name:** Camille. App folder `apps/camille`, package
-  `@free-react-templates/camille`.
+- **Recreation name:** Peony. App folder `apps/peony`, package
+  `@free-react-templates/peony`.
 - **Design approach:** light theme with rose-pink accents; hero = seeded
   picsum background photo + headline + CTA; about split; services with
   lucide icons; numbered service cards; booking band with service select;
   team cards with initials avatars; gallery grid with seeded photo tiles;
   pricing cards with feature lists; testimony band; footer with
   Information/Links/contact columns; all images picsum-seeded
-  (`picsum.photos/seed/camille-N/w/h`); Google Fonts via `<link>`.
+  (`picsum.photos/seed/peony-N/w/h`); Google Fonts via `<link>`.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
 - Base implementation on `apps/aurora` (multi-section landing with
@@ -48,10 +48,10 @@
 
 ## Tasks
 
-- [ ] Create branch `feat/template-camille` from latest origin/main.
-- [ ] Mark Camille `[~]` in TEMPLATES.md on the branch.
-- [ ] Refine spec with any additional replication findings (openspec/specs/template-camille/spec.md).
-- [ ] Scaffold `apps/camille` (copy simplest multi-section app, rename package to `@free-react-templates/camille`).
+- [ ] Create branch `feat/template-peony` from latest origin/main.
+- [ ] Mark Camille `[~]` in TEMPLATES.md on the branch (recreated as Peony).
+- [ ] Refine spec with any additional replication findings (openspec/specs/template-peony/spec.md).
+- [ ] Scaffold `apps/peony` (copy simplest multi-section app, rename package to `@free-react-templates/peony`).
 - [ ] Write tests first (TDD, red phase): Navbar, hero, about, services,
       booking, team, gallery, pricing, testimony, footer + dark mode.
 - [ ] Implement components using `packages/ui` + `cn()`, picsum-seeded

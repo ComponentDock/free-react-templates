@@ -1,8 +1,8 @@
-# Template: Camille (Beauty Salon Landing)
+# Template: Peony (Beauty Salon Landing)
 
 ## Purpose
 
-Camille is a single-page beauty-salon landing template in the
+Peony is a single-page beauty-salon landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Camille" design (see TEMPLATES.md), built under the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -16,7 +16,7 @@ Appointment"), a stylist team (Danica Lewis, Nicole Simon, Cloe Meyer,
 Rachel Clinton, Dave Buff), a "Working on a Salon" gallery, an "Our Prices"
 pricing grid (Hair Style, Manicure Pedicure, Makeup, Body Treatment), a
 Happy Customer testimony band, and a footer with Information / Links /
-"Have a Questions?" contact columns. Camille recreates that structure
+"Have a Questions?" contact columns. Peony recreates that structure
 section-for-section with matching layout, colors, typography, and content
 types (no ColorLib assets copied).
 
@@ -30,7 +30,7 @@ types (no ColorLib assets copied).
   TEMPLATES.md screenshot (`camille-free-template.jpg`) confirms the visual
   design (light sections, rose-pink accents, dark plum text).
 - **Section order (1:1):**
-  1. Navbar (`ftco_navbar`): site name "Camille" + nav (Home, Services,
+  1. Navbar (`ftco_navbar`): site name "Peony" + nav (Home, Services,
      Gallery, About, Blog, Contact).
   2. Hero (`section.hero`): "Get Pretty Look" / "Beauty Salon" + "Discover
      Now" button.
@@ -73,24 +73,24 @@ types (no ColorLib assets copied).
   numbered service cards; booking band with service select; team cards with
   initials avatars; gallery grid with seeded photo tiles; pricing cards
   with feature lists; testimony band; footer with Information/Links/contact
-  columns; all images picsum-seeded (`picsum.photos/seed/camille-N/w/h`);
+  columns; all images picsum-seeded (`picsum.photos/seed/peony-N/w/h`);
   Google Fonts via `<link>`.
 
-Camille lives in `apps/camille` and uses shared components from `packages/ui`
+Peony lives in `apps/peony` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Camille", a
+The system SHALL render a top navigation bar with the site name "Peony", a
 "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Camille page is rendered
+- **GIVEN** the Peony page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Camille" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Peony" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -204,6 +204,6 @@ contact details.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Camille"
+- **THEN** it SHALL show the site name "Peony"
 - **AND** it SHALL show link columns (Information, Links)
 - **AND** it SHALL show contact details (address, phone, email)
