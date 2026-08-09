@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Roadly brand palette — recreated from the ColorLib "Autoroad" design
+     (css/style.css): orange #fc983c primary CTAs/accents. */
+  --color-brand: #fc983c;
+  --color-brand-dark: #e07f1f;
+
+  /* Accent — yellow #f7b71d secondary accent. */
+  --color-accent: #f7b71d;
+
+  /* Ink — headings (#212529 from the original). */
+  --color-ink: #212529;
+
+  /* Mist — muted body text (#6c757d from the original). */
+  --color-mist: #6c757d;
+
+  /* Paper — light section backgrounds (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Coal — dark footer / navbar (#212529 from the original). */
+  --color-coal: #212529;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand orange. */
+  --color-primary-50: #fff8ef;
+  --color-primary-100: #ffeed9;
+  --color-primary-200: #ffd9ab;
+  --color-primary-300: #ffbf73;
+  --color-primary-400: #ff9d3a;
+  --color-primary-500: #fc983c;
+  --color-primary-600: #e07f1f;
+  --color-primary-700: #c2650e;
+  --color-primary-800: #9b510f;
+  --color-primary-900: #7d4312;
+
+  /* Original font: "Poppins" (Google Fonts via index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
