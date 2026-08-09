@@ -1,7 +1,7 @@
-# Remake (Colorlib Remake) — Tasks & Design Notes
+# Sienna (ColorLib Remake) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Cove PR awaits review.
-> Implementation ships later on `feat/template-remake`.
+> Implementation ships later on `feat/template-sienna`.
 
 ## Design notes
 
@@ -27,15 +27,15 @@
   warm light bgs **#fff9f7** / soapstone; tan **#E0CAC4**; headings
   **Josefin Sans** + body **Roboto Condensed** via Google Fonts; rust-brown
   filled uppercase buttons.
-- **Recreation name:** Remake. App folder `apps/remake`, package
-  `@free-react-templates/remake`.
+- **Recreation name:** Sienna. App folder `apps/sienna`, package
+  `@free-react-templates/sienna`.
 - **Design approach:** light warm theme with rust accents; hero = seeded
   picsum photo + headline; about split; feature cards with lucide icons;
   video band with play button; services with lucide icons; team cards with
   initials avatars; pricing tiers with highlighted middle card; testimonial
   with initials avatar; blog cards with seeded photos; footer with
   newsletter form; all images picsum-seeded
-  (`picsum.photos/seed/remake-N/w/h`); Google Fonts via `<link>`.
+  (`picsum.photos/seed/sienna-N/w/h`); Google Fonts via `<link>`.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
 - Base implementation on `apps/aurora` (multi-section landing with
@@ -44,10 +44,10 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-remake/spec.md` (Gherkin requirements + scenarios + replication findings) — DONE on main (this prep).
+- [x] Write `openspec/specs/template-sienna/spec.md` (Gherkin requirements + scenarios + replication findings) — DONE on main (this prep).
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/remake` (copy `apps/aurora`; rename package to
-      `@free-react-templates/remake`).
+- [ ] Create `apps/sienna` (copy `apps/aurora`; rename package to
+      `@free-react-templates/sienna`).
 - [ ] TDD: tests first for Navbar, Hero, About, Features, Services, Team,
       Pricing, Testimonials, Blog, Footer, App composition; run red.
 - [ ] Implement components (green) at 100% coverage.

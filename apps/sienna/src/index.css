@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Sienna brand palette — recreated from the ColorLib "Remake" design
+     (css/style.css): rust brown #99513a accents/buttons, dark slate
+     #3a414e headings, warm section bg #fff9f7, muted #999999. */
+  --color-brand: #99513a;
+  --color-brand-dark: #7e4230;
+
+  /* Slate — headings + dark footer text (#3a414e from the original). */
+  --color-ink: #3a414e;
+  --color-ink-dark: #2b313c;
+
+  /* Soapstone — light warm section background (#fff9f7 from the original). */
+  --color-paper: #fff9f7;
+
+  /* Mist — muted body text (#999999 from the original). */
+  --color-mist: #999999;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the rust brown. */
+  --color-primary-50: #faf5f2;
+  --color-primary-100: #f3e5df;
+  --color-primary-200: #e6c8bc;
+  --color-primary-300: #d4a391;
+  --color-primary-400: #b9785f;
+  --color-primary-500: #99513a;
+  --color-primary-600: #7e4230;
+  --color-primary-700: #653627;
+  --color-primary-800: #4d2a1f;
+  --color-primary-900: #3a2018;
+
+  /* Original fonts: "Josefin Sans" (headings) + "Roboto Condensed" (body). */
+  --font-sans: 'Roboto Condensed', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

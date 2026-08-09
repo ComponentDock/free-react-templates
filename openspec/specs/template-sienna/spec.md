@@ -1,8 +1,8 @@
-# Template: Remake (Barber Shop Landing)
+# Template: Sienna (Barber Shop Landing)
 
 ## Purpose
 
-Remake is a single-page barber-shop landing template in the
+Sienna is a single-page barber-shop landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Remake" design (see TEMPLATES.md), built under the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -65,24 +65,24 @@ copied).
   play button; services with lucide icons; team cards with initials
   avatars; pricing tiers with highlighted middle card; testimonial with
   initials avatar; blog cards with seeded photos; footer with newsletter
-  form; all images picsum-seeded (`picsum.photos/seed/remake-N/w/h`);
+  form; all images picsum-seeded (`picsum.photos/seed/sienna-N/w/h`);
   Google Fonts via `<link>`.
 
-Remake lives in `apps/remake` and uses shared components from `packages/ui`
+Sienna lives in `apps/sienna` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Remake", a
+The system SHALL render a top navigation bar with the site name "Sienna", a
 "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Remake page is rendered
+- **GIVEN** the Sienna page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Remake" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Sienna" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -170,7 +170,7 @@ form, and social links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Remake" and quick links
+- **THEN** it SHALL show the site name "Sienna" and quick links
 - **AND** it SHALL show a newsletter form
 - **AND** it SHALL show social links (GitHub, X, LinkedIn)
 
@@ -181,7 +181,7 @@ a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Remake app is rendered
+- **GIVEN** the Sienna app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Remake — Barber Shop Template"
+- **AND** the document title SHALL be "Sienna — Barber Shop Template"
