@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Haute brand palette — recreated from the ColorLib "Instylr" design
+     (css/style.css): brand hot pink #ff006c (logo span, nav hovers, blog
+     tags, post dates, social hovers), header charcoal #262626, heading ink
+     #081624, body gray #71767b. */
+  --color-brand: #ff006c;
+  --color-brand-deep: #d4005c;
+  --color-header: #262626;
+  --color-ink: #081624;
+  --color-mist: #71767b;
+  --color-copyright: #888888;
+  --color-rule: #e3e3e3;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the brand hot pink. */
+  --color-primary-50: #fff0f7;
+  --color-primary-100: #ffd9eb;
+  --color-primary-200: #ffb3d7;
+  --color-primary-300: #ff80bd;
+  --color-primary-400: #ff4d9f;
+  --color-primary-500: #ff006c;
+  --color-primary-600: #d4005c;
+  --color-primary-700: #a8004a;
+  --color-primary-800: #800039;
+  --color-primary-900: #590028;
+
+  /* Original fonts: "Poppins" stands in for the proprietary Helvetica Neue
+     family used by the design, "Roboto" for body/nav text via Google Fonts. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
