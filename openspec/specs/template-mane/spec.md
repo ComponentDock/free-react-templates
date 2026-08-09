@@ -1,8 +1,8 @@
-# Template: Haircare (Hair Salon Landing)
+# Template: Mane (Hair Salon Landing)
 
 ## Purpose
 
-Haircare is a single-page hair-salon landing template in the
+Mane is a single-page hair-salon landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Haircare" design (see TEMPLATES.md), built under the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -13,7 +13,7 @@ For Men / For Women), two service rows (Haircut & Styling, Beard, Makeup,
 Body Treatment), a booking section with an appointment form, a five-member
 team carousel, an "Our gallery" grid, a four-tier pricing list, a
 "Happy Customer" testimonial carousel, and a dark footer with information
-columns and a question form. Haircare recreates that structure
+columns and a question form. Mane recreates that structure
 section-for-section with matching layout, colors, typography, and content
 types (no ColorLib assets copied).
 
@@ -64,10 +64,10 @@ types (no ColorLib assets copied).
   photo cards; booking form with name/email/phone inputs; team cards with
   initials avatars; gallery with seeded photo tiles; pricing tiers with
   highlighted middle card; testimonial with initials avatar; all images
-  picsum-seeded (`picsum.photos/seed/haircare-N/w/h`); Google Fonts via
+  picsum-seeded (`picsum.photos/seed/mane-N/w/h`); Google Fonts via
   `<link>`.
 
-Haircare lives in `apps/haircare` and uses shared components from
+Mane lives in `apps/mane` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
@@ -79,9 +79,9 @@ The system SHALL render a top navigation bar with the site name "Haircare", a
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Haircare page is rendered
+- **GIVEN** the Mane page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Haircare" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Mane" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -193,7 +193,7 @@ a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Haircare app is rendered
+- **GIVEN** the Mane app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Haircare — Hair Salon Template"
+- **AND** the document title SHALL be "Mane — Hair Salon Template"

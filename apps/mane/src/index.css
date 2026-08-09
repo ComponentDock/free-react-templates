@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Mane brand palette — recreated from the ColorLib "Haircare" design
+     (css/style.css): tan/gold #bf925b accents, dark plum #563b4c footer,
+     light section bg #f8f9fa, dark heading #000000. */
+  --color-brand: #bf925b;
+  --color-brand-dark: #a3773f;
+  --color-brand-light: #d4b183;
+
+  /* Plum — dark footer (#563b4c from the original). */
+  --color-plum: #563b4c;
+  --color-plum-dark: #3d2b37;
+
+  /* Paper — light section backgrounds (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Ink — headings (near-black from the original). */
+  --color-ink: #1a1a1a;
+
+  /* Mist — muted body text (#999999 from the original). */
+  --color-mist: #999999;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand tan. */
+  --color-primary-50: #faf4ec;
+  --color-primary-100: #f3e6d3;
+  --color-primary-200: #e8cfa9;
+  --color-primary-300: #dcb67c;
+  --color-primary-400: #d0a45f;
+  --color-primary-500: #bf925b;
+  --color-primary-600: #a3773f;
+  --color-primary-700: #865e33;
+  --color-primary-800: #6b4b2a;
+  --color-primary-900: #4f3820;
+
+  /* Original fonts: "Barlow Condensed" (condensed display) for headings +
+     "Poppins" (sans-serif) for body (Google Fonts in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Barlow Condensed', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

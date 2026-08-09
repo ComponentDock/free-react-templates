@@ -1,12 +1,14 @@
-# Haircare (Colorlib Haircare) — Tasks & Design Notes
+# Mane (Colorlib Haircare) — Tasks & Design Notes
 
-> Prep artifacts prepared on `main` while the Cove PR awaits review.
-> Implementation ships later on `feat/template-haircare`.
+> Prep artifacts prepared on `main` (spec at `openspec/specs/template-haircare`,
+> renamed to `template-mane` on the implementation branch).
 
 ## Design notes
 
 - **Original:** ColorLib "Haircare" — free hair salon website template
   (source: https://colorlib.com/wp/template/haircare/).
+- **Recreation name:** Mane. App folder `apps/mane`, package
+  `@free-react-templates/mane`.
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/haircare/`
   (HTTP 200, 36.8KB) + stylesheet `css/style.css` (77.2KB). Full rendered DOM
   extracted; structure below is from the DOM + CSS tokens.
@@ -26,32 +28,31 @@
   (footer); headings **Barlow Condensed** + body **Poppins** via Google
   Fonts; light sections with `bg-light` bands; rounded pill buttons in brand
   tan.
-- **Recreation name:** Haircare. App folder `apps/haircare`, package
-  `@free-react-templates/haircare`.
 - **Design approach:** light theme with tan/gold accents and dark plum
   footer; hero = seeded picsum photo + headline + For Men/For Women split;
   services with lucide icons + photo cards; booking form (name/email/phone);
   team cards with initials avatars; gallery with seeded photo tiles; pricing
   tiers with highlighted middle card; testimonial with initials avatar; all
-  images picsum-seeded (`picsum.photos/seed/haircare-N/w/h`); Google Fonts
-  via `<link>`.
+  images picsum-seeded (`picsum.photos/seed/mane-N/w/h`); Google Fonts via
+  `<link>`.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
-- Base implementation on `apps/aurora` (multi-section landing with
-  Navbar/Hero/Sections/Footer structure) — the closest existing multi-section
-  app; adapt patterns from the 404 apps' Navbar/SocialLinks.
+- Base implementation on `apps/taper` (barber-shop landing with
+  Navbar/Hero/Services/Team/Pricing/Gallery/Testimonials/Footer — closest
+  section list to Haircare) + `apps/aegis` Contact form pattern for the
+  booking form.
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-haircare/spec.md` (Gherkin requirements + scenarios + replication findings) — DONE on main (this prep).
+- [x] Write `openspec/specs/template-mane/spec.md` (Gherkin requirements + scenarios + replication findings) — renamed from prep spec on the impl branch.
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/haircare` (copy `apps/aurora`; rename package to
-      `@free-react-templates/haircare`).
+- [ ] Create `apps/mane` (copy `apps/taper`; rename package to
+      `@free-react-templates/mane`).
 - [ ] TDD: tests first for Navbar, Hero, Services, Booking, Team, Gallery,
       Pricing, Testimonials, Footer, App composition; run red.
 - [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
-      spec:validate.
+- [ ] Per-app gate: `bash scripts/verify-app.sh mane` (typecheck → lint →
+      vitest 100% coverage → build) + `npm run spec:validate`.
 - [ ] Update TEMPLATES.md status `[~]` → `[x]` after merge (bookkeeping on
       main, state D).
 - [ ] Update README structure + `docs/ai-context.md` app list.
