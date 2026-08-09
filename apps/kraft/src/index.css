@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Kraft brand palette — recreated from the ColorLib "CardBoard" creative
+     agency design (css/style.css): brand amber #ffc107 (CTA band, "Who We
+     Are" kicker, "View All Portfolio" link, service icons, dropdown hovers),
+     hover amber #d39e00, signature footer amber #ffc809, dark #343a40
+     (navbar), light #f8f9fa (testimonials), body text #212529, muted #6c757d,
+     hairline #dee2e6. */
+  --color-brand: #ffc107;
+  --color-brand-dark: #d39e00;
+  --color-footer: #ffc809;
+  --color-night: #343a40;
+  --color-fog: #f8f9fa;
+  --color-ink: #212529;
+  --color-mist: #6c757d;
+  --color-line: #dee2e6;
+
+  /* Original fonts: DM Serif Display (headings) + Roboto Mono (body/UI) via
+     Google Fonts <link> in index.html. */
+  --font-sans: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-display: 'DM Serif Display', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  body {
+    background-color: #fff;
+    color: #212529;
+    border-top: 2px solid #dee2e6;
+  }
+}
