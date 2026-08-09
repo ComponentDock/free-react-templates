@@ -1,7 +1,7 @@
 import { render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { describe, expect, it } from 'vitest'
-import { Navbar } from './Navbar'
+import { DARK_KEY, Navbar } from './Navbar'
 
 describe('Navbar', () => {
   it('shows the Deskly brand, section links, Book a Tour button and dark-mode toggle', () => {
@@ -25,12 +25,12 @@ describe('Navbar', () => {
     await user.click(screen.getByRole('button', { name: 'Toggle dark mode' }))
 
     expect(document.documentElement).toHaveClass('dark')
-    expect(window.localStorage.getItem('theme')).toBe('dark')
+    expect(window.localStorage.getItem(DARK_KEY)).toBe('dark')
 
     await user.click(screen.getByRole('button', { name: 'Toggle dark mode' }))
 
     expect(document.documentElement).not.toHaveClass('dark')
-    expect(window.localStorage.getItem('theme')).toBe('light')
+    expect(window.localStorage.getItem(DARK_KEY)).toBe('light')
   })
 
   it('cleans up the dark class when unmounted', async () => {
