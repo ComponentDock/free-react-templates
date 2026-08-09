@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Gloss brand palette — recreated from the ColorLib "Makeup Artist"
+     design (css/style.css): brand pink #e65783 (buttons, headings, accents),
+     dark maroon #200204 / #111111 (hero, services, CTA, footer), light
+     #f8f2f2 sections, muted #888888. */
+  --color-brand: #e65783;
+  --color-brand-deep: #cf3f6d;
+  --color-brand-soft: #fceef3;
+  --color-maroon: #200204;
+  --color-ink: #111111;
+  --color-muted: #888888;
+  --color-cream: #f8f2f2;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the pink brand. */
+  --color-primary-50: #fdf0f4;
+  --color-primary-100: #fbe0e9;
+  --color-primary-200: #f8c2d4;
+  --color-primary-300: #f294b2;
+  --color-primary-400: #ec5f8f;
+  --color-primary-500: #e65783;
+  --color-primary-600: #d2386a;
+  --color-primary-700: #b32657;
+  --color-primary-800: #93214a;
+  --color-primary-900: #7a1f40;
+
+  /* Original fonts: "Spartan" (sans — headings/body), "Mattings Regular"
+     (display) via Google Fonts; Mattings is not on Google Fonts, so the
+     elegant serif "Playfair Display" stands in for the display role. */
+  --font-sans: 'Spartan', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
