@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Fixly brand palette — recreated from the ColorLib "Carepair" design
+     (css/style.css): red #e02f33 primary CTAs/accents. */
+  --color-brand: #e02f33;
+  --color-brand-dark: #b81f23;
+
+  /* Accent — navy blue #1a508b secondary (top bar, service icons). */
+  --color-accent: #1a508b;
+
+  /* Ink — headings (#212529 from the original). */
+  --color-ink: #212529;
+
+  /* Mist — muted body text (#6c757d from the original). */
+  --color-mist: #6c757d;
+
+  /* Paper — light section backgrounds (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Coal — dark top bar / footer (#111111 from the original). */
+  --color-coal: #111111;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand red. */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fde3e3;
+  --color-primary-200: #fbcccc;
+  --color-primary-300: #f7a5a5;
+  --color-primary-400: #f17070;
+  --color-primary-500: #e02f33;
+  --color-primary-600: #cf2226;
+  --color-primary-700: #ad1a1e;
+  --color-primary-800: #8f1a1d;
+  --color-primary-900: #771b1e;
+
+  /* Original font: "Roboto" (Google Fonts via index.html). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

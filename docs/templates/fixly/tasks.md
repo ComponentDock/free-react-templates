@@ -1,7 +1,7 @@
-# Carepair (Colorlib Carepair) — Tasks & Design Notes
+# Fixly (ColorLib Carepair) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Cloud PR (#7) awaits review.
-> Implementation ships later on `feat/template-carepair`.
+> Implementation ships later on `feat/template-fixly`.
 
 ## Design notes (replication findings)
 
@@ -17,7 +17,7 @@
   hero/appointment/stats/footer sections.
 - **Structure (1:1, section order):**
   1. Top bar (hours, Call Us +2 392 3929 210, Location) + header:
-     "Carepair Auto Repair Shop" + Home, About, Services, Gallery, Blog,
+     "Fixly Auto Repair Shop" + Home, About, Services, Gallery, Blog,
      Contact + "Make An Appointment".
   2. Hero (image bg): "Looking for the Right Vehicle Repair Service?" +
      "Make An Appointment" / "See Services"; slide 2 "Best Auto Repair
@@ -38,7 +38,7 @@
   10. Testimonials: "Happy Customers" (Roger Scott).
   11. Blog: "Recent From Blog" — 3 posts (Tips on How to Maintain Your
       Brand New Car).
-  12. Footer (image bg): "Carepair Auto Repair Shop" + Services + Recent
+  12. Footer (image bg): "Fixly Auto Repair Shop" + Services + Recent
       Posts + "Have a Questions?" + copyright.
 - **Design tokens extracted from the DOM + CSS:**
   - Brand colors: **red** #e02f33 + **navy** #1a508b + dark #212529;
@@ -46,10 +46,11 @@
   - Fonts: **"Roboto"** (Roboto, Arial, sans-serif) via Google Fonts.
   - Shapes: flat icon cards, filled rounded buttons; image-backed sections
     (→ seeded picsum placeholders).
-- **Recreation name:** Carepair (kept — matches ColorLib name). App folder
-  `apps/carepair`, package `@free-react-templates/carepair`.
+- **Recreation name:** Fixly ("fix" + the `-ly` family: Motorly, Roadly,
+  Torquely, Rently — the ColorLib source name "Carepair" is never reused).
+  App folder `apps/fixly`, package `@free-react-templates/fixly`.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/carepair-<n>/<w>/<h>`); lucide-react icons (Wrench,
+  (`picsum.photos/seed/fixly-<n>/<w>/<h>`); lucide-react icons (Wrench,
   MapPin, Clock, Phone, Mail, Cog, Car, Users, Zap, CalendarCheck, Star,
   ChevronRight, Quote, Droplet, Gauge, Thermometer, Cpu, Battery); Roboto
   via Google Fonts; repo-standard Navbar (dark-mode toggle) + Footer chrome.
@@ -57,16 +58,16 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-carepair/spec.md` (Gherkin
+- [x] Write `openspec/specs/template-fixly/spec.md` (Gherkin
       requirements + scenarios reflecting the REAL sections above).
-- [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/carepair` (copy the section-rich landing app pattern —
-      Aurora; rename package to `@free-react-templates/carepair`).
-- [ ] TDD: tests first for each section component; run red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
-      spec:validate.
-- [ ] Push `feat/template-carepair`, open PR (source template, preview URL,
+- [x] Validate spec: `npm run spec:validate`.
+- [x] Create `apps/fixly` (copy the section-rich landing app pattern —
+      torquely; rename package to `@free-react-templates/fixly`).
+- [x] TDD: tests first for each section component; run red.
+- [x] Implement components (green) at 100% coverage.
+- [x] Per-app gate: typecheck → lint → test:coverage (100%) → build →
+      spec:validate (scripts/verify-app.sh fixly).
+- [x] Push `feat/template-fixly`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
