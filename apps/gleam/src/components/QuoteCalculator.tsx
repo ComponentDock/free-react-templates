@@ -5,14 +5,14 @@ import { cn } from '@free-react-templates/ui'
 export const propertyTypes = ['House', 'Apartment', 'Condo', 'Office'] as const
 export const frequencies = ['One-Time', 'Weekly', 'Bi-Weekly', 'Monthly'] as const
 
-export const PROPERTY_FACTOR: Record<(typeof propertyTypes)[number], number> = {
+const PROPERTY_FACTOR: Record<(typeof propertyTypes)[number], number> = {
   House: 1,
   Apartment: 0.9,
   Condo: 0.8,
   Office: 1.2,
 }
 
-export const FREQUENCY_FACTOR: Record<(typeof frequencies)[number], number> = {
+const FREQUENCY_FACTOR: Record<(typeof frequencies)[number], number> = {
   'One-Time': 1,
   Weekly: 0.75,
   'Bi-Weekly': 0.85,
