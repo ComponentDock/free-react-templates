@@ -1,8 +1,8 @@
-# Template: Dreams (Driving School Landing)
+# Template: Gearly (Driving School Landing)
 
 ## Purpose
 
-Dreams is a single-page driving-school landing template in the
+Gearly is a single-page driving-school landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Dreams" design (see TEMPLATES.md), built under the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -10,7 +10,7 @@ stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 The original is a bold yellow-and-navy driving school landing page: a
 full-screen hero ("drive safe & get license"), a feature grid, an about/video
 strip, an application inquiry form, three pricing plans, an instructors team
-grid, and a dark multi-column footer. Dreams recreates that structure
+grid, and a dark multi-column footer. Gearly recreates that structure
 section-for-section with matching layout, colors, typography, and content
 types (no ColorLib assets copied).
 
@@ -65,21 +65,21 @@ for you</h5>`, `<h2>drive safe & get license</h2>`, "Contact us"
   with initials avatars and social links. All images picsum-seeded, icons
   lucide-react (no assets copied).
 
-Dreams lives in `apps/dreams` and uses shared components from `packages/ui`
+Gearly lives in `apps/gearly` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Dreams", a
+The system SHALL render a top navigation bar with the site name "Gearly", a
 "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Dreams page is rendered
+- **GIVEN** the Gearly page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Dreams" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Gearly" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -172,7 +172,7 @@ links, and social links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Dreams" and quick links
+- **THEN** it SHALL show the site name "Gearly" and quick links
 - **AND** it SHALL show social links (GitHub, X, LinkedIn)
 
 ### Requirement: Page composition
@@ -182,7 +182,7 @@ a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Dreams app is rendered
+- **GIVEN** the Gearly app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Dreams — Driving School Template"
+- **AND** the document title SHALL be "Gearly — Driving School Template"
