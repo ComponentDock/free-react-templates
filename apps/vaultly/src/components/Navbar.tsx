@@ -11,7 +11,7 @@ const navLinks = [
 
 /* The reference demo persists the dark-mode preference under the `theme`
    key with the values "dark"/"light". */
-export const DARK_KEY = 'theme'
+const DARK_KEY = 'theme'
 
 export function Navbar() {
   const [open, setOpen] = useState(false)
