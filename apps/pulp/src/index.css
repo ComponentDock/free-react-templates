@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pulp brand palette — recreated from the ColorLib "Erase" magazine
+     editorial design (css/style.css): blue-gray #69779b brand (read-more
+     pills, active menu underline), gold #f8b500 (active menu link), dark
+     #212121 (inverted rows, footer), deep blue #064acb (hero cycle stop). */
+  --color-brand: #69779b;
+  --color-gold: #f8b500;
+  --color-night: #212121;
+  --color-cobalt: #064acb;
+  --color-ink: #000000;
+  --color-mist: #737373;
+  --color-fog: #f8f9fa;
+  --color-line: #e9ecef;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the blue-gray brand. */
+  --color-primary-50: #f2f4f8;
+  --color-primary-100: #e0e4ec;
+  --color-primary-200: #c2c9d9;
+  --color-primary-300: #9aa5bf;
+  --color-primary-400: #7c8aab;
+  --color-primary-500: #69779b;
+  --color-primary-600: #5a6788;
+  --color-primary-700: #495471;
+  --color-primary-800: #394158;
+  --color-primary-900: #2a303f;
+
+  /* Original fonts: Abril Fatface (display — wordmark, menu logo, footer
+     logo) + Poppins (body/header/nav) via Google Fonts. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Abril Fatface', ui-serif, Georgia, serif;
+
+  /* Hero background-color cycle (20s): #69779b → #f8b500 → #212121 →
+     #064acb → back (css/style.css @keyframes myanimation). */
+  --animate-hero-cycle: hero-cycle 20s ease-in-out infinite;
+
+  @keyframes hero-cycle {
+    0% {
+      background-color: #69779b;
+    }
+    25% {
+      background-color: #f8b500;
+    }
+    50% {
+      background-color: #212121;
+    }
+    75% {
+      background-color: #064acb;
+    }
+    100% {
+      background-color: #69779b;
+    }
+  }
+}
