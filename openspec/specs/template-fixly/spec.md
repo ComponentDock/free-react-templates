@@ -1,12 +1,13 @@
-# Template: Carepair (Bootstrap Template)
+# Template: Fixly (Auto Repair Template)
 
 ## Purpose
 
-Carepair is a single-page auto repair shop landing template in the
+Fixly is a single-page auto repair shop landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Carepair" website template design (see TEMPLATES.md), built
 under a different name with the monorepo stack: Vite + React 19 + Tailwind
-CSS 4 + TypeScript.
+CSS 4 + TypeScript. "Fixly" is the new name (the ColorLib source name
+"Carepair" is never reused).
 
 ## Design reference (replication findings)
 
@@ -20,8 +21,8 @@ CSS 4 + TypeScript.
   is reconstructed from the DOM structure and CSS tokens.
 - **Section order (1:1):**
   1. Top bar: hours (Monday - Friday 8:00AM-8:00PM), "Call Us: +2 392 3929
-     210", Location; header: "Carepair Auto Repair Shop" + nav (Home,
-     About, Services, Gallery, Blog, Contact) + "Make An Appointment".
+     210", Location; header: "Fixly Auto Repair Shop" + nav (Home, About,
+     Services, Gallery, Blog, Contact) + "Make An Appointment".
   2. Hero (`slider-hero` image bg): h1 "Looking for the Right Vehicle
      Repair Service?" + "Make An Appointment" / "See Services"; secondary
      slide "Best Auto Repair Shop and Maintenance Services".
@@ -47,7 +48,7 @@ CSS 4 + TypeScript.
   10. Testimonials: "Happy Customers" — quotes (Roger Scott).
   11. Blog: "Recent From Blog" — 3 posts (Tips on How to Maintain Your
       Brand New Car).
-  12. Footer (image bg): "Carepair Auto Repair Shop" + Services list +
+  12. Footer (image bg): "Fixly Auto Repair Shop" + Services list +
       Recent Posts + "Have a Questions?" + copyright.
 - **Design tokens extracted from the DOM + CSS:**
   - Brand colors: **red** #e02f33 (primary) + **navy blue** #1a508b
@@ -57,28 +58,28 @@ CSS 4 + TypeScript.
     hero/appointment/stats/footer sections (replaced with seeded picsum
     placeholders).
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/carepair-<n>/<w>/<h>`); icons → lucide-react
+  (`picsum.photos/seed/fixly-<n>/<w>/<h>`); icons → lucide-react
   (Wrench, MapPin, Clock, Phone, Mail, Cog, Car, Users, Zap, CalendarCheck,
   Star, ChevronRight, Quote, Droplet, Gauge, Thermometer, Cpu, Battery);
   Roboto via Google Fonts; repo-standard Navbar (dark-mode toggle) + Footer
-  chrome.
+  chrome. Brand renamed "Carepair" → "Fixly" (new name rule).
 
-Carepair lives in `apps/carepair` and uses shared components from
+Fixly lives in `apps/fixly` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Carepair",
+The system SHALL render a top navigation bar with the site name "Fixly",
 anchor links to the page's sections, an appointment button, and a dark-mode
 toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Carepair page is rendered
+- **GIVEN** the Fixly page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Carepair" and links to
+- **THEN** the navbar SHALL show the site name "Fixly" and links to
   Services and Blog
 - **AND** the navbar SHALL show a "Make An Appointment" button and a
   dark-mode toggle button
@@ -200,8 +201,8 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Carepair app is rendered
+- **GIVEN** the Fixly app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all
   sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Carepair — Auto Repair Template"
+- **AND** the document title SHALL be "Fixly — Auto Repair Template"
