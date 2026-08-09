@@ -1,8 +1,8 @@
-# Template: Diva (Beauty Salon Landing)
+# Template: Rouge (Beauty Salon Landing)
 
 ## Purpose
 
-Diva is a single-page beauty-salon landing template in the
+Rouge is a single-page beauty-salon landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Diva" design (see TEMPLATES.md), built under the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -11,7 +11,7 @@ The original is a dark, photo-driven beauty salon page with hot-pink
 accents: a full-screen photo hero slider ("Be bold.Be beautiful."), an
 intro band with a "Why Choose Us?" heading and stat counters, a six-card
 services grid, a testimonials slider over a photo band, a brand-logo
-carousel, and a photo-backed footer with an appointment form. Diva
+carousel, and a photo-backed footer with an appointment form. Rouge
 recreates that structure section-for-section with matching layout, colors,
 typography, and content types (no ColorLib assets copied).
 
@@ -25,7 +25,7 @@ typography, and content types (no ColorLib assets copied).
   (`diva-free-template.jpg`) confirms the visual design (dark photo bands,
   white text, hot-pink accents).
 - **Section order (1:1):**
-  1. Header (`header-section`, transparent over hero): "Diva" logo + nav
+  1. Header (`header-section`, transparent over hero): "Rouge" logo + nav
      (Home, About Us, Services, News, Contact).
   2. Hero slider (`hero-section set-bg`, 2 photo slides): "Be bold.Be
      beautiful." headline + `site-btn sb-big` CTA + `site-btn sb-line`
@@ -57,24 +57,24 @@ typography, and content types (no ColorLib assets copied).
   headline; intro split with stat counters; services with lucide icons;
   testimonials with initials avatar; brands row recreated as styled text
   marks (no assets); footer with appointment form; all images
-  picsum-seeded (`picsum.photos/seed/diva-N/w/h`); Google Fonts via
+  picsum-seeded (`picsum.photos/seed/rouge-N/w/h`); Google Fonts via
   `<link>`.
 
-Diva lives in `apps/diva` and uses shared components from `packages/ui`
+Rouge lives in `apps/rouge` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Diva", a
+The system SHALL render a top navigation bar with the site name "Rouge", a
 "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Diva page is rendered
+- **GIVEN** the Rouge page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Diva" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Rouge" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -141,7 +141,7 @@ appointment form, and social links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Diva" and quick links
+- **THEN** it SHALL show the site name "Rouge" and quick links
 - **AND** it SHALL show an appointment form (e.g. a "Make an appointment" input and Submit button)
 - **AND** it SHALL show social links (GitHub, X, LinkedIn)
 
@@ -152,7 +152,7 @@ a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Diva app is rendered
+- **GIVEN** the Rouge app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Diva — Beauty Salon Template"
+- **AND** the document title SHALL be "Rouge — Beauty Salon Template"
