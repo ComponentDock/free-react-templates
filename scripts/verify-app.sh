@@ -16,6 +16,22 @@ fi
 echo "==> verify-app: ${APP} (per-app gate)"
 npm run typecheck --workspace "${PKG}"
 npm run lint
-npx vitest run --project "${PKG}"
+# Deterministic coverage run. `vitest run --project <pkg>` with the root
+# config's `test.projects` is racy in Vitest 4.1.10: the empty core-project
+# instance finishes instantly and its cleanAfterRun() wipes the shared
+# coverage/.tmp while this app's workers are still writing (intermittent
+# "ENOENT coverage/.tmp/coverage-N.json"). Running with `--root apps/<app>`
+# loads only the app's own vitest.config.ts → a single Vitest instance and a
+# single coverage provider. Coverage config is passed via CLI flags (repeated
+# --coverage.exclude flags — comma-joined globs don't match main.tsx/css):
+npx vitest run --root "apps/${APP}" \
+  --coverage.enabled=true --coverage.provider=v8 \
+  --coverage.include='src/**' \
+  --coverage.exclude='**/*.test.*' --coverage.exclude='**/test/**' \
+  --coverage.exclude='src/main.tsx' --coverage.exclude='**/*.css' \
+  --coverage.exclude='**/*.config.*' \
+  --coverage.reporter=text \
+  --coverage.thresholds.lines=100 --coverage.thresholds.functions=100 \
+  --coverage.thresholds.branches=100 --coverage.thresholds.statements=100
 npm run build --workspace "${PKG}"
 echo "==> OK: ${APP} passed the per-app gate"
