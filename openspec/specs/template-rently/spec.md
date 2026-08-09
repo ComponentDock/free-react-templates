@@ -1,8 +1,8 @@
-# Template: Carbook (Bootstrap Template)
+# Template: Rently (Car Rental Template)
 
 ## Purpose
 
-Carbook is a single-page car rental landing template in the
+Rently is a single-page car rental landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Carbook" website template design (see TEMPLATES.md), built
 under a different name with the monorepo stack: Vite + React 19 + Tailwind
@@ -45,27 +45,27 @@ CSS 4 + TypeScript.
   - Shapes: flat icon cards, filled rounded buttons; image-backed hero
     section (replaced with seeded picsum placeholders).
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/carbook-<n>/<w>/<h>`); icons → lucide-react (Car,
+  (`picsum.photos/seed/rently-<n>/<w>/<h>`); icons → lucide-react (Car,
   MapPin, BadgeDollarSign, CalendarCheck, KeyRound, Heart, Star, Phone,
   Mail, Clock, ChevronRight, Search, Quote, Gift, Plane, Building2, Map);
   Poppins via Google Fonts; repo-standard Navbar (dark-mode toggle) + Footer
-  chrome.
+  chrome. Brand renamed "CarBook" → "Rently" (new name rule).
 
-Carbook lives in `apps/carbook` and uses shared components from `packages/ui`
+Rently lives in `apps/rently` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "CarBook",
+The system SHALL render a top navigation bar with the site name "Rently",
 anchor links to the page's sections, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Carbook page is rendered
+- **GIVEN** the Rently page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "CarBook" and links to
+- **THEN** the navbar SHALL show the site name "Rently" and links to
   Services and Cars
 - **AND** the navbar SHALL show a dark-mode toggle button
 
@@ -118,7 +118,7 @@ The system SHALL render an about section with a search button.
 
 - **GIVEN** the page is rendered
 - **WHEN** the about section is displayed
-- **THEN** it SHALL contain a heading "Welcome to Carbook"
+- **THEN** it SHALL contain a heading "Welcome to Rently"
 - **AND** it SHALL show a "Search Vehicle" button
 
 ### Requirement: Services section
@@ -184,8 +184,8 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Carbook app is rendered
+- **GIVEN** the Rently app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all
   sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "CarBook — Car Rental Template"
+- **AND** the document title SHALL be "Rently — Car Rental Template"

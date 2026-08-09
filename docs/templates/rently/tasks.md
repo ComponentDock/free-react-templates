@@ -1,7 +1,7 @@
-# Carbook (Colorlib Carbook) — Tasks & Design Notes
+# Rently (Colorlib Carbook) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Cloud PR (#7) awaits review.
-> Implementation ships later on `feat/template-carbook`.
+> Implementation ships later on `feat/template-rently`.
 
 ## Design notes (replication findings)
 
@@ -38,10 +38,11 @@
   - Fonts: **"Poppins"** (Poppins, Arial, sans-serif) via Google Fonts.
   - Shapes: flat icon cards, filled rounded buttons; image-backed hero (→
     seeded picsum placeholders).
-- **Recreation name:** Carbook (kept — matches ColorLib name). App folder
-  `apps/carbook`, package `@free-react-templates/carbook`.
+- **Recreation name:** Rently (NEW name — mandatory rename rule; original
+  ColorLib name "Carbook" is never reused). App folder `apps/rently`,
+  package `@free-react-templates/rently`.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/carbook-<n>/<w>/<h>`); lucide-react icons (Car,
+  (`picsum.photos/seed/rently-<n>/<w>/<h>`); lucide-react icons (Car,
   MapPin, BadgeDollarSign, CalendarCheck, KeyRound, Heart, Star, Phone,
   Mail, Clock, ChevronRight, Search, Quote, Gift, Plane, Building2, Map);
   Poppins via Google Fonts; repo-standard Navbar (dark-mode toggle) + Footer
@@ -50,15 +51,16 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-carbook/spec.md` (Gherkin requirements + scenarios reflecting the REAL sections above).
+- [x] Write `openspec/specs/template-rently/spec.md` (Gherkin requirements + scenarios reflecting the REAL sections above).
+- [x] Rename prep artifacts to the new name (template-carbook → template-rently, docs/templates/carbook → rently).
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/carbook` (copy the section-rich landing app pattern —
-      Aurora; rename package to `@free-react-templates/carbook`).
+- [ ] Create `apps/rently` (copy the section-rich landing app pattern —
+      Aurora; rename package to `@free-react-templates/rently`).
 - [ ] TDD: tests first for each section component; run red.
 - [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
-      spec:validate.
-- [ ] Push `feat/template-carbook`, open PR (source template, preview URL,
+- [ ] Per-app gate: `bash scripts/verify-app.sh rently` (typecheck → lint →
+      test:coverage → build) + `npm run spec:validate`.
+- [ ] Push `feat/template-rently`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
