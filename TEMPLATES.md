@@ -169,7 +169,7 @@
 - [x] **The Hustle Hour** — [colorlib](https://colorlib.com/wp/template/the-hustle-hour/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hustlehour-template-1771943880509.jpg) · [airwave](https://free-react-templates-airwave.surge.sh)
 - [x] **Vitality** — [colorlib](https://colorlib.com/wp/template/vitality/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vitality-template-1770211473540.jpg) · [cura](https://free-react-templates-cura.surge.sh)
 - [x] **Wanderlust** — [colorlib](https://colorlib.com/wp/template/wanderlust/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wanderlust-template-1770211435145.jpg) · [roamly](https://free-react-templates-roamly.surge.sh)
-- [ ] **Wealthwise** — [colorlib](https://colorlib.com/wp/template/wealthwise/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wealthwise-template-1770211049269.jpg)
+- [~] **Wealthwise** — [colorlib](https://colorlib.com/wp/template/wealthwise/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wealthwise-template-1770211049269.jpg)
 - [ ] **Workhub** — [colorlib](https://colorlib.com/wp/template/workhub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workhub-template-1771943925457.jpg)
 - [ ] **Youthconnect** — [colorlib](https://colorlib.com/wp/template/youthconnect/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youthconnect-template-1770211452999.jpg)
 
