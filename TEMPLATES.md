@@ -300,7 +300,7 @@
 
 ## Booking Forms (22)
 
-- [ ] **Colorlib Booking 1** — [colorlib](https://colorlib.com/wp/template/colorlib-booking-1/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-booking-1.jpg)
+- [~] **Colorlib Booking 1** — [colorlib](https://colorlib.com/wp/template/colorlib-booking-1/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-booking-1.jpg)
 - [ ] **Colorlib Booking 10** — [colorlib](https://colorlib.com/wp/template/colorlib-booking-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-booking-10.jpg)
 - [ ] **Colorlib Booking 11** — [colorlib](https://colorlib.com/wp/template/colorlib-booking-11/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-booking-11.jpg)
 - [ ] **Colorlib Booking 12** — [colorlib](https://colorlib.com/wp/template/colorlib-booking-12/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-booking-12.jpg)
