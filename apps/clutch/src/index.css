@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Clutch brand palette — recreated from the ColorLib "Hvac" design
+     (css/style.css): red #db2d2e primary CTAs/accents. */
+  --color-brand: #db2d2e;
+  --color-brand-dark: #c22426;
+
+  /* Ink — headings (#353535 from the original). */
+  --color-ink: #353535;
+
+  /* Mist — muted body text (#727171 / #8d8d8d from the original). */
+  --color-mist: #727171;
+  --color-mist-light: #8d8d8d;
+
+  /* Paper — light section backgrounds (#f7f7f7 from the original). */
+  --color-paper: #f7f7f7;
+
+  /* Coal — dark footer / overlays (#323232 from the original footer). */
+  --color-coal: #323232;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand red. */
+  --color-primary-50: #fdf0f0;
+  --color-primary-100: #fbdede;
+  --color-primary-200: #f7bcbd;
+  --color-primary-300: #f09192;
+  --color-primary-400: #e85f61;
+  --color-primary-500: #e03c3e;
+  --color-primary-600: #db2d2e;
+  --color-primary-700: #b91c1d;
+  --color-primary-800: #9a1b1c;
+  --color-primary-900: #7f1c1d;
+
+  /* Original font: "Lato" (Google Fonts via index.html). */
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
