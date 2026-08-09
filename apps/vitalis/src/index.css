@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Vitalis brand palette — recreated from the ColorLib "Aesthetic"
+     design (css/style.css): teal #13a2b7 accents + buttons, dark
+     #111111 bands + footer, light #fff/#f8f9fa sections. */
+  --color-brand: #13a2b7;
+  --color-brand-dark: #0d7f91;
+  --color-brown: #785028;
+
+  /* Ink — near-black bands and footer (#111111 from the original). */
+  --color-ink: #111111;
+  --color-ink-dark: #000000;
+
+  /* Paper — light section backgrounds (default white, alt #f8f9fa). */
+  --color-paper: #f8f9fa;
+
+  /* Mist — muted body text (#666666 from the original). */
+  --color-mist: #666666;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the teal. */
+  --color-primary-50: #eefafc;
+  --color-primary-100: #d5f2f6;
+  --color-primary-200: #aae4ec;
+  --color-primary-300: #6fd0dd;
+  --color-primary-400: #33b5c8;
+  --color-primary-500: #13a2b7;
+  --color-primary-600: #0d7f91;
+  --color-primary-700: #0e6675;
+  --color-primary-800: #115360;
+  --color-primary-900: #124552;
+
+  /* Original font: "Poppins" (body + headings) via Google Fonts. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
