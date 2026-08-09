@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Shear brand palette — recreated from the ColorLib "Barberz" design
+     (css/style.css): red #dc3545 accents on white/light #f8f9fa sections. */
+  --color-brand: #dc3545;
+  --color-brand-dark: #b02a37;
+
+  /* Paper — light section backgrounds (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Ink — headings + body text (dark gray from the original). */
+  --color-ink: #343a40;
+
+  /* Mist — muted body text. */
+  --color-mist: #6c757d;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand red. */
+  --color-primary-50: #fdf2f3;
+  --color-primary-100: #fbe3e5;
+  --color-primary-200: #f6c8cc;
+  --color-primary-300: #ef9aa1;
+  --color-primary-400: #e56871;
+  --color-primary-500: #e04a55;
+  --color-primary-600: #dc3545;
+  --color-primary-700: #b02a37;
+  --color-primary-800: #932430;
+  --color-primary-900: #7b212b;
+
+  /* Original font: "DM Sans" (Google Fonts in index.html). */
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

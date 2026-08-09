@@ -189,7 +189,7 @@
 - [x] **Alotan** — [colorlib](https://colorlib.com/wp/template/alotan/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alotan-free-template.jpg) · [clipper](https://free-react-templates-clipper.surge.sh)
 - [x] **Barber** — [colorlib](https://colorlib.com/wp/template/barber/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barber-free-barber-website-template.jpg) · [crewcut](https://free-react-templates-crewcut.surge.sh)
 - [x] **Barbero** — [colorlib](https://colorlib.com/wp/template/barbero/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barbero-colorlib-template.jpg) · [razor](https://free-react-templates-razor.surge.sh)
-- [ ] **Barberz** — [colorlib](https://colorlib.com/wp/template/barberz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barberz-free-template.jpg)
+- [~] **Barberz** — [colorlib](https://colorlib.com/wp/template/barberz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barberz-free-template.jpg)
 - [ ] **Barcut** — [colorlib](https://colorlib.com/wp/template/barcut/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barcut-free-template.jpg)
 - [ ] **Br** — [colorlib](https://colorlib.com/wp/template/br/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/br-free-template.jpg)
 - [ ] **Brber** — [colorlib](https://colorlib.com/wp/template/brber/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brber-free-template.jpg)
