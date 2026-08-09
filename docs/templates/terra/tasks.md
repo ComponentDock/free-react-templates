@@ -1,7 +1,7 @@
-# Kayelux (Colorlib Kayelux) — Tasks & Design Notes
+# Terra (ColorLib Kayelux) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Cove PR awaits review.
-> Implementation ships later on `feat/template-kayelux`.
+> Implementation ships later on `feat/template-terra`.
 
 ## Design notes
 
@@ -28,14 +28,14 @@
   **#111111** text; light **#f8ebe6**/`bg-light` bands; headings **Prata**
   (serif) + body **Poppins** via Google Fonts; terracotta filled buttons
   (`btn-primary`) + white/custom variants.
-- **Recreation name:** Kayelux. App folder `apps/kayelux`, package
-  `@free-react-templates/kayelux`.
+- **Recreation name:** Terra (recreated from ColorLib Kayelux under a NEW name).
+  App folder `apps/terra`, package `@free-react-templates/terra`.
 - **Design approach:** light theme with terracotta accents; hero = seeded
   picsum photo + headline + CTA; services with lucide icons; featured band;
   stats band; team cards with initials avatars; gallery grid; pricing
   cards; appointment band; testimony band; blog cards with seeded photos;
   footer with link columns; all images picsum-seeded
-  (`picsum.photos/seed/kayelux-N/w/h`); Google Fonts via `<link>`.
+  (`picsum.photos/seed/terra-N/w/h`); Google Fonts via `<link>`.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
 - Base implementation on `apps/aurora` (multi-section landing with
@@ -44,10 +44,10 @@
 
 ## Tasks
 
-- [ ] Create branch `feat/template-kayelux` from latest origin/main.
-- [ ] Mark Kayelux `[~]` in TEMPLATES.md on the branch.
-- [ ] Refine spec with any additional replication findings (openspec/specs/template-kayelux/spec.md).
-- [ ] Scaffold `apps/kayelux` (copy simplest multi-section app, rename package to `@free-react-templates/kayelux`).
+- [ ] Create branch `feat/template-terra` from latest origin/main.
+- [x] Mark Kayelux `[~]` in TEMPLATES.md (claimed) in TEMPLATES.md on the branch.
+- [ ] Refine spec with any additional replication findings (openspec/specs/template-terra/spec.md).
+- [ ] Scaffold `apps/terra` (copy simplest multi-section app, rename package to `@free-react-templates/terra`).
 - [ ] Write tests first (TDD, red phase): Navbar, hero, services, featured,
       team, pricing, appointment, testimony, blog, footer + dark mode.
 - [ ] Implement components using `packages/ui` + `cn()`, picsum-seeded

@@ -1,8 +1,8 @@
-# Template: Kayelux (Beauty & Spa Wellness Landing)
+# Template: Terra (Beauty & Spa Wellness Landing)
 
 ## Purpose
 
-Kayelux is a single-page beauty & spa wellness template in the
+Terra is a single-page beauty & spa wellness template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Kayelux" design (see TEMPLATES.md), built under the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -23,7 +23,8 @@ content types (no ColorLib assets copied).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Kayelux" — free beauty & spa website template
-  (source: https://colorlib.com/wp/template/kayelux/).
+  (source: https://colorlib.com/wp/template/kayelux/). Recreated under the
+  NEW name **Terra** (`apps/terra`, package `@free-react-templates/terra`).
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/kayelux/`
   (HTTP 200, 50.1KB) + stylesheet `css/style.css` (76.5KB, Bootstrap 5
   base + custom theme). The rendered DOM is the reference below; the
@@ -68,24 +69,24 @@ content types (no ColorLib assets copied).
   - CTA; services with lucide icons; featured band; stats band; team cards
     with initials avatars; gallery grid; pricing cards; appointment band;
     testimony band; blog cards with seeded photos; footer with link columns;
-    all images picsum-seeded (`picsum.photos/seed/kayelux-N/w/h`); Google
+    all images picsum-seeded (`picsum.photos/seed/terra-N/w/h`); Google
     Fonts via `<link>`.
 
-Kayelux lives in `apps/kayelux` and uses shared components from `packages/ui`
+Terra lives in `apps/terra` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Kayelux", a
+The system SHALL render a top navigation bar with the site name "Terra", a
 "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Kayelux page is rendered
+- **GIVEN** the Terra page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Kayelux" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Terra" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -194,5 +195,5 @@ The system SHALL render a footer with the site name and link columns.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Kayelux"
+- **THEN** it SHALL show the site name "Terra"
 - **AND** it SHALL show link columns (Services, Recent Posts)
