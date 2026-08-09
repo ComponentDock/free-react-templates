@@ -22,11 +22,11 @@ const dateFields = [
   { id: 'dropoff-date', label: 'Drop-off date', type: 'date' },
 ] as const
 
-export function Hero() {
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
-  }
+function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  event.preventDefault()
+}
 
+export function Hero() {
   return (
     <section
       id="home"

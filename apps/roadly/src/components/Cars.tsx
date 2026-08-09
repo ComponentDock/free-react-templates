@@ -37,9 +37,7 @@ export function Cars() {
               >
                 <div className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-coal/70 px-4 py-3 text-white">
                   <span className="text-2xl font-extrabold text-brand">$25</span>
-                  <p className="text-sm text-white/80">
-                    <span>From</span> <span>/Day</span>
-                  </p>
+                  <p className="text-sm text-white/80">From /Day</p>
                 </div>
               </div>
               <div className="p-5 text-center">
