@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Reservly brand palette — recreated from the ColorLib "Colorlib Booking
+     Form V1" design (screenshot-only reference): Bootstrap primary blue
+     #007bff (Check availability button), hover #0069d9 (Bootstrap's 7.5%
+     darken of the primary). */
+  --color-brand: #007bff;
+  --color-brand-dark: #0069d9;
+
+  /* Ink — body text (#212529 Bootstrap body color). */
+  --color-ink: #212529;
+
+  /* Mist — muted labels (#6c757d from the original). */
+  --color-mist: #6c757d;
+
+  /* Paper — light-grey input backgrounds (#f4f4f4 from the original). */
+  --color-paper: #f4f4f4;
+
+  /* Charcoal — dark navbar + footer (Bootstrap bg-dark #343a40). */
+  --color-charcoal: #343a40;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand blue. */
+  --color-primary-50: #e8f2ff;
+  --color-primary-100: #cce4ff;
+  --color-primary-200: #9ecbff;
+  --color-primary-300: #66adff;
+  --color-primary-400: #3394ff;
+  --color-primary-500: #0a82ff;
+  --color-primary-600: #007bff;
+  --color-primary-700: #0069d9;
+  --color-primary-800: #0056b3;
+  --color-primary-900: #004494;
+
+  /* Original font: Roboto via Google Fonts (400/500/700). */
+  --font-sans:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
