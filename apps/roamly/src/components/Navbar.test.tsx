@@ -25,7 +25,7 @@ describe('Navbar', () => {
   it('lists the Resources dropdown links', () => {
     render(<Navbar />)
     for (const label of ['Travel Blog', 'Travel Guides', 'FAQ']) {
-      expect(screen.getByRole('link', { name: label })).toBeInTheDocument()
+      expect(screen.getAllByRole('link', { name: label }).length).toBeGreaterThan(0)
     }
   })
 
@@ -76,6 +76,16 @@ describe('Navbar', () => {
     await user.click(toggle)
     const toursLinks = screen.getAllByRole('link', { name: 'Tours' })
     await user.click(toursLinks[toursLinks.length - 1]!)
+    expect(toggle).toHaveAttribute('aria-expanded', 'false')
+  })
+
+  it('closes the mobile menu when a mobile resource link is clicked', async () => {
+    const user = userEvent.setup()
+    render(<Navbar />)
+    const toggle = screen.getByRole('button', { name: 'Toggle mobile menu' })
+    await user.click(toggle)
+    const faqLinks = screen.getAllByRole('link', { name: 'FAQ' })
+    await user.click(faqLinks[faqLinks.length - 1]!)
     expect(toggle).toHaveAttribute('aria-expanded', 'false')
   })
 
