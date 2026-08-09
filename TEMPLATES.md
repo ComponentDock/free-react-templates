@@ -171,7 +171,7 @@
 - [x] **Wanderlust** — [colorlib](https://colorlib.com/wp/template/wanderlust/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wanderlust-template-1770211435145.jpg) · [roamly](https://free-react-templates-roamly.surge.sh)
 - [x] **Wealthwise** — [colorlib](https://colorlib.com/wp/template/wealthwise/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wealthwise-template-1770211049269.jpg) · [vaultly](https://free-react-templates-vaultly.surge.sh)
 - [x] **Workhub** — [colorlib](https://colorlib.com/wp/template/workhub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workhub-template-1771943925457.jpg) · [Deskly](https://free-react-templates-deskly.surge.sh)
-- [ ] **Youthconnect** — [colorlib](https://colorlib.com/wp/template/youthconnect/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youthconnect-template-1770211452999.jpg)
+- [~] **Youthconnect** — [colorlib](https://colorlib.com/wp/template/youthconnect/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youthconnect-template-1770211452999.jpg)
 
 ## Automotive (8)
 
