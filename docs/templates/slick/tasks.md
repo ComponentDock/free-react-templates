@@ -1,7 +1,7 @@
-# Narosundar (Colorlib Narosundar) — Tasks & Design Notes
+# Slick (ColorLib Narosundar) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Cove PR awaits review.
-> Implementation ships later on `feat/template-narosundar`.
+> Implementation ships later on `feat/template-slick`.
 
 ## Design notes
 
@@ -23,13 +23,13 @@
   **#f9f9ff** / lavender **#f0e9ff**; dark bands **#150303**; footer dark;
   fonts **Chivo** + **Open Sans** via Google Fonts; red filled / blue filled
   uppercase buttons.
-- **Recreation name:** Narosundar. App folder `apps/narosundar`, package
-  `@free-react-templates/narosundar`.
+- **Recreation name:** Slick. App folder `apps/slick`, package
+  `@free-react-templates/slick`.
 - **Design approach:** light theme with red accents and blue CTA; hero =
   seeded picsum photo + headline; about split; price rows in a dark band;
   For Hair / For Beard category panels; services with lucide icons;
   testimonial band; footer with contact info + social links; all images
-  picsum-seeded (`picsum.photos/seed/narosundar-N/w/h`); Google Fonts via
+  picsum-seeded (`picsum.photos/seed/slick-N/w/h`); Google Fonts via
   `<link>`.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
@@ -39,12 +39,12 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-narosundar/spec.md` (Gherkin
+- [x] Write `openspec/specs/template-slick/spec.md` (Gherkin
       requirements + scenarios + replication findings) — DONE on main (this
       prep).
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/narosundar` (copy `apps/aurora`; rename package to
-      `@free-react-templates/narosundar`).
+- [ ] Create `apps/slick` (copy `apps/aurora`; rename package to
+      `@free-react-templates/slick`).
 - [ ] TDD: tests first for Navbar, Hero, About, Prices, Categories,
       Services, Testimonials, Footer, App composition; run red.
 - [ ] Implement components (green) at 100% coverage.

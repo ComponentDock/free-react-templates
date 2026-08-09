@@ -1,8 +1,8 @@
-# Template: Narosundar (Barber Shop Landing)
+# Template: Slick (Barber Shop Landing)
 
 ## Purpose
 
-Narosundar is a single-page barber-shop landing template in the
+Slick is a single-page barber-shop landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Narosundar" design (see TEMPLATES.md), built under the
 monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -13,7 +13,7 @@ STORY"), a "OUR TOP PRICES" band with beard-treatment price rows, an "All
 We Do for You" category band (For Hair / For Beard), a services row
 (Stylish hair cut, Cut & hair style, Color & hair wash), an Instagram
 tile strip, a "Customers Say About Us" testimonial band, and a dark footer
-with contact info. Narosundar recreates that structure section-for-section
+with contact info. Slick recreates that structure section-for-section
 with matching layout, colors, typography, and content types (no ColorLib
 assets copied).
 
@@ -57,9 +57,9 @@ assets copied).
   headline; about split; price rows in a dark band; categories with
   For Hair / For Beard panels; services with lucide icons; testimonial band;
   footer with contact info and social links; all images picsum-seeded
-  (`picsum.photos/seed/narosundar-N/w/h`); Google Fonts via `<link>`.
+  (`picsum.photos/seed/slick-N/w/h`); Google Fonts via `<link>`.
 
-Narosundar lives in `apps/narosundar` and uses shared components from
+Slick lives in `apps/slick` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
@@ -67,13 +67,13 @@ Narosundar lives in `apps/narosundar` and uses shared components from
 ### Requirement: Navigation bar
 
 The system SHALL render a top navigation bar with the site name
-"Narosundar", a "Home" link, and a dark-mode toggle button.
+"Slick", a "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Narosundar page is rendered
+- **GIVEN** the Slick page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Narosundar" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Slick" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -160,7 +160,7 @@ links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Narosundar" and contact info
+- **THEN** it SHALL show the site name "Slick" and contact info
 - **AND** it SHALL show social links (GitHub, X, LinkedIn)
 
 ### Requirement: Page composition
@@ -170,7 +170,7 @@ a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Narosundar app is rendered
+- **GIVEN** the Slick app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Narosundar — Barber Shop Template"
+- **AND** the document title SHALL be "Slick — Barber Shop Template"
