@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Locks brand palette — recreated from the ColorLib "Trim" design
+     (css/style.css): tan/gold #ce9c6b accents + buttons (pill), brown
+     #785028 secondary, pure-black ftco-bg-dark bands + footer. */
+  --color-brand: #ce9c6b;
+  --color-brand-dark: #b07d46;
+  --color-brown: #785028;
+
+  /* Ink — near-black bands and footer (#000 from the original). */
+  --color-ink: #101010;
+  --color-ink-dark: #000000;
+
+  /* Paper — light section backgrounds (default white, alt #f8f9fa). */
+  --color-paper: #f8f9fa;
+
+  /* Mist — muted body text (#999999 from the original). */
+  --color-mist: #999999;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the tan. */
+  --color-primary-50: #faf4ec;
+  --color-primary-100: #f3e5d3;
+  --color-primary-200: #e7cba6;
+  --color-primary-300: #d9ad75;
+  --color-primary-400: #d19e60;
+  --color-primary-500: #ce9c6b;
+  --color-primary-600: #b07d46;
+  --color-primary-700: #8f6335;
+  --color-primary-800: #6e4c29;
+  --color-primary-900: #573c21;
+
+  /* Original fonts: "Cookie" (script display — brand logo) + "Poppins"
+     (body/headings). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Cookie', ui-serif, Georgia, serif;
+}
