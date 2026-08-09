@@ -163,7 +163,7 @@
 - [x] **Shopper** — [colorlib](https://colorlib.com/wp/template/shopper/) · [moda](https://free-react-templates-moda.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shopper-template-1770211205661.jpg)
 - [x] **Solarshift** — [colorlib](https://colorlib.com/wp/template/solarshift/) · [helios](https://free-react-templates-helios.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solarshift-template.jpg)
 - [x] **Solestyle** — [colorlib](https://colorlib.com/wp/template/solestyle/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solestyle-template-1770211411401.jpg) · [treadly](https://free-react-templates-treadly.surge.sh)
-- [ ] **Sparkleclean** — [colorlib](https://colorlib.com/wp/template/sparkleclean/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sparkleclean-template.jpg)
+- [~] **Sparkleclean** — [colorlib](https://colorlib.com/wp/template/sparkleclean/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sparkleclean-template.jpg)
 - [ ] **Swiftmove** — [colorlib](https://colorlib.com/wp/template/swiftmove/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/swiftmove-template-1771943964825.jpg)
 - [ ] **The Grand Azure** — [colorlib](https://colorlib.com/wp/template/the-grand-azure/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/grandazure-template-1771943856380.jpg)
 - [ ] **The Hustle Hour** — [colorlib](https://colorlib.com/wp/template/the-hustle-hour/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hustlehour-template-1771943880509.jpg)
