@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Drively brand palette — recreated from the ColorLib "Carrent" design
+     (css/style.css): bootstrap blue #007bff primary CTAs/accents. */
+  --color-brand: #007bff;
+  --color-brand-dark: #0062cc;
+
+  /* Ink — headings (#212529 from the original). */
+  --color-ink: #212529;
+
+  /* Mist — muted body text (#6c757d from the original). */
+  --color-mist: #6c757d;
+
+  /* Paper — light section backgrounds (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Coal — dark footer / overlays (#1b1b1b from the original footer). */
+  --color-coal: #1b1b1b;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand blue. */
+  --color-primary-50: #eef6ff;
+  --color-primary-100: #d9ebff;
+  --color-primary-200: #b8dbff;
+  --color-primary-300: #8ac5ff;
+  --color-primary-400: #54a8ff;
+  --color-primary-500: #2d8bff;
+  --color-primary-600: #007bff;
+  --color-primary-700: #0062cc;
+  --color-primary-800: #0753a3;
+  --color-primary-900: #0c4681;
+
+  /* Original font: "DM Sans" (Google Fonts via index.html). */
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
