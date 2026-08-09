@@ -24,6 +24,7 @@
     "verify:app": "bash scripts/verify-app.sh",
     "spec:validate": "openspec validate --specs",
     "readme:status": "node scripts/update-readme-status.mjs",
+    "shard-apps": "node scripts/shard-apps.mjs",
     "deploy": "bash scripts/deploy-template.sh",
     "deploy:aurora": "bash scripts/deploy-template.sh aurora",
     "prepare": "husky"

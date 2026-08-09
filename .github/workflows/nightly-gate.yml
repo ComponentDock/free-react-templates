@@ -1,46 +1,84 @@
 # Nightly full verification gate (FAST_MODE safety net — see docs/FAST_MODE.md).
 #
-# In FAST_MODE the local pre-push gate only verifies changed apps; the FULL
-# gate (npm run gate: typecheck → lint → test:coverage → build → knip →
-# fallow) runs here every night on main so regressions surface loudly even if
-# a merge slipped through. Also runnable manually via workflow_dispatch.
+# FAST_MODE: the local pre-push gate and the merge gate only verify CHANGED
+# apps (scripts/verify-app.sh); the FULL repo-wide sweep runs here every night
+# so a regression in packages/ui or an untouched app cannot go unnoticed.
+#
+# Split for scale (1,000+ workspaces):
+#   static     — lint + typecheck + knip + fallow (whole repo, ~5-8 min)
+#   test-build — matrix of 4 shards; each shard runs tests + build for its
+#                apps (round-robin via scripts/shard-apps.mjs); shard 0 also
+#                verifies packages/ui with 100% coverage.
 
 name: Nightly full gate
 
 on:
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '0 3 * * *'   # 03:00 UTC daily
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  gate:
-    name: Full gate
+  static:
+    name: Static checks (whole repo)
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: npm
-
       - name: Install dependencies
         run: npm ci
-
       - name: Install fallow (release binary — not an npm dependency)
         run: |
           curl -fsSL -o /usr/local/bin/fallow https://github.com/fallow-rs/fallow/releases/latest/download/fallow-linux-x64-gnu
           chmod +x /usr/local/bin/fallow
           fallow --version
+      - name: Lint
+        run: npm run lint
+      - name: Typecheck (all workspaces)
+        run: npm run typecheck
+      - name: Knip (unused exports/deps)
+        run: npm run knip
+      - name: Fallow (dead code / dupes / health)
+        run: npm run fallow
 
-      - name: Run full gate
-        run: npm run gate
-
-      - name: Report regression
-        if: failure()
-        run: echo "::error::Nightly full gate FAILED — a regression slipped through; fix it before the next merge."
+  test-build:
+    name: Tests + builds (shard ${{ matrix.shard }})
+    needs: static
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Test + build shard apps
+        run: |
+          APPS="$(npm run --silent shard-apps -- 4 ${{ matrix.shard }})"
+          echo "Shard ${{ matrix.shard }}: ${APPS}"
+          for app in $APPS; do
+            echo "==> tests: ${app}"
+            npx vitest run --root "apps/${app}" || exit 1
+            echo "==> build: ${app}"
+            npm run build --workspace "@free-react-templates/${app}" || exit 1
+          done
+      - name: Verify shared UI (100% coverage)
+        if: matrix.shard == 0
+        run: |
+          npm run typecheck --workspace @free-react-templates/ui
+          npx vitest run --root packages/ui \
+            --coverage.enabled=true --coverage.provider=v8 \
+            --coverage.include='src/**' \
+            --coverage.exclude='**/*.test.*' \
+            --coverage.thresholds.lines=100 --coverage.thresholds.functions=100 \
+            --coverage.thresholds.branches=100 --coverage.thresholds.statements=100

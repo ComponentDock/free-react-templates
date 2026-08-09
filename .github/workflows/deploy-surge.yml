@@ -55,10 +55,6 @@ jobs:
           chmod +x /usr/local/bin/fallow
           fallow --version
 
-      - name: Full gate (FAST_MODE CI safety net — PR merges only)
-        if: github.event_name == 'pull_request'
-        run: npm run gate
-
       - name: Determine apps to deploy
         id: apps
         env:
@@ -81,6 +77,51 @@ jobs:
           fi
           echo "APPS=${APPS}" >> "$GITHUB_ENV"
           echo "Detected app(s): ${APPS:-none}"
+
+      # FAST_MODE merge gate: verify ONLY the changed apps (+ packages/ui if
+      # touched) — the full gate is too slow at 1,000+ workspaces. Each app is
+      # verified by scripts/verify-app.sh (typecheck + lint + knip + fallow +
+      # 100%-coverage tests + build, ~2-3 min). The FULL gate (npm run gate)
+      # still runs nightly (nightly-gate.yml), so repo-wide regressions cannot
+      # go unnoticed.
+      - name: Gate changed apps (PR merges only)
+        if: github.event_name == 'pull_request' && env.APPS != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          failed=""
+          for app in $APPS; do
+            echo "==> Gate: ${app}"
+            if bash scripts/verify-app.sh "${app}"; then
+              echo "==> OK: ${app}"
+            else
+              echo "==> GATE FAILED: ${app}"
+              failed="${failed} ${app}"
+            fi
+          done
+          # packages/ui changed? verify the shared package (typecheck + 100% coverage).
+          if gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
+            --paginate --jq '.[].filename' | grep -q '^packages/ui/'; then
+            echo "==> Gate: packages/ui"
+            if npm run typecheck --workspace @free-react-templates/ui \
+              && npx vitest run --root packages/ui \
+                 --coverage.enabled=true --coverage.provider=v8 \
+                 --coverage.include='src/**' \
+                 --coverage.exclude='**/*.test.*' \
+                 --coverage.thresholds.lines=100 --coverage.thresholds.functions=100 \
+                 --coverage.thresholds.branches=100 --coverage.thresholds.statements=100; then
+              echo "==> OK: packages/ui"
+            else
+              echo "==> GATE FAILED: packages/ui"
+              failed="${failed} ui"
+            fi
+          fi
+          if [ -n "$failed" ]; then
+            echo "::error::Gate failed:${failed}"
+            exit 1
+          fi
+          echo "Gate passed for: ${APPS}"
 
       - name: Deploy each template to its Surge subdomain
         if: env.APPS != ''
