@@ -7,9 +7,9 @@ fresh session with no chat context, so every prompt below is fully self-containe
 
 | Job                             | State                   | Schedule  | Working tree                    | Delivery  |
 | ------------------------------- | ----------------------- | --------- | ------------------------------- | --------- |
-| 1 · Templates pipeline watchdog | ✅ scheduled (no_agent) | every 15m | — (restarts streams)            | this chat |
-| 2 · Continuous audit (firebase) | ⏸️ paused (2026-08-01)  | every 60m | `/root/free-templates-firebase` | this chat |
-| 6 · Cron status report          | ✅ scheduled            | every 10m | — (pure script)                 | this chat |
+| 1 · TPW · Templates pipeline watchdog | ✅ scheduled (no_agent) | every 15m | — (restarts streams)            | this chat |
+| 2 · CIA · Continuous audit (firebase) | ⏸️ paused (2026-08-01)  | every 60m | `/root/free-templates-firebase` | this chat |
+| 6 · CSR · Cron status report          | ✅ scheduled            | every 10m | — (pure script)                 | this chat |
 
 ## FAST_MODE: three concurrent streams (2026-08-07, see docs/FAST_MODE.md)
 
