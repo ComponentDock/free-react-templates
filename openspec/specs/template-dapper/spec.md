@@ -1,8 +1,8 @@
-# Template: Barcut (Barber Shop Landing)
+# Template: Dapper (Barber Shop Landing)
 
 ## Purpose
 
-Barcut is a single-page barber-shop landing template in the
+Dapper is a single-page barber-shop landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Barcut" design (see TEMPLATES.md), built under the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -13,7 +13,7 @@ about split ("We Believe that Interior beauty Lasts Long"), a four-card
 services grid, a tabbed "Select Your Style" catalogue, a three-member barbers
 team, a testimonial carousel over a dark photo band, three pricing packages
 with the middle one highlighted in dark, a four-post blog row, and a black
-footer with newsletter. Barcut recreates that structure section-for-section
+footer with newsletter. Dapper recreates that structure section-for-section
 with matching layout, colors, typography, and content types (no ColorLib
 assets copied).
 
@@ -27,7 +27,7 @@ assets copied).
   (`barcut-free-template.jpg`, 1200x946) confirms the visual design (light
   sections, gold-gradient CTAs, dark pricing card, black footer).
 - **Section order (1:1):**
-  1. Header/navbar: "Barcut Salon" logo + nav (Home, About, Pricing, Barbers,
+  1. Header/navbar: "Dapper Salon" logo + nav (Home, About, Pricing, Barbers,
      Gallery, Services, Blog, Contact).
   2. Hero (`home-banner-area`, photo carousel, overlay): "HairStyle is a Must
      Try Fashion" headline + blurb + "Watch Intro Video" button.
@@ -68,21 +68,21 @@ assets copied).
   photos; newsletter input in the footer. All images picsum-seeded, icons
   lucide-react (no assets copied).
 
-Barcut lives in `apps/barcut` and uses shared components from `packages/ui`
+Dapper lives in `apps/dapper` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Barcut", a
+The system SHALL render a top navigation bar with the site name "Dapper", a
 "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Barcut page is rendered
+- **GIVEN** the Dapper page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Barcut" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Dapper" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -184,7 +184,7 @@ links, a newsletter field, and social links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Barcut" and quick links
+- **THEN** it SHALL show the site name "Dapper" and quick links
 - **AND** it SHALL show a newsletter input and social links (GitHub, X, LinkedIn)
 
 ### Requirement: Page composition
@@ -194,7 +194,7 @@ a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Barcut app is rendered
+- **GIVEN** the Dapper app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Barcut — Barber Shop Template"
+- **AND** the document title SHALL be "Dapper — Barber Shop Template"

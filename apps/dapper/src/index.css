@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Dapper brand palette — recreated from the ColorLib "Barcut" design
+     (css/main.css): gold #ba9236 accents, gradient #ba9236 → #fdc136
+     on buttons, body text #777777 on light #f9f9ff sections. */
+  --color-brand: #ba9236;
+  --color-brand-dark: #9a7a2e;
+  --color-brand-light: #fdc136;
+
+  /* Paper — light section backgrounds (#f9f9ff / #fafaff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Ink — headings + body text (dark charcoal from the original). */
+  --color-ink: #222222;
+
+  /* Mist — muted body text (#777777 from the original). */
+  --color-mist: #777777;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand gold. */
+  --color-primary-50: #fbf8ef;
+  --color-primary-100: #f5eed8;
+  --color-primary-200: #eadbb0;
+  --color-primary-300: #ddc481;
+  --color-primary-400: #d1ac55;
+  --color-primary-500: #c79a3f;
+  --color-primary-600: #ba9236;
+  --color-primary-700: #9a7a2e;
+  --color-primary-800: #7c6129;
+  --color-primary-900: #665024;
+
+  /* Original fonts: "Playfair Display" (serif) for headings + "Roboto"
+     (sans-serif) for body (Google Fonts in index.html). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

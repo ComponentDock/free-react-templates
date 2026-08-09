@@ -1,7 +1,7 @@
 # Barcut (Colorlib Barcut) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Lagoon PR awaits review.
-> Implementation ships later on `feat/template-barcut`.
+> Implementation ships later on `feat/template-dapper`.
 
 ## Design notes
 
@@ -10,7 +10,7 @@
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/barcut/`
   (HTTP 200, 42.3KB) + stylesheet `css/main.css` (76.2KB). Full rendered DOM
   extracted; structure below is from the DOM + CSS tokens.
-- **Structure observed (1:1):** navbar (Barcut Salon + Home/About/Pricing/
+- **Structure observed (1:1):** navbar (Dapper Salon + Home/About/Pricing/
   Barbers/Gallery/Services/Blog/Contact) → hero (photo carousel, "HairStyle is
   a Must Try Fashion" + Watch Intro Video) → about split ("We Believe that
   Interior beauty Lasts Long" + Learn More) → services (4 icon cards: Stylish
@@ -26,14 +26,14 @@
   headings **Playfair Display** (serif) + body **Roboto** (sans-serif) via
   Google Fonts; photo overlays `rgba(0,0,0,0.3)`; footer `#000000`; active
   pricing card `#222`.
-- **Recreation name:** Barcut. App folder `apps/barcut`, package
-  `@free-react-templates/barcut`.
+- **Recreation name:** Dapper. App folder `apps/dapper`, package
+  `@free-react-templates/dapper`.
 - **Design approach:** light theme with gold accents; hero = seeded picsum
   photo + headline; about split with bordered photo; services with lucide
   icons; catalogue as tabbed style list; team cards with initials avatars;
   pricing cards with item lists and highlighted middle card; blog cards with
   seeded photos; newsletter input in footer; all images picsum-seeded
-  (`picsum.photos/seed/barcut-N/w/h`); Google Fonts via `<link>`.
+  (`picsum.photos/seed/dapper-N/w/h`); Google Fonts via `<link>`.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT duplicate
   components.
 - Base implementation on `apps/aurora` (multi-section landing with
@@ -42,11 +42,11 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-barcut/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-dapper/spec.md` (Gherkin requirements +
       scenarios + replication findings) — DONE on main (this prep).
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/barcut` (copy `apps/aurora`; rename package to
-      `@free-react-templates/barcut`).
+- [ ] Create `apps/dapper` (copy `apps/aurora`; rename package to
+      `@free-react-templates/dapper`).
 - [ ] TDD: tests first for Navbar, Hero, About, Services, Team,
       Testimonials, Pricing, BlogSection, Footer, App composition; run red.
 - [ ] Implement components (green) at 100% coverage.
