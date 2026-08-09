@@ -1,7 +1,7 @@
-# Carrent (Colorlib Carrent) — Tasks & Design Notes
+# Drively (ColorLib Carrent) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Lagoon PR awaits review.
-> Implementation ships later on `feat/template-carrent`.
+> Implementation ships later on `feat/template-drively`.
 
 ## Design notes
 
@@ -24,8 +24,8 @@
   all primary buttons); font **DM Sans** via Google Fonts; white cards on
   light-gray `#f8f9fa` section backgrounds; photo hero + services strip with
   dark overlay; solid blue pill buttons with white text.
-- **Recreation name:** Carrent. App folder `apps/carrent`, package
-  `@free-react-templates/carrent`.
+- **Recreation name:** Drively. App folder `apps/drively`, package
+  `@free-react-templates/drively`.
 - **Design approach:** light theme with blue accents; hero = seeded picsum
   photo + dark overlay + white spec card (blue top accent); trip form
   client-side (no reload) with zod types; car cards use lucide icons for
@@ -39,11 +39,11 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-carrent/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-drively/spec.md` (Gherkin requirements +
       scenarios + replication findings) — DONE on main (this prep).
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/carrent` (copy `apps/aurora`; rename package to
-      `@free-react-templates/carrent`).
+- [ ] Create `apps/drively` (copy `apps/aurora`; rename package to
+      `@free-react-templates/drively`).
 - [ ] TDD: tests first for Navbar, Hero (featured car card), TripForm,
       OfferSection, Services, HowItWorks, Testimonials, BlogSection, Footer,
       App composition; run red.

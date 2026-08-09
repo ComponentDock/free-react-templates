@@ -1,8 +1,8 @@
-# Template: Carrent (Car Rental Landing)
+# Template: Drively (Car Rental Landing)
 
 ## Purpose
 
-Carrent is a single-page car-rental landing template in the free-react-templates
+Drively is a single-page car-rental landing template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Carrent"
 design (see TEMPLATES.md), built under the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
@@ -11,7 +11,7 @@ The original is a clean, light-blue-and-white car rental landing page: a
 full-screen photo hero with a white "featured car" spec card, a trip booking
 form, an "Our Offer" carousel of rentable cars with prices and specs, a photo
 backdrop services strip, a 5-step "How it works", testimonials, a blog row, and
-a dark footer. Carrent recreates that structure section-for-section with
+a dark footer. Drively recreates that structure section-for-section with
 matching layout, colors, typography, and content types (no ColorLib assets
 copied).
 
@@ -24,7 +24,7 @@ copied).
   the reference below; the TEMPLATES.md screenshot (`carrent-free-template.jpg`)
   confirms the visual design (white/blue, photo hero, car cards).
 - **Section order (1:1):**
-  1. Sticky/absolute navbar: "CarRent" logo + nav (Home, Services, Cars, About,
+  1. Sticky/absolute navbar: "Drively" logo + nav (Home, Services, Cars, About,
      Blog, Contact) — white links over the hero photo.
   2. Full-viewport hero (`ftco-cover-1 overlay`, background photo): left column
      with a white "featured car" card (`.feature-car-rent-box-1`, 10px blue top
@@ -71,21 +71,21 @@ copied).
   with seeded photos. All images picsum-seeded, icons lucide-react (no assets
   copied).
 
-Carrent lives in `apps/carrent` and uses shared components from `packages/ui`
+Drively lives in `apps/drively` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Carrent", a
+The system SHALL render a top navigation bar with the site name "Drively", a
 "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Carrent page is rendered
+- **GIVEN** the Drively page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Carrent" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Drively" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -190,7 +190,7 @@ links, and social links.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Carrent" and quick links
+- **THEN** it SHALL show the site name "Drively" and quick links
 - **AND** it SHALL show social links (GitHub, X, LinkedIn)
 
 ### Requirement: Page composition
@@ -200,7 +200,7 @@ a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Carrent app is rendered
+- **GIVEN** the Drively app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Carrent — Car Rental Template"
+- **AND** the document title SHALL be "Drively — Car Rental Template"
