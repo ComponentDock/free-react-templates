@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Gilded brand palette — recreated from the ColorLib "Akame" design
+     (style.css): gold #bca858 accents + buttons, dark #252525, light
+     white / #f6f9f9 bands. */
+  --color-brand: #bca858;
+  --color-brand-dark: #a08f3d;
+  --color-brown: #785028;
+
+  /* Ink — dark bands and footer (#252525 from the original). */
+  --color-ink: #252525;
+  --color-ink-dark: #000000;
+
+  /* Paper — light section backgrounds (default white, alt #f6f9f9). */
+  --color-paper: #f6f9f9;
+
+  /* Mist — muted body text (#6e6e6e from the original). */
+  --color-mist: #6e6e6e;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the gold. */
+  --color-primary-50: #fbf8ef;
+  --color-primary-100: #f5eed6;
+  --color-primary-200: #eadcac;
+  --color-primary-300: #ddc77d;
+  --color-primary-400: #d0b55c;
+  --color-primary-500: #bca858;
+  --color-primary-600: #a08f3d;
+  --color-primary-700: #7e7032;
+  --color-primary-800: #665b2c;
+  --color-primary-900: #564d27;
+
+  /* Original fonts: "Playfair Display" (serif headings + buttons) +
+     "Open Sans" (sans body) via Google Fonts. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
