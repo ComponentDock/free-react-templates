@@ -1,0 +1,66 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Bulletin brand palette — recreated from the ColorLib "Newsflex" template
+     (https://colorlib.com/wp/template/newsflex/), tokens extracted from the
+     live preview's style.css (preview slug: newsbox):
+     - accent hot pink/red #ef1b48 (33 refs: "Trending" box, .newsbox-btn
+       buttons, active tab, hover states, video play buttons, video
+       slideshow top border)
+     - section light bg #f0f4f8 (breaking-news area, newsletter widget)
+     - ink #232323 (card titles), #404040 (nav/footer links, ticker text),
+       #636363 (dates/authors), #8a8a8a (inactive tabs), #a9a9a9 (copyright)
+     - hairline #d6dfe2 (footer divider), field #d4dfe3 (newsletter input)
+     - font: 'Raleway' (Google Fonts link in index.html) */
+  --color-accent: #ef1b48;
+  --color-mist: #f0f4f8;
+  --color-ink: #232323;
+  --color-inklight: #404040;
+  --color-meta: #636363;
+  --color-ash: #8a8a8a;
+  --color-pale: #a9a9a9;
+  --color-hairline: #d6dfe2;
+  --color-field: #d4dfe3;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600) render the
+     accent #ef1b48 fills; 700 = darker hover shade */
+  --color-primary: #ef1b48;
+  --color-primary-50: #fef2f5;
+  --color-primary-100: #fddde5;
+  --color-primary-200: #fbb8ca;
+  --color-primary-300: #f88da9;
+  --color-primary-400: #f45d84;
+  --color-primary-500: #f13562;
+  --color-primary-600: #ef1b48;
+  --color-primary-700: #c8143b;
+  --color-primary-800: #a31030;
+  --color-primary-900: #7e0d26;
+
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #232323;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+/* Breaking-news ticker marquee: the headline list is rendered twice and
+   translated -50% for a seamless loop (reference: #breakingNewsTicker). */
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-ticker {
+  animation: ticker-scroll 40s linear infinite;
+}
