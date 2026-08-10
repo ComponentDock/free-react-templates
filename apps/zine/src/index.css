@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Zine brand palette — recreated from the ColorLib "Katt" template
+     (https://colorlib.com/wp/template/katt/), tokens extracted from the live
+     preview's style.css:
+     - pale yellow #f5de87 (menu hover/current, pagination dots, zigzag)
+     - charcoal #2f2f2b (page bg) · overlay #3a3a37 (menu, load-more; hover
+       #464642) · cream #faf8f3 (load-more text, commas)
+     - text: links #121212 · muted #aaa6a0/#cdc8c1/#cec8bf/#b5b5b5/#7b7976 ·
+       footer #50504c · heart #e76f7d
+     - fonts: Montserrat (main sans) + PT Serif (sparingly), Google Fonts */
+  --color-brand: #f5de87;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600) render brand yellow */
+  --color-primary: #f5de87;
+  --color-primary-50: #fefcec;
+  --color-primary-100: #fbf7d8;
+  --color-primary-200: #f8efb0;
+  --color-primary-300: #f6e88e;
+  --color-primary-400: #f5e287;
+  --color-primary-500: #f5e087;
+  --color-primary-600: #f5de87;
+  --color-primary-700: #d9c05f;
+  --color-primary-800: #b79e3f;
+  --color-primary-900: #937f2b;
+  --color-charcoal: #2f2f2b;
+  --color-overlay: #3a3a37;
+  --color-overlay-hover: #464642;
+  --color-cream: #faf8f3;
+  --color-footer: #50504c;
+  --color-heart: #e76f7d;
+
+  /* Montserrat (main) · PT Serif (sparingly), via Google Fonts
+     <link> in index.html. */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'PT Serif', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  body {
+    background: #2f2f2b;
+    color: #aaa6a0;
+    font-family: var(--font-sans);
+    font-weight: 400;
+  }
+}
