@@ -24,7 +24,7 @@ export function App() {
           <HeroSlider />
           <SubscribeBadge />
         </div>
-        <div className="mx-auto grid max-w-7xl gap-14 px-6 pb-24 pt-40 lg:grid-cols-12">
+        <div className="mx-auto grid max-w-7xl gap-14 px-6 pb-[100px] pt-[165px] lg:grid-cols-12 lg:pt-0">
           <div className="lg:col-span-9">
             <BlogList />
             <Pagination />

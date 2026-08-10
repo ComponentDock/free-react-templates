@@ -5,7 +5,7 @@ export function SubscribeBadge() {
     <a
       href="#subscribe"
       aria-label="Subscribe to my YouTube channel"
-      className="absolute -bottom-8 right-6 z-20 flex h-40 w-40 flex-col items-center justify-center gap-1 rounded-full bg-lime text-center shadow-lg transition-transform hover:scale-105 dark:bg-lime-600"
+      className="absolute -bottom-[84px] right-6 z-20 flex h-40 w-40 flex-col items-center justify-center gap-1 rounded-full bg-lime text-center shadow-lg transition-transform hover:scale-105 dark:bg-lime-600"
     >
       <img
         src={`https://picsum.photos/seed/${subscribe.seed}/100/100`}
