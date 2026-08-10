@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pose brand palette — recreated from the ColorLib "Stylistic" design
+     (css/style.css): hot pink #f34573 (primary — buttons, icons, links,
+     accents), dark neutrals #212529 (ink text) / #343a40 (services band) /
+     #191919 (appointment band), gray #6c757d (body copy), light #f8f9fa. */
+  --color-brand: #f34573;
+  --color-ink: #212529;
+  --color-night: #191919;
+  --color-dark: #343a40;
+  --color-mist: #6c757d;
+  --color-cloud: #f8f9fa;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the hot pink. */
+  --color-primary-50: #fef2f5;
+  --color-primary-100: #fde3ea;
+  --color-primary-200: #fbc3d2;
+  --color-primary-300: #f897ab;
+  --color-primary-400: #f56a89;
+  --color-primary-500: #f34573;
+  --color-primary-600: #dd2557;
+  --color-primary-700: #b81b46;
+  --color-primary-800: #97193e;
+  --color-primary-900: #7f1939;
+
+  /* Original fonts: "Vidaloka" (serif headings) + "Poppins" (body) — both
+     loaded via Google Fonts <link> in index.html. */
+  --font-display: 'Vidaloka', ui-serif, Georgia, serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
