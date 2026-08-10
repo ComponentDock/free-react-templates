@@ -1,0 +1,68 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Rivulet brand palette — recreated from the ColorLib "Droppler" template
+     (https://colorlib.com/wp/template/droppler/), tokens extracted from the
+     live preview's style.css + css/common.css:
+     - navy #2b3344 (hero + no-image posts) · overlay #343451 (post image
+       overlay) · footer #191919 · quote glyph #3b455b
+     - muted #757B88 (dominant gray, 7 usages) · text #ffffff
+     - accent #e76f7d (coral — pulsing footer heart; only accent color) */
+  --color-navy: #2b3344;
+  --color-overlay: #343451;
+  --color-footer: #191919;
+  --color-quote: #3b455b;
+  --color-muted: #757b88;
+  --color-accent: #e76f7d;
+
+  /* Montserrat (headings + UI, heavy uppercase) + PT Serif (quotes,
+     excerpts) — Google Fonts via index.html (original font files are NOT
+     copied). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'PT Serif', Georgia, serif;
+
+  /* Lightweight animations: hero particle drift, pulsing footer heart,
+     scroll-pill bounce. */
+  --animate-particle-drift: particle-drift 5s ease-in-out infinite;
+  --animate-heart-pulse: heart-pulse 1s ease-in-out infinite;
+  --animate-scroll-bounce: scroll-bounce 1.6s ease-in-out infinite;
+
+  @keyframes particle-drift {
+    0%,
+    100% {
+      transform: translateY(0);
+      opacity: 0.15;
+    }
+    50% {
+      transform: translateY(-28px);
+      opacity: 0.7;
+    }
+  }
+
+  @keyframes heart-pulse {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+
+  @keyframes scroll-bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(6px);
+    }
+  }
+}
+
+@layer base {
+  body {
+    background: #2b3344;
+    color: #ffffff;
+  }
+}
