@@ -41,9 +41,9 @@ types (no ColorLib assets copied).
      (`div.search-wrap`: form absolute right 10px, width 0 → expands on
      toggle, input placeholder "Enter keyword and hit enter..."), burger
      menu button (mobile only). Below (desktop): centered nav menu
-     (`site-navigation text-center`) — Food and Drinks (active),
+     (`div.site-navigation text-center`) — Food and Drinks (active),
      Categories ▾ (dropdown with Menu One / Menu Two ▾ (Sub Menu One/Two/
-     Three) / Menu Three), Travel, Elements ▾, Inner Page, Contact us.
+     Three) / Menu Three), Travel, Elements, Inner Page, Contact us.
   2. Mobile off-canvas menu (`div.site-mobile-menu`, hidden on desktop)
      with close button, menu links and search.
   3. Featured post hero (`div.featured-post` → `div.main-slider
@@ -193,8 +193,7 @@ Contact us.
 #### Scenario: Dropdown menus
 
 - **GIVEN** the navigation menu is displayed
-- **WHEN** a menu item with children (Categories, Elements) is
-  hovered/focused
+- **WHEN** a menu item with children (Categories) is hovered/focused
 - **THEN** its dropdown with submenu links SHALL become visible
 
 #### Scenario: Mobile menu
