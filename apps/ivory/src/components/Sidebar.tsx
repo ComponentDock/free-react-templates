@@ -2,7 +2,7 @@ import { recentPosts, sidebar, tagPills } from '../data'
 
 export function Sidebar() {
   return (
-    <aside aria-label="Sidebar" className="mt-[110px] w-full lg:mt-[290px] lg:w-[290px]">
+    <aside aria-label="Sidebar" className="mt-[165px] w-full lg:mt-[290px] lg:w-[290px]">
       <div className="text-center">
         <h2 className="font-sans text-[30px] font-medium text-ink dark:text-gray-100">
           {sidebar.author}

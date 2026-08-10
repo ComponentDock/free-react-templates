@@ -3,7 +3,7 @@ import { footerPosts, instagramImages, socialLabels, socialLinks } from '../data
 
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-footerline bg-white dark:border-gray-800 dark:bg-gray-950">
+    <footer className="border-t border-footerline bg-white dark:border-gray-800 dark:bg-gray-950">
       <div className="mx-auto max-w-7xl px-6 pt-[100px]">
         <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-4">
           {footerPosts.map((post) => (

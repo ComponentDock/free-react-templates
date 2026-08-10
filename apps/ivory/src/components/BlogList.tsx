@@ -3,9 +3,12 @@ import { blogPosts, shareLinks, socialLabels } from '../data'
 
 export function BlogList() {
   return (
-    <section aria-label="Blog posts" className="flex flex-col gap-[110px]">
+    <section aria-label="Blog posts" className="flex flex-col">
       {blogPosts.map((post) => (
-        <article key={post.seed} className="content-wrap text-center text-meta dark:text-gray-400">
+        <article
+          key={post.seed}
+          className="content-wrap mt-[110px] text-center text-meta dark:text-gray-400"
+        >
           <header>
             <p className="text-xs uppercase tracking-[0.08rem]">{post.date}</p>
             <h2 className="mt-3 font-sans text-[30px] font-medium leading-tight text-ink dark:text-gray-100">
