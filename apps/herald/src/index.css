@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Herald brand palette — recreated from the ColorLib "Ednews" template
+     (https://colorlib.com/wp/template/ednews/), tokens extracted from the
+     live preview's common/styles.css:
+     - primary navy #0C0E68 (35 usages: section bg, buttons, title underlines,
+       dropdown hover) · nav navy #0A2D8B (bottom-menu + dropdown bg)
+     - dark navy #050658 (footer bottom bar)
+     - accent red #E3493D (BREAKING NEWS tag) · link blue #2458C5 (review
+       rating) · meta grey #888
+     - social brand colors: FB #4270E8 · Twitter #39CBF0 · Google #F63F39 ·
+       RSS #EDAA15 */
+  --color-primary: #0c0e68;
+  --color-primary-dark: #050658;
+  --color-nav: #0a2d8b;
+  --color-accent: #e3493d;
+  --color-linkblue: #2458c5;
+  --color-ash: #888888;
+  --color-fb: #4270e8;
+  --color-twtr: #39cbf0;
+  --color-gogl: #f63f39;
+  --color-rss: #edaa15;
+
+  /* Roboto (body 14px) + Encode Sans Expanded (headings) — Google Fonts via
+     index.html (original font files are NOT copied). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Encode Sans Expanded', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #111111;
+    font-size: 14px;
+  }
+}
