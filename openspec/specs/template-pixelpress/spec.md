@@ -97,12 +97,7 @@ rgba(226,30,228,0.24)`
      ("The best online game is out now!" / "Top 5 best games in november" /
      "Get this game at a promo price"), `p` excerpt, `a.read-more` "Read
      More" + arrow.
-  4. Featured `section.featured-section` — split: `div.featured-bg.set-bg`
-     (bg image featured-bg.jpg, absolute left, `width: calc(50% - 156px)`) +
-     `div.featured-box` (float right, white, `width: calc(50% + 156px)`):
-     `div.text-box`: top-meta (dark), `h3` 60px "The game you've been waiting
-     for is out now", `p` 16px, `a.read-more` dark #251e2f.
-  5. Blog `section.blog-section.spad` (45° gradient) → container → row:
+  4. Blog `section.blog-section.spad` (45° gradient) → container → row:
      main `div.col-xl-9.col-lg-8.col-md-7`: `div.section-title.text-white`
      `h2` "Latest News" + `ul.blog-filter` (Racing · Shooters · Strategy ·
      Online) + three `div.blog-item` (each: `div.blog-thumb` img + `div.blog-
@@ -114,10 +109,15 @@ text.text-box.text-white` with top-meta, `h3` "The best online game is
      `div.widget-item` `h4.widget-title` "categories" + `div.categories-
 widget` `ul` (Games · Gaming Tips & Tricks · Online Games · Team Games ·
      Community · Uncategorized).
-  6. Video `section.intro-video-section.set-bg` (bg promo-bg.jpg, height
+  5. Video `section.intro-video-section.set-bg` (bg promo-bg.jpg, height
      757px, `d-flex align-items-end`): `a.video-play-btn.video-popup` (href
      https://www.youtube.com/watch?v=uFsGy5x_fyQ) + container →
      `div.video-text`: `h2` "Promo video of the game" + `p`.
+  6. Featured `section.featured-section` — split: `div.featured-bg.set-bg`
+     (bg image featured-bg.jpg, absolute left, `width: calc(50% - 156px)`) +
+     `div.featured-box` (float right, white, `width: calc(50% + 156px)`):
+     `div.text-box`: top-meta (dark), `h3` 60px "The game you've been waiting
+     for is out now", `p` 16px, `a.read-more` dark #251e2f.
   7. Newsletter `section.newsletter-section` (gradient): container →
      `h2` "Subscribe to our newsletter" + `form.newsletter-form`: `input`
      placeholder "ENTER YOUR E-MAIL" + `button.site-btn` "subscribe" + arrow.
