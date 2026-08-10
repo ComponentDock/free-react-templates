@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Memoir brand palette — recreated from the ColorLib "Andrea" template.
+     Soft sky-blue accent #1eafed (links, active nav underline, pagination,
+     button hovers), ink rgba(0,0,0,0.8) headings, #212529 body, #bfbfbf
+     meta, borders #dee2e6 / #e6e6e6 / #ccc, surfaces #fff / #f8f9fa /
+     #fafafa, newsletter overlay text rgba(255,255,255,0.7). */
+  --color-sky-100: #e3f5fe;
+  --color-sky-200: #b8e6fc;
+  --color-sky-300: #7fd3f9;
+  --color-sky-400: #4cc1f6;
+  --color-sky-500: #1eafed;
+  --color-sky-600: #1894cc;
+  --color-sky-700: #1478a6;
+  --color-sky-800: #115f85;
+  --color-sky-900: #0e4a68;
+
+  --color-night-900: #0b2533;
+
+  --color-ink-900: rgba(0, 0, 0, 0.8);
+  --color-body-900: #212529;
+  --color-meta-500: #bfbfbf;
+
+  --color-line-200: #dee2e6;
+  --color-line-300: #e6e6e6;
+  --color-cloud-500: #ccc;
+
+  --color-soft-100: #f8f9fa;
+  --color-soft-200: #fafafa;
+
+  /* Abril Fatface (logo), Lora (headings), Poppins (body) — Google Fonts via index.html */
+  --font-display: 'Abril Fatface', ui-serif, Georgia, serif;
+  --font-serif: 'Lora', ui-serif, Georgia, serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    border-top: 2px solid #dee2e6;
+  }
+}
