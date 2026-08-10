@@ -244,7 +244,7 @@
 - [x] **Balita** — [colorlib](https://colorlib.com/wp/template/balita/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/balita-free-template.jpg) · [gazette](https://free-react-templates-gazette.surge.sh)
 - [x] **Blanca** — [colorlib](https://colorlib.com/wp/template/blanca/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/blanca-free-template.jpg) · [ivory](https://free-react-templates-ivory.surge.sh)
 - [x] **Blog Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/blog-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/blog-templates.jpg) · [marginalia](https://free-react-templates-marginalia.surge.sh)
-- [~] **Blogger** — [colorlib](https://colorlib.com/wp/template/blogger/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/blogger-free-blogging-website-template.jpg)
+- [x] **Blogger** — [colorlib](https://colorlib.com/wp/template/blogger/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/blogger-free-blogging-website-template.jpg) · [quill](https://free-react-templates-quill.surge.sh)
 - [x] **Bona** — [colorlib](https://colorlib.com/wp/template/bona/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bona-food-blog-website-template.jpg) · [morsel](https://free-react-templates-morsel.surge.sh)
 - [ ] **Bounty** — [colorlib](https://colorlib.com/wp/template/bounty/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bounty-free-template.jpg)
 - [ ] **Bueno** — [colorlib](https://colorlib.com/wp/template/bueno/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bueno-free-template.jpg)
