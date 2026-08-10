@@ -73,6 +73,15 @@ describe('Header', () => {
     expect(screen.getAllByRole('link', { name: 'Contact' })).toHaveLength(1)
   })
 
+  it('closes the mobile menu when a dropdown item is activated', async () => {
+    const user = userEvent.setup()
+    render(<Header />)
+    await user.click(screen.getByRole('button', { name: 'Open menu' }))
+    // With the desktop dropdown closed, the item only exists in the mobile panel.
+    await user.click(screen.getByRole('link', { name: homeDropdown[0]! }))
+    expect(screen.getAllByRole('link', { name: 'Featured' })).toHaveLength(1)
+  })
+
   it('toggles dark mode and persists the preference', async () => {
     const user = userEvent.setup()
     render(<Header />)
