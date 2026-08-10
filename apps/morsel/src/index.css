@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Morsel brand palette — recreated from the ColorLib "Bona" template
+     (https://colorlib.com/wp/template/bona/), tokens extracted from the
+     live preview's layout-1/css/styles.css:
+     - brand #498BF9 (link/button hover, footer social circles)
+     - peri #C3D8F5 (LOAD MORE button background, light periwinkle)
+     - blog-bg #EDF3F3 (body, blog area, post meta bars)
+     - input-bg #F5F7F6 (header search, footer subscribe input)
+     - ink #444444 (paragraph text) */
+  --color-brand: #498bf9;
+  --color-peri: #c3d8f5;
+  --color-blog-bg: #edf3f3;
+  --color-input-bg: #f5f7f6;
+  --color-ink: #444444;
+
+  /* Roboto (light body) + Maven Pro (paragraphs, headings) — Google Fonts
+     via index.html (original bundled font files; DO NOT copy them). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Maven Pro', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #edf3f3;
+    color: #444444;
+    font-weight: 300;
+  }
+}
