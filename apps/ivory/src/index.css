@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Ivory brand palette — recreated from the ColorLib "Blanca" template.
+     Monochrome: ink #2f2f2f (body, headings, logo, buttons, footer bar),
+     meta #afafaf (dates, tags, top-bar text), description #9d9d9d,
+     copyright #b8b8b8, header social #bec4c9, footer social #74797e,
+     search bg #f5f5f5, pagination bg #f0f0f0, search border #d5d5d5,
+     footer border #d8d8d8; the only accent is limegreen #9acd32 in the
+     circular subscribe badge (photo pop of color). */
+  --color-ink: #2f2f2f;
+  --color-meta: #afafaf;
+  --color-description: #9d9d9d;
+  --color-copyright: #b8b8b8;
+  --color-headsocial: #bec4c9;
+  --color-footsocial: #74797e;
+  --color-arrow: #3a3a3a;
+  --color-search: #f5f5f5;
+  --color-searchline: #d5d5d5;
+  --color-pageline: #f0f0f0;
+  --color-footerline: #d8d8d8;
+  --color-lime: #9acd32;
+
+  /* Montserrat (body/sans, 400/500/600) + Dancing Script (logo script,
+     400/700) — Google Fonts via index.html (original bundled @font-face
+     files; DO NOT copy them). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Dancing Script', cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #2f2f2f;
+  }
+  ::selection {
+    background: #2f2f2f;
+    color: #fff;
+  }
+}
