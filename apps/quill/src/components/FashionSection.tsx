@@ -3,7 +3,7 @@ import { MessageCircle } from 'lucide-react'
 import { fashionMorePosts, fashionPosts } from '../data'
 
 export function FashionSection() {
-  const [visibleCount, setVisibleCount] = useState(fashionPosts.length)
+  const [visibleCount, setVisibleCount] = useState<number>(fashionPosts.length)
   const allPosts = [...fashionPosts, ...fashionMorePosts]
   const posts = allPosts.slice(0, visibleCount)
   const hasMore = visibleCount < allPosts.length
