@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Bazaar brand palette — recreated from the ColorLib "ShopMax" design
+     (css/style.css): hot pink #ee4266 accent, dark #25262a text, gray
+     #8c92a0 body copy, light #f9f9f9 / #edf0f5 section bands, black square
+     buttons (rounded-0). */
+  --color-brand: #ee4266;
+  --color-ink: #25262a;
+  --color-mist: #8c92a0;
+  --color-cloud: #f9f9f9;
+  --color-fog: #edf0f5;
+  --color-night: #1f2124;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the ShopMax pink. */
+  --color-primary-50: #fef0f3;
+  --color-primary-100: #fddae2;
+  --color-primary-200: #fbb4c4;
+  --color-primary-300: #f88aa3;
+  --color-primary-400: #f36283;
+  --color-primary-500: #ee4266;
+  --color-primary-600: #d92d52;
+  --color-primary-700: #b31f41;
+  --color-primary-800: #8c1833;
+  --color-primary-900: #661124;
+
+  /* Original font: bootstrap default sans (recreated with Poppins via Google
+     Fonts); icomoon icon glyphs replaced with lucide-react. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

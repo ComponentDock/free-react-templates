@@ -1,7 +1,7 @@
-# Shopmax (Colorlib ShopMax) — Tasks & Design Notes
+# Bazaar (ColorLib ShopMax) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Cove PR awaits review.
-> Implementation ships later on `feat/template-shopmax`.
+> Implementation ships later on `feat/template-bazaar`.
 
 ## Design notes
 
@@ -22,12 +22,12 @@
   with lucide-react); black filled square buttons (`btn btn-black
 rounded-0`); body font recreated with a modern sans (e.g. Poppins) via
   Google Fonts.
-- **Recreation name:** Shopmax. App folder `apps/shopmax`, package
-  `@free-react-templates/shopmax`.
+- **Recreation name:** Bazaar. App folder `apps/bazaar`, package
+  `@free-react-templates/bazaar`.
 - **Design approach:** hero = seeded picsum product photo + headline + CTA;
   collections band; popular/most-rated product grids with seeded photo
   tiles; new-shoes band; promo; footer with link columns; all images
-  picsum-seeded (`picsum.photos/seed/shopmax-N/w/h`); Google Fonts via
+  picsum-seeded (`picsum.photos/seed/bazaar-N/w/h`); Google Fonts via
   `<link>`.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
@@ -37,10 +37,10 @@ rounded-0`); body font recreated with a modern sans (e.g. Poppins) via
 
 ## Tasks
 
-- [ ] Create branch `feat/template-shopmax` from latest origin/main.
-- [ ] Mark Shopmax `[~]` in TEMPLATES.md on the branch.
-- [ ] Refine spec with any additional replication findings (openspec/specs/template-shopmax/spec.md).
-- [ ] Scaffold `apps/shopmax` (copy simplest multi-section app, rename package to `@free-react-templates/shopmax`).
+- [ ] Create branch `feat/template-bazaar` from latest origin/main.
+- [x] Mark Shopmax `[~]` in TEMPLATES.md on the branch (claimed as Bazaar).
+- [x] Refine spec with any additional replication findings (openspec/specs/template-bazaar/spec.md).
+- [x] Scaffold `apps/bazaar` (copy simplest multi-section app, rename package to `@free-react-templates/bazaar`).
 - [ ] Write tests first (TDD, red phase): Navbar, hero, popular, most
       rated, promo, footer + dark mode.
 - [ ] Implement components using `packages/ui` + `cn()`, picsum-seeded
