@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Lede brand palette — recreated from the ColorLib "Magazine" template
+     (https://colorlib.com/wp/template/magazine/), tokens extracted from the
+     live preview's css/main.css:
+     - dark navy #04091e — top bar, nav bar, section-title pills, footer
+     - pink-red accent #f6214b — category tag pills, breaking-news label,
+       subscribe button, title hover states
+     - headings #222222 (Poppins 600) · body text #777777 (Poppins 14px 300)
+     - page bg #ecf0f1, content white; hero overlay rgba(0,0,0,0.4)
+     - social rows: fb #4c63a2 · tw #69c9ff · yt #c41713 · rss #f17300
+     - font: Poppins (300/400/500/600) via Google Fonts in index.html */
+  --color-navy: #04091e;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600) render the
+     pink-red accent */
+  --color-primary: #f6214b;
+  --color-primary-50: #fef1f4;
+  --color-primary-100: #fde3e9;
+  --color-primary-200: #fbc7d3;
+  --color-primary-300: #f89aae;
+  --color-primary-400: #f4627f;
+  --color-primary-500: #f6214b;
+  --color-primary-600: #f6214b;
+  --color-primary-700: #d40f38;
+  --color-primary-800: #af0f32;
+  --color-primary-900: #8f112f;
+  --color-heading: #222222;
+  --color-body: #777777;
+  --color-page: #ecf0f1;
+  --color-fb: #4c63a2;
+  --color-tw: #69c9ff;
+  --color-yt: #c41713;
+  --color-rss: #f17300;
+
+  /* Poppins (body + headings) via Google Fonts <link> in index.html. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ecf0f1;
+    color: #777777;
+    font-family: var(--font-sans);
+    font-weight: 300;
+  }
+}
