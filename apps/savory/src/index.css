@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Savory brand palette — recreated from the ColorLib "Bueno" preview
+     (style.css tokens): sage/pistachio brand #b0c364 (40 usages: preloader,
+     buttons, tags, hovers), darker variant #a3b65a, nav links #404040,
+     post meta #7a7a7a, trending panel bg #dadfe5, footer text #666666. */
+  --color-brand: #b0c364;
+  --color-brand-deep: #a3b65a;
+  --color-ink: #404040;
+  --color-meta: #7a7a7a;
+  --color-panel: #dadfe5;
+  --color-footer-text: #666666;
+
+  /* Montserrat (body — the only font-family in the original style.css) +
+     Playfair Display (elegant Didone-style serif for the logo wordmark and
+     post titles, matching the marketing screenshot). Loaded via Google
+     Fonts <link> in index.html — no font assets copied. */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #404040;
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background: #b0c364;
+    color: #fff;
+  }
+}
