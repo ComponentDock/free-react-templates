@@ -103,7 +103,7 @@ TBD
 
 ## Templates
 
-**Status:** 219 / 1646 templates recreated · **1427 remaining**.
+**Status:** 220 / 1646 templates recreated · **1426 remaining**.
 
 > Updated automatically after every template merge
 > (`node scripts/update-readme-status.mjs`). Each row is an original React
@@ -332,3 +332,4 @@ TBD
 | 217 | **Wordpressapp** ✅   | It is an original React recreation of the ColorLib "Wordpress App Themes" entry in TEMPLATES.md (App Landing Page category).                         | App Landing Page, Bootstrap, Landing Page, One Page, Seo, Startup | [wordpressapp.surge.sh](https://free-react-templates-wordpressapp.surge.sh)     |
 | 218 | **Zenith** ✅         | Recreation of ColorLib "Saasify" website template design (source: https://colorlib.com/wp/template/saasify/), built under a DIFFERENT name (Zenith … | Astro, Tailwind Css                                               | [zenith.surge.sh](https://free-react-templates-zenith.surge.sh)                 |
 | 219 | **Zest** ✅           | Recreation of ColorLib "Zeedapp" website template design, built under the new name **Zest** with the monorepo stack: Vite + React 19 + Tailwind CSS… | App Landing Page, Bootstrap, Landing Page, One Page               | [zest.surge.sh](https://free-react-templates-zest.surge.sh)                     |
+| 220 | **Zine**              | Recreation of ColorLib "Katt" website template design.                                                                                               | Blog, Creative, Portfolio                                         | [zine.surge.sh](https://free-react-templates-zine.surge.sh)                     |
