@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Glyph brand palette — recreated from the ColorLib "Opium" template
+     (https://colorlib.com/wp/template/opium/), tokens extracted from the live
+     preview's css/style.css:
+     - accent purple-blue #6f6fff (nav link hover/active, widget title bar,
+       blog button hover, footer links + heart, sub-btn bg, social hovers)
+     - ink #000 (headings, nav links, blog titles, active pagination page)
+     - body text #777777 (14-16px) · meta 12px #777777
+     - light fill #f9f9ff (banner bg, grid cat pill, blog button bg, widget
+       cards) · borders #e9e9e9 (1px)
+     - buttons: 1px #e9e9e9 border, bg #f9f9ff, radius 5px, hover -> accent
+     - footer bg #222222 · footer input bg/border #191919
+     - font: Inconsolata (Google Fonts, 400/700) for everything */
+  --color-accent: #6f6fff;
+  --color-ink: #000000;
+  --color-body: #777777;
+  --color-meta: #777777;
+  --color-soft: #f9f9ff;
+  --color-line: #e9e9e9;
+  --color-footer: #222222;
+  --color-foot-input: #191919;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600, hover
+     bg-primary-700) render the accent purple-blue */
+  --color-primary: #6f6fff;
+  --color-primary-50: #efefff;
+  --color-primary-100: #e0e0ff;
+  --color-primary-200: #c4c4ff;
+  --color-primary-300: #a3a3ff;
+  --color-primary-400: #8585ff;
+  --color-primary-500: #6f6fff;
+  --color-primary-600: #6f6fff;
+  --color-primary-700: #5a5aef;
+  --color-primary-800: #4747cc;
+  --color-primary-900: #3a3aa6;
+
+  --font-sans: 'Inconsolata', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #777777;
+    font-family: var(--font-sans);
+    line-height: 1.7;
+  }
+}
