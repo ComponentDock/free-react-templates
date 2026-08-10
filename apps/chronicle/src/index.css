@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Chronicle brand palette — recreated from the ColorLib "Content" template
+     (https://colorlib.com/wp/template/content/), tokens extracted from the
+     live preview's css/style.css:
+     - brand #c1a57b (tan/beige gold: links, hover, .btn-primary bg+border,
+       section-title highlight bar, active nav link, footer hover)
+     - ink #000000 (headings, logo, nav links, post titles)
+     - meta #989898 at 70% opacity = rgba(152,152,152,0.7) (dates, read time,
+       footer copyright) — used via text-meta/70
+     - paper #f0f0f0 (page background) · tile #f8f9fa (share icon tiles,
+       input borders) · line #e9ecef (input focus border) */
+  --color-brand: #c1a57b;
+  --color-brand-light: #c9b18c;
+  --color-ink: #000000;
+  --color-meta: #989898;
+  --color-paper: #f0f0f0;
+  --color-tile: #f8f9fa;
+  --color-line: #e9ecef;
+
+  /* Jost (body, nav, section titles, buttons) + Playfair Display (h1-h4,
+     logo, post titles) — Google Fonts via index.html (original font files
+     are NOT copied). */
+  --font-sans: 'Jost', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}
+
+@layer base {
+  body {
+    background: #f0f0f0;
+    color: #000000;
+  }
+}
