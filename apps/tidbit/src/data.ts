@@ -16,7 +16,7 @@ export const navLinks = ['Home', 'Politics', 'Tech', 'Entertainment', 'Travel', 
 
 export type PillColor = 'primary' | 'danger' | 'success' | 'warning' | 'secondary'
 
-export interface PostCategory {
+interface PostCategory {
   label: string
   color: PillColor
 }
