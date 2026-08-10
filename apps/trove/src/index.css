@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Trove brand palette — recreated from the ColorLib "Bounty" preview
+     (css/main.css tokens): primary purple #7c32ff, magenta #c738d8
+     (gradient end), deep indigo #415094 (titles, nav hover), muted slate
+     #828bb2 (body/meta text), widget charcoal #1e1c27 (sidebar widgets),
+     night #000000 (footer bg), soft #f9f9ff (alternate section bg). */
+  --color-brand: #7c32ff;
+  --color-brand-deep: #c738d8;
+  --color-indigo-deep: #415094;
+  --color-muted: #828bb2;
+  --color-widget: #1e1c27;
+  --color-night: #000000;
+  --color-soft: #f9f9ff;
+
+  /* Roboto (body) + Rubik (headings) — the original bundled the font
+     files; we load them via Google Fonts <link> in index.html — DO NOT
+     copy font assets. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Brand gradient used by the search overlay, subscribe button, pagination
+   active/hover links and tag/social hovers — extracted from the original
+   css/main.css (linear-gradient(90deg, #7c32ff 0%, #c738d8 100%)). */
+@utility brand-gradient {
+  background-image: linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #828bb2;
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background: #7c32ff;
+    color: #fff;
+  }
+}
