@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Feature brand palette — recreated from the ColorLib "Article" template.
+     Bright orange #F6490D (links, active nav, hero badge, pagination,
+     buttons, sidebar underline), gold #F7AF1D accent, body #333333,
+     headings #4d4d4d, nav rgba(0,0,0,0.7), meta #808080, surfaces #fff /
+     #fafafa / #F6F6F6, borders #e6e6e6 / #d9d9d9 / #b3b3b3, overlays
+     rgba(0,0,0,0.1 / 0.3 / 0.5 / 0.7). */
+  --color-brand-400: #f75b26;
+  --color-brand-500: #f6490d;
+  --color-brand-600: #dd3f08;
+  --color-gold-400: #f7af1d;
+
+  --color-ink-body: #333333;
+  --color-ink-heading: #4d4d4d;
+  --color-ink-soft: rgba(0, 0, 0, 0.7);
+  --color-meta-500: #808080;
+
+  --color-card-100: #fafafa;
+  --color-footer-100: #f6f6f6;
+
+  --color-line-300: #e6e6e6;
+  --color-line-dash: #d9d9d9;
+  --color-line-page: #b3b3b3;
+
+  /* Grand Hotel (logo), Lora (headings), Open Sans (body), Fira Sans
+     (hero badge numbers) — Google Fonts via index.html */
+  --font-display: 'Grand Hotel', cursive;
+  --font-serif: 'Lora', ui-serif, Georgia, serif;
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-numeral: 'Fira Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #333333;
+  }
+  ::selection {
+    background: #f6490d;
+    color: #fff;
+  }
+}
