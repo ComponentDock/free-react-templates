@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Wedlock brand palette — recreated from the ColorLib "Wordpress Wedding
+     Themes" roundup's featured theme (Veil). Brand accent 1 #E74923 (warm
+     orange-red, CTAs/links/highlights), accent 2 #D60058 (deep magenta,
+     secondary highlights). Hovers #C9320E / #BD004D. */
+  --color-accent-50: #fdf1ec;
+  --color-accent-100: #fadfd3;
+  --color-accent-200: #f4bda4;
+  --color-accent-300: #ee976f;
+  --color-accent-400: #e97a47;
+  --color-accent-500: #e74923;
+  --color-accent-600: #d63d17;
+  --color-accent-700: #c9320e;
+  --color-accent-800: #a02808;
+  --color-accent-900: #7d2006;
+
+  --color-magenta-100: #fbdce9;
+  --color-magenta-200: #f6b3d0;
+  --color-magenta-300: #ee82b1;
+  --color-magenta-400: #e24d8d;
+  --color-magenta-500: #d60058;
+  --color-magenta-600: #c4004e;
+  --color-magenta-700: #bd004d;
+  --color-magenta-800: #93003d;
+  --color-magenta-900: #6e002e;
+
+  /* Text darks + dark section bands (scheme_dark #040817 / #000912) */
+  --color-ink-900: #0e0d0e;
+  --color-ink-700: #3c3b3b;
+  --color-ink-500: #3f3d47;
+  --color-night-800: #000912;
+  --color-night-900: #040817;
+
+  /* Warm neutrals from the reference */
+  --color-cream-100: #f3ebe3;
+  --color-cream-200: #e3d7cc;
+  --color-mauve-100: #ece6ea;
+  --color-mauve-200: #ded4d9;
+
+  /* DM Sans (body) + Playfair Display (headings) — Google Fonts via index.html */
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

@@ -232,7 +232,7 @@
 - [x] **Topmodel** — [colorlib](https://colorlib.com/wp/template/topmodel/) · [catwalk](https://free-react-templates-catwalk.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/topmodel-free-template.jpg)
 - [x] **Vogue** — [colorlib](https://colorlib.com/wp/template/vogue/) · [lustre](https://free-react-templates-lustre.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vogue-free-template.jpg)
 - [x] **Wellspa** — [colorlib](https://colorlib.com/wp/template/wellspa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wellspa-free-template.jpg) · [halcyon](https://free-react-templates-halcyon.surge.sh)
-- [ ] **Wordpress Wedding Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-wedding-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wedding-wordpress-themes.jpg)
+- [~] **Wordpress Wedding Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-wedding-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wedding-wordpress-themes.jpg)
 - [ ] **Yogalax** — [colorlib](https://colorlib.com/wp/template/yogalax/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogalax-free-template.jpg)
 
 ## Blog (60)
@@ -3104,5 +3104,5 @@
 - [ ] **Wedding Officiant** — [colorlib](https://colorlib.com/wp/template/wedding-officiant/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/weddingofficiant-free-template.jpg)
 - [ ] **Wedding2** — [colorlib](https://colorlib.com/wp/template/wedding2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wedding2-free-template.jpg)
 - [ ] **Weddingdreams** — [colorlib](https://colorlib.com/wp/template/weddingdreams/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/weddingdreams-free-template.jpg)
-- [ ] **Wordpress Wedding Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-wedding-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wedding-wordpress-themes.jpg)
+- [~] **Wordpress Wedding Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-wedding-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wedding-wordpress-themes.jpg)
 
