@@ -57,5 +57,9 @@ describe('Navbar', () => {
 
     await user.click(screen.getAllByRole('link', { name: 'News' })[1]!)
     expect(screen.queryByRole('navigation', { name: 'Mobile' })).not.toBeInTheDocument()
+
+    await user.click(screen.getByRole('button', { name: 'Open menu' }))
+    await user.click(screen.getByRole('link', { name: 'Single' }))
+    expect(screen.queryByRole('navigation', { name: 'Mobile' })).not.toBeInTheDocument()
   })
 })
