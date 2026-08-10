@@ -1,21 +1,21 @@
 import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { Hero } from './Hero'
+import { hero } from '../data'
 
 describe('Hero', () => {
-  it('renders the headline, meta bar and author information', () => {
+  it('renders the headline, meta counts, author and publication date', () => {
     render(<Hero />)
-
     expect(
       screen.getByRole('heading', {
         level: 1,
-        name: /A Discount Toner Cartridge Is Better Than Ever/,
+        name: /A Discount Toner Cartridge Is Better Than Ever\./,
       }),
     ).toBeInTheDocument()
-    expect(screen.getByText('15 Likes')).toBeInTheDocument()
-    expect(screen.getByText('02 Comments')).toBeInTheDocument()
-    expect(screen.getByText('Mark wiens')).toBeInTheDocument()
-    expect(screen.getByText('12 Dec, 2017 11:21 am')).toBeInTheDocument()
-    expect(screen.getByAltText('Portrait of the author Mark wiens')).toBeInTheDocument()
+    expect(screen.getByText(`${hero.likes} Likes`)).toBeInTheDocument()
+    expect(screen.getByText(`${hero.comments} Comments`)).toBeInTheDocument()
+    expect(screen.getByText(hero.author)).toBeInTheDocument()
+    expect(screen.getByText(hero.date)).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: hero.imageAlt })).toBeInTheDocument()
   })
 })
