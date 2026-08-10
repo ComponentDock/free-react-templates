@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Savor brand palette — recreated from the ColorLib "Foodeiblog" template
+     (https://colorlib.com/wp/template/foodeiblog/), tokens extracted from the
+     live preview's css/style.css:
+     - orange #f4952f (category labels/dates, link hovers, active nav
+       underline, .site-btn background, subscribe button, hero label)
+     - ink #111111 (headings, nav, load-more text) · body #444444
+     - muted #888888 (bylines, counts) · borders #e1e1e1
+     - surfaces: white page, #f5f5f5 (footer bg), #ebebeb (load-more bg) */
+  --color-primary: #f4952f;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600) render in brand orange */
+  --color-primary-50: #fef6ec;
+  --color-primary-100: #fdebd3;
+  --color-primary-200: #fad4a6;
+  --color-primary-300: #f8b96e;
+  --color-primary-400: #f6a34a;
+  --color-primary-500: #f4952f;
+  --color-primary-600: #e07a12;
+  --color-primary-700: #b95f0c;
+  --color-primary-800: #944c0e;
+  --color-primary-900: #7a3f10;
+  --color-ink: #111111;
+  --color-body: #444444;
+  --color-meta: #888888;
+  --color-soft: #f5f5f5;
+  --color-chips: #ebebeb;
+  --color-line: #e1e1e1;
+
+  /* Nunito Sans (body/nav/meta) + Unna (serif headings) via Google Fonts in
+     index.html — the original's exact pairing. */
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Unna', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: var(--color-body);
+    font-family: var(--font-sans);
+    font-weight: 400;
+  }
+}
