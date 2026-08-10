@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Glossy brand palette — recreated from the ColorLib "Eden" template
+     (https://colorlib.com/wp/template/eden/), tokens extracted from the
+     live preview's css/style.css:
+     - brand #ff7a7f (coral/pink, 79 usages: category meta links, nav
+       active/hover, card-title hover, buttons, footer links)
+     - headings #33353b (Josefin Sans 600) · body #797979 (Open Sans)
+     - pink section bg #fbf1f2 (Travel News video area)
+     - borders #e8edf1 (header-top, footer-bottom) · #f0e9ff (newsletter
+       input) · #999999/#888888 (meta text) */
+  --color-brand: #ff7a7f;
+  --color-heading: #33353b;
+  --color-body: #797979;
+  --color-blush: #fbf1f2;
+  --color-borderline: #e8edf1;
+  --color-inputborder: #f0e9ff;
+  --color-metagray: #999999;
+
+  /* Josefin Sans (headings) + Open Sans (body/UI) — Google Fonts via
+     index.html (original font files are NOT copied). */
+  --font-display: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #797979;
+  }
+}
