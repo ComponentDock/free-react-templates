@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Newswire brand palette — recreated from the ColorLib "Meranda" template
+     (https://colorlib.com/wp/template/meranda/), tokens extracted from the
+     live preview's css/style.css:
+     - accent lime #8bc34a (.caption/.more links, active nav underline,
+       owl active dot, button hover)
+     - ink #000 (site-logo, headlines, .btn-secondary bg) · body #808080
+     - light bg #f8f9fa (hero panel, featured panel, subscribe band)
+     - pill inputs/buttons radius 30px · fonts: Cabin + B612 Mono */
+  --color-accent: #8bc34a;
+  --color-ink: #000000;
+  --color-body: #808080;
+  --color-soft: #f8f9fa;
+  --color-line: #dee2e6;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600) render accent lime */
+  --color-primary: #8bc34a;
+  --color-primary-50: #f7fbf0;
+  --color-primary-100: #edf7de;
+  --color-primary-200: #dbefbd;
+  --color-primary-300: #c2e496;
+  --color-primary-400: #a7d76c;
+  --color-primary-500: #8bc34a;
+  --color-primary-600: #7cb342;
+  --color-primary-700: #689a38;
+  --color-primary-800: #54792f;
+  --color-primary-900: #445f27;
+
+  --font-sans: 'Cabin', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'B612 Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #808080;
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
