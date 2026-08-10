@@ -261,7 +261,7 @@
 - [x] **Foodblog** — [colorlib](https://colorlib.com/wp/template/foodblog/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foodblog-free-template.jpg) · [Feast](https://free-react-templates-feast.surge.sh)
 - [x] **Foode** — [colorlib](https://colorlib.com/wp/template/foode/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foode-free-template.jpg) · [crumb](https://free-react-templates-crumb.surge.sh)
 - [x] **Foodeiblog** — [colorlib](https://colorlib.com/wp/template/foodeiblog/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foodeiblog-free-template.jpg) · [savor](https://free-react-templates-savor.surge.sh)
-- [~] **Hikers** — [colorlib](https://colorlib.com/wp/template/hikers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hikers-free-template.jpg)
+- [x] **Hikers** — [colorlib](https://colorlib.com/wp/template/hikers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hikers-free-template.jpg) · [trailhead](https://free-react-templates-trailhead.surge.sh)
 - [ ] **Ionize** — [colorlib](https://colorlib.com/wp/template/ionize/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ionize-free-template.jpg)
 - [ ] **Juli** — [colorlib](https://colorlib.com/wp/template/juli/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/juli-free-lifestyle-blog-website-template.jpg)
 - [ ] **Katt** — [colorlib](https://colorlib.com/wp/template/katt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/katt-free-creative-blog-website-template.jpg)
