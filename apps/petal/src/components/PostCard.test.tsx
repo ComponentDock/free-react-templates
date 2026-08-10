@@ -8,7 +8,8 @@ describe('PostCard', () => {
     const post = posts[0]!
     render(<PostCard post={post} />)
     expect(screen.getByRole('img', { name: post.title })).toBeInTheDocument()
-    expect(screen.getByText(post.category)).toBeInTheDocument()
+    // Category appears twice: the badge and the meta row.
+    expect(screen.getAllByText(post.category)).toHaveLength(2)
     expect(screen.getByRole('heading', { level: 3, name: post.title })).toBeInTheDocument()
     expect(screen.getByText(post.date)).toBeInTheDocument()
     expect(screen.getByText(post.excerpt)).toBeInTheDocument()

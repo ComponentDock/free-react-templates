@@ -26,7 +26,7 @@ describe('Sidebar', () => {
 
   it('renders the search input with its label', () => {
     render(<Sidebar />)
-    expect(screen.getByLabelText(searchLabel)).toBeInTheDocument()
+    expect(screen.getByRole('searchbox', { name: searchLabel })).toBeInTheDocument()
     expect(screen.getByRole('button', { name: searchLabel })).toBeInTheDocument()
   })
 

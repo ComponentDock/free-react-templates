@@ -52,7 +52,10 @@ export function Header() {
             ))}
           </ul>
           <p className="truncate">
-            {welcomeMessage} ·{' '}
+            {welcomeMessage}
+            <span aria-hidden="true" className="mx-1">
+              ·
+            </span>
             <a href={`mailto:${contactEmail}`} className="transition-colors hover:text-brand">
               {contactEmail}
             </a>
