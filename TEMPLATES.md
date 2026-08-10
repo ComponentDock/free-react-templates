@@ -233,7 +233,7 @@
 - [x] **Vogue** — [colorlib](https://colorlib.com/wp/template/vogue/) · [lustre](https://free-react-templates-lustre.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vogue-free-template.jpg)
 - [x] **Wellspa** — [colorlib](https://colorlib.com/wp/template/wellspa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wellspa-free-template.jpg) · [halcyon](https://free-react-templates-halcyon.surge.sh)
 - [x] **Wordpress Wedding Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-wedding-themes/) · [wedlock](https://free-react-templates-wedlock.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wedding-wordpress-themes.jpg)
-- [~] **Yogalax** — [colorlib](https://colorlib.com/wp/template/yogalax/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogalax-free-template.jpg)
+- [x] **Yogalax** — [colorlib](https://colorlib.com/wp/template/yogalax/) · [shanti](https://free-react-templates-shanti.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogalax-free-template.jpg)
 
 ## Blog (60)
 
@@ -1734,7 +1734,7 @@
 - [ ] **Theplaza** — [colorlib](https://colorlib.com/wp/template/theplaza/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theplaza-free-template.jpg)
 - [ ] **Timezone** — [colorlib](https://colorlib.com/wp/template/timezone/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/timezone-free-template.jpg)
 - [x] **Topmodel** — [colorlib](https://colorlib.com/wp/template/topmodel/) · [catwalk](https://free-react-templates-catwalk.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/topmodel-free-template.jpg)
-- [~] **Yogalax** — [colorlib](https://colorlib.com/wp/template/yogalax/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogalax-free-template.jpg)
+- [x] **Yogalax** — [colorlib](https://colorlib.com/wp/template/yogalax/) · [shanti](https://free-react-templates-shanti.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogalax-free-template.jpg)
 
 ## Finance (24)
 
@@ -1890,7 +1890,7 @@
 - [ ] **Yogabest** — [colorlib](https://colorlib.com/wp/template/yogabest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogabest-colorlib-template.jpg)
 - [ ] **Yogaflex** — [colorlib](https://colorlib.com/wp/template/yogaflex/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogaflex-free-template.jpg)
 - [ ] **Yogafun** — [colorlib](https://colorlib.com/wp/template/yogafun/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogafun-free-template.jpg)
-- [~] **Yogalax** — [colorlib](https://colorlib.com/wp/template/yogalax/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogalax-free-template.jpg)
+- [x] **Yogalax** — [colorlib](https://colorlib.com/wp/template/yogalax/) · [shanti](https://free-react-templates-shanti.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogalax-free-template.jpg)
 - [ ] **Yogalife** — [colorlib](https://colorlib.com/wp/template/yogalife/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogalife-free-template.jpg)
 - [ ] **Zacson** — [colorlib](https://colorlib.com/wp/template/zacson/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zacson-free-template.jpg)
 - [ ] **Zogin** — [colorlib](https://colorlib.com/wp/template/zogin/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zogin-free-template.jpg)
