@@ -266,7 +266,7 @@
 - [x] **Juli** — [colorlib](https://colorlib.com/wp/template/juli/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/juli-free-lifestyle-blog-website-template.jpg) · [petal](https://free-react-templates-petal.surge.sh)
 - [x] **Katt** — [colorlib](https://colorlib.com/wp/template/katt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/katt-free-creative-blog-website-template.jpg) · [zine](https://free-react-templates-zine.surge.sh)
 - [x] **Libro** — [colorlib](https://colorlib.com/wp/template/libro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/libro-free-template.jpg) · [tome](https://free-react-templates-tome.surge.sh)
-- [ ] **Lifeleck** — [colorlib](https://colorlib.com/wp/template/lifeleck/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lifeleck-free-template.jpg)
+- [~] **Lifeleck** — [colorlib](https://colorlib.com/wp/template/lifeleck/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lifeleck-free-template.jpg)
 - [ ] **Magazine** — [colorlib](https://colorlib.com/wp/template/magazine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/magazine-free-template.jpg)
 - [ ] **Magdesign** — [colorlib](https://colorlib.com/wp/template/magdesign/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/magdesign-free-template.jpg)
 - [ ] **Meranda** — [colorlib](https://colorlib.com/wp/template/meranda/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meranda-free-template.jpg)
