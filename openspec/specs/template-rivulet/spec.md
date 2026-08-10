@@ -212,8 +212,8 @@ rotating quotes, and author names.
 
 ### Requirement: Footer
 
-The system SHALL render a dark footer with widget columns, the logo, social
-links, and a copyright bar with a pulsing heart.
+The system SHALL render a dark footer with the logo, social links, and a
+copyright bar with a pulsing heart.
 
 #### Scenario: Footer content
 
