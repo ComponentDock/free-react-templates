@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Newsprint brand palette — recreated from the ColorLib "Magdesign" template
+     (https://colorlib.com/wp/template/magdesign/), tokens extracted from the
+     live preview's css/style.min.css:
+     - accent orange #f79918 (.btn-primary bg, hover states, active nav link,
+       tns active dot, footer CTA h2, social icon hover)
+     - dark teal #10495c (footer widget h3 headings)
+     - body text #888 (Poppins 400 14px) · headings #212529
+     - sticky navbar bg #000 with 4px 0 20px -5px rgba(0,0,0,.1)
+     - CTA pill radius 30px · inputs/thumbnails radius 7px · avatars 50%
+     - fonts: Poppins (Google Fonts) + Georgia serif for blockquotes */
+  --color-accent: #f79918;
+  --color-teal: #10495c;
+  --color-ink: #212529;
+  --color-body: #888888;
+  --color-soft: #f8f9fa;
+  --color-line: #dee2e6;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600) render accent orange */
+  --color-primary: #f79918;
+  --color-primary-50: #fef4e6;
+  --color-primary-100: #fde8cc;
+  --color-primary-200: #fbd099;
+  --color-primary-300: #f9b866;
+  --color-primary-400: #f7a03f;
+  --color-primary-500: #f79918;
+  --color-primary-600: #f79918;
+  --color-primary-700: #d97f0e;
+  --color-primary-800: #b5650b;
+  --color-primary-900: #8f4f09;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #888888;
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
