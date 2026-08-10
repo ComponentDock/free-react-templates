@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Trailhead brand palette — recreated from the ColorLib "Hikers" template
+     (https://colorlib.com/wp/template/hikers/), tokens extracted from the
+     live preview's css/style.css:
+     - brand blue #2f89fc (active nav, nav hover, dropdown top border,
+       chip hover bg); darker hover #046df4
+     - ink #000 (logo, nav, headings, social-icon circles)
+     - body #808080 (weight 300) · entry body #666666 · meta #b3b3b3
+     - surfaces: white, #edf0f5 (dropdown hover bg), #d9d9d9 (view-all btn),
+       #f4f5f9 (light blocks)
+     - chips: Nature green #28a745 · Travel red #dc3545 · Lifestyle amber
+       #ffc107 · Sports blue #007bff
+     - footer #333333, links #999999, paragraph #737373 */
+  --color-primary: #2f89fc;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600) render brand blue */
+  --color-primary-50: #eaf4ff;
+  --color-primary-100: #d4e8fe;
+  --color-primary-200: #a9d2fd;
+  --color-primary-300: #7bb8fb;
+  --color-primary-400: #51a1fa;
+  --color-primary-500: #2f89fc;
+  --color-primary-600: #1f76e8;
+  --color-primary-700: #0d5fc9;
+  --color-primary-800: #0b4c9e;
+  --color-primary-900: #093a78;
+  --color-ink: #000000;
+  --color-body: #808080;
+  --color-entry: #666666;
+  --color-meta: #b3b3b3;
+  --color-soft: #edf0f5;
+  --color-faint: #d9d9d9;
+  --color-fainter: #bfbfbf;
+  --color-nature: #28a745;
+  --color-travel: #dc3545;
+  --color-lifestyle: #ffc107;
+  --color-sports: #007bff;
+  --color-footer: #333333;
+  --color-footer-link: #999999;
+  --color-footer-text: #737373;
+
+  /* Muli (Google Fonts via index.html) — the original's only font. */
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: var(--color-body);
+    font-family: var(--font-sans);
+    font-weight: 300;
+  }
+}
