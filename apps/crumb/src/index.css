@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Crumb brand palette — recreated from the ColorLib "Foode" template
+     (https://colorlib.com/wp/template/foode/), tokens extracted from the
+     live preview's style.css:
+     - terracotta/salmon #e59f80 (dates, categories, hovers, search icon,
+       newsletter submit, hero title hover)
+     - ink #191919 (dark text, .foode-btn background)
+     - body #595959 (16px post excerpts) · muted #a6a6a6 / #bbbbbb (meta)
+     - surfaces: white page, #f2f4f5 (newsletter input), #ebebeb (tag chips),
+       warm off-white #f8f2ef (featured-carousel indicator panel) */
+  --color-primary: #e59f80;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600) render terracotta */
+  --color-primary-50: #fdf3ef;
+  --color-primary-100: #fbe7de;
+  --color-primary-200: #f7cfbe;
+  --color-primary-300: #f0b49c;
+  --color-primary-400: #eaa688;
+  --color-primary-500: #e59f80;
+  --color-primary-600: #d98760;
+  --color-primary-700: #c06e4b;
+  --color-primary-800: #9c5739;
+  --color-primary-900: #7d452e;
+  --color-ink: #191919;
+  --color-body: #595959;
+  --color-muted: #a6a6a6;
+  --color-mist: #bbbbbb;
+  --color-soft: #f2f4f5;
+  --color-chip: #ebebeb;
+  --color-panel: #f8f2ef;
+
+  /* Merriweather (serif headings, 300/400 + italics) · Poppins (body/meta,
+     300–600) · Dancing Script (wordmark + About signature), all via Google
+     Fonts <link> in index.html. */
+  --font-serif: 'Merriweather', ui-serif, Georgia, serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Dancing Script', cursive;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: var(--color-body);
+    font-family: var(--font-sans);
+    font-weight: 400;
+  }
+}
