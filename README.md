@@ -103,7 +103,7 @@ TBD
 
 ## Templates
 
-**Status:** 190 / 1646 templates recreated · **1456 remaining**.
+**Status:** 191 / 1646 templates recreated · **1455 remaining**.
 
 > Updated automatically after every template merge
 > (`node scripts/update-readme-status.mjs`). Each row is an original React
@@ -300,6 +300,7 @@ TBD
 | 185 | **Vista** ✅          | Recreation of ColorLib "Colorlib Error 404 V11" error page design.                                                                                   | 404 Error                                                         | [vista.surge.sh](https://free-react-templates-vista.surge.sh)                   |
 | 186 | **Vitalis** ✅        | Recreation of ColorLib "Aesthetic" design, built under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript..                           | Beauty                                                            | [vitalis.surge.sh](https://free-react-templates-vitalis.surge.sh)               |
 | 187 | **Vows** ✅           | Recreation of ColorLib "Forever Always" website template design (see TEMPLATES.md — THREE copies: lines 145, 2914, 3096; mark ALL `[x]` when done).  | Astro, Tailwind Css, Wedding                                      | [vows.surge.sh](https://free-react-templates-vows.surge.sh)                     |
-| 188 | **Wordpressapp** ✅   | It is an original React recreation of the ColorLib "Wordpress App Themes" entry in TEMPLATES.md (App Landing Page category).                         | App Landing Page, Bootstrap, Landing Page, One Page, Seo, Startup | [wordpressapp.surge.sh](https://free-react-templates-wordpressapp.surge.sh)     |
-| 189 | **Zenith** ✅         | Recreation of ColorLib "Saasify" website template design (source: https://colorlib.com/wp/template/saasify/), built under a DIFFERENT name (Zenith … | Astro, Tailwind Css                                               | [zenith.surge.sh](https://free-react-templates-zenith.surge.sh)                 |
-| 190 | **Zest** ✅           | Recreation of ColorLib "Zeedapp" website template design, built under the new name **Zest** with the monorepo stack: Vite + React 19 + Tailwind CSS… | App Landing Page, Bootstrap, Landing Page, One Page               | [zest.surge.sh](https://free-react-templates-zest.surge.sh)                     |
+| 188 | **Wedlock**           | It is an original React recreation of the ColorLib "Wordpress Wedding Themes" category item (see TEMPLATES.md — line 235, Fashion section, and its … | Beauty, Wedding                                                   | [wedlock.surge.sh](https://free-react-templates-wedlock.surge.sh)               |
+| 189 | **Wordpressapp** ✅   | It is an original React recreation of the ColorLib "Wordpress App Themes" entry in TEMPLATES.md (App Landing Page category).                         | App Landing Page, Bootstrap, Landing Page, One Page, Seo, Startup | [wordpressapp.surge.sh](https://free-react-templates-wordpressapp.surge.sh)     |
+| 190 | **Zenith** ✅         | Recreation of ColorLib "Saasify" website template design (source: https://colorlib.com/wp/template/saasify/), built under a DIFFERENT name (Zenith … | Astro, Tailwind Css                                               | [zenith.surge.sh](https://free-react-templates-zenith.surge.sh)                 |
+| 191 | **Zest** ✅           | Recreation of ColorLib "Zeedapp" website template design, built under the new name **Zest** with the monorepo stack: Vite + React 19 + Tailwind CSS… | App Landing Page, Bootstrap, Landing Page, One Page               | [zest.surge.sh](https://free-react-templates-zest.surge.sh)                     |
