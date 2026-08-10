@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Volt brand palette — recreated from the ColorLib "Ionize" template
+     (https://colorlib.com/wp/template/ionize/), tokens extracted from the
+     live preview's css/style.css:
+     - royal blue #0028ff (sidebar photo overlay @ 60%, card hover/active bg,
+       image hover overlay @ 70%, Read More link, btn-primary)
+     - ink #000000 (card h3 titles, meta category links)
+     - body #6c757d (card excerpts) · meta #bfbfbf (13px meta row)
+     - surfaces: white page/cards, #f8f9fa (bg-light) blog section */
+  --color-brand: #0028ff;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600) render brand blue */
+  --color-primary: #0028ff;
+  --color-primary-50: #e8ecff;
+  --color-primary-100: #ced8ff;
+  --color-primary-200: #9db1ff;
+  --color-primary-300: #6b8aff;
+  --color-primary-400: #3356ff;
+  --color-primary-500: #0f3aff;
+  --color-primary-600: #0028ff;
+  --color-primary-700: #0020cc;
+  --color-primary-800: #001a9e;
+  --color-primary-900: #001470;
+  --color-ink: #000000;
+  --color-body: #6c757d;
+  --color-meta: #bfbfbf;
+  --color-section: #f8f9fa;
+
+  /* Poppins (body/UI) · Abril Fatface (logo/display), via Google Fonts
+     <link> in index.html. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Abril Fatface', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: var(--color-body);
+    font-family: var(--font-sans);
+    font-weight: 400;
+  }
+}
