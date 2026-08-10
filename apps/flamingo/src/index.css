@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Flamingo brand palette — recreated from the ColorLib "Fantom" blog
+     template (https://colorlib.com/wp/template/fantom/), tokens extracted
+     from the live preview's style.css:
+     - primary #ff2f92 (nav bar, category pill borders, active pagination,
+       newsletter arrow, tag-cloud hover, widget-title left border)
+     - hover pink #cc2675 (nav item hover/active background)
+     - headings #222222 · body #777777 · meta #999999 / #cccccc
+     - borders #eeeeee (dotted category rows) · footer #222222 */
+  --color-primary: #ff2f92;
+  --color-hover-pink: #cc2675;
+  --color-heading: #222222;
+  --color-body: #777777;
+  --color-meta: #999999;
+  --color-muted: #cccccc;
+  --color-line: #eeeeee;
+  --color-footer: #222222;
+
+  /* Roboto 500 (headings, nav, pills) + Open Sans (body) — Google Fonts via
+     index.html; the script wordmark uses Great Vibes (original bundled font
+     files are NOT copied). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Great Vibes', cursive;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: var(--color-body);
+    font-family: var(--font-sans);
+    font-weight: 400;
+  }
+}
