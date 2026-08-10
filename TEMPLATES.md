@@ -227,7 +227,7 @@
 - [x] **Pretty** — [colorlib](https://colorlib.com/wp/template/pretty/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pretty-free-template.jpg) · [bloom](https://free-react-templates-bloom.surge.sh)
 - [x] **Remake** — [colorlib](https://colorlib.com/wp/template/remake/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/remake-free-template.jpg) · [sienna](https://free-react-templates-sienna.surge.sh)
 - [x] **Serenite** — [colorlib](https://colorlib.com/wp/template/serenite/) · [sooth](https://free-react-templates-sooth.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/serenite-template-1771943746919.jpg)
-- [ ] **Shopmax** — [colorlib](https://colorlib.com/wp/template/shopmax/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shopmax-free-template.jpg)
+- [~] **Shopmax** — [colorlib](https://colorlib.com/wp/template/shopmax/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shopmax-free-template.jpg)
 - [ ] **Stylistic** — [colorlib](https://colorlib.com/wp/template/stylistic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stylistic-free-template.jpg)
 - [x] **Topmodel** — [colorlib](https://colorlib.com/wp/template/topmodel/) · [catwalk](https://free-react-templates-catwalk.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/topmodel-free-template.jpg)
 - [x] **Vogue** — [colorlib](https://colorlib.com/wp/template/vogue/) · [lustre](https://free-react-templates-lustre.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vogue-free-template.jpg)

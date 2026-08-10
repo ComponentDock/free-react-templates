@@ -1,8 +1,8 @@
-# Template: Shopmax (eCommerce Shop Landing)
+# Template: Bazaar (eCommerce Shop Landing)
 
 ## Purpose
 
-Shopmax is a single-page eCommerce shop template in the free-react-templates
+Bazaar is a single-page eCommerce shop template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "ShopMax"
 design (see TEMPLATES.md), built under the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
@@ -13,7 +13,7 @@ Collection 2019" / "Arrivals Sales"), a "Discover The Collections" band, a
 "Popular Products" grid (Gray Shoe, Blue Shoe High Heels, Denim Jacket,
 Leather Green Bag, Smooth Cloth, Yellow Jacket), a "Most Rated" row, a
 "New Shoes" hero band, a "Finding Your Perfect Shirts This Summer" promo,
-and a footer with Quick Links / Contact Info columns. Shopmax recreates
+and a footer with Quick Links / Contact Info columns. Bazaar recreates
 that structure section-for-section with matching layout, colors,
 typography, and content types (no ColorLib assets copied).
 
@@ -49,24 +49,24 @@ typography, and content types (no ColorLib assets copied).
   dark-mode toggle) + Footer chrome; hero = seeded picsum product photo +
   headline + CTA; collections band; popular/most-rated product grids with
   seeded photo tiles; new-shoes band; promo; footer with link columns; all
-  images picsum-seeded (`picsum.photos/seed/shopmax-N/w/h`); Google Fonts
+  images picsum-seeded (`picsum.photos/seed/bazaar-N/w/h`); Google Fonts
   via `<link>`.
 
-Shopmax lives in `apps/shopmax` and uses shared components from `packages/ui`
+Bazaar lives in `apps/bazaar` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Shopmax", a
+The system SHALL render a top navigation bar with the site name "Bazaar", a
 "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Shopmax page is rendered
+- **GIVEN** the Bazaar page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Shopmax" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Bazaar" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -129,5 +129,5 @@ The system SHALL render a footer with the site name and link columns.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Shopmax"
+- **THEN** it SHALL show the site name "Bazaar"
 - **AND** it SHALL show link columns (Quick Links, Contact Info)
