@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Antler brand palette — recreated from the ColorLib "Moose" template
+     (https://colorlib.com/wp/template/moose/), tokens extracted from the
+     live preview's css/style.css:
+     - accent slate blue #588da8 (meta links, active nav item, role text,
+       footer social circle bg, subscribe input text + focus border)
+     - ink dark slate #313b44 (hero wordmark, blog titles, dark article
+       rows, Subscribe button, nav hover)
+     - footer bg #141b25 · copyright bar #000 · light band #f8f9fa
+     - fused newsletter input (radius 5px 0 0 5px, border #313b44) +
+       Subscribe button (bg #313b44, radius 0 5px 5px 0)
+     - font: Poppins (Google Fonts, 200-900) */
+  --color-accent: #588da8;
+  --color-ink: #313b44;
+  --color-soft: #f8f9fa;
+  --color-footer: #141b25;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600) render the
+     ink #313b44 Subscribe button; 700 = a darker hover shade */
+  --color-primary: #313b44;
+  --color-primary-50: #eef1f3;
+  --color-primary-100: #d8dee2;
+  --color-primary-200: #b2bdc5;
+  --color-primary-300: #8b9aa5;
+  --color-primary-400: #647886;
+  --color-primary-500: #4a5a66;
+  --color-primary-600: #313b44;
+  --color-primary-700: #262d34;
+  --color-primary-800: #1c2126;
+  --color-primary-900: #121619;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #212529;
+    font-family: var(--font-sans);
+    line-height: 1.7;
+  }
+}
+
+@layer utilities {
+  /* Hollow wordmark span: transparent fill + 1px ink stroke (source:
+     .slider-text h1 span { color: transparent; -webkit-text-stroke: 1px
+     #313b44 }) */
+  .text-stroke-ink {
+    -webkit-text-stroke: 1px #313b44;
+    color: transparent;
+  }
+}
