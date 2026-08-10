@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Tome brand palette — recreated from the ColorLib "Libro" template
+     (https://colorlib.com/wp/template/libro/), tokens extracted from the live
+     preview's css/style.css:
+     - brand pink #ee76ad (links, meta, pagination active, heading hover)
+     - cyan #29bae4 (paired with pink in the slide-out nav 45° gradient)
+     - body/excerpt gray #737373 · headings #000 · pagination border #ccc
+     - loader orange #F96D00 (spinner, optional)
+     - fonts: Work Sans (body, 300) + Playfair Display (headings) */
+  --color-brand: #ee76ad;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600) render brand pink */
+  --color-primary: #ee76ad;
+  --color-primary-50: #fef3f8;
+  --color-primary-100: #fde7f1;
+  --color-primary-200: #fbcfe2;
+  --color-primary-300: #f8a8c9;
+  --color-primary-400: #f37aab;
+  --color-primary-500: #ee76ad;
+  --color-primary-600: #ee76ad;
+  --color-primary-700: #d14f88;
+  --color-primary-800: #b03a6e;
+  --color-primary-900: #8f2f5a;
+  --color-cyan: #29bae4;
+  --color-body: #737373;
+  --color-line: #cccccc;
+  --color-loader: #f96d00;
+
+  /* Work Sans (body) · Playfair Display (headings), via Google Fonts
+     <link> in index.html. */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #737373;
+    font-family: var(--font-sans);
+    font-weight: 300;
+  }
+}
