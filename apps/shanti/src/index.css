@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Shanti brand palette — recreated from the ColorLib "Yogalax" template.
+     Brand mauve/dusty rose #d291bc (links, buttons, active nav, service
+     icons, checkmarks, blog day, price sup, quote badge, gallery hover
+     icon, gradient overlays, footer background), light mauve circle
+     #f7ebf3 (100px service icon circles), dark #090808 (counter band),
+     light #f8f9fa (section alternation). */
+  --color-mauve-50: #faf0f7;
+  --color-mauve-100: #f7ebf3;
+  --color-mauve-200: #ecd9e6;
+  --color-mauve-300: #e0bfd6;
+  --color-mauve-400: #d9a8cb;
+  --color-mauve-500: #d291bc;
+  --color-mauve-600: #bd6fa3;
+  --color-mauve-700: #a5548c;
+  --color-mauve-800: #864372;
+  --color-mauve-900: #663757;
+
+  --color-night-900: #090808;
+
+  /* Body copy grey + section light from the reference */
+  --color-body-500: #b3b3b3;
+  --color-body-700: #4d4d4d;
+  --color-soft-100: #f8f9fa;
+
+  /* Work Sans (body + headings — weight 200/300 thin display) — Google Fonts via index.html */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    border-top: 2px solid #dee2e6;
+  }
+}
