@@ -237,7 +237,7 @@
 
 ## Blog (60)
 
-- [~] **Andrea** — [colorlib](https://colorlib.com/wp/template/andrea/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/andrea-free-template.jpg)
+- [x] **Andrea** — [colorlib](https://colorlib.com/wp/template/andrea/) · [memoir](https://free-react-templates-memoir.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/andrea-free-template.jpg)
 - [ ] **Article** — [colorlib](https://colorlib.com/wp/template/article/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/article-free-template.jpg)
 - [ ] **Avision** — [colorlib](https://colorlib.com/wp/template/avision/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/avision-free-template.jpg)
 - [ ] **Axole** — [colorlib](https://colorlib.com/wp/template/axole/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/axole-website-template.jpg)
@@ -329,7 +329,7 @@
 - [ ] **Aid** — [colorlib](https://colorlib.com/wp/template/aid/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aid-free-template.jpg)
 - [ ] **Allfood** — [colorlib](https://colorlib.com/wp/template/allfood/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/allfood-free-template.jpg)
 - [ ] **Amor** — [colorlib](https://colorlib.com/wp/template/amor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amor-free-template.jpg)
-- [~] **Andrea** — [colorlib](https://colorlib.com/wp/template/andrea/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/andrea-free-template.jpg)
+- [x] **Andrea** — [colorlib](https://colorlib.com/wp/template/andrea/) · [memoir](https://free-react-templates-memoir.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/andrea-free-template.jpg)
 - [ ] **Apart** — [colorlib](https://colorlib.com/wp/template/apart/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apart-free-template.jpg)
 - [ ] **Appetizer** — [colorlib](https://colorlib.com/wp/template/appetizer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appetizer-free-template.jpg)
 - [x] **Appli** — [colorlib](https://colorlib.com/wp/template/appli/) · [appli](https://free-react-templates-appli.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appli-free-template.jpg)
@@ -1693,7 +1693,7 @@
 ## Fashion (43)
 
 - [ ] **Akame** — [colorlib](https://colorlib.com/wp/template/akame/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/akame-free-template.jpg)
-- [~] **Andrea** — [colorlib](https://colorlib.com/wp/template/andrea/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/andrea-free-template.jpg)
+- [x] **Andrea** — [colorlib](https://colorlib.com/wp/template/andrea/) · [memoir](https://free-react-templates-memoir.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/andrea-free-template.jpg)
 - [ ] **Aroma** — [colorlib](https://colorlib.com/wp/template/aroma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aroma-free-template.jpg)
 - [ ] **Ashion** — [colorlib](https://colorlib.com/wp/template/ashion/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ashion-free-template.jpg)
 - [ ] **Blog Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/blog-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/blog-templates.jpg)
