@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Journal brand palette — recreated from the ColorLib "Original" template
+     (https://colorlib.com/wp/template/original/), tokens extracted from the
+     live preview's style.css:
+     - accent deep indigo #30336b (hover fills on buttons, category boxes,
+       tag chips, post headlines, ticker links, instagram overlay)
+     - ink black #000 (nav bar, hero tag pill + headline bar, category
+       boxes, headings, date numerals) · near-black #0d0d0d (subscribe btn)
+     - nav/footer link grey #4f4d4d · meta grey #878787 · post tag #a1a1a1
+     - borders: #dcdcdc (btn, instagram top), #e1e1e1 (logo area),
+       #c5c5c5 (tag chips), #787878 (date box + newsletter inputs),
+       #bbbec1 (search underline/placeholder)
+     - buttons `.original-btn`: 1px #dcdcdc border, radius 0, min-width
+       175px, height 60px, 14px uppercase, letter-spacing 3px, black text,
+       shadow 0 0 30px rgba(0,0,0,0.1); hover bg+border #30336b, white text
+     - font: Open Sans (Google Fonts, 300/400/600/700) for everything;
+       the original's local "helveticaneuemedium" maps to Open Sans 600/700 */
+  --color-accent: #30336b;
+  --color-ink: #000000;
+  --color-nearblack: #0d0d0d;
+  --color-body: #4f4d4d;
+  --color-meta: #878787;
+  --color-tag: #a1a1a1;
+  --color-line: #dcdcdc;
+  --color-hairline: #e1e1e1;
+  --color-chip: #c5c5c5;
+  --color-input: #787878;
+  --color-search: #bbbec1;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600, hover
+     bg-primary-700) render the accent deep indigo */
+  --color-primary: #30336b;
+  --color-primary-50: #eeeff8;
+  --color-primary-100: #dcddf0;
+  --color-primary-200: #b9bce1;
+  --color-primary-300: #969ad2;
+  --color-primary-400: #7379c3;
+  --color-primary-500: #5057b4;
+  --color-primary-600: #30336b;
+  --color-primary-700: #26285a;
+  --color-primary-800: #1d1f48;
+  --color-primary-900: #141537;
+
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: var(--color-body);
+    font-family: var(--font-sans);
+    line-height: 1.7;
+  }
+}
