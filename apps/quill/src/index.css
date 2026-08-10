@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Quill brand palette — recreated from the ColorLib "Blogger" preview
+     (css/main.css tokens): primary light blue #69B4FD, brand gradient
+     45deg #62bdfc → #8490ff, ink #222222 (headings + footer bg), muted
+     #777777 (body text), soft #f9f9ff (alternate section bg), chip
+     #111111 (footer social chips). */
+  --color-brand: #69b4fd;
+  --color-brand-deep: #8490ff;
+  --color-ink: #222222;
+  --color-muted: #777777;
+  --color-soft: #f9f9ff;
+  --color-chip: #111111;
+
+  /* Poppins (original bundled the font files; we load it via Google Fonts
+     <link> in index.html — DO NOT copy font assets). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Brand gradient used by .primary-btn, hero overlay and footer social
+   hover — extracted from the original css/main.css
+   (linear-gradient(45deg, #62bdfc 0%, #8490ff 100%)). */
+@utility brand-gradient {
+  background-image: linear-gradient(45deg, #62bdfc 0%, #8490ff 100%);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #222222;
+  }
+  ::selection {
+    background: #69b4fd;
+    color: #fff;
+  }
+}
