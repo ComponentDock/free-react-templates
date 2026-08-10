@@ -258,7 +258,7 @@
 - [x] **Explore** — [colorlib](https://colorlib.com/wp/template/explore/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/explore-free-template.jpg) · [nomad](https://free-react-templates-nomad.surge.sh)
 - [x] **Fantasy** — [colorlib](https://colorlib.com/wp/template/fantasy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fantasy-free-template.jpg) · [roam](https://free-react-templates-roam.surge.sh)
 - [x] **Fantom** — [colorlib](https://colorlib.com/wp/template/fantom/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fantom-free-template.jpg) · [flamingo](https://free-react-templates-flamingo.surge.sh)
-- [ ] **Foodblog** — [colorlib](https://colorlib.com/wp/template/foodblog/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foodblog-free-template.jpg)
+- [~] **Foodblog** — [colorlib](https://colorlib.com/wp/template/foodblog/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foodblog-free-template.jpg)
 - [ ] **Foode** — [colorlib](https://colorlib.com/wp/template/foode/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foode-free-template.jpg)
 - [ ] **Foodeiblog** — [colorlib](https://colorlib.com/wp/template/foodeiblog/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foodeiblog-free-template.jpg)
 - [ ] **Hikers** — [colorlib](https://colorlib.com/wp/template/hikers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hikers-free-template.jpg)
