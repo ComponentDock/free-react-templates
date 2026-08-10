@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Couture brand palette — recreated from the ColorLib "Modist" design
+     (css/style.css): brand pink #f1b8c4 (hero overlay panel, sale badges,
+     nav hovers), black #000000 / dark text #212529, light bands #f8f9fa,
+     body gray #6c757d. */
+  --color-brand: #f1b8c4;
+  --color-brand-deep: #d998a8;
+  --color-ink: #212529;
+  --color-mist: #6c757d;
+  --color-cream: #f8f9fa;
+  --color-rule: #e9ecef;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the brand pink. */
+  --color-primary-50: #fdf3f5;
+  --color-primary-100: #fbe7eb;
+  --color-primary-200: #f6cfd7;
+  --color-primary-300: #f1b8c4;
+  --color-primary-400: #e79aac;
+  --color-primary-500: #db7f95;
+  --color-primary-600: #c95f79;
+  --color-primary-700: #a94a62;
+  --color-primary-800: #8a3e51;
+  --color-primary-900: #733644;
+
+  /* Original fonts: "Roboto Condensed" (headings — hero h1 120px/700/
+     uppercase, h2 20px uppercase letter-spacing 4px) and "Lato" (body)
+     via Google Fonts in index.html. */
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Roboto Condensed', ui-sans-serif, system-ui, sans-serif;
+}
