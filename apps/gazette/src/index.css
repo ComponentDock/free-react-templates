@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Gazette brand palette — recreated from the ColorLib "Balita" template.
+     Bootstrap blue #007bff (chips, pagination, tag hover, btn-primary,
+     active dot), hover blue #3395ff, ink #000 (top bar, logo, footer),
+     body gray #6c757d, meta gray #b3b3b3, search input #212121 →
+     #333333 on focus, surfaces #f7f7f7 (sidebar search) / #f2f2f2 (tags),
+     borders #e6e6e6 (navbar, entries) / #efefef (blog card bodies). */
+  --color-brand: #007bff;
+  --color-brand-hover: #3395ff;
+  --color-ink: #000000;
+  --color-body: #6c757d;
+  --color-meta: #b3b3b3;
+  --color-line: #e6e6e6;
+  --color-cardline: #efefef;
+  --color-surface: #f7f7f7;
+  --color-tag: #f2f2f2;
+  --color-search: #212121;
+  --color-searchfocus: #333333;
+
+  /* Josefin Sans (300/400/700) — Google Fonts via index.html */
+  --font-sans: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #000;
+  }
+  ::selection {
+    background: #007bff;
+    color: #fff;
+  }
+}
