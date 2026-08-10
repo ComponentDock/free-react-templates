@@ -271,7 +271,7 @@
 [x] **Magdesign** — [colorlib](https://colorlib.com/wp/template/magdesign/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/magdesign-free-template.jpg) · [newsprint](https://free-react-templates-newsprint.surge.sh)
 - [x] **Meranda** — [colorlib](https://colorlib.com/wp/template/meranda/) · [newswire](https://free-react-templates-newswire.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meranda-free-template.jpg)
 - [x] **Miniblog** — [colorlib](https://colorlib.com/wp/template/miniblog/) · [tidbit](https://free-react-templates-tidbit.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/miniblog-free-template.jpg)
-- [ ] **Moose** — [colorlib](https://colorlib.com/wp/template/moose/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/moose-colorlib-template.jpg)
+- [~] **Moose** — [colorlib](https://colorlib.com/wp/template/moose/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/moose-colorlib-template.jpg)
 - [ ] **Newsbit** — [colorlib](https://colorlib.com/wp/template/newsbit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/newsbit-free-template.jpg)
 - [ ] **Newsflex** — [colorlib](https://colorlib.com/wp/template/newsflex/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/newsbox-free-template.jpg)
 - [ ] **Opium** — [colorlib](https://colorlib.com/wp/template/opium/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/opium-free-template.jpg)
