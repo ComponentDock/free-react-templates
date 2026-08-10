@@ -1,8 +1,8 @@
-# Template: Muscle (Gym Fitness Landing)
+# Template: Pump (Gym Fitness Landing)
 
 ## Purpose
 
-Muscle is a single-page gym/fitness template in the free-react-templates
+Pump is a single-page gym/fitness template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Muscle"
 design (see TEMPLATES.md), built under the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
@@ -17,7 +17,7 @@ grid (Body Building, Aerobic Classes, Weight Lifting, Yoga Classes), a
 "Membership Plans" pricing section (One Day Training, Pay Every Month, 1
 Year Membership), a "Successful Stories" testimony band, a "Recent Blog"
 row, a "Book an Appointment" band, an Instagram gallery, and a footer with
-About Us / Recent Blog / Services / "Have a Questions?". Muscle recreates
+About Us / Recent Blog / Services / "Have a Questions?". Pump recreates
 that structure section-for-section with matching layout, colors,
 typography, and content types (no ColorLib assets copied).
 
@@ -31,7 +31,7 @@ typography, and content types (no ColorLib assets copied).
   (`muscle-free-template.jpg`) confirms the visual design (dark hero, pink +
   orange accents).
 - **Section order (1:1):**
-  1. Navbar (`ftco_navbar`): logo "Muscle" + nav (Home, Program, Coaches,
+  1. Navbar (`ftco_navbar`): logo "Pump" + nav (Home, Program, Coaches,
      Schedule, About, Blog, Contact).
   2. Hero (`home-slider js-fullheight`): slides "Fuel Your Body Fitness",
      "Be One Of Us", "Challenge Yourself", "Get Your Body Fit".
@@ -59,7 +59,8 @@ typography, and content types (no ColorLib assets copied).
   - Brand colors: **#fd0054** (hot pink) + **#fd6b00** (orange) — accents,
     buttons, headings; dark **#212529** text; light **#f8f9fa** / `bg-light`
     section backgrounds.
-  - Font: **"Work Sans"** (sans — headings/body) via Google Fonts.
+  - Font: **"Barlow Semi Condensed"** (theme body rule in css/style.css;
+    Work Sans only appears in the bootstrap variable copy) via Google Fonts.
   - Buttons: `btn-primary` pink/orange filled + `btn-custom` outline.
 - **Recreation decisions:** repo-standard Navbar (site name, Home link,
   dark-mode toggle) + Footer chrome; hero slider with seeded picsum photos
@@ -67,23 +68,23 @@ typography, and content types (no ColorLib assets copied).
     coach cards with initials avatars; class cards; pricing cards; testimony
     band; blog cards with seeded photos; appointment band; gallery grid;
     footer with link columns; all images picsum-seeded
-    (`picsum.photos/seed/muscle-N/w/h`); Google Fonts via `<link>`.
+    (`picsum.photos/seed/pump-N/w/h`); Google Fonts via `<link>`.
 
-Muscle lives in `apps/muscle` and uses shared components from `packages/ui`
+Pump lives in `apps/pump` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Muscle", a
+The system SHALL render a top navigation bar with the site name "Pump", a
 "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Muscle page is rendered
+- **GIVEN** the Pump page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Muscle" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Pump" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -180,5 +181,5 @@ The system SHALL render a footer with the site name and link columns.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Muscle"
+- **THEN** it SHALL show the site name "Pump"
 - **AND** it SHALL show link columns (About Us, Recent Blog, Services)
