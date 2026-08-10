@@ -249,7 +249,7 @@
 - [x] **Bounty** — [colorlib](https://colorlib.com/wp/template/bounty/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bounty-free-template.jpg) · [trove](https://free-react-templates-trove.surge.sh)
 - [x] **Bueno** — [colorlib](https://colorlib.com/wp/template/bueno/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bueno-free-template.jpg) · [savory](https://free-react-templates-savory.surge.sh)
 - [x] **Callie** — [colorlib](https://colorlib.com/wp/template/callie/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/callie-free-template.jpg) · [marlowe](https://free-react-templates-marlowe.surge.sh)
-- [~] **Content** — [colorlib](https://colorlib.com/wp/template/content/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/content-free-template.jpg)
+- [x] **Content** — [colorlib](https://colorlib.com/wp/template/content/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/content-free-template.jpg) · [Chronicle](https://free-react-templates-chronicle.surge.sh)
 - [ ] **Daren** — [colorlib](https://colorlib.com/wp/template/daren/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/daren-free-template.jpg)
 - [ ] **Droppler** — [colorlib](https://colorlib.com/wp/template/droppler/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/droppler-photography-blog-website-template.jpg)
 - [ ] **Eden** — [colorlib](https://colorlib.com/wp/template/eden/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eden-free-template.jpg)
