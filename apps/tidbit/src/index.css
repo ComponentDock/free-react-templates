@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Tidbit brand palette — recreated from the ColorLib "Miniblog" template
+     (https://colorlib.com/wp/template/miniblog/), tokens extracted from the
+     live preview's css/style.css:
+     - accent blue #2f89fc (links, active nav link, active pagination circle,
+       primary category pill, Subscribe button)
+     - accent hover #046df4 (a:hover)
+     - ink #000 (headings, nav links, card headlines)
+     - body text Bootstrap gray #808080 (weight 300) · post-meta #b3b3b3
+     - light bands #f8f9fa (hero + retro sections) · footer bg #333333
+     - square buttons (radius 0) · rounded images 4px · 40px circular
+       pagination · category pills (2px 10px, .2em tracking, .6rem, 700)
+     - font: Muli (Google Fonts, 300/400/700) */
+  --color-accent: #2f89fc;
+  --color-ink: #000000;
+  --color-body: #808080;
+  --color-meta: #b3b3b3;
+  --color-soft: #f8f9fa;
+  --color-footer: #333333;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600) render the
+     accent blue; 700 = the reference's hover shade #046df4 */
+  --color-primary: #2f89fc;
+  --color-primary-50: #eaf4ff;
+  --color-primary-100: #d0e7ff;
+  --color-primary-200: #a6d2ff;
+  --color-primary-300: #74b8ff;
+  --color-primary-400: #4aa2ff;
+  --color-primary-500: #2f89fc;
+  --color-primary-600: #2f89fc;
+  --color-primary-700: #046df4;
+  --color-primary-800: #0a58c8;
+  --color-primary-900: #0d4a9e;
+
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #808080;
+    font-family: var(--font-sans);
+    font-weight: 300;
+    line-height: 1.7;
+  }
+}
