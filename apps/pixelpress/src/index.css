@@ -1,0 +1,82 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Pixelpress brand palette — recreated from the ColorLib "Endgam" template
+     (https://colorlib.com/wp/template/endgam/), tokens extracted from the
+     live preview's css/style.css:
+     - magenta #b01ba5 (primary accent: category links, hero bottom border,
+       social hover bg, offset button shadow, active slider dot) · brighter
+       magenta #c313b7 · glow rgba(226,30,228,0.24)
+     - dark navy #081624 (header bar, site-btn text) · deep purple #0c062e
+       (intro section)
+     - muted body text #68647d on dark · dark read-more ink #251e2f on white
+     - purple gradients: blog 45deg #501755→#2d1854 · newsletter
+       #3e0f3d→#1c0f3b · footer #330d38→#190d36 (all left-to-right) */
+  --color-magenta: #b01ba5;
+  --color-magenta-bright: #c313b7;
+  --color-navy: #081624;
+  --color-deep-purple: #0c062e;
+  --color-muted: #68647d;
+  --color-ink: #251e2f;
+
+  /* Roboto — Google Fonts via index.html (original font files are NOT
+     copied). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #111111;
+    font-size: 14px;
+  }
+}
+
+@layer components {
+  /* Signature squared button (.site-btn): white bg, navy text, uppercase
+     italic bold, radius 0, magenta offset block + glow shadow. */
+  .site-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    min-width: 186px;
+    padding: 24px 30px;
+    border-radius: 0;
+    color: #081624;
+    background: #ffffff;
+    box-shadow:
+      9px 10px 0 0 #b01ba5,
+      0 0 9px 3px rgba(226, 30, 228, 0.24);
+    cursor: pointer;
+  }
+
+  .site-btn:hover {
+    color: #081624;
+  }
+
+  .site-btn:focus-visible {
+    outline: 2px solid #c313b7;
+    outline-offset: 3px;
+  }
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-anim {
+  animation: hero-rise 0.8s ease both;
+}
