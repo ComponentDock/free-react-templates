@@ -59,7 +59,8 @@ typography, and content types (no ColorLib assets copied).
   - Brand colors: **#fd0054** (hot pink) + **#fd6b00** (orange) — accents,
     buttons, headings; dark **#212529** text; light **#f8f9fa** / `bg-light`
     section backgrounds.
-  - Font: **"Work Sans"** (sans — headings/body) via Google Fonts.
+  - Font: **"Barlow Semi Condensed"** (theme body rule in css/style.css;
+    Work Sans only appears in the bootstrap variable copy) via Google Fonts.
   - Buttons: `btn-primary` pink/orange filled + `btn-custom` outline.
 - **Recreation decisions:** repo-standard Navbar (site name, Home link,
   dark-mode toggle) + Footer chrome; hero slider with seeded picsum photos

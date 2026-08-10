@@ -51,7 +51,7 @@
 - [ ] Write tests first (TDD, red phase): Navbar, hero, services, coaches,
       classes, pricing, testimony, blog, footer + dark mode.
 - [ ] Implement components using `packages/ui` + `cn()`, picsum-seeded
-      images, lucide icons, Google Fonts (Work Sans).
+      images, lucide icons, Google Fonts (Barlow Semi Condensed).
 - [ ] Run verification gate: typecheck → lint → test:coverage (100%) →
       build → knip → fallow. Also `npm run spec:validate`.
 - [ ] Self-review (docs/self-review.md), update TEMPLATES.md docs, commit

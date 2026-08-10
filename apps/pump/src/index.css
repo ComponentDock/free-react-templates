@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pump brand palette — recreated from the ColorLib "Muscle" design
+     (css/style.css): hot pink #fd0054 + orange #fd6b00 (accent gradient,
+     buttons, heading accents), dark #212529 text, gray #999999 body copy,
+     light #f8f9fa section bands. */
+  --color-brand: #fd0054;
+  --color-brand-orange: #fd6b00;
+  --color-ink: #212529;
+  --color-mist: #999999;
+  --color-cloud: #f8f9fa;
+  --color-night: #1a1d21;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the hot pink. */
+  --color-primary-50: #fff0f6;
+  --color-primary-100: #ffdbe8;
+  --color-primary-200: #ffb8d2;
+  --color-primary-300: #ff8ab5;
+  --color-primary-400: #ff5c97;
+  --color-primary-500: #fd2e78;
+  --color-primary-600: #fd0054;
+  --color-primary-700: #d6004a;
+  --color-primary-800: #a3003a;
+  --color-primary-900: #6e0027;
+
+  /* Original font: "Barlow Semi Condensed" (theme body rule in css/style.css;
+     Work Sans only appears in the bootstrap variable copy). */
+  --font-sans: 'Barlow Semi Condensed', ui-sans-serif, system-ui, sans-serif;
+}
