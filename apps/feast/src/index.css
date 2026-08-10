@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Feast brand palette — recreated from the ColorLib "Foodblog" template
+     (https://colorlib.com/wp/template/foodblog/), tokens extracted from the
+     live preview's style.css:
+     - pink #ff2a6b (top bar, recipe info bars, ad panel, date badges,
+       readmore button, search button)
+     - yellow #fdc856 (hero sticker 2, reviews section background)
+     - lime #bdde64 (hero sticker 3)
+     - star #fbb710 · faded star #e0e3e4 · text #474747
+     - footer social #b8b8b8 · light card bg #eff3f7 */
+  --color-primary: #ff2a6b;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600) render in brand pink */
+  --color-primary-50: #fff0f5;
+  --color-primary-100: #ffe1ea;
+  --color-primary-200: #ffc4d6;
+  --color-primary-300: #ff9db8;
+  --color-primary-400: #ff6b95;
+  --color-primary-500: #ff4a80;
+  --color-primary-600: #ff2a6b;
+  --color-primary-700: #e01454;
+  --color-primary-800: #b81146;
+  --color-primary-900: #8e0e39;
+  --color-secondary: #fdc856;
+  --color-accent: #bdde64;
+  --color-star: #fbb710;
+  --color-star-faded: #e0e3e4;
+  --color-ink: #474747;
+  --color-soft: #eff3f7;
+  --color-social: #b8b8b8;
+  --color-meta: #cccccc;
+
+  /* Poppins (Google Fonts via index.html) — the original's only font. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-weight: 400;
+  }
+}
