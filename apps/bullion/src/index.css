@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Bullion brand palette — recreated from the ColorLib "Newsbit" template
+     (https://colorlib.com/wp/template/newsbit/), tokens extracted from the
+     live preview's common/styles.css:
+     - accent golden yellow #F9B500 (author names, view/comment icons,
+       price-ticker bg, button borders/fills, newsletter button, footer
+       headings, "Download for free" link)
+     - dark charcoal #191919 (top utility bar + footer bg; footer text #ccc)
+     - ink near-black #111 (byline names on white, banner overlay, text on
+       accent fills)
+     - greys: meta #888, ash #aaa (utility links, copyright), #ccc (p-title
+       underlines, dividers), #ddd/#eee (dropdown/mobile-menu separators)
+     - font: 'Encode Sans Expanded' (Google Fonts link in index.html);
+       body 14px; headings bold (h3 1.7em, h4 1.3em, h5 1.1em, h6 .85em) */
+  --color-accent: #f9b500;
+  --color-dark: #191919;
+  --color-ink: #111111;
+  --color-meta: #888888;
+  --color-ash: #aaaaaa;
+  --color-subline: #cccccc;
+  --color-softedge: #dddddd;
+  --color-separator: #eeeeee;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600) render the
+     accent #F9B500 fills; 700 = a darker hover shade */
+  --color-primary: #f9b500;
+  --color-primary-50: #fef8e0;
+  --color-primary-100: #fdeeb3;
+  --color-primary-200: #fbe280;
+  --color-primary-300: #fad64d;
+  --color-primary-400: #f9cc26;
+  --color-primary-500: #f9c200;
+  --color-primary-600: #f9b500;
+  --color-primary-700: #d99d00;
+  --color-primary-800: #b58400;
+  --color-primary-900: #8f6800;
+
+  --font-sans: 'Encode Sans Expanded', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #111111;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
