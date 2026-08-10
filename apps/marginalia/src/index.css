@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Marginalia brand palette — recreated from the ColorLib "Blog Wordpress
+     Themes" roundup screenshot (preview 404s; the capture depicts the
+     featured "Jevelin" blog theme whose VISUAL DESIGN is recreated under the
+     new name). Monochrome editorial scheme: charcoal #141414 (header bar,
+     hero overlay, footer), ink #222222 (headings, body text), meta #9b9b9b
+     (byline, tags, icons), description #6b6b6b (excerpts). The only
+     "accent" is the italic serif word in the hero headline. */
+  --color-charcoal: #141414;
+  --color-ink: #222222;
+  --color-meta: #9b9b9b;
+  --color-description: #6b6b6b;
+
+  /* Montserrat (thin sans: logo, headlines, meta) + Playfair Display
+     (italic serif accent word) — Google Fonts via index.html (original
+     bundled font files; DO NOT copy them). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #222222;
+  }
+  ::selection {
+    background: #141414;
+    color: #fff;
+  }
+}
