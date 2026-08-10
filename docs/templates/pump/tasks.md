@@ -1,7 +1,7 @@
-# Muscle (Colorlib Muscle) — Tasks & Design Notes
+# Pump (Colorlib Muscle) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Cove PR awaits review.
-> Implementation ships later on `feat/template-muscle`.
+> Implementation ships later on `feat/template-pump`.
 
 ## Design notes
 
@@ -10,7 +10,7 @@
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/muscle/`
   (HTTP 200, 56.4KB) + stylesheet `css/style.css` (95.7KB). Full rendered
   DOM extracted; structure below is from the DOM + CSS tokens.
-- **Structure observed (1:1):** navbar (Muscle + Home/Program/Coaches/
+- **Structure observed (1:1):** navbar (Pump + Home/Program/Coaches/
   Schedule/About/Blog/Contact) → hero slider ("Fuel Your Body Fitness",
   "Be One Of Us", "Challenge Yourself", "Get Your Body Fit") → services
   ("What We Do?": Analyze Your Goal, Work Hard On It, Improve Your
@@ -28,13 +28,13 @@
   dark **#212529** text; light **#f8f9fa**/`bg-light` bands; font **Work
   Sans** via Google Fonts; pink/orange filled buttons (`btn-primary`) +
   outline (`btn-custom`).
-- **Recreation name:** Muscle. App folder `apps/muscle`, package
-  `@free-react-templates/muscle`.
+- **Recreation name:** Pump. App folder `apps/pump`, package
+  `@free-react-templates/pump`.
 - **Design approach:** hero slider with seeded picsum photos + headlines;
   services with lucide icons; counter band; about split; coach cards with
   initials avatars; class cards; pricing cards; testimony band; blog cards
   with seeded photos; appointment band; gallery grid; footer with link
-  columns; all images picsum-seeded (`picsum.photos/seed/muscle-N/w/h`);
+  columns; all images picsum-seeded (`picsum.photos/seed/pump-N/w/h`);
   Google Fonts via `<link>`.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
@@ -44,10 +44,10 @@
 
 ## Tasks
 
-- [ ] Create branch `feat/template-muscle` from latest origin/main.
-- [ ] Mark Muscle `[~]` in TEMPLATES.md on the branch.
-- [ ] Refine spec with any additional replication findings (openspec/specs/template-muscle/spec.md).
-- [ ] Scaffold `apps/muscle` (copy simplest multi-section app, rename package to `@free-react-templates/muscle`).
+- [ ] Create branch `feat/template-pump` from latest origin/main.
+- [ ] Mark Pump `[~]` in TEMPLATES.md on the branch.
+- [ ] Refine spec with any additional replication findings (openspec/specs/template-pump/spec.md).
+- [ ] Scaffold `apps/pump` (copy simplest multi-section app, rename package to `@free-react-templates/pump`).
 - [ ] Write tests first (TDD, red phase): Navbar, hero, services, coaches,
       classes, pricing, testimony, blog, footer + dark mode.
 - [ ] Implement components using `packages/ui` + `cn()`, picsum-seeded

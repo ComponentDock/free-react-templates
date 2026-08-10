@@ -223,7 +223,7 @@
 - [x] **Medical Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/medical-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medical-website-templates.jpg) · [medora](https://free-react-templates-medora.surge.sh)
 - [x] **Modelo** — [colorlib](https://colorlib.com/wp/template/modelo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modelo-free-template.jpg) · [allure](https://free-react-templates-allure.surge.sh)
 - [x] **Modist** — [colorlib](https://colorlib.com/wp/template/modist/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modist-free-template.jpg) · [couture](https://free-react-templates-couture.surge.sh)
-- [ ] **Muscle** — [colorlib](https://colorlib.com/wp/template/muscle/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/muscle-free-template.jpg)
+- [~] **Muscle** — [colorlib](https://colorlib.com/wp/template/muscle/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/muscle-free-template.jpg)
 - [x] **Pretty** — [colorlib](https://colorlib.com/wp/template/pretty/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pretty-free-template.jpg) · [bloom](https://free-react-templates-bloom.surge.sh)
 - [x] **Remake** — [colorlib](https://colorlib.com/wp/template/remake/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/remake-free-template.jpg) · [sienna](https://free-react-templates-sienna.surge.sh)
 - [x] **Serenite** — [colorlib](https://colorlib.com/wp/template/serenite/) · [sooth](https://free-react-templates-sooth.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/serenite-template-1771943746919.jpg)
