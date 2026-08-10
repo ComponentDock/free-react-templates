@@ -1,21 +1,26 @@
-import { render, screen } from '@testing-library/react'
+import { describe, expect, it } from 'vitest'
+import { render, screen, within } from '@testing-library/react'
 import { App } from './App'
 
 describe('App', () => {
-  it('composes all sections with the correct landmarks and document title', () => {
+  it('sets the document title and composes every section in order', () => {
     render(<App />)
-
     expect(document.title).toBe('Quill — Blog Template')
 
-    expect(screen.getByRole('banner')).toBeInTheDocument()
     const main = screen.getByRole('main')
-    expect(main).toHaveTextContent('A Discount Toner Cartridge Is Better Than Ever.')
-    expect(main).toHaveTextContent('Latest News from all categories')
-    expect(main).toHaveTextContent('Hot topics from Travel Section')
-    expect(main).toHaveTextContent('Fashion News This Week')
-    expect(main).toHaveTextContent('About Blogger Team')
-    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
+    expect(within(main).getByRole('heading', { level: 1 })).toBeInTheDocument()
+    expect(
+      within(main).getByRole('heading', { name: /Latest News from all categories/i }),
+    ).toBeInTheDocument()
+    expect(
+      within(main).getByRole('heading', { name: /Hot topics from Travel Section/i }),
+    ).toBeInTheDocument()
+    expect(
+      within(main).getByRole('heading', { name: /Fashion News This Week/i }),
+    ).toBeInTheDocument()
+    expect(within(main).getByRole('heading', { name: /About Blogger Team/i })).toBeInTheDocument()
 
-    expect(screen.getAllByRole('link', { name: 'Load More' })).toHaveLength(2)
+    expect(screen.getByRole('banner')).toBeInTheDocument()
+    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
   })
 })

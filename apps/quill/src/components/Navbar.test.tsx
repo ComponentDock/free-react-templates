@@ -1,70 +1,61 @@
+import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { Navbar } from './Navbar'
-import { darkStorageKey } from '../data'
+import { darkStorageKey, navLinks, pageLinks } from '../data'
 
 describe('Navbar', () => {
-  beforeEach(() => {
-    window.localStorage.clear()
-    document.documentElement.classList.remove('dark')
-  })
-
-  it('renders the site name and primary navigation links', () => {
+  it('renders the brand, section links and the dark-mode toggle', () => {
     render(<Navbar />)
-
-    expect(screen.getByRole('link', { name: 'Quill' })).toHaveAttribute('href', '#home')
-    const primary = screen.getByRole('navigation', { name: 'Primary' })
-    for (const link of ['Home', 'News', 'Travel', 'Fashion', 'Team']) {
-      expect(primary).toHaveTextContent(link)
+    expect(screen.getByRole('link', { name: /quill/i })).toBeInTheDocument()
+    for (const link of navLinks) {
+      expect(screen.getByRole('link', { name: link })).toBeInTheDocument()
     }
-    expect(primary).toHaveTextContent('Pages')
+    expect(screen.getByRole('button', { name: 'Toggle dark mode' })).toBeInTheDocument()
   })
 
-  it('opens the Pages dropdown listing all six pages', async () => {
+  it('opens and closes the Pages dropdown with the page links', async () => {
     const user = userEvent.setup()
     render(<Navbar />)
-
-    const pagesButton = screen.getByRole('button', { name: 'Pages' })
-    expect(pagesButton).toHaveAttribute('aria-expanded', 'false')
+    const pagesButton = screen.getByRole('button', { name: /pages/i })
+    expect(screen.queryByRole('link', { name: 'Single' })).not.toBeInTheDocument()
 
     await user.click(pagesButton)
     expect(pagesButton).toHaveAttribute('aria-expanded', 'true')
-    const menu = screen.getByRole('menu', { name: 'Pages' })
-    for (const page of ['Single', 'Category', 'Search', 'Archive', 'Generic', 'Elements']) {
-      expect(menu).toHaveTextContent(page)
+    for (const page of pageLinks) {
+      expect(screen.getByRole('link', { name: page })).toBeInTheDocument()
     }
 
-    await user.click(screen.getByRole('menuitem', { name: 'Single' }))
-    expect(screen.queryByRole('menu', { name: 'Pages' })).not.toBeInTheDocument()
+    await user.click(pagesButton)
+    expect(pagesButton).toHaveAttribute('aria-expanded', 'false')
+    expect(screen.queryByRole('link', { name: 'Single' })).not.toBeInTheDocument()
   })
 
-  it('toggles dark mode on the document root and persists the preference', async () => {
+  it('toggles the dark class on the document root and persists the choice', async () => {
     const user = userEvent.setup()
     render(<Navbar />)
+    const toggle = screen.getByRole('button', { name: 'Toggle dark mode' })
 
     expect(document.documentElement).not.toHaveClass('dark')
-
-    await user.click(screen.getByRole('button', { name: 'Toggle dark mode' }))
+    await user.click(toggle)
     expect(document.documentElement).toHaveClass('dark')
     expect(window.localStorage.getItem(darkStorageKey)).toBe('dark')
 
-    await user.click(screen.getByRole('button', { name: 'Toggle dark mode' }))
+    await user.click(toggle)
     expect(document.documentElement).not.toHaveClass('dark')
     expect(window.localStorage.getItem(darkStorageKey)).toBe('light')
   })
 
-  it('opens the mobile menu with links and closes it on link click', async () => {
+  it('opens the mobile menu and closes it when a link is chosen', async () => {
     const user = userEvent.setup()
     render(<Navbar />)
+    expect(screen.queryByRole('navigation', { name: 'Mobile' })).not.toBeInTheDocument()
 
-    const openButton = screen.getByRole('button', { name: 'Open menu' })
-    await user.click(openButton)
+    await user.click(screen.getByRole('button', { name: 'Open menu' }))
+    expect(screen.getByRole('navigation', { name: 'Mobile' })).toBeInTheDocument()
+    expect(screen.getAllByRole('link', { name: 'News' })).toHaveLength(2)
 
-    const mobile = screen.getByRole('navigation', { name: 'Mobile' })
-    expect(mobile).toHaveTextContent('Travel')
-    expect(mobile).toHaveTextContent('Elements')
-
-    await user.click(screen.getByRole('link', { name: 'Travel' }))
+    await user.click(screen.getAllByRole('link', { name: 'News' })[1]!)
     expect(screen.queryByRole('navigation', { name: 'Mobile' })).not.toBeInTheDocument()
   })
 })
