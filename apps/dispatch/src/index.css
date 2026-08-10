@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Dispatch brand palette — recreated from the ColorLib "Avision" template.
+     Gray-blue pill #899091 (hero category), green #2ddf80 (active video
+     marker, "-15%" ad badge), tan #937c6f (mobile menu hover), page #f7f7f7,
+     chip/sidebar #ededed, dark surfaces #1f1f1f (videos/footer) / #111111
+     (subscribe), body text #a5a5a5, borders #d7d7d7 / #888888. */
+  --color-pill: #899091;
+  --color-accent: #2ddf80;
+  --color-tan: #937c6f;
+  --color-page: #f7f7f7;
+  --color-chip: #ededed;
+  --color-dark: #1f1f1f;
+  --color-ink: #111111;
+  --color-muted: #a5a5a5;
+  --color-line: #d7d7d7;
+  --color-subline: #888888;
+
+  /* Ubuntu (logo, nav, titles, pills, buttons, meta) + Work Sans (body,
+     hero headline, card titles) — Google Fonts via index.html */
+  --font-display: 'Ubuntu', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #f7f7f7;
+    color: #a5a5a5;
+  }
+  ::selection {
+    background: #899091;
+    color: #fff;
+  }
+}
