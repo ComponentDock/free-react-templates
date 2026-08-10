@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Petal brand palette — recreated from the ColorLib "Juli" template
+     (https://colorlib.com/wp/template/juli/), tokens extracted from the
+     live preview's 01-homepage/css/styles.css:
+     - brand orange #FFAD4D (category tags, read-more buttons/links, hover)
+     - dark #29333C (newsletter block, footer)
+     - hero text card overlay rgba(0,0,0,.6)
+     - neutrals: #fff cards, #F2F3F4 section bg, #ddd/#ccc/#bbb borders,
+       muted text #999/#888/#666/#aaa */
+  --color-brand: #ffad4d;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600) render brand orange */
+  --color-primary: #ffad4d;
+  --color-primary-50: #fff4e6;
+  --color-primary-100: #ffe8cc;
+  --color-primary-200: #ffd6a3;
+  --color-primary-300: #ffc070;
+  --color-primary-400: #ffb75e;
+  --color-primary-500: #ffad4d;
+  --color-primary-600: #ffad4d;
+  --color-primary-700: #f0982a;
+  --color-primary-800: #cc7d1d;
+  --color-primary-900: #a66517;
+  --color-night: #29333c;
+  --color-ink: #444444;
+  --color-body: #777777;
+  --color-muted: #999999;
+  --color-faint: #aaaaaa;
+  --color-line: #dddddd;
+  --color-section: #f2f3f4;
+
+  /* Maven Pro (display/paragraphs) · Roboto (body), via Google Fonts
+     <link> in index.html. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Maven Pro', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: var(--color-body);
+    font-family: var(--font-sans);
+    font-weight: 400;
+  }
+}
