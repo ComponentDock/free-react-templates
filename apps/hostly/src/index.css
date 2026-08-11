@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Hostly
+   itself is a light-only page. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Hostly brand palette — recreated from the ColorLib "Colorlib Booking
+     Form V17" design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-17/):
+     taupe/bronze #856849 is the ONLY brand color (static uppercase labels,
+     the section wash at 0.33 alpha, the photo-panel scrim at 0.78 alpha,
+     and the solid Check availability button at 0.9 alpha, 1 on hover). */
+  --color-brand: #856849;
+
+  /* Ink — the near-black input text color (#151515). */
+  --color-ink: #151515;
+
+  /* Mist — the 1px input border, placeholder + empty-date/select text, and
+     the floating select arrow glyph (#e5e5e5). */
+  --color-mist: #e5e5e5;
+
+  /* Soft — the input focus background (#f8f8f8). */
+  --color-soft: #f8f8f8;
+
+  /* Original fonts: Alice (400/700, body/labels/inputs/button) + Playfair
+     Display 900 (headline) via Google Fonts. */
+  --font-sans: 'Alice', Georgia, 'Times New Roman', serif;
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
