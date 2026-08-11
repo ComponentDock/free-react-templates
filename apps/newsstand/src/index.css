@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Newsstand brand palette — recreated from the ColorLib "Webmag" preview
+   (https://preview.colorlib.com/theme/webmag/) live DOM + assets/css/style.css:
+   brand orange #ff8700 (newsletter button, cat-2 badge/nav hover, post-title
+   hover, focus ring rgba(255,135,0,.15)), category accents green #4BB92F
+   (cat-1 Web Design) / orange (cat-2 JavaScript) / purple #8d00ff (cat-3 CSS)
+   / blue #0078ff (cat-4 TypeScript), ink #212631 headings, body copy #3d455c,
+   muted #5c6a7d, hairline #dfe3eb, grey band #f8f9fb. Body font Nunito
+   (300/600), headings Nunito Sans (700) — Google Fonts via index.html. */
+@theme {
+  --color-brand: #ff8700;
+  --color-brand-dark: #e67a00;
+  --color-cat-1: #4bb92f;
+  --color-cat-3: #8d00ff;
+  --color-cat-4: #0078ff;
+  --color-ink: #212631;
+  --color-body: #3d455c;
+  --color-muted: #5c6a7d;
+  --color-line: #dfe3eb;
+  --color-grey: #f8f9fb;
+
+  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: #fff;
+  }
+}
