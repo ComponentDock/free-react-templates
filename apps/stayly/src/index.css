@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Stayly
+   itself is a light-only page (the source design is flat light gray). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Stayly brand palette — recreated from the ColorLib "Colorlib Booking 12"
+     design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-12/):
+     medium blue #6499ff is the ONLY brand color (Book Now button). */
+  --color-brand: #6499ff;
+
+  /* Navy — heading + input text (#122244, 700). */
+  --color-navy: #122244;
+
+  /* Mist — page + input background (#f7f9fa). */
+  --color-mist: #f7f9fa;
+
+  /* Fog — placeholders + empty date text (#dde3e8). */
+  --color-fog: #dde3e8;
+
+  /* Slate — field labels (#b5c1cc, uppercase 14px 700). */
+  --color-slate: #b5c1cc;
+
+  /* Arrow — select arrows (#dddee9). */
+  --color-arrow: #dddee9;
+
+  /* Faint — form inner border (#f9fafc). */
+  --color-faint: #f9fafc;
+
+  /* Primary scale so the shared ui Button `primary` variant resolves to the
+     brand medium blue. */
+  --color-primary-50: #eaf2ff;
+  --color-primary-100: #d6e5ff;
+  --color-primary-200: #adcbff;
+  --color-primary-300: #84b1ff;
+  --color-primary-400: #74a4ff;
+  --color-primary-500: #6c9eff;
+  --color-primary-600: #6499ff;
+  --color-primary-700: #4f7de0;
+  --color-primary-800: #3d63b8;
+  --color-primary-900: #2e4a8c;
+
+  /* Original font: Cabin (400/700) via Google Fonts. */
+  --font-sans:
+    'Cabin', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display:
+    'Cabin', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
