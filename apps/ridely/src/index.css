@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Ridely
+   itself is a light-only page (white page behind the dark card). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Ridely brand palette — recreated from the ColorLib "Colorlib Booking
+     Form V13" design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-13/):
+     taxi yellow #ffc600 is the ONLY brand color (floating labels on
+     focus/fill + Book Now text/border). */
+  --color-brand: #ffc600;
+
+  /* Coal — the near-black card + button background (#1a1b1d). */
+  --color-coal: #1a1b1d;
+
+  /* Ash — input underline border + select arrow (#cecccd). */
+  --color-ash: #cecccd;
+
+  /* Smoke — placeholders + empty date/time text (rgba(255,255,255,0.3)). */
+  --color-smoke: rgba(255, 255, 255, 0.3);
+
+  /* Primary scale so the shared ui Button `primary` variant resolves to the
+     taxi yellow (its own classes are overridden for the outlined look). */
+  --color-primary-50: #fffbe6;
+  --color-primary-100: #fff4b8;
+  --color-primary-200: #ffec8a;
+  --color-primary-300: #ffe45c;
+  --color-primary-400: #ffd92e;
+  --color-primary-500: #ffd000;
+  --color-primary-600: #ffc600;
+  --color-primary-700: #e0ad00;
+  --color-primary-800: #b88f00;
+  --color-primary-900: #8f6f00;
+
+  /* Original font: Raleway (400/700) via Google Fonts. */
+  --font-sans:
+    'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display:
+    'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
