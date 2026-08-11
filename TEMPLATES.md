@@ -285,7 +285,7 @@
 - [x] **Sasha** — [colorlib](https://colorlib.com/wp/template/sasha/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sasha-free-template.jpg) · [sojourn](https://free-react-templates-sojourn.surge.sh)
 - [x] **Sensive** — [colorlib](https://colorlib.com/wp/template/sensive/) · [serif](https://free-react-templates-serif.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sensive-free-template.jpg)
 - [x] **Shout** — [colorlib](https://colorlib.com/wp/template/shout/) · [clamor](https://free-react-templates-clamor.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shout-free-template.jpg)
-- [ ] **Stories** — [colorlib](https://colorlib.com/wp/template/stories/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stories-free-template.jpg)
+- [~] **Stories** — [colorlib](https://colorlib.com/wp/template/stories/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stories-free-template.jpg)
 - [ ] **Stuff** — [colorlib](https://colorlib.com/wp/template/stuff/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stuff-free-template.jpg)
 - [ ] **Sunzine** — [colorlib](https://colorlib.com/wp/template/sunzine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sunzine-free-template.jpg)
 - [ ] **Suppablog** — [colorlib](https://colorlib.com/wp/template/suppablog/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/suppablog-free-creative-blog-template-for-writters.jpg)
