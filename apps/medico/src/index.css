@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+/* Medico brand palette — recreated from the ColorLib "Medico" preview
+   (https://preview.colorlib.com/theme/medico/) live DOM + style.css:
+   primary blue gradient #649bff → #0070fa (buttons, reservation band),
+   hover blue #0065e1, icon circles #f0e9ff (features) / #f2f6f8
+   (departments), card border #f2f6f8, services band #f9f9ff, footer
+   #f3f6f7, headings #242429. Headings Playfair Display, body Roboto. */
+@theme {
+  /* Blue scale so shared Button/ButtonLink `primary` variants resolve to
+     the Medico blue family (600 = gradient-ish base blue). */
+  --color-primary-50: #eef6ff;
+  --color-primary-100: #d9ecff;
+  --color-primary-200: #b8daff;
+  --color-primary-300: #8cc4ff;
+  --color-primary-400: #64a7ff;
+  --color-primary-500: #649bff;
+  --color-primary-600: #0070fa;
+  --color-primary-700: #0065e1;
+  --color-primary-800: #0750a8;
+  --color-primary-900: #0a3d7c;
+
+  --color-brand: #0070fa;
+  --color-brand-2: #649bff;
+  --color-brand-hover: #0065e1;
+  --color-icon-circle: #f0e9ff;
+  --color-icon-circle-2: #f2f6f8;
+  --color-card-border: #f2f6f8;
+  --color-section: #f9f9ff;
+  --color-footer: #f3f6f7;
+  --color-heading: #242429;
+  --color-feature-title: #0c2e60;
+  --color-muted: #7f7f7f;
+
+  /* Playfair Display (headings, serif) + Roboto (body) via Google Fonts
+     <link> in index.html (the original bundles its own font files; DO NOT
+     copy them). */
+  --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #242429;
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background: #0070fa;
+    color: #fff;
+  }
+}
