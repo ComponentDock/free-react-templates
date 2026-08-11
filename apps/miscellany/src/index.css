@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Miscellany brand palette — recreated from the ColorLib "Stuff" preview
+   (https://preview.colorlib.com/theme/stuff/) live DOM + css/style.css:
+   brand orange-red #F6490D (all links, link hover, .btn-primary background,
+   active nav item, video play icon, tag chip hover), accent yellow #F7AF1D
+   (hero meta span icons), body #666 on #fff, headings #000, footer #212125,
+   body font Roboto weight 300. */
+@theme {
+  /* Brand orange-red scale so shared Button/ButtonLink `primary` variants
+     resolve to #F6490D (600 = hover-darkened #f75b26). */
+  --color-primary-50: #fef2ee;
+  --color-primary-100: #fde0d5;
+  --color-primary-200: #fbc0aa;
+  --color-primary-300: #f99974;
+  --color-primary-400: #f76d3d;
+  --color-primary-500: #f6490d;
+  --color-primary-600: #f75b26;
+  --color-primary-700: #c93a0a;
+  --color-primary-800: #a12f08;
+  --color-primary-900: #7c2406;
+
+  --color-brand: #f6490d;
+  --color-accent: #f7af1d;
+  --color-ink: #666666;
+  --color-heading: #000000;
+  --color-coal: #212125;
+  --color-paper: #f8f9fa;
+
+  /* Roboto (body) — Google Fonts via index.html (the original bundles its
+     own files; DO NOT copy them). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-weight: 300;
+    line-height: 2;
+  }
+  ::selection {
+    background: var(--color-accent);
+    color: #000;
+  }
+}
