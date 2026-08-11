@@ -327,7 +327,7 @@
 
 - [x] **Academy** — [colorlib](https://colorlib.com/wp/template/academy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academy-free-template.jpg) · [campus](https://free-react-templates-campus.surge.sh)
 - [x] **Aid** — [colorlib](https://colorlib.com/wp/template/aid/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aid-free-template.jpg) · [succor](https://free-react-templates-succor.surge.sh)
-- [ ] **Allfood** — [colorlib](https://colorlib.com/wp/template/allfood/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/allfood-free-template.jpg)
+- [~] **Allfood** — [colorlib](https://colorlib.com/wp/template/allfood/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/allfood-free-template.jpg)
 - [ ] **Amor** — [colorlib](https://colorlib.com/wp/template/amor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amor-free-template.jpg)
 - [x] **Andrea** — [colorlib](https://colorlib.com/wp/template/andrea/) · [memoir](https://free-react-templates-memoir.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/andrea-free-template.jpg)
 - [ ] **Apart** — [colorlib](https://colorlib.com/wp/template/apart/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apart-free-template.jpg)
@@ -2661,7 +2661,7 @@
 
 ## Restaurant (41)
 
-- [ ] **Allfood** — [colorlib](https://colorlib.com/wp/template/allfood/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/allfood-free-template.jpg)
+- [~] **Allfood** — [colorlib](https://colorlib.com/wp/template/allfood/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/allfood-free-template.jpg)
 - [ ] **Appetizer** — [colorlib](https://colorlib.com/wp/template/appetizer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appetizer-free-template.jpg)
 - [ ] **Bakery2** — [colorlib](https://colorlib.com/wp/template/bakery2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bakery2-free-template.jpg)
 - [ ] **Burger** — [colorlib](https://colorlib.com/wp/template/burger/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/burger-free-template.jpg)
