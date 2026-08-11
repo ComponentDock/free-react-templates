@@ -112,6 +112,20 @@ mobile menu toggle.
 - **THEN** the header SHALL show a search icon and a hamburger menu toggle
 - **AND** the icons SHALL be keyboard-focusable with aria-labels
 
+#### Scenario: About dropdown
+
+- **GIVEN** the navbar is rendered
+- **WHEN** the user activates the About control
+- **THEN** the dropdown SHALL reveal the links Albums Details and Blog Details
+- **AND** activating the control again SHALL collapse the dropdown
+
+#### Scenario: Search overlay
+
+- **GIVEN** the navbar is rendered
+- **WHEN** the user activates the search icon
+- **THEN** a search overlay SHALL open with a text input and a submit control
+- **AND** activating the close control SHALL close the overlay
+
 ### Requirement: Hero section
 
 The system SHALL render a full-width hero with the site's welcome
