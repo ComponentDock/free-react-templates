@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+/* Sojourn brand palette — recreated from the ColorLib "Sasha" preview
+   (https://preview.colorlib.com/theme/sasha/index-01.html) live DOM +
+   assets/css/style.css: primary rust #af7152 (buttons, hover links, active
+   nav, newsletter submit), dark #171717 (header-bottom bar), hairlines
+   #e1e1e1/#eaeaea, meta gray #999. */
+@theme {
+  /* Brand rust scale so shared Button/ButtonLink `primary` variants
+     resolve to #af7152 (600 = hover-darkened rust). */
+  --color-primary-50: #faf3ef;
+  --color-primary-100: #f2e2d8;
+  --color-primary-200: #e2c3af;
+  --color-primary-300: #d0a284;
+  --color-primary-400: #c18868;
+  --color-primary-500: #af7152;
+  --color-primary-600: #9a6145;
+  --color-primary-700: #83513a;
+  --color-primary-800: #6b4230;
+  --color-primary-900: #553527;
+
+  --color-brand: #af7152;
+  --color-ink: #171717;
+  --color-mist: #f7f7f7;
+  --color-soft: #e1e1e1;
+  --color-hairline: #eaeaea;
+  --color-meta: #999999;
+
+  /* Poppins (headings) + Lato (nav/buttons/widget titles) + Raleway
+     (body/footer) — Google Fonts via index.html (the original bundles its
+     own files; DO NOT copy them). */
+  --font-serif: 'Poppins', Georgia, serif;
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #171717;
+    font-family: var(--font-body);
+  }
+  ::selection {
+    background: #af7152;
+    color: #fff;
+  }
+}
