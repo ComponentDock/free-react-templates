@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Lantern brand palette — recreated from the ColorLib "Quitelight" preview
+   (https://preview.colorlib.com/theme/quitelight/) live DOM +
+   common/styles.css: brand yellow #F9B500 (btn-fill-primary, hover fills),
+   ink #111 (headings/links), dark footer #191919 (bg-191), light grey
+   #F8F8F8 (bg-1-white main section), meta greys #aaa/#ccc/#888
+   (color-ash/color-grey/color-lt-black), decorative category-tag accents
+   #E14A3D / #58ADEE / #36D98A / #365B99. */
+@theme {
+  --color-brand: #f9b500;
+  --color-ink: #111111;
+  --color-coal: #191919;
+  --color-mist: #f8f8f8;
+  --color-mist-2: #f2f2f2;
+  --color-ash: #aaaaaa;
+  --color-grey: #cccccc;
+  --color-lt-black: #888888;
+  --color-tag-red: #e14a3d;
+  --color-tag-blue: #58adee;
+  --color-tag-green: #36d98a;
+  --color-tag-indigo: #365b99;
+
+  /* Poppins (weights 400/500/600/700) — Google Fonts via index.html
+     (the original bundles its own font files; DO NOT copy them). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #111111;
+  }
+  ::selection {
+    background: #f9b500;
+    color: #111111;
+  }
+}
