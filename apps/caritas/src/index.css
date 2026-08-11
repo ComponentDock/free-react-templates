@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Caritas
+   itself is a light charity landing page. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Caritas brand palette — recreated from the ColorLib "Amor" design (live
+     preview: https://preview.colorlib.com/theme/amor/): solid purple
+     #8d00ff (button text/borders, icon tints). */
+  --color-brand: #8d00ff;
+
+  /* Gradient ends — signature button fill #7f00ff → #e100ff → #7f00ff. */
+  --color-brand-deep: #7f00ff;
+  --color-brand-pink: #e100ff;
+
+  /* Overlay gradient — CTA band #9300ff → #d500ff (0.7 opacity). */
+  --color-brand-violet: #9300ff;
+  --color-brand-magenta: #d500ff;
+
+  /* Mist — cause/event/blog card backgrounds (#fafafa). */
+  --color-mist: #fafafa;
+
+  /* Lavender — footer background (#faf4ff). */
+  --color-lavender: #faf4ff;
+
+  /* Ink — headings (#060606). */
+  --color-ink: #060606;
+
+  /* Original font: Roboto (weights 300–700) via Google Fonts. */
+  --font-sans:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
