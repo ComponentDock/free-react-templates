@@ -3,8 +3,12 @@ import { BookingForm } from './components/BookingForm'
 
 /* Seeded picsum placeholder for the source canyon photograph (the original
    1920×1288 bg-registration-form-9.jpg must not be copied). The prep spec
-   pinned seed innkeep-bg for the full-viewport cover background. */
-const BG_IMAGE = 'https://picsum.photos/seed/innkeep-bg/1920/1288'
+   pinned seed innkeep-bg, but image screening (2026-08-11) showed it renders
+   a camper van on a dirt road — off-subject. innkeep-badlands renders a
+   person seen from behind overlooking a vast mountain/lake landscape, the
+   closest available match to the source hiker-overlooking-the-canyon
+   composition (bright sky, blue tones complementing the #3e91f7 brand). */
+const BG_IMAGE = 'https://picsum.photos/seed/innkeep-badlands/1920/1288'
 
 export function App() {
   useEffect(() => {

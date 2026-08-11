@@ -141,11 +141,15 @@ and content types (no ColorLib assets copied).
   `.form-row` block (fields stack 100% wide, margin-bottom 25px, first-child
   margin-right 0).
 - **Placeholder images (never copy ColorLib assets):** page background →
-  `https://picsum.photos/seed/innkeep-bg/1920/1288` (source photo is
-  1920×1288; any canyon/nature 16:10-ish seed works). The 66×66 `bg-inner.png`
-  frame texture → approximate with a plain light-gray/white 7px frame (e.g. a
-  subtle `bg-neutral-100` border or a 7px `#f7f7f7` padding) — do NOT copy the
-  PNG.
+  `https://picsum.photos/seed/innkeep-badlands/1920/1288`. The prep spec
+  originally pinned `innkeep-bg`, but image screening (2026-08-11) showed it
+  renders a camper van on a dirt road — off-subject; `innkeep-badlands`
+  renders a person seen from behind overlooking a vast mountain/lake
+  landscape, the closest available match to the source
+  hiker-overlooking-the-canyon composition (bright sky, blue tones that
+  complement the `#3e91f7` brand). The 66×66 `bg-inner.png` frame texture →
+  approximate with a plain light-gray/white 7px frame (e.g. a subtle
+  `bg-neutral-100` border or a 7px `#f5f5f5` padding) — do NOT copy the PNG.
 
 ## Requirements
 
@@ -326,7 +330,7 @@ background photo, card shadow, and frame.
       checkbox
 - [ ] Fonts: Poppins (400/500) + Muli (400/600) via Google Fonts `<link>`
       in `index.html`, title "Innkeep — Room Booking Template"
-- [ ] Background photo = seeded picsum (`innkeep-bg`); icons from
+- [ ] Background photo = seeded picsum (`innkeep-badlands`); icons from
       lucide-react (`Calendar`, `ChevronDown`) — no copied assets
 - [ ] Date inputs are native `<input type="date">`; Check-out ≥ Check-in
       validation

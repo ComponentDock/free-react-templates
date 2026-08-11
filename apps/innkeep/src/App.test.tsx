@@ -14,8 +14,10 @@ describe('App', () => {
 
     const section = container.querySelector('section#hero') as HTMLElement
     expect(section).not.toBeNull()
-    // Seeded placeholder recreating the source canyon photo (no copied asset).
-    expect(section.style.backgroundImage).toContain('picsum.photos/seed/innkeep-bg/1920/1288')
+    // Seeded placeholder recreating the source canyon photo (no copied
+    // asset; seed screened 2026-08-11 — innkeep-badlands renders a person
+    // from behind overlooking a vast landscape, closest to the source).
+    expect(section.style.backgroundImage).toContain('picsum.photos/seed/innkeep-badlands/1920/1288')
     // div.wrapper — min-height 100vh, cover, no-repeat, right center desktop,
     // centered ≤1199px, hidden ≤767px.
     expect(section.className).toMatch(/min-h-screen/)

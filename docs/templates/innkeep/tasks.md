@@ -108,13 +108,14 @@ repeat`, box-shadow `0 0 10px 0 rgba(0,0,0,0.2)`).
       `@free-react-templates/innkeep`; NOT `apps/colorlib-regform-25`);
       `npm install` at root so package-lock.json registers the workspace
 - [ ] `@theme` tokens: `--color-brand: #3e91f7`, `--color-brand-hover:
-    #0072fd`, `--color-label: #4c4c4c`, `--color-ink: #666`,
+  #0072fd`, `--color-label: #4c4c4c`, `--color-ink: #666`,
       `--color-border: #e6e6e6`, `--color-check: #ebebeb` (per spec)
 - [ ] `index.html`: Poppins 400/500 + Muli 400/600 Google Fonts `<link>`,
       title "Innkeep — Room Booking Template"
 - [ ] Full-viewport page: seeded picsum bg
-      (`picsum.photos/seed/innkeep-bg/1920/1288`), `background-size: cover`,
-      right-center desktop / center ≤1199px / hidden ≤767px
+      (`picsum.photos/seed/innkeep-badlands/1920/1288` — screened 2026-08-11;
+      `innkeep-bg` renders a camper van and was rejected), `background-size:
+    cover`, right-center desktop / center ≤1199px / hidden ≤767px
 - [ ] Form card: 511px desktop (60% ≤991px, 100% static ≤767px), left
       11.07%, vertically centered (top 50% + translateY(-50%)) desktop,
       shadow `0 0 10px rgba(0,0,0,0.2)`, 7px subtle frame (no copied PNG)
