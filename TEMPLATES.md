@@ -295,7 +295,7 @@
 - [x] **Wordify** — [colorlib](https://colorlib.com/wp/template/wordify/) · [typeface](https://free-react-templates-typeface.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordify-free-template.jpg)
 - [x] **Wordsmith** — [colorlib](https://colorlib.com/wp/template/wordsmith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordsmith-free-template.jpg) · [parchment](https://free-react-templates-parchment.surge.sh)
 - [x] **World** — [colorlib](https://colorlib.com/wp/template/world/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/world-free-template-1.jpg) · [atlas](https://free-react-templates-atlas.surge.sh)
-- [~] **Yummy** — [colorlib](https://colorlib.com/wp/template/yummy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-minimal-food-blog-website-template.jpg)
+- [x] **Yummy** — [colorlib](https://colorlib.com/wp/template/yummy/) · [zesty](https://free-react-templates-zesty.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-minimal-food-blog-website-template.jpg)
 - [ ] **Yummy 2** — [colorlib](https://colorlib.com/wp/template/yummy-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-free-template.jpg)
 
 ## Booking Forms (22)
@@ -1496,7 +1496,7 @@
 - [ ] **Whitespace** — [colorlib](https://colorlib.com/wp/template/whitespace/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/whitespace-free-template.jpg)
 - [ ] **Wordpress Business Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-business-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-business-themes1.jpg)
 - [ ] **Yogalife** — [colorlib](https://colorlib.com/wp/template/yogalife/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogalife-free-template.jpg)
-- [ ] **Yummy** — [colorlib](https://colorlib.com/wp/template/yummy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-minimal-food-blog-website-template.jpg)
+- [x] **Yummy** — [colorlib](https://colorlib.com/wp/template/yummy/) · [zesty](https://free-react-templates-zesty.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-minimal-food-blog-website-template.jpg)
 
 ## Dentist (14)
 
@@ -2478,7 +2478,7 @@
 - [ ] **Thumber** — [colorlib](https://colorlib.com/wp/template/thumber/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thumber-free-template.jpg)
 - [ ] **Tulen** — [colorlib](https://colorlib.com/wp/template/tulen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tulen-free-template.jpg)
 - [ ] **Yaseen** — [colorlib](https://colorlib.com/wp/template/yaseen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yaseen-creative-photography-website-landing-page-template.jpg)
-- [ ] **Yummy** — [colorlib](https://colorlib.com/wp/template/yummy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-minimal-food-blog-website-template.jpg)
+- [x] **Yummy** — [colorlib](https://colorlib.com/wp/template/yummy/) · [zesty](https://free-react-templates-zesty.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-minimal-food-blog-website-template.jpg)
 
 ## Politics (2)
 
