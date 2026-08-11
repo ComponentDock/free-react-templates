@@ -177,11 +177,13 @@ export function ReservationForm() {
         </div>
 
         {/* Bootstrap-era grid re-implemented with Tailwind: rows 12 → 6/6 →
-            4/4/4 → 6/6 → button, all stacking full width below 768px. */}
+            4/4/4 → 6/6 → button, all stacking full width below 768px.
+            gap-y matches the source's 30px .form-group margin-bottom;
+            gap-x matches Bootstrap 3's 30px column gutter. */}
         <form
           noValidate
           onSubmit={handleSubmit}
-          className="grid grid-cols-1 gap-y-[30px] md:grid-cols-12"
+          className="grid grid-cols-1 gap-x-[30px] gap-y-[30px] md:grid-cols-12"
         >
           <Field
             id="destination"
