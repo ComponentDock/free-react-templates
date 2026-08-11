@@ -1488,7 +1488,7 @@
 - [ ] **Rea** — [colorlib](https://colorlib.com/wp/template/rea/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rea-free-template.jpg)
 - [ ] **Simples** — [colorlib](https://colorlib.com/wp/template/simples/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/simples-free-fullscreen-feminine-website-template.jpg)
 - [ ] **Sun** — [colorlib](https://colorlib.com/wp/template/sun/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sun-free-template.jpg)
-- [ ] **Suppablog** — [colorlib](https://colorlib.com/wp/template/suppablog/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/suppablog-free-creative-blog-template-for-writters.jpg)
+- [x] **Suppablog** — [colorlib](https://colorlib.com/wp/template/suppablog/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/suppablog-free-creative-blog-template-for-writters.jpg) · [scribble](https://free-react-templates-scribble.surge.sh)
 - [ ] **Thumber** — [colorlib](https://colorlib.com/wp/template/thumber/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thumber-free-template.jpg)
 - [ ] **Travel Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/travel-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travel-wordpress-themes.jpg)
 - [ ] **Traveland** — [colorlib](https://colorlib.com/wp/template/traveland/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/traveland-free-template.jpg)
@@ -2425,7 +2425,7 @@
 - [ ] **Schmidt** — [colorlib](https://colorlib.com/wp/template/schmidt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/schmidt-free-template.jpg)
 - [ ] **Skater** — [colorlib](https://colorlib.com/wp/template/skater/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skater-free-template.jpg)
 - [ ] **Space** — [colorlib](https://colorlib.com/wp/template/space/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/space-free-template.jpg)
-- [ ] **Suppablog** — [colorlib](https://colorlib.com/wp/template/suppablog/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/suppablog-free-creative-blog-template-for-writters.jpg)
+- [x] **Suppablog** — [colorlib](https://colorlib.com/wp/template/suppablog/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/suppablog-free-creative-blog-template-for-writters.jpg) · [scribble](https://free-react-templates-scribble.surge.sh)
 - [ ] **Unfold** — [colorlib](https://colorlib.com/wp/template/unfold/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unfold-free-template.jpeg)
 
 ## Photography (49)
