@@ -290,7 +290,7 @@
 - [x] **Sunzine** — [colorlib](https://colorlib.com/wp/template/sunzine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sunzine-free-template.jpg) · [aperture](https://free-react-templates-aperture.surge.sh)
 - [x] **Suppablog** — [colorlib](https://colorlib.com/wp/template/suppablog/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/suppablog-free-creative-blog-template-for-writters.jpg) · [scribble](https://free-react-templates-scribble.surge.sh)
 - [x] **Videomag** — [colorlib](https://colorlib.com/wp/template/videomag/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/videomag-free-template.jpg) · [montage](https://free-react-templates-montage.surge.sh)
-- [ ] **Vizew** — [colorlib](https://colorlib.com/wp/template/vizew/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vizew-free-template.jpg)
+- [x] **Vizew** — [colorlib](https://colorlib.com/wp/template/vizew/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vizew-free-template.jpg) · [newsline](https://free-react-templates-newsline.surge.sh)
 - [~] **Webmag** — [colorlib](https://colorlib.com/wp/template/webmag/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webmag-free-template.jpg)
 - [ ] **Wordify** — [colorlib](https://colorlib.com/wp/template/wordify/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordify-free-template.jpg)
 - [ ] **Wordsmith** — [colorlib](https://colorlib.com/wp/template/wordsmith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordsmith-free-template.jpg)
@@ -2217,7 +2217,7 @@
 - [ ] **Thegazette** — [colorlib](https://colorlib.com/wp/template/thegazette/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thegazette-free-template.jpg)
 - [x] **Videomag** — [colorlib](https://colorlib.com/wp/template/videomag/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/videomag-free-template.jpg) · [montage](https://free-react-templates-montage.surge.sh)
 - [ ] **Viral** — [colorlib](https://colorlib.com/wp/template/viral/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/viralstory-free-template.jpg)
-- [ ] **Vizew** — [colorlib](https://colorlib.com/wp/template/vizew/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vizew-free-template.jpg)
+- [x] **Vizew** — [colorlib](https://colorlib.com/wp/template/vizew/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vizew-free-template.jpg) · [newsline](https://free-react-templates-newsline.surge.sh)
 - [~] **Webmag** — [colorlib](https://colorlib.com/wp/template/webmag/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webmag-free-template.jpg)
 - [ ] **World** — [colorlib](https://colorlib.com/wp/template/world/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/world-free-template-1.jpg)
 
