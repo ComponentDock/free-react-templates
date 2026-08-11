@@ -47,7 +47,7 @@ export function Footer() {
           <ul className="mt-6 space-y-3">
             {informationLinks.map((link) => (
               <li key={link}>
-                <a href="tel:+23923929210" className="transition-colors hover:text-brand">
+                <a href="#top" className="transition-colors hover:text-brand">
                   {link}
                 </a>
               </li>
