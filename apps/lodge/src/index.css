@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+/* Lodge brand palette — recreated from the ColorLib "Hotel" preview
+   (https://preview.colorlib.com/theme/hotel/) live DOM + css/style.css:
+   brand gold #AE9548 (arrow icons, accents, dropdown hovers; button border
+   #AE954B), dark ink #081624 (button text, price, form labels), charcoal
+   #353535 (header + footer + slider-nav label bars), #2d220f (room title,
+   "From" label), #242424 (headings + body), #F7F7F7 (facilities + Instagram
+   strip bg), #ECECEC (room-card shadow tint), #8C9299 (form underline).
+   Headings use the Taviraj serif; body/nav/buttons use Open Sans. */
+@theme {
+  /* Primary scale so the shared Button/ButtonLink `primary` variants resolve
+     to the brand gold: 600 = #AE9548 (bg/border), 700 = hover shade, 500 =
+     focus-ring tint. */
+  --color-primary-50: #faf7ee;
+  --color-primary-100: #f1ead5;
+  --color-primary-200: #e3d5ab;
+  --color-primary-300: #d5c081;
+  --color-primary-400: #c2ab63;
+  --color-primary-500: #ae9548;
+  --color-primary-600: #ae9548;
+  --color-primary-700: #c0a85c;
+  --color-primary-800: #8c7438;
+  --color-primary-900: #6b582b;
+
+  --color-gold: #ae9548;
+  --color-gold-border: #ae954b;
+  --color-ink: #081624;
+  --color-charcoal: #353535;
+  --color-heading: #242424;
+  --color-roomtitle: #2d220f;
+  --color-light: #f7f7f7;
+  --color-underline: #8c9299;
+
+  /* Taviraj (headings, room titles, quote) + Open Sans (body, nav,
+     buttons, prices) — Google Fonts via index.html (the original bundles
+     its own font files; DO NOT copy them). */
+  --font-serif: 'Taviraj', Georgia, serif;
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #ffffff;
+    color: #242424;
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background: #ae9548;
+    color: #fff;
+  }
+}
