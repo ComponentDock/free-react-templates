@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Scribble brand palette — recreated from the ColorLib "Suppablog" preview
+   (https://preview.colorlib.com/theme/suppablog/) live DOM + style.css:
+   brand teal #0697AE (entry-title hover, toggle), pink #D8588C (category
+   links), dark surfaces #2D2D2D (rail/sidebar) + #333333 (menu panel),
+   title ink #242424, body text #5B5B5B, muted #848484, dates #AABDBD,
+   load-more #C0D3D3. Display font Montserrat (titles/nav/meta/buttons),
+   body font Libre Baskerville (serif editorial text). */
+@theme {
+  --color-brand: #0697ae;
+  --color-blush: #d8588c;
+  --color-ink: #242424;
+  --color-charcoal: #2d2d2d;
+  --color-coal: #333333;
+  --color-body: #5b5b5b;
+  --color-ash: #848484;
+  --color-mist: #aabdbd;
+  --color-fog: #c0d3d3;
+
+  /* Montserrat (display) + Libre Baskerville (serif) — Google Fonts via
+     index.html (the original bundles its own files; DO NOT copy them). */
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Libre Baskerville', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: var(--color-body);
+    font-family: var(--font-serif);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: #fff;
+  }
+}
