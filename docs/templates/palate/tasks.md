@@ -86,9 +86,10 @@ TEMPLATES.md rows to mark at ship: lines **334, 885, 1768, 2665** (FOUR
 - **Services icons:** the 130px circles render BLACK (style.css ends with
   `background: #000000` after whitesmoke/#ffa323 overrides) with ORANGE
   glyphs — keep that contrast; do NOT render them orange.
+- **Hero/counter imagery:** picsum SEEDS are arbitrary (palate-hero1 = Moscow night cityscape, palate-counter = forest) — pinned photo IDs instead (2026-08-12, browser-verified): hero 292 (mise en place), 1080 (strawberries), 431 (latte-art coffee); counter 425 (roasted beans on light wood, black numbers readable without overlay).
 - **Map:** right half of reservation is a Google Maps embed (`#map`) —
-  replace with a static muted map placeholder (seeded picsum or a CSS grid
-  pattern) so no third-party map dependency is needed.
+  replace with a static muted map placeholder (CSS grid pattern + pin)
+  so no third-party map dependency is needed.
 - **Counter labels** are terse in the source ("Menus", "Staffs") — keep the
   same phrasing.
 - **Testimony:** white overlay at .8 over the photo makes the section read
