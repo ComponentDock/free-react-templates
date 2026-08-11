@@ -325,7 +325,7 @@
 
 ## Bootstrap (216)
 
-- [ ] **Academy** — [colorlib](https://colorlib.com/wp/template/academy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academy-free-template.jpg)
+- [~] **Academy** — [colorlib](https://colorlib.com/wp/template/academy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academy-free-template.jpg)
 - [ ] **Aid** — [colorlib](https://colorlib.com/wp/template/aid/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aid-free-template.jpg)
 - [ ] **Allfood** — [colorlib](https://colorlib.com/wp/template/allfood/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/allfood-free-template.jpg)
 - [ ] **Amor** — [colorlib](https://colorlib.com/wp/template/amor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amor-free-template.jpg)

@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/* Campus brand palette — recreated from the ColorLib "Academy" preview
+   (https://preview.colorlib.com/theme/academy/) live DOM + style.css:
+   primary green gradient #61ba6d → #83c331 (buttons, feature band, course
+   icon badges, phone block, CTA band), accent #69bc5f (hovers, roles),
+   menu bar #f5f7fa, popular-card bg #eef3f6, stars #fbb710/#e0e3e4,
+   muted #606060, footer #232323/#141414. */
+@theme {
+  /* Green scale so shared Button/ButtonLink `primary` variants resolve to
+     the Campus green family (600 = base green). */
+  --color-primary-50: #f0f8f0;
+  --color-primary-100: #dcf0dc;
+  --color-primary-200: #b8e1b9;
+  --color-primary-300: #8ccd90;
+  --color-primary-400: #6fbf76;
+  --color-primary-500: #61ba6d;
+  --color-primary-600: #52a25e;
+  --color-primary-700: #44884e;
+  --color-primary-800: #386d41;
+  --color-primary-900: #2e5735;
+
+  --color-brand: #61ba6d;
+  --color-brand-2: #83c331;
+  --color-accent: #69bc5f;
+  --color-menu: #f5f7fa;
+  --color-card: #eef3f6;
+  --color-star: #fbb710;
+  --color-star-empty: #e0e3e4;
+  --color-muted: #606060;
+  --color-footer: #232323;
+  --color-footer-dark: #141414;
+  --color-heading: #242424;
+
+  /* Montserrat 300–900 via Google Fonts <link> in index.html (the original
+     bundles its own font files; DO NOT copy them). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #242424;
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background: #61ba6d;
+    color: #fff;
+  }
+}
