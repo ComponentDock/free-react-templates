@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+/* Serif brand palette — recreated from the ColorLib "Sensive" preview
+   (https://preview.colorlib.com/theme/sensive/) live DOM + css/style.css:
+   brand orange #ff9907 (active nav, label chips, widget-title underlines,
+   READ MORE text, footer accents), dark text #3a414e, blacks #222 (buttons,
+   labels) / #000000 (footer) / #191919 (footer input) / #000022 (hover
+   text), light widgets #f9f9ff, slider arrows #f5f9fc, sticky header #dddd. */
+@theme {
+  /* Brand orange scale so shared Button/ButtonLink `primary` variants
+     resolve to #ff9907 (600 = hover-darkened orange). */
+  --color-primary-50: #fff8eb;
+  --color-primary-100: #ffedc4;
+  --color-primary-200: #ffdd8a;
+  --color-primary-300: #ffc94a;
+  --color-primary-400: #ffb51f;
+  --color-primary-500: #ff9907;
+  --color-primary-600: #e07f00;
+  --color-primary-700: #b95f00;
+  --color-primary-800: #8f4700;
+  --color-primary-900: #6b3600;
+
+  --color-brand: #ff9907;
+  --color-ink: #3a414e;
+  --color-ink-deep: #000022;
+  --color-coal: #222222;
+  --color-footer-input: #191919;
+  --color-meta: #777777;
+  --color-meta-light: #999999;
+  --color-cat: #797979;
+  --color-tag: #555555;
+  --color-widget: #f9f9ff;
+  --color-arrow: #f5f9fc;
+  --color-menu: #dddddd;
+  --color-hairline: #ededed;
+  --color-sky-from: #4dabff;
+  --color-sky-to: #62ddff;
+
+  /* Lora (nav, headings, post titles) + Source Sans Pro (body) — Google
+     Fonts via index.html (the original bundles its own files; DO NOT copy
+     them). */
+  --font-serif: 'Lora', Georgia, serif;
+  --font-sans: 'Source Sans Pro', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #3a414e;
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background: #ff9907;
+    color: #fff;
+  }
+}
