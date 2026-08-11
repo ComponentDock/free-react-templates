@@ -296,7 +296,7 @@
 - [x] **Wordsmith** — [colorlib](https://colorlib.com/wp/template/wordsmith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordsmith-free-template.jpg) · [parchment](https://free-react-templates-parchment.surge.sh)
 - [x] **World** — [colorlib](https://colorlib.com/wp/template/world/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/world-free-template-1.jpg) · [atlas](https://free-react-templates-atlas.surge.sh)
 - [x] **Yummy** — [colorlib](https://colorlib.com/wp/template/yummy/) · [zesty](https://free-react-templates-zesty.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-minimal-food-blog-website-template.jpg)
-- [ ] **Yummy 2** — [colorlib](https://colorlib.com/wp/template/yummy-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-free-template.jpg)
+- [~] **Yummy 2** — [colorlib](https://colorlib.com/wp/template/yummy-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-free-template.jpg)
 
 ## Booking Forms (22)
 
