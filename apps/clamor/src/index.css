@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+/* Clamor brand palette — recreated from the ColorLib "Shout" preview
+   (https://preview.colorlib.com/theme/shout/) live DOM + css/style.css:
+   brand pink #FF63B5 (intro panel bg, active nav link, footer social icons,
+   btn-primary bg/border, search button, pagination active/hover, focus
+   ring rgba(255,99,181,0.8)), hover shade #ff7dc1, whitesmoke body
+   background, white cards/footer/nav, #fafafa quote + input surfaces,
+   #f2f2f2 search border. Headings (h1-h6, quote, author-name, footer h2)
+   use Tenor Sans; body/meta use Open Sans. */
+@theme {
+  /* Primary scale so the shared Button/ButtonLink `primary` variants resolve
+     to the brand pink: 600 = #FF63B5 (bg/border), 700 = hover shade
+     #ff7dc1, 500 = focus ring tint. */
+  --color-primary-50: #fff0f8;
+  --color-primary-100: #ffd9ee;
+  --color-primary-200: #ffb3dc;
+  --color-primary-300: #ff8cc9;
+  --color-primary-400: #ff75be;
+  --color-primary-500: #ff63b5;
+  --color-primary-600: #ff63b5;
+  --color-primary-700: #ff7dc1;
+  --color-primary-800: #e04a9d;
+  --color-primary-900: #b8307f;
+
+  --color-brand: #ff63b5;
+  --color-ink: #000000;
+  --color-muted: #666666;
+  --color-meta: rgba(0, 0, 0, 0.5);
+  --color-date: #999999;
+  --color-label: #bfbfbf;
+  --color-latest: #4d4d4d;
+  --color-copyright: #1a1a1a;
+  --color-surface: #fafafa;
+  --color-border-soft: #f2f2f2;
+  --color-page: whitesmoke;
+
+  /* Tenor Sans (headings, quote, author name, footer h2) + Open Sans
+     (body, meta, sub-labels) — Google Fonts via index.html (the original
+     bundles its own font files; DO NOT copy them). */
+  --font-serif: 'Tenor Sans', Georgia, serif;
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: whitesmoke;
+    color: #666666;
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background: #ff63b5;
+    color: #fff;
+  }
+}
