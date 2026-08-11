@@ -1,5 +1,12 @@
 # Template: Genesis (Creative Agency Portfolio)
 
+> **SUPERSEDED** — do NOT implement. This spec was prepped for the SAME
+> ColorLib source as Canvas (`template-canvas`): "Approach"
+> (https://colorlib.com/wp/template/approach/). Canvas shipped instead
+> (PR #301, https://free-react-templates-canvas.surge.sh). All three
+> TEMPLATES.md "Approach" rows are marked `[x]` with the canvas URL. Delete
+> this spec folder + `docs/templates/genesis/` on the next main-tree cleanup.
+
 ## Purpose
 
 Genesis is a single-page creative-agency/portfolio template in the
