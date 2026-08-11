@@ -116,6 +116,13 @@ Key decisions (details in `docs/adr/`):
   `TS5112` when files are passed on the command line (tooling quirk, not a code
   error). Builds run `tsc --noEmit` per workspace.
 - **CSS in coverage:** `**/*.css` is excluded from coverage reports.
+- **user-event anchor clicks:** `user.click()` on an `<a href="#...">` performs
+  jsdom hash-navigation, which can race with the React handler and **silently
+  drop the test from the suite** (file reports N-1 tests, coverage shows the
+  onClick line uncovered, no error). Before clicking an in-page anchor, attach
+  a native `{ once: true }` `preventDefault` listener to the element (native
+  target listeners run before React's delegated handler, so `onClick` still
+  fires; navigation is neutralized).
 - **`fallow` health output:** "✗ 0 above threshold" is a healthy summary line,
   not an issue.
 - **git identity:** commits on this host use the machine identity unless a repo
