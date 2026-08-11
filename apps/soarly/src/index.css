@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Soarly
+   itself is a dark charcoal card on a white page. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Soarly brand palette — recreated from the ColorLib "Colorlib Booking
+     Form V9" design (live demo:
+     https://colorlib.com/etc/bforms/colorlib-booking-9/): mustard yellow
+     #f7c411 (radio checked border + dot, "Check availability" button
+     background) and near-black #1c2126 (field backgrounds, radio circle
+     fill, button text). */
+  --color-brand: #f7c411;
+
+  /* Ink — near-black: field backgrounds, radio circle fill, button text. */
+  --color-ink: #1c2126;
+
+  /* Card — the solid charcoal booking-card background, the RESTING label
+     color (inside empty fields) and the select-arrow color. */
+  --color-card: #2d343b;
+
+  /* Band — the darker full-bleed header band background (darker than the
+     card). */
+  --color-band: #1a1f24;
+
+  /* Original font: Montserrat (weights 400 + 700) via Google Fonts. */
+  --font-sans:
+    'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
