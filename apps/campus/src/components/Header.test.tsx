@@ -4,6 +4,9 @@ import { fireEvent } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
 import { Header } from './Header'
 import {
+  menuCloseLabel,
+  menuTriggerLabel,
+  mobileNavLabel,
   navItems,
   navLabel,
   phoneLabel,
@@ -63,5 +66,33 @@ describe('Header', () => {
     const wordmark = screen.getByRole('link', { name: siteName })
     await user.tab()
     expect(wordmark).toHaveFocus()
+  })
+
+  it('opens and closes the mobile menu', async () => {
+    const user = userEvent.setup()
+    render(<Header />)
+
+    const trigger = screen.getByRole('button', { name: menuTriggerLabel })
+    expect(trigger).toHaveAttribute('aria-expanded', 'false')
+
+    await user.click(trigger)
+    expect(trigger).toHaveAttribute('aria-expanded', 'true')
+    expect(screen.getByRole('navigation', { name: mobileNavLabel })).toBeInTheDocument()
+
+    await user.click(screen.getByRole('button', { name: menuCloseLabel }))
+    expect(trigger).toHaveAttribute('aria-expanded', 'false')
+    expect(screen.queryByRole('navigation', { name: mobileNavLabel })).not.toBeInTheDocument()
+  })
+
+  it('closes the mobile menu when a link is activated', async () => {
+    const user = userEvent.setup()
+    render(<Header />)
+
+    const trigger = screen.getByRole('button', { name: menuTriggerLabel })
+    await user.click(trigger)
+    const mobileNav = screen.getByRole('navigation', { name: mobileNavLabel })
+    await user.click(screen.getAllByRole('link', { name: 'Course' })[1]!)
+    expect(trigger).toHaveAttribute('aria-expanded', 'false')
+    expect(mobileNav).not.toBeInTheDocument()
   })
 })
