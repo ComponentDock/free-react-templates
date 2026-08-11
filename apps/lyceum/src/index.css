@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Lyceum brand palette — recreated from the ColorLib "Learnit" preview
+   (https://preview.colorlib.com/theme/learnit/) live DOM + style.css:
+   brand green #4dbf1c (buttons, active/hover nav, Free badge, finance
+   icons), gradient #2c28b1 → #9b5cf6 (footer newsletter arrow button),
+   ink #222222, muted #777777, light-bg #f9f9ff, border-soft #eeeeee,
+   star gold #ffc000, pack chip #edf8e8, footer #04091e. */
+@theme {
+  --color-brand: #4dbf1c;
+  --color-gradient-from: #2c28b1;
+  --color-gradient-to: #9b5cf6;
+  --color-ink: #222222;
+  --color-muted: #777777;
+  --color-light: #f9f9ff;
+  --color-border-soft: #eeeeee;
+  --color-star: #ffc000;
+  --color-pack-chip: #edf8e8;
+  --color-footer: #04091e;
+  --color-paper: #ffffff;
+
+  /* Playfair Display (serif headings) + Roboto (body) via Google Fonts
+     <link> in index.html (the original bundles its own font files; DO NOT
+     copy them). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Playfair Display', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #222222;
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background: #4dbf1c;
+    color: #fff;
+  }
+}
