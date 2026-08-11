@@ -36,7 +36,9 @@ describe('Footer', () => {
   it('lists the information links', () => {
     render(<Footer />)
     for (const link of informationLinks) {
-      expect(screen.getByRole('link', { name: link })).toBeInTheDocument()
+      const anchor = screen.getByRole('link', { name: link })
+      expect(anchor).toBeInTheDocument()
+      expect(anchor).toHaveAttribute('href', '#top')
     }
   })
 
