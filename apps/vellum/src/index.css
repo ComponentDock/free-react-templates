@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+/* Vellum brand palette — recreated from the ColorLib "Readit" preview
+   (https://preview.colorlib.com/theme/readit/) live DOM + css/style.css:
+   brand gold #FFD369 (btn-primary bg/border, nav-link hover, active
+   pagination), hero gradient #F200FF → #FFBA42 (45deg, opacity .8),
+   navbar #343A40 (Bootstrap bg-dark), footer #3C312E (ftco-bg-dark),
+   ink #000 headings, category tags rgba(0,0,0,.2). */
+@theme {
+  --color-brand: #ffd369;
+  --color-flare: #f200ff;
+  --color-ember: #ffba42;
+  --color-ink: #000000;
+  --color-coal: #343a40;
+  --color-cocoa: #3c312e;
+
+  /* Poppins (weights 400/500/700) — Google Fonts via index.html
+     (the original bundles its own font files; DO NOT copy them). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #000;
+  }
+  ::selection {
+    background: #ffd369;
+    color: #000;
+  }
+}
