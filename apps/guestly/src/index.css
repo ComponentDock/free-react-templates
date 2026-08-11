@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Guestly
+   itself is a light-on-dark page. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Guestly brand palette — recreated from the ColorLib "Colorlib Booking
+     Form V18" design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-18/):
+     bright orange #ff9000 is the ONLY accent color (static uppercase labels
+     + the solid Check availability button background). */
+  --color-brand: #ff9000;
+
+  /* Brand-dark — the documented hover state for the orange button (the
+     source CSS has no hover rule; the recreation darkens to #e68200). */
+  --color-brand-dark: #e68200;
+
+  /* Panel — the near-black booking card background (#0f0f0f). */
+  --color-panel: #0f0f0f;
+
+  /* Ink — the near-black text color used when a focused control flips to a
+     white fill (#222). */
+  --color-ink: #222;
+
+  /* Dim — the 2px input border, placeholder + empty-date/select text, and
+     the floating select arrow glyph (rgba(255,255,255,0.15)). */
+  --color-dim: rgba(255, 255, 255, 0.15);
+
+  /* Scrim — the dark-grey overlay dimming the photo header
+     (rgba(81,81,81,0.8)). */
+  --color-scrim: rgba(81, 81, 81, 0.8);
+
+  /* Original fonts: Lato (400/700, body/labels/inputs/button) + Medula One
+     (400, headline) via Google Fonts. */
+  --font-sans:
+    'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Medula One', cursive;
+}
