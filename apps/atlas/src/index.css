@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Atlas brand palette — recreated from the ColorLib "World" preview
+   (https://preview.colorlib.com/theme/world/) live DOM + style.css:
+   brand blue #0000ff (pill buttons, active-tab underline, chip text + hover
+   fill, link hover), footer dark #161616, ink #000 (headings, section
+   titles, active tab), muted gray #8d8d8d (post titles, number-badge
+   borders, footer links), divider #f1f1f1 (2px section/meta/tab borders,
+   social circle borders), border gray #d7d7d7 (outlined button variant),
+   input gray #959595 (footer subscribe field), paper #fff. Headings/UI
+   Ubuntu, body Work Sans — Google Fonts via index.html (the original
+   bundles its own files; DO NOT copy them). */
+@theme {
+  --color-brand: #0000ff;
+  --color-footer: #161616;
+  --color-ink: #000;
+  --color-text-muted: #8d8d8d;
+  --color-divider: #f1f1f1;
+  --color-border-gray: #d7d7d7;
+  --color-input: #959595;
+  --color-paper: #fff;
+
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  --font-heading: 'Ubuntu', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: #fff;
+  }
+}
