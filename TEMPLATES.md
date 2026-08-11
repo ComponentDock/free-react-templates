@@ -325,7 +325,7 @@
 
 ## Bootstrap (216)
 
-- [~] **Academy** — [colorlib](https://colorlib.com/wp/template/academy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academy-free-template.jpg)
+- [x] **Academy** — [colorlib](https://colorlib.com/wp/template/academy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academy-free-template.jpg) · [campus](https://free-react-templates-campus.surge.sh)
 - [ ] **Aid** — [colorlib](https://colorlib.com/wp/template/aid/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aid-free-template.jpg)
 - [ ] **Allfood** — [colorlib](https://colorlib.com/wp/template/allfood/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/allfood-free-template.jpg)
 - [ ] **Amor** — [colorlib](https://colorlib.com/wp/template/amor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amor-free-template.jpg)
@@ -1620,7 +1620,7 @@
 - [ ] **Academica** — [colorlib](https://colorlib.com/wp/template/academica/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academica-free-template.jpg)
 - [ ] **Academics** — [colorlib](https://colorlib.com/wp/template/academics/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academics-free-template.jpeg)
 - [x] **Academix** — [colorlib](https://colorlib.com/wp/template/academix/) · [schola](https://free-react-templates-schola.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academix-template-1770211029932.jpg)
-- [ ] **Academy** — [colorlib](https://colorlib.com/wp/template/academy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academy-free-template.jpg)
+- [x] **Academy** — [colorlib](https://colorlib.com/wp/template/academy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academy-free-template.jpg) · [campus](https://free-react-templates-campus.surge.sh)
 - [ ] **Clever** — [colorlib](https://colorlib.com/wp/template/clever/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/clever-free-template.jpg)
 - [ ] **Course** — [colorlib](https://colorlib.com/wp/template/course/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/course-free-template.jpg)
 - [ ] **Courses** — [colorlib](https://colorlib.com/wp/template/courses/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/courses-free-template.jpg)
