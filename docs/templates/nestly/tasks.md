@@ -105,7 +105,7 @@
   `#6499ff`, Ridely `#ffc600`, Roomzy `#f14634`, Innly `#c99552`, Lodgely
   `#6c8f18`, Bookly `#2b9328`).
 - **Recreation decisions:** Tailwind grid (NO Bootstrap); single-section
-  page — NO Navbar/Footer; bg = `picsum.photos/seed/nestly-1/1920/1080`
+  page — NO Navbar/Footer; bg = `picsum.photos/seed/nestly-paradise/1920/1080`
   cover/center, NO overlay; native date inputs; STATIC real `<label
 htmlFor>` labels (source uses non-semantic `<span class="form-label">`);
   select arrow = rotated `➜` or lucide ChevronDown `#818390` 12px 32×32 at
@@ -127,7 +127,7 @@ htmlFor>` labels (source uses non-semantic `<span class="form-label">`);
    `#3c404a`, label/arrow `#818390`, bar border `rgba(60,64,101,0.1)`;
    Alegreya (display) + Source Sans Pro (body) font families.
 4. Tests (red) → `App.tsx` + components:
-   - `BookingSection.tsx` — 100vh section, picsum bg (`nestly-1/1920/1080`)
+   - `BookingSection.tsx` — 100vh section, picsum bg (`nestly-paradise/1920/1080`)
      cover/center (NO overlay), vertical centering.
    - `BookingBar.tsx` — white horizontal bar (shadow + 1px border, sharp
      corners), 3-zone grid (header 3/12 · fields 7/12 · button 2/12).

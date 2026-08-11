@@ -200,8 +200,9 @@ bottom: 20px`, 32×32, `line-height: 32px`, `text-align: center`,
 - **Recreation decisions:** Tailwind re-implementation of the Bootstrap-era
   grid (NO Bootstrap dependency); page is a bare single-section form page —
   repo-standard Navbar/Footer must NOT be added; the page background uses a
-  seeded picsum placeholder (`picsum.photos/seed/nestly-1/1920/1080`, a
-  beach-appropriate seed; the source `background.jpg` must not be copied)
+  seeded picsum placeholder (`picsum.photos/seed/nestly-paradise/1920/1080`,
+  an ocean/coast scene — the closest beach-appropriate match in the picsum
+  pool; the source `background.jpg` must not be copied)
   with `cover`/`center`, NO overlay; date inputs are native
   `<input type="date">` styled with Tailwind (no datepicker dependency); the
   form is a WHITE HORIZONTAL BAR with a 3-zone layout (header 3/12 · fields
@@ -239,7 +240,7 @@ form demo).
 - **WHEN** the page loads
 - **THEN** a section spanning the full viewport height SHALL be shown
 - **AND** the section SHALL use a full-bleed photograph
-  (`picsum.photos/seed/nestly-1/1920/1080`) as its background,
+  (`picsum.photos/seed/nestly-paradise/1920/1080`) as its background,
   cover-positioned and centered
 - **AND** the photo SHALL NOT be covered by any overlay or scrim
 - **AND** the content SHALL be vertically centered in the viewport
@@ -388,7 +389,7 @@ screens, matching the source's Bootstrap `col-md-*` behavior.
 - [ ] `scripts/verify-app.sh nestly` passes (typecheck + lint + vitest
       100% coverage + build)
 - [ ] Sections in order: full-viewport section with full-bleed cover/center
-      PHOTO page background (seeded picsum, `nestly-1/1920/1080`, NO
+      PHOTO page background (seeded picsum, `nestly-paradise/1920/1080`, NO
       overlay) → vertically centered WHITE HORIZONTAL BAR → LEFT header
       "Book Now" (3/12, Alegreya 52px `#9a8067`) → MIDDLE four fields
       (7/12: Check In + Check out dates, Guests + Kids selects) → RIGHT
@@ -401,7 +402,7 @@ screens, matching the source's Bootstrap `col-md-*` behavior.
       `1px solid rgba(60,64,101,0.1)`
 - [ ] Alegreya 700 (display + field values) + Source Sans Pro 400 (body) via
       Google Fonts `<link>` in `index.html`
-- [ ] Page background = seeded picsum (`nestly-1/1920/1080`) cover/center
+- [ ] Page background = seeded picsum (`nestly-paradise/1920/1080`) cover/center
       full-bleed, NO overlay (source `background.jpg` not copied)
 - [ ] Bar: white, horizontal, full container width, sharp corners; zones
       header 3/12 · fields 7/12 · button 2/12; header + field groups 110px

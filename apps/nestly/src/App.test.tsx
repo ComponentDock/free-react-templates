@@ -18,7 +18,7 @@ describe('App', () => {
     expect(section.className).toMatch(/bg-cover/)
     expect(section.className).toMatch(/bg-center/)
     expect(section.className).toMatch(/items-center/)
-    expect(section.style.backgroundImage).toContain('picsum.photos/seed/nestly-1/1920/1080')
+    expect(section.style.backgroundImage).toContain('picsum.photos/seed/nestly-paradise/1920/1080')
 
     // The source photo shows at FULL saturation — no scrim/wash overlay.
     expect(container.querySelector('.bg-wash')).toBeNull()

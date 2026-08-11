@@ -16,7 +16,7 @@ export function App() {
       <section
         id="booking"
         className="relative flex min-h-screen items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: "url('https://picsum.photos/seed/nestly-1/1920/1080')" }}
+        style={{ backgroundImage: "url('https://picsum.photos/seed/nestly-paradise/1920/1080')" }}
       >
         <div className="relative z-10 mx-auto w-full max-w-[1140px] px-[15px] py-10">
           <BookingForm />
