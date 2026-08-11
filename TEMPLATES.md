@@ -296,7 +296,7 @@
 - [x] **Wordsmith** — [colorlib](https://colorlib.com/wp/template/wordsmith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordsmith-free-template.jpg) · [parchment](https://free-react-templates-parchment.surge.sh)
 - [x] **World** — [colorlib](https://colorlib.com/wp/template/world/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/world-free-template-1.jpg) · [atlas](https://free-react-templates-atlas.surge.sh)
 - [x] **Yummy** — [colorlib](https://colorlib.com/wp/template/yummy/) · [zesty](https://free-react-templates-zesty.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-minimal-food-blog-website-template.jpg)
-- [~] **Yummy 2** — [colorlib](https://colorlib.com/wp/template/yummy-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-free-template.jpg)
+- [x] **Yummy 2** — [colorlib](https://colorlib.com/wp/template/yummy-2/) · [umami](https://free-react-templates-umami.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-free-template.jpg)
 
 ## Booking Forms (22)
 
@@ -1239,7 +1239,7 @@
 - [ ] **Yogafun** — [colorlib](https://colorlib.com/wp/template/yogafun/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogafun-free-template.jpg)
 - [ ] **Youragent** — [colorlib](https://colorlib.com/wp/template/youragent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youragent-free-template.jpg)
 - [x] **Youthconnect** — [colorlib](https://colorlib.com/wp/template/youthconnect/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youthconnect-template-1770211452999.jpg) · [ignite](https://free-react-templates-ignite.surge.sh)
-- [ ] **Yummy 2** — [colorlib](https://colorlib.com/wp/template/yummy-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-free-template.jpg)
+- [x] **Yummy 2** — [colorlib](https://colorlib.com/wp/template/yummy-2/) · [umami](https://free-react-templates-umami.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-free-template.jpg)
 - [ ] **Zeta** — [colorlib](https://colorlib.com/wp/template/zeta/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeta-free-template.jpg)
 
 ## Charity (37)
@@ -1792,7 +1792,7 @@
 - [ ] **Vegefoods** — [colorlib](https://colorlib.com/wp/template/vegefoods/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vegefoods-free-template.jpg)
 - [ ] **Wines** — [colorlib](https://colorlib.com/wp/template/wines/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wines-free-template.jpg)
 - [ ] **Wordpress Restaurant Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-restaurant-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jevelin-restaurant-website-template.jpg)
-- [ ] **Yummy 2** — [colorlib](https://colorlib.com/wp/template/yummy-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-free-template.jpg)
+- [x] **Yummy 2** — [colorlib](https://colorlib.com/wp/template/yummy-2/) · [umami](https://free-react-templates-umami.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-free-template.jpg)
 
 ## Gallery (11)
 
