@@ -206,7 +206,7 @@ bottom: 6px`, 32×32, `line-height: 32px`, `text-align: center`,
 - **Recreation decisions:** Tailwind re-implementation of the Bootstrap-era
   grid (NO Bootstrap dependency); page is a bare single-section form page —
   repo-standard Navbar/Footer must NOT be added; the page background uses a
-  seeded picsum placeholder (`picsum.photos/seed/drivly-1/1920/1080`, a
+  seeded picsum placeholder (`picsum.photos/seed/drivly-city/1920/1080`, a
   city-street/cars-appropriate seed; the source `background.jpg` must not be
   copied) with `cover`/`center` and the `rgba(0,0,0,0.6)` overlay scrim;
   date input is native `<input type="date">` styled with Tailwind (no
@@ -243,7 +243,7 @@ card. The page SHALL NOT render any navbar, hero chrome, or footer
 - **WHEN** the page loads
 - **THEN** a section spanning the full viewport height SHALL be shown
 - **AND** the section SHALL use a full-bleed photograph
-  (`picsum.photos/seed/drivly-1/1920/1080`) as its background,
+  (`picsum.photos/seed/drivly-city/1920/1080`) as its background,
   cover-positioned and centered
 - **AND** the photo SHALL be dimmed by a `rgba(0, 0, 0, 0.6)` overlay scrim
 - **AND** the content SHALL be vertically centered in the viewport
@@ -396,7 +396,7 @@ small screens, matching the source's Bootstrap `col-sm-*` behavior.
 - [ ] `scripts/verify-app.sh drivly` passes (typecheck + lint + vitest
       100% coverage + build)
 - [ ] Sections in order: full-viewport section with full-bleed cover/center
-      PHOTO page background (seeded picsum `drivly-1/1920/1080` + 60% dark
+      PHOTO page background (seeded picsum `drivly-city/1920/1080` + 60% dark
       overlay scrim) → vertically centered DARK `#101113` card (max-width
       642px, radius 3px) → centered gold-yellow "Book a car" h1 (58px
       uppercase 700 `#ffc001`) → form (Name+Email row, Phone, Pickup
@@ -409,11 +409,11 @@ small screens, matching the source's Bootstrap `col-sm-*` behavior.
       `#101113` text; placeholders `rgba(16,17,19,0.3)`; labels `#fff`
       12px uppercase STATIC (never float)
 - [ ] Montserrat 400 + 700 via Google Fonts `<link>` in `index.html`
-- [ ] Page background = seeded picsum (`drivly-1/1920/1080`) cover/center
+- [ ] Page background = seeded picsum (`drivly-city/1920/1080`) cover/center
       full-bleed WITH `rgba(0,0,0,0.6)` overlay scrim (source
       `background.jpg` not copied)
 - [ ] Selects: Hour 1–12, Min 05–55 (step 5), AM/PM AM|PM — `appearance:
-    none` + arrow glyph (rotated `➜`/ChevronDown, `#101113`, 14px, 32×32)
+  none` + arrow glyph (rotated `➜`/ChevronDown, `#101113`, 14px, 32×32)
       at `right 0 bottom 6px`
 - [ ] "Book Now" button: solid `#ffc001` bg, dark `#101113` uppercase 700
       text, height 50px, full width, radius 3px; validates required fields
