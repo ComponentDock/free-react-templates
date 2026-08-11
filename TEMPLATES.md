@@ -288,7 +288,7 @@
 - [x] **Stories** — [colorlib](https://colorlib.com/wp/template/stories/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stories-free-template.jpg) · [fable](https://free-react-templates-fable.surge.sh)
 - [x] **Stuff** — [colorlib](https://colorlib.com/wp/template/stuff/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stuff-free-template.jpg) · [miscellany](https://free-react-templates-miscellany.surge.sh)
 - [x] **Sunzine** — [colorlib](https://colorlib.com/wp/template/sunzine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sunzine-free-template.jpg) · [aperture](https://free-react-templates-aperture.surge.sh)
-- [~] **Suppablog** — [colorlib](https://colorlib.com/wp/template/suppablog/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/suppablog-free-creative-blog-template-for-writters.jpg)
+- [x] **Suppablog** — [colorlib](https://colorlib.com/wp/template/suppablog/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/suppablog-free-creative-blog-template-for-writters.jpg) · [scribble](https://free-react-templates-scribble.surge.sh)
 - [ ] **Videomag** — [colorlib](https://colorlib.com/wp/template/videomag/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/videomag-free-template.jpg)
 - [ ] **Vizew** — [colorlib](https://colorlib.com/wp/template/vizew/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vizew-free-template.jpg)
 - [ ] **Webmag** — [colorlib](https://colorlib.com/wp/template/webmag/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webmag-free-template.jpg)
