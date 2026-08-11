@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+/* Rekindle brand palette — recreated from the ColorLib "Revive" preview
+   (https://preview.colorlib.com/theme/revive/) live DOM + css/main.css:
+   primary deep navy #13113a (buttons, nav hover/active, widget titles),
+   muted body #706f87 (Open Sans 14px/24px 500), light lavender-grey
+   #f9f9ff (cards + sidebar widgets), footer #000000, card hover shadow
+   0 20px 30px rgba(0,35,71,0.1). */
+@theme {
+  --color-ink: #13113a;
+  --color-muted: #706f87;
+  --color-mist: #f9f9ff;
+
+  /* Playfair Display (headings/nav, serif) + Open Sans (body) — Google
+     Fonts via index.html (the original bundles its own files; DO NOT
+     copy them). */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #706f87;
+  }
+  ::selection {
+    background: #13113a;
+    color: #fff;
+  }
+}
