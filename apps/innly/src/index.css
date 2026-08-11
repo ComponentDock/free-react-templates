@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Innly
+   itself is a light-only page. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Innly brand palette — recreated from the ColorLib "Colorlib Booking
+     Form V15" design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-15/):
+     bronze/tan #c99552 is the ONLY brand color (solid Check availability
+     button background with white text, static labels, focus borders, the ⇔
+     divider, and the select arrow-tab focus state). */
+  --color-brand: #c99552;
+
+  /* Ink — the near-black headline color (#0c0c09). */
+  --color-ink: #0c0c09;
+
+  /* Mist — the 1px input border, placeholder + empty-date text, and the
+     select arrow tab (#e1e1e1), turning bronze #c99552 on focus. */
+  --color-mist: #e1e1e1;
+
+  /* Slate — the input text color (#6b6b6d). */
+  --color-slate: #6b6b6d;
+
+  /* Primary scale so the shared ui Button `primary` variant resolves to the
+     bronze (its own background is overridden to bg-brand for the solid
+     look). */
+  --color-primary-50: #faf5ee;
+  --color-primary-100: #f3e8d9;
+  --color-primary-200: #e8d5b8;
+  --color-primary-300: #dbbd8f;
+  --color-primary-400: #d1ab70;
+  --color-primary-500: #c99552;
+  --color-primary-600: #b58248;
+  --color-primary-700: #9a6b3c;
+  --color-primary-800: #7c5531;
+  --color-primary-900: #5f4126;
+
+  /* Original fonts: Josefin Sans (400/700, body) + Cardo (700, headline)
+     via Google Fonts. */
+  --font-sans:
+    'Josefin Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial,
+    sans-serif;
+  --font-display: 'Cardo', Georgia, 'Times New Roman', serif;
+}
