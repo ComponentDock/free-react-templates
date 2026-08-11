@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Roostly
+   itself is a light-only page (the source design is a white card on a photo). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Roostly brand palette — recreated from the ColorLib "Colorlib Booking
+     Form V11" design (live demo:
+     https://colorlib.com/etc/bforms/colorlib-booking-11/):
+     hot pink #ff0063 is the ONLY brand color (field labels + submit
+     button). */
+  --color-brand: #ff0063;
+  --color-brand-dark: #e00059;
+
+  /* Ink — input text (#222). */
+  --color-ink: #222;
+
+  /* Line — placeholders + empty-date text + select arrow (#818390). */
+  --color-line: #818390;
+
+  /* Divider — thin vertical column separators inside the card
+     (rgba(129, 131, 144, 0.15), 2px wide, 75px tall). */
+  --color-divider: rgba(129, 131, 144, 0.15);
+
+  /* Primary scale so the shared ui Button `primary` variant resolves to the
+     brand hot pink. */
+  --color-primary-50: #fff0f6;
+  --color-primary-100: #ffd9e7;
+  --color-primary-200: #ffb3cf;
+  --color-primary-300: #ff85b2;
+  --color-primary-400: #ff4f90;
+  --color-primary-500: #ff1f76;
+  --color-primary-600: #ff0063;
+  --color-primary-700: #e00059;
+  --color-primary-800: #b8004a;
+  --color-primary-900: #8f003a;
+
+  /* Original font: Poppins (400/500/600) via Google Fonts. */
+  --font-sans:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
