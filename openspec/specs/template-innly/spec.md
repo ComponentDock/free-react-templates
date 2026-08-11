@@ -163,8 +163,11 @@ TypeScript.
 - **Recreation decisions:** Tailwind re-implementation of the Bootstrap-era
   grid (NO Bootstrap dependency); page is a bare single-section form page —
   repo-standard Navbar/Footer must NOT be added; background photo → seeded
-  picsum placeholder (`picsum.photos/seed/innly-1/1600/900`, a
-  tropical-resort/pool seed; the source `background.jpg` must not be copied)
+  picsum placeholder (`picsum.photos/seed/innly-10/1600/900`, verified
+  2026-08-11: a wooden dock over calm water at sunset — resort-appropriate
+  and harmonizing with the bronze brand; the source `background.jpg` must not
+  be copied; the originally suggested `innly-1` seed resolved to an urban
+  concrete-memorial photo and was swapped)
   as a full-bleed section background with an `rgba(0,0,0,0.2)` overlay
   (Tailwind `bg-black/20`); date inputs are native `<input type="date">`
   styled with Tailwind (no datepicker dependency); select arrows = rotated
@@ -323,7 +326,7 @@ labels, NOT bottom-edge tab bars).
       ⇔ divider, arrow-tab focus) in `@theme` and used via Tailwind classes
 - [ ] Josefin Sans (400/700) + Cardo (700) via Google Fonts `<link>` in
       `index.html`
-- [ ] Background = seeded picsum (`innly-1/…`) full-bleed with `bg-black/20`
+- [ ] Background = seeded picsum (`innly-10/…`) full-bleed with `bg-black/20`
       overlay, `cover`/`center`
 - [ ] Card: max-width 768px, bg `#fff`, radius 3px, padding 30px, margin
       auto
