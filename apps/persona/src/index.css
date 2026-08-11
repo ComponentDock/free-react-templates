@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Persona brand palette — recreated from the ColorLib "Personal Wordpress
+     Themes" category screenshot (Jackie Brooklyn demo) + the live roundup
+     page CSS (Total theme):
+     - accent blue #1a73e8 (links, CTA buttons, focus rings, hovers)
+     - dark navy #1c1e26 (floating action bar, footer, scrolled header)
+     - ink #111827 (headings on light sections) · body #374151 · meta #4b5563
+     - light backgrounds #f8fafc / #f0f4ff (alternating sections)
+     - font: system sans-serif stack (the reference imports no webfont)
+     - hero CTA: white pill, dark text, radius 999px, hover → accent */
+  --color-accent: #1a73e8;
+  --color-accent-dark: #1557b0;
+  --color-navy: #1c1e26;
+  --color-ink: #111827;
+  --color-body: #374151;
+  --color-meta: #4b5563;
+  --color-mist: #f8fafc;
+  --color-frost: #f0f4ff;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600, hover
+     bg-primary-700) render the accent blue */
+  --color-primary: #1a73e8;
+  --color-primary-50: #eaf2fd;
+  --color-primary-100: #d3e4fb;
+  --color-primary-200: #a7c9f6;
+  --color-primary-300: #7baef1;
+  --color-primary-400: #4f93ec;
+  --color-primary-500: #2378e8;
+  --color-primary-600: #1a73e8;
+  --color-primary-700: #1557b0;
+  --color-primary-800: #10408a;
+  --color-primary-900: #0c2f66;
+
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #ffffff;
+    color: #374151;
+    font-family: var(--font-sans);
+    line-height: 1.6;
+  }
+}
