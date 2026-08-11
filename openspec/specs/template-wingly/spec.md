@@ -187,8 +187,12 @@ relative; margin-bottom: 20px`.
 - **Recreation decisions:** Tailwind re-implementation of the Bootstrap-era
   grid (NO Bootstrap dependency); page is a bare single-section form page —
   repo-standard Navbar/Footer must NOT be added; the page background uses a
-  seeded picsum placeholder (`picsum.photos/seed/wingly-1/1920/1080`, a
-  clouds/sky-appropriate seed; the source `background.jpg` must not be
+  seeded picsum placeholder (`picsum.photos/seed/wingly-9/1920/1080`, a
+  sky/clouds-appropriate seed — the spec's original wingly-1 pin was dropped
+  because that seed resolves to a beach scene; wingly-9 (Golden Gate bridge rising
+  above a sea of fog under a pale blue sky) matches the source photo's
+  sky/clouds subject; the source
+  `background.jpg` must not be
   copied) with `cover`/`center` and NO separate scrim (the card's own
   `rgba(0,0,0,0.7)` translucent background provides the contrast — the
   photo stays fully visible around the card); date inputs are native
@@ -229,7 +233,7 @@ NOT render any navbar, hero chrome, headline/CTA column, or footer
 - **WHEN** the page loads
 - **THEN** a section spanning the full viewport height SHALL be shown
 - **AND** the section SHALL use a full-bleed photograph
-  (`picsum.photos/seed/wingly-1/1920/1080`) as its background,
+  (`picsum.photos/seed/wingly-9/1920/1080`) as its background,
   cover-positioned and centered
 - **AND** the content SHALL be vertically centered in the viewport
 - **AND** the page SHALL NOT contain a navigation bar, a headline/CTA
@@ -420,7 +424,7 @@ small screens, matching the source's Bootstrap `col-md-*` behavior.
       `rgba(82,82,84,0.4)`; labels `#fff` 12px uppercase STATIC (never
       float)
 - [ ] PT Sans 400 via Google Fonts `<link>` in `index.html`
-- [ ] Page background = seeded picsum (`wingly-1/1920/1080`) cover/center
+- [ ] Page background = seeded picsum (`wingly-9/1920/1080`) cover/center
       full-bleed WITHOUT a separate overlay scrim (source `background.jpg`
       not copied)
 - [ ] Radios: visually-hidden native inputs + custom white 20px circles,
@@ -429,7 +433,7 @@ small screens, matching the source's Bootstrap `col-md-*` behavior.
 - [ ] Selects: Adults 1–3, Children 0–2, Travel class
       Economy/Business/First — `appearance: none` + arrow glyph (rotated
       `➜`/ChevronDown, `rgba(0,0,0,0.3)`, 14px, 32×32) at `right 10px
-    bottom 6px`
+  bottom 6px`
 - [ ] "Show flights" button: solid `#f23e3e` bg, white uppercase 14px
       text, height 50px, full width, radius 40px, hover opacity 0.9;
       validates required fields and shows a summary line / validation
