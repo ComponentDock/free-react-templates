@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Roomzy
+   itself is a light-only page (the source design is solid white). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Roomzy brand palette — recreated from the ColorLib "Colorlib Booking 10"
+     design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-10/):
+     red-orange #f14634 is the ONLY brand color (field labels + Book Now
+     button). */
+  --color-brand: #f14634;
+  --color-brand-dark: #d93a2a;
+
+  /* Ink — control values (dark navy #0e2753, 20px bold). */
+  --color-ink: #0e2753;
+
+  /* Line — field dividers + placeholders (#dddee9). */
+  --color-line: #dddee9;
+
+  /* Frost — focus background (#f9f9f9; the source has NO focus ring). */
+  --color-frost: #f9f9f9;
+
+  /* Primary scale so the shared ui Button `primary` variant resolves to the
+     brand red-orange. */
+  --color-primary-50: #fef0ee;
+  --color-primary-100: #fddcd8;
+  --color-primary-200: #fbb9b1;
+  --color-primary-300: #f99285;
+  --color-primary-400: #f76b5d;
+  --color-primary-500: #f45c4b;
+  --color-primary-600: #f14634;
+  --color-primary-700: #d93a2a;
+  --color-primary-800: #b52e21;
+  --color-primary-900: #8f241a;
+
+  /* Original font: Lato (400/700 + italic) via Google Fonts. */
+  --font-sans:
+    'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display:
+    'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
