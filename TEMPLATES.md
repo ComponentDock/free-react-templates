@@ -445,7 +445,7 @@
 - [x] **Marga** — [colorlib](https://colorlib.com/wp/template/marga/) · [lintel](https://free-react-templates-lintel.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/marga-free-template.jpg)
 - [ ] **Me** — [colorlib](https://colorlib.com/wp/template/me/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/me-free-template.jpg)
 - [ ] **Medicalcenter** — [colorlib](https://colorlib.com/wp/template/medicalcenter/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medicalcenter-free-template.jpg)
-- [~] **Medico** — [colorlib](https://colorlib.com/wp/template/medico/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medic-free-template.jpg)
+- [x] **Medico** — [colorlib](https://colorlib.com/wp/template/medico/) · [medico](https://free-react-templates-medico.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medic-free-template.jpg)
 - [ ] **Medino** — [colorlib](https://colorlib.com/wp/template/medino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medino-free-template.jpg)
 - [ ] **Meditative** — [colorlib](https://colorlib.com/wp/template/meditative/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meditative-free-template.jpg)
 - [ ] **Meetup** — [colorlib](https://colorlib.com/wp/template/meetup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meetup-free-template.jpg)
