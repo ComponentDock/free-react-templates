@@ -1,0 +1,64 @@
+@import 'tailwindcss';
+
+/* Newsline brand palette — recreated from the ColorLib "Vizew" preview
+   (https://preview.colorlib.com/theme/vizew/) live DOM + style.css:
+   brand red #DB4437 (navbar, vizew-btn, news-title, section-heading
+   underline, active playlist border), near-black inks #0F1112 (duration
+   badge, button hover) + #222627 (page body background), playlist panel
+   #393C3D with active row #4D5051, footer #191C1D, muted #A6A6A6,
+   meta #595959. Display font Roboto (the reference's body font). */
+@theme {
+  --color-brand: #db4437;
+  --color-brand-hover: #0f1112;
+  --color-ink: #0f1112;
+  --color-night: #222627;
+  --color-panel: #393c3d;
+  --color-panel-active: #4d5051;
+  --color-footer: #191c1d;
+  --color-mute: #a6a6a6;
+  --color-meta: #595959;
+  --color-body: #a6a6a6;
+  --color-line: #393c3d;
+
+  /* Social brand colors (footer round buttons). */
+  --color-facebook: #597dca;
+  --color-twitter: #1da1f2;
+  --color-googleplus: #db4437;
+  --color-instagram: #a67c52;
+  --color-linkedin: #3b5998;
+
+  /* Roboto — Google Fonts via index.html (the original bundles its own
+     files; DO NOT copy them). */
+  --font-display: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--color-night);
+    color: #fff;
+    font-family: var(--font-display);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: #fff;
+  }
+}
+
+/* Breaking-news ticker — the reference uses a JS ticker plugin; recreated
+   as a pure-CSS marquee (duplicated track translated -50%). */
+@keyframes newsline-ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.newsline-ticker-track {
+  animation: newsline-ticker 30s linear infinite;
+}
