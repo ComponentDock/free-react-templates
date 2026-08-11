@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Zesty brand palette — recreated from the ColorLib "Yummy" preview
+   (https://preview.colorlib.com/theme/yummy/) live DOM + css/style.css:
+   brand pink #FC0254 (overlapping section-title bars, category pills,
+   plus-icon boxes, subscribe button bg/border, nav hover underline), ink
+   #353535 (nav links, all recipe headlines, filter pills, subscribe h3,
+   input text), meta gray #878787 (page-top category spans), section bg
+   #F8F9FB (top-recipe / categories-filter / feature-recipe), footer bg
+   #EAEDF2, copyright #b8c1d0, paper #fff. Body font PT Sans (400/700) —
+   Google Fonts via index.html (the original bundles its own files; DO NOT
+   copy them). Square corners everywhere; the "pill" look of category
+   labels comes from horizontal padding, not border-radius. */
+@theme {
+  --color-brand: #fc0254;
+  --color-ink: #353535;
+  --color-meta: #878787;
+  --color-section: #f8f9fb;
+  --color-footer: #eaedf2;
+  --color-copyright: #b8c1d0;
+  --color-paper: #fff;
+
+  --font-body: 'PT Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: #fff;
+  }
+}
