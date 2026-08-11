@@ -307,8 +307,6 @@
 - [x] **Colorlib Booking 13** — [colorlib](https://colorlib.com/wp/template/colorlib-booking-13/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-booking-13.jpg) · [ridely](https://free-react-templates-ridely.surge.sh)
 - [x] **Colorlib Booking 14** — [colorlib](https://colorlib.com/wp/template/colorlib-booking-14/) · [triply](https://free-react-templates-triply.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-booking-14.jpg)
 - [~] **Colorlib Booking 15** — [colorlib](https://colorlib.com/wp/template/colorlib-booking-15/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-booking-15.jpg)
-- [~] **Colorlib Booking 16** — [colorlib](https://colorlib.com/wp/template/colorlib-booking-16/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-booking-16.jpg)
-- [ ] **Colorlib Booking 15** — [colorlib](https://colorlib.com/wp/template/colorlib-booking-15/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-booking-15.jpg)
 - [x] **Colorlib Booking 16** — [colorlib](https://colorlib.com/wp/template/colorlib-booking-16/) · [lodgely](https://free-react-templates-lodgely.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-booking-16.jpg)
 - [ ] **Colorlib Booking 17** — [colorlib](https://colorlib.com/wp/template/colorlib-booking-17/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-booking-17.jpg)
 - [ ] **Colorlib Booking 18** — [colorlib](https://colorlib.com/wp/template/colorlib-booking-18/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-booking-18.jpg)
