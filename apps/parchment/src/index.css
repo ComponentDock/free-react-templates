@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Parchment brand palette — recreated from the ColorLib "Wordsmith" preview
+   (https://preview.colorlib.com/theme/wordsmith/) live DOM + css/main.css:
+   brand navy #111860 (page body background — shows through as the footer
+   band — plus pgn current, s-extra heading bars, mobile nav current/hover),
+   navy hover #0d134a, indigo links #1d28a1 (card category labels), ink #000
+   (logo, headings, pgn numbers, slider dots, newsletter submit), paper #fff,
+   section gray #f2f2f2 (featured + entries), dropdown dark #151515,
+   hover gray #dddddd (pagination). Headings/logo Libre Baskerville serif
+   (italic wordmark), body/UI Nunito Sans. */
+@theme {
+  --color-brand: #111860;
+  --color-brand-hover: #0d134a;
+  --color-link: #1d28a1;
+  --color-ink: #000;
+  --color-paper: #fff;
+  --color-section: #f2f2f2;
+  --color-dropdown: #151515;
+  --color-hover-gray: #dddddd;
+
+  /* Libre Baskerville (logo/headings) + Nunito Sans (body/UI) — Google Fonts
+     via index.html (the original bundles its own files; DO NOT copy them). */
+  --font-heading: 'Libre Baskerville', ui-serif, Georgia, serif;
+  --font-body: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--color-brand);
+    color: rgba(0, 0, 0, 0.8);
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.8333;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: #fff;
+  }
+}
