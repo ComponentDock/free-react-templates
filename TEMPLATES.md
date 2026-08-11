@@ -328,7 +328,7 @@
 - [x] **Academy** — [colorlib](https://colorlib.com/wp/template/academy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academy-free-template.jpg) · [campus](https://free-react-templates-campus.surge.sh)
 - [x] **Aid** — [colorlib](https://colorlib.com/wp/template/aid/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aid-free-template.jpg) · [succor](https://free-react-templates-succor.surge.sh)
 - [x] **Allfood** — [colorlib](https://colorlib.com/wp/template/allfood/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/allfood-free-template.jpg) · [bistro](https://free-react-templates-bistro.surge.sh)
-~ [~] **Amor** — [colorlib](https://colorlib.com/wp/template/amor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amor-free-template.jpg)
+- [x] **Amor** — [colorlib](https://colorlib.com/wp/template/amor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amor-free-template.jpg) · [caritas](https://free-react-templates-caritas.surge.sh)
 - [x] **Andrea** — [colorlib](https://colorlib.com/wp/template/andrea/) · [memoir](https://free-react-templates-memoir.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/andrea-free-template.jpg)
 - [x] **Apart** — [colorlib](https://colorlib.com/wp/template/apart/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apart-free-template.jpg) · [dwell](https://free-react-templates-dwell.surge.sh)
 - [ ] **Appetizer** — [colorlib](https://colorlib.com/wp/template/appetizer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appetizer-free-template.jpg)
@@ -1246,7 +1246,7 @@
 
 - [ ] **Adopted** — [colorlib](https://colorlib.com/wp/template/adopted/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/adopted-free-template.jpg)
 - [x] **Aid** — [colorlib](https://colorlib.com/wp/template/aid/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aid-free-template.jpg) · [succor](https://free-react-templates-succor.surge.sh)
-- [ ] **Amor** — [colorlib](https://colorlib.com/wp/template/amor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amor-free-template.jpg)
+- [x] **Amor** — [colorlib](https://colorlib.com/wp/template/amor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amor-free-template.jpg) · [caritas](https://free-react-templates-caritas.surge.sh)
 - [ ] **Aspiration** — [colorlib](https://colorlib.com/wp/template/aspiration/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aspiration-free-template.jpg)
 - [ ] **Bcharity** — [colorlib](https://colorlib.com/wp/template/bcharity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bcharity-free-template.jpg)
 - [ ] **Cause** — [colorlib](https://colorlib.com/wp/template/cause/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cause-free-template-1.jpg)
