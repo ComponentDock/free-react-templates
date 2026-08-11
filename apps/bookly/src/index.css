@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Bookly
+   itself is a light page. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Bookly brand palette — recreated from the ColorLib "Colorlib Booking
+     Form V20" design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-20/):
+     green #2b9328 is the ONLY accent color (floated/focused label color +
+     the solid Book Now button background). */
+  --color-brand: #2b9328;
+
+  /* Brand-dark — the documented hover state for the green button (the
+     source CSS has no hover rule; the recreation darkens to #237620). */
+  --color-brand-dark: #237620;
+
+  /* Ink — the near-black text color for the headline, paragraph and field
+     values (#181818). */
+  --color-ink: #181818;
+
+  /* Line — the 2px bottom border of every field, the placeholder +
+     empty-date text, the idle label color and the select arrow glyph
+     (rgba(0,0,0,0.2)). */
+  --color-line: rgba(0, 0, 0, 0.2);
+
+  /* Original font: Montserrat (400/700) for everything — NO display font. */
+  --font-sans:
+    'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
