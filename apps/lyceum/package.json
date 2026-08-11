@@ -30,5 +30,6 @@
     "typescript": "latest",
     "vite": "latest",
     "vitest": "latest"
-  }
+  },
+  "homepage": "https://free-react-templates-lyceum.surge.sh"
 }
