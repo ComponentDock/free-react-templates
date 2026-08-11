@@ -87,7 +87,7 @@
 - **Recreation decisions:** Tailwind re-implementation of the Bootstrap grid
   (NO Bootstrap dependency); single-section form page — repo-standard
   Navbar/Footer must NOT be added; background = seeded picsum
-  (`picsum.photos/seed/drivly-1/1920/1080`, city-street-appropriate seed;
+  (`picsum.photos/seed/drivly-city/1920/1080`, city-street-appropriate seed;
   source `background.jpg` NOT copied) + `rgba(0,0,0,0.6)` scrim; native date
   input (no datepicker dep); selects `appearance:none` + rotated `➜`
   glyph/lucide ChevronDown; STATIC `<label htmlFor>` elements; Montserrat
@@ -103,11 +103,11 @@
 - [ ] Scaffold `apps/drivly` (copy simplest existing app, rename package to
       `@free-react-templates/drivly`; NOT `apps/colorlib-booking-4`)
 - [ ] `@theme` tokens: `--color-brand: #ffc001` (gold-yellow), `--color-ink:
-    #101113` (card/text), `--color-field: #f5f5f5` (inputs), label white,
+  #101113` (card/text), `--color-field: #f5f5f5` (inputs), label white,
       placeholder `rgba(16,17,19,0.3)`, radius 3px
 - [ ] `index.html`: Montserrat 400/700 Google Fonts `<link>`, title "Drivly
       — Car Booking Template"
-- [ ] Section: 100vh, picsum `drivly-1/1920/1080` cover/center, `::before`
+- [ ] Section: 100vh, picsum `drivly-city/1920/1080` cover/center, `::before`
       scrim `rgba(0,0,0,0.6)`, content vertically centered
 - [ ] Card: max-w 642px, `#101113` body, padding 30px 20px, rounded 3px, no
       shadow/border
