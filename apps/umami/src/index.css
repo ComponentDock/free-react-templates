@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Umami brand palette — recreated from the ColorLib "Yummy 2" design via
+   the ThemeWagon mirror (https://themewagon.github.io/yummy2/) live DOM +
+   css/style.css (the official preview.colorlib.com/theme/yummy-2/ 404s):
+   primary pink #FC0254 (active nav link + underline, section-title boxes,
+   category tags, submit button bg, hover overlays), secondary light pink
+   #FF5581 (primary button bg), ink #353535 (titles/body 700), date grey
+   #878787, footer blurb grey #7a818d, section bg #F8F9FB (Top Recipes),
+   footer bg #EAEDF2, paper #fff. Body PT Sans (400/700); logo wordmark
+   Playfair Display italic — Google Fonts via index.html (never copy the
+   source assets). Pill buttons (radius 50px). No dark mode (source has
+   none). */
+@theme {
+  --color-brand: #fc0254;
+  --color-brand-secondary: #ff5581;
+  --color-ink: #353535;
+  --color-ink-dark: #222;
+  --color-meta: #878787;
+  --color-blurb: #7a818d;
+  --color-copyright: #b8c1d0;
+  --color-divider: #e5e5e5;
+  --color-section: #f8f9fb;
+  --color-footer: #eaedf2;
+  --color-paper: #fff;
+
+  --font-body: 'PT Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-logo: 'Playfair Display', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: #fff;
+  }
+}
