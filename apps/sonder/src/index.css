@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Sonder brand palette — recreated from the ColorLib "Philosophy" preview
+   (https://preview.colorlib.com/theme/philosophy/) live DOM + css/main.min.css:
+   brand blue #0054a5 (links, focus, newsletter Send), dark charcoal #111
+   (pageheader bg + diagonal line texture, featured block), #151515 (footer),
+   light grey #f2f2f2 (masonry section), white (popular/tags strip), cyan
+   #01aef0 (category pills), #e2e2e2 (tag chips), meta greys for bylines. */
+@theme {
+  --color-brand: #0054a5;
+  --color-charcoal: #111111;
+  --color-coal: #151515;
+  --color-mist: #f2f2f2;
+  --color-pill: #01aef0;
+  --color-chip: #e2e2e2;
+  --color-ink: #000000;
+  --color-meta: #767676;
+  --color-meta-2: #727272;
+  --color-meta-3: #656565;
+
+  /* Libre Baskerville (serif: headlines, featured titles) + Poppins (sans:
+     body, nav, buttons) — Google Fonts via index.html (the original bundles
+     its own font files; DO NOT copy them). */
+  --font-serif: 'Libre Baskerville', ui-serif, Georgia, serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #000000;
+  }
+  ::selection {
+    background: #0054a5;
+    color: #fff;
+  }
+}
