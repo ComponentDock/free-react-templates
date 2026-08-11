@@ -28,6 +28,9 @@ export const registerLoginLabel = 'Register / Login'
 export const phoneNumber = '(+65) 456 332 5568 889'
 export const phoneLabel = 'Call our admission office'
 export const navLabel = 'Main navigation'
+export const mobileNavLabel = 'Mobile navigation'
+export const menuTriggerLabel = 'Open menu'
+export const menuCloseLabel = 'Close menu'
 export const stickyThreshold = 100
 
 /* Hero — full-screen photo slider (850px), centered white eyebrow + headline
