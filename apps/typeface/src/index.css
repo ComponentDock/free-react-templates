@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/* Typeface brand palette — recreated from the ColorLib "Wordify" preview
+   (https://preview.colorlib.com/theme/wordify/) live DOM + style.css:
+   brand purple #6610f2 (top bar, category badges, dropdown hover/active,
+   pagination), hover #8540f5, dark purple #510bc4 (top-bar search input,
+   focus #3d0894), dark footer #262626, card/body-frame border #efefef,
+   lines #e6e6e6, sidebar input #f7f7f7, body text #6c757d, post-meta
+   #b3b3b3, headings #000. Display font Josefin Sans (logo/headings),
+   body font Inconsolata. */
+@theme {
+  --color-brand: #6610f2;
+  --color-brand-hover: #8540f5;
+  --color-brand-dark: #510bc4;
+  --color-brand-darker: #3d0894;
+  --color-footer: #262626;
+  --color-card-border: #efefef;
+  --color-line: #e6e6e6;
+  --color-input: #f7f7f7;
+  --color-ink: #000;
+  --color-body: #6c757d;
+  --color-muted: #b3b3b3;
+  --color-page: #ccc;
+
+  /* Josefin Sans (headings/logo) + Inconsolata (body) — Google Fonts via
+     index.html (the original bundles its own files; DO NOT copy them). */
+  --font-heading: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Inconsolata', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--color-page);
+    color: var(--color-body);
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.9;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: #fff;
+  }
+}
