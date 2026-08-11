@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Coastly
+   itself is a light-on-dark form page. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Coastly brand palette — recreated from the ColorLib "Colorlib Booking
+     Form V2" design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-2/):
+     lime green #72b01d is the ONLY accent color (the solid Check
+     availability button background). */
+  --color-brand: #72b01d;
+
+  /* Slab — the dark charcoal-navy #1a1e24 field/form-block background. */
+  --color-slab: #1a1e24;
+
+  /* Ink — the same charcoal-navy used for the CTA headline + paragraph on
+     the washed-out photo. */
+  --color-ink: #1a1e24;
+
+  /* Separator — the 2px field bottom border, the 1px vertical column
+     separators and the select-arrow strip background
+     (rgba(243,239,245,0.33)). */
+  --color-separator: rgba(243, 239, 245, 0.33);
+
+  /* Glyph — the ⇌ swap glyph and the rotated ➜ select arrow (#f3eff5). */
+  --color-glyph: #f3eff5;
+
+  /* Dim — placeholder / empty-date text on the dark slab
+     (rgba(255,255,255,0.4)). */
+  --color-dim: rgba(255, 255, 255, 0.4);
+
+  /* Wash — the white overlay dimming the page photo
+     (rgba(255,255,255,0.85)). */
+  --color-wash: rgba(255, 255, 255, 0.85);
+
+  /* Original font: Montserrat (400/700) via Google Fonts — NO display
+     font. */
+  --font-sans:
+    'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
