@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/* Odyssey brand palette — recreated from the ColorLib "Ruft" preview
+   (https://preview.colorlib.com/theme/ruft/) live DOM + css/main.css:
+   primary purple #8050fa (buttons, hover states, scrolled navbar, banner
+   overlay rgba(128,80,250,0.8)), light lavender-grey #f9f9ff (widgets,
+   pill buttons), dark #222222 (footer), soft #e9e9e9 (borders), card shadow
+   0 10px 30px rgba(0,0,0,0.05). */
+@theme {
+  /* Brand purple scale so shared Button/ButtonLink `primary` variants
+     resolve to #8050fa. */
+  --color-primary-50: #f3eeff;
+  --color-primary-100: #e5d9ff;
+  --color-primary-200: #cbb3ff;
+  --color-primary-300: #a98aff;
+  --color-primary-400: #8f66fc;
+  --color-primary-500: #8050fa;
+  --color-primary-600: #6f3df0;
+  --color-primary-700: #5a2cd6;
+  --color-primary-800: #4722ad;
+  --color-primary-900: #381b87;
+
+  --color-brand: #8050fa;
+  --color-ink: #222222;
+  --color-mist: #f9f9ff;
+  --color-soft: #e9e9e9;
+  --color-meta: #888888;
+
+  /* Playfair Display (headings, serif) + Roboto (body/nav/meta) — Google
+     Fonts via index.html (the original bundles its own files; DO NOT copy
+     them). */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #222;
+  }
+  ::selection {
+    background: #8050fa;
+    color: #fff;
+  }
+}
