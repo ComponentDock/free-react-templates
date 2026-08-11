@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Voyagely
+   itself is a photo-hero form page (dark translucent panel over a photo). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Voyagely brand palette — recreated from the ColorLib "Colorlib Reg Form
+     V11" design (live demo:
+     https://colorlib.com/etc/regform/colorlib-regform-11/): gold #f8ba0f
+     (the "Book now" submit button) and its #ce9906 hover. */
+  --color-brand: #f8ba0f;
+
+  /* Brand hover — the source .submit:hover background (#ce9906). */
+  --color-brand-hover: #ce9906;
+
+  /* Panel — the dark translucent booking container
+     (rgba(11, 13, 24, 0.6)) over the hero photo. */
+  --color-panel: rgba(11, 13, 24, 0.6);
+
+  /* Ink — input text color (#222). */
+  --color-ink: #222;
+
+  /* Muted — input placeholders, the quantity value and the calendar /
+     stepper icons (#999). */
+  --color-muted: #999;
+
+  /* Original font: Poppins (weights 300–900) via Google Fonts. */
+  --font-sans:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
