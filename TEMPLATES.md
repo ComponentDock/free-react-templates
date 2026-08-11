@@ -321,7 +321,7 @@
 - [x] **Colorlib Booking 8** — [colorlib](https://colorlib.com/wp/template/colorlib-booking-8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-booking-8.jpg) · [dozely](https://free-react-templates-dozely.surge.sh)
 - [x] **Colorlib Booking 9** — [colorlib](https://colorlib.com/wp/template/colorlib-booking-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-booking-9.jpg) · [soarly](https://free-react-templates-soarly.surge.sh)
 - [x] **Colorlib Regform 11** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-11/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-11.jpg) · [voyagely](https://free-react-templates-voyagely.surge.sh)
-- [ ] **Colorlib Regform 25** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-25/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-25.jpg)
+- [~] **Colorlib Regform 25** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-25/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-25.jpg)
 
 ## Bootstrap (216)
 
