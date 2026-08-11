@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Montage brand palette — recreated from the ColorLib "Videomag" preview
+   (https://preview.colorlib.com/theme/videomag/) live DOM + style.css:
+   brand pink #FF1662 (top header, active nav, FEATURED tags, hover states),
+   hover #E10735, dark surfaces #282828 (navbar) + #312E2E (nav links),
+   footer #1F1C1C, hero background #EDF1F4, meta text #6A6A6A, borders
+   #DCDCDC, headings #000. Display font Montserrat (everything — the
+   reference uses Montserrat for body text too). */
+@theme {
+  --color-brand: #ff1662;
+  --color-brand-dark: #e10735;
+  --color-ink: #000000;
+  --color-coal: #282828;
+  --color-smoke: #312e2e;
+  --color-footer: #1f1c1c;
+  --color-mist: #edf1f4;
+  --color-body: #6a6a6a;
+  --color-mute: #a5a5a5;
+  --color-line: #dcdcdc;
+
+  /* Montserrat — Google Fonts via index.html (the original bundles its own
+     files; DO NOT copy them). */
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: #fff;
+  }
+}
