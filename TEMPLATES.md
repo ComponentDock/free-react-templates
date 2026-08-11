@@ -279,7 +279,7 @@
 - [x] **Personal Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/personal-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personal-website-templates.jpg) · [persona](https://free-react-templates-persona.surge.sh)
 - [x] **Philosophy** — [colorlib](https://colorlib.com/wp/template/philosophy/) · [sonder](https://free-react-templates-sonder.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/philosophy-free-lifestyle-blog-website-template.jpg)
 - [x] **Quitelight** — [colorlib](https://colorlib.com/wp/template/quitelight/) · [lantern](https://free-react-templates-lantern.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/quitelight-free-template.jpg)
-- [~] **Readit** — [colorlib](https://colorlib.com/wp/template/readit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/readit-free-template.jpg)
+- [x] **Readit** — [colorlib](https://colorlib.com/wp/template/readit/) · [vellum](https://free-react-templates-vellum.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/readit-free-template.jpg)
 - [ ] **Revive** — [colorlib](https://colorlib.com/wp/template/revive/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/revive-free-template-1.jpg)
 - [ ] **Ruft** — [colorlib](https://colorlib.com/wp/template/ruft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ruft-free-template.jpg)
 - [ ] **Sasha** — [colorlib](https://colorlib.com/wp/template/sasha/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sasha-free-template.jpg)
