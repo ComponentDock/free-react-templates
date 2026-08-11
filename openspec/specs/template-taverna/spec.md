@@ -1,5 +1,12 @@
 # Template: Taverna (Restaurant Website)
 
+> **SUPERSEDED (2026-08-12):** this prep duplicates ColorLib "Appetizer",
+> which shipped as **Palate** (`apps/palate`, PR #300, live at
+> https://free-react-templates-palate.surge.sh). All four TEMPLATES.md
+> Appetizer rows are marked `[x]` with the palate URL. DO NOT implement
+> Taverna — delete this spec folder + `docs/templates/taverna/` on the next
+> main-tree cleanup.
+
 ## Purpose
 
 Taverna is a single-page restaurant website template in the free-react-templates
