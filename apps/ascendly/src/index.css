@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the navbar toggle flips a `.dark` class. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Ascendly brand palette — recreated from the ColorLib "Arcwork" design
+     (live preview: https://preview.colorlib.com/theme/arcwork/). */
+  --color-brand: #3b4eda; /* indigo: headlines, logo, links, borders, dots */
+  --color-cream: #fff6da; /* warm cream: hero right half, feature cards, bands */
+  --color-muted: #6c7b95; /* muted blue-gray body text */
+  --color-ink: #212529; /* dark headings */
+  --color-tint: #f8f9fa; /* light section tint */
+
+  /* Map the shared ui Button/ButtonLink primary palette to the brand indigo. */
+  --color-primary-400: #6b7aeb;
+  --color-primary-500: #5565e3;
+  --color-primary-600: #3b4eda;
+  --color-primary-700: #3140c4;
+  --color-primary-800: #2935a3;
+
+  /* Original font via Google Fonts: Roboto everywhere. */
+  --font-sans:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
