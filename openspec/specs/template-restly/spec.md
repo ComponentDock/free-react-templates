@@ -201,8 +201,12 @@ color: #fff`. NO hover rule in the source CSS (unlike Wingly's opacity
 - **Recreation decisions:** Tailwind re-implementation of the Bootstrap-era
   grid (NO Bootstrap dependency); page is a bare single-section form page —
   repo-standard Navbar/Footer must NOT be added; the page background uses a
-  seeded picsum placeholder (`picsum.photos/seed/restly-1/1920/1080`; the
-  source `background.jpg` night-cityscape must not be copied) with
+  seeded picsum placeholder (`picsum.photos/seed/restly-metropolis/1920/1080`;
+  NOTE 2026-08-11: the prep-pinned seed `restly-1` was verified to render an
+  auditorium interior, not a cityscape — seed `restly-metropolis` (picsum
+  id/1078, a night high-rise facade densely lit with warm windows) is used
+  instead to match the source photo's night-cityscape subject; the source
+  `background.jpg` night-cityscape must not be copied) with
   `cover`/`center` and NO scrim (the translucent-white fields provide their
   own contrast — the photo stays fully visible between/around fields); date
   inputs are native `<input type="date">` styled with Tailwind (no
@@ -243,7 +247,7 @@ render any navbar, hero chrome, or footer (single-section form demo).
 - **WHEN** the page loads
 - **THEN** a section spanning the full viewport height SHALL be shown
 - **AND** the section SHALL use a full-bleed photograph
-  (`picsum.photos/seed/restly-1/1920/1080`) as its background,
+  (`picsum.photos/seed/restly-metropolis/1920/1080`) as its background,
   cover-positioned and centered
 - **AND** the content SHALL be vertically centered in the viewport
 - **AND** the page SHALL NOT contain a navigation bar, hero chrome, or a
@@ -432,8 +436,9 @@ fields on small screens, matching the source's Bootstrap `col-md-*` behavior.
 - [ ] `scripts/verify-app.sh restly` passes (typecheck + lint + vitest
       100% coverage + build)
 - [ ] Sections in order: full-viewport section with full-bleed cover/center
-      PHOTO page background (seeded picsum `restly-1/1920/1080`, NO scrim,
-      NO card — photo fully visible) → vertically centered `.booking-cta`
+      PHOTO page background (seeded picsum `restly-metropolis/1920/1080`,
+      NO scrim, NO card — photo fully visible) → vertically centered
+      `.booking-cta`
       h1 "Make Your Reservation" (Cantata One, white, 52px, centered, 30px
       bottom margin) → field grid row 1 (Destination 8/12 + Guests 2/12 +
       Children 2/12) → row 2 (Check In 4/12 + Check out 4/12 + "Check
@@ -452,9 +457,12 @@ fields on small screens, matching the source's Bootstrap `col-md-*` behavior.
 - [ ] Imprima + Cantata One via Google Fonts `<link>` in `index.html`
       (`family=Imprima&family=Cantata+One`); source's 600/700 weights are
       browser-synthesized (both fonts are single-weight)
-- [ ] Page background = seeded picsum (`restly-1/1920/1080`) cover/center
-      full-bleed WITHOUT a separate overlay scrim (source `background.jpg`
-      night cityscape not copied)
+- [ ] Page background = seeded picsum (`restly-metropolis/1920/1080`,
+      corrected 2026-08-11 — prep-pinned `restly-1` renders an auditorium
+      interior; `restly-metropolis` = picsum id/1078 night high-rise facade
+      with lit windows, matching the source night-cityscape subject)
+      cover/center full-bleed WITHOUT a separate overlay scrim (source
+      `background.jpg` night cityscape not copied)
 - [ ] Selects: Guests 1–3, Children 0–2 — `appearance: none` + FULL-HEIGHT
       arrow strip (24px wide × 80px tall, `rgba(255,255,255,0.3)` bg,
       rotated `➜`/ChevronDown, `#333`, 14px, pointer-events-none) at the

@@ -136,9 +136,10 @@
 - [ ] `index.html`: Imprima + Cantata One Google Fonts `<link>`
       (`family=Imprima&family=Cantata+One`), title "Restly — Hotel Booking
       Template"
-- [ ] Section: 100vh, picsum `restly-1/1920/1080` cover/center, content
-      vertically centered, NO navbar/footer/hero chrome, NO scrim, NO card
-      wrapper
+- [ ] Section: 100vh, picsum `restly-metropolis/1920/1080` cover/center
+      (seed corrected 2026-08-11: prep-pinned `restly-1` renders an
+      auditorium, not a cityscape), content vertically centered, NO
+      navbar/footer/hero chrome, NO scrim, NO card wrapper
 - [ ] Headline: centered h1 "Make Your Reservation" — Cantata One, white,
       52px, weight 700, 30px bottom margin
 - [ ] Grid: two rows — 8/2/2 (Destination + Guests + Children) and 4/4/4

@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Restly
+   itself is a light-translucent form over a night-cityscape photo. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Restly brand palette — recreated from the ColorLib "Colorlib Booking
+     Form V6" design (live demo:
+     https://colorlib.com/etc/bforms/colorlib-booking-6/): copper-brown
+     #8c5d28 is the ONLY accent color (inset field labels + "Check
+     availability" submit button background). */
+  --color-brand: #8c5d28;
+
+  /* Ink — the dark #333 value text of the translucent-white fields. */
+  --color-ink: #333;
+
+  /* Faded — placeholder + empty-date text (rgba(51, 51, 51, 0.3)). */
+  --color-faded: rgba(51, 51, 51, 0.3);
+
+  /* Field — the translucent-white field fill (rgba(255, 255, 255, 0.85));
+     the focused field transitions to Tailwind's solid white (bg-white). */
+  --color-field: rgba(255, 255, 255, 0.85);
+
+  /* Arrow — the full-height select arrow strip background
+     (rgba(255, 255, 255, 0.3)). */
+  --color-arrowbg: rgba(255, 255, 255, 0.3);
+
+  /* Original fonts: Imprima (section/base) + Cantata One (headline + field
+     text) — both single-weight families on Google Fonts (the source's
+     600/700 weights are browser-synthesized). */
+  --font-sans:
+    'Imprima', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Cantata One', Georgia, 'Times New Roman', serif;
+}
