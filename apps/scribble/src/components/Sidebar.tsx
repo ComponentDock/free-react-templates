@@ -8,25 +8,28 @@ import {
   siteDescription,
   siteName,
 } from '../data'
+import { Rail } from './Rail'
 
 interface SidebarProps {
   open: boolean
+  onToggle: () => void
 }
 
-/* Slide-in navigation panel mirroring the reference `#sidebar`
-   (`.menu-left-part` 320px #333333 on the dark 420px shell): search field,
-   site title + description, Home/About/Scroll/Contact nav, footer line.
-   Translated off-canvas when closed; the fixed rail (z-40) sits above its
-   right edge, matching the reference's 100px always-visible strip. */
-export function Sidebar({ open }: SidebarProps) {
+/* Slide-in navigation shell mirroring the reference `#sidebar`: a 420px
+   dark element (85vw on mobile) holding the 320px `.menu-left-part` panel
+   (search, site info, Home/About/Scroll/Contact nav, footer line) with the
+   `.menu-right-part` rail as its right 100px. Closed, the shell is
+   translated so only the rail is visible at the screen's left edge; open, it
+   slides fully in and the rail sits to the right of the panel. */
+export function Sidebar({ open, onToggle }: SidebarProps) {
   return (
     <div
       className={cn(
-        'sidebar fixed inset-y-0 left-0 z-30 w-[85vw] max-w-[420px] bg-charcoal transition-transform duration-300 ease-out',
-        open ? 'translate-x-0' : '-translate-x-full',
+        'sidebar fixed inset-y-0 left-0 z-30 flex w-[85vw] max-w-[420px] bg-charcoal transition-transform duration-300 ease-out',
+        open ? 'translate-x-0' : '-translate-x-[calc(100%_-_4rem)] md:-translate-x-[320px]',
       )}
     >
-      <div className="flex h-full w-full flex-col bg-coal md:w-[320px]">
+      <div className="flex h-full min-w-0 flex-1 flex-col bg-coal md:w-[320px] md:flex-none">
         <label htmlFor="site-search" className="sr-only">
           {searchLabel}
         </label>
@@ -63,6 +66,7 @@ export function Sidebar({ open }: SidebarProps) {
           <p>{footerCopyright}</p>
         </footer>
       </div>
+      <Rail open={open} onToggle={onToggle} />
     </div>
   )
 }

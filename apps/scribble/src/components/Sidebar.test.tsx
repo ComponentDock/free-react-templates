@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest'
 import { Sidebar } from './Sidebar'
 import {
   footerCopyright,
+  menuOpenLabel,
   navItems,
   navLabel,
   searchLabel,
@@ -12,8 +13,8 @@ import {
 } from '../data'
 
 describe('Sidebar', () => {
-  it('renders the search field, site info, nav, and footer attribution', () => {
-    render(<Sidebar open={false} />)
+  it('renders the search field, site info, nav, footer, and rail toggle', () => {
+    render(<Sidebar open={false} onToggle={() => {}} />)
 
     expect(screen.getByLabelText(searchLabel)).toHaveAttribute('placeholder', searchPlaceholder)
     expect(screen.getByRole('heading', { level: 1, name: siteName })).toBeInTheDocument()
@@ -22,23 +23,26 @@ describe('Sidebar', () => {
       expect(screen.getByRole('link', { name: item.label })).toBeInTheDocument()
     }
     expect(screen.getByText(footerCopyright)).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: menuOpenLabel })).toBeInTheDocument()
   })
 
   it('names the navigation landmark', () => {
-    render(<Sidebar open={false} />)
+    render(<Sidebar open={false} onToggle={() => {}} />)
 
     expect(screen.getByRole('navigation', { name: navLabel })).toBeInTheDocument()
   })
 
-  it('slides off-canvas when closed and in when open', () => {
-    const { container, rerender } = render(<Sidebar open={false} />)
-    const panel = container.querySelector('.sidebar')
+  it('keeps the rail visible when closed and slides the panel in when open', () => {
+    const { container, rerender } = render(<Sidebar open={false} onToggle={() => {}} />)
+    const shell = container.querySelector('.sidebar')
 
-    expect(panel).toHaveClass('-translate-x-full')
+    // Closed: translated so only the rail (right 100px of the shell) shows.
+    expect(shell?.className).toContain('-translate-x-[calc(100%_-_4rem)]')
+    expect(shell?.className).toContain('md:-translate-x-[320px]')
 
-    rerender(<Sidebar open />)
+    rerender(<Sidebar open onToggle={() => {}} />)
 
-    expect(panel).toHaveClass('translate-x-0')
-    expect(panel).not.toHaveClass('-translate-x-full')
+    expect(shell?.className).toContain('translate-x-0')
+    expect(shell?.className).not.toContain('-translate-x-[calc(100%_-_4rem)]')
   })
 })

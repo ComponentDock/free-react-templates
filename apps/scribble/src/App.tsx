@@ -3,7 +3,6 @@ import { cn } from '@free-react-templates/ui'
 import { documentTitle, skipLabel } from './data'
 import { BlogList } from './components/BlogList'
 import { FeaturedImage } from './components/FeaturedImage'
-import { Rail } from './components/Rail'
 import { Sidebar } from './components/Sidebar'
 
 export function App() {
@@ -21,8 +20,7 @@ export function App() {
       >
         {skipLabel}
       </a>
-      <Rail open={menuOpen} onToggle={() => setMenuOpen((open) => !open)} />
-      <Sidebar open={menuOpen} />
+      <Sidebar open={menuOpen} onToggle={() => setMenuOpen((open) => !open)} />
       <main
         id="main"
         className={cn(

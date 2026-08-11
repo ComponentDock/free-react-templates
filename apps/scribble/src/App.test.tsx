@@ -36,6 +36,8 @@ describe('App', () => {
     expect(container.querySelector('.sidebar')).toHaveClass('translate-x-0')
 
     await user.click(screen.getByRole('button', { name: menuCloseLabel }))
-    expect(container.querySelector('.sidebar')).toHaveClass('-translate-x-full')
+    expect(container.querySelector('.sidebar')?.className).toContain(
+      '-translate-x-[calc(100%_-_4rem)]',
+    )
   })
 })

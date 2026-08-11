@@ -8,12 +8,14 @@ interface RailProps {
   onToggle: () => void
 }
 
-/* Fixed left rail (100px on desktop, 64px on mobile) mirroring the reference
-   `.menu-right-part`: teal logo mark, hamburger toggle, vertical social stack,
-   scroll-to-top caret. */
+/* Left rail — the always-visible right part of the 420px sidebar shell
+   (reference `.menu-right-part`): teal logo mark, hamburger toggle, vertical
+   social stack, scroll-to-top caret. It lives INSIDE the sliding sidebar
+   element so it lands at the screen's left edge when the panel is closed and
+   sits to the right of the opened panel, exactly like the reference. */
 export function Rail({ open, onToggle }: RailProps) {
   return (
-    <div className="fixed inset-y-0 left-0 z-40 flex w-16 flex-col items-center justify-between bg-charcoal py-6 md:w-[100px]">
+    <div className="flex w-16 flex-col items-center justify-between bg-charcoal py-6 md:w-[100px]">
       <a
         href="#"
         aria-label={logoLabel}
