@@ -333,7 +333,7 @@
 - [x] **Apart** — [colorlib](https://colorlib.com/wp/template/apart/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apart-free-template.jpg) · [dwell](https://free-react-templates-dwell.surge.sh)
 - [x] **Appetizer** — [colorlib](https://colorlib.com/wp/template/appetizer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appetizer-free-template.jpg) · [palate](https://free-react-templates-palate.surge.sh)
 - [x] **Appli** — [colorlib](https://colorlib.com/wp/template/appli/) · [appli](https://free-react-templates-appli.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appli-free-template.jpg)
-- [ ] **Approach** — [colorlib](https://colorlib.com/wp/template/approach/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/approach-free-template.jpg)
+- [~] **Approach** — [colorlib](https://colorlib.com/wp/template/approach/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/approach-free-template.jpg)
 - [ ] **Appru** — [colorlib](https://colorlib.com/wp/template/appru/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appru-free-template.jpg)
 - [x] **Appy** — [colorlib](https://colorlib.com/wp/template/appy/) · [appy](https://free-react-templates-appy.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appy-free-template.jpg)
 - [ ] **Aranoz** — [colorlib](https://colorlib.com/wp/template/aranoz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aranoz-free-template.jpg)
@@ -883,7 +883,7 @@
 - [ ] **Alazea** — [colorlib](https://colorlib.com/wp/template/alazea/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alazea-free-template.jpg)
 - [x] **Apart** — [colorlib](https://colorlib.com/wp/template/apart/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apart-free-template.jpg) · [dwell](https://free-react-templates-dwell.surge.sh)
 - [x] **Appetizer** — [colorlib](https://colorlib.com/wp/template/appetizer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appetizer-free-template.jpg) · [palate](https://free-react-templates-palate.surge.sh)
-- [ ] **Approach** — [colorlib](https://colorlib.com/wp/template/approach/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/approach-free-template.jpg)
+- [~] **Approach** — [colorlib](https://colorlib.com/wp/template/approach/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/approach-free-template.jpg)
 - [x] **Appy** — [colorlib](https://colorlib.com/wp/template/appy/) · [appy](https://free-react-templates-appy.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appy-free-template.jpg)
 - [ ] **Aranoz** — [colorlib](https://colorlib.com/wp/template/aranoz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aranoz-free-template.jpg)
 - [x] **Ararat** — [colorlib](https://colorlib.com/wp/template/ararat/) · [Atrium](https://free-react-templates-atrium.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ararat-free-template.jpg)
@@ -1956,7 +1956,7 @@
 
 ## Interior Design (29)
 
-- [ ] **Approach** — [colorlib](https://colorlib.com/wp/template/approach/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/approach-free-template.jpg)
+- [~] **Approach** — [colorlib](https://colorlib.com/wp/template/approach/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/approach-free-template.jpg)
 - [x] **Archi** — [colorlib](https://colorlib.com/wp/template/archi/) · [Keystone](https://free-react-templates-keystone.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archi-free-template.jpg)
 - [ ] **Archirio** — [colorlib](https://colorlib.com/wp/template/archirio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archirio-free-template.jpg)
 - [ ] **Archs** — [colorlib](https://colorlib.com/wp/template/archs/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archs-free-template.jpg)
