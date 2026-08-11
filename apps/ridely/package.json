@@ -28,5 +28,6 @@
     "typescript": "latest",
     "vite": "latest",
     "vitest": "latest"
-  }
+  },
+  "homepage": "https://free-react-templates-ridely.surge.sh"
 }
