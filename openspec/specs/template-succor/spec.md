@@ -157,7 +157,10 @@ class="position">` "Businessman".
 - **Placeholder images (never copy ColorLib assets):** hero →
   `https://picsum.photos/seed/succor-hero/1920/1080` (B&W treatment
   optional via CSS `grayscale`), volunteer →
-  `https://picsum.photos/seed/succor-volunteer/1200/900`, causes 1–5 →
+  `https://picsum.photos/seed/succor-nature/1200/900` (screened 2026-08-11:
+  the original `succor-volunteer` seed resolved to a coffee scene and was
+  rejected; `succor-nature` is a bright boardwalk that sits well behind the
+  white text block), causes 1–5 →
   `https://picsum.photos/seed/succor-cause-<n>/400/400` (circle), testimonial
   side → `https://picsum.photos/seed/succor-story/800/900`, avatar →
   `https://picsum.photos/seed/succor-person/160/160`.
@@ -379,7 +382,7 @@ widgets stacked, and section padding reduced to 6em.
       `#f8f9fa` (services bg); radii 3px buttons / 50% circles
 - [ ] Font: Nunito Sans 200–900 via Google Fonts `<link>` in `index.html`,
       title "Succor — Charity & Nonprofit Template"
-- [ ] All imagery via picsum seeds (succor-hero / -volunteer / -cause-1..5
+- [ ] All imagery via picsum seeds (succor-hero / -nature / -cause-1..5
       / -story / -person) — NEVER copy ColorLib images; icons from
       `lucide-react` (brand social icons as inline SVG)
 - [ ] Interactions: mobile nav toggle (`aria-expanded`), animated donation

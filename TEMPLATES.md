@@ -326,7 +326,7 @@
 ## Bootstrap (216)
 
 - [x] **Academy** — [colorlib](https://colorlib.com/wp/template/academy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academy-free-template.jpg) · [campus](https://free-react-templates-campus.surge.sh)
-- [~] **Aid** — [colorlib](https://colorlib.com/wp/template/aid/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aid-free-template.jpg)
+- [x] **Aid** — [colorlib](https://colorlib.com/wp/template/aid/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aid-free-template.jpg) · [succor](https://free-react-templates-succor.surge.sh)
 - [ ] **Allfood** — [colorlib](https://colorlib.com/wp/template/allfood/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/allfood-free-template.jpg)
 - [ ] **Amor** — [colorlib](https://colorlib.com/wp/template/amor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amor-free-template.jpg)
 - [x] **Andrea** — [colorlib](https://colorlib.com/wp/template/andrea/) · [memoir](https://free-react-templates-memoir.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/andrea-free-template.jpg)
@@ -1245,7 +1245,7 @@
 ## Charity (37)
 
 - [ ] **Adopted** — [colorlib](https://colorlib.com/wp/template/adopted/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/adopted-free-template.jpg)
-- [ ] **Aid** — [colorlib](https://colorlib.com/wp/template/aid/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aid-free-template.jpg)
+- [x] **Aid** — [colorlib](https://colorlib.com/wp/template/aid/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aid-free-template.jpg) · [succor](https://free-react-templates-succor.surge.sh)
 - [ ] **Amor** — [colorlib](https://colorlib.com/wp/template/amor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amor-free-template.jpg)
 - [ ] **Aspiration** — [colorlib](https://colorlib.com/wp/template/aspiration/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aspiration-free-template.jpg)
 - [ ] **Bcharity** — [colorlib](https://colorlib.com/wp/template/bcharity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bcharity-free-template.jpg)
