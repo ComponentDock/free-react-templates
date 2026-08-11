@@ -294,7 +294,7 @@
 - [x] **Webmag** — [colorlib](https://colorlib.com/wp/template/webmag/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webmag-free-template.jpg) · [newsstand](https://free-react-templates-newsstand.surge.sh)
 - [x] **Wordify** — [colorlib](https://colorlib.com/wp/template/wordify/) · [typeface](https://free-react-templates-typeface.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordify-free-template.jpg)
 - [x] **Wordsmith** — [colorlib](https://colorlib.com/wp/template/wordsmith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordsmith-free-template.jpg) · [parchment](https://free-react-templates-parchment.surge.sh)
-- [~] **World** — [colorlib](https://colorlib.com/wp/template/world/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/world-free-template-1.jpg)
+- [x] **World** — [colorlib](https://colorlib.com/wp/template/world/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/world-free-template-1.jpg) · [atlas](https://free-react-templates-atlas.surge.sh)
 - [ ] **Yummy** — [colorlib](https://colorlib.com/wp/template/yummy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-minimal-food-blog-website-template.jpg)
 - [ ] **Yummy 2** — [colorlib](https://colorlib.com/wp/template/yummy-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-free-template.jpg)
 
@@ -535,7 +535,7 @@
 - [ ] **Wordpress Business Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-business-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-business-themes1.jpg)
 - [ ] **Wordpress Dentist Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-dentist-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-wordpress-themes-1.jpg)
 - [ ] **Workout** — [colorlib](https://colorlib.com/wp/template/workout/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workout-free-template.jpg)
-- [ ] **World** — [colorlib](https://colorlib.com/wp/template/world/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/world-free-template-1.jpg)
+- [x] **World** — [colorlib](https://colorlib.com/wp/template/world/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/world-free-template-1.jpg) · [atlas](https://free-react-templates-atlas.surge.sh)
 - [ ] **Xgym** — [colorlib](https://colorlib.com/wp/template/xgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/xgym-free-template.jpg)
 - [ ] **Yaseen** — [colorlib](https://colorlib.com/wp/template/yaseen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yaseen-creative-photography-website-landing-page-template.jpg)
 - [ ] **Yoga** — [colorlib](https://colorlib.com/wp/template/yoga/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yoga-free-template.jpg)
@@ -2219,7 +2219,7 @@
 - [ ] **Viral** — [colorlib](https://colorlib.com/wp/template/viral/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/viralstory-free-template.jpg)
 - [x] **Vizew** — [colorlib](https://colorlib.com/wp/template/vizew/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vizew-free-template.jpg) · [newsline](https://free-react-templates-newsline.surge.sh)
 - [x] **Webmag** — [colorlib](https://colorlib.com/wp/template/webmag/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webmag-free-template.jpg) · [newsstand](https://free-react-templates-newsstand.surge.sh)
-- [ ] **World** — [colorlib](https://colorlib.com/wp/template/world/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/world-free-template-1.jpg)
+- [x] **World** — [colorlib](https://colorlib.com/wp/template/world/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/world-free-template-1.jpg) · [atlas](https://free-react-templates-atlas.surge.sh)
 
 ## Medical (32)
 
