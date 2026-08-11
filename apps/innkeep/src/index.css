@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Innkeep
+   itself is a light one-section form page. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Innkeep brand palette — recreated from the ColorLib "Colorlib Regform 25"
+     design (live demo: https://colorlib.com/etc/regform/colorlib-regform-25/):
+     blue #3e91f7 (the "FIND A ROOM" heading + "BOOK ROOM" button bg). */
+  --color-brand: #3e91f7;
+
+  /* Brand hover — the source button:hover background (#0072fd). */
+  --color-brand-hover: #0072fd;
+
+  /* Label — field label text (#4c4c4c, Muli-SemiBold). */
+  --color-label: #4c4c4c;
+
+  /* Ink — input text + calendar/chevron icons (#666). */
+  --color-ink: #666;
+
+  /* Border — 1px input borders (#e6e6e6). */
+  --color-border: #e6e6e6;
+
+  /* Check — custom checkbox checkmark bg (#ebebeb). */
+  --color-check: #ebebeb;
+
+  /* Check-edge — checkbox border (#ccc). */
+  --color-check-edge: #ccc;
+
+  /* Check-glyph — checkbox check glyph (#333). */
+  --color-check-glyph: #333;
+
+  /* Original fonts: Poppins (body/heading) + Muli (inputs/labels/button) via
+     Google Fonts. */
+  --font-sans:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-muli:
+    'Muli', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial,
+    sans-serif;
+}
