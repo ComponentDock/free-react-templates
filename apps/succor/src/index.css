@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Succor
+   itself is a light charity landing page. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Succor brand palette — recreated from the ColorLib "Aid" design (live
+     preview: https://preview.colorlib.com/theme/aid/): golden yellow
+     #ffb400 (navbar dot, link hover, "Join now" button, active service
+     card). */
+  --color-brand: #ffb400;
+
+  /* Ink — black buttons ("How Can I Help", "Donate now"), play icon box. */
+  --color-ink: #000000;
+
+  /* Coal — near-black donation panel + footer background (#1e1e1e). */
+  --color-coal: #1e1e1e;
+
+  /* Violet — testimonial section background (#6b76ff). */
+  --color-violet: #6b76ff;
+
+  /* Slate — testimonial overlay (#232931 at 70% opacity). */
+  --color-slate: #232931;
+
+  /* Mist — services band background (Bootstrap bg-light #f8f9fa). */
+  --color-mist: #f8f9fa;
+
+  /* Soft-white — hero subtext / testimonial quotes rgba(255,255,255,0.8). */
+  --color-soft-white: rgba(255, 255, 255, 0.8);
+
+  /* Original font: Nunito Sans (weights 200–900) via Google Fonts. */
+  --font-sans:
+    'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial,
+    sans-serif;
+}
