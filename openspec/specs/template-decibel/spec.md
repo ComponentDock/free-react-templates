@@ -247,6 +247,14 @@ height: calc(100vh)`; card columns 3-up (col-lg-3 shows / col-lg-4
     (single-page recreation of the demo); fix source repetitions (3 retro
     cards identical → distinct; 5 testimonials identical → distinct; 3 news
     posts identical → distinct; vary DJ roles).
+- **Hero photo deviation (2026-08-12):** picsum seed screening (~20
+  seeds, pixel metrics + browser verification) found NO music/DJ subject
+  in picsum's library — descriptive seeds (decibel-hero, decibel-dj,
+  decibel-vinyl, decibel-console, …) rendered a forest, a bicycle, a
+  sea-cave coast, Yosemite, etc. Pinned the verified dark-moody ocean
+  `https://picsum.photos/id/1041/1600/900` (dark, monochromatic, fits
+  the electronic-music aesthetic; white headline stays readable under
+  the `rgba(0,0,0,0.4)` overlay) — still picsum, no ColorLib assets.
 
 Decibel lives in `apps/decibel` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, cn).
