@@ -11,7 +11,7 @@ describe('NewProduct', () => {
     expect(screen.getAllByRole('img')).toHaveLength(8)
 
     expect(screen.getByText('NEW')).toBeInTheDocument()
-    expect(screen.getByText('SALE')).toBeInTheDocument()
+    expect(screen.getAllByText('SALE')).toHaveLength(3)
     expect(screen.getByText('OUT OF STOCK')).toBeInTheDocument()
   })
 })

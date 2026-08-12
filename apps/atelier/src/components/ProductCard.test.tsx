@@ -28,6 +28,6 @@ describe('ProductCard', () => {
     expect(screen.getByText('OUT OF STOCK')).toBeInTheDocument()
     expect(screen.getAllByText('$19.00')).toHaveLength(1)
     expect(container.querySelectorAll('.line-through')).toHaveLength(1)
-    expect(screen.getByLabelText('4 out of 5 stars')).toBeInTheDocument()
+    expect(screen.getAllByLabelText('4 out of 5 stars')).toHaveLength(3)
   })
 })
