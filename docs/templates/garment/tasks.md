@@ -68,8 +68,11 @@
 - **Recreation name:** Garment (NEW — differs from ColorLib "Essence"). App
   folder `apps/garment`, package `@free-react-templates/garment`. Surge
   subdomain `free-react-templates-garment.surge.sh`.
-- **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/garment-<n>/<w>/<h>`); lucide-react icons (Heart,
+- **Recreation approach:** verified picsum photo refs for the subject-critical
+  slots (screened: arbitrary seeds render random scenes — hero
+  `picsum.photos/id/64/1600/600`, CTA `id/65/1600/700`, categories
+  `id/338|1005|838` 600x480, products `id/64|65|338|838` 400x500); lucide-react
+  icons (Heart,
   User, ShoppingBag, Search, ArrowRight; social icons as inline SVG);
   Poppins + Ubuntu via Google Fonts `<link>`; dark-mode toggle per
   conventions; no assets copied.

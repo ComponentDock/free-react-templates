@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Garment brand palette — recreated from the reference design
+     (royal blue #0315ff CTAs, red #dc0345 sale accents, #252525 footer). */
+  --color-brand: #0315ff;
+  --color-accent: #dc0345;
+  --color-ink: #000000;
+  --color-muted: #787878;
+  --color-footer: #252525;
+  --color-cloud: #f5f7f9;
+  --color-line: #ebebeb;
+
+  /* Poppins (body) + Ubuntu (headings) — the reference typefaces
+     (Google Fonts via index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Ubuntu', ui-sans-serif, system-ui, sans-serif;
+}

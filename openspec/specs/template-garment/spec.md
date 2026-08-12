@@ -59,8 +59,14 @@ CSS 4 + TypeScript.
     `rgba(255,255,255,0.6)` hover `#ffffff`; social icons white.
   - Header meta: 90px-wide icon columns, 1px `#ebebeb` left border; search
     input 200×85px white (170×40 responsive), `#787878` text.
-- **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/garment-<n>/<w>/<h>`); icons → lucide-react (brand/
+- **Recreation decisions:** photos → verified picsum photo refs
+  (subject-screened per the seed-screening method — arbitrary `garment-<n>`
+  seeds render random scenes, so the subject-critical slots use photos
+  verified to be fashion/lifestyle-appropriate: hero
+  `picsum.photos/id/64/1600/600` (woman in white top), CTA banner
+  `picsum.photos/id/65/1600/700` (golden-field lifestyle), categories
+  `id/338`, `id/1005`, `id/838` at 600x480, products `id/64|65|338|838` at
+  400x500, cart thumbs `id/64/100/120`); icons → lucide-react (brand/
   social icons as inline SVG per repo rule — lucide-react has no brand
   icons); Poppins + Ubuntu via Google Fonts `<link>`; no assets copied.
   Copy text paraphrased but same content kinds (product names, prices,
@@ -214,17 +220,18 @@ social icons, and a copyright line.
       (Aurora), package renamed to `@free-react-templates/garment`
 - [ ] TDD: tests written first (red), then implementation (green)
 - [ ] 100% coverage lines/functions/branches/statements (`npm run
-    test:coverage -- --project apps/garment` or `scripts/verify-app.sh
-    garment`)
+  test:coverage -- --project apps/garment` or `scripts/verify-app.sh
+  garment`)
 - [ ] Brand blue `#0315ff` + accent red `#dc0345` in `@theme`; Poppins
       (body) + Ubuntu (headings) via Google Fonts link
 - [ ] Square buttons (`border-radius: 0`, min-width 170px, uppercase,
       letter-spacing 1.5px) matching `.essence-btn`
 - [ ] Section order matches the original 1:1 (see Design reference)
-- [ ] Placeholder images via `picsum.photos/seed/garment-<n>/<w>/<h>`; no
-      assets copied; brand icons as inline SVG
+- [ ] Placeholder images via verified picsum photo refs (see Recreation
+      decisions — subject-screened fashion/lifestyle photos, no assets
+      copied); brand icons as inline SVG
 - [ ] PR description: source template, preview URL, design tokens, what
       differs
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` for BOTH Essence rows + Surge
       URL (`free-react-templates-garment.surge.sh`) + homepage + `npm run
-    readme:status`
+  readme:status`
