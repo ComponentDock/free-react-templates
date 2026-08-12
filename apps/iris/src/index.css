@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Iris design tokens — recreated from the source preview CSS
+     (no assets copied):
+     - brand #fa333f: primary CTA fill, nav hover/active, newsletter
+       submit, footer credit + social hover, feature-button hover.
+     - ink #222222: headings, light-button text, Instagram button text.
+     - body #777777: paragraphs and muted copy (Roboto 14px/24px).
+     - light #f9f9ff: service text panels, feedback panel, light buttons.
+     - line #eeeeee: light-button border.
+     - navy #1e233b: newsletter email input border.
+     - muted #cccccc: newsletter input text + social icon idle color.
+     - night #000000: hero band, footer, fixed navbar backgrounds. */
+  --color-brand: #fa333f;
+  --color-ink: #222222;
+  --color-body: #777777;
+  --color-light: #f9f9ff;
+  --color-line: #eeeeee;
+  --color-navy: #1e233b;
+  --color-muted: #cccccc;
+  --color-night: #000000;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'PT Serif', Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--color-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-serif);
+    color: var(--color-ink);
+    font-weight: 700;
+    line-height: 1.3;
+  }
+}
