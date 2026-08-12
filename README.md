@@ -69,7 +69,7 @@ verification gates, self-review). Supporting docs:
 | [`docs/self-review.md`](docs/self-review.md)   | Change-impact analysis + self-review checklists                          |
 | [`docs/adr/`](docs/adr/)                       | Architecture decision records                                            |
 | [`skills/`](skills/README.md)                  | The agent skill library (version-controlled, incl. template replication) |
-| [`CRONJOB.md`](CRONJOB.md)                     | The hourly scheduled jobs driving this repo                              |
+| [`CRONJOB.md`](https://github.com/ComponentDock/hermes-agent-vpn) | The scheduled jobs driving this repo (moved to the hermes-agent-vpn repo) |
 
 > **Model note:** development agents working on this repo run on
 > `opencode-go/deepseek-v4-flash` (via Hermes Agent, opencode-go provider).
