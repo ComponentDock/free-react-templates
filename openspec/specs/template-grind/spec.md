@@ -1,5 +1,10 @@
 # Template: Grind (Gym / Fitness Template)
 
+> **SUPERSEDED** — this ColorLib source (Flawless) already shipped as
+> **Sculpt** (PR #358, https://sculpt.free.componentdock.com, merged
+> 2026-08-13). Do not implement — delete on next cleanup. (Dup-prep: the
+> prep stream prepped this spec while the Sculpt claim was in flight.)
+
 ## Purpose
 
 Grind is a single-page gym/fitness website template in the free-react-templates
