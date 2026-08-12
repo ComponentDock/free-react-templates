@@ -1,5 +1,11 @@
 # Template: Convene (Event / Conference Template)
 
+> **SUPERSEDED** — ColorLib "Eventure" already shipped as **rally**
+> (apps/rally, PR #347, live at https://rally.free.componentdock.com,
+> TEMPLATES.md lines 389/1681 marked `[x]`). Do NOT implement this spec —
+> delete on next cleanup. (Annotated 2026-08-13 by stream 2 implementer after
+> the Rally run detected the dup-prep via source-slug scan.)
+
 ## Purpose
 
 Convene is a single-page conference & business-event template in the
@@ -393,4 +399,4 @@ copyright bar linking Component Dock.
       replaced, paraphrased pricing copy)
 - [ ] After merge: mark TEMPLATES.md lines 389 AND 1681 `[x]` with surge
       URL `https://convene.free.componentdock.com`, run `npm run
-    readme:status`, push
+  readme:status`, push
