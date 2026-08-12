@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Benefact design tokens — recreated from the source preview stylesheets
+     (no assets copied):
+     - brand green #00a651: top bar, buttons, badges, date badge,
+       progress fills, link hovers.
+     - dark slate #21323b: navbar background.
+     - body/heading text #364d59 (weight 300).
+     - danger red #dc3545: School badge + first cause progress fill.
+     - warning yellow #ffc107: Livelihood badge + third cause fill.
+     - light gray #f6f5f5: CTA strip background.
+     - footer gray #c9ccd4: footer background.
+     - fonts: Roboto (body + headings), Mansalva (handwritten display). */
+  --color-primary: #00a651;
+  --color-primary-500: #00a651;
+  --color-primary-600: #00a651;
+  --color-primary-700: #008f45;
+  --color-secondary: #21323b;
+  --color-ink: #364d59;
+  --color-danger: #dc3545;
+  --color-warning: #ffc107;
+  --color-mist: #f6f5f5;
+  --color-footer: #c9ccd4;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Mansalva', cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-ink);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--color-ink);
+  }
+}
