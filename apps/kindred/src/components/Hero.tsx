@@ -5,7 +5,7 @@ export function Hero() {
     <section
       id="home"
       className="relative flex min-h-[90vh] items-center justify-center overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: 'url(https://picsum.photos/seed/kindred-hero/1920/1080)' }}
+      style={{ backgroundImage: 'url(https://picsum.photos/id/64/1920/1080)' }}
     >
       <div
         data-testid="hero-blue-band"

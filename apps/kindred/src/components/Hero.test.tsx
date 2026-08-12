@@ -11,7 +11,7 @@ describe('Hero', () => {
     expect(screen.getByRole('button', { name: 'Watch intro video' })).toBeInTheDocument()
     expect(container.querySelector('section')).toHaveAttribute(
       'style',
-      expect.stringContaining('kindred-hero/1920/1080'),
+      expect.stringContaining('id/64/1920/1080'),
     )
   })
 
