@@ -371,7 +371,7 @@
 - [x] **Crypto Currency** — [colorlib](https://colorlib.com/wp/template/crypto-currency/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cryptocurrency-free-template.jpg) · [coinly](https://coinly.free.componentdock.com)
 - [x] **Daren** — [colorlib](https://colorlib.com/wp/template/daren/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/daren-free-template.jpg) · [ledger](https://ledger.free.componentdock.com)
 - [x] **Deejee** — [colorlib](https://colorlib.com/wp/template/deejee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/deejee-free-template.jpg) · [decibel](https://decibel.free.componentdock.com)
-- [ ] **Dentista** — [colorlib](https://colorlib.com/wp/template/dentista/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentista-free-template.jpg)
+- [~] **Dentista** — [colorlib](https://colorlib.com/wp/template/dentista/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentista-free-template.jpg)
 - [ ] **Djoz** — [colorlib](https://colorlib.com/wp/template/djoz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/djoz-free-template.jpg)
 - [ ] **Docmed** — [colorlib](https://colorlib.com/wp/template/docmed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/docmed-free-template.jpg)
 - [ ] **Dreams** — [colorlib](https://colorlib.com/wp/template/dreams/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dreams-free-template.jpg)
