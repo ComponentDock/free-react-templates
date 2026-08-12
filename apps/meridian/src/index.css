@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Meridian brand palette — consulting theme:
+     teal-green #1fab89 (accents + footer), charcoal #343a40 (dark
+     testimonial band), slate #6c7b95 (body copy), light-gray #d1d1d1
+     (service icons). */
+  --color-brand: #1fab89;
+  --color-ink: #6c7b95;
+  --color-charcoal: #343a40;
+  --color-icon: #d1d1d1;
+
+  /* Poppins (headings/nav) + Source Serif Pro 300 (body) via Google Fonts
+     <link> in index.html. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Source Serif Pro', ui-serif, Georgia, serif;
+}
+
+/* Green uppercase eyebrow label (13px/700, letter-spacing .2rem). */
+@utility eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #1fab89;
+}
