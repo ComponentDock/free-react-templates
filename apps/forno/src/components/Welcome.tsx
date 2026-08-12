@@ -1,3 +1,9 @@
+/**
+ * Welcome — two-column about block (source `.ftco-wrap-about`): restaurant
+ * photo left, script "About" subheading + "Forno Restaurant" heading + two
+ * welcome paragraphs right, plus an opening-hours badge with weekday hours
+ * and a phone number.
+ */
 export function Welcome() {
   return (
     <section id="about" className="bg-white py-20 lg:py-28">
@@ -5,14 +11,14 @@ export function Welcome() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative">
             <img
-              src="https://picsum.photos/seed/forno-4/800/600"
+              src="https://picsum.photos/id/425/800/1000"
               alt="Inside the Forno dining room"
               loading="lazy"
               className="h-96 w-full rounded-md object-cover shadow-lg lg:h-[30rem]"
             />
             <div className="absolute -bottom-6 -right-4 hidden rounded-md bg-primary-500 px-6 py-4 text-white shadow-lg md:block">
-              <p className="font-script text-3xl leading-none">Since 1998</p>
-              <p className="mt-1 text-xs uppercase tracking-wider">Fine dining &amp; catering</p>
+              <p className="text-sm font-semibold">Mon - Fri 8 AM - 11 PM</p>
+              <p className="mt-1 text-xs uppercase tracking-wider">+ 1-978-123-4567</p>
             </div>
           </div>
 
@@ -33,13 +39,6 @@ export function Welcome() {
             </p>
             <p className="mt-6 font-script text-4xl text-gray-800">Forno</p>
           </div>
-        </div>
-
-        <div className="mt-20 text-center">
-          <span className="font-script text-4xl text-primary-500">Delicious Specialties</span>
-          <h3 className="mt-2 text-2xl font-semibold uppercase tracking-wide text-gray-900">
-            Catering Services
-          </h3>
         </div>
       </div>
     </section>

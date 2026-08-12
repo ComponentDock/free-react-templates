@@ -74,7 +74,7 @@ export function Reservation() {
   return (
     <section id="reservation" className="relative overflow-hidden py-20 lg:py-28">
       <img
-        src="https://picsum.photos/seed/forno-16/1920/800"
+        src="https://picsum.photos/id/1080/1920/800"
         alt=""
         aria-hidden="true"
         loading="lazy"

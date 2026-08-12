@@ -34,4 +34,21 @@ describe('App', () => {
       'https://www.componentdock.com/',
     )
   })
+
+  it('renders the featured dish strip between the hero and the welcome', () => {
+    const { container } = render(<App />)
+
+    const hero = container.querySelector('#home')
+    const featured = container.querySelector('[aria-label="Featured dishes"]')
+    const about = container.querySelector('#about')
+
+    expect(hero).not.toBeNull()
+    expect(featured).not.toBeNull()
+    expect(about).not.toBeNull()
+
+    expect(hero!.compareDocumentPosition(featured!) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
+    expect(
+      featured!.compareDocumentPosition(about!) & Node.DOCUMENT_POSITION_FOLLOWING,
+    ).toBeTruthy()
+  })
 })

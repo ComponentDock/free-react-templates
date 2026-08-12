@@ -3,9 +3,9 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { cn } from '@free-react-templates/ui'
 
 const slides = [
-  { heading: 'Best Restaurant', image: 'https://picsum.photos/seed/forno-1/1920/1080' },
-  { heading: 'Nutritious & Tasty', image: 'https://picsum.photos/seed/forno-2/1920/1080' },
-  { heading: 'Delicious Specialties', image: 'https://picsum.photos/seed/forno-3/1920/1080' },
+  { heading: 'Best Restaurant', image: 'https://picsum.photos/id/292/1920/1080' },
+  { heading: 'Nutritious & Tasty', image: 'https://picsum.photos/id/431/1920/1080' },
+  { heading: 'Delicious Specialties', image: 'https://picsum.photos/id/1080/1920/1080' },
 ] as const
 
 const AUTOPLAY_MS = 6000

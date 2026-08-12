@@ -24,11 +24,22 @@ const services = [
   },
 ] as const
 
+/**
+ * Services — light band with script "Services" subheading, "Catering
+ * Services" heading and four icon cards (source `.ftco-section.bg-light`).
+ */
 export function Services() {
   return (
-    <section id="services" className="bg-white pb-20 lg:pb-28">
+    <section id="services" className="bg-gray-50 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="text-center">
+          <span className="font-script text-4xl text-primary-500">Services</span>
+          <h2 className="mt-2 text-3xl font-semibold uppercase tracking-wide text-gray-900 sm:text-4xl">
+            Catering Services
+          </h2>
+        </div>
+
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service) => {
             const Icon = service.icon
             return (

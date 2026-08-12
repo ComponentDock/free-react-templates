@@ -10,10 +10,10 @@ describe('Chefs', () => {
     expect(screen.getByText('Chef')).toBeInTheDocument()
 
     for (const [name, role] of [
-      ['John Smooth', 'Restaurant Owner'],
+      ['Ava Laurent', 'Restaurant Owner'],
       ['Rebeca Welson', 'Head Chef'],
-      ['Kharl Branyt', 'Sous Chef'],
-      ['Luke Simon', 'Pastry Chef'],
+      ['Maya Chen', 'Pastry Chef'],
+      ['Sofia Reyes', 'Sous Chef'],
     ] as const) {
       expect(screen.getByRole('heading', { name })).toBeInTheDocument()
       expect(screen.getByText(role)).toBeInTheDocument()

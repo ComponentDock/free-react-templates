@@ -2,10 +2,11 @@ import { useEffect } from 'react'
 import { TopBar } from './components/TopBar'
 import { Navbar } from './components/Navbar'
 import { HeroSlider } from './components/HeroSlider'
+import { FeaturedDishes } from './components/FeaturedDishes'
 import { Welcome } from './components/Welcome'
+import { Counter } from './components/Counter'
 import { Services } from './components/Services'
 import { MenuSection } from './components/MenuSection'
-import { Counter } from './components/Counter'
 import { Chefs } from './components/Chefs'
 import { Reservation } from './components/Reservation'
 import { Testimonials } from './components/Testimonials'
@@ -23,10 +24,11 @@ export function App() {
       <Navbar />
       <main>
         <HeroSlider />
+        <FeaturedDishes />
         <Welcome />
+        <Counter />
         <Services />
         <MenuSection />
-        <Counter />
         <Chefs />
         <Reservation />
         <Testimonials />

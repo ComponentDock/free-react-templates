@@ -34,7 +34,7 @@ export function Testimonials() {
   return (
     <section id="testimonials" className="relative overflow-hidden py-20 lg:py-28">
       <img
-        src="https://picsum.photos/seed/forno-17/1920/800"
+        src="https://picsum.photos/id/431/1920/800"
         alt=""
         aria-hidden="true"
         loading="lazy"

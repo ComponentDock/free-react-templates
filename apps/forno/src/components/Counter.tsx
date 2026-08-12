@@ -1,15 +1,21 @@
 const stats = [
-  { value: 320, label: 'Happy Customer' },
-  { value: 120, label: 'Projects' },
-  { value: 25, label: 'Years of Experience' },
-  { value: 45, label: 'Awards' },
+  { value: 320, label: 'Years of Experienced' },
+  { value: 850, label: 'Menus/Dish' },
+  { value: 25, label: 'Staffs' },
+  { value: 4500, label: 'Happy Customers' },
 ] as const
 
+/**
+ * Counter — photo-backdrop statistics band (source `.ftco-counter.img`):
+ * dark overlay over a food photo with four count-up style stats. Labels
+ * match the live DOM (Years of Experienced / Menus/Dish / Staffs / Happy
+ * Customers).
+ */
 export function Counter() {
   return (
-    <section className="relative overflow-hidden py-20 lg:py-28">
+    <section aria-label="Restaurant statistics" className="relative overflow-hidden py-20 lg:py-28">
       <img
-        src="https://picsum.photos/seed/forno-11/1920/600"
+        src="https://picsum.photos/id/1080/1920/600"
         alt=""
         aria-hidden="true"
         loading="lazy"

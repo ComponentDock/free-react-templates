@@ -1,26 +1,32 @@
 const chefs = [
   {
-    name: 'John Smooth',
+    name: 'Ava Laurent',
     role: 'Restaurant Owner',
-    image: 'https://picsum.photos/seed/forno-12/400/500',
+    image: 'https://picsum.photos/id/1027/600/750',
   },
   {
     name: 'Rebeca Welson',
     role: 'Head Chef',
-    image: 'https://picsum.photos/seed/forno-13/400/500',
+    image: 'https://picsum.photos/id/64/600/750',
   },
   {
-    name: 'Kharl Branyt',
-    role: 'Sous Chef',
-    image: 'https://picsum.photos/seed/forno-14/400/500',
-  },
-  {
-    name: 'Luke Simon',
+    name: 'Maya Chen',
     role: 'Pastry Chef',
-    image: 'https://picsum.photos/seed/forno-15/400/500',
+    image: 'https://picsum.photos/id/823/600/750',
+  },
+  {
+    name: 'Sofia Reyes',
+    role: 'Sous Chef',
+    image: 'https://picsum.photos/id/996/600/750',
   },
 ] as const
 
+/**
+ * Chefs — team grid (source `.ftco-section`): script "Chef" subheading,
+ * "Our Master Chef" heading and four photo cards. Portraits are
+ * subject-screened picsum IDs; picsum has no male headshots, so names are
+ * adapted to fit the available portraits.
+ */
 export function Chefs() {
   return (
     <section id="chefs" className="bg-white py-20 lg:py-28">

@@ -14,12 +14,12 @@ const hours = [
 ] as const
 
 const instagramShots = [
-  { seed: 'forno-21', alt: 'Grilled dish on a plate' },
-  { seed: 'forno-22', alt: 'Dessert with berries' },
-  { seed: 'forno-23', alt: 'Chef plating a meal' },
-  { seed: 'forno-24', alt: 'Wine bottle and glasses' },
-  { seed: 'forno-25', alt: 'Pasta with fresh herbs' },
-  { seed: 'forno-26', alt: 'Cozy restaurant table' },
+  { id: 292, alt: 'Grilled dish on a plate' },
+  { id: 431, alt: 'Dessert with berries' },
+  { id: 1080, alt: 'Chef plating a meal' },
+  { id: 429, alt: 'Wine bottle and glasses' },
+  { id: 225, alt: 'Pasta with fresh herbs' },
+  { id: 312, alt: 'Cozy restaurant table' },
 ] as const
 
 const socials = [
@@ -90,9 +90,9 @@ export function Footer() {
             </h3>
             <div className="mt-4 grid grid-cols-3 gap-2">
               {instagramShots.map((shot) => (
-                <a key={shot.seed} href="#home" aria-label={`Instagram photo: ${shot.alt}`}>
+                <a key={shot.id} href="#home" aria-label={`Instagram photo: ${shot.alt}`}>
                   <img
-                    src={`https://picsum.photos/seed/${shot.seed}/200/200`}
+                    src={`https://picsum.photos/id/${shot.id}/200/200`}
                     alt={shot.alt}
                     loading="lazy"
                     className="h-16 w-16 object-cover"

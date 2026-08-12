@@ -13,7 +13,7 @@ describe('Welcome', () => {
     const paragraphs = screen.getAllByText(/Far far away|A small river named Duden/)
     expect(paragraphs.length).toBeGreaterThanOrEqual(2)
 
-    expect(screen.getByText('Delicious Specialties')).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'Catering Services' })).toBeInTheDocument()
+    expect(screen.getByText('Mon - Fri 8 AM - 11 PM')).toBeInTheDocument()
+    expect(screen.getByText('+ 1-978-123-4567')).toBeInTheDocument()
   })
 })

@@ -7,7 +7,7 @@ const posts = [
     date: 'May 14, 2026',
     excerpt:
       'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.',
-    image: 'https://picsum.photos/seed/forno-18/800/500',
+    image: 'https://picsum.photos/id/425/800/500',
     alt: 'Asian dishes served at Forno',
   },
   {
@@ -15,7 +15,7 @@ const posts = [
     date: 'April 28, 2026',
     excerpt:
       'Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.',
-    image: 'https://picsum.photos/seed/forno-19/800/500',
+    image: 'https://picsum.photos/id/429/800/500',
     alt: 'Pastry chef plating a dessert',
   },
   {
@@ -23,7 +23,7 @@ const posts = [
     date: 'April 9, 2026',
     excerpt:
       'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
-    image: 'https://picsum.photos/seed/forno-20/800/500',
+    image: 'https://picsum.photos/id/225/800/500',
     alt: 'Wine glasses on a restaurant table',
   },
 ] as const

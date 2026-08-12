@@ -7,10 +7,10 @@ describe('Counter', () => {
     render(<Counter />)
 
     for (const [value, label] of [
-      ['320', 'Happy Customer'],
-      ['120', 'Projects'],
-      ['25', 'Years of Experience'],
-      ['45', 'Awards'],
+      ['320', 'Years of Experienced'],
+      ['850', 'Menus/Dish'],
+      ['25', 'Staffs'],
+      ['4500', 'Happy Customers'],
     ] as const) {
       expect(screen.getByText(value)).toBeInTheDocument()
       expect(screen.getByText(label)).toBeInTheDocument()
