@@ -2,7 +2,7 @@
   "name": "@free-react-templates/ecobit",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-ecobit.surge.sh",
+  "homepage": "https://ecobit.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

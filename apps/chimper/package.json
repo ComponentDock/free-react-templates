@@ -2,7 +2,7 @@
   "name": "@free-react-templates/chimper",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-chimper.surge.sh",
+  "homepage": "https://chimper.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

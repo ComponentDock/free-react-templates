@@ -2,7 +2,7 @@
   "name": "@free-react-templates/slick",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-slick.surge.sh",
+  "homepage": "https://slick.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

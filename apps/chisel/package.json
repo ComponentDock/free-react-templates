@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://free-react-templates-chisel.surge.sh",
+  "homepage": "https://chisel.free.componentdock.com",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",

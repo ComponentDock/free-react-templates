@@ -2,7 +2,7 @@
   "name": "@free-react-templates/skyline",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-skyline.surge.sh",
+  "homepage": "https://skyline.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

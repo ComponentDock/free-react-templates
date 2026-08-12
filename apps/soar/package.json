@@ -2,7 +2,7 @@
   "name": "@free-react-templates/soar",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-soar.surge.sh",
+  "homepage": "https://soar.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

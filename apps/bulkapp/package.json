@@ -2,7 +2,7 @@
   "name": "@free-react-templates/bulkapp",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-bulkapp.surge.sh",
+  "homepage": "https://bulkapp.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

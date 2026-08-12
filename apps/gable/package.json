@@ -2,7 +2,7 @@
   "name": "@free-react-templates/gable",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-gable.surge.sh",
+  "homepage": "https://gable.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/snip",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-snip.surge.sh",
+  "homepage": "https://snip.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

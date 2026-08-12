@@ -2,7 +2,7 @@
   "name": "@free-react-templates/verve",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-verve.surge.sh",
+  "homepage": "https://verve.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

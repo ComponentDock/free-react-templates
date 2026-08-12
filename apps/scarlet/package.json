@@ -2,7 +2,7 @@
   "name": "@free-react-templates/scarlet",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-scarlet.surge.sh",
+  "homepage": "https://scarlet.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/halcyon",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-halcyon.surge.sh",
+  "homepage": "https://halcyon.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

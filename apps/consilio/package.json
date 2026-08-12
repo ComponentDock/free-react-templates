@@ -2,7 +2,7 @@
   "name": "@free-react-templates/consilio",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-consilio.surge.sh",
+  "homepage": "https://consilio.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

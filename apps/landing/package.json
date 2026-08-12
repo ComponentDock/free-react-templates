@@ -2,7 +2,7 @@
   "name": "@free-react-templates/landing",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-landing.surge.sh",
+  "homepage": "https://landing.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

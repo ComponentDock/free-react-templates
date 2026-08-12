@@ -2,7 +2,7 @@
   "name": "@free-react-templates/animal-shelter",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-animal-shelter.surge.sh",
+  "homepage": "https://animal-shelter.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

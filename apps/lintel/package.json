@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://free-react-templates-lintel.surge.sh",
+  "homepage": "https://lintel.free.componentdock.com",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
