@@ -61,13 +61,13 @@
 ## Tasks
 
 - [x] Write `openspec/specs/template-atelier/spec.md` (Gherkin requirements + scenarios + replication findings) — DONE on main (prep).
-- [ ] Create `apps/atelier` (copy `apps/moda`; rename package to
+- [x] Create `apps/atelier` (copy `apps/moda`; rename package to
       `@free-react-templates/atelier`).
-- [ ] TDD: tests first for Navbar, Categories, NewProduct, Banner,
+- [x] TDD: tests first for Navbar, Categories, NewProduct, Banner,
       Trend, Discount, Services, Instagram, Footer, App composition.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Per-app gate: `scripts/verify-app.sh atelier` + `npm run spec:validate`.
-- [ ] Update TEMPLATES.md status `[~]` → `[x]` after merge (bookkeeping on
+- [x] Implement components (green) at 100% coverage.
+- [x] Per-app gate: `scripts/verify-app.sh atelier` + `npm run spec:validate`.
+- [x] Update TEMPLATES.md status `[~]` → `[x]` after merge (bookkeeping on
       main, state D).
-- [ ] Update README structure + `docs/ai-context.md` app list (via
+- [x] Update README structure + `docs/ai-context.md` app list (via
       `npm run readme:status`).
