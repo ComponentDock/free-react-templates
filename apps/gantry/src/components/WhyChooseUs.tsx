@@ -19,7 +19,7 @@ export function WhyChooseUs() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="lg:-mt-32">
             <img
-              src="https://picsum.photos/seed/gantry-about-1/720/620"
+              src="https://picsum.photos/id/1081/800/1000"
               alt="Engineers reviewing blueprints on a construction site"
               className="h-full w-full object-cover"
             />

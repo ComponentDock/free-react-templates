@@ -179,7 +179,13 @@ rgba(255,255,255,0.5)`, radius 0; submit "Send Message" =
 - [ ] Subject-screen picsum seeds (hero — engineering/blueprints subject
       preferred, 2 slides; about_1 construction photo; project 1–4
       building scenes; 2 square portraits; blog 1–3) — pixel metric +
-      browser verify; pin seeds in PR
+      browser verify; pin seeds in PR. IMPLEMENTED DEVIATION: seeded URLs
+      rendered off-subject (hero-1 = alpine lake, about/projects arbitrary);
+      hero/about/projects/blog now use screened picsum photo refs — `/id/1076`
+      (louvered high-rise), `/id/297` (industrial plant silos/pipes),
+      `/id/1081` (geometric white skyscraper), `/id/49` (white coastal
+      architecture) — still picsum, no ColorLib assets; testimonial
+      portraits keep seeds
 - [ ] `bash scripts/verify-app.sh gantry` green; PR with source, preview
       URL, tokens, deviations (React slider/carousel / mobile nav /
       Component Dock credit); squash-merge immediately

@@ -18,7 +18,7 @@ export function Blog() {
             <article key={post.title} className="bg-white">
               <a href="#blog" className="block overflow-hidden">
                 <img
-                  src={`https://picsum.photos/seed/${post.seed}/640/420`}
+                  src={`https://picsum.photos/id/${post.image}/640/420`}
                   alt=""
                   className="h-56 w-full object-cover transition-transform duration-500 hover:scale-105"
                 />

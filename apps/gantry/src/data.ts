@@ -33,7 +33,7 @@ export const NAV_LINKS = [
 ] as const
 
 export interface HeroSlide {
-  seed: string
+  image: string
   headline: string
   highlight: string
   paragraph: string
@@ -41,14 +41,14 @@ export interface HeroSlide {
 
 export const HERO_SLIDES: HeroSlide[] = [
   {
-    seed: 'gantry-hero-1',
+    image: '1076',
     headline: 'We Are Leading Industry of Engineers',
     highlight: 'Leading',
     paragraph:
       'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.',
   },
   {
-    seed: 'gantry-hero-2',
+    image: '297',
     headline: 'Experts and High Quality Works',
     highlight: 'Experts',
     paragraph:
@@ -122,16 +122,16 @@ export const QUOTE_FORM_FIELDS = [
 ] as const
 
 export interface Project {
-  seed: string
+  image: string
   category: string
   title: string
 }
 
 export const PROJECTS: Project[] = [
-  { seed: 'gantry-project-1', category: 'Factory', title: 'Building Refinery' },
-  { seed: 'gantry-project-2', category: 'Warehouse', title: 'Steel Frame Assembly' },
-  { seed: 'gantry-project-3', category: 'Bridge', title: 'River Crossing Viaduct' },
-  { seed: 'gantry-project-4', category: 'Industrial', title: 'Processing Plant Upgrade' },
+  { image: '297', category: 'Factory', title: 'Building Refinery' },
+  { image: '1076', category: 'Warehouse', title: 'Steel Frame Assembly' },
+  { image: '1081', category: 'Bridge', title: 'River Crossing Viaduct' },
+  { image: '49', category: 'Industrial', title: 'Processing Plant Upgrade' },
 ]
 
 export interface Testimonial {
@@ -156,24 +156,24 @@ export const TESTIMONIALS: Testimonial[] = [
 ]
 
 export interface BlogPost {
-  seed: string
+  image: string
   title: string
   meta: string
 }
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    seed: 'gantry-blog-1',
+    image: '49',
     title: 'Top Companies That Are Best In Industrial Business',
     meta: 'Posted by Admin In News',
   },
   {
-    seed: 'gantry-blog-2',
+    image: '1076',
     title: 'How Modern Engineering Shapes City Skylines',
     meta: 'Posted by Admin In News',
   },
   {
-    seed: 'gantry-blog-3',
+    image: '297',
     title: 'Safety First: New Standards On Construction Sites',
     meta: 'Posted by Admin In News',
   },

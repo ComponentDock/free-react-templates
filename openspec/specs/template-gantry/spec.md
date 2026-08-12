@@ -410,10 +410,13 @@ landmark and a document title.
       6 / Our Services 3 / Contact 5) + bottom bar with Component Dock
       credit + no ColorLib credit
 - [ ] Placeholder images via
-      `https://picsum.photos/seed/gantry-<n>/<w>/<h>` (hero 2 slides,
-      about_1, project 1–4, 2 testimonial portraits, blog 1–3); icons
-      from `lucide-react`; no `tel:` literals (render the phone as plain
-      text)
+      `https://picsum.photos/...` (hero 2 slides, about_1, project 1–4, 2
+      testimonial portraits, blog 1–3); icons from `lucide-react`; no `tel:`
+      literals (render the phone as plain text). NOTE: subject-critical
+      slots use verified picsum photo refs (`/id/1076` louvered high-rise,
+      `/id/297` industrial plant, `/id/1081` geometric skyscraper, `/id/49`
+      white architecture — screened 2026-08-12 after the seeded URLs
+      rendered off-subject scenes) instead of arbitrary seeds
 - [ ] PR description: source template, preview URL
       (`preview.colorlib.com/theme/engineers/`), design tokens, diffs
       (name, placeholder images, React slider/carousel + mobile nav

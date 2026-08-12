@@ -20,7 +20,7 @@ export function HeroSlider() {
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
     >
       <img
-        src={`https://picsum.photos/seed/${slide.seed}/1600/900`}
+        src={`https://picsum.photos/id/${slide.image}/1600/900`}
         alt=""
         aria-hidden="true"
         className="absolute inset-0 h-full w-full object-cover"

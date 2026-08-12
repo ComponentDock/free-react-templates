@@ -36,7 +36,7 @@ export function Projects() {
           {visible.map((project) => (
             <article key={project.title} className="group relative overflow-hidden">
               <img
-                src={`https://picsum.photos/seed/${project.seed}/640/480`}
+                src={`https://picsum.photos/id/${project.image}/640/480`}
                 alt={project.title}
                 className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
