@@ -1,6 +1,7 @@
 {
   "name": "@free-react-templates/altruist",
   "private": true,
+  "homepage": "https://free-react-templates-altruist.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
