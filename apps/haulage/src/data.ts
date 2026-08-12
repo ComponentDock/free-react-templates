@@ -212,6 +212,16 @@ export const FAQ_ITEMS = [
     answer:
       'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.',
   },
+  {
+    question: 'Can I accept both Paypal and Stripe?',
+    answer:
+      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.',
+  },
+  {
+    question: 'What available is refund period?',
+    answer:
+      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.',
+  },
 ] as const
 
 export const WHY_US = [
@@ -264,22 +274,19 @@ export const ARTICLES = [
   },
 ] as const
 
+/* Contact info is plain label + value text in the source demo (no links). */
 export const CONTACT_INFO = [
-  {
-    label: 'Address',
-    value: '34 Street Name, City Name Here, United States',
-    href: undefined,
-  },
-  { label: 'Phone', value: '+1 242 4942 290', href: 'tel:+12424942290' },
-  { label: 'Email', value: 'info@yourdomain.com', href: 'mailto:info@yourdomain.com' },
+  { label: 'Address', value: '34 Street Name, City Name Here, United States' },
+  { label: 'Phone', value: '+1 242 4942 290' },
+  { label: 'Email', value: 'info@yourdomain.com' },
 ] as const
 
-export const FOOTER_ABOUT_LINKS = [
+/* Footer columns: About Us carries only a blurb; the Features column holds
+   the five link list (per the source's footer markup). */
+export const FOOTER_FEATURE_LINKS = [
   'About Us',
   'Testimonials',
   'Terms of Service',
   'Privacy',
   'Contact Us',
 ] as const
-
-export const FOOTER_FEATURE_LINKS = ['Menu One', 'Menu Two', 'Menu Three'] as const

@@ -8,15 +8,11 @@ describe('Contact', () => {
 
     expect(screen.getByRole('heading', { level: 2, name: 'Contact Us' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { level: 3, name: 'Contact Info' })).toBeInTheDocument()
+    /* The source's info card is plain label + value text (no links). */
     expect(screen.getByText('34 Street Name, City Name Here, United States')).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: '+1 242 4942 290' })).toHaveAttribute(
-      'href',
-      'tel:+12424942290',
-    )
-    expect(screen.getByRole('link', { name: 'info@yourdomain.com' })).toHaveAttribute(
-      'href',
-      'mailto:info@yourdomain.com',
-    )
+    expect(screen.getByText('+1 242 4942 290')).toBeInTheDocument()
+    expect(screen.getByText('info@yourdomain.com')).toBeInTheDocument()
+    expect(screen.queryByRole('link', { name: '+1 242 4942 290' })).not.toBeInTheDocument()
 
     expect(screen.getByRole('heading', { level: 3, name: 'Get In Touch' })).toBeInTheDocument()
     expect(screen.getByLabelText('First name')).toBeInTheDocument()

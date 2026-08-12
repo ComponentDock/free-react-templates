@@ -1,18 +1,18 @@
 import { useState, type FormEvent } from 'react'
-import { Mail, MapPin, Phone, Send } from 'lucide-react'
+import { Send } from 'lucide-react'
 import { Button } from '@free-react-templates/ui'
 import { CONTACT_INFO } from '../data'
 import { contactSchema, fieldErrors, initialContact, type ContactValues } from '../lib/forms'
 import { SectionHeading } from './SectionHeading'
 
-const CONTACT_ICONS = { Address: MapPin, Phone, Email: Mail } as const
-
 const fieldClass =
   'h-[55px] w-full rounded border border-transparent bg-white px-4 text-sm text-ink outline-none transition-colors focus:border-brand'
 
-/* Contact Us — contact info column (Address / Phone / Email) beside a
-   "Get In Touch" form (First name, Last name, Email, message, Send
-   Message). The form validates per-field and shows a success message. */
+/* Contact Us — the source splits the section into a "Get In Touch" form
+   (col-lg-6, placeholders only, rows=10 textarea, orange Send Message
+   button) on the LEFT and a white "Contact Info" card (col-lg-4 ml-auto,
+   bg-white p-3 p-md-5) with plain label + value text on the RIGHT. The
+   form validates per-field and shows a success message. */
 export function Contact() {
   const [values, setValues] = useState<ContactValues>(initialContact)
   const [errors, setErrors] = useState<Partial<Record<keyof ContactValues, string>>>({})
@@ -45,52 +45,32 @@ export function Contact() {
           title="Contact Us"
           blurb="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
         />
-        <div className="grid gap-12 lg:grid-cols-2">
-          <div>
-            <h3 className="font-display text-xl font-medium uppercase text-ink">Contact Info</h3>
-            <ul className="mt-6 space-y-5">
-              {CONTACT_INFO.map((item) => {
-                const Icon = CONTACT_ICONS[item.label as keyof typeof CONTACT_ICONS]
-                const content = (
-                  <span className="flex items-start gap-3 text-smoke">
-                    <Icon aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-brand" />
-                    {item.value}
-                  </span>
-                )
-                return (
-                  <li key={item.label}>
-                    {item.href ? (
-                      <a href={item.href} className="transition-colors hover:text-brand">
-                        {content}
-                      </a>
-                    ) : (
-                      content
-                    )}
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
-
-          <form onSubmit={handleSubmit} noValidate>
+        <div className="grid gap-12 lg:grid-cols-5">
+          <form onSubmit={handleSubmit} noValidate className="lg:col-span-3">
             <h3 className="font-display text-xl font-medium uppercase text-ink">Get In Touch</h3>
             <div className="mt-6 grid gap-5 sm:grid-cols-2">
               {(
                 [
-                  { key: 'firstName', label: 'First name', type: 'text' },
-                  { key: 'lastName', label: 'Last name', type: 'text' },
+                  {
+                    key: 'firstName',
+                    label: 'First name',
+                    placeholder: 'First name',
+                    type: 'text',
+                  },
+                  { key: 'lastName', label: 'Last name', placeholder: 'Last name', type: 'text' },
                 ] as const
               ).map((field) => (
                 <div key={field.key}>
                   <label
                     htmlFor={`contact-${field.key}`}
-                    className="mb-1.5 block text-sm font-medium text-ink"
+                    className="sr-only text-sm font-medium text-ink"
                   >
                     {field.label}
                   </label>
                   <input
                     id={`contact-${field.key}`}
                     type={field.type}
+                    placeholder={field.placeholder}
                     value={values[field.key]}
                     onChange={(event) => handleChange(field.key, event.target.value)}
                     aria-invalid={errors[field.key] ? true : undefined}
@@ -102,15 +82,13 @@ export function Contact() {
                 </div>
               ))}
               <div className="sm:col-span-2">
-                <label
-                  htmlFor="contact-email"
-                  className="mb-1.5 block text-sm font-medium text-ink"
-                >
+                <label htmlFor="contact-email" className="sr-only text-sm font-medium text-ink">
                   Email address
                 </label>
                 <input
                   id="contact-email"
                   type="email"
+                  placeholder="Email address"
                   value={values.email}
                   onChange={(event) => handleChange('email', event.target.value)}
                   aria-invalid={errors.email ? true : undefined}
@@ -121,15 +99,13 @@ export function Contact() {
                 )}
               </div>
               <div className="sm:col-span-2">
-                <label
-                  htmlFor="contact-message"
-                  className="mb-1.5 block text-sm font-medium text-ink"
-                >
+                <label htmlFor="contact-message" className="sr-only text-sm font-medium text-ink">
                   Message
                 </label>
                 <textarea
                   id="contact-message"
-                  rows={5}
+                  rows={10}
+                  placeholder="Write your message."
                   value={values.message}
                   onChange={(event) => handleChange('message', event.target.value)}
                   aria-invalid={errors.message ? true : undefined}
@@ -156,6 +132,21 @@ export function Contact() {
               </p>
             )}
           </form>
+
+          <div className="lg:col-span-2">
+            {/* .bg-white.p-3.p-md-5 — the white Contact Info card. */}
+            <div className="bg-white p-6 md:p-10">
+              <h3 className="font-display text-xl font-medium uppercase text-ink">Contact Info</h3>
+              <ul className="mt-6 space-y-5">
+                {CONTACT_INFO.map((item) => (
+                  <li key={item.label}>
+                    <span className="block text-ink">{item.label}:</span>
+                    <span className="text-smoke">{item.value}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>

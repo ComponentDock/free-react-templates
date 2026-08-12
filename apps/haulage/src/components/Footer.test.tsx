@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { fireEvent, render, screen } from '@testing-library/react'
 import { Footer } from './Footer'
-import { FOOTER_ABOUT_LINKS, FOOTER_FEATURE_LINKS } from '../data'
+import { FOOTER_FEATURE_LINKS } from '../data'
 
 describe('Footer', () => {
   it('renders the four columns, social icons and bottom bar', () => {
@@ -13,9 +13,8 @@ describe('Footer', () => {
     expect(screen.getByRole('heading', { name: 'Subscribe to Newsletter' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Follow Us' })).toBeInTheDocument()
 
-    for (const link of FOOTER_ABOUT_LINKS) {
-      expect(screen.getByRole('link', { name: link })).toBeInTheDocument()
-    }
+    /* The About column is blurb-only in the source; the Features column
+       holds the five link list. */
     for (const link of FOOTER_FEATURE_LINKS) {
       expect(screen.getByRole('link', { name: link })).toBeInTheDocument()
     }

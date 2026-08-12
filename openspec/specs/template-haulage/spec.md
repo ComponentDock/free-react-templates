@@ -123,15 +123,16 @@ text-black` question (with `icon-question_answer text-primary` icon)
       "Knowing the Difference Is Key to Effective Logistics"), excerpt,
       "Read More" link.
   14. **Contact Us** — `section.site-section.bg-light`: `block-heading-1`
-      (h2 "Contact Us"); left column: "Contact Info" — Address: 34 Street
-      Name, City Name Here, United States · Phone: +1 242 4942 290 ·
-      Email: info@yourdomain.com; right column: "Get In Touch" `form`:
-      First name, Last name (both `input` 55px), Email address,
-      textarea "Write your message.", submit `input.btn.btn-primary`
-      value "Send Message".
+      (h2 "Contact Us"); left column (`col-lg-6`): "Get In Touch" `form` —
+      First name, Last name (both `input` 55px), Email address, textarea
+      "Write your message." (rows 10), submit `input.btn.btn-primary`
+      value "Send Message"; right column (`col-lg-4.ml-auto`, white card
+      `bg-white.p-3.p-md-5`): "Contact Info" — plain label + value lines:
+      Address: 34 Street Name, City Name Here, United States · Phone:
+      +1 242 4942 290 · Email: info@yourdomain.com (no links).
   15. **Footer** — `footer.site-footer` (`#333333`, padding 4em/8em):
-      4 columns — About Us (blurb + links About Us / Testimonials / Terms
-      of Service / Privacy / Contact Us), Features (link list), Subscribe
+      4 columns — About Us (blurb only), Features (link list: About Us /
+      Testimonials / Terms of Service / Privacy / Contact Us), Subscribe
       to Newsletter (`form.footer-suscribe-form`: email input + white
       btn), Follow Us (social icons); bottom bar `border-top`
       rgba(255,255,255,0.1) with copyright + credit line.
@@ -348,10 +349,11 @@ The system SHALL render a two-column FAQ grid of question/answer pairs.
 - **GIVEN** the Haulage app is rendered
 - **WHEN** the Frequently Ask Questions section is displayed
 - **THEN** the centered heading SHALL render (Oswald uppercase orange)
-- **AND** a two-column grid SHALL render at least six Q&A items, each with
-  a question icon, an Oswald black question (e.g. "Can I accept both
-  Paypal and Stripe?", "What available is refund period?", "Where are you
-  from?", "What is your opening time?"), and an answer paragraph
+- **AND** a two-column grid SHALL render eight Q&A items (the source
+  repeats four questions to fill the grid), each with a question icon, an
+  Oswald black question (e.g. "Can I accept both Paypal and Stripe?",
+  "What available is refund period?", "Where are you from?", "What is your
+  opening time?"), and an answer paragraph
 
 ### Requirement: Why Us
 
@@ -427,8 +429,8 @@ The system SHALL render a dark four-column footer.
 - **GIVEN** the Haulage app is rendered
 - **WHEN** the page is scrolled to the bottom
 - **THEN** a `#333333` footer SHALL render with four columns: About Us
-  (blurb + links About Us / Testimonials / Terms of Service / Privacy /
-  Contact Us), Features (links), Subscribe to Newsletter (email input +
+  (blurb only), Features (links: About Us / Testimonials / Terms of
+  Service / Privacy / Contact Us), Subscribe to Newsletter (email input +
   button), Follow Us (social icons)
 - **AND** a bottom bar SHALL render the copyright and credit line with a
   `rgba(255,255,255,0.1)` top border

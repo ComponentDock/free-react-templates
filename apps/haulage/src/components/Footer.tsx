@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { Button } from '@free-react-templates/ui'
-import { BRAND, FOOTER_ABOUT_LINKS, FOOTER_FEATURE_LINKS } from '../data'
+import { BRAND, FOOTER_FEATURE_LINKS } from '../data'
 import { fieldErrors, initialNewsletter, newsletterSchema } from '../lib/forms'
 import { FacebookIcon, InstagramIcon, LinkedinIcon, TwitterIcon } from './icons'
 
@@ -36,18 +36,6 @@ export function Footer() {
               Far far away, behind the word mountains, far from the countries Vokalia and
               Consonantia, there live the blind texts.
             </p>
-            <ul className="mt-4 space-y-2">
-              {FOOTER_ABOUT_LINKS.map((link) => (
-                <li key={link}>
-                  <a
-                    href="#home"
-                    className="text-sm text-white/50 transition-colors hover:text-white"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
           </div>
 
           <div>
