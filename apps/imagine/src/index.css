@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Imagine brand palette — creative-agency design tokens:
+     lavender-purple brand gradient #908ced → #b56fe8 (hero CTA,
+     Subscribe button, hover fills, donut segments, testimonial overlay,
+     footer social hover); periwinkle #8490ff footer link hover; ink #000
+     hero overlay (0.4), skills section, blog date badges; footer #222;
+     social squares #111; muted icon/text #777; outline border #f4f4f4. */
+  --color-brand-start: #908ced;
+  --color-brand-end: #b56fe8;
+  --color-periwinkle: #8490ff;
+  --color-ink: #000000;
+  --color-footer: #222222;
+  --color-social: #111111;
+  --color-icon: #777777;
+  --color-outline: #f4f4f4;
+
+  /* Poppins 100–700 (Google Fonts <link>). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
