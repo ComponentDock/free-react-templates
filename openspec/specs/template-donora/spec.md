@@ -1,5 +1,9 @@
 # Template: Donora (Charity / Fundraising Template)
 
+> **SUPERSEDED** — this ColorLib "Cause" source already shipped as
+> **Altruist** (PR #316, https://free-react-templates-altruist.surge.sh).
+> Do NOT implement — delete on next cleanup.
+
 ## Purpose
 
 Donora is a single-page charity & fundraising website template in the
