@@ -385,7 +385,7 @@
 - [x] **Energen** · [serenity](https://serenity.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/energen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/energen-free-template.jpg)
 - [x] **Engineers** — [colorlib](https://colorlib.com/wp/template/engineers/) · [gantry](https://gantry.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/engineers-free-template.jpg)
 - [x] **Essence** — [colorlib](https://colorlib.com/wp/template/essence/) · [garment](https://garment.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/essence-free-template.jpg)
-- [ ] **Europa** — [colorlib](https://colorlib.com/wp/template/europa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/europa-free-template.jpg)
+- [~] **Europa** — [colorlib](https://colorlib.com/wp/template/europa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/europa-free-template.jpg)
 - [ ] **Eventure** — [colorlib](https://colorlib.com/wp/template/eventure/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventure-free-template.jpg)
 - [x] **Explore** — [colorlib](https://colorlib.com/wp/template/explore/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/explore-free-template.jpg) · [nomad](https://nomad.free.componentdock.com)
 - [ ] **Faith** — [colorlib](https://colorlib.com/wp/template/faith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/faith-free-template.jpg)
