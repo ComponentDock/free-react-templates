@@ -165,16 +165,27 @@ Google Fonts, lucide-react icons).
   (useState index, prev/next 84×84 square dark buttons, auto-advance
   optional — no owl.carousel dependency); flaticon fitness icons → lucide
   equivalents (Dumbbell / Flame / Mountain / HeartPulse); photos → seeded
-  picsum placeholders (`picsum.photos/seed/barbell-<n>/<w>/<h>` — source
-  images must not be copied); Google Fonts Oswald + PT Sans via `<link>` in
-  `index.html`; Google Maps iframe kept as a lazy-loading embed (same NYC
-  embed pattern) with the dark address card overlaid; search overlay =
-  click-to-toggle hidden search input; brand text "CrossFit"/"Crossfit" →
-  "Barbell" (logo becomes a styled text logo or lucide icon — the source
-  logo.png is an asset that must not be copied); document title
-  "Barbell — Gym & CrossFit Template"; nav links About us / Classes / Blog
-  / Contact may point to `#` anchors or the single page (demo has subpages
-  but only index is in the preview — render the one-page layout only).
+  picsum placeholders (source images must not be copied); Google Fonts
+  Oswald + PT Sans via `<link>` in `index.html`; Google Maps iframe kept as
+  a lazy-loading embed (same NYC embed pattern) with the dark address card
+  overlaid; search overlay = click-to-toggle hidden search input; brand text
+  "CrossFit"/"Crossfit" → "Barbell" (logo becomes a styled text logo with a
+  lucide Dumbbell icon — the source logo.png is an asset that must not be
+  copied); document title "Barbell — Gym & CrossFit Template"; nav links
+  About us / Classes / Blog / Contact may point to `#` anchors or the single
+  page (demo has subpages but only index is in the preview — render the
+  one-page layout only).
+- **Verified placeholder seeds (screened 2026-08-12, pixel metric +
+  browser vision):** hero slides `picsum.photos/seed/barbell-training/`
+  (dark snowy peaks — mirrors the source's mountain hero), `/barbell-lift/`
+  (dramatic ocean wave), `/barbell-summit/` (moody mountain lake);
+  booking panel `/barbell-box2/` (waterfall, dark base); quote band
+  `/barbell-training/` (reused, dark peaks suit white quote text); lifestyle
+  photo `/barbell-food/` (cyclist — active-lifestyle scene); boxes
+  `/barbell-lift/`, `/barbell-summit/`, `/barbell-box2/` (dark-bottom
+  dramatic scenes suit giant white labels). Dark hero/quote photos get a
+  subtle ink overlay so white text stays readable (documented deviation —
+  the source's own hero photo is a bright snow scene).
 
 Barbell lives in `apps/barbell` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, cn).
