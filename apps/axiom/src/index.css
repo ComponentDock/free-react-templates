@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Axiom brand palette — design-and-development agency design tokens:
+     accent blue #00A7FF (nav underline, work hover overlay, Visit Our
+     Work band, outline pill); play/logo blue #0181F5 (video play circle,
+     logo square); yellow #FFCB00 (Say Hi + CTA underlines, work heading
+     bars); counter #615CFD; ink #1F1F1F (headings, nav); body grey
+     #727272; copyright #919191; card borders #333333 → #808080 hover. */
+  --color-accent: #00a7ff;
+  --color-play: #0181f5;
+  --color-yellow: #ffcb00;
+  --color-counter: #615cfd;
+  --color-ink: #1f1f1f;
+  --color-body: #727272;
+  --color-copyright: #919191;
+  --color-card: #333333;
+  --color-card-hover: #808080;
+
+  /* Poppins 100–700 (Google Fonts <link>). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
