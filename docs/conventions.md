@@ -9,6 +9,16 @@ Consistent patterns for structure, naming, components, and error handling.
 - **Templates get NEW, original names** — never reuse the ColorLib source name.
   The app folder/package is the NEW name; the source mapping
   (`colorlib.com/wp/template/<slug>/`) is recorded in the spec and PR.
+- **New templates must NOT reference ColorLib anywhere in the app code**
+  (source files, comments, data, index.css token notes, READMEs). The
+  provenance lives ONLY in the spec (`openspec/specs/template-<name>/`),
+  `TEMPLATES.md`, and the PR. No `colorlib.com` / `preview.colorlib.com`
+  strings in `apps/*` — user-facing or not. Replace provenance comments with
+  design-token notes (e.g. "brand palette: #e3c4a8 tan").
+- **Every template's footer MUST link `https://www.componentdock.com/`**
+  (branded as "Component Dock") — e.g. a "Made with Component Dock" / "More
+  templates at Component Dock" line. This replaces any external/attribution
+  links in the footer.
 - **When creating a new app/workspace, ALWAYS run `npm install` at the repo
   root before committing** so `package-lock.json` registers the new workspace —
   the deploy GitHub Action runs `npm ci` and fails with
