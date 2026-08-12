@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Salus brand palette — medical blues: brand #009DFF (header appointment
+     button, hover text), gradient #0181f5 → #5db2ff (hero/primary CTA),
+     sky #5DB2FF (learn-more links, tab icon circles, card hovers),
+     band #83C4FF (services band background), tint #F5FBFF (top bar, tabs
+     background), ink #1F1F1F (headings + footer top), body #727272,
+     muted #919191, fade #BABABA (footer links), line #E8E8E8 (tab border),
+     form border #e5e6e9. */
+  --color-brand: #009dff;
+  --color-brand-deep: #0181f5;
+  --color-sky: #5db2ff;
+  --color-band: #83c4ff;
+  --color-tint: #f5fbff;
+  --color-ink: #1f1f1f;
+  --color-body: #727272;
+  --color-muted: #919191;
+  --color-fade: #bababa;
+  --color-line: #e8e8e8;
+  --color-form: #e5e6e9;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand blue. */
+  --color-primary-50: #e6f6ff;
+  --color-primary-100: #ccecff;
+  --color-primary-200: #99d9ff;
+  --color-primary-300: #66c6ff;
+  --color-primary-400: #33b3ff;
+  --color-primary-500: #009dff;
+  --color-primary-600: #0084d9;
+  --color-primary-700: #006bb3;
+  --color-primary-800: #00538c;
+  --color-primary-900: #003a66;
+
+  /* Original font: Poppins (200–700) — Google Fonts. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
