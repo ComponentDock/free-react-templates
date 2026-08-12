@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Swish brand palette — recreated from the ColorLib "Basketball" template
+     (https://colorlib.com/wp/template/basketball/), tokens extracted from the
+     live preview's css/style.css:
+     - orange #ff8b23 (primary accent: headline span, buttons, icons, hovers)
+     - light peach #fdcb9e (btn_2 bottom border, subtle hover fills)
+     - darker orange #f5790b (btn_2 hover background)
+     - headings #2a2a2a · body text #666666 · muted #999999
+     - light section bg #f9f9ff · cream hero bg #fdf8f3 · footer #2a2a2a */
+  --color-brand: #ff8b23;
+  --color-brand-dark: #f5790b;
+  --color-peach: #fdcb9e;
+  --color-ink: #2a2a2a;
+  --color-body: #666666;
+  --color-muted: #999999;
+  --color-light: #f9f9ff;
+  --color-cream: #fdf8f3;
+
+  /* Roboto (body) + Playfair Display (headings) + Open Sans 800 (hero h1) —
+     Google Fonts via index.html (original font files are NOT copied). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', serif;
+  --font-hero: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.7;
+    font-family: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  }
+}
