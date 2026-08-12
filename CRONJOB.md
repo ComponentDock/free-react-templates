@@ -11,6 +11,7 @@ fresh session with no chat context, so every prompt below is fully self-containe
 | 2 · CIA · Continuous audit (firebase) | ⏸️ paused (2026-08-01)  | every 60m | `/root/free-templates-firebase` | this chat |
 | 6 · CSR · Cron status report          | ✅ scheduled            | every 10m | — (pure script)                 | this chat |
 | 7 · R2 · Template ZIP uploads         | ✅ scheduled (no_agent) | every 60m | `/root/free-react-templates-zips-src` (origin/main clone) | this chat |
+| 8 · FB · Facebook post content        | ✅ scheduled (no_agent) | daily 08:00 | `/tmp/fbposts-src` (ComponentDock/facebook-posts) | this chat |
 
 ## FAST_MODE: three concurrent streams (2026-08-07, see docs/FAST_MODE.md)
 
@@ -204,6 +205,26 @@ Builds a standalone source ZIP for every template (`apps/<name>` + vendored
 public at `https://downloads.componentdock.com/<name>.zip`. Only zips missing
 from R2 are built/uploaded each run. Generator:
 `~/.hermes/scripts/build-template-zips.sh` (+ `r2-upload.py`).
+
+---
+
+## Job 8: FB · Facebook post content (daily)
+
+| Field         | Value                                              |
+| ------------- | -------------------------------------------------- |
+| **Job ID**    | `0e172a003e39`                                     |
+| **Schedule**  | daily 08:00 (`0 8 * * *`)                          |
+| **Script**    | `~/.hermes/scripts/fb-posts-daily.sh` (no_agent)   |
+| **Delivery**  | origin (this chat) — silent when nothing new       |
+
+Generates ready-to-post Facebook content for every template in the Component
+Dock catalog: one `[template-name].md` per template (title, description,
+features, CDN screenshot links, single-page link, live demo, download link,
+hashtags). Sources: CIA catalog (`free-templates-firebase/src/data/catalog.json`)
++ TPW template docs (`docs/templates/<name>/`). Generator:
+`~/.hermes/scripts/fb-posts-generate.py`. Only posts missing from
+`ComponentDock/facebook-posts` (main) are written each run, then committed +
+pushed. New templates get their FB post within 24h.
 
 ---
 
