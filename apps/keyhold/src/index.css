@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Keyhold design tokens — recreated from the source preview CSS
+     (no assets copied):
+     - brand gold #d4ca68: CTA buttons, subheading text + rule lines,
+       footer background, counter numbers, nav hover, listing badges.
+     - ink #000: headings, nav links, brand, card titles.
+     - body grays: hero paragraph rgba(0,0,0,0.8); muted rgba(0,0,0,0.4);
+       counter labels rgba(0,0,0,0.7); footer links rgba(255,255,255,0.8).
+     - light surface #f8f9fa for the testimonials band. */
+  --color-brand: #d4ca68;
+  --color-brand-dark: #c4b85a;
+  --color-ink: #000000;
+  --color-mist: #f8f9fa;
+  --color-body: rgba(0, 0, 0, 0.8);
+  --color-muted: rgba(0, 0, 0, 0.4);
+  --color-soft: rgba(0, 0, 0, 0.7);
+  --color-footer-link: rgba(255, 255, 255, 0.8);
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+  }
+}
