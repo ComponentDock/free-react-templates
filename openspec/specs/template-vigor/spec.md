@@ -68,9 +68,10 @@ url(img/bg-img/bg-1..3.jpg)`, **height 880px**, 650px 992–1199px, 550px
   768–991px, 1250px ≤767px), background photo): centered section heading
   "Ask the experts" + `.experts-team-members` row of 4
   `.team-members-info` cards (image `img/team-img/1..4.png` + name h3:
-  Julia Smith / Mick Hamilton / Jack Black / Criss James) → Services
-  (`div.fitness-services-area.section-padding-100-0`): centered section
-  heading + 6 `div.single-service-area.mb-100` cards (col-12 col-sm-6
+  Julia Smith / Mick Hamilton / Jack Black / Criss James + role h6 tag:
+  Personal trainer ×3 / Fitness trainer) → Services
+  (`div.fitness-services-area.section-padding-100-0`): **no section heading**
+  (cards start directly) + 6 `div.single-service-area.mb-100` cards (col-12 col-sm-6
   col-lg-4): `.course-icon.d-flex.align-items-center.justify-content-center`
   (77×77px icon circle — `img/core-img/dumbbell.png`, `slim-down.png`,
   `lotus-position.png`, `apple.png`, `swimming.png`, `stationary-bike.png`)
@@ -79,8 +80,8 @@ url(img/bg-img/bg-1..3.jpg)`, **height 880px**, 650px 992–1199px, 550px
     **Swimming Pool**, **Spinning Class** + p (margin-top 15px) + "Enroll
     Now" link (first 3 cards) → Pricing (`div.fitness-pricing-table-area
 .section-padding-100-0.bg-img.bg-overlay.bg-fixed`, background photo
-    `img/bg-img/bg-8.jpg`-style, parallax `bg-fixed`): centered white section
-    heading + 3 `div.single-price-table.mb-100` (col-12 col-md-6 col-lg-4,
+    `img/bg-img/bg-8.jpg`-style, parallax `bg-fixed`): **no section heading**
+    (cards start directly) + 3 `div.single-price-table.mb-100` (col-12 col-md-6 col-lg-4,
     background `#ffffff`): `.price-table-content` padding 40px: `.price`
     **36px weight 600 `#38b143`** + span "/ Month" (14px italic `#838383`);
     h5 title (22px weight 600, margin 30px 0): **Woman Fitness Class $50**,
@@ -94,7 +95,7 @@ url(img/bg-img/bg-1..3.jpg)`, **height 880px**, 650px 992–1199px, 550px
     20:00 · Tuesday 12:00 - 20:00 · Wednesday 12:00 - 20:00 · Thursday 12:00
   * 20:00 · Friday 15:00 - 21:00 · Saturday 10:00 - 20:00 · Sunday Closed
     → Newsletter (`div.our-newsletter-area.mb-100`): section heading "Our
-    Newsletter" + intro p + form (`.form-group`): email input
+    Newsletter" + intro p + form (`.form-group`): two inputs
     (`.form-control`, **height 55px, 3px solid `#eaeaea` border, radius
     10px**, padding 0 40px, italic `#838383` 14px) + gradient `fitness-btn`
     "Subscribe" → Footer (`footer.main-footer-area` with class
@@ -281,7 +282,8 @@ The system SHALL render a "Services" section with six service cards.
 
 - **GIVEN** the Vigor page is rendered
 - **WHEN** the services section is displayed
-- **THEN** the section SHALL show a centered heading
+- **THEN** the section SHALL start directly with its 6 service cards (the
+  source section has no heading — cards begin immediately)
 - **AND** the section SHALL show exactly 6 service cards in a 3-column grid,
   each with a circular line icon, a 20px title, a short description, and an
   "Enroll Now" link
@@ -297,7 +299,7 @@ The system SHALL render a parallax pricing section with three pricing cards.
 - **GIVEN** the Vigor page is rendered
 - **WHEN** the pricing section is displayed
 - **THEN** the section SHALL show a fixed-attachment background photo with a
-  dark overlay and a centered white heading
+  dark overlay (no section heading — cards start directly)
 - **AND** the section SHALL show 3 white pricing cards, each with a green
   36px price, a "/ Month" suffix, a 22px plan title, 3 feature bullets, and
   an "Enroll Now" button
@@ -329,8 +331,8 @@ The system SHALL render an "Our Newsletter" section with an email form.
 - **WHEN** the newsletter section is displayed
 - **THEN** the section SHALL show the heading "Our Newsletter" with an intro
   line
-- **AND** the section SHALL show an email input (55px tall, 3px `#eaeaea`
-  border, radius 10px) and a green gradient "Subscribe" button
+- **AND** the section SHALL show a name input and an email input (55px tall,
+  3px `#eaeaea` border, radius 10px) and a green gradient "Subscribe" button
 
 #### Scenario: Newsletter submission
 
@@ -382,17 +384,19 @@ test:coverage -- --project apps/vigor` or `scripts/verify-app.sh vigor`)
 - [ ] About: "Why choose Vigor?" split — text + paragraph + gradient "Get a
       membership" + outlined "Find out more" buttons left, photo right
 - [ ] Experts: photo bg + overlay, "Ask the experts" heading, 4 trainer
-      cards (Julia Smith, Mick Hamilton, Jack Black, Criss James)
+      cards (Julia Smith, Mick Hamilton, Jack Black, Criss James) with role
+      tags (Personal trainer ×3 / Fitness trainer)
 - [ ] Services: 6 cards (Business School, Fitness Pro, Yoga Courses, Diet
       Specialists, Swimming Pool, Spinning Class) with circular line icons,
-      description, "Enroll Now" link
+      description, "Enroll Now" link — no section heading (source fidelity)
 - [ ] Pricing: fixed-bg parallax section, 3 white cards (Woman Fitness
       Class $50 / Spinning Class + BONUS $70 / All Inclusive Gym $90) with
-      green price + "/ Month" + 3 bullets + "Enroll Now"
+      green price + "/ Month" + 3 bullets + "Enroll Now" — no section
+      heading (source fidelity)
 - [ ] Working hours: day/hour rows with 3px `#eaeaea` rules, green hover,
       Sunday Closed
-- [ ] Newsletter: 55px input (3px `#eaeaea` border, radius 10px) +
-      gradient Subscribe, confirm on submit
+- [ ] Newsletter: name + email inputs (55px, 3px `#eaeaea` border, radius
+      10px) + gradient Subscribe, confirm on submit
 - [ ] Footer: photo bg + overlay; brand + social icons, testimonials, class
       links, contact columns; bottom bar with year + credit
 - [ ] Radii: 10px on buttons/inputs; 77px circular service icon chips;
@@ -403,4 +407,4 @@ test:coverage -- --project apps/vigor` or `scripts/verify-app.sh vigor`)
       differs
 - [ ] After merge: TEMPLATES.md Fitnessgym (lines 397, 1844) `[~]` → `[x]` +
       Surge URL (`free-react-templates-vigor.surge.sh`) + homepage + `npm
-  run readme:status`
+run readme:status`
