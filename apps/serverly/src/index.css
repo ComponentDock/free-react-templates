@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Serverly brand colors — from the ColorLib "Bhost" preview
+     (https://preview.colorlib.com/theme/bhost/ + styles/main_styles.css):
+     a web-hosting landing theme with a blue-to-purple gradient
+     (#487fee -> #b632fa), dark navy backgrounds #020c22 / #21263a /
+     #181d2e, a yellow #ffc016 hover accent, muted secondary text
+     #92a4b8, and a #416ecc logo accent. */
+
+  /* Gradient start (ColorLib .phone / .domain_search_button / waves). */
+  --color-brand-400: #487fee;
+  /* Gradient end (ColorLib gradient to right, #b632fa). */
+  --color-brand-500: #b632fa;
+
+  /* Dark navy (ColorLib header scrolled / menu #020c22). */
+  --color-navy-900: #020c22;
+  /* Dark navy (ColorLib footer_content #21263a). */
+  --color-navy-800: #21263a;
+  /* Dark navy (ColorLib copyright_bar #181d2e). */
+  --color-navy-950: #181d2e;
+
+  /* Accent yellow (ColorLib .pricing_button hover #ffc016). */
+  --color-sun-400: #ffc016;
+
+  /* Secondary text (ColorLib #92a4b8 — pricing list, footer list). */
+  --color-mist-400: #92a4b8;
+
+  /* Logo accent (ColorLib .logo a span #416ecc). */
+  --color-royal-400: #416ecc;
+
+  /* Domain dot/extension green (ColorLib #03dd03). */
+  --color-leaf-500: #03dd03;
+
+  /* Montserrat (headings + body) via Google Fonts <link> in index.html —
+     matching the ColorLib font. */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
