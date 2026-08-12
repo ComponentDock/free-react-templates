@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Barbell brand palette — recreated from the original gym design
+     (css/style.css): lime green #82D026 accents/buttons, dark navy
+     #081624 headings/footer, light #F3F4FF surfaces, grey #858585
+     placeholders. */
+  --color-brand: #82d026;
+  --color-brand-dark: #6cb01f;
+
+  /* Ink — dark navy headings/footer (#081624 from the original). */
+  --color-ink: #081624;
+  --color-ink-dark: #050e18;
+
+  /* Light — light-grey form/surface background (#F3F4FF from the original). */
+  --color-light: #f3f4ff;
+
+  /* Mist — muted placeholder/secondary text (#858585 from the original). */
+  --color-mist: #858585;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the lime green. */
+  --color-primary-50: #f6fde9;
+  --color-primary-100: #eafacf;
+  --color-primary-200: #d6f5a4;
+  --color-primary-300: #bcee6f;
+  --color-primary-400: #a4e545;
+  --color-primary-500: #82d026;
+  --color-primary-600: #6cb01f;
+  --color-primary-700: #55881c;
+  --color-primary-800: #466c1d;
+  --color-primary-900: #3b5c1d;
+
+  /* Original fonts: "Oswald" (headings, nav, buttons, uppercase) +
+     "PT Sans" (body copy). */
+  --font-sans: 'PT Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+}
