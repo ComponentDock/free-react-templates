@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Gambit brand palette — a cyan → mint gradient on a deep purple base
+     (design tokens from the source template's stylesheet). */
+  --color-brand: #3fcaff;
+  --color-brand-2: #a4ffb0;
+  --color-purple-deep: #231a60;
+  --color-purple-nav: #2c2172;
+  --color-purple-price: #342b7e;
+  --color-purple-mid: #3b328b;
+  --color-purple-end: #3c338d;
+  --color-purple-ink: #22195e;
+  --color-ink: #222222;
+  --color-star: #f8b600;
+
+  /* Rajdhani (600/700) for display headings, Roboto (400/500) for body —
+     loaded via Google Fonts <link> in index.html. */
+  --font-display: 'Rajdhani', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
