@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Altruist brand colors — from the ColorLib "Cause" preview
+     (https://preview.colorlib.com/theme/cause/ + css/main.css):
+     primary green #61c524 (primary-btn bg, logo, nav hover/active, cause
+     title hover, progress fill, stat color3, form focus), secondary teal
+     #46dbb7 (collection hover, condition check bullets, footer click-btn,
+     footer social hover, owl up-arrow). Stat colors: orange #f9a22b,
+     black, green, purple #a978e0. Light-grey #f9f9ff section/card
+     backgrounds, body copy #777777, headings black, footer #04091e with
+     input bg #14192c. */
+  --color-accent: #61c524;
+  --color-accent-dark: #54ab1f;
+  --color-teal: #46dbb7;
+  --color-ink: #000000;
+  --color-body: #777777;
+  --color-light: #f9f9ff;
+  --color-footer: #04091e;
+  --color-footer-input: #14192c;
+  --color-stat-orange: #f9a22b;
+  --color-stat-purple: #a978e0;
+
+  /* Playfair Display (600/700 headings + logo) + Roboto (body, 16px /
+     1.625em) via the <link> in index.html. */
+  --font-sans:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
