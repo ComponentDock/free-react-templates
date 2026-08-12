@@ -1,5 +1,11 @@
 # Template: Penumbra (Education — Course Platform)
 
+> **SUPERSEDED** — do not implement. This ColorLib source (Eclipse) already
+> shipped as **Corona** (PR #340, merged 2026-08-12, live at
+> https://corona.free.componentdock.com). This spec was a duplicate prep by
+> the prep stream racing the Corona claim. All TEMPLATES.md Eclipse rows are
+> marked `[x]`. Delete this folder on next cleanup.
+
 ## Purpose
 
 Penumbra is a single-page education / online-course platform template in the
@@ -392,7 +398,7 @@ https://www.componentdock.com/ (no Colorlib credit).
       blog → footer
 - [ ] Tokens in `src/index.css` `@theme`: `--color-brand: #7c32ff`,
       `--color-brand-end: #c738d8`, `--color-ink: #222222`, `--color-muted:
-    #828bb2`, `--color-panel: #f9f9fb`, `--color-star: #ffc000`,
+  #828bb2`, `--color-panel: #f9f9fb`, `--color-star: #ffc000`,
       `--color-sociabg: #363a4b`, `--color-paper: #ffffff`; Google Fonts
       `<link>` in `index.html`: Playfair Display (400/600/700) + Roboto
       (400/500/700)
