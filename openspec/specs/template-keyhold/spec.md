@@ -223,7 +223,9 @@ and a submit button.
 - **AND** the form SHALL show a Property Status select (Type / Rent / Sale)
 - **AND** the form SHALL show a Price Limit select ($5,000 through
   $2,000,000)
-- **AND** the form SHALL show a gold "Search Properties" submit button
+- **AND** the form SHALL show a gold "Search Property" submit button (the
+  live DOM's `input[type=submit]` reads "Search Property"; the hero CTA
+  reads "Search Properties")
 
 #### Scenario: Search form submission
 
@@ -373,15 +375,16 @@ column, social icons, and a copyright bar.
       `@free-react-templates/keyhold`
 - [ ] TDD: tests written first (red), then implementation (green)
 - [ ] 100% coverage lines/functions/branches/statements (`npm run
-    test:coverage -- --project apps/keyhold` or `scripts/verify-app.sh
-    keyhold`)
+  test:coverage -- --project apps/keyhold` or `scripts/verify-app.sh
+  keyhold`)
 - [ ] Brand gold `#d4ca68` + ink `#000` + muted rgba(0,0,0,0.4) in
       `@theme`; Roboto via Google Fonts link
 - [ ] Section order matches the original 1:1 (see Design reference)
 - [ ] Hero: bg photo + white gradient overlay + left gold panel; 60px
       headline; gold "Search Properties" CTA; mouse scroll indicator
 - [ ] Search bar: 4 fields (Location input, Property Type / Status / Price
-      Limit selects) + gold submit; submit prevents default and confirms
+      Limit selects) + gold "Search Property" submit; submit prevents
+      default and confirms
 - [ ] Featured property cards: price (old + gold), title, location, bed /
       bath / sqft icons, agent strip with Bookmark/Compare, hover gold link
       circle + shadow deepen
