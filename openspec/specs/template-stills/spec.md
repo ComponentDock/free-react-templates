@@ -1,5 +1,10 @@
 # Template: Stills (Photography Portfolio)
 
+> **SUPERSEDED** — ColorLib "Boto" was already shipped as **Framely**
+> (PR #311, https://free-react-templates-framely.surge.sh). This spec was
+> prepped in parallel by the prep stream and must NOT be implemented —
+> delete on next cleanup.
+
 ## Purpose
 
 Stills is a single-page photography-portfolio website template in the
