@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode hook kept for parity with the shared ui package
+   (Corona itself is a light page; the original has no dark theme). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Corona brand palette — a violet → magenta education look. The signature
+     is the gradient linear-gradient(90deg, #7c32ff 0%, #c738d8 100%) used on
+     the registration submit button; sections alternate white with muted
+     gray-blue bands. */
+
+  /* Violet — the primary brand color (#7c32ff): nav accents, button hovers,
+     registration band fallback. */
+  --color-brand: #7c32ff;
+
+  /* Magenta — the gradient partner (#c738d8) of the signature brand
+     gradient. */
+  --color-brand-2: #c738d8;
+
+  /* Ink — the #222222 heading/price/footer color. */
+  --color-ink: #222222;
+
+  /* Muted — the #828bb2 gray-blue of feature icons, form underlines and the
+     video band background. */
+  --color-muted: #828bb2;
+
+  /* Smoke — the #777777 secondary text color. */
+  --color-smoke: #777777;
+
+  /* Card — the #f9f9fb details panel behind course cards. */
+  --color-card: #f9f9fb;
+
+  /* Tint — the #f2f3f7 background of the "Features That Can Avail" cards. */
+  --color-tint: #f2f3f7;
+
+  /* Original fonts: Playfair Display (900) for headings, Roboto for body. */
+  --font-sans:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
