@@ -142,6 +142,13 @@ ml-auto`: `h3` **"About Me"** (white) + two lorem paragraphs (white
   (`picsum.photos/seed/lensly-N/w/h`); fonts via Google Fonts `<link>`
   (Mulish + Hepta Slab); icons via lucide-react.
 
+> **Hero photo deviation (2026-08-12):** the arbitrary `lensly-1` seed
+> rendered an Empire State Building double-exposure — wrong subject for a
+> wedding photographer hero. Screened picsum IDs with a warm/bright pixel
+> metric + vision; pinned `https://picsum.photos/id/64/1920/1280`
+> (golden-hour woman in white with bouquet, bride-like subject, no
+> letterbox bars). Shipped post-merge as fix 78ab0c11.
+
 Lensly lives in `apps/lensly` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, cn).
 

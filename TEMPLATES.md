@@ -352,7 +352,7 @@
 - [x] **Braxit** — [colorlib](https://colorlib.com/wp/template/braxit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/braxit-free-template.jpg) · [Machina](https://free-react-templates-machina.surge.sh)
 - [x] **Bulkapp** — [colorlib](https://colorlib.com/wp/template/bulkapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bulkapp-free-template.jpg) · [Bulkapp](https://free-react-templates-bulkapp.surge.sh)
 - [x] **Callie** — [colorlib](https://colorlib.com/wp/template/callie/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/callie-free-template.jpg) · [marlowe](https://free-react-templates-marlowe.surge.sh)
-[x] **Capture 2** — [colorlib](https://colorlib.com/wp/template/capture-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/capture2-free-template.jpg) · [lensly](https://free-react-templates-lensly.surge.sh)
+- [x] **Capture 2** — [colorlib](https://colorlib.com/wp/template/capture-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/capture2-free-template.jpg) · [lensly](https://free-react-templates-lensly.surge.sh)
 - [x] **Cardboard** — [colorlib](https://colorlib.com/wp/template/cardboard/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cardboard-free-template.jpg) · [kraft](https://free-react-templates-kraft.surge.sh)
 - [ ] **Cargo** — [colorlib](https://colorlib.com/wp/template/cargo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cargo-free-template.jpg)
 - [ ] **Cause** — [colorlib](https://colorlib.com/wp/template/cause/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cause-free-template-1.jpg)
@@ -2436,7 +2436,7 @@
 - [x] **Blog Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/blog-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/blog-templates.jpg) · [marginalia](https://free-react-templates-marginalia.surge.sh)
 - [x] **Boto** — [colorlib](https://colorlib.com/wp/template/boto/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boto-photography-website-template.jpeg) · [Framely](https://free-react-templates-framely.surge.sh)
 - [ ] **Capture** — [colorlib](https://colorlib.com/wp/template/capture/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/capture-free-template.jpg)
-[x] **Capture 2** — [colorlib](https://colorlib.com/wp/template/capture-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/capture2-free-template.jpg) · [lensly](https://free-react-templates-lensly.surge.sh)
+- [x] **Capture 2** — [colorlib](https://colorlib.com/wp/template/capture-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/capture2-free-template.jpg) · [lensly](https://free-react-templates-lensly.surge.sh)
 - [ ] **Cassi** — [colorlib](https://colorlib.com/wp/template/cassi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cassi-free-template.jpg)
 - [ ] **Cocoon** — [colorlib](https://colorlib.com/wp/template/cocoon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cocoon-free-template.jpg)
 - [ ] **Credo** — [colorlib](https://colorlib.com/wp/template/credo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/credo-free-template.jpg)
@@ -3091,7 +3091,7 @@
 
 ## Wedding (14)
 
-- [ ] **Capture 2** — [colorlib](https://colorlib.com/wp/template/capture-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/capture2-free-template.jpg)
+- [x] **Capture 2** — [colorlib](https://colorlib.com/wp/template/capture-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/capture2-free-template.jpg) · [lensly](https://free-react-templates-lensly.surge.sh)
 - [ ] **Dreamwed** — [colorlib](https://colorlib.com/wp/template/dreamwed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dreamwed-free-template.jpg)
 - [x] **Forever Always** — [colorlib](https://colorlib.com/wp/template/forever-always/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foreveralways-template-1771943944925.jpg) · [vows](https://free-react-templates-vows.surge.sh)
 - [ ] **Honey** — [colorlib](https://colorlib.com/wp/template/honey/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/honey-free-template.jpg)
