@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Forno brand palette — warm gold/tan scale. Brand gold #c8a97e
+     (links, buttons, script subheadings); footer dark #3c312e. */
+  --color-primary-50: #faf6ee;
+  --color-primary-100: #f5ecdb;
+  --color-primary-200: #ecd9b6;
+  --color-primary-300: #e2c491;
+  --color-primary-400: #d5b285;
+  --color-primary-500: #c8a97e;
+  --color-primary-600: #b59161;
+  --color-primary-700: #9c784b;
+  --color-primary-800: #7f5f3c;
+  --color-primary-900: #64492f;
+
+  /* Poppins (body/nav) + Great Vibes (script subheadings) — loaded via
+     Google Fonts <link> in index.html. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Great Vibes', cursive;
+}
