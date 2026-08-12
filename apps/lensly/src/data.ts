@@ -10,7 +10,10 @@ export const NAV_LINKS = [
   { label: 'Contact', href: '#contact', active: false },
 ] as const
 
-export const HERO_IMAGE = 'https://picsum.photos/seed/lensly-1/1920/1280'
+/* Hero photo: picsum ID 64 (golden-hour woman in white with bouquet —
+   bride-like subject screened via pixel metric + vision; the arbitrary
+   lensly-1 seed rendered an Empire State Building double-exposure). */
+export const HERO_IMAGE = 'https://picsum.photos/id/64/1920/1280'
 
 export interface WorkTile {
   src: string
