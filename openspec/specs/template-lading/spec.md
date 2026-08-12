@@ -1,5 +1,11 @@
 # Template: Lading (Logistics / Cargo)
 
+> **SUPERSEDED** — ColorLib "Cargo" shipped as **Haulage** (PR #315,
+> https://free-react-templates-haulage.surge.sh). Do NOT implement under the
+> "Lading" name — delete this spec on next cleanup. (The implementer claimed
+> Cargo as `haulage`; the prep spec below documents the same source's design
+> tokens, which the Haulage implementation follows.)
+
 ## Purpose
 
 Lading is a single-page logistics & cargo shipping website template in the
