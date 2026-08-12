@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode hook kept for parity with the shared ui package
+   (Ripply itself is a light page; the original has no dark theme). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Ripply brand palette — a soft lavender → sky-blue gradient family;
+     sections alternate white with light-periwinkle #EFF1FF bands. */
+
+  /* Periwinkle — the light section band background (#EFF1FF) used by the
+     choose-us, video, pricing, FAQ and footer areas. */
+  --color-periwinkle: #eff1ff;
+
+  /* Ink — the #424242 text color of the nav links and plan-name pills. */
+  --color-ink: #424242;
+
+  /* Body — the #6b6d6f muted text color of paragraphs, slider buttons and
+     price feature lists. */
+  --color-body: #6b6d6f;
+
+  /* Price header — the solid #d8cafc header background of the side pricing
+     cards (the featured middle card uses the gradient instead). */
+  --color-price-header: #d8cafc;
+
+  /* Original fonts: Poppins for body/nav, Montserrat for buttons/pricing. */
+  --font-sans:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display:
+    'Montserrat', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
