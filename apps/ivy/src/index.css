@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Ivy design tokens — recreated from the source preview CSS :root
+     variables (no assets copied):
+     - primary #fd5f00: brand orange — CTAs, icon chips, date badges,
+       active nav, section underlines, gallery icons.
+     - primary-hover #e55500: button/social hover shade.
+     - navy #0d1128: deep navy — navbar, alternating service cards,
+       gradient partner.
+     - gold #fda638: mustard gold footer wordmark accent.
+     - purple #5d50c6: testimonial quote icon + footer Subscribe button.
+     - footer #1a1a1a: dark footer background.
+     - light #f8f9fa: teachers + blog section backgrounds. */
+  --color-primary: #fd5f00;
+  --color-primary-hover: #e55500;
+  --color-navy: #0d1128;
+  --color-navy-lighter: #1a1f3a;
+  --color-gold: #fda638;
+  --color-purple: #5d50c6;
+  --color-footer: #1a1a1a;
+  --color-light: #f8f9fa;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    color: #6c757d;
+  }
+}
