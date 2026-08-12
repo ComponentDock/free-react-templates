@@ -343,7 +343,7 @@
 - [x] **Aspiration** — [colorlib](https://colorlib.com/wp/template/aspiration/) · [kindred](https://free-react-templates-kindred.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aspiration-free-template.jpg)
 - [x] **Avision** — [colorlib](https://colorlib.com/wp/template/avision/) · [dispatch](https://free-react-templates-dispatch.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/avision-free-template.jpg)
 - [x] **Basketball** — [colorlib](https://colorlib.com/wp/template/basketball/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/basketball-free-template.jpg) · [Swish](https://free-react-templates-swish.surge.sh)
-- [~] **Beko** — [colorlib](https://colorlib.com/wp/template/beko/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/beko-free-template.jpg)
+- [x] **Beko** — [colorlib](https://colorlib.com/wp/template/beko/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/beko-free-template.jpg) · [Arena](https://free-react-templates-arena.surge.sh)
 - [ ] **Bhost** — [colorlib](https://colorlib.com/wp/template/bhost/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bhost-free-template.jpg)
 - [ ] **Biznance** — [colorlib](https://colorlib.com/wp/template/biznance/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/biznance-free-template.jpg)
 - [x] **Blog Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/blog-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/blog-templates.jpg) · [marginalia](https://free-react-templates-marginalia.surge.sh)
@@ -1812,7 +1812,7 @@
 
 - [ ] **Amin** — [colorlib](https://colorlib.com/wp/template/amin/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amin-free-template.jpg)
 - [ ] **Anime** — [colorlib](https://colorlib.com/wp/template/anime/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/anime-free-template.jpg)
-- [ ] **Beko** — [colorlib](https://colorlib.com/wp/template/beko/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/beko-free-template.jpg)
+- [x] **Beko** — [colorlib](https://colorlib.com/wp/template/beko/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/beko-free-template.jpg) · [Arena](https://free-react-templates-arena.surge.sh)
 - [ ] **Comodo** — [colorlib](https://colorlib.com/wp/template/comodo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/comodo-free-template.jpg)
 - [ ] **Egames** — [colorlib](https://colorlib.com/wp/template/egames/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/egames-free-template-1.jpg)
 - [x] **Endgam** — [colorlib](https://colorlib.com/wp/template/endgam/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/endgam-free-template.jpg) · [pixelpress](https://free-react-templates-pixelpress.surge.sh)
