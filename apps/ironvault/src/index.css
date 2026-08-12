@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Ironvault design tokens — recreated from the source preview CSS
+     (no assets copied):
+     - brand #4438b7: primary purple (buttons fill, hovers, overlay tint).
+     - brand-light #5338b7 / brand-dark #4138b7: edges of the button
+       gradient (linear-gradient(to right, #5338b7, #4138b7, #5338b7));
+       hover slides the 200%-wide gradient to the right.
+     - underline #7a73cc: 8px bar under section titles.
+     - eyebrow #8782ce: hero "Hey" kicker.
+     - ink #1f1b1b: headings / dark text + off-canvas menu links.
+     - stat #cecece: giant "08" experience number.
+     - card #fafafa: CTA experience card background.
+     - panel #f9f9ff: skills progress-table background.
+     - menu #f0f0f0: full-screen off-canvas menu background.
+     - line #eeeeee: borders (footer top, outline buttons).
+     - body #888888: paragraph copy (Poppins 300). */
+  --color-brand: #4438b7;
+  --color-brand-light: #5338b7;
+  --color-brand-dark: #4138b7;
+  --color-underline: #7a73cc;
+  --color-eyebrow: #8782ce;
+  --color-ink: #1f1b1b;
+  --color-stat: #cecece;
+  --color-card: #fafafa;
+  --color-panel: #f9f9ff;
+  --color-menu: #f0f0f0;
+  --color-line: #eeeeee;
+  --color-body: #888888;
+  --font-display: 'Anton', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--color-body);
+    background-color: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    font-weight: 700;
+    line-height: 1.3;
+  }
+}
