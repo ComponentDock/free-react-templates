@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Machina
+   itself is a light-only page (the source design is white/light sections). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Machina brand palette — recreated from the ColorLib "Braxit" design
+     (live demo: https://preview.colorlib.com/theme/braxit/): brand red
+     #FF3514 (buttons with gradient to #d62d12, eyebrows, hero accent word,
+     counter digits, logo mark, "Free Quote" button) + dark navy #140C40
+     (header top bar, headings). */
+  --color-brand: #ff3514;
+  --color-brand-dark: #d62d12;
+
+  /* Ink — headings (dark navy #140C40, the source h1–h5 default). */
+  --color-ink: #140c40;
+
+  /* Body greys — paragraphs (#7a8290) + muted (#999999). */
+  --color-body: #7a8290;
+  --color-mist: #999999;
+
+  /* Neutrals — light section bgs: #FFF7F5 (about), #f7f7fd (categories),
+     #F5F9FB (gray-bg CTA banner, testimonials, footer). */
+  --color-soft: #fff7f5;
+  --color-lilac: #f7f7fd;
+  --color-foam: #f5f9fb;
+  --color-line: #f1f1f1;
+
+  /* Experience badge orange (source `.img-cap` square overlay, #FF8A00). */
+  --color-ember: #ff8a00;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variant
+     resolves to the brand red gradient. */
+  --color-primary-50: #fff1ed;
+  --color-primary-100: #ffe0d9;
+  --color-primary-200: #ffc0b0;
+  --color-primary-300: #ff967d;
+  --color-primary-400: #ff6b4a;
+  --color-primary-500: #ff4a24;
+  --color-primary-600: #ff3514;
+  --color-primary-700: #d62d12;
+  --color-primary-800: #a82512;
+  --color-primary-900: #7c1d10;
+
+  /* Original font: Muli (300–900) for headings AND body — Google Fonts,
+     loaded via <link> in index.html. */
+  --font-sans:
+    'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display:
+    'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
