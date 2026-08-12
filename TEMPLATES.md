@@ -344,7 +344,7 @@
 - [x] **Avision** — [colorlib](https://colorlib.com/wp/template/avision/) · [dispatch](https://free-react-templates-dispatch.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/avision-free-template.jpg)
 - [x] **Basketball** — [colorlib](https://colorlib.com/wp/template/basketball/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/basketball-free-template.jpg) · [Swish](https://free-react-templates-swish.surge.sh)
 - [x] **Beko** — [colorlib](https://colorlib.com/wp/template/beko/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/beko-free-template.jpg) · [Arena](https://free-react-templates-arena.surge.sh)
-- [~] **Bhost** — [colorlib](https://colorlib.com/wp/template/bhost/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bhost-free-template.jpg)
+- [x] **Bhost** — [colorlib](https://colorlib.com/wp/template/bhost/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bhost-free-template.jpg) · [Serverly](https://free-react-templates-serverly.surge.sh)
 - [ ] **Biznance** — [colorlib](https://colorlib.com/wp/template/biznance/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/biznance-free-template.jpg)
 - [x] **Blog Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/blog-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/blog-templates.jpg) · [marginalia](https://free-react-templates-marginalia.surge.sh)
 - [ ] **Boto** — [colorlib](https://colorlib.com/wp/template/boto/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boto-photography-website-template.jpeg)
@@ -3045,7 +3045,7 @@
 
 ## Web Hosting (20)
 
-- [ ] **Bhost** — [colorlib](https://colorlib.com/wp/template/bhost/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bhost-free-template.jpg)
+- [x] **Bhost** — [colorlib](https://colorlib.com/wp/template/bhost/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bhost-free-template.jpg) · [Serverly](https://free-react-templates-serverly.surge.sh)
 - [ ] **Cloud83** — [colorlib](https://colorlib.com/wp/template/cloud83/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cloud83-free-template.jpg)
 - [x] **Cloudnest** — [colorlib](https://colorlib.com/wp/template/cloudnest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cloudnest-template-1771944017064.jpg) · [Stratos](https://free-react-templates-stratos.surge.sh)
 - [ ] **Cloudtemplate** — [colorlib](https://colorlib.com/wp/template/cloudtemplate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cloudtemplate-free-template.jpg)
