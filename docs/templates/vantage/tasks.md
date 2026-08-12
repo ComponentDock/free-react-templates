@@ -97,7 +97,11 @@
   submit, zod validation per repo conventions); blog = 3 photo cards
   (date/byline, title hover #8d83ff, excerpt) on #f9f9ff; footer = #222222
   with About / Navigation Links / Newsletter / InstaFeed (8 picsum thumbs)
-  - copyright bar; picsum seeds `vantage-N`; Roboto + Poppins via `<link>`;
+  - copyright bar; picsum placeholders — hero + contact photos pinned to
+    verified business-subject IDs `id/60` (clean professional workspace)
+    and `id/180` (laptop/desk flat-lay; both browser-verified 2026-08-12 —
+    the `vantage-hero` seed rendered a poncho), other images seeded
+    `vantage-N`; Roboto + Poppins via `<link>`;
     lucide-react icons (brand icons as inline SVG per repo convention).
 
 ## Tasks / todo outline
