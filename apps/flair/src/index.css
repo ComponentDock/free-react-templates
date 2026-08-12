@@ -1,0 +1,120 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode hook kept for parity with the shared ui package
+   (Flair itself is a light page with dark overlay sections; the original
+   has no dark theme). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Flair brand palette — recreated from the reference design: signature
+     purple #7450fe + green #21d397 always paired as the
+     linear-gradient(to right, #7450fe, #21d397) (button fill/frame, skill
+     bars, gradient-clipped quote mark, subscribe button, mobile menu panel),
+     accent green #2bc0a4 (feature icons, video play glyph, Learn More,
+     socials), dark navy #04081d (overlay base, copyright bar), footer dark
+     #131627, footer input #2b2e3d, headings #232d37, body #51545f, muted
+     #b5aec4, borders #ebebeb/#e5e5e5, testimonial arrows #c2c1ca. */
+  --color-brand-purple: #7450fe;
+  --color-brand-green: #21d397;
+  --color-accent: #2bc0a4;
+
+  /* Heading — section titles and blog card titles. */
+  --color-heading: #232d37;
+
+  /* Body — the grey body-copy colour. */
+  --color-body: #51545f;
+
+  /* Muted — search input, footer text, tweet, link list, author role. */
+  --color-muted: #b5aec4;
+
+  /* Line — feature-card dividers + skill bar tracks. */
+  --color-line: #e5e5e5;
+
+  /* Border-light — blog card borders. */
+  --color-border-light: #ebebeb;
+
+  /* Arrow — testimonial navigation arrows. */
+  --color-arrow: #c2c1ca;
+
+  /* Footer — the dark navy footer background. */
+  --color-footer: #131627;
+
+  /* Copyright — the footer copyright bar background. */
+  --color-copyright: #04081d;
+
+  /* Input — the newsletter email input background. */
+  --color-input: #2b2e3d;
+
+  /* Original fonts: Poppins (300/400/500/600/700) for body, headings and
+     buttons + Playfair Display for the decorative testimonial quote mark —
+     Google Fonts via index.html. */
+  --font-sans:
+    'Poppins', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', Arial,
+    sans-serif;
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+
+@layer components {
+  /* Signature gradient-frame button (.fancy-btn): white 13px/600 uppercase
+     text on a 160x46 box with a 2px purple left edge, 2px green right edge
+     and 2px gradient top/bottom edges; the purple→green fill fades in on
+     hover (or permanently for the .fancy-btn-active variant). The
+     .fancy-btn-dark variant uses dark text for light sections. */
+  .fancy-btn {
+    position: relative;
+    z-index: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 46px;
+    padding: 0 15px;
+    border-left: 2px solid #7450fe;
+    border-right: 2px solid #21d397;
+    background-image:
+      linear-gradient(to right, #7450fe, #21d397), linear-gradient(to right, #7450fe, #21d397);
+    background-position:
+      0 0,
+      0 100%;
+    background-size:
+      100% 2px,
+      100% 2px;
+    background-repeat: no-repeat;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+
+  .fancy-btn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: linear-gradient(to right, #7450fe, #21d397);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .fancy-btn:hover::after,
+  .fancy-btn-active::after {
+    opacity: 1;
+  }
+
+  .fancy-btn-dark {
+    color: #232d37;
+  }
+
+  .fancy-btn-dark:hover {
+    color: #fff;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
