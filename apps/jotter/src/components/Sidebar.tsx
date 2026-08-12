@@ -1,9 +1,9 @@
 import { cn } from '@free-react-templates/ui'
 import { NAV_LINKS, SOCIAL_LINKS, SOCIAL_PATHS } from '../data'
 
-/* Sidebar (source: aside#colorlib-aside — fixed left column, 25% width,
-   near-white rgba(0,0,0,0.04) background, logo wordmark, vertical nav and
-   a footer block with the copyright line + social links). */
+/* Sidebar (source: the fixed left aside — 25% width, near-white
+   rgba(0,0,0,0.04) background, logo wordmark, vertical nav and a
+   footer block with the copyright line + social links). */
 export function Sidebar() {
   return (
     <aside

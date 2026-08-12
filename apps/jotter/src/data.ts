@@ -1,5 +1,5 @@
-/* Jotter content data — recreated from the ColorLib "Elen" template's
-   home page (aside menu, article list, footer widgets). Text is
+/* Jotter content data — the home page content (aside menu, article
+   list, footer widgets). Text is
    paraphrased but keeps the same kinds of content. */
 
 export const NAV_LINKS = ['Home', 'Photography', 'Travel', 'Fashion', 'About', 'Contact'] as const

@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Jotter brand palette — recreated from the ColorLib "Elen" template.
-     Accent orange #f05d23 (button fill, link/social hovers, active
+  /* Jotter brand palette — a minimal personal-blog look with an
+     accent orange #f05d23 (button fill, link/social hovers, active
      pagination), near-white sidebar rgba(0,0,0,0.04), ink-black headings,
      #bfbfbf hero subheading, #b3b3b3 text-style CTA + blog meta, and a
      dark navy #132238 footer. */
