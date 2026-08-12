@@ -2,7 +2,7 @@
   "name": "@free-react-templates/schola",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-schola.surge.sh",
+  "homepage": "https://schola.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

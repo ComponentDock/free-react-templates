@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/showkit",
   "private": true,
-  "homepage": "https://free-react-templates-showkit.surge.sh",
+  "homepage": "https://showkit.free.componentdock.com",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

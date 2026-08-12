@@ -2,7 +2,7 @@
   "name": "@free-react-templates/breed",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-breed.surge.sh",
+  "homepage": "https://breed.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

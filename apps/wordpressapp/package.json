@@ -2,7 +2,7 @@
   "name": "@free-react-templates/wordpressapp",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-wordpressapp.surge.sh",
+  "homepage": "https://wordpressapp.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

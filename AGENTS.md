@@ -40,7 +40,10 @@ Tests: Vitest + Testing Library with **100% coverage enforced**.
    templates in one app folder. New templates must NOT reference ColorLib in
    any app file (comments included — provenance lives only in the spec,
    TEMPLATES.md, and the PR), and every template's footer MUST link
-   `https://www.componentdock.com/` ("Component Dock").
+ `https://www.componentdock.com/` ("Component Dock"). Every app's
+ `public/CNAME` contains `<name>.free.componentdock.com` and its
+ `"homepage"` is `https://<name>.free.componentdock.com` (the Surge deploy
+ target).
 6. **Reuse before build.** Use `packages/ui` components and `cn()` instead of
    duplicating. Avoid new dependencies unless truly necessary.
 7. **Follow existing patterns.** Match file structure, naming, component

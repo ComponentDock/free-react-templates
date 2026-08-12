@@ -2,7 +2,7 @@
   "name": "@free-react-templates/bloom",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-bloom.surge.sh",
+  "homepage": "https://bloom.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

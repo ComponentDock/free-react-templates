@@ -2,7 +2,7 @@
   "name": "@free-react-templates/flick",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-flick.surge.sh",
+  "homepage": "https://flick.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

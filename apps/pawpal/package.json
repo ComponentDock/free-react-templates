@@ -2,7 +2,7 @@
   "name": "@free-react-templates/pawpal",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-pawpal.surge.sh",
+  "homepage": "https://pawpal.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

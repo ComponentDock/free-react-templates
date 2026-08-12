@@ -2,7 +2,7 @@
   "name": "@free-react-templates/slice",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-slice.surge.sh",
+  "homepage": "https://slice.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

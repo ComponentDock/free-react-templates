@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/lensly",
   "private": true,
-  "homepage": "https://free-react-templates-lensly.surge.sh",
+  "homepage": "https://lensly.free.componentdock.com",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

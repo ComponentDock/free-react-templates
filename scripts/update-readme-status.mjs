@@ -39,7 +39,7 @@ if (catalogRaw) {
 }
 
 const statusRe = /^- \[( |x|~)\] \*\*(.+?)\*\*/ // any checklist item
-const surgeRe = /\[(\S+?)\]\((https:\/\/free-react-templates-(\S+?)\.surge\.sh)\)/
+const surgeRe = /\[(\S+?)\]\((https:\/\/free-react-templates-(\S+?)\.surge\.sh|https:\/\/(\S+?)\.free\.componentdock\.com)\)/
 
 let category = ''
 const allNames = new Set() // unique template names (total catalog = 1,646)
@@ -57,7 +57,7 @@ for (const line of templates.split('\n')) {
   if (item[1] !== 'x') continue
   const link = line.match(surgeRe)
   if (!link) continue
-  const app = link[3]
+  const app = link[3] ?? link[4]
   if (!recreated.has(app)) {
     recreated.set(app, { source: item[2], categories: new Set(), preview: link[2] })
   }
@@ -109,7 +109,7 @@ const rows = apps
     const info = recreated.get(app)
     const cats = [...info.categories].sort().join(', ')
     const title = app[0].toUpperCase() + app.slice(1)
-    return `| ${i + 1} | **${title}**${inMarketplace.has(app) ? ' ✅' : ''} | ${describe(app)} | ${cats} | [${app}.surge.sh](${info.preview}) · [Component Dock](https://componentdock.com/templates/${app}) |`
+    return `| ${i + 1} | **${title}**${inMarketplace.has(app) ? ' ✅' : ''} | ${describe(app)} | ${cats} | [${app}.free.componentdock.com](${info.preview}) · [Component Dock](https://componentdock.com/templates/${app}) |`
   })
   .join('\n')
 

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/vantage",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-vantage.surge.sh",
+  "homepage": "https://vantage.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

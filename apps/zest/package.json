@@ -2,7 +2,7 @@
   "name": "@free-react-templates/zest",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-zest.surge.sh",
+  "homepage": "https://zest.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
