@@ -123,9 +123,10 @@ rgba(0,0,0,0.09)`; `.btn-primary` = `#0028ff` bg, white text; hover =
   with 4 animated stats; blog = 1 large + 3 thumb entries with meta row;
   sponsorship centered headline; success stories = photo + quote carousel (5
   authors); footer = blue-tinted band with brand/social, Information, Links,
-  Have a Questions? widgets; all images picsum-seeded
-  (`picsum.photos/seed/kindred-N/w/h`); Google Fonts (Oswald + Work Sans) via
-  `<link>`.
+  Have a Questions? widgets; all images picsum placeholders — hero pinned to
+  verified warm meadow portrait `picsum.photos/id/64/1920/1080`, the rest
+  seeded (`picsum.photos/seed/kindred-N/w/h`); Google Fonts (Oswald + Work
+  Sans) via `<link>`.
 
 Kindred lives in `apps/kindred` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, Badge, cn).

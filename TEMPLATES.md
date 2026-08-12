@@ -340,7 +340,7 @@
 - [x] **Arclabs** — [colorlib](https://colorlib.com/wp/template/arclabs/) · [Facade](https://free-react-templates-facade.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/arclabs-free-template.jpg)
 - [x] **Arcwork** — [colorlib](https://colorlib.com/wp/template/arcwork/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/arcwork-free-template.jpg) · [ascendly](https://free-react-templates-ascendly.surge.sh)
 - [x] **Ashion** — [colorlib](https://colorlib.com/wp/template/ashion/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ashion-free-template.jpg) · [atelier](https://free-react-templates-atelier.surge.sh)
-- [ ] **Aspiration** — [colorlib](https://colorlib.com/wp/template/aspiration/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aspiration-free-template.jpg)
+- [~] **Aspiration** — [colorlib](https://colorlib.com/wp/template/aspiration/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aspiration-free-template.jpg)
 - [x] **Avision** — [colorlib](https://colorlib.com/wp/template/avision/) · [dispatch](https://free-react-templates-dispatch.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/avision-free-template.jpg)
 - [ ] **Basketball** — [colorlib](https://colorlib.com/wp/template/basketball/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/basketball-free-template.jpg)
 - [ ] **Beko** — [colorlib](https://colorlib.com/wp/template/beko/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/beko-free-template.jpg)

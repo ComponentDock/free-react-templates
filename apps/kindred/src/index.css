@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Kindred brand palette — recreated from the ColorLib "Aspiration"
+     stylesheet (css/style.css): brand blue #0028ff (38 uses: nav hover,
+     hero overlay, .bg-primary, .btn-primary, service icons, footer
+     overlay opacity .8). */
+  --color-brand: #0028ff;
+  --color-brand-600: #0028ff;
+  --color-brand-700: #0020cc;
+  --color-brand-800: #001a9e;
+
+  /* Primary scale mirrors the brand so the shared Button's default
+     variant resolves (bg-primary-600). */
+  --color-primary-50: #eef1ff;
+  --color-primary-100: #dbe2ff;
+  --color-primary-200: #bcc8ff;
+  --color-primary-300: #93a8ff;
+  --color-primary-400: #6683ff;
+  --color-primary-500: #3d5cff;
+  --color-primary-600: #0028ff;
+  --color-primary-700: #0020cc;
+  --color-primary-800: #001a9e;
+  --color-primary-900: #00146e;
+
+  /* Light section background — grants + testimony areas (#f8f9fa). */
+  --color-light: #f8f9fa;
+
+  /* Original fonts: "Oswald" (headings, 700, uppercase) + "Work Sans"
+     (body) via Google Fonts (loaded in index.html). */
+  --font-display: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
