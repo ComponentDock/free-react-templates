@@ -4,7 +4,7 @@ import type { SVGProps } from 'react'
    Linkedin are undefined), so the footer glyphs are inline SVG paths
    (simple-icons, 24×24 viewBox). */
 
-export type BrandIconName = 'facebook' | 'x' | 'linkedin' | 'instagram' | 'skype'
+type BrandIconName = 'facebook' | 'x' | 'linkedin' | 'instagram' | 'skype'
 
 const PATHS: Record<BrandIconName, string> = {
   facebook:
