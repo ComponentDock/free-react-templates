@@ -170,9 +170,11 @@ icon.png` centered, `translateY(-50%)`). Project titles (from alt
   email/message + submit); blog (3 photo cards with date/title/excerpt,
   #f9f9ff bg); dark footer (#222222) with About / Navigation Links /
   Newsletter / InstaFeed (8 picsum thumbs) + copyright bar; all images
-  picsum-seeded (`picsum.photos/seed/vantage-N/w/h`); Google Fonts
-  Roboto + Poppins via `<link>`; icons via lucide-react (brand icons as
-  inline SVG per repo convention).
+  picsum placeholders (`picsum.photos`; subject-critical hero and contact
+  photos pinned to verified IDs `id/60` office workspace + `id/180` desk
+  workspace, the rest seeded `picsum.photos/seed/vantage-N/w/h`); Google
+  Fonts Roboto + Poppins via `<link>`; icons via lucide-react (brand
+  icons as inline SVG per repo convention).
 
 Vantage lives in `apps/vantage` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, Badge, cn).
