@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Lensly brand colors — from the ColorLib "Capture 2" preview
+     (https://preview.colorlib.com/theme/capture2/ + css/style.css +
+     re-themed bootstrap.min.css): amber #f4ad2d is the re-themed
+     Bootstrap --primary (btn-primary bg, text-primary hero h1, section
+     eyebrow spans, nav hover/active, scrolled logo/links, blog title
+     hover, social icons on dark). Black #000 for the about + footer
+     sections, light gray #f8f9fa for the testimonial band, meta #ccc,
+     body copy #666, ink #212529. */
+  --color-brand: #f4ad2d;
+  --color-ink: #212529;
+  --color-smoke: #666666;
+  --color-meta: #cccccc;
+  --color-light: #f8f9fa;
+
+  /* Hepta Slab (serif headings — hero h1 weight 900, section h2s) +
+     Mulish (body + nav; the original's "Muli" is now served as Mulish
+     on Google Fonts) via the <link> in index.html. */
+  --font-sans: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Hepta Slab', ui-serif, Georgia, serif;
+}
