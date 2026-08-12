@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Nebuly brand palette — design tokens extracted from the source
+     preview's css/style.css: royal indigo #3f52e3 (hero overlay, counter
+     band, links, active FAQ toggle, primary buttons), accent green
+     #21bf73 (hero CTA, nav CTA border, service icons, quote icon, footer
+     social hover), green hover #1da966, indigo hover #293ee0, accent pink
+     #ff8ba7, purple-dark footer #421b9b, light band #f8f9fa, navy
+     #203d67. */
+  --color-brand: #3f52e3;
+  --color-branddark: #293ee0;
+  --color-accent: #21bf73;
+  --color-accentdark: #1da966;
+  --color-pink: #ff8ba7;
+  --color-footer: #421b9b;
+  --color-light: #f8f9fa;
+  --color-navy: #203d67;
+
+  /* Work Sans (weights 400–700, served via the Google Fonts <link> in
+     index.html) — body 400/500, headings 600/700. */
+  --font-sans: 'Work Sans', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
