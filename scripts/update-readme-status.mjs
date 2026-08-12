@@ -66,30 +66,38 @@ for (const line of templates.split('\n')) {
 
 const total = allNames.size
 
+/** Strip provenance/boilerplate phrases from a candidate description sentence. */
+function stripSentence(s) {
+  return s
+    .replace(/ in the free-react-templates monorepo/gi, '')
+    .replace(/ \(see TEMPLATES\.md\)/g, '')
+    .replace(/, built under a different name.*$/, '')
+    .replace(/It is an original React recreation of the ColorLib free "[^"]+" website template design/i, '')
+    .trim()
+}
+
+/** First clean sentence of the Purpose section, provenance skipped. */
+function pickSentence(sentences) {
+  const first = stripSentence(sentences[0] ?? '')
+  if (first && !/ColorLib|recreation/i.test(first)) return first
+  return stripSentence(sentences[1] ?? '')
+}
+
+/** Normalize the picked sentence into a single clean description. */
+function tidySentence(pick) {
+  const cleaned = (pick.endsWith('.') ? pick : pick + '.').replace(/\.+/g, '.').replace(/^[,;: ]+|[,;: ]+$/g, '')
+  return cleaned.length > 150 ? cleaned.slice(0, 147) + '…' : cleaned
+}
+
 /** Meaningful description: first sentence of Purpose, provenance stripped. */
 function describe(app) {
+  const fallback = `A ready-to-use ${app} template. Browse it on Component Dock: https://componentdock.com/templates/${app}`
   const spec = read(`openspec/specs/template-${app}/spec.md`)
   const m = spec.match(/## Purpose\n\n([\s\S]*?)(?:\n\n|$)/)
-  if (m) {
-    const para = m[1].replace(/\s+/g, ' ').replace(/\(preview:[^)]*\)/g, '').trim()
-    const sentences = para.split('. ').map((s) => s.trim())
-    const strip = (s) =>
-      s
-        .replace(/ in the free-react-templates monorepo/gi, '')
-        .replace(/ \(see TEMPLATES\.md\)/g, '')
-        .replace(/, built under a different name.*$/, '')
-        .replace(/It is an original React recreation of the ColorLib free "[^"]+" website template design/i, '')
-        .trim()
-    let pick = strip(sentences[0] ?? '')
-    if (!pick || /ColorLib|recreation/i.test(pick)) {
-      pick = strip(sentences[1] ?? '')
-    }
-    if (pick) {
-      const cleaned = (pick.endsWith('.') ? pick : pick + '.').replace(/\.+/g, '.').replace(/^[,;: ]+|[,;: ]+$/g, '')
-      return cleaned.length > 150 ? cleaned.slice(0, 147) + '…' : cleaned
-    }
-  }
-  return `A ready-to-use ${app} template. Browse it on Component Dock: https://componentdock.com/templates/${app}`
+  if (!m) return fallback
+  const para = m[1].replace(/\s+/g, ' ').replace(/\(preview:[^)]*\)/g, '').trim()
+  const pick = pickSentence(para.split('. ').map((s) => s.trim()))
+  return pick ? tidySentence(pick) : fallback
 }
 
 const apps = [...recreated.keys()].sort()
