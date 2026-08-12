@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode hook kept for parity with the shared ui package
+   (Quad itself is a light page; the original has no dark theme). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Quad brand palette — a navy + gold academic look. The primary is the
+     deep navy #002347 (headings, nav links, hero text, section backgrounds
+     for registration/events/footer, price badge text); gold #fdc632 powers
+     the call-to-action buttons, nav hover/active and the circular course
+     price badge. The off-white #f9f9ff tints the feature and course card
+     backgrounds, #334f6c fills the countdown tiles and #7b838a is the body
+     text gray. */
+
+  /* Navy — the primary brand color (#002347). */
+  --color-primary: #002347;
+
+  /* Gold — the secondary accent (#FDC632): CTA buttons, price badge. */
+  --color-accent: #fdc632;
+
+  /* Dark gold — hover/darker variant (#F8B600). */
+  --color-accent-dark: #f8b600;
+
+  /* Light gold — lighter accent variant (#F4E700). */
+  --color-accent-light: #f4e700;
+
+  /* Card — the #F9F9FF feature/course card background. */
+  --color-card: #f9f9ff;
+
+  /* Tile — the #334F6C countdown tile background. */
+  --color-tile: #334f6c;
+
+  /* Muted — the #7B838A body text color. */
+  --color-muted: #7b838a;
+
+  /* Original fonts: Rubik for headings/nav/buttons, Roboto for body text. */
+  --font-sans:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-heading: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
