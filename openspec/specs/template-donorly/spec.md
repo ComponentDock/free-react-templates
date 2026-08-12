@@ -76,6 +76,10 @@ CSS 4 + TypeScript.
 
 ### Requirement: Top bar (green utility strip)
 
+The system SHALL render a thin green utility strip above the navbar on
+desktop viewports, with white utility links and social icons, and SHALL
+hide it on mobile.
+
 #### Scenario: Desktop shows the strip
 
 - **GIVEN** a viewport width ≥ 768px
@@ -92,6 +96,10 @@ CSS 4 + TypeScript.
 - **THEN** the top strip is not rendered
 
 ### Requirement: Dark navbar with wordmark and links
+
+The system SHALL render a dark navbar with a lowercase white wordmark,
+white menu links with green hover/active states, and a mobile slide-in
+menu.
 
 #### Scenario: Desktop navbar
 
@@ -116,6 +124,10 @@ CSS 4 + TypeScript.
 
 ### Requirement: Hero slider with headline and CTA
 
+The system SHALL render a full-viewport hero slider with a centered
+overlay box containing the headline and a green Donate Now button, plus a
+3-slide carousel with dots.
+
 #### Scenario: Hero content
 
 - **GIVEN** the page renders
@@ -133,6 +145,10 @@ CSS 4 + TypeScript.
 - **THEN** the active slide changes to the selected slide
 
 ### Requirement: Feature tiles (Livelihood / Health / School)
+
+The system SHALL render three equal-width photo tiles overlapping the
+hero, each tinted (red, yellow, green) with a white meta label and
+Mansalva title, stacking on mobile.
 
 #### Scenario: Tile row
 
@@ -154,6 +170,10 @@ CSS 4 + TypeScript.
 
 ### Requirement: Latest Causes cards
 
+The system SHALL render a Latest Causes section with three cause cards
+showing category badge, image, red progress bar with caption, title,
+donated amount and donor row.
+
 #### Scenario: Cause cards
 
 - **GIVEN** the page renders
@@ -173,6 +193,10 @@ CSS 4 + TypeScript.
 
 ### Requirement: Why Choose Us with numbered features
 
+The system SHALL render a dark background-image section titled Why Choose
+Us with an intro paragraph and a 2x2 grid of numbered features with
+white-bordered numbers.
+
 #### Scenario: Dark section
 
 - **GIVEN** the page renders
@@ -188,6 +212,10 @@ CSS 4 + TypeScript.
   a white paragraph
 
 ### Requirement: Latest Event cards
+
+The system SHALL render a Latest Event section with two event cards, each
+showing an image, green date box, muted time/location meta and a title
+link, stacking on mobile.
 
 #### Scenario: Event cards
 
@@ -206,6 +234,10 @@ CSS 4 + TypeScript.
 - **THEN** the event cards stack vertically
 
 ### Requirement: Donate Now form
+
+The system SHALL render a donate section with green overlay, an image,
+and a white card containing a validated donation form (Name, Email,
+Amount) with a green submit button.
 
 #### Scenario: Donate section layout
 
@@ -228,6 +260,9 @@ CSS 4 + TypeScript.
 
 ### Requirement: CTA strip
 
+The system SHALL render a light-grey CTA strip with a Mansalva headline
+and a green Donate Now button, stacking on mobile.
+
 #### Scenario: CTA content
 
 - **GIVEN** the page renders
@@ -242,6 +277,10 @@ CSS 4 + TypeScript.
 - **THEN** the heading and button stack vertically
 
 ### Requirement: Footer
+
+The system SHALL render a white footer with About Us blurb, Features
+links, validated newsletter subscription, social icons and a Component
+Dock attribution in the copyright bar.
 
 #### Scenario: Footer content
 
@@ -268,6 +307,9 @@ CSS 4 + TypeScript.
 
 ### Requirement: Page composition
 
+The system SHALL compose the page in the documented section order with
+the document title "Donorly — Charity Template".
+
 #### Scenario: Section order
 
 - **GIVEN** the user opens the app
@@ -288,7 +330,7 @@ CSS 4 + TypeScript.
       component, scenario-style `it` blocks).
 - [ ] Mansalva + Roboto loaded via Google Fonts `<link>`s in `index.html`.
 - [ ] `@theme` tokens: `--color-primary: #00a651`, `--color-secondary:
-    #21323b`, `--color-body: #364d59`, `--color-danger: #dc3545`,
+  #21323b`, `--color-body: #364d59`, `--color-danger: #dc3545`,
       `--color-warning: #ffc107`, `--font-display: 'Mansalva', cursive`,
       `--font-body: 'Roboto', sans-serif`.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock"); no
