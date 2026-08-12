@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Barbell brand palette — recreated from the ColorLib "Crossfit 2"
-     design (css/style.css): lime green #82D026 brand (buttons, active nav,
+  /* Barbell brand palette — recreated from the original gym design
+     (style.css): lime green #82D026 brand (buttons, active nav,
      tiles, CTA band), hover #6da81f, dark navy #081624 ink (headings,
      arrows, footer), light #F3F4FF mist (phone pill, booking form),
      muted grey #858585 (body/placeholders). */

@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react'
 import { Dumbbell, Menu, Phone, Search, X } from 'lucide-react'
 
-const links = [
+const links: ReadonlyArray<{ label: string; href: string; active?: boolean }> = [
   { label: 'Home', href: '#home', active: true },
   { label: 'About us', href: '#about' },
   { label: 'Classes', href: '#classes' },
   { label: 'Blog', href: '#blog' },
   { label: 'Contact', href: '#contact' },
-] as const
+]
 
 export function Header() {
   const [open, setOpen] = useState(false)
