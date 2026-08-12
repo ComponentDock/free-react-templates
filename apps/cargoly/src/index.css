@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Cargoly
+   itself is a light-only page (the source design is white sections on a dark
+   hero/footer). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Cargoly brand palette — recreated from the ColorLib "Boxe" design (live
+     demo: https://preview.colorlib.com/theme/boxe/): violet #6345fe (buttons,
+     quote section bg, logo icon, link hovers) + yellow #f6a515 (hero CTA
+     button, pick-up card, hover accents). */
+  --color-brand: #6345fe;
+  --color-brand-dark: #4f35d4;
+  --color-accent: #f6a515;
+
+  /* Ink — headings (dark indigo #415094). */
+  --color-ink: #415094;
+
+  /* Body greys — paragraphs (#777777) + muted (#999999). */
+  --color-body: #777777;
+  --color-mist: #999999;
+
+  /* Heart — footer credit heart (#d32a2a). */
+  --color-heart: #d32a2a;
+
+  /* Neutrals — light lavender section bgs + borders. */
+  --color-soft: #f9f9ff;
+  --color-lavender: #f0e9ff;
+  --color-line: #f1f1f1;
+
+  /* Night — footer background (dark navy, replaces footer_bg.png). */
+  --color-night: #111534;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variant
+     resolves to the brand violet. */
+  --color-primary-50: #f0edff;
+  --color-primary-100: #e0dbff;
+  --color-primary-200: #c6bcff;
+  --color-primary-300: #a391ff;
+  --color-primary-400: #8266ff;
+  --color-primary-500: #6a4aff;
+  --color-primary-600: #6345fe;
+  --color-primary-700: #4f35d4;
+  --color-primary-800: #3f2aa8;
+  --color-primary-900: #32227f;
+
+  /* Original fonts: Poppins (headings/nav, 300–800) + Roboto (body,
+     300/400/500). Both Google Fonts, loaded via <link> in index.html. */
+  --font-sans:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
