@@ -338,7 +338,7 @@ landmark and a document title.
       offer, testimonials, calculate, team, subscribe, footer)
 - [ ] Design tokens in `@theme`: brand gradient `#fa0347 → #fc561c`, brand
       accent `#fa0347`, dark `#080a19`, headings `#2c3033`, grays
-      `#555555`/`#666666`/`#888888`, gray_bg `#f9f9ff`
+      `#555555`/`#666666`/`#888888`, gray_bg `#f6f5f1`
 - [ ] Fonts: Teko (headings) + Open Sans (body) via Google Fonts `<link>`
 - [ ] Buttons: `.btn_2` pill style — gradient fill, 50px radius, 2px
       #fa0347 border, uppercase 13px 600, hover gradient slide
