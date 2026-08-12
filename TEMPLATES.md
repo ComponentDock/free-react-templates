@@ -401,7 +401,7 @@
 - [x] **Flawless** — [colorlib](https://colorlib.com/wp/template/flawless/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/flawless-free-template.jpg) · [sculpt](https://sculpt.free.componentdock.com)
 - [x] **Foundation** — [colorlib](https://colorlib.com/wp/template/foundation/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foundation-free-template.jpg) · [benevol](https://benevol.free.componentdock.com)
 - [x] **Fox** — [colorlib](https://colorlib.com/wp/template/fox/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fox-free-template.jpg) · [ivy](https://ivy.free.componentdock.com)
-- [ ] **Fundraiser** — [colorlib](https://colorlib.com/wp/template/fundraiser/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fundraiser-free-template.jpg)
+- [~] **Fundraiser** — [colorlib](https://colorlib.com/wp/template/fundraiser/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fundraiser-free-template.jpg)
 - [x] **Gaas** — [colorlib](https://colorlib.com/wp/template/gaas/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gaas-free-template.jpg) · [Gaas](https://gaas.free.componentdock.com)
 - [ ] **Giving** — [colorlib](https://colorlib.com/wp/template/giving/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/giving-free-template.jpg)
 - [ ] **Gymer** — [colorlib](https://colorlib.com/wp/template/gymer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gymer-free-template.jpg)
