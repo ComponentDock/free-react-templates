@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Gains design tokens — recreated from the source preview CSS
+     (no assets copied):
+     - brand #fa0347: red accent — hero headline, section kickers,
+       button borders, solid button backgrounds.
+     - brand-2 #fc561c: orange end of the brand gradient
+       (linear-gradient(to left, #fa0347 0%, #fc561c 50%, #fa0347 100%))
+       used by pill CTAs, the video play button, the about flank, and the
+       extends band.
+     - night #080a19: footer background (very dark navy).
+     - ink #2c3033: headings.
+     - body #666666 / muted #555555: paragraph copy.
+     - secondary #888888: secondary text.
+     - graybg #f6f5f1: testimonials section background. */
+  --color-brand: #fa0347;
+  --color-brand-2: #fc561c;
+  --color-night: #080a19;
+  --color-ink: #2c3033;
+  --color-body: #666666;
+  --color-muted: #555555;
+  --color-secondary: #888888;
+  --color-graybg: #f6f5f1;
+  --font-display: 'Teko', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.857;
+    color: var(--color-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    color: var(--color-ink);
+    font-weight: 700;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
+}
