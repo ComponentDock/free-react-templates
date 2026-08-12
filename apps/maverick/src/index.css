@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Maverick brand colors — from the ColorLib "Clark" preview
+     (https://preview.colorlib.com/theme/clark/ + css/style.css):
+     primary amber #ffbd39 (buttons, hero headline span, resume dates,
+     progress fills, service icons, hire-me band, counter numbers, nav
+     active underline), page/hero/footer black #000000, card surfaces
+     rgba(255,255,255,0.1), counter boxes #191919, progress track
+     #1a1a1a, watermark text rgba(255,255,255,0.1). */
+  --color-brand: #ffbd39;
+  --color-brand-dark: #e6a91f;
+  --color-ink: #000000;
+  --color-card: rgba(255, 255, 255, 0.1);
+  --color-counter: #191919;
+  --color-track: #1a1a1a;
+  --color-watermark: rgba(255, 255, 255, 0.1);
+  --color-muted: rgba(255, 255, 255, 0.7);
+  --color-faint: rgba(255, 255, 255, 0.6);
+
+  /* Poppins (weights 300–900, served via the Google Fonts <link> in
+     index.html) — headings weight 800/900, body 400/500. */
+  --font-sans: 'Poppins', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
