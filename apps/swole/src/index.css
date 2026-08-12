@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Swole design tokens — recreated from the source preview CSS
+     (no assets copied):
+     - brand red #ff0000: primary buttons, sticky header, schedule thead,
+       course price spans, footer background, active carousel dot.
+     - brand hover variants: #ee390f (nav links), #ff3333 (newsletter input
+       background), #fe3233 (social icon buttons).
+     - ink #222222: default heading color; hover bg of primary buttons.
+     - black #000000: outline-button border, testimonial card border,
+       course card titles, become-member overlay.
+     - body gray #777777: paragraph/copy text, schedule cells.
+     - hairlines #eeeeee: table borders + carousel dots; #fafafa dropdown bg. */
+  --color-brand: #ff0000;
+  --color-brand-hover: #ee390f;
+  --color-brand-soft: #ff3333;
+  --color-brand-social: #fe3233;
+  --color-ink: #222222;
+  --color-black: #000000;
+  --color-body: #777777;
+  --color-line: #eeeeee;
+  --color-surface: #fafafa;
+  --font-display: 'Anton', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    color: var(--color-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    color: var(--color-ink);
+    font-weight: 400;
+  }
+}
