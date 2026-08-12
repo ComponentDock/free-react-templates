@@ -2,7 +2,7 @@
   "name": "@free-react-templates/mane",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-mane.surge.sh",
+  "homepage": "https://mane.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

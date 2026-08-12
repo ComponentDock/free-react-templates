@@ -2,7 +2,7 @@
   "name": "@free-react-templates/elevation",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-elevation.surge.sh",
+  "homepage": "https://elevation.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

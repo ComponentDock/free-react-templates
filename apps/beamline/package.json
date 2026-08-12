@@ -2,7 +2,7 @@
   "name": "@free-react-templates/beamline",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-beamline.surge.sh",
+  "homepage": "https://beamline.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

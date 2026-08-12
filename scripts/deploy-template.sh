@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Deploy one template to Surge.sh at https://free-react-templates-<name>.surge.sh
+# Deploy one template to Surge.sh at https://<name>.free.componentdock.com
 #
 # Usage:
 #   bash scripts/deploy-template.sh <template-name>   (e.g. aurora)
@@ -26,7 +26,7 @@ if [ -f "${DIST}/index.html" ]; then
   cp "${DIST}/index.html" "${DIST}/200.html"
 fi
 
-DOMAIN="https://free-react-templates-${NAME}.surge.sh"
+DOMAIN="https://${NAME}.free.componentdock.com"
 echo "==> Deploying ${DIST} -> ${DOMAIN}"
 npx surge "${DIST}" "${DOMAIN}"
 echo "==> Done: ${DOMAIN}"

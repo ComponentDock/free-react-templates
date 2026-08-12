@@ -2,7 +2,7 @@
   "name": "@free-react-templates/mosh",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-mosh.surge.sh",
+  "homepage": "https://mosh.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

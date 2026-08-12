@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/postie",
   "private": true,
-  "homepage": "https://free-react-templates-postie.surge.sh",
+  "homepage": "https://postie.free.componentdock.com",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

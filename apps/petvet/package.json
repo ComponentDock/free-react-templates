@@ -2,7 +2,7 @@
   "name": "@free-react-templates/petvet",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-petvet.surge.sh",
+  "homepage": "https://petvet.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

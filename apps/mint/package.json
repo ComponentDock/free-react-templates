@@ -2,7 +2,7 @@
   "name": "@free-react-templates/mint",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-mint.surge.sh",
+  "homepage": "https://mint.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

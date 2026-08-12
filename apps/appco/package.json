@@ -2,7 +2,7 @@
   "name": "@free-react-templates/appco",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-appco.surge.sh",
+  "homepage": "https://appco.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

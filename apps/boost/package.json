@@ -2,7 +2,7 @@
   "name": "@free-react-templates/boost",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-boost.surge.sh",
+  "homepage": "https://boost.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

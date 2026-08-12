@@ -2,7 +2,7 @@
   "name": "@free-react-templates/crafted",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-crafted.surge.sh",
+  "homepage": "https://crafted.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

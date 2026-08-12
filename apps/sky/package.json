@@ -2,7 +2,7 @@
   "name": "@free-react-templates/sky",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-sky.surge.sh",
+  "homepage": "https://sky.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

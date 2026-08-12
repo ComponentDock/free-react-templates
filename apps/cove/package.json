@@ -2,7 +2,7 @@
   "name": "@free-react-templates/cove",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-cove.surge.sh",
+  "homepage": "https://cove.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

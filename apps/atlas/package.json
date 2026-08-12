@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://free-react-templates-atlas.surge.sh",
+  "homepage": "https://atlas.free.componentdock.com",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",

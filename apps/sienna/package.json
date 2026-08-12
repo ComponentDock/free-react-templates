@@ -2,7 +2,7 @@
   "name": "@free-react-templates/sienna",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-sienna.surge.sh",
+  "homepage": "https://sienna.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

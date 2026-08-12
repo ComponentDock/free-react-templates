@@ -2,7 +2,7 @@
   "name": "@free-react-templates/pawcare",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-pawcare.surge.sh",
+  "homepage": "https://pawcare.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

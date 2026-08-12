@@ -2,7 +2,7 @@
   "name": "@free-react-templates/horse-club",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-horse-club.surge.sh",
+  "homepage": "https://horse-club.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/thepetcare",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://free-react-templates-thepetcare.surge.sh",
+  "homepage": "https://thepetcare.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -29,6 +29,5 @@
     "tailwindcss": "latest",
     "typescript": "latest",
     "vite": "latest"
-  },
-  "homepage": "https://free-react-templates-thepetcare.surge.sh"
+  }
 }
