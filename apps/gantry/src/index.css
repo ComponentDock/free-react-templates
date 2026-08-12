@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode hook kept for parity with the shared ui package
+   (Gantry itself is a light page; the original has no dark theme). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Gantry brand palette — a high-contrast construction look: brand
+     orange #ff5e15 (navbar bar, section subtitles, icon accents, hero
+     highlight word, newsletter band), dark navy #09162a (Why Choose Us /
+     Get A Quote / Our Projects bands), pure black (footer, subscribe
+     button), light grey #f8f9fa (header-top strip + blog section) and
+     #efefef (service-card borders). */
+  --color-brand: #ff5e15;
+
+  /* Navy — the dark section bands (Why Choose Us, Get A Quote, Our
+     Projects). */
+  --color-navy: #09162a;
+
+  /* Black — footer background and the newsletter subscribe button. */
+  --color-black: #000000;
+
+  /* Soft — the light grey header-top strip and blog section. */
+  --color-soft: #f8f9fa;
+
+  /* Card line — the 1px service-card borders. */
+  --color-card-line: #efefef;
+
+  /* Original fonts: Oswald (300/400/700) for headings, the navbar and
+     buttons; Muli (300/400) for body text — Google Fonts via index.html. */
+  --font-sans:
+    'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-heading: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
