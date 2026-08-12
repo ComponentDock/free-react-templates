@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Edify brand palette — online-learning design tokens:
+     violet #c86fff (brand accents), indigo #4255a4 (headings, footer),
+     orange #ff9f67 (CTA buttons, play button), sticky-header gradient
+     #c054ff → #5274ff, light lavenders #f9f9ff / #f0e9ff / #fbf9ff
+     (surfaces), dark navy #1f2b7b, star orange #ff7b2e. */
+  --color-brand: #c86fff;
+  --color-brand-deep: #ae59ff;
+  --color-indigo: #4255a4;
+  --color-indigo-deep: #415094;
+  --color-navy: #1f2b7b;
+  --color-accent: #ff9f67;
+  --color-star: #ff7b2e;
+  --color-lavender: #f9f9ff;
+  --color-lavender-line: #f0e9ff;
+  --color-widget: #fbf9ff;
+  --color-body: #10285d;
+  --color-muted: #6e7697;
+  --color-team-muted: #57667e;
+  --color-grad-a: #c054ff;
+  --color-grad-b: #5274ff;
+
+  /* Josefin Sans headings + Mulish body (Google Fonts <link>). */
+  --font-sans: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+}
