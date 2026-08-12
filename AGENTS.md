@@ -37,7 +37,10 @@ Tests: Vitest + Testing Library with **100% coverage enforced**.
    `apps/<new-name>` (copy the simplest existing app, rename the package to
    `@free-react-templates/<new-name>`). The name must be NEW and DIFFERENT from
    the ColorLib source template (never reuse the source name). Never put two
-   templates in one app folder.
+   templates in one app folder. New templates must NOT reference ColorLib in
+   any app file (comments included — provenance lives only in the spec,
+   TEMPLATES.md, and the PR), and every template's footer MUST link
+   `https://www.componentdock.com/` ("Component Dock").
 6. **Reuse before build.** Use `packages/ui` components and `cn()` instead of
    duplicating. Avoid new dependencies unless truly necessary.
 7. **Follow existing patterns.** Match file structure, naming, component

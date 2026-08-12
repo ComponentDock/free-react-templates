@@ -10,6 +10,7 @@ fresh session with no chat context, so every prompt below is fully self-containe
 | 1 · TPW · Templates pipeline watchdog | ✅ scheduled (no_agent) | every 15m | — (restarts streams)            | this chat |
 | 2 · CIA · Continuous audit (firebase) | ⏸️ paused (2026-08-01)  | every 60m | `/root/free-templates-firebase` | this chat |
 | 6 · CSR · Cron status report          | ✅ scheduled            | every 10m | — (pure script)                 | this chat |
+| 7 · R2 · Template ZIP uploads         | ✅ scheduled (no_agent) | every 60m | `/root/free-react-templates-zips-src` (origin/main clone) | this chat |
 
 ## FAST_MODE: three concurrent streams (2026-08-07, see docs/FAST_MODE.md)
 
@@ -183,6 +184,26 @@ code, React anti-patterns, security issues, missing tests, etc.
 checks. Security findings on Cloud-Function-returned URLs (Stripe, Storage signed
 URLs) are known false positives — verify, don't churn. Commit conventionally,
 push to `origin main`, and report honestly (including "nothing to fix").
+
+---
+
+## Job 7: R2 · Template ZIP uploads (standalone source zips)
+
+| Field         | Value                                              |
+| ------------- | -------------------------------------------------- |
+| **Job ID**    | `da185481dfd8`                                     |
+| **Schedule**  | every 60 minutes                                   |
+| **Script**    | `~/.hermes/scripts/zip-upload-new.sh` (no_agent)   |
+| **Delivery**  | origin (this chat) — silent when nothing new       |
+
+Builds a standalone source ZIP for every template (`apps/<name>` + vendored
+`packages/ui` + root package.json + README — a mini-monorepo that builds with
+`npm install && npm run dev`) from a dedicated origin/main clone
+(`/root/free-react-templates-zips-src`), uploads to Cloudflare R2
+(`free-react-templates` bucket, via boto3 — creds in `/root/.r2-creds.sh`),
+public at `https://downloads.componentdock.com/<name>.zip`. Only zips missing
+from R2 are built/uploaded each run. Generator:
+`~/.hermes/scripts/build-template-zips.sh` (+ `r2-upload.py`).
 
 ---
 

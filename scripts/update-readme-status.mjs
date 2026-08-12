@@ -66,28 +66,30 @@ for (const line of templates.split('\n')) {
 
 const total = allNames.size
 
-/** Meaningful description: skip boilerplate "<Name> is … monorepo" sentences. */
-function describe(app, source) {
+/** Meaningful description: first sentence of Purpose, provenance stripped. */
+function describe(app) {
   const spec = read(`openspec/specs/template-${app}/spec.md`)
   const m = spec.match(/## Purpose\n\n([\s\S]*?)(?:\n\n|$)/)
   if (m) {
-    const sentences = m[1]
-      .replace(/\s+/g, ' ')
-      .replace(/\(preview:[^)]*\)/g, '')
-      .split('. ')
-      .map((s) => s.trim() + '.')
-      .filter((s) => s.length > 2 && !s.startsWith(`${app[0].toUpperCase()}${app.slice(1)} is`))
-    const pick = sentences.find((s) => /ColorLib/i.test(s)) ?? sentences[0]
-    if (pick) {
-      const cleaned = pick
+    const para = m[1].replace(/\s+/g, ' ').replace(/\(preview:[^)]*\)/g, '').trim()
+    const sentences = para.split('. ').map((s) => s.trim())
+    const strip = (s) =>
+      s
+        .replace(/ in the free-react-templates monorepo/gi, '')
         .replace(/ \(see TEMPLATES\.md\)/g, '')
-        .replace(/, built under a different name.*$/, '.')
-        .replace(/^It is an original React recreation of the ColorLib free /i, 'Recreation of ColorLib ')
+        .replace(/, built under a different name.*$/, '')
+        .replace(/It is an original React recreation of the ColorLib free "[^"]+" website template design/i, '')
         .trim()
+    let pick = strip(sentences[0] ?? '')
+    if (!pick || /ColorLib|recreation/i.test(pick)) {
+      pick = strip(sentences[1] ?? '')
+    }
+    if (pick) {
+      const cleaned = (pick.endsWith('.') ? pick : pick + '.').replace(/\.+/g, '.').replace(/^[,;: ]+|[,;: ]+$/g, '')
       return cleaned.length > 150 ? cleaned.slice(0, 147) + '…' : cleaned
     }
   }
-  return `Recreation of ColorLib ${source}.`
+  return `A ready-to-use ${app} template. Browse it on Component Dock: https://componentdock.com/templates/${app}`
 }
 
 const apps = [...recreated.keys()].sort()
@@ -99,7 +101,7 @@ const rows = apps
     const info = recreated.get(app)
     const cats = [...info.categories].sort().join(', ')
     const title = app[0].toUpperCase() + app.slice(1)
-    return `| ${i + 1} | **${title}**${inMarketplace.has(app) ? ' ✅' : ''} | ${describe(app, info.source)} | ${cats} | [${app}.surge.sh](${info.preview}) |`
+    return `| ${i + 1} | **${title}**${inMarketplace.has(app) ? ' ✅' : ''} | ${describe(app)} | ${cats} | [${app}.surge.sh](${info.preview}) · [Component Dock](https://componentdock.com/templates/${app}) |`
   })
   .join('\n')
 
@@ -109,9 +111,9 @@ const section = `## Templates
 
 > Updated automatically after every template merge
 > (\`node scripts/update-readme-status.mjs\`). Each row is an original React
-> recreation of a ColorLib design, deployed to its own Surge subdomain.
-> Templates marked **✅** are also listed in the Component Dock marketplace
-> (free-templates-firebase mock catalog / Firestore).
+> template, deployed to its own Surge subdomain. Templates marked **✅** are
+> also listed in the Component Dock marketplace
+> (https://componentdock.com — see the catalog with full descriptions there).
 
 | # | Template | Description | Categories | Preview |
 | --- | --- | --- | --- | --- |
