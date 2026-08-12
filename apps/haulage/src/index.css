@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Haulage brand colors — from the ColorLib "Cargo" preview
+     (https://preview.colorlib.com/theme/cargo/ + css/style.css +
+     re-themed bootstrap.min.css): orange #ff8b00 is the re-themed
+     Bootstrap --primary (logo, nav hover/active, section h2s, btn-primary
+     bg, pricing price, counters, checkmarks, blog title hover, carousel
+     dots). Hero overlay gradient #377aff → #00d9ff at 45°. Light-grey
+     #f6f5f5 section backgrounds, body copy #939393, card copy #999999,
+     kicker/role #b8b8b8, pricing suffix #cccccc, dark #333333 footer,
+     ink #212529 for dark headings. */
+  --color-brand: #ff8b00;
+  --color-brand-dark: #e07d00;
+  --color-ink: #212529;
+  --color-smoke: #939393;
+  --color-meta: #999999;
+  --color-faint: #b8b8b8;
+  --color-cc: #cccccc;
+  --color-light: #f6f5f5;
+  --color-footer: #333333;
+
+  /* Oswald (uppercase headings + logo, weight 900 for the logo) + Rubik
+     (body, 1rem / 1.7 line-height) via the <link> in index.html. */
+  --font-sans:
+    'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+  --font-display: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+}
