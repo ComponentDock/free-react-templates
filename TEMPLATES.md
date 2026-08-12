@@ -362,7 +362,7 @@
 - [x] **Comodo** — [colorlib](https://colorlib.com/wp/template/comodo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/comodo-free-template.jpg) · [Gambit](https://gambit.free.componentdock.com)
 - [x] **Confer** — [colorlib](https://colorlib.com/wp/template/confer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/confer-free-template-1.jpg) · [summit](https://summit.free.componentdock.com)
 - [x] **Consulting** — [colorlib](https://colorlib.com/wp/template/consulting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/consulting-free-template.jpg) · [Meridian](https://meridian.free.componentdock.com)
-- [ ] **Consultingbiz** — [colorlib](https://colorlib.com/wp/template/consultingbiz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/consultingbiz-free-template.jpeg)
+- [~] **Consultingbiz** — [colorlib](https://colorlib.com/wp/template/consultingbiz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/consultingbiz-free-template.jpeg)
 - [ ] **Courses** — [colorlib](https://colorlib.com/wp/template/courses/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/courses-free-template.jpg)
 - [ ] **Craft** — [colorlib](https://colorlib.com/wp/template/craft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/craft-free-template.jpg)
 - [ ] **Creative Agency 2** — [colorlib](https://colorlib.com/wp/template/creative-agency-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agency-free-agency-website-template.jpg)

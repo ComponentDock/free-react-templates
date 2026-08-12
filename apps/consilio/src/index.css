@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Consilio brand palette — corporate consulting design tokens:
+     navy #14435c dominant brand, red #ff2143 accent CTA, pink-red #eb566c
+     section eyebrows, near-black footer #11141b. */
+  --color-brand: #14435c;
+  --color-brand-deep: #092c3f;
+  --color-navy: #0d2d3e;
+  --color-navy-dark: #06151d;
+  --color-ink: #0b1416;
+  --color-accent: #ff2143;
+  --color-eyebrow: #eb566c;
+  --color-footer: #11141b;
+  --color-footer-border: #233148;
+  --color-body: #10285d;
+
+  /* Roboto for headings, Poppins for body/buttons (Google Fonts <link>). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
