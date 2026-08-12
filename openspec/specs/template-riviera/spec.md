@@ -140,8 +140,9 @@ margin-top: -320px`, overlapping; `img/video-inside-bg.jpg`) with a
   - homepage about `section.homepage-about.spad` — `.about-text` with
     `div.section-title` `h2` "“Customers love our <br>facilities”"
     (`#242424`, line-height 56px) + paragraph + peach `primary-btn` "Make a
-    Reservation"; then 3 stacked `.about-img` photos (`home-about-1..3.jpg`,
-    `min-width: 100%; margin-bottom: 30px`).
+    Reservation"; the right column holds a `row` of four `col-sm-6`
+    `.about-img` photos (`home-about-1..4.jpg`, 2×2 grid,
+    `margin-bottom: 30px`).
   - footer `footer.footer-section` — `background: #242424; padding-top:
 72px`; `row` of three `col-lg-4 .footer-item`:
     1. `div.footer-logo` (image; recreate as text) + lorem paragraph;
@@ -225,8 +226,8 @@ hero's bottom edge with date, guest-count and room-type fields.
 - **AND** it SHALL contain From and To date fields (label + input with a
   calendar icon; input styled 10px uppercase `#242424` at 50% opacity over a
   `1px solid #888888` bottom border)
-- **AND** Adults and Children steppers SHALL each show a `-`/`+` control
-  around a number input
+- **AND** Adults, Children and Rooms steppers SHALL each show a `-`/`+`
+  control around a number input
 - **AND** a Room dropdown SHALL list "Master suite · Double Room · Single
   Room · Special Room"
 - **AND** a peach "Go" button SHALL submit the form (square, 18px white
@@ -315,7 +316,9 @@ stack of three photos.
 - **THEN** the text column SHALL show the heading "“Customers love our
   facilities”" (`#242424`, line-height 56px), a body paragraph and a peach
   "Make a Reservation" button
-- **AND** three full-width photos SHALL stack below it (30px gaps)
+- **AND** the photo column SHALL show four photos in a two-column grid
+  (2×2, 30px gaps) beside the text (the live preview uses four
+  `about-img` blocks in `col-sm-6` cells)
 
 ### Requirement: Dark footer with newsletter and contact info
 

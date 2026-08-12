@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode hook kept for parity with the shared ui package
+   (Riviera itself is a light page; the original has no dark theme). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Riviera brand palette — a luxury resort look: peach #F9AD81 (primary
+     buttons, active nav link + dot, dropdown hover, booking "Go" button,
+     footer headings, newsletter subscribe, play icon, testimonial names),
+     dark charcoal #353535 (header bar), near-black #181717 (section
+     titles) and #242424 (secondary headings, labels, footer background),
+     grey #9d9d9d (body text), #868686 (intro eyebrow), #676767 (newsletter
+     input), #171717 (copyright bar), warm orange #ed8a19 (rating stars). */
+  --color-brand: #f9ad81;
+
+  /* Rating star — the warmer orange used for the guestbook stars. */
+  --color-star: #ed8a19;
+
+  /* Header — the dark charcoal bar at the very top. */
+  --color-header: #353535;
+
+  /* Heading — near-black section titles (intro, about). */
+  --color-heading: #181717;
+
+  /* Ink — secondary headings, form labels, footer background. */
+  --color-ink: #242424;
+
+  /* Body — the grey body-copy colour. */
+  --color-body: #9d9d9d;
+
+  /* Eyebrow — the small uppercase section eyebrows. */
+  --color-eyebrow: #868686;
+
+  /* Input — the newsletter email input background. */
+  --color-input: #676767;
+
+  /* Copyright — the footer copyright bar background. */
+  --color-copyright: #171717;
+
+  /* Original font: Montserrat Alternates (400/500/600/700) for headings,
+     body and inputs — Google Fonts via index.html. */
+  --font-sans:
+    'Montserrat Alternates', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial,
+    sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
