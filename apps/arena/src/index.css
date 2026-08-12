@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Arena brand palette — recreated from the ColorLib "Beko" gaming
+     template (https://colorlib.com/wp/template/beko/), tokens extracted
+     from the live preview's css/style.css:
+     - red #ff0000 + magenta #c6019a: brand gradient
+       linear-gradient(to left, #ff0000 0%, #c6019a 51%, #ff0000 100%)
+       on primary buttons, nav underlines, card overlays, email icon
+     - near-black page #000 with dark navy #0b111f pricing cards
+     - white headings, Poppins body text */
+  --color-ember-400: #ff4040;
+  --color-ember-500: #ff0000;
+  --color-ember-600: #d10000;
+  --color-magenta-500: #c6019a;
+  --color-magenta-600: #a1017d;
+  --color-navy-700: #182031;
+  --color-navy-800: #0b111f;
+  --color-navy-900: #070a13;
+  --color-navy-950: #05070d;
+
+  /* Fonts (Google Fonts, loaded in index.html): Aclonica for display
+     headings/buttons, Poppins for body text. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Aclonica', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #05070d;
+    color: #ffffff;
+    font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  }
+}
