@@ -391,7 +391,7 @@
 - [x] **Faith** — [colorlib](https://colorlib.com/wp/template/faith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/faith-free-template.jpg) · [creeds](https://creeds.free.componentdock.com)
 - [x] **Fancy** — [colorlib](https://colorlib.com/wp/template/fancy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fancy-free-creative-business-website-template.jpg) · [flair](https://flair.free.componentdock.com)
 - [x] **Favison** — [colorlib](https://colorlib.com/wp/template/favison/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/favison-free-template.jpg) · [Favison](https://favison.free.componentdock.com)
-- [~] **Feliciano** — [colorlib](https://colorlib.com/wp/template/feliciano/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/feliciano-free-template.jpg)
+- [x] **Feliciano** — [colorlib](https://colorlib.com/wp/template/feliciano/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/feliciano-free-template.jpg) · [forno](https://forno.free.componentdock.com)
 - [ ] **Findstate** — [colorlib](https://colorlib.com/wp/template/findstate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/findstate-free-template.jpg)
 - [ ] **Fitfloss** — [colorlib](https://colorlib.com/wp/template/fitfloss/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitfloss-free-template.jpg)
 - [ ] **Fitnessgym** — [colorlib](https://colorlib.com/wp/template/fitnessgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitnessgym-free-template.jpg)
