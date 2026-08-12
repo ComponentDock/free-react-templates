@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Forge brand palette — creative-agency design tokens:
+     teal #20c997 (brand — buttons, hero highlight, CTA band, dropdown
+     hover), hover #1ba87e; portfolio section blue-gray #90a8af; footer
+     dark #333; light surface #f8f9fa; secondary text #6c757d; body
+     #212529; about offset shadow #eee. */
+  --color-brand: #20c997;
+  --color-brand-deep: #1ba87e;
+  --color-brand-light: #3ce0af;
+  --color-portfolio: #90a8af;
+  --color-footer: #333333;
+  --color-surface: #f8f9fa;
+  --color-secondary: #6c757d;
+  --color-body: #212529;
+
+  /* Raleway 300/400/700 (Google Fonts <link>). */
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+}
