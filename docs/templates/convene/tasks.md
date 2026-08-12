@@ -1,5 +1,10 @@
 # Convene (ColorLib "Eventure") — Tasks & Design Notes
 
+> **SUPERSEDED** — ColorLib "Eventure" already shipped as **rally**
+> (apps/rally, PR #347, live at https://rally.free.componentdock.com,
+> TEMPLATES.md lines 389/1681 marked `[x]`). Do NOT implement this prep —
+> delete on next cleanup.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-convene` by an implementer stream.
 
