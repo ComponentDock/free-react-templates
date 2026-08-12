@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Decibel brand palette — hot pink #e3207b (buttons, heading
+     underlines, card title highlights, active dots, form focus), page
+     background #222831, dark section background #13171d, hover pinks
+     #c41969 / #b91763, social hover #eec60a on #cf1a6f, hero overlay
+     rgba(0,0,0,0.4), body text rgba(255,255,255,0.5), footer text
+     #737373, dates #6c757d. */
+  --color-primary: #e3207b;
+  --color-primary-hover: #c41969;
+  --color-primary-active: #b91763;
+  --color-night: #222831;
+  --color-dark: #13171d;
+  --color-ash: #737373;
+  --color-steel: #6c757d;
+  --color-flash: #eec60a;
+  --color-berry: #cf1a6f;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the hot pink. */
+  --color-primary-50: #fdf0f6;
+  --color-primary-100: #fbdcec;
+  --color-primary-200: #f7b9d8;
+  --color-primary-300: #f18dbc;
+  --color-primary-400: #ea5d9c;
+  --color-primary-500: #e3207b;
+  --color-primary-600: #c41969;
+  --color-primary-700: #a31458;
+  --color-primary-800: #821046;
+  --color-primary-900: #610c34;
+
+  /* Original fonts: Oswald (headings, uppercase, letter-spaced) +
+     Nunito Sans (body) + Pacifico (script logo wordmark). */
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Pacifico', cursive;
+}

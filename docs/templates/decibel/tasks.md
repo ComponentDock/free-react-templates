@@ -206,9 +206,11 @@ rgba(255,255,255,0.5)`, `--color-muted #737373`, `--color-date
 - [ ] Oswald (400/500/600) + Nunito Sans (400/600/700) + Pacifico (logo
       wordmark) via Google Fonts link in index.html; document title
       "Decibel — DJ & Radio Template"; `<main>` landmark.
-- [ ] Photos: seeded picsum `decibel-<n>/<w>/<h>` (hero 1, shows 1-4,
-      retro 1-3, avatars 1-5, DJs 1-6, news 1-3, streaming 1); no copied
-      assets.
+- [ ] Photos: seeded picsum `decibel-<n>/<w>/<h>` (shows 1-4, retro 1-3,
+      avatars 1-5, DJs 1-6, news 1-3, streaming 1); no copied assets.
+      HERO: pinned `picsum.photos/id/1041/1600/900` (dark-moody ocean —
+      no picsum seed rendered a music/DJ subject, verified 2026-08-12;
+      see spec deviation note).
 - [ ] `scripts/verify-app.sh decibel` until green (typecheck + lint +
       vitest 100% + build).
 - [ ] Implementer: mark `[~]` → `[x]` on BOTH dup rows (TEMPLATES.md
