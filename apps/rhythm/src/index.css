@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Rhythm brand palette — deep-purple nightlife aesthetic: brand purple
+     buttons, dark purple bands. */
+  --color-brand: #5c00ce;
+  --color-brand-deep: #5400bc;
+  --color-brand-dark: #290849;
+  --color-brand-alt: #7e00ad;
+  --color-ink: #111111;
+  --color-muted: #666666;
+  --color-muted-light: #888888;
+  --color-watermark: #f2f2f2;
+  --color-paper: #ffffff;
+  --color-overlay: rgb(42 1 74 / 0.5);
+
+  /* Original fonts: "Rajdhani" headings + display (Google Fonts), "Poppins"
+     as the "Now Regular" body substitute — loaded in index.html. */
+  --font-display: 'Rajdhani', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+}
