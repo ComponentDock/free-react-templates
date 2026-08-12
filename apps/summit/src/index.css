@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Summit brand palette — conference theme:
+     pink #df42b1 (accents) · indigo #505add (gradient partner) ·
+     deep navies #151853 / #111343 (surfaces) · muted #9293bc. */
+  --color-brand: #df42b1;
+  --color-brand-deep: #c63fa4;
+  --color-indigo: #505add;
+  --color-navy: #151853;
+  --color-navy-deep: #111343;
+  --color-tab: #1f2371;
+  --color-tab-active: #5d5e8d;
+  --color-muted: #9293bc;
+  --color-line: #444675;
+  --color-form-line: #dbdcf1;
+
+  /* Poppins (body + headings) via Google Fonts <link> in index.html. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Signature pink → indigo gradient (buttons, plan labels, overlays). */
+@utility bg-brand-gradient {
+  background-image: linear-gradient(120deg, #505add 0%, #df42b1 100%);
+}
+
+/* Gradient overlay used over photo backgrounds (opacity 0.9). */
+@utility bg-gradient-overlay {
+  background-image: linear-gradient(120deg, #df42b1 0%, #505add 100%);
+  opacity: 0.9;
+}
