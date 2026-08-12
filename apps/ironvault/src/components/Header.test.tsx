@@ -33,6 +33,10 @@ describe('Header', () => {
     await user.click(screen.getByRole('button', { name: 'Open menu' }))
     expect(screen.getByRole('navigation', { name: 'Overlay' })).toBeInTheDocument()
 
+    // A non-Escape key keeps the overlay open…
+    await user.keyboard('{a}')
+    expect(screen.getByRole('navigation', { name: 'Overlay' })).toBeInTheDocument()
+
     await user.keyboard('{Escape}')
     expect(screen.queryByRole('navigation', { name: 'Overlay' })).not.toBeInTheDocument()
   })
