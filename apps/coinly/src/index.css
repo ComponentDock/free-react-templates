@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Coinly brand palette — dark blue #20509e headings/logo, teal
+     #16d0c5 accents (hero span, facts, post dates), indigo #3e2bce →
+     teal-green #2dd3aa gradient (bands + gradient buttons), light
+     #f3f7f9 hero/page base, muted #75849a / #acb9cc, outline teal
+     #7ad4cc (outline pill buttons), border #ebebeb. */
+  --color-brand: #20509e;
+  --color-accent: #16d0c5;
+  --color-grad-start: #3e2bce;
+  --color-grad-end: #2dd3aa;
+  --color-mist: #f3f7f9;
+  --color-muted: #75849a;
+  --color-faint: #acb9cc;
+  /* Ash — team social circle base (#cbd3df from the source style.css). */
+  --color-ash: #cbd3df;
+  --color-outline: #7ad4cc;
+  --color-hairline: #ebebeb;
+
+  /* Ink — dark navy for the hero laptop mockup bezel/base (#081624, the
+     same dark navy used across sibling apps). */
+  --color-ink: #081624;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the dark blue. */
+  --color-primary-50: #eef3fb;
+  --color-primary-100: #d8e4f5;
+  --color-primary-200: #b3c8ea;
+  --color-primary-300: #86a5dc;
+  --color-primary-400: #5882cd;
+  --color-primary-500: #20509e;
+  --color-primary-600: #1b4488;
+  --color-primary-700: #173a73;
+  --color-primary-800: #122f5e;
+  --color-primary-900: #0d2449;
+
+  /* Original fonts: "Futura" (headings/nav/buttons) → Jost (open Google
+     Fonts stand-in) + "Lato" (body). */
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Jost', ui-sans-serif, system-ui, sans-serif;
+}
