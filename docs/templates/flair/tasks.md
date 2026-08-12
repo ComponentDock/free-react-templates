@@ -163,16 +163,16 @@
    copy, no ColorLib credit). Mark ALL FOUR TEMPLATES.md rows `[x]` (lines
    392, 1006, 2047, 2320) + surge URL + `npm run readme:status`.
 
-## Image seed map (picsum.photos/seed/flair-<n>)
+## Image seed map (subject-screened picsum ids)
 
-| n   | Source asset      | Use         |
-| --- | ----------------- | ----------- |
-| 1   | hero-1.jpg        | hero bg     |
-| 2   | about-1.jpg       | about photo |
-| 3   | skills.png        | skills side |
-| 4   | hero-2.jpg        | services bg |
-| 5   | hero-3.jpg        | CTA bg      |
-| 6   | clients-img/1.jpg | avatar      |
-| 7   | blog-1.jpg        | blog card 1 |
-| 8   | blog-2.jpg        | blog card 2 |
-| 9   | blog-3.jpg        | blog card 3 |
+| n   | Source asset      | Use         | Picsum                               |
+| --- | ----------------- | ----------- | ------------------------------------ |
+| 1   | hero-1.jpg        | hero bg     | id/453 (live band on stage, dark)    |
+| 2   | about-1.jpg       | about photo | id/64 (golden-hour woman)            |
+| 3   | skills.png        | skills side | id/823 (woman with camera)           |
+| 4   | hero-2.jpg        | services bg | id/996 (backlit woman)               |
+| 5   | hero-3.jpg        | CTA bg      | id/1055 (coastal village)            |
+| 6   | clients-img/1.jpg | avatar      | id/1027 (profile portrait, dark bg)  |
+| 7   | blog-1.jpg        | blog card 1 | id/425 (roasted coffee beans, light) |
+| 8   | blog-2.jpg        | blog card 2 | id/431 (latte-art coffee on wood)    |
+| 9   | blog-3.jpg        | blog card 3 | id/1080 (strawberries)               |

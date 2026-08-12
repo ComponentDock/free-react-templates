@@ -432,7 +432,7 @@ and a document title.
       preview 1:1.
 - [ ] Design tokens in `@theme`: primary purple `#7450fe`; secondary green
       `#21d397`; signature gradient `linear-gradient(to right, #7450fe,
-    #21d397)`; accent green `#2bc0a4`; headings `#232d37`; body `#51545f`;
+  #21d397)`; accent green `#2bc0a4`; headings `#232d37`; body `#51545f`;
       muted `#b5aec4`; borders `#ebebeb` / `#e5e5e5`; overlay
       `rgba(4,8,29,0.7)`; footer dark `#131627`; copyright `#04081d`;
       footer-input `#2b2e3d`; Poppins (300–700) + Playfair Display via
@@ -441,10 +441,11 @@ and a document title.
       hover/active fills with the gradient; `.fancy-btn fancy-dark` = dark
       `#232d37` text variant for light sections; subscribe button =
       gradient, absolutely positioned in the email input.
-- [ ] Placeholder images use `picsum.photos/seed/flair-<n>/<w>/<h>` (hero
-      banner, about photo, skills side photo, services bg, CTA bg, avatar,
-      blog thumbnails); icons from lucide-react (search, shopping-bag, menu,
-      x, play, thumbs-up, clock, gem, pen-tool, monitor, megaphone,
+- [ ] Placeholder images use subject-screened picsum photos
+      (`picsum.photos/id/453/...` hero band, `/64` about, `/823` skills,
+      `/996` services bg, `/1055` CTA, `/1027` avatar, `/425` `/431` `/1080`
+      blog cards); icons from lucide-react (search, shopping-bag, menu, x,
+      play, thumbs-up, clock, gem, pen-tool, monitor, megaphone,
       chevron-left/right, chevrons-right; socials via inline SVG); no
       ColorLib assets copied (wordmark is styled text).
 - [ ] PR description states source template (ColorLib "Fancy"), preview URL
