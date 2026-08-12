@@ -16,6 +16,6 @@ describe('WhyChooseUs', () => {
 
   it('describes each feature', () => {
     render(<WhyChooseUs />)
-    expect(screen.getByText(/Mauris velit arcu/)).toBeInTheDocument()
+    expect(screen.getAllByText(/Mauris velit arcu/)).toHaveLength(3)
   })
 })

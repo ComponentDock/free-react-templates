@@ -1,30 +1,33 @@
-import { domainPrices } from '../data'
+const domains = [
+  { name: 'com', price: '$3.99', color: '#005cc3' },
+  { name: 'net', price: '$1.99', color: '#a736df' },
+  { name: 'org', price: '$2.99', color: '#fa9900' },
+  { name: 'io', price: '$3.99', color: '#df36b9' },
+  { name: 'info', price: '$13.99', color: '#242424' },
+] as const
 
-/* White rounded strip overlapping the hero (margin-top -80px in the
-   original), listing five domain extensions: green dot + per-item colored
-   TLD name + grey price. */
 export function DomainPricing() {
   return (
-    <div className="relative z-10 -mt-20 px-4 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-5xl rounded-[50px] bg-white px-6 py-8 shadow-xl sm:px-12">
-        <ul className="flex flex-wrap items-center justify-between gap-y-4">
-          {domainPrices.map((item) => (
-            <li key={item.tld}>
-              <a
-                href="#domain"
-                className="flex items-baseline gap-1"
-                aria-label={`${item.tld} ${item.price}`}
-              >
-                <span className="text-[30px] font-semibold leading-none text-tld-green">.</span>
-                <span className="text-2xl font-bold leading-none" style={{ color: item.color }}>
-                  {item.tld.replace(/^\./, '')}
-                </span>
-                <span className="ml-1 text-lg text-steel-500">{item.price}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
+    <section
+      aria-label="Domain pricing"
+      className="relative z-10 mx-auto -mt-20 max-w-6xl px-4 sm:px-6"
+    >
+      <ul
+        aria-label="Domain prices"
+        className="flex h-[140px] items-center justify-around rounded-[50px] bg-white px-6 shadow-lg"
+      >
+        {domains.map((domain) => (
+          <li key={domain.name} className="text-center">
+            <a href="#home" className="inline-flex items-baseline gap-0.5">
+              <span className="text-[30px] font-semibold leading-none text-leaf-500">.</span>
+              <span className="text-2xl font-bold leading-none" style={{ color: domain.color }}>
+                {domain.name}
+              </span>
+            </a>
+            <p className="mt-1 text-lg text-[#808080]">{domain.price}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
   )
 }

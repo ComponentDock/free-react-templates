@@ -49,7 +49,7 @@ describe('Header', () => {
     )
     expect(within(menu).getByRole('link', { name: /652-345 3222 11/ })).toBeInTheDocument()
 
-    await user.click(screen.getByRole('button', { name: /close mobile menu/i }))
+    await user.click(screen.getByRole('button', { name: 'Close menu' }))
     expect(toggle).toHaveAttribute('aria-expanded', 'false')
     expect(screen.queryByRole('navigation', { name: 'Mobile' })).not.toBeInTheDocument()
   })
