@@ -2,7 +2,7 @@
   "ignorePatterns": ["skills/**"],
   "ignoreDependencies": ["tailwindcss", "@tailwindcss/vite", "@fission-ai/openspec", "surge"],
   "duplicates": {
-    "ignore": ["apps/*/src/**"]
+    "ignore": ["apps/*/src/**", "apps/*/vite.config.ts"]
   },
   "health": {
     "maxCyclomatic": 20,
