@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode hook kept for parity with the shared ui package
+   (Academia itself is a light page; the original has no dark theme). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Academia brand palette — a teal + peach education look. The primary is
+     the bright teal #04D2C8 (logo wordmark, hero CTA fill, newsletter band,
+     active tab underline, active price); peach #FD8E5E powers the Sign Up
+     button and one stat circle; light blue #5DB2FF and orange #FDAE5C are
+     supporting accents (stat circle, header phone pill, footer link hover);
+     purple #D465EF tints the speciality icon badges. */
+
+  /* Teal — the primary brand color (#04D2C8). */
+  --color-brand: #04d2c8;
+
+  /* Peach — the secondary accent (#FD8E5E): Sign Up button, stat circle. */
+  --color-peach: #fd8e5e;
+
+  /* Sky — the light-blue stat circle (#5DB2FF). */
+  --color-sky: #5db2ff;
+
+  /* Orange — the header phone pill + footer link hover (#FDAE5C). */
+  --color-sun: #fdae5c;
+
+  /* Iris — the speciality icon purple (#D465EF). */
+  --color-iris: #d465ef;
+
+  /* Ink — the near-black #1F1F1F heading color. */
+  --color-ink: #1f1f1f;
+
+  /* Smoke — the #919191 body/muted text color. */
+  --color-smoke: #919191;
+
+  /* Ash — the #BABABA footer link color. */
+  --color-ash: #bababa;
+
+  /* Original fonts: Poppins for headings/UI/nav, Crimson Text for body. */
+  --font-sans:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Crimson Text', Georgia, 'Times New Roman', serif;
+}
