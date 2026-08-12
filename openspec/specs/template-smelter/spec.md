@@ -1,5 +1,11 @@
 # Template: Smelter (Industrial / Manufacturing)
 
+> **SUPERSEDED** — the ColorLib "Braxit" source this spec targets already
+> shipped as **Machina** (PR #313, https://free-react-templates-machina.surge.sh).
+> Do NOT implement this spec — it is a duplicate prep for an already-shipped
+> source. Delete on next cleanup. All three TEMPLATES.md Braxit rows are
+> marked `[x]` with the Machina surge URL.
+
 ## Purpose
 
 Smelter is a single-page industrial & manufacturing company website template in

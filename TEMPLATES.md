@@ -1331,7 +1331,7 @@
 - [x] **Architect** — [colorlib](https://colorlib.com/wp/template/architect/) · [Foundry](https://free-react-templates-foundry.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/architect-free-template.jpg)
 - [x] **Archlab** — [colorlib](https://colorlib.com/wp/template/archlab/) · [Beamline](https://free-react-templates-beamline.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archlab-free-template.jpg)
 - [ ] **Bee** — [colorlib](https://colorlib.com/wp/template/bee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bee-free-template.jpg)
-- [ ] **Braxit** — [colorlib](https://colorlib.com/wp/template/braxit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/braxit-free-template.jpg)
+- [x] **Braxit** — [colorlib](https://colorlib.com/wp/template/braxit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/braxit-free-template.jpg) · [Machina](https://free-react-templates-machina.surge.sh)
 - [x] **Buildcraft** — [colorlib](https://colorlib.com/wp/template/buildcraft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildcraft-template-1771943678540.jpg) · [parapet](https://free-react-templates-parapet.surge.sh)
 - [ ] **Builder** — [colorlib](https://colorlib.com/wp/template/builder/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/builder-free-template.jpg)
 - [ ] **Buildream** — [colorlib](https://colorlib.com/wp/template/buildream/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildream-free-template.jpg)
@@ -1939,7 +1939,7 @@
 ## Industrial (15)
 
 - [ ] **Bee** — [colorlib](https://colorlib.com/wp/template/bee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bee-free-template.jpg)
-- [ ] **Braxit** — [colorlib](https://colorlib.com/wp/template/braxit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/braxit-free-template.jpg)
+- [x] **Braxit** — [colorlib](https://colorlib.com/wp/template/braxit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/braxit-free-template.jpg) · [Machina](https://free-react-templates-machina.surge.sh)
 - [ ] **Constructioncompany** — [colorlib](https://colorlib.com/wp/template/constructioncompany/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/constructioncompany-free-template.jpg)
 - [ ] **Durg** — [colorlib](https://colorlib.com/wp/template/durg/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/durg-free-template.jpg)
 - [ ] **Engineers** — [colorlib](https://colorlib.com/wp/template/engineers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/engineers-free-template.jpg)
