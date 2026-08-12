@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with the monorepo pattern. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Creeds brand palette — recreated from the reference design
+     (primary cyan #00c8e6 countdown band + CTAs, dark navy #04091e feature
+     cards + footer, light section #f9f9ff sermons area, headings #222222,
+     body #777777, secondary accents). */
+  --color-brand: #00c8e6;
+  --color-dark: #04091e;
+  --color-section: #f9f9ff;
+  --color-heading: #222222;
+  --color-muted: #777777;
+  --color-cyan-light: #4cd3e3;
+  --color-blue: #38a4ff;
+  --color-blue-light: #52c5fd;
+  --color-yellow: #f4e700;
+  --color-red: #f44a40;
+  --color-red-dark: #f54940;
+  --color-outline: #eeeeee;
+
+  /* Poppins — the reference typeface (headings 600/700, body 400, buttons
+     500, timer numbers 600; Google Fonts via index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
