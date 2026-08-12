@@ -8,6 +8,11 @@
 > Everything listed here is a _deliberate, temporary_ relaxation. The full
 > six-step gate still runs — just not on the local critical path (CI + nightly).
 
+> **Note:** `CRONJOB.md` moved to the
+> [ComponentDock/hermes-agent-vpn](https://github.com/ComponentDock/hermes-agent-vpn)
+> repo (canonical home of the Hermes agent config) — references below describe
+> the same jobs/scripts.
+
 ## What changed and why
 
 The local six-step gate (typecheck → lint → test:coverage → build → knip →
