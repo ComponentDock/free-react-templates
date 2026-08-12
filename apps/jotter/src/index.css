@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode hook kept for parity with the shared ui package
+   (Jotter itself is a light page; the original has no dark theme). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Jotter brand palette — recreated from the ColorLib "Elen" template.
+     Accent orange #f05d23 (button fill, link/social hovers, active
+     pagination), near-white sidebar rgba(0,0,0,0.04), ink-black headings,
+     #bfbfbf hero subheading, #b3b3b3 text-style CTA + blog meta, and a
+     dark navy #132238 footer. */
+  --color-accent: #f05d23;
+
+  /* Sidebar — the fixed left column background (rgba(0,0,0,0.04)). */
+  --color-sidebar: rgba(0, 0, 0, 0.04);
+
+  /* Ink — black headings and nav text. */
+  --color-ink: #000000;
+
+  /* Subheading — the light grey #BFBFBF hero greeting text. */
+  --color-subheading: #bfbfbf;
+
+  /* Meta — the #B3B3B3 muted text for the hero CTA and blog meta row. */
+  --color-meta: #b3b3b3;
+
+  /* Footer — the dark navy #132238 footer background. */
+  --color-footer: #132238;
+
+  /* Original fonts: Work Sans for body text, Poppins for headings and
+     Montserrat for the sidebar menu — Google Fonts via index.html. */
+  --font-sans:
+    'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-menu: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
