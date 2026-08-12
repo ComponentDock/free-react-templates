@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Benevol design tokens — recreated from the source preview stylesheet
+     (no assets copied):
+     - brand orange #fd5f00: buttons, nav active/hover, sticky logo,
+       counters, intro panel 2, cause card headings, blog links,
+       newsletter button, social buttons.
+     - gold #cda558 @ 95%: overlay on background-image sections
+       (About / Donate / Testimonials).
+     - panel greys: #4e4e4e (intro panel 1), #333333 (footer),
+       #25262a (near-black headings / dropdown hovers).
+     - deep red #a23131: intro panel 3.
+     - light greys: #f8f9fa (blog/contact sections), #e9ecef (team card
+       borders), #b8b8b8 (role text), #999999 (footer links),
+       #6c757d (cause icons).
+     - fonts: Anton (condensed uppercase headings), Nunito (body),
+       Dancing Script (hero script accent). */
+  --color-primary-50: #fff3ec;
+  --color-primary-100: #ffe4d4;
+  --color-primary-200: #ffc5a8;
+  --color-primary-300: #ff9d70;
+  --color-primary-400: #ff7438;
+  --color-primary-500: #fd5f00;
+  --color-primary-600: #fd5f00;
+  --color-primary-700: #d75100;
+  --color-primary-800: #b84700;
+  --color-primary-900: #963a00;
+  --color-gold: #cda558;
+  --color-panel: #4e4e4e;
+  --color-maroon: #a23131;
+  --color-footer: #333333;
+  --color-ink: #25262a;
+  --color-light: #f8f9fa;
+  --color-line: #e9ecef;
+  --color-role: #b8b8b8;
+  --color-footlink: #999999;
+  --color-secondary: #6c757d;
+  --font-display: 'Anton', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Dancing Script', cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.3;
+    color: var(--color-ink);
+  }
+}

@@ -457,7 +457,9 @@ input and button, a Follow Us social row, and a copyright line.
   Us" with four social icon links (Facebook, Twitter, Instagram,
   LinkedIn)
 - **AND** the bottom row SHALL show the copyright line with the current
-  year and the ColorLib design credit
+  year, a neutral design credit ("This template is made with ♥"), and a
+  link to Component Dock (brand attribution, per the repo convention that
+  app code never names the source design studio)
 
 #### Scenario: Newsletter submit
 
