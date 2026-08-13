@@ -423,7 +423,7 @@
 - [x] **Industry Inc** — [colorlib](https://colorlib.com/wp/template/industry-inc/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/industryinc-free-template.jpg) · [dynamo](https://dynamo.free.componentdock.com)
 - [x] **Inves** — [colorlib](https://colorlib.com/wp/template/inves/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/inves-free-template.jpg) · [equity](https://equity.free.componentdock.com)
 - [ ] **Ithost** — [colorlib](https://colorlib.com/wp/template/ithost/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ithost-free-template.jpg)
-- [ ] **Judge** — [colorlib](https://colorlib.com/wp/template/judge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/judge-free-template.jpg)
+- [~] **Judge** — [colorlib](https://colorlib.com/wp/template/judge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/judge-free-template.jpg)
 - [ ] **Kanox** — [colorlib](https://colorlib.com/wp/template/kanox/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kanox-free-template.jpg)
 - [ ] **Kenedy** — [colorlib](https://colorlib.com/wp/template/kenedy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kenedy-free-template.jpg)
 - [ ] **Kiddy** — [colorlib](https://colorlib.com/wp/template/kiddy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kiddy-free-template.jpeg)
