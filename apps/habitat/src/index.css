@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Habitat design tokens — recreated from the source preview stylesheets
+     (no assets copied):
+     - brand #8AD144: search/subscribe buttons, checked pill fill, outline
+       button hover fill.
+     - navy #30304e: newsletter + footer bands, card titles, prices.
+     - muted #6f6f8a / outline #8f8fa8: body copy, secondary labels,
+       outline button border/text.
+     - label #61616e + select #3f3f4b: filter form field labels/values.
+     - light #F8F8F9: instagram strip; divider #F3F3F3: field separators.
+     - badge #E30707: "Best Deal" pill.
+     - font: Roboto (300/400/500). */
+  --color-brand: #8ad144;
+  --color-brand-dark: #74b532;
+  --color-navy: #30304e;
+  --color-muted: #6f6f8a;
+  --color-outline: #8f8fa8;
+  --color-label: #61616e;
+  --color-select: #3f3f4b;
+  --color-light: #f8f8f9;
+  --color-badge: #e30707;
+  --color-divider: #f3f3f3;
+  --color-ink: #30304e;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--color-muted);
+    background-color: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--color-ink);
+  }
+
+  ::selection {
+    background-color: var(--color-brand);
+    color: #fff;
+  }
+}
