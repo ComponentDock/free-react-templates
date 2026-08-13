@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Equity (light investment-consulting
+   theme with a purple brand); the custom variant is declared so shared ui
+   components that ship `dark:` utilities (outline/ghost variants) still
+   compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Equity brand palette — design tokens from the investment-consulting
+     reference. Brand purple #7f4782 (headings, icons, focus borders,
+     buttons, counter numbers, testimonial active dot) mapped onto the
+     shared primary scale so shared Button/ButtonLink `primary` variants
+     resolve to the brand purple. */
+  --color-primary-100: #f3eaf4;
+  --color-primary-200: #e0c9e2;
+  --color-primary-300: #c8a3cc;
+  --color-primary-400: #a97eae;
+  --color-primary-500: #93628f;
+  --color-primary-600: #7f4782;
+  --color-primary-700: #6b3c6e;
+  --color-primary-800: #57305a;
+  --color-primary-900: #442546;
+
+  /* Ink (body text/headings) and light section surface from the reference. */
+  --color-ink: #25262a;
+  --color-muted: #939393;
+  --color-surface: #f4f5f9;
+  --color-footer: #333333;
+
+  /* Nunito for body + headings, Georgia for the italic serif quotes
+     (Google Fonts via index.html). */
+  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: Georgia, 'Times New Roman', serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
