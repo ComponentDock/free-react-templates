@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Maven (light creative-agency template
+   with dark navy bands); the custom variant is declared so shared ui
+   components that ship `dark:` utilities (outline/ghost variants) still
+   compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Maven brand palette — design tokens from the creative-agency reference.
+     Hot pink #ff1481 (buttons, eyebrows, icon accents, hover states) mapped
+     onto the shared primary scale. */
+  --color-primary-100: #ffe3f0;
+  --color-primary-200: #ffb8da;
+  --color-primary-300: #ff8cc2;
+  --color-primary-400: #ff54a4;
+  --color-primary-500: #ff2d91;
+  --color-primary-600: #ff1481;
+  --color-primary-700: #e0056b;
+  --color-primary-800: #b80458;
+  --color-primary-900: #8a0443;
+
+  /* Deep navy surfaces: dark bands (services, stats, team, footer) and the
+     deep-navy heading color. */
+  --color-navy: #162b45;
+  --color-navy-light: #2e4158;
+  --color-navy-muted: #586779;
+  --color-navy-deep: #112e41;
+
+  /* Light surfaces and borders from the reference. */
+  --color-hero-bg: #f7f7f7;
+  --color-card-border: #e2e6e7;
+  --color-team-border: #45556a;
+  --color-dark-muted: #abb2ba;
+  --color-gray-muted: #888888;
+
+  /* Roboto (body), Oswald (headings), Poppins 800 (hero display) via Google
+     Fonts in index.html. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
