@@ -112,14 +112,14 @@
 ## Tasks
 
 - [x] Write `openspec/specs/template-nuptial/spec.md` (Gherkin requirements + scenarios + replication findings + verification checklist) — DONE on main (prep).
-- [ ] Create `apps/nuptial` (copy the closest existing app; rename package to
+- [x] Create `apps/nuptial` (copy the closest existing app; rename package to
       `@free-react-templates/nuptial`; run `npm install` at repo root so
       package-lock.json registers the workspace).
-- [ ] TDD: tests first for Navbar, Hero (incl. countdown), Invite, BrideGroom,
+- [x] TDD: tests first for Navbar, Hero (incl. countdown), Invite, BrideGroom,
       LoveStory, SweetMessages, FamilyFriends, PlaceTime, RsvpForm, Gallery,
       Footer, App composition.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Per-app gate: `scripts/verify-app.sh nuptial` + `npm run spec:validate`.
+- [x] Implement components (green) at 100% coverage.
+- [x] Per-app gate: `scripts/verify-app.sh nuptial` + `npm run spec:validate`.
 - [ ] Update TEMPLATES.md status `[~]` → `[x]` after merge (bookkeeping on
       main; add the nuptial.free.componentdock.com URL + homepage).
 - [ ] Update README structure + `docs/ai-context.md` app list (via

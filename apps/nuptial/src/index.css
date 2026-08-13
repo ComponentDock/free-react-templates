@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Nuptial brand palette — design tokens for the wedding template. Brand
+     accent #f67e7d (coral-pink — links, buttons, section headings, timeline
+     line, date labels, social circles), light border pink #fddddc, light
+     section background #f8f9fa, RSVP band gray #6c757d. */
+  --color-pink-50: #fef3f3;
+  --color-pink-100: #fddddc;
+  --color-pink-200: #fbc7c6;
+  --color-pink-300: #f9a9a8;
+  --color-pink-400: #f78f8e;
+  --color-pink-500: #f67e7d;
+  --color-pink-600: #e05a59;
+  --color-pink-700: #c94a49;
+  --color-pink-800: #a83c3b;
+  --color-pink-900: #86302f;
+
+  /* Neutral surfaces + text from the reference */
+  --color-mist-50: #f8f9fa;
+  --color-smoke-500: #6c757d;
+  --color-smoke-700: #495057;
+  --color-ink-900: #212529;
+  --color-ink-700: #3d4248;
+
+  /* Poppins (body/nav), Great Vibes (script headings), Libre Caslon Text
+     (date/serif accents) — Google Fonts via index.html */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Great Vibes', cursive;
+  --font-serif: 'Libre Caslon Text', Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
