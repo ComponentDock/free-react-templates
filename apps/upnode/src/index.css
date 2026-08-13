@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Upnode design tokens — recreated from the source preview stylesheets
+     (no assets copied):
+     - brand blue #1c66de: header/nav/hero backgrounds, primary buttons,
+       price values, links and hover states.
+     - light blue-grey #e8f1f8: features + discount sections, newsletter
+       input background, price card hover/active background.
+     - dark #303030 headings on light sections; muted #707070/#b7b7b7
+       secondary text; #ebebeb borders.
+     - font: Archivo (400/500/600/700). */
+  --color-primary: #1c66de;
+  --color-primary-hover: #154fae;
+  --color-mist: #e8f1f8;
+  --color-ink: #303030;
+  --color-muted: #707070;
+  --color-faint: #b7b7b7;
+  --color-borderline: #ebebeb;
+  --font-sans: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-ink);
+    background-color: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-ink);
+  }
+}
