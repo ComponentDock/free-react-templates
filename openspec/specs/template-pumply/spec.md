@@ -185,6 +185,12 @@ rounded-0`). Bottom `row.pt-5.mt-5.text-center` copyright bar:
   wordmark "Pumply"; schedule day tabs keep the same six days with the same
   five class rows per day; the footer ColorLib credit is replaced by the
   mandatory Component Dock link.
+  Seed screening (2026-08-13): 12 picsum candidates screened (ids 219, 368,
+  375, 447, 509, 746, 870, 883, 995, 1005, 1062, 1071) — NONE render a gym,
+  equipment, or trainer scene (all landscapes/objects/wildlife/portraits).
+  Picsum has no reliable fitness imagery, so the pinned seeds stay as-is
+  (arbitrary placeholders, standard for the repo) and the dark hero overlay
+  carries the gym mood; the PR notes this.
 
 Pumply lives in `apps/pumply` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).

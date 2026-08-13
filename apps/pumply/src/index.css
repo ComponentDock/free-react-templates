@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Pumply design tokens — recreated from the source preview stylesheets
+     (no assets copied):
+     - brand green #48d494: section titles, nav link hover, outlined CONTACT
+       border/text, buttons, counter icons, tab pills, carousel dots, photo
+       offset shadows, footer Subscribe button.
+     - button text #212529: dark text on green buttons (hover flips to white
+       on #2fc781).
+     - page #000: the whole page is dark; contact section #121212; hero
+       fallback #222 behind the photo. */
+  --color-primary: #48d494;
+  --color-primary-500: #48d494;
+  --color-primary-600: #48d494;
+  --color-primary-700: #2fc781;
+  --color-primary-hover: #2fc781;
+  --color-btn-text: #212529;
+  --color-page: #000000;
+  --color-contact: #121212;
+  --color-hero-bg: #222222;
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-page);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+  }
+}
