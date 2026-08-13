@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Shiply brand orange — extracted from the original reference stylesheet
+     (css/style.css, brand color #f89d13 on buttons, headings, and hovers). */
+  --color-brand: #f89d13;
+
+  /* Darker orange variant for the third overlap card (#e18a07). */
+  --color-orange-dark: #e18a07;
+
+  /* Dark quote-form card (#343a40, Bootstrap bg-dark in the source). */
+  --color-quote-dark: #343a40;
+
+  /* Ink for mobile menu + headings (#212529 in the source). */
+  --color-ink: #212529;
+
+  /* Base body text (#4d4d4d in the source). */
+  --color-body-grey: #4d4d4d;
+
+  /* Muted meta + link gray (#b3b3b3 in the source). */
+  --color-muted: #b3b3b3;
+
+  /* Footer link gray (#999999 in the source, hover → white). */
+  --color-footer-grey: #999999;
+
+  /* Footer paragraph / copyright gray (#737373 in the source). */
+  --color-footer-text: #737373;
+
+  /* Footer background (#333333 in the source). */
+  --color-footer-bg: #333333;
+
+  /* Light section background (#f8f9fa, Bootstrap bg-light in the source). */
+  --color-light: #f8f9fa;
+
+  /* Section divider lines (#edf0f5 in the source). */
+  --color-border-light: #edf0f5;
+
+  /* Original font: "Poppins" via Google Fonts (loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
