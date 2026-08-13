@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Uplink (light theme, like the
+   reference); the custom variant is declared so shared ui components that
+   ship `dark:` utilities (outline/ghost variants) still compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Uplink brand palette — design tokens from the hosting reference.
+     Primary electric purple #6247ea (top-bar CTA, hero bg, feature icons,
+     price buttons, services band, newsletter button, footer hovers), accent
+     warm orange #ec9d5f (top info bar, hero CTA, solution band, blog date
+     badge). */
+  --color-primary-50: #f0edfd;
+  --color-primary-100: #e5e1fb;
+  --color-primary-200: #c9c0f6;
+  --color-primary-300: #a99bf0;
+  --color-primary-400: #8a76ea;
+  --color-primary-500: #6247ea;
+  --color-primary-600: #4f35d4;
+  --color-primary-700: #4129ae;
+  --color-primary-800: #352388;
+  --color-primary-900: #2a1d6b;
+
+  /* Accent orange scale */
+  --color-accent-50: #fdf3ea;
+  --color-accent-100: #fbe6d4;
+  --color-accent-200: #f7cfad;
+  --color-accent-300: #f2b481;
+  --color-accent-400: #efa35f;
+  --color-accent-500: #ec9d5f;
+  --color-accent-600: #d97f3d;
+  --color-accent-700: #b5632c;
+  --color-accent-800: #914d22;
+  --color-accent-900: #6e3a1a;
+
+  /* Neutral surfaces + text from the reference */
+  --color-band-50: #fafcff;
+  --color-ink-900: #222222;
+  --color-mute-500: #777777;
+  --color-mute-400: #aaaaaa;
+  --color-line-200: #eeeeee;
+  --color-line-300: #dddddd;
+  --color-night-900: #04091e;
+  --color-purple-line: #9381eb;
+  --color-form-border: #333333;
+
+  /* Roboto (everything) + Open Sans (price list links) — Google Fonts via
+     index.html */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-open-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
