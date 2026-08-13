@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Taply brand palette — design tokens: button/feature-icon gradient
+     #e54595 → #fd378e,
+     hero + CTA background gradient #3c0876 → #fa0076, brand text purple
+     #633991, light section lavender #faf6fb, eyebrow grey #998a9b,
+     popular-plan top border #ce75b4, muted list grey #959094. */
+  --color-brand: #e54595;
+  --color-brand-2: #fd378e;
+  --color-hero-1: #3c0876;
+  --color-hero-2: #fa0076;
+  --color-brand-purple: #633991;
+  --color-lavender: #faf6fb;
+  --color-eyebrow: #998a9b;
+  --color-muted: #959094;
+  --color-popular: #ce75b4;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the brand gradient start. */
+  --color-primary-50: #fdf0f6;
+  --color-primary-100: #fbd9e8;
+  --color-primary-200: #f7b0d1;
+  --color-primary-300: #f083b6;
+  --color-primary-400: #e9559d;
+  --color-primary-500: #e54595;
+  --color-primary-600: #d63987;
+  --color-primary-700: #b32a6e;
+  --color-primary-800: #8c1f56;
+  --color-primary-900: #66163f;
+
+  /* Original font: 'Rubik', sans-serif (Google Fonts, weights 300/400/500/700). */
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+}
