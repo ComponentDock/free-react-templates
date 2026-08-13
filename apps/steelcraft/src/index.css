@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Steelcraft brand industrial red — extracted from the reference
+     stylesheet (assets/css/style.css, brand color #E61818 on buttons,
+     counters, the "Get Free Quote" link, footer input border, link
+     hovers, and the CTA band's 5px top border). */
+  --color-brand: #e61818;
+
+  /* Near-black ink for the CTA band and footer headings (#1A1A1A in the
+     source) and the top info bar (#000000). */
+  --color-ink: #1a1a1a;
+
+  /* Dark navy used for counter labels (#132E43 in the source). */
+  --color-navy: #132e43;
+
+  /* Footer body copy (#5E5E5E in the source). */
+  --color-body: #5e5e5e;
+
+  /* Light gray section background — services + brand areas (#F2F4F8 in
+     the source). */
+  --color-section: #f2f4f8;
+
+  /* Hero photo overlay (rgba(29,29,29,0.5) in the source). */
+  --color-overlay: rgba(29, 29, 29, 0.5);
+
+  /* Video play glyph color (orange-red #F04506 in the source). */
+  --color-play: #f04506;
+
+  /* Original font: "Jost" via Google Fonts (loaded in index.html). */
+  --font-sans: 'Jost', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans text-ink;
+  }
+}
