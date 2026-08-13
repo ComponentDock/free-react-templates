@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Sitewise (light theme with a dark
+   purple header/footer, like the reference); the custom variant is declared
+   so shared ui components that ship `dark:` utilities (outline/ghost
+   variants) still compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Sitewise brand palette — design tokens from the hosting reference.
+     Primary deep purple #2e004b (header/hero/footer backgrounds, hero
+     overlay, section headings, outlined-button text/border), accent green
+     #00d363 (eyebrow, green pill buttons, phone numbers, Live Chat). */
+  --color-primary-50: #f7f2fb;
+  --color-primary-100: #efe4f7;
+  --color-primary-200: #dfc9ef;
+  --color-primary-300: #c8a3e2;
+  --color-primary-400: #a96fd0;
+  --color-primary-500: #8a46b8;
+  --color-primary-600: #6d2a99;
+  --color-primary-700: #5a1f82;
+  --color-primary-800: #461966;
+  --color-primary-900: #3a1157;
+  --color-primary-950: #2e004b;
+
+  /* Accent green scale (pill buttons, eyebrow, phone numbers) */
+  --color-accent-100: #d9ffee;
+  --color-accent-200: #b3ffdd;
+  --color-accent-300: #66f5b4;
+  --color-accent-400: #33e68e;
+  --color-accent-500: #00d363;
+  --color-accent-600: #00b855;
+  --color-accent-700: #009247;
+
+  /* Secondary orange (hover accents) */
+  --color-ember-500: #ff5e13;
+  --color-ember-600: #e04e0a;
+
+  /* Feature/pricing icon colors from the reference */
+  --color-ico-blue: #0181f5;
+  --color-ico-purple: #886cfe;
+  --color-ico-pink: #ff87a3;
+  --color-ico-yellow: #f3c306;
+
+  /* Light backgrounds + borders + muted text */
+  --color-ice-50: #f9f9ff;
+  --color-ice-100: #f0e9ff;
+  --color-line: #e0cce6;
+  --color-mute-600: #888888;
+  --color-mute-500: #919191;
+  --color-mute-400: #999999;
+
+  /* Roboto everywhere — Google Fonts via index.html */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
