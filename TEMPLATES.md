@@ -408,7 +408,7 @@
 - [x] **Hami** — [colorlib](https://colorlib.com/wp/template/hami/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hami-free-template.jpg) · [upnode](https://upnode.free.componentdock.com)
 - [ ] **Harbor** — [colorlib](https://colorlib.com/wp/template/harbor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/harbor-free-template.jpg)
 - [x] **Heaven** — [colorlib](https://colorlib.com/wp/template/heaven/) · [terracotta](https://terracotta.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/heaven-free-template.jpg)
-- [ ] **Hepta** — [colorlib](https://colorlib.com/wp/template/hepta/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hepta-free-template.jpg)
+- [~] **Hepta** — [colorlib](https://colorlib.com/wp/template/hepta/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hepta-free-template.jpg)
 - [ ] **Hipstyle** — [colorlib](https://colorlib.com/wp/template/hipstyle/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hipstyle-free-template.jpg)
 - [ ] **Homes** — [colorlib](https://colorlib.com/wp/template/homes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/homes-free-template.jpg)
 - [ ] **Hookup** — [colorlib](https://colorlib.com/wp/template/hookup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hookup-free-template.jpg)
