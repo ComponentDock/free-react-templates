@@ -1,6 +1,8 @@
 # Cameo (ColorLib Look) — Tasks & Design Notes
 
-> Prep artifacts prepared on `main` by the prep stream. Implementation ships
+> **SUPERSEDED** — ColorLib "Look" shipped as **Glamour** (PR #392,
+> https://glamour.free.componentdock.com). Do NOT implement; delete on
+> next cleanup. (Original note: Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-cameo`.
 
 ## Design notes (replication findings)

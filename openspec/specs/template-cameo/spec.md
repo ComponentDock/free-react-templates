@@ -1,5 +1,10 @@
 # Template: Cameo (Model Agency / Fashion Lookbook Template)
 
+> **SUPERSEDED** — ColorLib "Look" shipped as **Glamour** (PR #392,
+> https://glamour.free.componentdock.com). Do NOT implement this spec; delete
+> on next cleanup. (Duplicate prep: the same source slug was prepped twice —
+> the implementer's claim + spec used the name Glamour.)
+
 ## Purpose
 
 Cameo is a model-agency / fashion lookbook one-pager in the free-react-templates
