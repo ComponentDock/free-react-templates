@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Wander design tokens — recreated from the source preview stylesheets
+     (no assets copied):
+     - brand teal #65c0ba: active/hover nav links, star ratings, blog band,
+       link hover states, selection color.
+     - light-bg #fafafa + border-soft #e0e0e0: Experience + Testimonials
+       section backgrounds (with a soft top border).
+     - ink #000 headings; body #6c757d muted copy; meta #ced4da for blog
+       dates; footer #1a1a1a near-black footer band.
+     - fonts: Abril Fatface (display serif for headings/logo) + Mukta Mahee
+       (body sans, 200/300/400). */
+  --color-brand: #65c0ba;
+  --color-brand-dark: #4fa59f;
+  --color-light-bg: #fafafa;
+  --color-border-soft: #e0e0e0;
+  --color-ink: #000000;
+  --color-body: #6c757d;
+  --color-meta: #ced4da;
+  --color-footer: #1a1a1a;
+  --font-display: 'Abril Fatface', 'Times New Roman', serif;
+  --font-sans: 'Mukta Mahee', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--color-body);
+    background-color: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-ink);
+  }
+
+  ::selection {
+    background-color: var(--color-brand);
+    color: #fff;
+  }
+}
