@@ -105,13 +105,17 @@ rgba(0,0,0,.09)`; primary = bg/border #ffb400 + **black** text; hover =
 - **Recreation decisions:** all photos → seeded picsum
   (`https://picsum.photos/seed/kickoff-<n>/<w>/<h>`): hero, team logos,
   victory image, squad portraits, blog thumbnails, testimonial avatar;
-  icons → lucide-react (Play for watch games/highlights, Calendar/Clock for
-  schedule, Users/Heart/Trophy for services, quotes for testimonial, Mail/
-  MapPin/Phone for footer); social icons → inline SVG (lucide removed brand
-  icons); countdown implemented with a client-side timer hook targeting a
-  fixed future date; fonts Nunito Sans via Google Fonts `<link>`. Tokens
-  #ffb400 / #6b75ff / #59b7ff / #232931 / #f8f9fa / #212529 / #6c757d in
-  `@theme`.
+  icons → lucide-react (Play for watch games/highlights, Users/Heart/
+  GraduationCap/Target for services, MapPin/Phone/Mail for footer, Chevron
+  for carousels); social icons → inline SVG (lucide removed brand icons);
+  countdown implemented with a client-side timer hook targeting a fixed
+  future date (2028-06-01, tests use fake timers); hero content is
+  right-positioned per the reference `justify-content-end` row; brand/team
+  renames: "Knights"→"Kickoff", "Knights Warrior"/"Knight Warrior"→
+  "Kickoff Warriors"/"Kickoff Warrior" (source-name rule), "About the
+  Knights Team"→"About the Kickoff Team"; fonts Nunito Sans via Google Fonts
+  `<link>`. Tokens #ffb400 / #6b75ff / #59b7ff / #232931 / #f8f9fa /
+  #212529 / #6c757d in `@theme`.
 
 Kickoff lives in `apps/kickoff` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
@@ -171,7 +175,7 @@ countdown timer, and a "Buy Tickets" button.
 - **THEN** the bar SHALL have a dark #232931 background, 5px radius, a large
   soft shadow, and SHALL overlap the hero bottom by ~60px (negative margin)
 - **AND** the first column SHALL show two overlapping circular team logos with
-  the names "Knights Warrior" and "Mighty Falcons" (18px white)
+  the names "Kickoff Warriors" and "Mighty Falcons" (18px white)
 - **AND** the second column SHALL show "FIFA Champions League" (18px, 50%
   white) with "Semi-Final" below it
 - **AND** the third column SHALL show a live countdown split into days,
@@ -193,7 +197,7 @@ match and a highlights link.
   and the 40px/900 heading "Great Win In Final Game"
 - **AND** the scoreboard SHALL show the divider "Tue. Feb 21, 2019; FIFA
   Champions League"
-- **AND** the scoreboard SHALL show two teams with circular logos — "Knight
+- **AND** the scoreboard SHALL show two teams with circular logos — "Kickoff
   Warrior" with score 3 styled as the winner and "Mighty Falcons" with score 1
   styled as the loser
 - **AND** a gold "More Details" button SHALL sit below the scoreboard
@@ -209,9 +213,10 @@ carousel cards.
 
 - **GIVEN** the game schedule section is rendered
 - **WHEN** the page loads
-- **THEN** the section SHALL show the heading "Game Schedule" (40px/900)
+- **THEN** the section SHALL show the subheading "Game Schedule" (16px,
+  uppercase — the reference renders it as a subheading, not an H2)
 - **AND** it SHALL render six schedule cards, each showing the venue "Home @
-  Arena", the team "Knight Warrior", and the date "April 17, 2018"
+  Arena", the team "Kickoff Warrior", and the date "April 17, 2018"
 - **AND** the cards SHALL be navigable as a carousel with prev/next controls
   (on mobile they stack)
 
@@ -257,7 +262,7 @@ stat counters.
 
 - **GIVEN** the about/counter section is rendered
 - **WHEN** the page loads
-- **THEN** the section SHALL show the heading "About the Knights Team" and two
+- **THEN** the section SHALL show the heading "About the Kickoff Team" and two
   supporting paragraphs
 
 #### Scenario: Animated counters
