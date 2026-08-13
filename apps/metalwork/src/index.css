@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Metalwork (light industrial theme with
+   a dark navbar and an orange brand); the custom variant is declared so
+   shared ui components that ship `dark:` utilities (outline/ghost variants)
+   still compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Metalwork brand palette — design tokens from the industrial reference.
+     Brand orange #fd5f00 (primary buttons, CTA band, icons, footer links,
+     hero headline highlight) with lighter hover #ff7e31; darker shades for
+     active/focus states. Mapped onto the shared primary scale so the shared
+     Button/ButtonLink `primary` variant resolves to the brand orange. */
+  --color-primary-100: #ffe8de;
+  --color-primary-200: #ffd1bd;
+  --color-primary-300: #ffb394;
+  --color-primary-400: #ff9463;
+  --color-primary-500: #ffb394;
+  --color-primary-600: #fd5f00;
+  --color-primary-700: #ff7e31;
+  --color-primary-800: #ca4c00;
+  --color-primary-900: #b14200;
+
+  /* Light section surface (#f8f9fa) and dark navbar (#343a40) from the
+     reference. */
+  --color-surface: #f8f9fa;
+  --color-dark-700: #343a40;
+
+  /* Oxygen for body text, Montserrat for headings (Google Fonts via
+     index.html). */
+  --font-sans: 'Oxygen', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

@@ -119,8 +119,13 @@
    - `Blog.tsx` — 3 media cards.
    - `CtaBand.tsx` — orange band + outline-white button.
    - `Footer.tsx` — 3 columns + copyright (Component Dock credit).
-5. Placeholder images `picsum.photos/seed/metalwork-<n>/<w>/<h>`;
-   icons from lucide-react; no colorlib references anywhere in `apps/`.
+5. Placeholder images: subject-critical dark slots pinned to verified picsum
+   IDs (`id/495` dark industrial machinery for hero 1, `id/453` dark stage
+   for hero 2 + about 1, `id/60` dark designer workspace for features
+   center + about 2 — picsum has no welding/industrial photography, so
+   dark moody scenes match the reference's dark-workshop aesthetic; rest
+   are `picsum.photos/seed/metalwork-<n>/<w>/<h>`); icons from lucide-react;
+   no colorlib references anywhere in `apps/`.
 6. Gate: `bash scripts/verify-app.sh metalwork` (typecheck + lint + 100%
    coverage tests + build); commit `feat: Metalwork — Industrial template
 (ColorLib Industrial)` on `feat/template-metalwork`; PR to main with

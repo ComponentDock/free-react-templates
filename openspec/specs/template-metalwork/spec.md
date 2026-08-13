@@ -155,11 +155,18 @@ rgba(145,232,66,0) 100%)`, 500px tall, from the top. Centered column
   - Section rhythm: `.section` padding **7em 0**; `container` widths;
     `.scaling-image`/`.frame` hover parallax (frame → scale .9, inner
     img/bg → scale 1.2).
-- **Recreation decisions:** photos → seeded picsum placeholders
+- **Recreation decisions:** photos → picsum placeholders. Picsum has NO
+  welding/industrial photography (screened ~140 IDs + 10 visual checks,
+  2026-08-13), so the subject-critical dark slots use verified dark moody
+  photos that match the reference's dark-workshop aesthetic: hero slide 1
+  `picsum.photos/id/495` (dark industrial machinery — gauge, pipes, motor),
+  hero slide 2 `picsum.photos/id/453` (dark dramatic stage lighting),
+  features center `picsum.photos/id/60` (dark designer workspace), about 1
+  `id/453` (900x600), about 2 `id/60` (900x600); the rest stay seeded
   (`picsum.photos/seed/metalwork-<n>/<w>/<h>`); icons → lucide-react
   (Presentation, Hammer, Box, ClipboardList, Bell, Heart, Zap, Play,
-  ChevronLeft, ChevronRight, Plus, Search, ArrowRightCircle, Twitter,
-  Facebook, Linkedin, Instagram, MapPin, Phone, Mail, Menu); Oxygen +
+  ChevronLeft, ChevronRight, Plus, Search, ArrowRightCircle, MapPin, Phone,
+  Mail, Menu); Oxygen +
   Montserrat via Google Fonts `<link>` in `index.html`; brand orange
   `#fd5f00` (+ hover `#ff7e31`) in `@theme` so shared Button/ButtonLink
   `primary` resolves to orange with 2px border and the local
