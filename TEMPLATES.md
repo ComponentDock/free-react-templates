@@ -425,13 +425,8 @@
 - [x] **Judge** — [colorlib](https://colorlib.com/wp/template/judge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/judge-free-template.jpg) · [gavel](https://gavel.free.componentdock.com)
 - [x] **Ithost** — [colorlib](https://colorlib.com/wp/template/ithost/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ithost-free-template.jpg) · [upsurge](https://upsurge.free.componentdock.com)
 - [x] **Kanox** — [colorlib](https://colorlib.com/wp/template/kanox/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kanox-free-template.jpg) · [maven](https://maven.free.componentdock.com)
-<<<<<<< HEAD
-- [ ] **Kenedy** — [colorlib](https://colorlib.com/wp/template/kenedy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kenedy-free-template.jpg)
-- [~] **Kiddy** — [colorlib](https://colorlib.com/wp/template/kiddy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kiddy-free-template.jpeg)
-=======
 - [x] **Kenedy** — [colorlib](https://colorlib.com/wp/template/kenedy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kenedy-free-template.jpg) · [artisan](https://artisan.free.componentdock.com)
-- [ ] **Kiddy** — [colorlib](https://colorlib.com/wp/template/kiddy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kiddy-free-template.jpeg)
->>>>>>> origin/main
+- [~] **Kiddy** — [colorlib](https://colorlib.com/wp/template/kiddy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kiddy-free-template.jpeg)
 - [ ] **Knights** — [colorlib](https://colorlib.com/wp/template/knights/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/knights-free-template.jpg)
 - [ ] **Kusina** — [colorlib](https://colorlib.com/wp/template/kusina/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kusina-free-template.jpeg)
 - [ ] **Lagoon** — [colorlib](https://colorlib.com/wp/template/lagoon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lagoon-free-template.jpg)
