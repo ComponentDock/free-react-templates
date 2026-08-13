@@ -159,6 +159,14 @@ slider.owl-carousel` of FIVE `div.single-brand` logo images
   "Profesional Workers" → "Professional Workers", "Manufactoring" →
   "Manufacturing", "footer-buttom" class typo not reproduced. Contact email
   "contact@industryalinc.com" → paraphrased (e.g. hello@dynamo.com).
+  Testimonial portraits: picsum has no verified male headshots, so the
+  speaker name is paraphrased to match the available portrait ("Michael
+  Smith" → "Sarah Mitchell", role "CEO, Dynamo Energy") — content-kind
+  latitude, noted in the PR. Subject-verified picsum IDs used for
+  backgrounds: 616 (steel truss roof — hero 1), 663 (suspension bridge —
+  hero 2), 870 (twilight lighthouse — features bg), 903 (night sky —
+  testimonial bg), 693 (bridge in fog — video box); feature card images are
+  seeded picsum placeholders (small thumbnails, not subject-critical).
 - **Differs from Millwright (ColorLib Industries — a DIFFERENT source
   template):** navy/yellow industrial palette (not orange); dark topbar +
   dark sticky nav info boxes; hero headline on yellow blocks (not plain white
@@ -287,7 +295,7 @@ carousel.
 - **WHEN** the testimonial section is displayed
 - **THEN** it SHALL show a background image on the left half
 - **AND** the right half SHALL show the heading "Client's Testimonials"
-- **AND** at least one testimonial SHALL show a quote, an avatar, the name "Michael Smith", and the role "CEO Industrial INC"
+- **AND** at least one testimonial SHALL show a quote, an avatar, the name "Sarah Mitchell", and the role "CEO, Dynamo Energy"
 
 #### Scenario: Testimonial carousel navigation
 
