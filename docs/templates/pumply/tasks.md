@@ -140,3 +140,8 @@ pumply` (or `npm run verify:app`).
 - Trainer middle card has `mt-5` offset; large-gutters adds negative margins.
 - Owl carousels have hidden navs and only dots; implement autoplay/loop
   matching the reference (Classes + Services).
+- Seed screening (2026-08-13, implementation): 12 picsum candidates (ids 219,
+  368, 375, 447, 509, 746, 870, 883, 995, 1005, 1062, 1071) were screened —
+  NONE show a gym/equipment/trainer scene. Picsum has no reliable fitness
+  imagery; keep the pinned seeds (arbitrary placeholders) and let the dark
+  hero overlay carry the mood. Do NOT re-screen; note in PR.
