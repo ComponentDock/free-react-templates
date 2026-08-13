@@ -69,7 +69,7 @@ typography, and content types (no ColorLib assets copied).
      `.col-md-8.col-lg-7`: `<span class="position">` label — "Top
      Model's" / "Super Model's" / "Photo Model's" (20px uppercase pink
      w300) + `<h1 class="mb-3">` model name — "Kate Henderson" /
-     "Samantha Lewis" / "Jessica Alba" / "Michael Buff" (50px white
+     "Samantha Lewis" / "Jessica Alba" / "Alexis Bright" (50px white
      uppercase ls 1px lh 1.2) + `.d-md-flex.models-info.mt-5.mb-5` of 7
      stat cells (`width: 14%`, `border-left: 1px solid
 rgba(255,255,255,0.2)`, label p + value span; mobile 20% inline):
@@ -197,11 +197,14 @@ rgba(0,0,0,0.75)`; mobile text-center): `h3` white uppercase 24px
   hero slider height 100vh still; footer widgets stack 1-col; stats
   cells wrap.
 - **Placeholder images (never copy ColorLib assets):** hero slides 1–4 →
-  `https://picsum.photos/seed/glamour-slide-<n>/1600/1000`, split blocks
+  pinned picsum person photos `https://picsum.photos/id/{64,1027,823,996}/1600/1000`
+  (verified portraits; the arbitrary `glamour-slide-<n>` seeds rendered
+  industrial/landscape scenes), split blocks
   → `glamour-about` / `glamour-models-bg` / `glamour-services-bg` /
   `glamour-video` / `glamour-nav-bg`, model cards 1–9 →
-  `https://picsum.photos/seed/glamour-model-<n>/600/860` (portrait 430px
-  tall), testimonial avatar → `glamour-person/240/240` (circle 100px),
+  `https://picsum.photos/id/{1027,64,823,996}/600/860` cycling (portrait 430px
+  tall), testimonial avatar → `https://picsum.photos/id/64|1027/240/240`
+  (circle 100px),
   blog images 1–3 → `glamour-blog-<n>/800/600`, footer block-21 thumbs →
   `glamour-thumb-<n>/160/160`.
 
@@ -254,7 +257,8 @@ label, a huge white uppercase model name, a stats row
   Model's" / "Super Model's" / "Photo Model's")
 - **AND** the slide SHALL show a model name as a large white uppercase
   heading ("Kate Henderson", "Samantha Lewis", "Jessica Alba",
-  "Michael Buff")
+  "Alexis Bright" — the source's fourth name "Michael Buff" was
+  paraphrased to a female name to match the available portrait photos)
 - **AND** a stats row SHALL list Height 185 · Bust 79 · Waist 40 ·
   Hips 87 · Shoe 40 · Eyes Blue · Hair Brunet in uppercase cells
   separated by light dividers
@@ -456,9 +460,9 @@ widgets stacked.
 - [ ] Fonts: Josefin Sans (headings) + Rubik (body) via Google Fonts
       `<link>` in `index.html`, title "Glamour — Model Agency
       Template"
-- [ ] All imagery via picsum seeds (glamour-slide-1..4 / -about /
-      -video / -nav-bg / -model-1..9 / -person / -blog-1..3 /
-      -thumb-1..2) — NEVER copy ColorLib images; icons from
+- [ ] All imagery via picsum (hero + model cards + avatars pinned to
+      verified person photo IDs 64/1027/823/996; about / video / nav-bg /
+      blog / thumb via seeded picsum) — NEVER copy ColorLib images; icons from
       `lucide-react` (social brand icons as inline SVG)
 - [ ] Interactions: nav overlay toggle (`aria-expanded`), hero slider +
       testimonial carousels (index-based with dots), model card hover
