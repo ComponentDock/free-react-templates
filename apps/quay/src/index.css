@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Quay design tokens — recreated from the source preview stylesheets
+     (no assets copied):
+     - brand blue #3e64ff: primary buttons, services section background,
+       footer link hover. Hover darkens to #1845ff.
+     - ink #000: section headings (uppercase, bold).
+     - fog #c9ccd4: footer background (light gray-blue).
+     - mist #f6f5f5 / #f8f9fa: light section grays.
+     - fonts: Playfair Display (display serif accent) + Roboto (body). */
+  --color-brand: #3e64ff;
+  --color-brand-hover: #1845ff;
+  /* Shared Button/ButtonLink theme (packages/ui uses primary-600/700). */
+  --color-primary-600: #3e64ff;
+  --color-primary-700: #1845ff;
+  --color-ink: #000000;
+  --color-body: #212529;
+  --color-muted: #6c757d;
+  --color-fog: #c9ccd4;
+  --color-mist: #f6f5f5;
+  --color-line: #e9ecef;
+  --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-body);
+    background-color: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--color-ink);
+  }
+}

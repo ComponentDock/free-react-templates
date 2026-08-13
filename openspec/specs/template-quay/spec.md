@@ -30,6 +30,14 @@ TypeScript.
   of the hero image, while the live preview CSS centers it
   (`left: 50%; transform: translate(-50%, -50%)`) — follow the live
   preview (centered) and note the difference.
+- **Hero image screening (2026-08-13):** picsum seeds render arbitrary
+  photos (`quay-hero-1` showed a forest — off-theme for an interior
+  studio). Subject-screened with the pixel-metric + browser-verify
+  pipeline and pinned three verified design-studio/architectural shots:
+  `picsum.photos/id/180` (designer workspace flat-lay, warm wood),
+  `picsum.photos/id/20` (design desk with books + pencils),
+  `picsum.photos/id/1067` (golden-hour city skyline). Portfolio card
+  images keep the `picsum.photos/seed/quay-work-<n>` pattern.
 - **Section order (1:1, from live preview DOM):**
   1. Navbar (`site-navbar bg-white`, sticky-ish, padding 1rem): three
      columns — left nav (About, Gallery, Contact), center `site-logo`
@@ -229,11 +237,13 @@ links, a subscribe form, social links, and a copyright line.
 - **THEN** it SHALL show an "About Us" heading with an about paragraph
 - **AND** it SHALL show a "Features" column with links (About Us,
   Features, Testimonials, Terms of Service, Privacy)
-- **AND** it SHALL show a "Subscribe" heading with an email input and a
-  "Subscribe" primary button
+- **AND** it SHALL show a "Subscribe to Newsletter" heading with an email
+  input and a "Subscribe" primary button
 - **AND** it SHALL show social icon links and the copyright line
   "Copyright © All rights reserved | This template is made with ♥ by
-  Colorlib"
+  Component Dock" (the mandatory Component Dock attribution replaces the
+  source template's Colorlib line; live preview shows "Subscribe to
+  Newsletter" as the form heading)
 
 #### Scenario: Subscribe form
 
