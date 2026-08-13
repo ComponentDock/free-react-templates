@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Skyward (light theme with blue bands
+   and footer, like the hosting reference); the custom variant is declared
+   so shared ui components that ship `dark:` utilities (outline/ghost
+   variants) still compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Skyward brand palette — design tokens from the hosting reference.
+     Brand blue #207dff (hero overlay, domain band, pricing section,
+     footer, primary buttons), accent green #a1dd70 (nav CTA pill,
+     secondary buttons, active pricing card) with hover #93d85b. */
+  --color-primary-50: #eaf4ff;
+  --color-primary-100: #d6e9ff;
+  --color-primary-200: #add2ff;
+  --color-primary-300: #7db9ff;
+  --color-primary-400: #4a9dff;
+  --color-primary-500: #2e8cff;
+  --color-primary-600: #207dff;
+  --color-primary-700: #1a68d9;
+  --color-primary-800: #1754ad;
+  --color-primary-900: #134082;
+  --color-primary-950: #0c2a55;
+
+  /* Accent green scale (CTA pills, secondary buttons, active plan card) */
+  --color-accent-100: #eefbe3;
+  --color-accent-200: #dcf7c8;
+  --color-accent-300: #c4efa4;
+  --color-accent-400: #b1e68a;
+  --color-accent-500: #a1dd70;
+  --color-accent-600: #93d85b;
+  --color-accent-700: #7abf42;
+
+  /* Light section background from the reference */
+  --color-mist-50: #f6fafd;
+  --color-mist-100: #eef5fb;
+
+  /* Testimonial star yellow */
+  --color-star-400: #ffc107;
+
+  /* Work Sans everywhere — Google Fonts via index.html */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
