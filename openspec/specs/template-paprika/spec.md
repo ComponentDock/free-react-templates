@@ -1,5 +1,10 @@
 # Template: Paprika (Restaurant Landing)
 
+> **SUPERSEDED** — ColorLib "Marco" is being recreated as **Sizzle**
+> (claim branch feat/template-sizzle, 2026-08-13; both Marco rows lines
+> 444/2686 are marked `[~]`). Do NOT implement this spec. Delete on next
+> cleanup.
+
 ## Purpose
 
 Paprika is a single-page restaurant landing template in the
