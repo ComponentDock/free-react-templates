@@ -107,17 +107,24 @@ bg-info` #17a2b8: centered cursive red "Packages You Like" + white h2 "Our
     16px, quote p 20px white.
   - Stats: h2-sized numbers in per-stat color + small labels.
   - Navbar `.site-navbar`: absolute, top 0, width 100%, padding 1rem; logo
-    2.7rem (white "Kiddy" + `text-primary` #dc3545 dot); nav links coral
-    #fd4d40 (hover/active), margin 0 15px, padding 20px 0; sticky → white bg.
+    2.7rem (white "Kiddy" + `text-primary` #dc3545 dot); nav row in a white
+    floating pill `.menu-wrap` (bg #fff, border-radius 100px, padding 10px
+    20px); nav links **#000** (margin 0 15px, padding 20px 0) with active
+    (Home) and hover **coral #fd4d40**; sticky → white bg.
   - Cover: min-height 777px (`calc(100vh - 196px)`), `:before` overlay
     rgba(0,0,0,.3) → hero renders as light gray over white; h1 3rem (48px)
     white weight 700, line-height 1; p 18px white.
   - Form control (newsletter): height 55px, white bg; focus border #fd4d40.
   - Footer: bg #343a40, white headings/text, copyright border-top
     rgba(255,255,255,.1).
-- **Recreation decisions:** hero superhero-kid photo → seeded picsum portrait;
-  About photo → seeded picsum; package icons (jigsaw/target/mission) →
-  lucide-react equivalents (Puzzle, Target, Rocket/Compass — pick closest) in
+- **Recreation decisions:** hero superhero-kid photo → picsum person portrait
+  (verified `id/823` — young woman with camera, outdoor; picsum has no child
+  portraits, documented deviation) aligned to the bottom of the hero; About
+  photo → picsum `id/64` (golden-hour woman with daisies in a meadow, warm
+  outdoor scene); testimonial avatars → verified person photos `id/1027`
+  (profile portrait), `id/996` (backlit profile), `id/1011` (person canoeing);
+  package icons (jigsaw/target/mission) →
+  lucide-react equivalents (Puzzle, Target, Compass — pick closest) in
   a white 80px circle; feature icons → lucide Home, User, Settings/Cog;
   social icons → inline SVG (Facebook, Twitter, Linkedin) since lucide
   removed brand icons; hero background → light gray
@@ -175,9 +182,12 @@ the menu links, and social icons on the right.
 
 - **GIVEN** the navbar is rendered
 - **WHEN** a nav link is displayed
-- **THEN** the link SHALL be coral (#fd4d40) with ~15px horizontal margins
-  and 20px vertical padding
-- **AND** the link SHALL keep the coral color on hover
+- **THEN** the link SHALL sit in a white floating pill (reference
+  `.menu-wrap`: white background, fully rounded, ~10px/20px padding)
+- **AND** the link SHALL be black (#000) with ~15px horizontal margins and
+  20px vertical padding
+- **AND** the link SHALL turn coral (#fd4d40) on hover
+- **AND** the active link (Home) SHALL be coral (#fd4d40)
 
 #### Scenario: Mobile menu
 

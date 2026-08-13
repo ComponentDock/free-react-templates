@@ -124,7 +124,7 @@ text-danger` + ColorLib credit).
 - [ ] Scaffold `apps/frolic` from the simplest existing app; package
       `@free-react-templates/frolic`; `npm install` at root + verify
       lockfile registers the workspace (`grep -c free-react-templates/frolic
-    package-lock.json`); `vite.config.ts` MUST keep `injectUiSource()`.
+  package-lock.json`); `vite.config.ts` MUST keep `injectUiSource()`.
 - [ ] `src/index.css` `@theme`: coral #fd4d40, button red #dc3545, teal
       #16c3b0, yellow #fdb62f, green #71bc42, info #17a2b8, warning #ffc107,
       ink #364d59, light #f6f5f5, footer #343a40, #777, #000; DM Sans +
@@ -188,9 +188,10 @@ rounded-br-[30px]`). Apply it to ALL primary CTAs — this is the template's
 - Copy: keep headline/subtext/eyebrow patterns and the same _kind_ of card
   content; paraphrase the lorem ipsum. Rebrand footer credit to
   "made with <heart> by free-react-templates" style, never Colorlib.
-- Never copy assets — seeded picsum: hero `seed/frolic-1` (600×600 portrait),
-  about `seed/frolic-2` (600×500), testimonial faces `seed/frolic-3..5`
-  (80×80). Package icons: lucide (Puzzle, Target, Rocket) in white 80px
+- Never copy assets — picsum (subject-verified): hero `id/823` (600×700
+  person portrait), about `id/64` (600×450 golden-hour meadow), testimonial
+  avatars `id/1027` / `id/996` / `id/1011` (160×160 person photos, rendered
+  80×80). Package icons: lucide (Puzzle, Target, Compass) in white 80px
   circles — do NOT copy the flaticon SVGs.
 - Icons → lucide-react equivalents: Home, User, Settings/Cog, MapPin, Clock,
   Check, Heart; Facebook/Twitter/LinkedIn as inline SVG brand icons (not in
