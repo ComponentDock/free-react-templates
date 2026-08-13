@@ -1,3 +1,8 @@
+> **SUPERSEDED** — ColorLib Hosthub shipped as **Uplink** (apps/uplink,
+> PR #370, https://uplink.free.componentdock.com). Do NOT implement this spec;
+> delete on next cleanup. The two Hosthub rows in TEMPLATES.md are marked `[x]`
+> with the uplink URL.
+
 # Template: Nexnode (Hosting)
 
 ## Purpose
