@@ -157,16 +157,16 @@ col-lg-4`): small thumb + text block (h3 + paragraph): **Give Meal A
     right-side links (About Us); `bg-light` sections alternate with white.
   - Footer — `#404040` background, 4-column layout, white + gray text.
 
-- **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/generous-<n>/<w>/<h>`; hero ~1600×1000-class, cards
-  ~600×400-class, avatars 100×100, thumbs ~150×100-class); icons →
-  lucide-react (e.g. HeartHandshake/Heart for donate, Users for volunteers,
-  BriefcaseMedical/Medkit for medical mission) with social brand icons as
-  inline SVG (lucide-react removed brand glyphs); fonts via Google Fonts
-  `<link>` (Poppins + Gaegu) in `index.html`; logo recreated as a text
-  wordmark "Generous" (white Gaegu uppercase on the dark navbar); the hero's
-  rotating slides may auto-rotate or stay on slide 1 — the heading must
-  always be visible.
+- **Recreation decisions:** photos → picsum placeholders
+  (hero photos pinned to verified warm/people scenes: `picsum.photos/id/64`,
+  `id/823`, `id/996` — the arbitrary `generous-hero-N` seeds rendered an
+  airport-tarmac scene; card/avatar seeds verified distinct); icons →
+  lucide-react (BriefcaseMedical, HeartHandshake, Users, ChevronLeft,
+  ChevronRight) with social brand icons as inline SVG (lucide-react removed
+  brand glyphs); fonts via Google Fonts `<link>` (Poppins + Gaegu) in
+  `index.html`; logo recreated as a text wordmark "Generous" (white Gaegu
+  uppercase on the dark navbar); the hero's rotating slides auto-rotate every
+  5s with prev/next arrows and bar-dot controls.
 
 Generous lives in `apps/generous` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).
