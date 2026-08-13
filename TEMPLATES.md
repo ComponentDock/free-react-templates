@@ -450,7 +450,7 @@
 - [x] **Meditative** — [colorlib](https://colorlib.com/wp/template/meditative/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meditative-free-template.jpg) · [zendo](https://zendo.free.componentdock.com)
 - [x] **Meetup** — [colorlib](https://colorlib.com/wp/template/meetup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meetup-free-template.jpg) · [gatherly](https://gatherly.free.componentdock.com)
 - [x] **Mighty** — [colorlib](https://colorlib.com/wp/template/mighty/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mighty-free-template.jpg) · [fortis](https://fortis.free.componentdock.com)
-- [ ] **Miners** — [colorlib](https://colorlib.com/wp/template/miners/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/miners-free-template.jpg)
+- [~] **Miners** — [colorlib](https://colorlib.com/wp/template/miners/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/miners-free-template.jpg)
 - [x] **Miniblog** — [colorlib](https://colorlib.com/wp/template/miniblog/) · [tidbit](https://tidbit.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/miniblog-free-template.jpg)
 - [ ] **Minishop** — [colorlib](https://colorlib.com/wp/template/minishop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/minishop-free-template.jpg)
 - [ ] **Mobapp** — [colorlib](https://colorlib.com/wp/template/mobapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/MobApp-free-one-mobile-app-landing-page.jpg)
