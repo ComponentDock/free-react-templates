@@ -150,15 +150,16 @@ CSS 4 + TypeScript.
     right (Latest Causes) or centered (Latest Event).
   - `bg-image` sections use `background-attachment: fixed` (parallax).
 
-- **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/benefact-<n>/<w>/<h>`; hero ~1600×900-class, cause
-  cards ~400×300-class, event/CTA ~600×400-class); icons → lucide-react
-  (Menu, Clock, MapPin, Heart) with social brand icons as inline SVG
+- **Recreation decisions:** photos → picsum placeholders
+  (hero slides pinned to verified warm/people scenes: `picsum.photos/id/64`,
+  `id/823`, `id/996` — the arbitrary `benefact-hero-N` seeds collided to the
+  same night-sky photo; cause/event/avatar seeds verified distinct); icons →
+  lucide-react (Menu, Clock, MapPin) with social brand icons as inline SVG
   (lucide-react removed brand glyphs); fonts via Google Fonts `<link>`
   (Roboto + Mansalva) in `index.html`; logo recreated as a text wordmark
   "Benefact" (white on the dark navbar); the hero's 3 rotating background
-  slides keep the static caption box; the carousel may auto-rotate or
-  stay on slide 1 — the caption must always be visible.
+  slides keep the static caption box; the carousel auto-rotates every 5s and
+  the caption stays fixed.
 
 Benefact lives in `apps/benefact` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).

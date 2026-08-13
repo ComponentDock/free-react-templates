@@ -69,7 +69,9 @@ cursive`; Google Fonts Roboto + Mansalva `<link>`s in `index.html`.
 6. `Hero.tsx` — full-viewport hero: static centered caption box
    (Mansalva h1 "Join The Movement To end Child Poverty" + square green
    "Donate Now" ButtonLink) over a rotating background photo carousel —
-   3 slides (`picsum.photos/seed/benefact-1..3/<1600x900>`), dark overlay
+   3 slides pinned to verified warm/people scenes (`picsum.photos/id/64`,
+   `id/823`, `id/996` — arbitrary `benefact-hero-N` seeds collided to the
+   same night-sky photo), dark overlay
    (`bg-black/30`); crossfade/rotate optional, caption must stay visible;
    min-height 600px, `h-screen`-class on desktop.
 7. `CauseStrip.tsx` — 3 cards (grid-cols-1 md:grid-cols-3, 300px tall,

@@ -9,6 +9,8 @@ export const navLinks = [
 ]
 
 export const heroSlides = [
+  // Pinned to distinct verified photos: the arbitrary `benefact-hero-N`
+  // seeds collided (hero-1 and hero-3 resolved to the same image).
   { src: 'https://picsum.photos/id/64/1600/900', alt: '' },
   { src: 'https://picsum.photos/id/823/1600/900', alt: '' },
   { src: 'https://picsum.photos/id/996/1600/900', alt: '' },
