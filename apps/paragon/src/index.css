@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Paragon
+   itself is a light interior-design landing page. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Paragon brand palette — sage green #207561 on white with black
+     uppercase headings (design tokens from the source spec). */
+  --color-brand: #207561; /* sage green: logo, buttons, active links, arrows, dots, borders */
+  --color-brand-dark: #185748; /* button/logo hover */
+  --color-brand-active: #154d40; /* button active */
+  --color-ink: #000000; /* all headings + body text */
+  --color-mist: #888888; /* small labels, secondary text */
+  --color-faint: #b3b3b3; /* captions, inactive dots */
+  --color-line: #ced4da; /* form borders */
+  --color-smoke: #f8f9fa; /* light band */
+
+  /* Original font via Google Fonts: DM Sans (whole site — headings, body,
+     form controls). */
+  --font-sans:
+    'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
