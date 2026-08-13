@@ -1,5 +1,10 @@
 # Template: Jurist (Law Firm Template)
 
+> **SUPERSEDED** — ColorLib "Legalcare" was already recreated as **Counsely**
+> (https://counsely.free.componentdock.com, PR #388, merged 2026-08-13). Do
+> NOT implement this spec — the TEMPLATES.md Legalcare rows (lines 437/2128)
+> are marked `[x]` with the counsely URL. Delete on next cleanup.
+
 ## Purpose
 
 Jurist is a law-firm one-page template in the free-react-templates monorepo.
