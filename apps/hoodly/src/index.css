@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Hoodly brand pink — extracted from the original reference stylesheet
+     (css/style.css, brand color #FF5581 on buttons, pills, and hovers). */
+  --color-brand: #ff5581;
+
+  /* Heading ink (#242424 in the source). */
+  --color-ink: #242424;
+
+  /* Body-copy gray (#787878 in the source). */
+  --color-muted: #787878;
+
+  /* Light section + card background (#F7F8FB in the source). */
+  --color-light: #f7f8fb;
+
+  /* Dark header + footer background (#1d1d1d in the source). */
+  --color-dark: #1d1d1d;
+
+  /* Newsletter input background (#333333 in the source). */
+  --color-input-dark: #333333;
+
+  /* How-it-works number squares (#2C2C2C in the source). */
+  --color-number-dark: #2c2c2c;
+
+  /* "Open" pill grey (#CACDD6 in the source). */
+  --color-open-grey: #cacdd6;
+
+  /* FEATURED tag colors per category. */
+  --color-tag-yellow: #ffc600;
+  --color-tag-blue: #009cff;
+  --color-tag-green: #4cca81;
+  --color-tag-purple: #c55cd8;
+
+  /* Footer widget link gray (#8e8e8e in the source). */
+  --color-footer-muted: #8e8e8e;
+
+  /* Footer copyright gray (#414141 in the source). */
+  --color-copyright-grey: #414141;
+
+  /* Original font: "Lato" via Google Fonts (loaded in index.html). */
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
