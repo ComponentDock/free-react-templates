@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Curale brand palette — recreated from the reference stylesheet
+     (assets/css/style.css): signature blue→cyan gradient #244cfd → #15e4fd
+     for CTAs, hover states and overlays; brand blue #244cfd for badges,
+     link hovers and accents. */
+  --color-brand: #244cfd;
+  --color-cyan: #15e4fd;
+
+  /* Headings #222 (Ubuntu 700), body copy #777 (Roboto 15px). */
+  --color-ink: #222222;
+  --color-body: #777777;
+
+  /* Section backgrounds: #f9f9fd (department/specialist/patient cards,
+     scrolled header), #f9f9ff (feature cards / generic inputs). */
+  --color-surface: #f9f9fd;
+  --color-surface-alt: #f9f9ff;
+
+  /* Dark footer #12151f (navy-black, white text). */
+  --color-footer: #12151f;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variants
+     resolve to the brand blue; hover deepens toward #0f3bb8. */
+  --color-primary-50: #eef1ff;
+  --color-primary-100: #dce4ff;
+  --color-primary-200: #b9c8ff;
+  --color-primary-300: #8aa5ff;
+  --color-primary-400: #5c7cff;
+  --color-primary-500: #3558fd;
+  --color-primary-600: #244cfd;
+  --color-primary-700: #0f3bb8;
+
+  /* Headings: Ubuntu (400/500/700); body: Roboto (300–900) — Google
+     Fonts via index.html, matching the reference typefaces. */
+  --font-heading: 'Ubuntu', sans-serif;
+  --font-sans: 'Roboto', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading text-ink;
+  }
+}
