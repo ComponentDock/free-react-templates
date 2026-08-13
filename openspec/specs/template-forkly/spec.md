@@ -241,6 +241,11 @@ bo-rad-10 bgwhite`, placeholder "Email Adrress" [source typo — fix to
 
 ### Requirement: Welcome section
 
+The system SHALL render a light Welcome section with a script eyebrow,
+heading, paragraph and a story link.
+
+#### Scenario: Welcome content
+
 - **GIVEN** the user scrolls to the Welcome section
 - **WHEN** the section is displayed
 - **THEN** a light section with a subtle pattern SHALL show the script
@@ -266,6 +271,11 @@ bo-rad-10 bgwhite`, placeholder "Email Adrress" [source typo — fix to
 - **THEN** the click SHALL NOT navigate away (dead-end link)
 
 ### Requirement: Our Menu
+
+The system SHALL render an Our Menu section with a script eyebrow, heading
+and six rounded image cards with overlay buttons.
+
+#### Scenario: Menu cards
 
 - **GIVEN** the user scrolls to the Our Menu section
 - **WHEN** the section is displayed
@@ -310,6 +320,11 @@ bo-rad-10 bgwhite`, placeholder "Email Adrress" [source typo — fix to
 
 ### Requirement: Review section
 
+The system SHALL render a Review section with a script eyebrow, heading and
+a testimonial carousel.
+
+#### Scenario: Testimonial carousel
+
 - **GIVEN** the user scrolls to the Review section
 - **WHEN** the section is displayed
 - **THEN** the script eyebrow **"Customers Say"** and heading **"Review"**
@@ -345,6 +360,11 @@ bo-rad-10 bgwhite`, placeholder "Email Adrress" [source typo — fix to
 - **THEN** the click SHALL NOT navigate away (dead-end link)
 
 ### Requirement: Signup band
+
+The system SHALL render a signup band with a heading, an email input and a
+sign-up button.
+
+#### Scenario: Signup form
 
 - **GIVEN** the user scrolls between the Blog section and the footer
 - **WHEN** the signup band is displayed
