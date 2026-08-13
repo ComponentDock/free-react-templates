@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Glamour brand hot pink — extracted from the original reference
+     stylesheet (css/style.css, brand color #f62a66 on buttons, links,
+     hover states, and the model-card hover panel). */
+  --color-brand: #f62a66;
+
+  /* Pure black — fullscreen nav overlay + hero text accents (#000000). */
+  --color-ink: #000000;
+
+  /* Footer background (#252525 in the source). */
+  --color-footer-bg: #252525;
+
+  /* Light gray heading column of the models grid (#f8f9fa, Bootstrap
+     bg-light in the source). */
+  --color-light: #f8f9fa;
+
+  /* Base body text (#666666 in the source). */
+  --color-body-grey: #666666;
+
+  /* Muted footer link text rgba(255,255,255,0.4) over the dark footer. */
+  --color-footer-muted: rgba(255, 255, 255, 0.4);
+
+  /* Footer heading / title links rgba(255,255,255,0.8). */
+  --color-footer-soft: rgba(255, 255, 255, 0.8);
+
+  /* Original fonts: Josefin Sans (headings) + Rubik (body) via Google
+     Fonts (loaded in index.html). */
+  --font-heading: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-body-grey;
+  }
+}
