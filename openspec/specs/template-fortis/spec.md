@@ -198,8 +198,13 @@ rgba(0,0,0,0.2)`, logo green, links black.
   `aria-label="Play video"` button — no Vimeo embed needed; may link to the
   source video URL or be a placeholder). Testimonials are three static
   columns (NOT an owl carousel — source renders 3 static cols on index).
-  Placeholder images `picsum.photos/seed/fortis-<n>/<w>/<h>` (hero, about,
-  works ×6, studio, testimonials ×3, blog ×3); service icons via distinct
+  Placeholder images `picsum.photos/seed/fortis-<n>/<w>/<h>` (works ×6,
+  studio, blog ×3); subject-critical slots pinned to verified picsum photos
+  (hero workspace `picsum.photos/id/0/1920/1080` — MacBook + coffee desk
+  matching the source hero_1.jpg; about desk flat-lay `id/180/800/1000`;
+  testimonial headshots use the verified portrait IDs 1027 / 64 / 823 with
+  paraphrased female author names — picsum has no male portraits); service
+  icons via distinct
   `lucide-react` icons (source repeats desktop_mac ×4 — one per service is
   a documented improvement); social icons via inline SVG brand icons
   (lucide-react removed brand icons); document title "Fortis — Web Design
