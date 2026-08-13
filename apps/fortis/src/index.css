@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Fortis brand palette — recreated from the reference stylesheet
+     (css/style.css): seafoam brand green #01d28e (solid pill buttons,
+     progress-bar fills, nav hover/active link, sticky logo, footer links,
+     social-circle tint), custom light section #f6f5f5 (NOT Bootstrap's
+     #f8f9fa), footer #efefef, body copy #364d59. */
+  --color-brand: #01d28e;
+
+  /* Custom light section background (services, counters, testimonials). */
+  --color-light: #f6f5f5;
+
+  /* Footer background. */
+  --color-footer: #efefef;
+
+  /* Body copy (#364d59) and muted text (#777) from the reference. */
+  --color-body: #364d59;
+  --color-muted: #777;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variants
+     resolve to the brand green (hover deepens slightly). */
+  --color-primary-50: #ecfdf5;
+  --color-primary-100: #d1fae5;
+  --color-primary-200: #a7f3d0;
+  --color-primary-300: #6ee7b7;
+  --color-primary-400: #34d399;
+  --color-primary-500: #10b981;
+  --color-primary-600: #01d28e;
+  --color-primary-700: #01b87c;
+
+  /* The original template's typeface: Muli (Google Fonts via index.html),
+     300 body / 400 / 700 headings. */
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Muli', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans font-light text-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+  }
+
+  /* Centered section heading with the source's signature double underline
+     (heading-29190): 80px×2px black bar at bottom:-6px + 50px×2px black bar
+     at bottom:0, both centered. */
+  .section-heading {
+    @apply relative mx-auto mb-8 pb-5 text-center text-[32px] font-medium leading-tight;
+  }
+
+  .section-heading::before {
+    content: '';
+    @apply absolute bottom-[-6px] left-1/2 h-0.5 w-20 -translate-x-1/2 bg-black;
+  }
+
+  .section-heading::after {
+    content: '';
+    @apply absolute bottom-0 left-1/2 h-0.5 w-[50px] -translate-x-1/2 bg-black;
+  }
+}
