@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Hearth
+   itself is a light page (no dark variant in the reference design). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Hearth brand palette — recreated from the source design tokens:
+     the single brand accent is a warm red #f34949 used for links, active
+     nav item, primary buttons, carousel-dot active, quote icon and the
+     newsletter submit. */
+  --color-brand: #f34949;
+
+  /* Brand-soft — the lighter red-pink #f67979 used for the Lovers Quarrel
+     script subheadings ("About", "Specialties", "Testimony", "Chef",
+     "Book a Table"). */
+  --color-brand-soft: #f67979;
+
+  /* Brand-dark — the documented hover state for solid red buttons
+     (darker red, derived from the source button treatment). */
+  --color-brand-dark: #d83a3a;
+
+  /* Ink — pure black headings and nav links (#000000). */
+  --color-ink: #000000;
+
+  /* Paper — white page/section backgrounds (#ffffff). */
+  --color-paper: #ffffff;
+
+  /* Footer — the dark footer background (#141313). */
+  --color-footer: #141313;
+
+  /* Footer-alt — the brown-dark footer class color (#3c312e). */
+  --color-footer-alt: #3c312e;
+
+  /* Divider — 1px dashed menu-row divider and input borders (#e6e6e6). */
+  --color-divider: #e6e6e6;
+
+  /* Foot — secondary footer text color (#959595). */
+  --color-foot: #959595;
+
+  /* Muted — bootstrap gray-600 general muted text (#6c757d). */
+  --color-muted: #6c757d;
+
+  /* Primary scale — drives the shared packages/ui Button/ButtonLink
+     (bg-primary-600 / hover:bg-primary-700 / ring-primary-500/40), mapped to
+     the brand red family so shared buttons render on-brand. */
+  --color-primary-500: #f66b6b;
+  --color-primary-600: #f34949;
+  --color-primary-700: #d83a3a;
+
+  /* Body/UI font: Poppins (400–700); decorative script: Lovers Quarrel
+     (cursive section subheadings, 50px, overlapping the h2). */
+  --font-body:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-sans:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-script: 'Lovers Quarrel', cursive;
+}
