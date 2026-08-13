@@ -1,3 +1,7 @@
+> **SUPERSEDED** — ColorLib "Fundraiser" shipped as **Benefact** (PR #361,
+> https://benefact.free.componentdock.com). Do NOT implement — delete on next
+> cleanup. Both TEMPLATES.md Fundraiser rows (404, 1267) are marked `[x]`.
+
 # Template: Donorly (Charity / Fundraising Template)
 
 ## Purpose
@@ -330,7 +334,7 @@ the document title "Donorly — Charity Template".
       component, scenario-style `it` blocks).
 - [ ] Mansalva + Roboto loaded via Google Fonts `<link>`s in `index.html`.
 - [ ] `@theme` tokens: `--color-primary: #00a651`, `--color-secondary:
-  #21323b`, `--color-body: #364d59`, `--color-danger: #dc3545`,
+#21323b`, `--color-body: #364d59`, `--color-danger: #dc3545`,
       `--color-warning: #ffc107`, `--font-display: 'Mansalva', cursive`,
       `--font-body: 'Roboto', sans-serif`.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock"); no
