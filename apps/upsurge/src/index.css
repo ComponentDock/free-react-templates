@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Upsurge (light hosting template with
+   dark hero/footer sections); the custom variant is declared so shared ui
+   components that ship `dark:` utilities (outline/ghost variants) still
+   compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Upsurge brand palette — design tokens from the hosting reference.
+     Brand magenta #eb2b63 (buttons, icon medallions, progress fills, nav
+     hover, gold-plan title) mapped onto the shared primary scale. */
+  --color-primary-100: #fde8ee;
+  --color-primary-200: #f9bdd1;
+  --color-primary-300: #f48db0;
+  --color-primary-400: #ef5d8e;
+  --color-primary-500: #e83c73;
+  --color-primary-600: #eb2b63;
+  --color-primary-700: #c72253;
+  --color-primary-800: #a01b43;
+  --color-primary-900: #7a1433;
+
+  /* Deep indigo / near-black purple pair for the dark space sections. */
+  --color-indigo-deep: #2e1779;
+  --color-near-black: #0a0228;
+
+  /* Section accents and footer surfaces from the reference. */
+  --color-mist: #eef6f9;
+  --color-footer-top: #200545;
+  --color-footer-bottom: #1b043b;
+  --color-ink: #1c1c1c;
+  --color-body-gray: #585858;
+  --color-eyebrow: #8e8e8e;
+
+  /* Montserrat for everything (Google Fonts via index.html). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
