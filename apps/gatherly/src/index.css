@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Gatherly brand palette — recreated from the reference stylesheet
+     (css/style.css): electric brand blue #033fff (nav CTA, active link
+     underline, scrolled navbar, pricing borders + price, primary buttons),
+     bright accent yellow #fbb901 (hero countdown bar, pricing hover price),
+     deep-blue speakers band #0d0cb5, charcoal footer #232931, Bootstrap
+     light #f8f9fa, body #212529 and muted #6c757d. */
+  --color-brand: #033fff;
+
+  /* Accent yellow — hero countdown bar, pricing hover price. */
+  --color-accent: #fbb901;
+
+  /* Speakers band background (deep blue). */
+  --color-speakers: #0d0cb5;
+
+  /* Footer background (dark charcoal). */
+  --color-footer: #232931;
+
+  /* Body copy (#212529) and muted text (#6c757d) from the reference. */
+  --color-body: #212529;
+  --color-muted: #6c757d;
+
+  /* Heading ink and light section background (schedule, blog). */
+  --color-ink: #000;
+  --color-light: #f8f9fa;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variants
+     resolve to the brand blue (hover deepens slightly). */
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #dbe4ff;
+  --color-primary-200: #b3c7ff;
+  --color-primary-300: #7a9cff;
+  --color-primary-400: #4d73ff;
+  --color-primary-500: #2654ff;
+  --color-primary-600: #033fff;
+  --color-primary-700: #0333d4;
+
+  /* The original template's typeface: Lato (Google Fonts via index.html),
+     400 body / 600 headings / 900 prices. */
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display text-ink;
+  }
+
+  /* Section titles: centered Lato H2 at 40px/600 (source .heading-section
+     h2). */
+  .section-title {
+    @apply text-center text-[40px] font-semibold leading-tight text-ink;
+  }
+
+  /* Small eyebrow label above centered section titles. */
+  .section-eyebrow {
+    @apply mb-2 block text-center text-xs font-semibold uppercase tracking-[0.2em] text-muted;
+  }
+}
