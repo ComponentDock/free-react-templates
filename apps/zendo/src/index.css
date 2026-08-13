@@ -1,0 +1,80 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Zendo brand palette — recreated from the reference stylesheet
+     (css/style.css): signature dusty-pink #ffb5b5 accent (primary buttons,
+     schedule-table header, nav active/hover links, slider dots + headline,
+     link hovers), dark ink #2c396b for heading accents, Bootstrap body
+     #212529 and muted #6c757d. */
+  --color-brand: #ffb5b5;
+
+  /* Dark ink — headings, section title accents, testimony position. */
+  --color-ink: #2c396b;
+
+  /* Body copy (#212529) and muted text (#6c757d) from the reference. */
+  --color-body: #212529;
+  --color-muted: #6c757d;
+
+  /* Light section background (#f8f9fa) — class types strip, recent posts. */
+  --color-light: #f8f9fa;
+
+  /* Hairline border color (rgba(0,0,0,0.05) in the reference). */
+  --color-line: rgba(0, 0, 0, 0.05);
+
+  /* Pink primary scale so the shared ui Button/ButtonLink `primary`
+     variants resolve to the brand pink (hover deepens slightly). */
+  --color-primary-50: #fff5f5;
+  --color-primary-100: #ffe9e9;
+  --color-primary-200: #ffd6d6;
+  --color-primary-300: #ffc9c9;
+  --color-primary-400: #ffbfbf;
+  --color-primary-500: #ffb5b5;
+  --color-primary-600: #f7a1a1;
+  --color-primary-700: #e88a8a;
+
+  /* The original template's typefaces: EB Garamond (serif) for the brand,
+     headings, hero H1, class titles and testimony quotes; Open Sans for
+     body/UI text (Google Fonts via index.html). */
+  --font-display: 'EB Garamond', ui-serif, Georgia, serif;
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display text-ink;
+  }
+
+  /* Section titles: centered serif H2 with a small pink underline
+     divider beneath (source .heading-section). */
+  .section-title {
+    @apply text-center text-[34px] font-semibold leading-tight text-ink;
+  }
+
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    margin: 0.4em auto 0;
+    background: #ffb5b5;
+  }
+
+  /* Small eyebrow label above centered section titles (source
+     .subheading). */
+  .section-eyebrow {
+    @apply mb-2 block text-center text-xs font-semibold uppercase tracking-[0.2em] text-muted;
+  }
+}
