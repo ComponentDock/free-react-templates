@@ -12,6 +12,8 @@ export interface TimeLeft {
   seconds: string
 }
 
+const pad = (value: number) => String(value).padStart(2, '0')
+
 /** Two-digit padded time remaining until `target` (clamped at zero — the
  *  cells never go negative). Pure so it is directly unit-testable. */
 export function getTimeLeft(target: number, now: number = Date.now()): TimeLeft {
@@ -20,7 +22,6 @@ export function getTimeLeft(target: number, now: number = Date.now()): TimeLeft 
   const hours = Math.floor((diff % DAY_MS) / HOUR_MS)
   const minutes = Math.floor((diff % HOUR_MS) / MINUTE_MS)
   const seconds = Math.floor((diff % MINUTE_MS) / 1000)
-  const pad = (value: number) => String(value).padStart(2, '0')
   return { days: pad(days), hours: pad(hours), minutes: pad(minutes), seconds: pad(seconds) }
 }
 
