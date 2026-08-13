@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Sneakly brand palette — recreated from the reference stylesheet
+     (css/style.css): champagne gold #dbcc8f (deal band, status ribbons,
+     product hover circle, testimonial dots, button hovers), deep gold
+     #c2a942 (hero "Discover Now" button), black (topbar, navbar, footer,
+     btn-black), light #f8f9fa (products section). */
+  --color-brand: #dbcc8f;
+  --color-gold: #c2a942;
+  --color-ink: #000000;
+  --color-light: #f8f9fa;
+  --color-muted: #b3b3b3;
+
+  /* Body copy rgba(0,0,0,0.8) and footer text rgba(255,255,255,0.8)
+     straight from the reference. */
+  --color-body: rgb(0 0 0 / 0.8);
+  --color-footer: rgb(255 255 255 / 0.8);
+
+  /* Primary scale resolves the shared ui Button `primary` variant to the
+     brand gold (600 base, 700 hover deepens slightly). */
+  --color-primary-50: #fbf8ef;
+  --color-primary-100: #f5efdb;
+  --color-primary-200: #ecdfb8;
+  --color-primary-300: #e3cf95;
+  --color-primary-400: #dfc58a;
+  --color-primary-500: #dbcc8f;
+  --color-primary-600: #dbcc8f;
+  --color-primary-700: #c9b87a;
+
+  /* The reference typeface: Open Sans (Google Fonts via index.html),
+     300 body / 600-800 headings / 900 accent spans. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans font-normal text-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+  }
+}
