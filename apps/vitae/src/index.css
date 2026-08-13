@@ -1,0 +1,85 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Vitae brand palette — recreated from the reference stylesheet
+     (css/style.css): deep-green #207561 accent (pill buttons, logo, nav
+     hover, icon circles, section-title underlines), black #000 headings
+     and button-hover fills, grey body copy. */
+  --color-brand: #207561;
+
+  /* Near-black ink for headings and the button hover fill (#000 in the
+     source — primary buttons turn black on hover). */
+  --color-ink: #000000;
+
+  /* Body copy grey (#666666 in the source), hero lead (#1a1a1a) and
+     footer link grey (#888888). */
+  --color-body: #666666;
+  --color-lead: #1a1a1a;
+  --color-muted: #888888;
+
+  /* Light section background — hero, about photo box, footer (#f8f9fa in
+     the source). */
+  --color-light: #f8f9fa;
+
+  /* Dark band — testimonials section (#343a40 in the source). */
+  --color-darkband: #343a40;
+
+  /* Underline-style contact input borders (#eee in the source). */
+  --color-line: #eeeeee;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variants
+     resolve to the brand green; hover maps to black per the source. */
+  --color-primary-50: #e6f3ef;
+  --color-primary-100: #c8e6dd;
+  --color-primary-200: #9ed3c3;
+  --color-primary-300: #6fbfa6;
+  --color-primary-400: #46a98c;
+  --color-primary-500: #2d9377;
+  --color-primary-600: #207561;
+  --color-primary-700: #000000;
+
+  /* The original template's typeface: Arbutus Slab (serif, 400) for
+     EVERYTHING — headings, body, form controls, nav links, buttons
+     (Google Fonts via index.html). No sans-serif body font. */
+  --font-sans: 'Arbutus Slab', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans text-ink;
+  }
+
+  /* Section titles: 2px × 50px brand-green underline (white on dark
+     sections) — left-aligned by default, centered variant centers it. */
+  .section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    background: #207561;
+  }
+
+  .section-title.text-center::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .section-title.text-white::after {
+    background: #ffffff;
+  }
+}
