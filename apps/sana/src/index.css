@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Sana brand palette — design tokens for the medical template. Brand
+     accent #3face4 (sky blue — buttons, nav hover/active, service + activity
+     icons, form focus, newsletter button, footer hovers), light band #f9f9ff
+     (about/feedback/appointment), menu surface #f8f8f8, dark surfaces
+     #222222 (headings + footer), muted text #777777. */
+  --color-sky-50: #eaf6fd;
+  --color-sky-100: #d2ecfb;
+  --color-sky-200: #a8dcf7;
+  --color-sky-300: #79c8f1;
+  --color-sky-400: #4fb7ec;
+  --color-sky-500: #3face4;
+  --color-sky-600: #2d8fc9;
+  --color-sky-700: #2775a6;
+  --color-sky-800: #215f86;
+  --color-sky-900: #1b4c6b;
+
+  /* Neutral surfaces + text from the reference */
+  --color-band-50: #f9f9ff;
+  --color-menu-100: #f8f8f8;
+  --color-ink-900: #222222;
+  --color-mute-500: #777777;
+  --color-line-300: #dddddd;
+  --color-line-200: #eeeeee;
+  --color-border-form: #ced4da;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand sky blue. */
+  --color-primary-50: #eaf6fd;
+  --color-primary-100: #d2ecfb;
+  --color-primary-200: #a8dcf7;
+  --color-primary-300: #79c8f1;
+  --color-primary-400: #4fb7ec;
+  --color-primary-500: #3face4;
+  --color-primary-600: #2d8fc9;
+  --color-primary-700: #2775a6;
+  --color-primary-800: #215f86;
+  --color-primary-900: #1b4c6b;
+
+  /* Roboto (body + nav) — Google Fonts via index.html */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
