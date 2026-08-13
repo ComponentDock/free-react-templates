@@ -2114,7 +2114,7 @@
 - [ ] **Ariclaw** — [colorlib](https://colorlib.com/wp/template/ariclaw/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ariclaw-free-template.jpg)
 - [ ] **Atorni** — [colorlib](https://colorlib.com/wp/template/atorni/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/atorni-colorlib-template-1.jpg)
 - [ ] **Fective** — [colorlib](https://colorlib.com/wp/template/fective/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fective-free-template.jpg)
-- [ ] **Judge** — [colorlib](https://colorlib.com/wp/template/judge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/judge-free-template.jpg)
+- [~] **Judge** — [colorlib](https://colorlib.com/wp/template/judge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/judge-free-template.jpg)
 - [ ] **Judicial** — [colorlib](https://colorlib.com/wp/template/judicial/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/judicial-free-template.jpg)
 - [ ] **Justice** — [colorlib](https://colorlib.com/wp/template/justice/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/justice-free-template.jpg)
 - [ ] **Justlaw** — [colorlib](https://colorlib.com/wp/template/justlaw/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/justlaw-free-template.jpg)
