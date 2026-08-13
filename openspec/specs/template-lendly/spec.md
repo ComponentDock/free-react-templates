@@ -416,9 +416,10 @@ small print, and a copyright bar.
 - [ ] Open Sans loaded via Google Fonts `<link>` in index.html
 - [ ] Section structure + order matches the live DOM 1:1 (header → hero →
       why → cta → features → help → info → score → footer)
-- [ ] Placeholder images via `https://picsum.photos/seed/lendly-<n>/<w>/<h>`
-      (hero slides, feature images, info photo, cta/score backgrounds);
-      NO assets copied from ColorLib
+- [ ] Placeholder images via picsum (hero slides id/2, id/26, id/3; feature
+      id/180 + id/48; info id/20; cta id/1060; score id/453 — each
+      browser-verified as a dark professional/business scene); NO assets
+      copied from ColorLib
 - [ ] Icons from lucide-react (Clock, Headset, Info, Phone, ArrowRight,
       Check) — brand/heart icons inline SVG if needed
 - [ ] Interactivity client-side only: hero slider + Pages dropdown + mobile
