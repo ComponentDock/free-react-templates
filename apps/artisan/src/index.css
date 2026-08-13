@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette — extracted from the original reference stylesheet
+     (css/main.css, brand color #e45447 coral red). */
+  --color-brand: #e45447;
+
+  /* Periwinkle secondary (#90acd1) — speech bubble, white-button borders. */
+  --color-periwinkle: #90acd1;
+
+  /* Light section background (#f9f9ff) — works, services, job cards. */
+  --color-mist: #f9f9ff;
+
+  /* Heading ink (#222222). */
+  --color-ink: #222222;
+
+  /* Body-copy gray (#777777). */
+  --color-body: #777777;
+
+  /* Service card palette: terracotta + mauve-brown. */
+  --color-terracotta: #e2a599;
+  --color-mauve: #715f69;
+
+  /* Testimonial star gold (#ffc000) and footer social idle gray (#cccccc). */
+  --color-star: #ffc000;
+  --color-social: #cccccc;
+
+  /* Original fonts: Poppins for headings/nav, Roboto for body. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-body);
+    background: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-sans);
+  }
+}
