@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Liftoff (light business landing
+   page); the custom variant is declared so shared ui components that ship
+   `dark:` utilities (outline/ghost variants) still compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Liftoff brand palette — design tokens from the landing-page reference.
+     Teal #00d2b5 is the single accent (pill buttons, active/hover nav
+     links, feature icon circles, card hover fill, active carousel dot, form
+     focus border); ink #000 headings; light #f6f6f6 section bands; check
+     #8bc34a green list checkmarks. */
+  --color-brand: #00d2b5;
+  --color-ink: #000;
+  --color-muted: #6c757d;
+  --color-meta: #b3b3b3;
+  --color-light: #f6f6f6;
+  --color-border: #edf0f5;
+  --color-check: #8bc34a;
+  --color-paper: #fff;
+
+  /* Montserrat for headings and form controls (Google Fonts via
+     index.html); body keeps the system sans stack. */
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-weight: 300;
+    line-height: 1.7;
+  }
+}
