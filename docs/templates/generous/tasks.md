@@ -72,9 +72,10 @@
 7. Icons: lucide-react for features/social-adjacent (e.g. HeartHandshake,
    Users, BriefcaseMedical) — brand social icons as inline SVG (lucide
    removed brand glyphs). Contact icons: MapPin, Phone, Mail, Clock.
-8. Placeholders: `picsum.photos/seed/generous-<n>/<w>/<h>` — hero
-   ~1600×1000, featured/fundraiser ~600×400, avatars 100×100, thumbs
-   ~150×100.
+8. Placeholders: picsum — hero photos pinned to verified warm/people scenes
+   (`picsum.photos/id/64`, `id/823`, `id/996`; the arbitrary
+   `generous-hero-N` seeds rendered an airport-tarmac scene); featured /
+   fundraiser ~600×400, avatars 100×100, thumbs ~150×100 (all distinct).
 9. TDD per section; 100% coverage; verify with `scripts/verify-app.sh
 generous` (or `npm run verify:app`).
 10. PR description: source (ColorLib Giving, preview URL), tokens, dup-rows
