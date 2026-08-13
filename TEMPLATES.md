@@ -403,7 +403,7 @@
 - [x] **Fox** — [colorlib](https://colorlib.com/wp/template/fox/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fox-free-template.jpg) · [ivy](https://ivy.free.componentdock.com)
 - [x] **Fundraiser** — [colorlib](https://colorlib.com/wp/template/fundraiser/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fundraiser-free-template.jpg) · [benefact](https://benefact.free.componentdock.com)
 - [x] **Gaas** — [colorlib](https://colorlib.com/wp/template/gaas/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gaas-free-template.jpg) · [Gaas](https://gaas.free.componentdock.com)
-- [ ] **Giving** — [colorlib](https://colorlib.com/wp/template/giving/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/giving-free-template.jpg)
+- [~] **Giving** — [colorlib](https://colorlib.com/wp/template/giving/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/giving-free-template.jpg)
 - [ ] **Gymer** — [colorlib](https://colorlib.com/wp/template/gymer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gymer-free-template.jpg)
 - [ ] **Hami** — [colorlib](https://colorlib.com/wp/template/hami/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hami-free-template.jpg)
 - [ ] **Harbor** — [colorlib](https://colorlib.com/wp/template/harbor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/harbor-free-template.jpg)
