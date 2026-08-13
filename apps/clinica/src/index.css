@@ -1,0 +1,82 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Clinica brand palette — recreated from the reference stylesheet
+     (assets/css/style.css): brand blue #0f61ef (nav hover, preloader ring,
+     back-to-top, read-more hover, focus borders), light-blue department
+     gradient #24c0f1 → #4c9afe, indigo accent #3957ff (footer phone,
+     newsletter button, copyright link). */
+  --color-brand: #0f61ef;
+  --color-accent: #3957ff;
+
+  /* Headings (#030431 in the source), hero headline (#102039), team names
+     (#161e46) and blog/form text (#112957). */
+  --color-ink: #030431;
+  --color-heroink: #102039;
+  --color-teamink: #161e46;
+  --color-formink: #112957;
+
+  /* Body copy (#10285d in the source), about/paragraph grey (#64676c),
+     footer text (#bdbdbd) and muted labels (#aebccb / #a5a5a5). */
+  --color-body: #10285d;
+  --color-muted: #64676c;
+  --color-footertext: #bdbdbd;
+  --color-datelabel: #aebccb;
+  --color-rolelabel: #a5a5a5;
+
+  /* Light surfaces: appointment wrapper (#f7fdff), blog caption (#fcfcfc),
+     form underline (#e9f0f4), dark footer base (#11141b). */
+  --color-mist: #f7fdff;
+  --color-capbg: #fcfcfc;
+  --color-line: #e9f0f4;
+  --color-footerground: #11141b;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variants
+     resolve to the brand blue family. */
+  --color-primary-50: #eaf2ff;
+  --color-primary-100: #d2e3fe;
+  --color-primary-200: #a5c7fd;
+  --color-primary-300: #6fa3fb;
+  --color-primary-400: #4c8af8;
+  --color-primary-500: #2f72f5;
+  --color-primary-600: #1462f3;
+  --color-primary-700: #0d4fd0;
+  --color-primary-800: #0f3f9e;
+  --color-primary-900: #0f3170;
+
+  /* The original template's typeface: Muli (300–900) for EVERYTHING —
+     headings, body, nav, buttons, forms (Google Fonts via index.html). */
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans text-ink;
+  }
+}
+
+/* Rotating hero word — "letters scale" entrance (source uses the
+   animated-headline effect). */
+@keyframes clinica-word-in {
+  from {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
