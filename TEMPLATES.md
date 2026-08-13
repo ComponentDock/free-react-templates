@@ -448,7 +448,7 @@
 - [x] **Medico** — [colorlib](https://colorlib.com/wp/template/medico/) · [medico](https://medico.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medic-free-template.jpg)
 - [x] **Medino** — [colorlib](https://colorlib.com/wp/template/medino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medino-free-template.jpg) · [curale](https://curale.free.componentdock.com)
 - [x] **Meditative** — [colorlib](https://colorlib.com/wp/template/meditative/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meditative-free-template.jpg) · [zendo](https://zendo.free.componentdock.com)
-- [ ] **Meetup** — [colorlib](https://colorlib.com/wp/template/meetup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meetup-free-template.jpg)
+- [~] **Meetup** — [colorlib](https://colorlib.com/wp/template/meetup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meetup-free-template.jpg)
 - [ ] **Mighty** — [colorlib](https://colorlib.com/wp/template/mighty/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mighty-free-template.jpg)
 - [ ] **Miners** — [colorlib](https://colorlib.com/wp/template/miners/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/miners-free-template.jpg)
 - [x] **Miniblog** — [colorlib](https://colorlib.com/wp/template/miniblog/) · [tidbit](https://tidbit.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/miniblog-free-template.jpg)
