@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Frolic (light kids' playground
+   template with dark footer); the custom variant is declared so shared ui
+   components that ship `dark:` utilities (outline/ghost variants) still
+   compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Frolic brand palette — design tokens from the kids' playground
+     reference. Coral #fd4d40 is the primary brand (eyebrows, nav links,
+     feature block, golden pricing circle, testimonial panel); cherry #dc3545
+     is the button red (hero/packages/CTA/newsletter). */
+  --color-coral: #fd4d40;
+  --color-cherry: #dc3545;
+  --color-lagoon: #16c3b0;
+  --color-sunflower: #fdb62f;
+  --color-leaf: #71bc42;
+  --color-lake: #17a2b8;
+  --color-amber: #ffc107;
+
+  /* Neutral surfaces and type from the reference. */
+  --color-ink: #364d59;
+  --color-mist: #f6f5f5;
+  --color-footer: #343a40;
+  --color-muted: #777;
+  --color-hero-gray: #b3b3b3;
+
+  /* DM Sans for everything, Indie Flower for the cursive eyebrows
+     (Google Fonts via index.html). */
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-cursive: 'Indie Flower', cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
