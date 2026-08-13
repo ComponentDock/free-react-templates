@@ -1,0 +1,68 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Esquire
+   itself is a light page (no dark variant in the reference design). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Esquire brand palette — recreated from the source design tokens:
+     the single brand accent is a rich gold #F2C64D used for outlined
+     buttons, the active nav link, practice "Learn More" links, lawyer
+     social chips, the submit/Sign Up buttons and footer link hovers. */
+  --color-brand: #f2c64d;
+
+  /* Brand-dark — a deeper amber #E0B43A for the shared Button hover state
+     (derived from the source button treatment). */
+  --color-brand-dark: #d9a92f;
+
+  /* Gold-deep — the bronze-gold #CEA159 used ONLY for the about-section
+     case counters (879 Total Cases / 787 Case Won). */
+  --color-gold-deep: #cea159;
+
+  /* Ink — near-black headings and section titles (#1F1F1F). */
+  --color-ink: #1f1f1f;
+
+  /* Hero-black — the header and hero backgrounds (#000). */
+  --color-hero: #000000;
+
+  /* Footer — the dark footer background (#202020). */
+  --color-footer: #202020;
+
+  /* Warm — the cream about/practice section backgrounds (#FFFDF8). */
+  --color-warm: #fffdf8;
+
+  /* Cream-chip — the lawyer social chip background (#FEF7E7). */
+  --color-cream-chip: #fef7e7;
+
+  /* Social-chip — the header circular social icon background (#171717). */
+  --color-social-chip: #171717;
+
+  /* Hero-sub — muted silver-grey secondary text on dark sections, form
+     bottom borders, footer links and copyright (#C7C7C7). */
+  --color-hero-sub: #c7c7c7;
+
+  /* Section-sub — muted grey section paragraph and role text (#727272). */
+  --color-section-sub: #727272;
+
+  /* Placeholder — form placeholder text and case-count labels (#919191). */
+  --color-placeholder: #919191;
+
+  /* Paper — white text on dark sections and the newsletter input (#fff). */
+  --color-paper: #ffffff;
+
+  /* Primary scale — drives the shared packages/ui Button/ButtonLink
+     (bg-primary-600 / hover:bg-primary-700 / ring-primary-500/40), mapped to
+     the brand gold family so shared buttons render on-brand. */
+  --color-primary-500: #f6d36b;
+  --color-primary-600: #f2c64d;
+  --color-primary-700: #d9a92f;
+
+  /* Heading font: Playfair Display (serif hero/section headings); body
+     font: Poppins (nav, buttons, paragraphs, inputs). */
+  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-sans:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
