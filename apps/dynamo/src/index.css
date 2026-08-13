@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Dynamo (light industrial theme with a
+   dark header/footer and a yellow brand); the custom variant is declared so
+   shared ui components that ship `dark:` utilities (outline/ghost variants)
+   still compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Dynamo brand palette — design tokens from the industrial energy
+     reference. Brand yellow #ffc000 (primary buttons, CTA band, hero
+     headline highlight blocks, search button, feature Read More links) with
+     dark navy #081624 (topbar, dark buttons, nav links, headings) and dark
+     section backgrounds #17172d / #03031b. Mapped onto the shared primary
+     scale so the shared Button/ButtonLink `primary` variant resolves to the
+     brand yellow. */
+  --color-primary-100: #fff7d6;
+  --color-primary-200: #ffefad;
+  --color-primary-300: #ffe783;
+  --color-primary-400: #ffd94d;
+  --color-primary-500: #ffd000;
+  --color-primary-600: #ffc000;
+  --color-primary-700: #e6ad00;
+  --color-primary-800: #cc9900;
+  --color-primary-900: #b38600;
+
+  /* Dark navy (topbar, dark buttons, headings), dark section backgrounds,
+     and muted text tones from the reference. */
+  --color-navy-800: #304a5f;
+  --color-navy-900: #081624;
+  --color-ink-800: #17172d;
+  --color-ink-900: #03031b;
+  --color-muted-400: #718090;
+  --color-muted-500: #646470;
+  --color-muted-600: #999;
+
+  /* Open Sans for body and headings (Google Fonts via index.html). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
