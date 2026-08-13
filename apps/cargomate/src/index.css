@@ -1,0 +1,116 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Cargomate (light logistics template
+   with dark navy bands); the custom variant is declared so shared ui
+   components that ship `dark:` utilities (outline/ghost variants) still
+   compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Cargomate brand palette — design tokens from the logistics reference.
+     Brand red #e72727 is the primary (buttons, eyebrows, hover accents,
+     testimonial + CTA bands); navy #262533 is the dark surface (top strip,
+     hero left panel, services + footer blocks); the rest are neutrals for
+     copy, borders, and form controls. */
+  --color-brand: #e72727;
+  --color-navy: #262533;
+  --color-ink: #222222;
+  --color-mist: #f8f8f8;
+  --color-fog: #e4e4e4;
+  --color-line: #e4e7e9;
+  --color-formline: #ced4da;
+  --color-footline: #444444;
+  --color-silver: #cccccc;
+  --color-muted: #8f8f8f;
+
+  /* Roboto for body copy, Roboto Condensed for headings/nav (Google Fonts
+     via index.html). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Roboto Condensed', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Signature sharp-corner button (reference `.main_btn`): 13px 700
+     uppercase Roboto Condensed, radius 0, inset 1px white border 5px in,
+     and a 10px white triangle cutting the bottom-right corner. Colors are
+     applied per variant with Tailwind classes in JSX. */
+  .btn-main {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    line-height: 60px;
+    padding: 0 40px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-radius: 0;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  .btn-main::before {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    border: 1px solid #fff;
+    pointer-events: none;
+  }
+
+  .btn-main::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-style: solid;
+    border-width: 0 0 10px 10px;
+    border-color: transparent transparent #fff transparent;
+  }
+
+  /* Hover-underline link (reference `.single-feature a` / `.single-service
+     a`): an uppercase 13px 700 link that slides right with a 40×3px red bar
+     appearing under the text when its `.group` parent is hovered. */
+  .link-bar {
+    position: relative;
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: padding-left 0.3s ease;
+  }
+
+  .link-bar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 40px;
+    height: 3px;
+    background: var(--color-brand);
+    opacity: 0;
+    transform: translateX(-6px);
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .group:hover .link-bar::before {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .group:hover .link-bar {
+    padding-left: 60px;
+  }
+}
