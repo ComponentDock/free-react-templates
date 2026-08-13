@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Sizzle brand vivid red — extracted from the original reference
+     stylesheet (css/main.css, brand color #f42f2c on buttons, the active
+     filter pill, menu prices, link hovers, and the footer widget band). */
+  --color-brand: #f42f2c;
+
+  /* Near-black ink for headings (#222 in the source). */
+  --color-ink: #222;
+
+  /* Base body text (#777 in the source). */
+  --color-body-grey: #777;
+
+  /* Light lavender section background (#f9f9ff — menu + gallery areas). */
+  --color-section: #f9f9ff;
+
+  /* Dark overlay for the reservation photo section
+     (rgba(17,22,24,0.75) in the source). */
+  --color-overlay: rgba(17, 22, 24, 0.75);
+
+  /* Review star color (#ffc000 in the source). */
+  --color-star: #ffc000;
+
+  /* Header scrolled background (rgba(34,34,34,0.9) in the source). */
+  --color-header-scrolled: rgba(34, 34, 34, 0.9);
+
+  /* Footer bottom bar background (#222 in the source). */
+  --color-footer-bottom: #222;
+
+  /* Footer social icon chip background (#111 in the source). */
+  --color-social-bg: #111;
+
+  /* Original font: "Poppins" via Google Fonts (loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-body-grey;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans text-ink;
+  }
+}
