@@ -239,7 +239,7 @@ nav, and circular social icons (desktop) plus a hamburger menu (mobile).
 - **GIVEN** the Esquire app is rendered
 - **WHEN** the page loads
 - **THEN** the header SHALL show the brand at the left and links Home
-  (active), About, Practice Area, Blog, and Pages in the center
+  (active), About, Practice Area, Blog, Pages, and Contact in the center
 - **AND** the Blog and Pages links SHALL each expand a submenu (Blog → blog,
   single-blog) on hover/focus
 - **AND** the active Home link SHALL be highlighted with the gold accent
@@ -291,7 +291,7 @@ a signature, a 93% stat, and two gold counters.
   Strongest Law Firm Win The World" (36px), an ipsum paragraph, and a
   signature image
 - **AND** the right column SHALL show a photo with a "93% Success Case"
-  overlay, the heading "About Lawyer Justice", an ipsum paragraph, and two
+  overlay, the heading "About Esquire Law", an ipsum paragraph, and two
   inline counters — 879 "Total Cases" and 787 "Case Won" — in bronze-gold
   `#CEA159`
 
@@ -325,8 +325,9 @@ and social chips.
 - **GIVEN** the lawyers section is rendered
 - **WHEN** the page loads
 - **THEN** the centered title SHALL read "Our Lawyers"
-- **AND** three cards SHALL show photos with the names Henry Miller, Jon
-  Anderson, and Jaky Nadan
+- **AND** three cards SHALL show photos with the names Amelia Hart, Sofia
+  Reyes, and Nora Blake (paraphrased from the source names to match the
+  available picsum portraits)
 - **AND** each name SHALL be followed by a 16px `#727272` role (Family
   Lawyer, Consumer Lawyer, Criminal Lawyer)
 - **AND** each card SHALL show three 35×35 gold-on-cream (`#FEF7E7`)
@@ -396,7 +397,8 @@ columns, a subscribe form, and the copyright line.
   ("Enter your mail") and a gold "Sign Up" button, plus the line "Subscribe
   newsletter to get updates"
 - **AND** the copyright line SHALL read "Copyright © <year> All rights
-  reserved | This template is made with <heart> by Colorlib"
+  reserved | More templates at Component Dock", linking
+  `https://www.componentdock.com/`
 
 #### Scenario: Subscribe submit
 
