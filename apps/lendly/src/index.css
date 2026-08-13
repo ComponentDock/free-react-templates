@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Lendly design tokens — recreated from the source preview stylesheets
+     (loans2go style.css): brand orange pills, dark ink panels, muted copy. */
+  --color-brand: #f43f00;
+  --color-ink: #22242b;
+  --color-graphite: #313038;
+  --color-muted: #74757b;
+  --color-inputtext: #838383;
+
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
