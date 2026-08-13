@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Kickoff (light sports-club template
+   with dark slate bands); the custom variant is declared so shared ui
+   components that ship `dark:` utilities (outline/ghost variants) still
+   compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Kickoff brand palette — design tokens from the sports-club reference.
+     Gold #ffb400 is the primary (buttons, scoreboard win underline, icon
+     accents); slate #232931 is the dark surface (brand box, event bar,
+     footer); the periwinkle→sky gradient #6b75ff→#59b7ff tints the service
+     icons. */
+  --color-gold: #ffb400;
+  --color-periwinkle: #6b75ff;
+  --color-sky: #59b7ff;
+  --color-slate: #232931;
+  --color-mist: #f8f9fa;
+  --color-ink: #212529;
+  --color-muted: #6c757d;
+
+  /* Nunito Sans for everything (Google Fonts via index.html). */
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
