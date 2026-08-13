@@ -78,14 +78,22 @@ center; color: #FFF`): h1 "Mobile App Landing Page Template" (large,
   9. **Live chat when you needed** (`div.section#livechat`): h3 "Live chat
      when you needed" + lorem. (Sections 6–9 alternate light-bg/white and
      flip the image/text side each time.)
-  10. **App Screenshots** (`div.section.light-bg#gallery`): `.section-title`
+  10. **Launch your App** (`div.section`, white): `.box-icon` rocket
+      (`.gradient-fill`), h2 "Launch your App" + lorem + `a.btn.btn-primary`
+      "Read more"; dual-phone image (`images/dualphone.png`) on the left.
+  11. **UI steps** (`div.section.light-bg`): left column `ul.ui-steps` —
+      THREE numbered steps with `.circle-icon` badges (1 **Create an
+      Account** · 2 **Share with friends** · 3 **Enjoy your life**, each
+      h5 + lorem); right column phone image (`images/iphonex.png`).
+  12. **Testimonials** (`div.section`, white): `.section-title` — eyebrow
+      `small` "TESTIMONIALS" + h3 "What our Customers Says" — carousel of
+      quote cards (`.testimonials-single`): `img.client-img` avatar +
+      blockquote + name "Crystal Gordon" + country "United States"
+      (`p.text-primary`).
+  13. **App Screenshots** (`div.section.light-bg#gallery`): `.section-title`
       - h3 "App Screenshots" + phone-screenshot carousel (owl carousel in
         the source; 3–4 phone-screen images).
-  11. **Testimonials** (`div.section`, white): `.section-title` + h3 "What
-      our Customers Says" — carousel of quote cards: quote paragraph +
-      `img.client-img` avatar + name "Crystal Gordon" + country "United
-      States".
-  12. **Pricing** (`div.section#pricing`): `.section-title` — eyebrow
+  14. **Pricing** (`div.section#pricing`): `.section-title` — eyebrow
       `small` "PRICING" + h3 "Upgrade to Pro"; `card-deck` of THREE
       `div.card.pricing` columns — (a) **PERSONAL** $14/m: 10 Projects ·
       5 GB Storage · Basic Support · ~~Collaboration~~ · ~~Reports and
@@ -96,20 +104,22 @@ center; color: #FFF`): h1 "Mobile App Landing Page Template" (large,
       Collaboration · Reports and analytics · Web hooks. Each card: price
       `span.price` 45px weight 300 color `#633991` + "Choose this Plan"
       button (`btn-primary btn-lg btn-block`, gradient).
-  13. **FAQ** (`div.section.pt-0`): `.section-title` + h3 "Frequently Asked
+  15. **FAQ** (`div.section.pt-0`): `.section-title` + h3 "Frequently Asked
       Questions" — accordion of FOUR items: "Can I try before I buy?" ·
       "What payment methods do you accept?" · "Can I change my plan
       later?" · "Do you have a contract?" — each with a lorem answer.
-  14. **CTA — Download Anywhere** (`div.section.bg-gradient`): h3 "Download
+  16. **CTA — Download Anywhere** (`div.section.bg-gradient`): h3 "Download
       Anywhere" + paragraph "Available for all major mobile and desktop
       platforms. Rapidiously visualize optimal ROI rather than
       enterprise-wide methods of empowerment." + **App Store** and
       **Google Play** buttons (white/outline) + footnote "*Works on iOS
       10.0.5+, Android Kitkat and above." (`p.text-primary`).
-  15. **Contact info** (`div#contact`, inside the gradient CTA section,
-      three icon+text blocks): address "1485 Pacific St, Brooklyn, NY
-      11216 USA" · email "support@mobileapp.com" · phone "518-3636-2800".
-  16. **Footer** (`footer.my-5.text-center`, white bg): centered copyright
+  17. **Contact info** (`div#contact`, separate lavender section after the
+      gradient CTA, three icon+text blocks): address "1485 Pacific St,
+      Brooklyn, NY 11216 USA" · email "support@mobileapp.com" · phone
+      "518-3636-2800"; right side social icons (facebook / twitter /
+      instagram).
+  18. **Footer** (`footer.my-5.text-center`, white bg): centered copyright
       line ("Copyright © <year>. All rights reserved." + neutral credit —
       source credits Colorlib, rename to Taply) + links **PRESS** ·
       **TERMS** · **PRIVACY**.
@@ -286,6 +296,35 @@ when you needed".
   paragraph on the other
 - **AND** the image/text side SHALL alternate between consecutive blocks
 
+### Requirement: Launch your App
+
+The system SHALL render a white section with a rocket icon, the heading
+"Launch your App", a paragraph, a "Read more" button, and a dual-phone
+image.
+
+#### Scenario: Launch block content
+
+- **GIVEN** the Taply page is rendered
+- **WHEN** the launch section is visible
+- **THEN** a rocket icon SHALL be shown above the heading "Launch your App"
+- **AND** a paragraph and a gradient "Read more" button SHALL be shown
+- **AND** a dual-phone image SHALL be shown on the opposite side
+
+### Requirement: UI steps
+
+The system SHALL render a lavender section with three numbered steps
+(Create an Account, Share with friends, Enjoy your life) beside a phone
+image.
+
+#### Scenario: Three steps
+
+- **GIVEN** the Taply page is rendered
+- **WHEN** the steps section is visible
+- **THEN** three steps SHALL be shown in order with circular number badges:
+  1 Create an Account, 2 Share with friends, 3 Enjoy your life
+- **AND** each step SHALL show a title and a short paragraph
+- **AND** a phone image SHALL be shown on the opposite side
+
 ### Requirement: App Screenshots
 
 The system SHALL render a light-bg "App Screenshots" section with a
@@ -432,8 +471,11 @@ the multi-column sections to single columns on small screens.
       Simple / Customize / Secure, `#faf6fb` bg) → Discover our App (text + Read more | FEATURES eyebrow + "Do more with our app" + 4 checklist
       items) → 4 alternating blocks (Communicate with ease / Scheduling
       when you want / Realtime Messaging service / Live chat when you
-      needed) → App Screenshots (`#faf6fb`, carousel) → What our Customers
-      Says (quote + avatar + name + country) → Upgrade to Pro (3 tier
+      needed) → Launch your App (rocket icon + heading + Read more +
+      dual-phone image) → UI steps (Create an Account / Share with friends
+      / Enjoy your life, lavender) → What our Customers Says (quote +
+      avatar + name + country) → App Screenshots (`#faf6fb`, carousel) →
+      Upgrade to Pro (3 tier
       cards, FOR TEAMS popular) → FAQ (4-item accordion) → Download
       Anywhere (gradient CTA, App Store/Google Play, iOS/Android footnote)
       → contact info (address · email · phone) → centered footer (copyright + PRESS/TERMS/PRIVACY)
