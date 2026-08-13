@@ -418,7 +418,7 @@
 - [x] **Hotel** — [colorlib](https://colorlib.com/wp/template/hotel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hotel-free-template.jpg) · [Lodge](https://lodge.free.componentdock.com)
 - [x] **Ideal** — [colorlib](https://colorlib.com/wp/template/ideal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ideal-free-template.jpg) · [paragon](https://paragon.free.componentdock.com)
 - [x] **Ignite** — [colorlib](https://colorlib.com/wp/template/ignite/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ignite-free-template.jpg) · [skyward](https://skyward.free.componentdock.com)
-- [ ] **Industrial** — [colorlib](https://colorlib.com/wp/template/industrial/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/industrial-free-template.jpg)
+- [~] **Industrial** — [colorlib](https://colorlib.com/wp/template/industrial/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/industrial-free-template.jpg)
 - [ ] **Industries** — [colorlib](https://colorlib.com/wp/template/industries/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/industries-free-template.jpg)
 - [ ] **Industry Inc** — [colorlib](https://colorlib.com/wp/template/industry-inc/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/industryinc-free-template.jpg)
 - [ ] **Inves** — [colorlib](https://colorlib.com/wp/template/inves/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/inves-free-template.jpg)
