@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Rentora brand palette — sampled from the reference design (a real-estate
+     landing on white with a single gold accent #cfb579, Poppins + Open Sans
+     type). Gold primary #cfb579, hover #d8b25a, dark gold #bd9c50 (mobile
+     menu), dark navy text #14303a, footer navy #1b212e, light surfaces
+     #f9f9ff / #e9eef2, body grays #666666 / #797979 / #afb5be. */
+  --color-brand: #cfb579;
+  --color-brand-hover: #d8b25a;
+  --color-golddark: #bd9c50;
+  --color-ink: #14303a;
+  --color-navy: #1b212e;
+  --color-soft: #f9f9ff;
+  --color-circle: #e9eef2;
+  --color-muted: #797979;
+  --color-kicker: #666666;
+  --color-line: #afb5be;
+
+  --font-sans:
+    'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-kicker:
+    'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
