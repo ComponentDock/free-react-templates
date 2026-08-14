@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Emblem brand palette (recreated design tokens): red accent on light
+     slate-blue text, pale-blue feature cards, dark counter band, black
+     footer. The red is the primary CTA + accent color throughout. */
+  --color-brand: #dc3545;
+  --color-ink: #364d59;
+  --color-feature: #edf7ff;
+  --color-feature-body: #9aa3a6;
+  --color-light: #f8f9fa;
+  --color-track: #e9ecef;
+  --color-counter: #222222;
+  --color-gold: #ffd692;
+  --color-footer: #000000;
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}
