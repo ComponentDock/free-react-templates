@@ -454,7 +454,7 @@
 - [x] **Miniblog** — [colorlib](https://colorlib.com/wp/template/miniblog/) · [tidbit](https://tidbit.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/miniblog-free-template.jpg)
 - [x] **Minishop** — [colorlib](https://colorlib.com/wp/template/minishop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/minishop-free-template.jpg) · [sneakly](https://sneakly.free.componentdock.com)
 - [x] **Mobapp** — [colorlib](https://colorlib.com/wp/template/mobapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/MobApp-free-one-mobile-app-landing-page.jpg) · [taply](https://taply.free.componentdock.com)
-- [ ] **Mondy** — [colorlib](https://colorlib.com/wp/template/mondy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mondy-free-template.jpg)
+- [~] **Mondy** — [colorlib](https://colorlib.com/wp/template/mondy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mondy-free-template.jpg)
 - [x] **Mosh** — [colorlib](https://colorlib.com/wp/template/mosh/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mosh-free-template.jpg) · [Mosh](https://mosh.free.componentdock.com)
 - [x] **Muscle** — [colorlib](https://colorlib.com/wp/template/muscle/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/muscle-free-template.jpg) · [pump](https://pump.free.componentdock.com)
 - [ ] **Myphotography** — [colorlib](https://colorlib.com/wp/template/myphotography/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/myphotography-free-template.jpg)
