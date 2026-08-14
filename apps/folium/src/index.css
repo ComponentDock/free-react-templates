@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  /* Folium brand palette — design tokens from the reference stylesheet
+     (recreation of a business/blog one-pager): primary mint #4ECCA3
+     (links, buttons, quote band), lighter mint #9de3cc (service icon
+     circles), light section band #fafafa, dark olive overlay #22302c
+     (hero tint), headings pure black weight 300. */
+  --color-primary: #4ecca3;
+  --color-mint: #9de3cc;
+  --color-band: #fafafa;
+  --color-overlay: #22302c;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the mint brand; 700 = hover state per the reference. */
+  --color-primary-50: #e9f9f3;
+  --color-primary-100: #d0f2e5;
+  --color-primary-200: #a3e6cc;
+  --color-primary-300: #74d9b3;
+  --color-primary-400: #4ecca3;
+  --color-primary-500: #35b28b;
+  --color-primary-600: #2ea07b;
+  --color-primary-700: #278b6b;
+  --color-primary-800: #1f6f56;
+  --color-primary-900: #175243;
+
+  /* Original font: Rubik (Google), weight 300 body, loaded via <link>. */
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+}
