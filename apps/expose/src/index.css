@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Expose brand palette — black page/sidebar #000, coral accent
+     #ef6c57 (active nav link, hover), muted meta #cccccc (uppercase
+     overlay label), dark menu links #212529 (mobile slide-in panel).
+     Quicksand (300/400/500/700) via the <link> in index.html. */
+  --color-brand: #ef6c57;
+  --color-ink: #000000;
+  --color-meta: #cccccc;
+  --color-menu-link: #212529;
+
+  --font-sans:
+    'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(110%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
