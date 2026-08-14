@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Roost brand palette — sampled from the reference design (a real-estate
+     landing on white/black with a single olive-lime green accent #91b029,
+     DM Sans type). */
+  --color-brand: #91b029;
+  --color-brand-hover: #a3c131;
+
+  --color-ink: #000000;
+  --color-slate: #364d59;
+  --color-soft: #f6f5f5;
+  --color-circle: #efefef;
+  --color-meta: #cccccc;
+
+  --font-sans:
+    'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
