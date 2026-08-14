@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Flexly brand palette — salmon #fe9191 (primary: buttons, active
+     tabs, band background, counter), darker accent #fe7878 (hover),
+     black #000000 (navbar over hero, dark sections, footer), light
+     #f8f9fa (Programs/Blog/About/Schedule band backgrounds). Nunito
+     Sans (200-900) via the <link> in index.html. */
+  --color-brand: #fe9191;
+  --color-brand-dark: #fe7878;
+  --color-ink: #000000;
+  --color-light: #f8f9fa;
+
+  --font-sans:
+    'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial,
+    sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
