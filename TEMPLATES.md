@@ -471,7 +471,7 @@
 - [x] **Papers** — [colorlib](https://colorlib.com/wp/template/papers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/papers-free-template.jpg) · [folium](https://folium.free.componentdock.com)
 - [x] **Personal** — [colorlib](https://colorlib.com/wp/template/personal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personal-free-template.jpg) · [Solo](https://solo.free.componentdock.com)
 - [x] **Personalportfolio** — [colorlib](https://colorlib.com/wp/template/personalportfolio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personalportfolio-free-template.jpeg) · [resume](https://resume.free.componentdock.com)
-- [ ] **Phoenix** — [colorlib](https://colorlib.com/wp/template/phoenix/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/phoenix-free-template.jpg)
+- [~] **Phoenix** — [colorlib](https://colorlib.com/wp/template/phoenix/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/phoenix-free-template.jpg)
 - [ ] **Photographer** — [colorlib](https://colorlib.com/wp/template/photographer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/photographer-free-template.jpg)
 - [ ] **Podcast** — [colorlib](https://colorlib.com/wp/template/podcast/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/podcast-free-template.jpg)
 - [ ] **Pointer** — [colorlib](https://colorlib.com/wp/template/pointer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pointer-free-template.jpg)
