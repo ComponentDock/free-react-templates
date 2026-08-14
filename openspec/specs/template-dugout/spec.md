@@ -1,5 +1,9 @@
 # Template: Dugout (Bootstrap Sports — Baseball Club)
 
+> **SUPERSEDED** — ColorLib "Phoenix" shipped as **Slugger** (PR #418,
+> live at https://slugger.free.componentdock.com). Do NOT implement this
+> spec — delete on next cleanup.
+
 ## Purpose
 
 Dugout is a single-page baseball-club website template in the

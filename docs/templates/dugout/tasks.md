@@ -1,5 +1,9 @@
 # Dugout (ColorLib Phoenix) — Tasks & Design Notes
 
+> **SUPERSEDED** — ColorLib "Phoenix" shipped as **Slugger** (PR #418,
+> live at https://slugger.free.componentdock.com). Do NOT implement this
+> spec — delete on next cleanup.
+
 > Prep artifacts prepared on `main`. Recreation name: **Dugout** (NEW name —
 > the ColorLib source keeps its name "Phoenix"). Implementation ships on
 > `feat/template-dugout` per the standard PR flow.
@@ -121,7 +125,7 @@ dugout-<n>/<w>/<h>` placeholders (hero, about, team, news, logos,
 1. [ ] Copy the simplest existing multi-section app (e.g. `apps/zest` or
        another Bootstrap-category app) as `apps/dugout`; rename package to
        `@free-react-templates/dugout` in package.json + vite config; `npm
-    install` at root to register the workspace; set `public/CNAME` =
+ install` at root to register the workspace; set `public/CNAME` =
        `dugout.free.componentdock.com` and `homepage` accordingly.
 2. [ ] `src/index.css` — `@theme` tokens: brand `#00bd56`, blue `#207dff`,
        navy `#171b21`, gold `#fdd043`, black `#000`, light `#f8f9fa`,
