@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+/* Showcase brand palette — design tokens from the source preview's live
+   DOM + style.css: primary indigo #4f46e5 (logo circle, kickers,
+   underlines, active nav, buttons, counters, progress bars, resume dates,
+   hover overlays), hover #433cc3, near-black #111827 headings, black #000
+   nav text + footer, #374151 values, grays #6b7280 / #4b5563 / #e5e7eb /
+   #f3f4f6. */
+@theme {
+  /* Indigo scale so shared Button/ButtonLink `primary` variants resolve to
+     the Showcase indigo family (600 = base indigo). */
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --color-primary-800: #3730a3;
+  --color-primary-900: #312e81;
+
+  --color-brand: #4f46e5;
+  --color-brand-hover: #433cc3;
+  --color-brand-active: #3f38b7;
+  --color-heading: #111827;
+  --color-ink: #000000;
+  --color-value: #374151;
+  --color-label: #6b7280;
+  --color-muted: #4b5563;
+  --color-line: #e5e7eb;
+  --color-surface: #f3f4f6;
+
+  /* Poppins 300–900 via Google Fonts <link> in index.html (the original
+     bundles its own font files; DO NOT copy them). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #111827;
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background: #4f46e5;
+    color: #fff;
+  }
+}
