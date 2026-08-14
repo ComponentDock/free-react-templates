@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Gallery brand palette — sampled from the reference screenshot
+     (portfolio-website-templates-1.jpg): a minimal white portfolio page
+     with ONE vivid royal-blue accent, near-black headlines, light-gray
+     secondary text, light-gray pill borders, and a dark footer. */
+  --color-primary-400: #4a63f9;
+  --color-primary-500: #2846f8;
+  --color-primary-600: #1e37c9;
+  --color-primary-700: #182c9e;
+
+  --color-ink: #333333;
+  --color-smoke: #888888;
+  --color-line: #e0e0e0;
+  --color-footer: #1f1f1f;
+
+  /* Open Sans (400/600/700/800) via Google Fonts <link> in index.html —
+     matching the reference's clean modern sans; the logo wordmark uses the
+     800 weight. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
