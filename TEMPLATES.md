@@ -459,7 +459,7 @@
 - [x] **Muscle** — [colorlib](https://colorlib.com/wp/template/muscle/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/muscle-free-template.jpg) · [pump](https://pump.free.componentdock.com)
 - [x] **Myphotography** — [colorlib](https://colorlib.com/wp/template/myphotography/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/myphotography-free-template.jpg) · [exposure](https://exposure.free.componentdock.com)
 - [x] **Negotiate** — [colorlib](https://colorlib.com/wp/template/negotiate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/negotiate-free-template.jpg) · [parley](https://parley.free.componentdock.com)
-- [ ] **Neos** — [colorlib](https://colorlib.com/wp/template/neos/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/neos-free-template.jpg)
+- [~] **Neos** — [colorlib](https://colorlib.com/wp/template/neos/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/neos-free-template.jpg)
 - [x] **News** — [colorlib](https://colorlib.com/wp/template/news/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/news-free-template.jpg) · [Pressroom](https://pressroom.free.componentdock.com)
 - [x] **Nexus** — [colorlib](https://colorlib.com/wp/template/nexus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nexus-free-template.jpg) · [synapse](https://synapse.free.componentdock.com)
 - [ ] **Nissa** — [colorlib](https://colorlib.com/wp/template/nissa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nissa-free-template.jpg)

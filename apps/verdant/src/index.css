@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Verdant brand palette — design tokens from the reference stylesheet:
+     lime green #71bc42 (primary: navbar Get Started button, feature icons,
+     CTA band, counter numbers, heading underline), near-black footer
+     #1e1e1c, light band #f7f7f7, border dividers #e6e6e6, hero overlay
+     rgba(0,0,0,.2). */
+  --color-brand: #71bc42;
+  --color-brand-dark: #5da334;
+  --color-ink: #1e1e1c;
+  --color-mist: #f7f7f7;
+  --color-fog: #f8f9fa;
+  --color-line: #e6e6e6;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the brand green. */
+  --color-primary-50: #f2f9ec;
+  --color-primary-100: #e2f2d3;
+  --color-primary-200: #c6e5aa;
+  --color-primary-300: #a4d47a;
+  --color-primary-400: #89c557;
+  --color-primary-500: #71bc42;
+  --color-primary-600: #5da334;
+  --color-primary-700: #4a8229;
+  --color-primary-800: #3a6520;
+  --color-primary-900: #2c4d19;
+
+  /* Original fonts: headings = 'Oswald', body = 'Work Sans' (Google Fonts,
+     loaded via <link> in index.html). */
+  --font-heading: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}

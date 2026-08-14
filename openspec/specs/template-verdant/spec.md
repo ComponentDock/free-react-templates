@@ -257,7 +257,7 @@ heading font, and NO buttons. The hero SHALL be at least 600px tall
 
 - **GIVEN** the Verdant page is rendered
 - **WHEN** the hero carousel loads
-- **THEN** the first slide SHALL display the headline "Welcome to Colorlib"
+- **THEN** the first slide SHALL display the headline "Welcome to Verdant"
   in white uppercase bold
 - **AND** the headline SHALL be centered over the background image
 
@@ -265,7 +265,7 @@ heading font, and NO buttons. The hero SHALL be at least 600px tall
 
 - **GIVEN** the hero carousel has advanced to the second slide
 - **WHEN** the second slide is shown
-- **THEN** the headline SHALL read "Free Bootstrap 4 Templates"
+- **THEN** the headline SHALL read "Free Website Templates"
 - **AND** the slide SHALL keep the same overlay and centered white text
 
 #### Scenario: Slide styling
@@ -276,12 +276,12 @@ heading font, and NO buttons. The hero SHALL be at least 600px tall
 - **AND** the hero SHALL be at least 600px tall
 - **AND** carousel controls (prev/next arrows and dots) SHALL be visible
 
-### Requirement: Love Us Colorlib features grid overlapping the hero
+### Requirement: Love Us Verdant features grid overlapping the hero
 
 The system SHALL render a white section that overlaps the hero (negative
 top margin −150px desktop, −50px ≤992px) behind a rotated white slant band.
 The section SHALL show the eyebrow "Outstanding Services", the uppercase
-heading "Love Us Colorlib" with a green underline, and four feature columns
+heading "Love Us Verdant" with a green underline, and four feature columns
 (Increase Revenue, Analytics, 3 Years Experience, Free Package), each with a
 green icon, an uppercase title, and a short blurb, separated by right
 borders on desktop.
@@ -294,7 +294,7 @@ borders on desktop.
   section
 - **AND** the next section SHALL overlap the hero with a negative top margin
 - **AND** the eyebrow SHALL read "Outstanding Services"
-- **AND** the heading SHALL read "Love Us Colorlib" in uppercase with a
+- **AND** the heading SHALL read "Love Us Verdant" in uppercase with a
   green underline
 
 #### Scenario: Feature columns
@@ -351,10 +351,10 @@ Cards SHALL lift with a soft shadow on hover.
   "Learn More" link
 - **AND** hovering a card SHALL raise it with a soft shadow
 
-### Requirement: Free Templates By Colorlib counters
+### Requirement: Free Templates By Verdant counters
 
 The system SHALL render a counters section with a photo on the left and,
-on the right, the uppercase heading "Free Templates By Colorlib", a
+on the right, the uppercase heading "Free Templates By Verdant", a
 paragraph, and two animated counters: Current Downloads and Number of
 Templates — each with a large green Oswald number counting up from zero
 and a caption label.
@@ -363,7 +363,7 @@ and a caption label.
 
 - **GIVEN** the counters section is rendered
 - **WHEN** the section is displayed
-- **THEN** the heading SHALL read "Free Templates By Colorlib"
+- **THEN** the heading SHALL read "Free Templates By Verdant"
 - **AND** a photo SHALL be shown beside the content
 - **AND** two counters SHALL be shown with captions "Current Downloads"
   and "Number of Templates"
@@ -479,8 +479,12 @@ blog → CTA band → footer).
       `#71bc42` / `#1e1e1c`; Oswald + Work Sans; SQUARE buttons (radius 0 —
       NOT pills, unlike most ColorLib templates).
 - [ ] Placeholder images: `https://picsum.photos/seed/verdant-<n>/<w>/<h>`
-      (deterministic per template; verify hero seed actually renders a
-      plant/nature scene per the seed-screening method before committing).
+      (deterministic per template; hero seeds SCREENED per the
+      seed-screening method — seed `verdant-hero-1` rendered a person, not
+      plants, so hero slides are pinned to verified nature photos
+      `https://picsum.photos/id/28/1600/900` (lush forest stream) and
+      `/id/1039/1600/900` (waterfall), matching the reference's plant
+      photography; site-half/other slots use generic seeds).
 - [ ] Icons from lucide-react (DollarSign/Coins, BarChart3, Award,
       Package); brand icons (Facebook/Twitter/Instagram/LinkedIn) as inline
       SVG paths (lucide removed brand icons).
@@ -494,7 +498,7 @@ blog → CTA band → footer).
 - [ ] Hero slider + both owl carousels: implement prev/next arrows and
       dots; autoplay optional but must be testable (fake timers).
 - [ ] 100% coverage lines/functions/branches/statements; `scripts/
-  verify-app.sh verdant` green; full gate via CI on merge.
+verify-app.sh verdant` green; full gate via CI on merge.
 - [ ] PR description: source template (ColorLib Neos), preview URL
       (`https://preview.colorlib.com/theme/neos/`), design tokens used,
       what differs (renames, placeholder images).
