@@ -483,7 +483,7 @@
 - [x] **Radios** — [colorlib](https://colorlib.com/wp/template/radios/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/radios-free-template.jpg) · [wavelength](https://wavelength.free.componentdock.com)
 - [x] **Raptor** — [colorlib](https://colorlib.com/wp/template/raptor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/raptor-free-template.jpg) · [soar](https://soar.free.componentdock.com)
 - [x] **Realtors** — [colorlib](https://colorlib.com/wp/template/realtors/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/realtors-free-template.jpg) · [roost](https://roost.free.componentdock.com)
-- [ ] **Reborn** — [colorlib](https://colorlib.com/wp/template/reborn/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/reborn-free-template.jpg)
+- [~] **Reborn** — [colorlib](https://colorlib.com/wp/template/reborn/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/reborn-free-template.jpg)
 - [ ] **Redplanet** — [colorlib](https://colorlib.com/wp/template/redplanet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/redplanet-free-template.jpg)
 - [x] **Remake** — [colorlib](https://colorlib.com/wp/template/remake/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/remake-free-template.jpg) · [sienna](https://sienna.free.componentdock.com)
 - [ ] **Rental** — [colorlib](https://colorlib.com/wp/template/rental/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rental-free-template.jpg)

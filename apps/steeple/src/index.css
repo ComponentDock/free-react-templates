@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Steeple brand palette — sampled from the reference design (a church
+     landing on white/light-grey with a steel-blue primary #5c7893, gold
+     #eec60a accents, slate-blue footer #4d667d, Work Sans type). */
+  --color-primary-500: #71899f;
+  --color-primary-600: #5c7893;
+  --color-primary-700: #4d657b;
+  --color-primary-800: #485e74;
+
+  --color-accent: #eec60a;
+  --color-footer: #4d667d;
+  --color-light: #f8f9fa;
+  --color-ink: #000000;
+  --color-body: rgb(0 0 0 / 0.5);
+  --color-navlink: rgb(0 0 0 / 0.6);
+  --color-postdate: rgb(0 0 0 / 0.4);
+  --color-footlink: rgb(255 255 255 / 0.3);
+  --color-dot: #cccccc;
+
+  --font-sans:
+    'Work Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
