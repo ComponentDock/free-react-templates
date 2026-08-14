@@ -279,6 +279,11 @@ unstyled.links` width 150px: Contact us · Bootstrap 5 · Web Design ·
 
 ### Requirement: Press logos strip
 
+The system SHALL render a centered "As seen on" heading with a row of five
+greyed press wordmarks between the hero and the split section.
+
+#### Scenario: Press logos strip renders
+
 - **GIVEN** the user scrolls past the hero
 - **WHEN** the logos strip is displayed
 - **THEN** the centered heading **"As seen on"** and a row of 5 greyed press
@@ -287,6 +292,11 @@ unstyled.links` width 150px: Contact us · Bootstrap 5 · Web Design ·
   copied brand assets)
 
 ### Requirement: "A better way" split section
+
+The system SHALL render a split section with a white background and a
+dark-teal panel covering the right 70% (100% on mobile).
+
+#### Scenario: Split section content
 
 - **GIVEN** the user scrolls past the logos strip
 - **WHEN** the split section is displayed
