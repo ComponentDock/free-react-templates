@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Grocerly brand palette — design tokens from the reference stylesheet
+     (recreation of a fresh-grocery storefront design): leafy green #7fad39
+     (site/primary buttons, departments bar, search button, hero eyebrow,
+     section-title underline, hover icon accent), ink #1c1c1c (headings +
+     body), secondary #6f6f6f (support copy), top bar #f5f5f5, footer
+     #F3F6FA, borders #ebebeb. */
+  --color-brand: #7fad39;
+  --color-ink: #1c1c1c;
+  --color-muted: #6f6f6f;
+  --color-topbar: #f5f5f5;
+  --color-footerbg: #f3f6fa;
+  --color-line: #ebebeb;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the leafy green. */
+  --color-primary-50: #f5f9ec;
+  --color-primary-100: #e7f1d3;
+  --color-primary-200: #d0e3a9;
+  --color-primary-300: #b4d277;
+  --color-primary-400: #96bf4d;
+  --color-primary-500: #7fad39;
+  --color-primary-600: #6d9430;
+  --color-primary-700: #587627;
+  --color-primary-800: #445c1e;
+  --color-primary-900: #2f3f14;
+
+  /* Original fonts: Cairo (400 body / 700 headings / 800 buttons) — Google
+     Fonts, loaded via <link> in index.html. */
+  --font-sans: 'Cairo', ui-sans-serif, system-ui, sans-serif;
+}
