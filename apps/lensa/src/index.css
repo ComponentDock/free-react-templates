@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette (recreated design tokens): near-black ink on white paper,
+     hairline borders, muted greys. Photography supplies all the color. */
+  --color-ink: #242424;
+  --color-paper: #ffffff;
+  --color-line: #e1e1e1;
+  --color-muted: #aaaaaa;
+  --color-dim: #828282;
+  --color-nav: #4e4e4e;
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
