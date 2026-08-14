@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Compass brand palette — design tokens from the reference design:
+     raspberry pink #e81050 (primary accent: wordmark dot, active nav link,
+     section titles, hero CTA, caption panel), indigo #505288 (secondary CTA
+     in the caption panel), light gray #f8f9fa section bands, ink #000
+     headings, warm gray #737373 body copy, dark #333333 footer, Roboto
+     type everywhere. */
+  --color-brand: #e81050;
+  --color-royal: #505288;
+  --color-mist: #f8f9fa;
+  --color-ink: #000000;
+  --color-smoke: #737373;
+  --color-faint: #999999;
+  --color-line: #e6e6e6;
+  --color-footer: #333333;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
