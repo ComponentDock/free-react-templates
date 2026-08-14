@@ -1,5 +1,8 @@
 # Finder (ColorLib Nissa) — Tasks & Design Notes
 
+> **SUPERSEDED** — ColorLib "Nissa" shipped as **Lensa** (PR #409,
+> https://lensa.free.componentdock.com). Do not implement; delete on cleanup.
+
 > Prep artifacts prepared on `main` by the prep stream (stream 3). The spec
 > folder `openspec/specs/template-finder/` is the claim marker —
 > implementers start here.

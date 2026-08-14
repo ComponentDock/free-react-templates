@@ -1,5 +1,10 @@
 # Template: Finder (Photography Portfolio)
 
+> **SUPERSEDED** — ColorLib "Nissa" shipped as **Lensa** (PR #409,
+> https://lensa.free.componentdock.com). Do not implement this spec; it is a
+> duplicate prep of the same source slug (prepped while the Lensa claim was in
+> flight). Delete on next cleanup.
+
 ## Purpose
 
 Finder is a single-page photography-portfolio website template in the
