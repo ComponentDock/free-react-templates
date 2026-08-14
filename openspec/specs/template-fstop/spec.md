@@ -1,5 +1,10 @@
 # Template: Fstop (Bootstrap / Photography Template)
 
+> **SUPERSEDED** — ColorLib "Snapshot" shipped as **Focus** (PR #436,
+> https://focus.free.componentdock.com, 2026-08-15). Do not implement —
+> delete this spec on next cleanup. The four TEMPLATES.md Snapshot rows
+> (lines 499/1168/2359/2473) are marked `[x]` with the focus URL.
+
 ## Purpose
 
 Fstop is a single-page photography-agency template in the free-react-templates
