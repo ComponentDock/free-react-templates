@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Estately brand palette — design tokens:
+     brand red #ff000a (buttons, active nav underline, checked search tab,
+     New badge, readmore links), offer amber #ffba00 (Offer badge),
+     charcoal #22242b (loan + footer backgrounds, hero search panel at
+     rgba(34,36,43,0.83)), headings #322429, body text #6a6a6a,
+     input text #3a3a3a, hero disclaimer #b6b6b6, copyright #676767. */
+  --color-brand: #ff000a;
+  --color-offer: #ffba00;
+  --color-charcoal: #22242b;
+  --color-heading: #322429;
+  --color-body: #6a6a6a;
+  --color-input: #3a3a3a;
+  --color-muted: #b6b6b6;
+  --color-copyright: #676767;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the brand red. */
+  --color-primary-50: #fff0f0;
+  --color-primary-100: #ffd6d8;
+  --color-primary-200: #ffa8ab;
+  --color-primary-300: #ff7579;
+  --color-primary-400: #ff3d43;
+  --color-primary-500: #ff141c;
+  --color-primary-600: #ff000a;
+  --color-primary-700: #d90009;
+  --color-primary-800: #a80007;
+  --color-primary-900: #7a0005;
+
+  /* Original fonts: 'Lato' for headings/nav/buttons, 'Roboto' for body
+     (Google Fonts, weights 400/500/700). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
