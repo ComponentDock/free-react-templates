@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Resume brand palette — design tokens from the reference stylesheet
+     (recreation of a designer personal-portfolio one-pager): primary coral
+     red #ec5b53 (buttons, eyebrow tagline, icon circles, CTA heading,
+     scroll-to-top), hero headline deep blue #002d5b, headings/body dark
+     navy #000a2d, secondary text #999999/#888888, light surfaces #f9f9ff,
+     icon-circle blush #fff4f4, card border #e1ebf7, footer near-black
+     navy #080827. */
+  --color-brand: #ec5b53;
+  --color-deep: #002d5b;
+  --color-ink: #000a2d;
+  --color-muted: #999999;
+  --color-soft: #f9f9ff;
+  --color-blush: #fff4f4;
+  --color-line: #e1ebf7;
+  --color-night: #080827;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the coral brand; 600 = base #ec5b53, 700 = hover per the reference. */
+  --color-primary-50: #fef2f1;
+  --color-primary-100: #fde4e2;
+  --color-primary-200: #fbc9c5;
+  --color-primary-300: #f7a39d;
+  --color-primary-400: #f17a72;
+  --color-primary-500: #ec5b53;
+  --color-primary-600: #ec5b53;
+  --color-primary-700: #d8453d;
+  --color-primary-800: #b23831;
+  --color-primary-900: #8f2e29;
+
+  /* Original fonts: Rubik (sans — nav/buttons/body) + Rufina (serif —
+     headings), loaded via Google Fonts <link>. */
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Rufina', ui-serif, Georgia, serif;
+}
