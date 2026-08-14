@@ -1,5 +1,9 @@
 # Template: Rangefinder (Photography portfolio)
 
+> **SUPERSEDED** — ColorLib "Photographer" shipped as **Photofolio** (PR #420,
+> live at https://photofolio.free.componentdock.com). Do NOT implement this
+> spec — delete on next cleanup.
+
 ## Purpose
 
 Rangefinder is a single-page photography-portfolio template in the
