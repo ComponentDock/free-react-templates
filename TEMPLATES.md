@@ -469,7 +469,7 @@
 - [x] **Oneder** — [colorlib](https://colorlib.com/wp/template/oneder/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/oneder-free-template.jpg) · [Unison](https://unison.free.componentdock.com)
 - [x] **Onlineedu** — [colorlib](https://colorlib.com/wp/template/onlineedu/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/onlineedu-free-template.jpeg) · [Orenda](https://orenda.free.componentdock.com)
 - [x] **Papers** — [colorlib](https://colorlib.com/wp/template/papers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/papers-free-template.jpg) · [folium](https://folium.free.componentdock.com)
-- [ ] **Personal** — [colorlib](https://colorlib.com/wp/template/personal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personal-free-template.jpg)
+- [~] **Personal** — [colorlib](https://colorlib.com/wp/template/personal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personal-free-template.jpg)
 - [ ] **Personalportfolio** — [colorlib](https://colorlib.com/wp/template/personalportfolio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personalportfolio-free-template.jpeg)
 - [ ] **Phoenix** — [colorlib](https://colorlib.com/wp/template/phoenix/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/phoenix-free-template.jpg)
 - [ ] **Photographer** — [colorlib](https://colorlib.com/wp/template/photographer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/photographer-free-template.jpg)
