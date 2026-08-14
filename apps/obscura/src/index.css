@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Obscura brand palette — design tokens from the reference design:
+     vivid red #f44336 + purple #673ab7 (preloader spinner ring),
+     near-black #020202 (active nav dot), #111111 heading ink on the light
+     photo section, pure white text on dark photography, greys #565656
+     (nav dots), #8c8c8c (mobile menu border), #a2a2a2/#b7b7b7 (secondary
+     text). Montserrat for everything but the hero script line, which uses
+     a cursive script face (Great Vibes). */
+  --color-brand-red: #f44336;
+  --color-brand-purple: #673ab7;
+  --color-ink: #111111;
+  --color-night: #020202;
+  --color-steel: #565656;
+  --color-fog: #8c8c8c;
+  --color-mist: #a2a2a2;
+  --color-smoke: #b7b7b7;
+
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Great Vibes', cursive;
+}
