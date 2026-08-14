@@ -205,7 +205,10 @@ sans-serif`). Load both via Google Fonts `<link>` in index.html.
   Check Out, Adults, Children + submit); footer = dark, 2 link columns +
   contact info + newsletter signup (underline email field + paper-plane
   button) + social icons + repo-standard bottom credit; images
-  picsum-seeded (`picsum.photos/seed/stayhaven-N/w/h`); Google Fonts
+  picsum-seeded (`picsum.photos/seed/stayhaven-N/w/h`) — hero uses the
+  verified warm golden-hour portrait `picsum.photos/id/64` (subject-screened,
+  matches the source's relaxed warm-light hero; arbitrary seeds are not
+  subject-reliable); Google Fonts
   Playfair Display + Roboto via `<link>`; icons via lucide-react plus inline
   SVG brand icons (Facebook, Twitter, LinkedIn, Vimeo, Tripadvisor) since
   lucide-react removed brand icons.
