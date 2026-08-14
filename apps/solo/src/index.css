@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Solo brand palette — design tokens from the reference stylesheet
+     (recreation of a personal-portfolio one-pager): primary periwinkle
+     #8490ff (solid buttons, active filter), brand gradient
+     #8490ff → #62bdfc (hero/about CTAs, facts band, brands band, pricing
+     hover), light section band #f9f9ff, body text #777777, headings
+     #222222, footer near-black navy #04091e. */
+  --color-primary: #8490ff;
+  --color-accent: #62bdfc;
+  --color-band: #f9f9ff;
+  --color-ink: #222222;
+  --color-muted: #777777;
+  --color-night: #04091e;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the periwinkle brand; 600 = base, 700 = hover per the reference. */
+  --color-primary-50: #eef0ff;
+  --color-primary-100: #dfe3ff;
+  --color-primary-200: #c2c9ff;
+  --color-primary-300: #a3adff;
+  --color-primary-400: #8d99ff;
+  --color-primary-500: #8490ff;
+  --color-primary-600: #6e7cf5;
+  --color-primary-700: #5a68dd;
+  --color-primary-800: #4a57b8;
+  --color-primary-900: #3b4692;
+
+  /* Original font: Poppins (Google), weight 300 body, loaded via <link>. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
