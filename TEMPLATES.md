@@ -493,7 +493,7 @@
 - [x] **Shoppers** — [colorlib](https://colorlib.com/wp/template/shoppers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shoppers-free-template.jpg) · [vendly](https://vendly.free.componentdock.com)
 - [x] **Shutter** — [colorlib](https://colorlib.com/wp/template/shutter/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shutter-free-template.jpg) · [expose](https://expose.free.componentdock.com)
 - [x] **Sierra** — [colorlib](https://colorlib.com/wp/template/sierra/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sierra-free-template.jpg) · [violet](https://violet.free.componentdock.com)
-- [ ] **Skillhunt** — [colorlib](https://colorlib.com/wp/template/skillhunt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skillhunt-free-template.jpg)
+- [x] **Skillhunt** — [colorlib](https://colorlib.com/wp/template/skillhunt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skillhunt-free-template.jpg) · [vocare](https://vocare.free.componentdock.com)
 - [~] **Slim** — [colorlib](https://colorlib.com/wp/template/slim/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/slim-free-template.jpg)
 - [ ] **Slim2** — [colorlib](https://colorlib.com/wp/template/slim2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/slim2-free-template.jpg)
 - [ ] **Snapshot** — [colorlib](https://colorlib.com/wp/template/snapshot/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/snapshot-free-template.jpg)
@@ -1163,7 +1163,7 @@
 - [ ] **Shotgear** — [colorlib](https://colorlib.com/wp/template/shotgear/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shotgear-free-template.jpg)
 - [x] **Sierra** — [colorlib](https://colorlib.com/wp/template/sierra/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sierra-free-template.jpg) · [violet](https://violet.free.componentdock.com)
 - [ ] **Simples** — [colorlib](https://colorlib.com/wp/template/simples/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/simples-free-fullscreen-feminine-website-template.jpg)
-- [ ] **Skillhunt** — [colorlib](https://colorlib.com/wp/template/skillhunt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skillhunt-free-template.jpg)
+- [x] **Skillhunt** — [colorlib](https://colorlib.com/wp/template/skillhunt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skillhunt-free-template.jpg) · [vocare](https://vocare.free.componentdock.com)
 - [ ] **Slim2** — [colorlib](https://colorlib.com/wp/template/slim2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/slim2-free-template.jpg)
 - [ ] **Snapshot** — [colorlib](https://colorlib.com/wp/template/snapshot/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/snapshot-free-template.jpg)
 - [ ] **Sneaky** — [colorlib](https://colorlib.com/wp/template/sneaky/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sneaky-free-template.jpg)
@@ -2002,7 +2002,7 @@
 - [ ] **Jobpro** — [colorlib](https://colorlib.com/wp/template/jobpro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobpro-free-template.jpg)
 - [ ] **Jobsco** — [colorlib](https://colorlib.com/wp/template/jobsco/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobsco-free-template.jpg)
 - [ ] **Jobstart** — [colorlib](https://colorlib.com/wp/template/jobstart/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobstart-free-template.jpg)
-- [ ] **Skillhunt** — [colorlib](https://colorlib.com/wp/template/skillhunt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skillhunt-free-template.jpg)
+- [x] **Skillhunt** — [colorlib](https://colorlib.com/wp/template/skillhunt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skillhunt-free-template.jpg) · [vocare](https://vocare.free.componentdock.com)
 
 ## Landing Page (96)
 
