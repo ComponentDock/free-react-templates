@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pressroom brand palette — recreated from the original news-portal
+     design. Bright red #ff2143 (nav bar, logo square, buttons, title
+     hovers), badge colors #ed4141 red / #0077b5 blue / #13c600 green /
+     #8a3ab9 purple, dark navy #051441 headings, near-black #070b11
+     footer, gray #f4f4f4 section backgrounds, black top bar, meta
+     grays #707b8e / #888888. */
+  --color-brand: #ff2143;
+  --color-brand-deep: #ca292e;
+  --color-badge-red: #ed4141;
+  --color-badge-blue: #0077b5;
+  --color-badge-green: #13c600;
+  --color-badge-purple: #8a3ab9;
+  --color-navy: #051441;
+  --color-footer: #070b11;
+  --color-footertext: #9fa6bd;
+  --color-toptxt: #cdcfd8;
+  --color-meta: #707b8e;
+  --color-meta2: #888888;
+  --color-surface: #f4f4f4;
+
+  /* Barlow (headings) + Roboto (body) — Google Fonts via index.html */
+  --font-heading: 'Barlow', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #051441;
+  }
+  ::selection {
+    background: #ff2143;
+    color: #fff;
+  }
+}
