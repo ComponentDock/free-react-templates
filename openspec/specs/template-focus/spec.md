@@ -103,113 +103,147 @@ transform: translateY(-50%)` — a vertical dot-menu rail on the right edge:
 - **Gallery:** 3-col grid (`col-md-4`), no gutters, lightbox popup on
   click; captions overlaid at bottom of each tile.
 
-## Requirements (Gherkin)
+## Requirements
 
-### Feature: Page shell and navigation
+### Requirement: Fixed right-edge dot navigation
 
-```gherkin
-Scenario: Fixed right-edge dot navigation
-  Given the Focus page is loaded
-  When the page is scrolled
-  Then a fixed vertical dot-menu is visible on the right edge (right: 50px, vertically centered)
-  And it lists exactly: Home, About, Services, Gallery, Testimony, Contact
-  And each item shows its label text right-aligned with a 5px dot marker
-  And the active section's dot is filled in the brand color (#9d8f8f) with a 15px ring
-  And clicking a label scrolls smoothly to that section (scroll-spy active state follows)
+The page SHALL show a fixed vertical dot-menu on the right edge (right: 50px, vertically centered) with six labelled dots and scroll-spy.
 
-Scenario: Mobile navigation
-  Given a viewport narrower than 768px
-  Then the dot rail hugs the right edge (right: 20px)
-  And all six labels remain tappable and scroll to their sections
-```
+#### Scenario: Dot rail renders
 
-### Feature: Hero section
+- **GIVEN** the Focus page is loaded
+- **WHEN** the page is scrolled
+- **THEN** a fixed vertical dot-menu is visible on the right edge (right: 50px, vertically centered)
+- **AND** it lists exactly: Home, About, Services, Gallery, Testimony, Contact
+- **AND** each item shows its label text right-aligned with a 5px dot marker
 
-```gherkin
-Scenario: Hero layout
-  Given the Focus page is loaded
-  Then the hero fills the viewport height with a full-bleed background photo and a 50% black overlay
-  And the content is centered: eyebrow "FOCUS · Photographer / San Francisco"
-  And an H1 reads "We Make Something Great"
-  And a short blurb paragraph is shown beneath the H1
-  And a ghost-outline CTA button labeled "Contact Us" is present
-  When the CTA is clicked
-  Then the page scrolls to the contact section
-```
+#### Scenario: Active dot tracks the section in view
 
-### Feature: About section
+- **GIVEN** the Focus page is loaded
+- **WHEN** the About section scrolls into view
+- **THEN** the active section's dot is filled in the brand color (#9d8f8f) with a 15px ring
 
-```gherkin
-Scenario: About content
-  Given the About section is in view
-  Then a two-column layout shows stacked portrait images on the left (with a framed accent image)
-  And on the right: eyebrow "About Us", H2 "Focus is A Creative Direction, Photography Agency", and two paragraphs
-  And an animated counter displays "0" with the label "Project complete"
-  And a pull-quote byline "— Lucy Lee" appears below the text
+#### Scenario: Dot click scrolls smoothly
 
-Scenario: Counter animation
-  Given the About section scrolls into view
-  Then the project counter animates from 0 to its target value
-```
+- **GIVEN** the Focus page is loaded
+- **WHEN** a label is clicked
+- **THEN** the page scrolls smoothly to that section (scroll-spy active state follows)
 
-### Feature: Services section
+#### Scenario: Mobile rail position
 
-```gherkin
-Scenario: Services grid
-  Given the Services section is in view
-  Then a centered heading "Photography Services" with a blurb is shown
-  And exactly 3 service cards are displayed in a row (stacking on mobile)
-  And card 1 is "Movies & Advertising Videos" with an icon and blurb
-  And card 2 is "Clip & Music Videos" with an icon and blurb
-  And card 3 is "Short Film Productions" with an icon and blurb
-  And each card shows an icon, a title, and descriptive text
-```
+- **GIVEN** a viewport narrower than 768px
+- **THEN** the dot rail hugs the right edge (right: 20px)
+- **AND** all six labels remain tappable and scroll to their sections
 
-### Feature: Gallery section
+### Requirement: Hero section
 
-```gherkin
-Scenario: Gallery grid
-  Given the Gallery section is in view
-  Then a centered heading "Selected Projects" with a blurb is shown
-  And a 3-column, no-gutter grid of 12 image tiles is displayed (2-col tablet, 1-col mobile)
-  And each tile shows an image with an overlay caption "Nature Beautiful Work"
+The hero SHALL fill the viewport with a full-bleed background photo and a 50% black overlay, centered brand line, headline, blurb and ghost CTA.
 
-Scenario: Lightbox
-  When a gallery tile is clicked
-  Then a lightbox opens showing the full-size image
-  And the lightbox can be closed (X or overlay click)
-```
+#### Scenario: Hero layout
 
-### Feature: Testimonial section
+- **GIVEN** the Focus page is loaded
+- **THEN** the hero fills the viewport height with a full-bleed background photo and a 50% black overlay
+- **AND** the content is centered: eyebrow "FOCUS · Photographer / San Francisco"
+- **AND** an H1 reads "We Make Something Great"
+- **AND** a short blurb paragraph is shown beneath the H1
+- **AND** a ghost-outline CTA button labeled "Contact Us" is present
 
-```gherkin
-Scenario: Testimonial carousel
-  Given the Testimonial section is in view
-  Then a centered heading "Testimony" with the subtitle "Our satisfied customer says" is shown
-  And a carousel cycles through at least 2 testimonial slides
-  And each slide shows an avatar image, a quote, and a name + role attribution
-  And prev/next arrows and dot indicators control the carousel
-```
+#### Scenario: CTA scrolls to contact
 
-### Feature: Contact section
+- **GIVEN** the hero is displayed
+- **WHEN** the CTA is clicked
+- **THEN** the page scrolls to the contact section
 
-```gherkin
-Scenario: Contact info boxes
-  Given the Contact section is in view
-  Then a centered heading "Contact Me" with a blurb is shown
-  And 4 info boxes on dark panels display: Address, Contact Number, Email Address, Website
-  And each box has an icon, a label, and the corresponding value
+### Requirement: About section
 
-Scenario: Contact form
-  When the user fills name, email, subject, and message and submits
-  Then the form validates required fields (native HTML validation)
-  And a success state confirms the message was sent (no backend required)
+The About section SHALL show a video-thumb image with a play button on the left and, on the right, the heading, copy, an animated project counter and a serif pull-quote.
 
-Scenario: Footer
-  Given the page is scrolled to the bottom
-  Then a footer shows the copyright line and social icon circles
-  And a link labeled "Component Dock" pointing to https://www.componentdock.com/ is present
-```
+#### Scenario: About content
+
+- **GIVEN** the About section is in view
+- **THEN** a two-column layout shows a video-thumb image with a play button on the left
+- **AND** on the right: H2 "Focus is A Creative Direction, Photography Agency" and a paragraph
+- **AND** an animated counter displays "0" with the label "Project complete"
+- **AND** a pull-quote byline "— Lucy Lee" appears below the text
+
+#### Scenario: Counter animation
+
+- **GIVEN** the About section scrolls into view
+- **WHEN** the counter becomes visible
+- **THEN** the project counter animates from 0 to its target value (120)
+
+### Requirement: Services section
+
+The Services section SHALL show a centered heading, three production-service cards and three skill progress bars.
+
+#### Scenario: Services grid
+
+- **GIVEN** the Services section is in view
+- **THEN** a centered heading "Photography Services" with a blurb is shown
+- **AND** exactly 3 service cards are displayed in a row (stacking on mobile)
+- **AND** card 1 is "Movies & Advertising Videos" with an icon and blurb
+- **AND** card 2 is "Clip & Music Videos" with an icon and blurb
+- **AND** card 3 is "Short Film Productions" with an icon and blurb
+- **AND** each card shows an icon, a title, and descriptive text
+
+#### Scenario: Skill progress bars
+
+- **GIVEN** the Services section is in view
+- **THEN** progress bars show Creation 90%, Development 80% and Production 75%
+- **AND** each bar fills to its percentage value in the brand color
+
+### Requirement: Gallery section
+
+The Gallery section SHALL show a centered heading and a no-gutter grid of 12 photo tiles with overlay captions and a lightbox.
+
+#### Scenario: Gallery grid
+
+- **GIVEN** the Gallery section is in view
+- **THEN** a centered heading "Selected Projects" with a blurb is shown
+- **AND** a 3-column, no-gutter grid of 12 image tiles is displayed (2-col tablet, 1-col mobile)
+- **AND** each tile shows an image with an overlay caption "Nature Beautiful Work"
+
+#### Scenario: Lightbox
+
+- **GIVEN** a gallery tile is clicked
+- **WHEN** the lightbox opens showing the full-size image
+- **THEN** the lightbox can be closed via the X button or an overlay click
+
+### Requirement: Testimonial carousel
+
+The Testimonial section SHALL show a centered subheading "Testimony" and H2 "Our satisfied customer says" with a carousel of client quotes.
+
+#### Scenario: Testimonial carousel
+
+- **GIVEN** the Testimonial section is in view
+- **THEN** a centered heading "Testimony" with the subtitle "Our satisfied customer says" is shown
+- **AND** a carousel shows one testimonial slide at a time (5 slides)
+- **AND** each slide shows an avatar image, a quote, and a name + role attribution
+- **AND** prev/next arrows and dot indicators control the carousel
+
+### Requirement: Contact section
+
+The Contact section SHALL show a centered heading, four dark info panels and a validated message form that confirms submission.
+
+#### Scenario: Contact info boxes
+
+- **GIVEN** the Contact section is in view
+- **THEN** a centered heading "Contact Me" with a blurb is shown
+- **AND** 4 info boxes on dark panels display: Address, Contact Number, Email Address, Website
+- **AND** each box has an icon, a label, and the corresponding value
+
+#### Scenario: Contact form
+
+- **GIVEN** the user fills name, email, subject, and message
+- **WHEN** the form is submitted
+- **THEN** the form validates required fields (native HTML validation)
+- **AND** a success state confirms the message was sent (no backend required)
+
+#### Scenario: Footer
+
+- **GIVEN** the page is scrolled to the bottom
+- **THEN** a footer shows the copyright line and social icon circles
+- **AND** a link labeled "Component Dock" pointing to https://www.componentdock.com/ is present
 
 ## Verification checklist
 
