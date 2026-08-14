@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand coral — primary buttons, icons, accents, program tab strip. */
+  --color-brand: #fe9191;
+
+  /* Deeper coral for the promo band + hover states. */
+  --color-brand-dark: #fe7878;
+
+  /* Ink — headings and the dark navbar/footer. */
+  --color-ink: #000000;
+
+  /* Mist — muted body text. */
+  --color-mist: #999999;
+
+  /* Paper — light section backgrounds. */
+  --color-paper: #f8f9fa;
+
+  /* Blush — training schedule band. */
+  --color-blush: #ffdddd;
+
+  /* Overlay — testimonial section dark overlay. */
+  --color-overlay: #232931;
+
+  /* Coral ramp so the shared ui Button/ButtonLink `primary` variants
+     resolve to the brand coral. */
+  --color-primary-50: #fff5f5;
+  --color-primary-100: #ffe9e9;
+  --color-primary-200: #ffd6d6;
+  --color-primary-300: #febcbc;
+  --color-primary-400: #fea6a6;
+  --color-primary-500: #fe9191;
+  --color-primary-600: #fb7d7d;
+  --color-primary-700: #ef6363;
+  --color-primary-800: #d94f4f;
+  --color-primary-900: #b53f3f;
+
+  /* Original typeface: Nunito Sans (weights 200–900). */
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
