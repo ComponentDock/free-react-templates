@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  /* Unison brand palette — design tokens from the reference stylesheet
+     (recreation of a corporate one-page business design): bootstrap blue
+     #007bff (primary buttons, section titles, active portfolio filter,
+     pricing amounts, contact icons, sticky-nav logo, focus borders),
+     check green #71bc42 (included list items), excluded #dee2e6
+     (struck-through list items), price suffix #cccccc, bg-light #f8f9fa,
+     footer #333333 with #737373 text and #999999 links, chip text
+     #343a40, body ink #212529. */
+  --color-brand: #007bff;
+  --color-check: #71bc42;
+  --color-excluded: #dee2e6;
+  --color-suffix: #cccccc;
+  --color-soft: #f8f9fa;
+  --color-footer: #333333;
+  --color-footertext: #737373;
+  --color-footerlink: #999999;
+  --color-chiptext: #343a40;
+  --color-ink: #212529;
+  --color-heading: #000000;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the brand blue; 700 = near-black hover per the reference. */
+  --color-primary-50: #e6f2ff;
+  --color-primary-100: #cce5ff;
+  --color-primary-200: #99cbff;
+  --color-primary-300: #66b0ff;
+  --color-primary-400: #3396ff;
+  --color-primary-500: #007bff;
+  --color-primary-600: #007bff;
+  --color-primary-700: #000000;
+  --color-primary-800: #000000;
+  --color-primary-900: #000000;
+
+  /* Original font: Work Sans (300 light lead / 400 body / 700 bold /
+     900 black section titles + hero headline) — Google Fonts, loaded via
+     <link> in index.html. */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
