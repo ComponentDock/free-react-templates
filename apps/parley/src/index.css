@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Parley brand palette — design tokens:
+     brand teal #00bdaa (navbar bg, primary buttons, hero overlay tint,
+     counter numbers, intro gradient end, link/accent color), brand hover
+     #00a897, band blue #48a7f0 (intro gradient start), accent pink #f1648f
+     (secondary "Request A Quote" buttons), ink #212529 (body text),
+     muted #6c757d (secondary text), soft #fafafa (light section bg). */
+  --color-brand: #00bdaa;
+  --color-brand-hover: #00a897;
+  --color-band-blue: #48a7f0;
+  --color-accent: #f1648f;
+  --color-accent-hover: #e04f7d;
+  --color-ink: #212529;
+  --color-muted: #6c757d;
+  --color-soft: #fafafa;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the brand teal. */
+  --color-primary-50: #e6faf8;
+  --color-primary-100: #ccf5f1;
+  --color-primary-200: #99ebe2;
+  --color-primary-300: #66e0d4;
+  --color-primary-400: #33d6c5;
+  --color-primary-500: #00bdaa;
+  --color-primary-600: #00a897;
+  --color-primary-700: #008a7c;
+  --color-primary-800: #006b60;
+  --color-primary-900: #004d45;
+
+  /* Original font: Poppins throughout (headings 600/900, body 400). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
