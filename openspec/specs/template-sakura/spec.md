@@ -113,9 +113,11 @@ recreation SHALL make them functional in React).
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Calendar 08" — free Bootstrap calendar-with-events
-  widget template (author Colorlib; the template page's meta description:
-  "A trendy free calendar with events Bootstrap template that offers a user
-  to add an event to their desired date."). TEMPLATES.md line 692,
+  widget template (author Colorlib; source:
+  https://colorlib.com/wp/template/calendar-08/; the template page's meta
+  description: "A trendy free calendar with events Bootstrap template that
+  offers a user to add an event to their desired date."). TEMPLATES.md line
+  692,
   **Bootstrap Calendars (20)** category (header at line 683). The
   `calendar-08` slug appears exactly once in TEMPLATES.md. The 20-item
   category is a family: siblings prepped as **Planner** (Calendar 01),
