@@ -10,7 +10,7 @@ describe('PricingSection', () => {
     for (const plan of [
       ['Basic', '$47'],
       ['Premium', '$200'],
-      ['Professional', '$599'],
+      ['Professional', '$750'],
     ]) {
       expect(screen.getByRole('heading', { name: plan[0] })).toBeInTheDocument()
       const price = screen.getByText(plan[1]!)

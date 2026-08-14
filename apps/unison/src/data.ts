@@ -306,7 +306,7 @@ export const pricingPlans: PricingPlan[] = [
   },
   {
     name: 'Professional',
-    price: '$599',
+    price: '$750',
     features: [
       { text: 'Everything in Premium', included: true },
       { text: 'Unlimited consulting hours', included: true },

@@ -109,7 +109,7 @@ col-lg-4`): `.unit-4-icon` flaticon span (`text-primary`, icons:
 8. **Pricing** (`#pricing-section`, `.site-section.bg-light`) — centered
    section-title "Pricing"; 3 `.pricing` cards (`col-lg-4`, white bg,
    padding 30px): h3 plan name (Basic / Premium / Professional), `.price`
-   — big blue amount ($47 / $200 / $599) in 3rem `#007bff` + "/ year"
+   — big blue amount ($47 / $200 / $750) in 3rem `#007bff` + "/ year"
    (`#cccccc`), 5-item `.ul-check.success` list where 1–2 items are
    `li.remove` (line-through `#dee2e6`, "not included"), `.btn.btn-secondary`
    "Buy Now" (black pill, white text).
@@ -326,7 +326,7 @@ list (included/excluded) and a buy button.
 - **GIVEN** the Unison page is rendered
 - **WHEN** the pricing section is displayed
 - **THEN** 3 cards SHALL render: Basic $47/year, Premium $200/year,
-  Professional $599/year
+  Professional $750/year
 - **AND** the price amount SHALL be large (`3rem`) in brand blue with a
   smaller gray "/ year" suffix
 - **AND** each list SHALL mix included items (green check) and excluded
@@ -428,7 +428,9 @@ Us and a Subscribe Newsletter form plus a copyright bar.
       weight 900 brand blue
 - [ ] Fonts: Work Sans (300/400/700/900) via Google Fonts `<link>` in
       `index.html`, title "Unison — Creative One Page Template"
-- [ ] Photos = seeded picsum (`unison-hero` office scene per screenshot,
+- [ ] Photos = seeded picsum (hero `picsum.photos/id/180` — creative
+      workspace flat-lay, browser-screened at ship time; the pinned
+      `unison-hero` seed resolved to a US flag/helicopter and was rejected,
       `unison-about`, `unison-team-<n>` n 1..8, `unison-portfolio-<n>`,
       `unison-testimonial-<n>` n 1..4, `unison-blog-<n>` n 1..3) — screen
       seeds for subject per repo seed screening; icons from lucide-react
