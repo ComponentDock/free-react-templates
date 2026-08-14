@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  /* Orenda brand palette — design tokens from the reference stylesheet
+     (recreation of a flat e-learning one-pager): primary indigo #2d3092
+     (buttons, category-card hover fill, active accents), dark indigo
+     #1f2b7b (utility topbar, logo accents), hover sweep #3e44ec (button
+     ::before scaleX reveal), section titles #030431 (49px/600), light
+     section bgs #f9f9ff / #f0e9ff, footer #0b0b1d, small accents cyan
+     #4cd3e3 / orange #f05510 / green #1e9d78. */
+  --color-brand: #2d3092;
+  --color-branddark: #1f2b7b;
+  --color-sweep: #3e44ec;
+  --color-title: #030431;
+  --color-soft: #f9f9ff;
+  --color-lilac: #f0e9ff;
+  --color-footer: #0b0b1d;
+  --color-cyan: #4cd3e3;
+  --color-accent: #f05510;
+  --color-check: #1e9d78;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the indigo brand; 700 = hover sweep per the reference. */
+  --color-primary-50: #eef0fb;
+  --color-primary-100: #daddf5;
+  --color-primary-200: #b5b9ea;
+  --color-primary-300: #8f94df;
+  --color-primary-400: #5e63c9;
+  --color-primary-500: #2d3092;
+  --color-primary-600: #2d3092;
+  --color-primary-700: #3e44ec;
+  --color-primary-800: #1f2b7b;
+  --color-primary-900: #0b0b1d;
+
+  /* Original fonts: Josefin Sans (body) + Sen (headings) — Google Fonts,
+     loaded via <link> in index.html. */
+  --font-sans: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Sen', ui-sans-serif, system-ui, sans-serif;
+}

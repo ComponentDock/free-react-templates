@@ -85,7 +85,7 @@ slide controls SHALL advance between slides.
 
 - **GIVEN** the page is rendered
 - **WHEN** the hero is displayed
-- **THEN** the hero SHALL show a sub-heading above a level-1 headline (white, bold, large)
+- **THEN** the hero SHALL show a sub-heading (indigo `#2d3092`) above a level-1 headline (near-black navy `#030431`, 50-65px / weight 700 — per the reference stylesheet's global heading rule)
 - **AND** it SHALL show a square indigo "Get Started" button
 - **AND** it SHALL show a supporting illustration/photo area beside the text on wide screens
 
