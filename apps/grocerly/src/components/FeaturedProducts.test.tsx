@@ -31,7 +31,7 @@ describe('FeaturedProducts', () => {
     for (const product of expected) {
       expect(screen.getByRole('link', { name: product.name })).toBeInTheDocument()
     }
-    for (const product of featuredProducts.filter((product) => product.category !== 'Oranges')) {
+    for (const product of featuredProducts.filter((item) => item.category !== 'Oranges')) {
       expect(screen.queryByRole('link', { name: product.name })).not.toBeInTheDocument()
     }
   })
