@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Hostelry
+   itself is a light-only page (the source design is white sections with dark
+   hero/booking/facilities/footer bands). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Hostelry brand palette — recreated from the original hotel landing
+     reference: golden yellow #f3c300 is the primary (buttons, accents) with
+     deeper #f8b600 hover; light blue #52c5fd for prices and nav hover;
+     near-black #04091e for hero/booking/facilities/footer bands. */
+  --color-brand: #f3c300;
+  --color-brand-dark: #f8b600;
+
+  /* Sky — light blue accent (room prices, nav link hover, blog title hover). */
+  --color-sky: #52c5fd;
+
+  /* Night — near-black section backgrounds (#04091e). */
+  --color-night: #04091e;
+
+  /* Ink — headings (#222222) and dark buttons. */
+  --color-ink: #222222;
+
+  /* Smoke — body text grey (#777777). */
+  --color-smoke: #777777;
+
+  /* Mist — light section background (#f9f9ff: testimonials). */
+  --color-mist: #f9f9ff;
+
+  /* Primary scale so the shared ui Button `primary` variant resolves to the
+     brand yellow. */
+  --color-primary-50: #fffbeb;
+  --color-primary-100: #fef3c7;
+  --color-primary-200: #fde68a;
+  --color-primary-300: #fcd34d;
+  --color-primary-400: #fbbf24;
+  --color-primary-500: #f59e0b;
+  --color-primary-600: #f3c300;
+  --color-primary-700: #b8860b;
+  --color-primary-800: #92600a;
+  --color-primary-900: #6b4a08;
+
+  /* Original font: Poppins (300/400/500/600/700) via Google Fonts. */
+  --font-sans:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
