@@ -1,5 +1,10 @@
 # Template: Gilt (Hotel / Resort Landing)
 
+> **SUPERSEDED** — this spec duplicates ColorLib "Royal", which shipped as
+> **Hostelry** (PR #430, https://hostelry.free.componentdock.com). Both
+> TEMPLATES.md Royal rows are marked `[x]`. Do NOT implement — delete on next
+> cleanup.
+
 ## Purpose
 
 Gilt is a hotel/resort landing page template in the free-react-templates
