@@ -1,7 +1,6 @@
 /** Parley — one-page consulting-agency landing copy and imagery.
- *  Section copy keeps the same content kinds as the reference (ColorLib
- *  "Negotiate" consulting template); images are seeded placeholders
- *  (picsum) chosen for subject fit. */
+ *  Section copy keeps the same content kinds as the reference design;
+ *  images are seeded placeholders (picsum) chosen for subject fit. */
 
 export const brand = {
   name: 'Parley',
