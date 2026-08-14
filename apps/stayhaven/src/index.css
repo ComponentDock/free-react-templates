@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Stayhaven
+   itself is a light-only page (the source design is white sections with a
+   dark hero/footer). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Stayhaven brand palette — recreated from the original hotel onepage
+     design reference: vivid red #ff0000 is the primary (buttons, brand first
+     word, menu prices, contact and footer icons) with darker #cc0000 hover. */
+  --color-brand: #ff0000;
+  --color-brand-dark: #cc0000;
+
+  /* Mist — light section background (#f2f4fb: about, photos, events). */
+  --color-mist: #f2f4fb;
+
+  /* Ink — near-black headings / footer + dark overlays over photos. */
+  --color-ink: #191919;
+
+  /* Smoke — body text grey (#6c757d). */
+  --color-smoke: #6c757d;
+
+  /* Primary scale so the shared ui Button `primary` variant resolves to the
+     brand red. */
+  --color-primary-50: #fff5f5;
+  --color-primary-100: #ffe0e0;
+  --color-primary-200: #ffb3b3;
+  --color-primary-300: #ff8080;
+  --color-primary-400: #ff4d4d;
+  --color-primary-500: #ff1a1a;
+  --color-primary-600: #ff0000;
+  --color-primary-700: #cc0000;
+  --color-primary-800: #990000;
+  --color-primary-900: #660000;
+
+  /* Original fonts: Playfair Display (headings, serif) + Roboto (body/UI)
+     via Google Fonts. */
+  --font-sans:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
