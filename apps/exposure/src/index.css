@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Exposure brand palette — design tokens:
+     brand coral #f04e3c (buttons, hero eyebrow + line, email link +
+     underline, gallery hover overlay, founder name, nav/footer link hovers),
+     brand hover sweep #e93b32 (button hover), ink #121212 + coal #0e0e0e
+     (dark section surfaces), muted #d3d3d4 (body copy on dark),
+     footlink #868c98 (footer links), social #848493 (footer social icons),
+     blogdate #828fa3 (blog overlay dates), role #57667e (founder role). */
+  --color-brand: #f04e3c;
+  --color-brand-hover: #e93b32;
+  --color-ink: #121212;
+  --color-coal: #0e0e0e;
+  --color-muted: #d3d3d4;
+  --color-footlink: #868c98;
+  --color-social: #848493;
+  --color-blogdate: #828fa3;
+  --color-role: #57667e;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the brand coral. */
+  --color-primary-50: #fff1ef;
+  --color-primary-100: #ffd9d5;
+  --color-primary-200: #ffb0a9;
+  --color-primary-300: #ff847a;
+  --color-primary-400: #fa5c4e;
+  --color-primary-500: #f04e3c;
+  --color-primary-600: #e9432f;
+  --color-primary-700: #c93322;
+  --color-primary-800: #a0281b;
+  --color-primary-900: #7c1f15;
+
+  /* Original fonts: 'Prompt' for headings/buttons (weights 300-900),
+     'Rubik' for body/nav (weights 300/400/500/700). */
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Prompt', ui-sans-serif, system-ui, sans-serif;
+}
