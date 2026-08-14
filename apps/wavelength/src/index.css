@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Wavelength brand palette — sampled from the reference screenshot
+     (radios-free-template.jpg): a fresh radio-station design built on a
+     single lime-green accent (#7cbd1e) over white/black, with a photo hero,
+     black photo-caption boxes, and a dark gray footer. */
+  --color-brand: #7cbd1e;
+  --color-brand-hover: #90c740;
+  --color-brand-deep: #6ea71b;
+
+  --color-ink: #000000;
+  --color-body: #4d4d4d;
+  --color-footer: #333333;
+  --color-footer-muted: #737373;
+  --color-footer-link: #b3b3b3;
+  --color-post-date: #a6a6a6;
+  --color-bullet: #cccccc;
+  --color-mist: #f8f9fa;
+  --color-line: #e6e6e6;
+  --color-sun: #ffc107;
+
+  /* System sans stack (Bootstrap default in the reference) — uppercase +
+     letter-spacing drives the look, no web fonts needed. */
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Hero audio player — white control panel with a lime circular play button
+   (webkit media-controls styling from the reference). */
+.hero-audio-player::-webkit-media-controls-panel {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+}
+.hero-audio-player::-webkit-media-controls-play-button {
+  background-color: var(--color-brand);
+  border-radius: 50%;
+}
