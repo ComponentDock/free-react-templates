@@ -1,5 +1,10 @@
 # Template: Apex (Consulting Agency Landing)
 
+> **SUPERSEDED** — ColorLib Pointer shipped as **Compass** (PR #421,
+> https://compass.free.componentdock.com). Do not implement Apex; delete on
+> next cleanup. (The prep stream prepped this second spec for the same source
+> before the Compass claim; Compass is the shipped implementation.)
+
 ## Purpose
 
 Apex is a single-page consulting agency website template in the
