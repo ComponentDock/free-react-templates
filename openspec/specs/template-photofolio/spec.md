@@ -218,15 +218,17 @@ headline, a paragraph, an underlined text CTA, and three skill progress bars.
 
 ### Requirement: Footer
 
-The system SHALL render a dark footer with the copyright line (crediting
-ColorLib) and five social icons.
+The system SHALL render a dark footer with the copyright line (linking the
+branded Component Dock site) and five social icons.
 
 #### Scenario: Footer content
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the copyright text "Copyright © All rights reserved |
-  This template is made with by Colorlib" on a #212121 background
+- **THEN** it SHALL show the copyright text "© 2026 Photofolio. All rights
+  reserved." on a #212121 background
+- **AND** it SHALL link "Component Dock" to https://www.componentdock.com/
+  (branded attribution line replacing external links, per repo convention)
 - **AND** it SHALL show five social icons (Pinterest, Facebook, Twitter,
   Dribbble, Behance) on the right (centered on narrow viewports)
 
@@ -257,5 +259,5 @@ and a document title.
 - [ ] Social sidebar: white vertical bar (5 icons: Pinterest/Facebook/Twitter/Dribbble/Behance) pinned right edge; full-width horizontal on mobile
 - [ ] Intro: "My name is Sam. I'm a photographer" (48px), grey paragraph, underlined CTA "Take a look @my portfolio" (3px #212121 bottom border)
 - [ ] Progress bars: 6px track, #212121 fill at 75/100/90% for Nature/Passion/Portraits, white % tag (54×40 #212121) at fill end
-- [ ] Footer: #212121 bg, copyright "Copyright © All rights reserved | This template is made with by Colorlib" (11px, white), 5 social icons right
+- [ ] Footer: #212121 bg, copyright "© 2026 Photofolio. All rights reserved." + Component Dock link (11px, white), 5 social icons right
 - [ ] No ColorLib assets copied; photos are seeded placeholders; icons from lucide-react

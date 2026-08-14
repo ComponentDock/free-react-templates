@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette — extracted from the original template preview
+     (css/style.css). Monochrome design: ink drives everything, white is the
+     page, photos supply the color. */
+  --color-ink: #212121;
+  --color-overlay: #060606;
+  --color-social: #121212;
+  --color-body: #7d7d7d;
+  --color-hairline: #e8e8e8;
+  --color-search-border: #333;
+  --color-search-text: #999;
+
+  /* Original type: "Poppins", sans-serif everywhere (headings weight 500). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #fff;
+    color: var(--color-ink);
+  }
+}

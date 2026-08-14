@@ -118,8 +118,10 @@
   the label, not at the bar's right edge.
 - Label `p` under each progress bar has padding-top 28px — the label is BELOW
   the 6px track.
-- Keep the ColorLib credit line in the footer ("made with by Colorlib") —
-  required for template licensing attribution.
+- Keep the footer attribution line to the branded Component Dock site
+  ("More templates at Component Dock" → https://www.componentdock.com/), per
+  the repo convention — no external attribution links and no ColorLib strings
+  in app files (provenance lives only in the spec/TEMPLATES.md/PR).
 - Intro section padding is 120px 15px 90px; skill-warp uses padding-left 83px
   on desktop (0 on mobile) and padding-top 80px — match the desktop rhythm.
 - Social links are Pinterest/Facebook/Twitter/Dribbble/Behance (NOT
