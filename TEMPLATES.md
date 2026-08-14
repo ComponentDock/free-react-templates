@@ -480,7 +480,7 @@
 - [x] **Prantokon** — [colorlib](https://colorlib.com/wp/template/prantokon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/prantokon-free-template.jpg) · [appdeck](https://appdeck.free.componentdock.com)
 - [x] **Quitelight** — [colorlib](https://colorlib.com/wp/template/quitelight/) · [lantern](https://lantern.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/quitelight-free-template.jpg)
 - [x] **Racks** — [colorlib](https://colorlib.com/wp/template/racks/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/racks-free-template.jpg) · [verve](https://verve.free.componentdock.com)
-- [ ] **Radios** — [colorlib](https://colorlib.com/wp/template/radios/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/radios-free-template.jpg)
+- [~] **Radios** — [colorlib](https://colorlib.com/wp/template/radios/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/radios-free-template.jpg)
 - [x] **Raptor** — [colorlib](https://colorlib.com/wp/template/raptor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/raptor-free-template.jpg) · [soar](https://soar.free.componentdock.com)
 - [ ] **Realtors** — [colorlib](https://colorlib.com/wp/template/realtors/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/realtors-free-template.jpg)
 - [ ] **Reborn** — [colorlib](https://colorlib.com/wp/template/reborn/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/reborn-free-template.jpg)

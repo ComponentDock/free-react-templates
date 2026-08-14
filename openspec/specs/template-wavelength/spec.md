@@ -225,7 +225,10 @@ fluid` (person_1..6.jpg, scale 1 → 1.1 on hover) + `div.text`
     use inline SVGs per repo convention.
   - All photos picsum-seeded (`picsum.photos/seed/wavelength-N/w/h`) —
     hero bg, 4 show cards, retro cards, 6 DJ portraits, 6 testimonial
-    avatars, 3 news images, live-stream thumbnail.
+    avatars, 3 news images, live-stream thumbnail. Hero + subscribe band
+    use subject-verified picsum IDs (453 live-band stage photo for the
+    hero, 1027 moody portrait for the subscribe band) per the
+    seed-screening method.
   - Logo: text wordmark "Wavelength" in white with a lime-green trailing
     period (matches "Radios.").
   - Testimonial names/roles and fake contact data from the original are
