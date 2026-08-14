@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Mission brand palette — design tokens from the reference stylesheet
+     (recreation of a nonprofit/charity design): deep red #A70000 (primary
+     CTA backgrounds, kicker spans, progress fill, stat badges, icon color,
+     volunteer band), dark maroon #450000 (headings, footer, hero overlay),
+     #FAF0F0 soft red-tinted off-white (amount boxes, icon circles),
+     #FFF5F5 light pink-gray (section backgrounds), #4D4D4D body copy,
+     #919191 small labels. */
+  --color-brand: #a70000;
+  --color-maroon: #450000;
+  --color-rose: #faf0f0;
+  --color-mist: #fff5f5;
+  --color-ink: #4d4d4d;
+  --color-label: #919191;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the deep red. */
+  --color-primary-50: #fdf0f0;
+  --color-primary-100: #f9d4d4;
+  --color-primary-200: #f0a8a8;
+  --color-primary-300: #e57373;
+  --color-primary-400: #d63c3c;
+  --color-primary-500: #a70000;
+  --color-primary-600: #8f0000;
+  --color-primary-700: #730000;
+  --color-primary-800: #590000;
+  --color-primary-900: #3d0000;
+
+  /* Original fonts: headings = 'Playfair Display' (serif), body = 'Roboto'
+     (sans-serif) — Google Fonts, loaded via <link> in index.html. */
+  --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
