@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Wavecast
+   itself is a light-only page (the source design is white with teal accents). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Wavecast brand palette — recreated from the original "Podcast" design:
+     primary teal #3ca59d is the ONLY accent color (logo dot, active nav
+     links, dropdown hover, pagination active, links, form focus border,
+     button fills). */
+  --color-primary-50: #f0faf9;
+  --color-primary-100: #dcf3f1;
+  --color-primary-200: #b9e6e2;
+  --color-primary-300: #8dd4cd;
+  --color-primary-400: #5fbcb4;
+  --color-primary-500: #45ada4;
+  --color-primary-600: #3ca59d;
+  --color-primary-700: #31837d;
+  --color-primary-800: #296863;
+  --color-primary-900: #235451;
+
+  /* Ink — body text (#4d4d4d, weight 200). */
+  --color-ink: #4d4d4d;
+
+  /* Dark — hero headline, dropdown item + mobile menu text (#25262a). */
+  --color-dark: #25262a;
+
+  /* Footer — dark #333333 background. */
+  --color-footer: #333333;
+
+  /* Muted — podcaster counts + byline separators (#ccc). */
+  --color-muted: #ccc;
+
+  /* Line — pagination + input borders (#efefef). */
+  --color-line: #efefef;
+
+  /* Soft — featured-guests section band (#f8f9fa). */
+  --color-soft: #f8f9fa;
+
+  /* Faded — footer nav links (#999999). */
+  --color-faded: #999999;
+
+  /* Subtle — footer body text (#737373). */
+  --color-subtle: #737373;
+
+  /* System sans stack (Bootstrap default — the source loads no fonts). */
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Dark native audio controls — the source's mediaelement bar is black with
+   white glyphs; inverting the default (white bar, black glyphs) reproduces it
+   without any player dependency. */
+.audio-dark {
+  filter: invert(1);
+}
