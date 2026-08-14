@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Vendly brand palette — extracted from the source preview's css/style.css:
+     primary violet #7971ea (btn-primary bg/border, prices, cart-count
+     badge bg, nav link hover, section-heading top bar, footer link
+     hover), ink #25262a (logo border + text, nav links, headings),
+     body copy #8c92a0 (weight 300), darker text #5c626e (footer links)
+     and #333333 (hero paragraph), light band #f8f9fa (featured
+     products), borders #edf0f5 (perks bottom, footer top) and #f3f3f4
+     (top-bar bottom), post-meta #c4c7ce. */
+  --color-brand: #7971ea;
+  --color-ink: #25262a;
+  --color-body: #8c92a0;
+  --color-band: #f8f9fa;
+  --color-line: #edf0f5;
+
+  /* Mukta (300/400/700) via the <link> in index.html — body + headings. */
+  --font-sans:
+    'Mukta', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
