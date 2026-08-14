@@ -496,7 +496,7 @@
 - [x] **Skillhunt** — [colorlib](https://colorlib.com/wp/template/skillhunt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skillhunt-free-template.jpg) · [vocare](https://vocare.free.componentdock.com)
 - [x] **Slim** — [colorlib](https://colorlib.com/wp/template/slim/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/slim-free-template.jpg) · [flexly](https://flexly.free.componentdock.com)
 - [x] **Slim2** — [colorlib](https://colorlib.com/wp/template/slim2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/slim2-free-template.jpg) · [Shred](https://shred.free.componentdock.com)
-- [ ] **Snapshot** — [colorlib](https://colorlib.com/wp/template/snapshot/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/snapshot-free-template.jpg)
+- [~] **Snapshot** — [colorlib](https://colorlib.com/wp/template/snapshot/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/snapshot-free-template.jpg)
 - [ ] **Snipp** — [colorlib](https://colorlib.com/wp/template/snipp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/snipp-free-template.jpg)
 - [ ] **Solmusic** — [colorlib](https://colorlib.com/wp/template/solmusic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solmusic-free-template.jpg)
 - [ ] **Stamina** — [colorlib](https://colorlib.com/wp/template/stamina/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stamina-free-template.jpg)
