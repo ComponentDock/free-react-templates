@@ -9,7 +9,7 @@ with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The original is a clean, professional personal-portfolio site for a designer:
 a sticky white header with a red "Get Free Consultent" CTA button, a full-height
-hero slider ("I'm Designer Haris F. Watson") with a photo background, a coral-red
+hero slider ("I'm Designer Harper F. Watson") with a photo background, a coral-red
 (#ec5b53) accent, dark-navy (#000a2d) serif headings (Rufina) on a Rubik
 sans-serif body, a two-column about blurb, a three-card services row, a
 tabbed portfolio mosaic (All / Branding / Logo / UI/UX / Web Design), a photo
@@ -43,7 +43,7 @@ typography, and content types (no ColorLib assets copied).
      `.single-slider.slider-height` (photo bg `h1_hero.jpg`,
      `min-height: 1000px` desktop / 700px mobile, cover) — left column
      `.hero__caption`: eyebrow span "Get Every Single Solutions." (18px,
-     uppercase, **#ec5b53**), h1 "I'm Designer Haris F. Watson" (70px,
+     uppercase, **#ec5b53**), h1 "I'm Designer Harper F. Watson" (70px,
      700, **#002d5b**), paragraph (grey placeholder copy), `.hero__btn`:
      red `.btn` "Learn More" + `.border-btn` "Hire Me" (1px solid #e3c6c6
      border, #464d65 text, radius 5px). Right side: portrait photo of the
@@ -53,7 +53,7 @@ typography, and content types (no ColorLib assets copied).
      `.about-caption`: h3 "Designing With Passion While Exploring The World."
      (30px, 700, **#000a2d**) + two paragraphs; right `.about-caption2`: h3
      "Any Type Of Query & Discussion." + p "Late talk with me" + `.send-cv`
-     link `hire@colorlib.com` (35px, #000a2d, underlined) + arrow icon
+     link `hireme@portfolio.com` (35px, #000a2d, underlined) + arrow icon
      (themify `ti-arrow-right`).
   4. Services (`.categories-area section-padding3`; decorative shape
      background top-left): `.section-tittle` h2 "What Services you will Get
@@ -123,16 +123,24 @@ h2` 48px/600, `.about-area h3` 30px/700, `.send-cv a` 35px, `.contact-info`
   about, centered service cards, tabbed image mosaic, photo CTA band,
   testimonial slider, dark-navy footer with centered contact details.
 - **Recreation decisions:** all photos → seeded picsum placeholders
-  (`picsum.photos/seed/resume-<n>/<w>/<h>`); flaticon / themify / Font Awesome
-  icons → lucide-react (Pen/PenTool, Megaphone, Briefcase, ArrowRight, Heart,
-  Twitter, Facebook, Instagram, Youtube, ChevronUp for back-to-top); Rubik +
-  Rufina via Google Fonts `<link>`; hero slider → 2-slide auto-advancing
-  crossfade; portfolio tabs → client-side tab switching of 5 mosaic panes (6
-  images each); testimonial slider → auto-advancing carousel of 3 cards; scroll
-  to top → fixed circular button appearing after scroll; mobile nav →
-  slide-down/hamburger panel with the same links; contact form → controlled
-  fields with submit (front-end only); original copy paraphrased keeping the
-  same content kinds; no assets copied.
+  (`picsum.photos/seed/resume-<n>/<w>/<h>`; hero bg `resume-studio`,
+  portrait `picsum.photos/id/996`, CTA band `resume-city`, contact band
+  `resume-handshake` — all browser-verified for the intended subject);
+  flaticon / themify / Font Awesome icons → lucide-react (PenTool, Megaphone,
+  Briefcase, ArrowRight, Mail, MapPin, Send, ChevronUp) + inline SVG brand
+  icons (lucide-react dropped brand glyphs); Rubik + Rufina via Google Fonts
+  `<link>`; hero slider → 2-slide auto-advancing crossfade; portfolio tabs →
+  client-side tab switching of 5 mosaic panes (6 images each); testimonial
+  slider → auto-advancing carousel of 3 cards; scroll to top → fixed circular
+  button appearing after scroll; mobile nav → slide-down/hamburger panel with
+  the same links; contact form → controlled fields with submit (front-end
+  only); original copy paraphrased keeping the same content kinds; no assets
+  copied. Deviations from the reference: hero designer name paraphrased to
+  "Harper F. Watson" (the available picsum portrait is a woman; per skill,
+  names are matched to available placeholder portraits), about/footer email
+  uses `hireme@portfolio.com` (the source's `hire@colorlib.com` is not
+  allowed in app code), and the footer copyright credit links Component Dock
+  per repo convention.
 
 Resume lives in `apps/resume` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
@@ -180,7 +188,7 @@ buttons ("Learn More" filled red, "Hire Me" outlined).
 - **GIVEN** the page is rendered
 - **WHEN** the hero is displayed
 - **THEN** it SHALL show the eyebrow "Get Every Single Solutions."
-- **AND** it SHALL show the headline "I'm Designer Haris F. Watson" (dark blue,
+- **AND** it SHALL show the headline "I'm Designer Harper F. Watson" (dark blue,
   serif, ~70px)
 - **AND** it SHALL show a short paragraph and two buttons: "Learn More" (red)
   and "Hire Me" (outlined)
@@ -207,7 +215,7 @@ right.
   The World." with two paragraphs
 - **AND** the right column SHALL show "Any Type Of Query & Discussion.", the
   line "Late talk with me", and an underlined email link
-  (`hire@colorlib.com`) with an arrow icon
+  (`hireme@portfolio.com`) with an arrow icon
 
 ### Requirement: Services cards
 
@@ -350,8 +358,8 @@ and a document title.
 - [ ] Section order matches the reference 1:1 (header → hero slider → about → services → portfolio → CTA band → testimonials → contact → footer)
 - [ ] Design tokens from the reference used in `@theme` (primary #ec5b53, hero headline #002d5b, text #000a2d/#999999, icon circle #fff4f4, card border #e1ebf7, footer #080827; Rubik + Rufina Google Fonts)
 - [ ] Header: sticky white, logo + centered nav (Home/About/Services/Portfolio/Page dropdown/Contact) + red "Get Free Consultent" button, mobile hamburger menu
-- [ ] Hero: full-height photo bg, eyebrow (#ec5b53), h1 "I'm Designer Haris F. Watson" (70px #002d5b), paragraph, "Learn More" red + "Hire Me" outlined buttons, portrait photo, 2-slide auto-advance
-- [ ] About: left heading + 2 paragraphs; right "Any Type Of Query & Discussion." + "Late talk with me" + underlined hire@colorlib.com link + arrow
+- [ ] Hero: full-height photo bg, eyebrow (#ec5b53), h1 "I'm Designer Harper F. Watson" (70px #002d5b), paragraph, "Learn More" red + "Hire Me" outlined buttons, portrait photo, 2-slide auto-advance
+- [ ] About: left heading + 2 paragraphs; right "Any Type Of Query & Discussion." + "Late talk with me" + underlined hireme@portfolio.com link + arrow
 - [ ] Services: heading + 3 cards (UI/UX Design, Digital Marketing, Website Design) with circular icon, title, description
 - [ ] Portfolio: heading + tabs (All, Branding, Logo, UI/UX, Web Design) + 5 mosaic panes × 6 images, hover zoom
 - [ ] CTA band: photo bg, "Dont worry for contact i`m available" (#ec5b53), "Contact Me Now" button
