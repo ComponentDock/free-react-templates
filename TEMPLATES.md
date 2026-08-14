@@ -471,7 +471,7 @@
 - [x] **Papers** — [colorlib](https://colorlib.com/wp/template/papers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/papers-free-template.jpg) · [folium](https://folium.free.componentdock.com)
 - [x] **Personal** — [colorlib](https://colorlib.com/wp/template/personal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personal-free-template.jpg) · [Solo](https://solo.free.componentdock.com)
 - [x] **Personalportfolio** — [colorlib](https://colorlib.com/wp/template/personalportfolio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personalportfolio-free-template.jpeg) · [resume](https://resume.free.componentdock.com)
-- [~] **Phoenix** — [colorlib](https://colorlib.com/wp/template/phoenix/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/phoenix-free-template.jpg)
+- [x] **Phoenix** — [colorlib](https://colorlib.com/wp/template/phoenix/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/phoenix-free-template.jpg) · [slugger](https://slugger.free.componentdock.com)
 - [ ] **Photographer** — [colorlib](https://colorlib.com/wp/template/photographer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/photographer-free-template.jpg)
 - [ ] **Podcast** — [colorlib](https://colorlib.com/wp/template/podcast/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/podcast-free-template.jpg)
 - [ ] **Pointer** — [colorlib](https://colorlib.com/wp/template/pointer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pointer-free-template.jpg)
@@ -2835,7 +2835,7 @@
 
 - [x] **Basketball** — [colorlib](https://colorlib.com/wp/template/basketball/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/basketball-free-template.jpg) · [Swish](https://swish.free.componentdock.com)
 - [x] **Knights** — [colorlib](https://colorlib.com/wp/template/knights/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/knights-free-template.jpg) · [kickoff](https://kickoff.free.componentdock.com)
-- [ ] **Phoenix** — [colorlib](https://colorlib.com/wp/template/phoenix/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/phoenix-free-template.jpg)
+- [x] **Phoenix** — [colorlib](https://colorlib.com/wp/template/phoenix/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/phoenix-free-template.jpg) · [slugger](https://slugger.free.componentdock.com)
 - [ ] **Skater** — [colorlib](https://colorlib.com/wp/template/skater/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skater-free-template.jpg)
 - [ ] **Soccer** — [colorlib](https://colorlib.com/wp/template/soccer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/soccer-free-template.jpg)
 - [ ] **Specer** — [colorlib](https://colorlib.com/wp/template/specer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/specer-free-template.jpg)
