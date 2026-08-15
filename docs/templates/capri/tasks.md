@@ -79,7 +79,7 @@ responsive: { 0: { items: 1 }, 600: { items: 2 }, 1000: { items: 3 } } })`
       `@free-react-templates/capri`; `public/CNAME` =
       `capri.free.componentdock.com`; homepage `https://capri.free.componentdock.com`);
       root `npm install` + lockfile check (`grep -c
-  "free-react-templates/capri" package-lock.json`); `vite.config.ts`
+    "free-react-templates/capri" package-lock.json`); `vite.config.ts`
       keeps `injectUiSource()`
 - [ ] index.html: Google Fonts Poppins 300/400/500/700 link; no ColorLib
       assets/strings anywhere in the app
@@ -94,7 +94,7 @@ responsive: { 0: { items: 1 }, 600: { items: 2 }, 1000: { items: 3 } } })`
       pause, no-loop, cross-fade, no arrows, mobile/desktop tokens, footer
       link
 - [ ] `npm run verify:app -- capri`; commit `feat: add Capri (ColorLib
-  Carousel 05) template`; PR + immediate squash merge; deploy check
+    Carousel 05) template`; PR + immediate squash merge; deploy check
       https://capri.free.componentdock.com
 - [ ] Bookkeeping on merge: `[ ]`→`[x]` for Carousel 05 in TEMPLATES.md +
       surge URL, `npm run readme:status`
