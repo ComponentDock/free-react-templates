@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+/* Journee brand palette — design tokens from the live preview reference:
+   brand yellow #ffcc00 (search panel, pill buttons, view-all square, stars),
+   sky blue #00c0ff (search button, hovers, newsletter submit), ink #14182d
+   (headings), muted #7f7f7f (body copy), soft #fafafa (package card bg),
+   fade #888 (copyright). Fonts: Roboto (body) + Poppins (headings/buttons)
+   + Kaushan Script (script accents) via Google Fonts <link> in index.html. */
+@theme {
+  --color-brand: #ffcc00;
+  --color-sky: #00c0ff;
+  --color-ink: #14182d;
+  --color-muted: #7f7f7f;
+  --color-soft: #fafafa;
+  --color-fade: #888888;
+  --color-paper: #ffffff;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Kaushan Script', cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+}
