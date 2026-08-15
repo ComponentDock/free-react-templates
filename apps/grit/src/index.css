@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Grit brand palette — design tokens from the live preview reference:
+   brand red #f23a2e (buttons, icon circles, skewed hours bars, active
+   schedule tabs, trainer hover), accent orange #f89d13 (hours-bar CTA),
+   coral #ff7c67 (trainer name hover), ink #25262a (headings, nav links),
+   muted grays #989898/#aeaeae (card paragraphs), light #f8f9fa (services +
+   contact backgrounds). Font: Muli via Google Fonts <link> in index.html. */
+@theme {
+  /* Red scale so shared Button/ButtonLink `primary` variants resolve to the
+     Grit red family (600 = base red). */
+  --color-primary-50: #fef2f1;
+  --color-primary-100: #fde3e0;
+  --color-primary-200: #fbc5c0;
+  --color-primary-300: #f79a91;
+  --color-primary-400: #f2665a;
+  --color-primary-500: #f23a2e;
+  --color-primary-600: #f23a2e;
+  --color-primary-700: #d62c21;
+  --color-primary-800: #b0251c;
+  --color-primary-900: #8f211a;
+
+  --color-brand: #f23a2e;
+  --color-brand-2: #d62c21;
+  --color-accent: #f89d13;
+  --color-coral: #ff7c67;
+  --color-ink: #25262a;
+  --color-muted: #989898;
+  --color-light: #f8f9fa;
+
+  /* Muli 300–900 via Google Fonts <link> in index.html (the original
+     bundles its own font files; DO NOT copy them). */
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+}

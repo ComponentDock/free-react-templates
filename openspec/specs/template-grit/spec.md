@@ -111,7 +111,9 @@ uppercase, 12px-ish). The active link (Home) SHALL show a red underline.
 The system SHALL render a full-width hero with a dark background image
 (placeholder — the source uses a muted YouTube background video with a
 `rgba(0,0,0,0.4)` overlay; do NOT embed the video, use a dark picsum image +
-overlay) and centered white content: `h1` "We Believe Little Things Matter"
+overlay; the chosen `picsum.photos/id/593` tiger photo reads as a dark,
+powerful "strength" hero since picsum has no gym photography) and centered
+white content: `h1` "We Believe Little Things Matter"
 (3rem, weight 900), a `p.lead` supporting sentence (1.4rem, max-width
 700px), and a "Get Started" outline button (transparent, white 2px border,
 white text; hover inverts to white bg / black text).
@@ -162,25 +164,27 @@ circle inverting to white and the text turning white.
 - **THEN** the card background becomes brand red, the icon circle becomes
   white, and the text turns white
 
-### Requirement: CTA band ("Every Step Counts")
+### Requirement: CTA band ("Get The Result You Want")
 
-The system SHALL render a full-width parallax-style band (dark cover image +
-overlay) with centered white content: heading "Every Step Counts", a short
-lead paragraph, and a "Get Started" red button.
+The system SHALL render the FIRST full-width parallax-style band (dark cover
+image + overlay) with centered white content: heading "Get The Result You
+Want" and a lead paragraph whose text contains an inline "Get Started" link
+(the source renders it as a text link inside the lead, not a button).
 
-#### Scenario: CTA band content
+#### Scenario: First CTA band content
 
 - **GIVEN** the first CTA band is rendered
 - **WHEN** it is inspected
-- **THEN** it shows the heading "Every Step Counts", a lead paragraph, and a
-  "Get Started" button in brand red on a dark background
+- **THEN** it shows the heading "Get The Result You Want", a lead paragraph,
+  and an inline "Get Started" link inside the lead on a dark background
 
 ### Requirement: Classes
 
 The system SHALL render a section with the eyebrow "Fitness Class", heading
 "Classes", and an intro paragraph, followed by a carousel/row of five class
 cards. Each card SHALL have a square thumbnail image, a linked heading
-"Fitness Class Name #1"–"#5", "By Justin Daniel", and "30 minutes".
+"Fitness Class Name #1"–"#5", "By Ava Martinez" (source "By Justin Daniel" —
+instructor name paraphrased to match the trainer portraits), and "30 minutes".
 
 #### Scenario: Class cards
 
@@ -190,19 +194,18 @@ cards. Each card SHALL have a square thumbnail image, a linked heading
   name heading, an instructor ("By Justin Daniel"), and a duration
   ("30 minutes")
 
-### Requirement: CTA band ("Your Fitness Partner")
+### Requirement: CTA band ("Every Step Counts")
 
-The system SHALL render a second full-width parallax-style band with centered
-white content: heading "Your Fitness Partner Where Ever You Are", a short
-lead paragraph, and a "Get Started" red button.
+The system SHALL render the SECOND full-width parallax-style band (dark cover
+image + overlay) with centered white content: heading "Every Step Counts", a
+short lead paragraph, and a "Get Started" red button.
 
 #### Scenario: Second CTA band content
 
 - **GIVEN** the second CTA band is rendered
 - **WHEN** it is inspected
-- **THEN** it shows the heading "Your Fitness Partner Where Ever You Are", a
-  lead paragraph, and a "Get Started" button in brand red on a dark
-  background
+- **THEN** it shows the heading "Every Step Counts", a lead paragraph, and a
+  "Get Started" button in brand red on a dark background
 
 ### Requirement: Schedule (day tabs)
 
@@ -211,7 +214,7 @@ The system SHALL render a section with the eyebrow "Fitness Sched", heading
 S M T W T F S (active tab marked with a 2px red top border). Each day pane
 SHALL list up to five class entries in a two-column grid, each entry with a
 thumbnail, the time span (e.g. "Sunday 7:30am - 9:00am"), a class name
-heading, "By Justin Daniel", and "30 minutes".
+heading, "By Ava Martinez", and "30 minutes".
 
 #### Scenario: Day tabs
 
@@ -228,14 +231,30 @@ heading, "By Justin Daniel", and "30 minutes".
 - **THEN** the active marker moves to that tab and the pane updates to show
   that day's class entries
 
+### Requirement: CTA band ("Your Fitness Partner")
+
+The system SHALL render the THIRD full-width parallax-style band (dark cover
+image + overlay) with centered white content: heading "Your Fitness Partner
+Where Ever You Are", a short lead paragraph, and a "Get Started" red button.
+
+#### Scenario: Third CTA band content
+
+- **GIVEN** the third CTA band is rendered
+- **WHEN** it is inspected
+- **THEN** it shows the heading "Your Fitness Partner Where Ever You Are", a
+  lead paragraph, and a "Get Started" button in brand red on a dark
+  background
+
 ### Requirement: Trainers
 
 The system SHALL render a section with the eyebrow "Trainer", heading "Our
 Trainers", and an intro paragraph, followed by a 4-column grid of trainer
-cards. Each card SHALL have a photo, name ("Justin Daniel" and three
-"Matthew Davidson" cards), position "Trainer", and a paragraph. On hover the
-card background SHALL turn brand red with the name in coral (`#ff7c67`) and
-the text white.
+cards. Each card SHALL have a photo, name ("Ava Martinez", "Elena Reyes",
+"Mia Chen", "Sofia Alvarez" — the source uses "Justin Daniel" + three
+"Matthew Davidson" cards, but picsum has no male portraits, so names are
+paraphrased to match the available verified person photos), position
+"Trainer", and a paragraph. On hover the card background SHALL turn brand red
+with the name in coral (`#ff7c67`) and the text white.
 
 #### Scenario: Trainer cards
 
@@ -290,6 +309,21 @@ focusing to a red border.
 - **WHEN** an input receives focus
 - **THEN** its border becomes brand red
 
+### Requirement: Bottom hours bar (overlapping contact/footer)
+
+The system SHALL render a second red (`#f23a2e`) box skewed +12° that sits at
+the right edge between the contact section and the footer, containing
+"Hours" (bold) with "Opening: 7:30am — Closing: 9:00pm" on the left and a
+"Contact us" button with a right-arrow icon on the right, the button in
+accent orange (`#f89d13`).
+
+#### Scenario: Bottom hours bar content
+
+- **GIVEN** the bottom hours bar is rendered between contact and footer
+- **WHEN** it is inspected
+- **THEN** it shows the opening hours text and a "Contact us" button in
+  accent orange with an arrow icon, all on a skewed red panel
+
 ### Requirement: Footer
 
 The system SHALL render a white footer with three columns: "About Grit"
@@ -319,8 +353,9 @@ source's Colorlib credit.
 - [ ] Footer links https://www.componentdock.com/
 - [ ] Tests first, 100% coverage (Vitest + RTL) — `bash scripts/verify-app.sh grit`
 - [ ] Section order matches the source: header → hero → hours bar →
-      features → CTA (Every Step Counts) → classes → CTA (Fitness Partner) →
-      schedule → trainers → services → contact → footer
+      features → CTA (Get The Result You Want) → classes → CTA (Every Step
+      Counts) → schedule → CTA (Your Fitness Partner) → trainers → services →
+      contact → bottom hours bar → footer
 - [ ] Tokens in `src/index.css` `@theme`: `--color-brand: #f23a2e`,
       `--color-accent: #f89d13`, `--color-ink: #25262a`, muted grays; Muli
       Google Fonts link in `index.html`
