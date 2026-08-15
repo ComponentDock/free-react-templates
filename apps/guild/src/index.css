@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Guild brand palette — design tokens from the live preview reference:
+   brand mint #10ddb4 (pill buttons, date badges, search underline, active
+   slider dot), dark surfaces #353535 header / #1c1c1c blog / #222222 blog
+   list / #2d2d2d video / #000000 footer, ink #161616 (button text),
+   meta #8c8c8c (body + footer links), yellow #ffea00 (category link in
+   post metas), pink #ff2260 (video play button), rainbow category badges
+   #ff1980/#ffe119/#5da9e4/#bd9bd2/#f89843, slider dot #7a7e7d.
+   Font: Roboto via Google Fonts <link> in index.html. */
+@theme {
+  --color-brand: #10ddb4;
+  --color-ink: #161616;
+  --color-meta: #8c8c8c;
+  --color-cata-1: #10ddb4;
+  --color-cata-2: #ff1980;
+  --color-cata-3: #ffe119;
+  --color-cata-4: #5da9e4;
+  --color-cata-5: #bd9bd2;
+  --color-cata-6: #f89843;
+  --color-post-link: #ffea00;
+  --color-video-play: #ff2260;
+  --color-header: #353535;
+  --color-section: #1c1c1c;
+  --color-section-2: #222222;
+  --color-video: #2d2d2d;
+  --color-footer: #000000;
+  --color-dot: #7a7e7d;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-section font-sans text-meta antialiased;
+  }
+}
