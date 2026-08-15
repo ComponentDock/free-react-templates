@@ -538,7 +538,7 @@
 - [x] **World** — [colorlib](https://colorlib.com/wp/template/world/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/world-free-template-1.jpg) · [atlas](https://atlas.free.componentdock.com)
 - [x] **Xgym** — [colorlib](https://colorlib.com/wp/template/xgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/xgym-free-template.jpg) · [bolt](https://bolt.free.componentdock.com)
 - [x] **Yaseen** — [colorlib](https://colorlib.com/wp/template/yaseen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yaseen-creative-photography-website-landing-page-template.jpg) · [pixora](https://pixora.free.componentdock.com)
-- [~] **Yoga** — [colorlib](https://colorlib.com/wp/template/yoga/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yoga-free-template.jpg)
+- [x] **Yoga** — [colorlib](https://colorlib.com/wp/template/yoga/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yoga-free-template.jpg) · [lotus](https://lotus.free.componentdock.com)
 - [ ] **Yogaflex** — [colorlib](https://colorlib.com/wp/template/yogaflex/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogaflex-free-template.jpg)
 - [x] **Zeedapp** — [colorlib](https://colorlib.com/wp/template/zeedapp/) · [Zest](https://zest.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeedapp-free-template.jpg)
 
@@ -1887,7 +1887,7 @@
 - [x] **Wordpress Dentist Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-dentist-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-wordpress-themes-1.jpg) · [mintly](https://mintly.free.componentdock.com)
 ^- [x] **Workout** — [colorlib](https://colorlib.com/wp/template/workout/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workout-free-template.jpg) · [sweatly](https://sweatly.free.componentdock.com)
 - [x] **Xgym** — [colorlib](https://colorlib.com/wp/template/xgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/xgym-free-template.jpg) · [bolt](https://bolt.free.componentdock.com)
-- [~] **Yoga** — [colorlib](https://colorlib.com/wp/template/yoga/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yoga-free-template.jpg)
+- [x] **Yoga** — [colorlib](https://colorlib.com/wp/template/yoga/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yoga-free-template.jpg) · [lotus](https://lotus.free.componentdock.com)
 - [ ] **Yoga Studio** — [colorlib](https://colorlib.com/wp/template/yoga-studio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogastudio-free-template.jpg)
 - [ ] **Yogabest** — [colorlib](https://colorlib.com/wp/template/yogabest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogabest-colorlib-template.jpg)
 - [ ] **Yogaflex** — [colorlib](https://colorlib.com/wp/template/yogaflex/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogaflex-free-template.jpg)
