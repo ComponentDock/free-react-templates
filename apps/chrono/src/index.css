@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* Chrono brand palette — design tokens from the live preview reference:
+   brand red #ff2020 (buttons, nav hover, prices), herobtn #4a4a4b (dark
+   hero CTA), navy #002d5b (slider arrow hover), band #ea0000 (shop-method
+   band), ink #141517 (nav text), muted #868c98 (footer blurb),
+   herobg #f0f0f2 (hero background). Fonts: Josefin Sans (headings/nav/
+   buttons) + Roboto (body) via Google Fonts <link> in index.html. */
+@theme {
+  --color-brand: #ff2020;
+  --color-herobtn: #4a4a4b;
+  --color-navy: #002d5b;
+  --color-band: #ea0000;
+  --color-badge: #ff003c;
+  --color-addbar: #f81f1f;
+  --color-ink: #141517;
+  --color-muted: #868c98;
+  --color-herobg: #f0f0f2;
+  --color-paper: #ffffff;
+
+  --font-sans: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-paper font-body text-ink antialiased;
+  }
+}

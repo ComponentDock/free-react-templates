@@ -147,14 +147,15 @@ PR.
   duplicate links in the DOM — query with `getAllByRole` and index the mobile
   one last). Stack the new-product row (1-col), gallery tiles, popular grid
   (1–2 cols), watch rows, method band, and footer columns below `lg`.
-- **Placeholder images:** `https://picsum.photos/seed/chrono-<n>/<w>/<h>`.
-  Watch/product photos are hard to source from picsum — screen candidates per
-  the seed-screening method (pixel metric + browser verify) and prefer
-  dark/neutral accessory-style shots that read as a watch store; pin the
-  verified seeds in the PR and this spec. Icons from `lucide-react`
-  (Search, User, ShoppingBag, Heart, Play, Package, CreditCard,
-  RefreshCw, Menu, X) + inline SVG brand icons for twitter/facebook/behance/
-  globe (lucide-react removed brand icons).
+- **Placeholder images:** picsum IDs (picsum has no watch photos — dark/neutral
+  accessory-style shots screened by pixel metric + browser verify, 2026-08-15):
+  hero = id/250 (vintage camera on piano, dark luxury) + id/460 (lantern, dark),
+  new arrivals = id/160 (dark phone) + id/306 (lily on dark water) + id/60
+  (dark desk), gallery = id/570 + id/267 + id/349 + id/620, popular = reuse of
+  the dark product shots, watch of choice = id/250 + id/460. Icons from
+  `lucide-react` (Search, User, ShoppingBag, Heart, Play, Package, CreditCard,
+  RefreshCw, Menu, X, ChevronLeft, ChevronRight, Globe) + inline SVG brand
+  icons (twitter/facebook/behance) in `BrandIcon.tsx`.
 
 ## Requirements
 
@@ -335,7 +336,7 @@ https://www.componentdock.com/ (no Colorlib credit).
 - [ ] Tokens in `src/index.css` `@theme`: `--color-brand: #ff2020`,
       `--color-herobtn: #4a4a4b`, `--color-navy: #002d5b`,
       `--color-band: #ea0000`, `--color-ink: #141517`, `--color-muted:
-    #868c98`, `--color-herobg: #f0f0f2`, `--color-paper: #ffffff`; Google
+  #868c98`, `--color-herobg: #f0f0f2`, `--color-paper: #ffffff`; Google
       Fonts `<link>` in `index.html`: Josefin Sans (400/600/700) + Roboto
       (400/500/700)
 - [ ] Header: white sticky, logo + 7 nav links (Latest with red badge) +
