@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette — muted slate blue-grey business palette (hero ground,
+     dark bands, buttons); mist for light gray section bands. */
+  --color-slate: #6a6f82;
+  --color-slate-dark: #5a6270;
+  --color-mist: #f4f5f7;
+
+  /* Montserrat (geometric sans) via Google Fonts. */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
