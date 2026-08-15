@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Lotus brand palette — recreated from the original yoga/fitness design
+     (style.css): mint green #79efb4 (button fills, link accents, focus
+     rings; hover #57eba1), dark ink #404044 (footer background + heading
+     color), muted grays #6c757d / #c0c0c3, light section background
+     #f8f9fa. Font: Quicksand (body 18px weight 400, headings weight 500,
+     hero 72px weight 400). */
+  --color-brand: #79efb4;
+  --color-brand-dark: #57eba1;
+
+  /* Ink — dark headings and footer background (#404044 from the original). */
+  --color-ink: #404044;
+
+  /* Muted — secondary text (#6c757d from the original). */
+  --color-muted: #6c757d;
+
+  /* Mist — light section background (#f8f9fa from the original). */
+  --color-mist: #f8f9fa;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the mint brand (600 = base mint, 700 = hover). */
+  --color-primary-50: #eafcf2;
+  --color-primary-100: #d4f9e5;
+  --color-primary-200: #a9f4cb;
+  --color-primary-300: #7deeb1;
+  --color-primary-400: #63ec9f;
+  --color-primary-500: #79efb4;
+  --color-primary-600: #79efb4;
+  --color-primary-700: #57eba1;
+  --color-primary-800: #2fdc85;
+  --color-primary-900: #1faf67;
+
+  /* Original font: "Quicksand" (300/400/500/600/700). */
+  --font-sans: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+}
