@@ -533,7 +533,7 @@
 - [x] **Wines** — [colorlib](https://colorlib.com/wp/template/wines/) · [vintner](https://vintner.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wines-free-template.jpg)
 - [x] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · [wordpressapp](https://wordpressapp.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
 - [x] **Wordpress Business Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-business-themes/) · [slate](https://slate.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-business-themes1.jpg)
-- [ ] **Wordpress Dentist Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-dentist-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-wordpress-themes-1.jpg)
+- [~] **Wordpress Dentist Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-dentist-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-wordpress-themes-1.jpg)
 - [ ] **Workout** — [colorlib](https://colorlib.com/wp/template/workout/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workout-free-template.jpg)
 - [x] **World** — [colorlib](https://colorlib.com/wp/template/world/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/world-free-template-1.jpg) · [atlas](https://atlas.free.componentdock.com)
 - [ ] **Xgym** — [colorlib](https://colorlib.com/wp/template/xgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/xgym-free-template.jpg)
@@ -1513,7 +1513,7 @@
 - [ ] **Prodent** — [colorlib](https://colorlib.com/wp/template/prodent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/prodent-free-template.jpg)
 - [ ] **Toothcare** — [colorlib](https://colorlib.com/wp/template/toothcare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/toothcare-free-template.jpg)
 - [ ] **Toothsy** — [colorlib](https://colorlib.com/wp/template/toothsy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/toothsy-free-template.jpg)
-- [ ] **Wordpress Dentist Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-dentist-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-wordpress-themes-1.jpg)
+- [~] **Wordpress Dentist Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-dentist-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-wordpress-themes-1.jpg)
 
 ## Directory (33)
 
@@ -1884,7 +1884,7 @@
 - [ ] **Vigor** — [colorlib](https://colorlib.com/wp/template/vigor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vigor-free-template.jpg)
 - [x] **Vitality** — [colorlib](https://colorlib.com/wp/template/vitality/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vitality-template-1770211473540.jpg) · [cura](https://cura.free.componentdock.com)
 - [x] **Wellspa** — [colorlib](https://colorlib.com/wp/template/wellspa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wellspa-free-template.jpg) · [halcyon](https://halcyon.free.componentdock.com)
-- [ ] **Wordpress Dentist Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-dentist-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-wordpress-themes-1.jpg)
+- [~] **Wordpress Dentist Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-dentist-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-wordpress-themes-1.jpg)
 - [ ] **Workout** — [colorlib](https://colorlib.com/wp/template/workout/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workout-free-template.jpg)
 - [ ] **Xgym** — [colorlib](https://colorlib.com/wp/template/xgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/xgym-free-template.jpg)
 - [ ] **Yoga** — [colorlib](https://colorlib.com/wp/template/yoga/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yoga-free-template.jpg)
@@ -2256,7 +2256,7 @@
 - [ ] **Pharma** — [colorlib](https://colorlib.com/wp/template/pharma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pharma-free-template.jpg)
 - [ ] **Prodent** — [colorlib](https://colorlib.com/wp/template/prodent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/prodent-free-template.jpg)
 - [ ] **Remedic** — [colorlib](https://colorlib.com/wp/template/remedic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/remedic-free-template.jpg)
-- [ ] **Wordpress Dentist Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-dentist-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-wordpress-themes-1.jpg)
+- [~] **Wordpress Dentist Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-dentist-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-wordpress-themes-1.jpg)
 
 ## Music (19)
 
