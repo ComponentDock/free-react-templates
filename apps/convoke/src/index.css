@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette — rainbow conference gradient (orange → magenta → blue). */
+  --color-rainbow-1: #ff9600;
+  --color-rainbow-2: #fe531e;
+  --color-rainbow-3: #c022a5;
+  --color-rainbow-4: #1bb8f9;
+  --color-brand-red: #ff0000;
+  --color-body: #707070;
+  --color-heading: #131313;
+  --color-tint: #f9f9ff;
+  --color-tint-2: #fbf9ff;
+  --color-tint-3: #f0e9ff;
+  --color-subheading: #c9c9c9;
+  --color-faq-border: #f0e9ff;
+
+  /* Poppins (300–900) via Google Fonts — headings + body. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
