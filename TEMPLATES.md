@@ -537,7 +537,7 @@
 ^- [x] **Workout** — [colorlib](https://colorlib.com/wp/template/workout/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workout-free-template.jpg) · [sweatly](https://sweatly.free.componentdock.com)
 - [x] **World** — [colorlib](https://colorlib.com/wp/template/world/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/world-free-template-1.jpg) · [atlas](https://atlas.free.componentdock.com)
 - [ ] **Xgym** — [colorlib](https://colorlib.com/wp/template/xgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/xgym-free-template.jpg)
-- [ ] **Yaseen** — [colorlib](https://colorlib.com/wp/template/yaseen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yaseen-creative-photography-website-landing-page-template.jpg)
+- [~] **Yaseen** — [colorlib](https://colorlib.com/wp/template/yaseen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yaseen-creative-photography-website-landing-page-template.jpg)
 - [ ] **Yoga** — [colorlib](https://colorlib.com/wp/template/yoga/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yoga-free-template.jpg)
 - [ ] **Yogaflex** — [colorlib](https://colorlib.com/wp/template/yogaflex/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogaflex-free-template.jpg)
 - [x] **Zeedapp** — [colorlib](https://colorlib.com/wp/template/zeedapp/) · [Zest](https://zest.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeedapp-free-template.jpg)
@@ -2102,7 +2102,7 @@
 - [x] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · [wordpressapp](https://wordpressapp.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
 - [x] **Wordpress Business Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-business-themes/) · [slate](https://slate.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-business-themes1.jpg)
 - [ ] **Workshop** — [colorlib](https://colorlib.com/wp/template/workshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workshop-free-template.jpg)
-- [ ] **Yaseen** — [colorlib](https://colorlib.com/wp/template/yaseen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yaseen-creative-photography-website-landing-page-template.jpg)
+- [~] **Yaseen** — [colorlib](https://colorlib.com/wp/template/yaseen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yaseen-creative-photography-website-landing-page-template.jpg)
 - [x] **Zeedapp** — [colorlib](https://colorlib.com/wp/template/zeedapp/) · [Zest](https://zest.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeedapp-free-template.jpg)
 
 ## Landscaping (3)
@@ -2479,7 +2479,7 @@
 - [ ] **Thelook** — [colorlib](https://colorlib.com/wp/template/thelook/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelook-free-template.jpg)
 - [ ] **Thumber** — [colorlib](https://colorlib.com/wp/template/thumber/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thumber-free-template.jpg)
 - [ ] **Tulen** — [colorlib](https://colorlib.com/wp/template/tulen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tulen-free-template.jpg)
-- [ ] **Yaseen** — [colorlib](https://colorlib.com/wp/template/yaseen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yaseen-creative-photography-website-landing-page-template.jpg)
+- [~] **Yaseen** — [colorlib](https://colorlib.com/wp/template/yaseen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yaseen-creative-photography-website-landing-page-template.jpg)
 - [x] **Yummy** — [colorlib](https://colorlib.com/wp/template/yummy/) · [zesty](https://zesty.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-minimal-food-blog-website-template.jpg)
 
 ## Politics (2)
@@ -2577,7 +2577,7 @@
 - [ ] **Videograph** — [colorlib](https://colorlib.com/wp/template/videograph/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/videograph-free-template.jpg)
 - [ ] **Whitespace** — [colorlib](https://colorlib.com/wp/template/whitespace/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/whitespace-free-template.jpg)
 - [ ] **Work** — [colorlib](https://colorlib.com/wp/template/work/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/work-free-template.jpg)
-- [ ] **Yaseen** — [colorlib](https://colorlib.com/wp/template/yaseen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yaseen-creative-photography-website-landing-page-template.jpg)
+- [~] **Yaseen** — [colorlib](https://colorlib.com/wp/template/yaseen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yaseen-creative-photography-website-landing-page-template.jpg)
 
 ## Real Estate (39)
 
