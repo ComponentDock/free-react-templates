@@ -1,5 +1,11 @@
 # Template: Tutelage (Education)
 
+> **SUPERSEDED** — ColorLib "Tutor" shipped as **Mentory** (PR #455,
+> https://mentory.free.componentdock.com). Do NOT implement — delete on next
+> cleanup. The four TEMPLATES.md Tutor rows are marked `[x]` with the Mentory
+> URL. (Annotated 2026-08-15 by the implementer stream after the duplicate
+> prep landed while the Mentory claim was in flight.)
+
 ## Purpose
 
 Tutelage is a single-page online-tutorials / e-learning template in the
@@ -323,7 +329,7 @@ Testimonials → footer.
       `box-side` cards (horizontal thumb + h3 20px)
 - [ ] Testimonials: heading (caption "Testimonials" + h2 "Student
       Reviews"); 3 cards (white, padding 30px, radius 7px, `border-
-    bottom: 4px solid #0779e4`, soft shadow): title + 5 stars (4
+  bottom: 4px solid #0779e4`, soft shadow): title + 5 stars (4
       filled + 1 outline) + quote + 50px round avatar + name + `#ccc`
       role — vary titles (Excellent Teacher! / Best Video Tutorial! /
       Easy to Understand!)
