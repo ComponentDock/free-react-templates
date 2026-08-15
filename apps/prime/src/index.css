@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette — #2f89fc blue and #55fbc2 mint drive the gradient bands,
+     icon circles, and the split quote column; #78d5ef is the button primary. */
+  --color-brand: #2f89fc;
+  --color-brand-dark: #2273d6;
+  --color-mint: #55fbc2;
+  --color-btn: #78d5ef;
+  --color-btn-hover: #56caeb;
+  --color-ink: #212529;
+  --color-muted: #b3b3b3;
+  --color-band: #f0f0f0;
+  --color-light: #f8f9fa;
+  --color-footer: #233142;
+  --color-copyright: #3c312e;
+  --color-white-70: rgba(255, 255, 255, 0.7);
+  --color-white-80: rgba(255, 255, 255, 0.8);
+
+  /* Open Sans (300/400/500/600/700) loaded via Google Fonts in index.html. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Blinking caret for the hero typewriter word. */
+  .typewriter-caret {
+    animation: prime-blink 0.8s step-start infinite;
+  }
+
+  @keyframes prime-blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}
