@@ -30,7 +30,7 @@ and reconstructs the below-the-fold dental-clinic sections per the category
 conventions.
 
 Mintly appears FOUR times in TEMPLATES.md (all rows are the same source
-slug): line 536, line 1516, line 1885, and line 2257 — implement ONE app and
+slug): line 536, line 1516, line 1887, and line 2259 — implement ONE app and
 mark ALL FOUR rows `[x]` at bookkeeping.
 
 ## Design reference (replication findings)
@@ -274,6 +274,6 @@ The system SHALL render the footer (reconstructed, repo standard).
       Home/About/Departments/FAQ/Contacts, split dentist hero with icon
       trio, three mint `#B9F7F8` info cards with white pill buttons,
       accent `#3BE2AE`
-- [ ] TEMPLATES.md lines 536, 1516, 1885, AND 2257 all marked `[x]`
+- [ ] TEMPLATES.md lines 536, 1516, 1887, AND 2259 all marked `[x]`
 - [ ] `public/CNAME` = `mintly.free.componentdock.com`; `homepage` =
       `https://mintly.free.componentdock.com`

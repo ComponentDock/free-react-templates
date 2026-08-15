@@ -14,7 +14,7 @@
   Bridge, Dentist WP, MedicalPress, RT-Theme 20, iDent, SmilePure, Mediz,
   ApexClinic, AllSmiles, Dr.Patterson, SmileCare; all demo links are
   third-party, no preview.colorlib.com links on the page). Listed FOUR times
-  in TEMPLATES.md — line 536, line 1516, line 1885, line 2257, all `- [ ]`,
+  in TEMPLATES.md — line 536, line 1516, line 1887, line 2259, all `- [ ]`,
   same slug → implement ONE app, mark ALL FOUR rows `[x]` at bookkeeping.
 - **Preview UNREACHABLE:** https://preview.colorlib.com/theme/wordpress-dentist-themes/
   → HTTP 404, absent from preview.colorlib.com/assets/js/products.js.
@@ -98,5 +98,5 @@
       `https://mintly.free.componentdock.com`
 - [ ] `scripts/verify-app.sh mintly` green (typecheck + lint + coverage +
       build)
-- [ ] TEMPLATES.md lines 536, 1516, 1885, 2257 → `[x]` + surge URL; mark
+- [ ] TEMPLATES.md lines 536, 1516, 1887, 2259 → `[x]` + surge URL; mark
       claim `[~]` before starting (claim rule: push `[~]` first)
