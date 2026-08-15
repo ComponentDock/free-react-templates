@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+/* Peregrine brand palette — design tokens from the live preview reference:
+   brand gold #ffb400 (Book Now pill, Search/Subscribe/Read-more buttons,
+   star ratings, blog day numbers, active nav link), panel #232931 (search
+   panel + testimonial overlay), footer #222831 (footer + subscribe band),
+   ink rgba(0,0,0,0.8) (headings), soft #f8f9fa (light section surfaces),
+   fade rgba(0,0,0,0.3) (muted labels). Gradient #6b75ff -> #59b7ff (45deg)
+   for the hero overlay and service-icon text. Font: Poppins via Google
+   Fonts <link> in index.html. */
+@theme {
+  --color-brand: #ffb400;
+  --color-panel: #232931;
+  --color-footer: #222831;
+  --color-ink: rgba(0, 0, 0, 0.8);
+  --color-soft: #f8f9fa;
+  --color-fade: rgba(0, 0, 0, 0.3);
+  --color-faint: rgba(255, 255, 255, 0.7);
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+}
