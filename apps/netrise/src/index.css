@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette — three 45deg gradients drive the page over a dark
+     navy base. Gradient A (teal→green) fills primary CTAs and service
+     icon squares; Gradient B (sky→indigo) fills the secondary CTA, the
+     domain search submit and the testimonial band; Gradient C
+     (pink→purple) is the hero slider background and the nav CTA pill. */
+  --color-teal: #12e6ca;
+  --color-green: #8be55d;
+  --color-sky: #56c8fb;
+  --color-indigo: #627bed;
+  --color-pink: #fb83b5;
+  --color-purple: #9a51ff;
+  --color-navy: #233142;
+  --color-light: #f8f9fa;
+  --color-ink: #233142;
+
+  /* Work Sans (Google Font) — the original template's typeface. */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
