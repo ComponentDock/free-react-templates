@@ -510,6 +510,7 @@
 - [x] **The Charity** — [colorlib](https://colorlib.com/wp/template/the-charity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thecharity-free-template.jpg) · [amity](https://amity.free.componentdock.com)
 - [x] **The Conference** — [colorlib](https://colorlib.com/wp/template/the-conference/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theconference-free-template.jpg) · [colloquy](https://colloquy.free.componentdock.com)
 - [x] **The Quest** — [colorlib](https://colorlib.com/wp/template/the-quest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thequest-free-template.jpg) · [guild](https://guild.free.componentdock.com)
+- [~] **Theplaza** — [colorlib](https://colorlib.com/wp/template/theplaza/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theplaza-free-template.jpg)
 - [ ] **Timezone** — [colorlib](https://colorlib.com/wp/template/timezone/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/timezone-free-template.jpg)
 - [ ] **Topgym** — [colorlib](https://colorlib.com/wp/template/topgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/topgym-free-template.jpg)
 - [x] **Topmodel** — [colorlib](https://colorlib.com/wp/template/topmodel/) · [catwalk](https://catwalk.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/topmodel-free-template.jpg)

@@ -101,27 +101,28 @@
 
 ## Implementation tasks (for the implementer stream)
 
-- [ ] `cp -r` scaffold from the simplest existing app; rename package to
+- [x] `cp -r` scaffold from the simplest existing app; rename package to
       `@free-react-templates/boutique`; `npm install` at repo root; CNAME +
       homepage `boutique.free.componentdock.com`
-- [ ] `src/index.css` `@theme` tokens: brand `#b09d81`, ink `#414141`,
+- [x] `src/index.css` `@theme` tokens: brand `#b09d81`, ink `#414141`,
       muted `#909090`, surface `#ebebeb`, blog `#f2f4f9`, footer `#282828`,
       footerbar `#222222`, paper `#ffffff`; Google Fonts `<link>` (Raleway
       400/500/600/700)
-- [ ] `src/data.ts` — nav links, hero slides (2), intro products (5), grid
+- [x] `src/data.ts` — nav links, hero slides (2), intro products (5), grid
       products (8, with filter tags new/best + badges), blog posts (3),
       footer widget links + contact data
-- [ ] Components: `Navbar` (desktop + hamburger mobile menu, cart badge +
+- [x] Components: `Navbar` (desktop + hamburger mobile menu, cart badge +
       search icons), `Hero` (2-slide slider with arrows/dots), `IntroProducts`
       (5-card slider + hover overlay), `FeaturedPromos` (2 panels with
       straddling SEE MORE buttons), `ProductGrid` (filter tabs + 8 cards +
       hover bar), `Blog`, `Footer` (5 columns + copyright bar)
-- [ ] Tests per section mirroring the spec Gherkin scenarios, 100%
+- [x] Tests per section mirroring the spec Gherkin scenarios, 100%
       coverage (filter interaction, slider navigation, mobile menu toggle)
-- [ ] Subject-screen picsum seeds (hero fashion bg, 5 intro products, 2
-      featured, 8 grid, 3 blog thumbs) — pixel metric + browser verify,
-      pin seeds in PR; prefer color-matched fashion/flat-lay-style photos
-- [ ] `bash scripts/verify-app.sh boutique` green; PR with source, preview
+- [x] Subject-screen picsum seeds (hero fashion bg, 5 intro products, 2
+      featured, 8 grid, 3 blog thumbs) — contact-sheet browser_vision
+      screening; pinned in the spec (hero `boutique-hero7`/`boutique5`,
+      products/flat-lays, featured editorial, blog editorial)
+- [x] `bash scripts/verify-app.sh boutique` green; PR with source, preview
       URL, tokens, deviations (React sliders / state filter / hamburger /
       Component Dock credit); squash-merge immediately
 

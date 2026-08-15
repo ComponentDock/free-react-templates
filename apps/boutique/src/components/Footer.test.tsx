@@ -16,7 +16,7 @@ describe('Footer', () => {
     }
   })
 
-  it('renders the copyright bar with a Component Dock link and no ColorLib credit', () => {
+  it('renders the copyright bar with a Component Dock link and no source-template credit', () => {
     render(<Footer />)
     const credit = screen.getByRole('link', { name: componentDockName })
     expect(credit).toHaveAttribute('href', componentDockUrl)
