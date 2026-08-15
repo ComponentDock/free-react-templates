@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette — mint-teal dental palette (hero icon circles, buttons,
+     links); mint band for the info-card strip; charcoal for text. */
+  --color-mint: #3be2ae;
+  --color-mint-dark: #2bca99;
+  --color-mint-band: #b9f7f8;
+  --color-charcoal: #373737;
+  --color-ink: #151515;
+  --color-soft: #f0f5f9;
+
+  /* Montserrat (geometric sans) via Google Fonts. */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
