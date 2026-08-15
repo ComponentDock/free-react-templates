@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette — #e86ed0 hot pink drives the section labels, service
+     icons, search button, property-card arrows, step circles and link
+     hovers; #f7b71d gold marks the navbar brand dot; #666666 is the body
+     text tone with near-black headings, matching the airy white real-estate
+     design language of the reference. */
+  --color-brand: #e86ed0;
+  --color-gold: #f7b71d;
+  --color-ink: #000000;
+  --color-body: #666666;
+  --color-muted: rgba(0, 0, 0, 0.6);
+
+  /* Nunito Sans (400/600/700) loaded via Google Fonts in index.html — the
+     reference's rounded humanist sans, used for every element. */
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
