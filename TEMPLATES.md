@@ -523,7 +523,7 @@
 - [x] **Unapp** — [colorlib](https://colorlib.com/wp/template/unapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unapp-free-template.jpg) · [blueprint](https://blueprint.free.componentdock.com)
 - [x] **Uptown** — [colorlib](https://colorlib.com/wp/template/uptown/) · [homestead](https://homestead.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/uptown-free-template.jpg)
 - [x] **Uza** — [colorlib](https://colorlib.com/wp/template/uza/) · [amplify](https://amplify.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/uza-free-template.jpg)
-- [~] **Vineyard** — [colorlib](https://colorlib.com/wp/template/vineyard/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vineyard-free-template.jpg)
+- [x] **Vineyard** — [colorlib](https://colorlib.com/wp/template/vineyard/) · [parish](https://parish.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vineyard-free-template.jpg)
 - [ ] **Violet** — [colorlib](https://colorlib.com/wp/template/violet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/violet-free-template.jpg)
 - [ ] **Warehouse** — [colorlib](https://colorlib.com/wp/template/warehouse/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/warehouse-free-template.jpg)
 - [ ] **Waterboat** — [colorlib](https://colorlib.com/wp/template/waterboat/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/waterboat-free-template.jpg)
@@ -1303,7 +1303,7 @@
 - [ ] **Salvation** — [colorlib](https://colorlib.com/wp/template/salvation/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/salvation-free-template.jpg)
 - [ ] **Spring** — [colorlib](https://colorlib.com/wp/template/spring/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/spring-free-template.jpg)
 - [x] **The Charity** — [colorlib](https://colorlib.com/wp/template/the-charity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thecharity-free-template.jpg) · [amity](https://amity.free.componentdock.com)
-- [~] **Vineyard** — [colorlib](https://colorlib.com/wp/template/vineyard/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vineyard-free-template.jpg)
+- [x] **Vineyard** — [colorlib](https://colorlib.com/wp/template/vineyard/) · [parish](https://parish.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vineyard-free-template.jpg)
 - [ ] **Welfare** — [colorlib](https://colorlib.com/wp/template/welfare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/welfare-free-template.jpg)
 - [ ] **Wisdom** — [colorlib](https://colorlib.com/wp/template/wisdom/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wisdom-free-template.jpg)
 
