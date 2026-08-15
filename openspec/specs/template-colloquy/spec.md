@@ -293,9 +293,9 @@ https://www.componentdock.com/ (replacing the source's Colorlib credit).
       ColorLib references in app code (grep for colorlib/The Conference in apps/colloquy)
 - [ ] Footer links https://www.componentdock.com/
 - [ ] Tests first, 100% coverage (Vitest + RTL) — `bash scripts/verify-app.sh colloquy`
-- [ ] Section order matches the source: header (top row + nav) → hero →
-      intro (6 cards) → events calendar (4 rows) → pricing (3 plans) → CTA →
-      footer
+- [ ] Section order matches the source (verified against the live preview
+      DOM: home → intro → pricing → calendar → cta → footer): header (top row + nav) → hero → intro (6 cards) → pricing (3 plans) → events calendar
+      (2 days × 4 rows) → CTA → footer
 - [ ] Tokens in `src/index.css` `@theme`: `--color-brand: #4867c0`,
       `--color-brand-light: #329fec`, `--color-ink: #4c4c4c`,
       `--color-meta: #888888`, `--color-card: #f3f7f9`,
