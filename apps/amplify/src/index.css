@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette — #1583e9 tech blue drives the pill buttons, links,
+     hero accent word, call-now text; #e7f2fd pale-blue tint fills the
+     service icon blob plates and newsletter border lines; #303030 /
+     #707070 are the charcoal heading and body text tones. */
+  --color-brand: #1583e9;
+  --color-brand-dark: #3851bc;
+  --color-tint: #e7f2fd;
+  --color-ink: #303030;
+  --color-body: #707070;
+  --color-muted: #a6a6a6;
+
+  /* Poppins (300/400/600) loaded via Google Fonts in index.html — a
+     close geometric-sans substitute for the original's self-hosted
+     "Aileron" (documented deviation). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
