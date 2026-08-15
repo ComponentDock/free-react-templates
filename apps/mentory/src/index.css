@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette — primary blue of the tutorial-hub design. */
+  --color-brand: #0779e4;
+  --color-brand-dark: #0665bf;
+  --color-body: #364d59;
+  --color-meta: #a6a6a6;
+  --color-light: #f8f9fa;
+  --color-control: #efefef;
+  --color-control-focus: #e2e2e2;
+  --color-star: #ffc107;
+  --color-footer-link: rgba(0, 0, 0, 0.5);
+
+  /* Raleway (300/400/700/900) loaded via Google Fonts in index.html. */
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
