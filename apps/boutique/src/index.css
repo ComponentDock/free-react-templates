@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+/* Boutique brand palette — design tokens from the live preview reference:
+   brand tan #b09d81 (featured borders + featured SEE MORE buttons, outline
+   hover), ink #414141 (primary buttons, headings, outline buttons),
+   muted #909090 (secondary text), surface #ebebeb (section backgrounds),
+   blog #f2f4f9 (blog section bg), footer #282828 (footer top),
+   footerbar #222222 (copyright bar). Font: Raleway via Google Fonts
+   <link> in index.html. */
+@theme {
+  --color-brand: #b09d81;
+  --color-ink: #414141;
+  --color-muted: #909090;
+  --color-surface: #ebebeb;
+  --color-blog: #f2f4f9;
+  --color-footer: #282828;
+  --color-footerbar: #222222;
+  --color-paper: #ffffff;
+
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+}
