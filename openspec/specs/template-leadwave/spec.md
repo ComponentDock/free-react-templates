@@ -1,5 +1,13 @@
 # Template: Leadwave (Digital Agency)
 
+> **SUPERSEDED** — this spec duplicates the ColorLib Ultim8 source that shipped
+> as **Prime** (apps/prime, PR #456, https://prime.free.componentdock.com).
+> The prep stream prepped this earlier under the name "Leadwave", then
+> re-prepped the same source as "Prime" (the newer spec, which matches the
+> current TEMPLATES.md line numbers). Do NOT implement this spec — delete on
+> next cleanup. All three Ultim8 rows in TEMPLATES.md are `[x]` with the prime
+> URL.
+
 ## Purpose
 
 Leadwave is a single-page digital-agency / marketing template in the
@@ -354,7 +362,7 @@ reasons/quote form → testimonials → newsletter → blog → footer.
       `template-leadwave`
 - [ ] Tokens in `src/index.css` `@theme`: `--color-brand: #2f89fc`,
       `--color-mint: #55fbc2`, `--color-navy: #233142`, `--color-soft:
-    #f8f9fa`, `--color-hero-start: #f0f0f0`, `--color-muted: #b3b3b3`,
+  #f8f9fa`, `--color-hero-start: #f0f0f0`, `--color-muted: #b3b3b3`,
       `--color-ink: #000000`; Google Fonts `<link>` in `index.html`: Work
       Sans (400/500/700)
 - [ ] Navbar: transparent over hero (black links ≥992px, white mobile,
@@ -368,7 +376,7 @@ reasons/quote form → testimonials → newsletter → blog → footer.
       buttons — solid blue "Get a Quote" + outlined "Our Portfolio";
       right: dashboard mockup carousel (3 slides, inactive dimmed)
 - [ ] Gradient banner: `linear-gradient(135deg, #2f89fc 0%, #55fbc2
-    100%)`, white 20px "We Provide High Quality Services"
+  100%)`, white 20px "We Provide High Quality Services"
 - [ ] Services: centered h2 30px + subheading; 3 icon cards (blue icon
       circle, h3, blurb): Market Research / Business Strategy / Audience
       Analytics
