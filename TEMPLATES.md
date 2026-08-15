@@ -509,7 +509,7 @@
 - [x] **The Barber** — [colorlib](https://colorlib.com/wp/template/the-barber/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thebarber-free-template.jpg) · [amber](https://amber.free.componentdock.com)
 - [x] **The Charity** — [colorlib](https://colorlib.com/wp/template/the-charity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thecharity-free-template.jpg) · [amity](https://amity.free.componentdock.com)
 - [x] **The Conference** — [colorlib](https://colorlib.com/wp/template/the-conference/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theconference-free-template.jpg) · [colloquy](https://colloquy.free.componentdock.com)
-- [~] **The Quest** — [colorlib](https://colorlib.com/wp/template/the-quest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thequest-free-template.jpg)
+- [x] **The Quest** — [colorlib](https://colorlib.com/wp/template/the-quest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thequest-free-template.jpg) · [guild](https://guild.free.componentdock.com)
 - [ ] **Theplaza** — [colorlib](https://colorlib.com/wp/template/theplaza/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theplaza-free-template.jpg)
 - [ ] **Timezone** — [colorlib](https://colorlib.com/wp/template/timezone/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/timezone-free-template.jpg)
 - [ ] **Topgym** — [colorlib](https://colorlib.com/wp/template/topgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/topgym-free-template.jpg)
@@ -1818,7 +1818,7 @@
 - [x] **Endgam** — [colorlib](https://colorlib.com/wp/template/endgam/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/endgam-free-template.jpg) · [pixelpress](https://pixelpress.free.componentdock.com)
 - [ ] **Game Warrior** — [colorlib](https://colorlib.com/wp/template/game-warrior/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gamewarrior-free-template.jpg)
 - [x] **Knights** — [colorlib](https://colorlib.com/wp/template/knights/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/knights-free-template.jpg) · [kickoff](https://kickoff.free.componentdock.com)
-- [~] **The Quest** — [colorlib](https://colorlib.com/wp/template/the-quest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thequest-free-template.jpg)
+- [x] **The Quest** — [colorlib](https://colorlib.com/wp/template/the-quest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thequest-free-template.jpg) · [guild](https://guild.free.componentdock.com)
 
 ## Health Fitness (72)
 
