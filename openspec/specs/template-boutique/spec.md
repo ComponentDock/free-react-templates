@@ -282,7 +282,7 @@ reserved | This template is made with ♥ by **Component Dock**" where
       → featured promos → product grid → blog → footer-top → copyright bar
 - [ ] Tokens in `src/index.css` `@theme`: `--color-brand: #b09d81`,
       `--color-ink: #414141`, `--color-muted: #909090`, `--color-surface:
-    #ebebeb`, `--color-blog: #f2f4f9`, `--color-footer: #282828`,
+  #ebebeb`, `--color-blog: #f2f4f9`, `--color-footer: #282828`,
       `--color-footerbar: #222222`, `--color-paper: #ffffff`; Google Fonts
       `<link>` in `index.html`: Raleway (400/500/600/700)
 - [ ] Header: absolute over hero, logo + nav (HOME / WOMAN / MAN / LOOKBOOK
@@ -308,6 +308,17 @@ reserved | This template is made with ♥ by **Component Dock**" where
       subject-screened (hero, 5 intro, 2 featured, 8 grid, 3 blog);
       icons from `lucide-react` (ShoppingBag, Search, Menu, Eye, Heart,
       ArrowRight)
+- [ ] PINNED screened seeds (browser-verified): hero slide 1
+      `seed/boutique-hero7` (woman overlooking golden-hour cityscape, top
+      2/3 negative space), slide 2 `seed/boutique5` (beach walker); intro
+      `boutique11` (shoe close-up) / `boutique-blog8` (blue-wall flat-lay) /
+      `boutique-blog10` (table still-life, NEW) / `boutique-hero3` (white
+      wall) / `boutique-hero4` (green fabric); featured `boutique-feat8`
+      (editorial man-in-truck) / `boutique-hero10` (city-night bokeh);
+      grid `boutique-hero5` / `boutique2` / `boutique20` / `boutique17` /
+      `boutique-blog9` / `boutique5` / `boutique-hero1` / `boutique-blog6`;
+      blog `boutique-blog4` / `boutique4` / `boutique9` (all 4:5 at 640×800,
+      blog 3:2 at 640×420, hero 16:10 at 1600×1000)
 - [ ] PR description: source template, preview URL
       (`preview.colorlib.com/theme/theplaza/`), design tokens, diffs (name,
       placeholder images, React sliders instead of owl-carousel, React filter
