@@ -111,11 +111,13 @@ stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
     subscription), 90px (services), 60px (footer); footer margin-bottom 90px.
   - About photo frame: outline 10px solid #777, outline-offset -54px, border
     15px 10px 85px 85px transparent (asymmetric polaroid frame).
-- **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/pixora-<n>/<w>/<h>`): hero bg + about photo +
-  3 service images (screen seeds per the seed-screening method — hero needs a
-  dark-ish subject with room for the gradient overlay; about needs a
-  warm/portrait subject); the gradient overlay keeps text readable; icons →
+- **Recreation decisions:** photos → picsum placeholders (pinned IDs,
+  screened per the seed-screening method: hero `id/823` woman with film
+  camera — the 0.9-opacity gradient overlay keeps centered white text
+  readable over any subject; about `id/64` warm golden-hour portrait inside
+  the polaroid frame; services `id/996` backlit woman ("light"), `id/1027`
+  elegant portrait ("personal photographer"), `id/838` two people ("friends
+  & family")); icons →
   lucide-react (Sun for the about icon, ArrowRight for View Details, Menu/X
   for the hamburger) + inline SVG brand icons for the footer social row
   (lucide removed brand icons: facebook/twitter/dribbble/behance); Poppins via

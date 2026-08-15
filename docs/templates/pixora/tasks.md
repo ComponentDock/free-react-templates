@@ -26,8 +26,7 @@
   Elements — demo pages; recreation uses single-page anchors Home / About /
   Contact) + hamburger right. Hero (540px): bg photo `img/banner-bg.jpg` +
   gradient overlay `hero-overlay-bg`; centered h1 uppercase white
-  "<span>Brand</span> <br> What else do you need?" (36px weight 100, span
-  600) + white paragraph. About (white): left polaroid photo (outline 10px
+  "<span>Brand</span> <br> What else do you need?" (36px weight 100, span 600) + white paragraph. About (white): left polaroid photo (outline 10px
   #777 offset -54px + border 15px 10px 85px 85px transparent); right sun
   icon + h1 "Visually clean & Perfect" (36px 100 #a387ff, span 600 #000) +
   blurb + "Learn Details" uppercase link. Features (GRADIENT bg): 6 white
@@ -51,7 +50,7 @@
 
 - [ ] Scaffold `apps/pixora` (copy the simplest existing app; keep
       `injectUiSource()` + `plugins: [react(), injectUiSource(),
-      tailwindcss()]` in vite.config.ts; rename package
+    tailwindcss()]` in vite.config.ts; rename package
       `@free-react-templates/pixora`; homepage `https://pixora.free.componentdock.com`;
       public/CNAME `pixora.free.componentdock.com`; jsdom 30 localStorage
       polyfill only if persistence is used — newsletter uses component state,
@@ -76,10 +75,11 @@
 - [ ] Tests (colocated *.test.tsx) for every component + App composition;
       newsletter submit → success; mobile menu open/close/Escape; 100%
       coverage
-- [ ] Screen picsum seeds (hero bg + about + 3 services) — subject
-      screening per the seed-screening method
+- [ ] Picsum seeds pinned (screened via pixel metric + browser_vision):
+      hero `id/823` (woman with film camera), about `id/64` (golden-hour
+      portrait), services `id/996` (backlit), `id/1027` (portrait),
+      `id/838` (two people)
 - [ ] `scripts/verify-app.sh pixora` green + `npm run spec:validate` green
-- [ ] PR "feat: Pixora — Creative landing page template (ColorLib Yaseen)"
-      + immediate squash merge
+- [ ] PR "feat: Pixora — Creative landing page template (ColorLib Yaseen)" + immediate squash merge
 - [ ] Bookkeeping on main: TEMPLATES.md `[x]` on ALL FOUR rows + surge URL,
       homepage, `npm run readme:status`, push

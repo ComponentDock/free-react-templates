@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pixora brand palette — recreated from the original creative landing
+     design (main.css): soft blue→purple gradient #91d1ff→#a387ff (hero
+     overlay, feature + newsletter bands, button hover fill), brand purple
+     #a387ff (icons, fact captions, numbered counts, link hovers), ink
+     #222222 headings/nav, body #777777, light section bg #f9faff, input
+     bg #f9f9ff. */
+  --color-brand: #a387ff;
+  --color-brand-light: #91d1ff;
+
+  /* Ink — dark text/headings (#222222 from the original). */
+  --color-ink: #222222;
+
+  /* Muted — secondary text (#777777 from the original). */
+  --color-muted: #777777;
+
+  /* Mist — light section background (#f9faff from the original). */
+  --color-mist: #f9faff;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand purple. */
+  --color-primary-50: #f6f3ff;
+  --color-primary-100: #ede7ff;
+  --color-primary-200: #d8ccff;
+  --color-primary-300: #bfacff;
+  --color-primary-400: #b09bff;
+  --color-primary-500: #a387ff;
+  --color-primary-600: #8f6df0;
+  --color-primary-700: #7c58d6;
+  --color-primary-800: #6848b5;
+  --color-primary-900: #553a94;
+
+  /* Original font: "Poppins" (100/300/400/500/600). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
