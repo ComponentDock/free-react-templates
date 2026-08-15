@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Vinyasa brand palette — recreated from the original fitness design
+     (main.css): brand blue #0093df (primary buttons, hero headline span,
+     footer phone, active testimonial dot), ink #222222 headings, muted
+     #777777 body text, light section bg #f9f9ff (schedule + testimonial
+     cards), black #000000 footer. Font: Roboto. Buttons are square
+     (no radius) with the source's -10px 10px 20px drop shadow. */
+  --color-brand: #0093df;
+  --color-brand-dark: #0084c5;
+
+  /* Ink — headings (#222222 from the original). */
+  --color-ink: #222222;
+
+  /* Muted — secondary text (#777777 from the original). */
+  --color-muted: #777777;
+
+  /* Mist — light section background (#f9f9ff from the original). */
+  --color-mist: #f9f9ff;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand blue (600 = base, 700 = hover). */
+  --color-primary-50: #e8f6fe;
+  --color-primary-100: #c9eafe;
+  --color-primary-200: #92d5fd;
+  --color-primary-300: #5cc0fb;
+  --color-primary-400: #26abf9;
+  --color-primary-500: #0093df;
+  --color-primary-600: #0093df;
+  --color-primary-700: #0084c5;
+  --color-primary-800: #006fa3;
+  --color-primary-900: #005a82;
+
+  /* Original font: "Roboto" (100/300/400/500/700). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
