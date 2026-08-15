@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Spine brand palette — recreated from the original book-shop design
+     (style.css): vivid red #FF1616 (primary buttons, prices, active filter
+     tab, search icon, cart badge, social hover), pale pink #FEF4F4 section
+     band, near-black #1a1a1a headings, muted #9498A7 secondary text,
+     #454E6D footer/link text, #232F55 dark blue (footer h4, input text),
+     #EEE1E0 card borders, gold #FF5700 rating stars. Fonts: Playfair
+     Display (serif headings) + Roboto (body). Every button is a pill. */
+  --color-brand: #ff1616;
+  --color-brand-dark: #d60f0f;
+
+  /* Ink — headings (#1a1a1a from the original). */
+  --color-ink: #1a1a1a;
+
+  /* Muted — secondary text (#9498A7 from the original: authors, review
+     counts, placeholders, footer socials). */
+  --color-muted: #9498a7;
+
+  /* Secondary — #454E6D (footer links, inactive tab text). */
+  --color-secondary: #454e6d;
+
+  /* Dark blue — #232F55 (footer h4, subscribe input text). */
+  --color-darkblue: #232f55;
+
+  /* Edge — #EEE1E0 (card borders, underline). */
+  --color-edge: #eee1e0;
+
+  /* Section — pale pink #FEF4F4 (best-selling band, footer, subscribe
+     band). */
+  --color-section: #fef4f4;
+
+  /* Gold — #FF5700 (rating stars). */
+  --color-gold: #ff5700;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand red (600 = base, 700 = hover). */
+  --color-primary-50: #ffecec;
+  --color-primary-100: #ffd6d6;
+  --color-primary-200: #ffadad;
+  --color-primary-300: #ff8585;
+  --color-primary-400: #ff4d4d;
+  --color-primary-500: #ff1616;
+  --color-primary-600: #ff1616;
+  --color-primary-700: #d60f0f;
+  --color-primary-800: #ad0c0c;
+  --color-primary-900: #850a0a;
+
+  /* Original fonts: Playfair Display (headings) + Roboto (body). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
