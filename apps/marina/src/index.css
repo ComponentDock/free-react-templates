@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette — #1089ff nautical blue drives the navbar, buttons,
+     feature icons, team roles, price chips, active slider dash and the
+     rgba(16,137,255,0.8) overlay of the parallax bands; #f8f9fa is the
+     Bootstrap-style light section background; #efefef the feature icon
+     circle fill. */
+  --color-brand: #1089ff;
+  --color-light: #f8f9fa;
+  --color-icon-circle: #efefef;
+  --color-ink: #000000;
+  --color-body: #6c757d;
+  --color-foot: #6c757d;
+  --color-overlay: rgba(16, 137, 255, 0.8);
+
+  /* Oswald (headings/buttons/navbar), Dancing Script (accent), Muli
+     (body) — loaded via Google Fonts in index.html, matching the
+     original template's type pairing. */
+  --font-heading: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Dancing Script', ui-serif, Georgia, serif;
+  --font-body: 'Muli', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
