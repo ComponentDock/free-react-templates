@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Bolt brand palette — recreated from the original gym design
+     (style.css): neon yellow #fcff18 brand (active nav, hero highlight,
+     discount span, milestone chips, section-title highlight, icon hover,
+     site-btn fill, address block, newsletter span), #242424 dark
+     (BMI calculator panel, sb-dark buttons, dark text on yellow),
+     #353535 text-on-yellow, #f6f9fa light section background,
+     #b5babc footer body text, #d1d1d1 social links, #505050 input text. */
+  --color-brand: #fcff18;
+  --color-brand-dark: #e3e60f;
+
+  /* Ink — dark text/headings (#353535 / #242424 from the original). */
+  --color-ink: #353535;
+  --color-ink-dark: #242424;
+
+  /* Muted — footer/secondary text (#b5babc / #d1d1d1 from the original). */
+  --color-muted: #b5babc;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the neon yellow (text on it is #353535). */
+  --color-primary-50: #feffd9;
+  --color-primary-100: #fdffb3;
+  --color-primary-200: #fcff85;
+  --color-primary-300: #fcff58;
+  --color-primary-400: #fcff2b;
+  --color-primary-500: #fcff18;
+  --color-primary-600: #e3e60f;
+  --color-primary-700: #b9bc08;
+  --color-primary-800: #8f9106;
+  --color-primary-900: #656704;
+
+  /* Original font: "PT Sans" (400/700). */
+  --font-sans: 'PT Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'PT Sans', ui-sans-serif, system-ui, sans-serif;
+}
