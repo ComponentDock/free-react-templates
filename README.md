@@ -103,7 +103,7 @@ TBD
 
 ## Templates
 
-**Status:** 413 / 1645 templates recreated · **1232 remaining**.
+**Status:** 414 / 1645 templates recreated · **1231 remaining**.
 
 > Updated automatically after every template merge
 > (`node scripts/update-readme-status.mjs`). Each row is an original React
@@ -137,6 +137,7 @@ TBD
 | 22  | **Arlo** ✅           | Arlo is a single-page portfolio landing template.                                          | Astro, Portfolio, Tailwind Css                                    | [arlo.free.componentdock.com](https://arlo.free.componentdock.com) · [Component Dock](https://componentdock.com/templates/arlo)                               |
 | 23  | **Artisan** ✅        | Artisan is a single-page personal-portfolio landing template.                              | Bootstrap, Personal                                               | [artisan.free.componentdock.com](https://artisan.free.componentdock.com) · [Component Dock](https://componentdock.com/templates/artisan)                      |
 | 24  | **Ascendly** ✅       | Ascendly is a single-page business/consulting landing template.                            | Bootstrap, Business, Portfolio                                    | [ascendly.free.componentdock.com](https://ascendly.free.componentdock.com) · [Component Dock](https://componentdock.com/templates/ascendly)                   |
+| 25  | **Ascent**            | Ascent is a single-page startup/agency landing template.                                   | Bootstrap, Landing Page, Startup                                  | [ascent.free.componentdock.com](https://ascent.free.componentdock.com) · [Component Dock](https://componentdock.com/templates/ascent)                         |
 | 25  | **Atelier** ✅        | Atelier is a single-page fashion e-commerce storefront template.                           | Bootstrap, Ecommerce, Fashion                                     | [atelier.free.componentdock.com](https://atelier.free.componentdock.com) · [Component Dock](https://componentdock.com/templates/atelier)                      |
 | 26  | **Atlas** ✅          | Atlas is a blog & magazine home-page template.                                             | Blog, Bootstrap, Magazine                                         | [atlas.free.componentdock.com](https://atlas.free.componentdock.com) · [Component Dock](https://componentdock.com/templates/atlas)                            |
 | 27  | **Atrium** ✅         | Atrium is a single-page architecture & interior design agency landing template.            | Architects, Business                                              | [atrium.free.componentdock.com](https://atrium.free.componentdock.com) · [Component Dock](https://componentdock.com/templates/atrium)                         |
