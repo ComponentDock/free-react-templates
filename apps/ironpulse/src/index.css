@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+/* Ironpulse brand palette — design tokens from the live preview reference:
+   brand blue #233EDE (every CTA, play button, feature icon circles, trainer
+   hover block, membership frame, subscribe button), dark #212122 (services
+   section, trainer button), ink #353535 (headings on light surfaces),
+   muted #7b7b7b (body text), line #E5E7F3 (upcoming-classes border),
+   search #073B4C (full-screen search overlay), strip #081624 (social strip
+   icon circles). Font: Roboto via Google Fonts <link> in index.html. */
+@theme {
+  --color-brand: #233ede;
+  --color-dark: #212122;
+  --color-ink: #353535;
+  --color-muted: #7b7b7b;
+  --color-line: #e5e7f3;
+  --color-search: #073b4c;
+  --color-strip: #081624;
+  --color-paper: #ffffff;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+}
