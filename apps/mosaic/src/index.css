@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette (recreated from the reference stylesheet): pink →
+     peach hero/newsletter gradient (#ee76ad → #efac78), light-blue
+     primary buttons (#78d5ef), azure counter band (#29bae4), cocoa
+     footer (#3c312e), paper light bands (#f8faff). */
+  --color-brand: #ee76ad;
+  --color-peach: #efac78;
+  --color-sky: #78d5ef;
+  --color-azure: #29bae4;
+  --color-ink: #404044;
+  --color-muted: #6c757d;
+  --color-paper: #f8faff;
+  --color-cocoa: #3c312e;
+  --color-green: #79efb4;
+
+  /* Tinted service-icon chip backgrounds. */
+  --color-blush: #fce7f1;
+  --color-cream: #fdf2ea;
+  --color-frost: #def4fb;
+  --color-mint: #ebfdf4;
+
+  /* Blue ramp so the shared ui Button/ButtonLink `primary` variants
+     resolve to the reference primary button blue #78d5ef. */
+  --color-primary-50: #f5fbfe;
+  --color-primary-100: #e9f7fc;
+  --color-primary-200: #d3eef9;
+  --color-primary-300: #a9e1f4;
+  --color-primary-400: #8ad7f0;
+  --color-primary-500: #78d5ef;
+  --color-primary-600: #5fb8d8;
+  --color-primary-700: #4a9cbd;
+  --color-primary-800: #3d80a0;
+  --color-primary-900: #326983;
+
+  /* Original typeface: Work Sans (light weights for large headings). */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
