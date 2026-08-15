@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Wayfarer brand palette — design tokens from the live preview reference:
+   teal #1EC6B6 (Explore Now button, price pills, destination place pills,
+   video play circle, nav hover), coral red #FF4A52 (Search / More Places /
+   Subscribe buttons, phone icon, hover states), navy #040E27 (search strip,
+   footer, overlays, headings), soft #F7FAFD (light section surfaces),
+   muted #7A838B (subtitles, card meta), star gold #FDAE5C (ratings),
+   field-line #363E52 + placeholder #AAB1B7 (search-strip form chrome),
+   swiper accent #ff5e13 (slider arrows/dots hover + active, focus border).
+   Fonts: Rubik (body/headings) + "Nothing You Could Do" (cursive hero and
+   video headlines) via Google Fonts <link>s in index.html. */
+@theme {
+  --color-teal: #1ec6b6;
+  --color-coral: #ff4a52;
+  --color-navy: #040e27;
+  --color-soft: #f7fafd;
+  --color-muted: #7a838b;
+  --color-star: #fdae5c;
+  --color-field-line: #363e52;
+  --color-placeholder: #aab1b7;
+  --color-swiper-accent: #ff5e13;
+
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+  --font-cursive: 'Nothing You Could Do', ui-serif, cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-navy antialiased;
+  }
+}
