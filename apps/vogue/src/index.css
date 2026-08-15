@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette — editorial fashion store (grey-blue accent on near-black). */
+  --color-brand: #1e1e1e;
+  --color-accent: #b0bcc2;
+  --color-sale: #fe439f;
+  --color-lightgrey: #d0d7db;
+  --color-secondary: #727272;
+  --color-secondary-2: #787878;
+  --color-secondary-3: #838383;
+  --color-caption: #5b5b5b;
+  --color-dot: #969d9e;
+  --color-footer: #262626;
+  --color-social: #222121;
+
+  /* Montserrat (body + UI) + Jost (geometric display captions) via Google Fonts. */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Jost', 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
