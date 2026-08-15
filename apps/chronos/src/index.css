@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand mint green — the signature band color of this date-widget card. */
+  --color-brand: #52de97;
+  /* Pale blue-grey page background. */
+  --color-page: #f8f9fd;
+
+  /* Lato (100-900) loaded via Google Fonts in index.html — the thin
+     weights (100/200) carry the large date numeral. */
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
