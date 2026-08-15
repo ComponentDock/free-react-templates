@@ -507,7 +507,7 @@
 - [x] **Sunshine** — [colorlib](https://colorlib.com/wp/template/sunshine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sunshine-free-template.jpg) · [knot](https://knot.free.componentdock.com)
 - [x] **Tangre** — [colorlib](https://colorlib.com/wp/template/tangre/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tangre-free-template.jpg) · [wainscot](https://wainscot.free.componentdock.com)
 - [x] **The Barber** — [colorlib](https://colorlib.com/wp/template/the-barber/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thebarber-free-template.jpg) · [amber](https://amber.free.componentdock.com)
-- [ ] **The Charity** — [colorlib](https://colorlib.com/wp/template/the-charity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thecharity-free-template.jpg)
+- [~] **The Charity** — [colorlib](https://colorlib.com/wp/template/the-charity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thecharity-free-template.jpg)
 - [ ] **The Conference** — [colorlib](https://colorlib.com/wp/template/the-conference/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theconference-free-template.jpg)
 - [ ] **The Quest** — [colorlib](https://colorlib.com/wp/template/the-quest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thequest-free-template.jpg)
 - [ ] **Theplaza** — [colorlib](https://colorlib.com/wp/template/theplaza/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theplaza-free-template.jpg)
