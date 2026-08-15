@@ -498,7 +498,7 @@
 - [x] **Slim2** — [colorlib](https://colorlib.com/wp/template/slim2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/slim2-free-template.jpg) · [Shred](https://shred.free.componentdock.com)
 - [x] **Snapshot** — [colorlib](https://colorlib.com/wp/template/snapshot/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/snapshot-free-template.jpg) · [focus](https://focus.free.componentdock.com)
 - [x] **Snipp** — [colorlib](https://colorlib.com/wp/template/snipp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/snipp-free-template.jpg) · [mosaic](https://mosaic.free.componentdock.com)
-- [~] **Solmusic** — [colorlib](https://colorlib.com/wp/template/solmusic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solmusic-free-template.jpg)
+- [x] **Solmusic** — [colorlib](https://colorlib.com/wp/template/solmusic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solmusic-free-template.jpg) · [sonata](https://sonata.free.componentdock.com)
 - [ ] **Stamina** — [colorlib](https://colorlib.com/wp/template/stamina/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stamina-free-template.jpg)
 - [ ] **Startup 2** — [colorlib](https://colorlib.com/wp/template/startup-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/startup2-free-template.jpg)
 - [x] **Stories** — [colorlib](https://colorlib.com/wp/template/stories/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stories-free-template.jpg) · [fable](https://fable.free.componentdock.com)
@@ -2083,7 +2083,7 @@
 - [ ] **Selling** — [colorlib](https://colorlib.com/wp/template/selling/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/selling-free-template.jpg)
 - [x] **Sierra** — [colorlib](https://colorlib.com/wp/template/sierra/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sierra-free-template.jpg) · [violet](https://violet.free.componentdock.com)
 - [x] **Snipp** — [colorlib](https://colorlib.com/wp/template/snipp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/snipp-free-template.jpg) · [mosaic](https://mosaic.free.componentdock.com)
-- [ ] **Solmusic** — [colorlib](https://colorlib.com/wp/template/solmusic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solmusic-free-template.jpg)
+- [x] **Solmusic** — [colorlib](https://colorlib.com/wp/template/solmusic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solmusic-free-template.jpg) · [sonata](https://sonata.free.componentdock.com)
 - [ ] **Sportify** — [colorlib](https://colorlib.com/wp/template/sportify/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sportify-free-template.jpg)
 - [ ] **Startup** — [colorlib](https://colorlib.com/wp/template/startup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/startup-free-template.jpg)
 - [ ] **Startup 2** — [colorlib](https://colorlib.com/wp/template/startup-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/startup2-free-template.jpg)
@@ -2276,7 +2276,7 @@
 - [x] **Podcast** — [colorlib](https://colorlib.com/wp/template/podcast/) · [wavecast](https://wavecast.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/podcast-free-template.jpg)
 - [x] **Radios** — [colorlib](https://colorlib.com/wp/template/radios/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/radios-free-template.jpg) · [wavelength](https://wavelength.free.componentdock.com)
 - [ ] **Razo** — [colorlib](https://colorlib.com/wp/template/razo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/razo-free-template.jpg)
-- [ ] **Solmusic** — [colorlib](https://colorlib.com/wp/template/solmusic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solmusic-free-template.jpg)
+- [x] **Solmusic** — [colorlib](https://colorlib.com/wp/template/solmusic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solmusic-free-template.jpg) · [sonata](https://sonata.free.componentdock.com)
 
 ## One Page (91)
 
