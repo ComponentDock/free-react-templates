@@ -23,14 +23,14 @@ const hero = (n: number) => `https://picsum.photos/seed/depot-hero-${n}/1920/108
 
 export const heroSlides: HeroSlide[] = [
   {
-    image: hero(1),
+    image: 'https://picsum.photos/seed/depot-property-4/1920/1080',
     headline: 'Buy & Sell Property Here',
     paragraph:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident vitae, aut inventore repellendus. Iusto, assumenda!',
     cta: 'Get Started',
   },
   {
-    image: hero(2),
+    image: hero(6),
     headline: 'Find Your Perfect Property For Your Home',
     paragraph:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quam doloribus reprehenderit dolore adipisci rerum?',
@@ -47,7 +47,7 @@ export interface Property {
 
 const property = (n: number) => `https://picsum.photos/seed/depot-property-${n}/800/600`
 
-export const properties: Property[] = [1, 2, 3, 4, 5, 6].map((n) => ({
+export const properties: Property[] = [6, 10, 11, 12, 9, 1].map((n) => ({
   title: 'HD17 19 Utica Ave.',
   location: 'New York - USA',
   price: '$20,000,000',
@@ -64,8 +64,8 @@ const agent = (n: number) => `https://picsum.photos/seed/depot-agent-${n}/400/40
 
 export const agents: Agent[] = [
   { name: 'Allison Holmes', role: 'Real Estate Agent', image: agent(1) },
-  { name: 'Dave Simpson', role: 'Real Estate Agent', image: agent(2) },
-  { name: 'Ben Thompson', role: 'Real Estate Agent', image: agent(3) },
+  { name: 'Dave Simpson', role: 'Real Estate Agent', image: agent(9) },
+  { name: 'Ben Thompson', role: 'Real Estate Agent', image: agent(36) },
 ]
 
 export interface Step {
@@ -165,14 +165,14 @@ export const testimonials: Testimonial[] = [
     role: 'Customer',
     quote:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum.',
-    image: testimonial(2),
+    image: testimonial(15),
   },
   {
     name: 'Nestor Helsin',
     role: 'Customer',
     quote:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum.',
-    image: testimonial(3),
+    image: testimonial(12),
   },
 ]
 
@@ -185,7 +185,7 @@ export interface NewsItem {
 
 const news = (n: number) => `https://picsum.photos/seed/depot-news-${n}/800/500`
 
-export const newsItems: NewsItem[] = [1, 2, 3].map((n) => ({
+export const newsItems: NewsItem[] = [2, 4, 26].map((n) => ({
   image: news(n),
   meta: 'Allison Holmes • Jan 18, 2019 • News',
   title: 'Popular Real Estate Properties for 2019',

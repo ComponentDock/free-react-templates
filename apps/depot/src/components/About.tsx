@@ -6,7 +6,7 @@ export function About() {
     <section id="about-section" aria-label="About" className="py-24">
       <div className="mx-auto grid max-w-[1170px] items-center gap-12 px-4 md:grid-cols-2">
         <img
-          src="https://picsum.photos/seed/depot-about/800/600"
+          src="https://picsum.photos/seed/depot-about-3/800/600"
           alt="Modern property building"
           loading="lazy"
           className="w-full object-cover"
