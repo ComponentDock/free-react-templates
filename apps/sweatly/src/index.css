@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Sweatly brand palette — recreated from the original gym design
+     (style.css): raspberry #c83660 brand (active nav, section headings,
+     feature icons, day-tab active, primary buttons, form focus border,
+     logo dot), supporting #8bc34a success green, #25262a dark text,
+     #989898 card body, #aeaeae class meta, #ababab subheading,
+     #eee day-tab background, #f4f5f9 contact background. */
+  --color-brand: #c83660;
+  --color-brand-dark: #ad2d52;
+
+  /* Ink — dark text/headings (#000 / #25262a from the original). */
+  --color-ink: #25262a;
+  --color-ink-dark: #000;
+
+  /* Muted — secondary text (#989898 from the original). */
+  --color-muted: #989898;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the raspberry. */
+  --color-primary-50: #fdf2f5;
+  --color-primary-100: #fbe3e9;
+  --color-primary-200: #f6c3d1;
+  --color-primary-300: #ef98b0;
+  --color-primary-400: #e26487;
+  --color-primary-500: #c83660;
+  --color-primary-600: #ad2d52;
+  --color-primary-700: #8f2444;
+  --color-primary-800: #771f3a;
+  --color-primary-900: #661d34;
+
+  /* Original font: "Muli" (300/400/700/900). */
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Muli', ui-sans-serif, system-ui, sans-serif;
+}
