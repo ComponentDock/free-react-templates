@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+/* Wainscot brand palette — design tokens from the live preview reference:
+   brand blue #3face4 (header CTA, primary buttons, subscribe, accents),
+   ink #222222 (dark offer + footer sections, headings), body #777777
+   (paragraph text), surface #f9f9ff (projects section background).
+   Font: Poppins (body/nav/headings/buttons) via Google Fonts <link> in
+   index.html. */
+@theme {
+  --color-brand: #3face4;
+  --color-ink: #222222;
+  --color-body: #777777;
+  --color-surface: #f9f9ff;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-body antialiased;
+  }
+}
