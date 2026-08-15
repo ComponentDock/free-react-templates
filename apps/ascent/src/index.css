@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Ascent brand palette — design tokens extracted from the reference
+     template's live preview stylesheet (css/style.css):
+     - brand indigo #615CFD (CTAs, section labels, hover accents)
+     - dark ink #1F1F1F (dark about band, heading color)
+     - card border #E8E8E8 (service card outlines)
+     - muted gray #999999 (secondary text, team roles) */
+  --color-brand: #615cfd;
+  --color-brand-dark: #4a47d6;
+  --color-ink: #1f1f1f;
+  --color-line: #e8e8e8;
+  --color-muted: #999999;
+
+  /* Muli (body) + Roboto (headings, labels) via Google Fonts link in
+     index.html (original font files are NOT copied). */
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #999999;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+}
