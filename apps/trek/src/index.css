@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+/* Trek brand palette — design tokens from the live preview reference:
+   sand #efba6c (primary: price pills, buttons, subtitle labels, active nav
+   link, testimonial cards, CTA wash rgba(239,186,108,0.4), input focus
+   borders), body #364d59 (text, weight 300), ink #000 (headings + nav
+   links), ghost #efefef (5rem section backdrop words), soft #f6f5f5 (light
+   footer + section surfaces), meta #ccc (post meta), caption #888 (staff
+   captions). Font: Work Sans via Google Fonts <link> in index.html. */
+@theme {
+  --color-sand: #efba6c;
+  --color-body: #364d59;
+  --color-ink: #000000;
+  --color-ghost: #efefef;
+  --color-soft: #f6f5f5;
+  --color-meta: #ccc;
+  --color-caption: #888;
+
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-body antialiased;
+    font-weight: 300;
+  }
+}
