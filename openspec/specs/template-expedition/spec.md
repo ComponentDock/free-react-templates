@@ -1,5 +1,9 @@
 # Template: Expedition (Travel & Tourism)
 
+> **SUPERSEDED** — this spec duplicates ColorLib "Trips", which already
+> shipped as **Trek** (PR #454, https://trek.free.componentdock.com).
+> Do NOT implement — delete on next cleanup.
+
 ## Purpose
 
 Expedition is a single-page travel/trips landing template in the
