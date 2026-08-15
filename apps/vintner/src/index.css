@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette — deep wine-purple editorial shop (accent on nav,
+     prices, active dots); gold for star ratings; ink for text. */
+  --color-brand: #930077;
+  --color-gold: #ffbd39;
+  --color-ink: #25262a;
+  --color-mist: #f4f5f9;
+  --color-panel: #f3f4f5;
+  --color-muted: #cccccc;
+
+  /* Cinzel (headings/nav/logo) + Montserrat (body) via Google Fonts. */
+  --font-serif: 'Cinzel', ui-serif, Georgia, serif;
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
