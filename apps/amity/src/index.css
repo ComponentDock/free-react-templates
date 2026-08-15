@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette — vibrant orange accent of the charity design. */
+  --color-brand: #ff5a00;
+  --color-brand-dark: #ff3600;
+  --color-topbar: #ff4800;
+  /* Charcoal chip behind the header "Donate Now" button. */
+  --color-charcoal: #262222;
+  --color-ink: #262626;
+  --color-body: #929191;
+  --color-muted: #595858;
+  --color-soft: #b7b7b7;
+  --color-light: #ecf2f5;
+  --color-panel: #edf3f5;
+  --color-track: #d6dee1;
+  --color-dark: #131212;
+
+  /* Montserrat (300-700) loaded via Google Fonts in index.html. */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
