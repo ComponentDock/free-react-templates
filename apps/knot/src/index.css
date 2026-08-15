@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* Knot brand palette — design tokens from the live preview reference:
+   brand copper #C78665 (hero badge, countdown digits, section headings,
+   buttons, nav underlines, link hovers), gold #F2C64D (badge outer ring),
+   hover blush #FAF0F0 (button hover background), body text #727272,
+   ink #1F1F1F (footer links), cream #FFFAF2 (timeline box + footer),
+   placeholder #919191, input line #ddd. Fonts: Muli (body/nav/headings) +
+   Petit Formal Script (cursive accents) via Google Fonts <link> in
+   index.html. */
+@theme {
+  --color-brand: #c78665;
+  --color-brand-hover: #faf0f0;
+  --color-gold: #f2c64d;
+  --color-body: #727272;
+  --color-ink: #1f1f1f;
+  --color-cream: #fffaf2;
+  --color-placeholder: #919191;
+  --color-line: #ddd;
+
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Petit Formal Script', cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-body antialiased;
+  }
+}
