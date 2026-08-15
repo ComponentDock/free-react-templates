@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+/* Colloquy brand palette — design tokens from the live preview reference:
+   brand blue #4867c0 + light blue #329fec (blue-gradient buttons, nav active,
+   intro-card hover overlay, pricing top bar, mobile menu),
+   ink #4c4c4c (headings/body), meta #888888 (calendar meta),
+   card #f3f7f9 (intro cards), calendar #f0f2f6 (calendar section bg),
+   border #e9eef2 (nav top border), accent #ff8416 (pricing info badge),
+   footer #0c081d + footer-extra #050210 (dark footer + copyright bar).
+   Font: Raleway via Google Fonts <link> in index.html. */
+@theme {
+  --color-brand: #4867c0;
+  --color-brand-light: #329fec;
+  --color-ink: #4c4c4c;
+  --color-meta: #888888;
+  --color-card: #f3f7f9;
+  --color-calendar: #f0f2f6;
+  --color-border: #e9eef2;
+  --color-accent: #ff8416;
+  --color-footer: #0c081d;
+  --color-footer-extra: #050210;
+
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+}
