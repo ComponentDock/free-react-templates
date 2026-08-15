@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+/* Vendio brand palette — design tokens from the live preview reference:
+   ink #1b1b1b (logo, headings, button borders, HOT badge), accent red
+   #e95a5a (active slider dot, title hover, SALE badge), muted grays
+   #767676 (nav/footer text) and #6c6a74 (prices, NEW badge), #787878
+   (newsletter underline), #e3e3e3 (newsletter top border). Font: Poppins via
+   Google Fonts <link> in index.html. */
+@theme {
+  --color-brand: #1b1b1b;
+  --color-accent: #e95a5a;
+  --color-ink: #1b1b1b;
+  --color-muted: #767676;
+  --color-price: #6c6a74;
+  --color-line: #787878;
+  --color-faint: #e3e3e3;
+
+  /* Poppins 300–900 via Google Fonts <link> in index.html (the original
+     bundles its own font files; DO NOT copy them). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+}
