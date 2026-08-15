@@ -526,7 +526,7 @@
 - [x] **Vineyard** — [colorlib](https://colorlib.com/wp/template/vineyard/) · [parish](https://parish.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vineyard-free-template.jpg)
 - [x] **Violet** — [colorlib](https://colorlib.com/wp/template/violet/) · [vogue](https://vogue.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/violet-free-template.jpg)
 - [x] **Warehouse** — [colorlib](https://colorlib.com/wp/template/warehouse/) · [depot](https://depot.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/warehouse-free-template.jpg)
-- [~] **Waterboat** — [colorlib](https://colorlib.com/wp/template/waterboat/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/waterboat-free-template.jpg)
+- [x] **Waterboat** — [colorlib](https://colorlib.com/wp/template/waterboat/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/waterboat-free-template.jpg) · [marina](https://marina.free.componentdock.com)
 - [ ] **Webhost** — [colorlib](https://colorlib.com/wp/template/webhost/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webhost-free-template-1.jpg)
 - [x] **Wellspa** — [colorlib](https://colorlib.com/wp/template/wellspa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wellspa-free-template.jpg) · [halcyon](https://halcyon.free.componentdock.com)
 - [ ] **Wemeet** — [colorlib](https://colorlib.com/wp/template/wemeet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wemeet-free-template.jpg)
@@ -1222,7 +1222,7 @@
 - [ ] **Virtualassistant** — [colorlib](https://colorlib.com/wp/template/virtualassistant/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/virtualassistant-free-template.jpg)
 - [x] **Warehouse** — [colorlib](https://colorlib.com/wp/template/warehouse/) · [depot](https://depot.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/warehouse-free-template.jpg)
 - [ ] **Watch** — [colorlib](https://colorlib.com/wp/template/watch/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/watch-free-template.jpg)
-- [~] **Waterboat** — [colorlib](https://colorlib.com/wp/template/waterboat/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/waterboat-free-template.jpg)
+- [x] **Waterboat** — [colorlib](https://colorlib.com/wp/template/waterboat/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/waterboat-free-template.jpg) · [marina](https://marina.free.componentdock.com)
 - [x] **Wellspa** — [colorlib](https://colorlib.com/wp/template/wellspa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wellspa-free-template.jpg) · [halcyon](https://halcyon.free.componentdock.com)
 - [ ] **Whisper** — [colorlib](https://colorlib.com/wp/template/whisper/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/whisper-free-template.jpg)
 - [ ] **Whitespace** — [colorlib](https://colorlib.com/wp/template/whitespace/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/whitespace-free-template.jpg)
@@ -3014,7 +3014,7 @@
 - [ ] **Villa** — [colorlib](https://colorlib.com/wp/template/villa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/villa-free-template.jpg)
 - [ ] **Voyage** — [colorlib](https://colorlib.com/wp/template/voyage/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/voyage-free-template.jpeg)
 - [x] **Wanderlust** — [colorlib](https://colorlib.com/wp/template/wanderlust/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wanderlust-template-1770211435145.jpg) · [roamly](https://roamly.free.componentdock.com)
-- [~] **Waterboat** — [colorlib](https://colorlib.com/wp/template/waterboat/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/waterboat-free-template.jpg)
+- [x] **Waterboat** — [colorlib](https://colorlib.com/wp/template/waterboat/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/waterboat-free-template.jpg) · [marina](https://marina.free.componentdock.com)
 
 ## Ui Kit (8)
 
