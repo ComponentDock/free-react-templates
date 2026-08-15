@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Sonata brand palette — design tokens extracted from the reference
+     template's live preview stylesheet (css/style.css):
+     - hot pink #fc0254 (primary accent: pill CTAs, hero headline span,
+       how-section icon circles, "Create an account" link, sub-headline,
+       check icons)
+     - deep navy #0a183d (hero, how, subscription, footer backgrounds)
+     - darker navy #08192d (header bar)
+     - panel navy #1c294a (subscription perk panel, mobile menu)
+     - indigo #383b70 (secondary "Start free trial" pill)
+     - muted slate #6a7080 (footer links, social icons, secondary body text)
+     - body text on dark sections: white at 60% opacity */
+  --color-brand: #fc0254;
+  --color-brand-dark: #e0024b;
+  --color-navy: #0a183d;
+  --color-navy-dark: #08192d;
+  --color-navy-2: #1c294a;
+  --color-indigo-2: #383b70;
+  --color-muted: #6a7080;
+
+  /* Montserrat (body + headings) via Google Fonts link in index.html
+     (original font files are NOT copied). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #6a7080;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+}
