@@ -522,7 +522,7 @@
 - [x] **Ultim8** — [colorlib](https://colorlib.com/wp/template/ultim8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ultim8-free-template.jpg) · [prime](https://prime.free.componentdock.com)
 - [x] **Unapp** — [colorlib](https://colorlib.com/wp/template/unapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unapp-free-template.jpg) · [blueprint](https://blueprint.free.componentdock.com)
 - [ ] **Uptown** — [colorlib](https://colorlib.com/wp/template/uptown/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/uptown-free-template.jpg)
-- [~] **Uza** — [colorlib](https://colorlib.com/wp/template/uza/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/uza-free-template.jpg)
+- [x] **Uza** — [colorlib](https://colorlib.com/wp/template/uza/) · [amplify](https://amplify.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/uza-free-template.jpg)
 - [ ] **Vineyard** — [colorlib](https://colorlib.com/wp/template/vineyard/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vineyard-free-template.jpg)
 - [ ] **Violet** — [colorlib](https://colorlib.com/wp/template/violet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/violet-free-template.jpg)
 - [ ] **Warehouse** — [colorlib](https://colorlib.com/wp/template/warehouse/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/warehouse-free-template.jpg)
@@ -1213,7 +1213,7 @@
 - [ ] **Unbrew** — [colorlib](https://colorlib.com/wp/template/unbrew/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unbrew-free-template.jpg)
 - [ ] **Unearth** — [colorlib](https://colorlib.com/wp/template/unearth/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unearth-free-template.jpg)
 - [ ] **Uptown** — [colorlib](https://colorlib.com/wp/template/uptown/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/uptown-free-template.jpg)
-- [~] **Uza** — [colorlib](https://colorlib.com/wp/template/uza/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/uza-free-template.jpg)
+- [x] **Uza** — [colorlib](https://colorlib.com/wp/template/uza/) · [amplify](https://amplify.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/uza-free-template.jpg)
 - [ ] **Vacation** — [colorlib](https://colorlib.com/wp/template/vacation/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vacation-free-template.jpeg)
 - [ ] **Vegefoods** — [colorlib](https://colorlib.com/wp/template/vegefoods/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vegefoods-free-template.jpg)
 - [ ] **Victor** — [colorlib](https://colorlib.com/wp/template/victor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/victor-free-template.jpg)
@@ -1393,7 +1393,7 @@
 - [ ] **Repair** — [colorlib](https://colorlib.com/wp/template/repair/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/repair-free-template-1.jpg)
 - [ ] **Security** — [colorlib](https://colorlib.com/wp/template/security/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/security-free-template.jpg)
 - [ ] **Unioncorp** — [colorlib](https://colorlib.com/wp/template/unioncorp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unioncorp-colorlib-template.jpg)
-- [~] **Uza** — [colorlib](https://colorlib.com/wp/template/uza/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/uza-free-template.jpg)
+- [x] **Uza** — [colorlib](https://colorlib.com/wp/template/uza/) · [amplify](https://amplify.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/uza-free-template.jpg)
 
 ## Contact Form (42)
 
