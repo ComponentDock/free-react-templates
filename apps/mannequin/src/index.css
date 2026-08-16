@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Mannequin brand palette — fashion e-commerce template recreation
+     (design-token notes for the recreated template):
+     brand periwinkle #717FE0 (hero Shop Now pill, product Add to cart
+     pill, newsletter Subscribe pill, icon + footer-link hover),
+     ink #222222 (topbar + footer surface, button hover fill),
+     ink-soft #333333 (hero labels, headings, banner names),
+     muted #888888 (filter buttons), fade #B2B2B2 (footer links),
+     body #666666 (default text), loadmore #E6E6E6 (Load More pill). */
+  --color-brand: #717fe0;
+  --color-ink: #222;
+  --color-ink-soft: #333;
+  --color-muted: #888;
+  --color-fade: #b2b2b2;
+  --color-body: #666;
+  --color-loadmore: #e6e6e6;
+
+  /* Playfair Display for editorial serif headlines, Poppins for
+     body/nav/labels, Montserrat for footer column headings. */
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-body antialiased;
+  }
+}
+
+@layer components {
+  /* Pill button — border-radius 23px, height 46px, Poppins Medium 15px
+     uppercase (primary pill: brand bg; hover fills ink black). */
+  .btn-pill-brand {
+    @apply inline-flex h-[46px] min-w-[161px] cursor-pointer items-center justify-center rounded-[23px] bg-brand px-7 text-[15px] font-medium uppercase tracking-wide text-white transition-colors duration-300 hover:bg-ink;
+  }
+
+  .btn-pill-light {
+    @apply inline-flex h-[46px] min-w-[161px] cursor-pointer items-center justify-center rounded-[23px] bg-loadmore px-7 text-[15px] font-medium uppercase tracking-wide text-ink transition-colors duration-300 hover:bg-ink hover:text-white;
+  }
+
+  /* Underline footer/quick links — 13px Poppins, hover periwinkle. */
+  .link-fade {
+    @apply text-[13px] text-fade transition-colors hover:text-brand;
+  }
+
+  /* Newsletter underline input (wrap-input1 style). */
+  .input-underline {
+    @apply h-[30px] w-full border-0 border-b border-[#e6e6e6] bg-transparent p-0 text-[14px] text-ink placeholder:text-muted focus:border-ink focus:outline-none focus:ring-0;
+  }
+}
