@@ -307,8 +307,9 @@ The system SHALL render the promotion dialog contents.
 
 ### Requirement: Form behavior
 
-There is NO form in the source. "Get the app" is a plain `<a role="button">`-
-style CTA in the source (`href="#"`) that does nothing on click.
+There is no form in the source. The system SHALL keep the "Get the app" CTA
+inert (a plain `<a href="#">` in the source that does nothing on click) — a
+client-side demo, matching the rest of the family.
 
 #### Scenario: Get the app link
 
