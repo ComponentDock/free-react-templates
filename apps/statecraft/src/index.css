@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Statecraft brand palette — consulting firm design recreation
+     (design-token notes for the recreated template):
+     brand yellow #F3D955 (hero highlight, services band bg, footer bg,
+     navbar CTA, outlined hero button, testimonial name, back-to-top),
+     coral #F15B43 (sparing accent), ink #1A1A1A (headings, footer link
+     borders), olive #36402B (body text, navbar CTA text), cream #EBE5D0
+     (about / why-choose / testimonials / blog surfaces, service cards),
+     sage #DADFD4 (hero subtext), forest #51643D (hero bg), overlay
+     #2E2200 at 0.5 (hero scrim). */
+  --color-brand: #f3d955;
+  --color-brand-soft: #f7e47c;
+  --color-accent: #f15b43;
+
+  --color-ink: #1a1a1a;
+  --color-olive: #36402b;
+  --color-cream: #ebe5d0;
+  --color-sage: #dadfd4;
+  --color-forest: #51643d;
+  --color-overlay: #2e2200;
+
+  /* Hind for body/nav, Shippori Mincho for serif labels + watermark */
+  --font-sans: 'Hind', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Shippori Mincho', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-olive antialiased;
+  }
+}
+
+@layer components {
+  /* Solid yellow square button (.btn style: bg #F3D955, radius 0,
+     tall padding 30px 35px, hover sweep orange) */
+  .btn-yellow-square {
+    @apply inline-block bg-brand px-9 py-[30px] text-base text-white transition-colors hover:bg-accent;
+  }
+
+  /* Outlined yellow square button (.border-btn style: 1px solid #F3D955,
+     color #F3D955, padding 16px 28px, height 65px, hover fills yellow) */
+  .btn-outline-brand {
+    @apply inline-block h-[65px] border border-brand px-7 py-4 text-lg font-semibold text-brand transition-colors hover:bg-brand hover:text-white;
+  }
+
+  /* Dark ink outline square button (.btn_2 style: 1px solid #1A1A1A,
+     color #1A1A1A, padding 12px 39px, hover fills ink) */
+  .btn-outline-ink {
+    @apply inline-block border border-ink px-10 py-3 text-base text-ink transition-colors hover:bg-ink hover:text-white;
+  }
+
+  /* Yellow navbar CTA (.header-btn2 style: bg #F3D955, color #36402B,
+     radius 0, padding 21px 27px, weight 600, 14px) */
+  .btn-header-cta {
+    @apply inline-block bg-brand px-7 py-[21px] text-sm font-semibold text-olive transition-colors hover:bg-brand-soft;
+  }
+
+  /* Giant script watermark (Shippori Mincho 220px, transparent fill with
+     faint white stroke) */
+  .watermark-serif {
+    font-family: var(--font-serif);
+    -webkit-text-stroke: 1px rgb(255 255 255 / 0.2);
+    -webkit-text-fill-color: transparent;
+  }
+}
