@@ -12,9 +12,16 @@ export function Hero() {
     <section
       id="home"
       className="relative bg-cover bg-center"
-      style={{ backgroundImage: "url('https://picsum.photos/id/60/1920/1080')" }}
+      style={{ backgroundImage: "url('https://picsum.photos/id/9/1920/1080')" }}
     >
-      <div className="mx-auto grid max-w-[1200px] items-center gap-12 px-[15px] pb-24 pt-40 lg:grid-cols-2 lg:pt-48">
+      {/* Soft white scrim on the text side so the navy headline stays
+          readable over the photo (the reference photo is a light pastel
+          office shot; picsum substitutes are unlit). */}
+      <div
+        className="absolute inset-0 bg-gradient-to-r from-white/85 via-white/40 to-transparent"
+        aria-hidden="true"
+      />
+      <div className="relative mx-auto grid max-w-[1200px] items-center gap-12 px-[15px] pb-24 pt-40 lg:grid-cols-2 lg:pt-48">
         <div>
           <span className="inline-block rounded-full border border-brand/20 bg-white px-[18px] py-[5px] text-sm text-brand">
             {hero.eyebrow}

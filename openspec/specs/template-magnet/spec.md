@@ -1,5 +1,12 @@
 # Template: Magnet (Digital Marketing / SEO Agency)
 
+> **SUPERSEDED** — this spec duplicates the ColorLib "Calvino" source
+> (https://colorlib.com/wp/template/calvino/), which shipped as
+> **Reachly** in PR #483 (merged 2026-08-16, live at
+> https://reachly.free.componentdock.com). All three TEMPLATES.md
+> Calvino rows are marked `[x]` with that URL. Do NOT implement —
+> delete this spec + `docs/templates/magnet/` on next cleanup.
+
 ## Purpose
 
 Magnet is a digital-marketing/SEO-agency landing page in the free-react-templates
