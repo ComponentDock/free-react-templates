@@ -573,7 +573,7 @@
 - [ ] **Directone** — [colorlib](https://colorlib.com/wp/template/directone/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/directone-free-template.jpg)
 - [ ] **Dusk** — [colorlib](https://colorlib.com/wp/template/dusk/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dusk-free-template.jpg)
 - [ ] **Easylo** — [colorlib](https://colorlib.com/wp/template/easylo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/easylo-colorlib-template.jpg)
-- [ ] **Echo** — [colorlib](https://colorlib.com/wp/template/echo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/echo-free-template.jpg)
+- [~] **Echo** — [colorlib](https://colorlib.com/wp/template/echo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/echo-free-template.jpg)
 - [ ] **Ecogreen** — [colorlib](https://colorlib.com/wp/template/ecogreen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ecogreen-colorlib-template.jpg)
 - [ ] **Eventotemplate** — [colorlib](https://colorlib.com/wp/template/eventotemplate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventotemplate-colorlib.jpg)
 - [ ] **Express** — [colorlib](https://colorlib.com/wp/template/express/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/express-free-template.jpg)
