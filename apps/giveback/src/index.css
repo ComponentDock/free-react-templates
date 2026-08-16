@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Giveback brand palette — design tokens from the reference stylesheet
+     (recreation of a charity foundation design): coral #F15B43 (primary
+     buttons, "Donate" CTAs, "Read More" links), teal/mint #65C9BB (hero CTA,
+     section label spans, hover states, blog date badges), orange #FF6F00
+     (button hover sweep fill), navy #263B5C (headings, sticky header,
+     footer), warm cream #FCF2EB (upcoming-program strip background),
+     #777 body copy. */
+  --color-brand: #f15b43;
+  --color-teal: #65c9bb;
+  --color-flame: #ff6f00;
+  --color-navy: #263b5c;
+  --color-cream: #fcf2eb;
+  --color-ink: #777;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the coral brand. */
+  --color-primary-50: #fef1ee;
+  --color-primary-100: #fddcd5;
+  --color-primary-200: #fbb3a6;
+  --color-primary-300: #f98a76;
+  --color-primary-400: #f76e56;
+  --color-primary-500: #f15b43;
+  --color-primary-600: #d84a33;
+  --color-primary-700: #b83a26;
+  --color-primary-800: #932c1c;
+  --color-primary-900: #6e1f13;
+
+  /* Original fonts: headings = 'Jost' (weights 300–900), body = 'Rubik'
+     (weights 400–900) — Google Fonts, loaded via <link> in index.html. */
+  --font-display: 'Jost', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+}
