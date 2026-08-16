@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Learnly brand palette — recreated from the original online-education
+     design (style.css + live computed styles): brand teal #1EB2A6 (buttons,
+     links, icons, ratings, prices, subheadings), dark teal #17867D (Get
+     Certificate), deep teal #188F85 (newsletter band), ink #111111 (bottom
+     bar, headings), footer #EEEEEE, light surface #F8F9FA (testimonials +
+     blog), muted #6C757D / #4D4D4D footer links, #DDD carousel dots.
+     Font: Roboto everywhere. Buttons/cards use a 4px radius. */
+  --color-brand: #1eb2a6;
+  --color-brand-dark: #17867d;
+  --color-brand-deep: #188f85;
+
+  /* Ink — headings and the footer bottom bar (#111111 from the original). */
+  --color-ink: #111111;
+
+  /* Muted — secondary text (#6c757d / #666 from the original). */
+  --color-muted: #6c757d;
+
+  /* Footer — light grey #EEEEEE (footer background). */
+  --color-footer: #eeeeee;
+
+  /* Surface — light grey #F8F9FA (testimonials + blog section bgs). */
+  --color-surface: #f8f9fa;
+
+  /* Edge — #DDD (inactive carousel dots, hairline borders). */
+  --color-edge: #dddddd;
+
+  /* Link — #4D4D4D (footer links). */
+  --color-link: #4d4d4d;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand teal (600 = base, 700 = hover). */
+  --color-primary-50: #e6f7f5;
+  --color-primary-100: #ccefec;
+  --color-primary-200: #99dfd9;
+  --color-primary-300: #66cfc6;
+  --color-primary-400: #33bfb3;
+  --color-primary-500: #1eb2a6;
+  --color-primary-600: #1eb2a6;
+  --color-primary-700: #17867d;
+  --color-primary-800: #12685f;
+  --color-primary-900: #0e4f48;
+
+  /* Original font: Roboto for body and headings. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
