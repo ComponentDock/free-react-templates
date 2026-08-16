@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Momentum brand palette — recreated from the original startup design
+     (style.css): purple #743ad5 → pink #d53a9d gradient (pill buttons,
+     pricing cards, hover fills, social hover), purple #743ad5 alone
+     (feature icons, dropdown hover, active testimonial dot), darks #000 /
+     #111 / #222 (countdown, pricing, team section, dark cards, subscribe
+     button), light grey #efefef (services, newsletter, social circles),
+     #ccc form underlines, body text #212529. Font: Jost (400/500/600/700)
+     for everything. Buttons are pills (radius 100px / 30px outline). */
+  --color-brand: #743ad5;
+  --color-brand-pink: #d53a9d;
+
+  /* Ink — body text (#212529 from the original). */
+  --color-ink: #212529;
+
+  /* Muted — secondary text (grey on light sections). */
+  --color-muted: #6c757d;
+
+  /* Dark — section backgrounds (#000 / #111 / #222 from the original). */
+  --color-dark: #000000;
+  --color-dark-soft: #111111;
+  --color-dark-card: #222222;
+
+  /* Light — #efefef (services + newsletter section backgrounds, social
+     circles). */
+  --color-light: #efefef;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand purple (600 = base, 700 = hover). */
+  --color-primary-50: #f1eafe;
+  --color-primary-100: #e2d3fc;
+  --color-primary-200: #c5a6f9;
+  --color-primary-300: #a87af5;
+  --color-primary-400: #8b4df2;
+  --color-primary-500: #743ad5;
+  --color-primary-600: #743ad5;
+  --color-primary-700: #5c2ea8;
+
+  /* Original font: Jost (400/500/600/700) for everything. */
+  --font-sans: 'Jost', ui-sans-serif, system-ui, sans-serif;
+}
