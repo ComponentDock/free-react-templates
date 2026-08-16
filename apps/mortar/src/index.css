@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Mortar brand palette — recreated from the ColorLib "Buildream"
+     construction theme (css/style.css + live preview):
+     brand amber #ffa62b (kickers, primary buttons, video play button,
+     "Most Popular" badge, newsletter band), dark charcoal #3d424a
+     (navbar, dark buttons, rotated about badge), footer #363b42,
+     light band #f8f9fa (trust + testimonials sections). Headings are
+     54px weight 500 with a 16px amber uppercase kicker above; buttons
+     are rectangular (radius 4px), solid amber or solid dark, hover
+     inverts to a transparent outline. Font: Poppins 300/400/700. */
+  --color-brand: #ffa62b;
+  --color-charcoal: #3d424a;
+  --color-footer: #363b42;
+  --color-mist: #f8f9fa;
+  --color-ink: #1a1a1a;
+
+  /* Poppins throughout (headings + body) via Google Fonts <link> in
+     index.html — matching the ColorLib font choice. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
