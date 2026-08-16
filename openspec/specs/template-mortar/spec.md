@@ -272,9 +272,8 @@ check/cross icons, and a "Get Quote" button.
   `$79K` (Home additions), Premium `$109K` (Full home builds, with a
   "Most Popular" amber pill badge), and Enterprise `$149K+` (Commercial
   projects)
-- **AND** each card SHALL list six features with amber check icons for
-  included features and muted cross icons for excluded ones
-- **AND** each card SHALL have a full-width "Get Quote" button
+- **AND** each card SHALL list six features (Basic: 4 included / 2 excluded; Standard: 5 included / 1 excluded; Premium and Enterprise: all included) with amber check icons for included features and muted cross icons for excluded ones
+- **AND** each card SHALL have a full-width CTA button: "Get Quote" on Basic, Standard, and Premium, "Contact Us" on Enterprise (matches the source DOM)
 
 ### Requirement: Testimonials carousel
 
