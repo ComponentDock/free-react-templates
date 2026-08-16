@@ -569,7 +569,7 @@
 - [x] **Cuisines** — [colorlib](https://colorlib.com/wp/template/cuisines/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cuisines-free-template.jpg) · [epicure](https://epicure.free.componentdock.com)
 - [x] **Dazko** — [colorlib](https://colorlib.com/wp/template/dazko/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dazko-free-template.jpg) · [kinesis](https://kinesis.free.componentdock.com)
 - [ ] **Decoffee** — [colorlib](https://colorlib.com/wp/template/decoffee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/decoffee-colorlib-template.jpg)
-- [ ] **Dental** — [colorlib](https://colorlib.com/wp/template/dental/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dental-colorlib-template.jpg)
+- [~] **Dental** — [colorlib](https://colorlib.com/wp/template/dental/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dental-colorlib-template.jpg)
 - [ ] **Directone** — [colorlib](https://colorlib.com/wp/template/directone/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/directone-free-template.jpg)
 - [ ] **Dusk** — [colorlib](https://colorlib.com/wp/template/dusk/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dusk-free-template.jpg)
 - [ ] **Easylo** — [colorlib](https://colorlib.com/wp/template/easylo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/easylo-colorlib-template.jpg)
@@ -1502,7 +1502,7 @@
 
 - [x] **Brightsmile** — [colorlib](https://colorlib.com/wp/template/brightsmile/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brightsmile-template-1771943701965.jpg) · [dentora](https://dentora.free.componentdock.com)
 - [ ] **Dentacare** — [colorlib](https://colorlib.com/wp/template/dentacare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentacare-free-template.jpg)
-- [ ] **Dental** — [colorlib](https://colorlib.com/wp/template/dental/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dental-colorlib-template.jpg)
+- [~] **Dental** — [colorlib](https://colorlib.com/wp/template/dental/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dental-colorlib-template.jpg)
 - [ ] **Dentamax** — [colorlib](https://colorlib.com/wp/template/dentamax/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentamax-free-template.jpg)
 - [ ] **Dente** — [colorlib](https://colorlib.com/wp/template/dente/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dente-free-template.jpg)
 - [ ] **Dentist** — [colorlib](https://colorlib.com/wp/template/dentist/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-free-template-1.jpg)
