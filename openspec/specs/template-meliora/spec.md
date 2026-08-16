@@ -344,3 +344,22 @@ and a document title.
       subject (see tasks.md verified picsum IDs).
 - [ ] Implementer gate: `scripts/verify-app.sh meliora` (typecheck + lint +
       100% coverage tests + build) and `npm run spec:validate`.
+
+## Implementation notes (impl, 2026-08-16)
+
+- Pinned picsum seeds (screened with the bright/blue pixel metric + browser
+  vision; person subjects verified): hero slides `id/1027`, `id/64`,
+  `id/996`; who-we-are `id/823`; counter band `id/453`; emergency band
+  `id/338`. Cause-card images use seeded `picsum.photos/seed/meliora-causeN`.
+- Deviations (documented): hero H1 grammar fixed ("Support a causes" →
+  "Support a cause you care about"); footer Services column paraphrased from
+  the source's pet-care base-template leftovers to charity-relevant items
+  (Fundraising / Volunteers / Donations / Events); counters render static
+  values (no count-up animation); carousel is an index-based window (3 of 4
+  causes) with prev/next arrows instead of owl.carousel.
+- Implemented: Header (rose top bar + sticky white nav + mobile menu),
+  HeroSlider (3 slides, left/right plum gradients, vertical dots, 6s
+  auto-advance), CausesCarousel (3-of-4 window, progress bars, arrows),
+  WhoWeAre, CounterBand, ServicesGrid (6 lucide icon cards), EmergencyBand,
+  JoinUs, Footer (4 columns + validated newsletter form + Component Dock
+  link). 35 tests, 100% coverage (lines/functions/branches/statements).
