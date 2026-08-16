@@ -1,0 +1,69 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Kinesis brand palette — high-contrast crossfit training studio
+     recreation (design-token notes for the recreated template):
+     brand red #e1193e (buttons, eyebrows, accents), hover blue #1425af,
+     stripe blue #1d2cb5 (diagonal striped bands), ink #030513 (footer,
+     overlays, class title bands), heading #011f39, light section
+     #f0f4f7, navy panel #0a113f, zebra #f4f6fc. */
+  --color-primary: #e1193e;
+  --color-blue: #1425af;
+  --color-stripe: #1d2cb5;
+  --color-ink: #030513;
+  --color-heading: #011f39;
+  --color-section: #f0f4f7;
+  --color-navy: #0a113f;
+  --color-zebra: #f4f6fc;
+
+  /* Roboto Condensed for display headings (uppercase, italic accents),
+     Open Sans for body copy. */
+  --font-display: 'Roboto Condensed', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-neutral-700 antialiased;
+  }
+}
+
+@layer components {
+  /* Square primary button — red, no radius, uppercase, soft shadow,
+     hover flips to blue (source .btn.btn-primary). */
+  .btn-square {
+    @apply inline-block bg-primary px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-white shadow-[0_24px_36px_-11px_rgba(0,0,0,0.09)] transition-colors hover:bg-blue;
+  }
+
+  /* Blue diagonal stripe band behind the counters (105deg). */
+  .stripe-diagonal {
+    background-image: linear-gradient(
+      105deg,
+      #1425af 25%,
+      #1d2cb5 25%,
+      #1d2cb5 50%,
+      #1425af 50%,
+      #1425af 75%,
+      #1d2cb5 75%
+    );
+    background-size: 41.41px 154.55px;
+  }
+
+  /* Blue diagonal stripe overlay for the video band (123deg). */
+  .stripe-video {
+    background-image: linear-gradient(
+      123deg,
+      #1425af 25%,
+      #1d2cb5 25%,
+      #1d2cb5 50%,
+      #1425af 50%,
+      #1425af 75%,
+      #1d2cb5 75%
+    );
+    background-size: 357.71px 550.82px;
+  }
+}
