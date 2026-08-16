@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Pristine brand palette — cleaning company design recreation
+     (design-token notes for the recreated template):
+     brand blue #006cff (kickers, header CTA, Learn More, circle hover,
+     links), dark navy #0e1b50 (top bar, headings, hero h1, hero button,
+     footer), sunny yellow #fff323 (hero bg, experience box, CTA band,
+     gallery arrow), cream #f3f3eb (about strip), beige #e8e7d3 (trust
+     strip + service-circle borders), muted #9b9eac (footer text),
+     CTA heading #132e43 / CTA text #2d0000, quote #232f55,
+     team #33384e/#57667e, author #4c526e. */
+  --color-brand: #006cff;
+  --color-brand-dark: #0057cc;
+
+  --color-navy: #0e1b50;
+  --color-navy-soft: #232f55;
+
+  --color-accent: #fff323;
+  --color-accent-dark: #e8d81f;
+
+  --color-cream: #f3f3eb;
+  --color-beige: #e8e7d3;
+
+  --color-muted: #9b9eac;
+  --color-body: #4c526e;
+
+  --color-cta-heading: #132e43;
+  --color-cta-text: #2d0000;
+  --color-quote: #232f55;
+  --color-team-name: #33384e;
+  --color-team-role: #57667e;
+
+  /* Rubik across the whole site (headings, body, buttons, inputs) */
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-body antialiased;
+  }
+}
+
+@layer components {
+  /* Solid navy pill (hero "Our Services" — btn_02 style) */
+  .btn-navy-pill {
+    @apply inline-block rounded-full bg-navy px-9 py-4 text-sm font-medium text-white transition-colors hover:bg-brand;
+  }
+
+  /* Solid blue pill (header "Request Free Quote", Learn More) */
+  .btn-blue-pill {
+    @apply inline-block rounded-full bg-brand px-7 py-3 text-sm font-medium text-white transition-colors hover:bg-brand-dark;
+  }
+
+  /* Outline navy pill (CTA "Send Request" — btn_01 style) */
+  .btn-outline-navy {
+    @apply inline-block rounded-full border border-navy px-8 py-3.5 text-base font-medium text-navy transition-colors hover:bg-brand hover:border-brand hover:text-white;
+  }
+}
