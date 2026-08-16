@@ -546,7 +546,7 @@
 
 - [x] **Abcbook** — [colorlib](https://colorlib.com/wp/template/abcbook/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/abcbook-free-template.jpg) · [spine](https://spine.free.componentdock.com)
 - [x] **Academia** — [colorlib](https://colorlib.com/wp/template/academia/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academia-free-template.jpg) · [learnly](https://learnly.free.componentdock.com)
-- [ ] **Action** — [colorlib](https://colorlib.com/wp/template/action/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/action-free-template.jpg)
+- [~] **Action** — [colorlib](https://colorlib.com/wp/template/action/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/action-free-template.jpg)
 - [x] **Axole** — [colorlib](https://colorlib.com/wp/template/axole/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/axole-website-template.jpg) · [inkwell](https://inkwell.free.componentdock.com)
 - [x] **Belara** — [colorlib](https://colorlib.com/wp/template/belara/) · [abode](https://abode.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/belara-colorlib-template.jpg)
 - [ ] **Buckkinnear** — [colorlib](https://colorlib.com/wp/template/buckkinnear/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buckkinnear-colorlib-template.jpg)
@@ -878,7 +878,7 @@
 
 - [ ] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [ ] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg)
-- [ ] **Action** — [colorlib](https://colorlib.com/wp/template/action/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/action-free-template.jpg)
+- [~] **Action** — [colorlib](https://colorlib.com/wp/template/action/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/action-free-template.jpg)
 - [ ] **Agrica** — [colorlib](https://colorlib.com/wp/template/agrica/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agrica-free-template.jpg)
 - [ ] **Alazea** — [colorlib](https://colorlib.com/wp/template/alazea/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alazea-free-template.jpg)
 - [x] **Apart** — [colorlib](https://colorlib.com/wp/template/apart/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apart-free-template.jpg) · [dwell](https://dwell.free.componentdock.com)
