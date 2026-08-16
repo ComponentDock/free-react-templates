@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Sanctus brand palette — recreated from the ColorLib "Byfaith"
+     church theme (css/style.css + live preview): brand amber #f79918
+     (subheadings, pill buttons, service icons, testimonial nav pills,
+     footer hovers), dark teal #10495c (Why Us + Join sections), warm
+     beige #ede1d0 (footer). Buttons are PILLS: 30px radius, uppercase
+     10px/700 with .1rem letter-spacing, white text on amber, hover
+     inverts to white bg + amber text. Headlines are 40px/700 with an
+     uppercase amber kicker above. Font: Poppins. */
+  --color-brand: #f79918;
+  --color-brand-hover: #f8a431;
+  --color-deep: #10495c;
+  --color-beige: #ede1d0;
+  --color-mist: #f8f9fa;
+  --color-ink: #1a1a1a;
+
+  /* Poppins throughout (headings + body) via Google Fonts <link> in
+     index.html — matching the ColorLib font choice. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
