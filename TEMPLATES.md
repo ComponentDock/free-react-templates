@@ -544,7 +544,7 @@
 
 ## Bootstrap 5 (89)
 
-- [~] **Abcbook** — [colorlib](https://colorlib.com/wp/template/abcbook/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/abcbook-free-template.jpg)
+- [x] **Abcbook** — [colorlib](https://colorlib.com/wp/template/abcbook/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/abcbook-free-template.jpg) · [spine](https://spine.free.componentdock.com)
 - [ ] **Academia** — [colorlib](https://colorlib.com/wp/template/academia/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academia-free-template.jpg)
 - [ ] **Action** — [colorlib](https://colorlib.com/wp/template/action/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/action-free-template.jpg)
 - [x] **Axole** — [colorlib](https://colorlib.com/wp/template/axole/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/axole-website-template.jpg) · [inkwell](https://inkwell.free.componentdock.com)
@@ -1557,7 +1557,7 @@
 
 ## Ecommerce (56)
 
-- [ ] **Abcbook** — [colorlib](https://colorlib.com/wp/template/abcbook/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/abcbook-free-template.jpg)
+- [x] **Abcbook** — [colorlib](https://colorlib.com/wp/template/abcbook/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/abcbook-free-template.jpg) · [spine](https://spine.free.componentdock.com)
 - [ ] **Amado** — [colorlib](https://colorlib.com/wp/template/amado/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amado-free-template.jpg)
 - [x] **Aranoz** — [colorlib](https://colorlib.com/wp/template/aranoz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aranoz-free-template.jpg) · [settle](https://settle.free.componentdock.com)
 - [ ] **Aroma** — [colorlib](https://colorlib.com/wp/template/aroma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aroma-free-template.jpg)
