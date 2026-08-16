@@ -38,18 +38,19 @@ CSS 4 + TypeScript.
      HOME / ABOUT / SERVICES / CASES / BLOG / BLOG DETAILS / ELEMENT /
      CONTACT; right CTA button "Make an Appointment". Mobile: hamburger
      (slicknav) collapsing to a stacked menu.
-  2. Hero slider (`section.slider-area`, multi-slide carousel; each slide
-     is a split layout): left `div.hero-caption` — h1 60px white weight
-     700 with a `<span>` highlighted in yellow `#F3D955` ("potential"),
-     p 24px `#DADFD4`, `.border-btn.hero-btn` "Explore More" (outlined
-     yellow); right `div.hero-man-img` photo (`hero/hero-man.jpg`,
-     hidden on <lg). Dark overlay: `.overlay2::before` — `#2E2200` at
-     0.5 opacity over a bg image; large script watermark of the brand
-     behind the caption. Slide headlines found in the DOM: "Unlocking
-     the potential of those who advance the world", "The gain insights,
-     advice and tools to achieve your mission-critical priorities",
-     "We increase our clients' topline by optimizing their growth
-     strategies, marketing, pricing and sales."
+  2. Hero (`section.slider-area`, **static single slide** — the live DOM
+     contains exactly one `slider-bg1` block; the prep draft's "multi-slide
+     carousel" was wrong, verified against the fetched preview): split
+     layout — left `div.hero-caption`: h1 60px white weight 700 with a
+     `<span>` highlighted in yellow `#F3D955` ("potential"), p 24px
+     `#DADFD4`, `.border-btn.hero-btn` "Explore More" (outlined yellow,
+     padding 19px 39px); right `div.hero-man-img` photo
+     (`hero/hero-man.jpg`, hidden on <lg). Dark overlay: `.overlay2::before`
+     — `#2E2200` at 0.5 opacity over the `#51643D` olive slider background;
+     a large script watermark of the brand (`.section-tittle3` h2, Shippori
+     Mincho 220px transparent fill with white stroke) sits behind the
+     caption. Only one headline exists in the DOM: "Unlocking the potential
+     of those who advance the world".
   3. About / Who We Are (`section.about-area.section-bg.top-padding`,
      cream `#EBE5D0`): `div.section-tittle` — `<span>` label "Who We
      Are" (uppercase, serif), h2 46px "We increase our clients' topline
@@ -60,15 +61,16 @@ CSS 4 + TypeScript.
   4. Services band (`section.services-area1`, **yellow `#F3D955` bg**):
      section-tittle label "Services" + headline "The gain insights,
      advice and tools to achieve your mission-critical priorities";
-     `row.services-active` of 3 `.single-services` cards (bg cream
-     `#EBE5D0`, padding 33px 46px 16px 32px): icon + h3 "Business" +
-     blurb "Because they build a relationship that's based on trust.
-     Over the years they've proven that their delivery is fast and
-     stable." + "Learn More" link.
+     `row.offer-active` of 3 `.properties` cards (image on top
+     `gallery/services1..3.jpg`, no icon): `properties__caption` — h3
+     serif 26px "Business" + trust blurb + `.btn_2` "Learn More" (ink
+     outline square button, 1px solid #1A1A1A).
   5. About 2 / Why Choose Us (`section.about-area1.section-padding`,
-     white/light): section-tittle label "Why Choose Us?" + headline "We
-     increase our clients' topline by optimizing their growth…"; image
-     (about1/about2 crop) beside text; feature list style.
+     **cream `#EBE5D0`** — CSS `.about-area1{background:#EBE5D0}`): three
+     `.single-about` blocks (h3 title + blurb: "Tons of pre-made
+     sections", "Complete CMS integration", "Stellar after-sales
+     support") with an image (`gallery/about2.jpg`); the prep draft's
+     "white/light" was wrong.
   6. Cases / Top Stories (`section.services-area.bottom-padding.fix`):
      section-tittle h2 "Top Stories" + "More Cases" link; 3 cards
      (`gallery/case1..3.jpg`) each with image, title "Business
@@ -138,8 +140,8 @@ CSS 4 + TypeScript.
   subtext + CTA; section label + headline + paragraph; service card icon
   - title + blurb + Learn More; case card image + title + blurb; quote +
     name + role; blog meta + title + excerpt; footer link columns +
-    newsletter form). The hero/slider carousels and testimonial carousel
-    are implemented with prev/next + dot navigation. Footer copyright uses
+    newsletter form). The hero is a static single slide; the testimonial
+    carousel is implemented with dot navigation. Footer copyright uses
     the Component Dock credit line, not ColorLib.
 
 Statecraft lives in `apps/statecraft` and uses shared components from
@@ -169,26 +171,26 @@ links, and a yellow "Make an Appointment" call-to-action button.
 - **THEN** the navigation links SHALL expand into a stacked menu
 - **AND** the toggle SHALL expose `aria-expanded` state
 
-### Requirement: Hero slider
+### Requirement: Hero
 
-The system SHALL render a full-height hero with a dark overlay, a
-split layout (caption left, photo right), and a slide carousel whose
-headlines highlight one word in brand yellow.
+The system SHALL render a full-height static hero on the olive-green
+surface with a dark overlay, a split layout (caption left, photo right),
+and a headline highlighting one word in brand yellow.
 
-#### Scenario: Hero slide content
+#### Scenario: Hero content
 
 - **GIVEN** the page is rendered
-- **WHEN** the hero slider is displayed
-- **THEN** slide 1 SHALL show the headline "Unlocking the potential of those who advance the world"
-- **AND** one word of each headline SHALL be highlighted in brand yellow
-- **AND** each slide SHALL show a subtext paragraph and an outlined "Explore More" button
+- **WHEN** the hero is displayed
+- **THEN** the hero SHALL show the headline "Unlocking the potential of those who advance the world"
+- **AND** one word of the headline SHALL be highlighted in brand yellow
+- **AND** the hero SHALL show a subtext paragraph and an outlined "Explore More" button
 - **AND** the photo column SHALL be hidden below the large breakpoint
 
 #### Scenario: Hero navigation
 
-- **GIVEN** the hero slider is displayed
-- **WHEN** the user clicks the next arrow or a dot
-- **THEN** the slider SHALL advance to the corresponding slide
+- **GIVEN** the hero is displayed
+- **WHEN** the user activates the "Explore More" button
+- **THEN** the page SHALL scroll to the "Who We Are" section
 
 ### Requirement: Who We Are
 
@@ -207,8 +209,8 @@ a long headline, a supporting paragraph, and two thumbnails.
 
 ### Requirement: Services
 
-The system SHALL render a brand-yellow services band with three cream
-cards, each with an icon, title, blurb, and a Learn More link.
+The system SHALL render a brand-yellow services band with three image
+cards, each with a title, blurb, and a Learn More link.
 
 #### Scenario: Services content
 
@@ -216,8 +218,8 @@ cards, each with an icon, title, blurb, and a Learn More link.
 - **WHEN** the user scrolls to the services band
 - **THEN** the band SHALL show the label "Services" and a headline
 - **AND** the band SHALL show exactly three service cards
-- **AND** each card SHALL show an icon, a title, a blurb, and a "Learn More" link
-- **AND** the band background SHALL be brand yellow and the card backgrounds cream
+- **AND** each card SHALL show an image, a title, a blurb, and a "Learn More" link
+- **AND** the band background SHALL be brand yellow
 
 ### Requirement: Why Choose Us
 
