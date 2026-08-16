@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette — #081158 deep navy drives headings, primary buttons and
+     the navbar CTA pill; #FBB244 amber accents the subheading pills, icon
+     blobs and the CTA pill text; #070e4b is the navy hover shade; #7a7f99
+     the gray body text tone. */
+  --color-brand: #081158;
+  --color-brand-dark: #070e4b;
+  --color-accent: #fbb244;
+  --color-ink: #1c2135;
+  --color-body: #7a7f99;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variants
+     resolve to the brand navy. */
+  --color-primary-50: #eef0fb;
+  --color-primary-100: #d9def5;
+  --color-primary-200: #b3bde8;
+  --color-primary-300: #8593d6;
+  --color-primary-400: #5666c1;
+  --color-primary-500: #2f3d9e;
+  --color-primary-600: #081158;
+  --color-primary-700: #070e4b;
+  --color-primary-800: #060d42;
+  --color-primary-900: #060e46;
+
+  /* Montserrat (300–800) loaded via Google Fonts in index.html — matches the
+     original template's heading/body family. */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
