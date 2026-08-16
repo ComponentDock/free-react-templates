@@ -561,7 +561,7 @@
 - [x] **Christian** — [colorlib](https://colorlib.com/wp/template/christian/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/christian-free-template.jpg) · [vesper](https://vesper.free.componentdock.com)
 - [x] **Cleaning** — [colorlib](https://colorlib.com/wp/template/cleaning/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cleaning-free-template.jpg) · [spotless](https://spotless.free.componentdock.com)
 - [x] **Cleaningservice** — [colorlib](https://colorlib.com/wp/template/cleaningservice/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cleaningservice-colorlib-template.jpg) · [pristine](https://pristine.free.componentdock.com)
-- [ ] **Congoro** — [colorlib](https://colorlib.com/wp/template/congoro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/congoro-colorlib-template.jpg)
+- [~] **Congoro** — [colorlib](https://colorlib.com/wp/template/congoro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/congoro-colorlib-template.jpg)
 - [x] **Constructed** — [colorlib](https://colorlib.com/wp/template/constructed/) · [Girder](https://girder.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/constructed-free-template.jpg)
 - [ ] **Consul** — [colorlib](https://colorlib.com/wp/template/consul/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/consul-colorlib-template.jpg)
 - [ ] **Consultation** — [colorlib](https://colorlib.com/wp/template/consultation/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/consultation-colorlib-template.jpg)
