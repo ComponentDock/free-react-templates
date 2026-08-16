@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette (from the source design): teal primary, deep navy
+     secondary panel, mint checkbox accent. */
+  --color-brand: #5eb7b7;
+  --color-navy: #1b2a49;
+  --color-mint: #47e4bb;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+}
