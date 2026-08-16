@@ -545,7 +545,7 @@
 ## Bootstrap 5 (89)
 
 - [x] **Abcbook** — [colorlib](https://colorlib.com/wp/template/abcbook/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/abcbook-free-template.jpg) · [spine](https://spine.free.componentdock.com)
-- [~] **Academia** — [colorlib](https://colorlib.com/wp/template/academia/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academia-free-template.jpg)
+- [x] **Academia** — [colorlib](https://colorlib.com/wp/template/academia/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academia-free-template.jpg) · [learnly](https://learnly.free.componentdock.com)
 - [ ] **Action** — [colorlib](https://colorlib.com/wp/template/action/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/action-free-template.jpg)
 - [x] **Axole** — [colorlib](https://colorlib.com/wp/template/axole/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/axole-website-template.jpg) · [inkwell](https://inkwell.free.componentdock.com)
 - [x] **Belara** — [colorlib](https://colorlib.com/wp/template/belara/) · [abode](https://abode.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/belara-colorlib-template.jpg)
@@ -1617,7 +1617,7 @@
 
 ## Education (43)
 
-- [~] **Academia** — [colorlib](https://colorlib.com/wp/template/academia/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academia-free-template.jpg)
+- [x] **Academia** — [colorlib](https://colorlib.com/wp/template/academia/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academia-free-template.jpg) · [learnly](https://learnly.free.componentdock.com)
 - [ ] **Academica** — [colorlib](https://colorlib.com/wp/template/academica/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academica-free-template.jpg)
 - [ ] **Academics** — [colorlib](https://colorlib.com/wp/template/academics/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academics-free-template.jpeg)
 - [x] **Academix** — [colorlib](https://colorlib.com/wp/template/academix/) · [schola](https://schola.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academix-template-1770211029932.jpg)
