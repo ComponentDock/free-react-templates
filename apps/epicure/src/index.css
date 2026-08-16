@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Epicure brand palette — fine-dining restaurant recreation
+     (design-token notes for the recreated template):
+     brand indigo #120078 (hero panel, primary buttons, subheadings,
+     footer background, mobile-menu active links), deep hover #0f0066,
+     accent green #8bc34a (offer prices, check-list icons),
+     section grey #e6e6e6 (testimonials band). */
+  --color-primary: #120078;
+  --color-primary-deep: #0f0066;
+  --color-accent: #8bc34a;
+  --color-section-grey: #e6e6e6;
+
+  /* Surfaces: white body/sidebar, light borders, muted body text. */
+  --color-body: #212529;
+  --color-muted: #6c757d;
+  --color-border: #e9ecef;
+
+  /* Oswald for everything — display headings uppercase, nav, buttons. */
+  --font-display: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-body antialiased;
+  }
+}
+
+@layer components {
+  /* White button (.btn-white) — white bg, brand text. */
+  .btn-white {
+    @apply inline-block bg-white px-9 py-4.5 font-display text-base font-medium uppercase text-primary transition-colors hover:bg-primary hover:text-white;
+  }
+
+  /* Outline-white button (.btn-outline-white) — 1px white border. */
+  .btn-outline-white {
+    @apply inline-block border border-white bg-transparent px-9 py-4.5 font-display text-base font-medium uppercase text-white transition-colors hover:bg-white hover:text-primary;
+  }
+
+  /* Primary button (.btn-primary) — brand indigo bg, white text. */
+  .btn-primary {
+    @apply inline-block bg-primary px-9 py-4.5 font-display text-base font-medium uppercase text-white transition-colors hover:bg-primary-deep;
+  }
+
+  /* Right-slide off-canvas menu panel. */
+  .offcanvas-panel {
+    @apply fixed right-0 top-0 z-50 flex h-full w-[300px] flex-col overflow-y-auto bg-white p-6 shadow-[-10px_0_20px_-10px_rgba(0,0,0,0.1)];
+  }
+}
