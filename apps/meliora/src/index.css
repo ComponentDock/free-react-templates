@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Meliora design tokens — recreated from the source preview stylesheets
+     (no assets copied):
+     - rose-red #c30047: top utility bar, pill buttons, link hovers,
+       progress fills.
+     - sweep #e6115f: button fill-in sweep (hover animation accent).
+     - hero button salmon #ff6378: hero slider CTA.
+     - kicker periwinkle #7ea0ff: section eyebrow text.
+     - plum #301a22: headings, nav text, footer background.
+     - muted rose-grey #6a6063: secondary body text.
+     - light lavender #f9f9ff / #f0e9ff: section backgrounds.
+     - card border #f1f4f8: cause card wrap.
+     - fonts: Roboto (body + nav), Lora (headings). */
+  --color-primary: #c30047;
+  --color-primary-600: #c30047;
+  --color-primary-700: #a3003c;
+  --color-sweep: #e6115f;
+  --color-hero: #ff6378;
+  --color-kicker: #7ea0ff;
+  --color-plum: #301a22;
+  --color-muted: #6a6063;
+  --color-mist: #f9f9ff;
+  --color-lilac: #f0e9ff;
+  --color-cardline: #f1f4f8;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Lora', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-plum);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-plum);
+  }
+}
