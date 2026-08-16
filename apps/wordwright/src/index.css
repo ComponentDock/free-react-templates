@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Wordwright brand palette — recreated from the original copywriter
+     personal-brand design (style.css): brand yellow #FFEA01 (hero caption
+     block behind the left column, quote band, "25 Years" info box, nav +
+     story-title hover), royal blue #05f (all square buttons, section-title
+     underline bar, service-title hover, footer link), near-black #202020
+     (body text, headings, header bar, dark stories band), sticky header
+     #0a0a0a on scroll, cream #F3F3E8 (page + testimonials + footer),
+     peach #FCF2EB (hero section), dark-navy #0E1B50 stars, muted #4C526E
+     founder names. Fonts: Montserrat (500–800) headings, Rubik (300–600)
+     body, Dancing Script for the script-style wordmark. Buttons are
+     square (radius 0). */
+  --color-brand: #ffea01;
+  --color-accent: #05f;
+  --color-ink: #202020;
+  --color-sticky: #0a0a0a;
+  --color-cream: #f3f3e8;
+  --color-peach: #fcf2eb;
+  --color-star: #0e1b50;
+  --color-meta: #4c526e;
+
+  /* Headings: Montserrat (bold, tight tracking). */
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+
+  /* Body: Rubik. */
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+
+  /* Script wordmark (cursive signature look in the header + footer). */
+  --font-script: 'Dancing Script', cursive;
+}
