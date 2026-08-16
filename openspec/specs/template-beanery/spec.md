@@ -183,12 +183,21 @@ display=swap")` in `style.css` — recreate with `<link>` in
     owl-carousel instagram strip offset right (`padding-left:300px`);
     section rhythm = `section-padding` 120px top/bottom.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/beanery-<n>/<w>/<h>`; screen seeds for cafe/patio/
-  coffee/people subjects — verify each seed renders a cafe-appropriate
-  scene before pinning); icons → lucide-react (Menu, X, Phone, MapPin,
-  Clock, Coffee, UtensilsCrossed, Quote, ChevronDown, Instagram, Facebook,
-  Linkedin — probe every export; brand icons Facebook/Instagram/LinkedIn
-  are NOT in lucide-react → inline SVG simple-icons paths); Shippori Mincho
+  (`picsum.photos/seed/beanery-<n>/<w>/<h>`, **pinned after subject
+  screening**: hero = `id/431` (latte art on wood — browser-verified),
+  about full-width = `seed/beanery-about-full` (= `id/7`, coffee +
+  notebook at a wooden table — browser-verified), services band =
+  `id/292` (culinary still-life), gallery = `id/1080` (berries) /
+  `id/292` / `id/425` (roasted beans) / `id/431` (latte), instagram =
+  `id/425` × 2 + `id/431` + `id/1080` + `id/292` (source repeats one
+  instra photo), testimonial founders = verified people portraits
+  `id/64` / `id/823` / `id/1027` — no verified male portrait exists in
+  picsum, so founder names were paraphrased to match the female
+  portraits, documented in the PR); icons → lucide-react (Menu, X,
+  Phone, MapPin, Coffee, CupSoda, UtensilsCrossed, CakeSlice, Quote,
+  ChevronDown, ChevronLeft, ChevronRight — probe every export; brand
+  icons Facebook/Instagram/LinkedIn are NOT in lucide-react → inline SVG
+  simple-icons paths); Shippori Mincho
   - Chivo via Google Fonts `<link>` in `index.html`; brand copper
     `#C46B48` + amber `#D6A04C` + navy `#202738` + cream `#F6F1EA` in
     `@theme`; no asset/CSS/font-file copying. Demo copy paraphrased but same
@@ -361,5 +370,5 @@ landmark and a document title.
 - [ ] `docs/templates/beanery/tasks.md` has the task outline + design notes.
 - [ ] `npm run spec:validate` passes for this spec.
 - [ ] Implementer: TDD at 100% coverage, `bash scripts/verify-app.sh
-    beanery`, PR lists source (ColorLib Decoffee), preview URL, tokens,
+  beanery`, PR lists source (ColorLib Decoffee), preview URL, tokens,
       and what differs.
