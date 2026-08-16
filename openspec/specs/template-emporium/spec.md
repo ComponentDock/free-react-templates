@@ -1,5 +1,12 @@
 # Template: Emporium (E-commerce Fashion Store)
 
+> **⚠️ SUPERSEDED — do not implement.** ColorLib "Coza Store" already shipped
+> as **Mannequin** (apps/mannequin) via PR #495
+> (https://mannequin.free.componentdock.com). All three TEMPLATES.md "Coza
+> Store" rows are marked `[x]` with the mannequin URL. This spec was prepped
+> in parallel by the prep stream while Mannequin was in flight; delete on
+> next cleanup.
+
 ## Purpose
 
 Emporium is a multi-section e-commerce fashion storefront in the
