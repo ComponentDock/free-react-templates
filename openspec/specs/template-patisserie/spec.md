@@ -67,10 +67,13 @@ CSS 4 + TypeScript.
   2. Hero (`div.slider-area` — bg color `#F2F4F8` behind the slide) —
      `div.single-slider.slider-height.slider-bg1` (700px, cover background
      image `assets/img/hero/h1_hero1.jpg` — darkened cupcake photo):
-     `div.hero-caption`: `span` white pill badge (white bg, `#2A2A2A` 14px
-     text, radius 17px, padding 6px 17px), `h1` "Healthy Made Delicious
-     Cake" (70px Poiret One WHITE, line-height 1.2), `p` white 22px/300,
-     "Order Now" `a.btn_1.hero-btn` (gold square button, padding 35px 55px).
+     `div.hero-caption`: `h1` "Healthy Made Delicious Cake" (70px Poiret One
+     WHITE, line-height 1.2), "Order Now" `a.btn_1.hero-btn` (gold square
+     button, padding 35px 55px). NOTE (verified 2026-08-16 against the live
+     DOM + screenshot): the rendered hero has NO pill badge span and NO
+     subcopy paragraph — the `.hero-caption span` / `.hero-caption p` styles
+     exist in the shared stylesheet but are not used by this page. Do not
+     invent them.
   3. About (`section.about-area.top-padding`) — centered
      `div.section-tittle.text-center.line.mb-70` (h2 "This is Schilers.
      Awesome Food Theme. Purchase it and eat Burgers." + gold underline);
@@ -101,39 +104,37 @@ arrows (`button.slick-arrow`) at mid-height sides.
      (avatar + author "Wilma Mumduya" — same author on all three).
   7. Blog (`div.h1-blog`) — header row
      `div.section-tittle.text-center.mb-90.d-flex.justify-content-between.flex-wrap.align-items-center`:
-     h2 "Our Blogs" (left) + "More Blog" `a.btn_1` (right); TWO
-     `div.col-xl-6` blog cards: image + gold date badge
-     (`.blog_item_date` `#E5BF4A` bg, white text, radius 5px, overhangs the
-     image bottom edge) + h3 title ("Tomato, black olive, feta & anchovy
-     tart ulla mco laboris" — paraphrase) + meta + gold read link.
-  8. Features (`div.single-services.mb-30.mr-10` / `.ml-10` — TWO alternating
-     rows, NO section heading): each row = `div.features-img` (photo) +
+     h2 "Our Blogs" (left) + "More Blog" `a.btn_1` (right); then TWO
+     `div.single-services` rows (`div.single-services.mb-30.mr-10` /
+     `.ml-10` — alternating): each row = `div.features-img` (photo) +
      `div.features-caption` (h3 "Tomato, black olive, feta & anchovy tart
      ulla mco laboris" + paragraph + "Learn More" `a.browse-btn` — gold
      uppercase 14px/300 with a 2px gold underline below, hover letter-spacing
-     grows). Rows flip: image left/text right, then text left/image right.
-  9. Instagram (`div.instra` — "Follow us on Instagram" section): centered
+     grows). BOTH rows have photo left / caption right in the DOM (the
+     `.mr-10`/`.ml-10` classes are margins, not layout flips).
+     NOTE (verified 2026-08-16): the two alternating rows ARE the blog
+     section's content — there is no separate Features section and no
+     blog date badge in this DOM. 8. Instagram (`div.instra` — "Follow us on Instagram" section): centered
      `div.section-tittle` h2 "Follow us on Instagram" + brand handle
      "Cakeshop" (recreate as "@patisserie" gold link); FOUR
      `div.col-lg-3.col-md-6.col-sm-6` cells: `div.instra-img.mb-30` square
-     photos (`assets/img/gallery/instra1..4.jpg`).
-  10. Footer (`div.footer-wrapper`) — `div.footer-area.footer-padding`
-      (dark): `div.footer-menu` centered links (Home / Cakes / About / blog /
-      Contact, white 15px, gold hover underline, bottom border
-      `rgba(255,255,255,0.2)`, margin-bottom 80px); `div.row
+     photos (`assets/img/gallery/instra1..4.jpg`). 9. Footer (`div.footer-wrapper`) — `div.footer-area.footer-padding`
+     (dark): `div.footer-menu` centered links (Home / Cakes / About / blog /
+     Contact, white 15px, gold hover underline, bottom border
+     `rgba(255,255,255,0.2)`, margin-bottom 80px); `div.row
 justify-content-between`: (1) `div.single-footer-caption.mb-50` — about
-      blurb + social icons (Instagram / Facebook / Twitter, gold hover);
-      (2) `div.single-footer-caption.mb-30` — `div.footer-tittle` h4 gold
-      "Location" + `p` "4736 Poe Lane, HOT SPRINGS, Montana-59845"; (3)
-      `div.single-footer-caption.mb-50` — `div.footer-tittle` h4 gold
-      "Contact" + phone "913-473-7000" + email "contact@cakeshop.com" (→
-      contact@patisserie.example). `div.footer-bottom-area`:
-      `div.footer-border` (border-top rgba(255,255,255,0.2), padding 40px 0)
-      - `div.footer-copy-right` p: "Copyright © <year> All rights reserved |
-        This template is made with ♥ by Colorlib" — recreation replaces the
-        ColorLib credit with the mandatory **Component Dock** footer link
-        (https://www.componentdock.com/) per repo conventions, and the
-        "Cakeshop" brand becomes "Patisserie".
+     blurb + social icons (Instagram / Facebook / Twitter, gold hover);
+     (2) `div.single-footer-caption.mb-30` — `div.footer-tittle` h4 gold
+     "Location" + `p` "4736 Poe Lane, HOT SPRINGS, Montana-59845"; (3)
+     `div.single-footer-caption.mb-50` — `div.footer-tittle` h4 gold
+     "Contact" + phone "913-473-7000" + email "contact@cakeshop.com" (→
+     contact@patisserie.example). `div.footer-bottom-area`:
+     `div.footer-border` (border-top rgba(255,255,255,0.2), padding 40px 0)
+     - `div.footer-copy-right` p: "Copyright © <year> All rights reserved |
+       This template is made with ♥ by Colorlib" — recreation replaces the
+       ColorLib credit with the mandatory **Component Dock** footer link
+       (https://www.componentdock.com/) per repo conventions, and the
+       "Cakeshop" brand becomes "Patisserie".
 
 - **Design tokens (extracted from `assets/css/style.css`):**
   - Brand gold **`#E5BF4A`** — `.btn_1` bg, `.line::before` underline bar,
@@ -231,19 +232,19 @@ menu.
 ### Requirement: Full-width cupcake hero with gold CTA
 
 The system SHALL render a 700px-tall hero with a cover photo background, a
-white pill badge, a thin white display headline, white subcopy, and a large
-square gold "Order Now" button.
+thin white display headline, and a large square gold "Order Now" button.
 
 #### Scenario: Hero content
 
 - **GIVEN** the hero is displayed
 - **WHEN** the page loads
-- **THEN** the hero SHALL show a small white pill badge above the headline
-- **AND** the headline "Healthy Made Delicious Cake" SHALL be shown in white
+- **THEN** the headline "Healthy Made Delicious Cake" SHALL be shown in white
   70px Poiret One
-- **AND** a white 22px subcopy line SHALL be shown below the headline
 - **AND** a square gold "Order Now" button (gold bg, near-black text,
   uppercase, padding 35px 55px) SHALL be shown
+- **AND** the hero SHALL NOT render a pill badge or subcopy (verified against
+  the live preview DOM — those styles exist in the shared stylesheet but are
+  not used on this page)
 
 ### Requirement: About section with gold underline heading
 
@@ -305,11 +306,11 @@ author name.
 - **AND** three cards SHALL be shown in a row, each with five gold stars, a
   quote, a circular avatar, and the author name "Wilma Mumduya"
 
-### Requirement: Our Blogs heading with two blog cards
+### Requirement: Our Blogs heading with two alternating post rows
 
-The system SHALL render a "Our Blogs" heading with a "More Blog" button on
-the right and two blog cards below, each with a photo, a gold date badge, a
-title, meta, and a gold read link.
+The system SHALL render an "Our Blogs" heading with a "More Blog" button on
+the right and two alternating image/caption rows below, each with a photo, an
+h3 title, a paragraph, and a gold "Learn More" underline link.
 
 #### Scenario: Blog section content
 
@@ -317,21 +318,9 @@ title, meta, and a gold read link.
 - **WHEN** the page loads
 - **THEN** the heading "Our Blogs" SHALL be shown on the left and a gold
   square "More Blog" button on the right of the same row
-- **AND** two blog cards SHALL be shown side by side, each with a photo, a
-  gold date badge overhanging the photo's bottom edge, a title, meta text,
-  and a gold "Read more"-style link
-
-### Requirement: Alternating feature rows
-
-The system SHALL render two alternating image/caption feature rows, each with
-a photo, an h3 title, a paragraph, and a gold "Learn More" underline link.
-
-#### Scenario: Feature rows
-
-- **GIVEN** the features section is displayed
-- **WHEN** the page loads
-- **THEN** two rows SHALL be shown with the image on the right in the first
-  row and on the left in the second row (alternating)
+- **AND** two rows SHALL be shown with the photo on the left and the caption
+  on the right in BOTH rows (verified against the live DOM — the source's
+  `.mr-10`/`.ml-10` are margin utilities, not layout flips)
 - **AND** each row SHALL show an h3 title, a paragraph, and a gold uppercase
   "Learn More" link with a 2px gold underline
 

@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Patisserie brand palette — recreated from the dark bakery design
+     (style.css): brand gold #E5BF4A (buttons, section-title underline bar +
+     rotated labels, gold caption h2, product prices + hover "Add to cart"
+     bar, video icon, star ratings, blog date badge, footer widget h4s,
+     nav/footer hover), near-black #0A0A0A page background (body + sticky
+     header), heading grey #DFDFDF on dark, heading #2A2A2A on light
+     surfaces (dropdown items, hero badge), body copy #545454. Dividers are
+     rgba(255,255,255,0.2) on dark. Buttons are SQUARE (radius 0): gold bg +
+     1px #2A2A2A border + #0A0A0A uppercase text; hover inverts to outline.
+     Fonts: Poiret One (cursive display) for headings, Jost (200-800) for
+     body/nav. */
+  --color-brand: #e5bf4a;
+  --color-ink: #0a0a0a;
+  --color-heading: #dfdfdf;
+  --color-heading-light: #2a2a2a;
+  --color-copy: #545454;
+  --color-line: rgba(255, 255, 255, 0.2);
+
+  /* Display face: Poiret One (thin elegant cursive). */
+  --font-display: 'Poiret One', cursive;
+
+  /* Body: Jost (200-800). */
+  --font-sans: 'Jost', ui-sans-serif, system-ui, sans-serif;
+}
