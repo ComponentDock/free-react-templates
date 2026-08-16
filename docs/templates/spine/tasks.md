@@ -109,18 +109,18 @@
 
 - [x] Write `openspec/specs/template-spine/spec.md` (Gherkin requirements + scenarios for every section above).
 - [x] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/spine` (copy the simplest existing app — e.g. an
+- [x] Create `apps/spine` (copy the simplest existing app — e.g. an
       e-commerce/landing app; rename package to
       `@free-react-templates/spine`).
-- [ ] TDD: tests first for each section component (Header, HeroSlider,
+- [x] TDD: tests first for each section component (Header, HeroSlider,
       BestSelling, FeaturedWeek, LatestPublished tabs, CtaBanners,
       Subscribe, Footer); run red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Per-app gate: `bash scripts/verify-app.sh spine` +
+- [x] Implement components (green) at 100% coverage.
+- [x] Per-app gate: `bash scripts/verify-app.sh spine` +
       `npm run spec:validate`.
-- [ ] Push `feat/template-spine`, open PR (source template, preview URL,
+- [x] Push `feat/template-spine`, open PR (source template, preview URL,
       design tokens, source quirks, what differs — renames, lucide
       icons, picsum seeds, accessible tabs/buttons, Component Dock
       footer).
-- [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
+- [x] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
