@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Beanery brand palette — warm artisanal boutique-cafe recreation
+     (design-token notes for the recreated template):
+     brand copper #C46B48 (buttons, accents, prices), secondary amber
+     #D6A04C (hover details), deep navy #202738 (sidebar, headings),
+     sidebar links #C3D4E4, cream #F6F1EA (about + footer), soft
+     lavender #f9f9ff, body text #636363. */
+  --color-copper: #c46b48;
+  --color-amber: #d6a04c;
+  --color-navy: #202738;
+  --color-links: #c3d4e4;
+  --color-cream: #f6f1ea;
+  --color-soft: #f9f9ff;
+
+  /* Shippori Mincho serif for display headlines, Chivo sans for body. */
+  --font-display: 'Shippori Mincho', ui-serif, Georgia, serif;
+  --font-sans: 'Chivo', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-[#636363] antialiased;
+  }
+}
+
+@layer components {
+  /* Square solid-copper button — no radius, white uppercase text,
+     hover flips to transparent with copper text (source .btn_1). */
+  .btn-copper {
+    @apply inline-block border border-copper bg-copper px-6 py-3.5 text-[15px] font-normal uppercase tracking-wide text-white transition-colors hover:bg-transparent hover:text-copper;
+  }
+
+  /* Square outline button — copper border on transparent, hover flips
+     to solid copper (source .btn_01, used on the dark sidebar). */
+  .btn-outline {
+    @apply inline-block border border-copper bg-transparent px-8 py-3.5 text-base font-medium text-white transition-colors hover:bg-copper;
+  }
+
+  /* Dotted leader between a menu item name and its price. */
+  .menu-leader {
+    border-bottom: 1px dotted #d8d1c5;
+  }
+}
