@@ -553,7 +553,7 @@
 - [x] **Buildream** — [colorlib](https://colorlib.com/wp/template/buildream/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildream-free-template.jpg) · [mortar](https://mortar.free.componentdock.com)
 - [x] **Byfaith** — [colorlib](https://colorlib.com/wp/template/byfaith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/byfaith-free-template.jpg) · [sanctus](https://sanctus.free.componentdock.com)
 - [x] **Cakeshop** — [colorlib](https://colorlib.com/wp/template/cakeshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cakeshop-colorlib-template.jpg) · [patisserie](https://patisserie.free.componentdock.com)
-- [ ] **Calvino** — [colorlib](https://colorlib.com/wp/template/calvino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calvino-free-template.jpg)
+- [~] **Calvino** — [colorlib](https://colorlib.com/wp/template/calvino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calvino-free-template.jpg)
 - [ ] **Capitalshop** — [colorlib](https://colorlib.com/wp/template/capitalshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/capitalshop-free-template.jpg)
 - [x] **Carepair** — [colorlib](https://colorlib.com/wp/template/carepair/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carepair-free-template-1.jpg) · [fixly](https://fixly.free.componentdock.com)
 - [ ] **Charitee** — [colorlib](https://colorlib.com/wp/template/charitee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/charitee-colorlib-template.jpg)
