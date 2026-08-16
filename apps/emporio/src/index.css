@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Emporio design tokens — recreated from the source preview stylesheet
+     (no assets copied):
+     - brand red #FF2020: hero script, pill "Shop Now" buttons, sale prices,
+       subscribe button, "New" badge, hover accents (the dominant accent).
+     - charcoal #292621: hero h1, dark "Read More" buttons, product names,
+       category-card gradient bottom.
+     - footer #171613: dark footer wrapper; testimonial band #F3EAD8 cream;
+       blog band #F6F6F6 light grey; strikethrough price #CEBD9C.
+     - copy #57667e body text; footer links #BBB9B5; header-top border
+       #edeff2.
+     - fonts: Roboto (body sans), Jost (headings/nav/buttons), Clicker
+       Script (hero script eyebrow). */
+  --color-brand: #ff2020;
+  --color-charcoal: #292621;
+  --color-footer: #171613;
+  --color-testimonial: #f3ead8;
+  --color-blog: #f6f6f6;
+  --color-strike: #cebd9c;
+  --color-copy: #57667e;
+  --color-footer-link: #bbb9b5;
+  --color-line-soft: #edeff2;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Jost', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Clicker Script', cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-copy);
+    background-color: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--color-charcoal);
+  }
+
+  ::selection {
+    background-color: var(--color-brand);
+    color: #fff;
+  }
+}
