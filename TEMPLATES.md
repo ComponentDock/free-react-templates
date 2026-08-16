@@ -551,7 +551,7 @@
 - [x] **Belara** — [colorlib](https://colorlib.com/wp/template/belara/) · [abode](https://abode.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/belara-colorlib-template.jpg)
 - [x] **Buckkinnear** — [colorlib](https://colorlib.com/wp/template/buckkinnear/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buckkinnear-colorlib-template.jpg) · [wordwright](https://wordwright.free.componentdock.com)
 - [x] **Buildream** — [colorlib](https://colorlib.com/wp/template/buildream/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildream-free-template.jpg) · [mortar](https://mortar.free.componentdock.com)
-- [ ] **Byfaith** — [colorlib](https://colorlib.com/wp/template/byfaith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/byfaith-free-template.jpg)
+- [~] **Byfaith** — [colorlib](https://colorlib.com/wp/template/byfaith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/byfaith-free-template.jpg)
 - [ ] **Cakeshop** — [colorlib](https://colorlib.com/wp/template/cakeshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cakeshop-colorlib-template.jpg)
 - [ ] **Calvino** — [colorlib](https://colorlib.com/wp/template/calvino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calvino-free-template.jpg)
 - [ ] **Capitalshop** — [colorlib](https://colorlib.com/wp/template/capitalshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/capitalshop-free-template.jpg)
@@ -1286,7 +1286,7 @@
 
 - [ ] **Advent** — [colorlib](https://colorlib.com/wp/template/advent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/advent-free-template.jpg)
 - [ ] **Brotherlylove** — [colorlib](https://colorlib.com/wp/template/brotherlylove/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brotherlylove-free-template.jpg)
-- [ ] **Byfaith** — [colorlib](https://colorlib.com/wp/template/byfaith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/byfaith-free-template.jpg)
+- [~] **Byfaith** — [colorlib](https://colorlib.com/wp/template/byfaith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/byfaith-free-template.jpg)
 - [ ] **Christian** — [colorlib](https://colorlib.com/wp/template/christian/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/christian-free-template.jpg)
 - [ ] **Church** — [colorlib](https://colorlib.com/wp/template/church/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/church-free-template-1.jpg)
 - [ ] **Church Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/church-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-church-themes-1.jpg)
