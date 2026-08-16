@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Vesper brand palette — church design recreation: signature gold
+     #ffd615, secondary blue #033fff, near-black footer #1b1919,
+     light section #f8f9fa. */
+  --color-primary-50: #fffbe6;
+  --color-primary-100: #fff3b3;
+  --color-primary-200: #ffe980;
+  --color-primary-300: #ffdf4d;
+  --color-primary-400: #ffd91f;
+  --color-primary-500: #ffd615;
+  --color-primary-600: #f0c400;
+  --color-primary-700: #d9af00;
+  --color-primary-800: #b89200;
+  --color-primary-900: #8a6d00;
+
+  /* Brand gold — hero "Jesus" span, service icons, quote mark, buttons */
+  --color-gold: #ffd615;
+  --color-gold-dark: #d9af00;
+
+  /* Secondary blue — .btn-secondary / accent pills */
+  --color-accent: #033fff;
+
+  /* Dark charcoal footer background */
+  --color-footer: #1b1919;
+
+  /* Light grey section background (bg-light in the source) */
+  --color-section-bg: #f8f9fa;
+
+  /* Open Sans (body + nav) · Lora (serif headings) · Great Vibes (logo) */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Lora', Georgia, serif;
+  --font-script: 'Great Vibes', cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

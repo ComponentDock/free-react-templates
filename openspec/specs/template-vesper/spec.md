@@ -111,13 +111,17 @@ js-fullheight align-items-center justify-content-center`): uppercase
      `causes-section`): H2 "Causes Needs Our Help" + four cause cards
      (`images/cause-1..4.jpg`): "Health care, Food" (progress 40% in DOM),
      "Restored the Old City Church", "Save Childern For Hunger" — each with a
-     progress bar and a "Donate Now!" button.
+     progress bar and a "Donate Now!" button. BELOW the grid, still inside the
+     causes section: `div.donated-intro.bg-darken` — H2 "Donation so far $ 0"
+     (counter placeholder), a paragraph, and a "Donate now!" button
+     (btn-black).
   10. Daily verse (`section.ftco-daily-verse.img`, data-bg `images/bg_4.jpg`):
-      photo band, black overlay opacity 0.6; centered: H2 "Donation so far
-      $ 0", a 100px gold quote mark (#ffd615), H3 "16 For God so loved the
-      world, that he gave his only begotten Son, that whosoever believeth in
-      him should not perish, but have everlasting life.", H4 "Bible: John
-      3:16 KJV", and a "Donate now!" button.
+      photo band, black overlay opacity 0.6; centered: a circular church icon
+      (flaticon-church), subheading span "Jesus Christ Said:", H3
+      "16 For God so loved the world, ... everlasting life." (verse in
+      quotes), H4 "Bible: John 3:16 KJV". (NOTE: the live DOM keeps the
+      donation intro inside the causes section — the prep draft merged it
+      into this band; the implementation follows the DOM.)
   11. Blog (`section.ftco-section.bg-light`, id `blog-section`): H2 "Read the
       Latest Blog" + three blog cards (`images/image_1..3.jpg`): H3 "Why Lead
       Generation is Key for Business Growth" + paragraph + "Read More". NOTE:
@@ -148,14 +152,14 @@ js-fullheight align-items-center justify-content-center`): uppercase
   16. Footer (`footer.ftco-footer.ftco-bg-dark.ftco-section`): background
       #1b1919, padding 7em 0; four columns — (a) brand "Christian Church"
       (cross + Great Vibes script) + blurb + `ftco-footer-social` icons; (b)
-      "About" links: Staff, Beliefs, History, Mission, Wedding & Funerals,
-      Jobs & Internship; (c) "Connect" links: Fellowships, Home Groups,
-      Recovery Groups, Memberships, Children & Students, Volunteer,
-      Counseling, Assistance; (d) "Service Hours" lines: "Saturday Prayer
-      Meeting: 10:00 am to 11:30 am", "Sunday Service: 8:30 am to 11:30 am"
-      (2+ rows). `footer-bottom-area` copyright bar: "Copyright ©2026 All
-      rights reserved | This template is made with by Colorlib" → attribution
-      becomes the Component Dock link.
+      "About" links (7 in the live DOM): Staff, Beliefs, History, Mission,
+      Wedding & Funerals, Jobs & Internship, Fellowships; (c) "Connect"
+      links (7): Home Groups, Recovery Groups, Memberships, Children &
+      Students, Volunteer, Counseling, Assistance; (d) "Service Hours" lines:
+      "Saturday Prayer Meeting: 10:00 am to 11:30 am", "Sunday Service:
+      8:30 am to 11:30 am" (2+ rows). `footer-bottom-area` copyright bar:
+      "Copyright ©2026 All rights reserved | This template is made with by
+      Colorlib" → attribution becomes the Component Dock link.
 - **Design tokens:**
   - Brand gold **#ffd615** (theme-color meta; 66× in style.css) — hero
     "Jesus" span, `.btn-primary` fill (bg #ffd615, 1px #ffd615 border, white
@@ -317,19 +321,27 @@ actions.
   "Health care, Food", "Restored the Old City Church", "Save Children For
   Hunger"), a progress bar and a "Donate Now!" button
 
+#### Scenario: Donation intro
+
+- **WHEN** the causes section displays
+- **THEN** below the cause grid it SHALL show the donation-intro band with
+  the H2 "Donation so far $ 0", a supporting paragraph, and a "Donate now!"
+  button (the source's `donated-intro bg-darken` block sits INSIDE the
+  causes section per the live DOM)
+
 ### Requirement: Daily verse band
 
-The system SHALL render a dark photo band with a donation counter, a Bible
-verse and a Donate button.
+The system SHALL render a dark photo band with the church icon, the verse
+and its citation.
 
 #### Scenario: Verse band
 
 - **GIVEN** the Vesper app is rendered
 - **WHEN** the daily verse band displays
 - **THEN** it SHALL show a photo background with a strong dark overlay
-- **AND** it SHALL show the H2 "Donation so far $ 0", a large gold quote
-  mark, the John 3:16 verse and the citation "Bible: John 3:16 KJV"
-- **AND** it SHALL show a "Donate now!" button
+  (opacity 0.6)
+- **AND** it SHALL show a circular church icon, the subheading "Jesus Christ
+  Said:", the John 3:16 verse and the citation "Bible: John 3:16 KJV"
 
 ### Requirement: Blog section
 
@@ -405,10 +417,9 @@ The system SHALL render a dark four-column footer with attribution.
 - **THEN** it SHALL have a dark (`#1b1919`) background with white text
 - **AND** it SHALL show the brand with a blurb and social icons
 - **AND** it SHALL show an "About" link list (Staff, Beliefs, History,
-  Mission, Wedding & Funerals, Jobs & Internship)
-- **AND** it SHALL show a "Connect" link list (Fellowships, Home Groups,
-  Recovery Groups, Memberships, Children & Students, Volunteer, Counseling,
-  Assistance)
+  Mission, Wedding & Funerals, Jobs & Internship, Fellowships)
+- **AND** it SHALL show a "Connect" link list (Home Groups, Recovery Groups,
+  Memberships, Children & Students, Volunteer, Counseling, Assistance)
 - **AND** it SHALL show a "Service Hours" list (e.g. "Saturday Prayer
   Meeting: 10:00 am to 11:30 am", "Sunday Service: 8:30 am to 11:30 am")
 - **AND** the copyright bar SHALL link to `https://www.componentdock.com/`
@@ -445,8 +456,10 @@ and a document title.
 - [ ] No ColorLib references in `apps/vesper` (provenance lives in this
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
-- [ ] All images picsum-seeded (`picsum.photos/seed/vesper-N/w/h`); hero +
-      events-band + verse-band background seeds screened for a
-      church/architecture subject (see tasks.md verified picsum IDs).
+- [ ] All images picsum-seeded (`picsum.photos/seed/vesper-N/w/h` for card
+      images); the three photo BANDS are pinned to browser-verified
+      architecture IDs (hero `picsum.photos/id/1081` white tower, events
+      band `id/1067` Chicago skyline, verse band `id/299` NYC street) —
+      screened 2026-08-16.
 - [ ] Implementer gate: `scripts/verify-app.sh vesper` (typecheck + lint +
       100% coverage tests + build) and `npm run spec:validate`.
