@@ -29,8 +29,8 @@ export const about = {
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.',
     'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
   ],
-  image: 'https://picsum.photos/id/292/600/600',
-  imageAlt: 'Round artisan cake with fresh berries',
+  image: 'https://picsum.photos/id/429/600/600',
+  imageAlt: 'Raspberry cream dessert with fresh berries',
 }
 
 export const products = [
@@ -41,10 +41,10 @@ export const products = [
     imageAlt: 'Velvet berry torte with fresh strawberries',
   },
   {
-    name: 'Delightful Lemon Cake',
+    name: 'Fresh Pour-Over Coffee',
     price: '$98.00',
-    image: 'https://picsum.photos/id/429/600/500',
-    imageAlt: 'Delightful lemon cake with raspberries',
+    image: 'https://picsum.photos/id/1060/600/500',
+    imageAlt: 'Freshly brewed pour-over coffee with steam',
   },
   {
     name: 'Sweet Surprise',
@@ -61,8 +61,8 @@ export const products = [
 ]
 
 export const videoBand = {
-  image: 'https://picsum.photos/id/453/1600/700',
-  imageAlt: 'Warm bakery kitchen at golden hour',
+  image: 'https://picsum.photos/id/431/1600/700',
+  imageAlt: 'Dark moody café scene with latte art',
 }
 
 export const testimonials = {
@@ -97,19 +97,19 @@ export const blog = {
   moreLabel: 'More Blog',
   posts: [
     {
-      title: 'Butter croissants, black cherry & sea salt — a morning classic',
+      title: 'Raspberry frangipane tart with a golden lattice crust',
       paragraph:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip.',
-      image: 'https://picsum.photos/id/1055/600/500',
-      imageAlt: 'Freshly baked croissants on a wooden counter',
+      image: 'https://picsum.photos/id/429/600/500',
+      imageAlt: 'Cup of fresh raspberries on a saucer',
       learnLabel: 'Learn More',
     },
     {
-      title: 'Raspberry frangipane tart with a golden lattice crust',
+      title: 'Strawberry season: fresh berries in every bake',
       paragraph:
         'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      image: 'https://picsum.photos/id/1067/600/500',
-      imageAlt: 'Raspberry frangipane tart on a serving board',
+      image: 'https://picsum.photos/id/1080/600/500',
+      imageAlt: 'Strawberries in a crate on a dark background',
       learnLabel: 'Learn More',
     },
   ],
@@ -119,10 +119,10 @@ export const instagram = {
   heading: 'Follow us on Instagram',
   handle: '@patisserie',
   photos: [
-    { src: 'https://picsum.photos/id/1043/400/400', alt: 'Bakery instagram photo one' },
-    { src: 'https://picsum.photos/id/1039/400/400', alt: 'Bakery instagram photo two' },
-    { src: 'https://picsum.photos/id/1035/400/400', alt: 'Bakery instagram photo three' },
-    { src: 'https://picsum.photos/id/1065/400/400', alt: 'Bakery instagram photo four' },
+    { src: 'https://picsum.photos/id/425/400/400', alt: 'Roasted coffee beans close-up' },
+    { src: 'https://picsum.photos/id/225/400/400', alt: 'Glass teapot with amber tea' },
+    { src: 'https://picsum.photos/id/1060/400/400', alt: 'Pour-over coffee brewing' },
+    { src: 'https://picsum.photos/id/1080/400/400', alt: 'Fresh strawberries in a crate' },
   ],
 }
 
