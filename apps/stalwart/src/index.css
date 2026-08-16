@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Stalwart brand palette — construction company design recreation
+     (design-token notes for the recreated template):
+     brand red #ff1a35 (hero overlay, sticky header, "/ " prefixes,
+     Learn More buttons, View Details box, "50", footer links,
+     back-to-top), near-black #1e1e1e (Free Quote button, experience
+     box, footer bg), heading #0a0a0a, body #656565, muted #c1c1c1,
+     services bg #f2f4f8, team name #33384e, hover dark-red #cc031b. */
+  --color-brand: #ff1a35;
+  --color-brand-dark: #cc031b;
+
+  --color-ink: #0a0a0a;
+  --color-night: #1e1e1e;
+  --color-night-soft: #2a2a2a;
+
+  --color-body: #656565;
+  --color-muted: #c1c1c1;
+  --color-mist: #f2f4f8;
+
+  --color-team-name: #33384e;
+
+  /* Oswald for display headings + buttons, Barlow for body/nav */
+  --font-display: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Barlow', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-body antialiased;
+  }
+}
+
+@layer components {
+  /* Solid red square button (about "Learn More" — .btn style) */
+  .btn-red-square {
+    @apply inline-block bg-brand px-13 py-7.5 font-display text-sm font-medium uppercase tracking-wide text-white transition-colors hover:bg-brand-dark;
+  }
+
+  /* Outline red square button (promise "Learn More" — .btn_01 style) */
+  .btn-outline-red {
+    @apply inline-block border border-brand px-11 py-3.5 font-display text-sm font-medium uppercase tracking-wide text-brand transition-colors hover:bg-brand hover:text-white;
+  }
+
+  /* Black square header button (Free Quote — .header-btn style) */
+  .btn-black-square {
+    @apply inline-block bg-night px-10 py-4 font-display text-base font-semibold uppercase tracking-wide text-white transition-colors hover:bg-brand;
+  }
+
+  /* Red pill (newsletter Subscribe — .submit-btn style) */
+  .btn-red-pill {
+    @apply inline-block rounded-full bg-brand px-11 py-2.5 font-display text-base font-medium text-white transition-colors hover:bg-night;
+  }
+}
