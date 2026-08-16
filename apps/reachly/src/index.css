@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Reachly brand palette — recreated from the source marketing-agency
+     theme (assets/css/style.css + live preview):
+     brand pink #FF4495 (eyebrows, primary buttons, icon accents,
+     underline links), pink gradient #FF4495 → #FF6D6D (pill buttons,
+     CTA box), dark navy #192839 (headings, hero copy, hover fills,
+     active tab), stats ink #131933, body copy #545454, pricing band
+     #F8FBFE, footer text #5E5E5E / headings #1A1A1A, orange #E67118
+     (pricing "Get Started" pills). Headings are Nunito 700 (h1 58px),
+     body is Jost 16px; buttons are PILLS (radius 25–40px). */
+  --color-brand: #ff4495;
+  --color-brand-dark: #ff6d6d;
+  --color-navy: #192839;
+  --color-ink: #131933;
+  --color-copy: #545454;
+  --color-band: #f8fbfe;
+  --color-footer-text: #5e5e5e;
+  --color-footer-heading: #1a1a1a;
+  --color-orange: #e67118;
+
+  /* Jost (body) + Nunito (headings) via Google Fonts <link> in
+     index.html — matching the source theme's font choice. */
+  --font-sans: 'Jost', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+}
