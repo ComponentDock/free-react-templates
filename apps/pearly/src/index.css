@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Pearly brand palette — mint/teal clinical dental recreation (design
+     token notes for the recreated template): mint #39CCA4 (header CTA,
+     underline bars, hover fills), navy #122C77 (headlines, outlines,
+     borders, footer headings), royal blue #2845BA (submit button), pale
+     mint #F9FCFC (section surfaces), soft #F9F9FF (input surfaces),
+     body gray #737B92. */
+  --color-mint: #39cca4;
+  --color-navy: #122c77;
+  --color-royal: #2845ba;
+  --color-mist: #f9fcfc;
+  --color-soft: #f9f9ff;
+  --color-body: #737b92;
+
+  /* Chivo — single sans family used across the source design. */
+  --font-sans: 'Chivo', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Chivo', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-body antialiased;
+  }
+}
