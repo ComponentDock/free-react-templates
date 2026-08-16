@@ -553,7 +553,7 @@
 - [x] **Buildream** — [colorlib](https://colorlib.com/wp/template/buildream/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildream-free-template.jpg) · [mortar](https://mortar.free.componentdock.com)
 - [x] **Byfaith** — [colorlib](https://colorlib.com/wp/template/byfaith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/byfaith-free-template.jpg) · [sanctus](https://sanctus.free.componentdock.com)
 - [x] **Cakeshop** — [colorlib](https://colorlib.com/wp/template/cakeshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cakeshop-colorlib-template.jpg) · [patisserie](https://patisserie.free.componentdock.com)
-- [~] **Calvino** — [colorlib](https://colorlib.com/wp/template/calvino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calvino-free-template.jpg)
+- [x] **Calvino** — [colorlib](https://colorlib.com/wp/template/calvino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calvino-free-template.jpg) · [reachly.free.componentdock.com](https://reachly.free.componentdock.com)
 - [ ] **Capitalshop** — [colorlib](https://colorlib.com/wp/template/capitalshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/capitalshop-free-template.jpg)
 - [x] **Carepair** — [colorlib](https://colorlib.com/wp/template/carepair/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carepair-free-template-1.jpg) · [fixly](https://fixly.free.componentdock.com)
 - [ ] **Charitee** — [colorlib](https://colorlib.com/wp/template/charitee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/charitee-colorlib-template.jpg)
@@ -2023,7 +2023,7 @@
 - [x] **Bulkapp** — [colorlib](https://colorlib.com/wp/template/bulkapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bulkapp-free-template.jpg) · [Bulkapp](https://bulkapp.free.componentdock.com)
 - [ ] **Ca App** — [colorlib](https://colorlib.com/wp/template/ca-app/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ca-app-showcase-website-template.jpg)
 - [ ] **Callcenter** — [colorlib](https://colorlib.com/wp/template/callcenter/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/callcenter-free-call-center-website-template.jpg)
-- [ ] **Calvino** — [colorlib](https://colorlib.com/wp/template/calvino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calvino-free-template.jpg)
+- [x] **Calvino** — [colorlib](https://colorlib.com/wp/template/calvino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calvino-free-template.jpg) · [reachly.free.componentdock.com](https://reachly.free.componentdock.com)
 - [x] **Chimper** — [colorlib](https://colorlib.com/wp/template/chimper/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/chimper-free-template.jpg) · [Chimper](https://chimper.free.componentdock.com)
 - [x] **Cloud83** — [colorlib](https://colorlib.com/wp/template/cloud83/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cloud83-free-template.jpg) · [Stratus](https://stratus.free.componentdock.com)
 - [ ] **Coffee** — [colorlib](https://colorlib.com/wp/template/coffee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coffee-free-template.jpg)
@@ -2778,7 +2778,7 @@
 
 ## Seo (8)
 
-- [ ] **Calvino** — [colorlib](https://colorlib.com/wp/template/calvino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calvino-free-template.jpg)
+- [x] **Calvino** — [colorlib](https://colorlib.com/wp/template/calvino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calvino-free-template.jpg) · [reachly.free.componentdock.com](https://reachly.free.componentdock.com)
 - [x] **Echo** — [colorlib](https://colorlib.com/wp/template/echo/) · [resonance](https://resonance.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/echo-free-template.jpg)
 - [ ] **Expo** — [colorlib](https://colorlib.com/wp/template/expo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/expo-free-template.jpg)
 - [x] **Personal Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/personal-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personal-website-templates.jpg) · [persona](https://persona.free.componentdock.com)
