@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Deliverly brand palette — logistics & delivery recreation (design token
+     notes for the recreated template): brand green #61b15a (primary buttons,
+     active links, prices, quote marks, icon circles, underline accents),
+     hover green #79bd73 (button hover), border/active greens #71b96b/#81c17b,
+     dark teal #436871 (inquiry link), ink #212529 (body text), muted #6c757d
+     (secondary text), faint #fafafa (icon panel), light #f8f9fa (section
+     bands), footer #efefef (footer surface), link muted #777 (footer links). */
+  --color-brand: #61b15a;
+  --color-brand-hover: #79bd73;
+  --color-brand-border: #71b96b;
+  --color-brand-active: #81c17b;
+  --color-brand-deep: #436871;
+  --color-brand-soft: rgba(97, 177, 90, 0.2);
+  --color-brand-soft-strong: rgba(97, 177, 90, 0.5);
+  --color-ink: #212529;
+  --color-muted: #6c757d;
+  --color-faint: #fafafa;
+  --color-light: #f8f9fa;
+  --color-footer: #efefef;
+  --color-link-muted: #777;
+
+  /* Playfair Display for headings, Open Sans for body — the source design
+     declares both families (loaded via Google Fonts links in index.html). */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+}
