@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Fiscale brand palette — green #24b800 (icons, number circles, primary
+     buttons, checkmarks, links, testimonial arrow hover), royal blue #4877fb
+     (hero overlay, section headings, CTA band, price text, secondary
+     buttons, step hover border), ink #000 headings, body rgba(0,0,0,0.5),
+     muted #888/#777 footer text, fog #efefef footer bg, light #f8f9fa
+     section bg, borders #ccc/#e6e6e6, paper #fff. Poppins (headings) +
+     Open Sans (body) via the <link> in index.html. */
+  --color-brand: #24b800;
+  --color-accent: #4877fb;
+  --color-ink: #000;
+  --color-body: rgba(0, 0, 0, 0.5);
+  --color-muted: #888;
+  --color-muted-2: #777;
+  --color-fog: #efefef;
+  --color-light: #f8f9fa;
+  --color-line: #ccc;
+  --color-line-2: #e6e6e6;
+  --color-paper: #fff;
+
+  --font-sans:
+    'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
