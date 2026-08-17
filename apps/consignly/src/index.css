@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Consignly brand palette — navy #081158 primary (buttons, links,
+     accordion open state, active dots), hero navy #070d59, accent cyan
+     #00eaff (hero search button, counter underline) + soft cyan #29eafd
+     (service icons), ink #212529 body text, muted #6c757d, label gray
+     #adb5bd (11px uppercase subheadings), surface #f8f9fa (testimonials
+     band), footer #efefef with #888 text, #777 links, and #0c1a87 link
+     hover. Montserrat (headings/logo) + Open Sans (body) via the <link>
+     in index.html. */
+  --color-brand: #081158;
+  --color-brand-dark: #060e46;
+  --color-navy: #070d59;
+  --color-accent: #00eaff;
+  --color-accent-soft: #29eafd;
+  --color-ink: #212529;
+  --color-muted: #6c757d;
+  --color-label: #adb5bd;
+  --color-surface: #f8f9fa;
+  --color-footer: #efefef;
+  --color-foot-text: #888;
+  --color-foot-link: #777;
+  --color-foot-hover: #0c1a87;
+
+  --font-sans:
+    'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display:
+    'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
