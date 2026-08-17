@@ -130,11 +130,15 @@ TypeScript.
     `primary-btn` white bg / #1D2A3B text / padding 14px 32px 12px;
     search submit #4657F0 bg / white text / padding 10px.
   - Radii: 0 everywhere except 50% social circles.
-- **Recreation decisions:** all photos → seeded picsum
-  (`https://picsum.photos/seed/skylark-<n>/<w>/<h>`): hero skylark-1,
-  special-offer cards skylark-2..4, benefit photos skylark-5..8, feature
-  cards skylark-9..13, gallery slides skylark-14..24, news thumbs
-  skylark-25..27, blog cards skylark-28..29, gallery bg skylark-30; icons →
+- **Recreation decisions:** all photos → picsum placeholders: hero pinned
+  `https://picsum.photos/id/1036/1920/1080` (Himalayan base camp, verified
+  travel-mountain scene — matches the source's cockpit-over-mountains
+  adventure feel), gallery bg pinned `https://picsum.photos/id/1015/1920/800`
+  (Preikestolen fjord, verified); all remaining photos seeded
+  (`https://picsum.photos/seed/skylark-<n>/<w>/<h>`): special-offer cards
+  skylark-offer-1..3, benefit photos skylark-benefit-1..4, feature cards
+  skylark-feature-1..6, news thumbs skylark-news-1..3, blog cards
+  skylark-blog-1..2; icons →
   lucide-react (MapPin, Phone, Mail, Facebook, Twitter, Youtube, MessageCircle,
   Calendar, Star, ArrowRight, Menu); font Nunito Sans (400/700/800) via
   Google Fonts `<link>` in `index.html`; feature + gallery sliders are
