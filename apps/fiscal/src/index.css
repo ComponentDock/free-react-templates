@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Fiscal brand palette — primary blue #0099e5 (buttons, link colors,
+     footer widget headings, icon circles, active dots), gradient blue
+     #4facfe → #00f2fe (hero background + service icon circles), ink
+     #212529 body text, muted #6c757d lead paragraphs, light #f8f9fa
+     section backgrounds (portfolio, testimonials), footer #efefef with
+     #888 text and #ccc social circles. Work Sans (headings) + Roboto
+     (body) via the <link> in index.html. */
+  --color-brand: #0099e5;
+  --color-brand-hover: #0083c6;
+  --color-gradient-from: #4facfe;
+  --color-gradient-to: #00f2fe;
+  --color-ink: #212529;
+  --color-muted: #6c757d;
+  --color-surface: #f8f9fa;
+  --color-footer: #efefef;
+
+  --font-sans:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display:
+    'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
