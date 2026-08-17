@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Borough brand palette — city directory & listing recreation (design
+     token notes for the recreated template): brand red #ff414d (buttons,
+     active nav link, subheadings, count chips, icon circles, hover
+     states), hover red #f03943 (button hover, diagonal-stripe second
+     tone), dark navy #151c26 (special-offers CTA, copyright bar,
+     how-it-works band), near-black #10151c (footer), light gray #f8f9fa
+     (section surfaces), pale blue-gray #f0f4f7 (step cards). */
+  --color-brand: #ff414d;
+  --color-brand-dark: #f03943;
+  --color-navy: #151c26;
+  --color-ink: #10151c;
+  --color-mist: #f8f9fa;
+  --color-frost: #f0f4f7;
+
+  /* Nunito Sans — the source design declares this family (the recreation
+     actually loads it via a Google Fonts link in index.html). */
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-neutral-800 antialiased;
+  }
+}
