@@ -28,7 +28,7 @@ export function Categories() {
           </div>
 
           {middle && (
-            <div className="group relative flex min-h-[480px] items-end overflow-hidden rounded-[10px]">
+            <div className="group relative flex h-full items-end overflow-hidden rounded-[10px]">
               <img
                 src={middle.image}
                 alt=""
