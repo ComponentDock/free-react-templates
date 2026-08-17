@@ -305,7 +305,9 @@ In link, an Add Listing pill button, and a mobile hamburger menu.
 
 - **GIVEN** the page is scrolled down
 - **WHEN** the header becomes sticky
-- **THEN** it SHALL turn solid white with a soft shadow
+- **THEN** it SHALL turn into a translucent navy bar (`rgba(26,33,61,0.8)`
+  per the source stylesheet `.header-sticky.sticky-bar`) with the soft
+  shadow `0 10px 15px rgba(25,25,25,0.1)`
 
 #### Scenario: Mobile menu
 
