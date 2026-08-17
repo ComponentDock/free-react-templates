@@ -56,7 +56,11 @@ overlay:before` dark overlay is `display: none` — the gradient shows).
      `0 15px 30px rgba(0,0,0,.1)`). NOTE: base CSS `.hero .heading` is
      `color:#000` but the live markup adds `text-white` — rendered white,
      the live render wins.
-  3. Services (`section.section.sec-services`, white, `.section` padding
+  3. Features (`div.section.sec-features`, white, immediately after the hero)
+     — `div.row.g-5` of 3 `col-lg-4` cards, each `div.feature.d-flex`:
+     flaticon icon (financial / security / savings), `h3` "On Time Service"
+     (18px, dark) + Blind-Text paragraph. No heading, no buttons.
+  4. Services (`section.section.sec-services`, white, `.section` padding
      7rem 0) — centered `h2.heading` "Our Services" (`text-transform:
 uppercase`, 30px, bold) + lead paragraph; `div.row` of 6
      `div.service` cards (padding 40px, white bg, shadow
@@ -64,28 +68,28 @@ uppercase`, 30px, bold) + lead paragraph; `div.row` of 6
      (50px, gradient `#4facfe → #00f2fe` circle background via `:before`),
      `h3` "On Time Service" (18px #000), Blind-Text paragraph,
      `a.btn.btn-outline-primary.py-2.px-4` "Read more".
-  4. CTA band (`section.section.sec-cta.overlay`) — `background-image:
+  5. CTA band (`section.section.sec-cta.overlay`) — `background-image:
 url(images/img_4.jpg)`, `background-position: 100% center`, `:before`
      overlay `rgba(0,0,0,.5)`; white `h2.heading` "Wanna Talk To Us?"
      (uppercase) + white paragraph + `a.btn.btn-primary` "Contact us".
-  5. Portfolio (`section.section.sec-portfolio.bg-light`, `pb-5`) — centered
+  6. Portfolio (`section.section.sec-portfolio.bg-light`, `pb-5`) — centered
      `h2.heading` "Our Portfolio" + lead; `div.post-slider` (tiny-slider):
      5+ slides, each `div.post-entry`: image + `h5` caption "Behind the
      word mountains" + paragraph; Prev / Next buttons
      (`a.btn.btn-primary.py-2`); tns dots (7px circles, active #0099e5).
-  6. Testimonials (`section.section.sec-testimonial.bg-light`) — centered
+  7. Testimonials (`section.section.sec-testimonial.bg-light`) — centered
      `h2.heading` "Testimonials" + longer lead paragraph; `div.testimonial-
 slider` (tiny-slider): 3 `div.testimonial-half.d-lg-flex.bg-white`
      slides, each 50/50: `.img` half (cover background photo) + `.text`
      half (padding 90px): `blockquote` (18px, 'Georgia' serif italic,
      #000) Blind-Text quote + `.author`: "John Campbell" + span
      "CEO & Co-founder"; tns dots.
-  7. News (`section.section.sec-news`, white) — centered `h2.heading`
-     "Latest News" + lead; `div.post-slider-wrap` (tiny-slider) of 3
-     `div.post-entry` cards: `img.card-img-top`, `.date` "Jan 20, 2021"
-     (uppercase, letter-spacing .05rem), `h5` title link "Behind the word
-     mountains", paragraph, "Read more" link.
-  8. Footer (`footer.site-footer`, bg #efefef, 14px, color #888, padding
+  8. News (`section.section.sec-news`, white) — centered `h2.heading`
+     "Latest News" + lead; `div.row` of 3 `col-lg-4` `div.card.post-entry`
+     cards (static grid — no slider): `img.card-img-top`, `.date` "Jan 20,
+     2021" (uppercase, letter-spacing .05rem), `h5` title link "Behind the
+     word mountains", paragraph, "Read more" link.
+  9. Footer (`footer.site-footer`, bg #efefef, 14px, color #888, padding
      70px 0) — `div.row` of 3 `div.col-lg-4` widgets (h3 12px 700 uppercase
      #0099e5):
      - "Contact": `<address>` "43 Raymouth Rd. Baltemoer, London 3910" +
@@ -208,6 +212,20 @@ subtext, two CTAs, and a right-side image.
 - **AND** the right column SHALL show the hero image with the soft shadow
   `0 15px 30px rgba(0,0,0,.1)`
 
+### Requirement: Features
+
+The system SHALL render a three-card icon strip directly after the hero with
+icon, heading, and copy per card.
+
+#### Scenario: Features content
+
+- **GIVEN** the features strip is rendered
+- **WHEN** the page loads
+- **THEN** the strip SHALL sit on white right after the hero with three cards
+  in a row (stacked on small screens)
+- **AND** each card SHALL show a brand-blue icon, the heading "On Time
+  Service" (18px), and a Blind-Text paragraph, with no heading and no buttons
+
 ### Requirement: Services
 
 The system SHALL render an "Our Services" section with six white service
@@ -274,16 +292,15 @@ carousel of split image/quote slides.
 
 ### Requirement: News
 
-The system SHALL render a "Latest News" section with a carousel of post
-cards (image, date, title, excerpt, Read more).
+The system SHALL render a "Latest News" section with a static grid of three
+post cards (image, date, title link, excerpt, Read more).
 
 #### Scenario: News content
 
 - **GIVEN** the news section is rendered
 - **WHEN** the page loads
-- **THEN** the centered uppercase heading "Latest News" SHALL render with a
-  lead paragraph on white
-- **AND** a carousel SHALL cycle three post cards, each with a top image, an
+- **THEN** the heading "Latest News" SHALL render on white
+- **AND** a static grid SHALL show three post cards, each with a top image, an
   uppercase spaced date "Jan 20, 2021", a title link "Behind the word
   mountains", an excerpt paragraph, and a "Read more" link
 
