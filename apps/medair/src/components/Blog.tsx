@@ -21,7 +21,7 @@ export function Blog() {
             >
               <div className="relative">
                 <img src={image} alt="" className="h-56 w-full object-cover" loading="lazy" />
-                <div className="absolute left-5 top-5 bg-brand px-4 py-3 text-center text-white">
+                <div className="absolute bottom-5 left-5 bg-brand px-4 py-3 text-center text-white">
                   <span className="block font-display text-3xl leading-none">{day}</span>
                   <span className="mt-1 block text-xs font-semibold uppercase tracking-wider">
                     {month}

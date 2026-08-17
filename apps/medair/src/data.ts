@@ -7,7 +7,7 @@ export const BRAND = 'Medair'
 export const NAV_LINKS = ['Home', 'About', 'Services', 'Gallery', 'Blog', 'Contact'] as const
 
 export const IMAGES = {
-  hero: 'https://picsum.photos/seed/medair-hero/1600/900',
+  hero: 'https://picsum.photos/id/225/1600/900',
   about: 'https://picsum.photos/seed/medair-about/600/700',
   video: 'https://picsum.photos/seed/medair-video/1600/900',
   appointment: 'https://picsum.photos/seed/medair-appt/1600/900',
