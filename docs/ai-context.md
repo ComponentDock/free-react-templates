@@ -125,5 +125,14 @@ Key decisions (details in `docs/adr/`):
   fires; navigation is neutralized).
 - **`fallow` health output:** "✗ 0 above threshold" is a healthy summary line,
   not an issue.
-- **git identity:** commits on this host use the machine identity unless a repo
+- **`hidden` attribute vs RTL:** jsdom does not apply the HTML `hidden`
+  attribute as `display:none`, so `screen.queryByText` still finds elements
+  inside a `hidden` panel (tabbed/accordion content). Render only the active
+  panel (conditional render) instead of toggling `hidden` — switching tests
+  then pass and inactive content is truly absent.
+- **knip flags same-file-only components:** an `export function` that is only
+  used inside its own file (e.g. a modal co-located with its trigger) is
+  reported as an unused export. Drop the `export` keyword for
+  internal-only components; keep exports only for what other modules import.
+- **`git identity:`** commits on this host use the machine identity unless a repo
   `user.name`/`user.email` is set locally.
