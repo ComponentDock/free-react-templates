@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Medair brand colors — health/wellness one-pager palette:
+     brand green #36c940 (buttons, headline span, icons, badges,
+     subheadings, appointment overlay), dark #222222 (hero/intro overlays,
+     scrolled navbar), ink #000000 (blog headings), footer #1a1a1a,
+     footer bottom bar #151515, light section #f8f9fa. */
+  --color-brand: #36c940;
+  --color-dark: #222222;
+  --color-ink: #000000;
+  --color-footer: #1a1a1a;
+  --color-footerbar: #151515;
+  --color-light: #f8f9fa;
+
+  /* Prata (serif editorial headings) + Poppins (body) via Google Fonts
+     <link> in index.html. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Prata', ui-serif, Georgia, serif;
+}
