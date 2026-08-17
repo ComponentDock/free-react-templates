@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Findly brand palette — directory/listing site: primary blue #4DB7FE
+     (buttons, search button, location button, nav hovers, active states),
+     deep blue #304CBB (active category pill fill), navy #1A213D (headings,
+     input labels, submenu base, button hover sweep), ink #140C40 (hero
+     search input text), orange #FF6F00 (rating stars + review text),
+     pale section blue-grey #F1F6F9 (interest categories, how-it-works,
+     testimonial quote card), pale footer blue #F1FBFF (footer wrapper),
+     muted brown #6B5A5A (section subtext), grey-blue #A4A6AE (footer
+     body copy), muted slate #68696E (founder role text), muted teal
+     #677F8B (social icons). Work Sans (headings, buttons, nav) + Mulish
+     (body) via the <link>s in index.html. */
+  --color-brand: #4db7fe;
+  --color-deep: #304cbb;
+  --color-navy: #1a213d;
+  --color-ink: #140c40;
+  --color-orange: #ff6f00;
+  --color-section: #f1f6f9;
+  --color-footerbg: #f1fbff;
+  --color-muted: #6b5a5a;
+  --color-footertext: #a4a6ae;
+  --color-roletext: #68696e;
+  --color-socials: #677f8b;
+  --color-paper: #fff;
+
+  --font-sans:
+    'Mulish', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display:
+    'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@keyframes rotateme {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Slowly rotating 2px dotted ring shown around destination photos on
+   hover (rotateme 30s linear infinite in the source stylesheet). */
+.animate-ring {
+  animation: rotateme 30s linear infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
