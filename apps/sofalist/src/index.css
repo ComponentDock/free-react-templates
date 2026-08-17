@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Sofalist brand palette — light, airy furniture store: pale blue
+     #d4eaf5 (hero panel, stats band, footer), amber #cf7500 (sole warm
+     accent on the primary button), steel blue #267aa4 (white button
+     text), link blue #3099cd (footer link hover), light #f8f9fa bands,
+     ink #000 counters, plus four pastel card pairs (rose, sage, gold,
+     tan). Poppins (body + headings) via the <link> in index.html. */
+  --color-amber: #cf7500;
+  --color-steel: #267aa4;
+  --color-paleblue: #d4eaf5;
+  --color-linkblue: #3099cd;
+  --color-light: #f8f9fa;
+  --color-ink: #000;
+  --color-paper: #fff;
+  --color-muted: #666;
+
+  --color-rose: #f5ebeb;
+  --color-rose-icon: #cb9696;
+  --color-sage: #dcebdd;
+  --color-sage-icon: #8bbd8e;
+  --color-gold: #f5efd8;
+  --color-gold-icon: #d1b54a;
+  --color-tan: #f4e6d8;
+  --color-tan-icon: #d29a61;
+
+  --font-sans:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
