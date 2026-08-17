@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Confab brand palette — recreated conference/design-week event
+     template (design token notes): neon yellow #ffbd00 primary (buttons,
+     hero accent word, speaker names, active tab underline), pink #ff60ce
+     secondary (date, stats numbers, play button, schedule icons), orange
+     #ec583a hover sweep, deep purple-black #0b0016 overlay base, near-black
+     #0a0a0a sticky header / #0e0e0e cards, light #f2f4f8 fog, muted
+     #9b9eac body text, dark navy #131933 stat labels, white content text. */
+  --color-brand: #ffbd00;
+  --color-blush: #ff60ce;
+  --color-ember: #ec583a;
+  --color-night: #0b0016;
+  --color-coal: #0a0a0a;
+  --color-card: #0e0e0e;
+  --color-fog: #f2f4f8;
+  --color-mist: #9b9eac;
+  --color-navy: #131933;
+
+  /* Barlow for body/counters, Mitr for headings/buttons — the source
+     design declares both families (loaded via Google Fonts links). */
+  --font-sans: 'Barlow', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Mitr', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-coal font-sans text-white antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+  }
+}
