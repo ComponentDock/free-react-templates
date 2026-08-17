@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Propel brand palette — recreated business/startup corporate template
+     (design token notes): brand blue #0e49b5 (buttons, logo dot, check
+     icons, footer links, hover #0c3e9a / active #0b3a91), body ink
+     #212529, muted #6c757d, light smoke #f8f9fa / fog #f0f0f0, footer
+     gray #efefef, faint #ccc (service numbers), meta #999 (post dates),
+     foot links #777 / text #888, list links #4a4a4a. */
+  --color-brand: #0e49b5;
+  --color-brand-dark: #0c3e9a;
+  --color-ink: #212529;
+  --color-muted: #6c757d;
+  --color-smoke: #f8f9fa;
+  --color-fog: #f0f0f0;
+  --color-footer: #efefef;
+  --color-faint: #ccc;
+  --color-meta: #999;
+  --color-footlink: #777;
+  --color-foottext: #888;
+  --color-list: #4a4a4a;
+
+  /* Montserrat for headings/logo, Open Sans for body — the source design
+     declares both families (loaded via Google Fonts links). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+  }
+}
