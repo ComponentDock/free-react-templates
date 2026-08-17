@@ -577,7 +577,7 @@
 - [x] **Ecogreen** — [colorlib](https://colorlib.com/wp/template/ecogreen/) · [meadow](https://meadow.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ecogreen-colorlib-template.jpg)
 - [x] **Eventotemplate** — [colorlib](https://colorlib.com/wp/template/eventotemplate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventotemplate-colorlib.jpg) · [confab](https://confab.free.componentdock.com)
 - [x] **Express** — [colorlib](https://colorlib.com/wp/template/express/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/express-free-template.jpg) · [propel](https://propel.free.componentdock.com)
-- [~] **Fective** — [colorlib](https://colorlib.com/wp/template/fective/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fective-free-template.jpg)
+- [x] **Fective** — [colorlib](https://colorlib.com/wp/template/fective/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fective-free-template.jpg) · [barrister](https://barrister.free.componentdock.com)
 - [ ] **Financier** — [colorlib](https://colorlib.com/wp/template/financier/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/financier-free-templatel.jpg)
 - [ ] **Flyplane** — [colorlib](https://colorlib.com/wp/template/flyplane/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/flyplane-free-template.jpg)
 - [ ] **Foundation2** — [colorlib](https://colorlib.com/wp/template/foundation2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foundation2-free-template.jpg)
@@ -2115,7 +2115,7 @@
 
 - [ ] **Ariclaw** — [colorlib](https://colorlib.com/wp/template/ariclaw/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ariclaw-free-template.jpg)
 - [ ] **Atorni** — [colorlib](https://colorlib.com/wp/template/atorni/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/atorni-colorlib-template-1.jpg)
-- [~] **Fective** — [colorlib](https://colorlib.com/wp/template/fective/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fective-free-template.jpg)
+- [x] **Fective** — [colorlib](https://colorlib.com/wp/template/fective/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fective-free-template.jpg) · [barrister](https://barrister.free.componentdock.com)
 - [x] **Judge** — [colorlib](https://colorlib.com/wp/template/judge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/judge-free-template.jpg) · [gavel](https://gavel.free.componentdock.com)
 - [ ] **Judicial** — [colorlib](https://colorlib.com/wp/template/judicial/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/judicial-free-template.jpg)
 - [ ] **Justice** — [colorlib](https://colorlib.com/wp/template/justice/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/justice-free-template.jpg)
