@@ -584,7 +584,7 @@
 - [x] **Framework** — [colorlib](https://colorlib.com/wp/template/framework/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/framework-free-template.jpg) · [fiscale](https://fiscale.free.componentdock.com)
 [x] **Franclin** — [colorlib](https://colorlib.com/wp/template/franclin/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/franclin-free-template.jpg) · [interiora](https://interiora.free.componentdock.com)
 - [x] **Furnish** — [colorlib](https://colorlib.com/wp/template/furnish/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/furnish-colorlib-template.jpg) · [sofalist](https://sofalist.free.componentdock.com)
-- [ ] **Gardening** — [colorlib](https://colorlib.com/wp/template/gardening/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gardening-colorlib-template.jpg)
+- [~] **Gardening** — [colorlib](https://colorlib.com/wp/template/gardening/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gardening-colorlib-template.jpg)
 - [ ] **Gricklo** — [colorlib](https://colorlib.com/wp/template/gricklo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gricklo-free-template.jpg)
 - [ ] **Healthvest** — [colorlib](https://colorlib.com/wp/template/healthvest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/healthvest-free-template.jpg)
 - [ ] **Homofy** — [colorlib](https://colorlib.com/wp/template/homofy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/homofy-colorlib-template.jpg)
@@ -1022,7 +1022,7 @@
 - [x] **Furnish** — [colorlib](https://colorlib.com/wp/template/furnish/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/furnish-colorlib-template.jpg) · [sofalist](https://sofalist.free.componentdock.com)
 - [x] **Gaas** — [colorlib](https://colorlib.com/wp/template/gaas/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gaas-free-template.jpg) · [Gaas](https://gaas.free.componentdock.com)
 - [ ] **Game Warrior** — [colorlib](https://colorlib.com/wp/template/game-warrior/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gamewarrior-free-template.jpg)
-- [ ] **Gardening** — [colorlib](https://colorlib.com/wp/template/gardening/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gardening-colorlib-template.jpg)
+- [~] **Gardening** — [colorlib](https://colorlib.com/wp/template/gardening/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gardening-colorlib-template.jpg)
 - [ ] **Glamour** — [colorlib](https://colorlib.com/wp/template/glamour/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/glamour-free-template.jpg)
 - [ ] **Glint** — [colorlib](https://colorlib.com/wp/template/glint/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/glint-simple-website-template.jpeg)
 - [ ] **Gourmet** — [colorlib](https://colorlib.com/wp/template/gourmet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gourmet-free-template.jpg)
@@ -2107,7 +2107,7 @@
 
 ## Landscaping (3)
 
-- [ ] **Gardening** — [colorlib](https://colorlib.com/wp/template/gardening/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gardening-colorlib-template.jpg)
+- [~] **Gardening** — [colorlib](https://colorlib.com/wp/template/gardening/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gardening-colorlib-template.jpg)
 - [ ] **Hardenero** — [colorlib](https://colorlib.com/wp/template/hardenero/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hardenero-free-template.jpg)
 - [ ] **Lawncare** — [colorlib](https://colorlib.com/wp/template/lawncare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawncare-free-template.jpg)
 
