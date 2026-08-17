@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Meadow
+   itself is a light-only page (the source design is bright eco-charity). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Meadow brand palette — recreated design tokens: bright eco green
+     #73b925 (navbar, buttons, icons, progress fills, band overlays), deeper
+     scrolled-nav green #7bc628, light-green tints for chips (mint-soft),
+     icon borders + blog link buttons (mint), and alternate section bands
+     (mist), near-white surfaces (canvas), charcoal top bar (ink). */
+  --color-brand: #73b925;
+  --color-brand-deep: #7bc628;
+  --color-mint: #d7f1b9;
+  --color-mint-soft: #effae4;
+  --color-mist: #f4f6f1;
+  --color-canvas: #f9faf7;
+  --color-ink: #1c1c1c;
+
+  /* Body + caption text: warm gray #8c8c8c (16px / 1.8 line-height), top-bar
+     contact values #b5b5b5. */
+  --color-body: #8c8c8c;
+  --color-faint: #b5b5b5;
+
+  /* Original font: Poppins (300–700) via Google Fonts — body AND headings. */
+  --font-sans:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display:
+    'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-canvas font-sans text-body;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}
