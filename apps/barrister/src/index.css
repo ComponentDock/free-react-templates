@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Barrister brand palette — gold #d79100 (primary: buttons, kickers,
+     v-lines, numbers, logo dot), hover #dda226, border hover #db9c1a,
+     active #dfa733; dark slate #242f3a (hero overlay + icon labels),
+     ink #212529 body text, muted #6c757d, light gray #f8f9fa section
+     backgrounds, border #e9ecef, light gold #ebc880 accent. Playfair
+     Display (headings) + Raleway (body) via the <link> in index.html. */
+  --color-brand: #d79100;
+  --color-brand-dark: #dda226;
+  --color-brand-deep: #db9c1a;
+  --color-brand-active: #dfa733;
+  --color-slate: #242f3a;
+  --color-ink: #212529;
+  --color-muted: #6c757d;
+  --color-surface: #f8f9fa;
+  --color-edge: #e9ecef;
+  --color-gold-light: #ebc880;
+
+  --font-sans:
+    'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial,
+    sans-serif;
+  --font-display:
+    'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
