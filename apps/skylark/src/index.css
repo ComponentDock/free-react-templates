@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Skylark brand palette — flight/travel booking: ink navy #1D2A3B
+     (headings, menu links, card titles, hero button text), brand blue
+     #4657F0 (section-title underline bar, field icons, price badges,
+     search button bg, hover accents), star yellow #F9B71C (feature
+     ratings), muted #747E8C (footer icons, meta), light band #f4f8fb
+     (benefit section bg), night #191B26 (footer bg). Nunito Sans
+     (400/600/700/800) via the <link> in index.html. */
+  --color-ink: #1d2a3b;
+  --color-brand: #4657f0;
+  --color-brand-deep: #3a48cc;
+  --color-star: #f9b71c;
+  --color-muted: #747e8c;
+  --color-cloud: #f4f8fb;
+  --color-night: #191b26;
+
+  --font-sans:
+    'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial,
+    sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white font-sans text-ink antialiased;
+}
