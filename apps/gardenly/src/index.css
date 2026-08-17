@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Gardenly brand palette — green gardening service: primary green
+     #00880F (buttons, icons, links, submit), forest #305534 (about band,
+     headings, footer text, hero overlay), muted sage #66816A (paragraphs,
+     form borders/text), pale sage #C9D6CB (grid/border lines), mint
+     #EFF6F0 (categories/commitment/slider backgrounds), near-black plum
+     #301A22 (nav links), pink #e6115f (button hover sweep), coral #FF6162
+     (form label), bright green #12C426 (link hover). Barlow (body +
+     headings) via the <link> in index.html. */
+  --color-garden: #00880f;
+  --color-forest: #305534;
+  --color-sage: #66816a;
+  --color-sage-pale: #c9d6cb;
+  --color-mint: #eff6f0;
+  --color-plum: #301a22;
+  --color-pink: #e6115f;
+  --color-coral: #ff6162;
+  --color-bright: #12c426;
+  --color-paper: #fff;
+
+  --font-sans:
+    'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-display:
+    'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
