@@ -636,7 +636,7 @@
 
 ## Bootstrap Accordions (20)
 
-- [~] **Accordion 01** — [colorlib](https://colorlib.com/wp/template/accordion-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-01.jpg)
+- [x] **Accordion 01** — [colorlib](https://colorlib.com/wp/template/accordion-01/) · [pleat](https://pleat.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-01.jpg)
 - [ ] **Accordion 02** — [colorlib](https://colorlib.com/wp/template/accordion-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-02.jpg)
 - [ ] **Accordion 03** — [colorlib](https://colorlib.com/wp/template/accordion-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-03.jpg)
 - [ ] **Accordion 04** — [colorlib](https://colorlib.com/wp/template/accordion-04/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-04.jpg)
