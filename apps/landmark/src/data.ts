@@ -47,12 +47,12 @@ export const HERO_SLIDES: Slide[] = [
     image: 'https://picsum.photos/id/1015/1920/900',
   },
   {
-    eyebrow: '2 Bed - 1 Bath - 1450 Sq Ft',
-    title: 'Riverside Loft',
-    price: '$ 2,150',
+    eyebrow: '6 Bed - 4 Bath - 5800 Sq Ft',
+    title: 'The Grand View Estate',
+    price: '$ 9,750',
     blurb:
-      'An airy loft above the riverwalk, wrapped in brick and glass with a sunny west-facing terrace.',
-    image: 'https://picsum.photos/id/1036/1920/900',
+      'A stone estate perched above the valley with lake views, castle turrets and manicured grounds.',
+    image: 'https://picsum.photos/id/1040/1920/900',
   },
 ]
 
