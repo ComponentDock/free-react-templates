@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { render, screen, within } from '@testing-library/react'
 import { Footer } from './Footer'
 import { FOOTER_COLUMNS } from '../data'
 
@@ -14,9 +14,10 @@ describe('Footer', () => {
     expect(screen.getByRole('link', { name: 'Linkedin' })).toBeInTheDocument()
 
     for (const column of FOOTER_COLUMNS) {
-      expect(screen.getByRole('heading', { name: column.title })).toBeInTheDocument()
+      const heading = screen.getByRole('heading', { name: column.title })
+      const columnBody = within(heading.closest('div')!)
       for (const link of column.links) {
-        expect(screen.getByText(link)).toBeInTheDocument()
+        expect(columnBody.getByText(link)).toBeInTheDocument()
       }
     }
   })

@@ -6,10 +6,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Landmark brand palette — recreated from the ColorLib "Konato" design
-     (live demo: https://preview.colorlib.com/theme/konato/):
-     sky blue #00AEFF is THE brand color — buttons (.btn, .submit-btn2),
-     prices, links, nav hover + underline. */
+  /* Landmark brand palette — recreated from a real-estate design (live demo
+   reference kept in the spec): sky blue #00AEFF is THE brand color —
+   buttons, prices, links, nav hover + underline. */
   --color-brand: #00aeff;
 
   /* Navy — the dark #004274 header-top bar and the newsletter panel

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { fireEvent, render, screen } from '@testing-library/react'
+import { fireEvent, render, screen, within } from '@testing-library/react'
 import { PropertyCarousel } from './PropertyCarousel'
 import { FEATURED_PROPERTIES } from '../data'
 
@@ -22,14 +22,16 @@ describe('PropertyCarousel', () => {
     const images = container.querySelectorAll('article img')
     expect(images).toHaveLength(FEATURED_PROPERTIES.length)
 
-    for (const property of FEATURED_PROPERTIES) {
-      expect(screen.getByText(property.price)).toBeInTheDocument()
-      expect(screen.getByText(property.type)).toBeInTheDocument()
-      expect(screen.getByText(property.blurb)).toBeInTheDocument()
-      expect(screen.getByText(property.beds)).toBeInTheDocument()
-      expect(screen.getByText(property.baths)).toBeInTheDocument()
-      expect(screen.getByText(property.sqft)).toBeInTheDocument()
-    }
+    const articles = Array.from(container.querySelectorAll('article'))
+    FEATURED_PROPERTIES.forEach((property, i) => {
+      const article = within(articles[i]!)
+      expect(article.getByText(property.price)).toBeInTheDocument()
+      expect(article.getByText(property.type)).toBeInTheDocument()
+      expect(article.getByText(property.blurb)).toBeInTheDocument()
+      expect(article.getByText(property.beds)).toBeInTheDocument()
+      expect(article.getByText(property.baths)).toBeInTheDocument()
+      expect(article.getByText(property.sqft)).toBeInTheDocument()
+    })
   })
 
   it('scrolls the carousel with the arrow buttons and disables them at the ends', () => {

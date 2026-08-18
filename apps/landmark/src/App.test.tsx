@@ -15,14 +15,14 @@ describe('App', () => {
     const sections = Array.from(main.querySelectorAll('section'))
     const headings = sections.map((section) => section.querySelector('h1, h2')?.textContent ?? '')
 
-    expect(headings).toEqual([
-      'Light House NY',
-      'Display Latest & Featured Properties',
-      'How we help people?',
-      'Properties for Sale',
-      'Explore\n        by Property Type',
-      'Subscribe Newsletter',
-    ])
+    expect(headings).toHaveLength(7)
+    expect(headings[0]).toBe('Light House NY')
+    expect(headings[1]).toBe('Display Latest & Featured Properties')
+    expect(headings[2]).toBe('How we help people?')
+    expect(headings[3]).toBe('Properties for Sale')
+    expect(headings[4]).toMatch(/Explore/)
+    expect(headings[5]).toBe('Our Agents')
+    expect(headings[6]).toBe('Subscribe Newsletter')
 
     // Both property carousels render four cards each.
     const cards = container.querySelectorAll('article')
