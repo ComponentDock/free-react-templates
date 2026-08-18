@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Domily brand palette — real-estate marketplace one-pager:
+     gold #FEC82F (accent: header top line, hero span, outline CTAs,
+     promo tab, newsletter subscribe, hover states), navy-ink #040F2E
+     (headings, hero caption panel, newsletter band bg, logo text),
+     navy #122C77 (solid CTA, section labels, prices), slate #071112
+     (property card titles), card-border #BECCD6 (property card frames),
+     services-line #C9D6CB (why-choose-us grid rules), footer-bottom
+     #F9FAFB (copyright bar), about photo tint #FFF6EE. */
+  --color-gold: #fec82f;
+  --color-navy-ink: #040f2e;
+  --color-navy: #122c77;
+  --color-slate: #071112;
+  --color-cardborder: #beccd6;
+  --color-serviceline: #c9d6cb;
+  --color-footbar: #f9fafb;
+  --color-phototint: #fff6ee;
+  --color-teambg: #004274;
+
+  /* Shippori Mincho (serif display headings) + Roboto (body) via Google
+     Fonts <link> in index.html. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Shippori Mincho', ui-serif, Georgia, serif;
+}
