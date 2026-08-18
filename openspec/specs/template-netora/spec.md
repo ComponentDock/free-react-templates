@@ -500,6 +500,13 @@ link columns, social icons, and a copyright bar linking to Component Dock.
 - [ ] Placeholder images `https://picsum.photos/seed/netora-<n>/<w>/<h>` —
       screen the hero seed for a tech/office subject (developer-at-screen
       vibe), never copy ColorLib assets
+      Implementation note (2026-08-18): pinned verified picsum IDs instead of
+      seeds — hero slides use `picsum.photos/id/201` (workspace desk with
+      laptop) and `picsum.photos/id/119` (grayscale workspace), requested at
+      1920x1400 so the source's letterbox bars are cropped by `object-cover`;
+      about = id/2, insights = id/60, services = id/2,3,6, cases = id/1,0,48,
+      avatars = id/64,823. All verified visually as on-subject (office/tech/
+      portrait).
 - [ ] Icons from lucide-react (verify every export with the typeof probe —
       brand glyphs are NOT in lucide-react; socials = inline SVG)
 - [ ] Buttons all radius 0; brand-blue `#316EC2` fill on hover for btn_01
