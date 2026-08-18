@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Concierge brand palette — travel/hotel one-pager tokens:
+     brand teal #00917c (buttons, section headings, feature icons, about
+     panel, footer social circles, link underlines), teal hover #26a290,
+     active #33a796, active-deep #008370 (FAQ open state), FAQ tint #e6f4f2,
+     light section #f8f9fa, muted #888, ink #000. */
+  --color-brand: #00917c;
+  --color-brand-hover: #26a290;
+  --color-brand-active: #33a796;
+  --color-brand-deep: #008370;
+  --color-brand-tint: #e6f4f2;
+  --color-light: #f8f9fa;
+  --color-mute: #888888;
+  --color-ink: #000000;
+
+  /* Work Sans (headings + logo) + Roboto (body) via Google Fonts
+     <link> in index.html. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
