@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Hiredly brand palette — job-board one-pager tokens:
+     brand blue #007AFF (buttons, subscribe, CTA band, active tab
+     underline, logo accent, card hover border), ink navy #18304B
+     (headings), ink-dark #071112 (job card titles), body gray #76787A
+     (paragraphs), muted #97A7AF (meta/secondary text), light #F6F9FC
+     (services + why-different backgrounds), sticky #E1EEFF (sticky
+     header), footer text #4C5753, hairline #f0f0ef (subscribe band
+     borders, footer border). Category chips are pastel tinted:
+     orange / blue / green / indigo / pink. Buttons radius 5px, pricing
+     cards radius 8px; the hero "Search Job" button uses a purple→blue
+     gradient that flattens to solid brand blue on hover. */
+  --color-brand: #007aff;
+  --color-brand-hover: #0066d6;
+  --color-ink: #18304b;
+  --color-ink-dark: #071112;
+  --color-body: #76787a;
+  --color-muted: #97a7af;
+  --color-light: #f6f9fc;
+  --color-sticky: #e1eeff;
+  --color-footer-text: #4c5753;
+  --color-hairline: #f0f0ef;
+  --color-tag-orange: #f27e42;
+  --color-tag-blue: #4294f2;
+  --color-tag-green: #2eb98d;
+  --color-tag-indigo: #6a42f2;
+  --color-tag-pink: #f162bc;
+
+  /* Chivo (body/buttons) + Overpass (headings) via Google Fonts <link>
+     in index.html — matches the source design's font pairing. */
+  --font-sans: 'Chivo', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Overpass', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Hero "Search Job" button: purple→blue horizontal gradient that flattens
+   to solid brand blue on hover (source: .btn.slider-btn). */
+@utility btn-gradient {
+  background-image: linear-gradient(
+    to right,
+    #ca42f2 0%,
+    #6a42f2 39%,
+    #4294f2 75%,
+    #42b5f2 100%,
+    #7db9e8 100%
+  );
+
+  &:hover {
+    background-image: none;
+    background-color: var(--color-brand);
+  }
+}
