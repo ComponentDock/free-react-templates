@@ -188,7 +188,7 @@ you want to done by me? <a>Contact Me</a></strong></p>` + a `p` lorem.
 
 - Navbar: brand "Swatch"; Home, About, Services, Portfolio, Pricing, Blog,
   Contact.
-- Hero: "Hi There!" pill; "I am Keannu Ford" + typewrite ("A Web Designer",
+- Hero: "Hi There!" pill; "I am Kendall Marsh" + typewrite ("A Web Designer",
   "A Developer", "I Love Design.", "I Love to Develop."); "Hire Me" +
   "View Portfolio"; Facebook / Twitter / Linkedin.
 - About tabs: About Me ("My Story" + "I Do Web Design & Development since I
@@ -279,7 +279,9 @@ buttons, and social links.
   background treatment (flat light blue or a light-blue image; a portrait
   photo may sit on the right)
 - **AND** a small "Hi There!" pill SHALL sit above the headline
-- **AND** the h1 SHALL read "I am Keannu Ford" (renamed persona) with a
+- **AND** the h1 SHALL read "I am Kendall Marsh" (persona renamed to match
+  the verified portrait placeholder; the demo persona "Keannu Ford" is
+  paraphrased per the replication latitude) with a
   rotating typewrite phrase cycling through "A Web Designer", "A Developer",
   "I Love Design.", "I Love to Develop."
 - **AND** a paragraph SHALL follow (paraphrased lorem)
@@ -529,3 +531,43 @@ Dock link.
 - [ ] TEMPLATES.md: mark ALL 4 knuford rows `[x]` (lines 597, 2331, 2402, 2716) + surge URL + readme:status when shipped
 - [ ] Deploy check: merged PR → Deploy to Surge.sh workflow green + surge
       URL (swatch.free.componentdock.com) returns 200
+
+## Implementation notes (2026-08-18, stream 1)
+
+Completed per the TDD workflow on `feat/template-swatch` (PR #see bookkeeping).
+Deviations and verified decisions vs. the reference, for the record:
+
+- **Hero background recreated with pure CSS** (`.hero-sky` gradient from
+  light sky-blue `#7ec9f7` to deep royal `#2f7fd8` + three pale `white/15`
+  blob circles): the reference `images/bg_1.avif` is a gradient photo whose
+  only photographic content is the man's cutout portrait — picsum has no
+  reliable matching portrait (verified per the seed-screening pitfall), so
+  the color treatment is preserved exactly and the person is dropped
+  (spec allows flat light-blue with optional portrait). The headline stays
+  WHITE over the deeper gradient stops, matching the screenshot.
+- **Persona renamed to "Kendall Marsh"** to match the verified portrait
+  placeholder `https://picsum.photos/id/1027/640/800` (documented female
+  professional headshot) used in the About section — the demo persona name
+  is paraphrased per the replication latitude (photo-match > name-match).
+- **Portfolio tiles** use verified workspace/design photography IDs
+  (picsum `/id/60, /id/8, /id/0, /id/180, /id/26, /id/48` at 800×600 —
+  screened via the
+  contact-sheet + vision method; dropped gaming/vintage/nature candidates
+  96/1073/1041).
+  1041, 1018, 20 at 800×500). Counter band bg = picsum id 1015 (blue fjord,
+  complements the `#0779e4` overlay at 90%).
+- **Testimonial avatars** are initials-in-circle chips (no picsum human
+  avatar exists for all five; avoids cropped-face risk) — same kind of
+  visual anchor as the reference round avatars.
+- **Google Maps iframe omitted** (allowed deviation) — the contact section
+  keeps the info rows + form + follow-me links in the content column.
+- **Phone/email rendered as plain display strings** (no `tel:`/`mailto:`
+  literals anywhere — tel-literal redaction pitfall).
+- All interactivity is client-side React: typewriter hook, tab switching,
+  counter interval animation (30 steps × 60ms, `Math.ceil` increment so
+  every target is reached exactly), testimonial carousel with active-slide
+  blue highlight + prev/next/dots, mobile menu, contact form success state.
+- Iterated icons verified against the installed lucide-react exports
+  (Palette, Code2, PenTool, Smile, Briefcase, Coffee, Check, X, Plus,
+  ArrowRight, Menu, Quote, MapPin, Mail, Phone, Calendar, MessageCircle,
+  ChevronLeft, ChevronRight).

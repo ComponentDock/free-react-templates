@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Swatch brand palette — web-designer portfolio one-pager tokens:
+     brand blue #0779e4 (buttons, icon boxes, progress fill, counter
+     overlay, price numbers, footer brand mark, scrolled navbar, intro
+     strip, active testimonial slide), brand-soft #3e9ff9 (scrolled
+     navbar active-link background), ink #111111 (footer headings,
+     tab text), body #999999 (paragraph copy), muted #666666 (footer
+     links / secondary), paper #FFFFFF (cards), light #f8f8f8
+     (testimonial + blog section backgrounds), footer-bg #eeeeee
+     (footer canvas), white-on rgba(255,255,255,0.8) (portfolio
+     category spans). Hero is a light sky-blue gradient with pale blob
+     shapes. Single family: Roboto (300/400/500/600/700) via Google
+     Fonts <link> in index.html. Tabs underline brand; pricing cards
+     radius 8px; services cards radius 4px; buttons ~6px. */
+  --color-brand: #0779e4;
+  --color-brand-soft: #3e9ff9;
+  --color-ink: #111111;
+  --color-body: #999999;
+  --color-muted: #666666;
+  --color-paper: #ffffff;
+  --color-light: #f8f8f8;
+  --color-footer-bg: #eeeeee;
+  --color-white-on: rgba(255, 255, 255, 0.8);
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Hero sky treatment — light sky-blue gradient deepening toward the
+   bottom right (source hero background: bg_1.avif). Decorative pale
+   blobs are positioned absolutely in the Hero component. */
+@utility hero-sky {
+  background-image: linear-gradient(120deg, #7ec9f7 0%, #4aa3ec 55%, #2f7fd8 100%);
+}
