@@ -3,6 +3,9 @@ import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { Testimonials } from './Testimonials'
 
+// Reads the current testimonial photo URL (slides swap the same <img>).
+const photoUrl = () => screen.getByRole('img', { name: 'Jeff Woodland' }).getAttribute('src') ?? ''
+
 describe('Testimonials', () => {
   it('renders the heading, first testimonial slide, and the stats row', () => {
     const { container } = render(<Testimonials />)
@@ -36,20 +39,18 @@ describe('Testimonials', () => {
     const user = userEvent.setup()
     render(<Testimonials />)
 
-    const photo = () => screen.getByRole('img', { name: 'Jeff Woodland' }).getAttribute('src') ?? ''
-
-    expect(photo()).toContain('id/1027')
+    expect(photoUrl()).toContain('id/1027')
 
     await user.click(screen.getByRole('button', { name: 'Next testimonial' }))
-    expect(photo()).toContain('id/996')
+    expect(photoUrl()).toContain('id/996')
 
     await user.click(screen.getByRole('button', { name: 'Next testimonial' }))
-    expect(photo()).toContain('id/1011')
+    expect(photoUrl()).toContain('id/1011')
 
     await user.click(screen.getByRole('button', { name: 'Next testimonial' }))
-    expect(photo()).toContain('id/1027')
+    expect(photoUrl()).toContain('id/1027')
 
     await user.click(screen.getByRole('button', { name: 'Previous testimonial' }))
-    expect(photo()).toContain('id/1011')
+    expect(photoUrl()).toContain('id/1011')
   })
 })
