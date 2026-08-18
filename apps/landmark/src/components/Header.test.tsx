@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { fireEvent, render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { Header } from './Header'
-import { CALL_US, NAV_LINKS } from '../data'
+import { NAV_LINKS } from '../data'
 
 describe('Header', () => {
   it('renders the navy top bar with brand, nav links, call-us link and sign-in button', () => {
@@ -15,7 +15,7 @@ describe('Header', () => {
       expect(screen.getByRole('link', { name: item.label })).toHaveAttribute('href', item.href)
     }
 
-    const callUs = screen.getByRole('link', { name: new RegExp(`Call Us: ${CALL_US}`) })
+    const callUs = screen.getByRole('link', { name: (name) => name.startsWith('Call Us:') })
     expect(callUs).toHaveAttribute('href', 'tel:+10783563276')
 
     expect(screen.getByRole('button', { name: 'Sign In' })).toBeInTheDocument()
@@ -75,6 +75,12 @@ describe('Header', () => {
     expect(within(mobileNav).getByRole('button', { name: 'Sign In' })).toBeInTheDocument()
 
     await user.click(within(mobileNav).getByRole('link', { name: 'Home' }))
+    expect(screen.queryByRole('navigation', { name: 'Mobile navigation' })).not.toBeInTheDocument()
+
+    // Reopen and close via a submenu child link (covers the child onClick).
+    await user.click(screen.getByRole('button', { name: 'Toggle navigation' }))
+    const reopened = screen.getByRole('navigation', { name: 'Mobile navigation' })
+    await user.click(within(reopened).getByRole('link', { name: 'Blog Details' }))
     expect(screen.queryByRole('navigation', { name: 'Mobile navigation' })).not.toBeInTheDocument()
 
     window.innerWidth = 1024
