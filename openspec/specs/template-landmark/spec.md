@@ -376,9 +376,13 @@ and a copyright bar linking Component Dock.
 - [ ] Section structure + order matches the live DOM 1:1 (header-top →
       search row → hero slider → featured properties → services → for-sale
       → property types → agents → newsletter → footer)
-- [ ] Placeholder images via `https://picsum.photos/seed/landmark-<n>/<w>/<h>`
-      (hero bg, 8 property photos, 4 agent photos, newsletter photo);
-      NO assets copied from ColorLib
+- [ ] Placeholder images: hero slides `picsum.photos/id/1015` (bright fjord
+      waterfront) + `id/1040` (castle estate, browser-verified subject); 8
+      property-card photos via `https://picsum.photos/seed/landmark-<n>/600/420`;
+      agent photos `picsum.photos/id/1027|64|823|996` (verified portraits —
+      names paraphrased to female agents to match available portraits,
+      content-kind latitude); newsletter photo `picsum.photos/id/1055`
+      (coastal village); NO assets copied from ColorLib
 - [ ] Buttons radius 4px (`.btn`, `.submit-btn2`); Search pill 35px;
       search inputs 4px radius with `#BECCD6` border
 - [ ] Icons from lucide-react or inline SVG (search icon, bed/bath/

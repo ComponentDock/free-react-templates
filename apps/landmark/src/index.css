@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Landmark
+   itself is a light real-estate page. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Landmark brand palette — recreated from a real-estate design (live demo
+   reference kept in the spec): sky blue #00AEFF is THE brand color —
+   buttons, prices, links, nav hover + underline. */
+  --color-brand: #00aeff;
+
+  /* Navy — the dark #004274 header-top bar and the newsletter panel
+     background; also the button hover sweep. */
+  --color-navy: #004274;
+
+  /* Ink — headings (Jost 500) and select text. */
+  --color-ink: #192839;
+
+  /* Body — paragraph text on light sections. */
+  --color-body: #545454;
+
+  /* Muted — card blurbs, section-tittle paragraphs, placeholders. */
+  --color-muted: #5e5e5e;
+
+  /* Light — the #F2F4F8 band behind "Explore by Property Type". */
+  --color-light: #f2f4f8;
+
+  /* Line — #BECCD6 search/select borders and the newsletter input rule. */
+  --color-line: #beccd6;
+
+  /* Blue-bg — the solid #00A0EB services band background. */
+  --color-blue-bg: #00a0eb;
+
+  /* Footer-bg — the #F2F6F9 copyright bar. */
+  --color-footer-bg: #f2f6f9;
+
+  /* Original font: Jost (300–900) via Google Fonts — display + body. */
+  --font-sans:
+    'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
