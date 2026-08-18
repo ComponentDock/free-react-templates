@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Netora brand palette — corporate IT one-pager tokens:
+     brand blue #316EC2 (buttons, links, section labels, hover states),
+     navy band #0E1B50 (satisfaction strip), deep navy #003072 (insights
+     band + card titles), navy #1f2b7b (blog/case titles), body ink
+     #4C526E (paragraphs), on-navy #C6C9D9 (light text on navy),
+     section #f9f9ff (categories bg), card #F3F8FF (category cards),
+     testimonial #EBF0F8 (testimonial band), border #D3D5E2 (hairlines),
+     star #f4e700 (rating stars), accent cyan #4cd3e3 (icon accents).
+     All buttons/cards use radius 0 (square look). */
+  --color-brand: #316ec2;
+  --color-brand-hover: #2a5fae;
+  --color-navy-band: #0e1b50;
+  --color-navy-deep: #003072;
+  --color-navy: #1f2b7b;
+  --color-body: #4c526e;
+  --color-on-navy: #c6c9d9;
+  --color-section: #f9f9ff;
+  --color-card: #f3f8ff;
+  --color-testimonial: #ebf0f8;
+  --color-hero: #f2f4f8;
+  --color-hairline: #d3d5e2;
+  --color-star: #f4e700;
+  --color-accent: #4cd3e3;
+
+  /* Fira Sans (headings) + Rubik (body) via Google Fonts <link> in
+     index.html. */
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Fira Sans', ui-sans-serif, system-ui, sans-serif;
+}
