@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens (recreated, no assets copied):
+     brand palette: #00917c teal on white / #f8f9fa light sections,
+     Work Sans headings + Roboto body. */
+  --color-brand: #00917c;
+  --color-brand-hover: #26a290;
+  --color-brand-active: #33a796;
+  --color-brand-deep: #008370;
+  --color-brand-tint: #e6f4f2;
+  --color-light-bg: #f8f9fa;
+  --color-ink: #000000;
+  --color-muted: #888888;
+  --font-heading: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
