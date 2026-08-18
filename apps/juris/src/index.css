@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for parity with the shared ui package. Juris
+   itself is a light law-firm page. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Juris brand palette — recreated from a law-firm design (live demo
+     reference kept in the spec): brick red #B40000 is THE brand color —
+     buttons, links, experience badge, quote panel, back-to-top. Orange
+     #FF6F00 accents the form submit button and hover sweeps. */
+  --color-brand: #b40000;
+
+  /* Accent — the orange submit button and button hover sweep. */
+  --color-accent: #ff6f00;
+
+  /* Ink — near-black headings, nav links, footer background. */
+  --color-ink: #2d0000;
+
+  /* Topbar — the near-black header strip (#2e0000). */
+  --color-topbar: #2e0000;
+
+  /* Body — paragraph text on white/section backgrounds. */
+  --color-body: #6b5a5a;
+
+  /* Section — the #F8F4F4 practice-area band. */
+  --color-section: #f8f4f4;
+
+  /* Cta — the soft #EFE2E2 "Why Choose Us" band. */
+  --color-cta: #efe2e2;
+
+  /* Footer-muted — muted text on the dark footer. */
+  --color-footer-muted: #ac9191;
+
+  /* Card-blurb — practice-card blurbs (#66816A in the reference CSS). */
+  --color-card-blurb: #66816a;
+
+  /* Line — form input borders (#eaeaea). */
+  --color-line: #eaeaea;
+
+  /* Original font: Baskervville (serif headings) + Roboto (body/nav). */
+  --font-sans:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Baskervville', Georgia, 'Times New Roman', serif;
+}
