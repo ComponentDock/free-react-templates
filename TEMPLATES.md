@@ -590,7 +590,7 @@
 - [x] **Homofy** — [colorlib](https://colorlib.com/wp/template/homofy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/homofy-colorlib-template.jpg) · [domily](https://domily.free.componentdock.com)
 - [x] **Hotell** — [colorlib](https://colorlib.com/wp/template/hotell/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hotell-free-template.jpg) · [Concierge](https://concierge.free.componentdock.com)
 - [ ] **Itlock** — [colorlib](https://colorlib.com/wp/template/itlock/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/itlock-colorlib-template.jpg)
-- [ ] **Jackco** — [colorlib](https://colorlib.com/wp/template/jackco/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jackco-colorlib-template.jpg)
+- [~] **Jackco** — [colorlib](https://colorlib.com/wp/template/jackco/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jackco-colorlib-template.jpg)
 - [ ] **Joblab** — [colorlib](https://colorlib.com/wp/template/joblab/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/joblab-colorlib-template.jpg)
 - [ ] **Josanclick** — [colorlib](https://colorlib.com/wp/template/josanclick/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/josanclick-colorlib-template.jpg)
 - [x] **Kayelux** — [colorlib](https://colorlib.com/wp/template/kayelux/) · [terra](https://terra.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kayelux-colorlib-template.jpg)
