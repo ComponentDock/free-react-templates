@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Shutterly brand palette — photographer one-pager tokens:
+     ink #0A0A0A (brand black: solid buttons, pricing pill badges, plan
+     prices, testimonial section bg, headings), footer-bg #1E1E1E (footer
+     canvas), services-bg #F2F4F8 (services row), body-text #656565
+     (paragraphs), muted #8F8F8F (section subtitle spans), meta-text
+     #74706B (service card meta), card-border #DBDBDB (pricing card
+     borders), hover-fill #071112 (outline-button hover fill). Buttons are
+     square (radius 0); the pricing pill badge is radius 25px. */
+  --color-ink: #0a0a0a;
+  --color-footer-bg: #1e1e1e;
+  --color-services-bg: #f2f4f8;
+  --color-body: #656565;
+  --color-muted: #8f8f8f;
+  --color-meta: #74706b;
+  --color-card-border: #dbdbdb;
+  --color-hover-fill: #071112;
+
+  /* Poiret One (display: headings, hero h1, buttons) + Jost (body, nav,
+     prices) via Google Fonts <link> in index.html — matches the source
+     design's font pairing. */
+  --font-sans: 'Jost', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poiret One', ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
