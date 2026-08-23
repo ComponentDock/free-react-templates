@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Aurora brand palette — recreated from the ColorLib "Maze" design
+     (banner pink #f66483). */
+  --color-blush-50: #fef2f4;
+  --color-blush-100: #fde3e8;
+  --color-blush-200: #fbccd5;
+  --color-blush-300: #f8a4b4;
+  --color-blush-400: #f66483;
+  --color-blush-500: #f14a6e;
+  --color-blush-600: #e02e56;
+  --color-blush-700: #bd1f45;
+  --color-blush-800: #9c1c3d;
+  --color-blush-900: #821c38;
+
+  /* Poppins — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
