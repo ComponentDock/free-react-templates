@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Havenshore brand palette — olive-sage theme from the original design
+     (css/style.css): theme-color #85856D, heading #3C3A34, body #94817E,
+     button primary #B8B8A0, dark #16161a, section bg #FAFAF8. */
+  --color-brand: #85856d;
+  --color-brand-dark: #6d6d5a;
+
+  /* Ink — dark brown headings (#3C3A34). */
+  --color-ink: #3c3a34;
+  --color-ink-dark: #2a2822;
+
+  /* Paper — light section background (#FAFAF8). */
+  --color-paper: #fafaf8;
+
+  /* Mist — muted body text (#94817E). */
+  --color-mist: #94817e;
+
+  /* Sage — button primary (#B8B8A0). */
+  --color-sage: #b8b8a0;
+
+  /* Dark surface (#16161a) for footer. */
+  --color-surface: #16161a;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the sage/olive brand. */
+  --color-primary-50: #f5f5f0;
+  --color-primary-100: #e8e8df;
+  --color-primary-200: #d4d4c5;
+  --color-primary-300: #b8b8a0;
+  --color-primary-400: #a0a08a;
+  --color-primary-500: #85856d;
+  --color-primary-600: #6d6d5a;
+  --color-primary-700: #565648;
+  --color-primary-800: #404038;
+  --color-primary-900: #2a2a26;
+
+  /* Fonts: Cormorant Garamond (display) + Raleway (body). */
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Cormorant Garamond', ui-serif, Georgia, serif;
+}
