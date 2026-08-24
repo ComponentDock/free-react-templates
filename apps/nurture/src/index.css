@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Nurture brand palette — kids learning center design:
+     green #0fb78d primary, blue #4fb0dc secondary,
+     lime #5cb100 accent, orange #ec661f CTA. */
+  --color-brand: #0fb78d;
+  --color-brand-dark: #0ca06f;
+
+  /* Sky — secondary blue (#4fb0dc). */
+  --color-sky: #4fb0dc;
+
+  /* Lime — tertiary green (#5cb100). */
+  --color-lime: #5cb100;
+
+  /* Tangerine — orange CTA (#ec661f). */
+  --color-tangerine: #ec661f;
+  --color-tangerine-dark: #d45a18;
+
+  /* Ink — dark text (#333333). */
+  --color-ink: #333333;
+
+  /* Mist — muted text (#666666). */
+  --color-mist: #666666;
+
+  /* Paper — white backgrounds. */
+  --color-paper: #ffffff;
+
+  /* Cloud — light gray section backgrounds (#f7f9fc). */
+  --color-cloud: #f7f9fc;
+
+  /* Dark — footer background (#2b2b2b). */
+  --color-dark: #2b2b2b;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand green. */
+  --color-primary-50: #eefbf4;
+  --color-primary-100: #d5f5e5;
+  --color-primary-200: #aeead0;
+  --color-primary-300: #79d9b3;
+  --color-primary-400: #42c393;
+  --color-primary-500: #0fb78d;
+  --color-primary-600: #0ca06f;
+  --color-primary-700: #0a7f5a;
+  --color-primary-800: #0b6549;
+  --color-primary-900: #0a533d;
+
+  /* Original font: Poppins throughout. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
