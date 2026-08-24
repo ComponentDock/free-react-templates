@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand golden-amber from original "Mellisa" stylesheet:
+     nav scroll bg, hover states, accents (#ffa62b). */
+  --color-brand: #ffa62b;
+  --color-brand-dark: #e89520;
+
+  /* Dark surface for footer (#161616). */
+  --color-surface: #161616;
+
+  /* Heading font: Playfair Display (serif) for h1 hero name,
+     EB Garamond for footer headings, Poppins for body/UI. */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-serif: 'EB Garamond', Georgia, serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
