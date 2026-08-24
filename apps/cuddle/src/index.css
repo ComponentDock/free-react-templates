@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Cuddle brand palette — recreated from the ColorLib "Lovecare" design
+     (css/style.css): gold #d49a3a accents/buttons, teal #042628 footer,
+     warm beige #f3f0eb section backgrounds, white #ffffff text on dark. */
+  --color-brand: #d49a3a;
+  --color-brand-hover: #c08a2e;
+  --color-brand-light: #f3f0eb;
+  --color-teal: #042628;
+  --color-teal-light: #efebe5;
+
+  /* Ink — dark teal headings/footer (#042628 from the original). */
+  --color-ink: #042628;
+  --color-ink-dark: #031a1b;
+
+  /* Paper — light section background (#f3f0eb from the original). */
+  --color-paper: #f3f0eb;
+
+  /* Mist — muted body text. */
+  --color-mist: #666666;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the gold. */
+  --color-primary-50: #fdf6ec;
+  --color-primary-100: #fae9d2;
+  --color-primary-200: #f3d1a0;
+  --color-primary-300: #ebb369;
+  --color-primary-400: #e4973c;
+  --color-primary-500: #d49a3a;
+  --color-primary-600: #c08a2e;
+  --color-primary-700: #a07026;
+  --color-primary-800: #805820;
+  --color-primary-900: #66461a;
+
+  /* Original fonts: "Patrick Hand" (headings) + "Poppins" (body). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Patrick Hand', cursive;
+}
