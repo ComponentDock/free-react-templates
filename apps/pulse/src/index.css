@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pulse brand palette — Teal #1fc1a9, Blue #5579fa, Navy #052c43 */
+  --color-pulse-50: #e8fdf8;
+  --color-pulse-100: #c5f9ed;
+  --color-pulse-200: #8ff3dd;
+  --color-pulse-300: #4ae8c6;
+  --color-pulse-400: #1fc1a9;
+  --color-pulse-500: #17a68f;
+  --color-pulse-600: #0f8573;
+  --color-pulse-700: #0a6658;
+  --color-pulse-800: #064a3f;
+  --color-pulse-900: #03302a;
+
+  --color-accent-50: #eff1ff;
+  --color-accent-100: #dde2ff;
+  --color-accent-200: #bfc8ff;
+  --color-accent-300: #97a4ff;
+  --color-accent-400: #5579fa;
+  --color-accent-500: #3a5de0;
+  --color-accent-600: #2a47b8;
+  --color-accent-700: #1f3590;
+  --color-accent-800: #172668;
+  --color-accent-900: #0f1a42;
+
+  --color-navy-50: #e8f0f5;
+  --color-navy-100: #c5daea;
+  --color-navy-200: #8fb5d4;
+  --color-navy-300: #5990be;
+  --color-navy-400: #236ba8;
+  --color-navy-500: #0a4d7e;
+  --color-navy-600: #073a60;
+  --color-navy-700: #052c43;
+  --color-navy-800: #031d2c;
+  --color-navy-900: #020f18;
+
+  /* Poppins — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
