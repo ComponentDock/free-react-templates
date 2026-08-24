@@ -104,88 +104,120 @@ is professional/corporate with green accents.
 | Agent avatars (4)       | havenridge-agent-1..4                  | 80×80    |
 | Testimonial avatars (3) | havenridge-testimonial-1..3            | 80×80    |
 
-## Gherkin Requirements
+## Requirements
 
-### Feature: Navbar
+### Requirement: Navigation bar
 
-Scenario: Sticky navbar with logo and links
-Given the page is loaded
-Then the navbar is visible with logo "Havenridge"
-And nav links are visible (Home, About, Services, Agent, Blog, Contact)
-And a "Get Started" CTA button is visible
+The system SHALL render a sticky navbar with the logo "Havenridge", navigation links, and a "Get Started" CTA button.
 
-Scenario: Mobile hamburger toggle
-Given the viewport is mobile (≤768px)
-When the hamburger button is clicked
-Then the mobile menu expands
+#### Scenario: Navbar content
 
-### Feature: Hero Slider
+- **GIVEN** the page is loaded
+- **THEN** the navbar is visible with logo "Havenridge"
+- **AND** nav links are visible (Home, About, Services, Agent, Blog, Contact)
+- **AND** a "Get Started" CTA button is visible
 
-Scenario: Hero slider renders with slides
-Given the page is loaded
-Then a hero slider is visible
-And at least one slide has a heading, description, and CTA button
-And slides auto-advance
+#### Scenario: Mobile hamburger toggle
 
-Scenario: Hero CTA button is interactive
-Given the hero slider is visible
-When the "Learn More" button is clicked
-Then no navigation occurs (placeholder)
+- **GIVEN** the viewport is mobile (≤768px)
+- **WHEN** the hamburger button is clicked
+- **THEN** the mobile menu expands
 
-### Feature: Property Search
+### Requirement: Hero slider
 
-Scenario: Buy/Rent tab switching
-Given the search form is visible
-When "Buy Properties" tab is active
-Then the search form shows keyword, property type, location, price fields
-When "Rent Properties" tab is clicked
-Then the tab switches to rent view
+The system SHALL render an auto-advancing hero slider with 3 slides, each containing a heading, description, and CTA button.
 
-Scenario: Search form fields are interactive
-Given the search form is visible
-When the keyword field is focused
-Then the cursor appears in the field
-When the property type dropdown is clicked
-Then options (Residential, Commercial, Land, Industrial) are visible
+#### Scenario: Hero slider renders with slides
 
-### Feature: Categories
+- **GIVEN** the page is loaded
+- **THEN** a hero slider is visible
+- **AND** at least one slide has a heading, description, and CTA button
 
-Scenario: Category cards render
-Given the page scrolls to categories
-Then 4 category cards are displayed (Land, Residential, Commercial, Industrial)
-And each card has an icon and heading
+#### Scenario: Hero CTA button is interactive
 
-### Feature: Featured Properties
+- **GIVEN** the hero slider is visible
+- **WHEN** the "Learn More" button is clicked
+- **THEN** no navigation occurs (placeholder)
 
-Scenario: Property cards render
-Given the page scrolls to featured properties
-Then 4 property cards are displayed
-And each card has an image, price, agent info, property name, location
-And amenity icons (bed, bath, sqft) are visible
+### Requirement: Property search
 
-### Feature: About Section
+The system SHALL render a property search form with Buy/Rent tab switching and form fields for keyword, property type, location, and price.
 
-Scenario: About section with stats renders
-Given the page scrolls to about
-Then a heading "Havenridge A Real Estate Company" is visible
-And 4 stat counters are displayed (Years, Properties, Realtors, Branches)
-And images are shown alongside
+#### Scenario: Buy/Rent tab switching
 
-### Feature: Testimonials
+- **GIVEN** the search form is visible
+- **WHEN** "Rent Properties" tab is clicked
+- **THEN** the tab switches to rent view
 
-Scenario: Testimonial carousel renders
-Given the page scrolls to testimonials
-Then a heading "Clients We Help" is visible
-And testimonial slides with quotes, avatars, names, and roles are displayed
+#### Scenario: Search form fields are interactive
 
-### Feature: Footer
+- **GIVEN** the search form is visible
+- **WHEN** the property type dropdown is clicked
+- **THEN** options (Residential, Commercial, Land, Industrial) are visible
 
-Scenario: Footer renders with content
-Given the page scrolls to the footer
-Then the footer has a dark background
-And social media icon links are visible (Twitter, Facebook, Instagram)
-And Offers and Company link columns are visible
-And a Component Dock credit link is present
+### Requirement: Categories
+
+The system SHALL render 4 category cards (Land, Residential, Commercial, Industrial) with icons.
+
+#### Scenario: Category cards render
+
+- **GIVEN** the page scrolls to categories
+- **THEN** 4 category cards are displayed
+- **AND** each card has an icon and heading
+
+### Requirement: Featured properties
+
+The system SHALL render 4 property cards with image, price, agent info, property name, location, and amenity icons.
+
+#### Scenario: Property cards render
+
+- **GIVEN** the page scrolls to featured properties
+- **THEN** 4 property cards are displayed
+- **AND** each card has an image, price, agent info, property name, location
+- **AND** amenity icons (bed, bath, sqft) are visible
+
+### Requirement: About section
+
+The system SHALL render an about section with heading, description, and 4 stat counters.
+
+#### Scenario: About section with stats renders
+
+- **GIVEN** the page scrolls to about
+- **THEN** a heading "Havenridge A Real Estate Company" is visible
+- **AND** 4 stat counters are displayed (Years, Properties, Realtors, Branches)
+
+### Requirement: Testimonials
+
+The system SHALL render a testimonial carousel with quotes, avatars, names, and roles.
+
+#### Scenario: Testimonial carousel renders
+
+- **GIVEN** the page scrolls to testimonials
+- **THEN** a heading "Clients We Help" is visible
+- **AND** testimonial slides with quotes, avatars, names, and roles are displayed
+
+### Requirement: Footer
+
+The system SHALL render a dark footer with social links, column links, and a Component Dock credit.
+
+#### Scenario: Footer renders with content
+
+- **GIVEN** the page scrolls to the footer
+- **THEN** the footer has a dark background
+- **AND** social media icon links are visible (Twitter, Facebook, Instagram)
+- **AND** Offers and Company link columns are visible
+- **AND** a Component Dock credit link is present
+
+### Requirement: Page composition
+
+The system SHALL compose all sections in a single page with a main landmark and a document title.
+
+#### Scenario: Full page render
+
+- **GIVEN** the Havenridge app is rendered
+- **WHEN** the page loads
+- **THEN** the page SHALL compose the Navbar, all sections, and the Footer
+- **AND** the document title SHALL be "Havenridge — Real Estate Agency Template"
 
 ## Verification Checklist
 

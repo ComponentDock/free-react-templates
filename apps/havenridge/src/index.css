@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Havenridge brand colors — green #5ea51d, dark bg #081637,
+     section bg #f8f9fa. Nunito Sans font. */
+  --color-primary-50: #f0f9e8;
+  --color-primary-100: #d8f0c4;
+  --color-primary-200: #b4e28f;
+  --color-primary-300: #8bd155;
+  --color-primary-400: #6bbd2e;
+  --color-primary-500: #5ea51d;
+  --color-primary-600: #4c8a18;
+  --color-primary-700: #3b6c13;
+  --color-primary-800: #2f5510;
+  --color-primary-900: #27460e;
+
+  --color-navy: #081637;
+  --color-navy-light: #0c1f4a;
+  --color-mist: #f8f9fa;
+  --color-smoke: #6c757d;
+  --color-ink: #212529;
+
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
