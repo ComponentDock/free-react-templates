@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — coral primary (#ff8e71), navy secondary (#003a70) */
+  --color-coral-50: #fff5f3;
+  --color-coral-100: #ffe8e3;
+  --color-coral-200: #ffd1c7;
+  --color-coral-300: #ffb3a3;
+  --color-coral-400: #ff8e71;
+  --color-coral-500: #ff6b4a;
+  --color-coral-600: #e8533a;
+  --color-coral-700: #c4402d;
+  --color-coral-800: #a33527;
+  --color-coral-900: #872f25;
+
+  --color-navy-50: #f0f4f8;
+  --color-navy-100: #d9e2ec;
+  --color-navy-200: #bcccdc;
+  --color-navy-300: #9fb3c8;
+  --color-navy-400: #829ab1;
+  --color-navy-500: #627d98;
+  --color-navy-600: #486581;
+  --color-navy-700: #334e68;
+  --color-navy-800: #243b53;
+  --color-navy-900: #102a43;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Comfortaa', ui-sans-serif, system-ui, sans-serif;
+}
