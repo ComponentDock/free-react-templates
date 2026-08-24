@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Spark brand colors — primary purple #8f1bdc, accent pink #f9218d.
+     Nunito + Poppins fonts. */
+  --color-primary-50: #f5eefb;
+  --color-primary-100: #eadaf7;
+  --color-primary-200: #d5b4f0;
+  --color-primary-300: #bb8be7;
+  --color-primary-400: #a258dc;
+  --color-primary-500: #8f1bdc;
+  --color-primary-600: #7a16ba;
+  --color-primary-700: #641298;
+  --color-primary-800: #4e0e76;
+  --color-primary-900: #3a0b57;
+
+  --color-accent: #f9218d;
+  --color-accent-light: #fce4f0;
+
+  --color-ink: #222222;
+  --color-mist: #f9f9ff;
+  --color-lavender: #f0e9ff;
+  --color-smoke: #6c757d;
+
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+}
