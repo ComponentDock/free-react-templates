@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Spruce brand colors — from ColorLib "Olla" preview
+     (https://preview.colorlib.com/theme/olla/ + css/style.css):
+     a business/web-dev landing theme with a deep blue #2845BA primary,
+     orange accent #ec583a, dark navy #041735, gray bg #F1FBFF,
+     and muted text #5C6168 / #656565. */
+  --color-brand: #2845ba;
+  --color-brand-light: #3a5dc9;
+  --color-brand-dark: #1e3a9e;
+  --color-accent: #ec583a;
+  --color-navy: #041735;
+  --color-mist: #f1fbff;
+  --color-body: #5c6168;
+  --color-muted: #656565;
+  --color-border: #dbdee9;
+  --color-ink: #041735;
+
+  --font-heading: 'Cabin', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
