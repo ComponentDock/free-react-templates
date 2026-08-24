@@ -607,7 +607,7 @@
 - [x] **Narosundar** — [colorlib](https://colorlib.com/wp/template/narosundar/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/narosundar-colorlib-template.jpg) · [slick](https://slick.free.componentdock.com)
 - [x] **Nova** — [colorlib](https://colorlib.com/wp/template/nova/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nova-free-template.jpg) · [nova](https://nova.free.componentdock.com)
 - [x] **Oakberry** — [colorlib](https://colorlib.com/wp/template/oakberry/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/oakberry-free-template.jpg) · [havenridge](https://havenridge.free.componentdock.com)
-- [ ] **Ocheandeview** — [colorlib](https://colorlib.com/wp/template/ocheandeview/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ocheandeview-colorlib-template.jpg)
+- [~] **Ocheandeview** — [colorlib](https://colorlib.com/wp/template/ocheandeview/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ocheandeview-colorlib-template.jpg)
 - [ ] **Olla** — [colorlib](https://colorlib.com/wp/template/olla/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/olla-colorlib-template.jpg)
 - [ ] **Onedu** — [colorlib](https://colorlib.com/wp/template/onedu/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/onedu-free-template.jpg)
 - [ ] **Oraxol** — [colorlib](https://colorlib.com/wp/template/oraxol/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/oraxol-free-template.jpg)
