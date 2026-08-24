@@ -1,4 +1,4 @@
-# Spec: Saita (Digital Agency)
+# Spec: Pulse (Digital Agency)
 
 ## Purpose
 
@@ -21,12 +21,12 @@ Recreation of ColorLib **Saita** (`https://colorlib.com/wp/template/saita/`), a 
 
 ## Gherkin Requirements & Scenarios
 
-### Feature: Saita Landing Page
+### Feature: Pulse Landing Page
 
 #### Scenario: Header and Hero Section
 
-- Given the user visits the Saita template home page
-- Then they should see the navbar with brand logo "Saita." and links (Home, About, Work, Services, Pricing, Blog, Contact)
+- Given the user visits the Pulse template home page
+- Then they should see the navbar with brand logo "Pulse." and links (Home, About, Work, Services, Pricing, Blog, Contact)
 - And the hero section with heading "We Are Digital Agency Helping To Boost Your sales" and CTA buttons "START A PROJECT" and "WATCH THE VIDEO"
 
 #### Scenario: Experience / About Section
