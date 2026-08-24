@@ -610,7 +610,7 @@
 - [x] **Ocheandeview** — [colorlib](https://colorlib.com/wp/template/ocheandeview/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ocheandeview-colorlib-template.jpg) · [havenshore](https://free-react-templates-havenshore.surge.sh)
 - [x] **Olla** — [colorlib](https://colorlib.com/wp/template/olla/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/olla-colorlib-template.jpg) · [spruce](https://spruce.free.componentdock.com)
 - [x] **Onedu** — [colorlib](https://colorlib.com/wp/template/onedu/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/onedu-free-template.jpg) · [scholar](https://scholar.free.componentdock.com)
-- [ ] **Oraxol** — [colorlib](https://colorlib.com/wp/template/oraxol/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/oraxol-free-template.jpg)
+- [~] **Oraxol** — [colorlib](https://colorlib.com/wp/template/oraxol/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/oraxol-free-template.jpg)
 - [ ] **Pageone** — [colorlib](https://colorlib.com/wp/template/pageone/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pageone-free-template-1.jpg)
 - [ ] **Passport** — [colorlib](https://colorlib.com/wp/template/passport/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/passport-free-template.jpg)
 - [ ] **Pato** — [colorlib](https://colorlib.com/wp/template/pato/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pato-free-modern-restuarant-website-template.jpg)
