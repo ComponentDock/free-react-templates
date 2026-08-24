@@ -15,79 +15,98 @@ Recreation of ColorLib Passport (`https://colorlib.com/wp/template/passport/`, p
 - **Button Radius**: Fully rounded pill shape (`rounded-full`, `border-radius: 30px`)
 - **Hero Treatment**: Full-width immersive travel background with dark overlay, bold serif typography, and floating destination badge.
 
-## Sections & Gherkin Requirements
+## Requirements
 
-### 1. Navigation Bar (`Navbar`)
+### Requirement: Navigation Bar
 
-- **Requirement**: The navbar must display the brand logo ("Voyage"), navigation links (Home, About Us, Services, Blog, Contact Us), and a CTA button ("Contact Us"), with responsive mobile menu toggle.
-- **Scenario**: User views navigation on desktop
-  - Given the user loads the Voyage template
-  - When the viewport width is desktop size
-  - Then all top navigation links and the contact CTA are visible and functional.
+The navbar SHALL display the brand logo ("Voyage"), navigation links (Home, About Us, Services, Blog, Contact Us), and a CTA button ("Contact Us"), with a responsive mobile menu toggle.
 
-### 2. Hero Section (`Hero`)
+#### Scenario: User views navigation on desktop
 
-- **Requirement**: Immersive travel hero banner with a headline ("It is Better to Travel Well Than to Arrive"), a "Watch Video" trigger button, and a floating destination price tag card.
-- **Scenario**: User views the hero banner
-  - Given the user is at the top of the page
-  - When the hero section renders
-  - Then the bold headline, watch video button, and floating destination card are clearly displayed over the travel imagery.
+- **WHEN** the user loads the Voyage template on a desktop viewport
+- **THEN** all top navigation links and the contact CTA are visible and functional
 
-### 3. About Section (`About`)
+#### Scenario: User toggles mobile menu
 
-- **Requirement**: "About Us" section introducing travel experiences ("Explore All Corners of The World With Us"), paired with split image collages and descriptive copy.
-- **Scenario**: User scrolls to About Us
-  - Given the user scrolls past the hero
-  - When the About section appears
-  - Then the heading, editorial paragraphs, and split feature images render correctly with a "Read more" action link.
+- **WHEN** the user clicks the hamburger menu button on mobile
+- **THEN** the mobile navigation menu opens with all links visible
 
-### 4. Destinations / Services Carousel (`Destinations`)
+### Requirement: Hero Section
 
-- **Requirement**: "We Provide Top Destinations" section showcasing featured travel packages with thumbnail images, destination names, locations, and pricing badges.
-- **Scenario**: User inspects top destinations
-  - Given the user reaches the destinations section
-  - When destination cards load
-  - Then destination cards display clear pricing tags and location details with navigation controls.
+The hero section SHALL display an immersive travel banner with a headline ("It is Better to Travel Well Than to Arrive"), a "Watch Video" trigger button, and a background image.
 
-### 5. Testimonials Section (`Testimonials`)
+#### Scenario: User views the hero banner
 
-- **Requirement**: "Happy Customer" testimonials slider presenting feedback from travelers.
-- **Scenario**: User views customer reviews
-  - Given the user views the testimonial section
-  - When customer feedback cards render
-  - Then traveler quotes and author details are displayed.
+- **WHEN** the user is at the top of the page
+- **THEN** the bold headline, watch video button, and background image are clearly displayed over the travel imagery
 
-### 6. FAQ Accordion (`Faq`)
+### Requirement: About Section
 
-- **Requirement**: Frequently Asked Questions accordion allowing users to expand and collapse collapsible items (e.g. registration, account setup, billing).
-- **Scenario**: User interacts with FAQ accordion
-  - Given the user is viewing the FAQ section
-  - When the user clicks an FAQ question header
-  - Then the accordion item expands to show the answer and collapses previously opened items or toggles state.
+The about section SHALL display "Explore All Corners of The World With Us" heading, paired with split image collages and descriptive copy.
 
-### 7. Blog / Recent Posts (`Blog`)
+#### Scenario: User scrolls to About Us
 
-- **Requirement**: Recent travel blog articles grid showing post dates, thumbnail images, titles ("Far far away, behind the word mountains"), snippets, and "Read More" links.
-- **Scenario**: User browses recent blog posts
-  - Given the user scrolls to the blog section
-  - When the recent posts grid renders
-  - Then four blog cards display properly with dates, titles, and read more links.
+- **WHEN** the user scrolls past the hero
+- **THEN** the heading, editorial paragraphs, and split feature images render correctly with a "Read more" action link
 
-### 8. Call to Action Banner (`Cta`)
+### Requirement: Destinations Carousel
 
-- **Requirement**: Adventurous journey banner ("Begin your adventurous journey here") with a prominent "Get started" button.
-- **Scenario**: User views the final CTA banner
-  - Given the user reaches the bottom CTA
-  - When the banner renders
-  - Then the engaging prompt and get started button invite conversion.
+The destinations section SHALL display "We Provide Top Destinations" heading with featured travel packages showing thumbnail images, destination names, locations, and pricing badges.
 
-### 9. Footer (`Footer`)
+#### Scenario: User inspects top destinations
 
-- **Requirement**: Comprehensive 4-column footer containing About summary, Connect social links, Quick links, Company info, Contact details, and official copyright with mandatory Component Dock attribution ("Made with Component Dock").
-- **Scenario**: User scrolls to the footer
-  - Given the user reaches the bottom of the page
-  - When the footer renders
-  - Then all 4 columns and the "Made with Component Dock" credit are displayed.
+- **WHEN** the user reaches the destinations section
+- **THEN** destination cards display clear pricing tags and location details with navigation controls
+
+#### Scenario: User navigates destination pages
+
+- **WHEN** the user clicks the next/previous arrows or pagination dots
+- **THEN** the carousel shows the corresponding set of destination cards
+
+### Requirement: Testimonials Section
+
+The testimonials section SHALL display "Happy Customer" heading with traveler feedback including quotes, star ratings, and author details.
+
+#### Scenario: User views customer reviews
+
+- **WHEN** the user views the testimonial section
+- **THEN** traveler quotes, star ratings, and author details are displayed
+
+### Requirement: FAQ Accordion
+
+The FAQ section SHALL display "Frequently Asked Questions" heading with an expandable/collapsible accordion for each question.
+
+#### Scenario: User interacts with FAQ accordion
+
+- **WHEN** the user clicks an FAQ question header
+- **THEN** the accordion item expands to show the answer and collapses previously opened items
+
+### Requirement: Blog / Recent Posts
+
+The blog section SHALL display "Recent Posts" heading with a grid of four blog cards showing post dates, thumbnail images, titles, and "Read More" links.
+
+#### Scenario: User browses recent blog posts
+
+- **WHEN** the user scrolls to the blog section
+- **THEN** four blog cards display properly with dates, titles, and read more links
+
+### Requirement: Call to Action Banner
+
+The CTA banner SHALL display "Begin your adventurous journey here" heading with a prominent "Get started" button on an orange background.
+
+#### Scenario: User views the final CTA banner
+
+- **WHEN** the user reaches the bottom CTA
+- **THEN** the engaging prompt and get started button invite conversion
+
+### Requirement: Footer
+
+The footer SHALL display a multi-column layout containing About summary, Connect social links, Quick links, Company info, Contact details, and mandatory Component Dock attribution.
+
+#### Scenario: User scrolls to the footer
+
+- **WHEN** the user reaches the bottom of the page
+- **THEN** all columns and the "Made with Component Dock" credit are displayed
 
 ## Verification Checklist
 
