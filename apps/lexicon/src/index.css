@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Lexicon brand palette — recreated from the ColorLib "Rolax" hotel design
+     (assets/css/style.css): salmon/coral #E29C89 buttons & accents,
+     near-black #191514 headings, dark maroon #2e0000 header top bar,
+     warm gray #94817E body text. */
+  --color-brand: #e29c89;
+  --color-brand-dark: #ec583a;
+
+  /* Dark base — near-black heading color, sticky header bg. */
+  --color-ink: #191514;
+  --color-ink-dark: #0f0d0c;
+
+  /* Header top bar — very dark maroon. */
+  --color-header-top: #2e0000;
+
+  /* Warm gray — paragraph text. */
+  --color-mist: #94817e;
+
+  /* Light section background. */
+  --color-paper: #f7f7f7;
+
+  /* Card overlay gradient end. */
+  --color-card-overlay: #292621;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the coral/salmon. */
+  --color-primary-50: #fdf3f0;
+  --color-primary-100: #fbe4de;
+  --color-primary-200: #f7c8bc;
+  --color-primary-300: #f0a593;
+  --color-primary-400: #e29c89;
+  --color-primary-500: #d47a64;
+  --color-primary-600: #ec583a;
+  --color-primary-700: #c94028;
+  --color-primary-800: #a33520;
+  --color-primary-900: #862e1e;
+
+  /* Fonts: Baskervville (serif headings) + Jost (sans body). */
+  --font-sans: 'Jost', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Baskervville', ui-serif, Georgia, serif;
+}
