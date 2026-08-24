@@ -52,9 +52,11 @@ Recreation of ColorLib **Photosen** — a photography portfolio template with a 
 - Hover: full color (`filter: none`) + slight scale (1.01)
 - Overlay: transparent → rgba(0,0,0,0.4) on hover
 
-## Gherkin requirements
+## Requirements
 
-### Feature: Filmstock Photography Portfolio
+### Requirement: Filmstock Photography Portfolio MUST provide a complete photography portfolio template with navbar, gallery grid, and footer
+
+Filmstock SHALL provide a complete photography portfolio template with navbar, gallery grid, and footer.
 
 #### Scenario: Page loads with navbar and gallery grid
 
