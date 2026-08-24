@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — coral primary (#FE5F41), warm backgrounds */
+  --color-brand-50: #fff4f2;
+  --color-brand-100: #ffe8e3;
+  --color-brand-200: #ffd1c7;
+  --color-brand-300: #ffb3a3;
+  --color-brand-400: #fe5f41;
+  --color-brand-500: #e8533a;
+  --color-brand-600: #c4402d;
+  --color-brand-700: #a33527;
+  --color-brand-800: #872f25;
+  --color-brand-900: #4d312c;
+
+  --color-warm-50: #fff7f3;
+  --color-warm-100: #fff4f2;
+  --color-warm-900: #4d312c;
+
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Mitr', ui-sans-serif, system-ui, sans-serif;
+}
