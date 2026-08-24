@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Filmstock brand palette — recreated from the ColorLib "Photosen" preview
+   (https://preview.colorlib.com/theme/photosen/) live DOM + css/main.css:
+   brand blue #0D6EFD (nav hover, active), footer bg #333333,
+   footer text #737373, footer link #999999.
+   Display font Josefin Sans via Google Fonts (original uses the same). */
+@theme {
+  --color-brand: #0d6efd;
+  --color-ink: #212529;
+  --color-footer-bg: #333333;
+  --color-footer-text: #737373;
+  --color-footer-link: #999999;
+  --color-footer-link-hover: #ffffff;
+  --color-overlay: rgba(0, 0, 0, 0.4);
+
+  /* Josefin Sans — Google Fonts via index.html
+     (the original bundles its own files; DO NOT copy them). */
+  --font-sans: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: #fff;
+  }
+}
