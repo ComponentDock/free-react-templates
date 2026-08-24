@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Kicker brand palette — recreated from the ColorLib "Megasis" template
+     (https://colorlib.com/wp/template/megasis/), tokens extracted from
+     the live preview's assets/css/style.css:
+     - brand red #C70D0D (CTA buttons, kicker tags, headline hovers)
+     - ink / near-black #131313 (headlines, nav, dark section/footer bg)
+     - footer text #C2C5DB (link color on dark bg)
+     - light bg #F3F3F3 (newsletter section)
+     - divider #DFDFDF (header sign-in border) */
+  --color-brand-red: #c70d0d;
+  --color-ink: #131313;
+  --color-footer-text: #c2c5db;
+  --color-light-bg: #f3f3f3;
+  --color-divider: #dfdfdf;
+
+  /* Chivo (headings/nav/tags) + Shippori Mincho (body serif) —
+     Google Fonts via index.html link. */
+  --font-chivo: 'Chivo', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Shippori Mincho', Georgia, 'Times New Roman', serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #131313;
+    font-family: var(--font-chivo);
+  }
+}
