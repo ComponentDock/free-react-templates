@@ -79,96 +79,149 @@ states and star ratings.
 13. **Footer Bottom** — Darker bg (#111111), social icons left, copyright right,
     Component Dock link replacing "Get The Theme"
 
-## Gherkin requirements
+## Requirements
 
-### Feature: Gastronome Restaurant Template
+### Requirement: Header navigation renders all links
 
-Scenario: Header navigation renders all links
-Given the page loads
-Then the header displays links for Home, Menu, Reservation, Gallery, About, Blog, Contact
-And the logo is visible on the left
+The header SHALL display navigation links for Home, Menu, Reservation, Gallery, About, Blog, Contact, and the logo on the left.
 
-Scenario: Hero slider shows slides with CTA
-Given the page loads
-Then the hero section displays a carousel with background images
-And each slide shows a subtitle and heading
-And each slide has a "View Menu" CTA button
+#### Scenario: Header navigation renders all links
 
-Scenario: Welcome section displays restaurant info
-Given the page loads
-When the Welcome section is visible
-Then it shows an "Italian Restaurant" subtitle and "Welcome" heading
-And a description paragraph is displayed
-And an "Our Story" link is present
-And a restaurant image appears in a rounded container
+- **WHEN** the page loads
+- **THEN** the header displays links for Home, Menu, Reservation, Gallery, About, Blog, Contact
+- **AND** the logo is visible on the left
 
-Scenario: Intro section shows three feature cards
-Given the page loads
-When the Intro section is visible
-Then three cards are displayed in a row
-And each card has an image, title, description, and "Learn More" link
+### Requirement: Hero slider shows slides with CTA
 
-Scenario: Menu section shows food categories
-Given the page loads
-When the Our Menu section is visible
-Then food category images are displayed in an asymmetric grid
-And each image has an overlay button (Lunch, Dinner, Happy Hour, Drink, Starters, Dessert)
-And hovering an image triggers a zoom effect
+The hero section SHALL display a carousel with background images, centered text, and CTA buttons.
 
-Scenario: Events section displays countdown timer
-Given the page loads
-When the Events section is visible
-Then an event card is shown with title, description, and image
-And a countdown timer displays Days, Hours, Minutes, Seconds
-And a "View Details" link is present
+#### Scenario: Hero slider shows slides with CTA
 
-Scenario: Booking form renders all fields
-Given the page loads
-When the Booking section is visible
-Then a reservation form is displayed with fields: Date, Time, People, Name, Phone, Email
-And a "Book Table" submit button is present
-And a restaurant image appears alongside the form
+- **WHEN** the page loads
+- **THEN** the hero section displays a carousel with background images
+- **AND** each slide shows a subtitle and heading
+- **AND** each slide has a "View Menu" CTA button
 
-Scenario: Reviews carousel shows customer testimonials
-Given the page loads
-When the Reviews section is visible
-Then a customer review card shows an avatar, quote, star rating, and reviewer name
-And the avatar has a red (#ec1d25) circular border
+### Requirement: Welcome section displays restaurant info
 
-Scenario: Video section has parallax and play button
-Given the page loads
-When the Video section is visible
-Then a parallax background image is displayed
-And a centered circular play button is present
+The Welcome section SHALL display restaurant info with subtitle, heading, description, and image.
 
-Scenario: Blog section shows latest news cards
-Given the page loads
-When the Blog section is visible
-Then three blog cards are displayed
-And each card has an image with date overlay, title, excerpt, and "Continue Reading" link
+#### Scenario: Welcome section displays restaurant info
 
-Scenario: Sign-up form collects email
-Given the page loads
-When the Sign-up section is visible
-Then an email input and "Sign-up" button are displayed on a patterned background
+- **WHEN** the Welcome section is visible
+- **THEN** it shows an "Italian Restaurant" subtitle and "Welcome" heading
+- **AND** a description paragraph is displayed
+- **AND** an "Our Story" link is present
+- **AND** a restaurant image appears in a rounded container
 
-Scenario: Footer renders contact info and gallery
-Given the page loads
-When the footer is visible
-Then Contact Us info (address, phone, email) is displayed
-And Opening Times are shown
-And Latest Posts section is present
-And a Gallery image grid is displayed
-And social media icons are visible in the footer bottom bar
-And the footer bottom links to Component Dock
+### Requirement: Intro section shows three feature cards
 
-Scenario: All sections match visual design tokens
-Given the page loads
-Then the brand color #ec1d25 is used for accents and hover states
-And dark backgrounds (#222222, #111111) are used for footer and dark sections
-And buttons have 10px border-radius
-And Montserrat font is used for headings and body
-And pattern backgrounds appear on Welcome, Booking, and Sign-up sections
+The Intro section SHALL display a parallax banner and three feature cards with images, titles, descriptions, and links.
+
+#### Scenario: Intro section shows three feature cards
+
+- **WHEN** the Intro section is visible
+- **THEN** three cards are displayed in a row
+- **AND** each card has an image, title, description, and "Learn More" link
+
+### Requirement: Menu section shows food categories
+
+The Our Menu section SHALL display food category images in an asymmetric grid with overlay buttons.
+
+#### Scenario: Menu section shows food categories
+
+- **WHEN** the Our Menu section is visible
+- **THEN** food category images are displayed in an asymmetric grid
+- **AND** each image has an overlay button (Lunch, Dinner, Happy Hour, Drink, Starters, Dessert)
+- **AND** hovering an image triggers a zoom effect
+
+### Requirement: Events section displays countdown timer
+
+The Events section SHALL display event cards with countdown timers.
+
+#### Scenario: Events section displays countdown timer
+
+- **WHEN** the Events section is visible
+- **THEN** an event card is shown with title, description, and image
+- **AND** a countdown timer displays Days, Hours, Minutes, Seconds
+- **AND** a "View Details" link is present
+
+### Requirement: Booking form renders all fields
+
+The Booking section SHALL display a reservation form with Date, Time, People, Name, Phone, Email fields.
+
+#### Scenario: Booking form renders all fields
+
+- **WHEN** the Booking section is visible
+- **THEN** a reservation form is displayed with fields: Date, Time, People, Name, Phone, Email
+- **AND** a "Book Table" submit button is present
+- **AND** a restaurant image appears alongside the form
+
+### Requirement: Reviews carousel shows customer testimonials
+
+The Reviews section SHALL display customer reviews with avatars, quotes, star ratings, and reviewer names.
+
+#### Scenario: Reviews carousel shows customer testimonials
+
+- **WHEN** the Reviews section is visible
+- **THEN** a customer review card shows an avatar, quote, star rating, and reviewer name
+- **AND** the avatar has a red (#ec1d25) circular border
+
+### Requirement: Video section has parallax and play button
+
+The Video section SHALL display a parallax background with a centered play button.
+
+#### Scenario: Video section has parallax and play button
+
+- **WHEN** the Video section is visible
+- **THEN** a parallax background image is displayed
+- **AND** a centered circular play button is present
+
+### Requirement: Blog section shows latest news cards
+
+The Blog section SHALL display three blog cards with images, date badges, titles, excerpts, and links.
+
+#### Scenario: Blog section shows latest news cards
+
+- **WHEN** the Blog section is visible
+- **THEN** three blog cards are displayed
+- **AND** each card has an image with date overlay, title, excerpt, and "Continue Reading" link
+
+### Requirement: Sign-up form collects email
+
+The Sign-up section SHALL display an email input and submit button on a patterned background.
+
+#### Scenario: Sign-up form collects email
+
+- **WHEN** the Sign-up section is visible
+- **THEN** an email input and "Sign-up" button are displayed on a patterned background
+
+### Requirement: Footer renders contact info and gallery
+
+The footer SHALL display contact info, opening times, latest posts, gallery, and social icons.
+
+#### Scenario: Footer renders contact info and gallery
+
+- **WHEN** the footer is visible
+- **THEN** Contact Us info (address, phone, email) is displayed
+- **AND** Opening Times are shown
+- **AND** Latest Posts section is present
+- **AND** a Gallery image grid is displayed
+- **AND** social media icons are visible in the footer bottom bar
+- **AND** the footer bottom links to Component Dock
+
+### Requirement: All sections match visual design tokens
+
+All sections SHALL use the correct design tokens (brand color, backgrounds, fonts, border-radius).
+
+#### Scenario: All sections match visual design tokens
+
+- **WHEN** the page loads
+- **THEN** the brand color #ec1d25 is used for accents and hover states
+- **AND** dark backgrounds (#222222, #111111) are used for footer and dark sections
+- **AND** buttons have 10px border-radius
+- **AND** Montserrat font is used for headings and body
+- **AND** pattern backgrounds appear on Welcome, Booking, and Sign-up sections
 
 ## Verification checklist
 
