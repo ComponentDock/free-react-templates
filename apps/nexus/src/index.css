@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Nexus brand palette:
+     - brand pink #ec1e64 (CTA buttons, active states, team name color)
+     - text #252837 (body text, headings)
+     - light bg #f9f9f9 (alternating sections) */
+  --color-brand-pink: #ec1e64;
+  --color-text: #252837;
+  --color-light-bg: #f9f9f9;
+
+  /* Poppins (Google Fonts via index.html link). */
+  --font-poppins: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #252837;
+    font-family: var(--font-poppins);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
