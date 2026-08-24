@@ -1,73 +1,104 @@
-# Template: Bonquet (Food & Restaurant)
+# Spec: Bonquet (Food & Restaurant)
 
 ## Purpose
 
-Recreation of ColorLib [Restauco](https://colorlib.com/wp/template/restauco/) (`https://preview.colorlib.com/theme/restauco/`). A modern, warm food and restaurant landing page featuring a hero section, healthy meal features, tabbed dishes menu, table reservation booking form, customer testimonials, and a comprehensive footer linking to Component Dock. Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib Restauco (`https://preview.colorlib.com/theme/restauco/`, source: `https://colorlib.com/wp/template/restauco/`). A modern, warm food and restaurant landing page featuring a hero section, healthy meal features, tabbed dishes menu, table reservation booking form, customer testimonials, and a comprehensive footer linking to Component Dock. Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 
-## Design Tokens
+## Requirements
 
-- **Brand Colors:**
-  - Primary / Accent: `#FE5F41` (Warm Orange / Coral)
-  - Heading Color: `#4D312C` (Deep Brown)
-  - Body Text: `#94817E` (Muted Brown / Gray)
-  - Background Light / Section Alt: `#FFF4F2` (Soft Cream / Peach Tint)
-- **Fonts:**
-  - Headings: "Mitr", sans-serif
-  - Body: "Raleway", sans-serif
-- **Button / Shape:**
-  - Rounded Pill Buttons (`rounded-full` / `rounded-[35px]`, padding `py-5 px-8`)
-  - Shadows: `shadow-[0_15px_25px_rgba(254,95,65,0.14)]`
+### Requirement: Header Navigation
 
-## Gherkin Requirements & Scenarios
+Users SHALL see a sticky header with logo, navigation links (Home, Menu, About, Blog, Contact), phone number, and "Book a Table" button.
 
-### Feature: Landing Page & Navigation
+#### Scenario: Desktop header renders
 
-As a visitor, I want to view the top navigation bar with brand logo, links (Home, Menu, About, Blog, Contact), Book a Table button, and phone number, so that I can easily navigate the restaurant site.
+- **WHEN** the user loads the Bonquet page
+- **THEN** the header displays the logo, navigation links, phone number, and "Book a Table" button
 
-- **Scenario: Navigation renders correctly**
-  - Given the user loads the Bonquet home page
-  - Then the brand logo and navigation links are displayed
-  - And the "Book a Table" button and phone contact are visible
+#### Scenario: Mobile menu toggle
 
-### Feature: Hero Section
+- **WHEN** the user clicks the hamburger menu icon on mobile
+- **THEN** the mobile navigation menu opens
 
-As a visitor, I want to see a welcoming hero section with headline, subtitle, action buttons, and hero imagery, so that I immediately understand the restaurant's value proposition.
+#### Scenario: Mobile menu closes on link click
 
-- **Scenario: Hero content and interactions**
-  - Given the user views the hero section
-  - Then the headline "Meet, Eat & Enjoy the true test" is displayed
-  - And the "Our Menu" and video watch buttons are clickable
+- **WHEN** the mobile menu is open and the user clicks a navigation link
+- **THEN** the mobile menu closes
 
-### Feature: Menu & Dishes
+### Requirement: Hero Section
 
-As a visitor, I want to browse categorized restaurant dishes with tabs, so that I can choose what to order.
+Users SHALL see a hero banner with headline, subtitle, "Our Menu" button, and "Watch Video" action.
 
-- **Scenario: Menu filtering and item display**
-  - Given the user scrolls to the menu section
-  - Then dish categories (e.g. Breakfast, Lunch, Dinner, Desserts) can be toggled
-  - And dish cards show images, titles, descriptions, and prices
+#### Scenario: Hero renders
 
-### Feature: Table Reservation
+- **WHEN** the user is on the home page
+- **THEN** the hero section displays the headline "Meet, Eat & Enjoy the true test", descriptive subtitle, "Our Menu" button, and "Watch Video" action
 
-As a visitor, I want to fill out a table reservation form with date, time, guests, and contact info, so that I can book a table in advance.
+### Requirement: Features and Services
 
-- **Scenario: Successful table reservation submission**
-  - Given the user fills in the reservation form inputs
-  - When the user clicks the reservation submit button
-  - Then a confirmation message is displayed to the user
+Users SHALL see 3 feature cards: Healthy Meal, Fast Food, and Delicious Coffee.
 
-### Feature: Footer & Component Dock Link
+#### Scenario: Feature cards render
 
-As a visitor, I want to see a footer with brand info, quick links, and a link to Component Dock, so that I can access more templates.
+- **WHEN** the user scrolls past the hero
+- **THEN** 3 feature cards are displayed with titles and descriptions
 
-- **Scenario: Footer renders Component Dock attribution**
-  - Given the user scrolls to the bottom of the page
-  - Then the footer contains copyright information and a link to `https://www.componentdock.com/`
+### Requirement: Most Popular Dishes Menu
+
+Users SHALL see a tabbed menu with 5 categories (Breakfast, Lunches, Dinner, Drinks, Fastfood) and dish items with "Order Now" actions.
+
+#### Scenario: Default tab
+
+- **WHEN** the menu section renders
+- **THEN** the Breakfast tab is selected and breakfast dishes are shown
+
+#### Scenario: Tab switching
+
+- **WHEN** the user clicks a different tab
+- **THEN** the corresponding dishes are displayed
+
+### Requirement: Table Reservation Booking
+
+Users SHALL see a reservation form with guests, date, time, phone, message fields and a "Sent Request" button.
+
+#### Scenario: Form renders
+
+- **WHEN** the user views the reservation section
+- **THEN** all form fields and the submit button are displayed
+
+#### Scenario: Form submission
+
+- **WHEN** the user fills out the form and clicks "Sent Request"
+- **THEN** a success confirmation message is displayed
+
+### Requirement: Customer Testimonials
+
+Users SHALL see customer testimonials with star ratings and quotes.
+
+#### Scenario: Testimonials render
+
+- **WHEN** the testimonials section is visible
+- **THEN** customer names, quotes, and star ratings are displayed
+
+### Requirement: Footer and Attribution
+
+Users SHALL see a footer with quick links, contact information, and a required link to `https://www.componentdock.com/` (branded "Component Dock").
+
+#### Scenario: Footer renders
+
+- **WHEN** the user scrolls to the bottom
+- **THEN** the footer displays quick links, cakes links, contact info, and the Component Dock attribution link
+
+#### Scenario: Go to top button
+
+- **WHEN** the user clicks the go-to-top button
+- **THEN** the page scrolls smoothly to the top
 
 ## Verification Checklist
 
-- [ ] TypeScript strict compilation (`npm run build` / typecheck)
-- [ ] 100% test coverage (`npm run test:coverage`)
-- [ ] Responsive mobile/desktop layout
-- [ ] Footer links to Component Dock
+- [ ] TypeScript compilation (`npm run typecheck`)
+- [ ] Linting (`npm run lint`)
+- [ ] Vitest unit tests with 100% coverage (`npm run test:coverage`)
+- [ ] Production build (`npm run build`)
+- [ ] Footer links Component Dock correctly
 - [ ] No mention of ColorLib in app code
