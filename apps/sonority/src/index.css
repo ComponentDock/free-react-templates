@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-blue: #42b5f2;
+  --color-brand-dark: #262929;
+  --color-brand-body: #6d6d6d;
+  --color-brand-section: #f5f7f9;
+  --color-brand-card-border: #dde4e8;
+  --color-brand-hero-start: #161a1a;
+  --color-brand-hero-end: rgba(38, 41, 41, 0.99);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
