@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand warm orange — #fc8621 from the original stylesheet
+     (.btn-primary background). */
+  --color-brand: #fc8621;
+  --color-brand-dark: #e5781d;
+
+  /* Near-black text color from the original stylesheet (#212529). */
+  --color-ink: #212529;
+
+  /* Light section background from the original stylesheet (#f8f9fa). */
+  --color-light: #f8f9fa;
+
+  /* Footer background from the original stylesheet (#efefef). */
+  --color-footer: #efefef;
+
+  /* Original fonts: "Playfair Display" for headings, "Open Sans" for body. */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
