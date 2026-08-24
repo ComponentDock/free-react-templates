@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Scholar brand colors — purple #5A4E8C primary, red #EA5252 accent,
+     orange #FF6F00 submit button, light blue #EFFDFF section backgrounds,
+     dark navy #1a1a2e footer. */
+  --color-primary-50: #f0edf8;
+  --color-primary-100: #d9d2ee;
+  --color-primary-200: #b3a5dd;
+  --color-primary-300: #8d78cc;
+  --color-primary-400: #6b5aab;
+  --color-primary-500: #5a4e8c;
+  --color-primary-600: #4a4074;
+  --color-primary-700: #3a325c;
+  --color-primary-800: #2a2444;
+  --color-primary-900: #1a162c;
+
+  --color-accent-300: #f08484;
+  --color-accent-400: #ea5252;
+  --color-accent-500: #d43c3c;
+
+  --color-submit: #ff6f00;
+
+  --color-section-bg: #effdff;
+
+  --color-heading: #3c3b37;
+  --color-body: #6a6a6a;
+  --color-subtitle: #6b5a5a;
+
+  --color-footer-bg: #1a1a2e;
+
+  --color-ink: #1a1a1a;
+
+  --font-sans: 'Jost', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Jost', ui-sans-serif, system-ui, sans-serif;
+}
