@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --color-dark-base: #1d1e21;
+  --color-dark-surface: #161719;
+  --color-dark-card: #222327;
+  --color-muted: #aaaaaa;
+  --color-accent: #c8a97e;
+}
