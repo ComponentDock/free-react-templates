@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #c5a880;
+  --color-brand-dark: #a88c62;
+  --color-ink: #222222;
+  --color-surface: #f8f8f8;
+  --color-muted: #999999;
+  --font-heading: 'Old Standard TT', serif;
+  --font-body: 'Nunito', Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+}
