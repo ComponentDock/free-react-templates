@@ -724,7 +724,7 @@
 - [ ] **Carousel 17** — [colorlib](https://colorlib.com/wp/template/carousel-17/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-17.jpg)
 - [ ] **Carousel 18** — [colorlib](https://colorlib.com/wp/template/carousel-18/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-18.jpg)
 - [ ] **Carousel 19** — [colorlib](https://colorlib.com/wp/template/carousel-19/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-19.jpg)
-- [ ] **Carousel 20** — [colorlib](https://colorlib.com/wp/template/carousel-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-20.jpg)
+- [~] **Carousel 20** — [colorlib](https://colorlib.com/wp/template/carousel-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-20.jpg)
 
 ## Bootstrap Checkboxes (20)
 
