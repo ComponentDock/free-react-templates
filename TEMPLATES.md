@@ -632,7 +632,7 @@
 - [x] **Unioncorp** — [colorlib](https://colorlib.com/wp/template/unioncorp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unioncorp-colorlib-template.jpg) · [unioncorp](https://free-react-templates-unioncorp.surge.sh)
 - [x] **Universityedu** — [colorlib](https://colorlib.com/wp/template/universityedu/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/universityedu-colorlib-template.jpg) · [scholara](https://scholara.free.componentdock.com)
 - [x] **Unwind** — [colorlib](https://colorlib.com/wp/template/unwind/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unwind-free-template.jpg) · [solace](https://free-react-templates-solace.surge.sh)
-- [~] **Victor** — [colorlib](https://colorlib.com/wp/template/victor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/victor-free-template.jpg)
+- [x] **Victor** — [colorlib](https://colorlib.com/wp/template/victor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/victor-free-template.jpg) · [crest](https://free-react-templates-crest.surge.sh)
 
 ## Bootstrap Accordions (20)
 
@@ -1216,7 +1216,7 @@
 - [x] **Uza** — [colorlib](https://colorlib.com/wp/template/uza/) · [amplify](https://amplify.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/uza-free-template.jpg)
 - [ ] **Vacation** — [colorlib](https://colorlib.com/wp/template/vacation/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vacation-free-template.jpeg)
 - [ ] **Vegefoods** — [colorlib](https://colorlib.com/wp/template/vegefoods/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vegefoods-free-template.jpg)
-- [~] **Victor** — [colorlib](https://colorlib.com/wp/template/victor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/victor-free-template.jpg)
+- [x] **Victor** — [colorlib](https://colorlib.com/wp/template/victor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/victor-free-template.jpg) · [crest](https://free-react-templates-crest.surge.sh)
 - [ ] **Vigor** — [colorlib](https://colorlib.com/wp/template/vigor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vigor-free-template.jpg)
 - [x] **Violet** — [colorlib](https://colorlib.com/wp/template/violet/) · [vogue](https://vogue.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/violet-free-template.jpg)
 - [ ] **Virtualassistant** — [colorlib](https://colorlib.com/wp/template/virtualassistant/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/virtualassistant-free-template.jpg)
