@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'DM Sans', sans-serif;
+  --color-brand: #ff6d21;
+  --color-navy: #232f55;
+  --color-navy-gray: #454e6d;
+  --color-light-gray: #f8fafc;
+}
