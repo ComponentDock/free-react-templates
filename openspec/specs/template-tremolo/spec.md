@@ -16,39 +16,52 @@ Recreation of ColorLib `accordion-02` (Free Food Menu Accordion), previewed at `
   - Headings: Bold font weights (`font-bold tracking-tight`), large display headers for categories
 - **Component Styles**:
   - Accordion cards: Expandable panels with smooth transitions, chevron indicators, and clear distinction between active and collapsed states.
-  - Buttons & Badges: Pill-shaped dietary tags (Vegetarian, Spicy, Chef's Special), crisp CTA order buttons.
+  - Buttons and Badges: Pill-shaped dietary tags (Vegetarian, Spicy, Chef's Special), crisp CTA order buttons.
 
 ## Requirements
 
-### Requirement 1: Hero & Header Section
+### Requirement 1: Hero and Header Section
 
-- **Description**: The template must feature a prominent header introducing the restaurant or menu collection with a bold title, subtitle, and quick category filter tabs.
-- **Scenarios**:
-  - Given the user loads the Tremolo food menu app, when the page renders, then it displays a stylish header banner with title "Tremolo Culinary Menu", a descriptive subtitle, and navigation tabs for categories.
+#### Scenario: Page renders with hero banner
+
+- **WHEN** the user loads the Tremolo food menu app
+- **THEN** it displays a stylish header banner with title "Exquisite Food, Crafted with Passion"
+- **AND** a descriptive subtitle about the seasonal menu
+- **AND** a call-to-action button labeled "Explore Menu"
 
 ### Requirement 2: Categorized Food Accordion Sections
 
-- **Description**: The core menu must be organized into clear categories (e.g., Starters, Main Courses, Specialties, Desserts, Beverages) using interactive accordion components.
-- **Scenarios**:
-  - Given the menu is displayed, when a user clicks on an accordion category header (e.g., "Starters"), then the accordion expands smoothly to reveal individual menu items with titles, descriptions, prices, and food thumbnail photos.
-  - Given an accordion category is expanded, when the user clicks the header again or opens another category, then the panel collapses/toggles appropriately.
+#### Scenario: Expand accordion category
 
-### Requirement 3: Interactive Item Details & Dietary Badges
+- **WHEN** the user clicks on an accordion category header (e.g. "Starters")
+- **THEN** the accordion expands smoothly to reveal individual menu items
+- **AND** each item shows its title, description, price, and food thumbnail photo
 
-- **Description**: Each menu item inside the accordions must present clear pricing, appetizing descriptions, and visual badges for dietary preferences (e.g., Spicy, Vegan, Gluten-Free).
-- **Scenarios**:
-  - Given menu items are visible, when inspecting an item, then it displays its price formatted correctly (e.g., "$14.50"), dietary badges, and a high-resolution food image from Picsum.
+#### Scenario: Collapse accordion category
 
-### Requirement 4: Footer & Component Dock Attribution
+- **WHEN** an accordion category is expanded
+- **AND** the user clicks the header again
+- **THEN** the panel collapses and hides the menu items
 
-- **Description**: The page footer must display copyright, quick links, and a mandatory link to `https://www.componentdock.com/` ("Component Dock").
-- **Scenarios**:
-  - Given the user scrolls to the bottom of the page, when the footer renders, then it shows the copyright notice and a visible "More templates at Component Dock" link pointing to `https://www.componentdock.com/`.
+#### Scenario: Toggle between categories
 
-## Verification Checklist
+- **WHEN** an accordion category is expanded
+- **AND** the user clicks a different category header
+- **THEN** the first category collapses and the new one expands
 
-- [ ] Vite dev server starts successfully with zero type errors.
-- [ ] All accordion categories expand and collapse correctly on click.
-- [ ] Dietary badges and prices render correctly for every dish.
-- [ ] Footer contains the required Component Dock link.
-- [ ] Vitest unit tests pass with 100% code coverage.
+### Requirement 3: Interactive Item Details and Dietary Badges
+
+#### Scenario: Display menu item details
+
+- **WHEN** menu items are visible inside an expanded accordion
+- **THEN** each item displays its price formatted correctly (e.g. "$14.50")
+- **AND** dietary badges (Vegetarian, Spicy, Gluten-Free, Chef's Special) where applicable
+- **AND** a high-resolution food image from Picsum
+
+### Requirement 4: Footer and Component Dock Attribution
+
+#### Scenario: Footer shows Component Dock link
+
+- **WHEN** the user scrolls to the bottom of the page
+- **THEN** the footer displays the Tremolo brand name and social media links
+- **AND** a visible "More templates at Component Dock" link pointing to `https://www.componentdock.com/`
