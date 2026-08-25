@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand orange — inspired by the original ColorLib Thelogistico
+     template (#f60 / #ff6600 used on buttons, links, accents). */
+  --color-brand: #ff6600;
+  --color-brand-dark: #e55b00;
+
+  /* Neutral palette */
+  --color-surface: #f1fbff;
+  --color-ink: #000000;
+  --color-muted: #636363;
+  --color-border: #e8e7d3;
+
+  /* Font families */
+  --font-display: 'Roboto Condensed', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+  }
+}

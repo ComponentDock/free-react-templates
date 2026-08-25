@@ -626,7 +626,7 @@
 - [x] **Spark** — [colorlib](https://colorlib.com/wp/template/spark/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/spark-free-templatel.jpg) · [spark](https://spark.free.componentdock.com)
 - [x] **Startright** — [colorlib](https://colorlib.com/wp/template/startright/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/startright-free-template.jpg) · [thrive](https://thrive.free.componentdock.com)
 - [x] **Stodeo** — [colorlib](https://colorlib.com/wp/template/stodeo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stodeo-free-template.jpg) · [orbiter](https://orbiter.free.componentdock.com)
-- [ ] **Thelogistico** — [colorlib](https://colorlib.com/wp/template/thelogistico/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelogistico-colorlib-template.jpg)
+- [~] **Thelogistico** — [colorlib](https://colorlib.com/wp/template/thelogistico/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelogistico-colorlib-template.jpg)
 - [ ] **Toothcare** — [colorlib](https://colorlib.com/wp/template/toothcare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/toothcare-free-template.jpg)
 - [ ] **Unbrew** — [colorlib](https://colorlib.com/wp/template/unbrew/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unbrew-free-template.jpg)
 - [ ] **Unioncorp** — [colorlib](https://colorlib.com/wp/template/unioncorp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unioncorp-colorlib-template.jpg)
