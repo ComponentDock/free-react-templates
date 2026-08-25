@@ -14,35 +14,43 @@
 - Font Family: Inter, sans-serif
 - Border Radius: `rounded-xl` (12px) for cards, `rounded-lg` for interactive items
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
-### Feature: Accordion Section Navigation
+### Requirement: Accordion Section Navigation
 
-As a user, I want to expand and collapse different accordion sections so that I can view management settings, location details, and hobbies cleanly.
+The application SHALL provide expandable/collapsible accordion sections for viewing management settings, location details, and hobbies.
 
 #### Scenario: Expand Manage Section
 
-- Given the Expanda application is loaded
-- When the user clicks on the "Manage" accordion header
-- Then the Manage section expands to show items: 01 Account, 02 Settings, 03 Profile
-- And other sections collapse or adjust accordingly
+- **WHEN** the Expanda application is loaded
+- **THEN** the Manage section is expanded by default showing items: 01 Account, 02 Settings, 03 Profile
+
+#### Scenario: Toggle Manage Section Off
+
+- **WHEN** the user clicks on the "Manage" accordion header while it is open
+- **THEN** the Manage section collapses and hides its sub-items
 
 #### Scenario: Expand Location Section
 
-- Given the Expanda application is loaded
-- When the user clicks on the "Location" accordion header
-- Then the Location section expands to show regional details and map/location info
+- **WHEN** the user clicks on the "Location" accordion header
+- **THEN** the Location section expands to show Regional Headquarters details
+
+#### Scenario: Toggle Location Section Off
+
+- **WHEN** the user clicks on the "Location" accordion header while it is open
+- **THEN** the Location section collapses
 
 #### Scenario: Expand Hobbies Section
 
-- Given the Expanda application is loaded
-- When the user clicks on the "Hobbies" accordion header
-- Then the Hobbies section expands to show user interests and activity lists
+- **WHEN** the user clicks on the "Hobbies" accordion header
+- **THEN** the Hobbies section expands to show Photography & Hiking interests
 
-## Verification Checklist
+#### Scenario: Toggle Hobbies Section Off
 
-- [ ] Spec validation passes (`npm run spec:validate`)
-- [ ] 100% test coverage on components
-- [ ] Responsive layout on mobile and desktop
-- [ ] Footer links to `https://www.componentdock.com/` ("Component Dock")
-- [ ] Clean modern UI with Lucide icons
+- **WHEN** the user clicks on the "Hobbies" accordion header while it is open
+- **THEN** the Hobbies section collapses
+
+#### Scenario: Footer Component Dock Link
+
+- **WHEN** the Expanda application is loaded
+- **THEN** the footer contains a link to https://www.componentdock.com/ branded as "Component Dock"
