@@ -626,7 +626,7 @@
 - [x] **Spark** — [colorlib](https://colorlib.com/wp/template/spark/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/spark-free-templatel.jpg) · [spark](https://spark.free.componentdock.com)
 - [x] **Startright** — [colorlib](https://colorlib.com/wp/template/startright/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/startright-free-template.jpg) · [thrive](https://thrive.free.componentdock.com)
 - [x] **Stodeo** — [colorlib](https://colorlib.com/wp/template/stodeo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stodeo-free-template.jpg) · [orbiter](https://orbiter.free.componentdock.com)
-- [~] **Thelogistico** — [colorlib](https://colorlib.com/wp/template/thelogistico/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelogistico-colorlib-template.jpg)
+- [x] **Thelogistico** — [colorlib](https://colorlib.com/wp/template/thelogistico/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelogistico-colorlib-template.jpg) · [logistix](https://logistix.free.componentdock.com)
 - [ ] **Toothcare** — [colorlib](https://colorlib.com/wp/template/toothcare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/toothcare-free-template.jpg)
 - [ ] **Unbrew** — [colorlib](https://colorlib.com/wp/template/unbrew/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unbrew-free-template.jpg)
 - [ ] **Unioncorp** — [colorlib](https://colorlib.com/wp/template/unioncorp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unioncorp-colorlib-template.jpg)
@@ -1198,7 +1198,7 @@
 - [x] **The Barber** — [colorlib](https://colorlib.com/wp/template/the-barber/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thebarber-free-template.jpg) · [amber](https://amber.free.componentdock.com)
 - [ ] **Theestate** — [colorlib](https://colorlib.com/wp/template/theestate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theestate-free-template.jpg)
 - [ ] **Theinterior** — [colorlib](https://colorlib.com/wp/template/theinterior/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theinterior-free-template.jpg)
-- [ ] **Thelogistico** — [colorlib](https://colorlib.com/wp/template/thelogistico/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelogistico-colorlib-template.jpg)
+- [x] **Thelogistico** — [colorlib](https://colorlib.com/wp/template/thelogistico/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelogistico-colorlib-template.jpg) · [logistix](https://logistix.free.componentdock.com)
 - [ ] **Thelook** — [colorlib](https://colorlib.com/wp/template/thelook/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelook-free-template.jpg)
 - [ ] **Topbuilder** — [colorlib](https://colorlib.com/wp/template/topbuilder/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/topbuilder-construction-company-website-template.jpg)
 - [x] **Topgym** — [colorlib](https://colorlib.com/wp/template/topgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/topgym-free-template.jpg) · [ironpulse](https://ironpulse.free.componentdock.com)
@@ -2967,7 +2967,7 @@
 - [x] **Logistics** — [colorlib](https://colorlib.com/wp/template/logistics/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logistics-free-template.jpg) · [shiply](https://shiply.free.componentdock.com)
 - [ ] **Swiftmove** — [colorlib](https://colorlib.com/wp/template/swiftmove/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/swiftmove-template-1771943964825.jpg)
 - [ ] **Taxi** — [colorlib](https://colorlib.com/wp/template/taxi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/taxi-free-template.jpg)
-- [ ] **Thelogistico** — [colorlib](https://colorlib.com/wp/template/thelogistico/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelogistico-colorlib-template.jpg)
+- [x] **Thelogistico** — [colorlib](https://colorlib.com/wp/template/thelogistico/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelogistico-colorlib-template.jpg) · [logistix](https://logistix.free.componentdock.com)
 
 ## Travel (44)
 
