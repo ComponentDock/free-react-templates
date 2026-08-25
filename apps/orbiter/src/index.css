@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Noto Sans', sans-serif;
+  --color-brand-primary: #3369e7;
+  --color-brand-secondary: #00aaff;
+  --color-heading: #081b46;
+  --color-body: #212529;
+  --color-footer-bg: #efefef;
+  --color-footer-text: #888888;
+  --color-footer-heading: #000000;
+  --color-footer-link: #777777;
+  --color-service-dark: #1a1a2e;
+  --color-counter-text: #ffffff;
+}
