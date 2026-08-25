@@ -2,68 +2,152 @@
 
 ## Purpose
 
-Recreation of ColorLib Schmidt (`https://colorlib.com/wp/template/schmidt/`), preview URL: `https://preview.colorlib.com/theme/schmidt/`. Stack: Vite, React 19, Tailwind CSS 4, TypeScript (strict).
+Clearpoint is a single-page portfolio landing template in the
+free-react-templates monorepo. It is an original React recreation of the
+ColorLib "Schmidt" free template, built under the monorepo stack: Vite +
+React 19 + Tailwind CSS 4 + TypeScript.
 
-## Design tokens
+The original is a professional portfolio page with gold/yellow accents: a
+hero ("I'm John Clearpoint", "UI/UX Designer & Developer"), an about
+section with skill bars, services grid, experiences/stats, works/case
+studies, and a dark footer with Component Dock link. Clearpoint recreates
+that structure section-for-section with matching layout, colors,
+typography, and content types (no ColorLib assets copied).
 
-- **Brand primary**: `#d5c455` (Gold / Yellow accent)
-- **Neutral dark**: `#1a1a1a` / `#212529`
-- **Neutral light**: `#f8f9fa` / `#ffffff`
-- **Font family**: Poppins, sans-serif
-- **Button radii**: Rounded / Pill (`rounded` / `rounded-md`)
+- **Source:** https://colorlib.com/wp/template/schmidt/
+- **Preview:** https://preview.colorlib.com/theme/schmidt/
+- **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+- **New name:** `clearpoint` (no collision with existing apps/specs)
 
-## Requirements & Gherkin Scenarios
+## Design Tokens
 
-### Feature: Navbar & Header
+### Colors
 
-- As a visitor, I want a responsive navigation bar with brand logo and section links so I can jump to sections.
+| Token           | Hex       | Usage                                      |
+| --------------- | --------- | ------------------------------------------ |
+| `--color-brand` | `#d5c455` | Gold / Yellow accent — buttons, highlights |
+| `--color-ink`   | `#1a1a1a` | Dark text / headings                       |
+| `--color-mist`  | `#666666` | Muted body text                            |
+| `--color-paper` | `#ffffff` | White section backgrounds                  |
+| `--color-cloud` | `#f8f9fa` | Light gray section backgrounds             |
 
-#### Scenario: Navigation links work correctly
+### Typography
 
-- Given the user is on the Clearpoint home page
-- When they view the navbar
-- Then they see logo "Clearp." and links for Home, About, Services, Experiences, Works, Blog, and Contact.
+| Role            | Font family | Notes                       |
+| --------------- | ----------- | --------------------------- |
+| Body / Headings | Poppins     | Sans-serif, used throughout |
 
-### Feature: Hero Section
+### Buttons & Radii
 
-- As a visitor, I want a striking hero area with my title, subtitle, and CTA buttons.
+| Element          | Style                                                                  |
+| ---------------- | ---------------------------------------------------------------------- |
+| Primary button   | bg brand gold (#d5c455), dark text, rounded, padding ~0.75rem vertical |
+| Secondary button | Outline / transparent, border-radius rounded                           |
+| CTA button       | bg dark (#1a1a1a), white text, rounded pill                            |
 
-#### Scenario: Hero content and CTAs
+### Section Backgrounds
 
-- Given the user lands on the page
-- When the hero section is displayed
-- Then it shows subheading "UI/UX Designer & Developer", heading "I'm John Clearpoint", and buttons "More About Me" and "Hire Me".
+| Section     | Background                         |
+| ----------- | ---------------------------------- |
+| Hero        | Full-bleed image with dark overlay |
+| About       | White                              |
+| Services    | Light gray (#f8f9fa)               |
+| Experiences | White                              |
+| Works       | White                              |
+| Footer      | Dark (#1a1a1a)                     |
 
-### Feature: About Section
+## Requirements
 
-- As a visitor, I want to read bio details, skills, and personal info.
+### Requirement: Navigation bar
 
-#### Scenario: About details are visible
+The system SHALL render a fixed top navigation bar with the brand name
+"Clearp." and section links: Home, About, Services, Experiences, Works,
+Blog, Contact. On mobile (< 768px), a hamburger button SHALL toggle the
+navigation menu.
 
-- Given the user scrolls to About
-- Then bio details and skill progress bars are displayed.
+#### Scenario: Navbar content
 
-### Feature: Services Section
+- **GIVEN** the Clearpoint page is rendered
+- **WHEN** the user views the navbar
+- **THEN** the brand text "Clearp." is visible
+- **AND** navigation links for Home, About, Services, Experiences, Works, Blog, Contact are present
 
-- As a visitor, I want to view offered services with icons and descriptions.
+#### Scenario: Mobile hamburger toggle
+
+- **GIVEN** the viewport is less than 768px wide
+- **WHEN** the user taps the hamburger button
+- **THEN** the navigation menu opens
+- **AND** tapping the button again closes the menu
+
+### Requirement: Hero section
+
+The system SHALL render a hero section with a full-bleed background image,
+a subheading "UI/UX Designer & Developer", the heading "I'm John
+Clearpoint", and two CTA buttons: "More About Me" and "Hire Me".
+
+#### Scenario: Hero content
+
+- **GIVEN** the user lands on the Clearpoint page
+- **WHEN** the hero section is displayed
+- **THEN** the subheading "UI/UX Designer & Developer" is visible
+- **AND** the heading "I'm John Clearpoint" is shown
+- **AND** buttons "More About Me" and "Hire Me" are present
+
+### Requirement: About section
+
+The system SHALL render an about section with bio details and skill
+progress bars. Personal info items (name, age, phone, email, address)
+SHALL be displayed alongside the bio.
+
+#### Scenario: About details visible
+
+- **GIVEN** the user scrolls to the About section
+- **WHEN** the section is in view
+- **THEN** bio details and skill progress bars are displayed
+- **AND** personal info items are shown
+
+### Requirement: Services section
+
+The system SHALL render a services grid with at least 4 service cards,
+each containing an icon, title, and description.
 
 #### Scenario: Services grid
 
-- Given the user scrolls to Services
-- Then service cards with icons, titles, and descriptions are shown.
+- **GIVEN** the user scrolls to the Services section
+- **WHEN** the section is in view
+- **THEN** service cards with icons, titles, and descriptions are shown
+- **AND** there are at least 4 service cards
 
-### Feature: Footer Attribution
+### Requirement: Experiences / stats
 
-- As a visitor, I want clear footer info including the Component Dock link.
+The system SHALL render an experiences section with stat counters for key
+metrics.
+
+#### Scenario: Stats counters
+
+- **GIVEN** the user scrolls to the Experiences section
+- **WHEN** the section is in view
+- **THEN** stat counters for key metrics are visible
+
+### Requirement: Works / case studies
+
+The system SHALL render a works section with case study items containing
+images and titles.
+
+#### Scenario: Case study showcase
+
+- **GIVEN** the user scrolls to the Works section
+- **WHEN** the section is in view
+- **THEN** case study items with images and titles are shown
+
+### Requirement: Footer
+
+The system SHALL render a footer with a copyright notice and a link to
+https://www.componentdock.com/ branded as "Component Dock".
 
 #### Scenario: Footer link present
 
-- Given the user scrolls to the bottom
-- Then the footer contains a copyright notice and a link to `https://www.componentdock.com/`.
-
-## Verification Checklist
-
-- [ ] `npm run test:coverage` passes at 100%
-- [ ] `npm run build` succeeds
-- [ ] Footer links Component Dock
-- [ ] No mention of ColorLib in app code
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer is in view
+- **THEN** a copyright notice is present
+- **AND** a link to https://www.componentdock.com/ with text "Component Dock" is visible

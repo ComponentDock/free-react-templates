@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Adviso brand palette — consulting template recreation
+     (design-token notes for the recreated template):
+     brand mint #00FFAB (hero highlight, underline links, about heading
+     block, blog hover overlay, play button, newsletter button),
+     secondary green #55A48A (mission top border, mission Learn More,
+     service numbers, counters), ink #1E1E1E (buttons, footer),
+     dark-alt #2A2A2A (btn_1), play icon #F04506, hover sweep #ec583a. */
+  --color-brand: #00ffab;
+  --color-brand-dark: #55a48a;
+  --color-ink: #1e1e1e;
+  --color-dark-alt: #2a2a2a;
+  --color-play: #f04506;
+  --color-sweep: #ec583a;
+
+  /* Surfaces: white body, light-gray #F2F4F8 (solutions row), pale green
+     #DFEBE6 (case-study row), mist #F2F2F2 (mission strip), ink footer. */
+  --color-surface: #f2f4f8;
+  --color-surface2: #dfebe6;
+  --color-mist: #f2f2f2;
+  --color-body: #656565;
+
+  /* Oswald for display headings + buttons, Jost for body/nav */
+  --font-display: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Jost', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-body antialiased;
+  }
+}
+
+@layer components {
+  /* Solid ink square button (.btn style) — Oswald 18px, tall padding,
+     radius 0, hover sweep #ec583a. */
+  .btn-ink-square {
+    @apply inline-block bg-ink px-8 py-5.5 font-display text-lg font-medium text-white transition-colors hover:bg-sweep;
+  }
+
+  /* Dark-alt square button (.btn_1 style) — hover becomes outline. */
+  .btn-dark-square {
+    @apply inline-block bg-dark-alt px-8.5 py-6 font-display text-lg font-medium text-white transition-colors hover:border hover:border-dark-alt hover:bg-transparent hover:text-dark-alt;
+  }
+
+  /* Transparent hero button (.hero-btn) — 1px white border, uppercase,
+     hover border/text mint. */
+  .btn-hero-outline {
+    @apply inline-block border border-white bg-transparent px-9 py-5.5 text-sm font-medium uppercase tracking-wide text-white transition-colors hover:border-brand hover:text-brand;
+  }
+
+  /* Underline link (.browse-btn) — 2px mint underline below text. */
+  .link-underline {
+    @apply inline-block text-base font-medium text-white underline decoration-brand decoration-2 underline-offset-[11px] transition-all hover:tracking-wide hover:text-brand;
+  }
+
+  /* Secondary-green underline link (.browse-btn2). */
+  .link-underline-green {
+    @apply inline-block text-base font-medium text-brand-dark underline decoration-brand-dark decoration-2 underline-offset-[11px] transition-all hover:tracking-wide hover:text-brand-dark;
+  }
+
+  /* Mint newsletter button (footer SIGN UP). */
+  .btn-mint-news {
+    @apply inline-block w-full bg-brand px-5 py-4 text-sm font-medium uppercase tracking-wide text-ink transition-colors hover:bg-brand-dark;
+  }
+}
