@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Lawguard brand palette — Bright Blue primary (#037ef3),
+     dark charcoal contrast (#0f0f11), neutral slate. */
+  --color-brand: #037ef3;
+  --color-brand-dark: #0268c4;
+  --color-charcoal: #0f0f11;
+  --color-slate: #6c757d;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
