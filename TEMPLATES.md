@@ -876,7 +876,7 @@
 
 ## Business (365)
 
-- [ ] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
+- [~] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [ ] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg)
 - [x] **Action** — [colorlib](https://colorlib.com/wp/template/action/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/action-free-template.jpg) · [momentum](https://momentum.free.componentdock.com)
 - [ ] **Agrica** — [colorlib](https://colorlib.com/wp/template/agrica/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agrica-free-template.jpg)
