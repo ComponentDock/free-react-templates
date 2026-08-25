@@ -631,7 +631,7 @@
 - [x] **Unbrew** — [colorlib](https://colorlib.com/wp/template/unbrew/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unbrew-free-template.jpg) · [pulsewave](https://free-react-templates-pulsewave.surge.sh)
 - [x] **Unioncorp** — [colorlib](https://colorlib.com/wp/template/unioncorp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unioncorp-colorlib-template.jpg) · [unioncorp](https://free-react-templates-unioncorp.surge.sh)
 - [x] **Universityedu** — [colorlib](https://colorlib.com/wp/template/universityedu/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/universityedu-colorlib-template.jpg) · [scholara](https://scholara.free.componentdock.com)
-- [~] **Unwind** — [colorlib](https://colorlib.com/wp/template/unwind/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unwind-free-template.jpg)
+- [x] **Unwind** — [colorlib](https://colorlib.com/wp/template/unwind/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unwind-free-template.jpg) · [solace](https://free-react-templates-solace.surge.sh)
 - [ ] **Victor** — [colorlib](https://colorlib.com/wp/template/victor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/victor-free-template.jpg)
 
 ## Bootstrap Accordions (20)
@@ -1934,7 +1934,7 @@
 - [ ] **The Palatin** — [colorlib](https://colorlib.com/wp/template/the-palatin/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thepalatin-free-template.jpg)
 - [ ] **Theriver** — [colorlib](https://colorlib.com/wp/template/theriver/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theriver-free-template.jpg)
 - [ ] **Tour** — [colorlib](https://colorlib.com/wp/template/tour/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tour-free-template.jpg)
-- [~] **Unwind** — [colorlib](https://colorlib.com/wp/template/unwind/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unwind-free-template.jpg)
+- [x] **Unwind** — [colorlib](https://colorlib.com/wp/template/unwind/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unwind-free-template.jpg) · [solace](https://free-react-templates-solace.surge.sh)
 - [ ] **Vacation Rental** — [colorlib](https://colorlib.com/wp/template/vacation-rental/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vacationrental-free-template.jpg)
 - [ ] **Villa** — [colorlib](https://colorlib.com/wp/template/villa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/villa-free-template.jpg)
 
