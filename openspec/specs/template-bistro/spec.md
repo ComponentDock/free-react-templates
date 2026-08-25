@@ -1,44 +1,44 @@
-# Template: Bistro (Menu / Restaurant Category)
+# Template: Bistro (Design category: Food & Dining / Menu Accordions)
 
 ## Purpose
 
-- **ColorLib Source**: `accordion-02` (https://colorlib.com/wp/template/accordion-02/)
-- **Live Preview URL**: https://preview.colorlib.com/theme/bac/accordion-02/
-- **Stack**: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide Icons
+Recreation of ColorLib [Bootstrap Accordion V02](https://colorlib.com/wp/template/accordion-02/) (preview URL: `https://preview.colorlib.com/theme/accordion-02/`), built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 
-## Design Tokens (Extracted from Reference)
+## Design Tokens
 
-- **Primary Font**: 'Poppins', sans-serif
-- **Brand Colors**:
-  - Primary Accent: Warm Gold / Amber (`#c59b27` / `#dfa974`)
-  - Background: Dark / Charcoal (`#1a1a1a` / `#111111`) or Clean Light Neutral cards
-  - Text: High contrast dark headings with muted gray descriptions (`#777777`, `#333333`)
-- **Radii**: Subtle rounded corners (`rounded-lg`, `rounded-xl`)
-- **Layout Rhythm**: Centered accordion cards with expandable categories (Breakfast, Lunch, Dinner, Drink, Wine), featuring rich menu items with titles, descriptions, and prices.
+- **Brand Colors**: Warm cream background (`#fcf8f2`), dark espresso text (`#2c221e`), warm amber/gold accents (`#d4a373` / `#bc6c25`), clean white card surfaces (`#ffffff`).
+- **Font Family**: Sans-serif headings and body (e.g., Poppins or Inter via Google Fonts).
+- **Button / Accordion Styling**: Clean rounded pill or rectangular accordion headers with subtle hover states, smooth expand/collapse transitions, and clear active indicators.
+- **Layout**: Centered container featuring "Our Specialties" section with interactive accordion tabs for Breakfast, Lunch, Dinner, Drink, and Wine, listing menu items with titles, prices, and descriptions.
 
 ## Gherkin Requirements & Scenarios
 
-### Feature: Interactive Restaurant Menu Accordions
+### Feature: Interactive Food Menu Accordions
 
-- **Scenario**: User views the main menu categories
-  - Given the Bistro application is loaded
-  - When the user views the "Our Specialties" section
-  - Then all menu categories (Breakfast, Lunch, Dinner, Drink, Wine) are displayed as interactive accordions
-  - And the default active category is expanded to show its items
+As a site visitor, I want to explore food and drink menus via interactive accordion sections so that I can easily view meal categories and items.
 
-- **Scenario**: User toggles a menu category
-  - Given the Bistro application is loaded
-  - When the user clicks on a collapsed category header (e.g. "Lunch")
-  - Then the category expands smoothly to reveal its menu items
-  - And previously expanded categories collapse if in single-accordion mode
+#### Scenario: Viewing default open section
 
-- **Scenario**: Footer branding check
-  - Given the user scrolls to the bottom of the page
-  - Then the footer displays the required copyright and a link to `https://www.componentdock.com/` labeled "Component Dock"
+- **Given** the user opens the Bistro menu page
+- **When** the page loads
+- **Then** the "Breakfast" section is expanded by default showing menu items with titles, prices, and descriptions
+- **And** other sections (Lunch, Dinner, Drink, Wine) are collapsed
+
+#### Scenario: Toggling accordion sections
+
+- **Given** the user is viewing the menu
+- **When** the user clicks on the "Lunch" accordion header
+- **Then** the "Lunch" section expands to reveal its items
+- **And** the previously open section collapses
+
+#### Scenario: Footer Attribution
+
+- **Given** the user scrolls to the bottom of the page
+- **Then** the footer displays a link to `https://www.componentdock.com/` ("Component Dock")
 
 ## Verification Checklist
 
-- [ ] App builds cleanly without type errors
-- [ ] 100% test coverage maintained on all components
-- [ ] Footer links correctly to Component Dock
-- [ ] Responsive layout across mobile and desktop
+- [ ] Spec validation passes (`npm run spec:validate`)
+- [ ] Per-app checks pass (`scripts/verify-app.sh bistro`)
+- [ ] 100% test coverage maintained
+- [ ] Footer correctly links Component Dock
