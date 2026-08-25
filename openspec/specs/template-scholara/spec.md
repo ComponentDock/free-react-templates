@@ -134,76 +134,127 @@ https://colorlib.com/wp/template/universityedu/
       template is made with ❤ by Colorlib" (replaced with Component Dock
       attribution)
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
-Feature: Scholara education landing page
+### Requirement: Hero section renders correctly
 
-  Background:
-    Given the user opens Scholara at its deploy URL
+The hero SHALL display a background image with dark overlay, the headline, the label, and a green CTA button.
 
-  Scenario: Hero section renders correctly
-    Then the hero section displays a background image with dark overlay
-    And the headline "SHOWCASE COURSES, EVENTS AND MORE!" is visible
-    And the label "EDUCATION & SCHOOL" is visible above the headline
-    And a green "Get Started Now" button is displayed
+#### Scenario: Hero displays all elements
 
-  Scenario: Sticky navigation scrolls into view
-    When the user scrolls down past the hero
-    Then the navigation bar becomes sticky at the top
-    And the logo, nav links (Home, About, Programs, Blog, Contact), and call-to-action are visible
+- **WHEN** the user opens the page
+- **THEN** the hero section displays a background image with dark overlay
+- **AND** the headline "SHOWCASE COURSES, EVENTS AND MORE!" is visible
+- **AND** the label "EDUCATION & SCHOOL" is visible above the headline
+- **AND** a green "Get Started Now" button is displayed
 
-  Scenario: Countdown banner is visible
-    Then the top bar shows countdown timer digits for Days, Hours, Minutes, Seconds
-    And the text "ENDS TOMORROW" is visible
+### Requirement: Countdown banner is visible
 
-  Scenario: About section displays
-    Then the about section has a warm cream background
-    And the heading "A comprehensive teaching approach" is visible
-    And an image appears to the left of the text
-    And a "Learn More" browse link is visible
+The top bar SHALL show countdown timer digits for Days, Hours, Minutes, Seconds.
 
-  Scenario: Programs section shows two cards
-    Then the "Programs we Offer" section title is visible
-    And exactly 2 program cards are displayed in a 2-column grid
-    And each card shows an image, title, description, and "Learn More" link
+#### Scenario: Countdown digits render
 
-  Scenario: Essential Resources section displays
-    Then the "Essential resources" title is visible
-    And 3 resource items are listed: "First year students", "Tuition & fees", "International students"
-    And each resource item has a description and arrow link
+- **WHEN** the user opens the page
+- **THEN** the top bar shows countdown timer digits for Days, Hours, Minutes, Seconds
+- **AND** the text "ENDS TOMORROW" is visible
 
-  Scenario: Top Stories section shows three cards
-    Then the "Top Stories" title is visible
-    And exactly 3 story cards are displayed in a 3-column grid
-    And a "More Stories" link is visible next to the title
+### Requirement: Sticky navigation
 
-  Scenario: Partners section displays logos
-    Then the "Our Partners" section title is visible
-    And a carousel of partner logos is rendered
+The navigation bar SHALL become sticky at the top when scrolled past the hero.
 
-  Scenario: Trusted section renders split layout
-    Then the "TRUSTED BY OVER 6000+ STUDENTS" heading is visible
-    And the section has a dark green background on the right
-    And a "Join Now" white button is displayed
+#### Scenario: Nav becomes sticky on scroll
 
-  Scenario: Footer contains all elements
-    Then the footer shows the logo, Quick Links, Programs, Resources columns
-    And a newsletter email input and submit button are visible
-    And social media icon links are present
-    And the copyright line links to Component Dock
+- **WHEN** the user scrolls down past the hero
+- **THEN** the navigation bar becomes sticky at the top
+- **AND** the logo, nav links, and call-to-action are visible
 
-  Scenario: Mobile responsiveness
-    When the viewport width is 375px
-    Then the navigation collapses to a hamburger menu
-    And columns stack vertically
-    And buttons remain tappable (min 44px height)
+### Requirement: About section displays
 
-  Scenario: Scroll-to-top button
-    When the user scrolls down
-    Then a green circular scroll-to-top button appears
-    And clicking it scrolls smoothly to the top
-```
+The about section SHALL have a cream background with image, heading, and browse link.
+
+#### Scenario: About section renders
+
+- **WHEN** the user views the about section
+- **THEN** the heading "A comprehensive teaching approach" is visible
+- **AND** an image appears to the left of the text
+
+### Requirement: Programs section shows two cards
+
+The programs section SHALL display 2 program cards in a grid.
+
+#### Scenario: Programs grid renders
+
+- **WHEN** the user views the programs section
+- **THEN** the "Programs we Offer" section title is visible
+- **AND** exactly 2 program cards are displayed
+
+### Requirement: Essential Resources section displays
+
+The resources section SHALL show 3 resource items with descriptions.
+
+#### Scenario: Resources list renders
+
+- **WHEN** the user views the resources section
+- **THEN** the "Essential resources" title is visible
+- **AND** 3 resource items are listed
+
+### Requirement: Top Stories section shows three cards
+
+The top stories section SHALL display 3 story cards.
+
+#### Scenario: Stories grid renders
+
+- **WHEN** the user views the top stories section
+- **THEN** the "Top Stories" title is visible
+- **AND** exactly 3 story cards are displayed
+
+### Requirement: Partners section displays logos
+
+The partners section SHALL display partner logos.
+
+#### Scenario: Partners render
+
+- **WHEN** the user views the partners section
+- **THEN** the "Our Partners" section title is visible
+
+### Requirement: Trusted section renders split layout
+
+The trusted section SHALL display a heading with dark green background and join button.
+
+#### Scenario: Trusted section renders
+
+- **WHEN** the user views the trusted section
+- **THEN** the "TRUSTED BY OVER 6000+ STUDENTS" heading is visible
+- **AND** a "Join Now" button is displayed
+
+### Requirement: Footer contains all elements
+
+The footer SHALL show columns, newsletter form, social links, and Component Dock copyright.
+
+#### Scenario: Footer renders
+
+- **WHEN** the user views the footer
+- **THEN** the footer shows Quick Links, Programs, Resources columns
+- **AND** a newsletter email input is visible
+- **AND** the copyright line links to Component Dock
+
+### Requirement: Mobile responsiveness
+
+At 375px viewport, navigation SHALL collapse to hamburger and columns SHALL stack.
+
+#### Scenario: Mobile layout adapts
+
+- **WHEN** the viewport width is 375px
+- **THEN** the navigation collapses to a hamburger menu
+
+### Requirement: Scroll-to-top button
+
+A scroll-to-top button SHALL appear when scrolling down.
+
+#### Scenario: Scroll-to-top appears
+
+- **WHEN** the user scrolls down
+- **THEN** a scroll-to-top button appears
 
 ## Verification checklist
 

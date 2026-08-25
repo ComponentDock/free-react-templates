@@ -630,7 +630,7 @@
 - [x] **Toothcare** — [colorlib](https://colorlib.com/wp/template/toothcare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/toothcare-free-template.jpg) · [odonto](https://odonto.free.componentdock.com)
 - [x] **Unbrew** — [colorlib](https://colorlib.com/wp/template/unbrew/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unbrew-free-template.jpg) · [pulsewave](https://free-react-templates-pulsewave.surge.sh)
 - [x] **Unioncorp** — [colorlib](https://colorlib.com/wp/template/unioncorp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unioncorp-colorlib-template.jpg) · [unioncorp](https://free-react-templates-unioncorp.surge.sh)
-- [ ] **Universityedu** — [colorlib](https://colorlib.com/wp/template/universityedu/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/universityedu-colorlib-template.jpg)
+- [~] **Universityedu** — [colorlib](https://colorlib.com/wp/template/universityedu/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/universityedu-colorlib-template.jpg)
 - [ ] **Unwind** — [colorlib](https://colorlib.com/wp/template/unwind/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unwind-free-template.jpg)
 - [ ] **Victor** — [colorlib](https://colorlib.com/wp/template/victor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/victor-free-template.jpg)
 
@@ -1657,7 +1657,7 @@
 - [ ] **Unica** — [colorlib](https://colorlib.com/wp/template/unica/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unica-free-template.jpg)
 - [ ] **Unicat** — [colorlib](https://colorlib.com/wp/template/unicat/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unicat-free-template.jpg)
 - [ ] **University** — [colorlib](https://colorlib.com/wp/template/university/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/university-free-template.jpg)
-- [ ] **Universityedu** — [colorlib](https://colorlib.com/wp/template/universityedu/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/universityedu-colorlib-template.jpg)
+- [~] **Universityedu** — [colorlib](https://colorlib.com/wp/template/universityedu/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/universityedu-colorlib-template.jpg)
 - [ ] **Webuni** — [colorlib](https://colorlib.com/wp/template/webuni/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webuni-free-template.jpg)
 - [ ] **Wiser** — [colorlib](https://colorlib.com/wp/template/wiser/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wiser-free-template.jpg)
 

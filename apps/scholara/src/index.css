@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Scholara brand palette — recreated from ColorLib "Universityedu"
+     css/style.css: green #007A5C primary, cream #FCF2EB sections,
+     dark green #305534 split sections, headings #32404D. */
+  --color-brand: #007a5c;
+  --color-brand-dark: #005e45;
+
+  /* Ink — dark slate headings (#32404D from the original). */
+  --color-ink: #32404d;
+  --color-ink-dark: #1f2a33;
+
+  /* Cream — warm section background (#FCF2EB from the original). */
+  --color-cream: #fcf2eb;
+
+  /* Mist — muted body text (#5D646A from the original). */
+  --color-mist: #5d646a;
+
+  /* Light gray — secondary text (#777777 from the original). */
+  --color-ash: #777777;
+
+  /* Light blue-gray — footer/wrapper background (#F1FBFF). */
+  --color-cloud: #f1fbff;
+
+  /* Dark green — trusted section background (#305534). */
+  --color-forest: #305534;
+
+  /* Brand bg — light brand tint (#EFF6F0). */
+  --color-tint: #eff6f0;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the green. */
+  --color-primary-50: #e6f5ef;
+  --color-primary-100: #b3e0cc;
+  --color-primary-200: #80cca9;
+  --color-primary-300: #4db786;
+  --color-primary-400: #26a86e;
+  --color-primary-500: #007a5c;
+  --color-primary-600: #005e45;
+  --color-primary-700: #004734;
+  --color-primary-800: #003023;
+  --color-primary-900: #001a12;
+
+  /* Original font: Chivo (Google Fonts, weights 300–900). */
+  --font-sans: 'Chivo', ui-sans-serif, system-ui, sans-serif;
+}
