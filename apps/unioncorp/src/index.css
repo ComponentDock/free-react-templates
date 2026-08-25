@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Unioncorp brand palette — from the ColorLib Unioncorp preview:
+     #4f86f9 primary blue, #052c43 deep navy, #3bd381 green accent,
+     Poppins font family, light backgrounds #f9faff / #f8f9fa. */
+  --color-primary-50: #e8f0ff;
+  --color-primary-100: #c5d8ff;
+  --color-primary-200: #99bcff;
+  --color-primary-300: #6d9fff;
+  --color-primary-400: #4f86f9;
+  --color-primary-500: #3a6fd8;
+  --color-primary-600: #2d5ab5;
+  --color-primary-700: #1e4a9e;
+  --color-primary-800: #143b7a;
+  --color-primary-900: #0d2c5e;
+
+  /* Deep navy background. */
+  --color-navy: #052c43;
+  --color-navy-light: #0a3d5e;
+
+  /* Green accent (success / CTA highlight). */
+  --color-accent-400: #3bd381;
+  --color-accent-500: #2bc06d;
+
+  /* Section backgrounds. */
+  --color-cloud: #f9faff;
+  --color-mist: #f8f9fa;
+
+  /* Text colors. */
+  --color-ink: #1a1a1a;
+  --color-smoke: #6c757d;
+  --color-muted: #999999;
+
+  /* Poppins via Google Fonts. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
