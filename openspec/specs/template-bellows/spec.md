@@ -1,37 +1,37 @@
-# Template: Bellows (Accordion / UI Component)
+# Spec — Bellows (Accordion 03)
 
-## Purpose
+Recreation of ColorLib "Accordion 03" (`https://colorlib.com/wp/template/accordion-03/`) under the original name **Bellows**.
 
-Recreation of ColorLib **Accordion 03** (`https://colorlib.com/wp/template/accordion-03/`), preview URL `https://preview.colorlib.com/theme/accordion-03/` (preview unreachable, designed from ColorLib screenshot and clean Bootstrap accordion patterns). Built with Vite, React 19, Tailwind CSS 4, TypeScript.
+## Overview
 
-## Design Tokens
+A clean, modern accordion widget template with dark charcoal header, vibrant accent color, and expandable collapsible content sections, styled with Tailwind CSS 4, React 19, and TypeScript.
 
-- Brand Primary: `#3b82f6` (Blue)
-- Neutral Dark: `#1e293b` (Slate 800)
-- Neutral Light: `#f8fafc` (Slate 50)
-- Font Family: `Inter, sans-serif`
-- Border Radius: `0.5rem` (rounded-lg)
+## User Stories & Acceptance Criteria
 
-## Requirements & Gherkin Scenarios
+### US1: Accordion List Display
 
-### Feature: Accordion Section Display & Interaction
+- **As a** visitor,
+- **I want to** see a list of accordion items with clear headers and expand/collapse icons,
+- **So that** I can easily toggle and read detailed content sections.
+- **Scenario:** The page loads with a main heading "Accordion #03", followed by a card container housing multiple interactive accordion panels.
 
-- Scenario: User views the accordion list and expands/collapses items
-  - Given the user is on the Bellows accordion template home page
-  - When the user clicks an accordion header
-  - Then the corresponding accordion content expands smoothly
-  - And clicking another header toggles its content visibility
+### US2: Interactive Toggle & Single-Open Behavior
 
-### Feature: Component Dock Footer Attribution
+- **As a** visitor,
+- **I want to** click an accordion header to expand its content and collapse others,
+- **So that** the interface remains clean and focused.
+- **Scenario:** Clicking an unopened accordion header expands it (setting `aria-expanded="true"` and displaying its content region) and collapses any previously open panel.
 
-- Scenario: User views the page footer
-  - Given the user scrolls to the bottom of the page
-  - When the footer is rendered
-  - Then it displays a "Made with Component Dock" link pointing to `https://www.componentdock.com/`
+### US3: Component Dock Footer Attribution
 
-## Verification Checklist
+- **As a** visitor,
+- **I want to** see a footer linking to Component Dock,
+- **So that** I know where the template ecosystem is hosted.
+- **Scenario:** The page footer displays "More templates at Component Dock" linking to `https://www.componentdock.com/`.
 
-- [ ] TypeScript strict compilation (`npm run build`)
-- [ ] 100% test coverage (`npm run test:coverage`)
-- [ ] Footer links Component Dock correctly
-- [ ] Responsive design across viewports
+## Design Tokens & Replication Notes
+
+- **Page Background:** `#f8f9fa` (light gray)
+- **Primary Accent:** `#0d6efd` (bootstrap blue)
+- **Typography:** Poppins sans-serif font family.
+- **Assets:** Picsum photos for any placeholder imagery; lucide-react icons for chevron/plus/minus indicators.
