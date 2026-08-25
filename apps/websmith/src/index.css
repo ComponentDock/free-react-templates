@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Websmith brand palette — recreated from the original accent design */
+  --color-brand: #007bff;
+  --color-brand-dark: #0056b3;
+
+  /* Ink — dark headings/text (#000, #212529, #333) */
+  --color-ink: #212529;
+
+  /* Light section background */
+  --color-light-bg: #f8f9fa;
+
+  /* Muted gray tones */
+  --color-muted: #b3b3b3;
+  --color-muted-dark: #8c8c8c;
+
+  /* Card border */
+  --color-card-border: #eee;
+
+  /* Success green */
+  --color-success: #28a745;
+
+  /* Footer background */
+  --color-footer-bg: #333333;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the blue. */
+  --color-primary-50: #e7f1ff;
+  --color-primary-100: #cce5ff;
+  --color-primary-200: #99caff;
+  --color-primary-300: #66b0ff;
+  --color-primary-400: #3395ff;
+  --color-primary-500: #007bff;
+  --color-primary-600: #0062cc;
+  --color-primary-700: #004a99;
+  --color-primary-800: #003166;
+  --color-primary-900: #001933;
+
+  /* Body font: Roboto */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
