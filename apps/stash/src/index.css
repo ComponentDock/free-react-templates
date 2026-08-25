@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Near-white page background (brand palette: #fafafa / rgba(0,0,0,0.02)). */
+  --color-page: #fafafa;
+  /* Brand golden-yellow — icon circles + active header gradient end. */
+  --color-brand-gold: #f2dc63;
+  /* Active header gradient start. */
+  --color-brand-gold-light: #ffe97a;
+  /* Active count-pill background. */
+  --color-pill-active-bg: #f0d74b;
+  /* Active count-pill border. */
+  --color-pill-active-border: #ddbe12;
+  /* Panel body background tint. */
+  --color-panel-body: rgba(0, 0, 0, 0.02);
+  /* Service row name text (weight 600). */
+  --color-row-text: rgba(0, 0, 0, 0.8);
+  /* Row number span (weight 300). */
+  --color-row-number: rgba(0, 0, 0, 0.3);
+  /* Pill borders (header + row). */
+  --color-pill-border: rgba(0, 0, 0, 0.1);
+  /* Header/row separator lines. */
+  --color-separator: rgba(0, 0, 0, 0.05);
+
+  /* Poppins (300-700) loaded via Google Fonts in index.html — carries the
+     whole typography-driven design. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
