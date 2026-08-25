@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Light-gray page background (brand palette: #fafafa page). */
+  --color-page: #fafafa;
+  /* Signature price accent — the only color on the page (brand palette:
+     #28a745 green). */
+  --color-price: #28a745;
+  /* Panel separator line under each accordion header. */
+  --color-separator: #e6e6e6;
+
+  /* Poppins (300-700) loaded via Google Fonts in index.html — carries the
+     whole typography-driven design. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
