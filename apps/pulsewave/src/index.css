@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Pulsewave brand palette — recreated from the ColorLib "Unbrew" template
+     (https://colorlib.com/wp/template/unbrew/), tokens extracted from
+     the live preview's css/style.css:
+     - brand purple #553be6 (hero gradient start, CTA buttons)
+     - accent lavender #a87ffa (hero gradient end)
+     - accent blue #1fb6fc (service hover, icon color)
+     - light purple bg #eff2ff (service icon bg)
+     - text dark #212529 (headings, body)
+     - text muted #88879e (paragraphs, secondary text) */
+  --color-brand: #553be6;
+  --color-accent-lavender: #a87ffa;
+  --color-accent-blue: #1fb6fc;
+  --color-icon-bg: #eff2ff;
+  --color-text-dark: #212529;
+  --color-text-muted: #88879e;
+
+  /* Poppins — Google Fonts via index.html link. */
+  --font-poppins: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #212529;
+    font-family: var(--font-poppins);
+  }
+}
