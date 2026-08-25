@@ -876,7 +876,7 @@
 
 ## Business (365)
 
-- [~] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
+- [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [ ] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg)
 - [x] **Action** — [colorlib](https://colorlib.com/wp/template/action/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/action-free-template.jpg) · [momentum](https://momentum.free.componentdock.com)
 - [ ] **Agrica** — [colorlib](https://colorlib.com/wp/template/agrica/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agrica-free-template.jpg)
@@ -2282,7 +2282,7 @@
 
 ## One Page (91)
 
-- [ ] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
+- [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [ ] **Alias** — [colorlib](https://colorlib.com/wp/template/alias/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alias-free-template.jpg)
 - [ ] **Amplify** — [colorlib](https://colorlib.com/wp/template/amplify/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amplify-free-template.jpg)
 - [x] **Appson** — [colorlib](https://colorlib.com/wp/template/appson/) · [appson](https://appson.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appson-free-template.jpg)
@@ -2489,7 +2489,7 @@
 
 ## Portfolio (89)
 
-- [ ] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
+- [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [x] **Alex Rivera** — [colorlib](https://colorlib.com/wp/template/alex-rivera/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alexrivera-template-1771943723675.jpg) · [arlo](https://arlo.free.componentdock.com)
 - [ ] **Alias** — [colorlib](https://colorlib.com/wp/template/alias/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alias-free-template.jpg)
 - [ ] **Alime** — [colorlib](https://colorlib.com/wp/template/alime/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alime-free-template.jpg)
