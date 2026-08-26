@@ -1,4 +1,4 @@
-# Template: Lamellar (Accordion UI Component)
+# Template: Fanfold (Accordion UI Component)
 
 ## Purpose
 
