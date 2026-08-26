@@ -29,36 +29,27 @@ This template implements an **interactive FAQ and collapsible section accordion*
 - **Interactivity**: Clicking any header expands/collapses the corresponding content panel with smooth height/opacity transition.
 - **Footer**: Branded footer linking `https://www.componentdock.com/` ("Component Dock").
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
-### Feature: Stanza Accordion Display and Interaction
+### Requirement: The page SHALL render with a heading and accordion items
 
-#### Scenario: Display accordion panels in initial collapsed state
+The page SHALL render with a centered heading "Frequently Asked Questions" and a series of interactive accordion items vertically stacked on a neutral light background.
 
-- **Given** the Stanza template is loaded in the browser
-- **When** the page renders
-- **Then** all accordion items are visible with collapsed body content and clear header titles.
+#### Scenario: Initial state
 
-#### Scenario: Expand an accordion item
+- **WHEN** the page loads
+- **THEN** all accordion items are rendered
+- **AND** items are collapsed by default
+- **AND** toggle icons indicate the current state
 
-- **Given** an accordion item is collapsed
-- **When** the user clicks the accordion header
-- **Then** the panel expands to reveal the body text and the toggle indicator updates its orientation.
+#### Scenario: Toggling accordion item
 
-#### Scenario: Collapse an expanded accordion item
+- **WHEN** the user clicks an accordion header
+- **THEN** the corresponding panel expands or collapses
+- **AND** the chevron icon rotates smoothly
+- **AND** other panels maintain their current state
 
-- **Given** an accordion item is expanded
-- **When** the user clicks the header again
-- **Then** the panel collapses, hiding the body content.
+#### Scenario: Footer attribution
 
-#### Scenario: Component Dock footer presence
-
-- **Given** the user scrolls to the bottom of the page
-- **When** the footer is rendered
-- **Then** it contains a link pointing to `https://www.componentdock.com/`.
-
-## Verification Checklist
-
-- [ ] Spec validation passes (`npm run spec:validate`)
-- [ ] App builds successfully (`npm run build`)
-- [ ] All tests pass with 100% coverage
+- **WHEN** the page renders
+- **THEN** the footer contains a link to `https://www.componentdock.com/` ("Component Dock")
