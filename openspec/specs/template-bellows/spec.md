@@ -1,51 +1,39 @@
-# Template: Bellows (UI Component / Interactive Accordion)
+# Template: Bellows (Accordion & Profile Widget)
 
 ## Purpose
 
-- **Recreation of:** ColorLib Accordion 09 (`https://colorlib.com/wp/template/accordion-09/`)
-- **New Name:** `bellows` (`apps/bellows`)
-- **Category:** Interactive Components / FAQ & Accordions
-- **Stack:** Vite, React 19, Tailwind CSS 4, TypeScript, Lucide React
+Recreation of ColorLib **Accordion 15** (`https://colorlib.com/wp/template/accordion-15/`), previewed at `https://preview.colorlib.com/theme/accordion-15/`.
+Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 
-## Design Tokens (Captured from Reference & Screenshot)
+## Design Tokens
 
-- **Primary Brand Color:** Indigo/Slate (Indigo-600 `#4f46e5`, Slate-900 `#0f172a`)
-- **Accent Color:** Violet/Blue (`#6366f1`)
-- **Neutral Backgrounds:** White (`#ffffff`), Slate-50 (`#f8fafc`), Slate-100 (`#f1f5f9`)
-- **Typography:** Inter / system sans-serif (`font-sans`)
-- **Borders & Radii:** Rounded-xl (`0.75rem`), clean borders (`border-slate-200`)
-- **Shadows:** Soft drop shadows (`shadow-sm`, `shadow-md`)
+- **Primary / Brand Colors**: Deep indigo/slate background (`#1f2937` / `#111827`), vibrant primary accent blue/violet (`#3b82f6` / `#6366f1`), active item highlight (`#2563eb`).
+- **Font Family**: Inter, system-ui, sans-serif.
+- **Card Shape & Elevation**: Rounded-xl containers with smooth accordion transitions, shadow-lg, clean padding, and crisp iconography.
+- **Section Layout**: Centered widget card with vertical accordion panels (Profile, Messages, Settings, Logout), nested links, icons (User, Mail/Message, Settings, LogOut), and smooth expand/collapse states.
 
 ## Gherkin Requirements & Scenarios
 
-### Feature: Accordion Showcase & Interactive Panels
+### Feature: Interactive Accordion Widget & Profile Navigation
 
-As a visitor browsing the Bellows component library template, I want to explore interactive accordion sections with smooth expand/collapse transitions, rich content, and customizable triggers.
+As a user visiting the Bellows template, I want to explore collapsible profile sections, manage messages, adjust settings, and navigate tabs so I can interact with a polished dashboard widget.
 
-#### Scenario: View Main Header & Hero Section
+#### Scenario: Expanding and collapsing accordion sections
 
-- Given the user opens the Bellows app
-- When the page loads
-- Then the header displays the brand title "Bellows" and navigation links
-- And the hero section features a compelling headline about modern, accessible accordion components and a primary CTA button.
+- **Given** the user is viewing the main accordion dashboard
+- **When** the user clicks on the "Profile" or "Messages" section header
+- **Then** the section expands smoothly to reveal its internal navigation links and content
+- **And** clicking another section collapses the previously expanded section.
 
-#### Scenario: Explore Multiple Accordion Variants
+#### Scenario: Responsive layout and footer attribution
 
-- Given the user scrolls to the accordion section
-- When they view the different accordion groups (Standard, FAQ, Nested, Icon-enhanced)
-- Then each accordion item displays a clear header with an expand/collapse indicator (chevron)
-- And clicking an accordion header smoothly toggles the visibility of its content panel.
-
-#### Scenario: Footer with Component Dock Attribution
-
-- Given the user scrolls to the bottom of the page
-- When the footer is rendered
-- Then it contains copyright information and a prominent link to `https://www.componentdock.com/` ("Component Dock").
+- **Given** the user views the template on any screen size
+- **Then** the widget scales gracefully with proper centering and padding
+- **And** the footer links to `https://www.componentdock.com/` ("Component Dock").
 
 ## Verification Checklist
 
-- [ ] App builds successfully with Vite and TypeScript strict mode
-- [ ] Tailwind CSS v4 styling matches design tokens
-- [ ] All accordion interactions work smoothly with proper ARIA attributes
-- [ ] Footer includes `https://www.componentdock.com/` link
-- [ ] Vitest unit tests achieve 100% test coverage
+- [ ] Spec valid (`npm run spec:validate`)
+- [ ] All sections rendered and interactive
+- [ ] 100% test coverage (`npm run test:coverage`)
+- [ ] Footer links to Component Dock
