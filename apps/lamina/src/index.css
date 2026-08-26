@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Dark page background — brand palette: #1a1a1a. */
+  --color-page: #1a1a1a;
+  /* White accordion row backgrounds. */
+  --color-accordion-bg: #ffffff;
+  /* Border color between accordion rows. */
+  --color-border-row: #e5e7eb;
+  /* Header text color (dark). */
+  --color-text-header: #111827;
+  /* Body text in expanded panels. */
+  --color-text-body: #374151;
+  /* Green toggle (collapsed state) — brand palette: #16a34a. */
+  --color-toggle-collapsed: #16a34a;
+  /* Blue toggle (expanded state) — brand palette: #2563eb. */
+  --color-toggle-expanded: #2563eb;
+  /* Toggle icon color. */
+  --color-toggle-icon: #ffffff;
+  /* Footer muted text. */
+  --color-muted: #9ca3af;
+
+  /* Inter font — system-like, clean sans-serif. */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}

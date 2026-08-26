@@ -43,118 +43,85 @@ This template implements a **minimalist vertical accordion component** — three
 - **No shadows** — pure flat design with borders for separation
 - **No animations visible** in static screenshot; implementation should include smooth height transition
 
-## Requirements (Gherkin)
+## Requirements
 
-### Feature: Accordion Component
+### Requirement: The page SHALL render with a heading and three accordion items
 
-#### Scenario: Page renders with heading and three accordion items
-
-```
-Given the user visits the page
-Then a centered heading "Accordion #07" is visible
-And three accordion items are rendered vertically stacked
-And each item shows a question text and a toggle button
-And the page background is dark (gray-950)
-And the accordion container is centered with max-width ~600px
-```
+The page SHALL render with a centered heading "Accordion #07" and three accordion items vertically stacked, each showing a question text and a toggle button, on a dark (gray-950) background with the accordion container centered at max-width ~600px.
 
 #### Scenario: Initial state — all items collapsed
 
-```
-Given the page loads
-Then all three accordion items are in collapsed state
-And each toggle button shows a plus (+) icon
-And each toggle button has green background (green-600)
-And no panel content is visible below any header
-```
+- **WHEN** the page loads
+- **THEN** all three accordion items are in collapsed state
+- **AND** each toggle button shows a plus (+) icon
+- **AND** each toggle button has green background (green-600)
+- **AND** no panel content is visible below any header
 
 #### Scenario: Expanding an item reveals content
 
-```
-Given the page loads with all items collapsed
-When the user clicks the toggle button on the second item
-Then that item expands to show its content panel
-And the toggle button changes to a minus (−) icon
-And the toggle button background changes to blue (blue-600)
-And the content panel displays body text in gray-700
-And the other two items remain collapsed
-```
+- **WHEN** the user clicks the toggle button on the second item
+- **THEN** that item expands to show its content panel
+- **AND** the toggle button changes to a minus (−) icon
+- **AND** the toggle button background changes to blue (blue-600)
+- **AND** the content panel displays body text in gray-700
+- **AND** the other two items remain collapsed
 
 #### Scenario: Collapsing an expanded item hides content
 
-```
-Given the second item is expanded
-When the user clicks the toggle button on the second item again
-Then that item collapses
-And the toggle button changes back to a plus (+) icon
-And the toggle button background changes back to green (green-600)
-And the content panel is no longer visible
-```
+- **WHEN** the user clicks the toggle button on the second item again
+- **THEN** that item collapses
+- **AND** the toggle button changes back to a plus (+) icon
+- **AND** the toggle button background changes back to green (green-600)
+- **AND** the content panel is no longer visible
 
 #### Scenario: Multiple items can be expanded simultaneously
 
-```
-Given all items are collapsed
-When the user clicks the toggle button on the first item
-And then clicks the toggle button on the third item
-Then both the first and third items are expanded
-And both show minus icons with blue backgrounds
-And the second item remains collapsed with a plus icon and green background
-```
+- **WHEN** the user clicks the toggle button on the first item
+- **AND** then clicks the toggle button on the third item
+- **THEN** both the first and third items are expanded
+- **AND** both show minus icons with blue backgrounds
+- **AND** the second item remains collapsed with a plus icon and green background
 
 #### Scenario: Accordion items have correct question texts
 
-```
-Given the page renders
-Then the first item shows "How to manage account?"
-And the second item shows "How to become Pro"
-And the third item shows "How to create an account?"
-```
+- **WHEN** the page renders
+- **THEN** the first item shows "How to manage account?"
+- **AND** the second item shows "How to become Pro"
+- **AND** the third item shows "How to create an account?"
 
 #### Scenario: Expanded content displays correct body text
 
-```
-Given the second item is expanded
-Then its content panel shows "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
-```
+- **WHEN** the second item is expanded
+- **THEN** its content panel shows "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
 
 #### Scenario: Keyboard accessibility
 
-```
-Given the page loads
-When the user tabs to a toggle button
-Then the button receives visible focus ring
-When the user presses Enter or Space on a focused toggle button
-Then the item toggles expanded/collapsed state
-```
+- **WHEN** the user tabs to a toggle button
+- **THEN** the button receives visible focus ring
+- **WHEN** the user presses Enter or Space on a focused toggle button
+- **THEN** the item toggles expanded/collapsed state
 
 #### Scenario: Screen reader semantics
 
-```
-Given the page loads
-Then each accordion item uses semantic <details>/<summary> or proper ARIA (role="region", aria-expanded on button)
-And the heading uses <h1> or <h2> as appropriate
-And toggle buttons have aria-controls pointing to their content panel
-And expanded state is announced via aria-expanded
-```
+- **WHEN** the page loads
+- **THEN** each accordion item uses proper ARIA (role="region", aria-expanded on button)
+- **AND** the heading uses `<h1>` as appropriate
+- **AND** toggle buttons have aria-controls pointing to their content panel
+- **AND** expanded state is announced via aria-expanded
 
 #### Scenario: Smooth expand/collapse animation
 
-```
-Given an item is collapsed
-When the user toggles it open
-Then the content panel animates height smoothly (CSS transition)
-And the toggle icon rotates or swaps cleanly
-```
+- **WHEN** an item is collapsed
+- **AND** the user toggles it open
+- **THEN** the content panel animates height smoothly (CSS transition)
+- **AND** the toggle icon rotates or swaps cleanly
 
 #### Scenario: Responsive layout
 
-```
-Given the viewport is mobile width (< 640px)
-Then the accordion container uses full width with small horizontal padding
-And toggle buttons remain easily tappable (min 44x44px)
-And text remains readable without horizontal scroll
-```
+- **WHEN** the viewport is mobile width (< 640px)
+- **THEN** the accordion container uses full width with small horizontal padding
+- **AND** toggle buttons remain easily tappable (min 44x44px)
+- **AND** text remains readable without horizontal scroll
 
 ## Verification Checklist
 
