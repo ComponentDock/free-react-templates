@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Page background — brand palette: #efefef. */
+  --color-page: #efefef;
+  /* Accordion item background — brand palette: #f9f9f9. */
+  --color-accordion-bg: #f9f9f9;
+  /* Header title text — brand palette: #212529. */
+  --color-text-header: #212529;
+  /* Body text inside expanded panel — brand palette: #888888. */
+  --color-text-body: #888888;
+  /* Active/expanded button text — brand palette: #72c02c (green). */
+  --color-accent: #72c02c;
+  /* Muted text (collapsed buttons, footer). */
+  --color-muted: #999999;
+
+  /* Roboto font stack — brand palette. */
+  --font-sans:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans',
+    sans-serif;
+}
