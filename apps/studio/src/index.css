@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Studio brand palette — deep indigo-navy background (#272343),
+     Bootstrap blue accent (#007bff) for carousel arrows, white headlines. */
+  --color-brand: #272343;
+  --color-accent: #007bff;
+  --color-heading: #ffffff;
+  --color-body: #b3b3b3;
+  --color-subtext: #808080;
+
+  /* Roboto — loaded via Google Fonts in index.html (weights 300, 400, 900). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-brand);
+    font-family: var(--font-sans);
+    color: var(--color-body);
+    font-weight: 300;
+  }
+}
