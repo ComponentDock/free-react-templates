@@ -2963,7 +2963,7 @@
 - [ ] **Logis** — [colorlib](https://colorlib.com/wp/template/logis/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logis-free-template.jpg)
 - [x] **Logistic** — [colorlib](https://colorlib.com/wp/template/logistic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logistic-free-template.jpg) · [convey](https://convey.free.componentdock.com)
 - [ ] **Logisticexpress** — [colorlib](https://colorlib.com/wp/template/logisticexpress/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logisticexpress-free-template.jpg)
-- [ ] **Logistico** — [colorlib](https://colorlib.com/wp/template/logistico/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logistico-free-template.jpg)
+- [~] **Logistico** — [colorlib](https://colorlib.com/wp/template/logistico/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logistico-free-template.jpg)
 - [x] **Logistics** — [colorlib](https://colorlib.com/wp/template/logistics/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logistics-free-template.jpg) · [shiply](https://shiply.free.componentdock.com)
 - [ ] **Swiftmove** — [colorlib](https://colorlib.com/wp/template/swiftmove/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/swiftmove-template-1771943964825.jpg)
 - [ ] **Taxi** — [colorlib](https://colorlib.com/wp/template/taxi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/taxi-free-template.jpg)
