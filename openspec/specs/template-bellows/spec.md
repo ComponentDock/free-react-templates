@@ -1,37 +1,51 @@
-# Spec — Bellows (Accordion 03)
+# Template: Bellows (UI Component / Interactive Accordion)
 
-Recreation of ColorLib "Accordion 03" (`https://colorlib.com/wp/template/accordion-03/`) under the original name **Bellows**.
+## Purpose
 
-## Overview
+- **Recreation of:** ColorLib Accordion 09 (`https://colorlib.com/wp/template/accordion-09/`)
+- **New Name:** `bellows` (`apps/bellows`)
+- **Category:** Interactive Components / FAQ & Accordions
+- **Stack:** Vite, React 19, Tailwind CSS 4, TypeScript, Lucide React
 
-A clean, modern accordion widget template with dark charcoal header, vibrant accent color, and expandable collapsible content sections, styled with Tailwind CSS 4, React 19, and TypeScript.
+## Design Tokens (Captured from Reference & Screenshot)
 
-## User Stories & Acceptance Criteria
+- **Primary Brand Color:** Indigo/Slate (Indigo-600 `#4f46e5`, Slate-900 `#0f172a`)
+- **Accent Color:** Violet/Blue (`#6366f1`)
+- **Neutral Backgrounds:** White (`#ffffff`), Slate-50 (`#f8fafc`), Slate-100 (`#f1f5f9`)
+- **Typography:** Inter / system sans-serif (`font-sans`)
+- **Borders & Radii:** Rounded-xl (`0.75rem`), clean borders (`border-slate-200`)
+- **Shadows:** Soft drop shadows (`shadow-sm`, `shadow-md`)
 
-### US1: Accordion List Display
+## Gherkin Requirements & Scenarios
 
-- **As a** visitor,
-- **I want to** see a list of accordion items with clear headers and expand/collapse icons,
-- **So that** I can easily toggle and read detailed content sections.
-- **Scenario:** The page loads with a main heading "Accordion #03", followed by a card container housing multiple interactive accordion panels.
+### Feature: Accordion Showcase & Interactive Panels
 
-### US2: Interactive Toggle & Single-Open Behavior
+As a visitor browsing the Bellows component library template, I want to explore interactive accordion sections with smooth expand/collapse transitions, rich content, and customizable triggers.
 
-- **As a** visitor,
-- **I want to** click an accordion header to expand its content and collapse others,
-- **So that** the interface remains clean and focused.
-- **Scenario:** Clicking an unopened accordion header expands it (setting `aria-expanded="true"` and displaying its content region) and collapses any previously open panel.
+#### Scenario: View Main Header & Hero Section
 
-### US3: Component Dock Footer Attribution
+- Given the user opens the Bellows app
+- When the page loads
+- Then the header displays the brand title "Bellows" and navigation links
+- And the hero section features a compelling headline about modern, accessible accordion components and a primary CTA button.
 
-- **As a** visitor,
-- **I want to** see a footer linking to Component Dock,
-- **So that** I know where the template ecosystem is hosted.
-- **Scenario:** The page footer displays "More templates at Component Dock" linking to `https://www.componentdock.com/`.
+#### Scenario: Explore Multiple Accordion Variants
 
-## Design Tokens & Replication Notes
+- Given the user scrolls to the accordion section
+- When they view the different accordion groups (Standard, FAQ, Nested, Icon-enhanced)
+- Then each accordion item displays a clear header with an expand/collapse indicator (chevron)
+- And clicking an accordion header smoothly toggles the visibility of its content panel.
 
-- **Page Background:** `#f8f9fa` (light gray)
-- **Primary Accent:** `#0d6efd` (bootstrap blue)
-- **Typography:** Poppins sans-serif font family.
-- **Assets:** Picsum photos for any placeholder imagery; lucide-react icons for chevron/plus/minus indicators.
+#### Scenario: Footer with Component Dock Attribution
+
+- Given the user scrolls to the bottom of the page
+- When the footer is rendered
+- Then it contains copyright information and a prominent link to `https://www.componentdock.com/` ("Component Dock").
+
+## Verification Checklist
+
+- [ ] App builds successfully with Vite and TypeScript strict mode
+- [ ] Tailwind CSS v4 styling matches design tokens
+- [ ] All accordion interactions work smoothly with proper ARIA attributes
+- [ ] Footer includes `https://www.componentdock.com/` link
+- [ ] Vitest unit tests achieve 100% test coverage
