@@ -2242,7 +2242,7 @@
 - [ ] **Medi** — [colorlib](https://colorlib.com/wp/template/medi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medi-plus-free-medical-website-template.jpg)
 - [ ] **Medi 2** — [colorlib](https://colorlib.com/wp/template/medi-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nedi-free-template.jpg)
 - [ ] **Medica** — [colorlib](https://colorlib.com/wp/template/medica/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medica-free-template.jpg)
-- [~] **Medical** — [colorlib](https://colorlib.com/wp/template/medical/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medical-free-clean-health-website-template.jpg)
+- [x] **Medical** — [colorlib](https://colorlib.com/wp/template/medical/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medical-free-clean-health-website-template.jpg) · [medical](https://medical.free.componentdock.com)
 - [ ] **Medical 2** — [colorlib](https://colorlib.com/wp/template/medical-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medical-free-template.jpg)
 - [x] **Medical Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/medical-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medical-website-templates.jpg) · [medora](https://medora.free.componentdock.com)
 - [x] **Medicalcenter** — [colorlib](https://colorlib.com/wp/template/medicalcenter/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medicalcenter-free-template.jpg) · [clinica](https://clinica.free.componentdock.com)
