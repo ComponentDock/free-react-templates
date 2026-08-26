@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Medical brand palette — recreated from ColorLib "Medical" preview:
+     brand green #69be00, dark text #222, body #777, section bg #f9f9ff,
+     footer #222. */
+  --color-brand: #69be00;
+  --color-brand-dark: #5aa500;
+  --color-brand-50: #f4fbe8;
+  --color-brand-100: #e4f5c9;
+
+  /* Ink — headings. */
+  --color-ink: #222222;
+
+  /* Body — paragraph text. */
+  --color-body: #777777;
+
+  /* Paper — light section backgrounds. */
+  --color-paper: #f9f9ff;
+
+  /* Charcoal — dark footer. */
+  --color-charcoal: #222222;
+
+  /* Primary scale so shared Button/ButtonLink `primary` variants
+     resolve to the brand green with hover dark. */
+  --color-primary-50: #f4fbe8;
+  --color-primary-100: #e4f5c9;
+  --color-primary-200: #c5ea8e;
+  --color-primary-300: #a1dc4f;
+  --color-primary-400: #82cf1f;
+  --color-primary-500: #69be00;
+  --color-primary-600: #5aa500;
+  --color-primary-700: #4a8a00;
+  --color-primary-800: #3b6f00;
+  --color-primary-900: #2c5400;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4.5rem;
+  }
+}
