@@ -12,30 +12,48 @@ Recreation of ColorLib Accordion 15 (`https://colorlib.com/wp/template/accordion
 - **Accent / Border**: Clean subtle borders with interactive hover states
 - **Radius**: Rounded containers with clean shadow elevation
 
-## Requirements & Scenarios
+## Requirements
 
 ### Requirement 1: Header Title
 
-- The page shall display a clear widget header ("Bootstrap Accordion #5" / Profile Accordion).
-- **Scenario**: User views the accordion widget on initial load.
-  - **Given** the user opens the application
-  - **Then** the main title and container are visible with correct background and typography.
+The page shall display a clear widget header ("FoldKit Widget") with a subtitle describing the interface.
+
+#### Scenario: User views the accordion widget on initial load
+
+- **WHEN** the user opens the application
+- **THEN** the main title "FoldKit Widget" and subtitle are visible with correct background and typography
 
 ### Requirement 2: Accordion Sections (Profile, Messages, Settings, Logout)
 
-- The widget shall contain interactive accordion items for Profile, Messages, Settings, and Logout.
-- **Scenario**: User expands the Profile section.
-  - **Given** the profile section is collapsed
-  - **When** the user clicks the profile header/button
-  - **Then** it expands to reveal nested links (Profile, Messages, Settings, Sales, Marketing) and collapses other sections or toggles state accordingly.
+The widget shall contain four interactive accordion items for Profile, Messages, Settings, and Logout. Each section expands to reveal nested navigation links (Profile, Messages, Settings, Sales, Marketing). Only one section may be open at a time.
 
-### Requirement 3: Component Dock Footer
+#### Scenario: User expands the Profile section
 
-- Every template must include a branded footer linking to Component Dock.
-- **Scenario**: User scrolls to the bottom of the page.
-  - **Given** the user is viewing the widget
-  - **When** looking at the footer area
-  - **Then** a visible link points to `https://www.componentdock.com/`.
+- **WHEN** the user clicks the Profile header/button
+- **THEN** it expands to reveal nested links and collapses any previously open section
+
+#### Scenario: User collapses an expanded section
+
+- **WHEN** the user clicks an already-expanded section header
+- **THEN** it collapses and no sections are open
+
+### Requirement 3: Accessibility
+
+All accordion toggle buttons shall have proper ARIA attributes (`aria-expanded`, `aria-controls`) and expanded panels shall have `aria-labelledby` linking back to their toggle.
+
+#### Scenario: User navigates via keyboard
+
+- **WHEN** the user focuses a toggle button and presses Enter or Space
+- **THEN** the corresponding section expands or collapses
+
+### Requirement 4: Component Dock Footer
+
+Every template must include a branded footer linking to Component Dock.
+
+#### Scenario: User scrolls to the bottom of the page
+
+- **WHEN** the user is viewing the widget
+- **THEN** a visible link points to `https://www.componentdock.com/`
 
 ## Verification Checklist
 
