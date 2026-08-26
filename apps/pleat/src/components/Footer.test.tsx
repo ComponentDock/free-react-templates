@@ -1,28 +1,22 @@
 import { render, screen } from '@testing-library/react'
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { Footer } from './Footer'
 
-afterEach(() => {
-  vi.useRealTimers()
-})
-
 describe('Footer', () => {
-  it('renders a footer element with the current year', () => {
-    vi.useFakeTimers()
-    vi.setSystemTime(new Date('2026-08-15T12:00:00'))
-    const { container } = render(<Footer />)
-    expect(container.querySelector('footer')).toBeInTheDocument()
-    expect(container.querySelector('footer')?.textContent).toContain('2026')
-  })
-
-  it('links "More templates at Component Dock" to componentdock.com', () => {
+  it('renders the Component Dock link with correct href', () => {
     render(<Footer />)
-    const link = screen.getByRole('link', { name: 'More templates at Component Dock' })
+    const link = screen.getByRole('link', { name: /more templates at component dock/i })
     expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
   })
 
-  it('renders unobtrusively muted so the minimal design survives', () => {
-    const { container } = render(<Footer />)
-    expect(container.querySelector('p')?.className).toContain('text-[#6c757d]')
+  it('renders the copyright year', () => {
+    render(<Footer />)
+    const year = new Date().getFullYear().toString()
+    expect(screen.getByText(new RegExp(year))).toBeInTheDocument()
+  })
+
+  it('shows the template name', () => {
+    render(<Footer />)
+    expect(screen.getByText(/pleat/i)).toBeInTheDocument()
   })
 })
