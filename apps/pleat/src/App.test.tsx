@@ -1,63 +1,37 @@
 import { render, screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
 import { describe, expect, it } from 'vitest'
 import { App } from './App'
 
 describe('App', () => {
-  it('renders the page background with a centered "Accordion #01" heading', () => {
-    const { container } = render(<App />)
-    expect(container.firstElementChild?.className).toContain('bg-page')
-    const heading = screen.getByRole('heading', { level: 2, name: 'Accordion #01' })
-    expect(heading).toBeInTheDocument()
-    expect(heading.className).toContain('text-center')
-    expect(heading.className).toContain('text-[28px]')
-  })
-
-  it('composes the reference section order: heading, card, intro, panels, footer', () => {
-    const { container } = render(<App />)
-    const labels = Array.from(container.querySelectorAll('h2, h3, button, footer a')).map((el) =>
-      el.textContent?.trim(),
-    )
-    expect(labels).toEqual([
-      'Accordion #01',
-      'Prices',
-      'Spa Therapies',
-      'Massage Therapies',
-      'More templates at Component Dock',
-    ])
-  })
-
-  it('shows Spa Therapies open by default and Massage Therapies closed', () => {
+  it('renders the heading "Bootstrap Accordion #3"', () => {
     render(<App />)
-    expect(screen.getByRole('button', { name: 'Spa Therapies' })).toHaveAttribute(
-      'aria-expanded',
-      'true',
-    )
-    expect(screen.getByRole('button', { name: 'Massage Therapies' })).toHaveAttribute(
-      'aria-expanded',
-      'false',
-    )
+    expect(screen.getByRole('heading', { name: /bootstrap accordion #3/i })).toBeInTheDocument()
   })
 
-  it('opens Massage Therapies on click and closes Spa Therapies (single-open)', async () => {
-    const user = userEvent.setup()
+  it('renders all three accordion questions', () => {
     render(<App />)
-    await user.click(screen.getByRole('button', { name: 'Massage Therapies' }))
-    expect(screen.getByRole('region', { name: 'Massage Therapies' })).toBeInTheDocument()
-    expect(screen.queryByRole('region', { name: 'Spa Therapies' })).not.toBeInTheDocument()
+    expect(screen.getByText('How to download and register?')).toBeInTheDocument()
+    expect(screen.getByText('How to create your paypal account?')).toBeInTheDocument()
+    expect(screen.getByText('How to link your paypal and bank account?')).toBeInTheDocument()
   })
 
-  it('renders the intro paragraph inside the accordion card', () => {
+  it('renders the footer with Component Dock link', () => {
     render(<App />)
-    expect(screen.getByRole('heading', { level: 3, name: 'Prices' })).toBeInTheDocument()
-    expect(screen.getByText(/behind the word mountains/)).toBeInTheDocument()
+    const link = screen.getByRole('link', { name: /more templates at component dock/i })
+    expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
   })
 
-  it('renders the footer with the Component Dock link', () => {
+  it('sets the document title', () => {
     render(<App />)
-    expect(screen.getByRole('link', { name: 'More templates at Component Dock' })).toHaveAttribute(
-      'href',
-      'https://www.componentdock.com/',
-    )
+    expect(document.title).toBe('Pleat — Interactive Accordion Template')
+  })
+
+  it('first accordion item is expanded by default', () => {
+    render(<App />)
+    const firstButton = screen.getByRole('button', { name: 'How to download and register?' })
+    expect(firstButton).toHaveAttribute('aria-expanded', 'true')
+    expect(
+      screen.getByRole('region', { name: 'How to download and register?' }),
+    ).toBeInTheDocument()
   })
 })

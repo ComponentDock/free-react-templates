@@ -1,11 +1,11 @@
 export function Footer() {
   return (
     <footer className="bg-page py-8">
-      <p className="text-center text-sm text-[#6c757d]">
+      <p className="text-center text-sm text-muted">
         &copy; {new Date().getFullYear()} Pleat &mdash;{' '}
         <a
           href="https://www.componentdock.com/"
-          className="font-semibold text-price transition-colors hover:text-black hover:underline"
+          className="font-semibold text-accent transition-colors hover:underline"
         >
           More templates at Component Dock
         </a>

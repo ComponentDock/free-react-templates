@@ -1,25 +1,22 @@
+import { useEffect } from 'react'
 import { Accordion } from './components/Accordion'
 import { Footer } from './components/Footer'
-import { IntroBlock } from './components/IntroBlock'
-import { PANELS } from './panels'
+import { ACCORDION_ITEMS } from './data'
 
 export function App() {
+  useEffect(() => {
+    document.title = 'Pleat — Interactive Accordion Template'
+  }, [])
+
   return (
-    <div className="flex min-h-screen flex-col bg-page font-sans text-black">
-      <main>
-        <section className="px-4 py-14 md:py-28">
-          <div className="mx-auto w-full max-w-[1140px]">
-            <h2 className="mb-12 text-center text-[28px] font-medium text-black md:pb-6">
-              Accordion #01
-            </h2>
-            <div className="mx-auto w-full md:w-2/3 lg:w-1/2">
-              <div className="overflow-hidden rounded-[5px] bg-white shadow-[0px_10px_29px_-16px_rgba(0,0,0,0.12)]">
-                <IntroBlock />
-                <Accordion panels={PANELS} />
-              </div>
-            </div>
-          </div>
-        </section>
+    <div className="flex min-h-screen flex-col bg-page font-sans text-text-header">
+      <main className="flex flex-1 items-center justify-center px-4 py-16">
+        <div className="w-full max-w-[700px]">
+          <h1 className="mb-8 text-center text-2xl font-semibold text-text-header">
+            Bootstrap Accordion #3
+          </h1>
+          <Accordion items={ACCORDION_ITEMS} defaultOpenId="download-register" />
+        </div>
       </main>
       <Footer />
     </div>

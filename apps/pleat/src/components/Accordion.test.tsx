@@ -1,95 +1,151 @@
-import { render, screen, within } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { describe, expect, it } from 'vitest'
 import { Accordion } from './Accordion'
-import { PANELS } from '../panels'
-
-const iconOf = (button: HTMLElement) =>
-  button.querySelector('[data-icon]')?.getAttribute('data-icon')
+import { ACCORDION_ITEMS } from '../data'
 
 describe('Accordion', () => {
-  it('opens the first panel by default with a minus icon and the second closed with a plus icon', () => {
-    render(<Accordion panels={PANELS} />)
-    const spa = screen.getByRole('button', { name: 'Spa Therapies' })
-    const massage = screen.getByRole('button', { name: 'Massage Therapies' })
-    expect(spa).toHaveAttribute('aria-expanded', 'true')
-    expect(massage).toHaveAttribute('aria-expanded', 'false')
-    expect(iconOf(spa)).toBe('minus')
-    expect(iconOf(massage)).toBe('plus')
-
-    const region = screen.getByRole('region', { name: 'Spa Therapies' })
-    expect(region).toBeInTheDocument()
-    expect(screen.queryByRole('region', { name: 'Massage Therapies' })).not.toBeInTheDocument()
+  it('renders all three accordion items', () => {
+    render(<Accordion items={ACCORDION_ITEMS} />)
+    expect(screen.getByText('How to download and register?')).toBeInTheDocument()
+    expect(screen.getByText('How to create your paypal account?')).toBeInTheDocument()
+    expect(screen.getByText('How to link your paypal and bank account?')).toBeInTheDocument()
   })
 
-  it('renders each panel body region labelled by its toggle button', () => {
-    render(<Accordion panels={PANELS} />)
-    const spaButton = screen.getByRole('button', { name: 'Spa Therapies' })
-    const region = screen.getByRole('region', { name: 'Spa Therapies' })
-    expect(region).toHaveAttribute('aria-labelledby', spaButton.id)
-    expect(spaButton).toHaveAttribute('aria-controls', region.id)
-  })
-
-  it('lists all four price rows inside each open body', () => {
-    render(<Accordion panels={PANELS} />)
-    const region = screen.getByRole('region', { name: 'Spa Therapies' })
-    for (const name of [
-      'Face Treatments',
-      'Nail Treatments',
-      'Medical Treatments',
-      'Hair Treatments',
-    ]) {
-      expect(within(region).getByText(name)).toBeInTheDocument()
+  it('starts with all items collapsed when no defaultOpenId', () => {
+    render(<Accordion items={ACCORDION_ITEMS} />)
+    for (const item of ACCORDION_ITEMS) {
+      const button = screen.getByRole('button', { name: item.question })
+      expect(button).toHaveAttribute('aria-expanded', 'false')
     }
+    expect(screen.queryByRole('region')).not.toBeInTheDocument()
   })
 
-  it('keeps only one panel open: opening the second closes the first', async () => {
-    const user = userEvent.setup()
-    render(<Accordion panels={PANELS} />)
-    const massage = screen.getByRole('button', { name: 'Massage Therapies' })
-    await user.click(massage)
-
-    expect(massage).toHaveAttribute('aria-expanded', 'true')
-    expect(iconOf(massage)).toBe('minus')
-    expect(screen.getByRole('region', { name: 'Massage Therapies' })).toBeInTheDocument()
-    expect(screen.queryByRole('region', { name: 'Spa Therapies' })).not.toBeInTheDocument()
-    expect(screen.getByRole('button', { name: 'Spa Therapies' })).toHaveAttribute(
-      'aria-expanded',
-      'false',
-    )
-    expect(iconOf(screen.getByRole('button', { name: 'Spa Therapies' }))).toBe('plus')
+  it('opens the default item when defaultOpenId is provided', () => {
+    render(<Accordion items={ACCORDION_ITEMS} defaultOpenId="download-register" />)
+    const button = screen.getByRole('button', { name: 'How to download and register?' })
+    expect(button).toHaveAttribute('aria-expanded', 'true')
+    expect(
+      screen.getByRole('region', { name: 'How to download and register?' }),
+    ).toBeInTheDocument()
   })
 
-  it('toggles a panel closed when its open header is activated again', async () => {
+  it('expands an item when clicked', async () => {
     const user = userEvent.setup()
-    render(<Accordion panels={PANELS} />)
-    const spa = screen.getByRole('button', { name: 'Spa Therapies' })
-    await user.click(spa)
+    render(<Accordion items={ACCORDION_ITEMS} />)
+    const button = screen.getByRole('button', { name: 'How to create your paypal account?' })
+    await user.click(button)
 
-    expect(spa).toHaveAttribute('aria-expanded', 'false')
-    expect(screen.queryByRole('region', { name: 'Spa Therapies' })).not.toBeInTheDocument()
+    expect(button).toHaveAttribute('aria-expanded', 'true')
+    expect(
+      screen.getByRole('region', { name: 'How to create your paypal account?' }),
+    ).toBeInTheDocument()
   })
 
-  it('toggles via keyboard (Enter) like a native button', async () => {
+  it('collapses an expanded item when clicked again', async () => {
     const user = userEvent.setup()
-    render(<Accordion panels={PANELS} />)
-    const massage = screen.getByRole('button', { name: 'Massage Therapies' })
-    massage.focus()
+    render(<Accordion items={ACCORDION_ITEMS} defaultOpenId="download-register" />)
+    const button = screen.getByRole('button', { name: 'How to download and register?' })
+    expect(button).toHaveAttribute('aria-expanded', 'true')
+
+    await user.click(button)
+    expect(button).toHaveAttribute('aria-expanded', 'false')
+    expect(
+      screen.queryByRole('region', { name: 'How to download and register?' }),
+    ).not.toBeInTheDocument()
+  })
+
+  it('allows multiple items open simultaneously', async () => {
+    const user = userEvent.setup()
+    render(<Accordion items={ACCORDION_ITEMS} />)
+    const first = screen.getByRole('button', { name: 'How to download and register?' })
+    const third = screen.getByRole('button', { name: 'How to link your paypal and bank account?' })
+
+    await user.click(first)
+    await user.click(third)
+
+    expect(first).toHaveAttribute('aria-expanded', 'true')
+    expect(third).toHaveAttribute('aria-expanded', 'true')
+    expect(
+      screen.getByRole('region', { name: 'How to download and register?' }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('region', { name: 'How to link your paypal and bank account?' }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('button', { name: 'How to create your paypal account?' }),
+    ).toHaveAttribute('aria-expanded', 'false')
+  })
+
+  it('toggle buttons have correct aria-controls and panels have aria-labelledby', async () => {
+    const user = userEvent.setup()
+    render(<Accordion items={ACCORDION_ITEMS} />)
+    const button = screen.getByRole('button', { name: 'How to download and register?' })
+    await user.click(button)
+
+    expect(button).toHaveAttribute('aria-controls', 'download-register-panel')
+    const region = screen.getByRole('region', { name: 'How to download and register?' })
+    expect(region).toHaveAttribute('aria-labelledby', 'download-register-toggle')
+  })
+
+  it('toggle buttons are keyboard accessible via Enter', async () => {
+    const user = userEvent.setup()
+    render(<Accordion items={ACCORDION_ITEMS} />)
+    const button = screen.getByRole('button', { name: 'How to create your paypal account?' })
+    button.focus()
     await user.keyboard('{Enter}')
 
-    expect(massage).toHaveAttribute('aria-expanded', 'true')
-    expect(screen.getByRole('region', { name: 'Massage Therapies' })).toBeInTheDocument()
+    expect(button).toHaveAttribute('aria-expanded', 'true')
   })
 
-  it('styles header buttons full-width, 20px, capitalized, black, with the icon at the far right', () => {
-    render(<Accordion panels={PANELS} />)
-    const spa = screen.getByRole('button', { name: 'Spa Therapies' })
-    expect(spa.className).toContain('flex')
-    expect(spa.className).toContain('w-full')
-    expect(spa.className).toContain('justify-between')
-    expect(spa.className).toContain('text-[20px]')
-    expect(spa.className).toContain('capitalize')
-    expect(spa.className).toContain('text-black')
-    expect(iconOf(spa)).toBe('minus')
+  it('toggle buttons are keyboard accessible via Space', async () => {
+    const user = userEvent.setup()
+    render(<Accordion items={ACCORDION_ITEMS} />)
+    const button = screen.getByRole('button', { name: 'How to link your paypal and bank account?' })
+    button.focus()
+    await user.keyboard(' ')
+
+    expect(button).toHaveAttribute('aria-expanded', 'true')
+  })
+
+  it('toggle button has focus-visible ring class', () => {
+    render(<Accordion items={ACCORDION_ITEMS} />)
+    const button = screen.getByRole('button', { name: 'How to download and register?' })
+    expect(button.className).toContain('focus-visible:ring-2')
+  })
+
+  it('each item has a rounded border', () => {
+    const { container } = render(<Accordion items={ACCORDION_ITEMS} />)
+    const items = container.querySelectorAll('[class*="rounded"]')
+    expect(items.length).toBe(3)
+  })
+
+  it('accordion items are separated by gap spacing', () => {
+    const { container } = render(<Accordion items={ACCORDION_ITEMS} />)
+    const wrapper = container.firstElementChild!
+    expect(wrapper.className).toContain('gap-')
+  })
+
+  it('each item has white background', () => {
+    const { container } = render(<Accordion items={ACCORDION_ITEMS} />)
+    const items = container.querySelectorAll('[class*="bg-accordion-bg"]')
+    expect(items.length).toBe(3)
+  })
+
+  it('active item shows green accent border', async () => {
+    const user = userEvent.setup()
+    render(<Accordion items={ACCORDION_ITEMS} />)
+    const button = screen.getByRole('button', { name: 'How to download and register?' })
+    await user.click(button)
+
+    const item = button.closest('[class*="border"]')!
+    expect(item.className).toContain('border-accent')
+  })
+
+  it('inactive item shows default border', () => {
+    render(<Accordion items={ACCORDION_ITEMS} />)
+    const button = screen.getByRole('button', { name: 'How to download and register?' })
+    const item = button.closest('[class*="border"]')!
+    expect(item.className).toContain('border-border-row')
   })
 })

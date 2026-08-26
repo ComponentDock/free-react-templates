@@ -1,60 +1,76 @@
 import { useState } from 'react'
-import { Minus, Plus } from 'lucide-react'
-import type { AccordionPanel } from '../panels'
-import { PriceRow } from './PriceRow'
+import { ChevronDown } from 'lucide-react'
+import type { AccordionItem } from '../data'
+import { cn } from '@free-react-templates/ui'
 
 export interface AccordionProps {
-  panels: AccordionPanel[]
+  items: AccordionItem[]
+  defaultOpenId?: string
 }
 
 /**
- * Single-open accordion (reference: Bootstrap `data-parent` collapse).
- * Panel 1 open by default; headers are full-width toggle buttons with a
- * Minus/Plus icon swap; bodies render only while open and act as labelled
- * regions for assistive tech.
+ * FAQ accordion — multiple items can be open simultaneously.
+ * Each header is a full-width button with a rotating chevron indicator.
+ * Active state uses green accent (#72c02c) on the left border and text.
  */
-export function Accordion({ panels }: AccordionProps) {
-  const [openIndex, setOpenIndex] = useState(0)
+export function Accordion({ items, defaultOpenId }: AccordionProps) {
+  const [openIds, setOpenIds] = useState<Set<string>>(
+    () => new Set(defaultOpenId ? [defaultOpenId] : []),
+  )
+
+  const toggle = (id: string) => {
+    setOpenIds((prev) => {
+      const next = new Set(prev)
+      if (next.has(id)) {
+        next.delete(id)
+      } else {
+        next.add(id)
+      }
+      return next
+    })
+  }
 
   return (
-    <div>
-      {panels.map((panel, index) => {
-        const isOpen = openIndex === index
+    <div className="flex flex-col gap-[10px]">
+      {items.map((item) => {
+        const isOpen = openIds.has(item.id)
         return (
-          <div key={panel.id}>
-            <div
-              className={
-                index < panels.length - 1 ? 'border-b border-separator px-6 py-4' : 'px-6 py-4'
-              }
+          <div
+            key={item.id}
+            className={cn(
+              'rounded bg-accordion-bg transition-all',
+              isOpen ? 'border border-accent' : 'border border-border-row',
+            )}
+          >
+            <button
+              id={`${item.id}-toggle`}
+              type="button"
+              aria-expanded={isOpen}
+              aria-controls={`${item.id}-panel`}
+              aria-label={item.question}
+              onClick={() => toggle(item.id)}
+              className={cn(
+                'flex w-full items-center px-[40px] py-[15px] text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50',
+                isOpen ? 'text-accent' : 'text-muted',
+              )}
             >
-              <button
-                id={`${panel.id}-toggle`}
-                type="button"
-                aria-expanded={isOpen}
-                aria-controls={panel.id}
-                onClick={() => setOpenIndex(isOpen ? -1 : index)}
-                className="flex w-full items-center justify-between bg-transparent p-0 text-[20px] font-normal capitalize tracking-normal text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/20"
-              >
-                {panel.title}
-                {isOpen ? (
-                  <Minus aria-hidden="true" data-icon="minus" className="h-6 w-6" />
-                ) : (
-                  <Plus aria-hidden="true" data-icon="plus" className="h-6 w-6" />
+              <ChevronDown
+                aria-hidden="true"
+                className={cn(
+                  'mr-3 h-4 w-4 flex-shrink-0 transition-transform duration-200',
+                  isOpen ? 'rotate-180 text-accent' : 'text-muted',
                 )}
-              </button>
-            </div>
+              />
+              <h3 className="text-sm font-normal">{item.question}</h3>
+            </button>
             {isOpen && (
               <div
-                id={panel.id}
+                id={`${item.id}-panel`}
                 role="region"
-                aria-labelledby={`${panel.id}-toggle`}
-                className="bg-[rgba(0,0,0,0.02)] px-6 py-0 md:py-12"
+                aria-labelledby={`${item.id}-toggle`}
+                className="px-5 pb-5 pt-0"
               >
-                <ul className="list-none p-0">
-                  {panel.rows.map((row) => (
-                    <PriceRow key={row.name} row={row} />
-                  ))}
-                </ul>
+                <p className="text-sm leading-relaxed text-text-body">{item.answer}</p>
               </div>
             )}
           </div>
