@@ -1,6 +1,7 @@
 {
   "name": "@free-react-templates/lamina",
   "private": true,
+  "homepage": "https://lamina.free.componentdock.com",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
