@@ -1,53 +1,52 @@
-# Template: BtnVault (UI Components & Creative Buttons)
+# Template: BtnVault (Bootstrap Buttons UI Component Showcase)
 
 ## Purpose
 
-- Recreation of ColorLib **Bootstrap Buttons V02** (`https://colorlib.com/wp/template/bootstrap-buttons-02/`, preview URL `https://preview.colorlib.com/theme/bootstrap-buttons-02/`).
-- Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
-- Provides an extensive showcase of creative, modern, and animated button styles, interactive toggle states, gradient pill buttons, glowing effects, and social action buttons.
+Recreation of ColorLib **Bootstrap Buttons 07** (`https://colorlib.com/wp/template/bootstrap-buttons-07/`), preview URL: `https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-07.jpg`, stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-## Design tokens
+## Design Tokens (Inferred from reference aesthetic)
 
-- **Brand Colors**:
-  - Primary / Accent: `#6366f1` (Indigo 500) & `#3b82f6` (Blue 500) gradients
-  - Success: `#10b981` (Emerald 500)
-  - Warning: `#f59e0b` (Amber 500)
-  - Danger: `#ef4444` (Red 500)
-  - Dark Surface: `#0f172a` (Slate 900)
-  - Light Surface: `#f8fafc` (Slate 50)
-- **Font Family**: `"Inter", sans-serif`
-- **Button Shapes**: Rounded-full pill buttons, sharp modern buttons, soft shadow elevations, glowing hover rings, and animated underline links.
-- **Section Backgrounds**: Clean white and light gray alternating cards, dark footer showcasing Component Dock.
+- **Brand Colors**: Primary indigo/blue (`#4f46e5`, `#6366f1`), Accent violet/purple (`#8b5cf6`), Neutral dark (`#1f2937`), Neutral light (`#f9fafb`), Success emerald (`#10b981`), Warning amber (`#f59e0b`), Danger rose (`#ef4444`).
+- **Font Family**: Inter, system-ui, sans-serif.
+- **Button Shapes**: Rounded-full (pill / circular buttons), rounded-lg, sharp edges, outline variants, gradient fills, shadow effects, icon-badge buttons, social buttons, floating action buttons.
+- **Section Backgrounds**: Clean white and light gray (`#f8fafc`) cards with soft drop shadows and border accents.
 
 ## Gherkin Requirements & Scenarios
 
-### Feature: Creative Buttons Showcase
+### Feature: Interactive Button Showcase & Playground
 
-As a developer or designer visiting BtnVault,
-I want to explore various creative Bootstrap button styles and interactions,
-So that I can use them in my own projects.
+As a developer or designer visiting BtnVault, I want to explore various styled button components, copy code snippets, and test button states interactively.
 
-#### Scenario: Viewing main button categories
+#### Scenario: View button categories
 
-- Given I am on the BtnVault home page
-- When I view the button collection sections
-- Then I should see categorized sections for Gradient Buttons, Animated Hover Buttons, Social Buttons, and Toggle States.
+- Given the user opens the BtnVault page
+- When the page loads
+- Then the user sees navigation tabs for Solid Buttons, Gradient Buttons, Outline Buttons, Pill & Circular Buttons, Social Buttons, and Floating Action Buttons.
 
-#### Scenario: Interacting with interactive button states
+#### Scenario: Interactive state testing
 
-- Given I am viewing a button card
-- When I click or hover over the button
-- Then it should display smooth transition animations, ripple effects, or scale transforms.
+- Given the user is on the button showcase section
+- When the user hovers or clicks a button variant
+- Then the button exhibits interactive feedback (scale, shadow elevation, color shift, ripple or loading spinner state).
 
-#### Scenario: Footer Attribution
+#### Scenario: Copy button snippet
 
-- Given I scroll to the bottom of the page
-- When I view the footer
-- Then I should see a link pointing to `https://www.componentdock.com/` as "Component Dock".
+- Given the user clicks "Copy Code" on a button card
+- When the action is triggered
+- Then the Tailwind / React JSX code snippet is copied to the clipboard with a success toast confirmation.
+
+#### Scenario: Footer attribution
+
+- Given the user scrolls to the bottom of the page
+- When the footer is rendered
+- Then it contains a copyright notice and a mandatory link to `https://www.componentdock.com/` ("Component Dock").
 
 ## Verification Checklist
 
-- [ ] TypeScript strict compilation passes (`npm run build`)
-- [ ] Vitest unit tests pass with 100% coverage
-- [ ] Component Dock link present in footer
-- [ ] Responsive grid layout works on mobile and desktop
+- [ ] Header banner with title, description, and category filter pills.
+- [ ] Multiple interactive button sections with diverse shapes, colors, and shadows.
+- [ ] Interactive click handlers / demo states (disabled, loading, active).
+- [ ] Code snippet copy functionality with feedback.
+- [ ] Responsive grid layout across mobile, tablet, and desktop viewports.
+- [ ] Footer with Component Dock link (`https://www.componentdock.com/`).
+- [ ] 100% test coverage with Vitest and Testing Library.
