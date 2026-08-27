@@ -1,77 +1,137 @@
-# Template: Crinkle (UI & Component Library / Accordions)
+# Template Spec: Crinkle (Accordion 18 Recreation)
 
-## Purpose
+## Overview
 
-- **Recreation of**: ColorLib `accordion-04` (`https://colorlib.com/wp/template/accordion-04/`)
-- **Preview URL**: `https://colorlib.com/wp/template/accordion-04/` (fallback to screenshot analysis as live preview returned 404)
-- **Stack**: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide Icons, `@free-react-templates/ui`
-- **Design Category**: Interactive UI Components / Accordions / FAQ Showcase
+- **New name**: Crinkle
+- **Source**: ColorLib "Bootstrap Accordion V18" (https://colorlib.com/wp/template/accordion-18/)
+- **Preview**: https://preview.colorlib.com/theme/accordion-18/ (was 404 at time of spec; fallback to screenshot)
+- **Type**: Single-purpose accordion component page (Bootstrap Accordion category)
+- **Package**: @free-react-templates/crinkle
 
-## Design Tokens & Visual Style
+## Design Tokens (extracted from ColorLib preview CSS)
 
-- **Colors**:
-  - Primary / Accent: Deep Indigo / Violet (`#4f46e5`, `indigo-600`)
-  - Neutral dark: Slate 900 (`#0f172a`)
-  - Neutral light: Slate 50 (`#f8fafc`)
-  - Border / Card background: White (`#ffffff`) with subtle slate shadows (`shadow-sm`, `border border-slate-200`)
-- **Typography**:
-  - Font family: Inter / system sans-serif (`font-sans`)
-  - Headings: Bold, clean sans-serif with high contrast (`text-slate-900`)
-- **Radii & Buttons**:
-  - Rounded corners: `rounded-xl` for accordion cards, `rounded-lg` for buttons/inputs
-  - Interactive states: Smooth accordion expand/collapse transitions with chevron rotation, focus rings (`focus-visible:ring-2 focus-visible:ring-indigo-500`)
-- **Section Layout (Top to Bottom)**:
-  1. **Navbar**: Brand logo ("Crinkle"), navigation links (Features, FAQ, Components, Pricing), and CTA button.
-  2. **Hero Section**: Bold headline ("Advanced Interactive Accordions & UI Components"), subtitle, primary action button ("Explore Components"), and a preview visual.
-  3. **Accordion Showcase Section**: Multiple interactive accordion categories (General FAQs, Technical Specs, Customization Guide, Billing & Licensing) with smooth toggle behavior, rich content, and clear visual hierarchy.
-  4. **Feature Grid**: 3-column layout highlighting key features (Accessible, Fully Customizable, Smooth Animations, Lightweight).
-  5. **CTA Banner**: Call-to-action block encouraging developers to integrate the accordion library.
-  6. **Footer**: Copyright, navigation links, and mandatory "Made with Component Dock" attribution (`https://www.componentdock.com/`).
+### Colors
 
-## Requirements & Gherkin Scenarios
+- **Brand green**: `#72c02c` (active/expanded state)
+- **Header inactive text**: `#999999` (rgb(153, 153, 153))
+- **Header active text**: `#72c02c` (brand green)
+- **Body text**: `#888888` (rgb(136, 136, 136))
+- **Item background (inactive)**: `#f9f9f9` (rgb(249, 249, 249))
+- **Header background**: `#ffffff` (white)
+- **Icon background (inactive)**: `#efefef` (rgb(239, 239, 239))
+- **Icon background (active)**: `#72c02c` (brand green)
+- **Icon color (active)**: `#ffffff` (white)
+- **Page title**: `#000000` (black)
 
-### Feature: Navbar
+### Typography
 
-- Scenario: Displays brand name and navigation links
-  - Given the user loads the Crinkle template
-  - When the Navbar renders
-  - Then it displays the brand logo "Crinkle", navigation links, and a CTA button
+- **Font family**: Roboto (Google Fonts)
+- **Title size**: ~28px (matching existing accordion templates)
+- **Panel header size**: ~20px
+- **Body text size**: ~16px (default)
+- **Font weight**: 400 (normal) for headers, 400 for body
 
-### Feature: Hero Section
+### Layout
 
-- Scenario: Displays headline and CTA
-  - Given the user views the Hero section
-  - Then it shows the main title, subtitle, and an "Explore Components" button
+- **Container max-width**: ~600px (centered)
+- **Accordion item margin-bottom**: 10px
+- **Header padding**: 15px (right padding 0 for icon area)
+- **Body padding**: 20px
+- **Icon size**: 18px font, padded area ~30x30px
+- **Border radius**: 4px on icon area, 0 on items
+- **Page title**: "Accordion #18" (matching ColorLib "Bootstrap Accordion #8" pattern)
 
-### Feature: Interactive Accordions
+### Component Behavior
 
-- Scenario: Expands and collapses accordion panels
-  - Given the user views the Accordion Showcase
-  - When the user clicks an accordion header
-  - Then the panel expands smoothly to reveal content and the chevron rotates
+- Single-open accordion (one panel open at a time)
+- First panel open by default
+- Headers are full-width toggle buttons
+- Expand/collapse icon swaps: down chevron (▼) → up chevron (▲)
+- Active header text color = brand green
+- Inactive header text color = grey (#999)
+- Body background = light grey (#f5f5f5 equivalent)
+- No borders between items (10px gap)
 
-### Feature: Feature Grid
+## Section Structure (1:1 with source)
 
-- Scenario: Displays feature cards
-  - Given the user scrolls to the feature section
-  - Then it shows 4 feature cards with icons and descriptions
+1. **Page Title** — "Accordion #18" centered, ~28px, font-medium
+2. **Accordion** — Three panels:
+   - Panel 1: "How to download and register?" (open by default)
+   - Panel 2: "How to create your paypal account?"
+   - Panel 3: "How to link your paypal and bank account?"
+3. **Footer** — Component Dock attribution link
 
-### Feature: CTA Banner
+## Gherkin Scenarios
 
-- Scenario: Displays call to action
-  - Given the user reaches the CTA banner
-  - Then it presents a compelling prompt with a primary button
+### Scenario: Initial render shows first panel expanded
 
-### Feature: Footer
+```
+Given the Crinkle page loads
+When the page renders
+Then the first accordion panel is expanded
+And the second and third panels are collapsed
+And the first panel's header shows brand green text
+And the first panel's header shows the up-chevron icon
+And the second and third panels' headers show grey text
+And the second and third panels' headers show the down-chevron icon
+```
 
-- Scenario: Displays mandatory footer attribution
-  - Given the user scrolls to the footer
-  - Then it shows copyright information and a link to https://www.componentdock.com/ as "Component Dock"
+### Scenario: Clicking a collapsed panel expands it and collapses the active one
 
-## Verification Checklist
+```
+Given the first panel is expanded
+When the user clicks the second panel's header
+Then the second panel becomes expanded
+And the first panel becomes collapsed
+And the second panel's header shows brand green text and up-chevron
+And the first panel's header shows grey text and down-chevron
+```
 
-- [ ] Spec validation passes (`npm run spec:validate`)
-- [ ] Per-app gate passes (`scripts/verify-app.sh crinkle`)
-- [ ] 100% test coverage maintained on all new components
-- [ ] Mandatory Component Dock footer attribution present
-- [ ] CNAME and homepage configured correctly (`crinkle.free.componentdock.com`)
+### Scenario: Clicking an expanded panel collapses it
+
+```
+Given the first panel is expanded
+When the user clicks the first panel's header
+Then the first panel becomes collapsed
+And no panel is expanded
+And the first panel's header shows grey text and down-chevron
+```
+
+### Scenario: Keyboard navigation works
+
+```
+Given focus is on the first panel's header
+When the user presses Enter
+Then the first panel toggles (expands if collapsed, collapses if expanded)
+And focus remains on the header
+```
+
+### Scenario: Footer links to Component Dock
+
+```
+Given the page renders
+When the user scrolls to the footer
+Then a "More templates at Component Dock" link is visible
+And the link href is "https://www.componentdock.com/"
+```
+
+### Scenario: Semantic accessibility
+
+```
+Given the page renders
+Then each panel header is a <button> with aria-expanded and aria-controls
+Then each panel body is a <div role="region"> with aria-labelledby pointing to its header
+Then icons have aria-hidden="true"
+Then the accordion container has no redundant wrapper
+```
+
+## Implementation Notes
+
+- Use `packages/ui` `cn()` utility for class composition
+- No ColorLib references in source code (provenance only in spec/PR)
+- Placeholder images not needed (text-only component)
+- Google Fonts: Roboto via `<link>` in index.html
+- Icons: lucide-react `ChevronDown` / `ChevronUp` (replacing icomoon)
+- Content can be paraphrased but keep same structure
+- Follow existing accordion patterns in `apps/bellows`, `apps/concertina`, `apps/crank`
+- Footer MUST link https://www.componentdock.com/ branded "Component Dock"
