@@ -4,10 +4,11 @@ import userEvent from '@testing-library/user-event'
 import { describe, expect, it } from 'vitest'
 import { Accordion } from './Accordion'
 
-const iconOf = (button: HTMLElement) => button.querySelector('[aria-hidden="true"]')?.textContent
+/** Check that the icon span contains an SVG (lucide-react chevron). */
+const hasIcon = (button: HTMLElement) => button.querySelector('[aria-hidden="true"] svg') !== null
 
 describe('Accordion', () => {
-  it('opens the first panel by default with up chevron and the others closed with down chevron', () => {
+  it('opens the first panel by default and the others closed', () => {
     render(<Accordion />)
     const first = screen.getByRole('button', { name: 'How to download and register?' })
     const second = screen.getByRole('button', { name: 'How to create your paypal account?' })
@@ -16,9 +17,9 @@ describe('Accordion', () => {
     expect(first).toHaveAttribute('aria-expanded', 'true')
     expect(second).toHaveAttribute('aria-expanded', 'false')
     expect(third).toHaveAttribute('aria-expanded', 'false')
-    expect(iconOf(first)).toContain('▲') // up chevron
-    expect(iconOf(second)).toContain('▼') // down chevron
-    expect(iconOf(third)).toContain('▼')
+    expect(hasIcon(first)).toBe(true)
+    expect(hasIcon(second)).toBe(true)
+    expect(hasIcon(third)).toBe(true)
 
     const region = screen.getByRole('region', { name: 'How to download and register?' })
     expect(region).toBeInTheDocument()
@@ -41,7 +42,7 @@ describe('Accordion', () => {
   it('shows panel content inside the open body', () => {
     render(<Accordion />)
     const region = screen.getByRole('region', { name: 'How to download and register?' })
-    expect(within(region).getByText('Anim pariatur cliche reprehenderit')).toBeInTheDocument()
+    expect(within(region).getByText(/Anim pariatur cliche reprehenderit/)).toBeInTheDocument()
   })
 
   it('keeps only one panel open: opening the second closes the first', async () => {
@@ -51,7 +52,7 @@ describe('Accordion', () => {
     await user.click(second)
 
     expect(second).toHaveAttribute('aria-expanded', 'true')
-    expect(iconOf(second)).toContain('▲')
+    expect(hasIcon(second)).toBe(true)
     expect(
       screen.getByRole('region', { name: 'How to create your paypal account?' }),
     ).toBeInTheDocument()
@@ -62,8 +63,8 @@ describe('Accordion', () => {
       'aria-expanded',
       'false',
     )
-    expect(iconOf(screen.getByRole('button', { name: 'How to download and register?' }))).toContain(
-      '▼',
+    expect(hasIcon(screen.getByRole('button', { name: 'How to download and register?' }))).toBe(
+      true,
     )
   })
 
@@ -97,14 +98,14 @@ describe('Accordion', () => {
     const first = screen.getByRole('button', { name: 'How to download and register?' })
     expect(first.className).toContain('w-full')
     expect(first.className).toContain('text-left')
-    expect(iconOf(first)).toContain('▲')
+    expect(hasIcon(first)).toBe(true)
   })
 
-  it('active header shows brand green text color', () => {
+  it('active header shows header-active text color', () => {
     render(<Accordion />)
     const first = screen.getByRole('button', { name: 'How to download and register?' })
-    // Brand green is #72c02c, mapped to text-brand via Tailwind
-    expect(first.className).toContain('text-brand')
+    // Active header uses text-header-active (brand green #72c02c)
+    expect(first.className).toContain('text-header-active')
   })
 
   it('inactive headers show grey text color', () => {

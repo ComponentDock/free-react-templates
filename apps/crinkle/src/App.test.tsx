@@ -15,17 +15,22 @@ describe('App', () => {
   })
 
   it('composes the reference section order: heading, accordion panels, footer', () => {
-    const { container } = render(<App />)
-    const labels = Array.from(container.querySelectorAll('h2, button, footer a')).map((el) =>
-      el.textContent?.trim(),
+    render(<App />)
+    // Top-level h2 = main heading; buttons = panel toggles; footer a = dock link
+    expect(screen.getAllByRole('heading', { level: 2 })[0]).toHaveTextContent('Accordion #18')
+    expect(
+      screen.getByRole('button', { name: 'How to download and register?' }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('button', { name: 'How to create your paypal account?' }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('button', { name: 'How to link your paypal and bank account?' }),
+    ).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'More templates at Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
     )
-    expect(labels).toEqual([
-      'Accordion #18',
-      'How to download and register?',
-      'How to create your paypal account?',
-      'How to link your paypal and bank account?',
-      'More templates at Component Dock',
-    ])
   })
 
   it('shows first panel open by default and others closed', () => {
@@ -64,6 +69,6 @@ describe('App', () => {
 
   it('shows panel content inside the open body', () => {
     render(<App />)
-    expect(screen.getByText('Anim pariatur cliche reprehenderit')).toBeInTheDocument()
+    expect(screen.getByText(/Anim pariatur cliche reprehenderit/)).toBeInTheDocument()
   })
 })

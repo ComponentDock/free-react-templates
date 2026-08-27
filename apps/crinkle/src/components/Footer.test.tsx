@@ -7,7 +7,7 @@ describe('Footer', () => {
   it('renders copyright year and Component Dock link', () => {
     render(<Footer />)
     const year = new Date().getFullYear()
-    expect(screen.getByText(`© ${year} Crinkle`)).toBeInTheDocument()
+    expect(screen.getByText(new RegExp(`©\\s*${year}\\s*Crinkle`))).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'More templates at Component Dock' })).toHaveAttribute(
       'href',
       'https://www.componentdock.com/',
