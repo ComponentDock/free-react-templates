@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Light gray page background (brand palette: #f9f9f9 item background). */
+  --color-page: #f9f9f9;
+  /* Signature brand green — the only accent color on the page. */
+  --color-brand: #72c02c;
+  /* Inactive header text color. */
+  --color-header-inactive: #999999;
+  /* Active header text color. */
+  --color-header-active: #72c02c;
+  /* Body text color. */
+  --color-body-text: #888888;
+  /* Header background (white). */
+  --color-header-bg: #ffffff;
+  /* Icon background inactive. */
+  --color-icon-bg-inactive: #efefef;
+  /* Panel body background (light grey). */
+  --color-body-bg: #f5f5f5;
+  /* Separator/border color. */
+  --color-separator: #e6e6e6;
+
+  /* Roboto (300-700) loaded via Google Fonts in index.html — carries the
+     whole typography-driven design. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
