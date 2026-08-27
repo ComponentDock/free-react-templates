@@ -878,7 +878,7 @@
 ## Business (365)
 
 - [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
-- [ ] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg)
+- [~] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg)
 - [x] **Action** — [colorlib](https://colorlib.com/wp/template/action/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/action-free-template.jpg) · [momentum](https://momentum.free.componentdock.com)
 - [ ] **Agrica** — [colorlib](https://colorlib.com/wp/template/agrica/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agrica-free-template.jpg)
 - [ ] **Alazea** — [colorlib](https://colorlib.com/wp/template/alazea/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alazea-free-template.jpg)
@@ -1360,7 +1360,7 @@
 
 ## Consulting (35)
 
-- [ ] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg)
+- [~] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg)
 - [ ] **Bizcon** — [colorlib](https://colorlib.com/wp/template/bizcon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bizcon-free-template.jpg)
 - [ ] **Buson** — [colorlib](https://colorlib.com/wp/template/buson/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buson-free-template.jpg)
 - [ ] **Callcenter** — [colorlib](https://colorlib.com/wp/template/callcenter/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/callcenter-free-call-center-website-template.jpg)
