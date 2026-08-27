@@ -660,7 +660,7 @@
 
 ## Bootstrap Buttons (20)
 
-- [ ] **Bootstrap Buttons 01** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-01.jpg)
+- [~] **Bootstrap Buttons 01** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-01.jpg)
 - [ ] **Bootstrap Buttons 02** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-02.jpg)
 - [ ] **Bootstrap Buttons 03** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-03.jpg)
 - [ ] **Bootstrap Buttons 04** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-04/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-04.jpg)
