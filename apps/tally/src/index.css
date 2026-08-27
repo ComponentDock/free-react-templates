@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #f96d00;
+  --color-brand-dark: #d45d00;
+  --color-dark: #1a1a2e;
+  --color-light: #f8f9fa;
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
