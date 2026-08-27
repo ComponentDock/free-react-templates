@@ -3,68 +3,97 @@
 ## Purpose
 
 Recreation of ColorLib **Bootstrap Buttons 01** (`https://colorlib.com/wp/template/bootstrap-buttons-01/`).
-_Note: The live preview URL returned 404, so replication fidelity is based on the official ColorLib screenshot and standard modern Bootstrap design principles._
+Note: The live preview URL returned 404, so replication fidelity is based on the official ColorLib screenshot and standard modern Bootstrap design principles.
 Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript · Lucide icons.
 New Name: `btncraft` (Package: `@free-react-templates/btncraft`).
 
-## Design Tokens
+## Requirements
 
-- **Brand Colors**:
-  - Primary: `#0d6efd` (Blue)
-  - Secondary: `#6c757d` (Gray)
-  - Success: `#198754` (Green)
-  - Danger: `#dc3545` (Red)
-  - Warning: `#ffc107` (Yellow)
-  - Info: `#0dcaf0` (Cyan)
-  - Light: `#f8f9fa`
-  - Dark: `#212529`
-- **Typography**: `font-sans` (system-ui, Inter, sans-serif)
-- **Radii**: `rounded-md` (default), `rounded-full` (pill), `rounded-none` (square)
-- **Aesthetic**: Clean, responsive button showcase gallery demonstrating solid, outline, pill, block, icon-augmented, and stateful (hover, active, disabled) variants.
+### Requirement: Navigation & Header
 
-## Sections / Components Structure
+The app SHALL display a professional sticky navigation bar with a brand logo, navigation links, and a theme toggle.
 
-1. **Navbar** — Brand logo (`BtnCraft`), navigation links (Showcase, Variants, Sizes, States, Code), GitHub link, and theme toggle.
-2. **Hero** — Title ("BtnCraft — Modern Bootstrap Button Showcase"), subtitle, and quick action buttons.
-3. **Solid Variants** — Standard solid buttons across all semantic color intents (Primary, Secondary, Success, Danger, Warning, Info, Light, Dark).
-4. **Outline Variants** — Transparent background with solid border and hover fill.
-5. **Pill & Square Radii** — Demonstration of rounded-full pill buttons and sharp-edged square buttons.
-6. **Sizes & States** — Small, medium, large buttons, plus active, disabled, and loading spinner states.
-7. **Icon Buttons** — Buttons augmented with Lucide icons (leading and trailing).
-8. **Interactive Playground** — Customizer where users can select variant, size, shape, and state, copy generated Tailwind/JSX code.
-9. **Footer** — Copyright, links, and mandatory attribution: "Made with Component Dock" linking `https://www.componentdock.com/`.
+#### Scenario: User views navigation
 
-## Gherkin Requirements & Scenarios
+- **WHEN** the user visits BtnCraft
+- **THEN** the header shows the brand logo "BtnCraft" and navigation links (Showcase, Variants, Sizes, States, Code)
+- **AND** the sticky bar remains at the top on scroll
 
-### Feature: Button Showcase & Interactive Playground
+### Requirement: Hero & Introduction
 
-As a developer or designer visiting BtnCraft,
-I want to explore a comprehensive catalog of button styles, variants, and states,
-So that I can easily copy and use them in my React applications.
+The hero section SHALL feature a compelling headline, subtitle, and quick action buttons.
 
-#### Scenario: View standard solid buttons
+#### Scenario: User views hero
 
-- Given the user is on the BtnCraft home page
-- When they view the Solid Variants section
-- Then all semantic color buttons (Primary, Secondary, Success, Danger, Warning, Info, Light, Dark) should be visible with correct styling and hover effects.
+- **WHEN** the user lands on the page
+- **THEN** the heading "BtnCraft — Modern Bootstrap Button Showcase" is visible
+- **AND** CTA buttons link to #showcase and #playground
 
-#### Scenario: Test interactive button states
+### Requirement: Solid Button Variants
 
-- Given the user is in the interactive playground section
-- When they toggle the disabled or loading state
-- Then the button should update immediately to show disabled opacity or loading spinner.
+The Solid Variants section SHALL display standard solid buttons across all semantic color intents.
 
-#### Scenario: Copy button code snippet
+#### Scenario: User views solid buttons
 
-- Given the user selects a custom button configuration in the playground
-- When they click the "Copy Code" button
-- Then the JSX/Tailwind code should be copied to the clipboard with a success toast notification.
+- **WHEN** the user scrolls to the Solid Variants section
+- **THEN** all 8 semantic color buttons (Primary, Secondary, Success, Danger, Warning, Info, Light, Dark) are visible with correct styling
 
-## Verification Checklist
+### Requirement: Outline Button Variants
 
-- [ ] TypeScript strict compilation passes (`npm run build`)
-- [ ] 100% test coverage on all components (`npm run test:coverage`)
-- [ ] Footer contains Component Dock link (`https://www.componentdock.com/`)
-- [ ] No mention of ColorLib in app source code
-- [ ] Workspace correctly registered in root `package.json` and `package-lock.json`
-- [ ] Surge CNAME and homepage configured correctly
+The Outline Variants section SHALL display transparent background buttons with solid borders that fill on hover.
+
+#### Scenario: User views outline buttons
+
+- **WHEN** the user scrolls to the Outline Variants section
+- **THEN** all 8 outline variant buttons are visible
+
+### Requirement: Shape Variants
+
+The Shape Variants section SHALL demonstrate pill (rounded-full) and square (rounded-none) button shapes.
+
+#### Scenario: User views shape variants
+
+- **WHEN** the user scrolls to the Shape Variants section
+- **THEN** both Pill Buttons and Square Buttons subsections are displayed
+
+### Requirement: Sizes & States
+
+The Sizes & States section SHALL display small, medium, and large buttons, plus active, disabled, and loading states.
+
+#### Scenario: User views sizes and states
+
+- **WHEN** the user scrolls to the Sizes & States section
+- **THEN** Small, Medium, and Large buttons are visible
+- **AND** Active, Disabled, and Loading state buttons are rendered correctly
+
+### Requirement: Icon Buttons
+
+The Icon Buttons section SHALL display buttons augmented with Lucide icons.
+
+#### Scenario: User views icon buttons
+
+- **WHEN** the user scrolls to the Icon Buttons section
+- **THEN** buttons with icons (Download, Delete, Add to Cart, etc.) are visible
+
+### Requirement: Interactive Playground
+
+The Interactive Playground SHALL allow users to customize button variant, size, shape, and state, and copy generated JSX code.
+
+#### Scenario: User customizes button in playground
+
+- **WHEN** the user selects a different variant in the playground
+- **THEN** the preview button updates immediately to show the selected variant
+
+#### Scenario: User copies button code
+
+- **WHEN** the user clicks the "Copy code" button
+- **THEN** the JSX/Tailwind code is copied to the clipboard
+
+### Requirement: Footer
+
+The footer SHALL contain copyright information and a mandatory link to Component Dock.
+
+#### Scenario: User checks footer attribution
+
+- **WHEN** the user scrolls to the bottom of the page
+- **THEN** the footer displays a link to https://www.componentdock.com/ branded as "Component Dock"
