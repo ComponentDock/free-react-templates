@@ -1,39 +1,88 @@
-# Template: BtnQuint (UI Component Showcase)
+# Spec: BtnQuint (Bootstrap Buttons 05)
 
 ## Purpose
 
-Recreation of ColorLib **Bootstrap Buttons 05** (`https://colorlib.com/wp/template/bootstrap-buttons-05/`).
-New app name: `btnquint` (package `@free-react-templates/btnquint`).
+Recreation of ColorLib **Bootstrap Buttons 05** as **BtnQuint**, a modern React button showcase and playground built with React 19, TypeScript, and Tailwind CSS 4.
 
-## Design Tokens & Visual Style
+## Requirements
 
-- **Font Family**: "Poppins", sans-serif
-- **Base Button Shape**: Rounded (`border-radius: 4px`), uppercase text, letter spacing `.03rem`, box-shadow.
-- **Hover Effect**: Bottom-to-top absolute pseudo-element overlay (`rgba(255,255,255,0.2)`) with smooth transition.
-- **Background**: Clean minimal white/light-gray background with centered cards for button showcases.
-- **Palette**: Primary blue (#007bff or accent colors), neutral dark text, colorful custom background variants.
+### Requirement 1: Navbar
 
-## Structure Order (top → bottom)
+Users SHALL see a top navigation bar with the brand name and navigation links.
 
-1. Header / Page Title ("#05 — Bootstrap Buttons")
-2. Button Sizes & Variations Showcase
-3. Color Variants Grid (18+ colored buttons with hover transitions)
-4. Block / Full-Width Buttons
-5. Footer (with Component Dock link)
+#### Scenario: Display navbar
 
-## Gherkin Requirements & Scenarios
+- **WHEN** the user loads BtnQuint
+- **THEN** they see a sticky navbar with brand name and navigation links
 
-### Feature: BtnQuint Component Showcase
+### Requirement 2: Hero Section
 
-Scenario: User views the button showcase
-Given the user navigates to the BtnQuint template
-Then they should see the header `#05 — Bootstrap Buttons`
-And the button size variations (Large, Default, Small)
-And the color variants grid with hover overlay effects
-And the full-width block button
-And the footer with a link to `https://www.componentdock.com/`
+Users SHALL see a hero section introducing BtnQuint with a heading and subtitle.
 
-Scenario: User interacts with buttons
-Given the user hovers over a button in the color grid
-Then the button should display the smooth pseudo-element highlight transition
-And clicking the button should trigger its active state cleanly
+#### Scenario: Display hero
+
+- **WHEN** the user loads BtnQuint
+- **THEN** they see a hero with the main heading "#05 — Bootstrap Buttons" and subtitle text
+
+### Requirement 3: Solid Buttons
+
+Users SHALL see a section displaying standard solid buttons across all semantic intents (primary, secondary, success, danger, warning, info, light, dark).
+
+#### Scenario: Display solid buttons
+
+- **WHEN** the user scrolls to the solid variants section
+- **THEN** they see eight solid-colored buttons with semantic color coding
+
+### Requirement 4: Outline Buttons
+
+Users SHALL see a section showcasing transparent buttons with colored borders and hover-fill effects.
+
+#### Scenario: Display outline buttons
+
+- **WHEN** the user scrolls to the outline variants section
+- **THEN** they see outline buttons with colored borders matching semantic intents
+
+### Requirement 5: Shape Variants
+
+Users SHALL see a section demonstrating pill (rounded-full) and square (rounded-none) button radii.
+
+#### Scenario: Display shape variants
+
+- **WHEN** the user scrolls to the shape variants section
+- **THEN** they see pill-shaped and square button variants grouped under sub-headings
+
+### Requirement 6: Sizes and States
+
+Users SHALL see a section showing buttons in three sizes (large, default, small) and disabled/active states.
+
+#### Scenario: Display size variants
+
+- **WHEN** the user scrolls to the sizes and states section
+- **THEN** they see large, default, and small buttons alongside disabled and active state buttons
+
+### Requirement 7: Icon Buttons
+
+Users SHALL see a section showcasing buttons with leading or trailing icons.
+
+#### Scenario: Display icon buttons
+
+- **WHEN** the user scrolls to the icon buttons section
+- **THEN** they see buttons with icon + label combinations
+
+### Requirement 8: Playground
+
+Users SHALL see an interactive playground section with a preview button that demonstrates the current configuration.
+
+#### Scenario: Display playground
+
+- **WHEN** the user scrolls to the playground section
+- **THEN** they see a heading and a preview button demonstrating the current button style
+
+### Requirement 9: Footer
+
+Users SHALL see a footer with a link to https://www.componentdock.com/.
+
+#### Scenario: Display footer
+
+- **WHEN** the user scrolls to the bottom of the page
+- **THEN** they see a footer with a link to Component Dock
