@@ -656,7 +656,7 @@
 - [x] **Accordion 17** — [colorlib](https://colorlib.com/wp/template/accordion-17/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-17.jpg) · [crank](https://crank.free.componentdock.com)
 - [x] **Accordion 18** — [colorlib](https://colorlib.com/wp/template/accordion-18/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-18.jpg) · [crinkle](https://crinkle.free.componentdock.com)
 - [x] **Accordion 19** · [stride](https://free-react-templates-stride.surge.sh) — [colorlib](https://colorlib.com/wp/template/accordion-19/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-19.jpg)
-- [~] **Accordion 20** — [colorlib](https://colorlib.com/wp/template/accordion-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-20.jpg)
+- [x] **Accordion 20** — [colorlib](https://colorlib.com/wp/template/accordion-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-20.jpg) · [jade](https://free-react-templates-jade.surge.sh)
 
 ## Bootstrap Buttons (20)
 
