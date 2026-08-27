@@ -1,5 +1,5 @@
 {
-  "ignorePatterns": ["skills/**"],
+  "ignorePatterns": ["skills/**", "**/*.test.ts", "**/*.test.tsx", "**/test/**"],
   "ignoreDependencies": ["tailwindcss", "@tailwindcss/vite", "@fission-ai/openspec", "surge"],
   "duplicates": {
     "ignore": ["apps/*/src/**", "apps/*/vite.config.ts"]
