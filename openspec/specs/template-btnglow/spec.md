@@ -1,145 +1,72 @@
-# Template: BtnGlow (Bootstrap Button Color Palette Showcase)
+# Template: Btnglow (UI Component Showcase)
 
 ## Purpose
 
-Recreation of ColorLib Bootstrap Buttons 07 (https://colorlib.com/wp/template/bootstrap-buttons-07/). A clean, minimal button color palette showcase featuring standard Bootstrap button sizes (Large, Medium, Small), comprehensive color variants across semantic and extended palettes, and a full-width button demonstration — built with React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib **Bootstrap Buttons V12** (`https://colorlib.com/wp/template/bootstrap-buttons-12/`), built as a modern React 19 + Tailwind CSS 4 UI component showcase template. Live preview URL: `https://colorlib.com/wp/template/bootstrap-buttons-12/`.
 
 ## Design tokens
 
-- **Primary Brand Color**: Bootstrap Blue `#0d6efd` (standard Bootstrap 4/5 primary)
-- **Semantic Colors**:
-  - Primary: `#0d6efd`
-  - Secondary: `#6c757d`
-  - Success: `#198754`
-  - Info: `#0dcaf0`
-  - Warning: `#ffc107`
-  - Danger: `#dc3545`
-  - Light: `#f8f9fa` (dark text)
-  - Dark: `#212529`
-- **Extended Palette**:
-  - Orange: `#fd7e14`
-  - Indigo: `#6610f2`
-  - Pink: `#d63384`
-  - Deep Orange: `#e83e2c`
-  - Aqua: `#0dcaf0`
-  - Black: `#000000`
-  - Purple: `#6f42c1`
-  - Blue: `#0d6efd`
-  - Brown: `#795548`
-  - Blue Gray: `#607d8b`
-- **Font Family**: System UI stack (`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif`)
-- **Button Radii**: Pill/rounded-full (`rounded-full` / `rounded-pill` equivalent) for all button variants
-- **Button Sizes**:
-  - Large: `px-6 py-3 text-lg`
-  - Medium: `px-4 py-2 text-base`
-  - Small: `px-3 py-1.5 text-sm`
-- **Section Backgrounds**: White (`bg-white`) light mode; Slate-900 (`bg-slate-900`) dark mode
-- **Typography**: Clean system fonts, muted grey labels (`text-slate-500`) for section headings
+- **Font Family**: `Poppins, Arial, sans-serif`
+- **Background Color**: `#111111` (dark theme background)
+- **Primary Button Color**: `#494ca2` (Indigo)
+- **Button Radius**: `0px` (sharp rectangular buttons / square aesthetic)
+- **Accent Colors**: Success (`#28a745`), Danger (`#dc3545`), Warning (`#ffc107`), Info (`#17a2b8`), Light (`#f8f9fa`), Dark (`#343a40`)
 
-## Requirements & Gherkin Scenarios
+## Sections & Gherkin Requirements
 
-### Requirement 1: Navigation Bar
+### 1. Header & Navigation
 
-- As a user, I want a simple navigation bar with the brand name and dark mode toggle so I can navigate and control theme.
+- **Requirement**: Display a clean header with title "Button #12" and navigation items (Home, Support, Free Themes).
+- **Scenario**: User views header
+  - Given the page is loaded
+  - Then the header displays title "Button #12" and navigation links
 
-Scenario: Display navbar
-Given the user loads BtnGlow
-When the page renders
-Then they see a sticky navbar with brand name "BtnGlow" and a dark mode toggle button
+### 2. Pick Your Style Section
 
-Scenario: Toggle dark mode
-Given the user is on BtnGlow
-When they click the theme toggle
-Then the page switches between light (white background) and dark (slate-900 background) modes
-And the toggle icon updates to reflect the current mode
+- **Requirement**: Showcase buttons in Default, Default Outline, Default Round, and Outline Round variants.
+- **Scenario**: User tests button styles
+  - Given the "Pick your style" section is visible
+  - When the user inspects button styles
+  - Then default, outline, and rounded style variations are correctly rendered
 
-### Requirement 2: Hero / Title Section
+### 3. Pick Your Size Section
 
-- As a user, I want a clear page title identifying the template so I know what I'm viewing.
+- **Requirement**: Showcase Small, Regular, and Large button sizes.
+- **Scenario**: User views button sizes
+  - Given the "Pick your size" section is visible
+  - Then buttons are displayed in small, regular, and large dimension tiers
 
-Scenario: Display page title
-Given the user loads BtnGlow
-When the hero renders
-Then they see a centered heading "#07 - Bootstrap 4 Buttons" (or "BtnGlow - Bootstrap Button Palette") in dark text
+### 4. Pick Your Color Section
 
-### Requirement 3: Button Size Variations
+- **Requirement**: Showcase semantic color variants (Primary, Success, Danger, Warning, Info, Light, Dark) in solid and outline styles.
+- **Scenario**: User views color variants
+  - Given the "Pick your color" section is visible
+  - Then all 7 semantic color variants appear in both solid and outline styles
 
-- As a developer, I want to see Bootstrap's three standard button sizes (Large, Medium, Small) so I can choose the right size for my UI.
+### 5. Buttons with Icons & Social Buttons
 
-Scenario: View button size demonstrations
-Given the user scrolls to the "Button Sizes" section
-When the section renders
-Then they see three labeled button groups:
+- **Requirement**: Showcase buttons with icons and social network integrations (Facebook, Twitter, LinkedIn, Pinterest, Dribbble) with share count badges.
+- **Scenario**: User interacts with social buttons
+  - Given the social buttons section is visible
+  - Then social buttons display respective icons and counts (e.g. 8.2k)
 
-- "Large" — a large pill-shaped primary button
-- "Medium" — a medium pill-shaped primary button
-- "Small" — a small pill-shaped primary button
-  And all buttons use the primary Bootstrap blue color
-  And all buttons have pill/rounded-full border radius
+### 6. Links, Disabled Buttons & Dropdowns
 
-### Requirement 4: Semantic Color Palette
+- **Requirement**: Display text link variants, disabled button states, interactive dropdown buttons, and button groups.
+- **Scenario**: User inspects interactive states
+  - Given the interactive states section is visible
+  - Then disabled buttons are non-clickable and dropdowns toggle correctly
 
-- As a developer, I want to see all standard Bootstrap semantic button colors so I can reference the correct color for each intent.
+### 7. Checkboxes, Radios & Block Buttons
 
-Scenario: View semantic button colors
-Given the user scrolls to the "Button Colors" section
-When the section renders
-Then they see a grid of pill-shaped buttons in these colors with white text (except Light which uses dark text):
-
-- Primary (Bootstrap blue)
-- Secondary (slate grey)
-- Success (green)
-- Info (cyan)
-- Warning (yellow, dark text)
-- Danger (red)
-- Light (off-white, dark text)
-- Dark (near-black)
-  And each button displays its color name as label
-
-### Requirement 5: Extended Color Palette
-
-- As a developer, I want to see Bootstrap's extended color palette so I have more design options.
-
-Scenario: View extended button colors
-Given the user continues scrolling in the "Button Colors" section
-When the extended palette renders
-Then they see additional rows of pill-shaped buttons in:
-
-- Row 2: Orange, Indigo, Pink, Deep Orange, Aqua, Dark, Black, Purple
-- Row 3: Blue, Brown, Blue Gray
-  And each button displays its color name as label
-  And text color is white for dark backgrounds, dark for light backgrounds (Warning, Light)
-
-### Requirement 6: Full Width Button
-
-- As a developer, I want to see a full-width button example so I understand the block-level button pattern.
-
-Scenario: View full-width button
-Given the user scrolls to the "Full Width Button" section
-When the section renders
-Then they see a single pill-shaped primary button spanning the full container width
-With the label "Button"
-
-### Requirement 7: Component Dock Footer
-
-- As a user, I want a footer linking to Component Dock so I can discover more templates.
-
-Scenario: Footer attribution
-Given the user scrolls to the bottom of the page
-Then the footer displays "Made with Component Dock" linking to https://www.componentdock.com/
+- **Requirement**: Display styled color checkboxes, radio buttons, and full-width block level buttons.
+- **Scenario**: User tests form controls
+  - Given the form controls section is visible
+  - Then colored radios and block-level buttons render properly
 
 ## Verification Checklist
 
-- [ ] Navbar renders with brand name and functional dark mode toggle
-- [ ] Hero/title section displays correctly
-- [ ] Button Sizes section shows Large, Medium, Small primary buttons with correct sizing
-- [ ] Button Colors section displays all 8 semantic colors with correct Bootstrap hex values
-- [ ] Extended palette shows 11 additional colors (Orange, Indigo, Pink, Deep Orange, Aqua, Dark, Black, Purple, Blue, Brown, Blue Gray)
-- [ ] Full Width Button section shows a block-level primary button
-- [ ] All buttons use pill/rounded-full border radius
-- [ ] Dark mode toggles correctly (white ↔ slate-900 backgrounds, text colors adapt)
-- [ ] Footer contains mandatory Component Dock link
-- [ ] 100% test coverage with Vitest & Testing Library
-- [ ] TypeScript strict mode passes
-- [ ] ESLint + Prettier pass
-- [ ] Build succeeds
+- [ ] Spec validated via `npm run spec:validate`
+- [ ] 100% test coverage on all components
+- [ ] Footer links https://www.componentdock.com/
+- [ ] No mention of ColorLib in app code
