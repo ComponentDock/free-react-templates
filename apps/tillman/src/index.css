@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Tillman brand palette — recreated from the ColorLib "Agrica" design
+     (agricultural green #329D23). */
+  --color-leaf-50: #f3fff2;
+  --color-leaf-100: #e6fce4;
+  --color-leaf-200: #b8f5b0;
+  --color-leaf-300: #73fbaf;
+  --color-leaf-400: #329d23;
+  --color-leaf-500: #285d25;
+  --color-leaf-600: #25771b;
+  --color-leaf-700: #1e5c16;
+  --color-leaf-800: #1a4d13;
+  --color-leaf-900: #143d0f;
+
+  /* Josefin Sans — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+}
