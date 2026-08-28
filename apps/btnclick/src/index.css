@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #0d6efd;
+  --color-primary-hover: #0b5ed7;
+  --color-secondary: #6c757d;
+  --color-secondary-hover: #5c636a;
+  --color-success: #198754;
+  --color-success-hover: #157347;
+  --color-info: #0dcaf0;
+  --color-info-hover: #31d2f4;
+  --color-warning: #ffc107;
+  --color-warning-hover: #ffca2c;
+  --color-danger: #dc3545;
+  --color-danger-hover: #bb2d3b;
+  --color-light: #f8f9fa;
+  --color-light-hover: #e9ecef;
+  --color-orange: #fd7e14;
+  --color-orange-hover: #e8650e;
+  --color-indigo: #6610f2;
+  --color-indigo-hover: #5508cc;
+  --color-pink: #d63384;
+  --color-pink-hover: #c12a72;
+  --color-deeporange: #f4623a;
+  --color-deeporange-hover: #e04d2a;
+  --color-aqua: #0891b2;
+  --color-aqua-hover: #0d9488;
+  --color-dark: #212529;
+  --color-dark-hover: #343a40;
+  --color-black: #000000;
+  --color-purple: #6f42c1;
+  --color-purple-hover: #5f32a5;
+  --color-blue: #0d6efd;
+  --color-blue-hover: #0b5ed7;
+  --color-brown: #8b5e3c;
+  --color-brown-hover: #7a5235;
+  --color-bluegray: #6b7280;
+  --color-bluegray-hover: #5e666d;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
