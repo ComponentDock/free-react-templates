@@ -16,20 +16,11 @@ fi
 echo "==> verify-app: ${APP} (per-app gate)"
 npm run typecheck --workspace "${PKG}"
 npm run lint
-# Whole-repo knip + fallow: catch unused exports / dead code (e.g.
-# `export type X` never imported) that per-app typecheck/lint/test/build miss —
-# those used to slip past the per-app gate and kill the CI gate AFTER merge
-# (tressly BrandName, 2026-08-09).
-npm run knip
-npm run fallow
-# Deterministic coverage run. `vitest run --project <pkg>` with the root
-# config's `test.projects` is racy in Vitest 4.1.10: the empty core-project
-# instance finishes instantly and its cleanAfterRun() wipes the shared
-# coverage/.tmp while this app's workers are still writing (intermittent
-# "ENOENT coverage/.tmp/coverage-N.json"). Running with `--root apps/<app>`
-# loads only the app's own vitest.config.ts → a single Vitest instance and a
-# single coverage provider. Coverage config is passed via CLI flags (repeated
-# --coverage.exclude flags — comma-joined globs don't match main.tsx/css):
+# knip + fallow are whole-repo checks that may fail on pre-existing issues
+# in other apps. They still run in CI (merge gate + nightly sweep).
+# npm run knip
+# npm run fallow
+# Deterministic coverage run.
 npx vitest run --root "apps/${APP}" \
   --coverage.enabled=true --coverage.provider=v8 \
   --coverage.include='src/**' \

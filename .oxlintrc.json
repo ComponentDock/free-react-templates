@@ -6,6 +6,8 @@
   },
   "ignorePatterns": ["skills/**"],
   "rules": {
-    "react-in-jsx-scope": "off"
+    "react-in-jsx-scope": "off",
+    "react/set-state-in-effect": "warn",
+    "react/purity": "warn"
   }
 }

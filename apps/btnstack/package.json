@@ -27,6 +27,7 @@
     "jsdom": "latest",
     "tailwindcss": "latest",
     "typescript": "latest",
-    "vitest": "latest"
+    "vitest": "latest",
+    "vite": "latest"
   }
 }

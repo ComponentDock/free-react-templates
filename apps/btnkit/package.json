@@ -1,5 +1,5 @@
 {
-  "name": "@free-react-templates/tillman",
+  "name": "@free-react-templates/btnkit",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -10,6 +10,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@free-react-templates/ui": "*",
     "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest"
@@ -18,6 +19,7 @@
     "@tailwindcss/vite": "latest",
     "@testing-library/jest-dom": "latest",
     "@testing-library/react": "latest",
+    "@testing-library/user-event": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
@@ -27,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://tillman.free.componentdock.com"
+  "homepage": "https://btnkit.free.componentdock.com"
 }
