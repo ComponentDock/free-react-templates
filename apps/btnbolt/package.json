@@ -27,5 +27,6 @@
     "tailwindcss": "latest",
     "typescript": "latest",
     "vite": "latest"
-  }
+  },
+  "homepage": "https://btnbolt.free.componentdock.com"
 }
