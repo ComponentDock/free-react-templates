@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #4f81c7;
+  --color-primary-shadow: #3d73c0;
+  --color-secondary: #40bfc1;
+  --color-secondary-shadow: #39adaf;
+  --color-tertiary: #48da79;
+  --color-tertiary-shadow: #33d669;
+  --color-quarternary: #ff78ae;
+  --color-quarternary-shadow: #ff5f9f;
+  --color-facebook: #4f69a2;
+  --color-twitter: #69b6f0;
+  --color-linkedin: #2884ba;
+  --color-pinterest: #d03940;
+  --color-dribbble: #ea6294;
+  --color-dark: #343a40;
+  --color-body: #212529;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
