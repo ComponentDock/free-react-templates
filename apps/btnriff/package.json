@@ -28,5 +28,6 @@
     "tailwindcss": "latest",
     "typescript": "latest",
     "vite": "latest"
-  }
+  },
+  "homepage": "https://btnriff.free.componentdock.com"
 }
