@@ -669,7 +669,7 @@
 - [x] **Bootstrap Buttons 07** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-07/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-07.jpg) · [btnflare](https://free-react-templates-btnflare.surge.sh)
 - [x] **Bootstrap Buttons 08** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-08/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-08.jpg) · [bevel](https://bevel.free.componentdock.com)
 - [x] **Bootstrap Buttons 09** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-09/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-09.jpg) · [btnbolt](https://btnbolt.free.componentdock.com)
-- [ ] **Bootstrap Buttons 10** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-10.jpg)
+- [~] **Bootstrap Buttons 10** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-10.jpg)
 - [ ] **Bootstrap Buttons 11** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-11/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-11.jpg)
 - [ ] **Bootstrap Buttons 12** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-12/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-12.jpg)
 - [ ] **Bootstrap Buttons 13** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-13/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-13.jpg)
