@@ -685,7 +685,7 @@
 ## Bootstrap Calendars (20)
 
 - [x] **Calendar 01** — [colorlib](https://colorlib.com/wp/template/calendar-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-01.jpg) · [planner](https://planner.free.componentdock.com)
-- [ ] **Calendar 02** — [colorlib](https://colorlib.com/wp/template/calendar-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-02.jpg)
+- [~] **Calendar 02** — [colorlib](https://colorlib.com/wp/template/calendar-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-02.jpg)
 - [ ] **Calendar 03** — [colorlib](https://colorlib.com/wp/template/calendar-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-03.jpg)
 - [ ] **Calendar 04** — [colorlib](https://colorlib.com/wp/template/calendar-04/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-04.jpg)
 - [ ] **Calendar 05** — [colorlib](https://colorlib.com/wp/template/calendar-05/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-05.jpg)

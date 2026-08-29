@@ -6,54 +6,77 @@ Recreation of ColorLib template **Calendar 02** (`https://colorlib.com/wp/templa
 
 ## Design tokens
 
-- **Brand primary**: `#4f46e5` (Indigo-600) / `#6366f1`
-- **Backgrounds**: `#f8fafc` (Slate-50) for canvas, `#ffffff` for cards, `#1e293b` (Slate-800) for dark contrast header
-- **Typography**: Inter / sans-serif system fonts
-- **Radii**: `rounded-xl` / `rounded-2xl` for cards, `rounded-lg` for buttons and inputs
-- **Shadows**: `shadow-sm` and `shadow-md`
+- **Brand primary**: `#3d88f7` (accent blue) / `#1371e6` (month label)
+- **Backgrounds**: `#f7f8fc` (page), `#ffffff` (calendar card)
+- **Typography**: Poppins / sans-serif
+- **Grid lines**: `#e6e6e6`
+- **Past dates**: `#7c7d81` (gray)
+- **Future dates**: `#111111` (black)
+- **Chevrons**: `#b9cae7` (light blue)
 
-## Gherkin requirements & scenarios
+## Requirements
 
-### Feature: Interactive Calendar & Event Management
+### Requirement: Render the monthly calendar grid
 
-As a user visiting the ChronoGrid calendar planner,
-I want to view the month grid, select dates, inspect scheduled events, and add new appointments,
-So that I can efficiently manage my schedule and time.
+The page SHALL display a calendar grid with the current month name, weekday headers (Sun–Sat), and clickable day cells.
 
-#### Scenario: Viewing the monthly calendar grid
+#### Scenario: Calendar grid visible on load
 
-- Given the user loads the ChronoGrid application
-- When the user views the main calendar section
-- Then the calendar displays the current month and grid of days with correct weekday headers
-- And today's date is highlighted with the primary brand color
+- **WHEN** the page loads
+- **THEN** the heading "Calendar #01" is visible
+- **AND** a month name (e.g. "December 2020") is displayed
+- **AND** seven weekday abbreviations (Sun, Mon, Tue, Wed, Thu, Fri, Sat) are shown
 
-#### Scenario: Navigating months
+#### Scenario: Day cells are clickable
 
-- Given the user is viewing the calendar grid
-- When the user clicks the "Next" or "Previous" month navigation buttons
-- Then the calendar updates to show the corresponding month's days and events
+- **WHEN** the user clicks on a day number (e.g. 15)
+- **THEN** that day becomes selected (highlighted with the accent color)
 
-#### Scenario: Selecting a date and viewing events
+### Requirement: Navigate between months
 
-- Given the calendar grid is displayed
-- When the user clicks on a specific calendar day (e.g., 15th)
-- Then the side panel or event list updates to show scheduled events for that date
+The calendar SHALL provide Previous and Next month navigation buttons.
 
-#### Scenario: Adding a new appointment
+#### Scenario: Navigate to previous month
 
-- Given the user opens the "Add Appointment" modal or form
-- When the user fills in the title, time, and description and clicks Save
-- Then the new appointment appears in the day's event list and calendar indicator
+- **WHEN** the user clicks the "Previous month" button
+- **THEN** the displayed month changes to the previous month
+- **AND** the correct number of days for that month are shown
 
-### Feature: Footer branding
+#### Scenario: Navigate to next month
 
-- Given the user scrolls to the bottom of the page
-- When the footer is rendered
-- Then it contains the required link to `https://www.componentdock.com/` branded as "Component Dock"
+- **WHEN** the user clicks the "Next month" button
+- **THEN** the displayed month changes to the next month
 
-## Verification checklist
+### Requirement: Highlight selected date
 
-- [ ] Spec valid via `npm run spec:validate`
-- [ ] Tests pass with 100% coverage
-- [ ] Responsive design verified on mobile and desktop viewports
-- [ ] Footer contains Component Dock attribution link
+The calendar SHALL visually distinguish the selected date with the brand accent color.
+
+#### Scenario: Selected date has accent styling
+
+- **WHEN** a date is selected (default: 19th)
+- **THEN** that date cell has a rounded accent background and white text
+- **AND** `aria-selected` is set to true on that cell
+
+### Requirement: Show past and future date colors
+
+Dates before and after the selected date SHALL use distinct text colors.
+
+#### Scenario: Past dates are gray
+
+- **WHEN** the calendar renders
+- **THEN** dates before the selected date display in the past color (#7c7d81)
+
+#### Scenario: Future dates are dark
+
+- **WHEN** the calendar renders
+- **THEN** dates after the selected date display in the future color (#111111)
+
+### Requirement: Footer branding
+
+The page footer SHALL link to the Component Dock website.
+
+#### Scenario: Footer link present
+
+- **WHEN** the user scrolls to the bottom of the page
+- **THEN** a link to "https://www.componentdock.com/" is visible
+- **AND** the link text contains "Component Dock"
