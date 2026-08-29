@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-accent: #bd83ce;
+  --color-today: #bd83ce;
+  --color-selected-bg: rgba(153, 153, 161, 0.2);
+  --color-past: #d5d5d5;
+  --color-future: #111111;
+  --color-weekday: #000000;
+  --color-chevron: #cccccc;
+  --color-page: #ffffff;
+  --color-heading: #000000;
+  --color-border-hover: #ededed;
+  --font-family-sans: 'Lato', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
