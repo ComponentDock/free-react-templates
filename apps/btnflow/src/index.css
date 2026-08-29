@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-blue: #4f81c7;
+  --color-blue-shadow: #3d73c0;
+  --color-indigo: #667eea;
+  --color-indigo-shadow: #5a6fd6;
+  --color-purple: #9b59b6;
+  --color-purple-shadow: #8e44ad;
+  --color-pink: #ff78ae;
+  --color-pink-shadow: #ff5f9f;
+  --color-red: #e74c3c;
+  --color-red-shadow: #c0392b;
+  --color-orange: #f39c12;
+  --color-orange-shadow: #d68910;
+  --color-yellow: #f1c40f;
+  --color-yellow-shadow: #d4ac0d;
+  --color-green: #2ecc71;
+  --color-green-shadow: #27ae60;
+  --color-teal: #1abc9c;
+  --color-teal-shadow: #16a085;
+  --color-cyan: #3498db;
+  --color-cyan-shadow: #2980b9;
+  --color-facebook: #3b5998;
+  --color-twitter: #1da1f2;
+  --color-google: #db4437;
+  --color-github: #333333;
+  --color-linkedin: #0077b5;
+  --color-instagram: #e4405f;
+  --color-youtube: #ff0000;
+  --color-dribbble: #ea4c89;
+  --color-dark: #343a40;
+  --color-body: #212529;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
