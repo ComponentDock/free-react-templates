@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-year: #7e0cf5;
+  --color-year-light: rgba(255, 255, 255, 0.2);
+  --color-month: #983df7;
+  --color-month-light: rgba(255, 255, 255, 0.2);
+  --color-day: #a555f8;
+  --color-day-light: rgba(255, 255, 255, 0.2);
+  --color-strip-text: rgba(255, 255, 255, 0.3);
+  --color-page: #f4f4f8;
+  --color-heading: #1a1a2e;
+  --color-body: #4a4a5a;
+  --color-accent: #7e0cf5;
+  --color-card: #ffffff;
+  --color-border: #e5e7eb;
+  --font-family-sans: 'Lato', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
