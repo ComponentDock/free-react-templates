@@ -1,0 +1,134 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-btnfuse-purple: #6c5ce7;
+  --color-btnfuse-purple-hover: #4430e0;
+  --color-btnfuse-teal: #1ee3cf;
+  --color-btnfuse-teal-hover: #17b7a7;
+  --color-btnfuse-pink: #ff00c8;
+  --color-btnfuse-pink-hover: #cc00a0;
+  --color-btnfuse-green: #a1dd70;
+  --color-btnfuse-green-hover: #86d347;
+  --color-btnfuse-heading: #212529;
+  --color-btnfuse-white: #ffffff;
+  --font-btnfuse: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-btnfuse);
+    font-size: 15px;
+  }
+}
+
+/* Stat card button base */
+.stat-card {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0px 7px 15px -13px rgba(0, 0, 0, 0.17);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.stat-card:hover {
+  outline: none;
+}
+
+/* Icon panel */
+.stat-icon {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.stat-icon i,
+.stat-icon svg {
+  font-size: 30px;
+  color: #fff;
+}
+
+/* Text area */
+.stat-text {
+  width: calc(100% - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px 16px;
+  text-align: right;
+}
+.stat-text h4 {
+  font-size: 22px;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+.stat-text span {
+  font-size: 14px;
+}
+
+/* White card variant */
+.stat-card-white {
+  background: #fff;
+  color: #000;
+}
+.stat-card-white .stat-text span {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Colored card variants */
+.stat-card-purple {
+  background: #6c5ce7;
+  color: #fff;
+}
+.stat-card-purple .stat-text span {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.stat-card-teal {
+  background: #1ee3cf;
+  color: #fff;
+}
+.stat-card-teal .stat-text span {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.stat-card-pink {
+  background: #ff00c8;
+  color: #fff;
+}
+.stat-card-pink .stat-text span {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.stat-card-green {
+  background: #a1dd70;
+  color: #fff;
+}
+.stat-card-green .stat-text span {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Icon panel color classes */
+.icon-purple {
+  background: #6c5ce7;
+}
+.icon-teal {
+  background: #1ee3cf;
+}
+.icon-pink {
+  background: #ff00c8;
+}
+.icon-green {
+  background: #a1dd70;
+}
