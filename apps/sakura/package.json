@@ -2,6 +2,7 @@
   "name": "@free-react-templates/sakura",
   "private": true,
   "version": "0.1.0",
+  "homepage": "https://sakura.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
