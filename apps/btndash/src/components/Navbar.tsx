@@ -37,7 +37,7 @@ export function Navbar() {
             <Layers className="h-5 w-5" />
           </div>
           <span className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-            BtnKit
+            BtnDash
           </span>
         </a>
 

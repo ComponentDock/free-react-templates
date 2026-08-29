@@ -8,7 +8,7 @@ export function Hero() {
           Modern Bootstrap Button Library
         </span>
         <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl dark:text-white">
-          BtnKit — Modern Bootstrap Button Showcase
+          BtnDash — Modern Bootstrap Button Showcase
         </h1>
         <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
           A comprehensive collection of Bootstrap-styled buttons with solid, outline, pill, square,
