@@ -1,0 +1,234 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-btnmatrix-primary: #3e64ff;
+  --color-btnmatrix-primary-hover: #002ad7;
+  --color-btnmatrix-secondary: #5edfff;
+  --color-btnmatrix-secondary-hover: #00c6f7;
+  --color-btnmatrix-tertiary: #ff4893;
+  --color-btnmatrix-tertiary-hover: #e1005c;
+  --color-btnmatrix-quarternary: #01d28e;
+  --color-btnmatrix-quarternary-hover: #016c49;
+  --color-btnmatrix-facebook: #4f69a2;
+  --color-btnmatrix-twitter: #69b6f0;
+  --color-btnmatrix-linkedin: #2884ba;
+  --color-btnmatrix-pinterest: #d03940;
+  --color-btnmatrix-dribbble: #ea6294;
+  --color-btnmatrix-heading: #212529;
+  --color-btnmatrix-white: #ffffff;
+  --font-btnmatrix: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-btnmatrix);
+    font-size: 15px;
+  }
+}
+
+/* Button base */
+.btn-matrix {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.btn-matrix:focus {
+  outline: none;
+}
+
+/* Primary solid */
+.btn-matrix-primary {
+  background: var(--color-btnmatrix-primary);
+  color: #fff;
+  border-color: var(--color-btnmatrix-primary);
+}
+.btn-matrix-primary:hover {
+  border-color: var(--color-btnmatrix-primary-hover);
+}
+
+/* Primary outline */
+.btn-matrix-outline-primary {
+  background: #fff;
+  color: var(--color-btnmatrix-primary);
+  border-color: var(--color-btnmatrix-primary);
+}
+.btn-matrix-outline-primary:hover {
+  background: var(--color-btnmatrix-primary);
+  color: #fff;
+  border-color: var(--color-btnmatrix-primary);
+}
+
+/* Secondary solid */
+.btn-matrix-secondary {
+  background: var(--color-btnmatrix-secondary);
+  color: #fff;
+  border-color: var(--color-btnmatrix-secondary);
+}
+.btn-matrix-secondary:hover {
+  border-color: var(--color-btnmatrix-secondary-hover);
+}
+
+/* Secondary outline */
+.btn-matrix-outline-secondary {
+  background: #fff;
+  color: var(--color-btnmatrix-secondary);
+  border-color: var(--color-btnmatrix-secondary);
+}
+.btn-matrix-outline-secondary:hover {
+  background: var(--color-btnmatrix-secondary);
+  color: #fff;
+  border-color: var(--color-btnmatrix-secondary);
+}
+
+/* Tertiary solid */
+.btn-matrix-tertiary {
+  background: var(--color-btnmatrix-tertiary);
+  color: #fff;
+  border-color: var(--color-btnmatrix-tertiary);
+}
+.btn-matrix-tertiary:hover {
+  border-color: var(--color-btnmatrix-tertiary-hover);
+}
+
+/* Tertiary outline */
+.btn-matrix-outline-tertiary {
+  background: #fff;
+  color: var(--color-btnmatrix-tertiary);
+  border-color: var(--color-btnmatrix-tertiary);
+}
+.btn-matrix-outline-tertiary:hover {
+  background: var(--color-btnmatrix-tertiary);
+  color: #fff;
+  border-color: var(--color-btnmatrix-tertiary);
+}
+
+/* Quarternary solid */
+.btn-matrix-quarternary {
+  background: var(--color-btnmatrix-quarternary);
+  color: #fff;
+  border-color: var(--color-btnmatrix-quarternary);
+}
+.btn-matrix-quarternary:hover {
+  border-color: var(--color-btnmatrix-quarternary-hover);
+}
+
+/* Quarternary outline */
+.btn-matrix-outline-quarternary {
+  background: #fff;
+  color: var(--color-btnmatrix-quarternary);
+  border-color: var(--color-btnmatrix-quarternary);
+}
+.btn-matrix-outline-quarternary:hover {
+  background: var(--color-btnmatrix-quarternary);
+  color: #fff;
+  border-color: var(--color-btnmatrix-quarternary);
+}
+
+/* Round variant */
+.btn-matrix-round {
+  border-radius: 40px;
+}
+
+/* Link variant */
+.btn-matrix-link {
+  background: transparent;
+  border: none;
+  color: #000;
+  padding-left: 0.5rem;
+}
+.btn-matrix-link:hover {
+  text-decoration: underline;
+}
+
+/* Social brand buttons */
+.btn-matrix-facebook {
+  background: var(--color-btnmatrix-facebook);
+  color: #fff;
+  border-color: var(--color-btnmatrix-facebook);
+}
+.btn-matrix-facebook:hover {
+  color: var(--color-btnmatrix-facebook);
+}
+.btn-matrix-outline.facebook:hover {
+  background: var(--color-btnmatrix-facebook);
+  color: #fff;
+  border-color: var(--color-btnmatrix-facebook);
+}
+
+.btn-matrix-twitter {
+  background: var(--color-btnmatrix-twitter);
+  color: #fff;
+  border-color: var(--color-btnmatrix-twitter);
+}
+.btn-matrix-twitter:hover {
+  color: var(--color-btnmatrix-twitter);
+}
+.btn-matrix-outline.twitter:hover {
+  background: var(--color-btnmatrix-twitter);
+  color: #fff;
+  border-color: var(--color-btnmatrix-twitter);
+}
+
+.btn-matrix-linkedin {
+  background: var(--color-btnmatrix-linkedin);
+  color: #fff;
+  border-color: var(--color-btnmatrix-linkedin);
+}
+.btn-matrix-linkedin:hover {
+  color: var(--color-btnmatrix-linkedin);
+}
+.btn-matrix-outline.linkedin:hover {
+  background: var(--color-btnmatrix-linkedin);
+  color: #fff;
+  border-color: var(--color-btnmatrix-linkedin);
+}
+
+.btn-matrix-pinterest {
+  background: var(--color-btnmatrix-pinterest);
+  color: #fff;
+  border-color: var(--color-btnmatrix-pinterest);
+}
+.btn-matrix-pinterest:hover {
+  color: var(--color-btnmatrix-pinterest);
+}
+.btn-matrix-outline.pinterest:hover {
+  background: var(--color-btnmatrix-pinterest);
+  color: #fff;
+  border-color: var(--color-btnmatrix-pinterest);
+}
+
+.btn-matrix-dribbble {
+  background: var(--color-btnmatrix-dribbble);
+  color: #fff;
+  border-color: var(--color-btnmatrix-dribbble);
+}
+.btn-matrix-dribbble:hover {
+  color: var(--color-btnmatrix-dribbble);
+}
+.btn-matrix-outline.dribbble:hover {
+  background: var(--color-btnmatrix-dribbble);
+  color: #fff;
+  border-color: var(--color-btnmatrix-dribbble);
+}
+
+/* Outline variant for social buttons */
+.btn-matrix-outline-social {
+  background: transparent;
+}

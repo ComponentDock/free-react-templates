@@ -6,73 +6,49 @@ Recreation of ColorLib [Bootstrap Buttons 20](https://colorlib.com/wp/template/b
 Design category: UI Components & Buttons Showroom.
 Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide Icons (`lucide-react`).
 
-## Design Tokens (Extracted from Reference)
+## Requirements
 
-- **Font Family**: `Poppins`, sans-serif
-- **Primary Color**: `#007bff` (Blue)
-- **Secondary Color**: `#6c757d` (Gray)
-- **Tertiary Color**: `#ff4893` (Pink)
-- **Quarternary Color**: `#01d28e` (Green / Emerald)
-- **Brand Social Colors**:
-  - Facebook: `#4f69a2`
-  - Twitter: `#69b6f0`
-  - LinkedIn: `#2884ba`
-  - Pinterest: `#d03940`
-  - Dribbble: `#ea6294`
-- **Button Radius**: `5px` (default), `40px` (`btn-round`), `0px` (square)
-- **Spacing / Padding**: `7em` section vertical padding (`py-28`), button padding (`px-4 py-3`)
-- **Shadows**: Soft drop shadows (`box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12)`)
+### Requirement: Style showcase section
 
-## Section Structure & Requirements
+The app SHALL display a "Pick Your Style" section with default primary buttons (text, icon, icon-only) and outline primary buttons (text, icon, icon-only).
 
-1. **Header / Showcase Intro (`#buttons`)**
-   - Title: "Button #10" / "BtnMatrix Showcase"
-   - Subheading: "Pick Your Style"
-   - Default primary buttons with/without icons and icon-only.
-   - Outline primary buttons with/without icons and icon-only.
-2. **Color Variants Section**
-   - Subheading: "Pick Your Color"
-   - Solid and outline buttons across Primary, Secondary, Tertiary (`#ff4893`), and Quarternary (`#01d28e`).
-3. **Social Action Grid**
-   - 4-column layout showcasing Twitter, Facebook, and Dribbble buttons across solid, outline, rounded, and outline-rounded variants.
-4. **Social Brand Buttons Section**
-   - Subheading: "Social Buttons"
-   - Rows for Facebook, Twitter, LinkedIn, Pinterest, Dribbble featuring icon-only, round, outline, badge counts (e.g. "Share - 8.2k", "Connect with Twitter", "Pin it - 1k").
-5. **Footer**
-   - Branded footer linking `https://www.componentdock.com/` ("Component Dock").
+#### Scenario: User views style options
 
-## Gherkin Requirements & Scenarios
+- **WHEN** the BtnMatrix app is loaded
+- **THEN** the user sees "Pick Your Style" heading and default primary and outline primary buttons with text, icons, and icon-only states
 
-### Feature: BtnMatrix Component Showcase
+### Requirement: Color variants section
 
-Scenario: User views style options
-Given the BtnMatrix app is loaded
-When the user views the "Pick Your Style" section
-Then they should see default primary and outline primary buttons with text, icons, and icon-only states
+The app SHALL display a "Pick Your Color" section with solid and outline buttons for Primary, Secondary, Tertiary, and Quarternary colors.
 
-Scenario: User views color variants
-Given the BtnMatrix app is loaded
-When the user views the "Pick Your Color" section
-Then they should see buttons for Primary, Secondary, Tertiary, and Quarternary in both solid and outline styles
+#### Scenario: User views color variants
 
-Scenario: User interacts with social grid
-Given the BtnMatrix app is loaded
-When the user views the social action grid
-Then they should see Twitter, Facebook, and Dribbble buttons in standard, outline, and rounded configurations
+- **WHEN** the BtnMatrix app is loaded
+- **THEN** the user sees "Pick Your Color" heading and buttons for Primary, Secondary, Tertiary, and Quarternary in both solid and outline styles
 
-Scenario: User views social badges
-Given the BtnMatrix app is loaded
-When the user views the social buttons section
-Then they should see brand buttons with counts and share actions
+### Requirement: Social action grid
 
-Scenario: User views footer attribution
-Given the BtnMatrix app is loaded
-When the user scrolls to the footer
-Then they should see a link pointing to https://www.componentdock.com/
+The app SHALL display a 4-column social action grid with Twitter, Facebook, and Dribbble buttons in standard, outline, rounded, and outline-rounded configurations.
 
-## Verification Checklist
+#### Scenario: User interacts with social grid
 
-- [ ] Spec validates (`npm run spec:validate`)
-- [ ] Tests cover all requirements at 100%
-- [ ] Footer links Component Dock
-- [ ] Design tokens correctly applied via Tailwind
+- **WHEN** the BtnMatrix app is loaded
+- **THEN** the user sees Twitter, Facebook, and Dribbble buttons in 4 variant columns
+
+### Requirement: Social brand buttons
+
+The app SHALL display a "Social Buttons" section with rows for Facebook, Twitter, LinkedIn, Pinterest, and Dribbble featuring icon-only, round, outline, outline-round, and badge count variants.
+
+#### Scenario: User views social badges
+
+- **WHEN** the BtnMatrix app is loaded
+- **THEN** the user sees "Social Buttons" heading and brand buttons with counts and share actions
+
+### Requirement: Footer attribution
+
+The app SHALL display a footer linking to https://www.componentdock.com/.
+
+#### Scenario: User views footer attribution
+
+- **WHEN** the user scrolls to the footer
+- **THEN** they see a link pointing to https://www.componentdock.com/
