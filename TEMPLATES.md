@@ -679,7 +679,7 @@
 - [x] **Bootstrap Buttons 16** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-16/) · [buttonforge](https://buttonforge.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-16.jpg)
 - [x] **Bootstrap Buttons 17** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-17/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-17.jpg) · [btnflow](https://free-react-templates-btnflow.surge.sh)
 - [x] **Bootstrap Buttons 18** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-18/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-18.jpg) · [paddle](https://paddle.free.componentdock.com)
-- [~] **Bootstrap Buttons 19** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-19/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-19.jpg)
+- [x] **Bootstrap Buttons 19** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-19/) · [btnfuse](https://btnfuse.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-19.jpg)
 - [ ] **Bootstrap Buttons 20** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-20.jpg)
 
 ## Bootstrap Calendars (20)
