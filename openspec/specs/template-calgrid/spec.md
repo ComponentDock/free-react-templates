@@ -1,53 +1,66 @@
-# Template: CalGrid (Calendar & Date Picker)
+# Spec: CalGrid (Calendar & Date Picker)
 
 ## Purpose
 
-- **Recreation of:** ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-12/`)
-- **Preview URL:** `https://preview.colorlib.com/theme/bootstrap/calendar-12/`
-- **Stack:** Vite, React 19, Tailwind CSS 4, TypeScript, Lucide Icons
+Recreation of ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-12/`), a clean calendar date picker template featuring a centered dual-calendar grid layout with month navigation and a minimal footer.
 
-## Design tokens
+## Requirements
 
-- **Colors:**
-  - Background: `#ffffff` (White)
-  - Text / Paragraphs: `#b3b3b3` (Muted gray)
-  - Headings / UI text: `#000000` / `#212529`
-  - Input border / focus: standard clean borders with subtle shadow / focus ring
-- **Typography:**
-  - Font family: `"Roboto", sans-serif`
-  - Heading size: `20px` (`text-xl font-medium`)
-- **Spacing / Layout:**
-  - Centered vertical layout (`content`: `7rem` padding top/bottom)
-  - Single column card / form container (`col-lg-3` centered via flex/grid)
+### Requirement: Centered page layout with dual calendar grids
 
-## Gherkin Requirements & Scenarios
+The CalGrid page SHALL display a centered vertical layout with white background, a prominent title heading, and two calendar instances displayed side by side on desktop and stacked on mobile.
 
-### Feature: CalGrid Date Picker Interface
+#### Scenario: Page load renders layout
 
-As a user visiting the CalGrid date picker template, I want to see a clean, centered date picker input and calendar interface so that I can easily select dates.
+- **WHEN** the user visits the CalGrid page
+- **THEN** the page shows a centered heading and two calendar grids
 
-#### Scenario: Page load displays title and date input
+### Requirement: Calendar grid with month header and weekday row
 
-- **Given** I am on the CalGrid homepage
-- **Then** I should see the heading "Calendar Grid" or similar clean title
-- **And** I should see an interactive date picker input field with placeholder "Pick A Date"
+Each calendar instance SHALL display a month/year header in uppercase bold text, flanked by previous/next navigation chevron buttons, with a weekday abbreviations row (Sun–Sat) and a 7-column date grid.
 
-#### Scenario: Selecting a date opens calendar popup or updates input
+#### Scenario: Calendar renders correct day grid
 
-- **Given** I click on the date picker input field
-- **Then** a calendar popup/dropdown should appear allowing date selection
-- **And** selecting a date should populate the input field with the formatted date
+- **WHEN** the calendar displays a given month
+- **THEN** it shows the correct number of day buttons with empty cells before the 1st
 
-#### Scenario: Footer includes Component Dock attribution
+### Requirement: Month navigation with year rollover
 
-- **Given** I scroll to the bottom of the page
-- **Then** I should see a footer linking to `https://www.componentdock.com/`
+Clicking the previous or next button SHALL navigate to the prior or subsequent month respectively, correctly handling year rollover (December → January increments the year).
 
-## Verification Checklist
+#### Scenario: Navigate to next month
 
-- [ ] TypeScript strict check passes
-- [ ] Linter (oxlint / eslint) passes
-- [ ] 100% test coverage on all components/hooks
-- [ ] Build succeeds with Vite
-- [ ] Footer links to Component Dock
-- [ ] CNAME points to `calgrid.free.componentdock.com`
+- **WHEN** the user clicks the "next month" button
+- **THEN** the calendar displays the subsequent month with correct day positions
+
+#### Scenario: Year rollover from December to January
+
+- **WHEN** the calendar shows December and the user clicks "next month"
+- **THEN** the calendar displays January of the following year
+
+### Requirement: Today highlighting with accent color
+
+Today's date SHALL be visually highlighted with the accent background color and white text, and its aria-label SHALL include "(today)".
+
+#### Scenario: Today is highlighted
+
+- **WHEN** the calendar renders the current month
+- **THEN** today's date button has the accent background and "(today)" in its label
+
+### Requirement: Accessible date buttons and navigation
+
+All date buttons SHALL have descriptive aria-labels including day number, month, year, and "(today)" for the current date. Navigation buttons SHALL have aria-labels distinguishing them per calendar instance.
+
+#### Scenario: Date buttons have accessible labels
+
+- **WHEN** the calendar renders a date button
+- **THEN** its aria-label includes the day number, month name, and year
+
+### Requirement: Component Dock footer
+
+The template footer SHALL link to `https://www.componentdock.com/` branded as "Component Dock" with a message like "More templates at Component Dock".
+
+#### Scenario: Footer branding
+
+- **WHEN** the page footer is rendered
+- **THEN** it contains a link to componentdock.com with rel="noopener noreferrer"
