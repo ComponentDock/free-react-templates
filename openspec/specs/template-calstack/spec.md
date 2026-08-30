@@ -1,49 +1,44 @@
-# Template: Calstack (Calendar & Scheduling)
+# Spec: Calstack (Calendar 15 Recreation)
 
 ## Purpose
 
-Recreation of ColorLib `calendar-15` (Calendar V15, a calendar range picker and event scheduling interface).
+Recreation of ColorLib Calendar 15 (`https://colorlib.com/wp/template/calendar-15/`), an interactive calendar date picker and event scheduling interface featuring dual month grids with navigation and a minimal branded footer.
 
-- **Preview URL**: `https://preview.colorlib.com/theme/calendar-15/`
-- **Stack**: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide React.
+## Requirements
 
-## Design Tokens
+### Requirement: Interactive calendar grid with month navigation
 
-- **Brand Colors**: Primary indigo/violet (`#6366f1` / `indigo-600`), neutral slate background (`#f8fafc` / `slate-50`), card background (`#ffffff`), dark slate text (`#1e293b` / `slate-800`), muted gray (`#64748b` / `slate-500`).
-- **Font Family**: Inter / System Sans-serif (`font-sans`).
-- **Button Shapes**: Rounded-xl, smooth transition, subtle shadow (`shadow-sm hover:shadow-md`).
-- **Section Backgrounds**: Clean white container cards centered on a light neutral gradient background.
+Each calendar instance SHALL display a month/year header flanked by previous and next navigation buttons, a weekday abbreviations row (Sun Mon Tue Wed Thu Fri Sat), and a 7-column date grid with correct alignment. Today's date SHALL be highlighted with an accent background.
 
-## Gherkin Requirements & Scenarios
+#### Scenario: Calendar renders correct day grid
 
-### Feature: Interactive Calendar Range Picker
+- **WHEN** the calendar displays a given month
+- **THEN** it shows the correct number of day buttons with empty cells before the 1st
 
-As a user visiting the Calstack scheduling interface, I want to pick date ranges and view events so I can plan my schedule.
+#### Scenario: Month navigation with year rollover
 
-#### Scenario: View month calendar grid
+- **WHEN** the user clicks the previous or next button at the boundary of January/December
+- **THEN** the year increments or decrements accordingly
 
-- **Given** the user opens the calendar view
-- **Then** the current month grid is displayed with days of the week and dates correctly aligned
-- **And** interactive controls allow navigating to previous and next months
+#### Scenario: Today is highlighted
 
-#### Scenario: Select a date range
+- **WHEN** the calendar renders the current month
+- **THEN** today's date button has an accent background and includes "(today)" in its accessible label
 
-- **Given** the calendar grid is displayed
-- **And** the user clicks a start date and an end date
-- **Then** all dates within the selected range are highlighted as active/selected
-- **And** the selected range summary is updated in the scheduling panel
+### Requirement: Dual calendar layout
 
-#### Scenario: Add or schedule an event
+The page SHALL display two side-by-side calendar instances in a responsive grid that stacks on mobile.
 
-- **Given** a date range is selected
-- **And** the user enters event title and details in the side panel
-- **And** clicks "Schedule Event"
-- **Then** the event is added to the upcoming schedule list
-- **And** a success confirmation message appears
+#### Scenario: Both calendars render with the same initial month
 
-## Verification Checklist
+- **WHEN** the page loads
+- **THEN** both calendars show the current month and year
 
-- [ ] Responsive layout across mobile, tablet, and desktop viewports.
-- [ ] Calendar grid correctly computes leap years and month start days.
-- [ ] Component Dock footer link present (`https://www.componentdock.com/`).
-- [ ] 100% test coverage with Vitest.
+### Requirement: Footer with Component Dock branding
+
+The footer SHALL display a link to `https://www.componentdock.com/` branded as "Component Dock". No references to ColorLib SHALL appear in the application code.
+
+#### Scenario: Footer renders Component Dock link
+
+- **WHEN** the user views the footer
+- **THEN** it contains a link to componentdock.com branded as "Component Dock"
