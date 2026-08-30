@@ -15,7 +15,7 @@ fi
 
 echo "==> verify-app: ${APP} (per-app gate)"
 npm run typecheck --workspace "${PKG}"
-npm run lint
+npm run lint -- "apps/${APP}/src"
 # knip + fallow are whole-repo checks that may fail on pre-existing issues
 # in other apps. They still run in CI (merge gate + nightly sweep).
 # npm run knip
