@@ -699,7 +699,7 @@
 - [x] **Calendar 13** — [colorlib](https://colorlib.com/wp/template/calendar-13/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-13.jpg) · [schedura](https://schedura.free.componentdock.com)
 - [x] **Calendar 14** — [colorlib](https://colorlib.com/wp/template/calendar-14/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-14.jpg) · [caldesk](https://free-react-templates-caldesk.surge.sh)
 - [x] **Calendar 15** — [colorlib](https://colorlib.com/wp/template/calendar-15/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-15.jpg) · [calstack](https://free-react-templates-calstack.surge.sh)
-- [~] **Calendar 16** — [colorlib](https://colorlib.com/wp/template/calendar-16/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-16.jpg)
+- [x] **Calendar 16** — [colorlib](https://colorlib.com/wp/template/calendar-16/) · [lunar](https://lunar.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-16.jpg)
 - [ ] **Calendar 17** — [colorlib](https://colorlib.com/wp/template/calendar-17/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-17.jpg)
 - [ ] **Calendar 18** — [colorlib](https://colorlib.com/wp/template/calendar-18/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-18.jpg)
 - [ ] **Calendar 19** — [colorlib](https://colorlib.com/wp/template/calendar-19/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-19.jpg)
