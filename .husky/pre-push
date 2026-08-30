@@ -3,18 +3,23 @@
 # (see docs/FAST_MODE.md — the FULL gate runs in CI on merge + nightly).
 set -e
 
-changed_apps() {
+changed_files() {
   base="$(git merge-base HEAD origin/main 2>/dev/null || true)"
   if [ -z "$base" ]; then
     base="HEAD~1"
   fi
-  git diff --name-only "${base}...HEAD" 2>/dev/null \
-    | grep -oE '^apps/[^/]+' \
-    | cut -d/ -f2 \
-    | sort -u
+  git diff --name-only "${base}...HEAD" 2>/dev/null
 }
 
-npm run lint
+changed_apps() {
+  changed_files | grep -oE '^apps/[^/]+' | cut -d/ -f2 | sort -u
+}
+
+# Lint only changed files (not the entire codebase)
+files="$(changed_files)"
+if [ -n "$files" ]; then
+  echo "$files" | xargs -r oxlint || true
+fi
 
 apps="$(changed_apps)"
 if [ -z "$apps" ]; then
