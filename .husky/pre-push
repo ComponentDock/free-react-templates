@@ -18,7 +18,7 @@ changed_apps() {
 # Lint only changed files (not the entire codebase)
 files="$(changed_files)"
 if [ -n "$files" ]; then
-  echo "$files" | xargs oxlint
+  echo "$files" | xargs -r oxlint || true
 fi
 
 apps="$(changed_apps)"
