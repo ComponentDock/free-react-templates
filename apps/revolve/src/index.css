@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #007bff;
+  --color-brand-dark: #0056b3;
+  --color-ink: #1a1a2e;
+  --color-ink-dark: #0f0f1a;
+  --font-family-sans: 'Poppins', sans-serif;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
