@@ -1,62 +1,83 @@
-# Template: Calio (Calendar)
+# Spec: Calio — Multi-View Calendar Template
 
-## Purpose
-
-Recreation of ColorLib calendar-12 (preview URL: https://colorlib.com/wp/theme/calendar-12/), built with Vite, React 19, Tailwind CSS 4, and TypeScript. Styled as a clean, elegant date picker and calendar scheduling interface widget with interactive date selection, month navigation, and event scheduling preview. Footer includes attribution link to https://www.componentdock.com/.
+**Source:** Recreation of ColorLib Calendar V20 (https://colorlib.com/wp/template/calendar-20/)
+**Preview:** https://preview.colorlib.com/theme/bootstrap/calendar-20/
+**Name:** Calio (new, original)
 
 ## Design Tokens
 
-- **Colors**:
-  - Primary / Accent: `#3b82f6` (Blue-500) / `#2563eb` (Blue-600)
-  - Background: `#f8fafc` (Slate-50) container on `#0f172a` (Slate-900) dark page background or clean minimalist white/slate card interface.
-  - Text: `#1e293b` (Slate-800) primary, `#64748b` (Slate-500) muted.
-  - Highlights / Selected: `#3b82f6` with white text, hover states in `#eff6ff` (Blue-50).
-- **Typography**:
-  - Font Family: `Inter`, system-ui, sans-serif.
-  - Headings: Bold font weights (700), clean sans-serif.
-- **Radii & Shadows**:
-  - Container Rounded: `rounded-2xl` (16px) with soft shadow `shadow-xl`.
-  - Buttons / Inputs: `rounded-lg` (8px).
-- **Layout**:
-  - Centered modal/card wrapper on responsive background.
-  - Header with month/year switcher and arrows.
-  - Grid layout for days of the week and date numbers.
-  - Bottom panel or sidebar for selected date events/details.
+- **Background:** #efefef (page), #fff (calendar container)
+- **Font:** Roboto (300, 400, 500, 700)
+- **Container shadow:** 0 15px 30px 0 rgba(0,0,0,0.2)
+- **Brand/accent:** #007bff (links, active states)
+- **Text:** #212529 (primary), #666 (secondary)
+- **Today highlight:** #007bff background on current day cell
+- **Calendar layout:** Fixed-position, fills viewport with 20px margins
 
-## Requirements & Scenarios
+## Sections (in order)
 
-### Requirement 1: Responsive Calendar Container & Header
+1. **Toolbar** — prev/next/today buttons (left), month/year title (center), view toggle buttons (right: Month, Week, Day, List)
+2. **Month View** (default) — 7-column grid, weekday headers (Sun–Sat), day cells with event bars, "+N more" overflow
+3. **Week View** — 7-column time grid, hourly rows (00:00–23:00), event blocks positioned by time
+4. **Day View** — single-column time grid, hourly rows, event blocks positioned by time
+5. **List View** — chronological list of events for the current week, grouped by day
+6. **Footer** — "Made with Component Dock" link (https://www.componentdock.com/)
 
-- **Scenario**: User views the calendar interface on desktop or mobile.
-- **Given**: The Calio calendar widget is loaded.
-- **When**: The user observes the header.
-- **Then**: It displays the current month and year (e.g., "January 2026") with previous/next navigation buttons.
+## Scenarios
 
-### Requirement 2: Interactive Date Grid
+### G1: Renders calendar region
 
-- **Scenario**: User interacts with days of the month.
-- **Given**: The calendar grid is visible for the active month.
-- **When**: The user clicks on any date number.
-- **Then**: The date is selected, highlighted in primary blue, and any scheduled events or reminder notes for that date are displayed in the details panel.
+- The calendar container has role="region" with aria-label="Calendar"
 
-### Requirement 3: Event Scheduling / Note Input
+### G2: Default view is month
 
-- **Scenario**: User adds a note or event to a selected date.
-- **Given**: A date is currently selected.
-- **When**: The user types an event title in the input box and clicks "Add Event".
-- **Then**: The event appears in the list associated with that date and persists during the session.
+- On initial render, the month grid is visible with weekday headers
 
-### Requirement 4: Footer Attribution
+### G3: Switch views
 
-- **Scenario**: User checks the footer of the application.
-- **Given**: The page is rendered.
-- **When**: The user scrolls to the footer.
-- **Then**: It displays the copyright notice and a required link to `https://www.componentdock.com/`.
+- Clicking Month/Week/Day/List buttons switches the active view
+- The toolbar title updates to reflect the current view
 
-## Verification Checklist
+### G4: Navigate months
 
-- [ ] Spec validation (`npm run spec:validate`) passes.
-- [ ] All Gherkin requirements covered by unit/component tests.
-- [ ] 100% test coverage (`npm run test:coverage`).
-- [ ] Component Dock footer link present.
-- [ ] Responsive UI verified on mobile and desktop viewports.
+- Prev/Next buttons change the displayed month
+- Today button returns to the current month
+
+### G5: Navigate weeks
+
+- In week view, Prev/Next change the displayed week
+- Today button returns to the current week
+
+### G6: Navigate days
+
+- In day view, Prev/Next change the displayed day
+- Today button returns to today
+
+### G7: Display events in month view
+
+- Events appear as colored bars on their respective days
+- Multi-day events span across days
+- "+N more" link appears when events exceed the visible limit
+
+### G8: Display events in week/day view
+
+- Events appear as positioned blocks in the time grid
+- Timed events show with correct vertical position
+
+### G9: Display events in list view
+
+- Events are listed chronologically, grouped by day
+
+### G10: Footer
+
+- Footer contains a link to https://www.componentdock.com/
+
+### G11: Event click opens URL
+
+- Clicking an event with a URL opens it in a new tab
+
+### G12: Accessibility
+
+- Calendar region has aria-label
+- Toolbar buttons have aria-labels
+- View switcher buttons have aria-labels
