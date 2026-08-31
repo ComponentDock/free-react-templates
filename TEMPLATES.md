@@ -703,7 +703,7 @@
 - [x] **Calendar 17** — [colorlib](https://colorlib.com/wp/template/calendar-17/) · [kairos](https://kairos.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-17.jpg)
 - [x] **Calendar 18** — [colorlib](https://colorlib.com/wp/template/calendar-18/) · [dyad](https://dyad.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-18.jpg)
 - [x] **Calendar 19** — [colorlib](https://colorlib.com/wp/template/calendar-19/) · [timescape](https://timescape.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-19.jpg)
-- [~] **Calendar 20** — [colorlib](https://colorlib.com/wp/template/calendar-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-20.jpg)
+- [x] **Calendar 20** — [colorlib](https://colorlib.com/wp/template/calendar-20/) · [calio](https://calio.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-20.jpg)
 
 ## Bootstrap Carousels (20)
 
