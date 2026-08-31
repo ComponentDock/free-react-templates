@@ -709,7 +709,7 @@
 
 - [x] **Carousel 01** — [colorlib](https://colorlib.com/wp/template/carousel-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-01.jpg) · [revolve](https://free-react-templates-revolve.surge.sh)
 - [x] **Carousel 02** — [colorlib](https://colorlib.com/wp/template/carousel-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-02.jpg) · [lattice](https://lattice.free.componentdock.com)
-- [ ] **Carousel 03** — [colorlib](https://colorlib.com/wp/template/carousel-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-03.jpg)
+- [~] **Carousel 03** — [colorlib](https://colorlib.com/wp/template/carousel-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-03.jpg)
 - [ ] **Carousel 04** — [colorlib](https://colorlib.com/wp/template/carousel-04/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-04.jpg)
 - [ ] **Carousel 05** — [colorlib](https://colorlib.com/wp/template/carousel-05/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-05.jpg)
 - [ ] **Carousel 06** — [colorlib](https://colorlib.com/wp/template/carousel-06/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-06.jpg)
