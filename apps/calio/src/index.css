@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #007bff;
+  --color-page-bg: #efefef;
+  --color-text: #212529;
+  --color-text-muted: #666;
+  --color-grid-border: #e5e7eb;
+  --color-today-bg: #007bff;
+  --color-event-default: #007bff;
+  --color-event-accent: #28a745;
+  --color-event-warning: #ffc107;
+  --color-event-danger: #dc3545;
+  --font-roboto: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  font-family: var(--font-roboto);
+  background-color: var(--color-page-bg);
+  color: var(--color-text);
+  margin: 0;
+}
