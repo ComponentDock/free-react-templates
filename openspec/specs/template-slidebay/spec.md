@@ -19,40 +19,45 @@ Recreation of ColorLib **Carousel 05** (`https://colorlib.com/wp/template/carous
   - Smooth slide transition wrappers with interactive dot/arrow navigation
   - Clean feature grids and responsive navigation bar
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
-### Feature 1: Hero Carousel Section
+### Requirement: Hero Carousel Section
 
-- **Scenario:** User views the hero carousel
-  - **Given** the user visits the SlideBay home page
-  - **When** the page loads
-  - **Then** the primary carousel banner is visible with headline, subtitle, and CTA buttons
-  - **And** next/previous arrow controls and pagination dots allow switching slides
+Users SHALL see a primary hero carousel banner with headline, subtitle, and CTA buttons, and interactive navigation controls.
 
-### Feature 2: Interactive Feature Showcase
+#### Scenario: User views the hero carousel
 
-- **Scenario:** User browses core features
-  - **Given** the user scrolls to the feature section
-  - **When** feature cards are displayed
-  - **Then** each card highlights a distinct capability with icon, title, and description
+- **Given** the user visits the SlideBay home page
+- **When** the page loads
+- **Then** the primary carousel banner is visible with headline, subtitle, and CTA buttons
+- **And** next/previous arrow controls and pagination dots allow switching slides
 
-### Feature 3: Testimonials / Carousel Display
+### Requirement: Interactive Feature Showcase
 
-- **Scenario:** User interacts with the testimonial slider
-  - **Given** the user views the testimonials section
-  - **When** clicking pagination or swiping through slides
-  - **Then** testimonial quotes and author details update smoothly
+Users SHALL browse core features in a responsive grid.
 
-### Feature 4: Call to Action & Footer
+#### Scenario: User browses core features
 
-- **Scenario:** User reaches the footer
-  - **Given** the user scrolls to the bottom of the page
-  - **When** the footer is rendered
-  - **Then** navigation links, copyright, and the mandatory "Component Dock" link (`https://www.componentdock.com/`) are prominently displayed
+- **Given** the user scrolls to the feature section
+- **When** feature cards are displayed
+- **Then** each card highlights a distinct capability with icon, title, and description
 
-## Verification Checklist
+### Requirement: Testimonials / Carousel Display
 
-- [ ] App builds successfully with Vite and Tailwind CSS 4
-- [ ] All sections match the Carousel 05 reference structure
-- [ ] 100% test coverage with Vitest and Testing Library
-- [ ] Footer links to `https://www.componentdock.com/`
+Users SHALL interact with the testimonial slider to view quotes and author details.
+
+#### Scenario: User interacts with the testimonial slider
+
+- **Given** the user views the testimonials section
+- **When** clicking pagination or swiping through slides
+- **Then** testimonial quotes and author details update smoothly
+
+### Requirement: Call to Action & Footer
+
+Users SHALL see navigation links, copyright, and the mandatory Component Dock link.
+
+#### Scenario: User reaches the footer
+
+- **Given** the user scrolls to the bottom of the page
+- **When** the footer is rendered
+- **Then** navigation links, copyright, and the mandatory "Component Dock" link (`https://www.componentdock.com/`) are prominently displayed
