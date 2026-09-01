@@ -19,47 +19,67 @@ Recreation of ColorLib **Carousel V13** (`https://colorlib.com/wp/template/carou
   - Border radius: `rounded-xl` for cards, `rounded-full` for badges and navigation buttons
   - Interactive states: Smooth vertical carousel transitions, hover effects on slide items
 
-## Sections & Gherkin Requirements
+## Requirements
 
-### 1. Header / Navbar
+### Requirement: Header / Navbar
 
-- **Requirement**: The header shall display a brand logo, navigation links (Home, Slideshow, Features, Gallery, Contact), and a CTA button ("Get Started").
-- **Scenario**: User views header
-  - Given the user loads the CarouselRoll template
-  - When the header renders
-  - Then all navigation links and the CTA button are visible and interactive.
+The header shall display a brand logo, navigation links (Home, Products), and a dark-mode toggle.
 
-### 2. Hero Showcase
+#### Scenario: User views header
 
-- **Requirement**: The hero section shall present an engaging headline, descriptive subtext, and call-to-action buttons alongside an interactive vertical carousel preview.
-- **Scenario**: User views hero section
-  - Given the user is on the main page
-  - When the hero section renders
-  - Then the headline, descriptive subtext, and call-to-action buttons are clearly displayed.
+- **GIVEN** the user loads the CarouselRoll template
+- **WHEN** the header renders
+- **THEN** all navigation links and the dark-mode toggle are visible and interactive
 
-### 3. Vertical Carousel Showcase Section
+### Requirement: Hero Showcase
 
-- **Requirement**: The vertical carousel section shall display interactive vertical slides containing feature highlights, imagery, titles, and descriptions, supporting next/prev controls and slide indicators.
-- **Scenario**: User interacts with the vertical carousel
-  - Given the user scrolls to the vertical carousel section
-  - When the user clicks navigation controls or scroll indicators
-  - Then the vertical slides transition correctly and update the active slide view.
+The hero section shall present an engaging headline, descriptive subtext, and call-to-action buttons.
 
-### 4. Features & Highlights Grid
+#### Scenario: User views hero section
 
-- **Requirement**: The features section shall present core capabilities in a clean multi-column grid with custom icons and descriptive text.
-- **Scenario**: User reviews features
-  - Given the user views the features section
-  - When the section renders
-  - Then feature cards display correct icons, titles, and descriptions.
+- **GIVEN** the user is on the main page
+- **WHEN** the hero section renders
+- **THEN** the headline, descriptive subtext, and call-to-action buttons are clearly displayed
 
-### 5. Call to Action & Footer
+### Requirement: Vertical Carousel Showcase Section
 
-- **Requirement**: The footer shall contain site links, newsletter signup, copyright notice, and a required link to `https://www.componentdock.com/` ("Component Dock").
-- **Scenario**: User scrolls to footer
-  - Given the user reaches the bottom of the page
-  - When the footer renders
-  - Then the Component Dock attribution link is visible and correctly formatted.
+The vertical carousel section shall display interactive slides containing feature highlights, imagery, titles, and descriptions, supporting next/prev controls and slide indicators.
+
+#### Scenario: User interacts with the vertical carousel
+
+- **GIVEN** the user scrolls to the vertical carousel section
+- **WHEN** the user clicks navigation controls or scroll indicators
+- **THEN** the vertical slides transition correctly and update the active slide view
+
+### Requirement: Features & Highlights Grid
+
+The features section shall present core capabilities in a clean multi-column grid with custom icons and descriptive text.
+
+#### Scenario: User reviews features
+
+- **GIVEN** the user views the features section
+- **WHEN** the section renders
+- **THEN** feature cards display correct icons, titles, and descriptions
+
+### Requirement: Newsletter Signup
+
+The newsletter section shall display an email input with validation and a subscribe button with loading/success states.
+
+#### Scenario: User subscribes to newsletter
+
+- **GIVEN** the user views the newsletter section
+- **WHEN** the user enters a valid email and clicks subscribe
+- **THEN** the form shows loading state then success confirmation
+
+### Requirement: Footer with Component Dock Attribution
+
+The footer shall contain site links, copyright notice, and a required link to `https://www.componentdock.com/` ("Component Dock").
+
+#### Scenario: User scrolls to footer
+
+- **GIVEN** the user reaches the bottom of the page
+- **WHEN** the footer renders
+- **THEN** the Component Dock attribution link is visible and correctly formatted
 
 ## Verification Checklist
 
