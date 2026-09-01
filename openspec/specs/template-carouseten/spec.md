@@ -24,42 +24,63 @@ Recreation of ColorLib `carousel-10` (`https://colorlib.com/wp/template/carousel
   - Interactive CTA newsletter subscription card.
   - Footer with required attribution linking `https://www.componentdock.com/`.
 
-## Requirements & Scenarios
+## Requirements
 
-### Feature 1: Hero Banner & Overview
+### Requirement: Hero Banner & Overview
 
-- **Scenario:** User loads the carousel showcase template.
-  - **Given** the user navigates to the Carouseten landing page.
-  - **When** the page renders.
-  - **Then** the hero section displays a compelling headline, description, and quick action buttons to explore the carousel slides.
+The hero section SHALL display a compelling headline, description, and quick action buttons to explore the carousel slides.
 
-### Feature 2: Interactive Thumbnail Carousel
+#### Scenario: User loads the carousel showcase template
 
-- **Scenario:** User browses and interacts with the featured carousel items.
-  - **Given** the carousel component is mounted with multiple slides and thumbnail previews.
-  - **When** the user clicks navigation arrows, thumbnail items, or dot indicators.
-  - **Then** the active slide updates smoothly, displaying the corresponding image, caption, and title.
+- **GIVEN** the user navigates to the Carouseten landing page.
+- **WHEN** the page renders.
+- **THEN** the hero section displays a headline, description, and CTA buttons.
 
-### Feature 3: Feature Highlights Grid
+### Requirement: Interactive Thumbnail Carousel
 
-- **Scenario:** User reviews the carousel's technical features.
-  - **Given** the feature grid section is visible.
-  - **When** the user scrolls through the feature cards.
-  - **Then** they see cards detailing responsive layouts, touch gesture support, custom styling, and performance.
+The carousel component SHALL display multiple slides with thumbnail previews, navigation arrows, and active slide indicators.
 
-### Feature 4: Newsletter Subscription
+#### Scenario: User browses carousel items
 
-- **Scenario:** User subscribes to updates.
-  - **Given** the newsletter subscription form is displayed.
-  - **When** the user enters a valid email address and clicks subscribe.
-  - **Then** a success message is displayed confirming the subscription.
+- **GIVEN** the carousel component is mounted with multiple slides and thumbnail previews.
+- **WHEN** the user clicks navigation arrows, thumbnail items, or dot indicators.
+- **THEN** the active slide updates smoothly, displaying the corresponding image, caption, and title.
 
-### Feature 5: Footer & Branding
+### Requirement: Feature Highlights Grid
 
-- **Scenario:** User checks the page footer.
-  - **Given** the page is scrolled to the bottom.
-  - **When** the footer is rendered.
-  - **Then** it contains the copyright notice and a clear link to `https://www.componentdock.com/` ("Component Dock").
+The feature grid section SHALL display cards detailing responsive layouts, touch gesture support, custom styling, and performance.
+
+#### Scenario: User reviews feature cards
+
+- **GIVEN** the feature grid section is visible.
+- **WHEN** the user scrolls through the feature cards.
+- **THEN** they see cards with icons, titles, and descriptions.
+
+### Requirement: Newsletter Subscription
+
+The newsletter form SHALL validate email input and display subscription status.
+
+#### Scenario: User subscribes with valid email
+
+- **GIVEN** the newsletter subscription form is displayed.
+- **WHEN** the user enters a valid email address and clicks subscribe.
+- **THEN** a success message is displayed confirming the subscription.
+
+#### Scenario: User enters invalid email
+
+- **GIVEN** the newsletter subscription form is displayed.
+- **WHEN** the user enters an invalid email address and clicks subscribe.
+- **THEN** an error message is displayed asking for a valid email.
+
+### Requirement: Footer & Branding
+
+The footer SHALL display the template name, copyright notice, and a link to Component Dock.
+
+#### Scenario: User checks the page footer
+
+- **GIVEN** the page is scrolled to the bottom.
+- **WHEN** the footer is rendered.
+- **THEN** it contains the copyright notice and a link to https://www.componentdock.com/ (Component Dock).
 
 ## Verification Checklist
 
