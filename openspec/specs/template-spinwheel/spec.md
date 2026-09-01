@@ -1,42 +1,26 @@
-# Template: SpinWheel (Carousel / Gallery category)
+# Specification: Spinwheel (Carousel 17)
 
-## Purpose
+Recreation of ColorLib Carousel 17 (`https://colorlib.com/wp/template/carousel-17/`) under the new name **Spinwheel**.
 
-- Recreation of ColorLib **Carousel V04** (`https://colorlib.com/wp/template/carousel-04/`).
-- Preview URL: `https://preview.colorlib.com/theme/carousel-04/` (Note: preview URL returns 404 on ColorLib CDN; replicated faithfully from the ColorLib screenshot and standard Bootstrap carousel patterns).
-- Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide React icons, interactive carousel slider.
+## Requirements
 
-## Design tokens
+### Requirement 1: Testimonial Carousel Section
 
-- Primary Brand Color: `#4f46e5` (Indigo) / `#3b82f6` (Blue)
-- Neutral Palette: Slate (`#f8fafc` background, `#1e293b` text)
-- Font Family: "Inter", system-ui, sans-serif
-- Button Shapes: Rounded-md / rounded-full for interactive carousel navigation controls
-- Section Backgrounds: Light gray/slate section alternating with pure white and dark slate footer
+- **Scenario:** User views the carousel section
+  - Given the Spinwheel application is loaded
+  - Then a featured testimonial carousel should be visible with navigation controls (prev/next buttons and pagination dots)
+  - And testimonials should display author name, role/company, avatar image, and feedback quote
 
-## Requirements & Scenarios
+### Requirement 2: Footer & Branding
 
-### Requirement 1: Navigation Bar & Header
+- **Scenario:** User views the footer
+  - Given the page is scrolled to the bottom
+  - Then a footer should display copyright and a branded link to `https://www.componentdock.com/` ("Component Dock")
+  - And no ColorLib branding or external attribution links should appear
 
-- The template must include a responsive top navigation bar with brand logo, nav links, and a CTA button.
-- Scenario: User resizes window; navigation adapts cleanly with mobile menu toggle.
+### Requirement 3: Design Tokens & Styling
 
-### Requirement 2: Hero Carousel Slider
-
-- The template must display an interactive hero carousel section with slide pagination indicators and previous/next arrow controls.
-- Each slide features an engaging image background, headline, description text, and action buttons.
-
-### Requirement 3: Featured Testimonial / Item Carousel
-
-- A secondary carousel showcasing testimonial cards or featured content items with smooth sliding navigation.
-
-### Requirement 4: Footer Component
-
-- Professional footer featuring brand info, quick navigation links, social icons, and mandatory Component Dock attribution (`https://www.componentdock.com/`).
-
-## Verification checklist
-
-- [ ] TypeScript strict compilation passes without errors.
-- [ ] Tailwind CSS v4 styling and `@theme` tokens correctly applied.
-- [ ] Responsive design verified for mobile, tablet, and desktop viewports.
-- [ ] Footer correctly includes link to `https://www.componentdock.com/`.
+- **Scenario:** Responsive layout and styling
+  - Given the application renders across viewports
+  - Then Tailwind CSS styling with responsive utilities should provide a clean modern appearance
+  - And typography and color palette should be consistent
