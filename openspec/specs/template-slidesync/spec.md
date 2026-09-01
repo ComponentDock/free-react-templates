@@ -28,32 +28,38 @@ SlideSync is a fully responsive, modern React 19 component template recreating t
 5. **Call to Action (CTA) Banner**: High-conversion banner inviting users to get started with an email input and submit button.
 6. **Footer**: Clean multi-column footer with brand links, social media icons, copyright, and mandatory Component Dock attribution (`https://www.componentdock.com/`).
 
-## Requirements & Gherkin Scenarios
+## Requirements
 
-### Feature: Carousel Slider Navigation
+### Requirement: Carousel Slider Navigation
 
-As a user visiting the SlideSync template, I want to browse testimonials/slides using navigation arrows and pagination dots so that I can read all featured items.
+Users SHALL be able to browse carousel slides using navigation arrows and pagination dots.
 
 #### Scenario: User clicks next and previous navigation arrows
 
-- **Given** the carousel is displayed on the page showing slide 1
-- **When** the user clicks the "Next" navigation button
-- **Then** the carousel transitions to show slide 2
-- **And** the active pagination dot updates to reflect slide 2
+- **WHEN** the user clicks the "Next" navigation button
+- **THEN** the carousel transitions to show the next slide
+- **AND** the active pagination dot updates to reflect the current slide
 
 #### Scenario: User clicks a pagination dot
 
-- **Given** the carousel is displayed on the page showing slide 1
-- **When** the user clicks the pagination dot for slide 3
-- **Then** the carousel instantly displays slide 3
-- **And** the corresponding pagination dot becomes active
+- **WHEN** the user clicks a pagination dot for a specific slide
+- **THEN** the carousel instantly displays that slide
+- **AND** the corresponding pagination dot becomes active
 
-### Feature: Component Dock Footer Attribution
+### Requirement: Component Dock Footer Attribution
 
-As a visitor, I want to see a clear link to Component Dock in the footer.
+The footer SHALL display a link to Component Dock.
 
 #### Scenario: Footer displays Component Dock link
 
-- **Given** the user scrolls to the bottom of the page
-- **When** the footer is rendered
-- **Then** a visible link pointing to `https://www.componentdock.com/` with text containing "Component Dock" is present
+- **WHEN** the footer is rendered
+- **THEN** a visible link pointing to `https://www.componentdock.com/` with text containing "Component Dock" is present
+
+### Requirement: Section Composition
+
+The application SHALL compose all required sections.
+
+#### Scenario: All sections are present
+
+- **WHEN** the application renders
+- **THEN** the Navbar, Hero, Carousel, Features, Newsletter, and Footer sections are all visible
