@@ -19,7 +19,7 @@ Recreation of ColorLib **Carousel 14** (`https://colorlib.com/wp/template/carous
   - Responsive testimonial and image carousel slider (`.testimony-29101`) featuring split 40% image and 60% text block layout on desktop, stacked on mobile.
   - Navigation controls: Previous / Next arrow buttons and active/inactive pagination dots.
   - Header navigation bar with brand logo and links.
-  - Footer with copyright and mandatory attribution link to `https://www.componentdock.com/`.
+  - Footer with copyright and mandatory Component Dock link.
 
 ## Requirements & Gherkin Scenarios
 
@@ -46,9 +46,9 @@ Recreation of ColorLib **Carousel 14** (`https://colorlib.com/wp/template/carous
 
 ## Verification Checklist
 
-- [ ] TypeScript compilation (`npm run typecheck`) passes without errors.
-- [ ] Linter (`npm run lint`) passes without warnings.
-- [ ] Test suite (`npm run test:coverage`) achieves 100% coverage.
-- [ ] Build (`npm run build`) completes successfully.
-- [ ] Footer correctly links `https://www.componentdock.com/`.
-- [ ] No mention of ColorLib in application source code.
+- [x] TypeScript compilation (`npm run typecheck`) passes without errors.
+- [x] Linter (`npm run lint`) passes without warnings.
+- [x] Test suite (`npm run test:coverage`) achieves 100% coverage.
+- [x] Build (`npm run build`) completes successfully.
+- [x] Footer correctly links `https://www.componentdock.com/`.
+- [x] No mention of ColorLib in application source code.
