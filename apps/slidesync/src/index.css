@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette: deep orange / coral accent for product highlights */
+  --color-brand: #ff5722;
+
+  --color-primary-50: #fff3e0;
+  --color-primary-100: #ffe0b2;
+  --color-primary-200: #ffcc80;
+  --color-primary-300: #ffb74d;
+  --color-primary-400: #ffa726;
+  --color-primary-500: #ff5722;
+  --color-primary-600: #f4511e;
+  --color-primary-700: #e64a19;
+  --color-primary-800: #d84315;
+  --color-primary-900: #bf360c;
+  --color-primary-950: #870000;
+
+  --color-accent-50: #fff3e0;
+  --color-accent-100: #ffe0b2;
+  --color-accent-200: #ffcc80;
+  --color-accent-300: #ffb74d;
+  --color-accent-400: #ffa726;
+  --color-accent-500: #ff5722;
+  --color-accent-600: #f4511e;
+  --color-accent-700: #e64a19;
+  --color-accent-800: #d84315;
+  --color-accent-900: #bf360c;
+  --color-accent-950: #870000;
+
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
