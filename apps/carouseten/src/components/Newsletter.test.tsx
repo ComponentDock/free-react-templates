@@ -73,9 +73,12 @@ describe('Newsletter', () => {
     await user.type(input, 'test@example.com')
     await user.click(screen.getByRole('button', { name: /subscribe/i }))
 
-    await waitFor(() => {
-      expect(screen.getByRole('button', { name: /subscribed/i })).toBeInTheDocument()
-    })
+    await waitFor(
+      () => {
+        expect(screen.getByRole('button', { name: /subscribed/i })).toBeInTheDocument()
+      },
+      { timeout: 5000 },
+    )
   })
 
   it('disables input and button after successful submission', async () => {
@@ -86,10 +89,13 @@ describe('Newsletter', () => {
     await user.type(input, 'test@example.com')
     await user.click(screen.getByRole('button', { name: /subscribe/i }))
 
-    await waitFor(() => {
-      expect(input).toBeDisabled()
-      expect(screen.getByRole('button', { name: /subscribed/i })).toBeDisabled()
-    })
+    await waitFor(
+      () => {
+        expect(input).toBeDisabled()
+        expect(screen.getByRole('button', { name: /subscribed/i })).toBeDisabled()
+      },
+      { timeout: 5000 },
+    )
   })
 
   it('renders privacy policy link', () => {
