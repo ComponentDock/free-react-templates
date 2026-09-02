@@ -21,62 +21,55 @@ Recreation of ColorLib **Carousel 18** (`https://colorlib.com/wp/template/carous
   - Transitions: Smooth cubic-bezier transitions (`transition-all duration-300 ease-in-out`)
   - Shadows: Soft elevated shadows (`shadow-xl`, `shadow-2xl`)
 
----
+## Requirements
 
-## Requirements & Gherkin Scenarios
+### Requirement: Split hero carousel
 
-### Feature 1: Split Hero Carousel
+The system SHALL render a split-screen carousel with an image on the left and tabbed content on the right, with prev/next navigation arrows.
 
-- **As a** site visitor,
-- **I want** to view a prominent split-screen carousel showcasing high-impact visual imagery alongside rich testimonial or product details,
-- **So that** I can easily browse through featured items with clear context.
+#### Scenario: Navigating carousel slides via tabs
 
-#### Scenario 1: Navigating carousel slides
+- **GIVEN** the CarouselGlide page is loaded
+- **WHEN** the user clicks a category tab (e.g. TRAVEL, PHOTOGRAPHY, CREATIVITY)
+- **THEN** the active slide transitions, updating both the featured image and the headline text
 
-- **Given** the CarouselGlide page is loaded,
-- **When** the user clicks the "Next" or "Previous" arrow controls (or pagination dots),
-- **Then** the active slide transitions smoothly, updating both the featured image on the left and the headline/testimonial text on the right.
+#### Scenario: Navigating carousel slides via arrows
 
-#### Scenario 2: Autoplay toggle and pause on hover
+- **GIVEN** the carousel is loaded with the first slide active
+- **WHEN** the user clicks the "Next slide" button
+- **THEN** the active slide advances to the next one (wrapping to the first when at the last)
+- **AND** the tab selection updates to reflect the new active slide
 
-- **Given** the carousel is active,
-- **When** the user hovers over the carousel container,
-- **Then** autoplay pauses, allowing the user to read the content without abrupt transitions.
+#### Scenario: Previous slide navigation wraps
 
----
+- **GIVEN** the first slide is active
+- **WHEN** the user clicks the "Previous slide" button
+- **THEN** the carousel wraps to the last slide
 
-### Feature 2: Interactive Features & Highlights Grid
+### Requirement: Features section
 
-- **As a** prospective user,
-- **I want** to explore key product benefits and feature cards below the hero carousel,
-- **So that** I understand the core value proposition.
+The system SHALL render a features section with a heading and four feature cards, each containing an icon, title, and description.
 
-#### Scenario 1: Viewing feature cards
+#### Scenario: Feature cards are displayed
 
-- **Given** the user scrolls down to the features section,
-- **When** the feature cards come into view,
-- **Then** they display clean icons, titles, and descriptions with hover lift effects.
+- **GIVEN** the user scrolls to the features section
+- **WHEN** the features section is visible
+- **THEN** it SHALL display four cards with icons (Camera, Zap, Sparkles, Palette), titles, and descriptions
 
----
+### Requirement: Footer with Component Dock link
 
-### Feature 3: Call-to-Action & Footer
+The system SHALL render a footer containing a link to `https://www.componentdock.com/`.
 
-- **As a** visitor ready to engage,
-- **I want** a clear call-to-action banner and a professional footer linking to Component Dock,
-- **So that** I can take the next step or explore more templates.
+#### Scenario: Footer attribution
 
-#### Scenario 1: Footer attribution
-
-- **Given** the user reaches the bottom of the page,
-- **When** the footer is rendered,
-- **Then** it displays copyright information and a prominent link to `https://www.componentdock.com/`.
-
----
+- **GIVEN** the user reaches the bottom of the page
+- **WHEN** the footer is rendered
+- **THEN** it SHALL display a "Made with Component Dock" link pointing to `https://www.componentdock.com/`
 
 ## Verification Checklist
 
-- [ ] TypeScript strict mode compilation (`npm run typecheck`) passes without errors.
-- [ ] Tailwind CSS 4 build succeeds with `injectUiSource()` configured in `vite.config.ts`.
-- [ ] Vitest test suite passes with 100% coverage on new code (`npm run test:coverage`).
-- [ ] Footer correctly links `https://www.componentdock.com/`.
-- [ ] Zero references to ColorLib in app source files.
+- [x] TypeScript strict mode compilation (`npm run typecheck`) passes without errors.
+- [x] Tailwind CSS 4 build succeeds with `injectUiSource()` configured in `vite.config.ts`.
+- [x] Vitest test suite passes with 100% coverage on new code (`npm run test:coverage`).
+- [x] Footer correctly links `https://www.componentdock.com/`.
+- [x] Zero references to ColorLib in app source files.

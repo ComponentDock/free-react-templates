@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Inter', 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --color-primary-50: #f3e8fd;
+  --color-primary-100: #e9d5fc;
+  --color-primary-200: #d6b4fa;
+  --color-primary-300: #ba8df6;
+  --color-primary-400: #a25ef0;
+  --color-primary-500: #8b3ae8;
+  --color-primary-600: #7f53ac;
+  --color-primary-700: #6b3fa0;
+  --color-primary-800: #573485;
+  --color-primary-900: #492d6e;
+  --color-primary-950: #2a1740;
+
+  --color-secondary-50: #eef0fd;
+  --color-secondary-100: #dde1fc;
+  --color-secondary-200: #bcbff8;
+  --color-secondary-300: #9390f3;
+  --color-secondary-400: #756eec;
+  --color-secondary-500: #647dee;
+  --color-secondary-600: #4e5ce4;
+  --color-secondary-700: #3f46c6;
+  --color-secondary-800: #353a9d;
+  --color-secondary-900: #30347e;
+  --color-secondary-950: #1a1d4a;
+
+  --color-dark: #1a202c;
+  --color-muted: #718096;
+  --color-accent: #ff6b6b;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out forwards;
+}
