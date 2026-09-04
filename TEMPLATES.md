@@ -739,7 +739,7 @@
 - [x] **Checkbox 07** — [colorlib](https://colorlib.com/wp/template/checkbox-07/) · [checkmark](https://checkmark.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-07.jpg)
 - [x] **Checkbox 08** — [colorlib](https://colorlib.com/wp/template/checkbox-08/) · [toggle](https://toggle.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-08.jpg)
 - [x] **Checkbox 09** — [colorlib](https://colorlib.com/wp/template/checkbox-09/) · [tickpick](https://tickpick.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-09.jpg)
-- [~] **Checkbox 10** — [colorlib](https://colorlib.com/wp/template/checkbox-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-10.jpg)
+- [x] **Checkbox 10** — [colorlib](https://colorlib.com/wp/template/checkbox-10/) · [tickbox](https://tickbox.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-10.jpg)
 - [ ] **Checkbox 11** — [colorlib](https://colorlib.com/wp/template/checkbox-11/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-11.jpg)
 - [ ] **Checkbox 12** — [colorlib](https://colorlib.com/wp/template/checkbox-12/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-12.jpg)
 - [ ] **Checkbox 13** — [colorlib](https://colorlib.com/wp/template/checkbox-13/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-13.jpg)
