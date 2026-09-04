@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-amber: #f1bc31;
+  --color-brand-amber-light: #f6d379;
+  --color-toggle-track: #e6e6e6;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+  }
+}
