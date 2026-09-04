@@ -730,7 +730,7 @@
 
 ## Bootstrap Checkboxes (20)
 
-- [~] **Checkbox 01** — [colorlib](https://colorlib.com/wp/template/checkbox-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-01.jpg)
+- [x] **Checkbox 01** — [colorlib](https://colorlib.com/wp/template/checkbox-01/) · [tickmark](https://free-react-templates-tickmark.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-01.jpg)
 - [ ] **Checkbox 02** — [colorlib](https://colorlib.com/wp/template/checkbox-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-02.jpg)
 - [ ] **Checkbox 03** — [colorlib](https://colorlib.com/wp/template/checkbox-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-03.jpg)
 - [ ] **Checkbox 04** — [colorlib](https://colorlib.com/wp/template/checkbox-04/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-04.jpg)
