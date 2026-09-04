@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Dark slate palette — from the Carousel 19 design */
+  --color-slate-dark: #393e46;
+
+  /* Font families */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Arbutus Slab', Georgia, serif;
+}
