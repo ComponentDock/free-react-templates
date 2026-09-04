@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-sky: #33a7d7;
+  --color-brand-sky-dark: #2888b0;
+  --color-brand-indigo: #364cd2;
+  --color-brand-indigo-dark: #28379e;
+  --color-brand-blue: #4158d0;
+  --color-brand-pink: #c850c0;
+  --color-brand-gold: #ffcc70;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+  }
+  body {
+    margin: 0;
+  }
+}
