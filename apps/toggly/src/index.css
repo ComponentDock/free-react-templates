@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-pink: #ff7bb0;
+  --color-track-unchecked: #e6e6e6;
+  --color-track-checked: #ffe1ed;
+  --color-halo-pink: rgba(255, 123, 176, 0.5);
+  --font-poppins: 'Poppins', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-poppins);
+  }
+}
