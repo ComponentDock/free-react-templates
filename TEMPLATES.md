@@ -747,7 +747,7 @@
 - [x] **Checkbox 15** — [colorlib](https://colorlib.com/wp/template/checkbox-15/) · [morph](https://morph.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-15.jpg)
 - [x] **Checkbox 16** — [colorlib](https://colorlib.com/wp/template/checkbox-16/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-16.jpg) · [checksnap](https://checksnap.free.componentdock.com)
 - [x] **Checkbox 17** — [colorlib](https://colorlib.com/wp/template/checkbox-17/) · [vex](https://vex.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-17.jpg)
-- [ ] **Checkbox 18** — [colorlib](https://colorlib.com/wp/template/checkbox-18/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-18.jpg)
+- [~] **Checkbox 18** — [colorlib](https://colorlib.com/wp/template/checkbox-18/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-18.jpg)
 - [ ] **Checkbox 19** — [colorlib](https://colorlib.com/wp/template/checkbox-19/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-19.jpg)
 - [ ] **Checkbox 20** — [colorlib](https://colorlib.com/wp/template/checkbox-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-20.jpg)
 
