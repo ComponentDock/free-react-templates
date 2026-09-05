@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-teal: #00bfa5;
+  --color-brand-teal-hover: #00a896;
+  --color-unchecked-border: #cccccc;
+  --color-unchecked-bg: #ffffff;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+/* Morph animation: square → rounded → tick */
+@keyframes morph-to-checked {
+  0% {
+    border-radius: 2px;
+    background-color: #ffffff;
+    border-color: #cccccc;
+  }
+  40% {
+    border-radius: 4px;
+    background-color: #e0f2f1;
+    border-color: #00bfa5;
+  }
+  100% {
+    border-radius: 4px;
+    background-color: #00bfa5;
+    border-color: #00bfa5;
+  }
+}
+
+@keyframes morph-to-unchecked {
+  0% {
+    border-radius: 4px;
+    background-color: #00bfa5;
+    border-color: #00bfa5;
+  }
+  60% {
+    border-radius: 3px;
+    background-color: #e0f2f1;
+    border-color: #00bfa5;
+  }
+  100% {
+    border-radius: 2px;
+    background-color: #ffffff;
+    border-color: #cccccc;
+  }
+}
+
+@keyframes tick-draw {
+  0% {
+    stroke-dashoffset: 24;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes tick-erase {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 24;
+  }
+}
