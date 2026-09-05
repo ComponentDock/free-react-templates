@@ -1,31 +1,34 @@
+import { useEffect } from 'react'
 import { Navbar } from './components/Navbar'
-import { HeroSlider } from './components/HeroSlider'
-import { Features } from './components/Features'
-import { SiteHalf } from './components/SiteHalf'
-import { ProductsCarousel } from './components/ProductsCarousel'
-import { Counters } from './components/Counters'
-import { TestimonialsCarousel } from './components/TestimonialsCarousel'
-import { BlogStrip } from './components/BlogStrip'
-import { CtaBand } from './components/CtaBand'
+import { Hero } from './components/Hero'
+import { Services } from './components/Services'
+import { About } from './components/About'
+import { Portfolio } from './components/Portfolio'
+import { Testimonials } from './components/Testimonials'
+import { Products } from './components/Products'
+import { Blog } from './components/Blog'
+import { Newsletter } from './components/Newsletter'
+import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
-import { siteHalves } from './data'
 
-/** Verdant — one-page template-showcase landing.
- *  Section order matches the live preview DOM 1:1. */
 export function App() {
+  useEffect(() => {
+    document.title = 'Verdant — Gardening & Landscaping Template'
+  }, [])
+
   return (
-    <div className="min-h-screen bg-white font-sans text-black">
+    <div className="flex min-h-screen flex-col bg-white text-ink transition-colors dark:bg-gray-950 dark:text-white">
       <Navbar />
-      <main>
-        <HeroSlider />
-        <Features />
-        <SiteHalf {...siteHalves[0]!} />
-        <SiteHalf {...siteHalves[1]!} flipped />
-        <ProductsCarousel />
-        <Counters />
-        <TestimonialsCarousel />
-        <BlogStrip />
-        <CtaBand />
+      <main className="flex-1">
+        <Hero />
+        <Services />
+        <About />
+        <Portfolio />
+        <Testimonials />
+        <Products />
+        <Blog />
+        <Newsletter />
+        <Contact />
       </main>
       <Footer />
     </div>

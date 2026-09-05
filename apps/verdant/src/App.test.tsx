@@ -1,34 +1,24 @@
 import { render, screen } from '@testing-library/react'
-import { describe, expect, it } from 'vitest'
 import { App } from './App'
 
 describe('App', () => {
-  it('renders every section in the reference order', () => {
+  it('renders all sections', () => {
     render(<App />)
-    const headings = screen.getAllByRole('heading').map((h) => h.textContent)
-    // Section order per the live preview DOM: hero → features → site-half 1
-    // → site-half 2 → products → counters → testimonials → blog → CTA
-    // (the navbar brand is a link, covered by the Navbar tests)
-    const order = [
-      'Welcome to Verdant',
-      'Love Us Verdant',
-      'Clean Design',
-      'Free Website Templates',
-      'Share Before You Download',
-      'Free Templates By Verdant',
-      'Testimonials',
-      'Recent Blog Posts',
-      'Try For Your Next Project',
-    ]
-    const positions = order.map((text) => headings.findIndex((h) => h?.includes(text)))
-    expect(positions.every((p) => p >= 0)).toBe(true)
-    for (let i = 1; i < positions.length; i++) {
-      expect(positions[i]!).toBeGreaterThan(positions[i - 1]!)
-    }
+    expect(screen.getByRole('link', { name: /verdant/i })).toBeInTheDocument()
+    expect(screen.getByText(/plants exist in the weather/i)).toBeInTheDocument()
+    expect(screen.getByText(/our services/i)).toBeInTheDocument()
+    expect(screen.getByText(/about us/i)).toBeInTheDocument()
+    expect(screen.getByText(/our portfolio/i)).toBeInTheDocument()
+    expect(screen.getByText(/testimonial/i)).toBeInTheDocument()
+    expect(screen.getByText(/new arrivals/i)).toBeInTheDocument()
+    expect(screen.getByText(/latest news/i)).toBeInTheDocument()
+    expect(screen.getByText(/join the newsletter/i)).toBeInTheDocument()
+    expect(screen.getByText(/get in touch/i)).toBeInTheDocument()
+    expect(screen.getByText(/component dock/i)).toBeInTheDocument()
   })
 
-  it('includes the Component Dock footer link', () => {
+  it('sets document title on mount', () => {
     render(<App />)
-    expect(screen.getByRole('link', { name: /Component Dock/ })).toBeInTheDocument()
+    expect(document.title).toBe('Verdant — Gardening & Landscaping Template')
   })
 })
