@@ -754,7 +754,7 @@
 ## Bootstrap Dropdowns (20)
 
 - [x] **Dropdown 01** — [colorlib](https://colorlib.com/wp/template/dropdown-01/) · [dropkit](https://dropkit.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-01.jpg)
-- [~] **Dropdown 02** — [colorlib](https://colorlib.com/wp/template/dropdown-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-02.jpg)
+- [x] **Dropdown 02** — [colorlib](https://colorlib.com/wp/template/dropdown-02/) · [menubox](https://menubox.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-02.jpg)
 - [ ] **Dropdown 03** — [colorlib](https://colorlib.com/wp/template/dropdown-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-03.jpg)
 - [ ] **Dropdown 04** — [colorlib](https://colorlib.com/wp/template/dropdown-04/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-04.jpg)
 - [ ] **Dropdown 05** — [colorlib](https://colorlib.com/wp/template/dropdown-05/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-05.jpg)
