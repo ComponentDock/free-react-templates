@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Structura brand palette — recreated from the ColorLib Archirio design
+     (lime accent #cee002, dark text #333132). */
+  --color-lime-accent: #cee002;
+  --color-charcoal: #333132;
+  --color-surface: #f1f1f1;
+  --color-footer-dark: #222222;
+
+  /* Poppins — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
