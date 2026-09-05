@@ -103,7 +103,7 @@ TBD
 
 ## Templates
 
-**Status:** 640 / 1644 templates recreated · **1004 remaining**.
+**Status:** 640 / 1643 templates recreated · **1003 remaining**.
 
 > Updated automatically after every template merge
 > (`node scripts/update-readme-status.mjs`). Each row is an original React
