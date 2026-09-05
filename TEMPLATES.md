@@ -893,7 +893,7 @@
 - [x] **Archirio** — [colorlib](https://colorlib.com/wp/template/archirio/) · [structura](https://structura.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archirio-free-template.jpg)
 - [x] **Arclabs** — [colorlib](https://colorlib.com/wp/template/arclabs/) · [Facade](https://facade.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/arclabs-free-template.jpg)
 - [x] **Arcwork** — [colorlib](https://colorlib.com/wp/template/arcwork/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/arcwork-free-template.jpg) · [ascendly](https://ascendly.free.componentdock.com)
-- [ ] **Ariclaw** — [colorlib](https://colorlib.com/wp/template/ariclaw/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ariclaw-free-template.jpg)
+- [~] **Ariclaw** — [colorlib](https://colorlib.com/wp/template/ariclaw/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ariclaw-free-template.jpg)
 - [ ] **Atomic** — [colorlib](https://colorlib.com/wp/template/atomic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/atomic-free-template.jpg)
 - [ ] **Auction** — [colorlib](https://colorlib.com/wp/template/auction/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/auction-free-template.jpg)
 - [ ] **Automotive** — [colorlib](https://colorlib.com/wp/template/automotive/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/automotive-free-template.jpg)
@@ -2115,7 +2115,7 @@
 
 ## Lawyer (23)
 
-- [ ] **Ariclaw** — [colorlib](https://colorlib.com/wp/template/ariclaw/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ariclaw-free-template.jpg)
+- [~] **Ariclaw** — [colorlib](https://colorlib.com/wp/template/ariclaw/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ariclaw-free-template.jpg)
 - [ ] **Atorni** — [colorlib](https://colorlib.com/wp/template/atorni/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/atorni-colorlib-template-1.jpg)
 - [x] **Fective** — [colorlib](https://colorlib.com/wp/template/fective/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fective-free-template.jpg) · [barrister](https://barrister.free.componentdock.com)
 - [x] **Judge** — [colorlib](https://colorlib.com/wp/template/judge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/judge-free-template.jpg) · [gavel](https://gavel.free.componentdock.com)
