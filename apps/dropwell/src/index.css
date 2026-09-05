@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #20c997;
+  --color-brand-hover: #1aa179;
+  --color-bg-page: #f8f9fa;
+  --color-bg-menu: #ffffff;
+  --color-text-body: #6c757d;
+  --color-text-heading: #212529;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family:
+      'Poppins',
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      'Helvetica Neue',
+      Arial,
+      'Noto Sans',
+      sans-serif;
+  }
+}
