@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #ab7636;
+  --color-brand-light: #d7af7e;
+  --color-brand-dark: #8a5c28;
+  --color-section-bg: #f3f1ef;
+  --color-ink: #1a1a1a;
+  --color-mist: #666666;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Cardo', ui-serif, Georgia, serif;
+}
