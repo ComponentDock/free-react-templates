@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens: dark minimal footer with #121212 background */
+  --color-footer-bg: #121212;
+  --color-footer-text: rgba(255, 255, 255, 0.5);
+  --color-footer-link: rgba(255, 255, 255, 0.7);
+  --color-footer-heading: #ffffff;
+  --color-footer-muted: rgba(255, 255, 255, 0.3);
+  --color-footer-border: rgba(255, 255, 255, 0.1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
