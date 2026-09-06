@@ -40,81 +40,92 @@ Extracted from the preview CSS (css/style.css + Bootstrap):
 - **Heading font-size:** 20px (h2)
 - **Background:** white (default body)
 
-## Gherkin Requirements
+## Requirements
 
-### Feature: Dropmark Filetype Dropdown
+### Requirement: Dropdown SHALL render with button and toggle behavior
 
-The dropdown component must recreate the ColorLib Dropdown 13 snippet — a filetype
+The dropdown component SHALL recreate the ColorLib Dropdown 13 snippet — a filetype
 dropdown with blue accent hover animation.
 
 #### Scenario: Renders the dropdown button
-- Given the page loads
-- Then a button labeled "Filetype" is visible
-- And the button has a file-text icon to the left of the label
-- And the button has a gray background (#f8f9fa)
+
+- **WHEN** the page loads
+- **THEN** a button labeled "Filetype" is visible
+- **AND** the button has a file-text icon to the left of the label
+- **AND** the button has a gray background (#f8f9fa)
 
 #### Scenario: Dropdown menu is hidden by default
-- Given the page loads
-- Then the dropdown menu is not visible
+
+- **WHEN** the page loads
+- **THEN** the dropdown menu is not visible
 
 #### Scenario: Button changes style when menu opens
-- Given the page loads
-- When the user clicks the "Filetype" button
-- Then the button background changes to blue (#007bff)
-- And the button text changes to white (#fff)
+
+- **WHEN** the user clicks the "Filetype" button
+- **THEN** the button background changes to blue (#007bff)
+- **AND** the button text changes to white (#fff)
 
 #### Scenario: Opens menu with file-type items
-- Given the page loads
-- When the user clicks the "Filetype" button
-- Then the dropdown menu becomes visible
-- And the menu contains "Markup HTML" with an HTML icon
-- And the menu contains "Photoshop PDF" with a PDF icon
-- And the menu contains "Illustrator AI" with an AI icon
-- And the menu contains "Sketch" with a Sketch icon
+
+- **WHEN** the user clicks the "Filetype" button
+- **THEN** the dropdown menu becomes visible
+- **AND** the menu contains "Markup HTML" with an HTML icon
+- **AND** the menu contains "Photoshop PDF" with a PDF icon
+- **AND** the menu contains "Illustrator AI" with an AI icon
+- **AND** the menu contains "Sketch" with a Sketch icon
 
 #### Scenario: Menu items have hover animation
-- Given the dropdown menu is open
-- When the user hovers over a menu item
-- Then the item text color changes to black (#000)
-- And the item text indents (padding-left increases from 15px to 20px)
-- And a blue left-bar (6px, #007bff) appears on the left side
+
+- **WHEN** the dropdown menu is open and the user hovers over a menu item
+- **THEN** the item text color changes to black (#000)
+- **AND** the item text indents (padding-left increases from 15px to 20px)
+- **AND** a blue left-bar (6px, #007bff) appears on the left side
 
 #### Scenario: Menu items separated by borders
-- Given the dropdown menu is open
-- Then each item (except last) has a bottom border (#efefef)
+
+- **WHEN** the dropdown menu is open
+- **THEN** each item (except last) has a bottom border (#efefef)
 
 #### Scenario: Menu animation
-- Given the dropdown menu opens
-- Then the menu fades in with opacity transition
-- And the menu slides down with margin-top transition (0→20px)
+
+- **WHEN** the dropdown menu opens
+- **THEN** the menu fades in with opacity transition
+- **AND** the menu slides down with margin-top transition (0→20px)
 
 #### Scenario: Closes menu and resets button
-- Given the dropdown menu is open
-- When the user clicks the "Filetype" button again
-- Then the dropdown menu becomes hidden
-- And the button background returns to #f8f9fa
-- And the button text returns to #888
+
+- **WHEN** the dropdown menu is open and the user clicks the "Filetype" button again
+- **THEN** the dropdown menu becomes hidden
+- **AND** the button background returns to #f8f9fa
+- **AND** the button text returns to #888
 
 #### Scenario: Closes on outside click
-- Given the dropdown menu is open
-- When the user clicks outside the dropdown
-- Then the dropdown menu becomes hidden
-- And the button background returns to #f8f9fa
+
+- **WHEN** the dropdown menu is open and the user clicks outside the dropdown
+- **THEN** the dropdown menu becomes hidden
+- **AND** the button background returns to #f8f9fa
+
+### Requirement: Accessibility and footer SHALL be present
+
+The application SHALL include a footer with a Component Dock link and proper ARIA attributes on the dropdown button.
 
 #### Scenario: Accessibility
-- Given the dropdown button renders
-- Then the button has aria-haspopup="true"
-- And the button has aria-expanded="false" when closed
-- And the button has aria-expanded="true" when open
+
+- **WHEN** the dropdown button renders
+- **THEN** the button has aria-haspopup="true"
+- **AND** the button has aria-expanded="false" when closed
+- **AND** the button has aria-expanded="true" when open
 
 #### Scenario: Footer with Component Dock link
-- Given the page renders
-- Then a footer is visible
-- And the footer contains a link to "https://www.componentdock.com/"
+
+- **WHEN** the page renders
+- **THEN** a footer is visible
+- **AND** the footer contains a link to "https://www.componentdock.com/"
 
 #### Scenario: Heading displays correctly
-- Given the page loads
-- Then a centered heading "Dropdown #3" is visible
+
+- **WHEN** the page loads
+- **THEN** a centered heading "Dropdown #3" is visible
 
 ## Verification Checklist
 
