@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #4fa4e8;
+  --color-brand-hover: #3a8fd4;
+  --color-illustration-bg: #b2fcff;
+  --color-modal-heading: #000;
+  --color-modal-text: #777;
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-roboto);
+    scroll-behavior: smooth;
+  }
+}

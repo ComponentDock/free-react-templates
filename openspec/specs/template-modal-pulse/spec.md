@@ -18,37 +18,37 @@ Extracted from the live preview stylesheet (`css/style.css`) and inline styles.
 
 ### Colors
 
-| Token              | Value   | Usage                                    |
-| ------------------ | ------- | ---------------------------------------- |
-| `--color-bg`       | `#fff`  | Modal body background                    |
-| `--color-overlay`  | `#000`  | Modal backdrop (Bootstrap default)       |
-| `--color-text`     | `#777`  | Modal paragraph text                     |
-| `--color-heading`  | `#000`  | Modal headings (h3)                      |
+| Token                     | Value     | Usage                                          |
+| ------------------------- | --------- | ---------------------------------------------- |
+| `--color-bg`              | `#fff`    | Modal body background                          |
+| `--color-overlay`         | `#000`    | Modal backdrop (Bootstrap default)             |
+| `--color-text`            | `#777`    | Modal paragraph text                           |
+| `--color-heading`         | `#000`    | Modal headings (h3)                            |
 | `--color-illustration-bg` | `#b2fcff` | Light blue background behind hero illustration |
-| `--color-dismiss`  | `gray`  | "No thanks" dismiss link                 |
-| `--color-note`     | `#999`  | Secondary note text                      |
-| `--color-note-link`| `#555`  | Note link text                           |
+| `--color-dismiss`         | `gray`    | "No thanks" dismiss link                       |
+| `--color-note`            | `#999`    | Secondary note text                            |
+| `--color-note-link`       | `#555`    | Note link text                                 |
 
 ### Typography
 
-| Element | Font        | Weight | Size  |
-| ------- | ----------- | ------ | ----- |
-| Body    | Roboto      | 300    | 14px  |
-| h3      | Roboto      | 900    | 22px  |
-| h2      | Roboto      | —      | 18px  |
-| Modal   | Poppins     | —      | —     |
+| Element | Font    | Weight | Size |
+| ------- | ------- | ------ | ---- |
+| Body    | Roboto  | 300    | 14px |
+| h3      | Roboto  | 900    | 22px |
+| h2      | Roboto  | —      | 18px |
+| Modal   | Poppins | —      | —    |
 
 Both Roboto and Poppins are loaded via Google Fonts / CDN.
 
 ### Shapes & Spacing
 
-| Token             | Value                    | Usage                          |
-| ----------------- | ------------------------ | ------------------------------ |
-| Modal radius      | 7px                      | Modal dialog border radius     |
-| Button radius     | 4px                      | All `.btn` elements            |
-| Modal shadow      | `0 10px 50px -10px rgba(0,0,0,0.9)` | Heavy modal drop shadow |
-| Modal padding     | 0 left/right (body), 1.5rem (`.content-text`) | |
-| Button padding    | 10px top/bottom (primary) |                                |
+| Token          | Value                                         | Usage                      |
+| -------------- | --------------------------------------------- | -------------------------- |
+| Modal radius   | 7px                                           | Modal dialog border radius |
+| Button radius  | 4px                                           | All `.btn` elements        |
+| Modal shadow   | `0 10px 50px -10px rgba(0,0,0,0.9)`           | Heavy modal drop shadow    |
+| Modal padding  | 0 left/right (body), 1.5rem (`.content-text`) |                            |
+| Button padding | 10px top/bottom (primary)                     |                            |
 
 ### Section backgrounds
 
@@ -56,77 +56,101 @@ Both Roboto and Poppins are loaded via Google Fonts / CDN.
 - Illustration area: `background-color: #b2fcff` (light cyan/blue)
 - Page backdrop: full-height container, centered content, default white
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
-Feature: ModalPulse — offer-with-CTA modal
+### Requirement: Modal opens on trigger click
 
-  Background:
-    Given the ModalPulse page is loaded
-    And the browser viewport is 1280x800
+The page SHALL display a "Launch modal" button centered on the page, and clicking it SHALL open the modal dialog.
 
-  Scenario: Initial state — trigger button visible
-    Then a "Launch modal" button should be visible in the page center
-    And the modal dialog should NOT be visible
+#### Scenario: Initial state — trigger button visible
 
-  Scenario: Open modal on button click
-    When I click the "Launch modal" button
-    Then the modal dialog should become visible
-    And the modal should be centered vertically and horizontally
-    And the backdrop overlay should dim the page
+- **WHEN** the page loads
+- **THEN** a "Launch modal" button should be visible in the page center
+- **AND** the modal dialog should NOT be visible
 
-  Scenario: Modal content structure
-    When the modal is open
-    Then an illustration image should be displayed at the top of the modal
-    And a heading "Introducing Work from Anywhere" should be visible
-    And a description paragraph should be visible below the heading
-    And a "Get the app" primary button should be visible
-    And a "No thanks" dismiss link should be visible
+#### Scenario: Open modal on button click
 
-  Scenario: Illustration background color
-    When the modal is open
-    Then the illustration area should have a light cyan background (#b2fcff)
+- **WHEN** I click the "Launch modal" button
+- **THEN** the modal dialog should become visible
+- **AND** the modal should be centered vertically and horizontally
+- **AND** the backdrop overlay should dim the page
 
-  Scenario: Dismiss modal via close link
-    When the modal is open
-    And I click the "No thanks" link
-    Then the modal dialog should close
-    And the backdrop overlay should be removed
-    And the page content should be interactive again
+### Requirement: Modal content structure
 
-  Scenario: Dismiss modal via backdrop click
-    When the modal is open
-    And I click the backdrop overlay area
-    Then the modal dialog should close
+The modal SHALL contain an illustration image, heading, description, and action buttons.
 
-  Scenario: Dismiss modal via Escape key
-    When the modal is open
-    And I press the Escape key
-    Then the modal dialog should close
+#### Scenario: Modal content structure
 
-  Scenario: Modal visual styling
-    When the modal is open
-    Then the modal dialog should have a border radius of 7px
-    And the modal should have a drop shadow
-    And the heading text should be bold (#000)
-    And the paragraph text should be gray (#777)
+- **WHEN** the modal is open
+- **THEN** an illustration image should be displayed at the top of the modal
+- **AND** a heading "Introducing Work from Anywhere" should be visible
+- **AND** a description paragraph should be visible below the heading
+- **AND** a "Get the app" primary button should be visible
+- **AND** a "No thanks" dismiss link should be visible
 
-  Scenario: Button styling
-    When the modal is open
-    Then the "Get the app" button should have a border radius of 4px
-    And the "Get the app" button should have primary color styling
+#### Scenario: Illustration background color
 
-  Scenario: Accessibility
-    When the modal is open
-    Then the modal should have role="dialog"
-    And the modal should have aria-labelledby pointing to the heading
-    And the modal should have aria-hidden="true" when closed
+- **WHEN** the modal is open
+- **THEN** the illustration area should have a light cyan background (#b2fcff)
 
-  Scenario: Keyboard trap in modal
-    When the modal is open
-    Then Tab should cycle through focusable elements within the modal
-    And focus should NOT escape to the page behind the modal
-```
+### Requirement: Modal dismissal
+
+The modal SHALL close when the user clicks "No thanks", clicks the backdrop, or presses Escape.
+
+#### Scenario: Dismiss modal via close link
+
+- **WHEN** the modal is open
+- **AND** I click the "No thanks" link
+- **THEN** the modal dialog should close
+- **AND** the backdrop overlay should be removed
+- **AND** the page content should be interactive again
+
+#### Scenario: Dismiss modal via backdrop click
+
+- **WHEN** the modal is open
+- **AND** I click the backdrop overlay area
+- **THEN** the modal dialog should close
+
+#### Scenario: Dismiss modal via Escape key
+
+- **WHEN** the modal is open
+- **AND** I press the Escape key
+- **THEN** the modal dialog should close
+
+### Requirement: Modal visual styling
+
+The modal SHALL use specific design tokens matching the ColorLib reference.
+
+#### Scenario: Modal visual styling
+
+- **WHEN** the modal is open
+- **THEN** the modal dialog should have a border radius of 7px
+- **AND** the modal should have a drop shadow
+- **AND** the heading text should be bold (#000)
+- **AND** the paragraph text should be gray (#777)
+
+#### Scenario: Button styling
+
+- **WHEN** the modal is open
+- **THEN** the "Get the app" button should have a border radius of 4px
+- **AND** the "Get the app" button should have primary color styling
+
+### Requirement: Accessibility
+
+The modal SHALL be accessible with proper ARIA attributes and keyboard navigation.
+
+#### Scenario: Accessibility attributes
+
+- **WHEN** the modal is open
+- **THEN** the modal should have role="dialog"
+- **AND** the modal should have aria-labelledby pointing to the heading
+- **AND** the modal should have aria-hidden="true" when closed
+
+#### Scenario: Keyboard trap in modal
+
+- **WHEN** the modal is open
+- **THEN** Tab should cycle through focusable elements within the modal
+- **AND** focus should NOT escape to the page behind the modal
 
 ## Verification checklist
 
