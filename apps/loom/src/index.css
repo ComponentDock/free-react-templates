@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens: dark newsletter footer with teal accent */
+  --color-footer-bg: #1a1a2e;
+  --color-footer-text: #b0b0c0;
+  --color-footer-heading: #ffffff;
+  --color-footer-link: #8888a0;
+  --color-footer-border: #2a2a40;
+  --color-cta-teal: #0ea5e9;
+  --color-cta-teal-hover: #0284c7;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
