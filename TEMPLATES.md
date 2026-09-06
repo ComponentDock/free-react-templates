@@ -772,7 +772,7 @@
 - [x] **Dropdown 17** — [colorlib](https://colorlib.com/wp/template/dropdown-17/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-17.jpg) · [console](https://free-react-templates-console.surge.sh)
 - [x] **Dropdown 18** — [colorlib](https://colorlib.com/wp/template/dropdown-18/) · [dropmenu](https://dropmenu.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-18.jpg)
 - [x] **Dropdown 19** — [colorlib](https://colorlib.com/wp/template/dropdown-19/) · [dropnest](https://dropnest.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-19.jpg)
-- [ ] **Dropdown 20** — [colorlib](https://colorlib.com/wp/template/dropdown-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-20.jpg)
+- [~] **Dropdown 20** — [colorlib](https://colorlib.com/wp/template/dropdown-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-20.jpg)
 
 ## Bootstrap Footers (20)
 
