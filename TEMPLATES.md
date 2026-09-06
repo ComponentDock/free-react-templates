@@ -810,7 +810,7 @@
 - [x] **Modal 09** — [colorlib](https://colorlib.com/wp/template/modal-09/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-09.jpg) · [entrywell](https://free-react-templates-entrywell.surge.sh)
 - [x] **Modal 10** — [colorlib](https://colorlib.com/wp/template/modal-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-10.jpg) · [bellpush](https://bellpush.free.componentdock.com)
 - [x] **Modal 11** — [colorlib](https://colorlib.com/wp/template/modal-11/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-11.jpg) · [popup](https://free-react-templates-popup.surge.sh)
-- [ ] **Modal 12** — [colorlib](https://colorlib.com/wp/template/modal-12/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-12.jpg)
+- [~] **Modal 12** — [colorlib](https://colorlib.com/wp/template/modal-12/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-12.jpg)
 - [ ] **Modal 13** — [colorlib](https://colorlib.com/wp/template/modal-13/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-13.jpg)
 - [ ] **Modal 14** — [colorlib](https://colorlib.com/wp/template/modal-14/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-14.jpg)
 - [ ] **Modal 15** — [colorlib](https://colorlib.com/wp/template/modal-15/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-15.jpg)
