@@ -1,105 +1,97 @@
-# Template: LangPick (Multiselect Dropdown)
+# Langpick — Multiselect Language Selector Template
 
 ## Purpose
 
-Recreation of ColorLib "Multiselect 03" — a minimalist Bootstrap 4 multiselect
-dropdown snippet for selecting programming languages. The original uses Semantic UI
-for a clean, centered dropdown component with a blue accent palette.
+Recreation of ColorLib "Multiselect 03" (https://colorlib.com/wp/template/multiselect-03/). A centered page with a heading, a label, and a multiselect dropdown for selecting programming languages from a list of 10 options. Brand color: #e8647c (pink/rose), font: Lato, white background.
 
-- **Source slug:** `multiselect-03`
-- **Preview URL:** https://preview.colorlib.com/theme/bootstrap/multiselect-03/
-- **ColorLib page:** https://colorlib.com/wp/template/multiselect-03/
-- **Stack:** React 19, Tailwind CSS 4, TypeScript (strict), Vite
+## Requirements
 
-## Design tokens
+### Requirement: Page renders with heading and dropdown
 
-| Token            | Value                                 | Notes                                         |
-| ---------------- | ------------------------------------- | --------------------------------------------- |
-| brand-color      | `#3e64ff`                             | Blue — links, dropdown hover, active items    |
-| text-color       | `#000000`                             | Headings and body text                        |
-| body-text        | `gray`                                | Body paragraph color                          |
-| bg-color         | `#ffffff`                             | Section and page background                   |
-| border-color     | `#e6e6e6`                             | Dropdown borders and menu item separators     |
-| font-family      | `"Lato", Arial, sans-serif`           | Loaded via Google Fonts (weights 300/400/700) |
-| font-size-base   | `16px`                                | Body text                                     |
-| line-height      | `1.8`                                 | Body line height                              |
-| heading-size     | `28px`                                | Section heading                               |
-| dropdown-shadow  | `0px 3px 19px -15px rgba(0,0,0,0.41)` | Active dropdown menu shadow                   |
-| section-padding  | `7em 0`                               | Top/bottom section padding                    |
-| item-font-size   | `13px`                                | Dropdown menu item text size                  |
-| item-hover-bg    | `transparent`                         | Dropdown item hover background                |
-| item-hover-color | `#3e64ff`                             | Dropdown item hover text color                |
+Users SHALL see a centered page with a "Language Selector" heading, a "Select Language" label, and a dropdown trigger showing "Select options".
 
-## Gherkin requirements
+#### Scenario: Page renders with heading and dropdown
 
-### Scenario: Section renders with centered heading
+- **GIVEN** the user opens the Langpick template
+- **WHEN** the page loads
+- **THEN** they see a heading "Language Selector"
+- **AND** they see a label "Select Language"
+- **AND** they see a dropdown trigger showing "Select options"
 
-- Given the page loads
-- Then the section heading "Multiselect #03" is visible
-- And the heading is centered horizontally
-- And the heading text is 28px and black (#000)
+### Requirement: Dropdown opens and shows options
 
-### Scenario: Multiselect dropdown renders with language options
+The dropdown SHALL open on click or keyboard activation and display all 10 language options plus a "Select All" button.
 
-- Given the page loads
-- Then a multiselect dropdown is visible
-- And the dropdown label reads "Select Language"
-- And the dropdown contains options "All", "PHP", "Javascript", "Java", "jQuery", "SQL", "Wordpress", "Python", ".Net", "HTML", "CSS"
-- And the dropdown supports multiple selection
+#### Scenario: Dropdown opens and shows options
 
-### Scenario: Dropdown opens on click
+- **GIVEN** the user clicks the dropdown trigger
+- **WHEN** the dropdown opens
+- **THEN** options PHP, Javascript, Java, jQuery, SQL, Wordpress, Python, .Net, HTML, CSS are visible
+- **AND** a "Select All" button is visible
 
-- Given the multiselect dropdown is closed
-- When the user clicks the dropdown
-- Then the dropdown menu expands
-- And all language options are visible
-- And the menu has a shadow (`0px 3px 19px -15px rgba(0,0,0,0.41)`)
+### Requirement: User can select multiple languages
 
-### Scenario: Option selection and tag rendering
+The dropdown SHALL support selecting multiple languages. The trigger SHALL display "N items selected" when languages are selected.
 
-- Given the dropdown is open
-- When the user selects "PHP"
-- Then a blue (#3e64ff) label tag appears for "PHP"
-- And the tag has white text
-- And clicking the tag's remove icon deselects the option
+#### Scenario: User can select multiple languages
 
-### Scenario: Multiple selections
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks "PHP"
+- **THEN** "PHP" is selected
+- **WHEN** the user clicks "Python"
+- **THEN** both "PHP" and "Python" are selected
+- **AND** the trigger shows "2 items selected"
 
-- Given "PHP" is selected
-- When the user selects "Javascript" and "Python"
-- Then three label tags are visible
-- And each tag is blue (#3e64ff) with white text
+### Requirement: User can deselect languages
 
-### Scenario: All option behavior
+Clicking an already selected language SHALL deselect it.
 
-- Given the dropdown is open
-- When the user selects "All"
-- Then all language options are selected
-- And tags appear for every language
+#### Scenario: User can deselect languages
 
-### Scenario: Dropdown item hover style
+- **GIVEN** "PHP" is selected
+- **WHEN** the user clicks "PHP" again
+- **THEN** "PHP" is deselected
 
-- Given the dropdown is open
-- When the user hovers over a language option
-- Then the item text turns blue (#3e64ff)
-- And the item background stays transparent
+### Requirement: Select All selects all options
 
-### Scenario: Responsive layout
+The "Select All" button SHALL select all language options.
 
-- Given the viewport is less than 768px wide
-- Then the dropdown takes full width
-- And the section heading remains centered
+#### Scenario: Select All selects all options
 
-## Verification checklist
+- **GIVEN** the dropdown is open
+- **WHEN** the user clicks "Select All"
+- **THEN** all 10 languages are selected
+- **AND** the trigger shows "10 items selected"
 
-- [ ] Section renders with centered "Multiselect #03" heading at 28px
-- [ ] Multiselect dropdown shows "Select Language" label
-- [ ] All 11 language options (All + 10 languages) are present
-- [ ] Multiple selection works with tag rendering
-- [ ] Tags are blue (#3e64ff) with white text and remove icon
-- [ ] Dropdown menu has shadow when open
-- [ ] Hover on items shows blue text on transparent background
-- [ ] Responsive: full-width on mobile, centered on desktop
-- [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
-- [ ] Tests pass with 100% coverage
+### Requirement: Clear All clears selections
+
+The "Clear All" button SHALL clear all selections.
+
+#### Scenario: Clear All clears selections
+
+- **GIVEN** multiple languages are selected
+- **WHEN** the user clicks "Clear All"
+- **THEN** no languages are selected
+- **AND** the trigger shows "Select options"
+
+### Requirement: Footer links to Component Dock
+
+The footer SHALL display a "Component Dock" link to https://www.componentdock.com/.
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** they look at the footer
+- **THEN** they see a "Component Dock" link to https://www.componentdock.com/
+
+### Requirement: Keyboard navigation works
+
+The dropdown SHALL support keyboard navigation with ArrowDown, ArrowUp, Enter, Space, and Escape keys.
+
+#### Scenario: Keyboard navigation works
+
+- **GIVEN** the dropdown is closed
+- **WHEN** the user presses ArrowDown
+- **THEN** the dropdown opens
+- **WHEN** the user presses ArrowDown and Enter
+- **THEN** the focused language is selected
