@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — inspired by the original ColorLib "Dropdown 20"
+     snippet (blue category headings, white background, gray borders). */
+  --color-brand: #0071bc;
+  --color-brand-dark: #005a96;
+
+  --color-surface: #ffffff;
+  --color-surface-alt: #f8f9fa;
+  --color-border: #dee2e6;
+  --color-text: #333333;
+  --color-text-muted: #6c757d;
+
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
