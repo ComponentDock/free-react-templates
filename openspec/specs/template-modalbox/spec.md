@@ -16,33 +16,29 @@ full-width CTA button.
 
 Extracted from the preview stylesheet (`css/style.css`) and HTML structure:
 
-| Token                    | Value                                  | Notes                                  |
-| ------------------------ | -------------------------------------- | -------------------------------------- |
-| Body font                | `Roboto`, sans-serif, 300 weight       | Main body text                         |
-| Heading font             | `Roboto`, sans-serif                   | Same family, default weight            |
-| Paragraph color (page)   | `#b3b3b3`                              | Light gray text                        |
-| Paragraph color (modal)  | `#777`                                 | Darker gray for modal body paragraphs  |
-| Heading color (in modal) | `#000`                                 | Black headings                         |
-| Close button color       | `#000`                                 | Black close icon                       |
-| Brand color (modal bg)   | `#fff4e4`                              | Warm cream/light orange (`bg-4` class) |
-| Button style             | `btn-primary`                          | Full-width block button, sharp corners |
-| Button radius            | `4px`                                  | Slightly rounded                       |
-| Button padding           | `py-3`                                 | Taller button                          |
-| Button color             | Bootstrap primary blue (`#007bff`)     | Standard Bootstrap primary             |
-| Modal background         | `#fff4e4` (cream)                      | Warm cream background                  |
-| Modal border-radius      | `7px`                                  | Slightly rounded corners               |
-| Modal shadow             | `0 10px 50px -10px rgba(0,0,0,0.9)`    | Deep, strong shadow                    |
-| Modal content bg         | Transparent → inherits from modal-body | No separate content bg                 |
-| Coupon box bg            | `#fff`                                 | White background                       |
-| Coupon box border        | `2px dashed #6c757d`                   | Dashed gray border                     |
-| Coupon box text          | `#000`                                 | Black monospace text                   |
-| Coupon box padding       | `10px`                                 | Internal spacing                       |
-| Promo image width        | `200px`                                | Fixed-width flex item                  |
-| Close icon               | icomoon `icon-close`                   | Use Lucide X icon                      |
-| Page layout              | Full viewport height, centered         | `height: 100vh`                        |
-| Content alignment        | Vertically + horizontally centered     | Bootstrap `align-items-center`         |
-| Cancel text              | Small, gray color                      | Bottom of modal                        |
-| Launch button            | `btn-secondary`, `px-4 py-3`           | Centered on page                       |
+| Token                    | Value                               | Notes                                 |
+| ------------------------ | ----------------------------------- | ------------------------------------- |
+| Body font                | `Roboto`, sans-serif, 300 weight    | Main body text                        |
+| Heading font             | `Roboto`, sans-serif                | Same family, default weight           |
+| Paragraph color (modal)  | `#777`                              | Darker gray for modal body paragraphs |
+| Heading color (in modal) | `#000`                              | Black headings                        |
+| Close button color       | `#000`                              | Black close icon                      |
+| Brand color (modal bg)   | `#fff4e4`                           | Warm cream/light orange               |
+| Button style             | Full-width block button             | Sharp corners                         |
+| Button radius            | `4px`                               | Slightly rounded                      |
+| Button padding           | `py-3`                              | Taller button                         |
+| Button color             | Bootstrap primary blue (`#007bff`)  | Standard Bootstrap primary            |
+| Modal background         | `#fff4e4` (cream)                   | Warm cream background                 |
+| Modal border-radius      | `7px`                               | Slightly rounded corners              |
+| Modal shadow             | `0 10px 50px -10px rgba(0,0,0,0.9)` | Deep, strong shadow                   |
+| Coupon box bg            | `#fff`                              | White background                      |
+| Coupon box border        | `2px dashed #6c757d`                | Dashed gray border                    |
+| Coupon box text          | `#000`                              | Black monospace text                  |
+| Promo image width        | `200px`                             | Fixed-width flex item                 |
+| Page layout              | Full viewport height, centered      | `height: 100vh`                       |
+| Content alignment        | Vertically + horizontally centered  | Flex centering                        |
+| Cancel text              | Small, gray color                   | Bottom of modal                       |
+| Launch button            | `px-6 py-3`                         | Centered on page                      |
 
 ## Visual Design
 
@@ -59,81 +55,146 @@ Clicking the button opens a centered modal dialog with:
 - "Sorry, I don't want this." cancel/dismiss link at the bottom
 - Deep box-shadow, slightly rounded corners (7px), clean promotional feel
 
-## Gherkin Requirements
+## Requirements
 
-### Background
+### Requirement: Page layout
 
-Given the page loads with a centered layout
-When the viewport is displayed
-Then the content is vertically and horizontally centered
-And the page title "Modal #4" is visible
-And a "Launch modal" button is displayed below the title
+The page SHALL display a centered layout with a heading and launch button.
 
-### Scenario: Modal opens on button click
+#### Scenario: Page renders centered content
 
-Given the page is loaded
-When the user clicks the "Launch modal" button
-Then a modal dialog appears centered in the viewport
-And the modal has a warm cream (#fff4e4) background
-And the modal displays a promotional image on the left side
-And the modal displays the title "60% off coupon"
-And the modal displays a description paragraph
-And the modal displays a dashed-border coupon code box with text "SUMMER60"
-And the modal displays a full-width "Use a coupon" primary button
-And the modal displays a "Sorry, I don't want this." cancel link at the bottom
-And a close button (X) is visible in the top-right corner
+- **GIVEN** the page loads
+- **WHEN** the viewport is displayed
+- **THEN** the content is vertically and horizontally centered
+- **AND** the page title "Modalbox" is visible
+- **AND** a "Launch modal" button is displayed below the title
 
-### Scenario: Modal closes on close button click
+### Requirement: Modal opens on button click
 
-Given the modal is open
-When the user clicks the close button (X)
-Then the modal closes with a fade-out animation
-And the page content is visible again
+The modal SHALL open when the user clicks the launch button.
 
-### Scenario: Modal closes on backdrop click
+#### Scenario: User opens the modal
 
-Given the modal is open
-When the user clicks the dark backdrop area outside the modal
-Then the modal closes
-And the page content is visible again
+- **GIVEN** the page is loaded
+- **WHEN** the user clicks the "Launch modal" button
+- **THEN** a modal dialog appears centered in the viewport
+- **AND** the modal has a warm cream (#fff4e4) background
+- **AND** the modal displays a promotional image on the left side
+- **AND** the modal displays the title "60% off coupon"
+- **AND** the modal displays a description paragraph
+- **AND** the modal displays a dashed-border coupon code box with text "SUMMER60"
+- **AND** the modal displays a full-width "Use a coupon" primary button
+- **AND** the modal displays a "Sorry, I don't want this." cancel link at the bottom
+- **AND** a close button (X) is visible in the top-right corner
 
-### Scenario: Modal closes on Escape key
+### Requirement: Modal closes on close button
 
-Given the modal is open
-When the user presses the Escape key
-Then the modal closes
-And the page content is visible again
+The modal SHALL close when the user clicks the close button.
 
-### Scenario: Modal closes on cancel link click
+#### Scenario: User closes via X button
 
-Given the modal is open
-When the user clicks the "Sorry, I don't want this." link
-Then the modal closes
-And the page content is visible again
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the close button (X)
+- **THEN** the modal closes
+- **AND** the page content is visible again
 
-### Scenario: Modal content layout is correct
+### Requirement: Modal closes on backdrop click
 
-Given the modal is open
-Then the promotional image occupies a fixed-width column on the left (200px)
-And the text content column is on the right
-And the coupon code box has a white background with dashed gray border
-And the "Use a coupon" button spans the full width of the text column
+The modal SHALL close when the user clicks outside the modal content.
+
+#### Scenario: User closes via backdrop
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the dark backdrop area outside the modal
+- **THEN** the modal closes
+- **AND** the page content is visible again
+
+### Requirement: Modal closes on Escape key
+
+The modal SHALL close when the user presses Escape.
+
+#### Scenario: User closes via Escape
+
+- **GIVEN** the modal is open
+- **WHEN** the user presses the Escape key
+- **THEN** the modal closes
+- **AND** the page content is visible again
+
+### Requirement: Modal closes on cancel link
+
+The modal SHALL close when the user clicks the cancel link.
+
+#### Scenario: User closes via cancel link
+
+- **GIVEN** the modal is open
+- **WHEN** the user clicks the "Sorry, I don't want this." link
+- **THEN** the modal closes
+- **AND** the page content is visible again
+
+### Requirement: Modal content layout
+
+The modal SHALL display content in the correct layout.
+
+#### Scenario: Content layout is correct
+
+- **GIVEN** the modal is open
+- **THEN** the promotional image occupies a fixed-width column on the left (200px)
+- **AND** the text content column is on the right
+- **AND** the coupon code box has a white background with dashed gray border
+- **AND** the "Use a coupon" button spans the full width of the text column
+
+### Requirement: Focus trap
+
+The modal SHALL trap focus within itself when open.
+
+#### Scenario: Tab key cycles through focusable elements
+
+- **GIVEN** the modal is open
+- **WHEN** the user presses Tab on the last focusable element
+- **THEN** focus wraps to the first focusable element
+
+#### Scenario: Shift+Tab cycles backwards
+
+- **GIVEN** the modal is open
+- **WHEN** the user presses Shift+Tab on the first focusable element
+- **THEN** focus wraps to the last focusable element
+
+### Requirement: Focus restoration
+
+The modal SHALL return focus to the trigger element on close.
+
+#### Scenario: Focus returns to trigger
+
+- **GIVEN** the modal is open and the trigger button was focused
+- **WHEN** the modal closes
+- **THEN** focus returns to the trigger button
+
+### Requirement: Footer
+
+The template SHALL include a footer linking to Component Dock.
+
+#### Scenario: Footer displays correctly
+
+- **GIVEN** the page is loaded
+- **THEN** the footer shows the site name "Modalbox"
+- **AND** the footer contains a link to https://www.componentdock.com/
+- **AND** the link text is "More templates at Component Dock"
 
 ## Verification Checklist
 
-- [ ] Modal opens with fade-in animation on button click
-- [ ] Modal closes on X button click
-- [ ] Modal closes on backdrop click
-- [ ] Modal closes on Escape key
-- [ ] Modal closes on cancel link click
-- [ ] Warm cream (#fff4e4) background applied to modal body
-- [ ] Promotional image renders at 200px width on the left
-- [ ] Coupon code box shows dashed border with white background
-- [ ] "Use a coupon" button is full-width with primary blue color
-- [ ] Cancel link text is gray and small
-- [ ] Modal has 7px border-radius and deep box-shadow
-- [ ] Layout is responsive (stacks vertically on mobile)
-- [ ] Accessibility: focus trap within modal when open
-- [ ] Accessibility: aria-labelledby on modal dialog
-- [ ] Accessibility: focus returns to trigger button on close
-- [ ] Footer links to https://www.componentdock.com/
+- [x] Modal opens with fade-in animation on button click
+- [x] Modal closes on X button click
+- [x] Modal closes on backdrop click
+- [x] Modal closes on Escape key
+- [x] Modal closes on cancel link click
+- [x] Warm cream (#fff4e4) background applied to modal body
+- [x] Promotional image renders at 200px width on the left
+- [x] Coupon code box shows dashed border with white background
+- [x] "Use a coupon" button is full-width with primary blue color
+- [x] Cancel link text is gray and small
+- [x] Modal has 7px border-radius and deep box-shadow
+- [x] Layout is responsive (stacks vertically on mobile)
+- [x] Accessibility: focus trap within modal when open
+- [x] Accessibility: aria-modal on modal dialog
+- [x] Accessibility: focus returns to trigger button on close
+- [x] Footer links to https://www.componentdock.com/
