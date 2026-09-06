@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-dropnest-brand: #3fc5f0;
+  --color-dropnest-brand-hover: #12b5ea;
+  --color-dropnest-bg: #fafafa;
+  --color-dropnest-card: #ffffff;
+  --color-dropnest-text: #6c757d;
+  --color-dropnest-heading: #000000;
+  --color-dropnest-border: rgba(0, 0, 0, 0.1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family:
+      'Roboto',
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      'Helvetica Neue',
+      Arial,
+      'Noto Sans',
+      sans-serif;
+  }
+}
