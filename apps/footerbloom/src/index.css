@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens: green footer with yellow-gold accent */
+  --color-footer-bg: #68983b;
+  --color-footer-border: #75aa42;
+  --color-footer-link: #fff8a1;
+  --color-footer-heading: #ffffff;
+  --color-footer-text: rgba(255, 255, 255, 0.5);
+  --color-footer-muted: rgba(255, 255, 255, 0.4);
+  --color-footer-social-border: #81ba4c;
+  --color-footer-social-hover-border: #fff8a1;
+  --color-footer-subscribe-bg: #81ba4c;
+  --color-section-bg: #f8f8f8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
