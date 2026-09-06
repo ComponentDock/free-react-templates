@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #fd5f00;
+  --color-brand-light: #ff7a2e;
+  --color-brand-dark: #e04f00;
+  --color-surface: #fafafa;
+  --color-body-text: #808080;
+  --color-heading-text: #000000;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--color-surface);
+    color: var(--color-body-text);
+  }
+}
