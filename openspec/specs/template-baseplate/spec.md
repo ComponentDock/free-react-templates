@@ -9,100 +9,89 @@ Preview: https://preview.colorlib.com/theme/bft/bootstrap-footer-03/
 Stack: React 19, Vite, Tailwind CSS 4, TypeScript (strict). Vitest + Testing
 Library with 100% coverage enforced.
 
-## Source Reference
+## Requirements
 
-- **ColorLib slug:** bootstrap-footer-03
-- **Preview URL:** https://preview.colorlib.com/theme/bft/bootstrap-footer-03/
-- **ColorLib page:** https://colorlib.com/wp/template/bootstrap-footer-03/
-- **Description:** A clean, minimal white footer template with a logo, colorful
-  social icon circles (Facebook, Twitter, Instagram, Behance, Dribbble, YouTube),
-  two columns of navigation links, and a centered copyright line separated by a
-  top border.
+### Requirement: Footer renders with brand logo
 
-## Design Tokens (extracted from live preview CSS)
+The footer MUST display a bold black logo link to the homepage.
 
-### Colors
+#### Scenario: Logo renders
 
-| Token             | Value     | Usage                                  |
-| ----------------- | --------- | -------------------------------------- |
-| Footer background | `#fff`    | White — main footer section bg         |
-| Border top        | `#efefef` | Light gray — separator above footer    |
-| Copyright border  | `#efefef` | Light gray — separator above copyright |
-| Logo text         | `#000`    | Black — site logo                      |
-| Nav link text     | `#777`    | Muted gray — nav link default color    |
-| Copyright text    | `#777`    | Muted gray                             |
-| Social FB         | `#3b579b` | Facebook brand blue                    |
-| Social TW         | `#00a0fb` | Twitter brand blue                     |
-| Social IG         | `#c31574` | Instagram brand pink                   |
-| Social BE         | `#394cff` | Behance brand blue                     |
-| Social DR         | `#ff2e6e` | Dribbble brand pink-red                |
-| Social YT         | `#fa2614` | YouTube brand red                      |
-| Social icon glyph | `#fff`    | White — icon color inside circles      |
+- **WHEN** the Baseplate page loads
+- **THEN** a link with text "Baseplate" is visible in the footer
+- **AND** the link points to "#"
 
-### Typography
+### Requirement: Social media icons render with brand colors
 
-| Element     | Font family                                        |
-| ----------- | -------------------------------------------------- |
-| Footer body | `"Poppins", sans-serif`                            |
-| Body (page) | `"Roboto", -apple-system, BlinkMacSystemFont, ...` |
+The footer MUST display six social media icon links, each in a colored circle
+matching its platform brand color.
 
-### Spacing & Shapes
+#### Scenario: Six social icons render
 
-| Token            | Value                                           |
-| ---------------- | ----------------------------------------------- |
-| Footer padding   | `4rem 0` (vertical)                             |
-| Logo size        | 30px, font-weight 900                           |
-| Social buttons   | 40x40px, `border-radius: 50%` (perfect circles) |
-| Nav link size    | 14px                                            |
-| Nav link pad     | `10px`                                          |
-| Copyright pad    | `padding-top: 50px`, centered                   |
-| Copyright border | `border-top: 1px solid #efefef`                 |
+- **WHEN** the Baseplate page loads
+- **THEN** links for Facebook, Twitter, Instagram, Behance, Dribbble, and YouTube are visible
+- **AND** each link opens in a new tab with rel="noreferrer"
+- **AND** each link has an accessible aria-label matching its platform name
 
-## Component Structure
+### Requirement: Navigation links render in two columns
 
-```
-App.tsx
-  └── Footer.tsx
-        ├── Logo row (col-4 logo + col-8 social icons)
-        ├── Nav row (col-6 left nav + col-6 right nav)
-        └── Copyright row (centered, bordered)
-```
+The footer MUST display left-aligned navigation (Privacy, Policy) and
+right-aligned navigation (Home, Our works, About, Blog, Contact).
 
-## Gherkin Scenarios
+#### Scenario: Left nav links render
 
-### Scenario: Footer renders with logo
+- **WHEN** the Baseplate page loads
+- **THEN** links for "Privacy" and "Policy" are visible
 
-Given the Baseplate page loads
-Then a logo "Baseplate" is visible in the footer
-And the logo is styled bold and black
+#### Scenario: Right nav links render
 
-### Scenario: Social icons are visible
+- **WHEN** the Baseplate page loads
+- **THEN** links for "Home", "Our works", "About", "Blog", and "Contact" are visible
 
-Given the Baseplate page loads
-Then 6 social icon circles are rendered
-And each circle has a distinct brand color
-And the icons are white on colored backgrounds
+### Requirement: Copyright notice renders
 
-### Scenario: Navigation links render
+The footer MUST display a centered copyright line with the current year.
 
-Given the Baseplate page loads
-Then left navigation shows "Privacy" and "Policy"
-And right navigation shows "Home", "Our works", "About", "Blog", "Contact"
+#### Scenario: Copyright renders
 
-### Scenario: Copyright renders
+- **WHEN** the Baseplate page loads
+- **THEN** a copyright notice containing the current year is visible
 
-Given the Baseplate page loads
-Then a copyright line is visible
-And it contains a link to https://www.componentdock.com/
+### Requirement: Component Dock attribution link
 
-### Scenario: Responsive layout
+The footer MUST include a link to https://www.componentdock.com/ branded as
+"Component Dock".
 
-Given the Baseplate page loads on mobile
-Then the logo and social icons stack vertically
-And the nav links wrap appropriately
+#### Scenario: Attribution link renders
 
-### Scenario: Footer links have hover transition
+- **WHEN** the Baseplate page loads
+- **THEN** a link to "https://www.componentdock.com/" with text "Component Dock" is visible
+- **AND** the link opens in a new tab with rel="noreferrer"
 
-Given the Baseplate page loads
-When hovering over a nav link
-Then the link transitions smoothly
+### Requirement: Footer has white background
+
+The footer MUST have a white background with a light gray top border.
+
+#### Scenario: Footer styling
+
+- **WHEN** the Baseplate page loads
+- **THEN** the footer element has a white background class
+
+### Requirement: Social icons have brand colors
+
+Each social icon circle MUST use its platform's brand color as background.
+
+#### Scenario: Facebook icon color
+
+- **WHEN** the Baseplate page loads
+- **THEN** the Facebook icon link has background color #3b579b
+
+#### Scenario: Twitter icon color
+
+- **WHEN** the Baseplate page loads
+- **THEN** the Twitter icon link has background color #00a0fb
+
+#### Scenario: Instagram icon color
+
+- **WHEN** the Baseplate page loads
+- **THEN** the Instagram icon link has background color #c31574
