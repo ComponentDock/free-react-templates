@@ -1,4 +1,4 @@
-# Template: Soleplate (Footer)
+# Template: Soleplate (Clean White Footer)
 
 ## Purpose
 
@@ -13,128 +13,114 @@ Recreation of ColorLib's **Bootstrap Footer V09** template as a modern React com
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript (strict)
 - **Category:** Footer
 
-## Design tokens (extracted from live preview CSS)
+## Design Tokens
 
-| Token | Value | Source |
-|---|---|---|
-| Footer font family | `"Poppins", sans-serif` | `.footer-16371` |
-| Body font family | `"Roboto", sans-serif` | `body` |
-| Logo color | `#4200ff` (vibrant blue-purple) | `.footer-16371 .footer-site-logo a` |
-| Logo size | `2rem`, font-weight 900 (black) | `.footer-16371 .footer-site-logo` |
-| Nav link color | `#000` (black) | `.footer-16371 .nav-links li a` |
-| Nav link hover | `#4200ff` (vibrant blue-purple) | `.footer-16371 .nav-links li a:hover` |
-| Social heading color | `#000`, bold, 18px | `.footer-16371 .social h3` |
-| Instagram icon color | `#df588a` (pink) | `.footer-16371 .social ul li.in a` |
-| Twitter icon color | `#15b8ff` (sky blue) | `.footer-16371 .social ul li.tw a` |
-| Facebook icon color | `#3742d0` (deep blue) | `.footer-16371 .social ul li.fb a` |
-| Dribbble icon color | `#fa38c1` (magenta) | `.footer-16371 .social ul li.dr a` |
-| Pinterest icon color | `#dd4d5a` (red) | `.footer-16371 .social ul li.pin a` |
-| Copyright color | `#999999` (gray) | `.footer-16371 .copyright` |
-| Content area bg | `bg-light` | `.content` class |
-| Content area height | `70vh` | `.content` class |
-| Footer padding | `7rem 0` (≈ `py-28`) | `.footer-16371` |
-| Footer background | white (default, no image) | — |
+Extracted from the live preview CSS:
 
-## Visual design notes (from preview analysis)
+| Token          | Value                           | Notes            |
+| -------------- | ------------------------------- | ---------------- |
+| Brand / accent | `#4200ff` (vibrant blue-purple) | Logo + nav hover |
+| Footer font    | `Poppins`                       | Google Fonts     |
+| Body font      | `Roboto`                        | Google Fonts     |
+| Logo size      | `2rem`, font-weight 900         | Centered top     |
+| Nav link color | `#000000` (black)               | Default state    |
+| Nav hover      | `#4200ff` (blue-purple)         | Hover transition |
+| Social heading | `#000000`, bold, 18px           | "Stay in touch"  |
+| Instagram      | `#df588a` (pink)                | Social icon      |
+| Twitter        | `#15b8ff` (sky blue)            | Social icon      |
+| Facebook       | `#3742d0` (deep blue)           | Social icon      |
+| Dribbble       | `#fa38c1` (magenta)             | Social icon      |
+| Pinterest      | `#dd4d5a` (red)                 | Social icon      |
+| Copyright      | `#999999` (gray)                | Bottom text      |
+| Footer bg      | white                           | No image overlay |
+| Footer padding | `7rem 0`                        | Vertical spacing |
 
-The template is a **centered, clean white footer** — no background image. Everything is centered in a single column (max-width `col-md-9`).
+### Visual Design
 
-**Section order (top to bottom):**
+- Clean white background, centered single-column layout (max-width ~4xl)
+- Logo at top: "Soleplate" in large bold blue-purple text
+- Horizontal nav links inline below logo
+- "Stay in touch" heading + colorful social icons
+- Gray copyright bar at bottom with Component Dock attribution
 
-1. **Site logo:** "Colorlib" in large bold blue-purple (#4200ff) text, centered, 2rem, font-weight 900
-2. **Horizontal navigation:** inline links — About, Services, Press, Careers, FAQ, Legal, Contact. Black text, hover to blue-purple. Each link has 10px padding.
-3. **Social section:** "Stay in touch" heading (bold, 18px, black), followed by inline social icons — each with a unique brand color (Instagram pink, Twitter blue, Facebook blue, Dribbble magenta, Pinterest red). Each icon has 10px padding.
-4. **Copyright:** centered gray text (#999) — "© Colorlib. All Rights Reserved."
+## Requirements
 
-**Key differences from Bootstrap Footer 08:**
-- No dark background image — clean white footer
-- Centered layout (single column, not 5-column)
-- Horizontal navigation links (not vertical)
-- Colored social icons (not uniform gray)
-- No overlay/dark treatment
+### Requirement: Footer renders with white background
 
-**Demo area above footer:** bg-light, centered "Footer #9" heading (70vh height). Our React version should just render the footer itself.
+The footer component SHALL render with a white background and Poppins font family.
 
-## Gherkin requirements
+#### Scenario: Footer background and font
 
-### Scenario: Footer renders with white background
+- **WHEN** the footer component is mounted
+- **THEN** the footer has a white background
+- **AND** the footer uses Poppins font family
+- **AND** the footer has 7rem vertical padding
 
-```gherkin
-Given the footer component is mounted
-Then the footer has a white (default) background
-And the footer text is readable against the white background
-```
+### Requirement: Site logo display
 
-### Scenario: Site logo display
+The footer SHALL display a centered site logo in blue-purple.
 
-```gherkin
-Given the footer is rendered
-Then the site logo is centered
-And the logo text is blue-purple (#4200ff)
-And the logo is 2rem font size with font-weight 900
-```
+#### Scenario: Logo styling
 
-### Scenario: Horizontal navigation links
+- **WHEN** the footer is rendered
+- **THEN** the site logo text "Soleplate" is visible
+- **AND** the logo is centered
+- **AND** the logo uses blue-purple (#4200ff) color
+- **AND** the logo has font-weight 900
 
-```gherkin
-Given the footer is rendered
-Then navigation links are displayed horizontally (inline)
-And links include: About, Services, Press, Careers, FAQ, Legal, Contact
-And link text is black (#000) by default
-And links turn blue-purple (#4200ff) on hover
-And each link has 10px padding
-```
+### Requirement: Horizontal navigation links
 
-### Scenario: Social media icons with brand colors
+The footer SHALL render horizontal inline navigation links.
 
-```gherkin
-Given the footer is rendered
-Then a "Stay in touch" heading is shown (bold, 18px, black)
-And social icons are displayed inline below the heading
-And Instagram icon is pink (#df588a)
-And Twitter icon is sky blue (#15b8ff)
-And Facebook icon is deep blue (#3742d0)
-And Dribbble icon is magenta (#fa38c1)
-And Pinterest icon is red (#dd4d5a)
-```
+#### Scenario: Navigation links
 
-### Scenario: Copyright bar
+- **WHEN** the footer is rendered
+- **THEN** navigation links include About, Services, Press, Careers, FAQ, Legal, Contact
+- **AND** links are displayed horizontally
+- **AND** link text is black (#000) by default
+- **AND** links have 10px horizontal padding
 
-```gherkin
-Given the footer is rendered
-Then a copyright line is centered at the bottom
-And the copyright text is gray (#999999)
-```
+### Requirement: Social media icons with brand colors
 
-### Scenario: Responsive layout
+The footer SHALL display social media icons each in their brand color.
 
-```gherkin
-Given the footer is rendered on a mobile device
-Then navigation links wrap gracefully
-And the footer remains centered and readable
-```
+#### Scenario: Social icons
 
-### Scenario: Accessibility
+- **WHEN** the footer is rendered
+- **THEN** a "Stay in touch" heading is shown (bold, black)
+- **AND** social icons are displayed for Instagram, Twitter, Facebook, Dribbble, Pinterest
+- **AND** each icon has its brand color (pink, sky blue, deep blue, magenta, red)
+- **AND** social icons open in new tabs with noreferrer
 
-```gherkin
-Given the footer is rendered
-Then all links are keyboard-focusable
-And interactive elements have visible focus indicators
-And color contrast meets WCAG AA standards
-```
+### Requirement: Copyright bar with Component Dock link
 
-## Verification checklist
+The footer SHALL display a centered copyright bar linking to Component Dock.
 
-- [ ] Footer renders with white background
-- [ ] Site logo centered, blue-purple (#4200ff), 2rem, bold
-- [ ] Horizontal nav links (About, Services, Press, Careers, FAQ, Legal, Contact)
-- [ ] Link color #000, hover #4200ff
-- [ ] "Stay in touch" heading above social icons
-- [ ] Social icons with correct brand colors
-- [ ] Copyright in gray (#999)
-- [ ] Responsive: links wrap on mobile
-- [ ] Font: Poppins for footer, Roboto for body
-- [ ] No reference to ColorLib in app code
-- [ ] Footer links to componentdock.com
-- [ ] Vitest coverage 100%
-- [ ] No existing apps/ or openspec/specs/ conflicts
+#### Scenario: Copyright and attribution
+
+- **WHEN** the footer is rendered
+- **THEN** a copyright line is centered at the bottom
+- **AND** the copyright text is gray (#999)
+- **AND** a "Component Dock" link points to https://www.componentdock.com/
+
+### Requirement: Accessibility
+
+The footer SHALL be accessible with proper ARIA attributes and keyboard navigation.
+
+#### Scenario: Accessible elements
+
+- **WHEN** the footer is rendered
+- **THEN** all links are keyboard-focusable
+- **AND** social icon links have aria-label attributes
+- **AND** SVG icons have aria-hidden="true"
+- **AND** the footer uses semantic `<footer>` with role="contentinfo"
+
+### Requirement: Responsive layout
+
+The footer SHALL be responsive on mobile devices.
+
+#### Scenario: Mobile responsiveness
+
+- **WHEN** the footer is rendered on a narrow viewport
+- **THEN** navigation links wrap gracefully
+- **AND** the footer remains centered and readable

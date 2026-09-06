@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens: clean white footer — Bootstrap Footer 09 */
+  --color-brand: #4200ff;
+  --color-nav-text: #000000;
+  --color-social-heading: #000000;
+  --color-copyright: #999999;
+  --color-content-bg: #f3f4f6;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
