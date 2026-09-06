@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens: clean white footer with blue accent */
+  --color-footer-bg: #ffffff;
+  --color-footer-accent: #3e64ff;
+  --color-footer-text: #777777;
+  --color-footer-link: #777777;
+  --color-footer-link-hover: #3e64ff;
+  --color-footer-divider: #efefef;
+  --color-footer-input-bg: #e6e6e6;
+  --color-footer-input-placeholder: #b3b3b3;
+  --color-footer-copyright: #777777;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
