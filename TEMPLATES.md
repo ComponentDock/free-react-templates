@@ -806,7 +806,7 @@
 - [x] **Modal 05** — [colorlib](https://colorlib.com/wp/template/modal-05/) · [modalize](https://modalize.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-05.jpg)
 - [x] **Modal 06** — [colorlib](https://colorlib.com/wp/template/modal-06/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-06.jpg) · [gateway](https://gateway.free.componentdock.com)
 - [x] **Modal 07** — [colorlib](https://colorlib.com/wp/template/modal-07/) · [communique](https://communique.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-07.jpg)
-- [ ] **Modal 08** — [colorlib](https://colorlib.com/wp/template/modal-08/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-08.jpg)
+- [~] **Modal 08** — [colorlib](https://colorlib.com/wp/template/modal-08/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-08.jpg)
 - [ ] **Modal 09** — [colorlib](https://colorlib.com/wp/template/modal-09/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-09.jpg)
 - [ ] **Modal 10** — [colorlib](https://colorlib.com/wp/template/modal-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-10.jpg)
 - [ ] **Modal 11** — [colorlib](https://colorlib.com/wp/template/modal-11/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-11.jpg)
