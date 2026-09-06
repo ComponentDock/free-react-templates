@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens: feminine footer — light pink background, salmon coral accent */
+  --color-footer-bg: #f8f1f1;
+  --color-accent: #f17e7e;
+  --color-text-primary: rgba(0, 0, 0, 0.4);
+  --color-text-link: rgba(0, 0, 0, 0.3);
+  --color-input-bg: rgba(0, 0, 0, 0.05);
+  --color-border-top: rgba(0, 0, 0, 0.1);
+  --color-white: #ffffff;
+  --color-section-bg: #f8f8f8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
