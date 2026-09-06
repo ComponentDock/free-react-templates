@@ -795,7 +795,7 @@
 - [x] **Bootstrap Footer 17** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-17/) · [footerlume](https://footerlume.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-17.jpg)
 - [x] **Bootstrap Footer 18** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-18/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-18.jpg) · [footerdash](https://free-react-templates-footerdash.surge.sh)
 - [x] **Bootstrap Footer 19** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-19/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-19.jpg) · [amethyst](https://free-react-templates-amethyst.surge.sh)
-- [ ] **Bootstrap Footer 20** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-20.jpg)
+- [~] **Bootstrap Footer 20** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-20.jpg)
 
 ## Bootstrap Modals (20)
 
