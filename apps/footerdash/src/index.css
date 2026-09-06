@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens: dark footer with #121212 background, subscription form */
+  --color-footer-bg: #121212;
+  --color-footer-text: rgba(255, 255, 255, 0.5);
+  --color-footer-heading: #ffffff;
+  --color-footer-muted: rgba(255, 255, 255, 0.3);
+  --color-footer-border: rgba(255, 255, 255, 0.1);
+  --color-footer-accent: #007bff;
+  --color-footer-accent-hover: #0069d9;
+  --color-footer-input-bg: #ffffff;
+  --color-footer-icon-bg: #1a1a1a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
