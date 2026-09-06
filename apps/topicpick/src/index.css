@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-topicpick-bg: #fff;
+  --color-topicpick-text: #6c757d;
+  --color-topicpick-heading: #000;
+  --color-topicpick-brand: #e8647c;
+  --color-topicpick-border: #e6e6e6;
+  --color-topicpick-hover-bg: #e8647c;
+  --color-topicpick-hover-text: #fff;
+  --color-topicpick-label-bg: #e8647c;
+  --color-topicpick-label-text: #fff;
+  --color-topicpick-card-bg: #fff;
+  --color-topicpick-card-border: #e6e6e6;
+
+  --font-sans: 'Lato', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
