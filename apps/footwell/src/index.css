@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens: dark navy footer with purple accent */
+  --color-footer-bg: #141d2a;
+  --color-footer-text: #ffffff;
+  --color-footer-muted: #666873;
+  --color-cta-accent: #8186d5;
+  --color-cta-shadow: rgba(52, 58, 64, 0.2);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

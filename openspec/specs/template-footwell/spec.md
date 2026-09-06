@@ -6,153 +6,146 @@ Recreation of ColorLib's "Bootstrap Footer 01" — a dark-themed website footer
 with a CTA banner, multi-column link sections, and social media icons. This is
 a focused footer component template, not a full-page website template.
 
-- **Source:** [ColorLib Bootstrap Footer 01](https://colorlib.com/wp/template/bootstrap-footer-01/)
+- **Source:** ColorLib Bootstrap Footer 01 (https://colorlib.com/wp/template/bootstrap-footer-01/)
 - **Preview URL:** https://preview.colorlib.com/theme/bft/bootstrap-footer-01/
 - **New name:** `footwell` (footer + well, a deep section)
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 
 ## Design Tokens
 
-Extracted from the live preview CSS (`css/style.css`):
+Extracted from the live preview CSS (css/style.css):
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| **Font family** | `"Roboto", sans-serif` | System font stack |
-| **Footer background** | `#141d2a` | Dark navy |
-| **Footer text color** | `#fff` | White |
-| **Footer padding** | `7rem 0` | Generous vertical spacing |
-| **Heading (h3) size** | `16px` | Small section headings |
-| **Heading margin-bottom** | `10px` | Tight under headings |
-| **Link color** | `#666873` | Muted gray-purple |
-| **Link hover color** | `#fff` | White on hover |
-| **CTA background** | `#8186d5` | Purple/indigo accent |
-| **CTA shadow** | `-20px -20px 0 0 rgba(52,58,64,0.2)` | Offset box shadow |
-| **CTA button** | `btn btn-dark rounded-0 py-3 px-5` | Dark, square, padded |
-| **CTA position** | `relative, top: -150px` | Overlaps above footer |
-| **Social icon bg** | `#8186d5` | Same purple as CTA |
-| **Social icon shape** | `border-radius: 50%` | Circular, 40x40px |
-| **Social icon color** | `#fff` | White |
-| **Footer logo** | `#fff, 20px, uppercase, letter-spacing .1rem` | Branded logo text |
-| **Copyright** | `color: #666873` | Muted gray |
-| **Link transition** | `.3s all ease` | Smooth hover transitions |
-| **Content area height** | `70vh` | Demo hero area above footer |
+| Token                     | Value                                       | Notes                       |
+| ------------------------- | ------------------------------------------- | --------------------------- |
+| **Font family**           | "Roboto", sans-serif                        | System font stack           |
+| **Footer background**     | #141d2a                                     | Dark navy                   |
+| **Footer text color**     | #fff                                        | White                       |
+| **Footer padding**        | 7rem 0                                      | Generous vertical spacing   |
+| **Heading (h3) size**     | 16px                                        | Small section headings      |
+| **Heading margin-bottom** | 10px                                        | Tight under headings        |
+| **Link color**            | #666873                                     | Muted gray-purple           |
+| **Link hover color**      | #fff                                        | White on hover              |
+| **CTA background**        | #8186d5                                     | Purple/indigo accent        |
+| **CTA shadow**            | -20px -20px 0 0 rgba(52,58,64,0.2)          | Offset box shadow           |
+| **CTA button**            | dark, rounded-0, py-3 px-5                  | Dark, square, padded        |
+| **CTA position**          | relative, top: -150px                       | Overlaps above footer       |
+| **Social icon bg**        | #8186d5                                     | Same purple as CTA          |
+| **Social icon shape**     | border-radius: 50%                          | Circular, 40x40px           |
+| **Social icon color**     | #fff                                        | White                       |
+| **Footer logo**           | #fff, 20px, uppercase, letter-spacing .1rem | Branded logo text           |
+| **Copyright**             | color: #666873                              | Muted gray                  |
+| **Link transition**       | .3s all ease                                | Smooth hover transitions    |
+| **Content area height**   | 70vh                                        | Demo hero area above footer |
 
-### Visual Design Notes
+## Requirements
 
-- Dark navy (#141d2a) footer with generous 7rem vertical padding
-- CTA banner: purple (#8186d5) bar with "Ready for a next project?" heading
-  and dark square "Contact us" button; positioned with negative top offset
-  and offset box-shadow creating a layered card effect
-- Footer columns: logo column (uppercase "Colorlib"), Customers, Company,
-  Further Information, and Follow Us (social icons)
-- Social icons: 40px purple circles with white icon glyphs (facebook, twitter,
-  linkedin, medium, paper-plane)
-- Links are muted gray (#666873) turning white on hover
-- Clean, modern, Bootstrap-based footer design
+### Requirement: Footer renders with dark navy background
 
-## Requirements (Gherkin)
+The footer component SHALL render with a dark navy (#141d2a) background and white text color.
 
-### Scenario: Renders the footer component
-```gherkin
-Given the Footwell component is rendered
-When I look at the page
-Then I see a dark navy (#141d2a) footer section
-And the footer has 7rem vertical padding
-```
+#### Scenario: Footer background styling
 
-### Scenario: CTA banner is displayed
-```gherkin
-Given the Footwell component is rendered
-Then I see a CTA section with purple (#8186d5) background
-And it shows "Ready for a next project?"
-And it shows "Let's get started!"
-And it has a dark "Contact us" button
-```
+- **WHEN** the Footwell component is rendered
+- **THEN** the footer element has a dark navy background (#141d2a)
+- **AND** the footer text color is white
 
-### Scenario: CTA button styling
-```gherkin
-Given the CTA banner is visible
-Then the "Contact us" button has a dark background
-And the button has square corners (rounded-0)
-And the button has py-3 px-5 padding
-```
+### Requirement: CTA banner is displayed above the footer
 
-### Scenario: Footer logo column
-```gherkin
-Given the Footwell component is rendered
-Then the first column shows the brand name "Footwell"
-And the brand name is white, uppercase, with letter-spacing
-And there is a copyright notice below it
-```
+The component SHALL render a CTA banner section with purple (#8186d5) background, containing a heading, subheading, and a dark contact button. The CTA SHALL have an offset box-shadow effect and overlap the footer.
 
-### Scenario: Customers column
-```gherkin
-Given the Footwell component is rendered
-Then the "Customers" column has heading "Customers"
-And it contains links: "Buyer", "Supplier"
-```
+#### Scenario: CTA banner content
 
-### Scenario: Company column
-```gherkin
-Given the Footwell component is rendered
-Then the "Company" column has heading "Company"
-And it contains links: "About us", "Careers", "Contact us"
-```
+- **WHEN** the Footwell component is rendered
+- **THEN** the CTA section shows "Ready for a next project?"
+- **AND** the CTA section shows "Let's get started!"
+- **AND** the CTA section has a "Contact us" button
 
-### Scenario: Further Information column
-```gherkin
-Given the Footwell component is rendered
-Then the "Further Information" column has heading "Further Information"
-And it contains links: "Terms & Conditions", "Privacy Policy"
-```
+#### Scenario: CTA banner styling
 
-### Scenario: Social media icons
-```gherkin
-Given the Footwell component is rendered
-Then the "Follow us" column has social media icons
-And each icon is a 40px purple (#8186d5) circle
-And the icons link to facebook, twitter, linkedin, and other platforms
-```
+- **WHEN** the CTA banner is visible
+- **THEN** the CTA has a purple (#8186d5) background
+- **AND** the CTA has an offset box-shadow effect
+- **AND** the "Contact us" button has a dark background with square corners
 
-### Scenario: Link hover behavior
-```gherkin
-Given the Footwell component is rendered
-When I hover over a footer link
-Then the link color transitions from #666873 to #fff
-And the transition is smooth (0.3s ease)
-```
+### Requirement: Footer logo column displays brand name
 
-### Scenario: Responsive layout
-```gherkin
-Given the Footwell component is rendered on a mobile device
-Then the CTA section stacks vertically
-And the footer columns stack or wrap appropriately
-And all text remains readable
-```
+The footer SHALL display the brand name "Footwell" in uppercase white text with letter-spacing, and a copyright notice below it.
 
-### Scenario: Accessibility
-```gherkin
-Given the Footwell component is rendered
-Then all links are focusable
-And the footer uses semantic HTML (footer, nav, ul, li)
-And social links have accessible labels
-```
+#### Scenario: Logo column content
 
-## Verification Checklist
+- **WHEN** the Footwell component is rendered
+- **THEN** the first column shows "Footwell" as a link
+- **AND** the brand name is uppercase with letter-spacing
+- **AND** a copyright notice with the current year is present
 
-- [ ] Footer renders with dark navy (#141d2a) background
-- [ ] CTA banner has purple (#8186d5) background
-- [ ] CTA shows "Ready for a next project?" and "Let's get started!"
-- [ ] "Contact us" button is dark with square corners
-- [ ] CTA has offset box-shadow effect
-- [ ] Logo column shows brand name in uppercase white
-- [ ] Copyright notice is present in muted gray
-- [ ] "Customers" column with Buyer, Supplier links
-- [ ] "Company" column with About us, Careers, Contact us links
-- [ ] "Further Information" column with Terms, Privacy links
-- [ ] "Follow us" column with 5 circular social icons
-- [ ] Social icons are 40px purple circles
-- [ ] Links are #666873, hover to #fff
-- [ ] Smooth 0.3s transitions on links
-- [ ] Footer uses semantic HTML
-- [ ] Component is responsive on mobile
+### Requirement: Footer link columns are present
+
+The footer SHALL display three link columns: Customers (Buyer, Supplier), Company (About us, Careers, Contact us), and Further Information (Terms & Conditions, Privacy Policy).
+
+#### Scenario: Customers column
+
+- **WHEN** the Footwell component is rendered
+- **THEN** the "Customers" column contains links "Buyer" and "Supplier"
+
+#### Scenario: Company column
+
+- **WHEN** the Footwell component is rendered
+- **THEN** the "Company" column contains links "About us", "Careers", and "Contact us"
+
+#### Scenario: Further Information column
+
+- **WHEN** the Footwell component is rendered
+- **THEN** the "Further Information" column contains links "Terms & Conditions" and "Privacy Policy"
+
+### Requirement: Social media icons are displayed
+
+The footer SHALL display social media icons (Facebook, Twitter, LinkedIn, Send) as circular purple (#8186d5) buttons with accessible labels, linking to external targets.
+
+#### Scenario: Social icons rendering
+
+- **WHEN** the Footwell component is rendered
+- **THEN** the "Follow us" section shows social media icon links
+- **AND** each icon is a circular purple button
+- **AND** each icon has an accessible label (Facebook, Twitter, LinkedIn, Send)
+- **AND** social links open in a new tab
+
+### Requirement: Link hover behavior
+
+Footer links SHALL transition color from muted gray (#666873) to white on hover with a smooth 0.3s transition.
+
+#### Scenario: Link hover styling
+
+- **WHEN** a user hovers over a footer link
+- **THEN** the link color transitions smoothly
+
+### Requirement: Responsive layout
+
+The footer SHALL be responsive, with columns stacking appropriately on mobile devices.
+
+#### Scenario: Mobile layout
+
+- **WHEN** the Footwell component is rendered on a mobile viewport
+- **THEN** the footer columns stack vertically
+- **AND** all text remains readable
+
+### Requirement: Accessibility
+
+The footer SHALL use semantic HTML elements (footer, nav, ul, li) and all interactive elements SHALL be focusable with accessible labels.
+
+#### Scenario: Semantic HTML
+
+- **WHEN** the Footwell component is rendered
+- **THEN** the footer uses a semantic `<footer>` element
+- **AND** all links are focusable
+- **AND** social links have accessible aria-labels
+
+### Requirement: Component Dock attribution
+
+The footer SHALL include a "More templates at Component Dock" link pointing to https://www.componentdock.com/.
+
+#### Scenario: Attribution link
+
+- **WHEN** the Footwell component is rendered
+- **THEN** a "Component Dock" link is present
+- **AND** the link points to https://www.componentdock.com/
+- **AND** the link opens in a new tab
