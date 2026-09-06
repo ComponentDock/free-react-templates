@@ -766,7 +766,7 @@
 - [x] **Dropdown 11** — [colorlib](https://colorlib.com/wp/template/dropdown-11/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-11.jpg) · [dropslide](https://dropslide.free.componentdock.com)
 - [x] **Dropdown 12** — [colorlib](https://colorlib.com/wp/template/dropdown-12/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-12.jpg) · [dropcall](https://free-react-templates-dropcall.surge.sh)
 - [x] **Dropdown 13** — [colorlib](https://colorlib.com/wp/template/dropdown-13/) · [dropmark](https://dropmark.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-13.jpg)
-- [ ] **Dropdown 14** — [colorlib](https://colorlib.com/wp/template/dropdown-14/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-14.jpg)
+- [~] **Dropdown 14** — [colorlib](https://colorlib.com/wp/template/dropdown-14/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-14.jpg)
 - [ ] **Dropdown 15** — [colorlib](https://colorlib.com/wp/template/dropdown-15/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-15.jpg)
 - [ ] **Dropdown 16** — [colorlib](https://colorlib.com/wp/template/dropdown-16/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-16.jpg)
 - [ ] **Dropdown 17** — [colorlib](https://colorlib.com/wp/template/dropdown-17/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-17.jpg)
