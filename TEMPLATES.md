@@ -777,7 +777,7 @@
 ## Bootstrap Footers (20)
 
 [x] **Bootstrap Footer 01** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-01.jpg) · [footwell](https://free-react-templates-footwell.surge.sh)
-- [ ] **Bootstrap Footer 02** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-02.jpg)
+- [~] **Bootstrap Footer 02** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-02.jpg)
 - [ ] **Bootstrap Footer 03** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-03.jpg)
 - [ ] **Bootstrap Footer 04** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-04/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-04.jpg)
 - [ ] **Bootstrap Footer 05** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-05/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-05.jpg)
