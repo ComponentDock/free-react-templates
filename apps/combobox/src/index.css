@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-combobox-bg: #f5f5f5;
+  --color-combobox-card: #fff;
+  --color-combobox-border: #d4d4d4;
+  --color-combobox-text: #333;
+  --color-combobox-text-muted: #888;
+  --color-combobox-checkmark: #22c55e;
+  --color-combobox-checkmark-bg: #f0fdf4;
+  --color-combobox-hover: #f0f0f0;
+  --color-combobox-heading: #1a1a1a;
+
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
