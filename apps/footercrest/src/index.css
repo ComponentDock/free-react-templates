@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens: deep purple-charcoal footer */
+  --color-footer-bg: #302939;
+  --color-newsletter-left: #322b3c;
+  --color-newsletter-right: #372f42;
+  --color-submit-btn: #352d3f;
+  --color-section-bg: #f0eff5;
+  --color-subheading: rgba(255, 255, 255, 0.3);
+  --color-heading: #ffffff;
+  --color-link: rgba(255, 255, 255, 0.5);
+  --color-copyright: rgba(255, 255, 255, 0.3);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
