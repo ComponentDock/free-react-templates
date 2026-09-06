@@ -1,222 +1,186 @@
-# Template: Bellpush (Modal / Newsletter Subscription Dialog)
+# Spec: Bellpush — Newsletter Subscription Modal Template
+
+> Recreation of ColorLib Modal 10
+> (https://colorlib.com/wp/template/modal-10/)
 
 ## Purpose
 
-Bellpush is a single-page newsletter subscription MODAL DIALOG in the
-free-react-templates monorepo. It is an original React recreation of the
-ColorLib "Modal 10" free template (source:
-https://colorlib.com/wp/template/modal-10/), built under a DIFFERENT name
-(**Bellpush**), with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
-TypeScript.
+A single-page React template featuring a centered launch button that opens a
+newsletter subscription modal dialog. The modal displays a gradient header with
+a magenta-to-blue overlay at 30% opacity, a large circular icon container with
+semi-transparent white background, a "Newsletter" heading in bold white text,
+a "Subscribe to our newsletter" subtext, and an inline email subscription form
+with an email input and "Subscribe" button side by side. The modal body overlaps
+the header by 180px, creating a layered card effect.
 
-The original is a Bootstrap 4.3 modal template: a centered page with a
-"Launch Modal 10" button that opens a centered modal dialog containing a
-newsletter subscription form. The modal has a gradient header with a
-background image overlay, a large circular icon (envelope), bold heading
-text, an email input with a "Subscribe" button side-by-side, and a close
-button in the top-right corner. The overall aesthetic is clean and modern —
-white page backdrop, blue brand accent, and a gradient (magenta-to-blue)
-overlay on the modal header.
+## Requirements
 
-**WHAT MAKES BELLPUSH DISTINCT (signature behaviors):**
+### Requirement: Page layout and launch button
 
-1. **Full-page centered layout with launch button.** A white
-   `.ftco-section` fills the viewport with a centered heading ("Modal 10")
-   and a Bootstrap primary button ("Launch Modal 10") that triggers the
-   modal via `data-toggle="modal"`. The recreation uses React state to
-   toggle the modal open/closed.
+The template SHALL render a centered hero section with the template name
+"Bellpush", a description, and a "Launch Modal" button.
 
-2. **Centered modal dialog with gradient header.** `.modal-dialog` is
-   `max-width: 500px`, vertically centered (`.modal-dialog-centered`).
-   `.modal-content` has no border (`border: none`), white background
-   (`#fff`), and a prominent box-shadow
-   `0px 10px 34px -15px rgba(0, 0, 0, 0.24)`. The header is 230px tall
-   with a background image (`images/bg-1.jpg`) and a magenta-to-blue
-   gradient overlay (`linear-gradient(45deg, #dd00ff 0%, #3e65ff 100%)`)
-   at 30% opacity.
+#### Scenario: Page loads with launch button
 
-3. **Modal body overlaps the header.** The `.modal-body` uses
-   `margin-top: -180px` to visually overlap the bottom of the header,
-   creating a layered card effect. The body sits above the header via
-   `z-index: 2`.
+- **GIVEN** the page is loaded
+- **THEN** I see a heading "Bellpush"
+- **AND** I see a button "Launch Modal"
 
-4. **Circular icon with semi-transparent background.** A 200×200px
-   `.icon` container with `border-radius: 50%` and
-   `background: rgba(255, 255, 255, 0.2)` holds the newsletter envelope
-   icon (`images/email.svg`), centered horizontally.
+#### Scenario: Document title is set
 
-5. **Newsletter heading and subtext.** A bold `h2` ("Newsletter") in
-   `font-weight: 700; color: #fff` sits on the gradient header area, and
-   an `h4` ("Subscribe to our newsletter") in `font-size: 18px` sits
-   below the icon in the body.
+- **GIVEN** the page is loaded
+- **THEN** the document title is "Bellpush — Newsletter Modal Template"
 
-6. **Inline subscribe form.** A `.subscribe-form` with a `.form-group`
-   using `d-flex` to place an email `input` (left, rounded-left, light
-   gray background `rgba(0,0,0,0.05)`) and a "Subscribe" submit `input`
-   (right, rounded-right, blue `#3e64ff` background, white text) side by
-   side. Both inputs are 52px tall with no border.
+### Requirement: Modal opens on button click
 
-7. **Close button.** A 40×40px absolute-positioned button in the
-   top-right corner of the modal, white text, transparent background.
+Clicking the "Launch Modal" button SHALL open a centered newsletter modal dialog.
 
-## Naming
+#### Scenario: Modal opens on button click
 
-The ColorLib source name "Modal 10" is FORBIDDEN as the app name (and
-"modal" itself must not be reused). **Bellpush** is the new, original name
-— single lowercase word, kebab-case, no collision with `apps/`,
-`openspec/specs/`, `docs/templates/`, or any TEMPLATES.md name (verified
-2026-09-06: zero hits for `bellpush` in TEMPLATES.md, `ls apps/`,
-`openspec/specs/`, `docs/templates/`).
+- **GIVEN** the page is loaded
+- **WHEN** I click the "Launch Modal" button
+- **THEN** I see a dialog with the heading "Newsletter"
+- **AND** I see the text "Subscribe to our newsletter"
+- **AND** I see an email input with placeholder "Enter email address"
+- **AND** I see a "Subscribe" button
 
-Source slug: `modal-10`
-Preview URL: https://preview.colorlib.com/theme/bootstrap/modal-10/
-Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/modal-10.jpg
+### Requirement: Modal header design
 
-## Design Tokens
+The modal header SHALL display a gradient overlay (magenta-to-blue, 30% opacity)
+over a 230px tall area with a close button in the top-right corner.
 
-Extracted from the preview CSS (`css/style.css`) and HTML at
-https://preview.colorlib.com/theme/bootstrap/modal-10/:
+#### Scenario: Modal header has gradient overlay
 
-| Token                    | Value                                              | Notes                                         |
-| ------------------------ | -------------------------------------------------- | --------------------------------------------- |
-| **Font family**          | `"Poppins", Arial, sans-serif`                     | Loaded via Cloudflare Fonts (weights 300–900) |
-| **Font size (base)**     | `15px`                                             | Body text                                     |
-| **Line height**          | `1.8`                                              | Body text                                     |
-| **Brand color**          | `#3e64ff` (blue)                                   | Links, buttons, form focus borders            |
-| **Gradient overlay**     | `linear-gradient(45deg, #dd00ff 0%, #3e65ff 100%)` | Modal header background (30% opacity)         |
-| **Page background**      | `#fff` (white)                                     | `.ftco-section`                               |
-| **Modal shadow**         | `0px 10px 34px -15px rgba(0,0,0,0.24)`             | `.modal-content`                              |
-| **Modal max-width**      | `500px`                                            | `.modal-dialog`                               |
-| **Modal header height**  | `230px`                                            | Background image area                         |
-| **Body overlap**         | `margin-top: -180px`                               | `.modal-body` overlaps header                 |
-| **Icon container**       | `200×200px, border-radius: 50%`                    | `background: rgba(255,255,255,0.2)`           |
-| **Input height**         | `52px`                                             | `.form-control`                               |
-| **Input background**     | `rgba(0,0,0,0.05)`                                 | Email input                                   |
-| **Submit button bg**     | `#3e64ff`                                          | "Subscribe" button                            |
-| **Submit button size**   | `130×52px`                                         | Fixed width                                   |
-| **Button border-radius** | `40px` (launch button), `0` (form inputs)          | Pill shape on `.btn`, square on form inputs   |
-| **Close button**         | `40×40px, absolute top-right, white text`          | Modal close                                   |
+- **GIVEN** the modal is open
+- **THEN** the modal header area is 230px tall
+- **AND** the header has a gradient from magenta to blue at 30% opacity
 
-## Gherkin Requirements
+#### Scenario: Close button is visible in header
 
-### Scenario: Page loads with centered launch button
+- **GIVEN** the modal is open
+- **THEN** I see a close button in the top-right corner of the modal
 
-```gherkin
-Given the user visits the Bellpush page
-When the page finishes loading
-Then a centered section is visible with a heading "Modal 10"
-And a "Launch Modal" button is displayed below the heading
-And the page background is white
-```
+### Requirement: Modal body overlaps header
 
-### Scenario: Modal opens on launch button click
+The modal body SHALL overlap the header by 180px using negative margin,
+creating a layered card effect with z-index 2.
 
-```gherkin
-Given the user sees the launch button
-When the user clicks the "Launch Modal" button
-Then a centered modal dialog appears
-And the modal has a gradient header (magenta-to-blue at 30% opacity)
-And the modal header is 230px tall with a background image
-And a white close (X) button is visible in the top-right corner of the modal
-```
+#### Scenario: Modal body overlaps header
 
-### Scenario: Modal displays newsletter subscription content
+- **GIVEN** the modal is open
+- **THEN** the modal body visually overlaps the header area
 
-```gherkin
-Given the modal is open
-Then a large circular icon (200×200px) is displayed with a semi-transparent white background
-And the icon contains an envelope/newsletter image
-And the heading "Newsletter" is displayed in bold white text
-And the subtext "Subscribe to our newsletter" is displayed below the icon
-```
+### Requirement: Circular icon container
 
-### Scenario: Subscribe form is visible and functional
+A 200x200px circular icon container with semi-transparent white background
+(rgba(255,255,255,0.2)) SHALL display an envelope icon centered horizontally.
 
-```gherkin
-Given the modal is open
-Then an email input field is displayed with placeholder "Enter email address"
-And a "Subscribe" button is displayed to the right of the email input
-And the email input has a light gray background (rgba(0,0,0,0.05))
-And the subscribe button has a blue background (#3e64ff) with white text
-And both inputs are 52px tall
-```
+#### Scenario: Circular icon is displayed
 
-### Scenario: User can enter an email and submit
+- **GIVEN** the modal is open
+- **THEN** I see a 200x200px circular container with semi-transparent background
+- **AND** the container holds an envelope icon
 
-```gherkin
-Given the modal is open
-When the user types "test@example.com" into the email input
-And the user clicks the "Subscribe" button
-Then the form submits (default action)
-```
+### Requirement: Subscribe form
 
-### Scenario: Modal closes on close button click
+The subscribe form SHALL display an email input (light gray background,
+52px tall) and a "Subscribe" button (brand blue #3e64ff, 130px wide, 52px tall)
+side by side.
 
-```gherkin
-Given the modal is open
-When the user clicks the close (X) button in the top-right corner
-Then the modal disappears
-And the page returns to the centered launch button view
-```
+#### Scenario: Email input has correct styling
 
-### Scenario: Modal closes on backdrop click
+- **GIVEN** the modal is open
+- **THEN** the email input has placeholder "Enter email address"
+- **AND** the email input has a light gray background
 
-```gherkin
-Given the modal is open
-When the user clicks outside the modal dialog (on the backdrop)
-Then the modal disappears
-```
+#### Scenario: Subscribe button has correct styling
 
-### Scenario: Modal closes on Escape key
+- **GIVEN** the modal is open
+- **THEN** the "Subscribe" button has a blue background with white text
+- **AND** the button is 130px wide and 52px tall
 
-```gherkin
-Given the modal is open
-When the user presses the Escape key
-Then the modal disappears
-```
+#### Scenario: User can enter email and submit
 
-### Scenario: Keyboard accessibility
+- **GIVEN** the modal is open
+- **WHEN** I type "test@example.com" into the email input
+- **AND** I click the "Subscribe" button
+- **THEN** the form submits without page navigation
 
-```gherkin
-Given the page loads
-When the user presses Tab to navigate to the launch button
-And the user presses Enter to activate it
-Then the modal opens
-And focus moves into the modal
-And the close button is focusable
-And pressing Tab cycles through focusable elements within the modal
-```
+### Requirement: Modal closes on user action
 
-### Scenario: Responsive layout
+The modal SHALL close when the user clicks the close button, the backdrop,
+or presses Escape.
 
-```gherkin
-Given the user views the page on a mobile device (width < 768px)
-Then the launch button is still centered and visible
-And the modal still displays centered on screen
-And the email input and subscribe button stack vertically
-And the modal width adapts to the viewport
-```
+#### Scenario: Modal closes on close button click
 
-## Verification Checklist
+- **GIVEN** the modal is open
+- **WHEN** I click the close button
+- **THEN** the modal is not visible
 
-- [ ] Page loads with centered heading and launch button
-- [ ] Launch button triggers modal open
-- [ ] Modal header has gradient overlay (magenta-to-blue, 30% opacity)
-- [ ] Modal body overlaps header by 180px
-- [ ] Circular 200×200px icon container with envelope image
-- [ ] "Newsletter" heading in bold white
-- [ ] "Subscribe to our newsletter" subtext
-- [ ] Email input with placeholder and light gray background
-- [ ] "Subscribe" button in brand blue (#3e64ff)
-- [ ] Close button (X) in top-right corner
-- [ ] Modal closes on close button click
-- [ ] Modal closes on backdrop click
-- [ ] Modal closes on Escape key
-- [ ] Keyboard navigation works (Tab, Enter, Escape)
-- [ ] Responsive layout on mobile viewports
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
-- [ ] 100% test coverage (lines, functions, branches, statements)
-- [ ] Typecheck passes (tsc --noEmit)
-- [ ] Lint passes (oxlint)
-- [ ] Build succeeds (vite build)
+#### Scenario: Modal closes on backdrop click
+
+- **GIVEN** the modal is open
+- **WHEN** I click the backdrop overlay
+- **THEN** the modal is not visible
+
+#### Scenario: Modal closes on Escape key
+
+- **GIVEN** the modal is open
+- **WHEN** I press Escape
+- **THEN** the modal is not visible
+
+#### Scenario: Non-Escape key does not close modal
+
+- **GIVEN** the modal is open
+- **WHEN** I press Enter
+- **THEN** the modal is still visible
+
+### Requirement: Keyboard accessibility
+
+The modal SHALL support keyboard navigation: Tab cycles through focusable
+elements, Escape closes the modal, and focus is restored to the trigger
+element when the modal closes.
+
+#### Scenario: Focus restores to trigger element
+
+- **GIVEN** I opened the modal from a button
+- **WHEN** I close the modal
+- **THEN** focus returns to the button that opened it
+
+#### Scenario: Modal has correct ARIA attributes
+
+- **GIVEN** the modal is open
+- **THEN** the dialog has aria-modal="true"
+
+### Requirement: Footer
+
+The template SHALL render a footer with the template name, a description,
+and a link to https://www.componentdock.com/ branded "Component Dock".
+
+#### Scenario: Footer renders Component Dock link
+
+- **GIVEN** the page is loaded
+- **THEN** I see a link "More templates at Component Dock"
+- **AND** the link points to "https://www.componentdock.com/"
+- **AND** the link opens in a new tab
+
+### Requirement: Responsive layout
+
+The template SHALL adapt to mobile viewports (width < 768px).
+
+#### Scenario: Mobile layout adapts
+
+- **GIVEN** the viewport is less than 768px wide
+- **THEN** the launch button is still centered and visible
+- **AND** the modal displays centered on screen
+- **AND** the email input and subscribe button stack vertically
+
+### Requirement: No ColorLib references
+
+The app source code SHALL NOT contain any references to "colorlib" or
+"ColorLib" in any file, including comments.
+
+#### Scenario: No ColorLib strings in source
+
+- **GIVEN** I search all files in apps/bellpush/
+- **THEN** there are no occurrences of "colorlib" (case-insensitive)

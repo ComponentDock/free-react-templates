@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #3e64ff;
+  --color-brand-hover: #3252cc;
+  --color-gradient-start: #dd00ff;
+  --color-gradient-end: #3e65ff;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-poppins);
+    scroll-behavior: smooth;
+  }
+}
