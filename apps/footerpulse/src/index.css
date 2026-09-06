@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens: three-color contact cards + dark footer */
+  --color-card-blue: #6ea8fe;
+  --color-card-green: #20c997;
+  --color-card-orange: #fd7e14;
+  --color-footer-dark: #3b3d41;
+  --color-footer-darker: #313336;
+  --color-footer-heading: rgba(255, 255, 255, 0.9);
+  --color-footer-text: rgba(255, 255, 255, 0.6);
+  --color-footer-muted: rgba(255, 255, 255, 0.5);
+  --color-footer-copyright: rgba(255, 255, 255, 0.4);
+  --color-section-bg: #f8f9fa;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
