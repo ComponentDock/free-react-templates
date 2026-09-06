@@ -822,7 +822,7 @@
 
 ## Bootstrap Multiselect (20)
 
-- [ ] **Multiselect 01** — [colorlib](https://colorlib.com/wp/template/multiselect-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-01.jpg)
+- [~] **Multiselect 01** — [colorlib](https://colorlib.com/wp/template/multiselect-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-01.jpg)
 - [ ] **Multiselect 02** — [colorlib](https://colorlib.com/wp/template/multiselect-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-02.jpg)
 - [ ] **Multiselect 03** — [colorlib](https://colorlib.com/wp/template/multiselect-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-03.jpg)
 - [ ] **Multiselect 04** — [colorlib](https://colorlib.com/wp/template/multiselect-04/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-04.jpg)
