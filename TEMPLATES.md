@@ -800,7 +800,7 @@
 ## Bootstrap Modals (20)
 
 - [x] **Modal 01** · [overlay](https://free-react-templates-overlay.surge.sh) — [colorlib](https://colorlib.com/wp/template/modal-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-01.jpg)
-- [~] **Modal 02** — [colorlib](https://colorlib.com/wp/template/modal-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-02.jpg)
+- [x] **Modal 02** · [splitform](https://free-react-templates-splitform.surge.sh) — [colorlib](https://colorlib.com/wp/template/modal-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-02.jpg)
 - [ ] **Modal 03** — [colorlib](https://colorlib.com/wp/template/modal-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-03.jpg)
 - [ ] **Modal 04** — [colorlib](https://colorlib.com/wp/template/modal-04/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-04.jpg)
 - [ ] **Modal 05** — [colorlib](https://colorlib.com/wp/template/modal-05/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-05.jpg)
