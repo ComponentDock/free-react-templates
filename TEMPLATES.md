@@ -785,7 +785,7 @@
 - [x] **Bootstrap Footer 07** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-07/) · [footerbreeze](https://footerbreeze.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-07.jpg)
 - [x] **Bootstrap Footer 08** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-08/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-08.jpg) · [cornerstone](https://free-react-templates-cornerstone.surge.sh)
 - [x] **Bootstrap Footer 09** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-09/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-09.jpg) · [soleplate](https://free-react-templates-soleplate.surge.sh)
-- [ ] **Bootstrap Footer 10** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-10.jpg)
+- [~] **Bootstrap Footer 10** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-10.jpg)
 - [ ] **Bootstrap Footer 11** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-11/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-11.jpg)
 - [ ] **Bootstrap Footer 12** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-12/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-12.jpg)
 - [ ] **Bootstrap Footer 13** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-13/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-13.jpg)
