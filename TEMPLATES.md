@@ -818,7 +818,7 @@
 - [x] **Modal 17** — [colorlib](https://colorlib.com/wp/template/modal-17/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-17.jpg) · [modalshift](https://free-react-templates-modalshift.surge.sh)
 - [x] **Modal 18** — [colorlib](https://colorlib.com/wp/template/modal-18/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-18.jpg) · [modal-pulse](https://modal-pulse.free.componentdock.com)
 - [x] **Modal 19** — [colorlib](https://colorlib.com/wp/template/modal-19/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-19.jpg) · [splitmodal](https://free-react-templates-splitmodal.surge.sh)
-- [ ] **Modal 20** — [colorlib](https://colorlib.com/wp/template/modal-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-20.jpg)
+- [~] **Modal 20** — [colorlib](https://colorlib.com/wp/template/modal-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-20.jpg)
 
 ## Bootstrap Multiselect (20)
 
