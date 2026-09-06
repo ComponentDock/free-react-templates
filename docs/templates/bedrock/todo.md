@@ -1,69 +1,115 @@
-# Bedrock — Implementation Todo
+# Bedrock — Implementation Tasks & Design Notes
 
-Source: ColorLib "Bootstrap Footer 10"
-Preview: https://preview.colorlib.com/theme/bft/bootstrap-footer-10/
-Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-10.jpg
+## Source
+- ColorLib: Bootstrap Footer 05
+- Slug: `bootstrap-footer-05`
+- Preview: https://preview.colorlib.com/theme/bft/bootstrap-footer-05/
+- Category: Footer Component (not a full-page template)
+
+## New Name
+- `bedrock` — construction foundation theme, follows pedestal/baseplate/groundwork lineage
 
 ## Tasks
 
-- [ ] Create `apps/bedrock/` from simplest existing footer-only app
+### 1. Scaffold App
+- [ ] Copy simplest existing footer app as base (e.g. `apps/groundwork`)
 - [ ] Rename package to `@free-react-templates/bedrock`
-- [ ] Create `public/CNAME` with `bedrock.free.componentdock.com`
-- [ ] Set `homepage` in package.json to `https://bedrock.free.componentdock.com`
+- [ ] Update `public/CNAME` to `bedrock.free.componentdock.com`
+- [ ] Update `homepage` in `package.json` to `https://bedrock.free.componentdock.com`
 - [ ] Run `npm install` at repo root to register workspace in lockfile
-- [ ] Write `src/components/ContentHeader.tsx` — centered "Footer #10" on bg-light
-- [ ] Write `src/components/Footer.tsx` — 4-column footer with Store, About, Legal, Subscribe
-- [ ] Write `src/components/SubscribeForm.tsx` — pill input + embedded Send button
-- [ ] Write `src/components/CopyrightBar.tsx` — copyright + social icons
-- [ ] Write `src/components/SocialIcons.tsx` — lucide-react icon set (Facebook, Twitter, Pinterest, Instagram, Behance)
-- [ ] Compose in `src/App.tsx`
-- [ ] Add theme tokens in `src/index.css`: brand purple #614ad3, footer text #9d9d9d, input bg #e6e6e6
-- [ ] Set up `vite.config.ts` with `injectUiSource()`
-- [ ] Write tests for each component (100% coverage)
-- [ ] Add Component Dock footer attribution link
-- [ ] Verify: typecheck + lint + test:coverage + build
 
-## Section-by-section fidelity notes
+### 2. Design Tokens (index.css / @theme)
+- [ ] `--color-brand: #3e64ff` (blue — logo, hover states)
+- [ ] `--color-footer-bg: #fff` (white background)
+- [ ] `--color-footer-border: #efefef` (top border)
+- [ ] `--color-link: #777` (nav link default)
+- [ ] `--color-link-hover: #3e64ff` (nav link hover)
+- [ ] `--color-input-bg: #e6e6e6` (email input background)
+- [ ] `--color-placeholder: #b3b3b3` (input placeholder)
+- [ ] `--color-social-bg: #e6e6e6` (social icon circle background)
+- [ ] `--color-social-icon: #333` (social icon text)
+- [ ] `--color-social-hover: #3e64ff` (social icon hover)
+- [ ] `--color-copyright: #777` (copyright text)
+- [ ] Font: Poppins (Google Fonts link in index.html)
 
-### Content Header
-- Full viewport height section (70vh)
-- Background: light gray (Tailwind: `bg-gray-100`)
-- Centered "Footer #10" heading — large, centered both horizontally and vertically
-- Simple flex centering
+### 3. Components
 
-### Footer (4-column grid)
-- 7rem vertical padding
-- 4 columns on desktop (col-md + col-md-4 for Subscribe)
-- Each column has a bold black heading (font-weight 900, 16px, color #000)
-- Link lists: unstyled, block display, 10px vertical spacing
-- Link color: #9d9d9d, hover: #614ad3, transition 0.3s
-- Subscribe column: description paragraph + form
-  - Input: bg #e6e6e6, border-radius 30px, height 50px, no border
-  - Send button: absolute-positioned inside input (top 5px, right 5px)
-  - Button: bg #614ad3, white text, border-radius 30px, font-weight bold
-  - Button shadow: 0 2px 2px 0 rgba(0,0,0,0.2)
+#### SubscribeForm.tsx
+- [ ] Email input: gray bg (#e6e6e6), 45px height, border: none, placeholder "Enter your email"
+- [ ] Submit button: absolutely positioned, rotated arrow icon (lucide-react ArrowLeft rotated 180°), no bg/border
+- [ ] Form submits with basic email validation
 
-### Copyright Bar
-- Horizontal border-top separator (margin 2rem 0)
-- Left: "© All Rights Reserved" small text
-- Right: Social icons — inline-block, 10px padding each
-- Icons: Facebook, Twitter, Pinterest, Instagram, Behance
-- Icon color: #9d9d9d, hover: #614ad3
-- Use lucide-react equivalents (Facebook, Twitter, Instagram, etc.)
+#### NavLinks.tsx (horizontal)
+- [ ] Inline horizontal nav links: Features, Blog, Pricing, Services
+- [ ] Gray (#777) default, blue (#3e64ff) hover
+- [ ] .3s all ease transition
 
-### Component Dock Attribution
-- Footer bottom: "Made with Component Dock" link
-- Links to https://www.componentdock.com/
-- Replaces any external ColorLib attribution
+#### SocialIcons.tsx
+- [ ] 4 circular icon buttons (40×40px, rounded-full)
+- [ ] Gray (#e6e6e6) background, dark (#333) icon
+- [ ] Blue (#3e64ff) on hover
+- [ ] Icons: Twitter, Instagram, Facebook, Pinterest (lucide-react)
 
-## Design tokens for Tailwind @theme
+#### FooterTopRow.tsx
+- [ ] 3-column layout: SubscribeForm | NavLinks (centered) | SocialIcons (right)
 
-```
---color-brand: #614ad3;
---color-footer-text: #9d9d9d;
---color-footer-heading: #000000;
---color-input-bg: #e6e6e6;
---color-input-placeholder: #b3b3b3;
---font-family-body: 'Roboto', sans-serif;
---border-radius-pill: 9999px;
-```
+#### SiteLogo.tsx
+- [ ] Large bold text: "Bedrock", 30px, font-weight 900, color #3e64ff
+- [ ] Centered in its column
+
+#### SecondaryNav.tsx (horizontal)
+- [ ] Inline horizontal links: Terms, About, Privacy, Contact
+- [ ] Same style as NavLinks
+
+#### Copyright.tsx
+- [ ] Small muted text: "© 2025. All Rights Reserved."
+- [ ] Right-aligned
+
+#### FooterBottomRow.tsx
+- [ ] 3-column layout: SecondaryNav (left) | SiteLogo (center, order-1 on lg) | Copyright (right)
+
+#### Footer.tsx (main)
+- [ ] White bg, 4rem vertical padding, 1px top border (#efefef)
+- [ ] Contains FooterTopRow + border separator + FooterBottomRow
+
+#### App.tsx
+- [ ] Content area: light bg, centered "Footer #5" heading (demo placeholder, 70vh)
+- [ ] Footer component below
+
+### 4. Tests (Vitest + Testing Library)
+- [ ] Footer.test.tsx — renders all sections, correct structure
+- [ ] SubscribeForm.test.tsx — input renders, placeholder text, form submit
+- [ ] SocialIcons.test.tsx — 4 icons render, correct links
+- [ ] NavLinks.test.tsx — 4 nav items render
+- [ ] SiteLogo.test.tsx — renders brand text
+- [ ] Copyright.test.tsx — renders copyright text
+- [ ] Coverage: 100% lines/functions/branches/statements
+
+### 5. Build & Deploy
+- [ ] `npm run build` succeeds
+- [ ] `scripts/verify-app.sh bedrock` passes
+- [ ] Surge deploy URL: `bedrock.free.componentdock.com`
+
+## Fidelity Notes
+
+### Section order (from preview HTML)
+1. Content placeholder area (demo only — 70vh light bg with "Footer #5" heading)
+2. Footer main section:
+   - Top row: Subscribe form (left) | Nav links (center) | Social icons (right)
+   - Bottom row: Secondary nav (left) | Site logo (center) | Copyright (right)
+
+### Visual design (from screenshot + CSS analysis)
+- Light/white footer — clean, minimal aesthetic
+- Blue brand accent (#3e64ff) — used for logo, all hover states
+- Circular social icons (40×40px, gray bg) — distinctive design element
+- Email subscription input — flat gray bg, no border, integrated submit button
+- Two horizontal separator lines: top border (#efefef) and border-bottom on subscribe row
+- Font: Poppins (body uses Roboto, but footer overrides to Poppins)
+
+### Differences from original
+- New name: "bedrock" instead of "Bootstrap Footer 05"
+- "Colorlib" logo text replaced with "Bedrock"
+- Copyright year updated to 2025
+- Footer links to https://www.componentdock.com/ (Component Dock branding)
+- Placeholder images via picsum.photos (if needed for demo content)
+- Icons via lucide-react instead of IcoMoon icon font

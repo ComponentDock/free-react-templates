@@ -1,170 +1,102 @@
-# Template: Bedrock (Footer / Subscription)
+# Template: Bedrock (Footer Component)
 
 ## Purpose
 
-Bedrock is a footer-only template in the free-react-templates monorepo. It is
-an original React recreation of the ColorLib free "Bootstrap Footer 10" design,
-built under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Recreation of ColorLib's "Bootstrap Footer 05" — a light-themed website footer
+with an email subscription form, centered navigation links, circular social
+icons, a centered site logo, secondary navigation, and a copyright line. This
+is a focused footer component template, not a full-page website template.
 
-The original is a subscription/footer template with a light content header area
-("Footer #10") and a four-column footer containing Store links, About links,
-Legal links, and a Subscribe form. A copyright bar with social icons sits at
-the bottom. Bedrock recreates that structure section-for-section with matching
-layout, colors, typography, and content types (no ColorLib assets copied).
+- **Source:** ColorLib Bootstrap Footer 05 (https://colorlib.com/wp/template/bootstrap-footer-05/)
+- **Preview URL:** https://preview.colorlib.com/theme/bft/bootstrap-footer-05/
+- **New name:** `bedrock` (foundational footer layer — extends pedestal/baseplate/groundwork naming lineage)
+- **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
+- **ColorLib slug:** `bootstrap-footer-05`
 
-## Design reference (replication findings)
+## Design Tokens
 
-- **Original:** ColorLib "Bootstrap Footer 10" — free subscription footer template
-  (source: https://colorlib.com/wp/template/bootstrap-footer-10/).
-- **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/bft/bootstrap-footer-10/`
-  (HTTP 200, 18.4KB). The rendered DOM is the reference below; the TEMPLATES.md
-  screenshot (`bootstrap-footer-10.jpg`) confirms the visual design (light content
-  area, clean footer with 4 columns, purple accent on subscribe button).
-- **Section order (1:1):**
-  1. Content header: full-width centered "Footer #10" heading on `bg-light`
-     background, 70vh height.
-  2. Footer (`.footer-39201`): 7rem vertical padding, 4-column row:
-     - Col 1 — "Store": Men, Women, Children, New Arrivals, Top Brands, Special Offers
-     - Col 2 — "About": About us, Clients, Services, Best sellers, Blog, Contact
-     - Col 3 — "Legal": Terms & Conditions, Privacy Policy, Legality, Author License
-     - Col 4 (col-md-4) — "Subscribe": paragraph blurb + email form (text input
-       with rounded pill shape + "Send" button positioned inside the input)
-  3. Copyright bar: horizontal border-top separator, left-aligned copyright text
-     ("© 2019 All Rights Reserved"), right-aligned social icon row (Facebook,
-     Twitter, Pinterest, Instagram, Behance).
-- **Design tokens extracted from `css/style.css`:**
-  - Brand accent: **#614ad3** (purple — used on submit button, link hover states)
-  - Footer text color: **#9d9d9d** (medium gray)
-  - Heading color: **#000** (black), font-weight 900, font-size 16px
-  - Input background: **#e6e6e6**, input text: **#000**, placeholder: **#b3b3b3**
-  - Submit button: **#614ad3** purple fill, white text, font-weight bold,
-    border-radius 30px, box-shadow 0 2px 2px 0 rgba(0,0,0,0.2)
-  - Input field: border-radius 30px, height 50px, no border, left-padding 30px
-  - Footer padding: 7rem 0
-  - Content header: bg-light, height 70vh, centered flex
-  - Social icons: inline-block, 10px padding, gray #9d9d9d, hover #614ad3
-  - Font family: **"Roboto"** (sans-serif) for body and headings
-  - Link transition: 0.3s all ease
-- **Visual design (from TEMPLATES.md screenshot):** The template shows a clean,
-  minimalist footer on a light background. The content area has a large "Footer #10"
-  heading centered vertically. The footer below has four evenly-spaced columns
-  with small uppercase/bold section headings and gray link lists. The Subscribe
-  column is wider with a description paragraph and a pill-shaped email input with
-  an embedded purple "Send" button. A thin border separates the copyright line
-  from the footer content. Social media icons appear as simple glyph circles on
-  the right side of the copyright bar.
+Extracted from the live preview CSS (`css/style.css`) and HTML structure.
 
-## Recreation decisions
+### Colors
 
-- Repo-standard single-page layout: no Navbar (this is a footer-only template).
-- Footer links use the same link text as the original (Store, About, Legal columns).
-- Subscribe form: email input with pill shape (rounded-full), purple "Send" button
-  positioned inside the input via absolute positioning — matching the original.
-- Social icons: use lucide-react icons (Facebook → Facebook icon, Twitter → Twitter
-  icon, etc.) instead of icomoon icon font.
-- Footer footer attribution: "Made with Component Dock" / "More templates at
-  Component Dock" link per repo conventions (replaces any external attribution).
-- Copyright text: paraphrased to "All Rights Reserved" (drop hardcoded year).
-- Use `https://picsum.photos/seed/bedrock-<n>/<w>/<h>` for any placeholder images
-  if needed (this template has none).
+| Token                     | Value              | Usage                                          |
+| ------------------------- | ------------------ | ---------------------------------------------- |
+| Footer background         | `#fff`             | White — main footer section background         |
+| Footer border-top         | `#efefef`          | Light gray — 1px top border                    |
+| Site logo color           | `#3e64ff`          | Blue — brand logo text, links to homepage      |
+| Nav link color            | `#777`             | Gray — navigation link default text            |
+| Nav link hover            | `#3e64ff`          | Blue — navigation link hover state             |
+| Copyright text color      | `#777`             | Gray — copyright paragraph text                |
+| Email input background    | `#e6e6e6`          | Light gray — email input field background      |
+| Email placeholder color   | `#b3b3b3`          | Medium gray — placeholder text                 |
+| Social icon background    | `#e6e6e6`          | Light gray — circular icon button background   |
+| Social icon color         | `#333`             | Dark gray — social icon text inside circle     |
+| Social icon hover color   | `#3e64ff`          | Blue — social icon hover state                 |
+| Content area background   | `bg-light` (Bootstrap) | Light gray — demo placeholder above footer  |
 
-## Gherkin requirements
+### Typography
 
-```gherkin
-Feature: Bedrock footer template
-  As a visitor
-  I want to see a subscription footer with navigation links
-  So that I can subscribe and navigate the site
+| Element             | Font family                                                    |
+| ------------------- | -------------------------------------------------------------- |
+| Body                | `"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif` |
+| Footer              | `"Poppins", sans-serif` (overrides body font)                 |
+| Site logo           | Poppins, 30px, font-weight 900, color `#3e64ff`              |
+| Nav links           | Poppins, `#777`, inline-block, 10px padding                   |
+| Copyright           | Poppins, small text, `#777`                                   |
+| Email input         | Roboto (inherited), 14px placeholder, `#b3b3b3`              |
 
-  Background:
-    Given the Bedrock template is rendered
+### Spacing & Shapes
 
-  Scenario: Content header is visible
-    Then the content header displays "Footer #10"
-    And the content header has a light background
+| Token                     | Value                                         |
+| ------------------------- | --------------------------------------------- |
+| Footer padding            | `4rem 0` (vertical)                           |
+| Content area height       | `70vh` (demo placeholder above footer)        |
+| Top border separator      | `1px solid #efefef` (below subscribe row)     |
+| Bottom border             | `border-bottom pb-5 mb-4` on subscribe row   |
+| Column layout             | Bootstrap grid: col-lg-3 + col-lg-6 + col-lg-3 |
+| Bottom row layout         | col-lg-4 (logo, centered) + col-lg-4 (links) + col-lg-4 (copyright) |
+| Nav link items            | display: inline-block, padding: 10px          |
+| Social icon size          | 40px × 40px, border-radius: 50% (circle)     |
+| Social icon background    | `#e6e6e6` (gray circle)                       |
+| Email input height        | 45px, border: none, no box-shadow on focus    |
+| Email submit button       | Absolutely positioned inside form, rotated 180° arrow icon |
+| Link transition           | .3s all ease                                  |
 
-  Scenario: Store column links are present
-    Then the "Store" column heading is visible
-    And the following links are under "Store":
-      | link           |
-      | Men            |
-      | Women          |
-      | Children       |
-      | New Arrivals   |
-      | Top Brands     |
-      | Special Offers |
+### Icons
 
-  Scenario: About column links are present
-    Then the "About" column heading is visible
-    And the following links are under "About":
-      | link           |
-      | About us       |
-      | Clients        |
-      | Services       |
-      | Best sellers   |
-      | Blog           |
-      | Contact        |
+- Icon font: IcoMoon (`fonts/icomoon/style.css`)
+- Social icons: Twitter, Instagram, Facebook, Pinterest
+- Social icons rendered as 40×40px gray circles with centered icon
+- Submit button: keyboard_backspace icon rotated 180° (appears as send arrow)
 
-  Scenario: Legal column links are present
-    Then the "Legal" column heading is visible
-    And the following links are under "Legal":
-      | link                  |
-      | Terms & Conditions    |
-      | Privacy Policy        |
-      | Legality              |
-      | Author License        |
+## Structure (section order)
 
-  Scenario: Subscribe form is functional
-    Then the "Subscribe" column heading is visible
-    And the subscribe description paragraph is visible
-    And an email input field with placeholder "Enter your e-mail" is visible
-    And a "Send" button is visible
+1. **Content area** — light background placeholder with centered heading "Footer #5" (demo only, not part of the footer component itself)
+2. **Footer main** — white background, 4rem vertical padding, 1px top border (#efefef)
+   - **Row 1: Three-column top row** (border-bottom separator)
+     - Col 1 (col-lg-3): Email subscription form — input with gray (#e6e6e6) background, 45px height, placeholder "Enter your email", submit button (rotated arrow icon)
+     - Col 2 (col-lg-6, centered): Navigation links — inline horizontal list: Features, Blog, Pricing, Services
+     - Col 3 (col-lg-3, right-aligned): Social icons — 4 circular gray buttons (40×40px, 50% radius): Twitter, Instagram, Facebook, Pinterest
+   - **Row 2: Three-column bottom row**
+     - Col 1 → Order 2 (col-lg-4, centered on lg): Site logo — large bold blue text (#3e64ff, 30px, weight 900), links to "#"
+     - Col 2 → Order 1 (col-lg-4): Secondary navigation — inline horizontal list: Terms, About, Privacy, Contact
+     - Col 3 → Order 3 (col-lg-4, right-aligned): Copyright — small muted text: "© 2019. All Rights Reserved."
 
-  Scenario: Subscribe form validates email
-    Given the email input is empty
-    When the user clicks the "Send" button
-    Then the form does not submit
+## Verification Checklist
 
-  Scenario: Subscribe form accepts valid email
-    Given the email input has value "test@example.com"
-    When the user clicks the "Send" button
-    Then the form submits successfully
-
-  Scenario: Copyright bar is visible
-    Then a copyright notice is visible
-    And the copyright text contains "All Rights Reserved"
-
-  Scenario: Social icons are present
-    Then social media icons are visible in the copyright bar
-    And there are at least 5 social icons
-
-  Scenario: Link hover states use purple accent
-    When the user hovers over a footer link
-    Then the link color changes to the purple accent color
-
-  Scenario: Responsive layout - columns stack on mobile
-    Given the viewport width is less than 768px
-    Then the footer columns stack vertically
-
-  Scenario: Footer attribution links Component Dock
-    Then the footer contains a link to "https://www.componentdock.com/"
-```
-
-## Verification checklist
-
-- [ ] Content header renders centered "Footer #10" on light background
-- [ ] Footer has 4 columns: Store, About, Legal, Subscribe
-- [ ] All navigation links render with correct text
-- [ ] Subscribe form has pill-shaped input + embedded Send button
-- [ ] Submit button is purple (#614ad3) with rounded corners (30px radius)
-- [ ] Link hover transitions to purple accent (#614ad3)
-- [ ] Copyright bar shows "All Rights Reserved"
-- [ ] Social icons render (at least 5) — Facebook, Twitter, Pinterest, Instagram, Behance
-- [ ] Social icons hover to purple
-- [ ] Footer attribution links componentdock.com
-- [ ] Footer has 7rem vertical padding
-- [ ] Responsive: columns stack below 768px
-- [ ] No ColorLib references in app code
-- [ ] public/CNAME set to bedrock.free.componentdock.com
-- [ ] homepage set to https://bedrock.free.componentdock.com
-- [ ] 100% test coverage (lines, functions, branches, statements)
+- [ ] Footer renders on white (#fff) background with top border (#efefef)
+- [ ] Font family is Poppins (not Roboto — Poppins overrides body)
+- [ ] Email subscription form: gray input (#e6e6e6), 45px height, placeholder text
+- [ ] Submit button: absolutely positioned, rotated arrow icon, no background/border
+- [ ] Navigation links: inline, horizontal, gray (#777), hover blue (#3e64ff)
+- [ ] Social icons: 40×40px circles, gray (#e6e6e6) background, dark icon (#333), hover blue (#3e64ff)
+- [ ] Site logo: blue (#3e64ff), 30px, font-weight 900, centered
+- [ ] Bottom row: 3-column layout (links left, logo center, copyright right)
+- [ ] Copyright: small gray (#777) text, right-aligned
+- [ ] All links have .3s all ease transition
+- [ ] No ColorLib references in app code (provenance only in spec)
+- [ ] Footer links to https://www.componentdock.com/ (branded "Component Dock")
+- [ ] public/CNAME contains `bedrock.free.componentdock.com`
+- [ ] package.json name is `@free-react-templates/bedrock`
+- [ ] homepage is `https://bedrock.free.componentdock.com`
+- [ ] 100% test coverage (Vitest + Testing Library)
