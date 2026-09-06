@@ -2,178 +2,148 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bootstrap Footer 13** (`bootstrap-footer-13`), a feminine multi-column footer template targeting fashion/lifestyle sites.
+Recreation of ColorLib **Bootstrap Footer 13** (`bootstrap-footer-13`), a feminine multi-column footer template targeting fashion/lifestyle sites. Light pink background (#f8f1f1), salmon/coral accent (#f17e7e), three link columns (Men, Women, Kids), social icons as 40x40 circles, newsletter subscription form, and copyright bar.
 
-- **Source**: https://colorlib.com/wp/template/bootstrap-footer-13/
-- **Preview**: https://preview.colorlib.com/theme/bft/bootstrap-footer-13/
-- **Stack**: Vite + React 19 + Tailwind CSS 4 + TypeScript (strict)
-- **Category**: Footer — feminine aesthetic, multi-column layout with social icons and newsletter subscription
+- **Source:** Bootstrap Footer 13 — https://colorlib.com/wp/template/bootstrap-footer-13/
+- **Preview:** https://preview.colorlib.com/theme/bft/bootstrap-footer-13/
+- **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+- **Category:** Footer
 
 ## Design Tokens
 
-Extracted from the live preview stylesheet (`css/style.css`) and inline `<style>`.
+| Token                  | Value                       | Source                                                   |
+| ---------------------- | --------------------------- | -------------------------------------------------------- |
+| Font family            | `"Poppins", sans-serif`     | Google Fonts (Poppins 300–900)                           |
+| Footer background      | `#f8f1f1` (very light pink) | `.footer-03 { background: #f8f1f1 }`                     |
+| Footer padding         | `7em 0`                     | `.footer-03 { padding: 7em 0 }`                          |
+| Section background     | `#f8f8f8` (light gray)      | `.ftco-section { background: #f8f8f8 }`                  |
+| Section padding        | `12em 0`                    | `.ftco-section { padding: 12em 0 }`                      |
+| Accent color           | `#f17e7e` (salmon coral)    | `.footer-03 a { color: #f17e7e }`                        |
+| Text primary           | `rgba(0,0,0,0.4)`           | Copyright text                                           |
+| Text link              | `rgba(0,0,0,0.3)`           | Footer list link color                                   |
+| Input background       | `rgba(0,0,0,0.05)`          | Input field background                                   |
+| Social icon background | `rgba(0,0,0,0.05)`          | `.ftco-footer-social a { background: rgba(0,0,0,0.05) }` |
+| Border top             | `rgba(0,0,0,0.1)`           | Separator above copyright                                |
+| Heading font-size      | `14px`                      | Footer headings                                          |
+| Heading text-transform | `uppercase`                 | Footer headings                                          |
+| Heading letter-spacing | `2px`                       | Footer headings                                          |
+| Heading font-weight    | `500`                       | Footer headings                                          |
+| Social icon size       | `40px`                      | `.ftco-footer-social a { width: 40px; height: 40px }`    |
+| Social icon radius     | `50%`                       | Circle shape                                             |
+| Social icon margin     | `10px`                      | Gap between icons                                        |
+| Input height           | `52px`                      | Subscribe input                                          |
+| Button width           | `130px`                     | Subscribe button                                         |
+| Button height          | `52px`                      | Subscribe button                                         |
+| Button background      | `#f17e7e`                   | Subscribe button                                         |
+| Button color           | `#fff`                      | Subscribe button text                                    |
+| Button border-radius   | `0`                         | Square corners                                           |
 
-### Colors
+## Requirements
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--color-footer-bg` | `#f8f1f1` | Footer section background (very light pink) |
-| `--color-accent` | `#f17e7e` | Links, social icon color, subscribe button background (salmon/coral pink) |
-| `--color-text-primary` | `rgba(0,0,0,0.4)` | Copyright text |
-| `--color-text-link` | `rgba(0,0,0,0.3)` | Footer list link color |
-| `--color-input-bg` | `rgba(0,0,0,0.05)` | Input field background, social icon background |
-| `--color-border-top` | `rgba(0,0,0,0.1)` | Top border separator above copyright row |
-| `--color-white` | `#fff` | Subscribe button text |
+### Requirement: Footer background and layout
 
-### Typography
+The application SHALL display a footer with a light pink background (#f8f1f1) and 7em vertical padding, containing a two-column layout with link columns on the left and social/subscribe content on the right.
 
-| Token | Value |
-|-------|-------|
-| Font family | `Poppins` (300–900, Google Fonts) |
-| Footer base font-size | `14px` |
-| Footer heading font-size | `14px` |
-| Footer heading text-transform | `uppercase` |
-| Footer heading letter-spacing | `2px` |
-| Footer heading font-weight | `500` |
-| Subscribe input font-size | `16px` |
-| Subscribe button font-size | `16px` |
+#### Scenario: Footer renders with correct background
 
-### Shapes
+- **WHEN** the page loads
+- **THEN** the footer has background color #f8f1f1
+- **AND** the footer has padding of approximately 7em top and bottom
+- **AND** the left column contains three link sections
+- **AND** the right column contains social icons and a subscription form
 
-| Element | Border-radius |
-|---------|---------------|
-| Social icon circles | `50%` (40×40px circles) |
-| Subscribe input | `0` (square corners) |
-| Subscribe button | `0` (square corners) |
-| Input group | `0` |
+### Requirement: Three-column link section
 
-### Spacing
+The footer SHALL display three link columns (Men, Women, Kids) on the left side, each with an uppercase heading and a list of links.
 
-| Element | Value |
-|---------|-------|
-| Footer padding | `7em 0` |
-| Section padding (above footer) | `12em 0` |
-| Footer heading margin-bottom | `30px` |
-| Social icon margin-right | `10px` |
-| Subscribe button width | `130px` |
-| Subscribe button height | `52px` |
-| Form input height | `52px` |
+#### Scenario: Men column renders
 
-### Button Styles
+- **WHEN** the footer renders
+- **THEN** the Men column contains links: Jeans, Jumpers, Leather, Shorts, Boots, Watches
+- **AND** the heading is uppercase with 2px letter-spacing
 
-- Subscribe button: `background: #f17e7e`, `color: #fff`, `border: none`, `border-radius: 0`, `width: 130px`, `height: 52px`
-- Hover/focus: text-decoration: none, outline: none (no visible change beyond default)
+#### Scenario: Women column renders
 
-## HTML Structure (from preview)
+- **WHEN** the footer renders
+- **THEN** the Women column contains links: Dresses, Jumpsuits, Shirts, T-shirts, Sweatshirts, Jackets, Coats
 
-```
-ftco-section (demo page header — NOT part of footer template)
-  └─ container > row > col-md-6 > h2 "Footer #03"
+#### Scenario: Kids column renders
 
-footer.footer-03
-  └─ container
-       ├─ row (main content)
-       │    ├─ col-md-6 (left — 3 link columns)
-       │    │    └─ row
-       │    │         ├─ col-md-4: "Men" heading + ul.list-unstyled (Jeans, Jumpers, Leather, Shorts, Boots, Watches)
-       │    │         ├─ col-md-4: "Women" heading + ul.list-unstyled (Dresses, Jumpsuits, Shirts, T-shirts, Sweatshirts, Jackets, Coats)
-       │    │         └─ col-md-4: "Kids" heading + ul.list-unstyled (Shirts, T-shirts, Polos, Sweaters, Sweatshirts, Jackets, Watches)
-       │    └─ col-md-6 (right — social + subscribe)
-       │         └─ row > col-md-12.col-lg-11
-       │              ├─ "Follow Us" heading
-       │              ├─ ftco-footer-social (Twitter, Facebook, Instagram, LinkedIn icons)
-       │              ├─ "Subscribe Us" heading (mt-5)
-       │              └─ subscribe-form > form-group > input(email) + input(submit "Subscribe")
-       └─ row.mt-5.pt-4.border-top (bottom bar)
-            ├─ col-md-6.col-lg-8: copyright text
-            └─ col-md-6.col-lg-4.text-md-right: Terms & Conditions | Privacy links
-```
+- **WHEN** the footer renders
+- **THEN** the Kids column contains links: Shirts, T-shirts, Polos, Sweaters, Sweatshirts, Jackets, Watches
 
-## Gherkin Requirements
+### Requirement: Social icons
 
-### Scenario: Footer section renders with correct background
-```
-GIVEN the user loads the page
-WHEN the footer section is visible
-THEN the footer background is #f8f1f1 (light pink)
-AND the footer has padding of approximately 7em top/bottom
-```
+The footer SHALL display four circular social icons (Twitter, Facebook, Instagram, LinkedIn) with a 40x40px circle shape, accent color #f17e7e, and white on hover.
 
-### Scenario: Three-column link section (left side)
-```
-GIVEN the user views the footer
-WHEN looking at the left half of the footer
-THEN there are three columns: "Men", "Women", "Kids"
-AND each column has a heading styled uppercase with 2px letter-spacing
-AND "Men" contains links: Jeans, Jumpers, Leather, Shorts, Boots, Watches
-AND "Women" contains links: Dresses, Jumpsuits, Shirts, T-shirts, Sweatshirts, Jackets, Coats
-AND "Kids" contains links: Shirts, T-shirts, Polos, Sweaters, Sweatshirts, Jackets, Watches
-```
+#### Scenario: Social icons render
 
-### Scenario: Social icons (right side)
-```
-GIVEN the user views the right side of the footer
-WHEN the "Follow Us" section is visible
-THEN there are 4 circular social icons: Twitter, Facebook, Instagram, LinkedIn
-AND each icon circle is 40x40px with 50% border-radius
-AND the icon color is #f17e7e (salmon pink)
-AND hovering an icon turns the color to white
-```
+- **WHEN** the footer renders
+- **THEN** four social icon links are displayed (Twitter, Facebook, Instagram, LinkedIn)
+- **AND** each icon is in a 40x40px circle with 50% border-radius
+- **AND** the icon color is #f17e7e (salmon coral)
+- **AND** hovering an icon turns the background to the accent color with white text
 
-### Scenario: Newsletter subscription form
-```
-GIVEN the user views the subscribe section
-WHEN the "Subscribe Us" form is visible
-THEN there is an email input with placeholder "Enter email address"
-AND a "Subscribe" button with background #f17e7e and white text
-AND the input has a subtle rgba(0,0,0,0.05) background
-AND both input and button are 52px tall with square corners (border-radius: 0)
-```
+### Requirement: Newsletter subscription form
 
-### Scenario: Copyright and legal links (bottom bar)
-```
-GIVEN the user views the bottom of the footer
-WHEN the copyright row is visible
-THEN it is separated from the main content by a thin top border
-AND the left side shows copyright text with current year
-AND the right side shows "Terms & Conditions" and "Privacy" links
-```
+The footer SHALL include a newsletter subscription form with an email input and a "Subscribe" button, both 52px tall with square corners.
 
-### Scenario: Responsive layout
-```
-GIVEN the user views the footer on a mobile viewport (col-md breakpoint)
-WHEN the layout stacks
-THEN the left link columns stack vertically
-AND the right social/subscribe section stacks below
-AND the copyright row stacks with left/right becoming full-width
-```
+#### Scenario: Subscribe form renders
 
-### Scenario: Typography and link colors
-```
-GIVEN the user views the footer
-WHEN inspecting text styles
-THEN headings use Poppins font, 14px, uppercase, 2px letter-spacing, weight 500
-AND list links use color rgba(0,0,0,0.3)
-AND all interactive elements (links, buttons) use the accent color #f17e7e
-```
+- **WHEN** the footer renders
+- **THEN** a "Subscribe Us" heading is displayed
+- **AND** an email input with placeholder "Enter email address" is shown
+- **AND** a "Subscribe" button with background #f17e7e and white text is shown
+- **AND** both input and button are 52px tall with no border-radius
 
-## Verification Checklist
+### Requirement: Copyright and legal links
 
-- [ ] Footer background is `#f8f1f1`
-- [ ] Font family is Poppins (Google Fonts, weights 300–900)
-- [ ] Three link columns: Men, Women, Kids — correct items in each
-- [ ] Social icons: 4 circular icons (Twitter, Facebook, Instagram, LinkedIn)
-- [ ] Social icons: 40x40px, 50% radius, accent color #f17e7e, white on hover
-- [ ] Subscribe form: email input + "Subscribe" button
-- [ ] Subscribe button: #f17e7e background, white text, 52px height, square corners
-- [ ] Input background: rgba(0,0,0,0.05), no border, square corners
-- [ ] Footer heading: 14px, uppercase, 2px letter-spacing, weight 500
-- [ ] List link color: rgba(0,0,0,0.3)
-- [ ] Copyright text: rgba(0,0,0,0.4), includes current year
-- [ ] Bottom bar: thin top border separator
-- [ ] Terms & Conditions and Privacy links in bottom-right
-- [ ] Responsive: stacks on mobile (col-md breakpoint)
-- [ ] Footer links to https://www.componentdock.com/ (Component Dock branding)
-- [ ] No ColorLib references in app code
-- [ ] Uses picsum.photos for placeholder images (if any)
-- [ ] All tests pass with 100% coverage
+The footer SHALL display a copyright bar at the bottom with a thin top border separator, copyright text on the left, and Terms & Conditions / Privacy links on the right.
+
+#### Scenario: Copyright bar renders
+
+- **WHEN** the footer renders
+- **THEN** a thin top border separates the copyright bar from main content
+- **AND** the left side shows copyright text with the current year
+- **AND** the right side shows "Terms & Conditions" and "Privacy" links
+
+### Requirement: Component Dock branding
+
+The footer SHALL link to https://www.componentdock.com/ with "More templates at Component Dock" text.
+
+#### Scenario: Component Dock link renders
+
+- **WHEN** the footer renders
+- **THEN** a link to https://www.componentdock.com/ is present
+- **AND** the link text includes "Component Dock"
+
+### Requirement: Responsive layout
+
+The footer SHALL be responsive, stacking columns vertically on mobile viewports.
+
+#### Scenario: Mobile layout stacks columns
+
+- **WHEN** the viewport is below the md breakpoint
+- **THEN** the three link columns stack vertically
+- **AND** the social/subscribe section stacks below the links
+- **AND** the copyright row stacks with full-width items
+
+### Requirement: Typography
+
+The footer SHALL use Poppins font family with uppercase headings, 2px letter-spacing, and specific link colors.
+
+#### Scenario: Typography styles apply
+
+- **WHEN** the footer renders
+- **THEN** headings use Poppins font, 14px, uppercase, 2px letter-spacing, weight 500
+- **AND** list links use color rgba(0,0,0,0.3)
+- **AND** all interactive elements use the accent color #f17e7e
+
+### Requirement: No ColorLib references
+
+The application SHALL NOT contain any references to ColorLib in app source code, comments, or data files.
+
+#### Scenario: No ColorLib strings in app code
+
+- **WHEN** inspecting apps/rosenook/src/
+- **THEN** no file contains the string "colorlib" or "ColorLib"
