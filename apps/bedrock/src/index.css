@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens: dark navy footer with purple accent */
+  --color-footer-bg: #0d1824;
+  --color-footer-text: rgba(255, 255, 255, 0.7);
+  --color-footer-muted: rgba(255, 255, 255, 0.6);
+  --color-footer-icon: rgba(255, 255, 255, 0.4);
+  --color-footer-copyright: #999999;
+  --color-accent: #7f72e4;
+  --color-hero-bg: #f8f8f8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
