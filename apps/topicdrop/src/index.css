@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-topicdrop-bg: #fff;
+  --color-topicdrop-text: #6c757d;
+  --color-topicdrop-heading: #000;
+  --color-topicdrop-brand: #e8647c;
+  --color-topicdrop-border: #e6e6e6;
+  --color-topicdrop-hover-bg: #e8647c;
+  --color-topicdrop-hover-text: #fff;
+  --color-topicdrop-label-bg: #e8647c;
+  --color-topicdrop-label-text: #fff;
+  --color-topicdrop-card-bg: #fff;
+  --color-topicdrop-card-border: #e6e6e6;
+  --color-topicdrop-menu-border: #ef90a2;
+
+  --font-sans: 'Lato', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
