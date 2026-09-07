@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-navy: #383a4f;
+  --color-brand-form: #525575;
+  --color-brand-accent: #55e8d5;
+  --color-brand-button: #43ccba;
+  --color-brand-button-hover: #32998b;
+  --color-brand-step-inactive: #cccccc;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+  }
+  body {
+    margin: 0;
+  }
+}
