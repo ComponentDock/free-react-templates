@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Enthrall brand palette — mint-green page, electric-green accent. */
+  --color-page: #8be7ac;
+  --color-page-dark: #6bc98d;
+
+  /* Accent — electric green: current/hover tab, buttons, focus borders. */
+  --color-accent: #1ed760;
+  --color-accent-dark: #18b34f;
+
+  /* Card white. */
+  --color-card: #ffffff;
+
+  /* Ink — body text (#222 from the original). */
+  --color-ink: #222222;
+
+  /* Muted — idle tab title, select text, placeholders, Previous button. */
+  --color-muted: #999999;
+
+  /* Line — input borders, Previous button border. */
+  --color-line: #ebebeb;
+
+  /* Tab idle background. */
+  --color-tab-idle: #f8f8f8;
+
+  /* Error — invalid input border + error message text. */
+  --color-error: #f63726;
+
+  /* Ink dark — for dark mode variant. */
+  --color-ink-dark: #f5f5f5;
+
+  /* Page dark — dark mode page. */
+  --color-page-dark-mode: #1a3a2a;
+
+  /* Card dark — dark mode card. */
+  --color-card-dark: #2a2a2a;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the accent green. */
+  --color-primary-50: #eefbf3;
+  --color-primary-100: #d6f5e1;
+  --color-primary-200: #b0eac6;
+  --color-primary-300: #7ddaa5;
+  --color-primary-400: #43c47d;
+  --color-primary-500: #1ed760;
+  --color-primary-600: #18b34f;
+  --color-primary-700: #158f40;
+  --color-primary-800: #147236;
+  --color-primary-900: #125d2e;
+
+  /* Poppins font family. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
