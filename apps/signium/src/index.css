@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Signium brand palette — purple accent on dark background. */
+  --color-page: #222222;
+
+  /* Accent — purple: buttons, step indicators, active states. */
+  --color-accent: #7c7cdd;
+  --color-accent-dark: #6a6ac8;
+
+  /* Panel — lavender container. */
+  --color-panel: #efeeff;
+
+  /* Left panel — white. */
+  --color-left-panel: #ffffff;
+
+  /* Ink — body text, headings. */
+  --color-ink: #222222;
+
+  /* Muted — labels, placeholders, step footer. */
+  --color-muted: #999999;
+
+  /* Input label — medium gray. */
+  --color-label: #888888;
+
+  /* Input border. */
+  --color-line: #bfbfbf;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the accent purple. */
+  --color-primary-50: #f0f0fa;
+  --color-primary-100: #d8d8f0;
+  --color-primary-200: #b1b1e1;
+  --color-primary-300: #8a8ad2;
+  --color-primary-400: #8383d0;
+  --color-primary-500: #7c7cdd;
+  --color-primary-600: #6a6ac8;
+  --color-primary-700: #5858b0;
+  --color-primary-800: #464698;
+  --color-primary-900: #343480;
+
+  /* Font families. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-button: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
