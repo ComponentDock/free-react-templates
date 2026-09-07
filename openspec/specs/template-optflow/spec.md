@@ -15,24 +15,24 @@ Recreation of ColorLib **Multiselect V20** (`multiselect-20`), a multi-select sn
 
 Extracted from `css/style.css` and `css/chosen.css` of the ColorLib preview (fetched 2026-09-07):
 
-| Token | Value | Source |
-|-------|-------|--------|
-| Body font | `"Roboto", sans-serif` (weights 300, 400) | style.css |
-| Heading font | `"Roboto", sans-serif` | style.css |
-| Body background | `#efefef` (light gray) | style.css |
-| Heading size (h2) | `20px`, centered | style.css |
-| Content padding | `7rem 0` (top/bottom) | style.css |
-| Paragraph color | `#b3b3b3`, font-weight 300 | style.css |
-| Multi-select container | border: none, border-radius: 4px, box-shadow: 0 1px 4px rgba(0,0,0,0.1) | style.css |
-| Tag color-1 (cream) | `#e5e4cc` | style.css `.color-1` |
-| Tag color-2 (green) | `#c7f0db` | style.css `.color-2` |
-| Tag color-3 (blue) | `#d3f4ff` | style.css `.color-3` |
-| Tag border-radius | 3px (Chosen.js default) | chosen.css |
-| Dropdown shadow | `0 15px 30px rgba(0,0,0,0.2)` | style.css |
-| Dropdown border-radius | 4px | style.css |
-| Active border | `#5897fb` (blue) | chosen.css |
-| Highlighted item | `#3875d7` → `#2a62bc` gradient | chosen.css |
-| Search input height | 32px, font-size 14px | style.css |
+| Token                  | Value                                                                   | Source               |
+| ---------------------- | ----------------------------------------------------------------------- | -------------------- |
+| Body font              | `"Roboto", sans-serif` (weights 300, 400)                               | style.css            |
+| Heading font           | `"Roboto", sans-serif`                                                  | style.css            |
+| Body background        | `#efefef` (light gray)                                                  | style.css            |
+| Heading size (h2)      | `20px`, centered                                                        | style.css            |
+| Content padding        | `7rem 0` (top/bottom)                                                   | style.css            |
+| Paragraph color        | `#b3b3b3`, font-weight 300                                              | style.css            |
+| Multi-select container | border: none, border-radius: 4px, box-shadow: 0 1px 4px rgba(0,0,0,0.1) | style.css            |
+| Tag color-1 (cream)    | `#e5e4cc`                                                               | style.css `.color-1` |
+| Tag color-2 (green)    | `#c7f0db`                                                               | style.css `.color-2` |
+| Tag color-3 (blue)     | `#d3f4ff`                                                               | style.css `.color-3` |
+| Tag border-radius      | 3px (Chosen.js default)                                                 | chosen.css           |
+| Dropdown shadow        | `0 15px 30px rgba(0,0,0,0.2)`                                           | style.css            |
+| Dropdown border-radius | 4px                                                                     | style.css            |
+| Active border          | `#5897fb` (blue)                                                        | chosen.css           |
+| Highlighted item       | `#3875d7` → `#2a62bc` gradient                                          | chosen.css           |
+| Search input height    | 32px, font-size 14px                                                    | style.css            |
 
 ## Replication notes
 
@@ -44,22 +44,27 @@ Extracted from `css/style.css` and `css/chosen.css` of the ColorLib preview (fet
 - Each dropdown is limited to 5 selections (max). The React version must enforce this limit and provide visual feedback when the limit is reached.
 - The preview URL is accessible; design tokens were extracted from the live CSS files.
 
-## Gherkin requirements
+## Requirements
 
-### Feature: OptFlow — multi-variant multi-select snippet with selection limit
+### Requirement: Multi-variant multi-select snippet with selection limit
+
+The application SHALL render three independently-operating multi-select dropdowns with distinct color-variant tags, a max-selection limit of 5 per dropdown, search/filter functionality, and a centered heading.
 
 #### Scenario: Page renders with heading
+
 - **Given** the user loads the page
 - **When** the page finishes rendering
 - **Then** a heading is visible containing "Multi-Select" and "Limit" text
 - **And** the heading is centered horizontally
 
 #### Scenario: Page has light gray background
+
 - **Given** the user loads the page
 - **When** the body background is inspected
 - **Then** the background color is approximately `#efefef`
 
 #### Scenario: Three multi-select components render
+
 - **Given** the user loads the page
 - **When** the multi-select areas are visible
 - **Then** three separate multi-select inputs are shown
@@ -68,6 +73,7 @@ Extracted from `css/style.css` and `css/chosen.css` of the ColorLib preview (fet
 - **And** each container has a subtle box-shadow
 
 #### Scenario: Color variants are distinct
+
 - **Given** the user loads the page
 - **When** the three multi-select components are visible
 - **Then** the first component uses cream/yellow tag color (`#e5e4cc`)
@@ -75,12 +81,14 @@ Extracted from `css/style.css` and `css/chosen.css` of the ColorLib preview (fet
 - **And** the third component uses blue tag color (`#d3f4ff`)
 
 #### Scenario: Multi-select opens dropdown on click
+
 - **Given** the user has not selected any options
 - **When** the user clicks a multi-select input
 - **Then** a dropdown appears below the input
 - **And** the dropdown lists all available options: Design, HTML5, CSS3, jQuery, BS4, Bootstrap, WordPress, FrontEnd
 
 #### Scenario: Selecting an option adds a tag
+
 - **Given** the dropdown is open
 - **When** the user clicks the "Design" option
 - **Then** a tag labeled "Design" appears inside the input area
@@ -88,6 +96,7 @@ Extracted from `css/style.css` and `css/chosen.css` of the ColorLib preview (fet
 - **And** the dropdown remains open for further selections
 
 #### Scenario: Selection limit is enforced at 5
+
 - **Given** the user has selected 5 options in a dropdown
 - **When** the user attempts to select a 6th option
 - **Then** the 6th option cannot be selected
@@ -95,6 +104,7 @@ Extracted from `css/style.css` and `css/chosen.css` of the ColorLib preview (fet
 - **And** only 5 tags are visible in the input area
 
 #### Scenario: Deselecting a tag frees a slot
+
 - **Given** the user has selected 5 options in a dropdown
 - **When** the user clicks the close button on one of the selected tags
 - **Then** the tag is removed
@@ -102,18 +112,21 @@ Extracted from `css/style.css` and `css/chosen.css` of the ColorLib preview (fet
 - **And** the user can now select another option
 
 #### Scenario: Each dropdown operates independently
+
 - **Given** the user has selected 5 options in the first dropdown
 - **When** the user interacts with the second dropdown
 - **Then** the second dropdown allows independent selections
 - **And** the first dropdown's selections are unchanged
 
 #### Scenario: Search field works within dropdown
+
 - **Given** a dropdown is open
 - **When** the user types in the search input field
 - **Then** the option list is filtered to match the search text
 - **And** only matching options remain visible
 
 #### Scenario: Accessibility — semantic elements
+
 - **Given** the user loads the page
 - **When** the page is inspected for accessibility
 - **Then** each multi-select has an associated label element

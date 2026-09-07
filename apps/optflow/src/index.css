@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-cream: #e5e4cc;
+  --color-green: #c7f0db;
+  --color-skyblue: #d3f4ff;
+  --color-active-border: #5897fb;
+  --color-highlight: #3875d7;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #efefef;
+  }
+}
