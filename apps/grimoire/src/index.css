@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Grimoire brand palette — nature background, green accent. */
+  --color-page: #5a7d3a;
+
+  /* Accent — green: buttons, step indicators, active states. */
+  --color-accent: #6dab3c;
+  --color-accent-dark: #5f9434;
+
+  /* Panel — white card container. */
+  --color-panel: #ffffff;
+
+  /* Ink — body text, headings. */
+  --color-ink: #222222;
+
+  /* Muted — labels, placeholders, step footer. */
+  --color-muted: #999999;
+
+  /* Desc — description text. */
+  --color-desc: #555555;
+
+  /* Line — input borders. */
+  --color-line: #e0e0e0;
+
+  /* Footer — step progress bar background. */
+  --color-footer-bg: #f8f8f8;
+
+  /* Container white. */
+  --color-container: #ffffff;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the accent green. */
+  --color-primary-50: #f0f7e8;
+  --color-primary-100: #dcefc8;
+  --color-primary-200: #b8df8f;
+  --color-primary-300: #94cf57;
+  --color-primary-400: #7ebc46;
+  --color-primary-500: #6dab3c;
+  --color-primary-600: #5f9434;
+  --color-primary-700: #4a7529;
+  --color-primary-800: #36561f;
+  --color-primary-900: #213714;
+
+  /* Roboto Slab font family. */
+  --font-sans: 'Roboto Slab', ui-serif, Georgia, serif;
+}
