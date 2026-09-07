@@ -1,56 +1,74 @@
 # Selectify — Implementation Tasks
 
-## Source
-- ColorLib: "Multiselect 04"
-- URL: https://colorlib.com/wp/template/multiselect-04/
-- Preview: https://preview.colorlib.com/theme/bootstrap/multiselect-04/
-
-## Tasks
-
-### 1. Scaffold app folder
-- [ ] Copy simplest existing app (e.g. `apps/pickbox` or `apps/langpick` as reference)
-- [ ] Rename package to `@free-react-templates/selectify`
-- [ ] Update `vite.config.ts` with `injectUiSource()`
-- [ ] Create `public/CNAME` with `selectify.free.componentdock.com`
-- [ ] Set `"homepage"` in `package.json` to `https://selectify.free.componentdock.com`
-- [ ] Run `npm install` at repo root
-
-### 2. Build components
-- [ ] `src/App.tsx` — compose page layout (centered container)
-- [ ] `src/components/Heading.tsx` — "Selectify" heading, 28px, Lato, black, centered
-- [ ] `src/components/CitySelect.tsx` — multiselect dropdown with cities (Toronto, Bucharest, Paris)
-- [ ] Implement custom multiselect with checkboxes (no jQuery/Bootstrap dependency)
-- [ ] Style with Tailwind, brand color `#f30e5c` for checkmarks/accent
-
-### 3. Design token setup
-- [ ] Import Lato font (weights 300, 400, 700) via Google Fonts link in `index.html`
-- [ ] Set `--brand: #f30e5c` in `@theme` block
-- [ ] Body: white background, gray text, Lato font, 16px, line-height 1.8
-- [ ] Section: 7em vertical padding
-
-### 4. Tests (TDD)
-- [ ] `Heading.test.tsx` — renders heading text, correct styling
-- [ ] `CitySelect.test.tsx` — opens/closes, selects/deselects, multiple selection, keyboard nav
-- [ ] `App.test.tsx` — composes all sections, responsive layout
-
-### 5. Footer
-- [ ] Add footer with "Made with Component Dock" linking to `https://www.componentdock.com/`
-
-### 6. Verification
-- [ ] `npm run verify:app selectify` passes (typecheck + lint + test:coverage + build)
-- [ ] 100% coverage on all statements/branches/functions/lines
+Recreation of ColorLib Multiselect 10
+(https://colorlib.com/wp/template/multiselect-10/).
 
 ## Design notes
 
-### Structure order (1:1 with original)
-1. Full-page centered section (`ftco-section` equivalent)
-2. Heading row (col-md-6 centered)
-3. Dropdown row (col-md-6 col-lg-4 centered)
+- **Light theme** — page bg `#f8f9fd`, card `#fff`, coral `#ff5959` accent
+- **Font:** Lato 400 via Google Fonts `<link>` in index.html
+- **Custom checkboxes** — no FontAwesome; use lucide `Square`/`Check` or inline SVG
+- **US states data** — 59 entries (50 states + DC + territories), alphabetical
+- **Search filtering** — `.toLowerCase().includes(search)` on each option
+- **Quantity counter** — derived from checked count in React state
+- **Dropdown stays open** while selecting (click-outside or trigger to close)
+- **No tag creation** — unlike Thresh (Multiselect 09), search only filters, does not create
+- **No images** — the source has none
+- **No jQuery, no Bootstrap, no lodash** — pure React + hooks
 
-### Fidelity notes
-- Original uses Bootstrap-select jQuery plugin — React version should use a custom multiselect component (no jQuery)
-- Original has 3 options: Toronto, Bucharest, Paris — keep same options
-- Original checkmark color: `#f30e5c` — use as brand/accent
-- Original heading: "Multiselect #04" — renamed to "Selectify"
-- Original uses Font Awesome 4.7 for icons — use lucide-react for chevron icon
-- No navigation, no images, no footer in original — add minimal footer per repo rules
+## Structure order (1:1 from live DOM)
+
+1. **App.tsx** — page layout: dark section, centered heading + control + footer
+2. **Heading.tsx** — centered h2 "Selectify" (28px, #000, Lato 400)
+3. **MultiselectControl.tsx** — the custom dropdown:
+   - Trigger: white card (bg #fff, padding 15px/20px, radius 5px, shadow
+     `0px 10px 30px -4px rgba(0,0,0,0.15)`), label "States" (gray, weight 700),
+     quantity "(Any)" / "(N)" (coral #ff5959, weight 700), coral ChevronDown icon
+   - Panel: white bg, padding 10px/20px, hidden by default
+     - Search input: padding 5px/10px, radius 4px, bg rgba(0,0,0,0.05), no border
+     - Scrollable list: max-height 200px, overflow-y auto, margin-top 20px
+       - Each item: checkbox-wrap label with hidden native checkbox + custom
+         20x20 indicator (unchecked: rgba(0,0,0,0.1) square; checked: #ff5959
+         filled square with check) + state name text
+4. **Footer.tsx** — "Made with Component Dock" link
+
+## Tasks
+
+- [ ] Create `apps/selectify/` from the simplest existing app scaffold
+- [ ] Write tests for Heading component (render, text, styling)
+- [ ] Write tests for MultiselectControl component:
+  - [ ] Renders trigger with "States" label and "(Any)" quantity
+  - [ ] Click trigger opens dropdown
+  - [ ] Search input filters state list
+  - [ ] Checking a state updates quantity counter
+  - [ ] Unchecking a state decrements counter
+  - [ ] All unchecked → "(Any)"
+  - [ ] Click outside closes dropdown
+  - [ ] Click trigger again closes dropdown
+  - [ ] Selections persist across open/close
+  - [ ] 59 states rendered (Alabama through Wyoming)
+- [ ] Write tests for Footer component (render, link)
+- [ ] Write tests for App component (renders all sections, title)
+- [ ] Implement Heading component
+- [ ] Implement MultiselectControl component with React state
+- [ ] Implement Footer component
+- [ ] Implement App component composition
+- [ ] Add Lato font via Google Fonts `<link>` in index.html
+- [ ] Configure Tailwind theme tokens (#ff5959 accent)
+- [ ] Run 100% coverage tests
+- [ ] Verify build passes
+- [ ] Push and open PR
+
+## Key differences from Thresh (Multiselect 09)
+
+| Aspect  | Thresh                          | Selectify                        |
+| ------- | ------------------------------- | -------------------------------- |
+| Theme   | Dark (#343434, #000)            | Light (#f8f9fd, #fff)            |
+| Accent  | Yellow #f6c523                  | Coral #ff5959                    |
+| Engine  | Select2 4.0.4                   | Custom jQuery + lodash           |
+| Options | Option1..Option13               | 59 US states                     |
+| Tags    | Creates custom tags (tags:true) | No tag creation                  |
+| Trigger | Black bg, transparent border    | White bg, no border              |
+| Chips   | Yellow tag chips with × remove  | No chips; quantity counter "(N)" |
+| Panel   | Black bg, no border             | White bg, no border              |
+| Search  | Inline within trigger           | Separate input in panel          |
