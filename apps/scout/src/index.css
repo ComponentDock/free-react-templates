@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Scout brand palette — teal accent on light gray background. */
+  --color-page: #f8f8f8;
+
+  /* Accent — teal: buttons, step indicators, active states. */
+  --color-accent: #1abc9c;
+  --color-accent-light: #43d7ba;
+  --color-accent-dark: #148f77;
+
+  /* Panel — white card container. */
+  --color-panel: #ffffff;
+
+  /* Ink — body text, headings. */
+  --color-ink: #222222;
+
+  /* Muted — labels, placeholders. */
+  --color-muted: #999999;
+
+  /* Input border. */
+  --color-line: #ebebeb;
+
+  /* Star gold. */
+  --color-star: #fbd91b;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the accent teal. */
+  --color-primary-50: #e8f8f5;
+  --color-primary-100: #c6f0e7;
+  --color-primary-200: #9de6d4;
+  --color-primary-300: #73dbc2;
+  --color-primary-400: #52d4b4;
+  --color-primary-500: #1abc9c;
+  --color-primary-600: #148f77;
+  --color-primary-700: #0e7060;
+  --color-primary-800: #095148;
+  --color-primary-900: #043330;
+
+  /* Font families. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-button: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
