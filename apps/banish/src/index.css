@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Page: full-viewport photo background (replaced by Tailwind bg utility) */
+  --color-page: #f5f5f5;
+
+  /* Card: white */
+  --color-card: #ffffff;
+
+  /* Near-black accent: #333 — text, inputs, icons, bar fill, buttons */
+  --color-ink: #333333;
+  --color-ink-hover: #4d4d4d;
+
+  /* Progress track: #b7b2ab */
+  --color-track: #b7b2ab;
+
+  /* Payment tile border: #e5e5e5 */
+  --color-tile: #e5e5e5;
+
+  /* Select dropdown border: #4192cb */
+  --color-drop: #4192cb;
+
+  /* Dropdown row hover: #81acee */
+  --color-drop-hv: #81acee;
+
+  /* Font */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
