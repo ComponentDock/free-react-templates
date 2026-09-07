@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-primary: #1a73e8;
+  --color-brand-primary-hover: #1464cc;
+  --color-brand-accent: #77cc6d;
+  --color-brand-accent-hover: #65b55c;
+  --color-brand-text: #26282b;
+  --color-brand-border: #eeeeee;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family:
+      -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+      'Helvetica Neue', sans-serif;
+    color: var(--color-brand-text);
+  }
+}
