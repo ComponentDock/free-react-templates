@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #1a73e8;
+  --color-primary-hover: #1557b0;
+  --color-muted: #666;
+  --color-body: #26282b;
+  --color-page-bg: #f6f6f6;
+  --color-border-light: #eee;
+  --color-step-inactive: #ccc;
+  --color-step-muted: #999;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
