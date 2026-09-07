@@ -40,7 +40,7 @@ and "Select All" / "Deselect All" action buttons.
    `#efefef` background, paragraph text `#b3b3b3`, minimal shadows.
    No gradients, no images, no decorative elements.
 4. **Show-tick mode.** The plugin uses `.show-tick` class to display check
-     marks next to selected options in the dropdown.
+   marks next to selected options in the dropdown.
 
 ## Naming
 
@@ -48,7 +48,8 @@ The ColorLib source name "Multiselect 16" is FORBIDDEN as the app name.
 **Selkit** is the new, original name — single lowercase word, kebab-case,
 no collision with `apps/`, `openspec/specs/`, `docs/templates/`, or any
 TEMPLATES.md name (verified: zero hits for `selkit` in any). Source slug
-+ preview URL are recorded below.
+
+- preview URL are recorded below.
 
 ## Design reference (replication findings)
 
@@ -82,26 +83,26 @@ TEMPLATES.md name (verified: zero hits for `selkit` in any). Source slug
 
 ## Design tokens (extracted from fetched CSS)
 
-| Token | Value | Source |
-|-------|-------|--------|
-| Body font | Roboto 300/400 | `css/style.css` body font-family |
-| Page background | `#efefef` | `css/style.css` body background-color |
-| Paragraph text | `#b3b3b3` | `css/style.css` p color |
-| Heading text | `#333` (via Bootstrap h2) | Bootstrap + style.css |
-| Button placeholder | `#999` | `css/bootstrap-select.min.css` .bs-placeholder |
-| Button bg | White (Bootstrap default) | Bootstrap form-control |
-| Button border | Bootstrap form-control default | Bootstrap 4 |
-| Button height | Bootstrap form-control default | Bootstrap 4 |
-| Button radius | Bootstrap form-control default | Bootstrap 4 |
-| Dropdown shadow | Bootstrap .dropdown-menu shadow | Bootstrap 4 |
-| Check-mark font-size | 12px | `css/style.css` .check-mark |
-| Select-all / Deselect-all | Bootstrap btn-group buttons | bootstrap-select plugin |
-| Search input | `.bs-searchbox .form-control` | bootstrap-select plugin |
-| Heading font-size | 20px | `css/style.css` h2 |
-| Content padding | 7rem 0 | `css/style.css` .content |
-| Column width | col-md-5 (Bootstrap) | HTML structure |
+| Token                     | Value                           | Source                                         |
+| ------------------------- | ------------------------------- | ---------------------------------------------- |
+| Body font                 | Roboto 300/400                  | `css/style.css` body font-family               |
+| Page background           | `#efefef`                       | `css/style.css` body background-color          |
+| Paragraph text            | `#b3b3b3`                       | `css/style.css` p color                        |
+| Heading text              | `#333` (via Bootstrap h2)       | Bootstrap + style.css                          |
+| Button placeholder        | `#999`                          | `css/bootstrap-select.min.css` .bs-placeholder |
+| Button bg                 | White (Bootstrap default)       | Bootstrap form-control                         |
+| Button border             | Bootstrap form-control default  | Bootstrap 4                                    |
+| Button height             | Bootstrap form-control default  | Bootstrap 4                                    |
+| Button radius             | Bootstrap form-control default  | Bootstrap 4                                    |
+| Dropdown shadow           | Bootstrap .dropdown-menu shadow | Bootstrap 4                                    |
+| Check-mark font-size      | 12px                            | `css/style.css` .check-mark                    |
+| Select-all / Deselect-all | Bootstrap btn-group buttons     | bootstrap-select plugin                        |
+| Search input              | `.bs-searchbox .form-control`   | bootstrap-select plugin                        |
+| Heading font-size         | 20px                            | `css/style.css` h2                             |
+| Content padding           | 7rem 0                          | `css/style.css` .content                       |
+| Column width              | col-md-5 (Bootstrap)            | HTML structure                                 |
 
-## Gherkin requirements
+## Requirements
 
 ### Requirement: Page layout
 
