@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-accent: #3155cc;
+  --color-brand-accent-hover: #1d41b8;
+  --color-brand-circle-active: #3d6aff;
+  --color-brand-tab-inactive: #999999;
+  --color-brand-circle-inactive: #666666;
+  --color-brand-input-text: #666666;
+  --color-brand-input-placeholder: #999999;
+  --color-brand-input-border: #e5e5e5;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    font-family: 'Lato', 'Arial', 'Helvetica Neue', sans-serif;
+  }
+}
