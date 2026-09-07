@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Cantrip brand palette — from the original ColorLib Wizard 13
+     stylesheet: green submit button #6DAB3C, orange focus #f65300. */
+  --color-brand: #6dab3c;
+  --color-brand-hover: #5f9434;
+  --color-focus: #f65300;
+
+  /* Text and surface colors from the original. */
+  --color-ink: #222222;
+  --color-muted: #999999;
+  --color-surface: #f8f8f8;
+  --color-border: #ebebeb;
+
+  /* Roboto Slab from Google Fonts (loaded in index.html). */
+  --font-slab: 'Roboto Slab', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-slab);
+  }
+}
