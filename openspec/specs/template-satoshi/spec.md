@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib "Bitcoin" — a cryptocurrency landing page template featuring a hero with live price display, currency converter, services, about section, features, statistics, pricing cards, blog, and newsletter footer. Preview URL: https://preview.colorlib.com/theme/bitcoin/. Source slug: `bitcoin`.
+Recreation of ColorLib "Bitcoin" — a cryptocurrency landing page template featuring a hero with live price display, currency converter, services, about section, features, statistics, pricing cards, blog, and newsletter footer. Source: https://colorlib.com/wp/template/bitcoin/. Preview URL: https://preview.colorlib.com/theme/bitcoin/. Source slug: `bitcoin`.
 
 **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript. Single-page landing with multiple sections, pricing cards, and newsletter signup.
 
