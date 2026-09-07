@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+
+  /* FormWalk palette — blue wizard aesthetic */
+  --color-brand: #3760e5;
+  --color-brand-hover: #2b4ab3;
+  --color-card: #ffffff;
+  --color-step-inactive: #cccccc;
+  --color-border: #e5e5e5;
+}
