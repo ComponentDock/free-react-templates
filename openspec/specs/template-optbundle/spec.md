@@ -31,7 +31,7 @@ demonstration page with categorized groupings.
 
 ## Section structure (order)
 
-1. **Hero / Heading section** — centered page title "Multiselect #08"
+1. **Hero / Heading section** — centered page title "OptBundle"
 2. **Multiselect dropdown** — full-width Chosen.js-style multiselect with:
    - Placeholder text: "Your Favorite Football Teams"
    - 8 optgroups (NFC EAST, NFC NORTH, NFC SOUTH, NFC WEST, AFC EAST, AFC NORTH, AFC SOUTH, AFC WEST)
@@ -40,6 +40,7 @@ demonstration page with categorized groupings.
    - Search input within dropdown
    - Multiple selection support with chip/tag display
    - Selected items shown as chips with remove button
+3. **Footer** — links to Component Dock
 
 ## Fidelity notes
 
@@ -50,99 +51,114 @@ demonstration page with categorized groupings.
 - Font Awesome 4.7.0 icons are not used in the template content — replace
   with lucide-react if any icons are needed.
 - Background: solid white, no textures or gradients.
-- The page is a single centered section — no nav, no footer, no other sections.
+- The page is a single centered section with a footer.
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Page loads with heading
+### Requirement: Page renders with centered heading
 
-```gherkin
-Given the user visits the OptBundle page
-Then they see a heading "OptBundle"
-And the heading is centered on the page
-And the page has a white background
-```
+The page SHALL display a centered heading "OptBundle" on a white background.
 
-### Scenario: Multiselect dropdown renders with categories
+#### Scenario: Page loads with heading
 
-```gherkin
-Given the user visits the OptBundle page
-Then they see a multiselect dropdown
-And the dropdown has a placeholder "Your Favorite Categories"
-And the dropdown is empty (no selections)
-```
+- **WHEN** the user visits the OptBundle page
+- **THEN** they see a heading "OptBundle"
+- **AND** the heading is centered on the page
+- **AND** the page has a white background
 
-### Scenario: Opening the dropdown shows grouped options
+### Requirement: Multiselect dropdown renders with categories
 
-```gherkin
-Given the user clicks the multiselect dropdown
-Then they see 8 category groups
-And each group has a gray background header
-And each group contains 4 selectable items
-And a search input is visible
-```
+The multiselect SHALL display a dropdown with placeholder text and support categorized options.
 
-### Scenario: Selecting an item adds a chip
+#### Scenario: Multiselect renders with placeholder
 
-```gherkin
-Given the dropdown is open
-When the user selects an item
-Then the item appears as a chip/tag below the dropdown
-And the chip has a light background and a remove button
-And the item is marked as selected in the dropdown
-```
+- **WHEN** the user visits the OptBundle page
+- **THEN** they see a multiselect dropdown
+- **AND** the dropdown has a placeholder "Your Favorite Football Teams"
+- **AND** the dropdown is empty (no selections)
 
-### Scenario: Removing a selected item
+#### Scenario: Opening the dropdown shows grouped options
 
-```gherkin
-Given at least one item is selected
-When the user clicks the remove button on a chip
-Then the chip is removed
-And the item is deselected in the dropdown
-```
+- **WHEN** the user clicks the multiselect dropdown
+- **THEN** they see 8 category groups
+- **AND** each group has a gray background header
+- **AND** each group contains 4 selectable items
+- **AND** a search input is visible
 
-### Scenario: Searching within the dropdown
+### Requirement: Selection adds chips
 
-```gherkin
-Given the dropdown is open
-When the user types in the search input
-Then only matching items are shown
-And group headers for empty groups are hidden
-```
+Selecting an item SHALL display it as a removable chip/tag.
 
-### Scenario: Selecting multiple items
+#### Scenario: Selecting an item adds a chip
 
-```gherkin
-Given the dropdown is open
-When the user selects items from different groups
-Then all selected items appear as chips
-And the order of chips matches selection order
-```
+- **WHEN** the dropdown is open
+- **AND** the user selects an item
+- **THEN** the item appears as a chip/tag in the trigger area
+- **AND** the chip has a light background and a remove button
+- **AND** the item is marked as selected in the dropdown
 
-### Scenario: Accessibility
+#### Scenario: Removing a selected item
 
-```gherkin
-Given the user visits the OptBundle page
-Then the multiselect is keyboard navigable
-And the dropdown has appropriate ARIA roles
-And focus indicators are visible
-```
+- **WHEN** at least one item is selected
+- **AND** the user clicks the remove button on a chip
+- **THEN** the chip is removed
+- **AND** the item is deselected in the dropdown
 
-## Verification checklist
+### Requirement: Search filters options
 
-- [ ] Heading renders centered with correct text
-- [ ] Multiselect dropdown opens/closes on click
-- [ ] 8 category groups with correct names
-- [ ] 4 items per group (32 total)
-- [ ] Search input filters items
-- [ ] Selection adds chip/tag
-- [ ] Chip removal deselects item
-- [ ] Multiple selections supported
-- [ ] Keyboard navigation works
-- [ ] ARIA attributes present
-- [ ] Brand color #a7d129 applied to borders and highlights
-- [ ] Lato font family loaded (Google Fonts)
-- [ ] White background, gray body text
-- [ ] Border radius 4px on dropdown
-- [ ] No ColorLib references in app code
-- [ ] Footer links to Component Dock
+The dropdown SHALL support searching/filtering within options.
+
+#### Scenario: Searching within the dropdown
+
+- **WHEN** the dropdown is open
+- **AND** the user types in the search input
+- **THEN** only matching items are shown
+- **AND** group headers for empty groups are hidden
+
+#### Scenario: No results found
+
+- **WHEN** the dropdown is open
+- **AND** the user types a search term with no matches
+- **THEN** a "No results found" message is displayed
+
+### Requirement: Multiple selection support
+
+The multiselect SHALL support selecting multiple items from different groups.
+
+#### Scenario: Selecting items from different groups
+
+- **WHEN** the dropdown is open
+- **AND** the user selects items from different groups
+- **THEN** all selected items appear as chips
+- **AND** the order of chips matches selection order
+
+### Requirement: Keyboard accessibility
+
+The multiselect SHALL be keyboard navigable with appropriate ARIA attributes.
+
+#### Scenario: Keyboard navigation on trigger
+
+- **WHEN** the user presses Enter or Space on the trigger
+- **THEN** the dropdown opens or closes
+
+#### Scenario: Keyboard removal of chips
+
+- **WHEN** the user presses Enter or Space on a chip remove button
+- **THEN** the chip is removed
+
+#### Scenario: ARIA attributes
+
+- **WHEN** the user visits the OptBundle page
+- **THEN** the trigger has `aria-haspopup="listbox"` and `aria-expanded`
+- **AND** the dropdown has `role="listbox"`
+- **AND** options have `role="option"` with `aria-selected`
+
+### Requirement: Footer links to Component Dock
+
+The page footer SHALL link to https://www.componentdock.com/.
+
+#### Scenario: Footer renders with Component Dock link
+
+- **WHEN** the user visits the OptBundle page
+- **THEN** a footer is visible
+- **AND** the footer contains a link to "Component Dock" at https://www.componentdock.com/
