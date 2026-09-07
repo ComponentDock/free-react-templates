@@ -1,166 +1,132 @@
-# Template: FormWalk (Form Wizard)
+# Template: FormWalk (Multi-step Form Wizard)
 
 ## Purpose
 
-Recreation of ColorLib's **Colorlib Wizard 30** — a free minimal multi-step form wizard template.
+- **Recreation of ColorLib source**: Colorlib Wizard 30 (`https://colorlib.com/wp/template/colorlib-wizard-30/`)
+- **Preview URL**: `https://colorlib.com/etc/bwiz/colorlib-wizard-30/index.html`
+- **New Name**: `formwalk` (App directory: `apps/formwalk`, Package: `@free-react-templates/formwalk`)
+- **Category**: Forms / Multi-step Form Wizard
+- **Description**: A centered white card wizard on a full-page background image. Blue header bar with "FORM WIZARD" heading. Three circular step indicators connected by gray lines. Step 1: First Name + Last Name. Step 2: Email + Password. Step 3: Subject dropdown + Comment. Pill-shaped blue Next/Back buttons. Montserrat font, clean minimal aesthetic.
 
-- **Source slug:** `colorlib-wizard-30`
-- **Source URL:** https://colorlib.com/wp/template/colorlib-wizard-30/
-- **Preview/demo URL:** https://colorlib.com/etc/bwiz/colorlib-wizard-30/index.html
-- **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
-- **Category:** Form Wizard / Multi-step Form
+## Requirements
 
-## Design tokens
+### Requirement: Full-page background with centered wizard card
 
-Extracted from the original preview CSS (`css/style.css`) and HTML structure:
+The page SHALL display a full-page background image with a centered white wizard card.
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Brand color (primary) | `#3760e5` | Blue — header bg, active steps, buttons |
-| Brand hover | `#2b4ab3` | Darker blue for button hover |
-| Card background | `#ffffff` | White card on full-page background image |
-| Card border-radius | `8px` | Rounded corners on the wizard card |
-| Card box-shadow | `0px 8px 20px 0px rgba(0,0,0,0.15)` | Subtle drop shadow |
-| Font family | `'Montserrat', sans-serif` | Google Font — Montserrat |
-| Step circle diameter | `60px` | Inactive bg: `#ccc`; active/done bg: `#3760e5` |
-| Step circle radius | `50%` (fully round) | Number text centered inside |
-| Step connector line | `2px solid #e5e5e5`, width `143px` | Horizontal line between step circles |
-| Input border | `1px solid #e5e5e5` | Light gray border on all inputs |
-| Input border-radius | `5px` | Slightly rounded inputs |
-| Input padding | `14.5px 15px` | Comfortable tap target |
-| Input font-size | `16px`, weight `600` | |
-| Button shape | `border-radius: 25px` (pill) | Fully rounded Next button |
-| Button bg | `#3760e5` | Same as brand |
-| Button dimensions | `height: 50px`, `width: 160px` | Fixed size, centered |
-| Button font | `15px`, weight `600`, color `#fff` | |
-| Header bg | `#3760e5` | Top banner of wizard card |
-| Header text | `28px`, weight `700`, color `#fff` | "FORM WIZARD" heading |
-| Full-page background | Background image (`wizard-v10-bg.jpg`) | Centered, cover, no-repeat |
-| Content padding | `0 80px` (form), `20px 80px 60px` (actions) | Generous horizontal padding |
+#### Scenario: Page loads with background and card
 
-## Visual design (from screenshot reference)
+- **WHEN** the user visits the FormWalk page
+- **THEN** a full-page background image covers the viewport
+- **AND** a centered white wizard card is visible
+- **AND** the card has rounded corners and a drop shadow
 
-The template shows a centered white card with a blue header bar displaying "FORM WIZARD" in bold white text. Below the header are three circular step indicators connected by horizontal gray lines — the active step circle is blue, inactive ones are gray. Each step contains two form fields stacked vertically (label above input). The card sits on a full-page background image. A pill-shaped blue "Next" button sits below the form fields. The overall aesthetic is clean, minimal, and modern — a classic multi-step registration/contact wizard.
+### Requirement: Wizard header displays correctly
 
-## Requirements (Gherkin)
+The wizard card SHALL display a blue header bar with the title.
 
-### Scenario: Page loads with full-page background
-```
-Given the user visits the FormWalk page
-When the page renders
-Then a full-page background image is displayed covering the viewport
-And a centered white wizard card is visible
-```
+#### Scenario: Header renders on load
 
-### Scenario: Wizard header displays
-```
-Given the wizard card is visible
-When the user looks at the top of the card
-Then a blue header bar (#3760e5) is displayed
-And the heading "FORM WIZARD" appears in white bold text
-```
+- **WHEN** the page renders
+- **THEN** a blue header bar (#3760e5) is displayed at the top of the card
+- **AND** the heading "FORM WIZARD" appears in white bold uppercase text (28px, Montserrat)
 
-### Scenario: Step indicators render correctly
-```
-Given the wizard is loaded
-When the user views the step indicator area
-Then 3 circular step indicators are displayed
-And the circles are connected by horizontal gray lines
-And the first step circle is highlighted blue (active)
-And the remaining step circles are gray (inactive)
-```
+### Requirement: Step indicators render with correct state
 
-### Scenario: Step 1 form fields
-```
-Given the wizard is on step 1
-When the user views the form content
-Then a "First Name" text input is displayed
-And a "Last Name" text input is displayed
-And both inputs have labels above them in bold text
-```
+The wizard SHALL display 3 circular step indicators connected by horizontal lines.
 
-### Scenario: Navigate to step 2
-```
-Given the user is on step 1
-When the user fills in First Name and Last Name
-And the user clicks the Next button
-Then the wizard transitions to step 2
-And the step 1 circle turns blue (done)
-And the step 2 circle turns blue (active)
-```
+#### Scenario: Step 1 is active on load
 
-### Scenario: Step 2 form fields
-```
-Given the wizard is on step 2
-When the user views the form content
-Then an "Email Address" email input is displayed
-And a "Password" password input is displayed
-```
+- **WHEN** the page loads
+- **THEN** 3 circular step indicators are displayed
+- **AND** the circles are connected by horizontal gray lines
+- **AND** step 1 circle is highlighted blue (active)
+- **AND** steps 2 and 3 circles are gray (inactive)
 
-### Scenario: Navigate to step 3
-```
-Given the user is on step 2
-When the user fills in Email and Password
-And the user clicks the Next button
-Then the wizard transitions to step 3
-And step 2 circle turns blue (done)
-```
+#### Scenario: Active step updates on navigation
 
-### Scenario: Step 3 form fields
-```
-Given the wizard is on step 3
-When the user views the form content
-Then a "Subject" dropdown select is displayed with options: Finance, Marketing, IT Support
-And a "Comment" text input is displayed
-```
+- **WHEN** the user navigates to step 2
+- **THEN** step 1 circle turns blue (completed)
+- **AND** step 2 circle turns blue (active)
+- **AND** step 3 circle remains gray
 
-### Scenario: Back navigation
-```
-Given the user is on step 2
-When the user clicks the Back button
-Then the wizard transitions back to step 1
-And the step 2 circle reverts to gray
-```
+### Requirement: Step 1 form fields
 
-### Scenario: Responsive layout on mobile
-```
-Given the user views the wizard on a screen narrower than 576px
-When the page renders
-Then the wizard card width adapts to approximately 90% of the viewport
-And form rows stack vertically (single column)
-And step circles shrink to 50px diameter
-```
+The wizard SHALL display First Name and Last Name inputs on step 1.
 
-### Scenario: Input focus styling
-```
-Given the user clicks on any form input
-When the input receives focus
-Then the input border remains visible
-And no default browser outline is shown (outline: none)
-```
+#### Scenario: Step 1 fields visible
 
-### Scenario: Button hover effect
-```
-Given the Next button is visible
-When the user hovers over the button
-Then the button background darkens to #2b4ab3
-```
+- **WHEN** the wizard is on step 1
+- **THEN** a "First Name" text input is displayed
+- **AND** a "Last Name" text input is displayed
+- **AND** both inputs have labels above them in bold text
 
-## Verification checklist
+### Requirement: Step 2 form fields
 
-- [ ] Full-page background image covers viewport
-- [ ] White wizard card centered with 8px border-radius and drop shadow
-- [ ] Blue header bar with "FORM WIZARD" heading in Montserrat bold
-- [ ] 3 circular step indicators with connecting lines
-- [ ] Active step circle: blue; inactive: gray
-- [ ] Step 1: First Name + Last Name inputs with labels
-- [ ] Step 2: Email + Password inputs
-- [ ] Step 3: Subject dropdown + Comment input
-- [ ] Next button: pill-shaped, blue, centered
-- [ ] Back button appears on steps 2+ and 3
-- [ ] Step transitions animate indicator state changes
-- [ ] Responsive: single-column layout on mobile (< 576px)
-- [ ] Montserrat font loaded from Google Fonts
-- [ ] Inputs have 5px border-radius, 1px solid #e5e5e5 border
-- [ ] No ColorLib references in app code (provenance in spec only)
-- [ ] Footer links to https://www.componentdock.com/
+The wizard SHALL display Email and Password inputs on step 2.
+
+#### Scenario: Step 2 fields visible
+
+- **WHEN** the user navigates to step 2
+- **THEN** an "Email Address" email input is displayed
+- **AND** a "Password" password input is displayed
+
+### Requirement: Step 3 form fields
+
+The wizard SHALL display Subject dropdown and Comment input on step 3.
+
+#### Scenario: Step 3 fields visible
+
+- **WHEN** the user navigates to step 3
+- **THEN** a "Subject" dropdown select is displayed with options: Finance, Marketing, IT Support
+- **AND** a "Comment" text input is displayed
+
+### Requirement: Forward navigation
+
+The wizard SHALL allow forward navigation via the Next button.
+
+#### Scenario: Navigate to next step
+
+- **WHEN** the user fills in the current step fields and clicks Next
+- **THEN** the wizard transitions to the next step
+- **AND** the step indicator updates to show the new active step
+
+#### Scenario: Submit button on last step
+
+- **WHEN** the user is on step 3
+- **THEN** the Next button is replaced by a Submit button
+
+### Requirement: Backward navigation
+
+The wizard SHALL allow backward navigation via the Back button.
+
+#### Scenario: Navigate to previous step
+
+- **WHEN** the user is on step 2 or 3 and clicks Back
+- **THEN** the wizard transitions to the previous step
+
+#### Scenario: No Back button on step 1
+
+- **WHEN** the user is on step 1
+- **THEN** no Back button is displayed
+
+### Requirement: Responsive layout
+
+The wizard SHALL adapt to mobile screen sizes.
+
+#### Scenario: Mobile layout
+
+- **WHEN** the user views the wizard on a screen narrower than 576px
+- **THEN** the wizard card width adapts to approximately 90% of the viewport
+- **AND** form fields stack vertically in a single column
+
+### Requirement: Footer links to Component Dock
+
+The template footer SHALL link to Component Dock.
+
+#### Scenario: Footer renders
+
+- **WHEN** the page renders
+- **THEN** a footer is visible below the wizard card
+- **AND** the footer contains a "Component Dock" link to https://www.componentdock.com/
+- **AND** the link opens in a new tab
