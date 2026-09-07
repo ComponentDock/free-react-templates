@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-green: #36c240;
+  --color-brand-green-hover: #22ae2c;
+  --color-brand-gradient-start: #4158d0;
+  --color-brand-gradient-mid: #c850c0;
+  --color-brand-gradient-end: #ffcc70;
+  --color-brand-card: #ffffff;
+  --color-brand-text: #333333;
+  --color-brand-label: #666666;
+  --color-brand-muted: #999999;
+  --color-brand-border: #e5e5e5;
+  --color-brand-progress-bg: #f5f5f5;
+  --color-brand-btn-back: #999999;
+  --color-brand-btn-back-hover: #666666;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', 'Arial', 'Helvetica Neue', sans-serif;
+  }
+  body {
+    margin: 0;
+  }
+}
