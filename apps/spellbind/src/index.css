@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Spellbind brand palette — dark page, medium-blue accent. */
+  --color-page: #222222;
+  --color-page-dark: #1a1a1a;
+
+  /* Accent — medium blue: current step circle, checked tile border, slider, buttons. */
+  --color-accent: #4966b1;
+  --color-accent-dark: #3a5299;
+
+  /* Panel — content + actions right column background. */
+  --color-panel: #f8f8f8;
+
+  /* Ink — body text, headings, bold input text. */
+  --color-ink: #222222;
+
+  /* Muted — idle step number/title, captions, search icon, Previous button. */
+  --color-muted: #999999;
+  --color-muted-dark: #666666;
+
+  /* Desc — paragraph description text. */
+  --color-desc: #555555;
+
+  /* Line — input borders, connector line, idle circle bg. */
+  --color-line: #ebebeb;
+
+  /* Button Previous — bg and text. */
+  --color-btn-prev: #e8e8e8;
+
+  /* Slider — track and handle. */
+  --color-slider: #e8e8e8;
+
+  /* Search button bg. */
+  --color-search-btn: #666666;
+  --color-search-btn-hover: #4d4d4d;
+
+  /* Error — invalid input border + alert icon. */
+  --color-error: #f63726;
+
+  /* Container white. */
+  --color-container: #ffffff;
+
+  /* Ink dark — for dark mode variant. */
+  --color-ink-dark: #f5f5f5;
+
+  /* Page dark — dark mode page. */
+  --color-page-dark-mode: #111111;
+
+  /* Panel dark — dark mode panel. */
+  --color-panel-dark: #2a2a2a;
+
+  /* Container dark — dark mode container. */
+  --color-container-dark: #1e1e1e;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the accent blue. */
+  --color-primary-50: #eef2fa;
+  --color-primary-100: #d5ddf0;
+  --color-primary-200: #b0bee3;
+  --color-primary-300: #8a9fd6;
+  --color-primary-400: #6b85c4;
+  --color-primary-500: #4966b1;
+  --color-primary-600: #3a5299;
+  --color-primary-700: #2d4080;
+  --color-primary-800: #223066;
+  --color-primary-900: #1a244d;
+
+  /* Roboto Slab font family. */
+  --font-sans: 'Roboto Slab', ui-serif, Georgia, serif;
+}
