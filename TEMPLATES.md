@@ -845,7 +845,7 @@
 
 ## Bootstrap Wizards (30)
 
-- [~] **Colorlib Wizard 1** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-1/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-1.jpg)
+- [x] **Colorlib Wizard 1** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-1/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-1.jpg) · [conjure](https://free-react-templates-conjure.surge.sh)
 - [ ] **Colorlib Wizard 10** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-10.jpg)
 - [ ] **Colorlib Wizard 11** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-11/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-11.jpg)
 - [x] **Colorlib Wizard 12** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-12/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-12.jpg) · [abjure](https://free-react-templates-abjure.surge.sh)
