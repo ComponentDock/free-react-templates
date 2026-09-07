@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-optselect-bg: #f8f9fd;
+  --color-optselect-card: #fff;
+  --color-optselect-border: #e5e5e5;
+  --color-optselect-text: #666;
+  --color-optselect-text-muted: #999;
+  --color-optselect-accent: #4f8cff;
+  --color-optselect-accent-bg: #eef4ff;
+  --color-optselect-hover: #f5f5f5;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
