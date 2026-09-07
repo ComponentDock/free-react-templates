@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-page: #efefef;
+  --color-text: #333333;
+  --color-text-dim: #b3b3b3;
+  --color-text-muted: #aaaaaa;
+  --color-border: #aaaaaa;
+  --color-hover-bg: #efefef;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
