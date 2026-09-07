@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-purple: #884d80;
+  --color-brand-lavender: #9795f0;
+  --color-brand-teal: #2b5876;
+  --color-brand-indigo: #4e4376;
+  --color-brand-light-blue: #a1c4fd;
+  --color-brand-border: #ebebeb;
+  --color-brand-text: #222222;
+  --color-brand-muted: #999999;
+  --color-brand-step-bg: #ebebeb;
+  --color-brand-step-inactive: #999999;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.92;
+    color: #222;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(0deg, #884d80, #9795f0, #2b5876, #4e4376);
+  }
+}
