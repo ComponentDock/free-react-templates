@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Page background: warm cream #f9f6f1 */
+  --color-page: #f9f6f1;
+
+  /* Card: white #fff */
+  --color-card: #ffffff;
+
+  /* Accent olive/sage #6d7f52 — active dots, enabled Forward/Submit, subtitle, links */
+  --color-accent: #6d7f52;
+  --color-accent-hover: #849963;
+  --color-accent-link-hv: #89b843;
+
+  /* Sand/beige #e9e0cf — idle dots, beige buttons, focus underline */
+  --color-sand: #e9e0cf;
+  --color-sand-hover: #cfc7b8;
+
+  /* Title: deep indigo #453e79 */
+  --color-title: #453e79;
+
+  /* Title border: #dad8e4 */
+  --color-title-border: #dad8e4;
+
+  /* Body/placeholder text: #999 */
+  --color-text: #999999;
+
+  /* Input text + button text: #666 */
+  --color-input: #666666;
+
+  /* Input bottom rule: #e6e6e6 */
+  --color-line: #e6e6e6;
+
+  /* Dropdown border + hover: #81acee */
+  --color-dropdown: #81acee;
+
+  /* Radio/checkbox ring: #999 */
+  --color-tick: #999999;
+
+  /* Primary scale — maps accent to the primary slot for shared Button */
+  --color-primary-50: #f2f7ed;
+  --color-primary-100: #e0edda;
+  --color-primary-200: #c1dbb5;
+  --color-primary-300: #a2c990;
+  --color-primary-400: #83b76b;
+  --color-primary-500: #6d7f52;
+  --color-primary-600: #5a6a44;
+  --color-primary-700: #475536;
+  --color-primary-800: #344028;
+  --color-primary-900: #212b1a;
+
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+}
