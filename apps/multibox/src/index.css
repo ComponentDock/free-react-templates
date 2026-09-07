@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-bg: #efefef;
+  --color-brand-heading: #333333;
+  --color-brand-text: #b3b3b3;
+  --color-tag-cream: #e5e4cc;
+  --color-tag-green: #c7f0db;
+  --color-tag-blue: #d3f4ff;
+  --color-active-border: #5897fb;
+  --color-highlight-start: #3875d7;
+  --color-highlight-end: #2a62bc;
+  --font-family-roboto: 'Roboto', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-family-roboto);
+    background-color: var(--color-brand-bg);
+  }
+}
