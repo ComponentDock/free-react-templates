@@ -33,94 +33,114 @@ Extracted from the ColorLib preview CSS (css/style.css):
 - Form control border-radius: `0 !important`
 - Content padding: `7rem 0`
 
-## Sections (in order)
+## Requirements
 
-1. **Page wrapper** — full-viewport centered layout, `#efefef` background
-2. **Heading** — "Multi-Select #3" centered, `h2` 20px Roboto
-3. **Instruction text** — "Names separate with comma ','" centered below heading
-4. **Dropdown container** — 7-column centered, contains:
-   - Select2-style multiselect input with live search
-   - Dropdown panel (borderless, square corners, shadow)
-   - Tag pills for selected items (teal green bg, white text, remove button)
-   - Option list with highlight on hover (`#29c7ac`)
-5. **Footer** — "Made with Component Dock" link
+### Requirement: Page renders with correct layout and heading
 
-## Scenarios
+The template SHALL render a centered page with a gray background, a heading
+"Multi-Select #3", and instruction text.
 
-### Rendering
+#### Scenario: Page loads with heading and instruction
 
-- Given the page loads
-- Then the heading "Multi-Select #3" is visible
-- And the instruction text "Names separate with comma ','" is visible
-- And a multiselect dropdown input is visible
-- And the dropdown shows placeholder text
+- **WHEN** the page loads
+- **THEN** the heading "Multi-Select #3" is visible
+- **AND** the instruction text "Names separate with comma ','" is visible
+- **AND** the page background is `#efefef`
 
-### Opening the dropdown
+### Requirement: Multiselect dropdown shows name options
 
-- Given the dropdown is closed
-- When the user clicks the dropdown input
-- Then the options list appears
-- And options include "Joefrey", "Robert", "Jorge", "Mark", "Luke", "John", "James", "Ryan", "Ronnie"
+The multiselect dropdown SHALL display a list of name options when opened.
 
-### Selecting an option
+#### Scenario: Opening the dropdown
 
-- Given the dropdown is open
-- When the user clicks "Joefrey"
-- Then a teal green tag pill labeled "Joefrey" appears
-- And the selected count is reflected in the input
+- **WHEN** the user clicks the dropdown input
+- **THEN** the options list appears
+- **AND** options include "Joefrey", "Robert", "Jorge", "Mark", "Luke", "John", "James", "Ryan", "Ronnie"
 
-### Multi-selection
+### Requirement: Selecting an option creates a tag pill
 
-- Given one option is selected
-- When the user clicks another option
-- Then both tag pills are visible
-- And both items appear as selected
+When a user selects an option, a teal green tag pill SHALL appear.
 
-### Deselecting an option
+#### Scenario: Selecting an option
 
-- Given "Joefrey" is selected
-- When the user clicks the remove button on the "Joefrey" tag
-- Then the "Joefrey" tag is removed
-- And "Joefrey" returns to the option list as unselected
+- **WHEN** the user clicks "Joefrey" in the open dropdown
+- **THEN** a teal green tag pill labeled "Joefrey" appears
+- **AND** the option shows as selected
 
-### Live search filtering
+### Requirement: Multiple selections are supported
 
-- Given the dropdown is open
-- When the user types "rob" in the search field
-- Then only "Robert" is shown in the filtered list
-- When the user clears the search field
-- Then all options are visible again
+The dropdown SHALL support selecting multiple options simultaneously.
 
-### Keyboard navigation
+#### Scenario: Multi-selection
 
-- Given the dropdown is open
-- When the user presses ArrowDown
-- Then focus moves to the next option
-- When the user presses Enter
-- Then the focused option is selected
+- **WHEN** one option is selected
+- **AND** the user clicks another option
+- **THEN** both tag pills are visible
 
-### Closing the dropdown
+### Requirement: Deselecting via tag remove button
 
-- Given the dropdown is open
-- When the user clicks outside the dropdown
-- Then the dropdown closes
+A selected option SHALL be deselectable by clicking the remove button on its tag.
 
-### Footer
+#### Scenario: Deselecting an option
 
-- Given the page loads
-- Then the footer shows "Made with Component Dock"
-- And the footer links to https://www.componentdock.com/
+- **WHEN** "Joefrey" is selected
+- **AND** the user clicks the remove button on the "Joefrey" tag
+- **THEN** the "Joefrey" tag is removed
+- **AND** "Joefrey" returns to the option list as unselected
 
-## Verification Checklist
+### Requirement: Live search filters options
 
-- [ ] Page renders with #efefef background
-- [ ] Heading uses Roboto font, 20px
-- [ ] All elements have border-radius: 0 (square corners)
-- [ ] Selected tags use #29c7ac teal green background
-- [ ] Dropdown shadow: 0 15px 30px rgba(0,0,0,0.2)
-- [ ] Options include all 9 names
-- [ ] Live search filters options correctly
-- [ ] Tags can be removed individually
-- [ ] Footer links to componentdock.com
-- [ ] No references to ColorLib in app code
-- [ ] Coverage: 100% lines/functions/branches/statements
+The search input SHALL filter options by matching against option labels.
+
+#### Scenario: Live search filtering
+
+- **WHEN** the dropdown is open
+- **AND** the user types "rob" in the search field
+- **THEN** only "Robert" is shown in the filtered list
+- **WHEN** the user clears the search field
+- **THEN** all options are visible again
+
+### Requirement: Keyboard navigation
+
+The dropdown SHALL support keyboard navigation.
+
+#### Scenario: Keyboard navigation
+
+- **WHEN** the dropdown is open
+- **AND** the user presses ArrowDown
+- **THEN** focus moves to the next option
+- **WHEN** the user presses Enter
+- **THEN** the focused option is selected
+
+### Requirement: Closing the dropdown
+
+The dropdown SHALL close when the user clicks outside or presses Escape.
+
+#### Scenario: Closing on click outside
+
+- **WHEN** the dropdown is open
+- **AND** the user clicks outside the dropdown
+- **THEN** the dropdown closes
+
+### Requirement: Footer links to Component Dock
+
+The footer SHALL link to Component Dock.
+
+#### Scenario: Footer renders correctly
+
+- **WHEN** the page loads
+- **THEN** the footer shows "Made with Component Dock"
+- **AND** the footer links to https://www.componentdock.com/
+
+### Requirement: Accessibility
+
+The dropdown SHALL be accessible with proper ARIA attributes.
+
+#### Scenario: ARIA attributes
+
+- **WHEN** the dropdown is closed
+- **THEN** the combobox has `aria-expanded="false"`
+- **WHEN** the dropdown is opened
+- **THEN** the combobox has `aria-expanded="true"`
+- **AND** the listbox has `aria-multiselectable="true"`
+- **AND** each option has `aria-selected`

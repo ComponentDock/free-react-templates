@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-tealpick-bg: #efefef;
+  --color-tealpick-card: #fff;
+  --color-tealpick-text: #212529;
+  --color-tealpick-text-muted: #b3b3b3;
+  --color-tealpick-accent: #29c7ac;
+  --color-tealpick-accent-hover: #22b098;
+  --color-tealpick-option-selected: #f4f4f4;
+  --color-tealpick-border: #e0e0e0;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
