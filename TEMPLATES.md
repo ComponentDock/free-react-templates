@@ -841,7 +841,7 @@
 - [x] **Multiselect 17** — [colorlib](https://colorlib.com/wp/template/multiselect-17/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-17.jpg) · [chklmt](https://free-react-templates-chklmt.surge.sh)
 - [x] **Multiselect 18** — [colorlib](https://colorlib.com/wp/template/multiselect-18/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-18.jpg) · [groupcap](https://free-react-templates-groupcap.surge.sh)
 - [x] **Multiselect 19** — [colorlib](https://colorlib.com/wp/template/multiselect-19/) · [multibox](https://multibox.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-19.jpg)
-- [~] **Multiselect 20** — [colorlib](https://colorlib.com/wp/template/multiselect-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-20.jpg)
+- [x] **Multiselect 20** — [colorlib](https://colorlib.com/wp/template/multiselect-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-20.jpg) · [optflow](https://optflow.free.componentdock.com)
 
 ## Bootstrap Wizards (30)
 
