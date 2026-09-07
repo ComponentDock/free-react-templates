@@ -1,155 +1,211 @@
-# Template: Tagmint (Form Component — Multiselect Tag Picker)
+# Template: Tagmint (Multi-Select Form Component)
 
 ## Purpose
 
-Recreation of ColorLib **Multiselect 13** — a free Bootstrap multiselect
-dropdown with live search and tag-style selection. The original is a
-single-section form component demo using select2.js. We recreate it as
-a standalone React component page.
+Recreation of the ColorLib **Multiselect 20** template as a React single-page
+application.
 
-- **ColorLib source:** https://colorlib.com/wp/template/multiselect-13/
-- **Preview URL:** https://preview.colorlib.com/theme/bootstrap/multiselect-13/
-- **Category:** Form Component / Multiselect with Live Search (Tag Style — Sharp Corners)
-- **Stack:** React 19 · Tailwind CSS 4 · TypeScript (strict) · Vitest + Testing Library
+- **Source slug:** `multiselect-20`
+- **Preview URL:** https://preview.colorlib.com/theme/bootstrap/multiselect-20/
+- **Source page:** https://colorlib.com/wp/template/multiselect-20/
+- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-20.jpg
+- **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
+- **Category:** Form / Multi-Select UI Components
 
-## Design Tokens (extracted from preview CSS)
+### What this template is
 
-| Token                      | Value                           | Source class / rule                                                    |
-| -------------------------- | ------------------------------- | ---------------------------------------------------------------------- |
-| Font family                | `"Roboto", sans-serif`          | `body { font-family: "Roboto" ... }`                                   |
-| Body background            | `#efefef` (light gray)          | `body { background-color: #efefef }`                                   |
-| Paragraph color            | `#b3b3b3` (light gray)          | `p { color: #b3b3b3 }`                                                 |
-| Paragraph font-weight      | `300`                           | `p { font-weight: 300 }`                                               |
-| Heading font               | Roboto (same as body)           | `h1-h6 { font-family: "Roboto" ... }`                                  |
-| Heading size               | `h2 { font-size: 20px }`        | `h2 { font-size: 20px }`                                               |
-| Primary / accent           | `#29c7ac` (teal/turquoise)      | `.select2-selection__choice { background: #29c7ac }`                   |
-| Tag background             | `#29c7ac`                       | `.select2-selection__choice { background: #29c7ac }`                   |
-| Tag text color             | `#fff` (white)                  | `.select2-selection__choice { color: #fff }`                           |
-| Tag font-size              | `14px`                          | `.select2-selection__choice { font-size: 14px }`                       |
-| Tag padding                | `2px 10px`                      | `.select2-selection__choice { padding: 2px 10px }`                     |
-| Tag border                 | none                            | `border: none`                                                         |
-| Tag border-radius          | `0` (sharp corners)             | `.select2-selection__choice { border-radius: 0 !important }`           |
-| Tag remove icon            | `rgba(255,255,255,0.5)`         | `.select2-selection__choice__remove { color: rgba(255,255,255,0.5) }`  |
-| Tag remove hover           | `#fff`                          | `:hover .select2-selection__choice__remove { color: #fff }`            |
-| Search highlight bg        | `#29c7ac`                       | `.select2-results__option--highlighted { background-color: #29c7ac }`  |
-| Search highlight fg        | `#fff`                          | `.select2-results__option--highlighted { color: #fff }`                |
-| Selected option bg         | `#f4f4f4`                       | `.select2-results__option[aria-selected=true] { background: #f4f4f4 }` |
-| Selected option hover      | `#ddd`                          | `:hover { background-color: #ddd }`                                    |
-| Content padding            | `7rem 0`                        | `.content { padding: 7rem 0 }`                                         |
-| Dropdown border-radius     | `0px` (sharp corners)           | `.select2-dropdown { border-radius: 0px }`                             |
-| Dropdown shadow            | `0 15px 30px 0 rgba(0,0,0,0.2)` | `.select2-dropdown { box-shadow: ... }`                                |
-| Dropdown border            | none                            | `.select2-dropdown { border: none }`                                   |
-| Form-control border-radius | `0`                             | `.form-control { border-radius: 0 !important }`                        |
+A centered page showcasing three color-variant multi-select dropdown components
+built with the Chosen jQuery plugin. The page demonstrates how to style tag
+chips (selected items) with different color palettes on a neutral gray
+background. This is a **UI component showcase**, not a full landing page.
 
-## Section Structure (from preview DOM)
+### Design overview (from screenshot + preview DOM)
 
-1. **Content wrapper** (`.content`): Full-height centered layout, 7rem vertical padding
-2. **Heading row**: "Multi-Select #3" — centered, h2 at 20px
-3. **Container row**: Centered column (col-7), text-center
-4. **Instruction text**: "Names separate with comma \",\" " — light gray, weight 300
-5. **Multiselect component**: select2.js powered multi-select with:
-   - Tag pills (teal `#29c7ac` bg, white text, 14px, removable, **sharp corners**)
-   - Inline search field for filtering options
-   - Dropdown list with highlighted option matching `#29c7ac`
-   - Dropdown has **0px border-radius** (sharp corners) and drop shadow
-   - Options: names (Joefrey, Robert, Jorge, Mark, Luke, John, James, Ryan, Ronnie)
-6. **Footer** with Component Dock link (mandatory per AGENTS.md)
+The page is a simple, centered layout on a light gray (#efefef) background:
 
-## Gherkin Requirements
+1. **Heading** — "Multi-Select #10 (Limit to 5)" centered at the top
+2. **Three stacked sections**, each containing:
+   - A multi-select dropdown (`col-md-5`, centered via `justify-content-center`)
+   - Each uses the Chosen plugin to render a tag/chip-based multi-select
+   - Category options: Design, HTML5, CSS3, jQuery, BS4, Bootstrap, WordPress, FrontEnd
+   - Placeholder text: "Select Categories"
+3. Each section has a distinct tag color palette:
+   - Section 1 (color-1): warm cream/beige tags (#e5e4cc)
+   - Section 2 (color-2): soft mint green tags (#c7f0db)
+   - Section 3 (color-3): light sky blue tags (#d3f4ff)
 
-### Feature: Multiselect Tag Picker with Live Search (Sharp Corners)
+No navbar, no footer, no hero — purely a centered component demo page.
 
-#### Scenario: Page renders with heading and multiselect
+## Design tokens
 
-- Given the page loads
-- When the user views the page
-- Then a heading "Multi-Select #3" is visible (centered, 20px)
-- And a multi-select input is visible
-- And instruction text "Names separate with comma" is visible
+Extracted from the live preview CSS (`css/style.css`) and inline font-face
+declarations.
 
-#### Scenario: Options appear on click
+### Colors
 
-- Given the multiselect is closed
-- When the user clicks the multiselect area
-- Then a dropdown list of name options appears (Joefrey, Robert, Jorge, Mark, Luke, John, James, Ryan, Ronnie)
+| Token             | Value             | Usage                             |
+| ----------------- | ----------------- | --------------------------------- |
+| `bg-page`         | `#efefef`         | Page background (light gray)      |
+| `text-body`       | `#b3b3b3`         | Paragraph text (medium gray)      |
+| `text-heading`    | default (black)   | Heading text color                |
+| `tag-cream`       | `#e5e4cc`         | Section 1 selected tag chips      |
+| `tag-mint`        | `#c7f0db`         | Section 2 selected tag chips      |
+| `tag-sky`         | `#d3f4ff`         | Section 3 selected tag chips      |
+| `shadow-soft`     | `rgba(0,0,0,0.1)` | Tag chip shadow (1px 4px 0)       |
+| `shadow-dropdown` | `rgba(0,0,0,0.2)` | Dropdown panel shadow (15px 30px) |
+| `dropdown-bg`     | white (default)   | Dropdown background               |
 
-#### Scenario: Selecting an option creates a tag pill
+### Typography
 
-- Given the dropdown is open
-- When the user clicks "Robert"
-- Then a teal tag pill labeled "Robert" appears in the selected area
-- And the tag has sharp corners (0px border-radius)
-- And the tag has a remove icon (×)
+| Token           | Value                                     | Usage                      |
+| --------------- | ----------------------------------------- | -------------------------- |
+| `font-body`     | `"Roboto", sans-serif`                    | Body + headings            |
+| `font-head`     | `"Roboto", sans-serif`                    | Headings                   |
+| `font-size`     | `20px` (h2)                               | Page heading               |
+| `font-weight`   | `300` (body paragraphs), `400` (headings) | Body text is light weight  |
+| `font-size-tag` | `14px`                                    | Search field input in tags |
 
-#### Scenario: Selecting multiple options creates multiple tags
+Note: The preview also loads Poppins (weights 300/400/500) and Source Serif
+Pro (weights 400/600) via font-face but they are not directly referenced in
+the main stylesheet. Implement with Roboto only (via Google Fonts link).
 
-- Given "Robert" is already selected
-- When the user also selects "Mark"
-- Then two tag pills are visible: "Robert" and "Mark"
+### Layout
 
-#### Scenario: Removing a tag
+| Token             | Value                                | Usage                              |
+| ----------------- | ------------------------------------ | ---------------------------------- |
+| `content-padding` | `7rem 0`                             | Vertical padding on content area   |
+| `row-max-width`   | `col-md-5`                           | Select containers (Bootstrap grid) |
+| `border-radius`   | `4px`                                | Tag chips and dropdown             |
+| `tag-padding`     | `7px` (choices), `10px 26px` (chips) | Tag chip internal spacing          |
+| `input-height`    | `32px`                               | Search input in dropdown           |
 
-- Given "Robert" is selected (tag pill visible)
-- When the user clicks the × remove icon on the "Robert" tag
-- Then the "Robert" tag pill disappears
-- And "Robert" is no longer selected
+### Interaction
 
-#### Scenario: Live search filters options
+- Multi-select dropdown powered by Chosen jQuery plugin
+- `data-placeholder="Select Categories"`
+- Tags appear as colored chips with an "x" close button
+- Dropdown has `box-shadow: 0 15px 30px 0 rgba(0,0,0,0.2)`
+- Limit mentioned in heading: "Limit to 5" selections
 
-- Given the dropdown is open
-- When the user types "Jo" in the search input
-- Then options matching "Jo" are visible (e.g. Joefrey, Jorge, John)
-- And non-matching options are hidden
+## Gherkin requirements
 
-#### Scenario: Empty search restores all options
+### Scenario: Page renders with heading and three multi-select sections
 
-- Given the dropdown is filtered to "Jo"
-- When the user clears the search input
-- Then all options are visible again
+```gherkin
+Given the user navigates to the Tagmint page
+Then a centered heading "Multi-Select #10 (Limit to 5)" is visible
+And three multi-select sections are displayed vertically stacked
+And each section is centered horizontally on the page
+```
 
-#### Scenario: Already-selected option shows different style
+### Scenario: Section 1 displays cream-colored tag chips
 
-- Given "Robert" is already selected
-- When the dropdown is open
-- Then "Robert" in the list shows a selected state (gray background #f4f4f4)
+```gherkin
+Given the user is on the Tagmint page
+When the user clicks the first multi-select dropdown
+And selects "Design" and "HTML5" from the options
+Then two tag chips appear in the first section
+And the tag chips have a cream/beige background color (#e5e4cc)
+And each tag chip has a close "x" button
+```
 
-#### Scenario: Dropdown has sharp corners
+### Scenario: Section 2 displays mint-colored tag chips
 
-- Given the dropdown is open
-- Then the dropdown container has 0px border-radius (sharp corners)
-- And the dropdown has a subtle drop shadow (0 15px 30px 0 rgba(0,0,0,0.2))
+```gherkin
+Given the user is on the Tagmint page
+When the user clicks the second multi-select dropdown
+And selects "CSS3" and "jQuery" from the options
+Then two tag chips appear in the second section
+And the tag chips have a mint green background color (#c7f0db)
+And each tag chip has a close "x" button
+```
 
-#### Scenario: Tags have sharp corners
+### Scenario: Section 3 displays sky-blue tag chips
 
-- Given options are selected
-- Then each tag pill has 0px border-radius (sharp corners)
+```gherkin
+Given the user is on the Tagmint page
+When the user clicks the third multi-select dropdown
+And selects "Bootstrap" and "WordPress" from the options
+Then two tag chips appear in the third section
+And the tag chips have a light sky blue background color (#d3f4ff)
+And each tag chip has a close "x" button
+```
 
-#### Scenario: Accessibility
+### Scenario: Placeholder text displays when no items selected
 
-- Given the page loads
-- When the user navigates with keyboard
-- Then the multiselect is focusable
-- And tags can be removed via keyboard
-- And the search input is focusable
+```gherkin
+Given the user is on the Tagmint page
+And no items are selected in any dropdown
+Then each dropdown shows the placeholder "Select Categories"
+```
 
-## Verification Checklist
+### Scenario: Multiple items can be selected
 
-- [ ] Page renders centered layout with heading and multiselect on light gray (#efefef) background
-- [ ] Font is Roboto (loaded via Google Fonts or system fallback)
-- [ ] Primary/accent color is teal (#29c7ac) — used on tag pills, search highlight
-- [ ] Tag pills have #29c7ac background, white text, 14px font, 2px 10px padding, no border
-- [ ] Tag pills have 0px border-radius (sharp corners)
-- [ ] Tag remove icon is semi-transparent white, becomes fully white on hover
-- [ ] Instruction text is light gray (#b3b3b3) at font-weight 300
-- [ ] Heading is 20px, centered, Roboto font
-- [ ] Content wrapper has 7rem vertical padding
-- [ ] Dropdown has 0px border-radius (sharp corners) and drop shadow
-- [ ] Dropdown highlights options in #29c7ac teal
-- [ ] Selected options in dropdown show #f4f4f4 background
-- [ ] Live search filters option list in real-time
-- [ ] Tags can be added and removed dynamically
-- [ ] Component is keyboard-accessible
+```gherkin
+Given the user is on the Tagmint page
+When the user clicks the first dropdown
+And selects "Design", "HTML5", "CSS3", "jQuery", and "BS4"
+Then five tag chips appear in the first section
+And all five chips are visible with close buttons
+```
+
+### Scenario: Items can be deselected via tag close button
+
+```gherkin
+Given the user has selected "Design" in the first dropdown
+When the user clicks the "x" button on the "Design" tag chip
+Then the "Design" tag chip is removed from the first section
+And the dropdown placeholder reappears if no items remain
+```
+
+### Scenario: Page background and typography
+
+```gherkin
+Given the user navigates to the Tagmint page
+Then the page background is light gray (#efefef)
+And the heading uses Roboto font at 20px
+And paragraph text is medium gray (#b3b3b3) with light weight (300)
+```
+
+### Scenario: Accessibility
+
+```gherkin
+Given the user is on the Tagmint page
+Then each dropdown has a label or aria-label
+And the heading is an h2 element
+And keyboard navigation is functional for selecting and deselecting items
+```
+
+## Verification checklist
+
+- [ ] Page renders with centered heading "Multi-Select #10 (Limit to 5)"
+- [ ] Three multi-select sections displayed vertically, centered
+- [ ] Section 1: cream tag chips (#e5e4cc) on selection
+- [ ] Section 2: mint tag chips (#c7f0db) on selection
+- [ ] Section 3: sky-blue tag chips (#d3f4ff) on selection
+- [ ] Placeholder "Select Categories" when nothing selected
+- [ ] Multiple items selectable as tag chips with close buttons
+- [ ] Items deselectable via chip close button
+- [ ] Page background #efefef
+- [ ] Roboto font family, 20px heading, light body text
+- [ ] Box shadows on tag chips (1px 4px 0 rgba(0,0,0,0.1))
+- [ ] Dropdown shadow (15px 30px 0 rgba(0,0,0,0.2))
 - [ ] Footer links to https://www.componentdock.com/
-- [ ] No references to ColorLib anywhere in app code
-- [ ] Tests pass with 100% coverage
-- [ ] Build succeeds without errors
+- [ ] No ColorLib references in app code
+- [ ] 100% test coverage
+- [ ] Builds and deploys successfully
+
+## Replication notes
+
+- **Preview reachable:** Yes, at `https://preview.colorlib.com/theme/bootstrap/multiselect-20/`
+- **CSS fetched:** Yes, `css/style.css` from the preview
+- **Screenshot analyzed:** Yes, ColorLib template page loaded via curl
+- **Chosen plugin:** The original uses jQuery + Chosen. In React, replace with
+  a native React multi-select component (e.g., `react-select` or a custom
+  implementation) that renders tag chips with the same visual style.
+- **Three color variants:** Implement as a reusable component with a `variant`
+  prop (`cream` | `mint` | `sky`) mapped to the three background colors.
+- **Layout:** Simple centered page, no navigation, no footer in original.
+  Add the Component Dock footer per conventions.
+- **Bootstrap grid:** The original uses Bootstrap's `col-md-5` centering.
+  Replace with Tailwind's `max-w-md mx-auto` or similar.

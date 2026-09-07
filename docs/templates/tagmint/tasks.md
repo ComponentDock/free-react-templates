@@ -1,93 +1,70 @@
-# Tagmint — Design Notes & Tasks
+# Tagmint — Implementation Tasks
 
-Source: ColorLib Multiselect 13
-Preview: https://preview.colorlib.com/theme/bootstrap/multiselect-13/
-Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-13.jpg
+Recreation of ColorLib Multiselect 20 as a React multi-select component showcase.
 
-## Visual Design (from preview CSS + DOM)
+## Task checklist
 
-A minimal, clean form-component demo page. Light gray (#efefef) background,
-centered content with 7rem vertical padding. The primary feature is a
-multi-select tag picker: when options are selected, they appear as
-teal (#29c7ac) tag pills with white text and a remove icon. All elements
-have sharp corners (0px border-radius) — tags, dropdown, and form inputs.
-The dropdown has a drop shadow. Font is Roboto at default sizing.
-Instruction text in light gray (#b3b3b3) at weight 300.
+### Phase 1: Scaffolding
 
-Key differences from Tagwell (Multiselect 12):
-
-- Teal (#29c7ac) accent instead of coral-pink (#f67280)
-- Sharp corners (0px border-radius) on everything — tags, dropdown, form
-- Options are names instead of US states
-- Title says "Multi-Select #3" instead of "Multi-Select #2"
-
-## Section Order
-
-1. Page wrapper (full viewport, centered, light gray bg)
-2. Title heading ("Multi-Select #3")
-3. Instruction text ("Names separate with comma")
-4. Multiselect tag picker (tags + inline search + dropdown)
-5. Footer with Component Dock link
-
-## Component Architecture
-
-```
-Tagmint (App)
-├── PageLayout (wrapper: centered, light gray bg, 7rem padding)
-│   ├── TitleSection (heading "Multi-Select #3", 20px, centered)
-│   ├── InstructionText ("Names separate with comma")
-│   ├── TagPicker
-│   │   ├── TagList (inline row of selected tag pills)
-│   │   │   └── TagPill (label + remove icon ×, sharp corners)
-│   │   ├── SearchInput (inline, filters options)
-│   │   └── DropdownList (conditionally rendered, sharp corners + shadow)
-│   │       └── OptionItem (text, highlighted when filtered)
-│   └── Footer (Component Dock link)
-```
-
-## State Management
-
-- `isOpen: boolean` — dropdown visibility
-- `selectedOptions: Set<string>` — currently selected options (rendered as tags)
-- `searchQuery: string` — current search filter text
-- `filteredOptions` — derived from options array filtered by searchQuery
-
-## Fidelity Notes
-
-- Match the light gray background (#efefef) exactly
-- Match the teal accent (#29c7ac) on tag pills, search highlight
-- Match tag pill styling: 14px, 2px 10px padding, white text, no border
-- CRITICAL: Match sharp corners — 0px border-radius on tags, dropdown, form inputs
-- Match tag remove icon: semi-transparent white, full white on hover
-- Match instruction text: #b3b3b3, font-weight 300
-- Match heading: 20px, centered, Roboto
-- Match content padding: 7rem top/bottom
-- Match dropdown: 0px border-radius, box-shadow 0 15px 30px 0 rgba(0,0,0,0.2), no border
-- Match dropdown highlight: #29c7ac teal bg, white text
-- Match selected option in dropdown: #f4f4f4 background
-- Use lucide-react X icon for tag remove (replaces × text)
-- Use picsum.photos for any placeholder imagery (this template has none)
-- Roboto font via Google Fonts link in index.html
-
-## Implementation Tasks
-
-- [ ] Create app scaffold: `apps/tagmint/` from simplest existing app
+- [ ] Create `apps/tagmint/` from simplest existing app (copy + rename)
 - [ ] Rename package to `@free-react-templates/tagmint`
-- [ ] Add Roboto font to `index.html` (Google Fonts)
-- [ ] Build PageLayout with centered content + #efefef background + 7rem padding
-- [ ] Build TitleSection with heading (20px, centered)
-- [ ] Build InstructionText component
-- [ ] Build TagPicker with tag list + search input + dropdown
-- [ ] Build TagPill component (teal bg, white text, remove icon, sharp corners)
-- [ ] Implement open/close dropdown on click
-- [ ] Implement outside-click-to-close behavior
-- [ ] Implement inline search filtering
-- [ ] Implement tag selection (adds pill to tag list)
-- [ ] Implement tag removal (removes pill from tag list)
-- [ ] Implement dropdown highlight for filtered/selected options
-- [ ] Style dropdown with 0px border-radius (sharp corners) and drop shadow
-- [ ] Style form-control with 0px border-radius
-- [ ] Build Footer with Component Dock link
-- [ ] Add Tailwind theme tokens (primary: #29c7ac, bg: #efefef, text-muted: #b3b3b3)
-- [ ] Write tests for all components (100% coverage)
-- [ ] Verify build + typecheck + lint pass
+- [ ] Update `public/CNAME` to `tagmint.free.componentdock.com`
+- [ ] Update `homepage` in `package.json` to `https://tagmint.free.componentdock.com`
+- [ ] Run `npm install` at repo root to register workspace in lockfile
+
+### Phase 2: Component architecture
+
+- [ ] Create `src/App.tsx` — page layout with centered heading + 3 sections
+- [ ] Create `src/components/MultiSelectSection.tsx` — reusable section with variant prop
+- [ ] Create `src/components/TagChip.tsx` — individual tag chip with close button
+- [ ] Create `src/components/MultiSelectDropdown.tsx` — dropdown trigger + option list
+- [ ] Create `src/index.css` — Tailwind entry + theme tokens (3 tag colors, page bg)
+
+### Phase 3: Multi-select functionality
+
+- [ ] Implement state management for selected items per section
+- [ ] Implement dropdown open/close toggle
+- [ ] Implement option selection → tag chip rendering
+- [ ] Implement tag chip close button → item deselection
+- [ ] Implement placeholder text when no items selected
+- [ ] Add "Limit to 5" selection cap per section
+
+### Phase 4: Styling (fidelity)
+
+- [ ] Page background: #efefef
+- [ ] Heading: Roboto, 20px, centered
+- [ ] Body text: Roboto, 300 weight, #b3b3b3
+- [ ] Section 1 tags: #e5e4cc background
+- [ ] Section 2 tags: #c7f0db background
+- [ ] Section 3 tags: #d3f4ff background
+- [ ] Tag chips: 7px padding, no border, 4px border-radius
+- [ ] Tag close button: positioned top-right (26px right padding on chip)
+- [ ] Dropdown: white background, 4px radius, shadow 0 15px 30px rgba(0,0,0,0.2)
+- [ ] Tag chip shadow: 0 1px 4px rgba(0,0,0,0.1)
+- [ ] Search input: 32px height, 14px font
+
+### Phase 5: Footer + compliance
+
+- [ ] Add Component Dock footer link
+- [ ] Remove any ColorLib references from code
+- [ ] Verify no `colorlib.com` or `preview.colorlib.com` strings in app files
+
+### Phase 6: Tests (TDD)
+
+- [ ] Test: page renders heading
+- [ ] Test: three sections render
+- [ ] Test: placeholder text when empty
+- [ ] Test: selecting items shows tag chips with correct color
+- [ ] Test: deselecting via close button removes chip
+- [ ] Test: limit 5 selections enforced
+- [ ] Test: keyboard navigation
+- [ ] Achieve 100% coverage
+
+### Phase 7: Build + deploy
+
+- [ ] Typecheck passes
+- [ ] Lint passes
+- [ ] All tests pass with 100% coverage
+- [ ] Build succeeds
+- [ ] Commit: `feat: add tagmint (multi-select component showcase)`
+- [ ] Push and merge PR
