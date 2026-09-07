@@ -53,9 +53,11 @@ This is a **split-screen** wizard — the viewport is divided into two halves:
 - Completed steps: green circle with checkmark
 - Future steps: gray circle (`#eee` border) with gray number
 
-## Gherkin Requirements
+## Requirements
 
-### Feature: Split-Screen Form Wizard
+### Requirement: Split-screen form wizard layout
+
+The application SHALL provide a responsive split-screen layout with a visual panel on the left and a form wizard on the right.
 
 #### Scenario: Initial page load
 
