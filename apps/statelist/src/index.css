@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Statelist brand palette — light page (#f8f9fd) with red accent
+     (#ff5959) for quantity, chevron, checked checkboxes. Token source:
+     ColorLib Multiselect 10 CSS token tail. */
+  --color-page: #f8f9fd;
+  --color-accent: #ff5959;
+  --color-label: #808080;
+  --color-heading: #000000;
+  --color-checkbox-border: rgba(0, 0, 0, 0.1);
+  --color-search-bg: rgba(0, 0, 0, 0.05);
+
+  --font-sans: 'Lato', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
