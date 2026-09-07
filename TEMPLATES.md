@@ -831,7 +831,7 @@
 - [x] **Multiselect 07** — [colorlib](https://colorlib.com/wp/template/multiselect-07/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-07.jpg) · [topicdrop](https://topicdrop.free.componentdock.com)
 - [x] **Multiselect 08** — [colorlib](https://colorlib.com/wp/template/multiselect-08/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-08.jpg) · [optbundle](https://free-react-templates-optbundle.surge.sh)
 - [x] **Multiselect 09** — [colorlib](https://colorlib.com/wp/template/multiselect-09/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-09.jpg) · [thresh](https://free-react-templates-thresh.surge.sh)
-- [ ] **Multiselect 10** — [colorlib](https://colorlib.com/wp/template/multiselect-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-10.jpg)
+- [~] **Multiselect 10** — [colorlib](https://colorlib.com/wp/template/multiselect-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-10.jpg)
 - [ ] **Multiselect 11** — [colorlib](https://colorlib.com/wp/template/multiselect-11/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-11.jpg)
 - [ ] **Multiselect 12** — [colorlib](https://colorlib.com/wp/template/multiselect-12/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-12.jpg)
 - [ ] **Multiselect 13** — [colorlib](https://colorlib.com/wp/template/multiselect-13/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-13.jpg)
