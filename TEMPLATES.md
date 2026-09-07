@@ -861,7 +861,7 @@
 - [x] **Colorlib Wizard 21** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-21/) · [steppr](https://steppr.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-21.jpg)
 - [x] **Colorlib Wizard 22** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-22/) · [arcane](https://arcane.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-22.jpg)
 - [x] **Colorlib Wizard 23** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-23/) · [hex](https://free-react-templates-hex.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-23.jpg)
-- [ ] **Colorlib Wizard 24** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-24/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-24.jpg)
+- [~] **Colorlib Wizard 24** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-24/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-24.jpg)
 - [ ] **Colorlib Wizard 25** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-25/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-25.jpg)
 - [ ] **Colorlib Wizard 26** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-26/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-26.jpg)
 - [x] **Colorlib Wizard 27** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-27/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-27.jpg) · [wizardry](https://free-react-templates-wizardry.surge.sh)
