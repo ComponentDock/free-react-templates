@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-poppins: 'Poppins', sans-serif;
+  --color-brand-gold: #e4bd37;
+  --color-brand-gold-hover: #c9a630;
+  --color-primary-green: #6dab3c;
+  --color-primary-green-hover: #5f9434;
+  --color-text-muted: #666666;
+  --color-focus-blue: #ceebf7;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-poppins);
+  }
+}
