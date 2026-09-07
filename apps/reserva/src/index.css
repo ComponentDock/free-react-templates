@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-blue: #6dbdfe;
+  --color-brand-blue-dark: #3aa6fe;
+  --color-brand-gray: #999999;
+  --color-brand-border: #ebebeb;
+  --color-brand-text: #222222;
+  --color-brand-muted: #999999;
+  --color-brand-secondary-bg: #ebebeb;
+  --color-brand-secondary-hover: #d2d2d2;
+  --color-brand-radio-label: #666666;
+  --color-brand-select-hover: #6dbdfe;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.92;
+    color: #222;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(0deg, #d9afd9 0%, #5a2170 0%, #a1c4fd 0%, #c2e9fb 100%);
+  }
+}
