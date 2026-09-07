@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Page background: solid coral #fa6d6a */
+  --color-page: #fa6d6a;
+
+  /* Card: white #fff */
+  --color-card: #ffffff;
+
+  /* Brand accent: deeper coral #fa5e5b — active tile, Next/Submit, step-heading, dropdown hover */
+  --color-brand: #fa5e5b;
+  --color-brand-hover: #f82d2a;
+
+  /* Muted: grey #adadad — inactive tiles, Previous button */
+  --color-muted: #adadad;
+
+  /* Ink: dark #222 — text, labels, chevrons, list items */
+  --color-ink: #222222;
+
+  /* Line: border grey #ebebeb — inputs, date group, list, dividers */
+  --color-line: #ebebeb;
+
+  /* Focus: input focus/valid border #666 */
+  --color-focus: #666666;
+
+  /* Error: red #ff1212 — error border + error icon */
+  --color-error: #ff1212;
+
+  /* Error asterisk: dark red #b90000 */
+  --color-asterisk: #b90000;
+
+  /* Card shadow */
+  --shadow-card: 0px 3px 9.5px 0.5px rgba(0, 0, 0, 0.1);
+
+  /* Primary scale — maps brand to primary slot for shared Button */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #fa5e5b;
+  --color-primary-600: #e04845;
+  --color-primary-700: #c03633;
+  --color-primary-800: #9f2d2b;
+  --color-primary-900: #7f2422;
+
+  --font-sans: 'Roboto Slab', ui-sans-serif, system-ui, sans-serif;
+}
