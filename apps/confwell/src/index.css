@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Arvo', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Times New Roman', ui-serif, Georgia, serif;
+
+  /* ConfWell palette — dark event wizard aesthetic */
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+  --color-brand: #ffffff;
+  --color-muted: #cccccc;
+}
