@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Thresh brand palette — dark page (#343434) with yellow accent
+     (#f6c523) for chips, clear ×, checked boxes, and selected/hover
+     row text. Token source: ColorLib Multiselect 09 CSS token tail. */
+  --color-page: #343434;
+  --color-accent: #f6c523;
+  --color-panel: #000000;
+  --color-trigger-bg: rgba(0, 0, 0, 0.8);
+  --color-trigger-border-focus: rgba(0, 0, 0, 0.1);
+  --color-placeholder: rgba(255, 255, 255, 0.8);
+  --color-row-rest: #808080;
+  --color-row-hover-bg: rgba(255, 255, 255, 0.1);
+  --color-checkbox-border: rgba(255, 255, 255, 0.18);
+
+  --font-sans: 'Lato', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
