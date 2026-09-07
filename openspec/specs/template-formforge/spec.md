@@ -1,179 +1,162 @@
-# Template: FormForge (Form Wizard)
+---
+name: formforge
+description: >-
+  Multi-step form wizard template — recreation of ColorLib Wizard 28
+  (https://colorlib.com/wp/template/colorlib-wizard-28/).
+  Three-step wizard: Personal Info → Address → Payment.
+  Gradient background (#4158d0 → #c850c0 → #ffcc70), green accent (#36c240),
+  Roboto + Montserrat fonts.
+---
 
 ## Purpose
 
-Recreation of ColorLib "Colorlib Wizard 28" — a multi-step form wizard with
-progress bar, built with Bootstrap in the original.
+FormForge is a multi-step form wizard that recreates the ColorLib Wizard 28 design under a
+different name. It provides a three-step flow (Personal Info, Address, Payment) with a vibrant
+gradient background, green accent colors, and Roboto/Montserrat typography. Users fill in
+personal details, enter their address, and provide payment information before submitting.
 
-- **ColorLib source:** https://colorlib.com/wp/template/colorlib-wizard-28/
-- **Preview (live demo):** https://colorlib.com/etc/bwiz/colorlib-wizard-28/index.html
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-28.jpg
-- **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
-- **Description:** A beginner-friendly free form wizard with progression bar.
-  Three-step card-based form (Personal Info → Address → Payment) centered on
-  a vibrant gradient background.
+## Requirements
 
-## Design Tokens
+### Requirement: Gradient background
 
-Extracted from the preview page's `css/main.css`:
+The page SHALL display a full-viewport gradient background transitioning from blue (#4158d0)
+through pink (#c850c0) to yellow (#ffcc70) at approximately 316 degrees.
 
-### Colors
-| Token            | Value     | Usage                                      |
-| ---------------- | --------- | ------------------------------------------ |
-| `--brand-green`  | `#36c240` | Buttons (next/submit), progress bar fill, input focus border |
-| `--brand-green-hover` | `#22ae2c` | Button hover state                 |
-| `--gradient-start` | `#4158d0` | Background gradient start (blue)       |
-| `--gradient-mid` | `#c850c0` | Background gradient middle (pink/magenta) |
-| `--gradient-end` | `#ffcc70` | Background gradient end (yellow)          |
-| `--card-bg`      | `#ffffff` | Card background                           |
-| `--text-primary` | `#333333` | Input text, icons                         |
-| `--text-label`   | `#666666` | Form labels                               |
-| `--text-muted`   | `#999999` | Placeholders                              |
-| `--border-light` | `#e5e5e5` | Input borders, progress track border      |
-| `--progress-bg`  | `#f5f5f5` | Progress bar track background             |
-| `--btn-back`     | `#999999` | Back button background                    |
-| `--btn-back-hover` | `#666666` | Back button hover                       |
-| `--shadow-card`  | `rgba(0,0,0,0.15)` | Card box shadow (0px 8px 20px)    |
-| `--shadow-btn`   | `rgba(0,0,0,0.15)` | Button box shadow (0px 3px 14px)  |
+#### Scenario: Gradient renders on page load
 
-### Typography
-| Token       | Value                                        | Usage           |
-| ----------- | -------------------------------------------- | --------------- |
-| `--font-body` | `"Roboto", "Arial", "Helvetica Neue", sans-serif` | Body text, inputs |
-| `--font-heading` | `"Montserrat", "Arial", "Helvetica Neue", sans-serif` | Card heading |
+- **WHEN** the user visits the FormForge page
+- **THEN** the page background should be a gradient from blue through pink to yellow
 
-### Spacing & Radius
-| Token           | Value  | Usage                          |
-| --------------- | ------ | ------------------------------ |
-| `--radius-card` | `5px`  | Card border-radius             |
-| `--radius-btn`  | `22.5px` | Next/Submit/Back buttons (pill shape) |
-| `--radius-progress` | `17.5px` | Progress bar & track     |
-| `--radius-input` | `3px` | Input fields                   |
-| Card padding    | `40px 30px 30px` | Card body padding     |
+### Requirement: Centered card layout
 
-## Section Structure (from preview DOM)
+The form SHALL be contained in a white card centered on the page with rounded corners (5px),
+a subtle shadow, and max-width of 690px.
 
-1. **Page Background** — Full viewport gradient (`linear-gradient(316deg, #4158d0, #c850c0, #ffcc70)`)
-2. **Card Container** — Centered white card (`max-width: 690px`), rounded corners, shadow
-   - **Card Heading** — "Form Wizard" title, positioned top-left (absolutely, overlapping card), Montserrat 55px uppercase, white at 60% opacity
-   - **Card Body** — Padding container for the form
-3. **Progress Bar** — Rounded pill track with green fill, percentage label
-4. **Step Navigation Dots** — Numbered circle indicators (hidden visually but present in DOM for accessibility)
-5. **Form Steps** (tab panes, only active one visible):
-   - **Step 1 — Personal Info:** Full name, Email, Phone number → Next button
-   - **Step 2 — Address:** Building number, Street, Town, Zip code → Back + Next buttons
-   - **Step 3 — Payment:** Card holder name, Card number (with icon), CVC (with icon), Expiration → Back + Submit button
+#### Scenario: Card displays centered
 
-## Gherkin Scenarios
+- **WHEN** the user visits the FormForge page
+- **THEN** a white card should be centered on the page
+- **AND** the card should have rounded corners and a shadow
 
-### Scenario: Page renders with gradient background
-```gherkin
-Given the user visits the FormForge page
-Then the page background should be a gradient from blue (#4158d0) through pink (#c850c0) to yellow (#ffcc70)
-And the gradient angle should be approximately 316 degrees
-```
+### Requirement: Card heading
 
-### Scenario: Card displays centered with correct styling
-```gherkin
-Given the user visits the FormForge page
-Then a white card should be centered on the page
-And the card should have rounded corners (5px radius)
-And the card should have a subtle shadow
-And the card max-width should be 690px
-```
+The card SHALL display a "Form Wizard" heading using Montserrat font, uppercase, white at 60%
+opacity, positioned overlapping the card top.
 
-### Scenario: Card heading shows "Form Wizard" title
-```gherkin
-Given the user visits the FormForge page
-Then the card heading should display "Form Wizard"
-And the heading should use Montserrat font
-And the heading should be uppercase and white
-```
+#### Scenario: Heading renders with correct styling
 
-### Scenario: Progress bar shows current step percentage
-```gherkin
-Given the user is on step 1 of 3
-Then the progress bar should show 40%
-And the progress bar track should have a light gray background
-And the progress bar fill should be green (#36c240)
-```
+- **WHEN** the user visits the FormForge page
+- **THEN** the card heading should display "Form Wizard"
+- **AND** the heading should use Montserrat font and be uppercase
 
-### Scenario: Step 1 displays personal info fields
-```gherkin
-Given the user is on step 1
-Then the form should display fields for "Full name", "Email", and "Phone number"
-And each field should have a label above it
-And a "Next" button should be visible
-```
+### Requirement: Progress bar
 
-### Scenario: User advances to step 2
-```gherkin
-Given the user is on step 1
-When the user clicks "Next"
-Then step 2 should become visible
-And step 1 fields should be hidden
-And the progress bar should update to reflect step 2
-```
+The wizard SHALL display a progress bar showing the current step percentage with a green fill
+(#36c240) on a light gray track.
 
-### Scenario: Step 2 displays address fields
-```gherkin
-Given the user is on step 2
-Then the form should display fields for "Building Number", "Street", "Town", and "Zip code"
-And "back" and "Next" buttons should be visible
-```
+#### Scenario: Progress bar shows step 1 percentage
 
-### Scenario: User returns to step 1
-```gherkin
-Given the user is on step 2
-When the user clicks "back"
-Then step 1 should become visible again
-And the previously entered data should be preserved
-```
+- **WHEN** the user is on step 1 of 3
+- **THEN** the progress bar should show 33%
 
-### Scenario: Step 3 displays payment fields
-```gherkin
-Given the user is on step 3
-Then the form should display fields for "Card Holder Name", "Card Number", "CVC", and "Expiration"
-And "back" and "Submit" buttons should be visible
-And the card number and CVC inputs should display a card icon
-```
+#### Scenario: Progress bar updates on navigation
 
-### Scenario: Submit button completes the form
-```gherkin
-Given the user is on step 3
-When the user clicks "Submit"
-Then the form should handle the submission
-```
+- **WHEN** the user advances to step 2
+- **THEN** the progress bar should show 67%
 
-### Scenario: Input focus styling
-```gherkin
-Given the user focuses on any form input
-Then the input border should change to green (#36c240)
-```
+### Requirement: Step 1 — Personal Info
 
-### Scenario: Responsive layout on mobile
-```gherkin
-Given the user views the page on a mobile device (width < 768px)
-Then the card heading should reposition to top of card
-And the card heading font size should reduce to 40px
-And the buttons should display as full-width blocks
-```
+Step 1 SHALL display fields for Full name, Email, and Phone number with labels and a Next
+button.
 
-## Verification Checklist
+#### Scenario: Step 1 fields render
 
-- [ ] Gradient background renders with correct colors and angle
-- [ ] Card is centered, white, rounded, with shadow
-- [ ] "Form Wizard" heading uses Montserrat, uppercase, white, 55px
-- [ ] Progress bar shows percentage and updates on step change
-- [ ] Step 1 fields: Full name, Email, Phone number
-- [ ] Step 2 fields: Building Number, Street, Town, Zip code
-- [ ] Step 3 fields: Card Holder Name, Card Number, CVC, Expiration
-- [ ] Next/Back/Submit navigation works correctly
-- [ ] Input focus shows green border
-- [ ] Pill-shaped buttons (22.5px radius) with green background
-- [ ] Back buttons are gray without shadow
-- [ ] Responsive layout for mobile (< 768px)
-- [ ] No ColorLib references in app code
-- [ ] Footer links to Component Dock
-- [ ] 100% test coverage
-- [ ] Deploy target: `formforge.free.componentdock.com`
+- **WHEN** the user is on step 1
+- **THEN** fields for "Full name", "Email", and "Phone number" should be visible
+- **AND** a "Next" button should be visible
+
+### Requirement: Step 2 — Address
+
+Step 2 SHALL display fields for Building Number, Street, Town, and Zip code with Back and
+Next buttons.
+
+#### Scenario: Step 2 fields render
+
+- **WHEN** the user advances to step 2
+- **THEN** fields for "Building Number", "Street", "Town", and "Zip code" should be visible
+- **AND** "Back" and "Next" buttons should be visible
+
+### Requirement: Step 3 — Payment
+
+Step 3 SHALL display fields for Card Holder Name, Card Number (with icon), CVC (with icon),
+and Expiration with Back and Submit buttons.
+
+#### Scenario: Step 3 fields render
+
+- **WHEN** the user advances to step 3
+- **THEN** fields for "Card Holder Name", "Card Number", "CVC", and "Expiration" should be visible
+- **AND** "Back" and "Submit" buttons should be visible
+
+### Requirement: Step navigation
+
+The wizard SHALL allow forward and backward navigation between steps, preserving entered data.
+
+#### Scenario: Advance to next step
+
+- **WHEN** the user clicks "Next"
+- **THEN** the next step should become visible
+- **AND** the previous step fields should be hidden
+
+#### Scenario: Return to previous step
+
+- **WHEN** the user clicks "Back"
+- **THEN** the previous step should become visible
+- **AND** previously entered data should be preserved
+
+### Requirement: Form submission
+
+The wizard SHALL handle form submission when the Submit button is clicked on step 3.
+
+#### Scenario: Submit completes the form
+
+- **WHEN** the user clicks "Submit" on step 3
+- **THEN** the form should handle the submission
+
+### Requirement: Input focus styling
+
+Form inputs SHALL display a green border (#36c240) when focused.
+
+#### Scenario: Focus shows green border
+
+- **WHEN** the user focuses on any form input
+- **THEN** the input border should change to green
+
+### Requirement: Pill-shaped buttons
+
+Next and Submit buttons SHALL have pill shape (22.5px radius) with green background and shadow.
+Back buttons SHALL be gray without shadow.
+
+#### Scenario: Button styling
+
+- **WHEN** the user views the form actions
+- **THEN** Next/Submit buttons should be green with pill shape
+- **AND** Back buttons should be gray
+
+### Requirement: Footer with Component Dock link
+
+The template footer SHALL link to https://www.componentdock.com/ branded as "Component Dock".
+
+#### Scenario: Footer renders
+
+- **WHEN** the user views the page footer
+- **THEN** a link to Component Dock should be visible
+
+### Requirement: Responsive layout
+
+The template SHALL be responsive, adjusting layout for mobile devices (< 768px).
+
+#### Scenario: Mobile layout adjusts
+
+- **WHEN** the user views the page on a mobile device
+- **THEN** the card heading should reposition and reduce in size
+- **AND** buttons should display as full-width blocks
