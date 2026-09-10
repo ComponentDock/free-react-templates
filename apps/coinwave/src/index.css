@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* CoinWave brand palette — extracted from the ColorLib Bitcoin design. */
+  --color-orange-brand: #f78f3d;
+  --color-gold-start: #f3c400;
+  --color-gold-end: #f88845;
+  --color-navy-dark: #04091e;
+  --color-dark-bg: #222222;
+  --color-light-lavender: #f9f9ff;
+  --color-text-muted: #777777;
+  --color-border-gold: #f9c065;
+  --color-social-bg: #111111;
+
+  /* Poppins — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
