@@ -874,7 +874,7 @@
 - [x] **Colorlib Wizard 6** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-6/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-6.jpg) · [runic](https://runic.free.componentdock.com)
 - [x] **Colorlib Wizard 7** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-7/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-7.jpg) · [platter](https://platter.free.componentdock.com)
 - [x] **Colorlib Wizard 8** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-8.jpg) · [wizlane](https://wizlane.free.componentdock.com)
-- [ ] **Colorlib Wizard 9** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-9.jpg)
+- [~] **Colorlib Wizard 9** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-9.jpg)
 
 ## Business (365)
 
