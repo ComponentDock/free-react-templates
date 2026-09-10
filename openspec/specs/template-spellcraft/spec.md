@@ -1,136 +1,166 @@
-# Template: Spellcraft (Restaurant Booking Wizard)
+# Template: Spellcraft (Colorlib Wizard 8 Food Store Checkout)
 
 ## Purpose
 
-- **Recreation of ColorLib source**: Colorlib Wizard 7 (`https://colorlib.com/wp/template/colorlib-wizard-7/`)
+- **Recreation of ColorLib source**: Colorlib Wizard 8 (`https://colorlib.com/wp/template/colorlib-wizard-8/`)
 - **New Name**: `spellcraft` (App directory: `apps/spellcraft`, Package: `@free-react-templates/spellcraft`)
-- **Category**: Forms / Multi-step Wizard (Restaurant Reservation)
-- **Description**: An upscale dark-themed 3-step restaurant table booking wizard with split layout — food photography on the left, multi-step booking form on the right. Designed for fine-dining and premium restaurant websites.
-- **Source slug**: `colorlib-wizard-7`
-- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-7/` (404 at prep time — fallback to screenshot analysis)
-- **Screenshot**: `https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-7.jpg`
+- **Category**: Forms / Multi-step Wizard / Food Store Checkout
+- **Description**: A food/meal service 4-step checkout wizard with earthy green accents, circular step indicator icons connected by dashed lines, and a warm linen-textured background with food-themed decorative elements.
+- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-8/` (404 — unreachable at time of research; design derived from screenshot + Colorlib page metadata)
+- **Screenshot**: `https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-8.jpg`
 
-**Stack**: Vite + React 19 + Tailwind CSS 4 + TypeScript (strict).
+## Design Tokens
 
-## Design Tokens (from screenshot — preview unreachable)
+- **Brand Color**: Earthy green `#88b34a` (active step fill, buttons, outline rings)
+- **Page Background**: Warm linen/off-white `#f5f2ec` with decorative food imagery in corners (spices, peppercorns, basil, tomatoes)
+- **Card Background**: White `#ffffff`, rounded corners (~8–10px), subtle gray drop shadow
+- **Heading Text**: Dark gray `#333333`, bold, uppercase for section titles
+- **Step Label Text**: Medium gray `#444444`, uppercase, small size
+- **Input Borders**: Light gray `#e0e0e0`, small rounded corners (~4–6px)
+- **Placeholder Text**: Light gray `#999999`
+- **Dashed Connector Lines**: Light gray `#d1d1d1`
+- **Pre-filled Field Background**: Light blue-gray `#e8f0f8`
+- **Typography**: Geometric sans-serif (Poppins or similar) — clean, modern, with clear weight hierarchy
+- **Button Style**: Solid green `#88b34a`, white uppercase bold text, rounded corners matching input radius
+- **Step Indicator**: Circular icons — active = filled green circle + white icon; inactive = green outline + green icon
+- **Layout**: Centered card, 2-column responsive form grid, generous vertical spacing (~15–30px)
 
-> All tokens extracted via screenshot analysis. The live preview at
-> `https://preview.colorlib.com/theme/colorlib-wizard-7/` returned 404.
-> Tokens below are best-effort approximations from the visual reference.
+## Requirements
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Page background | `#1a1a1a` (near-black) | Dark luxury full-page background |
-| Card/form background | `#2a2a2e` (dark charcoal) | Wizard card container, subtle light border |
-| Card border | `1px solid #3a3a3e` (subtle gray) | Thin light border around the form card |
-| Text primary | `#ffffff` (white) | All labels, values, title |
-| Text secondary/muted | `#9a9a9a` (light gray) | Step counter, helper text |
-| Accent (subtitle) | `#e8a87c` (peach/warm orange) | Cursive subtitle text |
-| Font family (heading/body) | `"Poppins", sans-serif` | Clean modern sans-serif |
-| Font family (subtitle) | `"Dancing Script", cursive` or similar | Cursive script for warm accent |
-| Button style | White outline, border-only, rounded | "NEXT" button — no fill, white border + text |
-| Button border radius | `4px` | Slightly rounded corners |
-| Button padding | `10px 30px` | Comfortable click target |
-| Input border | `1px solid #4a4a4e` (gray underline) | Bottom-border-only style per field |
-| Input text color | `#ffffff` (white) | Dropdown/display values |
-| Field label color | `#cccccc` (off-white) | Smaller labels above values |
-| Step indicator | `1 / 3` light gray text | Bottom-right of form card |
-| Step indicator color | `#888888` | Muted gray |
-| Split layout | 50/50 horizontal | Left: food image, Right: booking form |
-| Image section background | `#000000` (pure black) | Behind food photography |
+### Requirement: 4-step wizard progress indicator
 
-## Gherkin Requirements
+Users SHALL see a horizontal 4-step progress indicator with circular icons connected by dashed lines.
 
-### Feature: Spellcraft — 3-Step Restaurant Table Booking Wizard
+#### Scenario: Step indicator displays all 4 steps
 
-  Scenario: Page loads with step 1 active
-    Given the user opens the Spellcraft booking page
-    Then the page has a split layout with a food image on the left and a booking form on the right
-    And the form heading "BOOK A TABLE" is visible in bold white uppercase text
-    And the subtitle "Check out our place" is visible in peach/orange cursive script
-    And the step indicator shows "1 / 3"
-    And the "NEXT" button is visible
+- **WHEN** the user loads the page
+- **THEN** the wizard displays 4 circular step icons labeled "STEP 01" through "STEP 04" connected by dashed gray lines
 
-  Scenario: Step 1 displays booking fields
-    Given the user is on step 1
-    Then the form shows a "People" field with a dropdown selector (default value "1")
-    And the form shows a "Date" field with a date display
-    And the form shows a "Time" section with start and end time dropdowns
-    And the "NEXT" button is visible at the bottom
+#### Scenario: Active step is visually distinct
 
-  Scenario: Step 1 to Step 2 navigation
-    Given the user is on step 1 with valid selections
-    When the user clicks the "NEXT" button
-    Then step 2 becomes active
-    And the step indicator updates to "2 / 3"
-    And the step 1 fields are replaced with step 2 fields
+- **WHEN** the user is on Step 1
+- **THEN** Step 1's circle is filled solid green with a white fork/spoon icon inside, while steps 2–4 show green-outlined circles with green icons (lock, storefront, truck)
 
-  Scenario: Step 2 displays personal contact information
-    Given the user is on step 2
-    Then the form shows fields for name and contact information
-    And a "NEXT" button is visible to proceed to step 3
-    And a back option is available to return to step 1
+#### Scenario: Completed steps show checkmark
 
-  Scenario: Step 2 to Step 3 navigation
-    Given the user is on step 2 with valid data
-    When the user clicks the "NEXT" button
-    Then step 3 becomes active
-    And the step indicator updates to "3 / 3"
+- **WHEN** the user advances to Step 2
+- **THEN** Step 1 shows a completed checkmark icon and Step 2 becomes the active filled circle
 
-  Scenario: Step 3 displays confirmation or special requests
-    Given the user is on step 3
-    Then the form shows a summary or special requests field
-    And a "BOOK" or submit button is visible
-    And a back option is available to return to step 2
+### Requirement: Step 1 — Basic Details form
 
-  Scenario: Form submission
-    Given the user has completed all three steps
-    When the user clicks the submit button on step 3
-    Then a confirmation message or success state is displayed
+Users SHALL be able to fill in personal basic details on the first step.
 
-  Scenario: Back navigation preserves data
-    Given the user is on step 2
-    When the user navigates back to step 1
-    Then the step 1 fields retain their previously entered values
-    And the step indicator shows "1 / 3"
+#### Scenario: Step 1 form fields are displayed
 
-  Scenario: Split layout responsive on mobile
-    Given the user views the page on a viewport width less than 768px
-    Then the split layout collapses to a single column
-    And the food image appears above the form
-    And all form fields remain accessible
+- **WHEN** the user is on Step 1 (Basic Details)
+- **THEN** the form displays fields for First Name, Last Name, Email ID, User ID, Country, State, City, Phone Number, and Password
 
-  Scenario: Dark theme styling
-    Given the page is rendered
-    Then the background is near-black (#1a1a1a)
-    And the form card has a dark charcoal background with subtle border
-    And all text is white or light gray
-    And the subtitle uses a warm peach/orange accent color
+#### Scenario: Step 1 form has two-column layout
 
-  Scenario: Button styling
-    Given the page is rendered
-    Then the "NEXT" button has a white outline (no fill) with white text
-    And the button has slightly rounded corners
-    And the button hover state provides visual feedback
+- **WHEN** the user views Step 1
+- **THEN** First Name and Last Name are displayed side by side, Email ID and User ID are side by side, and Country/State/City are in a 3-column row
 
-  Scenario: Footer with Component Dock branding
-    Given the page is rendered
-    Then the footer contains a link to https://www.componentdock.com/ labeled "Component Dock"
+#### Scenario: Each input has an icon
+
+- **WHEN** the user views any form field on Step 1
+- **THEN** each input displays a relevant icon on the right edge (person, envelope, globe, pin, phone, eye for password)
+
+### Requirement: Step 2 — Security/Account form
+
+Users SHALL provide account security details on the second step.
+
+#### Scenario: Step 2 fields are displayed
+
+- **WHEN** the user advances to Step 2
+- **THEN** the form displays fields related to account security (username, password, security question)
+
+### Requirement: Step 3 — Store/Order form
+
+Users SHALL provide store or order details on the third step.
+
+#### Scenario: Step 3 fields are displayed
+
+- **WHEN** the user advances to Step 3
+- **THEN** the form displays fields related to store or order configuration
+
+### Requirement: Step 4 — Delivery/Shipping form
+
+Users SHALL provide delivery information on the final step.
+
+#### Scenario: Step 4 fields are displayed
+
+- **WHEN** the user advances to Step 4
+- **THEN** the form displays fields related to delivery or shipping details (address, city, postal code)
+
+### Requirement: Navigation buttons
+
+Users SHALL have Back and Continue buttons for wizard navigation.
+
+#### Scenario: Back button hidden on first step
+
+- **WHEN** the user is on Step 1
+- **THEN** the Back button is not visible
+
+#### Scenario: Back button visible on later steps
+
+- **WHEN** the user is on Step 2 or later
+- **THEN** a Back button is visible that returns to the previous step
+
+#### Scenario: Continue button advances to next step
+
+- **WHEN** the user clicks Continue on a non-final step
+- **THEN** the wizard advances to the next step and updates the progress indicator
+
+#### Scenario: Submit button on final step
+
+- **WHEN** the user is on Step 4 (the final step)
+- **THEN** the Continue button is replaced with a Submit button
+
+### Requirement: Form validation prevents advancing on invalid input
+
+Users SHALL see validation feedback when attempting to advance with missing required fields.
+
+#### Scenario: Empty required fields prevent advancement
+
+- **WHEN** the user clicks Continue with empty required fields
+- **THEN** the wizard does not advance and indicates which fields are required
+
+### Requirement: Successful submission completes the wizard
+
+Users SHALL see a confirmation after completing all steps.
+
+#### Scenario: Successful completion
+
+- **WHEN** the user completes all 4 steps with valid data and clicks Submit
+- **THEN** a success/confirmation screen is displayed
+
+### Requirement: Footer with Component Dock branding
+
+Every template's footer SHALL link to https://www.componentdock.com/.
+
+#### Scenario: Footer contains Component Dock link
+
+- **WHEN** the page is rendered
+- **THEN** the footer contains a link to https://www.componentdock.com/ labeled "Component Dock"
 
 ## Verification Checklist
 
-- [ ] 3-step wizard form renders with progress indicator ("1 / 3", "2 / 3", "3 / 3")
-- [ ] Split layout: food image left, booking form right
-- [ ] Step 1: People dropdown, Date display, Time start/end dropdowns
-- [ ] Step 2: Name and contact information fields
-- [ ] Step 3: Summary or special requests + submit button
-- [ ] NEXT/Back navigation between steps
-- [ ] Step indicator updates on step change
-- [ ] Back navigation preserves previously entered data
-- [ ] Dark luxury theme: near-black background, dark charcoal card, white text
-- [ ] Peach/orange cursive subtitle accent
-- [ ] White outline NEXT button with rounded corners
-- [ ] Responsive: single-column on mobile
-- [ ] Footer links to Component Dock
-- [ ] 100% test coverage
-- [ ] No ColorLib references in app code
+- [ ] 4-step horizontal progress indicator with circular icons and dashed connectors
+- [ ] Active step: filled green circle (#88b34a) + white icon
+- [ ] Inactive steps: green-outlined circles with green icons
+- [ ] Step labels: "STEP 01" through "STEP 04" in uppercase
+- [ ] Card: white background, rounded corners (~8–10px), drop shadow, centered
+- [ ] Page background: warm off-white (#f5f2ec) with food-themed decorative elements
+- [ ] Form fields with right-side icons (person, envelope, globe, pin, phone, lock/eye)
+- [ ] 2-column responsive form layout (Country/State/City = 3-column)
+- [ ] Input borders: light gray (#e0e0e0), placeholder text: #999999
+- [ ] Buttons: solid green (#88b34a), white uppercase text, rounded
+- [ ] Back button hidden on Step 1, visible on Steps 2–4
+- [ ] Continue → Submit transition on final step
+- [ ] Form validation prevents empty required field advancement
+- [ ] Success screen after completing all steps
+- [ ] Footer links to https://www.componentdock.com/
+- [ ] No references to ColorLib in app code
+- [ ] Font: Poppins (or equivalent geometric sans-serif) via Google Fonts
+- [ ] Placeholder images via picsum.photos/seed/spellcraft-N/W/H
+- [ ] Icons from lucide-react

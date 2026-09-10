@@ -1,9 +1,9 @@
-# Tasks & Research Notes: Spellforge (Colorlib Wizard 8)
+# Tasks & Research Notes: Spellcraft (Colorlib Wizard 8)
 
 ## Research Summary
 
 - **Source**: Colorlib Wizard 8 (`https://colorlib.com/wp/template/colorlib-wizard-8/`)
-- **New Name**: `spellforge`
+- **New Name**: `spellcraft`
 - **Category**: Forms / Multi-step Wizard / Food Store Checkout
 - **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-8/` — **404 (unreachable)**
 - **Fallback**: Screenshot at `https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-8.jpg`
@@ -25,7 +25,7 @@ The template shows a centered white card on a warm linen background with food-th
 1. **Progress indicator**: 4 circles connected by dashed gray lines. Active step (Step 1) = filled green circle with white fork/spoon icon. Inactive = green outline with green icon (lock, storefront, truck). Labels: "STEP 01"–"STEP 04".
 2. **Section title**: "BASIC DETAILS" in bold uppercase dark gray.
 3. **Form grid**: 2-column layout with inputs having right-aligned icons. Fields: First Name, Last Name, Email ID, User ID, Country, State, City, Phone Number, Password.
-4. **Pre-filled fields**: Some fields show a light blue-gray background (`#e8f0f8`) indicating completed/pre-populated data.
+4. **Pre-filled fields**: Some fields show a light blue-gray background (#e8f0f8) indicating completed/pre-populated data.
 5. **Action buttons**: "BACK" and "CONTINUE" in solid green with white uppercase text.
 
 ## Section Implementation Plan
