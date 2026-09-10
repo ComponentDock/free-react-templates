@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Batterly brand palette — orange-red #F04506 from the Cakes design */
+  --color-brand: #f04506;
+  --color-brand-dark: #d83e06;
+  --color-cream: #fff7f3;
+  --color-card-bg: #fff5f2;
+  --color-body-text: #5e5e5e;
+
+  /* Quicksand for headings/buttons/nav, DM Sans for body */
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+  --font-decorative: 'Lobster', cursive;
+}
