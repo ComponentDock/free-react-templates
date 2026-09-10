@@ -911,7 +911,7 @@
 - [x] **Biznance** — [colorlib](https://colorlib.com/wp/template/biznance/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/biznance-free-template.jpg) · [vantage](https://vantage.free.componentdock.com)
 - [x] **Bizpro** — [colorlib](https://colorlib.com/wp/template/bizpro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bizpro-free-classic-website-template.jpg) · [bizplanner](https://free-react-templates-bizplanner.surge.sh)
 - [x] **Blueline** — [colorlib](https://colorlib.com/wp/template/blueline/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/blueline-free-fullscreen-business-website-template.jpg) · [azureline](https://azureline.free.componentdock.com)
-- [ ] **Bobsled** — [colorlib](https://colorlib.com/wp/template/bobsled/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bobsled-creative-website-template.jpg)
+- [~] **Bobsled** — [colorlib](https://colorlib.com/wp/template/bobsled/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bobsled-creative-website-template.jpg)
 - [ ] **Book Keeping** — [colorlib](https://colorlib.com/wp/template/book-keeping/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bookkeeping-free-template.jpg)
 - [x] **Boxe** — [colorlib](https://colorlib.com/wp/template/boxe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boxe-free-template.jpg) · [cargoly](https://cargoly.free.componentdock.com)
 - [ ] **Boxus** — [colorlib](https://colorlib.com/wp/template/boxus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boxus-creative-digital-agency-free-website-template.jpg)
