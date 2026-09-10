@@ -914,7 +914,7 @@
 - [x] **Bobsled** — [colorlib](https://colorlib.com/wp/template/bobsled/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bobsled-creative-website-template.jpg) · [glissade](https://glissade.free.componentdock.com)
 - [x] **Book Keeping** · [reckoner](https://reckoner.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/book-keeping/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bookkeeping-free-template.jpg)
 - [x] **Boxe** — [colorlib](https://colorlib.com/wp/template/boxe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boxe-free-template.jpg) · [cargoly](https://cargoly.free.componentdock.com)
-- [~] **Boxus** — [colorlib](https://colorlib.com/wp/template/boxus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boxus-creative-digital-agency-free-website-template.jpg)
+- [x] **Boxus** — [colorlib](https://colorlib.com/wp/template/boxus/) · [musecraft](https://musecraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boxus-creative-digital-agency-free-website-template.jpg)
 - [x] **Bravo** — [colorlib](https://colorlib.com/wp/template/bravo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bravo-free-template.jpg) · [buzzer](https://buzzer.free.componentdock.com)
 - [ ] **Breed2** — [colorlib](https://colorlib.com/wp/template/breed2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/breed2-free-template.jpg)
 - [ ] **Buri** — [colorlib](https://colorlib.com/wp/template/buri/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buri-free-template.jpg)
