@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* WashBox brand palette — recreated from the ColorLib "Carwash" design */
+  --color-brand: #007aff;
+  --color-brand-light: #0bc6ff;
+  --color-brand-dark: #0d80f3;
+  --color-green-accent: #70d76a;
+  --color-heading: #010a44;
+  --color-body: #10285d;
+  --color-nav-link: #072366;
+  --color-price: #4c1e51;
+  --color-card-border: #e7e6eb;
+
+  --font-poppins: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-work: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Stroke-fill animation for hero text */
+@keyframes stroke-fill {
+  0%,
+  100% {
+    color: transparent;
+    -webkit-text-stroke: 2px #ffffff;
+  }
+  50% {
+    color: #ffffff;
+    -webkit-text-stroke: 0px;
+  }
+}
+
+.animate-stroke-fill {
+  animation: stroke-fill 3s ease-in-out infinite;
+}
+
+/* Scrollbar for testimonial slider */
+.scroll-snap-x {
+  scroll-snap-type: x mandatory;
+}
+.scroll-snap-x > * {
+  scroll-snap-align: start;
+}

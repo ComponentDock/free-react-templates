@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Portrait of Alex Morgan">
+  <defs>
+    <linearGradient id="aurora-portrait" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1" />
+      <stop offset="1" stop-color="#a5b4fc" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="256" fill="url(#aurora-portrait)" />
+  <circle cx="256" cy="196" r="76" fill="#ffffff" opacity="0.92" />
+  <path d="M112 452c14-96 78-144 144-144s130 48 144 144" fill="#ffffff" opacity="0.92" />
+</svg>
