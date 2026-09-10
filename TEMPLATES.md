@@ -897,7 +897,7 @@
 - [x] **Atomic** — [colorlib](https://colorlib.com/wp/template/atomic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/atomic-free-template.jpg) · [proton](https://proton.free.componentdock.com)
 - [x] **Auction** — [colorlib](https://colorlib.com/wp/template/auction/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/auction-free-template.jpg) · [bidcraft](https://bidcraft.free.componentdock.com)
 - [x] **Automotive** — [colorlib](https://colorlib.com/wp/template/automotive/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/automotive-free-template.jpg) · [veloce](https://veloce.free.componentdock.com)
-- [~] **Autorepair** — [colorlib](https://colorlib.com/wp/template/autorepair/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autorepair-free-template.jpg)
+- [x] **Autorepair** — [colorlib](https://colorlib.com/wp/template/autorepair/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autorepair-free-template.jpg) · [fixcraft](https://fixcraft.free.componentdock.com)
 - [ ] **Autoroad** — [colorlib](https://colorlib.com/wp/template/autoroad/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autoraod-free-template.jpg)
 - [x] **Avo** — [colorlib](https://colorlib.com/wp/template/avo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/avo-free-templatel.jpg) · [minima](https://free-react-templates-minima.surge.sh)
 - [ ] **Bakery** — [colorlib](https://colorlib.com/wp/template/bakery/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bakery-free-template.jpg)
@@ -2948,7 +2948,7 @@
 
 ## Transportation (22)
 
-- [~] **Autorepair** — [colorlib](https://colorlib.com/wp/template/autorepair/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autorepair-free-template.jpg)
+- [x] **Autorepair** — [colorlib](https://colorlib.com/wp/template/autorepair/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autorepair-free-template.jpg) · [fixcraft](https://fixcraft.free.componentdock.com)
 - [ ] **Autoroad** — [colorlib](https://colorlib.com/wp/template/autoroad/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autoraod-free-template.jpg)
 - [x] **Boxe** — [colorlib](https://colorlib.com/wp/template/boxe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boxe-free-template.jpg) · [cargoly](https://cargoly.free.componentdock.com)
 - [ ] **Car Rental** — [colorlib](https://colorlib.com/wp/template/car-rental/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carrental-free-template.jpg)
