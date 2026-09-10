@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand gradient — recreated from the ColorLib "Bobsled" design
+     (css/main.css): blue #3e69fe → cyan #4cd4e3, used on hero,
+     features, contact, story bg, and button hover. */
+  --color-brand-start: #3e69fe;
+  --color-brand-end: #4cd4e3;
+
+  /* Primary scale for shared ui Button/ButtonLink `primary` variants. */
+  --color-primary-50: #eef4ff;
+  --color-primary-100: #d4e4ff;
+  --color-primary-200: #b3d0ff;
+  --color-primary-300: #80b3ff;
+  --color-primary-400: #4d96fe;
+  --color-primary-500: #3e69fe;
+  --color-primary-600: #2b4ed4;
+  --color-primary-700: #1f3bab;
+  --color-primary-800: #162b82;
+  --color-primary-900: #0f1f5a;
+
+  /* Neutral body text — #777777 from the original CSS. */
+  --color-mist: #777777;
+
+  /* Dark heading text — #222222 from the original CSS. */
+  --color-ink: #222222;
+
+  /* Light section background — #f9f9ff from the original CSS. */
+  --color-paper: #f9f9ff;
+
+  /* Border color — #eee from the original CSS. */
+  --color-border: #eeeeee;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
