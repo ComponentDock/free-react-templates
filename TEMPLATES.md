@@ -175,7 +175,7 @@
 
 ## Automotive (8)
 
-- [x] **Automotive** — [colorlib](https://colorlib.com/wp/template/automotive/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/automotive-free-template.jpg) · [motorly](https://motorly.free.componentdock.com)
+- [x] **Automotive** — [colorlib](https://colorlib.com/wp/template/automotive/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/automotive-free-template.jpg) · [veloce](https://veloce.free.componentdock.com)
 - [x] **Autorepair** — [colorlib](https://colorlib.com/wp/template/autorepair/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autorepair-free-template.jpg) · [torquely](https://torquely.free.componentdock.com)
 - [x] **Autoroad** — [colorlib](https://colorlib.com/wp/template/autoroad/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autoraod-free-template.jpg) · [roadly](https://roadly.free.componentdock.com)
 - [x] **Carbook** — [colorlib](https://colorlib.com/wp/template/carbook/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carbook-free-template.jpg) · [rently](https://rently.free.componentdock.com)
