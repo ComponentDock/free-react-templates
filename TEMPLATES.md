@@ -928,7 +928,7 @@
 - [x] **Carrent** — [colorlib](https://colorlib.com/wp/template/carrent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carrent-free-template.jpg) · [drively](https://drively.free.componentdock.com)
 - [x] **Carrentals** — [colorlib](https://colorlib.com/wp/template/carrentals/) · [drivego](https://drivego.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carrentals-free-template.jpg)
 - [x] **Carries** — [colorlib](https://colorlib.com/wp/template/carries/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carries-free-template.jpg) · [packwell](https://packwell.free.componentdock.com)
-- [~] **Carwash** — [colorlib](https://colorlib.com/wp/template/carwash/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carwash-free-template.jpg)
+- [x] **Carwash** — [colorlib](https://colorlib.com/wp/template/carwash/) · [washbox](https://washbox.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carwash-free-template.jpg)
 - [ ] **Caviar** — [colorlib](https://colorlib.com/wp/template/caviar/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/caviar-free-template.jpg)
 - [ ] **Cellon** — [colorlib](https://colorlib.com/wp/template/cellon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cellon-free-ligh-consulting-company-template.jpg)
 - [ ] **Celt** — [colorlib](https://colorlib.com/wp/template/celt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/celt-construction-company-website-template.jpg)
