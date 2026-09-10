@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Bidcraft brand colors — from the ColorLib "Auction" preview
+     (https://preview.colorlib.com/theme/auction/ + css/style.css):
+     an auction marketplace theme with an orange #f37121 primary,
+     white section backgrounds, muted body text #999999, and
+     dark headings #000000. */
+  --color-primary-50: #fff3ec;
+  --color-primary-100: #ffe0d1;
+  --color-primary-200: #ffc1a3;
+  --color-primary-300: #ff9a6b;
+  --color-primary-400: #f37121;
+  --color-primary-500: #e05f14;
+  --color-primary-600: #c44e0d;
+  --color-primary-700: #a03d0a;
+  --color-primary-800: #7d300b;
+  --color-primary-900: #64270c;
+
+  /* Muted body copy (ColorLib #999999). */
+  --color-smoke: #999999;
+
+  /* Dark headings (ColorLib #000000). */
+  --color-ink: #000000;
+
+  /* Mulish (headings + body) via Google Fonts <link> in index.html. */
+  --font-sans: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+}
