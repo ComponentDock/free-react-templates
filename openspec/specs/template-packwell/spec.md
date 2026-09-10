@@ -58,86 +58,121 @@ Recreation of ColorLib **Carries** — a logistics and freight services website 
 | Newsletter     | White background                              |
 | Footer         | `#3c4a62` dark blue-gray, bottom `#212121`    |
 
-## Gherkin Requirements
+## Requirements
 
-### Hero Section
+### Requirement: Hero section renders with slider and CTAs
 
-- **Scenario: Hero slider renders**
-  Given the user visits PackWell
-  When the hero section loads
-  Then a full-width slider displays with heading "WE MAKE STRONGEST SERVICE ABOVE THE WORLD"
-  And a CTA button "Get A Quote" is visible
-  And navigation arrows allow sliding between slides
-  And the slider has a dark overlay on background images
+Users SHALL see a full-width hero section with background images, a heading "WE MAKE STRONGEST SERVICE ABOVE THE WORLD", description text, and two CTA buttons ("Our Service" and "Get A Quote").
 
-### Navbar
+#### Scenario: Hero section loads
 
-- **Scenario: Navigation renders**
-  Given the user visits PackWell
-  When the navbar loads
-  Then the site logo/brand name is displayed
-  And navigation links are visible (Home, About, Services, Pages, Blog, Contact)
-  And the navbar is sticky on scroll
+- **WHEN** the user visits PackWell
+- **THEN** a full-width hero section is visible
+- **AND** the heading "WE MAKE STRONGEST SERVICE ABOVE THE WORLD" is displayed
+- **AND** a "Get A Quote" button is visible
+- **AND** the hero has a dark overlay on the background image
 
-### About Section
+### Requirement: Navbar renders with logo and navigation links
 
-- **Scenario: About section renders**
-  Given the user scrolls to the about area
-  Then the heading "We have 25 years experience in this passion" is visible
-  And a descriptive paragraph about the company is shown
-  And the section has a gray background (`#f1f1f1`)
+Users SHALL see a sticky navbar with the PackWell logo, navigation links (Home, About, Services, Blog, Contact), and icon buttons (Search, User, Shopping Bag).
 
-### Service Section
+#### Scenario: Navbar loads
 
-- **Scenario: Service catalog renders**
-  Given the user scrolls to the service area
-  When the service catalog is visible
-  Then a dark blue-gray header says "Our Service"
-  And four service cards are shown: Ware House, Road Freight, Sea Freight, Air Freight
-  And each card has a circular icon, title, and short description
-  And the top half has dark background (`#3c4a62`), bottom half has light background (`#f4f7f9`)
+- **WHEN** the user visits PackWell
+- **THEN** the PackWell brand name is displayed
+- **AND** navigation links are visible
+- **AND** the navbar is sticky on scroll
 
-### Promo / Why Choose Us
+#### Scenario: Mobile menu toggles
 
-- **Scenario: Why Choose Us section renders**
-  Given the user scrolls to the promo area
-  Then "Why Choose Us?" heading is displayed
-  And bullet points or feature list items describe benefits
-  And the section has a light background with a decorative image
+- **WHEN** the user clicks the mobile menu toggle button
+- **THEN** the mobile navigation menu opens
+- **AND** when a nav link is clicked the menu closes
 
-### Features / Highlights
+### Requirement: Blog/Service cards render with freight types
 
-- **Scenario: Feature highlights render**
-  Given the user scrolls to the feature highlights
-  Then three columns show: Our Location, Latest News, 24/7 Support, Fast Delivery
-  And each has an icon and short text
-  And the section has a dark image background
+Users SHALL see three service cards (Ocean Freight, Air Freight, Street Freight) each with an icon, title, description, and Read More link.
 
-### Testimonials
+#### Scenario: Service cards load
 
-- **Scenario: Testimonial slider renders**
-  Given the user scrolls to the testimonials area
-  Then "what client's say" heading is displayed
-  And client quotes with names (e.g. "JABIN KANE") are shown
-  And prev/next navigation arrows allow cycling through testimonials
+- **WHEN** the user scrolls to the blog cards section
+- **THEN** three cards are displayed: Ocean Freight, Air Freight, Street Freight
+- **AND** each card has a circular icon, title, and description
+- **AND** each card has a Read More link
 
-### Newsletter
+### Requirement: About section with quote form and stats
 
-- **Scenario: Newsletter subscription form renders**
-  Given the user scrolls to the newsletter section
-  Then "Weekly Newsletter" heading is visible
-  And an email input field is present
-  And a submit button is present
-  And the section has a white background
+Users SHALL see a split layout with a "Get A Quote" form on the left and about content with stats on the right.
 
-### Footer
+#### Scenario: About section loads
 
-- **Scenario: Footer renders**
-  Given the user scrolls to the footer
-  Then three columns display: About Us, Latest Tweets, Customer Service
-  And a copyright bar is at the bottom
-  And the footer has a dark blue-gray background (`#3c4a62`)
-  And a link to "Component Dock" (https://www.componentdock.com/) is present
+- **WHEN** the user scrolls to the about area
+- **THEN** the heading "We have 25 years experience in this passion" is visible
+- **AND** a Get A Quote form with fields (Name, Email, Phone, Type, Quantity, Destination, Message) is present
+- **AND** stats are displayed: 120 Project Done, 100 Happy Clients, 30 Team Members
+
+#### Scenario: Quote form submits
+
+- **WHEN** the user fills in the form and clicks Send
+- **THEN** a confirmation message is displayed
+
+### Requirement: Service area with catalog and why choose us
+
+Users SHALL see a dark section with "Our Service" heading, service description, and "Why Choose Us?" feature list, plus four service cards below.
+
+#### Scenario: Service area loads
+
+- **WHEN** the user scrolls to the service area
+- **THEN** the heading "Our Service" is displayed
+- **AND** a "Why Choose Us?" section with check items is visible
+- **AND** four service cards are shown: Ware House, Road Freight, Sea Freight, Air Freight
+
+### Requirement: Promo area with feature highlights and CTA banner
+
+Users SHALL see four feature items (Our Location, Latest News, 24/7 Support, Fast Delivery) and a dark parallax CTA banner.
+
+#### Scenario: Promo area loads
+
+- **WHEN** the user scrolls to the promo area
+- **THEN** four feature highlights are displayed with icons
+- **AND** a dark CTA banner with "We provide international freight & logistics service worldwide" is visible
+
+### Requirement: Testimonial slider with navigation
+
+Users SHALL see client testimonials with photo dots, prev/next navigation arrows, and the active testimonial quote, name, and role.
+
+#### Scenario: Testimonials load
+
+- **WHEN** the user scrolls to the testimonials section
+- **THEN** the heading "What Client's Say" is displayed
+- **AND** the first testimonial is shown by default
+- **AND** prev/next arrows and photo dots allow navigation
+
+### Requirement: Newsletter subscription form
+
+Users SHALL see a newsletter section with a "Weekly Newsletter" heading, email input, and Subscribe button.
+
+#### Scenario: Newsletter form loads
+
+- **WHEN** the user scrolls to the newsletter section
+- **THEN** the heading "Weekly Newsletter" is visible
+- **AND** an email input and Subscribe button are present
+
+#### Scenario: Newsletter form submits
+
+- **WHEN** the user enters a valid email and clicks Subscribe
+- **THEN** a "Thank you for subscribing" message is displayed
+
+### Requirement: Footer with three columns and Component Dock link
+
+Users SHALL see a footer with three columns (About Us, Latest Tweets, Customer Service), a copyright bar, and a link to https://www.componentdock.com/.
+
+#### Scenario: Footer loads
+
+- **WHEN** the user scrolls to the footer
+- **THEN** three columns display: About Us, Latest Tweets, Customer Service
+- **AND** a copyright bar is at the bottom
+- **AND** a link to Component Dock (https://www.componentdock.com/) is present
 
 ## Verification Checklist
 
