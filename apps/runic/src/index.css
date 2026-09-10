@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Page gradient: soft pastel blue → lavender → pink */
+  --color-page-start: #b8c6f0;
+  --color-page-mid: #d4b8e8;
+  --color-page-end: #f0c8dc;
+
+  /* Card */
+  --color-card: #ffffff;
+
+  /* CTA / accent: periwinkle blue */
+  --color-accent: #aac1f0;
+  --color-accent-hover: #98add6;
+
+  /* Back button / active dot: pink/lavender */
+  --color-pink: #f6c2ec;
+  --color-pink-hover: #dbadd2;
+
+  /* Active field dot */
+  --color-dot-active: #f6c2ec;
+  --color-dot-inactive: #f6c2ec;
+
+  /* Text */
+  --color-text-primary: #333333;
+  --color-text-secondary: #808080;
+  --color-text-placeholder: #808080;
+
+  /* Input */
+  --color-input-bg: #f7f7f7;
+
+  /* Avatar border */
+  --color-avatar-border: #d4b8e8;
+
+  /* Step dots */
+  --color-step-active: #ffffff;
+  --color-step-inactive: #ffffff;
+
+  /* Primary scale — maps accent for shared Button */
+  --color-primary-50: #f0f4fd;
+  --color-primary-100: #dde6fa;
+  --color-primary-200: #bbcdf5;
+  --color-primary-300: #aac1f0;
+  --color-primary-400: #98add6;
+  --color-primary-500: #aac1f0;
+  --color-primary-600: #98add6;
+  --color-primary-700: #8499c4;
+  --color-primary-800: #7085b2;
+  --color-primary-900: #5c71a0;
+
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Bubblegum Sans', cursive;
+}
