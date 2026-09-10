@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — lime green from the original design (#89ba16) */
+  --color-lime-50: #f7fae8;
+  --color-lime-100: #eaf4c8;
+  --color-lime-200: #d4e99b;
+  --color-lime-300: #b9d964;
+  --color-lime-400: #89ba16;
+  --color-lime-500: #7aa814;
+  --color-lime-600: #62850f;
+  --color-lime-700: #4a640c;
+  --color-lime-800: #3a4f0a;
+  --color-lime-900: #2a3a08;
+
+  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+}
