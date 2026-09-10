@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-start: #feb47b;
+  --color-brand-end: #ff7e5f;
+  --color-brand-accent: #ff7e5f;
+  --color-heading: #2f373d;
+  --color-body: #646464;
+  --color-section-bg: #f7f7f7;
+  --color-footer-bg: #303030;
+  --color-banner-fallback: #f0eed4;
+  --color-green-accent: #e3f1da;
+  --color-border-warm: #fdcb9e;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+.gradient-btn {
+  background: linear-gradient(131deg, var(--color-brand-start), var(--color-brand-end));
+  color: white;
+  border-radius: 50px;
+  padding: 12px 32px;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.gradient-btn:hover {
+  opacity: 0.9;
+}
+
+.gradient-btn-outline {
+  color: var(--color-brand-accent);
+  border: 2px solid var(--color-brand-accent);
+  border-radius: 50px;
+  padding: 10px 28px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.gradient-btn-outline:hover {
+  background: var(--color-brand-accent);
+  color: white;
+}
