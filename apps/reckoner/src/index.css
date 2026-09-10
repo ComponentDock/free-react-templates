@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Reckoner brand colors — bookkeeping consulting agency.
+     Primary: #2B3990 (dark navy blue). */
+  --color-primary-50: #e8ecfa;
+  --color-primary-100: #c5cef2;
+  --color-primary-200: #9eaee7;
+  --color-primary-300: #778edc;
+  --color-primary-400: #5977d4;
+  --color-primary-500: #2b3990;
+  --color-primary-600: #263485;
+  --color-primary-700: #1f2c75;
+  --color-primary-800: #192465;
+  --color-primary-900: #0e1648;
+
+  /* Body text: #333333 */
+  --color-ink: #333333;
+
+  /* Muted/label text: #666666 */
+  --color-smoke: #666666;
+
+  /* Light section backgrounds */
+  --color-mist: #f8f9fa;
+  --color-snow: #ffffff;
+
+  /* Font headings: Montserrat */
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+
+  /* Font body: Open Sans */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
