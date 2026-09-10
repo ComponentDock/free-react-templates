@@ -915,7 +915,7 @@
 - [ ] **Book Keeping** — [colorlib](https://colorlib.com/wp/template/book-keeping/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bookkeeping-free-template.jpg)
 - [x] **Boxe** — [colorlib](https://colorlib.com/wp/template/boxe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boxe-free-template.jpg) · [cargoly](https://cargoly.free.componentdock.com)
 - [ ] **Boxus** — [colorlib](https://colorlib.com/wp/template/boxus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boxus-creative-digital-agency-free-website-template.jpg)
-- [ ] **Bravo** — [colorlib](https://colorlib.com/wp/template/bravo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bravo-free-template.jpg)
+- [~] **Bravo** — [colorlib](https://colorlib.com/wp/template/bravo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bravo-free-template.jpg)
 - [ ] **Breed2** — [colorlib](https://colorlib.com/wp/template/breed2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/breed2-free-template.jpg)
 - [ ] **Buri** — [colorlib](https://colorlib.com/wp/template/buri/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buri-free-template.jpg)
 - [ ] **Cakes** — [colorlib](https://colorlib.com/wp/template/cakes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cakes-colorlib-template.jpg)
