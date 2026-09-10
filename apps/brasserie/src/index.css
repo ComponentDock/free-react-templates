@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — recreated from the ColorLib "Caviar" design
+     (restaurant red #ff0000, black backgrounds). */
+  --color-brand-red: #ff0000;
+  --color-brand-red-dark: #cc0000;
+
+  /* Fonts: Work Sans (headings) + Open Sans (body) via Google Fonts */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
