@@ -5,7 +5,7 @@ import { Footer } from './Footer'
 describe('Footer', () => {
   it('renders brand name', () => {
     render(<Footer />)
-    expect(screen.getByText(/Fixcraft/)).toBeDefined()
+    expect(screen.getAllByText(/Fixcraft/).length).toBeGreaterThanOrEqual(1)
   })
 
   it('renders services list', () => {

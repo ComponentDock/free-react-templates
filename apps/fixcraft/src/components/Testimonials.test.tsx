@@ -1,11 +1,9 @@
-import { render, screen } from '@testing-library/react'
-import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
+import { act, render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
+import { describe, it, expect, vi, afterEach } from 'vitest'
 import { Testimonials } from './Testimonials'
 
 describe('Testimonials', () => {
-  beforeEach(() => {
-    vi.useFakeTimers()
-  })
   afterEach(() => {
     vi.useRealTimers()
   })
@@ -28,16 +26,17 @@ describe('Testimonials', () => {
   })
 
   it('advances to next testimonial after interval', () => {
+    vi.useFakeTimers()
     render(<Testimonials />)
     expect(screen.getByText('Roger Scott')).toBeDefined()
-    vi.advanceTimersByTime(7000)
+    act(() => {
+      vi.advanceTimersByTime(7000)
+    })
     expect(screen.getByText('Jessica Moore')).toBeDefined()
   })
 
   it('allows clicking dots to navigate', async () => {
-    const user = (await import('@testing-library/user-event')).default.setup({
-      advanceTimers: vi.advanceTimersByTime,
-    })
+    const user = userEvent.setup()
     render(<Testimonials />)
     await user.click(screen.getByLabelText('Go to testimonial 3'))
     expect(screen.getByText('James Wilson')).toBeDefined()

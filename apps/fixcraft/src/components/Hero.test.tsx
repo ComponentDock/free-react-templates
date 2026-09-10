@@ -1,11 +1,9 @@
-import { render, screen } from '@testing-library/react'
-import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
+import { act, render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
+import { describe, it, expect, vi, afterEach } from 'vitest'
 import { Hero } from './Hero'
 
 describe('Hero', () => {
-  beforeEach(() => {
-    vi.useFakeTimers()
-  })
   afterEach(() => {
     vi.useRealTimers()
   })
@@ -27,17 +25,18 @@ describe('Hero', () => {
     expect(dots).toHaveLength(2)
   })
 
-  it('advances to next slide after interval', async () => {
+  it('advances to next slide after interval', () => {
+    vi.useFakeTimers()
     render(<Hero />)
     expect(screen.getByText(/Make your car last longer/)).toBeDefined()
-    vi.advanceTimersByTime(6000)
+    act(() => {
+      vi.advanceTimersByTime(6000)
+    })
     expect(screen.getByText(/It's time to come to repair your car/)).toBeDefined()
   })
 
   it('allows clicking slide dots to navigate', async () => {
-    const user = (await import('@testing-library/user-event')).default.setup({
-      advanceTimers: vi.advanceTimersByTime,
-    })
+    const user = userEvent.setup()
     render(<Hero />)
     await user.click(screen.getByLabelText('Go to slide 2'))
     expect(screen.getByText(/It's time to come to repair your car/)).toBeDefined()

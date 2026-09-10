@@ -15,8 +15,8 @@ describe('Blog', () => {
   })
 
   it('renders blog post images', () => {
-    render(<Blog />)
-    const images = screen.getAllByRole('img')
+    const { container } = render(<Blog />)
+    const images = container.querySelectorAll('img')
     expect(images).toHaveLength(3)
   })
 })

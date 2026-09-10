@@ -24,7 +24,16 @@ describe('Appointment', () => {
     await user.type(screen.getByLabelText('Your Name'), 'John')
     await user.type(screen.getByLabelText('Phone'), '+1234567890')
     await user.type(screen.getByLabelText('Date'), '2026-10-01')
+    await user.type(screen.getByLabelText('Time'), '10:30')
+    await user.type(screen.getByLabelText('Message'), 'Need engine check')
     await user.click(screen.getByText('Send message'))
     expect(screen.getByText(/Booking confirmed/)).toBeDefined()
+  })
+
+  it('does not confirm when required fields are empty', async () => {
+    const user = userEvent.setup()
+    render(<Appointment />)
+    await user.click(screen.getByText('Send message'))
+    expect(screen.queryByText(/Booking confirmed/)).toBeNull()
   })
 })

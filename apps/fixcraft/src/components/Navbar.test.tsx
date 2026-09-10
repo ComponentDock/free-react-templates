@@ -38,6 +38,24 @@ describe('Navbar', () => {
     expect(screen.queryByLabelText('Mobile menu')).toBeNull()
   })
 
+  it('closes mobile menu when a nav link is clicked', async () => {
+    const user = userEvent.setup()
+    render(<Navbar />)
+    await user.click(screen.getByLabelText('Open menu'))
+    const homeLink = screen.getByLabelText('Mobile menu').querySelector('a[href="#home"]')!
+    await user.click(homeLink)
+    expect(screen.queryByLabelText('Mobile menu')).toBeNull()
+  })
+
+  it('closes mobile menu when appointment link is clicked', async () => {
+    const user = userEvent.setup()
+    render(<Navbar />)
+    await user.click(screen.getByLabelText('Open menu'))
+    const apptLink = screen.getByLabelText('Mobile menu').querySelector('a[href="#appointment"]')!
+    await user.click(apptLink)
+    expect(screen.queryByLabelText('Mobile menu')).toBeNull()
+  })
+
   it('renders appointment CTA link', () => {
     render(<Navbar />)
     const ctas = screen.getAllByText('Appointment')
