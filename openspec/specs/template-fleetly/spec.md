@@ -47,118 +47,152 @@ Recreation of the ColorLib "Car Rental" template as a React 19 + Vite + Tailwind
 9. **Blog** — "Latest From Our Blog" heading, 4 blog cards (4-column grid): thumbnail image, date, title, excerpt, likes count, comments count with icons
 10. **Footer** — Dark navy bg (`#04091e`): 4 columns (Quick Links, Features, Resources with link lists, Social with icons) + Newsletter (email input + arrow submit button) + copyright bar with Component Dock link
 
-## Gherkin requirements
+## Requirements
 
-### Feature: Navbar
+### Requirement: Navbar
 
-- Scenario: Navbar displays logo and navigation
-  - Given the page loads
-  - Then a fixed navbar is visible at the top
-  - And the logo is displayed on the left
-  - And navigation links include Home, About, Cars, Service, Team, Blog, Contact
-  - And a Pages dropdown menu is present
+The template SHALL display a fixed-top navigation bar with logo, section links, and a Pages dropdown.
 
-- Scenario: Navbar links navigate to sections
-  - Given the user clicks the "Cars" nav link
-  - Then the page scrolls to the car models section
+#### Scenario: Navbar displays logo and navigation
 
-### Feature: Hero Banner
+- Given the page loads
+- Then a fixed navbar is visible at the top
+- And the logo is displayed on the left
+- And navigation links include Home, About, Cars, Service, Team, Blog, Contact
+- And a Pages dropdown menu is present
 
-- Scenario: Hero displays booking form
-  - Given the user is on the home section
-  - Then a full-screen hero with background image and dark overlay is displayed
-  - And the subtitle "the Royal Essence of Journey" is shown
-  - And the headline "Relaxed Journey Ever" is displayed in large bold uppercase text
-  - And a "Rent Car Now" gold CTA button is present
+#### Scenario: Navbar links navigate to sections
 
-- Scenario: Hero booking form is functional
-  - Given the booking form is displayed on the right side
-  - Then a car selection dropdown is present with car brand options
-  - And a pickup location dropdown is present
-  - And a pickup date picker is present
-  - And a dropoff location dropdown is present
-  - And a dropoff date picker is present
-  - And name, email, and phone input fields are present
-  - And a "Confirm Car Booking" submit button is present
+- Given the user clicks the "Cars" nav link
+- Then the page scrolls to the car models section
 
-### Feature: Features Section
+### Requirement: Hero Banner
 
-- Scenario: Six feature cards display
-  - Given the features section is visible
-  - Then 6 feature cards are displayed in a 3×2 grid
-  - And each card has an icon, title, and description
-  - And the titles are: Expert Technicians, Professional Service, Great Support, Technical Skills, Highly Recommended, Positive Reviews
+The template SHALL display a full-screen hero section with background image, dark overlay, headline text, CTA button, and a car booking form.
 
-- Scenario: Feature cards have hover effect
-  - Given the user hovers over a feature card
-  - Then the card background changes color
+#### Scenario: Hero displays booking form
 
-### Feature: About Section
+- Given the user is on the home section
+- Then a full-screen hero with background image and dark overlay is displayed
+- And the subtitle "the Royal Essence of Journey" is shown
+- And the headline "Relaxed Journey Ever" is displayed in large bold uppercase text
+- And a "Rent Car Now" gold CTA button is present
 
-- Scenario: About section displays split layout
-  - Given the about section is visible
-  - Then a left-side image is displayed
-  - And the heading "Globally Connected by Large Network" is shown on the right
-  - And the subtitle "We are here to listen from you deliver excellence" is displayed
-  - And a "get details" gold CTA button is present
+#### Scenario: Hero booking form is functional
 
-### Feature: Car Models Section
+- Given the booking form is displayed on the right side
+- Then a car selection dropdown is present with car brand options
+- And a pickup location dropdown is present
+- And a pickup date picker is present
+- And a dropoff location dropdown is present
+- And a dropoff date picker is present
+- And name, email, and phone input fields are present
+- And a "Confirm Car Booking" submit button is present
 
-- Scenario: Car models display in a carousel
-  - Given the car models section is visible
-  - Then the heading "Choose your Desired Car Model" is displayed
-  - And a carousel of car model cards is shown
-  - And each card shows a car image, name, price per day, description, and specs (Capacity, Doors, Air Condition, Transmission)
-  - And a "Book This Car Now" gold CTA button is on each card
+### Requirement: Features Section
 
-- Scenario: Car model carousel is navigable
-  - Given the car models carousel is displayed
-  - When the user clicks the next navigation dot
-  - Then the next car model card slides into view
+The template SHALL display 6 feature cards in a 3x2 grid with icons, titles, and descriptions.
 
-### Feature: Facts/Stats Section
+#### Scenario: Six feature cards display
 
-- Scenario: Stats display with yellow background
-  - Given the facts section is visible
-  - Then a full-width yellow background section is displayed
-  - And 5 stat counters are shown in a row
-  - And the stats include Projects Completed, Happy Clients, Total Tasks, Cups of Coffee, and In House Professionals
+- Given the features section is visible
+- Then 6 feature cards are displayed in a 3×2 grid
+- And each card has an icon, title, and description
+- And the titles are: Expert Technicians, Professional Service, Great Support, Technical Skills, Highly Recommended, Positive Reviews
 
-### Feature: Reviews Section
+#### Scenario: Feature cards have hover effect
 
-- Scenario: Review cards display with ratings
-  - Given the reviews section is visible
-  - Then the heading "Some Features that Made us Unique" is displayed
-  - And 6 review cards are shown in a 3×2 grid
-  - And each card shows a reviewer name, review text, and star rating
-  - And filled stars are visually distinct from empty stars
+- Given the user hovers over a feature card
+- Then the card background changes color
 
-### Feature: Call-to-Action Section
+### Requirement: About Section
 
-- Scenario: CTA section displays with background image
-  - Given the CTA section is visible
-  - Then a background image with dark navy overlay is displayed
-  - And the heading "Experience Great Support" is shown in white
-  - And a "Reach Our Support Team" outlined button is present
+The template SHALL display a split layout with image on the left and text content with CTA on the right.
 
-### Feature: Blog Section
+#### Scenario: About section displays split layout
 
-- Scenario: Blog cards display
-  - Given the blog section is visible
-  - Then the heading "Latest From Our Blog" is displayed
-  - And 4 blog cards are shown in a 4-column grid
-  - And each card has a thumbnail image, date, title, excerpt, likes count, and comments count
+- Given the about section is visible
+- Then a left-side image is displayed
+- And the heading "Globally Connected by Large Network" is shown on the right
+- And the subtitle "We are here to listen from you deliver excellence" is displayed
+- And a "get details" gold CTA button is present
 
-### Feature: Footer
+### Requirement: Car Models Section
 
-- Scenario: Footer displays with links and newsletter
-  - Given the footer is visible
-  - Then a dark navy background is displayed
-  - And column headings include Quick Links, Features, Resources, Follow Us, Newsletter
-  - And a newsletter email input with an arrow submit button is present
-  - And social media icon links are displayed (Facebook, Twitter, Dribbble, Behance)
-  - And a copyright notice is shown
-  - And a link to "Component Dock" is present in the copyright
+The template SHALL display a carousel of car model cards with image, specs, pricing, and booking CTA.
+
+#### Scenario: Car models display in a carousel
+
+- Given the car models section is visible
+- Then the heading "Choose your Desired Car Model" is displayed
+- And a carousel of car model cards is shown
+- And each card shows a car image, name, price per day, description, and specs (Capacity, Doors, Air Condition, Transmission)
+- And a "Book This Car Now" gold CTA button is on each card
+
+#### Scenario: Car model carousel is navigable
+
+- Given the car models carousel is displayed
+- When the user clicks the next navigation dot
+- Then the next car model card slides into view
+
+### Requirement: Facts/Stats Section
+
+The template SHALL display a full-width yellow statistics bar with 5 counter items.
+
+#### Scenario: Stats display with yellow background
+
+- Given the facts section is visible
+- Then a full-width yellow background section is displayed
+- And 5 stat counters are shown in a row
+- And the stats include Projects Completed, Happy Clients, Total Tasks, Cups of Coffee, and In House Professionals
+
+### Requirement: Reviews Section
+
+The template SHALL display 6 review cards in a 3x2 grid with star ratings.
+
+#### Scenario: Review cards display with ratings
+
+- Given the reviews section is visible
+- Then the heading "Some Features that Made us Unique" is displayed
+- And 6 review cards are shown in a 3×2 grid
+- And each card shows a reviewer name, review text, and star rating
+- And filled stars are visually distinct from empty stars
+
+### Requirement: Call-to-Action Section
+
+The template SHALL display a call-to-action section with background image, dark overlay, and white heading.
+
+#### Scenario: CTA section displays with background image
+
+- Given the CTA section is visible
+- Then a background image with dark navy overlay is displayed
+- And the heading "Experience Great Support" is shown in white
+- And a "Reach Our Support Team" outlined button is present
+
+### Requirement: Blog Section
+
+The template SHALL display 4 blog cards in a 4-column grid with thumbnails, metadata, and engagement counts.
+
+#### Scenario: Blog cards display
+
+- Given the blog section is visible
+- Then the heading "Latest From Our Blog" is displayed
+- And 4 blog cards are shown in a 4-column grid
+- And each card has a thumbnail image, date, title, excerpt, likes count, and comments count
+
+### Requirement: Footer
+
+The template SHALL display a dark navy footer with link columns, newsletter form, social icons, and Component Dock attribution.
+
+#### Scenario: Footer displays with links and newsletter
+
+- Given the footer is visible
+- Then a dark navy background is displayed
+- And column headings include Quick Links, Features, Resources, Follow Us, Newsletter
+- And a newsletter email input with an arrow submit button is present
+- And social media icon links are displayed (Facebook, Twitter, Dribbble, Behance)
+- And a copyright notice is shown
+- And a link to "Component Dock" is present in the copyright
 
 ## Verification checklist
 
