@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Veloce brand colors — from the ColorLib "Automotive" preview
+     (https://preview.colorlib.com/theme/automotive/ + css/style.css):
+     an automotive garage theme with a blue-violet #5F67FF primary,
+     dark backgrounds #25282C / #353535, light section bg #f7f7f7,
+     and text colors #111111 / #353535 / #727171. */
+  --color-primary-50: #f0f0ff;
+  --color-primary-100: #e0e0ff;
+  --color-primary-200: #c4c4ff;
+  --color-primary-300: #9e9eff;
+  --color-primary-400: #5f67ff;
+  --color-primary-500: #4a52e0;
+  --color-primary-600: #3a40b8;
+  --color-primary-700: #2d3190;
+  --color-primary-800: #222568;
+  --color-primary-900: #1a1c50;
+
+  /* Muted copy (ColorLib #727171 / #353535). */
+  --color-smoke: #727171;
+  --color-ink: #111111;
+  --color-body: #353535;
+  --color-mist: #f7f7f7;
+  --color-dark-bg: #25282c;
+
+  --font-sans: 'Public Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Public Sans', ui-sans-serif, system-ui, sans-serif;
+}
