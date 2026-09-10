@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Dialpad brand palette — recreated from the ColorLib "Callcenter"
+     design (css/main.css): primary #8490ff (blue-purple),
+     gradient #62bdfc → #8490ff. */
+
+  /* Brand — blue-purple primary (#8490ff). */
+  --color-brand: #8490ff;
+  --color-brand-dark: #6a7ae6;
+
+  /* Sky — light blue end of gradient (#62bdfc). */
+  --color-sky: #62bdfc;
+
+  /* Ink — dark headings (#222222). */
+  --color-ink: #222222;
+
+  /* Paper — light section background (#f9f9ff). */
+  --color-paper: #f9f9ff;
+
+  /* Mist — muted body text (#777777). */
+  --color-mist: #777777;
+
+  /* Charcoal — dark footer/overlay background (#222222). */
+  --color-charcoal: #222222;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand purple. */
+  --color-primary-50: #f0f1ff;
+  --color-primary-100: #e0e3ff;
+  --color-primary-200: #c1c7ff;
+  --color-primary-300: #a2abff;
+  --color-primary-400: #93a0ff;
+  --color-primary-500: #8490ff;
+  --color-primary-600: #6a7ae6;
+  --color-primary-700: #5064cc;
+  --color-primary-800: #3a4eb3;
+  --color-primary-900: #273a99;
+
+  /* Original font: "Poppins" (Google Fonts). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
