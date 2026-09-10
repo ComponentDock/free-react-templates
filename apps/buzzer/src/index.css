@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Buzzer brand palette — recreated from the ColorLib "Bravo" design
+     (assets/css/style.css): blue #4760FF primary buttons, coral/salmon
+     #FA8F77 accent, dark navy #140C40 headings/footer, light bg #f7f7f7. */
+
+  --color-brand: #4760ff;
+  --color-brand-dark: #3650e0;
+
+  /* Coral/salmon accent — section title accents, border buttons. */
+  --color-accent: #fa8f77;
+  --color-accent-dark: #f07a60;
+
+  /* Dark navy — headings, hero text, footer background. */
+  --color-ink: #140c40;
+  --color-ink-dark: #0d0830;
+
+  /* Paper — light section background. */
+  --color-paper: #f7f7f7;
+
+  /* Mist — body text. */
+  --color-mist: #635c5c;
+
+  /* Slate — secondary text. */
+  --color-slate: #7a8290;
+
+  /* Lavender — footer text. */
+  --color-lavender: #c2c5db;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the blue. */
+  --color-primary-50: #eef0ff;
+  --color-primary-100: #d9ddff;
+  --color-primary-200: #b3bbff;
+  --color-primary-300: #8d99ff;
+  --color-primary-400: #6777ff;
+  --color-primary-500: #4760ff;
+  --color-primary-600: #3650e0;
+  --color-primary-700: #2a40b8;
+  --color-primary-800: #1e3090;
+  --color-primary-900: #142068;
+
+  /* Original font: "Roboto" (Google Fonts). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
