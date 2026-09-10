@@ -1,0 +1,23 @@
+# WrenchCraft — Implementation Todo
+
+- [ ] Create app scaffold: `apps/wrenchcraft/` from template (copy simplest app, rename package)
+- [ ] Set up `src/index.css` with Poppins font import and Tailwind theme tokens (#064acb, #007bff, #f79f24)
+- [ ] Register workspace in root `package.json` and run `npm install`
+- [ ] Build Navbar component (sticky, hamburger mobile, links + CTA)
+- [ ] Build HeroSlider component (2 slides, overlay, auto-advance)
+- [ ] Build IntroBar component (blue bg, icon, heading, button)
+- [ ] Build Services component (6 cards, lucide icons, "Read more" links)
+- [ ] Build About component (split layout, video area, 3 tabs)
+- [ ] Build CounterStats component (4 animated numbers on scroll)
+- [ ] Build AppointmentForm component (dark bg image, form fields, submit)
+- [ ] Build Testimonials component (carousel, quote cards with avatars)
+- [ ] Build BlogGrid component (3 blog cards)
+- [ ] Build Pricing component (4 pricing cards with CTA)
+- [ ] Build ProjectsGallery component (4-column image grid with overlays)
+- [ ] Build Footer component (4 columns, social icons, Component Dock link)
+- [ ] Compose all sections in App.tsx
+- [ ] Write Vitest tests for every component (100% coverage)
+- [ ] Verify: typecheck, lint, test:coverage, build all pass
+- [ ] Set CNAME to wrenchcraft.free.componentdock.com
+- [ ] Set homepage in package.json
+- [ ] Commit and push
