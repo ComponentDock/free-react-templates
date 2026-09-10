@@ -29,176 +29,139 @@ Recreation of ColorLib's "Cakes" template for a bakery / cake-shop website.
 | Section padding      | `110px` top/bottom                                    | `.section-padding40`                                                  |
 | Card border-radius   | `0 0 60px 0`                                          | Bottom-right rounded corners on product cards                         |
 
-## Sections (from preview DOM analysis)
+## Requirements
 
-### 1. Header / Navbar
+### Requirement: Navigation bar
 
-- Sticky header with white background
-- Logo (left)
-- Navigation: Home, Product, About, Blog (dropdown), Contact
-- Right side: phone number link (`+10 (56) 745 3095`), "Order Online" button (pill, orange-border)
-- Mobile hamburger menu
+The system SHALL render a sticky white header with the site name "Batterly", section links (Home, Product, About, Blog, Contact), a phone number link, an "Order Online" pill button with orange border, and a hamburger toggle that opens a mobile menu on small screens.
 
-### 2. Hero Section
+#### Scenario: Desktop navigation displays all links
 
-- Full-width hero with background image (cake hero image)
-- Decorative watermark text "Delicious" in Lobster font, oversized, semi-transparent orange
-- Main heading: "Delicious Cake For Everyone"
-- Paragraph description
-- "Explore Menu" CTA button (pill, orange gradient)
-- Floating decorative shape at bottom-left
+- **WHEN** the page loads on a desktop viewport
+- **THEN** I SHALL see navigation links for Home, Product, About, Blog, and Contact
+- **AND** I SHALL see a phone number "+10 (56) 745 3095"
+- **AND** I SHALL see an "Order Online" button
 
-### 3. Popular Items (Product Carousel)
+#### Scenario: Mobile menu toggle
 
-- Section subtitle: "Most Popular"
-- Section heading: "Our Exclusive Cakes"
-- 3–4 product cards in horizontal carousel
-- Each card: product image, name, short description, price + "Order Now" button
-- Card style: warm pink background (#FFF5F2), bottom-right border-radius 60px
-- Products: Chocolate, Sweetheart, Blackforest, + extras in carousel
+- **WHEN** I click the hamburger menu button
+- **THEN** the mobile navigation menu SHALL become visible
+- **AND** the button SHALL change to a close icon
 
-### 4. About Section
+#### Scenario: Mobile menu closes on link click
 
-- Split layout: image (left 6 cols) + text (right 5 cols)
-- Subtitle: "Fresh & Delicious"
-- Heading: "A Simple Way to Eating Delicious"
-- Paragraph text
-- "Our Story" CTA button (pill, orange)
+- **WHEN** I open the mobile menu and click a navigation link
+- **THEN** the mobile menu SHALL close
 
-### 5. Services / Features
+### Requirement: Hero section
 
-- Section subtitle: "Our Features"
-- Section heading: "Quality is Our First Priority"
-- 3 feature cards in a row (icon + title + description)
-- Note: original has "Pet Boarding" placeholder text (likely copy-paste artifact from another template) — recreate with bakery-relevant copy
-- Decorative floating shape
+The system SHALL render a hero section with a decorative "Delicious" watermark text in Lobster font, the heading "Delicious Cake For Everyone", a description paragraph, an "Explore Menu" CTA button with orange gradient, and a hero image.
 
-### 6. Video Section
+#### Scenario: Hero displays heading and CTA
 
-- Full-width section with dark background image
-- Centered play button (YouTube popup link)
-- Minimal content — just the video trigger
+- **WHEN** the page loads
+- **THEN** I SHALL see the heading "Delicious Cake For Everyone"
+- **AND** I SHALL see an "Explore Menu" button
 
-### 7. Testimonials
+#### Scenario: Hero has decorative watermark
 
-- Section subtitle: "Testimonial"
-- Section heading: "What Customers Say"
-- Carousel of testimonial cards
-- Each card: quote text, author avatar, author name, role/title
+- **WHEN** the page loads
+- **THEN** I SHALL see the decorative text "Delicious" styled with a cursive font
 
-### 8. Instagram Feed
+### Requirement: Popular items section
 
-- Full-width horizontal carousel of Instagram-style images
-- Dark overlay on hover with Instagram icon
-- Auto-scrolling
+The system SHALL render a product section with the subtitle "Most Popular", the heading "Our Exclusive Cakes", and at least 3 product cards each showing a cake image, name, description, price, and "Order Now" button.
 
-### 9. Footer
+#### Scenario: Product cards display cake information
 
-- Warm cream background (#FFF7F3)
-- 4-column layout:
-  - Col 1: Logo + description paragraph + social media icons (Twitter, Facebook, LinkedIn, Pinterest)
-  - Col 2: "Quick Links" — Home, About, Services, Blog, Contact
-  - Col 3: Cake varieties list (Blackforest, etc.)
-  - Col 4: "Contact Us" — address, phone number
-- Footer bottom: copyright text with heart icon
+- **WHEN** the page loads
+- **THEN** I SHALL see at least 3 product cards
+- **AND** each card SHALL show a cake name, description, price, and order button
 
-## Gherkin requirements
+### Requirement: About section
 
-### Feature: Batterly — Bakery Cake Shop Template
+The system SHALL render a split-layout about section with an image on the left, the subtitle "Fresh & Delicious", the heading "A Simple Way to Eating Delicious", a description paragraph, and an "Our Story" CTA button.
 
-```gherkin
-Feature: Batterly bakery template
-  As a visitor to the Batterly bakery website
-  I want to browse cakes, learn about the bakery, and contact them
-  So that I can order cakes or visit the bakery
+#### Scenario: About section shows bakery story
 
-  Background:
-    Given the Batterly template is loaded
-    And the browser is at the root URL
+- **WHEN** the page loads
+- **THEN** I SHALL see the heading "A Simple Way to Eating Delicious"
+- **AND** I SHALL see an "Our Story" button
+- **AND** I SHALL see a bakery image
 
-  # --- Header ---
-  Scenario: Navbar displays navigation links
-    Then I should see a navigation bar
-    And I should see links for "Home", "Product", "About", "Blog", "Contact"
-    And the navigation should be sticky on scroll
+### Requirement: Services / features section
 
-  Scenario: Header shows contact CTA
-    Then I should see a phone number link
-    And I should see an "Order Online" button
+The system SHALL render a features section with the subtitle "Our Features", the heading "Quality is Our First Priority", and 3 feature cards with icons, titles, and descriptions.
 
-  # --- Hero ---
-  Scenario: Hero section displays main heading
-    Then I should see a hero section
-    And I should see the heading "Delicious Cake For Everyone"
-    And I should see an "Explore Menu" button
+#### Scenario: Features section displays bakery services
 
-  Scenario: Hero has decorative watermark
-    Then I should see the decorative text "Delicious"
-    And it should use a cursive/script font style
+- **WHEN** the page loads
+- **THEN** I SHALL see at least 3 feature cards with icons and descriptions
+- **AND** each card SHALL have a title and description text
 
-  # --- Popular Items ---
-  Scenario: Product cards display cake information
-    Then I should see a section with heading "Our Exclusive Cakes"
-    And I should see at least 3 product cards
-    And each card should show a cake name, description, price, and order button
+### Requirement: Video section
 
-  # --- About ---
-  Scenario: About section shows bakery story
-    Then I should see an about section with a split layout
-    And I should see a heading "A Simple Way to Eating Delicious"
-    And I should see an "Our Story" button
+The system SHALL render a full-width dark video section with a background image and a centered play button overlay.
 
-  # --- Services ---
-  Scenario: Features section displays bakery services
-    Then I should see a section with heading "Quality is Our First Priority"
-    And I should see at least 3 feature cards with icons and descriptions
+#### Scenario: Video section has play button
 
-  # --- Video ---
-  Scenario: Video section has play button
-    Then I should see a video section with a play button overlay
+- **WHEN** the page loads
+- **THEN** I SHALL see a play button in the video section
+- **AND** the button SHALL be clickable
 
-  # --- Testimonials ---
-  Scenario: Testimonials show customer reviews
-    Then I should see a section with heading "What Customers Say"
-    And I should see at least 2 testimonial cards with quotes
-    And each card should show an author name and role
+### Requirement: Testimonials section
 
-  # --- Instagram ---
-  Scenario: Instagram feed displays images
-    Then I should see an Instagram gallery section
-    And I should see multiple image tiles in a carousel
+The system SHALL render a testimonials section with the subtitle "Testimonial", the heading "What Customers Say", and at least 2 testimonial cards each with a star rating, quote, author avatar, name, and role.
 
-  # --- Footer ---
-  Scenario: Footer shows site information
-    Then I should see a footer with 4 columns
-    And I should see a logo and social media links
-    And I should see quick navigation links
-    And I should see contact information
+#### Scenario: Testimonials show customer reviews
 
-  Scenario: Footer has Component Dock attribution
-    Then I should see a footer link to "https://www.componentdock.com/"
-    And it should be labeled "Component Dock"
+- **WHEN** the page loads
+- **THEN** I SHALL see at least 2 testimonial cards
+- **AND** each card SHALL show a quote, author name, and role
 
-  # --- Accessibility ---
-  Scenario: Page is accessible
-    Then all images should have alt text
-    And all interactive elements should be keyboard-focusable
-    And the page should use semantic HTML elements
-```
+### Requirement: Instagram feed section
 
-## Verification checklist
+The system SHALL render a full-width Instagram gallery section with multiple image tiles and a hover overlay.
 
-- [ ] All sections present in DOM order matching preview
-- [ ] Brand color #F04506 used consistently for accents, buttons, links
-- [ ] Three fonts loaded: DM Sans (body), Quicksand (headings), Lobster (decorative)
-- [ ] Pill-shaped buttons with orange gradient and drop shadow
-- [ ] Product cards with warm pink background and bottom-right border-radius
-- [ ] Hero has background image + decorative watermark
-- [ ] Testimonial carousel with avatars
-- [ ] Instagram image feed with hover overlay
-- [ ] Footer with 4 columns + Component Dock link
-- [ ] No ColorLib references in app code (only in this spec)
-- [ ] Placeholder images from picsum.photos with deterministic seeds
-- [ ] Google Fonts loaded via index.html link tags
-- [ ] Responsive layout (mobile hamburger menu, stacked columns)
-- [ ] Semantic HTML (header, main, section, footer, nav)
+#### Scenario: Instagram feed displays images
+
+- **WHEN** the page loads
+- **THEN** I SHALL see multiple image tiles in the Instagram section
+- **AND** all images SHALL have alt text
+
+### Requirement: Footer
+
+The system SHALL render a 4-column footer with a warm cream background containing a logo and description, social media icons, quick navigation links, cake variety links, contact information, a copyright line, and a link to Component Dock.
+
+#### Scenario: Footer shows site information
+
+- **WHEN** the page loads
+- **THEN** I SHALL see a footer with 4 columns
+- **AND** I SHALL see quick navigation links
+- **AND** I SHALL see contact information
+
+#### Scenario: Footer has Component Dock attribution
+
+- **WHEN** I scroll to the footer
+- **THEN** I SHALL see a link to "https://www.componentdock.com/"
+- **AND** it SHALL be labeled "Component Dock"
+
+### Requirement: Accessibility
+
+The system SHALL use semantic HTML elements and ensure all images have alt text and all interactive elements are keyboard-focusable.
+
+#### Scenario: Page is accessible
+
+- **WHEN** the page loads
+- **THEN** all images SHALL have alt text
+- **AND** all interactive elements SHALL be keyboard-focusable
+- **AND** the page SHALL use semantic HTML elements (header, main, section, footer, nav)
+
+### Requirement: No ColorLib references in app code
+
+The system SHALL NOT contain any references to ColorLib in application source files, comments, or data. Provenance lives only in the spec and TEMPLATES.md.
+
+#### Scenario: Clean source code
+
+- **WHEN** I inspect any file in apps/batterly/
+- **THEN** I SHALL NOT find any mention of "colorlib" or "ColorLib"
