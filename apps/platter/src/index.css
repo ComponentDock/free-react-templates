@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-50: #faf5f0;
+  --color-brand-100: #f0e4d5;
+  --color-brand-200: #e2cab0;
+  --color-brand-300: #d4b08b;
+  --color-brand-400: #c9956b;
+  --color-brand-500: #b87a4a;
+  --color-brand-600: #9a6340;
+  --color-brand-700: #7c4e34;
+  --color-brand-800: #5e3a28;
+  --color-brand-900: #40261c;
+  --color-brand-950: #221310;
+
+  --color-surface-50: #f8f8fa;
+  --color-surface-100: #f0f0f3;
+  --color-surface-200: #e0e0e6;
+  --color-surface-300: #c8c8d1;
+  --color-surface-400: #a0a0ad;
+  --color-surface-500: #787889;
+  --color-surface-600: #5a5a6b;
+  --color-surface-700: #42424f;
+  --color-surface-800: #2c2c38;
+  --color-surface-900: #1a1a2e;
+  --color-surface-950: #0f0f1e;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
