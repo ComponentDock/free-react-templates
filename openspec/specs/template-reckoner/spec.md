@@ -57,124 +57,160 @@ Tailwind CSS 4 + TypeScript.
 
 ## Design tokens (screenshot-derived)
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Primary brand color | `#3a5c9f` (muted dark blue) | Buttons, logo circle, active nav link, social icons, arrow bullets |
-| Body text color | `#333333` (dark neutral grey) | Paragraphs, list items |
-| Label/muted text | `#666666` (medium grey) | Section labels like "ABOUT US", small contact text |
-| Hero text color | `#ffffff` (white) | Heading and subtext over photo background |
-| Background (default) | `#ffffff` (white) | Nav bar, sections, overall page |
-| Font family (headings) | `Montserrat` or `Raleway` | Bold, geometric sans-serif — authoritative financial feel |
-| Font family (body) | `Open Sans` or `Roboto` | Regular weight, highly readable sans-serif |
-| Button shape | Rounded rectangle (`border-radius: ~4px`) | Dark blue fill, white uppercase text |
-| Social icons | Circular filled buttons | Same primary blue `#3a5c9f`, white icons inside |
-| Section backgrounds | White (default) | Hero uses full-bleed photo background |
+| Token                  | Value                                     | Notes                                                              |
+| ---------------------- | ----------------------------------------- | ------------------------------------------------------------------ |
+| Primary brand color    | `#3a5c9f` (muted dark blue)               | Buttons, logo circle, active nav link, social icons, arrow bullets |
+| Body text color        | `#333333` (dark neutral grey)             | Paragraphs, list items                                             |
+| Label/muted text       | `#666666` (medium grey)                   | Section labels like "ABOUT US", small contact text                 |
+| Hero text color        | `#ffffff` (white)                         | Heading and subtext over photo background                          |
+| Background (default)   | `#ffffff` (white)                         | Nav bar, sections, overall page                                    |
+| Font family (headings) | `Montserrat` or `Raleway`                 | Bold, geometric sans-serif — authoritative financial feel          |
+| Font family (body)     | `Open Sans` or `Roboto`                   | Regular weight, highly readable sans-serif                         |
+| Button shape           | Rounded rectangle (`border-radius: ~4px`) | Dark blue fill, white uppercase text                               |
+| Social icons           | Circular filled buttons                   | Same primary blue `#3a5c9f`, white icons inside                    |
+| Section backgrounds    | White (default)                           | Hero uses full-bleed photo background                              |
 
-## Requirements (Gherkin)
+## Requirements
 
-### Feature: Navbar
+### Requirement: Contact sub-bar
 
-Scenario: Contact sub-bar displays contact info
-  Given the user visits the Reckoner homepage
-  Then a thin white top bar is visible
-  And it displays a phone number with a phone icon
-  And it displays an email address with an envelope icon
-  And social media icons (Facebook, Twitter, LinkedIn) appear on the right
+The system SHALL render a thin white top bar displaying contact information
+and social media icons.
 
-Scenario: Main navigation bar renders correctly
-  Given the user visits the Reckoner homepage
-  Then a white full-width navigation bar is visible below the contact bar
-  And the logo shows a blue circle with a dollar sign and "Reckoner" text
-  And navigation links include "Home", "About", "Services", "Blog", "Contact"
-  And the "Home" link is highlighted in the primary blue color
+#### Scenario: Contact sub-bar displays contact info
 
-Scenario: Services nav link shows dropdown indicator
-  Given the user visits the Reckoner homepage
-  Then the "Services" navigation link has a dropdown arrow indicator
+- **GIVEN** the user visits the Reckoner homepage
+- **WHEN** the page loads
+- **THEN** a thin white top bar is visible
+- **AND** it displays a phone number with a phone icon
+- **AND** it displays an email address with an envelope icon
+- **AND** social media icons (Facebook, Twitter, LinkedIn) appear on the right
 
-### Feature: Hero Section
+### Requirement: Navigation bar
 
-Scenario: Hero displays with background image
-  Given the user visits the Reckoner homepage
-  Then a full-width hero section is visible
-  And it has a photographic background of an office/desk scene
-  And the heading "Bookkeeping Consulting Agency" is displayed in white
-  And a subtitle/description text appears below the heading in white
-  And a "GET STARTED" call-to-action button is centered below the text
+The system SHALL render a white full-width navigation bar with logo, nav
+links, and social media icon buttons.
 
-Scenario: Hero CTA button styling
-  Given the hero section is visible
-  Then the CTA button has a dark blue (`#3a5c9f`) background
-  And the button text is white and uppercase
-  And the button has rounded corners
+#### Scenario: Main navigation bar renders correctly
 
-### Feature: About Us Section
+- **GIVEN** the user visits the Reckoner homepage
+- **WHEN** the page loads
+- **THEN** a white full-width navigation bar is visible below the contact bar
+- **AND** the logo shows a blue circle with a dollar sign and "Reckoner" text
+- **AND** navigation links include "Home", "About", "Services", "Blog", "Contact"
+- **AND** the "Home" link is highlighted in the primary blue color
 
-Scenario: About Us section layout
-  Given the user scrolls to the About Us section
-  Then it has a two-column layout
-  And the left column displays an image of a desk/calculator scene
-  And the right column has an "ABOUT US" label in grey uppercase text
+#### Scenario: Services nav link shows dropdown indicator
 
-Scenario: About Us content
-  Given the user reads the About Us section
-  Then a heading reads "Mindful Planning of Monetary Spending and Saving"
-  And body paragraphs provide descriptive text about bookkeeping services
-  And four bullet-point items are arranged in a 2×2 grid
-  And each bullet item has a blue right-pointing arrow icon
+- **GIVEN** the user visits the Reckoner homepage
+- **WHEN** the user looks at the Services navigation link
+- **THEN** the "Services" navigation link has a dropdown arrow indicator
 
-### Feature: Services Section
+### Requirement: Hero section
 
-Scenario: Services section displays service cards
-  Given the user scrolls to the Services section
-  Then a heading introduces the services offered
-  And at least three service cards are displayed in a row
-  And each card has an icon, a title, and a brief description
+The system SHALL render a full-width hero section with a photographic
+background, white heading, subtitle, and a dark blue CTA button.
 
-### Feature: Why Choose Us / Counters Section
+#### Scenario: Hero displays with background image
 
-Scenario: Stats/counters section is visible
-  Given the user scrolls to the counters section
-  Then numerical statistics are displayed
-  And each stat has a count number and a descriptive label
+- **GIVEN** the user visits the Reckoner homepage
+- **WHEN** the hero section is displayed
+- **THEN** a full-width hero section is visible
+- **AND** it has a photographic background of an office/desk scene
+- **AND** the heading "Bookkeeping Consulting Agency" is displayed in white
+- **AND** a subtitle/description text appears below the heading in white
+- **AND** a "GET STARTED" call-to-action button is centered below the text
 
-### Feature: Testimonials Section
+#### Scenario: Hero CTA button styling
 
-Scenario: Testimonials section displays reviews
-  Given the user scrolls to the Testimonials section
-  Then at least one testimonial quote is displayed
-  And each testimonial includes a quote, author name, and optional avatar
+- **GIVEN** the hero section is visible
+- **WHEN** the user looks at the CTA button
+- **THEN** the CTA button has a dark blue (`#3a5c9f`) background
+- **AND** the button text is white and uppercase
+- **AND** the button has rounded corners
 
-### Feature: Newsletter / CTA Section
+### Requirement: About Us section
 
-Scenario: Newsletter signup section
-  Given the user scrolls to the newsletter section
-  Then a heading invites the user to subscribe
-  And an email input field is provided
-  And a submit button is displayed
+The system SHALL render a two-column About Us section with an image on the
+left and content on the right.
 
-### Feature: Footer
+#### Scenario: About Us section layout
 
-Scenario: Footer content and links
-  Given the user scrolls to the bottom of the page
-  Then the footer contains site navigation links
-  And social media icon links are present
-  And a copyright line is displayed
-  And a "Made with Component Dock" link pointing to
+- **GIVEN** the user scrolls to the About Us section
+- **WHEN** the section is displayed
+- **THEN** it has a two-column layout
+- **AND** the left column displays an image of a desk/calculator scene
+- **AND** the right column has an "ABOUT US" label in grey uppercase text
+
+#### Scenario: About Us content
+
+- **GIVEN** the user reads the About Us section
+- **WHEN** the content is displayed
+- **THEN** a heading reads "Mindful Planning of Monetary Spending and Saving"
+- **AND** body paragraphs provide descriptive text about bookkeeping services
+- **AND** four bullet-point items are arranged in a 2×2 grid
+- **AND** each bullet item has a blue right-pointing arrow icon
+
+### Requirement: Services section
+
+The system SHALL render a Services section with multiple service cards
+displaying icons, titles, and descriptions.
+
+#### Scenario: Services section displays service cards
+
+- **GIVEN** the user scrolls to the Services section
+- **WHEN** the section is displayed
+- **THEN** a heading introduces the services offered
+- **AND** at least three service cards are displayed in a row
+- **AND** each card has an icon, a title, and a brief description
+
+### Requirement: Counters section
+
+The system SHALL render a Counters section displaying numerical statistics.
+
+#### Scenario: Stats/counters section is visible
+
+- **GIVEN** the user scrolls to the counters section
+- **WHEN** the section is displayed
+- **THEN** numerical statistics are displayed
+- **AND** each stat has a count number and a descriptive label
+
+### Requirement: Testimonials section
+
+The system SHALL render a Testimonials section with quote cards including
+author information.
+
+#### Scenario: Testimonials section displays reviews
+
+- **GIVEN** the user scrolls to the Testimonials section
+- **WHEN** the section is displayed
+- **THEN** at least one testimonial quote is displayed
+- **AND** each testimonial includes a quote, author name, and optional avatar
+
+### Requirement: Newsletter section
+
+The system SHALL render a Newsletter section with an email input and
+submit button.
+
+#### Scenario: Newsletter signup section
+
+- **GIVEN** the user scrolls to the newsletter section
+- **WHEN** the section is displayed
+- **THEN** a heading invites the user to subscribe
+- **AND** an email input field is provided
+- **AND** a submit button is displayed
+
+### Requirement: Footer
+
+The system SHALL render a footer with navigation links, social icons,
+copyright, and a Component Dock attribution link.
+
+#### Scenario: Footer content and links
+
+- **GIVEN** the user scrolls to the bottom of the page
+- **WHEN** the footer is displayed
+- **THEN** the footer contains site navigation links
+- **AND** social media icon links are present
+- **AND** a copyright line is displayed
+- **AND** a "Made with Component Dock" link pointing to
   `https://www.componentdock.com/` is present
-
-## Verification checklist
-
-- [ ] Navbar: contact sub-bar renders with phone + email + social icons
-- [ ] Navbar: main nav bar has logo, 5 links, dropdown arrow on Services
-- [ ] Hero: full-width photo background, white heading, subtext, blue CTA
-- [ ] About Us: two-column layout with image left, text + bullets right
-- [ ] About Us: "ABOUT US" label, heading, paragraphs, 2×2 bullet grid
-- [ ] Services: cards with icons, titles, descriptions
-- [ ] Counters: numerical stats displayed
-- [ ] Testimonials: quote cards with author info
-- [ ] Newsletter: email input + submit button
-- [ ] Footer: nav links, social icons, copyright, Component Dock link
-- [ ] All design tokens match screenshot reference
-- [ ] No ColorLib references in app code (provenance only in spec/PR)
-- [ ] Footer links to https://www.componentdock.com/
