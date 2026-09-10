@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Musecraft brand palette — navy #221C5A, green #32DB8A, yellow #FFBA42, pink #E64B77. */
+  --color-navy: #221c5a;
+  --color-navy-light: #2a2468;
+  --color-mint: #32db8a;
+  --color-mint-dark: #2bc47a;
+  --color-amber: #ffba42;
+  --color-amber-dark: #e3a436;
+  --color-rose: #e64b77;
+  --color-rose-dark: #d43d65;
+  --color-rose-light: #ee87a4;
+  --color-muted: #5b5881;
+
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'PT Serif', Georgia, serif;
+}
