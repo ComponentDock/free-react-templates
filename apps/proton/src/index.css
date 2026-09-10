@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Proton brand palette — recreated from the ColorLib "Atomic" design
+     (primary blue #0389FF). */
+  --color-proton-50: #e6f2ff;
+  --color-proton-100: #b3d9ff;
+  --color-proton-200: #80bfff;
+  --color-proton-300: #4da6ff;
+  --color-proton-400: #1a8cff;
+  --color-proton-500: #0389ff;
+  --color-proton-600: #0075dc;
+  --color-proton-700: #005bb3;
+  --color-proton-800: #00428a;
+  --color-proton-900: #002961;
+
+  /* Work Sans — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
