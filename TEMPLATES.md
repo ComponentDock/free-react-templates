@@ -902,7 +902,7 @@
 - [x] **Avo** — [colorlib](https://colorlib.com/wp/template/avo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/avo-free-templatel.jpg) · [minima](https://free-react-templates-minima.surge.sh)
 - [x] **Bakery** — [colorlib](https://colorlib.com/wp/template/bakery/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bakery-free-template.jpg) · [loaf](https://free-react-templates-loaf.surge.sh)
 - [x] **Balay** — [colorlib](https://colorlib.com/wp/template/balay/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/balay-free-template.jpg) · [timber](https://free-react-templates-timber.surge.sh)
-- [~] **Banker** — [colorlib](https://colorlib.com/wp/template/banker/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/banker-free-template.jpg)
+- [x] **Banker** — [colorlib](https://colorlib.com/wp/template/banker/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/banker-free-template.jpg) · [bankcraft](https://bankcraft.free.componentdock.com)
 - [x] **Barberz** — [colorlib](https://colorlib.com/wp/template/barberz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barberz-free-template.jpg) · [shear](https://shear.free.componentdock.com)
 - [ ] **Bato** — [colorlib](https://colorlib.com/wp/template/bato/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bato-free-template.jpg)
 - [ ] **Bbs** — [colorlib](https://colorlib.com/wp/template/bbs/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bbs-free-small-company-website-template.jpg)
