@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* DriveGo brand palette — #0779e4 blue for primary CTAs and accents. */
+  --color-brand: #0779e4;
+  --color-brand-dark: #0565c0;
+
+  /* Ink — headings (#000000 from the original). */
+  --color-ink: #000000;
+
+  /* Mist — muted body text (#6c757d from the original). */
+  --color-mist: #6c757d;
+
+  /* Paper — light section backgrounds (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Coal — dark footer / overlays (#1b1b1b from the original). */
+  --color-coal: #1b1b1b;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand blue. */
+  --color-primary-50: #e8f4fd;
+  --color-primary-100: #c6e4fa;
+  --color-primary-200: #96d0f5;
+  --color-primary-300: #5eb8ee;
+  --color-primary-400: #2da0e8;
+  --color-primary-500: #0779e4;
+  --color-primary-600: #0565c0;
+  --color-primary-700: #04529a;
+  --color-primary-800: #033f75;
+  --color-primary-900: #022d52;
+
+  /* Font: Roboto from Google Fonts (loaded via index.html). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
