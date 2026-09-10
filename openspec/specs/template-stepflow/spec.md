@@ -1,176 +1,125 @@
-# Template: Stepflow (3-Step Form Wizard)
+# Template: StepFlow (Multi-step Form Wizard)
 
 ## Purpose
 
-Stepflow is a single-page three-step FORM WIZARD in the
-free-react-templates monorepo. It is an original React recreation of the
-ColorLib "Colorlib Wizard 28" free template (source:
-https://colorlib.com/wp/template/colorlib-wizard-28/,
-preview: https://colorlib.com/etc/bwiz/colorlib-wizard-28/index.html),
-built under a DIFFERENT name (**Stepflow**), with the monorepo stack:
-Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Recreation of the ColorLib "Colorlib Wizard 5" template as a React component.
+The original is a multi-step checkout/billing form wizard with a split-column
+layout — decorative image on the left, a white card form with a step progress
+indicator on the right. The template demonstrates a polished multi-step form UX.
 
-The original is a Bootstrap-wizard jQuery form (jQuery + jquery.validate +
-bootstrap-wizard): a centered 690px white CARD (5px radius, soft shadow
-`0px 8px 20px rgba(0,0,0,0.15)`) on a FULL-SCREEN VIVID GRADIENT
-BACKGROUND (`linear-gradient(316deg, #4158d0 0%, #c850c0 50%, #ffcc70
-100%)`). The card contains a "Form Wizard" heading (positioned above
-the card at `left:-109px; top:-49px`, Montserrat bold uppercase 55px,
-white, 60% opacity), a GREEN progress bar (`#36c240`, rounded pill
-17.5px radius, on `#f5f5f5` track with `#e5e5e5` border), and three
-tabs with numbered step indicators (hidden via CSS
-`.nav-tab { height:0; visibility:hidden }` — visually absent).
+**Source:** `https://colorlib.com/wp/template/colorlib-wizard-5/`
+**Preview:** `https://preview.colorlib.com/theme/colorlib-wizard-5/` (404 — preview unavailable; analysis based on screenshot)
+**Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 
-**WHAT MAKES STEPFLOW DISTINCT (signature behaviors):**
+## Design Tokens (from screenshot analysis)
 
-1. **Vivid tri-color gradient background + white card.** The page is a
-   full-viewport gradient `#4158d0 → #c850c0 → #ffcc70` at 316 degrees.
-   The card sits centered on this gradient with a 5px radius and a
-   pronounced drop shadow. No header, no navbar — just the gradient + card.
-2. **Progress bar at 40% start, rounded pill shape.** The `.progress`
-   container is 35px tall, border-radius 17.5px, `#f5f5f5` background
-   with `#e5e5e5` 1px border. The `.progress-bar` fill is `#36c240`
-   (green), starts at 40% width on step 1, transitions with 0.6s ease.
-   The percentage text ("40%") is white bold 15px centered inside.
-3. **Three-step form with hidden tab navigation.** Steps are:
-   - Step 1: Full name, Email, Phone number (required fields)
-   - Step 2: Building Number, Street, A Town, Zip code (optional address)
-   - Step 3: Card Holder Name, Card Number, CVC, Expiration (payment info)
-   The `.nav-tab` unordered list is hidden (`height:0; visibility:hidden`).
-   Step indicators (1, 1, 1) exist in the DOM but are invisible.
-4. **Green Next/Submit buttons, grey Back buttons.** Buttons are
-   border-radius 22.5px (pill), green `#36c240` background for
-   Next/Submit, grey `#999` for Back. Hover darkens to `#22ae2c` (green)
-   and `#666` (grey). Buttons are 14px Roboto font, white text.
-5. **Card heading positioned OUTSIDE the card.** The "Form Wizard" title
-   is absolutely positioned at `left:-109px; top:-49px` relative to the
-   card, so it floats above-left of the card container. It is 55px
-   Montserrat bold uppercase, white, 60% opacity. On mobile it repositions
-   to `left:0`.
-6. **Input fields with Roboto font, 3px border-radius.** Inputs are
-   `.input--style-1` with `border-radius:3px`, Roboto 14px, `#333` text,
-   `#999` placeholders. Focused inputs get a green `#36c240` border.
-   Card 3 has icon inputs (card number + CVC) with `zmdi` card icons.
+| Token | Value | Notes |
+|---|---|---|
+| Page background | `#F2E6DC` | Warm light beige/peach, solid flat fill |
+| Card background | `#FFFFFF` | White form card, subtle drop shadow |
+| Brand accent | `#F5C8AA` | Soft peach/coral — active progress bar + "Next" button |
+| Inactive indicator | `#D1D1D1` | Light gray inactive progress lines |
+| Text primary | `#333333` | Dark charcoal gray |
+| Input border | `#E0E0E0` | Light gray borders on form fields |
+| Font family | `Roboto` or similar clean sans-serif | Weights: 400, 500, 600, 700 |
+| Button shape | Rounded corners (subtle `border-radius ~4px`) | Rectangular with slight rounding |
+| Button text | Dark charcoal (`#333333`) | On peach background |
+| Form card | Elevated with subtle drop shadow | White card on beige background |
+| Progress bar | 4-step horizontal indicator | Active = peach, inactive = gray lines |
+| Decorative image | Lifestyle/product scene | Left column, split layout |
 
-## Design tokens (extracted from original CSS)
+## Section Structure
 
-| Token              | Value                                         |
-| ------------------ | --------------------------------------------- |
-| Background gradient | `linear-gradient(316deg, #4158d0, #c850c0, #ffcc70)` |
-| Card background    | `#fff`                                        |
-| Card border-radius | `5px`                                         |
-| Card shadow        | `0px 8px 20px rgba(0,0,0,0.15)`              |
-| Primary color (green) | `#36c240` (buttons, progress bar, input focus) |
-| Primary hover      | `#22ae2c`                                     |
-| Back button color  | `#999`                                        |
-| Back button hover  | `#666`                                        |
-| Progress track     | `#f5f5f5` bg, `#e5e5e5` border               |
-| Progress radius    | `17.5px` (pill)                               |
-| Button radius      | `22.5px` (pill)                               |
-| Input radius       | `3px`                                         |
-| Body font          | Roboto 14px, weight 400                        |
-| Heading font       | Montserrat, weight 700, uppercase              |
-| Title size         | 55px                                          |
-| Title position     | `left:-109px; top:-49px` (outside card)       |
-| Title color        | `#fff` at 60% opacity                         |
-| Input text color   | `#333`                                        |
-| Placeholder color  | `#999`                                        |
-| Focus border color | `#36c240`                                     |
+1. **Split-column layout** — full viewport height
+   - Left column (~45%): decorative placeholder image (lifestyle scene)
+   - Right column (~55%): white form card, vertically centered
+2. **Form card** containing:
+   - **Title:** "Billing Details" heading
+   - **Progress indicator:** 4 horizontal lines, first peach (active), rest gray
+   - **Form fields** (step 1 of 4):
+     - First Name / Last Name (side-by-side row)
+     - Company Name (full width)
+     - Country (dropdown/select, e.g. "Viet Nam" selected)
+     - Address — Street address + Apartment/suite/unit (optional) (two fields)
+     - Town / City (full width)
+   - **"Next →" button:** bottom-right, peach background, arrow icon
 
-## Gherkin requirements
+## Gherkin Requirements
 
-```gherkin
-Feature: Stepflow 3-Step Form Wizard
+### Feature: StepFlow multi-step checkout form
 
-  Background:
-    Given the user is on the Stepflow page
-    Then the page background is a tri-color gradient (#4158d0 → #c850c0 → #ffcc70)
-    And a centered white card is visible
+  Scenario: Page renders with split-column layout
+    Given the user loads the StepFlow page
+    Then a decorative image occupies the left column
+    And a white form card occupies the right column
+    And the page background is warm beige (#F2E6DC)
 
-  Scenario: Page loads with step 1 active and progress at 40%
-    Given the page has loaded
-    Then the progress bar shows "40%"
-    And the progress bar fill width is 40%
-    And the "Full name" input is visible
-    And the "Email" input is visible
-    And the "Phone number" input is visible
-    And a "Next" button is visible
+  Scenario: Progress indicator shows current step
+    Given the user is on step 1
+    Then four progress lines are visible
+    And the first line is peach-colored (#F5C8AA)
+    And the remaining lines are gray (#D1D1D1)
 
-  Scenario: Step 1 fields are displayed
-    Given the page has loaded
-    Then the card heading shows "Form Wizard"
-    And the heading is positioned above-left of the card
-    And step 1 contains three input groups
+  Scenario: Step 1 displays billing fields
+    Given the user is on step 1
+    Then the heading reads "Billing Details"
+    And fields are visible: First Name, Last Name, Company Name, Country, Street Address, Apartment (optional), Town/City
+    And a "Next" button with arrow is visible
 
-  Scenario: Navigate to step 2 via Next button
-    Given the page has loaded
-    When the user clicks "Next" on step 1
-    Then step 2 becomes active
-    And the "Building Number" input is visible
-    And the "Street" input is visible
-    And the "A Town" input is visible
-    And the "Zip code" input is visible
-    And a "back" button is visible
-    And a "Next" button is visible
+  Scenario: Required fields are marked
+    Given the user is on step 1
+    Then First Name, Last Name, Country, Street Address, and Town/City are marked required (*)
+    And Company Name and Apartment are optional
 
-  Scenario: Navigate back to step 1
+  Scenario: Next button advances to step 2
+    Given the user fills required fields on step 1
+    When the user clicks "Next"
+    Then the progress indicator advances to step 2
+    And step 2 fields are displayed
+
+  Scenario: Next button validates before advancing
+    Given required fields are empty on step 1
+    When the user clicks "Next"
+    Then the form shows validation errors
+    And the progress indicator stays on step 1
+
+  Scenario: Previous button returns to prior step
     Given the user is on step 2
-    When the user clicks "back"
-    Then step 1 becomes active
-    And the "Full name" input is visible
+    When the user clicks "Previous" or "Back"
+    Then the progress indicator returns to step 1
+    And step 1 fields are displayed with previous values
 
-  Scenario: Navigate to step 3 via Next button
-    Given the user is on step 2
-    When the user clicks "Next" on step 2
-    Then step 3 becomes active
-    And the "Card Holder Name" input is visible
-    And the "Card Number" input is visible with a card icon
-    And the "CVC" input is visible with a card icon
-    And the "Expiration" input is visible
-    And a "back" button is visible
-    And a "Submit" button is visible
+  Scenario: Country dropdown is interactive
+    Given the user is on step 1
+    When the user opens the Country dropdown
+    Then a list of countries is displayed
+    And the user can select a country
 
-  Scenario: Submit completes the form
-    Given the user is on step 3
-    When the user clicks "Submit"
-    Then the form is submitted
+  Scenario: Form card has subtle shadow
+    Given the user loads the StepFlow page
+    Then the form card has a subtle drop shadow separating it from the background
 
-  Scenario: Progress bar updates with steps
-    Given the page has loaded
-    When the user completes step 1
-    Then the progress bar width increases
-    When the user completes step 2
-    Then the progress bar width increases further
+  Scenario: Responsive layout on mobile
+    Given the user views StepFlow on a viewport width < 768px
+    Then the columns stack vertically
+    And the form card takes full width
 
-  Scenario: Responsive design
-    Given the user views the page on a mobile device
-    Then the card heading repositions to left:0
-    And the card remains centered
+## Verification Checklist
 
-  Scenario: Form validation on required fields
-    Given the page has loaded
-    When the user clicks "Next" without filling required fields
-    Then the form shows validation errors for required fields
-```
-
-## Verification checklist
-
-- [ ] Card is centered on the gradient background
-- [ ] Progress bar starts at 40% and updates with step navigation
-- [ ] Step 1 shows Full name, Email, Phone number inputs
-- [ ] Step 2 shows Building Number, Street, A Town, Zip code inputs
-- [ ] Step 3 shows Card Holder Name, Card Number, CVC, Expiration inputs
-- [ ] Card Number and CVC inputs show a card icon
-- [ ] Next button advances to next step
-- [ ] Back button returns to previous step
-- [ ] Submit button on step 3 completes the form
-- [ ] Heading "Form Wizard" is positioned outside the card (above-left)
-- [ ] Green color (#36c240) is used for buttons, progress bar, input focus
-- [ ] Buttons are pill-shaped (border-radius 22.5px)
-- [ ] Progress bar is pill-shaped (border-radius 17.5px)
+- [ ] Page background matches warm beige (#F2E6DC)
+- [ ] Split-column layout: image left (~45%), form card right (~55%)
+- [ ] Form card is white with subtle drop shadow
+- [ ] "Billing Details" heading rendered
+- [ ] 4-step progress indicator with active peach highlight
+- [ ] All 7 form fields present (First Name, Last Name, Company, Country, Address, Apartment, Town/City)
+- [ ] Required fields marked with asterisk
+- [ ] Country dropdown is functional
+- [ ] "Next →" button with arrow icon
+- [ ] Next button validates required fields before advancing
+- [ ] Step navigation (next/previous) works with state preservation
+- [ ] Progress indicator updates on step change
+- [ ] Responsive: stacks on mobile (< 768px)
 - [ ] Footer links to Component Dock
 - [ ] No ColorLib references in app code
-- [ ] Images use picsum.photos placeholder seeds
 - [ ] 100% test coverage
-- [ ] TypeCheck passes
-- [ ] Build passes
+- [ ] Specs validated with `npm run spec:validate`
