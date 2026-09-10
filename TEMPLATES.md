@@ -898,7 +898,7 @@
 - [x] **Auction** — [colorlib](https://colorlib.com/wp/template/auction/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/auction-free-template.jpg) · [bidcraft](https://bidcraft.free.componentdock.com)
 - [x] **Automotive** — [colorlib](https://colorlib.com/wp/template/automotive/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/automotive-free-template.jpg) · [veloce](https://veloce.free.componentdock.com)
 - [x] **Autorepair** — [colorlib](https://colorlib.com/wp/template/autorepair/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autorepair-free-template.jpg) · [fixcraft](https://fixcraft.free.componentdock.com)
-- [~] **Autoroad** — [colorlib](https://colorlib.com/wp/template/autoroad/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autoraod-free-template.jpg)
+- [x] **Autoroad** — [colorlib](https://colorlib.com/wp/template/autoroad/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autoraod-free-template.jpg) · [highway](https://free-react-templates-highway.surge.sh)
 - [x] **Avo** — [colorlib](https://colorlib.com/wp/template/avo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/avo-free-templatel.jpg) · [minima](https://free-react-templates-minima.surge.sh)
 - [x] **Bakery** — [colorlib](https://colorlib.com/wp/template/bakery/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bakery-free-template.jpg) · [loaf](https://free-react-templates-loaf.surge.sh)
 - [ ] **Balay** — [colorlib](https://colorlib.com/wp/template/balay/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/balay-free-template.jpg)
@@ -2949,7 +2949,7 @@
 ## Transportation (22)
 
 - [x] **Autorepair** — [colorlib](https://colorlib.com/wp/template/autorepair/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autorepair-free-template.jpg) · [fixcraft](https://fixcraft.free.componentdock.com)
-- [ ] **Autoroad** — [colorlib](https://colorlib.com/wp/template/autoroad/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autoraod-free-template.jpg)
+- [x] **Autoroad** — [colorlib](https://colorlib.com/wp/template/autoroad/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autoraod-free-template.jpg) · [highway](https://free-react-templates-highway.surge.sh)
 - [x] **Boxe** — [colorlib](https://colorlib.com/wp/template/boxe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boxe-free-template.jpg) · [cargoly](https://cargoly.free.componentdock.com)
 - [ ] **Car Rental** — [colorlib](https://colorlib.com/wp/template/car-rental/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carrental-free-template.jpg)
 - [x] **Carbook** — [colorlib](https://colorlib.com/wp/template/carbook/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carbook-free-template.jpg) · [rently](https://rently.free.componentdock.com)
