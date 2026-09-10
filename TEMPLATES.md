@@ -918,7 +918,7 @@
 - [x] **Bravo** — [colorlib](https://colorlib.com/wp/template/bravo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bravo-free-template.jpg) · [buzzer](https://buzzer.free.componentdock.com)
 - [x] **Breed2** — [colorlib](https://colorlib.com/wp/template/breed2/) · [brushmark](https://brushmark.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/breed2-free-template.jpg)
 - [x] **Buri** — [colorlib](https://colorlib.com/wp/template/buri/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buri-free-template.jpg) · [ravida](https://ravida.free.componentdock.com)
-- [~] **Cakes** — [colorlib](https://colorlib.com/wp/template/cakes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cakes-colorlib-template.jpg)
+- [x] **Cakes** — [colorlib](https://colorlib.com/wp/template/cakes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cakes-colorlib-template.jpg) · [batterly](https://batterly.free.componentdock.com)
 - [ ] **Callcenter** — [colorlib](https://colorlib.com/wp/template/callcenter/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/callcenter-free-call-center-website-template.jpg)
 - [x] **Camille** — [colorlib](https://colorlib.com/wp/template/camille/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/camille-free-template.jpg) · [peony](https://peony.free.componentdock.com)
 - [ ] **Car Rental** — [colorlib](https://colorlib.com/wp/template/car-rental/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carrental-free-template.jpg)
