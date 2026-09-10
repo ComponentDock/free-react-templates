@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Crux brand palette — recreated from the ColorLib "Bbs" design
+     (css/main.css): purple #7034db primary, gradient pink-to-yellow
+     #f58e9a → #fbe44c for CTA buttons, light bg #f9f9ff. */
+  --color-brand: #7034db;
+  --color-brand-dark: #5a2ab5;
+
+  /* Light section background (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Dark text (#222222 from the original). */
+  --color-ink: #222222;
+
+  /* Mist — muted body text (#777777 from the original). */
+  --color-mist: #777777;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the purple. */
+  --color-primary-50: #f3ecff;
+  --color-primary-100: #e5d5ff;
+  --color-primary-200: #c9aaff;
+  --color-primary-300: #a874ff;
+  --color-primary-400: #8f4df5;
+  --color-primary-500: #7034db;
+  --color-primary-600: #5a2ab5;
+  --color-primary-700: #44208f;
+  --color-primary-800: #2e1669;
+  --color-primary-900: #1a0d43;
+
+  /* Font: Poppins (from the original). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
