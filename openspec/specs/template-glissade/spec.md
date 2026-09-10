@@ -2,211 +2,221 @@
 
 ## Purpose
 
-Recreation of ColorLib "Bobsled" — a creative agency / digital studio website template.
+Glissade is a single-page creative agency landing template in the
+free-react-templates monorepo. It is an original React recreation of the
+ColorLib free "Bobsled" design, built under the monorepo stack: Vite +
+React 19 + Tailwind CSS 4 + TypeScript.
 
 - **Source slug:** `bobsled`
 - **ColorLib page:** https://colorlib.com/wp/template/bobsled/
 - **Preview URL:** https://preview.colorlib.com/theme/bobsled/
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/bobsled-creative-website-template.jpg
-- **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 - **Package:** `@free-react-templates/glissade`
 - **Surge target:** `glissade.free.componentdock.com`
 
-## Section order (from preview DOM)
+## Design reference (replication findings)
 
-1. **Navbar** — logo left, nav links (Home, Generic, Elements) right, hamburger on mobile
-2. **Hero** — full-width gradient background (#3e69fe → #4cd4e3), white headline + subtext + "Get Started" CTA button
-3. **Working Process** — centered title "Our Working Process", 4 steps horizontally (Researching → Wireframing → Prototyping → Final Design) with icon boxes and arrow connectors
-4. **Features** — gradient background (#3e69fe → #4cd43), centered title "Our Exclusive Features", 3 feature cards (Creative Design, Appropriate UX, Super Clean Code) with icon + description + button
-5. **Remarkable Works** — white background, centered title "Remarkable Works", 3 project cards with image, title "Vector Illustration", and "View Details" button; cards have box-shadow
-6. **Story** — background image with overlay, heading "From the part of beginning", descriptive text + "Read More" button
-7. **Newsletter / Subscription** — light gray (#f9f9ff) background, centered title "Subscribe for our Newsletter", email input + submit button
-8. **Contact Form** — gradient background (#3e69fe → #4cd43), centered white title "Keep in Touch" + subtitle, form with name/email/message fields and submit button
-9. **Footer Widgets** — light background, 3 columns: Address, Email Address, Phone Number
-10. **Footer bottom** — copyright text + social icon links (Facebook, Twitter, Dribbble, Behance)
+- **Original:** ColorLib "Bobsled" — free creative agency website template
+- **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/bobsled/`
+- **Section order (1:1):**
+  1. Navbar — logo left, nav links (Home, Generic, Elements) right, hamburger on mobile
+  2. Hero — full-width gradient background (#3e69fe → #4cd4e3), white headline + subtext + "Get Started" CTA button
+  3. Working Process — centered title "Our Working Process", 4 steps (Researching → Wireframing → Prototyping → Final Design) with icon boxes and arrow connectors
+  4. Features — gradient background (#3e69fe → #4cd4e3), centered title "Our Exclusive Features", 3 feature cards with icon + description + button
+  5. Remarkable Works — white background, centered title "Remarkable Works", 3 project cards with image, title, and "View Details" button; cards have box-shadow
+  6. Story — background image with overlay, heading "From the part of beginning", descriptive text + "Read More" button
+  7. Newsletter — light gray (#f9f9ff) background, centered title "Subscribe for our Newsletter", email input + submit button
+  8. Contact Form — gradient background (#3e69fe → #4cd4e3), centered white title "Keep in Touch" + subtitle, form with name/email/message fields and submit button
+  9. Footer Widgets — 3 columns: Address, Email Address, Phone Number
+  10. Footer Bottom — copyright text + social icon links (Facebook, Twitter, Dribbble, Behance) + Component Dock link
 
-## Design tokens (extracted from preview CSS)
+- **Design tokens:**
+  - Brand gradient: #3e69fe → #4cd4e3 (0deg bottom-to-top)
+  - Font: Poppins (weights 300, 500, 600)
+  - Button: border-radius 20px, transparent bg, white border, gradient on hover
+  - Card shadow: 0px 15px 50px rgba(0,0,0,0.1)
+  - Section padding: 100px 0
+  - Neutral text: #777777
+  - Dark text: #222222
+  - Light bg: #f9f9ff
+  - Border: #eee
 
-| Token                 | Value                                                | Usage                                           |
-| --------------------- | ---------------------------------------------------- | ----------------------------------------------- |
-| Brand gradient start  | `#3e69fe`                                            | Hero bg, Features bg, Contact bg, button hover  |
-| Brand gradient end    | `#4cd4e3`                                            | Hero bg, Features bg, Contact bg, button hover  |
-| Gradient direction    | 0deg (bottom-to-top)                                 | `.banner-area`, `.featured-area`, `.story-area` |
-| Font family           | `"Poppins", sans-serif`                              | Global body and headings                        |
-| Font weights          | 300, 500, 600                                        | Body (300), nav/buttons (500), headings (600)   |
-| Button border-radius  | `20px`                                               | `.primary-btn` rounded pill shape               |
-| Button style          | transparent bg, white border, gradient fill on hover | All CTA buttons                                 |
-| Section padding       | `100px 0`                                            | Most sections                                   |
-| Card shadow           | `0px 15px 50px 0px rgba(0,0,0,0.1)`                  | `.single-remark` cards                          |
-| Working process icons | Linearicons (lnr-*)                                  | Icon font for process steps                     |
-| Neutral text color    | `#777777`                                            | Body text                                       |
-| Dark text color       | `#222222`                                            | Headings on white backgrounds                   |
-| Light bg              | `#f9f9ff`                                            | Subscription/newsletter area                    |
-| White bg              | `#fff`                                               | Remarkable works, working process               |
-| Border color          | `#eee`                                               | Card borders, form inputs                       |
+## Requirements
 
-## Gherkin requirements
+### Requirement: Navbar
 
-### Navbar
+The system SHALL render a top navigation bar with the site name "Glissade",
+nav links (Home, Generic, Elements), and a mobile hamburger menu.
 
-```gherkin
-Feature: Navbar
-  Scenario: Logo and navigation links render
-    Given the page loads
-    Then a logo link is visible on the left
-    And navigation links "Home", "Generic", "Elements" are visible on the right
-    And on mobile a hamburger menu toggle is visible
+#### Scenario: Navbar content
 
-  Scenario: Mobile menu opens and closes
-    Given the viewport width is less than 768px
-    When the hamburger icon is clicked
-    Then the navigation menu expands with links
-    When the hamburger icon is clicked again
-    Then the navigation menu collapses
-```
+- **GIVEN** the Glissade page is rendered
+- **WHEN** the page loads
+- **THEN** the navbar SHALL show the site name "Glissade"
+- **AND** it SHALL show navigation links "Home", "Generic", and "Elements"
+- **AND** on mobile, a hamburger menu button SHALL be visible
 
-### Hero
+#### Scenario: Mobile menu toggle
 
-```gherkin
-Feature: Hero
-  Scenario: Hero renders with gradient background
-    Given the page loads
-    Then a full-width section with a blue-to-cyan gradient background is visible
-    And a headline in white uppercase text is displayed
-    And a descriptive paragraph in white text is displayed below
-    And a "Get Started" button with rounded pill shape is displayed
+- **GIVEN** the page is rendered on mobile viewport
+- **WHEN** the hamburger button is clicked
+- **THEN** the mobile navigation menu SHALL expand with links
+- **AND** clicking again SHALL collapse the menu
 
-  Scenario: Get Started button hover shows gradient fill
-    Given the page loads
-    When the "Get Started" button is hovered
-    Then the button border becomes transparent
-    And the gradient background fills the button
-```
+### Requirement: Hero
 
-### Working Process
+The system SHALL render a full-width hero section with a blue-to-cyan
+gradient background, a headline, a description paragraph, and a "Get
+Started" CTA button.
 
-```gherkin
-Feature: Working Process
-  Scenario: Four process steps render in order
-    Given the page loads
-    Then a section titled "Our Working Process" is visible
-    And 4 process steps are displayed: "1. Researching", "2. Wireframing", "3. Prototyping", "4. Final Design"
-    And each step has an icon above its label
-    And arrow connectors appear between steps
+#### Scenario: Hero content
 
-  Scenario: Steps are horizontally aligned
-    Given the page loads
-    Then all 4 steps are arranged in a horizontal row
-    And the section has a white background
-```
+- **GIVEN** the page is rendered
+- **WHEN** the hero section is displayed
+- **THEN** it SHALL show a gradient background from #3e69fe to #4cd4e3
+- **AND** it SHALL display a headline in white uppercase text
+- **AND** it SHALL show a "Get Started" pill-shaped button
 
-### Features
+### Requirement: Working Process
 
-```gherkin
-Feature: Features
-  Scenario: Three feature cards render on gradient background
-    Given the page loads
-    Then a section titled "Our Exclusive Features" is visible
-    And the section has a blue-to-cyan gradient background
-    And 3 feature cards are displayed: "Creative Design", "Appropriate UX", "Super Clean Code"
-    And each card has an icon, description text, and a button
-    And all text on the gradient background is white
+The system SHALL render a "Our Working Process" section with four
+process steps displayed horizontally with icons and arrow connectors.
 
-  Scenario: Feature buttons are rounded
-    Given the page loads
-    Then each feature card has a rounded pill-shaped button
-```
+#### Scenario: Process steps
 
-### Remarkable Works
+- **GIVEN** the page is rendered
+- **WHEN** the working process section is displayed
+- **THEN** the heading "Our Working Process" SHALL be visible
+- **AND** 4 steps SHALL be displayed: "1. Researching", "2. Wireframing", "3. Prototyping", "4. Final Design"
+- **AND** each step SHALL have an icon above its label
 
-```gherkin
-Feature: Remarkable Works
-  Scenario: Three project cards render
-    Given the page loads
-    Then a section titled "Remarkable Works" is visible
-    And 3 project cards are displayed
-    And each card has an image, title "Vector Illustration", and a "View Details" button
-    And each card has a box shadow
+### Requirement: Features
 
-  Scenario: Cards have consistent shadow
-    Given the page loads
-    Then each project card has a shadow of approximately 0px 15px 50px rgba(0,0,0,0.1)
-```
+The system SHALL render an "Our Exclusive Features" section on a
+gradient background with three feature cards.
 
-### Story
+#### Scenario: Feature cards
 
-```gherkin
-Feature: Story
-  Scenario: Story section renders with background image
-    Given the page loads
-    Then a section with a background image is visible
-    And the heading "From the part of beginning" is displayed in uppercase
-    And descriptive text is displayed below the heading
-    And a "Read More" button with pill shape is displayed
-```
+- **GIVEN** the page is rendered
+- **WHEN** the features section is displayed
+- **THEN** the heading "Our Exclusive Features" SHALL be visible
+- **AND** 3 feature cards SHALL be displayed: "Creative Design", "Appropriate UX", "Super Clean Code"
+- **AND** each card SHALL have an image, title, description, and a "Read More" button
+- **AND** the section SHALL have a blue-to-cyan gradient background
 
-### Newsletter / Subscription
+### Requirement: Remarkable Works
 
-```gherkin
-Feature: Newsletter
-  Scenario: Subscription form renders
-    Given the page loads
-    Then a section titled "Subscribe for our Newsletter" is visible
-    And the section has a light gray (#f9f9ff) background
-    And an email input field is displayed
-    And a submit button is displayed
-```
+The system SHALL render a "Remarkable Works" section with three
+project cards that have images, titles, and descriptions.
 
-### Contact Form
+#### Scenario: Project cards
 
-```gherkin
-Feature: Contact Form
-  Scenario: Contact form renders on gradient background
-    Given the page loads
-    Then a section titled "Keep in Touch" is visible
-    And the section has a blue-to-cyan gradient background
-    And the title and subtitle text are white
-    And form fields for name, email, and message are displayed
-    And a submit button is displayed
+- **GIVEN** the page is rendered
+- **WHEN** the remarkable works section is displayed
+- **THEN** the heading "Remarkable Works" SHALL be visible
+- **AND** 3 project cards SHALL be displayed with alternating layouts
+- **AND** each card SHALL have a "View Project" button
+- **AND** cards SHALL have a box shadow
 
-  Scenario: Form validation shows errors
-    Given the user clicks submit without filling fields
-    Then validation error messages appear for required fields
-```
+### Requirement: Story
 
-### Footer
+The system SHALL render a story section with a background image,
+a heading, descriptive text, and a "Get Started" button.
 
-```gherkin
-Feature: Footer
-  Scenario: Footer widgets render
-    Given the page loads
-    Then 3 footer widget columns are visible: Address, Email Address, Phone Number
-    And email addresses and phone numbers are displayed as links
+#### Scenario: Story content
 
-  Scenario: Footer bottom with copyright and social links
-    Given the page loads
-    Then a copyright line is visible at the bottom
-    And social icon links (Facebook, Twitter, Dribbble, Behance) are displayed
-    And a link to Component Dock is present
-```
+- **GIVEN** the page is rendered
+- **WHEN** the story section is displayed
+- **THEN** it SHALL show the heading "From the part of beginning"
+- **AND** it SHALL display descriptive text
+- **AND** it SHALL show a "Get Started" button
 
-## Verification checklist
+### Requirement: Newsletter
 
-- [ ] Navbar renders with logo and navigation links
-- [ ] Mobile hamburger menu toggles open/close
-- [ ] Hero has blue-to-cyan gradient background
-- [ ] Hero headline is white, uppercase, bold
-- [ ] "Get Started" button is pill-shaped (border-radius: 20px)
-- [ ] Button hover fills with gradient
-- [ ] Working Process shows 4 steps in horizontal row with icons and arrows
-- [ ] Features section has gradient background and 3 white cards
-- [ ] Each feature card has icon + text + button
-- [ ] Remarkable Works shows 3 cards with shadow on white bg
-- [ ] Story section has background image overlay
-- [ ] Newsletter section has light gray bg with email form
-- [ ] Contact form has gradient bg with form fields
-- [ ] Footer has 3 widget columns + copyright + social links
-- [ ] Component Dock link in footer
-- [ ] All font-family references use Poppins
-- [ ] Gradient tokens: #3e69fe → #4cd4e3
-- [ ] No ColorLib references in app source code
+The system SHALL render a newsletter subscription section with an
+email input and a submit button.
+
+#### Scenario: Newsletter form
+
+- **GIVEN** the page is rendered
+- **WHEN** the newsletter section is displayed
+- **THEN** the heading "Subscribe for our Newsletter" SHALL be visible
+- **AND** an email input field SHALL be displayed
+- **AND** a submit button SHALL be displayed
+
+#### Scenario: Newsletter validation
+
+- **GIVEN** the newsletter form is rendered
+- **WHEN** the user submits with an invalid email
+- **THEN** a validation error message SHALL appear
+
+#### Scenario: Newsletter success
+
+- **GIVEN** the newsletter form is rendered
+- **WHEN** the user submits with a valid email
+- **THEN** a confirmation message SHALL appear
+
+### Requirement: Contact Form
+
+The system SHALL render a contact form section on a gradient background
+with name, email, and message fields.
+
+#### Scenario: Contact form fields
+
+- **GIVEN** the page is rendered
+- **WHEN** the contact form section is displayed
+- **THEN** the heading "Keep in Touch" SHALL be visible
+- **AND** input fields for name, email, and message SHALL be displayed
+- **AND** a "Send Message" button SHALL be displayed
+
+#### Scenario: Contact form validation
+
+- **GIVEN** the contact form is rendered
+- **WHEN** the user submits without filling required fields
+- **THEN** validation error messages SHALL appear for empty fields
+
+#### Scenario: Contact form submission
+
+- **GIVEN** the contact form is rendered
+- **WHEN** the user fills all fields with valid data and submits
+- **THEN** a success message SHALL be displayed
+
+### Requirement: Footer
+
+The system SHALL render a footer with three widget columns (Address,
+Email Address, Phone Number), social media links, and a Component Dock
+link.
+
+#### Scenario: Footer widgets
+
+- **GIVEN** the page is rendered
+- **WHEN** the footer is displayed
+- **THEN** 3 widget columns SHALL be visible: Address, Email Address, Phone Number
+- **AND** email addresses SHALL be displayed as mailto links
+- **AND** phone numbers SHALL be displayed as tel links
+
+#### Scenario: Social links and Component Dock
+
+- **GIVEN** the page is rendered
+- **WHEN** the footer bottom is displayed
+- **THEN** social icon links for Facebook, Twitter, Dribbble, and Behance SHALL be present
+- **AND** a link to https://www.componentdock.com/ labeled "Component Dock" SHALL be present
+
+### Requirement: Page composition
+
+The system SHALL render all sections in the correct order as a single
+page application.
+
+#### Scenario: Full page render
+
+- **GIVEN** the Glissade app is loaded
+- **WHEN** the page renders
+- **THEN** all sections SHALL be present in order: Navbar, Hero, WorkingProcess, Features, RemarkableWorks, Story, Newsletter, Contact, Footer
+- **AND** no ColorLib references SHALL appear in any app source code
+
+#### Scenario: Design tokens
+
+- **GIVEN** the page is rendered
+- **WHEN** visual styles are applied
+- **THEN** the font family SHALL be Poppins
+- **AND** brand colors SHALL use the gradient #3e69fe → #4cd4e3
+- **AND** buttons SHALL have border-radius 20px (pill shape)
