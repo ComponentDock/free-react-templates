@@ -895,7 +895,7 @@
 - [x] **Arcwork** — [colorlib](https://colorlib.com/wp/template/arcwork/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/arcwork-free-template.jpg) · [ascendly](https://ascendly.free.componentdock.com)
 - [x] **Ariclaw** — [colorlib](https://colorlib.com/wp/template/ariclaw/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ariclaw-free-template.jpg) · [counsel](https://counsel.free.componentdock.com)
 - [x] **Atomic** — [colorlib](https://colorlib.com/wp/template/atomic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/atomic-free-template.jpg) · [proton](https://proton.free.componentdock.com)
-- [ ] **Auction** — [colorlib](https://colorlib.com/wp/template/auction/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/auction-free-template.jpg)
+- [~] **Auction** — [colorlib](https://colorlib.com/wp/template/auction/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/auction-free-template.jpg)
 - [ ] **Automotive** — [colorlib](https://colorlib.com/wp/template/automotive/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/automotive-free-template.jpg)
 - [ ] **Autorepair** — [colorlib](https://colorlib.com/wp/template/autorepair/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autorepair-free-template.jpg)
 - [ ] **Autoroad** — [colorlib](https://colorlib.com/wp/template/autoroad/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autoraod-free-template.jpg)
@@ -1311,7 +1311,7 @@
 
 ## Classified Ads (4)
 
-- [ ] **Auction** — [colorlib](https://colorlib.com/wp/template/auction/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/auction-free-template.jpg)
+- [~] **Auction** — [colorlib](https://colorlib.com/wp/template/auction/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/auction-free-template.jpg)
 - [ ] **Classy Ads** — [colorlib](https://colorlib.com/wp/template/classy-ads/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/classyads-free-template.jpg)
 - [x] **Mondy** — [colorlib](https://colorlib.com/wp/template/mondy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mondy-free-template.jpg) · [estately](https://estately.free.componentdock.com)
 - [ ] **Rehomes** — [colorlib](https://colorlib.com/wp/template/rehomes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rehomes-free-template.jpg)
