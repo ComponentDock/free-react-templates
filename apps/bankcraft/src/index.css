@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Bankcraft brand palette — recreated from the ColorLib "Banker" design
+     (style.css): orange #fd7e14 accents/buttons, green #71bc42 secondary,
+     dark gray #343a40 footer/sections, light bg #f8f9fa. */
+  --color-brand: #fd7e14;
+  --color-brand-dark: #e86e0c;
+
+  /* Green secondary (#71bc42 from the original). */
+  --color-secondary: #71bc42;
+
+  /* Dark gray for footer and dark sections (#343a40). */
+  --color-ink: #343a40;
+  --color-ink-dark: #23272b;
+
+  /* Light section background (#f8f9fa). */
+  --color-paper: #f8f9fa;
+
+  /* Alt light background (#eff1f3). */
+  --color-mist: #eff1f3;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the orange. */
+  --color-primary-50: #fff8f0;
+  --color-primary-100: #ffedd5;
+  --color-primary-200: #fed7aa;
+  --color-primary-300: #fdba74;
+  --color-primary-400: #fb923c;
+  --color-primary-500: #fd7e14;
+  --color-primary-600: #e86e0c;
+  --color-primary-700: #c2410c;
+  --color-primary-800: #9a3412;
+  --color-primary-900: #7c2d12;
+
+  /* Original font: "Open Sans" (body + headings). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
