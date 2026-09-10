@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Azureline brand palette — recreated from the ColorLib "Blueline" design
+     (primary blue #2954c9, accent cyan #77d5f7). */
+  --color-brand-50: #eef2fc;
+  --color-brand-100: #d5e0f7;
+  --color-brand-200: #b3c9f0;
+  --color-brand-300: #7da4e4;
+  --color-brand-400: #4a7fd8;
+  --color-brand-500: #2954c9;
+  --color-brand-600: #2244a8;
+  --color-brand-700: #1b3587;
+  --color-brand-800: #142666;
+  --color-brand-900: #0d1845;
+
+  --color-accent-50: #edf9fd;
+  --color-accent-100: #d0f0f9;
+  --color-accent-200: #a6e5f4;
+  --color-accent-300: #77d5f7;
+  --color-accent-400: #4cc5ef;
+  --color-accent-500: #2ab5e7;
+  --color-accent-600: #1f93c1;
+  --color-accent-700: #16719b;
+  --color-accent-800: #0e4f75;
+  --color-accent-900: #072d4f;
+
+  --color-charcoal: #0a0a0a;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
