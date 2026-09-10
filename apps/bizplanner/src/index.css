@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* BizPlanner brand palette:
+     Corporate/business theme with red #d73e4d primary accent,
+     dark heading #292929, body text #6f6f6f, dark sections #232a34,
+     Raleway font family (weights 400, 500, 700). */
+  --color-primary-50: #fdf2f3;
+  --color-primary-100: #fce4e6;
+  --color-primary-200: #f9cdd1;
+  --color-primary-300: #f4a6ad;
+  --color-primary-400: #eb717e;
+  --color-primary-500: #d73e4d;
+  --color-primary-600: #c52637;
+  --color-primary-700: #a51c2c;
+  --color-primary-800: #8b1b28;
+  --color-primary-900: #771c26;
+
+  /* Dark section backgrounds (#232a34). */
+  --color-charcoal: #232a34;
+
+  /* Heading color (#292929). */
+  --color-heading: #292929;
+
+  /* Body text color (#6f6f6f). */
+  --color-smoke: #6f6f6f;
+
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+}

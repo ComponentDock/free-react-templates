@@ -909,7 +909,7 @@
 - [x] **Bitcoin** — [colorlib](https://colorlib.com/wp/template/bitcoin/) · [coinwave](https://coinwave.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bitcoin-free-template.jpg)
 - [x] **Bizcon** — [colorlib](https://colorlib.com/wp/template/bizcon/) · [bizmark](https://bizmark.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bizcon-free-template.jpg)
 - [x] **Biznance** — [colorlib](https://colorlib.com/wp/template/biznance/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/biznance-free-template.jpg) · [vantage](https://vantage.free.componentdock.com)
-- [ ] **Bizpro** — [colorlib](https://colorlib.com/wp/template/bizpro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bizpro-free-classic-website-template.jpg)
+- [~] **Bizpro** — [colorlib](https://colorlib.com/wp/template/bizpro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bizpro-free-classic-website-template.jpg)
 - [ ] **Blueline** — [colorlib](https://colorlib.com/wp/template/blueline/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/blueline-free-fullscreen-business-website-template.jpg)
 - [ ] **Bobsled** — [colorlib](https://colorlib.com/wp/template/bobsled/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bobsled-creative-website-template.jpg)
 - [ ] **Book Keeping** — [colorlib](https://colorlib.com/wp/template/book-keeping/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bookkeeping-free-template.jpg)
