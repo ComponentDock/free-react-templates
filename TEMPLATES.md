@@ -905,7 +905,7 @@
 - [x] **Banker** — [colorlib](https://colorlib.com/wp/template/banker/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/banker-free-template.jpg) · [bankcraft](https://bankcraft.free.componentdock.com)
 - [x] **Barberz** — [colorlib](https://colorlib.com/wp/template/barberz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barberz-free-template.jpg) · [shear](https://shear.free.componentdock.com)
 - [x] **Bato** — [colorlib](https://colorlib.com/wp/template/bato/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bato-free-template.jpg) · [focal](https://focal.free.componentdock.com)
-- [ ] **Bbs** — [colorlib](https://colorlib.com/wp/template/bbs/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bbs-free-small-company-website-template.jpg)
+- [~] **Bbs** — [colorlib](https://colorlib.com/wp/template/bbs/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bbs-free-small-company-website-template.jpg)
 - [ ] **Bitcoin** — [colorlib](https://colorlib.com/wp/template/bitcoin/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bitcoin-free-template.jpg)
 - [ ] **Bizcon** — [colorlib](https://colorlib.com/wp/template/bizcon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bizcon-free-template.jpg)
 - [x] **Biznance** — [colorlib](https://colorlib.com/wp/template/biznance/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/biznance-free-template.jpg) · [vantage](https://vantage.free.componentdock.com)

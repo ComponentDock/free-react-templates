@@ -1,263 +1,175 @@
-# Template: Crux (Business Landing)
+# Crux — Recreation of ColorLib Bbs
+
+> Recreation of ColorLib "Bbs" (https://colorlib.com/wp/template/bbs/)
+> Preview: https://preview.colorlib.com/theme/bbs/
 
 ## Purpose
 
-Crux is a single-page business landing template in the
-free-react-templates monorepo. It is an original React recreation of the
-ColorLib free "Olla" design (see TEMPLATES.md), built under the
-monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
-
-The original is a corporate/business template with a dark navy header bar,
-hero slider with email input CTA, services (3 icons), about section with
-feature list, brand logos carousel, FAQ accordion + image, pricing cards,
-gallery overlay grid, newsletter CTA band, and a light gray footer with
-logo, links, newsletter form, and social icons. Crux recreates that
-structure section-for-section with matching layout, colors, typography,
-and content types (no ColorLib assets copied).
-
-## Design reference (replication findings)
-
-- **Original:** ColorLib "Olla" — free business website template
-  (source: https://colorlib.com/wp/template/olla/).
-- **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/olla/`
-  (HTTP 200, 639 lines). The rendered DOM is the reference below; the
-  TEMPLATES.md screenshot (`olla-colorlib-template.jpg`) confirms the
-  visual design (dark navy header bar, blue brand accents, white content
-  sections, light gray footer).
-- **Section order (1:1):**
-  1. **Header top bar** (`header-top`): dark navy `#041735` background,
-     white text with announcement + "Learn More" button (pill, white text).
-  2. **Header bottom** (`header-bottom`): logo + nav (Home, About, Services,
-     Portfolio, Blog with submenu, Contact) + "Free Quote" CTA button
-     (blue `#2845BA`, `btn_1` class). Sticky on scroll.
-  3. **Hero / Slider** (`slider-area`): headline "Build your website in
-     record time." + subtext + email input + "Get Free Quote" button;
-     right-side hero image; decorative shape below.
-  4. **Services / Categories** (`categories-area`): centered heading
-     "Olla helps you to spruk your product's features." + 3 service cards
-     (Unlimited Components, Awesome Support, Responsive Design) each with
-     SVG icon and description text.
-  5. **About** (`about-area1`): left image + right text block "All the
-     features you'd expect." + 3 feature items (Tons of pre-made sections,
-     Complete CMS integration, Stellar after-sales support).
-  6. **Brand logos** (`brand-area`): heading "You'll be in good company."
-     - subtext + "Meet Our Customers" CTA button + horizontal carousel of
-       brand logos (dark-on-white).
-  7. **FAQ / Accordion + Image** (`project-us`): left side heading "Work
-     fast, create beautifully." + 3 Bootstrap accordion items; right side
-     image.
-  8. **Pricing** (`pricing-card-area`): pricing cards (likely 2–3 tiers).
-  9. **Gallery** (`gallery-area`): overlay grid of portfolio/project images
-     with hover overlay showing title + description.
-  10. **Newsletter CTA** (`wantToWork-area`): "Create your amazing website
-      with Olla" + "Start Free Trial" CTA button.
-  11. **Footer** (`footer-wrapper`): light gray `#F1FBFF` background;
-      logo + Quick Links + Support + Newsletter form + social icons
-      (Facebook, Instagram, LinkedIn, YouTube). Copyright with Colorlib
-      attribution (replaced with Component Dock link).
-- **Design tokens extracted from `assets/css/style.css`:**
-  - Brand colors: **#2845BA** (royal blue — primary CTA, buttons, links,
-    accents), **#041735** (dark navy — header top bar, headings), **#F1FBFF**
-    (very light blue-gray — footer background), **#ec583a** (orange — button
-    hover sweep).
-  - Body text: **#5C6168** (gray), headings: **#041735** (dark navy).
-  - Font: **"Cabin"** (sans-serif, headings, weight 500–700) + **"Open Sans"**
-    (sans-serif, body, weight 400–800) via Google Fonts.
-  - Buttons: `.btn_1` — blue filled `#2845BA`, 4px border-radius, white
-    text, uppercase-ish; hover: transparent with blue border. `.btn2` —
-    pill shape (30px radius), white text on dark bg.
-  - Section padding: 120px top/bottom on desktop.
-  - Section titles: Cabin font, 40px h2, weight 700, color `#041735`.
-    Overline text in blue `#2845BA`, 13px uppercase with letter-spacing.
-  - Subtitle text in sections: `#656565`, 18px.
-  - Gray backgrounds: `.gray-bg` = `#F1FBFF`.
-  - Card borders: `#DBDEE9` light blue-gray.
-  - Footer: light gray `#F1FBFF`, headings in `#041735`, links in `#5C6168`.
-- **Recreation decisions:** repo-standard Navbar (site name "Crux", Home
-  link, dark-mode toggle) + "Get Started" CTA; hero = seeded picsum photo
-  with headline + email input CTA; services as 3-column icon grid with
-  lucide icons; about section with photo + feature list; brand logos as
-  static row (placeholder logos); FAQ accordion with lucide chevrons;
-  pricing cards (3 tiers); gallery with seeded photos + hover overlay;
-  newsletter CTA band; footer with newsletter form + Component Dock link;
-  all images picsum-seeded (`picsum.photos/seed/crux-N/w/h`); Google Fonts
-  via `<link>`.
-
-Crux lives in `apps/crux` and uses shared components from
-`packages/ui` (Button, ButtonLink, Card, Badge, cn).
+Crux is a creative agency / small company landing page template featuring
+a bold purple hero, 4-feature grid, tabbed about section, video callout,
+blog cards, story section, newsletter subscription, and footer. Recreated
+from the ColorLib Bbs design with identical section order, layout, and
+design tokens (purple brand, Poppins font, gradient CTA buttons).
 
 ## Requirements
 
-### Requirement: Navigation bar
+### Requirement: Navbar with navigation and mobile menu
 
-The system SHALL render a top navigation bar with a dark navy announcement
-bar ("This handy little bar is great for informing visitors of various
-features. Learn More"), a sticky header with site name "Crux", navigation
-links (Home, About, Services, Portfolio, Blog, Contact), and a "Get
-Started" CTA button.
+The page SHALL display a fixed navbar with logo "Crux" and navigation links
+(Home, About, Services, Blog). A mobile hamburger toggle SHALL open/close
+a mobile menu overlay. Clicking a mobile nav link SHALL close the menu.
 
-#### Scenario: Navbar content
+#### Scenario: Desktop navbar renders logo and links
 
-- **GIVEN** the Crux page is rendered
-- **THEN** the announcement bar is visible with dark navy background
-- **AND** the nav contains links: Home, About, Services, Portfolio, Blog,
-  Contact
-- **AND** a "Get Started" CTA button is visible
-- **AND** the site name/logo "Crux" is displayed
+- **WHEN** the page loads
+- **THEN** the logo "Crux" and all four nav links are visible
 
-#### Scenario: Sticky header
+#### Scenario: Mobile menu toggle
 
-- **GIVEN** the user scrolls past the announcement bar
-- **THEN** the navigation header sticks to the top of the viewport
-- **AND** nav links and CTA remain accessible
+- **WHEN** the user clicks the hamburger button
+- **THEN** the mobile navigation overlay appears with all links
+- **AND** the close button is displayed
 
-### Requirement: Hero section
+#### Scenario: Mobile menu link click closes menu
 
-The system SHALL render a hero area with a headline "Build your website in
-record time.", descriptive subtext, an email input with "Get Free Quote"
-button, and a hero image on the right side.
+- **WHEN** the user opens the mobile menu and clicks a nav link
+- **THEN** the mobile navigation overlay is removed from the DOM
 
-#### Scenario: Hero content
+### Requirement: Hero section with CTA
 
-- **GIVEN** the Crux page is rendered
-- **THEN** the headline "Build your website in record time." is visible
-- **AND** a descriptive paragraph is shown below the headline
-- **AND** an email input field with placeholder "Enter your email" is present
-- **AND** a "Get Free Quote" button is adjacent to the input
-- **AND** a hero image is displayed to the right
+The hero SHALL display "We're Creative" heading centered on a purple radial
+gradient background with a "Get Started" pill-shaped CTA button.
 
-### Requirement: Services section
+#### Scenario: Hero renders heading and CTA
 
-The system SHALL render a services section with a centered heading, subtext,
-and three service cards (Unlimited Components, Awesome Support, Responsive
-Design), each with an icon and description.
+- **WHEN** the page loads
+- **THEN** the heading "We're Creative" is visible
+- **AND** a "Get Started" link is present
 
-#### Scenario: Services content
+### Requirement: Features grid with 4 cards
 
-- **GIVEN** the Crux page is rendered
-- **THEN** a heading "Crux helps you to showcase your product's features."
-  is visible
-- **AND** three service cards are displayed in a row
-- **AND** each card has a title, icon, and description text
+The features section SHALL display a 2×2 grid of feature cards, each with
+an icon, title, and description.
 
-### Requirement: About section
+#### Scenario: All four feature cards render
 
-The system SHALL render an about section with a left-side image and right-side
-feature list ("All the features you'd expect.") with three items: pre-made
-sections, CMS integration, and after-sales support.
+- **WHEN** the user scrolls to the features section
+- **THEN** headings for "Unlimited Colors", "Smart Security", "Endless Support", and "Reliable Design" are visible
+- **AND** each card has an icon and description text
 
-#### Scenario: About content
+### Requirement: About section with tabbed content
 
-- **GIVEN** the Crux page is rendered
-- **THEN** a heading "All the features you'd expect." is visible
-- **AND** an about image is displayed on the left
-- **AND** three feature items are listed with title and description
+The about section SHALL display a heading "About Our Company", an image,
+and tabbed content with "History" and "Mission & Vision" tabs. Clicking
+a tab SHALL switch the visible content panel.
 
-### Requirement: Brand logos section
+#### Scenario: About section renders heading and image
 
-The system SHALL render a brand logos section with a heading "You'll be in
-good company.", descriptive text, a "Meet Our Customers" CTA, and a row
-of brand logo images.
+- **WHEN** the user scrolls to the about section
+- **THEN** the heading "About Our Company" is visible
+- **AND** the about image is rendered
 
-#### Scenario: Brand logos content
+#### Scenario: Default tab is History
 
-- **GIVEN** the Crux page is rendered
-- **THEN** the heading "You'll be in good company." is visible
-- **AND** descriptive text is shown below
-- **AND** a "Meet Our Customers" button is displayed
-- **AND** a row of brand logo images is visible
+- **WHEN** the about section first renders
+- **THEN** the "History" tab is active and its content is visible
 
-### Requirement: FAQ accordion section
+#### Scenario: Switching tabs
 
-The system SHALL render a FAQ/accordion section with a heading "Work fast,
-create beautifully.", three collapsible accordion items, and a right-side
-image.
+- **WHEN** the user clicks the "Mission & Vision" tab
+- **THEN** the mission content panel is displayed
+- **AND** the history content is no longer visible
 
-#### Scenario: FAQ accordion content
+#### Scenario: Switching back to History
 
-- **GIVEN** the Crux page is rendered
-- **THEN** the heading "Work fast, create beautifully." is visible
-- **AND** three accordion items are displayed
-- **AND** the first item is expanded by default
-- **AND** clicking an accordion header toggles its content visibility
+- **WHEN** the user clicks the "History" tab after viewing Mission
+- **THEN** the history content panel is displayed again
 
-#### Scenario: FAQ accordion interaction
+### Requirement: Video callout section
 
-- **GIVEN** the FAQ section is rendered
-- **WHEN** the user clicks on a collapsed accordion header
-- **THEN** the accordion content expands
-- **AND** other expanded items collapse (single-expand behavior)
+The video section SHALL display a heading "New Features that open the door
+of future" with a play button and description text on a purple gradient
+background.
 
-### Requirement: Pricing section
+#### Scenario: Video callout renders elements
 
-The system SHALL render a pricing section with pricing cards showing tier
-names, prices, feature lists, and CTA buttons.
+- **WHEN** the user scrolls to the video section
+- **THEN** the heading with "New Features" is visible
+- **AND** a play button is present
+- **AND** description text is displayed
 
-#### Scenario: Pricing content
+### Requirement: Blog cards section with 3 articles
 
-- **GIVEN** the Crux page is rendered
-- **THEN** pricing cards are displayed
-- **AND** each card shows a tier name, price, feature list, and CTA button
+The blog section SHALL display three cards with background images,
+titles, and descriptions.
 
-### Requirement: Gallery section
+#### Scenario: All three blog cards render
 
-The system SHALL render a gallery section with a grid of project images
-that show an overlay with title and description on hover.
+- **WHEN** the user scrolls to the blog section
+- **THEN** headings for "Creative Projects", "Digital Solutions", and "Growth Strategy" are visible
+- **AND** each card has a description and image
 
-#### Scenario: Gallery content
+### Requirement: Story / CTA section
 
-- **GIVEN** the Crux page is rendered
-- **THEN** a grid of project images is displayed
-- **AND** each image shows a hover overlay with title and short description
+The story section SHALL display a heading "Crafting Our Experiences"
+with descriptive text on a dark background.
 
-### Requirement: Newsletter CTA section
+#### Scenario: Story renders heading and text
 
-The system SHALL render a newsletter CTA section with a heading "Create your
-amazing website with Crux", descriptive text, and a "Start Free Trial" CTA
-button.
+- **WHEN** the user scrolls to the story section
+- **THEN** the heading with "Crafting Our Experiences" is visible
+- **AND** descriptive paragraph text is present
 
-#### Scenario: Newsletter CTA content
+### Requirement: Newsletter subscription form
 
-- **GIVEN** the Crux page is rendered
-- **THEN** the heading "Create your amazing website with Crux" is visible
-- **AND** descriptive text is shown
-- **AND** a "Start Free Trial" button is displayed
+The newsletter section SHALL display a heading "Subscribe Newsletter"
+with an email input and "Get Started" submit button. Submitting the
+form SHALL clear the email field (demo mode).
 
-### Requirement: Footer
+#### Scenario: Newsletter form renders
 
-The system SHALL render a footer with a light gray background (#F1FBFF),
-logo, Quick Links column, Support column, Newsletter form with email input
-and submit button, social media icons (Facebook, Instagram, LinkedIn, YouTube),
-and a copyright line with a link to https://www.componentdock.com/.
+- **WHEN** the user scrolls to the newsletter section
+- **THEN** the heading "Subscribe Newsletter" is visible
+- **AND** an email input and submit button are present
 
-#### Scenario: Footer content
+#### Scenario: Email input accepts text
 
-- **GIVEN** the Crux page is rendered
-- **THEN** the footer is visible with light gray background
-- **AND** a logo is displayed
-- **AND** Quick Links column has links (Work, Services, Tips & Tricks)
-- **AND** Support column has links (FAQ, Submit Ticket, Contact Us)
-- **AND** a newsletter form with email input and submit arrow is present
-- **AND** social media icons are displayed
-- **AND** copyright text links to https://www.componentdock.com/
+- **WHEN** the user types into the email input
+- **THEN** the input value updates to reflect typed text
 
-## Verification checklist
+#### Scenario: Form submission clears input
 
-- [ ] All sections render in the correct order (11 sections total)
-- [ ] Dark navy announcement bar matches #041735
-- [ ] Sticky header works on scroll
-- [ ] Hero email input and CTA button are functional
-- [ ] Services cards show 3 items with icons
-- [ ] About section shows image + 3 feature items
-- [ ] Brand logos row displays placeholder logos
-- [ ] FAQ accordion toggles correctly (single-expand)
-- [ ] Pricing cards display tiers with features
-- [ ] Gallery shows overlay on hover
-- [ ] Newsletter CTA button is clickable
-- [ ] Footer links to componentdock.com
-- [ ] All images use picsum-seeded placeholders
-- [ ] Google Fonts (Cabin + Open Sans) load correctly
-- [ ] Dark mode toggle works (if implemented)
-- [ ] Mobile responsive layout (hamburger menu, stacked sections)
-- [ ] 100% test coverage
-- [ ] No ColorLib references in app code
+- **WHEN** the user enters an email and clicks submit
+- **THEN** the email input is cleared
+
+### Requirement: Footer with Component Dock attribution
+
+The footer SHALL display navigation links, social media icons, and a
+"Made with Component Dock" attribution linking to componentdock.com.
+
+#### Scenario: Footer renders navigation and social links
+
+- **WHEN** the user scrolls to the footer
+- **THEN** nav links for Home, About, Services, Blog are present
+- **AND** social links for Facebook, Twitter, Dribbble are present
+
+#### Scenario: Footer links to Component Dock
+
+- **WHEN** the footer renders
+- **THEN** a link to https://www.componentdock.com/ is present with text "Component Dock"
+
+#### Scenario: Footer has contentinfo landmark
+
+- **WHEN** the page renders
+- **THEN** the footer has role="contentinfo"
+
+### Requirement: Page composition
+
+The App component SHALL compose all sections in order within main landmark,
+set the document title, and include banner and contentinfo landmarks.
+
+#### Scenario: All sections compose in the App
+
+- **WHEN** the page loads
+- **THEN** banner, main, and contentinfo landmarks are present
+- **AND** headings for Hero, Features, About, Video, Blog, Story, and Newsletter are all rendered
