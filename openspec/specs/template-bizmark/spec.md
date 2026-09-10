@@ -16,21 +16,21 @@ elements.
 
 Extracted from the preview CSS (`css/style.css`) and live DOM:
 
-| Token             | Value                                                 | Notes                                |
-| ----------------- | ----------------------------------------------------- | ------------------------------------ |
-| Primary gradient  | `linear-gradient(131deg, #feb47b, #ff7e5f)`          | Orange → salmon, used on all CTAs    |
-| Accent / hover    | `#ff7e5f`                                             | Coral-orange                         |
-| Secondary accent  | `#ff8b23`                                             | Bright orange                        |
-| Banner bg         | `#f0eed4` (fallback on mobile), white + bg image desktop | Light yellow-green tint          |
-| Section bg        | `#f7f7f7`                                             | Light gray (services area)           |
-| Headings color    | `#2f373d`                                             | Dark blue-gray                       |
-| Body text color   | `#646464` / `#666666`                                 | Medium gray                          |
-| Footer bg         | `#303030`                                             | Dark charcoal                        |
-| Body font         | Roboto, sans-serif                                    | 14px base, line-height 1.929         |
-| Heading font      | Poppins, sans-serif                                   | Weight 600–800                       |
-| Button radius     | `50px` (fully rounded pills)                          | White text on gradient               |
-| Green accent      | `#e3f1da`                                             | Light green, service card decoration |
-| Border accent     | `#fdcb9e`                                             | Warm tan border on icons             |
+| Token            | Value                                                    | Notes                                |
+| ---------------- | -------------------------------------------------------- | ------------------------------------ |
+| Primary gradient | `linear-gradient(131deg, #feb47b, #ff7e5f)`              | Orange → salmon, used on all CTAs    |
+| Accent / hover   | `#ff7e5f`                                                | Coral-orange                         |
+| Secondary accent | `#ff8b23`                                                | Bright orange                        |
+| Banner bg        | `#f0eed4` (fallback on mobile), white + bg image desktop | Light yellow-green tint              |
+| Section bg       | `#f7f7f7`                                                | Light gray (services area)           |
+| Headings color   | `#2f373d`                                                | Dark blue-gray                       |
+| Body text color  | `#646464` / `#666666`                                    | Medium gray                          |
+| Footer bg        | `#303030`                                                | Dark charcoal                        |
+| Body font        | Roboto, sans-serif                                       | 14px base, line-height 1.929         |
+| Heading font     | Poppins, sans-serif                                      | Weight 600–800                       |
+| Button radius    | `50px` (fully rounded pills)                             | White text on gradient               |
+| Green accent     | `#e3f1da`                                                | Light green, service card decoration |
+| Border accent    | `#fdcb9e`                                                | Warm tan border on icons             |
 
 ## Section Order (from live preview DOM)
 
@@ -45,115 +45,126 @@ Extracted from the preview CSS (`css/style.css`) and live DOM:
 9. **Footer** — Four columns (Top Products, Quick Links, Features, Resources) + Newsletter column with email input + "Subscribe" gradient button. Light background.
 10. **Copyright** — Dark (`#303030`) bar with copyright text.
 
-## Gherkin Requirements
+## Requirements
 
-### Navbar
-```gherkin
-Feature: Navbar
-  Scenario: Desktop navbar shows all links
-    Given the page is loaded at desktop width
-    Then the navbar is visible at the top
-    And links "Home", "About", "Blog", "Page", "Contact" are visible
+### Requirement: Navbar
 
-  Scenario: Mobile navbar shows hamburger
-    Given the page is loaded at mobile width
-    Then a hamburger toggle button is visible
-    When the user clicks the toggle
-    Then the nav menu expands with all links
-```
+The system SHALL render a sticky top navigation bar with the site name "Bizmark" on the left, navigation links (Home, About, Blog, Page, Contact) on the right, and a hamburger toggle button visible on mobile viewports. Clicking the hamburger toggle SHALL expand the mobile nav menu, and clicking a link SHALL collapse it.
 
-### Banner
-```gherkin
-Feature: Banner / Hero
-  Scenario: Hero displays headline and CTA
-    Given the page is loaded
-    Then a headline containing "Lead from" is visible
-    And a "Learn More" button with gradient styling is visible
-    And an "Intro Video" link is visible
+#### Scenario: Navbar content
 
-  Scenario: Hero has decorative animated elements
-    Given the page is loaded
-    Then decorative SVG/icon elements are present (purely decorative)
-```
+- **GIVEN** the Bizmark page is rendered
+- **WHEN** the page loads
+- **THEN** the navbar SHALL show the site name "Bizmark" and navigation links
+- **AND** the navbar SHALL be sticky at the top of the viewport
 
-### About
-```gherkin
-Feature: About Section
-  Scenario: About displays experience headline
-    Given the page is scrolled to the about section
-    Then a headline mentioning "Experience" or "consulting" is visible
-    And a "Read More" button is visible
-    And an illustration image is visible
-```
+#### Scenario: Mobile hamburger toggle
 
-### Services
-```gherkin
-Feature: Services Section
-  Scenario: Services section shows cards on gray background
-    Given the page is scrolled to the services section
-    Then the section has a light gray background
-    And a section headline "We Provide Best Services" is visible
-    And at least two service cards are visible
-    And each card has an icon, title, and "Learn More" link
+- **GIVEN** the Bizmark page is rendered on a mobile viewport
+- **WHEN** the user taps the hamburger toggle button
+- **THEN** the mobile nav menu SHALL expand with all navigation links
+- **AND** tapping a link SHALL collapse the menu
 
-  Scenario: Service cards have green accent decoration
-    Given the services section is visible
-    Then service card icons have warm tan (#fdcb9e) borders
-```
+### Requirement: Banner
 
-### Testimonials
-```gherkin
-Feature: Testimonials
-  Scenario: Testimonials show customer quotes
-    Given the page is scrolled to the testimonials section
-    Then a headline "Customer Are Saying" is visible
-    And thumbnail avatars are visible
-    And a testimonial quote with reviewer name and title is displayed
-```
+The system SHALL render a full-width hero section with a level-1 headline containing "Lead from", a "Learn More" gradient button, an "Intro Video" link, and decorative animated blobs. A hero image SHALL be displayed on desktop.
 
-### Portfolio
-```gherkin
-Feature: Portfolio Section
-  Scenario: Portfolio shows masonry grid of projects
-    Given the page is scrolled to the portfolio section
-    Then a quote card with "Explore Our Best Practice Area" is visible
-    And at least four project cards with images are visible
-    And each card has a title and short description
-```
+#### Scenario: Hero content
 
-### Advisory Service
-```gherkin
-Feature: Advisory Service Section
-  Scenario: Advisory section mirrors about layout
-    Given the page is scrolled to the advisory section
-    Then a headline about "adviser service" is visible
-    And an illustration image is visible
-    And a "Read More" button is visible
-```
+- **GIVEN** the Bizmark page is rendered
+- **WHEN** the hero section is displayed
+- **THEN** it SHALL show a level-1 headline containing "Lead from"
+- **AND** it SHALL show a "Learn More" button with gradient styling
+- **AND** it SHALL show an "Intro Video" link
+- **AND** decorative animated blobs SHALL be present
 
-### Blog
-```gherkin
-Feature: Blog Section
-  Scenario: Blog section shows post cards
-    Given the page is scrolled to the blog section
-    Then a headline "Update From Blog" is visible
-    And at least three blog cards are visible
-    And each card has an image, category, date, title, and engagement counts
-```
+### Requirement: About section
 
-### Footer
-```gherkin
-Feature: Footer
-  Scenario: Footer has columns and newsletter
-    Given the page is scrolled to the footer
-    Then four link columns are visible (Top Products, Quick Links, Features, Resources)
-    And a newsletter section with email input and "Subscribe" button is visible
+The system SHALL render an about section with a two-column layout (image on one side, text on the other), a headline mentioning "Experience" and "consulting", a paragraph of body text, and a "Read More" gradient button.
 
-  Scenario: Copyright bar
-    Given the page is scrolled to the bottom
-    Then a dark copyright bar is visible
-    And it contains a link to componentdock.com
-```
+#### Scenario: About content
+
+- **GIVEN** the Bizmark page is rendered
+- **WHEN** the about section is displayed
+- **THEN** it SHALL show a headline mentioning "Experience" and "consulting"
+- **AND** it SHALL show a "Read More" button
+- **AND** it SHALL show an illustration image
+
+### Requirement: Services section
+
+The system SHALL render a services section with a light gray background, a headline "We Provide Best Services", an introductory text block with a "Load More" button, and at least two service cards each with an icon, title, description, and "Learn More" link.
+
+#### Scenario: Services content
+
+- **GIVEN** the Bizmark page is rendered
+- **WHEN** the services section is displayed
+- **THEN** it SHALL have a light gray background
+- **AND** it SHALL show a headline "We Provide Best Services"
+- **AND** it SHALL show at least two service cards with icons, titles, and "Learn More" links
+
+### Requirement: Testimonials
+
+The system SHALL render a testimonials section with a centered headline "Customer Are Saying", thumbnail avatar buttons for navigation, and a main quote display showing testimonial text, reviewer name, and reviewer title. Clicking a thumbnail SHALL switch the displayed testimonial.
+
+#### Scenario: Testimonials content
+
+- **GIVEN** the Bizmark page is rendered
+- **WHEN** the testimonials section is displayed
+- **THEN** it SHALL show a headline "Customer Are Saying"
+- **AND** it SHALL show thumbnail avatar buttons
+- **AND** clicking a thumbnail SHALL display the corresponding testimonial quote
+
+### Requirement: Portfolio
+
+The system SHALL render a portfolio section with a masonry-style grid containing a quote card with "Explore Our Best Practice Area" and at least four project cards, each with an image, title, and short description.
+
+#### Scenario: Portfolio content
+
+- **GIVEN** the Bizmark page is rendered
+- **WHEN** the portfolio section is displayed
+- **THEN** it SHALL show a quote card with "Explore Our Best Practice Area"
+- **AND** it SHALL show at least four project cards with images and titles
+
+### Requirement: Advisory service section
+
+The system SHALL render an advisory service section that mirrors the About section layout (image on one side, text on the other), with a headline about "adviser service", body text, and a "Read More" gradient button.
+
+#### Scenario: Advisory content
+
+- **GIVEN** the Bizmark page is rendered
+- **WHEN** the advisory service section is displayed
+- **THEN** it SHALL show a headline about "adviser service"
+- **AND** it SHALL show an illustration image
+- **AND** it SHALL show a "Read More" button
+
+### Requirement: Blog section
+
+The system SHALL render a blog section with a centered headline "Update From Blog" and at least three blog post cards, each with an image, category label, date, title, and comment/like counts.
+
+#### Scenario: Blog content
+
+- **GIVEN** the Bizmark page is rendered
+- **WHEN** the blog section is displayed
+- **THEN** it SHALL show a headline "Update From Blog"
+- **AND** it SHALL show at least three blog cards with images, categories, dates, titles, and engagement counts
+
+### Requirement: Footer
+
+The system SHALL render a footer with four link columns (Top Products, Quick Links, Features, Resources), a newsletter section with an email input and "Subscribe" button, and a dark copyright bar with a link to componentdock.com.
+
+#### Scenario: Footer content
+
+- **GIVEN** the Bizmark page is rendered
+- **WHEN** the footer section is displayed
+- **THEN** it SHALL show four link columns
+- **AND** it SHALL show a newsletter section with email input and "Subscribe" button
+
+#### Scenario: Copyright bar
+
+- **GIVEN** the Bizmark page is rendered
+- **WHEN** the copyright bar is displayed
+- **THEN** it SHALL show a dark bar with copyright text
+- **AND** it SHALL contain a link to componentdock.com
 
 ## Verification Checklist
 
