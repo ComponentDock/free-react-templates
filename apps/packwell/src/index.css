@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* PackWell brand palette — recreated from the ColorLib "Carries" design
+     (style.css): orange #f39c12 accents/CTAs, blue #0083ff links,
+     dark blue-gray #3c4a62 headings/footer, light #f4f7f9 / gray #f1f1f1. */
+  --color-brand: #f39c12;
+  --color-brand-dark: #e08e0b;
+
+  /* Ink — dark blue-gray headings/footer (#3c4a62 from the original). */
+  --color-ink: #3c4a62;
+  --color-ink-dark: #2d3748;
+
+  /* Link blue (#0083ff from the original). */
+  --color-link-blue: #0083ff;
+
+  /* Paper — light section background (#f1f1f1 from the original). */
+  --color-paper: #f1f1f1;
+
+  /* Mist — muted body text (#a1a7b2 from the original). */
+  --color-mist: #a1a7b2;
+
+  /* Dark footer (#212121 from the original). */
+  --color-footer-dark: #212121;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the orange. */
+  --color-primary-50: #fff8ed;
+  --color-primary-100: #ffedd5;
+  --color-primary-200: #fed7aa;
+  --color-primary-300: #fdba74;
+  --color-primary-400: #fb923c;
+  --color-primary-500: #f39c12;
+  --color-primary-600: #e08e0b;
+  --color-primary-700: #c07d09;
+  --color-primary-800: #9a6407;
+  --color-primary-900: #7c5206;
+
+  /* Original font: "Roboto" (body + headings). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
