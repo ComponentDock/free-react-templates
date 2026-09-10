@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand accent: golden yellow (#F9CE00) */
+  --color-brand: #f9ce00;
+  --color-brand-hover: #ffd614;
+
+  /* Neutral palette */
+  --color-surface: #ffffff;
+  --color-surface-dark: #111111;
+  --color-text-primary: rgba(0, 0, 0, 0.8);
+  --color-text-body: #6b7280;
+  --color-text-muted: rgba(114, 114, 114, 0.8);
+
+  /* Fonts */
+  --font-sans: 'Karla', Arial, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    color: var(--color-text-primary);
+    line-height: 1.3;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.8;
+    font-size: 16px;
+  }
+}
