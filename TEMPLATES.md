@@ -896,7 +896,7 @@
 - [x] **Ariclaw** — [colorlib](https://colorlib.com/wp/template/ariclaw/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ariclaw-free-template.jpg) · [counsel](https://counsel.free.componentdock.com)
 - [x] **Atomic** — [colorlib](https://colorlib.com/wp/template/atomic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/atomic-free-template.jpg) · [proton](https://proton.free.componentdock.com)
 - [x] **Auction** — [colorlib](https://colorlib.com/wp/template/auction/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/auction-free-template.jpg) · [bidcraft](https://bidcraft.free.componentdock.com)
-- [ ] **Automotive** — [colorlib](https://colorlib.com/wp/template/automotive/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/automotive-free-template.jpg)
+- [~] **Automotive** — [colorlib](https://colorlib.com/wp/template/automotive/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/automotive-free-template.jpg)
 - [ ] **Autorepair** — [colorlib](https://colorlib.com/wp/template/autorepair/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autorepair-free-template.jpg)
 - [ ] **Autoroad** — [colorlib](https://colorlib.com/wp/template/autoroad/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autoraod-free-template.jpg)
 - [x] **Avo** — [colorlib](https://colorlib.com/wp/template/avo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/avo-free-templatel.jpg) · [minima](https://free-react-templates-minima.surge.sh)
