@@ -900,7 +900,7 @@
 - [x] **Autorepair** — [colorlib](https://colorlib.com/wp/template/autorepair/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autorepair-free-template.jpg) · [fixcraft](https://fixcraft.free.componentdock.com)
 - [ ] **Autoroad** — [colorlib](https://colorlib.com/wp/template/autoroad/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autoraod-free-template.jpg)
 - [x] **Avo** — [colorlib](https://colorlib.com/wp/template/avo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/avo-free-templatel.jpg) · [minima](https://free-react-templates-minima.surge.sh)
-- [ ] **Bakery** — [colorlib](https://colorlib.com/wp/template/bakery/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bakery-free-template.jpg)
+- [~] **Bakery** — [colorlib](https://colorlib.com/wp/template/bakery/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bakery-free-template.jpg)
 - [ ] **Balay** — [colorlib](https://colorlib.com/wp/template/balay/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/balay-free-template.jpg)
 - [ ] **Banker** — [colorlib](https://colorlib.com/wp/template/banker/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/banker-free-template.jpg)
 - [x] **Barberz** — [colorlib](https://colorlib.com/wp/template/barberz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barberz-free-template.jpg) · [shear](https://shear.free.componentdock.com)
@@ -1770,7 +1770,7 @@
 ## Food Drinks (28)
 
 - [x] **Appetizer** — [colorlib](https://colorlib.com/wp/template/appetizer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appetizer-free-template.jpg) · [palate](https://palate.free.componentdock.com)
-- [ ] **Bakery** — [colorlib](https://colorlib.com/wp/template/bakery/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bakery-free-template.jpg)
+- [~] **Bakery** — [colorlib](https://colorlib.com/wp/template/bakery/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bakery-free-template.jpg)
 - [x] **Blog Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/blog-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/blog-templates.jpg) · [marginalia](https://marginalia.free.componentdock.com)
 - [x] **Brewhouse** — [colorlib](https://colorlib.com/wp/template/brewhouse/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brewhouse-template-1770211139958.jpg) · [mocha](https://mocha.free.componentdock.com)
 - [ ] **Buri** — [colorlib](https://colorlib.com/wp/template/buri/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buri-free-template.jpg)
