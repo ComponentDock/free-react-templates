@@ -1,160 +1,166 @@
-# Template: SpellForge (Form Wizard)
+# Template: Spellforge (Colorlib Wizard 8 Food Store Checkout)
 
 ## Purpose
 
-Recreation of ColorLib "Colorlib Wizard 21" — a multi-step account registration wizard with payment details and confirmation. Preview URL: https://colorlib.com/etc/bwiz/colorlib-wizard-21/index.html. Source slug: `colorlib-wizard-21`. ColorLib listing: https://colorlib.com/wp/template/colorlib-wizard-21/.
+- **Recreation of ColorLib source**: Colorlib Wizard 8 (`https://colorlib.com/wp/template/colorlib-wizard-8/`)
+- **New Name**: `spellforge` (App directory: `apps/spellforge`, Package: `@free-react-templates/spellforge`)
+- **Category**: Forms / Multi-step Wizard / Food Store Checkout
+- **Description**: A food/meal service 4-step checkout wizard with earthy green accents, circular step indicator icons connected by dashed lines, and a warm linen-textured background with food-themed decorative elements.
+- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-8/` (404 — unreachable at time of research; design derived from screenshot + Colorlib page metadata)
+- **Screenshot**: `https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-8.jpg`
 
-**Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript. Multi-step form wizard with step progress indicator, form validation, and confirmation summary.
+## Design Tokens
 
-## Design Tokens (from reference CSS)
+- **Brand Color**: Earthy green `#88b34a` (active step fill, buttons, outline rings)
+- **Page Background**: Warm linen/off-white `#f5f2ec` with decorative food imagery in corners (spices, peppercorns, basil, tomatoes)
+- **Card Background**: White `#ffffff`, rounded corners (~8–10px), subtle gray drop shadow
+- **Heading Text**: Dark gray `#333333`, bold, uppercase for section titles
+- **Step Label Text**: Medium gray `#444444`, uppercase, small size
+- **Input Borders**: Light gray `#e0e0e0`, small rounded corners (~4–6px)
+- **Placeholder Text**: Light gray `#999999`
+- **Dashed Connector Lines**: Light gray `#d1d1d1`
+- **Pre-filled Field Background**: Light blue-gray `#e8f0f8`
+- **Typography**: Geometric sans-serif (Poppins or similar) — clean, modern, with clear weight hierarchy
+- **Button Style**: Solid green `#88b34a`, white uppercase bold text, rounded corners matching input radius
+- **Step Indicator**: Circular icons — active = filled green circle + white icon; inactive = green outline + green icon
+- **Layout**: Centered card, 2-column responsive form grid, generous vertical spacing (~15–30px)
 
-| Token | Value | Source |
-|-------|-------|--------|
-| Font family | `'Raleway', sans-serif` | Google Fonts (css/raleway-font.css) |
-| Card background | `#fff` (white) | `.wizard-v1-content` |
-| Card width | `851px` | `.wizard-v1-content` |
-| Card border-radius | `10px` | `.wizard-v1-content` |
-| Card shadow | `0px 8px 20px rgba(0,0,0,0.15)` | `.wizard-v1-content` |
-| Content area background | `#359bfa` (bright blue) | `.form-register .content` |
-| Content area border-radius | `5px` | `.form-register .content` |
-| Input background | `#2f8be0` (darker blue) | `.form-holder input, select` |
-| Input border-radius | `5px` | `.form-holder input` |
-| Input text color | `#fff` (white) | `.form-holder input` |
-| Placeholder color | `rgba(255,255,255,0.6)` | `.form-holder input::placeholder` |
-| Label color | `#fff` (white) | `.form-holder label` |
-| Label font-size | `16px` | `.form-holder label` |
-| Label font-weight | `500` | `.form-holder label` |
-| Step icon size | `50px × 50px` | `.step-icon` |
-| Step icon border-radius | `50%` (circle) | `.step-icon` |
-| Step icon active bg | `#6eba2a` (green) | `.current a .step-icon, .done a .step-icon` |
-| Step icon inactive bg | `#ccc` (light gray) | `.step-icon` |
-| Step icon active shadow | `0px 5px 18px rgba(0,0,0,0.2)` | `.current a .step-icon` |
-| Connector line bg | `#e5e5e5` | `li::before` |
-| Connector line height | `6px` | `li::before` |
-| Step text color | `#333` | `.step-text` |
-| Step text font-weight | `600` | `.step-text` |
-| Step number color | `#666` | `.step-number` |
-| Step number font-weight | `400` | `.step-number` |
-| Header h3 color | `#333` | `.wizard-header h3` |
-| Header h3 font-size | `36px` | `.wizard-header h3` |
-| Header h3 font-weight | `800` | `.wizard-header h3` |
-| Header p color | `#666` | `.wizard-header p` |
-| Header p font-size | `16px` | `.wizard-header p` |
-| Header p font-weight | `600` | `.wizard-header p` |
-| Action button bg | `#6eba2a` (green) | `.actions ul li` |
-| Action button border-radius | `50%` (circle) | `.actions ul li` |
-| Action button shadow | `0px 3px 15px rgba(0,0,0,0.19)` | `.actions ul li` |
-| Action button hover bg | `#5fa125` (darker green) | `.actions ul li:hover` |
-| Previous button bg | `transparent` | `.actions ul li:first-child` |
-| Previous button text | `#666` | `.actions ul li:first-child a` |
-| Confirmation table text | `#fff` | `.table-responsive tbody td` |
-| Confirmation table label | `rgba(255,255,255,0.6)` | `.table-responsive tbody th` |
-| Page background | Image (full-screen cover) | `.page-content` background-image |
+## Requirements
 
-## Gherkin Requirements
+### Requirement: 4-step wizard progress indicator
 
-### Feature: Multi-Step Account Registration Wizard
+Users SHALL see a horizontal 4-step progress indicator with circular icons connected by dashed lines.
 
-#### Scenario: Page Load and Layout
-  Given the user navigates to the SpellForge wizard
-  When the page loads
-  Then a full-screen background image is displayed
-  And a white card (851px wide, border-radius 10px, shadow) is centered on the page
-  And the card contains a step progress indicator at the top
-  And the first step form is visible
+#### Scenario: Step indicator displays all 4 steps
 
-#### Scenario: Step Progress Indicator
-  Given the wizard is loaded
-  Then three step indicators are displayed horizontally
-  And each step shows a circular icon (50px), step number, and step text
-  And step icons are connected by gray lines (#e5e5e5, 6px height)
-  And the current step icon has a green background (#6eba2a)
-  And inactive step icons have a gray background (#ccc)
+- **WHEN** the user loads the page
+- **THEN** the wizard displays 4 circular step icons labeled "STEP 01" through "STEP 04" connected by dashed gray lines
 
-#### Scenario: Step 1 — Account Information
-  Given the wizard is on step 1
-  Then the heading "Account Information" is visible
-  And the step icon shows a person/account icon
-  And the form fields displayed are: Username, Email Address, Password, Confirm Password
-  And all fields are required
-  And the "Next" button (green circular) is visible
-  And no "Previous" button is shown on step 1
+#### Scenario: Active step is visually distinct
 
-#### Scenario: Step 1 Validation
-  Given the user is on step 1
-  When the user clicks "Next" without filling required fields
-  Then validation errors appear for empty required fields
-  And the form does not advance to step 2
+- **WHEN** the user is on Step 1
+- **THEN** Step 1's circle is filled solid green with a white fork/spoon icon inside, while steps 2–4 show green-outlined circles with green icons (lock, storefront, truck)
 
-#### Scenario: Step 1 to Step 2 Navigation
-  Given the user has filled all required fields on step 1
-  When the user clicks "Next"
-  Then the form transitions to step 2
-  And the step progress indicator updates (step 1 icon stays green, step 2 icon turns green)
+#### Scenario: Completed steps show checkmark
 
-#### Scenario: Step 2 — Payment Information
-  Given the wizard is on step 2
-  Then the heading "Payment Information" is visible
-  And the step icon shows a card/credit-card icon
-  And the form fields displayed are: Card Type (select), Card Number, CVC, Expiry Month (select), Expiry Year (select)
-  And the "Previous" button and "Next" button are both visible
+- **WHEN** the user advances to Step 2
+- **THEN** Step 1 shows a completed checkmark icon and Step 2 becomes the active filled circle
 
-#### Scenario: Step 2 Card Type Options
-  Given the wizard is on step 2
-  When the Card Type select is opened
-  Then the options include: Business Credit Cards, Limited Purpose Cards, Prepaid Cards, Charge Cards, Student Credit Cards
+### Requirement: Step 1 — Basic Details form
 
-#### Scenario: Step 2 to Step 3 Navigation
-  Given the user has filled payment fields on step 2
-  When the user clicks "Next"
-  Then the form transitions to step 3
-  And the step progress indicator updates (steps 1-2 icons green, step 3 icon green)
+Users SHALL be able to fill in personal basic details on the first step.
 
-#### Scenario: Step 3 — Confirmation
-  Given the wizard is on step 3
-  Then the heading "Confirm Your Details" is visible
-  And the step icon shows a receipt icon
-  And a summary table displays all entered information from steps 1 and 2
-  And field labels are shown in muted white text
-  And field values are shown in white text
-  And the "Previous" button and a submit/confirm button are visible
+#### Scenario: Step 1 form fields are displayed
 
-#### Scenario: Step 3 Back Navigation
-  Given the wizard is on step 3
-  When the user clicks "Previous"
-  Then the form returns to step 2
-  And the previously entered payment data is preserved
+- **WHEN** the user is on Step 1 (Basic Details)
+- **THEN** the form displays fields for First Name, Last Name, Email ID, User ID, Country, State, City, Phone Number, and Password
 
-#### Scenario: Form Submission
-  Given the user is on step 3 and has reviewed their details
-  When the user clicks the confirm/submit button
-  Then the form is submitted
-  And a success state or redirect occurs
+#### Scenario: Step 1 form has two-column layout
 
-#### Scenario: Responsive Design
-  Given the user views the wizard on a mobile device
-  Then the card adjusts to fit the screen width
-  And form fields stack vertically
-  And the step indicator remains visible
+- **WHEN** the user views Step 1
+- **THEN** First Name and Last Name are displayed side by side, Email ID and User ID are side by side, and Country/State/City are in a 3-column row
 
-#### Scenario: Brand Footer
-  Given any page of the wizard
-  Then a footer link to "Component Dock" (https://www.componentdock.com/) is present
+#### Scenario: Each input has an icon
+
+- **WHEN** the user views any form field on Step 1
+- **THEN** each input displays a relevant icon on the right edge (person, envelope, globe, pin, phone, eye for password)
+
+### Requirement: Step 2 — Security/Account form
+
+Users SHALL provide account security details on the second step.
+
+#### Scenario: Step 2 fields are displayed
+
+- **WHEN** the user advances to Step 2
+- **THEN** the form displays fields related to account security (username, password, security question)
+
+### Requirement: Step 3 — Store/Order form
+
+Users SHALL provide store or order details on the third step.
+
+#### Scenario: Step 3 fields are displayed
+
+- **WHEN** the user advances to Step 3
+- **THEN** the form displays fields related to store or order configuration
+
+### Requirement: Step 4 — Delivery/Shipping form
+
+Users SHALL provide delivery information on the final step.
+
+#### Scenario: Step 4 fields are displayed
+
+- **WHEN** the user advances to Step 4
+- **THEN** the form displays fields related to delivery or shipping details (address, city, postal code)
+
+### Requirement: Navigation buttons
+
+Users SHALL have Back and Continue buttons for wizard navigation.
+
+#### Scenario: Back button hidden on first step
+
+- **WHEN** the user is on Step 1
+- **THEN** the Back button is not visible
+
+#### Scenario: Back button visible on later steps
+
+- **WHEN** the user is on Step 2 or later
+- **THEN** a Back button is visible that returns to the previous step
+
+#### Scenario: Continue button advances to next step
+
+- **WHEN** the user clicks Continue on a non-final step
+- **THEN** the wizard advances to the next step and updates the progress indicator
+
+#### Scenario: Submit button on final step
+
+- **WHEN** the user is on Step 4 (the final step)
+- **THEN** the Continue button is replaced with a Submit button
+
+### Requirement: Form validation prevents advancing on invalid input
+
+Users SHALL see validation feedback when attempting to advance with missing required fields.
+
+#### Scenario: Empty required fields prevent advancement
+
+- **WHEN** the user clicks Continue with empty required fields
+- **THEN** the wizard does not advance and indicates which fields are required
+
+### Requirement: Successful submission completes the wizard
+
+Users SHALL see a confirmation after completing all steps.
+
+#### Scenario: Successful completion
+
+- **WHEN** the user completes all 4 steps with valid data and clicks Submit
+- **THEN** a success/confirmation screen is displayed
+
+### Requirement: Footer with Component Dock branding
+
+Every template's footer SHALL link to https://www.componentdock.com/.
+
+#### Scenario: Footer contains Component Dock link
+
+- **WHEN** the page is rendered
+- **THEN** the footer contains a link to https://www.componentdock.com/ labeled "Component Dock"
 
 ## Verification Checklist
 
-- [ ] Raleway font loaded from Google Fonts
-- [ ] Full-screen background image applied to page
-- [ ] White card centered with correct dimensions, border-radius, and shadow
-- [ ] Step progress indicator with 3 steps, circles, connectors
-- [ ] Active step icon green (#6eba2a), inactive gray (#ccc)
-- [ ] Step 1: Account Information form with 4 required fields
-- [ ] Step 2: Payment Information form with card type select, card number, CVC, month/year selects
-- [ ] Step 3: Confirmation summary table with all entered data
-- [ ] Navigation: Next/Previous buttons work correctly
-- [ ] Form validation on step 1 prevents empty submissions
-- [ ] Green circular action buttons with shadow
-- [ ] Previous button transparent with gray text
-- [ ] Footer links to Component Dock
+- [ ] 4-step horizontal progress indicator with circular icons and dashed connectors
+- [ ] Active step: filled green circle (#88b34a) + white icon
+- [ ] Inactive steps: green-outlined circles with green icons
+- [ ] Step labels: "STEP 01" through "STEP 04" in uppercase
+- [ ] Card: white background, rounded corners (~8–10px), drop shadow, centered
+- [ ] Page background: warm off-white (#f5f2ec) with food-themed decorative elements
+- [ ] Form fields with right-side icons (person, envelope, globe, pin, phone, lock/eye)
+- [ ] 2-column responsive form layout (Country/State/City = 3-column)
+- [ ] Input borders: light gray (#e0e0e0), placeholder text: #999999
+- [ ] Buttons: solid green (#88b34a), white uppercase text, rounded
+- [ ] Back button hidden on Step 1, visible on Steps 2–4
+- [ ] Continue → Submit transition on final step
+- [ ] Form validation prevents empty required field advancement
+- [ ] Success screen after completing all steps
+- [ ] Footer links to https://www.componentdock.com/
 - [ ] No references to ColorLib in app code
-- [ ] All placeholder images use picsum.photos with deterministic seeds
+- [ ] Font: Poppins (or equivalent geometric sans-serif) via Google Fonts
+- [ ] Placeholder images via picsum.photos/seed/spellforge-N/W/H
+- [ ] Icons from lucide-react
