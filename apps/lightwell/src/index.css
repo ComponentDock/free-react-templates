@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Lightwell brand palette (Cellon preview): #6cbb23 green primary,
+     #f0f8e9 light green, #a6d477 medium green, #f6f6fc body background,
+     #ffffff card background, #777777 ink, #222222 headings,
+     rgba(108,187,35,0.85) overlay green. */
+  --color-brand: #6cbb23;
+  --color-brand-light: #f0f8e9;
+  --color-brand-medium: #a6d477;
+  --color-body-bg: #f6f6fc;
+  --color-card-bg: #ffffff;
+  --color-ink: #777777;
+  --color-heading: #222222;
+  --color-overlay-green: rgba(108, 187, 35, 0.85);
+
+  /* Poppins via Google Fonts <link> in index.html. */
+  --font-heading: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-heading);
+  background: var(--color-body-bg);
+  color: var(--color-ink);
+}
+
+::selection {
+  background: var(--color-brand);
+  color: #fff;
+}

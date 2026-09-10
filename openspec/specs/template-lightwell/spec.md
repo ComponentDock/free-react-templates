@@ -33,158 +33,166 @@ Extracted from the live preview CSS (`main.css`) on 2026-09-11.
 ## Section Order (from live DOM)
 
 1. **Navbar** — Logo + nav links (Home, Generic, Elements) + hamburger menu
-2. **Banner (Hero)** — Split: illustration left, headline right ("Behind Every Success There is a Cactus"), subtitle, CTA button
-3. **Video CTA** — Full-width with green overlay, play button, two-line heading
-4. **About** — Split: text left (heading + paragraph + border CTA button), image right
-5. **Features** — 3-column grid, 7 feature cards (icon + heading + text) on green overlay background
-6. **FAQ + Stats** — Left column: 4 counter stats; Right column: 3 accordion FAQ items
-7. **Contact** — Green overlay background, heading "Send Us Message", form (name, email, message, submit button)
-8. **Footer** — 4-column layout: Top Product links, Navigation links, Compare links, Quick About (text + phone + email + social icons), copyright bar
+2. **Banner (Hero)** — Split: illustration left, headline right, subtitle, CTA button
+3. **Video CTA** — Full-width with green overlay, play button, heading
+4. **About** — Split: text left, image right
+5. **Features** — 3-column grid, 7 feature cards on green overlay background
+6. **FAQ + Stats** — Left column: 4 counter stats; Right column: 3 FAQ items
+7. **Contact** — Green overlay background, heading, form
+8. **Footer** — 4-column layout + copyright bar
 
-## Gherkin Requirements
+## Requirements
 
-### Navbar
+### Requirement: Navbar
 
-```gherkin
-Feature: Navbar
-  Scenario: Renders logo and navigation links
-    Given the page loads
-    Then a logo image is visible
-    And links "Home", "Generic", "Elements" are displayed
+The system SHALL render a fixed-position navigation bar with the Lightwell
+logo, desktop nav links, and a hamburger menu for mobile viewports.
 
-  Scenario: Mobile hamburger menu
-    Given the viewport is below 768px
-    Then the nav links are hidden
-    And a hamburger menu icon is visible
-```
+#### Scenario: Renders logo and navigation links
 
-### Banner (Hero)
+- **GIVEN** the page loads on a desktop viewport
+- **THEN** a link with text "Lightwell" SHALL be visible in the header
+- **AND** links "Home", "Generic", "Elements" SHALL be displayed
 
-```gherkin
-Feature: Banner
-  Scenario: Displays hero headline and CTA
-    Given the page loads
-    Then a hero illustration image is visible
-    And heading "Behind Every Success There is a Cactus" is displayed
-    And a "Get Started" button with arrow icon is visible
+#### Scenario: Mobile hamburger menu
 
-  Scenario: CTA button style
-    Given the page loads
-    Then the "Get Started" button has a green background and white text
-    And the button has fully rounded (pill) corners
-```
+- **GIVEN** the viewport is below 768px
+- **WHEN** the page loads
+- **THEN** the nav links SHALL be hidden
+- **AND** a hamburger menu icon (Menu from lucide-react) SHALL be visible
 
-### Video CTA
+#### Scenario: Hamburger toggle opens mobile nav
 
-```gherkin
-Feature: Video CTA
-  Scenario: Displays video section with play button
-    Given the page loads
-    Then a play button image is visible
-    And heading "Being unique is the preference" is displayed
-    And subtitle "Youtube video will appear in popover" is shown
-    And the section has a green semi-transparent overlay
-```
+- **GIVEN** the viewport is below 768px and the mobile nav is closed
+- **WHEN** the user clicks the hamburger menu button
+- **THEN** the nav links SHALL become visible
 
-### About
+### Requirement: Hero Banner
 
-```gherkin
-Feature: About
-  Scenario: Displays about content
-    Given the page loads
-    Then heading "Brief Information About" is visible
-    And a paragraph describing the company is displayed
-    And a "View More" button with green border is visible
-    And an about illustration image is shown
+The system SHALL render a full-height split hero section with an illustration
+on the left and a headline, subtitle, and green pill CTA button on the right.
 
-  Scenario: About layout
-    Given the page loads
-    Then the text content is on the left
-    And the image is on the right
-```
+#### Scenario: Displays hero headline and CTA
 
-### Features
+- **GIVEN** the page loads
+- **THEN** a hero illustration image SHALL be visible
+- **AND** a heading containing "Behind Every" and "Success" and "Cactus" SHALL be displayed
+- **AND** a "Get Started" button with an arrow icon SHALL be visible
 
-```gherkin
-Feature: Features
-  Scenario: Displays feature cards
-    Given the page loads
-    Then 7 feature cards are displayed
-    And each card has an icon, heading, and paragraph text
-    And the section has a green semi-transparent overlay background
+#### Scenario: CTA button style
 
-  Scenario: Feature card hover
-    Given the page loads
-    When a user hovers over a feature card icon
-    Then the icon background changes to green
-```
+- **GIVEN** the page loads
+- **THEN** the "Get Started" button SHALL have a green background and white text
+- **AND** the button SHALL have fully rounded (pill) corners
 
-### FAQ + Stats
+### Requirement: Video CTA
 
-```gherkin
-Feature: FAQ and Stats
-  Scenario: Displays counter stats
-    Given the page loads
-    Then 4 statistics are shown with large green numbers
-    And labels include "Projects Completed", "New Projects", "Tickets Submitted", "Cup of Coffee"
+The system SHALL render a full-width section with a green semi-transparent
+overlay, a play button, and a heading.
 
-  Scenario: Displays FAQ items
-    Given the page loads
-    Then 3 FAQ questions are displayed
-    And each FAQ has a question heading and answer paragraph
-```
+#### Scenario: Displays video section with play button
 
-### Contact
+- **GIVEN** the page loads
+- **THEN** a play button icon SHALL be visible
+- **AND** a heading "Being unique is the preference" SHALL be displayed
+- **AND** a subtitle "Youtube video will appear in popover" SHALL be shown
+- **AND** the section SHALL have a green semi-transparent overlay
 
-```gherkin
-Feature: Contact
-  Scenario: Displays contact form
-    Given the page loads
-    Then heading "Send Us Message" is visible
-    And the section has a green semi-transparent overlay background
-    And a name input field is present
-    And an email input field is present
-    And a message textarea is present
-    And a "Send Message" submit button is visible
+### Requirement: About
 
-  Scenario: Form input styling
-    Given the page loads
-    Then form inputs have green borders (#a6d477)
-    And input text color is white
-    And input placeholder text is white
-```
+The system SHALL render a split about section with text content on the left
+and an illustration image on the right.
 
-### Footer
+#### Scenario: Displays about content
 
-```gherkin
-Feature: Footer
-  Scenario: Displays footer columns
-    Given the page loads
-    Then 4 footer columns are displayed
-    And column headings are "Top Product", "Navigation", "Compare", "Quick About"
-    And each column contains navigation links
+- **GIVEN** the page loads
+- **THEN** a heading "Brief Information About" SHALL be visible
+- **AND** a paragraph describing the company SHALL be displayed
+- **AND** a "View More" button with green border SHALL be visible
+- **AND** an about illustration image SHALL be shown
 
-  Scenario: Footer social and copyright
-    Given the page loads
-    Then social icons for Facebook, Twitter, Dribbble, Behance are visible
-    And a copyright notice is displayed at the bottom
-```
+#### Scenario: About layout
 
-## Verification Checklist
+- **GIVEN** the page loads
+- **THEN** the text content SHALL be on the left
+- **AND** the image SHALL be on the right
 
-- [ ] Navbar with logo, nav links, hamburger for mobile
-- [ ] Hero banner: split layout with illustration + headline + CTA
-- [ ] Video CTA section with green overlay + play button
-- [ ] About section: split layout with text + image
-- [ ] Features section: 7 cards in grid with green overlay
-- [ ] FAQ + Stats: counters left, accordion right
-- [ ] Contact form: green overlay, name/email/message/submit
-- [ ] Footer: 4 columns + social icons + copyright
-- [ ] Brand color #6cbb23 used for buttons, overlays, counters, accents
-- [ ] Font: Poppins (Google Fonts)
-- [ ] Button style: pill/rounded (border-radius 20px), green primary
-- [ ] Body background: #f6f6fc
-- [ ] Responsive: mobile hamburger, stacked columns
-- [ ] Footer links to componentdock.com
-- [ ] No ColorLib references in app code
-- [ ] Tests at 100% coverage
+### Requirement: Features
+
+The system SHALL render 7 feature cards in a 3-column responsive grid with
+a green overlay background.
+
+#### Scenario: Displays feature cards
+
+- **GIVEN** the page loads
+- **THEN** 7 feature cards SHALL be displayed
+- **AND** each card SHALL have an icon, heading, and paragraph text
+- **AND** the section SHALL have a green semi-transparent overlay background
+
+### Requirement: FAQ and Stats
+
+The system SHALL render a section with 4 counter statistics on the left and
+3 accordion FAQ items on the right.
+
+#### Scenario: Displays counter stats
+
+- **GIVEN** the page loads
+- **THEN** 4 statistics SHALL be shown with large green numbers
+- **AND** labels SHALL include "Projects Completed", "New Projects", "Tickets Submitted", "Cup of Coffee"
+
+#### Scenario: Displays FAQ items
+
+- **GIVEN** the page loads
+- **THEN** 3 FAQ questions SHALL be displayed
+- **AND** each FAQ SHALL have a question heading and answer paragraph
+
+#### Scenario: FAQ accordion toggle
+
+- **GIVEN** the page loads
+- **WHEN** the user clicks a FAQ question heading
+- **THEN** the answer paragraph SHALL toggle visibility
+
+### Requirement: Contact
+
+The system SHALL render a contact form section with a green overlay background,
+name and email inputs, a message textarea, and a submit button.
+
+#### Scenario: Displays contact form
+
+- **GIVEN** the page loads
+- **THEN** a heading "Send Us Message" SHALL be visible
+- **AND** the section SHALL have a green semi-transparent overlay background
+- **AND** a name input field SHALL be present
+- **AND** an email input field SHALL be present
+- **AND** a message textarea SHALL be present
+- **AND** a "Send Message" submit button SHALL be visible
+
+#### Scenario: Form submission
+
+- **GIVEN** the user fills in name, email, and message
+- **WHEN** the user clicks "Send Message"
+- **THEN** the form fields SHALL be cleared
+
+### Requirement: Footer
+
+The system SHALL render a footer with 4 content columns, social icons,
+a copyright notice, and a link to componentdock.com.
+
+#### Scenario: Displays footer columns
+
+- **GIVEN** the page loads
+- **THEN** 4 footer columns SHALL be displayed
+- **AND** column headings SHALL be "Top Product", "Navigation", "Compare", "Quick About"
+- **AND** each column SHALL contain navigation links
+
+#### Scenario: Footer social and copyright
+
+- **GIVEN** the page loads
+- **THEN** social icons for Facebook, Twitter, Dribbble, Behance SHALL be visible
+- **AND** a copyright notice SHALL be displayed at the bottom
+
+#### Scenario: Footer Component Dock link
+
+- **GIVEN** the page loads
+- **THEN** a link to "https://www.componentdock.com/" SHALL be present in the footer
+- **AND** the link text SHALL mention "Component Dock"
