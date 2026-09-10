@@ -923,7 +923,7 @@
 - [x] **Camille** — [colorlib](https://colorlib.com/wp/template/camille/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/camille-free-template.jpg) · [peony](https://peony.free.componentdock.com)
 - [x] **Car Rental** — [colorlib](https://colorlib.com/wp/template/car-rental/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carrental-free-template.jpg) · [fleetly](https://fleetly.free.componentdock.com)
 - [x] **Cardboard** — [colorlib](https://colorlib.com/wp/template/cardboard/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cardboard-free-template.jpg) · [kraft](https://kraft.free.componentdock.com)
-- [ ] **Careers** — [colorlib](https://colorlib.com/wp/template/careers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/careers-free-template.jpg)
+- [~] **Careers** — [colorlib](https://colorlib.com/wp/template/careers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/careers-free-template.jpg)
 - [x] **Cargo** — [colorlib](https://colorlib.com/wp/template/cargo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cargo-free-template.jpg) · [haulage](https://haulage.free.componentdock.com)
 - [x] **Carrent** — [colorlib](https://colorlib.com/wp/template/carrent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carrent-free-template.jpg) · [drively](https://drively.free.componentdock.com)
 - [ ] **Carrentals** — [colorlib](https://colorlib.com/wp/template/carrentals/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carrentals-free-template.jpg)
