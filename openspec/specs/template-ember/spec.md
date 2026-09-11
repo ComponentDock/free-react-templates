@@ -1,79 +1,53 @@
-# Template: Ember (404 Error Page — Lightweight "Oops!" with Orange CTA)
+# Spec: Ember — Restaurant Landing Template
 
-## Purpose
+## Provenance
 
-Ember is a single-page 404 error page template in the free-react-templates
-monorepo. It is an original React recreation of the ColorLib free "Colorlib
-Error 404 V4" error page design (see TEMPLATES.md), built under a different
-name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+- **Source:** ColorLib "Dingo" — https://colorlib.com/wp/template/dingo/
+- **Preview:** https://preview.colorlib.com/theme/dingo/
+- **Screenshot:** ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dingo-free-template.jpg)
 
-The original design is a clean Bootstrap error page with a distinctive
-typographic play: a giant, light-weight "Oops!" display with a solid
-"404 - The Page can't be found" pill label overlapping its base, plus an
-orange "Go TO Homepage" call-to-action button. Ember follows the same
-structure and adds the repo's standard dark-mode toggle and accessible
-patterns.
+## Design Tokens (extracted from css/style.css)
 
-Ember lives in `apps/ember` and uses shared components from `packages/ui`
-(Button, ButtonLink, cn).
+| Token            | Value          | Notes                          |
+| ---------------- | -------------- | ------------------------------ |
+| Brand orange     | `#ff6426`      | Buttons, accents, hover states |
+| Brand dark       | `#e04000`      | Button hover                   |
+| Background white | `#fff`         | Main body                      |
+| Light bg         | `#f9f9ff`      | Alternating sections           |
+| Light bg 2       | `#f0e9ff`      | Alternate sections             |
+| Light bg 3       | `#f6f5f1`      | Menu section background        |
+| Text dark        | `#2c3033`      | Headings, body                 |
+| Muted text       | `#999999`      | Secondary text                 |
+| Muted text 2     | `#828bb2`      | Muted elements                 |
+| Footer bg        | `#2c3033`      | Dark footer                    |
+| Accent cyan      | `#4cd3e3`      | Minor accents                  |
+| Font heading     | `Lora`, serif  | Display font                   |
+| Font body        | `Cardo`, serif | Body text                      |
+
+## Section Structure (in order)
+
+1. **Navbar** — sticky, logo "Ember", links (Home, About, Menu, Chefs, Blog, Contact), "Book a Table" CTA button
+2. **Hero** — full-width background image, tagline "Expensive but the best", headline "Deliciousness jumping into the mouth", body text, two CTAs: "Reservation" + "Watch our story"
+3. **Popular Dishes** — "Popular Dishes" subtitle, "Our Exclusive Items" headline, 4 food cards with image + title + description + "Read More" link
+4. **History** — "Our History" subtitle, headline "Where The Food's As Good As The Root Beer.", body text, "Read More" CTA
+5. **Expect The Best** — "Expect The Best" headline, video play button (YouTube popup)
+6. **Popular Menu** — "Popular Menu" subtitle, "Delicious Food Menu" headline, tabbed interface (Special, Breakfast, Lunch, Dinner, Snacks), each tab shows 6 menu items with image + name + description + price
+7. **Team** — "Team Member" subtitle, "Our Experience Chefs" headline, 4 chef cards with image + name + role
+8. **Reservation** — "Reservation" subtitle, "Book A Table" headline, form (email, persons dropdown, time dropdown, notes textarea), submit button
+9. **Testimonials** — "Testimonials" subtitle, "Customers Feedback" headline, 3 testimonial cards with quote + author + role
+10. **Blog** — "Recent News" subtitle, "Latest From Blog" headline, 4 blog cards with image + date + category + title + "Read More"
+11. **Footer** — dark bg, 4 columns (About Us, Important Links, Contact, Newsletter with email input), copyright bar with "Made with Component Dock" link
 
 ## Requirements
 
-### Requirement: Navigation bar
-The system SHALL render a top navigation bar with the site name "Ember", a
-"Home" link, and a dark-mode toggle button.
-
-#### Scenario: Navbar content
-- **GIVEN** the Ember page is rendered
-- **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Ember" and a "Home" link pointing to the page root
-- **AND** the navbar SHALL show a dark-mode toggle button
-
-#### Scenario: Dark mode toggle
-- **GIVEN** the page is rendered
-- **WHEN** the user presses the dark-mode toggle
-- **THEN** the `.dark` class SHALL be toggled on the document root element
-- **AND** the toggle SHALL reflect the current mode
-
-### Requirement: Error section
-The system SHALL render a centered error section with a giant light-weight
-"Oops!" level-1 heading, a solid "404 - The Page can't be found" level-2 label
-overlapping the base of the display, and an orange "Back to home" button that
-links to the page root.
-
-#### Scenario: Error content
-- **GIVEN** the page is rendered
-- **WHEN** the error section is displayed
-- **THEN** it SHALL contain a level-1 heading "Oops!" and a level-2 heading "404 - The Page can't be found"
-- **AND** it SHALL show a "Back to home" button linking to the page root
-
-#### Scenario: Lightweight display
-- **GIVEN** the page is rendered
-- **WHEN** the error section is displayed
-- **THEN** the "Oops!" heading SHALL use a very large, light (weight 200) type style
-- **AND** the "404 - The Page can't be found" label SHALL be uppercase and rendered as a solid pill overlapping the base of the display
-
-#### Scenario: Button accent
-- **GIVEN** the page is rendered
-- **WHEN** the error section is displayed
-- **THEN** the "Back to home" button SHALL use a distinct orange accent style
-
-### Requirement: Footer
-The system SHALL render a minimal footer with the site name, a short tagline,
-and social links.
-
-#### Scenario: Footer content
-- **GIVEN** the page is rendered
-- **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Ember" and a tagline
-- **AND** it SHALL show social links (GitHub, X, LinkedIn)
-
-### Requirement: Page composition
-The system SHALL compose all sections in a single page with a main landmark and
-a document title.
-
-#### Scenario: Full page render
-- **GIVEN** the Ember app is rendered
-- **WHEN** the page loads
-- **THEN** the page SHALL compose the Navbar in the banner landmark, the error section in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Ember — Error Page Template"
+- [ ] Gherkin scenarios cover all 11 sections
+- [ ] Tabbed menu with interactive switching
+- [ ] Reservation form with email validation
+- [ ] Newsletter subscription in footer
+- [ ] Mobile responsive (hamburger menu, stacked layout)
+- [ ] Dark mode toggle
+- [ ] 100% test coverage (lines, functions, branches, statements)
+- [ ] No ColorLib references in app source
+- [ ] Footer links https://www.componentdock.com/
+- [ ] public/CNAME = ember.free.componentdock.com
+- [ ] package.json homepage = https://ember.free.componentdock.com
