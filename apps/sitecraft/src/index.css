@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand amber — from the original stylesheet: link/hover/active color
+     (#F7B633), used on nav highlights, buttons, and section accents. */
+  --color-brand: #f7b633;
+
+  /* Near-white body background (whitesmoke in the original). */
+  --color-surface: #f5f5f5;
+
+  /* Dark ink for headings (#000 in the original). */
+  --color-ink: #111827;
+
+  /* Original font: "Poppins" (weights 300/400/500/600/700) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
