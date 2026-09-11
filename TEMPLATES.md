@@ -933,7 +933,7 @@
 - [x] **Cellon** — [colorlib](https://colorlib.com/wp/template/cellon/) · [lightwell](https://lightwell.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cellon-free-ligh-consulting-company-template.jpg)
 - [x] **Celt** — [colorlib](https://colorlib.com/wp/template/celt/) · [buildwell](https://buildwell.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/celt-construction-company-website-template.jpg)
 - [x] **Chimper** — [colorlib](https://colorlib.com/wp/template/chimper/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/chimper-free-template.jpg) · [Chimper](https://chimper.free.componentdock.com)
-- [ ] **Classic** — [colorlib](https://colorlib.com/wp/template/classic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/classic-free-template.jpg)
+- [~] **Classic** — [colorlib](https://colorlib.com/wp/template/classic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/classic-free-template.jpg)
 - [ ] **Classy Ads** — [colorlib](https://colorlib.com/wp/template/classy-ads/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/classyads-free-template.jpg)
 - [ ] **Cleanex** — [colorlib](https://colorlib.com/wp/template/cleanex/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cleanex-template.jpg)
 - [x] **Cleaning** — [colorlib](https://colorlib.com/wp/template/cleaning/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cleaning-free-template.jpg) · [spotless](https://spotless.free.componentdock.com)
