@@ -959,7 +959,7 @@
 - [x] **Coza Store** — [colorlib](https://colorlib.com/wp/template/coza-store/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cozastore-free-template.jpg) · [mannequin](https://mannequin.free.componentdock.com)
 - [x] **Craft** — [colorlib](https://colorlib.com/wp/template/craft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/craft-free-template.jpg) · [forge](https://forge.free.componentdock.com)
 - [x] **Crafted** — [colorlib](https://colorlib.com/wp/template/crafted/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/crafted-free-template.jpg) · [Crafted](https://crafted.free.componentdock.com)
-- [ ] **Create** — [colorlib](https://colorlib.com/wp/template/create/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/create-free-template.jpg)
+- [~] **Create** — [colorlib](https://colorlib.com/wp/template/create/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/create-free-template.jpg)
 - [x] **Creative Agency 2** — [colorlib](https://colorlib.com/wp/template/creative-agency-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agency-free-agency-website-template.jpg) · [imagine](https://imagine.free.componentdock.com)
 - [x] **Creative Agency 2 2** — [colorlib](https://colorlib.com/wp/template/creative-agency-2-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/creativeagency2-free-template.jpg) · [axiom](https://axiom.free.componentdock.com)
 - [ ] **Credit** — [colorlib](https://colorlib.com/wp/template/credit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/credit-free-template.jpg)
