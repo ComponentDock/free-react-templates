@@ -13,28 +13,28 @@ Recreation of the ColorLib "Consula" template as a React 19 + Vite + Tailwind 4 
 
 ## Design Tokens (extracted from preview CSS)
 
-| Token | Value | Source |
-|-------|-------|--------|
-| Font family | `"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif` | CSS headings, form controls |
-| Primary accent | `#46ddb0` (teal/green) | `.btn.btn-primary`, `.section-sub-title`, `.form-control:focus` |
-| Primary hover (button) | `#fff` bg, `#46ddb0` text | `.btn.btn-primary:hover` |
-| Dark hover | `#666666` | `.btn.btn-primary.btn-black--hover:hover` |
-| Body color | `gray` | `body` |
-| Body weight | 400, font-size 1rem, line-height 1.7 | `body` |
-| Selection | `#000` bg, `#fff` text | `::selection` |
-| Button border-radius | 30px | `.btn` |
-| Button padding | 10px 30px | `.btn` |
-| Button font-size | 16px | `.btn` |
-| Form height | 43px, border-radius 30px | `.form-control` |
-| Footer bg | `#333333` | `.site-footer` |
-| Footer padding | 4em 0 | `.site-footer` |
-| Section sub-title | font-size 13px, color `#46ddb0` | `.section-sub-title` |
-| Text-muted | `#737373` | `.text-muted` |
-| Navbar | White bg, sticky header, fixed position | `.site-navbar` |
-| Top bar | `bg-light`, py-3 | `.top-bar` |
-| Hero | Background image with overlay (`.overlay:before`) | `.site-blocks-cover` |
-| Testimonial | max-width 800px, centered, blockquote 1.5rem italic, circular avatar (border-radius 50%) | `.testimonial` |
-| Brand color in headings | `#46ddb0` for dot in logo, nav active state | `.text-primary` |
+| Token                   | Value                                                                                                  | Source                                                          |
+| ----------------------- | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------- |
+| Font family             | `"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif` | CSS headings, form controls                                     |
+| Primary accent          | `#46ddb0` (teal/green)                                                                                 | `.btn.btn-primary`, `.section-sub-title`, `.form-control:focus` |
+| Primary hover (button)  | `#fff` bg, `#46ddb0` text                                                                              | `.btn.btn-primary:hover`                                        |
+| Dark hover              | `#666666`                                                                                              | `.btn.btn-primary.btn-black--hover:hover`                       |
+| Body color              | `gray`                                                                                                 | `body`                                                          |
+| Body weight             | 400, font-size 1rem, line-height 1.7                                                                   | `body`                                                          |
+| Selection               | `#000` bg, `#fff` text                                                                                 | `::selection`                                                   |
+| Button border-radius    | 30px                                                                                                   | `.btn`                                                          |
+| Button padding          | 10px 30px                                                                                              | `.btn`                                                          |
+| Button font-size        | 16px                                                                                                   | `.btn`                                                          |
+| Form height             | 43px, border-radius 30px                                                                               | `.form-control`                                                 |
+| Footer bg               | `#333333`                                                                                              | `.site-footer`                                                  |
+| Footer padding          | 4em 0                                                                                                  | `.site-footer`                                                  |
+| Section sub-title       | font-size 13px, color `#46ddb0`                                                                        | `.section-sub-title`                                            |
+| Text-muted              | `#737373`                                                                                              | `.text-muted`                                                   |
+| Navbar                  | White bg, sticky header, fixed position                                                                | `.site-navbar`                                                  |
+| Top bar                 | `bg-light`, py-3                                                                                       | `.top-bar`                                                      |
+| Hero                    | Background image with overlay (`.overlay:before`)                                                      | `.site-blocks-cover`                                            |
+| Testimonial             | max-width 800px, centered, blockquote 1.5rem italic, circular avatar (border-radius 50%)               | `.testimonial`                                                  |
+| Brand color in headings | `#46ddb0` for dot in logo, nav active state                                                            | `.text-primary`                                                 |
 
 ## Visual Design Notes (from screenshot + preview DOM)
 
@@ -52,113 +52,165 @@ Recreation of the ColorLib "Consula" template as a React 19 + Vite + Tailwind 4 
 - **CTA Banner:** Full-width teal (#46ddb0) bg, "Let's Get Started" heading in white.
 - **Footer:** Dark (#333) bg, 4 columns: About Us, Quick Links, Follow Us (social icons), Subscribe Newsletter (email input). Copyright line.
 
-## Gherkin Requirements
+## Requirements
 
-### Feature: Top Bar
+### Requirement: Top Bar
 
-Scenario: Top bar with social links and contact info
-  Given the user views the top bar
-  Then social media icons (Facebook, Twitter, Instagram, LinkedIn) are on the left
-  And phone number and email are on the right
-  And the top bar has a light gray background
+The system SHALL render a top bar with social media icons (Facebook, Twitter, Instagram, LinkedIn) on the left and phone + email contact info on the right, on a light gray background.
 
-### Feature: Navigation Bar
+#### Scenario: Top bar content
 
-Scenario: Sticky navbar with logo and navigation
-  Given the user is on any section
-  When they look at the top
-  Then a white sticky navbar is visible
-  And a logo "Dictum" (bold black + teal dot) is on the left
-  And nav links are: Home, About Us, Team, Services, Testimonials, Blog, Contact
-  And the active nav link uses teal accent color
+- **GIVEN** the user views the top bar
+- **THEN** social media icons are on the left
+- **AND** phone number and email are on the right
+- **AND** the top bar has a light gray background
 
-Scenario: Clicking a nav link scrolls to the section
-  Given the user clicks "Team" in the navigation
-  Then the page scrolls to the team section
+### Requirement: Navigation Bar
 
-### Feature: Hero Section
+The system SHALL render a sticky white navbar with the logo "Dictum." on the left and navigation links (Home, About Us, Team, Services, Testimonials, Blog, Contact) on the right.
 
-Scenario: Hero displays heading, subtext, and CTA
-  Given the user views the hero
-  Then a background image fills the hero area
-  And a dark overlay covers the background
-  And a large white heading "We Are The Best Consulting Agency" is shown
-  And a descriptive paragraph is present
-  And a "Get Started" teal button (border-radius 30px) is visible
+#### Scenario: Sticky navbar content
 
-### Feature: About Us Section
+- **GIVEN** the user is on any section
+- **WHEN** they look at the top
+- **THEN** a white sticky navbar is visible
+- **AND** a logo "Dictum" with teal dot is on the left
+- **AND** nav links are: Home, About Us, Team, Services, Testimonials, Blog, Contact
 
-Scenario: Split layout with experience badge and text
-  Given the user scrolls to the about section
-  Then an image is on the left with a "50 years of experience" badge overlay
-  And a heading "Welcome To Dictum" is on the right
-  And a descriptive paragraph is below the heading
-  And the section sub-title "About Us" is in teal (#46ddb0)
+#### Scenario: Mobile menu toggle
 
-### Feature: Team Section
+- **GIVEN** the user is on a mobile device
+- **WHEN** they click the hamburger menu button
+- **THEN** the mobile navigation menu opens
+- **AND** clicking a link closes the menu
 
-Scenario: Three team members in a grid
-  Given the user scrolls to the team section
-  Then three team member cards are displayed in a 3-column grid
-  And each card has a circular avatar, name, and role
-  And the section sub-title "Team" is in teal
+### Requirement: Hero Section
 
-### Feature: How It Works Section
+The system SHALL render a hero section with a background image, dark overlay, large white heading, descriptive text, and a teal "Get Started" CTA button.
 
-Scenario: Three process steps displayed
-  Given the user scrolls to the how-it-works section
-  Then three steps are shown: Innovate, Create, Scale
-  And each step has a heading and description paragraph
+#### Scenario: Hero content
 
-### Feature: Services Section
+- **GIVEN** the user views the hero
+- **THEN** a background image fills the hero area
+- **AND** a dark overlay covers the background
+- **AND** a large white heading is shown
+- **AND** a teal CTA button is visible
 
-Scenario: Six service cards in a grid
-  Given the user scrolls to the services section
-  Then six service cards are displayed in a 3-column grid
-  And each card has an icon, title, and description
-  And the cards are: Business Consulting, Market Analysis, User Monitoring, Insurance Consulting, Financial Investment, Financial Management
+### Requirement: About Us Section
 
-### Feature: Testimonials Section
+The system SHALL render a split-layout about section with an image + experience badge on the left and heading + description on the right.
 
-Scenario: Testimonial carousel with quotes
-  Given the user scrolls to the testimonials section
-  Then a carousel of testimonials is shown
-  And each testimonial has a circular avatar, quote text, and author
-  And testimonials are centered with max-width 800px
+#### Scenario: About section layout
 
-### Feature: Blog Section
+- **GIVEN** the user scrolls to the about section
+- **THEN** an image is on the left with an experience badge overlay
+- **AND** a heading "Welcome To Dictum" is on the right
+- **AND** descriptive paragraphs are below the heading
 
-Scenario: Three blog post previews
-  Given the user scrolls to the blog section
-  Then three blog post cards are shown
-  And each has a title and brief description
+### Requirement: Team Section
 
-### Feature: Contact Section
+The system SHALL render three team member cards in a 3-column grid, each with a circular avatar, name, and role.
 
-Scenario: Contact form with sidebar
-  Given the user scrolls to the contact section
-  Then a "Our Services" sidebar is on the left
-  And a contact form is on the right
-  And the form has fields: First Name, Last Name, Email, Subject, Message
-  And a submit button is below the form
+#### Scenario: Team grid
 
-### Feature: CTA Banner
+- **GIVEN** the user scrolls to the team section
+- **THEN** three team member cards are displayed in a 3-column grid
+- **AND** each card has a circular avatar, name, and role
 
-Scenario: Full-width call-to-action banner
-  Given the user scrolls to the CTA banner
-  Then a full-width teal (#46ddb0) background is shown
-  And a white heading "Let's Get Started" is centered
+### Requirement: How It Works Section
 
-### Feature: Footer
+The system SHALL render three process steps (Innovate, Create, Scale) in a 3-column layout.
 
-Scenario: Four-column footer with newsletter
-  Given the user scrolls to the footer
-  Then a dark (#333) background is visible
-  And four columns are shown: About Us, Quick Links, Follow Us, Subscribe Newsletter
-  And social icons are in the Follow Us column
-  And the newsletter has an email input and subscribe button
-  And a copyright line with "Made with ❤ by Component Dock" is at the bottom
-  And the footer links to https://www.componentdock.com/
+#### Scenario: Process steps
+
+- **GIVEN** the user scrolls to the how-it-works section
+- **THEN** three steps are shown: Innovate, Create, Scale
+- **AND** each step has a heading and description paragraph
+
+### Requirement: Services Section
+
+The system SHALL render six service cards in a 3-column grid, each with an icon, title, and description.
+
+#### Scenario: Service cards
+
+- **GIVEN** the user scrolls to the services section
+- **THEN** six service cards are displayed in a 3-column grid
+- **AND** each card has an icon, title, and description
+
+### Requirement: Testimonials Section
+
+The system SHALL render a testimonial carousel with quotes, circular avatars, and author names, centered with max-width.
+
+#### Scenario: Testimonial carousel
+
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a carousel of testimonials is shown
+- **AND** each testimonial has a circular avatar, quote text, and author
+- **AND** navigation arrows allow cycling through testimonials
+
+### Requirement: Specialties Section
+
+The system SHALL render two specialty cards (Web & Mobile Specialties and Intuitive Thinkers) in a 2-column grid.
+
+#### Scenario: Specialty cards
+
+- **GIVEN** the user scrolls to the specialties section
+- **THEN** two specialty cards are displayed
+- **AND** each card has a heading and description
+
+### Requirement: Blog Section
+
+The system SHALL render three blog post cards with images, dates, titles, and descriptions.
+
+#### Scenario: Blog posts
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** three blog post cards are shown
+- **AND** each card has a title, date, and description
+
+### Requirement: Contact Section
+
+The system SHALL render a contact form with five fields (First Name, Last Name, Email, Subject, Message) and a sidebar with services list and contact info.
+
+#### Scenario: Contact form
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a contact form with five fields is on the right
+- **AND** an "Our Services" sidebar is on the left
+- **AND** a submit button is below the form
+
+### Requirement: CTA Banner
+
+The system SHALL render a full-width teal banner with a white "Let's Get Started" heading.
+
+#### Scenario: CTA banner
+
+- **GIVEN** the user scrolls to the CTA banner
+- **THEN** a full-width teal background is shown
+- **AND** a white heading is centered
+
+### Requirement: Footer
+
+The system SHALL render a dark four-column footer with About Us, Quick Links, Follow Us (social icons), and Subscribe Newsletter sections, plus a copyright line linking to Component Dock.
+
+#### Scenario: Footer content
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark background is visible
+- **AND** four columns are shown: About Us, Quick Links, Follow Us, Subscribe Newsletter
+- **AND** the copyright links to https://www.componentdock.com/
+
+### Requirement: Design Tokens
+
+The system SHALL use Roboto font, teal accent color (#46ddb0), button border-radius 30px, and dark footer (#333333) matching the original design.
+
+#### Scenario: Design fidelity
+
+- **GIVEN** the template is rendered
+- **THEN** the font family is Roboto
+- **AND** the primary accent color is teal (#46ddb0)
+- **AND** buttons have 30px border-radius
+- **AND** the footer has a dark background
 
 ## Verification Checklist
 
