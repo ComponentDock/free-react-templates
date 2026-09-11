@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Acumen brand palette — blue gradient #a1c4fd → #c2e9fb from
+     the original design. Pill-shaped buttons, Montserrat headings,
+     Roboto body, Satisfy accent. */
+  --color-brand: #a1c4fd;
+  --color-brand-light: #c2e9fb;
+  --color-brand-dark: #7bade8;
+
+  /* Ink — dark text (#4f4f4f from the original). */
+  --color-ink: #4f4f4f;
+  --color-ink-dark: #333333;
+
+  /* Paper — light section background (#f9f9f9). */
+  --color-paper: #f9f9f9;
+
+  /* Mist — muted text (#898989). */
+  --color-mist: #898989;
+
+  /* Border color. */
+  --color-divider: #e8e8e8;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand blue. */
+  --color-primary-50: #f0f7ff;
+  --color-primary-100: #e0f0ff;
+  --color-primary-200: #c2e1ff;
+  --color-primary-300: #a1c4fd;
+  --color-primary-400: #7bade8;
+  --color-primary-500: #5a96d8;
+  --color-primary-600: #4080c8;
+  --color-primary-700: #2e68b0;
+  --color-primary-800: #1f4f90;
+  --color-primary-900: #153a70;
+
+  /* Original fonts: "Montserrat" (headings) + "Roboto" (body) + "Satisfy" (accent). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-accent: 'Satisfy', cursive;
+}
