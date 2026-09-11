@@ -49,180 +49,158 @@ Extracted from the live preview CSS (`css/style.css`):
 - Footer: dark navy with logo, quick links, social icons, newsletter subscribe.
 - Bottom footer with copyright and Component Dock link.
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Header navigation
+### Requirement: Header navigation
 
-```gherkin
-Feature: Header
+The page SHALL display a top info bar with contact details and a main navbar with logo, navigation links, and search icon.
 
-  Scenario: Top navbar shows contact info
-    Given the page loads
-    Then I see an address, phone number, and email in the top bar
-    And the top bar has a dark navy background
+#### Scenario: Top navbar shows contact info
 
-  Scenario: Main navbar displays logo and navigation links
-    Given the page loads
-    Then I see the BuildWell logo on the left
-    And I see nav links: Home, About, Services, Portfolio, Blog, Contact
-    And a search icon is present in the navbar
+- **WHEN** the page loads
+- **THEN** I see an address, phone number, and email in the top bar
+- **AND** the top bar has a dark navy background
 
-  Scenario: Sticky navbar on scroll
-    Given I scroll past the hero
-    Then the navbar sticks to the top of the viewport
-    And a dark background appears behind the navbar
-```
+#### Scenario: Main navbar displays logo and navigation links
 
-### Scenario: Hero section
+- **WHEN** the page loads
+- **THEN** I see the BuildWell logo on the left
+- **AND** I see nav links: Home, About, Services, Portfolio, Blog, Contact
+- **AND** a search icon is present in the navbar
 
-```gherkin
-Feature: Hero
+### Requirement: Hero section
 
-  Scenario: Hero displays headline and CTAs
-    Given the page loads
-    Then I see a large headline "We Build Your Dream"
-    And I see two buttons: a dark "Contact Us" button and a yellow "Learn more" button
+The page SHALL display a hero section with headline, description, and two CTA buttons.
 
-  Scenario: Hero has background image with overlay
-    Given the page loads
-    Then the hero has a dark background image with semi-transparent overlay
-```
+#### Scenario: Hero displays headline and CTAs
 
-### Scenario: About section
+- **WHEN** the page loads
+- **THEN** I see a large headline "We Build Your Dream"
+- **AND** I see two buttons: a dark "Contact Us" button and a yellow "Learn more" button
 
-```gherkin
-Feature: About
+#### Scenario: Hero has background image with overlay
 
-  Scenario: About section shows three feature cards
-    Given I scroll to the About section
-    Then I see three columns: Certified Experience, Great Teamwork, Modern Technology
-    And each card has an icon, title, and description
-```
+- **WHEN** the page loads
+- **THEN** the hero has a dark background image with semi-transparent overlay
 
-### Scenario: Stats/Numbers section
+### Requirement: About section
 
-```gherkin
-Feature: Stats
+The page SHALL display three feature cards and an About Us text block.
 
-  Scenario: Yellow stats band shows four counters
-    Given I scroll to the Numbers section
-    Then I see a yellow background band
-    And four stat counters are displayed (e.g. Years, Projects, Clients, Awards)
-    And each counter has a circular yellow icon above it
-```
+#### Scenario: About section shows three feature cards
 
-### Scenario: Portfolio section
+- **WHEN** I scroll to the About section
+- **THEN** I see three columns: Certified Experience, Great Teamwork, Modern Technology
+- **AND** each card has an icon, title, and description
 
-```gherkin
-Feature: Portfolio
+### Requirement: Stats section
 
-  Scenario: Featured Works grid
-    Given I scroll to the Portfolio section
-    Then I see the heading "Featured Works"
-    And four project cards are displayed in a grid
-    And hovering a card shows an overlay with view and link icons
+The page SHALL display a yellow stats band with four counters.
 
-  Scenario: Portfolio has parallax background
-    Given I scroll to the Portfolio section
-    Then the section has a parallax background image
-```
+#### Scenario: Yellow stats band shows four counters
 
-### Scenario: Services section
+- **WHEN** I scroll to the Numbers section
+- **THEN** I see a yellow background band
+- **AND** four stat counters are displayed (Years, Projects, Clients, Awards)
+- **AND** each counter has a circular yellow icon above it
 
-```gherkin
-Feature: Services
+### Requirement: Portfolio section
 
-  Scenario: Six service cards
-    Given I scroll to the Services section
-    Then I see the heading "Our Services"
-    And six service cards are displayed: Construction, Renovation, Architecture, Painting, Decorating, Consulting
-    And each card has an icon, title, and short description
-```
+The page SHALL display a featured works grid with hover overlays.
 
-### Scenario: FAQ/Accordion section
+#### Scenario: Featured Works grid
 
-```gherkin
-Feature: FAQ
+- **WHEN** I scroll to the Portfolio section
+- **THEN** I see the heading "Featured Works"
+- **AND** four project cards are displayed in a grid
+- **AND** hovering a card shows an overlay with view and link icons
 
-  Scenario: Accordion FAQ with three items
-    Given I scroll to the Why Choose Us section
-    Then I see three collapsible accordion panels
-    And clicking a panel header expands it to show content
-    And clicking another panel collapses the previously open one
-```
+### Requirement: Services section
 
-### Scenario: Testimonial section
+The page SHALL display six service cards with icons and descriptions.
 
-```gherkin
-Feature: Testimonial
+#### Scenario: Six service cards
 
-  Scenario: Yellow testimonial band
-    Given I scroll to the Testimonial section
-    Then I see a yellow background section
-    And a client quote is displayed with quotation mark styling
-    And client name and role are shown below the quote
-```
+- **WHEN** I scroll to the Services section
+- **THEN** I see the heading "Our Services"
+- **AND** six service cards are displayed: Construction, Renovation, Architecture, Painting, Decorating, Consulting
+- **AND** each card has an icon, title, and short description
 
-### Scenario: Partners/Clients section
+### Requirement: FAQ section
 
-```gherkin
-Feature: Partners
+The page SHALL display an interactive accordion FAQ with three items.
 
-  Scenario: Partner logos carousel
-    Given I scroll to the Partners section
-    Then I see a row of partner/client logos
-    And the logos are displayed in a slider or flex row
-```
+#### Scenario: Accordion FAQ with three items
 
-### Scenario: Blog section
+- **WHEN** I scroll to the Why Choose Us section
+- **THEN** I see three collapsible accordion panels
+- **AND** clicking a panel header expands it to show content
+- **AND** clicking another panel collapses the previously open one
 
-```gherkin
-Feature: Blog
+### Requirement: Testimonial section
 
-  Scenario: Latest News with three blog cards
-    Given I scroll to the Blog section
-    Then I see the heading "Latest News"
-    And three blog cards are displayed with image, title, and excerpt
-```
+The page SHALL display client testimonials.
 
-### Scenario: CTA/Newsletter section
+#### Scenario: Testimonial section
 
-```gherkin
-Feature: CTA
+- **WHEN** I scroll to the Testimonial section
+- **THEN** I see client quotes with quotation mark styling
+- **AND** client name and role are shown below each quote
 
-  Scenario: Newsletter subscribe bar
-    Given I scroll to the CTA section
-    Then I see a yellow background section
-    And I see a newsletter subscription form with email input and Subscribe button
-```
+### Requirement: Partners section
 
-### Scenario: Footer
+The page SHALL display partner logos.
 
-```gherkin
-Feature: Footer
+#### Scenario: Partner logos row
 
-  Scenario: Dark footer with widgets
-    Given I scroll to the footer
-    Then I see a dark navy background
-    And it contains the BuildWell logo, Quick Links, and Keep in Touch sections
-    And a newsletter subscribe form is present
-    And social media icons are displayed
+- **WHEN** I scroll to the Partners section
+- **THEN** I see a row of partner/client logos
 
-  Scenario: Bottom footer copyright
-    Given I scroll to the very bottom
-    Then I see a copyright notice
-    And a "Component Dock" link is present
-```
+### Requirement: Blog section
+
+The page SHALL display latest news blog cards.
+
+#### Scenario: Latest News with three blog cards
+
+- **WHEN** I scroll to the Blog section
+- **THEN** I see the heading "Latest News"
+- **AND** three blog cards are displayed with image, title, and excerpt
+
+### Requirement: Newsletter section
+
+The page SHALL display a newsletter subscription form.
+
+#### Scenario: Newsletter subscribe bar
+
+- **WHEN** I scroll to the Newsletter section
+- **THEN** I see a yellow background section
+- **AND** I see a newsletter subscription form with email input and Subscribe button
+
+### Requirement: Footer
+
+The page SHALL display a dark footer with widgets and Component Dock link.
+
+#### Scenario: Dark footer with widgets
+
+- **WHEN** I scroll to the footer
+- **THEN** I see a dark navy background
+- **AND** it contains the BuildWell logo, Quick Links, and Keep in Touch sections
+- **AND** a newsletter subscribe form is present
+- **AND** social media icons are displayed
+
+#### Scenario: Bottom footer copyright
+
+- **WHEN** I scroll to the very bottom
+- **THEN** I see a copyright notice
+- **AND** a "Component Dock" link is present
 
 ## Verification checklist
 
-- [ ] All 12 sections rendered in correct order: Header → Hero → About → Stats → Portfolio → Services → FAQ → Testimonial → Partners → Blog → CTA → Footer
+- [ ] All 12 sections rendered in correct order: Header → Hero → About → Stats → Portfolio → Services → FAQ → Testimonial → Partners → Blog → Newsletter → Footer
 - [ ] Design tokens match: `#001232` dark navy, `#FFD626` yellow, Poppins font
-- [ ] Square buttons (border-radius 0) with hover fill animation
 - [ ] Circular yellow icon badges on stat counters (border-radius 50%)
-- [ ] Parallax background on portfolio section
 - [ ] Accordion FAQ is interactive (expand/collapse)
-- [ ] Newsletter form in CTA section
+- [ ] Newsletter form in Newsletter section
 - [ ] Footer links to Component Dock
 - [ ] No references to ColorLib in any app source files
 - [ ] Placeholder images via `picsum.photos/seed/buildwell-<n>/`

@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* BuildWell brand palette — from ColorLib Celt design tokens:
+     dark navy #001232, yellow accent #FFD626, body grey #64728A,
+     heading dark #004, light bg #F8F8F8. */
+  --color-brand: #001232;
+  --color-brand-light: #001a45;
+  --color-accent: #ffd626;
+  --color-accent-dark: #e6c022;
+
+  --color-heading: #000044;
+  --color-body: #64728a;
+  --color-paper: #ffffff;
+  --color-light: #f8f8f8;
+  --color-muted: #eeeeee;
+
+  --color-primary-50: #fffde6;
+  --color-primary-100: #fff9b3;
+  --color-primary-200: #fff380;
+  --color-primary-300: #ffed4d;
+  --color-primary-400: #ffe71a;
+  --color-primary-500: #ffd626;
+  --color-primary-600: #e6c022;
+  --color-primary-700: #ccaa1d;
+  --color-primary-800: #b39419;
+  --color-primary-900: #997e15;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
