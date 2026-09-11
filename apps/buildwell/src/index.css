@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* BuildWell brand palette — from ColorLib Celt design tokens:
+  /* BuildWell brand palette — design tokens:
      dark navy #001232, yellow accent #FFD626, body grey #64728A,
      heading dark #004, light bg #F8F8F8. */
   --color-brand: #001232;
