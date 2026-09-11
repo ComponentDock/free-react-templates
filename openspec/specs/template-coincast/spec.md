@@ -17,21 +17,21 @@ focuses on the homepage (`index.html`).
 
 ## Design tokens (from live preview stylesheet, verified 2026-09-10)
 
-| Token         | Value                                | Use                                                                  |
-| ------------- | ------------------------------------ | -------------------------------------------------------------------- |
-| Font primary  | 'Open Sans', sans-serif              | Body text, paragraphs, general UI                                    |
-| Font heading  | 'Roboto', sans-serif                 | Headings, titles                                                     |
-| Brand orange  | `#ff7700`                            | Primary accent, buttons, logo "Buzz" text, CTA, hover states, stars  |
-| Dark bg       | `#242424`                            | Header bottom bar, footer background, dark sections                  |
-| White         | `#fff`                               | Text on dark, button text, backgrounds on light sections             |
-| Light gray bg | `#f4f4f4`                            | Featured area, service area, about area, blog area backgrounds       |
-| Border gray   | `#e5e5e5`                            | Card borders, dividers                                               |
-| Medium gray   | `#616162`                            | Secondary text                                                       |
-| Body bg       | `#fff`                               | Page default background                                              |
-| Orange hover  | `#ff8d29`                            | Button hover state                                                   |
+| Token         | Value                                | Use                                                                 |
+| ------------- | ------------------------------------ | ------------------------------------------------------------------- |
+| Font primary  | 'Open Sans', sans-serif              | Body text, paragraphs, general UI                                   |
+| Font heading  | 'Roboto', sans-serif                 | Headings, titles                                                    |
+| Brand orange  | `#ff7700`                            | Primary accent, buttons, logo "Buzz" text, CTA, hover states, stars |
+| Dark bg       | `#242424`                            | Header bottom bar, footer background, dark sections                 |
+| White         | `#fff`                               | Text on dark, button text, backgrounds on light sections            |
+| Light gray bg | `#f4f4f4`                            | Featured area, service area, about area, blog area backgrounds      |
+| Border gray   | `#e5e5e5`                            | Card borders, dividers                                              |
+| Medium gray   | `#616162`                            | Secondary text                                                      |
+| Body bg       | `#fff`                               | Page default background                                             |
+| Orange hover  | `#ff8d29`                            | Button hover state                                                  |
 | Button style  | bg `#ff7700`, white text, 4px radius | Uppercase, bold, 14px vertical / 24px horizontal padding            |
-| Section title | 36px, weight 700, centered          | "Why Choose Bitcoin", "Our Team", etc. with orange underline image   |
-| Card shadow   | 0px 5px 20px rgba(0,0,0,0.05)       | Featured cards, service items, blog cards                             |
+| Section title | 36px, weight 700, centered           | "Why Choose Bitcoin", "Our Team", etc. with orange underline image  |
+| Card shadow   | 0px 5px 20px rgba(0,0,0,0.05)        | Featured cards, service items, blog cards                           |
 
 ## Section structure (from live homepage DOM)
 
@@ -99,7 +99,7 @@ focuses on the homepage (`index.html`).
     - 3-column widgets (About, Quick Links, Latest News)
     - Copyright bar with social icons
 
-## Gherkin requirements
+## Requirements
 
 ### Requirement: Two-bar header
 
@@ -220,6 +220,8 @@ The system SHALL render a dark footer with 3-column widgets and copyright.
 
 ### Requirement: Accessibility and semantics
 
+The system SHALL ensure accessible, semantic HTML throughout the application.
+
 #### Scenario: Semantic landmarks
 
 - **GIVEN** the Coincast app is rendered
@@ -229,6 +231,8 @@ The system SHALL render a dark footer with 3-column widgets and copyright.
 - **AND** images SHALL have descriptive alt text
 
 ### Requirement: Responsive behavior
+
+The system SHALL provide responsive layouts that adapt to mobile viewports.
 
 #### Scenario: Mobile layout
 
