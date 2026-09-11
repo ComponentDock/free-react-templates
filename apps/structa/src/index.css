@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #ff5e14;
+  --color-brand-dark: #e5520f;
+  --color-dark: #2d0a31;
+  --color-dark-light: #3a1240;
+  --color-paper: #ffffff;
+  --color-mist: #646d77;
+  --color-heading: #000000;
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+}
