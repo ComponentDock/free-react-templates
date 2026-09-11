@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Optic brand palette — warm gold accent from the original design (#fab95b) */
+  --color-gold-50: #fef9ec;
+  --color-gold-100: #fdf0c9;
+  --color-gold-200: #fbe08e;
+  --color-gold-300: #f9cf53;
+  --color-gold-400: #fab95b;
+  --color-gold-500: #f5a623;
+  --color-gold-600: #d98b15;
+  --color-gold-700: #b46d13;
+  --color-gold-800: #925617;
+  --color-gold-900: #784717;
+
+  /* Nunito — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+}
