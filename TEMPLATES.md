@@ -939,7 +939,7 @@
 - [x] **Cleaning** — [colorlib](https://colorlib.com/wp/template/cleaning/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cleaning-free-template.jpg) · [spotless](https://spotless.free.componentdock.com)
 - [x] **Cleaning Company** — [colorlib](https://colorlib.com/wp/template/cleaning-company/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cleaningcompany.jpg) · [cleanslate](https://cleanslate.free.componentdock.com)
 - [x] **Cleaningservice** — [colorlib](https://colorlib.com/wp/template/cleaningservice/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cleaningservice-colorlib-template.jpg) · [pristine](https://pristine.free.componentdock.com)
-- [ ] **Coaching** — [colorlib](https://colorlib.com/wp/template/coaching/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coaching-free-template.jpg)
+- [~] **Coaching** — [colorlib](https://colorlib.com/wp/template/coaching/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coaching-free-template.jpg)
 - [ ] **Cohost** — [colorlib](https://colorlib.com/wp/template/cohost/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cohost-free-template.jpg)
 - [ ] **Coinbuzz** — [colorlib](https://colorlib.com/wp/template/coinbuzz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coinbuzz-free-template.jpg)
 - [x] **Colid** — [colorlib](https://colorlib.com/wp/template/colid/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colid-free-app-landing-page-website-template.jpg) · [Colid](https://colid.free.componentdock.com)
