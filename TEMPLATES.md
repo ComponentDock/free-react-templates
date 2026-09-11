@@ -937,7 +937,7 @@
 - [x] **Classy Ads** — [colorlib](https://colorlib.com/wp/template/classy-ads/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/classyads-free-template.jpg) · [classily](https://classily.free.componentdock.com)
 - [x] **Cleanex** — [colorlib](https://colorlib.com/wp/template/cleanex/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cleanex-template.jpg) · [tidywash](https://tidywash.free.componentdock.com)
 - [x] **Cleaning** — [colorlib](https://colorlib.com/wp/template/cleaning/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cleaning-free-template.jpg) · [spotless](https://spotless.free.componentdock.com)
-- [ ] **Cleaning Company** — [colorlib](https://colorlib.com/wp/template/cleaning-company/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cleaningcompany.jpg)
+- [~] **Cleaning Company** — [colorlib](https://colorlib.com/wp/template/cleaning-company/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cleaningcompany.jpg)
 - [x] **Cleaningservice** — [colorlib](https://colorlib.com/wp/template/cleaningservice/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cleaningservice-colorlib-template.jpg) · [pristine](https://pristine.free.componentdock.com)
 - [ ] **Coaching** — [colorlib](https://colorlib.com/wp/template/coaching/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coaching-free-template.jpg)
 - [ ] **Cohost** — [colorlib](https://colorlib.com/wp/template/cohost/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cohost-free-template.jpg)
