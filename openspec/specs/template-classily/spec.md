@@ -16,27 +16,27 @@ Recreation of ColorLib's **Classy Ads** classified ads website template.
 
 ### Colors
 
-| Token           | Value   | Usage                                              |
-| --------------- | ------- | -------------------------------------------------- |
-| brand-primary   | #00C9B7 | Buttons, active nav links, icons, badge borders     |
-| brand-dark      | #00A896 | Hover state for brand-primary                      |
-| text-dark       | #26282b | Body text, headings                                |
-| text-medium     | #555555 | Category names, secondary text                     |
-| text-light      | #999999 | Muted text, placeholder text                       |
-| bg-white        | #ffffff | Header, category stats section                     |
-| bg-page         | #f5f5f5 | Page background below hero, ad cards container     |
-| border-gray     | #dddddd | Form input borders, card borders                   |
-| logo-black      | #000000 | "CLASSY" portion of logo                           |
-| logo-accent     | #00C9B7 | "ADS" portion of logo                              |
-| badge-bg        | #f5f5f5 | Category count badge background                    |
-| hero-overlay    | none    | No dark overlay on hero — just background image    |
+| Token         | Value   | Usage                                           |
+| ------------- | ------- | ----------------------------------------------- |
+| brand-primary | #00C9B7 | Buttons, active nav links, icons, badge borders |
+| brand-dark    | #00A896 | Hover state for brand-primary                   |
+| text-dark     | #26282b | Body text, headings                             |
+| text-medium   | #555555 | Category names, secondary text                  |
+| text-light    | #999999 | Muted text, placeholder text                    |
+| bg-white      | #ffffff | Header, category stats section                  |
+| bg-page       | #f5f5f5 | Page background below hero, ad cards container  |
+| border-gray   | #dddddd | Form input borders, card borders                |
+| logo-black    | #000000 | "CLASSY" portion of logo                        |
+| logo-accent   | #00C9B7 | "ADS" portion of logo                           |
+| badge-bg      | #f5f5f5 | Category count badge background                 |
+| hero-overlay  | none    | No dark overlay on hero — just background image |
 
 ### Fonts
 
-| Role   | Family                          | Weight     |
-| ------ | ------------------------------- | ---------- |
-| Body   | Roboto                          | 400, 500   |
-| Headings | Roboto                        | 700 (bold) |
+| Role     | Family | Weight     |
+| -------- | ------ | ---------- |
+| Body     | Roboto | 400, 500   |
+| Headings | Roboto | 700 (bold) |
 
 ### Button style
 
@@ -55,7 +55,6 @@ Recreation of ColorLib's **Classy Ads** classified ads website template.
 
 ### Section backgrounds
 
-- Top bar: blue #1a73e8 (omit — Colorlib WordPress chrome, not template)
 - Header: solid white (#ffffff)
 - Hero: full-width photographic background (desaturated grayscale workspace), no overlay
 - Category Stats: solid white (#ffffff), full-width
@@ -68,78 +67,116 @@ Recreation of ColorLib's **Classy Ads** classified ads website template.
 - Geometric, flat design, no shadows
 - Categories use: house, books, furniture, car, diamond shapes
 
-## Section structure (from screenshot)
+## Requirements
 
-1. **Navbar** — white header: logo left ("CLASSY" black + "ADS" teal), centered nav links (Home, Ads, About, Blog, Contact), right side: vertical separator, Log In / Register text links, teal "Post an Ad" CTA button
-2. **Hero** — full-width background image (desaturated workspace photo), centered text: headline + subtext, horizontal search bar (3 input fields + search button)
-3. **Category Stats** — 6-column grid of category items: each has an icon (teal), category name, and count badge (bordered pill with number). Categories: Real Estate, Jobs, Vehicles, Electronics, Furniture, Fashion (or similar)
-4. **Featured Ads** — 4-column grid of ad listing cards: image at top, title/description below (cut off in screenshot — cards likely show title, price, location, and an image)
-5. **Footer** — not visible in screenshot; standard classifieds footer with copyright, links, and Component Dock attribution
+### Requirement: Navbar renders with all navigation links
 
-## Gherkin requirements
+The navbar SHALL display the site logo, navigation links, login/register links, and a "Post an Ad" CTA button.
 
-### Feature: Classily Template
+#### Scenario: Desktop navbar shows all elements
 
-#### Scenario: Navbar renders with all navigation links
+- **WHEN** the user loads the Classily page on a desktop viewport
+- **THEN** the navbar displays links for Home, Ads, About, Blog, Contact
+- **AND** a "Post an Ad" CTA button is visible in teal
+- **AND** Log In and Register links are present
+- **AND** the navbar is sticky at the top on scroll
 
-Given the user loads the Classily page
-Then the navbar displays links for Home, Ads, About, Blog, Contact
-And a "Post an Ad" CTA button is visible in teal
-And a Log In link and Register link are present
-And the navbar is fixed/sticky at the top on scroll
+#### Scenario: Mobile navbar has hamburger menu
 
-#### Scenario: Logo shows split-color branding
+- **WHEN** the user views the page on a mobile viewport
+- **THEN** a hamburger menu button is visible
+- **AND** clicking it opens a mobile navigation panel with all links
+- **AND** clicking a link closes the mobile menu
 
-Given the user views the navbar
-Then the logo text reads "Classily" (or equivalent brand)
-And the primary portion is black and the accent portion is teal (#00C9B7)
+### Requirement: Hero section shows search bar over background image
 
-#### Scenario: Hero section shows search bar over background image
+The hero SHALL display a full-width background image with centered text and a horizontal search bar.
 
-Given the user loads the Classily page
-Then a full-width hero area displays with a background image
-And a headline and subtext are centered over the image
-And a horizontal search bar contains 3 input fields: "What are you looking for?", "Location", "All Categories" dropdown
-And a teal "Search" button is aligned to the right of the inputs
+#### Scenario: Hero renders headline and search form
 
-#### Scenario: Category Stats section shows 6 category items
+- **WHEN** the user loads the Classily page
+- **THEN** a full-width hero area displays with a background image
+- **AND** a headline and subtext are centered over the image
+- **AND** a horizontal search bar contains 3 input fields: search query, location, and category dropdown
+- **AND** a teal "Search" button is aligned to the right of the inputs
 
-Given the user scrolls to the Category Stats section
-Then 6 category items are displayed in a row
-And each item has a teal icon, category name, and count badge
-And the section has a white background
-And the count badges have a teal border with a light gray background
+#### Scenario: Search form accepts user input
 
-#### Scenario: Featured Ads section shows ad cards in grid
+- **WHEN** the user types in the search query field
+- **THEN** the field updates with the typed text
+- **AND** when the user selects a category from the dropdown
+- **THEN** the dropdown shows the selected category
 
-Given the user scrolls to the Featured Ads section
-Then ad cards are displayed in a 4-column grid
-And each card shows an image, title, and description/price
-And the cards sit on a light gray (#f5f5f5) page background
-And the cards have a white background with no visible shadow
+### Requirement: Category Stats section shows 6 category items
 
-#### Scenario: Footer contains Component Dock link
+The category stats section SHALL display 6 category items in a row with icons, names, and count badges.
 
-Given the user scrolls to the footer
-Then a link to https://www.componentdock.com/ is present
-And the link text reads "Component Dock"
+#### Scenario: Category items render with icons and counts
 
-#### Scenario: Buttons use rounded rectangle shape with teal color
+- **WHEN** the user scrolls to the Category Stats section
+- **THEN** 6 category items are displayed in a row
+- **AND** each item has a teal icon, category name, and count badge
+- **AND** the section has a white background
+- **AND** the count badges have a teal border with a light gray background
 
-Given the user views any CTA button
-Then the button has border-radius: 8px
-And the primary button has a solid #00C9B7 background
-And the button text is white
+### Requirement: Featured Ads section shows ad cards in grid
 
-#### Scenario: Category icons use line/outline style
+The featured ads section SHALL display ad listing cards in a 4-column grid with images, titles, prices, and locations.
 
-Given the user views the category items
-Then icons use line/outline style (no filled shapes)
-And icons are colored in brand teal (#00C9B7)
+#### Scenario: Ad cards render with details
+
+- **WHEN** the user scrolls to the Featured Ads section
+- **THEN** ad cards are displayed in a 4-column grid
+- **AND** each card shows an image, title, description, price, and location
+- **AND** the cards sit on a light gray (#f5f5f5) page background
+- **AND** the cards have a white background with no visible shadow
+
+### Requirement: Footer contains Component Dock link
+
+The footer SHALL display the brand name, quick links, contact info, and a link to Component Dock.
+
+#### Scenario: Footer renders all elements
+
+- **WHEN** the user scrolls to the footer
+- **THEN** the brand name "Classily" is displayed
+- **AND** quick links are present (Home, Ads, About, Blog, Contact)
+- **AND** contact information is shown
+- **AND** a link to https://www.componentdock.com/ is present with text "Made with Component Dock"
+
+### Requirement: Design tokens match the original design
+
+The template SHALL use the design tokens extracted from the original ColorLib template.
+
+#### Scenario: Visual design matches tokens
+
+- **WHEN** the template renders
+- **THEN** the brand color is #00C9B7 (teal)
+- **AND** the page background is #f5f5f5 (light gray)
+- **AND** the font family is Roboto
+- **AND** buttons use 8px border-radius, teal background, white text
+
+### Requirement: No ColorLib references in app code
+
+The app source files SHALL NOT contain any references to ColorLib.
+
+#### Scenario: Provenance is absent from code
+
+- **WHEN** searching all files in apps/classily/
+- **THEN** no file contains "colorlib" or "preview.colorlib.com" strings
+- **AND** provenance exists only in the spec and TEMPLATES.md
+
+### Requirement: 100% test coverage
+
+All components in the template SHALL have 100% test coverage.
+
+#### Scenario: Coverage meets threshold
+
+- **WHEN** running tests with coverage
+- **THEN** statements, branches, functions, and lines are all at 100%
 
 ## Verification checklist
 
-- [ ] Navbar: sticky, logo with split-color branding, 5 nav links, Log In/Register, "Post an Ad" CTA
+- [ ] Navbar: sticky, logo with branding, 5 nav links, Log In/Register, "Post an Ad" CTA
 - [ ] Hero: full-width background image, centered headline + subtext, search bar with 3 fields + button
 - [ ] Category Stats: 6 items in a row, teal icons, names, count badges with teal border
 - [ ] Featured Ads: 4-column card grid with images, white cards on gray background
