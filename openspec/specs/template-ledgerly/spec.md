@@ -1,192 +1,164 @@
----
-name: ledgerly
-description: >
-  Bookkeeping agency website template with hero image, services section,
-  and business-focused content. Recreation of ColorLib "Book Keeping"
-  (https://colorlib.com/wp/template/book-keeping/).
----
+# Template: Ledgerly (Cryptocurrency & Mining)
 
 ## Purpose
 
-Ledgerly is a responsive bookkeeping agency website template designed for
-accounting and financial services businesses. It features a professional
-layout with a large hero section, services/features area, and clean
-content sections with a warm gold and blue color scheme on white backgrounds.
+Ledgerly is a cryptocurrency and mining website template in the free-react-templates
+monorepo. It is an original React recreation of the ColorLib free "Cryptos"
+cryptocurrency template (preview: https://preview.colorlib.com/theme/cryptos/),
+built under a different name with the monorepo stack: Vite + React 19 +
+Tailwind CSS 4 + TypeScript.
 
-- **Source URL:** https://colorlib.com/wp/template/book-keeping/
-- **Preview URL:** `https://preview.colorlib.com/theme/book-keeping/` — **UNREACHABLE (404)**
-- **Fallback reference:** Screenshot (`bookkeeping-free-template.jpg`, 1200×946 JPEG)
-  analyzed via pixel analysis. No live CSS/JS available.
-- **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
-- **Category:** Business Website Templates
+Design tokens captured from the original (see docs/replication.md):
 
-## Design tokens (from screenshot pixel analysis)
+- Brand primary: `#0d104d` (deep navy), gradient to `#28408b` (medium blue)
+- Accent: `#ffaf02` (golden yellow)
+- Text dark: `#292929`, text muted: `#8e8e8e`
+- Button base: `#eef3f6` (light gray-blue)
+- Fonts: Montserrat (headings, 300/600), Open Sans (body, 400/500)
+- Dark overlay backgrounds for hero, currency calculator, and footer
 
-| Token | Value | Use |
-| --- | --- | --- |
-| Page bg | `#ffffff` (white) | Main content background |
-| Hero bg | Image (person working at desk) | Full-width hero section with overlay |
-| Nav bg | `#f9f9f9` (off-white) | Top navigation bar |
-| Nav border | `#e5e5e5` (light gray) | Bottom border on nav |
-| Brand primary | `#30415b` (dark navy) | Headings, navigation text |
-| Brand gold | `#b8823a` (warm gold) | Accent elements, icons, CTAs |
-| Brand blue | `#4768b9` (medium blue) | Secondary accents, links |
-| Body text | `#6B6B6B` (gray) | Paragraph text (from source CSS) |
-| Heading text | `#333333` (dark gray) | Section headings |
-| Card bg | `#ffffff` (white) | Service/feature cards |
-| Card border | `#f0f0f0` (light gray) | Subtle card borders |
-| Footer bg | `#f5f5f5` (light gray) | Footer background |
-| Font | Open Sans 400/600/700 | Body text (from source CSS) |
-| Heading font | Roboto Slab 400/700 | Section headings |
-| Border radius | `4px` | Buttons, cards |
-| Button bg | `#b8823a` (gold) | Primary CTA buttons |
-| Button text | `#ffffff` | Button labels |
-| Button hover | `#a0722e` (darker gold) | Hover state |
-| Section padding | `80px 0` | Vertical section spacing |
-| Container width | `1170px` (max) | Content container |
-| Grid columns | 3 (services), 2 (features) | Content grid |
-| Icon color | `#b8823a` (gold) | Service/feature icons |
+Ledgerly lives in `apps/ledgerly` and uses shared components from `packages/ui`
+(Button, ButtonLink, cn).
 
 ## Requirements
 
-### Requirement: Navigation header
+### Requirement: Top header bar
 
-The site SHALL have a responsive navigation header with logo and menu links.
+The system SHALL render a dark top header bar with "Welcome to Ledgerly" text
+and navigation links (Login | Register, FAQ, Earn Money).
 
-#### Scenario: Desktop navigation renders
+#### Scenario: Top header content
 
-- **WHEN** the page loads on desktop viewport (≥992px)
-- **THEN** a horizontal navigation bar displays with logo on the left and menu links on the right
-- **AND** the nav background is off-white (#f9f9f9) with a light gray bottom border
+- **GIVEN** the Ledgerly page is rendered
+- **WHEN** the page loads
+- **THEN** the top header SHALL display "Welcome to Ledgerly" with the brand name highlighted
+- **AND** the top header SHALL show Login | Register, FAQ, and Earn Money links
 
-#### Scenario: Mobile hamburger menu
+### Requirement: Navigation bar
 
-- **WHEN** the page loads on mobile viewport (<992px)
-- **THEN** a hamburger menu icon appears
-- **AND** clicking it toggles a mobile navigation drawer
+The system SHALL render a sticky navbar with the Ledgerly logo, navigation links
+(Home, Currencies, About, Contact), a newsletter email input with Subscribe button,
+and a mobile hamburger menu toggle.
+
+#### Scenario: Navbar content
+
+- **GIVEN** the Ledgerly page is rendered
+- **WHEN** the page loads
+- **THEN** the navbar SHALL display the Ledgerly logo
+- **AND** the navbar SHALL show navigation links for Home, Currencies, About, Contact
+- **AND** the navbar SHALL show a newsletter input and Subscribe button
+
+#### Scenario: Mobile menu toggle
+
+- **GIVEN** the Ledgerly page is rendered on a small screen
+- **WHEN** the user clicks the hamburger toggle button
+- **THEN** the mobile menu SHALL expand showing the navigation links and newsletter form
+- **AND** clicking the toggle again SHALL collapse the menu
 
 ### Requirement: Hero section
 
-The hero section SHALL display a large background image with overlaid text content.
+The system SHALL render a hero section with a dark gradient background, a heading
+"Take a step into the Crypto World", a subtitle, a "Read More" CTA button, and
+a coin illustration.
 
-#### Scenario: Hero content renders
+#### Scenario: Hero content
 
-- **WHEN** the hero section loads
-- **THEN** a background image fills the section (person working at desk)
-- **AND** overlaid text includes a headline and call-to-action button
-- **AND** the section has appropriate min-height (≥500px)
-
-#### Scenario: Hero CTA button
-
-- **WHEN** the hero renders
-- **THEN** a call-to-action button is visible with gold background (#b8823a)
-- **AND** the button text is white
-- **AND** hovering darkens the button to #a0722e
-
-### Requirement: Services section
-
-A services section SHALL display 3 service cards in a row.
-
-#### Scenario: Three service cards
-
-- **WHEN** the services section renders
-- **THEN** three cards are displayed side by side (33% width each)
-- **AND** each card has a gold icon at the top
-- **AND** each card has a heading and description paragraph
-- **AND** cards have white background with subtle border
+- **GIVEN** the Ledgerly page is rendered
+- **WHEN** the hero section is displayed
+- **THEN** it SHALL contain a level-1 heading mentioning "Crypto World"
+- **AND** it SHALL show a descriptive subtitle
+- **AND** it SHALL show a "Read More" button linking to the features section
 
 ### Requirement: Features section
 
-A features section SHALL display feature highlights with icons and text.
+The system SHALL render a features section with a centered heading "Let's change
+the world together" and a 4-column grid of feature cards (Fast & Easy, No Strings
+Attached, Small Commissions, 100% Secure), each with an icon, description, and
+"Read More" button.
 
-#### Scenario: Feature items render
+#### Scenario: Features grid
 
-- **WHEN** the features section renders
-- **THEN** feature items display with gold icons and descriptive text
-- **AND** the layout alternates between icon-left/text-right and text-left/icon-right
+- **GIVEN** the Ledgerly page is rendered
+- **WHEN** the features section is displayed
+- **THEN** it SHALL show 4 feature cards with titles and descriptions
+- **AND** each card SHALL have a "Read More" link
 
-### Requirement: About/Content section
+### Requirement: About section
 
-A content section SHALL provide information about the bookkeeping services.
+The system SHALL render a two-column about section with an image on the left and
+a heading, description, and "Read More" CTA on the right.
 
-#### Scenario: Content section renders
+#### Scenario: About content
 
-- **WHEN** the about section loads
-- **THEN** it displays a heading and descriptive paragraphs
-- **AND** the background is white (#ffffff)
+- **GIVEN** the Ledgerly page is rendered
+- **WHEN** the about section is displayed
+- **THEN** it SHALL show an image and descriptive text about the platform
+- **AND** it SHALL include a "Read More" CTA button
 
-### Requirement: Contact/CTA section
+### Requirement: Currency calculator
 
-A call-to-action section SHALL encourage visitors to get in touch.
+The system SHALL render a dark parallax section with a "Cryptocurrency Calculator"
+heading and two currency conversion forms with amount inputs and currency selects.
 
-#### Scenario: CTA section renders
+#### Scenario: Calculator forms
 
-- **WHEN** the CTA section loads
-- **THEN** it displays a heading and a prominent CTA button
-- **AND** the section has a contrasting background (light gray or subtle color)
+- **GIVEN** the Ledgerly page is rendered
+- **WHEN** the currency calculator section is displayed
+- **THEN** it SHALL show two conversion forms
+- **AND** each form SHALL have amount inputs, currency selects, and an "=" separator
+
+### Requirement: Blog and prices
+
+The system SHALL render a two-column section with blog posts on the left (thumbnail,
+title, category, date, excerpt) and a cryptocurrency price table on the right
+showing 10 coins with rank, name, symbol, and price (with increase/decrease color).
+
+#### Scenario: Blog posts
+
+- **GIVEN** the Ledgerly page is rendered
+- **WHEN** the blog section is displayed
+- **THEN** it SHALL show 3 blog posts with titles, categories, dates, and excerpts
+
+#### Scenario: Price table
+
+- **GIVEN** the Ledgerly page is rendered
+- **WHEN** the price table is displayed
+- **THEN** it SHALL show 10 cryptocurrency entries with names, symbols, and prices
+
+### Requirement: Newsletter subscription
+
+The system SHALL render a newsletter section with a heading, description, email
+input, and Subscribe button.
+
+#### Scenario: Newsletter form
+
+- **GIVEN** the Ledgerly page is rendered
+- **WHEN** the newsletter section is displayed
+- **THEN** it SHALL show a "Subscribe to Newsletter" heading
+- **AND** it SHALL show an email input and Subscribe button
 
 ### Requirement: Footer
 
-The footer SHALL provide contact information and links.
+The system SHALL render a dark parallax footer with three columns (brand logo
+with social icons, recent posts, quick links) and a bottom bar linking to
+Component Dock.
 
-#### Scenario: Footer renders
+#### Scenario: Footer content
 
-- **WHEN** the page footer loads
-- **THEN** it displays company information, quick links, and contact details
-- **AND** the footer background is light gray (#f5f5f5)
-- **AND** the footer contains a link to Component Dock (https://www.componentdock.com/)
+- **GIVEN** the Ledgerly page is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL show the Ledgerly brand name and social media links
+- **AND** it SHALL show recent posts and quick links
+- **AND** it SHALL link to https://www.componentdock.com/ with "Component Dock" text
 
-### Requirement: Responsive layout
+### Requirement: Page composition
 
-The site SHALL be fully responsive across all viewport sizes.
+The system SHALL compose all sections in a single page with a main landmark and
+a document title set to "Ledgerly — Cryptocurrency Template".
 
-#### Scenario: Mobile layout
+#### Scenario: Page structure
 
-- **WHEN** the viewport is <768px
-- **THEN** all multi-column layouts stack vertically
-- **AND** navigation collapses to hamburger menu
-- **AND** hero text remains readable
-
-#### Scenario: Tablet layout
-
-- **WHEN** the viewport is 768px-991px
-- **THEN** service cards may stack to 2 columns
-- **AND** content remains centered and readable
-
-### Requirement: Typography
-
-The site SHALL use Open Sans for body text and Roboto Slab for headings.
-
-#### Scenario: Font loading
-
+- **GIVEN** the Ledgerly page is rendered
 - **WHEN** the page loads
-- **THEN** Open Sans (400, 600, 700) is loaded via Google Fonts
-- **AND** Roboto Slab (400, 700) is loaded via Google Fonts
-- **AND** body text uses Open Sans at 14px base
-- **AND** headings use Roboto Slab
-
-### Requirement: Footer with Component Dock link
-
-The footer SHALL link to https://www.componentdock.com/.
-
-#### Scenario: Footer branding
-
-- **WHEN** the page renders
-- **THEN** the footer contains a link to Component Dock
-- **AND** the link opens in a new tab
-
-## Verification checklist
-
-- [ ] Navigation header with logo and menu links
-- [ ] Hero section with background image and CTA
-- [ ] Services section with 3 cards (gold icons, headings, descriptions)
-- [ ] Features section with alternating layout
-- [ ] About/content section with paragraphs
-- [ ] CTA section with prominent button
-- [ ] Footer with contact info and Component Dock link
-- [ ] Responsive: mobile (<768px) stacked, tablet (768-991px) 2-col
-- [ ] Open Sans + Roboto Slab fonts via Google Fonts
-- [ ] Gold accent (#b8823a), navy text (#30415b), gray body (#6B6B6B)
-- [ ] No ColorLib references in app code
-- [ ] `public/CNAME` = `ledgerly.free.componentdock.com`
-- [ ] `package.json` `"homepage"` = `https://ledgerly.free.componentdock.com`
+- **THEN** the document title SHALL be "Ledgerly — Cryptocurrency Template"
+- **AND** the page SHALL have banner, navigation, main, and contentinfo landmarks
