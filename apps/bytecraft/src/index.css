@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ByteCraft brand — neon green #00ff8c accent on neutral base,
+     matching the original agency design:
+     white/light-gray sections, dark #222222 services bg,
+     purple-blue gradient overlays, Poppins font throughout. */
+
+  --color-brand: #00ff8c;
+  --color-brand-dark: #00cc70;
+
+  --color-dark: #222222;
+  --color-gray-bg: #f9f9ff;
+  --color-text: #222222;
+  --color-text-muted: #777777;
+  --color-white: #ffffff;
+
+  --color-purple-start: #3c3f8f;
+  --color-purple-end: #5b61cf;
+  --color-pricing-head: #4a4fad;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

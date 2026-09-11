@@ -968,7 +968,7 @@
 - [x] **Cryptian** — [colorlib](https://colorlib.com/wp/template/cryptian/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cryptian-free-template.jpg) · [coinforge](https://coinforge.free.componentdock.com)
 - [x] **Crypto Currency** — [colorlib](https://colorlib.com/wp/template/crypto-currency/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cryptocurrency-free-template.jpg) · [coinly](https://coinly.free.componentdock.com)
 - [x] **Cryptos** — [colorlib](https://colorlib.com/wp/template/cryptos/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cryptos-free-template.jpg) · [ledgerly](https://ledgerly.free.componentdock.com)
-- [ ] **Datarc** — [colorlib](https://colorlib.com/wp/template/datarc/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/datarc-digital-agency-free-website-template.jpg)
+- [~] **Datarc** — [colorlib](https://colorlib.com/wp/template/datarc/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/datarc-digital-agency-free-website-template.jpg)
 - [ ] **Dealers** — [colorlib](https://colorlib.com/wp/template/dealers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dealers-free-template.jpg)
 - [x] **Dentista** — [colorlib](https://colorlib.com/wp/template/dentista/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentista-free-template.jpg) · [enamel](https://enamel.free.componentdock.com)
 - [x] **Depot** — [colorlib](https://colorlib.com/wp/template/depot/) · [depot](https://depot.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/depot-free-template.jpg)
