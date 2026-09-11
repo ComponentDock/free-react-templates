@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+  --color-primary-50: #eef6ff;
+  --color-primary-100: #d9eaff;
+  --color-primary-200: #bcdbff;
+  --color-primary-300: #8ec3ff;
+  --color-primary-400: #599fff;
+  --color-primary-500: #337dff;
+  --color-primary-600: #207dff;
+  --color-primary-700: #1a65f5;
+  --color-primary-800: #1d51c6;
+  --color-primary-900: #1e479c;
+  --color-primary-950: #172c60;
+
+  --color-charcoal-50: #f6f6f7;
+  --color-charcoal-100: #e2e3e5;
+  --color-charcoal-200: #c4c6ca;
+  --color-charcoal-300: #9fa2a8;
+  --color-charcoal-400: #7b7f87;
+  --color-charcoal-500: #60646c;
+  --color-charcoal-600: #4c4f55;
+  --color-charcoal-700: #3e4046;
+  --color-charcoal-800: #25262a;
+  --color-charcoal-900: #1e1f22;
+
+  --color-sale: #ffe5ae;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
