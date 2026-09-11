@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* TidyWash brand colors — from the ColorLib "Cleanex" preview CSS:
+     cleaning service theme with a blue #225ae1 primary,
+     dark headings #161655, yellow accent #fedd32, and muted text #999999. */
+  --color-primary-50: #e8eefb;
+  --color-primary-100: #c5d4f5;
+  --color-primary-200: #9eb8ee;
+  --color-primary-300: #7099e5;
+  --color-primary-400: #225ae1;
+  --color-primary-500: #1947b7;
+  --color-primary-600: #143a96;
+  --color-primary-700: #102e78;
+  --color-primary-800: #0c225c;
+  --color-primary-900: #091844;
+
+  --color-accent-400: #fedd32;
+  --color-accent-500: #e6c500;
+
+  --color-ink: #161655;
+  --color-smoke: #999999;
+  --color-mist: #f4f5f0;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
