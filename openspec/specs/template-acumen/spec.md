@@ -24,10 +24,6 @@ Extracted from the live preview stylesheet (style.css at preview.colorlib.com/th
 | `--color-primary-light` | `#c2e9fb`         | Brand blue (gradient end)   |
 | `--color-text`          | `#4f4f4f`         | Body text                   |
 | `--color-text-muted`    | `#898989`         | Secondary text, labels      |
-| `--color-text-dark`     | `#6b6d6f`         | Alternate text              |
-| `--color-bg`            | `#ffffff`         | White background            |
-| `--color-bg-light`      | `#f9f9f9`         | Gray section background     |
-| `--color-bg-section`    | `#f5f5f5`         | Alternate section bg        |
 | `--color-border`        | `#e8e8e8`         | Borders, dividers           |
 | `--color-overlay`       | `rgba(0,0,0,0.4)` | Header dark overlay         |
 
@@ -46,153 +42,168 @@ Extracted from the live preview stylesheet (style.css at preview.colorlib.com/th
 - **Border-radius:** `100px` (pill-shaped / full-round)
 - **Default bg:** gradient `#a1c4fd → #c2e9fb`
 - **Hover:** transparent bg with outline/border
-- **Size variants:** `.bttn-lg` (hero CTA), default
-
-### Section Backgrounds
-
-- **Header:** Background image (`header-bg.jpg`) with dark overlay `rgba(0,0,0,0.4)`
-- **About, Skills, Portfolio, Team, Blog, Contact, Footer:** white (`#ffffff`)
-- **Services, Pricing, Counter:** light gray (`#f9f9f9` / `.gray-bg`)
-- **Dot accent:** Circular `#a1c4fd → #c2e9fb` gradient dot
 
 ## Section Structure (DOM order)
 
-1. **Navbar** — Sticky top navbar with logo "Acumen", search toggle, language dropdown, user icon, primary nav links (Home, Services, Portfolio, Team, Price, Blog, Contact). Dark/transparent background over hero.
+1. **Navbar** — Sticky top navbar with logo "Acumen", search toggle, language dropdown, primary nav links (Home, Services, Portfolio, Team, Price, Blog, Contact).
+2. **Hero** — Full-width section with background image + dark overlay. Headline "We Are Provide Creative Business", CTA "Contact Now". Blue gradient dot accent.
+3. **About** — Split layout with tabbed content (Our Mission / Our Vision / Our Support).
+4. **Services** — Grid of 6 service cards with icons, titles, descriptions, "Read More" links.
+5. **Skills** — Progress bars with percentages: Web Design (95%), Coding (85%), Developing (90%), Java Script (95%), Apps Design (85%), Graphics (90%).
+6. **Portfolio** — Filterable gallery grid with filter tabs and hover overlay.
+7. **Team** — Grid of 4 team member cards with photos, names, roles, social hover.
+8. **Pricing** — Monthly/Yearly toggle. 4 pricing tiers: Basic ($10), Premium ($50, highlighted), Business ($80), Ultimate ($100).
+9. **Blog** — 1 featured post + 3 side posts with dates and excerpts.
+10. **Counter** — Dark band with 4 stat counters: Project Complete (1172), Happy Clients (1000), Total Clients (1200), Winning Awards (1172).
+11. **Contact** — Form (Name, Email, Subject, Message + "Send Now") + address info + map placeholder.
+12. **Footer** — Dark background with logo, description, subscription input, link columns (Company, Resources, Solutions), Component Dock credit.
 
-2. **Hero / Header** — Full-width section with background image + dark overlay. Centered text: headline "We Are Provide Creative Business", subtitle about business solutions, CTA button "Contact Now". Blue gradient dot accent beside headline.
+## Requirements
 
-3. **About** — Split layout: left side has section title + tabbed content (Our Mission / Our Vision / Our Support), each tab shows an image + descriptive text + "View More" button. Right side has complementary content. Description about quick and powerful business solutions.
+### Requirement: Hero section
 
-4. **Services** — Grid of 6 service cards, each with icon, title, and short description. Cards: Unique Design, Clean Layout, Well Responsive, Pro Developing, Well Documented, Quick Marketing. "Read More" links.
+The system SHALL render a full-width hero section with a background image, a dark
+overlay, a headline, a subtitle, and a "Contact Now" CTA button.
 
-5. **Skills / Counter Bars** — Progress bars with percentage counters: Web Design (95%), Coding (85%), Developing (90%), Java Script (95%), Apps Design (85%), Graphics (90%). Gray background section.
+#### Scenario: Hero content
 
-6. **Portfolio** — Filterable gallery grid. Filter tabs: All, Graphics, UI/UX, Web Design, Coding, Developing, Photography, Print Template, Graphics Template, Web Template. Image grid with hover overlay.
+- **GIVEN** the page is loaded
+- **WHEN** the hero section is displayed
+- **THEN** it SHALL show the headline "We Are Provide Creative Business"
+- **AND** it SHALL show a "Contact Now" CTA button linking to #contact
+- **AND** it SHALL have a dark overlay over a background image
 
-7. **Team** — Grid of 4 team member cards: Roberto Peo (SEO Expert), Jhon Doe (Web Developer), Jakia Khan (UI/UX Designer), Jack Kalis (Programmer). Each card: circular photo, name, role, social icons on hover overlay.
+### Requirement: Navigation bar
 
-8. **Pricing** — Monthly/Yearly toggle tabs. 4 pricing tiers in a row: Basic ($10/mo), Premium ($50/mo), Business ($80/mo), Ultimate ($100/mo). Each: tier name, price, feature list (4 items), "Purchase Now" CTA button. Center card highlighted with gradient border.
+The system SHALL render a sticky top navigation bar with the site name "Acumen",
+navigation links (Home, Services, Portfolio, Team, Price, Blog, Contact), and a
+search toggle.
 
-9. **Blog** — "Latest Blog" heading. 1 featured post (large card with image, date, excerpt) + 3 smaller side posts (image, date, title, excerpt). Each post has "Read More" link.
+#### Scenario: Navbar links
 
-10. **Counter Stats** — Dark background band with 4 animated counters: Project Complete (1172), Happy Clients (1000), Total Clients (1200), Winning Awards (1172). Each with an icon above.
+- **GIVEN** the page is loaded
+- **WHEN** the navbar is displayed
+- **THEN** it SHALL show navigation links pointing to their respective sections
+- **AND** the navbar SHALL be sticky at the top of the page
 
-11. **Contact** — Split layout: left side has contact form (Name, Email, Subject, Message fields + "Send Now" button). Right side has address info (160 Link Road, Dhaka-1216), phone, email, and embedded Google Map placeholder.
+### Requirement: About section tabs
 
-12. **Footer** — Dark background. Left column: logo, description, subscription email input. Center columns: link groups (Company, Resources, Solutions). Bottom: copyright with Component Dock credit.
+The system SHALL render an about section with three tabbed content panels
+(Our Mission, Our Vision, Our Support) and a "View More" button.
 
-## Gherkin Requirements
+#### Scenario: Tab switching
 
-### Feature: Acumen Business Template
+- **GIVEN** the about section is displayed with "Our Mission" active
+- **WHEN** the user clicks "Our Vision" tab
+- **THEN** the vision content SHALL be displayed
+- **AND** the mission content SHALL be hidden
 
-```gherkin
-Feature: Acumen business template
-  As a visitor
-  I want to browse a professional business website
-  So that I can learn about the company and its services
+### Requirement: Services section
 
-  Scenario: Hero section displays with background and CTA
-    Given I load the page
-    Then the hero section is visible
-    And it shows the headline "We Are Provide Creative Business"
-    And it shows a "Contact Now" CTA button
-    And the hero has a dark overlay over a background image
+The system SHALL render a services section with 6 service cards in a grid layout,
+each with an icon, title, description, and "Read More" link.
 
-  Scenario: Navigation links scroll to sections
-    Given I load the page
-    When I click "Services" in the navbar
-    Then the page scrolls to the services section
-    When I click "Portfolio" in the navbar
-    Then the page scrolls to the portfolio section
-    When I click "Contact" in the navbar
-    Then the page scrolls to the contact section
+#### Scenario: Service cards
 
-  Scenario: About section tabs switch content
-    Given I am viewing the about section
-    When I click "Our Vision" tab
-    Then the vision content is displayed
-    And the mission content is hidden
-    When I click "Our Support" tab
-    Then the support content is displayed
+- **GIVEN** the page is loaded
+- **WHEN** the services section is displayed
+- **THEN** it SHALL show 6 service cards
+- **AND** each card SHALL have an icon, title, and description
 
-  Scenario: Services section shows 6 cards
-    Given I am viewing the services section
-    Then I see 6 service cards
-    And each card has an icon, title, and description
-    And each card has a "Read More" link
+### Requirement: Skills section
 
-  Scenario: Skills section shows progress bars
-    Given I am viewing the skills section
-    Then I see 6 skill bars with percentages
-    And "Web Design" shows 95%
-    And "Coding" shows 85%
+The system SHALL render a skills section with 6 progress bars showing percentage
+levels with correct ARIA attributes.
 
-  Scenario: Portfolio filter works
-    Given I am viewing the portfolio section
-    And the "All" filter is active
-    Then all portfolio items are visible
-    When I click the "Graphics" filter
-    Then only graphics items are visible
-    When I click the "UI/UX" filter
-    Then only UI/UX items are visible
+#### Scenario: Progress bars
 
-  Scenario: Team section shows 4 members
-    Given I am viewing the team section
-    Then I see 4 team member cards
-    And each card shows a name, role, and photo
-    And each card shows social links on hover
+- **GIVEN** the page is loaded
+- **WHEN** the skills section is displayed
+- **THEN** it SHALL show 6 progress bars
+- **AND** "Web Design" SHALL show 95%
+- **AND** "Coding" SHALL show 85%
 
-  Scenario: Pricing toggle switches between monthly and yearly
-    Given I am viewing the pricing section
-    And the "Monthly" tab is active
-    Then prices show "/ Month"
-    When I click "Yearly" tab
-    Then prices show "/ Year"
-    And 4 pricing tiers are displayed
+### Requirement: Portfolio filter
 
-  Scenario: Blog section shows posts
-    Given I am viewing the blog section
-    Then I see 1 featured blog post
-    And I see 3 smaller blog posts
-    And each post has a date, title, and excerpt
+The system SHALL render a portfolio section with filterable gallery grid.
+Clicking a filter tab SHALL filter the displayed items.
 
-  Scenario: Counter stats animate on scroll
-    Given I am viewing the counter section
-    Then I see 4 stat counters
-    And "Project Complete" shows 1172
-    And "Happy Clients" shows 1000
+#### Scenario: Filter functionality
 
-  Scenario: Contact form has required fields
-    Given I am viewing the contact section
-    Then I see fields for Name, Email, Subject, and Message
-    And I see a "Send Now" submit button
-    And the address shows "160 Link Road, Dhaka-1216"
+- **GIVEN** the portfolio section is displayed with "All" filter active
+- **WHEN** the user clicks "Graphics" filter
+- **THEN** only graphics items SHALL be visible
 
-  Scenario: Footer shows navigation links
-    Given I scroll to the footer
-    Then I see the logo and description
-    And I see a subscription email input
-    And I see link columns: Company, Resources, Solutions
-    And the copyright links to Component Dock
-```
+### Requirement: Team section
 
-## Verification Checklist
+The system SHALL render a team section with 4 team member cards, each showing
+a photo, name, role, and social links on hover.
 
-- [ ] Hero: background image with dark overlay, headline, CTA button, gradient dot
-- [ ] Navbar: sticky, transparent over hero, links scroll to sections
-- [ ] About: tabbed content (Mission/Vision/Support), images, View More button
-- [ ] Services: 6 cards in grid, icons, titles, descriptions, Read More links
-- [ ] Skills: 6 animated progress bars with correct percentages
-- [ ] Portfolio: filterable grid, filter tabs work, hover overlay
-- [ ] Team: 4 member cards, photos, names, roles, social hover
-- [ ] Pricing: Monthly/Yearly toggle, 4 tiers, correct prices, feature lists
-- [ ] Blog: 1 featured + 3 side posts, dates, excerpts
-- [ ] Counter: 4 animated stat counters with correct numbers
-- [ ] Contact: form with 4 fields + submit, address, map placeholder
-- [ ] Footer: logo, description, subscription input, link columns, Component Dock credit
-- [ ] Design tokens match: gradient `#a1c4fd → #c2e9fb`, pill buttons, Montserrat/Roboto/Satisfy fonts
-- [ ] All sections use Tailwind classes mapped from original design tokens
-- [ ] Responsive: mobile-friendly layout for all sections
-- [ ] Accessibility: semantic HTML, ARIA labels, keyboard navigation
-- [ ] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
-- [ ] Footer links to componentdock.com
+#### Scenario: Team members
+
+- **GIVEN** the page is loaded
+- **WHEN** the team section is displayed
+- **THEN** it SHALL show 4 team member cards
+- **AND** each card SHALL show a name and role
+
+### Requirement: Pricing toggle
+
+The system SHALL render a pricing section with Monthly/Yearly toggle tabs and
+4 pricing tiers. Clicking a toggle SHALL switch the displayed period.
+
+#### Scenario: Monthly to Yearly
+
+- **GIVEN** the pricing section is displayed with Monthly active
+- **WHEN** the user clicks "Yearly" tab
+- **THEN** prices SHALL show "/ Year"
+- **AND** 4 pricing tiers SHALL be displayed
+
+### Requirement: Blog section
+
+The system SHALL render a blog section with 1 featured post and 3 side posts,
+each showing a date, title, and excerpt.
+
+#### Scenario: Blog posts
+
+- **GIVEN** the page is loaded
+- **WHEN** the blog section is displayed
+- **THEN** it SHALL show 1 featured post
+- **AND** it SHALL show 3 side posts
+
+### Requirement: Counter stats
+
+The system SHALL render a dark-background counter section with 4 stat counters
+displaying the correct values.
+
+#### Scenario: Counter values
+
+- **GIVEN** the page is loaded
+- **WHEN** the counter section is displayed
+- **THEN** "Project Complete" SHALL show 1,172
+- **AND** "Happy Clients" SHALL show 1,000
+
+### Requirement: Contact form
+
+The system SHALL render a contact section with a form (Name, Email, Subject,
+Message, Send Now button) and address information.
+
+#### Scenario: Form fields
+
+- **GIVEN** the contact section is displayed
+- **WHEN** the form is rendered
+- **THEN** it SHALL show fields for Name, Email, Subject, and Message
+- **AND** it SHALL show a "Send Now" submit button
+- **AND** the address SHALL show "160 Link Road, Dhaka-1216"
+
+### Requirement: Footer
+
+The system SHALL render a dark footer with logo, description, subscription input,
+link columns (Company, Resources, Solutions), and a Component Dock credit link.
+
+#### Scenario: Footer content
+
+- **GIVEN** the page is scrolled to the footer
+- **WHEN** the footer is displayed
+- **THEN** it SHALL show the logo and description
+- **AND** it SHALL show a subscription email input
+- **AND** it SHALL link to https://www.componentdock.com/
