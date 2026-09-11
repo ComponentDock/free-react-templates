@@ -963,7 +963,7 @@
 - [x] **Creative Agency 2** — [colorlib](https://colorlib.com/wp/template/creative-agency-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agency-free-agency-website-template.jpg) · [imagine](https://imagine.free.componentdock.com)
 - [x] **Creative Agency 2 2** — [colorlib](https://colorlib.com/wp/template/creative-agency-2-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/creativeagency2-free-template.jpg) · [axiom](https://axiom.free.componentdock.com)
 - [x] **Credit** — [colorlib](https://colorlib.com/wp/template/credit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/credit-free-template.jpg) · [credix](https://credix.free.componentdock.com)
-- [ ] **Credo** — [colorlib](https://colorlib.com/wp/template/credo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/credo-free-template.jpg)
+- [~] **Credo** — [colorlib](https://colorlib.com/wp/template/credo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/credo-free-template.jpg)
 - [ ] **Cruise** — [colorlib](https://colorlib.com/wp/template/cruise/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cruise-free-template.jpg)
 - [ ] **Cryptian** — [colorlib](https://colorlib.com/wp/template/cryptian/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cryptian-free-template.jpg)
 - [x] **Crypto Currency** — [colorlib](https://colorlib.com/wp/template/crypto-currency/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cryptocurrency-free-template.jpg) · [coinly](https://coinly.free.componentdock.com)
