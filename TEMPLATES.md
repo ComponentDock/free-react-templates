@@ -954,7 +954,7 @@
 - [x] **Consulting** — [colorlib](https://colorlib.com/wp/template/consulting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/consulting-free-template.jpg) · [Meridian](https://meridian.free.componentdock.com)
 - [x] **Consultingbiz** — [colorlib](https://colorlib.com/wp/template/consultingbiz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/consultingbiz-free-template.jpeg) · [consilio](https://consilio.free.componentdock.com)
 - [x] **Consulto** — [colorlib](https://colorlib.com/wp/template/consulto/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/consulto-free-template.jpg) · [advisory](https://free-react-templates-advisory.surge.sh)
-- [ ] **Corporate** — [colorlib](https://colorlib.com/wp/template/corporate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/corporate-free-corporate-website-template.jpg)
+- [~] **Corporate** — [colorlib](https://colorlib.com/wp/template/corporate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/corporate-free-corporate-website-template.jpg)
 - [ ] **Counselor** — [colorlib](https://colorlib.com/wp/template/counselor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/counselor-free-template.jpg)
 - [x] **Coza Store** — [colorlib](https://colorlib.com/wp/template/coza-store/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cozastore-free-template.jpg) · [mannequin](https://mannequin.free.componentdock.com)
 - [x] **Craft** — [colorlib](https://colorlib.com/wp/template/craft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/craft-free-template.jpg) · [forge](https://forge.free.componentdock.com)
