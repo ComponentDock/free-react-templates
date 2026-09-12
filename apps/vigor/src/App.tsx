@@ -1,32 +1,34 @@
 import { useEffect } from 'react'
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
-import { AdStrip } from './components/AdStrip'
 import { About } from './components/About'
-import { Experts } from './components/Experts'
 import { Services } from './components/Services'
+import { GymClasses } from './components/GymClasses'
 import { Pricing } from './components/Pricing'
-import { WorkingHours } from './components/WorkingHours'
-import { Newsletter } from './components/Newsletter'
+import { Testimonies } from './components/Testimonies'
+import { Appointment } from './components/Appointment'
+import { Blog } from './components/Blog'
+import { Counter } from './components/Counter'
 import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Vigor — Fitness Gym Template'
+    document.title = 'Vigor — Crossfit Gym Template'
   }, [])
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-sans text-gray-900">
       <Navbar />
       <main>
         <Hero />
-        <AdStrip />
         <About />
-        <Experts />
         <Services />
+        <GymClasses />
         <Pricing />
-        <WorkingHours />
-        <Newsletter />
+        <Testimonies />
+        <Appointment />
+        <Blog />
+        <Counter />
       </main>
       <Footer />
     </div>

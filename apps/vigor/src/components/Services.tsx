@@ -1,71 +1,51 @@
-import { Apple, Bike, Dumbbell, Flower2, HeartPulse, Waves, type LucideIcon } from 'lucide-react'
+import { Target, Dumbbell, TrendingUp, Award } from 'lucide-react'
 
-interface Service {
-  title: string
-  icon: LucideIcon
-  description: string
-}
-
-/* Six services mirroring the source's card list — circular line icon chip
-   (77px, green border), 20px title, description, and an "Enroll Now" link.
-   The source section has no section heading — cards start directly. */
-const SERVICES: Service[] = [
+const services = [
   {
-    title: 'Business School',
+    icon: Target,
+    title: 'Analyze Your Goal',
+    desc: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
+  },
+  {
     icon: Dumbbell,
-    description:
-      'Learn the strength training fundamentals with coached barbell, machine, and mobility work.',
+    title: 'Work Hard On It',
+    desc: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
   },
   {
-    title: 'Fitness Pro',
-    icon: HeartPulse,
-    description:
-      'Heart-rate-conditioned circuits that build endurance, power, and a leaner physique.',
+    icon: TrendingUp,
+    title: 'Improve Your Performance',
+    desc: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
   },
   {
-    title: 'Yoga Courses',
-    icon: Flower2,
-    description:
-      'Group yoga sessions that improve flexibility, balance, and recovery between lifts.',
-  },
-  {
-    title: 'Diet Specialists',
-    icon: Apple,
-    description: 'Personalized nutrition plans built around your training goals and daily routine.',
-  },
-  {
-    title: 'Swimming Pool',
-    icon: Waves,
-    description: 'Low-impact swim workouts and coached laps for cardio and recovery days.',
-  },
-  {
-    title: 'Spinning Class',
-    icon: Bike,
-    description: 'High-energy indoor cycling with tempo coaching and playlist-driven rides.',
+    icon: Award,
+    title: 'Achieve Your Perfect Body',
+    desc: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
   },
 ]
 
 export function Services() {
   return (
-    <section id="services" className="mx-auto max-w-7xl px-4 pt-25 lg:px-8">
-      <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-        {SERVICES.map((service) => (
-          <div key={service.title} className="mb-25 flex items-start gap-6">
-            <span className="flex h-[77px] w-[77px] shrink-0 items-center justify-center rounded-full border-[3px] border-brand">
-              <service.icon className="h-8 w-8 text-brand" aria-hidden="true" />
-            </span>
-            <div>
-              <h4 className="text-xl font-semibold text-ink">{service.title}</h4>
-              <p className="mt-4 text-sm">{service.description}</p>
-              <a
-                href="#pricing"
-                className="mt-4 inline-block text-sm font-bold uppercase tracking-wide text-brand transition-colors hover:text-ink"
-              >
-                Enroll Now
-              </a>
+    <section id="programs" className="bg-gray-50 py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="mb-12 text-center">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-brand-400">
+            Services
+          </p>
+          <h2 className="text-3xl font-bold text-gray-900">
+            Kick your <span className="text-brand-400">feet</span> up
+          </h2>
+        </div>
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {services.map(({ icon: Icon, title, desc }) => (
+            <div key={title} className="text-center">
+              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-brand-400/10 text-brand-400">
+                <Icon className="h-8 w-8" />
+              </div>
+              <h3 className="mb-2 text-lg font-bold text-gray-900">{title}</h3>
+              <p className="text-sm leading-relaxed text-gray-600">{desc}</p>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   )
