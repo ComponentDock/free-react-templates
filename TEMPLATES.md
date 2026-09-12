@@ -1043,7 +1043,7 @@
 - [x] **Homes** — [colorlib](https://colorlib.com/wp/template/homes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/homes-free-template.jpg) · [habitat](https://habitat.free.componentdock.com)
 - [x] **Horse Club** — [colorlib](https://colorlib.com/wp/template/horse-club/) · [horse-club](https://horse-club.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/horseclub-free-template.jpg)
 - [x] **Hostza** — [colorlib](https://colorlib.com/wp/template/hostza/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hostza-free-template.jpg) · [sitewise](https://sitewise.free.componentdock.com)
-- [~] **Hotel** — [colorlib](https://colorlib.com/wp/template/hotel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hotel-free-template.jpg)
+- [x] **Hotel** — [colorlib](https://colorlib.com/wp/template/hotel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hotel-free-template.jpg) · [lodge](https://lodge.free.componentdock.com)
 - [ ] **Humanresources** — [colorlib](https://colorlib.com/wp/template/humanresources/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/humanresources-free-template.jpg)
 - [ ] **Hvac** — [colorlib](https://colorlib.com/wp/template/hvac/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hvac-free-template.jpg)
 - [ ] **Hvacompany** — [colorlib](https://colorlib.com/wp/template/hvacompany/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hvacompany-free-template.jpg)
