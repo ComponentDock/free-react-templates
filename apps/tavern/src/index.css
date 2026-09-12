@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Tavern brand palette — recreated from ColorLib Eatery design (red #cf1d16). */
+  --color-flame-50: #fef2f1;
+  --color-flame-100: #fde3e1;
+  --color-flame-200: #fccbc7;
+  --color-flame-300: #f9a69f;
+  --color-flame-400: #f3756a;
+  --color-flame-500: #e9483e;
+  --color-flame-600: #cf1d16;
+  --color-flame-700: #ae1812;
+  --color-flame-800: #8f1712;
+  --color-flame-900: #781915;
+
+  /* Open Sans — the original template's typeface (Google Fonts via index.html). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
