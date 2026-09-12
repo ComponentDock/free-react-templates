@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand orange — the single focal accent on the page. */
+  --color-brand: #fb771a;
+  --color-brand-hover: #eb6304;
+  --color-brand-border: #de5e04;
+
+  /* Form area background (below photo band). */
+  --color-area: #f6f7fc;
+
+  /* Input field background. */
+  --color-field: #efefef;
+
+  /* Caption / link grey. */
+  --color-caption: #888;
+
+  /* Checkbox unchecked indicator. */
+  --color-checkbox-idle: #e6e6e6;
+  --color-checkbox-hover: #ccc;
+
+  /* Roboto — Google Fonts loaded in index.html (weight 300 body, 400 labels/heading). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
