@@ -991,7 +991,7 @@
 - [x] **Ecobit** — [colorlib](https://colorlib.com/wp/template/ecobit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ecobit-free-template.jpg) · [Ecobit](https://ecobit.free.componentdock.com)
 - [x] **Ecoland** — [colorlib](https://colorlib.com/wp/template/ecoland/) · [trekly](https://trekly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ecoland-free-template.jpg)
 - [x] **Eiser** — [colorlib](https://colorlib.com/wp/template/eiser/) · [cartly](https://cartly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eiser-free-template-1.jpg)
-- [~] **Elderly** — [colorlib](https://colorlib.com/wp/template/elderly/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elderly-free-template.jpg)
+- [x] **Elderly** — [colorlib](https://colorlib.com/wp/template/elderly/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elderly-free-template.jpg) · [silverleaf](https://free-react-templates-silverleaf.surge.sh)
 - [ ] **Electro** — [colorlib](https://colorlib.com/wp/template/electro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/electro-free-ecommerce-template.jpg)
 - [ ] **Endurance** — [colorlib](https://colorlib.com/wp/template/endurance/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/endurance-free-template.jpg)
 - [x] **Energen** · [serenity](https://serenity.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/energen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/energen-free-template.jpg)
