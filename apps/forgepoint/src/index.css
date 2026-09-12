@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ForgePoint brand palette — industrial orange #f27420, navy #021a47,
+     deep navy #00163e, text #0b1c39, link blue #1696e7, gold #dca73a. */
+  --color-brand: #f27420;
+  --color-brand-dark: #d96a1c;
+
+  --color-navy: #021a47;
+  --color-navy-deep: #00163e;
+
+  --color-ink: #0b1c39;
+  --color-link: #1696e7;
+  --color-gold: #dca73a;
+
+  --color-paper: #f7f7f7;
+  --color-paper-dark: #f0f0f0;
+
+  /* Primary scale for shared Button/ButtonLink `primary` variants. */
+  --color-primary-50: #fff4ed;
+  --color-primary-100: #ffe6d5;
+  --color-primary-200: #ffc8aa;
+  --color-primary-300: #ffa274;
+  --color-primary-400: #ff7c3d;
+  --color-primary-500: #f27420;
+  --color-primary-600: #d96a1c;
+  --color-primary-700: #b85416;
+  --color-primary-800: #93430f;
+  --color-primary-900: #78360d;
+
+  /* Font: Barlow (headings) + Roboto (body). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Barlow', ui-sans-serif, system-ui, sans-serif;
+}
