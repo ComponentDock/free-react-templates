@@ -1,231 +1,197 @@
-# Template: Silverleaf (Elderly Care / Senior Living)
+# Template: Silverleaf (Senior Care Landing)
 
 ## Purpose
 
-Recreation of the ColorLib "Elderly" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page template for senior care and elderly living services.
+Silverleaf is a single-page senior care and elderly living template. It is an
+original React recreation of the ColorLib free "Elderly" template
+(preview: https://preview.colorlib.com/theme/elderly/ — elderly care landing),
+built under a different name with the monorepo stack: Vite + React 19 +
+Tailwind CSS 4 + TypeScript.
 
-- **Source:** [ColorLib Elderly](https://colorlib.com/wp/template/elderly/)
-- **Preview:** https://preview.colorlib.com/theme/elderly/
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/elderly-free-template.jpg
-- **Stack:** Vite (latest) · React 19 · Tailwind CSS 4 · TypeScript
-- **New name:** `silverleaf` (apps/silverleaf, @free-react-templates/silverleaf)
+Design tokens captured from the original (see docs/replication.md):
 
-## Design Tokens
+- Brand blue `#3c90f7` (buttons, active states, counter bg, CTA sections)
+- Typeface: Open Sans (body) + Playfair Display (headings) via Google Fonts
+- Pill buttons with 30px border-radius, uppercase text
+- Light section bg `#f8f9fa`, hero overlay `rgba(0,0,0,0.2)`
+- Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons
+- Social brand icons as inline SVGs (brand icons removed from lucide-react)
 
-Extracted from https://preview.colorlib.com/theme/elderly/css/style.css:
+Silverleaf lives in `apps/silverleaf` and uses shared components from `packages/ui`
+(Button, cn).
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Brand color (primary) | `#3c90f7` | Blue — buttons, active nav, checkmarks, feature bar, counter bg, meta icons, custom media text bg |
-| Text color | `gray` | Body text default |
-| Heading color | `#000` | `.text-black` used on section headings |
-| Background (light sections) | `#f8f9fa` | Feature v1 pagination items bg, testimonial border |
-| Background (counter/CTA) | `#3c90f7` | `bg-primary` on counter section + about CTA section |
-| Footer background | `#f8f9fa` | `.bg-light` on site-footer |
-| Font: Body | `"Open Sans", sans-serif` | font-weight: 400, line-height: 1.7 |
-| Font: Headings | `"Playfair Display", serif` | h1–h5; font-weight: 700 on hero |
-| Button shape | `border-radius: 30px` (pill) | font-size: 12px, text-transform: uppercase, padding: 10px 30px |
-| Button primary bg | `#3c90f7` | White text, hover: same color (no change) |
-| Button white bg | `#fff` | Text: `#3c90f7`, hover: transparent with white text |
-| Button outline-white | transparent | Border + text: white, hover: white bg + blue text |
-| Feature icon circle | 80px diameter, `border-radius: 50%`, white bg | Icon centered via transform |
-| Avatar circle | 80px, `border-radius: 50%` | Testimonial avatars, box-shadow |
-| Service card border | `1px solid rgba(0,0,0,0.05)` | No top border, hover lifts with shadow |
-| Hero overlay | `rgba(0,0,0,0.2)` | Dark semi-transparent on background image |
-| Section padding | 90px 0 | `.site-section` desktop |
-| Counter font size | 60px | White, on primary bg |
-| Dropdown border-top | `2px solid #3c90f7` | Navbar dropdown indicator |
+## Requirements
 
-## Section Structure (from preview DOM)
+### Requirement: Navigation bar
 
-Order matches the ColorLib preview 1:1:
+The system SHALL render a navbar with the site name "Silverleaf", section links
+(Home, Services, Testimonials, Blog, About, Contact), social icons, and a
+hamburger toggle that opens a mobile menu on small screens.
 
-1. **Navbar** — Sticky, absolute top. Logo "Silverleaf." (bold). Nav links: Home, Services (dropdown), Testimonials, Blog, About, Contact. Social icon circles (fb, twitter, linkedin).
-2. **Hero** — Full viewport (min-height 760px), background image with dark overlay. Heading "Expert Care for the Elderly", subtext, "Get In Touch" primary pill button.
-3. **Feature Strip** — 3-column row, each with SVG icon (90px), subheading "Try Our Services", heading, "Learn More" link. Light gray bg `#f8f9fa`, active item white with blue top bar.
-4. **Services Grid** — 4-column image cards. Square images with "Special Care" title + description in bordered card.
-5. **Statistics Counter** — Full-width primary bg (#3c90f7). 4 counters: Rooms Available (5890), Nurse Staff (530), Senior Living (4029), Happy People (7020). Large white numbers, subtle label color.
-6. **About / Why Us** — Split: left text with heading, description, image + checklist (blue checkmarks); right side: media card with blue text bg + image.
-7. **Cover / Goals** — Full-width background image overlay. Centered heading "Our Goal is to Make Your Life Better". 3 feature items with white circle icons + titles.
-8. **Testimonials** — Light gray bg. 3 testimonial cards: avatar (80px circle), Playfair Display italic quote, author citation.
-9. **Other Opportunities** — 2-column media cards with blue text panel + background image. "Learn More" outline-white button.
-10. **About CTA** — Primary bg section. Left: illustration image. Right: heading, description, blockquote, "Learn More" white button.
-11. **Blog / News** — 3-column blog cards: image, meta bar (date, author, comments with blue icons), title, excerpt.
-12. **Footer** — Light bg. 4-col: About + social icons, Quick Links, Helpful Links, Resources. Copyright bar at bottom. Replace Colorlib attribution with Component Dock link.
+#### Scenario: Desktop navigation
 
-## Gherkin Requirements
+- **GIVEN** the page is rendered on a desktop viewport
+- **WHEN** the navbar is displayed
+- **THEN** it SHALL show the site name "Silverleaf" with a blue accent period
+- **AND** it SHALL show links to Home, Services, Testimonials, Blog, About, Contact
+- **AND** it SHALL show social icon links for Facebook, Twitter, and LinkedIn
 
-### Feature: Navbar
-```
-Scenario: Logo renders correctly
-  Given the page loads
-  Then the logo "Silverleaf." is visible in the navbar
-  And the period after "Silverleaf" uses the primary brand color
+#### Scenario: Mobile menu toggle
 
-Scenario: Navigation links are present
-  Given the page loads
-  Then the navbar contains links: Home, Services, Testimonials, Blog, About, Contact
+- **GIVEN** the page is rendered on a mobile viewport
+- **WHEN** the user taps the hamburger menu button
+- **THEN** a mobile navigation menu SHALL appear with all nav links
+- **AND** the button label SHALL change to "Close menu"
 
-Scenario: Social icons in navbar
-  Given the page loads
-  Then social icon links for Facebook, Twitter, and LinkedIn are visible
+#### Scenario: Sticky header on scroll
 
-Scenario: Sticky navbar on scroll
-  Given the user scrolls past the hero
-  Then the navbar becomes sticky with white background and shadow
-  And nav link colors change to black with blue hover
-```
+- **GIVEN** the page is scrolled past 60px
+- **WHEN** the scroll event fires
+- **THEN** the header SHALL have a white background and shadow
 
-### Feature: Hero Section
-```
-Scenario: Hero displays full viewport
-  Given the page loads
-  Then the hero section fills at least 760px height
-  And a background image is displayed with a dark overlay
+### Requirement: Hero section
 
-Scenario: Hero content
-  Given the page loads
-  Then the hero heading reads "Expert Care for the Elderly"
-  And a subtext paragraph is visible
-  And a "Get In Touch" primary pill button is rendered
-```
+The system SHALL render a full-viewport hero section with a background image,
+dark overlay, heading "Expert Care for the Elderly", descriptive text, and a
+primary pill CTA button.
 
-### Feature: Feature Strip
-```
-Scenario: Three feature items render
-  Given the page loads
-  Then 3 feature items are displayed in a row
-  And each item has an SVG icon, "Try Our Services" subheading, a heading, and a "Learn More" link
+#### Scenario: Hero content
 
-Scenario: Active item styling
-  Given the page loads
-  Then the first feature item has a white background
-  And a blue top border accent (3px)
-```
+- **GIVEN** the page is rendered
+- **WHEN** the hero section is visible
+- **THEN** it SHALL display the heading "Expert Care for the Elderly"
+- **AND** it SHALL display a descriptive paragraph about care services
+- **AND** it SHALL display a "Get In Touch" pill button linking to #contact
+- **AND** it SHALL have a minimum height of 760px
 
-### Feature: Services Grid
-```
-Scenario: Four service cards
-  Given the page loads
-  Then 4 service cards are displayed in a grid
-  And each card has a square image, title "Special Care", and a short description
+### Requirement: Feature strip
 
-Scenario: Service card hover
-  Given the user hovers over a service card
-  Then the card lifts slightly with a subtle shadow
-```
+The system SHALL render a 3-column feature strip on a light background with
+icons, subheadings, headings, and "Learn More" links.
 
-### Feature: Statistics Counter
-```
-Scenario: Counter section displays stats
-  Given the page loads
-  Then a counter section with primary blue background is visible
-  And 4 statistics are displayed: Rooms Available, Nurse Staff, Senior Living, Happy People
-  And each statistic shows a large number and a label
-```
+#### Scenario: Three features
 
-### Feature: About / Why Us
-```
-Scenario: About section layout
-  Given the page loads
-  Then the about section shows a heading "Senior Care Center is for Your Family"
-  And a description paragraph
-  And an image with a checklist of features (blue checkmarks)
-  And a side media card with blue text background and image
+- **GIVEN** the page is rendered
+- **WHEN** the feature strip section is visible
+- **THEN** it SHALL display 3 feature items: Independent Living, Senior Care, Patient Care
+- **AND** each item SHALL show "Try Our Services" subheading and a "Learn More" link
 
-Scenario: Checklist items render
-  Given the about section loads
-  Then the checklist shows 3 items with blue checkmark icons
-```
+### Requirement: Services grid
 
-### Feature: Cover / Goals
-```
-Scenario: Cover section displays
-  Given the page loads
-  Then a full-width background image overlay section is visible
-  And the heading reads "Our Goal is to Make Your Life Better"
-  And 3 feature items with white circle icons and "Expert Nursing Staff" labels are shown
-```
+The system SHALL render a 4-column grid of service cards with square images,
+titles, and descriptions.
 
-### Feature: Testimonials
-```
-Scenario: Three testimonial cards
-  Given the page loads
-  Then 3 testimonial cards are displayed on a light gray background
-  And each card has a circular avatar, italic quote text, and author citation
+#### Scenario: Four service cards
 
-Scenario: Testimonial typography
-  Given a testimonial card renders
-  Then the quote uses Playfair Display italic font
-  And the author name uses Open Sans
-```
+- **GIVEN** the page is rendered
+- **WHEN** the services grid section is visible
+- **THEN** it SHALL display 4 service cards with images and "Special Care" titles
+- **AND** each card SHALL have a description paragraph
 
-### Feature: Other Opportunities
-```
-Scenario: Two opportunity cards
-  Given the page loads
-  Then 2 media cards are displayed side by side
-  And each has a blue text panel with heading, description, and "Learn More" outline-white button
-  And a background image panel
-```
+### Requirement: Statistics counter
 
-### Feature: About CTA
-```
-Scenario: CTA section displays
-  Given the page loads
-  Then a primary blue background section is visible
-  And an illustration image is shown on the left
-  And heading "Senior & Elder Home Care Center" on the right
-  And a blockquote "We care for elderly people"
-  And a "Learn More" white button
-```
+The system SHALL render a full-width counter section with a brand blue background
+and 4 statistics: Rooms Available, Nurse Staff, Senior Living, Happy People.
 
-### Feature: Blog / News
-```
-Scenario: Three blog cards
-  Given the page loads
-  Then 3 blog cards are displayed in a column layout
-  And each card has a cover image, meta bar (date, author, comments), title, and excerpt
+#### Scenario: Counter stats
 
-Scenario: Blog meta icons
-  Given a blog card renders
-  Then the meta bar shows calendar, user, and comment icons in primary blue
-```
+- **GIVEN** the page is rendered
+- **WHEN** the counter section is visible
+- **THEN** it SHALL display 4 statistics with large numbers and labels
 
-### Feature: Footer
-```
-Scenario: Footer layout
-  Given the page loads
-  Then a light gray footer is visible with 4 columns: About, Quick Links, Helpful Links, Resources
+### Requirement: About / Why Us section
 
-Scenario: Footer social links
-  Given the footer loads
-  Then social icon links for Facebook, Twitter, Instagram, and LinkedIn are shown
+The system SHALL render a split about section with heading, description,
+checklist with blue checkmarks, and a media card with blue text overlay.
 
-Scenario: Footer copyright
-  Given the footer loads
-  Then a copyright line is displayed
-  And a "Component Dock" link replaces any external attribution
-```
+#### Scenario: About content
 
-## Verification Checklist
+- **GIVEN** the page is rendered
+- **WHEN** the about section is visible
+- **THEN** it SHALL display the heading "Senior Care Center is for Your Family"
+- **AND** it SHALL show a checklist with 3 items and blue checkmarks
+- **AND** it SHALL display a media card with "You can live here with love" text
 
-- [ ] All 12 sections render in correct order
-- [ ] Navbar is sticky on scroll with correct color transitions
-- [ ] Hero fills viewport with dark overlay on background image
-- [ ] Feature strip shows 3 items with SVG icons and blue accent
-- [ ] Services grid shows 4 cards with hover lift effect
-- [ ] Counter section uses primary blue background with 4 stats
-- [ ] About section has checklist with blue checkmarks + side media card
-- [ ] Cover section has full-width overlay + 3 circle-icon features
-- [ ] Testimonials show 3 cards with Playfair Display italic quotes
-- [ ] Other Opportunities shows 2 media cards with outline-white buttons
-- [ ] About CTA has primary bg, illustration, blockquote, white button
-- [ ] Blog shows 3 cards with meta icons in blue
-- [ ] Footer has 4 columns, social icons, Component Dock link
-- [ ] All design tokens match: #3c90f7 brand, Open Sans body, Playfair Display headings, 30px pill buttons
-- [ ] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] Placeholder images use https://picsum.photos/seed/silverleaf-N/W/H
-- [ ] Google Fonts loaded via <link> in index.html (Open Sans + Playfair Display)
-- [ ] Icons from lucide-react (no icomoon/flaticon)
+### Requirement: Cover / Goals section
+
+The system SHALL render a full-width background image section with overlay,
+heading, and 3 circle-icon feature items.
+
+#### Scenario: Goals display
+
+- **GIVEN** the page is rendered
+- **WHEN** the cover section is visible
+- **THEN** it SHALL display "Our Goal is to Make Your Life Better" heading
+- **AND** it SHALL show 3 feature items: Expert Nursing Staff, Community Living, Medical Support
+
+### Requirement: Testimonials
+
+The system SHALL render 3 testimonial cards on a light background with circular
+avatars, italic quotes, and author citations.
+
+#### Scenario: Testimonial cards
+
+- **GIVEN** the page is rendered
+- **WHEN** the testimonials section is visible
+- **THEN** it SHALL display 3 testimonial cards with quotes and author names
+
+### Requirement: Opportunities section
+
+The system SHALL render 2 media cards with blue text panels and background images.
+
+#### Scenario: Opportunity cards
+
+- **GIVEN** the page is rendered
+- **WHEN** the opportunities section is visible
+- **THEN** it SHALL display 2 cards: "Join Our Community" and "Volunteer With Us"
+- **AND** each card SHALL have a "Learn More" outline-white button
+
+### Requirement: About CTA section
+
+The system SHALL render a brand blue background section with illustration,
+heading, blockquote, and white CTA button.
+
+#### Scenario: CTA display
+
+- **GIVEN** the page is rendered
+- **WHEN** the about CTA section is visible
+- **THEN** it SHALL display "Senior & Elder Home Care Center" heading
+- **AND** it SHALL show a blockquote "We care for elderly people"
+- **AND** it SHALL have a "Learn More" white button
+
+### Requirement: Blog / News section
+
+The system SHALL render 3 blog cards with cover images, meta bars with blue
+icons, titles, and excerpts.
+
+#### Scenario: Blog posts
+
+- **GIVEN** the page is rendered
+- **WHEN** the blog section is visible
+- **THEN** it SHALL display 3 blog cards with meta information (date, author, comments)
+
+### Requirement: Footer
+
+The system SHALL render a light gray footer with 4 columns (About, Quick Links,
+Helpful Links, Resources), social icons, and copyright with Component Dock link.
+
+#### Scenario: Footer content
+
+- **GIVEN** the page is rendered
+- **WHEN** the footer is visible
+- **THEN** it SHALL display 4 columns of links
+- **AND** it SHALL show social icons for Facebook, Twitter, Instagram, LinkedIn
+- **AND** it SHALL display a "More templates at Component Dock" link to https://www.componentdock.com/
+
+### Requirement: Design tokens fidelity
+
+The system SHALL use design tokens matching the original ColorLib Elderly template.
+
+#### Scenario: Brand colors and fonts
+
+- **GIVEN** the template is built
+- **WHEN** design tokens are applied
+- **THEN** brand color SHALL be #3c90f7
+- **AND** body font SHALL be Open Sans
+- **AND** heading font SHALL be Playfair Display
+- **AND** buttons SHALL use pill shape (rounded-full)
