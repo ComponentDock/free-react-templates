@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Doflo brand palette — recreated from the ColorLib "Dizzi" design
+     (brand palette: #00d089 green). */
+  --color-brand-50: #e6faf1;
+  --color-brand-100: #b3f2d6;
+  --color-brand-200: #80e9bb;
+  --color-brand-300: #4de1a0;
+  --color-brand-400: #00d089;
+  --color-brand-500: #00b87a;
+  --color-brand-600: #009e6a;
+  --color-brand-700: #007a53;
+  --color-brand-800: #00573c;
+  --color-brand-900: #003324;
+
+  /* Secondary — deep indigo blue */
+  --color-indigo-400: #415094;
+  --color-indigo-600: #343f76;
+
+  /* Open Sans — the original template's typeface */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
