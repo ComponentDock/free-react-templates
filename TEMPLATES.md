@@ -1035,7 +1035,7 @@
 - [x] **Halo** — [colorlib](https://colorlib.com/wp/template/halo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/halo-free-template.jpg) · [glowlens](https://glowlens.free.componentdock.com)
 - [x] **Handyman** — [colorlib](https://colorlib.com/wp/template/handyman/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/handyman-free-template.jpg) · [fixero](https://fixero.free.componentdock.com)
 - [x] **Harbor** — [colorlib](https://colorlib.com/wp/template/harbor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/harbor-free-template.jpg) · [quay](https://quay.free.componentdock.com)
-- [ ] **Hardenero** — [colorlib](https://colorlib.com/wp/template/hardenero/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hardenero-free-template.jpg)
+- [~] **Hardenero** — [colorlib](https://colorlib.com/wp/template/hardenero/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hardenero-free-template.jpg)
 - [x] **Heaven** — [colorlib](https://colorlib.com/wp/template/heaven/) · [terracotta](https://terracotta.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/heaven-free-template.jpg)
 - [x] **Hepta** — [colorlib](https://colorlib.com/wp/template/hepta/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hepta-free-template.jpg) · [wander](https://wander.free.componentdock.com)
 - [x] **Hipstyle** — [colorlib](https://colorlib.com/wp/template/hipstyle/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hipstyle-free-template.jpg) · [stylely](https://stylely.free.componentdock.com)
@@ -2110,7 +2110,7 @@
 ## Landscaping (3)
 
 - [x] **Gardening** — [colorlib](https://colorlib.com/wp/template/gardening/) · [gardenly](https://gardenly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gardening-colorlib-template.jpg)
-- [ ] **Hardenero** — [colorlib](https://colorlib.com/wp/template/hardenero/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hardenero-free-template.jpg)
+- [~] **Hardenero** — [colorlib](https://colorlib.com/wp/template/hardenero/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hardenero-free-template.jpg)
 - [ ] **Lawncare** — [colorlib](https://colorlib.com/wp/template/lawncare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawncare-free-template.jpg)
 
 ## Lawyer (23)
