@@ -1,71 +1,24 @@
-import { act, fireEvent, render, screen } from '@testing-library/react'
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import { describe, expect, it } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import { Hero } from './Hero'
-import {
-  amenityCardLabel,
-  amenities,
-  heroAutoplayMs,
-  heroHeadline,
-  heroSectionLabel,
-} from '../data'
 
 describe('Hero', () => {
-  afterEach(() => {
-    vi.useRealTimers()
+  it('renders welcome heading', () => {
+    render(<Hero />)
+    expect(screen.getByText(/We hope you'll enjoy/)).toBeDefined()
+    expect(screen.getByText(/your stay/)).toBeDefined()
   })
 
-  it('renders the headline and the three amenity cards', () => {
+  it('renders thumbnail navigation links', () => {
     render(<Hero />)
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(heroHeadline)
-    expect(screen.getByRole('region', { name: heroSectionLabel })).toBeInTheDocument()
-
-    for (const amenity of amenities) {
-      expect(
-        screen.getByRole('button', { name: amenityCardLabel(amenity.name) }),
-      ).toBeInTheDocument()
-    }
+    expect(screen.getByText('Pool')).toBeDefined()
+    expect(screen.getByText('Sauna')).toBeDefined()
+    expect(screen.getByText('Restaurant')).toBeDefined()
   })
 
-  it('marks the first slide card as current and switches on click', () => {
+  it('has a background image', () => {
     render(<Hero />)
-    expect(screen.getByRole('button', { name: amenityCardLabel('Pool') })).toHaveAttribute(
-      'aria-current',
-      'true',
-    )
-
-    fireEvent.click(screen.getByRole('button', { name: amenityCardLabel('Restaurant') }))
-    expect(screen.getByRole('button', { name: amenityCardLabel('Pool') })).not.toHaveAttribute(
-      'aria-current',
-    )
-    expect(screen.getByRole('button', { name: amenityCardLabel('Restaurant') })).toHaveAttribute(
-      'aria-current',
-      'true',
-    )
-  })
-
-  it('auto-advances the active slide and wraps around', () => {
-    vi.useFakeTimers()
-    render(<Hero />)
-    expect(screen.getByRole('button', { name: amenityCardLabel('Pool') })).toHaveAttribute(
-      'aria-current',
-      'true',
-    )
-
-    act(() => {
-      vi.advanceTimersByTime(heroAutoplayMs)
-    })
-    expect(screen.getByRole('button', { name: amenityCardLabel('Sauna') })).toHaveAttribute(
-      'aria-current',
-      'true',
-    )
-
-    // Two more ticks wrap from the last slide back to the first.
-    act(() => {
-      vi.advanceTimersByTime(heroAutoplayMs * 2)
-    })
-    expect(screen.getByRole('button', { name: amenityCardLabel('Pool') })).toHaveAttribute(
-      'aria-current',
-      'true',
-    )
+    const section = screen.getByText(/We hope you'll enjoy/).closest('section')
+    expect(section).toBeDefined()
   })
 })

@@ -1,84 +1,100 @@
 import { useState } from 'react'
 import { Star } from 'lucide-react'
 import { cn } from '@free-react-templates/ui'
-import {
-  guestbookSectionLabel,
-  guestbookTitle,
-  ratingLabel,
-  tablistLabel,
-  testimonials,
-} from '../data'
 
-/* Guestbook — tabbed testimonials (reference: .testimonial-section /
-   .testimonial-item): circular author-photo tabs switch the visible
-   testimonial, which shows a date, five gold stars, a title, the text and
-   the author name/role. */
+const testimonials = [
+  {
+    date: '02/02/2024',
+    rating: 5,
+    quote:
+      'An absolutely wonderful stay. The rooms were immaculate, the staff incredibly welcoming, and the facilities top-notch.',
+    author: 'Sarah Johnson',
+    role: 'Travel Blogger',
+    photo: 'https://picsum.photos/seed/lodge-author1/80/80',
+  },
+  {
+    date: '15/03/2024',
+    rating: 5,
+    quote:
+      'The wellness center was the highlight of our trip. Pure relaxation from check-in to check-out. Will definitely return.',
+    author: 'Michael Chen',
+    role: 'Business Traveler',
+    photo: 'https://picsum.photos/seed/lodge-author2/80/80',
+  },
+  {
+    date: '28/01/2024',
+    rating: 4,
+    quote:
+      'Beautiful hotel with great attention to detail. The restaurant served exceptional cuisine and the views were breathtaking.',
+    author: 'Emily Davis',
+    role: 'Vacationer',
+    photo: 'https://picsum.photos/seed/lodge-author3/80/80',
+  },
+]
+
 export function Guestbook() {
   const [active, setActive] = useState(0)
-  const testimonial = testimonials[active]!
+  const current = testimonials[active]!
 
   return (
-    <section aria-label={guestbookSectionLabel} className="bg-white py-16 lg:py-24">
-      <div className="mx-auto max-w-5xl px-4 lg:px-6">
-        <h1 className="mb-16 text-center font-serif text-5xl text-heading lg:mb-20 lg:text-[72px] lg:leading-[72px]">
-          {guestbookTitle}
-        </h1>
+    <section id="guestbook" className="bg-white py-16">
+      <div className="mx-auto max-w-4xl px-4 lg:px-8">
+        <h2
+          className="mb-12 text-center text-3xl font-bold"
+          style={{ fontFamily: 'var(--font-heading)' }}
+        >
+          Guestbook
+        </h2>
 
-        <div className="grid gap-12 lg:grid-cols-[280px_1fr] lg:items-start lg:gap-16">
-          <div
-            role="tablist"
-            aria-label={tablistLabel}
-            className="flex justify-center gap-5 lg:flex-col"
-          >
-            {testimonials.map((item, index) => (
-              <button
-                key={item.author}
-                type="button"
-                role="tab"
-                id={`lodge-tab-${index}`}
-                aria-selected={active === index}
-                aria-controls={`lodge-panel-${index}`}
-                onClick={() => setActive(index)}
+        {/* Testimonial card */}
+        <div className="rounded-lg bg-lodge-50 p-8 text-center">
+          <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-wider text-lodge-400">
+            {current.date}
+          </span>
+          <div className="mb-4 flex justify-center gap-0.5">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <Star
+                key={i}
                 className={cn(
-                  'h-20 w-20 overflow-hidden rounded-full border-2 transition-all',
-                  active === index
-                    ? 'border-gold opacity-100'
-                    : 'border-transparent opacity-60 hover:opacity-100',
+                  'h-4 w-4',
+                  i < current.rating ? 'fill-gold-500 text-gold-500' : 'text-lodge-300',
                 )}
-              >
-                <img
-                  src={`https://picsum.photos/seed/${item.seed}/160/160`}
-                  alt={item.author}
-                  className="h-full w-full object-cover"
-                />
-              </button>
+              />
             ))}
           </div>
-
-          <div
-            role="tabpanel"
-            id={`lodge-panel-${active}`}
-            aria-labelledby={`lodge-tab-${active}`}
-            className="text-center lg:text-left"
+          <p
+            className="mb-6 text-lg leading-relaxed text-lodge-700 italic"
+            style={{ fontFamily: 'var(--font-heading)' }}
           >
-            <span className="text-sm text-[#999999]">{testimonial.date}</span>
-            <div
-              aria-label={ratingLabel}
-              className="mt-3 flex justify-center gap-1 lg:justify-start"
-            >
-              {Array.from({ length: 5 }, (_, index) => (
-                <Star key={index} aria-hidden="true" className="h-5 w-5 fill-gold text-gold" />
-              ))}
+            &ldquo;{current.quote}&rdquo;
+          </p>
+          <div className="flex items-center justify-center gap-3">
+            <img
+              src={current.photo}
+              alt={current.author}
+              className="h-10 w-10 rounded-full object-cover"
+              loading="lazy"
+            />
+            <div className="text-left">
+              <p className="text-sm font-bold">{current.author}</p>
+              <p className="text-xs text-lodge-400">{current.role}</p>
             </div>
-            <h3 className="mt-4 font-serif text-2xl text-heading">{testimonial.title}</h3>
-            <p className="mt-4 leading-7 text-heading/70">{testimonial.text}</p>
-            <p className="mt-5 text-sm font-bold tracking-wide text-gold uppercase">
-              {testimonial.author}
-              <span className="ml-1 font-normal text-heading/60 normal-case">
-                — {testimonial.role}
-              </span>
-            </p>
           </div>
+        </div>
+
+        {/* Tab dots */}
+        <div className="mt-6 flex justify-center gap-2">
+          {testimonials.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setActive(i)}
+              className={cn(
+                'h-2.5 w-2.5 rounded-full transition-colors',
+                i === active ? 'bg-gold-500' : 'bg-lodge-300 hover:bg-lodge-400',
+              )}
+              aria-label={`Show testimonial ${i + 1}`}
+            />
+          ))}
         </div>
       </div>
     </section>
