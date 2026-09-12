@@ -1,28 +1,22 @@
 import { render, screen } from '@testing-library/react'
-import { describe, expect, it } from 'vitest'
 import { App } from './App'
-import { brandName, heroSlides, posts } from './data'
 
 describe('App', () => {
-  it('composes all sections and sets the document title', () => {
+  it('renders all major sections', () => {
     render(<App />)
+    expect(screen.getAllByText('Petal').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getByText(/Making beautiful flowers/)).toBeInTheDocument()
+    expect(screen.getByText('100% Freshness')).toBeInTheDocument()
+    expect(screen.getByText('Fresh Flower')).toBeInTheDocument()
+    expect(screen.getByText(/We provide all kinds/)).toBeInTheDocument()
+    expect(screen.getByText('New Arrivals')).toBeInTheDocument()
+    expect(screen.getByText(/Let our flowers make your party/)).toBeInTheDocument()
+    expect(screen.getByText('Florist tricks')).toBeInTheDocument()
+    expect(screen.getByText('Alejandro Houston')).toBeInTheDocument()
+  })
 
-    expect(document.title).toBe('Petal — Blog Template')
-    expect(screen.getByRole('banner')).toBeInTheDocument()
-    expect(screen.getByRole('main')).toBeInTheDocument()
-    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
-
-    // Header
-    expect(screen.getByRole('link', { name: `${brandName} home` })).toBeInTheDocument()
-    // Hero
-    expect(
-      screen.getByRole('heading', { level: 2, name: heroSlides[0]!.title }),
-    ).toBeInTheDocument()
-    // Posts
-    expect(screen.getByRole('heading', { level: 3, name: posts[0]!.title })).toBeInTheDocument()
-    // Sidebar
-    expect(screen.getByRole('complementary', { name: 'Sidebar' })).toBeInTheDocument()
-    // Instagram strip + footer
-    expect(screen.getAllByRole('heading', { name: 'Instagram' })).toHaveLength(2)
+  it('sets the document title', () => {
+    render(<App />)
+    expect(document.title).toBe('Petal — Fresh Flower & Gift Shop')
   })
 })
