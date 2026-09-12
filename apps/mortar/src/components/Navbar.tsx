@@ -1,70 +1,68 @@
-import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
-import { cn } from '@free-react-templates/ui'
-import { navLinks, siteName } from '../data'
+import { useEffect, useState } from 'react'
+import { Moon, Sun } from 'lucide-react'
+import { ButtonLink } from '@free-react-templates/ui'
+
+const links = [
+  { label: 'Home', href: '#home' },
+  { label: 'Services', href: '#services' },
+  { label: 'About', href: '#about' },
+  { label: 'Portfolio', href: '#portfolio' },
+  { label: 'Contact', href: '#contact' },
+] as const
 
 export function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [dark, setDark] = useState(false)
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', dark)
+    return () => {
+      document.documentElement.classList.remove('dark')
+    }
+  }, [dark])
 
   return (
-    <header className="sticky top-0 z-50 bg-charcoal shadow-md">
-      <nav
-        aria-label="Main navigation"
-        className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4"
-      >
+    <header className="sticky top-0 z-50 border-b border-gray-100 bg-white dark:border-gray-800 dark:bg-gray-950">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <a
           href="#home"
-          className="text-2xl font-bold text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+          className="text-2xl font-bold tracking-wide text-primary-400 dark:text-primary-300"
         >
-          {siteName}
+          Mortar.
         </a>
-        <ul className="hidden items-center gap-8 lg:flex">
-          {navLinks.map((link) => (
-            <li key={link.label}>
+
+        <div className="flex items-center gap-4">
+          <nav aria-label="Main navigation" className="hidden items-center gap-1 lg:flex">
+            {links.map((link) => (
               <a
+                key={link.label}
                 href={link.href}
-                className="text-sm font-medium text-white/90 transition-colors hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+                className="rounded px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:text-primary-400 dark:text-gray-200 dark:hover:text-primary-300"
               >
                 {link.label}
               </a>
-            </li>
-          ))}
-        </ul>
-        <button
-          type="button"
-          aria-expanded={menuOpen}
-          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-          onClick={() => setMenuOpen((value) => !value)}
-          className="text-white lg:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
-        >
-          {menuOpen ? (
-            <X className="h-7 w-7" aria-hidden="true" />
-          ) : (
-            <Menu className="h-7 w-7" aria-hidden="true" />
-          )}
-        </button>
-      </nav>
-      <div
-        className={cn(
-          'overflow-hidden transition-all duration-300 lg:hidden',
-          menuOpen ? 'max-h-96' : 'max-h-0',
-        )}
-      >
-        <nav aria-label="Mobile navigation" className="border-t border-white/10 px-6 pb-4">
-          <ul className="flex flex-col">
-            {navLinks.map((link) => (
-              <li key={link.label}>
-                <a
-                  href={link.href}
-                  onClick={() => setMenuOpen(false)}
-                  className="block py-2.5 text-sm font-medium text-white/90 transition-colors hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
-                >
-                  {link.label}
-                </a>
-              </li>
             ))}
-          </ul>
-        </nav>
+          </nav>
+
+          <ButtonLink
+            href="#contact"
+            className="hidden rounded bg-primary-400 px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-500 sm:inline-flex"
+          >
+            Get in Touch
+          </ButtonLink>
+
+          <button
+            type="button"
+            onClick={() => setDark((value) => !value)}
+            aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
+            className="flex h-9 w-9 items-center justify-center rounded-full text-gray-600 transition-colors hover:bg-gray-100 hover:text-black dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-white"
+          >
+            {dark ? (
+              <Sun className="h-5 w-5" aria-hidden="true" />
+            ) : (
+              <Moon className="h-5 w-5" aria-hidden="true" />
+            )}
+          </button>
+        </div>
       </div>
     </header>
   )
