@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette — extracted from the original reference stylesheet */
+  --color-brand: #ff5f21;
+  --color-brand-hover: #e6571e;
+  --color-brand-light: #ff7b47;
+  --color-heading: #071112;
+  --color-body: #10285d;
+  --color-section-label: #70d76a;
+  --color-hero-accent: #31ff7a;
+  --color-footer-text: #dbdbdb;
+  --color-footer-bg: #0d1b2a;
+  --color-white: #ffffff;
+  --color-dark-overlay: rgba(7, 17, 18, 0.2);
+
+  /* Fonts — Oswald for headings/nav/buttons, Montserrat for body */
+  --font-sans: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-body);
+    background: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-sans);
+  }
+}
