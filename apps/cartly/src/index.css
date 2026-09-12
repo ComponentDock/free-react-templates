@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Cartly brand palette — recreated from the ColorLib "Eiser" ecommerce design
+     (brand green #71cd14). */
+  --color-lime-50: #f4fce3;
+  --color-lime-100: #e6f9c0;
+  --color-lime-200: #cef38c;
+  --color-lime-300: #aee84a;
+  --color-lime-400: #71cd14;
+  --color-lime-500: #5aab0f;
+  --color-lime-600: #44880b;
+  --color-lime-700: #326609;
+  --color-lime-800: #285210;
+  --color-lime-900: #1e3e0f;
+
+  /* Heebo + Roboto — the original template's typefaces (Google Fonts via index.html) */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Heebo', ui-sans-serif, system-ui, sans-serif;
+}
