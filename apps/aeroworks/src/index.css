@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* AeroWorks brand — car dealership theme.
+     Primary red #db2d2e, dark header #323232, light section bg #f7f7f7,
+     border #ebebeb, muted text #727171 / #8d8d8d. Font: Lato. */
+  --color-primary-50: #fdf2f2;
+  --color-primary-100: #fce4e4;
+  --color-primary-200: #facccc;
+  --color-primary-300: #f5a5a5;
+  --color-primary-400: #ed6b6c;
+  --color-primary-500: #db2d2e;
+  --color-primary-600: #c22324;
+  --color-primary-700: #a21c1c;
+  --color-primary-800: #861b1b;
+  --color-primary-900: #701e1e;
+
+  --color-header-bar: #323232;
+  --color-section-light: #f7f7f7;
+  --color-border: #ebebeb;
+  --color-text-dark: #353535;
+  --color-text-medium: #727171;
+  --color-text-muted: #8d8d8d;
+
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
