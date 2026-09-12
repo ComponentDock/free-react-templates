@@ -984,7 +984,7 @@
 - [x] **Drimo** — [colorlib](https://colorlib.com/wp/template/drimo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/drimo-free-multi-purpose-template.jpg) · [ripply](https://ripply.free.componentdock.com)
 - [x] **Dronephotography** — [colorlib](https://colorlib.com/wp/template/dronephotography/) · [skylens](https://skylens.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dronephotography-free-template.jpg)
 - [x] **Dup** — [colorlib](https://colorlib.com/wp/template/dup/) · [prism](https://prism.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dup-free-creative-agency-website-template.jpg)
-- [~] **Durg** — [colorlib](https://colorlib.com/wp/template/durg/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/durg-free-template.jpg)
+- [x] **Durg** — [colorlib](https://colorlib.com/wp/template/durg/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/durg-free-template.jpg) · [citadel](https://citadel.free.componentdock.com)
 - [x] **Dusk** — [colorlib](https://colorlib.com/wp/template/dusk/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dusk-free-template.jpg) · [Deliverly](https://deliverly.free.componentdock.com)
 - [ ] **Eatery** — [colorlib](https://colorlib.com/wp/template/eatery/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eatery-free-template.jpg)
 - [x] **Echo** — [colorlib](https://colorlib.com/wp/template/echo/) · [resonance](https://resonance.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/echo-free-template.jpg)
