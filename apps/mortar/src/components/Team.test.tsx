@@ -1,31 +1,33 @@
-import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import { Team } from './Team'
-import { team } from '../data'
 
 describe('Team', () => {
-  it('renders the kicker and heading', () => {
+  it('renders the section heading and both team members', () => {
     render(<Team />)
-    expect(screen.getByText(team.kicker)).toBeInTheDocument()
-    expect(screen.getByRole('heading', { level: 2, name: team.heading })).toBeInTheDocument()
+
+    expect(screen.getByRole('heading', { level: 2, name: 'Meet Our Team' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 3, name: 'Alex Morgan' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 3, name: 'Jordan Rivera' })).toBeInTheDocument()
   })
 
-  it('renders the four engineer cards with name and role', () => {
+  it('shows roles, bios, social links, and member images', () => {
     render(<Team />)
-    for (const member of team.members) {
-      expect(screen.getByRole('heading', { level: 3, name: member.name })).toBeInTheDocument()
-      expect(screen.getByRole('img', { name: member.name })).toBeInTheDocument()
+
+    expect(screen.getByText('Creative Director')).toBeInTheDocument()
+    expect(screen.getByText('Lead Developer')).toBeInTheDocument()
+
+    expect(screen.getByText(/over a decade of experience/i)).toBeInTheDocument()
+    expect(screen.getByText(/full-stack engineering expert/)).toBeInTheDocument()
+
+    expect(screen.getByRole('img', { name: /portrait of alex morgan/i })).toHaveAttribute(
+      'src',
+      expect.stringContaining('mortar-team-1'),
+    )
+
+    const socialLabels = ['Facebook', 'Twitter', 'LinkedIn', 'Instagram']
+    for (const label of socialLabels) {
+      expect(screen.getAllByRole('link', { name: label }).length).toBeGreaterThanOrEqual(1)
     }
-    expect(screen.getAllByText(team.role)).toHaveLength(4)
-  })
-
-  it('renders the social icon overlay links with accessible labels', () => {
-    render(<Team />)
-    expect(
-      screen.getByRole('link', { name: `${team.members[0].name} on Twitter` }),
-    ).toBeInTheDocument()
-    expect(
-      screen.getByRole('link', { name: `${team.members[0].name} on Google+` }),
-    ).toBeInTheDocument()
   })
 })

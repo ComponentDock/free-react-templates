@@ -1,52 +1,53 @@
-import { Building2, Factory, HardHat, Ruler, Users } from 'lucide-react'
-import { about } from '../data'
+import { cn } from '@free-react-templates/ui'
+import { Check } from 'lucide-react'
 
-const miniServiceIcons = [Building2, Users, Ruler, Factory] as const
+const highlights = [
+  'Professional and experienced team',
+  'Creative and innovative solutions',
+  'Dedicated project management',
+  '24/7 customer support',
+  'Results-driven approach',
+] as const
 
 export function About() {
   return (
-    <section id="about" className="py-24">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2">
-        <div className="relative">
+    <section id="about" aria-label="About" className="bg-white py-20 dark:bg-gray-950">
+      <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2">
+        <div className="flex justify-center lg:justify-start">
           <img
-            src="https://picsum.photos/seed/mortar-about/800/600"
-            alt="Construction site with workers"
-            className="h-full w-full rounded object-cover"
+            src="https://picsum.photos/seed/mortar-about/560/420"
+            alt="Team collaborating on a project"
+            className="h-auto w-full max-w-md rounded shadow-xl"
             loading="lazy"
           />
-          <div className="absolute -bottom-8 right-4 flex rotate-[-90deg] items-center gap-3 bg-charcoal px-8 py-6 text-white">
-            <HardHat className="h-10 w-10 text-brand" aria-hidden="true" />
-            <div className="text-left">
-              <span className="block text-3xl font-semibold">{about.badgeYears}</span>
-              <span className="block text-sm">{about.badgeCaption}</span>
-            </div>
-          </div>
         </div>
+
         <div>
-          <span className="text-sm font-semibold uppercase tracking-[0.2em] text-brand">
-            {about.kicker}
-          </span>
-          <h2 className="mt-2 text-4xl font-medium leading-snug text-ink md:text-5xl">
-            {about.heading}
+          <h2 className="text-3xl font-medium leading-snug text-ink dark:text-gray-100">
+            Creative Agency <span className="block text-primary-400">That Delivers</span>
           </h2>
-          <p className="mt-4 leading-relaxed text-gray-600">{about.paragraph}</p>
-          <h3 className="mt-8 text-xl font-medium text-charcoal">{about.subHeading}</h3>
-          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {about.miniServices.map((service, index) => {
-              const Icon = miniServiceIcons[index]!
-              return (
-                <div key={service.title} className="flex items-start gap-4">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded bg-brand/10 text-brand">
-                    <Icon className="h-6 w-6" aria-hidden="true" />
-                  </span>
-                  <div>
-                    <h4 className="font-medium text-charcoal">{service.title}</h4>
-                    <p className="mt-1 text-sm leading-relaxed text-gray-500">{service.blurb}</p>
-                  </div>
-                </div>
-              )
-            })}
-          </div>
+          <p className="mt-6 leading-relaxed text-smoke dark:text-gray-400">
+            We are a passionate team of designers, developers, and strategists dedicated to crafting
+            exceptional digital experiences. With years of industry expertise, we transform ideas
+            into impactful realities that drive business growth.
+          </p>
+          <ul className="mt-8 space-y-3">
+            {highlights.map((item) => (
+              <li
+                key={item}
+                className="flex items-center gap-3 text-sm text-smoke dark:text-gray-300"
+              >
+                <span
+                  className={cn(
+                    'flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary-50 text-primary-400 dark:bg-primary-900/40',
+                  )}
+                >
+                  <Check className="h-3 w-3" aria-hidden="true" />
+                </span>
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

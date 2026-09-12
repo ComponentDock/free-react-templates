@@ -1,83 +1,110 @@
 import { Mail, MapPin, Phone } from 'lucide-react'
-import { footer, siteName } from '../data'
+
+const navLinks = [
+  { label: 'Home', href: '#home' },
+  { label: 'Services', href: '#services' },
+  { label: 'About', href: '#about' },
+  { label: 'Portfolio', href: '#portfolio' },
+  { label: 'Contact', href: '#contact' },
+] as const
+
+const socialLinks = [
+  { label: 'Facebook', href: '#' },
+  { label: 'Twitter', href: '#' },
+  { label: 'LinkedIn', href: '#' },
+  { label: 'Instagram', href: '#' },
+] as const
 
 export function Footer() {
-  const year = new Date().getFullYear()
-
   return (
-    <footer className="bg-footer pt-20 text-white/70">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 pb-16 md:grid-cols-2 lg:grid-cols-4">
+    <footer className="bg-ink text-gray-400">
+      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
         <div>
-          <h2 className="text-2xl font-bold text-white">{siteName}</h2>
-          <p className="mt-4 leading-relaxed">{footer.blurb}</p>
+          <a href="#home" className="text-2xl font-bold tracking-wide text-white">
+            Mortar.
+          </a>
+          <h2 className="mt-5 text-sm font-semibold uppercase tracking-wider text-white">
+            About Us
+          </h2>
+          <p className="mt-4 text-sm leading-relaxed">
+            We are a creative agency passionate about crafting digital experiences that make a
+            lasting impact.
+          </p>
+          <div className="mt-6 flex gap-3">
+            {socialLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                aria-label={link.label}
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-700 text-gray-400 transition-colors hover:border-primary-400 hover:text-primary-400"
+              >
+                <span className="sr-only">{link.label}</span>
+                <span className="text-xs font-bold">{link.label[0]}</span>
+              </a>
+            ))}
+          </div>
         </div>
-        <nav aria-label="Footer services">
-          <h3 className="text-lg font-semibold text-white">{footer.servicesTitle}</h3>
-          <ul className="mt-4 space-y-3">
-            {footer.servicesLinks.map((link) => (
-              <li key={link.label}>
-                <a
-                  href="#services"
-                  className="block transition-colors hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
-                >
-                  {link.label}
-                  <span className="ml-2 text-sm text-white/40">{link.meta}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <nav aria-label="Quick links">
-          <h3 className="text-lg font-semibold text-white">{footer.quickLinksTitle}</h3>
-          <ul className="mt-4 space-y-3">
-            {footer.quickLinks.map((link) => (
-              <li key={link}>
-                <a
-                  href={`#${link.toLowerCase().replace(' ', '-')}`}
-                  className="transition-colors hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
-                >
-                  {link}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+
         <div>
-          <h3 className="text-lg font-semibold text-white">{footer.questionsTitle}</h3>
-          <ul className="mt-4 space-y-4">
-            <li className="flex items-start gap-3">
-              <MapPin className="mt-1 h-5 w-5 shrink-0 text-brand" aria-hidden="true" />
-              <span>{footer.address}</span>
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-white">
+            Contact Info
+          </h2>
+          <ul className="mt-4 space-y-3 text-sm">
+            <li className="flex items-start gap-2">
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary-400" aria-hidden="true" />
+              <span>123 Creative Street, Design District, NY 10001</span>
             </li>
-            <li>
-              <a
-                href={`tel:${footer.phone.replace(/\s/g, '')}`}
-                className="flex items-center gap-3 transition-colors hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
-              >
-                <Phone className="h-5 w-5 shrink-0 text-brand" aria-hidden="true" />
-                <span>{footer.phone}</span>
+            <li className="flex items-center gap-2">
+              <Phone className="h-4 w-4 shrink-0 text-primary-400" aria-hidden="true" />
+              <a href="tel:+15551234567" className="transition-colors hover:text-primary-400">
+                +1 (555) 123-4567
               </a>
             </li>
-            <li>
+            <li className="flex items-center gap-2">
+              <Mail className="h-4 w-4 shrink-0 text-primary-400" aria-hidden="true" />
               <a
-                href={`mailto:${footer.email}`}
-                className="flex items-center gap-3 transition-colors hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+                href="mailto:hello@mortar.studio"
+                className="transition-colors hover:text-primary-400"
               >
-                <Mail className="h-5 w-5 shrink-0 text-brand" aria-hidden="true" />
-                <span>{footer.email}</span>
+                hello@mortar.studio
               </a>
             </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-white">Quick Links</h2>
+          <ul className="mt-4 space-y-2 text-sm">
+            {navLinks.map((link) => (
+              <li key={link.label}>
+                <a href={link.href} className="transition-colors hover:text-primary-400">
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-white">
+            Studio Hours
+          </h2>
+          <ul className="mt-4 space-y-2 text-sm">
+            <li>Monday — Friday: 9:00 AM — 6:00 PM</li>
+            <li>Saturday: 10:00 AM — 4:00 PM</li>
+            <li>Sunday: Closed</li>
           </ul>
         </div>
       </div>
-      <div className="border-t border-white/10">
-        <p className="mx-auto max-w-7xl px-6 py-5 text-center text-sm">
-          Copyright © {year} {siteName}. {footer.rights} | {footer.madeWith}{' '}
+
+      <div className="border-t border-gray-800 py-6 text-center text-sm">
+        <p>
+          © {new Date().getFullYear()} Mortar. All rights reserved. Made with{' '}
           <a
-            href={footer.componentDockHref}
-            className="font-medium text-brand transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+            href="https://www.componentdock.com/"
+            className="text-primary-400 transition-colors hover:text-primary-300"
           >
-            {footer.componentDockLabel}
+            Component Dock
           </a>
         </p>
       </div>
