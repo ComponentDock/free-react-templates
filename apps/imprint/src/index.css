@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Imprint brand palette — golden yellow #fdcb6e from the Evans design */
+  --color-gold-50: #fef9e7;
+  --color-gold-100: #fdf0c4;
+  --color-gold-200: #fce49d;
+  --color-gold-300: #fbd96e;
+  --color-gold-400: #fdcb6e;
+  --color-gold-500: #f5b842;
+  --color-gold-600: #e5a02a;
+  --color-gold-700: #c07c1a;
+  --color-gold-800: #9a6114;
+  --color-gold-900: #7a4c10;
+
+  /* Dark surface */
+  --color-dark-900: #1d2124;
+  --color-dark-800: #2a2f33;
+  --color-dark-700: #343a40;
+
+  /* Poppins for body, Barlow Condensed for headings, Lora for accents */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Barlow Condensed', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Lora', ui-serif, Georgia, serif;
+}
