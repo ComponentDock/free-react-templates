@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Cogwork brand palette — recreated from the ColorLib "Industries" design
+     (css/style.css): orange #fd5f00 accents/buttons, dark #343a40 navbar,
+     light bg #f8f9fa sections. */
+  --color-brand: #fd5f00;
+  --color-brand-dark: #d75100;
+
+  /* Ink — dark text (#212529 from the original). */
+  --color-ink: #212529;
+
+  /* Paper — light section background (#f8f9fa). */
+  --color-paper: #f8f9fa;
+
+  /* Mist — muted body text (#6c757d). */
+  --color-mist: #6c757d;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the orange. */
+  --color-primary-50: #fff7ed;
+  --color-primary-100: #ffedd5;
+  --color-primary-200: #fed7aa;
+  --color-primary-300: #fdba74;
+  --color-primary-400: #fb923c;
+  --color-primary-500: #fd5f00;
+  --color-primary-600: #d75100;
+  --color-primary-700: #ba3f08;
+  --color-primary-800: #93320a;
+  --color-primary-900: #782b0c;
+
+  /* Original font: "Oxygen" (Google Fonts). */
+  --font-sans: 'Oxygen', ui-sans-serif, system-ui, sans-serif;
+}
