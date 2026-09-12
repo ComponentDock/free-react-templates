@@ -1007,7 +1007,7 @@
 - [x] **Express** — [colorlib](https://colorlib.com/wp/template/express/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/express-free-template.jpg) · [propel](https://propel.free.componentdock.com)
 - [x] **Fancy** — [colorlib](https://colorlib.com/wp/template/fancy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fancy-free-creative-business-website-template.jpg) · [flair](https://flair.free.componentdock.com)
 - [x] **Farmie** — [colorlib](https://colorlib.com/wp/template/farmie/) · [farmie](https://farmie.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/farmie-free-template.jpg)
-- [~] **Farmland** — [colorlib](https://colorlib.com/wp/template/farmland/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/farmland-free-template.jpg)
+- [x] **Farmland** — [colorlib](https://colorlib.com/wp/template/farmland/) · [greenfield](https://greenfield.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/farmland-free-template.jpg)
 - [ ] **Fashion 2** — [colorlib](https://colorlib.com/wp/template/fashion-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fashion-free-template.jpg)
 - [ ] **Fastnet** — [colorlib](https://colorlib.com/wp/template/fastnet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fastnet-free-template.jpg)
 - [x] **Favison** — [colorlib](https://colorlib.com/wp/template/favison/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/favison-free-template.jpg) · [Favison](https://favison.free.componentdock.com)
