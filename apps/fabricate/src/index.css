@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Fabricate brand palette — recreated from the ColorLib "Industry" design
+     (css/main.css): yellow #fab700 primary/buttons, paper #f9f9ff sections. */
+  --color-brand: #fab700;
+  --color-brand-dark: #e0a300;
+
+  /* Ink — dark headings (#222222 from the original). */
+  --color-ink: #222222;
+  --color-ink-dark: #1a1a1a;
+
+  /* Paper — light section background (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Mist — muted body text (#777777 from the original). */
+  --color-mist: #777777;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the yellow. */
+  --color-primary-50: #fffde7;
+  --color-primary-100: #fff9c4;
+  --color-primary-200: #fff59d;
+  --color-primary-300: #fff176;
+  --color-primary-400: #ffee58;
+  --color-primary-500: #fab700;
+  --color-primary-600: #e0a300;
+  --color-primary-700: #b38600;
+  --color-primary-800: #866600;
+  --color-primary-900: #594400;
+
+  /* Accent colors from hexagon cards. */
+  --color-accent-blue: #38a4ff;
+  --color-accent-teal: #4cd3e3;
+  --color-accent-lime: #f4e700;
+  --color-accent-red: #f44a40;
+
+  /* Font: Poppins (headings + body). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
