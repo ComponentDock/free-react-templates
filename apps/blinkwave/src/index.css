@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Blinkwave brand palette — recreated from the ColorLib "Fastnet" design
+     (brand red #ff3e3f, navy #072366, purple #331391). */
+  --color-signal-50: #fff1f1;
+  --color-signal-100: #ffe1e1;
+  --color-signal-200: #ffc8c8;
+  --color-signal-300: #ffa1a1;
+  --color-signal-400: #ff3e3f;
+  --color-signal-500: #f82122;
+  --color-signal-600: #e50708;
+  --color-signal-700: #c10506;
+  --color-signal-800: #a0090b;
+  --color-signal-900: #840d10;
+
+  --color-navy-50: #eef2ff;
+  --color-navy-100: #dde5ff;
+  --color-navy-200: #c3cfff;
+  --color-navy-300: #97a8ff;
+  --color-navy-400: #6475ff;
+  --color-navy-500: #414dff;
+  --color-navy-600: #2728f8;
+  --color-navy-700: #1d1be5;
+  --color-navy-800: #072366;
+  --color-navy-900: #10285d;
+
+  --color-purple-accent: #331391;
+  --color-blue-accent: #38a4ff;
+  --color-green-accent: #09cc7f;
+
+  --font-sans: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+}
