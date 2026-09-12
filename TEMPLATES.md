@@ -2659,7 +2659,7 @@
 - [ ] **Colorlib Regform 8** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-8.jpg)
 - [ ] **Colorlib Regform 9** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-9.jpg)
 - [ ] **Signup Form 02** — [colorlib](https://colorlib.com/wp/template/signup-form-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-02.jpg)
-- [ ] **Signup Form 03** — [colorlib](https://colorlib.com/wp/template/signup-form-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-03.jpg)
+- [~] **Signup Form 03** — [colorlib](https://colorlib.com/wp/template/signup-form-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-03.jpg)
 - [ ] **Signup Form 06** — [colorlib](https://colorlib.com/wp/template/signup-form-06/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-06.jpg)
 - [ ] **Signup Form 10** — [colorlib](https://colorlib.com/wp/template/signup-form-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-10.jpg)
 
@@ -2816,7 +2816,7 @@
 
 - [ ] **Signup Form 01** — [colorlib](https://colorlib.com/wp/template/signup-form-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-01.jpg)
 - [ ] **Signup Form 02** — [colorlib](https://colorlib.com/wp/template/signup-form-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-02.jpg)
-- [ ] **Signup Form 03** — [colorlib](https://colorlib.com/wp/template/signup-form-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-03.jpg)
+- [~] **Signup Form 03** — [colorlib](https://colorlib.com/wp/template/signup-form-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-03.jpg)
 - [ ] **Signup Form 04** — [colorlib](https://colorlib.com/wp/template/signup-form-04/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-04.jpg)
 - [ ] **Signup Form 05** — [colorlib](https://colorlib.com/wp/template/signup-form-05/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-05.jpg)
 - [ ] **Signup Form 06** — [colorlib](https://colorlib.com/wp/template/signup-form-06/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-06.jpg)
