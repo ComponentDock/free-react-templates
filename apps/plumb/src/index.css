@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Plumb brand colors — from the ColorLib "Gravity" preview:
+     a creative agency landing theme with an orange #FB742D primary,
+     black text, white background, and Lato + Playfair Display fonts. */
+  --color-primary-50: #fff3ec;
+  --color-primary-100: #ffe2d0;
+  --color-primary-200: #ffc5a0;
+  --color-primary-300: #ffa066;
+  --color-primary-400: #fb742d;
+  --color-primary-500: #e5651f;
+  --color-primary-600: #cc5515;
+  --color-primary-700: #a64210;
+  --color-primary-800: #80320c;
+  --color-primary-900: #60260a;
+
+  /* Light section backgrounds */
+  --color-cream: #faf8f5;
+  --color-mist: #f5f3f0;
+
+  /* Muted text */
+  --color-smoke: #7f7f7f;
+
+  --color-ink: #000000;
+
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
