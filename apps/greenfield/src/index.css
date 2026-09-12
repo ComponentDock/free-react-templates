@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Greenfield brand palette — agriculture green #5d8c55. */
+  --color-brand: #5d8c55;
+  --color-brand-dark: #486c42;
+
+  /* Accent — gold/yellow #ecdc67 for secondary accents. */
+  --color-accent: #ecdc67;
+
+  /* Ink — dark text (#141b25). */
+  --color-ink: #141b25;
+
+  /* Paper — light section backgrounds (#f8f9fa). */
+  --color-paper: #f8f9fa;
+
+  /* Mist — muted text (#6c757d). */
+  --color-mist: #6c757d;
+
+  /* Muted card bg (#e8e8e8). */
+  --color-muted: #e8e8e8;
+
+  /* Border color. */
+  --color-divider: #dee2e6;
+
+  /* Fonts: Roboto (body) + Covered By Your Grace (subheadings). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Covered By Your Grace', ui-sans-serif, system-ui, sans-serif;
+}
