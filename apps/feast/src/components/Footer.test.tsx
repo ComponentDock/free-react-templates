@@ -1,27 +1,58 @@
-import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
+import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import { Footer } from './Footer'
-import { brandName, footerCopyright, footerCredit, navLinks, tagline } from '../data'
 
 describe('Footer', () => {
-  it('renders the brand, tagline and social icons', () => {
+  it('renders footer link sections', () => {
     render(<Footer />)
-
-    expect(screen.getByText(brandName)).toBeInTheDocument()
-    expect(screen.getByText(tagline)).toBeInTheDocument()
-
-    for (const name of ['Pinterest', 'Facebook', 'Twitter', 'Dribbble', 'Behance', 'LinkedIn']) {
-      expect(screen.getByRole('link', { name })).toBeInTheDocument()
-    }
+    expect(screen.getByText('Top Products')).toBeInTheDocument()
+    expect(screen.getByText('Quick Links')).toBeInTheDocument()
+    expect(screen.getByText('Features')).toBeInTheDocument()
+    expect(screen.getByText('Resources')).toBeInTheDocument()
+    expect(screen.getByText('Newsletter')).toBeInTheDocument()
   })
 
-  it('renders the nav menu and copyright lines', () => {
+  it('renders the Component Dock link', () => {
     render(<Footer />)
+    const link = screen.getByRole('link', { name: /component dock/i })
+    expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
+    expect(link).toHaveAttribute('target', '_blank')
+  })
 
-    for (const label of navLinks) {
-      expect(screen.getByRole('link', { name: label })).toBeInTheDocument()
-    }
-    expect(screen.getByText(footerCopyright)).toBeInTheDocument()
-    expect(screen.getByText(footerCredit)).toBeInTheDocument()
+  it('renders the newsletter form', () => {
+    render(<Footer />)
+    expect(screen.getByPlaceholderText(/your email address/i)).toBeInTheDocument()
+  })
+
+  it('submits the newsletter form', async () => {
+    const user = userEvent.setup()
+    render(<Footer />)
+    const input = screen.getByPlaceholderText(/your email address/i)
+    await user.type(input, 'test@example.com')
+    const submitButton = screen.getByRole('button', { name: /subscribe/i })
+    await user.click(submitButton)
+    expect(screen.getByRole('status')).toHaveTextContent(/thanks for subscribing/i)
+  })
+
+  it('renders social icons', () => {
+    render(<Footer />)
+    expect(screen.getByLabelText('Facebook')).toBeInTheDocument()
+    expect(screen.getByLabelText('Twitter')).toBeInTheDocument()
+    expect(screen.getByLabelText('Dribbble')).toBeInTheDocument()
+    expect(screen.getByLabelText('Behance')).toBeInTheDocument()
+  })
+
+  it('does not subscribe with empty email', async () => {
+    const user = userEvent.setup()
+    render(<Footer />)
+    const submitButton = screen.getByRole('button', { name: /subscribe/i })
+    await user.click(submitButton)
+    expect(screen.queryByRole('status')).not.toBeInTheDocument()
+  })
+
+  it('renders copyright with current year', () => {
+    render(<Footer />)
+    expect(screen.getByText(/Feast\. All rights reserved/)).toBeInTheDocument()
   })
 })
