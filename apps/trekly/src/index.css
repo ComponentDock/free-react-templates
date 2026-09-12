@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Trekly brand palette — recreated from ColorLib Ecoland design (blue #007bff primary). */
+  --color-ocean-50: #eff8ff;
+  --color-ocean-100: #dbeffe;
+  --color-ocean-200: #bfe3fe;
+  --color-ocean-300: #93d3fd;
+  --color-ocean-400: #60b9fa;
+  --color-ocean-500: #3b9af6;
+  --color-ocean-600: #257ceb;
+  --color-ocean-700: #1d65d8;
+  --color-ocean-800: #1e52af;
+  --color-ocean-900: #1e478a;
+
+  /* Poppins — the original template's typeface (Google Fonts via index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
