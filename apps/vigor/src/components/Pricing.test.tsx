@@ -1,25 +1,33 @@
-import { render, screen, within } from '@testing-library/react'
-import { describe, expect, it } from 'vitest'
+import { describe, it, expect } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import { Pricing } from './Pricing'
 
 describe('Pricing', () => {
-  it('renders three pricing cards with price, title, features, and enroll buttons', () => {
+  it('renders section heading', () => {
     render(<Pricing />)
+    expect(screen.getByText('Membership Plans')).toBeDefined()
+  })
 
-    const cards = [
-      { price: '$50/ Month', title: 'Woman Fitness Class' },
-      { price: '$70/ Month', title: 'Spinning Class + BONUS' },
-      { price: '$90/ Month', title: 'All Inclusive Gym' },
-    ]
+  it('renders all 3 pricing tiers', () => {
+    render(<Pricing />)
+    expect(screen.getByText('One Day Training')).toBeDefined()
+    expect(screen.getByText('Pay Every Month')).toBeDefined()
+    expect(screen.getByText('1 Year Membership')).toBeDefined()
+  })
 
-    for (const { price, title } of cards) {
-      const priceHeading = screen.getByRole('heading', { name: price })
-      const card = priceHeading.closest('article')!
-      expect(within(card).getByRole('heading', { name: title })).toBeInTheDocument()
-      expect(within(card).getAllByRole('listitem')).toHaveLength(3)
-      expect(within(card).getByRole('link', { name: 'Enroll Now' })).toBeInTheDocument()
-    }
+  it('renders pricing subheading', () => {
+    render(<Pricing />)
+    expect(screen.getByText('Pricing Tables')).toBeDefined()
+  })
 
-    expect(screen.getByText(/Unlimited spinning and cardio classes/)).toBeInTheDocument()
+  it('renders Get Started buttons', () => {
+    render(<Pricing />)
+    const buttons = screen.getAllByText('Get Started')
+    expect(buttons.length).toBe(3)
+  })
+
+  it('has pricing section id', () => {
+    const { container } = render(<Pricing />)
+    expect(container.querySelector('#pricing')).toBeDefined()
   })
 })

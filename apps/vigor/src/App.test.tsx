@@ -1,26 +1,21 @@
+import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { describe, expect, it } from 'vitest'
 import { App } from './App'
 
 describe('App', () => {
-  it('sets the document title and renders every section in order', () => {
+  it('renders all major sections', () => {
     render(<App />)
+    expect(screen.getAllByText('Vigor').length).toBeGreaterThan(0)
+    expect(screen.getByText(/Crossfit is for/)).toBeDefined()
+    expect(screen.getByText(/Welcome to/)).toBeDefined()
+    expect(screen.getByText('Membership Plans')).toBeDefined()
+    expect(screen.getByText('Successful Stories')).toBeDefined()
+    expect(screen.getByText('Latest Articles')).toBeDefined()
+    expect(screen.getByText('About Us')).toBeDefined()
+  })
 
-    expect(document.title).toBe('Vigor — Fitness Gym Template')
-
-    const h2s = screen.getAllByRole('heading', { level: 2 }).map((h) => h.textContent)
-    expect(h2s).toEqual([
-      'Get fit & healthy.',
-      'Why choose Vigor?',
-      'Ask the experts',
-      '$50 / Month',
-      '$70 / Month',
-      '$90 / Month',
-      'Working Hours',
-      'Our Newsletter',
-    ])
-
-    expect(screen.getByRole('link', { name: /Vigor home/i })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Component Dock' })).toBeInTheDocument()
+  it('sets document title', () => {
+    render(<App />)
+    expect(document.title).toBe('Vigor — Crossfit Gym Template')
   })
 })
