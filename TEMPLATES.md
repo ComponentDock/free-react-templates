@@ -1057,7 +1057,7 @@
 - [x] **Industry** — [colorlib](https://colorlib.com/wp/template/industry/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/industry-free-template.jpg) · [fabricate](https://fabricate.free.componentdock.com)
 - [x] **Industry Inc** — [colorlib](https://colorlib.com/wp/template/industry-inc/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/industryinc-free-template.jpg) · [dynamo](https://dynamo.free.componentdock.com)
 - [x] **Innova** — [colorlib](https://colorlib.com/wp/template/innova/) · [impulse](https://impulse.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/innova-free-template.jpg)
-- [ ] **Inspire** — [colorlib](https://colorlib.com/wp/template/inspire/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/inspire-free-template.jpg)
+- [~] **Inspire** — [colorlib](https://colorlib.com/wp/template/inspire/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/inspire-free-template.jpg)
 - [x] **Interior Design** — [colorlib](https://colorlib.com/wp/template/interior-design/) · [Mint](https://mint.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/interiordesign-free-template.jpg)
 - [x] **Inves** — [colorlib](https://colorlib.com/wp/template/inves/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/inves-free-template.jpg) · [equity](https://equity.free.componentdock.com)
 - [x] **Invest** — [colorlib](https://colorlib.com/wp/template/invest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/invest-free-template.jpg) · [vestly](https://vestly.free.componentdock.com)
