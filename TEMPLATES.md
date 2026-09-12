@@ -1028,7 +1028,7 @@
 - [x] **Glamour** — [colorlib](https://colorlib.com/wp/template/glamour/) · [glamour](https://glamour.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/glamour-free-template.jpg)
 - [x] **Glint** — [colorlib](https://colorlib.com/wp/template/glint/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/glint-simple-website-template.jpeg) · [lumen](https://free-react-templates-lumen.surge.sh)
 - [x] **Gourmet** — [colorlib](https://colorlib.com/wp/template/gourmet/) · [dine](https://dine.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gourmet-free-template.jpg)
-- [~] **Gravity** — [colorlib](https://colorlib.com/wp/template/gravity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gravity-free-template.jpg)
+- [x] **Gravity** — [colorlib](https://colorlib.com/wp/template/gravity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gravity-free-template.jpg) · [plumb](https://plumb.free.componentdock.com)
 - [ ] **Grunt** — [colorlib](https://colorlib.com/wp/template/grunt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/grunt-free-template.jpg)
 - [x] **Haircare** — [colorlib](https://colorlib.com/wp/template/haircare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/haircare-free-template.jpg) · [mane](https://mane.free.componentdock.com)
 - [x] **Hairsal** — [colorlib](https://colorlib.com/wp/template/hairsal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hairsal-free-template.jpg) · [tressly](https://tressly.free.componentdock.com)
