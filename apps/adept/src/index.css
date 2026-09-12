@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Adept brand palette — deep purple #352961 from the original design.
+     Oswald headings, Muli body. Bootstrap-blue #007bff accents. */
+  --color-brand: #352961;
+  --color-brand-light: #4a3d82;
+  --color-brand-dark: #241a45;
+
+  /* Accent — blue CTAs (#007bff from the original). */
+  --color-accent: #007bff;
+
+  /* Ink — dark text (#212529). */
+  --color-ink: #212529;
+
+  /* Paper — light section backgrounds (#f8f9fa). */
+  --color-paper: #f8f9fa;
+
+  /* Mist — muted text (#6c757d). */
+  --color-mist: #6c757d;
+
+  /* Muted card bg (#ebeef0). */
+  --color-muted: #ebeef0;
+
+  /* Border color. */
+  --color-divider: #dee2e6;
+
+  /* Primary scale — deep purple. */
+  --color-primary-50: #f0eef5;
+  --color-primary-100: #d9d3e8;
+  --color-primary-200: #b3a7d1;
+  --color-primary-300: #8d7bba;
+  --color-primary-400: #6a52a3;
+  --color-primary-500: #352961;
+  --color-primary-600: #2d2252;
+  --color-primary-700: #241a45;
+  --color-primary-800: #1c1336;
+  --color-primary-900: #140d28;
+
+  /* Fonts: Oswald (headings) + Muli (body). */
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+}
