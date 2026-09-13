@@ -2,179 +2,214 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Labs** digital agency website template.
-- Source slug: `labs`
-- Preview URL: https://preview.colorlib.com/theme/labs/ (404 — unreachable at time of prep; falling back to screenshot + ColorLib template page meta description)
-- Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/labs-digital-agency-website-template.jpg
-- Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript
-- A single-page digital agency landing page with hero slider, features/services, team, testimonials, blog, and contact form.
+Krypton is a single-page digital agency landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Labs" design (see TEMPLATES.md), built under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-## Design Tokens
+The original is a digital agency template with a hero slider (full-width images with dark overlay, headline, subtitle, CTA), services/features grid, about section with stats, portfolio grid with filters, team member cards, testimonials with author info, blog cards, a contact form, and a multi-column footer with newsletter. Krypton recreates that structure section-for-section with matching layout, colors, typography, and content types (no ColorLib assets copied).
 
-Extracted from the preview screenshot pixel analysis and ColorLib template page:
+## Design reference (replication findings)
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Primary / accent | `#6420b1` | Deep purple — used for CTAs, highlights, section accents |
-| Secondary accent | `#5d80c0` | Medium blue — navigation, secondary elements |
-| Text dark | `#1a1a2e` | Near-black for headings |
-| Text body | `#555` | Medium gray for body text |
-| Background light | `#f8f9fa` | Off-white section backgrounds |
-| Background alt | `#fdf2ee` | Warm peach/pink tint on some sections |
-| White | `#ffffff` | Cards, content areas |
-| Dark overlay | `rgba(0,0,0,0.5)` | Hero slider text backdrop |
+Preview URL: https://preview.colorlib.com/theme/labs/ (404 — unreachable at prep time; falling back to screenshot + ColorLib template page meta description)
+Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/labs-digital-agency-website-template.jpg
 
-Note: Preview was 404 at prep time. Tokens derived from screenshot pixel sampling. Implementer should verify against the live preview if it comes back online.
+### Design Tokens
 
-## Page Sections (from meta description + screenshot analysis)
+| Token            | Value             | Notes                                                    |
+| ---------------- | ----------------- | -------------------------------------------------------- |
+| Primary / accent | `#6420b1`         | Deep purple — used for CTAs, highlights, section accents |
+| Secondary accent | `#5d80c0`         | Medium blue — navigation, secondary elements             |
+| Text dark        | `#1a1a2e`         | Near-black for headings                                  |
+| Text body        | `#555`            | Medium gray for body text                                |
+| Background light | `#f8f9fa`         | Off-white section backgrounds                            |
+| Background alt   | `#fdf2ee`         | Warm peach/pink tint on some sections                    |
+| White            | `#ffffff`         | Cards, content areas                                     |
+| Dark overlay     | `rgba(0,0,0,0.5)` | Hero slider text backdrop                                |
+| Font heading     | Poppins           | Google Fonts                                             |
+| Font body        | Roboto            | Google Fonts                                             |
 
-1. **Navigation Bar** — Logo left, nav links center (Home, About, Services, Portfolio, Blog, Contact), CTA button right. Clean white/light background.
-2. **Hero Slider** — Large full-width slider with background images, headline text overlay, subtitle, and CTA button. Dark overlay on images for text readability.
-3. **Features / Services** — Grid of service cards (3–4 columns) with icons, titles, and descriptions. Bright accent colors on icons.
-4. **About / Stats** — Company intro section with image + text side-by-side, possibly with counter stats (projects, clients, etc.).
-5. **Portfolio / Work** — Image grid or masonry of project thumbnails with hover overlays showing project titles.
-6. **Team** — Grid of team member cards with photos, names, roles, and social links.
-7. **Testimonials** — Carousel or slider of client testimonials with quotes, author photos, names, and company/role.
-8. **Blog / News** — Grid of recent blog post cards with thumbnails, dates, titles, and excerpts.
-9. **Contact Form** — Full-width section with contact form (name, email, subject, message) and possibly company address/info.
-10. **Footer** — Multi-column layout with logo, nav links, social icons, newsletter signup, copyright. Links to Component Dock.
+## Requirements
 
-## Gherkin Scenarios
+### Requirement: Navigation bar
 
-### Navigation
+The template SHALL display a sticky navigation bar with the brand name "Krypton" on the left, navigation links (Home, About, Services, Portfolio, Blog, Contact) in the center, a CTA button on the right, a dark mode toggle, and a hamburger menu on mobile.
 
-```gherkin
-Scenario: Navigation bar displays correctly
-  Given the user visits the homepage
-  Then the logo is displayed on the left
-  And navigation links include Home, About, Services, Portfolio, Blog, Contact
-  And a CTA button is visible on the right side
-  And the navigation is responsive with a hamburger toggle on mobile
-```
+#### Scenario: Desktop navigation renders correctly
 
-### Hero Slider
+- **WHEN** the user visits the homepage on a desktop viewport
+- **THEN** the logo "Krypton" is displayed on the left
+- **AND** navigation links Home, About, Services, Portfolio, Blog, Contact are visible
+- **AND** a "Get Started" CTA button links to the contact section
+- **AND** a dark mode toggle button is present
 
-```gherkin
-Scenario: Hero slider displays with content
-  Given the user visits the homepage
-  Then a full-width hero slider is displayed
-  And each slide has a background image with dark overlay
-  And each slide shows a headline, subtitle, and CTA button
-  And the slider auto-plays or can be navigated
+#### Scenario: Mobile navigation hamburger toggle
 
-Scenario: Hero slider is responsive
-  Given the user views on mobile
-  Then the hero slider scales to full width
-  And text remains readable over the overlay
-```
+- **WHEN** the user views on a mobile viewport
+- **THEN** the navigation links are hidden
+- **AND** a hamburger menu button is visible
+- **AND** clicking the hamburger opens a mobile navigation panel
+- **AND** clicking a link in the mobile panel closes it
 
-### Features / Services
+#### Scenario: Dark mode toggle
 
-```gherkin
-Scenario: Services section shows feature cards
-  Given the user scrolls to the services section
-  Then a section heading is displayed
-  And 3–4 service cards are shown in a grid
-  And each card has an icon, title, and description
-  And icons use the brand accent color
-```
+- **WHEN** the user clicks the dark mode toggle
+- **THEN** the html element receives the "dark" class
+- **AND** clicking again removes the "dark" class
 
-### About / Stats
+### Requirement: Hero slider
 
-```gherkin
-Scenario: About section with company info
-  Given the user scrolls to the about section
-  Then a company description is displayed alongside an image
-  And counter statistics (projects, clients, awards) are shown
-  And the stats animate on scroll or load
-```
+The template SHALL display a full-width hero slider with background images, dark overlay, headline, subtitle, and CTA buttons. The slider auto-advances every 5 seconds and supports manual navigation via arrow buttons and dot indicators.
 
-### Portfolio
+#### Scenario: Hero displays initial slide
 
-```gherkin
-Scenario: Portfolio grid displays work samples
-  Given the user scrolls to the portfolio section
-  Then a grid of project thumbnails is displayed
-  And hovering a thumbnail reveals the project title
-  And clicking a thumbnail could open a detail view
-```
+- **WHEN** the user visits the homepage
+- **THEN** a full-width hero section is displayed
+- **AND** the heading "We Are Digital Agency" is shown
+- **AND** "Our Services" and "View Portfolio" CTA buttons are present
 
-### Team
+#### Scenario: Slider auto-advances
 
-```gherkin
-Scenario: Team section shows members
-  Given the user scrolls to the team section
-  Then team member cards are displayed in a grid
-  And each card shows a photo, name, role, and social media links
-  And social icons use brand colors on hover
-```
+- **WHEN** 5 seconds elapse without user interaction
+- **THEN** the hero transitions to the next slide
+- **AND** the heading changes accordingly
 
-### Testimonials
+#### Scenario: Manual slide navigation
 
-```gherkin
-Scenario: Testimonials carousel
-  Given the user scrolls to the testimonials section
-  Then a carousel of client testimonials is displayed
-  And each testimonial shows a quote, author photo, name, and company
-  And the carousel can be navigated with arrows or dots
-```
+- **WHEN** the user clicks the next or previous arrow button
+- **THEN** the slider advances or goes back one slide
+- **WHEN** the user clicks a dot indicator
+- **THEN** the slider jumps to that slide
 
-### Blog
+### Requirement: Services section
 
-```gherkin
-Scenario: Blog section shows recent posts
-  Given the user scrolls to the blog section
-  Then a grid of blog post cards is displayed
-  And each card shows a thumbnail image, date, title, and excerpt
-  And cards link to individual blog posts
-```
+The template SHALL display a services section with a heading and 4 service cards in a responsive grid, each with an icon, title, and description.
 
-### Contact Form
+#### Scenario: Services render all cards
 
-```gherkin
-Scenario: Contact form is functional
-  Given the user scrolls to the contact section
-  Then a contact form is displayed with name, email, subject, and message fields
-  And the form validates required fields before submission
-  And a submit button sends the form data
-```
+- **WHEN** the user scrolls to the services section
+- **THEN** the heading "Our Services" is displayed
+- **AND** 4 cards are shown: Strategy & Research, UI/UX Design, Web Development, Digital Marketing
+- **AND** each card has an icon, title, and description text
 
-### Footer
+### Requirement: About section
 
-```gherkin
-Scenario: Footer layout
-  Given the user scrolls to the footer
-  Then the footer shows the brand logo and copyright
-  And navigation links are organized in columns
-  And social media icons are displayed
-  And a newsletter subscription form is present
-  And the footer links to https://www.componentdock.com/ as "Component Dock"
-```
+The template SHALL display an about section with company description and 3 stat counters (projects, clients, awards).
 
-### Responsive Behavior
+#### Scenario: About section content
 
-```gherkin
-Scenario: Mobile layout adaptation
-  Given the user views on a mobile viewport
-  Then the navigation collapses to a hamburger menu
-  And service cards stack vertically
-  And team cards stack vertically
-  And the contact form is full-width
-```
+- **WHEN** the user scrolls to the about section
+- **THEN** the heading "About Our Agency" is shown
+- **AND** a company description paragraph is displayed
+- **AND** stat counters "450+" (Projects), "200+" (Clients), "35+" (Awards) are visible
 
-## Verification Checklist
+### Requirement: Portfolio section
 
-- [ ] Section order matches: Nav → Hero Slider → Features → About → Portfolio → Team → Testimonials → Blog → Contact → Footer
-- [ ] Brand purple `#6420b1` used for CTAs and accents
-- [ ] Blue `#5d80c0` for secondary elements
-- [ ] Hero slider renders with dark overlay on background images
-- [ ] Service cards display in responsive grid
-- [ ] Team member cards show photo, name, role, social links
-- [ ] Testimonials carousel rotates with author info
-- [ ] Blog cards show thumbnail, date, title, excerpt
-- [ ] Contact form validates and submits
-- [ ] Footer links to Component Dock
-- [ ] Responsive: hamburger nav, stacked grids on mobile
-- [ ] No ColorLib references in app code
-- [ ] Placeholder images via picsum.photos with deterministic seeds
-- [ ] Google Fonts loaded via link in index.html
+The template SHALL display a portfolio section with filterable project thumbnails. Clicking a filter shows only items in that category.
+
+#### Scenario: Portfolio shows all items
+
+- **WHEN** the user scrolls to the portfolio section
+- **THEN** the heading "Our Portfolio" is shown
+- **AND** 6 project thumbnails are displayed
+- **AND** filter buttons "All", "Design", "Development", "Marketing" are visible
+
+#### Scenario: Portfolio filtering
+
+- **WHEN** the user clicks the "Design" filter
+- **THEN** only Design-category items are shown (2 items)
+- **WHEN** the user clicks "All"
+- **THEN** all 6 items are shown again
+
+### Requirement: Team section
+
+The template SHALL display a team section with member cards showing photo, name, role, and social links.
+
+#### Scenario: Team members display
+
+- **WHEN** the user scrolls to the team section
+- **THEN** the heading "Meet Our Team" is shown
+- **AND** 4 team member cards are displayed with names, roles, and social link icons
+
+### Requirement: Testimonials section
+
+The template SHALL display a testimonials section with 3 client testimonial cards showing quote, author photo, name, and company.
+
+#### Scenario: Testimonials render correctly
+
+- **WHEN** the user scrolls to the testimonials section
+- **THEN** the heading "What Clients Say" is shown
+- **AND** 3 testimonial cards are displayed with quotes and author info
+
+### Requirement: Blog section
+
+The template SHALL display a blog section with 3 recent post cards showing thumbnail, date, title, excerpt, and a "Read More" link.
+
+#### Scenario: Blog posts display
+
+- **WHEN** the user scrolls to the blog section
+- **THEN** the heading "Latest News" is shown
+- **AND** 3 blog post cards are displayed
+- **AND** each card has a "Read More" link
+
+### Requirement: Contact form
+
+The template SHALL display a contact form with name, email, subject, and message fields that validate required fields and clear on submit.
+
+#### Scenario: Contact form fields
+
+- **WHEN** the user scrolls to the contact section
+- **THEN** the heading "Get In Touch" is shown
+- **AND** form fields Name, Email, Subject, Message, and a "Send Message" button are present
+
+#### Scenario: Form submission clears fields
+
+- **WHEN** the user fills all fields and clicks "Send Message"
+- **THEN** all form fields are cleared
+
+### Requirement: Footer
+
+The template SHALL display a footer with brand name, contact info, quick links, newsletter form, and a link to Component Dock.
+
+#### Scenario: Footer content
+
+- **WHEN** the user scrolls to the footer
+- **THEN** the brand "Krypton" is displayed
+- **AND** contact information (address, phone, email) is shown
+- **AND** quick navigation links are listed
+- **AND** a newsletter subscription form with "Subscribe" button is present
+- **AND** a link to https://www.componentdock.com/ labeled "Component Dock" is shown
+- **AND** the copyright year matches the current year
+
+#### Scenario: Newsletter form clears on submit
+
+- **WHEN** the user enters an email and clicks "Subscribe"
+- **THEN** the email field is cleared
+
+### Requirement: Responsive behavior
+
+The template SHALL be fully responsive, adapting layout for mobile viewports.
+
+#### Scenario: Mobile layout
+
+- **WHEN** the user views on a mobile viewport
+- **THEN** the navigation collapses to a hamburger menu
+- **AND** service cards stack vertically
+- **AND** portfolio grid adjusts to fewer columns
+- **AND** team cards stack vertically
+- **AND** contact form is full-width
+
+### Requirement: No ColorLib references
+
+The template SHALL NOT contain any references to ColorLib in app source code, comments, or assets.
+
+#### Scenario: Clean app code
+
+- **WHEN** inspecting any file under apps/krypton/
+- **THEN** no strings containing "colorlib" or "ColorLib" appear in source code or comments
+
+### Requirement: Component Dock branding
+
+The template SHALL link to https://www.componentdock.com/ branded as "Component Dock" in the footer.
+
+#### Scenario: Footer link
+
+- **WHEN** the user views the footer
+- **THEN** a link to https://www.componentdock.com/ with text "Component Dock" is present
