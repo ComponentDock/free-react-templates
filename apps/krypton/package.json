@@ -1,6 +1,7 @@
 {
   "name": "@free-react-templates/krypton",
   "private": true,
+  "homepage": "https://krypton.free.componentdock.com",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
