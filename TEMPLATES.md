@@ -1132,7 +1132,7 @@
 - [x] **Pexcon** — [colorlib](https://colorlib.com/wp/template/pexcon/) · [pexflow](https://pexflow.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pexcon-free-template.jpg)
 - [x] **Pexman** — [colorlib](https://colorlib.com/wp/template/pexman/) · [pipekit](https://pipekit.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pexman-colorlib-template.jpg)
 - [x] **Pharma** — [colorlib](https://colorlib.com/wp/template/pharma/) · [elixir](https://elixir.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pharma-free-template.jpg)
-- [ ] **Pharmative** — [colorlib](https://colorlib.com/wp/template/pharmative/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pharmative-free-template.jpg)
+- [~] **Pharmative** — [colorlib](https://colorlib.com/wp/template/pharmative/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pharmative-free-template.jpg)
 - [x] **Photographer** — [colorlib](https://colorlib.com/wp/template/photographer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/photographer-free-template.jpg) · [photofolio](https://photofolio.free.componentdock.com)
 - [ ] **Pillow Mart** — [colorlib](https://colorlib.com/wp/template/pillow-mart/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pillowmart-free-template.jpg)
 - [ ] **Pixel** — [colorlib](https://colorlib.com/wp/template/pixel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pixel-free-template.jpg)
