@@ -41,10 +41,16 @@ describe('FeaturedProducts', () => {
     expect(screen.getAllByText('Crossbody Bag').length).toBeGreaterThanOrEqual(1)
   })
 
-  it('displays badge labels on products', () => {
+  it('displays badge labels on products', async () => {
+    const user = userEvent.setup()
     render(<FeaturedProducts />)
+    // Default Men's tab has "Sale" badge (Down Jacket, Leather Jacket)
     expect(screen.getAllByText('Sale').length).toBeGreaterThanOrEqual(1)
+    // Switch to Woman tab which has "New" badges
+    await user.click(screen.getByRole('button', { name: 'Woman' }))
     expect(screen.getAllByText('New').length).toBeGreaterThanOrEqual(1)
+    // Switch to Shoes tab which has "-10%" badge
+    await user.click(screen.getByRole('button', { name: 'Shoes' }))
     expect(screen.getAllByText('-10%').length).toBeGreaterThanOrEqual(1)
   })
 

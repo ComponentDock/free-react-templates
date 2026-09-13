@@ -11,8 +11,8 @@ describe('LatestProducts', () => {
   it('renders product cards with names and prices', () => {
     render(<LatestProducts />)
     expect(screen.getAllByText('Down Jacket').length).toBeGreaterThanOrEqual(1)
-    expect(screen.getByText('$120')).toBeInTheDocument()
-    // Casual Hoodie appears in LatestProducts and possibly FeaturedProducts sidebar
+    // $120 appears as a normal price and as a strikethrough for Leather Jacket
+    expect(screen.getAllByText('$120').length).toBeGreaterThanOrEqual(2)
     expect(screen.getAllByText('Casual Hoodie').length).toBeGreaterThanOrEqual(1)
     expect(screen.getByText('$80')).toBeInTheDocument()
   })
