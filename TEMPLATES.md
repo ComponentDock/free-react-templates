@@ -1127,7 +1127,7 @@
 - [x] **Pastel** — [colorlib](https://colorlib.com/wp/template/pastel/) · [tint](https://tint.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pastel-free-template.jpg)
 - [x] **Pato** — [colorlib](https://colorlib.com/wp/template/pato/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pato-free-modern-restuarant-website-template.jpg) · [gastronome](https://gastronome.free.componentdock.com)
 - [x] **Persuit** — [colorlib](https://colorlib.com/wp/template/persuit/) · [modista](https://modista.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/persuit-free-template.jpg)
-- [ ] **Pestcontrol** — [colorlib](https://colorlib.com/wp/template/pestcontrol/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pestcontrol-colorlib-template.jpg)
+- [~] **Pestcontrol** — [colorlib](https://colorlib.com/wp/template/pestcontrol/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pestcontrol-colorlib-template.jpg)
 - [x] **Petvet** — [colorlib](https://colorlib.com/wp/template/petvet/) · [petvet](https://petvet.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petvet-free-template.jpg)
 - [ ] **Pexcon** — [colorlib](https://colorlib.com/wp/template/pexcon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pexcon-free-template.jpg)
 - [ ] **Pexman** — [colorlib](https://colorlib.com/wp/template/pexman/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pexman-colorlib-template.jpg)
