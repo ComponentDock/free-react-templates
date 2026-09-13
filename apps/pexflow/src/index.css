@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pexflow brand palette — orange #ff5e13, dark navy #001b5e,
+     body gray #556172, light bg #f7f7f7, alternate #fbf9ff. */
+  --color-brand: #ff5e13;
+  --color-brand-dark: #001b5e;
+  --color-heading: #001b5e;
+  --color-body: #556172;
+  --color-muted: #83868c;
+  --color-light-bg: #f7f7f7;
+  --color-alt-bg: #fbf9ff;
+
+  --color-primary-50: #fff7ed;
+  --color-primary-100: #ffedd5;
+  --color-primary-200: #ffd4a8;
+  --color-primary-300: #ffb470;
+  --color-primary-400: #ff8a3d;
+  --color-primary-500: #ff5e13;
+  --color-primary-600: #e04d0e;
+  --color-primary-700: #b83c0b;
+  --color-primary-800: #8c2e09;
+  --color-primary-900: #6b2307;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
