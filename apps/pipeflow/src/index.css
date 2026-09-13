@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Pipeflow brand palette — recreated from the ColorLib "Plumber" design
-     (vivid red/pink #f53f51). */
+  /* Pipeflow brand palette — vivid red/pink (#f53f51)
+     with deep navy (#04091e) dark sections. */
   --color-brand-50: #fef2f4;
   --color-brand-100: #fde6ea;
   --color-brand-200: #fccdd6;
