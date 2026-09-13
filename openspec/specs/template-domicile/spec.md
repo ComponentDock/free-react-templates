@@ -17,142 +17,155 @@ a bold lime-green accent and image-heavy hero slider.
 ## Design tokens (extracted from preview)
 
 ### Colors
-| Token               | Value                | Usage                                        |
-| ------------------- | -------------------- | -------------------------------------------- |
-| brand-primary       | `#a7cb00`            | Buttons, accent text, hover states           |
-| brand-primary-80    | `rgba(167,203,0,0.8)`| CTA banner background (green overlay)        |
-| brand-primary-85    | `rgba(167,203,0,0.85)`| Alternate green overlay                     |
-| hero-overlay        | `rgba(34,34,34,0.8)` | Dark overlay on hero/banner images           |
-| body-text           | `#666666`            | Default body paragraph text                  |
-| heading-text        | `#000000`            | Headings                                     |
-| footer-bg           | `#f9f9ff`            | Light gray-blue footer background            |
-| footer-text         | `#777777`            | Footer paragraph text                        |
-| body-bg             | `#ffffff`            | Main content background                      |
-| border-light        | `#eeeeee`            | Subtle borders and dividers                  |
+
+| Token         | Value                | Usage                              |
+| ------------- | -------------------- | ---------------------------------- |
+| brand-primary | `#a7cb00`            | Buttons, accent text, hover states |
+| hero-overlay  | `rgba(34,34,34,0.8)` | Dark overlay on hero/banner images |
+| body-text     | `#666666`            | Default body paragraph text        |
+| heading-text  | `#000000`            | Headings                           |
+| footer-bg     | `#f9f9ff`            | Light gray-blue footer background  |
+| footer-text   | `#777777`            | Footer paragraph text              |
+| body-bg       | `#ffffff`            | Main content background            |
+| border-light  | `#eeeeee`            | Subtle borders and dividers        |
 
 ### Fonts
-| Token            | Value                                      |
-| ---------------- | ------------------------------------------ |
-| font-body        | `"Raleway", sans-serif`                    |
-| font-heading     | `"Oswald", sans-serif`                     |
 
-### Buttons
-| Style            | Details                                                          |
-| ---------------- | ---------------------------------------------------------------- |
-| banner_btn       | bg `#a7cb00`, color white, padding 0 38px, line-height 48px, border-radius 0 |
-| banner_btn:hover | color `#a7cb00`, bg transparent                                  |
-| banner_btn2      | Outline style (transparent bg)                                   |
-| white_btn        | White bg button for CTA banners                                  |
-| sub-btn (newsletter) | Green background for newsletter submit                      |
+| Token        | Value                   |
+| ------------ | ----------------------- |
+| font-body    | `"Raleway", sans-serif` |
+| font-heading | `"Oswald", sans-serif`  |
 
-### Layout / Section backgrounds
-| Section          | Background           | Notes                                   |
-| ---------------- | -------------------- | --------------------------------------- |
-| Hero/Banner      | Full-width swiper    | 3 slides, dark overlay, left-aligned text |
-| Mission          | white                | 2-col: image left, owl-carousel text right |
-| Success          | white                | Stats/achievements section              |
-| Project          | white                | Project showcase                        |
-| Team             | white                | Owl-carousel slider of team members     |
-| Project CTA      | Dark overlay banner  | "Get to Know Project Estimate?" + button|
-| Blog             | white                | 4-column blog cards                     |
-| Footer           | #f9f9ff              | 4-col: About, Nav Links, Newsletter, InstaFeed |
+## Requirements
 
-## Gherkin requirements
+### Requirement: Sticky navigation bar with social links
 
-### Feature: Navbar
-  Scenario: Sticky navigation bar with social links
-    Given the user views the page
-    Then a sticky header should be visible with a logo image
-    And navigation links: Home, About, Services, Pages (dropdown: Portfolio, Portfolio Details, Elements), Blog (dropdown: Blog, Blog Details), Contact
-    And social icons on the right: Facebook, Twitter, Dribbble, Behance, Search
-    And a mobile hamburger toggler on small screens
+The page SHALL display a sticky header with a "Domicile" logo, navigation links (Home, About, Services, Pages, Blog, Contact), social icons (Facebook, Twitter, Dribbble, Behance), and a mobile hamburger toggle.
 
-### Feature: Hero Slider
-  Scenario: Full-width image slider with CTA
-    Given the user lands on the page
-    Then a full-width Swiper slider with 3 slides should be visible
-    And each slide has a background image with dark overlay
-    And text overlay: "We Combine Business with Finance" (Oswald heading)
-    And two buttons: "Explore Us" (green #a7cb00) + "Get Free Quote" (outline)
-    And the slider auto-advances
+#### Scenario: Desktop navigation
 
-### Feature: Mission
-  Scenario: Mission section with image and text carousel
-    Given the user scrolls to the mission section
-    Then a 2-column layout should appear
-    And left column: mission image (mission-1.jpg)
-    And right column: owl-carousel text slider with items like "Road to Success" and "About Our Mission"
-    And bullet navigation below the text carousel
+- **WHEN** the user views on desktop
+- **THEN** all navigation links are visible in the sticky header
+- **AND** social icon links are displayed on the right
 
-### Feature: Success Stats
-  Scenario: Achievement/stats section
-    Given the user scrolls to the success section
-    Then a section with key statistics should be visible
-    And stats should be displayed prominently
+#### Scenario: Mobile navigation toggle
 
-### Feature: Project Showcase
-  Scenario: Project portfolio section
-    Given the user scrolls to the project section
-    Then project items should be displayed in a grid
-    And each project should have an image and title
+- **WHEN** the user clicks the hamburger button
+- **THEN** a mobile navigation menu opens with all links
+- **AND** clicking a link closes the menu
 
-### Feature: Team
-  Scenario: Team carousel
-    Given the user scrolls to the team section
-    Then an owl-carousel slider of team members should be visible
-    And each team member card should show: photo, name, position
-    And 4 team members visible in the carousel
+### Requirement: Full-width hero slider with CTA
 
-### Feature: Project CTA Banner
-  Scenario: Call-to-action banner
-    Given the user scrolls past the team section
-    Then a dark overlay banner should appear
-    And heading: "Get to Know Project Estimate?"
-    And a white CTA button: "Get Free Estimate"
-    And the background should use a dark semi-transparent overlay
+The page SHALL display a full-width image slider with 3 slides, each with a dark overlay, heading "We Combine Business with Finance", and two CTA buttons ("Explore Us" green, "Get Free Quote" outline). The slider SHALL auto-advance.
 
-### Feature: Blog
-  Scenario: Blog post cards
-    Given the user scrolls to the blog section
-    Then 4 blog post cards should be displayed in a grid
-    And each card should have: image, date/author meta, title, excerpt
-    And hover effects on the images
+#### Scenario: Manual slide navigation
 
-### Feature: Footer
-  Scenario: Site footer
-    Given the user views the footer
-    Then it should have a light gray-blue background (#f9f9ff)
-    And 4 columns: About Biznance (text), Navigation Links (2 lists), Newsletter (email form), InstaFeed (image grid)
-    And a bottom copyright line
-    And footer links must include "Component Dock" (https://www.componentdock.com/)
+- **WHEN** the user clicks prev/next buttons or dot indicators
+- **THEN** the corresponding slide is displayed
 
-### Feature: Responsive
-  Scenario: Mobile responsiveness
-    Given the user views on mobile
-    Then the navbar should collapse to a hamburger menu
-    And grids should stack to single column
-    And the hero slider should be readable on mobile
+#### Scenario: Auto-advance
 
-### Feature: Accessibility
-  Scenario: Keyboard and screen reader support
-    Given the user navigates with keyboard
-    Then all interactive elements should be focusable
-    And form inputs should have associated labels
-    And images should have alt text
+- **WHEN** the user waits 5 seconds without interaction
+- **THEN** the slider advances to the next slide automatically
+
+### Requirement: Mission section with image and text
+
+The page SHALL display a 2-column mission section with an image on the left and a text carousel on the right with items "Road to Success" and "About Our Mission".
+
+#### Scenario: Navigate mission items
+
+- **WHEN** the user clicks prev/next or dots
+- **THEN** the corresponding mission text item is displayed
+
+### Requirement: Success/achievements section
+
+The page SHALL display alternating rows of text content and images in the success section.
+
+#### Scenario: Content display
+
+- **WHEN** the user scrolls to the success section
+- **THEN** text and image rows are displayed in alternating layout
+
+### Requirement: Project portfolio grid
+
+The page SHALL display 6 project items in a 3-column grid with image hover overlay showing project title, category, and "View More" link.
+
+#### Scenario: Project hover interaction
+
+- **WHEN** the user hovers over a project card
+- **THEN** a dark overlay with title, category, and "View More" link is revealed
+
+### Requirement: Team section
+
+The page SHALL display 4 team member cards showing photo, name, position, and social links on hover.
+
+#### Scenario: Team member display
+
+- **WHEN** the user views the team section
+- **THEN** 4 team member cards are visible with names, roles, and social icons on hover
+
+### Requirement: Project CTA banner
+
+The page SHALL display a full-width dark overlay banner with heading "Get to Know Project Estimate?" and a white "Get Free Estimate" button.
+
+#### Scenario: CTA visibility
+
+- **WHEN** the user scrolls past the team section
+- **THEN** the CTA banner is visible with the heading and button
+
+### Requirement: Blog post cards
+
+The page SHALL display 4 blog post cards in a grid, each with image, date/author meta, title, and excerpt.
+
+#### Scenario: Blog content
+
+- **WHEN** the user scrolls to the blog section
+- **THEN** 4 blog cards are visible with all metadata fields
+
+### Requirement: Site footer
+
+The page SHALL display a footer with light gray-blue background (#f9f9ff), 4 columns (About, Navigation Links, Newsletter form, InstaFeed), and a copyright line linking to Component Dock (https://www.componentdock.com/).
+
+#### Scenario: Newsletter form submission
+
+- **WHEN** the user enters an email and clicks Subscribe
+- **THEN** the form submits and the email input clears
+
+#### Scenario: Component Dock link
+
+- **WHEN** the user views the footer
+- **THEN** a link to https://www.componentdock.com/ is present with text "Component Dock"
+
+### Requirement: Responsive design
+
+The page SHALL be responsive across mobile, tablet, and desktop. Grids SHALL stack to single column on mobile. The navbar SHALL collapse to a hamburger menu on small screens.
+
+#### Scenario: Mobile layout
+
+- **WHEN** the user views on a mobile device
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** grid sections stack vertically
+
+### Requirement: Accessibility
+
+The page SHALL provide keyboard and screen reader support. All interactive elements SHALL be focusable. Form inputs SHALL have associated labels. Images SHALL have alt text.
+
+#### Scenario: Keyboard navigation
+
+- **WHEN** the user navigates with keyboard
+- **THEN** all interactive elements are focusable in logical order
 
 ## Verification checklist
 
-- [ ] Spec matches preview DOM section order exactly
-- [ ] Brand color `#a7cb00` used for primary accents (buttons, highlights)
-- [ ] Font families: "Raleway" (body) and "Oswald" (headings) loaded via Google Fonts
-- [ ] Hero is full-width Swiper slider with dark overlay
-- [ ] Mission section uses owl-carousel for text slides
-- [ ] Team section uses owl-carousel for member cards
+- [ ] Brand color `#a7cb00` used for primary accents
+- [ ] Font families: "Raleway" and "Oswald" loaded via Google Fonts
+- [ ] Hero is full-width slider with dark overlay
+- [ ] Mission section uses text carousel
 - [ ] CTA banner has dark overlay background
 - [ ] Footer background is #f9f9ff with proper column layout
-- [ ] All 8 sections present in correct order
+- [ ] All 9 sections present in correct order
 - [ ] Blog section has 4 cards
-- [ ] Contact form has newsletter subscription
+- [ ] Newsletter form in footer
 - [ ] No ColorLib references in app code
 - [ ] Placeholder images use picsum.photos with deterministic seeds
-- [ ] Responsive breakpoints work (mobile, tablet, desktop)
+- [ ] Responsive breakpoints work
