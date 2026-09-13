@@ -1,6 +1,5 @@
 import { describe, expect, it, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
 import { HeroSlider } from './HeroSlider'
 
 describe('HeroSlider', () => {
@@ -8,7 +7,9 @@ describe('HeroSlider', () => {
     render(<HeroSlider />)
     const headings = screen.getAllByText('Best Summer Collection')
     expect(headings.length).toBeGreaterThanOrEqual(1)
-    expect(screen.getByRole('link', { name: /read more/i })).toBeInTheDocument()
+    // Each slide has a Read More link
+    const links = screen.getAllByRole('link', { name: /read more/i })
+    expect(links.length).toBeGreaterThanOrEqual(1)
   })
 
   it('renders dot indicators for each slide', () => {
@@ -18,19 +19,23 @@ describe('HeroSlider', () => {
   })
 
   it('allows manual slide selection via dot buttons', async () => {
-    const user = userEvent.setup()
+    const user = (await import('@testing-library/user-event')).default.setup()
     render(<HeroSlider />)
     const dots = screen.getAllByRole('button', { name: /Go to slide/i })
-    await user.click(dots[1])
-    expect(dots[1]).toBeInTheDocument()
+    const secondDot = dots[1]!
+    await user.click(secondDot)
+    expect(secondDot).toBeInTheDocument()
   })
 
   it('auto-advances slides', async () => {
     vi.useFakeTimers()
+    const { act } = await import('@testing-library/react')
     render(<HeroSlider />)
     const dots = screen.getAllByRole('button', { name: /Go to slide/i })
     expect(dots[0]).toHaveClass('bg-brand-red')
-    vi.advanceTimersByTime(5000)
+    await act(async () => {
+      vi.advanceTimersByTime(5000)
+    })
     expect(dots[1]).toHaveClass('bg-brand-red')
     vi.useRealTimers()
   })
