@@ -1096,7 +1096,7 @@
 - [x] **Mediplus** — [colorlib](https://colorlib.com/wp/template/mediplus/) · [medvista](https://free-react-templates-medvista.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mediplus-free-template.jpg)
 - [x] **Meditative** — [colorlib](https://colorlib.com/wp/template/meditative/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meditative-free-template.jpg) · [zendo](https://zendo.free.componentdock.com)
 - [x] **Meetup** — [colorlib](https://colorlib.com/wp/template/meetup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meetup-free-template.jpg) · [gatherly](https://gatherly.free.componentdock.com)
-- [~] **Megapod** — [colorlib](https://colorlib.com/wp/template/megapod/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/megapod-free-template-1.jpg)
+- [x] **Megapod** — [colorlib](https://colorlib.com/wp/template/megapod/) · [sonance](https://sonance.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/megapod-free-template-1.jpg)
 - [x] **Mighty** — [colorlib](https://colorlib.com/wp/template/mighty/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mighty-free-template.jpg) · [fortis](https://fortis.free.componentdock.com)
 - [x] **Miners** — [colorlib](https://colorlib.com/wp/template/miners/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/miners-free-template.jpg) · [veinly](https://veinly.free.componentdock.com)
 - [x] **Miniblog** — [colorlib](https://colorlib.com/wp/template/miniblog/) · [tidbit](https://tidbit.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/miniblog-free-template.jpg)
