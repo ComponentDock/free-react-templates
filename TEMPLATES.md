@@ -1116,7 +1116,7 @@
 - [x] **Ogani** — [colorlib](https://colorlib.com/wp/template/ogani/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ogani-free-template.jpeg) · [grocerly](https://grocerly.free.componentdock.com)
 - [x] **Olla** — [colorlib](https://colorlib.com/wp/template/olla/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/olla-colorlib-template.jpg) · [spruce](https://spruce.free.componentdock.com)
 - [x] **Oneder** — [colorlib](https://colorlib.com/wp/template/oneder/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/oneder-free-template.jpg) · [Unison](https://unison.free.componentdock.com)
-- [ ] **Onepro** — [colorlib](https://colorlib.com/wp/template/onepro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/onepro-free-template.jpg)
+- [~] **Onepro** — [colorlib](https://colorlib.com/wp/template/onepro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/onepro-free-template.jpg)
 - [ ] **Onetech** — [colorlib](https://colorlib.com/wp/template/onetech/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/onetech-free-template.jpg)
 - [x] **Oraxol** — [colorlib](https://colorlib.com/wp/template/oraxol/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/oraxol-free-template.jpg) · [oraxol](https://free-react-templates-oraxol.surge.sh)
 - [ ] **Ozberk** — [colorlib](https://colorlib.com/wp/template/ozberk/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ozberk-free-fullscreen-business-website-template.jpg)
