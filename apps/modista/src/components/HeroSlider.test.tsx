@@ -20,7 +20,7 @@ describe('HeroSlider', () => {
     const user = userEvent.setup()
     render(<HeroSlider />)
     const dots = screen.getAllByRole('button', { name: /Go to slide/i })
-    await user.click(dots[1])
+    await user.click(dots[1]!)
     // Dot 1 should now be active (bg-brand-red), but we just verify the click works
     expect(dots[1]).toBeInTheDocument()
   })
