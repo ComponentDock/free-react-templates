@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* JobVane brand tokens — from the ColorLib Jobpply preview:
+     primary blue #007bff, accent purple #6c63ff, dark footer #343a40. */
+  --color-primary-50: #e6f0ff;
+  --color-primary-100: #b3d4ff;
+  --color-primary-200: #80b8ff;
+  --color-primary-300: #4d9cff;
+  --color-primary-400: #007bff;
+  --color-primary-500: #0069d9;
+  --color-primary-600: #0056b3;
+  --color-primary-700: #00408c;
+  --color-primary-800: #002d66;
+  --color-primary-900: #001a3f;
+
+  --color-accent-300: #9d97ff;
+  --color-accent-400: #6c63ff;
+  --color-accent-500: #5a52d9;
+
+  --color-dark: #343a40;
+  --color-light-bg: #f8f9fa;
+
+  --color-ink: #212529;
+  --color-smoke: #6c757d;
+
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
