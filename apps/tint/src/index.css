@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Tint brand palette — golden yellow accent from the original design (#f9cc41) */
+  --color-gold-50: #fefce8;
+  --color-gold-100: #fef9c3;
+  --color-gold-200: #fef08a;
+  --color-gold-300: #fde047;
+  --color-gold-400: #f9cc41;
+  --color-gold-500: #eab308;
+  --color-gold-600: #ca8a04;
+  --color-gold-700: #a16207;
+  --color-gold-800: #854d0e;
+  --color-gold-900: #713f12;
+
+  /* Navy dark palette — dark sections (#262533) */
+  --color-navy-50: #f0f0f4;
+  --color-navy-100: #d8d8e0;
+  --color-navy-200: #b1b1c1;
+  --color-navy-300: #8a8aa2;
+  --color-navy-400: #636383;
+  --color-navy-500: #4a4a66;
+  --color-navy-600: #3c3c55;
+  --color-navy-700: #2e2e44;
+  --color-navy-800: #262533;
+  --color-navy-900: #1a1926;
+
+  /* Barlow fonts — matching the original template */
+  --font-sans: 'Barlow', ui-sans-serif, system-ui, sans-serif;
+  --font-condensed: 'Barlow Condensed', ui-sans-serif, system-ui, sans-serif;
+}
