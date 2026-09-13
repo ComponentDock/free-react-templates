@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-montserrat: 'Montserrat', sans-serif;
+  --color-brand: #296dc1;
+  --color-brand-dark: #1e5aa3;
+  --color-heading: #333333;
+  --color-body: #555555;
+  --color-alt-bg: #fafafa;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-montserrat);
+    color: var(--color-body);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-heading);
+  }
+}
