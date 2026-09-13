@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-50: #e8f0fe;
+  --color-primary-100: #c5d9fc;
+  --color-primary-200: #9dbdf9;
+  --color-primary-300: #6d9df5;
+  --color-primary-400: #4285f4;
+  --color-primary-500: #1a73e8;
+  --color-primary-600: #1565c0;
+  --color-primary-700: #1464cc;
+  --color-primary-800: #0d47a1;
+  --color-primary-900: #0a3d8f;
+
+  --color-ink: #26282b;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
