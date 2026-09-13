@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Turbo brand palette — from the ColorLib "Nitro" preview
+     (https://preview.colorlib.com/theme/nitro/):
+     a business agency theme with Bootstrap blue primary (#0d6efd),
+     a purple accent (#505288), and Open Sans typography. */
+  --color-primary-50: #e7f1ff;
+  --color-primary-100: #c5d9fe;
+  --color-primary-200: #9ebdfe;
+  --color-primary-300: #6d99fd;
+  --color-primary-400: #4277fc;
+  --color-primary-500: #0d6efd;
+  --color-primary-600: #0a5bcf;
+  --color-primary-700: #0849a1;
+  --color-primary-800: #063a7a;
+  --color-primary-900: #042d5c;
+
+  /* Purple accent (ColorLib .circle-bg / secondary elements). */
+  --color-purple-400: #6b6daa;
+  --color-purple-500: #505288;
+  --color-purple-600: #3e4070;
+
+  /* Neutral tones. */
+  --color-ink: #212529;
+  --color-mist: #f8f9fa;
+  --color-smoke: #6c757d;
+  --color-silver: #dee2e6;
+
+  /* Open Sans via Google Fonts <link> in index.html — matching the
+     ColorLib Nitro font pairing. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
