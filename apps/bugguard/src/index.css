@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* BugGuard brand palette — recreated from the ColorLib "Pestcontrol" design
+     (css/style.css): orange-red #d7553b accents/buttons, blue #1c6ab8 counter,
+     dark #222222 footer. */
+  --color-brand: #d7553b;
+  --color-brand-dark: #c04a32;
+  --color-accent-blue: #1c6ab8;
+
+  /* Ink — near-black headings (#0d0d0d). */
+  --color-ink: #0d0d0d;
+  --color-ink-dark: #111111;
+
+  /* Paper — light section background (#f2f4f5). */
+  --color-paper: #f2f4f5;
+
+  /* Mist — muted body text (#4e4e4e). */
+  --color-mist: #4e4e4e;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the orange-red. */
+  --color-primary-50: #fdf3f0;
+  --color-primary-100: #fbe3dc;
+  --color-primary-200: #f5c4b8;
+  --color-primary-300: #ee9e8a;
+  --color-primary-400: #e47a5f;
+  --color-primary-500: #d7553b;
+  --color-primary-600: #c04a32;
+  --color-primary-700: #a03d2a;
+  --color-primary-800: #833324;
+  --color-primary-900: #6c2c20;
+
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
