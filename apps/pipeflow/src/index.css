@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pipeflow brand palette — vivid red/pink (#f53f51)
+     with deep navy (#04091e) dark sections. */
+  --color-brand-50: #fef2f4;
+  --color-brand-100: #fde6ea;
+  --color-brand-200: #fccdd6;
+  --color-brand-300: #f9a6b5;
+  --color-brand-400: #f53f51;
+  --color-brand-500: #eb1c3d;
+  --color-brand-600: #d90f30;
+  --color-brand-700: #b70a2a;
+  --color-brand-800: #990c28;
+  --color-brand-900: #830e27;
+
+  --color-navy-50: #f0f1f8;
+  --color-navy-100: #d8dbed;
+  --color-navy-200: #b5badf;
+  --color-navy-300: #8c95cd;
+  --color-navy-400: #6a74b8;
+  --color-navy-500: #525ca2;
+  --color-navy-600: #434b87;
+  --color-navy-700: #373e6c;
+  --color-navy-800: #2e355a;
+  --color-navy-900: #04091e;
+
+  /* Poppins — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
