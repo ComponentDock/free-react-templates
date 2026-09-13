@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Sonance brand colors — from the ColorLib "Megapod" preview
+     (https://preview.colorlib.com/theme/megapod/ + css/style.css):
+     a podcast website theme with a purple #6763fd primary,
+     dark backgrounds #111111, and muted text #8d8d8d. */
+  --color-primary-50: #f0efff;
+  --color-primary-100: #dddbfe;
+  --color-primary-200: #c3c0fd;
+  --color-primary-300: #9e99fb;
+  --color-primary-400: #6763fd;
+  --color-primary-500: #5550e8;
+  --color-primary-600: #433dcf;
+  --color-primary-700: #3631a8;
+  --color-primary-800: #2d2989;
+  --color-primary-900: #27256d;
+
+  /* Light section backgrounds. */
+  --color-mist: #f8f8fc;
+
+  /* Muted copy (ColorLib #8d8d8d). */
+  --color-smoke: #8d8d8d;
+
+  --color-ink: #111111;
+
+  /* Nunito via Google Fonts <link> in index.html — matching the
+     ColorLib font pairing. */
+  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+}
