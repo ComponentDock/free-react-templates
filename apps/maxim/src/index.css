@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Maxim brand palette — blue #1a73e8 primary (buttons, links,
+     accents), hover #1557b0, dark bg #212529, ink #212529 body text,
+     muted #6c757d, surface #f8f9fa, border #e9ecef, white. Nunito
+     Sans via Google Fonts <link>. */
+  --color-brand: #1a73e8;
+  --color-brand-hover: #1557b0;
+  --color-dark: #212529;
+  --color-ink: #212529;
+  --color-muted: #6c757d;
+  --color-surface: #f8f9fa;
+  --color-edge: #e9ecef;
+
+  --font-sans:
+    'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial,
+    sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
