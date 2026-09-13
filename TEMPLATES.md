@@ -1073,7 +1073,7 @@
 - [x] **Lagoon** — [colorlib](https://colorlib.com/wp/template/lagoon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lagoon-free-template.jpg) · [cargomate](https://cargomate.free.componentdock.com)
 - [x] **Landerz** — [colorlib](https://colorlib.com/wp/template/landerz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/landerz-free-template.jpg) · [liftoff](https://liftoff.free.componentdock.com)
 - [x] **Landing Page Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/landing-page-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/landing-page-themes.jpg) · [Landing](https://landing.free.componentdock.com)
-- [ ] **Laundry** — [colorlib](https://colorlib.com/wp/template/laundry/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/laundry-free-template.jpg)
+- [~] **Laundry** — [colorlib](https://colorlib.com/wp/template/laundry/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/laundry-free-template.jpg)
 - [ ] **Lawful** — [colorlib](https://colorlib.com/wp/template/lawful/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawful-free-template.jpg)
 - [ ] **Lawncare** — [colorlib](https://colorlib.com/wp/template/lawncare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawncare-free-template.jpg)
 - [x] **Legaledge 2** · [verdict](https://verdict.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/legaledge-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/legaledge-template-1770211287987.jpg)
