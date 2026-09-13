@@ -1120,7 +1120,7 @@
 - [x] **Onetech** — [colorlib](https://colorlib.com/wp/template/onetech/) · [techvault](https://techvault.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/onetech-free-template.jpg)
 - [x] **Oraxol** — [colorlib](https://colorlib.com/wp/template/oraxol/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/oraxol-free-template.jpg) · [oraxol](https://free-react-templates-oraxol.surge.sh)
 - [x] **Ozberk** — [colorlib](https://colorlib.com/wp/template/ozberk/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ozberk-free-fullscreen-business-website-template.jpg) · [pyxis](https://free-react-templates-pyxis.surge.sh)
-- [ ] **Pacific** — [colorlib](https://colorlib.com/wp/template/pacific/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pacific-free-template.jpg)
+- [~] **Pacific** — [colorlib](https://colorlib.com/wp/template/pacific/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pacific-free-template.jpg)
 - [x] **Pageone** — [colorlib](https://colorlib.com/wp/template/pageone/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pageone-free-template-1.jpg) · [nexus](https://nexus.free.componentdock.com)
 - [x] **Papers** — [colorlib](https://colorlib.com/wp/template/papers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/papers-free-template.jpg) · [folium](https://folium.free.componentdock.com)
 - [ ] **Parason** — [colorlib](https://colorlib.com/wp/template/parason/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/parason-free-template.jpeg)
