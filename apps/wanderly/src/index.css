@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Wanderly brand palette — travel agency theme with warm orange
+     as primary accent, dark blue for headings, light blue for links,
+     gold for star ratings. */
+
+  /* Orange primary (#fe5c24 — ColorLib Martine .btn_1, .place_btn). */
+  --color-primary-50: #fff4ec;
+  --color-primary-100: #ffe3cc;
+  --color-primary-200: #ffc599;
+  --color-primary-300: #ffa366;
+  --color-primary-400: #ff7e5f;
+  --color-primary-500: #fe5c24;
+  --color-primary-600: #e04a18;
+  --color-primary-700: #b83c13;
+  --color-primary-800: #8c2e0e;
+  --color-primary-900: #5c1f09;
+
+  /* Coral accent (from banner gradient endpoint). */
+  --color-coral-400: #ff7e5f;
+  --color-coral-500: #ff6b45;
+
+  /* Dark blue headings (#0c3e72 — ColorLib Martine h1/h2/h3). */
+  --color-navy: #0c3e72;
+
+  /* Light blue (#2493e0 — social icons). */
+  --color-sky-400: #2493e0;
+
+  /* Gold for star ratings (#ffc962). */
+  --color-gold: #ffc962;
+
+  /* Muted copy (#999999, #666666). */
+  --color-smoke: #999999;
+  --color-ash: #666666;
+
+  /* Section backgrounds. */
+  --color-cloud: #fbf9ff;
+
+  /* Open Sans for both headings and body — matching the original. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
