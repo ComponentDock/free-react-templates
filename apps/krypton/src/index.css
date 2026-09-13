@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Krypton brand palette — from ColorLib "Labs" digital agency template
+     (screenshot pixel analysis): deep purple #6420b1 primary, medium blue
+     #5d80c0 secondary, dark text #1a1a2e, body #555, off-white #f8f9fa,
+     warm peach #fdf2ee. */
+  --color-primary-50: #f3eefa;
+  --color-primary-100: #e0d0f5;
+  --color-primary-200: #c4a8ec;
+  --color-primary-300: #a47be2;
+  --color-primary-400: #8352d4;
+  --color-primary-500: #6420b1;
+  --color-primary-600: #541a95;
+  --color-primary-700: #44157a;
+  --color-primary-800: #34105f;
+  --color-primary-900: #240b44;
+
+  --color-secondary-300: #8faad4;
+  --color-secondary-400: #5d80c0;
+  --color-secondary-500: #4a6ba8;
+
+  --color-ink: #1a1a2e;
+  --color-body: #555555;
+  --color-mist: #f8f9fa;
+  --color-peach: #fdf2ee;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

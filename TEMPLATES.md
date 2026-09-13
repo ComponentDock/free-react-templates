@@ -1069,7 +1069,7 @@
 - [x] **Karl** — [colorlib](https://colorlib.com/wp/template/karl/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/karl-free-template.jpg) · [vignette](https://vignette.free.componentdock.com)
 - [x] **Kayelux** — [colorlib](https://colorlib.com/wp/template/kayelux/) · [terra](https://terra.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kayelux-colorlib-template.jpg)
 - [x] **Kd** — [colorlib](https://colorlib.com/wp/template/kd/) · [Gable](https://gable.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kd-free-template.jpg)
-- [ ] **Labs** — [colorlib](https://colorlib.com/wp/template/labs/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/labs-digital-agency-website-template.jpg)
+- [~] **Labs** — [colorlib](https://colorlib.com/wp/template/labs/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/labs-digital-agency-website-template.jpg)
 - [x] **Lagoon** — [colorlib](https://colorlib.com/wp/template/lagoon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lagoon-free-template.jpg) · [cargomate](https://cargomate.free.componentdock.com)
 - [x] **Landerz** — [colorlib](https://colorlib.com/wp/template/landerz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/landerz-free-template.jpg) · [liftoff](https://liftoff.free.componentdock.com)
 - [x] **Landing Page Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/landing-page-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/landing-page-themes.jpg) · [Landing](https://landing.free.componentdock.com)
