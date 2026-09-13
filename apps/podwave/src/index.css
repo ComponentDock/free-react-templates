@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-red: #f23a2e;
+  --color-heading: #000000;
+  --color-section-heading: #212121;
+  --color-body: #4d4d4d;
+  --color-footer-bg: #333333;
+  --color-footer-text: #737373;
+  --color-footer-link: #999999;
+  --color-section-light: #f4f5f9;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
