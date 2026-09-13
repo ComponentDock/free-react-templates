@@ -1075,7 +1075,7 @@
 - [x] **Landing Page Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/landing-page-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/landing-page-themes.jpg) · [Landing](https://landing.free.componentdock.com)
 - [x] **Laundry** — [colorlib](https://colorlib.com/wp/template/laundry/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/laundry-free-template.jpg) · [presswell](https://presswell.free.componentdock.com)
 - [x] **Lawful** — [colorlib](https://colorlib.com/wp/template/lawful/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawful-free-template.jpg) · [briefly](https://free-react-templates-briefly.surge.sh)
-- [ ] **Lawncare** — [colorlib](https://colorlib.com/wp/template/lawncare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawncare-free-template.jpg)
+- [~] **Lawncare** — [colorlib](https://colorlib.com/wp/template/lawncare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawncare-free-template.jpg)
 - [x] **Legaledge 2** · [verdict](https://verdict.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/legaledge-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/legaledge-template-1770211287987.jpg)
 - [ ] **Lifecoach** — [colorlib](https://colorlib.com/wp/template/lifecoach/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lifecoach-free-template.jpg)
 - [x] **Loans2go** — [colorlib](https://colorlib.com/wp/template/loans2go/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/loans2go-free-template.jpg) · [lendly](https://lendly.free.componentdock.com)
@@ -2111,7 +2111,7 @@
 
 - [x] **Gardening** — [colorlib](https://colorlib.com/wp/template/gardening/) · [gardenly](https://gardenly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gardening-colorlib-template.jpg)
 - [x] **Hardenero** — [colorlib](https://colorlib.com/wp/template/hardenero/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hardenero-free-template.jpg) · [verdure](https://verdure.free.componentdock.com)
-- [ ] **Lawncare** — [colorlib](https://colorlib.com/wp/template/lawncare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawncare-free-template.jpg)
+- [~] **Lawncare** — [colorlib](https://colorlib.com/wp/template/lawncare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawncare-free-template.jpg)
 
 ## Lawyer (23)
 
