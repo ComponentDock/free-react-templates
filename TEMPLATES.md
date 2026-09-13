@@ -1137,7 +1137,7 @@
 - [x] **Pillow Mart** — [colorlib](https://colorlib.com/wp/template/pillow-mart/) · [plumero](https://plumero.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pillowmart-free-template.jpg)
 - [x] **Pixel** — [colorlib](https://colorlib.com/wp/template/pixel/) · [flux](https://flux.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pixel-free-template.jpg)
 - [x] **Plumber** — [colorlib](https://colorlib.com/wp/template/plumber/) · [pipeflow](https://pipeflow.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/plumber-free-template.jpg)
-- [ ] **Podca** — [colorlib](https://colorlib.com/wp/template/podca/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/podca-free-template.jpg)
+- [~] **Podca** — [colorlib](https://colorlib.com/wp/template/podca/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/podca-free-template.jpg)
 - [x] **Pointer** — [colorlib](https://colorlib.com/wp/template/pointer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pointer-free-template.jpg) · [compass](https://compass.free.componentdock.com)
 - [ ] **Portech** — [colorlib](https://colorlib.com/wp/template/portech/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/portech-colorlib-template.jpg)
 - [ ] **Pressure Washing** — [colorlib](https://colorlib.com/wp/template/pressure-washing/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pressurewashing-free-template.jpg)
