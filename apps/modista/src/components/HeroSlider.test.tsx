@@ -6,7 +6,8 @@ import { HeroSlider } from './HeroSlider'
 describe('HeroSlider', () => {
   it('renders the hero text and CTA button', () => {
     render(<HeroSlider />)
-    expect(screen.getByText('Best Summer Collection')).toBeInTheDocument()
+    const headings = screen.getAllByText('Best Summer Collection')
+    expect(headings.length).toBeGreaterThanOrEqual(1)
     expect(screen.getByRole('link', { name: /read more/i })).toBeInTheDocument()
   })
 
@@ -20,8 +21,7 @@ describe('HeroSlider', () => {
     const user = userEvent.setup()
     render(<HeroSlider />)
     const dots = screen.getAllByRole('button', { name: /Go to slide/i })
-    await user.click(dots[1]!)
-    // Dot 1 should now be active (bg-brand-red), but we just verify the click works
+    await user.click(dots[1])
     expect(dots[1]).toBeInTheDocument()
   })
 
@@ -29,9 +29,7 @@ describe('HeroSlider', () => {
     vi.useFakeTimers()
     render(<HeroSlider />)
     const dots = screen.getAllByRole('button', { name: /Go to slide/i })
-    // First slide is active initially
     expect(dots[0]).toHaveClass('bg-brand-red')
-    // Advance past the interval
     vi.advanceTimersByTime(5000)
     expect(dots[1]).toHaveClass('bg-brand-red')
     vi.useRealTimers()

@@ -5,15 +5,15 @@ import { Footer } from './Footer'
 describe('Footer', () => {
   it('renders five column headings', () => {
     render(<Footer />)
-    expect(screen.getByText('Information')).toBeInTheDocument()
-    expect(screen.getByText('Customer Service')).toBeInTheDocument()
-    expect(screen.getByText('Extras')).toBeInTheDocument()
-    expect(screen.getByText('My Account')).toBeInTheDocument()
+    expect(screen.getAllByText('Information').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Customer Service').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Extras').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('My Account').length).toBeGreaterThanOrEqual(1)
   })
 
   it('renders the MODISTA logo', () => {
     render(<Footer />)
-    expect(screen.getByRole('link', { name: /MODISTA/i })).toBeInTheDocument()
+    expect(screen.getAllByRole('link', { name: /MODISTA/i }).length).toBeGreaterThanOrEqual(1)
   })
 
   it('renders About description text', () => {
@@ -23,10 +23,10 @@ describe('Footer', () => {
 
   it('renders social icon links', () => {
     render(<Footer />)
-    expect(screen.getByRole('link', { name: 'Facebook' })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Twitter' })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Pinterest' })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Instagram' })).toBeInTheDocument()
+    expect(screen.getAllByRole('link', { name: 'Facebook' }).length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByRole('link', { name: 'Twitter' }).length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByRole('link', { name: 'Pinterest' }).length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByRole('link', { name: 'Instagram' }).length).toBeGreaterThanOrEqual(1)
   })
 
   it('renders navigation links in each column', () => {

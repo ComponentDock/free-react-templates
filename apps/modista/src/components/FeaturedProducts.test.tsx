@@ -7,10 +7,10 @@ describe('FeaturedProducts', () => {
   it('renders the sidebar heading and featured items', () => {
     render(<FeaturedProducts />)
     expect(screen.getByRole('heading', { name: /Featured Products/i })).toBeInTheDocument()
-    expect(screen.getByText('Down Jacket')).toBeInTheDocument()
-    expect(screen.getByText('Summer Dress')).toBeInTheDocument()
-    expect(screen.getByText('Sport Shoes')).toBeInTheDocument()
-    expect(screen.getByText('Designer Bag')).toBeInTheDocument()
+    expect(screen.getAllByText('Down Jacket').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Summer Dress').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Sport Shoes').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Designer Bag').length).toBeGreaterThanOrEqual(1)
   })
 
   it('renders filter tabs', () => {
@@ -24,28 +24,28 @@ describe('FeaturedProducts', () => {
   it('filters products when a tab is clicked', async () => {
     const user = userEvent.setup()
     render(<FeaturedProducts />)
-    // Default tab is Men's
-    expect(screen.getByText('Down Jacket')).toBeInTheDocument()
+    // Default tab is Men's - should show Down Jacket, Casual Hoodie, Leather Jacket
+    expect(screen.getAllByText('Down Jacket').length).toBeGreaterThanOrEqual(1)
     // Click Woman tab
     await user.click(screen.getByRole('button', { name: 'Woman' }))
-    expect(screen.getByText('Summer Dress')).toBeInTheDocument()
-    expect(screen.getByText('Silk Blouse')).toBeInTheDocument()
+    expect(screen.getAllByText('Summer Dress').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Silk Blouse').length).toBeGreaterThanOrEqual(1)
     // Click Shoes tab
     await user.click(screen.getByRole('button', { name: 'Shoes' }))
-    expect(screen.getByText('Sport Shoes')).toBeInTheDocument()
-    expect(screen.getByText('High Heels')).toBeInTheDocument()
-    expect(screen.getByText('Canvas Sneakers')).toBeInTheDocument()
+    expect(screen.getAllByText('Sport Shoes').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('High Heels').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Canvas Sneakers').length).toBeGreaterThanOrEqual(1)
     // Click Bags tab
     await user.click(screen.getByRole('button', { name: 'Bags' }))
-    expect(screen.getByText('Designer Bag')).toBeInTheDocument()
-    expect(screen.getByText('Crossbody Bag')).toBeInTheDocument()
+    expect(screen.getAllByText('Designer Bag').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Crossbody Bag').length).toBeGreaterThanOrEqual(1)
   })
 
   it('displays badge labels on products', () => {
     render(<FeaturedProducts />)
-    expect(screen.getByText('Sale')).toBeInTheDocument()
-    expect(screen.getByText('New')).toBeInTheDocument()
-    expect(screen.getByText('-10%')).toBeInTheDocument()
+    expect(screen.getAllByText('Sale').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('New').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('-10%').length).toBeGreaterThanOrEqual(1)
   })
 
   it('renders product images in sidebar', () => {

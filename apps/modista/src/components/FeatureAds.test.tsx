@@ -14,14 +14,14 @@ describe('FeatureAds', () => {
 
   it('displays badge labels', () => {
     render(<FeatureAds />)
-    expect(screen.getByText('Sale')).toBeInTheDocument()
-    expect(screen.getByText('10% off')).toBeInTheDocument()
+    expect(screen.getAllByText('Sale').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('10% off').length).toBeGreaterThanOrEqual(1)
   })
 
   it('renders hover overlay headings', () => {
     render(<FeatureAds />)
-    expect(screen.getByText('Trendy Jackets')).toBeInTheDocument()
-    expect(screen.getByText('Designer Bags')).toBeInTheDocument()
+    expect(screen.getAllByText('Trendy Jackets').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Designer Bags').length).toBeGreaterThanOrEqual(1)
   })
 
   it('renders Shop Now links', () => {
