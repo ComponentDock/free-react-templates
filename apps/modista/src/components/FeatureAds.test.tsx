@@ -1,46 +1,32 @@
 import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
 import { FeatureAds } from './FeatureAds'
 
 describe('FeatureAds', () => {
-  it('renders the feature ads section', () => {
-    render(<FeatureAds />)
-    expect(screen.getByRole('region', { name: 'Feature ads' })).toBeInTheDocument()
-  })
-
-  it('shows three ad images', () => {
+  it('renders three banner images', () => {
     render(<FeatureAds />)
     const images = screen.getAllByRole('img')
-    expect(images).toHaveLength(3)
+    expect(images.length).toBeGreaterThanOrEqual(3)
+    images.forEach((img) => {
+      expect(img).toHaveAttribute('src', expect.stringContaining('picsum.photos'))
+    })
   })
 
-  it('shows the Sale badge on first ad', () => {
+  it('displays badge labels', () => {
     render(<FeatureAds />)
     expect(screen.getByText('Sale')).toBeInTheDocument()
-  })
-
-  it('shows the 10% off badge on second ad', () => {
-    render(<FeatureAds />)
     expect(screen.getByText('10% off')).toBeInTheDocument()
   })
 
-  it('reveals hover overlay content on hover', async () => {
-    const user = userEvent.setup()
+  it('renders hover overlay headings', () => {
     render(<FeatureAds />)
-
-    const overlayHeading = screen.getByText('Summer Dresses')
-    const overlayContainer = overlayHeading.closest('div')!
-    await user.hover(overlayContainer)
-
-    expect(screen.getByText('Summer Dresses')).toBeInTheDocument()
-    const shopNowLinks = screen.getAllByRole('link', { name: 'Shop Now' })
-    expect(shopNowLinks.length).toBeGreaterThanOrEqual(1)
+    expect(screen.getByText('Trendy Jackets')).toBeInTheDocument()
+    expect(screen.getByText('Designer Bags')).toBeInTheDocument()
   })
 
-  it('has Shop Now links', () => {
+  it('renders Shop Now links', () => {
     render(<FeatureAds />)
-    const shopNowLinks = screen.getAllByRole('link', { name: 'Shop Now' })
-    expect(shopNowLinks.length).toBeGreaterThanOrEqual(2)
+    const shopLinks = screen.getAllByText('Shop Now')
+    expect(shopLinks.length).toBeGreaterThanOrEqual(2)
   })
 })

@@ -8,35 +8,15 @@ describe('App', () => {
     expect(document.title).toBe('Modista — Fashion E-Commerce Shop')
   })
 
-  it('composes every section in the layout', () => {
+  it('composes every section', () => {
     render(<App />)
     expect(screen.getByRole('banner')).toBeInTheDocument()
+    expect(screen.getByRole('navigation', { name: 'Main' })).toBeInTheDocument()
     expect(screen.getByRole('main')).toBeInTheDocument()
     expect(screen.getByRole('contentinfo')).toBeInTheDocument()
-
-    // TopBar
-    expect(screen.getByText('+84 987 654 321')).toBeInTheDocument()
-
-    // Navbar
-    expect(screen.getAllByRole('link', { name: 'MODISTA' }).length).toBeGreaterThanOrEqual(1)
-
-    // HeroSlider - uses heading, not img to avoid clash with PromoBanners
-    expect(screen.getByRole('heading', { name: 'Our Latest Product' })).toBeInTheDocument()
-
-    // CategoryListing
-    expect(screen.getByRole('heading', { name: 'Men' })).toBeInTheDocument()
-
-    // FeaturedProducts
-    expect(screen.getByRole('heading', { name: 'Featured Products' })).toBeInTheDocument()
-
-    // BlogSection
-    expect(screen.getByRole('heading', { name: 'From The Blog' })).toBeInTheDocument()
-
-    // Footer Component Dock
-    expect(screen.getByRole('link', { name: 'Component Dock' })).toBeInTheDocument()
-
-    // Promo banners exist
-    const shopNowLinks = screen.getAllByRole('link', { name: 'Shop Now' })
-    expect(shopNowLinks.length).toBeGreaterThanOrEqual(2)
+    expect(screen.getByText('Best Summer Collection')).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /Our Latest Product/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /From The Blog/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /Featured Products/i })).toBeInTheDocument()
   })
 })

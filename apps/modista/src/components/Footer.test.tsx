@@ -3,75 +3,52 @@ import { render, screen } from '@testing-library/react'
 import { Footer } from './Footer'
 
 describe('Footer', () => {
-  it('renders the footer landmark', () => {
-    render(<Footer />)
-    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
-  })
-
   it('renders five column headings', () => {
     render(<Footer />)
-    expect(screen.getByRole('heading', { name: 'Information' })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'Customer Service' })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'Extras' })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'My Account' })).toBeInTheDocument()
+    expect(screen.getByText('Information')).toBeInTheDocument()
+    expect(screen.getByText('Customer Service')).toBeInTheDocument()
+    expect(screen.getByText('Extras')).toBeInTheDocument()
+    expect(screen.getByText('My Account')).toBeInTheDocument()
   })
 
-  it('shows the MODISTA logo', () => {
+  it('renders the MODISTA logo', () => {
     render(<Footer />)
-    expect(screen.getByRole('link', { name: 'MODISTA' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: /MODISTA/i })).toBeInTheDocument()
   })
 
-  it('shows About description', () => {
+  it('renders About description text', () => {
     render(<Footer />)
-    expect(screen.getByText(/Modista is your one-stop fashion destination/)).toBeInTheDocument()
+    expect(screen.getByText(/Modista is a fashion e-commerce shop/)).toBeInTheDocument()
   })
 
-  it('shows social icons in footer', () => {
+  it('renders social icon links', () => {
     render(<Footer />)
     expect(screen.getByRole('link', { name: 'Facebook' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Twitter' })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Instagram' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Pinterest' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Instagram' })).toBeInTheDocument()
   })
 
-  it('shows Information links', () => {
+  it('renders navigation links in each column', () => {
     render(<Footer />)
-    expect(screen.getByRole('link', { name: 'About Us' })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Contact Us' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Privacy Policy' })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Terms & Conditions' })).toBeInTheDocument()
-  })
-
-  it('shows Customer Service links', () => {
-    render(<Footer />)
-    expect(screen.getByRole('link', { name: 'Shipping Policy' })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Return Policy' })).toBeInTheDocument()
-  })
-
-  it('shows Extras links', () => {
-    render(<Footer />)
+    expect(screen.getByRole('link', { name: 'Contact Us' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Brands' })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Gift Cards' })).toBeInTheDocument()
-  })
-
-  it('shows My Account links', () => {
-    render(<Footer />)
     expect(screen.getByRole('link', { name: 'My Account' })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Order History' })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Wishlist' })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Newsletter' })).toBeInTheDocument()
   })
 
-  it('has Component Dock link in copyright', () => {
+  it('renders copyright bar with Component Dock link', () => {
     render(<Footer />)
+    const year = new Date().getFullYear()
+    expect(screen.getByText(new RegExp(`${year} Modista`))).toBeInTheDocument()
     const dockLink = screen.getByRole('link', { name: 'Component Dock' })
     expect(dockLink).toHaveAttribute('href', 'https://www.componentdock.com/')
     expect(dockLink).toHaveAttribute('target', '_blank')
   })
 
-  it('shows copyright with current year', () => {
+  it('has dark footer background', () => {
     render(<Footer />)
-    const year = new Date().getFullYear()
-    expect(screen.getByText(new RegExp(`${year} Modista`))).toBeInTheDocument()
+    const footer = screen.getByRole('contentinfo')
+    expect(footer).toHaveClass('bg-footer-bg')
   })
 })

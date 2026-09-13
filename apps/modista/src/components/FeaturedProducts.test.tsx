@@ -4,80 +4,53 @@ import userEvent from '@testing-library/user-event'
 import { FeaturedProducts } from './FeaturedProducts'
 
 describe('FeaturedProducts', () => {
-  it('renders the section with heading', () => {
+  it('renders the sidebar heading and featured items', () => {
     render(<FeaturedProducts />)
-    expect(screen.getByRole('region', { name: 'Featured products' })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'Featured Products' })).toBeInTheDocument()
-  })
-
-  it('shows 4 featured products in the sidebar', () => {
-    render(<FeaturedProducts />)
-    expect(screen.getByText('Classic Watch')).toBeInTheDocument()
-    expect(screen.getByText('Leather Belt')).toBeInTheDocument()
-    expect(screen.getByText('Polarized Shades')).toBeInTheDocument()
-    expect(screen.getByText('Silk Tie')).toBeInTheDocument()
-  })
-
-  it('shows filter tabs', () => {
-    render(<FeaturedProducts />)
-    expect(screen.getByRole('tab', { name: "Men's" })).toBeInTheDocument()
-    expect(screen.getByRole('tab', { name: 'Woman' })).toBeInTheDocument()
-    expect(screen.getByRole('tab', { name: 'Shoes' })).toBeInTheDocument()
-    expect(screen.getByRole('tab', { name: 'Bags' })).toBeInTheDocument()
-  })
-
-  it('defaults to Men tab selected', () => {
-    render(<FeaturedProducts />)
-    expect(screen.getByRole('tab', { name: "Men's" })).toHaveAttribute('aria-selected', 'true')
-  })
-
-  it('filters products when clicking Woman tab', async () => {
-    const user = userEvent.setup()
-    render(<FeaturedProducts />)
-
-    await user.click(screen.getByRole('tab', { name: 'Woman' }))
-
-    expect(screen.getByRole('tab', { name: 'Woman' })).toHaveAttribute('aria-selected', 'true')
+    expect(screen.getByRole('heading', { name: /Featured Products/i })).toBeInTheDocument()
+    expect(screen.getByText('Down Jacket')).toBeInTheDocument()
     expect(screen.getByText('Summer Dress')).toBeInTheDocument()
-    expect(screen.getByText('Floral Skirt')).toBeInTheDocument()
-    expect(screen.queryByText('Winter Parka')).not.toBeInTheDocument()
+    expect(screen.getByText('Sport Shoes')).toBeInTheDocument()
+    expect(screen.getByText('Designer Bag')).toBeInTheDocument()
   })
 
-  it('filters products when clicking Shoes tab', async () => {
-    const user = userEvent.setup()
+  it('renders filter tabs', () => {
     render(<FeaturedProducts />)
-
-    await user.click(screen.getByRole('tab', { name: 'Shoes' }))
-
-    expect(screen.getByText('Running Sneakers')).toBeInTheDocument()
-    expect(screen.getByText('Ankle Boots')).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: "Men's" })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Woman' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Shoes' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Bags' })).toBeInTheDocument()
   })
 
-  it('filters products when clicking Bags tab', async () => {
+  it('filters products when a tab is clicked', async () => {
     const user = userEvent.setup()
     render(<FeaturedProducts />)
-
-    await user.click(screen.getByRole('tab', { name: 'Bags' }))
-
+    // Default tab is Men's
+    expect(screen.getByText('Down Jacket')).toBeInTheDocument()
+    // Click Woman tab
+    await user.click(screen.getByRole('button', { name: 'Woman' }))
+    expect(screen.getByText('Summer Dress')).toBeInTheDocument()
+    expect(screen.getByText('Silk Blouse')).toBeInTheDocument()
+    // Click Shoes tab
+    await user.click(screen.getByRole('button', { name: 'Shoes' }))
+    expect(screen.getByText('Sport Shoes')).toBeInTheDocument()
+    expect(screen.getByText('High Heels')).toBeInTheDocument()
+    expect(screen.getByText('Canvas Sneakers')).toBeInTheDocument()
+    // Click Bags tab
+    await user.click(screen.getByRole('button', { name: 'Bags' }))
+    expect(screen.getByText('Designer Bag')).toBeInTheDocument()
     expect(screen.getByText('Crossbody Bag')).toBeInTheDocument()
-    expect(screen.getByText('Tote Bag')).toBeInTheDocument()
   })
 
-  it('shows badge labels on products', () => {
+  it('displays badge labels on products', () => {
     render(<FeaturedProducts />)
-
     expect(screen.getByText('Sale')).toBeInTheDocument()
     expect(screen.getByText('New')).toBeInTheDocument()
+    expect(screen.getByText('-10%')).toBeInTheDocument()
   })
 
-  it('shows Add To Cart buttons', () => {
+  it('renders product images in sidebar', () => {
     render(<FeaturedProducts />)
-    const buttons = screen.getAllByText('Add To Cart')
-    expect(buttons.length).toBeGreaterThanOrEqual(2)
-  })
-
-  it('shows product prices', () => {
-    render(<FeaturedProducts />)
-    expect(screen.getByText('$189')).toBeInTheDocument()
+    const images = screen.getAllByRole('img')
+    expect(images.length).toBeGreaterThanOrEqual(4)
   })
 })

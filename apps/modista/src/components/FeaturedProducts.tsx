@@ -1,157 +1,156 @@
 import { useState } from 'react'
-import { ShoppingCart } from 'lucide-react'
-
-const featuredProducts = [
-  {
-    id: 101,
-    name: 'Classic Watch',
-    price: 199,
-    image: 'https://picsum.photos/seed/modista-fp1/80/80',
-  },
-  {
-    id: 102,
-    name: 'Leather Belt',
-    price: 45,
-    image: 'https://picsum.photos/seed/modista-fp2/80/80',
-  },
-  {
-    id: 103,
-    name: 'Polarized Shades',
-    price: 89,
-    image: 'https://picsum.photos/seed/modista-fp3/80/80',
-  },
-  { id: 104, name: 'Silk Tie', price: 35, image: 'https://picsum.photos/seed/modista-fp4/80/80' },
-] as const
 
 const tabs = ["Men's", 'Woman', 'Shoes', 'Bags'] as const
 
-type TabName = (typeof tabs)[number]
-
-interface Product {
-  id: number
-  name: string
-  price: number
-  badge: string | null
-  category: TabName
-  image: string
-}
-
-const allProducts: Product[] = [
+const allProducts = [
   {
-    id: 201,
-    name: 'Winter Parka',
-    price: 189,
-    badge: 'Sale',
-    category: "Men's",
-    image: 'https://picsum.photos/seed/modista-fp-a/300/350',
-  },
-  {
-    id: 202,
-    name: 'Summer Dress',
-    price: 79,
-    badge: 'New',
-    category: 'Woman',
-    image: 'https://picsum.photos/seed/modista-fp-b/300/350',
-  },
-  {
-    id: 203,
-    name: 'Running Sneakers',
+    id: 1,
+    name: 'Down Jacket',
     price: 120,
-    badge: '-10%',
-    category: 'Shoes',
-    image: 'https://picsum.photos/seed/modista-fp-c/300/350',
-  },
-  {
-    id: 204,
-    name: 'Crossbody Bag',
-    price: 65,
-    badge: null,
-    category: 'Bags',
-    image: 'https://picsum.photos/seed/modista-fp-d/300/350',
-  },
-  {
-    id: 205,
-    name: 'Casual Blazer',
-    price: 145,
-    badge: 'New',
-    category: "Men's",
-    image: 'https://picsum.photos/seed/modista-fp-e/300/350',
-  },
-  {
-    id: 206,
-    name: 'Floral Skirt',
-    price: 55,
+    oldPrice: 150,
+    image: 'https://picsum.photos/seed/modista-fp1/400/500',
     badge: 'Sale',
+    badgeColor: 'bg-brand-red',
+    category: "Men's",
+  },
+  {
+    id: 2,
+    name: 'Summer Dress',
+    price: 65,
+    oldPrice: null,
+    image: 'https://picsum.photos/seed/modista-fp2/400/500',
+    badge: 'New',
+    badgeColor: 'bg-green-500',
     category: 'Woman',
-    image: 'https://picsum.photos/seed/modista-fp-f/300/350',
   },
   {
-    id: 207,
-    name: 'Ankle Boots',
+    id: 3,
+    name: 'Sport Shoes',
     price: 110,
-    badge: 'Hot',
+    oldPrice: 120,
+    image: 'https://picsum.photos/seed/modista-fp3/400/500',
+    badge: '-10%',
+    badgeColor: 'bg-amber-500',
     category: 'Shoes',
-    image: 'https://picsum.photos/seed/modista-fp-g/300/350',
   },
   {
-    id: 208,
-    name: 'Tote Bag',
-    price: 80,
-    badge: '-10%',
+    id: 4,
+    name: 'Designer Bag',
+    price: 180,
+    oldPrice: null,
+    image: 'https://picsum.photos/seed/modista-fp4/400/500',
+    badge: 'New',
+    badgeColor: 'bg-green-500',
     category: 'Bags',
-    image: 'https://picsum.photos/seed/modista-fp-h/300/350',
   },
-]
+  {
+    id: 5,
+    name: 'Casual Hoodie',
+    price: 80,
+    oldPrice: null,
+    image: 'https://picsum.photos/seed/modista-fp5/400/500',
+    badge: '',
+    badgeColor: '',
+    category: "Men's",
+  },
+  {
+    id: 6,
+    name: 'Leather Jacket',
+    price: 200,
+    oldPrice: 250,
+    image: 'https://picsum.photos/seed/modista-fp6/400/500',
+    badge: 'Sale',
+    badgeColor: 'bg-brand-red',
+    category: "Men's",
+  },
+  {
+    id: 7,
+    name: 'High Heels',
+    price: 90,
+    oldPrice: null,
+    image: 'https://picsum.photos/seed/modista-fp7/400/500',
+    badge: 'New',
+    badgeColor: 'bg-green-500',
+    category: 'Shoes',
+  },
+  {
+    id: 8,
+    name: 'Crossbody Bag',
+    price: 140,
+    oldPrice: 160,
+    image: 'https://picsum.photos/seed/modista-fp8/400/500',
+    badge: '-10%',
+    badgeColor: 'bg-amber-500',
+    category: 'Bags',
+  },
+  {
+    id: 9,
+    name: 'Silk Blouse',
+    price: 75,
+    oldPrice: null,
+    image: 'https://picsum.photos/seed/modista-fp9/400/500',
+    badge: 'New',
+    badgeColor: 'bg-green-500',
+    category: 'Woman',
+  },
+  {
+    id: 10,
+    name: 'Canvas Sneakers',
+    price: 55,
+    oldPrice: null,
+    image: 'https://picsum.photos/seed/modista-fp10/400/500',
+    badge: '',
+    badgeColor: '',
+    category: 'Shoes',
+  },
+] as const
 
-const badgeColors: Record<string, string> = {
-  Sale: 'bg-brand-red',
-  New: 'bg-green-600',
-  '-10%': 'bg-brand-red',
-}
+const featuredItems = [
+  { name: 'Down Jacket', price: 120, image: 'https://picsum.photos/seed/modista-fi1/100/120' },
+  { name: 'Summer Dress', price: 65, image: 'https://picsum.photos/seed/modista-fi2/100/120' },
+  { name: 'Sport Shoes', price: 110, image: 'https://picsum.photos/seed/modista-fi3/100/120' },
+  { name: 'Designer Bag', price: 180, image: 'https://picsum.photos/seed/modista-fi4/100/120' },
+] as const
 
 export function FeaturedProducts() {
-  const [activeTab, setActiveTab] = useState<TabName>("Men's")
+  const [activeTab, setActiveTab] = useState<string>(tabs[0])
 
-  const filteredProducts = allProducts.filter((p) => p.category === activeTab)
+  const filtered = allProducts.filter((p) => p.category === activeTab)
 
   return (
-    <section className="mx-auto max-w-[1140px] px-4 py-12" aria-label="Featured products">
+    <section className="mx-auto max-w-[1140px] px-4 py-10" aria-label="Featured products">
       <div className="flex flex-col gap-8 lg:flex-row">
-        {/* Left sidebar */}
-        <div className="w-full lg:w-1/4">
-          <h2 className="mb-6 font-heading text-lg font-bold uppercase tracking-wide text-text-heading">
+        {/* Sidebar */}
+        <aside className="w-full lg:w-1/4">
+          <h2 className="mb-4 font-heading text-lg font-bold uppercase tracking-wide text-text-heading">
             Featured Products
           </h2>
           <div className="space-y-4">
-            {featuredProducts.map((product) => (
-              <div key={product.id} className="flex items-center gap-3">
-                <img src={product.image} alt={product.name} className="h-16 w-16 object-cover" />
+            {featuredItems.map((item) => (
+              <div key={item.name} className="flex items-center gap-3">
+                <img src={item.image} alt={item.name} className="h-[80px] w-[60px] object-cover" />
                 <div>
-                  <h3 className="text-sm font-medium text-text-primary">{product.name}</h3>
-                  <span className="text-sm text-text-secondary">${product.price}</span>
+                  <p className="text-sm font-medium text-text-heading">{item.name}</p>
+                  <p className="text-sm text-text-secondary">${item.price}</p>
                 </div>
               </div>
             ))}
           </div>
-        </div>
+        </aside>
 
-        {/* Right main area */}
-        <div className="w-full lg:w-3/4">
-          {/* Filter tabs */}
-          <div
-            className="mb-6 flex flex-wrap gap-4 border-b border-border-light pb-4"
-            role="tablist"
-          >
+        {/* Main area */}
+        <div className="flex-1">
+          {/* Tabs */}
+          <div className="mb-6 flex gap-4 border-b border-border-light">
             {tabs.map((tab) => (
               <button
                 key={tab}
-                role="tab"
-                aria-selected={activeTab === tab}
+                type="button"
                 onClick={() => setActiveTab(tab)}
-                className={`font-heading text-sm font-semibold uppercase tracking-wide transition-colors ${
+                className={`pb-2 text-sm font-semibold uppercase tracking-wide transition-colors ${
                   activeTab === tab
-                    ? 'text-brand-red border-b-2 border-brand-red'
-                    : 'text-text-secondary hover:text-brand-red'
+                    ? 'border-b-2 border-brand-red text-brand-red'
+                    : 'text-text-secondary hover:text-text-heading'
                 }`}
               >
                 {tab}
@@ -160,31 +159,30 @@ export function FeaturedProducts() {
           </div>
 
           {/* Product grid */}
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-4" role="tabpanel">
-            {filteredProducts.map((product) => (
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
+            {filtered.map((product) => (
               <div key={product.id} className="group">
-                <div className="relative overflow-hidden bg-gray-100">
+                <div className="relative overflow-hidden border border-border-light">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="h-[250px] w-full object-cover"
+                    className="h-[220px] w-full object-cover"
                   />
                   {product.badge && (
                     <span
-                      className={`absolute left-2 top-2 rounded-[3px] px-2 py-0.5 text-xs font-semibold text-white ${badgeColors[product.badge] ?? 'bg-brand-red'}`}
+                      className={`absolute left-2 top-2 rounded-[3px] px-2 py-0.5 text-xs font-semibold text-white ${product.badgeColor}`}
                     >
                       {product.badge}
                     </span>
                   )}
                 </div>
-                <div className="mt-3">
-                  <button className="w-full bg-brand-dark py-2 text-xs font-semibold text-white transition-colors hover:bg-transparent hover:text-brand-dark border border-brand-dark">
-                    <ShoppingCart className="mr-1 inline h-3 w-3" />
-                    Add To Cart
-                  </button>
-                </div>
-                <h3 className="mt-2 text-sm font-medium text-text-primary">{product.name}</h3>
-                <span className="text-sm text-text-secondary">${product.price}</span>
+                <h3 className="mt-2 text-sm font-medium text-text-heading">{product.name}</h3>
+                <p className="text-sm text-text-secondary">
+                  {product.oldPrice && (
+                    <span className="mr-2 text-text-muted line-through">${product.oldPrice}</span>
+                  )}
+                  <span className="font-semibold text-text-primary">${product.price}</span>
+                </p>
               </div>
             ))}
           </div>

@@ -17,10 +17,8 @@ export function App() {
 
   return (
     <div className="flex min-h-screen flex-col bg-white text-text-primary">
-      <header>
-        <TopBar />
-        <Navbar />
-      </header>
+      <TopBar />
+      <Navbar />
       <main className="flex-1">
         <HeroSlider />
         <FeatureAds />

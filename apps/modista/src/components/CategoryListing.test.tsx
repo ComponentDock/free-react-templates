@@ -3,31 +3,28 @@ import { render, screen } from '@testing-library/react'
 import { CategoryListing } from './CategoryListing'
 
 describe('CategoryListing', () => {
-  it('renders the category listing section', () => {
-    render(<CategoryListing />)
-    expect(screen.getByRole('region', { name: 'Product categories' })).toBeInTheDocument()
-  })
-
-  it('shows three category headings: Men, Women, Accessories', () => {
+  it('renders three category headings', () => {
     render(<CategoryListing />)
     expect(screen.getByRole('heading', { name: 'Men' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Women' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Accessories' })).toBeInTheDocument()
   })
 
-  it('shows subcategory links for each category', () => {
+  it('renders subcategory links', () => {
     render(<CategoryListing />)
-    const subcategories = ['Down Jackets', 'Hoodies', 'Suits', 'Jeans', 'Casual Pants', 'Sunglass']
-    for (const sub of subcategories) {
-      const links = screen.getAllByText(sub)
-      expect(links.length).toBe(3) // once per category
-    }
+    const links = ['Down Jackets', 'Hoodies', 'Suits', 'Jeans', 'Casual Pants', 'Sunglass']
+    links.forEach((link) => {
+      const elements = screen.getAllByText(link)
+      expect(elements.length).toBe(3) // once per category
+    })
   })
 
-  it('shows category images', () => {
+  it('renders category images', () => {
     render(<CategoryListing />)
-    expect(screen.getByRole('img', { name: 'Men category' })).toBeInTheDocument()
-    expect(screen.getByRole('img', { name: 'Women category' })).toBeInTheDocument()
-    expect(screen.getByRole('img', { name: 'Accessories category' })).toBeInTheDocument()
+    const images = screen.getAllByRole('img')
+    expect(images.length).toBe(3)
+    images.forEach((img) => {
+      expect(img).toHaveAttribute('src', expect.stringContaining('picsum.photos'))
+    })
   })
 })

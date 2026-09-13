@@ -3,45 +3,42 @@ import { render, screen } from '@testing-library/react'
 import { BlogSection } from './BlogSection'
 
 describe('BlogSection', () => {
-  it('renders the blog section heading', () => {
+  it('renders the section heading', () => {
     render(<BlogSection />)
-    expect(screen.getByRole('heading', { name: 'From The Blog' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /From The Blog/i })).toBeInTheDocument()
   })
 
   it('renders three blog cards', () => {
     render(<BlogSection />)
-    const articles = screen.getAllByRole('article')
-    expect(articles).toHaveLength(3)
+    expect(screen.getByText('Top 10 Summer Fashion Trends')).toBeInTheDocument()
+    expect(screen.getByText('How to Style Your New Jacket')).toBeInTheDocument()
+    expect(screen.getByText('Accessories That Complete Your Look')).toBeInTheDocument()
   })
 
-  it('shows category tag "fashion" on each card', () => {
+  it('displays the fashion category tag', () => {
     render(<BlogSection />)
-    const fashionTags = screen.getAllByText('fashion')
-    expect(fashionTags).toHaveLength(3)
+    const tags = screen.getAllByText('fashion')
+    expect(tags.length).toBe(3)
   })
 
-  it('shows blog post titles', () => {
-    render(<BlogSection />)
-    expect(screen.getByText('Summer Fashion Trends 2024')).toBeInTheDocument()
-    expect(screen.getByText('How to Style Your Wardrobe')).toBeInTheDocument()
-    expect(screen.getByText('Accessorizing Like a Pro')).toBeInTheDocument()
-  })
-
-  it('shows excerpts', () => {
+  it('renders excerpt text', () => {
     render(<BlogSection />)
     expect(screen.getByText(/Discover the hottest fashion trends/)).toBeInTheDocument()
   })
 
-  it('shows dates', () => {
+  it('renders dates', () => {
     render(<BlogSection />)
-    expect(screen.getByText('21.09.2024')).toBeInTheDocument()
-    expect(screen.getByText('18.09.2024')).toBeInTheDocument()
-    expect(screen.getByText('15.09.2024')).toBeInTheDocument()
+    expect(screen.getByText('21.09.2017')).toBeInTheDocument()
+    expect(screen.getByText('18.09.2017')).toBeInTheDocument()
+    expect(screen.getByText('15.09.2017')).toBeInTheDocument()
   })
 
-  it('shows blog images', () => {
+  it('renders blog images', () => {
     render(<BlogSection />)
     const images = screen.getAllByRole('img')
-    expect(images).toHaveLength(3)
+    expect(images.length).toBe(3)
+    images.forEach((img) => {
+      expect(img).toHaveAttribute('src', expect.stringContaining('picsum.photos'))
+    })
   })
 })

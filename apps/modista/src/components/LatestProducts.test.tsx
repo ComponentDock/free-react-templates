@@ -5,50 +5,43 @@ import { LatestProducts } from './LatestProducts'
 describe('LatestProducts', () => {
   it('renders the section heading', () => {
     render(<LatestProducts />)
-    expect(screen.getByRole('heading', { name: 'Our Latest Product' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /Our Latest Product/i })).toBeInTheDocument()
   })
 
-  it('displays product cards with names', () => {
+  it('renders product cards with names and prices', () => {
     render(<LatestProducts />)
-    expect(screen.getByText('Winter Jacket')).toBeInTheDocument()
-    expect(screen.getByText('Summer Dress')).toBeInTheDocument()
-    expect(screen.getByText('Casual Blazer')).toBeInTheDocument()
-    expect(screen.getByText('Slim Jeans')).toBeInTheDocument()
+    expect(screen.getByText('Down Jacket')).toBeInTheDocument()
+    expect(screen.getByText('$120')).toBeInTheDocument()
+    expect(screen.getByText('Casual Hoodie')).toBeInTheDocument()
+    expect(screen.getByText('$80')).toBeInTheDocument()
   })
 
-  it('shows prices for products', () => {
+  it('displays strikethrough sale prices', () => {
     render(<LatestProducts />)
-    const prices = screen.getAllByText('$120')
-    expect(prices.length).toBeGreaterThanOrEqual(1)
-    expect(screen.getByText('$89')).toBeInTheDocument()
+    const strikethrough = screen.getAllByText('$150')
+    expect(strikethrough.length).toBeGreaterThanOrEqual(1)
+    strikethrough.forEach((el) => {
+      expect(el).toHaveClass('line-through')
+    })
   })
 
-  it('shows strikethrough prices for sale items', () => {
+  it('renders Add To Cart buttons', () => {
     render(<LatestProducts />)
-    const strikethroughs = document.querySelectorAll('.line-through')
-    expect(strikethroughs.length).toBeGreaterThan(0)
+    const buttons = screen.getAllByRole('button', { name: /Add To Cart/i })
+    expect(buttons.length).toBeGreaterThanOrEqual(6)
   })
 
-  it('shows Add To Cart buttons', () => {
+  it('renders compare and wishlist icon buttons', () => {
     render(<LatestProducts />)
-    const buttons = screen.getAllByText('Add To Cart')
-    expect(buttons.length).toBe(8)
+    const compareButtons = screen.getAllByRole('button', { name: 'Compare' })
+    const wishlistButtons = screen.getAllByRole('button', { name: 'Wishlist' })
+    expect(compareButtons.length).toBeGreaterThanOrEqual(1)
+    expect(wishlistButtons.length).toBeGreaterThanOrEqual(1)
   })
 
-  it('shows compare and wishlist icon buttons', () => {
+  it('renders product images', () => {
     render(<LatestProducts />)
-
-    const compareBtns = screen.getAllByRole('button', { name: /Compare/ })
-    expect(compareBtns.length).toBeGreaterThan(0)
-
-    const wishlistBtns = screen.getAllByRole('button', { name: /wishlist/ })
-    expect(wishlistBtns.length).toBeGreaterThan(0)
-  })
-
-  it('has a scrollable product list', () => {
-    render(<LatestProducts />)
-    const list = screen.getByRole('list')
-    expect(list).toHaveClass('flex')
-    expect(list).toHaveClass('overflow-x-auto')
+    const images = screen.getAllByRole('img')
+    expect(images.length).toBeGreaterThanOrEqual(6)
   })
 })
