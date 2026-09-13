@@ -1061,7 +1061,7 @@
 - [x] **Interior Design** — [colorlib](https://colorlib.com/wp/template/interior-design/) · [Mint](https://mint.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/interiordesign-free-template.jpg)
 - [x] **Inves** — [colorlib](https://colorlib.com/wp/template/inves/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/inves-free-template.jpg) · [equity](https://equity.free.componentdock.com)
 - [x] **Invest** — [colorlib](https://colorlib.com/wp/template/invest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/invest-free-template.jpg) · [vestly](https://vestly.free.componentdock.com)
-- [~] **It Solution** — [colorlib](https://colorlib.com/wp/template/it-solution/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/itsolution-free-template.jpg)
+- [x] **It Solution** · [netforge](https://free-react-templates-netforge.surge.sh) — [colorlib](https://colorlib.com/wp/template/it-solution/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/itsolution-free-template.jpg)
 - [x] **Itkol** — [colorlib](https://colorlib.com/wp/template/itkol/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/itkol-free-template.jpg) · [Itkol](https://itkol.free.componentdock.com)
 - [x] **Itlock** — [colorlib](https://colorlib.com/wp/template/itlock/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/itlock-colorlib-template.jpg) · [netora](https://netora.free.componentdock.com)
 - [ ] **Jobpply** — [colorlib](https://colorlib.com/wp/template/jobpply/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobpply-free-template.jpg)
