@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Indigo brand colors — from the ColorLib Parason preview
+     (https://preview.colorlib.com/theme/parason/):
+     a SaaS/software theme with deep indigo #21146a primary,
+     hero background #22195b, magnolia section bg #faf9ff,
+     dark footer #0e1424, heading color #3a414e, body text #797979. */
+  --color-primary: #21146a;
+  --color-hero-bg: #22195b;
+  --color-heading: #3a414e;
+  --color-body: #797979;
+  --color-magnolia: #faf9ff;
+  --color-footer-bg: #0e1424;
+  --color-footer-text: #7b838a;
+  --color-white: #ffffff;
+  --color-border: #ebebeb;
+
+  /* Rajdhani (headings) + Roboto (body) via Google Fonts <link> in
+     index.html — matching the ColorLib font pairing. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Rajdhani', ui-sans-serif, system-ui, sans-serif;
+}
