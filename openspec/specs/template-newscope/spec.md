@@ -16,32 +16,32 @@ Extracted from the live preview CSS (`css/main.css`) on 2026-09-13.
 
 ### Colors
 
-| Token | Hex | Usage |
-|-------|-----|-------|
-| brand-primary | `#e71d69` | Accent pink/magenta — category badges, hover states, highlight links |
-| brand-secondary | `#00b5e9` | Teal — secondary accent |
-| brand-green | `#17b978` | Green accent |
-| brand-orange | `#e3724a` | Orange accent — category tags |
-| text-dark | `#111` / `#151515` | Primary body text |
-| text-base | `#222` / `#333` | Headings, secondary text |
-| text-muted | `#555` / `#666` | Meta text, bylines, dates |
-| text-light | `#888` / `#999` | Tertiary text |
-| text-lighter | `#b2b2b2` / `#ccc` | Borders, subtle dividers |
-| bg-white | `#fff` | Main content background (bg0) |
-| bg-dark | `#222` | Footer background (bg2), dark sections |
-| bg-darker | `#333` | Secondary dark (bg3) |
-| bg-green | `#15a752` | Green section accent (bg10) |
-| bg-gray | `#999` | Gray utility (bg9) — video play button overlay |
-| bg-border | `#ccc` | Border accents (bg11) |
+| Token           | Hex                | Usage                                                                |
+| --------------- | ------------------ | -------------------------------------------------------------------- |
+| brand-primary   | `#e71d69`          | Accent pink/magenta — category badges, hover states, highlight links |
+| brand-secondary | `#00b5e9`          | Teal — secondary accent                                              |
+| brand-green     | `#17b978`          | Green accent                                                         |
+| brand-orange    | `#e3724a`          | Orange accent — category tags                                        |
+| text-dark       | `#111` / `#151515` | Primary body text                                                    |
+| text-base       | `#222` / `#333`    | Headings, secondary text                                             |
+| text-muted      | `#555` / `#666`    | Meta text, bylines, dates                                            |
+| text-light      | `#888` / `#999`    | Tertiary text                                                        |
+| text-lighter    | `#b2b2b2` / `#ccc` | Borders, subtle dividers                                             |
+| bg-white        | `#fff`             | Main content background (bg0)                                        |
+| bg-dark         | `#222`             | Footer background (bg2), dark sections                               |
+| bg-darker       | `#333`             | Secondary dark (bg3)                                                 |
+| bg-green        | `#15a752`          | Green section accent (bg10)                                          |
+| bg-gray         | `#999`             | Gray utility (bg9) — video play button overlay                       |
+| bg-border       | `#ccc`             | Border accents (bg11)                                                |
 
 ### Typography
 
-| Role | Font | Weight |
-|------|------|--------|
-| Body | Roboto | Regular (400), Medium (500), Bold (700), Black (900) |
-| UI / Links | Lato | Regular (400) |
-| Icons | FontAwesome 5.0.8 | — |
-| Icon font | Material Design Iconic Font | — |
+| Role       | Font                        | Weight                                               |
+| ---------- | --------------------------- | ---------------------------------------------------- |
+| Body       | Roboto                      | Regular (400), Medium (500), Bold (700), Black (900) |
+| UI / Links | Lato                        | Regular (400)                                        |
+| Icons      | FontAwesome 5.0.8           | —                                                    |
+| Icon font  | Material Design Iconic Font | —                                                    |
 
 ### Layout & Spacing
 
@@ -58,104 +58,156 @@ Extracted from the live preview CSS (`css/main.css`) on 2026-09-13.
 - Back-to-top: fixed position, bottom-right, opacity transition
 - Links: text-decoration none, color inherits or brand accent on hover
 
-## Gherkin Requirements
+## Requirements
 
-### Feature: Newscope — Magazine News Blog Template
+### Requirement: Top bar displays location and utility links
 
-#### Scenario: Top bar displays location and utility links
-  Given the page loads
-  Then a top bar is visible at the top
-  And it shows a location string (e.g. "New York, NY")
-  And it shows weather info (HI/LO temperature)
-  And it shows utility links: About, Contact, Sign up, Log in
+The top bar SHALL display location, weather info, and utility links (About, Contact, Sign up, Log in).
 
-#### Scenario: Logo and banner header
-  Given the page loads
-  Then the logo is displayed in the header area
-  And a banner/header image spans below the logo
-  And the header area has a white background
+#### Scenario: Top bar renders correctly
 
-#### Scenario: Main navigation with category links
-  Given the page loads
-  Then a horizontal navigation bar is visible below the header
-  And it contains category links: Home, News, Entertainment, Fashion, Life Style, Technology, Travel
-  And a "Features" dropdown or link is present
-  And category links are styled with Roboto font
+- **WHEN** the page loads
+- **THEN** a top bar is visible at the top
+- **AND** it shows a location string (e.g. "New York, NY")
+- **AND** it shows weather info (HI/LO temperature)
+- **AND** it shows utility links: About, Contact, Sign up, Log in
 
-#### Scenario: Featured news tabbed section
-  Given the page loads
-  Then a tabbed article section appears below the navigation
-  And tabs include: All, Entertainment, Fashion, Life Style, Technology, Travel
-  And the "All" tab is active by default
-  And each tab displays a grid of featured articles with thumbnails
-  And articles show a category tag, title, and date
-  And tab switching shows/hides the corresponding article set
+### Requirement: Logo and banner header
 
-#### Scenario: Main content — featured article + grid
-  Given the page loads
-  Then a main content section appears below the tabs
-  And it has a two-column layout: left column (larger) and right column (smaller)
-  And the left column shows a large featured article with background image overlay
-  And the right column shows 2-3 smaller article cards stacked vertically
-  And articles display category, title, author name, and date
-  And article cards have background image with dark overlay for text readability
+The header area SHALL display a logo and a banner image with white background.
 
-#### Scenario: Entertainment section with sub-category tabs
-  Given the page loads
-  Then an entertainment section appears after the main content
-  And it has sub-category tabs: All, Celebrity, Movies, Music, Games
-  And a "View all" link is present
-  And articles are displayed in a horizontal card layout
-  And each article card shows a thumbnail, category tag, title, author, and date
+#### Scenario: Header renders correctly
 
-#### Scenario: Latest articles section
-  Given the page loads
-  Then a "Latest Articles" section appears
-  And it displays a grid of article cards (3-4 per row on desktop)
-  And each card has a background image with overlay
-  And cards show category tag, title, author name, and publication date
-  And cards use the `.bg-img1` cover-image pattern
+- **WHEN** the page loads
+- **THEN** the logo is displayed in the header area
+- **AND** a banner/header image spans below the logo
+- **AND** the header area has a white background
 
-#### Scenario: Newsletter subscribe section
-  Given the page loads
-  Then a newsletter/subscribe section is visible
-  And it shows a subscriber count (e.g. "5039 Subscribers")
-  And it has a tagline: "Get all latest content delivered to your email a few times a month."
-  And it contains an email input field and a subscribe button
-  And the section has a distinct background (dark or colored)
+### Requirement: Main navigation with category links
 
-#### Scenario: Video section
-  Given the page loads
-  Then a video section appears
-  And it contains a video thumbnail with a play button overlay
-  And the play button is circular and centered on the thumbnail
-  And clicking play opens a modal video player
+The main navigation SHALL contain horizontal category links with 7+ categories.
 
-#### Scenario: Footer — site info and categories
-  Given the page loads
-  Then a dark footer (#222 background) is visible at the bottom
-  And it contains a site description paragraph
-  And it shows a "Popular Posts" column with 3 post links
-  And it shows a "Category" column with category names and post counts
-  And it shows contact information (phone number)
-  And a "Colorlib" attribution link is present
-  And a back-to-top button is fixed at bottom-right
-  And the footer links to `https://www.componentdock.com/` as "Component Dock"
+#### Scenario: Navigation renders correctly
 
-#### Scenario: Responsive behavior
-  Given the page is viewed on mobile (< 576px)
-  Then the desktop navigation is replaced by a hamburger menu
-  And the hamburger button uses the `hamburger--squeeze` animation
-  And article grids collapse to single-column layout
-  And the top bar simplifies for small screens
+- **WHEN** the page loads
+- **THEN** a horizontal navigation bar is visible below the header
+- **AND** it contains category links: Home, News, Entertainment, Fashion, Life Style, Technology, Travel
+- **AND** a "Features" dropdown or link is present
+- **AND** category links are styled with Roboto font
 
-#### Scenario: Accessibility
-  Given any page state
-  Then all images have descriptive alt text
-  And navigation links are keyboard-focusable
-  And the hamburger menu has an aria-label
-  And tab panels use appropriate aria-selected attributes
-  And color contrast meets WCAG AA for body text
+### Requirement: Featured news tabbed section
+
+The featured section SHALL display articles organized in tabs with category filtering.
+
+#### Scenario: Tabbed section renders correctly
+
+- **WHEN** the page loads
+- **THEN** a tabbed article section appears below the navigation
+- **AND** tabs include: All, Entertainment, Fashion, Life Style, Technology, Travel
+- **AND** the "All" tab is active by default
+- **AND** each tab displays a grid of featured articles with thumbnails
+- **AND** articles show a category tag, title, and date
+- **AND** tab switching shows/hides the corresponding article set
+
+### Requirement: Main content two-column layout
+
+The main content SHALL use a two-column layout with a large featured article and stacked smaller cards.
+
+#### Scenario: Two-column layout renders correctly
+
+- **WHEN** the page loads
+- **THEN** a main content section appears below the tabs
+- **AND** it has a two-column layout: left column (larger) and right column (smaller)
+- **AND** the left column shows a large featured article with background image overlay
+- **AND** the right column shows 2-3 smaller article cards stacked vertically
+- **AND** articles display category, title, author name, and date
+
+### Requirement: Entertainment section with sub-category tabs
+
+The entertainment section SHALL display articles with sub-category tabs.
+
+#### Scenario: Entertainment section renders correctly
+
+- **WHEN** the page loads
+- **THEN** an entertainment section appears after the main content
+- **AND** it has sub-category tabs: All, Celebrity, Movies, Music, Games
+- **AND** a "View all" link is present
+- **AND** articles are displayed in a horizontal card layout
+
+### Requirement: Latest articles grid
+
+The latest articles section SHALL display a responsive grid of article cards.
+
+#### Scenario: Latest articles grid renders correctly
+
+- **WHEN** the page loads
+- **THEN** a "Latest Articles" section appears
+- **AND** it displays a grid of article cards (3-4 per row on desktop)
+- **AND** each card has a background image with overlay
+- **AND** cards show category tag, title, author name, and publication date
+
+### Requirement: Newsletter subscribe section
+
+The newsletter section SHALL display subscriber count, tagline, and email input.
+
+#### Scenario: Newsletter renders correctly
+
+- **WHEN** the page loads
+- **THEN** a newsletter/subscribe section is visible
+- **AND** it shows a subscriber count (e.g. "5039 Subscribers")
+- **AND** it has a tagline: "Get all latest content delivered to your email a few times a month."
+- **AND** it contains an email input field and a subscribe button
+- **AND** the section has a dark background
+
+### Requirement: Video section with play button
+
+The video section SHALL display a thumbnail with a circular play button overlay.
+
+#### Scenario: Video section renders correctly
+
+- **WHEN** the page loads
+- **THEN** a video section appears
+- **AND** it contains a video thumbnail with a play button overlay
+- **AND** the play button is circular and centered on the thumbnail
+- **AND** clicking play opens a modal video player
+
+### Requirement: Dark footer with columns
+
+The footer SHALL display a dark background with three columns of content.
+
+#### Scenario: Footer renders correctly
+
+- **WHEN** the page loads
+- **THEN** a dark footer (#222 background) is visible at the bottom
+- **AND** it contains a site description paragraph
+- **AND** it shows a "Popular Posts" column with 3 post links
+- **AND** it shows a "Category" column with category names and post counts
+- **AND** it shows contact information (phone number)
+- **AND** a back-to-top button is fixed at bottom-right
+- **AND** the footer links to `https://www.componentdock.com/` as "Component Dock"
+
+### Requirement: Responsive behavior
+
+The template SHALL be responsive with hamburger menu on mobile.
+
+#### Scenario: Mobile responsive layout
+
+- **WHEN** the page is viewed on mobile (< 576px)
+- **THEN** the desktop navigation is replaced by a hamburger menu
+- **AND** article grids collapse to single-column layout
+
+### Requirement: Accessibility
+
+The template SHALL meet WCAG AA accessibility standards.
+
+#### Scenario: Accessibility requirements
+
+- **WHEN** any page state
+- **THEN** all images have descriptive alt text
+- **AND** navigation links are keyboard-focusable
+- **AND** the hamburger menu has an aria-label
+- **AND** tab panels use appropriate aria-selected attributes
+- **AND** color contrast meets WCAG AA for body text
 
 ## Verification Checklist
 
