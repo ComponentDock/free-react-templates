@@ -1080,7 +1080,7 @@
 - [x] **Lifecoach** — [colorlib](https://colorlib.com/wp/template/lifecoach/) · [coachly](https://coachly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lifecoach-free-template.jpg)
 - [x] **Loans2go** — [colorlib](https://colorlib.com/wp/template/loans2go/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/loans2go-free-template.jpg) · [lendly](https://lendly.free.componentdock.com)
 - [x] **Locals Directory** — [colorlib](https://colorlib.com/wp/template/locals-directory/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/localsdirectory-free-template.jpg) · [hoodly](https://hoodly.free.componentdock.com)
-- [ ] **Locksmith** — [colorlib](https://colorlib.com/wp/template/locksmith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/locksmith-colorlib-template.jpg)
+- [~] **Locksmith** — [colorlib](https://colorlib.com/wp/template/locksmith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/locksmith-colorlib-template.jpg)
 - [x] **Logistic** — [colorlib](https://colorlib.com/wp/template/logistic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logistic-free-template.jpg) · [convey](https://convey.free.componentdock.com)
 - [x] **Logistics** — [colorlib](https://colorlib.com/wp/template/logistics/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logistics-free-template.jpg) · [shiply](https://shiply.free.componentdock.com)
 - [x] **Logitrans** · [freightly](https://freightly.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/logitrans/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logitrans-template-1770211309698.jpg)
