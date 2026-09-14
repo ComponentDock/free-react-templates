@@ -3,56 +3,56 @@
 ## Purpose
 
 Statute is a law-firm landing-page template in the free-react-templates
-monorepo. It is a React recreation of the ColorLib "Lawful" free template
-(source: https://colorlib.com/wp/template/lawful/,
-preview: https://preview.colorlib.com/theme/lawful/),
+monorepo. It is a React recreation of the ColorLib "PrimeLaw" free template
+(source: https://colorlib.com/wp/template/primelaw/,
+preview: https://preview.colorlib.com/theme/primelaw/),
 built under a DIFFERENT name (**Statute**), with the monorepo stack:
 Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The original is a Bootstrap 4 multi-section law-firm landing page with
-a full-width hero banner (background image + dark overlay), animated
-counter stats, a video-embed about section, services grid, team cards,
-blog cards, and a dark footer with newsletter signup. The design uses a
-**pink-to-coral gradient** brand palette (`#f13d80` → `#f48464`),
-Playfair Display serif headings, Raleway sans-serif body, white
-`.primary-btn` with 5px radius, and a dark `#222` footer with copyright bar.
+a dark navbar, hero slider with background images and dark overlay,
+a "Request A Quote" form alongside 4 service cards, about sections with
+image-text splits, a parallax counter stats row, testimonial carousel,
+a steps/CTA section with golden brand accent, a blog grid, and a dark
+footer with 4 columns and copyright bar. The design uses a
+**golden/amber** brand palette (`#b99566` primary, `#a27c4a` darker),
+**Work Sans** font family, and dark backgrounds (`#16181b`).
 
 ## Design tokens
 
-| Token                | Value                                              | Notes                                        |
-| -------------------- | -------------------------------------------------- | -------------------------------------------- |
-| Brand gradient       | `linear-gradient(90deg, #f13d80 0%, #f48464 100%)` | Pink → coral; primary button, links, accents |
-| Secondary gradient   | `linear-gradient(90deg, #e93d88 0%, #e5935a 100%)` | Slightly different pink-orange               |
-| Primary accent       | `#ea1162`                                          | Hot pink (alternate accent)                  |
-| Text primary         | `#222222`                                          | Headings, body text                          |
-| Text secondary       | `#777777`                                          | Paragraphs                                   |
-| Text muted           | `#999999`                                          | Footer links, copyright                      |
-| White                | `#ffffff`                                          | Card backgrounds, button text                |
-| Light section bg     | `#f4f8ff`                                          | Video/CTA section backgrounds                |
-| Dark bg              | `#222222`                                          | Footer background                            |
-| Footer border        | `#333333`                                          | Copyright bar top border                     |
-| Font — headings      | `"Playfair Display", serif`                        | h1, h2 in hero/sections                      |
-| Font — body          | `"Raleway", sans-serif`                            | Paragraphs, buttons, nav                     |
-| Button radius        | `5px`                                              | `.primary-btn`                               |
-| Button padding       | `0px 38px`                                         | Horizontal; 50px line-height                 |
-| Button font          | 13px, weight 600, `#222` on white                  | CTA buttons                                  |
-| Banner overlay       | `rgba(0,0,0,0.2)` over background image            | `.home_banner_area.overlay`                  |
-| Border radius (misc) | `3px`, `10px`, `45px`, `50px`                      | Various cards and decorative elements        |
+| Token            | Value                     | Notes                                   |
+| ---------------- | ------------------------- | --------------------------------------- |
+| Brand primary    | `#b99566`                 | Golden/amber; buttons, accents, icons   |
+| Brand dark       | `#a27c4a`                 | Darker gold for hover states            |
+| Brand light      | `#f1eae0`                 | Warm cream for service icon backgrounds |
+| Brand warm bg    | `#e9decf`                 | Warm beige section tint                 |
+| Text primary     | `#212529`                 | Headings, body text                     |
+| Text secondary   | `#666666`                 | Paragraphs                              |
+| Text muted       | `#999999`                 | Footer links, copyright                 |
+| White            | `#ffffff`                 | Card backgrounds, button text           |
+| Light section bg | `#f7f7f7`                 | Alternate section backgrounds           |
+| Dark bg          | `#16181b`                 | Navbar and footer background            |
+| Darker bg        | `#1a1a1a`                 | Footer widget background                |
+| Hero overlay     | `rgba(0,0,0,0.5)`         | Semi-transparent black over hero images |
+| Font — headings  | `"Work Sans", sans-serif` | h1, h2 in hero/sections                 |
+| Font — body      | `"Work Sans", sans-serif` | Paragraphs, buttons, nav (same family)  |
+| Button radius    | `0.25rem`                 | Bootstrap default rounded               |
+| Button padding   | `0.5rem 1rem`             | Standard Bootstrap padding              |
 
 ## Requirements
 
 ### Requirement: Navbar
 
-The system SHALL render a responsive navbar with logo, navigation links,
-and a search icon.
+The system SHALL render a responsive dark navbar with logo text and
+navigation links.
 
 #### Scenario: Desktop navbar
 
 - **GIVEN** the Statute app is rendered on a desktop viewport (≥992px)
 - **THEN** a `<nav>` SHALL render with the logo text "Statute" on the left
-- **AND** navigation links (Home, About, Services, Pages, Blog, Contact)
-  SHALL appear in a horizontal row
-- **AND** a search icon button SHALL be on the right
+- **AND** navigation links (Home, About, Practice Areas, Attorneys, Pricing,
+  Case Studies, Contact) SHALL appear in a horizontal row aligned right
+- **AND** the navbar SHALL have a dark background (`#16181b`) with white text
 
 #### Scenario: Mobile navbar
 
@@ -61,129 +61,124 @@ and a search icon.
 - **AND** clicking the toggle SHALL expand/collapse the navigation links
   vertically
 
-### Requirement: Hero banner
+### Requirement: Hero section
 
-The system SHALL render a full-width hero banner with a background image,
-dark overlay, centered headline, subtext, and a CTA button.
+The system SHALL render a hero section with a background image, dark overlay,
+centered headline, subtext, and a CTA button.
 
 #### Scenario: Hero content
 
-- **GIVEN** the hero banner is rendered
+- **GIVEN** the hero section is rendered
 - **THEN** the background SHALL be a full-cover background image
   (use `picsum.photos/seed/statute-hero/1920/1080`)
-- **AND** a dark overlay SHALL sit at 0.2 opacity
-- **AND** a centered headline "We Combine Business with Finance" SHALL
-  render in Playfair Display white text
+- **AND** a dark overlay SHALL sit at 0.5 opacity
+- **AND** a centered headline "Attorneys Fighting For Your Freedom" SHALL
+  render in white text
 - **AND** a subtext paragraph SHALL render below the headline
-- **AND** a "Get Free Quote" CTA button SHALL render using the
-  `.primary-btn` style (white bg, 5px radius, gradient on hover)
+- **AND** a "Make an Appointment" CTA button SHALL render with golden
+  background (`#b99566`)
 
 #### Scenario: Hero vertical centering
 
-- **GIVEN** the hero banner is rendered
+- **GIVEN** the hero section is rendered
 - **THEN** the content SHALL be vertically and horizontally centered
-  within the banner area
+  within the hero area
 
-### Requirement: Feature counters
+### Requirement: Services & Quote section
 
-The system SHALL render a 4-column stats row with icons and animated
-counters (Qualified Lawyer, Solved Cases, etc.).
+The system SHALL render a 2-column section with a "Request A Quote" form
+on the left and 4 service cards on the right.
+
+#### Scenario: Quote form
+
+- **GIVEN** the services section is rendered
+- **THEN** a "Request A Quote" form SHALL render with two email inputs
+  and a message textarea, plus a "Send Message" submit button
+- **AND** the form SHALL have a light background
+
+#### Scenario: Service cards
+
+- **GIVEN** the services section is rendered
+- **THEN** four service cards SHALL render in a 2×2 grid
+- **AND** each card SHALL have a circular icon area with golden accent
+  background (`#f1eae0`), a title, and a short description
+- **AND** the services SHALL be: Family Law, Business Law, Insurance Law,
+  Criminal Law (or similar law practice areas)
+
+### Requirement: About section (image left, text right)
+
+The system SHALL render a 2-column about section with an image on the left
+and text content on the right.
+
+#### Scenario: About layout
+
+- **GIVEN** the about section is rendered
+- **THEN** the left column SHALL show an image
+  (`picsum.photos/seed/statute-about/800/600`)
+- **AND** the right column SHALL have a heading "Dedicated to Give You
+  the Best Legal Service", a descriptive paragraph, and a CTA link
+
+### Requirement: Counter stats
+
+The system SHALL render a 4-column stats row with parallax background
+and animated counters.
 
 #### Scenario: Counter display
 
-- **GIVEN** the feature counter section is rendered
+- **GIVEN** the counter section is rendered
 - **THEN** four stat items SHALL render in a responsive 4-column grid
-  (col-lg-3)
-- **AND** each item SHALL have an icon image, a counter number, and a label
-- **AND** the counter numbers SHALL be: 596+ (Qualified Lawyer),
-  20650+ (Solved Cases), plus two more items
+- **AND** each item SHALL have a counter number and a label
+- **AND** the counter numbers SHALL be: 1200+ (Cases Won), 450+ (Happy
+  Clients), 25+ (Years Experience), 35+ (Awards Won)
 
-#### Scenario: Counter hover
+#### Scenario: Counter styling
 
-- **GIVEN** a counter item is hovered
-- **THEN** the item SHALL receive a pink-to-coral gradient background
-  (`#f13d80` → `#f48464`)
+- **GIVEN** the counter section is rendered
+- **THEN** the background SHALL be a parallax image
+  (`picsum.photos/seed/statute-counter/1920/800`)
+- **AND** the text SHALL be white
 
-### Requirement: Video/about section
+### Requirement: About section 2 (text left, image right)
 
-The system SHALL render a 2-column section with a video embed on the left
-and text content with author info on the right.
+The system SHALL render a second about section with text on the left
+and an image on the right (reversed layout).
 
-#### Scenario: Video section layout
+#### Scenario: About 2 layout
 
-- **GIVEN** the video/about section is rendered
-- **THEN** the left column SHALL show a video background image
-  (`picsum.photos/seed/statute-video/800/500`) with a centered play button
-- **AND** the right column SHALL have a "Get to Know Project Estimate?"
-  heading, descriptive paragraph, and a "Learn More" CTA button
-- **AND** below the CTA, an author info block with avatar and
-  description SHALL render
+- **GIVEN** the second about section is rendered
+- **THEN** the left column SHALL have a heading, descriptive paragraph,
+  and a CTA link
+- **AND** the right column SHALL show an image
+  (`picsum.photos/seed/statute-about2/800/600`)
 
-#### Scenario: Video section background
+### Requirement: Testimonial section
 
-- **GIVEN** the video section is rendered on a light background
-- **THEN** the section background SHALL be `#f4f8ff`
+The system SHALL render a testimonial section with a centered heading
+and testimonial cards.
 
-### Requirement: About grid
+#### Scenario: Testimonial display
 
-The system SHALL render a 2×2 grid of "Road to Success" summary cards.
+- **GIVEN** the testimonial section is rendered
+- **THEN** a centered heading "Testimony" SHALL render
+- **AND** at least two testimonial cards SHALL render with a quote,
+  author name, and role
 
-#### Scenario: About grid items
+### Requirement: Steps/CTA section
 
-- **GIVEN** the about grid section is rendered
-- **THEN** four cards SHALL render in a 2×2 responsive grid
-- **AND** each card SHALL have a title "Road to Success" and a
-  descriptive paragraph
+The system SHALL render a golden/amber CTA section with 3 numbered steps.
 
-#### Scenario: About grid hover
+#### Scenario: Steps layout
 
-- **GIVEN** an about card is hovered
-- **THEN** the card SHALL receive a pink-to-coral gradient background
-
-### Requirement: Services section
-
-The system SHALL render a centered title block with "Services Offered By Us"
-followed by a 3-column grid of service image cards.
-
-#### Scenario: Services layout
-
-- **GIVEN** the services section is rendered
-- **THEN** a centered heading "Services Offered By Us" SHALL render
-- **AND** below it, three service cards SHALL render in a responsive grid
-- **AND** each card SHALL have an image, a linked title, and a
-  descriptive paragraph
-
-### Requirement: CTA / services-2 section
-
-The system SHALL render a 2-column call-to-action with text on the left
-and a decorative image on the right, on a light blue background.
-
-#### Scenario: CTA section layout
-
-- **GIVEN** the CTA/services-2 section is rendered
-- **THEN** the background SHALL be `#f4f8ff`
-- **AND** the left side SHALL have a subtitle, heading "Get to Know
-  Project Estimate?", description paragraph, and author info block
-- **AND** the right side SHALL show a large image
-  (`picsum.photos/seed/statute-cta/600/600`)
-
-### Requirement: Team section
-
-The system SHALL render a centered title "Meet Our Experienced Team"
-with 3 team member cards.
-
-#### Scenario: Team cards
-
-- **GIVEN** the team section is rendered
-- **THEN** three team member cards SHALL render in a responsive grid
-- **AND** each card SHALL have a portrait image
-  (`picsum.photos/seed/statute-team-N/400/400`), a name, and a
-  profession subtitle
+- **GIVEN** the steps section is rendered
+- **THEN** the background SHALL be the brand golden color (`#b99566`)
+- **AND** three step items SHALL render: "Consultation", "Choose Service",
+  "Get Results" (or similar)
+- **AND** each step SHALL have a number icon and a label
 
 ### Requirement: Blog section
 
-The system SHALL render a centered title "Latest From Our Blog Posts"
-with 3 blog post cards.
+The system SHALL render a blog section with a centered heading
+and 3 blog post cards.
 
 #### Scenario: Blog cards
 
@@ -194,28 +189,23 @@ with 3 blog post cards.
 
 ### Requirement: Footer
 
-The system SHALL render a dark footer with 4 columns: About, Navigation
-links, Newsletter signup, and Contact info, followed by a copyright bar.
+The system SHALL render a dark footer with 4 columns: Brand info,
+Useful Links, Quick Links, and Contact info, followed by a copyright bar.
 
 #### Scenario: Footer columns
 
 - **GIVEN** the footer is rendered
-- **THEN** the background SHALL be `#222222` with white text
-- **AND** four columns SHALL render: About (text), Navigation Links
-  (Home, Features, Services, Portfolio, Team, Pricing, Blog, Contact),
-  Newsletter (email input + subscribe button), and Contact (address,
-  phone, email, website)
-
-#### Scenario: Newsletter form
-
-- **GIVEN** the newsletter form is rendered in the footer
-- **THEN** an email input SHALL render with a gradient subscribe button
-  (pink-to-coral gradient, 50px border-radius)
+- **THEN** the background SHALL be `#16181b` with white text
+- **AND** four columns SHALL render: Brand (logo text + description +
+  social icons), Useful Links (Family Law, Drug Law, Insurance Law,
+  Criminal Law, Business Law), Quick Links (About Us, Practice Areas,
+  Appointment, Terms & Conditions, FAQ), and Contact (address, phone,
+  email)
 
 #### Scenario: Copyright bar
 
 - **GIVEN** the copyright bar is rendered
-- **THEN** it SHALL have a dark `#222` background with `#333` top border
+- **THEN** it SHALL have a dark background with a subtle top border
 - **AND** the copyright text SHALL contain a link to Component Dock
   (`https://www.componentdock.com/`)
 
@@ -254,25 +244,3 @@ viewports.
 - **GIVEN** the viewport is between 576px and 991px
 - **THEN** multi-column grids SHALL use 2-column layout where applicable
 - **AND** the navbar SHALL show the hamburger toggle
-
-## Verification checklist
-
-- [ ] Navbar renders with logo, links, search icon on desktop
-- [ ] Navbar collapses to hamburger on mobile
-- [ ] Hero banner: full-width, background image, overlay, centered content
-- [ ] Hero CTA button uses gradient on hover
-- [ ] Counter section: 4 items with icons and numbers
-- [ ] Counter items highlight on hover with gradient
-- [ ] Video/about: 2-column layout, video left, text right
-- [ ] About grid: 2×2 cards with hover gradient
-- [ ] Services: centered title + 3-column card grid
-- [ ] CTA section: light bg, 2-column, text + image
-- [ ] Team: 3 member cards with photos
-- [ ] Blog: 3 post cards with thumbnails
-- [ ] Footer: dark bg, 4 columns, newsletter form
-- [ ] Copyright bar with Component Dock link
-- [ ] No ColorLib references in any app file
-- [ ] Fully responsive (mobile/tablet/desktop)
-- [ ] All placeholder images use picsum.photos
-- [ ] Fonts loaded via Google Fonts (Playfair Display + Raleway)
-- [ ] All interactive elements have proper a11y attributes
