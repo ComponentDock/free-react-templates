@@ -1140,7 +1140,7 @@
 - [x] **Podca** — [colorlib](https://colorlib.com/wp/template/podca/) · [podwave](https://podwave.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/podca-free-template.jpg)
 - [x] **Pointer** — [colorlib](https://colorlib.com/wp/template/pointer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pointer-free-template.jpg) · [compass](https://compass.free.componentdock.com)
 - [x] **Portech** — [colorlib](https://colorlib.com/wp/template/portech/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/portech-colorlib-template.jpg) · [techwise](https://free-react-templates-techwise.surge.sh)
-- [ ] **Pressure Washing** — [colorlib](https://colorlib.com/wp/template/pressure-washing/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pressurewashing-free-template.jpg)
+- [~] **Pressure Washing** — [colorlib](https://colorlib.com/wp/template/pressure-washing/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pressurewashing-free-template.jpg)
 - [x] **Pretty** — [colorlib](https://colorlib.com/wp/template/pretty/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pretty-free-template.jpg) · [bloom](https://bloom.free.componentdock.com)
 - [x] **Primelaw** — [colorlib](https://colorlib.com/wp/template/primelaw/) · [statute](https://free-react-templates-statute.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/primelaw-free-template.jpg)
 - [ ] **Publishing Company** — [colorlib](https://colorlib.com/wp/template/publishing-company/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/publishingcompany-free-template.jpg)
