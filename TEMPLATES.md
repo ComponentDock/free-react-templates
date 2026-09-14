@@ -1170,7 +1170,7 @@
 - [x] **Snapshot** — [colorlib](https://colorlib.com/wp/template/snapshot/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/snapshot-free-template.jpg) · [focus](https://focus.free.componentdock.com)
 - [x] **Sneaky** — [colorlib](https://colorlib.com/wp/template/sneaky/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sneaky-free-template.jpg) · [crave](https://crave.free.componentdock.com)
 - [x] **Snipp** — [colorlib](https://colorlib.com/wp/template/snipp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/snipp-free-template.jpg) · [mosaic](https://mosaic.free.componentdock.com)
-- [ ] **Solarshift** — [colorlib](https://colorlib.com/wp/template/solarshift/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solarshift-template.jpg)
+- [~] **Solarshift** — [colorlib](https://colorlib.com/wp/template/solarshift/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solarshift-template.jpg)
 - [x] **Sona** — [colorlib](https://colorlib.com/wp/template/sona/) · [haven](https://haven.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sona-free-template.jpg)
 - [x] **Sonar** — [colorlib](https://colorlib.com/wp/template/sonar/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/free-photography-site-templates.jpg) · [exposely](https://exposely.free.componentdock.com)
 - [x] **Spacewood** — [colorlib](https://colorlib.com/wp/template/spacewood/) · [grain](https://grain.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/spacewood-free-template.jpg)
