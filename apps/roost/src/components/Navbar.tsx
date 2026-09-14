@@ -1,112 +1,98 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
-import { cn } from '@free-react-templates/ui'
-import { NAV_LINKS } from '../data'
 
-/* Navbar (source: header.site-navbar — absolute transparent bar over the
-   hero; .sticky-wrapper.is-sticky turns it solid white with a green logo
-   on scroll). Desktop: white uppercase wordmark left, six white links
-   right (active/hover → brand green). Mobile: hamburger opens a 300px
-   right off-canvas panel with the same links + close control. */
+const navLinks = [
+  { label: 'Home', href: '#home' },
+  { label: 'Services', href: '#services' },
+  { label: 'Listing', href: '#listing' },
+  { label: 'About', href: '#about' },
+  { label: 'How it works', href: '#how-it-works' },
+  { label: 'Agent', href: '#agents' },
+  { label: 'Blog', href: '#blog' },
+  { label: 'Contact', href: '#contact' },
+]
+
 export function Navbar() {
   const [open, setOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 10)
-    window.addEventListener('scroll', onScroll)
-    onScroll()
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
 
   return (
-    <>
-      <header
-        data-variant={scrolled ? 'solid' : 'transparent'}
-        className={cn(
-          'fixed inset-x-0 top-0 z-50 transition-colors duration-300',
-          scrolled ? 'bg-white shadow-[0_10px_30px_0_rgba(0,0,0,0.08)]' : 'bg-transparent',
-        )}
-      >
-        <div className="mx-auto flex max-w-[1140px] items-center justify-between px-[15px] py-4">
+    <nav className="fixed top-0 z-50 w-full bg-white shadow-sm">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+        <a href="#home" className="text-xl font-bold text-primary-600">
+          Roost
+        </a>
+
+        {/* Desktop nav */}
+        <ul className="hidden items-center gap-6 md:flex">
+          {navLinks.map(({ label, href }) => (
+            <li key={label}>
+              <a
+                href={href}
+                className="text-sm font-medium text-gray-600 transition-colors hover:text-primary-600"
+              >
+                {label}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <div className="hidden items-center gap-3 md:flex">
           <a
-            href="#home"
-            className={cn(
-              'text-[1.7rem] font-bold uppercase tracking-wide transition-colors',
-              scrolled ? 'text-brand' : 'text-white',
-            )}
+            href="#signup"
+            className="rounded-full bg-primary-600 px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-primary-700"
           >
-            Roost
+            Sign Up
           </a>
-
-          <nav aria-label="Main navigation" className="hidden lg:block">
-            <ul className="flex">
-              {NAV_LINKS.map((link, index) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    aria-current={index === 0 ? 'page' : undefined}
-                    className={cn(
-                      'inline-block px-[15px] py-5 text-[16px] transition-colors hover:text-brand',
-                      index === 0 && 'text-brand',
-                      !scrolled && index !== 0 && 'text-white',
-                      scrolled && index !== 0 && 'text-ink',
-                    )}
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          <button
-            type="button"
-            aria-label="Open menu"
-            aria-expanded={open}
-            onClick={() => setOpen(true)}
-            className={cn('lg:hidden', scrolled ? 'text-ink' : 'text-white')}
+          <a
+            href="#signin"
+            className="rounded-full border border-primary-600 px-5 py-2 text-sm font-medium text-primary-600 transition-colors hover:bg-primary-50"
           >
-            <Menu className="h-7 w-7" aria-hidden="true" />
-          </button>
+            Sign In
+          </a>
         </div>
-      </header>
 
-      {open && (
-        <nav
-          aria-label="Mobile navigation"
-          className="fixed inset-y-0 right-0 z-[1999] w-[300px] overflow-y-auto bg-white shadow-[-10px_0_20px_-10px_rgba(0,0,0,0.5)]"
+        {/* Mobile menu toggle */}
+        <button
+          className="md:hidden"
+          onClick={() => setOpen(!open)}
+          aria-label={open ? 'Close menu' : 'Open menu'}
         >
-          <div className="flex items-center justify-between px-6 py-5">
-            <span className="text-[1.4rem] font-bold uppercase text-ink">Roost</span>
-            <button
-              type="button"
-              aria-label="Close menu"
-              onClick={() => setOpen(false)}
-              className="text-ink transition-colors hover:text-brand"
-            >
-              <X className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          <ul className="px-6 pb-8">
-            {NAV_LINKS.map((link, index) => (
-              <li key={link.label}>
+          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </button>
+      </div>
+
+      {/* Mobile nav */}
+      {open && (
+        <div className="border-t border-gray-100 bg-white px-4 pb-4 md:hidden">
+          <ul className="flex flex-col gap-3 py-3">
+            {navLinks.map(({ label, href }) => (
+              <li key={label}>
                 <a
-                  href={link.href}
-                  aria-current={index === 0 ? 'page' : undefined}
+                  href={href}
+                  className="block text-sm font-medium text-gray-600 hover:text-primary-600"
                   onClick={() => setOpen(false)}
-                  className={cn(
-                    'block border-b border-soft py-3 text-[16px] uppercase text-ink transition-colors hover:text-brand',
-                    index === 0 && 'text-brand',
-                  )}
                 >
-                  {link.label}
+                  {label}
                 </a>
               </li>
             ))}
           </ul>
-        </nav>
+          <div className="flex gap-3">
+            <a
+              href="#signup"
+              className="rounded-full bg-primary-600 px-5 py-2 text-sm font-medium text-white"
+            >
+              Sign Up
+            </a>
+            <a
+              href="#signin"
+              className="rounded-full border border-primary-600 px-5 py-2 text-sm font-medium text-primary-600"
+            >
+              Sign In
+            </a>
+          </div>
+        </div>
       )}
-    </>
+    </nav>
   )
 }

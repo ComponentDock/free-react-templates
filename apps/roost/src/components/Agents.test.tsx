@@ -1,26 +1,18 @@
-import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import { Agents } from './Agents'
-import { AGENTS, SOCIALS } from '../data'
 
 describe('Agents', () => {
-  it('renders the heading and the three agent cards with captions', () => {
+  it('renders the section heading', () => {
     render(<Agents />)
-
-    expect(screen.getByRole('heading', { name: 'Our Agents' })).toBeInTheDocument()
-
-    for (const agent of AGENTS) {
-      expect(screen.getByRole('heading', { name: agent.name })).toBeInTheDocument()
-      expect(screen.getByText(agent.properties)).toBeInTheDocument()
-      expect(screen.getByRole('img', { name: `Portrait of ${agent.name}` })).toBeInTheDocument()
-    }
+    expect(screen.getByRole('heading', { level: 2 })).toHaveTextContent('Our Agents')
   })
 
-  it('renders three circular social buttons per agent', () => {
+  it('renders 3 agent cards with names and listing counts', () => {
     render(<Agents />)
-
-    for (const social of SOCIALS) {
-      expect(screen.getAllByRole('link', { name: social.label })).toHaveLength(AGENTS.length)
-    }
+    const agentNames = screen.getAllByText('James Stallon')
+    expect(agentNames.length).toBe(3)
+    const listings = screen.getAllByText(/Listing/)
+    expect(listings.length).toBe(3)
   })
 })

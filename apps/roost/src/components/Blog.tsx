@@ -1,41 +1,50 @@
-import { BLOG_POSTS } from '../data'
+const posts = [
+  {
+    image: 'https://picsum.photos/seed/roost-blog1/400/300',
+    title: 'Why Lead Generation is Key for Business Growth',
+    excerpt:
+      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.',
+  },
+  {
+    image: 'https://picsum.photos/seed/roost-blog2/400/300',
+    title: 'Why Lead Generation is Key for Business Growth',
+    excerpt:
+      'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
+  },
+  {
+    image: 'https://picsum.photos/seed/roost-blog3/400/300',
+    title: 'Why Lead Generation is Key for Business Growth',
+    excerpt:
+      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.',
+  },
+]
 
-/* Blog posts (source: div.site-section.bg-light — #f6f5f5 section with
-   three post cards: thumbnail, white content box with an uppercase 13px
-   meta line, 22px title link (hover → green), and an excerpt). */
 export function Blog() {
   return (
-    <section id="blog" className="bg-soft py-16 md:py-20">
-      <div className="mx-auto max-w-[1140px] px-[15px]">
-        <div className="mb-10 text-center">
-          <div className="mx-auto mb-4 h-[2px] w-[70px] bg-brand" aria-hidden="true" />
-          <h2 className="text-[22px] font-semibold uppercase text-ink">Blog Posts</h2>
-          <p className="mx-auto mt-3 max-w-md text-[15px] text-gray-600">
-            News, guides, and market updates from the Roost team.
-          </p>
+    <section id="blog" className="bg-light-100 py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="mb-12 text-center">
+          <h2 className="mb-3 text-3xl font-bold text-gray-900">Our Blog</h2>
+          <p className="text-gray-500">Latest news and articles</p>
         </div>
-
-        <div className="grid gap-8 md:grid-cols-3">
-          {BLOG_POSTS.map((post) => (
-            <article key={post.seed} className="bg-white">
-              <a href="#blog">
-                <img
-                  src={`https://picsum.photos/seed/${post.seed}/600/400`}
-                  alt=""
-                  loading="lazy"
-                  className="h-52 w-full object-cover"
-                />
-              </a>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {posts.map((post, i) => (
+            <div
+              key={`${post.title}-${i}`}
+              className="overflow-hidden rounded-lg bg-white shadow-sm transition-shadow hover:shadow-md"
+            >
+              <img src={post.image} alt={post.title} className="h-48 w-full object-cover" />
               <div className="p-5">
-                <p className="text-[13px] uppercase tracking-[0.1em] text-meta">{post.meta}</p>
-                <h3 className="mt-3 text-[22px] leading-snug">
-                  <a href="#blog" className="text-ink transition-colors hover:text-brand">
-                    {post.title}
-                  </a>
-                </h3>
-                <p className="mt-3 text-[15px] leading-relaxed text-gray-600">{post.excerpt}</p>
+                <h3 className="mb-2 font-semibold text-gray-900">{post.title}</h3>
+                <p className="mb-4 text-sm text-gray-500">{post.excerpt}</p>
+                <a
+                  href="#blog"
+                  className="text-sm font-medium text-primary-600 hover:text-primary-700"
+                >
+                  Read More
+                </a>
               </div>
-            </article>
+            </div>
           ))}
         </div>
       </div>
