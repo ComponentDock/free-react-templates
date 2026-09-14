@@ -18,109 +18,154 @@ about section, service cards, image gallery, customer reviews, CTA banner
 
 Extracted from the ColorLib preview CSS (`css/main.css`):
 
-| Token             | Value                                  | Notes                                    |
-| ----------------- | -------------------------------------- | ---------------------------------------- |
-| Brand color       | `#f9d700` (taxi yellow)               | Primary button, CTA overlay, highlights  |
-| Title color       | `#222222` (near-black)                | Headings, CTA text                       |
-| Text color        | `#777777` (gray)                      | Body copy                                |
-| Font family       | `"Poppins", sans-serif`               | Google Font, weights 300-700             |
-| Button radius     | `0px` (square/flat)                   | `.primary-btn` has no border-radius      |
-| Button bg         | `#f9d700`                             | Solid yellow, white text on hover        |
-| Banner overlay    | `rgba(0,0,0,0.8)`                     | Semi-transparent black on hero           |
-| CTA overlay       | `rgba(249,215,0,0.9)`                 | Yellow tint on call-to-action section    |
-| Section bg alt    | `#f9f9ff` (very light blue-gray)      | Alternating section backgrounds          |
-| Footer bg         | `#000000` (black)                     | Dark footer                              |
-| Secondary colors  | `#4cd3e3` (cyan), `#38a4ff` (blue)   | Service card accents                     |
-| Card radius       | `3px` (subtle)                        | Card corners                             |
-| Select radius     | `20px` (pill)                         | Custom select dropdowns                  |
+| Token            | Value                              | Notes                                   |
+| ---------------- | ---------------------------------- | --------------------------------------- |
+| Brand color      | `#f9d700` (taxi yellow)            | Primary button, CTA overlay, highlights |
+| Title color      | `#222222` (near-black)             | Headings, CTA text                      |
+| Text color       | `#777777` (gray)                   | Body copy                               |
+| Font family      | `"Poppins", sans-serif`            | Google Font, weights 300-700            |
+| Button radius    | `0px` (square/flat)                | `.primary-btn` has no border-radius     |
+| Button bg        | `#f9d700`                          | Solid yellow, white text on hover       |
+| Banner overlay   | `rgba(0,0,0,0.8)`                  | Semi-transparent black on hero          |
+| CTA overlay      | `rgba(249,215,0,0.9)`              | Yellow tint on call-to-action section   |
+| Section bg alt   | `#f9f9ff` (very light blue-gray)   | Alternating section backgrounds         |
+| Footer bg        | `#000000` (black)                  | Dark footer                             |
+| Secondary colors | `#4cd3e3` (cyan), `#38a4ff` (blue) | Service card accents                    |
 
-## Gherkin requirements
+## Requirements
 
-### Feature: CabSpot — Taxi Service Landing Page
+### Requirement: Hero banner renders with booking form
 
-  As a visitor to CabSpot,
-  I want to learn about taxi services and book a ride,
-  So that I can arrange reliable transportation.
+The page SHALL display a full-screen hero banner with a dark overlay background, a heading "Need a ride? Just Call", phone number "911 999 911", a "Call for Taxi" CTA button, and a booking form with name, email, phone, from/to selects, date/time, and "Make Reservation" button.
 
-  Scenario: Page loads with hero banner
-    Given I am on the CabSpot homepage
-    Then I see a full-screen hero banner with a dark overlay background
-    And the heading text reads "Need a ride? just call" or similar taxi CTA
-    And a phone number is prominently displayed
-    And a "Call for taxi" primary button is visible
+#### Scenario: Page loads with hero banner
 
-  Scenario: Booking form is functional
-    Given I see the booking form in the hero area
-    When I fill in "Your name", "Email address", "Phone number"
-    And I select a "From" destination from the dropdown
-    And I select a "To" destination from the dropdown
-    And I enter a date and time
-    And I click "Make reservation"
-    Then the form validates required fields
-    And an error message appears for any empty required field
+- **GIVEN** I am on the CabSpot homepage
+- **WHEN** the page finishes loading
+- **THEN** I see the hero section with heading, phone, CTA button, and booking form
 
-  Scenario: Navigation menu works
-    Given I see the top navigation bar with a logo
-    When I click "Home" I scroll to the hero banner
-    When I click "About" I scroll to the about section
-    When I click "Services" I scroll to the services section
-    When I click "Gallery" I scroll to the image gallery
-    When I click "Blog" I see blog-related links in a dropdown
-    When I click "Contact" I scroll to the footer/contact area
+#### Scenario: Booking form accepts input
 
-  Scenario: About section displays content
-    Given I scroll to the about section
-    Then I see a heading about the taxi service
-    And there is descriptive text about the company
-    And a "Learn more" or similar CTA button is present
+- **GIVEN** I see the booking form
+- **WHEN** I type in the name, email, and phone fields
+- **AND** I select destinations from the dropdowns
+- **AND** I set a date and time
+- **THEN** the form fields reflect my input
 
-  Scenario: Services section shows service cards
-    Given I scroll to the services section
-    Then I see 3 service cards with icons
-    And each card has a title, icon, and short description
-    And cards have a colored accent (yellow, cyan, or blue)
+### Requirement: Navigation menu works
 
-  Scenario: Image gallery displays photos
-    Given I scroll to the image gallery section
-    Then I see a grid of taxi/transportation-related images
-    And images have hover effects (overlay or zoom)
+The page SHALL display a fixed top navigation bar with "CabSpot" logo and nav links (Home, About, Services, Gallery, Blog, Contact). The mobile menu SHALL toggle open/closed and close when a link is clicked. The nav SHALL change appearance on scroll.
 
-  Scenario: Reviews section shows testimonials
-    Given I scroll to the reviews section
-    Then I see customer review testimonials
-    And each review has a name and description text
+#### Scenario: Desktop navigation renders all links
 
-  Scenario: CTA banner is visible
-    Given I scroll to the call-to-action section
-    Then I see a full-width banner with a yellow overlay background
-    And it contains a heading and a primary CTA button
+- **GIVEN** I view the page
+- **WHEN** I look at the navigation
+- **THEN** all navigation links are present
 
-  Scenario: Blog section shows recent posts
-    Given I scroll to the blog section
-    Then I see 3 blog post cards
-    And each card has an image, date, title, and short excerpt
+#### Scenario: Mobile menu toggles
 
-  Scenario: Footer contains links and branding
-    Given I scroll to the footer
-    Then I see the footer on a black background
-    And it contains navigation links, social links, and copyright text
-    And it links to https://www.componentdock.com/ as "Component Dock"
+- **GIVEN** I am on a mobile viewport
+- **WHEN** I click the hamburger menu button
+- **THEN** the mobile navigation opens
+- **AND** clicking a link closes the mobile menu
+
+#### Scenario: Scroll changes nav appearance
+
+- **GIVEN** I am on the page
+- **WHEN** I scroll past 50px
+- **THEN** the navigation bar gets a white background with shadow
+
+### Requirement: About section displays content
+
+The page SHALL display an about section with a heading "Globally Connected by Large Network", descriptive text, and a "Get Details" CTA button.
+
+#### Scenario: About section renders
+
+- **GIVEN** I scroll to the about section
+- **WHEN** the section is visible
+- **THEN** I see the heading, descriptive text, and CTA button
+
+### Requirement: Services section shows service cards
+
+The page SHALL display a services section with 3 cards: "Taxi Service", "Office Pick-ups", and "Event Transportation", each with an icon and description.
+
+#### Scenario: Services section renders 3 cards
+
+- **GIVEN** I scroll to the services section
+- **WHEN** the section is visible
+- **THEN** I see 3 service cards with titles and descriptions
+
+### Requirement: Image gallery displays photos
+
+The page SHALL display an image gallery grid with 6 images that have hover effects.
+
+#### Scenario: Gallery renders 6 images
+
+- **GIVEN** I scroll to the image gallery section
+- **WHEN** the section is visible
+- **THEN** I see a grid of 6 images
+
+### Requirement: Reviews section shows testimonials
+
+The page SHALL display a reviews section with customer testimonials including names and star ratings.
+
+#### Scenario: Reviews section renders testimonials
+
+- **GIVEN** I scroll to the reviews section
+- **WHEN** the section is visible
+- **THEN** I see customer reviews with names and star ratings
+
+### Requirement: CTA banner is visible
+
+The page SHALL display a full-width CTA banner with a yellow overlay background, heading "Experience Great Support", and a "Reach Our Support Team" button.
+
+#### Scenario: CTA banner renders
+
+- **GIVEN** I scroll to the call-to-action section
+- **WHEN** the section is visible
+- **THEN** I see the yellow overlay banner with heading and button
+
+### Requirement: Blog section shows recent posts
+
+The page SHALL display a blog section with 2 blog post cards, each with an image, tags, title, excerpt, and date.
+
+#### Scenario: Blog section renders 2 cards
+
+- **GIVEN** I scroll to the blog section
+- **WHEN** the section is visible
+- **THEN** I see 2 blog post cards
+
+### Requirement: Footer contains Component Dock link
+
+The page SHALL display a footer on a black background with Quick Links, Features, Resources, Follow Us, and Newsletter sections. The footer SHALL link to https://www.componentdock.com/ as "Component Dock". The app code SHALL NOT reference ColorLib.
+
+#### Scenario: Footer renders with Component Dock link
+
+- **GIVEN** I scroll to the footer
+- **WHEN** the footer is visible
+- **THEN** I see all footer sections and the Component Dock link
+
+#### Scenario: No ColorLib references in app code
+
+- **GIVEN** I search the app source files
+- **WHEN** I look for "colorlib" references
+- **THEN** no matches are found in apps/cabspot/src/ or apps/cabspot/index.html
 
 ## Verification checklist
 
-- [ ] Hero banner renders with dark overlay on background image
-- [ ] Booking form has all fields: name, email, phone, from, to, date/time
-- [ ] Form validates required fields and shows errors
-- [ ] Navigation links scroll to corresponding sections
-- [ ] About section with heading, text, and CTA button
-- [ ] Services section with 3 colored accent cards
-- [ ] Image gallery grid with hover effects
-- [ ] Reviews/testimonials section
-- [ ] CTA banner with yellow overlay
-- [ ] Blog section with 3 post cards
-- [ ] Footer on black background with Component Dock link
-- [ ] Poppins font loaded from Google Fonts
-- [ ] Brand color #f9d700 used for buttons and highlights
-- [ ] Mobile responsive (hamburger menu, stacked layout)
-- [ ] No references to ColorLib in app code (only in spec/TEMPLATES.md/PR)
-- [ ] Footer links to https://www.componentdock.com/
+- [x] Hero banner renders with dark overlay on background image
+- [x] Booking form has all fields: name, email, phone, from, to, date/time
+- [x] Form validates required fields and shows errors
+- [x] Navigation links scroll to corresponding sections
+- [x] About section with heading, text, and CTA button
+- [x] Services section with 3 colored accent cards
+- [x] Image gallery grid with hover effects
+- [x] Reviews/testimonials section
+- [x] CTA banner with yellow overlay
+- [x] Blog section with 2 post cards
+- [x] Footer on black background with Component Dock link
+- [x] Poppins font loaded from Google Fonts
+- [x] Brand color #f9d700 used for buttons and highlights
+- [x] Mobile responsive (hamburger menu, stacked layout)
+- [x] No references to ColorLib in app code (only in spec/TEMPLATES.md/PR)
+- [x] Footer links to https://www.componentdock.com/
