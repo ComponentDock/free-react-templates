@@ -1187,7 +1187,7 @@
 - [x] **Stayhome** — [colorlib](https://colorlib.com/wp/template/stayhome/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stayhome-free-template.jpg) · [roost](https://roost.free.componentdock.com)
 - [x] **Stellar** — [colorlib](https://colorlib.com/wp/template/stellar/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stellar-free-template.jpg) · [astra](https://free-react-templates-astra.surge.sh)
 - [x] **Stodeo** — [colorlib](https://colorlib.com/wp/template/stodeo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stodeo-free-template.jpg) · [orbiter](https://orbiter.free.componentdock.com)
-- [~] **Store** — [colorlib](https://colorlib.com/wp/template/store/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/store-free-template.jpg)
+- [x] **Store** — [colorlib](https://colorlib.com/wp/template/store/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/store-free-template.jpg) · [bazaar](https://bazaar.free.componentdock.com)
 - [x] **Stylistic** — [colorlib](https://colorlib.com/wp/template/stylistic/) · [pose](https://pose.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stylistic-free-template.jpg)
 - [ ] **Suitcase** — [colorlib](https://colorlib.com/wp/template/suitcase/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/suitcase-free-template.jpg)
 - [x] **Summit** — [colorlib](https://colorlib.com/wp/template/summit/) · [summit](https://summit.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/summit-free-template.jpg)
