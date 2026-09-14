@@ -1143,7 +1143,7 @@
 - [x] **Pressure Washing** — [colorlib](https://colorlib.com/wp/template/pressure-washing/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pressurewashing-free-template.jpg) · [powerwash](https://powerwash.free.componentdock.com)
 - [x] **Pretty** — [colorlib](https://colorlib.com/wp/template/pretty/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pretty-free-template.jpg) · [bloom](https://bloom.free.componentdock.com)
 - [x] **Primelaw** — [colorlib](https://colorlib.com/wp/template/primelaw/) · [statute](https://free-react-templates-statute.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/primelaw-free-template.jpg)
-- [ ] **Publishing Company** — [colorlib](https://colorlib.com/wp/template/publishing-company/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/publishingcompany-free-template.jpg)
+- [~] **Publishing Company** — [colorlib](https://colorlib.com/wp/template/publishing-company/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/publishingcompany-free-template.jpg)
 - [x] **Racks** — [colorlib](https://colorlib.com/wp/template/racks/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/racks-free-template.jpg) · [verve](https://verve.free.componentdock.com)
 - [ ] **Rango** — [colorlib](https://colorlib.com/wp/template/rango/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rango-free-template.jpg)
 - [x] **Realtors** — [colorlib](https://colorlib.com/wp/template/realtors/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/realtors-free-template.jpg) · [roost](https://roost.free.componentdock.com)
