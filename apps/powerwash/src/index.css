@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* PowerWash brand palette — vivid blue (#207dff) with accent yellow (#ffd31d) */
+  --color-brand-50: #eef6ff;
+  --color-brand-100: #d9ebff;
+  --color-brand-200: #bcd8ff;
+  --color-brand-300: #8ebfff;
+  --color-brand-400: #599cff;
+  --color-brand-500: #207dff;
+  --color-brand-600: #0a5ef5;
+  --color-brand-700: #0a4ae1;
+  --color-brand-800: #0f3db6;
+  --color-brand-900: #13378f;
+
+  --color-accent-50: #fffce8;
+  --color-accent-100: #fff9c2;
+  --color-accent-200: #fff088;
+  --color-accent-300: #ffe04a;
+  --color-accent-400: #ffd31d;
+  --color-accent-500: #efc008;
+  --color-accent-600: #ce9804;
+  --color-accent-700: #a56d07;
+  --color-accent-800: #89550d;
+  --color-accent-900: #754511;
+
+  --color-dark-50: #f6f6f6;
+  --color-dark-100: #e7e7e7;
+  --color-dark-200: #d1d1d1;
+  --color-dark-300: #b0b0b0;
+  --color-dark-400: #888888;
+  --color-dark-500: #6d6d6d;
+  --color-dark-600: #5d5d5d;
+  --color-dark-700: #4f4f4f;
+  --color-dark-800: #3a3a3a;
+  --color-dark-900: #1a1a1a;
+
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
