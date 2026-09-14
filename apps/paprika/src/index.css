@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #b10400;
+  --color-brand-dark: #8b0300;
+  --font-heading: 'Cantata One', serif;
+  --font-cursive: 'Great Vibes', cursive;
+  --font-body: 'Open Sans', sans-serif;
+}
