@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Astra brand colors — from the ColorLib "Stellar" preview
+     (https://preview.colorlib.com/theme/stellar/ + css/main.css):
+     a branding agency theme with orange #F26522 primary,
+     teal #035D5C accent, dark bg #151515, light gray #F1F1F1. */
+
+  /* Brand orange (ColorLib .btn-animatedbg, links). */
+  --color-primary-50: #fff5ee;
+  --color-primary-100: #ffe6d5;
+  --color-primary-200: #ffc9a8;
+  --color-primary-300: #ffa470;
+  --color-primary-400: #f26522;
+  --color-primary-500: #e05a18;
+  --color-primary-600: #c4480f;
+  --color-primary-700: #9e3610;
+  --color-primary-800: #7e2d14;
+  --color-primary-900: #662814;
+
+  /* Teal accent (ColorLib .item-process__header--branding). */
+  --color-accent-400: #035d5c;
+  --color-accent-500: #024948;
+  --color-accent-600: #013837;
+
+  /* Dark sections (ColorLib s-services, s-clients, s-contact, s-stats). */
+  --color-dark: #151515;
+  --color-dark-lighter: #1d1d1d;
+
+  /* Light section bg (ColorLib s-works). */
+  --color-mist: #f1f1f1;
+
+  /* Text colors. */
+  --color-ink: #000000;
+  --color-smoke: rgba(0, 0, 0, 0.65);
+  --color-ash: rgba(0, 0, 0, 0.45);
+
+  /* Merriweather (headings) + Montserrat (body) via Google Fonts. */
+  --font-serif: 'Merriweather', Georgia, serif;
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
