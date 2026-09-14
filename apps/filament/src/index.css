@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Filament brand palette — feminine lavender-pink aesthetic
+     from ColorLib Simples: #fcd2ff accents, #f6d0c5→#fbd2f6 gradient. */
+  --color-brand: #fcd2ff;
+  --color-brand-dark: #e8a0e8;
+  --color-brand-warm: #f6d0c5;
+  --color-brand-light: #fbd2f6;
+
+  /* Body text: medium gray #777, headings: near-black #222. */
+  --color-ink: #222222;
+  --color-ink-light: #777777;
+
+  /* Section backgrounds. */
+  --color-paper: #f9f9ff;
+  --color-paper-dark: #000000;
+
+  /* Social icon background. */
+  --color-social-bg: #1e1e1e;
+
+  /* Primary scale — pink-lavender tones. */
+  --color-primary-50: #fef5ff;
+  --color-primary-100: #fde8ff;
+  --color-primary-200: #fcd2ff;
+  --color-primary-300: #f9a8ff;
+  --color-primary-400: #f47dff;
+  --color-primary-500: #e8a0e8;
+  --color-primary-600: #c76dc7;
+  --color-primary-700: #a84da8;
+  --color-primary-800: #8a3d8a;
+  --color-primary-900: #6e2e6e;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
