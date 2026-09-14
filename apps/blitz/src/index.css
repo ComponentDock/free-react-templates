@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — vibrant orange #ff6b09 + deep purple #301b54 from the original design.
+     Poppins headings, Roboto body. Purple/orange agency aesthetic. */
+  --color-brand: #301b54;
+  --color-brand-light: #452b78;
+  --color-brand-dark: #1b0b32;
+
+  /* Accent — bright orange CTAs (#ff6b09). */
+  --color-accent: #ff6b09;
+
+  /* Ink — dark text (#28262d). */
+  --color-ink: #28262d;
+
+  /* Paper — light section backgrounds (#f9f8fc). */
+  --color-paper: #f9f8fc;
+
+  /* Mist — muted text (#6e6e6e). */
+  --color-mist: #6e6e6e;
+
+  /* Light orange for highlights. */
+  --color-light: #ffd9bf;
+
+  /* Lavender accent (#9988ba). */
+  --color-lavender: #9988ba;
+
+  /* Border color. */
+  --color-divider: #e5e7eb;
+
+  /* Primary scale — deep purple. */
+  --color-primary-50: #f0eef5;
+  --color-primary-100: #d9d3e8;
+  --color-primary-200: #b3a7d1;
+  --color-primary-300: #8d7bba;
+  --color-primary-400: #6a52a3;
+  --color-primary-500: #301b54;
+  --color-primary-600: #271544;
+  --color-primary-700: #1b0b32;
+  --color-primary-800: #140926;
+  --color-primary-900: #0d051a;
+
+  /* Fonts: Poppins (headings) + Roboto (body). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
