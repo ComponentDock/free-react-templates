@@ -1195,7 +1195,7 @@
 - [x] **Tailor** — [colorlib](https://colorlib.com/wp/template/tailor/) · [stitchly](https://stitchly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tailor-free-template.jpg)
 - [x] **Tangre** — [colorlib](https://colorlib.com/wp/template/tangre/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tangre-free-template.jpg) · [wainscot](https://wainscot.free.componentdock.com)
 - [x] **Tattooz** — [colorlib](https://colorlib.com/wp/template/tattooz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tattooz-free-template.jpg) · [inkvibe](https://inkvibe.free.componentdock.com)
-- [~] **Taxi** — [colorlib](https://colorlib.com/wp/template/taxi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/taxi-free-template.jpg)
+- [x] **Taxi** — [colorlib](https://colorlib.com/wp/template/taxi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/taxi-free-template.jpg) · [cabspot](https://cabspot.free.componentdock.com)
 - [ ] **Taxx** — [colorlib](https://colorlib.com/wp/template/taxx/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/taxx-free-template.jpg)
 - [x] **The Barber** — [colorlib](https://colorlib.com/wp/template/the-barber/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thebarber-free-template.jpg) · [amber](https://amber.free.componentdock.com)
 - [ ] **Theestate** — [colorlib](https://colorlib.com/wp/template/theestate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theestate-free-template.jpg)
@@ -2968,7 +2968,7 @@
 - [x] **Logistico** — [colorlib](https://colorlib.com/wp/template/logistico/) · [logistico](https://logistico.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logistico-free-template.jpg)
 - [x] **Logistics** — [colorlib](https://colorlib.com/wp/template/logistics/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logistics-free-template.jpg) · [shiply](https://shiply.free.componentdock.com)
 - [ ] **Swiftmove** — [colorlib](https://colorlib.com/wp/template/swiftmove/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/swiftmove-template-1771943964825.jpg)
-- [~] **Taxi** — [colorlib](https://colorlib.com/wp/template/taxi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/taxi-free-template.jpg)
+- [x] **Taxi** — [colorlib](https://colorlib.com/wp/template/taxi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/taxi-free-template.jpg) · [cabspot](https://cabspot.free.componentdock.com)
 - [x] **Thelogistico** — [colorlib](https://colorlib.com/wp/template/thelogistico/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelogistico-colorlib-template.jpg) · [logistix](https://logistix.free.componentdock.com)
 
 ## Travel (44)
