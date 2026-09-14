@@ -1196,7 +1196,7 @@
 - [x] **Tangre** — [colorlib](https://colorlib.com/wp/template/tangre/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tangre-free-template.jpg) · [wainscot](https://wainscot.free.componentdock.com)
 - [x] **Tattooz** — [colorlib](https://colorlib.com/wp/template/tattooz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tattooz-free-template.jpg) · [inkvibe](https://inkvibe.free.componentdock.com)
 - [x] **Taxi** — [colorlib](https://colorlib.com/wp/template/taxi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/taxi-free-template.jpg) · [cabspot](https://cabspot.free.componentdock.com)
-- [ ] **Taxx** — [colorlib](https://colorlib.com/wp/template/taxx/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/taxx-free-template.jpg)
+- [~] **Taxx** — [colorlib](https://colorlib.com/wp/template/taxx/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/taxx-free-template.jpg)
 - [x] **The Barber** — [colorlib](https://colorlib.com/wp/template/the-barber/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thebarber-free-template.jpg) · [amber](https://amber.free.componentdock.com)
 - [ ] **Theestate** — [colorlib](https://colorlib.com/wp/template/theestate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theestate-free-template.jpg)
 - [ ] **Theinterior** — [colorlib](https://colorlib.com/wp/template/theinterior/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theinterior-free-template.jpg)

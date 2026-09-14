@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Vibrance brand palette — from ColorLib Taxx preview
+     (https://preview.colorlib.com/theme/taxx/ + css/styles.css):
+     gradient orange #ff6a00 -> hot pink #FE018F, body #333, paragraphs #777 */
+  --color-brand-orange: #ff6a00;
+  --color-brand-pink: #fe018f;
+  --color-ink: #333333;
+  --color-smoke: #777777;
+  --color-mist: #f5f5f5;
+  --color-footer: #222222;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Allura', cursive;
+}
+
+@layer utilities {
+  .gradient-btn {
+    background: linear-gradient(15deg, #ff6a00 0%, #fe018f 100%);
+  }
+
+  .gradient-border-btn {
+    border-image: linear-gradient(to right, #ff6a00 0%, #fe018f) 1;
+  }
+
+  .gradient-border-btn:hover {
+    background: linear-gradient(15deg, #ff6a00 0%, #fe018f 100%);
+    color: white;
+  }
+}
