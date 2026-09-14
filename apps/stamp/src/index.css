@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — from the Supreme industrial design: orange #fe5c24, dark navy #191d34 */
+  --color-brand: #fe5c24;
+  --color-brand-hover: #ff7e5f;
+
+  /* Ink — dark heading color (#191d34 from the original) */
+  --color-ink: #191d34;
+
+  /* Mist — body text (#777 from the original) */
+  --color-mist: #777777;
+
+  /* Paper — light section bg (#f7f7f7 from the original) */
+  --color-paper: #f7f7f7;
+
+  /* Coral — link hover (#ff7e5f from the original) */
+  --color-coral: #ff7e5f;
+
+  /* Font: Barlow Condensed from the original */
+  --font-barlow: 'Barlow Condensed', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-barlow);
+    font-size: 14px;
+  }
+}
