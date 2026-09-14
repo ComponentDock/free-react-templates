@@ -1,111 +1,124 @@
-# Template: Haven (Animals & Pets — Shelter Landing)
+# Haven — Luxury Hotel Landing Template
+
+> Recreation of ColorLib "Sona" (https://colorlib.com/wp/template/sona/)
 
 ## Purpose
 
-Haven is a single-page animal shelter website template in the free-react-templates
-monorepo. It is an original React recreation of the ColorLib free "Animal
-Shelter" website template design (see TEMPLATES.md), built under a different
-name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+A luxury hotel landing page with a hero section featuring a booking form,
+an about section, a services grid, room cards with pricing, testimonials,
+and a footer with contact info and newsletter signup. Built with React 19,
+Tailwind CSS 4, and TypeScript.
 
-The original design is a complete animals-and-pets website template with a
-sleek look: a navigation bar, a hero introducing the shelter, an about area,
-sections presenting adoptable animals and testimonials, a call to action for
-volunteers, and a footer. Haven follows the same structure and adds the repo's
-standard dark-mode toggle and accessible patterns.
-
-Haven lives in `apps/haven` and uses shared components from `packages/ui`
-(Button, Badge, Card, cn).
+Design tokens: Lora (serif headings) + Cabin (sans-serif body), warm gold
+brand color #dfa974, dark heading text #19191a, muted body text #6b6b6b.
 
 ## Requirements
 
-### Requirement: Navigation bar
-The system SHALL render a navigation bar with the site name "Haven", links to
-the page's sections, and a dark-mode toggle button. On small screens the links
-SHALL collapse behind a toggleable menu.
+### Requirement: Navbar with navigation and booking CTA
 
-#### Scenario: Desktop navigation
-- **GIVEN** the Haven page is rendered on a desktop viewport
-- **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Haven", links to Home, About, Adopt, and Volunteers, and a dark-mode toggle button
-- **AND** the links SHALL scroll to their target sections
+The template SHALL render a sticky navbar with the brand name "Haven",
+navigation links for Home, Rooms, About, Services, Testimonials, and
+Contact, and a "Booking Now" call-to-action button. On mobile, the navbar
+SHALL show a hamburger menu that toggles open/closed.
 
-#### Scenario: Mobile menu
-- **GIVEN** the page is rendered on a mobile viewport
-- **WHEN** the user presses the menu toggle
-- **THEN** the nav links SHALL become visible
-- **AND** pressing the toggle again SHALL hide them
+#### Scenario: Desktop navbar renders all navigation links
 
-#### Scenario: Dark mode toggle
-- **GIVEN** the page is rendered
-- **WHEN** the user presses the dark-mode toggle
-- **THEN** the `.dark` class SHALL be toggled on the document root element
-- **AND** the toggle SHALL reflect the current mode
+- **WHEN** the page loads on a desktop viewport
+- **THEN** the navbar shows the brand name "Haven"
+- **AND** navigation links for Home, Rooms, About, Services, Testimonials, Contact are visible
+- **AND** a "Booking Now" button is visible
 
-### Requirement: Hero section
-The system SHALL render a hero section with a headline, a short subtitle, a
-call-to-action button, and a pet illustration with an accessible label.
+#### Scenario: Mobile menu toggles open and closed
 
-#### Scenario: Hero content
-- **GIVEN** the page is rendered
-- **WHEN** the hero section is displayed
-- **THEN** it SHALL contain the headline, the subtitle, and a "Find a pet" button linking to the adopt section
-- **AND** it SHALL show a pet illustration with an accessible label
+- **WHEN** the user taps the hamburger menu button
+- **THEN** the mobile navigation panel appears with all navigation links
+- **AND** the button label changes to "Close menu"
+- **WHEN** the user taps "Close menu"
+- **THEN** the mobile navigation panel disappears
 
-### Requirement: About section with stats
-The system SHALL render an About section with a short mission statement and a
-set of stats (animals rescued, adoptions, volunteers).
+### Requirement: Hero section with booking form
 
-#### Scenario: About content
-- **GIVEN** the page is rendered
-- **WHEN** the About section is displayed
-- **THEN** it SHALL show the mission statement
-- **AND** it SHALL show three stats with numeric values and labels
+The template SHALL render a hero section with a headline "Haven A Luxury Hotel",
+a description paragraph, a "Discover Now" CTA link, and a booking form with
+Check In, Check Out date inputs, Guests select, Room select, and a "Check
+Availability" submit button.
 
-### Requirement: Adopt section
-The system SHALL render an Adopt section with a heading and a grid of adoptable
-pet cards, each with a name, a short description, and a badge.
+#### Scenario: Hero displays headline and booking form
 
-#### Scenario: Pet cards grid
-- **GIVEN** the page is rendered
-- **WHEN** the Adopt section is displayed
-- **THEN** it SHALL show the section heading
-- **AND** it SHALL show at least three pet cards, each with a name, a description, and a badge
+- **WHEN** the hero section renders
+- **THEN** a heading with text "Haven A Luxury Hotel" is visible
+- **AND** a "Discover Now" link is visible
+- **AND** a booking form with Check In, Check Out, Guests, Room fields is visible
+- **AND** a "Check Availability" button is visible
+
+### Requirement: About section with hotel description
+
+The template SHALL render an About section with a "About Us" label, a heading
+about the hotel, two paragraphs of description, a "Read More" link, and two
+placeholder images.
+
+#### Scenario: About section renders all content
+
+- **WHEN** the About section renders
+- **THEN** a "About Us" label is visible
+- **AND** a heading containing "Intercontinental" is visible
+- **AND** a "Read More" link is visible
+- **AND** two images from picsum.photos are visible
+
+### Requirement: Services section with 6 service cards
+
+The template SHALL render a Services section with a "What We Do" label,
+a "Discover Our Services" heading, and 6 service cards (Travel Plan,
+Catering Service, Babysitting, Laundry, Hire Driver, Bar & Drink), each
+with an icon, title, and description.
+
+#### Scenario: All six services are displayed
+
+- **WHEN** the Services section renders
+- **THEN** headings for Travel Plan, Catering Service, Babysitting, Laundry, Hire Driver, Bar & Drink are visible
+- **AND** 6 description paragraphs are visible
+
+### Requirement: Room cards with pricing
+
+The template SHALL render 4 room cards (Double Room $199, Premium King Room
+$159, Deluxe Room $198, Family Room $299), each with an image, room name,
+price, specs table, and a "More Details" link.
+
+#### Scenario: All four rooms render with correct prices
+
+- **WHEN** the Rooms section renders
+- **THEN** headings for Double Room, Premium King Room, Deluxe Room, Family Room are visible
+- **AND** prices $199, $159, $198, $299 are visible
+- **AND** 4 "More Details" links are visible
 
 ### Requirement: Testimonials section
-The system SHALL render a Testimonials section with a heading and a set of
-quote cards, each with text and an author name.
 
-#### Scenario: Testimonial cards
-- **GIVEN** the page is rendered
-- **WHEN** the Testimonials section is displayed
-- **THEN** it SHALL show at least three testimonials, each with a quote and an author
+The template SHALL render a Testimonials section with a "Testimonials" label,
+a "What Customers Say?" heading, a customer quote, 5 star icons, and an
+author name.
 
-### Requirement: Volunteers section
-The system SHALL render a Volunteers call-to-action section with a heading, a
-short message, and a button that links to the page root.
+#### Scenario: Testimonial displays quote and author
 
-#### Scenario: Volunteers content
-- **GIVEN** the page is rendered
-- **WHEN** the Volunteers section is displayed
-- **THEN** it SHALL show a heading and a short message
-- **AND** it SHALL show a "Become a volunteer" button linking to the page root
+- **WHEN** the Testimonials section renders
+- **THEN** a "What Customers Say?" heading is visible
+- **AND** a testimonial quote is visible
+- **AND** 5 star rating icons are visible
+- **AND** the author name "Alexander Vasquez" is visible
 
-### Requirement: Footer
-The system SHALL render a footer with the site name, a short tagline, and
-social links.
+### Requirement: Footer with contact, newsletter, and Component Dock link
 
-#### Scenario: Footer content
-- **GIVEN** the page is rendered
-- **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Haven" and a tagline
-- **AND** it SHALL show social links (GitHub, X, LinkedIn)
+The template SHALL render a footer with the brand name, a description,
+social links (Facebook, Twitter, Instagram, YouTube), contact information
+(phone, email, address), a newsletter signup form, copyright with the
+current year, and a link to https://www.componentdock.com/ branded as
+"Component Dock".
 
-### Requirement: Page composition
-The system SHALL compose all sections in a single page with a main landmark and
-a document title.
+#### Scenario: Footer renders all required content
 
-#### Scenario: Full page render
-- **GIVEN** the Haven app is rendered
-- **WHEN** the page loads
-- **THEN** the page SHALL compose all sections: the Navbar in the banner landmark, Hero, About, Adopt, Testimonials, and Volunteers in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Haven — Animal Shelter Template"
+- **WHEN** the Footer renders
+- **THEN** the brand name "Haven" is visible
+- **AND** social links for Facebook, Twitter, Instagram, YouTube are visible
+- **AND** contact information (phone, email, address) is visible
+- **AND** a newsletter form with email input and Subscribe button is visible
+- **AND** a "Component Dock" link pointing to https://www.componentdock.com/ is visible
+- **AND** the current year is displayed in the copyright
