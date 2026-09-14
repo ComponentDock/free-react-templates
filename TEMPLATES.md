@@ -1158,7 +1158,7 @@
 - [x] **Saita** — [colorlib](https://colorlib.com/wp/template/saita/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/saita-colorlib-template.jpg) · [pulse](https://pulse.free.componentdock.com)
 - [x] **Sasu** — [colorlib](https://colorlib.com/wp/template/sasu/) · [driven](https://driven.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sasu-free-template.jpg)
 - [x] **Scenic** — [colorlib](https://colorlib.com/wp/template/scenic/) · [panorama](https://free-react-templates-panorama.surge.sh)
-- [ ] **Security** — [colorlib](https://colorlib.com/wp/template/security/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/security-free-template.jpg)
+- [~] **Security** — [colorlib](https://colorlib.com/wp/template/security/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/security-free-template.jpg)
 - [ ] **Services** — [colorlib](https://colorlib.com/wp/template/services/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/services-free-template.jpg)
 - [ ] **Sharespace** — [colorlib](https://colorlib.com/wp/template/sharespace/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sharespace-free-template.jpg)
 - [x] **Shieldnet** — [colorlib](https://colorlib.com/wp/template/shieldnet/) · [aegis](https://aegis.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shieldnet-template-1771944037639.jpg)
