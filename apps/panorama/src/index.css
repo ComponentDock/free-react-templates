@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Panorama brand palette — blue primary (#4a76a9) */
+  --color-ocean-50: #eef3f8;
+  --color-ocean-100: #d5e2ef;
+  --color-ocean-200: #adc5df;
+  --color-ocean-300: #7fa3ca;
+  --color-ocean-400: #4a76a9;
+  --color-ocean-500: #3a6090;
+  --color-ocean-600: #2d4b72;
+  --color-ocean-700: #223856;
+  --color-ocean-800: #18263b;
+  --color-ocean-900: #0e1520;
+
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
