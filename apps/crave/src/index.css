@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Crave brand palette — inspired by the original ColorLib "Sneaky"
+     restaurant template (vivid red-orange accent, warm off-white). */
+  --color-brand: #e22104;
+
+  --color-primary-50: #fef2f0;
+  --color-primary-100: #fde1db;
+  --color-primary-200: #fbc4b8;
+  --color-primary-300: #f89a83;
+  --color-primary-400: #f46644;
+  --color-primary-500: #e22104;
+  --color-primary-600: #c41a03;
+  --color-primary-700: #a31503;
+  --color-primary-800: #871303;
+  --color-primary-900: #6f1204;
+  --color-primary-950: #3c0601;
+
+  /* Dark navy headings from the original */
+  --color-heading: #2f2d4e;
+
+  /* Warm off-white background sections */
+  --color-cream: #fff8f7;
+
+  /* Fonts: "Josefin Sans" for headings, "Open Sans" for body */
+  --font-heading: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #888;
+  }
+}
