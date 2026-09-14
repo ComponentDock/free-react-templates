@@ -1160,7 +1160,7 @@
 - [x] **Scenic** — [colorlib](https://colorlib.com/wp/template/scenic/) · [panorama](https://free-react-templates-panorama.surge.sh)
 - [x] **Security** — [colorlib](https://colorlib.com/wp/template/security/) · [bulwark](https://free-react-templates-bulwark.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/security-free-template.jpg)
 - [x] **Services** — [colorlib](https://colorlib.com/wp/template/services/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/services-free-template.jpg) · [fulcrum](https://fulcrum.free.componentdock.com)
-- [ ] **Sharespace** — [colorlib](https://colorlib.com/wp/template/sharespace/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sharespace-free-template.jpg)
+- [~] **Sharespace** — [colorlib](https://colorlib.com/wp/template/sharespace/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sharespace-free-template.jpg)
 - [x] **Shieldnet** — [colorlib](https://colorlib.com/wp/template/shieldnet/) · [aegis](https://aegis.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shieldnet-template-1771944037639.jpg)
 - [ ] **Shotgear** — [colorlib](https://colorlib.com/wp/template/shotgear/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shotgear-free-template.jpg)
 - [x] **Sierra** — [colorlib](https://colorlib.com/wp/template/sierra/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sierra-free-template.jpg) · [violet](https://violet.free.componentdock.com)
