@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pressline brand palette — from ColorLib "Publishing Company" preview:
+     steel blue-gray accent #95adbe, dark bg #1a1a1a, light bg #f8f9fa. */
+  --color-primary-50: #f0f5f8;
+  --color-primary-100: #dce8ef;
+  --color-primary-200: #b8d1de;
+  --color-primary-300: #95adbe;
+  --color-primary-400: #7a97ae;
+  --color-primary-500: #60819e;
+  --color-primary-600: #4d6a82;
+  --color-primary-700: #3a5063;
+  --color-primary-800: #273643;
+  --color-primary-900: #141d24;
+
+  --color-surface: #ffffff;
+  --color-surface-alt: #f8f9fa;
+  --color-ink: #1a1a1a;
+  --color-smoke: #6c757d;
+  --color-border: #dee2e6;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Lora', ui-serif, Georgia, serif;
+}
