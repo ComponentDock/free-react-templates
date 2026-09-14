@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — recreated from the ColorLib "Carwash" design
+     (css/main.css): primary blue #007AFF, dark navy #010A44/#072366,
+     accent green #70D76A, light section bg #EEF6FF. */
+  --color-brand: #007aff;
+  --color-brand-light: #0bc6ff;
+  --color-brand-dark: #005ecb;
+
+  /* Ink — dark navy headings/footer (#010A44 from the original). */
+  --color-ink: #010a44;
+  --color-ink-mid: #072366;
+
+  /* Soapstone — light section background (#EEF6FF). */
+  --color-paper: #eef6ff;
+
+  /* Card/widget background (#f9f9ff). */
+  --color-card: #f9f9ff;
+
+  /* Accent green for section subtitles (#70D76A). */
+  --color-accent: #70d76a;
+
+  /* Mist — muted body text (#10285d). */
+  --color-mist: #10285d;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the blue. */
+  --color-primary-50: #e8f4ff;
+  --color-primary-100: #b9e1ff;
+  --color-primary-200: #8aceff;
+  --color-primary-300: #5bbbff;
+  --color-primary-400: #2ba8ff;
+  --color-primary-500: #007aff;
+  --color-primary-600: #005ecb;
+  --color-primary-700: #004898;
+  --color-primary-800: #003265;
+  --color-primary-900: #001c33;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
