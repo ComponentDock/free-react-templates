@@ -1,130 +1,105 @@
-import { useEffect, useState } from 'react'
-import { Heart, Menu, Moon, Search, ShoppingBag, Sun, X } from 'lucide-react'
-import { cn } from '@free-react-templates/ui'
+import { useState } from 'react'
+import { Menu, X, ShoppingCart } from 'lucide-react'
 
-const links = [
-  { label: 'Home', href: '#home' },
-  { label: 'Shop', href: '#shop' },
-  { label: 'Catalogue', href: '#catalogue' },
-  { label: 'New Arrivals', href: '#new-arrivals' },
+const navLinks = [
+  { label: 'Home', href: '#' },
+  {
+    label: 'Shop',
+    href: '#shop',
+    children: [
+      { label: 'Product Detail', href: '#' },
+      { label: 'Shipping Cart', href: '#' },
+      { label: 'Checkout', href: '#' },
+    ],
+  },
+  { label: 'Blog', href: '#blog' },
+  { label: 'About', href: '#about' },
   { label: 'Contact', href: '#contact' },
-] as const
-
-const DARK_KEY = 'bazaar-dark'
+]
 
 export function Navbar() {
-  const [open, setOpen] = useState(false)
-  const [dark, setDark] = useState(() => window.localStorage.getItem(DARK_KEY) === '1')
-
-  useEffect(() => {
-    document.documentElement.classList.toggle('dark', dark)
-    window.localStorage.setItem(DARK_KEY, dark ? '1' : '0')
-    return () => {
-      document.documentElement.classList.remove('dark')
-    }
-  }, [dark])
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-200 bg-white transition-colors dark:border-gray-800 dark:bg-gray-950">
-      <div className="relative mx-auto flex h-20 max-w-7xl items-center justify-between px-4 lg:px-8">
-        <a href="#home" className="flex items-center" aria-label="Bazaar">
-          <span className="border-2 border-ink px-2 py-0.5 font-sans text-lg font-black uppercase tracking-widest text-ink dark:border-white dark:text-white">
-            Bazaar
-          </span>
+    <nav className="sticky top-0 z-50 bg-white shadow-sm">
+      <div className="container mx-auto flex items-center justify-between px-4 py-4">
+        <a href="#" className="font-display text-2xl font-bold text-ink">
+          Bazaar
         </a>
 
-        <nav aria-label="Primary" className="hidden items-center gap-8 lg:flex">
-          {links.map((link, index) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className={cn(
-                'text-xs font-bold uppercase tracking-widest text-gray-600 transition-colors hover:text-brand dark:text-gray-300 dark:hover:text-brand',
-                index === 0 && 'text-ink dark:text-white',
+        {/* Desktop nav */}
+        <ul className="hidden items-center gap-6 md:flex">
+          {navLinks.map((link) => (
+            <li key={link.label} className="relative group">
+              <a
+                href={link.href}
+                className="text-sm font-medium uppercase tracking-wide text-body transition-colors hover:text-brand"
+              >
+                {link.label}
+              </a>
+              {link.children && (
+                <ul className="invisible absolute left-0 top-full z-10 mt-1 min-w-[180px] rounded border border-gray-200 bg-white py-2 shadow-lg group-hover:visible">
+                  {link.children.map((child) => (
+                    <li key={child.label}>
+                      <a
+                        href={child.href}
+                        className="block px-4 py-2 text-sm text-body transition-colors hover:bg-slate hover:text-brand"
+                      >
+                        {child.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               )}
-            >
-              {link.label}
-            </a>
+            </li>
           ))}
-        </nav>
-
-        <div className="flex items-center gap-1">
-          <button
-            type="button"
-            aria-label="Search"
-            className="flex h-11 w-11 items-center justify-center text-ink transition-colors hover:text-brand dark:text-gray-300"
-          >
-            <Search className="h-5 w-5" aria-hidden="true" />
-          </button>
-          <button
-            type="button"
-            aria-label="Wishlist"
-            className="flex h-11 w-11 items-center justify-center text-ink transition-colors hover:text-brand dark:text-gray-300"
-          >
-            <Heart className="h-5 w-5" aria-hidden="true" />
-          </button>
-          <button
-            type="button"
-            aria-label="Shopping bag"
-            className="relative flex h-11 w-11 items-center justify-center text-ink transition-colors hover:text-brand dark:text-gray-300"
-          >
-            <ShoppingBag className="h-5 w-5" aria-hidden="true" />
-            <span
-              className="absolute right-1 top-1 flex h-4 w-4 items-center justify-center rounded-full bg-brand text-[10px] font-bold text-white"
-              aria-hidden="true"
-            >
-              2
-            </span>
-          </button>
-          <button
-            type="button"
-            onClick={() => setDark((value) => !value)}
-            aria-label="Toggle dark mode"
-            className="flex h-11 w-11 items-center justify-center text-ink transition-colors hover:text-brand dark:text-gray-300"
-          >
-            {dark ? (
-              <Sun className="h-5 w-5" aria-hidden="true" />
-            ) : (
-              <Moon className="h-5 w-5" aria-hidden="true" />
-            )}
-          </button>
-          <button
-            type="button"
-            onClick={() => setOpen((value) => !value)}
-            aria-expanded={open}
-            aria-controls="mobile-menu"
-            aria-label={open ? 'Close menu' : 'Open menu'}
-            className="flex h-11 w-11 items-center justify-center text-ink transition-colors hover:text-brand dark:text-gray-300 lg:hidden"
-          >
-            {open ? (
-              <X className="h-6 w-6" aria-hidden="true" />
-            ) : (
-              <Menu className="h-6 w-6" aria-hidden="true" />
-            )}
-          </button>
-        </div>
-      </div>
-
-      <div
-        id="mobile-menu"
-        className={cn(
-          'border-t border-gray-200 bg-white px-4 py-4 dark:border-gray-800 dark:bg-gray-950 lg:hidden',
-          open ? 'block' : 'hidden',
-        )}
-      >
-        <nav aria-label="Mobile" className="flex flex-col gap-1">
-          {links.map((link) => (
+          <li>
             <a
-              key={link.label}
-              href={link.href}
-              onClick={() => setOpen(false)}
-              className="block rounded-lg py-3 text-sm font-bold uppercase tracking-widest text-gray-700 transition-colors hover:text-brand dark:text-gray-200"
+              href="#cart"
+              className="flex items-center gap-1 text-sm font-medium uppercase tracking-wide text-body transition-colors hover:text-brand"
             >
-              {link.label}
+              <ShoppingCart size={16} aria-hidden="true" />
+              Cart [0]
             </a>
-          ))}
-        </nav>
+          </li>
+        </ul>
+
+        {/* Mobile toggle */}
+        <button
+          type="button"
+          className="text-ink md:hidden"
+          aria-label="Toggle menu"
+          aria-expanded={isOpen}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
-    </header>
+
+      {/* Mobile nav */}
+      {isOpen && (
+        <ul className="border-t border-gray-100 bg-white px-4 pb-4 md:hidden">
+          {navLinks.map((link) => (
+            <li key={link.label}>
+              <a
+                href={link.href}
+                className="block py-2 text-sm font-medium uppercase tracking-wide text-body transition-colors hover:text-brand"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+          <li>
+            <a
+              href="#cart"
+              className="flex items-center gap-1 py-2 text-sm font-medium uppercase tracking-wide text-body transition-colors hover:text-brand"
+            >
+              <ShoppingCart size={16} aria-hidden="true" />
+              Cart [0]
+            </a>
+          </li>
+        </ul>
+      )}
+    </nav>
   )
 }
