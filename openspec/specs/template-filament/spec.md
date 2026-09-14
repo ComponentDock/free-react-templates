@@ -2,7 +2,18 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Simples" template as a modern React 19 + Vite + Tailwind 4 + TypeScript single-page template.
+Filament is a single-page feminine landing page template in the
+free-react-templates monorepo. It is an original React recreation of the
+ColorLib free "Simples" design (see TEMPLATES.md), built under the
+monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+
+The original is a feminine aesthetic page with soft pink/lavender palette:
+a full-screen gradient hero ("Brand new Simples"), feature icons, core
+feature sections with carousel and image, process steps on gradient,
+service carousel on dark overlay, newsletter subscription, contact form
+with map, and a black footer with navigation columns and social icons.
+Filament recreates that structure section-for-section with matching
+layout, colors, typography, and content types (no ColorLib assets copied).
 
 - **Source:** ColorLib "Simples" — https://colorlib.com/wp/template/simples/
 - **Preview:** https://preview.colorlib.com/theme/simples/
@@ -10,197 +21,187 @@ Recreation of the ColorLib "Simples" template as a modern React 19 + Vite + Tail
 - **New name:** `filament` (apps/filament, package `@free-react-templates/filament`)
 - **Deploy URL:** https://filament.free.componentdock.com
 
-## Design Tokens (extracted from preview)
+## Design reference (replication findings)
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Font family | `"Poppins", sans-serif` | Google Fonts, weights 200/300/400/500/600 |
-| Primary brand color | `#fcd2ff` | Lavender-pink, used on accents, links, icons, highlights |
-| Gradient left | `#f6d0c5` | Salmon-peach |
-| Gradient right | `#fbd2f6` | Soft pink |
-| Gradient direction | 90deg (left to right) | Applied to banner, process area, service area triggers, button hover |
-| Body text color | `#777` | Medium gray |
-| Heading color | `#222` | Near-black |
-| Body background | `#f9f9ff` | Very light lavender-white for alternating sections |
-| White background | `#fff` | Contact area, white sections |
-| Footer background | `#000` | Solid black |
-| Footer text color | `#777` | Gray links, hover to `#fcd2ff` |
-| Button border-radius | `20px` (circle variant) | Pill-shaped buttons |
-| Button font | 500 weight, uppercase text | `genric-btn` system |
-| Overlay (dark) | `rgba(0,0,0,0.8)` | Service area background overlay |
-| Section padding | `120px 0` | Consistent section gap |
-| Banner h1 | 84px, weight 200, letter-spacing 3px, text-shadow `13px 15px 8px #f2c4d0` | |
-| Social icons | Font Awesome, `#777` default, hover `#fff` | Background: `#1e1e1e` circles |
+- **Original:** ColorLib "Simples" — free feminine landing page website template.
+- **Section order (1:1):**
+  1. Header: Logo "Filament" + nav links (Home, Generic, Elements). Absolutely positioned over hero.
+  2. Hero Banner: Full-screen gradient overlay (#f6d0c5 → #fbd2f6). Large white h1 "Brand new Filament" with text-shadow. Subtitle. "Explore Now" pill button.
+  3. Features: 4-column grid — Easy Installation, Multiple Layouts, Free Updates, Fully Responsive. Lavender-pink icons.
+  4. Core Feature Carousel: Light bg (#f9f9ff). Left text + right image carousel with prev/next.
+  5. Core Feature Image: Left tall image + right text with "Learn More" CTA.
+  6. Process Steps: Gradient background. 6 steps — Brainstorm, Discuss Ideas, Projections, Strategies, Seo Target, Awards.
+  7. Service Carousel: Dark overlay background. Image + text slides with prev/next.
+  8. Newsletter: Light bg. Email input + "Get Started" pill button.
+  9. Contact: Map placeholder + form (name, email, textarea, send button).
+  10. Footer: Black bg. 5 columns (Top Products, Company, Support, Projects, Quick Contact). Social icons. "Made with Component Dock" link.
+- **Design tokens:**
+  - Brand: `#fcd2ff` (lavender-pink), gradient `#f6d0c5` → `#fbd2f6`
+  - Text: `#222` headings, `#777` body
+  - Bg: `#f9f9ff` light, `#000` footer, `#1e1e1e` social icons
+  - Font: Poppins (weights 200–600)
+  - Buttons: pill shape (border-radius 20px), uppercase, weight 500
 
-## Visual Design Notes (from screenshot)
+## Requirements
 
-- Feminine aesthetic: soft pink/lavender palette, rounded pill buttons
-- Full-screen hero with gradient overlay (salmon-to-pink)
-- Clean white content sections with subtle shadow effects
-- Feature icons in lavender-pink
-- Dark service area with carousel
-- Black footer with social media icons in dark circles
+### Requirement: Navigation bar
 
-## Gherkin Requirements
+The system SHALL render a top navigation bar with the site name "Filament"
+and navigation links for "Home", "Generic", and "Elements". The navbar
+SHALL be positioned absolutely over the hero banner.
 
-### Scenario: Header renders with navigation
+#### Scenario: Navbar content
 
-```gherkin
-Feature: Filament Header
+- **GIVEN** the Filament page is rendered
+- **WHEN** the page loads
+- **THEN** the navbar SHALL show the site name "Filament"
+- **AND** navigation links for "Home", "Generic", and "Elements" SHALL be present
+- **AND** the navbar SHALL be a banner landmark
 
-  Scenario: Logo and navigation links render
-    Given the Filament page loads
-    Then a header is visible with a logo
-    And navigation links for "Home", "Generic", and "Elements" are present
-    And the header is positioned absolutely over the banner
-```
+### Requirement: Hero banner
 
-### Scenario: Hero banner with gradient overlay
+The system SHALL render a full-screen hero banner with a gradient overlay
+(salmon-peach to soft-pink), a heading, subtitle, and CTA button.
 
-```gherkin
-Feature: Filament Hero Banner
+#### Scenario: Hero content
 
-  Scenario: Full-screen hero banner with gradient overlay renders
-    Given the Filament page loads
-    Then a full-screen banner section is visible
-    And the banner has a gradient overlay from salmon-peach (#f6d0c5) to soft-pink (#fbd2f6)
-    And the heading "Brand new Simples" is displayed in large white text
-    And a subtitle paragraph is present below the heading
-    And an "Explore Now" button with pill shape is visible
+- **GIVEN** the Filament page is rendered
+- **WHEN** the hero banner is displayed
+- **THEN** the heading "Brand new Filament" SHALL be visible
+- **AND** a subtitle paragraph SHALL be present
+- **AND** an "Explore Now" pill-shaped button SHALL be rendered
 
-  Scenario: Hero banner is full viewport height
-    Given the Filament page loads
-    Then the banner area spans the full viewport width
-    And the banner content is vertically centered
-```
+#### Scenario: Hero gradient
 
-### Scenario: Features section
+- **GIVEN** the Filament page is rendered
+- **WHEN** the hero banner is displayed
+- **THEN** the banner SHALL have a gradient overlay from #f6d0c5 to #fbd2f6
 
-```gherkin
-Feature: Filament Features
+### Requirement: Features section
 
-  Scenario: Four feature cards render
-    Given the Filament page loads
-    Then four feature cards are displayed in a row
-    And each feature card has a lavender-pink icon
-    And the features are: "Easy Installation", "Multiple Layouts", "Free Updates", "Fully Responsive"
-    And each feature card has an uppercase heading
-```
+The system SHALL render four feature cards in a responsive grid with
+lavender-pink icons and uppercase labels.
 
-### Scenario: Core Feature section with carousel
+#### Scenario: Feature cards
 
-```gherkin
-Feature: Filament Core Feature
+- **GIVEN** the Filament page is rendered
+- **WHEN** the features section is displayed
+- **THEN** four feature cards SHALL be visible
+- **AND** the features SHALL be: "Easy Installation", "Multiple Layouts", "Free Updates", "Fully Responsive"
 
-  Scenario: Core Feature section displays left content and right carousel
-    Given the Filament page loads
-    Then a "Core Feature" section with light background (#f9f9ff) is visible
-    And the left side shows a subtitle "Core Feature" and a heading with highlighted spans
-    And a paragraph of descriptive text is present
-    And a "Learn More" button with arrow icon is visible
-    And the right side shows a carousel with feature images
-    And carousel navigation arrows (prev/next) are present on the left side
-```
+### Requirement: Core Feature Carousel
 
-### Scenario: Core Feature Bottom section (image + text)
+The system SHALL render a core feature section with text on the left and
+an image carousel on the right, with prev/next navigation.
 
-```gherkin
-Feature: Filament Core Feature Bottom
+#### Scenario: Carousel navigation
 
-  Scenario: Core Feature Bottom section with image on left and text on right
-    Given the Filament page loads
-    Then a second Core Feature section is visible
-    And the left half shows a large image spanning full height
-    And the right half shows the same "Core Feature" heading and text pattern
-    And a "Learn More" button is present
-```
+- **GIVEN** the Filament page is rendered
+- **WHEN** the user clicks the next button
+- **THEN** the carousel SHALL advance to the next slide
+- **AND** the previous button SHALL navigate back
 
-### Scenario: Process area with six steps
+#### Scenario: Carousel wrap-around
 
-```gherkin
-Feature: Filament Process Steps
+- **GIVEN** the carousel is on the last slide
+- **WHEN** the user clicks next
+- **THEN** the carousel SHALL wrap to the first slide
 
-  Scenario: Six process steps render on gradient background
-    Given the Filament page loads
-    Then a process section with gradient background (#f6d0c5 → #fbd2f6) is visible
-    And six process steps are displayed: "Brainstorm", "Discuss Ideas", "Projections", "Strategies", "Seo Target", "Awards"
-    And each step has a white icon above it
-    And each step has a white dot and uppercase label with a top border
-```
+### Requirement: Core Feature Image section
 
-### Scenario: Service area with carousel
+The system SHALL render a section with a large image on the left and
+descriptive text with a "Learn More" CTA on the right.
 
-```gherkin
-Feature: Filament Service Carousel
+#### Scenario: Image section content
 
-  Scenario: Service carousel with image and text slides
-    Given the Filament page loads
-    Then a service section with dark overlay background is visible
-    And a carousel displays service items with left image and right text
-    And each service item has a title, paragraph, and "View Details" link
-    And prev/next navigation triggers are positioned outside the carousel
-```
+- **GIVEN** the Filament page is rendered
+- **WHEN** the core feature image section is displayed
+- **THEN** a feature image SHALL be visible
+- **AND** a "Learn More" link SHALL be present
 
-### Scenario: Newsletter subscription section
+### Requirement: Process Steps
 
-```gherkin
-Feature: Filament Newsletter
+The system SHALL render six process steps on a gradient background with
+white icons and uppercase labels.
 
-  Scenario: Newsletter section with email input
-    Given the Filament page loads
-    Then a newsletter section with light background (#f9f9ff) is visible
-    And a heading "Subscribe for our Newsletter" with highlighted "Newsletter" span is shown
-    And a "We won't send any kind of spam" subtext is displayed
-    And an email input field with "Email address" placeholder is present
-    And a "Get Started" button is positioned inside the input area
-```
+#### Scenario: Process steps content
 
-### Scenario: Contact section with form and map placeholder
+- **GIVEN** the Filament page is rendered
+- **WHEN** the process steps section is displayed
+- **THEN** six steps SHALL be visible: "Brainstorm", "Discuss Ideas", "Projections", "Strategies", "Seo Target", "Awards"
 
-```gherkin
-Feature: Filament Contact
+### Requirement: Service Carousel
 
-  Scenario: Contact section renders form and map area
-    Given the Filament page loads
-    Then a contact section is visible
-    And the left side shows a map placeholder area
-    And the right side shows a contact form
-    And the form has fields: name, email, message (textarea)
-    And a "Send Message" button is present
-```
+The system SHALL render a service carousel with dark overlay background,
+displaying service items with image, title, description, and navigation.
 
-### Scenario: Footer with navigation columns and social links
+#### Scenario: Service carousel navigation
 
-```gherkin
-Feature: Filament Footer
+- **GIVEN** the Filament page is rendered
+- **WHEN** the user clicks the next button
+- **THEN** the service carousel SHALL advance to the next service
 
-  Scenario: Footer renders with navigation columns and social links
-    Given the Filament page loads
-    Then a black footer is visible
-    And four navigation columns render: "Top Products", "Company", "Support", "Projects"
-    And each column has a list of links
-    And a "Quick Contact" column shows phone number and email
-    And social media icons (Facebook, Twitter, Dribbble, Behance) are displayed in dark circles
-    And a footer-bottom bar contains copyright text
-    And the copyright text links to "Component Dock" (https://www.componentdock.com/)
-```
+#### Scenario: Service carousel wrap-around
 
-## Verification Checklist
+- **GIVEN** the service carousel is on the last item
+- **WHEN** the user clicks next
+- **THEN** the carousel SHALL wrap to the first service
 
-- [ ] Header renders with logo and three nav links (Home, Generic, Elements)
-- [ ] Hero banner fills viewport with gradient overlay (#f6d0c5 → #fbd2f6)
-- [ ] Hero h1 is large white text with text-shadow
-- [ ] "Explore Now" pill button renders with border-radius 20px
-- [ ] Four feature cards in a row with lavender-pink icons
-- [ ] Core Feature section has left text + right carousel
-- [ ] Core Feature Bottom has left image + right text
-- [ ] Process section shows 6 steps on gradient background
-- [ ] Service carousel shows image + text slides with dark overlay
-- [ ] Newsletter section with email input and "Get Started" pill button
-- [ ] Contact form (name, email, textarea, send button) alongside map placeholder
-- [ ] Black footer with 4 nav columns + Quick Contact + social icons
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code (provenance in spec only)
-- [ ] Placeholder images use picsum.photos with deterministic seeds
-- [ ] Fonts loaded via Google Fonts link in index.html (Poppins)
-- [ ] Tailwind @theme tokens match the extracted design tokens
+### Requirement: Newsletter section
+
+The system SHALL render a newsletter subscription section with email input
+and "Get Started" button.
+
+#### Scenario: Newsletter form
+
+- **GIVEN** the Filament page is rendered
+- **WHEN** the newsletter section is displayed
+- **THEN** an email input field SHALL be present
+- **AND** a "Get Started" button SHALL be rendered
+
+### Requirement: Contact section
+
+The system SHALL render a contact section with a map placeholder and
+a contact form with name, email, and message fields.
+
+#### Scenario: Contact form
+
+- **GIVEN** the Filament page is rendered
+- **WHEN** the contact section is displayed
+- **THEN** a name input, email input, and message textarea SHALL be present
+- **AND** a "Send Message" button SHALL be rendered
+- **AND** a map placeholder area SHALL be visible
+
+### Requirement: Footer
+
+The system SHALL render a black footer with navigation columns, Quick
+Contact info, social media icons, and a "Made with Component Dock" link.
+
+#### Scenario: Footer content
+
+- **GIVEN** the Filament page is rendered
+- **WHEN** the footer is displayed
+- **THEN** four navigation columns SHALL render: "Top Products", "Company", "Support", "Projects"
+- **AND** a "Quick Contact" column SHALL show phone and email
+- **AND** social media icons for Facebook, Twitter, Dribbble, Behance SHALL be present
+- **AND** a "Component Dock" link pointing to https://www.componentdock.com/ SHALL be present
+
+#### Scenario: Footer landmark
+
+- **GIVEN** the Filament page is rendered
+- **WHEN** the page loads
+- **THEN** the footer SHALL be a contentinfo landmark
+
+### Requirement: App composition
+
+The system SHALL compose all sections within a main landmark, set the
+document title, and support dark mode.
+
+#### Scenario: App structure
+
+- **GIVEN** the Filament page is rendered
+- **WHEN** the page loads
+- **THEN** the document title SHALL be "Filament — Feminine Landing Page"
+- **AND** a banner landmark SHALL be present (navbar)
+- **AND** a main landmark SHALL contain all content sections
+- **AND** a contentinfo landmark SHALL be present (footer)
