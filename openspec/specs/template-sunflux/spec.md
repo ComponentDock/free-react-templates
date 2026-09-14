@@ -15,21 +15,21 @@ Recreation of the ColorLib **SolarShift** template as a React 19 + Vite + Tailwi
 
 Extracted from the live preview CSS (`/_astro/Base.KUABgugQ.css`) and HTML:
 
-| Token | Value | Notes |
-|---|---|---|
-| Font family | Manrope (Google Fonts), system-ui, sans-serif | Weights 300–800 |
-| Primary brand color | `#16a34a` (green-600) | Used for CTA buttons, accents, gradients |
-| Primary hover | `#15803d` (green-700) | Button hover states |
-| Accent color | `#f59e0b` (amber-500) | Star ratings, text-gradient endpoint |
-| Gradient | `from #16a34a to #f59e0b` | `.text-gradient` class on hero headline |
-| Hero background | `from-primary-50 to-white` (gradient) | With decorative blurred circles |
-| Stats section bg | `gray-50` (`#f9fafb`) | Full-width stat counters |
-| Card border radius | `1rem` (`rounded-2xl`) | Service cards, testimonial cards |
-| Button border radius | `0.5rem` (`rounded-lg`) | Primary + secondary buttons |
-| Button shadow | `shadow-lg shadow-primary-600/25` | Green shadow on CTA buttons |
-| Dark mode | Class-based (`.dark`) | Toggle via `document.documentElement` |
-| Body bg (dark) | `#030712` (gray-950) | |
-| Footer bg | `#111827` (gray-900) | Dark footer with gray-400 text |
+| Token                | Value                                         | Notes                                    |
+| -------------------- | --------------------------------------------- | ---------------------------------------- |
+| Font family          | Manrope (Google Fonts), system-ui, sans-serif | Weights 300–800                          |
+| Primary brand color  | `#16a34a` (green-600)                         | Used for CTA buttons, accents, gradients |
+| Primary hover        | `#15803d` (green-700)                         | Button hover states                      |
+| Accent color         | `#f59e0b` (amber-500)                         | Star ratings, text-gradient endpoint     |
+| Gradient             | `from #16a34a to #f59e0b`                     | `.text-gradient` class on hero headline  |
+| Hero background      | `from-primary-50 to-white` (gradient)         | With decorative blurred circles          |
+| Stats section bg     | `gray-50` (`#f9fafb`)                         | Full-width stat counters                 |
+| Card border radius   | `1rem` (`rounded-2xl`)                        | Service cards, testimonial cards         |
+| Button border radius | `0.5rem` (`rounded-lg`)                       | Primary + secondary buttons              |
+| Button shadow        | `shadow-lg shadow-primary-600/25`             | Green shadow on CTA buttons              |
+| Dark mode            | Class-based (`.dark`)                         | Toggle via `document.documentElement`    |
+| Body bg (dark)       | `#030712` (gray-950)                          |                                          |
+| Footer bg            | `#111827` (gray-900)                          | Dark footer with gray-400 text           |
 
 ## Section Structure (in order)
 
@@ -45,131 +45,171 @@ Extracted from the live preview CSS (`/_astro/Base.KUABgugQ.css`) and HTML:
 10. **Contact Form** — Form with Full Name, Email, Service Interest dropdown, Message textarea + Office Hours info card
 11. **Footer** — Dark (gray-900) footer: brand column + link columns (Solutions, Resources, Company) + Contact info (address, phone, email) + social icons + copyright + bottom bar
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders all navigation links
-```gherkin
-Given the page loads
-Then the navbar displays links: About, Products, Services, Pricing, Blog, Contact
-And the navbar displays a "Get Free Quote" button
-And the navbar displays a dark mode toggle button
-```
+### Requirement: Navbar renders all navigation links
 
-### Scenario: Dark mode toggle
-```gherkin
-Given the page loads in light mode
-When the user clicks the dark mode toggle
-Then the page switches to dark mode
-And the toggle icon changes to sun
-When the user clicks the toggle again
-Then the page switches back to light mode
-```
+Users SHALL see a sticky header with the Sunflux brand, navigation links, dark mode toggle, and a "Get Free Quote" CTA button.
 
-### Scenario: Hero section displays savings calculator
-```gherkin
-Given the hero section is visible
-Then the hero shows the headline "Power Your Home With Clean Energy"
-And the hero shows a savings calculator widget
-And the calculator has a state dropdown selector
-And the calculator has a monthly bill slider ($50-$500)
-And the calculator shows 4 result cards
-```
+#### Scenario: Navbar renders all navigation links
 
-### Scenario: Savings calculator computes results
-```gherkin
-Given the calculator is visible
-When the user selects "California" from the state dropdown
-And the user sets the monthly bill to $200
-Then the Annual Savings card updates to a non-zero dollar amount
-And the CO2 Offset card shows a tons value
-And the Payback Period card shows a years value
-And the Federal Tax Credit card shows a dollar amount
-```
+- **GIVEN** the page loads
+- **THEN** the navbar displays links: About, Products, Services, Pricing, Blog, Contact
+- **AND** the navbar displays a "Get Free Quote" button
+- **AND** the navbar displays a dark mode toggle button
 
-### Scenario: Stats bar displays counters
-```gherkin
-Given the stats section is visible
-Then it shows 4 stat items: Installations, Saved for Customers, Customer Satisfaction, States Served
-And each stat displays its numeric value
-```
+### Requirement: Dark mode toggle
 
-### Scenario: Services section displays cards
-```gherkin
-Given the services section is visible
-Then it shows a heading "Complete Solar Solutions"
-And it displays 3 service cards: Residential Solar, Commercial Solar, Battery Storage
-And each card has a title, icon, and description paragraph
-```
+Users SHALL be able to toggle dark mode and have the preference persist via localStorage.
 
-### Scenario: Testimonials carousel navigates
-```gherkin
-Given the testimonials section is visible
-Then it shows at least 3 testimonial cards
-And each card has a star rating, quote text, customer name, and location
-And prev/next navigation buttons are present
-When the user clicks the next button
-Then the carousel advances to the next slide
-```
+#### Scenario: Dark mode toggle
 
-### Scenario: CTA banner displays
-```gherkin
-Given the CTA banner section is visible
-Then it shows "Ready to Go Solar?" heading
-And it shows "Get Free Quote" and phone number buttons
-```
+- **GIVEN** the page loads in light mode
+- **WHEN** the user clicks the dark mode toggle
+- **THEN** the page switches to dark mode
+- **AND** the toggle icon changes to sun
+- **WHEN** the user clicks the toggle again
+- **THEN** the page switches back to light mode
 
-### Scenario: FAQ accordion expands and collapses
-```gherkin
-Given the FAQ section is visible
-Then it displays at least 5 FAQ questions
-When the user clicks a FAQ question
-Then the answer expands into view
-When the user clicks the same question again
-Then the answer collapses
-```
+### Requirement: Hero section displays savings calculator
 
-### Scenario: Contact form validates inputs
-```gherkin
-Given the contact form is visible
-When the user submits the form with empty required fields
-Then validation errors appear for Full Name, Email, and Message
-When the user fills in valid data and submits
-Then the form submission handler fires
-```
+The hero section SHALL display a headline, description, CTA buttons, social proof stats, and a savings calculator widget.
 
-### Scenario: Footer renders correctly
-```gherkin
-Given the footer is visible
-Then it shows the brand logo and tagline
-And it shows link columns: Solutions, Resources, Company
-And it shows contact info: address, phone, email
-And it shows social media icons
-And it shows copyright text
-And it links to https://www.componentdock.com/
-```
+#### Scenario: Hero section displays savings calculator
 
-### Scenario: Mobile responsive layout
-```gherkin
-Given the viewport width is less than 768px
-Then the navbar collapses to a hamburger menu
-And the hero section stacks vertically
-And the services grid becomes single column
-And a sticky mobile CTA bar appears at the bottom
-```
+- **GIVEN** the hero section is visible
+- **THEN** the hero shows the headline "Power Your Home With Clean Energy"
+- **AND** the hero shows a savings calculator widget
+- **AND** the calculator has a state dropdown selector
+- **AND** the calculator has a monthly bill slider ($50-$500)
+- **AND** the calculator shows 4 result cards
 
-## Verification Checklist
+### Requirement: Savings calculator computes results
 
-- [ ] All sections render in the correct order
-- [ ] Design tokens (colors, fonts, radii) match the reference
-- [ ] Savings calculator computes correctly for different inputs
-- [ ] Dark mode toggle works and persists via localStorage
-- [ ] FAQ accordion expands/collapses correctly
-- [ ] Contact form validates required fields
-- [ ] Testimonials carousel navigates between slides
-- [ ] Mobile responsive layout works at all breakpoints
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code (provenance only in spec)
-- [ ] Placeholder images use picsum.photos with deterministic seeds
-- [ ] Google Fonts loaded via <link> in index.html
-- [ ] Icons from lucide-react
-- [ ] 100% test coverage (lines, functions, branches, statements)
+The savings calculator SHALL compute annual savings, CO2 offset, payback period, and federal tax credit based on state and bill inputs.
+
+#### Scenario: Savings calculator computes results
+
+- **GIVEN** the calculator is visible
+- **WHEN** the user selects "California" from the state dropdown
+- **AND** the user sets the monthly bill to $200
+- **THEN** the Annual Savings card updates to a non-zero dollar amount
+- **AND** the CO2 Offset card shows a tons value
+- **AND** the Payback Period card shows a years value
+- **AND** the Federal Tax Credit card shows a dollar amount
+
+### Requirement: Stats bar displays counters
+
+The stats section SHALL display 4 key metrics.
+
+#### Scenario: Stats bar displays counters
+
+- **GIVEN** the stats section is visible
+- **THEN** it shows 4 stat items: Installations, Saved for Customers, Customer Satisfaction, States Served
+- **AND** each stat displays its numeric value
+
+### Requirement: Services section displays cards
+
+The services section SHALL display 3 service cards with titles, icons, and descriptions.
+
+#### Scenario: Services section displays cards
+
+- **GIVEN** the services section is visible
+- **THEN** it shows a heading "Complete Solar Solutions"
+- **AND** it displays 3 service cards: Residential Solar, Commercial Solar, Battery Storage
+- **AND** each card has a title, icon, and description paragraph
+
+### Requirement: ROI calculator displays comparison
+
+The ROI calculator SHALL show a comparison table between solar and traditional energy costs, plus a cumulative savings bar chart.
+
+#### Scenario: ROI calculator displays comparison
+
+- **GIVEN** the ROI calculator section is visible
+- **THEN** it shows a heading "Solar vs. Traditional Energy"
+- **AND** it shows a cost comparison table with Solar and Grid columns
+- **AND** it shows cumulative savings bars for Year 1, Year 5, Year 10, and Year 25
+
+### Requirement: Installation timeline displays steps
+
+The installation timeline SHALL show a 4-step process with visual indicators.
+
+#### Scenario: Installation timeline displays steps
+
+- **GIVEN** the installation timeline section is visible
+- **THEN** it shows a heading "How It Works"
+- **AND** it displays 4 steps: Free Consultation, Design & Permits, Professional Installation, Activation & Monitoring
+- **AND** each step has a number, icon, title, and description
+
+### Requirement: Testimonials carousel navigates
+
+The testimonials section SHALL display customer reviews in a carousel with navigation controls.
+
+#### Scenario: Testimonials carousel navigates
+
+- **GIVEN** the testimonials section is visible
+- **THEN** it shows at least 3 testimonial cards
+- **AND** each card has a star rating, quote text, customer name, and location
+- **AND** prev/next navigation buttons are present
+- **WHEN** the user clicks the next button
+- **THEN** the carousel advances to the next slide
+
+### Requirement: CTA banner displays
+
+The CTA banner SHALL display a call-to-action heading and buttons.
+
+#### Scenario: CTA banner displays
+
+- **GIVEN** the CTA banner section is visible
+- **THEN** it shows "Ready to Go Solar?" heading
+- **AND** it shows "Get Free Quote" and phone number buttons
+
+### Requirement: FAQ accordion expands and collapses
+
+The FAQ section SHALL display at least 5 questions with expand/collapse behavior.
+
+#### Scenario: FAQ accordion expands and collapses
+
+- **GIVEN** the FAQ section is visible
+- **THEN** it displays at least 5 FAQ questions
+- **WHEN** the user clicks a FAQ question
+- **THEN** the answer expands into view
+- **WHEN** the user clicks the same question again
+- **THEN** the answer collapses
+
+### Requirement: Contact form validates inputs
+
+The contact form SHALL validate required fields and show error messages for invalid input.
+
+#### Scenario: Contact form validates inputs
+
+- **GIVEN** the contact form is visible
+- **WHEN** the user submits the form with empty required fields
+- **THEN** validation errors appear for Full Name, Email, and Message
+- **WHEN** the user fills in valid data and submits
+- **THEN** the form submission handler fires
+
+### Requirement: Footer renders correctly
+
+The footer SHALL display brand info, link columns, contact details, social icons, copyright, and a link to Component Dock.
+
+#### Scenario: Footer renders correctly
+
+- **GIVEN** the footer is visible
+- **THEN** it shows the brand logo and tagline
+- **AND** it shows link columns: Solutions, Resources, Company
+- **AND** it shows contact info: address, phone, email
+- **AND** it shows social media icons
+- **AND** it shows copyright text
+- **AND** it links to https://www.componentdock.com/
+
+### Requirement: Mobile responsive layout
+
+The template SHALL be responsive and adapt to mobile viewports.
+
+#### Scenario: Mobile responsive layout
+
+- **GIVEN** the viewport width is less than 768px
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero section stacks vertically
+- **AND** the services grid becomes single column
