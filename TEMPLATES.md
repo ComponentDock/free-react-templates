@@ -1191,7 +1191,7 @@
 - [x] **Stylistic** — [colorlib](https://colorlib.com/wp/template/stylistic/) · [pose](https://pose.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stylistic-free-template.jpg)
 - [x] **Suitcase** — [colorlib](https://colorlib.com/wp/template/suitcase/) · [packr](https://packr.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/suitcase-free-template.jpg)
 - [x] **Summit** — [colorlib](https://colorlib.com/wp/template/summit/) · [summit](https://summit.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/summit-free-template.jpg)
-- [~] **Supreme** — [colorlib](https://colorlib.com/wp/template/supreme/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/supreme-free-template-1.jpg)
+- [x] **Supreme** — [colorlib](https://colorlib.com/wp/template/supreme/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/supreme-free-template-1.jpg) · [stamp](https://stamp.free.componentdock.com)
 - [ ] **Tailor** — [colorlib](https://colorlib.com/wp/template/tailor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tailor-free-template.jpg)
 - [x] **Tangre** — [colorlib](https://colorlib.com/wp/template/tangre/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tangre-free-template.jpg) · [wainscot](https://wainscot.free.componentdock.com)
 - [ ] **Tattooz** — [colorlib](https://colorlib.com/wp/template/tattooz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tattooz-free-template.jpg)
@@ -1955,7 +1955,7 @@
 - [x] **Industry Inc** — [colorlib](https://colorlib.com/wp/template/industry-inc/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/industryinc-free-template.jpg) · [dynamo](https://dynamo.free.componentdock.com)
 - [x] **Lendo** — [colorlib](https://colorlib.com/wp/template/lendo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lendo-free-template.jpg) · [steelcraft](https://steelcraft.free.componentdock.com)
 - [ ] **Roofing** — [colorlib](https://colorlib.com/wp/template/roofing/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/roofing-free-template.jpg)
-- [ ] **Supreme** — [colorlib](https://colorlib.com/wp/template/supreme/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/supreme-free-template-1.jpg)
+- [x] **Supreme** — [colorlib](https://colorlib.com/wp/template/supreme/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/supreme-free-template-1.jpg) · [stamp](https://stamp.free.componentdock.com)
 - [ ] **Woodwork** — [colorlib](https://colorlib.com/wp/template/woodwork/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/woodwork-colorlib-template.jpg)
 
 ## Interior Design (29)
