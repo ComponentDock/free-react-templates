@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — from ColorLib Suitcase design: blue #0e27fb, golden #F7AF1D */
+  --color-brand: #0e27fb;
+  --color-brand-dark: #0b1fc4;
+  --color-gold: #f7af1d;
+
+  /* Ink — dark text (#333333 from the original) */
+  --color-ink: #333333;
+  --color-ink-dark: #1a1a1a;
+
+  /* Paper — light background (#f0f0f0 from the original) */
+  --color-paper: #f0f0f0;
+
+  /* Cloud — light grey sections (#fafafa) */
+  --color-cloud: #fafafa;
+
+  /* Mist — muted text */
+  --color-mist: #727272;
+
+  /* Font: Inconsolata monospace from the original */
+  --font-mono: 'Inconsolata', ui-monospace, monospace;
+
+  --color-primary-50: #eef0ff;
+  --color-primary-100: #dde3ff;
+  --color-primary-200: #c2c9ff;
+  --color-primary-300: #969dff;
+  --color-primary-400: #6466ff;
+  --color-primary-500: #0e27fb;
+  --color-primary-600: #0b1fc4;
+  --color-primary-700: #0918a0;
+  --color-primary-800: #071280;
+  --color-primary-900: #050e60;
+}
