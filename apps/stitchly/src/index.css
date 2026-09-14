@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Stitchly brand palette — recreated from the ColorLib "Tailor" design:
+     brand copper #BE9278, secondary blue #6785FF, navy #072366,
+     near-black #16161a, light bgs #F5F9FB / #f7f7fd / #f1f4fa / #f9fafc. */
+  --color-brand: #be9278;
+  --color-brand-dark: #a67a62;
+  --color-accent: #6785ff;
+
+  /* Ink — navy headings/footer (#072366). */
+  --color-ink: #072366;
+  --color-ink-dark: #051a4d;
+
+  /* Paper — light section backgrounds. */
+  --color-paper: #f5f9fb;
+  --color-lavender: #f1f4fa;
+  --color-testimonial: #f9fafc;
+
+  /* Mist — muted body text. */
+  --color-mist: #6b7280;
+
+  /* Primary scale so shared Button/ButtonLink `primary` variants resolve to brand copper. */
+  --color-primary-50: #fdf6f0;
+  --color-primary-100: #f8e8da;
+  --color-primary-200: #f0d0b5;
+  --color-primary-300: #e4b48c;
+  --color-primary-400: #d49a6a;
+  --color-primary-500: #be9278;
+  --color-primary-600: #a67a62;
+  --color-primary-700: #8c6350;
+  --color-primary-800: #745042;
+  --color-primary-900: #5f4237;
+
+  /* Original fonts: "Josefin Sans" (headings) + "Montserrat" (body). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Josefin Sans', ui-serif, Georgia, serif;
+}
