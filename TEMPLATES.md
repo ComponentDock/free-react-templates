@@ -1154,7 +1154,7 @@
 - [x] **Roberto** — [colorlib](https://colorlib.com/wp/template/roberto/) · [retreat](https://retreat.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/roberto-free-template-1-1.jpg)
 - [x] **Robotics** — [colorlib](https://colorlib.com/wp/template/robotics/) · [mechbot](https://mechbot.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/robotics-free-template.jpg)
 - [x] **Saas** — [colorlib](https://colorlib.com/wp/template/saas/) · [cirrus](https://cirrus.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/saas-free-template.jpg)
-- [~] **Safario** — [colorlib](https://colorlib.com/wp/template/safario/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/safario-free-template.jpg)
+- [x] **Safario** · [expedio](https://free-react-templates-expedio.surge.sh) — [colorlib](https://colorlib.com/wp/template/safario/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/safario-free-template.jpg)
 - [x] **Saita** — [colorlib](https://colorlib.com/wp/template/saita/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/saita-colorlib-template.jpg) · [pulse](https://pulse.free.componentdock.com)
 - [x] **Sasu** — [colorlib](https://colorlib.com/wp/template/sasu/) · [driven](https://driven.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sasu-free-template.jpg)
 - [ ] **Scenic** — [colorlib](https://colorlib.com/wp/template/scenic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/scenic-free-template.jpg)
