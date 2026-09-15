@@ -1253,7 +1253,7 @@
 - [x] **Bcharity** — [colorlib](https://colorlib.com/wp/template/bcharity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bcharity-free-template.jpg) · [givemore](https://givemore.free.componentdock.com)
 - [x] **Cause** — [colorlib](https://colorlib.com/wp/template/cause/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cause-free-template-1.jpg) · [Altruist](https://altruist.free.componentdock.com)
 - [x] **Charifit** — [colorlib](https://colorlib.com/wp/template/charifit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/charifit-free-template.jpg) · [kindfund](https://kindfund.free.componentdock.com)
-- [ ] **Charilife** — [colorlib](https://colorlib.com/wp/template/charilife/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/charilife-free-template-1.jpg)
+- [~] **Charilife** — [colorlib](https://colorlib.com/wp/template/charilife/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/charilife-free-template-1.jpg)
 - [x] **Charitee** — [colorlib](https://colorlib.com/wp/template/charitee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/charitee-colorlib-template.jpg) · [giveback](https://giveback.free.componentdock.com)
 - [x] **Chariter** — [colorlib](https://colorlib.com/wp/template/chariter/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/chariter-free-template.jpg) · [meliora](https://meliora.free.componentdock.com)
 - [ ] **Charity** — [colorlib](https://colorlib.com/wp/template/charity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/charity-free-non-profit-donation-website-template.jpg)

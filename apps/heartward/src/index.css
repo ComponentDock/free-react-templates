@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Heartward design tokens — recreated from source preview stylesheets
+     (no assets copied):
+     - brand coral #ff573d: primary CTA buttons, accent color
+     - dark navy #15181d: navbar, footer backgrounds
+     - light gray #ececec: section alternating backgrounds
+     - body text #666: paragraph text
+     - muted #999999: secondary text
+     - purple tint #f0e9ff: blog sidebar accents
+     - fonts: Lora (headings), Roboto (body) */
+  --color-primary: #ff573d;
+  --color-primary-500: #ff573d;
+  --color-primary-600: #e54a33;
+  --color-primary-700: #cc3f2b;
+  --color-dark: #15181d;
+  --color-light: #ececec;
+  --color-ink: #15181d;
+  --color-surface: #f0e9ff;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Lora', Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.75;
+    color: #666;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--color-ink);
+  }
+}
