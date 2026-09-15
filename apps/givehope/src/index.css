@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* GiveHope brand colors — from the ColorLib "Bcharity" preview
+     (https://preview.colorlib.com/theme/bcharity/ + css/style.css):
+     a charity/nonprofit theme with a green #00c424 primary,
+     dark navy #0d101d for footer/backgrounds, and muted text #7f7f7f. */
+  --color-primary-50: #e6ffe9;
+  --color-primary-100: #b3ffb8;
+  --color-primary-200: #80ff8a;
+  --color-primary-300: #4dff5c;
+  --color-primary-400: #00c424;
+  --color-primary-500: #00a81e;
+  --color-primary-600: #008c19;
+  --color-primary-700: #007014;
+  --color-primary-800: #00550f;
+  --color-primary-900: #003a0a;
+
+  /* Dark navy — footer and dark sections. */
+  --color-navy: #0d101d;
+
+  /* Heading color (ColorLib #14182d). */
+  --color-heading: #14182d;
+
+  /* Body text color (ColorLib #7f7f7f). */
+  --color-smoke: #7f7f7f;
+
+  /* Section subtitle (ColorLib #b3b4b3). */
+  --color-sub: #b3b4b3;
+
+  /* Light section backgrounds. */
+  --color-mist: #f2f5f3;
+
+  /* Border color. */
+  --color-border: #e9ebec;
+
+  /* Playfair Display (headings) + Roboto (body) via Google Fonts <link> in
+     index.html — matching the ColorLib font pairing. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}
