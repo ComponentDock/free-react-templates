@@ -1312,7 +1312,7 @@
 ## Classified Ads (4)
 
 - [x] **Auction** — [colorlib](https://colorlib.com/wp/template/auction/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/auction-free-template.jpg) · [bidcraft](https://bidcraft.free.componentdock.com)
-- [ ] **Classy Ads** — [colorlib](https://colorlib.com/wp/template/classy-ads/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/classyads-free-template.jpg)
+- [~] **Classy Ads** — [colorlib](https://colorlib.com/wp/template/classy-ads/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/classyads-free-template.jpg)
 - [x] **Mondy** — [colorlib](https://colorlib.com/wp/template/mondy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mondy-free-template.jpg) · [estately](https://estately.free.componentdock.com)
 - [ ] **Rehomes** — [colorlib](https://colorlib.com/wp/template/rehomes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rehomes-free-template.jpg)
 
