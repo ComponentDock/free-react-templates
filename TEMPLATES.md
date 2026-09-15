@@ -1226,7 +1226,7 @@
 - [x] **Watch** — [colorlib](https://colorlib.com/wp/template/watch/) · [wristly](https://wristly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/watch-free-template.jpg)
 - [x] **Waterboat** — [colorlib](https://colorlib.com/wp/template/waterboat/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/waterboat-free-template.jpg) · [marina](https://marina.free.componentdock.com)
 - [x] **Wellspa** — [colorlib](https://colorlib.com/wp/template/wellspa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wellspa-free-template.jpg) · [halcyon](https://halcyon.free.componentdock.com)
-- [ ] **Whisper** — [colorlib](https://colorlib.com/wp/template/whisper/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/whisper-free-template.jpg)
+- [~] **Whisper** — [colorlib](https://colorlib.com/wp/template/whisper/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/whisper-free-template.jpg)
 - [ ] **Whitespace** — [colorlib](https://colorlib.com/wp/template/whitespace/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/whitespace-free-template.jpg)
 - [x] **Wines** — [colorlib](https://colorlib.com/wp/template/wines/) · [vintner](https://vintner.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wines-free-template.jpg)
 - [ ] **Winkel** — [colorlib](https://colorlib.com/wp/template/winkel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/winkel-free-template.jpg)
@@ -2135,7 +2135,7 @@
 - [x] **Solicitor** — [colorlib](https://colorlib.com/wp/template/solicitor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solicitor-free-template.jpg) · [lawguard](https://lawguard.free.componentdock.com)
 - [ ] **Thelawyer** — [colorlib](https://colorlib.com/wp/template/thelawyer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelawyer-free-template.jpg)
 - [ ] **Theorder** — [colorlib](https://colorlib.com/wp/template/theorder/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theorder-free-template.jpg)
-- [ ] **Whisper** — [colorlib](https://colorlib.com/wp/template/whisper/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/whisper-free-template.jpg)
+- [~] **Whisper** — [colorlib](https://colorlib.com/wp/template/whisper/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/whisper-free-template.jpg)
 
 ## Listing (1)
 

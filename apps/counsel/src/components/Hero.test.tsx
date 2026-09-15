@@ -3,19 +3,21 @@ import { render, screen } from '@testing-library/react'
 import { Hero } from './Hero'
 
 describe('Hero', () => {
-  it('renders the headline and CTA button', () => {
+  it('renders the headline, subheading, and call-to-action button', () => {
     render(<Hero />)
-    expect(
-      screen.getByRole('heading', { level: 1, name: /Finest And Strongest Law Firm/i }),
-    ).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /More About Us/i })).toBeInTheDocument()
+
+    expect(screen.getByText('We are here to help!')).toBeInTheDocument()
+
+    const heading = screen.getByRole('heading', { level: 1 })
+    expect(heading.textContent).toMatch(/Experience \. Innovation \. Excellence/)
+
+    expect(screen.getByRole('link', { name: 'Request a Free Consultation' })).toBeInTheDocument()
   })
 
-  it('renders the background image with an accessible name', () => {
+  it('shows a decorative hero background image', () => {
     render(<Hero />)
-    expect(screen.getByRole('img', { name: /Law office/i })).toHaveAttribute(
-      'src',
-      expect.stringContaining('picsum.photos'),
-    )
+
+    const bgDiv = document.querySelector('[style*="picsum.photos"]')
+    expect(bgDiv).toBeInTheDocument()
   })
 })

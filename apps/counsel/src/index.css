@@ -1,12 +1,36 @@
 @import 'tailwindcss';
 
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  --color-brand: #ab7636;
-  --color-brand-light: #d7af7e;
-  --color-brand-dark: #8a5c28;
-  --color-section-bg: #f3f1ef;
+  /* Counsel brand colors — lawyer/legal firm theme with blue #007bff primary,
+     dark backgrounds #1d2124 / #343a40, light bg #f7f7f7. */
+  --color-primary-50: #e6f0ff;
+  --color-primary-100: #b3d1ff;
+  --color-primary-200: #80b3ff;
+  --color-primary-300: #4d94ff;
+  --color-primary-400: #1a75ff;
+  --color-primary-500: #007bff;
+  --color-primary-600: #0062cc;
+  --color-primary-700: #004a99;
+  --color-primary-800: #003166;
+  --color-primary-900: #001933;
+
+  /* Dark backgrounds */
+  --color-dark-bg: #1d2124;
+  --color-dark-card: #343a40;
+
+  /* Light background */
+  --color-light-bg: #f7f7f7;
+
+  /* Muted text */
+  --color-smoke: #7f7f7f;
+
   --color-ink: #1a1a1a;
-  --color-mist: #666666;
-  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
-  --font-display: 'Cardo', ui-serif, Georgia, serif;
+
+  /* Poppins (headings) + Lora (body) via Google Fonts <link> in index.html */
+  --font-sans: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
 }

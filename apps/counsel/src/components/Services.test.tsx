@@ -3,12 +3,29 @@ import { render, screen } from '@testing-library/react'
 import { Services } from './Services'
 
 describe('Services', () => {
-  it('renders the section heading and all four services', () => {
+  it('renders four service cards with titles and descriptions', () => {
     render(<Services />)
-    expect(screen.getByRole('heading', { name: /Our Services/i })).toBeInTheDocument()
-    expect(screen.getByText('Get Law Advice')).toBeInTheDocument()
-    expect(screen.getByText('Review The Case')).toBeInTheDocument()
-    expect(screen.getByText('Winning Guarantee')).toBeInTheDocument()
-    expect(screen.getByText('Fully Support')).toBeInTheDocument()
+
+    const titles = [
+      'Get Your Legal Advice',
+      'Work with Expert Lawyers',
+      'Have Great Discounted Rates',
+      'Review Your Case Documents',
+    ]
+
+    for (const title of titles) {
+      expect(screen.getByRole('heading', { level: 3, name: title })).toBeInTheDocument()
+    }
+  })
+
+  it('renders service descriptions', () => {
+    render(<Services />)
+
+    expect(
+      screen.getByText(/expert attorneys provide comprehensive legal advice/),
+    ).toBeInTheDocument()
+    expect(screen.getByText(/experienced lawyers who specialize/)).toBeInTheDocument()
+    expect(screen.getByText(/competitive and transparent pricing/)).toBeInTheDocument()
+    expect(screen.getByText(/thoroughly reviews all case documents/)).toBeInTheDocument()
   })
 })
