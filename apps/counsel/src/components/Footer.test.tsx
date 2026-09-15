@@ -3,15 +3,38 @@ import { render, screen } from '@testing-library/react'
 import { Footer } from './Footer'
 
 describe('Footer', () => {
-  it('shows the site name, service links, contact info and Component Dock credit', () => {
+  it('renders the brand, Practice Areas, Business Hours, and Contact Info columns', () => {
     render(<Footer />)
-    expect(screen.getByRole('link', { name: /Counsel/i })).toBeInTheDocument()
-    expect(screen.getByText('Family Law')).toBeInTheDocument()
-    expect(screen.getByText('Business Law')).toBeInTheDocument()
-    expect(screen.getByText('+1 (555) 123-4567')).toBeInTheDocument()
+
+    expect(screen.getByRole('link', { name: 'Counsel' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Practice Areas' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Business Hours' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Contact Info' })).toBeInTheDocument()
+
+    expect(screen.getByText('+1 (800) 555-1234')).toBeInTheDocument()
     expect(screen.getByText('info@counsel.com')).toBeInTheDocument()
-    const dockLink = screen.getByRole('link', { name: /Component Dock/i })
-    expect(dockLink).toHaveAttribute('href', 'https://www.componentdock.com/')
-    expect(dockLink).toHaveAttribute('target', '_blank')
+  })
+
+  it('shows social media links', () => {
+    render(<Footer />)
+
+    expect(screen.getByRole('link', { name: 'Website' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Email' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Share' })).toBeInTheDocument()
+  })
+
+  it('links to Component Dock', () => {
+    render(<Footer />)
+
+    const link = screen.getByRole('link', { name: 'Component Dock' })
+    expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
+  })
+
+  it('shows the current year in the copyright line', () => {
+    render(<Footer />)
+
+    expect(
+      screen.getByText(new RegExp(`© ${new Date().getFullYear()} Counsel`)),
+    ).toBeInTheDocument()
   })
 })
