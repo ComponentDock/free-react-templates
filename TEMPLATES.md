@@ -1233,7 +1233,7 @@
 - [x] **Winter** — [colorlib](https://colorlib.com/wp/template/winter/) · [snowline](https://snowline.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/winter-free-template.jpg)
 - [x] **Wordpress Business Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-business-themes/) · [slate](https://slate.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-business-themes1.jpg)
 - [x] **Wordpress Restaurant Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-restaurant-themes/) · [dining-deck](https://dining-deck.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jevelin-restaurant-website-template.jpg)
-- [~] **Work** — [colorlib](https://colorlib.com/wp/template/work/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/work-free-template.jpg)
+- [x] **Work** — [colorlib](https://colorlib.com/wp/template/work/) · [repertoire](https://repertoire.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/work-free-template.jpg)
 [x] **Workhub** — [colorlib](https://colorlib.com/wp/template/workhub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workhub-template-1771943925457.jpg) · [Deskly](https://deskly.free.componentdock.com)
 - [x] **Workout** — [colorlib](https://colorlib.com/wp/template/workout/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workout-free-template.jpg) · [sweatly](https://sweatly.free.componentdock.com)
 - [x] **Xgym** — [colorlib](https://colorlib.com/wp/template/xgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/xgym-free-template.jpg) · [bolt](https://bolt.free.componentdock.com)
