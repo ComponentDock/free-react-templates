@@ -1239,7 +1239,7 @@
 - [x] **Xgym** — [colorlib](https://colorlib.com/wp/template/xgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/xgym-free-template.jpg) · [bolt](https://bolt.free.componentdock.com)
 - [x] **Yoga Studio** — [colorlib](https://colorlib.com/wp/template/yoga-studio/) · [pranayama](https://pranayama.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogastudio-free-template.jpg)
 - [x] **Yogafun** — [colorlib](https://colorlib.com/wp/template/yogafun/) · [namastay](https://namastay.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogafun-free-template.jpg)
-- [~] **Youragent** — [colorlib](https://colorlib.com/wp/template/youragent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youragent-free-template.jpg)
+- [x] **Youragent** — [colorlib](https://colorlib.com/wp/template/youragent/) · [proxy](https://proxy.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youragent-free-template.jpg)
 - [x] **Youthconnect** — [colorlib](https://colorlib.com/wp/template/youthconnect/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youthconnect-template-1770211452999.jpg) · [ignite](https://ignite.free.componentdock.com)
 - [x] **Yummy 2** — [colorlib](https://colorlib.com/wp/template/yummy-2/) · [umami](https://umami.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-free-template.jpg)
 - [ ] **Zeta** — [colorlib](https://colorlib.com/wp/template/zeta/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeta-free-template.jpg)
@@ -2619,7 +2619,7 @@
 [x] **Theestate** — [colorlib](https://colorlib.com/wp/template/theestate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theestate-free-template.jpg) · [manor](https://free-react-templates-manor.surge.sh)
 - [x] **Uptown** — [colorlib](https://colorlib.com/wp/template/uptown/) · [homestead](https://homestead.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/uptown-free-template.jpg)
 - [x] **Warehouse** — [colorlib](https://colorlib.com/wp/template/warehouse/) · [depot](https://depot.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/warehouse-free-template.jpg)
-- [~] **Youragent** — [colorlib](https://colorlib.com/wp/template/youragent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youragent-free-template.jpg)
+- [x] **Youragent** — [colorlib](https://colorlib.com/wp/template/youragent/) · [proxy](https://proxy.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youragent-free-template.jpg)
 
 ## Registration Forms (37)
 
