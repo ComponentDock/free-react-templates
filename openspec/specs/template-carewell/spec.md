@@ -2,7 +2,11 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Kare** charity template as a React 19 + Vite + Tailwind CSS 4 + TypeScript app.
+Carewell is a single-page nonprofit/charity website template in the
+free-react-templates monorepo. It is an original React recreation of the
+ColorLib free "Kare" charity website template design (see TEMPLATES.md),
+built under a different name with the monorepo stack: Vite + React 19 +
+Tailwind CSS 4 + TypeScript.
 
 - **Source slug**: `kare`
 - **Preview URL**: https://preview.colorlib.com/theme/kare/
@@ -18,245 +22,176 @@ Extracted from the live preview at https://preview.colorlib.com/theme/kare/ and 
 
 ### Brand Colors
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--brand-primary` | `#ea2c58` (hot pink-red) | Primary buttons, links, progress bars, accents |
-| `--brand-gold` | `#f8b600` | Accent highlights, funding badges |
-| `--brand-cyan` | `#4cd3e3` | Secondary accent, icon colors |
-| `--brand-blue` | `#38a4ff` | Info/accent color |
-| `--brand-red` | `#f44a40` | Warning/urgency |
+| Token                | Value                    | Usage                                          |
+| -------------------- | ------------------------ | ---------------------------------------------- |
+| `--color-brand`      | `#ea2c58` (hot pink-red) | Primary buttons, links, progress bars, accents |
+| `--color-brand-gold` | `#f8b600`                | Accent highlights, funding badges              |
+| `--color-brand-cyan` | `#4cd3e3`                | Secondary accent, icon colors                  |
+| `--color-brand-blue` | `#38a4ff`                | Info/accent color                              |
 
 ### Neutrals
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--text-primary` | `#222222` | Body text, headings |
-| `--text-muted` | `#777777` | Secondary text, descriptions |
-| `--text-light` | `#999999` | Tertiary text |
-| `--bg-light` | `#f9f9ff` | Section alternating background |
-| `--bg-white` | `#ffffff` | Default section background |
-| `--border` | `#eeeeee` | Card borders, dividers |
+| Token                  | Value     | Usage                          |
+| ---------------------- | --------- | ------------------------------ |
+| `--color-text-primary` | `#222222` | Body text, headings            |
+| `--color-text-muted`   | `#777777` | Secondary text, descriptions   |
+| `--color-bg-alt`       | `#f9f9ff` | Section alternating background |
+| `--color-border`       | `#eeeeee` | Card borders, dividers         |
 
 ### Typography
 
-- **Font family**: `"Roboto", sans-serif`
-- Loaded via Google Fonts
+- **Font family**: `Roboto, sans-serif` (Google Fonts)
 - Standard Bootstrap-based sizing
 
 ### Button Styles
 
 - Primary buttons: `background: #ea2c58`, white text, no border-radius (sharp/square edges), `padding: 15px 30px`
-- Hover: darker shade
 - Secondary buttons: white background with border, `#ea2c58` hover fill
-
-### Section Backgrounds
-
-- Hero: Full-width background image (`banner/home.jpg`) with dark overlay (`rgba(24,24,24,0.33)`)
-- Donation stats: White (`#ffffff`)
-- Major causes: Light blue-gray (`#f9f9ff`)
-- Make a donation: White
-- Clients logos: White
-- Support campaign: Light blue-gray (`#f9f9ff`)
-- Experience: Full-width background image with dark overlay (`rgba(0,0,0,0.42)`)
-- Footer: Dark (implied by text color)
 
 ## Section Structure (from live DOM)
 
 Order as found on the preview page:
 
-1. **Navbar** — "Kare Charity" branding, dropdown menus (home, causes, events, Pages, About, Blog, Contact), "donate now" button
-2. **Hero / Banner** — Full-width background image with dark overlay, headline + description text + "donate now" CTA
-3. **Donation Stats** — 4 stat boxes in a row: Total Donation, Fund Raised, Highest Donation, Total Donation (each with large number + label)
-4. **Our Major Causes** — Section title + description, owl-carousel of cause cards. Each card: image, progress bar (76%), raised/total amounts, title, description, "donate here" link
-5. **Make a Donation** — "Make a Donation Today" heading + description, preset amount buttons ($10, $50, $100, $250), USD selector, "donate now" submit button
-6. **Clients Logo Area** — Logo carousel (6 partner logos)
-7. **Support Campaign** — "Support a campaign or fundraiser" heading + description, cards showing campaign name, amount raised, funding progress
-8. **Experience Donation** — Parallax background image section, "Experience How your Donation Can Reach" heading + description + "make donation now" CTA
-9. **About Me + Newsletter** — Sidebar about card with photo + "Create Fundraising today" heading, newsletter signup form + social media links
-10. **Footer** — Copyright, "Made with Colorlib" attribution → replace with Component Dock
+1. **Navbar** — "Carewell" branding, nav links (Home, Causes, Events, About, Blog, Contact), "Donate Now" CTA button
+2. **Hero** — Full-width background image with dark overlay, headline + description + "Donate Now" CTA
+3. **DonationStats** — 4 stat boxes: Total Donation, Fund Raised, Highest Donation, Total Donors
+4. **MajorCauses** — Heading + description, 3 cause cards with image, progress bar, amounts, title, description, "Donate Here" link
+5. **MakeDonation** — "Make a Donation Today" heading, preset amount buttons ($10, $50, $100, $250), USD label, "Donate Now" submit
+6. **ClientsLogos** — Logo carousel (6 greyscale partner logos)
+7. **SupportCampaign** — "Support a Campaign or Fundraiser" heading, campaign cards with funding progress
+8. **ExperienceDonation** — Parallax background with dark overlay, heading, description, "Make Donation Now" CTA
+9. **AboutNewsletter** — About card with avatar, newsletter signup form, social media links
+10. **Footer** — Copyright, Component Dock link
 
-## Gherkin Requirements
+## Requirements
 
-### Navbar
-```gherkin
-Feature: Carewell Navbar
+### Requirement: Navbar renders brand and navigation
 
-  Scenario: Displays branding and navigation
-    Given the user loads the page
-    Then the navbar shows "Carewell" as the brand name
-    And navigation links include "Home", "Causes", "Events", "About", "Blog", "Contact"
-    And a "Donate Now" call-to-action button is visible
+Users SHALL see "Carewell" brand name, navigation links (Home, Causes, Events, About, Blog, Contact), and a "Donate Now" CTA button in the navbar.
 
-  Scenario: Brand link navigates to home
-    Given the user clicks the "Carewell" brand link
-    Then the page scrolls to the top
+#### Scenario: Desktop navbar renders all links
 
-  Scenario: Donate Now button is styled
-    Given the user views the navbar
-    Then the donate button has primary brand color (#ea2c58) background
-```
+- **WHEN** the page loads on a desktop viewport
+- **THEN** the navbar displays brand "Carewell"
+- **AND** links Home, Causes, Events, About, Blog, Contact are visible
+- **AND** a "Donate Now" button is visible with brand color background
 
-### Hero Banner
-```gherkin
-Feature: Carewell Hero Banner
+#### Scenario: Mobile navbar toggles on hamburger click
 
-  Scenario: Hero section displays with background
-    Given the user loads the page
-    Then a full-width hero banner is visible
-    And it has a background image with dark overlay
+- **WHEN** the user clicks the hamburger toggle
+- **THEN** navigation links become visible in mobile menu
 
-  Scenario: Hero contains headline and CTA
-    Given the user views the hero section
-    Then a headline text is displayed
-    And a description paragraph is shown
-    And a "Donate Now" button is visible
+#### Scenario: Mobile menu closes when link clicked
 
-  Scenario: Donate button links to donation section
-    Given the user clicks the hero "Donate Now" button
-    Then the page scrolls to the donation section
-```
+- **WHEN** the user clicks a navigation link in mobile menu
+- **THEN** the mobile menu closes
 
-### Donation Stats
-```gherkin
-Feature: Carewell Donation Stats
+#### Scenario: Mobile Donate Now closes menu
 
-  Scenario: Displays four stat boxes
-    Given the user views the donation stats section
-    Then four statistic boxes are displayed in a row
-    And each box shows a number and a label
-    And labels include "Total Donation", "Fund Raised", "Highest Donation"
+- **WHEN** the user clicks Donate Now in mobile menu
+- **THEN** the mobile menu closes
 
-  Scenario: Stats are visually distinct
-    Given the user views the stat boxes
-    Then each box has a white background and subtle border
-    And numbers are large and prominent
-```
+### Requirement: Hero displays headline and CTAs
 
-### Major Causes
-```gherkin
-Feature: Carewell Major Causes
+Users SHALL see a full-width hero section with a background image, dark overlay, heading text, description, and two CTA buttons.
 
-  Scenario: Section title and description
-    Given the user scrolls to the causes section
-    Then the heading "Our Major Causes" is displayed
-    And a description paragraph is shown
+#### Scenario: Hero renders headline and buttons
 
-  Scenario: Cause cards in carousel
-    Given the user views the causes carousel
-    Then multiple cause cards are visible
-    And each card has an image, title, description, and progress bar
+- **WHEN** the hero section is visible
+- **THEN** the heading "Together We Can Change Lives" is displayed
+- **AND** a description paragraph is shown
+- **AND** a "Donate Now" button links to #donate
+- **AND** a "View Activity" button links to #causes
 
-  Scenario: Progress bar shows funding status
-    Given a cause card is displayed
-    Then the progress bar shows a percentage
-    And the raised amount and total are displayed
-    And a "Donate Here" link is present
+### Requirement: DonationStats shows four stat boxes
 
-  Scenario: Carousel navigation
-    Given the user views the carousel
-    Then prev/next arrows are available
-    And the carousel can be scrolled
-```
+Users SHALL see four stat boxes with icons, values, and labels.
 
-### Make a Donation
-```gherkin
-Feature: Carewell Make a Donation
+#### Scenario: Four stat boxes are displayed
 
-  Scenario: Donation form displays correctly
-    Given the user scrolls to the donation section
-    Then "Make a Donation Today" heading is displayed
-    And four preset amount buttons ($10, $50, $100, $250) are shown
-    And a USD currency indicator is visible
-    And a "Donate Now" submit button is present
+- **WHEN** the donation stats section is visible
+- **THEN** four stat boxes are shown with Total Donation, Fund Raised, Highest Donation, Total Donors
+- **AND** each box shows a numeric value and a label
 
-  Scenario: Amount selection
-    Given the user clicks a preset amount
-    Then that amount is selected/highlighted
+### Requirement: MajorCauses displays cause cards
 
-  Scenario: Donate submission
-    Given the user has selected an amount
-    And clicks "Donate Now"
-    Then the donation action is triggered
-```
+Users SHALL see a section titled "Our Major Causes" with cause cards containing images, progress bars, amounts, titles, descriptions, and "Donate Here" links.
 
-### Clients Logo Area
-```gherkin
-Feature: Carewell Clients Logos
+#### Scenario: Three cause cards with progress bars
 
-  Scenario: Logo carousel displays
-    Given the user views the clients section
-    Then a carousel of partner/client logos is displayed
-    And logos scroll automatically
-```
+- **WHEN** the causes section is visible
+- **THEN** three cause cards are displayed
+- **AND** each card has an image, progress bar with aria-valuenow, raised/total amounts, title, description, and "Donate Here" link
 
-### Support Campaign
-```gherkin
-Feature: Carewell Support Campaign
+### Requirement: MakeDonation renders donation form
 
-  Scenario: Campaign section heading
-    Given the user scrolls to the support section
-    Then "Support a campaign or fundraiser" heading is shown
-    And a description paragraph is displayed
+Users SHALL see a donation form with preset amount buttons, USD label, and a submit button.
 
-  Scenario: Campaign cards
-    Given the user views the campaign cards
-    Then each card shows a campaign name, amount raised, and funding percentage
-    And cards are displayed in a responsive grid/carousel
-```
+#### Scenario: Four preset amounts are shown
 
-### Experience Donation
-```gherkin
-Feature: Carewell Experience Donation
+- **WHEN** the donation section is visible
+- **THEN** buttons for $10, $50, $100, $250 are displayed
+- **AND** a "USD" label is shown
+- **AND** a "Donate Now" submit button is present
 
-  Scenario: Parallax section displays
-    Given the user scrolls to the experience section
-    Then a background image with dark overlay is shown
-    And "Experience How your Donation Can Reach" heading is visible
-    And a description paragraph is present
-    And a "Make Donation Now" CTA button is displayed
-```
+#### Scenario: Amount selection highlights button
 
-### About + Newsletter
-```gherkin
-Feature: Carewell About and Newsletter
+- **WHEN** the user clicks a preset amount button
+- **THEN** that button is highlighted with brand color
 
-  Scenario: About card
-    Given the user views the bottom section
-    Then an "About Me" card with avatar photo is displayed
-    And "Create Fundraising today" heading is shown
+### Requirement: ClientsLogos displays partner logos
 
-  Scenario: Newsletter signup
-    Given the user views the newsletter area
-    Then "Newsletter" heading and "Stay updated with our latest trends" text are shown
-    And an email input field is present
-    And a submit button is visible
+Users SHALL see a row of greyscale partner logos.
 
-  Scenario: Social media links
-    Given the user views the footer area
-    Then social media icon links are displayed under "Follow Us"
-```
+#### Scenario: Six logos are displayed
 
-### Footer
-```gherkin
-Feature: Carewell Footer
+- **WHEN** the clients section is visible
+- **THEN** six partner logos are shown with alt text
 
-  Scenario: Footer content
-    Given the user scrolls to the footer
-    Then copyright text is displayed
-    And a link to "https://www.componentdock.com/" is present
-    And it reads "Component Dock" or similar branding
-```
+### Requirement: SupportCampaign shows campaign cards
 
-## Verification Checklist
+Users SHALL see a section with campaign cards showing funding progress.
 
-- [ ] Spec covers all 10 sections from the live preview DOM
-- [ ] Design tokens match the ColorLib source CSS
-- [ ] Font family matches (Roboto)
-- [ ] Primary brand color matches (#ea2c58)
-- [ ] Button styles are sharp/square (no border-radius)
-- [ ] Section backgrounds alternate white / #f9f9ff
-- [ ] Hero has dark image overlay
-- [ ] Experience section has dark image overlay
-- [ ] All Gherkin scenarios are testable
-- [ ] Footer links to Component Dock (not Colorlib)
-- [ ] No ColorLib references in app code (only in spec + TEMPLATES.md)
+#### Scenario: Three campaign cards with progress
+
+- **WHEN** the support section is visible
+- **THEN** three campaign cards are displayed
+- **AND** each card shows name, raised/total amounts, and progress bar
+
+### Requirement: ExperienceDonation displays parallax CTA
+
+Users SHALL see a parallax background section with heading, description, and CTA button.
+
+#### Scenario: Parallax section renders heading and CTA
+
+- **WHEN** the experience section is visible
+- **THEN** the heading "Experience How Your Donation Can Reach" is displayed
+- **AND** a "Make Donation Now" CTA button links to #donate
+- **AND** a dark overlay covers the background image
+
+### Requirement: AboutNewsletter shows about card and newsletter
+
+Users SHALL see an about card with avatar and a newsletter signup form with social links.
+
+#### Scenario: About card and newsletter form render
+
+- **WHEN** the about/newsletter section is visible
+- **THEN** an about card with avatar image and "Create Fundraising Today" heading is shown
+- **AND** a newsletter form with email input and "Subscribe" button is present
+- **AND** social media links (Facebook, Twitter, YouTube, Email) are displayed under "Follow Us"
+
+#### Scenario: Newsletter form submission
+
+- **WHEN** the user enters an email and clicks Subscribe
+- **THEN** the form submission is handled (preventDefault)
+
+### Requirement: Footer links to Component Dock
+
+Users SHALL see a footer with copyright text and a link to Component Dock.
+
+#### Scenario: Footer content
+
+- **WHEN** the user scrolls to the footer
+- **THEN** copyright text with "Carewell" is displayed
+- **AND** a link to https://www.componentdock.com/ labeled "Component Dock" is present
+- **AND** the link opens in a new tab
