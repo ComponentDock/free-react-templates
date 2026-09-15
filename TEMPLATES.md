@@ -1246,7 +1246,7 @@
 
 ## Charity (37)
 
-- [ ] **Adopted** — [colorlib](https://colorlib.com/wp/template/adopted/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/adopted-free-template.jpg)
+- [~] **Adopted** — [colorlib](https://colorlib.com/wp/template/adopted/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/adopted-free-template.jpg)
 - [x] **Aid** — [colorlib](https://colorlib.com/wp/template/aid/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aid-free-template.jpg) · [succor](https://succor.free.componentdock.com)
 - [x] **Amor** — [colorlib](https://colorlib.com/wp/template/amor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amor-free-template.jpg) · [caritas](https://caritas.free.componentdock.com)
 - [x] **Aspiration** — [colorlib](https://colorlib.com/wp/template/aspiration/) · [kindred](https://kindred.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aspiration-free-template.jpg)
