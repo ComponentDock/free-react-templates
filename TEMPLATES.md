@@ -1230,7 +1230,7 @@
 - [x] **Whitespace** — [colorlib](https://colorlib.com/wp/template/whitespace/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/whitespace-free-template.jpg) · [cleanpage](https://cleanpage.free.componentdock.com)
 - [x] **Wines** — [colorlib](https://colorlib.com/wp/template/wines/) · [vintner](https://vintner.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wines-free-template.jpg)
 - [~] **Winkel** — [colorlib](https://colorlib.com/wp/template/winkel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/winkel-free-template.jpg)
-- [ ] **Winter** — [colorlib](https://colorlib.com/wp/template/winter/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/winter-free-template.jpg)
+- [~] **Winter** — [colorlib](https://colorlib.com/wp/template/winter/) · [snowline](https://snowline.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/winter-free-template.jpg)
 - [x] **Wordpress Business Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-business-themes/) · [slate](https://slate.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-business-themes1.jpg)
 - [ ] **Wordpress Restaurant Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-restaurant-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jevelin-restaurant-website-template.jpg)
 - [ ] **Work** — [colorlib](https://colorlib.com/wp/template/work/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/work-free-template.jpg)
@@ -1612,7 +1612,7 @@
 - [ ] **Watch** — [colorlib](https://colorlib.com/wp/template/watch/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/watch-free-template.jpg)
 - [x] **Wines** — [colorlib](https://colorlib.com/wp/template/wines/) · [vintner](https://vintner.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wines-free-template.jpg)
 - [~] **Winkel** — [colorlib](https://colorlib.com/wp/template/winkel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/winkel-free-template.jpg)
-- [ ] **Winter** — [colorlib](https://colorlib.com/wp/template/winter/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/winter-free-template.jpg)
+- [~] **Winter** — [colorlib](https://colorlib.com/wp/template/winter/) · [snowline](https://snowline.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/winter-free-template.jpg)
 - [ ] **Wish** — [colorlib](https://colorlib.com/wp/template/wish/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wish-free-template-1.jpg)
 - [ ] **Wordpress Ecommerce Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-ecommerce-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shopkeeper.jpg)
 
