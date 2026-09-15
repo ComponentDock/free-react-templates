@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Wristly brand palette — brand blue #235ee7, accent cyan #4ae7fa. */
+  --color-brand-50: #eef4ff;
+  --color-brand-100: #d9e5ff;
+  --color-brand-200: #bcd2ff;
+  --color-brand-300: #8eb5ff;
+  --color-brand-400: #598eff;
+  --color-brand-500: #235ee7;
+  --color-brand-600: #1a4bc2;
+  --color-brand-700: #163d9e;
+  --color-brand-800: #163482;
+  --color-brand-900: #182e6b;
+
+  --color-cyan-accent: #4ae7fa;
+
+  /* Poppins — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
