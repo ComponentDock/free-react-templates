@@ -1232,7 +1232,7 @@
 - [x] **Winkel** — [colorlib](https://colorlib.com/wp/template/winkel/) · [warehaus](https://warehaus.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/winkel-free-template.jpg)
 - [x] **Winter** — [colorlib](https://colorlib.com/wp/template/winter/) · [snowline](https://snowline.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/winter-free-template.jpg)
 - [x] **Wordpress Business Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-business-themes/) · [slate](https://slate.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-business-themes1.jpg)
-- [~] **Wordpress Restaurant Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-restaurant-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jevelin-restaurant-website-template.jpg)
+- [x] **Wordpress Restaurant Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-restaurant-themes/) · [dining-deck](https://dining-deck.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jevelin-restaurant-website-template.jpg)
 - [ ] **Work** — [colorlib](https://colorlib.com/wp/template/work/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/work-free-template.jpg)
 [x] **Workhub** — [colorlib](https://colorlib.com/wp/template/workhub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workhub-template-1771943925457.jpg) · [Deskly](https://deskly.free.componentdock.com)
 - [x] **Workout** — [colorlib](https://colorlib.com/wp/template/workout/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workout-free-template.jpg) · [sweatly](https://sweatly.free.componentdock.com)
@@ -1793,7 +1793,7 @@
 - [ ] **Tasty Recipes** — [colorlib](https://colorlib.com/wp/template/tasty-recipes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tastyrecipes-free-template.jpg)
 - [ ] **Thevenue** — [colorlib](https://colorlib.com/wp/template/thevenue/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thevenue-free-template.jpg)
 - [x] **Wines** — [colorlib](https://colorlib.com/wp/template/wines/) · [vintner](https://vintner.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wines-free-template.jpg)
-- [~] **Wordpress Restaurant Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-restaurant-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jevelin-restaurant-website-template.jpg)
+- [x] **Wordpress Restaurant Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-restaurant-themes/) · [dining-deck](https://dining-deck.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jevelin-restaurant-website-template.jpg)
 - [x] **Yummy 2** — [colorlib](https://colorlib.com/wp/template/yummy-2/) · [umami](https://umami.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-free-template.jpg)
 
 ## Gallery (11)
@@ -2703,7 +2703,7 @@
 - [ ] **Tasteit** — [colorlib](https://colorlib.com/wp/template/tasteit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tasteit-free-template.jpg)
 - [ ] **Tasty** — [colorlib](https://colorlib.com/wp/template/tasty/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tasty-free-template.jpg)
 - [ ] **Thevenue** — [colorlib](https://colorlib.com/wp/template/thevenue/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thevenue-free-template.jpg)
-- [~] **Wordpress Restaurant Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-restaurant-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jevelin-restaurant-website-template.jpg)
+- [x] **Wordpress Restaurant Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-restaurant-themes/) · [dining-deck](https://dining-deck.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jevelin-restaurant-website-template.jpg)
 
 ## Resume (20)
 
