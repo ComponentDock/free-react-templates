@@ -2,130 +2,201 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Umeet** event/conference template.
+Conclave is a single-page event/conference landing template in the
+free-react-templates monorepo. It is an original React recreation of the
+ColorLib "Umeet" free template (source:
+https://colorlib.com/wp/template/umeet/), built under a
+DIFFERENT name (**Conclave**), with the monorepo stack: Vite + React 19 +
+Tailwind CSS 4 + TypeScript.
 
-- **Source slug:** `umeet`
-- **ColorLib page:** https://colorlib.com/wp/template/umeet/
-- **Live preview:** https://preview.colorlib.com/theme/umeet/
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/umeet-free-template.jpg
-- **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
+**Source slug:** `umeet`
+**ColorLib page:** https://colorlib.com/wp/template/umeet/
+**Live preview:** https://preview.colorlib.com/theme/umeet/
 
-## Design tokens (extracted from preview CSS)
+### Design tokens (extracted from preview CSS)
 
-| Token               | Value                    | Notes                                      |
-| ------------------- | ------------------------ | ------------------------------------------ |
-| Primary brand       | `#3b1d82` (deep purple)  | Used for headings, button bg, accents      |
-| Accent / CTA        | `#ea0763` (hot pink)     | Hover states, highlights, pricing CTA      |
-| Light bg            | `#f0e9ff` (lavender)     | Section alternates (.bg-gray equivalent)   |
-| White bg            | `#fff`                   | Cards, main content                       |
-| Dark footer bg      | `#111429` (navy)         | Footer background                          |
-| Text primary        | `#242424`               | Headings, body text                       |
-| Text muted          | `#797979` / `#999999`   | Subtitles, descriptions                   |
-| Font - headings     | `"Oswald", sans-serif`   | Used for large headings, hero title        |
-| Font - body         | `"Roboto", sans-serif`   | Body text, paragraphs, nav                |
-| Button radius       | `4px`                    | Primary buttons                           |
-| Card radius         | `12px`                   | Speaker cards, pricing cards              |
-| Section spacing     | `section-padding` (80px) | Consistent vertical rhythm                |
-| Hero                | Background image cover   | Full-width banner with overlay            |
-| Speaker bg          | Background image cover   | Parallax-style section behind speakers    |
-| Gallery bg          | Background image cover   | Behind gallery/achievements               |
-| Sponsor bg          | Background image cover   | Behind sponsor logos                      |
+| Token           | Value                   | Notes                                 |
+| --------------- | ----------------------- | ------------------------------------- |
+| Primary brand   | `#3b1d82` (deep purple) | Used for headings, button bg, accents |
+| Accent / CTA    | `#ea0763` (hot pink)    | Hover states, highlights, pricing CTA |
+| Light bg        | `#f7f7f7`               | Section alternates                    |
+| White bg        | `#fff`                  | Cards, main content                   |
+| Dark footer bg  | `#111429` (navy)        | Footer background                     |
+| Text primary    | `#242424`               | Headings, body text                   |
+| Text muted      | `#797979`               | Subtitles, descriptions               |
+| Font - headings | `Oswald, sans-serif`    | Used for large headings, hero title   |
+| Font - body     | `Roboto, sans-serif`    | Body text, paragraphs, nav            |
+| Button radius   | `4px`                   | Primary buttons                       |
 
-## Section structure (order extracted from preview DOM)
+## Requirements
 
-1. **Navbar** — Logo left, nav links right (About, Speakers, Schedule, Gallery, Price Table, Blog, Contact)
-2. **Hero Banner** — Full-width background image, date line ("20-22 January, 2019, Buffelo City"), countdown numbers, headline ("UX CONFERENCE 2019"), "Buy Ticket" CTA button
-3. **Stats bar** — Light gray bg, three stat blocks (e.g. 320 Attendees, 30 Speakers, 30 Sponsors)
-4. **Features ("Why Join")** — White section, 3 feature cards with icon, title, description (Always First Service, International Business, World Great Speaker)
-5. **Speakers** — Dark background image section, carousel of speaker cards (photo, name, role)
-6. **Schedule** — Light section, tabbed (Day 1 / Day 2), timeline of talks with speaker photo, talk title, time
-7. **Gallery / Achievements** — Background image section, grid of images with captions (Previous Year achievement)
-8. **Pricing** — White section, 3 pricing cards (Normal $45, Advance $50, Ultimate $60) with feature list and CTA
-9. **Sponsors** — Background image section, sponsor logo grid (Gold/Silver tiers)
-10. **Blog** — White section, 3 blog preview cards (image, title, excerpt)
-11. **Footer** — Dark navy bg, 4-column layout: About text, Navigation links, Newsletter form, InstaFeed
+### Requirement: Page structure and sections
 
-## Gherkin requirements
+The template MUST render 11 sections in the correct order.
 
-```gherkin
-Feature: Conclave event/conference template
+#### Scenario: All sections render in order
 
-  Background:
-    Given the Conclave app is served at its local dev URL
+- **WHEN** the page loads
+- **THEN** the following sections are visible in order: Navbar, Hero Banner, Innovation/Countdown, Features, Speakers, Schedule, Pricing, Sponsors, Gallery, Blog, Footer
 
-  Scenario: Page loads with all sections
-    Then the page displays the navbar
-    And the hero banner is visible with event date and countdown
-    And the stats bar shows attendee/speaker/sponsor counts
-    And the features section shows 3 feature cards
-    And the speakers section shows speaker cards
-    And the schedule section shows tabbed day views
-    And the gallery section shows an image grid
-    And the pricing section shows 3 tier cards
-    And the sponsors section shows sponsor logos
-    And the blog section shows 3 blog preview cards
-    And the footer displays About, Navigation, Newsletter, and InstaFeed columns
+### Requirement: Navbar
 
-  Scenario: Navbar navigation
-    When the user clicks a nav link
-    Then the page scrolls to the corresponding section
+The navbar MUST display logo, navigation links, and a CTA button.
 
-  Scenario: Hero countdown
-    Then the countdown displays days, hours, minutes, seconds
-    And the countdown updates over time
+#### Scenario: Desktop navigation
 
-  Scenario: Stats section displays counts
-    Then each stat block shows a number and label
+- **WHEN** the viewport is desktop-width
+- **THEN** the navbar shows the brand name "Conclave" on the left
+- **AND** navigation links (Home, About, Speakers, Schedule, Gallery, Pricing, Blog, Contact) are visible
+- **AND** a "Get Ticket" button is visible on the right
 
-  Scenario: Feature cards
-    Then each feature card shows an icon, title, and description
+#### Scenario: Mobile hamburger menu
 
-  Scenario: Speakers carousel
-    When the user clicks the next arrow
-    Then the next speaker card is displayed
-    When the user clicks the prev arrow
-    Then the previous speaker card is displayed
+- **WHEN** the viewport is mobile-width
+- **THEN** a hamburger menu button is visible
+- **AND** clicking it toggles the mobile navigation panel
 
-  Scenario: Schedule tabs
-    When the user clicks the "Day 2" tab
-    Then the Day 2 schedule is displayed
-    And the Day 1 schedule is hidden
+### Requirement: Hero Banner
 
-  Scenario: Pricing cards
-    Then each pricing card shows a tier name, price, feature list, and "Buy Now" button
+The hero MUST display event information with a background image.
 
-  Scenario: Newsletter form
-    When the user enters an email and clicks submit
-    Then the form validates the email input
-    And an error is shown for invalid email
+#### Scenario: Hero content
 
-  Scenario: Footer links
-    Then the footer contains a Component Dock link
+- **WHEN** the hero section is visible
+- **THEN** the date line "20-22 January, 2025, Buffalo City" is displayed
+- **AND** the heading "UX CONFERENCE 2025" is displayed
+- **AND** a "Buy Ticket" CTA button is visible
 
-  Scenario: Responsive layout
-    When the viewport is mobile-width
-    Then the navbar collapses to a hamburger menu
-    And sections stack vertically
-    And pricing cards stack vertically
-```
+### Requirement: Innovation/Countdown section
 
-## Verification checklist
+The countdown section MUST display a countdown timer and event description.
 
-- [ ] All 11 sections render in correct order
-- [ ] Navbar links scroll to sections
-- [ ] Hero shows countdown and CTA
-- [ ] Stats bar shows numeric counts
-- [ ] Feature cards show icon + title + description
-- [ ] Speakers carousel navigates forward/back
-- [ ] Schedule tabs switch day views
-- [ ] Gallery shows image grid
-- [ ] Pricing shows 3 tiers with feature lists
-- [ ] Sponsors section displays logos
-- [ ] Blog shows 3 preview cards
-- [ ] Footer has 4 columns + Component Dock link
-- [ ] Newsletter form validates email
-- [ ] Responsive: hamburger nav on mobile
-- [ ] Responsive: single-column stacking on mobile
-- [ ] Brand colors match tokens (#3b1d82, #ea0763)
-- [ ] Fonts: Oswald for headings, Roboto for body
-- [ ] No ColorLib references in app code
+#### Scenario: Countdown display
+
+- **WHEN** the countdown section is visible
+- **THEN** countdown boxes for Days, Hours, and Mins are displayed
+- **AND** the heading "Innovative With Experience UX Design 2025" is visible
+
+#### Scenario: Countdown updates
+
+- **WHEN** 1 second passes
+- **THEN** the countdown values update
+
+### Requirement: Features section
+
+The features section MUST display 3 feature cards.
+
+#### Scenario: Feature cards render
+
+- **WHEN** the features section is visible
+- **THEN** 3 feature cards are displayed with icon, title, and description
+- **AND** "Learn More" and "Buy Ticket" buttons are visible
+
+### Requirement: Speakers section
+
+The speakers section MUST display speaker cards in a grid.
+
+#### Scenario: Speaker cards render
+
+- **WHEN** the speakers section is visible
+- **THEN** 6 speaker cards are displayed in a 3-column grid
+- **AND** each card shows a photo, name, and role
+
+### Requirement: Schedule section
+
+The schedule section MUST display tabbed day views.
+
+#### Scenario: Tab navigation
+
+- **WHEN** the schedule section is visible
+- **THEN** Day 1 is active by default
+- **AND** clicking Day 2 switches to Day 2 sessions
+- **AND** clicking Day 3 switches to Day 3 sessions
+- **AND** clicking Day 4 switches to Day 4 sessions
+
+#### Scenario: Session cards
+
+- **WHEN** a day tab is active
+- **THEN** session cards show speaker photo, name, role, time, title, and description
+
+### Requirement: Pricing section
+
+The pricing section MUST display 3 tier cards.
+
+#### Scenario: Pricing cards render
+
+- **WHEN** the pricing section is visible
+- **THEN** 3 pricing cards are displayed: Normal ($45), Advance ($50), Ultimate ($60)
+- **AND** each card shows a tier name, subtitle, price, feature list, and "Buy Now" button
+- **AND** the Advance tier is highlighted as active
+
+### Requirement: Sponsors section
+
+The sponsors section MUST display sponsor logos in tiers.
+
+#### Scenario: Sponsor tiers
+
+- **WHEN** the sponsors section is visible
+- **THEN** Gold tier shows 3 sponsor logos
+- **AND** Silver tier shows 3 sponsor logos
+
+### Requirement: Gallery section
+
+The gallery section MUST display an image grid with hover overlay.
+
+#### Scenario: Gallery images
+
+- **WHEN** the gallery section is visible
+- **THEN** 6 images are displayed in a grid
+- **AND** hovering an image shows an overlay with a plus icon
+
+### Requirement: Blog section
+
+The blog section MUST display 3 blog preview cards.
+
+#### Scenario: Blog cards
+
+- **WHEN** the blog section is visible
+- **THEN** 3 blog cards are displayed with image, title, date, and comment count
+
+### Requirement: Footer
+
+The footer MUST display 4 columns and a Component Dock link.
+
+#### Scenario: Footer columns
+
+- **WHEN** the footer is visible
+- **THEN** 4 columns are displayed: About, Navigation, Newsletter, InstaFeed
+- **AND** the Newsletter form validates email input
+- **AND** a "Component Dock" link pointing to https://www.componentdock.com/ is present
+
+### Requirement: Responsive layout
+
+The template MUST be responsive across viewports.
+
+#### Scenario: Mobile layout
+
+- **WHEN** the viewport is mobile-width
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** sections stack vertically
+- **AND** pricing cards stack vertically
+
+### Requirement: No ColorLib references
+
+The app source code MUST NOT contain any references to ColorLib.
+
+#### Scenario: Clean source
+
+- **WHEN** searching for "colorlib" in the apps/conclave/ directory
+- **THEN** no matches are found
+
+### Requirement: Design fidelity
+
+The template MUST match the original ColorLib Umeet design tokens.
+
+#### Scenario: Brand colors match
+
+- **WHEN** the template renders
+- **THEN** primary color is #3b1d82 (deep purple)
+- **AND** accent color is #ea0763 (hot pink)
+- **AND** fonts are Oswald for headings and Roboto for body
