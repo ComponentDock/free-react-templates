@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* GivingHeart design tokens — recreated from source preview stylesheets
+     (no assets copied):
+     - brand hot pink #f41665: primary accent
+     - gradient: pink #f40f68 → orange #f86e3d → yellow #fbcd11 (buttons, overlays)
+     - light lavender #f9f9ff: section backgrounds
+     - dark #222: about/donate areas
+     - text #222 body, #777 muted, #fff on dark
+     - font: Poppins (Google Fonts) */
+  --color-primary: #f41665;
+  --color-primary-500: #f41665;
+  --color-primary-600: #d11254;
+  --color-primary-700: #b00e47;
+  --color-dark: #222222;
+  --color-light: #f9f9ff;
+  --color-ink: #222222;
+  --color-surface: #ffffff;
+  --color-muted: #777777;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #777;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-ink);
+  }
+}
