@@ -44,145 +44,121 @@ Tailwind CSS 4 + TypeScript.
   itself "INWARD"; recreation uses the NEW name **Compassion**.
 
 - **Structure (1:1, section order — from the live DOM):**
-  1. **Navbar** (`navbar navbar-expand-md navbar-dark bg-dark`) —
-     transparent/absolute on desktop (overlays hero), solid black on mobile.
-     Uppercase wordmark **"Compassion"** left; nav links **Home (active) /
-     About / Messages (dropdown: Audio Sermons, Past Messages, Bible Reading,
-     End Time Prophecy) / Events / Contact** center/right; hamburger toggle
-     on mobile.
-  2. **Hero slider** (`home-slider owl-carousel`) — full-viewport
-     (`calc(100vh - 217px)`, min-height 700px) background image slides
-     with dark overlay (`:before` pseudo-element). Center-aligned: white
-     Playfair Display h1 **"Welcome to Compassion"** (40px mobile / larger
-     desktop), lorem subtext, white outlined button **"Request a Prayer"**
-     (`btn btn-white btn-outline-white`).
-  3. **Worship Time** (`element-animate worship-time`) — split layout
-     (`.half d-md-flex d-block`): LEFT = background image (camp meeting)
-     with dark overlay, white Playfair h2 **"Camp Meeting Will Start Soon"**,
-     countdown timer (weeks/days/hours/min/sec), white outlined "Join Now"
-     button; RIGHT = white background, h2 **"Upcoming Events"**, 4 event
-     list items (table-row layout: date label **"APR 14"** | event name
-     **Child Dedication / Church Fellowship / Mass Baptism / School of the
-     Prophets** | **"More Info"** link), separated by `#ccc` borders.
-  4. **Audio Sermons** (`section pt-5 pb-2 bg-light`) — light gray
-     background, centered h2 **"Audio Sermons"**, 3-column grid
-     (`col-12 col-sm-6 col-lg-4`) of sermon cards (`.sermon`): each is a
-     black-background card with top image, title link (e.g. **"Arise,
-     Shine"**), meta text **"by Luis Matthew on March 28, 2018"**, and an
-     HTML5 audio player.
-  5. **Latest Events** (`section`) — white background, centered h2
-     **"Latest Events"**, 3-column grid (`col-md-6 col-lg-4`) of event
-     cards: small thumbnail image (30px wide) left, text right — h3 title
-     (**"Prayer & Devotional for Children"** / **"We Must Walk In The
-     Middle of The Road"** / **"Tracts Giving"**), date + category meta
-     (e.g. **"May 12, 2018, Children Ministries"**), lorem description.
-  6. **Personal Testimony** (`section bg-light`) — light background,
-     centered h2 **"Personal Testimony"**, owl-carousel slider with
-     circular pastor photos (`border-radius: 50%`), blockquote with
-     testimony text, attribution (e.g. **"— Jeremy Watson"**). Dot
-     pagination below (`#cccccc` inactive, `#000` active).
-  7. **Footer** (`footer site-footer`) — dark `#262626` background,
-     `border-top: 1px solid #2e2e2e`. 4-column grid: (1) Church name
-     **"Compassion Church"** + description + social icons (Twitter,
-     Facebook, LinkedIn, Instagram via FontAwesome); (2) **"The Church"**
-     links (About Us, Organizational Chart, Events, Contact); (3)
-     **"Messages"** links (Audio Sermons, Past Messages, Bible Reading,
-     End Time Prophecies); (4) **"Visit or Talk to Us"** contact info
-     (address, telephone, email). Bottom copyright line with
-     **"Made with Component Dock"** link (replacing ColorLib attribution).
+  1. **Navbar** — transparent/absolute on desktop (overlays hero), solid
+     black on mobile. Uppercase wordmark "Compassion" left; nav links
+     Home (active) / About / Messages (dropdown) / Events / Contact;
+     hamburger toggle on mobile.
+  2. **Hero** — full-viewport background image with dark overlay.
+     Center-aligned: white Playfair Display h1 "Welcome to Compassion",
+     subtext, white outlined "Request a Prayer" button.
+  3. **Worship Time** — split layout: LEFT = background image with dark
+     overlay, white heading "Camp Meeting Will Start Soon", countdown
+     timer, "Join Now" button; RIGHT = white background, "Upcoming Events"
+     heading, 4 event list items with date and "More Info" links.
+  4. **Audio Sermons** — light gray background, centered heading, 3-column
+     grid of black sermon cards with images, titles, metadata, audio players.
+  5. **Latest Events** — white background, centered heading, 3-column grid
+     of event cards with thumbnails, titles, dates, descriptions.
+  6. **Personal Testimony** — light background, centered heading, carousel
+     with circular pastor photos, blockquotes, dot pagination.
+  7. **Footer** — dark #262626 background, 4-column grid: church info +
+     social icons, The Church links, Messages links, contact info.
+     Component Dock attribution.
 
-## Gherkin Requirements
+## Requirements
 
-### Feature: Navbar
+### Requirement: Navbar renders all navigation links
 
-Scenario: Desktop navbar renders all navigation links
-  Given the page is loaded on a desktop viewport
-  Then the navbar displays the brand "Compassion"
-  And the navbar shows links: Home, About, Messages, Events, Contact
-  And the Messages link has a dropdown with: Audio Sermons, Past Messages, Bible Reading, End Time Prophecy
-  And the Home link is marked as active
+Users SHALL see the brand "Compassion" and navigation links (Home, About, Messages, Events, Contact) in the navbar. The Messages link SHALL display a dropdown with Audio Sermons, Past Messages, Bible Reading, and End Time Prophecy.
 
-Scenario: Mobile navbar toggles on hamburger click
-  Given the page is loaded on a mobile viewport
-  When the user clicks the hamburger toggle
-  Then the navigation links become visible
-  And the brand "Compassion" is displayed
+#### Scenario: Desktop navbar renders all links
 
-### Feature: Hero Section
+- **WHEN** the page loads on a desktop viewport
+- **THEN** the navbar displays brand "Compassion"
+- **AND** links Home, About, Messages, Events, Contact are visible
+- **AND** Home is marked as active
 
-Scenario: Hero displays welcome heading and CTA
-  Given the hero section is visible
-  Then the heading "Welcome to Compassion" is displayed
-  And a "Request a Prayer" outlined button is shown
-  And the hero uses a full-viewport background image with dark overlay
+#### Scenario: Messages dropdown opens on hover
 
-Scenario: Hero is responsive
-  Given the page is loaded on a mobile viewport
-  Then the hero heading scales down appropriately
-  And the CTA button remains accessible
+- **WHEN** the user hovers over the Messages link
+- **THEN** a dropdown appears with Audio Sermons, Past Messages, Bible Reading, End Time Prophecy
 
-### Feature: Worship Time / Events Split
+#### Scenario: Mobile navbar toggles on hamburger click
 
-Scenario: Camp meeting section displays countdown
-  Given the worship time section is visible
-  Then the left panel shows "Camp Meeting Will Start Soon"
-  And a countdown timer is displayed with weeks, days, hours, minutes, seconds
-  And a "Join Now" button is shown
+- **WHEN** the user clicks the hamburger toggle
+- **THEN** the navigation links become visible
 
-Scenario: Upcoming events list renders correctly
-  Given the worship time section is visible
-  Then the right panel shows "Upcoming Events" heading
-  And 4 event items are listed with date and event name
-  And each event has a "More Info" link
+### Requirement: Hero displays welcome heading and CTA
 
-### Feature: Audio Sermons
+Users SHALL see a full-viewport hero section with a background image, dark overlay, the heading "Welcome to Compassion", and a "Request a Prayer" button.
 
-Scenario: Sermon cards display audio content
-  Given the audio sermons section is visible
-  Then 3 sermon cards are displayed in a grid
-  And each card has an image, title, author/date metadata, and audio player
-  And the section has a light gray background
+#### Scenario: Hero renders heading and CTA
 
-### Feature: Latest Events
+- **WHEN** the hero section is visible
+- **THEN** the heading "Welcome to Compassion" is displayed
+- **AND** a "Request a Prayer" button is shown
 
-Scenario: Event cards display with thumbnails
-  Given the latest events section is visible
-  Then 3 event cards are displayed in a grid
-  And each card has a thumbnail image, title, date/category metadata, and description
+### Requirement: Worship Time section displays countdown and events
 
-### Feature: Personal Testimony
+Users SHALL see a split layout with a camp meeting countdown on the left and upcoming events list on the right.
 
-Scenario: Testimony carousel shows pastor quotes
-  Given the personal testimony section is visible
-  Then a carousel of testimony slides is displayed
-  And each slide has a circular pastor photo, a blockquote, and an attribution
-  And dot pagination is visible below the carousel
+#### Scenario: Camp meeting countdown displays
 
-### Feature: Footer
+- **WHEN** the worship time section is visible
+- **THEN** the left panel shows "Camp Meeting Will Start Soon"
+- **AND** a countdown timer with weeks, days, hours, minutes, seconds is displayed
 
-Scenario: Footer displays church information
-  Given the footer is visible
-  Then it shows the church name "Compassion Church"
-  And social media icons (Twitter, Facebook, LinkedIn, Instagram) are displayed
-  And "The Church" links section is present
-  And "Messages" links section is present
-  And "Visit or Talk to Us" contact info is present
-  And the copyright line links to Component Dock
+#### Scenario: Upcoming events list renders correctly
 
-## Verification checklist
+- **WHEN** the worship time section is visible
+- **THEN** the right panel shows "Upcoming Events" heading
+- **AND** 4 events are listed with dates and "More Info" links
 
-- [ ] Section order matches the original 1:1 (navbar → hero → worship time → audio sermons → latest events → personal testimony → footer)
-- [ ] Brand accent color `#6A99CB` is used on links and interactive elements
-- [ ] Headings use Playfair Display serif font
-- [ ] Body text uses Open Sans font
-- [ ] Buttons are uppercase with letter-spacing .2em and sharp corners (border-radius 0)
-- [ ] Hero uses full-viewport background image with dark overlay
-- [ ] Worship time section uses split layout (50/50 on desktop)
-- [ ] Audio sermon cards have black background with white text
-- [ ] Testimony photos are circular (border-radius 50%)
-- [ ] Footer has dark `#262626` background
-- [ ] Footer links to Component Dock (not ColorLib)
-- [ ] No ColorLib references in app code
-- [ ] Placeholder images use `https://picsum.photos/seed/compassion-<n>/<w>/<h>`
-- [ ] Icons use lucide-react (replacing Ionicons/FontAwesome)
-- [ ] 100% test coverage on all components
+### Requirement: Audio Sermons section displays sermon cards
+
+Users SHALL see 3 sermon cards in a grid with images, titles, author/date metadata, and audio players on a light gray background.
+
+#### Scenario: Sermon cards render correctly
+
+- **WHEN** the audio sermons section is visible
+- **THEN** 3 sermon cards are displayed in a grid
+- **AND** each card has an image, title, metadata, and audio player
+
+### Requirement: Latest Events section displays event cards
+
+Users SHALL see 3 event cards in a grid with thumbnails, titles, date/category metadata, and descriptions.
+
+#### Scenario: Event cards render correctly
+
+- **WHEN** the latest events section is visible
+- **THEN** 3 event cards are displayed with thumbnails and descriptions
+
+### Requirement: Personal Testimony section displays carousel
+
+Users SHALL see a testimony carousel with circular pastor photos, blockquotes, attributions, and dot pagination.
+
+#### Scenario: Testimony carousel shows pastor quotes
+
+- **WHEN** the personal testimony section is visible
+- **THEN** a testimony with a circular photo, blockquote, and attribution is shown
+- **AND** dot pagination is visible
+
+#### Scenario: Navigation buttons cycle through testimonies
+
+- **WHEN** the user clicks the next button
+- **THEN** the next testimony is displayed
+- **AND** the dot indicator updates
+
+### Requirement: Footer displays church information and links
+
+Users SHALL see a dark footer with 4 columns: church info + social icons, The Church links, Messages links, and contact info. The footer MUST link to Component Dock.
+
+#### Scenario: Footer renders all sections
+
+- **WHEN** the footer is visible
+- **THEN** "Compassion Church" name is displayed
+- **AND** social media icons (Twitter, Facebook, LinkedIn, Instagram) are shown
+- **AND** The Church links section is present
+- **AND** Messages links section is present
+- **AND** contact info is present
+- **AND** the copyright line links to Component Dock
