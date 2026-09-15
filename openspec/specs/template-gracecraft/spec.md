@@ -38,97 +38,137 @@ Recreation of ColorLib **Mimosan** — a church/nonprofit website template.
 | Section subtitle color | `#7c7c7c`                                    | Muted                                   |
 | Parallax               | Used on hero background + donations + footer | Full-width background images            |
 
-## Section structure (order from live preview)
+## Requirements
 
-1. **TopBar** — Contact info (email, phone) + social icons (facebook, twitter, pinterest, linkedin, google-plus) on parallax background image
-2. **Header** — Logo "Gracecraft" + main nav (Home, About, Sermons, Events, Blog, Contact) + search button + hamburger menu
-3. **Hero** — Full-width parallax background image, centered headline "Belief in God as Father and Holy Spirit is at the heart of our faith", body text, CTA button "Join with us"
-4. **EventBanner** — Upcoming event card: date badge (day + month), event title, time range, location, countdown timer (days/hours/min/sec)
-5. **About** — Section title "Welcome to our church", subtitle, left image + right text with "Read story" button
-6. **Sermons** — Section title "Sermons today", 3 sermon cards with image, title, pastor name, categories
-7. **Donation** — Parallax background, "Our mission" text, donation card: call-to-action name, categories, date, description, remaining amount, progress bar (70% / $5,000 raised / $7,100 goal), "Donate now" button
-8. **Quote** — Blockquote from Ignatius of Antioch, quote icon, source attribution, centered
-9. **Gallery** — Image grid (masonry-style flex wrap, 5-6 images with colorbox overlay)
-10. **LatestNews** — 3-column grid of news posts: image, title, author, date, comment count, excerpt
-11. **Footer** — Parallax background: contact column (logo, address, phone, email), useful links column, newsletter subscribe column, copyright row + social icons
+### Requirement: TopBar displays contact info and social links
 
-## Gherkin requirements
+The top bar SHALL show an email address and phone number alongside social media icon links.
 
-```gherkin
-Feature: Gracecraft church template
+#### Scenario: TopBar renders contact info
 
-  Scenario: TopBar displays contact info and social links
-    Given I visit the Gracecraft page
-    Then the top bar shows an email address and phone number
-    And social media icon links are visible (facebook, twitter, pinterest, linkedin)
+- **WHEN** I visit the Gracecraft page
+- **THEN** the top bar shows an email address and phone number
+- **AND** social media icon links are visible (facebook, twitter, linkedin)
 
-  Scenario: Header navigation links
-    Given I visit the Gracecraft page
-    Then the header shows a logo linking to Home
-    And navigation links include Home, About, Sermons, Events, Blog, Contact
+### Requirement: Header navigation links
 
-  Scenario: Hero section displays headline and CTA
-    Given I visit the Gracecraft page
-    Then the hero section shows a headline about faith
-    And a body paragraph below the headline
-    And a "Join with us" CTA button is visible
+The header SHALL display a logo and main navigation links for Home, About, Sermons, Events, Blog, Contact.
 
-  Scenario: Event banner shows upcoming event details
-    Given I visit the Gracecraft page
-    Then an upcoming event card shows date, title, time, and location
-    And a countdown timer with days, hours, minutes, seconds is displayed
+#### Scenario: Header shows logo and nav
 
-  Scenario: About section displays church welcome
-    Given I visit the Gracecraft page
-    Then the about section title reads "Welcome to our church"
-    And a descriptive paragraph is shown
-    And a "Read story" button is visible
+- **WHEN** I visit the Gracecraft page
+- **THEN** the header shows a logo linking to Home
+- **AND** navigation links include Home, About, Sermons, Events, Blog, Contact
 
-  Scenario: Sermons section displays sermon cards
-    Given I visit the Gracecraft page
-    Then 3 sermon cards are displayed
-    And each card shows a title, pastor name, and categories
+### Requirement: Hero section displays headline and CTA
 
-  Scenario: Donation section shows progress
-    Given I visit the Gracecraft page
-    Then a donation section shows a campaign description
-    And a progress bar displays percentage raised
-    And "Raised" and "Goal" dollar amounts are shown
-    And a "Donate now" button is visible
+The hero section SHALL show a headline about faith, body text, and a "Join with us" CTA button.
 
-  Scenario: Quote section displays blockquote
-    Given I visit the Gracecraft page
-    Then a blockquote is displayed with attribution
-    And a decorative quote icon appears
+#### Scenario: Hero renders headline and CTA
 
-  Scenario: Gallery section shows images
-    Given I visit the Gracecraft page
-    Then a gallery grid of 5+ images is displayed
+- **WHEN** I visit the Gracecraft page
+- **THEN** the hero section shows a headline about faith
+- **AND** a body paragraph below the headline
+- **AND** a "Join with us" CTA button is visible
 
-  Scenario: Latest news shows 3 blog posts
-    Given I visit the Gracecraft page
-    Then 3 news posts are displayed in a grid
-    And each post shows a title, author, date, comment count, and excerpt
+### Requirement: Event banner shows upcoming event details
 
-  Scenario: Footer displays contact, links, and subscribe
-    Given I visit the Gracecraft page
-    Then the footer shows contact details (address, phone, email)
-    And a useful links list is visible
-    And a newsletter subscribe form with email input and button is shown
-    And a copyright line includes the year and "Component Dock" link
-```
+The event banner SHALL display a date badge, event title, time range, location, and countdown timer.
 
-## Verification checklist
+#### Scenario: Event banner renders event card
 
-- [ ] All 11 sections present in correct order
-- [ ] Brand color `#b10707` used for buttons, accents, logo
-- [ ] Font families: Assistant (body), Old Standard TT (headings), Open Sans (nav/meta)
-- [ ] Button style: 160px wide, 46px tall, 3px radius, dark red background, white text
-- [ ] Parallax backgrounds on hero, donation section, footer
-- [ ] Event countdown timer with 4 units (days/hours/min/sec)
-- [ ] Donation progress bar with percentage and dollar amounts
-- [ ] 3 sermon cards with pastor + category metadata
-- [ ] 3 news posts with author, date, comment count
-- [ ] Footer: Component Dock link in copyright
-- [ ] No ColorLib references in app code
-- [ ] Screenshot visual matches original design aesthetic (dark red church template)
+- **WHEN** I visit the Gracecraft page
+- **THEN** an upcoming event card shows date, title, time, and location
+- **AND** a countdown timer with days, hours, minutes, seconds is displayed
+
+### Requirement: About section displays church welcome
+
+The about section SHALL show a welcome heading, descriptive text, and a "Read story" button.
+
+#### Scenario: About renders welcome content
+
+- **WHEN** I visit the Gracecraft page
+- **THEN** the about section title reads "Welcome to our church"
+- **AND** a descriptive paragraph is shown
+- **AND** a "Read story" button is visible
+
+### Requirement: Sermons section displays sermon cards
+
+The sermons section SHALL show 3 sermon cards, each with a title, pastor name, and categories.
+
+#### Scenario: Sermons renders 3 cards
+
+- **WHEN** I visit the Gracecraft page
+- **THEN** 3 sermon cards are displayed
+- **AND** each card shows a title, pastor name, and categories
+
+### Requirement: Mission section shows 4 mission pillars
+
+The mission section SHALL display 4 items (mission, community, belief, faith) with icons and descriptions.
+
+#### Scenario: Mission renders 4 pillars
+
+- **WHEN** I visit the Gracecraft page
+- **THEN** 4 mission items are displayed with titles and descriptions
+
+### Requirement: Events section shows upcoming events
+
+The events section SHALL display 3 event cards with date, title, time, and location.
+
+#### Scenario: Events renders 3 event cards
+
+- **WHEN** I visit the Gracecraft page
+- **THEN** 3 events are displayed with date badges, titles, times, and locations
+
+### Requirement: Donation section shows progress
+
+The donation section SHALL show a campaign description, progress bar with percentage, and raised/goal dollar amounts.
+
+#### Scenario: Donation renders progress
+
+- **WHEN** I visit the Gracecraft page
+- **THEN** a donation section shows a campaign description
+- **AND** a progress bar displays percentage raised
+- **AND** "Raised" and "Goal" dollar amounts are shown
+- **AND** a "Donate now" button is visible
+
+### Requirement: Quote section displays blockquote
+
+The quote section SHALL display a blockquote with attribution.
+
+#### Scenario: Quote renders blockquote
+
+- **WHEN** I visit the Gracecraft page
+- **THEN** a blockquote is displayed with attribution
+- **AND** a decorative quote icon appears
+
+### Requirement: Gallery section shows images
+
+The gallery SHALL display a grid of 10 images.
+
+#### Scenario: Gallery renders image grid
+
+- **WHEN** I visit the Gracecraft page
+- **THEN** a gallery grid of 10 images is displayed
+
+### Requirement: Latest news shows 3 blog posts
+
+The latest news section SHALL display 3 news posts in a grid with title, author, date, comment count, and excerpt.
+
+#### Scenario: Latest news renders 3 posts
+
+- **WHEN** I visit the Gracecraft page
+- **THEN** 3 news posts are displayed in a grid
+- **AND** each post shows a title, author, date, comment count, and excerpt
+
+### Requirement: Footer displays contact, links, and subscribe
+
+The footer SHALL show contact details, useful links, a newsletter subscribe form, and a copyright line with Component Dock link.
+
+#### Scenario: Footer renders all columns
+
+- **WHEN** I visit the Gracecraft page
+- **THEN** the footer shows contact details (address, phone, email)
+- **AND** a useful links list is visible
+- **AND** a newsletter subscribe form with email input and button is shown
+- **AND** a copyright line includes the year and "Component Dock" link
