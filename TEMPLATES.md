@@ -1267,7 +1267,7 @@
 - [ ] **Faithful** — [colorlib](https://colorlib.com/wp/template/faithful/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/faithful-free-template.jpg)
 - [x] **Foundation** — [colorlib](https://colorlib.com/wp/template/foundation/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foundation-free-template.jpg) · [benevol](https://benevol.free.componentdock.com)
 - [x] **Fundraiser** — [colorlib](https://colorlib.com/wp/template/fundraiser/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fundraiser-free-template.jpg) · [benefact](https://benefact.free.componentdock.com)
-- [ ] **Givehope** — [colorlib](https://colorlib.com/wp/template/givehope/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/givehope-free-template.jpg)
+- [~] **Givehope** — [colorlib](https://colorlib.com/wp/template/givehope/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/givehope-free-template.jpg)
 - [x] **Giving** — [colorlib](https://colorlib.com/wp/template/giving/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/giving-free-template.jpg) · [generous](https://generous.free.componentdock.com)
 - [x] **Hopefoundation** — [colorlib](https://colorlib.com/wp/template/hopefoundation/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hopefoundation-template-1770211243073.jpg) · [congregate](https://congregate.free.componentdock.com)
 - [x] **Hopehand** · [uplift](https://uplift.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/hopehand/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hopehand-template-1771943776003.jpg)
