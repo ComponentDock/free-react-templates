@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Namastay brand palette — olive green (#71774b) from original design. */
+  --color-brand: #71774b;
+  --color-brand-dark: #5b603c;
+  --color-brand-darker: #535837;
+  --color-brand-light: #b0b68b;
+
+  /* Ink — dark text (#212529 from original). */
+  --color-ink: #212529;
+  --color-ink-light: #44482d;
+
+  /* Mist — muted text (#6c757d from original). */
+  --color-mist: #6c757d;
+
+  /* Paper — light section backgrounds. */
+  --color-paper: #ffffff;
+  --color-paper-alt: #f8f9fa;
+
+  /* Primary scale so shared Button/ButtonLink `primary` variants resolve. */
+  --color-primary-50: #f4f5f0;
+  --color-primary-100: #e5e7da;
+  --color-primary-200: #cdd1b8;
+  --color-primary-300: #b0b68b;
+  --color-primary-400: #8f9668;
+  --color-primary-500: #71774b;
+  --color-primary-600: #5b603c;
+  --color-primary-700: #4a4d31;
+  --color-primary-800: #3a3c27;
+  --color-primary-900: #2d2f1e;
+
+  /* Fonts — Oxygen (body) + Montserrat (headings). */
+  --font-sans: 'Oxygen', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
