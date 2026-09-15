@@ -1,114 +1,206 @@
-# template-devotion
+# Template: Devotion (Charity / Church Template)
 
 ## Purpose
 
-Recreation of ColorLib "Faithful" (https://colorlib.com/wp/template/faithful/) as a React church website template named "Devotion". The template provides a full church/ministry landing page with hero slider, services, sermon spotlight, features, events, and contact info.
+Devotion is a single-page church/charity landing template in the
+free-react-templates monorepo. It is an original React recreation of the
+ColorLib free "Faithful" charity website template, built under a different
+name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-Preview: https://preview.colorlib.com/theme/faithful/
+**Source:** ColorLib "Faithful" — charity/church template
+  (https://colorlib.com/wp/template/faithful/)
+  Listed in TEMPLATES.md line 1267 (Charity section).
 
-## Requirements
+**Preview URL:** https://preview.colorlib.com/theme/faithful/
+  (reachable, HTTP 200). HTML saved to `/tmp/faithful.html` (29.2 KB);
+  stylesheet `css/style.css` saved to `/tmp/faithful-style.css` (23.6 KB).
 
-### Requirement: Page renders all major sections
+The template is a warm, faith-based charity/church landing with a hero
+slider, church services, feature cards, sermon section, testimonies,
+upcoming events, and a dark footer.
 
-The page SHALL display Navbar, HeroSlider, EventsBanner, ChurchServices, LatestSermon, Features, UpcomingEvents, ContactInfo, and Footer in order.
+## Design tokens (extracted from reference)
 
-#### Scenario: All sections present
+### Colors
+- **Primary (Bootstrap primary):** `#f23a2e` — red, used for section heading
+  underlines (2px bottom border on h2:before/h2:after), primary buttons,
+  icons (`text-primary`), and accent elements.
+- **Backgrounds:**
+  - Hero overlays: `rgba(0,0,0,0.4)` / `rgba(0,0,0,0.6)` / `rgba(0,0,0,0.8)`
+  - Upcoming events band: Bootstrap `bg-primary` = `#f23a2e` (red)
+  - Section alt bg: `#f8f9fa` (light gray, Bootstrap `bg-light`)
+  - White sections: `#fff`
+  - Footer: `#000` (black)
+- **Text:** `#000` (headings on light), `#fff` (on dark/overlay)
+- **Secondary grays:** `#212529`, `#25262a`, `#343a40` (body text, borders)
+- **Muted:** `#b3b3b3`, `#cccccc`
 
-- **WHEN** I visit the Devotion homepage
-- **THEN** I see the Navbar with "Devotion" logo
-- **AND** I see the Hero section with slide content
-- **AND** I see the Events Banner
-- **AND** I see the Church Services section with 3 cards
-- **AND** I see the Latest Sermon section
-- **AND** I see the More Features section with 3 items
-- **AND** I see the Upcoming Events section
-- **AND** I see the Contact Info section
-- **AND** I see the Footer
+### Typography
+- **Display/heading font:** `Amatic SC` (400 weight) — decorative script,
+  used for large hero heading ("Faithful" / "December Camp Meeting")
+- **Body font:** `Work Sans` (system fallback stack) — clean sans-serif for
+  body text, nav links, buttons, and secondary headings
+- **Icon font:** icomoon + flaticon (church-specific icons: speaker, chat,
+  paper-plane, clock, comments)
 
-### Requirement: Navbar navigation links
+### Buttons
+- **Primary CTA:** `btn btn-primary pill text-white px-4` — pill shape
+  (`border-radius: 30px !important`), Bootstrap primary background `#f23a2e`,
+  white text, 1rem horizontal padding. "Read More" is the example text.
+- Hover: standard Bootstrap primary hover (slightly darker red)
 
-The Navbar SHALL contain links for Home, Sermons, Beliefs, Events, About, Contact.
+### Section backgrounds
+- Navbar: `#fff` (bg-white)
+- Hero slider: full-bleed background images with dark overlay
+- Upcoming events: `bg-primary` (`#f23a2e` red strip)
+- Church services: white background
+- Feature cards: white background, light border
+- "God is Love": dark overlay background
+- "Our Mission": white background
+- Sermons carousel: light background
+- Testimonies: white background
+- Footer: `#000` (black)
 
-#### Scenario: Desktop navigation
+## Section structure (in order from preview DOM)
 
-- **WHEN** I visit the Devotion homepage
-- **THEN** the Navbar contains links for Home, Sermons, Beliefs, Events, About, Contact
+1. **Navbar** — fixed white bar, logo "Faithful" (left), nav links (About,
+   Services, Sermons, Events, Contact), hamburger mobile menu
+2. **Hero Slider** — owl-carousel, 2 slides with background images
+   (`hero_1.jpg`, `hero_2.jpg`), dark overlay, centered white text
+   ("December Camp Meeting" / "Seek The Lord While He Will Be Found"),
+   pill-shaped CTA buttons
+3. **Upcoming Events band** — red `bg-primary` strip, countdown text
+   "Upcoming Events", event name, short description
+4. **Church Services** — 3-column grid, each item has a `text-primary`
+   icon (speaker, paper-plane, chat), a title, and a description
+5. **Feature Cards** — 3-column grid with heading "Consectetur adipisicing
+   elit", icon + title + description per card, "Read More" pill link
+6. **God is Love** — dark overlay background, sermon-style content:
+   heading, preacher attribution ("by Ptr. Johnson"), scripture quote,
+   description text, "Watch Video" CTA button
+7. **More Features** — section heading, additional feature items
+8. **Our Mission** — centered text, heading + paragraph + "Read More" link
+9. **Listen To Our Sermons** — owl-carousel of sermon entries with audio
+   player (mediaelement.js), sermon title + date
+10. **Testimonies** — carousel of testimonial cards with quote, author name
+11. **Upcoming Events** — carousel of event cards with image, date, title,
+    location, and short description
+12. **Footer** — dark `#000` background, 4 columns: About (text + Read More),
+    Quick Menu (links), Ministries (links), Get In Touch (address, phone,
+    email). Social icons (Facebook, Twitter, Instagram). Copyright bar.
 
-#### Scenario: Mobile menu toggle
+## Gherkin requirements
 
-- **WHEN** I click the mobile menu toggle button
-- **THEN** the mobile navigation menu opens
-- **AND** I can see navigation links in the mobile menu
+```gherkin
+Feature: Devotion — Charity/Church Landing Template
 
-### Requirement: Hero displays slide content
+  Scenario: Navbar renders with logo and navigation links
+    Given the page loads
+    Then the navbar is visible with the "Devotion" logo text
+    And navigation links "About", "Services", "Sermons", "Events", "Contact" are present
+    And the mobile hamburger menu button is visible on small viewports
 
-The HeroSlider SHALL display slide headings and call-to-action buttons.
+  Scenario: Hero slider displays with background images and CTAs
+    Given the page loads
+    Then the hero section displays a full-bleed background image
+    And a dark overlay covers the background image
+    And the heading text is visible on the hero
+    And CTA pill buttons are visible on the hero
 
-#### Scenario: Slide content
+  Scenario: Upcoming events band shows countdown
+    Given the page loads
+    Then the red events band is visible below the hero
+    And the band displays "Upcoming Events" heading
+    And a countdown or event description is visible
 
-- **WHEN** I visit the Devotion homepage
-- **THEN** I see "December Camp Meeting" heading
-- **AND** I see a "Register Now" call-to-action
+  Scenario: Church services section displays three service items
+    Given the page loads
+    Then three church service items are displayed in a grid
+    And each service item has a primary-colored icon
+    And each service item has a title and description text
 
-### Requirement: Church Services shows 3 service cards
+  Scenario: Feature cards section displays three feature items
+    Given the page loads
+    Then three feature cards are displayed
+    And each card has an icon, title, and description
+    And each card has a "Read More" link
 
-The ChurchServices section SHALL display 3 cards with unique titles and "Read More" links.
+  Scenario: God is Love section renders with sermon content
+    Given the page loads
+    Then the "God is Love" section is visible
+    And the section shows a preacher attribution
+    And a "Watch Video" CTA button is present
 
-#### Scenario: Service cards
+  Scenario: More Features section renders additional items
+    Given the page loads
+    Then the "More Features" heading is visible
+    And additional feature items are displayed
 
-- **WHEN** I visit the Devotion homepage
-- **THEN** I see 3 church service cards with titles and "Read More" links
+  Scenario: Our Mission section renders with CTA
+    Given the page loads
+    Then the "Our Mission" section is visible
+    And a "Read More" link is present
 
-### Requirement: Latest Sermon section
+  Scenario: Sermons carousel displays sermon entries
+    Given the page loads
+    Then the "Listen To Our Sermons" section is visible
+    And sermon entries are displayed in a carousel
+    And each entry shows a sermon title and date
 
-The LatestSermon section SHALL display sermon title, speaker, and "Watch Video" link.
+  Scenario: Testimonies carousel displays testimonial cards
+    Given the page loads
+    Then the "Testimonies" section is visible
+    And testimonial cards with quotes and author names are displayed
 
-#### Scenario: Sermon details
+  Scenario: Upcoming events carousel displays event cards
+    Given the page loads
+    Then the "Upcoming Events" section is visible
+    And event cards with images, dates, titles, and descriptions are displayed
 
-- **WHEN** I visit the Devotion homepage
-- **THEN** I see "God is Love" sermon title
-- **AND** I see speaker "Ptr. Johnson"
-- **AND** I see a "Watch Video" link
+  Scenario: Footer renders with columns and social links
+    Given the page loads
+    Then the footer is visible with dark background
+    And the footer has About, Quick Menu, Ministries, and Get In Touch columns
+    And social media icon links are present
+    And a copyright notice is displayed
+    And a "Component Dock" link is present in the footer
 
-### Requirement: Footer links to Component Dock
+  Scenario: All sections have correct design tokens applied
+    Given the page loads
+    Then headings use "Amatic SC" font family
+    And body text uses "Work Sans" font family
+    And primary accent color is #f23a2e red
+    And CTA buttons have pill shape (30px border-radius)
+    And section backgrounds alternate between white, light gray, and dark overlay
 
-The Footer SHALL link to https://www.componentdock.com/ with "Component Dock" text.
+  Scenario: Responsive layout adapts to mobile viewports
+    Given the browser viewport is 375px wide
+    Then the navbar shows a hamburger menu
+    And the hero slider maintains full-width display
+    And church service items stack vertically
+    And feature cards stack vertically
+    And the footer columns stack vertically
+```
 
-#### Scenario: Component Dock link
+## Verification checklist
 
-- **WHEN** I visit the Devotion homepage
-- **THEN** the Footer contains a link to https://www.componentdock.com/
-- **AND** the link text includes "Component Dock"
-
-### Requirement: Footer shows copyright
-
-The Footer SHALL show the current year and copyright text.
-
-#### Scenario: Copyright
-
-- **WHEN** I visit the Devotion homepage
-- **THEN** the Footer shows the current year and copyright text
-
-## Design Tokens
-
-- **Primary brand color:** #f23a2e (warm red)
-- **Header/footer background:** #1b2430 (dark navy)
-- **Body background:** #ffffff (white), #f8f9fa (light sections)
-- **Caption/accent background:** #ffc107 (amber)
-- **Events banner background:** #0d6efd (blue)
-- **Fonts:** Work Sans (body), Amatic SC (display headings via Google Fonts)
-- **Buttons:** Pill-shaped (border-radius: 30px)
-
-## Component Map
-
-| Section       | Component      | Notes                           |
-| ------------- | -------------- | ------------------------------- |
-| Navbar        | Navbar         | Sticky, mobile hamburger toggle |
-| Hero Slider   | HeroSlider     | Two slides with overlay         |
-| Events Banner | EventsBanner   | Blue bg, countdown placeholder  |
-| Church Svc    | ChurchServices | 3-column card grid              |
-| Latest Sermon | LatestSermon   | Split layout, play button       |
-| Features      | Features       | 3 icon cards                    |
-| Events        | UpcomingEvents | Card grid                       |
-| Contact Info  | ContactInfo    | 3-column icons + text           |
-| Footer        | Footer         | 4-col + bottom bar              |
+- [ ] Navbar renders with logo and all navigation links
+- [ ] Hero slider shows background image with dark overlay and CTAs
+- [ ] Upcoming events red band shows below hero
+- [ ] Church services section shows 3 items with icons
+- [ ] Feature cards section shows 3 items with icons
+- [ ] "God is Love" section renders with sermon content and Watch Video CTA
+- [ ] "More Features" section renders
+- [ ] "Our Mission" section renders with Read More link
+- [ ] Sermons carousel displays entries with audio player UI
+- [ ] Testimonies carousel displays cards
+- [ ] Upcoming events carousel displays event cards
+- [ ] Footer has 4 columns, social icons, copyright, and Component Dock link
+- [ ] Amatic SC loaded for headings, Work Sans for body
+- [ ] Primary color #f23a2e used for icons and accents
+- [ ] Pill-shaped buttons with 30px border-radius
+- [ ] Responsive layout works at 375px, 768px, 1024px
+- [ ] No ColorLib references in app code (provenance only in spec/TEMPLATES.md)
+- [ ] Placeholder images via picsum.photos with deterministic seeds
+- [ ] lucide-react icons replace icomoon/flaticon source icons
+- [ ] Footer links to componentdock.com
