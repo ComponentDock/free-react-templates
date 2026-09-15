@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — teal/cyan #4ac7ea accents, dark bg #141313, light sections #f7f7f7. */
+  --color-brand: #4ac7ea;
+  --color-brand-dark: #34c0e7;
+
+  /* Ink — dark text (#1a1a1a from original). */
+  --color-ink: #1a1a1a;
+  --color-ink-dark: #141313;
+
+  /* Soapstone — light section background (#f7f7f7). */
+  --color-paper: #f7f7f7;
+
+  /* Mist — muted body text (#666666 from the original). */
+  --color-mist: #666666;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the teal. */
+  --color-primary-50: #ecfaff;
+  --color-primary-100: #d0f3ff;
+  --color-primary-200: #a8e9ff;
+  --color-primary-300: #78d5ef;
+  --color-primary-400: #56caeb;
+  --color-primary-500: #4ac7ea;
+  --color-primary-600: #34c0e7;
+  --color-primary-700: #1daad4;
+  --color-primary-800: #1a8aab;
+  --color-primary-900: #1b7089;
+
+  /* Original fonts: "Poppins" (headings) + "Work Sans" (body). */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
