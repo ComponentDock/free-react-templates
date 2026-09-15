@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Manor brand palette — recreated from the ColorLib "The Estate" design
+     (coral accent #fd784f, dark navy #0e1d41). */
+  --color-coral-50: #fff7f4;
+  --color-coral-100: #ffe8df;
+  --color-coral-200: #ffd1bf;
+  --color-coral-300: #ffb199;
+  --color-coral-400: #fd784f;
+  --color-coral-500: #fc5c2e;
+  --color-coral-600: #e54216;
+  --color-coral-700: #bf3410;
+  --color-coral-800: #9c2e12;
+  --color-coral-900: #802b15;
+
+  --color-navy-50: #f0f2f8;
+  --color-navy-100: #d9ddef;
+  --color-navy-200: #b3bbe0;
+  --color-navy-300: #8c98d0;
+  --color-navy-400: #6676c1;
+  --color-navy-500: #4054b1;
+  --color-navy-600: #2d3d8e;
+  --color-navy-700: #1e2c6a;
+  --color-navy-800: #0e1d41;
+  --color-navy-900: #0a1430;
+
+  /* Open Sans — the original template's body typeface */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
