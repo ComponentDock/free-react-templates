@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Cosyhaus brand palette — recreated from the ColorLib "Theinterior"
+     design (css/style.css): red #ff1313 accents/buttons, dark ink
+     #10285d headings, body text #635c5c, footer bg #0b1416. */
+  --color-brand: #ff1313;
+  --color-brand-dark: #d91010;
+
+  /* Ink — dark heading color (#10285d from the original). */
+  --color-ink: #10285d;
+  --color-ink-dark: #0b1a40;
+
+  /* Paper — light section backgrounds. */
+  --color-paper: #ffffff;
+  --color-paper-alt: #f7f7f7;
+
+  /* Mist — muted body text (#635c5c from the original). */
+  --color-mist: #635c5c;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the red. */
+  --color-primary-50: #fff1f1;
+  --color-primary-100: #ffe0e0;
+  --color-primary-200: #ffc7c7;
+  --color-primary-300: #ffa0a0;
+  --color-primary-400: #ff6868;
+  --color-primary-500: #ff1313;
+  --color-primary-600: #d91010;
+  --color-primary-700: #b60d0d;
+  --color-primary-800: #960e0e;
+  --color-primary-900: #7c1212;
+
+  /* Original fonts: "Barlow Condensed" (headings) + "Barlow" (body). */
+  --font-sans: 'Barlow', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Barlow Condensed', ui-sans-serif, system-ui, sans-serif;
+}
