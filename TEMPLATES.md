@@ -1258,7 +1258,7 @@
 - [x] **Chariter** — [colorlib](https://colorlib.com/wp/template/chariter/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/chariter-free-template.jpg) · [meliora](https://meliora.free.componentdock.com)
 - [x] **Charity** — [colorlib](https://colorlib.com/wp/template/charity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/charity-free-non-profit-donation-website-template.jpg) · [embrace](https://embrace.free.componentdock.com)
 - [x] **Charity 2** — [colorlib](https://colorlib.com/wp/template/charity-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/charity2-free-template.jpg) · [givingheart](https://givingheart.free.componentdock.com)
-- [ ] **Charity Works** — [colorlib](https://colorlib.com/wp/template/charity-works/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/charityworks-free-template.jpg)
+- [~] **Charity Works** — [colorlib](https://colorlib.com/wp/template/charity-works/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/charityworks-free-template.jpg)
 - [ ] **Church Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/church-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-church-themes-1.jpg)
 - [ ] **Covid** — [colorlib](https://colorlib.com/wp/template/covid/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/covid-free-template.jpg)
 - [ ] **Environmentalorganization** — [colorlib](https://colorlib.com/wp/template/environmentalorganization/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/environmentalorganization-free-template.jpg)

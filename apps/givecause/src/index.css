@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #c6a16e;
+  --color-brand-hover: #e6373d;
+  --color-heading: #0b1c39;
+  --color-body: #506172;
+  --color-muted: #868c98;
+  --color-muted-light: #888888;
+  --color-surface: #f9f9ff;
+  --color-surface-alt: #f0e9ff;
+  --color-footer-border: #2d3544;
+
+  --font-heading: 'Josefin Sans', sans-serif;
+  --font-hero: 'Barlow', sans-serif;
+  --font-body: 'Great Vibes', cursive;
+  --font-utility: 'Montserrat', sans-serif;
+}
