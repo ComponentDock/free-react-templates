@@ -15,25 +15,25 @@ and TypeScript under the new name **Stratum**.
 
 ### Colors
 
-| Token               | Value                | Usage                                          |
-|---------------------|----------------------|------------------------------------------------|
-| primary-orange      | `#ff8b00`            | Headings, icons, checkmarks, buttons, social hover, active states, section titles |
-| gradient-purple     | `#7a5e86`            | Footer/top-bar gradient start, newsletter subscribe btn bg |
-| gradient-rose       | `#a75e67`            | Footer/top-bar gradient midpoint               |
-| gradient-orange     | `#f77b2e`            | Footer/top-bar gradient end                    |
-| body-text           | `#939393`            | Body copy                                      |
-| heading-color       | `#000000`            | h1–h6 headings (Oswald, uppercase)            |
-| gray-light          | `#f8f9fa`            | bg-light sections, dropdown hover              |
-| white               | `#ffffff`            | Card backgrounds, hero text, button text       |
-| border-light        | `#e9ecef`            | Card borders, top-bar border                   |
+| Token           | Value     | Usage                                                                             |
+| --------------- | --------- | --------------------------------------------------------------------------------- |
+| primary-orange  | `#ff8b00` | Headings, icons, checkmarks, buttons, social hover, active states, section titles |
+| gradient-purple | `#7a5e86` | Footer/top-bar gradient start, newsletter subscribe btn bg                        |
+| gradient-rose   | `#a75e67` | Footer/top-bar gradient midpoint                                                  |
+| gradient-orange | `#f77b2e` | Footer/top-bar gradient end                                                       |
+| body-text       | `#939393` | Body copy                                                                         |
+| heading-color   | `#000000` | h1–h6 headings (Oswald, uppercase)                                                |
+| gray-light      | `#f8f9fa` | bg-light sections, dropdown hover                                                 |
+| white           | `#ffffff` | Card backgrounds, hero text, button text                                          |
+| border-light    | `#e9ecef` | Card borders, top-bar border                                                      |
 
 ### Typography
 
-| Element    | Font Family                         | Weight | Notes                              |
-|------------|-------------------------------------|--------|------------------------------------|
-| Body       | Rubik, sans-serif                   | 400    | Line-height 1.7, 1rem              |
-| Headings   | Oswald, sans-serif                  | 400–700| UPPERCASE, text-transform uppercase|
-| Blockquote | Georgia, Times, serif               | —      | Italic, 18px (testimonials)        |
+| Element    | Font Family           | Weight  | Notes                               |
+| ---------- | --------------------- | ------- | ----------------------------------- |
+| Body       | Rubik, sans-serif     | 400     | Line-height 1.7, 1rem               |
+| Headings   | Oswald, sans-serif    | 400–700 | UPPERCASE, text-transform uppercase |
+| Blockquote | Georgia, Times, serif | —       | Italic, 18px (testimonials)         |
 
 ### Buttons
 
@@ -47,178 +47,149 @@ and TypeScript under the new name **Stratum**.
 - `site-footer`: `padding: 4em 0` / md `8em 0`
 - `site-section-cover`: `height: calc(100vh - 196px)`, min-height `577px`
 
-## Gherkin Requirements & Scenarios
+## Requirements
 
-### Feature: Top Bar
+### Requirement: Top Bar
 
-As a visitor, I want to see contact info and social links at the top.
+The top bar SHALL display contact info and social links with a gradient background.
 
 #### Scenario: Top bar renders with contact info
 
-- Given the user loads Stratum
-- When the top bar renders
-- Then it shows email, phone number, and social links (Twitter, Instagram)
-- And it uses the gradient background (purple → rose → orange)
+- **WHEN** the user loads Stratum
+- **THEN** the top bar shows email, phone number, and social links (Twitter, Instagram)
+- **AND** it uses the gradient background (purple → rose → orange)
 
-### Feature: Sticky Navbar
+### Requirement: Sticky Navbar
 
-As a visitor, I want a sticky navigation bar.
+The navbar SHALL display a logo and navigation links with a dropdown for About Us.
 
 #### Scenario: Navbar renders with logo and nav links
 
-- Given the user loads the page
-- When the navbar renders
-- Then it shows a logo "Stratum" and nav links (Home, Services, About Us, Press, Testimonials, Blog, Contact)
-- And "About Us" has a dropdown with sub-items (Team, Pricing, FAQ)
+- **WHEN** the user loads the page
+- **THEN** the navbar shows a logo "Stratum" and nav links (Home, Services, About Us, Press, Testimonials, Blog, Contact)
+- **AND** "About Us" has a dropdown with sub-items (Team, Pricing, FAQ)
 
 #### Scenario: Sticky navbar on scroll
 
-- Given the page is loaded
-- When the user scrolls down
-- Then the navbar becomes sticky with white background, box-shadow, and orange logo
+- **WHEN** the user scrolls down
+- **THEN** the navbar becomes sticky with white background, box-shadow, and orange logo
 
-### Feature: Hero Slider
+### Requirement: Hero Slider
 
-As a visitor, I want to see a rotating hero banner.
+The hero section SHALL display rotating slides with background images, headings, and CTAs.
 
 #### Scenario: Hero carousel displays slides
 
-- Given the user loads the page
-- When the hero slider renders
-- Then 2 slides are displayed with background images, headings, subtext, and "Get in touch" outline-white button
-- And slides auto-rotate (or have nav arrows)
+- **WHEN** the user loads the page
+- **THEN** 2 slides are displayed with background images, headings, subtext, and "Get in touch" outline-white button
 
-### Feature: Services / Feature Blocks
+### Requirement: Services
 
-As a visitor, I want to see alternating image-text feature sections.
+The services section SHALL display alternating image-text feature blocks.
 
 #### Scenario: Two service blocks render
 
-- Given the user scrolls to the services section
-- When the blocks load
-- Then 2 alternating blocks are shown: one with image left + text right, the other reversed
-- And each has a heading, description paragraphs, and an orange checkmark list
+- **WHEN** the user scrolls to the services section
+- **THEN** 2 alternating blocks are shown: one with image left + text right, the other reversed
+- **AND** each has a heading, description paragraphs, and an orange checkmark list
 
-### Feature: Features Grid
+### Requirement: Features Grid
 
-As a visitor, I want to see a grid of service offerings.
+The features section SHALL display a grid of service offerings.
 
 #### Scenario: Six feature cards display
 
-- Given the user scrolls to the features grid
-- When the grid loads
-- Then 6 feature cards are shown in a 3-column grid on light background
-- And each has an orange icon, title, and description
+- **WHEN** the user scrolls to the features grid
+- **THEN** 6 feature cards are shown in a 3-column grid on light background
+- **AND** each has an orange icon, title, and description
 
-### Feature: About / Video Section
+### Requirement: About / Video Section
 
-As a visitor, I want to see company stats and a video.
+The about section SHALL display company stats and a video thumbnail.
 
 #### Scenario: Video and counters render
 
-- Given the user scrolls to the about section
-- When the section loads on dark background
-- Then a video thumbnail with play button is displayed
-- And 4 stat counters are shown (years, engineers, employees, golds) with orange underlines
+- **WHEN** the user scrolls to the about section
+- **THEN** a video thumbnail with play button is displayed
+- **AND** 4 stat counters are shown (years, engineers, employees, golds) with orange underlines
 
-### Feature: Team Section
+### Requirement: Team Section
 
-As a visitor, I want to see the team.
+The team section SHALL display team member cards with photos, names, roles, and social links.
 
 #### Scenario: Team member cards display
 
-- Given the user scrolls to the team section
-- When the section loads
-- Then 6 team member cards are shown in a 3-column grid
-- And each has a circular photo, name, role, and social icon buttons (Facebook, Twitter, Instagram)
-- And hovering lifts the card with shadow
+- **WHEN** the user scrolls to the team section
+- **THEN** 6 team member cards are shown in a 3-column grid
+- **AND** each has a circular photo, name, role, and social icon buttons (Facebook, Twitter, Instagram)
 
-### Feature: Pricing Section
+### Requirement: Pricing Section
 
-As a visitor, I want to see pricing tiers.
+The pricing section SHALL display three pricing tiers with feature lists.
 
 #### Scenario: Three pricing tiers display
 
-- Given the user scrolls to the pricing section
-- When the section loads on light background
-- Then 3 pricing cards (Basic $47, Premium $200, Professional $750) appear
-- And each shows a tier name, price, feature list with checkmarks (orange) or strikethrough, and a "Buy Now" button
-- And Premium is highlighted with orange primary button
+- **WHEN** the user scrolls to the pricing section
+- **THEN** 3 pricing cards (Basic $47, Premium $200, Professional $750) appear
+- **AND** each shows a tier name, price, feature list with checkmarks or strikethrough, and a "Buy Now" button
+- **AND** Premium is highlighted with orange primary button
 
-### Feature: FAQ Section
+### Requirement: FAQ Section
 
-As a visitor, I want to see frequently asked questions.
+The FAQ section SHALL display frequently asked questions in a two-column layout.
 
 #### Scenario: FAQ renders in two columns
 
-- Given the user scrolls to the FAQ section
-- When the section loads
-- Then 8 Q&A items are displayed in a 2-column layout
-- And the section title "Frequently Ask Questions" is orange
+- **WHEN** the user scrolls to the FAQ section
+- **THEN** 8 Q&A items are displayed in a 2-column layout
+- **AND** the section title "Frequently Ask Questions" is orange
 
-### Feature: Press Section
+### Requirement: Press Section
 
-As a visitor, I want to see press articles.
+The press section SHALL display press articles with dates and descriptions.
 
 #### Scenario: Press articles render
 
-- Given the user scrolls to the press section
-- When the section loads
-- Then 3 press articles are listed with date, title, and description
-- And the heading "Press" is on the left, articles on the right
+- **WHEN** the user scrolls to the press section
+- **THEN** 3 press articles are listed with date, title, and description
+- **AND** the heading "Press" is on the left, articles on the right
 
-### Feature: Testimonials
+### Requirement: Testimonials
 
-As a visitor, I want to see client testimonials.
+The testimonials section SHALL display client testimonials with quotes and photos.
 
-#### Scenario: Testimonial carousel displays
+#### Scenario: Testimonial cards display
 
-- Given the user scrolls to the testimonials section
-- When the carousel loads on light background
-- Then testimonial cards are displayed with a blockquote, circular photo, and name
-- And navigation dots are shown at the bottom
+- **WHEN** the user scrolls to the testimonials section
+- **THEN** testimonial cards are displayed with a blockquote, circular photo, and name
 
-### Feature: Blog Section
+### Requirement: Blog Section
 
-As a visitor, I want to see recent blog posts.
+The blog section SHALL display recent blog posts with images and metadata.
 
 #### Scenario: Blog cards render
 
-- Given the user scrolls to the blog section
-- When the section loads
-- Then 2 blog cards are shown in a 2-column layout
-- And each has an image, title, date/author, description, and "Read More" link
+- **WHEN** the user scrolls to the blog section
+- **THEN** 2 blog cards are shown in a 2-column layout
+- **AND** each has an image, title, date/author, description, and "Read More" link
 
-### Feature: Contact Section
+### Requirement: Contact Section
 
-As a visitor, I want to contact the company.
+The contact section SHALL display a contact form and sidebar CTA.
 
 #### Scenario: Contact form renders
 
-- Given the user scrolls to the contact section
-- When the section loads on light background
-- Then a contact form appears with first name, last name, email, message textarea, and "Send Message" button
-- And a sidebar text with "Get Started" button is shown
+- **WHEN** the user scrolls to the contact section
+- **THEN** a contact form appears with first name, last name, email, message textarea, and "Send Message" button
+- **AND** a sidebar text with "Get Started" button is shown
 
-### Feature: Footer
+### Requirement: Footer
 
-As a visitor, I want footer info and social links.
+The footer SHALL display company info, newsletter form, social links, and link to Component Dock.
 
 #### Scenario: Footer renders with gradient and required link
 
-- Given the user scrolls to the bottom
-- When the footer renders
-- Then it uses the gradient background (purple → rose → orange)
-- And it contains About Us text, Features links, Newsletter form, and social icons
-- And it links to https://www.componentdock.com/ ("Component Dock")
-
-## Verification Checklist
-
-- [ ] Typecheck passes (`npm run typecheck`)
-- [ ] Lint passes (`npm run lint`)
-- [ ] 100% test coverage on new components (`npm run test:coverage`)
-- [ ] Build succeeds (`npm run build`)
-- [ ] Footer links to Component Dock (`https://www.componentdock.com/`)
-- [ ] Section order matches original (Top bar → Navbar → Hero slider → Services → Features grid → About/Video → Team → Pricing → FAQ → Press → Testimonials → Blog → Contact → Footer)
-- [ ] Design tokens match: primary orange `#ff8b00`, gradient `#7a5e86`→`#a75e67`→`#f77b2e`, Rubik body, Oswald headings
-- [ ] Responsive layout adapts correctly on mobile/tablet
+- **WHEN** the user scrolls to the bottom
+- **THEN** the footer uses the gradient background (purple → rose → orange)
+- **AND** it contains About Us text, Features links, Newsletter form, and social icons
+- **AND** it links to https://www.componentdock.com/ ("Component Dock")
