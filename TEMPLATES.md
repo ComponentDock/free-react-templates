@@ -1211,7 +1211,7 @@
 - [x] **Trips** — [colorlib](https://colorlib.com/wp/template/trips/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/trips-free-template.jpg) · [trek](https://trek.free.componentdock.com)
 - [x] **Typo** — [colorlib](https://colorlib.com/wp/template/typo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/typo-bright-free-app-landing-page-template.jpg) · [brio](https://brio.free.componentdock.com)
 - [x] **Ultim8** — [colorlib](https://colorlib.com/wp/template/ultim8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ultim8-free-template.jpg) · [prime](https://prime.free.componentdock.com)
-- [ ] **Umeet** — [colorlib](https://colorlib.com/wp/template/umeet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/umeet-free-template.jpg)
+- [~] **Umeet** — [colorlib](https://colorlib.com/wp/template/umeet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/umeet-free-template.jpg)
 - [x] **Unbrew** — [colorlib](https://colorlib.com/wp/template/unbrew/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unbrew-free-template.jpg) · [pulsewave](https://free-react-templates-pulsewave.surge.sh)
 - [ ] **Unearth** — [colorlib](https://colorlib.com/wp/template/unearth/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unearth-free-template.jpg)
 - [x] **Uptown** — [colorlib](https://colorlib.com/wp/template/uptown/) · [homestead](https://homestead.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/uptown-free-template.jpg)

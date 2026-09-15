@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Conclave brand palette — UX conference theme:
+     purple #3b1d82 (primary) · pink #ea0763 (accent) · navy #111429 (footer) */
+  --color-primary: #3b1d82;
+  --color-primary-deep: #2a1260;
+  --color-accent: #ea0763;
+  --color-accent-deep: #c90656;
+  --color-light: #f7f7f7;
+  --color-footer: #111429;
+  --color-text: #242424;
+  --color-muted: #797979;
+
+  /* Oswald (headings) + Roboto (body) via Google Fonts <link> in index.html. */
+  --font-heading: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
