@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-poppins: 'Poppins', sans-serif;
+  --color-brio-coral: #f76268;
+  --color-brio-yellow: #fce08a;
+  --color-brio-pink: #f67590;
+  --color-brio-teal: #4cd3e3;
+  --color-brio-blue: #38a4ff;
+  --color-brio-red: #f44a40;
+  --color-brio-dark: #222222;
+  --color-brio-muted: #777777;
+  --color-brio-light: #f9f9ff;
+  --color-brio-white: #ffffff;
+  --color-brio-black: #000000;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-poppins);
+  }
+}
