@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* EcoPulse brand palette — recreated from the ColorLib
+     "Environmentalorganization" design: green #09cc7f accents,
+     light green #EEFFFA section bg, dark navy #10285d body text,
+     green-gray #425140 headings. */
+  --color-brand: #09cc7f;
+  --color-brand-dark: #07b56e;
+  --color-brand-light: rgba(9, 204, 127, 0.1);
+
+  /* Gradient stop colors for CTA buttons. */
+  --color-cta-left: #46c0be;
+  --color-cta-right: #6dd56f;
+
+  /* Section subtitle green. */
+  --color-subtitle-green: #70d76a;
+
+  /* Heading text — dark green-gray. */
+  --color-ink: #425140;
+
+  /* Body text — dark navy. */
+  --color-body: #10285d;
+
+  /* Nav link color. */
+  --color-nav-link: #072366;
+
+  /* Hero overlay. */
+  --color-hero-overlay: rgba(35, 39, 35, 0.4);
+
+  /* Light section background. */
+  --color-paper: #eefffa;
+
+  /* Footer dark bg. */
+  --color-footer-bg: #1a2332;
+
+  /* Muted text. */
+  --color-mist: #8899aa;
+
+  /* Divider. */
+  --color-divider: #dde4ea;
+
+  /* Primary scale so shared Button/ButtonLink `primary` variants
+     resolve to the brand green. */
+  --color-primary-50: #e6faf1;
+  --color-primary-100: #b3f0d6;
+  --color-primary-200: #80e6bb;
+  --color-primary-300: #4ddca0;
+  --color-primary-400: #26d48c;
+  --color-primary-500: #09cc7f;
+  --color-primary-600: #07b56e;
+  --color-primary-700: #05995b;
+  --color-primary-800: #037d48;
+  --color-primary-900: #016135;
+
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
