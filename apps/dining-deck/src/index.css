@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* DiningDeck brand palette — recreated from the Jevelin restaurant design
+     (accent teal #47c9e5, golden script #d4a843). */
+  --color-teal-50: #edfcfe;
+  --color-teal-100: #d2f6fb;
+  --color-teal-200: #abeef6;
+  --color-teal-300: #72e2ef;
+  --color-teal-400: #47c9e5;
+  --color-teal-500: #2babc8;
+  --color-teal-600: #239cb7;
+  --color-teal-700: #237d96;
+  --color-teal-800: #26677b;
+  --color-teal-900: #245667;
+
+  --color-gold-400: #d4a843;
+  --color-gold-500: #c49a38;
+
+  /* Raleway — the original template's primary typeface */
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Kalam', cursive;
+}
