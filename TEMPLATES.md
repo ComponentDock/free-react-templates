@@ -1223,7 +1223,7 @@
 - [x] **Violet** — [colorlib](https://colorlib.com/wp/template/violet/) · [vogue](https://vogue.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/violet-free-template.jpg)
 - [x] **Virtualassistant** — [colorlib](https://colorlib.com/wp/template/virtualassistant/) · [valet](https://valet.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/virtualassistant-free-template.jpg)
 - [x] **Warehouse** — [colorlib](https://colorlib.com/wp/template/warehouse/) · [depot](https://depot.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/warehouse-free-template.jpg)
-- [~] **Watch** — [colorlib](https://colorlib.com/wp/template/watch/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/watch-free-template.jpg)
+- [x] **Watch** — [colorlib](https://colorlib.com/wp/template/watch/) · [wristly](https://wristly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/watch-free-template.jpg)
 - [x] **Waterboat** — [colorlib](https://colorlib.com/wp/template/waterboat/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/waterboat-free-template.jpg) · [marina](https://marina.free.componentdock.com)
 - [x] **Wellspa** — [colorlib](https://colorlib.com/wp/template/wellspa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wellspa-free-template.jpg) · [halcyon](https://halcyon.free.componentdock.com)
 - [ ] **Whisper** — [colorlib](https://colorlib.com/wp/template/whisper/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/whisper-free-template.jpg)
