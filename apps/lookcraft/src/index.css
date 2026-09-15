@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-navy: #081624;
+  --color-navy-light: #0d2137;
+  --color-accent-red: #f44336;
+  --color-accent-purple: #673ab7;
+  --color-surface-light: #f6f7f9;
+  --color-text-secondary: #5c5c5c;
+  --color-footer-bg: #222222;
+  --color-body-text: #333333;
+  --color-border-light: #e0e0e0;
+
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}

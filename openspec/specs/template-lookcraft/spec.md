@@ -17,22 +17,22 @@ page.
 
 ### Brand colors
 
-| Token | Hex | Usage |
-|-------|-----|-------|
-| Dark navy | `#081624` | Primary text, button text, dark tones |
-| Red accent | `#f44336` | Accent/CTA hover |
-| Purple accent | `#673ab7` | Secondary accent |
-| Light gray bg | `#f6f7f9` | Blog section background |
-| Medium gray | `#5c5c5c` / `#656565` | Secondary text |
-| Dark gray | `#222222` | Footer background |
-| Body gray | `#333` / `#515151` | Body text |
-| Light border | `#c1c1c1` / `#e0e0e0` | Dividers, borders |
-| White | `#fff` | Overlays (opacity 0.4), text on dark |
+| Token         | Hex                   | Usage                                 |
+| ------------- | --------------------- | ------------------------------------- |
+| Dark navy     | `#081624`             | Primary text, button text, dark tones |
+| Red accent    | `#f44336`             | Accent/CTA hover                      |
+| Purple accent | `#673ab7`             | Secondary accent                      |
+| Light gray bg | `#f6f7f9`             | Blog section background               |
+| Medium gray   | `#5c5c5c` / `#656565` | Secondary text                        |
+| Dark gray     | `#222222`             | Footer background                     |
+| Body gray     | `#333` / `#515151`    | Body text                             |
+| Light border  | `#c1c1c1` / `#e0e0e0` | Dividers, borders                     |
+| White         | `#fff`                | Overlays (opacity 0.4), text on dark  |
 
 ### Typography
 
-| Role | Font | Fallback |
-|------|------|----------|
+| Role     | Font | Fallback   |
+| -------- | ---- | ---------- |
 | All text | Lato | sans-serif |
 
 ### Shape / spacing
@@ -60,69 +60,131 @@ page.
    - Instagram/contact info
    - Copyright bar
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
-Feature: LookCraft photography portfolio page
-  As a visitor to the photography portfolio website
-  I want to see a sleek, editorial-style landing page
-  So that I can explore galleries and learn about the artist
+### Requirement: Transparent header with navigation
 
-  Background:
-    Given the page is loaded at lookcraft.free.componentdock.com
+Users SHALL see a transparent header with the LookCraft logo on the left and navigation links (Home, Gallery, Artists, Shop, News, Contact) on the right.
 
-  Scenario: Transparent header with navigation
-    Then the header should display the logo on the left
-    And navigation links should include: Home, Gallery, Artists, Shop, News, Contact
-    And the header should be transparent over the hero
+#### Scenario: Header displays correctly
 
-  Scenario: Hero slider with three slides
-    Then a full-width hero slider should be visible
-    And there should be 3 slides with background images
-    And each slide should have a white semi-transparent overlay
-    And each slide should display the heading "The Look"
-    And each slide should show exhibition date and artist info
-    And each slide should have a "Read More" pill-shaped button
-    And dot navigation should be visible for slide switching
+- **WHEN** the page loads
+- **THEN** the header should be transparent and overlay the hero
+- **AND** the logo "LookCraft" should be visible on the left
+- **AND** six navigation links should be visible: Home, Gallery, Artists, Shop, News, Contact
+- **AND** each link should point to the correct section anchor
 
-  Scenario: Gallery section with split layout
-    Then a 2-column gallery layout should be visible
-    And the left column should display a gallery quote text
-    And 3 gallery items should appear in the left column
-    And 3 gallery items should appear in the right column
-    And each gallery item should have a thumbnail image
-    And each gallery item should have a "View Gallery" button
-    And a "See All Galleries" CTA should be at the bottom
+#### Scenario: Mobile hamburger menu
 
-  Scenario: Blog section on light background
-    Then the blog section should have a light gray (#f6f7f9) background
-    And a section title "Latest from the blog" should be visible on the left
-    And 2 blog items should appear on the right
-    And each blog item should have a thumbnail, title, date, and excerpt
+- **WHEN** the viewport is 375px wide
+- **THEN** a hamburger menu button should be visible
+- **AND** clicking it should expand a mobile navigation menu
+- **AND** clicking a nav link should close the mobile menu
 
-  Scenario: Dark footer with multiple columns
-    Then the footer should have a dark (#222222) background
-    And it should contain: logo + description, useful links, contact info
-    And a copyright bar should be visible at the bottom
-    And the footer should link to https://www.componentdock.com/
+### Requirement: Hero slider with three slides
 
-  Scenario: Pill-shaped buttons throughout
-    Then all CTA buttons should have pill shape (border-radius: 60px)
-    And buttons should be transparent with uppercase text
-    And buttons should have font-weight 700
+Users SHALL see a full-width hero slider with 3 slides, each containing a background image, white semi-transparent overlay, heading, exhibition info, and a CTA button.
 
-  Scenario: Mobile responsive
-    Given the viewport is 375px wide
-    Then a hamburger menu icon should be visible
-    And the hero slider should display single slide
-    And gallery columns should stack vertically
-    And blog columns should stack vertically
-    And footer columns should stack vertically
+#### Scenario: Hero displays first slide
 
-  Scenario: Hero heading scale
-    Then the hero heading "The Look" should be displayed at very large scale
-    And the heading should use the Lato font family
-```
+- **WHEN** the page loads
+- **THEN** a full-width hero section should be visible
+- **AND** the first slide should show the heading "The Look"
+- **AND** exhibition date and artist info should be displayed
+- **AND** a "Read More" pill-shaped button should be present
+- **AND** dot navigation with 3 dots should be visible
+
+#### Scenario: Slide navigation via dots
+
+- **WHEN** the user clicks a dot indicator
+- **THEN** the corresponding slide should become active
+- **AND** the clicked dot should be highlighted
+
+#### Scenario: Slide navigation via arrows
+
+- **WHEN** the user clicks the previous/next arrow
+- **THEN** the slider should move to the adjacent slide
+- **AND** wrapping should occur at boundaries
+
+#### Scenario: Auto-advance
+
+- **WHEN** 5 seconds pass without user interaction
+- **THEN** the slider should automatically advance to the next slide
+
+### Requirement: Gallery section with split layout
+
+Users SHALL see a 2-column gallery section with 6 gallery items, each with a thumbnail and "View Gallery" button, plus a "See All Galleries" CTA.
+
+#### Scenario: Gallery displays correctly
+
+- **WHEN** the user scrolls to the gallery section
+- **THEN** a 2-column layout should be visible
+- **AND** the left column should display a photography quote
+- **AND** 3 gallery items should appear in the left column
+- **AND** 3 gallery items should appear in the right column
+- **AND** each item should have a thumbnail image and "View Gallery" button
+- **AND** a "See All Galleries" link should be at the bottom
+
+### Requirement: Blog section on light background
+
+Users SHALL see a blog section with a light gray background, a section title on the left, and 2 blog items on the right.
+
+#### Scenario: Blog displays correctly
+
+- **WHEN** the user scrolls to the blog section
+- **THEN** the section should have a light gray (#f6f7f9) background
+- **AND** the heading "Latest from the blog" should be visible on the left
+- **AND** 2 blog items should appear on the right
+- **AND** each item should have a thumbnail, title, date, and excerpt
+
+### Requirement: Dark footer with multiple columns
+
+Users SHALL see a dark footer with 4 columns: logo + description, useful links, contact info, and a Component Dock link, plus a copyright bar.
+
+#### Scenario: Footer displays correctly
+
+- **WHEN** the user scrolls to the footer
+- **THEN** the footer should have a dark (#222222) background
+- **AND** the LookCraft logo should be visible
+- **AND** useful links should be listed
+- **AND** contact information should be displayed
+- **AND** a link to https://www.componentdock.com/ should be present (branded "Component Dock")
+- **AND** a copyright bar should be visible at the bottom
+
+### Requirement: Pill-shaped buttons throughout
+
+Users SHALL see pill-shaped (border-radius: 60px) transparent buttons with uppercase text throughout the template.
+
+#### Scenario: Button styling
+
+- **WHEN** CTA buttons are rendered
+- **THEN** they should have a pill shape (border-radius: 60px)
+- **AND** they should have transparent background
+- **AND** they should display uppercase text
+- **AND** they should have font-weight 700
+
+### Requirement: Mobile responsive design
+
+Users SHALL see a responsive layout that adapts to mobile viewports.
+
+#### Scenario: Mobile layout
+
+- **WHEN** the viewport is 375px wide
+- **THEN** a hamburger menu icon should be visible
+- **AND** the hero slider should display a single slide
+- **AND** gallery columns should stack vertically
+- **AND** blog columns should stack vertically
+- **AND** footer columns should stack vertically
+
+### Requirement: Typography consistency
+
+Users SHALL see the Lato font family used throughout the template.
+
+#### Scenario: Font rendering
+
+- **WHEN** the page loads
+- **THEN** all text should use the Lato font family
+- **AND** the hero heading should be displayed at very large scale
 
 ## Verification checklist
 
