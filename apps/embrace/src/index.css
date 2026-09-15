@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Embrace design tokens — recreated from source preview stylesheets
+     (no assets copied):
+     - brand coral #e55e2a: primary CTA buttons, accent color
+     - dark navy #1a1a2e: hero overlay, footer background
+     - light gray #f8f9fa: section alternating backgrounds
+     - body text #666: paragraph text
+     - muted #999: secondary text
+     - fonts: Montserrat (headings), Lato (body) */
+  --color-primary: #e55e2a;
+  --color-primary-500: #e55e2a;
+  --color-primary-600: #d14e1f;
+  --color-primary-700: #b8431a;
+  --color-dark: #1a1a2e;
+  --color-light: #f8f9fa;
+  --color-ink: #1a1a2e;
+  --color-surface: #ffffff;
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-ink);
+  }
+}
