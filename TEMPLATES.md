@@ -1201,7 +1201,7 @@
 [x] **Theestate** — [colorlib](https://colorlib.com/wp/template/theestate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theestate-free-template.jpg) · [manor](https://free-react-templates-manor.surge.sh)
 - [x] **Theinterior** — [colorlib](https://colorlib.com/wp/template/theinterior/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theinterior-free-template.jpg) · [cosyhaus](https://free-react-templates-cosyhaus.surge.sh)
 - [x] **Thelogistico** — [colorlib](https://colorlib.com/wp/template/thelogistico/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelogistico-colorlib-template.jpg) · [logistix](https://logistix.free.componentdock.com)
-- [~] **Thelook** — [colorlib](https://colorlib.com/wp/template/thelook/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelook-free-template.jpg)
+- [x] **Thelook** — [colorlib](https://colorlib.com/wp/template/thelook/) · [lookcraft](https://lookcraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelook-free-template.jpg)
 - [ ] **Topbuilder** — [colorlib](https://colorlib.com/wp/template/topbuilder/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/topbuilder-construction-company-website-template.jpg)
 - [x] **Topgym** — [colorlib](https://colorlib.com/wp/template/topgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/topgym-free-template.jpg) · [ironpulse](https://ironpulse.free.componentdock.com)
 - [x] **Topmodel** — [colorlib](https://colorlib.com/wp/template/topmodel/) · [catwalk](https://catwalk.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/topmodel-free-template.jpg)
