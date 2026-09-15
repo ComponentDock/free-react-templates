@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Constructo brand palette — design tokens:
+     dark navy #111f29, golden yellow #f6b60b, body grey #555555,
+     heading dark #222222, light bg #f8f8f8, white #ffffff. */
+  --color-brand: #111f29;
+  --color-brand-light: #1a2d3d;
+  --color-accent: #f6b60b;
+  --color-accent-dark: #d9a009;
+
+  --color-heading: #222222;
+  --color-body: #555555;
+  --color-paper: #ffffff;
+  --color-light: #f8f8f8;
+  --color-muted: #eeeeee;
+
+  --font-heading: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
