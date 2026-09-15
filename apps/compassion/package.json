@@ -25,5 +25,6 @@
     "typescript": "latest",
     "vite": "latest",
     "vitest": "latest"
-  }
+  },
+  "homepage": "https://compassion.free.componentdock.com"
 }
