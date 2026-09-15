@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — recreated from the ColorLib "Libchurch"
+     church event theme (css/style.css + live preview):
+     brand red #dd3e3e (buttons, accents, section spans),
+     dark top-nav #3c1919, light section bg #f6f8f9,
+     dark text #252525, body text #636363. Buttons are
+     rectangular with 2px radius, uppercase tracking-[1px].
+     Heading font: Open Sans, decorative: Lora. */
+  --color-brand: #dd3e3e;
+  --color-brand-hover: #c43636;
+  --color-nav: #3c1919;
+  --color-section: #f6f8f9;
+  --color-ink: #252525;
+  --color-body: #636363;
+  --color-mist: #e8eaed;
+  --color-white: #ffffff;
+
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Lora', ui-serif, Georgia, serif;
+}
