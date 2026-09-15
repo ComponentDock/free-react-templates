@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Proxy brand palette — real estate blue primary #007bff */
+  --color-sky-50: #e7f3ff;
+  --color-sky-100: #c3e1ff;
+  --color-sky-200: #8ec4ff;
+  --color-sky-300: #4da3ff;
+  --color-sky-400: #2196f5;
+  --color-sky-500: #007bff;
+  --color-sky-600: #0069d9;
+  --color-sky-700: #0053b3;
+  --color-sky-800: #003d8c;
+  --color-sky-900: #002766;
+
+  /* Mukta Mahee + Playfair Display — real estate serif/sans pairing */
+  --font-sans: 'Mukta Mahee', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
+}
