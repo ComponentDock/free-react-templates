@@ -1393,7 +1393,7 @@
 - [x] **Pointer** — [colorlib](https://colorlib.com/wp/template/pointer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pointer-free-template.jpg) · [compass](https://compass.free.componentdock.com)
 - [x] **Portech** — [colorlib](https://colorlib.com/wp/template/portech/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/portech-colorlib-template.jpg) · [techwise](https://free-react-templates-techwise.surge.sh)
 - [x] **Repair** — [colorlib](https://colorlib.com/wp/template/repair/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/repair-free-template-1.jpg) · [renovo](https://free-react-templates-renovo.surge.sh)
-- [~] **Security** — [colorlib](https://colorlib.com/wp/template/security/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/security-free-template.jpg)
+- [x] **Security** — [colorlib](https://colorlib.com/wp/template/security/) · [fortify](https://free-react-templates-fortify.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/security-free-template.jpg)
 - [x] **Unioncorp** — [colorlib](https://colorlib.com/wp/template/unioncorp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unioncorp-colorlib-template.jpg) · [unioncorp](https://free-react-templates-unioncorp.surge.sh)
 - [x] **Uza** — [colorlib](https://colorlib.com/wp/template/uza/) · [amplify](https://amplify.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/uza-free-template.jpg)
 
