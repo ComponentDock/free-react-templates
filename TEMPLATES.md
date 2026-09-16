@@ -1366,7 +1366,7 @@
 - [x] **Buson** — [colorlib](https://colorlib.com/wp/template/buson/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buson-free-template.jpg) · [insight](https://free-react-templates-insight.surge.sh)
 - [x] **Callcenter** — [colorlib](https://colorlib.com/wp/template/callcenter/) · [dialpad](https://dialpad.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/callcenter-free-call-center-website-template.jpg)
 - [x] **Cellon** — [colorlib](https://colorlib.com/wp/template/cellon/) · [lightwell](https://lightwell.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cellon-free-ligh-consulting-company-template.jpg)
-- [~] **Classic** — [colorlib](https://colorlib.com/wp/template/classic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/classic-free-template.jpg)
+- [x] **Classic** — [colorlib](https://colorlib.com/wp/template/classic/) · [linnet](https://linnet.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/classic-free-template.jpg)
 - [ ] **Coach** — [colorlib](https://colorlib.com/wp/template/coach/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coach-free-template.jpg)
 - [x] **Coaching** — [colorlib](https://colorlib.com/wp/template/coaching/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coaching-free-template.jpg) · [clarity](https://clarity.free.componentdock.com)
 - [x] **Conbusi** — [colorlib](https://colorlib.com/wp/template/conbusi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/conbusi-free-template.jpg) · [stratagem](https://stratagem.free.componentdock.com)
