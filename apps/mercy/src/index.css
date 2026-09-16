@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@source '../../packages/ui/src';
+
+@theme {
+  /* Mercy brand palette — coral red #fd645b (CTA/donate buttons),
+     blue #4c7bcb (services), gold #eec857 (active nav). */
+  --color-brand: #fd645b;
+  --color-brand-dark: #e5554c;
+
+  --color-blue: #4c7bcb;
+  --color-gold: #eec857;
+
+  /* Ink — dark headings (#333). */
+  --color-ink: #333333;
+  --color-ink-dark: #222222;
+
+  /* Footer dark gray (#3b3b3b). */
+  --color-footer: #3b3b3b;
+
+  /* Mist — muted body text. */
+  --color-mist: #999999;
+  --color-mist-dark: #666666;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the coral brand color. */
+  --color-primary-50: #fff5f4;
+  --color-primary-100: #ffe8e6;
+  --color-primary-200: #ffd0cc;
+  --color-primary-300: #ffb0ab;
+  --color-primary-400: #fd7f79;
+  --color-primary-500: #fd645b;
+  --color-primary-600: #e5554c;
+  --color-primary-700: #c44039;
+  --color-primary-800: #a33530;
+  --color-primary-900: #882e29;
+
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
