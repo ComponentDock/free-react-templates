@@ -1307,7 +1307,7 @@
 - [x] **The Charity** — [colorlib](https://colorlib.com/wp/template/the-charity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thecharity-free-template.jpg) · [amity](https://amity.free.componentdock.com)
 - [x] **Vineyard** — [colorlib](https://colorlib.com/wp/template/vineyard/) · [parish](https://parish.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vineyard-free-template.jpg)
 - [x] **Welfare** — [colorlib](https://colorlib.com/wp/template/welfare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/welfare-free-template.jpg) · [gracious](https://gracious.free.componentdock.com)
-- [ ] **Wisdom** — [colorlib](https://colorlib.com/wp/template/wisdom/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wisdom-free-template.jpg)
+- [~] **Wisdom** — [colorlib](https://colorlib.com/wp/template/wisdom/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wisdom-free-template.jpg)
 
 ## Classified Ads (4)
 
