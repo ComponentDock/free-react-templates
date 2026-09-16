@@ -34,7 +34,7 @@ spec, TEMPLATES.md, and the PR.
   Uses three fonts: Dosis (headings), Overpass (body), and Work Sans
   (secondary text). The hero has a parallax background photo with dark
   overlay and centered white text. Square-cornered buttons (`border-radius:
-  0`) give a bold, modern look. The gallery section uses a 6-image grid
+0`) give a bold, modern look. The gallery section uses a 6-image grid
   with magnific-popup lightbox and hover icon overlays. Overall: clean,
   warm palette on white/light-grey backgrounds with orange accents.
 
@@ -57,10 +57,10 @@ spec, TEMPLATES.md, and the PR.
   and events), `#fafafa`, white for most content areas.
 - **Fonts:** `'Dosis', sans-serif` (headings, 200–700 via Google Fonts),
   `'Overpass', sans-serif` (body, 300–700 via Google Fonts), `'Work Sans',
-  sans-serif` (secondary, some text elements). Load via Google Fonts
+sans-serif` (secondary, some text elements). Load via Google Fonts
   `<link>` in index.html.
 - **Buttons:** Bootstrap `.btn` with **square corners** (`border-radius:
-  0` throughout):
+0` throughout):
   - `.btn-primary`: bg `#78d5ef`, color `#212529`, border `#78d5ef`.
   - `.btn-white`: bg `#fff`, border `1px solid #fff`, color `#000`,
     border-radius `0` — used in the counter/intro strip CTAs.
@@ -110,10 +110,10 @@ spec, TEMPLATES.md, and the PR.
    `HeartHandshake`), "Sponsorship" (lucide `Handshake`). Each: icon
    (teal `#4ac7ea`) + title + description paragraph.
 5. **Causes** (`.ftco-section bg-light`, `#f2f2f2`) — h2 "Our Causes"
-   + 6 cause cards in a responsive grid: background photo (picsum seeds
-   `gracious-cause-1..6`), title "Clean water for the urban area" ×6
-   (placeholder), description, progress bar (green `#7cbd1e` fill),
-   "Donate Now" link.
+   - 6 cause cards in a responsive grid: background photo (picsum seeds
+     `gracious-cause-1..6`), title "Clean water for the urban area" ×6
+     (placeholder), description, progress bar (green `#7cbd1e` fill),
+     "Donate Now" link.
 6. **Latest Donations** (`.ftco-section`, white bg) — h2 "Latest
    Donations" + 3 donation cards: avatar photo (picsum `gracious-donor-1..3`),
    name "Ivan Jacobson" ×3, description text, donation amount ("Donated
@@ -142,7 +142,7 @@ spec, TEMPLATES.md, and the PR.
 
 - [ ] Spec covers every section in the correct order (10 sections)
 - [ ] Design tokens match extracted CSS values exactly (`#f86f2d`,
-  `#fa8f3d`, `#faaa3a`, `#78d5ef`, `#7cbd1e`, Dosis + Overpass + Work Sans)
+      `#fa8f3d`, `#faaa3a`, `#78d5ef`, `#7cbd1e`, Dosis + Overpass + Work Sans)
 - [ ] Counter strip gradient (3 orange tones) documented
 - [ ] Square buttons (border-radius: 0) documented
 - [ ] Gallery grid (6 items) + lightbox behavior documented
@@ -151,3 +151,122 @@ spec, TEMPLATES.md, and the PR.
 - [ ] No ColorLib references in app code — provenance only in spec
 - [ ] Name "Gracious" does not collide with existing `apps/` or specs
 - [ ] Spec records source slug (`welfare`) + preview URL
+
+## Requirements
+
+### Requirement: Navbar displays brand and navigation
+
+The navbar SHALL display the "Gracious" brand name and navigation links (Home, About, Causes, Donate, Blog, Gallery, Events, Contact).
+
+#### Scenario: Desktop navbar
+
+- **WHEN** the page loads on a desktop viewport
+- **THEN** the navbar shows "Gracious" as a link to #home
+- **AND** all eight navigation links are visible
+- **AND** the navbar has a dark background (#1d2124)
+
+### Requirement: Hero section with background and CTA
+
+The hero section SHALL display a full-height background image with dark overlay, a headline, subtitle, and a "Watch Video" button.
+
+#### Scenario: Hero renders
+
+- **WHEN** the page loads
+- **THEN** the hero displays the heading "Doing Nothing is Not An Option of Our Life"
+- **AND** a subtitle is present
+- **AND** a "Watch Video" link is visible
+
+### Requirement: Counter strip with donation metrics
+
+The counter strip SHALL display three colored columns: an animated counter, a "Donate Money" block, and a "Be a Volunteer" block.
+
+#### Scenario: Counter strip renders
+
+- **WHEN** the page loads
+- **THEN** the counter number "1,432,805" is displayed
+- **AND** a "Donate Now" button is visible in the orange donate block
+- **AND** a "Be A Volunteer" button is visible in the light orange volunteer block
+
+### Requirement: Services section
+
+The services section SHALL display three feature cards: Make Donation, Become A Volunteer, and Sponsorship.
+
+#### Scenario: Services renders
+
+- **WHEN** the page loads
+- **THEN** the heading "What We Do" is visible
+- **AND** three service cards are rendered with icons and descriptions
+
+### Requirement: Causes section with progress bars
+
+The causes section SHALL display six cause cards, each with a title, description, progress bar, and "Donate Now" link.
+
+#### Scenario: Causes renders
+
+- **WHEN** the page loads
+- **THEN** the heading "Our Causes" is visible
+- **AND** six cause cards are rendered
+- **AND** each card has a progress bar and a "Donate Now" link
+
+### Requirement: Latest Donations section
+
+The donations section SHALL display three donation cards with avatar, donor name, and donation amount.
+
+#### Scenario: Donations renders
+
+- **WHEN** the page loads
+- **THEN** the heading "Latest Donations" is visible
+- **AND** three donation cards are rendered
+- **AND** donation amounts are displayed
+
+### Requirement: Gallery section
+
+The gallery section SHALL display six image items in a grid with hover overlays.
+
+#### Scenario: Gallery renders
+
+- **WHEN** the page loads
+- **THEN** the heading "Our Gallery" is visible
+- **AND** six gallery images are rendered
+
+### Requirement: Blog section
+
+The blog section SHALL display three blog cards with thumbnail, date, title, excerpt, and "Read more" link.
+
+#### Scenario: Blog renders
+
+- **WHEN** the page loads
+- **THEN** the heading "Recent from blog" is visible
+- **AND** three blog cards are rendered with "Read more" links
+
+### Requirement: Events section
+
+The events section SHALL display three event cards with background photo, time/venue, title, description, and "Join Event" link.
+
+#### Scenario: Events renders
+
+- **WHEN** the page loads
+- **THEN** the heading "Our Latest Events" is visible
+- **AND** three event cards are rendered with "Join Event" links
+
+### Requirement: Footer with Component Dock attribution
+
+The footer SHALL display about text, quick links, contact info, and a copyright line linking to Component Dock.
+
+#### Scenario: Footer renders
+
+- **WHEN** the page loads
+- **THEN** the footer shows quick links (Home, About, Causes, Blog, Contact)
+- **AND** contact information is displayed
+- **AND** a "Component Dock" link points to https://www.componentdock.com/
+
+### Requirement: App composes all sections
+
+The App component SHALL compose all ten sections in the correct order within main landmark.
+
+#### Scenario: Full page composition
+
+- **WHEN** the page loads
+- **THEN** the document title is set to "Gracious — Charity & Nonprofit Template"
+- **AND** the banner, main, and contentinfo landmarks are present
+- **AND** all section headings are rendered

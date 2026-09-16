@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Gracious brand palette — orange gradient */
+  --color-brand: #f86f2d;
+  --color-brand-dark: #e55a1a;
+  --color-brand-medium: #fa8f3d;
+  --color-brand-light: #faaa3a;
+
+  /* Teal accent for buttons/interactive elements */
+  --color-teal: #78d5ef;
+
+  /* Green for progress bars */
+  --color-green: #7cbd1e;
+
+  /* Ink — dark headings */
+  --color-ink: #212529;
+  --color-ink-secondary: #495057;
+  --color-body: #666666;
+  --color-meta: #96a1af;
+
+  /* Dark backgrounds */
+  --color-navbar: #1d2124;
+  --color-footer: #252525;
+
+  /* Light section bg */
+  --color-section: #f2f2f2;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the teal accent color. */
+  --color-primary-50: #f0fbfe;
+  --color-primary-100: #ddf5fc;
+  --color-primary-200: #b8ebf9;
+  --color-primary-300: #82ddf4;
+  --color-primary-400: #4ccbe9;
+  --color-primary-500: #78d5ef;
+  --color-primary-600: #1a9fd4;
+  --color-primary-700: #1780ab;
+  --color-primary-800: #186a8c;
+  --color-primary-900: #195874;
+
+  --font-sans: 'Dosis', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Overpass', ui-sans-serif, system-ui, sans-serif;
+}
