@@ -1351,7 +1351,7 @@
 - [ ] **Inds** — [colorlib](https://colorlib.com/wp/template/inds/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/inds-free-template.jpg)
 - [x] **Miners** — [colorlib](https://colorlib.com/wp/template/miners/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/miners-free-template.jpg) · [veinly](https://veinly.free.componentdock.com)
 - [x] **Pexcon** — [colorlib](https://colorlib.com/wp/template/pexcon/) · [pexflow](https://pexflow.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pexcon-free-template.jpg)
-- [~] **Pivot** — [colorlib](https://colorlib.com/wp/template/pivot/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pivot-free-template.jpg)
+- [x] **Pivot** — [colorlib](https://colorlib.com/wp/template/pivot/) · [reframe](https://reframe.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pivot-free-template.jpg)
 - [ ] **Roofing** — [colorlib](https://colorlib.com/wp/template/roofing/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/roofing-free-template.jpg)
 - [ ] **Sintec** — [colorlib](https://colorlib.com/wp/template/sintec/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sintec-free-template.jpg)
 - [ ] **Topbuilder** — [colorlib](https://colorlib.com/wp/template/topbuilder/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/topbuilder-construction-company-website-template.jpg)
