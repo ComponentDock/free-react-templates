@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Hammerly brand palette — golden yellow #ffcd00 from the Webuilder template. */
+  --color-brand: #ffcd00;
+  --color-brand-light: #ffe066;
+  --color-brand-dark: #e6b800;
+
+  /* Dark background #292c31. */
+  --color-dark: #292c31;
+
+  /* Dark text #31353d. */
+  --color-ink: #31353d;
+
+  /* Body text #444444. */
+  --color-body: #444444;
+
+  /* Light text #e8e8e8. */
+  --color-light: #e8e8e8;
+
+  /* Top bar dark #111f29. */
+  --color-topbar: #111f29;
+
+  /* Accent (same as brand for CTAs). */
+  --color-accent: #ffcd00;
+
+  /* Mist — muted text. */
+  --color-mist: #6c757d;
+
+  /* Paper — light section backgrounds. */
+  --color-paper: #f8f9fa;
+
+  /* Border divider. */
+  --color-divider: #dee2e6;
+
+  /* Fonts: Montserrat (headings accent), Open Sans (body), PT Sans (section titles bold). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-section: 'PT Sans', ui-sans-serif, system-ui, sans-serif;
+}
