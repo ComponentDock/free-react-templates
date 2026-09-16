@@ -1357,7 +1357,7 @@
 - [x] **Topbuilder** — [colorlib](https://colorlib.com/wp/template/topbuilder/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/topbuilder-construction-company-website-template.jpg) · [constructo](https://free-react-templates-constructo.surge.sh)
 - [x] **Vertex** — [colorlib](https://colorlib.com/wp/template/vertex/) · [derrick](https://derrick.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vertex-free-template.jpg)
 - [x] **Webuilder** — [colorlib](https://colorlib.com/wp/template/webuilder/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webuilder-free-template.jpg) · [hammerly](https://hammerly.free.componentdock.com)
-- [~] **Wilcon** — [colorlib](https://colorlib.com/wp/template/wilcon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wilcon-free-template.jpg)
+- [x] **Wilcon** — [colorlib](https://colorlib.com/wp/template/wilcon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wilcon-free-template.jpg) · [ironclad](https://ironclad.free.componentdock.com)
 
 ## Consulting (35)
 
