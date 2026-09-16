@@ -2,143 +2,213 @@
 
 ## Purpose
 
-Touchpoint is a two-column contact page in the free-react-templates monorepo.
-It is an original React recreation of the ColorLib "Contact Form 01" free
-template (source: https://colorlib.com/wp/template/contact-form-01/), built
-under a DIFFERENT name (**Touchpoint**), with the monorepo stack: Vite +
-React 19 + Tailwind CSS 4 + TypeScript.
+Recreation of ColorLib "Contact Form 01" — a clean, minimal two-column
+contact page with a form on the left and a blue contact-info card on the
+right. Uses Bootstrap Framework.
 
-The original is a Bootstrap-based two-column layout: a white form card on the
-left with "Get in touch" heading, four input fields (Name, Email, Subject,
-Message), and a blue "Send Message" button; and a solid blue info card on the
-right with "Contact us" heading and four contact items (address, phone, email,
-website) each with a circular icon. The page sits on a light gray (#f5f5f5)
-background.
+- **Source**: [ColorLib Contact Form 01](https://colorlib.com/wp/template/contact-form-01/)
+- **Preview**: https://preview.colorlib.com/theme/contact-form-01/ (unreachable — 404)
+- **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/contact-form-01.jpg
+- **Stack**: Vite · React 19 · Tailwind CSS 4 · TypeScript
+- **New name**: `touchpoint` (apps/touchpoint, `@free-react-templates/touchpoint`)
 
-## Requirements
+## Replication reference
 
-### Requirement: Page Layout
+The live preview at `https://preview.colorlib.com/theme/contact-form-01/`
+returned 404. The design is reconstructed from the ColorLib screenshot
+(1200×972) which is the primary fidelity reference.
 
-The page SHALL display a centered two-column card layout on a light gray
-background.
+### Screenshot analysis (1200×972)
 
-#### Scenario: Two-column card layout
+The screenshot shows a centered two-column card layout on a light gray
+background:
 
-- **WHEN** the user loads the page
-- **THEN** a light gray background fills the page
-- **AND** a two-column card layout is centered on the page
-- **AND** the left card has a white background
-- **AND** the right card has a blue background
+1. **Page title**: "Contact Form #01" — centered at top, dark text, regular
+   weight, large font.
+2. **Left column — Form card**: White background card containing:
+   - Heading: "Get in touch" — dark text, bold, ~24px
+   - Two-column field row: Name (text input) and Email (email input) side
+     by side, each with light gray border and white background
+   - Subject field: full-width text input, same border style
+   - Message field: full-width textarea, taller, same border style
+   - "Send Message" button: blue filled (#3b82f6), white text, rounded
+     corners (~4px), left-aligned below the message field
+3. **Right column — Contact info card**: Solid blue background (#3b82f6)
+   containing:
+   - Heading: "Contact us" — white, bold, ~24px
+   - Four info items, each with a circular icon (white icon on lighter
+     blue circle) and text:
+     - Location pin icon — Address: "198 West 21th Street, Suite 721
+       New York NY 10016"
+     - Phone icon — Phone: "+ 1235 2355 98"
+     - Paper plane icon — Email: "info@yoursite.com"
+     - Globe/link icon — Website: "yoursite.com"
+   - Labels are bold white, values are regular white
 
-#### Scenario: Responsive layout on mobile
+## Design tokens (extracted from screenshot)
 
-- **WHEN** the viewport is narrow (≤768px)
-- **THEN** the two cards stack vertically (form on top, contact info below)
-- **AND** both cards span the full width with horizontal margins
+| Token            | Value                              | Source                        |
+| ---------------- | ---------------------------------- | ----------------------------- |
+| Background       | `#f5f5f5` (light gray)             | page background               |
+| Card white       | `#ffffff`                          | form card background          |
+| Brand blue       | `#3b82f6` (blue-500)              | info card bg, button bg       |
+| Info card icon bg| `#60a5fa` (blue-400)              | circular icon backgrounds     |
+| Text heading     | `#1f2937` (gray-800)              | headings on white             |
+| Text body        | `#374151` (gray-700)              | body text on white            |
+| Text placeholder | `#9ca3af` (gray-400)              | input placeholder text        |
+| Text white       | `#ffffff`                          | text on blue backgrounds      |
+| Input border     | `#e5e7eb` (gray-200)              | form field borders            |
+| Button text      | `#ffffff`                          | send message button           |
+| Font primary     | `'Poppins', sans-serif`           | headings (inferred)           |
+| Font body        | `'Poppins', sans-serif`           | body, inputs (inferred)       |
+| Button radius    | `4px`                              | send message button           |
+| Card radius      | `0` (no rounding)                  | form card                     |
+| Input radius     | `0` (no rounding)                  | form fields                   |
+| Icon circle size | `~44px` diameter                   | contact info icons            |
 
-### Requirement: Contact Form
+## Sections (in order, from screenshot)
 
-The form card SHALL display "Get in touch" heading with four fields and a
-submit button.
+1. **Page header** — Centered page title "Contact Form #01" at the top of
+   the page, dark text on light gray background. (In our implementation this
+   may become a template-specific heading or be omitted in favor of the card
+   headings.)
 
-#### Scenario: Form heading displays "Get in touch"
+2. **Two-column card layout** — A flex/grid container holding two cards
+   side by side (or stacked on mobile):
 
-- **WHEN** the user loads the page
-- **THEN** the left card heading reads "Get in touch"
-- **AND** the heading is dark text, bold, and large
+   a. **Form card (left)** — White background, padding, containing:
+      - "Get in touch" heading
+      - Name input (text, placeholder "Name")
+      - Email input (email, placeholder "Email") — same row as Name
+      - Subject input (text, placeholder "Subject") — full width
+      - Message textarea (placeholder "Message") — full width, taller
+      - "Send Message" button — blue filled, white text, left-aligned
 
-#### Scenario: Form has four fields
+   b. **Contact info card (right)** — Blue background (#3b82f6), padding,
+      containing:
+      - "Contact us" heading — white
+      - Address item: location pin icon + "Address: 198 West 21th Street,
+        Suite 721 New York NY 10016"
+      - Phone item: phone icon + "Phone: + 1235 2355 98"
+      - Email item: paper plane icon + "Email: info@yoursite.com"
+      - Website item: globe icon + "Website: yoursite.com"
 
-- **WHEN** the user loads the page
-- **THEN** the Name and Email fields are displayed side by side in a row
-- **AND** the Subject field is displayed full width below them
-- **AND** the Message textarea is displayed full width below Subject
-- **AND** all fields have light gray borders and placeholder text
+## Gherkin requirements
 
-#### Scenario: Name field accepts text
+### Feature: Page Layout
 
-- **WHEN** the user focuses the Name field and types a name
-- **THEN** the text appears in the field
+```gherkin
+Scenario: Page displays centered two-column card
+  Given the user loads the page
+  Then a light gray background fills the page
+  And a two-column card layout is centered on the page
+  And the left card has a white background
+  And the right card has a blue background
 
-#### Scenario: Email field validates format
+Scenario: Responsive layout on mobile
+  Given the viewport is narrow (≤768px)
+  Then the two cards stack vertically (form on top, contact info below)
+  And both cards span the full width with horizontal margins
+```
 
-- **WHEN** the user enters an invalid email in the Email field
-- **AND** the user clicks Send Message
-- **THEN** a validation error is shown for the email field
+### Feature: Contact Form
 
-#### Scenario: Message field is a textarea
+```gherkin
+Scenario: Form heading displays "Get in touch"
+  Given the user loads the page
+  Then the left card heading reads "Get in touch"
+  And the heading is dark text, bold, and large
 
-- **WHEN** the user focuses the Message field and types a multi-line message
-- **THEN** the textarea shows the entered text
+Scenario: Form has four fields
+  Given the user loads the page
+  Then the Name and Email fields are displayed side by side in a row
+  And the Subject field is displayed full width below them
+  And the Message textarea is displayed full width below Subject
+  And all fields have light gray borders and placeholder text
 
-#### Scenario: Send Message button submits form
+Scenario: Name field accepts text
+  Given the user focuses the Name field
+  When the user types a name
+  Then the text appears in the field
 
-- **WHEN** the user fills all required fields with valid data
-- **AND** the user clicks "Send Message"
-- **THEN** the form attempts submission (prevent default in React)
-- **AND** no page navigation occurs (SPA behavior)
+Scenario: Email field validates format
+  Given the user enters an invalid email in the Email field
+  When the user clicks Send Message
+  Then a validation error is shown for the email field
 
-### Requirement: Contact Info Card
+Scenario: Message field is a textarea
+  Given the user focuses the Message field
+  When the user types a multi-line message
+  Then the textarea shows the entered text
 
-The contact info card SHALL display a heading and four contact items with icons.
+Scenario: Send Message button submits form
+  Given the user fills all required fields with valid data
+  When the user clicks "Send Message"
+  Then the form attempts submission (prevent default in React)
+  And no page navigation occurs (SPA behavior)
+```
 
-#### Scenario: Contact info card displays heading and items
+### Feature: Contact Info Card
 
-- **WHEN** the user loads the page
-- **THEN** the right card heading reads "Contact us" in white
-- **AND** four contact info items are visible
+```gherkin
+Scenario: Contact info card displays heading and items
+  Given the user loads the page
+  Then the right card heading reads "Contact us" in white
+  And four contact info items are visible
 
-#### Scenario: Address item shows location details
+Scenario: Address item shows location details
+  Given the user loads the page
+  Then the address item shows a location pin icon
+  And the text reads "Address: 198 West 21th Street, Suite 721 New York NY 10016"
 
-- **WHEN** the user loads the page
-- **THEN** the address item shows a location pin icon
-- **AND** the text reads "Address: 198 West 21th Street, Suite 721 New York NY 10016"
+Scenario: Phone item shows phone number
+  Given the user loads the page
+  Then the phone item shows a phone icon
+  And the text reads "Phone: + 1235 2355 98"
 
-#### Scenario: Phone item shows phone number
+Scenario: Email item shows email address
+  Given the user loads the page
+  Then the email item shows a paper plane icon
+  And the text reads "Email: info@yoursite.com"
 
-- **WHEN** the user loads the page
-- **THEN** the phone item shows a phone icon
-- **AND** the text reads "Phone: + 1235 2355 98"
+Scenario: Website item shows URL
+  Given the user loads the page
+  Then the website item shows a globe icon
+  And the text reads "Website: yoursite.com"
 
-#### Scenario: Email item shows email address
+Scenario: Contact info icons have circular backgrounds
+  Given the user loads the page
+  Then each contact info icon is displayed inside a lighter blue circle
+```
 
-- **WHEN** the user loads the page
-- **THEN** the email item shows a paper plane icon
-- **AND** the text reads "Email: info@yoursite.com"
+### Feature: Button Styling
 
-#### Scenario: Website item shows URL
+```gherkin
+Scenario: Send Message button is blue with white text
+  Given the user loads the page
+  Then the "Send Message" button has a blue background
+  And the button text is white
+  And the button has slightly rounded corners
 
-- **WHEN** the user loads the page
-- **THEN** the website item shows a globe icon
-- **AND** the text reads "Website: yoursite.com"
+Scenario: Button hover effect
+  Given the user hovers over the Send Message button
+  Then the button darkens slightly or shows a hover state
+```
 
-#### Scenario: Contact info icons have circular backgrounds
+## Verification checklist
 
-- **WHEN** the user loads the page
-- **THEN** each contact info icon is displayed inside a lighter blue circle
-
-### Requirement: Button Styling
-
-The Send Message button SHALL be blue with white text and rounded corners.
-
-#### Scenario: Send Message button is blue with white text
-
-- **WHEN** the user loads the page
-- **THEN** the "Send Message" button has a blue background
-- **AND** the button text is white
-- **AND** the button has slightly rounded corners
-
-#### Scenario: Button hover effect
-
-- **WHEN** the user hovers over the Send Message button
-- **THEN** the button darkens slightly or shows a hover state
-
-### Requirement: Footer
-
-The footer SHALL link to componentdock.com.
-
-#### Scenario: Footer displays Component Dock link
-
-- **WHEN** the user loads the page
-- **THEN** the footer contains a link to https://www.componentdock.com/
-- **AND** the link text mentions "Component Dock"
+- [ ] Light gray page background (#f5f5f5)
+- [ ] Two-column card layout centered on page
+- [ ] Left card: white background, "Get in touch" heading
+- [ ] Name and Email fields side by side
+- [ ] Subject field full width
+- [ ] Message textarea full width, taller
+- [ ] "Send Message" blue button, white text, rounded
+- [ ] Right card: blue background, "Contact us" heading in white
+- [ ] Four contact items with circular icons (pin, phone, plane, globe)
+- [ ] Contact info text in white (bold labels, regular values)
+- [ ] Responsive: cards stack on mobile
+- [ ] No reference to ColorLib in app code
+- [ ] Footer links to componentdock.com
+- [ ] `public/CNAME` contains `touchpoint.free.componentdock.com`
+- [ ] `homepage` in package.json is `https://touchpoint.free.componentdock.com`
