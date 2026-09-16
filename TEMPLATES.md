@@ -1302,7 +1302,7 @@
 - [x] **Libchurch** — [colorlib](https://colorlib.com/wp/template/libchurch/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/libchurch-free-template.jpg) · [chapel](https://chapel.free.componentdock.com)
 - [x] **Mimosan** — [colorlib](https://colorlib.com/wp/template/mimosan/) · [alleluia](https://alleluia.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mimosan-free-template.jpg)
 - [x] **Reborn** — [colorlib](https://colorlib.com/wp/template/reborn/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/reborn-free-template.jpg) · [steeple](https://steeple.free.componentdock.com)
-- [~] **Salvation** — [colorlib](https://colorlib.com/wp/template/salvation/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/salvation-free-template.jpg)
+- [x] **Salvation** — [colorlib](https://colorlib.com/wp/template/salvation/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/salvation-free-template.jpg) · [ministry](https://ministry.free.componentdock.com)
 - [x] **Spring** — [colorlib](https://colorlib.com/wp/template/spring/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/spring-free-template.jpg) · [sprout](https://sprout.free.componentdock.com)
 - [x] **The Charity** — [colorlib](https://colorlib.com/wp/template/the-charity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thecharity-free-template.jpg) · [amity](https://amity.free.componentdock.com)
 - [x] **Vineyard** — [colorlib](https://colorlib.com/wp/template/vineyard/) · [parish](https://parish.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vineyard-free-template.jpg)
