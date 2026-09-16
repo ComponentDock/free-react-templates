@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Novus brand tokens — dark gradient + cyan accent */
+  --color-brand-cyan: #00d2ff;
+  --color-brand-cyan-hover: #00b8e6;
+  --color-brand-cyan-focus: #66e0ff;
+  --color-brand-dark-start: #0f0c29;
+  --color-brand-dark-mid: #302b63;
+  --color-brand-dark-end: #24243e;
+  --color-input-bg: rgba(255, 255, 255, 0.1);
+  --color-input-border: rgba(255, 255, 255, 0.2);
+
+  /* Social brand colors */
+  --color-social-facebook: #3b5998;
+  --color-social-twitter: #1da1f2;
+  --color-social-google: #dd4b39;
+  --color-social-instagram: #e1306c;
+  --color-social-pinterest: #bd081c;
+
+  /* Text colors */
+  --color-body: #ffffff;
+  --color-paragraph: rgba(255, 255, 255, 0.7);
+  --color-muted: rgba(255, 255, 255, 0.5);
+
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
