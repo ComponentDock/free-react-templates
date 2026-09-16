@@ -10,95 +10,78 @@ Recreation of ColorLib **06 Comming Soon** (`https://colorlib.com/wp/template/06
 - **Package:** `@free-react-templates/overture`
 - **Deploy URL:** `https://overture.free.componentdock.com`
 
-## Design tokens
+## Requirements
 
-Extracted from the screenshot (preview unavailable):
+### Requirement: Full-screen hero with background image
 
-| Token | Value | Notes |
-| --- | --- | --- |
-| Brand color (accent) | `#e91e63` (pink/rose) | Used for countdown numbers, CTA button |
-| Background | Full-screen mountain landscape image with dark overlay (`bg-black/50`) | `https://picsum.photos/seed/overture/1600/900` |
-| Heading font | Display serif (e.g. Playfair Display or similar elegant serif) | White, centered, large (~3.5rem) |
-| Body font | Sans-serif (system/Inter) | White, centered |
-| Countdown circles | White (`#ffffff`) background, circular (50%), ~60px diameter | Pink numbers inside |
-| CTA button | Pink (`#e91e63`), rounded (`rounded-[50px]`), white text, bold, uppercase | "NOTIFY US" label |
-| Social icons | Circular, brand-colored (FB #3b5998, Twitter #1da1f2, Google+ #dd4b39, Pinterest #bd081c, Snapchat #fffc00) | "Follow us for update" label |
-| Dark overlay | `bg-black/40` to `bg-black/50` | Over full background image |
+Users SHALL see a full-viewport background image with a dark semi-transparent overlay covering the entire page.
 
-## Layout
+#### Scenario: Background image renders
 
-Full-screen centered single-page layout:
+- **WHEN** the user visits the Overture page
+- **THEN** a full-viewport background image is visible
+- **AND** a dark semi-transparent overlay covers the image
 
-1. **Background layer:** Full-viewport image with dark semi-transparent overlay
-2. **Content (centered, z-10):**
-   - Heading: "Coming Soon"
-   - Subtext: descriptive paragraph about maintenance
-   - Countdown timer: 4 circular elements (Days, Hours, Mins, Sec)
-   - CTA button: "NOTIFY US"
-3. **Social section (bottom center):**
-   - "Follow us for update" label
-   - 5 social media icon circles (Facebook, Twitter, Google+, Pinterest, Snapchat)
+### Requirement: Heading and subtext
 
-## Gherkin requirements
+Users SHALL see a centered "Coming Soon" heading and a maintenance status paragraph.
 
-### Scenario: Full-screen hero with background image
-```gherkin
-Given the user visits the Overture page
-Then a full-viewport background image is visible
-And a dark semi-transparent overlay covers the image
-```
+#### Scenario: Heading and subtext display
 
-### Scenario: Heading and subtext
-```gherkin
-Given the user visits the Overture page
-Then a heading "Coming Soon" is displayed centered on the page
-And a subtext paragraph describes the maintenance status
-```
+- **WHEN** the user visits the Overture page
+- **THEN** a heading "Coming Soon" is displayed centered on the page
+- **AND** a subtext paragraph describes the maintenance status
 
-### Scenario: Countdown timer
-```gherkin
-Given the user visits the Overture page
-Then a countdown timer with 4 units (Days, Hours, Mins, Sec) is displayed
-And each unit is shown in a white circular element with pink numbers
-And the countdown targets a future date (e.g. 30 days from page load)
-```
+### Requirement: Countdown timer
 
-### Scenario: Notify Us button
-```gherkin
-Given the user visits the Overture page
-Then a "NOTIFY US" button is displayed below the countdown
-And the button has pink background with white text
-And clicking the button shows a thank-you confirmation message
-```
+Users SHALL see a countdown timer with 4 units (Days, Hours, Mins, Sec) displayed in white circular elements with pink numbers.
 
-### Scenario: Social media links
-```gherkin
-Given the user visits the Overture page
-Then a "Follow us for update" label is displayed near the bottom
-And 5 social media icon circles are shown (Facebook, Twitter, Google+, Pinterest, Snapchat)
-And each icon links to its respective social platform
-```
+#### Scenario: Countdown timer displays
 
-### Scenario: Responsive layout
-```gherkin
-Given the user views the page on a mobile device
-Then all content remains centered and readable
-And the countdown timer scales down appropriately
-And social icons remain visible at the bottom
-```
+- **WHEN** the user visits the Overture page
+- **THEN** a countdown timer with 4 units (Days, Hours, Mins, Sec) is displayed
+- **AND** each unit is shown in a white circular element with pink numbers
+- **AND** the countdown targets a future date (e.g. 30 days from page load)
 
-## Verification checklist
+### Requirement: Notify Us button
 
-- [ ] Full-viewport background image with dark overlay renders correctly
-- [ ] "Coming Soon" heading centered and styled with display serif font
-- [ ] Maintenance subtext paragraph is readable (white on dark)
-- [ ] Countdown timer shows Days/Hours/Mins/Sec in white circles with pink numbers
-- [ ] Countdown targets a future date and updates in real time
-- [ ] "NOTIFY US" button is pink, rounded, and shows confirmation on click
-- [ ] 5 social icons displayed with brand colors
-- [ ] "Follow us for update" label present above social icons
-- [ ] Responsive on mobile (single column, centered content)
-- [ ] Component Dock footer link present
-- [ ] No ColorLib references in app code
-- [ ] `public/CNAME` set to `overture.free.componentdock.com`
-- [ ] `homepage` in package.json set to `https://overture.free.componentdock.com`
+Users SHALL see a "NOTIFY US" button that shows a thank-you confirmation when clicked.
+
+#### Scenario: Notify button displays and responds
+
+- **WHEN** the user visits the Overture page
+- **THEN** a "NOTIFY US" button is displayed below the countdown
+- **AND** the button has pink background with white text
+- **AND** clicking the button shows a thank-you confirmation message
+
+### Requirement: Social media links
+
+Users SHALL see a "Follow us for update" label and 5 social media icon circles with brand colors.
+
+#### Scenario: Social links display
+
+- **WHEN** the user visits the Overture page
+- **THEN** a "Follow us for update" label is displayed near the bottom
+- **AND** 5 social media icon circles are shown (Facebook, Twitter, Google+, Pinterest, Snapchat)
+- **AND** each icon links to its respective social platform
+
+### Requirement: Responsive layout
+
+Users SHALL see all content centered and readable on mobile devices.
+
+#### Scenario: Mobile layout
+
+- **WHEN** the user views the page on a mobile device
+- **THEN** all content remains centered and readable
+- **AND** the countdown timer scales down appropriately
+- **AND** social icons remain visible at the bottom
+
+### Requirement: Component Dock footer
+
+Users SHALL see a footer link to Component Dock.
+
+#### Scenario: Footer link present
+
+- **WHEN** the user scrolls to the bottom of the page
+- **THEN** a link to https://www.componentdock.com/ is visible
+- **AND** the link text reads "More templates at Component Dock"
