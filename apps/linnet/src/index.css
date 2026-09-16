@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Linnet brand palette — recreated from ColorLib Classic design
+     (primary blue #3498db, dark navy #2c3e50). */
+  --color-primary-50: #eef6fc;
+  --color-primary-100: #d5e9f7;
+  --color-primary-200: #aed3ef;
+  --color-primary-300: #7ab8e3;
+  --color-primary-400: #3498db;
+  --color-primary-500: #2980b9;
+  --color-primary-600: #1f6fa3;
+  --color-primary-700: #1a5f8a;
+  --color-primary-800: #164e71;
+  --color-primary-900: #113d58;
+
+  --color-navy-50: #eef1f3;
+  --color-navy-100: #d5dce1;
+  --color-navy-200: #abb9c3;
+  --color-navy-300: #8196a5;
+  --color-navy-400: #577387;
+  --color-navy-500: #2c3e50;
+  --color-navy-600: #243343;
+  --color-navy-700: #1c2836;
+  --color-navy-800: #141d29;
+  --color-navy-900: #0c121c;
+
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
