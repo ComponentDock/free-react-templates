@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Shores brand palette — recreated from the ColorLib "Seelife" design
+     (css/style.css): green #60bc0f accents/buttons, yellow #fdbb00 secondary,
+     dark #222222 headings, gray #777777 body text. */
+  --color-brand: #60bc0f;
+  --color-brand-hover: #4ea50c;
+  --color-brand-light: #f0faf0;
+
+  /* Yellow accent for secondary buttons and highlights. */
+  --color-accent: #fdbb00;
+  --color-accent-hover: #e0a500;
+
+  /* Dark overlay for banner. */
+  --color-overlay: rgba(6, 13, 1, 0.6);
+
+  /* Ink — dark headings (#222222 from the original). */
+  --color-ink: #222222;
+  --color-ink-dark: #1a1a1a;
+
+  /* Paper — white section backgrounds. */
+  --color-paper: #ffffff;
+
+  /* Mist — muted body text. */
+  --color-mist: #777777;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the green. */
+  --color-primary-50: #f0faf0;
+  --color-primary-100: #d4f2d4;
+  --color-primary-200: #a8e5a8;
+  --color-primary-300: #7cd87c;
+  --color-primary-400: #50cb50;
+  --color-primary-500: #60bc0f;
+  --color-primary-600: #4ea50c;
+  --color-primary-700: #3d850a;
+  --color-primary-800: #2d6508;
+  --color-primary-900: #1e4506;
+
+  /* Fonts: Poppins for headings, Roboto for body. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
