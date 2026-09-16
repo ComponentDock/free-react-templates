@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Edifica brand — from the ColorLib "Homebuilder" preview
+     (https://preview.colorlib.com/theme/homebuilder/ + css/style.css):
+     a construction/home-builder theme with a golden-amber #fdbe34 primary,
+     dark navy #00043c navbar, blue #007bff accent (testimony section),
+     dark footer #252525, and Poppins font. */
+  --color-primary-50: #fff8e1;
+  --color-primary-100: #ffecb3;
+  --color-primary-200: #ffe082;
+  --color-primary-300: #ffd54f;
+  --color-primary-400: #fdbe34;
+  --color-primary-500: #f5b800;
+  --color-primary-600: #d4a000;
+  --color-primary-700: #a67c00;
+  --color-primary-800: #7a5a00;
+  --color-primary-900: #4d3800;
+
+  /* Accent blue — ColorLib testimony section #007bff. */
+  --color-accent-400: #007bff;
+  --color-accent-500: #0069d9;
+  --color-accent-600: #0056b3;
+
+  /* Navbar dark navy (#00043c). */
+  --color-navy: #00043c;
+
+  /* Footer dark (#252525). */
+  --color-charcoal: #252525;
+
+  /* Body text (ColorLib "gray"). */
+  --color-smoke: #808080;
+
+  /* Headings (ColorLib rgba(0,0,0,0.8)). */
+  --color-ink: rgba(0, 0, 0, 0.8);
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
