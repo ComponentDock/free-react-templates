@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Nectar brand palette — design tokens:
+     golden amber #fda729, dark brown #3c312e, near-black #141313,
+     body text #000000, secondary text rgba(0,0,0,0.3),
+     muted footer text rgba(255,255,255,0.7). */
+  --color-brand: #fda729;
+  --color-brand-dark: #e59520;
+  --color-dark: #3c312e;
+  --color-footer: #141313;
+
+  --color-heading: #000000;
+  --color-body: #555555;
+  --color-paper: #ffffff;
+  --color-light: #f8f8f8;
+  --color-muted: #eeeeee;
+
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
