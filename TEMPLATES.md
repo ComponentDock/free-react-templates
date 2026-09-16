@@ -1324,7 +1324,7 @@
 - [x] **04 Comming Soon** — [colorlib](https://colorlib.com/wp/template/04-comming-soon/) · [harbinger](https://harbinger.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-19.jpg)
 - [x] **05 Comming Soon** — [colorlib](https://colorlib.com/wp/template/05-comming-soon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-20.jpg) · [vigil](https://vigil.free.componentdock.com)
 - [ ] **06 Comming Soon** — [colorlib](https://colorlib.com/wp/template/06-comming-soon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-21.jpg)
-- [ ] **07 Comming Soon** — [colorlib](https://colorlib.com/wp/template/07-comming-soon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-22.jpg)
+- [~] **07 Comming Soon** — [colorlib](https://colorlib.com/wp/template/07-comming-soon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-22.jpg)
 - [ ] **08 Comming Soon** — [colorlib](https://colorlib.com/wp/template/08-comming-soon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-23.jpg)
 
 ## Construction (29)
