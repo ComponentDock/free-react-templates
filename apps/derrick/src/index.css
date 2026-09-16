@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Derrick brand palette — blue (#0962ea) from the Vertex original design */
+  --color-brand-50: #eef4ff;
+  --color-brand-100: #d9e6ff;
+  --color-brand-200: #bcd4ff;
+  --color-brand-300: #8ebaff;
+  --color-brand-400: #5994ff;
+  --color-brand-500: #0962ea;
+  --color-brand-600: #0853c5;
+  --color-brand-700: #074db9;
+  --color-brand-800: #063d96;
+  --color-brand-900: #052d6e;
+
+  /* Quicksand — the original template's typeface */
+  --font-sans: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+}
