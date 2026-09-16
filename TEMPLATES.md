@@ -1314,7 +1314,7 @@
 - [x] **Auction** — [colorlib](https://colorlib.com/wp/template/auction/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/auction-free-template.jpg) · [bidcraft](https://bidcraft.free.componentdock.com)
 - [x] **Classy Ads** — [colorlib](https://colorlib.com/wp/template/classy-ads/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/classyads-free-template.jpg) · [adnest](https://adnest.free.componentdock.com)
 - [x] **Mondy** — [colorlib](https://colorlib.com/wp/template/mondy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mondy-free-template.jpg) · [estately](https://estately.free.componentdock.com)
-- [ ] **Rehomes** — [colorlib](https://colorlib.com/wp/template/rehomes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rehomes-free-template.jpg)
+- [~] **Rehomes** — [colorlib](https://colorlib.com/wp/template/rehomes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rehomes-free-template.jpg)
 
 ## Coming Soon (8)
 
@@ -1547,7 +1547,7 @@
 - [x] **Locals Directory** — [colorlib](https://colorlib.com/wp/template/locals-directory/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/localsdirectory-free-template.jpg) · [hoodly](https://hoodly.free.componentdock.com)
 - [x] **Mondy** — [colorlib](https://colorlib.com/wp/template/mondy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mondy-free-template.jpg) · [estately](https://estately.free.componentdock.com)
 - [ ] **Myhome** — [colorlib](https://colorlib.com/wp/template/myhome/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/myhome-free-template.jpg)
-- [ ] **Rehomes** — [colorlib](https://colorlib.com/wp/template/rehomes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rehomes-free-template.jpg)
+- [~] **Rehomes** — [colorlib](https://colorlib.com/wp/template/rehomes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rehomes-free-template.jpg)
 - [ ] **Royalestate** — [colorlib](https://colorlib.com/wp/template/royalestate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/royalestate-free-template.jpg)
 - [ ] **Travelers** — [colorlib](https://colorlib.com/wp/template/travelers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelers-free-template.jpg)
 - [ ] **Travelix** — [colorlib](https://colorlib.com/wp/template/travelix/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelix-free-template.jpg)
@@ -2606,7 +2606,7 @@
 - [ ] **Real Estate** — [colorlib](https://colorlib.com/wp/template/real-estate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/realestate-free-realstate-website-template.jpg)
 - [ ] **Real Estate 2** — [colorlib](https://colorlib.com/wp/template/real-estate-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/realestate2-free-template.jpg)
 - [x] **Realtors** — [colorlib](https://colorlib.com/wp/template/realtors/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/realtors-free-template.jpg) · [roost](https://roost.free.componentdock.com)
-- [ ] **Rehomes** — [colorlib](https://colorlib.com/wp/template/rehomes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rehomes-free-template.jpg)
+- [~] **Rehomes** — [colorlib](https://colorlib.com/wp/template/rehomes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rehomes-free-template.jpg)
 - [x] **Rental** — [colorlib](https://colorlib.com/wp/template/rental/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rental-free-template.jpg) · [rentora](https://rentora.free.componentdock.com)
 - [ ] **Rolast** — [colorlib](https://colorlib.com/wp/template/rolast/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rolast-free-template.jpg)
 - [ ] **Royalestate** — [colorlib](https://colorlib.com/wp/template/royalestate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/royalestate-free-template.jpg)
