@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-teal: #5b8fa6;
+  --color-brand-teal-dark: #4a7a91;
+  --color-bg-page: #ffffff;
+  --color-text-body: #333333;
+  --color-text-heading: #000000;
+  --color-text-muted: #777777;
+  --color-input-border: #dddddd;
+  --color-input-focus: #5b8fa6;
+  --color-card-shadow: rgba(0, 0, 0, 0.15);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-bg-page);
+    color: var(--color-text-body);
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
