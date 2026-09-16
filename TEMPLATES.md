@@ -1281,7 +1281,7 @@
 - [x] **Seelife** — [colorlib](https://colorlib.com/wp/template/seelife/) · [shores](https://shores.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/seelife-free-template.jpg)
 - [x] **Spring** — [colorlib](https://colorlib.com/wp/template/spring/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/spring-free-template.jpg) · [sprout](https://sprout.free.componentdock.com)
 - [x] **The Charity** — [colorlib](https://colorlib.com/wp/template/the-charity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thecharity-free-template.jpg) · [amity](https://amity.free.componentdock.com)
-- [ ] **Unicare** — [colorlib](https://colorlib.com/wp/template/unicare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unicare-free-template.jpg)
+- [~] **Unicare** — [colorlib](https://colorlib.com/wp/template/unicare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unicare-free-template.jpg)
 - [ ] **Welfare** — [colorlib](https://colorlib.com/wp/template/welfare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/welfare-free-template.jpg)
 
 ## Church (22)
