@@ -10,120 +10,212 @@ Recreation of the ColorLib **Life Coaching** template for a coaching/consulting 
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Category:** Coaching / Consulting landing page
 
-## Reference notes (screenshot-only — preview unreachable)
+## Requirements
 
-The live preview returned 404. All design tokens below are extracted from:
-1. The screenshot image pixel analysis
-2. The ColorLib template page metadata and description
-3. The CSS color variable found in the ColorLib page: `#81d742` (green accent)
+### Requirement: Navbar navigation
 
-## Design tokens
+The app SHALL display a sticky navbar with logo, navigation links, dark mode toggle, mobile menu, and a CTA button.
 
-| Token | Value | Notes |
-|---|---|---|
-| Brand primary | `#81d742` | Green — from CSS variable `--wpex-term-63032-color`; buttons, accents |
-| Accent alt | `#d6de5e` | Lime/chartreuse — from screenshot hero area |
-| Body bg | `#ffffff` | Predominantly white/light design |
-| Light section bg | `#f7f7f7` | Light gray for alternating sections |
-| Text color | `#5f5f5f` | Medium gray — body text |
-| Heading color | `#333333` | Dark gray/near-black — headings |
-| Font: headings | Likely a sans-serif (clean, modern) | Screenshot shows clean typography |
-| Font: body | Sans-serif | Standard web font |
-| Button style | Rounded/soft — green accent bg | Pill-shaped or rounded corners |
-| Overall aesthetic | Clean, minimal, white-dominant | Professional coaching vibe |
+#### Scenario: Desktop navbar
 
-## Features (from ColorLib description)
+- **WHEN** the user loads the page on a desktop viewport
+- **THEN** the navbar shows the Elevate logo, navigation links (Home, About, Services, Pricing, Blog, Contact), a dark mode toggle, and a "Get Started" CTA button
 
-- Slider (hero carousel)
-- Call-to-action sections
-- Animated statistics / counters
-- Content loading on scroll
-- Pricing plans
-- Social media icons
-- Integrated contact form
-- Google Maps
-- Blog pages
+#### Scenario: Mobile menu toggle
 
-## Section structure (inferred from description + screenshot analysis)
+- **WHEN** the user clicks the hamburger menu icon on mobile
+- **THEN** a mobile navigation menu opens with all navigation links
 
-1. **Navbar** — logo + navigation links, transparent/white bg
-2. **HeroSlider** — full-width carousel with heading + CTA button
-3. **About** — brief intro with image + text
-4. **Services** — coaching services cards (3-4 columns)
-5. **Statistics** — animated counter bar with key metrics
-6. **Pricing** — pricing plans table/cards (3 tiers)
-7. **Testimonials** — client quotes carousel
-8. **CTA** — call-to-action banner
-9. **Blog** — recent blog posts grid
-10. **Contact** — contact form + Google Maps embed
-11. **Footer** — links, newsletter, social icons, copyright
+#### Scenario: Dark mode toggle
 
-## Gherkin requirements
+- **WHEN** the user clicks the dark mode toggle button
+- **THEN** the page switches to dark mode and the toggle icon changes to sun
 
-```gherkin
-Feature: Elevate — Coaching landing page
+### Requirement: Hero slider
 
-  Background:
-    Given the user opens the Elevate homepage
+The app SHALL display a full-width hero carousel with auto-advancing slides, navigation controls, and dot indicators.
 
-  Scenario: Navbar navigation
-    Then the navbar shows logo and navigation links
-    And the background is white or transparent
+#### Scenario: Slide display
 
-  Scenario: Hero slider
-    Then a full-width hero carousel is displayed
-    And each slide has a heading and CTA button
-    And slides auto-advance or have navigation controls
+- **WHEN** the hero section loads
+- **THEN** a heading, subheading, and CTA button are visible with a background image
 
-  Scenario: About section
-    Then an introductory section with image and text is visible
-    And a "Learn More" or similar CTA button is present
+#### Scenario: Slide navigation
 
-  Scenario: Services section
-    Then 3-4 service cards are displayed in a grid
-    And each card has an icon, title, and description
+- **WHEN** the user clicks the next/previous arrow buttons
+- **THEN** the carousel advances to the next/previous slide
 
-  Scenario: Statistics counters
-    Then animated number counters are displayed
-    And each counter shows a metric and label
+#### Scenario: Auto-advance
 
-  Scenario: Pricing plans
-    Then 3 pricing tier cards are shown
-    And each shows plan name, price, features list, and CTA button
-    And one plan is highlighted as recommended
+- **WHEN** 5 seconds elapse without user interaction
+- **THEN** the carousel automatically advances to the next slide
 
-  Scenario: Testimonials
-    Then a carousel of client testimonials is displayed
-    And each shows a quote, name, and optional avatar
+### Requirement: About section
 
-  Scenario: Call-to-action
-    Then a CTA banner section is visible
-    And it contains a heading and action button
+The app SHALL display an about section with an image and descriptive text.
 
-  Scenario: Blog section
-    Then 3 blog post cards are displayed
-    And each shows an image, title, excerpt, and read more link
+#### Scenario: About content
 
-  Scenario: Contact form
-    Then a contact form with name, email, and message fields is visible
-    And a submit button is present
+- **WHEN** the user scrolls to the about section
+- **THEN** an image and text describing the coaching service are visible with a "Learn More" button
 
-  Scenario: Footer
-    Then a footer with links, newsletter signup, and social icons is visible
-    And a "Component Dock" link is in the footer
-```
+### Requirement: Services section
 
-## Verification checklist
+The app SHALL display a services grid with 4 service cards.
 
-- [ ] All sections present in correct order
-- [ ] Green accent color `#81d742` used for buttons, active states
-- [ ] Clean white/light design throughout
-- [ ] Hero slider with auto-advance
-- [ ] Animated statistics counters
-- [ ] Pricing cards (3 tiers)
-- [ ] Testimonials carousel
-- [ ] Contact form with validation
-- [ ] Footer links to `https://www.componentdock.com/`
-- [ ] No ColorLib references in app code
-- [ ] Placeholder images via `picsum.photos`
-- [ ] Icons via `lucide-react`
+#### Scenario: Service cards
+
+- **WHEN** the user scrolls to the services section
+- **THEN** 4 service cards are displayed, each with an icon, title, and description
+
+### Requirement: Statistics counters
+
+The app SHALL display animated number counters that animate when entering the viewport.
+
+#### Scenario: Counter animation
+
+- **WHEN** the statistics section enters the viewport
+- **THEN** the counters animate from 0 to their target values (150+, 10+, 200+, 95%)
+
+### Requirement: Pricing plans
+
+The app SHALL display 3 pricing tier cards with features and CTA buttons.
+
+#### Scenario: Pricing display
+
+- **WHEN** the user scrolls to the pricing section
+- **THEN** 3 pricing cards (Basic $29, Standard $59, Premium $99) are shown with feature lists and "Get Started" buttons, with the Standard plan highlighted as "Most Popular"
+
+### Requirement: Testimonials carousel
+
+The app SHALL display a testimonials carousel with client quotes and navigation.
+
+#### Scenario: Testimonial display
+
+- **WHEN** the user scrolls to the testimonials section
+- **THEN** a client quote, name, role, and avatar are displayed with navigation arrows
+
+#### Scenario: Testimonial navigation
+
+- **WHEN** the user clicks the next/previous testimonial arrows
+- **THEN** the carousel advances to the next/previous testimonial
+
+### Requirement: CTA banner
+
+The app SHALL display a call-to-action banner section.
+
+#### Scenario: CTA display
+
+- **WHEN** the user scrolls to the CTA section
+- **THEN** a heading, description, and "Book a Free Consultation" button are visible
+
+### Requirement: Blog section
+
+The app SHALL display a blog grid with 3 post cards.
+
+#### Scenario: Blog posts
+
+- **WHEN** the user scrolls to the blog section
+- **THEN** 3 blog post cards are displayed, each with an image, date, title, excerpt, and "Read More" link
+
+### Requirement: Contact form
+
+The app SHALL display a contact form with validation.
+
+#### Scenario: Form fields
+
+- **WHEN** the user scrolls to the contact section
+- **THEN** a form with Name, Email, Subject, and Message fields plus a "Send Message" button is visible
+
+#### Scenario: Validation errors
+
+- **WHEN** the user submits the form with empty required fields
+- **THEN** validation error messages are displayed for Name, Email, and Message
+
+#### Scenario: Successful submission
+
+- **WHEN** the user fills all fields with valid data and submits
+- **THEN** a thank-you message is displayed
+
+### Requirement: Footer
+
+The app SHALL display a footer with quick links, contact info, newsletter form, and Component Dock attribution.
+
+#### Scenario: Footer content
+
+- **WHEN** the user scrolls to the footer
+- **THEN** quick links, contact information, social links, and a newsletter subscription form are visible
+
+#### Scenario: Newsletter validation
+
+- **WHEN** the user submits the newsletter form with an invalid email
+- **THEN** a validation error is displayed
+
+#### Scenario: Newsletter success
+
+- **WHEN** the user submits a valid email
+- **THEN** a "Thanks for subscribing!" message is shown
+
+#### Scenario: Component Dock link
+
+- **WHEN** the user views the footer
+- **THEN** a link to https://www.componentdock.com/ is present with "Component Dock" branding
+
+### Requirement: Design tokens
+
+The app SHALL use the specified design tokens for brand colors, typography, and spacing.
+
+#### Scenario: Brand colors
+
+- **WHEN** the app renders
+- **THEN** the brand primary color `#81d742` is used for buttons and accents
+- **AND** the brand dark color `#6bc034` is used for hover states
+
+#### Scenario: Typography
+
+- **WHEN** the app renders
+- **THEN** the Inter font from Google Fonts is loaded and applied
+- **AND** headings use the ink color `#333333`
+
+### Requirement: Accessibility
+
+The app SHALL use semantic HTML, aria attributes, and focus-visible styles for accessibility.
+
+#### Scenario: Semantic elements
+
+- **WHEN** the app renders
+- **THEN** semantic elements like `<header>`, `<main>`, `<nav>`, `<section>`, and `<footer>` are used
+
+#### Scenario: Aria attributes
+
+- **WHEN** interactive controls render
+- **THEN** `aria-label` is present on icon-only buttons and `aria-expanded` is present on toggle buttons
+
+### Requirement: Placeholder content
+
+The app SHALL use placeholder images and third-party icons instead of copied assets.
+
+#### Scenario: Placeholder images
+
+- **WHEN** images are needed in the app
+- **THEN** `https://picsum.photos/seed/elevate-<n>/<w>/<h>` URLs are used as deterministic placeholders
+
+#### Scenario: Icons
+
+- **WHEN** icons are needed in the app
+- **THEN** icons are sourced from `lucide-react`
+
+#### Scenario: No copied assets
+
+- **WHEN** the app source code is inspected
+- **THEN** no references to ColorLib, preview.colorlib.com, or copied CSS/images exist in `apps/elevate/`
+
+### Requirement: Footer branding
+
+The app footer SHALL include a Component Dock attribution link.
+
+#### Scenario: Component Dock link
+
+- **WHEN** the user views the footer
+- **THEN** a link to `https://www.componentdock.com/` is present
+- **AND** the link text includes "Component Dock" branding
