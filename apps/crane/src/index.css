@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Crane brand colors — from the ColorLib "Constructo" preview
+     (https://preview.colorlib.com/theme/constructo/ + css/style.css):
+     a construction company landing theme with an orange #F0542C primary,
+     a navy #001D38 dark overlay, and muted text #596672 / #707070. */
+  --color-primary-50: #fef3ef;
+  --color-primary-100: #fde2d9;
+  --color-primary-200: #fac5b3;
+  --color-primary-300: #f69e82;
+  --color-primary-400: #f0542c;
+  --color-primary-500: #e04320;
+  --color-primary-600: #c23216;
+  --color-primary-700: #a22614;
+  --color-primary-800: #852218;
+  --color-primary-900: #6e2018;
+
+  /* Navy overlay (ColorLib .overlay::before background #001D38). */
+  --color-navy: #001d38;
+
+  /* Light section backgrounds. */
+  --color-mist: #f8f8f8;
+  --color-smoke: #707070;
+
+  --color-ink: #1a1a1a;
+  --color-heading: #001d38;
+  --color-body: #596672;
+
+  /* Raleway via Google Fonts <link> in index.html — matching the
+     ColorLib font pairing. */
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+}
