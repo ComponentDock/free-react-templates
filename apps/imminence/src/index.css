@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Imminence brand tokens — from the ColorLib "02 Comming Soon" design:
+     pink #F84982 primary, dark pink #e40b52 hover, light pink #f89fbc focus,
+     input bg #F1F2F3, muted text #999, body #333, paragraph #555. */
+  --color-brand-pink: #f84982;
+  --color-brand-pink-hover: #e40b52;
+  --color-brand-pink-focus: #f89fbc;
+  --color-input-bg: #f1f2f3;
+
+  /* Social brand colors */
+  --color-social-facebook: #2a61d6;
+  --color-social-twitter: #3aa4f8;
+  --color-social-google: #f43846;
+  --color-social-instagram: #8f614a;
+  --color-social-pinterest: #e1c013;
+
+  /* Text colors */
+  --color-body: #333;
+  --color-paragraph: #555;
+  --color-muted: #999;
+  --color-light: #444;
+
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
