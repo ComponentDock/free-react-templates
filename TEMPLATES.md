@@ -1335,7 +1335,7 @@
 - [x] **Bee** — [colorlib](https://colorlib.com/wp/template/bee/) · [nectar](https://nectar.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bee-free-template.jpg)
 - [x] **Braxit** — [colorlib](https://colorlib.com/wp/template/braxit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/braxit-free-template.jpg) · [Machina](https://machina.free.componentdock.com)
 - [x] **Buildcraft** — [colorlib](https://colorlib.com/wp/template/buildcraft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildcraft-template-1771943678540.jpg) · [parapet](https://parapet.free.componentdock.com)
-- [ ] **Builder** — [colorlib](https://colorlib.com/wp/template/builder/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/builder-free-template.jpg)
+- [~] **Builder** — [colorlib](https://colorlib.com/wp/template/builder/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/builder-free-template.jpg)
 - [x] **Buildream** — [colorlib](https://colorlib.com/wp/template/buildream/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildream-free-template.jpg) · [mortar](https://mortar.free.componentdock.com)
 - [x] **Celt** — [colorlib](https://colorlib.com/wp/template/celt/) · [buildwell](https://buildwell.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/celt-construction-company-website-template.jpg)
 - [x] **Complex** — [colorlib](https://colorlib.com/wp/template/complex/) · [sitecraft](https://sitecraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/complex-free-template.jpg)
