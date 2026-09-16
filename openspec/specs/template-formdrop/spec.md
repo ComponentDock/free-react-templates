@@ -12,158 +12,126 @@ Features a pink/magenta accent button and a decorative heading underline.
   time of prep — design tokens extracted from screenshot)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 
-## Design tokens
+## Requirements
 
-> Tokens extracted from the screenshot (preview unreachable). Approximate hex
-> values; adjust to match closest Tailwind defaults.
+### Requirement: Page layout
 
-| Token             | Value                   | Notes                                      |
-| ----------------- | ----------------------- | ------------------------------------------ |
-| Brand purple      | `#6C63FF`              | Form panel background                      |
-| Accent pink       | `#E91E63`              | Button bg, heading underline               |
-| Background        | `#F5F5F5`              | Page background (light gray)               |
-| Card surface      | `#FFFFFF`              | Info panel background                      |
-| Text primary      | `#333333`              | Headings, body copy                        |
-| Text secondary    | `#999999`              | Input placeholders, lighter text           |
-| Text on purple    | `#FFFFFF`              | Text inside the form panel                 |
-| Text on white     | `#333333`              | Text inside the info panel                 |
-| Icon bg           | `#E0E0E0`              | Gray circular icon containers on info side |
-| Font — headings   | Playfair Display (serif)| "Send us a message", "Contact us"          |
-| Font — body       | Poppins (sans-serif)   | Labels, contact info, button               |
-| Button radius     | 3px                     | Nearly rectangular, very slight rounding   |
-| Button bg         | Accent pink             | —                                          |
-| Button text       | White                   | —                                          |
-| Info panel icons  | Gray circles (bg)       | Circular icon containers on white bg       |
-| Input style       | Underline (no border)   | Bottom border only, light on purple bg     |
-| Heading underline | Accent pink             | Short pink line below "Contact us"         |
+The page SHALL display a centered two-column card on a light gray background with
+the page title above the card.
 
-## Visual design (from screenshot)
+#### Scenario: Two-column card renders
 
-The page has a centered two-column card on a light gray background.
-The page title "Contact Form #04" sits above the card, centered.
+- **WHEN** I visit the Formdrop page
+- **THEN** I see a centered card with two columns on a light gray background
+- **AND** the page title "Contact Form #04" is displayed above the card
 
-Left column (deep purple, ~45% width): "Send us a message" heading in white,
-then a vertical stack of underline-style inputs (Name, Email, Subject, Message)
-with light bottom borders on the purple background. "Send Message" button at
-the bottom with pink/magenta background and white text.
+#### Scenario: Left column is purple and contains the form
 
-Right column (white, ~55% width): "Contact us" heading in dark text with a
-short pink/magenta underline decoration below it. Subtext "We're open for any
-suggestion or just to have a chat". Four contact items with gray circular icon
-containers: Address, Phone, Email, Website.
+- **WHEN** I visit the Formdrop page
+- **THEN** the left column has a purple background
+- **AND** it contains a "Send us a message" heading
 
-Key differences from Forms 01–03: purple form panel, pink accent button,
-heading underline decoration, all form fields stacked vertically (no side-by-side).
+#### Scenario: Right column is white and contains contact info
 
-## Gherkin requirements
+- **WHEN** I visit the Formdrop page
+- **THEN** the right column has a white background
+- **AND** it contains a "Contact us" heading
 
-### Page layout
+### Requirement: Contact form fields
 
-```gherkin
-Scenario: Page renders a centered two-column card
-  Given I visit the Formdrop page
-  Then I see a centered card with two columns on a light gray background
-  And the page title "Contact Form #04" is displayed above the card
+The form SHALL contain Name, Email, Subject, and Message fields stacked
+vertically with underline styling on a purple background.
 
-Scenario: Left column is purple and contains the form
-  Given I visit the Formdrop page
-  Then the left column has a purple background
-  And it contains a "Send us a message" heading
+#### Scenario: Form displays all fields
 
-Scenario: Right column is white and contains contact info
-  Given I visit the Formdrop page
-  Then the right column has a white background
-  And it contains a "Contact us" heading
-```
+- **WHEN** I visit the Formdrop page
+- **THEN** I see a Name input field
+- **AND** I see an Email input field
+- **AND** I see a Subject input field
+- **AND** I see a Message textarea
+- **AND** I see a Send Message button
 
-### Contact form
+#### Scenario: Form fields are stacked vertically
 
-```gherkin
-Scenario: Form displays all fields
-  Given I visit the Formdrop page
-  Then I see a Name input field
-  And I see an Email input field
-  And I see a Subject input field
-  And I see a Message textarea
-  And I see a Send Message button
+- **WHEN** I visit the Formdrop page
+- **THEN** all form fields are displayed in a single vertical column
 
-Scenario: Form fields are stacked vertically
-  Given I visit the Formdrop page
-  Then all form fields are displayed in a single vertical column
-  And no fields are side by side
+#### Scenario: Inputs have underline style
 
-Scenario: Inputs have underline style on purple background
-  Given I visit the Formdrop page
-  Then all form inputs have a bottom border only (underline style)
-  And the input borders are light colored against the purple background
+- **WHEN** I visit the Formdrop page
+- **THEN** all form inputs have a bottom border only (underline style)
 
-Scenario: Send Message button is styled
-  Given I visit the Formdrop page
-  Then the Send Message button has a pink background and white text
-```
+#### Scenario: Send Message button is styled
 
-### Contact info panel
+- **WHEN** I visit the Formdrop page
+- **THEN** the Send Message button has a pink background and white text
 
-```gherkin
-Scenario: Info panel has a heading underline
-  Given I visit the Formdrop page
-  Then the "Contact us" heading has a short pink underline decoration below it
+#### Scenario: Form fields accept input
 
-Scenario: Info panel displays subtext
-  Given I visit the Formdrop page
-  Then I see "We're open for any suggestion or just to have a chat" below the heading
+- **WHEN** I type "John" into the Name field
+- **THEN** the Name field displays "John"
 
-Scenario: Info panel displays address
-  Given I visit the Formdrop page
-  Then I see an address icon and text "Address: 198 West 21th Street, Suite 721 New York NY 10016"
+#### Scenario: Form submission is prevented
 
-Scenario: Info panel displays phone
-  Given I visit the Formdrop page
-  Then I see a phone icon and text "Phone: + 1235 2355 98"
+- **WHEN** I click the Send Message button
+- **THEN** the form does not navigate or reload
 
-Scenario: Info panel displays email
-  Given I visit the Formdrop page
-  Then I see an email icon and text "Email: info@yoursite.com"
+### Requirement: Contact info panel
 
-Scenario: Info panel displays website
-  Given I visit the Formdrop page
-  Then I see a globe icon and text "Website: yoursite.com"
+The info panel SHALL display a heading with pink underline decoration, subtext,
+and four contact items with gray circular icons.
 
-Scenario: Info panel icons have circular gray backgrounds
-  Given I visit the Formdrop page
-  Then each contact info item has a circular gray icon container
-```
+#### Scenario: Info panel has heading underline
 
-### Responsive behavior
+- **WHEN** I visit the Formdrop page
+- **THEN** the "Contact us" heading has a short pink underline decoration below it
 
-```gherkin
-Scenario: Columns stack on mobile
-  Given I visit the Formdrop page on a mobile viewport
-  Then the two columns stack vertically
-  And the form appears above the contact info panel
-```
+#### Scenario: Info panel displays subtext
 
-### Footer
+- **WHEN** I visit the Formdrop page
+- **THEN** I see "We're open for any suggestion or just to have a chat" below the heading
 
-```gherkin
-Scenario: Footer links to Component Dock
-  Given I visit the Formdrop page
-  Then the footer contains a link to https://www.componentdock.com/
-  And the link text references Component Dock
-```
+#### Scenario: Info panel displays address
 
-## Verification checklist
+- **WHEN** I visit the Formdrop page
+- **THEN** I see an address icon and text "198 West 21th Street, Suite 721 New York NY 10016"
 
-- [ ] Page title "Contact Form #04" centered above the card
-- [ ] Two-column layout: form (purple) left, info (white) right
-- [ ] Form: "Send us a message" heading, all fields stacked vertically
-- [ ] Inputs: underline style with light borders on purple bg
-- [ ] Send Message button: pink bg, white text, slight radius
-- [ ] Info panel: "Contact us" with pink underline decoration
-- [ ] Info panel: subtext + 4 contact items with gray circular icons
-- [ ] Fonts: Playfair Display for headings, Poppins for body
-- [ ] Responsive: columns stack on mobile
-- [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
-- [ ] 100% test coverage
-- [ ] Typecheck + lint + build pass
+#### Scenario: Info panel displays phone
+
+- **WHEN** I visit the Formdrop page
+- **THEN** I see a phone icon and text "+ 1235 2355 98"
+
+#### Scenario: Info panel displays email
+
+- **WHEN** I visit the Formdrop page
+- **THEN** I see an email icon and text "info@yoursite.com"
+
+#### Scenario: Info panel displays website
+
+- **WHEN** I visit the Formdrop page
+- **THEN** I see a globe icon and text "yoursite.com"
+
+#### Scenario: Info panel icons have circular gray backgrounds
+
+- **WHEN** I visit the Formdrop page
+- **THEN** each contact info item has a circular gray icon container
+
+### Requirement: Responsive behavior
+
+The layout SHALL stack columns vertically on mobile viewports.
+
+#### Scenario: Columns stack on mobile
+
+- **WHEN** I visit the Formdrop page on a mobile viewport
+- **THEN** the two columns stack vertically
+- **AND** the form appears above the contact info panel
+
+### Requirement: Footer
+
+The footer SHALL link to Component Dock.
+
+#### Scenario: Footer links to Component Dock
+
+- **WHEN** I visit the Formdrop page
+- **THEN** the footer contains a link to https://www.componentdock.com/
+- **AND** the link text references Component Dock
