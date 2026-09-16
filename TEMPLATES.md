@@ -1363,7 +1363,7 @@
 
 - [x] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg) · [tally](https://tally.free.componentdock.com)
 - [x] **Bizcon** — [colorlib](https://colorlib.com/wp/template/bizcon/) · [bizmark](https://bizmark.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bizcon-free-template.jpg)
-- [~] **Buson** — [colorlib](https://colorlib.com/wp/template/buson/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buson-free-template.jpg)
+- [x] **Buson** — [colorlib](https://colorlib.com/wp/template/buson/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buson-free-template.jpg) · [insight](https://free-react-templates-insight.surge.sh)
 - [x] **Callcenter** — [colorlib](https://colorlib.com/wp/template/callcenter/) · [dialpad](https://dialpad.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/callcenter-free-call-center-website-template.jpg)
 - [x] **Cellon** — [colorlib](https://colorlib.com/wp/template/cellon/) · [lightwell](https://lightwell.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cellon-free-ligh-consulting-company-template.jpg)
 - [ ] **Classic** — [colorlib](https://colorlib.com/wp/template/classic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/classic-free-template.jpg)
