@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-oswald: 'Oswald', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --color-accent: #fab700;
+  --color-dark: #222222;
+  --color-muted: #777777;
+  --color-border: #eeeeee;
+  --color-testimonial-bg: #f9f9ff;
+  --color-accent-hover: #f8b600;
+  --color-dark-overlay: rgba(0, 0, 0, 0.5);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-roboto);
+    color: var(--color-muted);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-oswald);
+    font-weight: 500;
+    color: var(--color-dark);
+  }
+}
