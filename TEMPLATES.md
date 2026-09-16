@@ -1319,7 +1319,7 @@
 ## Coming Soon (8)
 
 - [x] **01 Comming Soon** · [prelude](https://prelude.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/01-comming-soon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-16.jpg)
-- [~] **02 Comming Soon** — [colorlib](https://colorlib.com/wp/template/02-comming-soon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-17.jpg)
+- [x] **02 Comming Soon** — [colorlib](https://colorlib.com/wp/template/02-comming-soon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-17.jpg) · [imminence](https://free-react-templates-imminence.surge.sh)
 - [ ] **03 Comming Soon** — [colorlib](https://colorlib.com/wp/template/03-comming-soon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-18.jpg)
 - [ ] **04 Comming Soon** — [colorlib](https://colorlib.com/wp/template/04-comming-soon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-19.jpg)
 - [ ] **05 Comming Soon** — [colorlib](https://colorlib.com/wp/template/05-comming-soon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-20.jpg)
