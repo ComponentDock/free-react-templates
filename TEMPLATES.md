@@ -1385,7 +1385,7 @@
 - [x] **Immigration** — [colorlib](https://colorlib.com/wp/template/immigration/) · [passage](https://passage.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/immigration-free-template.jpg)
 - [x] **Inves** — [colorlib](https://colorlib.com/wp/template/inves/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/inves-free-template.jpg) · [equity](https://equity.free.componentdock.com)
 - [x] **Lawfirm** — [colorlib](https://colorlib.com/wp/template/lawfirm/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawfirm-free-fullscreen-lawyer-website-template.jpg) · [chambers](https://free-react-templates-chambers.surge.sh)
-- [ ] **Lawride** — [colorlib](https://colorlib.com/wp/template/lawride/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawride-free-template.jpg)
+- [~] **Lawride** — [colorlib](https://colorlib.com/wp/template/lawride/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawride-free-template.jpg)
 - [ ] **Life Coaching** — [colorlib](https://colorlib.com/wp/template/life-coaching/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lifecoaching-free-template.jpg)
 - [x] **Lifecoach** — [colorlib](https://colorlib.com/wp/template/lifecoach/) · [coachly](https://coachly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lifecoach-free-template.jpg)
 - [x] **Negotiate** — [colorlib](https://colorlib.com/wp/template/negotiate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/negotiate-free-template.jpg) · [parley](https://parley.free.componentdock.com)
