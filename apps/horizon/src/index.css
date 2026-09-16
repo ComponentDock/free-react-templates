@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Horizon brand gold — warm amber tone for the framed coming-soon aesthetic. */
+  --color-brand: #c9a96e;
+  --color-brand-hover: #b08d4f;
+  --color-frame-border: rgba(255, 255, 255, 0.8);
+  --color-frame-bg: rgba(255, 255, 255, 0.08);
+  --color-overlay: rgba(0, 0, 0, 0.5);
+
+  --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Playfair Display', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
