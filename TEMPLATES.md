@@ -1292,7 +1292,7 @@
 - [x] **Christian** — [colorlib](https://colorlib.com/wp/template/christian/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/christian-free-template.jpg) · [vesper](https://vesper.free.componentdock.com)
 - [x] **Church** — [colorlib](https://colorlib.com/wp/template/church/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/church-free-template-1.jpg) · [sacredgate](https://sacredgate.free.componentdock.com)
 - [x] **Church Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/church-wordpress-themes/) · [synod](https://synod.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-church-themes-1.jpg)
-- [~] **Crose** — [colorlib](https://colorlib.com/wp/template/crose/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/crose-free-template.jpg)
+- [x] **Crose** — [colorlib](https://colorlib.com/wp/template/crose/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/crose-free-template.jpg) · [crescent](https://crescent.free.componentdock.com)
 - [x] **Faith** — [colorlib](https://colorlib.com/wp/template/faith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/faith-free-template.jpg) · [creeds](https://creeds.free.componentdock.com)
 - [x] **Faith 2** — [colorlib](https://colorlib.com/wp/template/faith-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/faith2-free-template.jpg) · [creed](https://creed.free.componentdock.com)
 - [x] **Faithcommunity** — [colorlib](https://colorlib.com/wp/template/faithcommunity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/faithcommunity-template-1770211119687.jpg) · [sanctuary](https://sanctuary.free.componentdock.com)
