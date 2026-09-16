@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — recreated from the ColorLib "Wisdom"
+     church theme (css/style.css + live preview):
+     brand teal #08c299 (buttons, accents), dark bg #1a1a1a,
+     section light #f6f8f9, heading #252525, body #636363,
+     parallax dark overlay. Font: Work Sans. */
+  --color-brand: #08c299;
+  --color-brand-hover: #06a87e;
+  --color-nav: #1a1a1a;
+  --color-section: #f6f8f9;
+  --color-ink: #252525;
+  --color-body: #636363;
+  --color-mist: #e8eaed;
+  --color-white: #ffffff;
+  --color-dark: #16181b;
+
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
