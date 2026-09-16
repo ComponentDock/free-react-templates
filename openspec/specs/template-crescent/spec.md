@@ -13,163 +13,176 @@ with date badges and media icons, upcoming events carousel, blog cards,
 newsletter subscription, and a 4-column footer. Brand color is deep red
 (#c92f2f). Font is Open Sans.
 
-## Design Tokens
+## Requirements
 
-| Token             | Value                          | Notes                                  |
-| ----------------- | ------------------------------ | -------------------------------------- |
-| brand-color       | `#c92f2f`                      | Deep red — buttons, accents, headings  |
-| brand-dark        | `#1f1f2c`                      | Dark navy — footer bg, dark sections   |
-| body-text         | `#636363`                      | Main paragraph text                    |
-| muted-text        | `#959595`                      | Secondary/meta text                    |
-| light-bg          | `#f3f3f3`                      | Alternating section backgrounds        |
-| white             | `#ffffff`                      | Card backgrounds, hero text            |
-| border-color      | `#ebebeb`                      | Light borders, dividers                |
-| font-family       | `"Open Sans", sans-serif`       | Body + headings                        |
-| button-radius     | `5px`                          | Rounded rectangular buttons            |
-| button-padding    | `12px 28px`                    | Approx from CSS `.crose-btn`           |
-| button-font       | 700 weight, uppercase implied  | Bold CTAs                              |
-| section-padding   | `100px 0`                      | Consistent vertical rhythm             |
-| overlay-color     | `rgba(0,0,0,0.4)` (approx)     | Hero + CTA parallax image overlays     |
+### Requirement: TopBar displays contact info and social links
 
-## Visual Design Notes (from screenshot + live preview)
+The top bar SHALL display opening hours, social media icons (Facebook, Twitter), email address, and phone number on a light background.
 
-- Top bar: dark bg (#1f1f2c), opening hours / email / phone in white
-- Navbar: white bg, logo left, menu right, mega menu dropdowns
-- Hero: full-width carousel, parallax background images with dark overlay,
-  centered white heading + subtext + red CTA button
-- About: light bg (#f3f3f3), section heading, 3-column image+text cards
-- Call to Action: parallax bg image with overlay, centered heading + white
-  text + outlined red button
-- Latest Sermons: white bg, 3-column cards with thumbnail, date badge
-  (red circle), media action icons (video/audio/docs/download), sermon
-  metadata (speaker, category, time)
-- Upcoming Events: parallax header, carousel of event cards with thumbnail
-  image left + content right (title, date/time/location meta, description)
-- Blog: white bg, 3-column cards with image + meta + title + excerpt
-- Subscribe: white bg, split layout — left: heading + subtext, right: email
-  input + red subscribe button
-- Footer: dark navy bg (#1f1f2c), 4 columns (logo+desc, quick links,
-  latest news, contact info), copyright bar at bottom
+#### Scenario: TopBar renders opening hours
 
-## Gherkin Requirements
+- **GIVEN** the page loads
+- **WHEN** the top bar is rendered
+- **THEN** it shows "Opening Hours - 10 Am to 6 PM"
+- **AND** it shows social media icons for Facebook and Twitter
+- **AND** it shows the email address and phone number
 
-### Navbar
+### Requirement: Navbar provides sticky navigation
 
-```gherkin
-Scenario: Navbar displays logo and navigation links
-  Given the page loads
-  Then the navbar shows the site logo on the left
-  And navigation links are displayed horizontally
-  And links include "Home", "About", "Sermons", "Events", "Blog", "Contact"
+The navbar SHALL be sticky on scroll, display a logo, navigation links (Home, About, Sermons, Events, Blog, Contact), a search icon, and a "Donate Us" CTA button.
 
-Scenario: Navbar is sticky on scroll
-  Given the user scrolls past the hero
-  Then the navbar remains fixed at the top of the viewport
-  And it has a white background with subtle shadow
-```
+#### Scenario: Navbar renders navigation links
 
-### Hero
+- **GIVEN** the page loads
+- **WHEN** the navbar is rendered
+- **THEN** it shows the logo "CRESCENT"
+- **AND** it shows all navigation links
+- **AND** it shows the "Donate Us" button
 
-```gherkin
-Scenario: Hero displays carousel with background image
-  Given the page loads
-  Then a full-width hero section is visible
-  And it shows a centered heading
-  And a subtext paragraph below the heading
-  And a CTA button styled in brand red
+#### Scenario: Navbar is sticky
 
-Scenario: Hero slides rotate automatically
-  Given the hero carousel is displayed
-  When 5 seconds pass without user interaction
-  Then the carousel advances to the next slide
-```
+- **GIVEN** the user scrolls past the hero
+- **WHEN** the navbar becomes sticky
+- **THEN** it remains fixed at the top with a white background and shadow
 
-### About
+#### Scenario: Mobile menu toggles
 
-```gherkin
-Scenario: About section shows 3 content cards
-  Given the page loads
-  Then the About section displays with a section heading "Welcome To [Church]"
-  And 3 cards are shown in a row
-  And each card has an image on top, a title, description text, and a "Read More" link
-```
+- **GIVEN** the page is on mobile viewport
+- **WHEN** the user clicks the hamburger button
+- **THEN** the mobile menu opens
+- **AND** clicking a link closes the mobile menu
 
-### Call to Action
+### Requirement: Hero section displays carousel with background images
 
-```gherkin
-Scenario: CTA section shows parallax background with overlay
-  Given the page loads
-  Then a call-to-action section is visible with a background image
-  And the image has a dark overlay
-  And centered white text with a heading and subheading
-  And a button styled with transparent background and red border
-```
+The hero SHALL show a full-width section with background images, centered white heading, subtext, and a brand-red CTA button.
 
-### Latest Sermons
+#### Scenario: Hero renders content
 
-```gherkin
-Scenario: Sermons section displays sermon cards
-  Given the page loads
-  Then the Latest Sermons section shows a heading
-  And 3 sermon cards are displayed in a row
-  And each card has a thumbnail with a date badge
-  And media action icons (video, audio, docs, download)
-  And a sermon title, speaker name, category, and date/time
-```
+- **GIVEN** the page loads
+- **WHEN** the hero section is visible
+- **THEN** it shows a heading "Building The Hope"
+- **AND** it shows subtext about the mission
+- **AND** it shows an "About Us" CTA button
 
-### Upcoming Events
+### Requirement: About section shows 3 content cards
 
-```gherkin
-Scenario: Events section shows event cards with thumbnails
-  Given the page loads
-  Then the Upcoming Events section has a parallax heading area
-  And event cards are displayed in a carousel
-  And each card has a thumbnail image on the left
-  And event title, date, time, location, and description on the right
-```
+The about section SHALL display a heading "Welcome To Church" and 3 cards with image, title, description, and "Read More" link.
 
-### Blog
+#### Scenario: About renders cards
 
-```gherkin
-Scenario: Blog section shows blog post cards
-  Given the page loads
-  Then the Blog section shows a heading
-  And 3 blog cards are displayed in a row
-  And each card has an image, meta info (date, category), title, and excerpt
-```
+- **GIVEN** the page loads
+- **WHEN** the about section is visible
+- **THEN** it shows the heading "Welcome To Church"
+- **AND** it shows 3 cards: "Our Church", "Our History", "Our Sermons"
+- **AND** each card has a "Read More" link
 
-### Subscribe / Newsletter
+### Requirement: Call to Action section shows parallax banner
 
-```gherkin
-Scenario: Newsletter section shows email subscription form
-  Given the page loads
-  Then a subscribe section is visible
-  And it has a heading "Subscribe To Our Newsletter"
-  And an email input field on the right
-  And a red subscribe button next to the input
-```
+The CTA section SHALL show a parallax background image with dark overlay, centered white text, and a transparent button with red border.
 
-### Footer
+#### Scenario: CTA renders content
 
-```gherkin
-Scenario: Footer displays 4 columns with links and contact info
-  Given the page loads
-  Then the footer has a dark navy background
-  And it shows 4 columns: logo/description, quick links, latest news, contact info
-  And a copyright bar at the very bottom
-  And the footer links to https://www.componentdock.com/ branded as "Component Dock"
-```
+- **GIVEN** the page loads
+- **WHEN** the CTA section is visible
+- **THEN** it shows "A Place For You" heading
+- **AND** it shows description text
+- **AND** it shows a "Become A Member" outlined button
+
+### Requirement: Latest Sermons displays sermon cards
+
+The sermons section SHALL show 3 sermon cards with thumbnail image, date badge, media action icons (video, audio, docs, download), title, speaker, categories, and time.
+
+#### Scenario: Sermons renders cards
+
+- **GIVEN** the page loads
+- **WHEN** the sermons section is visible
+- **THEN** it shows the heading "Latest Sermons"
+- **AND** it shows 3 sermon cards
+- **AND** each card has media icons and metadata
+
+### Requirement: Upcoming Events shows event cards with parallax heading
+
+The events section SHALL show a parallax heading area and event cards with thumbnail image, title, date, time, location, description, and "Find Out More" button.
+
+#### Scenario: Events renders cards
+
+- **GIVEN** the page loads
+- **WHEN** the events section is visible
+- **THEN** it shows "Upcoming Events" heading
+- **AND** it shows 3 event cards with metadata
+
+### Requirement: Gallery displays image grid
+
+The gallery SHALL show 10 images in a responsive grid layout.
+
+#### Scenario: Gallery renders images
+
+- **GIVEN** the page loads
+- **WHEN** the gallery section is visible
+- **THEN** it shows 10 images
+
+### Requirement: Blog section shows blog post cards
+
+The blog section SHALL show 3 blog cards with image, title, author, date, and excerpt.
+
+#### Scenario: Blog renders cards
+
+- **GIVEN** the page loads
+- **WHEN** the blog section is visible
+- **THEN** it shows the heading "Latest News"
+- **AND** it shows 3 blog cards
+
+### Requirement: Subscribe section shows newsletter form
+
+The subscribe section SHALL show a heading, subtext, email input, and subscribe button.
+
+#### Scenario: Subscribe renders form
+
+- **GIVEN** the page loads
+- **WHEN** the subscribe section is visible
+- **THEN** it shows "Subscribe To Our Newsletter" heading
+- **AND** it shows an email input field
+- **AND** it shows a "Subscribe" button
+
+#### Scenario: Subscribe form clears on submit
+
+- **GIVEN** the user types an email
+- **WHEN** the user clicks "Subscribe"
+- **THEN** the email field is cleared
+
+### Requirement: Footer displays 4 columns with links and contact info
+
+The footer SHALL have a dark navy background (#1f1f2c), 4 columns (about, quick links, latest news, contact info), and a copyright bar linking to Component Dock.
+
+#### Scenario: Footer renders content
+
+- **GIVEN** the page loads
+- **WHEN** the footer is visible
+- **THEN** it shows 4 columns
+- **AND** it links to https://www.componentdock.com/ branded as "Component Dock"
+- **AND** it has role="contentinfo"
+
+### Requirement: App renders all sections in correct order
+
+The App SHALL compose all sections in the order: TopBar → Navbar → Hero → About → CTA → Sermons → Events → Gallery → Blog → Subscribe → Footer.
+
+#### Scenario: App renders all sections
+
+- **GIVEN** the page loads
+- **WHEN** the App component renders
+- **THEN** all sections are present in the correct order
+- **AND** the document title is set to "Crescent — Church Community Template"
 
 ## Verification Checklist
 
-- [ ] All sections match the order: TopBar → Navbar → Hero → About → CTA → Sermons → Events → Blog → Subscribe → Footer
+- [ ] All sections match the order: TopBar → Navbar → Hero → About → CTA → Sermons → Events → Gallery → Blog → Subscribe → Footer
 - [ ] Brand color `#c92f2f` used for buttons and accents via Tailwind theme
 - [ ] Font is Open Sans via Google Fonts link in index.html
-- [ ] Buttons have `rounded` (5px) shape, red background, white text
+- [ ] Buttons have `rounded-[3px]` shape, red background, white text
 - [ ] Hero section uses parallax bg images with dark overlay
 - [ ] CTA section uses parallax bg image with transparent+border button
 - [ ] Sermon cards have date badge, media icons, metadata rows
-- [ ] Events section has parallax heading + carousel cards
+- [ ] Events section has parallax heading + event cards
 - [ ] Footer is dark navy (#1f1f2c) with 4 columns
 - [ ] Footer links to ComponentDock
 - [ ] No ColorLib references in app code
