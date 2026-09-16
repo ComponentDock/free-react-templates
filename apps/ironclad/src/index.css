@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Ironclad brand palette — construction green (#82ae46) from the original design */
+  --color-brand-50: #f4f8ed;
+  --color-brand-100: #e6efd6;
+  --color-brand-200: #cde0ad;
+  --color-brand-300: #aeca7a;
+  --color-brand-400: #82ae46;
+  --color-brand-500: #6d9638;
+  --color-brand-600: #577a2c;
+  --color-brand-700: #435e23;
+  --color-brand-800: #374c1e;
+  --color-brand-900: #2f401c;
+
+  /* Secondary — golden yellow (#f8b732) */
+  --color-accent-400: #f8b732;
+  --color-accent-500: #e5a420;
+
+  /* Dark surfaces */
+  --color-dark: #1b1b1b;
+  --color-dark-light: #222222;
+
+  /* Body text */
+  --color-body: #7d8494;
+
+  /* Roboto — the original template's typeface */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
