@@ -12,167 +12,130 @@ below (form on left, image on right).
   time of prep — design tokens extracted from screenshot)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 
-## Design tokens
+## Requirements
 
-> Tokens extracted from the screenshot (preview unreachable). Approximate hex
-> values; adjust to match closest Tailwind defaults.
+### Requirement: Page title rendering
 
-| Token             | Value                   | Notes                                      |
-| ----------------- | ----------------------- | ------------------------------------------ |
-| Brand teal        | `#7EC8E3`              | Icons, button, link accents                |
-| Background        | `#F5F5F5`              | Page background (light gray)               |
-| Card surface      | `#FFFFFF`              | Form panel background                      |
-| Text primary      | `#333333`              | Headings, body copy                        |
-| Text secondary    | `#999999`              | Input placeholders, lighter text           |
-| Text on teal      | `#FFFFFF`              | Text inside icon circles, button text      |
-| Label color       | `#555555`              | Uppercase field labels                     |
-| Link color        | `#7EC8E3`              | Phone number, email, website values        |
-| Font — headings   | Playfair Display (serif)| "Contact Form #03", "Contact Us"           |
-| Font — body       | Poppins (sans-serif)   | Labels, contact info, button               |
-| Button radius     | 3px                     | Nearly rectangular, very slight rounding   |
-| Button bg         | Brand teal              | —                                          |
-| Button text       | White                   | —                                          |
-| Info bar icons    | Teal circles (bg)       | Circular icon containers, teal background  |
-| Icon color        | White inside teal circle| —                                          |
-| Input style       | Underline (no border)   | Bottom border only                         |
-| Image placeholder | B&W photo (cat)         | Use picsum.photos seed for placeholder     |
+The page SHALL display "Contact Form #03" centered at the top in a serif font.
 
-## Visual design (from screenshot)
+#### Scenario: Title is visible
 
-The page has three stacked sections on a light gray background:
+- **WHEN** I visit the Formcatch page
+- **THEN** I see a heading "Contact Form #03" centered at the top of the page
 
-1. **Title** — "Contact Form #03" centered, serif font, dark text.
+### Requirement: Info bar with contact items
 
-2. **Info bar** — horizontal row of four contact items, each with a circular
-   teal icon above text. Items: Address, Phone, Email, Website. The phone
-   number, email, and website values appear as teal-colored links.
+The page SHALL display a horizontal info bar with four contact items (Address,
+Phone, Email, Website), each with a circular teal icon container.
 
-3. **Two-column card** — centered below the info bar:
-   - Left (~50%): white background, "Contact Us" heading, form with
-     underline-style inputs (FULL NAME + EMAIL ADDRESS side by side, SUBJECT
-     full width, MESSAGE tall textarea), "Send Message" button (teal bg).
-   - Right (~50%): full-height image placeholder (screenshot shows a B&W cat
-     photo). Use `picsum.photos/seed/formcatch/<w>/<h>` for the placeholder.
+#### Scenario: Info bar shows four items
 
-## Gherkin requirements
+- **WHEN** I visit the Formcatch page
+- **THEN** I see a horizontal row of four contact items below the title
 
-### Page layout
+#### Scenario: Info bar items have circular teal icons
 
-```gherkin
-Scenario: Page renders the title
-  Given I visit the Formcatch page
-  Then I see "Contact Form #03" centered at the top
+- **WHEN** I visit the Formcatch page
+- **THEN** each info bar item has a circular teal icon container
 
-Scenario: Page renders the info bar
-  Given I visit the Formcatch page
-  Then I see a horizontal row of four contact items below the title
+#### Scenario: Info bar displays address
 
-Scenario: Page renders the two-column card
-  Given I visit the Formcatch page
-  Then I see a centered card with a form on the left and an image on the right
-```
+- **WHEN** I visit the Formcatch page
+- **THEN** I see an address icon and text containing "198 West 21th Street"
 
-### Info bar
+#### Scenario: Info bar displays phone
 
-```gherkin
-Scenario: Info bar displays address
-  Given I visit the Formcatch page
-  Then I see an address icon and text "Address: 198 West 21th Street, Suite 721 New York NY 10016"
+- **WHEN** I visit the Formcatch page
+- **THEN** I see a phone icon and text containing "+ 1235 2355 98"
 
-Scenario: Info bar displays phone
-  Given I visit the Formcatch page
-  Then I see a phone icon and text "Phone: + 1235 2355 98"
+#### Scenario: Info bar displays email
 
-Scenario: Info bar displays email
-  Given I visit the Formcatch page
-  Then I see an email icon and text "Email: info@yoursite.com"
+- **WHEN** I visit the Formcatch page
+- **THEN** I see an email icon and text containing "info@yoursite.com"
 
-Scenario: Info bar displays website
-  Given I visit the Formcatch page
-  Then I see a globe icon and text "Website: yoursite.com"
+#### Scenario: Info bar displays website
 
-Scenario: Info bar items have circular teal icon containers
-  Given I visit the Formcatch page
-  Then each info bar item has a circular teal icon container
-```
+- **WHEN** I visit the Formcatch page
+- **THEN** I see a globe icon and text containing "yoursite.com"
 
-### Contact form
+### Requirement: Two-column contact card
 
-```gherkin
-Scenario: Form displays all fields
-  Given I visit the Formcatch page
-  Then I see a Full Name input field
-  And I see an Email Address input field
-  And I see a Subject input field
-  And I see a Message textarea
-  And I see a Send Message button
+The page SHALL display a two-column card with a contact form on the left and a
+placeholder image on the right.
 
-Scenario: Full Name and Email Address fields are side by side
-  Given I visit the Formcatch page
-  Then the Full Name and Email Address inputs are displayed in the same row
+#### Scenario: Card renders form and image
 
-Scenario: Subject field spans full width
-  Given I visit the Formcatch page
-  Then the Subject input spans the full width of the form
+- **WHEN** I visit the Formcatch page
+- **THEN** I see a centered card with a form on the left and an image on the right
 
-Scenario: Inputs have underline style
-  Given I visit the Formcatch page
-  Then all form inputs have a bottom border only (underline style)
+#### Scenario: Right column displays image
 
-Scenario: Field labels are uppercase
-  Given I visit the Formcatch page
-  Then all form field labels are displayed in uppercase
+- **WHEN** I visit the Formcatch page
+- **THEN** the right column of the card displays a placeholder image
 
-Scenario: Send Message button is styled
-  Given I visit the Formcatch page
-  Then the Send Message button has a teal background and white text
-```
+### Requirement: Contact form fields
 
-### Image panel
+The form SHALL display Full Name, Email Address, Subject, and Message fields
+with a Send Message button.
 
-```gherkin
-Scenario: Right column displays an image
-  Given I visit the Formcatch page
-  Then the right column of the card displays a placeholder image
-  And the image fills the full height of the card
-```
+#### Scenario: Form displays all fields
 
-### Responsive behavior
+- **WHEN** I visit the Formcatch page
+- **THEN** I see a Full Name input, Email Address input, Subject input, Message textarea, and Send Message button
 
-```gherkin
-Scenario: Info bar wraps on mobile
-  Given I visit the Formcatch page on a mobile viewport
-  Then the info bar items wrap to multiple rows
+#### Scenario: Full Name and Email are side by side
 
-Scenario: Card columns stack on mobile
-  Given I visit the Formcatch page on a mobile viewport
-  Then the form and image columns stack vertically
-```
+- **WHEN** I visit the Formcatch page
+- **THEN** the Full Name and Email Address inputs are displayed in the same row on desktop
 
-### Footer
+#### Scenario: Subject spans full width
 
-```gherkin
-Scenario: Footer links to Component Dock
-  Given I visit the Formcatch page
-  Then the footer contains a link to https://www.componentdock.com/
-  And the link text references Component Dock
-```
+- **WHEN** I visit the Formcatch page
+- **THEN** the Subject input spans the full width of the form
 
-## Verification checklist
+### Requirement: Form input styling
 
-- [ ] Page title "Contact Form #03" centered at top
-- [ ] Info bar: 4 items in a row with circular teal icons
-- [ ] Two-column card: form (white) left, image right
-- [ ] Form: "Contact Us" heading with underline-style inputs
-- [ ] Full Name + Email Address in a two-column row
-- [ ] Subject input full width
-- [ ] Message textarea tall
-- [ ] Uppercase labels above inputs
-- [ ] Send Message button: teal bg, white text, slight radius
-- [ ] Right column: placeholder image filling card height
-- [ ] Fonts: Playfair Display for headings, Poppins for body
-- [ ] Responsive: info bar wraps, card stacks on mobile
-- [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
-- [ ] 100% test coverage
-- [ ] Typecheck + lint + build pass
+All form inputs SHALL use underline style (bottom border only) with uppercase labels.
+
+#### Scenario: Inputs have underline style
+
+- **WHEN** I visit the Formcatch page
+- **THEN** all form inputs have a bottom border only
+
+#### Scenario: Labels are uppercase
+
+- **WHEN** I visit the Formcatch page
+- **THEN** all form field labels are displayed in uppercase
+
+### Requirement: Send Message button styling
+
+The Send Message button SHALL have a teal background with white text and slight border radius.
+
+#### Scenario: Button is styled
+
+- **WHEN** I visit the Formcatch page
+- **THEN** the Send Message button has a teal background and white text
+
+### Requirement: Footer with Component Dock link
+
+The footer SHALL link to https://www.componentdock.com/ branded as "Component Dock".
+
+#### Scenario: Footer links to Component Dock
+
+- **WHEN** I visit the Formcatch page
+- **THEN** the footer contains a link to https://www.componentdock.com/
+- **AND** the link text references "Component Dock"
+
+### Requirement: Responsive behavior
+
+The page SHALL be responsive: info bar wraps on mobile, card columns stack on mobile.
+
+#### Scenario: Info bar wraps on mobile
+
+- **WHEN** I visit the Formcatch page on a mobile viewport
+- **THEN** the info bar items wrap to multiple rows
+
+#### Scenario: Card columns stack on mobile
+
+- **WHEN** I visit the Formcatch page on a mobile viewport
+- **THEN** the form and image columns stack vertically
