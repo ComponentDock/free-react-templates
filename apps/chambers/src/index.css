@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #007bff;
+  --color-primary-hover: #0069d9;
+  --color-bg-dark: #161a1e;
+  --color-bg-darker: #121518;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
