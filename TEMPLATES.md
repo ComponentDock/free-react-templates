@@ -1287,7 +1287,7 @@
 ## Church (22)
 
 - [x] **Advent** — [colorlib](https://colorlib.com/wp/template/advent/) · [nave](https://nave.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/advent-free-template.jpg)
-- [ ] **Brotherlylove** — [colorlib](https://colorlib.com/wp/template/brotherlylove/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brotherlylove-free-template.jpg)
+- [~] **Brotherlylove** — [colorlib](https://colorlib.com/wp/template/brotherlylove/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brotherlylove-free-template.jpg)
 - [x] **Byfaith** — [colorlib](https://colorlib.com/wp/template/byfaith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/byfaith-free-template.jpg) · [sanctus](https://sanctus.free.componentdock.com)
 - [x] **Christian** — [colorlib](https://colorlib.com/wp/template/christian/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/christian-free-template.jpg) · [vesper](https://vesper.free.componentdock.com)
 - [x] **Church** — [colorlib](https://colorlib.com/wp/template/church/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/church-free-template-1.jpg) · [sacredgate](https://sacredgate.free.componentdock.com)
