@@ -1332,7 +1332,7 @@
 - [x] **Arcade** — [colorlib](https://colorlib.com/wp/template/arcade/) · [Trestle](https://trestle.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/arcade-free-template.jpg)
 - [x] **Architect** — [colorlib](https://colorlib.com/wp/template/architect/) · [Foundry](https://foundry.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/architect-free-template.jpg)
 - [x] **Archlab** — [colorlib](https://colorlib.com/wp/template/archlab/) · [Beamline](https://beamline.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archlab-free-template.jpg)
-- [ ] **Bee** — [colorlib](https://colorlib.com/wp/template/bee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bee-free-template.jpg)
+- [~] **Bee** — [colorlib](https://colorlib.com/wp/template/bee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bee-free-template.jpg)
 - [x] **Braxit** — [colorlib](https://colorlib.com/wp/template/braxit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/braxit-free-template.jpg) · [Machina](https://machina.free.componentdock.com)
 - [x] **Buildcraft** — [colorlib](https://colorlib.com/wp/template/buildcraft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildcraft-template-1771943678540.jpg) · [parapet](https://parapet.free.componentdock.com)
 - [ ] **Builder** — [colorlib](https://colorlib.com/wp/template/builder/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/builder-free-template.jpg)
@@ -1940,7 +1940,7 @@
 
 ## Industrial (15)
 
-- [ ] **Bee** — [colorlib](https://colorlib.com/wp/template/bee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bee-free-template.jpg)
+- [~] **Bee** — [colorlib](https://colorlib.com/wp/template/bee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bee-free-template.jpg)
 - [x] **Braxit** — [colorlib](https://colorlib.com/wp/template/braxit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/braxit-free-template.jpg) · [Machina](https://machina.free.componentdock.com)
 - [ ] **Constructioncompany** — [colorlib](https://colorlib.com/wp/template/constructioncompany/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/constructioncompany-free-template.jpg)
 - [ ] **Durg** — [colorlib](https://colorlib.com/wp/template/durg/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/durg-free-template.jpg)
