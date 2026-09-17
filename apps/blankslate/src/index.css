@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* BlankSlate brand palette — recreated from the "Whitespace" design. */
+  --color-brand: #fcd307;
+  --color-brand-dark: #e5be06;
+
+  /* Blue accent — secondary highlight color. */
+  --color-blue: #4ac7ea;
+  --color-blue-light: #78d5ef;
+
+  /* Dark — navbar, hero, projects, footer background. */
+  --color-dark: #141313;
+  --color-darker: #000000;
+
+  /* Light — pricing section background. */
+  --color-light: #f8f9fa;
+  --color-light-alt: #fafafa;
+
+  /* Ink — primary text color. */
+  --color-ink: #1a1a1a;
+  --color-ink-dark: #000000;
+
+  /* Mist — secondary text color. */
+  --color-mist: #666666;
+  --color-mist-dark: #4d4d4d;
+
+  /* Muted — lightest text. */
+  --color-muted: #b3b3b3;
+
+  /* Primary scale — yellow for buttons/accents. */
+  --color-primary-50: #fffcda;
+  --color-primary-100: #fff8b0;
+  --color-primary-200: #ffef66;
+  --color-primary-300: #ffe533;
+  --color-primary-400: #fcd307;
+  --color-primary-500: #e5be06;
+  --color-primary-600: #cca805;
+  --color-primary-700: #9e8204;
+  --color-primary-800: #705c03;
+  --color-primary-900: #423702;
+
+  /* Fonts: Poppins (headings) + Work Sans (body). */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
