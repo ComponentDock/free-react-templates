@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-coral: #e07060;
+  --color-brand-coral-dark: #c95a4a;
+  --color-bg-page: #f5f5f5;
+  --color-text-primary: #222222;
+  --color-text-secondary: #999999;
+  --color-text-input: #333333;
+  --color-input-border: #e0e0e0;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+}
