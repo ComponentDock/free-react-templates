@@ -75,106 +75,130 @@ submit button.
 
 ## Design tokens (from screenshot analysis)
 
-| Token          | Value / Description                                    | Use                                                        |
-| -------------- | ------------------------------------------------------ | ---------------------------------------------------------- |
-| Page bg        | ~`#F5F5F5` (light gray)                               | Full-viewport background                                   |
-| Left panel bg  | ~`#1a1a2e` or `#2d2d3f` (dark navy/charcoal)          | Contact info panel background                              |
-| Left panel img | Dark architectural/building photo                      | Background image overlay on left panel                     |
-| Brand accent   | ~`#28a745` or `#2ecc71` (green)                       | Links in left panel + submit button                        |
-| Card bg (right)| `#FFFFFF`                                              | Form panel background                                      |
-| Card shadow    | ~`0 2px 12px rgba(0,0,0,0.08)` (estimated)            | Container elevation                                        |
-| Heading text   | ~`#333333` (dark gray)                                | "Send Us A Message" + contact info headings                |
-| Label text     | ~`#666666` (medium gray), uppercase, small (~11–12px) | Form field labels                                          |
-| Input border   | ~`#E5E7EB` (light gray)                               | Field borders                                              |
-| Input text     | ~`#999999` (placeholder gray)                         | Placeholder text                                           |
-| Body text      | ~`#333333` or `#555555`                               | Address text, general text                                 |
-| Button bg      | ~`#28a745` (green)                                     | Submit button                                              |
-| Button text    | `#FFFFFF`                                              | Submit button text                                         |
-| Button radius  | ~4px                                                   | Slight rounding                                            |
-| Font family    | Sans-serif (system or Google Font like Open Sans)      | All text                                                   |
-| Icons          | White on dark panel, small, inline with headings       | MapPin, Phone, Mail                                        |
+| Token           | Value / Description                                   | Use                                         |
+| --------------- | ----------------------------------------------------- | ------------------------------------------- |
+| Page bg         | ~`#F5F5F5` (light gray)                               | Full-viewport background                    |
+| Left panel bg   | ~`#1a1a2e` or `#2d2d3f` (dark navy/charcoal)          | Contact info panel background               |
+| Left panel img  | Dark architectural/building photo                     | Background image overlay on left panel      |
+| Brand accent    | ~`#28a745` or `#2ecc71` (green)                       | Links in left panel + submit button         |
+| Card bg (right) | `#FFFFFF`                                             | Form panel background                       |
+| Card shadow     | ~`0 2px 12px rgba(0,0,0,0.08)` (estimated)            | Container elevation                         |
+| Heading text    | ~`#333333` (dark gray)                                | "Send Us A Message" + contact info headings |
+| Label text      | ~`#666666` (medium gray), uppercase, small (~11–12px) | Form field labels                           |
+| Input border    | ~`#E5E7EB` (light gray)                               | Field borders                               |
+| Input text      | ~`#999999` (placeholder gray)                         | Placeholder text                            |
+| Body text       | ~`#333333` or `#555555`                               | Address text, general text                  |
+| Button bg       | ~`#28a745` (green)                                    | Submit button                               |
+| Button text     | `#FFFFFF`                                             | Submit button text                          |
+| Button radius   | ~4px                                                  | Slight rounding                             |
+| Font family     | Sans-serif (system or Google Font like Open Sans)     | All text                                    |
+| Icons           | White on dark panel, small, inline with headings      | MapPin, Phone, Mail                         |
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
-Feature: Relaybox — Contact Form Template
-  As a visitor to a business website
-  I want to send a message via a split-panel contact form
-  So that I can reach the business with my inquiry
+### Requirement: Split-panel contact form layout
 
-  Background:
-    Given the Relaybox page is loaded
+The page SHALL display a two-column centered container on a light gray background, with a narrow dark left panel (~40%) for contact info and a wider white right panel (~60%) for the contact form.
 
-  Scenario: Page loads with light gray background
-    Then the full viewport has a light gray (#F5F5F5) background
+#### Scenario: Page loads with light gray background
 
-  Scenario: Two-column layout is centered on the page
-    Then a centered container with two columns is displayed
-    And the left column is narrower (~40%) with a dark background
-    And the right column is wider (~60%) with a white background
+- **WHEN** the Relaybox page loads
+- **THEN** the full viewport has a light gray (#F5F5F5) background
 
-  Scenario: Left panel displays contact address
-    Then the left panel has a dark background with an architectural image
-    And a map pin icon is displayed
-    And the text "Address" is shown as a heading
-    And the address "Media Center 8th floor, 379 Hudson St, New York, NY 10018 US" is displayed
+#### Scenario: Two-column layout is centered
 
-  Scenario: Left panel displays phone contact
-    Then a phone icon is displayed in the left panel
-    And the text "Lets Talk" is shown as a heading
-    And a green phone number link "+1 800 1236879" is displayed
+- **WHEN** the page renders
+- **THEN** a centered container with two columns is displayed
+- **AND** the left column is narrower with a dark background
+- **AND** the right column is wider with a white background
 
-  Scenario: Left panel displays email contact
-    Then an envelope icon is displayed in the left panel
-    And the text "General Support" is shown as a heading
-    And a green email link "contact@example.com" is displayed
+#### Scenario: Responsive layout on mobile
 
-  Scenario: Form heading is displayed
-    Then the right panel shows "Send Us A Message" as the heading
+- **WHEN** the viewport is narrow (mobile)
+- **THEN** the two columns stack vertically
+- **AND** all fields remain accessible and usable
 
-  Scenario: Name fields render as side-by-side inputs
-    Then a label "TELL US YOUR NAME *" is displayed (uppercase)
-    And two side-by-side text inputs are shown: "First name" and "Last name"
+### Requirement: Left panel contact information
 
-  Scenario: Email field renders with placeholder
-    Then a label "ENTER YOUR EMAIL *" is displayed (uppercase)
-    And the email field has placeholder "Eg. example@email.com"
-    And the email field has type "email"
+The left panel SHALL display three contact blocks: address with map pin icon, phone with phone icon, and email with envelope icon. Phone and email links SHALL use the green accent color.
 
-  Scenario: Phone field renders with placeholder (optional)
-    Then a label "ENTER PHONE NUMBER" is displayed (uppercase, no asterisk)
-    And the phone field has placeholder "Eg. +1 800 000000"
+#### Scenario: Left panel displays contact address
 
-  Scenario: Message field renders as textarea
-    Then a label "MESSAGE *" is displayed (uppercase)
-    And the message field is a textarea with placeholder "Write us a message"
+- **WHEN** the left panel renders
+- **THEN** a map pin icon is displayed
+- **AND** the text "Address" is shown as a heading
+- **AND** the address "Media Center 8th floor, 379 Hudson St, New York, NY 10018 US" is displayed
 
-  Scenario: Required field validation on submit
-    Given the name fields are empty
-    And the email field is empty
-    When the user clicks "SEND MESSAGE"
-    Then the form shows validation errors on required fields
-    And the form does not submit
+#### Scenario: Left panel displays phone contact
 
-  Scenario: Successful form submission
-    Given valid name, email, and message are entered
-    When the user clicks "SEND MESSAGE"
-    Then a success confirmation is displayed
+- **WHEN** the left panel renders
+- **THEN** a phone icon is displayed
+- **AND** the text "Lets Talk" is shown as a heading
+- **AND** a green phone number link "+1 800 1236879" is displayed
 
-  Scenario: Submit button styling
-    Then the "SEND MESSAGE" button is green with white uppercase text
-    And the button has slightly rounded corners
-    And the button is centered below the form
+#### Scenario: Left panel displays email contact
 
-  Scenario: Responsive layout on mobile
-    When the viewport is narrow (mobile)
-    Then the two columns stack vertically
-    And all fields remain accessible and usable
+- **WHEN** the left panel renders
+- **THEN** an envelope icon is displayed
+- **AND** the text "General Support" is shown as a heading
+- **AND** a green email link "contact@example.com" is displayed
 
-  Scenario: Footer Component Dock link
-    Then the page footer contains a link to https://www.componentdock.com/
-    And the link text mentions "Component Dock"
-```
+### Requirement: Contact form with fields and submission
+
+The right panel SHALL display a "Send Us A Message" heading and a form with name (first/last side-by-side), email, phone (optional), and message fields, plus a green "SEND MESSAGE" submit button.
+
+#### Scenario: Form heading is displayed
+
+- **WHEN** the right panel renders
+- **THEN** "Send Us A Message" is shown as the heading
+
+#### Scenario: Name fields render as side-by-side inputs
+
+- **WHEN** the form renders
+- **THEN** a label "TELL US YOUR NAME *" is displayed (uppercase)
+- **AND** two side-by-side text inputs are shown: "First name" and "Last name"
+
+#### Scenario: Email field renders with placeholder
+
+- **WHEN** the form renders
+- **THEN** a label "ENTER YOUR EMAIL *" is displayed (uppercase)
+- **AND** the email field has placeholder "Eg. example@email.com"
+- **AND** the email field has type "email"
+
+#### Scenario: Phone field renders with placeholder (optional)
+
+- **WHEN** the form renders
+- **THEN** a label "ENTER PHONE NUMBER" is displayed (uppercase, no asterisk)
+- **AND** the phone field has placeholder "Eg. +1 800 000000"
+
+#### Scenario: Message field renders as textarea
+
+- **WHEN** the form renders
+- **THEN** a label "MESSAGE *" is displayed (uppercase)
+- **AND** the message field is a textarea with placeholder "Write us a message"
+
+#### Scenario: Successful form submission
+
+- **WHEN** valid name, email, and message are entered
+- **AND** the user clicks "SEND MESSAGE"
+- **THEN** a success confirmation is displayed
+
+#### Scenario: Submit button styling
+
+- **WHEN** the form renders
+- **THEN** the "SEND MESSAGE" button is green with white uppercase text
+- **AND** the button has slightly rounded corners
+- **AND** the button is centered below the form
+
+### Requirement: Footer Component Dock link
+
+The page footer SHALL contain a link to https://www.componentdock.com/ branded as "Component Dock".
+
+#### Scenario: Footer Component Dock link
+
+- **WHEN** the page footer renders
+- **THEN** the page contains a link to https://www.componentdock.com/
+- **AND** the link text mentions "Component Dock"
 
 ## Verification checklist
 
