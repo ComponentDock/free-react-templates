@@ -1451,7 +1451,7 @@
 - [x] **Bona** — [colorlib](https://colorlib.com/wp/template/bona/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bona-food-blog-website-template.jpg) · [morsel](https://morsel.free.componentdock.com)
 - [x] **Boxus** — [colorlib](https://colorlib.com/wp/template/boxus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boxus-creative-digital-agency-free-website-template.jpg) · [pixelcraft](https://pixelcraft.free.componentdock.com)
 - [x] **Ca App** — [colorlib](https://colorlib.com/wp/template/ca-app/) · [appnova](https://appnova.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ca-app-showcase-website-template.jpg)
-- [~] **Cocoon** — [colorlib](https://colorlib.com/wp/template/cocoon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cocoon-free-template.jpg)
+- [x] **Cocoon** — [colorlib](https://colorlib.com/wp/template/cocoon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cocoon-free-template.jpg) · [weft](https://free-react-templates-weft.surge.sh)
 - [x] **Colid** — [colorlib](https://colorlib.com/wp/template/colid/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colid-free-app-landing-page-website-template.jpg) · [Colid](https://colid.free.componentdock.com)
 - [ ] **Confpro** — [colorlib](https://colorlib.com/wp/template/confpro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/confpro-free-template.jpg)
 - [x] **Craft** — [colorlib](https://colorlib.com/wp/template/craft/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/craft-free-template.jpg) · [forge](https://forge.free.componentdock.com)
