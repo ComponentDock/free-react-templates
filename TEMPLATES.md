@@ -1447,7 +1447,7 @@
 - [ ] **Akame** — [colorlib](https://colorlib.com/wp/template/akame/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/akame-free-template.jpg)
 - [x] **Bato** — [colorlib](https://colorlib.com/wp/template/bato/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bato-free-template.jpg) · [focal](https://focal.free.componentdock.com)
 - [x] **Bbs** — [colorlib](https://colorlib.com/wp/template/bbs/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bbs-free-small-company-website-template.jpg) · [crux](https://crux.free.componentdock.com)
-- [~] **Bobsled** — [colorlib](https://colorlib.com/wp/template/bobsled/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bobsled-creative-website-template.jpg)
+- [x] **Bobsled** — [colorlib](https://colorlib.com/wp/template/bobsled/) · [glider](https://glider.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bobsled-creative-website-template.jpg)
 - [x] **Bona** — [colorlib](https://colorlib.com/wp/template/bona/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bona-food-blog-website-template.jpg) · [morsel](https://morsel.free.componentdock.com)
 - [ ] **Boxus** — [colorlib](https://colorlib.com/wp/template/boxus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boxus-creative-digital-agency-free-website-template.jpg)
 - [ ] **Ca App** — [colorlib](https://colorlib.com/wp/template/ca-app/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ca-app-showcase-website-template.jpg)
