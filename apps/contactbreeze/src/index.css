@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ContactBreeze brand palette — cyan-to-magenta gradient,
+     brand palette: #00d2ff cyan, #ff00ff magenta. */
+  --color-brand-cyan: #00d2ff;
+  --color-brand-magenta: #ff00ff;
+  --color-brand-heading: #222222;
+  --color-brand-label: #555555;
+  --color-brand-placeholder: #999999;
+  --color-brand-underline: #e0e0e0;
+
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
