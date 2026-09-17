@@ -1434,7 +1434,7 @@
 - [x] **Contact Form V19** — [colorlib](https://colorlib.com/wp/template/contact-form-v19/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v19.jpg) · [jotdown](https://jotdown.free.componentdock.com)
 - [x] **Contact Form V2** — [colorlib](https://colorlib.com/wp/template/contact-form-v2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v2.jpg) · [reachform](https://reachform.free.componentdock.com)
 - [x] **Contact Form V20** — [colorlib](https://colorlib.com/wp/template/contact-form-v20/) · [formcast](https://formcast.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v20.jpg)
-- [ ] **Contact Form V3** — [colorlib](https://colorlib.com/wp/template/contact-form-v3/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v3.jpg)
+- [~] **Contact Form V3** — [colorlib](https://colorlib.com/wp/template/contact-form-v3/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v3.jpg)
 - [ ] **Contact Form V4** — [colorlib](https://colorlib.com/wp/template/contact-form-v4/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v4.jpg)
 - [ ] **Contact Form V5** — [colorlib](https://colorlib.com/wp/template/contact-form-v5/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v5.jpeg)
 - [ ] **Contact Form V6** — [colorlib](https://colorlib.com/wp/template/contact-form-v6/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v6.jpg)
