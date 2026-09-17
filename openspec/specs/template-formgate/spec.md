@@ -1,192 +1,113 @@
-# Template: FormGate (Contact Form)
+# FormGate — Contact Form Template Spec
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 09** — a dark-background contact page
-with a centered header, three-column contact info row (tan/gold circular icons),
-a "Get in touch with us" heading, and a full-width form (Name, Email, Subject,
-Message textarea) with a tan/gold "SEND MESSAGE" button.
-
-- **Source slug:** `contact-form-09`
-- **Source URL:** https://colorlib.com/wp/template/contact-form-09/
-- **Preview URL:** https://preview.colorlib.com/theme/contact-form-09/ (404 at
-  time of prep — design tokens extracted from screenshot)
-- **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
-
-## Design tokens
-
-| Token       | Value                                  | Use                                                        |
-| ----------- | -------------------------------------- | ---------------------------------------------------------- |
-| Page bg     | `#1a1a1a` (near-black)                | Full-viewport solid dark background                        |
-| Brand       | `#c9a96e` (tan/gold)                  | Icon circles, button background, accent highlights         |
-| Ink         | `#ffffff` (white)                      | Headings, body text, label text                            |
-| Muted       | `#aaaaaa` (light gray)                | Placeholder text, secondary info text                      |
-| Input bg    | `#222222` (dark gray)                 | Form field backgrounds (slightly lighter than page)        |
-| Input text  | `#ffffff`                              | Typed text in form fields                                  |
-| Placeholder | `#999999`                             | Input placeholder labels (Name, Email, Subject, Message)   |
-| Button text | `#1a1a1a` (dark)                      | "SEND MESSAGE" button label                                |
-| Font        | Google Fonts 'Open Sans' 400/600/700  | Sans-serif body/heading font                               |
-| Icons       | Circular, 60px diameter, 50% radius   | tan/gold `#c9a96e` background, white lucide icon inside    |
-| Button      | Full-width, no border-radius (rectangular) | tan/gold background, dark uppercase text, ~50px height |
-| Inputs      | Full-width, no visible border, dark bg | Height ~50px, left-aligned placeholder                     |
-| Textarea    | Full-width, no visible border, dark bg | Minimum 120px tall, resizable                              |
+Minimalist single-page contact form recreating ColorLib "Contact Form 19"
+under the original name **FormGate**. A centered white card on a light gray
+background containing a "Get Started" heading and a clean form with
+underline-style inputs, a budget dropdown, message textarea, and a coral
+"SEND MESSAGE" button.
 
 ## Requirements
 
-### Requirement: Page layout
+### Requirement: Renders all form fields
 
-The page renders a full-viewport dark background with centered content.
+The form SHALL display Name, Email, Budget, and Message fields with a SEND MESSAGE submit button.
 
-#### Scenario: Dark background displayed
+#### Scenario: All fields visible
 
-- **WHEN** I visit the FormGate page
-- **THEN** the page has a near-black background (`#1a1a1a` or equivalent)
+- **GIVEN** the app has loaded
+- **WHEN** the user views the form
+- **THEN** the Name, Email, Budget, and Message fields are visible
+- **AND** the SEND MESSAGE button is visible
 
-#### Scenario: Centered content
+### Requirement: Renders heading
 
-- **WHEN** I visit the FormGate page
-- **THEN** all content is centered horizontally with appropriate max-width and padding
+The form SHALL display a "Get Started" heading above the form fields.
 
-### Requirement: Page title
+#### Scenario: Heading displayed
 
-A large heading displays the template name at the top of the page.
+- **GIVEN** the app has loaded
+- **WHEN** the user views the page
+- **THEN** a "Get Started" heading is visible
 
-#### Scenario: Title displayed
+### Requirement: Updates Name input
 
-- **WHEN** I visit the FormGate page
-- **THEN** I see a centered heading with the template name in white text
+The Name field SHALL accept and display typed text.
 
-### Requirement: Contact info row
+#### Scenario: User types name
 
-Three columns display contact information (Address, Phone, Email) with circular tan/gold icons.
+- **GIVEN** the form is displayed
+- **WHEN** the user types "Alice" into the Name field
+- **THEN** the Name field contains "Alice"
 
-#### Scenario: Three columns rendered
+### Requirement: Updates Email input
 
-- **WHEN** I visit the FormGate page
-- **THEN** I see three columns arranged horizontally, centered on the page
+The Email field SHALL accept and display typed email addresses.
 
-#### Scenario: Address column
+#### Scenario: User types email
 
-- **WHEN** I visit the FormGate page
-- **THEN** the left column shows a circular tan/gold icon (location pin), "Address:" label, and address text "198 West 21th Street, Suite 721 New York NY 10016"
+- **GIVEN** the form is displayed
+- **WHEN** the user types "alice@example.com" into the Email field
+- **THEN** the Email field contains "alice@example.com"
 
-#### Scenario: Phone column
+### Requirement: Updates Budget select
 
-- **WHEN** I visit the FormGate page
-- **THEN** the center column shows a circular tan/gold icon (phone), "Phone:" label, and phone number "+ 1235 2355 98"
+The Budget dropdown SHALL allow selecting from predefined budget ranges.
 
-#### Scenario: Email column
+#### Scenario: User selects budget
 
-- **WHEN** I visit the FormGate page
-- **THEN** the right column shows a circular tan/gold icon (paper plane), "Email:" label, and email "info@yoursite.com"
+- **GIVEN** the form is displayed
+- **WHEN** the user selects "Low" from the Budget dropdown
+- **THEN** the Budget dropdown shows "Low"
 
-#### Scenario: Icon circles styled
+### Requirement: Updates Message textarea
 
-- **WHEN** I visit the FormGate page
-- **THEN** each contact icon is displayed inside a 60px diameter circle with tan/gold background and a white icon
+The Message field SHALL accept and display typed text.
 
-#### Scenario: Contact labels styled
+#### Scenario: User types message
 
-- **WHEN** I visit the FormGate page
-- **THEN** each contact label ("Address:", "Phone:", "Email:") is in tan/gold color, bold
+- **GIVEN** the form is displayed
+- **WHEN** the user types "Hello there" into the Message field
+- **THEN** the Message field contains "Hello there"
 
-#### Scenario: Contact values styled
+### Requirement: Prevents default form submission
 
-- **WHEN** I visit the FormGate page
-- **THEN** each contact value (address, phone number, email) is in white or light gray text
+Clicking SEND MESSAGE SHALL prevent the browser's default form submission.
 
-### Requirement: Form heading
+#### Scenario: Submit click
 
-A heading separates the contact info from the form.
+- **GIVEN** the form is displayed
+- **WHEN** the user clicks the SEND MESSAGE button
+- **THEN** the form does not navigate
 
-#### Scenario: Form heading displayed
+### Requirement: Has underline-style inputs
 
-- **WHEN** I visit the FormGate page
-- **THEN** I see a "Get in touch with us" heading in white text, centered above the form
+All text inputs and the textarea SHALL use bottom-border underline styling.
 
-### Requirement: Contact form
+#### Scenario: Input border style
 
-The page contains a contact form with four fields and a submit button.
+- **GIVEN** the form is displayed
+- **WHEN** the user inspects the Name input
+- **THEN** it has a bottom border class
 
-#### Scenario: Name input field
+### Requirement: Has coral send button
 
-- **WHEN** I visit the FormGate page
-- **THEN** I see a full-width Name input field with placeholder text "Name"
+The SEND MESSAGE button SHALL have a coral/salmon background color.
 
-#### Scenario: Email input field
+#### Scenario: Button color
 
-- **WHEN** I visit the FormGate page
-- **THEN** I see a full-width Email input field with placeholder text "Email"
+- **GIVEN** the form is displayed
+- **WHEN** the user inspects the SEND MESSAGE button
+- **THEN** it has a coral background
 
-#### Scenario: Subject input field
+### Requirement: Footer links to Component Dock
 
-- **WHEN** I visit the FormGate page
-- **THEN** I see a full-width Subject input field with placeholder text "Subject"
+The footer SHALL display a "More templates at Component Dock" link pointing to componentdock.com.
 
-#### Scenario: Message textarea
+#### Scenario: Footer link
 
-- **WHEN** I visit the FormGate page
-- **THEN** I see a full-width Message textarea with placeholder text "Message" and at least 120px height
-
-#### Scenario: Form fields styled consistently
-
-- **WHEN** I visit the FormGate page
-- **THEN** all input fields have a dark gray background (slightly lighter than page), no visible border, and white/gray placeholder text
-
-#### Scenario: Send Message button
-
-- **WHEN** I visit the FormGate page
-- **THEN** I see a full-width "SEND MESSAGE" button with tan/gold background and dark uppercase text
-
-### Requirement: Footer
-
-The page footer links to Component Dock.
-
-#### Scenario: Component Dock link
-
-- **WHEN** I visit the FormGate page
-- **THEN** I see "More templates at Component Dock" with a link to https://www.componentdock.com/
-
-### Requirement: Form interactivity
-
-The form fields accept user input and the form submits without error.
-
-#### Scenario: Typing in Name field
-
-- **WHEN** I type into the Name field
-- **THEN** the field value updates to reflect my input
-
-#### Scenario: Typing in Email field
-
-- **WHEN** I type into the Email field
-- **THEN** the field value updates to reflect my input
-
-#### Scenario: Typing in Subject field
-
-- **WHEN** I type into the Subject field
-- **THEN** the field value updates to reflect my input
-
-#### Scenario: Typing in Message field
-
-- **WHEN** I type into the Message textarea
-- **THEN** the field value updates to reflect my input
-
-#### Scenario: Form submission
-
-- **WHEN** I click the Send Message button
-- **THEN** the form submits without throwing an error
-
-## Verification checklist
-
-- [ ] Page renders with dark background
-- [ ] Title heading is centered and white
-- [ ] Three-column contact info row with circular icons
-- [ ] "Get in touch with us" heading displayed
-- [ ] Four form fields (Name, Email, Subject, Message) with correct placeholders
-- [ ] Full-width tan/gold SEND MESSAGE button
-- [ ] Form accepts input in all fields
-- [ ] Form submits without error
-- [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
-- [ ] `public/CNAME` = `formgate.free.componentdock.com`
-- [ ] `homepage` = `https://formgate.free.componentdock.com`
+- **GIVEN** the page is displayed
+- **WHEN** the user scrolls to the footer
+- **THEN** a "Component Dock" link is visible
+- **AND** the link points to https://www.componentdock.com/
