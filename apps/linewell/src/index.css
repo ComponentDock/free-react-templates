@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-green: #4caf50;
+  --color-brand-green-hover: #43a047;
+  --color-bg-dark: #2c2c3a;
+  --color-text-heading: #333333;
+  --color-text-label: #555555;
+  --color-text-body: #999999;
+  --color-input-border: #cccccc;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
