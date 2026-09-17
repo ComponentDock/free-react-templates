@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-coral: #ff6b6b;
+  --color-brand-pink: #ff3cac;
+  --color-brand-green: #4caf50;
+  --color-heading: #222222;
+  --color-label: #333333;
+  --color-placeholder: #999999;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
