@@ -1,161 +1,162 @@
-# Template: PixelCraft (Digital Agency)
+# Template: Pixelcraft (Creative Agency Landing)
 
 ## Purpose
 
-Recreation of ColorLib's **Datarc** digital agency website template.
+Pixelcraft is a single-page creative digital agency template — a React recreation
+of the ColorLib free "Boxus" template
+(preview: https://preview.colorlib.com/theme/boxus/), built under a different name
+with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-- Source slug: `datarc`
-- Source URL: https://colorlib.com/wp/template/datarc/
-- Preview URL: https://preview.colorlib.com/theme/datarc/ (200 — live)
-- Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/datarc-digital-agency-free-website-template.jpg
-- Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript
-- New name: **pixelcraft** (`apps/pixelcraft`, `@free-react-templates/pixelcraft`)
-- Footer link: https://www.componentdock.com/ ("Component Dock")
+Design tokens captured from the original:
 
-## Design tokens (extracted from live preview CSS)
+- Primary dark: `#221c5a` (navy — menu bg, hero bg, footer bg)
+- Body text: `#23214c`
+- Link hover: `#ee87a4`
+- Section title block: `#32DB8A` (green, 370×370)
+- Section number color: `#55B286`
+- Brand pink: `#e54b76` (accent)
+- Timeline yellow: `#FFBA42`
+- Progress bar colors: green `#32DB8A`, yellow `#FFBB42`, pink `#E74C78`, blue `#4C9EE7`
+- Gray text: `#727190`
+- Fonts: Montserrat (headings/hero, weight 700), Roboto (body, weights 300/400/700), PT Serif (subtitle, weight 400)
 
-### Colors
+Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons.
 
-| Token             | Value   | Usage                                           |
-| ----------------- | ------- | ----------------------------------------------- |
-| brand-primary     | #4a4fad | Nav background, overlay gradient start, dark bg |
-| brand-primary-end | #5b61cf | Overlay gradient end                            |
-| accent-green      | #00ff8c | Buttons, highlights, active states, links       |
-| text-dark         | #222222 | Headings, body text, dark section bg            |
-| text-body         | #777777 | Body text, descriptions                         |
-| text-white        | #ffffff | Text on dark/overlay backgrounds                |
-| bg-light          | #f9f9ff | Gray-bg sections (about, contact)               |
-| bg-dark           | #222222 | Title-bg sections, dark overlays                |
+Pixelcraft lives in `apps/pixelcraft` and uses shared components from `packages/ui`
+(Button, cn).
 
-### Fonts
+## Requirements
 
-| Role     | Family              | Weight     |
-| -------- | ------------------- | ---------- |
-| Body     | Poppins, sans-serif | 400        |
-| Headings | Poppins, sans-serif | 600 (semi) |
+### Requirement: Navigation bar
 
-### Button style
+The system SHALL render a dark navy navbar with the site name "Pixelcraft", section
+links (Home, Services, Portfolio, About, Stories, Contact), and a hamburger toggle
+that opens a mobile menu on small screens.
 
-- Shape: pill / rounded rectangle (border-radius: 20px)
-- Padding: 0 40px, line-height 40px
-- Default: transparent background, #222222 text, bordered
-- Hover: solid #00ff8c background, white text, purple box-shadow (0 10px 20px rgba(60,64,143,0.2))
-- Banner variant: white text, transparent bg, green hover
+#### Scenario: Desktop navigation
 
-### Section backgrounds
+- **GIVEN** the page is rendered
+- **WHEN** the navbar is displayed
+- **THEN** it SHALL show the site name "Pixelcraft" linking to `#home`
+- **AND** it SHALL show links to Home, Services, Portfolio, About, Stories and Contact
 
-- Header/Nav: sticky, white bg (scroll), logo + nav + search + social
-- Banner/Hero: full-screen background image with dark overlay gradient (linear-gradient left: rgba(60,64,143,0.95) → rgba(91,97,207,0.95))
-- About: light gray bg (#f9f9ff), 3 service image cards with text
-- Services ("Why Choose Us"): dark bg (#222222), 4 feature cards with icons
-- Portfolio: filterable gallery grid (All, Categories, Branding, etc.), 8 items with hover overlay
-- Team: 4 team member cards with images, names, roles
-- Studio/Stats: dark overlay section with counters
-- Clients: logo carousel/grid
-- Blog: 4 blog post cards with images
-- Contact: light gray bg (#f9f9ff), form + address info
-- CTA: gradient banner with CTA button
-- Footer: dark bg, multi-column (about, navigation, newsletter, instafeed)
+#### Scenario: Mobile menu toggle
 
-## Gherkin requirements
+- **GIVEN** the page is rendered
+- **WHEN** the user presses the hamburger toggle
+- **THEN** the mobile menu SHALL become visible and the toggle SHALL report `aria-expanded="true"`
+- **AND** pressing the toggle again SHALL hide the menu
 
-### Feature: PixelCraft — Digital Agency Website
+### Requirement: Hero section
 
-#### Scenario: Navbar displays with logo and navigation links
+The system SHALL render a dark navy hero with a background image, centered logo,
+big title and subtitle.
 
-Given the user is on the homepage
-When they view the navbar
-Then they see the "PixelCraft" logo
-And navigation links: Home, Services, Portfolio, Team, Blog, Contact
-And a search icon and social media icons (Facebook, Twitter, LinkedIn)
+#### Scenario: Hero content
 
-#### Scenario: Hero banner displays with CTA
+- **GIVEN** the page is rendered
+- **WHEN** the hero section is displayed
+- **THEN** it SHALL contain the headline "We Craft Awesome Web And Graphic Design Solutions"
+- **AND** it SHALL contain the subtitle "Support bright students today for a better tomorrow"
 
-Given the user is on the homepage
-When they view the hero banner
-Then they see a full-screen background image with gradient overlay
-And heading "Crafting Digital Agency Experiences"
-And subheading "We work hard, we result perfect"
-And a "Explore Us" button
+### Requirement: Services section
 
-#### Scenario: About section shows service cards
+The system SHALL render a services section with a green title block (number 01) on
+the left and a 2×2 grid of service cards on the right.
 
-Given the user is on the homepage
-When they scroll to the About section
-Then they see a section title "About Our Digital Agency"
-And 3 service image cards with titles and descriptions
-And each card has an "Explore" link
+#### Scenario: Service cards
 
-#### Scenario: Services section shows feature cards
+- **GIVEN** the page is rendered
+- **WHEN** the services section is displayed
+- **THEN** it SHALL show the section number "01" and title "Services" in a green block
+- **AND** it SHALL show 4 service cards: Branding, Mobile Apps, Web, Graphic
+- **AND** each card SHALL have an icon, title and description
 
-Given the user is on the homepage
-When they scroll to the Services section
-Then they see a dark background section
-And heading "We ensure perfect quality Digital products for you"
-And 4 feature cards with icons: Unique Design, Appropriate UX, Perfect Visual, Different Layout
+### Requirement: Portfolio section
 
-#### Scenario: Portfolio section displays filterable gallery
+The system SHALL render a portfolio section with a green title block (number 02) on
+the right and a grid of portfolio items with hover overlays.
 
-Given the user is on the homepage
-When they scroll to the Portfolio section
-Then they see filter tabs: All, Categories, Branding, Image Manipulation, Creative Work, Web Design, Print Material
-And a grid of 8 portfolio items with hover overlay showing title and category
+#### Scenario: Portfolio grid
 
-#### Scenario: Team section displays team members
+- **GIVEN** the page is rendered
+- **WHEN** the portfolio section is displayed
+- **THEN** it SHALL show the section number "02" and title "Portfolio" in a green block
+- **AND** it SHALL show at least 4 portfolio items with images
+- **AND** each item SHALL display a type label and title on hover
 
-Given the user is on the homepage
-When they scroll to the Team section
-Then they see heading "Creative People"
-And 4 team member cards with images, names, and roles
-And social media icons for each member
+### Requirement: About / Crafters section
 
-#### Scenario: Studio section shows stats counters
+The system SHALL render an about section with a green title block (number 03) on the
+left, about text, a timeline and team member cards.
 
-Given the user is on the homepage
-When they scroll to the Studio section
-Then they see a dark overlay background
-And heading "A Digital Studio Crafting Tech Business"
-And descriptive text
-And a "Start Business" CTA button
+#### Scenario: Team members
 
-#### Scenario: Blog section displays posts
+- **GIVEN** the page is rendered
+- **WHEN** the about section is displayed
+- **THEN** it SHALL show the section number "03" and title "Crafters"
+- **AND** it SHALL show at least 3 team member cards with name and position
 
-Given the user is on the homepage
-When they scroll to the Blog section
-Then they see heading "Latest From Blog"
-And 4 blog post cards with images, titles, dates, and excerpts
+### Requirement: Stories section
 
-#### Scenario: Contact section has form and info
+The system SHALL render a stories/news section with a green title block (number 04)
+on the right and numbered blog posts.
 
-Given the user is on the homepage
-When they scroll to the Contact section
-Then they see a contact form with fields
-And physical address and web contact information
+#### Scenario: Blog posts
 
-#### Scenario: CTA banner encourages action
+- **GIVEN** the page is rendered
+- **WHEN** the stories section is displayed
+- **THEN** it SHALL show the section number "04" and title "Stories"
+- **AND** it SHALL show at least 3 blog posts with titles
 
-Given the user is on the homepage
-When they scroll to the CTA section
-Then they see heading "Not yet convinced with our quality?"
-And a CTA button
+### Requirement: Offer section
 
-#### Scenario: Footer displays multi-column layout
+The system SHALL render an offer/video section with a green title block (number 05) on
+the left, a video thumbnail and an icon carousel.
 
-Given the user is on the homepage
-When they scroll to the footer
-Then they see columns: About Agency, Navigation Links, Newsletter, Instafeed
-And copyright notice with Component Dock link
+#### Scenario: Video and carousel
 
-#### Scenario: Responsive navigation
+- **GIVEN** the page is rendered
+- **WHEN** the offer section is displayed
+- **THEN** it SHALL show the section number "05" and title "Offer"
+- **AND** it SHALL show a video thumbnail with a play button
+- **AND** it SHALL show at least 4 carousel items
 
-Given the user is on a mobile device
-When they view the navbar
-Then the navigation collapses into a hamburger menu
-And the menu expands on tap
+### Requirement: Expertise section
 
-## Verification checklist
+The system SHALL render a skills/expertise section with a green title block (number 06)
+on the right and progress bars.
 
-- [ ] Spec reviewed and matches live preview structure
-- [ ] All design tokens extracted and documented
-- [ ] Gherkin scenarios cover all sections
-- [ ] Component breakdown defined in docs/templates/pixelcraft/tasks.md
+#### Scenario: Progress bars
+
+- **GIVEN** the page is rendered
+- **WHEN** the expertise section is displayed
+- **THEN** it SHALL show the section number "06" and title "Expertise"
+- **AND** it SHALL show progress bars for HTML, CSS, PSD and Design
+- **AND** each bar SHALL display a percentage label
+
+### Requirement: Contact section
+
+The system SHALL render a contact section with a green title block (number 07) on the
+left, descriptive text, a form and an embedded map.
+
+#### Scenario: Contact form
+
+- **GIVEN** the page is rendered
+- **WHEN** the contact section is displayed
+- **THEN** it SHALL show the section number "07" and title "Contact"
+- **AND** it SHALL show a form with Name, Email, Subject and Message fields
+- **AND** it SHALL show a Send button
+
+### Requirement: Footer
+
+The system SHALL render a dark navy footer with copyright text, social icons and a
+link to Component Dock.
+
+#### Scenario: Footer content
+
+- **GIVEN** the page is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL show copyright text containing "Pixelcraft"
+- **AND** it SHALL show social links for Twitter, Behance, Dribbble and Facebook
+- **AND** it SHALL link to https://www.componentdock.com/ branded "Component Dock"
