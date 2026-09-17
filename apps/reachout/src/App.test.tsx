@@ -3,23 +3,18 @@ import { render, screen } from '@testing-library/react'
 import { App } from './App'
 
 describe('App', () => {
-  it('renders the main layout with two columns', () => {
+  it('renders the full contact page', () => {
     render(<App />)
-    expect(screen.getByRole('main')).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Get In Touch')
+    expect(screen.getByText('Contact Information')).toBeInTheDocument()
+    expect(screen.getByText('Send a Message')).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /send message/i })).toBeInTheDocument()
   })
 
-  it('renders contact info on the left', () => {
+  it('links to Component Dock in the footer', () => {
     render(<App />)
-    expect(screen.getByRole('heading', { name: /contact info/i })).toBeInTheDocument()
-  })
-
-  it('renders the form on the right', () => {
-    render(<App />)
-    expect(screen.getByRole('heading', { name: /send us a message/i })).toBeInTheDocument()
-  })
-
-  it('renders the footer', () => {
-    render(<App />)
-    expect(screen.getByText(/more templates at/i)).toBeInTheDocument()
+    const link = screen.getByRole('link', { name: /component dock/i })
+    expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
+    expect(link).toHaveAttribute('target', '_blank')
   })
 })
