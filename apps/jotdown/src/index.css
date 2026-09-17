@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand blue — from the original ColorLib Contact Form V19 design. */
+  --color-brand: #3563e9;
+  --color-brand-dark: #2948b8;
+
+  /* Text colors. */
+  --color-ink: #2d3748;
+  --color-body: #a0aec0;
+
+  /* Input borders. */
+  --color-border: #e2e8f0;
+  --color-error: #f44336;
+
+  /* Card. */
+  --color-card: #ffffff;
+
+  /* Map overlay tint. */
+  --color-map-tint: #e8edf5;
+
+  /* Font. */
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
