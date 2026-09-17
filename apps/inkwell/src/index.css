@@ -1,28 +1,16 @@
 @import 'tailwindcss';
 
-/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
-   prefers-color-scheme; the app toggles a .dark class instead. */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Inkwell brand palette — recreated from the ColorLib "Axole" template.
-     Gold #f4bf2c (links, newsletter band, meta icons, hover underlines),
-     ink #111111 (navbar brand, buttons, headings, copyright bar), title
-     gray #444444 (giant wordmark + blog titles), muted #919191 (tagline),
-     surfaces #f8f9fa (blog feed) / #eeeeee (footer) / #c4c4c4 (social
-     chips) / #666666 footer links / #999999 footer meta. */
-  --color-brand: #f4bf2c;
-  --color-ink: #111111;
-  --color-title: #444444;
-  --color-muted: #919191;
-  --color-surface: #f8f9fa;
-  --color-footer: #eeeeee;
-  --color-chip: #c4c4c4;
-  --color-link: #666666;
-  --color-meta: #999999;
-
-  /* Poppins (200–800) — Google Fonts via index.html */
-  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --color-brand: #4a90d9;
+  --color-brand-dark: #3a7bc8;
+  --color-bg-page: #f5f7fa;
+  --color-text-heading: #2d3748;
+  --color-text-body: #4a5568;
+  --color-text-placeholder: #a0aec0;
+  --color-input-border: #e2e8f0;
+  --color-card: #ffffff;
 }
 
 @layer base {
@@ -30,11 +18,6 @@
     scroll-behavior: smooth;
   }
   body {
-    background: #fff;
-    color: #111111;
-  }
-  ::selection {
-    background: #f4bf2c;
-    color: #111111;
+    font-family: 'Inter', sans-serif;
   }
 }
