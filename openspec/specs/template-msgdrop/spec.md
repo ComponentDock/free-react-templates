@@ -9,138 +9,121 @@ Recreation of ColorLib **Contact Form V13** as a React 19 + Vite + Tailwind 4 + 
 - **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v13.jpg
 - **Description**: A split-screen contact form with a dark map background on the left and a clean white form panel on the right. Features a green phone number badge overlay on the map, validated form fields with colored underlines, and a gradient coral-to-pink Send button.
 
-## Design Tokens
+## Requirements
 
-Extracted from the screenshot analysis (preview unavailable):
+### Requirement: Split-screen contact form layout
 
-| Token | Value | Notes |
-|---|---|---|
-| Background (left panel) | Dark map image | Satellite/streets map of NYC area, dark theme — use a placeholder map image (`https://picsum.photos/seed/msgdrop-map/960/939`) |
-| Phone badge background | `#4CAF50` (green) | Pill-shaped, white text, phone icon |
-| Form background | `#FFFFFF` (white) | Right panel |
-| Heading color | `#222222` | "Contact Us" — large, bold |
-| Label color | `#333333` | Field labels ("Name", "Email", etc.) |
-| Input text color | `#333333` | Filled field text |
-| Placeholder color | `#999999` | "Phone Number...", "Questions/Comments..." |
-| Focus/active underline | `#FF6B6B` (coral red) | Bottom border on form fields |
-| Send button gradient | `#FF6B6B` → `#FF3CAC` (coral to pink) | Linear gradient left-to-right |
-| Send button text | `#FFFFFF` | White |
-| Send button shape | Pill / fully rounded | `border-radius: 50px` |
-| Validated checkmark | `#4CAF50` (green) | Appears on validated fields |
-| Font family | System sans-serif (Roboto-like) | Clean, modern sans-serif |
+The page SHALL display a split-screen layout with a map panel on the left and a contact form on the right.
 
-## Gherkin Requirements
+#### Scenario: Full-page split layout
 
-### Section: Split-Screen Layout
+- **WHEN** the user loads the MsgDrop page
+- **THEN** the viewport is split into two equal columns
+- **AND** the left column displays a dark map background image
+- **AND** the right column displays a white form panel
 
-```gherkin
-Feature: Split-screen contact form layout
+#### Scenario: Responsive layout on mobile
 
-  Scenario: Full-page split layout
-    Given the user loads the MsgDrop page
-    Then the viewport is split into two equal columns
-    And the left column displays a dark map background image
-    And the right column displays a white form panel
+- **WHEN** the user views on a viewport width less than 768px
+- **THEN** the two columns stack vertically
+- **AND** the map section appears above the form
 
-  Scenario: Responsive layout on mobile
-    Given the user views on a viewport width less than 768px
-    Then the two columns stack vertically
-    And the map section appears above the form
-```
+### Requirement: Map panel with phone badge
 
-### Section: Map Panel (Left)
+The left panel SHALL display a dark map background with a green phone badge overlay.
 
-```gherkin
-Feature: Map panel with phone badge
+#### Scenario: Phone badge display
 
-  Scenario: Phone badge display
-    Given the user views the map panel
-    Then a green pill-shaped badge is visible on the map
-    And the badge displays a phone number "(+00) 345 6389"
-    And the badge includes a phone icon to the left of the number
+- **WHEN** the user views the map panel
+- **THEN** a green pill-shaped badge is visible on the map
+- **AND** the badge displays a phone number "(+00) 345 6389"
+- **AND** the badge includes a phone icon to the left of the number
 
-  Scenario: Phone badge hover
-    Given the user hovers over the phone badge
-    Then the badge shows a subtle hover effect (opacity or scale change)
-```
+#### Scenario: Phone badge hover
 
-### Section: Contact Form (Right)
+- **WHEN** the user hovers over the phone badge
+- **THEN** the badge shows a subtle hover effect (opacity or scale change)
 
-```gherkin
-Feature: Contact form fields
+### Requirement: Contact form fields
 
-  Scenario: Form heading
-    Given the user views the form panel
-    Then a heading "Contact Us" is displayed at the top
-    And the heading is large, bold, and dark colored
+The right panel SHALL display a form with Name, Email, Phone, and Message fields.
 
-  Scenario: Name field
-    Given the user views the Name field
-    Then a "Name" label is displayed above the input
-    And the input has a bottom border line
-    And the input shows placeholder or filled text
+#### Scenario: Form heading
 
-  Scenario: Email field
-    Given the user views the Email field
-    Then an "Email" label is displayed above the input
-    And the input has a bottom border line
-    And the input shows placeholder or filled text
+- **WHEN** the user views the form panel
+- **THEN** a heading "Contact Us" is displayed at the top
+- **AND** the heading is large, bold, and dark colored
 
-  Scenario: Phone field
-    Given the user views the Phone field
-    Then a "Phone" label is displayed above the input
-    And the input shows placeholder "Phone Number..."
-    And the input has a bottom border line
+#### Scenario: Name field
 
-  Scenario: Message field
-    Given the user views the Message field
-    Then a "Message" label is displayed above the textarea
-    And the textarea shows placeholder "Questions/Comments..."
-    And the textarea has a bottom border line
+- **WHEN** the user views the Name field
+- **THEN** a "Name" label is displayed above the input
+- **AND** the input has a bottom border line
 
-  Scenario: Field focus underline
-    Given the user clicks into any form field
-    Then the bottom border turns coral/red (#FF6B6B)
-    And the border remains coral/red while the field is focused
+#### Scenario: Email field
 
-  Scenario: Field validation checkmark
-    Given the user fills in a valid Name or Email value
-    Then a green checkmark icon appears to the right of the field
-```
+- **WHEN** the user views the Email field
+- **THEN** an "Email" label is displayed above the input
+- **AND** the input has a bottom border line
 
-### Section: Send Button
+#### Scenario: Phone field
 
-```gherkin
-Feature: Send button
+- **WHEN** the user views the Phone field
+- **THEN** a "Phone" label is displayed above the input
+- **AND** the input shows placeholder "Phone Number..."
+- **AND** the input has a bottom border line
 
-  Scenario: Button display
-    Given the user views the form
-    Then a "Send" button is displayed at the bottom of the form
-    And the button has a coral-to-pink gradient background
-    And the button text is white
-    And the button is fully rounded (pill shape)
+#### Scenario: Message field
 
-  Scenario: Button hover
-    Given the user hovers over the Send button
-    Then the button shows a hover effect (brightness change or scale)
+- **WHEN** the user views the Message field
+- **THEN** a "Message" label is displayed above the textarea
+- **AND** the textarea shows placeholder "Questions/Comments..."
+- **AND** the textarea has a bottom border line
 
-  Scenario: Button click
-    Given the user fills all required fields
-    When the user clicks the Send button
-    Then the form submission is handled (prevent default, show confirmation)
-```
+#### Scenario: Field focus underline
 
-### Section: Footer
+- **WHEN** the user clicks into any form field
+- **THEN** the bottom border turns coral/red (#FF6B6B)
+- **AND** the border remains coral/red while the field is focused
 
-```gherkin
-Feature: Footer attribution
+#### Scenario: Field validation checkmark
 
-  Scenario: Component Dock link
-    Given the user scrolls to the bottom of the page
-    Then a footer or attribution line is visible
-    And it links to https://www.componentdock.com/
-    And the link text reads "Component Dock"
-```
+- **WHEN** the user fills in a valid Name or Email value
+- **THEN** a green checkmark icon appears to the right of the field
+
+### Requirement: Send button
+
+The form SHALL include a Send button with gradient styling.
+
+#### Scenario: Button display
+
+- **WHEN** the user views the form
+- **THEN** a "Send" button is displayed at the bottom of the form
+- **AND** the button has a coral-to-pink gradient background
+- **AND** the button text is white
+- **AND** the button is fully rounded (pill shape)
+
+#### Scenario: Button hover
+
+- **WHEN** the user hovers over the Send button
+- **THEN** the button shows a hover effect (brightness change or scale)
+
+#### Scenario: Button click
+
+- **WHEN** the user fills all required fields
+- **AND** the user clicks the Send button
+- **THEN** the form submission is handled (prevent default, show confirmation)
+
+### Requirement: Footer attribution
+
+The page SHALL include a footer with a Component Dock link.
+
+#### Scenario: Component Dock link
+
+- **WHEN** the user scrolls to the bottom of the page
+- **THEN** a footer or attribution line is visible
+- **AND** it links to https://www.componentdock.com/
+- **AND** the link text reads "Component Dock"
 
 ## Verification Checklist
 
