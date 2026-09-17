@@ -2,8 +2,9 @@ import { useState } from 'react'
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
-    name: '',
+    fullName: '',
     email: '',
+    subject: '',
     message: '',
   })
 
@@ -16,39 +17,69 @@ export function ContactForm() {
   }
 
   return (
-    <div className="mx-4 my-8 rounded bg-white p-8 shadow-[0_15px_30px_0_rgba(0,0,0,0.2)] md:mx-8 md:my-12 md:p-10 lg:mx-12 lg:my-16">
-      <h3 className="mb-8 text-center text-xs font-normal uppercase tracking-widest text-section-heading">
-        Send us a message
-      </h3>
-      <form onSubmit={handleSubmit} className="space-y-4">
+    <>
+      <h2 className="mb-6 font-['Playfair_Display',serif] text-2xl font-bold text-text-primary">
+        Send a Message
+      </h2>
+      <form onSubmit={handleSubmit} className="space-y-5">
+        <div className="flex flex-col gap-5 sm:flex-row">
+          <div className="flex-1">
+            <label
+              htmlFor="fullName"
+              className="mb-1 block text-xs font-semibold uppercase tracking-wider text-text-label"
+            >
+              Full Name
+            </label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              value={formData.fullName}
+              onChange={handleChange}
+              placeholder="Name"
+              className="w-full border-b border-gray-300 bg-transparent py-2 text-sm text-text-primary placeholder-text-secondary outline-none focus:border-brand"
+            />
+          </div>
+          <div className="flex-1">
+            <label
+              htmlFor="email"
+              className="mb-1 block text-xs font-semibold uppercase tracking-wider text-text-label"
+            >
+              Email Address
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Email"
+              className="w-full border-b border-gray-300 bg-transparent py-2 text-sm text-text-primary placeholder-text-secondary outline-none focus:border-brand"
+            />
+          </div>
+        </div>
         <div>
-          <label htmlFor="name" className="mb-1 block text-sm font-medium text-text-label">
-            Name
+          <label
+            htmlFor="subject"
+            className="mb-1 block text-xs font-semibold uppercase tracking-wider text-text-label"
+          >
+            Subject
           </label>
           <input
             type="text"
-            id="name"
-            name="name"
-            value={formData.name}
+            id="subject"
+            name="subject"
+            value={formData.subject}
             onChange={handleChange}
-            className="h-14 w-full rounded border border-input-border bg-white px-3 text-sm text-text-primary outline-none focus:border-text-primary"
+            placeholder="Subject"
+            className="w-full border-b border-gray-300 bg-transparent py-2 text-sm text-text-primary placeholder-text-secondary outline-none focus:border-brand"
           />
         </div>
         <div>
-          <label htmlFor="email" className="mb-1 block text-sm font-medium text-text-label">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="h-14 w-full rounded border border-input-border bg-white px-3 text-sm text-text-primary outline-none focus:border-text-primary"
-          />
-        </div>
-        <div>
-          <label htmlFor="message" className="mb-1 block text-sm font-medium text-text-label">
+          <label
+            htmlFor="message"
+            className="mb-1 block text-xs font-semibold uppercase tracking-wider text-text-label"
+          >
             Message
           </label>
           <textarea
@@ -56,17 +87,18 @@ export function ContactForm() {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            rows={7}
-            className="w-full resize-y rounded border border-input-border bg-white px-3 py-2 text-sm text-text-primary outline-none focus:border-text-primary"
+            placeholder="Message"
+            rows={5}
+            className="w-full resize-none border-b border-gray-300 bg-transparent py-2 text-sm text-text-primary placeholder-text-secondary outline-none focus:border-brand"
           />
         </div>
         <button
           type="submit"
-          className="h-14 w-full rounded bg-brand py-2 px-4 text-sm font-medium text-white shadow-[0_1px_5px_0_rgba(0,0,0,0.1)] transition-colors hover:bg-brand-dark"
+          className="rounded-[3px] bg-brand px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-brand-dark"
         >
           Send Message
         </button>
       </form>
-    </div>
+    </>
   )
 }
