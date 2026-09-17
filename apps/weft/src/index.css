@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Weft brand colors — from the ColorLib "Cocoon" preview
+     (https://preview.colorlib.com/theme/cocoon/ + css/main.css):
+     a creative agency/portfolio theme with a dark charcoal sidebar #18181c,
+     warm taupe accent #99896e, muted gray body text #9c9ca9,
+     and white content background. */
+  --color-sidebar: #18181c;
+  --color-accent: #99896e;
+  --color-text: #9c9ca9;
+  --color-heading: #18181c;
+  --color-bg: #ffffff;
+  --color-bg-light: #f7f7f7;
+  --color-btn-dark: #18181c;
+  --color-btn-primary: #99896e;
+  --color-white: #ffffff;
+
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
