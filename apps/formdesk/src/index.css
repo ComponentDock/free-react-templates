@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand indigo-blue — from the original Contact Form V18 design. */
+  --color-brand: #5b6abf;
+  --color-brand-dark: #4a59a8;
+  --color-brand-light: #6e7dc9;
+
+  /* Text colors. */
+  --color-ink: #212121;
+  --color-label: #333333;
+  --color-placeholder: #aaaaaa;
+
+  /* Input borders. */
+  --color-border: #e0e0e0;
+  --color-error: #f44336;
+
+  /* Card. */
+  --color-card: #ffffff;
+
+  /* Social icon colors. */
+  --color-facebook: #3b5998;
+  --color-twitter: #1da1f2;
+  --color-instagram: #e1306c;
+
+  /* Original font: "Jost" via Google Fonts (loaded in index.html). */
+  --font-sans: 'Jost', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

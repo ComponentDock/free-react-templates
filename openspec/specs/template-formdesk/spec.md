@@ -17,24 +17,24 @@ the right, finished with social media icons.
 
 Extracted from the ColorLib screenshot (preview unavailable):
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Brand / accent color | `#5b6abf` (indigo-blue) | Submit button background, dropdown highlight |
-| Page background | `#ffffff` (white) | Right panel and page |
-| Left panel | Full-bleed photo | Lifestyle desk scene (laptop, coffee, notebook, phone) |
-| Heading text | `#212121` (near-black) | "Send Us A Message" heading |
-| Label text | `#333333` (dark gray) | Uppercase field labels |
-| Placeholder text | `#aaaaaa` (gray-400) | Input placeholder text |
-| Input border | `#e0e0e0` (gray-300) | Light gray input borders |
-| Button background | `#5b6abf` (indigo-blue) | "SEND" button |
-| Button text | `#ffffff` | White button label |
-| Dropdown highlight | `#5b6abf` (indigo-blue) | Selected item background in dropdown |
-| Social Facebook | `#3b5998` | Facebook icon circle |
-| Social Twitter | `#1da1f2` | Twitter icon circle |
-| Social Instagram | `#e1306c` | Instagram icon circle |
-| Font family | `"Jost", sans-serif` | Inferred from visual weight/letter-spacing |
-| Border radius (button) | `4px` | Slightly rounded submit button |
-| Border radius (inputs) | `0px` | Square inputs (no visible rounding) |
+| Token                  | Value                   | Notes                                                  |
+| ---------------------- | ----------------------- | ------------------------------------------------------ |
+| Brand / accent color   | `#5b6abf` (indigo-blue) | Submit button background, dropdown highlight           |
+| Page background        | `#ffffff` (white)       | Right panel and page                                   |
+| Left panel             | Full-bleed photo        | Lifestyle desk scene (laptop, coffee, notebook, phone) |
+| Heading text           | `#212121` (near-black)  | "Send Us A Message" heading                            |
+| Label text             | `#333333` (dark gray)   | Uppercase field labels                                 |
+| Placeholder text       | `#aaaaaa` (gray-400)    | Input placeholder text                                 |
+| Input border           | `#e0e0e0` (gray-300)    | Light gray input borders                               |
+| Button background      | `#5b6abf` (indigo-blue) | "SEND" button                                          |
+| Button text            | `#ffffff`               | White button label                                     |
+| Dropdown highlight     | `#5b6abf` (indigo-blue) | Selected item background in dropdown                   |
+| Social Facebook        | `#3b5998`               | Facebook icon circle                                   |
+| Social Twitter         | `#1da1f2`               | Twitter icon circle                                    |
+| Social Instagram       | `#e1306c`               | Instagram icon circle                                  |
+| Font family            | `"Jost", sans-serif`    | Inferred from visual weight/letter-spacing             |
+| Border radius (button) | `4px`                   | Slightly rounded submit button                         |
+| Border radius (inputs) | `0px`                   | Square inputs (no visible rounding)                    |
 
 ## Requirements
 
@@ -142,6 +142,8 @@ The page footer SHALL link to Component Dock.
   branded as "Component Dock"
 
 ### Requirement: Responsive layout
+
+The page SHALL stack the two columns vertically on mobile devices.
 
 #### Scenario: Mobile layout
 
