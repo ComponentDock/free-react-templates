@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Contact form V9 primary purple. */
+  --color-btn: #ab47bc;
+  --color-btn-hover: #9c27b0;
+  --color-btn-light: #ce93d8;
+
+  /* Card background. */
+  --color-card: #ffffff;
+
+  /* Heading text. */
+  --color-heading: #212121;
+
+  /* Body / label text. */
+  --color-text: #666666;
+
+  /* Input border color. */
+  --color-border: #e0e0e0;
+
+  /* Input placeholder color. */
+  --color-placeholder: #999999;
+
+  /* Error state. */
+  --color-error: #f44336;
+
+  /* Valid state. */
+  --color-valid: #4caf50;
+
+  /* Original font: Poppins (weights 300–700) via Google Fonts. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
