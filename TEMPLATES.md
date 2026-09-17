@@ -1410,7 +1410,7 @@
 - [x] **Contact Form 07** — [colorlib](https://colorlib.com/wp/template/contact-form-07/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/contact-form-07.jpg) · [formrise](https://free-react-templates-formrise.surge.sh)
 - [x] **Contact Form 08** — [colorlib](https://colorlib.com/wp/template/contact-form-08/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/contact-form-08.jpg) · [formwell](https://free-react-templates-formwell.surge.sh)
 - [ ] **Contact Form 09** — [colorlib](https://colorlib.com/wp/template/contact-form-09/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/contact-form-09.jpg)
-- [ ] **Contact Form 10** — [colorlib](https://colorlib.com/wp/template/contact-form-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/contact-form-10.jpg)
+- [~] **Contact Form 10** — [colorlib](https://colorlib.com/wp/template/contact-form-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/contact-form-10.jpg)
 - [ ] **Contact Form 11** — [colorlib](https://colorlib.com/wp/template/contact-form-11/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/contact-form-11.jpg)
 - [ ] **Contact Form 12** — [colorlib](https://colorlib.com/wp/template/contact-form-12/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/contact-form-12.jpg)
 - [ ] **Contact Form 13** — [colorlib](https://colorlib.com/wp/template/contact-form-13/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/contact-form-13.jpg)

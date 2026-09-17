@@ -17,129 +17,115 @@ the left. Features a blue "Send Message" button.
 > Tokens extracted from the screenshot (preview unreachable). Approximate hex
 > values; adjust to match closest Tailwind defaults.
 
-| Token             | Value                   | Notes                                      |
-| ----------------- | ----------------------- | ------------------------------------------ |
-| Button blue       | `#4A90D9`              | Send Message button background             |
-| Card surface      | `#FFFFFF`              | White form card                            |
-| Text on dark      | `#FFFFFF`              | Headings, contact info on background image |
-| Text on white     | `#333333`              | Form heading, input text                   |
-| Text secondary    | `#999999`              | Input placeholders                         |
-| Input border      | `#E0E0E0`              | Bordered input boxes                       |
-| Font — headings   | Playfair Display (serif)| "Contact Form #10", "Contact us", "Get in touch" |
-| Font — body       | Poppins (sans-serif)   | Labels, contact info, button               |
-| Button radius     | 3px                     | Slight rounding                            |
-| Card radius       | 5px                     | Rounded corners on white card              |
-| Card shadow       | Light box-shadow        | Subtle shadow on white card                |
-| Background image  | Dark city skyline       | Use picsum.photos seed for placeholder     |
+| Token            | Value                    | Notes                                            |
+| ---------------- | ------------------------ | ------------------------------------------------ |
+| Button blue      | `#4A90D9`                | Send Message button background                   |
+| Card surface     | `#FFFFFF`                | White form card                                  |
+| Text on dark     | `#FFFFFF`                | Headings, contact info on background image       |
+| Text on white    | `#333333`                | Form heading, input text                         |
+| Text secondary   | `#999999`                | Input placeholders                               |
+| Input border     | `#E0E0E0`                | Bordered input boxes                             |
+| Font — headings  | Playfair Display (serif) | "Contact Form #10", "Contact us", "Get in touch" |
+| Font — body      | Poppins (sans-serif)     | Labels, contact info, button                     |
+| Button radius    | 3px                      | Slight rounding                                  |
+| Card radius      | 5px                      | Rounded corners on white card                    |
+| Card shadow      | Light box-shadow         | Subtle shadow on white card                      |
+| Background image | Dark city skyline        | Use picsum.photos seed for placeholder           |
 
-## Visual design (from screenshot)
+## Requirements
 
-The page has a full-width dark background image (city skyline at night with dark
-blue/purple tones). The content is overlaid on this background.
+### Requirement: Full-width dark background image
 
-1. **Title** — "Contact Form #10" centered at the top in white serif font.
+The page SHALL display a full-width dark background image (city skyline at night).
 
-2. **Two-column content** (centered, ~70% max-width):
-   - Left (~40%): "Contact us" heading in white serif, then four contact items
-     vertically stacked, each with a white icon + uppercase label + value:
-     Address, Phone, Email, Website.
-   - Right (~60%): white card with slight shadow and rounded corners containing:
-     "Get in touch" heading in dark serif, bordered-box form inputs (Name,
-     Email, Subject, Message stacked vertically), "Send Message" button
-     (blue bg, white text).
+#### Scenario: Background image renders
 
-Key difference: background image covers the full viewport, white form card is
-overlaid, contact info sits directly on the dark image.
+- **WHEN** I visit the Formedge page
+- **THEN** I see a full-width dark background image covering the viewport
 
-## Gherkin requirements
+### Requirement: Page title centered on background
 
-### Page layout
+The page SHALL display "Contact Form #10" centered at the top in white serif font.
 
-```gherkin
-Scenario: Page renders with background image
-  Given I visit the Formedge page
-  Then I see a full-width dark background image
+#### Scenario: Title displays correctly
 
-Scenario: Page title is centered on the background
-  Given I visit the Formedge page
-  Then I see "Contact Form #10" centered at the top in white text
+- **WHEN** I visit the Formedge page
+- **THEN** I see "Contact Form #10" centered at the top in white text
 
-Scenario: Content is overlaid on the background
-  Given I visit the Formedge page
-  Then I see contact info on the left and a white form card on the right
-```
+### Requirement: Two-column content layout
 
-### Contact info
+The page SHALL display contact info on the left and a white form card on the right.
 
-```gherkin
-Scenario: Info displays address
-  Given I visit the Formedge page
-  Then I see a white icon and text "ADDRESS: 198 West 21th Street, Suite 721 New York NY 10016"
+#### Scenario: Content layout renders
 
-Scenario: Info displays phone
-  Given I visit the Formedge page
-  Then I see a white icon and text "PHONE: + 1235 2355 98"
+- **WHEN** I visit the Formedge page
+- **THEN** I see contact info on the left and a white form card on the right
 
-Scenario: Info displays email
-  Given I visit the Formedge page
-  Then I see a white icon and text "EMAIL: info@yoursite.com"
+### Requirement: Contact info displays all items
 
-Scenario: Info displays website
-  Given I visit the Formedge page
-  Then I see a white icon and text "WEBSITE: yoursite.com"
-```
+The contact info section SHALL display address, phone, email, and website with white icons and uppercase labels.
 
-### Contact form
+#### Scenario: Address displayed
 
-```gherkin
-Scenario: Form displays all fields in white card
-  Given I visit the Formedge page
-  Then I see a white card with rounded corners and shadow
-  And the card contains a "Get in touch" heading
-  And I see a Name input field
-  And I see an Email input field
-  And I see a Subject input field
-  And I see a Message textarea
-  And I see a Send Message button
+- **WHEN** I visit the Formedge page
+- **THEN** I see a white icon and text "ADDRESS: 198 West 21th Street, Suite 721 New York NY 10016"
 
-Scenario: Form fields are stacked vertically
-  Given I visit the Formedge page
-  Then all form fields are displayed in a single vertical column
+#### Scenario: Phone displayed
 
-Scenario: Send Message button is styled
-  Given I visit the Formedge page
-  Then the Send Message button has a blue background and white text
-```
+- **WHEN** I visit the Formedge page
+- **THEN** I see a white icon and text "PHONE: + 1235 2355 98"
 
-### Responsive behavior
+#### Scenario: Email displayed
 
-```gherkin
-Scenario: Columns stack on mobile
-  Given I visit the Formedge page on a mobile viewport
-  Then the contact info and form card stack vertically
-  And the form card appears below the contact info
-```
+- **WHEN** I visit the Formedge page
+- **THEN** I see a white icon and text "EMAIL: info@yoursite.com"
 
-### Footer
+#### Scenario: Website displayed
 
-```gherkin
-Scenario: Footer links to Component Dock
-  Given I visit the Formedge page
-  Then the footer contains a link to https://www.componentdock.com/
-  And the link text references Component Dock
-```
+- **WHEN** I visit the Formedge page
+- **THEN** I see a white icon and text "WEBSITE: yoursite.com"
 
-## Verification checklist
+### Requirement: Contact form displays all fields in white card
 
-- [ ] Full-width dark background image
-- [ ] Page title "Contact Form #10" centered in white
-- [ ] Contact info on left with white icons and uppercase labels
-- [ ] White form card on right with shadow and rounded corners
-- [ ] Form: "Get in touch" heading, bordered-box inputs stacked vertically
-- [ ] Send Message button: blue bg, white text, slight radius
-- [ ] Fonts: Playfair Display for headings, Poppins for body
-- [ ] Responsive: columns stack on mobile
-- [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
-- [ ] 100% test coverage
-- [ ] Typecheck + lint + build pass
+The form SHALL display in a white card with rounded corners and shadow, containing a "Get in touch" heading, Name, Email, Subject, Message fields, and a Send Message button.
+
+#### Scenario: Form renders with all fields
+
+- **WHEN** I visit the Formedge page
+- **THEN** I see a white card with rounded corners and shadow
+- **AND** the card contains a "Get in touch" heading
+- **AND** I see a Name input field
+- **AND** I see an Email input field
+- **AND** I see a Subject input field
+- **AND** I see a Message textarea
+- **AND** I see a Send Message button
+
+#### Scenario: Form fields are stacked vertically
+
+- **WHEN** I visit the Formedge page
+- **THEN** all form fields are displayed in a single vertical column
+
+#### Scenario: Send Message button is styled
+
+- **WHEN** I visit the Formedge page
+- **THEN** the Send Message button has a blue background and white text
+
+### Requirement: Responsive behavior
+
+The columns SHALL stack vertically on mobile viewports.
+
+#### Scenario: Columns stack on mobile
+
+- **WHEN** I visit the Formedge page on a mobile viewport
+- **THEN** the contact info and form card stack vertically
+- **AND** the form card appears below the contact info
+
+### Requirement: Footer links to Component Dock
+
+The footer SHALL contain a link to https://www.componentdock.com/ branded as "Component Dock".
+
+#### Scenario: Footer displays Component Dock link
+
+- **WHEN** I visit the Formedge page
+- **THEN** the footer contains a link to https://www.componentdock.com/
+- **AND** the link text references Component Dock
