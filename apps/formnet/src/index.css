@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Dark plum from the original Contact Form V7 heading/text. */
+  --color-heading: #43383e;
+
+  /* Light gray background from original. */
+  --color-bg: #e6e6e6;
+
+  /* Placeholder gray. */
+  --color-placeholder: #999999;
+
+  /* Validation error red. */
+  --color-error: #c80000;
+
+  /* Button gradient start (pink) and end (red). */
+  --color-btn-start: #d5007d;
+  --color-btn-end: #e53935;
+
+  /* Original font: Oswald (weights 400/500) via Google Fonts. */
+  --font-sans: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
