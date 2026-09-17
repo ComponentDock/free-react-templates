@@ -1,99 +1,172 @@
-# Template: Formwell (Contact Form)
+# Template: FormWell (Contact Form)
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 08** — a centered card with a form on the
-left (olive-green accent, gray-bg inputs) and a decorative image on the right.
+Recreation of ColorLib **Contact Form V15** — a single-page contact form with
+a full-page Google Maps background, a centered white card with a banner image,
+and underline-style form inputs with a green submit button.
 
-- **Source slug:** `contact-form-08`
-- **Source URL:** https://colorlib.com/wp/template/contact-form-08/
-- **Preview URL:** https://preview.colorlib.com/theme/contact-form-08/ (404 at
-  time of implementation — design tokens extracted from screenshot)
+- **Source slug:** `contact-form-v15`
+- **Source URL:** https://colorlib.com/wp/template/contact-form-v15/
+- **Preview URL:** https://preview.colorlib.com/theme/contact-form-v15/ (404 at
+  time of prep — design tokens extracted from screenshot)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+
+## Design tokens
+
+### Colors
+- **Map background:** dark charcoal overlay over map tiles (rgba(0,0,0,0.5) or similar)
+- **Card background:** white (#ffffff)
+- **Card shadow:** soft box-shadow, spread ~20px
+- **Submit button:** green (#4cd137 or #5cb85c), white text, rounded pill shape
+- **Input text:** dark gray (#333 or #444)
+- **Input placeholder:** light gray (#aaa or #999)
+- **Heading text on banner:** white, bold
+- **Subheading on banner:** white, lighter weight
+
+### Fonts
+- **Body/inputs:** Poppins (sans-serif)
+- **Headings:** Poppins bold (sans-serif)
+
+### Button
+- Rounded pill shape (border-radius ~20px)
+- Green background (#4cd137)
+- White text
+- Arrow icon (→) after "Submit" text
+- Padding: ~10px 30px
+
+### Inputs
+- Underline-style: bottom border only (no full box border)
+- Full width within card padding
+- Labels above inputs, small uppercase or normal case
+- Light gray bottom border line
 
 ## Requirements
 
-### Requirement: Page layout
+### Requirement: Full-page map background
 
-The page renders a centered card on a light gray background with a page title above it.
+The page renders a full-viewport Google Maps background with a dark overlay.
 
-#### Scenario: Page title displayed
+#### Scenario: Map background visible
 
-- **WHEN** I visit the Formwell page
-- **THEN** the page title "Formwell" is displayed centered above the card
+- **WHEN** I visit the FormWell page
+- **THEN** the entire page background shows a map (Google Maps tile or static map image)
 
-#### Scenario: Centered card rendered
+#### Scenario: Dark overlay on map
 
-- **WHEN** I visit the Formwell page
-- **THEN** I see a centered card with a white background and shadow on a light gray background
+- **WHEN** I visit the FormWell page
+- **THEN** the map has a dark semi-transparent overlay so the card stands out
+
+### Requirement: Centered contact card
+
+A white card is centered on the page over the map background.
+
+#### Scenario: Card rendered centered
+
+- **WHEN** I visit the FormWell page
+- **THEN** I see a white card centered horizontally and vertically on the page
+
+#### Scenario: Card has shadow
+
+- **WHEN** I visit the FormWell page
+- **THEN** the card has a soft box-shadow for depth
+
+### Requirement: Banner image section
+
+The top of the card has a banner image with a dark overlay and text.
+
+#### Scenario: Banner image displayed
+
+- **WHEN** I visit the FormWell page
+- **THEN** the top section of the card shows a banner image (person with laptop or similar)
+
+#### Scenario: Dark overlay on banner
+
+- **WHEN** I visit the FormWell page
+- **THEN** the banner image has a dark semi-transparent overlay
+
+#### Scenario: Contact Us heading
+
+- **WHEN** I visit the FormWell page
+- **THEN** the text "Contact Us" is displayed centered on the banner in white bold text
+
+#### Scenario: Subheading
+
+- **WHEN** I visit the FormWell page
+- **THEN** the text "Feel free to drop us a line below!" is displayed below the heading in white
 
 ### Requirement: Contact form
 
-The card contains a form with four fields and a submit button.
+Below the banner, the card contains a form with underline-style inputs.
 
-#### Scenario: Form heading displayed
+#### Scenario: Full Name field
 
-- **WHEN** I visit the Formwell page
-- **THEN** I see a "Get in touch with us" heading in the form section
+- **WHEN** I visit the FormWell page
+- **THEN** I see a "Full Name:" label with a text input showing placeholder "John Doe"
 
-#### Scenario: Full Name and Email fields side by side
+#### Scenario: Email field
 
-- **WHEN** I visit the Formwell page
-- **THEN** the Full Name and Email Address inputs appear in a two-column row
+- **WHEN** I visit the FormWell page
+- **THEN** I see an "Email:" label with a text input showing placeholder "Enter email address"
 
-#### Scenario: Subject field
+#### Scenario: Phone field
 
-- **WHEN** I visit the Formwell page
-- **THEN** I see a full-width Subject input field
+- **WHEN** I visit the FormWell page
+- **THEN** I see a "Phone:" label with a text input showing placeholder "Enter phone number"
 
-#### Scenario: Message textarea
+#### Scenario: Message field
 
-- **WHEN** I visit the Formwell page
-- **THEN** I see a full-width Message textarea with at least 5 rows
+- **WHEN** I visit the FormWell page
+- **THEN** I see a "Message:" label with a textarea showing placeholder "Your Comments..."
 
-#### Scenario: Form labels are uppercase
+#### Scenario: Underline input style
 
-- **WHEN** I visit the Formwell page
-- **THEN** all form labels (Full Name, Email Address, Subject, Message) are displayed in uppercase
+- **WHEN** I look at any form input
+- **THEN** it has a bottom border only (underline style) with no full box border
 
-#### Scenario: Inputs have light gray background
+#### Scenario: Labels left-aligned
 
-- **WHEN** I visit the Formwell page
-- **THEN** the input fields have a light gray background color
+- **WHEN** I view the form
+- **THEN** labels are left-aligned next to or above their inputs
 
-#### Scenario: Send Message button
+### Requirement: Submit button
 
-- **WHEN** I visit the Formwell page
-- **THEN** I see a "Send Message" button with an olive-green background and rounded corners
+A green rounded submit button appears below the form fields.
 
-### Requirement: Decorative image
+#### Scenario: Submit button rendered
 
-The right side of the card shows a decorative image.
+- **WHEN** I visit the FormWell page
+- **THEN** I see a green "Submit" button with an arrow icon
 
-#### Scenario: Image displayed
+#### Scenario: Button rounded pill shape
 
-- **WHEN** I visit the Formwell page
-- **THEN** I see an image on the right side of the card
+- **WHEN** I view the submit button
+- **THEN** it has a rounded pill shape (large border-radius)
+
+#### Scenario: Button centered
+
+- **WHEN** I visit the FormWell page
+- **THEN** the submit button is centered below the form fields
+
+### Requirement: Responsive layout
+
+The template is responsive and works on mobile.
+
+#### Scenario: Mobile stacking
+
+- **WHEN** I view the page on a mobile viewport (375px wide)
+- **THEN** the card takes full width with horizontal padding
+
+#### Scenario: Form readable on mobile
+
+- **WHEN** I view the page on a mobile viewport
+- **THEN** all form fields and the button are readable and usable
 
 ### Requirement: Footer
 
-The page footer links to Component Dock.
+The page includes a footer with a Component Dock link.
 
-#### Scenario: Component Dock link
+#### Scenario: Footer present
 
-- **WHEN** I visit the Formwell page
-- **THEN** I see "More templates at Component Dock" with a link to https://www.componentdock.com/
-
-### Requirement: Form interactivity
-
-The form fields accept user input and the form submits without error.
-
-#### Scenario: Typing in form fields
-
-- **WHEN** I type into the Full Name field
-- **THEN** the field value updates to reflect my input
-
-#### Scenario: Form submission
-
-- **WHEN** I click the Send Message button
-- **THEN** the form submits without throwing an error
+- **WHEN** I visit the FormWell page
+- **THEN** I see a footer with a link to https://www.componentdock.com/
