@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand purple — from the original ColorLib Contact Form V16 design. */
+  --color-brand: #7c4dff;
+  --color-brand-dark: #6a1b9a;
+  --color-brand-light: #ba68c8;
+
+  /* Text colors. */
+  --color-ink: #212121;
+  --color-body: #9e9e9e;
+
+  /* Input borders. */
+  --color-border: #e0e0e0;
+  --color-error: #f44336;
+
+  /* Card. */
+  --color-card: #ffffff;
+
+  /* Original font: "Poppins" via Google Fonts (loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
