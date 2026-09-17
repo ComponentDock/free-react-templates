@@ -62,28 +62,28 @@ name. The chosen name is **ContactNest**.
 
 ## Design Tokens (captured from screenshot + ColorLib page)
 
-| Token             | Value                                  | Source             |
-|-------------------|----------------------------------------|--------------------|
-| Brand color       | `#ff6b6b` (coral/salmon)              | Screenshot         |
-| Page background   | Dark map image (grayscale, ~30% opacity overlay) | Screenshot |
-| Card background   | `#ffffff` (white)                     | Screenshot         |
-| Card shadow       | `0 10px 40px rgba(0,0,0,0.15)`        | Screenshot estimate |
-| Card border-radius| `8px`                                  | Screenshot         |
-| Card max-width    | `800px`                                | Screenshot estimate |
-| Font family       | `"Open Sans", sans-serif`              | Common ColorLib    |
-| Heading color     | `#333333` (dark gray)                 | Screenshot         |
-| Label color       | `#999999` (medium gray)               | Screenshot         |
-| Input text color  | `#333333`                              | Screenshot         |
-| Input underline   | `#e0e0e0` (light gray)                | Screenshot         |
-| Input focus underline | `#ff6b6b` (brand)                  | Screenshot         |
-| Button background | `#ff6b6b`                              | Screenshot         |
-| Button text       | `#ffffff`                              | Screenshot         |
-| Button radius     | `30px` (pill)                          | Screenshot         |
-| Button padding    | `12px 30px`                            | Screenshot estimate |
-| Close button bg   | `#e0e0e0` (light gray circle)         | Screenshot         |
-| Close button size | `30px`                                 | Screenshot estimate |
-| Footer text color | `#999999`                              | Screenshot         |
-| Footer phone color| `#ff6b6b`                              | Screenshot         |
+| Token                 | Value                                            | Source              |
+| --------------------- | ------------------------------------------------ | ------------------- |
+| Brand color           | `#ff6b6b` (coral/salmon)                         | Screenshot          |
+| Page background       | Dark map image (grayscale, ~30% opacity overlay) | Screenshot          |
+| Card background       | `#ffffff` (white)                                | Screenshot          |
+| Card shadow           | `0 10px 40px rgba(0,0,0,0.15)`                   | Screenshot estimate |
+| Card border-radius    | `8px`                                            | Screenshot          |
+| Card max-width        | `800px`                                          | Screenshot estimate |
+| Font family           | `"Open Sans", sans-serif`                        | Common ColorLib     |
+| Heading color         | `#333333` (dark gray)                            | Screenshot          |
+| Label color           | `#999999` (medium gray)                          | Screenshot          |
+| Input text color      | `#333333`                                        | Screenshot          |
+| Input underline       | `#e0e0e0` (light gray)                           | Screenshot          |
+| Input focus underline | `#ff6b6b` (brand)                                | Screenshot          |
+| Button background     | `#ff6b6b`                                        | Screenshot          |
+| Button text           | `#ffffff`                                        | Screenshot          |
+| Button radius         | `30px` (pill)                                    | Screenshot          |
+| Button padding        | `12px 30px`                                      | Screenshot estimate |
+| Close button bg       | `#e0e0e0` (light gray circle)                    | Screenshot          |
+| Close button size     | `30px`                                           | Screenshot estimate |
+| Footer text color     | `#999999`                                        | Screenshot          |
+| Footer phone color    | `#ff6b6b`                                        | Screenshot          |
 
 ## Sections (order)
 
@@ -94,76 +94,113 @@ name. The chosen name is **ContactNest**.
    - **Close button** — gray circle, top-right
    - **Title** — "Contact Us" (h2, large bold)
    - **Form** — `Name` + `Email` (two-column row) + `Message` (full-width)
-     + `Submit` button (left-aligned pill)
+     - `Submit` button (left-aligned pill)
    - **Footer text** — "For any question contact our 24/7 call center:
      +001 345 6889"
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Page renders with dark map background
-```
-Given the user navigates to ContactNest
-Then the page displays a full-viewport dark map background image
-And a white card is centered on the page
-```
+### Requirement: Dark map background
 
-### Scenario: Modal card contains Contact Us heading
-```
-Given the page has loaded
-Then the card displays a "Contact Us" heading in large bold text
-```
+The system SHALL render a full-viewport dark map background image with a
+dark overlay, and center a white card on top.
 
-### Scenario: Name and Email fields are side by side
-```
-Given the form is visible
-Then the Name field and Email field are displayed in a two-column layout
-And the Name field has label "Your Name" and placeholder "John Doe"
-And the Email field has label "Email" and placeholder "Enter your email address"
-```
+#### Scenario: Page renders with dark map background
 
-### Scenario: Message field spans full width
-```
-Given the form is visible
-Then the Message field spans the full width of the form
-And the Message field has label "Message" and placeholder "Your message here..."
-```
+- **GIVEN** the user navigates to ContactNest
+- **WHEN** the page loads
+- **THEN** the page SHALL display a full-viewport dark map background image
+- **AND** a white card SHALL be centered vertically and horizontally
 
-### Scenario: Input focus shows coral underline
-```
-Given the form is visible
-When the user clicks on the Name input field
-Then the Name field displays a coral underline
-And other fields retain their gray underline
-```
+### Requirement: Modal card heading
 
-### Scenario: Submit button renders as coral pill
-```
-Given the form is visible
-Then the Submit button is rendered with a coral background
-And the Submit button text is "Submit" with a right arrow
-And the Submit button has a pill shape (high border-radius)
-```
+The system SHALL display a "Contact Us" heading in large bold text inside
+the modal card.
 
-### Scenario: Footer displays call center info
-```
-Given the card is visible
-Then the card displays "For any question contact our 24/7 call center: +001 345 6889"
-And the phone number is highlighted in the coral brand color
-```
+#### Scenario: Modal card contains Contact Us heading
 
-### Scenario: Close button exists
-```
-Given the card is visible
-Then a close (X) button is displayed at the top-right corner of the card
-And clicking the close button dismisses the modal (or resets the view)
-```
+- **GIVEN** the page has loaded
+- **THEN** the card SHALL display a "Contact Us" heading in large bold text
 
-### Scenario: Form is responsive
-```
-Given the user views the template on a mobile viewport (375px)
-Then the Name and Email fields stack vertically
-And the card fills the available width with appropriate padding
-```
+### Requirement: Two-column name and email fields
+
+The system SHALL render Name and Email fields side by side in a two-column
+layout with appropriate labels and placeholders.
+
+#### Scenario: Name and Email fields are side by side
+
+- **GIVEN** the form is visible
+- **THEN** the Name field and Email field SHALL be displayed in a two-column layout
+- **AND** the Name field SHALL have label "Your Name" and placeholder "John Doe"
+- **AND** the Email field SHALL have label "Email" and placeholder "Enter your email address"
+
+### Requirement: Full-width message field
+
+The system SHALL render a Message textarea that spans the full width of
+the form.
+
+#### Scenario: Message field spans full width
+
+- **GIVEN** the form is visible
+- **THEN** the Message field SHALL span the full width of the form
+- **AND** the Message field SHALL have label "Message" and placeholder "Your message here..."
+
+### Requirement: Coral underline on focus
+
+The system SHALL display a coral underline on focused inputs while other
+inputs retain their gray underline.
+
+#### Scenario: Input focus shows coral underline
+
+- **GIVEN** the form is visible
+- **WHEN** the user clicks on the Name input field
+- **THEN** the Name field SHALL display a coral underline
+- **AND** other fields SHALL retain their gray underline
+
+### Requirement: Coral pill submit button
+
+The system SHALL render a Submit button with coral background, pill shape,
+white text, and a right arrow icon.
+
+#### Scenario: Submit button renders as coral pill
+
+- **GIVEN** the form is visible
+- **THEN** the Submit button SHALL have a coral background
+- **AND** the Submit button text SHALL be "Submit" with a right arrow
+- **AND** the Submit button SHALL have a pill shape (high border-radius)
+
+### Requirement: Call center footer
+
+The system SHALL display a centered footer line with 24/7 call center info
+and a coral-highlighted phone number.
+
+#### Scenario: Footer displays call center info
+
+- **GIVEN** the card is visible
+- **THEN** the card SHALL display "For any question contact our 24/7 call center: +001 345 6889"
+- **AND** the phone number SHALL be highlighted in the coral brand color
+
+### Requirement: Close button
+
+The system SHALL render a close (X) button at the top-right corner of the
+modal card that can dismiss or reset the view.
+
+#### Scenario: Close button exists
+
+- **GIVEN** the card is visible
+- **THEN** a close (X) button SHALL be displayed at the top-right corner of the card
+- **AND** clicking the close button SHALL trigger the close action
+
+### Requirement: Responsive form layout
+
+The system SHALL stack Name and Email fields vertically on mobile viewports
+and the card SHALL fill available width with appropriate padding.
+
+#### Scenario: Form is responsive
+
+- **GIVEN** the user views the template on a mobile viewport (375px)
+- **THEN** the Name and Email fields SHALL stack vertically
+- **AND** the card SHALL fill the available width with appropriate padding
 
 ## Verification checklist
 

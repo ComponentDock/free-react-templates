@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Coral/salmon brand color — from the original Contact Form V6
+     screenshot: input focus underlines, submit button, phone highlight. */
+  --color-brand: #ff6b6b;
+
+  /* Card and text colors from the original. */
+  --color-card: #ffffff;
+  --color-heading: #333333;
+  --color-label: #999999;
+  --color-input-border: #e0e0e0;
+  --color-close-bg: #e0e0e0;
+
+  /* Original font: "Open Sans" (weights 400/600/700) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
