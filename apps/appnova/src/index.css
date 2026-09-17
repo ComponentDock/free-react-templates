@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Appnova brand — teal-to-indigo gradient theme.
+     Primary gradient: linear-gradient(0deg, #00d4aa 0%, #5b21b6 100%).
+     Scale keyed on primary-600 (#5b21b6) so the shared ui Button/ButtonLink
+     "primary" variant works. */
+  --color-primary-50: #eef6fb;
+  --color-primary-100: #d5eaf7;
+  --color-primary-200: #a8d5ef;
+  --color-primary-300: #6bb8e3;
+  --color-primary-400: #3b9bd6;
+  --color-primary-500: #2078b8;
+  --color-primary-600: #5b21b6;
+  --color-primary-700: #4c1d95;
+  --color-primary-800: #3b1575;
+  --color-primary-900: #2e1058;
+
+  /* Teal brand accent #00d4aa (gradient start, hover accents). */
+  --color-teal: #00d4aa;
+
+  /* Dark footer #0a1628, near-black #1a1a2e. */
+  --color-night: #0a1628;
+  --color-ink: #1a1a2e;
+
+  /* Light section backgrounds (#f0faf8, #f4fdfb, #f8fefe) and muted text
+     (#777777). */
+  --color-paper: #f0faf8;
+  --color-mist: #f4fdfb;
+  --color-muted: #777777;
+
+  /* Fonts: "Poppins" (headings) + Roboto (body) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
