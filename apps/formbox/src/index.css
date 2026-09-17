@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #35477d;
+  --color-brand-dark: #2d3d6b;
+  --color-bg-page: #ffffff;
+  --color-bg-accent: #8bbabb;
+  --color-text-primary: #000000;
+  --color-text-secondary: #8c8c8c;
+  --color-text-label: #b3b3b3;
+  --color-input-border: #cccccc;
+  --color-card-surface: #ffffff;
+  --color-sidebar-bg: #35477d;
+  --color-sidebar-text: rgba(255, 255, 255, 0.5);
+  --color-sidebar-icon: #ffffff;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+}
