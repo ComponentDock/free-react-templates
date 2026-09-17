@@ -1,152 +1,119 @@
-# Template: Reachform (Contact Form)
+# Template: ReachForm (Contact Form)
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 17** — a two-column contact page with a white form panel on the left and a dark navy company-details sidebar on the right.
+ReachForm is a centered contact form template in the free-react-templates
+monorepo. It is an original React recreation of the ColorLib "Contact Form V2"
+free template (source: https://colorlib.com/wp/template/contact-form-v2/),
+built under a DIFFERENT name (**ReachForm**), with the monorepo stack:
+Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-- **Source slug:** `contact-form-17`
-- **Source URL:** https://colorlib.com/wp/template/contact-form-17/
-- **Preview URL:** https://preview.colorlib.com/theme/bootstrap/contact-form-17/
-- **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
+The original is a full-page contact form with a mountain landscape background
+image overlaid with a pink-to-coral gradient. A centered white card contains
+the form with three fields (Name, Email, Message) using underline-style inputs
+and a gradient submit button. The title uses a serif/display font.
 
-## Design tokens
+## Design Tokens
 
-Extracted from the live preview CSS (`css/style.css`):
+- **Font Family (title):** Playfair Display, serif (display heading)
+- **Font Family (body):** DM Sans, sans-serif (labels, inputs, button)
+- **Background:** Mountain landscape image with pink-coral gradient overlay
+  - Gradient: linear-gradient from `#e84393` (pink) to `#fd7e14` (coral-orange)
+  - Image: picsum.photos seeded placeholder (mountain landscape)
+- **Card:** White `#ffffff`, rounded corners (8px), subtle shadow
+- **Title:** Dark charcoal `#2d3748`, bold, centered
+- **Input labels:** Gray uppercase `#999999`, small text
+- **Input borders:** Light gray `#dddddd` (default), pink `#e84393` (focused)
+- **Button:** Pink-to-coral gradient, white text, rounded (4px)
+- **Spacing:** Generous card padding (40px+)
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| font-family | `"Roboto", sans-serif` | Body and headings |
-| brand-primary | `#35477d` (navy blue) | Button bg, form heading color, contact-info panel bg |
-| bg-body | `#fff` | Page background, form panel background |
-| bg-top-teal | `#8bbabb` | Top pseudo-element overlay (top 50vh) — used as subtle decorative background |
-| text-body | `#8c8c8c` (gray) | Body paragraph text |
-| text-heading | `#000` | Headings h1–h6 |
-| text-label | `#b3b3b3` (light gray) | Form labels |
-| text-info | `rgba(255,255,255,0.5)` | Contact info body text |
-| icon-color | `#fff` | Contact info icons |
-| shadow-wrap | `0 0 20px 0 rgba(0,0,0,0.2)` | Card shadow on contact-wrap |
-| btn-radius | `0` (square) | Button and inputs have no border-radius |
-| btn-letter-spacing | `0.2rem` | Button uppercase tracking |
-| btn-font-size | `12px` | Button font size |
-| input-style | bottom-border only (`border-bottom: 1px solid #ccc`) | Form controls use underline style |
+## Requirements
 
-### Layout
+### Requirement 1: Page Layout
 
-Two-column Bootstrap-style grid inside a `.container`:
+The page shall display a full-viewport background with a mountain landscape
+image overlaid with a pink-to-coral gradient. A centered white card sits on top
+containing the contact form.
 
-- **Left column (col-md-8)** — white `.form` panel
-  - Heading: "Send us a message" (`#35477d`, 20px)
-  - Name * (text input, required)
-  - Email * (text input, required)
-  - Phone (text input, optional)
-  - Company (text input, optional)
-  - Message * (textarea, required, 4 rows)
-  - "Send Message" button (square, navy, uppercase, letter-spacing 0.2rem)
-  - Form success message: "Your message was sent, thank you!"
-  - Form warning/error message area
-- **Right column (col-md-4)** — dark navy `.contact-info` panel
-  - Heading: "Contact Information" (white, 20px)
-  - Description paragraph (lorem ipsum placeholder)
-  - Address with room icon: "9757 Aspen Lane South Richmond Hill, NY 11419"
-  - Phone with phone icon: "+1 (291) 939 9321"
-  - Email with envelope icon: "info@mywebsite.com"
-- Both columns are wrapped in `.contact-wrap` with box-shadow
-- Full height stretching between columns (`.align-items-stretch`)
-- No separate navbar/header — this is a standalone page section
+#### Scenario: User views the page on initial load
 
-### Screenshot visual notes
+- **WHEN** the user opens the application
+- **THEN** the page shows a full-bleed background image with gradient overlay
+- **AND** a centered white card with the contact form is visible
 
-The screenshot at `https://colorlib.com/wp/wp-content/uploads/sites/2/contact-form-17.jpg` shows:
-- A centered card with rounded box-shadow on a light/teal-tinted background
-- Left 2/3: white form with underlined inputs, two columns of fields, "Send Message" button
-- Right 1/3: dark navy sidebar with white text and icons for address/phone/email
-- Clean, minimal aesthetic with Roboto font
+### Requirement 2: Contact Form Title
 
-## Gherkin requirements
+The form card shall display a bold serif heading "Contact Us".
 
-### Scenario: Page renders with two-column layout
+#### Scenario: User sees the form title
 
-```gherkin
-Given the user navigates to the Reachform page
-Then a centered contact card is displayed with a box-shadow
-And the card has two columns: a form panel and a contact-info panel
-```
+- **WHEN** the page loads
+- **THEN** the heading "Contact Us" is visible in the form card
 
-### Scenario: Form section displays all fields
+### Requirement 3: Form Fields
 
-```gherkin
-Given the form panel is visible
-Then the heading "Send us a message" is displayed in navy color
-And the following fields are shown: Name, Email, Phone, Company, Message
-And Name and Email fields are displayed side by side in the first row
-And Phone and Company fields are displayed side by side in the second row
-And Message textarea is displayed in a full-width third row
-And all inputs use underline-style (bottom border only)
-```
+The form shall contain three fields: Name (text input), Email (email input),
+and Message (textarea). All fields use underline-style borders.
 
-### Scenario: Required fields validation
+#### Scenario: User sees all form fields
 
-```gherkin
-Given the user submits the form without filling any fields
-Then validation errors appear for Name, Email, and Message fields
-And Phone and Company fields do not show validation errors
-```
+- **WHEN** the page loads
+- **THEN** a Name input field is visible
+- **AND** an Email input field is visible
+- **AND** a Message textarea is visible
 
-### Scenario: Form submission success
+#### Scenario: User types in the Name field
 
-```gherkin
-Given the user fills in Name, Email, and Message
-When the user clicks "Send Message"
-Then a success message "Your message was sent, thank you!" is displayed
-And the form fields are cleared
-```
+- **WHEN** the user clicks the Name input and types "Kevin Nguyen"
+- **THEN** the Name field shows "Kevin Nguyen"
 
-### Scenario: Contact information panel
+#### Scenario: User types in the Email field
 
-```gherkin
-Given the contact-info panel is visible
-Then the heading "Contact Information" is displayed in white
-And a description paragraph is shown below the heading
-And three contact items are listed: address, phone, email
-And each contact item has an icon on the left and text on the right
-And the panel background is navy blue (#35477d)
-```
+- **WHEN** the user clicks the Email input and types "test@example.com"
+- **THEN** the Email field shows "test@example.com"
 
-### Scenario: Button styling
+#### Scenario: User types in the Message field
 
-```gherkin
-Given the "Send Message" button is displayed
-Then it has a navy blue background (#35477d)
-And it has square corners (no border-radius)
-And the text is uppercase with letter-spacing
-And the button text is white
-```
+- **WHEN** the user clicks the Message textarea and types "Hello there!"
+- **THEN** the Message textarea shows "Hello there!"
 
-### Scenario: Responsive layout
+### Requirement 4: Submit Button
 
-```gherkin
-Given the viewport is narrower than 768px
-Then the two columns stack vertically
-And the form panel appears above the contact-info panel
-```
+The form shall have a "Send Your Message" submit button with a pink-coral
+gradient background.
 
-## Verification checklist
+#### Scenario: User sees the submit button
 
-- [ ] Template name is `reachform` (apps/reachform)
-- [ ] Package name is `@free-react-templates/reachform`
-- [ ] No references to "colorlib", "contact-form-17", or the source template in app code
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] public/CNAME contains `reachform.free.componentdock.com`
-- [ ] homepage in package.json is `https://reachform.free.componentdock.com`
-- [ ] Roboto font loaded via Google Fonts or similar
-- [ ] Brand color #35477d used via Tailwind @theme
-- [ ] Form uses underline-style inputs (bottom border only)
-- [ ] Button is square, uppercase, navy blue
-- [ ] Contact info panel is dark navy with white icons/text
-- [ ] Box shadow on the contact-wrap card
-- [ ] Placeholder images from picsum.photos (if needed)
-- [ ] Icons from lucide-react
-- [ ] All fields render correctly
-- [ ] Form validation works for required fields
-- [ ] Responsive stacking on mobile
-- [ ] Tests at 100% coverage
+- **WHEN** the page loads
+- **THEN** a button labeled "Send Your Message" is visible
+
+#### Scenario: User submits the form
+
+- **WHEN** the user clicks "Send Your Message"
+- **THEN** a thank-you confirmation message is displayed
+- **AND** the form fields are hidden
+
+### Requirement 5: Thank You State
+
+After form submission, the card shall show a thank-you message with a "Send
+another message" reset link.
+
+#### Scenario: User sees thank-you after submission
+
+- **WHEN** the form is submitted
+- **THEN** the card shows "Thank You!" heading
+- **AND** the card shows a confirmation message
+
+#### Scenario: User resets the form
+
+- **WHEN** the user clicks "Send another message" after submission
+- **THEN** the form is shown again with empty fields
+
+### Requirement 6: Footer
+
+The page shall include a footer linking to Component Dock.
+
+#### Scenario: User sees the footer
+
+- **WHEN** the page loads
+- **THEN** a footer with a "Component Dock" link to https://www.componentdock.com/ is visible
