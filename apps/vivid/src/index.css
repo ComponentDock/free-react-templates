@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Vivid brand palette — creative-agency design tokens:
+     primary blue #6195FF (hero CTA, title underline, links, contact button);
+     body text #868F9B; heading #10161A; grey sections #FAFAFA with #EEE borders;
+     dark sections #1C1D21 (hero overlay, numbers, testimonials, footer). */
+  --color-primary: #6195ff;
+  --color-body: #868f9b;
+  --color-heading: #10161a;
+  --color-grey-bg: #fafafa;
+  --color-grey-border: #eeeeee;
+  --color-dark-bg: #1c1d21;
+
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Varela Round', ui-sans-serif, system-ui, sans-serif;
+}
