@@ -1460,7 +1460,7 @@
 - [x] **Creative Agency 2 2** — [colorlib](https://colorlib.com/wp/template/creative-agency-2-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/creativeagency2-free-template.jpg) · [axiom](https://axiom.free.componentdock.com)
 - [x] **Creativex 3** — [colorlib](https://colorlib.com/wp/template/creativex-3/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/creativex-template-1770211073725.jpg) · [kreativ](https://kreativ.free.componentdock.com)
 - [x] **Datarc** — [colorlib](https://colorlib.com/wp/template/datarc/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/datarc-digital-agency-free-website-template.jpg) · [bytecraft](https://bytecraft.free.componentdock.com)
-- [ ] **Dinomuz** — [colorlib](https://colorlib.com/wp/template/dinomuz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dinomuz-free-creative-website-template.jpg)
+- [~] **Dinomuz** — [colorlib](https://colorlib.com/wp/template/dinomuz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dinomuz-free-creative-website-template.jpg)
 - [x] **Drimo** — [colorlib](https://colorlib.com/wp/template/drimo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/drimo-free-multi-purpose-template.jpg) · [ripply](https://ripply.free.componentdock.com)
 - [ ] **Dup** — [colorlib](https://colorlib.com/wp/template/dup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dup-free-creative-agency-website-template.jpg)
 - [ ] **Education Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/education-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/education-website-designs.jpg)
