@@ -87,8 +87,8 @@ Fetched and analyzed on 2026-09-07. The preview HTML is 17,947 bytes,
    one side and text (title "Vector Illustration" + description + "View
    Project" button) on the other. Box-shadow cards.
 6. **Story** — Gradient background section. Offset container (col-lg-1 spacer
-   + col-lg-7 content). White card with "From the part of beginning"
-   uppercase h6, paragraph, "Get Started" button.
+   - col-lg-7 content). White card with "From the part of beginning"
+     uppercase h6, paragraph, "Get Started" button.
 7. **Subscription** — Light `#f9f9ff` background. Left: "Subscribe for our
    Newsletter" title + subtext. Right: email input + "Get Started" button.
 8. **Contact Form** — Gradient background section. Section title "Keep in
@@ -102,31 +102,32 @@ Fetched and analyzed on 2026-09-07. The preview HTML is 17,947 bytes,
 
 ### Design tokens (extracted from css/main.css)
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| Font family | `"Poppins", sans-serif` | Body, all text (weights 300, 500, 600) |
-| Body font size | `14px` | Base text |
-| Body font weight | `300` | Light weight base |
-| Body text color | `#777777` | Paragraphs, labels |
-| Heading color | `#222222` | h2, h4, strong |
-| Primary brand gradient | `#3e69fe` → `#4cd4e3` | Hero bg, featured bg, story bg, contact bg, button hover, gradient text |
-| Body background | `linear-gradient(0deg, #4cd4e3, #3e69fe)` | Full page gradient (cyan top → blue bottom) |
-| White | `#fff` | Text on gradient, card backgrounds, button text |
-| Light section bg | `#f9f9ff` | Subscription area |
-| Link/accent | `#3e69fe` | Anchor tags |
-| Button border-radius | `20px` | Pill shape |
-| Button style | transparent bg, 1px white border, white text | `.primary-btn` |
-| Button hover | gradient fill | `.primary-btn:hover:after` |
-| Icon box size | `120px × 120px` | Work process icons |
-| Icon box radius | `3px` | Square-ish with slight rounding |
-| Card shadow | `0px 15px 50px rgba(0,0,0,0.1)` | Remark cards |
-| Story box padding | `60px 90px` | White card in story section |
-| Footer border | `1px solid rgba(255,255,255,0.3)` | Separator above footer |
-| Section padding | `100px 0` | All major sections |
+| Token                  | Value                                        | Usage                                                                   |
+| ---------------------- | -------------------------------------------- | ----------------------------------------------------------------------- |
+| Font family            | `"Poppins", sans-serif`                      | Body, all text (weights 300, 500, 600)                                  |
+| Body font size         | `14px`                                       | Base text                                                               |
+| Body font weight       | `300`                                        | Light weight base                                                       |
+| Body text color        | `#777777`                                    | Paragraphs, labels                                                      |
+| Heading color          | `#222222`                                    | h2, h4, strong                                                          |
+| Primary brand gradient | `#3e69fe` → `#4cd4e3`                        | Hero bg, featured bg, story bg, contact bg, button hover, gradient text |
+| Body background        | `linear-gradient(0deg, #4cd4e3, #3e69fe)`    | Full page gradient (cyan top → blue bottom)                             |
+| White                  | `#fff`                                       | Text on gradient, card backgrounds, button text                         |
+| Light section bg       | `#f9f9ff`                                    | Subscription area                                                       |
+| Link/accent            | `#3e69fe`                                    | Anchor tags                                                             |
+| Button border-radius   | `20px`                                       | Pill shape                                                              |
+| Button style           | transparent bg, 1px white border, white text | `.primary-btn`                                                          |
+| Button hover           | gradient fill                                | `.primary-btn:hover:after`                                              |
+| Icon box size          | `120px × 120px`                              | Work process icons                                                      |
+| Icon box radius        | `3px`                                        | Square-ish with slight rounding                                         |
+| Card shadow            | `0px 15px 50px rgba(0,0,0,0.1)`              | Remark cards                                                            |
+| Story box padding      | `60px 90px`                                  | White card in story section                                             |
+| Footer border          | `1px solid rgba(255,255,255,0.3)`            | Separator above footer                                                  |
+| Section padding        | `100px 0`                                    | All major sections                                                      |
 
 ### Screenshot (`bobsled-creative-website-template.jpg`)
 
 The screenshot shows a creative agency template with:
+
 - Blue-cyan gradient background visible behind all sections
 - Hero area with large white uppercase headline and pill CTA button
 - Working process section on white background with 4 icon steps
@@ -137,97 +138,130 @@ The screenshot shows a creative agency template with:
 - Contact form on gradient
 - Footer with social icons
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Full page renders with gradient background
-```gherkin
-Given the user visits the Glider homepage
-Then the page background should display a blue-to-cyan gradient
-And all sections should be visible in order: navbar, hero, working process,
-     features, remarkable works, story, subscription, contact, footer
-```
+### Requirement: Page renders with gradient background
 
-### Scenario: Navbar displays logo and navigation links
-```gherkin
-Given the user visits the Glider homepage
-Then the navbar should show a logo image on the left
-And navigation links "Home", "Generic", "Elements" should be visible on desktop
-And a hamburger menu icon should be visible on mobile
-```
+The page SHALL display a blue-to-cyan linear gradient background covering the full viewport.
 
-### Scenario: Hero banner shows headline and CTA
-```gherkin
-Given the user visits the Glider homepage
-Then the hero section should display an uppercase headline
-And a subtitle paragraph should appear below the headline
-And a "Get Started" pill button should be visible
-And the hero area should show a decorative illustration on the right
-```
+#### Scenario: Full page renders with gradient background
 
-### Scenario: Working process shows 4 steps with arrows
-```gherkin
-Given the user views the working process section
-Then 4 step cards should be displayed horizontally
-And each card should have an icon and a label
-And the steps should be: Researching, Wireframing, Prototyping, Final Design
-And arrow connectors should appear between the steps
-```
+- **WHEN** the user visits the Glider homepage
+- **THEN** the page background should display a blue-to-cyan gradient
+- **AND** all sections should be visible in order: navbar, hero, working process, features, remarkable works, story, subscription, contact, footer
 
-### Scenario: Features section shows 3 feature cards
-```gherkin
-Given the user views the features section
-Then 3 feature cards should be displayed in a row
-And each card should have a thumbnail image, title, description, and button
-And the section title should read "Our Exclusive Features"
-```
+### Requirement: Navbar displays logo and navigation links
 
-### Scenario: Remarkable works shows alternating layout
-```gherkin
-Given the user views the remarkable works section
-Then 3 portfolio rows should be displayed
-And rows should alternate between image-left/text-right and text-left/image-right
-And each row should have a title, description, and "View Project" button
-And rows should have a box shadow
-```
+The navbar SHALL show a logo, desktop navigation links, and a hamburger menu on mobile.
 
-### Scenario: Story section shows floating card
-```gherkin
-Given the user views the story section
-Then a white card should appear offset from the left
-And the card should contain an uppercase heading, paragraph, and CTA button
-```
+#### Scenario: Navbar displays logo and navigation links
 
-### Scenario: Subscription area accepts email
-```gherkin
-Given the user views the subscription section
-Then a "Subscribe for our Newsletter" heading should be visible
-And an email input field should be present
-And a "Get Started" button should be next to the input
-```
+- **WHEN** the user visits the Glider homepage
+- **THEN** the navbar should show a logo on the left
+- **AND** navigation links "Home", "About", "Services", "Works" should be visible on desktop
+- **AND** a hamburger menu icon should be visible on mobile
 
-### Scenario: Contact form collects user messages
-```gherkin
-Given the user views the contact form section
-Then name and email inputs should be displayed side by side
-And a textarea for messages should be below them
-And a "Send Message" button should be right-aligned below the textarea
-```
+### Requirement: Hero banner shows headline and CTA
 
-### Scenario: Footer shows contact info and social links
-```gherkin
-Given the user views the footer
-Then address, email, and phone information should be displayed in 3 columns
-And social media icons should be visible
-And copyright text should be present
-```
+The hero section SHALL display an uppercase headline, subtitle, pill CTA button, and decorative illustration.
 
-### Scenario: Responsive layout adapts to mobile
-```gherkin
-Given the user views the Glider homepage on a mobile device
-Then the navbar should collapse to a hamburger menu
-And multi-column layouts should stack vertically
-And the story box padding should reduce
-```
+#### Scenario: Hero banner shows headline and CTA
+
+- **WHEN** the user visits the Glider homepage
+- **THEN** the hero section should display an uppercase headline
+- **AND** a subtitle paragraph should appear below the headline
+- **AND** a "Get Started" pill button should be visible
+- **AND** the hero area should show a decorative illustration on the right
+
+### Requirement: Working process shows 4 steps with arrows
+
+The working process section SHALL display 4 steps connected by arrow connectors.
+
+#### Scenario: Working process shows 4 steps with arrows
+
+- **WHEN** the user views the working process section
+- **THEN** 4 step cards should be displayed horizontally
+- **AND** each card should have an icon and a label
+- **AND** the steps should be: Researching, Wireframing, Prototyping, Final Design
+- **AND** arrow connectors should appear between the steps
+
+### Requirement: Features section shows 3 feature cards
+
+The features section SHALL display 3 cards with images, titles, descriptions, and buttons.
+
+#### Scenario: Features section shows 3 feature cards
+
+- **WHEN** the user views the features section
+- **THEN** 3 feature cards should be displayed in a row
+- **AND** each card should have a thumbnail image, title, description, and button
+- **AND** the section title should read "Our Exclusive Features"
+
+### Requirement: Remarkable works shows alternating layout
+
+The remarkable works section SHALL display 3 portfolio rows with alternating image/text layout.
+
+#### Scenario: Remarkable works shows alternating layout
+
+- **WHEN** the user views the remarkable works section
+- **THEN** 3 portfolio rows should be displayed
+- **AND** rows should alternate between image-left/text-right and text-left/image-right
+- **AND** each row should have a title, description, and "View Project" button
+- **AND** rows should have a box shadow
+
+### Requirement: Story section shows floating card
+
+The story section SHALL display a white card offset from the left with content.
+
+#### Scenario: Story section shows floating card
+
+- **WHEN** the user views the story section
+- **THEN** a white card should appear offset from the left
+- **AND** the card should contain an uppercase heading, paragraph, and CTA button
+
+### Requirement: Subscription area accepts email
+
+The subscription section SHALL display a newsletter heading, email input, and button.
+
+#### Scenario: Subscription area accepts email
+
+- **WHEN** the user views the subscription section
+- **THEN** a "Subscribe for our Newsletter" heading should be visible
+- **AND** an email input field should be present
+- **AND** a "Get Started" button should be next to the input
+
+### Requirement: Contact form collects user messages
+
+The contact section SHALL display a form with name, email, textarea, and send button.
+
+#### Scenario: Contact form collects user messages
+
+- **WHEN** the user views the contact form section
+- **THEN** name and email inputs should be displayed side by side
+- **AND** a textarea for messages should be below them
+- **AND** a "Send Message" button should be right-aligned below the textarea
+
+### Requirement: Footer shows contact info and social links
+
+The footer SHALL display 3-column contact info, social icons, copyright, and Component Dock link.
+
+#### Scenario: Footer shows contact info and social links
+
+- **WHEN** the user views the footer
+- **THEN** address, email, and phone information should be displayed in 3 columns
+- **AND** social media icons should be visible
+- **AND** copyright text should be present
+- **AND** a link to Component Dock should be present
+
+### Requirement: Responsive layout adapts to mobile
+
+The template SHALL be responsive with hamburger nav, stacked columns, and reduced padding on mobile.
+
+#### Scenario: Responsive layout adapts to mobile
+
+- **WHEN** the user views the Glider homepage on a mobile device
+- **THEN** the navbar should collapse to a hamburger menu
+- **AND** multi-column layouts should stack vertically
+- **AND** the story box padding should reduce
 
 ## Verification checklist
 
