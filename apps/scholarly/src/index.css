@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Scholarly brand colors — from the ColorLib "Education Wordpress Themes"
+     screenshot analysis:
+     a university/education theme with a dark navy top bar,
+     green accent (#4CAF50), white navbar, and hero with image overlay. */
+  --color-primary-50: #e8f5e9;
+  --color-primary-100: #c8e6c9;
+  --color-primary-200: #a5d6a7;
+  --color-primary-300: #81c784;
+  --color-primary-400: #4caf50;
+  --color-primary-500: #43a047;
+  --color-primary-600: #388e3c;
+  --color-primary-700: #2e7d32;
+  --color-primary-800: #1b5e20;
+  --color-primary-900: #0d3311;
+
+  /* Dark navy backgrounds. */
+  --color-navy-800: #1a1a2e;
+  --color-navy-900: #12121f;
+
+  /* Muted body text. */
+  --color-smoke: #666666;
+
+  --color-ink: #222222;
+
+  /* Playfair Display (headings) + Roboto (body) via Google Fonts <link>
+     in index.html — matching the ColorLib font pairing. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
