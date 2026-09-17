@@ -12,134 +12,179 @@ Recreation of the ColorLib **Whitespace** template as a React 19 + Vite + Tailwi
 - **Deploy target:** `https://blankslate.free.componentdock.com`
 - **Stack:** Vite (latest) · React 19 · Tailwind CSS 4 · TypeScript (strict)
 
-## Design Tokens
+## Design reference (replication findings)
 
 Extracted from the live preview CSS (`css/style.css`) at https://preview.colorlib.com/theme/whitespace/:
 
-### Colors
+- **Brand Yellow:** `#fcd307` — CTA buttons, service icon backgrounds, testimonials section bg
+- **Brand Blue:** `#4ac7ea` / `#78d5ef` — secondary accent
+- **Dark BG:** `#141313` / `#000000` — navbar, hero, projects, footer
+- **Light BG:** `#f8f9fa` / `#fafafa` — pricing section
+- **Fonts:** Poppins (headings, 600/700), Work Sans (body, 400/500) via Google Fonts
+- **Buttons:** pill-shaped (border-radius: 30px), yellow bg
 
-| Token | Value | Usage |
-|---|---|---|
-| Brand Yellow | `#fcd307` | CTA buttons, service icon backgrounds, testimony section bg, pricing highlights |
-| Brand Blue | `#4ac7ea` / `#78d5ef` | Secondary accent, links, icon accents |
-| Dark BG | `#141313` / `#000000` | Navbar, hero, project section, footer |
-| Light BG | `#f8f9fa` / `#fafafa` | Pricing section bg (bg-light) |
-| White | `#ffffff` | Content areas, card backgrounds |
-| Text Primary | `#1a1a1a` / `#000000` | Headings, body text |
-| Text Secondary | `#666666` / `#4d4d4d` | Paragraphs, descriptions |
-| Text Muted | `#b3b3b3` | Subtle text |
+**Section order (1:1 from live DOM):**
 
-### Typography
+1. Navbar — dark bg, logo 'BlankSlate', links: Home, About, Work, Pricing, Blog, Contact
+2. Hero — dark bg, 'We Help to Build You the Product' (h1), 'Business Solution' (h2), 'Get in touch' yellow pill CTA
+3. About — two-col (text left, image right), 'What We Can Do for You', 7 service items
+4. Services — 4 icon cards with yellow icon bg
+5. Counter — bg image, 'Interesting Facts', 4 stat counters
+6. Projects — 'Recent Projects', 6 project cards
+7. Testimonials — yellow (#fcd307) bg, 'My satisfied customer says', 3 testimonials
+8. Case Study — 'Case Study', 3 cards
+9. Pricing — light bg, 'Our Best Pricing', 4 tiers: Free/$0, Startup, Premium, Pro
+10. Partner — logo area
+11. Footer — dark bg, 4-col: logo, Useful Links, Quick Links, Contact, Component Dock link
 
-| Element | Font | Weight |
-|---|---|---|
-| Body | `Work Sans`, sans-serif | 400, 500 |
-| Headings | `Poppins`, sans-serif | 600, 700 |
+## Requirements
 
-### Border Radii
+### Requirement: Navigation bar
 
-| Element | Radius |
-|---|---|
-| Buttons | `30px` (pill-shaped) |
-| Cards | `0.25rem` / `5px` |
-| Circular elements | `50%` |
+The system SHALL render a top navigation bar with the site name "BlankSlate", anchor links to page sections, and a dark background.
 
-### Layout
+#### Scenario: Navbar content
 
-- **Navbar:** Dark background, fixed/sticky, logo left, nav links right, transparent-to-solid on scroll
-- **Hero:** Full-width dark background with centered text, "Get in touch" CTA
-- **About section:** Two-column layout (image right, text left) with service list items (icon + title + description)
-- **Services grid:** 4-column responsive grid with icon cards on yellow accent backgrounds
-- **Counter section:** Full-width background image with overlapping stat numbers
-- **Projects:** 3-column grid of project cards with hover overlay
-- **Testimonials:** Yellow (`#fcd307`) background, carousel/slider of testimonial cards
-- **Case Study:** 3-column card grid with featured image and description
-- **Pricing:** Light background, 4 pricing tiers (Free, Startup, Premium, Pro) with feature lists
-- **Partner:** Logo carousel on white background
-- **Footer:** Dark background, 4-column layout (logo, useful links, quick links, contact)
+- **GIVEN** the BlankSlate page is rendered
+- **WHEN** the page loads
+- **THEN** the navbar SHALL show the site name "BlankSlate" and links to Home, About, Work, Pricing, Blog, Contact
+- **AND** the navbar SHALL have a dark background
 
-## Gherkin Requirements
+### Requirement: Hero section
 
-### Feature: BlankSlate Template
+The system SHALL render a full-width dark hero with a headline, subheading, and a "Get in touch" CTA button.
 
-  Background:
-    Given the user visits "https://blankslate.free.componentdock.com"
-    And the page loads successfully
+#### Scenario: Hero content
 
-  Scenario: Navbar renders correctly
-    Then the navbar is visible at the top
-    And the logo text "BlankSlate" is displayed
-    And navigation links "Home", "About", "Work", "Pricing", "Blog", "Contact" are present
-    And the navbar has a dark background
+- **GIVEN** the page is rendered
+- **WHEN** the user views the hero section
+- **THEN** the heading "We Help to Build You the Product" SHALL be displayed
+- **AND** the subheading "Business Solution" SHALL be displayed
+- **AND** a "Get in touch" button SHALL be visible and styled as a yellow pill button
 
-  Scenario: Hero section displays
-    Then the hero section is visible
-    And the heading "We Help to Build You the Product" is displayed
-    And the subheading "Business Solution" is displayed
-    And a "Get in touch" button is visible and styled as a yellow pill button
+### Requirement: About section
 
-  Scenario: About section displays service list
-    Then the about section is visible
-    And the heading "What We Can Do for You" is displayed
-    And 7 service items are listed: Market Research, Financial Services, Online Marketing, 24/7 Support, Business Strategy, Data Analysis, Graphic Design
-    And each service item has an icon, title, and description
+The system SHALL render a two-column about section with service list items.
 
-  Scenario: Services grid displays
-    Then the services grid section is visible
-    And 4 service cards are displayed in a grid
-    And each card has an icon with yellow background and a description
+#### Scenario: About content
 
-  Scenario: Counter/facts section displays
-    Then the counter section is visible with a background image
-    And the heading "Interesting Facts" is displayed
-    And at least 4 numeric counters are shown
+- **GIVEN** the page is rendered
+- **WHEN** the user scrolls to the about section
+- **THEN** the heading "What We Can Do for You" SHALL be displayed
+- **AND** 7 service items SHALL be listed: Market Research, Financial Services, Online Marketing, 24/7 Support, Business Strategy, Data Analysis, Graphic Design
 
-  Scenario: Projects gallery displays
-    Then the projects section is visible
-    And the heading "Recent Projects" is displayed
-    And 6 project cards are displayed in a grid
-    And each card shows "Branding & Illustration Design"
-    And hovering a card shows an overlay with description
+### Requirement: Services grid
 
-  Scenario: Testimonials section displays
-    Then the testimonials section is visible
-    And the heading "My satisfied customer says" is displayed
-    And the section has a yellow (#fcd307) background
-    And at least 3 testimonial items are shown with name and role
+The system SHALL render a 4-column responsive grid of service icon cards.
 
-  Scenario: Case study section displays
-    Then the case study section is visible
-    And the heading "Case Study" is displayed
-    And 3 case study cards are shown
+#### Scenario: Services content
 
-  Scenario: Pricing section displays
-    Then the pricing section is visible on a light background
-    And the heading "Our Best Pricing" is displayed
-    And 4 pricing tiers are shown: Free, Startup, Premium, Pro
-    And each tier has a "Get Started" button
-    And the Free tier is highlighted as "$0" / "100% free. Forever"
+- **GIVEN** the page is rendered
+- **WHEN** the user views the services section
+- **THEN** 4 service cards SHALL be displayed in a grid
+- **AND** each card SHALL have an icon with yellow background and a description
 
-  Scenario: Partner section displays
-    Then the partner section is visible
-    And a carousel of partner/client logos is displayed
+### Requirement: Counter section
 
-  Scenario: Footer displays
-    Then the footer is visible with dark background
-    And columns for logo, Useful Links, Quick Links, and Contact are shown
-    And the footer links include: Home, About, Work, Pricing, Blog
-    And a "Component Dock" link is present in the footer
+The system SHALL render a counter/facts section with animated count-up numbers.
 
-  Scenario: Responsive behavior
-    Given the viewport width is 768px
-    Then the navbar collapses to a hamburger menu
-    And service items stack vertically
-    And project cards display in 2 columns
-    And pricing tiers stack vertically
+#### Scenario: Counter content
 
-  Scenario: Dark mode support
-    Given the user toggles dark mode
-    Then the background colors invert appropriately
-    And text contrast remains readable
+- **GIVEN** the page is rendered
+- **WHEN** the user scrolls to the counter section
+- **THEN** the heading "Interesting Facts" SHALL be displayed
+- **AND** at least 4 numeric counters SHALL be shown
+
+### Requirement: Projects gallery
+
+The system SHALL render a projects section with a grid of project cards.
+
+#### Scenario: Projects content
+
+- **GIVEN** the page is rendered
+- **WHEN** the user views the projects section
+- **THEN** the heading "Recent Projects" SHALL be displayed
+- **AND** 6 project cards SHALL be displayed in a grid
+
+### Requirement: Testimonials section
+
+The system SHALL render a testimonials section with a yellow background and customer quotes.
+
+#### Scenario: Testimonials content
+
+- **GIVEN** the page is rendered
+- **WHEN** the user views the testimonials section
+- **THEN** the heading "My satisfied customer says" SHALL be displayed
+- **AND** the section SHALL have a yellow (#fcd307) background
+- **AND** at least 3 testimonial items SHALL be shown with name and role
+
+### Requirement: Case study section
+
+The system SHALL render a case study section with cards.
+
+#### Scenario: Case study content
+
+- **GIVEN** the page is rendered
+- **WHEN** the user views the case study section
+- **THEN** the heading "Case Study" SHALL be displayed
+- **AND** 3 case study cards SHALL be shown
+
+### Requirement: Pricing section
+
+The system SHALL render a pricing section on a light background with 4 tiers.
+
+#### Scenario: Pricing content
+
+- **GIVEN** the page is rendered
+- **WHEN** the user views the pricing section
+- **THEN** the heading "Our Best Pricing" SHALL be displayed
+- **AND** 4 pricing tiers SHALL be shown: Free, Startup, Premium, Pro
+- **AND** each tier SHALL have a "Get Started" button
+- **AND** the Free tier SHALL be highlighted as "$0"
+
+### Requirement: Partner section
+
+The system SHALL render a partner section with client logos.
+
+#### Scenario: Partner content
+
+- **GIVEN** the page is rendered
+- **WHEN** the user views the partner section
+- **THEN** a display of partner/client logos SHALL be shown
+
+### Requirement: Footer
+
+The system SHALL render a dark footer with 4 columns and a Component Dock link.
+
+#### Scenario: Footer content
+
+- **GIVEN** the page is rendered
+- **WHEN** the user scrolls to the footer
+- **THEN** columns for logo, Useful Links, Quick Links, and Contact SHALL be shown
+- **AND** a "Component Dock" link to https://www.componentdock.com/ SHALL be present
+
+### Requirement: Responsive layout
+
+The system SHALL be responsive with proper breakpoints for mobile and desktop.
+
+#### Scenario: Responsive behavior
+
+- **GIVEN** the viewport width is 768px
+- **WHEN** the page is rendered
+- **THEN** the navbar SHALL collapse to a hamburger menu
+- **AND** service items SHALL stack vertically
+- **AND** project cards SHALL display in 2 columns
+
+### Requirement: Dark mode
+
+The system SHALL support dark mode via a class-based toggle.
+
+#### Scenario: Dark mode support
+
+- **GIVEN** the user toggles dark mode
+- **WHEN** the dark mode is activated
+- **THEN** the background colors SHALL invert appropriately
+- **AND** text contrast SHALL remain readable
 
 ## Verification Checklist
 
