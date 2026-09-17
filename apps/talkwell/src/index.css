@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Talkwell brand indigo — inspired by the original Contact Form 20
+     clean, professional contact form design. */
+  --color-brand: #5c6bc0;
+
+  --color-primary-50: #e8eaf6;
+  --color-primary-100: #c5cae9;
+  --color-primary-200: #9fa8da;
+  --color-primary-300: #7986cb;
+  --color-primary-400: #5c6bc0;
+  --color-primary-500: #5c6bc0;
+  --color-primary-600: #515aa6;
+  --color-primary-700: #464d8c;
+  --color-primary-800: #3b4072;
+  --color-primary-900: #303358;
+  --color-primary-950: #1a1b30;
+
+  /* Poppins font via Google Fonts (loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
