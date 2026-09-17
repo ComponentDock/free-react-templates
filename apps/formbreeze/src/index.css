@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-blue-start: #0072ff;
+  --color-brand-blue-end: #00c6ff;
+  --color-brand-green: #57b846;
+  --color-brand-green-hover: #46a035;
+  --color-bg-card: #ffffff;
+  --color-bg-input: #e6e6e6;
+  --color-text-dark: #333333;
+  --color-text-muted: #666666;
+  --color-text-placeholder: #999999;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
