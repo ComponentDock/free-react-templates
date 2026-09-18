@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Molars brand colors — from the ColorLib Dentures preview:
+     a dental clinic theme with teal #12cad6 primary,
+     body text #4d4d4d, footer #333, Raleway font. */
+  --color-primary-50: #e0fafb;
+  --color-primary-100: #b3f2f5;
+  --color-primary-200: #80e9ee;
+  --color-primary-300: #4de0e7;
+  --color-primary-400: #12cad6;
+  --color-primary-500: #0fb4bf;
+  --color-primary-600: #0d9da8;
+  --color-primary-700: #0a7d85;
+  --color-primary-800: #075d62;
+  --color-primary-900: #043d3f;
+
+  /* Body text. */
+  --color-ink: #4d4d4d;
+
+  /* Footer colors. */
+  --color-footer: #333333;
+  --color-footer-muted: #737373;
+  --color-footer-link: #999999;
+
+  /* Raleway (headings + body) via Google Fonts — matching the ColorLib font. */
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+}
