@@ -1546,7 +1546,7 @@
 - [x] **Listio** — [colorlib](https://colorlib.com/wp/template/listio/) · [listhub](https://listhub.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listio-free-template.jpg)
 - [x] **Locals Directory** — [colorlib](https://colorlib.com/wp/template/locals-directory/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/localsdirectory-free-template.jpg) · [hoodly](https://hoodly.free.componentdock.com)
 - [x] **Mondy** — [colorlib](https://colorlib.com/wp/template/mondy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mondy-free-template.jpg) · [estately](https://estately.free.componentdock.com)
-- [~] **Myhome** — [colorlib](https://colorlib.com/wp/template/myhome/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/myhome-free-template.jpg)
+- [x] **Myhome** — [colorlib](https://colorlib.com/wp/template/myhome/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/myhome-free-template.jpg) · [roofmark](https://roofmark.free.componentdock.com)
 - [x] **Rehomes** — [colorlib](https://colorlib.com/wp/template/rehomes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rehomes-free-template.jpg) · [dwellix](https://dwellix.free.componentdock.com)
 - [ ] **Royalestate** — [colorlib](https://colorlib.com/wp/template/royalestate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/royalestate-free-template.jpg)
 - [ ] **Travelers** — [colorlib](https://colorlib.com/wp/template/travelers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelers-free-template.jpg)
