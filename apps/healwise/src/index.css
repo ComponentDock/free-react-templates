@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #2f89fc;
+  --color-brand-dark: #2470cc;
+
+  --color-ink: #212529;
+  --color-ink-dark: #1a1c1f;
+
+  --color-paper: #f8f9fa;
+
+  --color-mist: #6c757d;
+
+  --color-footer-bg: #1c1d21;
+
+  --color-page: #ffffff;
+
+  --color-footer-link: #878a8f;
+
+  --color-primary-50: #eef5ff;
+  --color-primary-100: #d4e5ff;
+  --color-primary-200: #b8d5ff;
+  --color-primary-300: #8ac1ff;
+  --color-primary-400: #2f89fc;
+  --color-primary-500: #2470cc;
+  --color-primary-600: #1b59a3;
+  --color-primary-700: #14427a;
+  --color-primary-800: #0e2e54;
+  --color-primary-900: #071a2e;
+
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Work Sans', ui-serif, Georgia, serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-page);
+  color: var(--color-mist);
+  line-height: 1.7;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-ink);
+  font-weight: 700;
+}
