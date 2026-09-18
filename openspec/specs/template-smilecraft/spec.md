@@ -15,172 +15,213 @@ Extracted from the live preview's stylesheets (`css/style.css`).
 
 ### Fonts
 
-| Role         | Font family                          | Weights        |
-| ------------ | ------------------------------------ | -------------- |
-| Body / UI    | Work Sans, sans-serif                | 300, 400, 700  |
+| Role      | Font family           | Weights       |
+| --------- | --------------------- | ------------- |
+| Body / UI | Work Sans, sans-serif | 300, 400, 700 |
 
 Use Google Fonts `<link>` for Work Sans.
 
 ### Colors
 
-| Token               | Hex / Value           | Usage                                        |
-| ------------------- | --------------------- | -------------------------------------------- |
-| primary             | `#78d5ef` (light blue)| Buttons, links, section accents              |
-| price blue          | `#2f89fc` (blue)      | Pricing amounts, parallax gradient start     |
-| gradient teal       | `#2cbcbc` (teal)      | Parallax gradient end, secondary accent      |
-| gradient green      | `#00dc94` (green)     | Section overlay gradient end                 |
-| background          | `#FFFFFF` (white)     | Main content sections                        |
-| dark brown          | `#3c312e`             | Dark section backgrounds                     |
-| footer bg           | `#191919` (charcoal)  | Footer background                            |
-| text primary        | `#212529`             | Body text                                    |
-| text muted          | `#6c757d`             | Secondary text                               |
-| hero overlay        | `rgba(0,0,0,0.2)`    | Light overlay on hero images                 |
-| hero text           | `#FFFFFF`             | Hero headings and body text                  |
-| hero body           | `rgba(255,255,255,0.8)` | Hero paragraph text                       |
-| border light        | `#f0f0f0`             | Pricing card borders                         |
-| border table        | `#dee2e6`             | Table borders                                |
-| footer text         | `rgba(255,255,255,0.7)` | Footer paragraph and link text            |
-| footer heading      | `#FFFFFF`             | Footer section headings                      |
-| footer link hover   | `#FFFFFF`             | Footer link hover                            |
-| light bg            | `#f8f9fa`             | Light section backgrounds                    |
-
-### Buttons
-
-- **Primary** (`.btn-primary`): bg `#78d5ef`, border `#78d5ef`. Hover → darker shade.
-- **Footer primary**: white bg, white border (inverted for dark footer).
-- **Appointment form submit**: No border-radius (square), bottom border style.
+| Token          | Hex / Value            | Usage                                    |
+| -------------- | ---------------------- | ---------------------------------------- |
+| primary        | `#78d5ef` (light blue) | Buttons, links, section accents          |
+| price blue     | `#2f89fc` (blue)       | Pricing amounts, parallax gradient start |
+| gradient teal  | `#2cbcbc` (teal)       | Parallax gradient end, secondary accent  |
+| gradient green | `#00dc94` (green)      | Section overlay gradient end             |
+| background     | `#FFFFFF` (white)      | Main content sections                    |
+| dark brown     | `#3c312e`              | Dark section backgrounds                 |
+| footer bg      | `#191919` (charcoal)   | Footer background                        |
+| text primary   | `#212529`              | Body text                                |
+| text muted     | `#6c757d`              | Secondary text                           |
+| light bg       | `#f8f9fa`              | Light section backgrounds                |
 
 ### Layout
 
-- **Navbar**: Transparent overlay on hero (absolute positioned, desktop). Black bg on mobile. Logo "DentaCare" white. Nav links white, 13px, uppercase.
-- **Hero**: Owl Carousel, 700px height, background images with light black overlay (0.2 opacity). Centered white text: 40px heading + 20px paragraph with breadcrumbs above.
-- **Emergency/Hours strip**: Dark brown bg (`#3c312e`), two columns: Emergency Cases (phone) + Opening Hours.
-- **Appointment form**: Dark bg with form fields (name, phone, date, time, dropdown). White text, bottom-border inputs.
-- **Services**: "Our Service Keeps you Smile" heading, 4-column grid (Teeth Whitening, Teeth Cleaning, Quality Brackets, Modern Anesthetic).
-- **About section**: "Dentacare with a personal touch" heading, image left + text right with 3 feature cards (Well Experience Dentist, High Technology Facilities, Comfortable Clinics).
-- **Team**: "Meet Our Experience Dentist" heading, 4-column grid of dentist cards (Tom Smith, Mark Wilson, Patrick Jacobson, Ivan Dorchsner).
+- **Navbar**: Transparent overlay on hero (desktop). Black bg on mobile. Logo "Smilecraft" white.
+- **Hero**: Full-width background image with rgba(0,0,0,0.2) overlay. White heading + paragraph + CTA button.
+- **Emergency/Hours strip**: Dark brown bg (`#3c312e`), two columns.
+- **Appointment form**: Dark bg with form fields. White text, bottom-border inputs.
+- **Services**: 4-column grid (Teeth Whitening, Teeth Cleaning, Quality Brackets, Modern Anesthetic).
+- **About**: Image left + text right with 3 feature cards.
+- **Team**: 4-column grid of dentist cards.
 - **Achievements**: Counter/stats section with gradient bg (blue→teal).
-- **Pricing**: 4 cards (Basic, Standard, Premium, Platinum). Light border, blue price. Premium has gradient bg overlay (blue→teal).
-- **Newsletter**: "Subscribe to our Newsletter" with email input.
-- **Testimonials**: "Testimony" heading, carousel of reviews.
-- **Blog**: "Latest Blog" heading, 3-column blog cards.
-- **Footer**: Dark bg (#191919), 4 columns (About, Quick Links, Services, Newsletter). Copyright bar.
+- **Pricing**: 4 cards. Light border, blue price. Premium has gradient overlay.
+- **Newsletter**: Gradient bg (blue→green). Email input.
+- **Testimonials**: Carousel of review cards.
+- **Blog**: 3-column blog cards.
+- **Footer**: Dark bg (#191919), 4 columns. Copyright bar. Links to Component Dock.
 
-### Section backgrounds
+## Requirements
 
-| Section              | Background                                    |
-| -------------------- | --------------------------------------------- |
-| Body                 | `#FFFFFF`                                     |
-| Navbar (desktop)     | Transparent (over hero)                       |
-| Navbar (mobile)      | `#000000`                                     |
-| Hero                 | Image + `rgba(0,0,0,0.2)` overlay             |
-| Emergency/Hours      | `#3c312e` (dark brown)                        |
-| Services             | White                                         |
-| About                | White                                         |
-| Team                 | `#f8f9fa` (light)                             |
-| Achievements         | Gradient `#2f89fc` → `#2cbcbc`                |
-| Pricing              | White                                         |
-| Newsletter           | Gradient `#2f89fc` → `#00dc94` (blue→green)  |
-| Testimonials         | `#f8f9fa` (light)                             |
-| Blog                 | White                                         |
-| Footer               | `#191919` (charcoal)                          |
+### Requirement: Navigation bar
 
-## Gherkin requirements
+The system SHALL render a top navigation bar with the site name "Smilecraft", anchor links to the page sections, and a mobile hamburger toggle.
 
-```gherkin
-Feature: Smilecraft dental clinic website
+#### Scenario: Navbar content on desktop
 
-  Background:
-    Given the user loads the Smilecraft page
+- **GIVEN** the Smilecraft page is rendered
+- **WHEN** the page loads
+- **THEN** the navbar shows the logo "Smilecraft" in white
+- **AND** nav links appear: Home, About, Services, Doctors, Pricing, Blog, Contact
+- **AND** the navbar is transparent over the hero
 
-  Scenario: Transparent navbar overlays hero
-    Then a transparent navbar is positioned over the hero
-    And the logo "Smilecraft" is shown in white
-    And nav links appear: Home, About, Services, Doctors, Pricing, Blog, Contact
-    And on mobile the navbar becomes black with hamburger toggle
+#### Scenario: Mobile navbar toggle
 
-  Scenario: Hero carousel displays
-    Then a full-width hero carousel shows background images
-    And each slide has a light dark overlay (0.2 opacity)
-    And each slide shows white heading text and paragraph
-    And breadcrumbs appear above the heading
+- **GIVEN** the Smilecraft page is rendered on a mobile viewport
+- **WHEN** the user taps the hamburger menu button
+- **THEN** the mobile navigation menu opens
+- **AND** the navbar background becomes black
 
-  Scenario: Emergency and hours strip
-    Then a dark brown strip shows "Emergency Cases" with phone number
-    And "Opening Hours" shows the clinic schedule
-    And the strip uses brown (#3c312e) background
+### Requirement: Hero section
 
-  Scenario: Appointment form section
-    Then an appointment form appears with fields: Name, Phone, Date, Time, Select
-    And form inputs have white text with bottom borders
-    And a submit button is styled with primary blue
+The system SHALL render a full-width hero section with background images, white text overlay, and a call-to-action button.
 
-  Scenario: Services section
-    Then "Our Service Keeps you Smile" heading is displayed
-    And 4 service cards are shown: Teeth Whitening, Teeth Cleaning, Quality Brackets, Modern Anesthetic
-    And each card has an icon, heading, and description
+#### Scenario: Hero content
 
-  Scenario: About section
-    Then "Dentacare with a personal touch" heading is shown
-    And an image appears on the left
-    And 3 feature cards appear on the right: Well Experience Dentist, High Technology Facilities, Comfortable Clinics
+- **GIVEN** the Smilecraft page is rendered
+- **WHEN** the hero section is visible
+- **THEN** the heading "Modern Dentistry in a Calm and Relaxed Environment" is displayed
+- **AND** a descriptive paragraph is shown below the heading
+- **AND** a "Make an Appointment" button is displayed
+- **AND** breadcrumbs appear above the heading
 
-  Scenario: Team section
-    Then "Meet Our Experience Dentist" heading is displayed
-    And 4 dentist cards are shown with photos and names
-    And names are: Tom Smith, Mark Wilson, Patrick Jacobson, Ivan Dorchsner
+### Requirement: Emergency and hours strip
 
-  Scenario: Achievements counter section
-    Then a gradient section (blue→teal) shows achievement counters
-    And the gradient goes from #2f89fc to #2cbcbc
+The system SHALL display a dark brown strip with emergency contact information and clinic opening hours.
 
-  Scenario: Pricing section shows 4 plans
-    Then 4 pricing cards are displayed: Basic, Standard, Premium, Platinum
-    And each card has a light border (#f0f0f0)
-    And prices are shown in blue (#2f89fc)
-    And the Premium card has a gradient overlay (blue→teal)
+#### Scenario: Emergency strip content
 
-  Scenario: Newsletter section
-    Then "Subscribe to our Newsletter" heading is shown
-    And a gradient background (blue→green) is displayed
-    And an email input with subscribe button is provided
+- **GIVEN** the Smilecraft page is rendered
+- **WHEN** the emergency strip is visible
+- **THEN** "Emergency Cases" heading is shown with phone number "+123-456-7890"
+- **AND** "Opening Hours" shows the clinic schedule (Mon-Fri 8-19, Sat 10-17, Sun 10-16)
+- **AND** the strip uses dark brown (#3c312e) background
 
-  Scenario: Testimonials section
-    Then "Testimony" heading is displayed
-    And a carousel of review cards is shown
+### Requirement: Appointment form
 
-  Scenario: Blog section
-    Then "Latest Blog" heading is shown
-    And 3 blog cards are displayed with images and titles
+The system SHALL render an appointment booking form with fields for department, name, email, date, time, and phone.
 
-  Scenario: Footer
-    Then a dark footer (#191919) is displayed
-    And columns show: About, Quick Links, Services, Newsletter
-    And footer links point to Component Dock
-    And a copyright bar is shown
+#### Scenario: Form fields
 
-  Scenario: Responsive behavior
-    When the viewport is below 992px
-    Then the navbar switches to mobile hamburger
-    And multi-column grids stack to fewer columns
-```
+- **GIVEN** the Smilecraft page is rendered
+- **WHEN** the appointment form section is visible
+- **THEN** form inputs are displayed: Department dropdown, Name, Email, Date, Time, Phone
+- **AND** a submit button styled with primary blue is shown
 
-## Verification checklist
+### Requirement: Services section
 
-- [ ] Transparent navbar over hero (desktop), black navbar (mobile)
-- [ ] Hero carousel with background images, light overlay, white text
-- [ ] Emergency/Hours dark brown strip
-- [ ] Appointment form with dark bg, white text inputs
-- [ ] Services 4-column grid (Teeth Whitening, etc.)
-- [ ] About section with image + feature cards
-- [ ] Team 4-column dentist grid
-- [ ] Achievements gradient counter section
-- [ ] Pricing 4 cards (Basic/Standard/Premium/Platinum)
-- [ ] Newsletter gradient section (blue→green)
-- [ ] Testimonials carousel
-- [ ] Blog 3-column grid
-- [ ] Dark footer (#191919) with columns + Component Dock link
-- [ ] Brand blue #78d5ef / #2f89fc used consistently
-- [ ] Work Sans font loaded
-- [ ] Responsive at 992px breakpoint
-- [ ] No ColorLib references in app code
+The system SHALL display a services section with a heading and four service cards in a grid layout.
+
+#### Scenario: Services grid
+
+- **GIVEN** the Smilecraft page is rendered
+- **WHEN** the services section is visible
+- **THEN** the heading "Our Service Keeps You Smile" is displayed
+- **AND** 4 service cards are shown: Teeth Whitening, Teeth Cleaning, Quality Brackets, Modern Anesthetic
+- **AND** each card has an icon, heading, and description
+
+### Requirement: About section
+
+The system SHALL display an about section with an image and feature cards describing the clinic's strengths.
+
+#### Scenario: About content
+
+- **GIVEN** the Smilecraft page is rendered
+- **WHEN** the about section is visible
+- **THEN** the heading "Smilecraft with a Personal Touch" is shown
+- **AND** 3 feature cards appear: Well Experience Dentist, High Technology Facilities, Comfortable Clinics
+
+### Requirement: Team section
+
+The system SHALL display a team section showing dentist profiles in a grid layout.
+
+#### Scenario: Team grid
+
+- **GIVEN** the Smilecraft page is rendered
+- **WHEN** the team section is visible
+- **THEN** the heading "Meet Our Experienced Dentist" is displayed
+- **AND** 4 dentist cards are shown with photos and names
+- **AND** the names are: Tom Smith, Mark Wilson, Patrick Jacobson, Ivan Dorchsner
+
+### Requirement: Achievements counter
+
+The system SHALL display a gradient section with achievement counters.
+
+#### Scenario: Achievements content
+
+- **GIVEN** the Smilecraft page is rendered
+- **WHEN** the achievements section is visible
+- **THEN** a gradient section (blue→teal) shows counter stats
+- **AND** the stats include: 1500+ Happy Patients, 50+ Expert Doctors, 30+ Awards, 24/7 Emergency Care
+
+### Requirement: Pricing section
+
+The system SHALL display four pricing cards with different tiers.
+
+#### Scenario: Pricing cards
+
+- **GIVEN** the Smilecraft page is rendered
+- **WHEN** the pricing section is visible
+- **THEN** 4 pricing cards are displayed: Basic, Standard, Premium, Platinum
+- **AND** each card has a light border (#f0f0f0)
+- **AND** prices are shown in blue (#2f89fc)
+- **AND** the Premium card has a gradient overlay
+
+### Requirement: Newsletter section
+
+The system SHALL display a newsletter subscription section with a gradient background.
+
+#### Scenario: Newsletter form
+
+- **GIVEN** the Smilecraft page is rendered
+- **WHEN** the newsletter section is visible
+- **THEN** the heading "Subscribe to our Newsletter" is shown
+- **AND** a gradient background (blue→green) is displayed
+- **AND** an email input with subscribe button is provided
+
+### Requirement: Testimonials section
+
+The system SHALL display a testimonials section with review cards.
+
+#### Scenario: Testimonials content
+
+- **GIVEN** the Smilecraft page is rendered
+- **WHEN** the testimonials section is visible
+- **THEN** the heading "What Our Patients Say" is displayed
+- **AND** review cards with quotes, names, and star ratings are shown
+
+### Requirement: Blog section
+
+The system SHALL display a blog section with article preview cards.
+
+#### Scenario: Blog grid
+
+- **GIVEN** the Smilecraft page is rendered
+- **WHEN** the blog section is visible
+- **THEN** the heading "Latest Blog" is shown
+- **AND** 3 blog cards are displayed with images, dates, and titles
+
+### Requirement: Footer
+
+The system SHALL display a dark footer with link columns and a Component Dock attribution.
+
+#### Scenario: Footer content
+
+- **GIVEN** the Smilecraft page is rendered
+- **WHEN** the footer is visible
+- **THEN** a dark footer (#191919) is displayed
+- **AND** columns show: About, Quick Links, Services, Newsletter
+- **AND** a "Made with Component Dock" link points to https://www.componentdock.com/
+- **AND** a copyright bar is shown
+
+### Requirement: Responsive design
+
+The system SHALL be responsive across desktop and mobile viewports.
+
+#### Scenario: Mobile layout
+
+- **GIVEN** the Smilecraft page is rendered on a viewport below 992px
+- **WHEN** the page loads
+- **THEN** the navbar switches to a mobile hamburger menu
+- **AND** multi-column grids stack to fewer columns
