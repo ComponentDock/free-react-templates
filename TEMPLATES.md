@@ -1514,7 +1514,7 @@
 - [x] **Drcare** — [colorlib](https://colorlib.com/wp/template/drcare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/drcare-free-template.jpg) · [healwise](https://free-react-templates-healwise.surge.sh)
 - [x] **Prodent** — [colorlib](https://colorlib.com/wp/template/prodent/) · [glint](https://glint.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/prodent-free-template.jpg)
 - [x] **Toothcare** — [colorlib](https://colorlib.com/wp/template/toothcare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/toothcare-free-template.jpg) · [odonto](https://odonto.free.componentdock.com)
-- [~] **Toothsy** — [colorlib](https://colorlib.com/wp/template/toothsy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/toothsy-free-template.jpg)
+- [x] **Toothsy** — [colorlib](https://colorlib.com/wp/template/toothsy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/toothsy-free-template.jpg) · [smilewell](https://smilewell.free.componentdock.com)
 - [x] **Wordpress Dentist Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-dentist-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-wordpress-themes-1.jpg) · [mintly](https://mintly.free.componentdock.com)
 
 ## Directory (33)
@@ -2364,7 +2364,7 @@
 - [x] **Stellar** — [colorlib](https://colorlib.com/wp/template/stellar/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stellar-free-template.jpg) · [astra](https://free-react-templates-astra.surge.sh)
 - [x] **Tattooz** — [colorlib](https://colorlib.com/wp/template/tattooz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tattooz-free-template.jpg) · [inkvibe](https://inkvibe.free.componentdock.com)
 - [ ] **Tools Ui Kit** — [colorlib](https://colorlib.com/wp/template/tools-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tools-free-template.jpg)
-- [~] **Toothsy** — [colorlib](https://colorlib.com/wp/template/toothsy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/toothsy-free-template.jpg)
+- [x] **Toothsy** — [colorlib](https://colorlib.com/wp/template/toothsy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/toothsy-free-template.jpg) · [smilewell](https://smilewell.free.componentdock.com)
 - [x] **Transcend** — [colorlib](https://colorlib.com/wp/template/transcend/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/transcend-free-template-1.jpg) · [chroma](https://chroma.free.componentdock.com)
 - [x] **Ultim8** — [colorlib](https://colorlib.com/wp/template/ultim8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ultim8-free-template.jpg) · [prime](https://prime.free.componentdock.com)
 - [x] **Unapp** — [colorlib](https://colorlib.com/wp/template/unapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unapp-free-template.jpg) · [blueprint](https://blueprint.free.componentdock.com)
