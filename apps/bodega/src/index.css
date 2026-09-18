@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — golden yellow #FFC300, red #DD3E3E, orange #EC610A */
+  --color-brand: #ffc300;
+  --color-brand-hover: #e6b000;
+  --color-danger: #dd3e3e;
+  --color-orange: #ec610a;
+  --color-green: #4a772f;
+  --color-teal: #0e9577;
+
+  /* Text colors */
+  --color-body: #595959;
+  --color-heading: #333333;
+  --color-muted: #999999;
+
+  /* Backgrounds */
+  --color-light-grey: #fafafa;
+
+  /* Font */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
