@@ -1528,7 +1528,7 @@
 - [x] **Directoryads** — [colorlib](https://colorlib.com/wp/template/directoryads/) · [catalog](https://catalog.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/directoryads-free-template.jpg)
 - [x] **Directoryplus** — [colorlib](https://colorlib.com/wp/template/directoryplus/) · [navpoint](https://navpoint.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/directoryplus-free-template-1.jpg)
 - [x] **Dorne** — [colorlib](https://colorlib.com/wp/template/dorne/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dorne-directory-listing-free-template.jpg) · [quest](https://quest.free.componentdock.com)
-- [ ] **Educature** — [colorlib](https://colorlib.com/wp/template/educature/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/educature-free-template.jpeg)
+- [~] **Educature** — [colorlib](https://colorlib.com/wp/template/educature/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/educature-free-template.jpeg)
 - [x] **Gricklo** — [colorlib](https://colorlib.com/wp/template/gricklo/) · [findly](https://findly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gricklo-free-template.jpg)
 - [ ] **Hamlet** — [colorlib](https://colorlib.com/wp/template/hamlet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hamlet-free-template-1.jpg)
 - [ ] **Homeland** — [colorlib](https://colorlib.com/wp/template/homeland/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/homeland-free-template.jpg)
