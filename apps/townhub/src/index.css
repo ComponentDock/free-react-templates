@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@theme {
+  /* TownHub brand palette — directory/listing recreation (design token notes
+     for the recreated template): brand orange-red #ff3d1c (CTAs, search button,
+     accent headings, subheadings), hover red #eb566c (button hover), neon green
+     #31ff7a (script accent text), dark navy #1c1930 (headings), deep navy
+     #010E21 (dark section backgrounds, footer), body text #10285d, muted
+     text #57667e. */
+  --color-brand: #ff3d1c;
+  --color-brand-dark: #eb566c;
+  --color-accent: #31ff7a;
+  --color-navy: #1c1930;
+  --color-deep: #010e21;
+  --color-body: #10285d;
+  --color-muted: #57667e;
+
+  /* Poppins — the source design uses Sulphur Point (unavailable); Poppins is
+     the closest widely-available Google Font with matching weight range. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+
+  /* Pacifico — script/cursive font for accent headings (replaces Sacramento
+     from the original design). */
+  --font-script: 'Pacifico', cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-[#10285d] antialiased;
+  }
+}

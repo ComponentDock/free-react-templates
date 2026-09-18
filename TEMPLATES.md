@@ -1521,7 +1521,7 @@
 
 - [x] **Adventure 2** — [colorlib](https://colorlib.com/wp/template/adventure-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/adventure2-free-template.jpg) · [trailquest](https://trailquest.free.componentdock.com)
 - [x] **Browse** — [colorlib](https://colorlib.com/wp/template/browse/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/browse-free-template.jpg) · [locate](https://free-react-templates-locate.surge.sh)
-- [ ] **Citylisting** — [colorlib](https://colorlib.com/wp/template/citylisting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/citylisting-free-template.jpg)
+- [~] **Citylisting** — [colorlib](https://colorlib.com/wp/template/citylisting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/citylisting-free-template.jpg)
 - [ ] **Comport** — [colorlib](https://colorlib.com/wp/template/comport/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/comport-free-template.jpg)
 - [ ] **Directing** — [colorlib](https://colorlib.com/wp/template/directing/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/directing-free-template.jpg)
 - [x] **Directone** — [colorlib](https://colorlib.com/wp/template/directone/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/directone-free-template.jpg) · [Borough](https://borough.free.componentdock.com)
