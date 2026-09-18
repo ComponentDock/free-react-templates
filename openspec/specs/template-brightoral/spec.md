@@ -15,30 +15,30 @@ Extracted from the live preview's stylesheets (`css/style.css`).
 
 ### Fonts
 
-| Role         | Font family                          | Weights        |
-| ------------ | ------------------------------------ | -------------- |
-| Body / UI    | Nunito Sans, sans-serif              | 300, 400, 700, 900 |
+| Role      | Font family             | Weights            |
+| --------- | ----------------------- | ------------------ |
+| Body / UI | Nunito Sans, sans-serif | 300, 400, 700, 900 |
 
 Use Google Fonts `<link>` for Nunito Sans.
 
 ### Colors
 
-| Token               | Hex / Value           | Usage                                        |
-| ------------------- | --------------------- | -------------------------------------------- |
-| primary red         | `#f23a2e`             | Button hover border, accent                  |
-| background          | `#FFFFFF` (white)     | Main content                                 |
-| appointment bg      | `#ece8d9` (cream)     | Appointment form + light sections            |
-| dark overlay        | `rgba(0,0,0,0.4)`    | Hero image overlay                           |
-| footer bg           | `#333333` (dark gray) | Footer background                            |
-| text primary        | `#4d4d4d`             | Body text                                    |
-| text dark           | `#25262a`             | Dark text, headings                          |
-| footer text         | `#737373`             | Footer paragraph text                        |
-| footer link         | `#999999`             | Footer links                                 |
-| footer heading      | `#FFFFFF`             | Footer section headings                      |
-| border light        | `#edf0f5`             | Light borders, dividers                      |
-| feature bg          | `#f4f5f9`             | Feature card hover background                |
-| hero text           | `#FFFFFF`             | Hero headings and body                       |
-| hero sub-text       | `rgba(255,255,255,0.7)` | Hero uppercase sub-text                   |
+| Token          | Hex / Value             | Usage                             |
+| -------------- | ----------------------- | --------------------------------- |
+| primary red    | `#f23a2e`               | Button hover border, accent       |
+| background     | `#FFFFFF` (white)       | Main content                      |
+| appointment bg | `#ece8d9` (cream)       | Appointment form + light sections |
+| dark overlay   | `rgba(0,0,0,0.4)`       | Hero image overlay                |
+| footer bg      | `#333333` (dark gray)   | Footer background                 |
+| text primary   | `#4d4d4d`               | Body text                         |
+| text dark      | `#25262a`               | Dark text, headings               |
+| footer text    | `#737373`               | Footer paragraph text             |
+| footer link    | `#999999`               | Footer links                      |
+| footer heading | `#FFFFFF`               | Footer section headings           |
+| border light   | `#edf0f5`               | Light borders, dividers           |
+| feature bg     | `#f4f5f9`               | Feature card hover background     |
+| hero text      | `#FFFFFF`               | Hero headings and body            |
+| hero sub-text  | `rgba(255,255,255,0.7)` | Hero uppercase sub-text           |
 
 ### Buttons
 
@@ -47,105 +47,157 @@ Use Google Fonts `<link>` for Nunito Sans.
 
 ### Layout
 
-- **Navbar**: White bg, logo "Dente" left, nav right (Home, About, Services, Appointment, Testimonial, Blog, Contact). Mobile hamburger.
+- **Navbar**: White bg, logo "Brightoral" left, nav right (Home, About, Services, Appointment, Testimonial, Blog, Contact). Mobile hamburger.
 - **Hero**: Full-viewport height cover image with dark overlay (0.4 opacity). White text: "Your **New Smile**" (900 weight on "New Smile"). Sub-text uppercase with letter-spacing.
-- **Services intro**: 3-column feature cards (Periontodology, Tooth Whitening, Preventative Care) with icons.
-- **Equipment strip**: 4 items (Tooth Whitening, Stethoscope, First Aid Kit, Tooth Pliers) with icons.
+- **Services intro**: 3-column feature cards (Periodontics, Tooth Whitening, Preventative Care) with icons.
+- **Equipment strip**: 4 items (Tooth Whitening, Dental Checkup, First Aid Kit, Dental Tools) with icons.
 - **Appointment form**: Cream bg (#ece8d9), "Online **Appointment** Request Form" heading. Form with box shadow.
-- **Services section**: "Our **Services**" heading, 6-column grid of service items (Tooth Whitening, Stethoscope, Dentist Chair, Tooth Pliers, First Aid Kit, Dentist Tools).
+- **Services section**: "Our **Services**" heading, 6-column grid of service items (Tooth Whitening, Dental Checkup, Dentist Chair, Dental Tools, First Aid Kit, Oral Surgery).
 - **Success stories**: "Success **Stories**" heading, testimonial cards.
 - **Testimonials**: "People **Says**" heading, review carousel.
-- **Footer**: Dark gray bg (#333333), 4 columns: About, Navigation, Recent News, Subscribe Newsletter + Follow Us. Copyright.
+- **Footer**: Dark gray bg (#333333), 4 columns: About, Navigation, Recent News, Subscribe Newsletter + Follow Us. Copyright with Component Dock link.
 
 ### Section backgrounds
 
-| Section              | Background                                    |
-| -------------------- | --------------------------------------------- |
-| Body                 | `#FFFFFF`                                     |
-| Navbar               | `#FFFFFF` (white)                             |
-| Hero                 | Image + `rgba(0,0,0,0.4)` overlay             |
-| Services intro       | White                                         |
-| Equipment strip      | White                                         |
-| Appointment form     | `#ece8d9` (cream)                             |
-| Services grid        | White                                         |
-| Success stories      | `#f4f5f9` (light gray)                        |
-| Testimonials         | White                                         |
-| Footer               | `#333333` (dark gray)                         |
+| Section          | Background                        |
+| ---------------- | --------------------------------- |
+| Body             | `#FFFFFF`                         |
+| Navbar           | `#FFFFFF` (white)                 |
+| Hero             | Image + `rgba(0,0,0,0.4)` overlay |
+| Services intro   | White                             |
+| Equipment strip  | White                             |
+| Appointment form | `#ece8d9` (cream)                 |
+| Services grid    | White                             |
+| Success stories  | `#f4f5f9` (light gray)            |
+| Testimonials     | White                             |
+| Footer           | `#333333` (dark gray)             |
 
-## Gherkin requirements
+## Requirements
 
-```gherkin
-Feature: Brightoral dental clinic website
+### Requirement: Navbar displays logo and navigation
 
-  Background:
-    Given the user loads the Brightoral page
+Users SHALL see a white navbar with the "Brightoral" logo on the left and navigation links on the right.
 
-  Scenario: Navbar displays logo and navigation
-    Then a white navbar is visible
-    And the logo "Brightoral" is shown on the left
-    And navigation links appear on the right: Home, About, Services, Appointment, Testimonial, Blog, Contact
+#### Scenario: Navbar renders all links
 
-  Scenario: Hero displays full-viewport cover
-    Then a full-viewport hero shows a background image
-    And a dark overlay (0.4 opacity) covers the image
-    And the heading "Your New Smile" is displayed in white
-    And "New Smile" uses 900 font weight
-    And an uppercase sub-text with letter-spacing appears
+- **WHEN** the user loads the page
+- **THEN** a white navbar is visible
+- **AND** the logo "Brightoral" is shown on the left
+- **AND** navigation links appear on the right: Home, About, Services, Appointment, Testimonial, Blog, Contact
 
-  Scenario: Services intro shows 3 feature cards
-    Then 3 service feature cards are displayed
-    And cards are: Periontodology, Tooth Whitening, Preventative Care
-    And each card has an icon, heading, and description
+#### Scenario: Mobile hamburger toggles menu
 
-  Scenario: Equipment strip
-    Then 4 equipment items are shown with icons
-    And items are: Tooth Whitening, Stethoscope, First Aid Kit, Tooth Pliers
+- **WHEN** the user clicks the hamburger menu button
+- **THEN** the mobile navigation menu opens
+- **AND** all navigation links are shown vertically
 
-  Scenario: Appointment form on cream background
-    Then the appointment form has a cream (#ece8d9) background
-    And the heading reads "Online Appointment Request Form"
-    And the heading uses uppercase with bold "Appointment"
-    And form fields include Name, Phone, Date, Time, Message
-    And the form has a box shadow
+### Requirement: Hero displays full-viewport cover
 
-  Scenario: Services grid
-    Then "Our Services" heading is displayed with bold "Services"
-    And 6 service items are shown in a grid
-    And items include: Tooth Whitening, Stethoscope, Dentist Chair, Tooth Pliers, First Aid Kit, Dentist Tools
+Users SHALL see a full-viewport hero section with a background image, dark overlay, and the "Your New Smile" heading.
 
-  Scenario: Success stories section
-    Then "Success Stories" heading is shown with bold "Stories"
-    And testimonial cards are displayed on a light gray background
+#### Scenario: Hero renders with overlay and heading
 
-  Scenario: Testimonials section
-    Then "People Says" heading is shown with bold "Says"
-    And a carousel of review cards is displayed
+- **WHEN** the user views the hero section
+- **THEN** a full-viewport hero shows a background image
+- **AND** a dark overlay (0.4 opacity) covers the image
+- **AND** the heading "Your New Smile" is displayed in white
+- **AND** "New Smile" uses 900 font weight
+- **AND** an uppercase sub-text with letter-spacing appears
 
-  Scenario: Footer
-    Then a dark gray (#333333) footer is displayed
-    And columns show: About, Navigation, Recent News, Subscribe Newsletter, Follow Us
-    And footer headings are white
-    And footer links point to Component Dock
-    And a copyright bar is shown
+### Requirement: Services intro shows 3 feature cards
 
-  Scenario: Responsive behavior
-    When the viewport is below 992px
-    Then the navbar collapses to a hamburger menu
-    And multi-column grids stack to fewer columns
-```
+Users SHALL see 3 service feature cards with icons, headings, and descriptions.
 
-## Verification checklist
+#### Scenario: Three cards rendered
 
-- [ ] White navbar with logo + nav links + mobile hamburger
-- [ ] Full-viewport hero with dark overlay + "Your New Smile" heading
-- [ ] Services intro 3-column feature cards
-- [ ] Equipment strip with 4 icon items
-- [ ] Appointment form on cream (#ece8d9) background
-- [ ] Services 6-column grid
-- [ ] Success stories on light gray background
-- [ ] Testimonials carousel
-- [ ] Dark gray (#333333) footer with columns + Component Dock link
-- [ ] Brand red #f23a2e used for accent
-- [ ] Nunito Sans font loaded from Google Fonts
-- [ ] Responsive at 992px breakpoint
-- [ ] No ColorLib references in app code
+- **WHEN** the user scrolls to the services intro
+- **THEN** 3 service feature cards are displayed
+- **AND** cards are: Periodontics, Tooth Whitening, Preventative Care
+- **AND** each card has an icon, heading, and description
+
+### Requirement: Equipment strip shows 4 items
+
+Users SHALL see 4 equipment items with icons in a horizontal strip.
+
+#### Scenario: Four items rendered
+
+- **WHEN** the user views the equipment strip
+- **THEN** 4 equipment items are shown with icons
+- **AND** items are: Tooth Whitening, Dental Checkup, First Aid Kit, Dental Tools
+
+### Requirement: Appointment form on cream background
+
+Users SHALL see an appointment form on a cream background with form fields.
+
+#### Scenario: Form renders with fields
+
+- **WHEN** the user views the appointment section
+- **THEN** the appointment form has a cream (#ece8d9) background
+- **AND** the heading reads "Online Appointment Request Form"
+- **AND** the heading uses uppercase with bold "Appointment"
+- **AND** form fields include Name, Phone, Date, Time, Message
+- **AND** the form has a box shadow
+
+### Requirement: Services grid displays 6 items
+
+Users SHALL see "Our Services" heading with 6 service items in a grid.
+
+#### Scenario: Six items in grid
+
+- **WHEN** the user scrolls to the services grid
+- **THEN** "Our Services" heading is displayed with bold "Services"
+- **AND** 6 service items are shown in a grid
+- **AND** items include: Tooth Whitening, Dental Checkup, Dentist Chair, Dental Tools, First Aid Kit, Oral Surgery
+
+### Requirement: Success stories section
+
+Users SHALL see "Success Stories" heading with testimonial cards on a light gray background.
+
+#### Scenario: Testimonial cards displayed
+
+- **WHEN** the user views the success stories
+- **THEN** "Success Stories" heading is shown with bold "Stories"
+- **AND** testimonial cards are displayed on a light gray background
+
+### Requirement: Testimonials carousel
+
+Users SHALL see "People Says" heading with a carousel of review cards.
+
+#### Scenario: Carousel with navigation
+
+- **WHEN** the user views the testimonials
+- **THEN** "People Says" heading is shown with bold "Says"
+- **AND** a carousel of review cards is displayed
+- **AND** users can navigate between reviews
+
+### Requirement: Footer with dark background
+
+Users SHALL see a dark gray footer with columns and a Component Dock link.
+
+#### Scenario: Footer columns and links
+
+- **WHEN** the user scrolls to the footer
+- **THEN** a dark gray (#333333) footer is displayed
+- **AND** columns show: About, Navigation, Recent News, Subscribe Newsletter, Follow Us
+- **AND** footer headings are white
+- **AND** footer links point to Component Dock
+- **AND** a copyright bar is shown
+
+### Requirement: Responsive behavior
+
+Users SHALL see the layout adapt when the viewport is below 992px.
+
+#### Scenario: Responsive breakpoint
+
+- **WHEN** the viewport is below 992px
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** multi-column grids stack to fewer columns
+
+### Requirement: No ColorLib references in app code
+
+The app source code SHALL NOT contain any references to ColorLib, preview.colorlib.com, or colorlib.com.
+
+#### Scenario: Clean source
+
+- **WHEN** a developer searches for "colorlib" in apps/brightoral/
+- **THEN** no matches are found in any source file
