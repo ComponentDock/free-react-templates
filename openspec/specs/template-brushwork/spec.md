@@ -1,88 +1,121 @@
-# Brushwork — Art & Crafting Landing Template
+## Purpose
 
-**Source:** ColorLib "Five Star" — https://colorlib.com/wp/template/five-star/
-**Preview:** https://preview.colorlib.com/theme/five-star/
-**Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/five-star-art-crafting-website-template.jpg
+Recreate the ColorLib "Five Star" art and crafting website template as a React
+19 + Tailwind CSS 4 + TypeScript application named "Brushwork". The template
+features a fullscreen hero banner, experience showcase, testimonial carousel,
+services grid, video section, contact form, and a newsletter footer.
 
-## Design Tokens (extracted from CSS)
+## Requirements
 
-| Token               | Value                                                                            | Notes                                     |
-| ------------------- | -------------------------------------------------------------------------------- | ----------------------------------------- |
-| Brand color         | `#f5204b`                                                                        | Red, used for buttons, selection, accents |
-| Body text           | `#777777`                                                                        | Muted gray                                |
-| Headings            | `#222222`                                                                        | Dark gray/near-black                      |
-| Font family         | Poppins                                                                          | Weights 300-600, loaded via Google Fonts  |
-| Button style        | Rounded (20px radius), transparent bg + border, hover fills brand                |
-| Section backgrounds | White `#fff` and light gray `#f9f9ff` alternating                                |
-| Overlay color       | `rgba(0,0,0,0.6)` on banner, carousel, video sections                            |
-| Button primary      | bg transparent, border `#eee`, color `#f5204b`, hover → bg `#f5204b`, text white |
+### Requirement: Navbar navigation
 
-## Sections (in order)
+The template SHALL render a sticky top navigation bar with the brand name
+"Brushwork", navigation links (Home, About, Services, Contact), and a mobile
+hamburger menu toggle.
 
-1. **Navbar** — Logo "Brushwork" + nav links (Home, About, Services, Contact) + mobile hamburger
-2. **Hero** — Fullscreen banner with dark overlay, heading "Crafting Best Experience", subtitle "Art and Crafting / Acting and Philosophy"
-3. **Experience** — 2-column layout: 2 stacked images left, text content right with heading, description, and "View Details" button
-4. **Carousel/Testimonials** — Dark overlay section, slider with testimonial content (heading + paragraph), prev/next arrows
-5. **Services** — 4-column grid of service cards (icon + title + description), centered alignment
-6. **Video** — Dark overlay section, split layout: video placeholder left (with play button), text content right
-7. **Services-2** — 3-column horizontal service cards (icon + text, side by side)
-8. **Contact** — 2-column: address/email/phone info left, contact form right (name, email, message, submit button)
-9. **Footer** — Dark background, 3-column: About links, Newsletter signup, Instafeed grid + copyright bar with Component Dock link
+#### Scenario: Desktop navbar
 
-## Scenarios
+- **WHEN** the page loads on a wide viewport
+- **THEN** the navigation links "Home", "About", "Services", "Contact" are visible
+- **AND** the brand name "Brushwork" is displayed
 
-### Navbar
+#### Scenario: Mobile hamburger toggle
 
-- Renders logo "Brushwork" with brand color accent
-- Contains navigation links: Home, About, Services, Contact
-- Mobile toggle opens/closes navigation
-- Sticky on scroll
+- **WHEN** the user clicks the hamburger menu button
+- **THEN** the mobile navigation menu is expanded
 
-### Hero
+### Requirement: Hero banner
 
-- Fullscreen height with dark overlay on background image
-- Heading "Crafting Best Experience"
-- Subtitle text visible
+The template SHALL render a fullscreen hero section with a dark overlay on a
+background image, a heading "Crafting Best Experience", and a subtitle.
 
-### Experience
+#### Scenario: Hero content
 
-- Two placeholder images on the left
-- Heading "From the root of experience We dig out the best talent"
-- Body text paragraph
-- "View Details" button styled with brand color
+- **WHEN** the hero section renders
+- **THEN** the heading "Crafting Best Experience" is visible
+- **AND** the subtitle "Art and Crafting / Acting and Philosophy" is visible
 
-### Carousel
+### Requirement: Experience section
 
-- Dark overlay background
-- Display testimonial content with heading and paragraph
-- Prev/Next navigation arrows
+The template SHALL render an experience section with two images on the left
+and descriptive content with a "View Details" button on the right.
 
-### Services
+#### Scenario: Experience content
 
-- 4 service cards with icons (Monitor, Image, Smartphone, Gift)
-- Each card: icon, title "Vector Illustration", description text
-- Centered layout
+- **WHEN** the experience section renders
+- **THEN** the heading "From the root of experience We dig out the best talent" is visible
+- **AND** a "View Details" button is present
 
-### Video
+### Requirement: Testimonials carousel
 
-- Dark overlay background
-- Play button on video placeholder
-- Heading and description text on the right
+The template SHALL render a dark-background testimonial carousel with
+prev/next navigation arrows to cycle through slides.
 
-### Services-2
+#### Scenario: Testimonial navigation
 
-- 3 horizontal service cards
-- Icon + title + description in a row layout
+- **WHEN** the testimonials section renders
+- **THEN** the first testimonial heading is visible
+- **AND** prev/next arrow buttons are present
 
-### Contact
+### Requirement: Services grid
 
-- Address, email, phone info with icons on the left
-- Contact form with name, email, message fields and submit button
-- Form validation on required fields
+The template SHALL render a 4-column services grid with icon cards for
+Vector Illustration services.
 
-### Footer
+#### Scenario: Services display
 
-- Dark background with white text
-- Three columns: About Agency links, Newsletter signup, Instafeed grid
-- Copyright bar with Component Dock link
-- Social media icon links
+- **WHEN** the services section renders
+- **THEN** 4 service cards are visible with "Vector Illustration" titles
+
+### Requirement: Video showcase
+
+The template SHALL render a dark-background video section with a play button
+placeholder and descriptive text.
+
+#### Scenario: Video content
+
+- **WHEN** the video section renders
+- **THEN** a play button is visible
+- **AND** the heading about experience/talent is displayed
+
+### Requirement: Compact services
+
+The template SHALL render a 3-column compact services section with horizontal
+icon + text cards.
+
+#### Scenario: Compact services display
+
+- **WHEN** the compact services section renders
+- **THEN** 3 service cards are visible with icons and descriptions
+
+### Requirement: Contact form
+
+The template SHALL render a contact section with address/email/phone info on
+the left and a validated contact form on the right.
+
+#### Scenario: Contact form submission
+
+- **WHEN** the user fills in name, email, and message fields and submits
+- **THEN** the form shows a success confirmation message
+
+#### Scenario: Contact form validation
+
+- **WHEN** the user submits the contact form with an invalid email
+- **THEN** a validation error message is displayed
+
+### Requirement: Footer with Component Dock
+
+The template SHALL render a dark footer with three columns (About links,
+Newsletter signup, Instafeed grid) and a bottom copyright bar linking to
+Component Dock.
+
+#### Scenario: Footer content
+
+- **WHEN** the footer renders
+- **THEN** the newsletter signup form is present
+- **AND** a link to "https://www.componentdock.com/" with text "Component Dock" is visible
+
+#### Scenario: Newsletter subscription
+
+- **WHEN** the user enters a valid email and clicks Subscribe
+- **THEN** a success message "Thanks for subscribing!" is displayed
