@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #26baee;
+  --color-primary-dark: #1fa0cc;
+  --color-ink: #25262a;
+  --color-ink-muted: #4d4d4d;
+  --color-bg-light: #f8f9fa;
+  --color-bg-alt: #e6e7e9;
+  --color-bg-dark: #393e46;
+  --color-border-light: #edf0f5;
+  --font-sans: 'Nunito Sans', sans-serif;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #25262a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
