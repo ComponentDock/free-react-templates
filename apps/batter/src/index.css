@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Batter brand colors — creative digital agency theme
+     inspired by ColorLib Go Crepe preview:
+     orange-red CTA (#ff6b35), dark sections (#1a1a2e),
+     white cards on light backgrounds. */
+  --color-primary-50: #fff4ed;
+  --color-primary-100: #ffe6d5;
+  --color-primary-200: #ffc9aa;
+  --color-primary-300: #ffa274;
+  --color-primary-400: #ff6b35;
+  --color-primary-500: #fe4a11;
+  --color-primary-600: #ef3007;
+  --color-primary-700: #c62008;
+  --color-primary-800: #9d1c0f;
+  --color-primary-900: #7e1b10;
+
+  /* Poppins font via Google Fonts <link> in index.html. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
