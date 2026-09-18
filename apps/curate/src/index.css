@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Curate brand palette — recreated from the ColorLib "Portfolio" design
+     (css/main.css): green #8ab92d accents/buttons, dark #222 headings,
+     body text #777, light section bg #f9f9ff. */
+  --color-brand: #8ab92d;
+  --color-brand-dark: #7aa525;
+
+  /* Ink — dark headings (#222222 from the original). */
+  --color-ink: #222222;
+
+  /* Soapstone — light section background (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Mist — muted body text (#777777 from the original). */
+  --color-mist: #777777;
+
+  /* Star rating gold. */
+  --color-star: #f5c518;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the green. */
+  --color-primary-50: #f4f9e8;
+  --color-primary-100: #e6f2cc;
+  --color-primary-200: #cce599;
+  --color-primary-300: #b3d866;
+  --color-primary-400: #99cc33;
+  --color-primary-500: #8ab92d;
+  --color-primary-600: #7aa525;
+  --color-primary-700: #5e7d1c;
+  --color-primary-800: #435813;
+  --color-primary-900: #29340b;
+
+  /* Original font: "Poppins" (headings + body). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
