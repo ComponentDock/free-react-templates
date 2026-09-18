@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Placeboard brand palette — travel directory look with Bootstrap blue
+     #007bff primary, #3395ff hover, #6c757d body text, #000 headings,
+     #f2f2f2 footer background. */
+  --color-primary: #007bff;
+  --color-primary-hover: #3395ff;
+  --color-body: #6c757d;
+  --color-heading: #000000;
+  --color-footer-bg: #f2f2f2;
+
+  /* Typography: Raleway for body, Playfair Display for headings. */
+  --font-sans:
+    'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

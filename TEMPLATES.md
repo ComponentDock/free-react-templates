@@ -1539,7 +1539,7 @@
 -[x] **Jobsco** — [colorlib](https://colorlib.com/wp/template/jobsco/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobsco-free-template.jpg) · [jobhunt](https://jobhunt.free.componentdock.com)
 - [x] **Jobstart** — [colorlib](https://colorlib.com/wp/template/jobstart/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobstart-free-template.jpg) · [joblaunch](https://joblaunch.free.componentdock.com)
 - [x] **Listco** — [colorlib](https://colorlib.com/wp/template/listco/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listco-free-template.jpg) · [roster](https://free-react-templates-roster.surge.sh)
-- [ ] **Listed** — [colorlib](https://colorlib.com/wp/template/listed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listed-free-template-1.jpg)
+- [~] **Listed** — [colorlib](https://colorlib.com/wp/template/listed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listed-free-template-1.jpg)
 - [ ] **Listed2** — [colorlib](https://colorlib.com/wp/template/listed2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listed2-free-template.jpg)
 - [ ] **Listing** — [colorlib](https://colorlib.com/wp/template/listing/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listing-free-directory-website-template.jpg)
 - [ ] **Listingo** — [colorlib](https://colorlib.com/wp/template/listingo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listingo-free-template.jpg)
