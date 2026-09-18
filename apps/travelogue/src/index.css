@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Travelogue brand colors — turquoise/teal primary #00b4d8,
+     with complementary tones for travel agency feel. */
+  --color-primary-50: #e0f7fa;
+  --color-primary-100: #b2ebf2;
+  --color-primary-200: #80deea;
+  --color-primary-300: #4dd0e1;
+  --color-primary-400: #00b4d8;
+  --color-primary-500: #00a3c7;
+  --color-primary-600: #0096b7;
+  --color-primary-700: #007d9d;
+  --color-primary-800: #006a85;
+  --color-primary-900: #00526a;
+
+  /* Accent colors for secondary elements. */
+  --color-accent-300: #80cbc4;
+  --color-accent-400: #4db6ac;
+  --color-accent-500: #26a69a;
+
+  /* Light section backgrounds. */
+  --color-mist: #f5fafb;
+  --color-lavender: #f0f7f9;
+
+  /* Muted copy. */
+  --color-smoke: #7f7f7f;
+
+  --color-ink: #1a1a1a;
+
+  /* Playfair Display (headings) + Poppins (body/nav) via Google Fonts
+     <link> in index.html — matching a travel-agency aesthetic. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
