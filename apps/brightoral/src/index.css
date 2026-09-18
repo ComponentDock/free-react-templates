@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brightoral brand palette — dental clinic: red accent #f23a2e, cream #ece8d9,
+     dark gray footer #333333, body text #4d4d4d. */
+  --color-brand: #f23a2e;
+  --color-brand-dark: #d4301f;
+
+  /* Cream — appointment form background (#ece8d9). */
+  --color-cream: #ece8d9;
+
+  /* Ink — dark text (#25262a). */
+  --color-ink: #25262a;
+
+  /* Paper — light section background (#f4f5f9). */
+  --color-paper: #f4f5f9;
+
+  /* Mist — muted body text (#4d4d4d). */
+  --color-mist: #4d4d4d;
+
+  /* Footer — dark gray (#333333). */
+  --color-footer: #333333;
+
+  /* Footer muted text (#737373). */
+  --color-footer-muted: #737373;
+
+  /* Footer link (#999999). */
+  --color-footer-link: #999999;
+
+  /* Primary scale for shared ui Button/ButtonLink. */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #f23a2e;
+  --color-primary-600: #d4301f;
+  --color-primary-700: #b91c1c;
+  --color-primary-800: #991b1b;
+  --color-primary-900: #7f1d1d;
+
+  /* Nunito Sans — the original Dente font. */
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
