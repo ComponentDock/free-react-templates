@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Toothzen brand palette — recreated from the ColorLib "Dentamax" design */
+  --color-tooth-blue: #007bff;
+  --color-tooth-dark-blue: #0f4883;
+  --color-tooth-teal: #65d8ea;
+  --color-tooth-teal-light: #e1f9fb;
+  --color-tooth-text: #212529;
+  --color-tooth-muted: #6c757d;
+  --color-tooth-footer-text: #6c8faf;
+  --color-tooth-light-bg: #f8f9fa;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
