@@ -1522,7 +1522,7 @@
 - [x] **Adventure 2** — [colorlib](https://colorlib.com/wp/template/adventure-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/adventure2-free-template.jpg) · [trailquest](https://trailquest.free.componentdock.com)
 - [x] **Browse** — [colorlib](https://colorlib.com/wp/template/browse/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/browse-free-template.jpg) · [locate](https://free-react-templates-locate.surge.sh)
 - [x] **Citylisting** — [colorlib](https://colorlib.com/wp/template/citylisting/) · [townhub](https://townhub.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/citylisting-free-template.jpg)
-- [ ] **Comport** — [colorlib](https://colorlib.com/wp/template/comport/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/comport-free-template.jpg)
+- [~] **Comport** — [colorlib](https://colorlib.com/wp/template/comport/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/comport-free-template.jpg)
 - [ ] **Directing** — [colorlib](https://colorlib.com/wp/template/directing/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/directing-free-template.jpg)
 - [x] **Directone** — [colorlib](https://colorlib.com/wp/template/directone/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/directone-free-template.jpg) · [Borough](https://borough.free.componentdock.com)
 - [x] **Directoryads** — [colorlib](https://colorlib.com/wp/template/directoryads/) · [catalog](https://catalog.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/directoryads-free-template.jpg)
@@ -1991,7 +1991,7 @@
 ## Job Board (15)
 
 - [x] **Careers** — [colorlib](https://colorlib.com/wp/template/careers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/careers-free-template.jpg) · [jobquest](https://jobquest.free.componentdock.com)
-- [ ] **Comport** — [colorlib](https://colorlib.com/wp/template/comport/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/comport-free-template.jpg)
+- [~] **Comport** — [colorlib](https://colorlib.com/wp/template/comport/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/comport-free-template.jpg)
 - [ ] **Job Board 2** — [colorlib](https://colorlib.com/wp/template/job-board-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobboard2-free-template.jpg)
 - [x] **Jobboard** — [colorlib](https://colorlib.com/wp/template/jobboard/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobboard-free-template.jpg) · [jobboard](https://jobboard.free.componentdock.com)
 - [ ] **Jobfinder** — [colorlib](https://colorlib.com/wp/template/jobfinder/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobfinder-free-template.jpg)
