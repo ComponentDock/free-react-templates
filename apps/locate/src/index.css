@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Locate brand colors — from the ColorLib "Browse" preview
+     (https://preview.colorlib.com/theme/browse/ + css/style.css):
+     a directory listing theme with teal #00918e primary,
+     white body bg, muted #737373/#999999, and Rubik font. */
+  --color-primary-50: #e6f7f7;
+  --color-primary-100: #b3e8e8;
+  --color-primary-200: #80d9d9;
+  --color-primary-300: #4dcaca;
+  --color-primary-400: #26bebe;
+  --color-primary-500: #00918e;
+  --color-primary-600: #007a77;
+  --color-primary-700: #006361;
+  --color-primary-800: #004d4c;
+  --color-primary-900: #003636;
+
+  --color-mist: #f4f4f4;
+  --color-smoke: #737373;
+  --color-muted: #999999;
+  --color-ink: #4d4d4d;
+
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+}
