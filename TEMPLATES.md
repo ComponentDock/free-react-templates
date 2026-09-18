@@ -935,7 +935,7 @@
 - [x] **Chimper** — [colorlib](https://colorlib.com/wp/template/chimper/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/chimper-free-template.jpg) · [Chimper](https://chimper.free.componentdock.com)
 - [x] **Classic** — [colorlib](https://colorlib.com/wp/template/classic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/classic-free-template.jpg) · [acumen](https://acumen.free.componentdock.com)
 - [x] **Classy Ads** — [colorlib](https://colorlib.com/wp/template/classy-ads/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/classyads-free-template.jpg) · [classily](https://classily.free.componentdock.com)
-- [ ] **Cleanex** — [colorlib](https://colorlib.com/wp/template/cleanex/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cleanex-template.jpg)
+- [~] **Cleanex** — [colorlib](https://colorlib.com/wp/template/cleanex/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cleanex-template.jpg)
 - [x] **Cleaning** — [colorlib](https://colorlib.com/wp/template/cleaning/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cleaning-free-template.jpg) · [spotless](https://spotless.free.componentdock.com)
 - [ ] **Cleaning Company** — [colorlib](https://colorlib.com/wp/template/cleaning-company/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cleaningcompany.jpg)
 - [x] **Cleaningservice** — [colorlib](https://colorlib.com/wp/template/cleaningservice/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cleaningservice-colorlib-template.jpg) · [pristine](https://pristine.free.componentdock.com)
