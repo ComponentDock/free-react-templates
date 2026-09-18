@@ -1492,7 +1492,7 @@
 - [x] **Sun** — [colorlib](https://colorlib.com/wp/template/sun/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sun-free-template.jpg) · [solaris](https://solaris.free.componentdock.com)
 - [x] **Suppablog** — [colorlib](https://colorlib.com/wp/template/suppablog/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/suppablog-free-creative-blog-template-for-writters.jpg) · [scribble](https://scribble.free.componentdock.com)
 - [x] **Thumber** — [colorlib](https://colorlib.com/wp/template/thumber/) · [shuttervibe](https://shuttervibe.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thumber-free-template.jpg)
-- [ ] **Travel Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/travel-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travel-wordpress-themes.jpg)
+- [~] **Travel Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/travel-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travel-wordpress-themes.jpg)
 - [x] **Traveland** — [colorlib](https://colorlib.com/wp/template/traveland/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/traveland-free-template.jpg) · [peregrine](https://peregrine.free.componentdock.com)
 - [x] **Typo** — [colorlib](https://colorlib.com/wp/template/typo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/typo-bright-free-app-landing-page-template.jpg) · [brio](https://brio.free.componentdock.com)
 - [x] **Whitespace** — [colorlib](https://colorlib.com/wp/template/whitespace/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/whitespace-free-template.jpg) · [blankslate](https://blankslate.free.componentdock.com)
