@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-worksans: 'Work Sans', sans-serif;
+  --font-nunitosans: 'Nunito Sans', sans-serif;
+  --color-brand-blue: #157efb;
+  --color-brand-green: #5dd28e;
+  --color-brand-cyan: #78d5ef;
+  --color-dark-overlay: #3c312e;
+  --color-footer: #222831;
+  --color-light-bg: #f8f9fa;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-worksans);
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
