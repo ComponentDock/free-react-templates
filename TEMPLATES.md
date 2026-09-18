@@ -1519,7 +1519,7 @@
 
 ## Directory (33)
 
-- [~] **Adventure 2** — [colorlib](https://colorlib.com/wp/template/adventure-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/adventure2-free-template.jpg)
+- [x] **Adventure 2** — [colorlib](https://colorlib.com/wp/template/adventure-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/adventure2-free-template.jpg) · [trailquest](https://trailquest.free.componentdock.com)
 - [ ] **Browse** — [colorlib](https://colorlib.com/wp/template/browse/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/browse-free-template.jpg)
 - [ ] **Citylisting** — [colorlib](https://colorlib.com/wp/template/citylisting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/citylisting-free-template.jpg)
 - [ ] **Comport** — [colorlib](https://colorlib.com/wp/template/comport/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/comport-free-template.jpg)
@@ -2972,7 +2972,7 @@
 ## Travel (44)
 
 - [ ] **Adventure** — [colorlib](https://colorlib.com/wp/template/adventure/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/adventure-free-travel-website-template.jpg)
-- [~] **Adventure 2** — [colorlib](https://colorlib.com/wp/template/adventure-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/adventure2-free-template.jpg)
+- [x] **Adventure 2** — [colorlib](https://colorlib.com/wp/template/adventure-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/adventure2-free-template.jpg) · [trailquest](https://trailquest.free.componentdock.com)
 - [ ] **Beyond** — [colorlib](https://colorlib.com/wp/template/beyond/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/beyond-free-template.jpg)
 - [ ] **Deluxe** — [colorlib](https://colorlib.com/wp/template/deluxe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/deluxe-free-template.jpg)
 - [ ] **Destino** — [colorlib](https://colorlib.com/wp/template/destino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/destino-free-template-1.jpg)
