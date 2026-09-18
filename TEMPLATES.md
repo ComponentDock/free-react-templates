@@ -1472,7 +1472,7 @@
 - [x] **Ilene Berg** — [colorlib](https://colorlib.com/wp/template/ilene-berg/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fullscreen-ilene-berg-free-website-template.jpg) · [lumina](https://lumina.free.componentdock.com)
 - [x] **Innova** — [colorlib](https://colorlib.com/wp/template/innova/) · [impulse](https://impulse.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/innova-free-template.jpg)
 - [x] **Katt** — [colorlib](https://colorlib.com/wp/template/katt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/katt-free-creative-blog-website-template.jpg) · [zine](https://zine.free.componentdock.com)
-- [ ] **Kiddos** — [colorlib](https://colorlib.com/wp/template/kiddos/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kiddos-free-template.jpg)
+- [~] **Kiddos** — [colorlib](https://colorlib.com/wp/template/kiddos/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kiddos-free-template.jpg)
 - [x] **Labs** — [colorlib](https://colorlib.com/wp/template/labs/) · [krypton](https://krypton.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/labs-digital-agency-website-template.jpg)
 - [x] **Layal** — [colorlib](https://colorlib.com/wp/template/layal/) · [Villa](https://villa.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/layal-free-interior-design-wwebsite-template.jpg)
 - [x] **Maze** — [colorlib](https://colorlib.com/wp/template/maze/) · [aurora](https://aurora.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/maze-bright-free-personal-website-template.jpg)
