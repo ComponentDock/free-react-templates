@@ -1534,7 +1534,7 @@
 - [x] **Homeland** — [colorlib](https://colorlib.com/wp/template/homeland/) · [nestwell](https://nestwell.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/homeland-free-template.jpg)
 - [x] **Homespace** — [colorlib](https://colorlib.com/wp/template/homespace/) · [domicile](https://domicile.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/homespace-free-template.jpg)
 - [x] **Jobfinder** — [colorlib](https://colorlib.com/wp/template/jobfinder/) · [careerly](https://careerly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobfinder-free-template.jpg)
-- [ ] **Joblisting** — [colorlib](https://colorlib.com/wp/template/joblisting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/joblisting-free-template.jpg)
+- [~] **Joblisting** — [colorlib](https://colorlib.com/wp/template/joblisting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/joblisting-free-template.jpg)
 - [ ] **Jobportal** — [colorlib](https://colorlib.com/wp/template/jobportal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobportal-free-template.jpg)
 - [ ] **Jobsco** — [colorlib](https://colorlib.com/wp/template/jobsco/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobsco-free-template.jpg)
 - [ ] **Jobstart** — [colorlib](https://colorlib.com/wp/template/jobstart/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobstart-free-template.jpg)
