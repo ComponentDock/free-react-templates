@@ -1509,7 +1509,7 @@
 - [x] **Dente** — [colorlib](https://colorlib.com/wp/template/dente/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dente-free-template.jpg) · [brightoral](https://brightoral.free.componentdock.com)
 - [x] **Dentist** · [dentalink](https://dentalink.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/dentist/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-free-template-1.jpg)
 - [x] **Dentista** — [colorlib](https://colorlib.com/wp/template/dentista/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentista-free-template.jpg) · [enamel](https://enamel.free.componentdock.com)
-- [~] **Dento** — [colorlib](https://colorlib.com/wp/template/dento/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dento-free-template.jpg)
+- [x] **Dento** — [colorlib](https://colorlib.com/wp/template/dento/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dento-free-template.jpg) · [dentalyn](https://free-react-templates-dentalyn.surge.sh)
 - [ ] **Dentures** — [colorlib](https://colorlib.com/wp/template/dentures/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentures-free-template.jpg)
 - [ ] **Drcare** — [colorlib](https://colorlib.com/wp/template/drcare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/drcare-free-template.jpg)
 - [ ] **Prodent** — [colorlib](https://colorlib.com/wp/template/prodent/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/prodent-free-template.jpg)
