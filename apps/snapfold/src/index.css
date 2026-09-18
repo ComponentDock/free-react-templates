@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'PT Sans', sans-serif;
+  --color-snap-primary: #323232;
+  --color-snap-body: #898d90;
+  --color-snap-accent: #c6d7d8;
+  --color-snap-white: #ffffff;
+  --color-snap-black: #000000;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
