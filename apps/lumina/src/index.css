@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Lumina brand palette — recreated from the ColorLib "Ilene Berg" design
+     (css/main.css): purple #8460f6 buttons/overlay, pink #f3487f service icons,
+     blue-gray #6f7598 service panels, yellow #f9c400 subscription,
+     dark #4e5375 footer. */
+
+  --color-brand: #8460f6;
+  --color-brand-dark: #6b4fd4;
+
+  --color-pink: #f3487f;
+  --color-service-gray: #6f7598;
+  --color-yellow: #f9c400;
+  --color-footer: #4e5375;
+
+  --color-ink: #222222;
+  --color-mist: #777777;
+  --color-paper: #f9f9ff;
+
+  --color-primary-50: #f3f0ff;
+  --color-primary-100: #e8e0ff;
+  --color-primary-200: #d1c2ff;
+  --color-primary-300: #b49bff;
+  --color-primary-400: #9a78ff;
+  --color-primary-500: #8460f6;
+  --color-primary-600: #6b4fd4;
+  --color-primary-700: #553eb0;
+  --color-primary-800: #432f8c;
+  --color-primary-900: #322368;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
