@@ -1523,7 +1523,7 @@
 - [x] **Browse** — [colorlib](https://colorlib.com/wp/template/browse/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/browse-free-template.jpg) · [locate](https://free-react-templates-locate.surge.sh)
 - [x] **Citylisting** — [colorlib](https://colorlib.com/wp/template/citylisting/) · [townhub](https://townhub.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/citylisting-free-template.jpg)
 - [x] **Comport** — [colorlib](https://colorlib.com/wp/template/comport/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/comport-free-template.jpg) · [civicore](https://civicore.free.componentdock.com)
-- [ ] **Directing** — [colorlib](https://colorlib.com/wp/template/directing/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/directing-free-template.jpg)
+- [~] **Directing** — [colorlib](https://colorlib.com/wp/template/directing/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/directing-free-template.jpg)
 - [x] **Directone** — [colorlib](https://colorlib.com/wp/template/directone/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/directone-free-template.jpg) · [Borough](https://borough.free.componentdock.com)
 - [x] **Directoryads** — [colorlib](https://colorlib.com/wp/template/directoryads/) · [catalog](https://catalog.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/directoryads-free-template.jpg)
 - [ ] **Directoryplus** — [colorlib](https://colorlib.com/wp/template/directoryplus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/directoryplus-free-template-1.jpg)
