@@ -1497,7 +1497,7 @@
 - [x] **Typo** — [colorlib](https://colorlib.com/wp/template/typo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/typo-bright-free-app-landing-page-template.jpg) · [brio](https://brio.free.componentdock.com)
 - [x] **Whitespace** — [colorlib](https://colorlib.com/wp/template/whitespace/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/whitespace-free-template.jpg) · [blankslate](https://blankslate.free.componentdock.com)
 - [x] **Wordpress Business Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-business-themes/) · [slate](https://slate.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-business-themes1.jpg)
-- [~] **Yogalife** — [colorlib](https://colorlib.com/wp/template/yogalife/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogalife-free-template.jpg)
+- [x] **Yogalife** — [colorlib](https://colorlib.com/wp/template/yogalife/) · [soulflow](https://soulflow.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogalife-free-template.jpg)
 - [x] **Yummy** — [colorlib](https://colorlib.com/wp/template/yummy/) · [zesty](https://zesty.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-minimal-food-blog-website-template.jpg)
 
 ## Dentist (14)
@@ -1893,7 +1893,7 @@
 - [x] **Yogaflex** — [colorlib](https://colorlib.com/wp/template/yogaflex/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogaflex-free-template.jpg) · [vinyasa](https://vinyasa.free.componentdock.com)
 - [x] **Yogafun** — [colorlib](https://colorlib.com/wp/template/yogafun/) · [namastay](https://namastay.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogafun-free-template.jpg)
 - [x] **Yogalax** — [colorlib](https://colorlib.com/wp/template/yogalax/) · [shanti](https://shanti.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogalax-free-template.jpg)
-- [~] **Yogalife** — [colorlib](https://colorlib.com/wp/template/yogalife/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogalife-free-template.jpg)
+- [x] **Yogalife** — [colorlib](https://colorlib.com/wp/template/yogalife/) · [soulflow](https://soulflow.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogalife-free-template.jpg)
 - [ ] **Zacson** — [colorlib](https://colorlib.com/wp/template/zacson/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zacson-free-template.jpg)
 - [ ] **Zogin** — [colorlib](https://colorlib.com/wp/template/zogin/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zogin-free-template.jpg)
 
