@@ -1542,7 +1542,7 @@
 - [x] **Listed** — [colorlib](https://colorlib.com/wp/template/listed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listed-free-template-1.jpg) · [placeboard](https://placeboard.free.componentdock.com)
 - [x] **Listed2** — [colorlib](https://colorlib.com/wp/template/listed2/) · [spotlight](https://spotlight.free.componentdock.com) · [preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listed2-free-template.jpg)
 - [x] **Listing** — [colorlib](https://colorlib.com/wp/template/listing/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listing-free-directory-website-template.jpg) · [listnest](https://listnest.free.componentdock.com)
-- [ ] **Listingo** — [colorlib](https://colorlib.com/wp/template/listingo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listingo-free-template.jpg)
+- [~] **Listingo** — [colorlib](https://colorlib.com/wp/template/listingo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listingo-free-template.jpg)
 - [ ] **Listio** — [colorlib](https://colorlib.com/wp/template/listio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listio-free-template.jpg)
 - [x] **Locals Directory** — [colorlib](https://colorlib.com/wp/template/locals-directory/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/localsdirectory-free-template.jpg) · [hoodly](https://hoodly.free.componentdock.com)
 - [x] **Mondy** — [colorlib](https://colorlib.com/wp/template/mondy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mondy-free-template.jpg) · [estately](https://estately.free.componentdock.com)
