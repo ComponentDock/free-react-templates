@@ -1,7 +1,7 @@
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
-import { resolve } from 'path'
 
 function injectUiSource() {
   const ui = resolve(__dirname, '../../packages/ui/src')
@@ -23,8 +23,6 @@ function injectUiSource() {
 export default defineConfig({
   plugins: [react(), injectUiSource(), tailwindcss()],
   resolve: {
-    alias: {
-      '@': resolve(__dirname, './src'),
-    },
+    alias: { '@': resolve(__dirname, './src') },
   },
 })

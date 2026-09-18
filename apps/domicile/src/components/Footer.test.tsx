@@ -1,61 +1,30 @@
-import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
 import { Footer } from './Footer'
-
+import { describe, expect, it } from 'vitest'
 describe('Footer', () => {
-  it('renders the footer with about section', () => {
+  it('renders brand', () => {
     render(<Footer />)
-    expect(screen.getByText('About Domicile')).toBeInTheDocument()
+    expect(screen.getByText('Domicile')).toBeInTheDocument()
   })
-
-  it('renders navigation links', () => {
+  it('renders quick links', () => {
     render(<Footer />)
-    expect(screen.getByText('Navigation Links')).toBeInTheDocument()
-    expect(screen.getByText('Home')).toBeInTheDocument()
-    expect(screen.getByText('Feature')).toBeInTheDocument()
+    expect(screen.getByText('Quick Links')).toBeInTheDocument()
   })
-
-  it('renders newsletter section with form', () => {
+  it('renders contact info', () => {
     render(<Footer />)
-    expect(screen.getByText('Newsletter')).toBeInTheDocument()
-    expect(screen.getByLabelText('Email Address')).toBeInTheDocument()
-    expect(screen.getByText('Subscribe')).toBeInTheDocument()
+    expect(screen.getByText('+2 102 3923 3922')).toBeInTheDocument()
   })
-
-  it('renders InstaFeed section', () => {
+  it('links to Component Dock', () => {
     render(<Footer />)
-    expect(screen.getByText('InstaFeed')).toBeInTheDocument()
-  })
-
-  it('renders the Component Dock link', () => {
-    render(<Footer />)
-    const link = screen.getByText('Component Dock')
+    const link = screen.getByRole('link', { name: 'Component Dock' })
     expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
     expect(link).toHaveAttribute('target', '_blank')
   })
-
-  it('submits the newsletter form and clears email', async () => {
-    const user = userEvent.setup()
+  it('handles newsletter submit', async () => {
+    const user = (await import('@testing-library/user-event')).default.setup()
     render(<Footer />)
-
-    const input = screen.getByLabelText('Email Address')
-    await user.type(input, 'test@example.com')
-    expect(input).toHaveValue('test@example.com')
-
-    await user.click(screen.getByText('Subscribe'))
-    expect(input).toHaveValue('')
-  })
-
-  it('renders social links in footer', () => {
-    render(<Footer />)
-    const socialLinks = screen.getAllByLabelText(/Facebook|Twitter|Dribbble|Behance/)
-    expect(socialLinks.length).toBe(4)
-  })
-
-  it('renders copyright with current year', () => {
-    render(<Footer />)
-    const year = new Date().getFullYear().toString()
-    expect(screen.getByText(new RegExp(year))).toBeInTheDocument()
+    const btn = screen.getByRole('button', { name: 'Subscribe' })
+    await user.click(btn)
+    expect(btn).toBeInTheDocument()
   })
 })

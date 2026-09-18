@@ -1,171 +1,68 @@
-# Template: Domicile (Business / Finance Agency)
-
 ## Purpose
 
-Recreation of ColorLib "Occupy" — a business/finance agency website template with
-a bold lime-green accent and image-heavy hero slider.
-
-- **Source slug:** `occupy`
-- **ColorLib page:** https://colorlib.com/wp/template/occupy/
-- **Preview URL:** https://preview.colorlib.com/theme/occupy/
-- **New name:** domicile
-- **App folder:** `apps/domicile`
-- **Package:** `@free-react-templates/domicile`
-- **Deploy URL:** `https://domicile.free.componentdock.com`
-- **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
-
-## Design tokens (extracted from preview)
-
-### Colors
-
-| Token         | Value                | Usage                              |
-| ------------- | -------------------- | ---------------------------------- |
-| brand-primary | `#a7cb00`            | Buttons, accent text, hover states |
-| hero-overlay  | `rgba(34,34,34,0.8)` | Dark overlay on hero/banner images |
-| body-text     | `#666666`            | Default body paragraph text        |
-| heading-text  | `#000000`            | Headings                           |
-| footer-bg     | `#f9f9ff`            | Light gray-blue footer background  |
-| footer-text   | `#777777`            | Footer paragraph text              |
-| body-bg       | `#ffffff`            | Main content background            |
-| border-light  | `#eeeeee`            | Subtle borders and dividers        |
-
-### Fonts
-
-| Token        | Value                   |
-| ------------ | ----------------------- |
-| font-body    | `"Raleway", sans-serif` |
-| font-heading | `"Oswald", sans-serif`  |
+Domicile is a real estate property listing landing page that recreates the ColorLib Homespace design (https://colorlib.com/wp/template/homespace/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app.
 
 ## Requirements
 
-### Requirement: Sticky navigation bar with social links
+### Requirement: Complete page composition
 
-The page SHALL display a sticky header with a "Domicile" logo, navigation links (Home, About, Services, Pages, Blog, Contact), social icons (Facebook, Twitter, Dribbble, Behance), and a mobile hamburger toggle.
+The app SHALL render all sections: TopBar, Navbar, Hero, SearchFilter, Properties, Services, Blog, and Footer.
 
-#### Scenario: Desktop navigation
+#### Scenario: Full page renders all sections
 
-- **WHEN** the user views on desktop
-- **THEN** all navigation links are visible in the sticky header
-- **AND** social icon links are displayed on the right
+- **WHEN** the app loads
+- **THEN** all section headings are present in the DOM
 
-#### Scenario: Mobile navigation toggle
+### Requirement: Brand identity
 
-- **WHEN** the user clicks the hamburger button
-- **THEN** a mobile navigation menu opens with all links
-- **AND** clicking a link closes the menu
+The app SHALL display "Domicile" as the brand name with a red dot accent in navbar and footer.
 
-### Requirement: Full-width hero slider with CTA
+#### Scenario: Brand name visible
 
-The page SHALL display a full-width image slider with 3 slides, each with a dark overlay, heading "We Combine Business with Finance", and two CTA buttons ("Explore Us" green, "Get Free Quote" outline). The slider SHALL auto-advance.
+- **WHEN** the page renders
+- **THEN** "Domicile" appears in navbar and footer
 
-#### Scenario: Manual slide navigation
+### Requirement: Property listings
 
-- **WHEN** the user clicks prev/next buttons or dot indicators
-- **THEN** the corresponding slide is displayed
+The Properties section SHALL display 6 property cards with title, location, price, beds, baths, and sqft.
 
-#### Scenario: Auto-advance
+#### Scenario: All properties rendered
 
-- **WHEN** the user waits 5 seconds without interaction
-- **THEN** the slider advances to the next slide automatically
+- **WHEN** the page renders
+- **THEN** all 6 property cards are visible with prices
 
-### Requirement: Mission section with image and text
+### Requirement: Search filters
 
-The page SHALL display a 2-column mission section with an image on the left and a text carousel on the right with items "Road to Success" and "About Our Mission".
+The SearchFilter SHALL provide dropdown filters for Lot Area, Bedrooms, Bathrooms, and Price Range.
 
-#### Scenario: Navigate mission items
+#### Scenario: Filter dropdowns
 
-- **WHEN** the user clicks prev/next or dots
-- **THEN** the corresponding mission text item is displayed
+- **WHEN** the page renders
+- **THEN** all 4 filter dropdowns are visible
 
-### Requirement: Success/achievements section
+### Requirement: Footer Component Dock link
 
-The page SHALL display alternating rows of text content and images in the success section.
-
-#### Scenario: Content display
-
-- **WHEN** the user scrolls to the success section
-- **THEN** text and image rows are displayed in alternating layout
-
-### Requirement: Project portfolio grid
-
-The page SHALL display 6 project items in a 3-column grid with image hover overlay showing project title, category, and "View More" link.
-
-#### Scenario: Project hover interaction
-
-- **WHEN** the user hovers over a project card
-- **THEN** a dark overlay with title, category, and "View More" link is revealed
-
-### Requirement: Team section
-
-The page SHALL display 4 team member cards showing photo, name, position, and social links on hover.
-
-#### Scenario: Team member display
-
-- **WHEN** the user views the team section
-- **THEN** 4 team member cards are visible with names, roles, and social icons on hover
-
-### Requirement: Project CTA banner
-
-The page SHALL display a full-width dark overlay banner with heading "Get to Know Project Estimate?" and a white "Get Free Estimate" button.
-
-#### Scenario: CTA visibility
-
-- **WHEN** the user scrolls past the team section
-- **THEN** the CTA banner is visible with the heading and button
-
-### Requirement: Blog post cards
-
-The page SHALL display 4 blog post cards in a grid, each with image, date/author meta, title, and excerpt.
-
-#### Scenario: Blog content
-
-- **WHEN** the user scrolls to the blog section
-- **THEN** 4 blog cards are visible with all metadata fields
-
-### Requirement: Site footer
-
-The page SHALL display a footer with light gray-blue background (#f9f9ff), 4 columns (About, Navigation Links, Newsletter form, InstaFeed), and a copyright line linking to Component Dock (https://www.componentdock.com/).
-
-#### Scenario: Newsletter form submission
-
-- **WHEN** the user enters an email and clicks Subscribe
-- **THEN** the form submits and the email input clears
+The footer SHALL link to https://www.componentdock.com/ with target="_blank".
 
 #### Scenario: Component Dock link
 
-- **WHEN** the user views the footer
-- **THEN** a link to https://www.componentdock.com/ is present with text "Component Dock"
+- **WHEN** the page renders
+- **THEN** a link to componentdock.com with target="_blank" is present
 
-### Requirement: Responsive design
+### Requirement: 100% test coverage
 
-The page SHALL be responsive across mobile, tablet, and desktop. Grids SHALL stack to single column on mobile. The navbar SHALL collapse to a hamburger menu on small screens.
+All source files under src/ (excluding main.tsx, test files, CSS, and configs) SHALL have 100% coverage.
 
-#### Scenario: Mobile layout
+#### Scenario: Coverage gate passes
 
-- **WHEN** the user views on a mobile device
-- **THEN** the navbar collapses to a hamburger menu
-- **AND** grid sections stack vertically
+- **WHEN** verify-app.sh domicile runs
+- **THEN** coverage is 100%
 
-### Requirement: Accessibility
+### Requirement: Per-app verification gate
 
-The page SHALL provide keyboard and screen reader support. All interactive elements SHALL be focusable. Form inputs SHALL have associated labels. Images SHALL have alt text.
+The app SHALL pass typecheck, lint, tests with 100% coverage, and build.
 
-#### Scenario: Keyboard navigation
+#### Scenario: Verification gate
 
-- **WHEN** the user navigates with keyboard
-- **THEN** all interactive elements are focusable in logical order
-
-## Verification checklist
-
-- [ ] Brand color `#a7cb00` used for primary accents
-- [ ] Font families: "Raleway" and "Oswald" loaded via Google Fonts
-- [ ] Hero is full-width slider with dark overlay
-- [ ] Mission section uses text carousel
-- [ ] CTA banner has dark overlay background
-- [ ] Footer background is #f9f9ff with proper column layout
-- [ ] All 9 sections present in correct order
-- [ ] Blog section has 4 cards
-- [ ] Newsletter form in footer
-- [ ] No ColorLib references in app code
-- [ ] Placeholder images use picsum.photos with deterministic seeds
-- [ ] Responsive breakpoints work
+- **WHEN** scripts/verify-app.sh domicile runs
+- **THEN** all steps pass

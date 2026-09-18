@@ -1,154 +1,105 @@
-import { useState } from 'react'
-import type { FormEvent } from 'react'
-import { Mail } from 'lucide-react'
-
-const footerLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'Feature', href: '#features' },
-  { label: 'Services', href: '#services' },
-  { label: 'Portfolio', href: '#pages' },
-  { label: 'Blog', href: '#blog' },
-] as const
-
-const footerLinks2 = [
-  { label: 'About', href: '#about' },
-  { label: 'Portfolio', href: '#pages' },
-  { label: 'Elements', href: '#elements' },
-  { label: 'Pricing', href: '#pricing' },
-  { label: 'Contact', href: '#contact' },
-] as const
-
-const instaImages = [
-  'https://picsum.photos/seed/domicile-insta1/150/150',
-  'https://picsum.photos/seed/domicile-insta2/150/150',
-  'https://picsum.photos/seed/domicile-insta3/150/150',
-  'https://picsum.photos/seed/domicile-insta4/150/150',
-] as const
-
 export function Footer() {
-  const [email, setEmail] = useState('')
-
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
-    setEmail('')
-  }
-
   return (
-    <footer id="contact" className="bg-footer-bg">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
-        <div>
-          <h6 className="font-display text-sm font-bold uppercase tracking-wider text-ink">
-            About Domicile
-          </h6>
-          <p className="mt-4 text-sm leading-relaxed text-footer-text">
-            The world has become so fast paced that people don&apos;t want to stand by reading a
-            page of information, they would much rather look at a presentation and understand the
-            message. It has come to a point where images and videos are
-          </p>
-        </div>
-
-        <div>
-          <h6 className="font-display text-sm font-bold uppercase tracking-wider text-ink">
-            Navigation Links
-          </h6>
-          <div className="mt-4 grid grid-cols-2 gap-4">
-            <ul className="space-y-2 text-sm text-footer-text">
-              {footerLinks.map((link) => (
-                <li key={link.label}>
-                  <a href={link.href} className="transition-colors hover:text-primary-400">
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            <ul className="space-y-2 text-sm text-footer-text">
-              {footerLinks2.map((link) => (
-                <li key={link.label}>
-                  <a href={link.href} className="transition-colors hover:text-primary-400">
-                    {link.label}
+    <footer className="bg-heading text-white pt-16 pb-8">
+      <div className="mx-auto max-w-7xl px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <h2 className="text-xl font-bold mb-4">
+              Domicile<span className="text-brand">.</span>
+            </h2>
+            <p className="text-sm text-white/60 mb-4">
+              Find your dream home with us. We offer the best properties in prime locations.
+            </p>
+            <div className="flex gap-3">
+              <a
+                href="https://twitter.com/"
+                aria-label="Twitter"
+                className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition-colors"
+              >
+                <span className="fa fa-twitter" aria-hidden="true" />
+              </a>
+              <a
+                href="https://www.facebook.com/"
+                aria-label="Facebook"
+                className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition-colors"
+              >
+                <span className="fa fa-facebook" aria-hidden="true" />
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                aria-label="LinkedIn"
+                className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand transition-colors"
+              >
+                <span className="fa fa-linkedin" aria-hidden="true" />
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-sm text-white/60">
+              {['Home', 'Properties', 'Blog', 'About', 'Contact'].map((l) => (
+                <li key={l}>
+                  <a href={`#${l.toLowerCase()}`} className="hover:text-white transition-colors">
+                    {l}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
-        </div>
-
-        <div>
-          <h6 className="font-display text-sm font-bold uppercase tracking-wider text-ink">
-            Newsletter
-          </h6>
-          <p className="mt-4 text-sm leading-relaxed text-footer-text">
-            For business professionals caught between high OEM price and mediocre print and graphic
-            output,
-          </p>
-          <form onSubmit={handleSubmit} className="mt-4 flex flex-col gap-3">
-            <label htmlFor="footer-email" className="sr-only">
-              Email Address
-            </label>
-            <input
-              id="footer-email"
-              type="email"
-              required
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-              placeholder="Email Address"
-              className="w-full border border-border bg-white px-4 py-3 text-sm text-ink placeholder:text-gray-400 focus:border-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-400/30"
-            />
-            <button
-              type="submit"
-              className="inline-flex items-center justify-center gap-2 bg-primary-400 px-6 py-3 text-sm font-bold uppercase text-white transition-colors hover:bg-primary-500"
-            >
-              <Mail className="h-4 w-4" aria-hidden="true" />
-              Subscribe
-            </button>
-          </form>
-        </div>
-
-        <div>
-          <h6 className="font-display text-sm font-bold uppercase tracking-wider text-ink">
-            InstaFeed
-          </h6>
-          <div className="mt-4 grid grid-cols-2 gap-2">
-            {instaImages.map((img, i) => (
-              <a key={i} href="#" aria-label={`Instagram post ${i + 1}`}>
-                <img
-                  src={img}
-                  alt={`Instagram post ${i + 1}`}
-                  className="h-20 w-full object-cover transition-opacity hover:opacity-80"
-                />
-              </a>
-            ))}
+          <div>
+            <h3 className="text-lg font-bold mb-4">Contact Info</h3>
+            <ul className="space-y-3 text-sm text-white/60">
+              <li className="flex items-start gap-2">
+                <span className="fa fa-map-marker text-brand mt-0.5" aria-hidden="true" />
+                <span>203 Fake St. Mountain View, San Francisco, CA</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="fa fa-phone text-brand" aria-hidden="true" />
+                <a href="tel:+210239233922" className="hover:text-white transition-colors">
+                  +2 102 3923 3922
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="fa fa-envelope text-brand" aria-hidden="true" />
+                <a href="mailto:info@domain.com" className="hover:text-white transition-colors">
+                  info@domain.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-bold mb-4">Newsletter</h3>
+            <p className="text-sm text-white/60 mb-3">Subscribe to get updates on new listings.</p>
+            <form className="flex" onSubmit={(e) => e.preventDefault()}>
+              <input
+                type="email"
+                placeholder="Your email"
+                className="flex-1 px-3 py-2 text-sm bg-white/10 border border-white/20 rounded-l text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-brand"
+              />
+              <button
+                type="submit"
+                className="bg-brand px-4 py-2 text-sm font-semibold rounded-r hover:bg-brand-dark transition-colors"
+              >
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
       </div>
-
-      <div className="border-t border-border px-4 py-6 sm:px-6">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
-          <p className="text-sm text-footer-text">
-            &copy; {new Date().getFullYear()} Domicile. All rights reserved. Made with{' '}
+      <div className="border-t border-white/10">
+        <div className="mx-auto max-w-7xl px-4 py-5 text-center">
+          <p className="text-sm text-white/50">
+            &copy; {new Date().getFullYear()} All rights reserved | Made with{' '}
+            <span className="fa fa-heart text-red-500" aria-hidden="true" /> by{' '}
             <a
               href="https://www.componentdock.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-primary-400 hover:underline"
+              className="text-white/70 hover:text-white transition-colors underline"
             >
               Component Dock
             </a>
           </p>
-          <div className="flex gap-3">
-            {['Facebook', 'Twitter', 'Dribbble', 'Behance'].map((label) => (
-              <a
-                key={label}
-                href="#"
-                aria-label={label}
-                className="text-footer-text transition-colors hover:text-primary-400"
-              >
-                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-                  <circle cx="12" cy="12" r="4" />
-                </svg>
-              </a>
-            ))}
-          </div>
         </div>
       </div>
     </footer>
