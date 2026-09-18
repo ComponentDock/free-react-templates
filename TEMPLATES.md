@@ -1503,7 +1503,7 @@
 ## Dentist (14)
 
 - [x] **Brightsmile** — [colorlib](https://colorlib.com/wp/template/brightsmile/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brightsmile-template-1771943701965.jpg) · [dentora](https://dentora.free.componentdock.com)
-- [ ] **Dentacare** — [colorlib](https://colorlib.com/wp/template/dentacare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentacare-free-template.jpg)
+- [~] **Dentacare** — [colorlib](https://colorlib.com/wp/template/dentacare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentacare-free-template.jpg)
 - [x] **Dental** — [colorlib](https://colorlib.com/wp/template/dental/) · [pearly](https://pearly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dental-colorlib-template.jpg)
 - [ ] **Dentamax** — [colorlib](https://colorlib.com/wp/template/dentamax/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentamax-free-template.jpg)
 - [ ] **Dente** — [colorlib](https://colorlib.com/wp/template/dente/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dente-free-template.jpg)
