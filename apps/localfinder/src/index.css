@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* LocalFinder brand palette — coral red accent on white. */
+  --color-page: #ffffff;
+
+  /* Primary brand — coral red: buttons, logo, accents. */
+  --color-primary: #f03250;
+  --color-primary-hover: #d42b44;
+
+  /* Ink — headings. */
+  --color-ink: #111111;
+
+  /* Muted — body text. */
+  --color-muted: #707070;
+
+  /* Border. */
+  --color-line: #e1e1e1;
+
+  /* Dark section. */
+  --color-dark: #222222;
+
+  /* Category icon backgrounds. */
+  --color-cat-green: #50d437;
+  --color-cat-red: #dc4c39;
+  --color-cat-yellow: #e9aa13;
+  --color-cat-pink: #d9d137;
+  --color-cat-coral: #f03250;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the coral red. */
+  --color-primary-50: #fef2f3;
+  --color-primary-100: #fde1e4;
+  --color-primary-200: #fcc8cd;
+  --color-primary-300: #f9a0a9;
+  --color-primary-400: #f46b79;
+  --color-primary-500: #f03250;
+  --color-primary-600: #dd1f3e;
+  --color-primary-700: #b91531;
+  --color-primary-800: #99152d;
+  --color-primary-900: #80162b;
+
+  /* Font families. */
+  --font-sans: 'Cairo', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Cairo', ui-sans-serif, system-ui, sans-serif;
+}
