@@ -5,144 +5,175 @@
 TalentGate is a single-page job portal landing page in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib "Jobportal" free
 template (source: https://colorlib.com/wp/template/jobportal/), built under a
-DIFFERENT name (**TalentGate**), with the monorepo stack: Vite + React 19 +
+DIFFERENT name ("TalentGate") with the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
 
-The original is a Bootstrap 4 + jQuery job portal with a full-height hero
-background image, a tabbed job search form, four service feature cards, a job
-listing section, a stats counter with parallax, a testimonial carousel, a blog
-grid, a newsletter subscribe section, and a dark footer. It uses the Font Awesome
-icon set and the Owl Carousel for testimonials.
+## Design reference (replication findings)
 
-**Live preview URL:** https://preview.colorlib.com/theme/jobportal/
+- **Original:** ColorLib "Jobportal" — job portal landing page
+  (source: https://colorlib.com/wp/template/jobportal/).
+- **Live preview:** https://preview.colorlib.com/theme/jobportal/
+- **Design tokens:** Primary brand #157efb (blue), secondary #5dd28e (green),
+  cyan accent #78d5ef, dark overlay #3c312e, footer #222831, light bg #f8f9fa.
+  Fonts: "Work Sans" (primary), "Nunito Sans" (secondary).
+- **Section order (1:1, from preview):**
+  1. Navbar: Dark bg, "TalentGate" brand, "Post a Job" (outline) and "Want a Job" (colored) CTAs. Collapses on mobile.
+  2. Hero: Full-height background image with dark overlay, counter text ("We have 850,000 great job offers"), h1 "Your Dream Job is Waiting", CTA button.
+  3. Search tabs: Tabbed search form ("Find Job" / "Find Candidate") with form fields (keyword, location, job type).
+  4. Services: Light bg, four service cards with blue icons, titles, descriptions.
+  5. Job listings: White cards with company logo, title, type badge, company, location, "Apply Job" button, heart/favorite button.
+  6. Stats counter: Parallax background, four counter items (Happy Clients, Total Jobs, Job Seekers, Employers).
+  7. Testimonials: Carousel with circular user photos, quotes, names, auto-rotation.
+  8. Blog grid: Four blog cards with images, dates, authors, titles, excerpts.
+  9. Newsletter: Parallax dark background, email input, green subscribe button.
+  10. Footer: Dark blue-gray, three columns (About + social icons, Employers links, Workers links), "Made with Component Dock" link.
 
-## Design tokens (extracted from preview CSS)
+## Requirements
 
-| Token             | Value                                         | Usage                                            |
-| ----------------- | --------------------------------------------- | ------------------------------------------------ |
-| Primary brand     | `#157efb` (bright blue)                       | Service icons, nav active state, section accents |
-| Secondary brand   | `#5dd28e` (green)                             | Subscribe button, badge accents                  |
-| Accent light      | `#78d5ef` (cyan)                              | Hover highlights                                 |
-| Dark background   | `#3c312e` (warm brown-black)                  | Hero overlay, ftco-bg-dark sections              |
-| Footer background | `#222831` (dark blue-gray)                    | Footer                                           |
-| Light section bg  | `#f8f9fa` (off-white)                         | Services, blog sections                          |
-| Body text         | `rgba(0,0,0,0.7)`                             | Paragraphs, secondary text                       |
-| White             | `#fff`                                        | Headings, form inputs, card backgrounds          |
-| Font (primary)    | `"Work Sans"`                                 | Headings, body, all text                         |
-| Font (secondary)  | `"Nunito Sans"`                               | Subheadings (subheading class)                   |
-| Border radius     | `0` (sharp corners)                           | Nav tabs, subscribe input                        |
-| Button primary    | `#157efb` blue bg, white text, rounded pill   | Apply Job buttons                                |
-| Button secondary  | `#6c757d` gray bg, circular                   | Favorite/heart buttons                           |
-| Subscribe button  | `#5dd28e` green bg, white text, right-rounded | Newsletter subscribe                             |
-| Counter number    | `34px` font, weight 600, white                | Stats counter section                            |
-| Section padding   | `7em 0`                                       | Standard section spacing                         |
+### Requirement: Navigation bar
 
-## Visual design (from screenshot)
+The system SHALL render a fixed dark navigation bar with the site name "TalentGate", navigation links, and two CTA buttons.
 
-The screenshot shows a dark overlay hero with large white headline text
-("Your Dream Job is Waiting") and a parallax background image. Below is a
-tabbed search form (Find Job / Find Candidate) with pill-shaped tabs and
-form fields. The services section has a light gray background with four
-icon-card columns. Job listings are white cards with company info, location
-badges, and blue "Apply Job" buttons. A parallax stats section shows four
-numbers on a dark background. Testimonials use a carousel with circular
-user photos. Blog posts appear as four image cards on a light background.
-A newsletter section uses a dark parallax background with a green subscribe
-button. The footer is a dark blue-gray three-column layout.
+#### Scenario: Navbar content
 
-## Gherkin requirements
+- **GIVEN** the TalentGate page is rendered
+- **WHEN** the page loads
+- **THEN** the navbar SHALL show the site name "TalentGate" and links to Services, Jobs, and Blog
+- **AND** the navbar SHALL show "Post a Job" (outline style) and "Want a Job" (solid blue) CTA buttons
 
-### Feature: TalentGate — Job Portal Landing Page
+#### Scenario: Navbar mobile collapse
 
-Scenario: Page loads with full hero section
-Given the user visits the TalentGate homepage
-Then a full-height hero section is visible
-And the hero displays the headline "Your Dream Job is Waiting"
-And a counter text shows the number of job offers
+- **GIVEN** the page is rendered on a mobile viewport
+- **WHEN** the user taps the hamburger menu button
+- **THEN** the mobile navigation menu SHALL toggle open/closed
 
-Scenario: Navigation bar renders correctly
-Given the user views the page
-Then a dark navbar is visible at the top
-And the navbar contains "Post a Job" and "Want a Job" action links
-And the navbar collapses on mobile viewports
+### Requirement: Hero section
 
-Scenario: Job search tabs function correctly
-Given the user views the search section
-Then two tabs are visible: "Find Job" and "Find Candidate"
-And "Find Job" tab is active by default
-When the user clicks "Find Candidate"
-Then the "Find Candidate" tab becomes active
-And the search form fields update accordingly
+The system SHALL render a full-height hero section with a background image, overlay, headline text, and CTA button.
 
-Scenario: Job search form fields render
-Given the user views the "Find Job" tab
-Then form fields for keyword, location, and job type are visible
-And each field has a search icon
-And a search button is present
+#### Scenario: Hero content
 
-Scenario: Services section displays feature cards
-Given the user scrolls to the services section
-Then four service cards are displayed in a row
-And each card has a blue icon, a title, and a description
-And the section has a light gray background
+- **GIVEN** the TalentGate page is rendered
+- **WHEN** the hero section is visible
+- **THEN** it SHALL display the headline "Your Dream Job is Waiting"
+- **AND** it SHALL show the counter text "We have 850,000 great job offers"
+- **AND** it SHALL include a "Get Started" CTA button linking to the search section
 
-Scenario: Job listings display correctly
-Given the user scrolls to the job listings section
-Then job post cards are displayed
-And each card shows job title, company name, and location
-And each card has an "Apply Job" button and a heart/favorite button
-And badges indicate job type (e.g., "Partime", "Fulltime")
+### Requirement: Job search tabs
 
-Scenario: Stats counter section renders
-Given the user scrolls to the counter section
-Then four stat items are displayed
-And each stat has a large number and a label
-And the section uses a parallax background image
+The system SHALL render a tabbed search form with "Find Job" and "Find Candidate" tabs.
 
-Scenario: Testimonials carousel works
-Given the user scrolls to the testimonials section
-Then a carousel of testimonial items is displayed
-And each testimonial has a circular user photo, name, and quote
-And the carousel auto-rotates between testimonials
+#### Scenario: Tab switching
 
-Scenario: Blog section displays posts
-Given the user scrolls to the blog section
-Then four blog post cards are displayed in a grid
-And each card has a thumbnail image, date, author, and title
-And the section has a light gray background
+- **GIVEN** the search tabs section is rendered
+- **WHEN** the page loads
+- **THEN** the "Find Job" tab SHALL be active by default
+- **WHEN** the user clicks "Find Candidate"
+- **THEN** the "Find Candidate" tab SHALL become active
 
-Scenario: Newsletter subscribe section works
-Given the user scrolls to the newsletter section
-Then a heading "Subscribe to our Newsletter" is visible
-And an email input field and subscribe button are present
-And the section uses a parallax dark background
+#### Scenario: Search form fields
 
-Scenario: Footer renders correctly
-Given the user scrolls to the footer
-Then the footer has a dark background
-And three columns are visible: About, Employers, Workers
-And social media links are present
-And the footer links to Component Dock
+- **GIVEN** the "Find Job" tab is active
+- **WHEN** the search form is displayed
+- **THEN** it SHALL show input fields for keyword, location, and job type
+- **AND** it SHALL include a "Search" button
 
-Scenario: Footer links to Component Dock
-Given the user views the footer
-Then a link to "https://www.componentdock.com/" is present
-And the link text includes "Component Dock"
+### Requirement: Services section
 
-## Verification checklist
+The system SHALL render four service feature cards on a light background.
 
-- [ ] Hero section renders with full-height background image and overlay
-- [ ] Navbar is dark with correct CTA buttons, responsive on mobile
-- [ ] Search tabs toggle between Find Job / Find Candidate
-- [ ] Services section shows four feature cards on light background
-- [ ] Job listing cards show title, company, location, badges, apply/favorite
-- [ ] Stats counter section uses parallax background with four counters
-- [ ] Testimonials carousel displays user photos and quotes
-- [ ] Blog grid shows four post cards with images
-- [ ] Newsletter section has parallax background, email input, subscribe button
-- [ ] Footer has three columns, social links, Component Dock link
-- [ ] All design tokens match the original (#157efb blue, #5dd28e green, Work Sans)
-- [ ] No ColorLib references anywhere in app code (provenance in spec only)
-- [ ] Uses picsum.photos for placeholder images (seeded per template)
-- [ ] Uses lucide-react for icons (no Font Awesome shipped)
-- [ ] 100% test coverage on changed code
+#### Scenario: Service cards
+
+- **GIVEN** the services section is rendered
+- **WHEN** the section is visible
+- **THEN** it SHALL display four service cards
+- **AND** each card SHALL have a blue icon, title, and description
+
+### Requirement: Job listings
+
+The system SHALL render job post cards with company info, location, and action buttons.
+
+#### Scenario: Job card content
+
+- **GIVEN** the job listings section is rendered
+- **WHEN** the section is visible
+- **THEN** it SHALL display job cards with title, type badge, company name, and location
+- **AND** each card SHALL have an "Apply Job" button and a heart/favorite button
+
+### Requirement: Stats counter
+
+The system SHALL render four animated counter items on a parallax background.
+
+#### Scenario: Counter animation
+
+- **GIVEN** the stats section is rendered
+- **WHEN** the section enters the viewport
+- **THEN** the counter numbers SHALL animate from 0 to their target values
+- **AND** the section SHALL display: Happy Clients, Total Jobs, Job Seekers, Employers
+
+### Requirement: Testimonials carousel
+
+The system SHALL render an auto-rotating testimonial carousel.
+
+#### Scenario: Testimonial display
+
+- **GIVEN** the testimonials section is rendered
+- **WHEN** the section is visible
+- **THEN** it SHALL display a testimonial with a circular user photo, quote, name, and role
+- **AND** the carousel SHALL auto-rotate every 5 seconds
+- **AND** navigation dots SHALL allow manual switching
+
+### Requirement: Blog grid
+
+The system SHALL render four blog post cards in a grid layout.
+
+#### Scenario: Blog card content
+
+- **GIVEN** the blog section is rendered
+- **WHEN** the section is visible
+- **THEN** it SHALL display four blog cards with thumbnail image, date, author, title, and excerpt
+
+### Requirement: Newsletter section
+
+The system SHALL render a newsletter subscribe section with a parallax background.
+
+#### Scenario: Newsletter form
+
+- **GIVEN** the newsletter section is rendered
+- **WHEN** the section is visible
+- **THEN** it SHALL show a heading "Subscribe to our Newsletter"
+- **AND** it SHALL include an email input field and a green "Subscribe" button
+
+### Requirement: Footer
+
+The system SHALL render a dark footer with three columns and a Component Dock link.
+
+#### Scenario: Footer content
+
+- **GIVEN** the footer is rendered
+- **WHEN** the footer is visible
+- **THEN** it SHALL display three columns: About (with social icons), Employers (link list), Workers (link list)
+- **AND** it SHALL include a link to "https://www.componentdock.com/" labeled "Component Dock"
+
+### Requirement: Design fidelity
+
+The system SHALL use the original design's color tokens and typography.
+
+#### Scenario: Color tokens
+
+- **GIVEN** the TalentGate page is rendered
+- **WHEN** the design tokens are inspected
+- **THEN** the primary brand color SHALL be #157efb
+- **AND** the secondary brand color SHALL be #5dd28e
+- **AND** the footer background SHALL be #222831
+- **AND** the primary font SHALL be "Work Sans"
+
+### Requirement: No ColorLib references in app code
+
+The system SHALL NOT contain any references to ColorLib in application source files.
+
+#### Scenario: Provenance isolation
+
+- **GIVEN** the app source files are inspected
+- **WHEN** searching for "colorlib" in apps/talentgate/src/
+- **THEN** no matches SHALL be found
