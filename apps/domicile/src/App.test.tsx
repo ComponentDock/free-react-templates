@@ -1,20 +1,21 @@
-import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { App } from './App'
+import { describe, expect, it } from 'vitest'
 
 describe('App', () => {
-  it('renders the full page with all sections', () => {
-    render(<App />)
-    expect(screen.getByText('Domicile')).toBeInTheDocument()
-    expect(screen.getByText('We Combine Business with Finance')).toBeInTheDocument()
-    expect(screen.getAllByText('Road to Success').length).toBeGreaterThanOrEqual(1)
-    expect(screen.getByText('Meet Our Team')).toBeInTheDocument()
-    expect(screen.getByText('Get to Know Project Estimate?')).toBeInTheDocument()
-    expect(screen.getByText('About Domicile')).toBeInTheDocument()
-  })
-
   it('sets the document title', () => {
     render(<App />)
-    expect(document.title).toBe('Domicile — Business & Finance Agency Template')
+    expect(document.title).toBe('Domicile — Real Estate Template')
+  })
+  it('composes the full page', () => {
+    render(<App />)
+    expect(
+      screen.getByRole('heading', { level: 1, name: '853 S Lucerne Blvd' }),
+    ).toBeInTheDocument()
+    expect(screen.getByText('Wide Range of Properties')).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 2, name: 'Our Services' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 2, name: 'Our Blog' })).toBeInTheDocument()
+    const dock = screen.getByRole('link', { name: 'Component Dock' })
+    expect(dock).toHaveAttribute('href', 'https://www.componentdock.com/')
   })
 })

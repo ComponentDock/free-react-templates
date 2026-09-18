@@ -1,28 +1,18 @@
 @import 'tailwindcss';
-
-@custom-variant dark (&:where(.dark, .dark *));
-
 @theme {
-  /* Domicile brand — from ColorLib Occupy preview.
-     Lime-green #a7cb00 primary, Raleway body, Oswald headings,
-     light footer bg #f9f9ff. */
-  --color-primary-50: #f5fad0;
-  --color-primary-100: #e8f4a8;
-  --color-primary-200: #d5ec76;
-  --color-primary-300: #c2e344;
-  --color-primary-400: #a7cb00;
-  --color-primary-500: #8fb300;
-  --color-primary-600: #738f00;
-  --color-primary-700: #576b00;
-  --color-primary-800: #3b4800;
-  --color-primary-900: #1f2500;
-
-  --color-ink: #000000;
-  --color-body: #666666;
-  --color-footer-bg: #f9f9ff;
-  --color-footer-text: #777777;
-  --color-border: #eeeeee;
-
-  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
-  --font-display: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --color-brand: #c8102e;
+  --color-brand-dark: #a00d24;
+  --color-heading: #1a1a1a;
+  --color-body: #555555;
+  --color-muted: #888888;
+  --color-light: #f8f9fa;
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-body antialiased;
+  }
 }

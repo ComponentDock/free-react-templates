@@ -1,29 +1,26 @@
 import { useEffect } from 'react'
+import { TopBar } from './components/TopBar'
 import { Navbar } from './components/Navbar'
-import { HeroSlider } from './components/HeroSlider'
-import { Mission } from './components/Mission'
-import { SuccessStats } from './components/SuccessStats'
-import { ProjectShowcase } from './components/ProjectShowcase'
-import { Team } from './components/Team'
-import { ProjectCTA } from './components/ProjectCTA'
+import { Hero } from './components/Hero'
+import { SearchFilter } from './components/SearchFilter'
+import { Properties } from './components/Properties'
+import { Services } from './components/Services'
 import { Blog } from './components/Blog'
 import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Domicile — Business & Finance Agency Template'
+    document.title = 'Domicile — Real Estate Template'
   }, [])
-
   return (
-    <div className="flex min-h-screen flex-col bg-white text-ink transition-colors dark:bg-gray-950 dark:text-gray-100">
+    <div className="min-h-screen bg-white font-sans text-body">
+      <TopBar />
       <Navbar />
-      <main className="flex-1">
-        <HeroSlider />
-        <Mission />
-        <SuccessStats />
-        <ProjectShowcase />
-        <Team />
-        <ProjectCTA />
+      <main>
+        <Hero />
+        <SearchFilter />
+        <Properties />
+        <Services />
         <Blog />
       </main>
       <Footer />

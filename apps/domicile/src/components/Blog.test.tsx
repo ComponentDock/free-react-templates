@@ -1,29 +1,15 @@
-import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { Blog } from './Blog'
-
+import { describe, expect, it } from 'vitest'
 describe('Blog', () => {
-  it('renders all 4 blog posts', () => {
+  it('renders heading', () => {
     render(<Blog />)
-    const posts = screen.getAllByText('Addiction When Gambling Becomes A Problem')
-    expect(posts).toHaveLength(4)
+    expect(screen.getByRole('heading', { level: 2, name: 'Our Blog' })).toBeInTheDocument()
   })
-
-  it('renders blog images', () => {
+  it('renders all 3 posts', () => {
     render(<Blog />)
-    const images = screen.getAllByRole('img')
-    expect(images.length).toBe(4)
-  })
-
-  it('renders dates and authors', () => {
-    render(<Blog />)
-    const dates = screen.getAllByText(/25 June, 2024/)
-    expect(dates.length).toBe(4)
-  })
-
-  it('renders post excerpts', () => {
-    render(<Blog />)
-    const excerpts = screen.getAllByText(/Computers have become/)
-    expect(excerpts.length).toBe(4)
+    expect(screen.getByText(/How to find/)).toBeInTheDocument()
+    expect(screen.getByText(/Tips for first-time/)).toBeInTheDocument()
+    expect(screen.getByText(/Understanding property/)).toBeInTheDocument()
   })
 })
