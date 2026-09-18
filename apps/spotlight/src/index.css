@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Spotlight brand palette — business directory look with purple
+     #7971ea primary, #6a62d6 hover, #4d4d4d body text, #000 headings,
+     #f4f5f9 light sections, #333333 footer bg. */
+  --color-primary: #7971ea;
+  --color-primary-hover: #6a62d6;
+  --color-body: #4d4d4d;
+  --color-heading: #000000;
+  --color-light-bg: #f4f5f9;
+  --color-footer-bg: #333333;
+  --color-footer-text: #737373;
+  --color-border: #edf0f5;
+
+  /* Typography: Quicksand for everything. */
+  --font-sans:
+    'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
