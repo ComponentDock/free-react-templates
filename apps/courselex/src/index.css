@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-teal-grad-start: #39cfca;
+  --color-teal-grad-end: #3279bb;
+  --color-brand-dark: #222222;
+  --color-brand-body: #777777;
+  --color-brand-light: #f9f9ff;
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
