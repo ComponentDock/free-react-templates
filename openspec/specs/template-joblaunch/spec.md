@@ -13,18 +13,18 @@ Recreation of ColorLib's **Jobstart** template as a React 19 + Vite + Tailwind 4
 
 ## Design tokens
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Brand color | `#26baee` | Cyan/teal blue — primary buttons, links, accents |
-| Text primary | `#25262a` | Dark for headings/body |
-| Text muted | `#4d4d4d` | Medium grey for secondary text |
-| Background dark | `#393e46` | Dark footer background |
-| Background light | `#f8f9fa` | Light grey sections |
-| Background alt | `#e6e7e9` | Alternate section bg |
-| Border light | `#edf0f5` | Subtle borders |
-| Font family | `"Nunito Sans", sans-serif` | Google Font |
-| Button primary | bg `#26baee`, text `#fff` | Pill/rounded style |
-| Newsletter bg | `#26baee` (primary) | Full-width blue banner |
+| Token            | Value                       | Notes                                            |
+| ---------------- | --------------------------- | ------------------------------------------------ |
+| Brand color      | `#26baee`                   | Cyan/teal blue — primary buttons, links, accents |
+| Text primary     | `#25262a`                   | Dark for headings/body                           |
+| Text muted       | `#4d4d4d`                   | Medium grey for secondary text                   |
+| Background dark  | `#393e46`                   | Dark footer background                           |
+| Background light | `#f8f9fa`                   | Light grey sections                              |
+| Background alt   | `#e6e7e9`                   | Alternate section bg                             |
+| Border light     | `#edf0f5`                   | Subtle borders                                   |
+| Font family      | `"Nunito Sans", sans-serif` | Google Font                                      |
+| Button primary   | bg `#26baee`, text `#fff`   | Pill/rounded style                               |
+| Newsletter bg    | `#26baee` (primary)         | Full-width blue banner                           |
 
 ## Section structure (page order)
 
@@ -37,126 +37,139 @@ Recreation of ColorLib's **Jobstart** template as a React 19 + Vite + Tailwind 4
 7. **Newsletter** — Blue bg, "Subscribe Newsletter" heading, email input + "Send" button
 8. **Footer** — Dark bg, 5 columns: For Candidates, For Employers, Archives, Company, Contact Info, copyright with Component Dock link
 
-## Gherkin requirements
+## Requirements
 
-### Navbar
+### Requirement: Navbar displays brand and navigation
 
-```gherkin
-Scenario: Navbar displays brand and navigation
-  Given the user visits the page
-  Then the navbar shows "JobLaunch" as the brand
-  And it has links: Home, Category, Blog, About, Contact
-  And a "+ Post a Job" button is visible
+The navbar SHALL show "JobLaunch" as the brand name and navigation links for Home, Category, Blog, About, and Contact, plus a "+ Post a Job" CTA button.
 
-Scenario: Category dropdown
-  Given the user hovers over "Category"
-  Then a dropdown shows: Full Time, Part Time, Freelance, Internship, Temporary
+#### Scenario: Navbar renders brand and links
 
-Scenario: Navbar is sticky on scroll
-  Given the user scrolls past the hero
-  Then the navbar remains fixed at the top
-```
+- **WHEN** the user visits the page
+- **THEN** the navbar shows "JobLaunch" as the brand
+- **AND** it has links: Home, Category, Blog, About, Contact
+- **AND** a "+ Post a Job" button is visible
 
-### Hero section
+#### Scenario: Category dropdown on hover
 
-```gherkin
-Scenario: Hero displays headline and search form
-  Given the user visits the page
-  Then a headline "Largest Job Site On The Net" is visible
-  And tab pills show "Find A Job" and "Find A Candidate"
+- **WHEN** the user hovers over "Category"
+- **THEN** a dropdown shows: Full Time, Part Time, Freelance, Internship, Temporary
 
-Scenario: Find A Job tab
-  Given the "Find A Job" tab is active
-  Then a search form has fields: keyword, category dropdown, location
-  And a "Search" button is present
+#### Scenario: Dropdown hides on mouse leave
 
-Scenario: Tab switching
-  Given the user clicks "Find A Candidate" tab
-  Then the "Find A Job" content hides and candidate form shows
-```
+- **WHEN** the user moves the mouse away from the Category dropdown
+- **THEN** the dropdown menu is hidden
 
-### Recent Jobs section
+### Requirement: Hero section with tabbed search form
 
-```gherkin
-Scenario: Job listings display
-  Given the user scrolls to recent jobs
-  Then a "Recent Jobs" heading is visible
-  And at least 9 job items are rendered
-  And each item shows: title, type badge, company, location, heart button, "Apply Job" button
+The hero SHALL display a headline "Largest Job Site On The Net" with a tabbed search form supporting both job seekers and employers.
 
-Scenario: Job type badges
-  Given the job listings are displayed
-  Then badges use colors: blue=Part Time, yellow=Full Time, cyan=Freelance, grey=Internship, red=Temporary
+#### Scenario: Hero displays headline and tabs
 
-Scenario: Pagination
-  Given the user scrolls past job items
-  Then pagination controls show numbers 1-5 with prev/next arrows
-```
+- **WHEN** the user visits the page
+- **THEN** a headline "Largest Job Site On The Net" is visible
+- **AND** tab pills show "Find A Job" and "Find A Candidate"
 
-### Features section
+#### Scenario: Find A Job tab shows job search form
 
-```gherkin
-Scenario: Features grid
-  Given the user scrolls to features
-  Then a "Why JobLaunch" heading is visible
-  And 6 feature cards are displayed in 3x2 grid
-  And each card has a hexagon icon, title, and description
-  And titles are: Search Millions of Jobs, Location Search, Top Careers, Search Expert Candidates, Easy To Manage Jobs, Online Reviews
-```
+- **WHEN** the "Find A Job" tab is active
+- **THEN** a search form has fields: keyword, category dropdown, location
+- **AND** a "Search" button is present
 
-### Testimonials section
+#### Scenario: Tab switching between job and candidate
 
-```gherkin
-Scenario: Testimonial carousel
-  Given the user scrolls to testimonials
-  Then a "Happy Employers" heading is visible
-  And a testimonial card shows avatar, name, role, and quote
-  And navigation dots allow switching testimonials
-```
+- **WHEN** the user clicks "Find A Candidate" tab
+- **THEN** the "Find A Job" content hides and candidate form shows
 
-### Blog section
+### Requirement: Recent Jobs section with listings and pagination
 
-```gherkin
-Scenario: Blog cards display
-  Given the user scrolls to blog
-  Then a "Latest Blog" heading is visible
-  And 4 blog cards are shown in a row
-  And each card has: image, author, date, title, and excerpt
-```
+The recent jobs section SHALL display at least 9 job items with type badges, company info, location, favorite button, and apply button, plus pagination controls.
 
-### Newsletter section
+#### Scenario: Job listings display
 
-```gherkin
-Scenario: Newsletter form
-  Given the user scrolls to newsletter
-  Then a "Subscribe Newsletter" heading is on a blue background
-  And an email input and "Send" button are present
-```
+- **WHEN** the user scrolls to recent jobs
+- **THEN** a "Recent Jobs" heading is visible
+- **AND** at least 9 job items are rendered
+- **AND** each item shows: title, type badge, company, location, heart button, "Apply Job" button
 
-### Footer
+#### Scenario: Job type badges with colors
 
-```gherkin
-Scenario: Footer content
-  Given the user scrolls to the bottom
-  Then the footer shows columns: For Candidates, For Employers, Archives, Company, Contact Info
-  And contact info shows address, telephone, email
-  And a copyright line links to https://www.componentdock.com/
-```
+- **WHEN** the job listings are displayed
+- **THEN** badges use colors: blue for Part Time, yellow for Full Time, cyan for Freelance, grey for Internship, red for Temporary
+
+#### Scenario: Pagination controls
+
+- **WHEN** the user scrolls past job items
+- **THEN** pagination controls show numbers 1-5 with prev/next arrows
+
+### Requirement: Features section with 6 cards
+
+The features section SHALL display 6 feature cards in a grid, each with an icon, title, and description.
+
+#### Scenario: Features grid displays
+
+- **WHEN** the user scrolls to features
+- **THEN** a "Why JobLaunch" heading is visible
+- **AND** 6 feature cards are displayed
+- **AND** each card has an icon, title, and description
+- **AND** titles are: Search Millions of Jobs, Location Search, Top Careers, Search Expert Candidates, Easy To Manage Jobs, Online Reviews
+
+### Requirement: Testimonials section
+
+The testimonials section SHALL display employer testimonials with avatars, names, roles, and quotes.
+
+#### Scenario: Testimonial cards display
+
+- **WHEN** the user scrolls to testimonials
+- **THEN** a "Happy Employers" heading is visible
+- **AND** testimonial cards show avatar, name, role, and quote
+
+### Requirement: Blog section with cards
+
+The blog section SHALL display 4 blog cards in a grid with images, author info, dates, titles, and excerpts.
+
+#### Scenario: Blog cards display
+
+- **WHEN** the user scrolls to blog
+- **THEN** a "Latest Blog" heading is visible
+- **AND** 4 blog cards are shown
+- **AND** each card has: image, author, date, title, and excerpt
+
+### Requirement: Newsletter subscription form
+
+The newsletter section SHALL display a subscription form with email input and send button on a blue background.
+
+#### Scenario: Newsletter form renders
+
+- **WHEN** the user scrolls to newsletter
+- **THEN** a "Subscribe Newsletter" heading is on a blue background
+- **AND** an email input and "Send" button are present
+
+### Requirement: Footer with columns and Component Dock link
+
+The footer SHALL display 5 columns of links, contact information, and a copyright line linking to Component Dock.
+
+#### Scenario: Footer content
+
+- **WHEN** the user scrolls to the bottom
+- **THEN** the footer shows columns: For Candidates, For Employers, Archives, Company, Contact Info
+- **AND** contact info shows address, telephone, email
+- **AND** a copyright line links to https://www.componentdock.com/
 
 ## Verification checklist
 
-- [ ] All sections match original structure and order (1:1)
-- [ ] Brand color `#26baee` used for buttons, links, accents
-- [ ] Font "Nunito Sans" loaded via Google Fonts
-- [ ] Hero has tabbed search form with two tabs
-- [ ] Recent Jobs shows 9+ items with colored type badges
-- [ ] Features section has 6 cards with hexagon icons
-- [ ] Testimonial carousel with avatars
-- [ ] Blog section shows 4 cards
-- [ ] Newsletter on blue background
-- [ ] Footer links to Component Dock
-- [ ] No references to ColorLib in app code
-- [ ] Placeholder images via picsum.photos
-- [ ] Responsive: mobile hamburger, stacked layout
-- [ ] Tests: 100% coverage
-- [ ] TypeCheck, Lint, Build pass
+- [x] All sections match original structure and order (1:1)
+- [x] Brand color `#26baee` used for buttons, links, accents
+- [x] Font "Nunito Sans" loaded via Google Fonts
+- [x] Hero has tabbed search form with two tabs
+- [x] Recent Jobs shows 9+ items with colored type badges
+- [x] Features section has 6 cards with icons
+- [x] Testimonial cards with avatars
+- [x] Blog section shows 4 cards
+- [x] Newsletter on blue background
+- [x] Footer links to Component Dock
+- [x] No references to ColorLib in app code
+- [x] Placeholder images via picsum.photos
+- [x] Responsive: mobile hamburger, stacked layout
+- [x] Tests: 100% coverage
+- [x] TypeCheck, Lint, Build pass
