@@ -1603,7 +1603,7 @@
 - [x] **Shopper** — [colorlib](https://colorlib.com/wp/template/shopper/) · [moda](https://moda.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shopper-template-1770211205661.jpg)
 - [x] **Shoppers** — [colorlib](https://colorlib.com/wp/template/shoppers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shoppers-free-template.jpg) · [vendly](https://vendly.free.componentdock.com)
 - [ ] **Solestyle** — [colorlib](https://colorlib.com/wp/template/solestyle/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solestyle-template-1770211411401.jpg)
-- [ ] **Store** — [colorlib](https://colorlib.com/wp/template/store/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/store-free-template.jpg)
+- [~] **Store** — [colorlib](https://colorlib.com/wp/template/store/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/store-free-template.jpg)
 - [x] **Sublime** — [colorlib](https://colorlib.com/wp/template/sublime/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sublime-free-template.jpg) · [vendio](https://vendio.free.componentdock.com)
 - [x] **Theplaza** — [colorlib](https://colorlib.com/wp/template/theplaza/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theplaza-free-template.jpg) · [boutique](https://boutique.free.componentdock.com)
 - [x] **Timezone** — [colorlib](https://colorlib.com/wp/template/timezone/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/timezone-free-template.jpg) · [chrono](https://chrono.free.componentdock.com)
