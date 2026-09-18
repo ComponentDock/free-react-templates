@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Soulflow brand palette — teal accent, serif headings, sans body */
+  --color-soulflow-teal: #87e5da;
+  --color-soulflow-dark: #1a1a1a;
+  --color-soulflow-muted: #6b7280;
+  --color-soulflow-light: #f8f9fa;
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}

@@ -1,0 +1,21 @@
+# Soulflow — Implementation Tasks
+
+- [x] Spec created
+- [x] App scaffold (package.json, vite.config.ts, vitest.config.ts, tsconfig.json, index.html)
+- [x] index.css with Tailwind + theme tokens
+- [x] Navbar component
+- [x] Hero slider component
+- [x] Welcome section component
+- [x] Programs section component
+- [x] Video section component
+- [x] Pricing section component
+- [x] Features section component
+- [x] Gallery section component
+- [x] Events section component
+- [x] Testimonials section component
+- [x] Footer component
+- [x] App.tsx composing all sections
+- [x] Tests for all components (100% coverage)
+- [x] Per-app verification gate
+- [x] PR + merge
+- [x] Bookkeeping (TEMPLATES.md, homepage, readme:status)
