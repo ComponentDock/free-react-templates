@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Glint brand green — from the ColorLib Prodent preview:
+     a dental clinic theme with green #71cd29 primary,
+     dark text #2d2d2d, body text #696969, info bar #eff2f4,
+     footer #0d0d0d, Montserrat font. */
+  --color-primary-50: #f0fce4;
+  --color-primary-100: #ddf8c3;
+  --color-primary-200: #c0ef94;
+  --color-primary-300: #a3e565;
+  --color-primary-400: #71cd29;
+  --color-primary-500: #5ba921;
+  --color-primary-600: #4a8a1c;
+  --color-primary-700: #396a17;
+  --color-primary-800: #294c12;
+  --color-primary-900: #192e0c;
+
+  /* Brand green for direct reference. */
+  --color-brand: #71cd29;
+
+  /* Card/row backgrounds. */
+  --color-card: #eff2f4;
+
+  /* Muted copy. */
+  --color-smoke: #696969;
+  --color-mist: #b7b7b7;
+
+  /* Dark text. */
+  --color-ink: #2d2d2d;
+
+  /* Footer dark. */
+  --color-footer: #0d0d0d;
+
+  /* Montserrat (headings + body) via Google Fonts — matching the ColorLib font. */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
