@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Smilewell brand cyan/teal — from the ColorLib Toothsy preview:
+     a dental clinic theme with cyan #51eaea primary,
+     blue #499bea secondary, gradient cyan→blue,
+     dark text #212529, body text #737373, footer #333333,
+     Nunito font. */
+  --color-primary-50: #eafafa;
+  --color-primary-100: #c5f5f5;
+  --color-primary-200: #8aeaea;
+  --color-primary-300: #51eaea;
+  --color-primary-400: #3cd8d8;
+  --color-primary-500: #28c0c0;
+  --color-primary-600: #1d9e9e;
+  --color-primary-700: #157a7a;
+  --color-primary-800: #0e5858;
+  --color-primary-900: #083838;
+
+  /* Brand cyan for direct reference. */
+  --color-brand: #51eaea;
+
+  /* Secondary blue. */
+  --color-secondary: #499bea;
+
+  /* Gradient start/end. */
+  --color-gradient-start: #51eaea;
+  --color-gradient-end: #499bea;
+
+  /* Card/row backgrounds. */
+  --color-card: #f4f5f9;
+
+  /* Muted copy. */
+  --color-smoke: #737373;
+  --color-mist: #939393;
+
+  /* Dark text. */
+  --color-ink: #212529;
+
+  /* Footer dark. */
+  --color-footer: #333333;
+
+  /* Nunito (headings + body) via Google Fonts — matching the ColorLib font. */
+  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+}
