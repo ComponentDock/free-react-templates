@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-blue: #1eaaf1;
+  --color-brand-orange: #fda638;
+  --color-brand-green: #8cc152;
+  --color-brand-red: #f1453d;
+  --color-brand-purple: #5d50c6;
+  --color-brand-dark: #232323;
+  --color-brand-light: #fafafa;
+
+  --font-body: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Fredericka the Great', cursive;
+}
+
+body {
+  font-family: var(--font-body);
+  color: rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Pill-shaped buttons */
+.btn-pill {
+  border-radius: 40px;
+}
+
+/* Parallax effect */
+.parallax-bg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+}
