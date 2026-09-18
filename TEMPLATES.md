@@ -1466,7 +1466,7 @@
 - [x] **Education Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/education-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/education-website-designs.jpg) · [scholarly](https://scholarly.free.componentdock.com)
 - [x] **Expert** — [colorlib](https://colorlib.com/wp/template/expert/) · [adept](https://free-react-templates-adept.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/expert-free-template.jpg)
 - [x] **Fitzone** — [colorlib](https://colorlib.com/wp/template/fitzone/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitzone-free-template.jpg) · [bodyforge](https://free-react-templates-bodyforge.surge.sh)
-- [ ] **Five Star** — [colorlib](https://colorlib.com/wp/template/five-star/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/five-star-art-crafting-website-template.jpg)
+- [x] **Five Star** — [colorlib](https://colorlib.com/wp/template/five-star/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/five-star-art-crafting-website-template.jpg) · [brushwork](https://free-react-templates-brushwork.surge.sh)
 - [x] **Fplus** — [colorlib](https://colorlib.com/wp/template/fplus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fplus-free-template.jpg) · [foliox](https://foliox.free.componentdock.com)
 - [ ] **Go Crepe** — [colorlib](https://colorlib.com/wp/template/go-crepe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/go-crepe-creative-digital-agency-website-template.jpg)
 - [ ] **Ilene Berg** — [colorlib](https://colorlib.com/wp/template/ilene-berg/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fullscreen-ilene-berg-free-website-template.jpg)
