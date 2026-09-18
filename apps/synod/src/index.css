@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Synod brand palette — recreated from the reference design
+     (primary red #c0392b CTAs/accents, dark charcoal #333333 top bar,
+     heading #222222, body #777777, border #eeeeee). */
+  --color-brand: #c0392b;
+  --color-dark: #333333;
+  --color-heading: #222222;
+  --color-muted: #777777;
+  --color-border: #eeeeee;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

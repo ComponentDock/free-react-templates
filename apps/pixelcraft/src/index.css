@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-navy: #221c5a;
+  --color-navy-body: #23214c;
+  --color-green-title: #32db8a;
+  --color-green-num: #55b286;
+  --color-pink-brand: #e54b76;
+  --color-pink-hover: #ee87a4;
+  --color-yellow-timeline: #ffba42;
+  --color-yellow-progress: #ffbb42;
+  --color-pink-progress: #e74c78;
+  --color-blue-progress: #4c9ee7;
+  --color-gray-text: #727190;
+
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-subtitle: 'PT Serif', Georgia, serif;
+}

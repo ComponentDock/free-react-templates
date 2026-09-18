@@ -1,48 +1,34 @@
 import { useEffect } from 'react'
-import { About } from './components/About'
-import { Blog } from './components/Blog'
-import { Counters } from './components/Counters'
-import { Faq } from './components/Faq'
-import { Footer } from './components/Footer'
-import { Hero } from './components/Hero'
-import { IntroCta } from './components/IntroCta'
 import { Navbar } from './components/Navbar'
-import { Newsletter } from './components/Newsletter'
-import { Portfolio } from './components/Portfolio'
-import { Pricing } from './components/Pricing'
+import { Hero } from './components/Hero'
 import { Services } from './components/Services'
+import { About } from './components/About'
 import { Team } from './components/Team'
+import { Portfolio } from './components/Portfolio'
 import { Testimonials } from './components/Testimonials'
-import { TopBar } from './components/TopBar'
-import { TrustBadges } from './components/TrustBadges'
-import { VideoCta } from './components/VideoCta'
+import { Gallery } from './components/Gallery'
+import { Contact } from './components/Contact'
+import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Mortar — Construction Company Template'
+    document.title = 'Mortar — Creative Agency Template'
   }, [])
 
   return (
-    <>
-      <TopBar />
+    <div className="flex min-h-screen flex-col bg-surface text-ink transition-colors dark:bg-gray-950 dark:text-gray-100">
       <Navbar />
-      <main>
+      <main className="flex-1">
         <Hero />
-        <About />
-        <TrustBadges />
-        <IntroCta />
         <Services />
-        <VideoCta />
-        <Counters />
+        <About />
         <Team />
         <Portfolio />
-        <Pricing />
         <Testimonials />
-        <Blog />
-        <Faq />
-        <Newsletter />
+        <Gallery />
+        <Contact />
       </main>
       <Footer />
-    </>
+    </div>
   )
 }

@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pandemic brand palette — recreated from the ColorLib "Covid" design:
+     purple #6f42c1 accents/buttons, light purple backgrounds,
+     red #e84a5f accent, green #a8df65 success. */
+  --color-brand: #6f42c1;
+  --color-brand-dark: #5a35a0;
+  --color-brand-light: rgba(111, 66, 193, 0.1);
+  --color-brand-lighter: rgba(111, 66, 193, 0.05);
+
+  /* Accent colors. */
+  --color-danger: #e84a5f;
+  --color-success: #a8df65;
+
+  /* Ink — dark headings (#000 from the original). */
+  --color-ink: #1a1a1a;
+
+  /* Mist — muted body text (#aaa from the original). */
+  --color-mist: #888888;
+
+  /* Paper — light section background (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Divider — medium gray (#dee2e6). */
+  --color-divider: #dee2e6;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the purple. */
+  --color-primary-50: #f3eefb;
+  --color-primary-100: #e0d3f5;
+  --color-primary-200: #c1a7eb;
+  --color-primary-300: #a27be1;
+  --color-primary-400: #8a5ad7;
+  --color-primary-500: #6f42c1;
+  --color-primary-600: #5a35a0;
+  --color-primary-700: #45287f;
+  --color-primary-800: #301c5e;
+  --color-primary-900: #1b0f3d;
+
+  --font-sans: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+}

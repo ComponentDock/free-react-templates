@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #6c5b7b;
+  --color-brand-light: #8b7a9b;
+  --color-brand-dark: #5a4a6a;
+  --color-dark: #1a1a2e;
+  --color-dark-border: #2a2a3e;
+  --color-text-muted: #6c757d;
+  --color-bg-light: #f8f9fa;
+  --font-heading: 'Rubik', sans-serif;
+  --font-body: 'Rubik', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 300;
+  background: #fff;
+  color: #6c757d;
+}

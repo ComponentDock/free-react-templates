@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* FrostGuard brand tokens — extracted from ColorLib Hvacompany preview
+     (https://preview.colorlib.com/theme/hvacompany/):
+     dark navy #142336, accent blue #4586D5, CTA yellow #FAD110,
+     body text #444444, light gray BG #F3F8FC */
+  --color-primary-900: #142336;
+  --color-primary-800: #1c3050;
+  --color-primary-700: #253d63;
+  --color-primary-600: #30507a;
+  --color-primary-500: #4586d5;
+  --color-primary-400: #6aa0e0;
+  --color-primary-300: #8fb8ea;
+
+  --color-accent: #fad110;
+  --color-accent-hover: #e6be0e;
+
+  --color-body: #444444;
+  --color-light-bg: #f3f8fc;
+  --color-card-bg: #ffffff;
+  --color-footer-bg: #0a1525;
+
+  --font-heading: 'Saira Condensed', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+}

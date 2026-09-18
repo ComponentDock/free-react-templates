@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Elixir brand palette — recreated from the ColorLib "Pharma" design
+     (css/style.css): teal #51eaea accents/buttons, dark text #25262a,
+     muted body text #8c92a0, light section bg #f8f9fa. */
+  --color-brand: #51eaea;
+  --color-brand-dark: #38d4d4;
+
+  /* Ink — dark headings (#25262a from the original). */
+  --color-ink: #25262a;
+  --color-ink-dark: #1a1b1e;
+
+  /* Paper — light section background (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Mist — muted body text (#8c92a0 from the original). */
+  --color-mist: #8c92a0;
+
+  /* Footer link color (#5c626e from the original). */
+  --color-footer-link: #5c626e;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the teal. */
+  --color-primary-50: #e6fcfc;
+  --color-primary-100: #b3f7f7;
+  --color-primary-200: #80f1f1;
+  --color-primary-300: #51eaea;
+  --color-primary-400: #38d4d4;
+  --color-primary-500: #22bebe;
+  --color-primary-600: #1aa5a5;
+  --color-primary-700: #128c8c;
+  --color-primary-800: #0a7373;
+  --color-primary-900: #035a5a;
+
+  /* Fonts: Rubik (body) + Crimson Text (headings). */
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Crimson Text', ui-serif, Georgia, serif;
+}

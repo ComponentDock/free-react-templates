@@ -1,49 +1,34 @@
-import { render, screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
 import { describe, expect, it } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import { Testimonials } from './Testimonials'
-import { testimonials } from '../data'
 
 describe('Testimonials', () => {
-  it('renders the kicker and heading', () => {
+  it('renders the section heading and all 4 testimonial cards', () => {
     render(<Testimonials />)
-    expect(screen.getByText(testimonials.kicker)).toBeInTheDocument()
+
     expect(
-      screen.getByRole('heading', { level: 2, name: testimonials.heading }),
+      screen.getByRole('heading', { level: 2, name: 'What Our Clients Say' }),
     ).toBeInTheDocument()
+    expect(screen.getByText('Emily Watson')).toBeInTheDocument()
+    expect(screen.getByText('David Kim')).toBeInTheDocument()
+    expect(screen.getByText('Sophie Laurent')).toBeInTheDocument()
+    expect(screen.getByText('Michael Torres')).toBeInTheDocument()
   })
 
-  it('shows the first quote with name and role', () => {
+  it('shows roles, testimonial text, star ratings, and avatar images', () => {
     render(<Testimonials />)
-    const first = testimonials.slides[0]
-    expect(screen.getByText(first.quote)).toBeInTheDocument()
-    expect(screen.getByText(first.name)).toBeInTheDocument()
-    expect(screen.getByText(testimonials.role)).toBeInTheDocument()
-  })
 
-  it('advances to the next slide with the next control', async () => {
-    const user = userEvent.setup()
-    render(<Testimonials />)
-    const second = testimonials.slides[1]
-    await user.click(screen.getByRole('button', { name: 'Next testimonial' }))
-    expect(screen.getByText(second.quote)).toBeInTheDocument()
-  })
+    expect(screen.getByText('CEO, BrightPath')).toBeInTheDocument()
+    expect(screen.getByText('Founder, NovaTech')).toBeInTheDocument()
+    expect(screen.getByText('Marketing Director, UrbanStyle')).toBeInTheDocument()
+    expect(screen.getByText('CTO, DataFlow')).toBeInTheDocument()
 
-  it('wraps back to the first slide after the last', async () => {
-    const user = userEvent.setup()
-    render(<Testimonials />)
-    const first = testimonials.slides[0]
-    for (let i = 0; i < testimonials.slides.length; i += 1) {
-      await user.click(screen.getByRole('button', { name: 'Next testimonial' }))
-    }
-    expect(screen.getByText(first.quote)).toBeInTheDocument()
-  })
+    expect(screen.getByText(/absolute pleasure/)).toBeInTheDocument()
 
-  it('moves to the previous slide with the previous control', async () => {
-    const user = userEvent.setup()
-    render(<Testimonials />)
-    const last = testimonials.slides[testimonials.slides.length - 1]!
-    await user.click(screen.getByRole('button', { name: 'Previous testimonial' }))
-    expect(screen.getByText(last.quote)).toBeInTheDocument()
+    const starElements = document.querySelectorAll('.fill-accent-400')
+    expect(starElements.length).toBe(20)
+
+    const avatars = screen.getAllByRole('img', { name: /portrait of/i })
+    expect(avatars.length).toBe(4)
   })
 })

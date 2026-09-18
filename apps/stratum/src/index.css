@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Stratum brand palette — mining/industrial theme:
+     orange #ff8b00 (primary) · purple #7a5e86 (gradient start)
+     rose #a75e67 (gradient mid) · tangerine #f77b2e (gradient end) */
+  --color-primary: #ff8b00;
+  --color-primary-deep: #e07b00;
+  --color-gradient-start: #7a5e86;
+  --color-gradient-mid: #a75e67;
+  --color-gradient-end: #f77b2e;
+  --color-light: #f8f9fa;
+  --color-body: #939393;
+  --color-heading: #000000;
+  --color-border: #e9ecef;
+  --color-muted: #b8b8b8;
+
+  /* Rubik (body) + Oswald (headings) via Google Fonts <link> in index.html. */
+  --font-heading: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+}

@@ -1,91 +1,118 @@
----
-name: Counsel
-description: >
-  Law firm landing page template — recreation of ColorLib "Ariclaw"
-  (https://colorlib.com/wp/template/ariclaw/). A single-page attorney
-  website with navbar, hero, about, services, case studies, team,
-  consultation CTA, testimonials, blog preview, and footer.
----
-
-# Counsel — Law Firm Landing Page
-
 ## Purpose
 
-Counsel is a professional law firm landing page template providing a
-single-page website for attorneys and legal practices. It showcases
-legal services, team members, case studies, client testimonials, and
-blog content with a warm, authoritative design using gold/tan brand
-colors and serif typography.
+Counsel is a lawyer and legal firm website template. It recreates the ColorLib Whisper design (https://colorlib.com/wp/template/whisper/) with a professional dark-blue aesthetic, Poppins + Lora fonts, and sections for services, practice areas, attorneys, testimonials, blog, and newsletter.
 
 ## Requirements
 
-### Requirement: Page renders with correct title
+### Requirement: Navigation bar
 
-The page SHALL display a document title containing "Counsel".
+The template SHALL display a sticky dark navigation bar with the brand name "Counsel", section links (Home, About Us, Practice Areas, Attorneys, Blog, Contact), a "Get a Quote" button, and a mobile menu toggle.
 
-#### Scenario: Document title on load
+#### Scenario: Desktop navigation
+
+- **WHEN** the page loads on a desktop viewport
+- **THEN** the brand link, all six section links, and the "Get a Quote" button are visible
+
+#### Scenario: Mobile menu toggle
+
+- **WHEN** the user clicks the mobile menu button
+- **THEN** the button icon switches from Menu to Close and the dark class is toggled on the document root
+
+### Requirement: Hero section
+
+The template SHALL display a full-height hero with a background image overlay, a subheading "We are here to help!", a heading "Experience . Innovation . Excellence", and a "Request a Free Consultation" CTA button.
+
+#### Scenario: Hero renders
 
 - **WHEN** the page loads
-- **THEN** the document title contains "Counsel"
+- **THEN** the hero section shows the subheading, heading, and CTA button
 
-### Requirement: Navbar displays all navigation links
+### Requirement: Services section
 
-The navbar SHALL display links for Home, About, Services, Attorneys, Blog, and Contact, plus a "Let's Talk" CTA button.
+The template SHALL display a 4-column grid of service cards: Get Your Legal Advice, Work with Expert Lawyers, Have Great Discounted Rates, Review Your Case Documents.
 
-#### Scenario: Navigation links present
+#### Scenario: Services render
 
-- **GIVEN** the navbar is visible
-- **THEN** links for Home, About, Services, Attorneys, Blog, and Contact are present
-- **AND** a "Let's Talk" button is visible
+- **WHEN** the page loads
+- **THEN** four service cards with icons, titles, and descriptions are visible
 
-### Requirement: Hero section displays headline
+### Requirement: Stats counter section
 
-The hero section SHALL display the heading "Finest And Strongest Law Firm Win The World" with a "More About Us" button.
+The template SHALL display a split layout with a video placeholder on the left and statistics on the right (500 Qualified Lawyers, 2000 Trusted Clients, 1500 Successful Cases, 100 Honors & Awards).
 
-#### Scenario: Hero heading visible
+#### Scenario: Stats render
 
-- **WHEN** I view the page
-- **THEN** the heading "Finest And Strongest Law Firm Win The World" is visible
-- **AND** a "More About Us" button is visible
+- **WHEN** the page loads
+- **THEN** four stat boxes with numbers and labels are visible
 
-### Requirement: Services section shows four services
+### Requirement: Practice areas section
 
-The services section SHALL display four service cards: Get Law Advice, Review The Case, Winning Guarantee, and Fully Support.
+The template SHALL display a grid of 10 practice areas with icons: Family Law, Business Law, Insurance Law, Criminal Law, Property Law, Employment Law, Fire Accident, Financial Law, Drug Offenses, Sexual Offenses.
 
-#### Scenario: Four service cards rendered
+#### Scenario: Practice areas render
 
-- **WHEN** I scroll to the services section
-- **THEN** four service cards are visible
-- **AND** each card has a title and description
+- **WHEN** the page loads
+- **THEN** all 10 practice area items are visible
 
-### Requirement: Team section shows three attorneys
+### Requirement: Attorneys section
 
-The team section SHALL display three attorney cards with names, roles, and hover interactions.
+The template SHALL display 4 attorney cards with placeholder photos, names (Richard Anderson, Jefford Maxillin, Carlos Obing, Nathan Smith), and specializations.
 
-#### Scenario: Three team members displayed
+#### Scenario: Attorneys render
 
-- **WHEN** I scroll to the team section
-- **THEN** three team member cards are visible
-- **AND** each card shows a name and role
+- **WHEN** the page loads
+- **THEN** four attorney cards with photos, names, and specializations are visible
 
-### Requirement: Footer links to Component Dock
+### Requirement: Consultation section
 
-The footer SHALL include a link to https://www.componentdock.com/ branded as "Component Dock".
+The template SHALL display a dark-background consultation section with a "Free Consultation" heading and a CTA button.
 
-#### Scenario: Component Dock attribution
+#### Scenario: Consultation renders
 
-- **GIVEN** the footer is visible
-- **THEN** a link to "https://www.componentdock.com/" is present
-- **AND** the link text mentions "Component Dock"
+- **WHEN** the page loads
+- **THEN** the consultation heading and CTA button are visible
 
-### Requirement: All sections compose correctly
+### Requirement: Testimonials section
 
-The App component SHALL compose all sections in the correct order within the main landmark.
+The template SHALL display a dark-background testimonials section with a "Happy Clients" heading and 3 testimonial cards.
 
-#### Scenario: All sections present
+#### Scenario: Testimonials render
 
-- **WHEN** the App renders
-- **THEN** a banner (navbar) landmark is present
-- **AND** a main landmark is present
-- **AND** a contentinfo (footer) landmark is present
-- **AND** headings for Hero, About, Services, Case Studies, Team, Testimonials, and Blog are visible
+- **WHEN** the page loads
+- **THEN** the testimonials heading and 3 client quotes are visible
+
+### Requirement: Blog section
+
+The template SHALL display a light-background blog section with a "Recent Blog" heading and 3 blog post cards with images and titles.
+
+#### Scenario: Blog renders
+
+- **WHEN** the page loads
+- **THEN** the blog heading and 3 post cards are visible
+
+### Requirement: Newsletter section
+
+The template SHALL display a parallax-style dark-background newsletter section with a "Subscribe to our Newsletter" heading and an email input with subscribe button.
+
+#### Scenario: Newsletter renders
+
+- **WHEN** the page loads
+- **THEN** the newsletter heading, email input, and subscribe button are visible
+
+### Requirement: Footer
+
+The template SHALL display a dark-background footer with brand name, description, social icons, Practice Areas list, Business Hours, Contact info, and a "More templates at Component Dock" link to https://www.componentdock.com/.
+
+#### Scenario: Footer renders
+
+- **WHEN** the page loads
+- **THEN** the footer shows the brand, practice areas, business hours, contact info, and the Component Dock link
+
+### Requirement: App composition
+
+The App component SHALL compose all sections in the correct order and set the document title.
+
+#### Scenario: Full page renders
+
+- **WHEN** the page loads
+- **THEN** the document title is "Counsel — Lawyer & Legal Firm Template" and all sections are present

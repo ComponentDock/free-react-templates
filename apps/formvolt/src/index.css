@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand green gradient — from the original Contact Form V3 design. */
+  --color-brand: #6abf3b;
+  --color-brand-dark: #5aa532;
+  --color-brand-light: #a3d944;
+
+  /* Text colors. */
+  --color-ink: #ffffff;
+  --color-label: rgba(255, 255, 255, 0.85);
+  --color-placeholder: rgba(255, 255, 255, 0.6);
+
+  /* Input borders. */
+  --color-border: rgba(255, 255, 255, 0.4);
+  --color-error: #ef4444;
+
+  /* Card. */
+  --color-card-start: #a3d944;
+  --color-card-end: #6abf3b;
+
+  /* Original font: "Poppins" via Google Fonts (loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

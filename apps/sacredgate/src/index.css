@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* SacredGate brand palette — recreated from the ColorLib "Church" design
+     (css/main.css): red #eb4141 accents/buttons, yellow #ffd600 underline,
+     dark #161619 footer, light #f0f4f8 sermon section. */
+
+  --color-brand: #eb4141;
+  --color-brand-dark: #d63535;
+  --color-accent: #ffd600;
+
+  /* Ink — dark charcoal headings/footer (#161619 from the original). */
+  --color-ink: #161619;
+  --color-ink-light: #1e1e22;
+
+  /* Paper — white page background. */
+  --color-paper: #ffffff;
+
+  /* Mist — muted body text. */
+  --color-mist: #797979;
+
+  /* Sermon — light blue-gray section bg (#f0f4f8). */
+  --color-sermon: #f0f4f8;
+
+  /* Primary scale so shared Button/ButtonLink `primary` variants resolve to brand red. */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #eb4141;
+  --color-primary-600: #d63535;
+  --color-primary-700: #b91c1c;
+  --color-primary-800: #991b1b;
+  --color-primary-900: #7f1d1d;
+
+  /* Fonts: Playfair Display (decorative headings/logo) + Montserrat (body). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}

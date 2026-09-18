@@ -1,27 +1,33 @@
 @import 'tailwindcss';
 
-/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
-   prefers-color-scheme; kept for consistency with sibling apps. */
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Mortar brand palette — recreated from the ColorLib "Buildream"
-     construction theme (css/style.css + live preview):
-     brand amber #ffa62b (kickers, primary buttons, video play button,
-     "Most Popular" badge, newsletter band), dark charcoal #3d424a
-     (navbar, dark buttons, rotated about badge), footer #363b42,
-     light band #f8f9fa (trust + testimonials sections). Headings are
-     54px weight 500 with a 16px amber uppercase kicker above; buttons
-     are rectangular (radius 4px), solid amber or solid dark, hover
-     inverts to a transparent outline. Font: Poppins 300/400/700. */
-  --color-brand: #ffa62b;
-  --color-charcoal: #3d424a;
-  --color-footer: #363b42;
-  --color-mist: #f8f9fa;
-  --color-ink: #1a1a1a;
+  /* Brand palette: blue-purple primary #5e72e4 with red CTA accent #f5365c,
+     smoke #7f7f7f muted text, ink #1a1a2e headings, surface #ffffff,
+     mist #f7f8fc section backgrounds. */
+  --color-primary-50: #eef0fb;
+  --color-primary-100: #d5d9f5;
+  --color-primary-200: #aab3eb;
+  --color-primary-300: #808de1;
+  --color-primary-400: #5e72e4;
+  --color-primary-500: #5465d9;
+  --color-primary-600: #4a5bcf;
+  --color-primary-700: #3b49b8;
+  --color-primary-800: #2d38a1;
+  --color-primary-900: #1f288a;
 
-  /* Poppins throughout (headings + body) via Google Fonts <link> in
-     index.html — matching the ColorLib font choice. */
-  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
-  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --color-accent-400: #f5365c;
+  --color-accent-500: #e0264d;
+
+  --color-ink: #1a1a2e;
+  --color-smoke: #7f7f7f;
+  --color-surface: #ffffff;
+  --color-mist: #f7f8fc;
+
+  /* Roboto (headings + body) via Google Fonts <link> in index.html —
+     matching the original light/regular/medium/bold weight scale. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
 }

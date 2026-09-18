@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-opensans: 'Open Sans', sans-serif;
+  --color-brand: #7643ea;
+  --color-brand-dark: #341a79;
+  --color-brand-darker: #0e0223;
+  --color-brand-hover: #5d25dd;
+  --color-text-primary: #2a2a2a;
+  --color-text-secondary: #848484;
+  --color-bg-light: #f9f9f9;
+  --color-bg-grey: #f4f6f8;
+  --color-teal: #30c0a3;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-opensans);
+    color: var(--color-text-primary);
+  }
+}

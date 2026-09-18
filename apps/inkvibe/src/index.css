@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Inkvibe brand colors — from the ColorLib "Tattooz" preview
+     (https://preview.colorlib.com/theme/tattooz/ + style.css):
+     a dark tattoo-studio theme with an orange #fb9902 primary,
+     very dark backgrounds #0d0f11 / #131619, white text on dark,
+     and muted grays #222 / #303030 / #555 for body copy. */
+  --color-primary-50: #fff8eb;
+  --color-primary-100: #ffecc6;
+  --color-primary-200: #ffd588;
+  --color-primary-300: #ffb84a;
+  --color-primary-400: #fb9902;
+  --color-primary-500: #e88a00;
+  --color-primary-600: #c06a00;
+  --color-primary-700: #9a4d02;
+  --color-primary-800: #7d3c08;
+  --color-primary-900: #68320b;
+
+  /* Dark backgrounds (ColorLib bg-1 / bg-2 / body). */
+  --color-void: #0d0f11;
+  --color-obsidian: #131619;
+  --color-charcoal: #1a1d20;
+
+  /* Body text on dark (ColorLib #222 / #303030 / #555). */
+  --color-ink: #222222;
+  --color-slate: #303030;
+  --color-ash: #555555;
+
+  /* Montserrat via Google Fonts <link> in index.html. */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}

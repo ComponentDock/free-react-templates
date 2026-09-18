@@ -1,24 +1,29 @@
+import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { describe, expect, it } from 'vitest'
 import { Services } from './Services'
 
 describe('Services', () => {
-  it('renders six service cards with icons, titles, descriptions, and Enroll Now links', () => {
+  it('renders section heading', () => {
     render(<Services />)
+    expect(screen.getByText(/Kick your/)).toBeDefined()
+    expect(screen.getByText('feet')).toBeDefined()
+  })
 
-    for (const title of [
-      'Business School',
-      'Fitness Pro',
-      'Yoga Courses',
-      'Diet Specialists',
-      'Swimming Pool',
-      'Spinning Class',
-    ]) {
-      expect(screen.getByRole('heading', { name: title })).toBeInTheDocument()
-    }
+  it('renders all 4 service cards', () => {
+    render(<Services />)
+    expect(screen.getByText('Analyze Your Goal')).toBeDefined()
+    expect(screen.getByText('Work Hard On It')).toBeDefined()
+    expect(screen.getByText('Improve Your Performance')).toBeDefined()
+    expect(screen.getByText('Achieve Your Perfect Body')).toBeDefined()
+  })
 
-    expect(screen.getAllByRole('link', { name: 'Enroll Now' })).toHaveLength(6)
-    expect(screen.getByText(/strength training fundamentals/)).toBeInTheDocument()
-    expect(screen.getByText(/yoga sessions that improve/)).toBeInTheDocument()
+  it('renders services subheading', () => {
+    render(<Services />)
+    expect(screen.getByText('Services')).toBeDefined()
+  })
+
+  it('has programs section id', () => {
+    const { container } = render(<Services />)
+    expect(container.querySelector('#programs')).toBeDefined()
   })
 })

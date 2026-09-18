@@ -1,29 +1,30 @@
-import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import { About } from './About'
-import { about } from '../data'
 
 describe('About', () => {
-  it('renders the photo with the rotated years badge', () => {
+  it('renders the heading, description, and about image', () => {
     render(<About />)
-    expect(screen.getByRole('img', { name: /Construction site/ })).toBeInTheDocument()
-    expect(screen.getByText(about.badgeYears)).toBeInTheDocument()
-    expect(screen.getByText(about.badgeCaption)).toBeInTheDocument()
+
+    expect(screen.getByRole('heading', { level: 2 })).toBeInTheDocument()
+    expect(screen.getByText(/Creative Agency/)).toBeInTheDocument()
+
+    const image = screen.getByRole('img', { name: /team collaborating/i })
+    expect(image).toHaveAttribute('src', expect.stringContaining('picsum.photos'))
   })
 
-  it('renders the kicker, heading, paragraph, and sub-heading', () => {
+  it('renders all 5 checklist highlights', () => {
     render(<About />)
-    expect(screen.getByText(about.kicker)).toBeInTheDocument()
-    expect(screen.getByRole('heading', { level: 2, name: about.heading })).toBeInTheDocument()
-    expect(screen.getByText(about.paragraph)).toBeInTheDocument()
-    expect(screen.getByRole('heading', { level: 3, name: about.subHeading })).toBeInTheDocument()
-  })
 
-  it('renders the four mini services with icons', () => {
-    render(<About />)
-    for (const service of about.miniServices) {
-      expect(screen.getByRole('heading', { level: 4, name: service.title })).toBeInTheDocument()
+    const items = [
+      'Professional and experienced team',
+      'Creative and innovative solutions',
+      'Dedicated project management',
+      '24/7 customer support',
+      'Results-driven approach',
+    ]
+    for (const item of items) {
+      expect(screen.getByText(item)).toBeInTheDocument()
     }
-    expect(screen.getAllByText(about.miniServices[0].blurb)).toHaveLength(4)
   })
 })

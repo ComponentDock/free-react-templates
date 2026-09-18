@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Talon brand colors — a modern business landing theme with a bold
+     orange #ff5a00 primary, orange button gradient, light section
+     backgrounds #f9f9f9 / #ffffff, and muted text #666666. */
+  --color-primary-50: #fff4ed;
+  --color-primary-100: #ffe4d4;
+  --color-primary-200: #ffc5a8;
+  --color-primary-300: #ff9d71;
+  --color-primary-400: #ff5a00;
+  --color-primary-500: #f04e00;
+  --color-primary-600: #d43e00;
+  --color-primary-700: #a83000;
+  --color-primary-800: #7d2400;
+  --color-primary-900: #5c1a00;
+
+  /* Light section backgrounds. */
+  --color-mist: #f9f9f9;
+  --color-lavender: #f5f5f5;
+
+  /* Muted copy. */
+  --color-smoke: #666666;
+
+  --color-ink: #1a1a1a;
+
+  /* Poppins (headings) + Roboto (body) via Google Fonts <link> in
+     index.html. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

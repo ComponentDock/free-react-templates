@@ -1,19 +1,21 @@
-import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import { App } from './App'
-import { footerCopyright } from './data'
 
 describe('App', () => {
-  it('composes every section and sets the document title', () => {
+  it('renders the main page title', () => {
     render(<App />)
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Food Catering')
+  })
 
-    expect(document.title).toBe('Feast — Recipes & More')
-    expect(screen.getByRole('heading', { name: 'Healthy Recipes' })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'Amazing deserts' })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'Latest recipes' })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'Top rated recipes' })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'Most liked recipes' })).toBeInTheDocument()
-    expect(screen.getAllByRole('heading', { name: 'Feta Cheese Burgers' })).toHaveLength(2)
-    expect(screen.getByText(footerCopyright)).toBeInTheDocument()
+  it('renders all major sections', () => {
+    render(<App />)
+    expect(screen.getByRole('navigation', { name: /main navigation/i })).toBeInTheDocument()
+    expect(screen.getAllByRole('heading', { name: /our services/i }).length).toBeGreaterThanOrEqual(
+      1,
+    )
+    expect(screen.getByRole('heading', { name: /popular orders/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /feedback from customers/i })).toBeInTheDocument()
+    expect(screen.getByText('Component Dock')).toBeInTheDocument()
   })
 })

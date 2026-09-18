@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Medvista brand palette — medical/healthcare template */
+  --color-brand: #007bff;
+  --color-brand-dark: #207dff;
+
+  /* Coral accent — service icons, nav CTA border */
+  --color-coral: #fe5f55;
+
+  /* Ink — black headings */
+  --color-ink: #000000;
+
+  /* Body text color */
+  --color-body: #212529;
+
+  /* Light section background */
+  --color-paper: #f8f9fa;
+
+  /* Top bar background */
+  --color-topbar: #000000;
+
+  /* Bootstrap secondary */
+  --color-secondary: #6c757d;
+
+  /* Original fonts: "Poppins" */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Gracecraft brand — dark red church palette. */
+  --color-brand: #b10707;
+  --color-brand-dark: #950606;
+
+  /* Tomato — hover / secondary CTA. */
+  --color-tomato: #ff6347;
+
+  /* Light salmon accent. */
+  --color-salmon: #ffa07f;
+
+  /* Ink — dark text. */
+  --color-ink: #181818;
+
+  /* Mist — muted text. */
+  --color-mist: #7c7c7c;
+
+  /* Body text. */
+  --color-body: #353535;
+
+  /* Light section bg. */
+  --color-paper: #f9f9f9;
+
+  /* Gallery bg. */
+  --color-gallery-bg: #f7f7f7;
+
+  /* Error red. */
+  --color-error: #eb4141;
+
+  /* Primary scale for shared Button/ButtonLink primary variant. */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #b10707;
+  --color-primary-600: #950606;
+  --color-primary-700: #7f0505;
+  --color-primary-800: #6b0404;
+  --color-primary-900: #5a0303;
+
+  /* Fonts: Assistant (body), Old Standard TT (headings), Open Sans (nav/meta). */
+  --font-sans: 'Assistant', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Old Standard TT', ui-serif, Georgia, serif;
+  --font-nav: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}

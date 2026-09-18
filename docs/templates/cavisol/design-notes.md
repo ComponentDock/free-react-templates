@@ -1,0 +1,33 @@
+# Design Notes: Cavisol (Dentist recreation)
+
+- **Source**: ColorLib Dentist (`https://colorlib.com/wp/template/dentist/`)
+- **Preview**: `https://preview.colorlib.com/theme/dentist/`
+- **Aesthetic**: Professional dental clinic site with a clean, modern layout. Alternating white and dark navy sections create strong visual contrast. Green gradient accents give a fresh, medical feel.
+- **Color Palette**:
+  - Primary / Accent: `#67bc00` (green) — buttons, icons, hover states
+  - Gradient: `linear-gradient(0deg, #ade600, #62b900)` — primary buttons, team overlays
+  - Dark Navy: `#04091e` — About, Appointment, Footer backgrounds
+  - Hero Overlay: `rgba(4,9,30,0.85)`
+  - Body Text: `#777`
+  - Headings: `#222`
+  - White: `#fff`
+  - Form Input Border: `#505362`
+  - Form Input Text: `#ccc`
+- **Typography**: Poppins / sans-serif. Headings are bold, uppercase subtitle with small font. Body text is light gray (#777).
+- **Button Styling**:
+  - Primary: green gradient background, white text, pill-shaped (border-radius 25px), no border
+  - Primary hover: white background, green border and text
+  - Form submit: 0px border-radius, transparent background, green border on hover
+- **Layout Rhythm**: 
+  - Hero: full-width, 700px height, dark overlay, centered content
+  - Opening Hours: negative top margin (-100px) to overlap hero, white background
+  - Services: white background, 4-column card grid
+  - About: dark navy, split layout (left image / right text + sub-features)
+  - Testimonials: white, carousel slider
+  - Team: white, 4-column cards with gradient overlay on hover
+  - Features: white, 2-column x 3-row icon+text grid
+  - Appointment: dark navy, split layout (left image / right form)
+  - Blog: white, 4-column card grid
+  - Footer: dark navy, 3-column + copyright bar
+- **Key Interactive Elements**: Testimonials carousel (Owl Carousel in original), team card hover overlays, appointment form with date pickers, newsletter subscription form.
+- **Section Overlaps**: Opening hours section has `margin-top: -100px` to overlap the hero banner bottom, creating a card-on-image effect. This is a distinctive visual feature to replicate.

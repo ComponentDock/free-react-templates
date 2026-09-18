@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #00c9b7;
+  --color-brand-dark: #00a89a;
+  --color-body-bg: #f8f9fa;
+  --color-nav-text: #212121;
+  --color-muted-text: #757575;
+  --color-border: #e0e0e0;
+  --color-footer-bg: #1a1a2e;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family:
+      'Inter',
+      'Open Sans',
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      'Helvetica Neue',
+      Arial,
+      sans-serif;
+  }
+}

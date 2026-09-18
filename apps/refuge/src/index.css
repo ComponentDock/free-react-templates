@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Refuge brand palette — recreated from ColorLib "Funder" design.
+     Blue primary #2563eb, dark headings #1a202c, light bg #f8fafc. */
+  --color-brand: #2563eb;
+  --color-brand-dark: #1d4ed8;
+
+  --color-ink: #1a202c;
+  --color-ink-dark: #0f172a;
+
+  --color-paper: #f8fafc;
+  --color-paper-alt: #f1f5f9;
+
+  --color-mist: #64748b;
+
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+}

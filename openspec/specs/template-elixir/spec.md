@@ -1,187 +1,149 @@
-# Template: Elixir (UI Component — Registration Wizard)
+# Template: Elixir (Pharmacy & Supplement Store)
 
 ## Purpose
 
-Recreation of the ColorLib **Wizard 29** as a React component.
+Elixir is a single-page pharmacy and supplement store landing template in the
+free-react-templates monorepo. It is an original React recreation of the
+ColorLib free "Pharma" design (see TEMPLATES.md), built under the monorepo
+stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-- **Source slug:** `colorlib-wizard-29`
-- **ColorLib page:** https://colorlib.com/wp/template/colorlib-wizard-29/
-- **Preview URL:** https://preview.colorlib.com/theme/colorlib-wizard-29/ (returns 404; preview unreachable)
-- **Stack:** React 19 + Tailwind CSS 4 + TypeScript (Vite)
-- **Category:** UI component — multi-step registration wizard
+The original is a clean pharmacy e-commerce page with teal/cyan accents: a hero
+("Effective Medicine, New Medicine Everyday", "Welcome To Pharma", Shop Now
+button), three feature banners (Free Shipping, Season Sale, Gift Card), a
+Popular Products grid (6 products with sale tags and pricing), a New Products
+carousel on light background, testimonials (3 circular avatars with quotes),
+two side-by-side CTA banners on dark background ("Pharma Products", "Rated by
+Experts"), and a dark footer with About Us, Quick Links, Contact Info, and a
+Colorlib copyright link. Elixir recreates that structure section-for-section
+with matching layout, colors, typography, and content types (no ColorLib assets
+copied). The footer copyright links to Component Dock instead of ColorLib.
 
-## Reference sources
+## Design reference (replication findings)
 
-| Source | Status | Notes |
-|--------|--------|-------|
-| Live preview HTML | ❌ Unreachable (404) | Preview server returns "Not Found" |
-| Live preview CSS | ❌ Unreachable (404) | No stylesheets available |
-| Screenshot | ⚠️ Downloaded but not analyzable (AVIF format, vision tool incompatible) | URL: `https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-29.jpg` |
-| ColorLib page meta | ✅ Retrieved | Description: "A very simple free registration wizard template that features username, email, password and password confirmation steps." |
-| ColorLib page CSS | ✅ Retrieved | Extracted accent color `#77CC6D` (green) from `.ticon` and `.builder-top-icon` styles |
+- **Original:** ColorLib "Pharma" — free pharmacy website template
+  (source: https://colorlib.com/wp/template/pharma/).
+- **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/pharma/`
+  (HTTP 200, 22.7KB). The rendered DOM is the reference below; the
+  TEMPLATES.md screenshot (`pharma-free-template.jpg`) confirms the visual
+  design (clean pharmacy layout, teal accents, product grid).
+- **CSS tokens extracted** from `css/style.css` (846 lines):
+  - Primary accent: `#51eaea` (teal/cyan) — buttons, links, section underlines
+  - Body text: `#8c92a0` (muted gray)
+  - Headings: `#25262a` (dark)
+  - Logo: uppercase, letter-spacing 0.2em, font-weight 900, color black
+  - Font: Rubik (body), Crimson Text (headings)
+  - Light section bg: `#f8f9fa`
+  - Footer link color: `#5c626e`
+  - Buttons: uppercase, border-width 2px, transition 0.3s
+  - btn-primary hover: transparent bg with `#51eaea` text
+- **Section order (1:1):**
+  1. Navbar: logo "Elixir" + nav (Home, Store, About, Contact) + search + cart badge
+  2. Hero: bg image + "Effective Medicine, New Medicine Everyday" + "Welcome To Elixir" + Shop Now
+  3. Feature Banners: 3-column grid (Free Shipping, Season Sale 50% Off, Buy A Gift Card)
+  4. Popular Products: 3-col grid, 6 product cards with images, names, prices, sale tags + "View All Products" CTA
+  5. New Products: light bg, horizontal scroll, 4 product cards
+  6. Testimonials: 3 circular avatars + quotes + author names
+  7. CTA Banners: 2 side-by-side image cards on dark bg ("Elixir Products", "Rated by Experts")
+  8. Footer: 3-col (About Us, Quick Links, Contact Info) + copyright with Component Dock link
 
-**Fallback note:** The preview URL returns HTTP 404. The screenshot image is AVIF format and could not be visually analyzed. Design is reconstructed from the ColorLib page description, embedded CSS, and the standard Bootstrap wizard pattern used across ColorLib's wizard templates.
+## Requirements
 
-## Design tokens
+### Requirement: Navbar displays branding and navigation
 
-### Colors (from ColorLib page CSS)
+The navbar SHALL display the "Elixir" logo, navigation links (Home, Store, About, Contact), a search icon button, and a shopping cart link with a badge showing item count.
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--brand-primary` | `#77CC6D` (green) | Accent color, step indicators, active states, icons |
-| `--bg-page` | `#ffffff` | Page/card background |
-| `--bg-step-inactive` | `#f8f9fa` (light gray) | Inactive step background |
-| `--text-primary` | `#333333` | Headings, body text |
-| `--text-secondary` | `#666666` | Descriptions, helper text |
-| `--border-color` | `#eeeeee` | Step block borders, dividers |
-| `--hover-bg` | `rgba(0,0,0,0.03)` | Step hover background |
+#### Scenario: Desktop navbar renders all elements
 
-### Fonts
+- **WHEN** the page loads on a desktop viewport
+- **THEN** the navbar shows the "Elixir" logo, all navigation links, a search button, and a cart link with badge
 
-| Role | Family | Weights |
-|------|--------|---------|
-| Body / UI | System sans-serif stack | 400, 600 |
-| Headings | System sans-serif stack | 600 |
+#### Scenario: Mobile hamburger toggles navigation
 
-**Implementation:** Use the system font stack or import a clean sans-serif (e.g., Inter or Poppins) via Google Fonts.
+- **WHEN** the user taps the hamburger menu button on mobile
+- **THEN** a mobile navigation panel opens with all navigation links
+- **AND** the button label changes to "Close menu"
 
-### Layout
+#### Scenario: Mobile navigation closes on link click
 
-- Centered card/container (max-width ~600px)
-- Horizontal step indicator bar at top (4 steps)
-- Form area below with fields specific to current step
-- Navigation buttons: "Previous" (ghost/outline) + "Next" / "Submit" (solid green)
-- Responsive: stacks vertically on mobile
+- **WHEN** the mobile navigation is open and a user taps a link
+- **THEN** the mobile navigation panel closes
 
-### Component structure (reconstructed from description)
+### Requirement: Hero section displays welcome message and CTA
 
-```
-WizardContainer
-  ├─ StepIndicator (4 steps: Username → Email → Password → Confirm)
-  │    ├─ Step1 (label: "Username", active/completed state)
-  │    ├─ Step2 (label: "Email", active/completed state)
-  │    ├─ Step3 (label: "Password", active/completed state)
-  │    └─ Step4 (label: "Confirm", active/completed state)
-  └─ StepContent
-       ├─ Step1: UsernameForm (username input)
-       ├─ Step2: EmailForm (email input)
-       ├─ Step3: PasswordForm (password input)
-       ├─ Step4: ConfirmForm (password confirmation input)
-       └─ NavigationButtons (Back / Next or Submit)
-```
+The hero section SHALL display a background image, a subtitle "Effective Medicine, New Medicine Everyday", an h1 "Welcome To Elixir", and a "Shop Now" button linking to the products section.
 
-## Gherkin requirements
+#### Scenario: Hero renders headline and CTA
 
-### Feature: Elixir — Multi-Step Registration Wizard
+- **WHEN** the page loads
+- **THEN** the hero shows "Welcome To Elixir" as the main heading
+- **AND** the "Shop Now" button links to "#products"
 
-```gherkin
-Feature: Elixir registration wizard
-  As a developer using the Elixir template
-  I want a multi-step registration wizard with username, email, password, and confirmation
-  So that users can register through a guided step-by-step flow
+### Requirement: Feature banners showcase store benefits
 
-  Background:
-    Given the Elixir wizard component is rendered on the page
+The feature banners section SHALL display three cards: Free Shipping (primary/teal background), Season Sale 50% Off (white background), and Buy A Gift Card (amber/yellow background), each with a heading and descriptive text.
 
-  Scenario: Wizard displays all four steps
-    Then I should see a step indicator with four steps
-    And step 1 should be labeled "Username"
-    And step 2 should be labeled "Email"
-    And step 3 should be labeled "Password"
-    And step 4 should be labeled "Confirm"
+#### Scenario: Three feature cards render
 
-  Scenario: Step 1 — Username input
-    Then the username step should be active
-    And I should see a text input for username
-    And I should see a "Next" button
+- **WHEN** the page loads
+- **THEN** the feature banners section shows headings for "Free Shipping", "Season Sale 50% Off", and "Buy A Gift Card"
 
-  Scenario: Navigate to step 2
-    Given I am on step 1 (Username)
-    When I enter a valid username
-    And I click "Next"
-    Then step 2 (Email) should become active
-    And step 1 should show as completed
+### Requirement: Popular products grid displays product cards
 
-  Scenario: Navigate to step 3
-    Given I am on step 2 (Email)
-    When I enter a valid email address
-    And I click "Next"
-    Then step 3 (Password) should become active
-    And steps 1 and 2 should show as completed
+The popular products section SHALL display 6 product cards in a 3-column grid, each with an image, product name, and price. Products on sale SHALL show a "Sale" badge and a strikethrough original price. A "View All Products" button SHALL appear below the grid.
 
-  Scenario: Navigate to step 4
-    Given I am on step 3 (Password)
-    When I enter a valid password
-    And I click "Next"
-    Then step 4 (Confirm) should become active
-    And steps 1-3 should show as completed
+#### Scenario: Six products render with correct details
 
-  Scenario: Final step shows Submit
-    Given I am on step 4 (Confirm)
-    Then I should see a "Submit" button instead of "Next"
+- **WHEN** the page loads
+- **THEN** the popular products section shows 6 product cards with names (Bioderma, Chanca Piedra, Umcka Cold Care, Cetyl Pure, CLA Core, Poo Pourri) and prices
 
-  Scenario: Go back to previous step
-    Given I am on step 2 (Email)
-    When I click "Back"
-    Then step 1 (Username) should become active again
-    And my previously entered username should be preserved
+#### Scenario: Sale products show discount badge
 
-  Scenario: Validation — empty username
-    Given I am on step 1 (Username)
-    When I click "Next" without entering a username
-    Then I should see a validation error for the username field
+- **WHEN** the page loads
+- **THEN** products on sale display a "Sale" badge and strikethrough original price
 
-  Scenario: Validation — invalid email
-    Given I am on step 2 (Email)
-    When I enter "not-an-email"
-    And I click "Next"
-    Then I should see a validation error for the email field
+#### Scenario: View All Products button present
 
-  Scenario: Validation — password mismatch
-    Given I am on step 4 (Confirm)
-    When I enter a password that differs from step 3
-    And I click "Submit"
-    Then I should see a validation error about password mismatch
+- **WHEN** the page loads
+- **THEN** a "View All Products" link is rendered below the product grid
 
-  Scenario: Step indicator reflects progress
-    Given I am on step 3 (Password)
-    Then steps 1 and 2 should have a completed visual indicator
-    And step 3 should have an active visual indicator
-    And step 4 should have an inactive visual indicator
+### Requirement: New products section displays on light background
 
-  Scenario: Responsive layout
-    Given the viewport is narrow (mobile)
-    Then the step indicator should remain visible
-    And the form should stack vertically
+The new products section SHALL display 4 product cards in a horizontal scrollable layout on a light (#f8f9fa) background.
 
-  Scenario: Accessibility — keyboard navigation
-    When I focus the username input
-    And I press Tab
-    Then focus should move to the Next button
+#### Scenario: New products render
 
-  Scenario: Accessibility — ARIA attributes
-    Then each step should have appropriate aria-current or aria-completed attributes
-    And form fields should have associated labels
+- **WHEN** the page loads
+- **THEN** the new products section shows 4 product cards (Umcka Cold Care, Bioderma, Chanca Piedra, Cetyl Pure)
 
-  Scenario: Component Dock footer link
-    Then I should see a footer link to "https://www.componentdock.com/"
-```
+### Requirement: Testimonials section displays customer reviews
 
-## Verification checklist
+The testimonials section SHALL display at least 3 testimonials, each with a circular avatar image, a quoted review text, and an author attribution.
 
-- [ ] Wizard renders with 4-step indicator (Username, Email, Password, Confirm)
-- [ ] Step 1 shows username input + Next button
-- [ ] Step 2 shows email input + Back/Next buttons
-- [ ] Step 3 shows password input + Back/Next buttons
-- [ ] Step 4 shows confirm password input + Back/Submit buttons
-- [ ] Step indicator updates (active/completed/inactive states) on navigation
-- [ ] Back button returns to previous step with preserved data
-- [ ] Form validation: empty fields blocked, email format validated, passwords must match
-- [ ] Green accent color (#77CC6D) used for active step and primary buttons
-- [ ] Responsive: works on mobile viewports
-- [ ] Keyboard navigation works (Tab, Enter)
-- [ ] ARIA attributes present on steps and form fields
-- [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
-- [ ] Uses `cn()` from `packages/ui`
-- [ ] 100% test coverage
+#### Scenario: Three testimonials render
+
+- **WHEN** the page loads
+- **THEN** the testimonials section shows quotes from Kelly Holmes, Rebecca Morando, and Lucas Gallone
+
+### Requirement: CTA banners display on dark background
+
+The CTA banners section SHALL display 2 side-by-side image cards on a dark background: "Elixir Products" and "Rated by Experts", each with a heading and descriptive text.
+
+#### Scenario: Both CTA cards render
+
+- **WHEN** the page loads
+- **THEN** the CTA section shows "Elixir Products" and "Rated by Experts" headings
+
+### Requirement: Footer provides site information and Component Dock link
+
+The footer SHALL display three columns (About Us, Quick Links, Contact Info) and a copyright line. The copyright line SHALL include a link to https://www.componentdock.com/ branded as "Component Dock".
+
+#### Scenario: Footer columns render
+
+- **WHEN** the page loads
+- **THEN** the footer shows "Quick Links" with Supplements, Vitamins, Diet & Nutrition, Tea & Coffee
+- **AND** the footer shows Contact Info with address, phone, and email
+
+#### Scenario: Component Dock link present
+
+- **WHEN** the page loads
+- **THEN** the footer copyright contains a link to "https://www.componentdock.com/" with text "Component Dock"

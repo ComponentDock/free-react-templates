@@ -1,30 +1,38 @@
 import { useEffect } from 'react'
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
-import { FilterBand } from './components/FilterBand'
 import { Services } from './components/Services'
-import { Properties } from './components/Properties'
+import { PropertyListings } from './components/PropertyListings'
+import { SearchCTA } from './components/SearchCTA'
+import { About } from './components/About'
+import { HowItWorks } from './components/HowItWorks'
+import { AgentCTA } from './components/AgentCTA'
 import { Agents } from './components/Agents'
-import { Testimonials } from './components/Testimonials'
 import { Blog } from './components/Blog'
+import { Testimonials } from './components/Testimonials'
+import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Roost — Real Estate Website'
+    document.title = 'Roost — Real Estate Home Services'
   }, [])
 
   return (
-    <div className="min-h-screen bg-white font-sans text-slate">
+    <div className="min-h-screen bg-white font-sans text-gray-900">
       <Navbar />
       <main>
         <Hero />
-        <FilterBand />
         <Services />
-        <Properties />
+        <PropertyListings />
+        <SearchCTA />
+        <About />
+        <HowItWorks />
+        <AgentCTA />
         <Agents />
-        <Testimonials />
         <Blog />
+        <Testimonials />
+        <Contact />
       </main>
       <Footer />
     </div>

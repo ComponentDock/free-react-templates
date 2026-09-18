@@ -1,7 +1,6 @@
 {
   "name": "@free-react-templates/roost",
   "private": true,
-  "homepage": "https://roost.free.componentdock.com",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
@@ -11,6 +10,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@free-react-templates/ui": "*",
     "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest"
@@ -28,5 +28,6 @@
     "tailwindcss": "latest",
     "typescript": "latest",
     "vite": "latest"
-  }
+  },
+  "homepage": "https://roost.free.componentdock.com"
 }

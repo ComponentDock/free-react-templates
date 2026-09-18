@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Finflow brand palette — recreated from the ColorLib "Finances" design
+     (css/style.css): blue #007bff accents/buttons, dark navy #1a1a2e footer,
+     light bg #f8f9fa sections, body text #333. */
+
+  --color-brand: #007bff;
+  --color-brand-dark: #0069d9;
+
+  /* Ink — dark navy headings/footer (#1a1a2e from the original). */
+  --color-ink: #1a1a2e;
+  --color-ink-dark: #12121f;
+
+  /* Paper — light section background (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Mist — muted body text (#666666 from the original). */
+  --color-mist: #666666;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the blue. */
+  --color-primary-50: #e7f1ff;
+  --color-primary-100: #d0e4ff;
+  --color-primary-200: #a1c9ff;
+  --color-primary-300: #71aeff;
+  --color-primary-400: #4293ff;
+  --color-primary-500: #007bff;
+  --color-primary-600: #0069d9;
+  --color-primary-700: #0053b3;
+  --color-primary-800: #003d8c;
+  --color-primary-900: #002766;
+
+  /* Original font: "Open Sans" (Google Fonts). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}

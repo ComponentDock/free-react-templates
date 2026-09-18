@@ -1,28 +1,34 @@
 import { useEffect } from 'react'
-import { BlogPosts } from './components/BlogPosts'
+import { Navbar } from './components/Navbar'
+import { Hero } from './components/Hero'
+import { Benefits } from './components/Benefits'
+import { Categories } from './components/Categories'
+import { About } from './components/About'
+import { Arrivals } from './components/Arrivals'
+import { CallToAction } from './components/CallToAction'
+import { Blog } from './components/Blog'
+import { Testimonials } from './components/Testimonials'
+import { Instagram } from './components/Instagram'
 import { Footer } from './components/Footer'
-import { Header } from './components/Header'
-import { HeroSlider } from './components/HeroSlider'
-import { InstagramStrip } from './components/InstagramStrip'
-import { Sidebar } from './components/Sidebar'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Petal — Blog Template'
+    document.title = 'Petal — Fresh Flower & Gift Shop'
   }, [])
 
   return (
-    <div className="min-h-screen bg-white font-sans text-body dark:bg-gray-900">
-      <Header />
+    <div className="min-h-screen bg-white font-sans text-gray-900">
+      <Navbar />
       <main>
-        <HeroSlider />
-        <section className="bg-section px-4 py-14 dark:bg-gray-900">
-          <div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-[minmax(0,1fr)_360px]">
-            <BlogPosts />
-            <Sidebar />
-          </div>
-        </section>
-        <InstagramStrip />
+        <Hero />
+        <Benefits />
+        <Categories />
+        <About />
+        <Arrivals />
+        <CallToAction />
+        <Blog />
+        <Testimonials />
+        <Instagram />
       </main>
       <Footer />
     </div>

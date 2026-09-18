@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-body: 'Muli', sans-serif;
+  --font-heading: 'Raleway', sans-serif;
+  --color-brand: #fd8f5f;
+  --color-brand-dark: #ec8b53;
+  --color-navy: #010a44;
+  --color-navy-dark: #1d2547;
+  --color-text: #10285d;
+  --color-heading: #072366;
+  --color-paper: #ffffff;
+  --color-mist: #666666;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}

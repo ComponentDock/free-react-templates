@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Prism brand colors — from the ColorLib "Dup" preview
+     (https://preview.colorlib.com/theme/dup/ + css/main.css):
+     a creative agency theme with a red #e0003b primary,
+     dark red overlays rgba(224, 0, 59, 0.8), light section
+     backgrounds #f9f9ff, and muted text #777777. */
+  --color-primary-50: #fde8ee;
+  --color-primary-100: #fbc5d4;
+  --color-primary-200: #f79ab3;
+  --color-primary-300: #f26b8e;
+  --color-primary-400: #e0003b;
+  --color-primary-500: #c40033;
+  --color-primary-600: #a3002a;
+  --color-primary-700: #7d0020;
+  --color-primary-800: #5c0018;
+  --color-primary-900: #3d0010;
+
+  --color-mist: #f9f9ff;
+  --color-smoke: #777777;
+  --color-ink: #222222;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

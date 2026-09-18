@@ -1,0 +1,64 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Remedy brand palette — recreated from the ColorLib "Pharmative" design
+     (css/style.css): green #75b239 accents/buttons, dark text #25262a,
+     muted body text #8c92a0, light section bg #f8f9fa, page bg #efefef. */
+  --color-brand: #75b239;
+  --color-brand-dark: #5a8f2d;
+
+  /* Ink — dark headings (#25262a from the original). */
+  --color-ink: #25262a;
+  --color-ink-dark: #1a1b1e;
+
+  /* Paper — light section background (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Mist — muted body text (#8c92a0 from the original). */
+  --color-mist: #8c92a0;
+
+  /* Footer link color (#5c626e from the original). */
+  --color-footer-link: #5c626e;
+
+  /* Page background (#efefef from the original). */
+  --color-page: #efefef;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the green. */
+  --color-primary-50: #f0f9e8;
+  --color-primary-100: #d4edc0;
+  --color-primary-200: #b8e098;
+  --color-primary-300: #9cd370;
+  --color-primary-400: #75b239;
+  --color-primary-500: #5a8f2d;
+  --color-primary-600: #4a7826;
+  --color-primary-700: #3a601f;
+  --color-primary-800: #2a4818;
+  --color-primary-900: #1a3010;
+
+  /* Fonts: Nunito (Google Fonts). */
+  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Nunito', ui-serif, Georgia, serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-page);
+  color: var(--color-mist);
+  line-height: 1.7;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-ink);
+  font-weight: 700;
+}

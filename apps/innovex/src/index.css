@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Innovex brand — digital agency theme.
+     Primary dark: #1a1a2e, accent orange: #f5a623. */
+  --color-primary-50: #fdf6e9;
+  --color-primary-100: #fae8c0;
+  --color-primary-200: #f5d08a;
+  --color-primary-300: #f5a623;
+  --color-primary-400: #e09520;
+  --color-primary-500: #c7821a;
+  --color-primary-600: #a66b15;
+  --color-primary-700: #7d5010;
+  --color-primary-800: #54360b;
+  --color-primary-900: #2b1b06;
+
+  --color-dark: #1a1a2e;
+  --color-dark-lighter: #232342;
+  --color-surface: #f8f9fa;
+  --color-ink: #212529;
+  --color-muted: #6c757d;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Great Vibes', cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

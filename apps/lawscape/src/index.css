@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Lawscape brand colors — burnt orange #de6320 primary,
+     dark bar #0f0f16, navbar #c2581e, light bg #f7f7f7. */
+  --color-primary-50: #fef3ec;
+  --color-primary-100: #fddcc5;
+  --color-primary-200: #f9b88b;
+  --color-primary-300: #f48f4e;
+  --color-primary-400: #e87028;
+  --color-primary-500: #de6320;
+  --color-primary-600: #c2581e;
+  --color-primary-700: #a04a1a;
+  --color-primary-800: #7d3b15;
+  --color-primary-900: #5a2b10;
+
+  /* Dark backgrounds */
+  --color-dark-bar: #0f0f16;
+
+  /* Light background */
+  --color-light-bg: #f7f7f7;
+
+  /* Text colors */
+  --color-ink: #222222;
+  --color-smoke: #777777;
+
+  /* Lora (headings) + Roboto (body) via Google Fonts <link> in index.html */
+  --font-heading: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}

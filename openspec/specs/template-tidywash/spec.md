@@ -69,7 +69,7 @@ Recreation of ColorLib's **Cleanex** cleaning service website template.
 - Blog: light gray #f8f9fa
 - Footer: dark with multiple columns
 
-## Gherkin requirements
+## Requirements
 
 ### Feature: TidyWash — Cleaning Service Website
 

@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Squadly brand — heavy equipment rental theme, modeled after
+     the ColorLib "Equipo" template (https://preview.colorlib.com/theme/equipo/).
+     Blue primary (#007bff), orange accent (#F96D00), dark navbar, white text on overlays. */
+  --color-primary-50: #e6f2ff;
+  --color-primary-100: #b3d9ff;
+  --color-primary-200: #80bfff;
+  --color-primary-300: #4da6ff;
+  --color-primary-400: #1a8cff;
+  --color-primary-500: #007bff;
+  --color-primary-600: #0062cc;
+  --color-primary-700: #004a99;
+  --color-primary-800: #003166;
+  --color-primary-900: #001933;
+
+  --color-accent-400: #f96d00;
+  --color-accent-500: #e06200;
+
+  --color-surface: #f8f9fa;
+  --color-ink: #212529;
+  --color-muted: #6c757d;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}

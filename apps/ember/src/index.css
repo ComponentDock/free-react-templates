@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Ember brand palette — recreated from the ColorLib "Dingo" design
+     (css/style.css): orange #ff6426 accents/buttons, dark #e04000 hover,
+     dark bg #2c3033 headings/footer, light bgs #f9f9ff / #f0e9ff / #f6f5f1. */
+  --color-brand: #ff6426;
+  --color-brand-dark: #e04000;
+
+  /* Ink — dark headings/footer (#2c3033 from the original). */
+  --color-ink: #2c3033;
+  --color-ink-dark: #1e2224;
+
+  /* Soapstone — light section background (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Lavender — secondary light section background (#f0e9ff). */
+  --color-lavender: #f0e9ff;
+
+  /* Cream — tertiary light section background (#f6f5f1). */
+  --color-cream: #f6f5f1;
+
+  /* Mist — muted body text (#999999 from the original). */
+  --color-mist: #999999;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the orange. */
+  --color-primary-50: #fff4ed;
+  --color-primary-100: #ffe6d5;
+  --color-primary-200: #ffc8aa;
+  --color-primary-300: #ffa274;
+  --color-primary-400: #ff7c3d;
+  --color-primary-500: #ff6426;
+  --color-primary-600: #e04e0a;
+  --color-primary-700: #ba3f08;
+  --color-primary-800: #93320a;
+  --color-primary-900: #782b0c;
+
+  /* Original fonts: "Lora" (headings) + "Cardo" (body). */
+  --font-sans: 'Cardo', ui-serif, Georgia, serif;
+  --font-display: 'Lora', ui-serif, Georgia, serif;
+}

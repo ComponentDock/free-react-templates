@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Execly brand palette — recreated from the ColorLib "Corporate" preview
+   (https://preview.colorlib.com/theme/corporate/) live DOM + css/main.css:
+   brand violet #6434fe (primary buttons, accent, selection), heading #222222,
+   body text #777777, overlay rgba(0,0,0,0.5), footer bg #222222, footer text
+   #999, white bg. Font: Poppins via Google Fonts. */
+@theme {
+  --color-brand: #6434fe;
+  --color-heading: #222222;
+  --color-body-text: #777777;
+  --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-footer-bg: #222222;
+  --color-footer-text: #999999;
+  --color-white: #ffffff;
+
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--color-white);
+    color: var(--color-body-text);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: #fff;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-heading);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}

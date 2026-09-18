@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Coincast brand palette — brand orange #ff7700, dark bg #242424,
+     light gray #f4f4f4, border gray #e5e5e5, medium gray #616162. */
+
+  /* Brand orange — primary accent, buttons, CTAs, logo accent. */
+  --color-brand: #ff7700;
+  --color-brand-dark: #e06900;
+  --color-brand-light: #ff8d29;
+
+  /* Ink — dark sections (#242424): header, footer, about, stats, team. */
+  --color-ink: #242424;
+  --color-ink-dark: #1a1a1a;
+
+  /* Paper — light section backgrounds (#f4f4f4): featured, services, blog. */
+  --color-paper: #f4f4f4;
+
+  /* Border gray (#e5e5e5): card borders, dividers. */
+  --color-border: #e5e5e5;
+
+  /* Mist — secondary text (#616162). */
+  --color-mist: #616162;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand orange. */
+  --color-primary-50: #fff7ed;
+  --color-primary-100: #ffedd5;
+  --color-primary-200: #fed7aa;
+  --color-primary-300: #fdba74;
+  --color-primary-400: #ff8d29;
+  --color-primary-500: #ff7700;
+  --color-primary-600: #e06900;
+  --color-primary-700: #c25700;
+  --color-primary-800: #9a4400;
+  --color-primary-900: #7c3700;
+
+  /* Original fonts: "Open Sans" (body) + "Roboto" (headings). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}

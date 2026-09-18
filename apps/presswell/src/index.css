@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Presswell brand palette — recreated from ColorLib "Laundry" design
+     (style.css): blue-purple #6785FF primary, #5172f5 secondary gradient,
+     dark navy #072366 headings, navy #10285d body text. */
+  --color-brand: #6785ff;
+  --color-brand-dark: #5172f5;
+
+  /* Ink — dark navy headings (#072366 from the original). */
+  --color-ink: #072366;
+  --color-ink-dark: #051a4a;
+
+  /* Paper — light section backgrounds. */
+  --color-paper: #f8f9ff;
+
+  /* Navy — body text (#10285d from the original). */
+  --color-navy: #10285d;
+
+  /* Mist — muted body text. */
+  --color-mist: #6b7280;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the blue-purple. */
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #dce4ff;
+  --color-primary-200: #bccaff;
+  --color-primary-300: #8ea5ff;
+  --color-primary-400: #6785ff;
+  --color-primary-500: #5172f5;
+  --color-primary-600: #3a5ae0;
+  --color-primary-700: #2d47c0;
+  --color-primary-800: #283c9d;
+  --color-primary-900: #26367d;
+
+  /* Original fonts: "Raleway" (headings) + "Muli" (body). */
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+}

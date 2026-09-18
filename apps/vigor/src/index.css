@@ -1,56 +1,26 @@
 @import 'tailwindcss';
 
-/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
-   default prefers-color-scheme media query. */
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Vigor design tokens — recreated from the source preview CSS
-     (no assets copied):
-     - brand green #38b143: outline buttons, price values, carousel arrow
-       borders, working-hours hover, footer social hover, bottom-bar links.
-     - brand-light #b6e358: start of the green gradient used by filled
-       buttons (linear-gradient(to right, #b6e358, #38b143)).
-     - kicker #b3e258: section-heading kicker gradient start (clipped text).
-     - ink #101214: heading color and filled-button text.
-     - night #141414: carousel arrow backgrounds.
-     - body #838383: paragraph/copy text, input placeholder.
-     - faint #bebebe: footer blurb text.
-     - soft #5c6077: bottom-bar copyright text.
-     - line #eaeaea: working-hours rules + newsletter input border. */
-  --color-brand: #38b143;
-  --color-brand-light: #b6e358;
-  --color-kicker: #b3e258;
-  --color-ink: #101214;
-  --color-night: #141414;
-  --color-body: #838383;
-  --color-faint: #bebebe;
-  --color-soft: #5c6077;
-  --color-line: #eaeaea;
-  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
-}
+  /* Vigor brand palette — yellow CTA (#fcd307) from the original design */
+  --color-brand-50: #fffde7;
+  --color-brand-100: #fff9c4;
+  --color-brand-200: #fff59d;
+  --color-brand-300: #fff176;
+  --color-brand-400: #fcd307;
+  --color-brand-500: #fbc02d;
+  --color-brand-600: #f9a825;
+  --color-brand-700: #f57f17;
+  --color-brand-800: #ef6c00;
+  --color-brand-900: #e65100;
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
+  /* Secondary — orange (#fd5f00) */
+  --color-accent-400: #fd5f00;
+  --color-accent-500: #e65300;
 
-  body {
-    font-family: var(--font-sans);
-    font-size: 14px;
-    line-height: 2;
-    color: var(--color-body);
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-sans);
-    color: var(--color-ink);
-    font-weight: 700;
-    line-height: 1.3;
-  }
+  /* Roboto — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
 }

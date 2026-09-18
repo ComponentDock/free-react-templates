@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #f86011;
+  --color-primary-dark: #e2560b;
+  --color-ink: #072366;
+  --color-body: #5e5e5e;
+  --color-muted: #999999;
+  --color-peach: #fff8f5;
+  --color-peach-light: #fff2ed;
+  --color-nav-text: #1d2547;
+
+  --font-sans: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}

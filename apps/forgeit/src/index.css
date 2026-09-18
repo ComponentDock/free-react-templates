@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Forgeit brand palette — creative agency template recreation
+     (design-token notes for the recreated template):
+     brand #32dbc6 (teal — primary buttons, accents, checkmarks),
+     brand-hover #2ac4b3 (darker teal hover),
+     dark #000000 (top bar, dark feature strip),
+     body #4d4d4d (paragraph text),
+     surface #ffffff (main content bg),
+     surface-light #f8f9fa (contact section bg),
+     footer-bg #333333 (footer background),
+     footer-text #737373 (footer paragraph text),
+     footer-heading #ffffff (footer section headings). */
+  --color-brand: #32dbc6;
+  --color-brand-hover: #2ac4b3;
+  --color-dark: #000000;
+  --color-body: #4d4d4d;
+  --color-surface: #ffffff;
+  --color-surface-light: #f8f9fa;
+  --color-footer-bg: #333333;
+  --color-footer-text: #737373;
+  --color-footer-heading: #ffffff;
+
+  --font-sans: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-body antialiased;
+  }
+}
+
+@layer components {
+  .btn-brand {
+    @apply inline-block rounded-full bg-brand px-8 py-3 text-sm font-medium uppercase tracking-widest text-white transition-colors hover:bg-brand-hover;
+  }
+
+  .btn-white {
+    @apply inline-block rounded-full border border-white bg-transparent px-8 py-3 text-sm font-medium uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-dark;
+  }
+
+  .section-heading {
+    @apply text-center text-3xl font-bold text-dark md:text-4xl;
+  }
+
+  .section-subtitle {
+    @apply mx-auto mt-4 max-w-2xl text-center text-body;
+  }
+}

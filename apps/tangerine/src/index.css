@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #fb771a;
+  --color-brand-hover: #eb6304;
+  --color-brand-active: #de5e04;
+  --color-brand-checked-hover: #fb8633;
+  --color-panel: #f6f7fc;
+  --color-input-bg: #efefef;
+  --color-checkbox-unchecked: #e6e6e6;
+  --color-checkbox-hover: #cccccc;
+  --color-text-muted: #b3b3b3;
+  --color-text-secondary: #888888;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+}

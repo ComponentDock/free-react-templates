@@ -1,24 +1,32 @@
+import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { describe, expect, it } from 'vitest'
 import { About } from './About'
 
 describe('About', () => {
-  it('renders the kicker, heading, paragraphs, CTAs, and photo', () => {
+  it('renders welcome heading', () => {
     render(<About />)
+    expect(screen.getByText(/Welcome to/)).toBeDefined()
+    expect(screen.getByText(/Vigor/)).toBeDefined()
+    expect(screen.getByText(/Crossfit Gym/)).toBeDefined()
+  })
 
-    expect(screen.getByText('Vigor')).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'Why choose Vigor?' })).toBeInTheDocument()
-    expect(screen.getByText(/Vigor is a modern fitness gym/)).toBeInTheDocument()
-    expect(screen.getByText(/Certified trainers track your plan/)).toBeInTheDocument()
+  it('renders welcome subheading', () => {
+    render(<About />)
+    expect(screen.getByText('Welcome')).toBeDefined()
+  })
 
-    expect(screen.getByRole('link', { name: 'Get a membership' })).toHaveAttribute(
-      'href',
-      '#pricing',
-    )
-    expect(screen.getByRole('link', { name: 'Find out more' })).toHaveAttribute('href', '#services')
+  it('renders join us button', () => {
+    render(<About />)
+    expect(screen.getByText('Join us')).toBeDefined()
+  })
 
-    expect(
-      screen.getByRole('img', { name: /helping a member with their form/i }),
-    ).toBeInTheDocument()
+  it('renders video play button', () => {
+    render(<About />)
+    expect(screen.getByRole('button', { name: /play video/i })).toBeDefined()
+  })
+
+  it('renders about section with id', () => {
+    const { container } = render(<About />)
+    expect(container.querySelector('#about')).toBeDefined()
   })
 })

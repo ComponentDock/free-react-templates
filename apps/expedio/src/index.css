@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Expedio brand — from ColorLib "Safario" preview
+     (https://preview.colorlib.com/theme/safario/ + css/style.css):
+     a travel agency theme with purple #6059f6 primary,
+     light backgrounds #f8f8ff / #ebebff, muted text #888888. */
+  --color-primary-50: #f0eeff;
+  --color-primary-100: #d1cff4;
+  --color-primary-200: #b3b0ea;
+  --color-primary-300: #9590e0;
+  --color-primary-400: #7676ff;
+  --color-primary-500: #6059f6;
+  --color-primary-600: #4e48d4;
+  --color-primary-700: #3c37b0;
+  --color-primary-800: #2c288a;
+  --color-primary-900: #1e1b64;
+
+  --color-mist: #f8f8ff;
+  --color-cloud: #ebebff;
+
+  --color-ink: #2a2a2a;
+  --color-smoke: #888888;
+  --color-ash: #555555;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Roboto Condensed', ui-sans-serif, system-ui, sans-serif;
+}

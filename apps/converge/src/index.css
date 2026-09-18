@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Converge brand colors — from the ColorLib "Confpro" conference template
+     (https://preview.colorlib.com/theme/confpro/ + styles/main_styles.css):
+     a marketing conference theme with a dark navy #0a2642 header/background,
+     purple accent #7f66ff, orange CTA #ff9000, and body text #68727c. */
+  --color-primary-50: #f0edff;
+  --color-primary-100: #ddd6ff;
+  --color-primary-200: #c0b3ff;
+  --color-primary-300: #9e8cff;
+  --color-primary-400: #7f66ff;
+  --color-primary-500: #6b4dff;
+  --color-primary-600: #5a3de0;
+  --color-primary-700: #4a30b8;
+  --color-primary-800: #3a2590;
+  --color-primary-900: #2a1a68;
+
+  /* Dark navy (header + section overlays). */
+  --color-navy: #0a2642;
+
+  /* Orange CTA. */
+  --color-cta: #ff9000;
+  --color-cta-hover: #e07f00;
+
+  /* Salmon accent (link underlines). */
+  --color-salmon: #ffa07f;
+
+  /* Body + muted text. */
+  --color-body: #68727c;
+  --color-muted: #a5a5a5;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}

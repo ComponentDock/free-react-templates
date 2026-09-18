@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — extracted from ColorLib Invest stylesheet.
+     Primary amber/gold #ffa800, dark #11100e, footer #15191f, body text #a5a5a5. */
+  --color-brand: #ffa800;
+  --color-brand-hover: #e69600;
+  --color-dark: #11100e;
+  --color-footer-bg: #15191f;
+  --color-copyright-bg: #1a1e24;
+  --color-heading: #212121;
+  --color-body-text: #a5a5a5;
+  --color-body-text-alt: #838383;
+  --color-slider-dot-active: #bda994;
+  --color-slider-dot-inactive: #d2d2d2;
+
+  /* Fonts: Open Sans (body) via Google Fonts (loaded in index.html). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

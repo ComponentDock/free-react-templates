@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand accent — from original stylesheet: price numbers, testimony overlay, animated dot */
+  --color-brand: #21bf73;
+
+  /* Primary button — Bootstrap blue, all CTA buttons */
+  --color-primary: #007bff;
+  --color-primary-hover: #0069d9;
+
+  /* Footer background */
+  --color-footer: #1a1a1a;
+
+  /* Body text */
+  --color-ink: #212529;
+
+  /* Light section background */
+  --color-light-bg: #f8f9fa;
+
+  /* Card shadow */
+  --color-card-shadow: 0 24px 48px -13px rgba(0, 0, 0, 0.05);
+
+  /* Font: Roboto via Google Fonts */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

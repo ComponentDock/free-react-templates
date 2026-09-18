@@ -1,209 +1,112 @@
-# Template: Feast (Food Blog Template)
+# Feast — Food Catering Service Template
+
+> Recreation of ColorLib "Flatter" (https://colorlib.com/wp/template/flatter/)
 
 ## Purpose
 
-Feast is a single-page food-blog landing template in the free-react-templates
-monorepo. It is an original React recreation of the ColorLib free "Foodblog"
-website template design (see TEMPLATES.md), built under a different name with
-the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
-
-## Design reference (replication findings)
-
-- **Original:** ColorLib "Foodblog" — food / recipes blog template
-  (source: https://colorlib.com/wp/template/foodblog/).
-- **Demo DOM analyzed:** https://preview.colorlib.com/theme/foodblog/
-  (HTTP 200, full rendered DOM + `css/style.css` extracted).
-  The TEMPLATES.md screenshot (`foodblog-free-template.jpg`) is the visual
-  reference: hot-pink top bar, white header, hero photo with sticker-style
-  headline boxes (pink/yellow/lime), recipe card grid.
-- **Section order (1:1):** Header (top pink bar: social icons + Register/Login;
-  bottom: logo + nav Home/Features/Receipies/Reviews/Contact + pink search
-  button) → Hero (694px photo slider, 2 slides, centered sticker headline
-  "Healthy Recipes / from the best chefs / for all the foodies") → Ad banner
-  ("Amazing deserts" overlay on 3-image carousel) → Latest recipes (6 recipe
-  cards, 3-col grid) → Bottom widgets (3 cols: Top rated recipes list, Most
-  liked recipes list, blog post card) → Reviews (yellow section, 2 review
-  cards) → Gallery (image carousel strip) → Footer (bg photo, logo + 6 social
-  icons, nav menu, copyright).
-- **Design tokens extracted from `style.css`:**
-  - Brand **pink `#ff2a6b`** — header top bar, recipe info bars, hero sticker
-    #1, date badges, readmore button, search button, author/dates accents.
-  - Secondary **yellow `#fdc856`** — hero sticker #2, reviews section
-    background.
-  - Accent **lime `#bdde64`** — hero sticker #3.
-  - Star rating **`#fbb710`**, faded star **`#e0e3e4`**.
-  - Text **`#474747`** (headings/nav, weight 500), footer social **`#b8b8b8`**.
-  - Font: **"Poppins"** (Google Fonts), sans-serif.
-  - Stickers: border-radius 5px, shadow `-1px -5px 20px rgba(0,0,0,.3)`;
-    title-1 rotate(4deg), title-2/3 straight.
-  - Buttons: search 34×37px radius 4px pink; readmore 41×41px pink square;
-    hero arrows 40px circle, 2px solid pink border.
-  - Thumbs: recipe bar padding 17px 25px; review-thumb 166×160px; list thumb
-    77×77px; gallery items 320px tall; blog card white with
-    `0 17px 29px rgba(0,0,0,.15)` shadow.
-- **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/feast-<n>/<w>/<h>`); icons → lucide-react (brand/social
-  icons as inline SVG per repo rule — lucide-react has no brand icons);
-  Poppins via Google Fonts `<link>`; no assets copied. Copy text paraphrased
-  but same content kinds (recipe names, dates, authors, ratings).
-
-Feast lives in `apps/feast` and uses shared components from `packages/ui`
-(Button, ButtonLink, Card, cn).
+A food catering service landing page with centered navigation, hero slider,
+services grid, video banner, popular orders, testimonials, brand logos, and a
+multi-column footer. The design uses warm red-orange tones and a zigzag/wave
+aesthetic on section borders.
 
 ## Requirements
 
-### Requirement: Navigation bar
+### Requirement: Navbar with navigation and CTA
 
-The system SHALL render a top navigation bar with a hot-pink utility bar
-(social icons + Register/Login), the site name "Feast", anchor links to the
-page sections, a search button, and a dark-mode toggle button.
+The template SHALL render a sticky navbar with logo, navigation links
+(About, Services, Menu, Gallery, Blog dropdown, Pages dropdown, Contact),
+and a "Custom Order" CTA button.
 
-#### Scenario: Navbar content
+#### Scenario: Desktop navigation renders all links
 
-- **GIVEN** the Feast page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show a pink top bar with social icons on the left
-  and "Register / Login" links on the right
-- **AND** the navbar SHALL show the site name "Feast" with a tagline
-  "RECIPES & MORE"
-- **AND** the navbar SHALL show links Home, Features, Recipes, Reviews, and
-  Contact
-- **AND** the navbar SHALL show a search button and a dark-mode toggle button
+- **THEN** the navbar displays the Feast logo, About, Services, Menu, Gallery, Blog, Pages, Contact links, and a "Custom Order" button
 
-#### Scenario: Dark mode toggle
+#### Scenario: Blog dropdown opens on click
 
-- **GIVEN** the page is rendered
-- **WHEN** the user presses the dark-mode toggle
-- **THEN** the `.dark` class SHALL be toggled on the document root element
-- **AND** the toggle SHALL reflect the current mode
+- **WHEN** the user clicks the "Blog" dropdown button
+- **THEN** a dropdown menu with "Blog" and "Single Post" links is shown
 
-### Requirement: Hero section
+#### Scenario: Pages dropdown opens on click
 
-The system SHALL render a full-width hero photo slider with a centered
-sticker-style headline.
+- **WHEN** the user clicks the "Pages" dropdown button
+- **THEN** a dropdown menu with "Elements" link is shown
 
-#### Scenario: Hero slides
+#### Scenario: Mobile menu toggle
 
-- **GIVEN** the Feast page is rendered
-- **WHEN** the hero section loads
-- **THEN** the hero SHALL show a background photo (seeded picsum placeholder)
-  with the headline "Healthy Recipes" on a pink sticker, "from the best
-  chefs" on a yellow sticker, and "for all the foodies" on a lime sticker
-- **AND** the hero SHALL show previous/next circular arrow buttons with a
-  pink border
-- **AND** the user SHALL be able to advance between 2 slides
+- **WHEN** the user clicks the mobile menu toggle button
+- **THEN** a mobile navigation menu is displayed with all nav links
 
-### Requirement: Ad banner
+### Requirement: Hero section with heading and background
 
-The system SHALL render a promotional banner with a photo carousel and an
-overlay text panel.
+The template SHALL render a full-width hero section with a heading,
+description text, and background image.
 
-#### Scenario: Ad banner content
+#### Scenario: Hero renders heading and description
 
-- **GIVEN** the Feast page is rendered
-- **WHEN** the banner section is displayed
-- **THEN** the banner SHALL show "Amazing deserts" as the heading
-- **AND** the banner SHALL list "Easy to make", "Step by Step Video
-  Tutorial", "Gluten Free", and "Healthy Ingredients" with check icons
-- **AND** the banner background SHALL cycle through placeholder photos
+- **WHEN** the page loads
+- **THEN** the hero section displays "Food Catering Service." heading and a description about catering services
 
-### Requirement: Latest recipes
+### Requirement: Services section with 6 service cards
 
-The system SHALL render a "Latest recipes" section with a 3-column grid of
-recipe cards.
+The template SHALL render a services section with a heading and 6 service
+cards in a grid layout.
 
-#### Scenario: Recipe cards
+#### Scenario: All services are displayed
 
-- **GIVEN** the Feast page is rendered
-- **WHEN** the recipes section is displayed
-- **THEN** the section SHALL have the heading "Latest recipes"
-- **AND** the section SHALL show 6 recipe cards in a 3-column grid
-- **AND** each card SHALL show a photo with a pink info bar containing the
-  recipe name (e.g. "Traditional Pizza") and a 5-star rating with the last
-  star faded
+- **WHEN** the page loads
+- **THEN** 6 service cards are rendered: Birthday Catering, Wedding Service, Party Catering, Event Catering, Corporate Service, Catering On Demand
 
-### Requirement: Bottom widgets
+### Requirement: Video banner with play button
 
-The system SHALL render three side-by-side widget columns: "Top rated
-recipes", "Most liked recipes", and a blog post card.
+The template SHALL render a dark video banner section with a heading
+and play button.
 
-#### Scenario: Recipe lists
+#### Scenario: Video banner renders
 
-- **GIVEN** the Feast page is rendered
-- **WHEN** the widgets section is displayed
-- **THEN** the first column SHALL have the heading "Top rated recipes" with a
-  list of 5 entries
-- **AND** the second column SHALL have the heading "Most liked recipes" with
-  a list of 5 entries
-- **AND** each list entry SHALL show a thumbnail, a pink date
-  (e.g. "March 14, 2018"), the recipe name, and a star rating
+- **WHEN** the page loads
+- **THEN** the "Watch Video" heading and a play button are displayed
 
-#### Scenario: Blog post card
+### Requirement: Popular Orders section with 6 meal cards
 
-- **GIVEN** the Feast page is rendered
-- **WHEN** the widgets section is displayed
-- **THEN** the third column SHALL show a blog card with a photo and a pink
-  date badge (e.g. "May 04, 2018")
-- **AND** the card SHALL show the title "Italian restaurant Review", an
-  author line "By Maria Williams", an excerpt, a "2 Comments" link, and a
-  pink readmore arrow button
+The template SHALL render a popular orders section with 6 meal cards,
+each showing a food image, price, name, ingredients, and "Order Now!" button.
 
-### Requirement: Reviews
+#### Scenario: All meals are displayed
 
-The system SHALL render a yellow section with two review cards.
+- **WHEN** the page loads
+- **THEN** 6 meal cards are rendered with names, prices, and "Order Now!" buttons
 
-#### Scenario: Review cards
+### Requirement: Testimonials section with customer feedback
 
-- **GIVEN** the Feast page is rendered
-- **WHEN** the reviews section is displayed
-- **THEN** the section SHALL have a yellow background and show 2 review cards
-  side by side
-- **AND** each card SHALL show a photo with a pink date badge, a pink date
-  line, a recipe name (e.g. "Feta Cheese Burgers"), a star rating, and an
-  author meta line with avatar and "By Janice Smith"
+The template SHALL render a testimonials section with customer cards
+showing avatar, name, role, and quote.
 
-### Requirement: Gallery
+#### Scenario: Testimonials render
 
-The system SHALL render a photo gallery carousel strip.
+- **WHEN** the page loads
+- **THEN** 3 testimonial cards are displayed with author names and quotes
 
-#### Scenario: Gallery strip
+### Requirement: Brands section with logo grid
 
-- **GIVEN** the Feast page is rendered
-- **WHEN** the gallery section is displayed
-- **THEN** the gallery SHALL show a horizontal strip of at least 6 photos of
-  equal height (320px equivalent)
-- **AND** the strip SHALL be scrollable/advanceable via arrows or drag
+The template SHALL render a brands section with 8 placeholder brand logos.
 
-### Requirement: Footer
+#### Scenario: Brand logos render
 
-The system SHALL render a footer over a background photo with the site name,
-social icons, a nav menu, and copyright.
+- **WHEN** the page loads
+- **THEN** 8 brand logo placeholder images are displayed
 
-#### Scenario: Footer content
+### Requirement: Footer with newsletter and Component Dock link
 
-- **GIVEN** the Feast page is rendered
-- **WHEN** the footer is displayed
-- **THEN** the footer SHALL show the site name "Feast" and 6 social icons
-  (Pinterest, Facebook, Twitter, Dribbble, Behance, LinkedIn)
-- **AND** the footer SHALL show nav links Home, Features, Recipes, Reviews,
-  and Contact
-- **AND** the footer SHALL show a copyright line
+The template SHALL render a footer with link columns, newsletter form,
+social icons, and a link to https://www.componentdock.com/.
 
-## Verification checklist
+#### Scenario: Newsletter form works
 
-- [ ] `npm run spec:validate` passes
-- [ ] `apps/feast` created from the section-rich landing app pattern (Aurora),
-      package renamed to `@free-react-templates/feast`
-- [ ] TDD: tests written first (red), then implementation (green)
-- [ ] 100% coverage lines/functions/branches/statements (`npm run
-    test:coverage -- --project apps/feast` or `scripts/verify-app.sh feast`)
-- [ ] Brand pink `#ff2a6b` in `@theme`; yellow `#fdc856` + lime `#bdde64`
-      accents; Poppins via Google Fonts link
-- [ ] Section order matches the original 1:1 (see Design reference)
-- [ ] Placeholder images via `picsum.photos/seed/feast-<n>/<w>/<h>`; no assets
-      copied; brand icons as inline SVG
-- [ ] PR description: source template, preview URL, design tokens, what
-      differs
-- [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
-      (`free-react-templates-feast.surge.sh`) + homepage + `npm run
-    readme:status`
+- **WHEN** the user enters an email and submits the newsletter form
+- **THEN** a "Thanks for subscribing!" message is displayed
+
+#### Scenario: Component Dock link is present
+
+- **WHEN** the page loads
+- **THEN** the footer contains a link to https://www.componentdock.com/ with text "Component Dock"

@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #04dbec;
+  --color-brand-dark: #03c5df;
+  --color-navy: #0b1c39;
+  --color-navy-light: #28395a;
+  --color-dark-bg: #010e21;
+  --color-body-text: #506172;
+  --color-heading-text: #0b1c39;
+  --color-muted: #a6b3c6;
+  --color-surface: #f9f9ff;
+  --font-heading: 'Josefin Sans', sans-serif;
+  --font-body: 'Muli', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}

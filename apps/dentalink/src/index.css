@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Dentalink brand palette — recreated from the ColorLib "Dentist" design
+     (css/main.css): green #67bc00 accents/buttons, gradient #ade600→#62b900,
+     dark navy #04091e headings/footer/about, light bg #f9f9ff. */
+  --color-brand: #67bc00;
+  --color-brand-dark: #4a8a00;
+
+  /* Ink — dark navy (#04091e from the original). */
+  --color-ink: #04091e;
+  --color-ink-light: #0a1530;
+
+  /* Soapstone — light section background (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Mist — muted body text (#777777 from the original). */
+  --color-mist: #777777;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the green. */
+  --color-primary-50: #f0fbe0;
+  --color-primary-100: #dcf5b8;
+  --color-primary-200: #b8ec71;
+  --color-primary-300: #8dde22;
+  --color-primary-400: #67bc00;
+  --color-primary-500: #4a8a00;
+  --color-primary-600: #3a6e00;
+  --color-primary-700: #2c5400;
+  --color-primary-800: #1f3c00;
+  --color-primary-900: #142600;
+
+  /* Original font: "Poppins" (headings + body). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

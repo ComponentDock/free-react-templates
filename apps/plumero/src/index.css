@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Plumero design tokens (Pillow Mart palette) */
+  --color-brand: #b08ead;
+  --color-dark-purple: #4b3049;
+  --color-light-purple: #f4edf2;
+  --color-page-text: #1e1e1e;
+  --color-secondary-text: #556172;
+  --color-border: #edeff2;
+
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-page-text);
+  }
+}

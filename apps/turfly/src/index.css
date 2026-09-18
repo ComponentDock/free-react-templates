@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Turfly brand colors — from the ColorLib "Lawncare" preview
+     (https://preview.colorlib.com/theme/lawncare/ + css/style.css):
+     a lawn care & landscaping theme with a green #4e9525 primary,
+     yellow accent #fbd341, and dark footer #343a40. */
+  --color-primary-50: #f0f9e8;
+  --color-primary-100: #d8efc5;
+  --color-primary-200: #b5e09a;
+  --color-primary-300: #8bcc68;
+  --color-primary-400: #4e9525;
+  --color-primary-500: #3d7a1e;
+  --color-primary-600: #2f5e17;
+  --color-primary-700: #224511;
+  --color-primary-800: #162e0b;
+  --color-primary-900: #0b1706;
+
+  /* Yellow accent from ColorLib .btn_1 / seasonal cards (#fbd341). */
+  --color-accent-300: #fde68a;
+  --color-accent-400: #fbd341;
+  --color-accent-500: #e9be2a;
+
+  /* Light section backgrounds. */
+  --color-cream: #f9f9f9;
+
+  /* Dark footer background (#343a40). */
+  --color-charcoal: #343a40;
+
+  --color-ink: #212529;
+
+  /* Lato via Google Fonts <link> in index.html — matching the
+     ColorLib font pairing. */
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}

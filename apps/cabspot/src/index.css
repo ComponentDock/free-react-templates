@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-taxi: #f9d700;
+  --color-taxi-dark: #d4b800;
+  --color-cyan-accent: #4cd3e3;
+  --color-blue-accent: #38a4ff;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

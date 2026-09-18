@@ -1,92 +1,56 @@
-import { useEffect, useState } from 'react'
-import { ArrowRight } from 'lucide-react'
-import { cn } from '@free-react-templates/ui'
-import {
-  amenityCardLabel,
-  amenities,
-  heroAutoplayMs,
-  heroHeadline,
-  heroSectionLabel,
-  heroSlides,
-} from '../data'
+import { ArrowRight, Waves, Flame, UtensilsCrossed } from 'lucide-react'
 
-/* Hero slider — 938px full-width photo slider (reference: .hero-slider /
-   .single-slider-item): the left-aligned white serif headline sits over a
-   dark overlay, and three amenity cards (photo + uppercase label + gold
-   arrow on a #353535 bar) act as the slide navigation, auto-advancing
-   every heroAutoplayMs. */
+const thumbnails = [
+  { label: 'Pool', icon: Waves, image: 'https://picsum.photos/seed/lodge-pool/120/80' },
+  { label: 'Sauna', icon: Flame, image: 'https://picsum.photos/seed/lodge-sauna/120/80' },
+  {
+    label: 'Restaurant',
+    icon: UtensilsCrossed,
+    image: 'https://picsum.photos/seed/lodge-restaurant/120/80',
+  },
+]
+
 export function Hero() {
-  const [active, setActive] = useState(0)
-  const slide = heroSlides[active]!
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setActive((current) => (current + 1) % heroSlides.length)
-    }, heroAutoplayMs)
-    return () => clearInterval(id)
-  }, [])
-
   return (
     <section
       id="home"
-      aria-label={heroSectionLabel}
-      className="relative min-h-[620px] overflow-hidden bg-charcoal lg:h-[938px]"
+      className="relative flex min-h-[70vh] items-center bg-cover bg-center"
+      style={{ backgroundImage: 'url(https://picsum.photos/seed/lodge-hero/1600/900)' }}
     >
-      <div className="absolute inset-0">
-        <img
-          key={slide.seed}
-          src={`https://picsum.photos/seed/${slide.seed}/1920/1080`}
-          alt=""
-          className="h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/40" />
-      </div>
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-lodge-900/70" />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 pt-28 pb-24 sm:pt-36 lg:px-6 lg:pt-[340px]">
-        <h1 className="max-w-4xl font-serif text-5xl leading-tight text-white sm:text-6xl lg:text-[88px] lg:leading-[96px]">
-          {heroHeadline}
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-20 lg:px-8">
+        <h1
+          className="mb-12 max-w-2xl text-4xl font-light leading-tight text-white md:text-5xl lg:text-6xl"
+          style={{ fontFamily: 'var(--font-heading)' }}
+        >
+          We hope you&apos;ll enjoy
+          <br />
+          your stay.
         </h1>
 
-        <ul className="mt-12 flex flex-col gap-4 sm:flex-row sm:justify-end lg:mt-16">
-          {amenities.map((amenity, index) => {
-            const isActive = index === active
-            return (
-              <li key={amenity.name}>
-                <button
-                  type="button"
-                  onClick={() => setActive(index)}
-                  aria-label={amenityCardLabel(amenity.name)}
-                  aria-current={isActive ? 'true' : undefined}
-                  className="group block w-full text-left sm:w-44"
-                >
-                  <img
-                    src={`https://picsum.photos/seed/${amenity.seed}/340/260`}
-                    alt=""
-                    className="h-40 w-full object-cover sm:h-44"
-                  />
-                  <span
-                    className={cn(
-                      'flex items-center justify-between border border-t-0 px-4 py-2.5 transition-colors',
-                      isActive
-                        ? 'border-gold-border bg-white'
-                        : 'border-charcoal bg-charcoal group-hover:border-gold-border group-hover:bg-white',
-                    )}
-                  >
-                    <span
-                      className={cn(
-                        'text-base font-bold tracking-wide uppercase transition-colors',
-                        isActive ? 'text-ink' : 'text-white group-hover:text-ink',
-                      )}
-                    >
-                      {amenity.name}
-                    </span>
-                    <ArrowRight aria-hidden="true" className="h-5 w-5 text-gold" />
-                  </span>
-                </button>
-              </li>
-            )
-          })}
-        </ul>
+        {/* Thumbnail nav */}
+        <div className="flex flex-wrap gap-4">
+          {thumbnails.map((thumb) => (
+            <a
+              key={thumb.label}
+              href="#rooms"
+              className="group flex items-center gap-3 overflow-hidden rounded bg-lodge-800/80 transition hover:bg-lodge-700/80"
+            >
+              <img
+                src={thumb.image}
+                alt={thumb.label}
+                className="h-16 w-20 object-cover"
+                loading="lazy"
+              />
+              <span className="flex items-center gap-2 pr-4 text-sm font-semibold text-white uppercase tracking-wider">
+                {thumb.label}
+                <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+              </span>
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   )

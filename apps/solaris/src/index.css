@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Solaris brand palette — recreated from the ColorLib "Sun" design
+     (style.css): red #FD3137 accents, warm grey #E2E0E0 body bg,
+     white #FFFFFF card, ink #191919 text. */
+  --color-brand: #fd3137;
+  --color-brand-dark: #e02c30;
+
+  /* Ink — dark text (#191919 from the original). */
+  --color-ink: #191919;
+  --color-ink-dark: #111111;
+
+  /* Paper — white card background (#FFFFFF). */
+  --color-paper: #ffffff;
+
+  /* Warm grey — page background (#E2E0E0). */
+  --color-warmgrey: #e2e0e0;
+
+  /* Muted — various grey tones from the original. */
+  --color-mist: #a1a1a1;
+  --color-muted: #adadad;
+  --color-lightmist: #b5b5b5;
+  --color-separator: #e2dfd9;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the red. */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #fd3137;
+  --color-primary-600: #e02c30;
+  --color-primary-700: #c22529;
+  --color-primary-800: #9f1f22;
+  --color-primary-900: #841d21;
+
+  /* Original fonts: "Montserrat" (body) + "PT Serif" (headings). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'PT Serif', ui-serif, Georgia, serif;
+}

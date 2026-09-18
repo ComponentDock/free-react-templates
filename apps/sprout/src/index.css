@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Sprout brand palette — warm brown church aesthetic */
+  --color-brand: #c7b198;
+  --color-brand-hover: #b59877;
+  --color-brand-dark: #3c312e;
+  --color-footer-bg: #171717;
+  --color-counter-bg: #6c757d;
+  --color-light-bg: #f8f9fa;
+  --color-warm-off: #ebe3da;
+  --color-ink: #1a1a1a;
+  --color-body: #666666;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+  --font-verse: 'Crimson Text', Georgia, serif;
+}

@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Zen brand palette — recreated from the ColorLib "Namaste" yoga template
+     (heading purple #493365, button yellow #f7ffa0, gradient #7364b0→#ffb8e7). */
+  --color-zen-purple: #493365;
+  --color-zen-muted: #938e99;
+  --color-zen-yellow: #f7ffa0;
+  --color-zen-gradient-from: #7364b0;
+  --color-zen-gradient-to: #ffb8e7;
+
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}

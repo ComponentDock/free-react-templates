@@ -1,0 +1,21 @@
+# Trekly — Implementation Tasks
+
+- [x] Write spec (openspec/specs/template-trekly/spec.md)
+- [x] Write design notes (docs/templates/trekly/)
+- [ ] Scaffold app from tavern template
+- [ ] Write tests for all components (TDD — red phase)
+- [ ] Implement Navbar component
+- [ ] Implement Hero component (slider)
+- [ ] Implement SearchBar component
+- [ ] Implement Services component
+- [ ] Implement Stats counter component
+- [ ] Implement ParallaxCTA component (reusable)
+- [ ] Implement TravelCards component
+- [ ] Implement RoomCards component
+- [ ] Implement RestaurantCards component
+- [ ] Implement BlogEntries component
+- [ ] Implement Footer component
+- [ ] Implement App.tsx composition
+- [ ] Run verify-app.sh
+- [ ] Open PR and merge
+- [ ] Bookkeeping (TEMPLATES.md [x], homepage, readme:status)

@@ -1,28 +1,28 @@
 import { useEffect } from 'react'
-import { AdBanner } from './components/AdBanner'
+import { Navbar } from './components/Navbar'
+import { Hero } from './components/Hero'
+import { Services } from './components/Services'
+import { VideoBanner } from './components/VideoBanner'
+import { PopularOrders } from './components/PopularOrders'
+import { Testimonials } from './components/Testimonials'
+import { Brands } from './components/Brands'
 import { Footer } from './components/Footer'
-import { Gallery } from './components/Gallery'
-import { Header } from './components/Header'
-import { HeroSlider } from './components/HeroSlider'
-import { RecipeGrid } from './components/RecipeGrid'
-import { Reviews } from './components/Reviews'
-import { Widgets } from './components/Widgets'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Feast — Recipes & More'
+    document.title = 'Feast — Catering Service Template'
   }, [])
 
   return (
-    <div className="min-h-screen bg-white font-sans text-ink dark:bg-gray-950 dark:text-gray-200">
-      <Header />
+    <div className="min-h-screen bg-white font-sans text-gray-900">
+      <Navbar />
       <main>
-        <HeroSlider />
-        <AdBanner />
-        <RecipeGrid />
-        <Widgets />
-        <Reviews />
-        <Gallery />
+        <Hero />
+        <Services />
+        <VideoBanner />
+        <PopularOrders />
+        <Testimonials />
+        <Brands />
       </main>
       <Footer />
     </div>

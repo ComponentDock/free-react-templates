@@ -1,48 +1,28 @@
-import { render, screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
 import { describe, expect, it } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import { Footer } from './Footer'
-import { FOOTER, FOOTER_LINKS } from '../data'
 
 describe('Footer', () => {
-  it('renders the Subscribe form and confirms a submitted email', async () => {
-    const user = userEvent.setup()
+  it('renders the Roost logo and footer links', () => {
     render(<Footer />)
-
-    expect(screen.getByRole('heading', { name: FOOTER.subscribeTitle })).toBeInTheDocument()
-
-    const input = screen.getByRole('textbox', { name: 'Email address' })
-    await user.type(input, 'buyer@example.com')
-    await user.click(screen.getByRole('button', { name: FOOTER.sendNowLabel }))
-
-    expect(screen.getByRole('status')).toHaveTextContent('Thanks for subscribing!')
+    expect(screen.getByRole('link', { name: 'Roost' })).toBeInTheDocument()
+    expect(screen.getByText('Services')).toBeInTheDocument()
+    expect(screen.getByText('Listing')).toBeInTheDocument()
+    expect(screen.getByText('About')).toBeInTheDocument()
+    expect(screen.getByText('Blog')).toBeInTheDocument()
+    expect(screen.getByText('Contact')).toBeInTheDocument()
   })
 
-  it('does not confirm an empty email', async () => {
-    const user = userEvent.setup()
+  it('links to Component Dock', () => {
     render(<Footer />)
-
-    await user.click(screen.getByRole('button', { name: FOOTER.sendNowLabel }))
-    expect(screen.queryByRole('status')).not.toBeInTheDocument()
+    const link = screen.getByRole('link', { name: 'Component Dock' })
+    expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
+    expect(link).toHaveAttribute('target', '_blank')
+    expect(link).toHaveAttribute('rel', 'noopener noreferrer')
   })
 
-  it('renders the About Us link column and the About blurb', () => {
+  it('renders the Made with text', () => {
     render(<Footer />)
-
-    expect(screen.getByRole('heading', { name: FOOTER.aboutLinksTitle })).toBeInTheDocument()
-    for (const label of FOOTER_LINKS) {
-      expect(screen.getAllByRole('link', { name: label }).length).toBeGreaterThanOrEqual(1)
-    }
-
-    expect(screen.getByRole('heading', { name: FOOTER.aboutTitle })).toBeInTheDocument()
-    expect(screen.getByText(FOOTER.aboutBlurb)).toBeInTheDocument()
-  })
-
-  it('links the copyright bar to Component Dock', () => {
-    render(<Footer />)
-
-    const credit = screen.getByRole('link', { name: FOOTER.credit })
-    expect(credit).toHaveAttribute('href', 'https://www.componentdock.com/')
-    expect(screen.getByText(/Copyright © \d{4}/)).toBeInTheDocument()
+    expect(screen.getByText(/Made with/)).toBeInTheDocument()
   })
 })

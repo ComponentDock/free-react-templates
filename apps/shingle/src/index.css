@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Shingle brand palette — gold accent (#d9ba2b) from the original design */
+  --color-gold-50: #fdf9e8;
+  --color-gold-100: #faf0c4;
+  --color-gold-200: #f5e28b;
+  --color-gold-300: #efcf4f;
+  --color-gold-400: #d9ba2b;
+  --color-gold-500: #c4a41f;
+  --color-gold-600: #a38318;
+  --color-gold-700: #7d6214;
+  --color-gold-800: #5a4610;
+  --color-gold-900: #3d2f0c;
+
+  /* Poppins — the original template's typeface */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #ff6c00;
+  --color-primary-dark: #e56200;
+  --color-surface: #f9f9f9;
+  --color-heading: #000000;
+  --color-body: #606060;
+  --color-muted: #959595;
+  --font-family-sans: 'Montserrat', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-family-sans);
+  }
+}

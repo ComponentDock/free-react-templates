@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Cirrus brand palette — recreated from the ColorLib "Cloudtemplate" design
+     (css/style.css): blue #3f52e3, green #21bf73, pink #ff8ba7. */
+  --color-brand: #3f52e3;
+  --color-brand-dark: #2d3db5;
+  --color-brand-green: #21bf73;
+  --color-brand-green-dark: #1da966;
+  --color-brand-pink: #ff8ba7;
+
+  /* Footer deep purple. */
+  --color-footer: #421b9b;
+
+  /* Heading navy. */
+  --color-heading: #203d67;
+
+  /* Muted body text. */
+  --color-muted: #72789a;
+
+  /* Light section background. */
+  --color-panel: #fafafa;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the blue. */
+  --color-primary-50: #eef1fd;
+  --color-primary-100: #d5dafb;
+  --color-primary-200: #aeb5f7;
+  --color-primary-300: #8490f0;
+  --color-primary-400: #5a6be9;
+  --color-primary-500: #3f52e3;
+  --color-primary-600: #2d3db5;
+  --color-primary-700: #1f2d87;
+  --color-primary-800: #121e59;
+  --color-primary-900: #08102d;
+
+  /* Font: Work Sans (everything). */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}

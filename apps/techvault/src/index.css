@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* TechVault brand colors — from the ColorLib "Onetech" preview
+     (https://preview.colorlib.com/theme/onetech/ + styles/main_styles.css):
+     a tech e-commerce theme with a blue #0e8ce4 primary,
+     peach accent #ffa07f, red sale accent #df3b3b, and
+     muted text #828282 / #474747. */
+  --color-primary-50: #e8f4fd;
+  --color-primary-100: #c5e4f9;
+  --color-primary-200: #9ad3f4;
+  --color-primary-300: #62bcec;
+  --color-primary-400: #0e8ce4;
+  --color-primary-500: #0c7acc;
+  --color-primary-600: #0a66ac;
+  --color-primary-700: #08528c;
+  --color-primary-800: #063e6c;
+  --color-primary-900: #042a4c;
+
+  /* Peach accent (ColorLib link underline / hover). */
+  --color-accent-peach: #ffa07f;
+
+  /* Red sale accent (ColorLib discount prices). */
+  --color-sale: #df3b3b;
+
+  /* Light backgrounds (ColorLib body / sections). */
+  --color-mist: #fafafa;
+  --color-ice: #eff6fa;
+
+  /* Muted copy (ColorLib paragraph text). */
+  --color-smoke: #828282;
+  --color-ash: #474747;
+
+  --color-ink: #000000;
+
+  /* Montserrat (headings) + Rubik (body) via Google Fonts <link> in
+     index.html — matching the ColorLib font pairing. */
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}

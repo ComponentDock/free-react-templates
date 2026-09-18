@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #f23a2e;
+  --color-brand-dark: #d93025;
+  --color-navy: #1b2430;
+  --color-navy-light: #243447;
+  --color-amber: #ffc107;
+  --color-blue-accent: #0d6efd;
+
+  --color-surface: #f8f9fa;
+
+  --font-worksans: 'Work Sans', sans-serif;
+  --font-amatic: 'Amatic SC', cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-worksans);
+  }
+}

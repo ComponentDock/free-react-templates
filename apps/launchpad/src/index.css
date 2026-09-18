@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Launchpad brand palette — recreated from the ColorLib "Startup" design
+     (primary red #df003a, teal accent #4cd3e3, blue #38a4ff). */
+  --color-brand-50: #fef2f4;
+  --color-brand-100: #fde3e8;
+  --color-brand-200: #fbc1cb;
+  --color-brand-300: #f78fa2;
+  --color-brand-400: #f14d6e;
+  --color-brand-500: #e8254f;
+  --color-brand-600: #d41440;
+  --color-brand-700: #b20e36;
+  --color-brand-800: #950f32;
+  --color-brand-900: #7f102f;
+
+  --color-teal-400: #4cd3e3;
+  --color-blue-400: #38a4ff;
+
+  --color-surface: #f9f9ff;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

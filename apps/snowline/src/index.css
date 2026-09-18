@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand gradient colors — pink → orange → yellow */
+  --color-brand-pink: #ff005a;
+  --color-brand-orange: #ff5d2d;
+  --color-brand-yellow: #ffba00;
+
+  /* Brand gradient — single token for convenience */
+  --color-brand: #ff005a;
+
+  /* Body background #f4f4f4 */
+  --color-paper: #f4f4f4;
+
+  /* Heading color #1a1a1a */
+  --color-heading: #1a1a1a;
+
+  /* Body text #606060 */
+  --color-mist: #606060;
+
+  /* Fonts — Roboto Condensed (display) + Roboto (body) via Google Fonts */
+  --font-display: 'Roboto Condensed', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

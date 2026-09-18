@@ -1,20 +1,24 @@
 import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
 import { Testimonials } from './Testimonials'
 
 describe('Testimonials', () => {
-  it('renders the heading and the first testimonial', () => {
+  it('renders the heading and three testimonial cards', () => {
     render(<Testimonials />)
-    expect(screen.getByRole('heading', { name: /Testimonial/i })).toBeInTheDocument()
-    expect(screen.getByText(/David Williams/i)).toBeInTheDocument()
+
+    expect(screen.getByRole('heading', { level: 2, name: 'Happy Clients' })).toBeInTheDocument()
+
+    const names = ['Sarah Johnson', 'Michael Chen', 'Emily Rodriguez']
+    for (const name of names) {
+      expect(screen.getByText(name)).toBeInTheDocument()
+    }
   })
 
-  it('switches testimonial on thumbnail click', async () => {
-    const user = userEvent.setup()
+  it('shows testimonial quotes', () => {
     render(<Testimonials />)
-    await user.click(screen.getByRole('button', { name: /Jennifer Martinez/i }))
-    expect(screen.getByText(/Jennifer Martinez/i)).toBeInTheDocument()
-    expect(screen.getByText(/intellectual property/i)).toBeInTheDocument()
+
+    expect(screen.getByText(/Excellent legal representation/)).toBeInTheDocument()
+    expect(screen.getByText(/complex legal matter/)).toBeInTheDocument()
+    expect(screen.getByText(/responsive, knowledgeable/)).toBeInTheDocument()
   })
 })

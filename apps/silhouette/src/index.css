@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Lato', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --color-brand: #6dab3c;
+  --color-brand-dark: #5f9434;
+  --color-accent: #b97ebb;
+  --color-ink: #1a1a2e;
+  --color-surface: #f7f7f7;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));

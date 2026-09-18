@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #ffb320;
+  --color-primary-dark: #e5a01a;
+  --color-heading: #131313;
+  --color-card: #252525;
+  --color-surface: #eef2f6;
+  --color-ink: #222222;
+  --color-badge-red: #ff205f;
+  --color-badge-green: #4eae60;
+  --color-badge-purple: #694eae;
+  --color-badge-blue: #40abf5;
+  --color-badge-orange: #fb6e10;
+  --color-badge-gold: #ffb320;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+}

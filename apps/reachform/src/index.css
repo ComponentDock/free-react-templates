@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pink-coral gradient from the original design. */
+  --color-brand-pink: #e84393;
+  --color-brand-coral: #fd7e14;
+
+  /* Text colors. */
+  --color-ink: #2d3748;
+  --color-body: #999999;
+
+  /* Input borders. */
+  --color-border: #dddddd;
+  --color-border-focus: #e84393;
+
+  /* Card. */
+  --color-card: #ffffff;
+
+  /* Font families. */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

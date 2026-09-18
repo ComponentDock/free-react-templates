@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — recreated from the ColorLib "Pivot" design
+     (css/style.css): blue #007bff accents/buttons, secondary #3395ff,
+     dark overlay rgba(0,0,0,0.6), light bgs #f2f2f2 / #fff. */
+  --color-brand: #007bff;
+  --color-brand-dark: #0056b3;
+  --color-brand-light: #3395ff;
+
+  /* Ink — dark headings/footer (#1a1a2e). */
+  --color-ink: #1a1a2e;
+  --color-ink-dark: #111122;
+
+  /* Soapstone — light section background (#f2f2f2). */
+  --color-paper: #f2f2f2;
+
+  /* Mist — muted body text (#6c757d). */
+  --color-mist: #6c757d;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand blue. */
+  --color-primary-50: #e7f1ff;
+  --color-primary-100: #cfe3ff;
+  --color-primary-200: #a5c8ff;
+  --color-primary-300: #7aafff;
+  --color-primary-400: #5095ff;
+  --color-primary-500: #007bff;
+  --color-primary-600: #0056b3;
+  --color-primary-700: #003d80;
+  --color-primary-800: #00295c;
+  --color-primary-900: #001a3d;
+
+  /* Fonts: "K2D" (headings) + "Niramit" (body) from the original. */
+  --font-sans: 'Niramit', Arial, sans-serif;
+  --font-display: 'K2D', sans-serif;
+}

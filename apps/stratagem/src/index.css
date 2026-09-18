@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Stratagem brand palette — from Conbusi consulting design:
+     blue accent #5DB2FF, navy heading/overlay #001D38. */
+  --color-brand: #5db2ff;
+  --color-brand-dark: #4a9de6;
+  --color-brand-gradient-start: #0181f5;
+  --color-brand-gradient-end: #5db2ff;
+
+  /* Navy — dark headings and overlays (#001D38). */
+  --color-navy: #001d38;
+  --color-navy-dark: #001529;
+
+  /* Paper — white body / section backgrounds. */
+  --color-paper: #ffffff;
+
+  /* Mist — body text (#4D4D4D). */
+  --color-mist: #4d4d4d;
+
+  /* Primary scale for shared Button/ButtonLink `primary` variants. */
+  --color-primary-50: #eef7ff;
+  --color-primary-100: #d9edff;
+  --color-primary-200: #bce0ff;
+  --color-primary-300: #8eccff;
+  --color-primary-400: #5db2ff;
+  --color-primary-500: #3697ff;
+  --color-primary-600: #1a76f5;
+  --color-primary-700: #1360e1;
+  --color-primary-800: #164fb6;
+  --color-primary-900: #18458f;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

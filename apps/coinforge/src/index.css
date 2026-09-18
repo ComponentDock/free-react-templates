@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Coinforge brand palette — dark navy #062489 headings/navbar,
+     deep navy #000D47 body bg, bright blue #004cff progress/links,
+     light blue #cbe5ff text-on-dark, coral #f9748f accents,
+     gold #F6D266 secondary accent. Gradient buttons: gold-to-salmon
+     #f6d365 → #fda085. */
+  --color-brand: #062489;
+  --color-navy: #000d47;
+  --color-surface: #001763;
+  --color-accent: #004cff;
+  --color-light: #cbe5ff;
+  --color-coral: #f9748f;
+  --color-gold: #f6d266;
+  --color-muted: #7a8fb5;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the dark blue. */
+  --color-primary-50: #e8ecf5;
+  --color-primary-100: #c5d0ea;
+  --color-primary-200: #8fa3d6;
+  --color-primary-300: #5976c1;
+  --color-primary-400: #2f4fad;
+  --color-primary-500: #062489;
+  --color-primary-600: #051e72;
+  --color-primary-700: #04185c;
+  --color-primary-800: #031245;
+  --color-primary-900: #020c2f;
+
+  /* Original font: Montserrat (Google Fonts). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}

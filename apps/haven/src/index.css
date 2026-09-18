@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Haven brand palette — warm gold/tan from the ColorLib "Sona" preview
+     (https://preview.colorlib.com/theme/sona/ + css/style.css):
+     a luxury hotel landing theme with a warm gold #dfa974 primary,
+     dark heading text #19191a, muted body text #6b6b6b. */
+  --color-primary-50: #fdf6ed;
+  --color-primary-100: #f9e8d3;
+  --color-primary-200: #f2d0a5;
+  --color-primary-300: #e9b472;
+  --color-primary-400: #dfa974;
+  --color-primary-500: #d4944f;
+  --color-primary-600: #b87a3d;
+  --color-primary-700: #996033;
+  --color-primary-800: #7d4e2e;
+  --color-primary-900: #674128;
+
+  --color-ink: #19191a;
+  --color-body: #6b6b6b;
+
+  /* Lora (headings) + Cabin (body) via Google Fonts <link> in index.html —
+     matching the ColorLib font pairing. */
+  --font-sans: 'Cabin', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Lora', Georgia, serif;
+}

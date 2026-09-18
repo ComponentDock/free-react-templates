@@ -98,215 +98,160 @@ Fetched 2026-09-10. Structure extracted from rendered HTML:
 
 ---
 
-## Requirements (Gherkin)
+## Requirements
 
-### Navbar
+### Requirement: Navigation Bar
 
-```gherkin
-Feature: Navigation Bar
-  Scenario: Desktop navbar displays all links and CTA
-    Given the user is on desktop viewport
-    Then the logo "Hostcraft" is visible on the left
-    And navigation links (Home, About, Domain, Hosting, Blog, Contact) are visible
-    And a "Get started" CTA button with purple border is visible
-    And the navbar background is transparent
+The navbar SHALL display logo, navigation links, and a CTA button on desktop, and toggle a mobile menu on hamburger click.
 
-  Scenario: Mobile navbar toggles on hamburger click
-    Given the user is on mobile viewport
-    When the user clicks the hamburger menu button
-    Then the navigation links become visible
-    And the navbar background is dark
+#### Scenario: Desktop navbar displays all links and CTA
 
-  Scenario: Nav link hover shows purple color
-    Given the user hovers over a navigation link
-    Then the link color changes to purple
-```
+- **GIVEN** the user is on desktop viewport
+- **THEN** the logo "Hostcraft" is visible on the left
+- **AND** navigation links (Home, About, Domain, Hosting, Blog, Contact) are visible
+- **AND** a "Get started" CTA button with purple border is visible
 
-### Hero Section
+#### Scenario: Mobile navbar toggles on hamburger click
 
-```gherkin
-Feature: Hero Section
-  Scenario: Hero displays heading and illustration
-    Given the user loads the homepage
-    Then the subheading "Isometric Hosting" is visible in purple
-    And the heading "Design, Development, Hosting" is displayed prominently
-    And a "Get in touch" primary button is visible
-    And an illustration image is visible on the right/left
+- **GIVEN** the user is on mobile viewport
+- **WHEN** the user clicks the hamburger menu button
+- **THEN** the navigation links become visible
+- **AND** the navbar background is dark
 
-  Scenario: Hero is full-height
-    Given the user is on the homepage
-    Then the hero section fills approximately 750px height
-```
+### Requirement: Hero Section
 
-### Domain Search
+The hero SHALL display a split layout with an illustration and heading text.
 
-```gherkin
-Feature: Domain Search
-  Scenario: Domain search form is functional
-    Given the user scrolls to the domain search section
-    Then a heading "Search Your Domain Name" is visible
-    And a text input with placeholder "Enter your domain name..." is visible
-    And a domain extension dropdown (.com, .net, .biz, .co, .me) is visible
-    And a "Search" button is visible
+#### Scenario: Hero displays heading and illustration
 
-  Scenario: Domain prices are displayed
-    Given the user is on the domain search section
-    Then domain prices are listed (.com $9.75, .net $9.50, etc.)
-```
+- **GIVEN** the user loads the homepage
+- **THEN** the subheading "Isometric Hosting" is visible in purple
+- **AND** the heading "Design, Development, Hosting" is displayed prominently
+- **AND** a "Get in touch" primary button is visible
+- **AND** an illustration image is visible
 
-### Features (Why Choose Us)
+### Requirement: Domain Search
 
-```gherkin
-Feature: Why Choose Us
-  Scenario: Six feature cards are displayed
-    Given the user scrolls to the features section
-    Then the heading "Why Choose Us" is visible
-    And 6 service cards are displayed in a grid
-    And each card has an icon, a title, and a description
-    And the section has a light background
+The domain search section SHALL provide a form to search for domain availability.
 
-  Scenario: Feature cards alternate icon placement
-    Given the user views the feature cards
-    Then odd cards show the icon on the right
-    And even cards show the icon on the left
-```
+#### Scenario: Domain search form is functional
 
-### Counter Stats
+- **GIVEN** the user scrolls to the domain search section
+- **THEN** a heading "Search Your Domain Name" is visible
+- **AND** a text input with placeholder "Enter your domain name..." is visible
+- **AND** a domain extension dropdown (.com, .net, .biz, .co, .me) is visible
+- **AND** a "Search" button is visible
 
-```gherkin
-Feature: Counter Statistics
-  Scenario: Stats are displayed on purple background
-    Given the user scrolls to the counter section
-    Then the subheading "More than 12,000 websites trusted hosted" is visible
-    And 4 stat counters are visible
-    And the section background is purple
+#### Scenario: Domain prices are displayed
 
-  Scenario: Stat counters show correct values
-    Given the user views the counter section
-    Then the counters display: 12000 CMS Installation, 100 Awards Won, 10000 Registered Domains, 9000 Satisfied Customers
-    And counter numbers are white and large
-```
+- **GIVEN** the user is on the domain search section
+- **THEN** domain prices are listed (.com $9.75, .net $9.50, etc.)
 
-### Main Services
+### Requirement: Why Choose Us Features
 
-```gherkin
-Feature: Main Services
-  Scenario: Services section shows illustration and cards
-    Given the user scrolls to the main services section
-    Then the heading "Our Main Services" is visible
-    And an illustration image is visible on the left
-    And 4 service cards (Cloud VPS, Share, VPS, Dedicated) are displayed in a 2x2 grid
-    And each card has a border and centered text
-```
+The features section SHALL display 6 service cards in a grid.
 
-### Pricing
+#### Scenario: Six feature cards are displayed
 
-```gherkin
-Feature: Pricing Plans
-  Scenario: Four pricing tiers are displayed
-    Given the user scrolls to the pricing section
-    Then the heading "Our Best Pricing" is visible
-    And 4 pricing cards are visible: Free ($0/mo), Startup ($19/mo), Premium ($49/mo), Pro ($99/mo)
-    And each card shows a feature list
-    And each card has a "Choose Plan" button
+- **GIVEN** the user scrolls to the features section
+- **THEN** the heading "Why Choose Us" is visible
+- **AND** 6 service cards are displayed in a grid
+- **AND** each card has an icon, a title, and a description
 
-  Scenario: Pricing cards have consistent layout
-    Given the user views the pricing cards
-    Then each card has: plan name (uppercase), price (large), excerpt, feature list, CTA button
-    And cards have white background with 30px padding
-```
+### Requirement: Counter Statistics
 
-### Testimonials
+The counter section SHALL display stats on a purple background.
 
-```gherkin
-Feature: Testimonials
-  Scenario: Testimonial carousel displays customer quotes
-    Given the user scrolls to the testimonials section
-    Then the subheading "Customer Says" is visible
-    And testimonial cards show: circular avatar, quote, name, position
-    And the carousel auto-scrolls through testimonials
-```
+#### Scenario: Stats are displayed on purple background
 
-### How It Works (Tabbed)
+- **GIVEN** the user scrolls to the counter section
+- **THEN** the subheading "More than 12,000 websites trusted hosted" is visible
+- **AND** 4 stat counters are visible
+- **AND** the section background is purple
 
-```gherkin
-Feature: Tabbed Services
-  Scenario: Tab navigation switches content
-    Given the user scrolls to the how-it-works section
-    Then 3 tabs are visible: "Next gen VPS", "Performance", "Effectiveness"
-    And the first tab is active by default
-    And each tab shows an illustration + heading + description + CTA button
+### Requirement: Main Services
 
-  Scenario: Clicking a tab changes the displayed content
-    Given the user is on the how-it-works section
-    When the user clicks the "Performance" tab
-    Then the Performance content panel becomes visible
-    And the other panels are hidden
-```
+The services section SHALL show an illustration and 4 service cards.
 
-### Blog
+#### Scenario: Services section shows illustration and cards
 
-```gherkin
-Feature: Recent Blog
-  Scenario: Three blog cards are displayed
-    Given the user scrolls to the blog section
-    Then the heading "Recent Blog" is visible
-    And 3 blog cards are displayed in a row
-    And each card has: rounded-top thumbnail image, meta (date, author, comments), heading
-```
+- **GIVEN** the user scrolls to the main services section
+- **THEN** the heading "Our Main Services" is visible
+- **AND** 4 service cards (Cloud VPS, Share, VPS, Dedicated) are displayed in a 2x2 grid
 
-### Partners
+### Requirement: Pricing Plans
 
-```gherkin
-Feature: Partner Logos
-  Scenario: Partner logos are displayed
-    Given the user scrolls to the partners section
-    Then 5 partner logo images are visible in a row
-```
+The pricing section SHALL display 4 pricing tiers.
 
-### Footer
+#### Scenario: Four pricing tiers are displayed
 
-```gherkin
-Feature: Footer
-  Scenario: Footer displays CTA banner and multi-column info
-    Given the user scrolls to the footer
-    Then a CTA banner shows "Sign Up For Web Hosting Today!" with price "$4.50/mo"
-    And a "Get started now" button is visible
-    And 4 footer columns are visible: Brand/Social, Useful Links, Navigational, Office
-    And social icons (Twitter, Facebook, Instagram) are visible
-    And office address, phone, and email are displayed
-    And a copyright line is visible at the bottom
+- **GIVEN** the user scrolls to the pricing section
+- **THEN** the heading "Our Best Pricing" is visible
+- **AND** 4 pricing cards are visible: Free ($0/mo), Startup ($19/mo), Premium ($49/mo), Pro ($99/mo)
+- **AND** each card has a "Choose Plan" button
 
-  Scenario: Footer brand widget has purple background
-    Given the user views the footer
-    Then the brand column has a purple (#6927ff) background
-```
+### Requirement: Testimonials
 
----
+The testimonials section SHALL display customer quotes with avatars.
 
-## Verification Checklist
+#### Scenario: Testimonial cards display customer quotes
 
-- [ ] Navbar is transparent on desktop, dark on mobile
-- [ ] Nav links turn purple on hover
-- [ ] "Get started" CTA has purple border, white text
-- [ ] Hero is ~750px height with illustration + text overlay
-- [ ] Hero subheading is purple, uppercase, letter-spaced
-- [ ] Hero heading is large (60px), bold
-- [ ] Domain search has input + dropdown + search button
-- [ ] Domain prices are listed below the form
-- [ ] Features section has 6 cards in alternating layout
-- [ ] Counter section has purple background with 4 stats
-- [ ] Counter numbers are white, large (40px)
-- [ ] Main services has illustration + 4 bordered cards
-- [ ] Pricing section has 4 cards: Free, Startup, Premium, Pro
-- [ ] Pricing cards have sharp corners (0 radius), white bg
-- [ ] Testimonials carousel shows avatar + quote + name
-- [ ] Tabbed section switches between 3 service panels
-- [ ] Blog section shows 3 cards with rounded-top thumbnails
-- [ ] Partner logos displayed in a row
-- [ ] Footer CTA banner with price and button
-- [ ] Footer has 4 columns: brand (purple bg), links, nav, office
-- [ ] Footer social icons visible
-- [ ] All fonts are Work Sans
-- [ ] Primary buttons are blue (#007bff) with 5px radius
-- [ ] Mobile responsive (hamburger nav, stacked layouts)
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** the subheading "Customer Says" is visible
+- **AND** testimonial cards show: circular avatar, quote, name, position
+
+### Requirement: Tabbed Services
+
+The tabbed section SHALL switch between 3 service panels.
+
+#### Scenario: Tab navigation switches content
+
+- **GIVEN** the user scrolls to the how-it-works section
+- **THEN** 3 tabs are visible: "Next gen VPS", "Performance", "Effectiveness"
+- **AND** the first tab is active by default
+
+#### Scenario: Clicking a tab changes the displayed content
+
+- **GIVEN** the user is on the how-it-works section
+- **WHEN** the user clicks the "Performance" tab
+- **THEN** the Performance content panel becomes visible
+- **AND** the other panels are hidden
+
+### Requirement: Recent Blog
+
+The blog section SHALL display 3 blog cards.
+
+#### Scenario: Three blog cards are displayed
+
+- **GIVEN** the user scrolls to the blog section
+- **THEN** the heading "Recent Blog" is visible
+- **AND** 3 blog cards are displayed in a row
+- **AND** each card has: rounded-top thumbnail image, meta (date, author, comments), heading
+
+### Requirement: Partner Logos
+
+The partners section SHALL display partner logos in a row.
+
+#### Scenario: Partner logos are displayed
+
+- **GIVEN** the user scrolls to the partners section
+- **THEN** 5 partner logo images are visible in a row
+
+### Requirement: Footer
+
+The footer SHALL display a CTA banner and multi-column information.
+
+#### Scenario: Footer displays CTA banner and multi-column info
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a CTA banner shows "Sign Up For Web Hosting Today!" with price "$4.50/mo"
+- **AND** a "Get started now" button is visible
+- **AND** 4 footer columns are visible: Brand/Social, Useful Links, Navigational, Office
+- **AND** social icons (Twitter, Facebook, Instagram) are visible
+- **AND** office address, phone, and email are displayed
+- **AND** a copyright line with Component Dock link is visible
+
+#### Scenario: Footer brand widget has purple background
+
+- **GIVEN** the user views the footer
+- **THEN** the brand column has a purple (#6927ff) background

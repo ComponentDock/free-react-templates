@@ -1,38 +1,37 @@
-import { ArrowRight } from 'lucide-react'
 import { ButtonLink } from '@free-react-templates/ui'
-import { hero } from '../data'
 
 export function Hero() {
   return (
-    <section
-      id="home"
-      className="relative flex min-h-screen items-center justify-center bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: "url('https://picsum.photos/seed/mortar-hero/1920/1080')" }}
-    >
-      <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
-      <div className="relative z-10 mx-auto max-w-4xl px-6 py-24 text-center">
-        <span className="inline-block -rotate-6 border-2 border-brand px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.3em] text-brand">
-          {hero.badge}
-        </span>
-        <h1 className="mt-6 text-4xl font-medium leading-tight text-white sm:text-5xl lg:text-6xl">
-          {hero.headline.split(hero.highlight)[0]}
-          <span className="text-brand">{hero.highlight}</span>
-          {hero.headline.split(hero.highlight)[1]}
+    <section id="home" aria-label="Hero" className="relative overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: 'url(https://picsum.photos/seed/mortar-hero/1920/1080)' }}
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 bg-ink/70" aria-hidden="true" />
+      <div className="relative mx-auto max-w-6xl px-4 py-28 sm:px-6 lg:py-36">
+        <h1 className="max-w-2xl text-4xl font-light leading-tight text-white sm:text-5xl lg:text-6xl">
+          Creative Studio
+          <span className="block text-3xl font-light text-white/80 sm:text-4xl lg:text-5xl">
+            That Works For You
+          </span>
         </h1>
-        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <p className="mt-6 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
+          We craft digital experiences that inspire and drive results. From concept to launch, our
+          team brings your vision to life with precision and creativity.
+        </p>
+        <div className="mt-10 flex flex-wrap items-center gap-4">
           <ButtonLink
-            href="#contact"
-            className="rounded-[4px] bg-brand px-8 py-4 text-base font-medium text-charcoal hover:border hover:border-brand hover:bg-transparent hover:text-brand"
+            href="#services"
+            className="rounded bg-primary-400 px-9 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-primary-500"
           >
-            {hero.primaryCta}
-            <ArrowRight className="h-5 w-5" aria-hidden="true" />
+            Our Services
           </ButtonLink>
           <ButtonLink
-            href="#contact"
-            className="rounded-[4px] bg-charcoal px-8 py-4 text-base font-medium text-white hover:border hover:border-charcoal hover:bg-transparent hover:text-white"
+            href="#portfolio"
+            className="rounded border border-white bg-transparent px-9 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
           >
-            {hero.secondaryCta}
-            <ArrowRight className="h-5 w-5" aria-hidden="true" />
+            View Portfolio
           </ButtonLink>
         </div>
       </div>

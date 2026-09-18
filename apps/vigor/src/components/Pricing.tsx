@@ -1,51 +1,79 @@
-import { ButtonLink } from '@free-react-templates/ui'
-import { PRICING_PLANS } from '../data'
+import { Check } from 'lucide-react'
 
-/**
- * Pricing — parallax section over a fixed-attachment gym photo with a dark
- * overlay: three white cards, each with a photo strip, a green 36px price
- * with a "/ Month" suffix, a 22px plan title, three feature bullets, and an
- * "Enroll Now" button. The source section has no section heading — cards
- * start directly.
- */
+const plans = [
+  {
+    name: 'One Day Training',
+    price: '$10',
+    period: 'per day',
+    features: ['Access to gym floor', 'Locker room', 'Basic equipment', '1 group class'],
+  },
+  {
+    name: 'Pay Every Month',
+    price: '$49',
+    period: 'per month',
+    features: [
+      'Full gym access',
+      'All group classes',
+      'Sauna & steam room',
+      'Personal locker',
+      'Nutrition guide',
+    ],
+  },
+  {
+    name: '1 Year Membership',
+    price: '$399',
+    period: 'per year',
+    features: [
+      'Full gym access',
+      'All group classes',
+      'Sauna & steam room',
+      'Personal locker',
+      'Nutrition guide',
+      'Free PT session',
+      'Guest passes',
+    ],
+  },
+]
+
 export function Pricing() {
   return (
-    <section
-      id="pricing"
-      className="relative mt-25 bg-fixed bg-cover bg-center py-25"
-      style={{ backgroundImage: 'url(https://picsum.photos/seed/vigor-pricing-bg/1600/900)' }}
-    >
-      <div aria-hidden="true" className="absolute inset-0 bg-black/60" />
-      <div className="relative mx-auto max-w-7xl px-4 lg:px-8">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-          {PRICING_PLANS.map((plan) => (
-            <article
-              key={plan.title}
-              className="mb-25 overflow-hidden rounded-[10px] bg-white shadow-lg"
+    <section id="pricing" className="bg-gray-50 py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="mb-12 text-center">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-brand-400">
+            Pricing Tables
+          </p>
+          <h2 className="text-3xl font-bold text-gray-900">Membership Plans</h2>
+        </div>
+        <div className="grid gap-8 md:grid-cols-3">
+          {plans.map(({ name, price, period, features }) => (
+            <div
+              key={name}
+              className="rounded-lg border border-gray-200 bg-white p-8 text-center shadow-sm"
             >
-              <img src={plan.image} alt="" className="h-40 w-full object-cover" />
-              <div className="px-10 py-10">
-                <h2 className="text-4xl font-semibold text-brand">
-                  {plan.price}
-                  <span className="text-sm italic text-body"> / Month</span>
-                </h2>
-                <h5 className="mt-8 text-xl font-semibold text-ink">{plan.title}</h5>
-                <ul className="mt-8 space-y-3">
-                  {plan.features.map((feature) => (
-                    <li key={feature} className="text-sm text-body">
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <ButtonLink
-                  href="#contact"
-                  variant="outline"
-                  className="mt-8 min-w-[200px] rounded-[10px] border-[3px] border-brand px-8 py-3 text-sm font-bold uppercase tracking-wide text-brand hover:bg-brand hover:text-white"
-                >
-                  Enroll Now
-                </ButtonLink>
+              <h3 className="mb-2 text-lg font-bold text-gray-900">{name}</h3>
+              <div className="mb-6">
+                <span className="text-4xl font-black text-brand-400">{price}</span>
+                <span className="ml-1 text-sm text-gray-500">/{period.split(' ')[1]}</span>
               </div>
-            </article>
+              <a
+                href="#contact"
+                className="mb-6 block rounded bg-brand-400 py-3 font-semibold text-white transition-colors hover:bg-brand-500"
+              >
+                Get Started
+              </a>
+              <h4 className="mb-4 text-sm font-semibold uppercase text-gray-500">
+                Enjoy All The Features
+              </h4>
+              <ul className="space-y-3 text-left">
+                {features.map((f) => (
+                  <li key={f} className="flex items-center gap-2 text-sm text-gray-600">
+                    <Check className="h-4 w-4 text-brand-400" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
         </div>
       </div>

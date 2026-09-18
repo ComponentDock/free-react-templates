@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Briefly brand — from the ColorLib "Lawful" preview
+     (https://preview.colorlib.com/theme/lawful/ + css/style.css):
+     a law-firm theme with a pink-to-salmon gradient primary (#f13d80 -> #f48464),
+     dark section backgrounds #191919 / #222222, and muted text #999 / #777. */
+  --color-primary-50: #fef1f5;
+  --color-primary-100: #fde3eb;
+  --color-primary-200: #fcc7d7;
+  --color-primary-300: #fa9dba;
+  --color-primary-400: #f13d80;
+  --color-primary-500: #e91c6d;
+  --color-primary-600: #d8105f;
+  --color-primary-700: #b60a4f;
+  --color-primary-800: #980c46;
+  --color-primary-900: #800e3f;
+
+  /* Button gradient end (ColorLib .primary-btn gradient #f13d80 -> #f48464). */
+  --color-salmon-300: #f9a88a;
+  --color-salmon-400: #f48464;
+  --color-salmon-500: #f06d48;
+
+  /* Dark section backgrounds. */
+  --color-charcoal: #191919;
+  --color-onyx: #222222;
+
+  /* Muted copy (ColorLib #999999 / #7f7f7f). */
+  --color-smoke: #7f7f7f;
+
+  --color-ink: #1a1a1a;
+
+  /* Playfair Display (headings) + Raleway (body) via Google Fonts <link> in
+     index.html — matching the ColorLib font pairing. */
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}

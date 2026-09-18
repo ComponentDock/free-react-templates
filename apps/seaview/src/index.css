@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Seaview brand — from ColorLib Marimar preview
+     (https://preview.colorlib.com/theme/marimar/ + styles/main_styles.css):
+     a hotel landing theme with orange #ff9000 primary,
+     dark navy #0e0923 background, and Playfair Display headings. */
+  --color-primary-400: #ff9000;
+  --color-primary-500: #e88200;
+  --color-primary-600: #cc7300;
+
+  /* Dark navy backgrounds. */
+  --color-navy: #0e0923;
+
+  /* Body and muted text. */
+  --color-ink: #4a4f59;
+  --color-smoke: #a5a5a5;
+
+  /* Light section backgrounds. */
+  --color-mist: #f4f5fa;
+
+  /* Secondary accent. */
+  --color-salmon: #ffa07f;
+
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}

@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Vignette brand palette — recreated from the ColorLib "Karl" design
+     (core-style.css): hot pink #ff084e accents/buttons, dark gray #3a3a3a
+     headings, white #ffffff background, light gray #ddd dividers. */
+  --color-brand: #ff084e;
+  --color-brand-dark: #e00743;
+
+  /* Ink — dark gray headings (#3a3a3a from the original). */
+  --color-ink: #3a3a3a;
+  --color-ink-dark: #2a2a2a;
+
+  /* Paper — white section background. */
+  --color-paper: #ffffff;
+
+  /* Mist — muted body text (#999999 from the original). */
+  --color-mist: #999999;
+
+  /* Divider — light gray line (#ddd from the original). */
+  --color-divider: #dddddd;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the hot pink. */
+  --color-primary-50: #fff0f4;
+  --color-primary-100: #ffd9e5;
+  --color-primary-200: #ffb3cc;
+  --color-primary-300: #ff80aa;
+  --color-primary-400: #ff4d88;
+  --color-primary-500: #ff084e;
+  --color-primary-600: #e00743;
+  --color-primary-700: #b80538;
+  --color-primary-800: #90042d;
+  --color-primary-900: #6b0322;
+
+  /* Original font: Open Sans. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}

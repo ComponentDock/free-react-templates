@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — extracted from ColorLib Innova stylesheet.
+     Primary purple #6f42c1, dark #343a40, body text #6c757d, light bg #f8f9fa. */
+  --color-brand: #6f42c1;
+  --color-brand-hover: #59339d;
+  --color-dark: #343a40;
+  --color-heading: #000000;
+  --color-body-text: #6c757d;
+  --color-light-bg: #f8f9fa;
+
+  /* Fonts: Abril Fatface (headings) + Roboto Mono (body) via Google Fonts (loaded in index.html). */
+  --font-display: 'Abril Fatface', serif;
+  --font-sans: 'Roboto Mono', ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

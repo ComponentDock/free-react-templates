@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Harbinger brand tokens — dark split layout + hot pink accent */
+  --color-brand-pink: #f84982;
+  --color-brand-pink-hover: #e40b52;
+  --color-brand-pink-focus: #ff6fa3;
+  --color-brand-dark: #0c0d0f;
+  --color-input-bg: #f1f2f3;
+  --color-input-border: transparent;
+
+  /* Social brand colors */
+  --color-social-facebook: #2a61d6;
+  --color-social-twitter: #3aa4f8;
+  --color-social-google: #f43846;
+  --color-social-instagram: #8f614a;
+  --color-social-pinterest: #e1c013;
+
+  /* Text colors */
+  --color-body: #333333;
+  --color-paragraph: #555555;
+  --color-description: #eeeeee;
+  --color-muted: #999999;
+
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Millstone brand — from ColorLib "Inds" preview CSS:
+     primary orange #f27420, dark navy #00163e, body #666. */
+  --color-primary-50: #fef6ef;
+  --color-primary-100: #fde8d5;
+  --color-primary-200: #fbd0aa;
+  --color-primary-300: #f7ad74;
+  --color-primary-400: #f27420;
+  --color-primary-500: #e05f14;
+  --color-primary-600: #c2480e;
+  --color-primary-700: #a13610;
+  --color-primary-800: #822c14;
+  --color-primary-900: #6b2614;
+
+  --color-navy: #00163e;
+  --color-navy-deep: #010b1d;
+  --color-mist: #f7f7f7;
+  --color-ink: #1a1a1a;
+  --color-heading: #00163e;
+  --color-body: #666666;
+  --color-muted: #777777;
+
+  --font-heading: 'Barlow', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}

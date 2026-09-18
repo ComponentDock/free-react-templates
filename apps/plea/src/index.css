@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Plea brand palette — counseling/legal services template recreation
+     (design-token notes for the recreated template):
+     brand #589167 (green — primary buttons, accents, icon backgrounds),
+     brand-hover #4a7d59 (darker green hover),
+     dark #1a1a1a (navbar, footer, headings),
+     text-secondary #6c757d (subtitles, muted copy),
+     surface #ffffff (main content),
+     surface-warm #f5f4f0 (alternating sections),
+     surface-light #f7f7f7 (pricing bg). */
+  --color-brand: #589167;
+  --color-brand-hover: #4a7d59;
+  --color-dark: #1a1a1a;
+  --color-body: #6c757d;
+  --color-surface: #ffffff;
+  --color-surface-warm: #f5f4f0;
+  --color-surface-light: #f7f7f7;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-dark antialiased;
+  }
+}
+
+@layer components {
+  .btn-brand {
+    @apply inline-block bg-brand px-8 py-4 text-sm font-medium uppercase tracking-wide text-white transition-colors hover:bg-brand-hover;
+  }
+
+  .btn-white {
+    @apply inline-block border border-white bg-transparent px-8 py-4 text-sm font-medium uppercase tracking-wide text-white transition-colors hover:bg-white hover:text-dark;
+  }
+
+  .section-heading {
+    @apply text-center text-3xl font-bold text-dark md:text-4xl;
+  }
+
+  .section-subtitle {
+    @apply mx-auto mt-4 max-w-2xl text-center text-body;
+  }
+}

@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-orange: #e8a838;
+  --color-brand-orange-dark: #d4952e;
+  --color-bg-page: #f5f5f5;
+  --color-card-dark: #343a40;
+  --color-text-on-dark: #ffffff;
+  --color-text-secondary: #aaaaaa;
+  --color-input-border: #555555;
+  --color-divider: #4a4a4a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-bg-page);
+    color: var(--color-text-on-dark);
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}

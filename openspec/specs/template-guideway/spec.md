@@ -4,182 +4,164 @@
 
 Recreation of ColorLib's **Consulotion** template as a modern consulting business website.
 
-- **Source:** https://colorlib.com/wp/template/consulotion/
-- **Preview:** https://preview.colorlib.com/theme/consolotion/ (404 — unreachable at prep time; design based on screenshot)
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/consolution-free-template.jpg
-- **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
-- **Category:** IT Consultant / Marketing Agency (8-page multi-page template)
+- **Source slug:** `consulotion`
+- **ColorLib page:** https://colorlib.com/wp/template/consulotion/
+- **Live preview:** https://preview.colorlib.com/theme/consolotion/ (404 — unreachable at prep time; design based on screenshot)
+- **New name:** `guideway`
+- **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Deploy target:** https://guideway.free.componentdock.com
 
-## Design tokens
+## Design Tokens
 
-| Token          | Value                      | Notes                                              |
-| -------------- | -------------------------- | -------------------------------------------------- |
-| Brand / accent | `#3b82f6`                  | Vibrant blue — buttons, icons, active nav states   |
-| Dark           | `#0f172a`                  | Navbar background, dark overlay                    |
-| Body text      | `#475569`                  | Medium grey paragraph text                         |
-| Heading text   | `#0f172a`                  | Dark navy for headings                             |
-| Background     | `#ffffff`                  | Main page background                               |
-| Button primary | `#3b82f6`                  | Blue pill-shaped CTA buttons                       |
-| Button hover   | `#2563eb`                  | Darker blue on hover                               |
-| Button radius  | `9999px`                   | Fully rounded / pill shape                         |
-| Card border    | `#e2e8f0`                  | Light slate border on feature cards                |
-| Body font      | Inter, sans-serif          | Modern, clean sans-serif                           |
-| Heading font   | Poppins, sans-serif        | Bold geometric sans-serif for headings             |
+| Token          | Value               | Notes                                            |
+| -------------- | ------------------- | ------------------------------------------------ |
+| Brand / accent | `#3b82f6`           | Vibrant blue — buttons, icons, active nav states |
+| Dark           | `#0f172a`           | Navbar background, dark overlay                  |
+| Body text      | `#475569`           | Medium grey paragraph text                       |
+| Heading text   | `#0f172a`           | Dark navy for headings                           |
+| Background     | `#ffffff`           | Main page background                             |
+| Button primary | `#3b82f6`           | Blue pill-shaped CTA buttons                     |
+| Button hover   | `#2563eb`           | Darker blue on hover                             |
+| Button radius  | `9999px`            | Fully rounded / pill shape                       |
+| Card border    | `#e2e8f0`           | Light slate border on feature cards              |
+| Body font      | Inter, sans-serif   | Modern, clean sans-serif                         |
+| Heading font   | Poppins, sans-serif | Bold geometric sans-serif for headings           |
 
-## Section structure (order)
+## Requirements
 
-1. **Top Utility Bar** — white background; logo "Guideway" left, email + phone contact info center, "Free Consulting" blue CTA button right.
-2. **Navigation Bar** — dark navy background (#0f172a); links: Home, About, Projects, Services, Blog, Contact; search bar with magnifying glass icon on right. Active link highlighted in brand blue.
-3. **Hero / Banner** — full-width background image of a professional meeting (dark gradient overlay for text readability). Sub-headline "WELCOME TO GUIDEWAY" in small white uppercase. Main heading "We Are The Best Consulting Agency" in large bold white. Blue pill CTA button "Our Services". Carousel indicators (3 dots) at bottom.
-4. **Features Section** — two-column layout. Left: heading "Our Main Features", paragraph description, two feature cards (one with blue top border accent, one with light blue background). Right: team photo in a light-bordered card.
-5. **About / Why Choose Us** — section describing the firm's expertise. Typically two-column: image + text with stats or bullet points.
-6. **Services** — grid of service cards (3 or 4 columns) each with icon, title, and brief description.
-7. **Stats / Counter** — dark background band with animated counters (projects completed, clients served, awards, team members).
-8. **Testimonials** — carousel of client testimonials with avatar, name, role, star rating, and quote.
-9. **CTA / Newsletter** — call-to-action banner with heading and button.
-10. **Contact** — contact form (name, email, subject, message) alongside address, phone, email info.
-11. **Footer** — dark background; 3-4 column layout: logo + blurb, Quick Links, Services, Contact info + social icons. Copyright bar with Component Dock link.
+### Requirement: Top Utility Bar
 
-## Gherkin requirements
+The system SHALL render a top utility bar with logo "Guideway" on the left, email and phone contact info in the center, and a "Free Consulting" blue CTA button on the right.
 
-### Top Utility Bar
+#### Scenario: Utility bar content
 
-```gherkin
-Scenario: Utility bar renders contact info and CTA
-  Given the page loads
-  Then the logo "Guideway" is displayed on the left
-  And an email address and phone number are visible in the center
-  And a "Free Consulting" button is displayed on the right
+- **GIVEN** the user views the top utility bar
+- **THEN** the logo "Guideway" is displayed on the left
+- **AND** an email address and phone number are visible in the center
+- **AND** a "Free Consulting" button is displayed on the right
 
-Scenario: Utility bar is responsive
-  Given the viewport is mobile
-  Then the utility bar stacks vertically or collapses
-```
+### Requirement: Navigation Bar
 
-### Navigation Bar
+The system SHALL render a dark navbar with six navigation links (Home, About, Projects, Services, Blog, Contact) and a search icon on the right.
 
-```gherkin
-Scenario: Nav links render
-  Given the page loads
-  Then the nav bar has a dark background
-  And links "Home", "About", "Projects", "Services", "Blog", "Contact" are visible
-  And a search icon is displayed on the right
+#### Scenario: Navbar content
 
-Scenario: Active link is highlighted
-  Given the page loads on the home page
-  Then the "Home" link is styled in the brand blue color
+- **GIVEN** the user views the navigation bar
+- **THEN** the nav bar has a dark navy background
+- **AND** links "Home", "About", "Projects", "Services", "Blog", "Contact" are visible
+- **AND** a search icon is displayed on the right
 
-Scenario: Mobile hamburger toggle
-  Given the viewport width is less than 768px
-  Then a hamburger menu icon is visible
-  And clicking it toggles the mobile nav menu open/closed
-```
+#### Scenario: Mobile hamburger toggle
 
-### Hero / Banner
+- **GIVEN** the viewport width is less than 768px
+- **THEN** a hamburger menu icon is visible
+- **AND** clicking it toggles the mobile nav menu open/closed
 
-```gherkin
-Scenario: Hero section renders
-  Given the page loads
-  Then a full-width background image is displayed
-  And a dark gradient overlay ensures text readability
-  And the sub-headline "WELCOME TO GUIDEWAY" is visible in white uppercase
-  And the main heading "We Are The Best Consulting Agency" is large, bold, and white
-  And a blue pill-shaped "Our Services" CTA button is below the heading
+### Requirement: Hero / Banner
 
-Scenario: Hero has carousel indicators
-  Given the page loads
-  Then three dot indicators are displayed at the bottom of the hero
-  And the first dot is active (blue)
-```
+The system SHALL render a full-width hero section with a background image, dark gradient overlay, sub-headline "WELCOME TO GUIDEWAY", main heading, and a blue pill-shaped CTA button.
 
-### Features Section
+#### Scenario: Hero content
 
-```gherkin
-Scenario: Features section renders
-  Given the page scrolls to the features section
-  Then the heading "Our Main Features" is visible
-  And a descriptive paragraph is shown below the heading
-  And two feature cards are displayed with distinct styling
+- **GIVEN** the user views the hero section
+- **THEN** a full-width background image is displayed
+- **AND** a dark gradient overlay ensures text readability
+- **AND** the sub-headline "WELCOME TO GUIDEWAY" is visible in white uppercase
+- **AND** the main heading "We Are The Best Consulting Agency" is large, bold, and white
+- **AND** a blue pill-shaped "Our Services" CTA button is below the heading
 
-Scenario: Feature cards have visual differentiation
-  Given the page scrolls to the features section
-  Then one card has a blue top border accent
-  And one card has a light blue background
-```
+### Requirement: Features Section
 
-### Services
+The system SHALL render a two-column features section with heading "Our Main Features", descriptive text, and two feature cards with distinct styling.
 
-```gherkin
-Scenario: Services grid renders
-  Given the page scrolls to the services section
-  Then at least 3 service cards are displayed in a grid
-  And each card shows an icon, title, and description
+#### Scenario: Features content
 
-Scenario: Service cards are responsive
-  Given the viewport is mobile
-  Then the service cards stack vertically in a single column
-```
+- **GIVEN** the user scrolls to the features section
+- **THEN** the heading "Our Main Features" is visible
+- **AND** a descriptive paragraph is shown below the heading
+- **AND** two feature cards are displayed with distinct styling
 
-### Stats / Counter
+### Requirement: Services Section
 
-```gherkin
-Scenario: Stats band renders
-  Given the page scrolls to the stats section
-  Then a dark background band is displayed
-  And at least 4 counter values are visible with labels
-  And the counters animate on scroll into view
-```
+The system SHALL render a grid of at least three service cards, each with an icon, title, and description.
 
-### Testimonials
+#### Scenario: Services grid
 
-```gherkin
-Scenario: Testimonials section renders
-  Given the page scrolls to the testimonials section
-  Then a heading is visible
-  And at least one testimonial card shows an avatar, name, role, star rating, and quote
+- **GIVEN** the user scrolls to the services section
+- **THEN** at least 3 service cards are displayed in a grid
+- **AND** each card shows an icon, title, and description
 
-Scenario: Testimonials carousel works
-  Given the page scrolls to the testimonials section
-  Then navigation arrows or dots allow cycling through testimonials
-```
+### Requirement: Stats / Counter Section
 
-### Contact
+The system SHALL render a dark background band with at least four animated counter values with labels.
 
-```gherkin
-Scenario: Contact form renders
-  Given the page scrolls to the contact section
-  Then a form with fields: name, email, subject, message is displayed
-  And a submit button is visible
+#### Scenario: Stats band
 
-Scenario: Contact info displays
-  Given the page scrolls to the contact section
-  Then address, phone number, and email are displayed
-```
+- **GIVEN** the user scrolls to the stats section
+- **THEN** a dark background band is displayed
+- **AND** at least 4 counter values are visible with labels
+- **AND** the counters animate on scroll into view
 
-### Footer
+### Requirement: Testimonials Section
 
-```gherkin
-Scenario: Footer renders with all columns
-  Given the page scrolls to the footer
-  Then a dark background is applied
-  And the logo and company blurb are displayed
-  And Quick Links column is present
-  And Contact info with social icons is present
+The system SHALL render a testimonials section with at least one testimonial card showing an avatar, name, role, star rating, and quote.
 
-Scenario: Footer has Component Dock link
-  Given the page loads
-  Then the footer contains a link to https://www.componentdock.com/
-```
+#### Scenario: Testimonials content
 
-## Verification checklist
+- **GIVEN** the user scrolls to the testimonials section
+- **THEN** a heading is visible
+- **AND** at least one testimonial card shows an avatar, name, role, star rating, and quote
+
+### Requirement: Contact Section
+
+The system SHALL render a contact form with fields (name, email, subject, message) and a submit button, alongside address, phone, and email info.
+
+#### Scenario: Contact form
+
+- **GIVEN** the user scrolls to the contact section
+- **THEN** a form with fields: name, email, subject, message is displayed
+- **AND** a submit button is visible
+- **AND** address, phone number, and email are displayed
+
+### Requirement: Footer
+
+The system SHALL render a dark footer with 3-4 columns (logo + blurb, Quick Links, Services, Contact info + social icons) and a copyright bar linking to Component Dock.
+
+#### Scenario: Footer content
+
+- **GIVEN** the user scrolls to the footer
+- **THEN** a dark background is applied
+- **AND** the logo and company blurb are displayed
+- **AND** Quick Links column is present
+- **AND** Contact info with social icons is present
+
+#### Scenario: Footer Component Dock link
+
+- **GIVEN** the page loads
+- **THEN** the footer contains a link to https://www.componentdock.com/
+
+### Requirement: Design Fidelity
+
+The system SHALL use Inter for body text, Poppins for headings, brand color #3b82f6 as accent, dark navbar background #0f172a, and pill-shaped buttons (border-radius: 9999px).
+
+#### Scenario: Design tokens applied
+
+- **GIVEN** the template is rendered
+- **THEN** the body font is Inter
+- **AND** the heading font is Poppins
+- **AND** the brand accent color is #3b82f6
+- **AND** the navbar has a dark background (#0f172a)
+- **AND** buttons have pill shape (border-radius: 9999px)
+
+## Verification Checklist
 
 - [ ] Top utility bar with logo, contact info, and "Free Consulting" CTA
 - [ ] Dark navbar with 6 nav links and search icon
-- [ ] Hero section with background image, overlay, heading, sub-headline, CTA, carousel dots
+- [ ] Hero section with background image, overlay, heading, sub-headline, CTA
 - [ ] Features section with heading, paragraph, and two styled cards
 - [ ] Services grid with icon + title + description cards
 - [ ] Stats counter band with dark bg and animated numbers
-- [ ] Testimonials carousel with avatar, name, rating, quote
+- [ ] Testimonials with avatar, name, rating, quote
 - [ ] Contact form (name, email, subject, message) + contact info
 - [ ] Dark footer with 3-4 columns + Component Dock link
 - [ ] Fonts: Inter (body), Poppins (headings)

@@ -1,45 +1,82 @@
-import { Search } from 'lucide-react'
-import { portfolio } from '../data'
+import { cn } from '@free-react-templates/ui'
+import { Quote } from 'lucide-react'
 
-const tiles = [
-  'mortar-work-1',
-  'mortar-work-2',
-  'mortar-work-3',
-  'mortar-work-4',
-  'mortar-work-5',
-  'mortar-work-6',
+const projects = [
+  {
+    title: 'Brand Identity — Luxe Hotels',
+    description:
+      'A complete brand overhaul for a luxury hotel chain, including logo design, color palette, typography system, and comprehensive brand guidelines.',
+    image: 'https://picsum.photos/seed/mortar-portfolio-1/800/600',
+    testimonial:
+      'The team delivered a brand identity that truly captures the essence of luxury. Our guests notice the difference.',
+    client: 'Sarah Chen, Luxe Hotels',
+  },
+  {
+    title: 'eCommerce Platform — Artisan Market',
+    description:
+      'A custom-built eCommerce solution featuring product catalogs, secure checkout, and real-time inventory management for artisan goods.',
+    image: 'https://picsum.photos/seed/mortar-portfolio-2/800/600',
+    testimonial:
+      'Our online sales increased by 300% within the first quarter. The platform is intuitive and beautiful.',
+    client: 'Marcus Webb, Artisan Market',
+  },
+  {
+    title: 'Mobile App — FitTrack Pro',
+    description:
+      'A fitness tracking mobile application with workout plans, progress analytics, social challenges, and wearable device integration.',
+    image: 'https://picsum.photos/seed/mortar-portfolio-3/800/600',
+    testimonial:
+      'They turned our concept into a polished app that our users love. The attention to UX detail was outstanding.',
+    client: 'Elena Rodriguez, FitTrack',
+  },
 ] as const
+
+interface ProjectRowProps {
+  title: string
+  description: string
+  image: string
+  testimonial: string
+  client: string
+  reversed?: boolean
+}
+
+function ProjectRow({ title, description, image, testimonial, client, reversed }: ProjectRowProps) {
+  return (
+    <div
+      className={cn(
+        'grid items-center gap-10 lg:grid-cols-2',
+        reversed && 'lg:[direction:rtl] lg:[&>*]:[direction:ltr]',
+      )}
+    >
+      <img src={image} alt={title} className="h-auto w-full rounded shadow-lg" loading="lazy" />
+      <div>
+        <h3 className="text-xl font-medium text-ink dark:text-gray-100">{title}</h3>
+        <p className="mt-4 text-sm leading-relaxed text-smoke dark:text-gray-400">{description}</p>
+        <div className="mt-6 rounded border border-gray-100 bg-mist p-5 dark:border-gray-800 dark:bg-gray-900">
+          <Quote className="mb-2 h-5 w-5 text-primary-400" aria-hidden="true" />
+          <p className="text-sm italic leading-relaxed text-smoke dark:text-gray-300">
+            &ldquo;{testimonial}&rdquo;
+          </p>
+          <p className="mt-3 text-xs font-medium text-ink dark:text-gray-200">&mdash; {client}</p>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 export function Portfolio() {
   return (
-    <section id="projects" className="py-24">
-      <div className="mx-auto max-w-7xl px-6 text-center">
-        <span className="text-sm font-semibold uppercase tracking-[0.2em] text-brand">
-          {portfolio.kicker}
-        </span>
-        <h2 className="mt-2 text-4xl font-medium text-ink md:text-5xl">{portfolio.heading}</h2>
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {tiles.map((seed) => (
-            <a
-              key={seed}
-              href="#projects"
-              className="group relative flex h-[340px] items-end justify-center overflow-hidden rounded bg-cover bg-center"
-              style={{ backgroundImage: `url('https://picsum.photos/seed/${seed}/600/400')` }}
-            >
-              <div
-                className="absolute inset-0 bg-black/30 transition-colors group-hover:bg-black/50"
-                aria-hidden="true"
-              />
-              <span className="absolute inset-0 m-auto flex h-12 w-12 items-center justify-center rounded-full bg-white text-charcoal opacity-0 transition-opacity group-hover:opacity-100">
-                <Search className="h-5 w-5" aria-hidden="true" />
-              </span>
-              <div className="relative z-10 pb-6 text-center">
-                <span className="text-sm font-semibold uppercase tracking-wider text-brand">
-                  {portfolio.category}
-                </span>
-                <h3 className="mt-1 text-lg font-medium text-white">{portfolio.title}</h3>
-              </div>
-            </a>
+    <section id="portfolio" aria-label="Portfolio" className="bg-white py-20 dark:bg-gray-950">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="max-w-2xl text-center">
+          <h2 className="text-3xl font-medium text-ink dark:text-gray-100">Our Portfolio</h2>
+          <p className="mt-5 leading-relaxed text-smoke dark:text-gray-400">
+            A showcase of our recent work and the results we have delivered for our clients.
+          </p>
+        </div>
+        <div className="mt-14 space-y-16">
+          {projects.map((project, index) => (
+            <ProjectRow key={project.title} {...project} reversed={index % 2 === 1} />
           ))}
         </div>
       </div>

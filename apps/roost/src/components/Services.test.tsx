@@ -1,25 +1,18 @@
-import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import { Services } from './Services'
-import { ABOUT_ROWS, SERVICES } from '../data'
 
 describe('Services', () => {
-  it('renders the black box with the four icon services', () => {
+  it('renders the section heading', () => {
     render(<Services />)
-
-    for (const service of SERVICES) {
-      expect(screen.getByRole('heading', { name: service.title })).toBeInTheDocument()
-      expect(screen.getByText(service.caption)).toBeInTheDocument()
-    }
+    expect(screen.getByRole('heading', { level: 2 })).toHaveTextContent('Our Services')
   })
 
-  it('renders the About Us column with Mission and Vision rows', () => {
+  it('renders all 4 service cards', () => {
     render(<Services />)
-
-    expect(screen.getByRole('heading', { name: 'About Us' })).toBeInTheDocument()
-    for (const row of ABOUT_ROWS) {
-      expect(screen.getByRole('heading', { name: row.title })).toBeInTheDocument()
-      expect(screen.getByText(row.blurb)).toBeInTheDocument()
-    }
+    expect(screen.getByText('Find Places Anywhere in the World')).toBeInTheDocument()
+    expect(screen.getByText('We Have Agents')).toBeInTheDocument()
+    expect(screen.getByText('Buy & Rent Modern Properties')).toBeInTheDocument()
+    expect(screen.getByText('Making Money')).toBeInTheDocument()
   })
 })

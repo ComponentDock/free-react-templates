@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Joule brand palette — recreated from the ColorLib "Electro" design
+     (css/style.css): vivid red #D10024 accent, dark #15161D header/footer,
+     darker #1E1F29 top bar, grey #E4E7ED bands, muted #8D99AE labels,
+     footer text #B9BABC, body bg #FBFBFC. */
+  --color-brand: #d10024;
+  --color-brand-secondary: #ef233c;
+  --color-dark-bg: #15161d;
+  --color-darker-bg: #1e1f29;
+  --color-light-grey: #e4e7ed;
+  --color-footer-text: #b9babc;
+  --color-muted: #8d99ae;
+  --color-body-text: #2b2d42;
+  --color-body-bg: #fbfbfc;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the Electro red. */
+  --color-primary-50: #fef0f3;
+  --color-primary-100: #fdd8de;
+  --color-primary-200: #fbb0bc;
+  --color-primary-300: #f87d95;
+  --color-primary-400: #f34c6c;
+  --color-primary-500: #d10024;
+  --color-primary-600: #be0020;
+  --color-primary-700: #9b001a;
+  --color-primary-800: #790015;
+  --color-primary-900: #57000f;
+
+  /* Montserrat — Google Fonts loaded via <link> in index.html. */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}

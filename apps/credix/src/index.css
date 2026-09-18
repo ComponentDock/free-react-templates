@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Credix brand palette — recreated from the ColorLib "Credit" design
+     (navy blue #003679, golden accent #ffbb38). */
+  --color-navy-50: #f1f7f9;
+  --color-navy-100: #e1eef4;
+  --color-navy-200: #afbace;
+  --color-navy-300: #636b75;
+  --color-navy-400: #3c4450;
+  --color-navy-500: #003679;
+  --color-navy-600: #002d66;
+  --color-navy-700: #021c3c;
+  --color-navy-800: #011329;
+  --color-navy-900: #010a17;
+
+  --color-gold-50: #fff8e6;
+  --color-gold-100: #ffefbf;
+  --color-gold-200: #ffe599;
+  --color-gold-300: #ffdb73;
+  --color-gold-400: #ffbb38;
+  --color-gold-500: #f5a623;
+  --color-gold-600: #cc8a1a;
+  --color-gold-700: #996713;
+  --color-gold-800: #66440d;
+  --color-gold-900: #332206;
+
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}

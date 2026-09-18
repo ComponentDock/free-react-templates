@@ -1,401 +1,169 @@
-# Template: Mortar (Construction Company Template)
+# Template: Mortar (Creative Agency)
 
 ## Purpose
 
-Mortar is a single-page construction company website template in the
-free-react-templates monorepo. It is an original React recreation of the
-ColorLib free "Buildream" website template design (see TEMPLATES.md), built
-under a different name with the monorepo stack: Vite + React 19 + Tailwind
-CSS 4 + TypeScript.
+Recreation of the ColorLib **Grunt** creative agency template as a React 19 +
+Vite + Tailwind CSS 4 + TypeScript single-page application.
 
-## Design reference (replication findings)
+- **Source:** https://colorlib.com/wp/template/grunt/
+- **Preview:** https://preview.colorlib.com/theme/grunt/
+- **New name:** `mortar` (apps/mortar, @free-react-templates/mortar)
+- **Deploy target:** https://mortar.free.componentdock.com
+- **Category:** Creative Agency / Freelancer
+- **Screenshot reference:** https://colorlib.com/wp/wp-content/uploads/sites/2/grunt-free-template.jpg
 
-- **Original:** ColorLib "Buildream" — construction company website template
-  (source: https://colorlib.com/wp/template/buildream/). TEMPLATES.md has TWO
-  copies of this item (line 553 — Bootstrap 5 category and line 1337 —
-  Construction category; mark BOTH `[x]` when done).
-- **Demo DOM analyzed:** https://preview.colorlib.com/theme/buildream/
-  (HTTP 200, ~54 KB rendered DOM, title "Buildream - Construction Company
-  Template"). Stylesheets: `css/style.css` (324 KB, extracted — Bootstrap 5.3
-  base + ftco theme) + flaticon / swiper-bundle / glightbox / aos + Font
-  Awesome 7 CDN. Fonts: Google Fonts `<link>` — **Poppins** (300/400/700) +
-  **Prata** (Prata is loaded but NOT applied anywhere in the CSS — effectively
-  Poppins-only; recreate with a single Poppins `<link>`). jQuery-free modern
-  stack: Bootstrap collapse (mobile menu), swiper (testimonial carousel),
-  glightbox (project lightbox), AOS (fade-up scroll reveals), countup
-  (stat counters).
-- **Screenshot:** `buildream-free-template.jpg` (TEMPLATES.md lines 553 / 1337) — verified live in a browser (vision analysis): dark charcoal
-  navigation bar with amber-orange accents (active nav link, "Contact Us"
-  button, "Happy" word in the headline), thin dark top bar with contact info
-  and social icons, hero = full-width construction-site photo with heavy dark
-  overlay, centered white headline "WE WILL BE HAPPY TO TAKE CARE OF YOUR
-  WORK" with the word "HAPPY" in amber, a small rotated "SINCE 1982" stamp
-  badge above the headline, two centered CTAs (solid amber "Contact Us" +
-  ghost/outline "Request A Quote"), clean white content sections below,
-  slightly-rounded rectangular flat buttons, a circular-cropped worker photo
-  breaking up the about text block, amber small-caps labels above section
-  headings (e.g. "Welcome to Buildream").
-- **Visual design (from DOM + CSS tokens + rendered screenshot):** bold,
-  high-contrast construction corporate aesthetic — amber/orange brand
-  **`#ffa62b`** (subheadings, primary buttons, play button, popular badge,
-  newsletter band, hover states), dark charcoal **`#3d424a`** (navbar, dark
-  buttons, rotated about-badge, popular-badge text), footer **`#363b42`**,
-  light gray `#f8f9fa` (trust / testimonials bands), white content sections.
-  Poppins 300/400/700 throughout; section headings 54px weight 500 with a
-  16px amber uppercase kicker (`heading-section .subheading`). Buttons are
-  rectangular with slight rounding (`border-radius: 4px`), solid amber
-  (`#ffa62b` bg, `#3d424a` text) or dark (`#3d424a` bg, white text); hover
-  inverts to transparent bg + amber border + amber text. Hero is `100vh`
-  fixed-background image with dark overlay, centered text. Distinctive
-  elements: rotated `-90deg` dark counter badge ("38 Years of experienced")
-  anchored to the bottom-right of the about photo, `80px` amber circular
-  video play button, amber pill "Most Popular" badge on the featured pricing
-  card, dark `#3d424a` navbar. The demo brands itself "Buildream"; recreation
-  uses the NEW name **Mortar**.
+## Design Tokens
 
-## Design tokens (from css/style.css + live DOM)
+Extracted from the live preview stylesheet (style.css at
+preview.colorlib.com/theme/grunt/):
 
-| Token          | Value                                                                                                                                                                                                                                                                                               | Where                                                                                                                                                               |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Brand amber    | `#ffa62b`                                                                                                                                                                                                                                                                                           | `.heading-section .subheading` kicker, `.btn-primary` bg, `.video-play-btn` bg, `.popular-badge` bg, newsletter `bg-primary` band, `.btn-primary:hover` text/border |
-| Dark charcoal  | `#3d424a`                                                                                                                                                                                                                                                                                           | `.ftco-navbar-light` navbar bg, `.btn-darken` bg/border, `.counter-wrap` bg, `.btn-primary` text, `.popular-badge` text                                             |
-| Footer dark    | `#363b42`                                                                                                                                                                                                                                                                                           | `.ftco-footer` bg, footer text `rgba(255,255,255,0.7)`                                                                                                              |
-| Light band     | `#f8f9fa` (bg-light)                                                                                                                                                                                                                                                                                | trust-badges section, testimonials section                                                                                                                          |
-| Button dark    | `#3d424a` (btn-darken)                                                                                                                                                                                                                                                                              | "Request A Quote" hero ghost CTA, newsletter "Subscribe" button (btn-dark), pricing "Get Quote" hover states                                                        |
-| White button   | `#fff` border 2px                                                                                                                                                                                                                                                                                   | "Make An Appointment" button on the intro CTA band (over bg image)                                                                                                  |
-| Fonts          | **'Poppins', Arial, sans-serif** (300/400/700)                                                                                                                                                                                                                                                      | Google Fonts `<link>` in index.html; Prata loaded in source but unused — skip it                                                                                    |
-| Headings       | `.heading-section h2`: 54px, weight 500, line-height 1.4; kicker `.subheading`: 16px, weight 600, `#ffa62b`, margin-bottom 5px                                                                                                                                                                      | about / services / team / portfolio / pricing / blog / faq headings                                                                                                 |
-| Buttons        | radius 4px, `padding: 1rem 1.5rem`+ (btn-primary/btn-darken `p-4 py-3`), uppercase-ish letter-spaced variant in pricing cards (`.btn-primary` width 60% margin auto)                                                                                                                                | hero CTAs, "Make An Appointment", "Get Quote", "Subscribe", "Contact Us"                                                                                            |
-| Hero           | `height: 100vh; min-height: 100%`, `background-attachment: fixed`, cover, dark `.overlay`, centered `.slider-text`                                                                                                                                                                                  | `.hero-wrap`                                                                                                                                                        |
-| Counter badge  | `.counter-wrap`: absolute, `bottom: 107px; right: -107px`, bg `#3d424a`, padding 30px, `transform: rotate(-90deg)`                                                                                                                                                                                  | about photo badge "38 Years of experienced"                                                                                                                         |
-| Play button    | `.video-play-btn`: absolute center, 80×80px circle, bg `#ffa62b`, text `#3d424a`                                                                                                                                                                                                                    | video CTA section                                                                                                                                                   |
-| Popular badge  | `.popular-badge`: absolute `top: -12px; left: 50%; translateX(-50%)`, bg `#ffa62b`, text `#3d424a`, 12px weight 700 uppercase, `border-radius: 20px`                                                                                                                                                | featured pricing card                                                                                                                                               |
-| Pricing card   | `.block-7`: white bg, padding `40px 0`, shadow `0 24px 48px -13px rgba(0,0,0,0.05)`; `.price` with `<sup>$</sup>` + `.number`                                                                                                                                                                       | 4 pricing tiers                                                                                                                                                     |
-| Gallery tile   | `.gallery-wrap`: `height: 340px`, bg image, flex-end; search icon (glightbox) + `.desc` (category span + h2 link)                                                                                                                                                                                   | portfolio grid, `col-md-4` = 3 columns                                                                                                                              |
-| Staff card     | `.staff`: radius 4px, shadow `0 24px 48px -13px rgba(0,0,0,0.05)`; photo with social icon overlay + name h3 + role span                                                                                                                                                                             | team grid, `col-lg-3`                                                                                                                                               |
-| Section rhythm | `ftco-section` padding ~`7em 0` (`.ftco-section` default); `.ftco-no-pb` trust band; counters `6em 0`; newsletter `60px 0`; intro CTA `3em 0`                                                                                                                                                       | vertical rhythm                                                                                                                                                     |
-| Icons (source) | flaticon + Font Awesome 7 → lucide-react: engineer/helmet (counter badge), building / floor-plan / consult / construction (about mini services), service icons, fa-check/fa-xmark (pricing features), search (gallery), user/comment (blog meta), socials (top bar + staff + footer), chevron (FAQ) | per-section                                                                                                                                                         |
+### Colors
+
+| Token   | Value     | Usage                                 |
+| ------- | --------- | ------------------------------------- |
+| primary | `#5e72e4` | Brand blue-purple (headings, accents) |
+| accent  | `#f5365c` | Red CTA accent                        |
+| ink     | `#1a1a2e` | Dark text                             |
+| smoke   | `#7f7f7f` | Muted body text                       |
+| surface | `#ffffff` | White background                      |
+| mist    | `#f7f8fc` | Light section background              |
+
+### Fonts
+
+| Font | Family                 | Usage                      |
+| ---- | ---------------------- | -------------------------- |
+| Body | `'Roboto', sans-serif` | All text (300/400/500/700) |
+
+### Layout
+
+- Bootstrap-based grid, single-page scrolling
+- Hero: full-width background image with dark overlay + heading + CTA
+- Services: 3-column responsive grid (6 items)
+- About: 2-column (image + text with checklists)
+- Team: 2 members side-by-side with social links
+- Portfolio: 3 alternating project rows with testimonials
+- Testimonials: 2-column grid on light background
+- Gallery: 3-column photo grid with hover overlay
+- Contact: form + info sidebar
+- Footer: dark background with Component Dock link
 
 ## Requirements
 
-### Requirement: Dark top bar and navigation
+### Requirement: Navbar renders with site name and navigation links
 
-The system SHALL render a thin dark top bar with contact info and social
-icons, and a dark charcoal navbar with the brand wordmark and seven
-navigation links.
+The template SHALL display a sticky navigation bar with the site name "Mortar."
+and navigation links to all major sections.
 
-#### Scenario: Top bar
+#### Scenario: Navbar is visible on page load
 
-- **GIVEN** the Mortar page is rendered
 - **WHEN** the page loads
-- **THEN** a thin top bar SHALL show "Free Call: +1 234 456 78910" on the
-  left and "Email Adddress: buildream@info.com" (sic — source typo, keep or
-  fix) plus social icon links on the right
+- **THEN** the navbar is rendered with the logo "Mortar."
+- **AND** navigation links for Home, Services, About, Portfolio, Gallery, Contact are present
+- **AND** a dark mode toggle button is available
 
-#### Scenario: Navbar
+#### Scenario: Dark mode toggle works
 
-- **GIVEN** the page is rendered
-- **WHEN** the header is displayed
-- **THEN** the navbar SHALL have a dark charcoal `#3d424a` background with
-  the wordmark "Mortar" on the left
-- **AND** links Home, About, Services, Projects, Pricing, Blog, and Contact
-  SHALL appear on the right
-- **AND** hovering a link SHALL turn it brand amber `#ffa62b`
+- **WHEN** the user clicks the dark mode toggle
+- **THEN** the page theme switches to dark mode
 
-#### Scenario: Mobile menu
+### Requirement: Hero section displays agency headline and CTA
 
-- **GIVEN** the header is rendered on a narrow viewport
-- **WHEN** the user presses the hamburger toggle
-- **THEN** a collapsible menu SHALL open showing the same seven links
-- **AND** pressing the toggle again SHALL close it
+The template SHALL display a hero section with a background image, heading text,
+subtext, and a call-to-action button.
 
-### Requirement: Hero with overlay, headline, and dual CTA
+#### Scenario: Hero renders on page load
 
-The system SHALL render a full-viewport hero with a background photo, dark
-overlay, a "Since 1982" stamp badge, a centered headline with an amber
-highlight word, and two CTA buttons.
-
-#### Scenario: Hero content
-
-- **GIVEN** the hero is displayed
 - **WHEN** the page loads
-- **THEN** the hero SHALL fill the viewport height with a fixed-attachment
-  background image and a dark overlay for legibility
-- **AND** a small "Since 1982" badge SHALL appear above the headline
-  (rotated stamp treatment in the source screenshot)
-- **AND** the headline "We Will Be Happy To Take Care Of Your Work" SHALL
-  render centered in white with the word "Happy" highlighted in brand amber
-- **AND** a solid amber button "Contact us" and a dark ghost-style button
-  "Request A Quote" SHALL appear centered below, each with a right-arrow icon
+- **THEN** the hero section displays a heading containing "Creative"
+- **AND** a subtext paragraph is visible
+- **AND** a "Start a project" CTA button is present
 
-### Requirement: About section with rotated badge and mini services
+### Requirement: Services section shows 6 service cards
 
-The system SHALL render a two-column about section: a photo with a rotated
-"38 Years of experienced" badge on the left, and heading, copy, and a 2×2
-grid of four mini services on the right.
+The template SHALL display a services section with exactly 6 service items in a
+responsive grid.
 
-#### Scenario: About content
+#### Scenario: All services are rendered
 
-- **GIVEN** the about section is displayed
-- **WHEN** the page loads
-- **THEN** the left column SHALL show the about photo with a dark charcoal
-  badge rotated `-90deg` at its bottom-right reading "38" over "Years of
-  experienced"
-- **AND** the right column SHALL show the amber kicker "Welcome to Mortar",
-  the heading "Quality and Affordable Constructor", a paragraph, and the
-  sub-heading "We Can Help You"
-- **AND** a 2×2 grid SHALL list Construction, Architecture, Consulting, and
-  Mechanical, each with an icon, a title, and a short blurb
-- **AND** on a narrow viewport the columns SHALL stack
+- **WHEN** the services section is in view
+- **THEN** 6 service cards are visible
+- **AND** each card has a title, description, and "Learn more" link
 
-### Requirement: Trust badges band
+### Requirement: About section shows agency description
 
-The system SHALL render a light-gray band with the kicker "Trusted By" and
-six client name logos.
+The template SHALL display an about section with an image and descriptive text.
 
-#### Scenario: Trust band content
+#### Scenario: About section renders correctly
 
-- **GIVEN** the trust band is displayed
-- **WHEN** the page loads
-- **THEN** a light-gray (`#f8f9fa`) band SHALL show the heading "Companies
-  We've Worked With"
-- **AND** six client names SHALL appear as text logos: ABC Corp, City Dev,
-  State Bank, Metro Health, Grand Hotels, and Industrial Co
+- **WHEN** the about section is in view
+- **THEN** an image and heading "About us" are visible
+- **AND** a checklist of services is displayed
+- **AND** a video link is present
 
-### Requirement: Intro CTA band
+### Requirement: Team section shows member profiles
 
-The system SHALL render a background-image band with an overlay, a kicker,
-a heading, and a white "Make An Appointment" button.
+The template SHALL display a team section with 2 member profiles including
+photos, roles, bios, and social links.
 
-#### Scenario: Intro CTA content
+#### Scenario: Team members are displayed
 
-- **GIVEN** the intro CTA band is displayed
-- **WHEN** the page loads
-- **THEN** the band SHALL show the kicker "You May Contact Us For
-  Construction & Renovation Work" and the heading "We Are Great Construction
-  Company"
-- **AND** a button labeled "Make An Appointment" SHALL appear with a white
-  fill and 2px white border
+- **WHEN** the team section is in view
+- **THEN** 2 team member cards are visible
+- **AND** each shows name, role, bio, and social media links
 
-### Requirement: Services section
+### Requirement: Portfolio showcases project work
 
-The system SHALL render a services section with a kicker, a heading, and
-three service cards, each with an icon, a title, a blurb, and a "Learn More"
-link.
+The template SHALL display a portfolio section with 3 project showcases in
+alternating layouts, each with an image, description, and testimonial.
 
-#### Scenario: Services content
+#### Scenario: Portfolio projects render
 
-- **GIVEN** the services section is displayed
-- **WHEN** the page loads
-- **THEN** the kicker "What We Do" and the heading "Services" SHALL appear
-- **AND** three cards SHALL be shown side by side: Construction Services,
-  Infrastructure Services, and Architecture Services
-- **AND** each card SHALL show an icon, the service title, a paragraph, and
-  a "Learn More" link
-- **AND** on a narrow viewport the cards SHALL stack
+- **WHEN** the portfolio section is in view
+- **THEN** 3 project rows are visible
+- **AND** each has a title, description, image, and testimonial quote
 
-### Requirement: Video CTA with play button
+### Requirement: Testimonials section displays client quotes
 
-The system SHALL render a video CTA section with an amber circular play
-button, a heading, a paragraph, four check-marked differentiators, and a
-"Learn More About Us" button.
+The template SHALL display a testimonials section with 4 client testimonial
+cards on a light background.
 
-#### Scenario: Video CTA content
+#### Scenario: Testimonials render correctly
 
-- **GIVEN** the video CTA section is displayed
-- **WHEN** the page loads
-- **THEN** a play control labeled "Watch Our Story" SHALL appear as an 80px
-  amber circle with a play icon
-- **AND** the heading "Building Dreams Into Reality Since 1982" SHALL render
-  beside it
-- **AND** a paragraph and four bullet points SHALL list: Award-winning
-  construction projects, Sustainable building practices, On-time, on-budget
-  delivery, and Safety-first approach
-- **AND** a "Learn More About Us" button SHALL appear
+- **WHEN** the testimonials section is in view
+- **THEN** 4 testimonial cards are visible
+- **AND** each shows a quote, client name, and role
 
-### Requirement: Stats counters
+### Requirement: Gallery shows photo grid
 
-The system SHALL render a background-image band with four animated stat
-counters.
+The template SHALL display a gallery section with a 6-item photo grid that
+supports lightbox preview on click.
 
-#### Scenario: Counter content
+#### Scenario: Gallery images render
 
-- **GIVEN** the counters band is displayed
-- **WHEN** the page loads
-- **THEN** four counters SHALL show: 3000 Completed Projects, 320 Happy
-  Clients, 1000 Cup Of Coffee, and 587 Engineers & Staffs
+- **WHEN** the gallery section is in view
+- **THEN** 6 gallery images are visible
+- **AND** clicking an image opens a lightbox dialog
+- **AND** the lightbox can be closed via close button or backdrop click
 
-### Requirement: Team section
+### Requirement: Contact form is functional
 
-The system SHALL render a team section with a kicker, a heading, and four
-engineer cards with photo, social icons, name, and role.
+The template SHALL display a contact form with name, email, subject, and
+message fields, plus a submit button.
 
-#### Scenario: Team content
+#### Scenario: Contact form renders and submits
 
-- **GIVEN** the team section is displayed
-- **WHEN** the page loads
-- **THEN** the kicker "Team & Staff" and the heading "Qualified Engineers"
-  SHALL appear
-- **AND** four cards SHALL show a photo with a social-icon overlay (Twitter,
-  Facebook, Instagram, Google+), the engineer's name, and the role "Senior
-  Engineer": Lionel Wurtchbach, Mike Nintido, Bea Alam, and John Buffer
+- **WHEN** the contact section is in view
+- **THEN** all form fields (name, email, subject, message) are present
+- **AND** submitting the form clears all fields
 
-### Requirement: Portfolio gallery
+### Requirement: Footer links to Component Dock
 
-The system SHALL render a portfolio section with a kicker, a heading, and a
-six-tile gallery grid (3 columns), each tile with a search icon, a category
-label, and a project title.
+The template footer SHALL include a link to https://www.componentdock.com/
+branded as "Component Dock".
 
-#### Scenario: Gallery content
+#### Scenario: Footer renders with Component Dock link
 
-- **GIVEN** the portfolio section is displayed
-- **WHEN** the page loads
-- **THEN** the kicker "Portfolio" and the heading "Projects" SHALL appear
-- **AND** six tiles SHALL be shown in a 3-column grid, each with a
-  background image, a centered search/lightbox icon, the category "Building",
-  and the title "High Tower Works"
-
-### Requirement: Pricing section
-
-The system SHALL render a pricing section with a kicker, a heading, and four
-tiers — Basic, Standard, Premium (featured with an amber "Most Popular"
-badge), and Enterprise — each with a price, a tagline, a feature list with
-check/cross icons, and a "Get Quote" button.
-
-#### Scenario: Pricing content
-
-- **GIVEN** the pricing section is displayed
-- **WHEN** the page loads
-- **THEN** the kicker "Our Pricing" and the heading "Pricing & Packages"
-  SHALL appear
-- **AND** four cards SHALL show: Basic `$49K` (Small renovations), Standard
-  `$79K` (Home additions), Premium `$109K` (Full home builds, with a
-  "Most Popular" amber pill badge), and Enterprise `$149K+` (Commercial
-  projects)
-- **AND** each card SHALL list six features (Basic: 4 included / 2 excluded; Standard: 5 included / 1 excluded; Premium and Enterprise: all included) with amber check icons for included features and muted cross icons for excluded ones
-- **AND** each card SHALL have a full-width CTA button: "Get Quote" on Basic, Standard, and Premium, "Contact Us" on Enterprise (matches the source DOM)
-
-### Requirement: Testimonials carousel
-
-The system SHALL render a light-gray testimonial section with a kicker, a
-heading, and a carousel of client quotes.
-
-#### Scenario: Testimonial content
-
-- **GIVEN** the testimonials section is displayed
-- **WHEN** the page loads
-- **THEN** the kicker "Testimonial" and the heading "Happy Clients" SHALL
-  appear
-- **AND** a carousel SHALL cycle between quotes by Roger Scott, Marketing
-  Manager, each with a quote paragraph and an avatar
-- **AND** carousel controls SHALL advance between slides
-
-### Requirement: Blog section
-
-The system SHALL render a blog section with a kicker, a heading, and three
-post cards, each with an image carrying a date badge, a meta line, a title,
-and an excerpt.
-
-#### Scenario: Blog content
-
-- **GIVEN** the blog section is displayed
-- **WHEN** the page loads
-- **THEN** the kicker "Our Blog" and the heading "Recent Blog" SHALL appear
-- **AND** three cards SHALL show an image with a "16 Jan" date badge, a meta
-  line ("Admin · 3 Comments"), the title "Biggest Construction in New York,
-  USA", and an excerpt
-
-### Requirement: FAQ accordion
-
-The system SHALL render an FAQ section with a kicker, a heading, and an
-accordion of construction questions.
-
-#### Scenario: FAQ content
-
-- **GIVEN** the FAQ section is displayed
-- **WHEN** the page loads
-- **THEN** the kicker "Frequently Ask Question" and the heading "You Want To
-  Ask Something From Us?" SHALL appear
-- **AND** an accordion SHALL list "What are the problems in construction?"
-  and "What is best practice in construction?"
-- **AND** clicking a question SHALL expand its answer and collapse the
-  others (aria-expanded on the toggle)
-
-### Requirement: Newsletter band
-
-The system SHALL render an amber newsletter band with a heading, an email
-input, and a subscribe button.
-
-#### Scenario: Newsletter content
-
-- **GIVEN** the newsletter band is displayed
-- **WHEN** the page loads
-- **THEN** the band SHALL have the brand amber `#ffa62b` background with the
-  heading "Subscribe to Our Newsletter" and the subtext "Get the latest
-  updates on projects, industry news, and exclusive offers."
-- **AND** an email input and a dark "Subscribe" button SHALL be shown
-
-### Requirement: Footer
-
-The system SHALL render a dark footer with brand blurb, a Services links
-column, a Quick Links column, a "Have a Questions?" contact column, and a
-copyright bar linking Component Dock.
-
-#### Scenario: Footer content
-
-- **GIVEN** the page is rendered
-- **WHEN** the footer is displayed
-- **THEN** it SHALL have a `#363b42` background with the wordmark "Mortar"
-  and a blurb paragraph
-- **AND** a Services column SHALL list three recent post links
-- **AND** a Quick Links column SHALL list Home, About, Services, Project,
-  Pricing, and Contact Us
-- **AND** a "Have a Questions?" column SHALL show the address (203 Fake St.
-  Mountain View, San Francisco, California, USA), phone (+2 392 3929 210),
-  and email (info@yourdomain.com)
-- **AND** the bottom bar SHALL show the copyright line with the current
-  year, a neutral design credit, and a link to Component Dock (brand
-  attribution, per the repo convention that app code never names the source
-  design studio)
-
-### Requirement: Page composition
-
-The system SHALL compose all sections in a single page with a main landmark
-and a document title.
-
-#### Scenario: Full page render
-
-- **GIVEN** the Mortar app is rendered
-- **WHEN** the page loads
-- **THEN** the page SHALL compose the top bar, navbar, hero, about, trust
-  badges, intro CTA, services, video CTA, counters, team, portfolio,
-  pricing, testimonials, blog, FAQ, newsletter, and footer in order
-- **AND** the document title SHALL be "Mortar — Construction Company
-  Template"
-
-## Verification checklist
-
-- [ ] `npm run spec:validate` passes for this spec
-- [ ] App typechecks (`npm run typecheck -w @free-react-templates/mortar`)
-- [ ] Tests at 100% coverage (lines/functions/branches/statements) for the app
-- [ ] Build succeeds (`npm run build -w @free-react-templates/mortar`)
-- [ ] Section order matches the reference 1:1 (top bar → navbar → hero → about → trust → intro CTA → services → video CTA → counters → team → portfolio → pricing → testimonials → blog → FAQ → newsletter → footer)
-- [ ] Design tokens in `@theme` (brand amber #ffa62b, dark charcoal #3d424a, footer #363b42, light #f8f9fa, Poppins 300/400/700)
-- [ ] Top bar: contact info left, email + social icons right
-- [ ] Navbar: `#3d424a` bg, "Mortar" wordmark, 7 links, hover `#ffa62b`, mobile hamburger collapse
-- [ ] Hero: 100vh fixed bg image + dark overlay, "Since 1982" badge, centered H1 with amber "Happy", solid amber "Contact us" + dark "Request A Quote" CTAs with arrow icons
-- [ ] About: photo + rotated `-90deg` `#3d424a` "38 Years of experienced" badge, kicker + "Quality and Affordable Constructor" heading, "We Can Help You" 2×2 mini-services (Construction / Architecture / Consulting / Mechanical)
-- [ ] Trust band: bg-light, "Companies We've Worked With", 6 text client logos
-- [ ] Intro CTA: bg image + overlay, kicker + "We Are Great Construction Company", white "Make An Appointment" button
-- [ ] Services: "What We Do" / "Services", 3 cards (Construction / Infrastructure / Architecture Services) with icon + blurb + "Learn More"
-- [ ] Video CTA: 80px amber circular play button, "Building Dreams Into Reality Since 1982", 4 check bullets, "Learn More About Us"
-- [ ] Counters: bg-image band, 3000 / 320 / 1000 / 587 with labels
-- [ ] Team: "Team & Staff" / "Qualified Engineers", 4 staff cards (photo + social overlay + name + "Senior Engineer")
-- [ ] Portfolio: "Portfolio" / "Projects", 6 gallery tiles (3 cols, 340px) with search icon + "Building" + "High Tower Works"
-- [ ] Pricing: "Our Pricing" / "Pricing & Packages", 4 cards (Basic $49K / Standard $79K / Premium $109K featured + "Most Popular" pill / Enterprise $149K+), check/cross feature lists, "Get Quote" buttons
-- [ ] Testimonials: bg-light, "Testimonial" / "Happy Clients", carousel of Roger Scott quotes with avatar + controls
-- [ ] Blog: "Our Blog" / "Recent Blog", 3 cards (image + "16 Jan" date badge + Admin/3 Comments meta + title + excerpt)
-- [ ] FAQ: "Frequently Ask Question" / "You Want To Ask Something From Us?", accordion with 2 questions, aria-expanded
-- [ ] Newsletter: `#ffa62b` band, heading + subtext, email input + dark Subscribe button
-- [ ] Footer: `#363b42`, wordmark + blurb, Services links, Quick Links, "Have a Questions?" contact info, copyright + Component Dock link
-- [ ] Responsive: all grids stack, mobile menu works, hero text scales
+- **WHEN** the footer is visible
+- **THEN** a link to https://www.componentdock.com/ is present
+- **AND** the link text contains "Component Dock"
+- **AND** a copyright notice is displayed

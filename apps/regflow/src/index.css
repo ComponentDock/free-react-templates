@@ -1,0 +1,135 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette from the original registration form. */
+  --color-card: #39459b;
+  --color-card-border: #0d99d7;
+  --color-label: #00ade6;
+  --color-focus: #ffffff;
+  --color-btn-hover: #2098d1;
+  --color-text: #ffffff;
+
+  --font-family-heading: 'Montserrat', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Floating-label field animations */
+.field-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.field-group input,
+.field-group textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-label);
+  color: var(--color-text);
+  font-family: var(--font-family-heading);
+  font-size: 0.875rem;
+  padding: 0.625rem 0;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.field-group input:focus,
+.field-group input:valid,
+.field-group textarea:focus,
+.field-group textarea:valid {
+  border-bottom-color: var(--color-focus);
+}
+
+.field-group label {
+  position: absolute;
+  top: 0.625rem;
+  left: 0;
+  color: var(--color-label);
+  font-family: var(--font-family-heading);
+  font-size: 0.875rem;
+  pointer-events: none;
+  transition:
+    transform 0.3s,
+    font-size 0.3s;
+  transform-origin: left;
+}
+
+.field-group input:focus ~ label,
+.field-group input:valid ~ label,
+.field-group textarea:focus ~ label,
+.field-group textarea:valid ~ label {
+  transform: translateY(-1.25rem) scale(0.8);
+  color: var(--color-focus);
+}
+
+.field-group .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-focus);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.field-group input:focus ~ .underline,
+.field-group textarea:focus ~ .underline {
+  transform: scaleX(1);
+}
+
+/* Submit button hover fill animation */
+.submit-btn {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color-focus);
+  background: transparent;
+  color: var(--color-focus);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.submit-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-btn-hover);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+  z-index: 0;
+}
+
+.submit-btn:hover::before {
+  transform: scaleX(1);
+}
+
+.submit-btn:hover {
+  color: var(--color-text);
+}
+
+.submit-btn > * {
+  position: relative;
+  z-index: 1;
+}
+
+.submit-btn:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+.arrow-icon {
+  transition: transform 0.3s;
+}

@@ -3,25 +3,33 @@ import { render, screen } from '@testing-library/react'
 import { App } from './App'
 
 describe('App', () => {
-  it('sets the document title', () => {
+  it('composes the navbar, all sections, and footer with the correct landmarks and title', () => {
     render(<App />)
-    expect(document.title).toBe('Counsel — Law Firm Template')
-  })
 
-  it('composes every section in the main landmark', () => {
-    render(<App />)
+    expect(document.title).toBe('Counsel — Lawyer & Legal Firm Template')
+
     expect(screen.getByRole('banner')).toBeInTheDocument()
-    expect(screen.getByRole('main')).toBeInTheDocument()
-    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
+    expect(screen.getByRole('navigation', { name: 'Main navigation' })).toBeInTheDocument()
+
+    const main = screen.getByRole('main')
+    expect(main).toBeInTheDocument()
+
+    const heading = screen.getByRole('heading', { level: 1 })
+    expect(heading.textContent).toMatch(/Experience \. Innovation \. Excellence/)
 
     expect(
-      screen.getByRole('heading', { name: /Finest And Strongest Law Firm/i }),
+      screen.getAllByRole('heading', { level: 2, name: 'Practice Areas' }).length,
+    ).toBeGreaterThanOrEqual(1)
+    expect(
+      screen.getByRole('heading', { level: 2, name: 'Our Legal Attorneys' }),
     ).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /Why We Are/i })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /our services/i })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /Recent Case Study/i })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /Meet Our Attorneys/i })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /Testimonial/i })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /Latest From Blog/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 2, name: 'Free Consultation' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 2, name: 'Happy Clients' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 2, name: 'Recent Blog' })).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { level: 2, name: 'Subscribe to our Newsletter' }),
+    ).toBeInTheDocument()
+
+    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
   })
 })

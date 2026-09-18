@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Homestead brand palette — design tokens:
+     brand teal #12c7b8 (buttons, accents, hero detail panels),
+     dark navy #081624 (header bg, dark sections),
+     body text #73778e (muted gray-blue),
+     light bg #f2f3f4, white #fff, divider #e0e1e8,
+     subtle text #83869b. */
+  --color-brand: #12c7b8;
+  --color-navy: #081624;
+  --color-body: #73778e;
+  --color-light-bg: #f2f3f4;
+  --color-divider: #e0e1e8;
+  --color-subtle: #83869b;
+
+  --color-primary-50: #e6faf8;
+  --color-primary-100: #b3f0eb;
+  --color-primary-200: #80e6de;
+  --color-primary-300: #4ddcd1;
+  --color-primary-400: #26d4c8;
+  --color-primary-500: #12c7b8;
+  --color-primary-600: #0fb5a8;
+  --color-primary-700: #0c9d92;
+  --color-primary-800: #09857c;
+  --color-primary-900: #065f58;
+
+  --font-sans: 'Sarabun', ui-sans-serif, system-ui, sans-serif;
+}

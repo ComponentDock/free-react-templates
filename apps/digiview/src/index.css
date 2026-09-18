@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #31de79;
+  --color-brand-light: #5de596;
+  --color-brand-dark: #28b562;
+  --color-dark: #232931;
+  --color-darker: #000000;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+}

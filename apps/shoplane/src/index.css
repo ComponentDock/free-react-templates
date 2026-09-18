@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ShopLane brand palette — coral red #fe4c50 from the Coloshop design */
+  --color-coral-50: #fef2f2;
+  --color-coral-100: #fde8e8;
+  --color-coral-200: #fbd0d0;
+  --color-coral-300: #f7a5a5;
+  --color-coral-400: #fe7c7f;
+  --color-coral-500: #fe4c50;
+  --color-coral-600: #e02e33;
+  --color-coral-700: #bd1f25;
+  --color-coral-800: #9c1c20;
+  --color-coral-900: #821c1f;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

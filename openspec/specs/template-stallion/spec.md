@@ -1,229 +1,114 @@
-# Template: Stallion (Horse Club Landing)
+# Template: Stallion (Industrial / Construction)
 
 ## Purpose
 
-Stallion is a single-page horse club & riding consultancy website template in
-the free-react-templates monorepo. It is an original React recreation of the
-ColorLib free "Horse Club" website template design (see TEMPLATES.md), built
-under a different name with the monorepo stack: Vite + React 19 + Tailwind
-CSS 4 + TypeScript.
+Recreation of ColorLib "Durg" — an industrial/construction company template.
 
-## Design reference (replication findings)
+- **Source slug:** `durg`
+- **Preview URL:** https://preview.colorlib.com/theme/durg/
+- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/durg-free-template.jpg
+- **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript (strict)
+- **New name:** `stallion` (apps/stallion, @free-react-templates/stallion)
 
-- **Original:** ColorLib "Horse Club" — horse club / riding consultancy
-  (source: https://colorlib.com/wp/template/horse-club/).
-- **Demo DOM analyzed:** https://preview.colorlib.com/theme/horseclub/
-  (HTTP 200; note the live-preview slug is `horseclub`, NOT `horse-club`).
-  Full rendered DOM + `css/main.css` (51.9KB) extracted. The TEMPLATES.md
-  screenshot (`horseclub-free-template.jpg`) is the visual reference; the
-  design below is reconstructed from the DOM structure and CSS tokens.
-- **Section order (1:1):** Top bar (email + phone) → Navbar (Home, About,
-  Service, Training, Events, Pricing, Blog, Contact) → Hero (full-screen
-  photo + dark overlay, "Introducing Horse Club" kicker, "Inter relation
-  Between Horse & Rider" h1, Book Consultancy CTA) → About-video (video
-  thumbnail + play button, "Brand new app to blow your mind" kicker,
-  "We've made a life that will change you" h1, Get Started Now) → Features
-  (6 tiles: Expert Technicians, Professional Service, Great Support,
-  Technical Skills, Highly Recommended, Positive Reviews) → Home-about
-  (image + heading + text + Get Started Now) → Pricing (Choose the best plan
-  that suits you: Basic £199, Economy £299, Premium £399, Enterprise £499,
-  each with circular badge, feature list, Purchase) → Booking (testimonial
-  carousel: Fannie Rowe, Hulda Sutton with star ratings + Appointment Form:
-  name, email, phone, date & time, message) → Latest blog (Latest News from
-  our Blog: 2 posts with image, title, excerpt, date) → Gallery (6 images
-  with hover overlay) → Footer (About Us, Contact Us + phones, Newsletter
-  with email input + subscribe, social icons, copyright).
-- **Design tokens extracted from `css/main.css`:**
-  - Primary **`#f6214b`** (pink-red) — `.primary-btn`, hover accents.
-  - Gradient **`linear-gradient(0deg, #f45622 0%, #f53e54 100%)`** — top-bar
-    accents, hero CTA, circular price badges, gallery hover overlay, booking
-    submit button.
-  - Font: **"Poppins", sans-serif** (Google Fonts).
-  - Light section background `#f9f9ff` (pricing); dark text `#222222`;
-    muted `#777777`; white cards with 5px radius.
-  - Hero overlay rgba(0,0,0,.7); booking overlay rgba(0,0,0,.8).
-  - Buttons: uppercase, white text; hover → transparent bg + white border.
-  - Testimonial stars: orange.
-- **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/stallion-<n>/<w>/<h>`); icons → lucide-react; video →
-  play-button thumbnail over a placeholder image (no external embed needed);
-  forms prevent default (no backend); no assets copied.
+## Design tokens (extracted from preview CSS)
 
-Stallion lives in `apps/stallion` and uses shared components from `packages/ui`
-(Button, ButtonLink, Badge, Card, cn).
+| Token | Value | Usage |
+|-------|-------|-------|
+| Font family | `Rubik` (Google Fonts), sans-serif | All text |
+| Brand / accent | `#ff5e13` (vivid orange) | CTAs, section labels, links, hover states |
+| Dark background | `#020c26` (near-black navy) | Header top bar, overlays, address section bg, slider overlay |
+| Body text | `#5c5c5c` | Paragraphs, descriptions |
+| Heading color | `#020c26` | All headings |
+| Gray background | `#f5f5f5` | Brand logo strip |
+| Light input bg | `#f9f9ff` | Forms, input fields |
+| Button shape | No border-radius (square) | `.boxed-btn`, `.boxed-btn2` |
+| Button hover | Transparent bg + orange border (`#ff5e13`) | `.boxed-btn:hover` |
+| Section padding | 120px top/bottom (60px mobile) | All major sections |
+| Overlay opacity | 0.851 (dark `#020c26`) | Hero slider, project bg |
 
-## Requirements
+## Page sections (in order)
 
-### Requirement: Top bar
+1. **Header** — Top bar (black bg, phone + email left, nav links right) + sticky main nav (white bg, logo left, menu center, search + "Get a quote" button right)
+2. **Hero slider** — Full-width carousel, dark overlay on background image, white content card with tagline, heading, and CTA button
+3. **Brand logos** — Gray bg, horizontal carousel of partner/client logos
+4. **Services** — 3-column card grid, image thumb + title + short description + "Read More" link
+5. **Projects** — Dark overlay background, right-aligned project carousel with category label + title, "More Projects" link
+6. **About** — Two-column: left image with video popup play button, right section title + paragraph + "Learn More" button; below: testimonial carousel (quote, stars, author) + review stat (350+)
+7. **CTA banner** — Full-width background image with overlay, heading + description + "Discuss now" button
+8. **Address/Location** — Black bg, 3-column icons (Location, Opening hours, Contact info)
+9. **Footer** — 4-column: logo + description + social links, Company links, Solutions links, Branch offices; copyright bar
 
-The system SHALL render a slim top bar above the navbar with an email address
-and a phone number.
+## Gherkin requirements
 
-#### Scenario: Top bar content
+### Feature: Stallion landing page
 
-- **GIVEN** the Stallion page is rendered
-- **WHEN** the page loads
-- **THEN** the top bar SHALL show an email address and a phone number
+```gherkin
+Feature: Stallion — Industrial company landing page
 
-### Requirement: Navigation bar
+  Background:
+    Given the user opens the Stallion template
 
-The system SHALL render a top navigation bar with the site name "Stallion",
-anchor links to the page's sections, and a dark-mode toggle button.
+  Scenario: Header displays correctly
+    Then a black top bar shows phone and email contact info
+    And a white sticky navigation bar shows logo, menu links, and "Get a quote" CTA
+    And the navigation bar becomes sticky on scroll with a shadow
 
-#### Scenario: Navbar content
+  Scenario: Hero slider works
+    Then a full-width slider displays with a background image and dark overlay
+    And a white content card shows a tagline, heading, and CTA button
+    And slider navigation dots appear on the right
 
-- **GIVEN** the Stallion page is rendered
-- **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Stallion" and links to Home, About, Services, Training, Events, Pricing, Blog, and Contact
-- **AND** the navbar SHALL show a dark-mode toggle button
+  Scenario: Brand logos carousel
+    Then a gray background section displays a horizontal carousel of partner logos
+    And the carousel auto-scrolls through logos
 
-#### Scenario: Dark mode toggle
+  Scenario: Services section
+    Then 3 service cards display in a row
+    And each card has an image, title, short description, and "Read More" link
+    And hovering "Read More" underlines in orange
 
-- **GIVEN** the page is rendered
-- **WHEN** the user presses the dark-mode toggle
-- **THEN** the `.dark` class SHALL be toggled on the document root element
-- **AND** the toggle SHALL reflect the current mode
+  Scenario: Projects section
+    Then a dark overlay background section displays project cards in a carousel
+    And each project card shows a category label and title
+    And a "More Projects" link is visible
 
-### Requirement: Hero section
+  Scenario: About section
+    Then an image with a video play button appears on the left
+    And a section title with "Learn More" button appears on the right
+    And a testimonial carousel shows star ratings, quote text, and author info
+    And a review stat (350+) is displayed
 
-The system SHALL render a full-viewport hero over a background image with a
-dark overlay, a kicker, a headline, and a "Book Consultancy" button.
+  Scenario: CTA banner
+    Then a full-width banner with background image and overlay displays
+    And a heading, description, and "Discuss now" button appear
 
-#### Scenario: Hero content
+  Scenario: Address section
+    Then a black background section shows 3 columns: Location, Hours, Contact
+    And each column has an icon, heading, description, and optional link
 
-- **GIVEN** the page is rendered
-- **WHEN** the hero is displayed
-- **THEN** it SHALL contain a kicker "Introducing Stallion" and a level-1 heading "Inter relation Between Horse & Rider"
-- **AND** it SHALL show a "Book Consultancy" button linking to the booking section
+  Scenario: Footer
+    Then a 4-column footer shows company info with social links
+    And Company, Solutions, and Branch offices columns display link lists
+    And a copyright bar appears at the bottom
+```
 
-### Requirement: About-video section
+## Verification checklist
 
-The system SHALL render an about section with a video thumbnail and play
-button on one side and a kicker, heading, paragraph, and "Get Started Now"
-button on the other.
-
-#### Scenario: About-video content
-
-- **GIVEN** the page is rendered
-- **WHEN** the about-video section is displayed
-- **THEN** it SHALL contain a kicker "Brand new app to blow your mind" and a level-1 heading "We've made a life that will change you"
-- **AND** it SHALL show a video thumbnail with a play button and a supporting paragraph
-- **AND** it SHALL show a "Get Started Now" button
-
-### Requirement: Features section
-
-The system SHALL render a features strip with six tiles, each with an icon, a
-title, and a short description.
-
-#### Scenario: Features content
-
-- **GIVEN** the page is rendered
-- **WHEN** the features section is displayed
-- **THEN** it SHALL show six tiles titled Expert Technicians, Professional Service, Great Support, Technical Skills, Highly Recommended, and Positive Reviews
-- **AND** each tile SHALL have an icon and a description
-
-### Requirement: Home-about section
-
-The system SHALL render an about section with an image on one side and a
-kicker, heading, paragraph, and "Get Started Now" button on the other.
-
-#### Scenario: Home-about content
-
-- **GIVEN** the page is rendered
-- **WHEN** the home-about section is displayed
-- **THEN** it SHALL contain a heading "We've made a life that will change you" and an image
-- **AND** it SHALL show a supporting paragraph and a "Get Started Now" button
-
-### Requirement: Pricing section
-
-The system SHALL render a pricing section with a heading and four plan cards,
-each with a circular number badge, plan name, feature list, price, and a
-"Purchase" button.
-
-#### Scenario: Pricing content
-
-- **GIVEN** the page is rendered
-- **WHEN** the pricing section is displayed
-- **THEN** it SHALL contain a heading "Choose the best plan that suits you"
-- **AND** it SHALL show four plans: Basic (£199.00), Economy (£299.00), Premium (£399.00), and Enterprise (£499.00)
-- **AND** each plan SHALL show a feature list and a "Purchase" button
-
-### Requirement: Booking section
-
-The system SHALL render a booking section over a background image with a dark
-overlay, containing a testimonial carousel and an appointment form; submitting
-the form SHALL NOT navigate away.
-
-#### Scenario: Testimonial content
-
-- **GIVEN** the page is rendered
-- **WHEN** the booking section is displayed
-- **THEN** it SHALL show customer testimonials with names (Fannie Rowe, Hulda Sutton) and five-star ratings
-
-#### Scenario: Appointment form content
-
-- **GIVEN** the booking section is displayed
-- **WHEN** the appointment form is shown
-- **THEN** it SHALL show labeled inputs for name, email, phone, and date & time, plus a message textarea
-- **AND** it SHALL show a submit button
-
-#### Scenario: Appointment form submit
-
-- **GIVEN** the appointment form is displayed
-- **WHEN** the user submits the form
-- **THEN** the form SHALL NOT navigate away (no backend)
-
-### Requirement: Blog section
-
-The system SHALL render a blog section with a heading and two post cards, each
-with an image, a title, an excerpt, and a date.
-
-#### Scenario: Blog content
-
-- **GIVEN** the page is rendered
-- **WHEN** the blog section is displayed
-- **THEN** it SHALL contain a heading "Latest News from our Blog"
-- **AND** it SHALL show two post cards, each with an image, a title, an excerpt, and a date
-
-### Requirement: Gallery section
-
-The system SHALL render a gallery of six images with a hover overlay on each.
-
-#### Scenario: Gallery content
-
-- **GIVEN** the page is rendered
-- **WHEN** the gallery section is displayed
-- **THEN** it SHALL show six gallery images
-- **AND** hovering an image SHALL reveal an overlay with a caption
-
-### Requirement: Footer
-
-The system SHALL render a footer with About Us and Contact Us widgets, a
-Newsletter widget with an email input and subscribe button, social links, and
-a copyright line; submitting the newsletter SHALL NOT navigate away.
-
-#### Scenario: Footer content
-
-- **GIVEN** the page is rendered
-- **WHEN** the footer is displayed
-- **THEN** it SHALL show an "About Us" blurb and a "Contact Us" widget with two phone numbers
-- **AND** it SHALL show a "Newsletter" widget with an email input and a subscribe button
-- **AND** it SHALL show social links (GitHub, X, LinkedIn) and a copyright line
-
-#### Scenario: Newsletter submit
-
-- **GIVEN** the newsletter form is displayed
-- **WHEN** the user submits the form
-- **THEN** the form SHALL NOT navigate away (no backend)
-
-### Requirement: Page composition
-
-The system SHALL compose all sections in a single page with a main landmark and
-a document title.
-
-#### Scenario: Full page render
-
-- **GIVEN** the Stallion app is rendered
-- **WHEN** the page loads
-- **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Stallion — Horse Club Template"
+- [ ] All 9 sections present in correct order
+- [ ] Rubik font loaded via Google Fonts
+- [ ] Brand color #ff5e13 used for CTAs, labels, hover states
+- [ ] Dark overlay #020c26 on hero and project sections
+- [ ] Button shapes are square (no border-radius)
+- [ ] Hero slider has white content card on dark background
+- [ ] Brand logos section has gray #f5f5f5 background
+- [ ] Services: 3-column grid with images
+- [ ] Projects: dark overlay with carousel
+- [ ] About: image + video popup left, text + CTA right, testimonial carousel below
+- [ ] CTA banner: background image with dark overlay
+- [ ] Address section: black bg, 3 columns with icons
+- [ ] Footer: 4 columns + copyright
+- [ ] Sticky header with shadow on scroll
+- [ ] Responsive: single column on mobile, proper padding adjustments
+- [ ] No ColorLib references in app code (provenance in spec only)
+- [ ] Footer links to https://www.componentdock.com/
+- [ ] public/CNAME contains stallion.free.componentdock.com

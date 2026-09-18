@@ -26,7 +26,8 @@
     "jsdom": "latest",
     "tailwindcss": "latest",
     "typescript": "latest",
-    "vite": "latest"
+    "vite": "latest",
+    "@testing-library/user-event": "latest"
   },
   "homepage": "https://feast.free.componentdock.com"
 }

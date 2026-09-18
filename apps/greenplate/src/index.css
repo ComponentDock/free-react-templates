@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Greenplate brand palette — fresh organic green #82ae46,
+     dark green #6f9538, black #000000, light paper #f8f9fa. */
+  --color-brand: #82ae46;
+  --color-brand-dark: #6f9538;
+  --color-ink: #000000;
+  --color-paper: #f8f9fa;
+  --color-mist: #999999;
+  --color-body: #212529;
+
+  /* Primary scale — brand #82ae46 at 500 */
+  --color-primary-50: #f0f7e6;
+  --color-primary-100: #ddefc2;
+  --color-primary-200: #c1e39a;
+  --color-primary-300: #a3d66e;
+  --color-primary-400: #8bcf4b;
+  --color-primary-500: #82ae46;
+  --color-primary-600: #6f9538;
+  --color-primary-700: #5a7a2e;
+  --color-primary-800: #466024;
+  --color-primary-900: #34481c;
+
+  /* Fonts: Poppins (sans + body), Lora (serif accents) */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Lora', ui-serif, Georgia, serif;
+}
