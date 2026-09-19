@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #9f78ff;
+  --color-brand-hover: #8c6ae4;
+  --color-navy: #1d2547;
+  --color-text-dark: #222222;
+  --color-text-body: #333333;
+  --color-text-muted: #57667e;
+  --color-gray-bg: #f5f5f5;
+  --color-border: #dee2e6;
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+    color: var(--color-text-body);
+  }
+}

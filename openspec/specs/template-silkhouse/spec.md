@@ -9,138 +9,98 @@ Recreation of ColorLib **Shionhouse** template as a React 19 + Vite + Tailwind C
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/shionhouse-free-template.jpg
 - **Stack:** React 19, Vite, Tailwind CSS 4, TypeScript, packages/ui
 
-## Design Tokens
+## Requirements
 
-Extracted from preview CSS (`assets/css/style.css`) and DOM analysis.
+### Requirement: Navbar displays logo, navigation, social icons, search, and cart
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Brand primary | `#9F78FF` | Purple — CTAs, cart badge, accents |
-| Text dark | `#222` / `#333` | Headings, body |
-| Text muted | `#57667e` / `#646D77` | Subtitles, descriptions |
-| Background page | `#fff` | White base |
-| Background alt | `gray-bg` (light gray) | Categories section |
-| Border | `#dee2e6` | Subtle dividers |
-| Font heading | `"Cinzel", serif` | Logo, hero text |
-| Font body | `"Poppins", sans-serif` | All body text, nav, buttons |
-| Button radius | `0px` | Square buttons (border-btn style) |
-| Avatar radius | `50%` | Not applicable (fashion layout) |
-| Hero overlay | Semi-transparent dark | On slider background images |
+The navbar SHALL display the "SilkHouse" logo in Cinzel serif font, navigation links (Home, Shop, About, Blog, Contact), social media icons (Twitter, Facebook, Pinterest), a search icon, and a cart badge with count.
 
-### Section Backgrounds
+#### Scenario: Navbar renders all elements
 
-| Section | Background |
-|---------|------------|
-| Header/Navbar | `#fff` (white) |
-| Hero Slider | Full-width background images with dark overlay |
-| Categories | 4-column image grid with overlay text |
-| New Arrivals | `#fff` (white) |
-| Collection Promo | Background image with text overlay |
-| Popular Products | `#fff` (white) |
-| Features | `gray-bg` (light gray) |
-| Footer | Dark background (`#1D2547` / dark navy) |
+- **WHEN** the page is loaded
+- **THEN** the navbar displays the "SilkHouse" logo
+- **AND** navigation links: Home, Shop, About, Blog, Contact
+- **AND** social icons (Twitter, Facebook, Pinterest)
+- **AND** a search icon and cart badge
 
-## Page Structure (section order)
+### Requirement: Hero slider displays fashion imagery with auto-advance
 
-1. **Navbar** — logo "SilkHouse" (Cinzel serif) + nav (Home, Shop, About, Blog, Contact) + social icons (Twitter, Facebook, Pinterest) + search icon + cart badge (purple)
-2. **HeroSlider** — 3-slide carousel, each with full-width background image, dark overlay, animated headline "FASHION CHANGING ALWAYS" (Cinzel, white), "Shop Now" CTA (purple), dot navigation
-3. **Categories** — 4-column grid of category images with hover overlay text (e.g. sunglasses, watches, hoodies, fashion)
-4. **NewArrivals** — "New Arrival" heading, 8 product cards in 4-column grid (image + name + star rating + price)
-5. **CollectionPromo** — promotional section with background image, heading about collection
-6. **PopularProducts** — "Popular Items" heading, product cards with images, names, prices, "Shop Now" buttons
-7. **Features** — 4 delivery/feature items in row (Fast & Free Delivery, etc.) with icons
-8. **Footer** — dark navy background, 4 columns (Quick Links, Shop Category, Partners, Get in Touch), social links, copyright bar
+The hero slider SHALL display 3 slides with full-width background images, dark overlay, animated headline text "FASHION CHANGING ALWAYS" in Cinzel serif, a purple "Shop Now" CTA button, and dot navigation. The slider SHALL auto-advance after 5 seconds.
 
-## Gherkin Requirements
+#### Scenario: Hero slider displays slides
 
-### Navbar
-```gherkin
-Scenario: Navbar shows logo and navigation
-  Given the page is loaded
-  Then the navbar displays "SilkHouse" logo in Cinzel serif
-  And navigation links: Home, Shop, About, Blog, Contact
-  And social icons (Twitter, Facebook, Pinterest)
-  And a search icon and cart badge with count
-```
+- **WHEN** the page is loaded
+- **THEN** a full-width image slider shows 3 slides
+- **AND** each slide has a background image with dark overlay
+- **AND** each slide shows a headline in large serif text
+- **AND** a purple "Shop Now" button
+- **AND** dot navigation to switch slides
 
-### HeroSlider
-```gherkin
-Scenario: Hero slider displays fashion imagery
-  Given the page is loaded
-  Then a full-width image slider shows 3 slides
-  And each slide has a background fashion image with dark overlay
-  And each slide shows "FASHION CHANGING ALWAYS" in large serif text
-  And a purple "Shop Now" button
-  And dot navigation to switch slides
+#### Scenario: Slider auto-advances
 
-Scenario: Slider auto-advances
-  Given the page is loaded
-  Then the slider advances to the next slide after a few seconds
-```
+- **WHEN** the page is loaded and 5 seconds pass
+- **THEN** the slider advances to the next slide
 
-### Categories
-```gherkin
-Scenario: Categories grid shows 4 items
-  Given the page is loaded
-  Then 4 category cards display in a row
-  And each card has a background image with overlay text
-```
+### Requirement: Categories grid shows 4 items with hover overlay
 
-### NewArrivals
-```gherkin
-Scenario: New arrivals grid shows products
-  Given the page is loaded
-  Then the "New Arrival" section displays product cards
-  And each card has an image, product name, star rating, and price
-```
+The categories section SHALL display 4 category cards in a row, each with a background image and overlay text on hover.
 
-### CollectionPromo
-```gherkin
-Scenario: Collection promo section renders
-  Given the page is loaded
-  Then a promotional section shows a heading about the collection
-  And a background image with text overlay
-```
+#### Scenario: Categories grid renders
 
-### PopularProducts
-```gherkin
-Scenario: Popular products section renders
-  Given the page is loaded
-  Then the "Popular Items" section displays product cards
-  And each card has an image, name, price, and "Shop Now" button
-```
+- **WHEN** the page is loaded
+- **THEN** 4 category cards display in a row
+- **AND** each card has a background image with overlay text
 
-### Features
-```gherkin
-Scenario: Features section shows service items
-  Given the page is loaded
-  Then 4 feature items display in a row
-  And each has an icon, title (e.g. "Fast & Free Delivery"), and description
-```
+### Requirement: New arrivals displays product grid with ratings and prices
 
-### Footer
-```gherkin
-Scenario: Footer shows four columns on dark background
-  Given the page is loaded
-  Then the footer has a dark navy background
-  And 4 columns: Quick Links, Shop Category, Partners, Get in Touch
-  And social media links
-  And a copyright bar at the bottom
-  And links to https://www.componentdock.com/ as "Component Dock"
-```
+The new arrivals section SHALL display 8 product cards in a 4-column grid, each with an image, product name, star rating, and price.
 
-## Verification Checklist
+#### Scenario: New arrivals grid shows products
 
-- [ ] Navbar renders logo, nav links, social icons, search, cart badge
-- [ ] HeroSlider renders 3 slides with images, headings, CTAs, dots
-- [ ] Categories renders 4 image cards with overlay text
-- [ ] NewArrivals renders product grid with ratings and prices
-- [ ] CollectionPromo renders promotional section
-- [ ] PopularProducts renders product cards with buttons
-- [ ] Features renders 4 service items in a row
-- [ ] Footer renders 4 columns on dark background + Component Dock link
-- [ ] Brand color #9F78FF used for CTAs and accents
-- [ ] Cinzel serif for headings/logo, Poppins for body
-- [ ] Responsive at all breakpoints
-- [ ] No ColorLib references in app code
-- [ ] All sections match ColorLib Shionhouse order 1:1
+- **WHEN** the page is loaded
+- **THEN** the "New Arrival" section displays 8 product cards
+- **AND** each card has an image, product name, star rating, and price
+
+### Requirement: Collection promo renders promotional section
+
+The collection promo section SHALL display a promotional section with a background image, heading about the collection, and an "About Us" button.
+
+#### Scenario: Collection promo renders
+
+- **WHEN** the page is loaded
+- **THEN** a promotional section shows a heading about the collection
+- **AND** a background image with text overlay
+- **AND** an "About Us" button
+
+### Requirement: Popular products displays product cards with Shop Now buttons
+
+The popular products section SHALL display product cards with images, names, prices, and "Shop Now" buttons.
+
+#### Scenario: Popular products renders
+
+- **WHEN** the page is loaded
+- **THEN** the "Popular Items" section displays product cards
+- **AND** each card has an image, name, price, and "Shop Now" button
+
+### Requirement: Features section shows 4 service items
+
+The features section SHALL display 4 feature items in a row, each with an icon, title, and description.
+
+#### Scenario: Features renders 4 items
+
+- **WHEN** the page is loaded
+- **THEN** 4 feature items display in a row
+- **AND** each has an icon, title, and description
+
+### Requirement: Footer shows 4 columns on dark background with Component Dock link
+
+The footer SHALL have a dark navy background, 4 columns (Quick Links, Shop Category, Partners, Get in Touch), social media links, a copyright bar, and a link to https://www.componentdock.com/ branded as "Component Dock".
+
+#### Scenario: Footer renders all columns
+
+- **WHEN** the page is loaded
+- **THEN** the footer has a dark navy background
+- **AND** 4 columns: Quick Links, Shop Category, Partners, Get in Touch
+- **AND** social media links
+- **AND** a copyright bar at the bottom
+- **AND** a link to https://www.componentdock.com/ as "Component Dock"
