@@ -1586,7 +1586,7 @@
 - [x] **Liquorstore** — [colorlib](https://colorlib.com/wp/template/liquorstore/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/liquorstore-free-template.jpg) · [cellarly](https://cellarly.free.componentdock.com)
 [x] **Listashop** — [colorlib](https://colorlib.com/wp/template/listashop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listashop-free-template.jpg) · [catalogly](https://catalogly.free.componentdock.com)
 - [x] **Little Closet** — [colorlib](https://colorlib.com/wp/template/little-closet/) · [closet](https://closet.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/littlecloset-free-template.jpg)
-- [ ] **Locksmith** — [colorlib](https://colorlib.com/wp/template/locksmith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/locksmith-colorlib-template.jpg)
+- [~] **Locksmith** — [colorlib](https://colorlib.com/wp/template/locksmith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/locksmith-colorlib-template.jpg)
 - [x] **Makeupartist** — [colorlib](https://colorlib.com/wp/template/makeupartist/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/makeupartist-colorlib-template.jpg) · [gloss](https://gloss.free.componentdock.com)
 - [ ] **Malefashion** — [colorlib](https://colorlib.com/wp/template/malefashion/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/malefashion-free-template.jpg)
 - [x] **Minishop** — [colorlib](https://colorlib.com/wp/template/minishop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/minishop-free-template.jpg) · [sneakly](https://sneakly.free.componentdock.com)

@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* KeyForge brand palette — locksmith/security services
+     Gold accent #f0a500, dark navy #1a1a2e, body #555555. */
+  --color-brand: #f0a500;
+  --color-brand-dark: #d49400;
+
+  --color-ink: #1a1a2e;
+  --color-paper: #ffffff;
+  --color-slate: #f9f9f9;
+  --color-mist: #999999;
+  --color-body: #555555;
+
+  --color-primary-50: #fef9e7;
+  --color-primary-100: #fdf0c4;
+  --color-primary-200: #fbe18a;
+  --color-primary-300: #f9d150;
+  --color-primary-400: #f0a500;
+  --color-primary-500: #d49400;
+  --color-primary-600: #b88200;
+  --color-primary-700: #9c7000;
+  --color-primary-800: #805c00;
+  --color-primary-900: #604500;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Cinzel', ui-serif, Georgia, serif;
+}
