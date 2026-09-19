@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Closet brand palette — recreated from the ColorLib "Little Closet" design
+     (screenshot analysis): mint green #00b894 accents, black #000 headings,
+     body text #555555, muted #999999. */
+  --color-brand: #00b894;
+  --color-brand-dark: #00a381;
+
+  /* Ink — black headings and navbar. */
+  --color-ink: #000000;
+
+  /* Paper — white page background. */
+  --color-paper: #ffffff;
+
+  /* Slate — light section background. */
+  --color-slate: #f8f8f8;
+
+  /* Mist — muted text. */
+  --color-mist: #999999;
+
+  /* Body — dark body text. */
+  --color-body: #555555;
+
+  /* Primary scale for shared ui Button/ButtonLink. */
+  --color-primary-50: #e6f9f4;
+  --color-primary-100: #ccf3e9;
+  --color-primary-200: #99e7d3;
+  --color-primary-300: #66dbbd;
+  --color-primary-400: #00b894;
+  --color-primary-500: #00a381;
+  --color-primary-600: #008f6f;
+  --color-primary-700: #007a5d;
+  --color-primary-800: #00664c;
+  --color-primary-900: #004d39;
+
+  /* Fonts: Playfair Display italic for headings, Roboto for body. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
