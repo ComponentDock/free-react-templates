@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-mulish: 'Mulish', sans-serif;
+  --color-brand: #e7ab3c;
+  --color-brand-light: #fac451;
+  --color-dark: #252525;
+  --color-dark-deep: #171717;
+  --color-body-bg: #ffffff;
+  --color-section-bg: #f5f5f5;
+  --color-border: #ebebeb;
+  --color-text-secondary: #b2b2b2;
+  --color-text-body: #636363;
+  --color-text-dark: #171717;
+  --color-sale: #e74c3c;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-mulish);
+    color: var(--color-text-body);
+  }
+}
