@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #fbb710;
+  --color-brand-hover: #131212;
+  --color-heading: #242424;
+  --color-body: #6d6d6d;
+  --color-dark: #131212;
+  --color-newsletter-bg: #3c3c3c;
+  --color-newsletter-text: #b3b1b1;
+  --color-footer-bg: #252525;
+  --color-footer-text: rgba(255, 255, 255, 0.4);
+  --color-search-bg: #f5f7fa;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family:
+      'Inter',
+      system-ui,
+      -apple-system,
+      sans-serif;
+  }
+}
