@@ -1582,7 +1582,7 @@
 - [x] **Furn** — [colorlib](https://colorlib.com/wp/template/furn/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/furn-free-template.jpg) · [cabinet](https://cabinet.free.componentdock.com)
 - [x] **Glamour** — [colorlib](https://colorlib.com/wp/template/glamour/) · [glamour](https://glamour.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/glamour-free-template.jpg)
 - [x] **Karl** — [colorlib](https://colorlib.com/wp/template/karl/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/karl-free-template.jpg) · [vignette](https://vignette.free.componentdock.com)
-- [~] **Karma** — [colorlib](https://colorlib.com/wp/template/karma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/karma-free-template.jpg) · [mercato](https://mercato.free.componentdock.com)
+- [x] **Karma** — [colorlib](https://colorlib.com/wp/template/karma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/karma-free-template.jpg) · [mercato](https://mercato.free.componentdock.com)
 - [ ] **Liquorstore** — [colorlib](https://colorlib.com/wp/template/liquorstore/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/liquorstore-free-template.jpg)
 - [ ] **Listashop** — [colorlib](https://colorlib.com/wp/template/listashop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listashop-free-template.jpg)
 - [ ] **Little Closet** — [colorlib](https://colorlib.com/wp/template/little-closet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/littlecloset-free-template.jpg)
