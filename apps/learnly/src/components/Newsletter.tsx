@@ -1,59 +1,50 @@
-import { FormEvent, useState } from 'react'
-import { Send } from 'lucide-react'
-import { newsletter } from '../data'
-
-const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+import { useState, type FormEvent } from 'react'
 
 export function Newsletter() {
-  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const [email, setEmail] = useState('')
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault()
-    const data = new FormData(event.currentTarget)
-    const email = String(data.get('email') ?? '').trim()
-    setStatus(EMAIL_PATTERN.test(email) ? 'success' : 'error')
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault()
+    setEmail('')
   }
 
   return (
-    <section id="contact" aria-label="Newsletter" className="bg-brand-deep py-20 text-white">
-      <div className="mx-auto max-w-4xl px-6 text-center">
-        <h2 className="text-3xl font-medium leading-snug lg:text-4xl">{newsletter.heading}</h2>
-        <p className="mt-4 leading-relaxed text-white/85">{newsletter.copy}</p>
-
-        <form
-          onSubmit={handleSubmit}
-          className="mx-auto mt-8 flex max-w-xl items-center gap-3"
-          noValidate
-        >
-          <label htmlFor="newsletter-email" className="sr-only">
-            {newsletter.placeholder}
-          </label>
-          <input
-            id="newsletter-email"
-            name="email"
-            type="text"
-            placeholder={newsletter.placeholder}
-            className="h-12 flex-1 rounded border border-white/30 bg-white px-5 text-ink placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-white"
-          />
-          <button
-            type="submit"
-            aria-label={newsletter.submitLabel}
-            className="flex h-11 w-11 shrink-0 items-center justify-center rounded bg-white text-brand transition-colors hover:bg-ink hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
-          >
-            <Send className="h-5 w-5" aria-hidden="true" />
-          </button>
-        </form>
-
-        {status === 'error' && (
-          <p role="alert" className="mt-4 font-medium text-white">
-            {newsletter.errorMessage}
-          </p>
-        )}
-        {status === 'success' && (
-          <p role="status" className="mt-4 font-medium text-white">
-            {newsletter.successMessage}
-          </p>
-        )}
+    <section className="relative py-16 md:py-24">
+      <img
+        src="https://picsum.photos/seed/learnly-newsletter/1600/400"
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover"
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 bg-brand/90" />
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center gap-8 md:flex-row">
+          <div className="md:w-1/2">
+            <h2 className="mb-3 text-3xl font-bold text-white">Subscribe to us!</h2>
+            <p className="text-white/80">
+              Stay updated with the latest courses, campus news, and learning resources delivered
+              straight to your inbox.
+            </p>
+          </div>
+          <div className="md:w-1/2">
+            <form onSubmit={handleSubmit} className="flex gap-2">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email"
+                className="flex-1 rounded-none border-0 bg-white px-4 py-3 text-ink placeholder:text-mist"
+                required
+              />
+              <button
+                type="submit"
+                className="rounded-none bg-ink px-6 py-3 font-semibold text-white transition-colors hover:bg-ink/80"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   )

@@ -1,74 +1,115 @@
 import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
-import { ButtonLink } from '@free-react-templates/ui'
-import { navLinks } from '../data'
+import { GraduationCap, Menu, X } from 'lucide-react'
+
+const NAV_LINKS = ['Home', 'About Us', 'Admissions', 'Courses', 'Contact']
+
+function FacebookIcon() {
+  return (
+    <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+    </svg>
+  )
+}
+
+function TwitterIcon() {
+  return (
+    <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+    </svg>
+  )
+}
+
+function LinkedinIcon() {
+  return (
+    <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+    </svg>
+  )
+}
 
 export function Navbar() {
-  const [open, setOpen] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <nav
-      aria-label="Primary"
-      className="absolute inset-x-0 top-24 z-30 px-6 lg:top-[95px] lg:px-12"
-    >
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6">
-        <button
-          type="button"
-          aria-expanded={open}
-          aria-label="Menu"
-          onClick={() => setOpen((current) => !current)}
-          className="flex items-center gap-2 border border-white/40 px-4 py-2 text-sm font-medium uppercase tracking-wide text-white lg:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
-        >
-          {open ? (
-            <X className="h-4 w-4" aria-hidden="true" />
-          ) : (
-            <Menu className="h-4 w-4" aria-hidden="true" />
-          )}
-          Menu
-        </button>
+    <header className="relative z-50">
+      <nav className="bg-white shadow-sm" aria-label="Main navigation">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+          {/* Logo */}
+          <a href="#" className="flex items-center gap-2 font-bold text-ink">
+            <GraduationCap className="h-7 w-7 text-brand" aria-hidden="true" />
+            <span className="text-2xl">Learnly</span>
+          </a>
 
-        <ul className="hidden items-center lg:flex">
-          {navLinks.map((link) => (
-            <li key={link.label}>
-              <a
-                href={link.href}
-                className={`block px-6 py-5 text-[15px] font-medium text-white transition-colors hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white ${
-                  link.label === 'Home' ? 'text-brand' : ''
-                }`}
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-
-        <ButtonLink
-          href="#contact"
-          className="hidden h-auto rounded-none bg-brand-dark px-10 py-6 text-[13px] font-bold uppercase tracking-[2px] hover:bg-brand lg:block"
-        >
-          Get Certificate
-        </ButtonLink>
-      </div>
-
-      {open && (
-        <div className="mt-3 bg-white shadow-lg lg:hidden">
-          <ul>
-            {navLinks.map((link) => (
-              <li key={link.label}>
+          {/* Desktop nav links */}
+          <ul className="hidden items-center gap-8 md:flex">
+            {NAV_LINKS.map((link) => (
+              <li key={link}>
                 <a
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className={`block border-b border-edge/50 px-6 py-3 text-[15px] font-medium text-ink transition-colors hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand ${
-                    link.label === 'Home' ? 'text-brand' : ''
-                  }`}
+                  href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
+                  className="text-sm font-medium text-mist transition-colors hover:text-brand"
                 >
-                  {link.label}
+                  {link}
                 </a>
               </li>
             ))}
           </ul>
+
+          {/* Social icons + mobile toggle */}
+          <div className="flex items-center gap-3">
+            <div className="hidden items-center gap-3 md:flex">
+              <a
+                href="#"
+                className="text-mist transition-colors hover:text-brand"
+                aria-label="Facebook"
+              >
+                <FacebookIcon />
+              </a>
+              <a
+                href="#"
+                className="text-mist transition-colors hover:text-brand"
+                aria-label="Twitter"
+              >
+                <TwitterIcon />
+              </a>
+              <a
+                href="#"
+                className="text-mist transition-colors hover:text-brand"
+                aria-label="LinkedIn"
+              >
+                <LinkedinIcon />
+              </a>
+            </div>
+            <button
+              type="button"
+              className="inline-flex items-center justify-center text-ink md:hidden"
+              aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={mobileOpen}
+              onClick={() => setMobileOpen(!mobileOpen)}
+            >
+              {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
-      )}
-    </nav>
+
+        {/* Mobile menu */}
+        {mobileOpen && (
+          <div className="border-t border-gray-100 px-4 pb-4 md:hidden">
+            <ul className="flex flex-col gap-3 pt-3">
+              {NAV_LINKS.map((link) => (
+                <li key={link}>
+                  <a
+                    href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
+                    className="block text-sm font-medium text-mist hover:text-brand"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </nav>
+    </header>
   )
 }

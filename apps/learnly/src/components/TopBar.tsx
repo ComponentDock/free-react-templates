@@ -1,57 +1,35 @@
-import { Clock, Phone } from 'lucide-react'
-import { brand, topBar } from '../data'
-import { BrandIcon } from './BrandIcon'
+import { Phone, Mail, HelpCircle, LogIn, Users } from 'lucide-react'
 
 export function TopBar() {
   return (
-    <div className="absolute inset-x-0 top-0 z-30 px-6 py-4 lg:px-12">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6">
-        <a
-          href="#home"
-          className="text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
-        >
-          <span className="block text-2xl font-medium text-white">{brand.name}</span>
-          <span className="mt-1 block text-[11px] uppercase tracking-[2px] text-white/90">
-            {brand.tagline}
-          </span>
-        </a>
-
-        {/* Hours, call and socials are display:none below the lg breakpoint
-            (source: .con and .top-social hidden <992px) — brand stays. */}
-        <div data-topbar-meta className="hidden items-center gap-10 text-white lg:flex">
-          <div className="flex items-center gap-3">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20">
-              <Clock className="h-5 w-5" aria-hidden="true" />
-            </span>
-            <span className="text-sm leading-tight">
-              <span className="block">{topBar.hoursLabel}</span>
-              <strong className="font-semibold">{topBar.hoursValue}</strong>
-            </span>
-          </div>
-
-          <div className="flex items-center gap-3">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20">
-              <Phone className="h-5 w-5" aria-hidden="true" />
-            </span>
-            <span className="text-sm leading-tight">
-              <span className="block">{topBar.callLabel}</span>
-              <strong className="font-semibold">{topBar.phoneDisplay}</strong>
-            </span>
-          </div>
-
-          <ul className="hidden items-center gap-2 lg:flex" data-topbar-meta>
-            {topBar.socials.map((social) => (
-              <li key={social}>
-                <a
-                  href={`#${social}`}
-                  aria-label={social}
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
-                >
-                  <BrandIcon name={social} className="h-4 w-4" />
-                </a>
-              </li>
-            ))}
-          </ul>
+    <div className="bg-paper py-2">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div className="hidden items-center gap-6 text-sm text-mist lg:flex">
+          <a href="#" className="flex items-center gap-1 hover:text-brand">
+            <HelpCircle className="h-4 w-4" aria-hidden="true" />
+            Have a question?
+          </a>
+          <a href="#" className="flex items-center gap-1 hover:text-brand">
+            <Phone className="h-4 w-4" aria-hidden="true" />
+            10 20 123 456
+          </a>
+          <a href="#" className="flex items-center gap-1 hover:text-brand">
+            <Mail className="h-4 w-4" aria-hidden="true" />
+            info@mydomain.com
+          </a>
+        </div>
+        <div className="flex items-center gap-3 text-sm lg:ml-auto">
+          <a href="#login" className="flex items-center gap-1 text-mist hover:text-brand">
+            <LogIn className="h-4 w-4" aria-hidden="true" />
+            Log In
+          </a>
+          <a
+            href="#register"
+            className="flex items-center gap-1 rounded-none bg-brand px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
+          >
+            <Users className="h-4 w-4" aria-hidden="true" />
+            Register
+          </a>
         </div>
       </div>
     </div>

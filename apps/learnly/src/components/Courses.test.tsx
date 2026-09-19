@@ -1,35 +1,43 @@
-import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import { Courses } from './Courses'
-import { courses, sectionHeadings } from '../data'
 
 describe('Courses', () => {
-  it('renders the Our Courses heading block', () => {
+  it('renders the section heading', () => {
     render(<Courses />)
-
-    expect(screen.getByText(sectionHeadings.coursesSub)).toBeInTheDocument()
-    expect(
-      screen.getByRole('heading', { level: 2, name: sectionHeadings.coursesTitle }),
-    ).toBeInTheDocument()
+    expect(screen.getByText('Popular Courses')).toBeInTheDocument()
   })
 
-  it('renders nine course cards with rating, meta and price', () => {
+  it('renders all six course cards', () => {
     render(<Courses />)
-
-    expect(screen.getAllByRole('heading', { level: 3 })).toHaveLength(courses.length)
-    for (const course of courses) {
-      expect(screen.getByRole('heading', { level: 3, name: course.title })).toBeInTheDocument()
-      expect(screen.getAllByText(course.instructor).length).toBeGreaterThan(0)
-      expect(screen.getAllByText(course.lectures).length).toBeGreaterThan(0)
-      expect(screen.getAllByText(course.price).length).toBeGreaterThan(0)
-    }
-    expect(screen.getAllByText('(5.0)')).toHaveLength(courses.length)
+    expect(screen.getByText('How To Create Mobile Apps Using Ionic')).toBeInTheDocument()
+    expect(screen.getByText('Mastering Web Design Fundamentals')).toBeInTheDocument()
+    expect(screen.getByText('Advanced Arithmetic & Mathematics')).toBeInTheDocument()
+    expect(screen.getByText('Building iOS Apps with Swift')).toBeInTheDocument()
+    expect(screen.getByText('UI/UX Design Principles')).toBeInTheDocument()
+    expect(screen.getByText('Python for Data Science')).toBeInTheDocument()
   })
 
-  it('shows five teal star icons and an Enroll Now button per card', () => {
-    const { container } = render(<Courses />)
+  it('renders price badges', () => {
+    render(<Courses />)
+    const prices = screen.getAllByText('$99.00')
+    expect(prices).toHaveLength(6)
+  })
 
-    expect(container.querySelectorAll('[data-course-star]')).toHaveLength(courses.length * 5)
-    expect(screen.getAllByRole('link', { name: /Enroll Now!/ })).toHaveLength(courses.length)
+  it('renders Enroll buttons', () => {
+    render(<Courses />)
+    const buttons = screen.getAllByText('Enroll In This Course')
+    expect(buttons).toHaveLength(6)
+  })
+
+  it('renders star ratings', () => {
+    render(<Courses />)
+    expect(screen.getAllByLabelText('5 out of 5 stars')).toHaveLength(6)
+  })
+
+  it('renders course images', () => {
+    render(<Courses />)
+    const images = screen.getAllByRole('img')
+    expect(images.length).toBeGreaterThanOrEqual(6)
   })
 })
