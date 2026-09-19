@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-bloom-50: #fff0f5;
+  --color-bloom-100: #ffe1eb;
+  --color-bloom-200: #ffc2d6;
+  --color-bloom-300: #ff94b5;
+  --color-bloom-400: #f45d96;
+  --color-bloom-500: #e83a7a;
+  --color-bloom-600: #d41f5f;
+  --color-bloom-700: #b11548;
+  --color-bloom-800: #931540;
+  --color-bloom-900: #7c1639;
+
+  --font-heading: 'Libre Baskerville', serif;
+  --font-sans: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+}
