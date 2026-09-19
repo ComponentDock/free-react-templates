@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* TickTock brand palette — blue primary (#235ee7) from the
+     original smartwatch design. Light-mode with subtle blue tints. */
+
+  --color-primary-50: #eff4ff;
+  --color-primary-100: #dbe6fe;
+  --color-primary-200: #bfd3fe;
+  --color-primary-300: #93b4fd;
+  --color-primary-400: #608dfa;
+  --color-primary-500: #235ee7;
+  --color-primary-600: #1a4bc5;
+  --color-primary-700: #1539a0;
+  --color-primary-800: #153083;
+  --color-primary-900: #172c6c;
+
+  --color-accent: #4cd3e3;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
