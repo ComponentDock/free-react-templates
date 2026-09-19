@@ -1,93 +1,70 @@
-import { useState } from 'react'
-import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
-import { scrollLeftLabel, scrollRightLabel, sectionHeadings, testimonials } from '../data'
+import { Quote } from 'lucide-react'
 
-const WINDOW = 3
+interface Testimonial {
+  name: string
+  role: string
+  quote: string
+  avatar: string
+}
+
+const TESTIMONIALS: Testimonial[] = [
+  {
+    name: 'Allison Holmes',
+    role: 'Designer',
+    quote:
+      'Learnly transformed my career. The courses are well-structured and the instructors are incredibly supportive. I landed my dream job within months of completing the program.',
+    avatar: 'https://picsum.photos/seed/learnly-person1/100/100',
+  },
+  {
+    name: 'James Patterson',
+    role: 'Developer',
+    quote:
+      'The best online learning platform I have ever used. The curriculum is up-to-date and the hands-on projects gave me real skills that employers actually look for.',
+    avatar: 'https://picsum.photos/seed/learnly-person2/100/100',
+  },
+  {
+    name: 'Sarah Chen',
+    role: 'Data Analyst',
+    quote:
+      'I started with zero programming knowledge and now I am building data pipelines. The step-by-step approach makes even complex topics easy to understand.',
+    avatar: 'https://picsum.photos/seed/learnly-person3/100/100',
+  },
+  {
+    name: 'Michael Rivera',
+    role: 'Product Manager',
+    quote:
+      'The courses on UX design and product management gave me the confidence to lead cross-functional teams. Highly recommended for anyone looking to level up.',
+    avatar: 'https://picsum.photos/seed/learnly-person4/100/100',
+  },
+]
 
 export function Testimonials() {
-  const [start, setStart] = useState(0)
-  const lastStart = testimonials.length - WINDOW
-  const visible = testimonials.slice(start, start + WINDOW)
-
-  const prev = () => setStart((current) => Math.max(0, current - 1))
-  const next = () => setStart((current) => Math.min(lastStart, current + 1))
-  const goTo = (index: number) => setStart(Math.min(index, lastStart))
-
   return (
-    <section aria-label="Testimonials" className="bg-surface py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="mx-auto max-w-2xl text-center">
-          <span className="text-base font-bold uppercase text-brand">
-            {sectionHeadings.testimonialSub}
-          </span>
-          <h2 className="mt-3 text-4xl font-medium leading-tight text-ink lg:text-[46px] lg:leading-[1.4]">
-            {sectionHeadings.testimonialTitle}
-          </h2>
+    <section className="py-16 md:py-24" id="testimonials">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-12">
+          <h2 className="mb-4 text-3xl font-bold text-ink md:text-4xl">Testimonials</h2>
+          <div className="h-1 w-16 bg-brand" />
         </div>
-
-        <div className="relative mt-14">
-          <div className="grid gap-6 md:grid-cols-3">
-            {visible.map((testimonial) => (
-              <article
-                key={testimonial.name}
-                className="relative bg-white p-[35px_30px_30px] shadow-[0_5px_12px_-9px_rgba(0,0,0,0.17)]"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="relative">
-                    <img
-                      src={testimonial.avatar}
-                      alt=""
-                      className="h-20 w-20 rounded-full object-cover"
-                      loading="lazy"
-                    />
-                    <span className="absolute -bottom-2 -right-2 flex h-[30px] w-[30px] items-center justify-center rounded-full bg-brand text-white">
-                      <Quote className="h-4 w-4 fill-current" aria-hidden="true" />
-                    </span>
-                  </div>
-                  <div className="pt-2">
-                    <h3 className="text-xl font-semibold uppercase text-ink">{testimonial.name}</h3>
-                    <span className="text-[13px] font-semibold uppercase text-brand">
-                      {testimonial.position}
-                    </span>
-                  </div>
-                </div>
-                <p className="mt-5 leading-relaxed text-muted">{testimonial.quote}</p>
-              </article>
-            ))}
-          </div>
-
-          <div className="mt-10 flex items-center justify-center gap-4">
-            <button
-              type="button"
-              aria-label={scrollLeftLabel}
-              onClick={prev}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-edge text-ink transition-colors hover:bg-brand hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
-            >
-              <ChevronLeft className="h-5 w-5" aria-hidden="true" />
-            </button>
-            <div className="flex items-center gap-2">
-              {testimonials.map((testimonial, index) => (
-                <button
-                  key={testimonial.name}
-                  type="button"
-                  aria-label={`Go to slide ${index + 1}`}
-                  aria-current={index === start ? 'true' : undefined}
-                  onClick={() => goTo(index)}
-                  className={`h-[3px] w-[30px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand ${
-                    index === start ? 'bg-brand' : 'bg-edge'
-                  }`}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+          {TESTIMONIALS.map((t) => (
+            <div key={t.name} className="rounded-lg bg-paper p-6">
+              <div className="mb-4 flex items-center gap-4">
+                <img
+                  src={t.avatar}
+                  alt={t.name}
+                  className="h-14 w-14 rounded-full object-cover"
+                  loading="lazy"
                 />
-              ))}
+                <div>
+                  <h3 className="font-bold text-ink">{t.name}</h3>
+                  <span className="text-sm text-mist">{t.role}</span>
+                </div>
+              </div>
+              <Quote className="mb-2 h-5 w-5 text-brand/40" aria-hidden="true" />
+              <p className="text-sm leading-relaxed text-mist">{t.quote}</p>
             </div>
-            <button
-              type="button"
-              aria-label={scrollRightLabel}
-              onClick={next}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-edge text-ink transition-colors hover:bg-brand hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
-            >
-              <ChevronRight className="h-5 w-5" aria-hidden="true" />
-            </button>
-          </div>
+          ))}
         </div>
       </div>
     </section>

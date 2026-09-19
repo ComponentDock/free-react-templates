@@ -1,47 +1,24 @@
-import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import { TopBar } from './TopBar'
-import { brand, topBar } from '../data'
 
 describe('TopBar', () => {
-  it('shows the brand wordmark with the tagline', () => {
+  it('renders contact links', () => {
     render(<TopBar />)
-
-    expect(screen.getByText(brand.name)).toBeInTheDocument()
-    expect(screen.getByText(brand.tagline)).toBeInTheDocument()
+    expect(screen.getByText('Have a question?')).toBeInTheDocument()
+    expect(screen.getByText('10 20 123 456')).toBeInTheDocument()
+    expect(screen.getByText('info@mydomain.com')).toBeInTheDocument()
   })
 
-  it('shows the opening hours and call blocks on desktop', () => {
+  it('renders login and register links', () => {
     render(<TopBar />)
-
-    expect(screen.getByText(topBar.hoursLabel)).toBeInTheDocument()
-    expect(screen.getByText(topBar.hoursValue)).toBeInTheDocument()
-    expect(screen.getByText(topBar.callLabel)).toBeInTheDocument()
-    expect(screen.getByText(topBar.phoneDisplay)).toBeInTheDocument()
+    expect(screen.getByText('Log In')).toBeInTheDocument()
+    expect(screen.getByText('Register')).toBeInTheDocument()
   })
 
-  it('hides the hours, call and social blocks below the lg breakpoint but keeps the brand', () => {
-    const { container } = render(<TopBar />)
-
-    const brandLink = screen.getByRole('link', { name: new RegExp(brand.name) })
-    expect(brandLink.className).not.toContain('hidden')
-
-    const metaBlocks = container.querySelectorAll('[data-topbar-meta]')
-    expect(metaBlocks.length).toBeGreaterThan(0)
-    for (const block of metaBlocks) {
-      expect(block.className).toContain('hidden')
-      expect(block.className).toContain('lg:flex')
-    }
-  })
-
-  it('renders four circular social links with accessible names', () => {
+  it('register link points to register section', () => {
     render(<TopBar />)
-
-    for (const social of topBar.socials) {
-      expect(screen.getByRole('link', { name: social })).toBeInTheDocument()
-    }
-    expect(
-      screen.getAllByRole('link', { name: /facebook|twitter|instagram|dribbble/ }),
-    ).toHaveLength(topBar.socials.length)
+    const register = screen.getByText('Register').closest('a')
+    expect(register).toHaveAttribute('href', '#register')
   })
 })

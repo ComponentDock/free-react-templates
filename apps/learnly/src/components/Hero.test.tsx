@@ -1,29 +1,39 @@
-import { render, screen } from '@testing-library/react'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
+import { render, screen, act } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import { Hero } from './Hero'
-import { hero } from '../data'
 
 describe('Hero', () => {
-  it('renders a full-viewport section with the background photo', () => {
-    const { container } = render(<Hero />)
-
-    const section = container.querySelector('section')!
-    expect(section.className).toContain('min-h-screen')
-    expect(section.style.backgroundImage).toContain(hero.image)
+  it('renders the first slide heading by default', () => {
+    render(<Hero />)
+    expect(screen.getByText('Learnly University')).toBeInTheDocument()
   })
 
-  it('renders the eyebrow, headline and copy', () => {
+  it('renders slide indicator buttons', () => {
     render(<Hero />)
-
-    expect(screen.getByText(hero.eyebrow)).toBeInTheDocument()
-    expect(screen.getByRole('heading', { level: 1, name: hero.headline })).toBeInTheDocument()
-    expect(screen.getByText(hero.copy)).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Go to slide 1' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Go to slide 2' })).toBeInTheDocument()
   })
 
-  it('renders both call-to-action buttons', () => {
+  it('switches to second slide when indicator is clicked', async () => {
+    const user = userEvent.setup()
     render(<Hero />)
+    await user.click(screen.getByRole('button', { name: 'Go to slide 2' }))
+    expect(screen.getByText('You Can Learn Anything')).toBeInTheDocument()
+  })
 
-    expect(screen.getByRole('link', { name: new RegExp(hero.primaryCta) })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: new RegExp(hero.secondaryCta) })).toBeInTheDocument()
+  it('auto-advances to next slide after 5 seconds', () => {
+    vi.useFakeTimers()
+    render(<Hero />)
+    act(() => {
+      vi.advanceTimersByTime(5000)
+    })
+    expect(screen.getByText('You Can Learn Anything')).toBeInTheDocument()
+    vi.useRealTimers()
+  })
+
+  it('has correct aria-label for carousel', () => {
+    render(<Hero />)
+    expect(screen.getByLabelText('Hero carousel')).toBeInTheDocument()
   })
 })
