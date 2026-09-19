@@ -1,0 +1,82 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #937c6f;
+  --color-brand-dark: #7d6a5f;
+  --color-heading: #2f2f2f;
+  --color-body-text: #929191;
+  --color-dark: #232323;
+  --color-light-bg: #f9f5f5;
+  --color-red-accent: #db5246;
+  --font-sans: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: #ffffff;
+  color: var(--color-heading);
+}
+
+/* Brand button */
+.btn-brand {
+  background: var(--color-brand);
+  color: #ffffff;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background 0.3s;
+  display: inline-block;
+}
+.btn-brand:hover {
+  background: var(--color-brand-dark);
+}
+
+/* Hero slide background */
+.hero-slide {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero-slide::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(35, 35, 35, 0.45);
+}
+
+/* Promo card overlay */
+.promo-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(35, 35, 35, 0.63);
+  color: #ffffff;
+}
+
+/* Product hover */
+.product-card:hover .product-actions {
+  opacity: 1;
+  transform: translateY(0);
+}
+.product-actions {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s;
+}
+
+/* Gallery overlay */
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(35, 35, 35, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
