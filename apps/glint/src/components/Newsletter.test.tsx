@@ -4,26 +4,36 @@ import userEvent from '@testing-library/user-event'
 import { Newsletter } from './Newsletter'
 
 describe('Newsletter', () => {
-  it('renders heading, email input, and subscribe button', () => {
+  it('renders the newsletter heading', () => {
     render(<Newsletter />)
-
     expect(screen.getByText('Subscribe to our newsletter')).toBeInTheDocument()
-    expect(
-      screen.getByText('Get the latest dental tips, offers, and news delivered to your inbox.'),
-    ).toBeInTheDocument()
-    expect(screen.getByLabelText('Email address')).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: /subscribe/i })).toBeInTheDocument()
   })
 
-  it('allows typing in the email field and submitting', async () => {
+  it('renders email input and subscribe button', () => {
+    render(<Newsletter />)
+    expect(screen.getByLabelText(/Your E-mail/i)).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Subscribe/i })).toBeInTheDocument()
+  })
+
+  it('rejects an invalid email', async () => {
     const user = userEvent.setup()
     render(<Newsletter />)
+    const input = screen.getByLabelText(/Your E-mail/i)
+    const submit = screen.getByRole('button', { name: /Subscribe/i })
 
-    const input = screen.getByLabelText('Email address')
-    await user.type(input, 'test@example.com')
-    expect(input).toHaveValue('test@example.com')
+    await user.type(input, 'not-an-email')
+    await user.click(submit)
+    expect(screen.getByRole('alert')).toHaveTextContent(/valid email/i)
+  })
 
-    await user.click(screen.getByRole('button', { name: /subscribe/i }))
-    expect(input).toHaveValue('')
+  it('accepts a valid email and shows confirmation', async () => {
+    const user = userEvent.setup()
+    render(<Newsletter />)
+    const input = screen.getByLabelText(/Your E-mail/i)
+    const submit = screen.getByRole('button', { name: /Subscribe/i })
+
+    await user.type(input, 'jane@example.com')
+    await user.click(submit)
+    expect(screen.getByText(/Thanks for subscribing/i)).toBeInTheDocument()
   })
 })

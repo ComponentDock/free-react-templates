@@ -1,39 +1,56 @@
-import { describe, expect, it } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { describe, expect, it, vi, afterEach } from 'vitest'
+import { render, screen, act } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { Testimonials } from './Testimonials'
 
 describe('Testimonials', () => {
-  it('renders the first testimonial with quote, name, and role', () => {
-    render(<Testimonials />)
+  afterEach(() => {
+    vi.useRealTimers()
+  })
 
+  it('renders the section heading', () => {
+    render(<Testimonials />)
     expect(screen.getByText('Testimonials')).toBeInTheDocument()
-    expect(screen.getByText(/Glint transformed my smile completely/)).toBeInTheDocument()
-    expect(screen.getByText('Sarah Johnson')).toBeInTheDocument()
+  })
+
+  it('renders a testimonial quote', () => {
+    render(<Testimonials />)
+    expect(screen.getByText(/Phasellus vehicula tempus orci/)).toBeInTheDocument()
+  })
+
+  it('renders the author name and role', () => {
+    render(<Testimonials />)
+    expect(screen.getByText('Jessica Brown')).toBeInTheDocument()
     expect(screen.getByText('Patient')).toBeInTheDocument()
   })
 
-  it('navigates to next testimonial on arrow click', async () => {
-    const user = userEvent.setup()
+  it('renders navigation buttons', () => {
     render(<Testimonials />)
-
-    await user.click(screen.getByRole('button', { name: 'Next testimonial' }))
-    expect(screen.getByText('Michael Chen')).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Previous testimonial/i })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Next testimonial/i })).toBeInTheDocument()
   })
 
-  it('navigates to previous testimonial on arrow click', async () => {
+  it('navigates to next testimonial on next button click', async () => {
     const user = userEvent.setup()
     render(<Testimonials />)
-
-    await user.click(screen.getByRole('button', { name: 'Previous testimonial' }))
-    expect(screen.getByText('Emily Rodriguez')).toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: /Next testimonial/i }))
+    expect(screen.getByText('Mark Wilson')).toBeInTheDocument()
   })
 
-  it('navigates to a specific testimonial on dot click', async () => {
+  it('navigates to previous testimonial on prev button click', async () => {
     const user = userEvent.setup()
     render(<Testimonials />)
+    await user.click(screen.getByRole('button', { name: /Previous testimonial/i }))
+    expect(screen.getByText('Sarah Davis')).toBeInTheDocument()
+  })
 
-    await user.click(screen.getByRole('button', { name: 'Go to testimonial 2' }))
-    expect(screen.getByText('Michael Chen')).toBeInTheDocument()
+  it('auto-advances testimonials after 6 seconds', () => {
+    vi.useFakeTimers()
+    render(<Testimonials />)
+    expect(screen.getByText('Jessica Brown')).toBeInTheDocument()
+    act(() => {
+      vi.advanceTimersByTime(6000)
+    })
+    expect(screen.getByText('Mark Wilson')).toBeInTheDocument()
   })
 })

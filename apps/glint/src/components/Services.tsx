@@ -1,62 +1,55 @@
-import { Crown, SmilePlus, Sparkles, Stethoscope, Heart, Gem } from 'lucide-react'
-import type { LucideIcon } from 'lucide-react'
+import { Shield, Zap, Sparkles, Heart, Smile, Activity } from 'lucide-react'
 
-const services: { icon: LucideIcon; title: string; description: string }[] = [
+const services = [
   {
-    icon: Crown,
-    title: 'Crowns & Bridges',
-    description:
-      'Restore your smile with custom crowns and bridges designed to match your natural teeth perfectly.',
+    icon: Shield,
+    title: 'Crowns Bridges',
+    description: 'Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.',
   },
   {
-    icon: Gem,
-    title: 'Dental Implants',
+    icon: Zap,
+    title: 'Implants',
     description:
-      'Permanent tooth replacement solutions that look, feel, and function just like natural teeth.',
+      'Phasellus vehicula tempus orci vel consequat. Nullam lorem sem, viverra a rutrum sed.',
   },
   {
     icon: Sparkles,
     title: 'Teeth Whitening',
-    description:
-      'Professional whitening treatments to brighten your smile by several shades in just one visit.',
-  },
-  {
-    icon: Stethoscope,
-    title: 'Root Canals',
-    description:
-      'Painless root canal therapy to save damaged teeth and relieve discomfort quickly.',
+    description: 'Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.',
   },
   {
     icon: Heart,
-    title: 'Wisdom Teeth',
+    title: 'Root Canals',
     description:
-      'Safe and efficient removal of impacted or problematic wisdom teeth with minimal recovery time.',
+      'Phasellus vehicula tempus orci vel consequat. Nullam lorem sem, viverra a rutrum sed.',
   },
   {
-    icon: SmilePlus,
+    icon: Smile,
+    title: 'Wisdom Teeth',
+    description: 'Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.',
+  },
+  {
+    icon: Activity,
     title: 'Braces',
     description:
-      'Modern orthodontic solutions including clear aligners and traditional braces for all ages.',
+      'Nullam lorem sem, viverra a rutrum sed, gravida mattis magna. Suspendisse vitae commodo.',
   },
-]
+] as const
 
 export function Services() {
   return (
-    <section id="services" className="bg-gray-50 py-16">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <h2 className="mb-4 text-center font-display text-3xl font-bold text-ink">Our Services</h2>
-        <p className="mx-auto mb-12 max-w-2xl text-center text-smoke">
-          We offer a wide range of dental services to keep your smile healthy and beautiful.
-        </p>
+    <section id="services" className="bg-paper py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 className="mb-16 text-center text-3xl font-bold text-ink">Our Services</h2>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <div
               key={service.title}
-              className="rounded-lg bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+              className="rounded bg-white p-8 shadow-sm transition-shadow hover:shadow-md"
             >
-              <service.icon className="mb-4 h-10 w-10 text-primary-400" aria-hidden="true" />
-              <h3 className="mb-2 text-lg font-semibold text-ink">{service.title}</h3>
-              <p className="text-sm leading-relaxed text-smoke">{service.description}</p>
+              <service.icon className="mb-4 h-10 w-10 text-brand" aria-hidden="true" />
+              <h4 className="mb-3 text-xl font-semibold text-ink">{service.title}</h4>
+              <p className="text-sm leading-relaxed text-mist">{service.description}</p>
             </div>
           ))}
         </div>

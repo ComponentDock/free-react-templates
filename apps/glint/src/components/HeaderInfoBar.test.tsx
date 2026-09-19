@@ -3,24 +3,19 @@ import { render, screen } from '@testing-library/react'
 import { HeaderInfoBar } from './HeaderInfoBar'
 
 describe('HeaderInfoBar', () => {
-  it('renders four info columns with icons and text', () => {
+  it('renders four info columns', () => {
     render(<HeaderInfoBar />)
-
-    expect(screen.getByText('Find us:')).toBeInTheDocument()
-    expect(screen.getByText('123 Dental Ave, Suite 100')).toBeInTheDocument()
-
-    expect(screen.getByText('Working hours:')).toBeInTheDocument()
-    expect(screen.getByText('Mon–Fri: 8am–6pm')).toBeInTheDocument()
-
-    expect(screen.getByText('Call us:')).toBeInTheDocument()
-    expect(screen.getByText('+1 (555) 123-4567')).toBeInTheDocument()
-
-    expect(screen.getByText('Appointment:')).toBeInTheDocument()
-    expect(screen.getByText('Book online now')).toBeInTheDocument()
+    expect(screen.getByText('Dental Street 20199')).toBeInTheDocument()
+    expect(screen.getByText('Opening Hours')).toBeInTheDocument()
+    expect(screen.getByText('+885 332 1568')).toBeInTheDocument()
+    expect(screen.getByText('Book Appointment')).toBeInTheDocument()
   })
 
-  it('has the correct background color class', () => {
-    const { container } = render(<HeaderInfoBar />)
-    expect(container.firstElementChild).toHaveClass('bg-card')
+  it('renders detail text for each column', () => {
+    render(<HeaderInfoBar />)
+    expect(screen.getByText('Denver, USA')).toBeInTheDocument()
+    expect(screen.getByText('Mon - Sat: 8:00 - 19:00')).toBeInTheDocument()
+    expect(screen.getByText('Call us now!')).toBeInTheDocument()
+    expect(screen.getByText('Schedule online')).toBeInTheDocument()
   })
 })

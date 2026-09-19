@@ -5,12 +5,15 @@ import { Gallery } from './Gallery'
 describe('Gallery', () => {
   it('renders 4 gallery images', () => {
     render(<Gallery />)
-
     const images = screen.getAllByRole('img')
-    expect(images.length).toBe(4)
+    expect(images).toHaveLength(4)
+  })
 
-    for (const img of images) {
-      expect(img).toHaveAttribute('src', expect.stringContaining('picsum'))
-    }
+  it('has alt text for each image', () => {
+    render(<Gallery />)
+    expect(screen.getByAltText('Dental clinic photo 1')).toBeInTheDocument()
+    expect(screen.getByAltText('Dental clinic photo 2')).toBeInTheDocument()
+    expect(screen.getByAltText('Dental clinic photo 3')).toBeInTheDocument()
+    expect(screen.getByAltText('Dental clinic photo 4')).toBeInTheDocument()
   })
 })

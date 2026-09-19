@@ -1,103 +1,89 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
 
-interface Testimonial {
-  quote: string
-  name: string
-  role: string
-  photo: string
-}
+const testimonials = [
+  {
+    quote:
+      'Phasellus vehicula tempus orci vel consequat. Nullam lorem sem, viverra a rutrum sed, gravida mattis magna. Suspendisse vitae commodo quam.',
+    name: 'Jessica Brown',
+    role: 'Patient',
+    image: 'https://picsum.photos/seed/glint-review-1/100/100',
+  },
+  {
+    quote:
+      'Nullam lorem sem, viverra a rutrum sed, gravida mattis magna. Suspendisse vitae commodo quam. Quisque a enim et ante vulputate finibus.',
+    name: 'Mark Wilson',
+    role: 'Patient',
+    image: 'https://picsum.photos/seed/glint-review-2/100/100',
+  },
+  {
+    quote:
+      'Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.',
+    name: 'Sarah Davis',
+    role: 'Patient',
+    image: 'https://picsum.photos/seed/glint-review-3/100/100',
+  },
+] as const
 
-const testimonials: Testimonial[] = [
-  {
-    quote:
-      "Glint transformed my smile completely. The staff is incredibly professional and caring. I couldn't be happier with the results!",
-    name: 'Sarah Johnson',
-    role: 'Patient',
-    photo: 'https://picsum.photos/seed/glint-testimonial1/100/100',
-  },
-  {
-    quote:
-      "The best dental experience I've ever had. From the warm welcome to the expert treatment, everything was perfect.",
-    name: 'Michael Chen',
-    role: 'Patient',
-    photo: 'https://picsum.photos/seed/glint-testimonial2/100/100',
-  },
-  {
-    quote:
-      'I was terrified of dentists until I visited Glint. They made me feel comfortable and the procedure was painless.',
-    name: 'Emily Rodriguez',
-    role: 'Patient',
-    photo: 'https://picsum.photos/seed/glint-testimonial3/100/100',
-  },
-]
+function getTestimonial(index: number): (typeof testimonials)[number] {
+  return testimonials[index]!
+}
 
 export function Testimonials() {
   const [current, setCurrent] = useState(0)
-
-  const next = useCallback(() => {
-    setCurrent((c) => (c + 1) % testimonials.length)
-  }, [])
 
   const prev = useCallback(() => {
     setCurrent((c) => (c - 1 + testimonials.length) % testimonials.length)
   }, [])
 
-  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion -- array is non-empty
-  const t = testimonials[current]!
+  const next = useCallback(() => {
+    setCurrent((c) => (c + 1) % testimonials.length)
+  }, [])
+
+  useEffect(() => {
+    const timer = setInterval(next, 6000)
+    return () => clearInterval(timer)
+  }, [next])
+
+  const item = getTestimonial(current)
 
   return (
-    <section className="bg-gray-50 py-16">
-      <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-        <h2 className="mb-12 font-display text-3xl font-bold text-ink">Testimonials</h2>
-
-        <div className="relative">
-          <Quote
-            className="mx-auto mb-6 h-10 w-10 text-primary-400 opacity-40"
-            aria-hidden="true"
-          />
-          <p className="mb-8 text-lg leading-relaxed text-smoke italic">&ldquo;{t.quote}&rdquo;</p>
-
-          <div className="flex items-center justify-center gap-4">
-            <img src={t.photo} alt={t.name} className="h-14 w-14 rounded-full object-cover" />
-            <div className="text-left">
-              <p className="font-semibold text-ink">{t.name}</p>
-              <p className="text-sm text-smoke">{t.role}</p>
-            </div>
-          </div>
-
-          {/* Arrows */}
+    <section className="bg-paper py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 className="mb-16 text-center text-3xl font-bold text-ink">Testimonials</h2>
+        <div className="flex items-center gap-8">
           <button
             type="button"
             onClick={prev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 rounded-full bg-white p-2 shadow-sm transition-colors hover:bg-gray-100"
             aria-label="Previous testimonial"
+            className="hidden shrink-0 rounded-full border border-gray-300 p-3 text-mist transition-colors hover:border-brand hover:text-brand sm:block"
           >
-            <ChevronLeft className="h-5 w-5 text-ink" />
+            <ChevronLeft className="h-5 w-5" />
           </button>
+
+          <div className="flex flex-1 flex-col items-center gap-8 md:flex-row">
+            <div className="flex-1 rounded bg-white p-8 shadow-sm">
+              <Quote className="mb-4 h-8 w-8 text-brand" aria-hidden="true" />
+              <p className="mb-6 leading-relaxed text-mist">{item.quote}</p>
+              <h6 className="font-semibold text-ink">{item.name}</h6>
+              <span className="text-sm text-mist">{item.role}</span>
+            </div>
+            <img
+              src={item.image}
+              alt={item.name}
+              className="h-40 w-40 shrink-0 rounded-full object-cover"
+              loading="lazy"
+            />
+          </div>
+
           <button
             type="button"
             onClick={next}
-            className="absolute right-0 top-1/2 -translate-y-1/2 rounded-full bg-white p-2 shadow-sm transition-colors hover:bg-gray-100"
             aria-label="Next testimonial"
+            className="hidden shrink-0 rounded-full border border-gray-300 p-3 text-mist transition-colors hover:border-brand hover:text-brand sm:block"
           >
-            <ChevronRight className="h-5 w-5 text-ink" />
+            <ChevronRight className="h-5 w-5" />
           </button>
-        </div>
-
-        {/* Dots */}
-        <div className="mt-8 flex justify-center gap-2">
-          {testimonials.map((_, i) => (
-            <button
-              key={i}
-              type="button"
-              onClick={() => setCurrent(i)}
-              className={`h-3 w-3 rounded-full transition-colors ${
-                i === current ? 'bg-primary-400' : 'bg-gray-300'
-              }`}
-              aria-label={`Go to testimonial ${i + 1}`}
-            />
-          ))}
         </div>
       </div>
     </section>
