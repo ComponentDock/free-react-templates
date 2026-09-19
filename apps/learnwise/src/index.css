@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Learnwise brand palette */
+  --color-primary: #3762f0;
+  --color-primary-hover: #2c56df;
+  --color-accent: #e3d21b;
+  --color-footer-top: #252525;
+  --color-footer-bottom: #1f1f1f;
+  --color-register-overlay: rgba(214, 223, 251, 0.7);
+
+  /* Raleway for headings, Open Sans for body (Google Fonts via index.html) */
+  --font-heading: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
