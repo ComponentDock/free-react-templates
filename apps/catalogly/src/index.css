@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Catalogly brand palette — deep red. */
+  --color-brand: #c5322d;
+  --color-brand-dark: #a52a25;
+
+  /* Heading color — near-black. */
+  --color-heading: #222222;
+
+  /* Body text — medium gray. */
+  --color-ink: #777777;
+
+  /* Border / divider color. */
+  --color-border: #eeeeee;
+
+  /* White background. */
+  --color-surface: #ffffff;
+
+  /* Light blue-gray backgrounds. */
+  --color-bg-light: #e8f0f2;
+  --color-bg-section: #e5ecee;
+
+  /* Dark top bar / footer. */
+  --color-dark: #04091e;
+  --color-dark-bottom: #111111;
+
+  /* Primary scale for shared UI Button/ButtonLink primary variants. */
+  --color-primary-50: #fdf0f0;
+  --color-primary-100: #f9d8d7;
+  --color-primary-200: #f0b0ae;
+  --color-primary-300: #e48885;
+  --color-primary-400: #d6605d;
+  --color-primary-500: #c5322d;
+  --color-primary-600: #a52a25;
+  --color-primary-700: #86211e;
+  --color-primary-800: #661917;
+  --color-primary-900: #471110;
+
+  /* Fonts: Roboto for all text. */
+  --font-heading: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
