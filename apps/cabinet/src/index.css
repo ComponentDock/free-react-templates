@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Cabinet brand palette — orange #fd8f5f primary, dark blue #1f2b7b headings,
+     warm peach #f2e1d9 accent backgrounds, text #2a2a2a, border #ececec. */
+  --color-brand: #fd8f5f;
+  --color-brand-dark: #e57a4a;
+
+  /* Navy — dark blue headings / announcement bar (#1f2b7b). */
+  --color-navy: #1f2b7b;
+  --color-navy-dark: #16205a;
+
+  /* Warm — warm section accent background (#f2e1d9). */
+  --color-warm: #f2e1d9;
+
+  /* Body text color. */
+  --color-ink: #2a2a2a;
+
+  /* Border color. */
+  --color-border: #ececec;
+
+  /* Product swatch colors. */
+  --color-swatch-forest: #2f5d50;
+  --color-swatch-stone: #c9c3b8;
+  --color-swatch-tan: #b07a4e;
+  --color-swatch-oak: #c8a06a;
+  --color-swatch-cream: #efe6d8;
+  --color-swatch-charcoal: #3a3a3c;
+  --color-swatch-walnut: #6b4a2f;
+  --color-swatch-brass: #c9a227;
+  --color-swatch-linen: #e6ddd0;
+  --color-swatch-slate: #5a6472;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the orange. */
+  --color-primary-50: #fff5ed;
+  --color-primary-100: #ffe8d5;
+  --color-primary-200: #ffd1aa;
+  --color-primary-300: #ffb374;
+  --color-primary-400: #fd8f5f;
+  --color-primary-500: #fd8f5f;
+  --color-primary-600: #e57a4a;
+  --color-primary-700: #c4643a;
+  --color-primary-800: #a15030;
+  --color-primary-900: #7e3f26;
+
+  /* Fonts: Poppins (Google Font). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
