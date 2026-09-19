@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { ProductGrid } from './ProductGrid'
 
@@ -11,7 +12,6 @@ describe('ProductGrid', () => {
   it('displays all product names', () => {
     render(<ProductGrid />)
     const names = [
-      'Modern Chair',
       'Minimalistic Plant Pot',
       'Night Stand',
       'Plant Pot',
@@ -23,5 +23,6 @@ describe('ProductGrid', () => {
     for (const name of names) {
       expect(screen.getByText(name)).toBeInTheDocument()
     }
+    expect(screen.getAllByText('Modern Chair')).toHaveLength(2)
   })
 })

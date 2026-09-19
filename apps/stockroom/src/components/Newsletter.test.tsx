@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { Newsletter } from './Newsletter'
@@ -29,6 +30,16 @@ describe('Newsletter', () => {
     render(<Newsletter />)
     const input = screen.getByPlaceholderText('Your E-mail')
     await user.type(input, 'test@example.com')
+    expect(input).toHaveValue('test@example.com')
+  })
+
+  it('submits form without error', async () => {
+    const user = userEvent.setup()
+    render(<Newsletter />)
+    const input = screen.getByPlaceholderText('Your E-mail')
+    await user.type(input, 'test@example.com')
+    await user.click(screen.getByText('Subscribe'))
+    // Form submission should not throw
     expect(input).toHaveValue('test@example.com')
   })
 })

@@ -1,3 +1,4 @@
+import { describe, expect, it, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { Sidebar } from './Sidebar'
@@ -5,14 +6,16 @@ import { Sidebar } from './Sidebar'
 describe('Sidebar', () => {
   it('renders logo', () => {
     render(<Sidebar onSearchOpen={vi.fn()} />)
-    expect(screen.getByText('Stockroom')).toBeInTheDocument()
+    const logos = screen.getAllByText('Stockroom')
+    expect(logos.length).toBeGreaterThanOrEqual(1)
   })
 
   it('renders navigation links', () => {
     render(<Sidebar onSearchOpen={vi.fn()} />)
-    for (const link of ['Home', 'Shop', 'Product', 'Cart', 'Checkout']) {
-      expect(screen.getByText(link)).toBeInTheDocument()
+    for (const link of ['Home', 'Shop', 'Product', 'Checkout']) {
+      expect(screen.getAllByText(link).length).toBeGreaterThanOrEqual(1)
     }
+    expect(screen.getAllByText('Cart', { exact: false }).length).toBeGreaterThanOrEqual(1)
   })
 
   it('renders CTA buttons', () => {
@@ -21,9 +24,8 @@ describe('Sidebar', () => {
     expect(screen.getByText('New this week')).toBeInTheDocument()
   })
 
-  it('renders cart, favourite, and search buttons', () => {
+  it('renders favourite and search buttons', () => {
     render(<Sidebar onSearchOpen={vi.fn()} />)
-    expect(screen.getByText('Cart', { exact: false })).toBeInTheDocument()
     expect(screen.getByText('Favourite')).toBeInTheDocument()
     expect(screen.getByText('Search')).toBeInTheDocument()
   })
@@ -49,8 +51,32 @@ describe('Sidebar', () => {
     render(<Sidebar onSearchOpen={vi.fn()} />)
     const toggle = screen.getByLabelText('Toggle navigation')
     await user.click(toggle)
-    // Sidebar should be visible (translated to 0)
     const aside = screen.getByRole('complementary')
     expect(aside.className).toContain('translate-x-0')
+  })
+
+  it('closes mobile nav when overlay is clicked', async () => {
+    const user = userEvent.setup()
+    render(<Sidebar onSearchOpen={vi.fn()} />)
+    // Open mobile nav
+    await user.click(screen.getByLabelText('Toggle navigation'))
+    // Click the overlay to close
+    const overlay = document.querySelector('.bg-dark\\/50')
+    if (overlay) {
+      await user.click(overlay)
+    }
+    const aside = screen.getByRole('complementary')
+    expect(aside.className).toContain('-translate-x-full')
+  })
+
+  it('closes mobile nav when close button is clicked', async () => {
+    const user = userEvent.setup()
+    render(<Sidebar onSearchOpen={vi.fn()} />)
+    // Open mobile nav
+    await user.click(screen.getByLabelText('Toggle navigation'))
+    // Click close button
+    await user.click(screen.getByLabelText('Close navigation'))
+    const aside = screen.getByRole('complementary')
+    expect(aside.className).toContain('-translate-x-full')
   })
 })

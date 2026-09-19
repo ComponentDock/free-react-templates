@@ -14,28 +14,28 @@ section, and a minimal footer.
 
 ## Design tokens (extracted from preview CSS)
 
-| Token                | Value                                  | Source                                 |
-| -------------------- | -------------------------------------- | -------------------------------------- |
-| Brand primary        | `#fbb710` (golden yellow)              | `.amado-btn` bg, accent elements       |
-| Brand hover/active   | `#131212` (near-black)                 | `.amado-btn.active`, hover states      |
-| Body text dark       | `#131212` (near-black)                 | links, nav text                        |
-| Headings color       | `#242424`                              | h2-h6                                  |
-| Body text muted      | `#6d6d6d`                              | paragraphs, descriptions               |
-| Newsletter bg        | `#3c3c3c` (dark gray)                  | `.newsletter-area`                     |
-| Newsletter text      | `#b3b1b1` (light gray)                 | `.newsletter-text p`                   |
-| Footer bg            | `#252525` (very dark gray)             | `.footer_area`                         |
-| Footer text          | `rgba(255,255,255,0.4)`               | `.copywrite`, footer links             |
-| Search wrapper bg    | `#f5f7fa` (very light gray)            | `.search-wrapper`                      |
-| White                | `#FFFFFF`                              | header bg, input bg                    |
-| Yellow accent line   | `#fbb710`                              | `.hover-content .line` (80px × 3px)    |
-| Font heading         | `'helveticaneuebold'`                  | headings, button text                  |
-| Font body            | `'helveticaneuemedium'`                | body text, nav                         |
-| Button radius        | `0` (rectangular, no rounding)         | `.amado-btn`                           |
-| Button height        | `55px`                                 | `.amado-btn`                           |
-| Button min-width     | `160px`                                | `.amado-btn`                           |
-| Product grid         | 33.33% per item (3-col)                | `.single-products-catagory`            |
-| Hover overlay        | dark semi-transparent on image         | `a::after` pseudo-element              |
-| Hover content pos    | `top: 40px; left: 40px`               | `.hover-content`                       |
+| Token              | Value                          | Source                              |
+| ------------------ | ------------------------------ | ----------------------------------- |
+| Brand primary      | `#fbb710` (golden yellow)      | `.amado-btn` bg, accent elements    |
+| Brand hover/active | `#131212` (near-black)         | `.amado-btn.active`, hover states   |
+| Body text dark     | `#131212` (near-black)         | links, nav text                     |
+| Headings color     | `#242424`                      | h2-h6                               |
+| Body text muted    | `#6d6d6d`                      | paragraphs, descriptions            |
+| Newsletter bg      | `#3c3c3c` (dark gray)          | `.newsletter-area`                  |
+| Newsletter text    | `#b3b1b1` (light gray)         | `.newsletter-text p`                |
+| Footer bg          | `#252525` (very dark gray)     | `.footer_area`                      |
+| Footer text        | `rgba(255,255,255,0.4)`        | `.copywrite`, footer links          |
+| Search wrapper bg  | `#f5f7fa` (very light gray)    | `.search-wrapper`                   |
+| White              | `#FFFFFF`                      | header bg, input bg                 |
+| Yellow accent line | `#fbb710`                      | `.hover-content .line` (80px × 3px) |
+| Font heading       | `'helveticaneuebold'`          | headings, button text               |
+| Font body          | `'helveticaneuemedium'`        | body text, nav                      |
+| Button radius      | `0` (rectangular, no rounding) | `.amado-btn`                        |
+| Button height      | `55px`                         | `.amado-btn`                        |
+| Button min-width   | `160px`                        | `.amado-btn`                        |
+| Product grid       | 33.33% per item (3-col)        | `.single-products-catagory`         |
+| Hover overlay      | dark semi-transparent on image | `a::after` pseudo-element           |
+| Hover content pos  | `top: 40px; left: 40px`        | `.hover-content`                    |
 
 ## Sections (in order, from preview DOM)
 
@@ -62,89 +62,89 @@ section, and a minimal footer.
    right = nav links (Home, Shop, Product, Cart, Checkout) right-aligned.
    Copyright: "Component Dock" instead of Colorlib.
 
-## Gherkin requirements
+## Requirements
 
-### Feature: Sidebar Navigation
+### Requirement: Sidebar Navigation
 
-```gherkin
-Scenario: Sidebar displays logo and navigation
-  Given the user loads the page
-  Then the sidebar shows the logo image
-  And the navigation links are visible: "Home", "Shop", "Product", "Cart", "Checkout"
-  And two CTA buttons are visible: "%Discount%" and "New this week"
+The sidebar SHALL display logo, navigation links, CTA buttons, cart/favourite/search links, and social icons.
 
-Scenario: Sidebar shows cart and social links
-  Given the sidebar is visible
-  Then a "Cart (0)" link is displayed
-  And a "Favourite" link is displayed
-  And a "Search" link is displayed
-  And social icons are visible: Pinterest, Instagram, Facebook, Twitter
-```
+#### Scenario: Sidebar displays logo and navigation
 
-### Feature: Product Categories Grid
+- **WHEN** the user loads the page
+- **THEN** the sidebar shows the logo
+- **AND** the navigation links are visible: "Home", "Shop", "Product", "Cart", "Checkout"
+- **AND** two CTA buttons are visible: "%Discount%" and "New this week"
 
-```gherkin
-Scenario: Nine product categories are displayed in a grid
-  Given the user views the main content area
-  Then there are 9 product category cards in a 3-column grid
-  And each card has a background image
-  And each card shows a price and product name
+#### Scenario: Sidebar shows cart and social links
 
-Scenario: Product cards show hover overlay
-  Given a product category card is visible
-  When the user hovers over the card
-  Then a dark overlay appears on the image
-  And a yellow accent line (80px wide, 3px tall) is shown
-  And the product name and price turn white
+- **WHEN** the sidebar is visible
+- **THEN** a "Cart (0)" link is displayed
+- **AND** a "Favourite" link is displayed
+- **AND** a "Search" link is displayed
+- **AND** social icons are visible: Pinterest, Instagram, Facebook, Twitter
 
-Scenario: Product cards are clickable
-  Given a product category card is visible
-  Then the entire card is a clickable link
-  And clicking navigates to the shop page
-```
+### Requirement: Product Categories Grid
 
-### Feature: Newsletter Section
+The product grid SHALL display 9 product category cards in a 3-column layout with hover overlay effects.
 
-```gherkin
-Scenario: Newsletter displays heading and form
-  Given the user scrolls to the newsletter section
-  Then the heading reads "Subscribe for a 25% Discount"
-  And the words "25% Discount" are highlighted in yellow
-  And an email input field is present
-  And a "Subscribe" button is visible with yellow background
+#### Scenario: Nine product categories are displayed in a grid
 
-Scenario: Newsletter has dark background
-  Given the newsletter section is visible
-  Then the background color is dark gray (#3c3c3c)
-  And the heading text is white
-  And the paragraph text is light gray
-```
+- **WHEN** the user views the main content area
+- **THEN** there are 9 product category cards in a 3-column grid
+- **AND** each card has a background image
+- **AND** each card shows a price and product name
 
-### Feature: Footer
+#### Scenario: Product cards are clickable links
 
-```gherkin
-Scenario: Footer displays logo and copyright
-  Given the user scrolls to the footer
-  Then the footer has a very dark background (#252525)
-  And a logo image is displayed
-  And the copyright text is visible in light gray
+- **WHEN** a product category card is visible
+- **THEN** the entire card is a clickable link to the shop page
 
-Scenario: Footer shows navigation links
-  Given the footer is visible
-  Then navigation links are shown: "Home", "Shop", "Product", "Cart", "Checkout"
-  And the links are right-aligned
-  And the active link is highlighted in yellow
-```
+### Requirement: Newsletter Section
 
-### Feature: Search Overlay
+The newsletter section SHALL display a heading with yellow accent, description, and email subscription form.
 
-```gherkin
-Scenario: Search overlay opens and closes
-  Given the user clicks the Search link in the sidebar
-  Then a full-screen search overlay opens
-  And a search input is displayed
-  And clicking the close button dismisses the overlay
-```
+#### Scenario: Newsletter displays heading and form
+
+- **WHEN** the user scrolls to the newsletter section
+- **THEN** the heading reads "Subscribe for a 25% Discount"
+- **AND** the words "25% Discount" are highlighted in yellow
+- **AND** an email input field is present
+- **AND** a "Subscribe" button is visible with yellow background
+
+#### Scenario: Newsletter has dark background
+
+- **WHEN** the newsletter section is visible
+- **THEN** the background color is dark gray (#3c3c3c)
+- **AND** the heading text is white
+
+### Requirement: Footer
+
+The footer SHALL display logo, copyright with Component Dock link, and navigation links.
+
+#### Scenario: Footer displays logo and copyright
+
+- **WHEN** the user scrolls to the footer
+- **THEN** the footer has a very dark background (#252525)
+- **AND** the logo is displayed
+- **AND** the copyright text is visible with a Component Dock link
+
+#### Scenario: Footer shows navigation links
+
+- **WHEN** the footer is visible
+- **THEN** navigation links are shown: "Home", "Shop", "Product", "Cart", "Checkout"
+- **AND** the links are right-aligned
+
+### Requirement: Search Overlay
+
+The search overlay SHALL open as a full-screen overlay with search input and close button.
+
+#### Scenario: Search overlay opens and closes
+
+- **WHEN** the user clicks the Search link in the sidebar
+- **THEN** a full-screen search overlay opens
+- **AND** a search input is displayed
+- **WHEN** the user clicks the close button
+- **THEN** the overlay is dismissed
 
 ## Verification checklist
 
@@ -156,7 +156,7 @@ Scenario: Search overlay opens and closes
 - [ ] Search overlay: opens on click, closes on X
 - [ ] Responsive: sidebar collapses to hamburger on mobile
 - [ ] Fonts: Helvetica Neue Bold (headings), Helvetica Neue Medium (body)
-  → Use Inter or system font as substitute (no self-hosted fonts)
+      → Use Inter or system font as substitute (no self-hosted fonts)
 - [ ] Colors: `#fbb710` brand, `#131212` dark, `#3c3c3c` newsletter, `#252525` footer
 - [ ] Buttons: rectangular (no radius), 55px height, 160px min-width
 - [ ] No ColorLib references in app code

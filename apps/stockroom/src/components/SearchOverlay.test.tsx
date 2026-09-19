@@ -1,3 +1,4 @@
+import { describe, expect, it, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { SearchOverlay } from './SearchOverlay'
@@ -25,5 +26,23 @@ describe('SearchOverlay', () => {
     render(<SearchOverlay isOpen={true} onClose={onClose} />)
     await user.click(screen.getByLabelText('Close search'))
     expect(onClose).toHaveBeenCalledOnce()
+  })
+
+  it('allows typing in search input', async () => {
+    const user = userEvent.setup()
+    render(<SearchOverlay isOpen={true} onClose={vi.fn()} />)
+    const input = screen.getByPlaceholderText('Type your keyword...')
+    await user.type(input, 'chair')
+    expect(input).toHaveValue('chair')
+  })
+
+  it('submits search form without error', async () => {
+    const user = userEvent.setup()
+    render(<SearchOverlay isOpen={true} onClose={vi.fn()} />)
+    const input = screen.getByPlaceholderText('Type your keyword...')
+    await user.type(input, 'chair')
+    await user.click(screen.getByLabelText('Search'))
+    // Form submission should not throw (preventDefault called)
+    expect(input).toHaveValue('chair')
   })
 })

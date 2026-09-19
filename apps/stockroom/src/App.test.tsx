@@ -1,4 +1,6 @@
+import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import { App } from './App'
 
 describe('App', () => {
@@ -21,5 +23,21 @@ describe('App', () => {
   it('renders footer with Component Dock', () => {
     render(<App />)
     expect(screen.getByText('Component Dock')).toBeInTheDocument()
+  })
+
+  it('opens search overlay when Search is clicked', async () => {
+    const user = userEvent.setup()
+    render(<App />)
+    await user.click(screen.getByText('Search'))
+    expect(screen.getByPlaceholderText('Type your keyword...')).toBeInTheDocument()
+  })
+
+  it('closes search overlay when close button is clicked', async () => {
+    const user = userEvent.setup()
+    render(<App />)
+    await user.click(screen.getByText('Search'))
+    expect(screen.getByPlaceholderText('Type your keyword...')).toBeInTheDocument()
+    await user.click(screen.getByLabelText('Close search'))
+    expect(screen.queryByPlaceholderText('Type your keyword...')).not.toBeInTheDocument()
   })
 })
