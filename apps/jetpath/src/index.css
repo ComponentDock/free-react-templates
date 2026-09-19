@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Jetpath brand palette — teal/navy travel agency */
+  --color-jet-teal: #0d9488;
+  --color-jet-teal-light: #14b8a6;
+  --color-jet-navy: #0f172a;
+  --color-jet-navy-light: #1e293b;
+  --color-jet-orange: #f97316;
+  --color-jet-text: #1e293b;
+  --color-jet-muted: #64748b;
+  --color-jet-light: #f1f5f9;
+  --color-jet-white: #ffffff;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}
