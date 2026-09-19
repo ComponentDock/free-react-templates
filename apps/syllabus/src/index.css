@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — Education / Courses template */
+  --color-brand: #ffb606;
+  --color-brand-dark: #e0a000;
+
+  /* Dark text for headings */
+  --color-ink: #3a3a3a;
+
+  /* Muted body text */
+  --color-body: #a5a5a5;
+
+  /* White background */
+  --color-surface: #ffffff;
+
+  /* Dark section background */
+  --color-dark-bg: #3a3a3a;
+
+  /* Primary scale — gold/amber */
+  --color-primary-50: #fff9e6;
+  --color-primary-100: #fff0bf;
+  --color-primary-200: #ffe699;
+  --color-primary-300: #ffd966;
+  --color-primary-400: #ffb606;
+  --color-primary-500: #e0a000;
+  --color-primary-600: #c48d00;
+  --color-primary-700: #996e00;
+  --color-primary-800: #6d4f00;
+
+  /* Font families */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-body);
+  }
+}
