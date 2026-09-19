@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Cellarly brand palette — warm amber/orange. */
+  --color-brand: #f96d00;
+  --color-brand-dark: #d45d00;
+
+  /* Heading color — dark charcoal. */
+  --color-heading: #222222;
+
+  /* Body text — medium grey. */
+  --color-ink: #777777;
+
+  /* Border / divider color. */
+  --color-border: #ececec;
+
+  /* White background. */
+  --color-surface: #ffffff;
+
+  /* Light grey background for sections. */
+  --color-bg-light: #f8f9fa;
+
+  /* Dark navbar / footer. */
+  --color-dark: #1a1a2e;
+  --color-dark-bottom: #111111;
+
+  /* Primary scale for shared UI Button/ButtonLink primary variants. */
+  --color-primary-50: #fff4e6;
+  --color-primary-100: #ffe0b2;
+  --color-primary-200: #ffcc80;
+  --color-primary-300: #ffb74d;
+  --color-primary-400: #ffa726;
+  --color-primary-500: #f96d00;
+  --color-primary-600: #d45d00;
+  --color-primary-700: #b35000;
+  --color-primary-800: #8c3f00;
+  --color-primary-900: #662d00;
+
+  /* Fonts: Spectral for headings, Roboto for body. */
+  --font-heading: 'Spectral', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
