@@ -12,6 +12,122 @@ stack: Vite + React 19 + Tailwind CSS 4 + TypeScript (strict). No ColorLib
 references in app code — provenance lives in this spec, TEMPLATES.md, and the
 PR.
 
+## Requirements
+
+### Requirement: TopBar renders contact info
+
+The TopBar SHALL display phone number and email address on a dark background.
+
+#### Scenario: TopBar displays contact details
+
+- **WHEN** the user opens the Shopbox homepage
+- **THEN** the top bar displays a phone number and email address
+- **AND** the top bar has a dark navy background
+
+### Requirement: Navbar renders navigation links
+
+The Navbar SHALL display all navigation links, utility icons, and be sticky on scroll.
+
+#### Scenario: Navbar displays nav links and icons
+
+- **WHEN** the user opens the Shopbox homepage
+- **THEN** the navbar displays links: Home, Shop, Categories, Blog, About, Contact
+- **AND** the navbar displays a search icon, account icon, and cart icon with badge
+- **AND** the navbar is sticky when scrolling
+
+### Requirement: Hero section displays headline and CTA
+
+The Hero SHALL display a headline, subheadline, and CTA button over a background image.
+
+#### Scenario: Hero renders content
+
+- **WHEN** the user opens the Shopbox homepage
+- **THEN** the hero shows a headline and subheadline
+- **AND** the hero shows a call-to-action button
+- **AND** the hero has a background image
+
+### Requirement: Featured categories render in a grid
+
+FeaturedCategories SHALL render category cards in a responsive grid.
+
+#### Scenario: Category grid renders
+
+- **WHEN** the user views the Shopbox homepage
+- **THEN** the featured categories section shows 3 or 4 category cards
+- **AND** each category card has an image and a category name
+- **AND** hovering a category card triggers a visual effect
+
+### Requirement: Featured products render in a grid
+
+FeaturedProducts SHALL render product cards with prices, ratings, and hover actions.
+
+#### Scenario: Product grid renders
+
+- **WHEN** the user views the Shopbox homepage
+- **THEN** the featured products section shows product cards
+- **AND** each product card displays an image, name, and price
+- **AND** hovering a product card reveals quick-add or wishlist icons
+
+### Requirement: Promo banner displays with CTA
+
+PromoBanner SHALL display a promotional message with a call-to-action button.
+
+#### Scenario: Promo banner renders
+
+- **WHEN** the user scrolls to the promo section
+- **THEN** the promo banner shows a headline and call-to-action button
+- **AND** the promo banner has a contrasting background
+
+### Requirement: New arrivals render with NEW badges
+
+NewArrivals SHALL render product cards with NEW badge overlays.
+
+#### Scenario: New arrivals grid renders
+
+- **WHEN** the user scrolls to the new arrivals section
+- **THEN** the new arrivals section shows product cards
+- **AND** new arrival cards display a "NEW" badge
+
+### Requirement: Blog section renders post cards
+
+BlogSection SHALL render blog post cards with image, metadata, and excerpt.
+
+#### Scenario: Blog grid renders
+
+- **WHEN** the user scrolls to the blog section
+- **THEN** the blog section shows 3 post cards
+- **AND** each post card has an image, date, title, excerpt, and read-more link
+
+### Requirement: Newsletter form accepts email subscription
+
+Newsletter SHALL accept email input and show confirmation on submit.
+
+#### Scenario: Newsletter form works
+
+- **WHEN** the user types a valid email and clicks submit
+- **THEN** the form accepts the input without error
+
+### Requirement: Footer renders columns and Component Dock link
+
+Footer SHALL render 4 columns with links and a Component Dock attribution.
+
+#### Scenario: Footer renders correctly
+
+- **WHEN** the user scrolls to the footer
+- **THEN** the footer has 4 columns with links
+- **AND** the footer contains a link to componentdock.com
+- **AND** the copyright line is present
+
+### Requirement: Mobile responsive navigation
+
+Navbar SHALL show a hamburger menu on mobile viewports.
+
+#### Scenario: Mobile navigation toggle
+
+- **WHEN** the viewport width is less than 768px
+- **THEN** the navbar shows a hamburger menu icon
+- **AND** clicking the hamburger opens a mobile navigation drawer
+
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Wordpress Ecommerce Themes" (actually the
@@ -42,20 +158,20 @@ PR.
 
 ## Design tokens (from screenshot analysis — preview unreachable)
 
-| Token              | Value              | Notes                                                      |
-| ------------------ | ------------------ | ---------------------------------------------------------- |
-| Brand color        | `#1a1a2e`          | Dark navy — used for header bar, buttons, footer background |
-| Accent color       | `#e94560`          | Warm coral/red — used for sale badges, hover states, CTAs  |
-| Secondary accent   | `#f5f5f5`          | Light gray — section alternating backgrounds               |
-| Heading text       | `#1a1a2e`          | Dark navy, matching brand                                  |
-| Body text          | `#666666`          | Medium gray for paragraphs                                 |
-| Light bg           | `#ffffff`           | Primary content background (white)                         |
-| Alt section bg     | `#f8f9fa`           | Off-white for alternating sections                         |
-| Footer bg          | `#1a1a2e`           | Dark navy, same as brand                                   |
-| Footer text        | `#b0b0b0`          | Muted light gray on dark footer                            |
-| Button radius      | `2px`               | Nearly square / sharp corners — minimal radius             |
-| Font family        | `'Poppins', sans-serif` | Clean geometric sans-serif (Google Fonts)              |
-| Font weights       | 300, 400, 500, 600 | Light through semi-bold                                     |
+| Token            | Value                   | Notes                                                       |
+| ---------------- | ----------------------- | ----------------------------------------------------------- |
+| Brand color      | `#1a1a2e`               | Dark navy — used for header bar, buttons, footer background |
+| Accent color     | `#e94560`               | Warm coral/red — used for sale badges, hover states, CTAs   |
+| Secondary accent | `#f5f5f5`               | Light gray — section alternating backgrounds                |
+| Heading text     | `#1a1a2e`               | Dark navy, matching brand                                   |
+| Body text        | `#666666`               | Medium gray for paragraphs                                  |
+| Light bg         | `#ffffff`               | Primary content background (white)                          |
+| Alt section bg   | `#f8f9fa`               | Off-white for alternating sections                          |
+| Footer bg        | `#1a1a2e`               | Dark navy, same as brand                                    |
+| Footer text      | `#b0b0b0`               | Muted light gray on dark footer                             |
+| Button radius    | `2px`                   | Nearly square / sharp corners — minimal radius              |
+| Font family      | `'Poppins', sans-serif` | Clean geometric sans-serif (Google Fonts)                   |
+| Font weights     | 300, 400, 500, 600      | Light through semi-bold                                     |
 
 **Note:** Tokens are estimated from the screenshot since the live preview was
 unreachable (404). The implementer should cross-reference the screenshot and
@@ -97,9 +213,9 @@ adjust exact hex values if they differ.
     - Col 2: "Quick Links" — Home, Shop, About, Contact
     - Col 3: "Customer Service" — My Account, Order Tracking, Wishlist, Returns
     - Col 4: "Contact Info" — address, phone, email
-    Copyright bar at bottom: "© 2026 Shopbox. All rights reserved."
-    **Component Dock link:** "Made with Component Dock" linking to
-    `https://www.componentdock.com/`.
+      Copyright bar at bottom: "© 2026 Shopbox. All rights reserved."
+      **Component Dock link:** "Made with Component Dock" linking to
+      `https://www.componentdock.com/`.
 
 ## Gherkin scenarios
 

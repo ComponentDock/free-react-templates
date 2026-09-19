@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Shopbox brand palette — dark navy primary (#1a1a2e) from the
+     original boutique ecommerce design. Coral accent (#e94560). */
+
+  --color-primary-50: #f0f0f5;
+  --color-primary-100: #d5d5e0;
+  --color-primary-200: #ababcc;
+  --color-primary-300: #8080b3;
+  --color-primary-400: #565699;
+  --color-primary-500: #1a1a2e;
+  --color-primary-600: #161628;
+  --color-primary-700: #121222;
+  --color-primary-800: #0e0e1c;
+  --color-primary-900: #0a0a16;
+
+  --color-accent: #e94560;
+  --color-accent-hover: #d63851;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
