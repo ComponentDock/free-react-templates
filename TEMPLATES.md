@@ -1549,7 +1549,7 @@
 - [x] **Myhome** — [colorlib](https://colorlib.com/wp/template/myhome/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/myhome-free-template.jpg) · [roofmark](https://roofmark.free.componentdock.com)
 - [x] **Rehomes** — [colorlib](https://colorlib.com/wp/template/rehomes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rehomes-free-template.jpg) · [dwellix](https://dwellix.free.componentdock.com)
 - [x] **Royalestate** — [colorlib](https://colorlib.com/wp/template/royalestate/) · [homefront](https://homefront.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/royalestate-free-template.jpg)
-- [~] **Travelers** — [colorlib](https://colorlib.com/wp/template/travelers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelers-free-template.jpg)
+- [x] **Travelers** — [colorlib](https://colorlib.com/wp/template/travelers/) · [jetpath](https://jetpath.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelers-free-template.jpg)
 - [x] **Travelix** — [colorlib](https://colorlib.com/wp/template/travelix/) · [trekcraft](https://trekcraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelix-free-template.jpg)
 - [ ] **Travello** — [colorlib](https://colorlib.com/wp/template/travello/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travello-free-template-1.jpg)
 
@@ -3005,7 +3005,7 @@
 - [ ] **Travel2** — [colorlib](https://colorlib.com/wp/template/travel2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travel2-free-template.jpg)
 - [x] **Traveland** — [colorlib](https://colorlib.com/wp/template/traveland/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/traveland-free-template.jpg) · [peregrine](https://peregrine.free.componentdock.com)
 - [ ] **Travelasia** — [colorlib](https://colorlib.com/wp/template/travelasia/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelasia-free-creative-travel-agency-booking-template.jpg)
-- [~] **Travelers** — [colorlib](https://colorlib.com/wp/template/travelers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelers-free-template.jpg)
+- [x] **Travelers** — [colorlib](https://colorlib.com/wp/template/travelers/) · [jetpath](https://jetpath.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelers-free-template.jpg)
 - [x] **Travelix** — [colorlib](https://colorlib.com/wp/template/travelix/) · [trekcraft](https://trekcraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelix-free-template.jpg)
 - [ ] **Travello** — [colorlib](https://colorlib.com/wp/template/travello/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travello-free-template-1.jpg)
 - [x] **Travelo** — [colorlib](https://colorlib.com/wp/template/travelo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelo-free-template.jpg) · [wayfarer](https://wayfarer.free.componentdock.com)
