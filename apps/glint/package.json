@@ -1,7 +1,6 @@
 {
   "name": "@free-react-templates/glint",
   "private": true,
-  "homepage": "https://glint.free.componentdock.com",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
@@ -29,5 +28,6 @@
     "tailwindcss": "latest",
     "typescript": "latest",
     "vite": "latest"
-  }
+  },
+  "homepage": "https://glint.free.componentdock.com"
 }

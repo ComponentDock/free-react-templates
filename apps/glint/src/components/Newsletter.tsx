@@ -1,45 +1,63 @@
-import { useState } from 'react'
-import type { FormEvent } from 'react'
-import { Mail } from 'lucide-react'
+import { useState, type FormEvent } from 'react'
+import { Button } from '@free-react-templates/ui'
+
+const EMAIL_PATTERN = /^\S+@\S+\.\S+$/
 
 export function Newsletter() {
   const [email, setEmail] = useState('')
+  const [error, setError] = useState('')
+  const [subscribed, setSubscribed] = useState(false)
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setEmail('')
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    if (!EMAIL_PATTERN.test(email.trim())) {
+      setError('A valid email address is required.')
+      return
+    }
+    setError('')
+    setSubscribed(true)
   }
 
   return (
-    <section className="bg-primary-400 py-16">
-      <div className="mx-auto max-w-2xl px-4 text-center sm:px-6">
-        <h2 className="mb-4 font-display text-3xl font-bold text-white">
-          Subscribe to our newsletter
-        </h2>
-        <p className="mb-8 text-white/80">
-          Get the latest dental tips, offers, and news delivered to your inbox.
-        </p>
-        <form onSubmit={handleSubmit} className="flex gap-2">
-          <label htmlFor="newsletter-email" className="sr-only">
-            Email address
-          </label>
-          <input
-            id="newsletter-email"
-            type="email"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Your email address"
-            className="flex-1 rounded px-4 py-3 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-600"
-          />
-          <button
-            type="submit"
-            className="inline-flex items-center gap-2 rounded bg-gray-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-gray-800"
-          >
-            <Mail className="h-4 w-4" aria-hidden="true" />
-            Subscribe
-          </button>
-        </form>
+    <section className="bg-brand py-12">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-4 sm:flex-row sm:px-6">
+        <div className="text-white">
+          <h4 className="text-xl font-semibold">Subscribe to our newsletter</h4>
+          <p className="mt-1 text-sm text-white/80">
+            Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.
+          </p>
+        </div>
+        {subscribed ? (
+          <p className="rounded border border-white/40 bg-white/10 px-6 py-3 text-sm text-white">
+            Thanks for subscribing!
+          </p>
+        ) : (
+          <form onSubmit={handleSubmit} noValidate className="flex gap-2">
+            <label htmlFor="newsletter-email" className="sr-only">
+              Your E-mail
+            </label>
+            <input
+              id="newsletter-email"
+              type="email"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+              placeholder="Your E-mail"
+              aria-invalid={Boolean(error)}
+              className="rounded bg-white px-4 py-3 text-sm text-ink placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
+            />
+            <Button
+              type="submit"
+              className="rounded bg-gray-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-gray-800"
+            >
+              Subscribe
+            </Button>
+          </form>
+        )}
+        {error ? (
+          <p role="alert" className="text-sm text-red-200">
+            {error}
+          </p>
+        ) : null}
       </div>
     </section>
   )

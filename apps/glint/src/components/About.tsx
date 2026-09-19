@@ -1,36 +1,27 @@
 export function About() {
   return (
-    <section id="about" className="py-16">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-2">
-        {/* Image */}
-        <div className="overflow-hidden rounded">
+    <section id="about" className="bg-white py-24">
+      <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-5">
+        <div className="lg:col-span-2">
           <img
-            src="https://picsum.photos/seed/glint-about/600/450"
+            src="https://picsum.photos/seed/glint-about/600/400"
             alt="Dental clinic interior"
-            className="h-full w-full object-cover"
+            className="w-full rounded object-cover"
+            loading="lazy"
           />
         </div>
-
-        {/* Text */}
-        <div className="flex flex-col justify-center">
-          <h2 className="mb-4 font-display text-3xl font-bold text-ink">
-            We Care About Your Teeth
-          </h2>
-          <p className="mb-6 leading-relaxed text-smoke">
-            Our team of experienced dental professionals is dedicated to providing you with the
-            highest quality care. Using the latest technology and techniques, we ensure every visit
-            is comfortable and effective.
+        <div className="lg:col-span-3">
+          <h2 className="mb-6 text-3xl font-bold text-ink">We Care About Your Teeth</h2>
+          <p className="mb-6 leading-relaxed text-mist">
+            Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula
+            sapien. Suspendisse cursus faucibus finibus. Orci varius natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus.
           </p>
-          <p className="mb-6 leading-relaxed text-smoke">
-            From routine cleanings to complex procedures, we offer a comprehensive range of dental
-            services tailored to your needs. Your smile is our passion.
-          </p>
-
-          {/* Awards */}
           <img
-            src="https://picsum.photos/seed/glint-awards/400/80"
+            src="https://picsum.photos/seed/glint-awards/500/120"
             alt="Awards and certifications"
-            className="h-20 w-auto object-contain"
+            className="w-full max-w-md rounded object-contain"
+            loading="lazy"
           />
         </div>
       </div>

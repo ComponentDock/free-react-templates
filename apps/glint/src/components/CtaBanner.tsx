@@ -1,16 +1,23 @@
+import { ButtonLink } from '@free-react-templates/ui'
+
 export function CtaBanner() {
   return (
-    <section className="bg-primary-400 py-12">
-      <div className="mx-auto flex max-w-7xl flex-col items-center gap-6 px-4 text-center sm:flex-row sm:justify-between sm:text-left sm:px-6">
-        <h2 className="max-w-xl text-2xl font-bold text-white md:text-3xl">
-          Schedule your appointment for a free consultation
-        </h2>
-        <a
+    <section className="bg-brand">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-10 sm:flex-row sm:px-6">
+        <div className="text-white">
+          <h4 className="text-xl font-semibold">
+            Schedule your appointment for a free consultation.
+          </h4>
+          <p className="mt-1 text-sm text-white/80">
+            Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.
+          </p>
+        </div>
+        <ButtonLink
           href="#contact"
-          className="inline-block rounded bg-white px-8 py-3 text-sm font-semibold text-primary-600 transition-colors hover:bg-gray-100"
+          className="shrink-0 rounded border-2 border-white bg-transparent px-8 py-3 font-semibold text-white transition-colors hover:bg-white hover:text-brand"
         >
           Learn More
-        </a>
+        </ButtonLink>
       </div>
     </section>
   )

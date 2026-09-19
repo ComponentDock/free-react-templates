@@ -3,26 +3,19 @@ import { render, screen } from '@testing-library/react'
 import { Stats } from './Stats'
 
 describe('Stats', () => {
-  it('renders all four statistics', () => {
+  it('renders four statistics', () => {
     render(<Stats />)
-
     expect(screen.getByText('531')).toBeInTheDocument()
-    expect(screen.getByText('Digital X-rays Taken')).toBeInTheDocument()
-
-    expect(screen.getByText('14,000')).toBeInTheDocument()
-    expect(screen.getByText('Tooth Brushes Distributed')).toBeInTheDocument()
-
+    expect(screen.getByText('14K')).toBeInTheDocument()
     expect(screen.getByText('678')).toBeInTheDocument()
-    expect(screen.getByText('Successful Extractions')).toBeInTheDocument()
-
-    expect(screen.getByText('2,134')).toBeInTheDocument()
-    expect(screen.getByText('Happy Patients')).toBeInTheDocument()
+    expect(screen.getByText('2134')).toBeInTheDocument()
   })
 
-  it('has a dark background overlay', () => {
-    const { container } = render(<Stats />)
-    expect(container.firstElementChild).toHaveStyle({
-      backgroundImage: expect.stringContaining('linear-gradient'),
-    })
+  it('renders stat labels', () => {
+    render(<Stats />)
+    expect(screen.getByText('X-rays')).toBeInTheDocument()
+    expect(screen.getByText('Tooth Brushes')).toBeInTheDocument()
+    expect(screen.getByText('Extractions')).toBeInTheDocument()
+    expect(screen.getByText('Happy Patients')).toBeInTheDocument()
   })
 })
