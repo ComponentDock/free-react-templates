@@ -1560,7 +1560,7 @@
 ## Ecommerce (56)
 
 - [x] **Abcbook** — [colorlib](https://colorlib.com/wp/template/abcbook/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/abcbook-free-template.jpg) · [spine](https://spine.free.componentdock.com)
-- [ ] **Amado** — [colorlib](https://colorlib.com/wp/template/amado/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amado-free-template.jpg)
+- [~] **Amado** — [colorlib](https://colorlib.com/wp/template/amado/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amado-free-template.jpg)
 - [x] **Aranoz** — [colorlib](https://colorlib.com/wp/template/aranoz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aranoz-free-template.jpg) · [settle](https://settle.free.componentdock.com)
 - [ ] **Aroma** — [colorlib](https://colorlib.com/wp/template/aroma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aroma-free-template.jpg)
 - [x] **Ashion** — [colorlib](https://colorlib.com/wp/template/ashion/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ashion-free-template.jpg) · [atelier](https://atelier.free.componentdock.com)
