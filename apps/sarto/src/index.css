@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Sarto brand palette — recreated from the ColorLib Fashiop design
+     (brand blue #1641ff). */
+  --color-brand-50: #eef2ff;
+  --color-brand-100: #dde5ff;
+  --color-brand-200: #c2cfff;
+  --color-brand-300: #96a8ff;
+  --color-brand-400: #6478ff;
+  --color-brand-500: #1641ff;
+  --color-brand-600: #0e2fdb;
+  --color-brand-700: #0c24b0;
+  --color-brand-800: #0f228e;
+  --color-brand-900: #132174;
+
+  /* Roboto — the original template's primary typeface */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  /* Poppins — accent typeface */
+  --font-accent: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
