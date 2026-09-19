@@ -23,20 +23,20 @@ accent and clean product cards with hover effects.
 
 ### Colors
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| primary-500 | `#f97316` (orange) | CTA buttons, accent, focus rings |
-| primary-600 | `#ea580c` (deeper orange) | CTA button hover, newsletter bg |
-| primary-700 | `#c2410c` (dark orange) | Dark hover states |
-| gray-50 | `#f9fafb` | Light section bg, benefit strip |
-| gray-100 | `#f3f4f6` | Subtle bg, borders |
-| gray-800 | `#1f2937` | Dark mode cards, scrollbar |
-| gray-900 | `#111827` | Dark mode sections |
-| gray-950 | `#030712` | Hero bg, dark section bg |
-| white | `#fff` | Light section bg, text on dark |
-| green-500 | `#22c55e` | Success/availability indicators |
-| red-500 | `#ef4444` | Discount badges, errors |
-| yellow-400 | `#facc15` | Star ratings |
+| Token       | Value                     | Usage                            |
+| ----------- | ------------------------- | -------------------------------- |
+| primary-500 | `#f97316` (orange)        | CTA buttons, accent, focus rings |
+| primary-600 | `#ea580c` (deeper orange) | CTA button hover, newsletter bg  |
+| primary-700 | `#c2410c` (dark orange)   | Dark hover states                |
+| gray-50     | `#f9fafb`                 | Light section bg, benefit strip  |
+| gray-100    | `#f3f4f6`                 | Subtle bg, borders               |
+| gray-800    | `#1f2937`                 | Dark mode cards, scrollbar       |
+| gray-900    | `#111827`                 | Dark mode sections               |
+| gray-950    | `#030712`                 | Hero bg, dark section bg         |
+| white       | `#fff`                    | Light section bg, text on dark   |
+| green-500   | `#22c55e`                 | Success/availability indicators  |
+| red-500     | `#ef4444`                 | Discount badges, errors          |
+| yellow-400  | `#facc15`                 | Star ratings                     |
 
 ### Fonts
 
@@ -67,142 +67,154 @@ accent and clean product cards with hover effects.
 - Ghost/outline: border-based with hover fill
 - Add-to-cart: small icon button, appears on hover for product cards
 
-## Gherkin Requirements
+## Requirements
 
-### Section 1: Sticky Navbar
+### Requirement: Navbar displays brand and navigation
 
-```gherkin
-Scenario: Navbar displays brand and navigation links
-  Given I visit the Lacecraft homepage
-  Then I see the brand name "Lacecraft" in the navbar
-  And I see navigation links: Shop, Categories, New Arrivals, Sale, About
-  And I see a Wishlist icon and My Account link
+Users SHALL see the brand name "Lacecraft" in the navbar with navigation links.
 
-Scenario: Navbar becomes translucent on scroll
-  Given I am on the Lacecraft homepage
-  When I scroll down past the hero
-  Then the navbar background becomes translucent white/95 with backdrop-blur
-```
+#### Scenario: Navbar displays brand and navigation links
 
-### Section 2: Hero
+- **WHEN** I visit the Lacecraft homepage
+- **THEN** I see the brand name "Lacecraft" in the navbar
+- **AND** I see navigation links: Shop, Categories, New Arrivals, Sale, About
+- **AND** I see a Wishlist icon and My Account link
 
-```gherkin
-Scenario: Hero displays headline and CTA
-  Given I visit the Lacecraft homepage
-  Then I see a large hero section with dark background
-  And I see the text "Step Into Your Best"
-  And I see a subheadline about premium footwear
-  And I see a "Shop Now" button in orange primary color
-  And I see a "Browse Categories" secondary link
+#### Scenario: Navbar becomes translucent on scroll
 
-Scenario: Hero displays stats row
-  Given I view the hero section
-  Then I see 50K+ Happy Customers
-  And I see 4.9 Average Rating
-  And I see 300+ Styles Available
-  And I see Free Shipping Orders over $75
-```
+- **WHEN** I scroll down past the hero
+- **THEN** the navbar background becomes translucent white/95 with backdrop-blur
 
-### Section 3: Shop by Category
+### Requirement: Hero displays headline and CTA
 
-```gherkin
-Scenario: Category section shows product categories
-  Given I scroll to the categories section
-  Then I see "Shop by Category" heading
-  And I see a "View All" link
-  And I see category cards for Running, Sneakers, Basketball, Sandals
-  And each card shows product count and a "Shop Now" link
+Users SHALL see a large hero section with headline, subtext, and call-to-action buttons.
 
-Scenario: Category cards display product counts
-  Given I view the categories section
-  Then Running shows "48 products"
-  And Sneakers shows "86 products"
-  And Basketball shows "32 products"
-  And Sandals shows "24 products"
-```
+#### Scenario: Hero displays headline and CTA
 
-### Section 4: Featured Collection
+- **WHEN** I visit the Lacecraft homepage
+- **THEN** I see a large hero section with dark background
+- **AND** I see the text "Step Into Your Style"
+- **AND** I see a subheadline about premium footwear
+- **AND** I see a "Shop Now" button in orange primary color
+- **AND** I see a "Browse Categories" secondary link
 
-```gherkin
-Scenario: Featured section shows product grid
-  Given I scroll to the featured collection
-  Then I see "Featured Collection" heading
-  And I see "Our most popular styles handpicked for you" subtext
-  And I see a "View All" link
-  And I see product cards with image, name, category, rating, price, sizes
+#### Scenario: Hero displays stats row
 
-Scenario: Product card shows badge and discount
-  Given I view a featured product card
-  Then I see a badge like "BESTSELLER" or "NEW"
-  And I see a discount percentage if applicable (e.g. "-18%")
-  And I see an "Add to Cart" button on hover
-```
+- **WHEN** I view the hero section
+- **THEN** I see 50K+ Happy Customers
+- **AND** I see 4.9 Average Rating
+- **AND** I see 300+ Styles Available
+- **AND** I see Free Shipping Orders over $75
 
-### Section 5: Benefits Strip
+### Requirement: Shop by Category section
 
-```gherkin
-Scenario: Benefits strip shows four value props
-  Given I scroll to the benefits strip
-  Then I see "Free Shipping" with description
-  And I see "60-Day Returns" with description
-  And I see "Size Guarantee" with description
-  And I see "Secure Checkout" with description
-```
+Users SHALL see product categories with counts.
 
-### Section 6: New Arrivals
+#### Scenario: Category section shows product categories
 
-```gherkin
-Scenario: New arrivals section displays fresh products
-  Given I scroll to the new arrivals section
-  Then I see "Just Dropped" heading
-  And I see "New Arrivals" subheading
-  And I see "Shop New Arrivals" link
-  And I see product cards with "NEW" badge
-```
+- **WHEN** I scroll to the categories section
+- **THEN** I see "Shop by Category" heading
+- **AND** I see a "View All" link
+- **AND** I see category cards for Running, Sneakers, Basketball, Sandals
+- **AND** each card shows product count and a "Shop Now" link
 
-### Section 7: Customer Testimonials
+#### Scenario: Category cards display product counts
 
-```gherkin
-Scenario: Testimonials section shows customer reviews
-  Given I scroll to the testimonials section
-  Then I see "Customer Love" heading
-  And I see "What Our Customers Say" subheading
-  And I see testimonial cards with quote, author name, and role
-  And I see aggregate stats: 15K+ 5-Star Reviews, 98% Would Recommend
+- **WHEN** I view the categories section
+- **THEN** Running shows "48 products"
+- **AND** Sneakers shows "86 products"
+- **AND** Basketball shows "32 products"
+- **AND** Sandals shows "24 products"
 
-Scenario: Testimonials have star ratings
-  Given I view a testimonial card
-  Then I see a 5-star rating displayed
-```
+### Requirement: Featured Collection product grid
 
-### Section 8: Newsletter CTA
+Users SHALL see featured products with ratings, prices, and badges.
 
-```gherkin
-Scenario: Newsletter section invites signup
-  Given I scroll to the newsletter section
-  Then I see "Ready to Step Up Your Game?" heading
-  And I see description about 15% off first order
-  And I see an email input field
-  And I see a "Get 15% Off" submit button
-  And I see "No spam, ever. Unsubscribe anytime." disclaimer
+#### Scenario: Featured section shows product grid
 
-Scenario: Newsletter section shows app download links
-  Given I view the newsletter section
-  Then I see "Download Our App" heading
-  And I see App Store and Google Play download badges
-```
+- **WHEN** I scroll to the featured collection
+- **THEN** I see "Featured Collection" heading
+- **AND** I see "Our most popular styles handpicked for you" subtext
+- **AND** I see a "View All" link
+- **AND** I see product cards with image, name, category, rating, price, sizes
 
-### Section 9: Footer
+#### Scenario: Product card shows badge and discount
 
-```gherkin
-Scenario: Footer displays links and payment methods
-  Given I scroll to the footer
-  Then I see the Lacecraft brand name
-  And I see footer navigation links
-  And I see a link to https://www.componentdock.com/ ("Component Dock")
-  And I see payment method icons (Visa, Amex, etc.)
-  And I see Privacy and Terms links
-```
+- **WHEN** I view a featured product card
+- **THEN** I see a badge like "BESTSELLER" or "NEW"
+- **AND** I see a discount percentage if applicable
+
+### Requirement: Benefits strip
+
+Users SHALL see four value proposition items.
+
+#### Scenario: Benefits strip shows four value props
+
+- **WHEN** I scroll to the benefits strip
+- **THEN** I see "Free Shipping" with description
+- **AND** I see "60-Day Returns" with description
+- **AND** I see "Size Guarantee" with description
+- **AND** I see "Secure Checkout" with description
+
+### Requirement: New Arrivals section
+
+Users SHALL see new arrival products with NEW badges.
+
+#### Scenario: New arrivals section displays fresh products
+
+- **WHEN** I scroll to the new arrivals section
+- **THEN** I see "Just Dropped" heading
+- **AND** I see "New Arrivals" subheading
+- **AND** I see "Shop New Arrivals" link
+- **AND** I see product cards with "NEW" badge
+
+### Requirement: Customer Testimonials
+
+Users SHALL see customer reviews with star ratings and trust stats.
+
+#### Scenario: Testimonials section shows customer reviews
+
+- **WHEN** I scroll to the testimonials section
+- **THEN** I see "Customer Love" heading
+- **AND** I see "What Our Customers Say" subheading
+- **AND** I see testimonial cards with quote, author name, and role
+- **AND** I see aggregate stats: 15K+ 5-Star Reviews, 98% Would Recommend
+
+#### Scenario: Testimonials have star ratings
+
+- **WHEN** I view a testimonial card
+- **THEN** I see a 5-star rating displayed
+
+### Requirement: Newsletter CTA
+
+Users SHALL see a newsletter signup form with email input and submit button.
+
+#### Scenario: Newsletter section invites signup
+
+- **WHEN** I scroll to the newsletter section
+- **THEN** I see "Ready to Step Up Your Game?" heading
+- **AND** I see description about 15% off first order
+- **AND** I see an email input field
+- **AND** I see a "Get 15% Off" submit button
+- **AND** I see "No spam" disclaimer
+
+#### Scenario: Newsletter section shows app download links
+
+- **WHEN** I view the newsletter section
+- **THEN** I see App Store and Google Play download badges
+
+### Requirement: Footer
+
+Users SHALL see footer with brand, navigation links, and Component Dock attribution.
+
+#### Scenario: Footer displays links and payment methods
+
+- **WHEN** I scroll to the footer
+- **THEN** I see the Lacecraft brand name
+- **AND** I see footer navigation links
+- **AND** I see a link to https://www.componentdock.com/ ("Component Dock")
+- **AND** I see payment method icons (Visa, Amex, etc.)
+- **AND** I see Privacy and Terms links
 
 ## Verification Checklist
 
