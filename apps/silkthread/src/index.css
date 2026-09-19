@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* SilkThread brand palette — men's fashion e-commerce:
+     accent red #e53637 (section subtitles, sale labels, hot deal sticker),
+     dark #111111 (headings, footer bg, nav top bar), body text #3d3d3d,
+     cream #f3f2ee (categories section bg). */
+  --color-brand: #e53637;
+  --color-ink: #111111;
+  --color-body: #3d3d3d;
+  --color-cream: #f3f2ee;
+  --color-surface: #ffffff;
+  --color-rule: #e5e5e5;
+
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #e53637;
+  --color-primary-600: #cc2f2f;
+  --color-primary-700: #ab2525;
+  --color-primary-800: #8f2222;
+  --color-primary-900: #782222;
+
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
