@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Drape brand palette — terracotta accent from Fashe design */
+  --color-terra-50: #fdf3ef;
+  --color-terra-100: #fbe4da;
+  --color-terra-200: #f5c5b0;
+  --color-terra-300: #eda080;
+  --color-terra-400: #c8553d;
+  --color-terra-500: #b44530;
+  --color-terra-600: #9a3826;
+  --color-terra-700: #7e2d1f;
+  --color-terra-800: #66261c;
+  --color-terra-900: #52211a;
+
+  --color-warm-50: #faf9f7;
+  --color-warm-100: #f4f2ee;
+  --color-warm-200: #e8e4dc;
+  --color-warm-300: #d4cec3;
+  --color-warm-400: #b8b0a0;
+  --color-warm-500: #9a9080;
+  --color-warm-600: #7a7060;
+  --color-warm-700: #5a5248;
+  --color-warm-800: #3a3530;
+  --color-warm-900: #1a1814;
+
+  --font-sans: 'Assistant', ui-sans-serif, system-ui, sans-serif;
+}
