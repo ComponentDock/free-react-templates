@@ -1609,7 +1609,7 @@
 - [x] **Timezone** — [colorlib](https://colorlib.com/wp/template/timezone/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/timezone-free-template.jpg) · [chrono](https://chrono.free.componentdock.com)
 
 - [x] **Violet** — [colorlib](https://colorlib.com/wp/template/violet/) · [vogue](https://vogue.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/violet-free-template.jpg)
-- [~] **Watch** — [colorlib](https://colorlib.com/wp/template/watch/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/watch-free-template.jpg)
+- [x] **Watch** — [colorlib](https://colorlib.com/wp/template/watch/) · [ticktock](https://ticktock.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/watch-free-template.jpg)
 - [x] **Wines** — [colorlib](https://colorlib.com/wp/template/wines/) · [vintner](https://vintner.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wines-free-template.jpg)
 - [x] **Winkel** — [colorlib](https://colorlib.com/wp/template/winkel/) · [warehaus](https://warehaus.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/winkel-free-template.jpg)
 - [x] **Winter** — [colorlib](https://colorlib.com/wp/template/winter/) · [snowline](https://snowline.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/winter-free-template.jpg)
