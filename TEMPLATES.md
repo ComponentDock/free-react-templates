@@ -1569,7 +1569,7 @@
 - [x] **Coza Store** — [colorlib](https://colorlib.com/wp/template/coza-store/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cozastore-free-template.jpg) · [mannequin](https://mannequin.free.componentdock.com)
 - [x] **Dealers** — [colorlib](https://colorlib.com/wp/template/dealers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dealers-free-template.jpg) · [draped](https://draped.free.componentdock.com)
 - [x] **Divisima** — [colorlib](https://colorlib.com/wp/template/divisima/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/divisima-free-template.jpg) · [modish](https://modish.free.componentdock.com)
-- [ ] **E Shop** — [colorlib](https://colorlib.com/wp/template/e-shop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/e-shop-free-ecommerce-website-template.jpg)
+- [~] **E Shop** — [colorlib](https://colorlib.com/wp/template/e-shop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/e-shop-free-ecommerce-website-template.jpg)
 - [x] **Eiser** — [colorlib](https://colorlib.com/wp/template/eiser/) · [cartly](https://cartly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eiser-free-template-1.jpg)
 - [x] **Electro** — [colorlib](https://colorlib.com/wp/template/electro/) · [joule](https://joule.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/electro-free-ecommerce-template.jpg)
 - [x] **Essence** — [colorlib](https://colorlib.com/wp/template/essence/) · [garment](https://garment.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/essence-free-template.jpg)

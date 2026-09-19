@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Wares brand palette — recreated from the ColorLib "E Shop" design
+     (css/style.css): orange #F8694A accents/buttons, dark #30323A headers,
+     body #4A4E5A, light grey #F6F7F8 section backgrounds. */
+  --color-brand: #f8694a;
+  --color-brand-dark: #e55a3a;
+
+  /* Ink — dark headers/footer (#30323A from the original). */
+  --color-ink: #30323a;
+  --color-ink-dark: #24262e;
+
+  /* Paper — light section background (#F6F7F8 from the original). */
+  --color-paper: #f6f7f8;
+
+  /* Mist — muted body text (#4A4E5A from the original). */
+  --color-mist: #4a4e5a;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the orange. */
+  --color-primary-50: #fff4ed;
+  --color-primary-100: #ffe6d5;
+  --color-primary-200: #ffc8aa;
+  --color-primary-300: #ffa274;
+  --color-primary-400: #ff8355;
+  --color-primary-500: #f8694a;
+  --color-primary-600: #e55a3a;
+  --color-primary-700: #c44a2d;
+  --color-primary-800: #a03c24;
+  --color-primary-900: #82321e;
+
+  /* Original font: "Hind" from Google Fonts. */
+  --font-sans: 'Hind', ui-sans-serif, system-ui, sans-serif;
+}
