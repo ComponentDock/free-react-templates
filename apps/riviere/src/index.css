@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Riviere brand palette — recreated from ColorLib eStore design:
+     primary red #ff003c, heading navy #0b1c39, body gray #506172,
+     footer #f7f7f7, accent blue #2577fd. */
+  --color-brand: #ff003c;
+  --color-brand-dark: #d60033;
+
+  /* Ink — dark navy headings (#0b1c39). */
+  --color-ink: #0b1c39;
+  --color-ink-dark: #060f1f;
+
+  /* Paper — light section backgrounds. */
+  --color-paper: #f7f7f7;
+
+  /* Mist — muted body text (#506172). */
+  --color-mist: #506172;
+
+  /* Secondary text (#635c5c). */
+  --color-meta: #635c5c;
+
+  /* Accent blue (#2577fd). */
+  --color-accent: #2577fd;
+
+  /* Light blue (#00b1ff). */
+  --color-accent-light: #00b1ff;
+
+  /* Primary scale so shared Button/ButtonLink primary variants resolve. */
+  --color-primary-50: #fff0f3;
+  --color-primary-100: #ffe0e8;
+  --color-primary-200: #ffc2d3;
+  --color-primary-300: #ff8aab;
+  --color-primary-400: #ff4d7a;
+  --color-primary-500: #ff003c;
+  --color-primary-600: #d60033;
+  --color-primary-700: #b3002b;
+  --color-primary-800: #950026;
+  --color-primary-900: #7d0022;
+
+  /* Heading font: Playfair Display. */
+  --font-heading: 'Playfair Display', serif;
+  /* Body font: Poppins. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  /* Accent font: Yellowtail. */
+  --font-accent: 'Yellowtail', cursive;
+}
