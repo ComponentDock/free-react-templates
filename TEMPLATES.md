@@ -1551,7 +1551,7 @@
 - [x] **Royalestate** — [colorlib](https://colorlib.com/wp/template/royalestate/) · [homefront](https://homefront.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/royalestate-free-template.jpg)
 - [x] **Travelers** — [colorlib](https://colorlib.com/wp/template/travelers/) · [jetpath](https://jetpath.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelers-free-template.jpg)
 - [x] **Travelix** — [colorlib](https://colorlib.com/wp/template/travelix/) · [trekcraft](https://trekcraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelix-free-template.jpg)
-- [~] **Travello** — [colorlib](https://colorlib.com/wp/template/travello/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travello-free-template-1.jpg)
+- [x] **Travello** — [colorlib](https://colorlib.com/wp/template/travello/) · [treklore](https://treklore.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travello-free-template-1.jpg)
 
 ## Eco (1)
 
@@ -3007,7 +3007,7 @@
 - [ ] **Travelasia** — [colorlib](https://colorlib.com/wp/template/travelasia/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelasia-free-creative-travel-agency-booking-template.jpg)
 - [x] **Travelers** — [colorlib](https://colorlib.com/wp/template/travelers/) · [jetpath](https://jetpath.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelers-free-template.jpg)
 - [x] **Travelix** — [colorlib](https://colorlib.com/wp/template/travelix/) · [trekcraft](https://trekcraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelix-free-template.jpg)
-- [ ] **Travello** — [colorlib](https://colorlib.com/wp/template/travello/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travello-free-template-1.jpg)
+- [x] **Travello** — [colorlib](https://colorlib.com/wp/template/travello/) · [treklore](https://treklore.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travello-free-template-1.jpg)
 - [x] **Travelo** — [colorlib](https://colorlib.com/wp/template/travelo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelo-free-template.jpg) · [wayfarer](https://wayfarer.free.componentdock.com)
 - [x] **Trips** — [colorlib](https://colorlib.com/wp/template/trips/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/trips-free-template.jpg) · [trek](https://trek.free.componentdock.com)
 - [x] **Vacation** — [colorlib](https://colorlib.com/wp/template/vacation/) · [getaway](https://getaway.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vacation-free-template.jpeg)
