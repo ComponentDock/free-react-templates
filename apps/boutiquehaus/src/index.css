@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* BoutiqueHaus brand palette — recreated from the ColorLib "Shop" design.
+     Accent pink #f41068, dark #222222, body #777777. */
+  --color-brand: #f41068;
+  --color-brand-dark: #d40e5a;
+
+  /* Dark surface for footer, dark sections. */
+  --color-ink: #222222;
+  --color-ink-dark: #1a1a1a;
+
+  /* Muted body text. */
+  --color-mist: #777777;
+
+  /* Primary scale so shared Button/ButtonLink `primary` variants resolve to pink. */
+  --color-primary-50: #fef2f7;
+  --color-primary-100: #fde6ef;
+  --color-primary-200: #fccee0;
+  --color-primary-300: #faa6c4;
+  --color-primary-400: #f66ea0;
+  --color-primary-500: #f41068;
+  --color-primary-600: #e40a5a;
+  --color-primary-700: #c00648;
+  --color-primary-800: #9e083e;
+  --color-primary-900: #850b38;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

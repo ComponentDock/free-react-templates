@@ -12,18 +12,18 @@ Recreation of the ColorLib **Shop** template as a React 19 + Vite + Tailwind 4 +
 
 ## Design tokens
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| Accent / pink | `#f41068` | Buttons, selection, highlights |
-| Dark bg | `#222222` | Footer, dark sections |
-| Body text | `#777777` | Paragraph text |
-| Headings | `#222222` | h1, h3 text |
-| Font | `"Poppins", sans-serif` | All text |
-| Button primary | bg `#f41068`, text `#fff` | Primary CTA |
-| Button radius | `0` (square) | All buttons |
-| Banner bg | image + pink overlay | Hero banner |
-| Men section bg | image + dark overlay | Men's products |
-| Footer bg | `#222222` | Dark footer |
+| Token          | Value                     | Usage                          |
+| -------------- | ------------------------- | ------------------------------ |
+| Accent / pink  | `#f41068`                 | Buttons, selection, highlights |
+| Dark bg        | `#222222`                 | Footer, dark sections          |
+| Body text      | `#777777`                 | Paragraph text                 |
+| Headings       | `#222222`                 | h1, h3 text                    |
+| Font           | `"Poppins", sans-serif`   | All text                       |
+| Button primary | bg `#f41068`, text `#fff` | Primary CTA                    |
+| Button radius  | `0` (square)              | All buttons                    |
+| Banner bg      | image + pink overlay      | Hero banner                    |
+| Men section bg | image + dark overlay      | Men's products                 |
+| Footer bg      | `#222222`                 | Dark footer                    |
 
 ## Section structure (page order)
 
@@ -37,115 +37,107 @@ Recreation of the ColorLib **Shop** template as a React 19 + Vite + Tailwind 4 +
 8. **Brand** — Brand logos area (bottom padding).
 9. **Footer** — Dark (#222222) background. Widgets: about, links, contact, newsletter. Copyright with Component Dock.
 
-## Gherkin scenarios
+## Requirements
 
-### Nav
+### Requirement: Navigation header
 
-```gherkin
-Feature: BoutiqueHaus Navigation
+The application SHALL display a sticky navigation header with logo, nav links, and search icon.
 
-  Scenario: Nav displays logo and links
-    Given the user is on the BoutiqueHaus page
-    Then the logo is visible
-    And navigation links are displayed
-    And a search icon is present
-```
+#### Scenario: Nav displays logo and links
 
-### Banner
+- **WHEN** the user visits the BoutiqueHaus page
+- **THEN** the logo is visible
+- **AND** navigation links (Home, Category, Men, Women, Latest) are displayed
+- **AND** a search icon is present
 
-```gherkin
-Feature: BoutiqueHaus Banner
+### Requirement: Hero banner
 
-  Scenario: Hero banner displays promotion
-    Given the user is on the BoutiqueHaus page
-    Then a full-width banner with background image is visible
-    And a "Flat 75% Off" heading is displayed
-    And a CTA button is present
-```
+The application SHALL display a full-width hero banner with a promotional offer.
 
-### Category
+#### Scenario: Hero banner displays promotion
 
-```gherkin
-Feature: BoutiqueHaus Categories
+- **WHEN** the user visits the BoutiqueHaus page
+- **THEN** a full-width banner with background image is visible
+- **AND** a "Flat 75% Off" heading is displayed
+- **AND** a "Purchase Now" CTA button is present
 
-  Scenario: Category section shows 3 items
-    Given the user scrolls to the category section
-    Then a "Shop for Different Categories" heading is displayed
-    And 3 category cards are shown: Women, Couple, Men
-    And each card has an image with overlay and text
-```
+### Requirement: Category section
 
-### MenProduct
+The application SHALL display category cards for different product types.
 
-```gherkin
-Feature: BoutiqueHaus Men Products
+#### Scenario: Category section shows cards
 
-  Scenario: Men's products section renders
-    Given the user scrolls to the men's products section
-    Then the section has a dark background image
-    And a "New released Products for Men" heading is shown in white
-    And 4 product cards with prices are displayed
-```
+- **WHEN** the user scrolls to the category section
+- **THEN** a "Shop for Different Categories" heading is displayed
+- **AND** category cards are shown for Women, Couple, and Men
+- **AND** each card has an image with overlay and text
 
-### WomenProduct
+### Requirement: Men's products
 
-```gherkin
-Feature: BoutiqueHaus Women Products
+The application SHALL display men's products on a dark background.
 
-  Scenario: Women's products section renders
-    Given the user scrolls to the women's products section
-    Then a "New released Products for Women" heading is displayed
-    And 4 product cards with prices are displayed
-```
+#### Scenario: Men's products section renders
 
-### HotDeal
+- **WHEN** the user scrolls to the men's products section
+- **THEN** the section has a dark background image
+- **AND** a "New released Products for Men" heading is shown
+- **AND** 4 product cards with prices are displayed
 
-```gherkin
-Feature: BoutiqueHaus Hot Deal
+### Requirement: Women's products
 
-  Scenario: Hot deal section renders
-    Given the user scrolls to the hot deal section
-    Then an "Exclusive Hot Deal Ends in:" heading is displayed
-    And a countdown timer is present
-```
+The application SHALL display women's products.
 
-### RelatedProducts
+#### Scenario: Women's products section renders
 
-```gherkin
-Feature: BoutiqueHaus Related Products
+- **WHEN** the user scrolls to the women's products section
+- **THEN** a "New released Products for Women" heading is displayed
+- **AND** 4 product cards with prices are displayed
 
-  Scenario: Related products section renders
-    Given the user scrolls to the related products section
-    Then a "Related Searched Products" heading is displayed
-    And product cards are shown
-```
+### Requirement: Hot deal countdown
 
-### Brand
+The application SHALL display a countdown timer for a hot deal.
 
-```gherkin
-Feature: BoutiqueHaus Brands
+#### Scenario: Hot deal section renders
 
-  Scenario: Brand section renders
-    Given the user scrolls to the brand section
-    Then brand logos are displayed
-```
+- **WHEN** the user scrolls to the hot deal section
+- **THEN** an "Exclusive Hot Deal Ends in:" heading is displayed
+- **AND** a countdown timer with Days, Hours, Minutes, Seconds is present
+- **AND** a "Shop Now" button is displayed
 
-### Footer
+### Requirement: Related products
 
-```gherkin
-Feature: BoutiqueHaus Footer
+The application SHALL display related product items.
 
-  Scenario: Footer displays widgets
-    Given the user scrolls to the footer
-    Then the footer has a dark (#222222) background
-    And widget columns with links and contact info are displayed
-    And a copyright bar is at the bottom
+#### Scenario: Related products section renders
 
-  Scenario: Footer links to Component Dock
-    Given the footer is rendered
-    Then the copyright includes a link to "Component Dock" (https://www.componentdock.com/)
-    And no ColorLib references appear in the app code
-```
+- **WHEN** the user scrolls to the related products section
+- **THEN** a "Related Searched Products" heading is displayed
+- **AND** product cards with thumbnail, name, and price are shown
+
+### Requirement: Brand logos
+
+The application SHALL display partner brand logos.
+
+#### Scenario: Brand section renders
+
+- **WHEN** the user scrolls to the brand section
+- **THEN** brand logo images are displayed
+
+### Requirement: Footer
+
+The application SHALL display a dark footer with widget columns and Component Dock branding.
+
+#### Scenario: Footer displays widgets
+
+- **WHEN** the user scrolls to the footer
+- **THEN** the footer has a dark background
+- **AND** widget columns with About Us, Newsletter, Instagram Feed, and Follow Us are displayed
+
+#### Scenario: Footer links to Component Dock
+
+- **WHEN** the footer is rendered
+- **THEN** the copyright includes a link to "Component Dock" (https://www.componentdock.com/)
+- **AND** no ColorLib references appear in the app code
 
 ## Verification checklist
 
