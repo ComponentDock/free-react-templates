@@ -1,147 +1,264 @@
-# Template: Globetrek (Travel Agency)
+# Template: GlobeTrek (Travel / Tourism)
 
 ## Purpose
 
-Globetrek is a single-page TRAVEL AGENCY LANDING PAGE in the
-free-react-templates monorepo. It is an original React recreation of the
-ColorLib "Travel Wordpress Themes" free template (source:
-https://colorlib.com/wp/template/travel-wordpress-themes/), built under a
-DIFFERENT name (**Globetrek**), with the monorepo stack: Vite + React 19 +
-Tailwind CSS 4 + TypeScript.
+Recreation of the ColorLib **Travelers** template
+(preview: https://preview.colorlib.com/theme/travelers/).
 
-The original is a WordPress theme ("The Valley" by ThemeXpert) — a travel
-agency site with a full-screen hero image slider (aerial ocean reef photos,
-teal/turquoise palette), transparent navbar with white text and dropdowns
-(Home, Destination, Regions, Shop, Blog), phone number and search icon on
-the right, a large left-aligned white heading ("Travel WordPress Themes"),
-and a white-bordered CTA button ("Let's go now"). The preview at
-https://preview.colorlib.com/theme/travel-wordpress-themes/ returned 404 at
-spec time, so design is based on the TEMPLATES.md screenshot only.
+A modern travel/tourism website template featuring a hero slider,
+feature cards, service listings, testimonials carousel, destination grid,
+a dark CTA banner, detailed services section, blog preview, and a
+multi-column footer with newsletter signup.
 
-**Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript.
+**Stack:** React 19 + Vite + Tailwind CSS 4 + TypeScript.
 
-## Design tokens (extracted from screenshot)
+## Design tokens (extracted from preview)
 
-- **Primary color:** Teal/turquoise `#008080` (ocean hero tone)
-- **Accent color:** White `#ffffff` (buttons, text, logo text)
-- **Body background:** `#ffffff` (white)
-- **Hero background:** Full-bleed photo (aerial reef/ocean), teal overlay
-- **Text color (hero):** `#ffffff` (white on hero)
-- **Heading font:** Sans-serif, large bold (`text-5xl`+ or `text-6xl`)
-- **Body font:** Sans-serif (e.g. Poppins or similar)
-- **Button style:** White border, transparent background, slight border-radius
-  (`border-2 border-white rounded`, white text, padding ~12px 28px)
-- **Nav style:** Transparent background, white text, hover color ~white/80%
-- **Logo:** "The Valley" with mountain icon — recreate as "Globetrek" with
-  mountain icon from lucide-react
-- **Section backgrounds:** White for content sections, dark teal for footer
-- **Border radius (buttons):** ~4–6px (slightly rounded, not pill)
-- **Slider arrows:** Semi-transparent left/right chevrons on hero
+| Token              | Value                      | Notes                                      |
+|--------------------|----------------------------|---------------------------------------------|
+| brand-primary      | `#ef6c57`                  | Coral/orange — buttons, links, accents      |
+| bg-dark            | `#25262a`                  | Dark charcoal — CTA banner, footer          |
+| bg-light           | `#f4f5f9` / `#f8f9fa`     | Light gray — alternating section backgrounds |
+| bg-white           | `#ffffff`                  | Card backgrounds, overlap sections           |
+| text-primary       | `#000000`                  | Headings, main text                         |
+| text-secondary     | `#4d4d4d` / `#737373`     | Body copy, descriptions                     |
+| text-muted         | `#999999`                  | Fine print, meta                            |
+| text-white         | `#ffffff`                  | On dark backgrounds                         |
+| font-family        | Poppins (200–900)          | Google Font, loaded via `<link>`             |
+| border-radius      | `0` (square buttons/cards) | Bootstrap default — no rounding             |
+| button-primary-bg  | `#ef6c57`                  | Coral fill button                           |
+| button-primary-text| `#ffffff`                  | White on coral                              |
+| button-outline     | border `2px` on `#ef6c57`  | Outline variant, transparent fill           |
 
-## Gherkin requirements
+## Section structure & Gherkin scenarios
 
-Feature: Globetrek travel agency landing page
-  As a visitor exploring travel destinations
-  I want to browse destinations and book a trip
-  So that I can plan my next vacation
+### 1. Navbar
 
-  Background:
-    Given the Globetrek app is loaded in a browser
-    And the viewport is 1280x800 desktop
+- Sticky top bar: logo text left ("GlobeTrek"), nav links center
+  (Home, Destinations (dropdown), Discount, About, Blog, Contact),
+  social icons right (TripAdvisor, Twitter, Facebook, Instagram).
+- Hamburger toggle on mobile with slide-out menu.
 
-  # ─── Navbar ────────────────────────────────────────────
+```gherkin
+Scenario: Navbar displays logo and navigation links
+  Given the user is on the homepage
+  Then the navbar shows "GlobeTrek" as the logo text
+  And navigation links include "Home", "Destinations", "Discount", "About", "Blog", "Contact"
+  And social media icons are visible on the right
 
-  Scenario: Navbar renders with correct links
-    Then a navigation bar should be visible at the top
-    And the navbar should contain a logo with text "Globetrek"
-    And the navbar should have links: "Home", "Destinations", "Regions", "Blog"
-    And a phone number contact link should be visible
-    And a search icon button should be present
+Scenario: Destinations link has a dropdown
+  Given the user is on the homepage
+  When the user hovers over "Destinations"
+  Then a dropdown appears with destination items (Japan, Europe, China, France)
 
-  Scenario: Navbar is transparent over the hero
-    Given the user has not scrolled
-    Then the navbar background should be transparent
-    When the user scrolls past the hero
-    Then the navbar background should become solid dark
+Scenario: Navbar collapses to hamburger on mobile
+  Given the user views the page on a mobile viewport
+  Then the navbar shows a hamburger menu icon
+  And clicking it opens a slide-out mobile menu
+```
 
-  # ─── Hero section ──────────────────────────────────────
+### 2. Hero Slider
 
-  Scenario: Hero section displays full-screen with image
-    Then a hero section should fill the full viewport height
-    And the hero should display a background image of ocean/reef
-    And the hero heading should read "Explore The World"
-    And the hero should have a "Let's go now" CTA button
+- Full-width image carousel (2 slides) with dark overlay
+  (`site-blocks-cover overlay`). Centered headline + subtext + CTA button.
+- Uses `background-image` with parallax (`data-stellar-background-ratio`).
+- Slide 1: "Experience Nature" + "Discover the best tour in your life"
+  + "Discover More" button.
+- Slide 2: "Discover Amazing Place" + "With Our Greatest Experiences"
+  + "Explore More" button.
 
-  Scenario: Hero has navigation arrows
-    Then left and right arrow buttons should be visible on the hero
-    And clicking the right arrow should advance the slideshow
-    And clicking the left arrow should go to the previous slide
+```gherkin
+Scenario: Hero slider shows the first slide
+  Given the user loads the homepage
+  Then a full-width hero image is displayed with a dark overlay
+  And the headline reads "Experience Nature"
+  And a subtext reads "Discover the best tour in your life"
+  And a "Discover More" button is visible
 
-  # ─── Destinations section ──────────────────────────────
+Scenario: Hero slider transitions to second slide
+  Given the user is on the homepage
+  When 5 seconds elapse
+  Then the slider transitions to the second slide
+  And the headline reads "Discover Amazing Place"
+  And a "Explore More" button is visible
+```
 
-  Scenario: Destinations section shows destination cards
-    When I scroll to the destinations section
-    Then I should see a section heading "Popular Destinations"
-    And at least 3 destination cards should be visible
-    And each card should have an image, name, and short description
+### 3. Feature Cards (overlap-section)
 
-  # ─── Features / Why Choose Us section ──────────────────
+- 3 cards with `overlap-left` style — white card overlapping the
+  hero/background area. Each has a heading + description.
+  1. "Write Down Your Experience" — description text
+  2. "Explore Asian Mountains" — description text
+  3. "Safe Trip With Airasia" — description text
 
-  Scenario: Features section displays key benefits
-    When I scroll to the features section
-    Then I should see a section heading about why choose us
-    And at least 3 feature items should be visible
-    And each feature should have an icon, title, and description
+```gherkin
+Scenario: Feature cards are displayed after the hero
+  Given the user is on the homepage
+  Then three feature cards are shown in a row
+  And the first card heading is "Write Down Your Experience"
+  And the second card heading is "Explore Asian Mountains"
+  And the third card heading is "Safe Trip With Airasia"
 
-  # ─── About / Experience section ────────────────────────
+Scenario: Feature cards have overlapping style
+  Given the user is on the homepage
+  Then each feature card has a white background
+  And the cards visually overlap the hero section
+```
 
-  Scenario: About section shows travel experience info
-    When I scroll to the about section
-    Then I should see a section with travel experience details
-    And the section should include a heading and descriptive text
-    And a call-to-action button should be present
+### 4. Services Quick (icon rows)
 
-  # ─── Newsletter section ────────────────────────────────
+- 3 rows: each with icon + heading + description.
+  1. Air Ticketing
+  2. Cruises
+  3. Tour Packages
 
-  Scenario: Newsletter signup section renders
-    When I scroll to the newsletter section
-    Then I should see a newsletter signup form
-    And an email input field should be present
-    And a submit button should be visible
+```gherkin
+Scenario: Services quick section shows three items
+  Given the user scrolls to the services quick section
+  Then three service items are displayed in a row
+  And each item has an icon, heading, and description
+  And the items are "Air Ticketing", "Cruises", "Tour Packages"
+```
 
-  # ─── Footer ────────────────────────────────────────────
+### 5. Testimonials Carousel
 
-  Scenario: Footer renders with links and branding
-    When I scroll to the footer
-    Then the footer should be visible
-    And it should contain navigation links
-    And it should contain a "Made with Component Dock" link
-      | href                                    | text                    |
-      | https://www.componentdock.com/          | Component Dock          |
+- Section with `bg-light` background. Centered heading "Testimonials".
+- Owl-carousel of testimonials: image left + white card right with
+  quote text + author name + "Traveler" link.
+  - James Martin, Clair Augustin, James Martin (3 testimonials)
 
-  # ─── Responsive ────────────────────────────────────────
+```gherkin
+Scenario: Testimonials section displays carousel
+  Given the user scrolls to the testimonials section
+  Then a centered heading "Testimonials" is displayed
+  And a carousel shows testimonial slides
+  And each slide has an image on the left and a white card on the right
+  And each card contains a quote, author name, and "Traveler" label
 
-  Scenario: Mobile view collapses navbar
-    Given the viewport is 375x812 mobile
-    Then the navbar should show a hamburger menu button
-    And clicking the hamburger should open a mobile nav menu
+Scenario: Testimonials carousel auto-advances
+  Given the user is viewing the testimonials section
+  When 5 seconds elapse
+  Then the carousel advances to the next testimonial
+```
 
-  Scenario: Mobile hero scales properly
-    Given the viewport is 375x812 mobile
-    Then the hero section should fill the viewport width
-    And the hero heading should be smaller than desktop
-    And the CTA button should be centered
+### 6. Our Destinations
+
+- Section heading "Our Destinations". 6 destination cards in a grid
+  (3 columns). Each card: image + overlay + heading.
+  1. Santorini, Greece
+  2. Rome, Italy
+  3. Mount Fuji, Japan
+  4. Camels, Dubai
+  5. Elizabeth Tower, London
+  6. Opera House, Australia
+
+```gherkin
+Scenario: Destinations grid shows six destinations
+  Given the user scrolls to the destinations section
+  Then a heading "Our Destinations" is displayed
+  And six destination cards are shown in a 3-column grid
+  And each card has a background image with an overlay and a heading
+
+Scenario: Destination card content
+  Given the destinations grid is visible
+  Then the destinations listed are:
+    | destination        |
+    | Santorini, Greece  |
+    | Rome, Italy        |
+    | Mount Fuji, Japan  |
+    | Camels, Dubai      |
+    | Elizabeth Tower, London |
+    | Opera House, Australia  |
+```
+
+### 7. CTA Banner (Experience Our Outstanding Services)
+
+- Full-width dark overlay section (`site-blocks-cover overlay`).
+  Background image with parallax. Heading:
+  "Experience Our Outstanding Services". Subtext + CTA button.
+
+```gherkin
+Scenario: CTA banner section is displayed
+  Given the user scrolls past the destinations
+  Then a full-width dark overlay banner is shown
+  And the heading reads "Experience Our Outstanding Services"
+  And a call-to-action button is visible below the heading
+```
+
+### 8. Services Detail (6 items)
+
+- White background section. Heading "Our Services".
+- 6 icon+text items in a grid:
+  1. Air Ticketing
+  2. Cruises
+  3. Tour Packages
+  4. Hotel Accommodations
+  5. Sea Explorations
+  6. Ski Experiences
+
+```gherkin
+Scenario: Services detail shows six items
+  Given the user scrolls to the services detail section
+  Then a heading "Our Services" is displayed
+  And six service items are shown in a grid
+  And the items are "Air Ticketing", "Cruises", "Tour Packages",
+    "Hotel Accommodations", "Sea Explorations", "Ski Experiences"
+
+Scenario: Each service item has an icon
+  Given the services detail section is visible
+  Then each item displays a circular icon and descriptive text
+```
+
+### 9. Blog Preview
+
+- `bg-light` background section. Shows a blog post preview card
+  with image + excerpt + metadata.
+
+```gherkin
+Scenario: Blog preview section exists
+  Given the user scrolls to the blog section
+  Then a blog post preview card is displayed
+  And it contains an image, title, and excerpt text
+```
+
+### 10. Footer
+
+- Dark background (`#25262a`). 3 columns:
+  1. "About GlobeTrek" — about text
+  2. "Navigations" — two sub-columns of link lists
+  3. "Subscribe Newsletter" — email input + submit button
+- Bottom bar: copyright + social icons + Component Dock link.
+
+```gherkin
+Scenario: Footer displays three columns
+  Given the user scrolls to the footer
+  Then the footer has a dark background
+  And column 1 shows "About GlobeTrek" heading with description text
+  And column 2 shows "Navigations" with link lists
+  And column 3 shows "Subscribe Newsletter" with email input and button
+
+Scenario: Footer includes Component Dock link
+  Given the user is on the page
+  Then the footer contains a link to "https://www.componentdock.com/"
+  And the link text reads "Component Dock"
+```
 
 ## Verification checklist
 
-- [ ] Navbar: transparent on hero, solid on scroll, all links present
-- [ ] Hero: full-screen, background image, heading, CTA, slider arrows
-- [ ] Destinations: grid of cards with images and descriptions
-- [ ] Features/Why Us: icon grid with benefits
-- [ ] About section: heading, text, CTA
-- [ ] Newsletter: email input + submit button
-- [ ] Footer: links, "Made with Component Dock" attribution
-- [ ] Responsive: hamburger nav on mobile, hero scales, cards stack
-- [ ] Accessibility: semantic elements, aria-labels, focus-visible
-- [ ] No ColorLib references in app code (only in this spec)
-- [ ] Coverage: 100% lines/functions/branches/statements
+- [ ] Navbar: logo text, nav links, dropdown on hover, hamburger on mobile
+- [ ] Hero slider: 2 slides with overlay, auto-advance, CTA buttons
+- [ ] Feature cards: 3 cards with overlap style, correct headings
+- [ ] Services quick: 3 icon rows with headings
+- [ ] Testimonials: carousel with image + quote + author, bg-light section
+- [ ] Destinations: 6 cards in 3-col grid with image overlays
+- [ ] CTA banner: full-width dark overlay, heading, CTA button
+- [ ] Services detail: 6 icon items, "Our Services" heading
+- [ ] Blog preview: card with image + excerpt
+- [ ] Footer: 3 columns, dark bg, newsletter input, Component Dock link
+- [ ] Color tokens: brand `#ef6c57`, bg-dark `#25262a`, bg-light `#f4f5f9`
+- [ ] Font: Poppins loaded via Google Fonts `<link>` in `index.html`
+- [ ] No reference to ColorLib in app code (only in spec)
+- [ ] `public/CNAME` contains `globetrek.free.componentdock.com`
+- [ ] `"homepage"` in package.json is `https://globetrek.free.componentdock.com`
+- [ ] All sections responsive (mobile + desktop)
+- [ ] Square buttons/cards (no border-radius, matching Bootstrap default)
