@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Mercato brand palette — warm yellow-orange gradient #ffba00 → #ff6c00. */
+  --color-brand: #ffba00;
+  --color-brand-dark: #ff6c00;
+
+  /* Heading color — dark charcoal. */
+  --color-heading: #222222;
+
+  /* Body text — medium grey. */
+  --color-ink: #777777;
+
+  /* Border / divider color. */
+  --color-border: #ececec;
+
+  /* White background. */
+  --color-surface: #ffffff;
+
+  /* Light grey background for sections. */
+  --color-bg-light: #f9f9ff;
+
+  /* Primary scale for shared UI Button/ButtonLink primary variants. */
+  --color-primary-50: #fff8e6;
+  --color-primary-100: #ffefb3;
+  --color-primary-200: #ffe580;
+  --color-primary-300: #ffdb4d;
+  --color-primary-400: #ffba00;
+  --color-primary-500: #ffba00;
+  --color-primary-600: #ff6c00;
+  --color-primary-700: #e55e00;
+  --color-primary-800: #cc5200;
+  --color-primary-900: #993d00;
+
+  /* Fonts: Poppins for headings, Roboto for body. */
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
