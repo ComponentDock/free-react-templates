@@ -1551,7 +1551,7 @@
 - [x] **Royalestate** — [colorlib](https://colorlib.com/wp/template/royalestate/) · [homefront](https://homefront.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/royalestate-free-template.jpg)
 - [x] **Travelers** — [colorlib](https://colorlib.com/wp/template/travelers/) · [jetpath](https://jetpath.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelers-free-template.jpg)
 - [x] **Travelix** — [colorlib](https://colorlib.com/wp/template/travelix/) · [trekcraft](https://trekcraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelix-free-template.jpg)
-- [ ] **Travello** — [colorlib](https://colorlib.com/wp/template/travello/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travello-free-template-1.jpg)
+- [~] **Travello** — [colorlib](https://colorlib.com/wp/template/travello/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travello-free-template-1.jpg)
 
 ## Eco (1)
 

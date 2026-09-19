@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Treklore brand palette */
+  --color-navy: #1a1a2e;
+  --color-navy-light: #252542;
+  --color-brand-blue: #3b82f6;
+  --color-brand-hover: #2563eb;
+  --color-warm-brown: #937c6f;
+  --color-dark-bg: #232323;
+  --color-muted: #64748b;
+
+  /* Font families — Open Sans for body, Oswald for display */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+}
