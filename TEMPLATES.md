@@ -1613,7 +1613,7 @@
 - [x] **Wines** — [colorlib](https://colorlib.com/wp/template/wines/) · [vintner](https://vintner.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wines-free-template.jpg)
 - [x] **Winkel** — [colorlib](https://colorlib.com/wp/template/winkel/) · [warehaus](https://warehaus.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/winkel-free-template.jpg)
 - [x] **Winter** — [colorlib](https://colorlib.com/wp/template/winter/) · [snowline](https://snowline.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/winter-free-template.jpg)
-- [~] **Wish** — [colorlib](https://colorlib.com/wp/template/wish/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wish-free-template-1.jpg)
+- [x] **Wish** — [colorlib](https://colorlib.com/wp/template/wish/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wish-free-template-1.jpg) · [vow](https://vow.free.componentdock.com)
 - [ ] **Wordpress Ecommerce Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-ecommerce-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shopkeeper.jpg)
 
 ## Education (43)
