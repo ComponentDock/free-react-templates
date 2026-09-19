@@ -1602,7 +1602,7 @@
 - [x] **Shopmax** · [bazaar](https://bazaar.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/shopmax/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shopmax-free-template.jpg)
 - [x] **Shopper** — [colorlib](https://colorlib.com/wp/template/shopper/) · [moda](https://moda.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shopper-template-1770211205661.jpg)
 - [x] **Shoppers** — [colorlib](https://colorlib.com/wp/template/shoppers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shoppers-free-template.jpg) · [vendly](https://vendly.free.componentdock.com)
-- [ ] **Solestyle** — [colorlib](https://colorlib.com/wp/template/solestyle/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solestyle-template-1770211411401.jpg)
+- [~] **Solestyle** — [colorlib](https://colorlib.com/wp/template/solestyle/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solestyle-template-1770211411401.jpg)
 - [x] **Store** — [colorlib](https://colorlib.com/wp/template/store/) · [bodega](https://bodega.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/store-free-template.jpg)
 - [x] **Sublime** — [colorlib](https://colorlib.com/wp/template/sublime/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sublime-free-template.jpg) · [vendio](https://vendio.free.componentdock.com)
 - [x] **Theplaza** — [colorlib](https://colorlib.com/wp/template/theplaza/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theplaza-free-template.jpg) · [boutique](https://boutique.free.componentdock.com)
