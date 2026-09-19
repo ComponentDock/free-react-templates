@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Trekcraft brand palette — orange-to-purple gradient travel agency */
+  --color-trek-orange: #fa9e1b;
+  --color-trek-purple: #8d4fff;
+  --color-trek-dark: #31124b;
+  --color-trek-dark-alt: #350a4e;
+  --color-trek-text: #2d2c2c;
+  --color-trek-muted: #929191;
+  --color-trek-light: #a5a5a5;
+  --color-trek-star: #fa9e1c;
+
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}
