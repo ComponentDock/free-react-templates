@@ -1,165 +1,136 @@
-# Template: Hemline (Footer)
+# Template: Hemline (Ecommerce / Fashion)
 
 ## Purpose
 
-Recreation of ColorLib's **Bootstrap Footer 11** — a dark navy footer with a four-column layout (brand description + social icons, recent posts with thumbnails, quick links, and contact info), an accented purple underline on headings, and a centered copyright bar. A decorative blob SVG shape sits behind the footer at low opacity.
+Recreation of ColorLib **Fashi** — a fashion e-commerce single-page template.
 
-- **Source:** Bootstrap Footer 11 — https://colorlib.com/wp/template/bootstrap-footer-11/
-- **Preview:** https://preview.colorlib.com/theme/bft/bootstrap-footer-11/
-- **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
-- **Category:** Footer
+- **Source:** https://colorlib.com/wp/template/fashi/
+- **Preview:** https://preview.colorlib.com/theme/fashi/
+- **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
+- **New name:** `hemline` (apps/hemline, @free-react-templates/hemline)
 
-## Design Tokens
+## Replication reference
 
-| Token                | Value                      | Source                                                       |
-| -------------------- | -------------------------- | ------------------------------------------------------------ |
-| Font family          | `"Poppins", sans-serif`    | `@font-face` loaded from CDN, `.h1–h5` rule                 |
-| Footer background    | `#0d1824` (dark navy)      | `.footer-01 { background: #0d1824 }`                        |
-| Footer text color    | `rgba(255,255,255,0.6)`    | `.footer-01 p { color: rgba(255,255,255,0.6) }`            |
-| Accent color         | `#7f72e4` (purple)         | `.footer-01 a { color: #7f72e4 }`, heading underline, social bg |
-| Footer heading color | `#ffffff`                  | `.footer-01 .footer-heading { color: #fff }`                |
-| Heading underline    | `#7f72e4`, 2px height, 40px width | `.footer-heading:after { background: #7f72e4; width: 40px; height: 2px }` |
-| Nav link color       | `rgba(255,255,255,0.7)`    | `.footer-01 ul.list-unstyled li a`                           |
-| Blog heading color   | `rgba(255,255,255,0.7)`    | `.footer-01 .block-21 .text .heading a`                     |
-| Blog meta link color | `#7f72e4` (accent)         | `.footer-01 .block-21 .meta > div a`                        |
-| Contact text color   | `rgba(255,255,255,0.6)`    | `.footer-01 .block-23 ul li`                                |
-| Contact icon color   | `rgba(255,255,255,0.4)`    | `.footer-01 .block-23 ul li .icon`                          |
-| Social icon bg       | `#7f72e4` (accent)         | `.footer-01 .ftco-footer-social li a { background: #7f72e4 }` |
-| Social icon color    | `#ffffff`                  | `.footer-01 .ftco-footer-social li a { color: #fff }`       |
-| Social icon size     | `40px × 40px`              | `.ftco-footer-social li a { height: 40px; width: 40px }`    |
-| Social icon radius   | `50%` (circle)             | `.ftco-footer-social li a { border-radius: 50% }`           |
-| Social icon font     | `20px`                     | `.ftco-footer-social li a span { font-size: 20px }`         |
-| Copyright text color | `#999999`                  | `.footer-01 .copyright { color: #999999 }`                  |
-| Footer padding       | `7em 0`                    | `footer { padding: 7em 0 }`                                 |
-| Content section bg   | `#f8f8f8` (light gray)     | `.ftco-section { background: #f8f8f8 }`                     |
-| Content section pad  | `12em 0`                   | `.ftco-section { padding: 12em 0 }`                         |
-| Blob decoration      | SVG `blob-shape.svg`, 5% opacity, positioned top-left | `.footer-01:after { opacity: .05; background: url(../images/blob-shape.svg) }` |
+### Screenshot analysis
 
-## Requirements
+The template is a dark-themed fashion e-commerce landing page with a golden/amber accent color. The hero section is a full-width image carousel with overlaid product cards (bedside table, sweater) with price labels and CTA buttons. Below are two split category banners (Women's / Men's) showing mannequin images, a "Deal of the Week" featured product section with countdown timer, a blog grid, and an Instagram photo strip. The overall aesthetic is modern, high-contrast, editorial fashion.
 
-### Requirement: Preview content area
+### Live preview DOM structure (section order)
 
-The application SHALL display a centered heading "Footer #11" on a light gray background, filling 12em vertical padding.
+1. **Header** — top bar (email, phone, login, language select) + main nav (logo, categories dropdown, search, cart, wishlist) + department menu
+2. **Hero carousel** — full-width Owl Carousel with single-hero-items (product image + name + price + CTA)
+3. **Women's banner** — split section: text left ("Women's" + "Shop Now") + mannequin image right
+4. **Deal of the Week** — featured product card with countdown timer (days/hours/minutes/seconds)
+5. **Men's banner** — mirror of women's banner (image left + text right)
+6. **Latest Blog** — 3-column blog post cards (image + date + title + excerpt)
+7. **Instagram gallery** — row of 6 square photo thumbnails with hover overlay
+8. **Footer** — multi-column: logo + about text, shop links, quick links, newsletter signup + social icons
 
-#### Scenario: Preview content area renders
+### CSS / design tokens
 
-- **WHEN** the page loads
-- **THEN** a centered heading "Footer #11" is visible
-- **AND** the content area uses a light gray (#f8f8f8) background
-- **AND** the content area has approximately 12em vertical padding
+| Token | Value |
+|---|---|
+| Brand / accent | `#e7ab3c` (golden amber) |
+| Dark background | `#252525` / `#191919` |
+| Light background | `#ffffff` / `#f3f3f3` / `#ebebeb` |
+| Body text | `#636363` / `#4c4c4c` |
+| Muted text | `#b2b2b2` |
+| Primary button bg | `#e7ab3c`, text `#ffffff` |
+| Button radius | `60px` (pill) for `.primary-btn`, `5px` for cards |
+| Circle radius | `50%` |
+| Font family | Muli (Google Fonts) — weights 300–900, sans-serif |
+| Section spacing | `spad` class = consistent vertical padding (~60px) |
 
-### Requirement: Footer main content section
+## Gherkin requirements
 
-The footer SHALL have a dark navy (#0d1824) background with 7em vertical padding and four columns: brand description + social, recent posts, quick links, and contact info.
+### Scenario: Header renders with navigation and top bar
+```
+Given the user loads the Hemline page
+Then the top bar shows email, phone, login link, and language selector
+And the main navigation shows the logo, categories dropdown, search bar, cart icon, and wishlist icon
+```
 
-#### Scenario: Footer displays dark navy background
+### Scenario: Hero carousel displays product slides
+```
+Given the user loads the page
+Then a hero carousel renders with product slides
+And each slide shows a product image, product name, price, and "Shop Now" CTA button
+And the carousel auto-rotates between slides
+```
 
-- **WHEN** the footer renders
-- **THEN** the footer background is dark navy (#0d1824)
-- **AND** the footer has 7em vertical padding
+### Scenario: Women's banner section
+```
+Given the hero section is rendered
+Then a "Women's" banner section appears below the hero
+And it shows a heading "Women's" and a "Shop Now" link
+And a mannequin/fashion image occupies the right side
+```
 
-#### Scenario: Brand column shows logo and description with social icons
+### Scenario: Deal of the week section
+```
+Given the women's banner is rendered
+Then a "Deal of the Week" section appears
+And it shows a featured product image and name
+And a countdown timer displays days, hours, minutes, seconds
+```
 
-- **WHEN** the footer renders
-- **THEN** a brand heading "Hemline" is displayed in white, 18px, with a purple (#7f72e4) underline
-- **AND** a description paragraph in semi-transparent white appears below
-- **AND** 3 social icons (Twitter, Facebook, Instagram) are displayed horizontally
-- **AND** each social icon has a purple (#7f72e4) circular background (40x40px, 50% border-radius)
-- **AND** each social icon is white text
+### Scenario: Men's banner section
+```
+Given the deal of the week section is rendered
+Then a "Men's" banner section appears
+And it mirrors the women's banner layout (image left, text right)
+```
 
-#### Scenario: Recent posts column
+### Scenario: Latest blog section
+```
+Given the men's banner is rendered
+Then a "From The Blog" section appears
+And it shows 3 blog post cards in a row
+And each card has an image, date, title, and excerpt
+```
 
-- **WHEN** the footer renders
-- **THEN** a "Recent Posts" heading is displayed with purple underline
-- **AND** 2 blog post cards are shown, each with:
-  - An 80×80 thumbnail image placeholder
-  - A heading link in semi-transparent white
-  - Meta info (date, author, comment count) in accent purple text
-- **AND** blog post headings are 16px, font-weight 400, line-height 1.4
+### Scenario: Instagram photo gallery
+```
+Given the blog section is rendered
+Then an Instagram photo strip appears
+And it shows 6 square images in a row
+And each image has a hover overlay effect
+```
 
-#### Scenario: Quick links column
+### Scenario: Footer renders
+```
+Given the Instagram strip is rendered
+Then the footer renders with logo and about text, shop links, quick links, and newsletter signup
+And the newsletter section has an email input and submit button
+And social media icons are displayed
+And a "Made with Component Dock" link appears
+```
 
-- **WHEN** the footer renders
-- **THEN** a "Quick Links" heading is displayed with purple underline
-- **AND** 6 navigation links are displayed vertically: Home, About, Services, Works, Blog, Contact
-- **AND** each link is semi-transparent white (`rgba(255,255,255,0.7)`) with `py-2 d-block` spacing
-- **AND** hovering a link changes its color to accent purple
+### Scenario: Responsive layout
+```
+Given the user loads the page on a mobile viewport
+Then the navigation collapses to a hamburger menu
+And sections stack vertically
+And blog cards stack to single column
+And Instagram images wrap to multiple rows
+```
 
-#### Scenario: Contact info column
+## Verification checklist
 
-- **WHEN** the footer renders
-- **THEN** a "Have a Questions?" heading is displayed with purple underline
-- **AND** 3 contact items are shown: address, phone, email
-- **AND** each item has an icon (pin, call, send) on the left and text on the right
-- **AND** icons are 18px, muted white (`rgba(255,255,255,0.4)`)
-- **AND** text is semi-transparent white (`rgba(255,255,255,0.6)`)
-
-### Requirement: Copyright bar
-
-A full-width centered copyright row SHALL be present at the bottom of the footer with muted gray text.
-
-#### Scenario: Copyright bar renders
-
-- **WHEN** the footer renders
-- **THEN** a copyright row is centered at the bottom
-- **AND** the text reads "© [current year] All rights reserved"
-- **AND** the copyright text color is #999999
-
-### Requirement: Blob decoration
-
-The footer SHALL have a decorative semi-transparent blob SVG shape positioned behind the content.
-
-#### Scenario: Blob decoration renders
-
-- **WHEN** the footer renders
-- **THEN** a decorative shape is visible at approximately 5% opacity
-- **AND** the shape is positioned in the upper-left area behind the footer content
-
-### Requirement: Accessibility
-
-All interactive elements SHALL have accessible names and appropriate ARIA attributes.
-
-#### Scenario: Social link accessibility
-
-- **WHEN** the footer renders
-- **THEN** each social icon link has a descriptive aria-label (e.g. "Twitter", "Facebook")
-
-#### Scenario: Navigation link accessibility
-
-- **WHEN** the footer renders
-- **THEN** each navigation link is a proper `<a>` element with visible text
-
-### Requirement: Responsive behavior
-
-The footer layout SHALL adapt responsively: single-column on mobile, four-column grid on desktop.
-
-#### Scenario: Mobile layout stacks vertically
-
-- **WHEN** the viewport width is below 768px
-- **THEN** all footer columns stack vertically
-- **AND** social icons center-align
-
-#### Scenario: Desktop layout uses four columns
-
-- **WHEN** the viewport width is 768px or above
-- **THEN** the footer displays in a four-column grid
-- **AND** the social icons align to the left in the first column
-
-### Requirement: Component Dock attribution
-
-The footer SHALL include a link to https://www.componentdock.com/ branded as "Component Dock".
-
-#### Scenario: Footer links to Component Dock
-
-- **WHEN** the footer renders
-- **THEN** a link to https://www.componentdock.com/ is present
-- **AND** the link text reads "Component Dock"
-
-### Requirement: No ColorLib references
-
-The application SHALL NOT contain any references to ColorLib in source files.
-
-#### Scenario: App code contains no ColorLib strings
-
-- **WHEN** any source file in apps/hemline/ is inspected
-- **THEN** no file contains the string "colorlib" (case-insensitive)
+- [ ] Header top bar: email, phone, login, language
+- [ ] Header nav: logo, categories, search, cart, wishlist
+- [ ] Hero carousel: product slides with image, name, price, CTA
+- [ ] Women's banner: heading + "Shop Now" + image
+- [ ] Deal of the Week: featured product + countdown timer
+- [ ] Men's banner: mirrored layout
+- [ ] Blog section: 3 cards with image, date, title, excerpt
+- [ ] Instagram gallery: 6 images with hover overlay
+- [ ] Footer: logo, shop links, quick links, newsletter, social, Component Dock link
+- [ ] Brand color `#e7ab3c` used throughout
+- [ ] Muli font family applied
+- [ ] Button pill shape (60px radius)
+- [ ] Dark theme backgrounds (#252525, #191919)
+- [ ] Responsive breakpoints (mobile hamburger, stacked columns)
+- [ ] No ColorLib references in app code
+- [ ] CNAME: hemline.free.componentdock.com
+- [ ] Package name: @free-react-templates/hemline
