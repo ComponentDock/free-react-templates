@@ -1726,7 +1726,7 @@
 - [x] **Product** — [colorlib](https://colorlib.com/wp/template/product/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/product-free-template.jpg) · [merch](https://merch.free.componentdock.com)
 - [x] **Selling** — [colorlib](https://colorlib.com/wp/template/selling/) · [stall](https://stall.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/selling-free-template.jpg)
 - [x] **Shionhouse** · [silkhouse](https://free-react-templates-silkhouse.surge.sh) — [colorlib](https://colorlib.com/wp/template/shionhouse/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shionhouse-free-template.jpg)
-- [~] **Shop** — [colorlib](https://colorlib.com/wp/template/shop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shop-free-ecommerce-website-template.jpg)
+- [x] **Shop** — [colorlib](https://colorlib.com/wp/template/shop/) · [boutiquehaus](https://boutiquehaus.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shop-free-ecommerce-website-template.jpg)
 - [x] **Shopmax** · [bazaar](https://bazaar.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/shopmax/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shopmax-free-template.jpg)
 - [x] **Shoppers** — [colorlib](https://colorlib.com/wp/template/shoppers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shoppers-free-template.jpg) · [vendly](https://vendly.free.componentdock.com)
 - [x] **Shout** — [colorlib](https://colorlib.com/wp/template/shout/) · [clamor](https://clamor.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shout-free-template.jpg)
