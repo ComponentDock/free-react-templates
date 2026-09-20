@@ -1,141 +1,200 @@
-# Template: Lingo (Education / Language Learning)
+# Template: Lingo (Language Learning Website)
 
 ## Purpose
 
-Recreation of [ColorLib "Lingua"](https://colorlib.com/wp/template/lingua/)
-using React 19 + Vite + Tailwind CSS 4 + TypeScript.
+Lingo is a multi-section language learning website in the free-react-templates
+monorepo. It is an original React recreation of the ColorLib "Lingua" free
+template (source: https://colorlib.com/wp/template/lingua/), built under a
+DIFFERENT name (**Lingo**), with the monorepo stack: Vite + React 19 +
+Tailwind CSS 4 + TypeScript.
 
-- **Source slug:** `lingua`
-- **Preview URL:** https://preview.colorlib.com/theme/lingua/
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/lingua-free-template.jpg
-- **Stack:** Vite (latest) + React 19 + Tailwind CSS 4 + TypeScript
+## Requirements
 
-## Design tokens
+### Requirement: Header navigation
 
-Extracted from the preview's `styles/main_style.css`:
+The system SHALL render a header with a top bar (phone number, language
+dropdown, social icons), a main navigation bar with 6 links (Home, Courses,
+Instructors, Events, Blog, Contact), a search icon, and a hamburger menu
+for mobile.
 
-### Colors
+#### Scenario: Desktop header renders all navigation elements
 
-| Token | Hex | Usage |
-|---|---|---|
-| `--color-brand-primary` | `#2e21df` | Deep indigo — CTA buttons, course mark badges, accent |
-| `--color-brand-secondary` | `#937c6f` | Warm taupe/brown — register section background |
-| `--color-brand-accent` | `#f9cf0e` | Golden yellow — free course badge, hover states |
-| `--color-dark-bg` | `#252525` | Hero section background, footer background |
-| `--color-dark-alt` | `#232323` | Footer body background |
-| `--color-light-bg` | `#f1f1f1` | Courses section background |
-| `--color-white` | `#FFFFFF` | Card backgrounds, instructor section, events section |
-| `--color-text-primary` | `#000000` | Headings |
-| `--color-text-muted` | `#7c7c7c` / `#929292` | Body text, subtitles |
+- **GIVEN** the Lingo app is rendered on a desktop viewport
+- **THEN** a top bar SHALL display a phone number, language selector, and
+  social media icon links (Facebook, Twitter, Instagram)
+- **AND** a main nav bar SHALL display the logo "Lingo" and 6 navigation
+  links: Home, Courses, Instructors, Events, Blog, Contact
+- **AND** a search icon button SHALL be visible
 
-### Typography
+#### Scenario: Mobile hamburger menu toggles
 
-| Element | Font | Weight | Notes |
-|---|---|---|---|
-| Body / Headings | Poppins | 400, 500, 600, 700 | Primary font |
-| Secondary | Montserrat | 400 | Used sparingly for accents |
+- **GIVEN** the Lingo app is rendered on a mobile viewport
+- **WHEN** the user clicks the hamburger menu button
+- **THEN** a mobile menu SHALL appear with the 6 navigation links stacked
+- **WHEN** the user clicks a navigation link in the mobile menu
+- **THEN** the mobile menu SHALL close
+- **WHEN** the user clicks the hamburger button again
+- **THEN** the mobile menu SHALL close
 
-### Buttons & badges
+### Requirement: Hero section
 
-- CTA button ("get started"): white text on indigo `#2e21df` background, `border-radius: 3px`, padding ~14px 35px, uppercase, bold
-- Course "free" badge: golden `#f9cf0e` background, `border-radius: 3px`, uppercase text
-- Course "paid" mark: indigo `#2e21df` background, same radius
+The system SHALL render a dark-background hero section with a centered
+headline, subtitle, and CTA button.
 
-### Section backgrounds (top to bottom)
+#### Scenario: Hero displays correctly
 
-1. Hero: dark `#252525` with background image
-2. Courses: light `#f1f1f1`
-3. Instructors: white `#FFFFFF`
-4. Register: warm taupe `#937c6f`
-5. Events: white `#FFFFFF`
-6. Blog: light gray `#f1f1f1` (left categories) + white (right featured post)
-7. Footer: dark `#232323`
+- **GIVEN** the Lingo app is rendered
+- **THEN** a section with a dark background image SHALL be displayed
+- **AND** the heading "Learn Languages Easily" SHALL be visible
+- **AND** a subtitle about language learning SHALL be present
+- **AND** a "Get Started" CTA button SHALL link to the courses section
 
-## Section structure (DOM order)
+### Requirement: Courses section
 
-1. **Header** — top bar (phone number, language dropdown, social icons) + main nav (Home, Courses, Instructors, Events, Blog, Contact) + search icon + hamburger mobile menu
-2. **Hero** — dark background image, centered headline "Learn Languages Easily", subtitle, CTA button "get started"
-3. **Courses** — section title "Our Courses", 3-column grid of course cards (image, title, instructor name + language tag, lorem ipsum description, footer with student count + star rating, free/paid badge overlay)
-4. **Instructors** — section title "Meet Our Team", 3-column grid of instructor cards (circular photo, name, "Teacher" title, short bio, social media icons)
-5. **Register** — taupe background, "Courses For Free" title, registration form (4 fields: name, email, phone, subject), countdown timer area
-6. **Events** — section title "Upcoming Events", 3-column grid of event cards (image with date overlay badge showing day + month, title, category tag)
-7. **Blog** — split layout: left side has title "From Our Blog" + 6-category grid (travel, languages, cultures, fashion, cooking, hobbies — each with image + title); right side has featured post with large image + category tag + title + description
-8. **Footer** — newsletter subscribe (logo + "Subscribe" title + input), About Us column, Help & Support column, Privacy & Terms column + copyright bar
+The system SHALL render a courses section with a 3-column grid of course
+cards showing image, title, instructor, language, description, student
+count, rating, and free/paid badge.
 
-## Gherkin requirements
+#### Scenario: Courses display 3 cards
 
-```gherkin
-Feature: Lingo — Language Learning Website Template
+- **GIVEN** the Lingo app is rendered
+- **THEN** a section titled "Our Courses" SHALL be displayed
+- **AND** 3 course cards SHALL be rendered in a responsive grid
+- **AND** each card SHALL show an image, title, instructor name, language
+  tag, description, student count, and star rating
+- **AND** free courses SHALL display a golden "Free" badge
+- **AND** paid courses SHALL display an indigo "Paid" badge
 
-  Background:
-    Given the template is loaded at the root URL
+### Requirement: Instructors section
 
-  Scenario: Header navigation renders all links
-    Then I should see a navigation bar with links: Home, Courses, Instructors, Events, Blog, Contact
-    And a search icon is visible in the header
-    And a hamburger menu icon is visible for mobile
+The system SHALL render an instructors section with a 3-column grid of
+instructor cards showing circular photo, name, title, bio, and social icons.
 
-  Scenario: Hero section displays correctly
-    Then I should see a dark background section
-    And the headline "Learn Languages Easily" is displayed
-    And a "get started" CTA button is visible
+#### Scenario: Instructors display 3 team members
 
-  Scenario: Courses section shows course cards
-    Then I should see a section titled "Our Courses"
-    And 3 course cards are displayed in a grid
-    And each card shows an image, title, instructor name, language tag, description, student count, and star rating
-    And course badges show "Free" (golden) or a price (indigo)
+- **GIVEN** the Lingo app is rendered
+- **THEN** a section titled "Meet Our Team" SHALL be displayed
+- **AND** 3 instructor cards SHALL be rendered
+- **AND** each card SHALL show a circular photo, name, "Teacher" title,
+  bio text, and social media icon links
 
-  Scenario: Instructors section shows team members
-    Then I should see a section titled "Meet Our Team"
-    And 3 instructor cards are displayed
-    And each card shows a circular photo, name, "Teacher" title, bio, and social icons
+### Requirement: Registration section
 
-  Scenario: Register section has a form
-    Then I should see a taupe/brown background section
-    And the title "Courses For Free" is displayed
-    And a registration form with fields for name, email, phone, and subject is present
-    And a countdown timer area is visible
+The system SHALL render a taupe-background registration section with a
+form (4 fields: name, email, phone, subject) and a countdown timer area.
 
-  Scenario: Events section shows upcoming events
-    Then I should see a section titled "Upcoming Events"
-    And 3 event cards are displayed
-    And each card shows an image, date badge (day + month), title, and category tag
+#### Scenario: Registration form renders all fields
 
-  Scenario: Blog section shows categories and featured post
-    Then I should see a section titled "From Our Blog"
-    And 6 blog category cards are shown on the left (travel, languages, cultures, fashion, cooking, hobbies)
-    And a featured blog post with image, category, title, and description is shown on the right
+- **GIVEN** the Lingo app is rendered
+- **THEN** a taupe-background section titled "Courses For Free" SHALL
+  be displayed
+- **AND** a form with 4 input fields (Name, Email, Phone, Subject)
+  SHALL be present
+- **AND** a "Register Now" submit button SHALL be visible
+- **AND** a countdown timer area with 4 time units SHALL be shown
 
-  Scenario: Footer has newsletter and columns
-    Then I should see a dark footer
-    And a newsletter subscribe input is present
-    And columns for About Us, Help & Support, and Privacy & Terms are shown
-    And a copyright bar is at the bottom
-    And the footer links to https://www.componentdock.com/
+#### Scenario: Registration form accepts input
 
-  Scenario: Responsive layout works on mobile
-    When I resize to mobile viewport (375px)
-    Then the hamburger menu icon is visible
-    And course cards stack vertically
-    And instructor cards stack vertically
-    And event cards stack vertically
-    And the blog section stacks vertically
-```
+- **GIVEN** the registration form is displayed
+- **WHEN** the user types into the Name field
+- **THEN** the field SHALL accept the typed text
+- **WHEN** the user clicks "Register Now"
+- **THEN** the form SHALL submit (prevent default)
 
-## Verification checklist
+### Requirement: Events section
 
-- [ ] All 8 sections rendered in correct order
-- [ ] Header nav has 6 links + search + hamburger
-- [ ] Hero: dark bg, headline, subtitle, CTA button
-- [ ] Courses: 3 cards with image, title, instructor, language, description, students, rating, badge
-- [ ] Instructors: 3 cards with circular photo, name, title, bio, social icons
-- [ ] Register: taupe bg, form with 4 fields, countdown area
-- [ ] Events: 3 cards with image, date badge, title, tag
-- [ ] Blog: 6 category cards + 1 featured post
-- [ ] Footer: newsletter, 3 columns, copyright, Component Dock link
-- [ ] Mobile responsive: hamburger menu, stacked grids
-- [ ] Design tokens match: brand indigo `#2e21df`, taupe `#937c6f`, golden `#f9cf0e`, dark `#252525`
-- [ ] Fonts: Poppins (primary), Montserrat (secondary)
-- [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/
+The system SHALL render an events section with a 3-column grid of event
+cards showing image, date badge (day + month), title, and category tag.
+
+#### Scenario: Events display 3 upcoming events
+
+- **GIVEN** the Lingo app is rendered
+- **THEN** a section titled "Upcoming Events" SHALL be displayed
+- **AND** 3 event cards SHALL be rendered
+- **AND** each card SHALL show an image, date badge with day number and
+  month abbreviation, title, and category tag
+
+### Requirement: Blog section
+
+The system SHALL render a blog section with a split layout: left side
+has 6 category cards, right side has a featured post.
+
+#### Scenario: Blog displays categories and featured post
+
+- **GIVEN** the Lingo app is rendered
+- **THEN** a section titled "From Our Blog" SHALL be displayed on the
+  left side
+- **AND** 6 blog category cards SHALL be shown (Travel Tips, Language
+  Hacks, Cultures, Fashion, Cooking, Hobbies)
+- **AND** a featured blog post with image, "Languages" category tag,
+  title, and description SHALL be shown on the right side
+
+### Requirement: Footer
+
+The system SHALL render a dark footer with newsletter subscribe, 3 columns
+(About Us, Help & Support, Privacy & Terms), social icons, and a copyright
+bar linking to Component Dock.
+
+#### Scenario: Footer renders all elements
+
+- **GIVEN** the Lingo app is rendered
+- **THEN** a dark footer SHALL be displayed
+- **AND** a newsletter subscribe input with submit button SHALL be present
+- **AND** columns for About Us, Help & Support, and Privacy & Terms
+  SHALL be shown with link lists
+- **AND** social media icon links (Facebook, Twitter, Instagram) SHALL
+  be present
+- **AND** a copyright bar SHALL be at the bottom
+- **AND** the footer SHALL contain a link to https://www.componentdock.com/
+  branded as "Component Dock"
+
+### Requirement: Responsive layout
+
+The system SHALL be responsive across desktop and mobile viewports.
+
+#### Scenario: Mobile responsive behavior
+
+- **GIVEN** the Lingo app is rendered on a 375px viewport
+- **THEN** the hamburger menu icon SHALL be visible
+- **AND** course cards SHALL stack vertically
+- **AND** instructor cards SHALL stack vertically
+- **AND** event cards SHALL stack vertically
+- **AND** the blog section SHALL stack vertically
+
+### Requirement: Design tokens
+
+The system SHALL use the extracted design tokens from the original template.
+
+#### Scenario: Brand colors match source
+
+- **GIVEN** the Lingo app is rendered
+- **THEN** the primary brand color SHALL be deep indigo `#2e21df`
+- **AND** the secondary brand color SHALL be warm taupe `#937c6f`
+- **AND** the accent color SHALL be golden yellow `#f9cf0e`
+- **AND** the dark background SHALL be `#252525`
+- **AND** the light background SHALL be `#f1f1f1`
+- **AND** the primary font SHALL be Poppins
+- **AND** the secondary font SHALL be Montserrat
+
+### Requirement: No ColorLib references in app code
+
+The system SHALL NOT contain any references to ColorLib in application
+source files, comments, or data.
+
+#### Scenario: No colorlib strings in apps
+
+- **GIVEN** the lingo app source code
+- **THEN** no file under apps/lingo/ SHALL contain the string "colorlib"
+  or "ColorLib" in any form (including comments)
+
+### Requirement: Component Dock footer link
+
+The system SHALL link to https://www.componentdock.com/ in the footer,
+branded as "Component Dock".
+
+#### Scenario: Footer links to Component Dock
+
+- **GIVEN** the Lingo app is rendered
+- **THEN** the footer SHALL contain a link with href
+  "https://www.componentdock.com/" and text "Component Dock"
+- **AND** the link SHALL open in a new tab (target="_blank")
