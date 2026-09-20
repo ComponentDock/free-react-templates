@@ -1,191 +1,133 @@
-# Template: Learnfold (Education)
+# Learnfold — Online Courses Education Platform
+
+Recreation of ColorLib **Webuni** (https://colorlib.com/wp/template/webuni/).
 
 ## Purpose
 
-Recreation of [ColorLib Webuni](https://colorlib.com/wp/template/webuni/) — an
-education/online-courses template.
+Provide a free React template for online education platforms, featuring course categories, search, course listings with filtering, a teacher signup form, and a newsletter footer. Recreates the ColorLib Webuni design with crimson-red (#d82a4e) brand palette, Raleway typography, and responsive layout.
 
-- **Source slug:** `webuni`
-- **Preview URL:** https://preview.colorlib.com/theme/webuni/
-- **Deploy name:** `learnfold`
-- **Deploy URL:** https://learnfold.free.componentdock.com
-- **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
+## Requirements
 
-## Design tokens
+### Requirement: Navbar with navigation and mobile menu
 
-| Token | Value | Notes |
-|---|---|---|
-| Font family | `"Raleway", sans-serif` | Google Font; weights 400–800 |
-| Brand primary | `#d82a4e` | Crimson-red. Buttons, section BGs, accent borders |
-| Secondary BG | `#edf4f6` | Light blue-grey. Category cards, footer-bottom |
-| Neutral white | `#ffffff` | Card backgrounds, text on dark sections |
-| Neutral dark text | `#3e3e3e` / `#474747` | Body copy |
-| Border radius | `0` (square) | Buttons are rectangular, no rounding |
-| Button style | `background: #d82a4e`, `color: #fff`, `border: none`, `padding: 15px 10px`, `font-weight: 600`, `font-size: 16px`, `min-width: 196px` | Pill-style is NOT used; flat rectangle |
-| Section padding | `115px` top/bottom (`.spad`) | Large vertical rhythm |
-| Background images | `data-setbg` pattern (CSS `background-size: cover`) | Hero, signup, course thumbs |
+The template SHALL render a top navbar with brand logo, navigation links (Home, About us, Courses, News, Contact), a Login CTA button, and a responsive hamburger menu for mobile.
 
-## Page structure (section order)
+#### Scenario: Desktop navbar renders all links
 
-1. **Header** — Logo left (3 cols), nav right (9 cols): Home, About us, Courses, News, Contact. "Login" button right-aligned (`.site-btn`).
-2. **Hero** — Full-width background image, white text heading + subtitle, name+email signup form at bottom.
-3. **Course Categories** — "Our Course Categories" heading + 3×2 grid of category cards (image thumb, title, description, course count span). Cards have `#edf4f6` background.
-4. **Search Section** — Full-width `#d82a4e` background, white heading "Search your course", course+category inputs + search button.
-5. **Featured Courses** — Filter tabs (All / Finance / Design / Web Development / Photography). 4-column grid of course cards (thumbnail with price badge, title, description, student count, author avatar + name). MixItUp filter pattern.
-6. **Signup Section** — Left-aligned form on `#d82a4e` background (right half is parallax background image). Fields: name, email, phone, file upload (label styled as button), submit.
-7. **Banner/CTA** — "Join Our Community Now!" heading + description + "Register Now" button centered.
-8. **Footer** — 5-column widget row: Contact Info, 3 link columns (Engineering, Graphic Design, Development — each with 5 links), Newsletter form. Border top `3px solid #d82a4e`.
-9. **Footer Bottom** — `#edf4f6` background: Terms/Privacy links + copyright. Replace attribution with Component Dock link.
+- **WHEN** the page loads on desktop
+- **THEN** the navbar shows "Learnfold" brand, all 5 nav links, and a Login button
 
-## Gherkin scenarios
+#### Scenario: Mobile menu toggles open and closed
 
-### Header
+- **WHEN** the user taps the hamburger icon on mobile
+- **THEN** the mobile menu opens showing all nav links and a Login button
+- **AND** tapping the close icon hides the menu
 
-```gherkin
-Feature: Learnfold Header
+### Requirement: Hero with signup form
 
-  Scenario: Logo and navigation render
-    Given the page loads
-    Then a logo image is visible on the left
-    And navigation links "Home", "About us", "Courses", "News", "Contact" are visible
-    And a "Login" button styled with brand primary color is visible
+The template SHALL render a hero section with a background image, heading "Get The Best Free Online Courses", subtitle, and a signup form with Name, E-mail inputs and "Sign Up Now" button.
 
-  Scenario: Navigation links are interactive
-    Given the header is rendered
-    When a user clicks a navigation link
-    Then the link responds with a visible hover state
-```
+#### Scenario: Hero displays heading and form
 
-### Hero
+- **WHEN** the page loads
+- **THEN** the hero heading "Get The Best Free Online Courses" is displayed
+- **AND** a Name input, E-mail input, and "Sign Up Now" button are present
 
-```gherkin
-Feature: Learnfold Hero
+#### Scenario: Hero form accepts input
 
-  Scenario: Hero displays heading and signup form
-    Given the hero section is visible
-    Then a heading "Get The Best Free Online Courses" is displayed
-    And a subtitle paragraph is displayed
-    And a signup form with Name, E-mail inputs and "Sign Up Now" button is present
+- **WHEN** the user types a name and email
+- **THEN** the inputs reflect the typed values
 
-  Scenario: Hero has a background image
-    Given the hero section is visible
-    Then the background displays a cover image
-```
+### Requirement: Course categories grid
 
-### Course Categories
+The template SHALL render a section with heading "Our Course Categories" and a 3-column grid of 6 category cards, each with an icon, title, description, and course count.
 
-```gherkin
-Feature: Learnfold Course Categories
+#### Scenario: Six category cards render
 
-  Scenario: Categories grid renders 6 items
-    Given the categories section is visible
-    Then a heading "Our Course Categories" is displayed
-    And 6 category cards are rendered in a 3-column grid
-    And each card has an image thumbnail, title, description, and course count
+- **WHEN** the categories section is visible
+- **THEN** 6 category cards are rendered in a grid
+- **AND** each card shows a title, description, and course count
 
-  Scenario: Category cards have consistent styling
-    Given a category card is rendered
-    Then the card background is the secondary light color
-    And the course count text uses the brand primary color
-```
+### Requirement: Search section
 
-### Search Section
+The template SHALL render a full-width search section with brand primary background, heading "Search your course", Course and Category inputs, and a "Search Course" button.
 
-```gherkin
-Feature: Learnfold Search
+#### Scenario: Search form renders on brand background
 
-  Scenario: Search form renders on brand background
-    Given the search section is visible
-    Then the section background is brand primary (#d82a4e)
-    And a heading "Search your course" is displayed in white
-    And Course and Category inputs are present
-    And a "Search Course" button is present
-```
+- **WHEN** the search section is visible
+- **THEN** the section background is brand primary
+- **AND** Course and Category inputs are present
+- **AND** a "Search Course" button is present
 
-### Featured Courses
+### Requirement: Featured courses with filter tabs
 
-```gherkin
-Feature: Learnfold Featured Courses
+The template SHALL render filter tabs (All / Finance / Design / Web Development / Photography) and a 4-column grid of course cards. Each card shows a thumbnail with price badge, title, description, student count, and author info. Clicking a tab filters courses by category.
 
-  Scenario: Filter tabs render
-    Given the courses section is visible
-    Then filter tabs "All", "Finance", "Design", "Web Development", "Photography" are visible
-    And "All" tab is active by default
+#### Scenario: All courses display by default
 
-  Scenario: Course cards render in grid
-    Given the courses section is visible
-    Then 8 course cards are rendered in a 4-column grid
-    And each card shows a thumbnail with a price badge
-    And each card shows a title, description, student count, and author info
+- **WHEN** the featured courses section loads
+- **THEN** all 8 course cards are visible
+- **AND** the "All" tab is active
 
-  Scenario: Filter tabs filter courses
-    Given a user clicks the "Finance" tab
-    Then only finance-category courses are visible
-```
+#### Scenario: Filter tabs filter courses
 
-### Signup Section
+- **WHEN** the user clicks the "Finance" tab
+- **THEN** only finance-category courses are visible
 
-```gherkin
-Feature: Learnfold Signup
+#### Scenario: All tab restores all courses
 
-  Scenario: Signup form renders with fields
-    Given the signup section is visible
-    Then a heading "Sign up to became a teacher" is displayed
-    And Name, E-mail, Phone inputs are present
-    And an "Upload Course" file upload button is present
-    And a "Search Course" submit button is present
+- **WHEN** the user clicks "All" after filtering
+- **THEN** all 8 courses are visible again
 
-  Scenario: Signup section has parallax background
-    Given the signup section is visible
-    Then the right half shows a background image with cover sizing
-```
+### Requirement: Teacher signup section
 
-### Banner CTA
+The template SHALL render a two-column signup section with brand primary background on the left (form with Name, E-mail, Phone, file upload, submit button) and a background image on the right.
 
-```gherkin
-Feature: Learnfold Banner CTA
+#### Scenario: Signup form renders with all fields
 
-  Scenario: CTA renders with button
-    Given the banner section is visible
-    Then a heading "Join Our Community Now!" is displayed
-    And a description paragraph is shown
-    And a "Register Now" button using brand primary color is centered
-```
+- **WHEN** the signup section is visible
+- **THEN** Name, E-mail, Phone inputs are present
+- **AND** an "Upload Course" file upload button is present
+- **AND** a "Submit Course" button is present
 
-### Footer
+#### Scenario: File upload shows selected filename
 
-```gherkin
-Feature: Learnfold Footer
+- **WHEN** the user selects a file for upload
+- **THEN** the button label changes to show the filename
 
-  Scenario: Footer widgets render
-    Given the footer is visible
-    Then Contact Info with address, phone, email is shown
-    And 3 link columns (Engineering, Graphic Design, Development) with 5 links each are shown
-    And a Newsletter form with email input and Subscribe button is shown
+### Requirement: Banner CTA section
 
-  Scenario: Footer has brand accent border
-    Given the footer is visible
-    Then the top border is 3px solid brand primary
+The template SHALL render a centered CTA section with heading "Join Our Community Now!", description paragraph, and "Register Now" button linking to #register.
 
-  Scenario: Footer bottom renders
-    Given the footer bottom is visible
-    Then Terms & Conditions, Register, Privacy links are shown
-    And copyright text is shown
-    And a link to Component Dock is present (replacing original attribution)
-```
+#### Scenario: CTA renders with button
 
-## Verification checklist
+- **WHEN** the banner section is visible
+- **THEN** the heading "Join Our Community Now!" is displayed
+- **AND** a "Register Now" button is present
 
-- [ ] All 9 sections render in the correct order
-- [ ] Font "Raleway" loads from Google Fonts
-- [ ] Brand primary #d82a4e used consistently on buttons, search BG, signup BG, footer border
-- [ ] Secondary background #edf4f6 used on category cards, footer bottom
-- [ ] Buttons are rectangular (border-radius: 0), not rounded
-- [ ] Course filter tabs filter cards correctly
-- [ ] Hero background image is visible with cover sizing
-- [ ] Signup section has parallax-style background on the right half
-- [ ] Footer has 5 widget columns + newsletter
-- [ ] Footer bottom links to Component Dock
-- [ ] No references to ColorLib anywhere in app code
-- [ ] Placeholder images use picsum.photos with deterministic seeds
-- [ ] All tests pass with 100% coverage
+### Requirement: Footer with widgets and newsletter
+
+The template SHALL render a 5-column footer with Contact Info, 3 link columns (Engineering, Graphic Design, Development), and Newsletter form. Footer bottom shows Terms links, copyright, and Component Dock attribution.
+
+#### Scenario: Footer widgets render
+
+- **WHEN** the footer is visible
+- **THEN** Contact Info with address, phone, email is shown
+- **AND** 3 link columns with 5 links each are shown
+- **AND** a Newsletter form with email input and Subscribe button is shown
+
+#### Scenario: Footer bottom links to Component Dock
+
+- **WHEN** the footer bottom is visible
+- **THEN** a link to Component Dock is present
+- **AND** copyright text is shown
+
+### Requirement: Brand tokens applied consistently
+
+The template SHALL use Raleway font, brand primary #d82a4e, secondary #edf4f6, rectangular buttons (no border-radius), and picsum.photos seeded placeholders for all images.
+
+#### Scenario: Brand colors and font applied
+
+- **WHEN** the template renders
+- **THEN** Raleway font is loaded from Google Fonts
+- **AND** brand primary color is used on buttons, search background, signup background, and footer border
