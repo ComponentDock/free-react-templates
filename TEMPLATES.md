@@ -1667,7 +1667,7 @@
 - [x] **Advent** — [colorlib](https://colorlib.com/wp/template/advent/) · [liturgy](https://liturgy.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/advent-free-template.jpg)
 - [x] **Agenda** — [colorlib](https://colorlib.com/wp/template/agenda/) · [lineup](https://lineup.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agenda-free-template.jpg)
 - [x] **Ai Summit** — [colorlib](https://colorlib.com/wp/template/ai-summit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aisummit-template-1770211095695.jpg) · [keynote](https://keynote.free.componentdock.com)
-- [ ] **Confe** — [colorlib](https://colorlib.com/wp/template/confe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/confe-free-template.jpg)
+- [~] **Confe** — [colorlib](https://colorlib.com/wp/template/confe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/confe-free-template.jpg)
 - [x] **Confer** — [colorlib](https://colorlib.com/wp/template/confer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/confer-free-template-1.jpg) · [summit](https://summit.free.componentdock.com)
 - [ ] **Conference** — [colorlib](https://colorlib.com/wp/template/conference/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/conference-free-template.jpg)
 - [x] **Confpro** — [colorlib](https://colorlib.com/wp/template/confpro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/confpro-free-template.jpg) · [converge](https://converge.free.componentdock.com)
