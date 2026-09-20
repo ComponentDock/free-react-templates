@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Lectern brand — from the ColorLib "Unica" preview stylesheet:
+     orange #f6783a (buttons, counters, accents), dark navy #020031
+     (counter bg, footer), body text #111111 / #636363. */
+  --color-brand: #f6783a;
+
+  /* Dark navy used for counter and footer backgrounds. */
+  --color-navy: #020031;
+
+  /* Text tones. */
+  --color-ink: #111111;
+  --color-body: #636363;
+
+  /* Light section backgrounds. */
+  --color-mist: #f8f9fa;
+
+  /* Rubik via Google Fonts <link> in index.html. */
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
