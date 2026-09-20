@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Erudit brand palette — recreated from ColorLib Knowledge design (primary #4586FF blue). */
+  --color-sky-50: #eff6ff;
+  --color-sky-100: #dbeafe;
+  --color-sky-200: #bfdbfe;
+  --color-sky-300: #93c5fd;
+  --color-sky-400: #60a5fa;
+  --color-sky-500: #4586ff;
+  --color-sky-600: #2563eb;
+  --color-sky-700: #1d4ed8;
+
+  --color-gold-400: #f7af1d;
+
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+}
