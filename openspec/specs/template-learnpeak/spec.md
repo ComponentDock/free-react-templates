@@ -33,147 +33,155 @@ Extracted from the live preview CSS (`styles/main_styles.css`):
 ## Section structure (order from preview)
 
 1. **Top Bar** — Register/Login links, dark background bar at top.
-2. **Header/Navbar** — Logo ("learn"), navigation (Home, Courses, Instructors, Events, Blog, Contact), search icon. Dark background matching top bar.
+2. **Header/Navbar** — Logo ("learn"), navigation (Home, About Us, Courses, News, Contact), search icon. Dark background matching top bar.
 3. **Home Slider** — Full-width carousel with 3 slides, each having: background image, centered logo, heading, subtitle, and two CTA buttons ("learn more" / "see all courses"). Orange buttons on dark overlay.
 4. **Featured Course** — Split layout: left side has course tag, price, title ("Online Literature Course"), description text, author avatar+name, sales count; right side has course background image. Light background.
-5. **Courses Carousel** — Heading "Choose your course" + search button. 3 course cards in an Owl Carousel: each with image, tag (Featured/New), title, author avatar+name, footer with stats. Navigation arrows. Light background.
+5. **Courses Cards** — Heading "Choose Your Course" + search button. 3 course cards: each with image, tag (Featured/New), title, author avatar+name, footer with stats. Light background.
 6. **Milestones/Counters** — 4 milestone counters in a row (icon + number + label). Dark background section.
-7. **News/Blog** — 3 blog post previews with date badge, image, title, author. Light background.
-8. **Join CTA** — "Join Our Platform Today" heading with "register now" button. Orange accent.
-9. **Footer** — 4 columns: About (logo + social icons), Links, Courses, Contact (address, phone, email). Dark background.
+7. **Why Choose Us** — Accordion FAQ + Upcoming Events with date badges. Two-column layout.
+8. **News/Blog** — 3 blog post previews with date badge, image, title, author. Light background.
+9. **Join CTA** — "Join Our Platform Today" heading with "register now" button. Orange accent.
+10. **Footer** — 4 columns: About (logo + social icons), Quick Menu, Useful Links, Contact Us (address, phone, email). Dark background. Component Dock link.
 
-## Gherkin scenarios
+## Requirements
 
-### Top Bar + Navbar
-```gherkin
-Feature: LearnPeak Navigation
+### Requirement: Navigation
 
-  Scenario: Top bar shows auth links
-    Given the user visits the LearnPeak homepage
-    Then "Register" and "Login" links are visible in the top bar
+The application SHALL display a top bar with Register/Login links and contact info, and a sticky navbar with logo, navigation links, and search.
 
-  Scenario: Main nav has correct links
-    Given the user visits the LearnPeak homepage
-    Then the navbar contains: Home, Courses, Instructors, Events, Blog, Contact
-    And the logo text reads "learn"
-```
+#### Scenario: Top bar shows auth links
 
-### Home Slider
-```gherkin
-Feature: LearnPeak Home Slider
+- **WHEN** the user visits the LearnPeak homepage
+- **THEN** "Register" and "Login" links are visible in the top bar
 
-  Scenario: Hero slider displays three slides
-    Given the user visits the LearnPeak homepage
-    Then a full-width image slider is visible
-    And each slide has a heading, subtitle, and two CTA buttons
+#### Scenario: Main nav has correct links
 
-  Scenario: Slider is auto-advancing
-    Given the user waits on the homepage
-    Then the slider advances to the next slide automatically
+- **WHEN** the user visits the LearnPeak homepage
+- **THEN** the navbar contains: Home, About Us, Courses, News, Contact
+- **AND** the logo text reads "learn"
 
-  Scenario: Slider navigation works
-    Given the user views the homepage
-    When the user clicks the next arrow
-    Then the slider advances to the next slide
-```
+#### Scenario: Mobile menu toggle works
 
-### Featured Course
-```gherkin
-Feature: LearnPeak Featured Course
+- **WHEN** the user clicks the mobile menu toggle button
+- **THEN** the mobile navigation menu opens with all nav links visible
 
-  Scenario: Featured course section shows details
-    Given the user scrolls past the hero
-    Then a featured course section is visible
-    And it displays a course tag, title, price, description, and author info
+### Requirement: Hero Slider
 
-  Scenario: Featured course has split layout
-    Given the user views the featured course section
-    Then the left column has course text details
-    And the right column has a course background image
-```
+The application SHALL display a full-width hero carousel with 3 slides, navigation arrows, and pagination dots.
 
-### Courses Carousel
-```gherkin
-Feature: LearnPeak Courses
+#### Scenario: Hero slider displays three slides
 
-  Scenario: Course carousel displays courses
-    Given the user scrolls to the courses section
-    Then a heading reads "Choose your course"
-    And 3 course cards are visible in a carousel
-    And each card has an image, tag, title, and author
+- **WHEN** the user visits the LearnPeak homepage
+- **THEN** a full-width image slider is visible
+- **AND** each slide has a heading, subtitle, and two CTA buttons
 
-  Scenario: Course carousel navigation works
-    Given the user views the courses section
-    When the user clicks the next arrow
-    Then the carousel advances to the next set of courses
-```
+#### Scenario: Slider navigation works
 
-### Milestones
-```gherkin
-Feature: LearnPeak Milestones
+- **WHEN** the user clicks the next arrow
+- **THEN** the slider advances to the next slide
 
-  Scenario: Four counters are displayed
-    Given the user scrolls to the milestones section
-    Then 4 milestone counters are shown in a row
-    And each has an icon, number, and label
-    And the section has a dark background
-```
+#### Scenario: Slider previous navigation works
 
-### News/Blog
-```gherkin
-Feature: LearnPeak News
+- **WHEN** the user clicks the previous arrow
+- **THEN** the slider goes to the previous slide
 
-  Scenario: Three blog posts are shown
-    Given the user scrolls to the news section
-    Then 3 blog post previews are displayed
-    And each has a date badge, image, title, and author name
-```
+#### Scenario: Pagination dots work
 
-### Join CTA
-```gherkin
-Feature: LearnPeak Join CTA
+- **WHEN** the user clicks a pagination dot
+- **THEN** the slider navigates to the corresponding slide
 
-  Scenario: CTA section prompts registration
-    Given the user scrolls to the join section
-    Then a heading reads "Join Our Platform Today"
-    And a "register now" button is visible
-```
+### Requirement: Featured Course
 
-### Footer
-```gherkin
-Feature: LearnPeak Footer
+The application SHALL display a featured course section with a split layout showing course details and an image.
 
-  Scenario: Footer has four columns
-    Given the user scrolls to the footer
-    Then 4 columns are visible: About, Links, Courses, Contact
+#### Scenario: Featured course section shows details
 
-  Scenario: Footer links to Component Dock
-    Given the user scrolls to the footer
-    Then a link to "https://www.componentdock.com/" is present
-    And it is branded as "Component Dock"
+- **WHEN** the user scrolls past the hero
+- **THEN** a featured course section is visible
+- **AND** it displays a course tag, title, price, description, and author info
 
-  Scenario: Footer shows contact info
-    Given the user scrolls to the footer
-    Then address, phone number, and email are displayed
-```
+### Requirement: Course Cards
 
-## Verification checklist
+The application SHALL display a course grid with 3 course cards, each showing an image, tag, title, author, and stats.
 
-- [ ] All sections match the original section order 1:1
-- [ ] Brand color `#ff6600` used for primary buttons and CTAs
-- [ ] Hover color `#ffae00` on interactive elements
-- [ ] Dark sections use `#2c2b31` background
-- [ ] Montserrat font used throughout (single font family)
-- [ ] Square/sharp-cornered buttons (no border-radius)
-- [ ] Circular avatars (50% border-radius)
-- [ ] Home slider has 3 slides with centered content
-- [ ] Featured course has split layout (text left, image right)
-- [ ] Courses carousel with 3 cards and navigation arrows
-- [ ] 4 milestone counters in dark background section
-- [ ] 3 blog post previews with date badges
-- [ ] Join CTA with "register now" button
-- [ ] Footer has 4 columns + Component Dock link
-- [ ] No ColorLib references in app code
-- [ ] All images use `picsum.photos/seed/learnpeak-<n>/...` placeholders
-- [ ] Typography loaded via Google Fonts in index.html
-- [ ] 100% test coverage on all new code
+#### Scenario: Course cards display correctly
+
+- **WHEN** the user scrolls to the courses section
+- **THEN** a heading reads "Choose Your Course"
+- **AND** 3 course cards are visible
+- **AND** each card has an image, tag, title, and author
+
+### Requirement: Milestones
+
+The application SHALL display 4 milestone counters in a dark background section with icons, numbers, and labels.
+
+#### Scenario: Four counters are displayed
+
+- **WHEN** the user scrolls to the milestones section
+- **THEN** 4 milestone counters are shown
+- **AND** each has an icon, number, and label
+- **AND** the section has a dark background
+
+### Requirement: Why Choose Us
+
+The application SHALL display accordion FAQ items and upcoming events in a two-column layout.
+
+#### Scenario: Accordion toggles work
+
+- **WHEN** the user clicks an accordion question
+- **THEN** the accordion panel toggles open/closed
+- **AND** the aria-expanded attribute reflects the current state
+
+#### Scenario: Events are displayed
+
+- **WHEN** the user scrolls to the events section
+- **THEN** upcoming events with date badges and titles are visible
+
+### Requirement: News
+
+The application SHALL display 3 blog post previews with date badges, images, titles, and authors.
+
+#### Scenario: Three blog posts are shown
+
+- **WHEN** the user scrolls to the news section
+- **THEN** 3 blog post previews are displayed
+- **AND** each has a date badge, image, title, and author name
+
+### Requirement: Join CTA
+
+The application SHALL display a call-to-action section prompting registration.
+
+#### Scenario: CTA section prompts registration
+
+- **WHEN** the user scrolls to the join section
+- **THEN** a heading reads "Join Our Platform Today"
+- **AND** a "Register Now" button is visible
+
+### Requirement: Footer
+
+The application SHALL display a 4-column footer with navigation, useful links, contact info, and a Component Dock attribution link.
+
+#### Scenario: Footer has four columns
+
+- **WHEN** the user scrolls to the footer
+- **THEN** 4 columns are visible: About, Quick Menu, Useful Links, Contact Us
+
+#### Scenario: Footer links to Component Dock
+
+- **WHEN** the user scrolls to the footer
+- **THEN** a link to "https://www.componentdock.com/" is present
+- **AND** it is branded as "Component Dock"
+
+#### Scenario: Footer shows contact info
+
+- **WHEN** the user scrolls to the footer
+- **THEN** address, phone number, and email are displayed
+
+### Requirement: Accessibility
+
+The application SHALL use semantic HTML landmarks (header, main, footer, nav) and proper ARIA attributes.
+
+#### Scenario: Landmarks are present
+
+- **WHEN** the user visits the LearnPeak homepage
+- **THEN** banner, main, and contentinfo landmarks are present
