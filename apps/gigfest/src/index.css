@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* GigFest brand — extracted from ColorLib Eventcon css/style.css */
+  --color-brand: #ff4533;
+  --color-navy: #001d38;
+  --color-dark-bg: #000000;
+  --color-body-text: #aab1b7;
+  --color-light-gray: #707070;
+  --color-border-gray: #4d6174;
+
+  /* Anton for headings, Muli for body — Google Fonts loaded in index.html */
+  --font-heading: 'Anton', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-dark-bg text-body-text;
+  }
+}
