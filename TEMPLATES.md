@@ -1665,7 +1665,7 @@
 ## Event (27)
 
 - [x] **Advent** — [colorlib](https://colorlib.com/wp/template/advent/) · [liturgy](https://liturgy.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/advent-free-template.jpg)
-- [~] **Agenda** — [colorlib](https://colorlib.com/wp/template/agenda/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agenda-free-template.jpg)
+- [x] **Agenda** — [colorlib](https://colorlib.com/wp/template/agenda/) · [lineup](https://lineup.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agenda-free-template.jpg)
 - [x] **Ai Summit** — [colorlib](https://colorlib.com/wp/template/ai-summit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aisummit-template-1770211095695.jpg) · [keynote](https://keynote.free.componentdock.com)
 - [ ] **Confe** — [colorlib](https://colorlib.com/wp/template/confe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/confe-free-template.jpg)
 - [x] **Confer** — [colorlib](https://colorlib.com/wp/template/confer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/confer-free-template-1.jpg) · [summit](https://summit.free.componentdock.com)
@@ -2260,7 +2260,7 @@
 
 ## Music (19)
 
-- [~] **Agenda** — [colorlib](https://colorlib.com/wp/template/agenda/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agenda-free-template.jpg)
+- [x] **Agenda** — [colorlib](https://colorlib.com/wp/template/agenda/) · [lineup](https://lineup.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agenda-free-template.jpg)
 - [x] **Deejee** — [colorlib](https://colorlib.com/wp/template/deejee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/deejee-free-template.jpg) · [decibel](https://decibel.free.componentdock.com)
 - [ ] **Dj** — [colorlib](https://colorlib.com/wp/template/dj/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dj-free-template.jpg)
 - [x] **Djoz** — [colorlib](https://colorlib.com/wp/template/djoz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/djoz-free-template.jpg) · [rhythm](https://rhythm.free.componentdock.com)
