@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Cognita brand — recreation of ColorLib Eskwela tokens.
+     Primary blue #429FFD, gold accent #F7AF1D, dark bar #1E2022,
+     headings serif (Playfair Display), body sans (Open Sans). */
+  --color-primary-50: #eef6ff;
+  --color-primary-100: #d9ecff;
+  --color-primary-200: #b3d9ff;
+  --color-primary-300: #80c0ff;
+  --color-primary-400: #4da3ff;
+  --color-primary-500: #429ffd;
+  --color-primary-600: #2b8ae6;
+  --color-primary-700: #1a6fc0;
+  --color-primary-800: #105499;
+  --color-primary-900: #0a3d73;
+
+  --color-gold-300: #ffd166;
+  --color-gold-400: #ffc300;
+  --color-gold-500: #f7af1d;
+
+  --color-dark-bar: #1e2022;
+
+  --color-section-alt: #f2f3f7;
+
+  --color-heading: #000000;
+  --color-body: #808080;
+  --color-ink: #1a1a1a;
+
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Open Sans', Arial, sans-serif;
+}
