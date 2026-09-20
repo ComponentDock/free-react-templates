@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Convene brand palette — recreated from ColorLib "Manup" design
+     (css/style.css): orange #ee8425 → pink #f9488b gradient,
+     red accent #f44949, body text #6a6b7c, headings #171822. */
+  --color-brand: #ee8425;
+  --color-brand-pink: #f9488b;
+  --color-brand-dark: #d4741f;
+
+  /* Ink — dark heading color (#171822). */
+  --color-ink: #171822;
+
+  /* Paper — light section background. */
+  --color-paper: #ffffff;
+
+  /* Mist — muted body text (#6a6b7c). */
+  --color-mist: #6a6b7c;
+
+  /* Accent — red (#f44949). */
+  --color-accent: #f44949;
+
+  /* Primary scale so shared Button/ButtonLink `primary` variants
+     resolve to the brand orange. */
+  --color-primary-50: #fff4ed;
+  --color-primary-100: #ffe5d1;
+  --color-primary-200: #ffc8a3;
+  --color-primary-300: #ffa36b;
+  --color-primary-400: #f5833b;
+  --color-primary-500: #ee8425;
+  --color-primary-600: #d4741f;
+  --color-primary-700: #b85e18;
+  --color-primary-800: #964a14;
+  --color-primary-900: #7a3c11;
+
+  /* Fonts: Poppins (headings) + Work Sans (body) — matching the original. */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
