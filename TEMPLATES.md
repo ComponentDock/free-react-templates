@@ -1679,7 +1679,7 @@
 - [x] **Evento** — [colorlib](https://colorlib.com/wp/template/evento/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/evento-free-template.jpg) · [gathr](https://gathr.free.componentdock.com)
 - [x] **Eventor** — [colorlib](https://colorlib.com/wp/template/eventor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventor-template-1770211156837.jpg) · [podium](https://podium.free.componentdock.com)
 - [x] **Eventotemplate** — [colorlib](https://colorlib.com/wp/template/eventotemplate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventotemplate-colorlib.jpg) · [confab](https://confab.free.componentdock.com)
-- [~] **Eventro** — [colorlib](https://colorlib.com/wp/template/eventro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventro-free-template.jpg)
+- [x] **Eventro** — [colorlib](https://colorlib.com/wp/template/eventro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventro-free-template.jpg) · [galaflow](https://free-react-templates-galaflow.surge.sh)
 - [x] **Eventure** — [colorlib](https://colorlib.com/wp/template/eventure/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventure-free-template.jpg) · [rally](https://rally.free.componentdock.com)
 - [ ] **Eventz** — [colorlib](https://colorlib.com/wp/template/eventz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/evento-free-template-1.jpg)
 - [ ] **Manup** — [colorlib](https://colorlib.com/wp/template/manup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/manup-free-template.jpg)
