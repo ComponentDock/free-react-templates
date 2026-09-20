@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Lineup brand palette — recreated from the reference design
+     (purple gradient #AA00FF → #581687, CTA gradient #ab00e5 → #581479,
+     dark button #231e23, body text #2f2f2f). */
+  --color-primary-start: #ab00e5;
+  --color-primary-end: #581479;
+  --color-dark-btn: #231e23;
+  --color-body: #2f2f2f;
+  --color-heading: #222222;
+  --color-muted: #777777;
+  --color-light-bg: #f8f8f8;
+  --color-footer-bg: #231e23;
+  --color-rating: #9a28d7;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
