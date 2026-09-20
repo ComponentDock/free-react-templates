@@ -1672,7 +1672,7 @@
 - [x] **Conference** — [colorlib](https://colorlib.com/wp/template/conference/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/conference-free-template.jpg) · [forum](https://forum.free.componentdock.com)
 - [x] **Confpro** — [colorlib](https://colorlib.com/wp/template/confpro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/confpro-free-template.jpg) · [converge](https://converge.free.componentdock.com)
 - [x] **Convention** — [colorlib](https://colorlib.com/wp/template/convention/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/convention-free-template.jpg) · [colloquium](https://colloquium.free.componentdock.com)
-- [ ] **Event** — [colorlib](https://colorlib.com/wp/template/event/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/event-free-template.jpg)
+- [~] **Event** — [colorlib](https://colorlib.com/wp/template/event/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/event-free-template.jpg)
 - [ ] **Eventalk** — [colorlib](https://colorlib.com/wp/template/eventalk/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventalk-free-template.jpg)
 - [x] **Eventasia** — [colorlib](https://colorlib.com/wp/template/eventasia/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/evantasia-free-fullscreen-event-website-template.jpg · [jamboree](https://free-react-templates-jamboree.surge.sh)
 - [ ] **Eventcon** — [colorlib](https://colorlib.com/wp/template/eventcon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventcon-free-template.jpg)
