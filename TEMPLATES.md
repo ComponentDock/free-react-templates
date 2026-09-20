@@ -1638,7 +1638,7 @@
 - [x] **Elearn** — [learnpeak](https://learnpeak.free.componentdock.com) · [colorlib](https://colorlib.com/wp/template/elearn/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elearn-free-template.jpg)
 - [x] **Eskwela** — [cognita](https://cognita.free.componentdock.com) · [colorlib](https://colorlib.com/wp/template/eskwela/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eskwela-free-template.jpg)
 - [x] **Etrain** — [colorlib](https://colorlib.com/wp/template/etrain/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/etrain-free-template.jpg) · [learnhub](https://learnhub.free.componentdock.com)
-- [~] **Ezuca** — [colorlib](https://colorlib.com/wp/template/ezuca/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ezuca-free-template.jpg)
+- [x] **Ezuca** — [learnpath](https://free-react-templates-learnpath.surge.sh) · [colorlib](https://colorlib.com/wp/template/ezuca/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ezuca-free-template.jpg)
 - [x] **Fox** — [colorlib](https://colorlib.com/wp/template/fox/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fox-free-template.jpg) · [ivy](https://ivy.free.componentdock.com)
 - [ ] **Genius** — [colorlib](https://colorlib.com/wp/template/genius/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/genius-free-template.jpg)
 - [x] **Kiddos** — [colorlib](https://colorlib.com/wp/template/kiddos/) · [tinybrights](https://tinybrights.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kiddos-free-template.jpg)
