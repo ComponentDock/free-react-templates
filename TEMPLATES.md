@@ -1643,7 +1643,7 @@
 - [x] **Genius** — [colorlib](https://colorlib.com/wp/template/genius/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/genius-free-template.jpg) · [brightmind](https://brightmind.free.componentdock.com)
 - [x] **Kiddos** — [colorlib](https://colorlib.com/wp/template/kiddos/) · [tinybrights](https://tinybrights.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kiddos-free-template.jpg)
 - [x] **Kiddy** — [colorlib](https://colorlib.com/wp/template/kiddy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kiddy-free-template.jpeg) · [frolic](https://frolic.free.componentdock.com)
-- [~] **Kindergarten** — [colorlib](https://colorlib.com/wp/template/kindergarten/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kindergarten-free-template.jpg)
+- [x] **Kindergarten** — [colorlib](https://colorlib.com/wp/template/kindergarten/) · [tadpole](https://tadpole.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kindergarten-free-template.jpg)
 - [ ] **Knowledge** — [colorlib](https://colorlib.com/wp/template/knowledge/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/knowledge-free-template.jpeg)
 - [x] **Learnhub** · [coursely](https://coursely.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/learnhub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/learnhub-template-1770211181840.jpg)
 - [x] **Learnit** — [colorlib](https://colorlib.com/wp/template/learnit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/learnit-free-template.jpg) · [lyceum](https://lyceum.free.componentdock.com)
