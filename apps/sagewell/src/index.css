@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Sagewell brand palette — teal/cyan #1fc2d9 */
+  --color-brand-50: #edfafc;
+  --color-brand-100: #d0f3f7;
+  --color-brand-200: #a1e7ef;
+  --color-brand-300: #5dd5e3;
+  --color-brand-400: #1fc2d9;
+  --color-brand-500: #16a8be;
+  --color-brand-600: #12889d;
+  --color-brand-700: #146e80;
+  --color-brand-800: #175a6a;
+  --color-brand-900: #184b5a;
+
+  /* Accent orange #ff5e13 */
+  --color-accent-50: #fff4ed;
+  --color-accent-100: #ffe5d4;
+  --color-accent-200: #ffc7a8;
+  --color-accent-300: #ff9f71;
+  --color-accent-400: #ff5e13;
+  --color-accent-500: #fe4400;
+  --color-accent-600: #ef2a00;
+  --color-accent-700: #c61b00;
+  --color-accent-800: #9d1800;
+  --color-accent-900: #7e1804;
+
+  /* Navy text #234262 */
+  --color-navy-50: #f0f4f8;
+  --color-navy-100: #d9e2ec;
+  --color-navy-200: #bcccdc;
+  --color-navy-300: #9fb3c8;
+  --color-navy-400: #829ab1;
+  --color-navy-500: #627d98;
+  --color-navy-600: #486581;
+  --color-navy-700: #334e68;
+  --color-navy-800: #243b53;
+  --color-navy-900: #102a43;
+
+  /* Poppins */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
