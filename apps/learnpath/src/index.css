@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #19c880;
+  --color-brand-hover: #34d986;
+  --color-text: #383749;
+  --color-text-muted: #757686;
+  --color-border: #ebebeb;
+  --color-bg-light: #f7f7f7;
+  --color-bg-input: #f3f3f3;
+  --color-star: #f3a90b;
+  --color-dark: #1a1a2e;
+  --font-body: 'Roboto', sans-serif;
+}
