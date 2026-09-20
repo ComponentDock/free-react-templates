@@ -1674,7 +1674,7 @@
 - [ ] **Convention** — [colorlib](https://colorlib.com/wp/template/convention/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/convention-free-template.jpg)
 - [ ] **Event** — [colorlib](https://colorlib.com/wp/template/event/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/event-free-template.jpg)
 - [ ] **Eventalk** — [colorlib](https://colorlib.com/wp/template/eventalk/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventalk-free-template.jpg)
-- [~] **Eventasia** — [colorlib](https://colorlib.com/wp/template/eventasia/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/evantasia-free-fullscreen-event-website-template.jpg)
+- [x] **Eventasia** — [colorlib](https://colorlib.com/wp/template/eventasia/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/evantasia-free-fullscreen-event-website-template.jpg · [jamboree](https://free-react-templates-jamboree.surge.sh)
 - [ ] **Eventcon** — [colorlib](https://colorlib.com/wp/template/eventcon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventcon-free-template.jpg)
 - [ ] **Evento** — [colorlib](https://colorlib.com/wp/template/evento/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/evento-free-template.jpg)
 - [x] **Eventor** — [colorlib](https://colorlib.com/wp/template/eventor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventor-template-1770211156837.jpg) · [podium](https://podium.free.componentdock.com)
