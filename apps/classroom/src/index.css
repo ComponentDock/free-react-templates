@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Classroom brand palette — recreated from ColorLib Oneschool design (primary #7971ea purple). */
+  --color-indigo-400: #8b83ea;
+  --color-indigo-500: #7971ea;
+  --color-indigo-600: #6a62d0;
+  --color-indigo-700: #5b53b6;
+
+  --font-sans: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+}
