@@ -1,191 +1,183 @@
-# Template: BrightPath (Education / Courses)
+---
+name: brightpath
+description: Education and online courses landing page
+category: Education
+source: ColorLib Edusmart
+source_url: https://colorlib.com/wp/template/edusmart/
+preview_url: https://preview.colorlib.com/theme/edusmart/
+---
+
+# BrightPath — Education & Online Courses Template
 
 ## Purpose
 
-BrightPath is a single-page education and online-courses landing page template
-in the free-react-templates monorepo. It is an original React recreation of the
-ColorLib free "Clever" education template design, built under a different name
-with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Recreation of ColorLib Edusmart as a React 19 + Vite + Tailwind 4 + TypeScript template. A free, production-ready online education landing page with hero search, feature highlights, department grid, course catalog, testimonials, countdown registration, events, and footer.
 
-- **Original ColorLib source:** "Clever" — Education & Courses Template
-- **ColorLib page:** https://colorlib.com/wp/template/clever/
-- **Live preview:** https://preview.colorlib.com/theme/clever/
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/clever-free-template.jpg
+## Requirements
 
-## Design reference (replication findings)
+### Requirement: Navbar with top bar and navigation
 
-- **Original:** ColorLib "Clever" — education/courses landing page with a dark
-  image hero overlay, stat counters, popular courses grid, tutor carousel,
-  registration form + countdown, upcoming events, blog posts, and a dark
-  two-tone footer.
-- **Live preview REACHABLE:** `https://preview.colorlib.com/theme/clever/`
-  (HTTP 200, ~659 lines HTML). DOM + `style.css` (1964 lines) extracted and
-  analyzed; tokens below come from that stylesheet. Screenshot viewed via URL
-  reference.
-- **Visual design (from live preview DOM + CSS):** clean education aesthetic —
-  blue `#3762f0` brand on a light `#f7f7f7` / white canvas. Gray top header bar
-  with phone + email + social icons. White sticky navbar with logo left, nav
-  links centered (Home, Pages dropdown, Courses, Instructors, Blog, Contact),
-  search input + Register/Login buttons right. Hero: full-width background image
-  with dark overlay (`rgba(0,0,0,0.6)`), centered white text "Let's Study
-  Together" + blue "Get Started" button. Four stat counters (Success Stories,
-  Dedicated Tutors, Scheduled Events, Available Courses) on light gray. Popular
-  Online Courses: 3-column card grid with course images, instructor name,
-  category, description, seat count, star rating, and price/Free badge. Best
-  Tutors: carousel of tutor cards with circular thumbnails, name, role, blurb,
-  social icons — blue hover background. Register Now: split layout — left:
-  white rounded form (Name, Email, Phone, Site, Send Message button), right:
-  countdown timer — both over a translucent blue `rgba(214,223,251,0.7)` overlay.
-  Upcoming Events: 3-column event cards with images, date badge, title, time,
-  price. Blog: 2-column posts with images, headline, author, category, blurb.
-  Footer: top (dark `#252525`) with logo + copyright, bottom (darker `#1f1f1f`)
-  with contact info + social icons. Yellow accent `#e3d21b` on star ratings.
-  Font families: **Raleway** (headings), **Open Sans** (body). Border radius 6px
-  on buttons and cards.
+Users SHALL see a top bar with phone/email and a main navigation with logo, links (Home, About, Pages, Blog, Contact), and a search icon. On mobile, a hamburger toggle opens/closes the mobile menu.
 
-## Design tokens
+#### Scenario: Desktop navigation visible
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| `brand` | `#3762f0` | Primary blue — buttons, active states, sticky nav, "Free" badges |
-| `brand-hover` | `#2c56df` | Darker blue — button hover, active states |
-| `accent-yellow` | `#e3d21b` | Star ratings on course cards |
-| `accent-light-blue` | `#d7e0fc` | Register/Login button active/hover background |
-| `bg-light` | `#f7f7f7` | Top header, cool facts, course card meta, body background |
-| `bg-white` | `#ffffff` | Navbar, course cards, registration form, popular courses bg |
-| `text-primary` | `rgba(0,0,0,0.8)` | Body text (dark) |
-| `text-secondary` | `#5a5a5a` | Secondary body text |
-| `text-muted` | `rgba(0,0,0,0.3)` | Meta text, inactive links |
-| `text-white` | `#ffffff` | Hero text, footer, overlay text |
-| `footer-top` | `#252525` | Top footer background |
-| `footer-bottom` | `#1f1f1f` | Bottom footer background |
-| `overlay` | `rgba(0,0,0,0.6)` | Hero background overlay |
-| `register-overlay` | `rgba(214,223,251,0.7)` | Register Now section translucent blue |
-| `font-heading` | `"Raleway", sans-serif` | Headings, navbar links |
-| `font-body` | `"Open Sans", sans-serif` | Body text, meta, footer |
-| `radius` | `6px` | Buttons, form inputs, cards |
-| `section-padding` | `100px 0` | Standard section spacing |
+- GIVEN the page loads
+- WHEN viewing the header
+- THEN the brand name "BrightPath" is visible
+- AND navigation links Home, About, Pages, Blog, Contact are shown
 
-## Section order (1:1 from DOM)
+#### Scenario: Mobile menu toggle
 
-1. **Top Header Bar** — gray `#f7f7f7` strip: phone + email links left, "Follow us" + social icons (Facebook, Instagram, Twitter) right.
-2. **Navbar** — white, logo left, nav links (Home, Pages dropdown, Courses, Instructors, Blog, Contact) center, search input + Register/Login buttons right. Sticky on scroll. Mobile hamburger toggle.
-3. **Hero** — full-width background image with dark overlay, centered white heading "Let's Study Together", blue "Get Started" CTA button.
-4. **Cool Facts (Stats)** — 4-column row on light gray: icon + counter number + label (Success Stories: 1912, Dedicated Tutors: 123, Scheduled Events: 89, Available Courses: 56). Fade-in animation.
-5. **Popular Courses** — section heading "Popular Online Courses", 3-column card grid. Each card: course image top, course content (title, instructor + category meta, description), seat/rating/price bar bottom. One card marked "Free" with blue badge. Cards have subtle shadow and hover effect.
-6. **Best Tutors** — section heading "The Best Tutors in Town", horizontal carousel of 5 tutor cards. Each: circular thumbnail, name, role "Teacher", blurb paragraph, social icon row. Cards have hover effect with blue background overlay.
-7. **Register Now** — split layout on translucent blue overlay. Left: white rounded form card with heading "Courses For Free", 4 fields (Name, Email, Phone, Site), full-width blue "Send Message" button. Right: "Register Now" heading, descriptive paragraph, countdown timer (days/hours/min/sec).
-8. **Upcoming Events** — section heading "Upcoming events", 3-column event cards. Each: event image with date badge overlay, event title, date/time row, price/Free badge.
-9. **Blog** — section heading "From Our Blog", 2-column blog cards. Each: blog image, headline, author + category meta, description paragraph.
-10. **Footer** — two-part: top (dark `#252525`): logo + copyright text; bottom (darker `#1f1f1f`): phone + email left, social icons right. Footer MUST link `https://www.componentdock.com/` as "Component Dock".
+- GIVEN on a mobile viewport
+- WHEN clicking the hamburger button
+- THEN the mobile dropdown opens with all nav links
 
-## Gherkin scenarios
+#### Scenario: Mobile menu close on link click
 
-### Top Header Bar
-- **Scenario: Top header displays contact info and social links**
-  - Given the user visits the BrightPath homepage
-  - Then a top header bar is visible at the top of the page
-  - And it shows a phone number and email address
-  - And it shows "Follow us" text with Facebook, Instagram, and Twitter social icons
+- GIVEN the mobile menu is open
+- WHEN clicking a navigation link
+- THEN the mobile menu closes
 
-### Navbar
-- **Scenario: Navbar displays logo and navigation links**
-  - Given the user visits the BrightPath homepage
-  - Then a navbar is visible below the top header
-  - And it shows a logo on the left
-  - And it shows navigation links: Home, Courses, Instructors, Blog, Contact
-  - And it shows a search input
-  - And it shows Register and Login buttons on the right
+### Requirement: Hero section with search form
 
-- **Scenario: Navbar becomes sticky on scroll**
-  - Given the user scrolls down past the hero
-  - Then the navbar sticks to the top of the viewport
-  - And it maintains a white background
+Users SHALL see a full-width gradient banner with the heading "We Rank the Best Courses on the Web", a description, and a course search form.
 
-### Hero
-- **Scenario: Hero displays headline and CTA**
-  - Given the user visits the BrightPath homepage
-  - Then a full-width hero section is visible
-  - And it shows the heading "Let's Study Together" in white text
-  - And it shows a blue "Get Started" button centered below the heading
+#### Scenario: Hero renders heading and form
 
-### Cool Facts
-- **Scenario: Stats counters are displayed**
-  - Given the user visits the BrightPath homepage
-  - Then four stat counters are visible in a row
-  - And each shows an icon, a number, and a label
-  - And the labels are "Success Stories", "Dedicated Tutors", "Scheduled Events", "Available Courses"
+- GIVEN the page loads
+- WHEN viewing the hero section
+- THEN the heading "We Rank the Best Courses on the Web" is visible
+- AND a search input with placeholder "Search Courses" is present
+- AND a Search button is present
 
-### Popular Courses
-- **Scenario: Course cards are displayed in a grid**
-  - Given the user visits the BrightPath homepage
-  - Then a "Popular Online Courses" section is visible
-  - And three course cards are shown in a grid
-  - And each card has a course image, title, instructor name, category, description, seat count, star rating, and price
+### Requirement: Features section with three items
 
-- **Scenario: Free course shows Free badge**
-  - Given the user views the Popular Courses section
-  - Then at least one course card shows a "Free" badge in blue
+Users SHALL see three feature items (New Classes, Top Courses, Full E-Books) each with a gradient icon badge and description.
 
-### Best Tutors
-- **Scenario: Tutor carousel is displayed**
-  - Given the user visits the BrightPath homepage
-  - Then a "The Best Tutors in Town" section is visible
-  - And a horizontal carousel of tutor cards is shown
-  - And each card has a circular thumbnail, name, role, blurb, and social icons
+#### Scenario: Features render
 
-### Register Now
-- **Scenario: Registration form and countdown are displayed**
-  - Given the user visits the BrightPath homepage
-  - Then a "Register Now" section is visible
-  - And a contact form is shown on the left with Name, Email, Phone, Site fields and a "Send Message" button
-  - And a countdown timer is shown on the right with days, hours, minutes, seconds
+- GIVEN the page loads
+- WHEN viewing the features section
+- THEN New Classes, Top Courses, and Full E-Books are shown with descriptions
 
-### Upcoming Events
-- **Scenario: Event cards are displayed**
-  - Given the user visits the BrightPath homepage
-  - Then an "Upcoming events" section is visible
-  - And three event cards are shown in a grid
-  - And each card has an event image, date badge, event title, date/time, and price
+### Requirement: Departments section with grid and CTA
 
-### Blog
-- **Scenario: Blog posts are displayed**
-  - Given the user visits the BrightPath homepage
-  - Then a "From Our Blog" section is visible
-  - And two blog post cards are shown
-  - And each card has an image, headline, author, category, and description
+Users SHALL see a 3-column staggered grid of 7 department icons (Languages, Business, Literature, Software, Design, Coaching, Development) alongside a description and "Explore Courses" CTA button.
 
-### Footer
-- **Scenario: Footer displays branding and contact info**
-  - Given the user visits the BrightPath homepage
-  - Then a footer is visible at the bottom
-  - And the top footer area has a dark background with logo and copyright
-  - And the bottom footer area has phone and email on the left and social icons on the right
+#### Scenario: Departments render
 
-- **Scenario: Footer links to Component Dock**
-  - Given the user visits the BrightPath homepage
-  - Then the footer contains a link to `https://www.componentdock.com/`
-  - And the link text reads "Component Dock"
+- GIVEN the page loads
+- WHEN viewing the departments section
+- THEN all 7 department names are visible
+- AND "Over 2500 Courses from 5 Platforms" heading is shown
+- AND "Explore Courses" button is present
 
-## Verification checklist
+### Requirement: Popular Courses section with 4 cards
 
-- [ ] Section order matches DOM: Top Header → Navbar → Hero → Cool Facts → Popular Courses → Best Tutors → Register Now → Upcoming Events → Blog → Footer
-- [ ] Brand color `#3762f0` used for buttons, active nav, "Free" badges
-- [ ] Accent yellow `#e3d21b` used for star ratings
-- [ ] Light blue `#d7e0fc` used for Register/Login button hover
-- [ ] Footer dark backgrounds: `#252525` top, `#1f1f1f` bottom
-- [ ] Register Now section has translucent blue overlay `rgba(214,223,251,0.7)`
-- [ ] Border radius 6px on buttons and form inputs
-- [ ] Google Fonts: Raleway (headings) + Open Sans (body)
-- [ ] Hero has dark image overlay with centered white text + blue CTA
-- [ ] Stat counters show 4 items with icons and numbers
-- [ ] Course cards show image + title + meta + rating + price
-- [ ] Tutor carousel shows circular thumbnails with hover effect
-- [ ] Registration form has 4 fields + submit button
-- [ ] Events show 3 cards with image, date badge, title, time, price
-- [ ] Blog shows 2 cards with image, headline, meta, description
-- [ ] Footer links to https://www.componentdock.com/ (Component Dock)
-- [ ] No references to ColorLib in any app code, comments, or filenames
-- [ ] Package name: `@free-react-templates/brightpath`
-- [ ] CNAME: `brightpath.free.componentdock.com`
-- [ ] All images use `https://picsum.photos/seed/brightpath-<n>/<w>/<h>` placeholders
+Users SHALL see 4 course cards, each with an image, author badge, title, description, student/comment counts, and a price (with color variants).
+
+#### Scenario: Courses render
+
+- GIVEN the page loads
+- WHEN viewing the courses section
+- THEN 4 course cards appear with titles, author names, prices, student and comment counts
+
+### Requirement: Facts section with dark overlay
+
+Users SHALL see a dark overlay section with 6 fact cards (Expert Mentors, 25000+ Courses, Student Membership, Lifetime Access, Source Files Included, Certified Programs), each with an icon and description.
+
+#### Scenario: Facts render
+
+- GIVEN the page loads
+- WHEN viewing the facts section
+- THEN all 6 fact titles and descriptions are shown
+
+### Requirement: Testimonials section
+
+Users SHALL see testimonial cards with quote icon, author name, star rating, and text, alongside a thumbnail strip with hover overlay.
+
+#### Scenario: Testimonials render
+
+- GIVEN the page loads
+- WHEN viewing the testimonials
+- THEN 3 testimonial names and quotes are visible
+
+### Requirement: Registration section with countdown and form
+
+Users SHALL see a gradient section with a countdown timer (Days/Hours/Mins/Secs) and a registration form (Name, Phone, Email, Submit).
+
+#### Scenario: Registration renders
+
+- GIVEN the page loads
+- WHEN viewing the registration section
+- THEN "Register Now" heading, countdown labels, and form fields are visible
+
+#### Scenario: Countdown decrements
+
+- GIVEN the countdown is displayed
+- WHEN 2 seconds pass
+- THEN the seconds value decrements by 2
+
+#### Scenario: Countdown cascades seconds to minutes
+
+- GIVEN the countdown is displayed
+- WHEN 60 seconds pass
+- THEN the minutes value decrements by 1
+
+#### Scenario: Countdown cascades minutes to hours
+
+- GIVEN the countdown is displayed
+- WHEN 1 hour passes
+- THEN the hours value decrements by 1
+
+#### Scenario: Countdown cascades hours to days
+
+- GIVEN the countdown is displayed with days=2
+- WHEN 24 hours pass
+- THEN the days value decrements by 1
+
+#### Scenario: Days floor at zero
+
+- GIVEN the countdown is at days=0, hours=0, minutes=0, seconds=1
+- WHEN 3 seconds pass
+- THEN the days value remains 0
+
+#### Scenario: Registration form submits
+
+- GIVEN the registration form is displayed
+- WHEN filling name, phone, email and clicking Submit
+- THEN the form submits without page navigation
+
+### Requirement: Events section with 2 cards
+
+Users SHALL see 2 event cards each with an image, date, title, and description.
+
+#### Scenario: Events render
+
+- GIVEN the page loads
+- WHEN viewing the events section
+- THEN 2 event titles, dates, and descriptions are visible
+
+### Requirement: Footer with columns, newsletter, and Component Dock link
+
+Users SHALL see a footer with 5 columns (Top Products, Quick Links, Features, Resources, Newsletter), a newsletter email form, social icons, and a "Component Dock" link.
+
+#### Scenario: Footer renders
+
+- GIVEN the page loads
+- WHEN viewing the footer
+- THEN 5 column headings are visible
+- AND newsletter form with email input and Subscribe button is present
+- AND social media links are present
+
+#### Scenario: Footer Component Dock link
+
+- GIVEN the footer is displayed
+- WHEN clicking the Component Dock link
+- THEN it opens https://www.componentdock.com/ in a new tab
+
+#### Scenario: Newsletter form submits
+
+- GIVEN the newsletter form is displayed
+- WHEN typing an email and clicking Subscribe
+- THEN the form submits without navigation
