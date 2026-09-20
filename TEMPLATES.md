@@ -1686,7 +1686,7 @@
 - [x] **Meetup** — [colorlib](https://colorlib.com/wp/template/meetup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meetup-free-template.jpg) · [gatherly](https://gatherly.free.componentdock.com)
 - [x] **Plataforma** — [colorlib](https://colorlib.com/wp/template/plataforma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/plataforma-free-template.jpg) · [tribune](https://tribune.free.componentdock.com)
 - [x] **Summit** — [colorlib](https://colorlib.com/wp/template/summit/) · [summit](https://summit.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/summit-free-template.jpg)
-- [ ] **Sunfest** — [colorlib](https://colorlib.com/wp/template/sunfest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sunfest-free-template.jpg)
+- [~] **Sunfest** — [colorlib](https://colorlib.com/wp/template/sunfest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sunfest-free-template.jpg)
 - [x] **The Conference** — [colorlib](https://colorlib.com/wp/template/the-conference/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theconference-free-template.jpg) · [colloquy](https://colloquy.free.componentdock.com)
 - [x] **Umeet** — [colorlib](https://colorlib.com/wp/template/umeet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/umeet-free-template.jpg) · [conclave](https://free-react-templates-conclave.surge.sh)
 - [x] **Wemeet** — [colorlib](https://colorlib.com/wp/template/wemeet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wemeet-free-template.jpg) · [convoke](https://convoke.free.componentdock.com)

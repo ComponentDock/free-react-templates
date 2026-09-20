@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-cyan: #00d0ff;
+  --color-brand-mint: #25ffbf;
+  --color-brand-dark: #050505;
+  --color-brand-card: #ffffff;
+  --color-brand-text: #e6e6e6;
+  --color-brand-heading: #171717;
+  --color-brand-meta: #999999;
+  --color-brand-subtitle: #7a7a7a;
+  --font-sans: 'Poppins', sans-serif;
+  --font-accent: 'Pacifico', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-dark);
+  color: var(--color-brand-text);
+  margin: 0;
+}
+
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(to right, var(--color-brand-cyan), var(--color-brand-mint));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-bg {
+    background: linear-gradient(to right, var(--color-brand-cyan), var(--color-brand-mint));
+  }
+}
