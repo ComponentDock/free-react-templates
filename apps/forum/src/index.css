@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Forum brand colors — green accent #8ab92d, dark navy #04091e, dark gray #222. */
+  --color-brand: #8ab92d;
+  --color-brand-hover: #76a025;
+
+  /* Body + muted text. */
+  --color-body: #777;
+  --color-muted: #999;
+
+  /* Dark sections. */
+  --color-dark: #04091e;
+  --color-dark-alt: #222;
+
+  /* Light background. */
+  --color-light: #f9f9ff;
+
+  /* Heading color. */
+  --color-heading: #222;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
