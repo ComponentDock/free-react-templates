@@ -10,153 +10,151 @@ Recreation of ColorLib's **Eventalk** template as a React 19 + Vite + Tailwind C
 - **New name:** `meetuply` (package: `@free-react-templates/meetuply`)
 - **Deploy target:** `meetuply.free.componentdock.com`
 
-## Design tokens (extracted from preview stylesheet `css/style.css`)
+## Requirements
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Brand primary | `#6b76ff` | Purple-blue — links, CTA buttons, accents, gradient start |
-| Brand gradient | `linear-gradient(45deg, #6b75ff 0%, #59b7ff 100%)` | Hero overlay gradient, CTA sections |
-| Dark charcoal | `#222831` | Footer background, dark sections |
-| Dark brown | `#3c312e` | Testimony/parallax section background |
-| White | `#fff` | Section backgrounds, text on dark |
-| Light gray | `#f2f2f2` | Alternate section background |
-| Body text | `#4d4d4d` | Paragraph text |
-| Button accent | `#78d5ef` | Bootstrap primary button (light blue) |
-| Font family | `"Work Sans", sans-serif` | All text (weights 100-900) |
-| Button radius | `2px` | CTA buttons, navbar "Buy Ticket" |
-| Navbar CTA border | `1px solid #6b76ff` | Navbar "Buy ticket" button border |
-| Link color | `#6b76ff` | Anchor text color, hover state |
+### Requirement: Navbar displays correctly
 
-### Section backgrounds
+The navbar SHALL be sticky with a dark charcoal background, contain 6 navigation links (Home, About, Speakers, Schedule, Blog, Contact), and a "Buy Ticket" CTA button with brand styling.
 
-| Section | Background |
-|---------|-----------|
-| Navbar | Dark transparent (fixed, `.ftco-navbar-light`) |
-| Hero | Full-viewport background image + purple-blue gradient overlay |
-| About (Venue) | White `#fff` |
-| Features (Fun Facts) | White `#fff` |
-| Counters | White `#fff` |
-| Speakers | White `#fff` |
-| Schedule | Light gray `#f2f2f2` |
-| Testimony | Dark brown `#3c312e` with parallax |
-| Pricing | White `#fff` |
-| Blog | Light gray `#f2f2f2` |
-| Newsletter CTA | Dark brown `#3c312e` with parallax |
-| Footer | Dark charcoal `#222831` |
+#### Scenario: Navbar renders all elements
 
-### Section title pattern
+- **WHEN** the page loads
+- **THEN** the navbar is visible at the top with a dark background
+- **AND** it contains links: Home, About, Speakers, Schedule, Blog, Contact
+- **AND** there is a "Buy Ticket" CTA button with brand purple-blue border
 
-Two-line heading pattern: first word in light/thin weight on its own line, second word in bold below. Example: "Our / Speakers", "Schedule / Event", "Recent / Blog".
+#### Scenario: Navbar mobile menu toggle
 
-## Gherkin requirements
+- **WHEN** the user clicks the mobile menu button
+- **THEN** the mobile menu opens with all navigation links
+- **AND** clicking a link closes the menu
 
-```gherkin
-Feature: Meetuply — Event Conference Landing Page
+### Requirement: Hero section fills viewport
 
-  Background:
-    Given the user visits "meetuply.free.componentdock.com"
-    And the page has loaded completely
+The hero section SHALL be full viewport height with a background image, purple-blue gradient overlay, countdown timer, heading, date/location subtext, and a "Buy Ticket" button.
 
-  Scenario: Navbar displays correctly
-    Then the navbar is visible at the top
-    And it contains the brand "Meetuply" (or logo text)
-    And it contains links: "Home", "About", "Speakers", "Schedule", "Blog", "Contact"
-    And there is a "Buy ticket" CTA button in the navbar
-    And the CTA button has a purple-blue border and background (#6b76ff)
+#### Scenario: Hero renders heading and countdown
 
-  Scenario: Hero section fills viewport
-    Then the hero section is full viewport height
-    And it displays a large heading (e.g. "Developer Conference 2019")
-    And it displays a date/location subtext
-    And it has a background image with a purple-blue gradient overlay
-    And there is a countdown timer showing days, hours, minutes, seconds
+- **WHEN** the user views the hero section
+- **THEN** a large heading "Developer Conference 2025" is displayed
+- **AND** a countdown timer shows days, hours, minutes, seconds
+- **AND** a "Buy Ticket" CTA button is visible
 
-  Scenario: Venue/About section
-    When the user scrolls to the About section
-    Then the section title shows "Venue" (or similar)
-    And 4 feature cards are displayed: Venue, Transport, Hotel, Restaurant
-    And each card has an icon and description text
+### Requirement: Venue section with feature cards
 
-  Scenario: Fun Facts section
-    When the user scrolls to the Fun Facts section
-    Then the section title shows "Fun Facts"
-    And there is a descriptive paragraph
+The venue section SHALL display a "Venue" heading and 4 feature cards (Venue, Transport, Hotel, Restaurant) with icons and descriptions.
 
-  Scenario: Counter statistics
-    When the user scrolls to the counters section
-    Then 4 statistic counters are visible: Speakers, Sponsor, Total Seats, Topics
-    And each counter shows an animated count-up number
+#### Scenario: Venue renders all cards
 
-  Scenario: Speakers section
-    When the user scrolls to the Speakers section
-    Then the section title shows "Our Speakers"
-    And speaker cards are displayed in a grid
-    And each card has an image, name, and role
+- **WHEN** the user scrolls to the Venue section
+- **THEN** 4 feature cards are displayed in a grid
+- **AND** each card has an icon, title, and description
 
-  Scenario: Schedule section
-    When the user scrolls to the Schedule section
-    Then the section title shows "Schedule" with "Event Schedule" subtitle
-    And there are day tabs (Day 01, Day 02, Day 03, Day 04)
-    And each day shows time slots with talk title, description, and speaker
+### Requirement: Fun Facts section
 
-  Scenario: Testimony section
-    When the user scrolls to the Testimony section
-    Then it has a dark background with parallax effect
+The fun facts section SHALL display a "Fun Facts" heading and descriptive paragraph.
 
-  Scenario: Pricing section
-    When the user scrolls to the Pricing section
-    Then pricing cards are displayed
-    And each card has a price, feature list, and "Buy Ticket" button
-    And there are at least 2 pricing tiers (e.g. Small Team $200, Family Pack $499)
+#### Scenario: Fun facts renders content
 
-  Scenario: Blog section
-    When the user scrolls to the Blog section
-    Then the section title shows "Recent Blog"
-    And blog entry cards are displayed with date, title, and excerpt
+- **WHEN** the user scrolls to the Fun Facts section
+- **THEN** the heading "Fun Facts" is visible
+- **AND** a descriptive paragraph is displayed
 
-  Scenario: Newsletter CTA
-    When the user scrolls to the newsletter section
-    Then there is a "Subscribe to our Newsletter" heading
-    And an email input field is present
-    And a submit button is present
+### Requirement: Counter statistics with animated count-up
 
-  Scenario: Footer displays correctly
-    Then the footer has a dark background (#222831)
-    And it contains the brand name "Meetuply"
-    And it has a "Useful Links" column with navigation links
-    And it has a "Have a Questions?" column with contact info
-    And it has social media icon links
-    And it links to https://www.componentdock.com/
+The counters section SHALL display 4 statistics (Speakers, Sponsors, Total Seats, Topics) with animated count-up on scroll.
 
-  Scenario: Mobile responsiveness
-    Then the navbar collapses to a hamburger menu on small screens
-    And all sections stack vertically on mobile
-    And the schedule tabs are scrollable or stacked on mobile
+#### Scenario: Counters animate on scroll
 
-  Scenario: Accessibility
-    Then all images have alt text
-    And interactive elements are keyboard-focusable
-    And the page has proper heading hierarchy (h1 > h2 > h3)
-    And color contrast meets WCAG AA for text on backgrounds
-```
+- **WHEN** the counters section scrolls into view
+- **THEN** each statistic animates from 0 to its target value
+- **AND** the final values are displayed with appropriate labels
 
-## Verification checklist
+### Requirement: Speakers section with responsive grid
 
-- [ ] All design tokens match the original (brand color #6b76ff, font Work Sans, button radius 2px)
-- [ ] Section order matches the original exactly: Navbar → Hero → Venue → Fun Facts → Counters → Speakers → Schedule → Testimony → Pricing → Blog → Newsletter → Footer
-- [ ] Navbar is fixed/sticky with dark background, brand, nav links, and "Buy ticket" CTA
-- [ ] Hero section is full viewport height with background image and gradient overlay
-- [ ] Countdown timer displays and counts down correctly
-- [ ] Venue section shows 4 feature cards with icons
-- [ ] Counter statistics animate on scroll into view (count-up effect)
-- [ ] Speaker cards display in a responsive grid with image, name, role
-- [ ] Schedule section has tabbed day navigation with talk listings
-- [ ] Pricing cards show tier details and "Buy Ticket" CTA
-- [ ] Blog entries show date, title, and excerpt in a grid
-- [ ] Newsletter section has email input and subscribe button
-- [ ] Footer links to https://www.componentdock.com/ (Component Dock)
-- [ ] No ColorLib references in app code (comments, data, etc.)
-- [ ] Placeholder images use `https://picsum.photos/seed/<meetuply>-<n>/<w>/<h>`
-- [ ] Google Fonts loaded via `<link>` in index.html (Work Sans)
-- [ ] Icons from lucide-react (not Font Awesome)
-- [ ] 100% test coverage on all components
+The speakers section SHALL display speaker cards in a responsive grid with image, name, role, and social overlay.
+
+#### Scenario: Speakers renders all cards
+
+- **WHEN** the user scrolls to the Speakers section
+- **THEN** 4 speaker cards are displayed in a responsive grid
+- **AND** each card has an image, name, and role
+
+### Requirement: Schedule section with day tabs
+
+The schedule section SHALL display tabbed day navigation (Day 01-04) with event listings per day.
+
+#### Scenario: Schedule day switching
+
+- **WHEN** the user clicks a day tab
+- **THEN** the corresponding day's events are displayed
+- **AND** each event shows time, title, description, and speaker
+
+### Requirement: Testimony section with parallax
+
+The testimony section SHALL have a dark brown background with parallax effect and a blockquote.
+
+#### Scenario: Testimony renders quote
+
+- **WHEN** the user scrolls to the Testimony section
+- **THEN** a testimonial quote is displayed with author attribution
+
+### Requirement: Pricing section with tier cards
+
+The pricing section SHALL display 3 pricing tiers (Small Team, Family Pack, Enterprise) with prices, feature lists, and "Buy Ticket" buttons.
+
+#### Scenario: Pricing renders all tiers
+
+- **WHEN** the user scrolls to the Pricing section
+- **THEN** 3 pricing cards are displayed
+- **AND** each card shows price, features, and a "Buy Ticket" button
+- **AND** the "Family Pack" tier is highlighted as "Most Popular"
+
+### Requirement: Blog section with entry grid
+
+The blog section SHALL display blog entry cards with date badges, titles, and excerpts.
+
+#### Scenario: Blog renders entries
+
+- **WHEN** the user scrolls to the Blog section
+- **THEN** 3 blog entry cards are displayed in a grid
+- **AND** each card has a date badge, title, and excerpt
+
+### Requirement: Newsletter CTA with email input
+
+The newsletter section SHALL have a dark brown parallax background, heading, email input, and subscribe button.
+
+#### Scenario: Newsletter form submission
+
+- **WHEN** the user enters an email and clicks Subscribe
+- **THEN** the form is submitted and the email field is cleared
+
+### Requirement: Footer with Component Dock link
+
+The footer SHALL have a dark charcoal background, brand name, Useful Links column, contact info column, social icons, and a link to https://www.componentdock.com/.
+
+#### Scenario: Footer links to Component Dock
+
+- **WHEN** the user scrolls to the footer
+- **THEN** a link to "Component Dock" is visible
+- **AND** it points to https://www.componentdock.com/
+
+### Requirement: Mobile responsiveness
+
+The template SHALL be fully responsive across all screen sizes.
+
+#### Scenario: Mobile layout
+
+- **WHEN** the viewport is narrow (mobile)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** all sections stack vertically
+
+### Requirement: Accessibility
+
+The template SHALL meet WCAG AA accessibility standards.
+
+#### Scenario: Heading hierarchy and alt text
+
+- **WHEN** the page is rendered
+- **THEN** all images have alt text
+- **AND** the page has proper heading hierarchy (h1 > h2 > h3)
