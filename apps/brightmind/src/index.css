@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brightmind brand palette — recreated from the ColorLib "Genius" design
+     (hero gradient: purple #6a00ff → gold #ffd900, primary blue #167ce9). */
+  --color-brand-50: #eef5ff;
+  --color-brand-100: #d9e8ff;
+  --color-brand-200: #bbdaff;
+  --color-brand-300: #8cc3ff;
+  --color-brand-400: #55a3ff;
+  --color-brand-500: #167ce9;
+  --color-brand-600: #0d60c7;
+  --color-brand-700: #0a4da0;
+  --color-brand-800: #0e4284;
+  --color-brand-900: #11386d;
+
+  --color-gold-50: #fffbeb;
+  --color-gold-100: #fff3c4;
+  --color-gold-200: #ffe588;
+  --color-gold-300: #ffd54f;
+  --color-gold-400: #ffc300;
+  --color-gold-500: #f5b800;
+  --color-gold-600: #d49a00;
+  --color-gold-700: #a87300;
+  --color-gold-800: #8a5c00;
+  --color-gold-900: #744c00;
+
+  --color-dark: #1b212c;
+  --color-muted: #8d9db9;
+
+  /* Work Sans — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
