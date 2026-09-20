@@ -13,20 +13,20 @@ Source Sans Pro typography, and course grid layout.
 
 ## Design tokens
 
-| Token          | Value          | Notes                                |
-| -------------- | -------------- | ------------------------------------ |
-| primary-blue   | `#007bff`      | Buttons, dropdown hover, links       |
-| heading-black  | `#000000`      | h1, h2, h3                           |
-| body-gray      | `#6c757d`      | Paragraph text, body                 |
-| loader-accent  | `#f4b214`      | Loading spinner stroke               |
-| overlay-dark   | `rgba(0,0,0,0.4)` | Hero/section dark overlays        |
-| bg-light       | `#f8f9fa`      | Light section backgrounds            |
+| Token         | Value             | Notes                          |
+| ------------- | ----------------- | ------------------------------ |
+| primary-blue  | `#007bff`         | Buttons, dropdown hover, links |
+| heading-black | `#000000`         | h1, h2, h3                     |
+| body-gray     | `#6c757d`         | Paragraph text, body           |
+| loader-accent | `#f4b214`         | Loading spinner stroke         |
+| overlay-dark  | `rgba(0,0,0,0.4)` | Hero/section dark overlays     |
+| bg-light      | `#f8f9fa`         | Light section backgrounds      |
 
 ### Fonts
 
-| Role      | Font                | Weights       |
-| --------- | ------------------- | ------------- |
-| All text  | `Source Sans Pro`   | 300, 400, 900 |
+| Role     | Font              | Weights       |
+| -------- | ----------------- | ------------- |
+| All text | `Source Sans Pro` | 300, 400, 900 |
 
 ### Button styles
 
@@ -70,46 +70,70 @@ Source Sans Pro typography, and course grid layout.
 9. **Footer** — Background image. About text + 3 link columns + copyright with
    Component Dock link.
 
-## Gherkin scenarios
+## Requirements
 
-```gherkin
-Scenario: Header displays transparent navbar
-  Given I visit the Learnova homepage
-  Then I see a transparent navbar over the hero
-  And I see the brand "Learnova" in uppercase
-  And I see nav links: Home, Online Courses, Categories, Blog, About, Contact
-  And I see Login and Register links on the right
+### Requirement: Header displays transparent navbar
 
-Scenario: Hero shows headline and CTA
-  Given I visit the Learnova homepage
-  Then I see a full-screen hero with dark overlay
-  And I see "Learn From Doing" as the main heading
-  And I see a "Sign up and get a 7-day free trial" primary button
+Users SHALL see a transparent navbar over the hero with the brand "Learnova" in uppercase.
 
-Scenario: Features section shows learning benefits
-  Given I visit the Learnova homepage
-  When I scroll to the Features section
-  Then I see 4 feature items with icons
-  And the features are: Online trainings, Learn anywhere, Creative video, Audio learning
+#### Scenario: Navbar renders with brand and links
 
-Scenario: Top Courses shows course grid
-  Given I visit the Learnova homepage
-  When I scroll to the Top Courses section
-  Then I see "Top Courses" heading
-  And I see 6 course cards with image, title, and "Enroll Now" text
+- **WHEN** I visit the Learnova homepage
+- **THEN** I see a transparent navbar over the hero
+- **AND** I see the brand "Learnova" in uppercase
+- **AND** I see nav links: Home, Online Courses, Categories, Blog, About, Contact
+- **AND** I see Login and Register links on the right
 
-Scenario: Testimonial shows quote and image
-  Given I visit the Learnova homepage
-  When I scroll to the Testimonial section
-  Then I see a blockquote with a student quote
-  And I see a person image alongside the quote
+### Requirement: Hero shows headline and CTA
 
-Scenario: Footer shows links and copyright
-  Given I visit the Learnova homepage
-  When I scroll to the footer
-  Then I see About text and 3 link columns
-  And I see a copyright notice with a "Component Dock" link
-```
+Users SHALL see a full-screen hero with dark overlay, main heading, and primary CTA button.
+
+#### Scenario: Hero renders headline and button
+
+- **WHEN** I visit the Learnova homepage
+- **THEN** I see a full-screen hero with dark overlay
+- **AND** I see "Learn From Doing" as the main heading
+- **AND** I see a "Sign up and get a 7-day free trial" primary button
+
+### Requirement: Features section shows learning benefits
+
+Users SHALL see feature items with icons describing learning benefits.
+
+#### Scenario: Features render with icons and text
+
+- **WHEN** I scroll to the Features section
+- **THEN** I see 4 feature items with icons
+- **AND** the features are: Online trainings, Learn anywhere, Creative video, Audio learning
+
+### Requirement: Top Courses shows course grid
+
+Users SHALL see a grid of course cards with images, titles, and enrollment text.
+
+#### Scenario: Course grid renders 6 items
+
+- **WHEN** I scroll to the Top Courses section
+- **THEN** I see "Top Courses" heading
+- **AND** I see 6 course cards with image, title, and "Enroll Now" text
+
+### Requirement: Testimonial shows quote and image
+
+Users SHALL see a testimonial section with a blockquote and person image.
+
+#### Scenario: Testimonial renders quote and person
+
+- **WHEN** I scroll to the Testimonial section
+- **THEN** I see a blockquote with a student quote
+- **AND** I see a person image alongside the quote
+
+### Requirement: Footer shows links and copyright
+
+Users SHALL see a footer with about text, link columns, and a Component Dock link.
+
+#### Scenario: Footer renders with links and Component Dock
+
+- **WHEN** I scroll to the footer
+- **THEN** I see About text and 3 link columns
+- **AND** I see a copyright notice with a "Component Dock" link
 
 ## Verification checklist
 

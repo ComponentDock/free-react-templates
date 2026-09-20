@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-blue: #007bff;
+  --color-heading-black: #000000;
+  --color-body-gray: #6c757d;
+  --color-bg-light: #f8f9fa;
+
+  --font-display: 'Source Sans Pro', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Source Sans Pro', ui-sans-serif, system-ui, sans-serif;
+}
