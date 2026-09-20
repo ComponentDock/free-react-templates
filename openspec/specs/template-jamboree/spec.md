@@ -11,75 +11,123 @@ TypeScript.
 
 ## Design tokens
 
-| Token                | Value                                              |
-| -------------------- | -------------------------------------------------- |
-| Primary gradient     | `#ca2dff` → `#8e96f8` → `#52fff1` (purple-blue-cyan) |
-| Selection / accent   | `#C732FF` (purple)                                 |
-| Font family          | `'Poppins', sans-serif`                            |
-| Body text            | `#777`                                             |
-| Heading color        | `#222`                                             |
-| Banner overlay       | `#7f3f3b` at opacity 0.3                           |
-| Footer bg            | `#222222`                                          |
-| Speaker area bg      | `#f9f9ff`                                          |
-| Calendar overlay     | `#222` at opacity 0.8                              |
-| Button radius        | 25px (pill)                                        |
+| Token              | Value                                                |
+| ------------------ | ---------------------------------------------------- |
+| Primary gradient   | `#ca2dff` → `#8e96f8` → `#52fff1` (purple-blue-cyan) |
+| Selection / accent | `#C732FF` (purple)                                   |
+| Font family        | `'Poppins', sans-serif`                              |
+| Body text          | `#777`                                               |
+| Heading color      | `#222`                                               |
+| Banner overlay     | `#7f3f3b` at opacity 0.3                             |
+| Footer bg          | `#222222`                                            |
+| Speaker area bg    | `#f9f9ff`                                            |
+| Calendar overlay   | `#222` at opacity 0.8                                |
+| Button radius      | 25px (pill)                                          |
 
-## Visual design notes
+## Requirements
 
-- Purple-to-cyan gradient is the signature visual element
-- Banner with warm brownish overlay and countdown timer
-- Facilities/services section with 6 icon columns
-- Speaker cards with hover gradient overlay
-- Calendar/event section with dark overlay
-- Events list with date badges
-- Footer with newsletter and social links
+### Requirement: Navbar renders with logo and navigation links
 
-## Gherkin requirements
+The navbar SHALL display the "Jamboree" logo and navigation links for Home,
+Functionalities, Speaker, and Upcoming Event sections.
 
 #### Scenario: Navbar renders with logo and navigation
-  Given the page loads
-  Then a navbar is visible with "Jamboree" logo
-  And navigation links: Home, Speaker, Upcoming Event
 
-#### Scenario: Hero displays conference info and countdown
-  Given the hero section is visible
-  Then a heading with conference name is displayed
-  And a countdown timer with days/hours/mins/secs is visible
-  And a "Buy Ticket" gradient button is present
+- **WHEN** the page loads
+- **THEN** a navbar is visible with "Jamboree" logo
+- **AND** navigation links: Home, Functionalities, Speaker, Upcoming Event are present
 
-#### Scenario: Facilities section shows 6 service columns
-  Given the facilities section is visible
-  Then 6 service columns are shown with icons and headings
+#### Scenario: Mobile menu toggles on hamburger click
 
-#### Scenario: Speakers section shows speaker grid
-  Given the speakers section is visible
-  Then speaker cards are shown with photo, name, role
-  And hovering reveals a gradient overlay with social links
+- **WHEN** the hamburger button is clicked on mobile
+- **THEN** the mobile navigation menu opens
+- **AND** all navigation links are accessible
 
-#### Scenario: Calendar section shows upcoming events
-  Given the calendar section is visible
-  Then a calendar widget is displayed
-  And upcoming event cards are listed
+### Requirement: Hero displays conference info and countdown
 
-#### Scenario: Events section shows event list
-  Given the events section is visible
-  Then event cards are shown with image, date badge, title, description
+The hero section SHALL display a heading, a live countdown timer with
+days/hours/minutes/seconds, and a "Buy Ticket" gradient CTA button.
 
-#### Scenario: Footer links to Component Dock
-  Given the footer is visible
-  Then it contains a link to https://www.componentdock.com/
+#### Scenario: Hero displays heading and countdown
+
+- **WHEN** the hero section is visible
+- **THEN** a heading "Our Next Event Starts in" is displayed
+- **AND** a countdown timer with Days, Hours, Minutes, Seconds is visible
+- **AND** a "Buy Ticket" gradient button links to the upcoming events section
+
+### Requirement: Facilities section shows 6 service columns
+
+The facilities section SHALL display 6 service columns with icons, headings,
+and descriptions.
+
+#### Scenario: Facilities renders all 6 services
+
+- **WHEN** the facilities section is visible
+- **THEN** 6 service columns are shown: Management, Marketing, Uniqueness, Design, Creativity, Strategy
+- **AND** each column has an icon, heading, and description
+
+### Requirement: Speakers section shows speaker grid
+
+The speakers section SHALL display a grid of speaker cards with photos, names,
+and roles, with a gradient hover overlay.
+
+#### Scenario: Speakers renders speaker cards
+
+- **WHEN** the speakers section is visible
+- **THEN** 3 speaker cards are shown with photo, name, and role
+- **AND** social links are available on hover
+
+### Requirement: Calendar section shows upcoming events
+
+The calendar section SHALL display a calendar widget and upcoming event cards
+with a dark overlay background.
+
+#### Scenario: Calendar renders with event dates
+
+- **WHEN** the calendar section is visible
+- **THEN** a calendar widget is displayed
+- **AND** upcoming event cards are listed with dates and titles
+
+### Requirement: Events section shows event list
+
+The events section SHALL display event cards with images, titles, descriptions,
+and engagement metrics.
+
+#### Scenario: Events renders event cards
+
+- **WHEN** the events section is visible
+- **THEN** 6 event cards are shown with image, title, description
+- **AND** like and comment counts are displayed
+
+### Requirement: Footer links to Component Dock
+
+The footer SHALL include a newsletter form, social links, quick links, and a
+link to https://www.componentdock.com/ branded as "Component Dock".
+
+#### Scenario: Footer contains Component Dock link
+
+- **WHEN** the footer is visible
+- **THEN** it contains a link to https://www.componentdock.com/
+- **AND** the link text reads "Component Dock"
+
+#### Scenario: Newsletter form validates email
+
+- **WHEN** an invalid email is submitted
+- **THEN** an error message is shown
+- **WHEN** a valid email is submitted
+- **THEN** a success message is displayed
 
 ## Verification checklist
 
-- [ ] Navbar with logo and nav links
-- [ ] Hero with parallax bg, countdown, gradient CTA
-- [ ] Facilities: 6 columns with icons
-- [ ] Speakers: cards with gradient hover overlay
-- [ ] Calendar: widget with event cards
-- [ ] Events: list with date badges
-- [ ] Footer with newsletter + Component Dock link
-- [ ] Purple-to-cyan gradient used for buttons and accents
-- [ ] No ColorLib references in app code
-- [ ] Placeholder images use picsum.photos/seed/jamboree-*
-- [ ] Font loaded via Google Fonts (Poppins)
-- [ ] 100% test coverage maintained
+- [x] Navbar with logo and nav links
+- [x] Hero with parallax bg, countdown, gradient CTA
+- [x] Facilities: 6 columns with icons
+- [x] Speakers: cards with gradient hover overlay
+- [x] Calendar: widget with event cards
+- [x] Events: list with date badges
+- [x] Footer with newsletter + Component Dock link
+- [x] Purple-to-cyan gradient used for buttons and accents
+- [x] No ColorLib references in app code
+- [x] Placeholder images use picsum.photos/seed/jamboree-*
+- [x] Font loaded via Google Fonts (Poppins)
+- [x] 100% test coverage maintained
