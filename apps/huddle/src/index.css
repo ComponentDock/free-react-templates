@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Huddle brand colors — from ColorLib "Confe" conference template:
+     red accent #f23a2e, body text #6b7280, dark headings #111827. */
+  --color-brand: #f23a2e;
+  --color-brand-hover: #d92f24;
+
+  /* Body + muted text. */
+  --color-body: #6b7280;
+  --color-muted: #9ca3af;
+
+  /* Dark sections. */
+  --color-dark: #111827;
+
+  --font-display: 'Amatic SC', cursive;
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
