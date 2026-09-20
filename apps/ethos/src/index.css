@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Ethos brand palette — teal/cyan #11cbd7 */
+  --color-brand-50: #eefcfd;
+  --color-brand-100: #d5f6f9;
+  --color-brand-200: #b0ecf3;
+  --color-brand-300: #7cdded;
+  --color-brand-400: #11cbd7;
+  --color-brand-500: #0fb3c7;
+  --color-brand-600: #0d95ad;
+  --color-brand-700: #12778c;
+  --color-brand-800: #175f73;
+  --color-brand-900: #185061;
+
+  /* Rubik — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+}
