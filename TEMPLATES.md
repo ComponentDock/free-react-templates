@@ -1640,7 +1640,7 @@
 - [x] **Etrain** — [colorlib](https://colorlib.com/wp/template/etrain/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/etrain-free-template.jpg) · [learnhub](https://learnhub.free.componentdock.com)
 - [x] **Ezuca** — [learnpath](https://free-react-templates-learnpath.surge.sh) · [colorlib](https://colorlib.com/wp/template/ezuca/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ezuca-free-template.jpg)
 - [x] **Fox** — [colorlib](https://colorlib.com/wp/template/fox/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fox-free-template.jpg) · [ivy](https://ivy.free.componentdock.com)
-- [ ] **Genius** — [colorlib](https://colorlib.com/wp/template/genius/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/genius-free-template.jpg)
+- [~] **Genius** — [colorlib](https://colorlib.com/wp/template/genius/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/genius-free-template.jpg)
 - [x] **Kiddos** — [colorlib](https://colorlib.com/wp/template/kiddos/) · [tinybrights](https://tinybrights.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kiddos-free-template.jpg)
 - [x] **Kiddy** — [colorlib](https://colorlib.com/wp/template/kiddy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kiddy-free-template.jpeg) · [frolic](https://frolic.free.componentdock.com)
 - [ ] **Kindergarten** — [colorlib](https://colorlib.com/wp/template/kindergarten/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kindergarten-free-template.jpg)
