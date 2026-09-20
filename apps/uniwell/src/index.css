@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Uniwell brand palette — from the ColorLib "Unicat" preview
+     (https://preview.colorlib.com/theme/unicat/):
+     an e-learning / university landing theme with a teal #34c3eb primary,
+     a dark navy #1b1b2f top bar, light gray backgrounds, and serif
+     headings. */
+  --color-primary-50: #e8f7fc;
+  --color-primary-100: #c9ecf8;
+  --color-primary-200: #93d9f0;
+  --color-primary-300: #5dc5e8;
+  --color-primary-400: #34c3eb;
+  --color-primary-500: #1fb0dc;
+  --color-primary-600: #1796b8;
+  --color-primary-700: #127a94;
+  --color-primary-800: #0e5e72;
+  --color-primary-900: #0b4a5b;
+
+  /* Dark navy from the top bar. */
+  --color-navy: #1b1b2f;
+
+  /* Light section backgrounds. */
+  --color-cloud: #f8f9fa;
+  --color-snow: #ffffff;
+
+  /* Muted text. */
+  --color-smoke: #888888;
+
+  --color-ink: #1a1a1a;
+  --color-charcoal: #444444;
+
+  /* Merriweather (headings) + Open Sans (body) via Google Fonts. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Merriweather', Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
