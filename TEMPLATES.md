@@ -1684,7 +1684,7 @@
 - [x] **Eventz** — [colorlib](https://colorlib.com/wp/template/eventz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/evento-free-template-1.jpg) · [confetti](https://confetti.free.componentdock.com)
 - [x] **Manup** — [colorlib](https://colorlib.com/wp/template/manup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/manup-free-template.jpg) · [convene](https://convene.free.componentdock.com)
 - [x] **Meetup** — [colorlib](https://colorlib.com/wp/template/meetup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meetup-free-template.jpg) · [gatherly](https://gatherly.free.componentdock.com)
-- [ ] **Plataforma** — [colorlib](https://colorlib.com/wp/template/plataforma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/plataforma-free-template.jpg)
+- [~] **Plataforma** — [colorlib](https://colorlib.com/wp/template/plataforma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/plataforma-free-template.jpg)
 - [x] **Summit** — [colorlib](https://colorlib.com/wp/template/summit/) · [summit](https://summit.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/summit-free-template.jpg)
 - [ ] **Sunfest** — [colorlib](https://colorlib.com/wp/template/sunfest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sunfest-free-template.jpg)
 - [x] **The Conference** — [colorlib](https://colorlib.com/wp/template/the-conference/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theconference-free-template.jpg) · [colloquy](https://colloquy.free.componentdock.com)
@@ -2417,7 +2417,7 @@
 - [x] **Personalportfolio** — [colorlib](https://colorlib.com/wp/template/personalportfolio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personalportfolio-free-template.jpeg) · [resume](https://resume.free.componentdock.com)
 - [ ] **Personify** — [colorlib](https://colorlib.com/wp/template/personify/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personify-free-template.jpg)
 - [x] **Philosophy** — [colorlib](https://colorlib.com/wp/template/philosophy/) · [sonder](https://sonder.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/philosophy-free-lifestyle-blog-website-template.jpg)
-- [ ] **Plataforma** — [colorlib](https://colorlib.com/wp/template/plataforma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/plataforma-free-template.jpg)
+- [~] **Plataforma** — [colorlib](https://colorlib.com/wp/template/plataforma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/plataforma-free-template.jpg)
 - [ ] **Portfolio 2** — [colorlib](https://colorlib.com/wp/template/portfolio-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/portfolio2-free-template.jpg)
 - [x] **Resume** — [colorlib](https://colorlib.com/wp/template/resume/) · [resume](https://resume.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/resume-free-website-template.jpg)
 - [ ] **Rezume** — [colorlib](https://colorlib.com/wp/template/rezume/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rezume-free-template.jpg)
@@ -2484,7 +2484,7 @@
 
 ## Politics (2)
 
-- [ ] **Plataforma** — [colorlib](https://colorlib.com/wp/template/plataforma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/plataforma-free-template.jpg)
+- [~] **Plataforma** — [colorlib](https://colorlib.com/wp/template/plataforma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/plataforma-free-template.jpg)
 - [ ] **Politics** — [colorlib](https://colorlib.com/wp/template/politics/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/politics-free-template-1.jpg)
 
 ## Portfolio (89)
