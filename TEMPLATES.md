@@ -1681,7 +1681,7 @@
 - [x] **Eventotemplate** — [colorlib](https://colorlib.com/wp/template/eventotemplate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventotemplate-colorlib.jpg) · [confab](https://confab.free.componentdock.com)
 - [x] **Eventro** — [colorlib](https://colorlib.com/wp/template/eventro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventro-free-template.jpg) · [galaflow](https://free-react-templates-galaflow.surge.sh)
 - [x] **Eventure** — [colorlib](https://colorlib.com/wp/template/eventure/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventure-free-template.jpg) · [rally](https://rally.free.componentdock.com)
-- [~] **Eventz** — [colorlib](https://colorlib.com/wp/template/eventz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/evento-free-template-1.jpg)
+- [x] **Eventz** — [colorlib](https://colorlib.com/wp/template/eventz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/evento-free-template-1.jpg) · [confetti](https://confetti.free.componentdock.com)
 - [ ] **Manup** — [colorlib](https://colorlib.com/wp/template/manup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/manup-free-template.jpg)
 - [x] **Meetup** — [colorlib](https://colorlib.com/wp/template/meetup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meetup-free-template.jpg) · [gatherly](https://gatherly.free.componentdock.com)
 - [ ] **Plataforma** — [colorlib](https://colorlib.com/wp/template/plataforma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/plataforma-free-template.jpg)
