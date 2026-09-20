@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand green from the original Foto stylesheet — hover accent. */
+  --color-brand: #37d583;
+  --color-brand-alt: #36d98a;
+
+  /* Text palette. */
+  --color-ink: #333;
+  --color-muted: #777;
+  --color-light: #aaa;
+
+  /* Fonts: Poppins (body) + Allura (accent/script). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-accent: 'Allura', cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
