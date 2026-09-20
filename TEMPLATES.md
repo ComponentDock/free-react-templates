@@ -1653,7 +1653,7 @@
 - [x] **Oneschool** — [colorlib](https://colorlib.com/wp/template/oneschool/) · [classroom](https://classroom.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/oneschool-free-template.jpg)
 - [x] **Onlineedu** — [colorlib](https://colorlib.com/wp/template/onlineedu/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/onlineedu-free-template.jpeg) · [Orenda](https://orenda.free.componentdock.com)
 - [x] **Skwela** — [colorlib](https://colorlib.com/wp/template/skwela/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skwela-free-template.jpg) · [learnova](https://learnova.free.componentdock.com)
-- [~] **Studylab** — [colorlib](https://colorlib.com/wp/template/studylab/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/studylab-free-template.jpg)
+- [x] **Studylab** — [colorlib](https://colorlib.com/wp/template/studylab/) · [studium](https://studium.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/studylab-free-template.jpg)
 - [x] **Tutor** — [colorlib](https://colorlib.com/wp/template/tutor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tutor-free-template.jpg) · [mentory](https://mentory.free.componentdock.com)
 - [ ] **Unica** — [colorlib](https://colorlib.com/wp/template/unica/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unica-free-template.jpg)
 - [ ] **Unicat** — [colorlib](https://colorlib.com/wp/template/unicat/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unicat-free-template.jpg)
