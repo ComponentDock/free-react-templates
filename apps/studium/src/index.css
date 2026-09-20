@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-blue: #0062cc;
+  --color-brand-blue-light: #4986fc;
+  --color-brand-teal: #24d2c8;
+  --color-brand-magenta: #ce4be8;
+  --color-brand-orange: #fc9927;
+  --color-brand-dark: #1a1a1a;
+  --color-brand-dark-alt: #1d2124;
+  --color-brand-light: #f9faff;
+  --color-brand-light-alt: #f7f7f7;
+  --color-brand-text: #16181b;
+  --color-brand-muted: #999999;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
