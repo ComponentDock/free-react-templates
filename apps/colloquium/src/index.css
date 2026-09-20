@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #ff2d9b;
+  --color-primary-hover: #e6288c;
+  --color-dark: #1a1a2e;
+  --color-dark-alt: #0d0d1a;
+  --color-light: #f8f9fa;
+  --color-body: #333333;
+  --color-muted: #999999;
+  --color-heading: #222222;
+
+  --font-heading: 'Barlow Condensed', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Barlow', ui-sans-serif, system-ui, sans-serif;
+}
