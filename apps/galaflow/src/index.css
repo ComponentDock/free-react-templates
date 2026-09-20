@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #fde449;
+  --color-primary-dark: #e6cf3f;
+  --color-secondary: #302072;
+  --color-secondary-dark: #1e1450;
+  --color-body-text: #79709d;
+  --color-heading: #302072;
+  --color-bg-light: #f6f7ff;
+  --color-bg-blue: #0154f7;
+  --color-dark: #000000;
+
+  --font-heading: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
