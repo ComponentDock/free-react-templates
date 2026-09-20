@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Gathr brand palette — vivid red primary */
+  --color-primary: #f50136;
+  --color-primary-dark: #d4002e;
+  --color-dark: #18181c;
+  --color-body-text: #838383;
+  --color-light: #ffffff;
+
+  /* Montserrat — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
