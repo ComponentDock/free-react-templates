@@ -1690,7 +1690,7 @@
 - [x] **The Conference** — [colorlib](https://colorlib.com/wp/template/the-conference/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theconference-free-template.jpg) · [colloquy](https://colloquy.free.componentdock.com)
 - [x] **Umeet** — [colorlib](https://colorlib.com/wp/template/umeet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/umeet-free-template.jpg) · [conclave](https://free-react-templates-conclave.surge.sh)
 - [x] **Wemeet** — [colorlib](https://colorlib.com/wp/template/wemeet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wemeet-free-template.jpg) · [convoke](https://convoke.free.componentdock.com)
-- [ ] **Workshop** — [colorlib](https://colorlib.com/wp/template/workshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workshop-free-template.jpg)
+- [~] **Workshop** — [colorlib](https://colorlib.com/wp/template/workshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workshop-free-template.jpg)
 
 ## Fashion (43)
 
@@ -2101,7 +2101,7 @@
 - [x] **Webhost** — [colorlib](https://colorlib.com/wp/template/webhost/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webhost-free-template-1.jpg) · [netrise](https://netrise.free.componentdock.com)
 - [x] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · [wordpressapp](https://wordpressapp.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
 - [x] **Wordpress Business Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-business-themes/) · [slate](https://slate.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-business-themes1.jpg)
-- [ ] **Workshop** — [colorlib](https://colorlib.com/wp/template/workshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workshop-free-template.jpg)
+- [~] **Workshop** — [colorlib](https://colorlib.com/wp/template/workshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/workshop-free-template.jpg)
 - [x] **Yaseen** — [colorlib](https://colorlib.com/wp/template/yaseen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yaseen-creative-photography-website-landing-page-template.jpg) · [pixora](https://pixora.free.componentdock.com)
 - [x] **Zeedapp** — [colorlib](https://colorlib.com/wp/template/zeedapp/) · [Zest](https://zest.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeedapp-free-template.jpg)
 

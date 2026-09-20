@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Seminar brand colors — a dark conference/event landing theme
+     with a red-orange #ff5733 primary, a gradient #c70039 -> #ff5733
+     for accents, dark bg #232531, and footer bg #1b1d24. */
+  --color-primary-50: #fff1ee;
+  --color-primary-100: #ffd9d0;
+  --color-primary-200: #ffb3a3;
+  --color-primary-300: #ff8a75;
+  --color-primary-400: #ff5733;
+  --color-primary-500: #e64d2e;
+  --color-primary-600: #cc4328;
+  --color-primary-700: #c70039;
+  --color-primary-800: #9a002c;
+  --color-primary-900: #6d001f;
+
+  /* Gradient end accent. */
+  --color-accent-300: #ff8a75;
+  --color-accent-400: #ff5733;
+  --color-accent-500: #c70039;
+
+  /* Dark backgrounds (body bg + footer bg). */
+  --color-ink: #232531;
+  --color-surface: #1b1d24;
+
+  /* Muted copy. */
+  --color-text: #cfcfd1;
+
+  /* Subtle border (program rows). */
+  --color-border: #3a3c47;
+
+  /* Roboto Mono via Google Fonts <link> in index.html. */
+  --font-sans: 'Roboto Mono', ui-monospace, monospace;
+}
