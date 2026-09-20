@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Confetti brand palette — recreated from the ColorLib "Eventz" design
+     (css/style.css): deep purple #331391 accents/buttons, dark purple
+     #2e0e8c sponsors bg, navy #26264b headings, body text #10285d. */
+  --color-brand: #331391;
+  --color-brand-dark: #2e0e8c;
+
+  /* Ink — dark navy headings (#26264b from the original). */
+  --color-ink: #26264b;
+  --color-ink-dark: #1a1a3a;
+
+  /* Paper — light section background. */
+  --color-paper: #f8f8ff;
+
+  /* Mist — muted body text (#999999 from the original). */
+  --color-mist: #999999;
+
+  /* Primary scale so shared Button/ButtonLink `primary` variants
+     resolve to the purple. */
+  --color-primary-50: #f0ecff;
+  --color-primary-100: #ddd6ff;
+  --color-primary-200: #bbb0ff;
+  --color-primary-300: #9688ff;
+  --color-primary-400: #6b55ff;
+  --color-primary-500: #331391;
+  --color-primary-600: #2e0e8c;
+  --color-primary-700: #250b7a;
+  --color-primary-800: #1c0868;
+  --color-primary-900: #140556;
+
+  /* Fonts: Sarabun (headings) + Roboto (body) — matching the original. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Sarabun', ui-sans-serif, system-ui, sans-serif;
+}
