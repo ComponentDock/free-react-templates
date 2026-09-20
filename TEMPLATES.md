@@ -1632,7 +1632,7 @@
 - [x] **Educature** — [colorlib](https://colorlib.com/wp/template/educature/) · [courselex](https://courselex.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/educature-free-template.jpeg)
 - [x] **Educrown** — [colorlib](https://colorlib.com/wp/template/educrown/) · [laurel](https://laurel.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/educrown-free-template.jpeg)
 - [x] **Edumark** — [colorlib](https://colorlib.com/wp/template/edumark/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/edumark-free-template.jpg) · [academia](https://academia.free.componentdock.com)
-- [ ] **Edusite** — [colorlib](https://colorlib.com/wp/template/edusite/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/edusite-free-online-courses-website-template.jpg)
+- [~] **Edusite** — [colorlib](https://colorlib.com/wp/template/edusite/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/edusite-free-online-courses-website-template.jpg)
 - [ ] **Edusmart** — [colorlib](https://colorlib.com/wp/template/edusmart/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/edusmart-free-template-1.jpg)
 - [x] **Edustage** — [colorlib](https://colorlib.com/wp/template/edustage/) · [quad](https://quad.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/edustage-free-template.jpg)
 - [ ] **Elearn** — [colorlib](https://colorlib.com/wp/template/elearn/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elearn-free-template.jpg)
