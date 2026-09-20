@@ -1657,7 +1657,7 @@
 - [x] **Tutor** — [colorlib](https://colorlib.com/wp/template/tutor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tutor-free-template.jpg) · [mentory](https://mentory.free.componentdock.com)
 - [x] **Unica** — [colorlib](https://colorlib.com/wp/template/unica/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unica-free-template.jpg) · [lectern](https://lectern.free.componentdock.com)
 - [x] **Unicat** — [colorlib](https://colorlib.com/wp/template/unicat/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unicat-free-template.jpg) · [uniwell](https://uniwell.free.componentdock.com)
-- [~] **University** — [colorlib](https://colorlib.com/wp/template/university/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/university-free-template.jpg) · [ethos](https://ethos.free.componentdock.com)
+- [x] **University** — [colorlib](https://colorlib.com/wp/template/university/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/university-free-template.jpg) · [ethos](https://ethos.free.componentdock.com)
 - [x] **Universityedu** — [colorlib](https://colorlib.com/wp/template/universityedu/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/universityedu-colorlib-template.jpg) · [scholara](https://scholara.free.componentdock.com)
 - [ ] **Webuni** — [colorlib](https://colorlib.com/wp/template/webuni/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webuni-free-template.jpg)
 - [ ] **Wiser** — [colorlib](https://colorlib.com/wp/template/wiser/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wiser-free-template.jpg)
