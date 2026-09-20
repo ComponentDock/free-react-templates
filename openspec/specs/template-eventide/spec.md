@@ -1,4 +1,4 @@
-# Template: Gatherly (Event/Conference)
+# Template: Eventide (Event/Conference)
 
 ## Purpose
 
@@ -49,7 +49,7 @@ Dark-themed event/conference site with rich purple gradient accents on a near-bl
 
 ### Navbar
 - Scenario: Navbar displays logo, nav links, and Buy Tickets button
-  - Given the user is on the Gatherly page
+  - Given the user is on the Eventide page
   - Then a navigation bar is visible with logo on the left
   - And links "Home", "About us", "Events", "News", "Contact" are shown
   - And a "Buy Tickets" button is visible on the right
@@ -73,7 +73,7 @@ Dark-themed event/conference site with rich purple gradient accents on a near-bl
 - Scenario: Info section shows logo and description
   - Given the user scrolls to the info section
   - Then a logo image is displayed on the left
-  - And a heading "What is Gatherly and why choose our services?" is shown
+  - And a heading "What is Eventide and why choose our services?" is shown
   - And a description paragraph is visible
 
 - Scenario: Info section has two CTA buttons
@@ -141,4 +141,4 @@ Dark-themed event/conference site with rich purple gradient accents on a near-bl
 - [ ] 100% test coverage
 - [ ] No ColorLib references in app code
 - [ ] Footer links to https://www.componentdock.com/
-- [ ] App name "gatherly" — no collision with existing apps
+- [ ] App name "eventide" — no collision with existing apps

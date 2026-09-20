@@ -1,4 +1,4 @@
-# Gatherly — Implementation Tasks & Design Notes
+# Eventide — Implementation Tasks & Design Notes
 
 ## Source
 - ColorLib: https://colorlib.com/wp/template/agenda/
