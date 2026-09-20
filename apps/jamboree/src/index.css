@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Jamboree brand palette — recreated from the ColorLib "Eventasia" design
+     (css/main.css): purple #C732FF accent, gradient #ca2dff → #8e96f8 → #52fff1,
+     dark footer #222222, speaker bg #f9f9ff. */
+  --color-brand: #c732ff;
+  --color-brand-dark: #a020d6;
+
+  /* Gradient stops for the signature purple-blue-cyan gradient. */
+  --color-gradient-start: #ca2dff;
+  --color-gradient-mid: #8e96f8;
+  --color-gradient-end: #52fff1;
+
+  /* Ink — dark headings (#222 from the original). */
+  --color-ink: #222222;
+
+  /* Paper — light section background (#f9f9ff for speaker area). */
+  --color-paper: #f9f9ff;
+
+  /* Mist — muted body text (#777 from the original). */
+  --color-mist: #777777;
+
+  /* Footer background (#222222 from the original). */
+  --color-footer: #222222;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the purple. */
+  --color-primary-50: #fdf2ff;
+  --color-primary-100: #fae5ff;
+  --color-primary-200: #f5c7ff;
+  --color-primary-300: #ee9eff;
+  --color-primary-400: #e066ff;
+  --color-primary-500: #c732ff;
+  --color-primary-600: #a020d6;
+  --color-primary-700: #7d18a8;
+  --color-primary-800: #5e127e;
+  --color-primary-900: #3f0c54;
+
+  /* Font: Poppins (loaded via Google Fonts). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
