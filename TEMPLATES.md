@@ -1635,7 +1635,7 @@
 - [x] **Edusite** — [eduforge](https://eduforge.free.componentdock.com) · [colorlib](https://colorlib.com/wp/template/edusite/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/edusite-free-online-courses-website-template.jpg)
 - [x] **Edusmart** — [brightpath](https://brightpath.free.componentdock.com) · [colorlib](https://colorlib.com/wp/template/edusmart/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/edusmart-free-template-1.jpg)
 - [x] **Edustage** — [colorlib](https://colorlib.com/wp/template/edustage/) · [quad](https://quad.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/edustage-free-template.jpg)
-- [ ] **Elearn** — [colorlib](https://colorlib.com/wp/template/elearn/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elearn-free-template.jpg)
+- [~] **Elearn** — [colorlib](https://colorlib.com/wp/template/elearn/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elearn-free-template.jpg)
 - [ ] **Eskwela** — [colorlib](https://colorlib.com/wp/template/eskwela/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eskwela-free-template.jpg)
 - [x] **Etrain** — [colorlib](https://colorlib.com/wp/template/etrain/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/etrain-free-template.jpg) · [learnhub](https://learnhub.free.componentdock.com)
 - [ ] **Ezuca** — [colorlib](https://colorlib.com/wp/template/ezuca/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ezuca-free-template.jpg)
