@@ -1,33 +1,34 @@
 import { useEffect } from 'react'
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
-import { Features } from './components/Features'
-import { Services } from './components/Services'
-import { Trainers } from './components/Trainers'
-import { UpcomingEvents } from './components/UpcomingEvents'
+import { Pricing } from './components/Pricing'
+import { Programs } from './components/Programs'
+import { StatsCounter } from './components/StatsCounter'
+import { Coaches } from './components/Coaches'
+import { Testimonials } from './components/Testimonials'
+import { Blog } from './components/Blog'
+import { ContactForm } from './components/ContactForm'
+import { Gallery } from './components/Gallery'
 import { Footer } from './components/Footer'
-import { siteName, skipLabel } from './data'
 
 export function App() {
   useEffect(() => {
-    document.title = `${siteName} — Be Fit. Top Gym`
+    document.title = 'IronPulse — Crossfit & Fitness Template'
   }, [])
 
   return (
-    <div className="min-h-screen bg-paper font-sans text-ink">
-      <a
-        href="#main"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:bg-brand focus:px-4 focus:py-2 focus:text-white"
-      >
-        {skipLabel}
-      </a>
+    <div className="flex min-h-screen flex-col bg-paper text-ink transition-colors dark:bg-gray-950 dark:text-white">
       <Navbar />
-      <main id="main">
+      <main className="flex-1">
         <Hero />
-        <Features />
-        <Services />
-        <Trainers />
-        <UpcomingEvents />
+        <Pricing />
+        <Programs />
+        <StatsCounter />
+        <Coaches />
+        <Testimonials />
+        <Blog />
+        <Gallery />
+        <ContactForm />
       </main>
       <Footer />
     </div>

@@ -1,61 +1,34 @@
-import { act, render, screen } from '@testing-library/react'
+import { describe, expect, it } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { afterEach, describe, expect, it, vi } from 'vitest'
-import { heroPlayLabel, heroReadMoreLabel, heroSlideLabel, heroSlides } from '../data'
 import { Hero } from './Hero'
 
 describe('Hero', () => {
-  afterEach(() => {
-    vi.useRealTimers()
-  })
-
-  it('renders the first slide content with play button, headline, CTA, and dots', () => {
+  it('renders headline text and subtitle', () => {
     render(<Hero />)
-    expect(screen.getByRole('button', { name: heroPlayLabel })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { level: 1, name: heroSlides[0].title })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: heroReadMoreLabel })).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: heroSlideLabel(0) })).toHaveAttribute(
-      'aria-current',
-      'true',
-    )
-    expect(screen.getByRole('button', { name: heroSlideLabel(1) })).not.toHaveAttribute(
-      'aria-current',
-    )
-    expect(screen.getByRole('button', { name: heroSlideLabel(2) })).not.toHaveAttribute(
-      'aria-current',
-    )
+    const heading = screen.getByRole('heading', { level: 1 })
+    expect(heading.textContent).toMatch(/Iron/)
+    expect(heading.textContent).toMatch(/Pulse/)
+    expect(screen.getByText('Crossfit. Working Harder')).toBeInTheDocument()
   })
 
-  it('navigates to a slide when a dot is activated', async () => {
+  it('renders play button', () => {
+    render(<Hero />)
+    expect(screen.getByRole('button', { name: /play video/i })).toBeInTheDocument()
+  })
+
+  it('opens video modal when play button is clicked', async () => {
     const user = userEvent.setup()
     render(<Hero />)
-    await user.click(screen.getByRole('button', { name: heroSlideLabel(2) }))
-    expect(screen.getByRole('heading', { level: 1, name: heroSlides[2].title })).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: heroSlideLabel(2) })).toHaveAttribute(
-      'aria-current',
-      'true',
-    )
-    expect(screen.getByRole('button', { name: heroSlideLabel(0) })).not.toHaveAttribute(
-      'aria-current',
-    )
+    await user.click(screen.getByRole('button', { name: /play video/i }))
+    expect(screen.getByRole('dialog', { name: /video player/i })).toBeInTheDocument()
   })
 
-  it('auto-advances to the next slide after the interval', () => {
-    vi.useFakeTimers()
+  it('closes video modal when close button is clicked', async () => {
+    const user = userEvent.setup()
     render(<Hero />)
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(heroSlides[0].title)
-    act(() => {
-      vi.advanceTimersByTime(6000)
-    })
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(heroSlides[1].title)
-  })
-
-  it('wraps around from the last slide to the first on auto-advance', () => {
-    vi.useFakeTimers()
-    render(<Hero />)
-    act(() => {
-      vi.advanceTimersByTime(6000 * 3)
-    })
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(heroSlides[0].title)
+    await user.click(screen.getByRole('button', { name: /play video/i }))
+    await user.click(screen.getByRole('button', { name: /close video/i }))
+    expect(screen.queryByRole('dialog', { name: /video player/i })).not.toBeInTheDocument()
   })
 })
