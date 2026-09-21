@@ -1,18 +1,38 @@
 @import 'tailwindcss';
 
-/* Class-based dark mode */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Batterly brand palette — orange-red #F04506 from the Cakes design */
-  --color-brand: #f04506;
-  --color-brand-dark: #d83e06;
-  --color-cream: #fff7f3;
-  --color-card-bg: #fff5f2;
-  --color-body-text: #5e5e5e;
+  /* Batterly brand palette — bakery/cake shop design:
+     warm orange #f08632 is the primary accent (buttons, section titles,
+     category hover fill, testimonial dots). */
+  --color-brand: #f08632;
 
-  /* Quicksand for headings/buttons/nav, DM Sans for body */
-  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
-  --font-heading: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
-  --font-decorative: 'Lobster', cursive;
+  /* Brand hover — slightly darker orange for interactive states. */
+  --color-brand-dark: #d97628;
+
+  /* Ink — near-black heading color (#111111). */
+  --color-ink: #111111;
+
+  /* Muted — secondary text color (#888888). */
+  --color-muted: #888888;
+
+  /* Light background — warm cream for class section (#fdf3ea). */
+  --color-cream: #fdf3ea;
+
+  /* Border — light borders and dividers (#b7b7b7). */
+  --color-border: #b7b7b7;
+
+  /* Footer link gray. */
+  --color-foot: #a4a4a4;
+
+  /* Primary scale — drives shared packages/ui Button/ButtonLink. */
+  --color-primary-500: #f0964e;
+  --color-primary-600: #f08632;
+  --color-primary-700: #d97628;
+
+  /* Heading font: Playfair Display (400–700); body font: Montserrat (300–700). */
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans:
+    'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 }
