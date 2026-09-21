@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Asana brand palette — purple (#6610f2) from the original design */
+  --color-brand-50: #f3e8ff;
+  --color-brand-100: #e9d5ff;
+  --color-brand-200: #d8b4fe;
+  --color-brand-300: #c084fc;
+  --color-brand-400: #a855f7;
+  --color-brand-500: #6610f2;
+  --color-brand-600: #5a0fd6;
+  --color-brand-700: #4c0db8;
+  --color-brand-800: #3d0a93;
+  --color-brand-900: #2e086e;
+
+  /* Quicksand — the original template's typeface */
+  --font-sans: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+}
