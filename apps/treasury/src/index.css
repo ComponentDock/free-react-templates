@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Treasury brand palette — recreated from the ColorLib "Banker" design
+     (css/style.css): orange #fd7e14 accents/buttons/section-titles,
+     dark gray #343a40 footer, white cards. */
+
+  /* Primary orange (#fd7e14) — buttons, section titles, price highlights. */
+  --color-brand: #fd7e14;
+  --color-brand-dark: #e5720c;
+
+  /* Ink — dark gray footer (#343a40 from the original). */
+  --color-ink: #343a40;
+  --color-ink-dark: #23272b;
+
+  /* Paper — light section background (#f8f9fa from the original). */
+  --color-paper: #f8f9fa;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the orange. */
+  --color-primary-50: #fff8f0;
+  --color-primary-100: #ffedd5;
+  --color-primary-200: #fed7aa;
+  --color-primary-300: #fdba74;
+  --color-primary-400: #fb923c;
+  --color-primary-500: #fd7e14;
+  --color-primary-600: #e5720c;
+  --color-primary-700: #c2410c;
+  --color-primary-800: #9a3412;
+  --color-primary-900: #7c2d12;
+
+  /* Font: Open Sans (from the original). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
