@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Aurae brand palette — coral/salmon from Ahana css/style.css */
+  --color-brand: #f2786f;
+  --color-brand-dark: #e0605a;
+  --color-brand-light: #f9f2f0;
+
+  /* Gradient accent */
+  --color-accent-warm: #fdb07d;
+  --color-accent-coral: #f65d5d;
+
+  /* Green accent for notes/badges */
+  --color-accent-green: #8abe56;
+
+  /* Dark ink for headings */
+  --color-ink: #333333;
+  --color-ink-dark: #222222;
+
+  /* Body text */
+  --color-body: #666666;
+  --color-mist: #999999;
+
+  /* Light backgrounds */
+  --color-paper: #f9f2f0;
+  --color-paper-alt: #fafafa;
+
+  /* Fonts */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+
+  /* Primary scale for shared Button/ButtonLink */
+  --color-primary-50: #fdf2f1;
+  --color-primary-100: #fce4e2;
+  --color-primary-200: #f9c9c6;
+  --color-primary-300: #f5a39e;
+  --color-primary-400: #f2786f;
+  --color-primary-500: #f2786f;
+  --color-primary-600: #e0605a;
+  --color-primary-700: #c44a44;
+  --color-primary-800: #a23b36;
+  --color-primary-900: #86332f;
+}
