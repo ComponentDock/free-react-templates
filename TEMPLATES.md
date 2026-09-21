@@ -1830,7 +1830,7 @@
 - [x] **Bodyfit** — [colorlib](https://colorlib.com/wp/template/bodyfit/) · [piston](https://piston.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bodyfit-free-template-1.jpg)
 - [x] **Chiropractic** — [colorlib](https://colorlib.com/wp/template/chiropractic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/chiropractic-free-template.jpg) · [alignwell](https://alignwell.free.componentdock.com)
 - [x] **Crossbody** — [colorlib](https://colorlib.com/wp/template/crossbody/) · [ironpulse](https://ironpulse.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/crossbody-free-template.jpg)
-- [~] **Crossfit** — [colorlib](https://colorlib.com/wp/template/crossfit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/crossfit-free-template.jpg)
+- [x] **Crossfit** — [colorlib](https://colorlib.com/wp/template/crossfit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/crossfit-free-template.jpg) · [fitforge](https://fitforge.free.componentdock.com)
 - [x] **Crossfit 2** — [colorlib](https://colorlib.com/wp/template/crossfit-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/crossfit2-free-template.jpg) · [barbell](https://barbell.free.componentdock.com)
 - [ ] **Crossfits** — [colorlib](https://colorlib.com/wp/template/crossfits/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/crossfits-free-template.jpg)
 - [x] **Dazko** — [colorlib](https://colorlib.com/wp/template/dazko/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dazko-free-template.jpg) · [kinesis](https://kinesis.free.componentdock.com)
