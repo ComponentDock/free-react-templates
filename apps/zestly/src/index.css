@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand gradient: #ff008c (pink) to #ff6357 (coral). */
+  --color-brand-pink: #ff008c;
+  --color-brand-coral: #ff6357;
+
+  /* Blue gradient: #5db2ff to #65b4f9. */
+  --color-blue-light: #5db2ff;
+  --color-blue-lighter: #65b4f9;
+
+  /* Body text (#1F1F1F). */
+  --color-body: #1f1f1f;
+
+  /* Secondary text (#777777). */
+  --color-secondary: #777777;
+
+  /* Dark background (#020c26). */
+  --color-dark-bg: #020c26;
+
+  /* Footer background (#1f1f1f / #2C2C2C). */
+  --color-footer: #1f1f1f;
+  --color-footer-alt: #2c2c2c;
+
+  /* Light section background (#f5f5f5). */
+  --color-light-bg: #f5f5f5;
+
+  /* Display font: Satisfy (Google Fonts, script style). */
+  --font-display: 'Satisfy', cursive;
+
+  /* Body font: Roboto (Google Fonts). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
