@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Loanforge brand palette — blue finance template.
+     Brand blue #3589f1, dark navy #000a2d. */
+  --color-brand: #3589f1;
+  --color-brand-dark: #2171d3;
+  --color-navy: #000a2d;
+  --color-orange: #ff872d;
+  --color-text: #635c5c;
+  --color-text-dim: #7a8290;
+  --color-bg-light: #f7f7f7;
+  --color-bg-lavender: #fbf9ff;
+  --color-gold: #dca73a;
+
+  --font-heading: 'Rufina', serif;
+  --font-body: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
