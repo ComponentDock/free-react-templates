@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Perk brand palette — recreated from the ColorLib "Coffee" design
+     (css/main.css): gold #b68834 buttons/accents, dark #222 headings,
+     muted #777 body text, light bg #f9f9ff sections. */
+  --color-brand: #b68834;
+  --color-brand-dark: #9a7230;
+
+  /* Ink — dark headings (#222222 from the original). */
+  --color-ink: #222222;
+  --color-ink-dark: #111111;
+
+  /* Paper — light section background (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Mist — muted body text (#777777 from the original). */
+  --color-mist: #777777;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the gold. */
+  --color-primary-50: #fdf8ed;
+  --color-primary-100: #f9ecd0;
+  --color-primary-200: #f2d89e;
+  --color-primary-300: #ebc36c;
+  --color-primary-400: #e0a93e;
+  --color-primary-500: #b68834;
+  --color-primary-600: #9a7230;
+  --color-primary-700: #7a5a26;
+  --color-primary-800: #5c431c;
+  --color-primary-900: #3d2c12;
+
+  /* Original font: "Poppins" (headings + body). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
