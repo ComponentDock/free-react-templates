@@ -1818,7 +1818,7 @@
 - [x] **Comodo** — [colorlib](https://colorlib.com/wp/template/comodo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/comodo-free-template.jpg) · [Gambit](https://gambit.free.componentdock.com)
 - [x] **Egames** — [colorlib](https://colorlib.com/wp/template/egames/) · [joystick](https://free-react-templates-joystick.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/egames-free-template-1.jpg)
 - [x] **Endgam** — [colorlib](https://colorlib.com/wp/template/endgam/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/endgam-free-template.jpg) · [pixelpress](https://pixelpress.free.componentdock.com)
-- [ ] **Game Warrior** — [colorlib](https://colorlib.com/wp/template/game-warrior/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gamewarrior-free-template.jpg)
+- [x] **Game Warrior** — [colorlib](https://colorlib.com/wp/template/game-warrior/) · [fragzone](https://fragzone.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gamewarrior-free-template.jpg)
 - [x] **Knights** — [colorlib](https://colorlib.com/wp/template/knights/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/knights-free-template.jpg) · [kickoff](https://kickoff.free.componentdock.com)
 - [x] **The Quest** — [colorlib](https://colorlib.com/wp/template/the-quest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thequest-free-template.jpg) · [guild](https://guild.free.componentdock.com)
 
