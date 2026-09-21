@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Fragstorm brand palette — dark red on near-black, design tokens from
+     the source template's stylesheet. */
+  --color-brand: #c20000;
+  --color-brand-light: #e10000;
+  --color-nav: #9e0303;
+  --color-nav-hover: #a81d1d;
+  --color-nav-dark: #310a0a;
+  --color-nav-item: #4e0808;
+  --color-logo-bg: #0d0d0d;
+  --color-body-bg: #080808;
+  --color-card-bg: #161616;
+  --color-text-primary: #ffffff;
+  --color-text-body: #c4c4c4;
+  --color-text-muted: #666666;
+  --color-border: #252525;
+
+  /* Cinzel for headings, Montserrat for body — loaded via Google Fonts
+     <link> in index.html. */
+  --font-heading: 'Cinzel', ui-serif, Georgia, serif;
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
