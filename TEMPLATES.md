@@ -1753,7 +1753,7 @@
 - [x] **Easylo** — [colorlib](https://colorlib.com/wp/template/easylo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/easylo-colorlib-template.jpg) · [homely](https://homely.free.componentdock.com)
 - [x] **Financeflow** — [colorlib](https://colorlib.com/wp/template/financeflow/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/financeflow-template-1770211224122.jpg) · [ticker](https://ticker.free.componentdock.com)
 - [x] **Financier** — [colorlib](https://colorlib.com/wp/template/financier/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/financier-free-templatel.jpg) · [fiscal](https://fiscal.free.componentdock.com)
-- [~] **Finloans** — [colorlib](https://colorlib.com/wp/template/finloans/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/finloans-free-template.jpg)
+- [x] **Finloans** — [colorlib](https://colorlib.com/wp/template/finloans/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/finloans-free-template.jpg) · [loanworks](https://loanworks.free.componentdock.com)
 - [x] **Finlone** — [colorlib](https://colorlib.com/wp/template/finlone/) · [capitex](https://capitex.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/finlone-free-template.jpg)
 - [x] **Invest** — [colorlib](https://colorlib.com/wp/template/invest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/invest-free-template.jpg) · [vestly](https://vestly.free.componentdock.com)
 - [x] **Investpro** — [colorlib](https://colorlib.com/wp/template/investpro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/investpro-template-1770211264537.jpg) · [Tradewell](https://tradewell.free.componentdock.com)
