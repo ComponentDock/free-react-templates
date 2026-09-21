@@ -1824,7 +1824,7 @@
 
 ## Health Fitness (72)
 
-- [~] **Activitar** — [colorlib](https://colorlib.com/wp/template/activitar/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/activitar-free-template.jpg)
+- [x] **Activitar** — [colorlib](https://colorlib.com/wp/template/activitar/) · [sprintly](https://sprintly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/activitar-free-template.jpg)
 - [ ] **Acupuncture** — [colorlib](https://colorlib.com/wp/template/acupuncture/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/acupuncture-free-template.jpg)
 - [ ] **Ahana** — [colorlib](https://colorlib.com/wp/template/ahana/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ahana-free-template.jpg)
 - [ ] **Bodyfit** — [colorlib](https://colorlib.com/wp/template/bodyfit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bodyfit-free-template-1.jpg)
