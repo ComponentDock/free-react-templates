@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #20c997;
+  --color-brand-dark: #1aa179;
+  --color-brand-light: #2ee0a8;
+  --color-heading: #000000;
+  --color-body-text: #737373;
+  --color-surface: #ffffff;
+  --color-muted: #f8f9fa;
+  --color-border: #dee2e6;
+  --color-footer-bg: #333333;
+  --color-footer-text: #737373;
+  --color-footer-link: #999999;
+  --font-heading: 'Josefin Sans', sans-serif;
+  --font-body: 'Josefin Sans', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+    color: var(--color-body-text);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    color: var(--color-heading);
+  }
+}
