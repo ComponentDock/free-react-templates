@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* VenuePoint brand colors — from the ColorLib "Thevenue" preview
+     (https://preview.colorlib.com/theme/thevenue/ + styles/main_styles.css):
+     an elegant restaurant theme with a warm tan #b49383 primary,
+     muted rose-tan #c4ab9f secondary, light salmon #ffa07f accent,
+     and a dark overlay rgba(0,0,0,0.85). */
+  --color-primary-50: #f5f0ed;
+  --color-primary-100: #ede4de;
+  --color-primary-200: #ddc8bd;
+  --color-primary-300: #ccab9c;
+  --color-primary-400: #b49383;
+  --color-primary-500: #a07f70;
+  --color-primary-600: #8a6b5d;
+  --color-primary-700: #73584c;
+  --color-primary-800: #5e473e;
+  --color-primary-900: #4d3a33;
+
+  /* Hover state (ColorLib secondary #c4ab9f). */
+  --color-secondary-400: #c4ab9f;
+
+  /* Light salmon accent (ColorLib #ffa07f). */
+  --color-accent-400: #ffa07f;
+
+  /* Alt background (ColorLib #F7F7F7). */
+  --color-cream: #f7f7f7;
+
+  /* Dark overlay for parallax sections. */
+  --color-overlay: rgba(0, 0, 0, 0.85);
+
+  /* Muted text (ColorLib #a5a5a5). */
+  --color-muted: #a5a5a5;
+
+  /* Body text (ColorLib #636363). */
+  --color-body: #636363;
+
+  /* Heading text (ColorLib #232323). */
+  --color-ink: #232323;
+
+  /* Great Vibes (elegant script) + PT Sans Narrow (clean body). */
+  --font-display: 'Great Vibes', cursive;
+  --font-body: 'PT Sans Narrow', sans-serif;
+}
