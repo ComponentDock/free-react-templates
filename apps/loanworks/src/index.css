@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #33d4d6;
+  --color-brand-dark: #2ab8ba;
+  --color-navy: #001d38;
+  --color-navy-dark: #040e27;
+  --color-body-text: #7a838b;
+  --color-text-dark: #1f1f1f;
+  --color-works-bg: #f5fbff;
+  --color-service-start: #0a8cff;
+  --color-service-end: #054680;
+  --font-sans: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-dark);
+}
