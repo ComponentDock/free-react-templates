@@ -1773,7 +1773,7 @@
 - [x] **Blog Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/blog-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/blog-templates.jpg) · [marginalia](https://marginalia.free.componentdock.com)
 - [x] **Brewhouse** — [colorlib](https://colorlib.com/wp/template/brewhouse/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brewhouse-template-1770211139958.jpg) · [mocha](https://mocha.free.componentdock.com)
 - [x] **Buri** — [colorlib](https://colorlib.com/wp/template/buri/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buri-free-template.jpg) · [ravida](https://ravida.free.componentdock.com)
-- [~] **Cake** — [colorlib](https://colorlib.com/wp/template/cake/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cake-free-template.jpg)
+- [x] **Cake** — [colorlib](https://colorlib.com/wp/template/cake/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cake-free-template.jpg) · [batterly](https://batterly.free.componentdock.com)
 - [ ] **Cakes** — [colorlib](https://colorlib.com/wp/template/cakes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cakes-colorlib-template.jpg)
 - [x] **Cakeshop** — [colorlib](https://colorlib.com/wp/template/cakeshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cakeshop-colorlib-template.jpg) · [patisserie](https://patisserie.free.componentdock.com)
 - [ ] **Coffee** — [colorlib](https://colorlib.com/wp/template/coffee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coffee-free-template.jpg)
