@@ -1789,7 +1789,7 @@
 - [x] **Liquorstore** — [colorlib](https://colorlib.com/wp/template/liquorstore/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/liquorstore-free-template.jpg) · [cellarly](https://cellarly.free.componentdock.com)
 - [x] **Ogani** — [colorlib](https://colorlib.com/wp/template/ogani/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ogani-free-template.jpeg) · [grocerly](https://grocerly.free.componentdock.com)
 - [x] **Rooftop** — [colorlib](https://colorlib.com/wp/template/rooftop/) · [skyline](https://skyline.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rooftop-free-template-1.jpg)
-- [~] **Steakshop** — [colorlib](https://colorlib.com/wp/template/steakshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/steakshop-free-template.jpg) · [carnivor](https://carnivor.free.componentdock.com)
+- [x] **Steakshop** — [colorlib](https://colorlib.com/wp/template/steakshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/steakshop-free-template.jpg) · [carnivor](https://carnivor.free.componentdock.com)
 - [ ] **Tasty Recipes** — [colorlib](https://colorlib.com/wp/template/tasty-recipes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tastyrecipes-free-template.jpg)
 - [ ] **Thevenue** — [colorlib](https://colorlib.com/wp/template/thevenue/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thevenue-free-template.jpg)
 - [x] **Wines** — [colorlib](https://colorlib.com/wp/template/wines/) · [vintner](https://vintner.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wines-free-template.jpg)
