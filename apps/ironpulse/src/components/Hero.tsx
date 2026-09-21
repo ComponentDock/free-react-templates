@@ -1,72 +1,61 @@
-import { useEffect, useState } from 'react'
-import { Play } from 'lucide-react'
-import { heroPlayLabel, heroReadMoreLabel, heroSlideLabel, heroSlides } from '../data'
+import { useState } from 'react'
+import { Play, X } from 'lucide-react'
 
 export function Hero() {
-  const [index, setIndex] = useState(0)
-
-  useEffect(() => {
-    const timer = window.setInterval(() => {
-      setIndex((value) => (value + 1) % heroSlides.length)
-    }, 6000)
-    return () => window.clearInterval(timer)
-  }, [])
+  const [videoOpen, setVideoOpen] = useState(false)
 
   return (
-    <section id="home-section" className="relative">
-      {heroSlides.map((item, slideIndex) => (
+    <>
+      <section id="home" className="relative flex h-screen items-center justify-center">
+        <img
+          src="https://picsum.photos/seed/ironpulse-hero/1920/1080"
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative z-10 text-center text-white">
+          <h1 className="mb-2 text-6xl font-extrabold md:text-8xl">
+            Iron
+            <br />
+            Pulse
+          </h1>
+          <p className="mb-8 text-xl font-light tracking-wide text-gray-300">
+            Crossfit. Working Harder
+          </p>
+          <button
+            type="button"
+            aria-label="Play video"
+            onClick={() => setVideoOpen(true)}
+            className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-white text-white transition hover:bg-brand hover:border-brand hover:text-dark"
+          >
+            <Play size={28} fill="currentColor" />
+          </button>
+        </div>
+      </section>
+
+      {/* Video modal overlay */}
+      {videoOpen && (
         <div
-          key={item.title}
-          aria-hidden={slideIndex !== index}
-          className={`absolute inset-0 bg-cover bg-center ${
-            slideIndex === index ? 'relative z-0' : 'z-0'
-          }`}
-          style={{ backgroundImage: `url(${item.image})` }}
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Video player"
         >
-          <div className="absolute inset-0 bg-black/45" aria-hidden="true" />
-          <div className="relative flex min-h-[620px] flex-col items-center justify-center px-4 pb-20 pt-40 text-center lg:min-h-[895px]">
-            {slideIndex === index && (
-              <>
-                <button
-                  type="button"
-                  aria-label={heroPlayLabel}
-                  className="mb-[17px] flex h-14 w-14 items-center justify-center rounded-full bg-brand text-white transition-colors hover:bg-dark"
-                >
-                  <Play className="ml-0.5 h-6 w-6" aria-hidden="true" />
-                </button>
-                <h1 className="max-w-[900px] text-5xl font-medium leading-tight text-white sm:text-7xl lg:text-[130px] lg:leading-[1.05]">
-                  {item.title}
-                </h1>
-                <a
-                  href="#features-section"
-                  className="mt-12 bg-brand px-[50px] py-5 text-sm font-bold uppercase tracking-[1.5px] text-white transition-colors hover:bg-dark"
-                >
-                  {heroReadMoreLabel}
-                </a>
-              </>
-            )}
+          <div className="relative flex w-full max-w-3xl flex-col items-center">
+            <button
+              type="button"
+              aria-label="Close video"
+              className="absolute -top-12 right-0 text-white hover:text-brand"
+              onClick={() => setVideoOpen(false)}
+            >
+              <X size={32} />
+            </button>
+            <div className="flex h-80 w-full items-center justify-center rounded bg-darker text-gray-400 md:h-[450px]">
+              Video content placeholder
+            </div>
           </div>
         </div>
-      ))}
-
-      <div
-        className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 gap-3"
-        role="group"
-        aria-label="Slide controls"
-      >
-        {heroSlides.map((item, dotIndex) => (
-          <button
-            key={item.title}
-            type="button"
-            aria-label={heroSlideLabel(dotIndex)}
-            aria-current={dotIndex === index ? 'true' : undefined}
-            onClick={() => setIndex(dotIndex)}
-            className={`h-3 w-3 rounded-full transition-colors ${
-              dotIndex === index ? 'bg-brand' : 'bg-white/60 hover:bg-white'
-            }`}
-          />
-        ))}
-      </div>
-    </section>
+      )}
+    </>
   )
 }

@@ -1,30 +1,38 @@
 @import 'tailwindcss';
 
-/* Ironpulse brand palette — design tokens from the live preview reference:
-   brand blue #233EDE (every CTA, play button, feature icon circles, trainer
-   hover block, membership frame, subscribe button), dark #212122 (services
-   section, trainer button), ink #353535 (headings on light surfaces),
-   muted #7b7b7b (body text), line #E5E7F3 (upcoming-classes border),
-   search #073B4C (full-screen search overlay), strip #081624 (social strip
-   icon circles). Font: Roboto via Google Fonts <link> in index.html. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  --color-brand: #233ede;
-  --color-dark: #212122;
-  --color-ink: #353535;
-  --color-muted: #7b7b7b;
-  --color-line: #e5e7f3;
-  --color-search: #073b4c;
-  --color-strip: #081624;
+  /* IronPulse brand palette — cyan primary. */
+  --color-brand: #78d5ef;
+  --color-brand-dark: #5cc4e3;
+
+  /* Dark backgrounds. */
+  --color-dark: #141414;
+  --color-darker: #0d0d0d;
+
+  /* Body text. */
+  --color-ink: #212529;
+
+  /* Muted text. */
+  --color-mist: #6c757d;
+
+  /* Paper — white background. */
   --color-paper: #ffffff;
 
-  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
-}
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the cyan brand. */
+  --color-primary-50: #eef9fd;
+  --color-primary-100: #d4f1f9;
+  --color-primary-200: #a9e3f3;
+  --color-primary-300: #78d5ef;
+  --color-primary-400: #5cc4e3;
+  --color-primary-500: #3ab3d7;
+  --color-primary-600: #2896b8;
+  --color-primary-700: #1e7a97;
+  --color-primary-800: #1a6478;
+  --color-primary-900: #185265;
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    @apply bg-paper font-sans text-ink antialiased;
-  }
+  /* Font: Work Sans from Google Fonts. */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
 }

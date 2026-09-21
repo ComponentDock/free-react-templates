@@ -10,6 +10,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@free-react-templates/ui": "*",
     "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest"
