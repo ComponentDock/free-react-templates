@@ -1813,7 +1813,7 @@
 ## Gaming (9)
 
 - [x] **Amin** — [colorlib](https://colorlib.com/wp/template/amin/) · [fragstorm](https://fragstorm.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amin-free-template.jpg)
-- [~] **Anime** — [colorlib](https://colorlib.com/wp/template/anime/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/anime-free-template.jpg)
+- [x] **Anime** — [colorlib](https://colorlib.com/wp/template/anime/) · · [anipulse](https://anipulse.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/anime-free-template.jpg)
 - [x] **Beko** — [colorlib](https://colorlib.com/wp/template/beko/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/beko-free-template.jpg) · [Arena](https://arena.free.componentdock.com)
 - [x] **Comodo** — [colorlib](https://colorlib.com/wp/template/comodo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/comodo-free-template.jpg) · [Gambit](https://gambit.free.componentdock.com)
 - [ ] **Egames** — [colorlib](https://colorlib.com/wp/template/egames/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/egames-free-template-1.jpg)
