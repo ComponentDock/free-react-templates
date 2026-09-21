@@ -1808,7 +1808,7 @@
 - [x] **Shutter** — [colorlib](https://colorlib.com/wp/template/shutter/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shutter-free-template.jpg) · [expose](https://expose.free.componentdock.com)
 - [x] **Sunzine** — [colorlib](https://colorlib.com/wp/template/sunzine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sunzine-free-template.jpg) · [aperture](https://aperture.free.componentdock.com)
 - [x] **Thumber** — [colorlib](https://colorlib.com/wp/template/thumber/) · [shuttervibe](https://shuttervibe.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thumber-free-template.jpg)
-- [ ] **Tulen** — [colorlib](https://colorlib.com/wp/template/tulen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tulen-free-template.jpg)
+- [~] **Tulen** — [colorlib](https://colorlib.com/wp/template/tulen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tulen-free-template.jpg)
 
 ## Gaming (9)
 
@@ -2478,7 +2478,7 @@
 - [x] **Sunzine** — [colorlib](https://colorlib.com/wp/template/sunzine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sunzine-free-template.jpg) · [aperture](https://aperture.free.componentdock.com)
 - [ ] **Thelook** — [colorlib](https://colorlib.com/wp/template/thelook/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelook-free-template.jpg)
 - [x] **Thumber** — [colorlib](https://colorlib.com/wp/template/thumber/) · [shuttervibe](https://shuttervibe.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thumber-free-template.jpg)
-- [ ] **Tulen** — [colorlib](https://colorlib.com/wp/template/tulen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tulen-free-template.jpg)
+- [~] **Tulen** — [colorlib](https://colorlib.com/wp/template/tulen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tulen-free-template.jpg)
 - [x] **Yaseen** — [colorlib](https://colorlib.com/wp/template/yaseen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yaseen-creative-photography-website-landing-page-template.jpg) · [pixora](https://pixora.free.componentdock.com)
 - [x] **Yummy** — [colorlib](https://colorlib.com/wp/template/yummy/) · [zesty](https://zesty.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-minimal-food-blog-website-template.jpg)
 
@@ -2571,7 +2571,7 @@
 - [x] **Sunzine** — [colorlib](https://colorlib.com/wp/template/sunzine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sunzine-free-template.jpg) · [aperture](https://aperture.free.componentdock.com)
 - [x] **Tough** — [colorlib](https://colorlib.com/wp/template/tough/) · [bastion](https://bastion.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tough-free-template.jpg)
 - [x] **Transcend** — [colorlib](https://colorlib.com/wp/template/transcend/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/transcend-free-template-1.jpg) · [chroma](https://chroma.free.componentdock.com)
-- [ ] **Tulen** — [colorlib](https://colorlib.com/wp/template/tulen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tulen-free-template.jpg)
+- [~] **Tulen** — [colorlib](https://colorlib.com/wp/template/tulen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tulen-free-template.jpg)
 - [ ] **Unfold** — [colorlib](https://colorlib.com/wp/template/unfold/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unfold-free-template.jpeg)
 - [ ] **Vcard2** — [colorlib](https://colorlib.com/wp/template/vcard2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vcard2-free-template.jpg)
 - [ ] **Videograph** — [colorlib](https://colorlib.com/wp/template/videograph/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/videograph-free-template.jpg)
