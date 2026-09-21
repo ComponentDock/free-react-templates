@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Piston brand palette — light blue/cyan primary, yellow/gold accent. */
+  --color-brand: #78d5ef;
+  --color-brand-dark: #5cc4e3;
+
+  /* Accent — yellow/gold from the info bar and highlights. */
+  --color-accent: #e5ce48;
+  --color-accent-dark: #d4bd2e;
+
+  /* Dark backgrounds. */
+  --color-dark: #141414;
+  --color-darker: #0d0d0d;
+
+  /* Body text. */
+  --color-ink: #212529;
+
+  /* Muted text. */
+  --color-mist: #6c757d;
+
+  /* Paper — white background. */
+  --color-paper: #ffffff;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the cyan brand. */
+  --color-primary-50: #eef9fd;
+  --color-primary-100: #d4f1f9;
+  --color-primary-200: #a9e3f3;
+  --color-primary-300: #78d5ef;
+  --color-primary-400: #5cc4e3;
+  --color-primary-500: #3ab3d7;
+  --color-primary-600: #2896b8;
+  --color-primary-700: #1e7a97;
+  --color-primary-800: #1a6478;
+  --color-primary-900: #185265;
+
+  /* Font: Work Sans from Google Fonts. */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
