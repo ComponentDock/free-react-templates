@@ -1720,7 +1720,7 @@
 - [x] **Menztailor** — [colorlib](https://colorlib.com/wp/template/menztailor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/menztailor-free-template.jpg) · [sartorial](https://free-react-templates-sartorial.surge.sh)
 - [x] **Modelo** — [colorlib](https://colorlib.com/wp/template/modelo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modelo-free-template.jpg) · [allure](https://allure.free.componentdock.com)
 - [x] **Modist** — [colorlib](https://colorlib.com/wp/template/modist/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modist-free-template.jpg) · [couture](https://couture.free.componentdock.com)
-- [ ] **Mona** — [colorlib](https://colorlib.com/wp/template/mona/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mona-free-template.jpg)
+- [~] **Mona** — [colorlib](https://colorlib.com/wp/template/mona/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mona-free-template.jpg)
 - [x] **Opium** — [colorlib](https://colorlib.com/wp/template/opium/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/opium-free-template.jpg) · [glyph](https://glyph.free.componentdock.com)
 - [x] **Philosophy** — [colorlib](https://colorlib.com/wp/template/philosophy/) · [sonder](https://sonder.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/philosophy-free-lifestyle-blog-website-template.jpg)
 - [x] **Product** — [colorlib](https://colorlib.com/wp/template/product/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/product-free-template.jpg) · [merch](https://merch.free.componentdock.com)

@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* CanvasGallery brand palette — modeling/talent agency with hot pink primary */
+  --color-brand: #ed489d;
+  --color-brand-light: #f6a4ce;
+  --color-text-dark: #232323;
+  --color-text-muted: #666666;
+  --color-bg-white: #ffffff;
+  --color-bg-gray: #f0f0f0;
+  --color-border: #ebebeb;
+  --color-dark: #000000;
+  --color-secondary: #a6a6a6;
+
+  /* HK Grotesk — loaded via Google Fonts in index.html */
+  --font-sans: 'HK Grotesk', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
