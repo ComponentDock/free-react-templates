@@ -1812,7 +1812,7 @@
 
 ## Gaming (9)
 
-- [~] **Amin** — [colorlib](https://colorlib.com/wp/template/amin/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amin-free-template.jpg)
+- [x] **Amin** — [colorlib](https://colorlib.com/wp/template/amin/) · [fragstorm](https://fragstorm.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amin-free-template.jpg)
 - [ ] **Anime** — [colorlib](https://colorlib.com/wp/template/anime/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/anime-free-template.jpg)
 - [x] **Beko** — [colorlib](https://colorlib.com/wp/template/beko/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/beko-free-template.jpg) · [Arena](https://arena.free.componentdock.com)
 - [x] **Comodo** — [colorlib](https://colorlib.com/wp/template/comodo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/comodo-free-template.jpg) · [Gambit](https://gambit.free.componentdock.com)
@@ -2188,7 +2188,7 @@
 
 ## Magazine (34)
 
-- [~] **Amin** — [colorlib](https://colorlib.com/wp/template/amin/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amin-free-template.jpg)
+- [x] **Amin** — [colorlib](https://colorlib.com/wp/template/amin/) · [fragstorm](https://fragstorm.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amin-free-template.jpg)
 - [x] **Avision** — [colorlib](https://colorlib.com/wp/template/avision/) · [dispatch](https://dispatch.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/avision-free-template.jpg)
 - [ ] **Awesome Magazine** — [colorlib](https://colorlib.com/wp/template/awesome-magazine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/awesomemagazine-free-template.jpg)
 - [ ] **Aznews** — [colorlib](https://colorlib.com/wp/template/aznews/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aznews-free-template.jpg)
