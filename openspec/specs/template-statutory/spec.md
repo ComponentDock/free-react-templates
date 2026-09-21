@@ -11,188 +11,117 @@ Recreation of the ColorLib **Lawfirm** template as a React 19 + Vite + Tailwind 
 - **Stack:** React 19, Vite, Tailwind CSS 4, TypeScript, packages/ui shared components
 - **Deploy target:** `statutory.free.componentdock.com`
 
-## Design tokens
+## Requirements
 
-Extracted from `css/style.css` at the preview URL on 2026-09-21.
+### Requirement: Navbar
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Primary blue | `#007bff` | `.btn-primary`, links |
-| Primary hover | `#0069d9` | |
-| Gold accent | `#cbb88c` | Border accents, highlight lines |
-| Dark palette (intro boxes) | `#1d2227`, `#161a1e`, `#121518`, `#0e1013` | Gradient darkening from left to right across 4-column intro strip |
-| Overlay / hero | `#1d2227` at 50% opacity | Hero section dark overlay on bg image |
-| Light background | `#f5f4f0` | `.bg-light` override for about section |
-| Counter section bg | Image with dark overlay | `ftco-counter img` class |
-| Appointment bg | Image with dark overlay | `ftco-appointment img` class |
-| Footer | `#1d2227` dark | `ftco-footer` |
-| Font | `"Roboto", Arial, sans-serif` | Google Fonts |
-| Border radius | Bootstrap 4 defaults (0.25rem buttons, 0 cards) | |
-| Button style | Bootstrap `.btn-primary` (rounded 0.25rem), `.btn-white` variant | |
+Statutory SHALL display a dark fixed navbar with brand name and navigation links.
 
-## Gherkin requirements
+#### Scenario: Desktop navigation
 
-### Navbar
+- **WHEN** the user opens the page on a viewport wider than 992px
+- **THEN** a dark navbar is visible with brand "Statutory" and nav links for Home, About, Practice Areas, Cases, Contact
 
-```gherkin
-Feature: Navbar
+#### Scenario: Mobile hamburger menu
 
-  Scenario: Desktop navigation
-    Given the user opens the page on a viewport wider than 992px
-    Then a dark navbar is visible with brand "Statutory" and logo
-    And nav links include "Home", "About", "Practice Areas", "Cases", "Blog", "Contact"
-    And the navbar is fixed at the top with dark background
+- **WHEN** the user taps the hamburger icon on a narrow viewport
+- **THEN** the nav links expand in a dropdown below the brand
 
-  Scenario: Mobile hamburger menu
-    Given the user opens the page on a viewport narrower than 992px
-    When the user taps the hamburger icon
-    Then the nav links expand in a dropdown below the brand
-```
+### Requirement: Hero section
 
-### Hero
+Statutory SHALL display a hero section with a dark overlay background image, headline, subtext, and two CTA buttons.
 
-```gherkin
-Feature: Hero section
+#### Scenario: Hero displays headline and CTAs
 
-  Scenario: Hero displays headline and CTAs
-    Given the hero section is visible
-    Then the heading reads "Don't Feel Helpless We Fight for Justice"
-    And a subtext paragraph is present below the heading
-    And a "Contact us" primary button is visible
-    And a "Read more" white outline button is visible
-    And the hero has a dark overlay (50% opacity) over a background image
-    And the hero height is 600px
-```
+- **WHEN** the hero section is visible
+- **THEN** the heading reads "Don't Feel Helpless We Fight for Justice"
+- **AND** a "Contact us" primary button is visible
+- **AND** a "Read more" outline button is visible
 
-### Intro strip (4 feature boxes)
+### Requirement: Intro strip
 
-```gherkin
-Feature: Intro strip
+Statutory SHALL display four dark feature boxes in a row with icons and descriptions.
 
-  Scenario: Four dark boxes with icons
-    Given the intro section is in view
-    Then four feature boxes are displayed in a single row
-    And box 1 shows "Expert Attorneys" with an icon and description
-    And box 2 shows "Case Dismissed" with an icon and description
-    And box 3 shows "Court Performance" with an icon and description
-    And box 4 shows "Court Performance" with an icon and description
-    And the boxes use a dark palette that darkens left-to-right (#1d2227 → #0e1013)
-```
+#### Scenario: Four dark boxes with icons
 
-### About section
+- **WHEN** the intro section is in view
+- **THEN** four feature boxes are displayed: Expert Attorneys, Case Dismissed, Court Performance, Legal Protection
 
-```gherkin
-Feature: About section
+### Requirement: About section
 
-  Scenario: About content with image and feature list
-    Given the about section is visible
-    Then the heading reads "Why to Put Trust Your Trust In Law Firm"
-    And an image appears on the left side (col-md-6)
-    And a light background panel (#f5f4f0) appears on the right (col-md-6)
-    And four feature items are listed: "Expert Attorneys", "Great Discount", "Legal Advisory", "Quick Charges"
-    And each feature has an icon and short description
-```
+Statutory SHALL display a split layout with an image on the left and feature list on the right.
 
-### Counter stats
+#### Scenario: About content with image and feature list
 
-```gherkin
-Feature: Counter stats
+- **WHEN** the about section is visible
+- **THEN** the heading reads "Why Put Your Trust In Our Law Firm"
+- **AND** four feature items are listed: Expert Attorneys, Great Discount, Legal Advisory, Quick Charges
 
-  Scenario: Four animated counters
-    Given the counter section is visible
-    Then four stat cards are displayed in a row
-    And "Trusted Clients" shows value 3000
-    And "Honor's & Awards" shows value 1000
-    And "Expert Lawyers" shows value 2000
-    And "Successful Cases" shows value 10540
-    And each stat has a checklist icon
-    And the counter section has a background image with dark overlay
-```
+### Requirement: Counter stats
 
-### Practice areas (What We Cover)
+Statutory SHALL display four animated stat counters over a dark background image.
 
-```gherkin
-Feature: Practice areas
+#### Scenario: Four stat cards
 
-  Scenario: Six practice area cards
-    Given the practice areas section is visible
-    Then the heading reads "What We Cover"
-    And six practice areas are displayed in a grid
-    | Area              |
-    | Business Law     |
-    | Family Law       |
-    | Criminal Law     |
-    | Real Estate Law  |
-    | Personal Injury  |
-    | Judicial Law     |
-    And each card has an icon and short description
-```
+- **WHEN** the counter section is visible
+- **THEN** four stats are displayed: Trusted Clients (3,000), Honor's & Awards (1,000), Expert Lawyers (2,000), Successful Cases (10,540)
 
-### Recent case studies
+### Requirement: Practice areas
 
-```gherkin
-Feature: Case studies
+Statutory SHALL display six practice area cards in a grid with icons.
 
-  Scenario: Case study grid
-    Given the case studies section is visible
-    Then the heading reads "Recent Case Studies"
-    And case study cards are displayed in a grid layout
-    And each card has a category tag, title, and description
-```
+#### Scenario: Six practice area cards
 
-### Testimonials
+- **WHEN** the practice areas section is visible
+- **THEN** six areas are displayed: Business Law, Family Law, Criminal Law, Real Estate Law, Personal Injury, Judicial Law
 
-```gherkin
-Feature: Testimonials
+### Requirement: Case studies
 
-  Scenario: Client testimonial carousel
-    Given the testimony section is visible
-    Then the heading reads "What Our Clients Say About Us"
-    And testimonial cards are displayed with client names and quotes
-    And navigation arrows allow cycling through testimonials
-```
+Statutory SHALL display case study cards with background images, category tags, and titles.
 
-### Appointment / Contact
+#### Scenario: Case study grid
 
-```gherkin
-Feature: Appointment section
+- **WHEN** the case studies section is visible
+- **THEN** six case study cards are displayed in a grid
 
-  Scenario: Contact section with form
-    Given the appointment section is visible
-    Then the heading reads "We Have Great Results"
-    And a description paragraph is present
-    And feature highlights include "Award Winning", "60 Years of Experience", "Best Attorneys team"
-    And a contact form with fields is displayed on the right side
-    And the section has a background image with dark overlay
-```
+### Requirement: Testimonials
 
-### Footer
+Statutory SHALL display client testimonial cards over a dark background image.
 
-```gherkin
-Feature: Footer
+#### Scenario: Client testimonial cards
 
-  Scenario: Footer with links and contact
-    Given the footer is visible
-    Then the brand "Statutory" is displayed
-    And three link columns are shown: "Explore", "Legal", "Company"
-    And a "Have a Questions?" column shows address, phone, and email
-    And a copyright line includes a link to Component Dock
-    And the footer background is dark (#1d2227)
-```
+- **WHEN** the testimonials section is visible
+- **THEN** three testimonial cards are displayed with client names, roles, and quotes
 
-## Verification checklist
+### Requirement: Appointment section
 
-- [ ] Navbar: dark, fixed, brand + 6 nav links, mobile hamburger
-- [ ] Hero: 600px height, dark overlay, heading, 2 CTA buttons
-- [ ] Intro strip: 4 dark boxes, left-to-right darkening gradient
-- [ ] About: split layout, heading, 4 feature items, light bg panel
-- [ ] Counter: 4 stat cards with animated numbers, background image
-- [ ] Practice areas: heading, 6 cards in grid
-- [ ] Case studies: heading, card grid with category tags
-- [ ] Testimonials: heading, carousel with navigation
-- [ ] Appointment: heading, 3 feature highlights, contact form, bg image
-- [ ] Footer: dark bg, 4 columns, Component Dock link
-- [ ] Fonts: Roboto loaded from Google Fonts
-- [ ] Colors: blue #007bff primary, gold #cbb88c accents, dark #1d2227 palette
-- [ ] No ColorLib references in app code
-- [ ] Footer links to componentdock.com
+Statutory SHALL display a contact form with feature highlights and a submit button.
+
+#### Scenario: Contact section with form
+
+- **WHEN** the appointment section is visible
+- **THEN** the heading reads "We Have Great Results"
+- **AND** a contact form with name, email, subject, and message fields is displayed
+
+### Requirement: Footer
+
+Statutory SHALL display a dark footer with brand, link columns, contact info, and Component Dock attribution.
+
+#### Scenario: Footer with links and contact
+
+- **WHEN** the footer is visible
+- **THEN** the brand "Statutory" is displayed
+- **AND** a link to Component Dock (https://www.componentdock.com/) is present
+- **AND** copyright text is shown
+
+### Requirement: Design tokens
+
+Statutory SHALL use Roboto font, blue #007bff primary, gold #cbb88c accents, and dark #1d2227 palette matching the original design.
+
+#### Scenario: Correct design tokens
+
+- **WHEN** the page renders
+- **THEN** the primary color is blue (#007bff)
+- **AND** accent color is gold (#cbb88c)
+- **AND** font family is Roboto
+- **AND** no ColorLib references exist in app source code
