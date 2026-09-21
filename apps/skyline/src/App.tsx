@@ -1,16 +1,17 @@
 import { useEffect } from 'react'
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
-import { About } from './components/About'
-import { Projects } from './components/Projects'
-import { Services } from './components/Services'
+import { Menu } from './components/Menu'
 import { Gallery } from './components/Gallery'
-import { Blog } from './components/Blog'
+import { Reservation } from './components/Reservation'
+import { ChefsQuotes } from './components/ChefsQuotes'
+import { FeaturedDishes } from './components/FeaturedDishes'
+import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Skyline — Architecture Template'
+    document.title = 'Skyline — Restaurant Template'
   }, [])
 
   return (
@@ -18,11 +19,12 @@ export function App() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <About />
-        <Projects />
-        <Services />
+        <Menu />
         <Gallery />
-        <Blog />
+        <Reservation />
+        <ChefsQuotes />
+        <FeaturedDishes />
+        <Contact />
       </main>
       <Footer />
     </div>

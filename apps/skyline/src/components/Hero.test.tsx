@@ -1,16 +1,28 @@
-import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { Hero } from './Hero'
+import { describe, it, expect } from 'vitest'
 
 describe('Hero', () => {
-  it('renders the eyebrow, headline, blurb, button, and hero image', () => {
+  it('renders the main heading', () => {
     render(<Hero />)
-    expect(screen.getByText(/Skyline/i)).toBeInTheDocument()
-    expect(
-      screen.getByRole('heading', { level: 1, name: /Properties Now In City/i }),
-    ).toBeInTheDocument()
-    expect(screen.getByText(/lorem ipsum dolor sit amet/i)).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /Learn More/i })).toBeInTheDocument()
-    expect(screen.getByRole('img', { name: /aerial view of a residential/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Skyline')
+  })
+
+  it('renders the subtitle', () => {
+    render(<Hero />)
+    expect(screen.getByText('Fine Dining Restaurant')).toBeInTheDocument()
+  })
+
+  it('renders a scroll-down link to menu', () => {
+    render(<Hero />)
+    const link = screen.getByRole('link', { name: /Scroll to menu/i })
+    expect(link).toHaveAttribute('href', '#menu')
+  })
+
+  it('has a decorative background image', () => {
+    const { container } = render(<Hero />)
+    const bg = container.querySelector('img[aria-hidden="true"]')
+    expect(bg).not.toBeNull()
+    expect(bg).toHaveAttribute('src', expect.stringContaining('picsum.photos'))
   })
 })

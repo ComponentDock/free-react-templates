@@ -1,33 +1,22 @@
-import { useEffect, useState } from 'react'
-import { Menu, X } from 'lucide-react'
-import { cn } from '@free-react-templates/ui'
+import { useState } from 'react'
+import { Menu as MenuIcon, X } from 'lucide-react'
 
 const links = [
   { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Blog', href: '#blog' },
+  { label: 'Menu', href: '#menu' },
+  { label: 'Gallery', href: '#gallery' },
   { label: 'Contact', href: '#contact' },
 ] as const
 
 export function Navbar() {
-  const [dark, setDark] = useState(false)
   const [open, setOpen] = useState(false)
 
-  useEffect(() => {
-    document.documentElement.classList.toggle('dark', dark)
-    return () => {
-      document.documentElement.classList.remove('dark')
-    }
-  }, [dark])
-
   return (
-    <header className="sticky top-0 z-50 border-b border-black/5 bg-white/95 backdrop-blur dark:border-white/10 dark:bg-gray-950/95">
+    <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/90 backdrop-blur transition-colors dark:border-gray-800 dark:bg-gray-950/90">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <a
           href="#home"
-          className="font-display text-2xl font-bold uppercase tracking-wide text-ink dark:text-white"
+          className="font-display text-xl font-bold uppercase tracking-[0.2em] text-ink dark:text-white"
         >
           Skyline<span className="text-brand">.</span>
         </a>
@@ -37,7 +26,7 @@ export function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="px-3 py-2 text-sm font-semibold uppercase tracking-wide text-ink/70 transition-colors hover:text-brand dark:text-white/70 dark:hover:text-brand"
+              className="px-3 py-2 text-sm font-medium uppercase tracking-wide text-mist transition-colors hover:text-brand dark:text-gray-300 dark:hover:text-brand"
             >
               {link.label}
             </a>
@@ -45,56 +34,45 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <button
-            type="button"
-            onClick={() => setDark((d) => !d)}
-            className="rounded-full border border-brand px-4 py-2 text-sm font-semibold text-brand transition-colors hover:bg-brand hover:text-white"
+          <a
+            href="#reservation"
+            className="hidden rounded bg-brand px-6 py-2 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-brand-dark lg:inline-block"
           >
-            {dark ? 'Light mode' : 'Dark mode'}
-          </button>
+            Book Table
+          </a>
 
           <button
             type="button"
-            aria-label="Open menu"
-            onClick={() => setOpen(true)}
-            className="rounded-full p-2 text-ink hover:bg-black/5 dark:text-white dark:hover:bg-white/10 lg:hidden"
+            onClick={() => setOpen((current) => !current)}
+            aria-label={open ? 'Close menu' : 'Open menu'}
+            aria-expanded={open}
+            className="flex h-10 w-10 items-center justify-center rounded border border-gray-300 text-mist lg:hidden dark:border-gray-700 dark:text-gray-300"
           >
-            <Menu className="h-6 w-6" aria-hidden="true" />
+            {open ? (
+              <X className="h-5 w-5" aria-hidden="true" />
+            ) : (
+              <MenuIcon className="h-5 w-5" aria-hidden="true" />
+            )}
           </button>
         </div>
       </div>
 
       {open && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-white lg:hidden dark:bg-gray-950">
-          <div className="flex items-center justify-between px-4 py-4 sm:px-6">
-            <span className="font-display text-2xl font-bold uppercase tracking-wide text-ink dark:text-white">
-              Skyline<span className="text-brand">.</span>
-            </span>
-            <button
-              type="button"
-              aria-label="Close menu"
+        <nav
+          aria-label="Mobile"
+          className="border-t border-gray-100 bg-white/95 px-4 py-3 dark:border-gray-800 dark:bg-gray-950/95 lg:hidden"
+        >
+          {links.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
               onClick={() => setOpen(false)}
-              className="rounded-full p-2 text-ink hover:bg-black/5 dark:text-white dark:hover:bg-white/10"
+              className="block py-2 text-sm font-medium uppercase tracking-wide text-mist transition-colors hover:text-brand dark:text-gray-300"
             >
-              <X className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          <nav id="mobile-menu" aria-label="Mobile menu" className="flex flex-col gap-2 px-6 py-4">
-            {links.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className={cn(
-                  'rounded-lg px-4 py-3 text-base font-semibold uppercase tracking-wide',
-                  'text-ink/80 hover:bg-black/5 dark:text-white/80 dark:hover:bg-white/10',
-                )}
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
-        </div>
+              {link.label}
+            </a>
+          ))}
+        </nav>
       )}
     </header>
   )

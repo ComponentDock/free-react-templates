@@ -1,28 +1,30 @@
-import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { App } from './App'
+import { describe, it, expect } from 'vitest'
 
 describe('App', () => {
-  it('sets the document title', () => {
+  it('renders all sections', () => {
     render(<App />)
-    expect(document.title).toBe('Skyline — Architecture Template')
+
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Skyline')
+    expect(screen.getByText(/Fine Dining Restaurant/i)).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /Our Menu/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /Gallery/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /Reserve a Table/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /Chef/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /Featured Dishes/i })).toBeInTheDocument()
+    expect(screen.getByText(/432 Wyandotte Ave/i)).toBeInTheDocument()
+    expect(screen.getByText(/Component Dock/i)).toBeInTheDocument()
   })
 
-  it('composes every section in the main landmark', () => {
+  it('sets the page title', () => {
     render(<App />)
-    expect(screen.getByRole('banner')).toBeInTheDocument()
-    expect(screen.getByRole('main')).toBeInTheDocument()
-    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
+    expect(document.title).toBe('Skyline — Restaurant Template')
+  })
 
-    expect(
-      screen.getByRole('heading', { level: 1, name: /Properties Now In City/i }),
-    ).toBeInTheDocument()
-    expect(
-      screen.getByRole('heading', { name: /We Are Leaders In Properties/i }),
-    ).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /Our Projects/i })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /We Are Leaders In Services/i })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /Luxuries Apartment/i })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /Our Blog/i })).toBeInTheDocument()
+  it('renders the Component Dock link in the footer', () => {
+    render(<App />)
+    const link = screen.getByRole('link', { name: /Component Dock/i })
+    expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
   })
 })

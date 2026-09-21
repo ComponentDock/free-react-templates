@@ -1,49 +1,53 @@
-import { describe, expect, it } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { Navbar } from './Navbar'
+import { describe, it, expect } from 'vitest'
 
 describe('Navbar', () => {
-  it('renders the site name, links, and dark-mode toggle', () => {
+  it('renders the logo', () => {
     render(<Navbar />)
-    expect(screen.getByRole('link', { name: /Skyline/i })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /Home/i })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /About/i })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /Services/i })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /Projects/i })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /Blog/i })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /Contact/i })).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: /dark mode/i })).toBeInTheDocument()
+    expect(screen.getByText(/Skyline/)).toBeInTheDocument()
   })
 
-  it('toggles the dark class on the document root', async () => {
+  it('renders navigation links', () => {
+    render(<Navbar />)
+    expect(screen.getByRole('link', { name: /Home/i })).toHaveAttribute('href', '#home')
+    expect(screen.getByRole('link', { name: /Menu/i })).toHaveAttribute('href', '#menu')
+    expect(screen.getByRole('link', { name: /Gallery/i })).toHaveAttribute('href', '#gallery')
+    expect(screen.getByRole('link', { name: /Contact/i })).toHaveAttribute('href', '#contact')
+  })
+
+  it('renders the Book Table CTA', () => {
+    render(<Navbar />)
+    expect(screen.getByRole('link', { name: /Book Table/i })).toHaveAttribute(
+      'href',
+      '#reservation',
+    )
+  })
+
+  it('toggles mobile menu open and closed', async () => {
     const user = userEvent.setup()
     render(<Navbar />)
-    const toggle = screen.getByRole('button', { name: /dark mode/i })
+
+    const toggle = screen.getByRole('button', { name: /Open menu/i })
     await user.click(toggle)
-    expect(document.documentElement.classList.contains('dark')).toBe(true)
-    expect(screen.getByRole('button', { name: /light mode/i })).toBeInTheDocument()
-    await user.click(toggle)
-    expect(document.documentElement.classList.contains('dark')).toBe(false)
+
+    expect(screen.getByRole('button', { name: /Close menu/i })).toBeInTheDocument()
+    expect(screen.getByLabelText('Mobile')).toBeInTheDocument()
+
+    await user.click(screen.getByRole('button', { name: /Close menu/i }))
+    expect(screen.queryByLabelText('Mobile')).not.toBeInTheDocument()
   })
 
-  it('opens and closes the mobile menu', async () => {
+  it('closes mobile menu when a link is clicked', async () => {
     const user = userEvent.setup()
     render(<Navbar />)
-    expect(document.getElementById('mobile-menu')).toBeNull()
-    await user.click(screen.getByRole('button', { name: /open menu/i }))
-    expect(document.getElementById('mobile-menu')).not.toBeNull()
-    await user.click(screen.getByRole('button', { name: /close menu/i }))
-    expect(document.getElementById('mobile-menu')).toBeNull()
-  })
 
-  it('closes the mobile menu when a mobile link is clicked', async () => {
-    const user = userEvent.setup()
-    render(<Navbar />)
-    await user.click(screen.getByRole('button', { name: /open menu/i }))
-    const blogLinks = screen.getAllByRole('link', { name: /Blog/i })
-    const mobileLink = blogLinks[blogLinks.length - 1]!
-    await user.click(mobileLink)
-    expect(document.getElementById('mobile-menu')).toBeNull()
+    await user.click(screen.getByRole('button', { name: /Open menu/i }))
+    const mobileNav = screen.getByLabelText('Mobile')
+    const mobileHomeLink = within(mobileNav).getByRole('link', { name: /Home/i })
+    await user.click(mobileHomeLink)
+
+    expect(mobileNav).not.toBeInTheDocument()
   })
 })
