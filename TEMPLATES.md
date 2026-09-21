@@ -1837,7 +1837,7 @@
 - [x] **Dentist** · [dentalink](https://dentalink.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/dentist/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-free-template-1.jpg)
 - [x] **Diva** — [colorlib](https://colorlib.com/wp/template/diva/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/diva-free-template.jpg) · [rouge](https://rouge.free.componentdock.com)
 - [x] **Docmed** — [colorlib](https://colorlib.com/wp/template/docmed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/docmed-free-template.jpg) · [salus](https://salus.free.componentdock.com)
-- [~] **Doyoga** — [colorlib](https://colorlib.com/wp/template/doyoga/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/doyoga-free-template.jpg)
+- [x] **Doyoga** — [colorlib](https://colorlib.com/wp/template/doyoga/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/doyoga-free-template.jpg) · [asana](https://asana.free.componentdock.com)
 - [ ] **Drpro** — [colorlib](https://colorlib.com/wp/template/drpro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/drpro-free-template-1.jpg)
 - [x] **Endurance** — [colorlib](https://colorlib.com/wp/template/endurance/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/endurance-free-template.jpg) · [vigor](https://free-react-templates-vigor.surge.sh)
 - [x] **Fitfloss** — [colorlib](https://colorlib.com/wp/template/fitfloss/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitfloss-free-template.jpg) · [swole](https://swole.free.componentdock.com)
