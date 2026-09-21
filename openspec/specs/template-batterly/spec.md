@@ -1,167 +1,319 @@
-# Template: Batterly (Bakery / Cake Shop)
+# Template: Batterly (Cake & Bakery Shop)
 
 ## Purpose
 
-Recreation of ColorLib's "Cakes" template for a bakery / cake-shop website.
+Batterly is a single-page bakery/cake shop website in the
+free-react-templates monorepo. It is an original React recreation of the
+ColorLib "Cake" free template (source:
+https://colorlib.com/wp/template/cake/), built under a DIFFERENT name
+(**Batterly**), with the monorepo stack: Vite + React 19 + Tailwind
+CSS 4 + TypeScript.
 
-- **ColorLib source:** https://colorlib.com/wp/template/cakes/
-- **Preview URL:** https://preview.colorlib.com/theme/cakes/
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/cakes-colorlib-template.jpg
-- **Stack:** React 19 + Vite + Tailwind CSS 4 + TypeScript
-- **New name:** `batterly` (apps/batterly, @free-react-templates/batterly)
-- **Deploy URL:** https://batterly.free.componentdock.com
+The original is a Bootstrap-based bakery shop template with a hero slider,
+about section with progress bars, product category carousel, product grid,
+class registration form with video, team grid, testimonial carousel,
+Instagram photo grid, map section, and a three-column footer. The page
+uses an orange (`#f08632`) brand with dark headings (`#111111`),
+"Playfair Display" serif for headings and "Montserrat" sans-serif for body
+text.
 
-## Design tokens (from preview CSS)
+## Naming
 
-| Token                | Value                                                 | Notes                                                                 |
-| -------------------- | ----------------------------------------------------- | --------------------------------------------------------------------- |
-| Brand color          | `#F04506`                                             | Orange-red, used for buttons, accents, links, subtitles, hover states |
-| Brand gradient       | `linear-gradient(to left, #F04506, #d83e06, #F04506)` | Primary `.btn` background                                             |
-| Card background      | `#FFF5F2`                                             | Warm pink-cream for product cards                                     |
-| Footer background    | `#FFF7F3`                                             | Warm cream                                                            |
-| Body text            | `#000` / `#5E5E5E`                                    | Headings black, body muted grey                                       |
-| Section title span   | `color: #F04506`, `letter-spacing: 0.2em`             | Subtitle/accent text above headings                                   |
-| Body font            | `"DM Sans", sans-serif`                               | 16px body text                                                        |
-| Heading font         | `"Quicksand", sans-serif`                             | h1–h6, buttons, nav                                                   |
-| Decorative font      | `"Lobster", cursive`                                  | Hero watermark "Delicious" text                                       |
-| Button border-radius | `30px`                                                | All primary buttons are pill-shaped                                   |
-| Button shadow        | `0px 17px 27px rgba(240,69,6,0.27)`                   | Orange-tinted drop shadow                                             |
-| Section padding      | `110px` top/bottom                                    | `.section-padding40`                                                  |
-| Card border-radius   | `0 0 60px 0`                                          | Bottom-right rounded corners on product cards                         |
+The ColorLib source name "Cake" is FORBIDDEN as the app name. **Batterly**
+is the new, original name — kebab-case, no collision with `apps/`,
+`openspec/specs/`, or existing TEMPLATES.md entries (verified: zero hits
+for `batterly`). Source slug: `cake`, preview URL:
+https://preview.colorlib.com/theme/cake/
+
+## Design reference (replication findings)
+
+- **Original:** ColorLib "Cake" (page title: "Cake | Template").
+  Single-page bakery/cake shop e-commerce template.
+- **Live preview — REACHABLE (verified by curl fetch):**
+  `https://preview.colorlib.com/theme/cake/` returns 200. Stylesheets:
+  `css/style.css` (main custom styles) + Bootstrap CSS + several
+  plugin CSS (owl carousel, slicknav, flaticon, magnific popup,
+  nice-select, elegant-icons, barfiller).
+- **Screenshot — referenced from TEMPLATES.md** (vision analysis
+  unavailable for external image; design confirmed from DOM + CSS).
+
+### Live DOM structure (from fetched HTML)
+
+**Section order (top to bottom):**
+
+1. **Header/Top Bar** — top bar with currency selector (USD/EUR),
+   language selector (ENG/Spanish), Sign in link. Below: centered logo,
+   main nav (Home, About, Shop, Pages dropdown, Blog, Contact),
+   search icon, heart icon, cart icon with count. Mobile hamburger.
+2. **Hero Slider** — full-width slider with background image
+   (`img/hero/hero-1.jpg`), centered text: heading "Making your life
+   sweeter one bite at a time!" and CTA button "Our cakes" (primary-btn).
+   Owl carousel with navigation arrows.
+3. **About Section** — two-column layout. Left: section subtitle "About
+   Cake shop", heading "Cakes and bakes from the house of Queens!",
+   description paragraph about Jordanian brand. Right: three progress
+   bars (Cake design 95%, Cake Class 80%, Cake Recipes 90%) using
+   barfiller jQuery plugin. Light background.
+4. **Categories Section** — horizontal carousel of category cards,
+   each with an icon and label: Cupcake, Butter, Red Velvet, Biscuit,
+   Donut. Hover effect with brand color fill. Light background.
+5. **Product Section** — 4-column grid of 8 product cards. Each card
+   has a background image, category label badge, product name link,
+   price, and "Add to cart" button. Products: Dozen Cupcakes $32,
+   Cookies and Cream $30, Gluten Free Mini Dozen $31, Cookie Dough
+   $25, Vanilla Salted Caramel $5, German Chocolate $14, Dulce De
+   Leche $32, Mississippi Mud $8.
+6. **Class Section** — two-column: left has registration form (Name,
+   Phone, class type dropdown, requirements textarea, "registration"
+   submit button). Right has a video thumbnail with YouTube play button
+   overlay. Background image on video side.
+7. **Team Section** — heading "Sweet Baker" with "Join Us" CTA button.
+   4-column grid of team member cards with background photo, name
+   (all "Randy Butler"), role ("Decorater"), and social icons
+   (facebook, twitter, instagram, youtube). Overlay on hover.
+8. **Testimonial Section** — centered heading "Our client say" with
+   subtitle "Testimonial". Owl carousel of testimonials, each with
+   author photo, author name + city, star rating (4.5 stars), and
+   quote text. Alternating between two testimonials.
+9. **Instagram Section** — two-column: left has heading "Sweet moments
+   are saved as memories." with subtitle "Follow us on instagram" and
+   @sweetcake handle. Right has 6 instagram photo thumbnails in a
+   3x2 grid. Light background.
+10. **Map Section** — overlay card with contact info (city, address,
+    email, phone) on top of a Google Maps iframe. Dark overlay on
+    the map area.
+11. **Footer** — background image (`img/footer-bg.jpg`), three columns:
+    Working Hours schedule, logo + about text + social icons, Newsletter
+    subscription form. Bottom copyright bar with Privacy Policy, Terms,
+    Site Map links.
+
+### Design tokens (extracted from style.css)
+
+| Token                | Value                            | Notes                                                         |
+| -------------------- | -------------------------------- | ------------------------------------------------------------- |
+| `--color-brand`      | `#f08632`                        | Primary orange — section-title spans, hover states, primary   |
+|                      |                                  | button bg, category hover fill, testimonial dots active        |
+| `--color-heading`    | `#111111`                        | Dark near-black for h2 headings, hero text, nav links         |
+| `--color-body`       | `#111111` with opacity           | Body text, muted with `#11111194` for lighter text            |
+| `--color-muted`      | `#888888` / `#999` / `#a4a4a4`  | Secondary text, footer widget text, cart price                 |
+| `--color-border`     | `#b7b7b7` / `#e1e1e1` / `#bababa` | Borders, dividers, progress bar track                       |
+| `--color-white`      | `#ffffff`                        | Page background, card backgrounds, button text                |
+| `--color-black`      | `#000000`                        | Footer overlay, site-btn background                           |
+| `--color-light-bg`   | `#fdf3ea`                        | Warm cream/peach background for class section                  |
+| `--font-heading`     | `"Playfair Display", serif`      | Serif font for headings — italic style, 400-700 weight        |
+| `--font-body`        | `"Montserrat", sans-serif`       | Sans-serif for body text, nav, buttons — 300-600 weight       |
+| `--btn-radius`       | `60px`                           | site-btn (form submit) — pill-shaped / fully rounded          |
+| `--btn-primary-bg`   | `#f08632`                        | primary-btn default bg (orange)                               |
+| `--btn-primary-text` | `#ffffff`                        | primary-btn text color                                        |
+| `--btn-dark-bg`      | `#111111`                        | site-btn bg (dark), hero overlay                              |
+| `--btn-outline`      | `border: 2px solid #b7b7b7`      | team "Join Us" button — outlined style                        |
+| `--hero-overlay`     | `rgba(17,17,17,0.5)`             | Hero slider dark semi-transparent overlay                     |
+| `--section-radius`   | `50%`                            | Category item icon circles, owl carousel nav buttons          |
 
 ## Requirements
 
-### Requirement: Navigation bar
+### Requirement: Header / Navigation Bar
 
-The system SHALL render a sticky white header with the site name "Batterly", section links (Home, Product, About, Blog, Contact), a phone number link, an "Order Online" pill button with orange border, and a hamburger toggle that opens a mobile menu on small screens.
+The system SHALL render a sticky navigation bar with a top utility bar
+and a main navigation row.
 
-#### Scenario: Desktop navigation displays all links
+#### Scenario: Top bar
 
-- **WHEN** the page loads on a desktop viewport
-- **THEN** I SHALL see navigation links for Home, Product, About, Blog, and Contact
-- **AND** I SHALL see a phone number "+10 (56) 745 3095"
-- **AND** I SHALL see an "Order Online" button
+- **GIVEN** the Batterly app is rendered
+- **THEN** a top bar SHALL display currency selector (USD default),
+  language selector (ENG default), and a Sign in link
+- **AND** search icon, heart (wishlist) icon, and cart icon with
+  count badge SHALL appear on the right
 
-#### Scenario: Mobile menu toggle
+#### Scenario: Main nav
 
-- **WHEN** I click the hamburger menu button
-- **THEN** the mobile navigation menu SHALL become visible
-- **AND** the button SHALL change to a close icon
+- **GIVEN** the Batterly app is rendered
+- **THEN** the logo SHALL be centered between the nav links
+- **AND** nav links SHALL be: Home, About, Shop, Pages (dropdown with
+  Shop Details, Shopping Cart, Checkout, Wishlist, Class, Blog Details),
+  Blog, Contact
+- **AND** the navbar SHALL become sticky on scroll
+- **AND** a hamburger menu SHALL appear on mobile viewports
 
-#### Scenario: Mobile menu closes on link click
+### Requirement: Hero Slider
 
-- **WHEN** I open the mobile menu and click a navigation link
-- **THEN** the mobile menu SHALL close
+The system SHALL render a full-width hero slider with background images,
+heading text, and a CTA button.
 
-### Requirement: Hero section
+#### Scenario: Hero content
 
-The system SHALL render a hero section with a decorative "Delicious" watermark text in Lobster font, the heading "Delicious Cake For Everyone", a description paragraph, an "Explore Menu" CTA button with orange gradient, and a hero image.
+- **GIVEN** the Batterly app is rendered
+- **THEN** the hero slider SHALL display with a background image and
+  a dark semi-transparent overlay (`rgba(17,17,17,0.5)`)
+- **AND** the heading "Making your life sweeter one bite at a time!"
+  SHALL be rendered in Playfair Display italic, 46px, dark color
+- **AND** a primary CTA button "Our cakes" SHALL link to the product area
+- **AND** slider navigation arrows SHALL be circular (50% border-radius)
 
-#### Scenario: Hero displays heading and CTA
+### Requirement: About Section
 
-- **WHEN** the page loads
-- **THEN** I SHALL see the heading "Delicious Cake For Everyone"
-- **AND** I SHALL see an "Explore Menu" button
+The system SHALL render an about section with descriptive text and
+animated progress bars.
 
-#### Scenario: Hero has decorative watermark
+#### Scenario: About content
 
-- **WHEN** the page loads
-- **THEN** I SHALL see the decorative text "Delicious" styled with a cursive font
+- **GIVEN** the Batterly app is rendered
+- **THEN** the section SHALL have subtitle "About Cake shop" in
+  brand orange (`#f08632`), uppercase, letter-spacing 4px
+- **AND** heading "Cakes and bakes from the house of Queens!" in
+  Playfair Display serif
+- **AND** a description paragraph about the bakery brand
 
-### Requirement: Popular items section
+#### Scenario: Progress bars
 
-The system SHALL render a product section with the subtitle "Most Popular", the heading "Our Exclusive Cakes", and at least 3 product cards each showing a cake image, name, description, price, and "Order Now" button.
+- **GIVEN** the Batterly app is rendered
+- **THEN** three progress bars SHALL display: Cake design (95%),
+  Cake Class (80%), Cake Recipes (90%)
+- **AND** each bar SHALL animate fill on scroll/viewport entry
 
-#### Scenario: Product cards display cake information
+### Requirement: Categories Section
 
-- **WHEN** the page loads
-- **THEN** I SHALL see at least 3 product cards
-- **AND** each card SHALL show a cake name, description, price, and order button
+The system SHALL render a horizontal carousel of cake category cards.
 
-### Requirement: About section
+#### Scenario: Category cards
 
-The system SHALL render a split-layout about section with an image on the left, the subtitle "Fresh & Delicious", the heading "A Simple Way to Eating Delicious", a description paragraph, and an "Our Story" CTA button.
+- **GIVEN** the Batterly app is rendered
+- **THEN** a carousel SHALL display category cards: Cupcake, Butter,
+  Red Velvet, Biscuit, Donut (minimum 5)
+- **AND** each card SHALL have an icon and label text
+- **AND** on hover, the card background SHALL fill with brand orange
+  (`#f08632`) and the icon/text SHALL turn white
+- **AND** category icon containers SHALL be circular (50% radius)
 
-#### Scenario: About section shows bakery story
+### Requirement: Product Grid
 
-- **WHEN** the page loads
-- **THEN** I SHALL see the heading "A Simple Way to Eating Delicious"
-- **AND** I SHALL see an "Our Story" button
-- **AND** I SHALL see a bakery image
+The system SHALL render a product grid with 8 cake product cards.
 
-### Requirement: Services / features section
+#### Scenario: Product cards
 
-The system SHALL render a features section with the subtitle "Our Features", the heading "Quality is Our First Priority", and 3 feature cards with icons, titles, and descriptions.
+- **GIVEN** the Batterly app is rendered
+- **THEN** a 4-column grid SHALL display 8 product cards
+- **AND** each card SHALL have a background image with category label
+  badge, product name link, price, and "Add to cart" button
+- **AND** products SHALL include: Dozen Cupcakes ($32), Cookies and
+  Cream ($30), Gluten Free Mini Dozen ($31), Cookie Dough ($25),
+  Vanilla Salted Caramel ($5), German Chocolate ($14), Dulce De
+  Leche ($32), Mississippi Mud ($8)
+- **AND** placeholder images SHALL use `https://picsum.photos/seed/batterly-<n>/400/400`
 
-#### Scenario: Features section displays bakery services
+### Requirement: Class Registration Section
 
-- **WHEN** the page loads
-- **THEN** I SHALL see at least 3 feature cards with icons and descriptions
-- **AND** each card SHALL have a title and description text
+The system SHALL render a class registration form with a video thumbnail.
 
-### Requirement: Video section
+#### Scenario: Registration form
 
-The system SHALL render a full-width dark video section with a background image and a centered play button overlay.
+- **GIVEN** the Batterly app is rendered
+- **THEN** the section SHALL have subtitle "Class cakes" and heading
+  "Made from your own hands"
+- **AND** the form SHALL contain: Name input, Phone input, class type
+  dropdown (Studying/Writing/Reading Class), requirements textarea,
+  and a "registration" submit button (pill-shaped, `border-radius: 60px`)
+- **AND** a video thumbnail SHALL display on the right with a play button
+  overlay linking to a YouTube video
+- **AND** the section background SHALL use warm cream (`#fdf3ea`)
 
-#### Scenario: Video section has play button
+### Requirement: Team Section
 
-- **WHEN** the page loads
-- **THEN** I SHALL see a play button in the video section
-- **AND** the button SHALL be clickable
+The system SHALL render a team grid with member cards.
 
-### Requirement: Testimonials section
+#### Scenario: Team grid
 
-The system SHALL render a testimonials section with the subtitle "Testimonial", the heading "What Customers Say", and at least 2 testimonial cards each with a star rating, quote, author avatar, name, and role.
+- **GIVEN** the Batterly app is rendered
+- **THEN** the heading "Sweet Baker" SHALL be displayed with a "Join Us"
+  outlined button (border: 2px solid `#b7b7b7`, transparent bg)
+- **AND** 4 team cards SHALL display in a row, each with a background
+  photo, name, role ("Decorater"), and social icons (facebook, twitter,
+  instagram, youtube)
+- **AND** on hover, a dark overlay SHALL reveal the social icons
 
-#### Scenario: Testimonials show customer reviews
+### Requirement: Testimonial Section
 
-- **WHEN** the page loads
-- **THEN** I SHALL see at least 2 testimonial cards
-- **AND** each card SHALL show a quote, author name, and role
+The system SHALL render a testimonial carousel with star ratings.
 
-### Requirement: Instagram feed section
+#### Scenario: Testimonials
 
-The system SHALL render a full-width Instagram gallery section with multiple image tiles and a hover overlay.
+- **GIVEN** the Batterly app is rendered
+- **THEN** the section SHALL have subtitle "Testimonial" and heading
+  "Our client say"
+- **AND** each testimonial SHALL show author photo, author name + city,
+  4.5-star rating, and quote text
+- **AND** carousel dots SHALL allow navigation between testimonials
+- **AND** at least 2 distinct testimonials SHALL alternate
 
-#### Scenario: Instagram feed displays images
+### Requirement: Instagram Section
 
-- **WHEN** the page loads
-- **THEN** I SHALL see multiple image tiles in the Instagram section
-- **AND** all images SHALL have alt text
+The system SHALL render an Instagram photo grid with a call-to-action.
+
+#### Scenario: Instagram grid
+
+- **GIVEN** the Batterly app is rendered
+- **THEN** the left column SHALL show heading "Sweet moments are saved
+  as memories." with subtitle "Follow us on instagram" and handle
+  "@sweetcake"
+- **AND** the right column SHALL display a 3x2 grid of 6 instagram
+  photo thumbnails
+- **AND** placeholder images SHALL use `https://picsum.photos/seed/batterly-ig-<n>/400/400`
+
+### Requirement: Map / Contact Section
+
+The system SHALL render a contact info card overlaid on a map.
+
+#### Scenario: Map contact card
+
+- **GIVEN** the Batterly app is rendered
+- **THEN** a card SHALL overlay the map with city name, address,
+  email, and phone number
+- **AND** a Google Maps embed (or static map placeholder) SHALL
+  display behind the card
 
 ### Requirement: Footer
 
-The system SHALL render a 4-column footer with a warm cream background containing a logo and description, social media icons, quick navigation links, cake variety links, contact information, a copyright line, and a link to Component Dock.
+The system SHALL render a three-column footer with a bottom bar.
 
-#### Scenario: Footer shows site information
+#### Scenario: Footer content
 
-- **WHEN** the page loads
-- **THEN** I SHALL see a footer with 4 columns
-- **AND** I SHALL see quick navigation links
-- **AND** I SHALL see contact information
+- **GIVEN** the Batterly app is rendered
+- **THEN** the footer SHALL have a background image with dark overlay
+- **AND** three columns SHALL display: Working Hours schedule, logo +
+  about text + social icons (facebook, twitter, instagram, youtube),
+  Newsletter subscription form
+- **AND** a bottom copyright bar SHALL include Privacy Policy, Terms &
+  Conditions, and Site Map links
+- **AND** the Colorlib attribution SHALL be replaced with a link to
+  https://www.componentdock.com/ branded as "Component Dock"
 
-#### Scenario: Footer has Component Dock attribution
+### Requirement: Accessibility and Semantics
 
-- **WHEN** I scroll to the footer
-- **THEN** I SHALL see a link to "https://www.componentdock.com/"
-- **AND** it SHALL be labeled "Component Dock"
+The system SHALL expose accessible semantics throughout.
 
-### Requirement: Accessibility
+#### Scenario: Semantics
 
-The system SHALL use semantic HTML elements and ensure all images have alt text and all interactive elements are keyboard-focusable.
+- **GIVEN** the Batterly app is rendered
+- **THEN** the navbar SHALL use `<nav>` with semantic `<ul>`/`<li>` links
+- **AND** all sections SHALL use semantic heading hierarchy (h2 for
+  section headings)
+- **AND** form inputs SHALL have associated labels
+- **AND** interactive elements SHALL have focus-visible rings
+- **AND** images SHALL have alt text
+- **AND** the slider SHALL have appropriate ARIA attributes for
+  carousel semantics
 
-#### Scenario: Page is accessible
+## Verification checklist
 
-- **WHEN** the page loads
-- **THEN** all images SHALL have alt text
-- **AND** all interactive elements SHALL be keyboard-focusable
-- **AND** the page SHALL use semantic HTML elements (header, main, section, footer, nav)
-
-### Requirement: No ColorLib references in app code
-
-The system SHALL NOT contain any references to ColorLib in application source files, comments, or data. Provenance lives only in the spec and TEMPLATES.md.
-
-#### Scenario: Clean source code
-
-- **WHEN** I inspect any file in apps/batterly/
-- **THEN** I SHALL NOT find any mention of "colorlib" or "ColorLib"
+- [ ] `npm run verify:app -- batterly` green: typecheck -> lint -> vitest
+      (100% coverage) -> build (per-app gate).
+- [ ] Visual match vs the live preview at
+      https://preview.colorlib.com/theme/cake/: hero slider, about
+      with progress bars, category carousel, product grid, class form,
+      team grid, testimonial carousel, instagram grid, map, footer.
+- [ ] Design tokens: brand orange `#f08632`, dark heading `#111111`,
+      heading font Playfair Display serif, body font Montserrat
+      sans-serif, pill buttons `border-radius: 60px`.
+- [ ] Responsive check at 768px (single-column layout, no overflow).
+- [ ] No ColorLib references in any app file; footer links
+      https://www.componentdock.com/.
