@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Loanpilot brand palette — recreated from the Loanday finance template.
+     Primary green #88C417, dark navy #182143. */
+  --color-primary: #88c417;
+  --color-primary-hover: #78b213;
+  --color-navy: #182143;
+  --color-navy-alt: #223060;
+  --color-dark-gray: #323232;
+  --color-body-text: #111111;
+  --color-body-text-secondary: #5c5c5c;
+  --color-light-bg: #f6f7f9;
+  --color-input-bg: #f6f6f6;
+
+  /* Lato — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
