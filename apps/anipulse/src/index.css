@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Anipulse brand palette — dark navy with red accent, design tokens from
+     the source template's stylesheet. */
+  --color-brand: #e53637;
+  --color-brand-dark: #ca2027;
+  --color-brand-hover: #ff4343;
+  --color-navy: #0b0c2a;
+  --color-navy-deep: #070720;
+  --color-navy-card: #0e1035;
+  --color-navy-card-hover: #141640;
+  --color-text-white: #ffffff;
+  --color-text-light: #b7b7b7;
+  --color-text-muted: #a6a6a6;
+  --color-badge-dark: #3d3d3d;
+  --color-accent-gold: #e89f12;
+  --color-border-dark: #1a1c4a;
+
+  /* Oswald for headings, Mulish for body — loaded via Google Fonts
+     <link> in index.html. */
+  --font-heading: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+}
