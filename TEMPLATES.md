@@ -1826,7 +1826,7 @@
 
 - [x] **Activitar** — [colorlib](https://colorlib.com/wp/template/activitar/) · [sprintly](https://sprintly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/activitar-free-template.jpg)
 - [x] **Acupuncture** — [colorlib](https://colorlib.com/wp/template/acupuncture/) · [needlecraft](https://needlecraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/acupuncture-free-template.jpg)
-- [~] **Ahana** — [colorlib](https://colorlib.com/wp/template/ahana/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ahana-free-template.jpg)
+- [x] **Ahana** — [colorlib](https://colorlib.com/wp/template/ahana/) · [aurae](https://free-react-templates-aurae.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ahana-free-template.jpg)
 - [ ] **Bodyfit** — [colorlib](https://colorlib.com/wp/template/bodyfit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bodyfit-free-template-1.jpg)
 - [ ] **Chiropractic** — [colorlib](https://colorlib.com/wp/template/chiropractic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/chiropractic-free-template.jpg)
 - [ ] **Crossbody** — [colorlib](https://colorlib.com/wp/template/crossbody/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/crossbody-free-template.jpg)
