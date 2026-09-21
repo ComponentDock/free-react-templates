@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Sartorial brand palette — recreated from the ColorLib "Menztailor" design
+     (css/style.css): gold #c6a16e accents/buttons, dark #0b1416 body-bg,
+     headings #0b1c39, body text #96989a. */
+  --color-brand: #c6a16e;
+  --color-brand-dark: #b99562;
+
+  /* Ink — dark headings (#0b1c39 from the original). */
+  --color-ink: #0b1c39;
+  --color-ink-dark: #071224;
+
+  /* Midnight — dark body background (#0b1416 from the original). */
+  --color-midnight: #0b1416;
+
+  /* Soapstone — light section background. */
+  --color-paper: #ffffff;
+
+  /* Mist — muted body text (#96989a from the original). */
+  --color-mist: #96989a;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the gold. */
+  --color-primary-50: #faf6f0;
+  --color-primary-100: #f3e8d6;
+  --color-primary-200: #e8d2b0;
+  --color-primary-300: #dbb885;
+  --color-primary-400: #d0a164;
+  --color-primary-500: #c6a16e;
+  --color-primary-600: #b99562;
+  --color-primary-700: #9a7a50;
+  --color-primary-800: #7d6240;
+  --color-primary-900: #665035;
+
+  /* Original fonts: "Josefin Sans" (headings) + "Montserrat" (body)
+     + "Great Vibes" (accent/script). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Great Vibes', cursive;
+}
