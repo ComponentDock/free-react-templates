@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Needlecraft brand — teal-green #2fc4b2 from the Acupuncture design */
+  --color-brand: #2fc4b2;
+  --color-brand-dark: #26a899;
+
+  /* Ink — dark text #364d59 */
+  --color-ink: #364d59;
+  --color-ink-dark: #2a3d47;
+
+  /* Paper — light section background #f8f9fa */
+  --color-paper: #f8f9fa;
+
+  /* Mist — muted body text */
+  --color-mist: #777777;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve to teal */
+  --color-primary-50: #e8faf7;
+  --color-primary-100: #c5f2eb;
+  --color-primary-200: #9ee9de;
+  --color-primary-300: #6fddd0;
+  --color-primary-400: #4ad2c4;
+  --color-primary-500: #2fc4b2;
+  --color-primary-600: #26a899;
+  --color-primary-700: #1f8c80;
+  --color-primary-800: #197168;
+  --color-primary-900: #135a54;
+
+  /* Fonts */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
