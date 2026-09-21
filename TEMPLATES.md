@@ -1832,7 +1832,7 @@
 - [x] **Crossbody** — [colorlib](https://colorlib.com/wp/template/crossbody/) · [ironpulse](https://ironpulse.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/crossbody-free-template.jpg)
 - [x] **Crossfit** — [colorlib](https://colorlib.com/wp/template/crossfit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/crossfit-free-template.jpg) · [fitforge](https://fitforge.free.componentdock.com)
 - [x] **Crossfit 2** — [colorlib](https://colorlib.com/wp/template/crossfit-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/crossfit2-free-template.jpg) · [barbell](https://barbell.free.componentdock.com)
-- [ ] **Crossfits** — [colorlib](https://colorlib.com/wp/template/crossfits/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/crossfits-free-template.jpg)
+- [~] **Crossfits** — [colorlib](https://colorlib.com/wp/template/crossfits/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/crossfits-free-template.jpg)
 - [x] **Dazko** — [colorlib](https://colorlib.com/wp/template/dazko/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dazko-free-template.jpg) · [kinesis](https://kinesis.free.componentdock.com)
 - [x] **Dentist** · [dentalink](https://dentalink.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/dentist/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-free-template-1.jpg)
 - [x] **Diva** — [colorlib](https://colorlib.com/wp/template/diva/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/diva-free-template.jpg) · [rouge](https://rouge.free.componentdock.com)
