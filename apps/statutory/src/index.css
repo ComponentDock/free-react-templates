@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Statutory brand palette — recreated from the ColorLib "Lawfirm" design
+     (css/style.css): blue #007bff primary buttons, gold #cbb88c accents,
+     dark #1d2227 palette for intro strip/hero overlay/footer. */
+
+  /* Primary blue (#007bff) — buttons, links. */
+  --color-brand: #007bff;
+  --color-brand-dark: #0069d9;
+
+  /* Gold accent (#cbb88c) — border highlights, button primary override. */
+  --color-gold: #cbb88c;
+
+  /* Dark palette for intro boxes (left-to-right darkening). */
+  --color-dark-1: #1d2227;
+  --color-dark-2: #161a1e;
+  --color-dark-3: #121518;
+  --color-dark-4: #0e1013;
+
+  /* Paper — light section background (#f5f4f0). */
+  --color-paper: #f5f4f0;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the blue. */
+  --color-primary-50: #e7f3ff;
+  --color-primary-100: #cde5ff;
+  --color-primary-200: #99cbff;
+  --color-primary-300: #66b0ff;
+  --color-primary-400: #3396ff;
+  --color-primary-500: #007bff;
+  --color-primary-600: #0069d9;
+  --color-primary-700: #0052b3;
+  --color-primary-800: #003d8c;
+  --color-primary-900: #002766;
+
+  /* Font: Roboto (from the original). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
