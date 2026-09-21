@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* GritBox brand palette — vibrant orange primary, warm near-black dark. */
+  --color-brand: #fd7e14;
+  --color-brand-dark: #e86e0a;
+
+  /* Dark backgrounds. */
+  --color-dark: #1e1e1c;
+  --color-darker: #111110;
+
+  /* Light section bg. */
+  --color-cream: #f4f4f4;
+
+  /* Body text. */
+  --color-ink: #000000;
+
+  /* Muted text. */
+  --color-mist: rgba(0, 0, 0, 0.6);
+
+  /* Paper — white background. */
+  --color-paper: #ffffff;
+
+  /* Orange primary scale so shared ui Button/ButtonLink `primary` variants resolve correctly. */
+  --color-primary-50: #fff4e6;
+  --color-primary-100: #ffe8cc;
+  --color-primary-200: #ffd099;
+  --color-primary-300: #ffb366;
+  --color-primary-400: #fd9644;
+  --color-primary-500: #fd7e14;
+  --color-primary-600: #e86e0a;
+  --color-primary-700: #cc5e08;
+  --color-primary-800: #a64b06;
+  --color-primary-900: #803a04;
+
+  /* Display font: Amatic SC from Google Fonts. */
+  --font-display: 'Amatic SC', cursive;
+
+  /* Body font: Work Sans from Google Fonts. */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
