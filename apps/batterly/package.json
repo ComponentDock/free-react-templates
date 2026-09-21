@@ -27,7 +27,8 @@
     "jsdom": "latest",
     "tailwindcss": "latest",
     "typescript": "latest",
-    "vite": "latest"
+    "vite": "latest",
+    "vitest": "latest"
   },
   "homepage": "https://batterly.free.componentdock.com"
 }

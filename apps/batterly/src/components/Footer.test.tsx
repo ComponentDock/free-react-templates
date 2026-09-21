@@ -1,44 +1,69 @@
+import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { describe, expect, it } from 'vitest'
+import userEvent from '@testing-library/user-event'
 import { Footer } from './Footer'
 
 describe('Footer', () => {
-  it('renders 4-column layout with headings', () => {
+  it('renders brand name', () => {
     render(<Footer />)
-    expect(screen.getByText('Quick Links')).toBeDefined()
-    expect(screen.getByText('Our Cakes')).toBeDefined()
-    expect(screen.getByText('Contact Us')).toBeDefined()
+    expect(screen.getByText('Batterly')).toBeInTheDocument()
   })
 
-  it('shows logo and social icons', () => {
+  it('renders working hours', () => {
     render(<Footer />)
-    expect(screen.getByText('Batterly')).toBeDefined()
-    expect(screen.getByLabelText('Facebook')).toBeDefined()
-    expect(screen.getByLabelText('Twitter')).toBeDefined()
+    expect(screen.getByText('Working Hours')).toBeInTheDocument()
+    expect(screen.getByText('Monday - Friday')).toBeInTheDocument()
+    expect(screen.getByText('8:00 AM - 9:00 PM')).toBeInTheDocument()
+    expect(screen.getByText('Saturday')).toBeInTheDocument()
+    expect(screen.getByText('Sunday')).toBeInTheDocument()
   })
 
-  it('links to Component Dock', () => {
+  it('renders about text', () => {
     render(<Footer />)
-    const link = screen.getByText('Component Dock')
-    expect(link.closest('a')?.getAttribute('href')).toBe('https://www.componentdock.com/')
+    expect(screen.getByText(/Crafting sweet memories/)).toBeInTheDocument()
   })
 
-  it('shows contact information', () => {
+  it('renders social media icons', () => {
     render(<Footer />)
-    expect(screen.getByText(/123 Bakery Street/)).toBeDefined()
-    expect(screen.getByText('+10 (56) 745 3095')).toBeDefined()
+    expect(screen.getByLabelText('Facebook')).toBeInTheDocument()
+    expect(screen.getByLabelText('Twitter')).toBeInTheDocument()
+    expect(screen.getByLabelText('Instagram')).toBeInTheDocument()
+    expect(screen.getByLabelText('YouTube')).toBeInTheDocument()
   })
 
-  it('has quick links', () => {
+  it('renders newsletter form', () => {
     render(<Footer />)
-    expect(screen.getByText('Home')).toBeDefined()
-    expect(screen.getByText('About')).toBeDefined()
-    expect(screen.getByText('Services')).toBeDefined()
+    expect(screen.getByText('Newsletter')).toBeInTheDocument()
+    expect(screen.getByLabelText('Email for newsletter')).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Subscribe' })).toBeInTheDocument()
   })
 
-  it('has cake variety links', () => {
+  it('renders copyright bar', () => {
     render(<Footer />)
-    expect(screen.getByText('Blackforest')).toBeDefined()
-    expect(screen.getByText('Red Velvet')).toBeDefined()
+    expect(screen.getByText(/Batterly — All rights reserved/)).toBeInTheDocument()
+  })
+
+  it('renders footer links', () => {
+    render(<Footer />)
+    expect(screen.getByText('Privacy Policy')).toBeInTheDocument()
+    expect(screen.getByText('Terms & Conditions')).toBeInTheDocument()
+    expect(screen.getByText('Site Map')).toBeInTheDocument()
+  })
+
+  it('renders Component Dock link', () => {
+    render(<Footer />)
+    const cdLink = screen.getByText('Component Dock')
+    expect(cdLink).toBeInTheDocument()
+    expect(cdLink.closest('a')).toHaveAttribute('href', 'https://www.componentdock.com/')
+    expect(cdLink.closest('a')).toHaveAttribute('target', '_blank')
+  })
+
+  it('newsletter form prevents default submit', async () => {
+    const user = userEvent.setup()
+    render(<Footer />)
+    const input = screen.getByLabelText('Email for newsletter')
+    await user.type(input, 'test@example.com')
+    await user.click(screen.getByRole('button', { name: 'Subscribe' }))
+    expect(input).toHaveValue('test@example.com')
   })
 })

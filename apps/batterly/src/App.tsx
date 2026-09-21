@@ -1,30 +1,36 @@
-import { useEffect } from 'react'
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
-import { PopularItems } from './components/PopularItems'
 import { About } from './components/About'
-import { Services } from './components/Services'
-import { VideoSection } from './components/VideoSection'
-import { Testimonials } from './components/Testimonials'
-import { InstagramFeed } from './components/InstagramFeed'
+import { Categories } from './components/Categories'
+import { ProductGrid } from './components/ProductGrid'
+import { ClassSection } from './components/ClassSection'
+import { TeamGrid } from './components/TeamGrid'
+import { TestimonialCarousel } from './components/TestimonialCarousel'
+import { InstagramGrid } from './components/InstagramGrid'
+import { MapContact } from './components/MapContact'
 import { Footer } from './components/Footer'
 
+/**
+ * Batterly — recreation of ColorLib "Cake"
+ * (https://colorlib.com/wp/template/cake/). Section order 1:1 with the
+ * source: navbar → hero slider → about → categories → product grid →
+ * class registration → team grid → testimonial carousel → instagram grid →
+ * map contact → footer.
+ */
 export function App() {
-  useEffect(() => {
-    document.title = 'Batterly — Bakery & Cake Shop'
-  }, [])
-
   return (
-    <div className="min-h-screen bg-white font-sans text-gray-900">
+    <div className="font-sans">
       <Navbar />
       <main>
         <Hero />
-        <PopularItems />
         <About />
-        <Services />
-        <VideoSection />
-        <Testimonials />
-        <InstagramFeed />
+        <Categories />
+        <ProductGrid />
+        <ClassSection />
+        <TeamGrid />
+        <TestimonialCarousel />
+        <InstagramGrid />
+        <MapContact />
       </main>
       <Footer />
     </div>

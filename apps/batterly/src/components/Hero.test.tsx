@@ -1,27 +1,35 @@
+import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { describe, expect, it } from 'vitest'
 import { Hero } from './Hero'
 
 describe('Hero', () => {
-  it('renders the main heading', () => {
+  it('renders heading text', () => {
     render(<Hero />)
-    expect(screen.getByRole('heading', { level: 1 })).toBeDefined()
-    expect(screen.getByText(/Delicious Cake For Everyone/)).toBeDefined()
+    expect(screen.getByText(/Making your life sweeter/)).toBeInTheDocument()
+    expect(screen.getByText(/one bite at a time!/)).toBeInTheDocument()
   })
 
-  it('shows the CTA button', () => {
+  it('renders CTA button', () => {
     render(<Hero />)
-    expect(screen.getByText('Explore Menu')).toBeDefined()
+    expect(screen.getByText('Our cakes')).toBeInTheDocument()
   })
 
-  it('has decorative watermark text', () => {
+  it('renders slide navigation buttons', () => {
     render(<Hero />)
-    expect(screen.getByText('Delicious', { selector: 'span' })).toBeDefined()
+    expect(screen.getByLabelText('Previous slide')).toBeInTheDocument()
+    expect(screen.getByLabelText('Next slide')).toBeInTheDocument()
   })
 
-  it('renders the hero image', () => {
+  it('has hero background image', () => {
     render(<Hero />)
-    const img = screen.getByRole('img', { name: /assorted cakes/i })
-    expect(img).toBeDefined()
+    const img = screen.getByAltText('')
+    expect(img).toBeInTheDocument()
+    expect(img.getAttribute('src')).toContain('batterly-hero')
+  })
+
+  it('has dark overlay', () => {
+    const { container } = render(<Hero />)
+    const overlay = container.querySelector('.bg-black\\/50')
+    expect(overlay).toBeInTheDocument()
   })
 })

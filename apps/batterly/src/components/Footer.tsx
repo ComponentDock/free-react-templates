@@ -1,126 +1,111 @@
-import { FacebookIcon, TwitterIcon, InstagramIcon, LinkedinIcon } from './social-icons'
-
-const quickLinks = ['Home', 'About', 'Services', 'Blog', 'Contact']
-const varieties = ['Blackforest', 'Chocolate', 'Red Velvet', 'Cheesecake', 'Tiramisu']
-
-const socials = [
-  { label: 'Facebook', href: 'https://facebook.com', Icon: FacebookIcon },
-  { label: 'Twitter', href: 'https://twitter.com', Icon: TwitterIcon },
-  { label: 'Instagram', href: 'https://instagram.com', Icon: InstagramIcon },
-  { label: 'LinkedIn', href: 'https://linkedin.com', Icon: LinkedinIcon },
-]
+import { WORKING_HOURS, SOCIAL_LINKS, SOCIAL_PATHS } from '../data'
 
 export function Footer() {
   return (
-    <footer id="contact" className="bg-cream">
-      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          {/* Brand */}
+    <footer className="relative overflow-hidden bg-ink text-white">
+      <img
+        src="https://picsum.photos/seed/batterly-footer-bg/1920/600"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full object-cover opacity-30"
+      />
+      <div className="relative mx-auto max-w-6xl px-4 py-16 md:py-20">
+        <div className="grid gap-10 md:grid-cols-3">
+          {/* Working Hours */}
           <div>
-            <a href="#home" className="font-heading text-xl font-bold text-brand">
+            <h3 className="font-display text-lg font-semibold mb-4">Working Hours</h3>
+            <ul className="space-y-3 text-sm text-white/70">
+              {WORKING_HOURS.map((h) => (
+                <li key={h.day} className="flex justify-between">
+                  <span>{h.day}</span>
+                  <span>{h.hours}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Brand / About */}
+          <div className="text-center">
+            <a href="#home" className="font-display text-2xl font-bold">
               Batterly
             </a>
-            <p className="mt-4 text-sm leading-relaxed text-gray-500">
-              Freshly baked cakes and pastries crafted with love. Visit us or order online for
-              delivery.
+            <p className="mt-4 text-sm leading-relaxed text-white/70">
+              Crafting sweet memories with every bite. Premium cakes, pastries, and baked goods made
+              with love.
             </p>
-            <ul className="mt-4 flex gap-3">
-              {socials.map(({ label, href, Icon }) => (
-                <li key={label}>
-                  <a
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={label}
-                    className="flex h-9 w-9 items-center justify-center rounded-full bg-brand/10 text-brand transition-colors hover:bg-brand hover:text-white"
+            <div className="mt-6 flex justify-center gap-3">
+              {SOCIAL_LINKS.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  aria-label={social.label}
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-brand"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="h-4 w-4"
+                    aria-hidden="true"
                   >
-                    <Icon className="h-4 w-4" />
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-gray-900">
-              Quick Links
-            </h3>
-            <ul className="mt-4 space-y-2">
-              {quickLinks.map((link) => (
-                <li key={link}>
-                  <a
-                    href={`#${link.toLowerCase()}`}
-                    className="text-sm text-gray-500 transition-colors hover:text-brand"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Cake Varieties */}
-          <div>
-            <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-gray-900">
-              Our Cakes
-            </h3>
-            <ul className="mt-4 space-y-2">
-              {varieties.map((v) => (
-                <li key={v}>
-                  <a
-                    href="#product"
-                    className="text-sm text-gray-500 transition-colors hover:text-brand"
-                  >
-                    {v}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-gray-900">
-              Contact Us
-            </h3>
-            <ul className="mt-4 space-y-2 text-sm text-gray-500">
-              <li>123 Bakery Street, Sweet City, SC 12345</li>
-              <li>
-                <a href="tel:+10567453095" className="hover:text-brand">
-                  +10 (56) 745 3095
+                    <path d={SOCIAL_PATHS[social.label as keyof typeof SOCIAL_PATHS]} />
+                  </svg>
                 </a>
-              </li>
-              <li>
-                <a href="mailto:hello@batterly.com" className="hover:text-brand">
-                  hello@batterly.com
-                </a>
-              </li>
-            </ul>
+              ))}
+            </div>
+          </div>
+
+          {/* Newsletter */}
+          <div>
+            <h3 className="font-display text-lg font-semibold mb-4">Newsletter</h3>
+            <p className="mb-4 text-sm text-white/70">
+              Subscribe to get updates on new flavors and special offers.
+            </p>
+            <form onSubmit={(e) => e.preventDefault()} className="flex gap-2">
+              <input
+                type="email"
+                aria-label="Email for newsletter"
+                placeholder="Your email"
+                className="flex-1 rounded-full bg-white/10 px-4 py-2 text-sm text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-brand"
+              />
+              <button
+                type="submit"
+                className="rounded-full bg-brand px-6 py-2 text-sm font-medium text-white hover:bg-brand-dark transition-colors"
+              >
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
       </div>
 
-      {/* Footer bottom */}
-      <div className="border-t border-brand/10">
-        <div className="mx-auto max-w-6xl px-4 py-5 sm:px-6">
-          <div className="flex flex-col items-center justify-between gap-3 text-xs text-gray-400 sm:flex-row">
-            <p>
-              &copy; {new Date().getFullYear()} Batterly. Made with
-              <span className="mx-1 text-brand">&hearts;</span> for cake lovers.
-            </p>
-            <p>
-              More templates at{' '}
-              <a
-                href="https://www.componentdock.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-semibold text-brand hover:underline"
-              >
-                Component Dock
-              </a>
-            </p>
+      {/* Copyright bar */}
+      <div className="relative border-t border-white/20">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-5 md:flex-row">
+          <p className="text-sm text-white/50">
+            &copy; {new Date().getFullYear()} Batterly — All rights reserved
+          </p>
+          <div className="flex gap-4 text-sm text-white/50">
+            <a href="#privacy" className="hover:text-white transition-colors">
+              Privacy Policy
+            </a>
+            <a href="#terms" className="hover:text-white transition-colors">
+              Terms &amp; Conditions
+            </a>
+            <a href="#sitemap" className="hover:text-white transition-colors">
+              Site Map
+            </a>
           </div>
+          <p className="text-sm text-white/50">
+            Made with{' '}
+            <a
+              href="https://www.componentdock.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand hover:underline"
+            >
+              Component Dock
+            </a>
+          </p>
         </div>
       </div>
     </footer>
