@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Roastery brand palette — recreated from the ColorLib "Coffee Blend"
+     design (dark coffee theme): espresso brown #3e2723, caramel
+     accent #d4a574, cream #f5f0eb, charcoal #1a1a1a. */
+  --color-brand: #d4a574;
+  --color-brand-dark: #b8895a;
+
+  /* Espresso — dark brown headings/footer (#3e2723). */
+  --color-ink: #3e2723;
+  --color-ink-dark: #1a1210;
+
+  /* Cream — light section background (#f5f0eb). */
+  --color-paper: #f5f0eb;
+
+  /* Latte — secondary warm section background (#ede4da). */
+  --color-latte: #ede4da;
+
+  /* Mist — muted body text (#999999). */
+  --color-mist: #999999;
+
+  /* Charcoal — dark background (#1a1a1a). */
+  --color-charcoal: #1a1a1a;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the caramel accent. */
+  --color-primary-50: #fdf8f3;
+  --color-primary-100: #f9eddf;
+  --color-primary-200: #f0d5b8;
+  --color-primary-300: #e4bb8e;
+  --color-primary-400: #d4a574;
+  --color-primary-500: #c48e5a;
+  --color-primary-600: #b07a45;
+  --color-primary-700: #936438;
+  --color-primary-800: #7a5030;
+  --color-primary-900: #644228;
+
+  /* Fonts: "Playfair Display" (headings) + "Lato" (body). */
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
