@@ -1758,7 +1758,7 @@
 - [x] **Invest** — [colorlib](https://colorlib.com/wp/template/invest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/invest-free-template.jpg) · [vestly](https://vestly.free.componentdock.com)
 - [x] **Investpro** — [colorlib](https://colorlib.com/wp/template/investpro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/investpro-template-1770211264537.jpg) · [Tradewell](https://tradewell.free.componentdock.com)
 - [x] **Lawfirm** — [colorlib](https://colorlib.com/wp/template/lawfirm/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawfirm-free-fullscreen-lawyer-website-template.jpg) · [statutory](https://free-react-templates-statutory.surge.sh)
-- [~] **Loan** — [colorlib](https://colorlib.com/wp/template/loan/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/loan-free-template.jpg)
+- [x] **Loan** · [loanforge](https://loanforge.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/loan/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/loan-free-template.jpg)
 - [x] **Loanday** — [colorlib](https://colorlib.com/wp/template/loanday/) · [loanpilot](https://loanpilot.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/loanday-free-template.jpg)
 - [x] **Loans2go** — [colorlib](https://colorlib.com/wp/template/loans2go/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/loans2go-free-template.jpg) · [lendly](https://lendly.free.componentdock.com)
 - [x] **Occupy** — [colorlib](https://colorlib.com/wp/template/occupy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/occupy-free-template.jpg) · [domicile](https://domicile.free.componentdock.com)
