@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Sprintly brand palette — recreated from the ColorLib "Activitar" design
+     (primary orange #e16521). */
+  --color-brand-50: #fff7ed;
+  --color-brand-100: #ffedd5;
+  --color-brand-200: #fed7aa;
+  --color-brand-300: #fdba74;
+  --color-brand-400: #fb923c;
+  --color-brand-500: #e16521;
+  --color-brand-600: #c2410c;
+  --color-brand-700: #9a3412;
+  --color-brand-800: #7c2d12;
+  --color-brand-900: #431407;
+
+  /* Gold accent — from the original design */
+  --color-gold: #ffca04;
+
+  /* Dark surface palette */
+  --color-dark-50: #f7f7f7;
+  --color-dark-100: #e1e1e1;
+  --color-dark-200: #afb4bf;
+  --color-dark-300: #8f8fa8;
+  --color-dark-400: #7b7b7b;
+  --color-dark-500: #2d2d2d;
+  --color-dark-600: #222222;
+  --color-dark-700: #1a1a1a;
+  --color-dark-800: #131313;
+  --color-dark-900: #0a0a0a;
+
+  /* Oswald for headings, Nunito Sans for body — Google Fonts via index.html */
+  --font-heading: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
