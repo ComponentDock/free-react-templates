@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Carnivor brand palette — recreated from the ColorLib Steakshop design
+     (css/style.css): red #f42f2c accents/buttons, gradient to #f48464,
+     dark headings #222222, body text #777777. */
+  --color-brand: #f42f2c;
+  --color-brand-light: #f48464;
+
+  /* Ink — dark headings (#222222 from the original). */
+  --color-ink: #222222;
+
+  /* Paper — light section background. */
+  --color-paper: #ffffff;
+
+  /* Cream — alternate section background. */
+  --color-cream: #f9f9f9;
+
+  /* Mist — muted body text (#777777 from the original). */
+  --color-mist: #777777;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the red. */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #f42f2c;
+  --color-primary-600: #dc2626;
+  --color-primary-700: #b91c1c;
+  --color-primary-800: #991b1b;
+  --color-primary-900: #7f1d1d;
+
+  /* Original fonts: "Pacifico" (headings) + "Roboto" (body). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Pacifico', cursive;
+}
