@@ -1,214 +1,140 @@
-# Template: Feastly (Restaurant)
+# Feastly — Restaurant Landing Template
 
 ## Purpose
 
-Recreation of ColorLib **Buri** — a Bootstrap-based restaurant website template.
+Recreation of ColorLib **Foodfun** (https://colorlib.com/wp/template/foodfun/) as a single-page restaurant landing template with a golden-yellow brand palette, Playfair Display headings, and a warm, inviting aesthetic.
 
-- **Source slug:** `buri`
-- **Preview URL:** https://preview.colorlib.com/theme/buri/
-- **Original:** https://colorlib.com/wp/template/buri/
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/buri-free-template.jpg
-- **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+## Requirements
 
-## Design Tokens (from preview DOM + CSS)
+### Requirement: Navigation bar with links
 
-| Token            | Value                             | Notes                                              |
-| ---------------- | --------------------------------- | -------------------------------------------------- |
-| Font heading     | `'Playfair Display', serif`       | Elegant serif for section headings and hero        |
-| Font body        | `'Montserrat', sans-serif`        | Clean sans-serif for body, nav, buttons, labels    |
-| Primary accent   | `#d6ad86` (warm gold-tan)         | Headings accent color, banner subtitle, highlights |
-| Dark background  | `#1c1a18` (near-black warm)       | Footer background                                  |
-| Light background | `#f7efe7` (warm cream)            | Review/testimonial section background              |
-| Body text        | `#555555` (dark gray)             | Paragraph copy                                     |
-| Star/highlight   | `#ffb830` (amber)                 | Star ratings, emphasis                             |
-| Nav text         | `#2c3033` (charcoal)              | Navbar link text                                   |
-| Footer text      | `#a9a9a9` (medium gray)           | Footer paragraph and link text                     |
-| White            | `#fff`                            | Buttons, menu section bg, card text                |
-| Button primary   | bg `#d6ad86`, color `#fff`        | CTA buttons (rounded, medium padding)              |
-| Button border    | border `#d6ad86`, color `#d6ad86` | Ghost/outline button variant                       |
-| Banner heading   | `65px`, weight 400, Montserrat    | Large hero heading                                 |
+Users SHALL see a white navigation bar with logo and links (Home, About, Menu, Specials, Contact) that scroll to the corresponding sections.
 
-### Color palette summary
+#### Scenario: Navbar renders with all links
 
-- Primary gold: `#d6ad86` (accent throughout — buttons, headings, highlights)
-- Dark warm: `#1c1a18` (footer, dark backgrounds)
-- Cream: `#f7efe7` (testimonial/review section)
-- Amber: `#ffb830` (star ratings, secondary highlight)
-- Dark text: `#2c3033`
-- Body text: `#555555`
-- White: `#fff` (menu section background)
+- **WHEN** the page loads
+- **THEN** I see navigation links: Home, About, Menu, Specials, Contact
 
-## Section Order (from preview DOM)
+### Requirement: Hero banner with headline
 
-1. **Navbar** — Transparent/white background, logo left, links: Home, About, Menu, Blog (dropdown), Pages (dropdown), Contact. Mobile hamburger. Bootstrap navbar.
-2. **Banner/Hero** — Full-width background image with dark overlay. Subtitle "Expensive but the best", heading "Modern restaurant in center of the city", CTA button "Book a Table".
-3. **About** — Two-column layout: left side text (subheading "about us", heading "Delicious food provider since 1990", two paragraphs, "Learn More" button), right side image (restaurant image).
-4. **Food Menu** — Centered section title "Popular Menu" / "Delicious Food Menu". Two-column grid of 6 food items. Each item: food image thumbnail + title + description + price ("Form $40.00"). Items: Pork Sandwich, Roasted Marrow, Summer Cooking, Easter Delight, Tiener Schnitze, Chicken Roast.
-5. **Intro Video** — Full-width dark background image with centered play button (YouTube popup link). Parallax/video intro area.
-6. **Testimonials/Reviews** — Cream background (`#f7efe7`). Centered title "Testimonials" / "What they said". Owl carousel of review cards. Each card: testimonial text, client avatar image, client name, 5-star rating. 3 reviews shown in carousel.
-7. **Contact** — Left-aligned contact info section: address (240, Kings street, New York), hours (Mon-Sun 9.00-19.00), reservation phone + email. No form — info-only layout.
-8. **Footer** — Dark background (`#1c1a18`). Three columns: (1) Logo + phone + email + social icons (Facebook, Instagram), (2) Quick links (About, Menu, Reservation, Blog, Breakfast, Lunch, Dinner), (3) Newsletter subscription form with email input + send button. Copyright bar at bottom.
+Users SHALL see a full-width hero banner with a food-themed background and the headline "Discover the flavors of feastly" with yellow accent text.
 
-## Gherkin Requirements
+#### Scenario: Banner displays the main headline
 
-### Navbar
+- **WHEN** the page loads
+- **THEN** I see "Discover the flavors of feastly" in the hero section
 
-```gherkin
-Feature: Navigation Bar
+### Requirement: Welcome section with CTA
 
-  Scenario: Desktop navbar displays all section links
-    Given the user is on a desktop viewport
-    When the page loads
-    Then the navbar shows the logo and links for Home, About, Menu, Blog, Pages, Contact
+Users SHALL see a split welcome section with an image on the left, descriptive text on the right, and a "book a table" call-to-action button.
 
-  Scenario: Navbar becomes sticky on scroll
-    Given the user scrolls past the hero section
-    When the scroll position exceeds the navbar height
-    Then the navbar should be fixed at the top of the viewport
+#### Scenario: Welcome section renders with CTA
 
-  Scenario: Mobile hamburger menu toggles navigation
-    Given the user is on a mobile viewport
-    When they click the hamburger menu icon
-    Then the navigation links should slide in or appear
-    And clicking a link should close the menu and scroll to the section
-```
+- **WHEN** I look at the welcome section
+- **THEN** I see a "welcome to feastly" heading and a "book a table" button
 
-### Banner / Hero
+### Requirement: Food menu grid
 
-```gherkin
-Feature: Hero / Banner Section
+Users SHALL see a 3x2 grid of food items, each with an image, name, price, and description. Cards shall transition to yellow on hover.
 
-  Scenario: Hero displays headline and CTA
-    Given the user views the page
-    When the banner section is visible
-    Then it shows the subtitle "Expensive but the best"
-    And the heading "Modern restaurant in center of the city"
-    And a "Book a Table" call-to-action button
+#### Scenario: Menu displays food items
 
-  Scenario: Hero has a background image with overlay
-    Given the user views the banner section
-    Then the section displays a background restaurant image
-    And the text is readable over the image via a dark overlay
-```
+- **WHEN** I look at the menu section
+- **THEN** I see 6 food items with names and prices
 
-### About
+### Requirement: Reservation CTA banner
 
-```gherkin
-Feature: About Section
+Users SHALL see a dark-background reservation call-to-action section with "Natural ingredients and tasty food" heading and a reservation button.
 
-  Scenario: About section shows two-column layout
-    Given the user scrolls to the about section
-    Then the left column displays heading "Delicious food provider since 1990"
-    And two descriptive paragraphs
-    And a "Learn More" button
-    And the right column displays a restaurant image
+#### Scenario: Reservation CTA renders
 
-  Scenario: About section has white background
-    Given the user views the about section
-    Then the section background is white
-```
+- **WHEN** I look at the reservation section
+- **THEN** I see "Natural ingredients and tasty food" and a reservation button
 
-### Food Menu
+### Requirement: Special dishes showcase
 
-```gherkin
-Feature: Food Menu Section
+Users SHALL see numbered special dish items with alternating text and image rows, including dish name, description, price, and a "book a table" link.
 
-  Scenario: Menu section displays 6 food items
-    Given the user scrolls to the menu section
-    Then 6 food items are displayed in a two-column grid
-    And each item shows a food image, title, description, and price
+#### Scenario: Specials display dish items
 
-  Scenario: Menu items are correctly named
-    Given the menu items are rendered
-    Then the items include Pork Sandwich, Roasted Marrow, Summer Cooking, Easter Delight, Tiener Schnitze, and Chicken Roast
+- **WHEN** I look at the specials section
+- **THEN** I see at least 2 numbered dish items with details
 
-  Scenario: Menu section has white background
-    Given the user views the menu section
-    Then the section background is white
-```
+### Requirement: Customer testimonials
 
-### Intro Video
+Users SHALL see customer review cards with avatar, name, role, and quote text on a dark overlay background.
 
-```gherkin
-Feature: Intro Video Section
+#### Scenario: Testimonials render customer reviews
 
-  Scenario: Video section displays a play button
-    Given the user scrolls to the video section
-    Then a centered play button is visible
-    And clicking it opens a YouTube video popup
+- **WHEN** I look at the testimonials section
+- **THEN** I see customer review cards with names and quotes
 
-  Scenario: Video section has a dark background image
-    Given the user views the video section
-    Then the section displays a dark parallax background image
-```
+### Requirement: Blog-style food updates
 
-### Testimonials
+Users SHALL see blog-style cards with images, author info, dates, titles, and excerpts in the updates section.
 
-```gherkin
-Feature: Testimonials / Reviews Section
+#### Scenario: Updates display blog cards
 
-  Scenario: Testimonials section shows review carousel
-    Given the user scrolls to the testimonials section
-    Then the heading "What they said" is displayed
-    And 3 client reviews are shown in a carousel
-    And each review shows testimonial text, client name, avatar image, and 5-star rating
+- **WHEN** I look at the updates section
+- **THEN** I see blog cards with titles, dates, and excerpts
 
-  Scenario: Testimonials section has cream background
-    Given the user views the testimonials section
-    Then the section background is cream-colored (#f7efe7)
-```
+### Requirement: Table booking form
 
-### Contact
+Users SHALL see a booking form with date, time, and guest inputs on a dark overlay background, with a "book a table" submit button.
 
-```gherkin
-Feature: Contact Section
+#### Scenario: Booking form renders inputs
 
-  Scenario: Contact section displays address, hours, and phone
-    Given the user scrolls to the contact section
-    Then the address "240, Kings street, New York city USA" is displayed
-    And the hours "Mon - Fri (9.00-19.00)" and "Sat - Sun (9.00-19.00)" are displayed
-    And the phone number "+880 367 251 167" is displayed
-    And the email "barires@contact.com" is displayed
+- **WHEN** I look at the booking section
+- **THEN** I see a form with date, time, and guest inputs
 
-  Scenario: Contact section has no form
-    Given the user views the contact section
-    Then the section shows contact information only (no input form)
-```
+### Requirement: Footer with contact info and Component Dock link
 
-### Footer
+Users SHALL see a dark footer with three columns (about, contact info, opening hours) and a copyright bar linking to Component Dock (https://www.componentdock.com/).
 
-```gherkin
-Feature: Footer
+#### Scenario: Footer renders with contact and Component Dock
 
-  Scenario: Footer has three-column layout
-    Given the user scrolls to the footer
-    Then the left column shows logo, phone, email, and social icons
-    And the middle column shows quick links
-    And the right column shows a newsletter subscription form
+- **WHEN** I look at the footer
+- **THEN** I see contact information, opening hours, and a "Component Dock" link
 
-  Scenario: Footer has dark background
-    Given the user views the footer
-    Then the footer background is dark (#1c1a18)
-    And the footer links are colored in accent gold (#d6ad86)
+#### Scenario: Footer has social links
 
-  Scenario: Footer links replace Colorlib attribution with Component Dock
-    Given the user reads the copyright text
-    Then it links to https://www.componentdock.com/ (branded as "Component Dock")
-    And there are no references to Colorlib
-```
+- **WHEN** I look at the footer
+- **THEN** I see social media icon links
 
-## Verification Checklist
+## Design Tokens
 
-- [ ] Fonts loaded: Playfair Display (headings), Montserrat (body)
-- [ ] Primary accent `#d6ad86` used consistently for highlights and buttons
-- [ ] Hero section has full-width background image with dark overlay
-- [ ] About section: two-column layout, heading, paragraphs, image, "Learn More" button
-- [ ] Food Menu: 2x3 grid of 6 items with image, title, description, price
-- [ ] Video section: centered play button over dark background
-- [ ] Testimonials: carousel with reviews, star ratings, client avatars, cream background
-- [ ] Contact: info-only layout (address, hours, phone, email) — no form
-- [ ] Footer: dark background, 3 columns, newsletter form, Component Dock link
-- [ ] No references to Colorlib in app code (provenance only in spec)
-- [ ] Footer links to Component Dock
-- [ ] Placeholder images via picsum.photos
-- [ ] Responsive layout works on mobile
+| Token            | Value                                                 | Source                                          |
+| ---------------- | ----------------------------------------------------- | ----------------------------------------------- |
+| Brand yellow     | `#ffb606`                                             | ColorLib .prime-color, .template-btn background |
+| Dark navy        | `#131230`                                             | ColorLib headings, h1/h3/h5, footer background  |
+| Body text        | `#777777`                                             | ColorLib body color                             |
+| Light background | `#f9f9ff`                                             | ColorLib .food-content, nav menu bg             |
+| Footer dark      | `#0d0d27`                                             | ColorLib .footer-copyright                      |
+| Heading font     | Playfair Display (italic for h1)                      | ColorLib font-family on h1/h2/h3/h5             |
+| Body font        | Roboto                                                | ColorLib body, nav, buttons                     |
+| Button style     | Uppercase, Roboto, 14px, yellow bg, transparent hover | ColorLib .template-btn                          |
+| Border radius    | 3px                                                   | ColorLib global                                 |
+| Section padding  | 130px                                                 | ColorLib .section-padding                       |
+
+## Sections (in order)
+
+1. **Navbar** — White bar, logo left, nav links right (Home, About, Menu, Specials, Contact)
+2. **Banner** — Full-width hero with food image bg, centered headline "Discover the flavors of feastly", yellow accent
+3. **Welcome** — Split: image left, text right with "welcome to feastly" heading + "book a table" CTA
+4. **Menu** — "We serve delicious food" heading, 3x2 grid of food items with images, names, prices, descriptions
+5. **Reservation CTA** — Dark bg section "Natural ingredients and tasty food" with reservation button
+6. **Specials** — "Our special dishes" with alternating text/image rows, numbered items with descriptions and prices
+7. **Testimonials** — Dark overlay bg, customer review cards with avatar, name, role, quote
+8. **Updates** — "Our food update" blog-style cards with images, meta info, excerpts
+9. **Booking Form** — Dark overlay bg, "Book your table" heading, form inputs (date, time, guests, CTA)
+10. **Footer** — Dark bg, 3-column layout: about + logo, contact info, opening hours + copyright bar with Component Dock link
+
+## Assets
+
+- Placeholder images via picsum.photos seeded per template
+- Google Fonts: Playfair Display (headings) + Roboto (body)
+- lucide-react icons (no brand icons — use inline SVG for social)
+
+## Coverage
+
+All components must achieve 100% lines/functions/branches/statements coverage.
