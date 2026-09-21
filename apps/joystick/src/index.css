@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Joystick brand colors — from the ColorLib "Egames" preview
+     (https://preview.colorlib.com/theme/egames/ + style.css):
+     a gaming magazine theme with cyan #20d8da primary,
+     dark overlays rgba(0,0,0,0.6), heading #424242, body #939393. */
+  --color-primary-50: #e6fbfb;
+  --color-primary-100: #b3f3f3;
+  --color-primary-200: #80eaea;
+  --color-primary-300: #4de1e1;
+  --color-primary-400: #20d8da;
+  --color-primary-500: #1ac0c2;
+  --color-primary-600: #159a9c;
+  --color-primary-700: #107476;
+  --color-primary-800: #0b4e50;
+  --color-primary-900: #06282a;
+
+  /* Dark section backgrounds. */
+  --color-dark: #1a1a1a;
+  --color-darker: #111111;
+
+  /* Heading color (ColorLib #424242). */
+  --color-ink: #424242;
+
+  /* Muted body text (ColorLib #939393). */
+  --color-smoke: #939393;
+
+  /* Open Sans via Google Fonts <link> in index.html. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
