@@ -1710,7 +1710,7 @@
 - [x] **Fashion 2** — [colorlib](https://colorlib.com/wp/template/fashion-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fashion-free-template.jpg) · [silhouette](https://silhouette.free.componentdock.com)
 - [x] **Foto** — [colorlib](https://colorlib.com/wp/template/foto/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foto-free-template.jpg) · [fotura](https://fotura.free.componentdock.com)
 - [x] **Glamour** — [colorlib](https://colorlib.com/wp/template/glamour/) · [glamour](https://glamour.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/glamour-free-template.jpg)
-- [~] **Hazze** — [colorlib](https://colorlib.com/wp/template/hazze/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/haze-free-template.jpg)
+- [x] **Hazze** — [colorlib](https://colorlib.com/wp/template/hazze/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/haze-free-template.jpg) · [smokeshade](https://smokeshade.free.componentdock.com)
 - [x] **Instylr** — [colorlib](https://colorlib.com/wp/template/instylr/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/instylr-free-template.jpg) · [haute](https://haute.free.componentdock.com)
 - [x] **Ionize** — [colorlib](https://colorlib.com/wp/template/ionize/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ionize-free-template.jpg) · [volt](https://volt.free.componentdock.com)
 - [ ] **Karma** — [colorlib](https://colorlib.com/wp/template/karma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/karma-free-template.jpg)
