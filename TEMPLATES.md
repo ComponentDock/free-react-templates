@@ -1741,7 +1741,7 @@
 
 ## Finance (24)
 
-- [ ] **Banker** — [colorlib](https://colorlib.com/wp/template/banker/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/banker-free-template.jpg)
+- [~] **Banker** — [colorlib](https://colorlib.com/wp/template/banker/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/banker-free-template.jpg)
 - [x] **Bitcoin** — [colorlib](https://colorlib.com/wp/template/bitcoin/) · [coinwave](https://coinwave.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bitcoin-free-template.jpg)
 - [x] **Biznance** — [colorlib](https://colorlib.com/wp/template/biznance/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/biznance-free-template.jpg) · [vantage](https://vantage.free.componentdock.com)
 - [x] **Book Keeping** · [reckoner](https://reckoner.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/book-keeping/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bookkeeping-free-template.jpg)
