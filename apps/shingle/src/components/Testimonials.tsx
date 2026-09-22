@@ -1,46 +1,55 @@
+import { Quote } from 'lucide-react'
+
 const testimonials = [
   {
-    name: 'Sarah Johnson',
+    quote:
+      'Excellent service from start to finish. The team replaced our entire roof in just two days and the quality is outstanding.',
+    name: 'Sarah Mitchell',
     role: 'Homeowner',
-    quote:
-      'Excellent roofing service! They replaced our entire roof in just two days. The quality is outstanding and the price was very fair.',
+    seed: 'shingle-person-1',
   },
   {
-    name: 'Michael Chen',
+    quote:
+      'Professional, punctual, and affordable. They handled our commercial roofing project without any disruption to our business.',
+    name: 'James Carter',
     role: 'Business Owner',
-    quote:
-      'Professional team with great attention to detail. Our commercial building looks brand new after their work.',
+    seed: 'shingle-person-2',
   },
   {
-    name: 'Emily Davis',
-    role: 'Property Manager',
     quote:
-      'We have used their services for multiple properties. Always reliable, always on time. Highly recommended!',
+      'After the storm damage, they were at our property within hours. Quick response and a thorough repair job.',
+    name: 'Emily Rodriguez',
+    role: 'Property Manager',
+    seed: 'shingle-person-3',
   },
-]
+] as const
 
 export function Testimonials() {
   return (
-    <section className="bg-gray-50 py-16">
-      <div className="container mx-auto px-4">
-        <div className="mb-10 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
-            Happy Clients &amp; Feedbacks
-          </h2>
-        </div>
-        <div className="grid gap-6 md:grid-cols-3">
+    <section className="bg-paper py-16 lg:py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 className="text-center text-2xl font-semibold text-ink sm:text-3xl">
+          Happy Clients &amp; Feedback
+        </h2>
+
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((t) => (
-            <div key={t.name} className="rounded border border-gray-200 bg-white p-6 shadow-sm">
-              <p className="mb-4 italic text-gray-600">&ldquo;{t.quote}&rdquo;</p>
-              <div className="flex items-center gap-3">
+            <div
+              key={t.name}
+              className="rounded-2xl bg-white p-8 shadow-sm transition-shadow hover:shadow-md dark:bg-gray-800"
+            >
+              <Quote className="h-8 w-8 text-brand/30" aria-hidden="true" />
+              <p className="mt-4 leading-relaxed text-mist">{t.quote}</p>
+              <div className="mt-6 flex items-center gap-4">
                 <img
-                  src={`https://picsum.photos/seed/${t.name.replace(/\s/g, '-')}/60/60`}
+                  src={`https://picsum.photos/seed/${t.seed}/80/80`}
                   alt={t.name}
                   className="h-12 w-12 rounded-full object-cover"
+                  loading="lazy"
                 />
                 <div>
-                  <p className="font-semibold text-gray-900">{t.name}</p>
-                  <p className="text-sm text-gray-500">{t.role}</p>
+                  <p className="text-sm font-semibold text-ink">{t.name}</p>
+                  <p className="text-xs text-mist">{t.role}</p>
                 </div>
               </div>
             </div>

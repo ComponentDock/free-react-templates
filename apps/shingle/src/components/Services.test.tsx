@@ -1,34 +1,36 @@
 import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import { Services } from './Services'
 
 describe('Services', () => {
-  it('renders the section heading', () => {
+  it('renders the heading and all service buttons', () => {
     render(<Services />)
     expect(screen.getByRole('heading', { name: 'Our Best Services' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Skylights/ })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Waterproofing/ })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Industrial Roofing/ })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Residential Roofing/ })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Gutter Cleaning/ })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Commercial Roofing/ })).toBeInTheDocument()
   })
 
-  it('renders all 6 service cards', () => {
+  it('shows Skylights details by default', () => {
     render(<Services />)
-    const titles = [
-      'Skylights',
-      'Waterproofing',
-      'Industrial Roofing',
-      'Residential Roofing',
-      'Gutter Cleaning',
-      'Commercial Roofing',
-    ]
-    for (const title of titles) {
-      expect(screen.getByRole('heading', { name: title })).toBeInTheDocument()
-    }
+    expect(screen.getByText(/Bring natural light into your home/)).toBeInTheDocument()
+    expect(screen.getByText('Energy-efficient glass options')).toBeInTheDocument()
   })
 
-  it('each card has a Get Started link', () => {
+  it('switches to Waterproofing on click', async () => {
+    const user = userEvent.setup()
     render(<Services />)
-    const links = screen.getAllByRole('link', { name: 'Get Started' })
-    expect(links.length).toBe(6)
-    for (const link of links) {
-      expect(link).toHaveAttribute('href', '#appointment')
-    }
+    await user.click(screen.getByRole('button', { name: /Waterproofing/ }))
+    expect(screen.getByText(/Protect your property from water damage/)).toBeInTheDocument()
+    expect(screen.getByText('Membrane waterproofing')).toBeInTheDocument()
+  })
+
+  it('has the section id services', () => {
+    const { container } = render(<Services />)
+    expect(container.querySelector('#services')).toBeInTheDocument()
   })
 })

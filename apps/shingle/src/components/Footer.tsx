@@ -1,92 +1,118 @@
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { MapPin, Phone, Mail, Home } from 'lucide-react'
 
-const serviceLinks = [
+const services = [
   'Skylights',
   'Waterproofing',
   'Industrial Roofing',
   'Residential Roofing',
   'Gutter Cleaning',
   'Commercial Roofing',
-]
+] as const
 
 export function Footer() {
   return (
-    <footer id="contact" className="bg-gray-900 text-gray-300">
-      <div className="container mx-auto grid gap-8 px-4 py-12 sm:grid-cols-2 lg:grid-cols-4">
-        {/* Brand */}
-        <div>
-          <h3 className="mb-4 text-lg font-bold text-white">Shingle</h3>
-          <p className="text-sm leading-relaxed text-gray-400">
-            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-            there live the blind texts.
-          </p>
-        </div>
+    <footer id="contact" className="bg-dark text-white">
+      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <a href="#home" className="flex items-center gap-2">
+              <Home className="h-5 w-5 text-brand" aria-hidden="true" />
+              <span className="text-lg font-semibold">Shingle</span>
+            </a>
+            <p className="mt-4 text-sm leading-relaxed text-gray-400">
+              Professional roofing services you can trust. Quality workmanship, reliable service,
+              and competitive prices for every project.
+            </p>
+            <div className="mt-4 flex gap-3">
+              {(['Twitter', 'Facebook', 'Instagram'] as const).map((name) => (
+                <a
+                  key={name}
+                  href="#"
+                  aria-label={name}
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-600 text-gray-400 transition-colors hover:border-brand hover:text-white"
+                >
+                  {name[0]}
+                </a>
+              ))}
+            </div>
+          </div>
 
-        {/* Services */}
-        <div>
-          <h4 className="mb-4 text-sm font-bold uppercase tracking-wide text-white">Services</h4>
-          <ul className="space-y-2">
-            {serviceLinks.map((s) => (
-              <li key={s}>
-                <a href="#services" className="text-sm text-gray-400 hover:text-gold-400">
-                  {s}
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-brand">Services</h3>
+            <ul className="mt-4 space-y-2">
+              {services.map((s) => (
+                <li key={s}>
+                  <a
+                    href="#services"
+                    className="text-sm text-gray-400 transition-colors hover:text-white"
+                  >
+                    {s}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-brand">
+              Business Hours
+            </h3>
+            <div className="mt-4 space-y-3 text-sm text-gray-400">
+              <div>
+                <p className="font-medium text-white">Opening Days</p>
+                <p>Monday – Friday: 9am to 8pm</p>
+                <p>Saturday: 9am to 5pm</p>
+              </div>
+              <div>
+                <p className="font-medium text-white">Vacations</p>
+                <p>All Sundays</p>
+                <p>All Official Holidays</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-brand">
+              Contact Information
+            </h3>
+            <ul className="mt-4 space-y-3 text-sm text-gray-400">
+              <li className="flex items-start gap-3">
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
+                203 Fake St. Mountain View, San Francisco, CA
+              </li>
+              <li>
+                <a
+                  href="tel:+13923929210"
+                  className="flex items-center gap-3 transition-colors hover:text-white"
+                >
+                  <Phone className="h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
+                  +1 392 3929 210
                 </a>
               </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Business Hours */}
-        <div>
-          <h4 className="mb-4 text-sm font-bold uppercase tracking-wide text-white">
-            Business Hours
-          </h4>
-          <ul className="space-y-2 text-sm text-gray-400">
-            <li>Opening Days:</li>
-            <li>Monday – Friday: 9am to 8pm</li>
-            <li>Saturday: 9am to 5pm</li>
-            <li>Sunday: Closed</li>
-          </ul>
-        </div>
-
-        {/* Contact */}
-        <div>
-          <h4 className="mb-4 text-sm font-bold uppercase tracking-wide text-white">
-            Contact Information
-          </h4>
-          <ul className="space-y-3">
-            <li className="flex items-center gap-2 text-sm text-gray-400">
-              <MapPin size={16} className="shrink-0 text-gold-400" />
-              123 Roof Street, Builder City, BC 12345
-            </li>
-            <li className="flex items-center gap-2 text-sm text-gray-400">
-              <Phone size={16} className="shrink-0 text-gold-400" />
-              +1 (555) 123-4567
-            </li>
-            <li className="flex items-center gap-2 text-sm text-gray-400">
-              <Mail size={16} className="shrink-0 text-gold-400" />
-              info@shingle.com
-            </li>
-          </ul>
+              <li>
+                <a
+                  href="mailto:info@shingle.com"
+                  className="flex items-center gap-3 transition-colors hover:text-white"
+                >
+                  <Mail className="h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
+                  info@shingle.com
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      {/* Bottom bar */}
-      <div className="border-t border-gray-800 py-4">
-        <div className="container mx-auto flex flex-col items-center justify-between gap-2 px-4 text-xs text-gray-500 sm:flex-row">
-          <p>&copy; {new Date().getFullYear()} Shingle. All rights reserved.</p>
-          <p>
-            More templates at{' '}
-            <a
-              href="https://www.componentdock.com/"
-              className="text-gold-400 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Component Dock
-            </a>
-          </p>
-        </div>
+      <div className="border-t border-gray-800 py-5 text-center text-sm text-gray-500">
+        © {new Date().getFullYear()} Shingle Roofing. All rights reserved. More templates at{' '}
+        <a
+          href="https://www.componentdock.com/"
+          className="text-brand transition-colors hover:text-brand-dark"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Component Dock
+        </a>
       </div>
     </footer>
   )

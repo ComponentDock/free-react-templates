@@ -1,53 +1,62 @@
 const posts = [
   {
-    seed: 'shingle-blog-1',
     title: 'How to Choose the Right Roofing Material',
-    date: '24 February 2024',
     author: 'John Doe',
+    date: '15 March 2024',
+    seed: 'shingle-blog-1',
   },
   {
-    seed: 'shingle-blog-2',
-    title: 'Signs Your Roof Needs Immediate Repair',
-    date: '18 February 2024',
+    title: 'Signs Your Roof Needs Professional Attention',
     author: 'Jane Smith',
+    date: '28 February 2024',
+    seed: 'shingle-blog-2',
   },
   {
-    seed: 'shingle-blog-3',
-    title: 'Benefits of Regular Roof Maintenance',
-    date: '10 February 2024',
+    title: 'The Benefits of Regular Roof Maintenance',
     author: 'Mike Wilson',
+    date: '10 January 2024',
+    seed: 'shingle-blog-3',
   },
-]
+] as const
 
 export function Blog() {
   return (
-    <section id="blog" className="bg-white py-16">
-      <div className="container mx-auto px-4">
-        <div className="mb-10 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
-            Latest News from Our Blog
-          </h2>
-        </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <section id="blog" className="bg-white py-16 lg:py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 className="text-center text-2xl font-semibold text-ink sm:text-3xl">
+          Latest News from Our Blog
+        </h2>
+
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
             <article
-              key={post.title}
-              className="overflow-hidden rounded border border-gray-200 shadow-sm"
+              key={post.seed}
+              className="group overflow-hidden rounded-2xl bg-white shadow-sm transition-shadow hover:shadow-md dark:bg-gray-800"
             >
-              <img
-                src={`https://picsum.photos/seed/${post.seed}/400/250`}
-                alt={post.title}
-                loading="lazy"
-                className="h-48 w-full object-cover"
-              />
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <img
+                  src={`https://picsum.photos/seed/${post.seed}/600/375`}
+                  alt={post.title}
+                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
               <div className="p-5">
-                <p className="mb-2 text-xs text-gray-400">
-                  Posted by {post.author} · {post.date}
-                </p>
-                <h3 className="mb-3 font-bold text-gray-900">{post.title}</h3>
-                <a href="#" className="text-sm font-semibold text-gold-400 hover:underline">
-                  Read more
-                </a>
+                <div className="flex items-center gap-3 text-xs text-mist">
+                  <img
+                    src={`https://picsum.photos/seed/${post.seed}-author/40/40`}
+                    alt={post.author}
+                    className="h-8 w-8 rounded-full object-cover"
+                    loading="lazy"
+                  />
+                  <div>
+                    <span className="block font-medium text-ink">{post.author}</span>
+                    <span>{post.date}</span>
+                  </div>
+                </div>
+                <h3 className="mt-4 text-base font-semibold text-ink transition-colors group-hover:text-brand">
+                  <a href="#">{post.title}</a>
+                </h3>
               </div>
             </article>
           ))}

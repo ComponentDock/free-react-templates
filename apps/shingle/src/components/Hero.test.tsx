@@ -5,18 +5,21 @@ import { Hero } from './Hero'
 describe('Hero', () => {
   it('renders the heading and CTA button', () => {
     render(<Hero />)
-    expect(screen.getByRole('heading', { name: /Dedicated to Providing/i })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /Book an Appointment/i })).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', {
+        name: /Dedicated to providing the highest quality roofing services/i,
+      }),
+    ).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Book an Appointment/i })).toBeInTheDocument()
   })
 
-  it('CTA links to appointment section', () => {
+  it('renders the hero image with alt text', () => {
     render(<Hero />)
-    const cta = screen.getByRole('link', { name: /Book an Appointment/i })
-    expect(cta).toHaveAttribute('href', '#appointment')
+    expect(screen.getByRole('img', { name: /Professional roofing work/i })).toBeInTheDocument()
   })
 
-  it('renders the subtitle', () => {
-    render(<Hero />)
-    expect(screen.getByText(/We Are Best Roofing Services/i)).toBeInTheDocument()
+  it('has the correct section id', () => {
+    const { container } = render(<Hero />)
+    expect(container.querySelector('#home')).toBeInTheDocument()
   })
 })

@@ -1,32 +1,32 @@
 import { useEffect } from 'react'
-import { TopBar } from './components/TopBar'
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
-import { AppointmentSection } from './components/AppointmentSection'
-import { Counter } from './components/Counter'
+import { About } from './components/About'
+import { Stats } from './components/Stats'
 import { Services } from './components/Services'
-import { Gallery } from './components/Gallery'
+import { Projects } from './components/Projects'
 import { Testimonials } from './components/Testimonials'
 import { Blog } from './components/Blog'
+import { Pricing } from './components/Pricing'
 import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Shingle — Roofing Services Template'
+    document.title = 'Shingle — Roofing Company Template'
   }, [])
 
   return (
-    <div className="min-h-screen bg-white font-sans text-gray-900">
-      <TopBar />
+    <div className="flex min-h-screen flex-col bg-white text-mist transition-colors dark:bg-gray-950 dark:text-white">
       <Navbar />
-      <main>
+      <main className="flex-1">
         <Hero />
-        <AppointmentSection />
-        <Counter />
+        <About />
+        <Stats />
         <Services />
-        <Gallery />
+        <Projects />
         <Testimonials />
         <Blog />
+        <Pricing />
       </main>
       <Footer />
     </div>
