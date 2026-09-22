@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-green: #2c3e2d;
+  --color-brand-green-dark: #1e2b1f;
+  --color-accent-gold: #b8860b;
+  --color-accent-gold-light: #d4a843;
+  --color-bg-warm: #f9f7f4;
+  --color-bg-dark: #1a1a1a;
+  --color-text-body: #555555;
+  --color-text-heading: #1a1a1a;
+
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Lato', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+    color: var(--color-text-body);
+  }
+}
