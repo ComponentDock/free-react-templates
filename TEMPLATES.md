@@ -1911,7 +1911,7 @@
 - [x] **Hiroto** — [colorlib](https://colorlib.com/wp/template/hiroto/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hiroto-free-template.jpg) · [hibiscus](https://free-react-templates-hibiscus.surge.sh)
 - [x] **Hotel** — [colorlib](https://colorlib.com/wp/template/hotel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hotel-free-template.jpg) · [grandstay](https://grandstay.free.componentdock.com)
 - [x] **Hotell** — [colorlib](https://colorlib.com/wp/template/hotell/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hotell-free-template.jpg) · [Concierge](https://concierge.free.componentdock.com)
-- [x] **Islagrande** — [colorlib](https://colorlib.com/wp/template/islagrande/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/islagrande-free-template.jpg) → [Cayo](apps/cayo/)
+- [x] **Islagrande** — [colorlib](https://colorlib.com/wp/template/islagrande/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/islagrande-free-template.jpg) · [cayo](https://free-react-templates-cayo.surge.sh)
 - [x] **Listed2** — [colorlib](https://colorlib.com/wp/template/listed2/) · [spotlight](https://spotlight.free.componentdock.com) · [preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listed2-free-template.jpg)
 - [ ] **Luxehotel** — [colorlib](https://colorlib.com/wp/template/luxehotel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/luxehotel-free-template.jpg)
 - [ ] **Luxury Hotel** — [colorlib](https://colorlib.com/wp/template/luxury-hotel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/luxuryhotel-free-template.jpg)
