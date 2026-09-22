@@ -1924,7 +1924,7 @@
 - [x] **Redplanet** — [colorlib](https://colorlib.com/wp/template/redplanet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/redplanet-free-template.jpg) · [stayhaven](https://stayhaven.free.componentdock.com)
 - [x] **Roberto** — [colorlib](https://colorlib.com/wp/template/roberto/) · [retreat](https://retreat.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/roberto-free-template-1-1.jpg)
 - [x] **Rolax** — [colorlib](https://colorlib.com/wp/template/rolax/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rolax-free-template.jpg) · [lexicon](https://lexicon.free.componentdock.com)
-- [~] **Roxandrea** — [colorlib](https://colorlib.com/wp/template/roxandrea/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/roxandrea-free-template.jpg)
+- [x] **Roxandrea** — [colorlib](https://colorlib.com/wp/template/roxandrea/) · [roxyglow](https://roxyglow.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/roxandrea-free-template.jpg)
 - [x] **Royal** — [colorlib](https://colorlib.com/wp/template/royal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/royal-free-template.jpg) · [hostelry](https://hostelry.free.componentdock.com)
 - [ ] **Samira** — [colorlib](https://colorlib.com/wp/template/samira/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/samira-free-template.jpg)
 - [ ] **Sogo** — [colorlib](https://colorlib.com/wp/template/sogo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sogo-free-template.jpg)
