@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Grandeur brand palette — luxury hotel tokens:
+     brand blue #4d8eff (buttons, accents), dark #222222 (text, headings)
+     body gray #777777, light section bg #f1f9ff, white #ffffff. */
+  --color-brand: #4d8eff;
+  --color-brand-hover: #3a7ae6;
+  --color-ink: #222222;
+  --color-body: #777777;
+  --color-light-alt: #f1f9ff;
+  --color-white: #ffffff;
+
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
