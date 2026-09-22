@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Kinectwell brand palette — recreated from the ColorLib "Physical Therapy"
+   listing page description and CSS patterns. Original preview was 404;
+   design tokens inferred from similar ColorLib medical/therapy templates.
+   Brand green #77CC6D, headings #333, body #777, alt-bg #f9f9f9. */
+@theme {
+  --color-primary-50: #f0f9f0;
+  --color-primary-100: #d4f0d4;
+  --color-primary-200: #a8e0a8;
+  --color-primary-300: #77cc6d;
+  --color-primary-400: #5cb852;
+  --color-primary-500: #4a9e40;
+  --color-primary-600: #3d8234;
+  --color-primary-700: #2f6628;
+  --color-primary-800: #224a1c;
+  --color-primary-900: #152e10;
+
+  --color-brand: #77cc6d;
+  --color-brand-hover: #5cb852;
+  --color-heading: #333333;
+  --color-body: #777777;
+  --color-alt-bg: #f9f9f9;
+  --color-footer-bg: #222222;
+  --color-footer-text: #cccccc;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #333333;
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background: #77cc6d;
+    color: #fff;
+  }
+}
