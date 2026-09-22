@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Vitaflow brand colors — from the ColorLib "Healthcoach" preview
+     (https://preview.colorlib.com/theme/healthcoach/ + css/style.css):
+     a health coaching theme with a blue #1089ff primary,
+     green #a3cb4c accent, dark #131719 footer, and #f8f9fa light bg. */
+  --color-primary-50: #e6f3ff;
+  --color-primary-100: #b3dbff;
+  --color-primary-200: #80c3ff;
+  --color-primary-300: #4dabff;
+  --color-primary-400: #1089ff;
+  --color-primary-500: #0077e6;
+  --color-primary-600: #0065bf;
+  --color-primary-700: #005299;
+  --color-primary-800: #004073;
+  --color-primary-900: #002d4d;
+
+  /* Green accent (ColorLib logo span #a3cb4c). */
+  --color-accent-300: #c8e08a;
+  --color-accent-400: #a3cb4c;
+  --color-accent-500: #8ab33a;
+
+  /* Subscribe button green (#a7cd54). */
+  --color-subscribe: #a7cd54;
+
+  /* Dark blue for consultation form (#006fdc). */
+  --color-darkblue: #006fdc;
+
+  /* Light section bg (#f8f9fa). */
+  --color-mist: #f8f9fa;
+
+  /* Footer bg (#131719). */
+  --color-footer: #131719;
+
+  /* Body text (#212529). */
+  --color-ink: #212529;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
