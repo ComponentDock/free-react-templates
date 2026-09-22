@@ -1895,7 +1895,7 @@
 - [x] **Yogalax** — [colorlib](https://colorlib.com/wp/template/yogalax/) · [shanti](https://shanti.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogalax-free-template.jpg)
 - [x] **Yogalife** — [colorlib](https://colorlib.com/wp/template/yogalife/) · [soulflow](https://soulflow.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogalife-free-template.jpg)
 - [x] **Zacson** — [colorlib](https://colorlib.com/wp/template/zacson/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zacson-free-template.jpg) · [justly](https://justly.free.componentdock.com)
-- [~] **Zogin** — [colorlib](https://colorlib.com/wp/template/zogin/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zogin-free-template.jpg)
+- [x] **Zogin** — [colorlib](https://colorlib.com/wp/template/zogin/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zogin-free-template.jpg) · [fitnest](https://fitnest.free.componentdock.com)
 
 ## Hotel (38)
 
