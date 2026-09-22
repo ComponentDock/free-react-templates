@@ -1845,7 +1845,7 @@
 - [x] **Fitnessclub** — [colorlib](https://colorlib.com/wp/template/fitnessclub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitnessclub-free-template.jpg) · [fitcore](https://fitcore.free.componentdock.com)
 - [x] **Fitnessgym** — [colorlib](https://colorlib.com/wp/template/fitnessgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitnessgym-free-template.jpg) · [vigor](https://vigor.free.componentdock.com)
 - [x] **Fitnesstrainer** — [colorlib](https://colorlib.com/wp/template/fitnesstrainer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitnesstrainer-free-template.jpg) · [ironvault](https://ironvault.free.componentdock.com)
-- [~] **Fitnezz** — [colorlib](https://colorlib.com/wp/template/fitnezz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitnezz-free-template.jpg)
+- [x] **Fitnezz** — [colorlib](https://colorlib.com/wp/template/fitnezz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitnezz-free-template.jpg) · [ironpeak](https://ironpeak.free.componentdock.com)
 - [x] **Fitzone** — [colorlib](https://colorlib.com/wp/template/fitzone/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitzone-free-template.jpg) · [bodyforge](https://free-react-templates-bodyforge.surge.sh)
 - [x] **Fitzone 2** — [colorlib](https://colorlib.com/wp/template/fitzone-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitzone2-free-template.jpg) · [gains](https://gains.free.componentdock.com)
 - [x] **Flawless** — [colorlib](https://colorlib.com/wp/template/flawless/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/flawless-free-template.jpg) · [sculpt](https://sculpt.free.componentdock.com)
