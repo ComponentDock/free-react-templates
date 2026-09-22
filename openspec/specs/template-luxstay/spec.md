@@ -136,217 +136,243 @@ CSS 4 + TypeScript.
   12. **Back-to-top button** (`.gototop` — fixed position, appears on
       scroll, dark bg, white up-arrow icon)
 
-## Gherkin requirements
+## Requirements
 
-### Top Bar
-```gherkin
-Feature: Top Bar
-  Scenario: Top bar displays site info and social links
-    Given the page loads
-    Then a top bar is visible at the very top
-    And the top bar has a light grey background
-    And a site URL or placeholder text is shown on the left
-    And a phone number is shown on the right
-    And social icons for Twitter, Facebook, LinkedIn, and Dribbble are displayed
+### Requirement: Top bar displays site info and social links
 
-  Scenario: Top bar is responsive
-    Given the viewport is 768px or narrower
-    Then the phone number is hidden
-    And the site URL remains visible
-```
+The system SHALL render a top bar at the very top of the page with a light grey background, site URL on the left, phone number on the right, and social icons.
 
-### Main Navigation
-```gherkin
-Feature: Main Navigation
-  Scenario: Navigation displays logo and menu
-    Given the page loads
-    Then the logo "LuxStay" is displayed on the left
-    And menu items Home, Rooms, Dining & Bar, Amenities, Blog, About, Contact are shown
+#### Scenario: Top bar displays site info and social links
 
-  Scenario: Rooms menu item has dropdown
-    Given the user hovers over or taps "Rooms"
-    Then a dropdown appears with submenu items
-    And the dropdown has a dark background with light grey text
+- **GIVEN** the page loads
+- **THEN** a top bar is visible at the very top
+- **AND** the top bar has a light grey background
+- **AND** a site URL or placeholder text is shown on the left
+- **AND** a phone number is shown on the right
+- **AND** social icons for Twitter, Facebook, LinkedIn, and Dribbble are displayed
 
-  Scenario: Navigation is responsive
-    Given the viewport is 768px or narrower
-    Then the menu items are hidden
-    And a hamburger toggle is available
-```
+#### Scenario: Top bar is responsive
 
-### Hero Slider
-```gherkin
-Feature: Hero Slider
-  Scenario: Hero displays fullscreen slider
-    Given the page loads
-    Then a fullscreen hero slider is visible
-    And it contains at least 4 slides
-    And each slide has a background image with a dark overlay
-    And each slide displays a headline (h1) and subheadline (h2)
-    And each slide has two CTA buttons
+- **GIVEN** the viewport is 768px or narrower
+- **THEN** the phone number is hidden
+- **AND** the site URL remains visible
 
-  Scenario: Hero CTA buttons styled correctly
-    Given the hero slider is displayed
-    Then one button has a blue background ("View Detail")
-    And the other button has an orange background ("Know More")
-    And both buttons have uppercase text with letter-spacing
+### Requirement: Navigation displays logo and menu with dropdown
 
-  Scenario: Hero slider is responsive
-    Given the viewport is 480px or narrower
-    Then the CTA buttons stack vertically at full width
-    And the headline text scales down to 28px
-```
+The system SHALL render a sticky navigation bar with the LuxStay logo and menu items, including a Rooms dropdown with dark background.
 
-### Reservation Form Bar
-```gherkin
-Feature: Reservation Form Bar
-  Scenario: Reservation form displays over hero
-    Given the hero slider is visible
-    Then a dark reservation bar overlaps the bottom of the hero
-    And it contains Check-in date, Check-out date, Adults, Children fields
-    And a Search button is displayed
+#### Scenario: Navigation displays logo and menu
 
-  Scenario: Reservation form fields are interactive
-    Given the reservation form is displayed
-    When the user clicks on a date input
-    Then a date picker or input focus is shown
-    And when the user selects adults or children
-    Then a dropdown of options (1-5+) is shown
-```
+- **GIVEN** the page loads
+- **THEN** the logo "LuxStay" is displayed on the left
+- **AND** menu items Home, Rooms, Dining & Bar, Amenities, Blog, About, Contact are shown
 
-### Services Section
-```gherkin
-Feature: Services Section
-  Scenario: Services section displays 4 service cards
-    Given the page loads
-    Then a Services section is visible with a white background
-    And it has a centered heading "Services" with 5 gold stars above
-    And 4 service cards are displayed in a row: 24/7 Front Desk, Spa Suites, Transfer Services, Restaurant & Bar
-    And each card has a circular icon, a title, and a description
+#### Scenario: Rooms menu item has dropdown
 
-  Scenario: Service icons are circular
-    Given the services section is visible
-    Then each service icon is inside a circular container with grey background
-    And the icon color is brand blue
-```
+- **GIVEN** the user hovers over or taps "Rooms"
+- **THEN** a dropdown appears with submenu items
+- **AND** the dropdown has a dark background with light grey text
 
-### Rooms & Suites
-```gherkin
-Feature: Rooms and Suites
-  Scenario: Rooms carousel displays room cards
-    Given the page loads
-    Then a Rooms & Suites section is visible with light grey background
-    And it has a centered heading with 5 gold stars
-    And a carousel of room cards is displayed
-    And each room card has a background image, star rating, room type, price, features list, and Book Now button
+#### Scenario: Navigation is responsive
 
-  Scenario: Room card pricing is styled
-    Given a room card is displayed
-    Then the price is shown in Playfair Display font
-    And the currency symbol and price number are in brand blue
-    And the "per night" label is smaller grey text
+- **GIVEN** the viewport is 768px or narrower
+- **THEN** the menu items are hidden
+- **AND** a hamburger toggle is available
 
-  Scenario: Book Now button is pill-shaped
-    Given a room card is displayed
-    Then the "Book now!" button has rounded pill shape
-    And the button background is brand blue
-    And a "View all rooms" link is shown below the carousel
-```
+### Requirement: Hero slider with fullscreen slides and CTA buttons
 
-### Dining & Bar
-```gherkin
-Feature: Dining and Bar
-  Scenario: Dining section has tabbed menu
-    Given the page loads
-    Then a Dining & Bar section is visible
-    And it has a centered heading with 5 gold stars
-    And three tabs are shown: Mains, Desserts, Drinks
-    And the Mains tab is active by default
-    And each menu item shows a circular thumbnail, dish name, category, and price
+The system SHALL render a fullscreen hero slider with at least 4 slides, each having a background image, dark overlay, headline, and two CTA buttons.
 
-  Scenario: Dining section has orange background
-    Given the Dining & Bar section is visible
-    Then the left half (tabbed menu area) has an orange background
-    And the right half displays a full-height cover image
+#### Scenario: Hero displays fullscreen slider
 
-  Scenario: Tab switching works
-    Given the Dining section is visible
-    When the user clicks the "Desserts" tab
-    Then the dessert menu items are displayed
-    And when the user clicks the "Drinks" tab
-    Then the drinks menu items are displayed
-```
+- **GIVEN** the page loads
+- **THEN** a fullscreen hero slider is visible
+- **AND** it contains at least 4 slides
+- **AND** each slide has a background image with a dark overlay
+- **AND** each slide displays a headline (h1) and subheadline (h2)
+- **AND** each slide has two CTA buttons
 
-### Blog Section
-```gherkin
-Feature: Blog Section
-  Scenario: Blog section displays video and posts
-    Given the page loads
-    Then a Blog section is visible with a white background
-    And it has a centered heading "Recent Blog" with 5 gold stars
-    And a video thumbnail with play button is shown on the left
-    And 3 blog posts are listed on the right
-    And each post has a circular thumbnail, date, title, and category
+#### Scenario: Hero CTA buttons styled correctly
 
-  Scenario: Video play button is circular
-    Given the blog section is visible
-    Then the video play button is a white circle with shadow
-    And the play icon is orange
-```
+- **GIVEN** the hero slider is displayed
+- **THEN** one button has a blue background ("View Detail")
+- **AND** the other button has an orange background ("Know More")
+- **AND** both buttons have uppercase text with letter-spacing
 
-### Testimonials
-```gherkin
-Feature: Testimonials
-  Scenario: Testimonials display customer reviews
-    Given the page loads
-    Then a Testimonials section is visible with light grey background
-    And it has a centered heading "Our Satisfied Guests says" with 3 gold stars
-    And 3 testimonial cards are displayed in a row
-    And each card has a circular user photo, name, "Satisfied Customer" label, and a quote
+#### Scenario: Hero slider is responsive
 
-  Scenario: Testimonial cards have shadow
-    Given the testimonials section is visible
-    Then each testimonial card has a subtle box-shadow
-    And the card background is white
-```
+- **GIVEN** the viewport is 480px or narrower
+- **THEN** the CTA buttons stack vertically at full width
+- **AND** the headline text scales down to 28px
 
-### Newsletter / Subscribe
-```gherkin
-Feature: Newsletter Subscribe
-  Scenario: Newsletter section collects emails
-    Given the page loads
-    Then a newsletter section is visible with a background image and dark overlay
-    And a centered heading "Sign Up for a Newsletter" with 5 gold stars is shown
-    And an email input field is displayed
-    And a "Subscribe" button is next to the input
-    And the subscribe button is brand blue
-```
+### Requirement: Reservation form bar overlapping hero
 
-### Footer
-```gherkin
-Feature: Footer
-  Scenario: Footer has 4 columns
-    Given the page loads
-    Then a footer is visible at the bottom
-    And it has 4 columns: Brand, Quick Links, Recent Blog Posts, Contact Information
-    And the brand column shows the site name and social icons
-    And the contact column shows address, phone, email, and website
+The system SHALL render a dark purple reservation bar that overlaps the hero with date pickers, guest selects, and a search button.
 
-  Scenario: Footer links Component Dock
-    Given the footer is visible
-    Then a copyright line is present
-    And it contains a link to https://www.componentdock.com/ labeled "Component Dock"
-    And there are no references to ColorLib
-```
+#### Scenario: Reservation form displays over hero
 
-### Back-to-Top Button
-```gherkin
-Feature: Back to Top
-  Scenario: Back to top button appears on scroll
-    Given the user scrolls down past the hero
-    Then a back-to-top button appears in the bottom-right corner
-    And clicking it scrolls smoothly to the top
-```
+- **GIVEN** the hero slider is visible
+- **THEN** a dark reservation bar overlaps the bottom of the hero
+- **AND** it contains Check-in date, Check-out date, Adults, Children fields
+- **AND** a Search button is displayed
+
+#### Scenario: Reservation form fields are interactive
+
+- **GIVEN** the reservation form is displayed
+- **WHEN** the user clicks on a date input
+- **THEN** a date picker or input focus is shown
+- **AND** when the user selects adults or children
+- **THEN** a dropdown of options (1-5+) is shown
+
+### Requirement: Services section with 4 service cards
+
+The system SHALL render a Services section with a white background, centered heading with 5 gold stars, and 4 service cards with circular icons.
+
+#### Scenario: Services section displays 4 service cards
+
+- **GIVEN** the page loads
+- **THEN** a Services section is visible with a white background
+- **AND** it has a centered heading "Services" with 5 gold stars above
+- **AND** 4 service cards are displayed: 24/7 Front Desk, Spa Suites, Transfer Services, Restaurant & Bar
+- **AND** each card has a circular icon, a title, and a description
+
+#### Scenario: Service icons are circular
+
+- **GIVEN** the services section is visible
+- **THEN** each service icon is inside a circular container with grey background
+- **AND** the icon color is brand blue
+
+### Requirement: Rooms and Suites carousel
+
+The system SHALL render a Rooms & Suites section with light grey background, centered heading with 5 gold stars, and a carousel of room cards with images, prices, and Book Now buttons.
+
+#### Scenario: Rooms carousel displays room cards
+
+- **GIVEN** the page loads
+- **THEN** a Rooms & Suites section is visible with light grey background
+- **AND** it has a centered heading with 5 gold stars
+- **AND** a carousel of room cards is displayed
+- **AND** each room card has a background image, star rating, room type, price, features list, and Book Now button
+
+#### Scenario: Room card pricing is styled
+
+- **GIVEN** a room card is displayed
+- **THEN** the price is shown in Playfair Display font
+- **AND** the currency symbol and price number are in brand blue
+- **AND** the "per night" label is smaller grey text
+
+#### Scenario: Book Now button is pill-shaped
+
+- **GIVEN** a room card is displayed
+- **THEN** the "Book now!" button has rounded pill shape
+- **AND** the button background is brand blue
+- **AND** a "View all rooms" link is shown below the carousel
+
+### Requirement: Dining and Bar section with tabbed menu
+
+The system SHALL render a Dining & Bar section with orange background, tabbed menu (Mains/Desserts/Drinks), and a cover image on the right.
+
+#### Scenario: Dining section has tabbed menu
+
+- **GIVEN** the page loads
+- **THEN** a Dining & Bar section is visible
+- **AND** it has a centered heading with 5 gold stars
+- **AND** three tabs are shown: Mains, Desserts, Drinks
+- **AND** the Mains tab is active by default
+- **AND** each menu item shows a circular thumbnail, dish name, category, and price
+
+#### Scenario: Dining section has orange background
+
+- **GIVEN** the Dining & Bar section is visible
+- **THEN** the left half (tabbed menu area) has an orange background
+- **AND** the right half displays a full-height cover image
+
+#### Scenario: Tab switching works
+
+- **GIVEN** the Dining section is visible
+- **WHEN** the user clicks the "Desserts" tab
+- **THEN** the dessert menu items are displayed
+- **AND** when the user clicks the "Drinks" tab
+- **THEN** the drinks menu items are displayed
+
+### Requirement: Blog section with video and posts
+
+The system SHALL render a Blog section with a white background, video thumbnail with play button, and 3 blog post entries.
+
+#### Scenario: Blog section displays video and posts
+
+- **GIVEN** the page loads
+- **THEN** a Blog section is visible with a white background
+- **AND** it has a centered heading "Recent Blog" with 5 gold stars
+- **AND** a video thumbnail with play button is shown on the left
+- **AND** 3 blog posts are listed on the right
+- **AND** each post has a circular thumbnail, date, title, and category
+
+#### Scenario: Video play button is circular
+
+- **GIVEN** the blog section is visible
+- **THEN** the video play button is a white circle with shadow
+- **AND** the play icon is orange
+
+### Requirement: Testimonials with customer reviews
+
+The system SHALL render a Testimonials section with light grey background, centered heading with 3 gold stars, and 3 testimonial cards.
+
+#### Scenario: Testimonials display customer reviews
+
+- **GIVEN** the page loads
+- **THEN** a Testimonials section is visible with light grey background
+- **AND** it has a centered heading "Our Satisfied Guests Say" with 3 gold stars
+- **AND** 3 testimonial cards are displayed in a row
+- **AND** each card has a circular user photo, name, "Satisfied Customer" label, and a quote
+
+#### Scenario: Testimonial cards have shadow
+
+- **GIVEN** the testimonials section is visible
+- **THEN** each testimonial card has a subtle box-shadow
+- **AND** the card background is white
+
+### Requirement: Newsletter section collects emails
+
+The system SHALL render a Newsletter section with a background image and dark overlay, email input, and Subscribe button.
+
+#### Scenario: Newsletter section collects emails
+
+- **GIVEN** the page loads
+- **THEN** a newsletter section is visible with a background image and dark overlay
+- **AND** a centered heading "Sign Up for a Newsletter" with 5 gold stars is shown
+- **AND** an email input field is displayed
+- **AND** a "Subscribe" button is next to the input
+- **AND** the subscribe button is brand blue
+
+### Requirement: Footer with 4 columns and Component Dock link
+
+The system SHALL render a footer with 4 columns (Brand, Quick Links, Recent Blog Posts, Contact Information) and a copyright line linking to Component Dock.
+
+#### Scenario: Footer has 4 columns
+
+- **GIVEN** the page loads
+- **THEN** a footer is visible at the bottom
+- **AND** it has 4 columns: Brand, Quick Links, Recent Blog Posts, Contact Information
+- **AND** the brand column shows the site name and social icons
+- **AND** the contact column shows address, phone, email, and website
+
+#### Scenario: Footer links Component Dock
+
+- **GIVEN** the footer is visible
+- **THEN** a copyright line is present
+- **AND** it contains a link to https://www.componentdock.com/ labeled "Component Dock"
+- **AND** there are no references to ColorLib
+
+### Requirement: Back to top button appears on scroll
+
+The system SHALL render a fixed back-to-top button in the bottom-right corner that appears when the user scrolls past 200px.
+
+#### Scenario: Back to top button appears on scroll
+
+- **GIVEN** the user scrolls down past the hero
+- **THEN** a back-to-top button appears in the bottom-right corner
+- **AND** clicking it scrolls smoothly to the top
 
 ## Verification checklist
 
