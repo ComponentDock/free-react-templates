@@ -1,156 +1,126 @@
-# Template: Praxis (Education / University)
+# Spec: Praxis
+
+Recreation of ColorLib "Drpro" (https://colorlib.com/wp/template/drpro/).
 
 ## Purpose
 
-Recreation of ColorLib's **University** template.
-- **Source slug:** `university`
-- **ColorLib page:** https://colorlib.com/wp/template/university/
-- **Preview URL:** https://preview.colorlib.com/theme/university/
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/university-free-template.jpg
-- **New name:** `praxis`
-- **Deploy URL:** https://praxis.free.componentdock.com
-- **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript (strict)
+Praxis is a plastic surgery clinic landing page template. It provides a
+professional, modern design with hero imagery, appointment booking, service
+showcase, and clinic information — aimed at cosmetic surgery practices.
 
-## Design Tokens (extracted from preview CSS)
+## Requirements
 
-| Token | Value | Usage |
-|---|---|---|
-| Font family | `"Rubik", sans-serif` | All text (weights 300/400/500) |
-| Brand color | `#11cbd7` | Buttons, links, primary accents |
-| Background (page) | `#fff` | Body background |
-| Text color | `gray` | Body text / paragraphs |
-| Heading color | `#000` | h1-h4 |
-| Hero overlay | `rgba(0,0,0,0.4)` implied by `.overlay` | Dark overlay on hero background |
-| Section bg (alt) | `bg-light` (#f8f9fa via Bootstrap) | Stats section, courses section, newsletter |
-| Button radius | `4px` | `.btn` border-radius |
-| Navbar bg | `#fff` | White header with box-shadow |
-| Card border-radius | `0` | Most cards/sections use sharp corners |
-| Play button | `border-radius: 50%`, brand color bg | Video play button overlay |
-| Dropdown hover | `#11cbd7` bg, `#fff` text | Nav dropdown items |
+### Requirement: Navbar with navigation and branding
 
-## Section Structure (from live preview DOM)
+The template SHALL render a sticky header with the clinic logo ("Praxis
+Plastic Surgery"), desktop navigation links (Home, About, Services, News,
+Contact), working hours, phone number, "Make an Appointment" CTA, and social
+icons (Instagram, Facebook, Twitter). A hamburger menu SHALL toggle on mobile.
 
-1. **Navbar** — White bg, uppercase "Praxis" logo with letter-spacing, nav links (Home, Courses [dropdown], Categories [dropdown], Blog, About, Contact), Login/Register right-aligned
-2. **Hero** — Full viewport height, background image with dark overlay, search form (keyword input + category select + difficulty select), "Register Now" CTA button, subtitle "We have more than 500 courses to improve your skills"
-3. **Welcome** — Two-column: video image with play button overlay (left on md+, reversed order on mobile), "Welcome to Praxis" heading + body text + "Read More" button
-4. **Features** — 4-column grid: icon cards (Knowledge, Senior High School, College of Arts & Sciences, Unmatched Professor), each with heading + description + "Read More" link
-5. **Stats/Counter** — Light bg, two-column: left image, right "Education is Life" heading + animated counters (Students: 12921, Schools: 51, Books: 3902, Graduates: 1921) with icons
-6. **Popular Courses** — Light bg, centered heading + subtitle + "Enroll Now" button, horizontal carousel of course cards (image + title + description + price/enrolled count)
-7. **Teachers** — Centered heading, 3-column grid of flip cards (front: background image + name + role; back: quote + author info)
-8. **Blog** — Two-column: left "Recent Posts" heading + 4 blog cards (thumbnail + title + meta: date, author, comments), right "Blog" heading + 3 sidebar post cards
-9. **Newsletter/CTA** — Dark brand bg, "Create cool websites" heading + description + email subscribe form
-10. **Footer** — 4-column: brand name + description, Quick Links (2-col), Blog posts (3 items), Contact Information (address, phone, email, hours). Copyright row with social icons.
+#### Scenario: Desktop navbar renders all elements
 
-## Gherkin Requirements
+- **WHEN** the page loads on a wide viewport
+- **THEN** the logo, all nav links, working hours, phone, appointment button, and social icons are visible
 
-### Feature: Navbar
+#### Scenario: Mobile hamburger toggles menu
 
-Scenario: Navbar displays brand and navigation links
-  Given the page loads
-  Then the navbar shows "Praxis" as the brand text (uppercase, letter-spaced)
-  And nav links include Home, Courses, Categories, Blog, About, Contact
-  And Login/Register links appear right-aligned
+- **WHEN** the user taps the hamburger icon
+- **THEN** a mobile menu opens with all nav links and the appointment button
+- **WHEN** the user taps a link in the mobile menu
+- **THEN** the menu closes
 
-Scenario: Navbar is sticky/shadowed on scroll
-  Given the user scrolls down
-  Then the navbar has a box-shadow effect
-  And the navbar remains at the top of the viewport
+### Requirement: Hero section with call-to-action
 
-### Feature: Hero Section
+The template SHALL render a full-width hero section with a background image,
+subtitle "#1 Plastic Surgery Clinic", title "Love the new you", description
+text, two action buttons ("Read More" and "Make an Appointment"), and three
+slider indicator dots.
 
-Scenario: Hero displays full-viewport search area
-  Given the hero section renders
-  Then it covers the full viewport height
-  And it shows a background image with a dark overlay
-  And a heading "Find Online Courses That Suits You" is centered
-  And a search form has keyword input, category dropdown, difficulty dropdown, and Search button
-  And a "Register Now" button is displayed below the form
-  And a subtitle shows "We have more than 500 courses to improve your skills"
+#### Scenario: Hero displays key content
 
-### Feature: Welcome Section
+- **WHEN** the hero section renders
+- **THEN** the subtitle, title, description, and both CTA buttons are visible
+- **AND** three slider dots are rendered
 
-Scenario: Welcome section shows video and text side-by-side
-  Given the welcome section renders
-  Then a video thumbnail with play button appears on one side
-  And "Welcome to Praxis" heading with body text appears on the other side
-  And a "Read More" button in brand color is shown
+### Requirement: Intro section with stats and appointment form
 
-### Feature: Features Section
+The template SHALL render a two-column intro section. The left column SHALL
+show a welcome heading, description, and three milestone statistics (5,000+
+Satisfied Patients, 352 Face Liftings, 718 Injectibles). The right column
+SHALL show an appointment form with Name, Email, Phone, Speciality (select),
+Doctor (select), and Date fields plus a submit button.
 
-Scenario: Features section displays four icon cards in a row
-  Given the features section renders
-  Then 4 cards are shown in a grid (col-md-6 col-lg-3)
-  And each card has an icon, heading, description, and "Read More" link
-  And the four items are Knowledge, Senior High School, College of Arts & Sciences, Unmatched Professor
+#### Scenario: Stats display correctly
 
-### Feature: Stats/Counter Section
+- **WHEN** the intro section renders
+- **THEN** all three milestone values and labels are visible
 
-Scenario: Stats section displays animated counters on light background
-  Given the stats section renders
-  Then it has a light (#f8f9fa) background
-  And an image appears on one side
-  And "Education is Life" heading with description appears on the other side
-  And 4 counter items are displayed: Students (12921), Schools (51), Books (3902), Graduates (1921)
-  And each counter has an icon and animates on scroll into view
+#### Scenario: Appointment form submission
 
-### Feature: Popular Courses
+- **WHEN** the user fills all form fields and clicks submit
+- **THEN** a "Thank you" confirmation message replaces the form
 
-Scenario: Courses section shows a carousel of course cards
-  Given the courses section renders
-  Then it has a light background
-  And "Popular Courses" heading is centered with an "Enroll Now" button
-  And a horizontal carousel displays course cards
-  And each card has an image, title, description, enrolled count, and price (or "Free")
+### Requirement: Why Choose Us section
 
-### Feature: Teachers Section
+The template SHALL render a two-column section with a clinic image on the left
+and a "Why choose us?" heading, description, and three feature items (Only
+Top Products, The Best Doctors, Great Feedback) with icons on the right.
 
-Scenario: Teachers section shows flip cards for faculty
-  Given the teachers section renders
-  Then "Teachers" heading is centered
-  And 3 flip cards are displayed in a row
-  And each card's front shows a background image with name and role
-  And each card's back shows a testimonial quote and author info
+#### Scenario: Features are displayed
 
-### Feature: Blog Section
+- **WHEN** the section renders
+- **THEN** all three feature titles and descriptions are visible
 
-Scenario: Blog section shows recent posts with sidebar
-  Given the blog section renders
-  Then "Recent Posts" heading appears on the left column
-  And 4 blog post cards are listed (thumbnail, title, date, author, comment count)
-  And a "Blog" sidebar on the right shows 3 additional post cards
+### Requirement: Call-to-action banner
 
-### Feature: Newsletter/CTA
+The template SHALL render a full-width coral banner with "Make your
+appointment today!" title, description text, and a clickable phone number.
 
-Scenario: Newsletter section invites email subscription
-  Given the newsletter section renders
-  Then it has a dark brand-colored background (#11cbd7)
-  And "Create cool websites" heading appears on the left
-  And an email input + Subscribe button appear on the right
+#### Scenario: CTA phone link works
 
-### Feature: Footer
+- **WHEN** the CTA banner renders
+- **THEN** the phone number links to the tel: protocol
 
-Scenario: Footer shows brand info, links, blog, and contact
-  Given the footer renders
-  Then it has 4 columns: brand description, Quick Links, Blog posts, Contact Information
-  And Quick Links include Home, About Us, Courses, Pages, News, Support, Contact, Privacy
-  And Contact Information shows address, phone, email, and business hours
-  And a copyright row appears with social media icon links
-  And the footer links to https://www.componentdock.com/ ("Component Dock")
+### Requirement: Services grid
 
-## Verification Checklist
+The template SHALL render six service cards in a 3-column grid, each with an
+icon, title, and description (Facial Rejuvenation, Breast Augmentation,
+Rhinoplasty, Injectable Treatments, Body Contouring, Smile Makeover).
 
-- [ ] Navbar: white bg, uppercase brand, nav links, Login/Register
-- [ ] Hero: full viewport, background image + overlay, search form, CTA
-- [ ] Welcome: video thumbnail + play button, text + Read More
-- [ ] Features: 4 icon cards in grid
-- [ ] Stats: light bg, image + animated counters (4 items)
-- [ ] Courses: carousel of course cards with price info
-- [ ] Teachers: 3 flip cards (front/back)
-- [ ] Blog: recent posts + sidebar
-- [ ] Newsletter: brand bg, email subscribe form
-- [ ] Footer: 4-col layout, Quick Links, Blog, Contact, copyright + social
-- [ ] All colors match tokens (#11cbd7 brand, Rubik font, etc.)
-- [ ] Footer links to componentdock.com
-- [ ] No ColorLib references in app code
-- [ ] 100% test coverage
-- [ ] Spec validation passes (`npm run spec:validate`)
+#### Scenario: All services render
+
+- **WHEN** the services section renders
+- **THEN** all six service cards with titles and descriptions are visible
+
+### Requirement: Parallax discount section
+
+The template SHALL render a parallax background section with a large "30%"
+discount badge, "Only in August" title, description, and a "Read More" button.
+
+#### Scenario: Discount section content
+
+- **WHEN** the parallax section renders
+- **THEN** the discount percentage, title, description, and button are visible
+
+### Requirement: Newsletter signup
+
+The template SHALL render a newsletter section with a coral overlay,
+"Subscribe to our newsletter" heading, email input, and subscribe button.
+
+#### Scenario: Newsletter form is interactive
+
+- **WHEN** the user types an email and clicks subscribe
+- **THEN** the form submits without page navigation
+
+### Requirement: Footer with Component Dock link
+
+The template SHALL render a four-column footer with About (logo +
+description), Contact Info, Locations (Miami, Los Angeles), and Opening Hours.
+The bottom bar SHALL include a copyright line with a link to
+https://www.componentdock.com/ branded "Component Dock", plus footer nav links.
+
+#### Scenario: Component Dock link is present
+
+- **WHEN** the footer renders
+- **THEN** a link to https://www.componentdock.com/ with text "Component Dock" exists
+- **AND** the link opens in a new tab
