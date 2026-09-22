@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* RoxyGlow brand palette — luxury hotel tokens:
+     brand gold #b69100 (buttons, accents), black #000000 (text, headings)
+     body gray #777777, light section bg #f8f9fa, white #ffffff. */
+  --color-brand: #b69100;
+  --color-brand-hover: #9a7a00;
+  --color-ink: #000000;
+  --color-body: #777777;
+  --color-light-alt: #f8f9fa;
+  --color-white: #ffffff;
+  --color-dark-bg: #312b30;
+
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
