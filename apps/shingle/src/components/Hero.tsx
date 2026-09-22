@@ -1,24 +1,33 @@
+import { Button } from '@free-react-templates/ui'
+
 export function Hero() {
   return (
-    <section
-      id="home"
-      className="relative flex min-h-[600px] items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: "url('https://picsum.photos/seed/shingle-hero/1920/1080')" }}
-    >
-      <div className="absolute inset-0 bg-black/40" />
-      <div className="relative z-10 px-4 text-center">
-        <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-gold-400">
-          We Are Best Roofing Services
-        </p>
-        <h1 className="mb-6 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-          Dedicated to Providing the Highest Quality Roofing Services
-        </h1>
-        <a
-          href="#appointment"
-          className="inline-block border-2 border-gold-400 px-8 py-3 text-sm font-semibold uppercase tracking-wide text-gold-400 transition-colors hover:bg-gold-400 hover:text-white"
-        >
-          Book an Appointment
-        </a>
+    <section id="home" className="relative overflow-hidden bg-dark">
+      <div className="absolute inset-0">
+        <img
+          src="https://picsum.photos/seed/shingle-hero/1600/900"
+          alt="Professional roofing work"
+          className="h-full w-full object-cover opacity-40"
+        />
+      </div>
+      <div className="relative mx-auto max-w-6xl px-4 py-24 sm:px-6 lg:py-36">
+        <div className="max-w-2xl text-center text-white">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-white/80">
+            We are the best Roofing Services
+          </p>
+          <h1 className="mt-4 text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
+            Dedicated to providing the highest quality roofing services
+          </h1>
+          <div className="mt-8">
+            <Button
+              variant="primary"
+              size="lg"
+              className="rounded-full bg-brand px-8 uppercase tracking-wider hover:bg-brand-dark"
+            >
+              Book an Appointment
+            </Button>
+          </div>
+        </div>
       </div>
     </section>
   )

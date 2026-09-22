@@ -1,21 +1,51 @@
 @import 'tailwindcss';
 
-/* Class-based dark mode (toggled on <html>) */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Shingle brand palette — gold accent (#d9ba2b) from the original design */
-  --color-gold-50: #fdf9e8;
-  --color-gold-100: #faf0c4;
-  --color-gold-200: #f5e28b;
-  --color-gold-300: #efcf4f;
-  --color-gold-400: #d9ba2b;
-  --color-gold-500: #c4a41f;
-  --color-gold-600: #a38318;
-  --color-gold-700: #7d6214;
-  --color-gold-800: #5a4610;
-  --color-gold-900: #3d2f0c;
+  /* Shingle brand palette — recreated from the ColorLib "Roofing" design.
+     Primary blue #007bff, gold accent #d9ba2b, dark wrap #202020,
+     navbar white #fff, body text gray, headings rgba(0,0,0,0.8). */
 
-  /* Poppins — the original template's typeface */
+  --color-brand: #007bff;
+  --color-brand-dark: #0062cc;
+  --color-gold: #d9ba2b;
+  --color-dark: #202020;
+  --color-paper: #f8f9fa;
+  --color-ink: #212529;
+  --color-mist: #6c757d;
+
+  --color-primary-50: #e7f3ff;
+  --color-primary-100: #c0dfff;
+  --color-primary-200: #86c5ff;
+  --color-primary-300: #42a5ff;
+  --color-primary-400: #007bff;
+  --color-primary-500: #007bff;
+  --color-primary-600: #0062cc;
+  --color-primary-700: #004999;
+  --color-primary-800: #003166;
+  --color-primary-900: #001833;
+
   --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: var(--color-mist);
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-ink);
+    font-weight: 400;
+    line-height: 1.5;
+  }
 }

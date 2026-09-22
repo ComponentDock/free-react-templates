@@ -1,48 +1,46 @@
 import { describe, expect, it } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { Navbar } from './Navbar'
 
 describe('Navbar', () => {
-  it('renders all nav links', () => {
+  it('shows the site name, nav links, dark-mode toggle, and menu button', () => {
     render(<Navbar />)
-    for (const label of ['Home', 'About', 'Services', 'Projects', 'Blog', 'Contact']) {
-      expect(screen.getAllByRole('link', { name: label }).length).toBeGreaterThanOrEqual(1)
-    }
+    expect(screen.getByText('Shingle')).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Home' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'About' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Services' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Toggle dark mode' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Open menu' })).toBeInTheDocument()
   })
 
-  it('hides the mobile menu initially and toggles it open/closed', async () => {
+  it('toggles the .dark class on the document root', async () => {
     const user = userEvent.setup()
     render(<Navbar />)
+    expect(document.documentElement.classList.contains('dark')).toBe(false)
+    await user.click(screen.getByRole('button', { name: 'Toggle dark mode' }))
+    expect(document.documentElement.classList.contains('dark')).toBe(true)
+    await user.click(screen.getByRole('button', { name: 'Toggle dark mode' }))
+    expect(document.documentElement.classList.contains('dark')).toBe(false)
+  })
 
+  it('opens and closes the mobile menu', async () => {
+    const user = userEvent.setup()
+    render(<Navbar />)
     const toggle = screen.getByRole('button', { name: 'Open menu' })
-    expect(toggle).toHaveAttribute('aria-expanded', 'false')
-
     await user.click(toggle)
-    expect(screen.getByRole('button', { name: 'Close menu' })).toHaveAttribute(
-      'aria-expanded',
-      'true',
-    )
-
-    await user.click(screen.getByRole('button', { name: 'Close menu' }))
-    expect(screen.getByRole('button', { name: 'Open menu' })).toHaveAttribute(
-      'aria-expanded',
-      'false',
-    )
+    const mobileNav = screen.getByRole('navigation', { name: 'Mobile' })
+    expect(mobileNav).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Close menu' })).toBeInTheDocument()
+    await user.click(within(mobileNav).getByRole('link', { name: 'Services' }))
+    expect(screen.queryByRole('navigation', { name: 'Mobile' })).not.toBeInTheDocument()
   })
 
-  it('closes the mobile menu when a link is clicked', async () => {
-    const user = userEvent.setup()
+  it('renders social media links in the top bar', () => {
     render(<Navbar />)
-    await user.click(screen.getByRole('button', { name: 'Open menu' }))
-
-    const links = screen.getAllByRole('link', { name: 'Services' })
-    const mobileLink = links[links.length - 1]!
-    await user.click(mobileLink)
-
-    expect(screen.getByRole('button', { name: 'Open menu' })).toHaveAttribute(
-      'aria-expanded',
-      'false',
-    )
+    expect(screen.getByLabelText('Facebook')).toBeInTheDocument()
+    expect(screen.getByLabelText('Twitter')).toBeInTheDocument()
+    expect(screen.getByLabelText('Instagram')).toBeInTheDocument()
+    expect(screen.getByLabelText('LinkedIn')).toBeInTheDocument()
   })
 })

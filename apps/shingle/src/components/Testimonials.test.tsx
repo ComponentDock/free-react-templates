@@ -3,22 +3,25 @@ import { render, screen } from '@testing-library/react'
 import { Testimonials } from './Testimonials'
 
 describe('Testimonials', () => {
-  it('renders the section heading', () => {
+  it('renders the heading', () => {
     render(<Testimonials />)
     expect(screen.getByRole('heading', { name: /Happy Clients/i })).toBeInTheDocument()
   })
 
-  it('renders 3 testimonial cards', () => {
+  it('displays all 3 testimonials with names and roles', () => {
     render(<Testimonials />)
-    expect(screen.getByText(/Sarah Johnson/)).toBeInTheDocument()
-    expect(screen.getByText(/Michael Chen/)).toBeInTheDocument()
-    expect(screen.getByText(/Emily Davis/)).toBeInTheDocument()
+    expect(screen.getByText('Sarah Mitchell')).toBeInTheDocument()
+    expect(screen.getByText('Homeowner')).toBeInTheDocument()
+    expect(screen.getByText('James Carter')).toBeInTheDocument()
+    expect(screen.getByText('Business Owner')).toBeInTheDocument()
+    expect(screen.getByText('Emily Rodriguez')).toBeInTheDocument()
+    expect(screen.getByText('Property Manager')).toBeInTheDocument()
   })
 
-  it('renders quotes', () => {
+  it('displays testimonial quotes', () => {
     render(<Testimonials />)
-    expect(screen.getByText(/Excellent roofing service/i)).toBeInTheDocument()
-    expect(screen.getByText(/Professional team with great attention/i)).toBeInTheDocument()
-    expect(screen.getByText(/We have used their services/i)).toBeInTheDocument()
+    expect(screen.getByText(/Excellent service from start to finish/)).toBeInTheDocument()
+    expect(screen.getByText(/Professional, punctual, and affordable/)).toBeInTheDocument()
+    expect(screen.getByText(/After the storm damage/)).toBeInTheDocument()
   })
 })

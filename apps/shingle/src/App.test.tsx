@@ -5,7 +5,7 @@ import { App } from './App'
 describe('App', () => {
   it('sets the document title', () => {
     render(<App />)
-    expect(document.title).toBe('Shingle — Roofing Services Template')
+    expect(document.title).toBe('Shingle — Roofing Company Template')
   })
 
   it('composes every section in the main landmark', () => {
