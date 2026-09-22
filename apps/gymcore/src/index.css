@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Gymcore brand palette — recreated from the ColorLib "Gutim" design
+     (css/style.css): coral #f15d44 accents, gradient buttons
+     #eb3c5a → #f67831, dark bg #141414, gray cards #1e1e1e,
+     light sections #f5f5f5, body text #6b6b6b, headings #111111. */
+  --color-brand: #f15d44;
+  --color-brand-dark: #e85d39;
+
+  /* Ink — dark headings (#111111). */
+  --color-ink: #111111;
+
+  /* Body text gray (#6b6b6b). */
+  --color-mist: #6b6b6b;
+
+  /* Paper — light section backgrounds (#f5f5f5). */
+  --color-paper: #f5f5f5;
+
+  /* Slate — dark service background (#141414). */
+  --color-slate: #141414;
+
+  /* Card gray (#1e1e1e). */
+  --color-card-gray: #1e1e1e;
+
+  /* Button gradient start/end. */
+  --color-btn-start: #eb3c5a;
+  --color-btn-end: #f67831;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the coral brand. */
+  --color-primary-50: #fef2f0;
+  --color-primary-100: #fde1dc;
+  --color-primary-200: #fac3b8;
+  --color-primary-300: #f69c89;
+  --color-primary-400: #f17660;
+  --color-primary-500: #f15d44;
+  --color-primary-600: #e85d39;
+  --color-primary-700: #c93420;
+  --color-primary-800: #a52c1d;
+  --color-primary-900: #86281d;
+
+  /* Font: Poppins. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
