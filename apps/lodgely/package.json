@@ -1,6 +1,7 @@
 {
   "name": "@free-react-templates/lodgely",
   "private": true,
+  "homepage": "https://lodgely.free.componentdock.com",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
@@ -11,6 +12,7 @@
   },
   "dependencies": {
     "@free-react-templates/ui": "*",
+    "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
@@ -28,6 +30,5 @@
     "typescript": "latest",
     "vite": "latest",
     "vitest": "latest"
-  },
-  "homepage": "https://lodgely.free.componentdock.com"
+  }
 }

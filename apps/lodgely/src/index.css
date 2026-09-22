@@ -1,42 +1,43 @@
 @import 'tailwindcss';
 
 /* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
-   prefers-color-scheme; kept for parity with the shared ui package. Lodgely
-   itself is a dark-only page. */
+   prefers-color-scheme; the app toggles a .dark class instead. */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Lodgely brand palette — recreated from the ColorLib "Colorlib Booking
-     Form V16" design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-16/):
-     olive/lime green #6c8f18 is the ONLY brand color (solid "Check
-     availability" button background, white text). */
-  --color-brand: #6c8f18;
+  /* Lodgely brand palette — recreated from the ColorLib "Sogo" design:
+     golden amber #ffba5a is the primary accent (CTA buttons, price text,
+     hover states). Body text #6c757d, headings #000, light bg #f2f4fb. */
+  --color-brand: #ffba5a;
+  --color-brand-dark: #e5a44e;
 
-  /* Panel — the near-black form panel background (#1e1e1e). */
-  --color-panel: #1e1e1e;
+  /* Ink — dark body text (#6c757d muted gray). */
+  --color-ink: #6c757d;
+  --color-ink-dark: #495057;
 
-  /* Input — the dark input/select fill (#2d2d2d). */
-  --color-input: #2d2d2d;
+  /* Paper — light section background (#f2f4fb). */
+  --color-paper: #f2f4fb;
 
-  /* Smoke — placeholders + empty date input text (rgba(255,255,255,0.3)). */
-  --color-smoke: rgba(255, 255, 255, 0.3);
+  /* Mist — muted text (#adb5bd). */
+  --color-mist: #adb5bd;
 
-  /* Primary scale so the shared ui Button `primary` variant resolves to the
-     olive green (600 = #6c8f18). */
-  --color-primary-50: #f7f9ee;
-  --color-primary-100: #e9efd0;
-  --color-primary-200: #d3dfa2;
-  --color-primary-300: #b9cd6e;
-  --color-primary-400: #a2bc45;
-  --color-primary-500: #86a32b;
-  --color-primary-600: #6c8f18;
-  --color-primary-700: #587414;
-  --color-primary-800: #465d11;
-  --color-primary-900: #394c0e;
+  /* Dark — dark headings (#000000). */
+  --color-dark: #000000;
 
-  /* Original font: Hind (400/700) via Google Fonts. */
-  --font-sans:
-    'Hind', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-  --font-display:
-    'Hind', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the golden amber CTA color. */
+  --color-primary-50: #fff9eb;
+  --color-primary-100: #ffefc6;
+  --color-primary-200: #ffdd88;
+  --color-primary-300: #ffcc4a;
+  --color-primary-400: #ffba5a;
+  --color-primary-500: #ffba5a;
+  --color-primary-600: #e5a44e;
+  --color-primary-700: #cc8e42;
+  --color-primary-800: #b37836;
+  --color-primary-900: #99622a;
+
+  /* Font: Playfair Display (serif) for headings, Roboto (sans-serif) for body. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
 }
