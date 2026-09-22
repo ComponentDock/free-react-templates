@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Zenbloom brand palette — recreated from the ColorLib Yogabest design
+     (green accent #6cae22, orange accent #F96D00). */
+  --color-sage-50: #f4f9ee;
+  --color-sage-100: #e6f2d8;
+  --color-sage-200: #cce5b1;
+  --color-sage-300: #a8d27e;
+  --color-sage-400: #6cae22;
+  --color-sage-500: #5a941c;
+  --color-sage-600: #467715;
+  --color-sage-700: #355b11;
+  --color-sage-800: #2d4a10;
+  --color-sage-900: #273e0f;
+
+  --color-ember-50: #fff5eb;
+  --color-ember-100: #ffe6cc;
+  --color-ember-200: #ffc999;
+  --color-ember-300: #ffa366;
+  --color-ember-400: #f96d00;
+  --color-ember-500: #e55d00;
+  --color-ember-600: #c44d00;
+  --color-ember-700: #9c3c00;
+  --color-ember-800: #7d3000;
+  --color-ember-900: #662800;
+
+  /* Poppins — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  /* Reenie Beanie — cursive display font for subheadings */
+  --font-display: 'Reenie Beanie', cursive;
+}
