@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Graincraft brand palette — gold #bfb332 accents, dark #111111 headings/footer,
+     dark #111111, gold #bfb332, light bg #faf5f0, white #ffffff. */
+  --color-brand: #bfb332;
+  --color-brand-dark: #a99d2c;
+
+  /* Ink — dark headings/footer (#111111 from the original). */
+  --color-ink: #111111;
+
+  /* Paper — light section background (#faf5f0 from the original). */
+  --color-paper: #faf5f0;
+
+  /* Mist — muted body text (#999999 from the original). */
+  --color-mist: #999999;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the gold/yellow. */
+  --color-primary-50: #fdfde7;
+  --color-primary-100: #fcfac5;
+  --color-primary-200: #f8f48f;
+  --color-primary-300: #f1eb4f;
+  --color-primary-400: #e5dc26;
+  --color-primary-500: #bfb332;
+  --color-primary-600: #a99d2c;
+  --color-primary-700: #8a7e24;
+  --color-primary-800: #6b611c;
+  --color-primary-900: #5a511a;
+
+  /* Fonts: Josefin Sans (body/headings) + Rajdhani (stats/numbers). */
+  --font-sans: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Rajdhani', ui-sans-serif, system-ui, sans-serif;
+}
