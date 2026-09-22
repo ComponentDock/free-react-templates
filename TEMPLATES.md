@@ -1879,7 +1879,7 @@
 - [x] **Sportify** — [colorlib](https://colorlib.com/wp/template/sportify/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sportify-free-template.jpg) · [fitlane](https://fitlane.free.componentdock.com)
 - [x] **Sportsfit** — [colorlib](https://colorlib.com/wp/template/sportsfit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sportsfit-free-template.jpg) · [sportium](https://sportium.free.componentdock.com)
 - [x] **Stamina** — [colorlib](https://colorlib.com/wp/template/stamina/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stamina-free-template.jpg) · [grit](https://grit.free.componentdock.com)
-- [ ] **Thebasketball** — [colorlib](https://colorlib.com/wp/template/thebasketball/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thebasketball-free-template.jpg)
+- [~] **Thebasketball** — [colorlib](https://colorlib.com/wp/template/thebasketball/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thebasketball-free-template.jpg)
 - [x] **Topgym** — [colorlib](https://colorlib.com/wp/template/topgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/topgym-free-template.jpg) · [ironpulse](https://ironpulse.free.componentdock.com)
 - [x] **Vigor** — [colorlib](https://colorlib.com/wp/template/vigor/) · [vigor](https://vigor.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vigor-free-template.jpg)
 - [x] **Vitality** — [colorlib](https://colorlib.com/wp/template/vitality/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vitality-template-1770211473540.jpg) · [cura](https://cura.free.componentdock.com)
@@ -2843,7 +2843,7 @@
 - [ ] **Specer** — [colorlib](https://colorlib.com/wp/template/specer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/specer-free-template.jpg)
 - [ ] **Sportsteam** — [colorlib](https://colorlib.com/wp/template/sportsteam/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sportsteam-free-template.jpg)
 - [ ] **Sportz** — [colorlib](https://colorlib.com/wp/template/sportz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sportz-free-template.jpg)
-- [ ] **Thebasketball** — [colorlib](https://colorlib.com/wp/template/thebasketball/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thebasketball-free-template.jpg)
+- [~] **Thebasketball** — [colorlib](https://colorlib.com/wp/template/thebasketball/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thebasketball-free-template.jpg)
 
 ## Startup (17)
 
