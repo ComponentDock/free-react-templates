@@ -1853,7 +1853,7 @@
 - [x] **Gym** — [colorlib](https://colorlib.com/wp/template/gym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gym-free-template.jpg) · [iron](https://free-react-templates-iron.surge.sh)
 - [x] **Gym2** — [colorlib](https://colorlib.com/wp/template/gym2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gym2-free-template.jpg) · [gymbox](https://free-react-templates-gymbox.surge.sh)
 - [x] **Gymer** — [colorlib](https://colorlib.com/wp/template/gymer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gymer-free-template.jpg) · [pumply](https://pumply.free.componentdock.com)
-- [ ] **Gymlife** — [colorlib](https://colorlib.com/wp/template/gymlife/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gymlife-free-template.jpg)
+- [~] **Gymlife** — [colorlib](https://colorlib.com/wp/template/gymlife/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gymlife-free-template.jpg)
 - [ ] **Healthcoach** — [colorlib](https://colorlib.com/wp/template/healthcoach/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/healthcoach-free-template.jpg)
 - [ ] **Healthcouch** — [colorlib](https://colorlib.com/wp/template/healthcouch/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/healthcouch-free-template.jpg)
 - [x] **Healthvest** — [colorlib](https://colorlib.com/wp/template/healthvest/) · [medair](https://medair.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/healthvest-free-template.jpg)
