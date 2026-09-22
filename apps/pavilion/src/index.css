@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pavilion brand palette — gold accent, dark navy headings, gray body text */
+  --color-brand: #dca73a;
+  --color-brand-dark: #c4922e;
+
+  --color-ink: #0b1c39;
+  --color-ink-dark: #06101f;
+
+  --color-paper: #f8f9fa;
+  --color-mist: #778090;
+  --color-link: #1696e7;
+
+  --color-primary-50: #fdf8ec;
+  --color-primary-100: #faefd0;
+  --color-primary-200: #f5dda1;
+  --color-primary-300: #edc866;
+  --color-primary-400: #dca73a;
+  --color-primary-500: #c4922e;
+  --color-primary-600: #a87724;
+  --color-primary-700: #8a5c1d;
+  --color-primary-800: #6e491a;
+  --color-primary-900: #5a3c18;
+
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Noto Serif', ui-serif, Georgia, serif;
+}
