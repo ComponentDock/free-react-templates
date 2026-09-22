@@ -1920,7 +1920,7 @@
 - [x] **Marimar** — [colorlib](https://colorlib.com/wp/template/marimar/) · [seaview](https://seaview.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/marimar-free-template.jpg)
 - [x] **Montana** — [colorlib](https://colorlib.com/wp/template/montana/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/montana-free-template.jpg) · [highland](https://free-react-templates-highland.surge.sh)
 - [x] **Ocheandeview** — [colorlib](https://colorlib.com/wp/template/ocheandeview/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ocheandeview-colorlib-template.jpg) · [havenshore](https://free-react-templates-havenshore.surge.sh)
-- [~] **Radisson** — [colorlib](https://colorlib.com/wp/template/radisson/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/radisson-free-template.jpg)
+- [x] **Radisson** — [colorlib](https://colorlib.com/wp/template/radisson/) · [grandeur](https://grandeur.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/radisson-free-template.jpg)
 - [x] **Redplanet** — [colorlib](https://colorlib.com/wp/template/redplanet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/redplanet-free-template.jpg) · [stayhaven](https://stayhaven.free.componentdock.com)
 - [x] **Roberto** — [colorlib](https://colorlib.com/wp/template/roberto/) · [retreat](https://retreat.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/roberto-free-template-1-1.jpg)
 - [x] **Rolax** — [colorlib](https://colorlib.com/wp/template/rolax/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rolax-free-template.jpg) · [lexicon](https://lexicon.free.componentdock.com)
