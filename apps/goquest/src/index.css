@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #014b85;
+  --color-brand-hover: #013968;
+  --color-accent-yellow: #fde02f;
+  --color-accent-warm: #ffb400;
+  --color-accent-warm-alt: #ffa801;
+  --color-accent-red: #e6373d;
+  --color-navy-dark: #0e1c35;
+  --color-heading: #0b1c39;
+  --color-body: #506172;
+  --color-nav-text: #264247;
+  --color-card-border: #f0f1f2;
+  --color-price: #4cafa4;
+  --color-star: #ffa800;
+  --color-footer-text: #ced9e1;
+  --font-heading: 'Barlow Condensed', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+  --font-display: 'Satisfy', cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+  }
+}
