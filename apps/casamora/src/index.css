@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #fd7e14;
+  --color-brand-dark: #e86e0a;
+  --color-body-bg: #ffffff;
+  --color-light-bg: #f8f9fa;
+  --color-footer-bg: #1a1a1a;
+  --color-body-text: #6c757d;
+  --color-heading-text: #000000;
+  --font-body: 'Mukta Mahee', arial, sans-serif;
+  --font-heading: 'Playfair Display', times, serif;
+}
