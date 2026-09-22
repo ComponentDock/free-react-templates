@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* PowerGrip brand palette — design tokens from the ColorLib Robust preview:
+   brand red #DC2F2F (buttons, links, hover states), ink #333333 (headings),
+   muted #999999 (body text), light #f8f8f8 (alternating section bg).
+   Font: Poppins via Google Fonts <link> in index.html. */
+@theme {
+  --color-primary-50: #fdf2f2;
+  --color-primary-100: #fce1e1;
+  --color-primary-200: #fac8c8;
+  --color-primary-300: #f5a0a0;
+  --color-primary-400: #eb6868;
+  --color-primary-500: #dc2f2f;
+  --color-primary-600: #c42424;
+  --color-primary-700: #a51c1c;
+  --color-primary-800: #881b1b;
+  --color-primary-900: #721d1d;
+
+  --color-brand: #dc2f2f;
+  --color-brand-dark: #c42424;
+  --color-ink: #333333;
+  --color-muted: #999999;
+  --color-body: #666666;
+  --color-light: #f8f8f8;
+  --color-overlay: rgba(0, 0, 0, 0.7);
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+}
