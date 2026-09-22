@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #f23a2e;
+  --color-brand-hover: #d9322a;
+  --color-dark: #000000;
+  --color-offwhite: #f8f9fa;
+  --color-ink: #333333;
+  --color-muted: #777777;
+
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
