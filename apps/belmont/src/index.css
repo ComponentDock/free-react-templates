@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Belmont brand palette — deep purple (#5a2360) inspired by the original design. */
+  --color-brand: #5a2360;
+  --color-brand-dark: #320d36;
+  --color-brand-darker: #081123;
+  --color-brand-darkest: #010918;
+
+  /* Accent — warm tan (#d6baa0). */
+  --color-accent: #d6baa0;
+
+  /* Ink — dark text (#333333). */
+  --color-ink: #333333;
+
+  /* Mist — muted text (#8d8d8d). */
+  --color-mist: #8d8d8d;
+
+  /* Light text (#a5a5a5). */
+  --color-light: #a5a5a5;
+
+  /* Link color — peach (#ffa07f). */
+  --color-link: #ffa07f;
+
+  /* Paper — white. */
+  --color-paper: #ffffff;
+
+  /* Primary scale so shared Button/ButtonLink `primary` variants resolve. */
+  --color-primary-50: #f5e6f6;
+  --color-primary-100: #e6c2e8;
+  --color-primary-200: #cc85d0;
+  --color-primary-300: #a84db5;
+  --color-primary-400: #7a2d82;
+  --color-primary-500: #5a2360;
+  --color-primary-600: #4a1d50;
+  --color-primary-700: #3a1740;
+  --color-primary-800: #2a1130;
+  --color-primary-900: #1a0b20;
+
+  /* Fonts — Montserrat (body) + Playfair Display (headings). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
