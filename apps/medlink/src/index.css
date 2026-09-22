@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* MedLink brand palette — bright lime green medical template */
+  --color-brand: #76b900;
+  --color-brand-dark: #5a8f00;
+  --color-heading: #333333;
+  --color-body-text: #666666;
+  --color-light-bg: #f9f9f9;
+  --color-border: #e5e5e5;
+  --color-topbar-bg: #333333;
+  --color-topbar-text: #ffffff;
+
+  --color-primary-50: #f0f9e6;
+  --color-primary-100: #d9f0b8;
+  --color-primary-200: #c2e78a;
+  --color-primary-300: #abde5c;
+  --color-primary-400: #94d52e;
+  --color-primary-500: #76b900;
+  --color-primary-600: #5a8f00;
+  --color-primary-700: #436b00;
+  --color-primary-800: #2c4700;
+  --color-primary-900: #152400;
+
+  /* Fonts: Poppins via Google Fonts */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
