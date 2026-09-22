@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-lounge-900: #2c2727;
+  --color-lounge-800: #3c312e;
+  --color-lounge-700: #4a3f3c;
+  --color-lounge-600: #5c504d;
+  --color-lounge-500: #7a6e6b;
+  --color-lounge-400: #9a8e8b;
+  --color-lounge-300: #bab0ad;
+  --color-lounge-200: #d5cfcd;
+  --color-lounge-100: #eae6e5;
+  --color-lounge-50: #f5f2f1;
+
+  --color-brand: #ff6138;
+  --color-brand-hover: #ff4312;
+
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+}

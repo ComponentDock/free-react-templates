@@ -1901,7 +1901,7 @@
 
 - [x] **Bright Hotel** — [colorlib](https://colorlib.com/wp/template/bright-hotel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brighthotel-free-template.jpg) · [hotelbreeze](https://free-react-templates-hotelbreeze.surge.sh)
 - [x] **Casahotel** — [colorlib](https://colorlib.com/wp/template/casahotel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/casahotel-free-template.jpg) · [casamora](https://free-react-templates-casamora.surge.sh)
-- [ ] **Cozy** — [colorlib](https://colorlib.com/wp/template/cozy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cozy-free-template.jpg)
+- [~] **Cozy** — [colorlib](https://colorlib.com/wp/template/cozy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cozy-free-template.jpg)
 - [ ] **Deluxe** — [colorlib](https://colorlib.com/wp/template/deluxe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/deluxe-free-template.jpg)
 - [x] **Directoryplus** — [colorlib](https://colorlib.com/wp/template/directoryplus/) · [navpoint](https://navpoint.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/directoryplus-free-template-1.jpg)
 - [ ] **Ecoho** — [colorlib](https://colorlib.com/wp/template/ecoho/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ecoho-free-template.jpg)
