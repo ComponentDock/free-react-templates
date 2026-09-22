@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Fitcraft brand palette: orange #f36100 primary, dark #111111. */
+  --color-primary-50: #fff7ed;
+  --color-primary-100: #ffedd5;
+  --color-primary-200: #fed7aa;
+  --color-primary-300: #fdba74;
+  --color-primary-400: #f36100;
+  --color-primary-500: #e05800;
+  --color-primary-600: #c24a00;
+  --color-primary-700: #9a3b00;
+  --color-primary-800: #7a2f00;
+  --color-primary-900: #5c2300;
+
+  /* Brand alias for components */
+  --color-brand: #f36100;
+  --color-brand-dark: #e05800;
+
+  /* Dark / ink color */
+  --color-ink: #111111;
+  --color-ink-dark: #0a0a0a;
+
+  /* Muted copy */
+  --color-smoke: #a9a9a9;
+
+  /* Light section background */
+  --color-mist: #f4f4f4;
+
+  /* Fonts */
+  --font-sans: 'Muli', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Fitcraft primary button style (matches original .primary-btn) */
+.fitcraft-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 30px;
+  background-color: #f36100;
+  color: #ffffff;
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.fitcraft-btn:hover {
+  background-color: #e05800;
+}
