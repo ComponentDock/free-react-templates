@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Hotelbreeze brand palette — recreated from the ColorLib "Bright Hotel" design:
+     red #e74c3c CTA, body #26282b, light bg #f5f5f5, accent #1a73e8. */
+  --color-brand: #e74c3c;
+  --color-brand-dark: #c0392b;
+
+  /* Ink — dark body text (#26282b). */
+  --color-ink: #26282b;
+  --color-ink-dark: #1a1c1e;
+
+  /* Paper — light section background (#f5f5f5). */
+  --color-paper: #f5f5f5;
+
+  /* Mist — muted text (#999999). */
+  --color-mist: #999999;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the red CTA color. */
+  --color-primary-50: #fdf2f2;
+  --color-primary-100: #fce4e4;
+  --color-primary-200: #f9cece;
+  --color-primary-300: #f3a8a8;
+  --color-primary-400: #eb7878;
+  --color-primary-500: #e74c3c;
+  --color-primary-600: #c0392b;
+  --color-primary-700: #a53124;
+  --color-primary-800: #892b21;
+  --color-primary-900: #732920;
+
+  /* Font: Poppins (Google Fonts) — light/regular/medium for clean modern feel. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

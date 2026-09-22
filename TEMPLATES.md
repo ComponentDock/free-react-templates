@@ -1899,7 +1899,7 @@
 
 ## Hotel (38)
 
-- [ ] **Bright Hotel** — [colorlib](https://colorlib.com/wp/template/bright-hotel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brighthotel-free-template.jpg)
+- [~] **Bright Hotel** — [colorlib](https://colorlib.com/wp/template/bright-hotel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/brighthotel-free-template.jpg)
 - [ ] **Casahotel** — [colorlib](https://colorlib.com/wp/template/casahotel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/casahotel-free-template.jpg)
 - [ ] **Cozy** — [colorlib](https://colorlib.com/wp/template/cozy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cozy-free-template.jpg)
 - [ ] **Deluxe** — [colorlib](https://colorlib.com/wp/template/deluxe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/deluxe-free-template.jpg)
