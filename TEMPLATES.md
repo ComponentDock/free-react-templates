@@ -1904,7 +1904,7 @@
 - [x] **Cozy** — [colorlib](https://colorlib.com/wp/template/cozy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cozy-free-template.jpg) · [lounge](https://free-react-templates-lounge.surge.sh)
 - [x] **Deluxe** — [colorlib](https://colorlib.com/wp/template/deluxe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/deluxe-free-template.jpg) · [opulux](https://free-react-templates-opulux.surge.sh)
 - [x] **Directoryplus** — [colorlib](https://colorlib.com/wp/template/directoryplus/) · [navpoint](https://navpoint.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/directoryplus-free-template-1.jpg)
-- [ ] **Ecoho** — [colorlib](https://colorlib.com/wp/template/ecoho/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ecoho-free-template.jpg)
+- [~] **Ecoho** — [colorlib](https://colorlib.com/wp/template/ecoho/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ecoho-free-template.jpg)
 - [x] **Europa** — [colorlib](https://colorlib.com/wp/template/europa/) · [riviera](https://riviera.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/europa-free-template.jpg)
 - [ ] **Gotrip** — [colorlib](https://colorlib.com/wp/template/gotrip/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gotrip-free-template.jpg)
 - [ ] **Harbor Lights** — [colorlib](https://colorlib.com/wp/template/harbor-lights/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/harborlights-free-template.jpg)
