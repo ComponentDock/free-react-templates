@@ -1873,7 +1873,7 @@
 - [x] **Physical Therapy** — [colorlib](https://colorlib.com/wp/template/physical-therapy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/physicaltherapy-free-templatel.jpg) · [kinectwell](https://free-react-templates-kinectwell.surge.sh)
 - [x] **Ponigym** — [colorlib](https://colorlib.com/wp/template/ponigym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ponigym-free-template.jpg) · [ironshed](https://free-react-templates-ironshed.surge.sh)
 - [x] **Prodent** — [colorlib](https://colorlib.com/wp/template/prodent/) · [glint](https://glint.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/prodent-free-template.jpg)
-- [~] **Robust** — [colorlib](https://colorlib.com/wp/template/robust/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/robust-free-template.jpg)
+- [x] **Robust** — [colorlib](https://colorlib.com/wp/template/robust/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/robust-free-template.jpg) · [powergrip](https://powergrip.free.componentdock.com)
 - [x] **Slim** — [colorlib](https://colorlib.com/wp/template/slim/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/slim-free-template.jpg) · [flexly](https://flexly.free.componentdock.com)
 - [x] **Slim2** — [colorlib](https://colorlib.com/wp/template/slim2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/slim2-free-template.jpg) · [Shred](https://shred.free.componentdock.com)
 - [ ] **Sportify** — [colorlib](https://colorlib.com/wp/template/sportify/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sportify-free-template.jpg)
