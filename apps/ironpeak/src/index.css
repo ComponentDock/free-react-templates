@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Ironpeak brand palette — recreated from the original fitness design
+     (style.css): golden yellow #f4b214 primary (buttons, accents,
+     section labels, active states), dark navy #1a1a2e navbar/footer,
+     white text on dark backgrounds. */
+  --color-brand: #f4b214;
+  --color-brand-dark: #d9a00e;
+
+  /* Ink — dark text/headings. */
+  --color-ink: #1a1a2e;
+  --color-ink-dark: #121220;
+
+  /* Muted — secondary text. */
+  --color-muted: #6b7280;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the golden yellow. */
+  --color-primary-50: #fef9e7;
+  --color-primary-100: #fef0c7;
+  --color-primary-200: #fde08a;
+  --color-primary-300: #fcd04d;
+  --color-primary-400: #f7be24;
+  --color-primary-500: #f4b214;
+  --color-primary-600: #d9a00e;
+  --color-primary-700: #b8820b;
+  --color-primary-800: #946709;
+  --color-primary-900: #7a5408;
+
+  /* Fonts: Open Sans for all text. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
