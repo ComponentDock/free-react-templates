@@ -1850,7 +1850,7 @@
 - [x] **Fitzone 2** — [colorlib](https://colorlib.com/wp/template/fitzone-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitzone2-free-template.jpg) · [gains](https://gains.free.componentdock.com)
 - [x] **Flawless** — [colorlib](https://colorlib.com/wp/template/flawless/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/flawless-free-template.jpg) · [sculpt](https://sculpt.free.componentdock.com)
 - [x] **Gutim** — [colorlib](https://colorlib.com/wp/template/gutim/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gutim-free-template.jpg) · [gymcore](https://gymcore.free.componentdock.com)
-- [~] **Gym** — [colorlib](https://colorlib.com/wp/template/gym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gym-free-template.jpg)
+- [x] **Gym** — [colorlib](https://colorlib.com/wp/template/gym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gym-free-template.jpg) · [iron](https://free-react-templates-iron.surge.sh)
 - [ ] **Gym2** — [colorlib](https://colorlib.com/wp/template/gym2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gym2-free-template.jpg)
 - [x] **Gymer** — [colorlib](https://colorlib.com/wp/template/gymer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gymer-free-template.jpg) · [pumply](https://pumply.free.componentdock.com)
 - [ ] **Gymlife** — [colorlib](https://colorlib.com/wp/template/gymlife/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gymlife-free-template.jpg)
