@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Sportium brand palette — orange fitness theme (#f98c00) */
+  --color-brand-50: #fff7ed;
+  --color-brand-100: #ffedd5;
+  --color-brand-200: #fed7aa;
+  --color-brand-300: #fdba74;
+  --color-brand-400: #f98c00;
+  --color-brand-500: #f97316;
+  --color-brand-600: #ea580c;
+  --color-brand-700: #c2410c;
+
+  --color-coral: #db5246;
+  --color-gold: #fba40e;
+  --color-heading: #262626;
+  --color-body: #535353;
+  --color-muted: #a5a5a5;
+
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
