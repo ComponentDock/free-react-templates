@@ -14,144 +14,169 @@ Recreation of ColorLib's **Durg** industrial/construction company template as a 
 
 Extracted from the preview's `css/style.css`:
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| Brand / primary | `#ff5e13` | Buttons, accent text, links, underlines, star ratings |
-| Dark | `#020c26` | Header top bar, overlays, headings, footer bg |
-| Background light | `#f5f5f5` | Gray sections (brand area) |
-| Text body | `#5c5c5c` | Paragraphs |
-| Text heading | `#020c26` | h1-h5 |
-| Star rating | `#ffba00` | Review stars |
-| Font family | `Rubik, sans-serif` | Global body + headings |
-| Button style | `.boxed-btn`: padding 13px 32px, no radius, transparent on hover | Primary CTA |
-| Button style | `.boxed-btn2`: padding 22px 50px, larger CTA | Secondary CTA |
-| Overlay | `rgba(2,12,38,0.851)` | Dark overlay on parallax sections |
-| Link underline | `#ff5e13` with hover underline | Footer links, contact links |
+| Token            | Value                                                            | Usage                                                 |
+| ---------------- | ---------------------------------------------------------------- | ----------------------------------------------------- |
+| Brand / primary  | `#ff5e13`                                                        | Buttons, accent text, links, underlines, star ratings |
+| Dark             | `#020c26`                                                        | Header top bar, overlays, headings, footer bg         |
+| Background light | `#f5f5f5`                                                        | Gray sections (brand area)                            |
+| Text body        | `#5c5c5c`                                                        | Paragraphs                                            |
+| Text heading     | `#020c26`                                                        | h1-h5                                                 |
+| Star rating      | `#ffba00`                                                        | Review stars                                          |
+| Font family      | `Rubik, sans-serif`                                              | Global body + headings                                |
+| Button style     | `.boxed-btn`: padding 13px 32px, no radius, transparent on hover | Primary CTA                                           |
+| Button style     | `.boxed-btn2`: padding 22px 50px, larger CTA                     | Secondary CTA                                         |
+| Overlay          | `rgba(2,12,38,0.851)`                                            | Dark overlay on parallax sections                     |
+| Link underline   | `#ff5e13` with hover underline                                   | Footer links, contact links                           |
 
-## Section Structure (order from preview DOM)
+## Requirements
 
-1. **Header Top Bar** — black bg (#020c26), phone/email contact + social icons (Mon-Fri hours, social links)
-2. **Sticky Navbar** — white bg, logo image, main nav (Home, About, Services, Projects, Blog [dropdown], Pages [dropdown], Contact), search icon, "Get a quote" CTA button
-3. **Hero Slider** — 3-slide carousel, each with parallax bg image, dark overlay, white content card: subheading (orange text), heading "We provide your Industrial solution", two buttons: "Our Services" + "Get a quote"
-4. **Brand Logos** — gray bg (#f5f5f5), carousel of 7 partner/client logo images
-5. **Services** — "We provide all of your" heading, 3 service cards: Industrial Construction, Mechanical Engineering, Bridge Construction. Each: image, title, paragraph, "Learn More" link
-6. **Projects** — parallax bg with dark overlay, white text heading "Take a look around", project carousel: Research and Development Center, Project of Technological Park. Each: image, category span, title
-7. **About** — 2-column: left = about image with play video icon overlay; right = "About Company" span + "Deliver innovative Industrial solution" heading + paragraph + "Learn More" button. Below: review carousel with quote icon, 5-star rating, review text, author avatar + name, and "350+" positive review stat
-8. **Address** — black bg, 3-column: Our Location (address + "Get Direction"), Opening Hours (Mon-Fri 9-19, Sat-Sun Closed), Drop a Message (email + phone + "Mail Us")
-9. **Footer** — logo image, description, social links (Facebook, Twitter, LinkedIn), quick links, services list, newsletter subscribe form, copyright
+### Requirement: Header top bar displays contact info
 
-## Gherkin Requirements
+A dark top bar with phone number, email, and social media links.
 
-### Feature: Header
+#### Scenario: Top bar shows contact details
 
-Scenario: Top bar displays contact info
-  Given the user is on any page
-  Then a dark top bar shows phone number and email
-  And social media links are visible
+- **WHEN** the user is on any page
+- **THEN** a dark top bar shows phone number and email
+- **AND** social media links (Facebook, Twitter, LinkedIn) are visible
+- **AND** office hours "Mon - Fri: 9:00 - 19:00" are displayed
 
-Scenario: Sticky navbar with logo and nav
-  Given the user is on any page
-  Then the logo image is visible in the navbar
-  And navigation links "Home", "About", "Services", "Projects", "Blog", "Contact" are visible
-  And a "Get a quote" button is displayed
+### Requirement: Sticky navbar with logo and navigation
 
-Scenario: Navbar becomes sticky on scroll
-  Given the user scrolls down
-  Then the navbar sticks to the top of the viewport
-  And a subtle box shadow appears
+A white sticky navbar with the brand logo, navigation links, search icon, and a "Get a Quote" CTA button.
 
-Scenario: Mobile hamburger menu
-  Given the viewport is mobile width (< 768px)
-  Then a hamburger menu icon is visible
-  And clicking it opens a slide-in mobile menu
+#### Scenario: Navbar renders all navigation elements
 
-### Feature: Hero Slider
+- **WHEN** the user is on any page
+- **THEN** the logo is visible in the navbar
+- **AND** navigation links "Home", "About", "Services", "Projects", "Contact" are visible
+- **AND** a "Get a Quote" button is displayed
+- **AND** a search button is visible
 
-Scenario: Hero slider displays
-  Given the user lands on the page
-  Then a full-height hero slider with parallax backgrounds is shown
-  And each slide has a white content card with heading and buttons
-  And the heading reads "We provide your Industrial solution"
-  And two buttons appear: "Our Services" and "Get a quote"
+#### Scenario: Navbar becomes sticky on scroll
 
-Scenario: Hero auto-slides
-  Given the hero slider is loaded
-  Then slides advance automatically at regular intervals
-  And dot navigation is visible on the right side
+- **WHEN** the user scrolls down more than 50px
+- **THEN** a shadow appears on the navbar
 
-### Feature: Brand Logos
+#### Scenario: Mobile hamburger menu
 
-Scenario: Partner logos display
-  Given the user scrolls past the hero
-  Then a row of partner/client logos is shown on a gray background
-  And 7 logo images are visible
+- **WHEN** the viewport is mobile width (< 768px)
+- **AND** the hamburger menu icon is clicked
+- **THEN** a mobile menu opens with navigation links
+- **AND** clicking a link closes the menu
 
-### Feature: Services
+### Requirement: Hero slider displays with parallax backgrounds
 
-Scenario: Three service cards display
-  Given the user scrolls to the services section
-  Then "We provide all of your" heading is shown
-  And three service cards appear: "Industrial construction", "Mechanical engineering", "Bridge construction"
-  And each has an image, title, paragraph, and "Learn More" link
+A full-height hero slider with 3 slides, each featuring a parallax background image, dark overlay, and white content card with heading and CTA buttons.
 
-### Feature: Projects
+#### Scenario: Hero slider renders initial slide
 
-Scenario: Project showcase displays
-  Given the user scrolls to the projects section
-  Then a parallax background with dark overlay is shown
-  And "Take a look around" heading is displayed in white
-  And a project carousel shows: "Research and development center" and "Project of technological park"
-  And each project has an image, category label, and title
+- **WHEN** the user lands on the page
+- **THEN** a hero slider section is displayed
+- **AND** the heading reads "We provide your Industrial solution"
+- **AND** two buttons appear: "Our Services" and "Get a Quote"
 
-### Feature: About
+#### Scenario: Hero auto-slides and navigates
 
-Scenario: About section displays
-  Given the user scrolls to the about section
-  Then "About Company" label and "Deliver innovative Industrial solution" heading are shown
-  And a video play button overlay is on the about image
-  And a "Learn More" button is present
+- **WHEN** the hero slider is loaded
+- **THEN** slides advance automatically every 5 seconds
+- **AND** dot navigation is visible on the bottom
+- **AND** clicking next/prev arrows changes the slide
 
-Scenario: Review carousel displays
-  Given the about section is visible
-  Then a review carousel shows quote icon, 5-star rating, review text, and author info
-  And a "350+ Positive review" stat is displayed
+### Requirement: Brand logos display on gray background
 
-### Feature: Address
+A row of 7 partner/client logos on a gray (#f5f5f5) background.
 
-Scenario: Address section displays
-  Given the user scrolls to the address area
-  Then a dark background with 3 columns is shown
-  And "Our Location" with address and "Get Direction" link is visible
-  And "Opening hour" with Mon-Fri times is shown
-  And "Drop a Message" with email and phone is displayed
+#### Scenario: Partner logos display
 
-### Feature: Footer
+- **WHEN** the user scrolls past the hero
+- **THEN** a row of 7 partner/client logos is shown
+- **AND** the section has a gray background
 
-Scenario: Footer layout
-  Given the user scrolls to the footer
-  Then logo, description, and social links (Facebook, Twitter, LinkedIn) are shown
-  And quick links, services list, and newsletter subscribe form are displayed
-  And a copyright line is at the bottom
+### Requirement: Services section shows 3 service cards
 
-Scenario: Footer links to Component Dock
-  Given the footer is visible
-  Then a link to https://www.componentdock.com/ is present with text "Component Dock"
+Three service cards: Industrial Construction, Mechanical Engineering, Bridge Construction. Each with an image, title, description, and "Learn More" link.
+
+#### Scenario: Three service cards display
+
+- **WHEN** the user scrolls to the services section
+- **THEN** a "We provide all of your" heading is shown
+- **AND** three service cards appear: "Industrial Construction", "Mechanical Engineering", "Bridge Construction"
+- **AND** each has an image, title, paragraph, and "Learn More" link
+
+### Requirement: Projects section with parallax and carousel
+
+A parallax background section with dark overlay, white heading, and a project carousel.
+
+#### Scenario: Project showcase displays
+
+- **WHEN** the user scrolls to the projects section
+- **THEN** a parallax background with dark overlay is shown
+- **AND** a "Take a look around" heading is displayed in white
+- **AND** a project carousel shows projects with image, category, and title
+- **AND** navigation arrows and dots allow switching between projects
+
+### Requirement: About section with video overlay and review carousel
+
+A two-column layout with about image (video play button overlay) and content, plus a review carousel with star ratings.
+
+#### Scenario: About section displays
+
+- **WHEN** the user scrolls to the about section
+- **THEN** an "About Company" label and "Deliver innovative Industrial solution" heading are shown
+- **AND** a video play button overlay is on the about image
+- **AND** a "Learn More" button is present
+
+#### Scenario: Review carousel displays
+
+- **WHEN** the about section is visible
+- **THEN** a review carousel shows quote icon, 5-star rating, review text, and author info
+- **AND** a "350+ Positive Reviews" stat is displayed
+- **AND** navigation arrows allow switching between reviews
+
+### Requirement: Address section with 3-column dark layout
+
+A dark background section with 3 columns: location, hours, and contact.
+
+#### Scenario: Address section displays
+
+- **WHEN** the user scrolls to the address area
+- **THEN** a dark background with 3 columns is shown
+- **AND** "Our Location" with address and "Get Direction" link is visible
+- **AND** "Opening Hour" with Mon-Fri times is shown
+- **AND** "Drop a Message" with email and phone is displayed
+
+### Requirement: Footer with newsletter, social links, and Component Dock link
+
+A dark footer with brand logo, quick links, services list, newsletter form, social links, and Component Dock attribution.
+
+#### Scenario: Footer layout
+
+- **WHEN** the user scrolls to the footer
+- **THEN** logo, description, and social links (Facebook, Twitter, LinkedIn) are shown
+- **AND** quick links, services list, and newsletter subscribe form are displayed
+- **AND** a copyright line is at the bottom
+
+#### Scenario: Footer links to Component Dock
+
+- **WHEN** the footer is visible
+- **THEN** a link to https://www.componentdock.com/ is present with text "Component Dock"
 
 ## Verification Checklist
 
-- [ ] All sections present in correct order matching preview DOM
-- [ ] Brand color `#ff5e13` applied to buttons, accents, links
-- [ ] Font Rubik applied globally
-- [ ] Dark sections use `#020c26`
-- [ ] Hero slider with 3 slides, white content cards, parallax bg
-- [ ] Brand logos row with 7 images
-- [ ] Services section with 3 cards
-- [ ] Projects section with parallax bg and carousel
-- [ ] About section with video overlay and review carousel
-- [ ] Address section with 3-column dark layout
-- [ ] Footer with logo, social, newsletter, copyright
-- [ ] Sticky navbar on scroll
-- [ ] No references to ColorLib in app code
-- [ ] All images use picsum.photos placeholders (deterministic seeds)
-- [ ] Mobile responsive: hamburger menu, stacked columns
-- [ ] 100% test coverage
+- [x] All sections present in correct order matching preview DOM
+- [x] Brand color `#ff5e13` applied to buttons, accents, links
+- [x] Font Rubik applied globally
+- [x] Dark sections use `#020c26`
+- [x] Hero slider with 3 slides, white content cards, parallax bg
+- [x] Brand logos row with 7 images
+- [x] Services section with 3 cards
+- [x] Projects section with parallax bg and carousel
+- [x] About section with video overlay and review carousel
+- [x] Address section with 3-column dark layout
+- [x] Footer with logo, social, newsletter, copyright
+- [x] Sticky navbar on scroll
+- [x] No references to ColorLib in app code
+- [x] All images use picsum.photos placeholders (deterministic seeds)
+- [x] Mobile responsive: hamburger menu, stacked columns
+- [x] 100% test coverage
