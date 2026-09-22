@@ -1877,7 +1877,7 @@
 - [x] **Slim** — [colorlib](https://colorlib.com/wp/template/slim/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/slim-free-template.jpg) · [flexly](https://flexly.free.componentdock.com)
 - [x] **Slim2** — [colorlib](https://colorlib.com/wp/template/slim2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/slim2-free-template.jpg) · [Shred](https://shred.free.componentdock.com)
 - [ ] **Sportify** — [colorlib](https://colorlib.com/wp/template/sportify/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sportify-free-template.jpg)
-- [ ] **Sportsfit** — [colorlib](https://colorlib.com/wp/template/sportsfit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sportsfit-free-template.jpg)
+- [~] **Sportsfit** — [colorlib](https://colorlib.com/wp/template/sportsfit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sportsfit-free-template.jpg)
 - [x] **Stamina** — [colorlib](https://colorlib.com/wp/template/stamina/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stamina-free-template.jpg) · [grit](https://grit.free.componentdock.com)
 - [ ] **Thebasketball** — [colorlib](https://colorlib.com/wp/template/thebasketball/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thebasketball-free-template.jpg)
 - [x] **Topgym** — [colorlib](https://colorlib.com/wp/template/topgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/topgym-free-template.jpg) · [ironpulse](https://ironpulse.free.componentdock.com)
