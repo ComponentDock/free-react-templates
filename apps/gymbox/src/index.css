@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+@theme {
+  /* GymBox brand palette: red #FF1414 primary, navy #001D38 dark. */
+  --color-primary-50: #fff1f1;
+  --color-primary-100: #ffe0e0;
+  --color-primary-200: #ffc7c7;
+  --color-primary-300: #ff9e9e;
+  --color-primary-400: #ff1414;
+  --color-primary-500: #e60000;
+  --color-primary-600: #c40000;
+  --color-primary-700: #a30000;
+  --color-primary-800: #800000;
+  --color-primary-900: #5c0000;
+
+  /* Dark / ink color */
+  --color-ink: #001d38;
+
+  /* Muted copy */
+  --color-smoke: #7a838b;
+
+  /* Light section background */
+  --color-mist: #f4f4f4;
+
+  /* Fonts */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Paytone One', ui-sans-serif, system-ui, sans-serif;
+  --font-button: 'Teko', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* GymBox custom button style */
+.boxed-btn3 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff1414;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  font-family: 'Teko', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boxed-btn3:hover {
+  background-color: #e60000;
+}
