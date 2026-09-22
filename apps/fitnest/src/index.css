@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #5768ad;
+  --color-brand-dark: #4758a0;
+  --color-heading: #263246;
+  --color-text: #6e7580;
+  --color-dark-bg: #263246;
+  --color-light-bg: #f8f9fa;
+
+  /* DM Sans — the template's typeface (Google Fonts via index.html) */
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}

@@ -1,184 +1,114 @@
-# Template: FitNest (Health Fitness / Gym)
-
 ## Purpose
 
-FitNest is a single-page fitness/gym website in the free-react-templates
-monorepo. It is a React recreation of the ColorLib "Fitnezz" free template
-(source: https://colorlib.com/wp/template/fitnezz/), built under a DIFFERENT
-name (**FitNest**), with the monorepo stack: Vite + React 19 + Tailwind
-CSS 4 + TypeScript.
+Fitnest is a yoga and fitness studio landing page template, recreating the ColorLib "Zogin" design under a new name. It provides a complete single-page marketing site for a yoga studio with navigation, hero, about, services, stats, courses, gallery, instructors, appointment booking, testimonials, and footer sections.
 
-The original is a dark-themed gym/fitness site with a hero slider, featured
-classes carousel with price badges, a schedule grid, trainer carousel,
-testimonial quotes, blog cards, and a dark footer. The aesthetic is bold
-and high-contrast — hot pink accent on dark/black backgrounds, square
-buttons, oversized decorative background text behind section headings,
-and full-bleed background images in cards.
+## Requirements
 
-## Naming
+### Requirement: Navigation bar with contact info and social links
 
-The ColorLib source name "Fitnezz" is FORBIDDEN as the app name. **FitNest**
-is the new, original name — single lowercase word (kebab-case: `fitnest`),
-no collision with `apps/`, `openspec/specs/`, or `docs/templates/`
-(verified: zero hits). Source slug: `fitnezz`. Preview URL:
-https://preview.colorlib.com/theme/fitnezz/
+The template SHALL display a navigation bar with a logo ("Fitnest"), contact information (phone, email, operating hours), a "JOIN US" CTA button, navigation links (Home, About, Classes, Blog, Contact), and social media icons.
 
-## Design reference (replication findings)
+#### Scenario: Desktop navigation renders all links
 
-- **Original:** ColorLib "Fitnezz" (page title: "Colorlib Fitnezz").
-  Listed in TEMPLATES.md under **Health Fitness** (line 1848). Single-page
-  gym/fitness site with carousel-driven content sections.
+- **WHEN** the page loads on desktop viewport
+- **THEN** the navbar shows the logo, contact info, nav links, and social icons
 
-- **Live preview — REACHABLE (verified by direct fetch):**
-  `https://preview.colorlib.com/theme/fitnezz/` returns HTTP 200.
-  Stylesheets: `css/style.css` (custom styling), `css/bootstrap.css`,
-  `css/animate.css`, `css/owl.carousel.min.css`, `css/magnific-popup.css`.
-  External deps: Bootstrap grid, Font Awesome, Owl Carousel, Animate.css.
-  Fonts: Google Fonts "Open Sans" (300/400/700/800 weights).
+#### Scenario: Mobile navigation toggle
 
-- **Design tokens (extracted from `css/style.css`):**
+- **WHEN** the user clicks the hamburger menu button on mobile
+- **THEN** the mobile navigation menu opens with all links visible
 
-  | Token              | Value             | Usage                                        |
-  | ------------------ | ----------------- | -------------------------------------------- |
-  | Primary brand      | `#f73471` (hot pink) | CTA buttons, accent color, links, price badges, dropdown hover |
-  | Button hover pink  | `#f96593`         | Primary button hover/border color            |
-  | Font family        | `"Open Sans", Arial, sans-serif` | Body and all text            |
-  | Body text          | `#868e96`         | Paragraphs, body copy                        |
-  | Headings           | `#000` (black)    | h1-h4 headings                               |
-  | Body background    | `#fff` (white)    | Default page background                      |
-  | Light section bg   | `#f7f7f7`         | Schedule section background (bg-light)       |
-  | Footer background  | `#262626`         | Site footer                                  |
-  | Navbar mobile bg   | `#000` (black)    | Mobile navbar background                     |
-  | Button radius      | `0px` (square)    | All buttons and form controls                |
-  | Dropdown radius    | `4px`             | Navbar dropdown menu                         |
-  | Button text        | `uppercase, 0.2em letter-spacing, 13px` | All button labels     |
-  | Heading back-text  | `#e3e3e3` (light gray) | Decorative oversized text behind headings |
-  | Schedule/blog meta | `#999999`         | Date/time metadata                           |
-  | Testimonial quote  | `#000` (black)    | Blockquote text                              |
-  | Footer link color  | `#f73471`         | Footer anchor links                          |
-  | Footer text        | `rgba(255,255,255,0.5)` | Footer body text                     |
+### Requirement: Hero section with headline and CTA
 
-- **Live DOM structure (from fetched HTML + CSS):**
+The template SHALL display a hero section with a background image, subtitle "Welcome to Fitnest", heading "What hurts today makes you stronger tomorrow", and a "DISCOVER MORE" call-to-action button.
 
-  - `header` (absolute positioned, transparent over hero on desktop, black bg on mobile)
-    - `nav.navbar.navbar-dark` → brand "Fitne<span>zz</span>" (span = pink)
-    - Nav links: Home, About, Services (dropdown: Body Builder, Yoga Pilate, Healthy Life)
-    - CTA button (bg: #f73471, white text)
-  - `section.home-slider.owl-carousel` (hero slider)
-    - 2 slide items with background images, centered text
-    - Slide 1: "Health is wealth" heading + paragraph + "Get Started" (outline-white) + "Download" buttons
-    - Slide 2: "Join Fitnezz Today" heading + same layout
-  - `section.section` (Featured Classes — white bg)
-    - Section heading: "Featured Classes" with decorative back-text "The Classes"
-    - Owl Carousel of 4 class cards (image + price badge "#30.99" in pink bg + class name heading)
-    - Cards: full-bleed image, overlay text, hover scale effect on image, price badge toggles to outline on hover
-  - `section.section.bg-light` (Our Schedule — #f7f7f7 bg)
-    - Section heading: "Our Schedule" with back-text-dark "Schedule"
-    - 2x2 grid of schedule items, each with 50/50 image + text layout
-    - Each item: class name, description, time (clock icon) + date (calendar icon), "Join from $15" CTA (btn-primary btn-sm)
-    - Images alternate sides (order-2 for bg-image in left column items)
-  - `section.section` (Expert Trainers — white bg)
-    - Section heading: "Expert Trainers" with back-text "Our Trainers"
-    - Owl Carousel of trainer cards (portrait image + name + "Gym Trainer" subtitle)
-  - `section.section` (Testimonial — white bg)
-    - Section heading: "Testimonial" with back-text "Testimonial"
-    - 3-column grid of blockquotes with avatar + quote text + name + title
-  - `section.section` (Blog — white bg)
-    - Section heading: "Blog" with back-text "Our Blog"
-    - 2-column grid of blog cards (50/50 image + text: title, date, excerpt, "Read More" btn-primary)
-  - `footer.site-footer` (#262626 bg)
-    - 3-column: About Us (text + social icons), Contact Info (address/phone/email), Quick Links
-    - Copyright line at bottom
+#### Scenario: Hero content renders correctly
 
-- **Screenshot (from TEMPLATES.md):**
-  Full-width hero with dark overlay on gym photo, "Health is wealth" white
-  heading centered. Dark navbar with "Fitnezz" brand (zz in pink) and
-  pink CTA button. Below: white section with class cards showing gym
-  photos with pink price badges. Light gray schedule section with
-  side-by-side image/text cards. Dark footer with 3 columns.
+- **WHEN** the hero section is visible
+- **THEN** the heading, subtitle, and CTA button are displayed
 
-## Gherkin requirements
+### Requirement: About section with images and description
 
-### Feature: FitNest Gym Website
+The template SHALL display an about section with a two-column layout: stacked images on the left and a section title "Welcome to Fitnest", a quote, descriptive paragraphs about yoga teacher training, and a "MORE ABOUT US" button on the right.
 
-  Background:
-    Given the user visits FitNest at fitnest.free.componentdock.com
-    Then the page loads with the FitNest brand and navigation
+#### Scenario: About section content
 
-  ### Scenario: Hero slider displays
-    Given the hero section is visible
-    When the page loads
-    Then a full-width hero slider shows with background images
-    And the first slide displays "Health is wealth" heading
-    And "Get Started" and "Download" buttons are visible
-    And the slider auto-advances to the second slide
+- **WHEN** the about section is rendered
+- **THEN** the heading, quote, description text, and CTA button are visible
 
-  ### Scenario: Navigation works
-    Given the navigation bar is visible
-    When the user clicks a nav link
-    Then the page scrolls to the corresponding section
-    And on mobile, the hamburger menu toggles the nav links
+### Requirement: Services section showcasing yoga disciplines
 
-  ### Scenario: Featured classes carousel
-    Given the Featured Classes section is visible
-    When the user views the section
-    Then 4 class cards are displayed in a carousel
-    And each card shows an image, price badge, and class name
-    And hovering a card scales the image up slightly
+The template SHALL display 6 service items (Asana, Meditation, Mudra, Bandhas, Philosophy, Pranayama) each with an icon, heading, and short description.
 
-  ### Scenario: Schedule grid
-    Given the Our Schedule section is visible
-    When the user views the section
-    Then 4 schedule items are displayed in a 2x2 grid
-    And each item shows a class image, name, description, time, date
-    And each item has a "Join from $15" button
+#### Scenario: All 6 services render
 
-  ### Scenario: Expert trainers carousel
-    Given the Expert Trainers section is visible
-    When the user views the section
-    Then 3 trainer cards are displayed in a carousel
-    And each card shows a portrait image, name, and title
+- **WHEN** the services section is visible
+- **THEN** 6 service cards are displayed with the correct names
 
-  ### Scenario: Testimonials
-    Given the Testimonial section is visible
-    When the user views the section
-    Then 3 testimonial quotes are displayed in a 3-column grid
-    And each quote shows an avatar, quote text, name, and company
+### Requirement: Choose Us section with statistics
 
-  ### Scenario: Blog cards
-    Given the Blog section is visible
-    When the user views the section
-    Then 2 blog cards are displayed in a 2-column grid
-    And each card shows an image, title, date, excerpt, and "Read More" button
+The template SHALL display a "Why Choose Us" section with statistics: 2146 Students, 15 Years Of Experience, 48 Branches, and 234 Expert Staff, alongside a descriptive text and an image.
 
-  ### Scenario: Footer
-    Given the footer is visible
-    When the user scrolls to the bottom
-    Then the footer shows About Us, Contact Info, and Quick Links columns
-    And social media icons are present
-    And a Component Dock link is present (replaces Colorlib attribution)
+#### Scenario: Stats display correctly
 
-  ### Scenario: Responsive design
-    Given the user resizes the browser to mobile width
-    When the page reflows
-    Then the navbar collapses to a hamburger menu
-    And schedule items stack vertically
-    And trainer/testimonial columns reduce to single column
+- **WHEN** the choose us section is visible
+- **THEN** all four statistics are shown with their labels
 
-## Verification checklist
+### Requirement: Upcoming courses section
 
-- [ ] Hero slider renders with background images and auto-advances
-- [ ] Navigation links scroll to sections; mobile hamburger works
-- [ ] Featured classes carousel shows 4 cards with price badges
-- [ ] Schedule section shows 4 items in 2x2 grid with time/date
-- [ ] Trainers carousel shows 3 trainer cards with portraits
-- [ ] Testimonials show 3 quotes in 3-column grid
-- [ ] Blog section shows 2 cards in 2-column layout
-- [ ] Footer has 3 columns with Component Dock link
-- [ ] Brand color `#f73471` is used consistently for accents/CTAs
-- [ ] Open Sans font family is loaded and applied
-- [ ] All sections use the decorative back-text behind headings
-- [ ] Responsive layout works at mobile breakpoints
-- [ ] No ColorLib references appear in app code
-- [ ] Public/CNAME contains fitnest.free.componentdock.com
-- [ ] Homepage field set to https://fitnest.free.componentdock.com
+The template SHALL display 3 course cards (100 Hour, 200 Hour, 300 Hour Yoga Course) with background images, date badges, duration, instructor names, and "JOIN NOW" buttons.
+
+#### Scenario: Three course cards render
+
+- **WHEN** the classes section is visible
+- **THEN** 3 course cards are displayed with JOIN NOW buttons
+
+### Requirement: Gallery section with image grid
+
+The template SHALL display 8 gallery images in a responsive grid layout.
+
+#### Scenario: Gallery images render
+
+- **WHEN** the gallery section is visible
+- **THEN** 8 images are displayed in a grid
+
+### Requirement: Instructors section with team members
+
+The template SHALL display 4 instructor cards, each with a photo, name, and "Yoga Trainer" role.
+
+#### Scenario: Four instructors render
+
+- **WHEN** the instructors section is visible
+- **THEN** 4 instructor cards are shown with names and roles
+
+### Requirement: Appointment booking form
+
+The template SHALL display an appointment form on a dark background with fields for Name, Email, Phone, Class selection (dropdown), Message (textarea), and a Submit button.
+
+#### Scenario: Form renders with all fields
+
+- **WHEN** the appointment section is visible
+- **THEN** all form fields and the submit button are present
+
+#### Scenario: Form submission
+
+- **WHEN** the user fills all fields and clicks Submit
+- **THEN** the form submission handler is called
+
+### Requirement: Testimonials carousel
+
+The template SHALL display a testimonials section with at least 3 testimonial items, each containing a quote, author avatar, name, and role.
+
+#### Scenario: Testimonials render with navigation
+
+- **WHEN** the testimonials section is visible
+- **THEN** testimonial quotes and author names are displayed, and prev/next navigation works
+
+### Requirement: Footer with Component Dock branding
+
+The template SHALL display a footer with 4 columns (about/hours, Inspiration links, About Us links, Contact info), social icons, and a copyright line linking to https://www.componentdock.com/ branded as "Component Dock".
+
+#### Scenario: Footer links to Component Dock
+
+- **WHEN** the footer is rendered
+- **THEN** a link to https://www.componentdock.com/ is present with "Component Dock" text
