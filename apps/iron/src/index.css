@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Iron brand palette: crimson #f6214b primary, teal #4cd3e3 and
+     blue #38a4ff accents, light section backgrounds #f9f9ff,
+     muted text #777777, dark text #222222. */
+  --color-primary-50: #fef2f4;
+  --color-primary-100: #fde6ea;
+  --color-primary-200: #fbc1cc;
+  --color-primary-300: #f8899d;
+  --color-primary-400: #f6214b;
+  --color-primary-500: #e51040;
+  --color-primary-600: #c40835;
+  --color-primary-700: #a4082d;
+  --color-primary-800: #8b0a2b;
+  --color-primary-900: #770d29;
+
+  /* Accent: teal (feature badge / schedule highlight). */
+  --color-accent-300: #7ae6ef;
+  --color-accent-400: #4cd3e3;
+  --color-accent-500: #2dbdd1;
+
+  /* Secondary accent: blue (schedule highlights). */
+  --color-blue-300: #6ab8ff;
+  --color-blue-400: #38a4ff;
+  --color-blue-500: #1e8df0;
+
+  /* Light section backgrounds (offer-area / schedule-area). */
+  --color-mist: #f9f9ff;
+
+  /* Muted copy (#777777). */
+  --color-smoke: #777777;
+
+  --color-ink: #222222;
+
+  /* Poppins via Google Fonts <link> in index.html — matching the
+     font pairing (Poppins throughout). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
