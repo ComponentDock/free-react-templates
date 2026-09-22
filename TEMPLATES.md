@@ -1929,7 +1929,7 @@
 - [x] **Samira** — [colorlib](https://colorlib.com/wp/template/samira/) · [belmont](https://belmont.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/samira-free-template.jpg)
 - [x] **Sogo** — [colorlib](https://colorlib.com/wp/template/sogo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sogo-free-template.jpg) · [lodgely](https://lodgely.free.componentdock.com)
 - [x] **Sona** — [colorlib](https://colorlib.com/wp/template/sona/) · [haven](https://haven.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sona-free-template.jpg)
-- [~] **Suites** — [colorlib](https://colorlib.com/wp/template/suites/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/suites-free-template.jpg)
+- [x] **Suites** — [colorlib](https://colorlib.com/wp/template/suites/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/suites-free-template.jpg) &middot; [regent](https://regent.free.componentdock.com)
 - [ ] **The Grand Azure** — [colorlib](https://colorlib.com/wp/template/the-grand-azure/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/grandazure-template-1771943856380.jpg)
 - [ ] **The Palatin** — [colorlib](https://colorlib.com/wp/template/the-palatin/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thepalatin-free-template.jpg)
 - [ ] **Theriver** — [colorlib](https://colorlib.com/wp/template/theriver/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theriver-free-template.jpg)
