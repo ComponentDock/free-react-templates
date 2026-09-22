@@ -17,31 +17,31 @@ Extracted from the ColorLib preview's `css/style.css` and live DOM:
 
 ### Colors
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| Brand gold | `#c9af7e` | Primary accent, headings accent, hover states |
-| Brand gold light | `#d1ba90` | Lighter accent variant |
-| Brand gold dark | `#8d703b` | Darker accent for emphasis |
-| Brand brown | `#7b6233` | Deep accent |
-| Brand dark brown | `#3c312e` | Dark accent backgrounds |
-| Button cyan | `#4ac7ea` | Primary CTA button background |
-| Button cyan hover | `#56caeb` | Button hover state |
-| Button cyan light | `#78d5ef` | Button active/focus |
-| Dark bg | `#1d2124` | Navbar, footer dark backgrounds |
-| Dark bg alt | `#232323` | Alternate dark sections |
-| Light bg | `#f8f9fa` | Light section backgrounds (`bg-light`) |
-| Off-white | `#f6f2ea` | Warm off-white for booking form |
-| Pure white | `#ffffff` | Card backgrounds, text on dark |
-| Text dark | `#000000` | Primary text |
-| Text muted | `#b3b3b3` | Secondary text |
+| Token             | Value     | Usage                                         |
+| ----------------- | --------- | --------------------------------------------- |
+| Brand gold        | `#c9af7e` | Primary accent, headings accent, hover states |
+| Brand gold light  | `#d1ba90` | Lighter accent variant                        |
+| Brand gold dark   | `#8d703b` | Darker accent for emphasis                    |
+| Brand brown       | `#7b6233` | Deep accent                                   |
+| Brand dark brown  | `#3c312e` | Dark accent backgrounds                       |
+| Button cyan       | `#4ac7ea` | Primary CTA button background                 |
+| Button cyan hover | `#56caeb` | Button hover state                            |
+| Button cyan light | `#78d5ef` | Button active/focus                           |
+| Dark bg           | `#1d2124` | Navbar, footer dark backgrounds               |
+| Dark bg alt       | `#232323` | Alternate dark sections                       |
+| Light bg          | `#f8f9fa` | Light section backgrounds (`bg-light`)        |
+| Off-white         | `#f6f2ea` | Warm off-white for booking form               |
+| Pure white        | `#ffffff` | Card backgrounds, text on dark                |
+| Text dark         | `#000000` | Primary text                                  |
+| Text muted        | `#b3b3b3` | Secondary text                                |
 
 ### Fonts
 
-| Token | Font Stack | Usage |
-|-------|-----------|-------|
-| Heading | `"Playfair Display", Arial, serif` | H1-H6, section headings |
-| Body | `"Poppins", Arial, sans-serif` | Body text, UI elements |
-| Body alt | `"Work Sans", sans-serif` | General sans-serif fallback |
+| Token    | Font Stack                         | Usage                       |
+| -------- | ---------------------------------- | --------------------------- |
+| Heading  | `"Playfair Display", Arial, serif` | H1-H6, section headings     |
+| Body     | `"Poppins", Arial, sans-serif`     | Body text, UI elements      |
+| Body alt | `"Work Sans", sans-serif`          | General sans-serif fallback |
 
 ### Buttons
 
@@ -51,17 +51,17 @@ Extracted from the ColorLib preview's `css/style.css` and live DOM:
 
 ### Section Backgrounds
 
-| Section | Background |
-|---------|-----------|
-| Hero slider | Full-width image with dark overlay (`rgba(0,0,0,0.1-0.2)`) |
-| Booking form | Warm off-white (`#f6f2ea`) |
-| About | White |
-| Rooms | Light gray (`#f8f9fa`) |
+| Section       | Background                                                      |
+| ------------- | --------------------------------------------------------------- |
+| Hero slider   | Full-width image with dark overlay (`rgba(0,0,0,0.1-0.2)`)      |
+| Booking form  | Warm off-white (`#f6f2ea`)                                      |
+| About         | White                                                           |
+| Rooms         | Light gray (`#f8f9fa`)                                          |
 | Counter/stats | Parallax background image (`images/bg_1.jpg`) with dark overlay |
-| Testimonials | Light gray (`#f8f9fa`) |
-| Blog | White |
-| Instagram | Image grid, no padding |
-| Footer | Dark (`#1d2124`) |
+| Testimonials  | Light gray (`#f8f9fa`)                                          |
+| Blog          | White                                                           |
+| Instagram     | Image grid, no padding                                          |
+| Footer        | Dark (`#1d2124`)                                                |
 
 ## Section Structure (in order)
 
@@ -76,107 +76,139 @@ Extracted from the ColorLib preview's `css/style.css` and live DOM:
 9. **Instagram Section** — Horizontal row of 6 Instagram-style images with hover overlay icon.
 10. **Footer** — Dark background, 3-column layout: Brand column (logo text + description), Useful Links column (Blog, Rooms, Amenities, Gift Card, Privacy, Career), Contact column (address, phone, email). Bottom copyright bar with Colorlib attribution (→ replaced with Component Dock link).
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Navbar renders correctly
-```gherkin
-Given the user visits the Opulux homepage
-Then the navbar displays the brand name "Opulux"
-And the navbar contains links: Home, Rooms, Restaurant, About, Blog, Contact
-And the navbar has a dark background
-And the navbar is responsive with a hamburger menu on mobile
-```
+### Requirement: Navigation
 
-### Scenario: Hero slider displays
-```gherkin
-Given the user visits the Opulux homepage
-Then a full-width hero slider is visible
-And the slider shows "Welcome To Opulux" heading
-And the slider shows "Hotels & Resorts" subtitle
-And the slider shows "Enjoy A Luxury Experience" tagline
-And the slider has a "Join With Us" CTA button
-And the slider has a dark overlay on the background image
-```
+Users SHALL be able to navigate the site via a sticky dark navbar with brand name and navigation links.
 
-### Scenario: Booking form is interactive
-```gherkin
-Given the user visits the Opulux homepage
-Then the booking form is visible below the hero
-And the form has a check-in date picker
-And the form has a check-out date picker
-And the form has a room type dropdown (Suite, Family, Deluxe, Classic, Superior, Luxury)
-And the form has a customer count dropdown
-And the form has a "Check Availability" button
-```
+#### Scenario: Desktop navigation
 
-### Scenario: About section shows hotel features
-```gherkin
-Given the user scrolls to the About section
-Then a heading "Welcome To Our Hotel" is visible
-And descriptive text about the hotel is displayed
-And 4 feature cards are shown: 25/7 Front Desk, Restaurant Bar, Transfer Services, Spa Suites
-And each feature card has an icon, title, and description
-```
+- **WHEN** the page loads
+- **THEN** the navbar displays the brand "Opulux" and navigation links (Home, Rooms, Restaurant, About, Blog, Contact)
 
-### Scenario: Rooms section displays room cards
-```gherkin
-Given the user scrolls to the Rooms section
-Then a heading "Our Rooms" is visible
-And 6 room cards are displayed in a 3-column grid
-And each room card shows: image, room name, price per night, "View Room Details" link
-And the rooms are: Suite Room ($120), Family Room ($20), Deluxe Room ($150), Classic Room ($130), Superior Room ($300), Luxury Room ($500)
-```
+#### Scenario: Mobile navigation
 
-### Scenario: Counter section shows statistics
-```gherkin
-Given the user scrolls to the Counter section
-Then 4 statistics are displayed: Happy Guests, Rooms, Staffs, Destination
-And the numbers animate (count up) when scrolled into view
-And the section has a parallax background image
-```
+- **WHEN** the user clicks the mobile menu toggle button
+- **THEN** a mobile navigation menu opens with all links
 
-### Scenario: Testimonials carousel works
-```gherkin
-Given the user scrolls to the Testimonials section
-Then a carousel of guest testimonials is displayed
-And each testimonial shows: quote text, guest name, role
-And the carousel auto-rotates between testimonials
-```
+#### Scenario: Mobile menu closes on link click
 
-### Scenario: Blog section shows recent posts
-```gherkin
-Given the user scrolls to the Blog section
-Then a heading "Recent Blog" is visible
-And 3 blog post cards are displayed
-And each card shows: image, date, author, title, excerpt
-```
+- **WHEN** the user clicks a navigation link in the mobile menu
+- **THEN** the mobile menu closes
 
-### Scenario: Instagram section shows image grid
-```gherkin
-Given the user scrolls to the Instagram section
-Then a row of 6 Instagram-style images is displayed
-And hovering over an image shows an Instagram icon overlay
-```
+### Requirement: Hero Section
 
-### Scenario: Footer renders correctly
-```gherkin
-Given the user scrolls to the footer
-Then the footer has a dark background
-And the footer shows the brand name "Opulux Hotel"
-And the footer has a Useful Links column
-And the footer has a Contact column with address, phone, and email
-And the footer links to https://www.componentdock.com/
-```
+The hero SHALL display a full-width background image with overlay and welcome text.
 
-### Scenario: Responsive design works
-```gherkin
-Given the user views the Opulux page on a mobile device (< 768px)
-Then the navbar collapses to a hamburger menu
-And the booking form fields stack vertically
-And room cards display in a single column
-And the about section stacks vertically
-And the footer columns stack vertically
-```
+#### Scenario: Hero displays welcome text
+
+- **WHEN** the page loads
+- **THEN** the hero shows "Welcome To Opulux" heading, "Hotels & Resorts" subtitle, and "Enjoy A Luxury Experience" tagline
+
+#### Scenario: Hero CTA button
+
+- **WHEN** the page loads
+- **THEN** a "Join With Us" CTA button is visible
+
+### Requirement: Booking Form
+
+The booking form SHALL allow users to select check-in/out dates, room type, and guest count.
+
+#### Scenario: Form fields display
+
+- **WHEN** the user scrolls to the booking section
+- **THEN** check-in date, check-out date, room type, and customer count fields are visible
+
+#### Scenario: Form submission
+
+- **WHEN** the user clicks "Check Availability"
+- **THEN** the form submission is handled without page reload
+
+### Requirement: About Section
+
+The about section SHALL display hotel features with icons.
+
+#### Scenario: Feature cards display
+
+- **WHEN** the user scrolls to the about section
+- **THEN** 4 feature cards are shown: 24/7 Front Desk, Restaurant & Bar, Transfer Services, Spa & Suites
+
+### Requirement: Rooms Section
+
+The rooms section SHALL display 6 room cards with pricing.
+
+#### Scenario: Room cards display
+
+- **WHEN** the user scrolls to the rooms section
+- **THEN** 6 room cards are displayed: Suite Room ($120), Family Room ($20), Deluxe Room ($150), Classic Room ($130), Superior Room ($300), Luxury Room ($500)
+
+### Requirement: Counter Section
+
+The counter section SHALL display hotel statistics.
+
+#### Scenario: Stats display
+
+- **WHEN** the user scrolls to the counter section
+- **THEN** 4 statistics are shown: Happy Guests (8,500+), Rooms (200+), Staff (500+), Destinations (100+)
+
+### Requirement: Testimonials
+
+The testimonials section SHALL display guest quotes with navigation.
+
+#### Scenario: Testimonial navigation
+
+- **WHEN** the user clicks next/prev buttons or dot indicators
+- **THEN** the displayed testimonial changes
+
+#### Scenario: Wrap-around navigation
+
+- **WHEN** the user clicks next on the last testimonial
+- **THEN** the first testimonial is shown
+
+- **WHEN** the user clicks prev on the first testimonial
+- **THEN** the last testimonial is shown
+
+### Requirement: Blog Section
+
+The blog section SHALL display 3 recent posts.
+
+#### Scenario: Blog cards display
+
+- **WHEN** the user scrolls to the blog section
+- **THEN** 3 blog post cards are displayed with image, date, author, title, and excerpt
+
+### Requirement: Instagram Gallery
+
+The instagram gallery SHALL display 6 images with hover effect.
+
+#### Scenario: Image grid
+
+- **WHEN** the user scrolls to the instagram section
+- **THEN** 6 images are displayed in a grid
+
+### Requirement: Footer
+
+The footer SHALL display brand info, links, contact, and newsletter.
+
+#### Scenario: Footer content
+
+- **WHEN** the user scrolls to the footer
+- **THEN** brand name "Opulux", Useful Links, Contact information, and Newsletter form are displayed
+
+#### Scenario: Component Dock link
+
+- **WHEN** the user views the footer
+- **THEN** a link to https://www.componentdock.com/ labeled "Component Dock" is present
+
+### Requirement: Responsive Design
+
+The template SHALL be fully responsive.
+
+#### Scenario: Mobile layout
+
+- **WHEN** the viewport is less than 768px wide
+- **THEN** the navbar shows hamburger menu, booking form stacks vertically, room cards display single column, and footer columns stack vertically
 
 ## Verification Checklist
 

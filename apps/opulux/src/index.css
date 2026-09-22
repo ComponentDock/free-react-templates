@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-gold: #c9af7e;
+  --color-gold-light: #d1ba90;
+  --color-gold-dark: #8d703b;
+  --color-brown: #7b6233;
+  --color-dark-brown: #3c312e;
+  --color-cyan: #4ac7ea;
+  --color-cyan-hover: #56caeb;
+  --color-cyan-light: #78d5ef;
+  --color-dark-bg: #1d2124;
+  --color-dark-alt: #232323;
+  --color-light-bg: #f8f9fa;
+  --color-off-white: #f6f2ea;
+
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
