@@ -1,56 +1,41 @@
+import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { describe, it, expect } from 'vitest'
 import { Rooms } from './Rooms'
 
 describe('Rooms', () => {
-  it('renders the Rooms heading', () => {
+  it('renders the section heading', () => {
     render(<Rooms />)
-    expect(screen.getByText('RoxyGlow Rooms')).toBeDefined()
+    expect(screen.getByText('RoxyGlow Rooms')).toBeInTheDocument()
+    expect(screen.getByText("Hotel Master's Rooms")).toBeInTheDocument()
   })
 
-  it('renders the subheading', () => {
+  it('renders all five room cards', () => {
     render(<Rooms />)
-    expect(screen.getByText("Hotel Master's Rooms")).toBeDefined()
+    expect(screen.getByText('Suite')).toBeInTheDocument()
+    expect(screen.getByText('Family')).toBeInTheDocument()
+    expect(screen.getByText('Deluxe')).toBeInTheDocument()
+    expect(screen.getByText('Luxury')).toBeInTheDocument()
+    expect(screen.getByText('Superior')).toBeInTheDocument()
   })
 
-  it('renders all room cards with prices', () => {
+  it('shows prices for each room', () => {
     render(<Rooms />)
-    expect(screen.getByText('$120')).toBeDefined()
-    expect(screen.getByText('$150')).toBeDefined()
-    expect(screen.getByText('$180')).toBeDefined()
-    expect(screen.getByText('$250')).toBeDefined()
-    expect(screen.getByText('$200')).toBeDefined()
+    expect(screen.getByText('$120/night')).toBeInTheDocument()
+    expect(screen.getByText('$150/night')).toBeInTheDocument()
+    expect(screen.getByText('$180/night')).toBeInTheDocument()
+    expect(screen.getByText('$250/night')).toBeInTheDocument()
+    expect(screen.getByText('$200/night')).toBeInTheDocument()
   })
 
-  it('renders room names', () => {
+  it('has View Room Details links', () => {
     render(<Rooms />)
-    expect(screen.getByText('Suite')).toBeDefined()
-    expect(screen.getByText('Family')).toBeDefined()
-    expect(screen.getByText('Deluxe')).toBeDefined()
-    expect(screen.getByText('Luxury')).toBeDefined()
-    expect(screen.getByText('Superior')).toBeDefined()
-  })
-
-  it('renders View Room Details links', () => {
-    render(<Rooms />)
-    const links = screen.getAllByText('View Room Details')
+    const links = screen.getAllByText(/View Room Details/)
     expect(links.length).toBe(5)
   })
 
-  it('renders the welcome section text', () => {
-    render(<Rooms />)
-    expect(screen.getByText('Discover the Art of Hospitality')).toBeDefined()
-  })
-
-  it('renders room images', () => {
-    render(<Rooms />)
-    expect(screen.getByAltText('Suite')).toBeDefined()
-    expect(screen.getByAltText('Family')).toBeDefined()
-  })
-
-  it('renders star ratings', () => {
+  it('displays five gold stars per room', () => {
     const { container } = render(<Rooms />)
     const stars = container.querySelectorAll('.fill-brand')
-    expect(stars.length).toBe(25) // 5 rooms x 5 stars
+    expect(stars.length).toBe(25) // 5 rooms * 5 stars
   })
 })

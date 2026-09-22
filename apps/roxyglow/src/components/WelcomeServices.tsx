@@ -1,55 +1,52 @@
-import { Coffee, Car, Smile, Waves, Bed } from 'lucide-react'
+import { Bed, Coffee, Car, Sparkles, Heart } from 'lucide-react'
 
 const features = [
   {
-    icon: Smile,
+    icon: Heart,
     title: 'Friendly Service',
-    description: 'Our staff are dedicated to making your stay memorable.',
+    description: 'Our staff provides warm and personalized hospitality.',
   },
   {
     icon: Coffee,
     title: 'Get Breakfast',
-    description: 'Enjoy a complimentary breakfast each morning.',
+    description: 'Enjoy complimentary breakfast with fresh ingredients.',
   },
   {
     icon: Car,
     title: 'Transfer Services',
-    description: 'Convenient airport transfer and shuttle service.',
+    description: 'Convenient airport transfer and local transportation.',
   },
-  { icon: Waves, title: 'Suits & SPA', description: 'Relax and rejuvenate at our luxury spa.' },
   {
-    icon: Bed,
-    title: 'Cozy Rooms',
-    description: 'Comfortable rooms designed for ultimate relaxation.',
+    icon: Sparkles,
+    title: 'Suits & SPA',
+    description: 'Relax and rejuvenate in our luxury spa facilities.',
   },
-]
+  { icon: Bed, title: 'Cozy Rooms', description: 'Comfortable and elegantly furnished rooms.' },
+] as const
 
 export function WelcomeServices() {
   return (
-    <section className="bg-light-alt py-20">
-      <div className="mx-auto max-w-7xl px-4">
-        {/* Heading */}
+    <section id="about" className="bg-paper-alt py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mb-12 text-center">
-          <h2 className="mb-2 font-heading text-3xl font-bold text-ink md:text-4xl">
+          <h2 className="font-display text-3xl font-bold text-ink md:text-4xl">
             Welcome to RoxyGlow Hotel
           </h2>
-          <p className="text-lg text-brand">A New Vision of Luxury Hotel</p>
+          <p className="mt-2 text-lg text-mist">A New Vision of Luxury Hotel</p>
         </div>
-
-        {/* Feature cards */}
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5">
-          {features.map((feature) => (
-            <div
-              key={feature.title}
-              className="flex flex-col items-center rounded bg-white p-6 text-center shadow-sm transition-shadow hover:shadow-md"
-            >
-              <feature.icon className="mb-4 h-10 w-10 text-brand" />
-              <h4 className="mb-2 font-heading text-base font-semibold text-ink">
-                {feature.title}
-              </h4>
-              <p className="text-sm text-body">{feature.description}</p>
-            </div>
-          ))}
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
+          {features.map((feature) => {
+            const Icon = feature.icon
+            return (
+              <div key={feature.title} className="text-center">
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center border border-brand text-brand">
+                  <Icon className="h-8 w-8" />
+                </div>
+                <h3 className="font-display text-lg font-semibold text-ink">{feature.title}</h3>
+                <p className="mt-2 text-sm text-mist">{feature.description}</p>
+              </div>
+            )
+          })}
         </div>
       </div>
     </section>

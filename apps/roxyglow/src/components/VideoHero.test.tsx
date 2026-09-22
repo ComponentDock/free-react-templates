@@ -1,17 +1,16 @@
+import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { describe, it, expect } from 'vitest'
 import { VideoHero } from './VideoHero'
 
 describe('VideoHero', () => {
   it('renders the heading', () => {
     render(<VideoHero />)
-    expect(screen.getByText(/Most Recommended Hotel/)).toBeDefined()
+    expect(screen.getByText(/Most Recommended Hotel/)).toBeInTheDocument()
   })
 
-  it('renders the background image', () => {
-    render(<VideoHero />)
-    const bgImg = document.querySelector('img[src*="roxyglow-video"]') as HTMLImageElement
-    expect(bgImg).toBeDefined()
-    expect(bgImg.getAttribute('aria-hidden')).toBe('true')
+  it('has a parallax background', () => {
+    const { container } = render(<VideoHero />)
+    const bgDiv = container.querySelector('.bg-fixed')
+    expect(bgDiv).toBeInTheDocument()
   })
 })

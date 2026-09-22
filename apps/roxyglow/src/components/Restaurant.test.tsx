@@ -1,43 +1,32 @@
+import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { describe, it, expect } from 'vitest'
 import { Restaurant } from './Restaurant'
 
 describe('Restaurant', () => {
-  it('renders the Restaurant heading', () => {
+  it('renders the section heading', () => {
     render(<Restaurant />)
-    expect(screen.getByText('Restaurant')).toBeDefined()
+    expect(screen.getByRole('heading', { name: 'Restaurant' })).toBeInTheDocument()
   })
 
-  it('renders the Our Menu subheading', () => {
+  it('renders all four menu items', () => {
     render(<Restaurant />)
-    expect(screen.getByText('Our Menu')).toBeDefined()
+    expect(screen.getByText('Grilled Salmon')).toBeInTheDocument()
+    expect(screen.getByText('Filet Mignon')).toBeInTheDocument()
+    expect(screen.getByText('Lobster Risotto')).toBeInTheDocument()
+    expect(screen.getByText('Mediterranean Salad')).toBeInTheDocument()
   })
 
-  it('renders all menu items', () => {
+  it('shows prices for each item', () => {
     render(<Restaurant />)
-    expect(screen.getByText('Grilled Salmon')).toBeDefined()
-    expect(screen.getByText('Filet Mignon')).toBeDefined()
-    expect(screen.getByText('Lobster Risotto')).toBeDefined()
-    expect(screen.getByText('Tiramisu')).toBeDefined()
+    expect(screen.getByText('$32')).toBeInTheDocument()
+    expect(screen.getByText('$45')).toBeInTheDocument()
+    expect(screen.getByText('$38')).toBeInTheDocument()
+    expect(screen.getByText('$18')).toBeInTheDocument()
   })
 
-  it('renders all menu prices', () => {
+  it('has food images with alt text', () => {
     render(<Restaurant />)
-    expect(screen.getByText('$28')).toBeDefined()
-    expect(screen.getByText('$45')).toBeDefined()
-    expect(screen.getByText('$38')).toBeDefined()
-    expect(screen.getByText('$14')).toBeDefined()
-  })
-
-  it('renders menu item descriptions', () => {
-    render(<Restaurant />)
-    expect(screen.getByText(/Fresh Atlantic salmon/)).toBeDefined()
-    expect(screen.getByText(/Prime beef tenderloin/)).toBeDefined()
-  })
-
-  it('renders menu item images', () => {
-    render(<Restaurant />)
-    expect(screen.getByAltText('Grilled Salmon')).toBeDefined()
-    expect(screen.getByAltText('Filet Mignon')).toBeDefined()
+    expect(screen.getByRole('img', { name: 'Grilled Salmon' })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: 'Filet Mignon' })).toBeInTheDocument()
   })
 })

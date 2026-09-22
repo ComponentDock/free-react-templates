@@ -3,119 +3,110 @@ import { Star } from 'lucide-react'
 const rooms = [
   {
     name: 'Suite',
-    price: 120,
-    description:
-      'A beautifully appointed suite with panoramic views and premium amenities for the ultimate luxury stay.',
-    image: 'roxyglow-room1',
-    stars: 5,
+    price: '$120',
+    image: 'https://picsum.photos/seed/roxyglow-room1/800/500',
+    description: 'A spacious suite with panoramic views and premium amenities.',
   },
   {
     name: 'Family',
-    price: 150,
-    description:
-      'Spacious family room with connecting options, perfect for those traveling with children.',
-    image: 'roxyglow-room2',
-    stars: 5,
+    price: '$150',
+    image: 'https://picsum.photos/seed/roxyglow-room2/800/500',
+    description: 'Perfect for families with connecting rooms and child-friendly features.',
   },
   {
     name: 'Deluxe',
-    price: 180,
-    description: 'Elegant deluxe room featuring modern design, plush bedding, and city views.',
-    image: 'roxyglow-room3',
-    stars: 5,
+    price: '$180',
+    image: 'https://picsum.photos/seed/roxyglow-room3/800/500',
+    description: 'Elegant deluxe room with modern decor and luxury bath.',
   },
   {
     name: 'Luxury',
-    price: 250,
-    description:
-      'Our finest accommodation with exclusive lounge access, marble bathroom, and personalized butler service.',
-    image: 'roxyglow-room4',
-    stars: 5,
+    price: '$250',
+    image: 'https://picsum.photos/seed/roxyglow-room4/800/500',
+    description: 'The finest luxury experience with butler service and private terrace.',
   },
   {
     name: 'Superior',
-    price: 200,
-    description:
-      'Superior comfort with upgraded furnishings, rain shower, and complimentary minibar.',
-    image: 'roxyglow-room5',
-    stars: 5,
+    price: '$200',
+    image: 'https://picsum.photos/seed/roxyglow-room5/800/500',
+    description: 'Superior comfort with premium bedding and city views.',
   },
-]
+] as const
+
+function GoldStars() {
+  return (
+    <div className="flex gap-1">
+      {Array.from({ length: 5 }, (_, i) => (
+        <Star key={i} className="h-4 w-4 fill-brand text-brand" />
+      ))}
+    </div>
+  )
+}
 
 export function Rooms() {
   return (
-    <section id="rooms" className="bg-light-alt py-20">
-      <div className="mx-auto max-w-7xl px-4">
-        {/* Title */}
+    <section id="rooms" className="bg-paper-alt py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mb-12 text-center">
-          <p className="mb-2 text-xs font-medium uppercase tracking-widest text-brand">Our Rooms</p>
-          <h2 className="mb-4 font-heading text-3xl font-bold text-ink md:text-4xl">
-            RoxyGlow Rooms
-          </h2>
-          <p className="text-lg text-body">Hotel Master&apos;s Rooms</p>
+          <h2 className="font-display text-3xl font-bold text-ink md:text-4xl">RoxyGlow Rooms</h2>
+          <p className="mt-2 text-lg text-mist">Hotel Master&apos;s Rooms</p>
         </div>
 
-        {/* Welcome image + text */}
-        <div className="mb-16 flex flex-col items-center gap-8 lg:flex-row">
-          <div className="w-full lg:w-1/2">
+        <div className="mb-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <div className="overflow-hidden">
             <img
               src="https://picsum.photos/seed/roxyglow-welcome/800/500"
               alt="Welcome to RoxyGlow"
-              className="h-80 w-full object-cover"
-              loading="lazy"
+              className="h-full w-full object-cover"
             />
           </div>
-          <div className="w-full lg:w-1/2">
-            <h3 className="mb-4 font-heading text-2xl font-bold text-ink">
-              Discover the Art of Hospitality
-            </h3>
-            <p className="mb-4 text-base leading-relaxed text-body">
-              At RoxyGlow, we believe that every guest deserves an extraordinary experience. Our
-              rooms are thoughtfully designed to blend luxury with comfort, ensuring your stay is
-              nothing short of perfection.
+          <div className="flex flex-col justify-center">
+            <h3 className="font-display text-2xl font-bold text-ink">Experience Luxury Living</h3>
+            <p className="mt-4 text-mist">
+              At RoxyGlow, we believe every guest deserves an extraordinary stay. Our rooms are
+              designed with meticulous attention to detail, combining modern elegance with timeless
+              comfort. From plush bedding to state-of-the-art amenities, every element is curated to
+              exceed your expectations.
             </p>
-            <p className="text-base leading-relaxed text-body">
-              From the moment you step through our doors, you&apos;ll be greeted with warm
-              hospitality and world-class amenities that redefine the meaning of luxury
-              accommodation.
+            <p className="mt-4 text-mist">
+              Whether you&apos;re here for business or pleasure, our dedicated team ensures your
+              experience is nothing short of exceptional. Discover a new standard of hospitality.
             </p>
           </div>
         </div>
 
-        {/* Room cards */}
-        {rooms.map((room, index) => (
-          <div
-            key={room.name}
-            className={`mb-12 flex flex-col items-center gap-8 ${
-              index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'
-            }`}
-          >
-            <div className="w-full lg:w-1/2">
-              <img
-                src={`https://picsum.photos/seed/${room.image}/800/600`}
-                alt={room.name}
-                className="h-80 w-full object-cover"
-                loading="lazy"
-              />
-            </div>
-            <div className="w-full lg:w-1/2">
-              <div className="mb-2 flex gap-1">
-                {Array.from({ length: room.stars }).map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-brand text-brand" />
-                ))}
+        <div className="space-y-8">
+          {rooms.map((room, i) => (
+            <div
+              key={room.name}
+              className={`grid grid-cols-1 gap-0 lg:grid-cols-2 ${
+                i % 2 === 1 ? 'lg:flex-row-reverse' : ''
+              }`}
+            >
+              <div className={`overflow-hidden ${i % 2 === 1 ? 'lg:order-2' : ''}`}>
+                <img
+                  src={room.image}
+                  alt={room.name}
+                  className="h-64 w-full object-cover lg:h-80"
+                />
               </div>
-              <p className="mb-1 text-sm text-body">${room.price}</p>
-              <h3 className="mb-3 font-heading text-2xl font-semibold text-ink">{room.name}</h3>
-              <p className="mb-4 text-base leading-relaxed text-body">{room.description}</p>
-              <a
-                href="#"
-                className="inline-block text-sm font-medium text-brand underline transition-colors hover:text-brand-hover"
+              <div
+                className={`flex flex-col justify-center p-8 ${i % 2 === 1 ? 'lg:order-1' : ''}`}
               >
-                View Room Details
-              </a>
+                <GoldStars />
+                <p className="mt-2 text-sm text-brand">{room.price}/night</p>
+                <h3 className="mt-2 font-display text-2xl font-bold text-ink">{room.name}</h3>
+                <p className="mt-2 text-mist">{room.description}</p>
+                <a
+                  href="#rooms"
+                  className="mt-4 inline-block text-sm font-semibold uppercase tracking-wide text-brand transition-colors hover:text-brand-dark"
+                >
+                  View Room Details →
+                </a>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   )

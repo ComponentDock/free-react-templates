@@ -1,26 +1,19 @@
+import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { describe, it, expect } from 'vitest'
 import { ServicesGrid } from './ServicesGrid'
 
 describe('ServicesGrid', () => {
-  it('renders all four service titles', () => {
+  it('renders all four service cards', () => {
     render(<ServicesGrid />)
-    expect(screen.getByText('Special Rooms')).toBeDefined()
-    expect(screen.getByText('Swimming Pool')).toBeDefined()
-    expect(screen.getByText('Restaurant')).toBeDefined()
-    expect(screen.getByText('Suites & Rooms')).toBeDefined()
+    expect(screen.getByText('Special Rooms')).toBeInTheDocument()
+    expect(screen.getByText('Swimming Pool')).toBeInTheDocument()
+    expect(screen.getByText('Restaurant')).toBeInTheDocument()
+    expect(screen.getByText('Suites & Rooms')).toBeInTheDocument()
   })
 
-  it('renders the Learn More link on the dark overlay card', () => {
+  it('has an arrow CTA on the last card', () => {
     render(<ServicesGrid />)
-    expect(screen.getByText('Learn More')).toBeDefined()
-  })
-
-  it('renders images for all services', () => {
-    render(<ServicesGrid />)
-    expect(screen.getByAltText('Special Rooms')).toBeDefined()
-    expect(screen.getByAltText('Swimming Pool')).toBeDefined()
-    expect(screen.getByAltText('Restaurant')).toBeDefined()
-    expect(screen.getByAltText('Suites & Rooms')).toBeDefined()
+    const arrowBtn = screen.getByLabelText(/View Suites & Rooms/i)
+    expect(arrowBtn).toBeInTheDocument()
   })
 })

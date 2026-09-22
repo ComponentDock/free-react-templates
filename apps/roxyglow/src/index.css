@@ -3,17 +3,28 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* RoxyGlow brand palette — luxury hotel tokens:
-     brand gold #b69100 (buttons, accents), black #000000 (text, headings)
-     body gray #777777, light section bg #f8f9fa, white #ffffff. */
   --color-brand: #b69100;
-  --color-brand-hover: #9a7a00;
-  --color-ink: #000000;
-  --color-body: #777777;
-  --color-light-alt: #f8f9fa;
-  --color-white: #ffffff;
-  --color-dark-bg: #312b30;
+  --color-brand-dark: #9a7a00;
 
-  --font-heading: 'Playfair Display', Georgia, serif;
+  --color-ink: #000000;
+  --color-ink-dark: #1a1a1a;
+
+  --color-paper: #ffffff;
+  --color-paper-alt: #f8f9fa;
+
+  --color-mist: #777777;
+
+  --color-primary-50: #fdf8e6;
+  --color-primary-100: #f9edc4;
+  --color-primary-200: #f0d88a;
+  --color-primary-300: #e5c24e;
+  --color-primary-400: #d4a822;
+  --color-primary-500: #b69100;
+  --color-primary-600: #9a7a00;
+  --color-primary-700: #7a6000;
+  --color-primary-800: #5c4800;
+  --color-primary-900: #3d3000;
+
   --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-sans-serif, system-ui, sans-serif;
 }

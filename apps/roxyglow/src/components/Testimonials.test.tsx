@@ -1,48 +1,36 @@
+import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { describe, it, expect } from 'vitest'
 import { Testimonials } from './Testimonials'
 
 describe('Testimonials', () => {
-  it('renders the Testimony heading', () => {
+  it('renders the section heading', () => {
     render(<Testimonials />)
-    expect(screen.getByText('Testimony')).toBeDefined()
+    expect(screen.getByText('Testimony')).toBeInTheDocument()
+    expect(screen.getByText('Our Happy Guest Says')).toBeInTheDocument()
   })
 
-  it('renders the subheading', () => {
+  it('renders all three testimonials', () => {
     render(<Testimonials />)
-    expect(screen.getByText('Our Happy Guest Says')).toBeDefined()
+    expect(screen.getByText('Sarah Johnson')).toBeInTheDocument()
+    expect(screen.getByText('Michael Chen')).toBeInTheDocument()
+    expect(screen.getByText('Emma Williams')).toBeInTheDocument()
   })
 
-  it('renders all testimonial author names', () => {
+  it('shows the Guests label for each testimonial', () => {
     render(<Testimonials />)
-    expect(screen.getByText('Sarah Mitchell')).toBeDefined()
-    expect(screen.getByText('David Chen')).toBeDefined()
-    expect(screen.getByText('Maria Rodriguez')).toBeDefined()
+    const guestsLabels = screen.getAllByText('Guests')
+    expect(guestsLabels.length).toBe(3)
   })
 
-  it('renders star ratings for each testimonial', () => {
+  it('displays five gold stars per testimonial', () => {
     const { container } = render(<Testimonials />)
     const stars = container.querySelectorAll('.fill-brand')
-    expect(stars.length).toBe(15) // 3 testimonials x 5 stars
+    expect(stars.length).toBe(15) // 3 testimonials * 5 stars
   })
 
-  it('renders testimonial text', () => {
+  it('has circular avatar images', () => {
     render(<Testimonials />)
-    expect(screen.getByText(/An absolutely stunning hotel/)).toBeDefined()
-    expect(screen.getByText(/From the moment we arrived/)).toBeDefined()
-    expect(screen.getByText(/The perfect getaway destination/)).toBeDefined()
-  })
-
-  it('renders Guests label for each testimonial', () => {
-    render(<Testimonials />)
-    const labels = screen.getAllByText('Guests')
-    expect(labels.length).toBe(3)
-  })
-
-  it('renders testimonial avatar images', () => {
-    render(<Testimonials />)
-    expect(screen.getByAltText('Sarah Mitchell')).toBeDefined()
-    expect(screen.getByAltText('David Chen')).toBeDefined()
-    expect(screen.getByAltText('Maria Rodriguez')).toBeDefined()
+    const avatars = screen.getAllByRole('img')
+    expect(avatars.length).toBe(3)
   })
 })

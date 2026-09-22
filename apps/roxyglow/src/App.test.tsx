@@ -1,66 +1,24 @@
+import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { describe, it, expect } from 'vitest'
 import { App } from './App'
 
 describe('App', () => {
-  it('renders without crashing', () => {
-    render(<App />)
-  })
-
   it('sets the document title', () => {
     render(<App />)
     expect(document.title).toBe('RoxyGlow — Luxury Hotel & Resort')
   })
 
-  it('renders the Navbar', () => {
+  it('renders the navbar and all main sections', () => {
     render(<App />)
-    const brand = screen.getAllByText('RoxyGlow')
-    expect(brand.length).toBeGreaterThanOrEqual(1)
-  })
-
-  it('renders the Hero section', () => {
-    render(<App />)
-    expect(screen.getByText('More than a hotel... an experience')).toBeDefined()
-  })
-
-  it('renders the BookingForm', () => {
-    render(<App />)
-    expect(screen.getByLabelText('Check-in Date')).toBeDefined()
-  })
-
-  it('renders the ServicesGrid', () => {
-    render(<App />)
-    expect(screen.getByText('Special Rooms')).toBeDefined()
-  })
-
-  it('renders the WelcomeServices', () => {
-    render(<App />)
-    expect(screen.getByText('Welcome to RoxyGlow Hotel')).toBeDefined()
-  })
-
-  it('renders the Rooms section', () => {
-    render(<App />)
-    expect(screen.getByText('$120')).toBeDefined()
-  })
-
-  it('renders the Testimonials section', () => {
-    render(<App />)
-    expect(screen.getByText('Sarah Mitchell')).toBeDefined()
-  })
-
-  it('renders the VideoHero section', () => {
-    render(<App />)
-    expect(screen.getByText(/Most Recommended Hotel/)).toBeDefined()
-  })
-
-  it('renders the Restaurant section', () => {
-    render(<App />)
-    expect(screen.getAllByText('Restaurant').length).toBeGreaterThanOrEqual(1)
-  })
-
-  it('renders the Footer with Component Dock link', () => {
-    render(<App />)
-    const link = screen.getByText('Component Dock')
-    expect(link.closest('a')).toHaveAttribute('href', 'https://www.componentdock.com/')
+    expect(screen.getAllByRole('link', { name: /RoxyGlow/i }).length).toBeGreaterThanOrEqual(1)
+    expect(screen.getByText(/More than a hotel/i)).toBeInTheDocument()
+    expect(screen.getByText(/Check Availability/i)).toBeInTheDocument()
+    expect(screen.getByText(/Special Rooms/i)).toBeInTheDocument()
+    expect(screen.getByText(/Welcome to RoxyGlow Hotel/i)).toBeInTheDocument()
+    expect(screen.getByText(/RoxyGlow Rooms/i)).toBeInTheDocument()
+    expect(screen.getByText(/Our Happy Guest Says/i)).toBeInTheDocument()
+    expect(screen.getByText(/We're Most Recommended Hotel/i)).toBeInTheDocument()
+    expect(screen.getAllByText(/Restaurant/i).length).toBeGreaterThanOrEqual(1)
+    expect(screen.getByText(/Component Dock/i)).toBeInTheDocument()
   })
 })

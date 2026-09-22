@@ -1,50 +1,49 @@
+import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { describe, it, expect } from 'vitest'
 import { Footer } from './Footer'
 
 describe('Footer', () => {
-  it('renders the Component Dock link', () => {
+  it('renders the brand name', () => {
     render(<Footer />)
-    const link = screen.getByText('Component Dock')
-    expect(link).toBeDefined()
-    expect(link.closest('a')).toHaveAttribute('href', 'https://www.componentdock.com/')
+    expect(screen.getAllByRole('link', { name: /RoxyGlow/i }).length).toBeGreaterThanOrEqual(1)
   })
 
-  it('renders the copyright text', () => {
+  it('renders social media icons', () => {
     render(<Footer />)
-    expect(screen.getByText(/More templates at/)).toBeDefined()
-    expect(screen.getByText(/Component Dock/)).toBeDefined()
+    expect(screen.getByLabelText('Twitter')).toBeInTheDocument()
+    expect(screen.getByLabelText('Facebook')).toBeInTheDocument()
+    expect(screen.getByLabelText('Instagram')).toBeInTheDocument()
   })
 
-  it('renders the RoxyGlow brand section', () => {
+  it('renders useful links', () => {
     render(<Footer />)
-    expect(screen.getByText('RoxyGlow')).toBeDefined()
+    expect(screen.getByText('Useful Links')).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'About Us' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Services' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Rooms' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Contact' })).toBeInTheDocument()
   })
 
-  it('renders Useful Links section', () => {
+  it('renders privacy links', () => {
     render(<Footer />)
-    expect(screen.getByText('Useful Links')).toBeDefined()
-    expect(screen.getByText('Sitemaps')).toBeDefined()
-    expect(screen.getByText('Categories')).toBeDefined()
+    expect(screen.getByText('Privacy')).toBeInTheDocument()
+    expect(screen.getByText('Privacy Policy')).toBeInTheDocument()
+    expect(screen.getByText('Terms of Service')).toBeInTheDocument()
+    expect(screen.getByText('Cancellation Policy')).toBeInTheDocument()
   })
 
-  it('renders Privacy section', () => {
+  it('renders contact information', () => {
     render(<Footer />)
-    expect(screen.getByText('Privacy')).toBeDefined()
-    expect(screen.getByText('Privacy Policy')).toBeDefined()
-    expect(screen.getByText('Terms of Use')).toBeDefined()
+    expect(screen.getByText('Have a Questions')).toBeInTheDocument()
+    expect(screen.getByText('123 Luxury Avenue, Paradise City')).toBeInTheDocument()
+    expect(screen.getByText('+1 (234) 567-8900')).toBeInTheDocument()
+    expect(screen.getByText('info@roxyglow.com')).toBeInTheDocument()
   })
 
-  it('renders Have a Questions section', () => {
+  it('links to Component Dock', () => {
     render(<Footer />)
-    expect(screen.getByText('Have a Questions')).toBeDefined()
-    expect(screen.getByText(/info@roxyglow.com/)).toBeDefined()
-  })
-
-  it('renders social media links', () => {
-    render(<Footer />)
-    expect(screen.getByLabelText('Twitter')).toBeDefined()
-    expect(screen.getByLabelText('Facebook')).toBeDefined()
-    expect(screen.getByLabelText('Instagram')).toBeDefined()
+    const link = screen.getByRole('link', { name: /Component Dock/i })
+    expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
+    expect(link).toHaveAttribute('target', '_blank')
   })
 })

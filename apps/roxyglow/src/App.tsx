@@ -16,7 +16,7 @@ export function App() {
   }, [])
 
   return (
-    <div className="flex min-h-screen flex-col bg-white font-sans text-ink">
+    <div className="flex min-h-screen flex-col bg-white text-ink transition-colors dark:bg-gray-950 dark:text-white">
       <Navbar />
       <main className="flex-1">
         <Hero />
