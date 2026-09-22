@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #1a73e8;
+  --color-brand-hover: #1557b0;
+  --color-dark: #1a1a2e;
+  --color-offwhite: #f8f9fa;
+  --color-ink: #333333;
+  --color-muted: #777777;
+
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
