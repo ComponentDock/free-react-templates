@@ -1841,7 +1841,7 @@
 - [x] **Drpro** — [colorlib](https://colorlib.com/wp/template/drpro/) · [![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/drpro-free-template-1.jpg)] · [praxis](https://praxis.free.componentdock.com)
 - [x] **Endurance** — [colorlib](https://colorlib.com/wp/template/endurance/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/endurance-free-template.jpg) · [vigor](https://free-react-templates-vigor.surge.sh)
 - [x] **Fitfloss** — [colorlib](https://colorlib.com/wp/template/fitfloss/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitfloss-free-template.jpg) · [swole](https://swole.free.componentdock.com)
-- [~] **Fitness** — [colorlib](https://colorlib.com/wp/template/fitness/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitness-free-template.jpg)
+- [x] **Fitness** — [colorlib](https://colorlib.com/wp/template/fitness/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitness-free-template.jpg) · [stallion](https://stallion.free.componentdock.com)
 - [ ] **Fitnessclub** — [colorlib](https://colorlib.com/wp/template/fitnessclub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitnessclub-free-template.jpg)
 - [x] **Fitnessgym** — [colorlib](https://colorlib.com/wp/template/fitnessgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitnessgym-free-template.jpg) · [vigor](https://vigor.free.componentdock.com)
 - [x] **Fitnesstrainer** — [colorlib](https://colorlib.com/wp/template/fitnesstrainer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitnesstrainer-free-template.jpg) · [ironvault](https://ironvault.free.componentdock.com)
