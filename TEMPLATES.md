@@ -1889,7 +1889,7 @@
 - [x] **Xgym** — [colorlib](https://colorlib.com/wp/template/xgym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/xgym-free-template.jpg) · [bolt](https://bolt.free.componentdock.com)
 - [x] **Yoga** — [colorlib](https://colorlib.com/wp/template/yoga/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yoga-free-template.jpg) · [lotus](https://lotus.free.componentdock.com)
 - [x] **Yoga Studio** — [colorlib](https://colorlib.com/wp/template/yoga-studio/) · [pranayama](https://pranayama.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogastudio-free-template.jpg)
-- [~] **Yogabest** — [colorlib](https://colorlib.com/wp/template/yogabest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogabest-colorlib-template.jpg)
+- [x] **Yogabest** — [colorlib](https://colorlib.com/wp/template/yogabest/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogabest-colorlib-template.jpg) · [zenbloom](https://zenbloom.free.componentdock.com)
 - [x] **Yogaflex** — [colorlib](https://colorlib.com/wp/template/yogaflex/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogaflex-free-template.jpg) · [vinyasa](https://vinyasa.free.componentdock.com)
 - [x] **Yogafun** — [colorlib](https://colorlib.com/wp/template/yogafun/) · [namastay](https://namastay.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogafun-free-template.jpg)
 - [x] **Yogalax** — [colorlib](https://colorlib.com/wp/template/yogalax/) · [shanti](https://shanti.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yogalax-free-template.jpg)
