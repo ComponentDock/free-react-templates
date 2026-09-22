@@ -1870,7 +1870,7 @@
 - [x] **Namaste** — [colorlib](https://colorlib.com/wp/template/namaste/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/namaste-free-template.jpg) · [zen](https://zen.free.componentdock.com)
 - [x] **Nova** — [colorlib](https://colorlib.com/wp/template/nova/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nova-free-template.jpg) · [nova](https://nova.free.componentdock.com)
 - [x] **Pharma** — [colorlib](https://colorlib.com/wp/template/pharma/) · [elixir](https://elixir.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pharma-free-template.jpg)
-- [~] **Physical Therapy** — [colorlib](https://colorlib.com/wp/template/physical-therapy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/physicaltherapy-free-templatel.jpg)
+- [x] **Physical Therapy** — [colorlib](https://colorlib.com/wp/template/physical-therapy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/physicaltherapy-free-templatel.jpg) · [kinectwell](https://free-react-templates-kinectwell.surge.sh)
 - [ ] **Ponigym** — [colorlib](https://colorlib.com/wp/template/ponigym/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ponigym-free-template.jpg)
 - [x] **Prodent** — [colorlib](https://colorlib.com/wp/template/prodent/) · [glint](https://glint.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/prodent-free-template.jpg)
 - [ ] **Robust** — [colorlib](https://colorlib.com/wp/template/robust/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/robust-free-template.jpg)
