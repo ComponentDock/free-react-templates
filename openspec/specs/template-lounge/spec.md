@@ -2,103 +2,166 @@
 
 Recreation of ColorLib "Cozy" (https://colorlib.com/wp/template/cozy/)
 
-## Overview
+## Purpose
 
 A warm, boutique hotel landing page with hero carousel, reservation form, services tabs, room showcase, parallax conference section, restaurant menu, testimonials, blog, events, and Instagram gallery.
 
-## Design Tokens
+## Requirements
 
-- **Brand color:** #ff6138 (warm orange-red)
-- **Footer background:** #2c2727 (warm dark brown)
-- **Navbar background:** transparent (over hero), dark on scroll
-- **Overlay:** #404044 at 10% opacity
-- **Body font:** Muli (Google Fonts), sans-serif
-- **Heading font:** Playfair Display (Google Fonts), serif
-- **Button style:** rounded (border-radius: 30px), orange primary
-- **Section backgrounds:** alternating white / #f8f9fa light gray
-- **Testimony cards:** white bg, subtle shadow, border
+### Requirement: Navigation
 
-## Sections (in order)
+Users SHALL be able to navigate the site via a sticky navbar with brand name, navigation links, and a Rooms dropdown menu.
 
-1. **Navbar** — transparent over hero, dark on scroll; links: Home, About, Rooms (dropdown), Dining & Bar, Amenities, Booking, Blog, Contact; brand name "Lounge"
-2. **Hero Carousel** — full-height background images with overlay, heading text + "Watch Video" button (pill-shaped), 3 slides
-3. **Reservation Form** — floating card overlapping hero bottom-right, fields: Check-in, Check-out, Guests, Room Type select
-4. **Services Tabs** — vertical pill navigation (left) + tab content (right): Master Bedrooms, Breakfast Buffet, Fitness Center, 24hr Reception, Sea View Balcony, Pool & Spa, Free WiFi, Resto Bar
-5. **Room Showcase** — "Our Rooms" heading, horizontal scroll of room cards (image + name + description + price)
-6. **Parallax Conference** — full-width background image with dark overlay, centered heading "Conference Centre" + "View more details" button
-7. **Restaurant Menu** — "Our Menu" heading, horizontal pill tabs (Main/Dessert/Drinks), 2-column grid of menu items with image + name + ingredients + price
-8. **Testimonials** — "Guests Says" heading, carousel of review cards with avatar, stars, quote, name, origin
-9. **Blog** — "Recent Blog" heading, 3 blog cards with image + title + date + author + comment count
-10. **Events** — "Our Events" heading, 2-column layout: left large image, right list of events with date badge + title + description + buttons
-11. **Instagram Gallery** — heading with Instagram icon, 5-column image grid with hover overlay
-12. **Footer** — 4-column: brand + social, Opening Hours, Contact Info, Newsletter; copyright + "More templates at Component Dock" link
+#### Scenario: Desktop navigation
 
-## Scenarios
+- **WHEN** the page loads
+- **THEN** the navbar displays the brand "Lounge" and navigation links (Home, About, Rooms, Dining & Bar, Amenities, Booking, Blog, Contact)
 
-### Navbar
+#### Scenario: Mobile navigation
 
-- GIVEN the page loads THEN the navbar is visible with brand "Lounge"
-- GIVEN the user scrolls down THEN the navbar background becomes dark
-- GIVEN the user clicks a nav link THEN the page scrolls to the section
-- GIVEN the user clicks the Rooms dropdown THEN dropdown items appear
-- GIVEN the user clicks the mobile menu button THEN the mobile nav opens
-- GIVEN the mobile nav is open AND the user clicks a link THEN the nav closes
+- **WHEN** the user clicks the mobile menu toggle button
+- **THEN** a mobile navigation menu opens with all links
 
-### Hero Carousel
+#### Scenario: Rooms dropdown
 
-- GIVEN the page loads THEN the first slide is visible with heading text
-- GIVEN the user waits THEN slides auto-advance
-- GIVEN the user clicks "Watch Video" THEN a video modal/overlay would open
+- **WHEN** the user hovers over the Rooms link on desktop
+- **THEN** a dropdown shows Superior Room Twin, Premier Suite, and Family Room options
 
-### Reservation Form
+#### Scenario: Scroll behavior
 
-- GIVEN the page loads THEN the reservation form is visible
-- GIVEN the user fills check-in AND check-out dates THEN the form is valid
-- GIVEN the user selects a room type THEN the selection is reflected
+- **WHEN** the user scrolls down past 60px
+- **THEN** the navbar background changes from transparent to dark
 
-### Services
+### Requirement: Hero Carousel
 
-- GIVEN the page loads THEN "Master Bedrooms" tab is active
-- GIVEN the user clicks a service tab THEN the corresponding content shows
-- GIVEN a tab is active THEN its icon and description are visible
+Users SHALL see a full-height hero carousel with auto-advancing slides.
 
-### Room Showcase
+#### Scenario: Slide display
 
-- GIVEN the page loads THEN room cards are visible with images and prices
+- **WHEN** the page loads
+- **THEN** the first slide is visible with heading "Welcome to Lounge — your seaside retreat"
 
-### Parallax
+#### Scenario: Auto-advance
 
-- GIVEN the page loads THEN the conference section shows with background image
+- **WHEN** 5 seconds pass
+- **THEN** the carousel advances to the next slide
 
-### Restaurant Menu
+#### Scenario: Slide indicators
 
-- GIVEN the page loads THEN "Main" tab is active
-- GIVEN the user clicks "Dessert" tab THEN dessert items show
-- GIVEN the user clicks "Drinks" tab THEN drink items show
-- GIVEN a menu item is visible THEN it shows image, name, ingredients, price
+- **WHEN** the user clicks a slide indicator
+- **THEN** the carousel navigates to that slide
 
-### Testimonials
+### Requirement: Reservation Form
 
-- GIVEN the page loads THEN testimonial cards are visible
-- GIVEN a testimonial card is visible THEN it shows avatar, stars, quote, name, origin
+Users SHALL be able to fill in a reservation form with check-in/out dates, guests, and room type.
 
-### Blog
+#### Scenario: Form fields
 
-- GIVEN the page loads THEN 3 blog cards are visible
-- GIVEN a blog card is visible THEN it shows image, title, date, author, comment count
+- **WHEN** the reservation form renders
+- **THEN** it displays Check-in, Check-out, Guests, and Room Type fields with a "Check Availability" button
 
-### Events
+#### Scenario: Form submission
 
-- GIVEN the page loads THEN event items are visible with date badges
-- GIVEN an event is visible THEN it shows title, description, and action buttons
+- **WHEN** the user clicks "Check Availability"
+- **THEN** the form submits without page reload
 
-### Instagram
+### Requirement: Services Section
 
-- GIVEN the page loads THEN 5 Instagram images are visible in a grid
-- GIVEN the user hovers an image THEN the Instagram icon overlay appears
+Users SHALL see a tabbed services section with amenities.
 
-### Footer
+#### Scenario: Default tab
 
-- GIVEN the page loads THEN the footer shows with 4 columns
-- GIVEN the footer renders THEN it shows Opening Hours, Contact Info, Newsletter
-- GIVEN the footer renders THEN it shows "More templates at Component Dock" link
+- **WHEN** the services section loads
+- **THEN** the "Master Bedrooms" tab is active with its description
+
+#### Scenario: Tab switching
+
+- **WHEN** the user clicks a different service tab
+- **THEN** the corresponding service content is displayed
+
+### Requirement: Room Showcase
+
+Users SHALL see a horizontal scrollable list of room cards with images and prices.
+
+#### Scenario: Room cards
+
+- **WHEN** the rooms section loads
+- **THEN** 4 room cards are displayed with names, prices, and descriptions
+
+#### Scenario: Scroll navigation
+
+- **WHEN** the user clicks the left/right scroll buttons
+- **THEN** the room list scrolls horizontally
+
+### Requirement: Parallax Conference
+
+Users SHALL see a full-width parallax section for the conference center.
+
+#### Scenario: Conference display
+
+- **WHEN** the parallax section loads
+- **THEN** it shows "Conference Centre" heading with a "View more details" button
+
+### Requirement: Restaurant Menu
+
+Users SHALL see a tabbed restaurant menu with food items.
+
+#### Scenario: Default menu
+
+- **WHEN** the menu section loads
+- **THEN** the "Main" tab is active showing main course items
+
+#### Scenario: Menu tab switching
+
+- **WHEN** the user clicks "Dessert" or "Drinks" tab
+- **THEN** the corresponding menu items are displayed
+
+### Requirement: Testimonials
+
+Users SHALL see guest testimonials with ratings and quotes.
+
+#### Scenario: Testimonial display
+
+- **WHEN** the testimonials section loads
+- **THEN** 3 testimonial cards are displayed with names, origins, ratings, and quotes
+
+### Requirement: Blog
+
+Users SHALL see recent blog posts.
+
+#### Scenario: Blog cards
+
+- **WHEN** the blog section loads
+- **THEN** 3 blog cards are displayed with images, titles, dates, and authors
+
+### Requirement: Events
+
+Users SHALL see upcoming events with date badges and action buttons.
+
+#### Scenario: Event display
+
+- **WHEN** the events section loads
+- **THEN** event items are displayed with date badges, titles, descriptions, and "Join event" / "See details" buttons
+
+### Requirement: Instagram Gallery
+
+Users SHALL see an Instagram image gallery with hover effects.
+
+#### Scenario: Gallery display
+
+- **WHEN** the Instagram section loads
+- **THEN** 5 images are displayed in a grid with hover overlay
+
+### Requirement: Footer
+
+Users SHALL see a footer with contact information and a Component Dock link.
+
+#### Scenario: Footer columns
+
+- **WHEN** the footer renders
+- **THEN** it displays 4 columns: brand info, opening hours, contact info, and newsletter
+
+#### Scenario: Component Dock link
+
+- **WHEN** the footer renders
+- **THEN** it shows "More templates at Component Dock" linking to https://www.componentdock.com/
