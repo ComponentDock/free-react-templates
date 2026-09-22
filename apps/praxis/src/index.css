@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Praxis brand palette — coral/salmon from the Drpro design (#ffa07f) */
+  --color-coral-50: #fff5f2;
+  --color-coral-100: #ffe8e0;
+  --color-coral-200: #ffd0c0;
+  --color-coral-300: #ffb09a;
+  --color-coral-400: #ffa07f;
+  --color-coral-500: #f28c66;
+  --color-coral-600: #e0704a;
+  --color-coral-700: #c45a38;
+  --color-coral-800: #a04830;
+  --color-coral-900: #843e2c;
+
+  /* Montserrat — the original template's typeface */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
