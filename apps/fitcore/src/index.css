@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* FitCore brand palette — recreated from the original fitness club design
+     (style.css): red-orange #f04e3c primary (buttons, accents, video icon,
+     active nav, section labels), dark purple-navy #2c234d headings,
+     deep blue #10285d body text, dark overlay backgrounds. */
+  --color-brand: #f04e3c;
+  --color-brand-dark: #c20505;
+
+  /* Ink — dark text/headings (#2c234d from the original). */
+  --color-ink: #2c234d;
+  --color-ink-dark: #1a1530;
+
+  /* Muted — secondary text. */
+  --color-muted: #10285d;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the red-orange. */
+  --color-primary-50: #fef2f1;
+  --color-primary-100: #fde1de;
+  --color-primary-200: #fbc4be;
+  --color-primary-300: #f79a8f;
+  --color-primary-400: #f36b5b;
+  --color-primary-500: #f04e3c;
+  --color-primary-600: #dc3322;
+  --color-primary-700: #b9281a;
+  --color-primary-800: #99241a;
+  --color-primary-900: #80241c;
+
+  /* Fonts: Teko (display/headings) + Barlow (body). */
+  --font-sans: 'Barlow', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Teko', ui-sans-serif, system-ui, sans-serif;
+}
