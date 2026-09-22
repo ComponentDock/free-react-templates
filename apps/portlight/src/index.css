@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Portlight brand palette — recreated from the ColorLib "Harbor Lights" hotel template:
+     green #21cc7a CTA, blue #2f89fc links, dark #000 navbar/footer, muted #6c757d body. */
+  --color-brand: #21cc7a;
+  --color-brand-dark: #1aae68;
+
+  /* Ink — dark body text (#000000). */
+  --color-ink: #000000;
+  --color-ink-dark: #212529;
+
+  /* Paper — light section background (#f8f9fa). */
+  --color-paper: #f8f9fa;
+
+  /* Mist — muted text (#6c757d). */
+  --color-mist: #6c757d;
+
+  /* Blue — links and accents (#2f89fc). */
+  --color-blue: #2f89fc;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the green CTA color. */
+  --color-primary-50: #eafaf2;
+  --color-primary-100: #d4f5e5;
+  --color-primary-200: #a9ebcb;
+  --color-primary-300: #7ee0b1;
+  --color-primary-400: #53d697;
+  --color-primary-500: #21cc7a;
+  --color-primary-600: #1aae68;
+  --color-primary-700: #149056;
+  --color-primary-800: #0e7244;
+  --color-primary-900: #085432;
+
+  /* Font: Nunito Sans (Google Fonts) — clean sans-serif for hotel template. */
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
