@@ -14,128 +14,163 @@ Recreation of ColorLib's **Vacation Rental** apartment booking template as a Rea
 
 Extracted from the preview's `css/style.css`:
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| Brand / primary | `#fd7792` | Buttons, star ratings, price text, icon circles |
-| Background light | `#f3f4f7` | Alternating section backgrounds (`.bg-light`) |
-| Service icon circle | `#a3cb4c` | Green circle on service cards |
-| Text dark | `#000000` | Headings, strong text |
-| Text body | `#666666` | Paragraph copy, secondary text |
-| Font family | `Poppins, Arial, sans-serif` | Global body + headings |
-| Button radius | `4px` | All `.btn` elements |
-| Button style | uppercase, letter-spacing 3px, font-size 11px | All CTA buttons |
-| Card shadow | `0px 10px 27px -9px rgba(0,0,0,0.11)` | Service cards, room cards |
-| Card border-radius | `5px` | Service card `.services-wrap` |
-| Hero overlay | semi-transparent dark on parallax bg | Hero section |
+| Token               | Value                                         | Usage                                           |
+| ------------------- | --------------------------------------------- | ----------------------------------------------- |
+| Brand / primary     | `#fd7792`                                     | Buttons, star ratings, price text, icon circles |
+| Background light    | `#f3f4f7`                                     | Alternating section backgrounds (`.bg-light`)   |
+| Service icon circle | `#a3cb4c`                                     | Green circle on service cards                   |
+| Text dark           | `#000000`                                     | Headings, strong text                           |
+| Text body           | `#666666`                                     | Paragraph copy, secondary text                  |
+| Font family         | `Poppins, Arial, sans-serif`                  | Global body + headings                          |
+| Button radius       | `4px`                                         | All `.btn` elements                             |
+| Button style        | uppercase, letter-spacing 3px, font-size 11px | All CTA buttons                                 |
+| Card shadow         | `0px 10px 27px -9px rgba(0,0,0,0.11)`         | Service cards, room cards                       |
+| Card border-radius  | `5px`                                         | Service card `.services-wrap`                   |
+| Hero overlay        | semi-transparent dark on parallax bg          | Hero section                                    |
 
 ## Section Structure (order from preview DOM)
 
-1. **Top Bar** — phone number + email + social media icons (Facebook, Twitter, Instagram, Dribbble)
+1. **Top Bar** — phone number + email + social media icons (Facebook, Twitter, Instagram)
 2. **Navbar** — dark background, logo "GetawayPad" (word "Pad" highlighted in brand color), nav links: Home, About, Services, Apartment Room, Blog, Contact, hamburger for mobile
 3. **Hero** — full-viewport-height with parallax background image, dark overlay, centered-left text: subheading "Welcome to GetawayPad", heading "Rent an apartment for your vacation", two buttons: "Learn more" (primary pink) + "Contact us" (white outline)
-4. **Book Your Apartment** — form section with fields: Full Name, Check-In (date), Check-Out (date), Room Type (select), Guests (select), Phone number, Time, "Book Apartment Now" submit button
+4. **Book Your Apartment** — form section with fields: Full Name, Check-In (date), Check-Out (date), Adults (select), Children (select), Phone number, Time, "Book Apartment Now" submit button
 5. **Services** — 3-column service cards with image header, title, paragraph, and "Read more" button (Map Direction, Accommodation Services, Great Experience)
 6. **Apartment Rooms** — 2×2 grid of room cards, each with: background image, 5-star rating, room name (Suite Room, Standard Room, Family Room, Deluxe Room), amenity list (Max, Size, View, Bed), "View Room Details" link
-7. **Testimonials** — "Happy Clients & Feedbacks" heading, carousel of testimonial items with: user circular avatar, quote icon, paragraph, author name + position
-8. **CTA Intro** — full-width parallax background with overlay (call-to-action banner)
+7. **Testimonials** — "Happy Clients & Feedbacks" heading, testimonial cards with: user circular avatar, quote icon, paragraph, author name + position
+8. **CTA Intro** — full-width parallax background with overlay (call-to-action banner): "Ready to get started" heading + "Book now" / "Contact us" buttons
 9. **Blog** — 3-column blog entries, each with: background image, title, date + author + comment count, short paragraph
-10. **Footer** — 4-column: Logo + description, Services list, Tag cloud, Subscribe form (email + submit) + Social links (Twitter, Facebook, Instagram), copyright + Terms/Privacy links
+10. **Footer** — 4-column: Logo + description, Services list, Tag cloud, Subscribe form (email + submit) + Social links (Twitter, Facebook, Instagram), copyright + Terms/Privacy links + Component Dock link
 
-## Gherkin Requirements
+## Requirements
 
-### Feature: Top Bar
+### Requirement: Top Bar Contact Info
 
-Scenario: Contact info displays
-  Given the user is on any page
-  Then a top bar shows phone number and email address
-  And social media icons (Facebook, Twitter, Instagram, Dribbble) are visible
+The template SHALL display a top bar with phone number, email address, and social media icons (Facebook, Twitter, Instagram).
 
-### Feature: Navbar
+#### Scenario: Contact info displays
 
-Scenario: Logo and navigation display
-  Given the user is on any page
-  Then the logo "GetawayPad" is visible (with "Pad" in brand color)
-  And navigation links "Home", "About", "Services", "Apartment Room", "Blog", "Contact" are visible
+- **WHEN** the user is on any page
+- **THEN** a top bar shows phone number "+00 1234 567" and email "emailsample@email.com"
+- **AND** social media icons (Facebook, Twitter, Instagram) are visible
 
-Scenario: Mobile hamburger menu
-  Given the viewport is mobile width (< 768px)
-  Then a hamburger menu icon is visible
-  And clicking it opens a slide-in mobile menu with all nav links
+### Requirement: Navbar Navigation
 
-### Feature: Hero Section
+The template SHALL display a sticky dark navbar with the logo "GetawayPad" (with "Pad" in brand color) and navigation links.
 
-Scenario: Hero displays with booking CTA
-  Given the user lands on the page
-  Then a full-viewport-height hero with parallax background is displayed
-  And the subheading "Welcome to GetawayPad" is shown
-  And the heading "Rent an apartment for your vacation" is displayed
-  And two buttons appear: "Learn more" (primary) and "Contact us" (white outline)
+#### Scenario: Logo and navigation display
 
-### Feature: Book Your Apartment
+- **WHEN** the user is on any page
+- **THEN** the logo "GetawayPad" is visible (with "Pad" in brand color)
+- **AND** navigation links "Home", "About", "Services", "Apartment Room", "Blog", "Contact" are visible
 
-Scenario: Booking form displays
-  Given the user scrolls to the booking section
-  Then a form with "Book your apartment" heading is displayed
-  And fields for Full Name, Check-In, Check-Out, Room Type, Guests, Phone, Time are visible
-  And a "Book Apartment Now" submit button is present
+#### Scenario: Mobile hamburger menu
 
-### Feature: Services Section
+- **WHEN** the viewport is mobile width (< 768px)
+- **THEN** a hamburger menu icon is visible
+- **AND** clicking it opens a slide-in mobile menu with all nav links
 
-Scenario: Three service cards display
-  Given the user scrolls past the booking form
-  Then three service cards appear in a row
-  And each has an image, title ("Map Direction", "Accommodation Services", "Great Experience"), paragraph, and "Read more" button
+### Requirement: Hero Section
 
-### Feature: Apartment Rooms
+The template SHALL display a full-viewport-height hero with parallax background, dark overlay, heading, and two CTA buttons.
 
-Scenario: Four room cards display
-  Given the user scrolls to the rooms section
-  Then an "Apartment Room" heading is shown
-  And four room cards are displayed in a 2×2 grid
-  And each card shows 5-star rating, room name, amenity list, and "View Room Details" link
+#### Scenario: Hero displays with booking CTA
 
-Scenario: Room cards alternate layout
-  Given the rooms section is visible
-  Then the first row shows image on left, text on right
-  And the second row shows text on left, image on right
+- **WHEN** the user lands on the page
+- **THEN** a full-viewport-height hero with parallax background is displayed
+- **AND** the subheading "Welcome to GetawayPad" is shown
+- **AND** the heading "Rent an apartment for your vacation" is displayed
+- **AND** two buttons appear: "Learn more" (primary) and "Contact us" (white outline)
 
-### Feature: Testimonials
+### Requirement: Booking Form
 
-Scenario: Testimonial carousel displays
-  Given the user scrolls to testimonials
-  Then "Happy Clients & Feedbacks" heading is shown
-  And a carousel of testimonials appears
-  And each has a circular avatar, quote icon, paragraph text, author name, and position
+The template SHALL display a booking form with 7 input fields and a submit button.
 
-### Feature: CTA Intro Banner
+#### Scenario: Booking form displays
 
-Scenario: CTA banner displays
-  Given the user scrolls past testimonials
-  Then a full-width parallax banner with overlay is shown
+- **WHEN** the user scrolls to the booking section
+- **THEN** a form with "Book your apartment" heading is displayed
+- **AND** fields for Full Name, Check-In, Check-Out, Adults, Children, Phone, Time are visible
+- **AND** a "Book Apartment Now" submit button is present
 
-### Feature: Blog Section
+### Requirement: Services Section
 
-Scenario: Three blog entries display
-  Given the user scrolls to the blog section
-  Then three blog cards appear in a row
-  And each has a background image, title, date, author, comment count, and paragraph
+The template SHALL display 3 service cards in a row with image, title, description, and CTA button.
 
-### Feature: Footer
+#### Scenario: Three service cards display
 
-Scenario: Footer layout
-  Given the user scrolls to the footer
-  Then four columns are shown: Logo + description, Services list, Tag cloud, Subscribe form
-  And social media links (Twitter, Facebook, Instagram) are visible
-  And a copyright line with Terms and Privacy links is at the bottom
+- **WHEN** the user scrolls past the booking form
+- **THEN** three service cards appear in a row
+- **AND** each has an image, title ("Map Direction", "Accommodation Services", "Great Experience"), paragraph, and "Read more" button
 
-Scenario: Newsletter subscribe form
-  Given the footer is visible
-  Then an email input with placeholder "Enter email address" is displayed
-  And a paper-plane submit button is present
+### Requirement: Apartment Rooms
 
-Scenario: Footer links to Component Dock
-  Given the footer is visible
-  Then a link to https://www.componentdock.com/ is present with text "Component Dock"
+The template SHALL display 4 room cards in a 2×2 grid with alternating image/text layout.
+
+#### Scenario: Four room cards display
+
+- **WHEN** the user scrolls to the rooms section
+- **THEN** an "Apartment Room" heading is shown
+- **AND** four room cards are displayed in a 2×2 grid
+- **AND** each card shows 5-star rating, room name, amenity list, and "View Room Details" link
+
+#### Scenario: Room cards alternate layout
+
+- **WHEN** the rooms section is visible
+- **THEN** the first row shows image on left, text on right
+- **AND** the second row shows text on left, image on right
+
+### Requirement: Testimonials
+
+The template SHALL display testimonials with circular avatars, quote icons, and author info.
+
+#### Scenario: Testimonials display
+
+- **WHEN** the user scrolls to testimonials
+- **THEN** "Happy Clients & Feedbacks" heading is shown
+- **AND** testimonial cards appear with circular avatars, quote icons, paragraph text, author name, and position
+
+### Requirement: CTA Banner
+
+The template SHALL display a full-width parallax CTA banner with overlay.
+
+#### Scenario: CTA banner displays
+
+- **WHEN** the user scrolls past testimonials
+- **THEN** a full-width parallax banner with overlay is shown
+- **AND** "Ready to get started" heading is displayed
+- **AND** "Book now" and "Contact us" buttons are present
+
+### Requirement: Blog Section
+
+The template SHALL display 3 blog cards in a row with image, title, meta info, and excerpt.
+
+#### Scenario: Three blog entries display
+
+- **WHEN** the user scrolls to the blog section
+- **THEN** three blog cards appear in a row
+- **AND** each has a background image, title, date, author, comment count, and paragraph
+
+### Requirement: Footer
+
+The template SHALL display a 4-column footer with logo, services, tag cloud, subscribe form, social links, and copyright.
+
+#### Scenario: Footer layout
+
+- **WHEN** the user scrolls to the footer
+- **THEN** four columns are shown: Logo + description, Services list, Tag cloud, Subscribe form
+- **AND** social media links (Twitter, Facebook, Instagram) are visible
+- **AND** a copyright line with Terms and Privacy links is at the bottom
+
+#### Scenario: Newsletter subscribe form
+
+- **WHEN** the footer is visible
+- **THEN** an email input with placeholder "Enter email address" is displayed
+- **AND** a paper-plane submit button is present
+
+#### Scenario: Footer links to Component Dock
+
+- **WHEN** the footer is visible
+- **THEN** a link to https://www.componentdock.com/ is present with text "Component Dock"
 
 ## Verification Checklist
 
@@ -147,7 +182,7 @@ Scenario: Footer links to Component Dock
 - [ ] Booking form has 7 fields + submit button
 - [ ] Services section has 3 cards with image + title + CTA
 - [ ] Room cards in 2×2 grid with alternating image/text layout
-- [ ] Testimonials have circular avatars, quote icons, carousel
+- [ ] Testimonials have circular avatars, quote icons
 - [ ] CTA banner has parallax background
 - [ ] Blog has 3 cards with meta info
 - [ ] Footer is 4-column with subscribe form and social links

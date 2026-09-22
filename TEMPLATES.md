@@ -1935,7 +1935,7 @@
 - [x] **Theriver** — [colorlib](https://colorlib.com/wp/template/theriver/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theriver-free-template.jpg) · [eddy](https://eddy.free.componentdock.com)
 - [x] **Tour** — [colorlib](https://colorlib.com/wp/template/tour/) · [voyager](https://voyager.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tour-free-template.jpg)
 - [x] **Unwind** — [colorlib](https://colorlib.com/wp/template/unwind/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unwind-free-template.jpg) · [solace](https://free-react-templates-solace.surge.sh)
-- [ ] **Vacation Rental** — [colorlib](https://colorlib.com/wp/template/vacation-rental/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vacationrental-free-template.jpg)
+- [~] **Vacation Rental** — [colorlib](https://colorlib.com/wp/template/vacation-rental/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vacationrental-free-template.jpg)
 - [x] **Villa** — [colorlib](https://colorlib.com/wp/template/villa/) · [villa](https://villa.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/villa-free-template.jpg)
 
 ## Industrial (15)
