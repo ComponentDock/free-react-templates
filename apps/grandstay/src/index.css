@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* GrandStay brand palette — hotel/hospitality tokens:
+     brand gold #AE9548 (buttons, borders, accents), dark navy #081624
+     (text, headings), dark charcoal #353535 (navbar), off-white #F7F7F7
+     (alternating sections), white #ffffff (cards). */
+  --color-brand: #ae9548;
+  --color-brand-hover: #c4aa5c;
+  --color-navy: #081624;
+  --color-charcoal: #353535;
+  --color-offwhite: #f7f7f7;
+  --color-light-alt: #f3f3f3;
+  --color-ink: #353535;
+  --color-mute: #888888;
+
+  --font-heading: 'Taviraj', Georgia, serif;
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}

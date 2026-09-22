@@ -12,120 +12,149 @@ Recreation of ColorLib's **Hotel** template as a React 19 + Vite + Tailwind CSS 
 
 ## Design Tokens (extracted from preview CSS)
 
-| Token              | Value                            | Usage                                      |
-| ------------------ | -------------------------------- | ------------------------------------------ |
-| Brand gold         | `#AE9548`                        | Buttons, borders, nav arrows, accents      |
-| Dark navy          | `#081624`                        | Primary text, headings, check form text    |
-| Off-white bg       | `#F7F7F7` / `#F3F3F3`           | Section alternating backgrounds            |
-| White              | `#ffffff`                        | Cards, overlays, dropdown menus            |
-| Dark charcoal      | `#353535`                        | Navbar bg, carousel nav buttons            |
-| Heading font       | `"Taviraj", serif`               | Hero heading, section titles               |
-| Body font          | `"Open Sans", sans-serif`        | Body copy, buttons, nav links              |
-| Button style       | `border: 2px solid #AE9548`, uppercase, bold, icon-right arrow, radius `50px` pill | Primary CTA |
-| Card radius        | `0` (sharp corners)             | Room cards, facility panels                |
-| Pill radius        | `50px / 60px`                    | Nav thumbnails, dropdown                   |
-| Social icon radius | `50%`                            | Circular social icons                      |
+| Token              | Value                                                                              | Usage                                   |
+| ------------------ | ---------------------------------------------------------------------------------- | --------------------------------------- |
+| Brand gold         | `#AE9548`                                                                          | Buttons, borders, nav arrows, accents   |
+| Dark navy          | `#081624`                                                                          | Primary text, headings, check form text |
+| Off-white bg       | `#F7F7F7` / `#F3F3F3`                                                              | Section alternating backgrounds         |
+| White              | `#ffffff`                                                                          | Cards, overlays, dropdown menus         |
+| Dark charcoal      | `#353535`                                                                          | Navbar bg, carousel nav buttons         |
+| Heading font       | `"Taviraj", serif`                                                                 | Hero heading, section titles            |
+| Body font          | `"Open Sans", sans-serif`                                                          | Body copy, buttons, nav links           |
+| Button style       | `border: 2px solid #AE9548`, uppercase, bold, icon-right arrow, radius `50px` pill | Primary CTA                             |
+| Card radius        | `0` (sharp corners)                                                                | Room cards, facility panels             |
+| Pill radius        | `50px / 60px`                                                                      | Nav thumbnails, dropdown                |
+| Social icon radius | `50%`                                                                              | Circular social icons                   |
 
-## Section Structure (from live preview DOM)
+## Requirements
 
-Page order as rendered on `preview.colorlib.com/theme/hotel/`:
+### Requirement: Navbar renders with correct links and dropdown
 
-1. **Navbar** — Logo left, nav links right (Home, About, Rooms, Facilities dropdown, News, Contact). Dark charcoal `#353535` background. Dropdown has white bg + gold border.
-2. **Hero Slider** — Full-width background image with large serif heading "We hope you'll enjoy your stay." Below: three thumbnail nav cards (Pool, Sauna, Gym) with gold arrow icons.
-3. **Room Availability / Check Form** — Two-column layout. Left: room card with image carousel (owl-carousel), title "Junior Suite", price "$252", feature icons (size, guests, bed, view). Right: check availability form with date pickers, room quantity, room type selector, gold-bordered card.
-4. **About Room** — Large centered quote "Customers may forget what you said but they will never forget how you made them feel." Below: two-column body text.
-5. **Facilities** — Title "Facilities". Two image-text pairs: large image left / text right (Wellness Center), then reversed (Wellness Center again). Gold "Visit Center" CTA button.
-6. **Guestbook (Testimonials)** — Tabbed testimonial cards with star ratings, dates, quotes. Three reviews.
-7. **Follow Instagram** — Centered heading "Follow us on Instagram @yourhotel" over white background.
-8. **Footer Room Pics** — Full-width row of 4 room images.
-9. **Footer** — Logo + 4-column info (Location, Reception, Shuttle Service, Restaurant) with Linearicons. Dark background.
+The navbar shall display the brand name "GrandStay" and navigation links: Home, About, Rooms, Facilities, News, Contact. The Facilities link shall have a dropdown with room types: Junior Suite, Double Room, Senior Suite, Single Room. The navbar background shall be dark charcoal (#353535).
 
-## Gherkin Requirements
+#### Scenario: Navbar renders all links
 
-### Scenario: Navbar renders with correct links
-```
-Given the user visits GrandStay
-Then the navbar shows links: Home, About, Rooms, Facilities, News, Contact
-And the Facilities link has a dropdown with: Junior Suit, Double Room, Senior Suit, Single Room
-And the navbar background is dark charcoal (#353535)
-```
+- **WHEN** the user visits GrandStay
+- **THEN** the navbar shows links: Home, About, Rooms, Facilities, News, Contact
+- **AND** the Facilities link has a dropdown with: Junior Suite, Double Room, Senior Suite, Single Room
+- **AND** the navbar background is dark charcoal
 
-### Scenario: Hero slider displays welcome heading
-```
-Given the user views the hero section
-Then a large serif heading reads "We hope you'll enjoy your stay."
-And three navigation thumbnails are shown (Pool, Sauna, Gym)
-```
+#### Scenario: Facilities dropdown opens and closes
 
-### Scenario: Room availability section shows room card and check form
-```
-Given the user scrolls to the room availability section
-Then a room card displays "Junior Suite" with price "$252"
-And the card has feature icons for size, guests, bed type, and view
-And a check availability form is shown with date pickers, room quantity, and room type selector
-And the form has a gold-bordered card styling
-```
+- **WHEN** the user clicks the Facilities button
+- **THEN** the dropdown opens showing room types
+- **AND** clicking outside closes the dropdown
 
-### Scenario: About section displays quote and descriptive text
-```
-Given the user views the about section
-Then a centered quote about customer experience is displayed
-And two columns of descriptive body text appear below
-```
+### Requirement: Hero displays welcome heading with thumbnail navigation
 
-### Scenario: Facilities section shows alternating image-text layout
-```
-Given the user views the facilities section
-Then the heading reads "Facilities"
-And two facility items are shown in alternating image-left/text-right layout
-And each has a title, description, and gold "Visit Center" CTA button
-```
+The hero section shall show a large serif heading "We hope you'll enjoy your stay." with three thumbnail navigation cards (Pool, Sauna, Gym) and prev/next arrows.
 
-### Scenario: Guestbook section shows tabbed testimonials
-```
-Given the user views the guestbook section
-Then the heading reads "Guestbook"
-And three tabbed testimonial cards are available
-And each has a date, 5-star rating, title, and review text
-```
+#### Scenario: Hero renders heading and thumbnails
 
-### Scenario: Instagram section displays social CTA
-```
-Given the user views the Instagram section
-Then the heading reads "Follow us on Instagram @yourhotel"
-```
+- **WHEN** the user views the hero section
+- **THEN** a large serif heading reads "We hope you'll enjoy your stay."
+- **AND** three navigation thumbnails are shown (Pool, Sauna, Gym)
+- **AND** prev/next arrow buttons are present
 
-### Scenario: Footer room pics row shows images
-```
-Given the user scrolls to the footer room pics
-Then 4 room images are displayed in a full-width row
-```
+### Requirement: Room availability section shows room card and check form
 
-### Scenario: Footer displays contact information
-```
-Given the user views the footer
-Then four columns are shown: Location, Reception, Shuttle Service, Restaurant
-And each has an icon and contact text
-And the footer links to Component Dock (https://www.componentdock.com/)
-```
+The room availability section shall display a room card with image, title "Junior Suite", price "$252", and feature icons (size, guests, bed, view). A check availability form shall show date pickers, room quantity, room type selector, and a gold-bordered card.
+
+#### Scenario: Room card displays details
+
+- **WHEN** the user scrolls to the room availability section
+- **THEN** a room card displays "Junior Suite" with price "$252"
+- **AND** the card has feature icons for size, guests, bed type, and view
+
+#### Scenario: Check availability form renders
+
+- **WHEN** the user views the check availability form
+- **THEN** date pickers, room quantity input, and room type selector are shown
+- **AND** the form has a gold-bordered card styling
+
+### Requirement: About section displays quote and descriptive text
+
+The about section shall display a centered quote about customer experience followed by two columns of descriptive body text.
+
+#### Scenario: About renders quote and text
+
+- **WHEN** the user views the about section
+- **THEN** a centered quote about customer experience is displayed
+- **AND** two columns of descriptive body text appear below
+
+### Requirement: Facilities section shows alternating image-text layout
+
+The facilities section shall display the heading "Facilities" with two facility items in alternating image-left/text-right layout, each with a title, description, and gold "Visit Center" CTA button.
+
+#### Scenario: Facilities renders alternating layout
+
+- **WHEN** the user views the facilities section
+- **THEN** the heading reads "Facilities"
+- **AND** two facility items are shown in alternating layout
+- **AND** each has a title, description, and gold "Visit Center" button
+
+### Requirement: Guestbook section shows tabbed testimonials
+
+The guestbook section shall display the heading "Guestbook" with three tabbed testimonial cards, each with a date, 5-star rating, title, and review text.
+
+#### Scenario: Guestbook renders tabbed testimonials
+
+- **WHEN** the user views the guestbook section
+- **THEN** the heading reads "Guestbook"
+- **AND** three tabbed testimonial cards are available
+- **AND** each has a date, 5-star rating, title, and review text
+
+#### Scenario: Guestbook tab switching works
+
+- **WHEN** the user clicks a different tab
+- **THEN** the corresponding testimonial is displayed
+
+### Requirement: Instagram section displays social CTA
+
+The Instagram section shall display the heading "Follow us on Instagram @grandstayhotel".
+
+#### Scenario: Instagram renders heading
+
+- **WHEN** the user views the Instagram section
+- **THEN** the heading reads "Follow us on Instagram @grandstayhotel"
+
+### Requirement: Room pics row shows images
+
+The room pics section shall display 4 room images in a full-width row.
+
+#### Scenario: Room pics renders four images
+
+- **WHEN** the user scrolls to the footer room pics
+- **THEN** 4 room images are displayed in a full-width row
+
+### Requirement: Footer displays contact information and Component Dock link
+
+The footer shall display four columns: Location, Reception, Shuttle Service, Restaurant, each with an icon and contact text. The footer shall link to Component Dock (https://www.componentdock.com/).
+
+#### Scenario: Footer renders contact columns
+
+- **WHEN** the user views the footer
+- **THEN** four columns are shown: Location, Reception, Shuttle Service, Restaurant
+- **AND** each has an icon and contact text
+- **AND** the footer links to Component Dock
 
 ## Verification Checklist
 
-- [ ] Section order matches 1:1 with preview DOM
-- [ ] Brand color `#AE9548` used for buttons, borders, accents
-- [ ] Taviraj serif font for headings, Open Sans for body
-- [ ] Pill-shaped buttons with gold border and right-arrow icon
-- [ ] Dark charcoal navbar (#353535)
-- [ ] Hero with large serif heading + 3 thumbnail nav cards
-- [ ] Room card with image carousel, title, price, feature icons
-- [ ] Check availability form with gold border
-- [ ] About section with centered quote + 2-column text
-- [ ] Facilities with alternating image/text layout
-- [ ] Guestbook with tabbed testimonials + star ratings
-- [ ] Instagram CTA section
-- [ ] Footer room pics row (4 images)
-- [ ] Footer with 4-column contact info + Component Dock link
-- [ ] No ColorLib references in app code (provenance in spec only)
-- [ ] Uses picsum.photos placeholder images
-- [ ] Uses lucide-react for icons (replace Linearicons/Flaticon)
-- [ ] Uses Google Fonts (Taviraj + Open Sans) via index.html link
+- [x] Section order matches 1:1 with preview DOM
+- [x] Brand color `#AE9548` used for buttons, borders, accents
+- [x] Taviraj serif font for headings, Open Sans for body
+- [x] Pill-shaped buttons with gold border and right-arrow icon
+- [x] Dark charcoal navbar (#353535)
+- [x] Hero with large serif heading + 3 thumbnail nav cards
+- [x] Room card with image carousel, title, price, feature icons
+- [x] Check availability form with gold border
+- [x] About section with centered quote + 2-column text
+- [x] Facilities with alternating image/text layout
+- [x] Guestbook with tabbed testimonials + star ratings
+- [x] Instagram CTA section
+- [x] Footer room pics row (4 images)
+- [x] Footer with 4-column contact info + Component Dock link
+- [x] No ColorLib references in app code (provenance in spec only)
+- [x] Uses picsum.photos placeholder images
+- [x] Uses lucide-react for icons (replace Linearicons/Flaticon)
+- [x] Uses Google Fonts (Taviraj + Open Sans) via index.html link
