@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette from ColorLib Ponigym
+     (https://preview.colorlib.com/theme/ponigym/ + css/style.css):
+     a gym/fitness theme with red-orange #f34e3a accent,
+     Oswald headings, Roboto body text. */
+  --color-brand: #f34e3a;
+  --color-brand-dark: #d93a28;
+  --color-heading: #111111;
+  --color-section-title: #191919;
+  --color-body-text: #8f8fa8;
+  --color-description: #6e6e6e;
+  --color-team-bg: #f2f4f5;
+
+  /* Schedule color-coding */
+  --color-schedule-gym: #f34e3a;
+  --color-schedule-yoga: #247cc6;
+  --color-schedule-body: #6dcff6;
+  --color-schedule-cardio: #4cbcc3;
+
+  --font-heading: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
