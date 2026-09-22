@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; kept for consistency with sibling apps. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Stallion brand palette — recreated from the original fitness design
+     (main.css): red #f6214b brand (primary buttons, CTA hover, active nav),
+     #222222 dark text, #777777 body text, #f9f9ff light section background,
+     #fff white on dark overlays. */
+  --color-brand: #f6214b;
+  --color-brand-dark: #d91a3e;
+
+  /* Ink — dark text/headings (#222222 from the original). */
+  --color-ink: #222222;
+  --color-ink-dark: #111111;
+
+  /* Muted — body/secondary text (#777777 from the original). */
+  --color-muted: #777777;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the red (#f6214b). */
+  --color-primary-50: #fef2f4;
+  --color-primary-100: #fde6ea;
+  --color-primary-200: #fbd0d9;
+  --color-primary-300: #f8a7b8;
+  --color-primary-400: #f46e8d;
+  --color-primary-500: #f6214b;
+  --color-primary-600: #e10f3a;
+  --color-primary-700: #be0a30;
+  --color-primary-800: #9e0b2d;
+  --color-primary-900: #860d2b;
+
+  /* Font: Poppins (Google Fonts) — matches the original. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
