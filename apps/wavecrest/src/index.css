@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand primary — warm terracotta/coral from the original stylesheet */
+  --color-brand: #da8661;
+
+  /* Dark navy — hero overlay, dark sections */
+  --color-navy: #0b1423;
+
+  /* Medium navy — section backgrounds */
+  --color-navy2: #2e3f61;
+
+  /* Lighter navy — alternate section bg */
+  --color-navy3: #4c5c7e;
+
+  /* Accent red */
+  --color-accent-red: #db5246;
+
+  /* Accent coral-light */
+  --color-coral-light: #ffa07f;
+
+  /* Light gray-blue background */
+  --color-paper: #dadfe5;
+
+  /* Gray body text */
+  --color-mist: #6b6b6b;
+
+  /* Heading font: Playfair Display (serif) */
+  --font-heading: 'Playfair Display', Georgia, serif;
+
+  /* Body font: Roboto (sans-serif) */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+
+  /* Decorative font: Alike */
+  --font-decorative: 'Alike', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
