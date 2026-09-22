@@ -1932,7 +1932,7 @@
 - [x] **Suites** — [colorlib](https://colorlib.com/wp/template/suites/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/suites-free-template.jpg) &middot; [regent](https://regent.free.componentdock.com)
 - [x] **The Grand Azure** — [colorlib](https://colorlib.com/wp/template/the-grand-azure/) · [azurepeak](https://azurepeak.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/grandazure-template-1771943856380.jpg)
 |- [x] **The Palatin** — [colorlib](https://colorlib.com/wp/template/the-palatin/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thepalatin-free-template.jpg) · [sovereign](https://sovereign.free.componentdock.com)
-- [~] **Theriver** — [colorlib](https://colorlib.com/wp/template/theriver/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theriver-free-template.jpg)
+- [x] **Theriver** — [colorlib](https://colorlib.com/wp/template/theriver/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theriver-free-template.jpg) · [eddy](https://eddy.free.componentdock.com)
 - [x] **Tour** — [colorlib](https://colorlib.com/wp/template/tour/) · [voyager](https://voyager.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tour-free-template.jpg)
 - [x] **Unwind** — [colorlib](https://colorlib.com/wp/template/unwind/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unwind-free-template.jpg) · [solace](https://free-react-templates-solace.surge.sh)
 - [ ] **Vacation Rental** — [colorlib](https://colorlib.com/wp/template/vacation-rental/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vacationrental-free-template.jpg)
