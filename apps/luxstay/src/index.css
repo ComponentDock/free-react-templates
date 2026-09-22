@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-blue: #4586ff;
+  --color-accent-orange: #f96d00;
+  --color-gold-star: #f7af1d;
+  --color-star-empty: #fce3b1;
+  --color-dark-purple: #302939;
+  --color-bg-light-grey: #fafafa;
+  --color-icon-circle: #f7f7f7;
+  --color-text-body: #595959;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+    color: var(--color-text-body);
+  }
+}
