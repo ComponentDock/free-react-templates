@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Archway brand palette — recreated from the ColorLib Klift design:
+     brand sky blue #78d5ef, accent pink #ff9a9a, dark brown #3c312e,
+     near-black footer #141313, body text #212529, muted gray #6c757d,
+     light bg #e9ecef. */
+
+  /* Sky blue — primary brand color (#78d5ef). */
+  --color-brand: #78d5ef;
+  --color-brand-dark: #4ac7ea;
+
+  /* Accent pink (#ff9a9a) used on link-style CTAs (.btn-custom). */
+  --color-accent: #ff9a9a;
+  --color-accent-light: #ffe1e1;
+
+  /* Ink — warm dark brown for services/CTA sections (#3c312e). */
+  --color-ink: #3c312e;
+  --color-ink-dark: #141313;
+
+  /* Paper — light section backgrounds (#e9ecef). */
+  --color-paper: #e9ecef;
+
+  /* Muted text (#6c757d). */
+  --color-mist: #6c757d;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the sky blue. */
+  --color-primary-50: #f0faff;
+  --color-primary-100: #daf3ff;
+  --color-primary-200: #bee8ff;
+  --color-primary-300: #8dd9ff;
+  --color-primary-400: #78d5ef;
+  --color-primary-500: #4ac7ea;
+  --color-primary-600: #2baadb;
+  --color-primary-700: #2089b8;
+  --color-primary-800: #1f6f97;
+  --color-primary-900: #1f5d7e;
+
+  /* Fonts: Work Sans (body) + Abril Fatface (hero headings). */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Abril Fatface', ui-serif, Georgia, serif;
+}
