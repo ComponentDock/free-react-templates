@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Litigator brand — tan/gold #b49c73 from the ColorLib "Justice" preview
+     (https://preview.colorlib.com/theme/justice/ + css/style.css):
+     a dark law-firm theme with tan primary, #2d2d34 dark panels,
+     and Rubik font. */
+  --color-primary-50: #faf6f0;
+  --color-primary-100: #f0e8d8;
+  --color-primary-200: #e2d2b8;
+  --color-primary-300: #d4bc98;
+  --color-primary-400: #b49c73;
+  --color-primary-500: #a08a63;
+  --color-primary-600: #8c7855;
+  --color-primary-700: #756347;
+  --color-primary-800: #5e4f3a;
+  --color-primary-900: #4a3e2e;
+
+  --color-surface: #2d2d34;
+  --color-ink: #ffffff;
+  --color-muted: #9ca3af;
+
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+}
