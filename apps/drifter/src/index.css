@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Drifter brand palette — recreated from the ColorLib "Ronin" design. */
+  --color-brand-purple: #6382e6;
+  --color-brand-teal: #2ebccd;
+  --color-brand-coral: #eb6b55;
+  --color-brand-pink: #e66686;
+  --color-dark-bg: #000410;
+  --color-light-bg: #f9f9ff;
+  --color-body-muted: #777777;
+  --color-heading: #222222;
+  --color-border: #e1e1e1;
+
+  /* Font families */
+  --font-heading: 'Heebo', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
