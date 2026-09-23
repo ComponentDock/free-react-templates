@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Body background — light lavender-gray (#f6f7fc). */
+  --color-body: #f6f7fc;
+
+  /* Card white. */
+  --color-card: #ffffff;
+
+  /* Input background — light gray (#efefef). */
+  --color-input: #efefef;
+
+  /* Brand accent — orange (#fb771a), used for buttons and checkbox. */
+  --color-brand: #fb771a;
+
+  /* Link / caption color — gray (#888888). */
+  --color-caption: #888888;
+
+  /* Input text color — dark gray. */
+  --color-ink: #333333;
+
+  /* Placeholder text color — medium gray. */
+  --color-placeholder: #999999;
+
+  /* Original font: "Roboto" via Google Fonts (loaded in index.html). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
