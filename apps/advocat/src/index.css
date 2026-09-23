@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand gold — extracted from original Atorni style.css (#c18e3c). */
+  --color-brand: #c18e3c;
+
+  /* Deep dark for hero/counter/footer (#262626). */
+  --color-ink: #262626;
+
+  /* Light section background (#f7f7f7). */
+  --color-mist: #f7f7f7;
+
+  /* Body-copy gray (#6c757d). */
+  --color-slate-body: #6c757d;
+
+  /* Fonts: Poppins (body) + Cormorant Garamond (headings). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Cormorant Garamond', 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
