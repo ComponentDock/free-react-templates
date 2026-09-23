@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ByteOps brand palette — bright green #31de79 */
+  --color-ops-50: #e6faf0;
+  --color-ops-100: #b3f2d5;
+  --color-ops-200: #80e9b9;
+  --color-ops-300: #4de09e;
+  --color-ops-400: #31de79;
+  --color-ops-500: #27b261;
+  --color-ops-600: #1d8a4b;
+  --color-ops-700: #146336;
+  --color-ops-800: #0b3d20;
+  --color-ops-900: #061f10;
+
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
