@@ -2015,7 +2015,7 @@
 - [x] **Barber** — [colorlib](https://colorlib.com/wp/template/barber/) · [shave](https://shave.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barber-free-barber-website-template.jpg)
 - [x] **Bbs** — [colorlib](https://colorlib.com/wp/template/bbs/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bbs-free-small-company-website-template.jpg) · [crux](https://crux.free.componentdock.com)
 - [x] **Bitcoin** — [colorlib](https://colorlib.com/wp/template/bitcoin/) · [coinwave](https://coinwave.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bitcoin-free-template.jpg)
-- [~] **Bobsled** — [colorlib](https://colorlib.com/wp/template/bobsled/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bobsled-creative-website-template.jpg)
+- [x] **Bobsled** — [colorlib](https://colorlib.com/wp/template/bobsled/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bobsled-creative-website-template.jpg) · [kinetic](https://kinetic.free.componentdock.com)
 - [x] **Bold** — [colorlib](https://colorlib.com/wp/template/bold/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bold-free-template.jpg) · [Bold](https://bold.free.componentdock.com)
 - [ ] **Book** — [colorlib](https://colorlib.com/wp/template/book/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/book-free-template.jpg)
 - [ ] **Booke** — [colorlib](https://colorlib.com/wp/template/booke/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/booke-website-template.jpeg)
