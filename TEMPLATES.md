@@ -2130,7 +2130,7 @@
 - [x] **Legalcare** — [colorlib](https://colorlib.com/wp/template/legalcare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/legalcare-free-template.jpg) · [counsely](https://counsely.free.componentdock.com)
 |- [x] **Marco 2** — [colorlib](https://colorlib.com/wp/template/marco-2/) · [alibi](https://alibi.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/marco2-free-template.jpg)
 - [x] **Neutral** — [colorlib](https://colorlib.com/wp/template/neutral/) · [maxim](https://maxim.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/neutral-free-template.jpg)
-- [~] **Notary** — [colorlib](https://colorlib.com/wp/template/notary/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/notary-free-template.jpg)
+- [x] **Notary** — [colorlib](https://colorlib.com/wp/template/notary/) · [oathmark](https://free-react-templates-oathmark.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/notary-free-template.jpg)
 - [x] **Primelaw** — [colorlib](https://colorlib.com/wp/template/primelaw/) · [statute](https://free-react-templates-statute.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/primelaw-free-template.jpg)
 - [x] **Solicitor** — [colorlib](https://colorlib.com/wp/template/solicitor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solicitor-free-template.jpg) · [lawguard](https://lawguard.free.componentdock.com)
 - [ ] **Thelawyer** — [colorlib](https://colorlib.com/wp/template/thelawyer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelawyer-free-template.jpg)
