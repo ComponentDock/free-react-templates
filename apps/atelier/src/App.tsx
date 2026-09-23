@@ -1,34 +1,28 @@
 import { useEffect } from 'react'
 import { Navbar } from './components/Navbar'
-import { Categories } from './components/Categories'
-import { NewProduct } from './components/NewProduct'
-import { Banner } from './components/Banner'
-import { Trend } from './components/Trend'
-import { Discount } from './components/Discount'
+import { Hero } from './components/Hero'
+import { Achievements } from './components/Achievements'
+import { HowItWorks } from './components/HowItWorks'
 import { Services } from './components/Services'
-import { Instagram } from './components/Instagram'
+import { Testimonial } from './components/Testimonial'
+import { Blog } from './components/Blog'
 import { Footer } from './components/Footer'
 
-/* Atelier — fashion e-commerce storefront, recreation of ColorLib "Ashion".
-   Section order (1:1): navbar → category tiles → NEW PRODUCT grid → banner
-   carousel → trend tabs → discount band → services → instagram strip →
-   footer. */
 export function App() {
   useEffect(() => {
-    document.title = 'Atelier — Fashion E-commerce Template'
+    document.title = 'Atelier — Creative Agency Template'
   }, [])
 
   return (
-    <div className="font-sans text-muted">
+    <div className="min-h-screen bg-white font-sans text-navy">
       <Navbar />
       <main>
-        <Categories />
-        <NewProduct />
-        <Banner />
-        <Trend />
-        <Discount />
+        <Hero />
+        <Achievements />
+        <HowItWorks />
         <Services />
-        <Instagram />
+        <Testimonial />
+        <Blog />
       </main>
       <Footer />
     </div>

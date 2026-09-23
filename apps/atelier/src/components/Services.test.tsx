@@ -3,17 +3,26 @@ import { render, screen } from '@testing-library/react'
 import { Services } from './Services'
 
 describe('Services', () => {
-  it('renders four service items with icons', () => {
-    const { container } = render(<Services />)
+  it('renders section header', () => {
+    render(<Services />)
+    expect(screen.getByText('Services')).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /What We Provide/i })).toBeInTheDocument()
+  })
 
-    for (const title of [
-      'Free Shipping',
-      'Money Back Guarantee',
-      'Online Support 24/7',
-      'Payment Secure',
-    ]) {
-      expect(screen.getByRole('heading', { level: 3, name: title })).toBeInTheDocument()
-    }
-    expect(container.querySelectorAll('svg')).toHaveLength(4)
+  it('renders all checklist items', () => {
+    render(<Services />)
+    expect(screen.getByText(/Professional and creative design/)).toBeInTheDocument()
+    expect(screen.getByText(/Responsive development/)).toBeInTheDocument()
+    expect(screen.getByText(/Ongoing support/)).toBeInTheDocument()
+  })
+
+  it('renders CTA button', () => {
+    render(<Services />)
+    expect(screen.getByRole('link', { name: /Get Started/i })).toBeInTheDocument()
+  })
+
+  it('renders the service image', () => {
+    render(<Services />)
+    expect(screen.getByRole('img', { name: /our services in action/i })).toBeInTheDocument()
   })
 })

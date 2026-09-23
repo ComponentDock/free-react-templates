@@ -1,94 +1,88 @@
-import { useEffect, useState } from 'react'
-import { Menu, Moon, Sun, X } from 'lucide-react'
-import { BRAND, NAV_LINKS } from '../data'
+import { useState } from 'react'
+import { Menu, X } from 'lucide-react'
+import { cn } from '@free-react-templates/ui'
 
-/* header — site name "Atelier" + nav links (desktop-only) + dark-mode
-   toggle + mobile burger menu. Dark mode flips a `.dark` class on <html>
-   (class-based Tailwind variant). */
+const links = [
+  { label: 'Home', href: '#home' },
+  { label: 'About', href: '#about' },
+  { label: 'Services', href: '#services' },
+  { label: 'Blog', href: '#blog' },
+  { label: 'Contact', href: '#contact' },
+]
+
 export function Navbar() {
-  const [dark, setDark] = useState(false)
   const [open, setOpen] = useState(false)
 
-  useEffect(() => {
-    document.documentElement.classList.toggle('dark', dark)
-    return () => {
-      document.documentElement.classList.remove('dark')
-    }
-  }, [dark])
-
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm dark:bg-ink">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-        <a
-          href="#home"
-          className="text-[22px] font-black tracking-wide text-ink uppercase dark:text-white"
-        >
-          {BRAND}
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+        <a href="#home" className="text-2xl font-bold text-navy">
+          Atelier
         </a>
 
-        <div className="flex items-center gap-2">
-          <nav aria-label="Primary" className="mr-2 hidden items-center lg:flex">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="px-4 py-2 text-[15px] font-medium text-ink transition-colors hover:text-brand dark:text-white dark:hover:text-brand"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
+        {/* Desktop nav */}
+        <nav aria-label="Primary" className="hidden items-center gap-8 md:flex">
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-sm font-medium text-navy/70 transition-colors hover:text-brand-500"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
 
-          <button
-            type="button"
-            aria-label="Toggle dark mode"
-            onClick={() => setDark((current) => !current)}
-            className="cursor-pointer rounded-full p-2 text-ink transition-colors hover:bg-tint dark:text-white dark:hover:bg-white/10"
+        {/* CTA + Mobile toggle */}
+        <div className="flex items-center gap-4">
+          <a
+            href="#contact"
+            className="hidden rounded-full border-2 border-brand-500 px-6 py-2 text-sm font-semibold text-brand-500 transition-colors hover:bg-brand-500 hover:text-white md:inline-block"
           >
-            {dark ? (
-              <Sun aria-hidden="true" className="h-5 w-5" />
-            ) : (
-              <Moon aria-hidden="true" className="h-5 w-5" />
-            )}
-          </button>
-
+            Get Started
+          </a>
           <button
             type="button"
-            aria-label="Toggle mobile menu"
+            onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-controls="mobile-menu"
-            onClick={() => setOpen((current) => !current)}
-            className="cursor-pointer rounded-full p-2 text-ink transition-colors hover:bg-tint dark:text-white lg:hidden"
+            aria-label={open ? 'Close menu' : 'Open menu'}
+            className="text-navy md:hidden"
           >
-            {open ? (
-              <X aria-hidden="true" className="h-6 w-6" />
-            ) : (
-              <Menu aria-hidden="true" className="h-6 w-6" />
-            )}
+            {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
       </div>
 
-      {open && (
-        <nav
-          id="mobile-menu"
-          aria-label="Mobile"
-          className="border-t border-gray-100 px-4 py-4 dark:border-white/10 lg:hidden"
-        >
-          <div className="flex flex-col gap-3">
-            {NAV_LINKS.map((link) => (
+      {/* Mobile nav */}
+      <nav
+        id="mobile-menu"
+        aria-label="Mobile"
+        className={cn('md:hidden', open ? 'block' : 'hidden')}
+      >
+        <ul className="space-y-1 border-t px-4 pb-4 pt-2">
+          {links.map((link) => (
+            <li key={link.href}>
               <a
-                key={link.label}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="text-base font-medium text-ink transition-colors hover:text-brand dark:text-white"
+                className="block rounded px-2 py-2 text-sm font-medium text-navy/70 hover:bg-brand-50 hover:text-brand-500"
               >
                 {link.label}
               </a>
-            ))}
-          </div>
-        </nav>
-      )}
+            </li>
+          ))}
+          <li>
+            <a
+              href="#contact"
+              onClick={() => setOpen(false)}
+              className="mt-2 block rounded-full border-2 border-brand-500 px-6 py-2 text-center text-sm font-semibold text-brand-500 hover:bg-brand-500 hover:text-white"
+            >
+              Get Started
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
   )
 }
