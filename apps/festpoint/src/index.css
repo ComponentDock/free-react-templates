@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Festpoint brand palette — recreated from the Eventalk design
+     (teal/cyan blue #34c0e7). */
+  --color-fest-50: #ecf9fd;
+  --color-fest-100: #d0f1fa;
+  --color-fest-200: #a7e4f5;
+  --color-fest-300: #78d5ef;
+  --color-fest-400: #34c0e7;
+  --color-fest-500: #1aa7d0;
+  --color-fest-600: #1387af;
+  --color-fest-700: #146d8e;
+  --color-fest-800: #165b75;
+  --color-fest-900: #174c63;
+
+  /* Work Sans — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
