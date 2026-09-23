@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Shave brand palette — pink-to-purple gradient from the original barber design */
+  --color-pink-50: #fef2f8;
+  --color-pink-100: #fde3f0;
+  --color-pink-200: #fbc8e2;
+  --color-pink-300: #f8a0cb;
+  --color-pink-400: #f61daf;
+  --color-pink-500: #e010a0;
+  --color-pink-600: #c00888;
+  --color-pink-700: #a00470;
+  --color-pink-800: #800358;
+  --color-pink-900: #600340;
+
+  --color-purple-400: #691cff;
+  --color-purple-500: #5510e8;
+  --color-purple-600: #4508d0;
+
+  /* Section backgrounds */
+  --color-section-light: #f9f9ff;
+
+  /* Footer dark */
+  --color-footer-dark: #222222;
+
+  /* Poppins typeface */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
