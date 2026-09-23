@@ -1,81 +1,79 @@
-# Template: Dune (404 Error Page — Minimal Boxy Design with Search)
+# Dune — Travel Agency Landing Page
 
-## Purpose
+> Recreation of ColorLib "Safario" (https://colorlib.com/wp/template/safario/)
+> Preview: https://preview.colorlib.com/theme/safario/
 
-Dune is a single-page 404 error page template in the free-react-templates
-monorepo. It is an original React recreation of the ColorLib free "Colorlib
-Error 404 V2" error page design (see TEMPLATES.md), built under a different
-name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+## Overview
 
-The original design is a minimal, boxy error page for users who like to keep
-things simple: a big "404" sign with additional text and a search bar to help
-prevent the user from leaving early. Dune follows the same structure and adds
-the repo's standard dark-mode toggle and accessible patterns.
+A travel agency landing page with a transparent navbar over a hero banner,
+services section, about section, tour cards with pricing overlays, testimonials
+carousel, search package form, blog cards, and a multi-column footer.
 
-Dune lives in `apps/dune` and uses shared components from `packages/ui`
-(Button, ButtonLink, cn).
+## Design Tokens
 
-## Requirements
+- **Fonts:** Roboto (body), Roboto Condensed (headings)
+- **Brand color:** #6059f6 (indigo/purple)
+- **Brand hover:** #201aa3 (dark indigo)
+- **Headings:** #2a2a2a
+- **Body text:** #888888
+- **Background:** #ffffff (main), #f8f8ff (gray sections)
+- **Buttons:** rounded-full, bg brand, white text, hover darker
 
-### Requirement: Navigation bar
-The system SHALL render a top navigation bar with the site name "Dune", a
-"Home" link, and a dark-mode toggle button.
+## Sections (in order)
 
-#### Scenario: Navbar content
-- **GIVEN** the Dune page is rendered
-- **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Dune" and a "Home" link pointing to the page root
-- **AND** the navbar SHALL show a dark-mode toggle button
+1. **Navbar** — transparent background, logo "Dune", nav links (Home, About, Packages, Pages, Blog, Contact), "Get Started" CTA button
+2. **Hero Banner** — headline "Travel More To Discover Yourself", descriptive text, "Get Started" CTA, travel image on right
+3. **Services** — "Our Popular Services" heading, 3 service cards (Hotel Booking, Flight Booking, Destination Booking) with icon, title, description
+4. **About** — image left, text right: "Exploration is really the essence of the human spirit", "Learn More" button
+5. **Tours** — "We offer worldwide tour plan recently", 4 tour cards with image overlay (name, duration, price), arranged in asymmetric grid
+6. **Testimonials** — "Our client says" heading, 3 testimonial cards with photo, name, role, quote
+7. **Search Package** — form with text input, category select, tour duration, date, price range, search button
+8. **Blog** — "From our Blog" heading, 3 blog cards with image, title, date, comment count, excerpt
+9. **Footer** — 4 columns (About, Navigation, Newsletter, InstaFeed), copyright bar with Component Dock link
 
-#### Scenario: Dark mode toggle
-- **GIVEN** the page is rendered
-- **WHEN** the user presses the dark-mode toggle
-- **THEN** the `.dark` class SHALL be toggled on the document root element
-- **AND** the toggle SHALL reflect the current mode
+## Gherkin Scenarios
 
-### Requirement: Error section
-The system SHALL render a centered error section with a large "404" heading, a
-"Page not found" subheading, a short explanatory message, and a "Back to home"
-button that links to the page root.
+```gherkin
+Feature: Dune travel landing page
 
-#### Scenario: Error content
-- **GIVEN** the page is rendered
-- **WHEN** the error section is displayed
-- **THEN** it SHALL contain a level-1 heading "404" and a level-2 heading "Page not found"
-- **AND** it SHALL show an explanatory message
-- **AND** it SHALL show a "Back to home" button linking to the page root
+  Scenario: Page renders all sections
+    Given the app loads
+    Then the navbar is visible with logo "Dune"
+    And the hero section displays "Travel More To Discover Yourself"
+    And the services section shows 3 service cards
+    And the about section has an image and text
+    And the tours section shows 4 tour cards
+    And the testimonials section shows client reviews
+    And the search package form is present
+    And the blog section shows 3 articles
+    And the footer links to Component Dock
 
-### Requirement: Search bar
-The system SHALL render a search bar with a labeled text input and a submit
-button so users can search instead of leaving the page.
+  Scenario: Navigation links work
+    Given the navbar is visible
+    When I click "About"
+    Then the page scrolls to the about section
 
-#### Scenario: Search input
-- **GIVEN** the page is rendered
-- **WHEN** the error section is displayed
-- **THEN** it SHALL show a search input with an accessible label and a submit button
+  Scenario: Mobile menu toggles
+    Given the viewport is mobile
+    When I click the menu button
+    Then the mobile menu opens
+    And I see all navigation links
 
-#### Scenario: Submitting a search
-- **GIVEN** the user has typed a query into the search input
-- **WHEN** the user submits the search form
-- **THEN** the form SHALL submit the query to a search results URL
-- **AND** the submitted URL SHALL contain the encoded query
+  Scenario: Search form submission
+    Given the search package form is visible
+    When I fill in the search field
+    And I select a category
+    And I click "Search Package"
+    Then the form does not reload the page
 
-### Requirement: Footer
-The system SHALL render a minimal footer with the site name, a short tagline,
-and social links.
+  Scenario: Newsletter subscription
+    Given the footer newsletter form is visible
+    When I enter a valid email
+    And I click subscribe
+    Then a success message appears
 
-#### Scenario: Footer content
-- **GIVEN** the page is rendered
-- **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Dune" and a tagline
-- **AND** it SHALL show social links (GitHub, X, LinkedIn)
-
-### Requirement: Page composition
-The system SHALL compose all sections in a single page with a main landmark and
-a document title.
-
-#### Scenario: Full page render
-- **GIVEN** the Dune app is rendered
-- **WHEN** the page loads
-- **THEN** the page SHALL compose the Navbar in the banner landmark, the error section in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Dune — Error Page Template"
+  Scenario: Footer links to Component Dock
+    Given the footer is visible
+    Then the copyright mentions "Component Dock"
+    And the link points to https://www.componentdock.com/
+```
