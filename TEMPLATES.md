@@ -2134,7 +2134,7 @@
 - [x] **Primelaw** — [colorlib](https://colorlib.com/wp/template/primelaw/) · [statute](https://free-react-templates-statute.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/primelaw-free-template.jpg)
 - [x] **Solicitor** — [colorlib](https://colorlib.com/wp/template/solicitor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solicitor-free-template.jpg) · [lawguard](https://lawguard.free.componentdock.com)
 - [x] **Thelawyer** — [colorlib](https://colorlib.com/wp/template/thelawyer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelawyer-free-template.jpg) · [casepoint](https://casepoint.free.componentdock.com)
-- [ ] **Theorder** — [colorlib](https://colorlib.com/wp/template/theorder/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theorder-free-template.jpg)
+- [~] **Theorder** — [colorlib](https://colorlib.com/wp/template/theorder/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/theorder-free-template.jpg) · [tribunal](https://tribunal.free.componentdock.com)
 - [x] **Whisper** — [colorlib](https://colorlib.com/wp/template/whisper/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/whisper-free-template.jpg) · [counsel](https://counsel.free.componentdock.com)
 
 ## Listing (1)
