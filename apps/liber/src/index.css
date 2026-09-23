@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Liber brand palette — recreated from the ColorLib "Book" design
+     (css/main.css): coral red #f53f51 accents/buttons, teal #4cd3e3
+     accent, blue #38a4ff accent, dark #222222 headings, muted #777777
+     body text, light bg #f9f9ff. */
+  --color-brand: #f53f51;
+  --color-brand-dark: #d63040;
+
+  /* Ink — dark headings (#222222 from the original). */
+  --color-ink: #222222;
+  --color-ink-dark: #1a1a1a;
+
+  /* Paper — light section background (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Mist — muted body text (#777777 from the original). */
+  --color-mist: #777777;
+
+  /* Teal accent (#4cd3e3). */
+  --color-teal: #4cd3e3;
+  --color-teal-dark: #3ab8cc;
+
+  /* Blue accent (#38a4ff). */
+  --color-sky: #38a4ff;
+  --color-sky-dark: #2d8de6;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the coral red. */
+  --color-primary-50: #fef2f3;
+  --color-primary-100: #fde6e8;
+  --color-primary-200: #fbd0d5;
+  --color-primary-300: #f7a8b2;
+  --color-primary-400: #f17687;
+  --color-primary-500: #f53f51;
+  --color-primary-600: #d63040;
+  --color-primary-700: #b42232;
+  --color-primary-800: #971f2e;
+  --color-primary-900: #801f2d;
+
+  /* Font: Poppins (from the original). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
