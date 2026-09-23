@@ -2090,7 +2090,7 @@
 - [x] **Startup** — [colorlib](https://colorlib.com/wp/template/startup/) · [launchpad](https://launchpad.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/startup-free-template.jpg)
 - [x] **Startup 2** — [colorlib](https://colorlib.com/wp/template/startup-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/startup2-free-template.jpg) · [ascent](https://ascent.free.componentdock.com)
 - [x] **Susan** — [colorlib](https://colorlib.com/wp/template/susan/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/susan-free-app-showcase-website-template.jpg) · [showkit](https://showkit.free.componentdock.com)
-- [~] **Thestartup** — [colorlib](https://colorlib.com/wp/template/thestartup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thestartup-free-template.jpg)
+- [x] **Thestartup** — [colorlib](https://colorlib.com/wp/template/thestartup/) · [nascent](https://nascent.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thestartup-free-template.jpg)
 - [x] **Transcend** — [colorlib](https://colorlib.com/wp/template/transcend/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/transcend-free-template-1.jpg) · [chroma](https://chroma.free.componentdock.com)
 - [x] **Typo** — [colorlib](https://colorlib.com/wp/template/typo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/typo-bright-free-app-landing-page-template.jpg) · [brio](https://brio.free.componentdock.com)
 - [x] **Umeet** — [colorlib](https://colorlib.com/wp/template/umeet/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/umeet-free-template.jpg) · [conclave](https://free-react-templates-conclave.surge.sh)
