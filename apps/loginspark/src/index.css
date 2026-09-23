@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand gradient — pink #c850c0 to blue #4158d0. */
+  --color-gradient-start: #c850c0;
+  --color-gradient-end: #4158d0;
+
+  /* Button / accent green — #57b846. */
+  --color-accent: #57b846;
+
+  /* Button hover — #333333. */
+  --color-accent-hover: #333333;
+
+  /* Card background — white. */
+  --color-card: #ffffff;
+
+  /* Input background — #e6e6e6. */
+  --color-input: #e6e6e6;
+
+  /* Text colors. */
+  --color-title: #333333;
+  --color-body: #666666;
+  --color-placeholder: #999999;
+
+  /* Font: Poppins + Montserrat via Google Fonts. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
