@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand gold — extracted from original Judicial style.css (#cea15a). */
+  --color-brand: #cea15a;
+
+  /* Navy blue for consultation section (#293462). */
+  --color-navy: #293462;
+
+  /* Dark background (#000). */
+  --color-ink: #000000;
+
+  /* Body-copy gray (#737373). */
+  --color-slate-body: #737373;
+
+  /* Fonts: Nunito Sans (body) + Oswald (headings). */
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Oswald', 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
