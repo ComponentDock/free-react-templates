@@ -1,199 +1,131 @@
-# Template: BookCraft (Form Booking Wizard)
+# Template: Bookcraft (Book / Author Landing)
 
 ## Purpose
 
-Recreation of ColorLib "Colorlib Wizard 26" — a 3-step form booking wizard with step indicators, floating-label form fields, booking image, and confirmation table. Preview URL: https://preview.colorlib.com/theme/colorlib-wizard-26/ (404 at time of research; live preview DOM fetched from https://colorlib.com/etc/bwiz/colorlib-wizard-26/index.html). Source slug: `colorlib-wizard-26`.
+Recreation of ColorLib's **Booke** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page landing site for authors promoting a book.
 
-**Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript. Multi-step form wizard with step indicators, floating-label inputs, date selects, and confirmation view.
+- **ColorLib source:** https://colorlib.com/wp/template/booke/
+- **Preview URL:** https://preview.colorlib.com/theme/booke/
+- **New name:** `bookcraft` (apps/bookcraft, package `@free-react-templates/bookcraft`)
+- **Stack:** React 19, Vite, Tailwind CSS 4, TypeScript, shared `packages/ui`
 
-## Design Tokens
+## Design tokens (extracted from preview)
 
-Extracted from ColorLib preview CSS (`css/style.css`):
+| Token              | Value                                     | Notes                                      |
+| ------------------ | ----------------------------------------- | ------------------------------------------ |
+| Brand / primary    | `#1C63FB`                                 | Blue — buttons, active links, focus states |
+| Body font          | `"Roboto", sans-serif`                    | Load via Google Fonts link in index.html   |
+| Heading / serif    | `"Oswald", sans-serif`                    | Used on `.heading` and `.serif` elements   |
+| Heading color      | `#000000`                                 | All h1–h6                                  |
+| Body text color    | `gray` (#808080)                          | Default paragraph / muted text             |
+| Button radius      | `30px` (pill)                             | All `.btn` — `rounded-full` in Tailwind    |
+| Button primary bg  | `#1C63FB`, text white                     | Hover: transparent bg, blue border+text    |
+| Button white bg    | `#ffffff`, 2px solid transparent           | Hover: transparent bg, white border+text   |
+| Form input radius  | `30px` (pill)                             | `rounded-full`                             |
+| Form input bg      | `#f6f6f6`                                 | Focus border: `#1C63FB`                    |
+| Service card bg    | `#ffffff`                                 | Hover: shadow `0 10px 30px -10px rgba(0,0,0,0.4)` |
+| Testimonial card   | `#ffffff` bg, `#000` text                 | Avatar `rounded-full`                      |
+| Footer bg          | `#333333`                                 | Text `#8c8c8c`, links `#b3b3b3`, headings `#ffffff` |
+| Newsletter section | Bootstrap `.bg-primary` → `#1C63FB`       | White text + white CTA button              |
+| Section padding    | 4.5em mobile / 7em desktop                | `.site-section`                            |
+| Hero bg            | Dark (image-based)                        | White text overlay, "Buy This Book" CTA    |
+| Sticky nav         | White bg on scroll, shadow                | Nav links become dark; active = primary    |
 
-- **Page background:** `#383a4f` (dark blue-grey, full viewport)
-- **Wizard form background:** `#525575` (muted purple-blue)
-- **Wizard heading text:** `#fff` (white, above card)
-- **Step indicator card background:** `#fff` (white cards, 5px radius)
-- **Step icon inactive:** `#ccc` background, `#fff` text
-- **Step icon active/done:** `#55e8d5` (teal/mint green), `#fff` text
-- **Step text:** `#333`, 16px, weight 400
-- **Form section heading:** `#fff`, 30px, weight 700
-- **Form section subheading:** `#ccc`, 18px, weight 400
-- **Floating label (default):** `#fff`, 16px
-- **Floating label (focus/valid):** `#55e8d5`, scaled 0.9
-- **Input text:** `#fff`, 16px, weight 400
-- **Input border (bottom):** `rgba(255,255,255,0.3)`, 1px solid
-- **Input background:** transparent
-- **Placeholder text:** `#fff`
-- **Special label (step 2):** `#55e8d5`, 14px, weight 600
-- **Select text:** `#666` (native selects), `#fff` (custom selects)
-- **Table header text:** `rgba(255,255,255,0.5)`, 16px, weight 400
-- **Table value text:** `#55e8d5`, 18px, weight 700
-- **Action button background:** `#43ccba` (teal)
-- **Action button hover:** `#32998b` (darker teal)
-- **Action button text:** `#fff`, 16px, weight 600
-- **Action button shape:** 5px radius, 45px height, 150px width, centered
-- **Card width:** 910px
-- **Card border-radius:** 10px
-- **Card shadow:** `0px 8px 20px 0px rgba(0, 0, 0, 0.15)`
-- **Font family:** `'Open Sans', sans-serif`
-- **Font base size:** 18px
-- **Step indicator card radius:** 5px
-- **Step icon shadow (inactive):** `0px 4px 11px 0px rgba(0, 0, 0, 0.14)`
+## Gherkin requirements
 
-## Requirements
+```gherkin
+Feature: Bookcraft — Author Book Landing Page
 
-### Requirement: Page Load and Layout
+  Background:
+    Given the user is on the Bookcraft homepage
 
-The wizard SHALL display a centered wizard card on a dark full-screen background with a heading above the card.
+  Scenario: Page loads with hero section
+    Then a hero section is visible
+    And the hero displays the headline "Meet Your Next Book"
+    And the hero shows a book image
+    And the hero has a "Buy This Book" call-to-action button
 
-#### Scenario: Page renders correctly
+  Scenario: Navigation bar is sticky
+    Given the user scrolls down the page
+    Then the navbar becomes sticky at the top
+    And the navbar has a white background when scrolled
+    And the logo text is visible in the navbar
 
-- **WHEN** the user loads the BookCraft wizard page
-- **THEN** a centered wizard card is displayed on a `#383a4f` background
-- **AND** the heading "Form Booking Wizard" is shown above the card in white, bold, 30px
-- **AND** the card has a drop shadow
-- **AND** the card has a `#525575` background with 10px border-radius
-- **AND** a 3-step indicator is shown at the top of the card
+  Scenario: Navigation links scroll to sections
+    When the user clicks the "Features" link in the navbar
+    Then the page scrolls to the Features section
+    When the user clicks the "About Author" link
+    Then the page scrolls to the Author section
+    When the user clicks the "Testimonial" link
+    Then the page scrolls to the Testimonials section
+    When the user clicks the "Contact" link
+    Then the page scrolls to the Contact/Footer section
 
-### Requirement: Step Indicator
+  Scenario: Features section displays book features
+    Then the Features section is visible
+    And the section heading reads "Features Of This Book"
+    And there are 6 feature cards in a 3-column grid
+    And each feature card has an icon, title, and description
 
-The wizard SHALL display 3 step indicator cards in a horizontal row at the top of the wizard.
+  Scenario: Screenshot carousel shows book images
+    Then a screenshot/carousel section is visible
+    And the section heading reads "Book Screenshot"
+    And there are Prev/Next navigation controls
+    And the carousel displays book preview images
 
-#### Scenario: Step indicator renders correctly
+  Scenario: Author section shows author info
+    Then the Author section is visible
+    And it has a split layout with a background image on one side
+    And the author name "Jane" is displayed
+    And an author biography text block is shown
+    And a signature image is shown
+    And the author's title is "Book Author & Publisher"
 
-- **WHEN** the wizard form is loaded
-- **THEN** three step indicator cards are shown: "Personal Info", "Booking", "Confirm"
-- **AND** each step card is white (#fff) with 5px border-radius
-- **AND** step 1 icon shows "1" in white on a `#55e8d5` background (active)
-- **AND** steps 2-3 icons show their numbers in white on a `#ccc` background (inactive)
-- **AND** step text labels are shown to the right of each icon
+  Scenario: Testimonials section displays reader reviews
+    Then the Testimonials section is visible
+    And the section heading reads "Testimonial From Readers"
+    And there are 3 testimonial cards
+    And each testimonial card has a quote, name, and role
 
-#### Scenario: Step indicator updates on navigation
+  Scenario: Newsletter subscription section
+    Then a newsletter/subscribe section is visible
+    And it has a blue background
+    And it shows a "Subscribe For The New Updates" heading
+    And there is an email input field
+    And there is a "Send Email" submit button
 
-- **WHEN** the user advances to step 2
-- **THEN** step 1 icon turns `#55e8d5` (completed)
-- **AND** step 2 icon turns `#55e8d5` (active)
-- **AND** step 3 icon remains `#ccc` (inactive)
+  Scenario: Footer contact form
+    Then the footer is visible with a dark background
+    And the footer has an "About Us" column
+    And the footer has a "Navigation" column with links
+    And the footer has a "Quick Contact" form with name, email, message fields
+    And the contact form has a "Send Message" button
+    And social media icons (Facebook, Twitter, Instagram, LinkedIn) are shown
+    And a "Component Dock" attribution link is present
 
-### Requirement: Step 1 — Personal Info
+  Scenario: Mobile responsive layout
+    Given the viewport is 375px wide
+    Then the navbar collapses to a hamburger menu
+    And the Features grid stacks to a single column
+    And the Author section stacks vertically
+    And the Testimonials stack vertically
+    And the footer columns stack vertically
+```
 
-The wizard SHALL display a personal information form with floating-label inputs.
+## Verification checklist
 
-#### Scenario: Step 1 fields render correctly
-
-- **WHEN** step 1 is active
-- **THEN** section heading "Personal Info" is displayed with "1/3" counter
-- **AND** fields are displayed: First Name, Last Name, Phone Number, E-Mail
-- **AND** a Date of Birth row shows 3 select dropdowns (day, month, year)
-- **AND** an Address Location full-width field is shown
-- **AND** all text inputs have floating labels that animate on focus
-- **AND** a "Next" button is shown at the bottom
-
-#### Scenario: Step 1 floating label animation
-
-- **WHEN** the user focuses a text input
-- **THEN** the label floats up and scales to 0.9
-- **AND** the label color changes to `#55e8d5`
-
-#### Scenario: Step 1 validation
-
-- **WHEN** the user clicks "Next" without filling required fields
-- **THEN** validation errors appear for all required fields
-- **AND** the form does not advance to step 2
-
-#### Scenario: Step 1 advances on valid input
-
-- **WHEN** the user fills all required fields and clicks "Next"
-- **THEN** the form advances to step 2
-- **AND** the step indicator updates
-
-### Requirement: Step 2 — Booking Information
-
-The wizard SHALL display a booking form with room selection, date, and time.
-
-#### Scenario: Step 2 fields render correctly
-
-- **WHEN** step 2 is active
-- **THEN** section heading "Booking Information" is displayed with "2/3" counter
-- **AND** a booking image is shown at the top
-- **AND** a "Choose a Room" select dropdown is shown (full width)
-- **AND** an "Organization Day" text input with date placeholder is shown
-- **AND** a "Time Open" select dropdown is shown
-- **AND** label text for step 2 fields is teal (`#55e8d5`), 14px, bold
-- **AND** a "Next" button is shown at the bottom
-
-#### Scenario: Step 2 advances on valid input
-
-- **WHEN** the user fills booking fields and clicks "Next"
-- **THEN** the form advances to step 3
-- **AND** the step indicator updates
-
-### Requirement: Step 3 — Confirm Details
-
-The wizard SHALL display a confirmation table summarizing all entered information.
-
-#### Scenario: Step 3 renders correctly
-
-- **WHEN** step 3 is active
-- **THEN** section heading "Confirm Details" is displayed with "3/3" counter
-- **AND** a summary table shows: Full Name, Room, Day, Time, Price
-- **AND** table header labels are `rgba(255,255,255,0.5)`, 16px
-- **AND** table values are `#55e8d5`, 18px, bold
-- **AND** each row is displayed as a block (not table rows) for responsive layout
-- **AND** a "Confirm" button is shown at the bottom
-
-### Requirement: Navigation Buttons
-
-The wizard SHALL provide Previous/Next navigation buttons centered at the bottom of each step.
-
-#### Scenario: Navigation buttons render correctly
-
-- **WHEN** any step is displayed
-- **THEN** a "Next" button is shown centered at the bottom
-- **AND** the button is `#43ccba` teal with white text
-- **AND** the button is 150px wide, 45px tall, with 5px border-radius
-- **AND** on hover the button background darkens to `#32998b`
-
-#### Scenario: Previous button visibility
-
-- **WHEN** step 1 is active
-- **THEN** no "Previous" button is shown
-- **WHEN** step 2 or 3 is active
-- **THEN** a "Previous" button is shown alongside "Next"
-
-### Requirement: Responsive Design
-
-The wizard SHALL be responsive and adapt to smaller screens.
-
-#### Scenario: Tablet layout
-
-- **WHEN** the viewport is between 576px and 991px
-- **THEN** the wizard card width adjusts to 90% of viewport
-- **AND** step indicator labels stack vertically below icons
-- **AND** step icon border-radius resets to 0
-
-#### Scenario: Mobile layout
-
-- **WHEN** the viewport is below 576px
-- **THEN** form fields stack vertically (full width)
-- **AND** date selects stack vertically (full width)
-- **AND** the booking image is hidden
-- **AND** the step counter "1/3" etc. is hidden
-
-## Verification Checklist
-
-- [ ] Page renders on `#383a4f` background with centered wizard card
-- [ ] "Form Booking Wizard" heading displays above card
-- [ ] 3-step indicator shows with correct active/inactive states
-- [ ] Step 1: Personal Info fields render with floating labels
-- [ ] Floating labels animate on focus (scale + color change)
-- [ ] Step 2: Booking fields render with teal labels and image
-- [ ] Step 3: Confirmation table shows summary data
-- [ ] Navigation buttons centered, teal colored, correct sizing
-- [ ] Previous button hidden on step 1, visible on steps 2-3
-- [ ] Responsive layout works at tablet and mobile breakpoints
+- [ ] Hero section renders with headline, book image placeholder, and CTA button
+- [ ] Navbar is sticky and changes background on scroll
+- [ ] All nav links scroll to the correct sections
+- [ ] Features section shows 6 cards in a 3×2 grid with icons
+- [ ] Screenshot carousel slides between images with Prev/Next controls
+- [ ] Author section shows split layout with image + bio + signature
+- [ ] Testimonials section shows 3 cards with quotes and avatars
+- [ ] Newsletter section has email input and submit button on blue background
+- [ ] Footer has 3 columns: About Us, Navigation, Quick Contact form
+- [ ] Footer social icons render
 - [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
-- [ ] `npm run test:coverage` passes at 100%
-- [ ] `npm run build` succeeds
+- [ ] Mobile responsive at 375px: hamburger nav, stacked grids
+- [ ] No ColorLib references in app source (provenance only in spec + TEMPLATES.md)
+- [ ] All tests pass with 100% coverage
+- [ ] `npm run verify:app bookcraft` passes (typecheck + lint + tests + build)
