@@ -13,20 +13,20 @@ Recreation of ColorLib "Thestartup" template as a React 19 + Vite + Tailwind 4 +
 
 Extracted from the live preview CSS (`assets/css/style.css`):
 
-| Token | Value | Notes |
-|---|---|---|
-| `brand` | `#FF9100` | Primary orange — buttons, accents, hovers, CTA backgrounds |
-| `brand-dark` | `#df7e00` | Gradient endpoint for orange button background |
-| `hero-bg` | `#FFDDB5` | Light peach/tan — hero section background |
-| `dark-purple` | `#2D0A31` | Deep plum — testimonial section background |
-| `black` | `#000000` | Footer background |
-| `body-text` | `#5E5E5E` | Paragraph text |
-| `heading-color` | `#000000` | h1–h6 text |
-| `font-heading` | `"Josefin Sans", sans-serif` | All headings |
-| `font-body` | `"Roboto", sans-serif` | Body text, paragraphs |
-| `button-radius` | `5px` | `.btn` border-radius |
-| `card-radius` | `0` | Cards have sharp edges (no border-radius) |
-| `section-padding` | `120px top / 100px bottom` | `.section-padding` |
+| Token             | Value                        | Notes                                                      |
+| ----------------- | ---------------------------- | ---------------------------------------------------------- |
+| `brand`           | `#FF9100`                    | Primary orange — buttons, accents, hovers, CTA backgrounds |
+| `brand-dark`      | `#df7e00`                    | Gradient endpoint for orange button background             |
+| `hero-bg`         | `#FFDDB5`                    | Light peach/tan — hero section background                  |
+| `dark-purple`     | `#2D0A31`                    | Deep plum — testimonial section background                 |
+| `black`           | `#000000`                    | Footer background                                          |
+| `body-text`       | `#5E5E5E`                    | Paragraph text                                             |
+| `heading-color`   | `#000000`                    | h1–h6 text                                                 |
+| `font-heading`    | `"Josefin Sans", sans-serif` | All headings                                               |
+| `font-body`       | `"Roboto", sans-serif`       | Body text, paragraphs                                      |
+| `button-radius`   | `5px`                        | `.btn` border-radius                                       |
+| `card-radius`     | `0`                          | Cards have sharp edges (no border-radius)                  |
+| `section-padding` | `120px top / 100px bottom`   | `.section-padding`                                         |
 
 ## Section Structure (in order)
 
@@ -40,123 +40,123 @@ Extracted from the live preview CSS (`assets/css/style.css`):
 8. **Blog** — centered title, 3 blog cards in a carousel (image with category badge, title, excerpt).
 9. **Footer** — dark background (`#000`), 4-column: logo + social icons, Navigation links, Services links, Contact info. Bottom bar with copyright (links to Component Dock).
 
-## Gherkin Scenarios
+## Requirements
 
-### Navbar
-```gherkin
-Scenario: Navbar renders with logo and navigation links
-  Given the user loads the page
-  Then a navigation bar is visible at the top
-  And the logo is displayed on the left
-  And nav links "Home", "About", "Services", "Blog", "Contact" are shown
-  And a "Join Us" CTA button is displayed
+### Requirement: Navbar functionality
 
-Scenario: Navbar becomes sticky on scroll
-  Given the user scrolls down
-  Then the navbar remains fixed at the top
-  And the background turns white
-```
+Users SHALL see a sticky navigation bar with logo, nav links, and a "Join Us" CTA button.
 
-### Hero
-```gherkin
-Scenario: Hero section displays headline and image
-  Given the user is on the landing page
-  Then a tagline "We are new but doing great" is displayed in orange
-  And a heading "We give the power back to the user" is visible
-  And a subtext paragraph is shown
-  And an "Explore Us" button is present
-  And a hero image is displayed on the right side
+#### Scenario: Navbar renders with logo and navigation links
 
-Scenario: Hero section uses peach background
-  Given the hero section is rendered
-  Then the background color is #FFDDB5
-```
+- **WHEN** the user loads the page
+- **THEN** a navigation bar is visible at the top
+- **AND** the logo is displayed on the left
+- **AND** nav links "Home", "About", "Services", "Blog", "Contact" are shown
+- **AND** a "Join Us" CTA button is displayed
 
-### Services
-```gherkin
-Scenario: Services section shows three service cards
-  Given the user scrolls to the services section
-  Then a heading "Services we provide" is visible
-  And three service cards are displayed
-  And each card has an icon, title, description, and "Let's Talk" link
-```
+#### Scenario: Navbar becomes sticky on scroll
 
-### About
-```gherkin
-Scenario: About section displays philosophy content
-  Given the user scrolls to the about section
-  Then "Our Philosophy" heading is visible
-  And two paragraphs of description are shown
-  And an author attribution with CEO name is displayed
-  And an image is shown alongside the text
-```
+- **WHEN** the user scrolls down
+- **THEN** the navbar remains fixed at the top
+- **AND** the background turns white
 
-### Pricing
-```gherkin
-Scenario: Pricing section shows three plans
-  Given the user scrolls to the pricing section
-  Then an "Affordable pricing plan" heading is shown
-  And three pricing cards are displayed
-  And each card has a price, description, feature list, and "Get Started Now" button
-  And the middle card is visually highlighted as active
-```
+### Requirement: Hero section
 
-### Features (Accordion)
-```gherkin
-Scenario: Features accordion shows collapsible items
-  Given the user scrolls to the features section
-  Then a section heading is displayed
-  And four accordion items are shown
-  And clicking an accordion header toggles its content
-  And one item is expanded by default
-  And an image is shown in the right column
-```
+Users SHALL see a split hero section with tagline, heading, subtext, CTA, and hero image on a peach background.
 
-### Testimonials
-```gherkin
-Scenario: Testimonials section shows quote carousel
-  Given the user scrolls to the testimonials section
-  Then the background is dark purple (#2D0A31)
-  And a testimonial quote is displayed
-  And the founder name and role are shown
-  And dot pagination controls are present
-```
+#### Scenario: Hero section displays headline and image
 
-### Blog
-```gherkin
-Scenario: Blog section shows latest posts carousel
-  Given the user scrolls to the blog section
-  Then an "Our latest blog" heading is visible
-  And three blog cards are displayed
-  And each card has an image, category badge, title, and excerpt
-```
+- **WHEN** the user is on the landing page
+- **THEN** a tagline "We are new but doing great" is displayed in orange
+- **AND** a heading "We give the power back to the user" is visible
+- **AND** a subtext paragraph is shown
+- **AND** an "Explore Us" button is present
+- **AND** a hero image is displayed on the right side
 
-### Footer
-```gherkin
-Scenario: Footer renders with four columns
-  Given the user scrolls to the footer
-  Then the background is black (#000)
-  And a logo and social icons are displayed
-  And Navigation, Services, and Contact columns are shown
-  And the bottom bar links to Component Dock
-```
+#### Scenario: Hero section uses peach background
 
-## Verification Checklist
+- **WHEN** the hero section is rendered
+- **THEN** the background color is #FFDDB5
 
-- [ ] Navbar renders with all 5 nav links + "Join Us" CTA
-- [ ] Navbar sticks on scroll with white background
-- [ ] Hero uses #FFDDB5 background, split layout, orange tagline, heading, CTA
-- [ ] Services shows 3 cards with icon, title, description, link
-- [ ] About section has split layout with image + philosophy text + author
-- [ ] Pricing shows 3 cards, middle highlighted, feature lists, CTA buttons
-- [ ] Features accordion works (expand/collapse, default open item)
-- [ ] Testimonials carousel on dark purple background with dot pagination
-- [ ] Blog carousel shows 3 cards with image, badge, title, excerpt
-- [ ] Footer has 4-column layout, black background, Component Dock link
-- [ ] All buttons use brand orange (#FF9100)
-- [ ] Heading font: Josefin Sans; body font: Roboto
-- [ ] 100% test coverage (lines, functions, branches, statements)
-- [ ] No ColorLib references in app code (only in spec and TEMPLATES.md)
-- [ ] `public/CNAME` contains `nascent.free.componentdock.com`
-- [ ] `homepage` in package.json set to `https://nascent.free.componentdock.com`
-- [ ] Footer links to `https://www.componentdock.com/`
+### Requirement: Services section
+
+Users SHALL see three service cards with icons, titles, descriptions, and "Let's Talk" links.
+
+#### Scenario: Services section shows three service cards
+
+- **WHEN** the user scrolls to the services section
+- **THEN** a heading "Services we provide" is visible
+- **AND** three service cards are displayed
+- **AND** each card has an icon, title, description, and "Let's Talk" link
+
+### Requirement: About section
+
+Users SHALL see a split about section with image, philosophy heading, description paragraphs, and CEO attribution.
+
+#### Scenario: About section displays philosophy content
+
+- **WHEN** the user scrolls to the about section
+- **THEN** "Our Philosophy" heading is visible
+- **AND** two paragraphs of description are shown
+- **AND** an author attribution with CEO name is displayed
+- **AND** an image is shown alongside the text
+
+### Requirement: Pricing section
+
+Users SHALL see three pricing cards with plans, prices, features, and CTA buttons.
+
+#### Scenario: Pricing section shows three plans
+
+- **WHEN** the user scrolls to the pricing section
+- **THEN** an "Affordable pricing plan" heading is shown
+- **AND** three pricing cards are displayed
+- **AND** each card has a price, description, feature list, and "Get Started Now" button
+- **AND** the middle card is visually highlighted as active
+
+### Requirement: Features accordion
+
+Users SHALL see a collapsible accordion with four feature items and an image.
+
+#### Scenario: Features accordion shows collapsible items
+
+- **WHEN** the user scrolls to the features section
+- **THEN** a section heading is displayed
+- **AND** four accordion items are shown
+- **AND** clicking an accordion header toggles its content
+- **AND** one item is expanded by default
+- **AND** an image is shown in the right column
+
+### Requirement: Testimonials section
+
+Users SHALL see a testimonials carousel on a dark purple background with dot pagination.
+
+#### Scenario: Testimonials section shows quote carousel
+
+- **WHEN** the user scrolls to the testimonials section
+- **THEN** the background is dark purple (#2D0A31)
+- **AND** a testimonial quote is displayed
+- **AND** the founder name and role are shown
+- **AND** dot pagination controls are present
+
+### Requirement: Blog section
+
+Users SHALL see three blog cards with images, category badges, titles, and excerpts.
+
+#### Scenario: Blog section shows latest posts
+
+- **WHEN** the user scrolls to the blog section
+- **THEN** an "Our latest blog" heading is visible
+- **AND** three blog cards are displayed
+- **AND** each card has an image, category badge, title, and excerpt
+
+### Requirement: Footer
+
+Users SHALL see a four-column footer with black background and Component Dock link.
+
+#### Scenario: Footer renders with four columns
+
+- **WHEN** the user scrolls to the footer
+- **THEN** the background is black (#000)
+- **AND** a logo and social icons are displayed
+- **AND** Navigation, Services, and Contact columns are shown
+- **AND** the bottom bar links to Component Dock
