@@ -2052,7 +2052,7 @@
 - [x] **Gaas** — [colorlib](https://colorlib.com/wp/template/gaas/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gaas-free-template.jpg) · [Gaas](https://gaas.free.componentdock.com)
 - [x] **Glint** — [colorlib](https://colorlib.com/wp/template/glint/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/glint-simple-website-template.jpeg) · [glint](https://free-react-templates-glint.surge.sh)
 - [x] **Go Crepe** — [colorlib](https://colorlib.com/wp/template/go-crepe/) · [batter](https://batter.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/go-crepe-creative-digital-agency-website-template.jpg)
-- [~] **Halo** — [colorlib](https://colorlib.com/wp/template/halo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/halo-free-template.jpg)
+- [x] **Halo** — [colorlib](https://colorlib.com/wp/template/halo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/halo-free-template.jpg) · [beacon](https://free-react-templates-beacon.surge.sh)
 - [x] **Imagine** — [colorlib](https://colorlib.com/wp/template/imagine/) · [imagine](https://imagine.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/imagine-free-template.jpeg)
 - [x] **Industry** — [colorlib](https://colorlib.com/wp/template/industry/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/industry-free-template.jpg) · [fabricate](https://fabricate.free.componentdock.com)
 - [x] **Itkol** — [colorlib](https://colorlib.com/wp/template/itkol/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/itkol-free-template.jpg) · [Itkol](https://itkol.free.componentdock.com)
