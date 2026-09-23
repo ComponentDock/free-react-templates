@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Reimagine brand palette — pink-to-orange gradient (design tokens) */
+  --color-brand: #e66686;
+  --color-brand-light: #e66587;
+  --color-accent: #f09359;
+  --color-accent-light: #f09458;
+  --color-bg-alt: #f9f9ff;
+  --color-ink: #222222;
+  --color-body: #777777;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
