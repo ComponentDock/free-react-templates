@@ -1,239 +1,193 @@
-# Template: Casepoint (Legal / Law Firm)
+# Template: Casepoint (Law Firm Landing)
 
 ## Purpose
 
-Recreation of ColorLib's "TheLawyer" template — a professional single-page law firm website.
+Casepoint is a single-page law firm landing template — a React recreation of
+the ColorLib free "TheLawyer" template
+(preview: https://preview.colorlib.com/theme/thelawyer/ — law firm landing),
+built under a different name with the monorepo stack: Vite + React 19 +
+Tailwind CSS 4 + TypeScript.
 
-- **ColorLib source:** https://colorlib.com/wp/template/thelawyer/
-- **Preview URL:** https://preview.colorlib.com/theme/thelawyer/
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/thelawyer-free-template.jpg
-- **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
-- **New app name:** `casepoint` (apps/casepoint, @free-react-templates/casepoint)
+Design tokens captured from the original:
 
-## Design tokens
+- Brand primary `#3957ff` (buttons, accent lines, subtitles)
+- Brand dark `#112957` (hero button bg, submit buttons)
+- Brand darker `#0b1416` (black CTA button)
+- Typeface: Josefin Sans (headings) + Roboto (body) + Rubik (hero h1) via Google Fonts
+- Sharp-corner buttons, white/light section backgrounds, card borders `#dddddd`
+- Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons
 
-Extracted from the preview's `style.css` and visual inspection.
+Casepoint lives in `apps/casepoint` and uses shared components from `packages/ui`
+(cn).
 
-### Colors
+## Requirements
 
-| Token              | Value     | Usage                                               |
-| ------------------ | --------- | --------------------------------------------------- |
-| `--brand-primary`  | `#3957ff` | Primary buttons, section subtitle, accent lines, icon color, hover states |
-| `--brand-dark`     | `#112957` | Hero button bg, submit buttons, dark CTA bg          |
-| `--brand-darker`   | `#0b1416` | Black CTA button background                         |
-| `--text-heading`   | `#092c3f` | Heading h1–h6 color                                 |
-| `--text-body`      | `#10285d` | Paragraph body text                                 |
-| `--text-hero`      | `#212025` | Hero heading and hero paragraph color               |
-| `--text-muted`     | `#57667e` | Card description text                               |
-| `--border-card`    | `#dddddd` | Practice area card borders                          |
-| `--bg-white`       | `#ffffff` | Card backgrounds, page bg                           |
-| `--bg-footer`      | dark image | Footer background (image-based)                    |
-| `--bg-cta`         | image     | CTA banner section (background image)              |
-| `--bg-testimonial` | image     | Testimonial section (background image)              |
+### Requirement: Navigation header
 
-### Fonts
+The system SHALL render a sticky white header with the brand name "Casepoint",
+navigation links (Home, About, Services, Case Studies, Blog, Contact), a phone
+number button "01654.066.456", and a hamburger toggle for mobile.
 
-| Role      | Font Family               | Weight          |
-| --------- | ------------------------- | --------------- |
-| Headings  | Josefin Sans              | 300–700         |
-| Body      | Roboto                    | 300–500         |
-| Hero h1   | Rubik                     | 500             |
+#### Scenario: Desktop navigation
 
-### Button styles
+- **WHEN** the user views the page on desktop
+- **THEN** the header shows the "Casepoint" logo, 6 navigation links, and a phone CTA button
 
-- **Primary button:** bg `#3957ff`, color white, font-family Josefin Sans, font-size 16px, letter-spacing 1px, border-radius 0px (sharp corners), padding 27px 44px, hover slides a `#2544f5` pseudo-element from left (scaleX animation)
-- **Hero button:** bg `#112957`, padding 30px 38px, border-radius 0, hover uses `#3957ff` pseudo
-- **Header phone button:** bg `#3957ff`, padding 19px 44px, uppercase, Roboto 14px
-- **Black CTA:** bg `#0b1416`, white text, padding 27px 44px
-- **Submit button (form):** bg `#112957`, 100% width, height 60px, border-radius 0
-- **Section subtitle:** Josefin Sans 18px, uppercase, color `#3957ff`, padding-left 68px with a 54px × 2px `#3957ff` line before it
+#### Scenario: Mobile menu toggle
 
-### Section backgrounds
+- **WHEN** the user clicks the hamburger menu button on mobile
+- **THEN** a mobile navigation panel opens with all links and the phone number
 
-- Hero: full-width background image (`h1_hero.jpg`), height 900px
-- Categories/Practice Areas: white bg, section-padding30 (195px top)
-- About: split layout — left image, right text on white
-- Contact form: background image (`section_bg05.png`), dark treatment
-- Services/Cases: white bg, section-padding3 (280px top)
-- CTA Banner: background image (`section_bg03.png`), dark overlay
-- Team: white bg, section-padding30
-- Testimonial: background image (`section_bg04.png`)
-- Blog: white bg, section-padding30
-- Footer: background image (`footer_bg.jpg`), dark treatment
+#### Scenario: Mobile menu close
 
-## Gherkin requirements
+- **WHEN** the user clicks a navigation link in the mobile menu
+- **THEN** the mobile menu closes
 
-### Scenario: Header renders with navigation and phone CTA
+### Requirement: Hero section
 
-```gherkin
-Feature: Casepoint Header
+The system SHALL render a hero section with a background image, a subtitle
+"Committed to success" with a blue accent line, an h1 heading "Don't Feel
+Helpless We Fight for Justice", a descriptive paragraph, and a "Learn About Us"
+CTA button linking to #about.
 
-  Scenario: Header shows logo, navigation links, and phone button
-    Given the user visits the Casepoint homepage
-    Then the header displays the "Casepoint" logo
-    And the navigation shows links: "Home", "About", "Services", "Case Studies", "Blog", "Contact"
-    And a phone number button "01654.066.456" is visible in the header
-    And the header is sticky on scroll
-```
+#### Scenario: Hero content
 
-### Scenario: Hero section with headline and CTA
+- **WHEN** the user views the hero section
+- **THEN** the heading, subtitle, paragraph, and CTA button are visible
 
-```gherkin
-Feature: Casepoint Hero
+#### Scenario: Hero background
 
-  Scenario: Hero displays headline, subtext, and CTA button
-    Given the user visits the Casepoint homepage
-    Then the hero section shows the subtitle "Committed to success" with a left blue accent line
-    And the headline reads "Dont Feel Helpless We Fight for Justice"
-    And a paragraph of supporting text is displayed below
-    And a "Learn About Us" button is visible
-    And the hero has a background image of a lawyer
-```
+- **WHEN** the user views the hero section
+- **THEN** a background image is displayed
 
-### Scenario: Practice Areas section
+### Requirement: Practice Areas
 
-```gherkin
-Feature: Casepoint Practice Areas
+The system SHALL render a section with subtitle "Our Practicing area", heading
+"Area Of Practice That Can Help You To Win", and three practice area cards
+(Health Law, Insurance Law, Vehicle Accident) with icons, descriptions, and
+"Read More >" links.
 
-  Scenario: Practice areas show three category cards
-    Given the user scrolls to the Practice Areas section
-    Then the section title "Our Practicing Area" is displayed with blue accent line
-    And the heading reads "Area Of Practice That Can Help You To Win"
-    And three practice area cards are shown in a grid
-    And each card has an icon, title, description paragraph, and "Read More >" link
-    And the card titles are "Health Law", "Insurance Law", "Vehicle Accident"
-    And cards have a white background with #dddddd border
-```
+#### Scenario: Practice area cards
 
-### Scenario: About section
+- **WHEN** the user views the Practice Areas section
+- **THEN** three cards are displayed with icons, titles, descriptions, and read more links
 
-```gherkin
-Feature: Casepoint About
+### Requirement: About section
 
-  Scenario: About section shows split layout with image and text
-    Given the user scrolls to the About section
-    Then the section displays "About Our Law agency" as subtitle
-    And the heading reads "We are commited for better service"
-    And two paragraphs of descriptive text are shown
-    And a "Learn About Us" button with dark navy bg is visible
-    And a background image is displayed on the left side
-```
+The system SHALL render a split-layout About section with an image on the left,
+subtitle "About Our Law agency", heading "We are committed for better service",
+two descriptive paragraphs, and a "Learn About Us" button.
 
-### Scenario: Contact form section
+#### Scenario: About content
 
-```gherkin
-Feature: Casepoint Contact Form
+- **WHEN** the user views the About section
+- **THEN** the subtitle, heading, two paragraphs, image, and CTA button are visible
 
-  Scenario: Contact form displays with fields and submit
-    Given the user scrolls to the Contact Form section
-    Then the subtitle reads "Fill up to get a qote"
-    And the heading reads "World's Leading Law Consultency Agency !"
-    And the form has fields: Name, Phone, Practice Area (select), Email, Message
-    And a "Submit Now" button is displayed
-    And the section has a background image
-```
+### Requirement: Contact form
 
-### Scenario: Services/Case Studies section
+The system SHALL render a contact form section with a background image, subtitle
+"Fill up to get a quote", heading "World's Leading Law Consultancy Agency!", and
+form fields: Name, Phone, Practice Area (select), Email, Message, and a
+"Submit Now" button.
 
-```gherkin
-Feature: Casepoint Case Studies
+#### Scenario: Form fields
 
-  Scenario: Case studies display with tabbed navigation
-    Given the user scrolls to the Case Studies section
-    Then the section title "our recent work" is displayed
-    And the heading reads "Reliable, Effective & Wining Law For Customers"
-    And three tabs are shown: "Accident Law", "Health Law", "Insurance Law"
-    And the active tab shows a 2x2 grid of case study cards
-    And each card has an image and a caption with category label and description link
-```
+- **WHEN** the user views the contact form
+- **THEN** all 5 form fields and the submit button are visible
 
-### Scenario: CTA Banner
+#### Scenario: Form submission
 
-```gherkin
-Feature: Casepoint CTA Banner
+- **WHEN** the user fills all fields and clicks Submit Now
+- **THEN** a thank-you confirmation message is displayed
 
-  Scenario: CTA banner shows consultant inquiry prompt
-    Given the user scrolls to the CTA Banner section
-    Then the heading reads "Are you Searching For a First-Class Consultant?"
-    And a "Contact Naw" button with dark background is visible
-    And the section has a background image with dark treatment
-```
+#### Scenario: Empty form submission
 
-### Scenario: Team section
+- **WHEN** the user submits the form with empty fields
+- **THEN** no confirmation is shown (early return)
 
-```gherkin
-Feature: Casepoint Team
+### Requirement: Case Studies
 
-  Scenario: Team section displays three team members
-    Given the user scrolls to the Team section
-    Then the section title "Our lawyers" is displayed
-    And the heading reads "Meet Our Dedicated Team Members."
-    And three team member cards are shown
-    And each card has a photo, name, and role title
-    And the team members are "Ethan Welch" (Chir Lawyer), "Trevor Stanley" (Junior Lawyer), "Allen Guzman" (Senior Lawyer)
-```
+The system SHALL render a tabbed Case Studies section with subtitle "our recent
+work", heading "Reliable, Effective & Winning Law For Customers", and three tabs
+(Accident Law, Health Law, Insurance Law) each showing a 2x2 grid of case cards.
 
-### Scenario: Testimonial section
+#### Scenario: Tab switching
 
-```gherkin
-Feature: Casepoint Testimonials
+- **WHEN** the user clicks a different tab
+- **THEN** the active tab highlights and the card grid updates
 
-  Scenario: Testimonial carousel shows client quote
-    Given the user scrolls to the Testimonial section
-    Then a white quote icon SVG is displayed
-    And a testimonial paragraph is shown
-    And the founder name "Oliva jems" and role "Chif Lawyer" are displayed
-    And a founder photo is shown
-    And the section has a background image
-    And the testimonial uses carousel/slider behavior
-```
+#### Scenario: Default tab
 
-### Scenario: Blog section
+- **WHEN** the page loads
+- **THEN** Accident Law is the active tab with 4 case cards
 
-```gherkin
-Feature: Casepoint Blog
+### Requirement: CTA Banner
 
-  Scenario: Blog section shows article cards
-    Given the user scrolls to the Blog section
-    Then the section title "Insight and Trends Articles" is displayed
-    And the heading reads "Lawyers news from around the world selected by us."
-    And two blog post cards are shown in a grid
-    And each card has an image with date overlay, and a caption with title and description
-```
+The system SHALL render a CTA banner with a background image, heading "Are you
+Searching For a First-Class Consultant?", and a "Contact Now" button.
 
-### Scenario: Footer
+#### Scenario: CTA content
 
-```gherkin
-Feature: Casepoint Footer
+- **WHEN** the user views the CTA banner
+- **THEN** the heading and Contact Now button are visible
 
-  Scenario: Footer shows links, newsletter, and social
-    Given the user scrolls to the footer
-    Then the footer shows the logo and a description paragraph
-    And contact info: phone "+564 7885 3222" and email "youremail@gmail.com"
-    And an "Our Support" column with links: Advanced, Management, Corporate, Customer, Information
-    And a "Quick Link" column with links: New Law, About, Privacy Policy, Licenses
-    And a "Newslatter" section with email input and "Send" button
-    And social icons for Twitter, Facebook, Globe, Instagram
-    And a copyright line with "Component Dock" attribution link
-    And the footer has a dark background image
-```
+### Requirement: Team section
 
-## Verification checklist
+The system SHALL render a Team section with subtitle "Our lawyers", heading
+"Meet Our Dedicated Team Members.", and three team member cards (Ethan Welch,
+Trevor Stanley, Allen Guzman) with photos and role titles.
 
-- [ ] Header: sticky, logo, 6 nav links, phone CTA button
-- [ ] Hero: background image, subtitle with blue line, h1, paragraph, dark navy CTA button
-- [ ] Practice Areas: 3 bordered cards with icons, titles, descriptions, "Read More >" links
-- [ ] About: split layout, image left, text right, dark CTA button, section subtitle
-- [ ] Contact Form: 5 fields (name, phone, select, email, message), submit button, background image
-- [ ] Case Studies: 3 tabs, 2x2 card grid per tab, image + caption per card
-- [ ] CTA Banner: heading, dark button, background image
-- [ ] Team: 3 member cards with photos, names, roles
-- [ ] Testimonial: quote icon, paragraph, founder info, carousel behavior, background image
-- [ ] Blog: 2 article cards with image/date overlay and caption
-- [ ] Footer: 4 columns (logo+info, support links, quick links, newsletter), social icons, copyright with Component Dock link
-- [ ] All colors match design tokens
-- [ ] Fonts: Josefin Sans headings, Roboto body, Rubik hero h1
-- [ ] Buttons: sharp corners (border-radius 0), correct colors, hover animations
-- [ ] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
-- [ ] Footer links https://www.componentdock.com/
-- [ ] Images use picsum.photos placeholders with deterministic seeds
+#### Scenario: Team members
+
+- **WHEN** the user views the Team section
+- **THEN** three team members are displayed with names, roles, and photos
+
+### Requirement: Testimonial section
+
+The system SHALL render a Testimonial section with a background image, a quote
+SVG icon, a testimonial paragraph, founder name "Oliva Jems", role "Chief
+Lawyer", and a founder photo.
+
+#### Scenario: Testimonial content
+
+- **WHEN** the user views the Testimonial section
+- **THEN** the quote, founder name, role, and photo are visible
+
+### Requirement: Blog section
+
+The system SHALL render a Blog section with subtitle "Insight and Trends
+Articles", heading "Lawyers news from around the world selected by us.", and two
+blog post cards with images, date overlays, titles, and descriptions.
+
+#### Scenario: Blog cards
+
+- **WHEN** the user views the Blog section
+- **THEN** two blog cards are displayed with images, dates, titles, and descriptions
+
+### Requirement: Footer
+
+The system SHALL render a footer with a dark background image, the "Casepoint"
+logo, description, phone number "+564 7885 3222", email "youremail@gmail.com",
+"Our Support" links, "Quick Link" links, a newsletter form with email input and
+Send button, social icons (Twitter, Facebook, Globe, Instagram), copyright line,
+and a "Component Dock" attribution link to https://www.componentdock.com/.
+
+#### Scenario: Footer content
+
+- **WHEN** the user views the footer
+- **THEN** all footer sections, links, newsletter form, social icons, and Component Dock link are visible
+
+#### Scenario: Newsletter form
+
+- **WHEN** the user types an email and clicks Send
+- **THEN** the email field is cleared
+
+### Requirement: No ColorLib references
+
+The system SHALL NOT contain any references to "colorlib" in app source files,
+comments, or component code. Provenance lives only in the spec and TEMPLATES.md.
+
+#### Scenario: Clean source code
+
+- **WHEN** searching app source files for "colorlib"
+- **THEN** no matches are found
