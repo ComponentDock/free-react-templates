@@ -2010,7 +2010,7 @@
 
 - [x] **Appli** — [colorlib](https://colorlib.com/wp/template/appli/) · [appli](https://appli.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appli-free-template.jpg)
 - [x] **Apps** — [colorlib](https://colorlib.com/wp/template/apps/) · [apps](https://apps.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apps-free-app-website-template.jpg)
-- [~] **Art Museum** — [colorlib](https://colorlib.com/wp/template/art-museum/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/artmuseum-free-template-1.jpg)
+- [x] **Art Museum** — [colorlib](https://colorlib.com/wp/template/art-museum/) · [artgallery](https://artgallery.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/artmuseum-free-template-1.jpg)
 - [ ] **Author** — [colorlib](https://colorlib.com/wp/template/author/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/author-free-template.jpg)
 - [ ] **Barber** — [colorlib](https://colorlib.com/wp/template/barber/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/barber-free-barber-website-template.jpg)
 - [x] **Bbs** — [colorlib](https://colorlib.com/wp/template/bbs/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bbs-free-small-company-website-template.jpg) · [crux](https://crux.free.componentdock.com)
