@@ -2123,7 +2123,7 @@
 - [x] **Lawfirm** — [colorlib](https://colorlib.com/wp/template/lawfirm/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawfirm-free-fullscreen-lawyer-website-template.jpg) · [docket](https://docket.free.componentdock.com)
 - [x] **Lawfirm 2** — [colorlib](https://colorlib.com/wp/template/lawfirm-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawfirm-free-template.jpg) · [precedent](https://precedent.free.componentdock.com)
 - [x] **Lawful** — [colorlib](https://colorlib.com/wp/template/lawful/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawful-free-template.jpg) · [briefly](https://free-react-templates-briefly.surge.sh)
-- [~] **Lawmaker** — [colorlib](https://colorlib.com/wp/template/lawmaker/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawmaker-free-template.jpg)
+- [x] **Lawmaker** — [colorlib](https://colorlib.com/wp/template/lawmaker/) · [courtcraft](https://courtcraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawmaker-free-template.jpg)
 - [x] **Lawride** — [colorlib](https://colorlib.com/wp/template/lawride/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawride-free-template.jpg)
 - [x] **Lawyer** — [colorlib](https://colorlib.com/wp/template/lawyer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawyer-free-template.jpg) · [esquire](https://esquire.free.componentdock.com)
 - [x] **Lawyerlegal** — [colorlib](https://colorlib.com/wp/template/lawyerlegal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lawyerlegal-free-template.jpg) · [juris](https://juris.free.componentdock.com)
