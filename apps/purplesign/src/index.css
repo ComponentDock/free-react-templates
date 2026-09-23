@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand purple — full-page background (#c859ff). */
+  --color-brand-purple: #c859ff;
+
+  /* Brand yellow — buttons, checkbox, links (#f6f078). */
+  --color-brand-yellow: #f6f078;
+
+  /* Text — white with slight transparency. */
+  --color-text: rgba(255, 255, 255, 0.9);
+
+  /* Input placeholder — semi-transparent white. */
+  --color-placeholder: rgba(255, 255, 255, 0.8);
+
+  /* Input border — subtle white. */
+  --color-input-border: rgba(255, 255, 255, 0.2);
+
+  /* Input focus border — slightly brighter white. */
+  --color-input-focus: rgba(255, 255, 255, 0.4);
+
+  /* Social button border. */
+  --color-social-border: rgba(255, 255, 255, 0.4);
+
+  /* Font: Lato via Google Fonts (loaded in index.html). */
+  --font-sans: 'Lato', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
