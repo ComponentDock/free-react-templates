@@ -2074,7 +2074,7 @@
 - [x] **Parason** — [colorlib](https://colorlib.com/wp/template/parason/) · [indigo](https://indigo.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/parason-free-template.jpeg)
 - [x] **Prantokon** — [colorlib](https://colorlib.com/wp/template/prantokon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/prantokon-free-template.jpg) · [appdeck](https://appdeck.free.componentdock.com)
 - [x] **Publishing Company** — [colorlib](https://colorlib.com/wp/template/publishing-company/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/publishingcompany-free-template.jpg) · [pressline](https://pressline.free.componentdock.com)
-- [~] **Quantum** — [colorlib](https://colorlib.com/wp/template/quantum/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/quantum-free-template.jpg)
+- [x] **Quantum** — [colorlib](https://colorlib.com/wp/template/quantum/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/quantum-free-template.jpg) · [radiant](https://radiant.free.componentdock.com)
 - [x] **Rango** — [colorlib](https://colorlib.com/wp/template/rango/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rango-free-template.jpg) · [blitz](https://blitz.free.componentdock.com)
 - [x] **Raptor** — [colorlib](https://colorlib.com/wp/template/raptor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/raptor-free-template.jpg) · [soar](https://soar.free.componentdock.com)
 - [ ] **Reopen** — [colorlib](https://colorlib.com/wp/template/reopen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/reopen-free-template.jpg)
