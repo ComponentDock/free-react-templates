@@ -2034,7 +2034,7 @@
 - [x] **Datarc** — [colorlib](https://colorlib.com/wp/template/datarc/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/datarc-digital-agency-free-website-template.jpg) · [bytecraft](https://bytecraft.free.componentdock.com)
 - [x] **Design** — [colorlib](https://colorlib.com/wp/template/design/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/design-free-template.jpg) · [Atelier](https://atelier.free.componentdock.com)
 - [x] **Digilab** — [colorlib](https://colorlib.com/wp/template/digilab/) · [byteops](https://byteops.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/digilab-free-template.jpg)
-- [ ] **Dinomuz** — [colorlib](https://colorlib.com/wp/template/dinomuz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dinomuz-free-creative-website-template.jpg)
+- [~] **Dinomuz** — [colorlib](https://colorlib.com/wp/template/dinomuz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dinomuz-free-creative-website-template.jpg)
 - [x] **Dizzi** — [colorlib](https://colorlib.com/wp/template/dizzi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dizzi-free-template.jpg) · [doflo](https://doflo.free.componentdock.com)
 - [x] **Drimo** — [colorlib](https://colorlib.com/wp/template/drimo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/drimo-free-multi-purpose-template.jpg) · [ripply](https://ripply.free.componentdock.com)
 - [x] **Dup** — [colorlib](https://colorlib.com/wp/template/dup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dup-free-creative-agency-website-template.jpg) · [prism](https://prism.free.componentdock.com)
