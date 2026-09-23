@@ -26,132 +26,139 @@ Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript.
 - **Layout:** Two-column split — form left (~50%), illustration right (~50%)
 - **Illustration:** Flat-style vector art with devices (laptop, tablet, phone), decorative leaf/plant elements in teal/mint tones, character figure
 
-## Requirements (Gherkin)
+## Requirements
 
-### Page layout
+### Requirement: Two-column split layout
 
-```gherkin
-Feature: LoginLeaf login form layout
+The page SHALL display a two-column layout with the login form on the left and a decorative illustration on the right. The page background SHALL be white.
 
-  Scenario: Two-column split layout
-    Given the user loads the LoginLeaf page
-    Then the page displays a two-column layout
-    And the left column contains the login form
-    And the right column contains a decorative illustration
+#### Scenario: Two-column layout visible on desktop
 
-  Scenario: Full-viewport white background
-    Given the user loads the LoginLeaf page
-    Then the page background is white
-    And the form and illustration are vertically centered
-```
+- **WHEN** the user loads the LoginLeaf page
+- **THEN** the page displays a two-column layout
+- **AND** the left column contains the login form
+- **AND** the right column contains a decorative illustration
 
-### Form header
+#### Scenario: Full-viewport white background
 
-```gherkin
-Feature: LoginLeaf form header
+- **WHEN** the user loads the LoginLeaf page
+- **THEN** the page background is white
+- **AND** the form and illustration are vertically centered
 
-  Scenario: Heading text
-    Given the user loads the LoginLeaf page
-    Then the heading reads "Sign In to LoginLeaf"
-    And the heading is in dark text, bold, large font
+### Requirement: Form header
 
-  Scenario: Subtext description
-    Given the user loads the LoginLeaf page
-    Then a subtext paragraph appears below the heading
-    And the subtext is in light gray
-```
+The form SHALL display a heading "Sign In to LoginLeaf" in dark bold text and a subtext paragraph in light gray below it.
 
-### Form fields
+#### Scenario: Heading text
 
-```gherkin
-Feature: LoginLeaf form fields
+- **WHEN** the user loads the LoginLeaf page
+- **THEN** the heading reads "Sign In to LoginLeaf"
+- **AND** the heading is in dark text, bold, large font
 
-  Scenario: Username field
-    Given the user loads the LoginLeaf page
-    Then a "Username" input field is visible
-    And the input has a bottom border only (no full box border)
-    And the placeholder text reads "Username" in light gray
+#### Scenario: Subtext description
 
-  Scenario: Password field
-    Given the user loads the LoginLeaf page
-    Then a "Password" input field is visible
-    And the input has a bottom border only (no full box border)
-    And the placeholder text reads "Password" in light gray
-    And the input type is password (masked characters)
-```
+- **WHEN** the user loads the LoginLeaf page
+- **THEN** a subtext paragraph appears below the heading
+- **AND** the subtext is in light gray
 
-### Remember me and forgot password
+### Requirement: Form fields
 
-```gherkin
-Feature: LoginLeaf remember me and forgot password
+The form SHALL include Username and Password input fields with bottom-border-only styling and placeholder text.
 
-  Scenario: Remember me checkbox
-    Given the user loads the LoginLeaf page
-    Then a "Remember me" checkbox is visible
-    And the checkbox accent color is mint/teal (#4ecdc4)
+#### Scenario: Username field
 
-  Scenario: Forgot password link
-    Given the user loads the LoginLeaf page
-    Then a "Forgot Password" link is visible
-    And the link is right-aligned on the same row as the checkbox
-```
+- **WHEN** the user loads the LoginLeaf page
+- **THEN** a "Username" input field is visible
+- **AND** the input has a bottom border only (no full box border)
+- **AND** the placeholder text reads "Username" in light gray
 
-### Login button
+#### Scenario: Password field
 
-```gherkin
-Feature: LoginLeaf login button
+- **WHEN** the user loads the LoginLeaf page
+- **THEN** a "Password" input field is visible
+- **AND** the input has a bottom border only (no full box border)
+- **AND** the placeholder text reads "Password" in light gray
+- **AND** the input type is password (masked characters)
 
-  Scenario: Primary login button
-    Given the user loads the LoginLeaf page
-    Then a "Log In" button is visible
-    And the button background is mint/teal (#4ecdc4)
-    And the button text is white
-    And the button is full-width within the form
-    And the button has rounded corners
-```
+### Requirement: Remember me and forgot password
 
-### Social login
+The form SHALL include a "Remember me" checkbox with mint accent and a "Forgot Password" link right-aligned on the same row.
 
-```gherkin
-Feature: LoginLeaf social login
+#### Scenario: Remember me checkbox
 
-  Scenario: Social login section
-    Given the user loads the LoginLeaf page
-    Then text "or sign in with" appears below the Log In button
+- **WHEN** the user loads the LoginLeaf page
+- **THEN** a "Remember me" checkbox is visible
+- **AND** the checkbox accent color is mint/teal (#4ecdc4)
 
-  Scenario: Social buttons
-    Given the user loads the LoginLeaf page
-    Then three circular social buttons are visible
-    And the first button is Facebook (blue #3b5998)
-    And the second button is Twitter (blue #1da1f2)
-    And the third button is Google (red #dd4b39)
-    And each button displays the respective social icon
-```
+#### Scenario: Forgot password link
 
-### Illustration
+- **WHEN** the user loads the LoginLeaf page
+- **THEN** a "Forgot Password" link is visible
+- **AND** the link is right-aligned on the same row as the checkbox
 
-```gherkin
-Feature: LoginLeaf illustration
+### Requirement: Login button
 
-  Scenario: Decorative illustration
-    Given the user loads the LoginLeaf page
-    Then a flat-style illustration is displayed in the right column
-    And the illustration contains device mockups (laptop, tablet, phone)
-    And the illustration contains decorative leaf/plant elements in teal tones
-    And the illustration contains a character figure
-```
+The form SHALL include a full-width "Log In" button with mint/teal background, white text, and rounded corners.
 
-### Responsive behavior
+#### Scenario: Primary login button
 
-```gherkin
-Feature: LoginLeaf responsive layout
+- **WHEN** the user loads the LoginLeaf page
+- **THEN** a "Log In" button is visible
+- **AND** the button background is mint/teal (#4ecdc4)
+- **AND** the button text is white
+- **AND** the button is full-width within the form
+- **AND** the button has rounded corners
 
-  Scenario: Mobile layout
-    Given the user resizes the viewport to mobile width
-    Then the two-column layout stacks vertically
-    And the illustration appears above or below the form
-    And the form remains fully functional
-```
+### Requirement: Social login
+
+The form SHALL display "or sign in with" text and three circular social login buttons (Facebook, Twitter, Google) with correct brand colors.
+
+#### Scenario: Social login section
+
+- **WHEN** the user loads the LoginLeaf page
+- **THEN** text "or sign in with" appears below the Log In button
+
+#### Scenario: Social buttons
+
+- **WHEN** the user loads the LoginLeaf page
+- **THEN** three circular social buttons are visible
+- **AND** the first button is Facebook (blue #3b5998)
+- **AND** the second button is Twitter (blue #1da1f2)
+- **AND** the third button is Google (red #dd4b39)
+- **AND** each button displays the respective social icon
+
+### Requirement: Illustration
+
+The right column SHALL display a decorative illustration using a placeholder image.
+
+#### Scenario: Decorative illustration
+
+- **WHEN** the user loads the LoginLeaf page
+- **THEN** a decorative illustration is displayed in the right column
+- **AND** the illustration is hidden on mobile viewports
+
+### Requirement: Responsive behavior
+
+The two-column layout SHALL stack vertically on mobile viewports.
+
+#### Scenario: Mobile layout
+
+- **WHEN** the user resizes the viewport to mobile width
+- **THEN** the two-column layout stacks vertically
+- **AND** the illustration appears above or below the form
+- **AND** the form remains fully functional
+
+### Requirement: Footer
+
+The template SHALL include a footer linking to Component Dock.
+
+#### Scenario: Component Dock link
+
+- **WHEN** the user loads the LoginLeaf page
+- **THEN** a footer is visible
+- **AND** the footer contains a link to https://www.componentdock.com/
+- **AND** the link text reads "More templates at Component Dock"
+- **AND** the link opens in a new tab
 
 ## Verification Checklist
 
