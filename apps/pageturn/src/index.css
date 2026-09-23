@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand accent — green #17b978 from the original design. */
+  --color-brand: #17b978;
+  --color-brand-dark: #14a369;
+
+  /* Primary button — blue #007bff from the original design. */
+  --color-primary-50: #e7f1ff;
+  --color-primary-100: #b3d1ff;
+  --color-primary-200: #80b2ff;
+  --color-primary-300: #4d92ff;
+  --color-primary-400: #1a72ff;
+  --color-primary-500: #007bff;
+  --color-primary-600: #0069d9;
+  --color-primary-700: #0053b3;
+  --color-primary-800: #003d8c;
+  --color-primary-900: #002766;
+
+  /* Navy counter text — #263b5e. */
+  --color-navy: #263b5e;
+
+  /* Muted text — #6c757d. */
+  --color-muted: #6c757d;
+
+  /* Body text — #212529. */
+  --color-ink: #212529;
+
+  /* Light section background — #f8f9fa. */
+  --color-paper: #f8f9fa;
+
+  /* Typography */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
