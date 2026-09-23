@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* BookCraft brand palette — recreated from the ColorLib "Booke" design
+     (primary blue #1C63FB). */
+  --color-blue-primary: #1c63fb;
+  --color-blue-hover: #1450d4;
+  --color-dark-footer: #333333;
+  --color-muted: #8c8c8c;
+  --color-link-footer: #b3b3b3;
+  --color-input-bg: #f6f6f6;
+  --color-light-section: #f8f9fa;
+
+  /* Oswald for headings / serif elements, Roboto for body */
+  --font-heading: 'Oswald', sans-serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
