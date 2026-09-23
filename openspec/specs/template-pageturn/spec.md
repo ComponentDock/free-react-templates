@@ -1,206 +1,220 @@
-# Template: PageTurn (Book / Author Landing Page)
+# Template: PageTurn (Author Landing Page)
 
 ## Purpose
 
-Recreation of the ColorLib **Author** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page author/book landing site.
+PageTurn is a single-page author/book landing template in the
+free-react-templates monorepo. It is an original React recreation of the
+ColorLib free "Author" design (see TEMPLATES.md), built under the monorepo
+stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-- **Source:** [ColorLib Author](https://colorlib.com/wp/template/author/)
-- **Preview:** https://preview.colorlib.com/theme/author/
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/author-free-template.jpg
-- **Stack:** Vite (latest) · React 19 · Tailwind CSS 4 · TypeScript (strict)
-- **App folder:** `apps/pageturn`
-- **Package:** `@free-react-templates/pageturn`
+The original is a book/author landing page with green (#17b978) and blue
+(#007bff) accents: a dark navbar, a full-height hero with book illustration,
+publisher logos, an about section with features, stat counters, chapter
+TOC with sidebar, services cards, testimonials, book gallery grid, author
+bio, contact form with info cards, and a dark footer with social links.
+PageTurn recreates that structure section-for-section with matching layout,
+colors, typography, and content types (no ColorLib assets copied).
 
-## Design Tokens
+## Design reference (replication findings)
 
-Extracted from the live preview stylesheet (`css/style.css`) at https://preview.colorlib.com/theme/author/css/style.css.
+- **Original:** ColorLib "Author" — free author/book landing template
+  (source: https://colorlib.com/wp/template/author/).
+- **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/author/`
+  - stylesheet `css/style.css`.
+- **Design tokens:**
+  - Brand accent (green): `#17b978` — subheading text, contact icons
+  - Primary button: `#007bff` — CTA buttons
+  - Footer background: `#000000` — full-width black
+  - Counter number: `#263b5e` — dark navy
+  - Section light bg: `#f8f9fa` — partner logos, cards, chapters
+  - Body text: `#212529`
+  - Muted text: `#6c757d`
+  - Font: Poppins (Google Fonts)
+- **Section order (1:1):**
+  1. Navbar — dark sticky nav with "PageTurn." brand + links
+  2. Hero — full-height split: left text + CTA, right illustration
+  3. Partners — 5 publisher logos in a row
+  4. About The Book — two-column: image left, 3 features right
+  5. Stats Counters — background image + 4 counter cards
+  6. Chapter — heading + sidebar TOC (8 items) + page content
+  7. Services — 3 icon cards (Experience, Marketing, Vision)
+  8. Testimonials — dark bg, 4 quote cards with avatars
+  9. My Books — 2×4 book cover grid with hover overlay
+  10. Author Bio — portrait left, info list + CTA right
+  11. Contact — 4 info cards + form + map placeholder
+  12. Footer — 4-column: About+social, Links, Services, Contact
 
-| Token | Value | Usage |
-|---|---|---|
-| Brand accent (green) | `#17b978` | Subheading text, contact info icons, contact card icon backgrounds |
-| Primary button | `#007bff` | CTA buttons (hero "Buy Now", contact form submit) |
-| Primary button hover | `#0069d9` | Button hover state |
-| Footer background | `#000000` | Full-width black footer |
-| Counter number color | `#263b5e` | Stats section number text (dark navy) |
-| Section light bg | `#f8f9fa` (`bg-light`) | Partner logos, counter cards, about book cards, chapter pages |
-| Body text | `#212529` | Default text color |
-| Subtext | `#6c757d` | Muted text, testimonial names/positions |
-| Testimonial overlay bg | Image with dark overlay | Testimonials section background |
-| Hero overlay | Semi-transparent dark | Hero section overlay over background |
+## Requirements
 
-### Typography
+### Requirement: Navigation bar
 
-- **Font family:** System fonts (`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif`)
-- **Subheading (hero):** `text-transform: uppercase; font-size: 14px; font-weight: 700`
-- **Subheading (sections):** `font-size: 16px; font-weight: 700; color: #17b978`
-- **Headings:** `font-weight: 700; font-size: 50px` (38px mobile)
-- **Body:** `font-size: 1rem; font-weight: 400; line-height: 1.5`
+The system SHALL render a fixed top navigation bar with the brand name
+"PageTurn." and links to all sections.
 
-### Spacing & Layout
+#### Scenario: Navbar content
 
-- **Contact card icon:** `100px × 100px`, `background: #17b978`, `border-radius: 50%` (circle)
-- **Contact card box:** `border-radius: 4px`
-- **Social links:** `height: 40px; width: 40px; border-radius: 50%; background: rgba(255,255,255,0.1)`
-- **Footer:** `padding: 7em 0`, black background
-- **Hero:** full-height (`js-fullheight`), split layout — illustration right, text left
+- **GIVEN** the page is rendered
+- **WHEN** the page loads
+- **THEN** the navbar SHALL display the brand "PageTurn."
+- **AND** the navbar SHALL contain links: Home, About, Chapter, Reviews, My Books, Author, Contact
+- **AND** the navbar SHALL be sticky/fixed on scroll
 
-## Section Structure (in order)
+#### Scenario: Mobile menu toggle
 
-1. **Navbar** — Dark-themed sticky nav with brand "Pageturn." + links: Home, About, Chapter, Reviews, My Books, Author, Contact
-2. **Hero** — Full-height split layout: left side has subheading ("Best Seller Book Of The Week"), h1 title, paragraph, CTA button; right side has book-lover illustration. Dark overlay.
-3. **Partners** — Row of 5 publisher/partner logos on white background
-4. **About The Book** — Two-column: left has background image with overlay; right has heading, paragraph, and 3 sub-features (Award achievements, Read On Any Devices, Very High Resolution) each with heading + description
-5. **Stats Counters** — Full-width background image with overlay, 4 counter cards (bg-light): Copies Sold (1100), Copies Released (1200), Cup Of Coffee (340), Happy Readers (12000)
-6. **Chapter** — Heading "What's Inside The Book", then 2-column layout: left sidebar with 8-item table of contents (Title page, Copyright, Table of contents, Dedication, Foreword, Prologue, Epilogue, Epigraph), right side with page content cards (bg-light)
-7. **Services** — Heading "Services", 3-column grid with icon cards (bg-light): Experience (flaticon-user-experience), Marketing Goals (flaticon-network), Targeting Vision (flaticon-innovation)
-8. **Testimonials** — Full-width dark image background with overlay, heading "Kinds Words From Customers" (white text), owl-carousel with 4 testimonial cards: quote icon, paragraph text, avatar, name, position
-9. **My Books** — Heading "My Other Books", 2×4 grid of book cover images with overlay, title, and genre tag
-10. **Author Bio** — Two-column: left has author portrait background image; right has heading "Franklin Henderson", description, info list (Name, DOB, Address, Zip, Email, Phone), "View All Books" CTA
-11. **Contact** — Heading "Contact Me", 4-column info cards (Address, Phone, Email, Website) with circular green icon, then 2-column: contact form (name, email, subject, textarea, submit) + map placeholder
-12. **Footer** — 4-column: About text + social icons, Links, Services, Have a Questions? with contact details. Copyright line at bottom.
+- **GIVEN** the page is rendered on a mobile viewport
+- **WHEN** the user taps the hamburger menu button
+- **THEN** a mobile navigation menu SHALL appear with all section links
+- **AND** tapping a link SHALL close the menu
 
-## Gherkin Requirements
+### Requirement: Hero section
 
-### Navbar
+The system SHALL render a full-height hero section with a dark overlay,
+subheading, heading, description, CTA button, and illustration.
 
-```gherkin
-Scenario: Navbar renders with brand and links
-  Given the page is loaded
-  Then the navbar displays brand "Pageturn."
-  And the navbar contains links: Home, About, Chapter, Reviews, My Books, Author, Contact
-  And the navbar is sticky on scroll
+#### Scenario: Hero content
 
-Scenario: Navbar scrolls to section on click
-  Given the page is loaded
-  When the user clicks the "About" link
-  Then the page scrolls smoothly to the About section
-```
+- **GIVEN** the page is rendered
+- **WHEN** the hero section is visible
+- **THEN** it SHALL display the subheading "Best Seller Book Of The Week"
+- **AND** it SHALL display a heading about reading books
+- **AND** it SHALL display a "Buy Now" CTA button
+- **AND** it SHALL display a book illustration on the right side
 
-### Hero
+### Requirement: Partner logos
 
-```gherkin
-Scenario: Hero section displays with CTA
-  Given the page is loaded
-  Then the hero section shows subheading "Best Seller Book Of The Week"
-  And the hero shows the title heading
-  And the hero shows a descriptive paragraph
-  And the hero shows a "Buy Now" CTA button
-  And the hero displays a book illustration on the right side
-```
+The system SHALL render a row of 5 publisher/partner logos on a white
+background.
 
-### Partners
+#### Scenario: Partner logos display
 
-```gherkin
-Scenario: Partner logos render in a row
-  Given the page is loaded
-  Then 5 partner/publisher logos are displayed in a horizontal row
-```
+- **GIVEN** the page is rendered
+- **WHEN** the partners section is visible
+- **THEN** 5 partner logo images SHALL be displayed in a horizontal row
 
-### About The Book
+### Requirement: About The Book
 
-```gherkin
-Scenario: About section displays features
-  Given the page is loaded
-  Then the About section shows heading "About The Book"
-  And the section displays a left-side background image
-  And the section lists 3 sub-features: Award achievements, Read On Any Devices, Very High Resolution
-```
+The system SHALL render a two-column section with a background image on
+the left and 3 feature cards on the right.
 
-### Stats Counters
+#### Scenario: About section content
 
-```gherkin
-Scenario: Stats display 4 counter cards
-  Given the page is loaded
-  Then 4 stat cards are displayed: Copies Sold, Copies Released, Cup Of Coffee, Happy Readers
-  And each stat shows a number and label
-  And stat cards have a light background
-```
+- **GIVEN** the page is rendered
+- **WHEN** the About section is visible
+- **THEN** it SHALL display heading "About The Book"
+- **AND** it SHALL list 3 features: Award achievements, Read On Any Devices, Very High Resolution
+- **AND** each feature SHALL have an icon, title, and description
 
-### Chapter
+### Requirement: Stats counters
 
-```gherkin
-Scenario: Chapter section shows TOC and page content
-  Given the page is loaded
-  Then the Chapter section shows heading "What's Inside The Book"
-  And a sidebar lists 8 chapter links
-  And selecting a chapter link shows the corresponding page content
-```
+The system SHALL render 4 stat counter cards over a background image
+with overlay.
 
-### Services
+#### Scenario: Stats display
 
-```gherkin
-Scenario: Services section displays 3 service cards
-  Given the page is loaded
-  Then 3 service cards are displayed: Experience, Marketing Goals, Targeting Vision
-  And each card has an icon, heading, and description
-  And cards have a light background
-```
+- **GIVEN** the page is rendered
+- **WHEN** the Stats section is visible
+- **THEN** 4 stat cards SHALL be displayed: Copies Sold, Copies Released, Cup Of Coffee, Happy Readers
+- **AND** each card SHALL show a number and label
+- **AND** cards SHALL have a light background
 
-### Testimonials
+### Requirement: Chapter section
 
-```gherkin
-Scenario: Testimonials carousel renders cards
-  Given the page is loaded
-  Then the testimonials section has a dark background image with overlay
-  And heading "Kinds Words From Customers" is displayed in white
-  And the carousel contains testimonial cards with quote, text, avatar, name, and position
-```
+The system SHALL render a chapter/TOC section with a sidebar listing
+8 chapter links and a content panel.
 
-### My Books
+#### Scenario: Chapter TOC interaction
 
-```gherkin
-Scenario: Books grid displays 8 book cards
-  Given the page is loaded
-  Then the My Books section shows heading "My Other Books"
-  And 8 book cards are displayed in a grid
-  And each card has a cover image, title, and genre tag
-```
+- **GIVEN** the page is rendered
+- **WHEN** the Chapter section is visible
+- **THEN** it SHALL display heading "What's Inside The Book"
+- **AND** a sidebar SHALL list 8 chapter links
+- **AND** clicking a chapter link SHALL show the corresponding content
 
-### Author Bio
+### Requirement: Services
 
-```gherkin
-Scenario: Author bio section shows author info
-  Given the page is loaded
-  Then the Author section displays author portrait on the left
-  And the right side shows the author name heading
-  And the section lists author details: Name, DOB, Address, Zip, Email, Phone
-  And a "View All Books" CTA is displayed
-```
+The system SHALL render 3 service cards with icons, headings, and
+descriptions on a light background.
 
-### Contact
+#### Scenario: Service cards display
 
-```gherkin
-Scenario: Contact section renders info cards and form
-  Given the page is loaded
-  Then 4 contact info cards are displayed with circular green icons
-  And the contact form has fields: Name, Email, Subject, Message
-  And the form has a "Send Message" submit button
-  And a map placeholder is displayed beside the form
-```
+- **GIVEN** the page is rendered
+- **WHEN** the Services section is visible
+- **THEN** 3 service cards SHALL be displayed: Experience, Marketing Goals, Targeting Vision
+- **AND** each card SHALL have an icon, heading, and description
 
-### Footer
+### Requirement: Testimonials
 
-```gherkin
-Scenario: Footer renders with columns
-  Given the page is loaded
-  Then the footer has a black background
-  And the footer contains 4 columns: About + social icons, Links, Services, Have a Questions?
-  And the footer shows a copyright line at the bottom
-  And the footer links to Component Dock
-```
+The system SHALL render a testimonials section with a dark background
+image, overlay, and 4 testimonial cards.
 
-## Verification Checklist
+#### Scenario: Testimonials content
 
-- [ ] All 12 sections render in correct order (Navbar → Hero → Partners → About → Stats → Chapter → Services → Testimonials → Books → Author → Contact → Footer)
-- [ ] Design tokens match: accent #17b978, primary #007bff, footer #000000, counter text #263b5e
-- [ ] Subheading style: uppercase in hero, green (#17b978) in section headings
-- [ ] Contact icons are 100px green circles
-- [ ] Footer has 4 columns + copyright + Component Dock link
-- [ ] Hero is full-height split layout with illustration
-- [ ] Stats section has background image with overlay
-- [ ] Testimonials section has dark background with white text
-- [ ] Books grid shows 8 cards in a 2×4 layout
-- [ ] Chapter section has sidebar TOC + page content
-- [ ] No ColorLib references in any app code (provenance in spec only)
-- [ ] CTA buttons styled as primary (#007bff) with hover state
-- [ ] Responsive: stacks to single column on mobile
+- **GIVEN** the page is rendered
+- **WHEN** the Testimonials section is visible
+- **THEN** heading "Kinds Words From Customers" SHALL be displayed in white
+- **AND** 4 testimonial cards SHALL be shown with quote, text, avatar, name, and position
+
+### Requirement: My Books grid
+
+The system SHALL render an 8-card book cover grid with hover overlays
+showing title and genre.
+
+#### Scenario: Books grid display
+
+- **GIVEN** the page is rendered
+- **WHEN** the My Books section is visible
+- **THEN** heading "My Other Books" SHALL be displayed
+- **AND** 8 book cards SHALL be shown in a grid
+- **AND** each card SHALL have a cover image, title, and genre tag
+
+### Requirement: Author Bio
+
+The system SHALL render a two-column author bio with portrait on the
+left and details list on the right.
+
+#### Scenario: Author bio content
+
+- **GIVEN** the page is rendered
+- **WHEN** the Author section is visible
+- **THEN** the author name "Franklin Henderson" SHALL be displayed
+- **AND** author details SHALL include Name, DOB, Address, Zip, Email, Phone
+- **AND** a "View All Books" CTA SHALL be shown
+
+### Requirement: Contact section
+
+The system SHALL render 4 contact info cards with circular green icons
+and a contact form beside a map placeholder.
+
+#### Scenario: Contact form and info
+
+- **GIVEN** the page is rendered
+- **WHEN** the Contact section is visible
+- **THEN** 4 contact info cards SHALL be displayed with circular green icons
+- **AND** the form SHALL have fields: Name, Email, Subject, Message
+- **AND** a "Send Message" submit button SHALL be present
+- **AND** submitting the form SHALL show a success message
+
+### Requirement: Footer
+
+The system SHALL render a dark footer with 4 columns and a copyright
+line linking to Component Dock.
+
+#### Scenario: Footer content
+
+- **GIVEN** the page is rendered
+- **WHEN** the footer is visible
+- **THEN** it SHALL have a dark background
+- **AND** it SHALL contain 4 columns: About + social icons, Links, Services, Have a Questions?
+- **AND** it SHALL show a copyright line
+- **AND** it SHALL link to https://www.componentdock.com/ branded as "Component Dock"
+
+### Requirement: No ColorLib references in app code
+
+The system SHALL NOT contain any references to ColorLib in application
+source files, comments, or metadata.
+
+#### Scenario: Provenance isolation
+
+- **GIVEN** the PageTurn app is built
+- **WHEN** source files are scanned
+- **THEN** no file under `apps/pageturn/` SHALL contain the string "colorlib"
