@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Artful brand palette — bold red #f5204b, cyan accent #4cd3e3,
+     blue accent #38a4ff, yellow accent #f4e700 */
+  --color-artful-red: #f5204b;
+  --color-artful-cyan: #4cd3e3;
+  --color-artful-blue: #38a4ff;
+  --color-artful-yellow: #f4e700;
+  --color-artful-body: #777777;
+  --color-artful-heading: #222222;
+  --color-artful-section-bg: #f9faff;
+  --color-artful-footer-bg: #222222;
+
+  /* Poppins — the original template's typeface */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
