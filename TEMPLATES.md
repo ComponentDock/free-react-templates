@@ -2149,7 +2149,7 @@
 - [x] **Login Form 03** — [colorlib](https://colorlib.com/wp/template/login-form-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-03.jpg) · [passcraft](https://passcraft.free.componentdock.com)
 - [x] **Login Form 04** — [colorlib](https://colorlib.com/wp/template/login-form-04/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-04.jpg) · [passgate](https://passgate.free.componentdock.com)
 - [x] **Login Form 05** — [colorlib](https://colorlib.com/wp/template/login-form-05/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-05.jpg) · [gatepass](https://gatepass.free.componentdock.com)
-- [~] **Login Form 06** — [colorlib](https://colorlib.com/wp/template/login-form-06/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-06.jpg)
+- [x] **Login Form 06** — [colorlib](https://colorlib.com/wp/template/login-form-06/) · [commute](https://commute.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-06.jpg)
 - [ ] **Login Form 07** — [colorlib](https://colorlib.com/wp/template/login-form-07/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-07.jpg)
 - [ ] **Login Form 08** — [colorlib](https://colorlib.com/wp/template/login-form-08/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-08.jpg)
 - [ ] **Login Form 09** — [colorlib](https://colorlib.com/wp/template/login-form-09/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-09.jpg)
