@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #71bc42;
+  --color-hero-overlay: #364d59;
+  --color-bg-light: #f8f9fa;
+  --color-accent: #fee2b3;
+
+  --font-heading: 'Playfair Display', ui-serif, Georgia, serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}

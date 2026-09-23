@@ -1,154 +1,140 @@
-# Template: Oathmark (Legal / Notary)
-
-Recreation of the ColorLib "Notary" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
+# Template: Oathmark (Legal / Notary Services)
 
 ## Purpose
 
-- **Source**: [ColorLib Notary](https://colorlib.com/wp/template/notary/)
-- **Preview URL**: https://preview.colorlib.com/theme/notary/
-- **Stack**: React 19 · Vite (latest) · Tailwind CSS 4 · TypeScript
-- **Category**: Legal / Notary services landing page
-- **ComponentDock name**: `oathmark` (apps/oathmark, @free-react-templates/oathmark)
+Oathmark is a single-page legal/notary services template — a React recreation
+of the ColorLib free "Notary" template
+(preview: https://preview.colorlib.com/theme/notary/ — legal/notary landing),
+built under a different name with the monorepo stack: Vite + React 19 +
+Tailwind CSS 4 + TypeScript.
 
-## Replication Reference
+Design tokens captured from the original:
 
-Live preview fetched 2026-09-23. Design tokens extracted from `css/style.css` on the preview.
+- Brand green `#71bc42` (CTA buttons, accents), dark hero overlay `#364d59`
+- Typeface: Playfair Display (headings) + Roboto (body) via Google Fonts
+- Pill-shaped buttons, light section backgrounds `#f8f9fa`, peach accent `#fee2b3`
+- Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons
 
-### Design Tokens
+Oathmark lives in `apps/oathmark` and uses shared components from `packages/ui`
+(cn).
 
-| Token | Value | Source |
-|-------|-------|--------|
-| Heading font | Playfair Display (serif) | Google Fonts, CSS `font-family` |
-| Body font | Roboto (sans-serif) | Google Fonts, CSS `font-family` |
-| Brand green (CTA) | `#71bc42` | `.btn.btn-primary`, hover states |
-| Hero overlay | `#364d59` | `.hero.overlay:before` background |
-| Light section bg | `#f8f9fa` | `.site-section.bg-light` |
-| Accent peach/tan | `#fee2b3` | `.practicing` icon wrap, hover |
-| Text dark | `#212529` | Bootstrap body text |
-| Border radius (buttons) | `50%` (pill) | `.btn.btn-primary` |
-| Border radius (cards) | `7px` | `.practicing-inner` |
-| Footer background | Image (dark overlay) | `background-image: url('images/hero_bg_footer.jpg')` |
+## Requirements
 
-### Visual Design Notes (from screenshot + preview)
+### Requirement: Navigation bar
 
-- Dark hero with image overlay, split layout: left intro text + right appointment form card (white bg, date picker)
-- Light gray background for Practice Areas: 6 cards in a 3-column grid, each with a circular icon, title, and short blurb
-- Two-column "about" section: attorney images left (2 stacked), CTA text right
-- Testimonials on light bg: 3 cards, each with circular avatar, author name, and quote in blockquote
-- Three-column "legal solutions" section: image left, text center with checklist, accordion FAQ right
-- Footer: dark background image with overlay, About Us + 4 link columns + social icons
+The system SHALL render a sticky white navbar with the brand name "Oathmark",
+navigation links (Home, Practice Areas, Testimonials, About, Contact), a
+Practice Areas dropdown with 6 legal practice areas, and a hamburger toggle
+for mobile.
 
-## Gherkin Requirements
+#### Scenario: Desktop navigation
 
-### Feature: Navbar
+- **GIVEN** the page is rendered
+- **WHEN** the navbar is displayed
+- **THEN** it SHALL show the brand name "Oathmark" linking to #home
+- **AND** it SHALL show links to Home, Practice Areas, Testimonials, About, Contact
 
-Scenario: Sticky navigation bar renders
-  Given the user loads the page
-  Then a sticky navbar should be visible at the top
-  And it should show the brand name "Oathmark" on the left
-  And it should show navigation links: Home, Practice Areas, Testimonials, About, Contact
+#### Scenario: Practice Areas dropdown
 
-Scenario: Mobile menu toggle
-  Given the user is on a mobile viewport
-  When the user clicks the hamburger icon
-  Then the mobile navigation menu should expand
+- **GIVEN** the page is rendered on desktop
+- **WHEN** the user clicks the Practice Areas button
+- **THEN** a dropdown SHALL appear with 6 practice areas: Bankruptcy Law, Business Law, Civil Rights Law, Criminal Law, Immigration Law, Family Law
+- **AND** the dropdown SHALL have aria-expanded="true"
 
-Scenario: Practice Areas dropdown
-  Given the user hovers over or clicks "Practice Areas" in the navbar
-  Then a dropdown should appear with links: Bankruptcy Law, Business Law, Civil Rights Law, Criminal Law, Immigration Law, Family Law
+#### Scenario: Mobile menu
 
-### Feature: Hero Section
+- **GIVEN** the page is rendered
+- **WHEN** the user clicks the hamburger toggle
+- **THEN** the mobile menu SHALL become visible
+- **AND** clicking a mobile nav link SHALL close the menu
 
-Scenario: Hero with overlay renders
-  Given the user loads the page
-  Then the hero section should display with a dark image overlay background
-  And it should show a headline: "Notary Public & Legal Solutions"
-  And it should show a subtitle paragraph about legal services
+### Requirement: Hero section
 
-Scenario: Appointment form in hero
-  Given the hero section is visible
-  Then an appointment booking form should be displayed on the right side
-  And the form should have fields: Name, Email, Date
-  And the form should have a "Book Appointment" submit button
+The system SHALL render a full-width hero with a dark image overlay, a split
+layout with headline and subtitle on the left, and an appointment booking
+form on the right.
 
-Scenario: Appointment form submission
-  Given the user fills in Name, Email, and Date
-  When the user clicks "Book Appointment"
-  Then the form should validate required fields
+#### Scenario: Hero content
 
-### Feature: Practice Areas
+- **GIVEN** the page is rendered
+- **WHEN** the hero section is displayed
+- **THEN** it SHALL show the headline "Notary Public & Legal Solutions"
+- **AND** it SHALL display a form with Name, Email, and Date inputs
+- **AND** it SHALL have a "Book Appointment" submit button
 
-Scenario: Practice areas grid renders
-  Given the user scrolls to the Practice Areas section
-  Then 6 practice area cards should be displayed in a 3-column grid
-  And each card should have an icon, title, and description paragraph
-  And the cards should be: Bankruptcy Law, Business Law, Civil Rights Law, Criminal Law, Immigration Law, Family Law
+#### Scenario: Form submission
 
-Scenario: Practice area card hover
-  Given a practice area card is visible
-  When the user hovers over a card
-  Then the card should show a subtle hover effect
+- **GIVEN** the hero form is visible
+- **WHEN** the user fills in all fields and clicks "Book Appointment"
+- **THEN** a confirmation message SHALL appear
+- **AND** the form SHALL be replaced by the confirmation
 
-### Feature: About / Attorney Section
+### Requirement: Practice Areas section
 
-Scenario: About section with images renders
-  Given the user scrolls to the about section
-  Then two attorney images should be displayed side by side
-  And a headline "We Provide Highly Reliable & Effective Legal Solutions" should appear
-  And a description paragraph should follow
-  And a "Book an appointment" button should be visible
+The system SHALL render a light-background section with 6 practice area cards
+in a 3-column grid, each with an icon, title, and description.
 
-### Feature: Testimonials
+#### Scenario: Practice areas grid
 
-Scenario: Testimonials section renders
-  Given the user scrolls to the testimonials section
-  Then 3 testimonial cards should be displayed in a row
-  And each card should show an avatar image, author name, role, and a blockquote
+- **GIVEN** the user scrolls to the Practice Areas section
+- **WHEN** the section is visible
+- **THEN** 6 practice area cards SHALL be displayed
+- **AND** each card SHALL have an icon, title, and description
 
-Scenario: Testimonial card structure
-  Given a testimonial card is visible
-  Then it should display the person's circular avatar
-  And it should show their name and title
-  And it should show a quoted text in a blockquote element
+### Requirement: About section
 
-### Feature: Legal Solutions / FAQ
+The system SHALL render a two-column about section with attorney images on
+the left and a headline, description, and CTA button on the right.
 
-Scenario: Legal solutions section renders
-  Given the user scrolls to the legal solutions section
-  Then a three-column layout should appear: image left, text center, accordion right
-  And the text center column should have a headline "We Have Legal Solutions"
-  And a checklist with 3 items should be visible
+#### Scenario: About content
 
-Scenario: Accordion FAQ interaction
-  Given the accordion FAQ is visible
-  When the user clicks a FAQ header
-  Then the corresponding answer should expand
-  And other open items should collapse
+- **GIVEN** the user scrolls to the about section
+- **WHEN** the section is visible
+- **THEN** it SHALL show 2 attorney images
+- **AND** it SHALL show a headline about legal solutions
+- **AND** it SHALL have a "Book an appointment" button
 
-### Feature: Footer
+### Requirement: Testimonials section
 
-Scenario: Footer renders
-  Given the user scrolls to the footer
-  Then it should display on a dark background image
-  And it should show "About Us" text with social icon links
-  And it should show 4 link columns: Quick Links, Resources, Support, Company
-  And it should show a copyright line at the bottom
-  And the copyright should include a link to https://www.componentdock.com/
+The system SHALL render a light-background section with 3 testimonial cards
+showing avatar, name, role, and blockquote.
 
-## Verification Checklist
+#### Scenario: Testimonials grid
 
-- [ ] Navbar is sticky and renders all nav links
-- [ ] Mobile hamburger toggle works
-- [ ] Practice Areas dropdown opens on hover/click
-- [ ] Hero section has dark overlay, headline, subtitle, and form
-- [ ] Appointment form validates Name, Email, Date fields
-- [ ] Practice Areas grid shows 6 cards with icons
-- [ ] About section shows 2 attorney images + CTA
-- [ ] Testimonials show 3 cards with avatar, name, quote
-- [ ] Accordion FAQ opens/collapses correctly
-- [ ] Footer shows on dark bg with columns and social links
-- [ ] Footer links to componentdock.com
-- [ ] All design tokens match: Playfair Display + Roboto fonts, #71bc42 green, pill buttons
-- [ ] Placeholder images use picsum.photos
-- [ ] No ColorLib references in app source code
-- [ ] 100% test coverage (lines, functions, branches, statements)
+- **GIVEN** the user scrolls to the testimonials section
+- **WHEN** the section is visible
+- **THEN** 3 testimonial cards SHALL be displayed
+- **AND** each card SHALL show an avatar, author name, role, and quote
+
+### Requirement: Legal Solutions section
+
+The system SHALL render a three-column section with an image, text with
+checklist, and an accordion FAQ.
+
+#### Scenario: Legal solutions content
+
+- **GIVEN** the user scrolls to the legal solutions section
+- **WHEN** the section is visible
+- **THEN** it SHALL show the heading "We Have Legal Solutions"
+- **AND** it SHALL show a 3-item checklist
+
+#### Scenario: Accordion FAQ
+
+- **GIVEN** the accordion FAQ is visible
+- **WHEN** the user clicks a FAQ item
+- **THEN** that item SHALL expand and show its answer
+- **AND** clicking the same item again SHALL collapse it
+- **AND** clicking a different item SHALL expand it and collapse the previous one
+
+### Requirement: Footer
+
+The system SHALL render a dark-background footer with About Us text, social
+icons, 4 link columns, and a copyright line linking to Component Dock.
+
+#### Scenario: Footer content
+
+- **GIVEN** the user scrolls to the footer
+- **WHEN** the footer is displayed
+- **THEN** it SHALL show "About Us" with social icons
+- **AND** it SHALL show 4 link columns: Quick Links, Resources, Support, Company
+- **AND** it SHALL link to https://www.componentdock.com/ branded as "Component Dock"
