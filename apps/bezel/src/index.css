@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Bezel brand palette — extracted from ColorLib Watch reference:
+     - primary blue #235ee7 (CTAs, accents, icon highlights)
+     - deep navy #04091e (product catalog dark bg)
+     - surface alt #f9f9ff (alternating light sections)
+     - body text #222222, muted #777777 */
+  --color-brand: #235ee7;
+  --color-brand-dark: #1a4bc5;
+  --color-navy-deep: #04091e;
+  --color-surface-alt: #f9f9ff;
+  --color-body: #222222;
+  --color-muted: #777777;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-body);
+    -webkit-font-smoothing: antialiased;
+  }
+}
