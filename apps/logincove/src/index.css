@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Page background — light gray-blue (#f8f9fd). */
+  --color-page: #f8f9fd;
+
+  /* Card background — white. */
+  --color-card: #ffffff;
+
+  /* Primary accent — gold/amber (#e3b04b), used for button, links, focus border. */
+  --color-primary: #e3b04b;
+
+  /* Primary hover — deeper gold (#d4a040). */
+  --color-primary-hover: #d4a040;
+
+  /* Text color — black (#000000). */
+  --color-ink: #000000;
+
+  /* Caption / body text — gray (#666666). */
+  --color-caption: #666666;
+
+  /* Input border — subtle (#rgba(0,0,0,0.1)). */
+  --color-border: rgba(0, 0, 0, 0.1);
+
+  /* Social icon border — very subtle (#rgba(0,0,0,0.05)). */
+  --color-social-border: rgba(0, 0, 0, 0.05);
+
+  /* Social icon text — gray (#999999). */
+  --color-social-text: #999999;
+
+  /* Card shadow color. */
+  --color-shadow: rgba(0, 0, 0, 0.24);
+
+  /* Font: Lato via Google Fonts (loaded in index.html). */
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
