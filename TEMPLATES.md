@@ -1975,7 +1975,7 @@
 - [x] **Interior 2** — [colorlib](https://colorlib.com/wp/template/interior-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/interior2-free-template.jpg) · [plano](https://free-react-templates-plano.surge.sh)
 - [x] **Interior Design** — [colorlib](https://colorlib.com/wp/template/interior-design/) · [Mint](https://mint.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/interiordesign-free-template.jpg)
 - [x] **Kd** — [colorlib](https://colorlib.com/wp/template/kd/) · [Gable](https://gable.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kd-free-template.jpg)
-- [~] **Klift** — [colorlib](https://colorlib.com/wp/template/klift/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/klift-free-template.jpg)
+- [x] **Klift** — [colorlib](https://colorlib.com/wp/template/klift/) · [archway](https://archway.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/klift-free-template.jpg)
 - [x] **Loaft** — [colorlib](https://colorlib.com/wp/template/loaft/) · [maison](https://maison.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/loaft-free-template.jpg)
 - [x] **Mosaic** — [colorlib](https://colorlib.com/wp/template/mosaic/) · [Tessera](https://tessera.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mosaic-free-template.jpg)
 - [x] **Pastel** — [colorlib](https://colorlib.com/wp/template/pastel/) · [tint](https://tint.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pastel-free-template.jpg)
