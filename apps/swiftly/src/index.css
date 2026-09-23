@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Swiftly brand palette — recreated from ColorLib Easy design tokens:
+     brand coral #ff6363, body bg #f2f5f9, text #000839. */
+  --color-brand: #ff6363;
+  --color-brand-dark: #ff7777;
+
+  /* Ink — dark navy body text (#000839). */
+  --color-ink: #000839;
+  --color-ink-dark: #000520;
+
+  /* Paper — white section background. */
+  --color-paper: #ffffff;
+
+  /* Mist — muted secondary text. */
+  --color-mist: #6c757d;
+
+  /* Surface — light gray body background (#f2f5f9). */
+  --color-surface: #f2f5f9;
+
+  /* Primary scale for shared Button/ButtonLink primary variants. */
+  --color-primary-50: #fff0f0;
+  --color-primary-100: #ffd6d6;
+  --color-primary-200: #ffb3b3;
+  --color-primary-300: #ff8a8a;
+  --color-primary-400: #ff6363;
+  --color-primary-500: #ff4444;
+  --color-primary-600: #e03030;
+  --color-primary-700: #b82222;
+  --color-primary-800: #8c1a1a;
+  --color-primary-900: #5c1111;
+
+  /* Fonts: Montserrat for everything. */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
