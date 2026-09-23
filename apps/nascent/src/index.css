@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Nascent brand palette — orange startup aesthetic */
+  --color-orange-50: #fff7ed;
+  --color-orange-100: #ffedd5;
+  --color-orange-200: #fed7aa;
+  --color-orange-300: #fdba74;
+  --color-orange-400: #ff9100;
+  --color-orange-500: #ff9100;
+  --color-orange-600: #df7e00;
+  --color-orange-700: #c26e00;
+  --color-orange-800: #9a5700;
+  --color-orange-900: #7c4700;
+
+  --color-plum: #2d0a31;
+  --color-peach: #ffddb5;
+  --color-body: #5e5e5e;
+
+  --font-heading: 'Josefin Sans', sans-serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
