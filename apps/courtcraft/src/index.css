@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #2f89fc;
+  --color-brand-dark: #3f52e3;
+  --color-text-muted: #828282;
+  --color-overlay-dark: rgba(0, 0, 0, 0.7);
+  --color-overlay-mid: rgba(0, 0, 0, 0.5);
+  --color-overlay-light: rgba(0, 0, 0, 0.4);
+
+  --font-heading: 'Work Sans', sans-serif;
+  --font-body: 'Work Sans', sans-serif;
+  --font-sans: 'Work Sans', sans-serif;
+
+  --color-primary-500: #2f89fc;
+  --color-primary-600: #3f52e3;
+  --color-primary-700: #3446c0;
+}
