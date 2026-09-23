@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Dune brand palette — recreated from the ColorLib "Safario" design:
+     indigo/purple #6059f6 accents/buttons, headings #2a2a2a,
+     body text #888888, light bg #f8f8ff. */
+  --color-brand: #6059f6;
+  --color-brand-dark: #201aa3;
+
+  /* Ink — dark headings (#2a2a2a from the original). */
+  --color-ink: #2a2a2a;
+  --color-ink-dark: #1a1a1a;
+
+  /* Paper — light section background (#f8f8ff from the original). */
+  --color-paper: #f8f8ff;
+
+  /* Mist — muted body text (#888888 from the original). */
+  --color-mist: #888888;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the indigo brand color. */
+  --color-primary-50: #ededfe;
+  --color-primary-100: #d5d4fd;
+  --color-primary-200: #b3b1fb;
+  --color-primary-300: #908df9;
+  --color-primary-400: #7b78f8;
+  --color-primary-500: #6059f6;
+  --color-primary-600: #5047e0;
+  --color-primary-700: #3e35b8;
+  --color-primary-800: #2f2890;
+  --color-primary-900: #201aa3;
+
+  /* Original fonts: "Roboto Condensed" (headings) + "Roboto" (body). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Roboto Condensed', ui-sans-serif, system-ui, sans-serif;
+}
