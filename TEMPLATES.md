@@ -2001,7 +2001,7 @@
 - [x] **Joblisting** — [colorlib](https://colorlib.com/wp/template/joblisting/) · [hireflow](https://hireflow.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/joblisting-free-template.jpg)
 - [x] **Jobportal** — [colorlib](https://colorlib.com/wp/template/jobportal/) · [talentgate](https://talentgate.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobportal-free-template.jpg)
 - [x] **Jobpply** — [colorlib](https://colorlib.com/wp/template/jobpply/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobpply-free-template.jpg) · [jobvane](https://jobvane.free.componentdock.com)
-- [~] **Jobpro** — [colorlib](https://colorlib.com/wp/template/jobpro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobpro-free-template.jpg)
+- [x] **Jobpro** — [colorlib](https://colorlib.com/wp/template/jobpro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobpro-free-template.jpg) · [jobspot](https://jobspot.free.componentdock.com)
 -[x] **Jobsco** — [colorlib](https://colorlib.com/wp/template/jobsco/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobsco-free-template.jpg) · [jobhunt](https://jobhunt.free.componentdock.com)
 - [x] **Jobstart** — [colorlib](https://colorlib.com/wp/template/jobstart/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobstart-free-template.jpg) · [joblaunch](https://joblaunch.free.componentdock.com)
 - [x] **Skillhunt** — [colorlib](https://colorlib.com/wp/template/skillhunt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skillhunt-free-template.jpg) · [vocare](https://vocare.free.componentdock.com)
