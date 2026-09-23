@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #001d38;
+  --color-accent: #ffe8c3;
+  --color-skills-bg: #f5fbff;
+  --color-footer-border: #334a60;
+  --color-text-secondary: #999999;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
