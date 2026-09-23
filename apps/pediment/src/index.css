@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pediment brand palette — recreated from the ColorLib Staging design:
+     brand gold #dfa667, body text #111111, muted gray #707070,
+     dark footer #1b1b1b, footer muted #b7b7b7, section bg #f8f8f8,
+     border #c4c4c4. */
+
+  /* Gold — primary brand color (#dfa667). */
+  --color-brand: #dfa667;
+  --color-brand-dark: #c8903e;
+
+  /* Ink — near-black for dark sections (#1b1b1b). */
+  --color-ink: #1b1b1b;
+
+  /* Paper — light section backgrounds (#f8f8f8). */
+  --color-paper: #f8f8f8;
+
+  /* Muted text (#707070). */
+  --color-mist: #707070;
+
+  /* Footer muted (#b7b7b7). */
+  --color-footer-muted: #b7b7b7;
+
+  /* Body text (#111111). */
+  --color-body: #111111;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the gold. */
+  --color-primary-50: #fdf8f0;
+  --color-primary-100: #f9ecd8;
+  --color-primary-200: #f2d7b0;
+  --color-primary-300: #e9bd7f;
+  --color-primary-400: #dfa667;
+  --color-primary-500: #c8903e;
+  --color-primary-600: #b07a2d;
+  --color-primary-700: #936324;
+  --color-primary-800: #7a5020;
+  --color-primary-900: #65421d;
+
+  /* Fonts: Poppins (body) + Aldrich (headings). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Aldrich', ui-serif, Georgia, serif;
+}
