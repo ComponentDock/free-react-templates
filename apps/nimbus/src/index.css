@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Nimbus brand colors — from ColorLib "Saas" preview
+     (https://preview.colorlib.com/theme/saas/ + css/main.css):
+     a SaaS landing page with a blue #3bacf0 primary,
+     green #88d200 CTA buttons, light bg #f9f9ff,
+     dark navy footer #04091e, body text #777, headings #222. */
+  --color-primary-50: #e8f6fd;
+  --color-primary-100: #c5e8fa;
+  --color-primary-200: #9edaf6;
+  --color-primary-300: #6ec8f1;
+  --color-primary-400: #3bacf0;
+  --color-primary-500: #1e9be6;
+  --color-primary-600: #0f82c7;
+  --color-primary-700: #0c689e;
+  --color-primary-800: #0a5580;
+  --color-primary-900: #084568;
+
+  /* Accent green (ColorLib .primary-btn / .ticker-btn #88d200). */
+  --color-accent-300: #a8e84d;
+  --color-accent-400: #88d200;
+  --color-accent-500: #6db300;
+
+  /* Light section background (#f9f9ff). */
+  --color-mist: #f9f9ff;
+
+  /* Dark footer (#04091e). */
+  --color-navy: #04091e;
+
+  /* Body text (#777). */
+  --color-smoke: #777777;
+
+  /* Headings (#222). */
+  --color-ink: #222222;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
