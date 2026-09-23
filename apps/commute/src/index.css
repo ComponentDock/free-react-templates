@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand accent — vivid blue (#1a73e8), used for primary button and links. */
+  --color-brand: #1a73e8;
+
+  /* Brand hover — deeper blue (#1557b0). */
+  --color-brand-hover: #1557b0;
+
+  /* Card / form panel background — white. */
+  --color-card: #ffffff;
+
+  /* Input background — light gray (#f0f0f0). */
+  --color-input: #f0f0f0;
+
+  /* Text color — dark charcoal (#333333). */
+  --color-ink: #333333;
+
+  /* Subtitle / caption — medium gray (#888888). */
+  --color-caption: #888888;
+
+  /* Placeholder text — medium gray (#999999). */
+  --color-placeholder: #999999;
+
+  /* Facebook brand blue (#3b5998). */
+  --color-fb: #3b5998;
+
+  /* Twitter / X brand blue (#1da1f2). */
+  --color-twitter: #1da1f2;
+
+  /* Google brand red (#db4437). */
+  --color-google: #db4437;
+
+  /* Divider color — light gray (#e0e0e0). */
+  --color-divider: #e0e0e0;
+
+  /* Link color — blue (#1a73e8). */
+  --color-link: #1a73e8;
+
+  /* Original font: "Poppins" via Google Fonts (loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
