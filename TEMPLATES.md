@@ -2019,7 +2019,7 @@
 - [x] **Bold** — [colorlib](https://colorlib.com/wp/template/bold/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bold-free-template.jpg) · [Bold](https://bold.free.componentdock.com)
 - [x] **Book** — [colorlib](https://colorlib.com/wp/template/book/) · [liber](https://liber.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/book-free-template.jpg)
 - [x] **Booke** — [colorlib](https://colorlib.com/wp/template/booke/) · [bookcraft](https://bookcraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/booke-website-template.jpeg)
-- [ ] **Boxus** — [colorlib](https://colorlib.com/wp/template/boxus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boxus-creative-digital-agency-free-website-template.jpg)
+- [~] **Boxus** — [colorlib](https://colorlib.com/wp/template/boxus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boxus-creative-digital-agency-free-website-template.jpg)
 - [x] **Bulkapp** — [colorlib](https://colorlib.com/wp/template/bulkapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bulkapp-free-template.jpg) · [Bulkapp](https://bulkapp.free.componentdock.com)
 - [x] **Ca App** — [colorlib](https://colorlib.com/wp/template/ca-app/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ca-app-showcase-website-template.jpg)
 - [x] **Callcenter** — [colorlib](https://colorlib.com/wp/template/callcenter/) · [dialpad](https://dialpad.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/callcenter-free-call-center-website-template.jpg)
