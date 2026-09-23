@@ -1,4 +1,3 @@
-import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
@@ -19,6 +18,7 @@ function injectUiSource() {
     },
   }
 }
+import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [react(), injectUiSource(), tailwindcss()],

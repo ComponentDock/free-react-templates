@@ -27,8 +27,7 @@
     "jsdom": "latest",
     "tailwindcss": "latest",
     "typescript": "latest",
-    "vite": "latest",
-    "vitest": "latest"
+    "vite": "latest"
   },
   "homepage": "https://atelier.free.componentdock.com"
 }

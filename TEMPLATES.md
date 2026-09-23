@@ -2032,7 +2032,7 @@
 - [x] **Crafted** — [colorlib](https://colorlib.com/wp/template/crafted/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/crafted-free-template.jpg) · [Crafted](https://crafted.free.componentdock.com)
 - [x] **Creative Agency** — [colorlib](https://colorlib.com/wp/template/creative-agency/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/free-creative-agency-website-template.jpg) · [vivid](https://vivid.free.componentdock.com)
 - [x] **Datarc** — [colorlib](https://colorlib.com/wp/template/datarc/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/datarc-digital-agency-free-website-template.jpg) · [bytecraft](https://bytecraft.free.componentdock.com)
-- [ ] **Design** — [colorlib](https://colorlib.com/wp/template/design/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/design-free-template.jpg)
+- [~] **Design** — [colorlib](https://colorlib.com/wp/template/design/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/design-free-template.jpg)
 - [ ] **Digilab** — [colorlib](https://colorlib.com/wp/template/digilab/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/digilab-free-template.jpg)
 - [ ] **Dinomuz** — [colorlib](https://colorlib.com/wp/template/dinomuz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dinomuz-free-creative-website-template.jpg)
 - [x] **Dizzi** — [colorlib](https://colorlib.com/wp/template/dizzi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dizzi-free-template.jpg) · [doflo](https://doflo.free.componentdock.com)
