@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Modus brand palette — recreated from the ColorLib "Interd" design.
+     Peach-to-salmon gradient #ff8a7a → #ffc99e, navy headings #232F55,
+     salmon accent #F8BDB5, light section bg #f9f9ff. */
+  --color-brand: #ff8a7a;
+  --color-brand-dark: #e07060;
+  --color-salmon: #ffc99e;
+  --color-salmon-light: #ffd4b0;
+
+  /* Ink — navy headings (#232F55 from the original). */
+  --color-ink: #232f55;
+  --color-ink-dark: #1a2240;
+
+  /* Soapstone — light section background (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Lavender — secondary light section background (#f0e9ff). */
+  --color-lavender: #f0e9ff;
+
+  /* Mist — muted body text (#999999 from the original). */
+  --color-mist: #999999;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand gradient. */
+  --color-primary-50: #fff5f0;
+  --color-primary-100: #ffe8de;
+  --color-primary-200: #ffc8b4;
+  --color-primary-300: #ffa58a;
+  --color-primary-400: #ff8a7a;
+  --color-primary-500: #ff7060;
+  --color-primary-600: #e05a4a;
+  --color-primary-700: #c04a3a;
+  --color-primary-800: #a03a2a;
+  --color-primary-900: #802a1a;
+
+  /* Fonts — Heebo for headings, Mulish for body. */
+  --font-sans: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Heebo', ui-sans-serif, system-ui, sans-serif;
+}
