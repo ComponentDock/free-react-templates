@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Primary accent — blue (#4a90d9), used for Login button, user icon circle, checkbox, and links. */
+  --color-primary: #4a90d9;
+
+  /* Primary hover — deeper blue (#3a7bc8). */
+  --color-primary-hover: #3a7bc8;
+
+  /* Page background — very light gray-blue (#f0f2f5). */
+  --color-page: #f0f2f5;
+
+  /* Card background — white (#ffffff). */
+  --color-card: #ffffff;
+
+  /* Text color — dark gray (#333333). */
+  --color-ink: #333333;
+
+  /* Subtitle / caption — light gray (#999999). */
+  --color-caption: #999999;
+
+  /* Input border — light gray (#e0e0e0). */
+  --color-input-border: #e0e0e0;
+
+  /* Link / forgot password — blue (#4a90d9). */
+  --color-link: #4a90d9;
+
+  /* Font: Roboto via Google Fonts (loaded in index.html). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
