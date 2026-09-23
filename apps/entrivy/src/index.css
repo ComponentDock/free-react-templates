@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand accent — purple (#6c63ff), used for primary button and checkbox. */
+  --color-brand: #6c63ff;
+
+  /* Brand hover — deeper purple (#5a52d5). */
+  --color-brand-hover: #5a52d5;
+
+  /* Page background — light gray-blue (#f8fafb). */
+  --color-page: #f8fafb;
+
+  /* Form field background — light gray (#edf2f5). */
+  --color-field: #edf2f5;
+
+  /* Field border — subtle gray (#e6edf1). */
+  --color-field-border: #e6edf1;
+
+  /* Text color — dark (#333333). */
+  --color-ink: #333333;
+
+  /* Subtitle / caption — medium gray (#b3b3b3). */
+  --color-caption: #b3b3b3;
+
+  /* Link / forgot password — medium gray (#888888). */
+  --color-link: #888888;
+
+  /* Facebook brand blue (#3b5998). */
+  --color-fb: #3b5998;
+
+  /* Twitter brand blue (#1da1f2). */
+  --color-twitter: #1da1f2;
+
+  /* Google brand red (#ea4335). */
+  --color-google: #ea4335;
+
+  /* Font: Roboto via Google Fonts (loaded in index.html). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
