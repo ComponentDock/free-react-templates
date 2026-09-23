@@ -2065,7 +2065,7 @@
 - [x] **Mobapp** — [colorlib](https://colorlib.com/wp/template/mobapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/MobApp-free-one-mobile-app-landing-page.jpg) · [taply](https://taply.free.componentdock.com)
 - [x] **Mosh** — [colorlib](https://colorlib.com/wp/template/mosh/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mosh-free-template.jpg) · [Mosh](https://mosh.free.componentdock.com)
 - [x] **Nexus** — [colorlib](https://colorlib.com/wp/template/nexus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nexus-free-template.jpg) · [synapse](https://synapse.free.componentdock.com)
-- [ ] **Noah** — [colorlib](https://colorlib.com/wp/template/noah/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/noah-free-personal-vcard-website-template.jpg)
+- [~] **Noah** — [colorlib](https://colorlib.com/wp/template/noah/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/noah-free-personal-vcard-website-template.jpg)
 - [x] **Noxen** — [colorlib](https://colorlib.com/wp/template/noxen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/noxen-free-template.jpg) · [emblem](https://emblem.free.componentdock.com)
 - [x] **One Page Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/one-page-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/one-page-wordpress-themes-2.jpg) · [onepage](https://onepage.free.componentdock.com)
 - [x] **Onepro** — [colorlib](https://colorlib.com/wp/template/onepro/) · [zenflow](https://zenflow.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/onepro-free-template.jpg)

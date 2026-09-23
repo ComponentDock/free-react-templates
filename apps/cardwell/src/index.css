@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Cardwell brand purple — the accent color. */
+  --color-brand: #ca82f8;
+
+  /* Body background. */
+  --color-body-bg: #fafafa;
+
+  /* Headings color. */
+  --color-heading: rgba(0, 0, 0, 0.8);
+
+  /* Watermark text behind sections. */
+  --color-watermark: #f0f0f0;
+
+  /* Karla body / Playfair Display headings — via Google Fonts (loaded in index.html). */
+  --font-body: 'Karla', Arial, sans-serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
+
+  --font-sans: 'Karla', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-body-bg);
+    color: var(--color-heading);
+  }
+}
