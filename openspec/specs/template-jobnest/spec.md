@@ -2,7 +2,11 @@
 
 ## Purpose
 
-Recreation of ColorLib's **Job Board 2** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
+JobNest is a single-page job board landing page in the free-react-templates
+monorepo. It is an original React recreation of the ColorLib "Job Board 2"
+free template (source: https://colorlib.com/wp/template/job-board-2/),
+built under a DIFFERENT name (**JobNest**), with the monorepo stack:
+Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 - **Source:** https://colorlib.com/wp/template/job-board-2/
 - **Preview:** https://preview.colorlib.com/theme/jobboard2/
@@ -14,224 +18,222 @@ Recreation of ColorLib's **Job Board 2** template as a React 19 + Vite + Tailwin
 
 ## Design tokens
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Brand color | `#00D363` | Green — primary buttons, accents, overlays |
-| Brand hover | `#00B856` | Slightly darker green on hover (outlined state) |
-| Text primary | `#222222` | Dark grey for body copy |
-| Text secondary | `#495057` | Medium grey for descriptions |
-| Text muted | `#777777` | Light grey for meta text |
-| Text on dark | `#ffffff` | White text on hero/footer backgrounds |
-| Background light | `#F5F7FA` | Light grey section backgrounds (job listings, featured candidates, top companies) |
-| Background card | `#ffffff` | White cards on light sections |
-| Dark background | `#001D38` | Dark navy — footer background |
-| Dark overlay | `#040E27` | Darker navy — CTA overlay background |
-| CTA background | `#2B9BFF` | Blue — job search CTA banner |
-| Border light | `#EAEAEA` | Light border on job listing cards |
-| Font family | `"Roboto", sans-serif` | Google Font — load via `<link>` in index.html |
-| Border radius | `5px` | Cards, buttons, category tiles |
-| Button primary | Solid green `#00D363`, white text, `5px` radius, `padding: 13px 29px` | `.boxed-btn3` — primary CTA |
-| Button primary hover | Transparent with green border (`#00D363`), green text | Outlined reversal |
-| Button secondary | Outlined, green border, green text, same padding | `.boxed-btn4` — "Browse More Job" |
-| Banner background | `url(../img/banner/banner.png)` no-repeat center | Hero section background image |
-| Shadow | `0 5px 15px rgba(0,0,0,0.08)` | Card hover lift |
-| Candidate avatar | `120px` circle | Rounded candidate photos |
+| Token                | Value                                                                 | Notes                                                                             |
+| -------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Brand color          | `#00D363`                                                             | Green — primary buttons, accents, overlays                                        |
+| Brand hover          | `#00B856`                                                             | Slightly darker green on hover (outlined state)                                   |
+| Text primary         | `#222222`                                                             | Dark grey for body copy                                                           |
+| Text secondary       | `#495057`                                                             | Medium grey for descriptions                                                      |
+| Text muted           | `#777777`                                                             | Light grey for meta text                                                          |
+| Text on dark         | `#ffffff`                                                             | White text on hero/footer backgrounds                                             |
+| Background light     | `#F5F7FA`                                                             | Light grey section backgrounds (job listings, featured candidates, top companies) |
+| Background card      | `#ffffff`                                                             | White cards on light sections                                                     |
+| Dark background      | `#001D38`                                                             | Dark navy — footer background                                                     |
+| Dark overlay         | `#040E27`                                                             | Darker navy — CTA overlay background                                              |
+| CTA background       | `#2B9BFF`                                                             | Blue — job search CTA banner                                                      |
+| Border light         | `#EAEAEA`                                                             | Light border on job listing cards                                                 |
+| Font family          | `"Roboto", sans-serif`                                                | Google Font — load via `<link>` in index.html                                     |
+| Border radius        | `5px`                                                                 | Cards, buttons, category tiles                                                    |
+| Button primary       | Solid green `#00D363`, white text, `5px` radius, `padding: 13px 29px` | Primary CTA                                                                       |
+| Button primary hover | Transparent with green border (`#00D363`), green text                 | Outlined reversal                                                                 |
+| Button secondary     | Outlined, green border, green text, same padding                      | "Browse More Job"                                                                 |
+| Shadow               | `0 5px 15px rgba(0,0,0,0.08)`                                         | Card hover lift                                                                   |
+| Candidate avatar     | `120px` circle                                                        | Rounded candidate photos                                                          |
 
-## Section structure (page order)
+## Requirements
 
-1. **Navbar** — Sticky header: logo left, nav links center (Home, Browse Job, Pages dropdown, Blog dropdown, Contact), right side has "Log in" text link + "Post a Job" green button. Mobile hamburger.
-2. **Hero** — Full-width background image (banner.png), left-aligned text: "4536+ Jobs listed" subhead, "Find your Dream Job" headline, descriptive paragraph, "Upload your Resume" green button. Right-side illustration (d-none on mobile).
-3. **Job Search Bar** — Green-tinted area with 4-column form: keyword text input, location select, category select, "Find Job" green button. Below: "Popular Search:" tag list (Design & Creative, Marketing, Administration, etc.).
-4. **Popular Categories** — 8 category cards in a 4-column grid, white background, `5px` border-radius, each with category name + position count (e.g. "Design & Creative — 50 Available position").
-5. **Job Listings** — Light grey background, "Job Listing" heading + "Browse More Job" secondary button. List of job cards (white, `5px` radius, flex row): company SVG icon left, job title + location + type, right side has heart icon + "Apply Now" button + deadline date.
-6. **Featured Candidates** — Light grey background, carousel of candidate cards: round avatar photo, name, role title.
-7. **Top Companies** — Light grey background, "Top Companies" heading + "Browse More Job" button. 4-column grid of company cards: company SVG icon, company name, position count.
-8. **CTA Banner** — Blue background (`#2B9BFF`), two-column layout: "Looking for a Job?" with "Browse Job" button | "Looking for a Expert?" with "Post a Job" button.
-9. **Testimonials** — White/light background, carousel of testimonials: author avatar (round), quote icon, testimonial text, author name.
-10. **Footer** — Dark navy (`#001D38`) background. 4 columns: Logo + contact info + social icons | Company links | Category links | Newsletter form (email input + Subscribe button). Copyright bar at bottom with Component Dock link.
+### Requirement: Navbar displays brand and navigation
 
-## Gherkin requirements
+The navbar SHALL display the JobNest brand logo, navigation links (Home, Browse Job, Pages, Blog, Contact), a "Log in" text link, and a "Post a Job" green button. The navbar SHALL be sticky at the top of the viewport. When the user scrolls past the hero, the navbar SHALL gain a shadow. On viewports under 1024px, the nav links SHALL be hidden and a hamburger icon SHALL be visible. Tapping the hamburger SHALL toggle the mobile menu open/closed.
 
-### Navbar
+#### Scenario: Navbar renders brand and links
 
-```gherkin
-Scenario: Navbar displays brand and navigation links
-  Given the user visits the page
-  Then the navbar shows the brand logo
-  And it has links: Home, Browse Job, Pages, Blog, Contact
-  And a "Log in" link and "Post a Job" button are visible on the right
+- **WHEN** the user visits the page
+- **THEN** the navbar SHALL show the brand logo text "JobNest"
+- **AND** it SHALL have links: Home, Browse Job, Pages, Blog, Contact
+- **AND** a "Log in" link and "Post a Job" button SHALL be visible on the right
 
-Scenario: Navbar is sticky on scroll
-  Given the user scrolls past the hero
-  Then the navbar remains fixed at the top
+#### Scenario: Navbar is sticky on scroll
 
-Scenario: Mobile hamburger menu
-  Given the viewport is under 1024px wide
-  Then the nav links are hidden
-  And a hamburger icon is visible
-  When the user taps the hamburger
-  Then the mobile menu opens
-```
+- **WHEN** the user scrolls past the hero
+- **THEN** the navbar SHALL remain fixed at the top of the viewport
 
-### Hero
+#### Scenario: Mobile hamburger menu
 
-```gherkin
-Scenario: Hero displays headline and CTA
-  Given the user visits the page
-  Then a job count subheading is visible (e.g. "4536+ Jobs listed")
-  And the main headline "Find your Dream Job" is visible
-  And an "Upload your Resume" button is present
+- **WHEN** the viewport is under 1024px wide
+- **THEN** the nav links SHALL be hidden
+- **AND** a hamburger icon SHALL be visible
+- **WHEN** the user taps the hamburger
+- **THEN** the mobile menu SHALL open with nav links visible
 
-Scenario: Hero background image loads
-  Given the user visits the page
-  Then the hero section has a background image
-```
+### Requirement: Hero displays headline and CTA
 
-### Job Search Bar
+The hero section SHALL display a job count subheading (e.g. "4536+ Jobs listed"), the main headline "Find your Dream Job", a descriptive paragraph, and an "Upload your Resume" green button. The hero SHALL have a dark gradient background image.
 
-```gherkin
-Scenario: Search bar shows all filter inputs
-  Given the user visits the page
-  Then a keyword text input is visible
-  And a location dropdown is visible
-  And a category dropdown is visible
-  And a "Find Job" button is present
+#### Scenario: Hero displays headline and CTA
 
-Scenario: Popular search tags display
-  Given the user visits the page
-  Then "Popular Search:" label is visible
-  And category tags are shown (Design & Creative, Marketing, etc.)
+- **WHEN** the user visits the page
+- **THEN** a job count subheading SHALL be visible
+- **AND** the main headline "Find your Dream Job" SHALL be visible
+- **AND** an "Upload your Resume" button SHALL be present
 
-Scenario: Search form prevents default submit
-  Given the user clicks "Find Job" without filling fields
-  Then the form does not navigate away
-```
+### Requirement: Job search bar with filters
 
-### Popular Categories
+The job search bar SHALL show a keyword text input, a location select dropdown, a category select dropdown, and a "Find Job" green button in a 4-column responsive grid. Below the form, popular search tags SHALL be displayed (Design & Creative, Marketing, Administration, Customer Service, Finance, Teaching). The form SHALL prevent default submission.
 
-```gherkin
-Scenario: Category grid displays 8 categories
-  Given the user visits the page
-  Then 8 category cards are displayed
-  And each card shows a category name and position count
+#### Scenario: Search bar shows all filter inputs
 
-Scenario: Category cards are clickable
-  Given the user clicks a category card
-  Then the page does not navigate (placeholder link)
-```
+- **WHEN** the user visits the page
+- **THEN** a keyword text input SHALL be visible
+- **AND** a location dropdown SHALL be visible
+- **AND** a category dropdown SHALL be visible
+- **AND** a "Find Job" button SHALL be present
 
-### Job Listings
+#### Scenario: Popular search tags display
 
-```gherkin
-Scenario: Job listing section displays heading
-  Given the user visits the page
-  Then "Job Listing" heading is visible
-  And a "Browse More Job" button is present
+- **WHEN** the user visits the page
+- **THEN** "Popular Search:" label SHALL be visible
+- **AND** category tags SHALL be shown
 
-Scenario: Job cards show required info
-  Given the user views the job listing section
-  Then at least 5 job cards are displayed
-  And each card shows: company icon, job title, location, job type, Apply Now button, deadline
+#### Scenario: Search form prevents default submit
 
-Scenario: Job cards have favorite button
-  Given the user views a job card
-  Then a heart icon (favorite) button is visible
+- **WHEN** the user clicks "Find Job" without filling fields
+- **THEN** the form SHALL NOT navigate away
 
-Scenario: Job card hover effect
-  Given the user hovers over a job card
-  Then the card has a subtle border/shadow transition
-```
+### Requirement: Popular categories grid
 
-### Featured Candidates
+The popular categories section SHALL display 8 category cards in a 4-column responsive grid. Each card SHALL show a category icon, category name, and position count (e.g. "50 Available position"). Cards SHALL be white with rounded corners and shadow.
 
-```gherkin
-Scenario: Featured candidates carousel renders
-  Given the user visits the page
-  Then a "Featured Candidates" heading is visible
-  And a carousel of candidate cards is displayed
-  And each card shows: avatar, name, role
+#### Scenario: Category grid displays 8 categories
 
-Scenario: Candidate avatars are circular
-  Given the user views a candidate card
-  Then the avatar image is displayed in a circle shape
-```
+- **WHEN** the user visits the page
+- **THEN** 8 category cards SHALL be displayed
+- **AND** each card SHALL show a category name and position count
 
-### Top Companies
+### Requirement: Job listings section
 
-```gherkin
-Scenario: Top companies section renders
-  Given the user visits the page
-  Then a "Top Companies" heading is visible
-  And a "Browse More Job" button is present
-  And company cards are displayed in a grid
+The job listings section SHALL display a "Job Listing" heading, a "Browse More Job" outlined button, and at least 5 job cards. Each card SHALL show a company icon, job title, location, job type, heart icon (favorite button), "Apply Now" button, and deadline date. Cards SHALL have hover effects.
 
-Scenario: Company cards show info
-  Given the user views a company card
-  Then it shows: company icon, company name, position count
-```
+#### Scenario: Job listing section displays heading
 
-### CTA Banner
+- **WHEN** the user visits the page
+- **THEN** "Job Listing" heading SHALL be visible
+- **AND** a "Browse More Job" button SHALL be present
 
-```gherkin
-Scenario: CTA banner shows two CTAs
-  Given the user visits the page
-  Then a blue background banner is visible
-  And "Looking for a Job?" with "Browse Job" button is shown
-  And "Looking for a Expert?" with "Post a Job" button is shown
+#### Scenario: Job cards show required info
 
-Scenario: CTA buttons are green
-  Given the user views the CTA banner
-  Then both buttons use the brand green color
-```
+- **WHEN** the user views the job listing section
+- **THEN** at least 5 job cards SHALL be displayed
+- **AND** each card SHALL show: company icon, job title, location, job type, Apply Now button, deadline
 
-### Testimonials
+#### Scenario: Job cards have favorite button
 
-```gherkin
-Scenario: Testimonial carousel renders
-  Given the user visits the page
-  Then a "Testimonial" heading is visible
-  And a carousel of testimonial cards is displayed
-  And each card shows: author avatar, quote icon, testimonial text, author name
+- **WHEN** the user views a job card
+- **THEN** a heart icon (favorite) button SHALL be visible
 
-Scenario: Testimonial avatars are circular
-  Given the user views a testimonial card
-  Then the author avatar is displayed in a circle shape
-```
+### Requirement: Featured candidates carousel
 
-### Footer
+The featured candidates section SHALL display a "Featured Candidates" heading and a horizontal scrollable carousel of candidate cards. Each card SHALL show a circular avatar, name, and role title.
 
-```gherkin
-Scenario: Footer displays all columns
-  Given the user visits the page
-  Then a dark-background footer is visible
-  And it contains: logo + contact info, Company links, Category links, Newsletter form
-  And social media icons are present (Facebook, Google+, Twitter, Instagram)
+#### Scenario: Featured candidates carousel renders
 
-Scenario: Newsletter form exists
-  Given the user views the footer
-  Then an email input with placeholder "Enter your mail" is visible
-  And a "Subscribe" button is present
+- **WHEN** the user visits the page
+- **THEN** a "Featured Candidates" heading SHALL be visible
+- **AND** a carousel of candidate cards SHALL be displayed
+- **AND** each card SHALL show: avatar, name, role
 
-Scenario: Footer has Component Dock attribution
-  Given the user views the footer copyright bar
-  Then a link to componentdock.com is present
-  And no ColorLib attribution is shown
-```
+### Requirement: Top companies section
 
-## Verification checklist
+The top companies section SHALL display a "Top Companies" heading, a "Browse More Job" button, and company cards in a 4-column responsive grid. Each card SHALL show a company icon, company name, and position count.
 
-- [ ] Navbar: sticky, logo, nav links, login + post button, mobile hamburger
-- [ ] Hero: background image, headline, subtext, CTA button
-- [ ] Job Search: keyword input, location/category dropdowns, find button, popular tags
-- [ ] Popular Categories: 8 cards in grid, name + position count
-- [ ] Job Listings: heading, browse button, 5+ job cards with all fields
-- [ ] Featured Candidates: carousel with avatar/name/role cards
-- [ | ] Top Companies: heading, browse button, company cards grid
-- [ ] CTA Banner: blue background, two-column layout, green buttons
-- [ ] Testimonials: carousel with avatar, quote, name
-- [ ] Footer: dark navy, 4 columns, social icons, newsletter, Component Dock link
-- [ ] Design tokens: brand green `#00D363`, Roboto font, 5px radius, light grey sections
-- [ ] Responsive: mobile hamburger, stacked layouts on small screens
-- [ ] No ColorLib references in app code
-- [ ] `public/CNAME` contains `jobnest.free.componentdock.com`
-- [ ] Footer links to `https://www.componentdock.com/`
+#### Scenario: Top companies section renders
+
+- **WHEN** the user visits the page
+- **THEN** a "Top Companies" heading SHALL be visible
+- **AND** a "Browse More Job" button SHALL be present
+- **AND** company cards SHALL be displayed in a grid
+
+### Requirement: CTA banner with dual calls to action
+
+The CTA banner SHALL display a blue (#2B9BFF) background with two columns: "Looking for a Job?" with a "Browse Job" green button, and "Looking for a Expert?" with a "Post a Job" green button.
+
+#### Scenario: CTA banner shows two CTAs
+
+- **WHEN** the user visits the page
+- **THEN** a blue background banner SHALL be visible
+- **AND** "Looking for a Job?" with "Browse Job" button SHALL be shown
+- **AND** "Looking for a Expert?" with "Post a Job" button SHALL be shown
+
+### Requirement: Testimonials section
+
+The testimonials section SHALL display a "Testimonial" heading and a horizontal scrollable carousel of testimonial cards. Each card SHALL show a circular author avatar, quote icon, testimonial text, and author name.
+
+#### Scenario: Testimonial carousel renders
+
+- **WHEN** the user visits the page
+- **THEN** a "Testimonial" heading SHALL be visible
+- **AND** a carousel of testimonial cards SHALL be displayed
+- **AND** each card SHALL show: author avatar, quote icon, testimonial text, author name
+
+### Requirement: Footer with columns and newsletter
+
+The footer SHALL display a dark navy (#001D38) background with 4 columns: logo + description + social icons, Company links, Category links, and Newsletter form (email input + Subscribe button). The copyright bar SHALL contain a link to https://www.componentdock.com/ branded as "Component Dock". No ColorLib attribution SHALL appear.
+
+#### Scenario: Footer displays all columns
+
+- **WHEN** the user views the footer
+- **THEN** a dark-background footer SHALL be visible
+- **AND** it SHALL contain: logo + social icons, Company links, Category links, Newsletter form
+
+#### Scenario: Newsletter form exists
+
+- **WHEN** the user views the footer
+- **THEN** an email input SHALL be visible
+- **AND** a "Subscribe" button SHALL be present
+
+#### Scenario: Footer has Component Dock attribution
+
+- **WHEN** the user views the footer copyright bar
+- **THEN** a link to componentdock.com SHALL be present
+- **AND** no ColorLib attribution SHALL be shown
+
+### Requirement: Design token compliance
+
+The template SHALL use brand green #00D363 for primary buttons and accents, Roboto font family, 5px border radius on cards and buttons, and light grey (#F5F7FA) section backgrounds for job listings, featured candidates, and top companies sections.
+
+#### Scenario: Design tokens applied
+
+- **WHEN** the user views any section
+- **THEN** brand green buttons SHALL use #00D363
+- **AND** the Roboto font SHALL be loaded via Google Fonts
+- **AND** cards SHALL have 5px border radius
+
+### Requirement: Responsive layout
+
+The template SHALL be responsive: mobile hamburger menu, stacked layouts on small screens, 4-column grids that collapse to 2 or 1 column on smaller viewports.
+
+#### Scenario: Responsive layouts
+
+- **WHEN** the viewport is under 768px wide
+- **THEN** category grids SHALL collapse to 1 column
+- **AND** job cards SHALL stack vertically
+- **AND** footer columns SHALL stack vertically
+
+### Requirement: No ColorLib references in app code
+
+The template SHALL NOT reference "colorlib" anywhere in apps/jobnest source files, comments, or data. ColorLib provenance SHALL exist ONLY in the spec, TEMPLATES.md, and the PR.
+
+#### Scenario: No ColorLib strings in app
+
+- **WHEN** searching apps/jobnest for "colorlib"
+- **THEN** zero matches SHALL be found
+
+### Requirement: Footer links to Component Dock
+
+Every template's footer MUST link https://www.componentdock.com/ branded as "Component Dock".
+
+#### Scenario: Component Dock link present
+
+- **WHEN** the user views the footer
+- **THEN** a link to https://www.componentdock.com/ SHALL be present
+- **AND** the link text SHALL include "Component Dock"
