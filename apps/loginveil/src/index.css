@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette: #b96b9f purple-mauve. */
+  --color-primary: #b96b9f;
+  --color-primary-hover: #a85a8e;
+
+  /* Page background: #f8f9fd light blue-gray. */
+  --color-page: #f8f9fd;
+
+  /* Card background: white. */
+  --color-card: #ffffff;
+
+  /* Submit button: #17223b dark navy. */
+  --color-btn: #17223b;
+  --color-btn-hover: #17223b;
+
+  /* Text: black. */
+  --color-ink: #000000;
+
+  /* Input border: subtle. */
+  --color-border: rgba(0, 0, 0, 0.1);
+
+  /* Social icon text: brand color on white. */
+  --color-social-bg: #ffffff;
+  --color-social-text: #b96b9f;
+
+  /* Card shadow. */
+  --color-shadow: rgba(0, 0, 0, 0.24);
+
+  /* Font: Lato via Google Fonts. */
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
