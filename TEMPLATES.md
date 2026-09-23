@@ -2048,7 +2048,7 @@
 - [x] **Evento** — [colorlib](https://colorlib.com/wp/template/evento/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/evento-free-template.jpg) · [gathr](https://gathr.free.componentdock.com)
 - [x] **Fancy** — [colorlib](https://colorlib.com/wp/template/fancy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fancy-free-creative-business-website-template.jpg) · [flair](https://flair.free.componentdock.com)
 - [x] **Finlone** — [colorlib](https://colorlib.com/wp/template/finlone/) · [capitex](https://capitex.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/finlone-free-template.jpg)
-- [ ] **Five Star** — [colorlib](https://colorlib.com/wp/template/five-star/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/five-star-art-crafting-website-template.jpg)
+- [~] **Five Star** — [colorlib](https://colorlib.com/wp/template/five-star/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/five-star-art-crafting-website-template.jpg)
 - [x] **Gaas** — [colorlib](https://colorlib.com/wp/template/gaas/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gaas-free-template.jpg) · [Gaas](https://gaas.free.componentdock.com)
 - [x] **Glint** — [colorlib](https://colorlib.com/wp/template/glint/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/glint-simple-website-template.jpeg) · [glint](https://free-react-templates-glint.surge.sh)
 - [x] **Go Crepe** — [colorlib](https://colorlib.com/wp/template/go-crepe/) · [batter](https://batter.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/go-crepe-creative-digital-agency-website-template.jpg)
