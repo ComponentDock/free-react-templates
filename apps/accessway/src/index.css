@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Page background — white. */
+  --color-page: #ffffff;
+
+  /* Card background — deep navy (#000232). */
+  --color-card: #000232;
+
+  /* Primary accent — Bootstrap blue (#007bff), used for button. */
+  --color-primary: #007bff;
+
+  /* Primary hover — deeper blue (#0056b3). */
+  --color-primary-hover: #0056b3;
+
+  /* Text on dark card — white. */
+  --color-ink: #ffffff;
+
+  /* Caption text — white 50% opacity. */
+  --color-caption: rgba(255, 255, 255, 0.5);
+
+  /* Input border — subtle white. */
+  --color-border: rgba(255, 255, 255, 0.2);
+
+  /* Card shadow color. */
+  --color-shadow: rgba(0, 0, 0, 0.24);
+
+  /* Font: Lato via Google Fonts (loaded in index.html). */
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
