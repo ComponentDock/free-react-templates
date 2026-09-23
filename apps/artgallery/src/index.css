@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-playfair: 'Playfair Display', serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --color-accent: #7ec843;
+  --color-accent-dark: #6ab535;
+  --color-navy: #1a2b3c;
+  --color-navy-light: #243a50;
+  --color-body: #333333;
+  --color-muted: #777777;
+  --color-light-bg: #f5f5f5;
+  --color-white: #ffffff;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-poppins);
+    color: var(--color-body);
+  }
+}
