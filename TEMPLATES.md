@@ -1970,7 +1970,7 @@
 - [x] **Heaven** — [colorlib](https://colorlib.com/wp/template/heaven/) · [terracotta](https://terracotta.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/heaven-free-template.jpg)
 - [x] **Hexa** — [colorlib](https://colorlib.com/wp/template/hexa/) · [polygon](https://free-react-templates-polygon.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hexa-free-template.jpg)
 - [x] **Ideal** — [colorlib](https://colorlib.com/wp/template/ideal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ideal-free-template.jpg) · [paragon](https://paragon.free.componentdock.com)
-- [~] **Interd** — [colorlib](https://colorlib.com/wp/template/interd/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/interd-free-template.jpg)
+- [x] **Interd** — [colorlib](https://colorlib.com/wp/template/interd/) · [modus](https://modus.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/interd-free-template.jpg)
 - [x] **Interior** — [colorlib](https://colorlib.com/wp/template/interior/) · [Foyer](https://foyer.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/interior-free-template-1.jpg)
 - [ ] **Interior 2** — [colorlib](https://colorlib.com/wp/template/interior-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/interior2-free-template.jpg)
 - [x] **Interior Design** — [colorlib](https://colorlib.com/wp/template/interior-design/) · [Mint](https://mint.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/interiordesign-free-template.jpg)
