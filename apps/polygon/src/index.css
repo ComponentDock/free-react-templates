@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Polygon brand palette — recreated from the ColorLib "Hexa" design:
+     orange-red #e74208 accents/buttons, dark #262626 navbar/footer,
+     light #f8f9fa alternating sections. */
+  --color-brand: #e74208;
+  --color-brand-dark: #c23707;
+  --color-brand-light: #fa9774;
+
+  --color-ink: #212529;
+  --color-ink-dark: #16181b;
+
+  --color-paper: #f8f9fa;
+  --color-mist: #6c757d;
+
+  --color-primary-50: #fff4ed;
+  --color-primary-100: #ffe6d5;
+  --color-primary-200: #ffc8aa;
+  --color-primary-300: #fa9774;
+  --color-primary-400: #f06a36;
+  --color-primary-500: #e74208;
+  --color-primary-600: #c23707;
+  --color-primary-700: #b63406;
+  --color-primary-800: #8a2605;
+  --color-primary-900: #6b1e04;
+
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
