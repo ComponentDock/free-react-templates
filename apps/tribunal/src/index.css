@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #f96d00;
+  --color-brand-dark: #d45800;
+  --color-brand-darker: #1a1a2e;
+  --color-hero-overlay: #212529;
+  --color-text-heading: #1a1a2e;
+  --color-text-body: #333333;
+  --color-text-muted: #6c757d;
+  --color-bg-light: #f8f9fa;
+  --color-footer-bg: #1a1a2e;
+
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+}
