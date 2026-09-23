@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand indigo — primary button color. */
+  --color-brand: #4f46e5;
+
+  /* Card / panel white. */
+  --color-card: #ffffff;
+
+  /* Form background — light gray from the original design. */
+  --color-form-bg: #f6f7fc;
+
+  /* Input border color — light gray. */
+  --color-border: #d1d5db;
+
+  /* Placeholder / label text color — medium gray. */
+  --color-placeholder: #6b7280;
+
+  /* Input text / heading color — dark gray. */
+  --color-ink: #1f2937;
+
+  /* Subtitle text — muted. */
+  --color-muted: #4b5563;
+
+  /* Paragraph text from original design. */
+  --color-paragraph: #b3b3b3;
+
+  /* Link text from original design. */
+  --color-link: #888;
+
+  /* Orange checkbox color from original design. */
+  --color-checkbox: #fb771a;
+
+  /* Original font: "Roboto" via Google Fonts (loaded in index.html). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

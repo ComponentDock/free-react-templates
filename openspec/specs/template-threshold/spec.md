@@ -1,111 +1,114 @@
-# Threshold — Login Form Template
+# Template: Threshold
 
-> Recreation of [ColorLib Login Form 02](https://colorlib.com/wp/template/login-form-02/).
+**Original:** ColorLib Login Form 02 (https://colorlib.com/wp/template/login-form-02/)
+**Preview:** https://preview.colorlib.com/theme/bootstrap/login-form-02/
+**New name:** Threshold
 
-## Preview
+## Purpose
 
-- **Original**: https://colorlib.com/wp/template/login-form-02/
-- **Preview**: https://preview.colorlib.com/theme/bootstrap/login-form-02/
+Threshold provides a 50/50 split-screen login form template with a light form panel on the left and a full-height decorative image on the right. It uses the Roboto font (weights 300, 400) and a distinctive orange (#fb771a) checkbox accent. Designed for authentication pages that need a modern, minimal aesthetic with visual depth.
 
-## Design Tokens
+## Requirements
 
-| Token                      | Value                                      |
-| -------------------------- | ------------------------------------------ |
-| Font                       | Roboto (weights 300, 400) via Google Fonts |
-| Form background            | `#f6f7fc`                                  |
-| Input shadow               | `rgba(0, 0, 0, 0.1)`                       |
-| Input/button border-radius | `4px`                                      |
-| Checkbox checked color     | `#fb771a` (orange)                         |
-| Input/button height        | `54px`                                     |
-| Paragraph text             | `#b3b3b3`                                  |
-| Link text                  | `#888`                                     |
-| Submit button color        | `#4f46e5` (indigo)                         |
+### Requirement: Split-screen layout
 
-## Layout
+The template SHALL render a 50/50 split-screen layout with a form panel on the left (bg #f6f7fc) and a decorative image panel on the right, spanning the full viewport height.
 
-- **50/50 split-screen** layout
-- **Left panel**: `bg-[#f6f7fc]`, centered form with heading, subtitle, and form fields
-- **Right panel**: background image (picsum.photos) with `object-cover` sizing, visible on `sm+` screens
+#### Scenario: Desktop layout shows both panels
 
-## Component Structure
+- **WHEN** the page loads on a desktop viewport (>= 640px)
+- **THEN** the left form panel and right image panel are both visible side by side
 
-```
-src/
-  App.tsx                  — Composes Threshold + Footer
-  components/
-    Threshold.tsx          — Main split-screen layout
-    LoginForm.tsx          — Login form with all fields
-    Footer.tsx             — Footer linking to Component Dock
-```
+#### Scenario: Mobile layout hides image panel
 
-## Form Fields
+- **WHEN** the page loads on a mobile viewport (< 640px)
+- **THEN** only the form panel is visible and the image panel is hidden
 
-1. **Username** — text input
-2. **Password** — password input
-3. **Remember Me** — custom-styled checkbox, orange `#fb771a` when checked
-4. **Forgot Password** — link (href `#forgot`)
-5. **Log In** — full-width submit button, `#4f46e5` background, 54px height
+### Requirement: Login form fields
 
-## Footer
+The template SHALL render a login form with username and password inputs, each with a visible label above the field.
 
-Centered, fixed at bottom. Text: "More templates at Component Dock" linking to https://www.componentdock.com/.
+#### Scenario: Username input accepts text
 
-## External Dependencies
+- **WHEN** the user types into the username field
+- **THEN** the field accepts and displays the typed text
 
-- **Google Fonts**: Roboto (300, 400) loaded via `<link>` in `index.html`
-- **picsum.photos**: Background image at `https://picsum.photos/seed/threshold-login/800/1200`
-- **lucide-react**: Icons where appropriate
-- **@free-react-templates/ui**: `cn()` utility
+#### Scenario: Password input is masked
 
-## Scenarios
+- **WHEN** the user types into the password field
+- **THEN** the input is masked (type="password")
 
-```gherkin
-Feature: Threshold Login Form
+### Requirement: Remember me and forgot password
 
-  Background:
-    Given the Threshold app is loaded
+The template SHALL render a "Remember me" checkbox and a "Forgot Password" link below the password field.
 
-  Scenario: Renders the main heading
-    Then I should see the heading "Welcome Back"
+#### Scenario: Remember me checkbox toggles
 
-  Scenario: Renders the subtitle
-    Then I should see a subtitle with text about entering credentials
+- **WHEN** the user clicks the "Remember me" checkbox
+- **THEN** the checkbox state toggles
 
-  Scenario: Renders username input
-    Then I should see a username text input
+#### Scenario: Forgot Password link present
 
-  Scenario: Renders password input
-    Then I should see a password input field
+- **WHEN** the page loads
+- **THEN** a "Forgot Password" link is visible and points to "#forgot"
 
-  Scenario: Renders remember me checkbox
-    Then I should see a "Remember me" checkbox
-    And the checkbox should be unchecked by default
+### Requirement: Submit button
 
-  Scenario: Toggles remember me checkbox
-    Given the checkbox is unchecked
-    When I click the "Remember me" checkbox
-    Then the checkbox should be checked
-    When I click the "Remember me" checkbox
-    Then the checkbox should be unchecked
+The template SHALL render a full-width "Log In" submit button with 54px height.
 
-  Scenario: Renders forgot password link
-    Then I should see a "Forgot Password" link
-    And the link should point to "#forgot"
+#### Scenario: Button is present and clickable
 
-  Scenario: Renders Log In button
-    Then I should see a "Log In" submit button
+- **WHEN** the page loads
+- **THEN** a "Log In" button is visible and can be clicked to submit the form
 
-  Scenario: Form submission prevents default
-    Given I fill in username "testuser"
-    And I fill in password "secret123"
-    When I click the "Log In" button
-    Then the form should submit without navigation
+### Requirement: Form submission
 
-  Scenario: Renders background image panel
-    Then I should see a decorative image panel on the right side
+The template SHALL handle form submission and prevent default browser navigation.
 
-  Scenario: Footer links to Component Dock
-    Then I should see a footer link to "https://www.componentdock.com/"
-    And the link text should be "More templates at Component Dock"
-    And the link should open in a new tab
-```
+#### Scenario: Form submits without navigation
+
+- **WHEN** the user fills in credentials and clicks "Log In"
+- **THEN** the form submission is handled without page navigation
+
+### Requirement: Footer with Component Dock link
+
+The template SHALL render a footer with a link to https://www.componentdock.com/ branded as "Component Dock".
+
+#### Scenario: Footer link present
+
+- **WHEN** the page loads
+- **THEN** a "More templates at Component Dock" link is visible
+- **AND** the link points to "https://www.componentdock.com/"
+- **AND** the link opens in a new tab
+
+### Requirement: Heading and subtitle
+
+The template SHALL render a heading "Welcome Back" and a welcome subtitle above the form.
+
+#### Scenario: Heading is visible
+
+- **WHEN** the page loads
+- **THEN** the heading "Welcome Back" is displayed
+
+#### Scenario: Subtitle is visible
+
+- **WHEN** the page loads
+- **THEN** a welcome subtitle text is displayed below the heading
+
+### Requirement: Background image panel
+
+The template SHALL render a decorative background image panel on the right side using picsum.photos.
+
+#### Scenario: Background image panel exists
+
+- **WHEN** the page loads on a desktop viewport
+- **THEN** a decorative image panel is visible on the right side
+
+### Requirement: Document title
+
+The template SHALL set the document title to "Threshold — Login Form Template" on mount.
+
+#### Scenario: Title set on load
+
+- **WHEN** the app mounts
+- **THEN** document.title equals "Threshold — Login Form Template"
