@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand blue — from the original Login Form 01 screenshot. */
+  --color-brand: #3b82f6;
+
+  /* Card / panel white. */
+  --color-card: #ffffff;
+
+  /* Input border color — light gray. */
+  --color-border: #d1d5db;
+
+  /* Placeholder / label text color — medium gray. */
+  --color-placeholder: #6b7280;
+
+  /* Input text / heading color — dark gray. */
+  --color-ink: #1f2937;
+
+  /* Subtitle text — muted. */
+  --color-muted: #4b5563;
+
+  /* Original font: "Poppins" via Google Fonts (loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
