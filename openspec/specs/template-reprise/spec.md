@@ -12,28 +12,28 @@ Recreation of ColorLib **Reopen** template as a React 19 + Vite + Tailwind 4 + T
 
 ## Design tokens (from live preview CSS)
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Brand color (accent) | `#f277ae` | Pink/rose — used on links, buttons, heart icon |
-| Body background | `#ECECEC` | Light warm gray |
-| Content wrapper background | `#ffffff` | White card wrapping all content |
-| Body text color | `#222222` | Dark charcoal |
-| Link hover color | `#f277ae` | Same as brand |
-| Page description text | `#7e7e7e` | Medium gray subtitle |
-| Footer text | `#7e7e7e` | Matches page description |
-| Portfolio overlay text | `#6f6f6f` / `#7e7e7e` | Category + type labels |
-| Toggle hamburger lines | `#c2c2c2` | Inactive, `#000` when menu open |
-| Menu overlay border | `#cccccc` | 30px solid border on fullscreen menu |
-| Load more button bg | `#eeeeee` | Circle, border-radius: 30px |
-| Button style | 1px solid `#f277ae`, border-radius 50px | Hover: fill `#f277ae`, text white |
+| Token                      | Value                                   | Notes                                          |
+| -------------------------- | --------------------------------------- | ---------------------------------------------- |
+| Brand color (accent)       | `#f277ae`                               | Pink/rose — used on links, buttons, heart icon |
+| Body background            | `#ECECEC`                               | Light warm gray                                |
+| Content wrapper background | `#ffffff`                               | White card wrapping all content                |
+| Body text color            | `#222222`                               | Dark charcoal                                  |
+| Link hover color           | `#f277ae`                               | Same as brand                                  |
+| Page description text      | `#7e7e7e`                               | Medium gray subtitle                           |
+| Footer text                | `#7e7e7e`                               | Matches page description                       |
+| Portfolio overlay text     | `#6f6f6f` / `#7e7e7e`                   | Category + type labels                         |
+| Toggle hamburger lines     | `#c2c2c2`                               | Inactive, `#000` when menu open                |
+| Menu overlay border        | `#cccccc`                               | 30px solid border on fullscreen menu           |
+| Load more button bg        | `#eeeeee`                               | Circle, border-radius: 30px                    |
+| Button style               | 1px solid `#f277ae`, border-radius 50px | Hover: fill `#f277ae`, text white              |
 
 ### Fonts
 
-| Role | Family | Weights | Source |
-|------|--------|---------|--------|
-| Body text | Roboto | 300, 400, 700, 900 | Google Fonts via CDN |
-| Headings (nav, portfolio) | Montserrat | 400, 700 | Google Fonts via CDN |
-| Accents | PT Serif | 400 | Google Fonts via CDN |
+| Role                      | Family     | Weights            | Source               |
+| ------------------------- | ---------- | ------------------ | -------------------- |
+| Body text                 | Roboto     | 300, 400, 700, 900 | Google Fonts via CDN |
+| Headings (nav, portfolio) | Montserrat | 400, 700           | Google Fonts via CDN |
+| Accents                   | PT Serif   | 400                | Google Fonts via CDN |
 
 - Body: `font-family: 'Roboto', sans-serif; font-size: 24px; line-height: 43px; font-weight: 300`
 - h1: 38px/38px; h2: 34px/34px; h3: 32px/32px
@@ -56,74 +56,116 @@ Recreation of ColorLib **Reopen** template as a React 19 + Vite + Tailwind 4 + T
 4. **Load More** — centered arrow icon (cosmetic, no actual load)
 5. **Footer** — copyright line with heart icon + Colorlib link (replaced by Component Dock link) + social icons (Twitter, Behance, Dribbble, Facebook, RSS)
 
-## Gherkin requirements
+## Requirements
 
-### Feature: Reprise Portfolio Gallery
+### Requirement: Logo and navigation bar
 
-```gherkin
-Feature: Reprise Portfolio Gallery
+The template SHALL display a centered logo with a hamburger menu toggle.
 
-  Background:
-    Given the user visits the Reprise template page
-    Then the page has a white content wrapper with 30px margin on a light gray (#ECECEC) background
+#### Scenario: Logo is visible
 
-  Scenario: Logo and navigation bar
-    Given the user sees the header area
-    Then there is a centered logo image
-    And there is a hamburger menu toggle (3 horizontal lines, #c2c2c2)
-    When the user clicks the toggle
-    Then a full-screen overlay menu appears with white background and 30px #cccccc border
-    And the menu contains links: Home, About, Story, Blog, Contact, More
-    And the toggle icon animates to an X when menu is open
+- **WHEN** the user visits the page
+- **THEN** there is a centered logo text "Reprise"
 
-  Scenario: Hero section
-    Given the user is on the home page
-    Then there is a centered title "Handpicked design resources crafted with much ♥ and care for every detail"
-    And the heart icon is pink (#f277ae)
-    And there is a subtitle "free downloads only on fridays" in gray (#7e7e7e)
+#### Scenario: Hamburger toggle opens overlay menu
 
-  Scenario: Portfolio grid
-    Given the user scrolls below the hero
-    Then there is a 3-column masonry grid
-    And each grid item shows a full-bleed image
-    And each grid item has an overlay with category name and content type (GALLERY/VIDEO/ARTICLE)
-    And the overlay text is positioned at the top-left with padding
+- **WHEN** the user clicks the hamburger toggle
+- **THEN** a full-screen overlay menu appears with white background and 30px #cccccc border
+- **AND** the menu contains links: Home, About, Story, Blog, Contact, More
 
-  Scenario: Grid item hover effect
-    Given the user hovers over a grid item
-    Then the image displays a subtle hover effect
-    And the overlay text remains visible
+#### Scenario: Toggle icon animates to X when menu is open
 
-  Scenario: Load more button
-    Given the user sees the bottom of the grid
-    Then there is a centered arrow icon inside a circular #eeeeee background
-    And the arrow is decorative (no pagination action)
+- **WHEN** the menu is open
+- **THEN** the toggle icon changes to an X
 
-  Scenario: Footer
-    Given the user scrolls to the bottom
-    Then there is a footer with copyright text and a heart icon
-    And the attribution links to Component Dock
-    And there are social icon links: Twitter, Behance, Dribbble, Facebook, RSS
-    And the footer text color is #7e7e7e
+### Requirement: Hero section
 
-  Scenario: Responsive behavior
-    Given the viewport is narrow (mobile)
-    Then the grid collapses to a single column
-    And the logo and title stack vertically
-    And the hamburger menu is accessible
+The template SHALL display a centered hero with title and subtitle.
 
-  Scenario: Font loading
-    Given the page loads
-    Then the body text uses Roboto at weight 300
-    And headings use Montserrat at weight 700
-    And fonts load from Google Fonts CDN
+#### Scenario: Hero title with heart icon
 
-  Scenario: Brand color consistency
-    Given any interactive element is visible
-    Then link hover states use #f277ae
-    And the CTA button has 1px solid #f277ae border with 50px border-radius
-    And on hover the button fills with #f277ae and text turns white
-```
+- **WHEN** the user is on the home page
+- **THEN** there is a centered title "Handpicked design resources crafted with much ♥ and care for every detail"
+- **AND** the heart icon is pink (#f277ae)
+
+#### Scenario: Hero subtitle
+
+- **WHEN** the user views the hero
+- **THEN** there is a subtitle "free downloads only on fridays" in gray (#7e7e7e)
+
+### Requirement: Portfolio grid
+
+The template SHALL display a 3-column masonry grid of portfolio items.
+
+#### Scenario: Grid items render
+
+- **WHEN** the user scrolls below the hero
+- **THEN** there is a 3-column grid with 9 items
+- **AND** each item shows a full-bleed image
+- **AND** each item has an overlay with category name and content type (GALLERY/VIDEO/ARTICLE)
+
+#### Scenario: Grid item hover effect
+
+- **WHEN** the user hovers over a grid item
+- **THEN** the image displays a subtle hover effect
+
+### Requirement: Load more button
+
+The template SHALL display a decorative load more button.
+
+#### Scenario: Load more arrow
+
+- **WHEN** the user sees the bottom of the grid
+- **THEN** there is a centered arrow icon inside a circular #eeeeee background
+- **AND** the arrow is decorative (no pagination action)
+
+### Requirement: Footer
+
+The template SHALL display a footer with copyright and social icons.
+
+#### Scenario: Footer copyright
+
+- **WHEN** the user scrolls to the bottom
+- **THEN** there is a footer with copyright text and a heart icon
+- **AND** the attribution links to Component Dock
+
+#### Scenario: Social icon links
+
+- **WHEN** the user views the footer
+- **THEN** there are social icon links: Twitter, Behance, Dribbble, Facebook, RSS
+- **AND** the footer text color is #7e7e7e
+
+### Requirement: Responsive behavior
+
+The template SHALL be responsive on mobile devices.
+
+#### Scenario: Mobile layout
+
+- **WHEN** the viewport is narrow (mobile)
+- **THEN** the grid collapses to a single column
+- **AND** the hamburger menu is accessible
+
+### Requirement: Font loading
+
+The template SHALL load Google Fonts.
+
+#### Scenario: Font families loaded
+
+- **WHEN** the page loads
+- **THEN** the body text uses Roboto at weight 300
+- **AND** headings use Montserrat at weight 700
+- **AND** fonts load from Google Fonts CDN
+
+### Requirement: Brand color consistency
+
+The template SHALL use consistent brand colors.
+
+#### Scenario: Interactive element colors
+
+- **WHEN** any interactive element is visible
+- **THEN** link hover states use #f277ae
+- **AND** the CTA button has 1px solid #f277ae border with 50px border-radius
+- **AND** on hover the button fills with #f277ae and text turns white
 
 ## Verification checklist
 

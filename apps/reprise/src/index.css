@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Reprise brand palette — recreated from the ColorLib "Reopen" design
+     (brand pink/rose accent #f277ae). */
+  --color-rose-accent: #f277ae;
+  --color-warm-gray: #ececec;
+  --color-charcoal: #222222;
+  --color-muted: #7e7e7e;
+  --color-overlay: #6f6f6f;
+  --color-toggle-inactive: #c2c2c2;
+  --color-menu-border: #cccccc;
+  --color-load-more-bg: #eeeeee;
+
+  /* Font families */
+  --font-body: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'PT Serif', ui-serif, Georgia, serif;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
