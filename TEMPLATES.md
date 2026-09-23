@@ -2077,7 +2077,7 @@
 - [x] **Quantum** — [colorlib](https://colorlib.com/wp/template/quantum/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/quantum-free-template.jpg) · [radiant](https://radiant.free.componentdock.com)
 - [x] **Rango** — [colorlib](https://colorlib.com/wp/template/rango/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rango-free-template.jpg) · [blitz](https://blitz.free.componentdock.com)
 - [x] **Raptor** — [colorlib](https://colorlib.com/wp/template/raptor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/raptor-free-template.jpg) · [soar](https://soar.free.componentdock.com)
-- [~] **Reopen** — [colorlib](https://colorlib.com/wp/template/reopen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/reopen-free-template.jpg)
+- [x] **Reopen** — [colorlib](https://colorlib.com/wp/template/reopen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/reopen-free-template.jpg) · [reprise](https://reprise.free.componentdock.com)
 - [x] **Robotics** — [colorlib](https://colorlib.com/wp/template/robotics/) · [mechbot](https://mechbot.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/robotics-free-template.jpg)
 - [ ] **Ronin** — [colorlib](https://colorlib.com/wp/template/ronin/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ronin-free-template.jpg)
 - [ ] **Saas** — [colorlib](https://colorlib.com/wp/template/saas/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/saas-free-template.jpg)
