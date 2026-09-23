@@ -2,138 +2,188 @@
 
 ## Purpose
 
-Recreation of the ColorLib **JobPro** template as a modern React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
+JobSpot is a single-page job board landing template in the
+free-react-templates monorepo. It is an original React recreation of the
+ColorLib free "JobPro" design (https://colorlib.com/wp/template/jobpro/),
+built under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-- **Source slug:** `jobpro`
-- **Source URL:** https://colorlib.com/wp/template/jobpro/
-- **Preview URL:** https://preview.colorlib.com/theme/jobpro/
-- **Stack:** Vite (latest) · React 19 · Tailwind CSS 4 · TypeScript (strict)
-- **Package:** `@free-react-templates/jobspot`
-- **Deploy target:** `jobspot.free.componentdock.com`
+The original is a Bootstrap-based job portal with a dark navbar, full-height hero
+with background image and job count, a tabbed search bar (Find a Job / Find a
+Candidate), 4-column services grid, category carousel, featured job listings,
+CTA banner, testimonials carousel, candidate profiles, recent blog grid,
+newsletter parallax section, and a 5-column dark footer.
 
-## Design tokens (extracted from preview)
+## Design reference (replication findings)
 
-| Token | Value | Notes |
-|---|---|---|
-| Brand primary | `#007bff` | Bootstrap blue — buttons, links, accents |
-| Brand secondary | `#91c235` | Lime green — CTA button on navbar, nav accent |
-| Dark background | `#171717` | Footer darken, overlay panels |
-| Navbar bg | `#1d2124` | Dark charcoal navbar |
-| Light section bg | `#f7f7f7` / `#f8f9fa` | Alternating light gray sections |
-| Parallax bg | `#46b3e6` | Newsletter/parallax section fallback color |
-| Font family | `Source Sans Pro`, Arial, sans-serif | Google Font — all headings + body |
-| Button radius | `0.25rem` | Subtle rounded corners |
-| Section padding | `6em 0` | Generous vertical rhythm |
-| Overlay opacity | `rgba(0,0,0,0.45)` approx | Hero + testimonial image overlays |
+- Brand primary: #007bff (Bootstrap blue — buttons, links, accents)
+- Brand secondary: #91c235 (Lime green — CTA button on navbar, nav accent)
+- Dark backgrounds: #1d2124 (navbar/footer), #171717 (overlays)
+- Light sections: #f8f9fa / #f7f7f7 alternating
+- Parallax/newsletter: #46b3e6 fallback
+- Font: Source Sans 3 (Google Fonts)
+- Button radius: subtle rounded (0.25rem)
+- Section padding: generous vertical rhythm
 
-## Section structure (in page order)
+## Requirements
 
-1. **Navbar** — Dark (`#1d2124`), logo left ("JobSpot."), nav links right (Home, Find Jobs, Candidates, Blog, Contact), "Post a Job" CTA button styled with secondary green (`#91c235`). Collapses on mobile.
-2. **Hero** — Full-height background image with dark overlay. Center-aligned text: subtitle ("Love what you do? Thousands are looking for you!"), headline with job count ("10,650+ Jobs Listed Here!"), descriptive paragraph, two CTAs: "Contact us" (primary blue) and "Search Job" (secondary).
-3. **Job Search Bar** — Dark secondary section (`#6c757d` background). Two tabs: "Find a Job" and "Find a Candidate" (pill-style nav). Each tab has a form row: keyword input, location select, category select, salary select, Search button.
-4. **Services** — White background. 4-column grid, each with icon + heading + description: "Search Millions of Jobs", "Easy To Manage Jobs", "Top Careers", "Search Expert Candidates".
-5. **Categories** — Carousel/slider (Owl Carousel original). Heading: "Explore by Category". 6+ category cards each with icon, category name, and open position count (e.g. "Website & Software — 143 Open positions").
-6. **Featured Jobs** — Light background. Heading: "Featured Jobs Posts For This Week". List of job cards, each with: job type badge (Partime/Fulltime), job title, company name, location, category tag, post date, salary, "Apply Job" button, heart/favorite icon.
-7. **CTA Banner** — Simple centered text: "Get Started Your New Job With Us", description paragraph, "Get Started" button (secondary).
-8. **Testimonials** — Dark background image with overlay. Heading: "Happy Clients". Carousel of testimonial cards: quote text, avatar circle image, name, position.
-9. **Latest Candidates** — White background. Heading: "Latest Candidates". Carousel of candidate cards: profile photo, name, location, short bio.
-10. **Recent Blog** — Light background. Heading: "Recent Blog". 4-column grid of blog cards: thumbnail image, date/author/comments meta, title, excerpt.
-11. **Newsletter** — Parallax background image with blue fallback (`#46b3e6`). Centered: heading "Subscribe to our Newsletter", description, email input + "Subscribe" button.
-12. **Footer** — Dark background (`#1d2124`). 5 columns: Brand blurb + social icons, Employers links, Candidate links, Account links, Contact info. Copyright bar at bottom.
+### Requirement: Navbar
 
-## Gherkin requirements
+The system SHALL render a dark navbar (#1d2124) with brand name "JobSpot." on the left, navigation links (Home, Find Jobs, Candidates, Blog, Contact) on the right, and a "Post a Job" CTA button styled with secondary green (#91c235). The navbar SHALL collapse into a hamburger menu on mobile viewports.
 
-```gherkin
-Feature: JobSpot homepage
+#### Scenario: Navbar renders all navigation elements
 
-  Background:
-    Given the user opens the JobSpot homepage
+- **WHEN** the user views the page
+- **THEN** the navbar displays the "JobSpot." brand
+- **AND** the navbar contains links: Home, Find Jobs, Candidates, Blog, Contact
+- **AND** the navbar contains a "Post a Job" CTA button
 
-  Scenario: Navbar renders with all navigation links
-    Then the navbar displays the "JobSpot." brand
-    And the navbar contains links: Home, Find Jobs, Candidates, Blog, Contact
-    And the navbar contains a "Post a Job" CTA button
-    And the navbar collapses into a hamburger menu on mobile viewports
+#### Scenario: Navbar mobile toggle
 
-  Scenario: Hero section displays job count and CTAs
-    Then the hero shows a subtitle about finding jobs
-    And the hero shows a headline with a job count number
-    And the hero shows a descriptive paragraph
-    And the hero has a "Contact us" primary button
-    And the hero has a "Search Job" secondary button
+- **WHEN** the user is on a mobile viewport
+- **THEN** a hamburger toggle button is visible
+- **AND** clicking the toggle shows/hides the mobile navigation menu
 
-  Scenario: Job search bar has two tab modes
-    Then the search bar shows "Find a Job" and "Find a Candidate" tabs
-    And the "Find a Job" tab is active by default
-    And the active tab shows keyword, location, category, and salary fields
-    And switching tabs shows the corresponding form fields
-    And each form has a "Search" button
+### Requirement: Hero section
 
-  Scenario: Services section shows four feature cards
-    Then 4 service cards are displayed in a row
-    And each service card has an icon, heading, and description
-    And the headings are: "Search Millions of Jobs", "Easy To Manage Jobs", "Top Careers", "Search Expert Candidates"
+The system SHALL render a full-height hero section with a background image, dark overlay, centered text including a subtitle, headline with job count ("10,650+ Jobs Listed Here!"), descriptive paragraph, and two CTA buttons ("Contact us" primary, "Search Job" secondary).
 
-  Scenario: Categories section shows job categories with counts
-    Then the heading reads "Explore by Category"
-    And category cards display name and open position count
-    And at least 6 categories are visible
+#### Scenario: Hero displays job listing headline
 
-  Scenario: Featured jobs section lists job postings
-    Then the heading reads "Featured Jobs Posts For This Week"
-    And each job card shows a type badge, title, company, location, and salary
-    And each job card has an "Apply Job" button
-    And each job card has a heart/favorite icon
+- **WHEN** the user views the hero section
+- **THEN** a subtitle reads "Love what you do? Thousands are looking for you!"
+- **AND** a heading shows "10,650+ Jobs Listed Here!"
+- **AND** a descriptive paragraph is displayed
+- **AND** a "Contact us" primary button is rendered
+- **AND** a "Search Job" secondary button is rendered
 
-  Scenario: CTA banner encourages sign-up
-    Then the heading reads "Get Started Your New Job With Us"
-    And a "Get Started" button is displayed
+### Requirement: Job search bar
 
-  Scenario: Testimonials section shows client reviews
-    Then the heading reads "Happy Clients"
-    And testimonial cards show a quote, avatar, name, and position
+The system SHALL render a dark gray search bar section with two pill-style tabs ("Find a Job" and "Find a Candidate"). Each tab shows a form with keyword input, category select, location input, and a Search button. The "Find a Job" tab SHALL be active by default.
 
-  Scenario: Latest candidates section shows candidate profiles
-    Then the heading reads "Latest Candidates"
-    And candidate cards show a photo, name, location, and bio
+#### Scenario: Search bar tab switching
 
-  Scenario: Recent blog section shows four blog posts
-    Then the heading reads "Recent Blog"
-    And 4 blog cards are displayed
-    And each blog card has a thumbnail, date, author, comment count, title, and excerpt
+- **WHEN** the user views the search bar
+- **THEN** the "Find a Job" tab is active by default
+- **AND** the active tab shows keyword, category, and location fields with a Search button
+- **WHEN** the user clicks "Find a Candidate"
+- **THEN** the candidate form fields are shown with a Search button
 
-  Scenario: Newsletter section collects email subscriptions
-    Then the heading reads "Subscribe to our Newsletter"
-    And an email input field is displayed
-    And a "Subscribe" button is displayed
+#### Scenario: Popular keywords
 
-  Scenario: Footer contains brand info and link columns
-    Then the footer shows the "JobSpot." brand and description
-    And the footer shows social media icons
-    And the footer shows Employer, Candidate, and Account link columns
-    And the footer shows contact information
-    And the footer links to https://www.componentdock.com/
-```
+- **WHEN** the user views the search bar
+- **THEN** "Browse Top Keywords:" text is displayed with clickable keyword links
 
-## Verification checklist
+### Requirement: Services section
 
-- [ ] Navbar: dark bg, logo, all nav links, green "Post a Job" CTA, mobile hamburger
-- [ ] Hero: full-height bg image, dark overlay, centered text, job count, two CTAs
-- [ ] Search bar: dark bg, two pill tabs, form fields per tab, Search buttons
-- [ ] Services: 4-column grid, icons (lucide-react), headings match
-- [ ] Categories: carousel with category cards, icon + name + count
-- [ ] Featured Jobs: job cards with badge, title, company, location, salary, Apply button, heart icon
-- [ ] CTA Banner: centered text + secondary button
-- [ ] Testimonials: dark bg image, overlay, carousel of quote cards with avatars
-- [ ] Candidates: carousel of candidate profile cards
-- [ ] Blog: 4-column grid of blog cards with meta
-- [ ] Newsletter: parallax bg, email input + subscribe button
-- [ ] Footer: 5 columns, brand + social + links + contact, copyright
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
-- [ ] All placeholder images use picsum.photos
-- [ ] Google Font "Source Sans Pro" loaded via index.html
-- [ ] 100% test coverage
-- [ ] vite.config.ts has injectUiSource()
-- [ ] public/CNAME = jobspot.free.componentdock.com
-- [ ] package.json homepage = https://jobspot.free.componentdock.com
+The system SHALL render a 4-column grid of service cards, each with an icon, heading, and description. Headings: "Search Millions of Jobs", "Easy To Manage Jobs", "Top Careers", "Search Expert Candidates".
+
+#### Scenario: Services display four feature cards
+
+- **WHEN** the user views the services section
+- **THEN** 4 service cards are displayed
+- **AND** each card has an icon, heading, and description
+
+### Requirement: Categories section
+
+The system SHALL render a horizontal scrollable carousel of category cards. Each card shows an icon, category name, and open position count. The section heading reads "Explore by Category".
+
+#### Scenario: Categories display job categories
+
+- **WHEN** the user views the categories section
+- **THEN** the heading reads "Explore by Category"
+- **AND** at least 6 category cards are visible
+- **AND** each card shows name and open position count
+
+### Requirement: Featured jobs section
+
+The system SHALL render a list of job cards with type badge, title, company, location, category tag, date, salary, "Apply Job" button, and heart/favorite icon. The section heading reads "Featured Jobs Posts For This Week".
+
+#### Scenario: Featured jobs display job postings
+
+- **WHEN** the user views the featured jobs section
+- **THEN** each job card shows a type badge, title, company, location, and salary
+- **AND** each job card has an "Apply Job" button
+- **AND** each job card has a heart/favorite icon
+
+### Requirement: CTA banner
+
+The system SHALL render a centered CTA section with heading "Get Started Your New Job With Us", a description paragraph, and a "Get Started" secondary button.
+
+#### Scenario: CTA banner encourages sign-up
+
+- **WHEN** the user views the CTA banner
+- **THEN** the heading reads "Get Started Your New Job With Us"
+- **AND** a "Get Started" button is displayed
+
+### Requirement: Testimonials section
+
+The system SHALL render a dark background image section with overlay, heading "Happy Clients", and a carousel of testimonial cards with quote text, avatar, name, and position.
+
+#### Scenario: Testimonials display client reviews
+
+- **WHEN** the user views the testimonials section
+- **THEN** the heading reads "Happy Clients"
+- **AND** testimonial cards show a quote, avatar, name, and position
+
+### Requirement: Latest candidates section
+
+The system SHALL render a carousel of candidate profile cards with photo, name, location, and short bio. The section heading reads "Latest Candidates".
+
+#### Scenario: Candidates display profiles
+
+- **WHEN** the user views the candidates section
+- **THEN** the heading reads "Latest Candidates"
+- **AND** candidate cards show a photo, name, location, and bio
+
+### Requirement: Recent blog section
+
+The system SHALL render a 4-column grid of blog cards with thumbnail image, date/author/comments metadata, title, and excerpt. The section heading reads "Recent Blog".
+
+#### Scenario: Blog displays recent posts
+
+- **WHEN** the user views the blog section
+- **THEN** the heading reads "Recent Blog"
+- **AND** 4 blog cards are displayed
+- **AND** each card has a thumbnail, date, author, comment count, title, and excerpt
+
+### Requirement: Newsletter section
+
+The system SHALL render a parallax background section (blue #46b3e6 fallback) with heading "Subscribe to our Newsletter", description text, email input, and "Subscribe" button.
+
+#### Scenario: Newsletter collects email subscriptions
+
+- **WHEN** the user views the newsletter section
+- **THEN** the heading reads "Subscribe to our Newsletter"
+- **AND** an email input field is displayed
+- **AND** a "Subscribe" button is displayed
+
+### Requirement: Footer
+
+The system SHALL render a dark footer (#1d2124) with 5 columns: brand blurb + social icons, Employers links, Candidate links, Account links, Contact info. The footer SHALL include a copyright bar linking to https://www.componentdock.com/ (branded "Component Dock").
+
+#### Scenario: Footer contains brand info and link columns
+
+- **WHEN** the user views the footer
+- **THEN** the footer shows the "JobSpot." brand and description
+- **AND** the footer shows Employer, Candidate, and Account link columns
+- **AND** the footer shows contact information
+- **AND** the footer links to https://www.componentdock.com/
+
+### Requirement: Accessibility and standards
+
+The system SHALL not reference ColorLib in any app source code. All placeholder images SHALL use picsum.photos. The Google Font "Source Sans 3" SHALL be loaded via index.html.
+
+#### Scenario: No ColorLib references
+
+- **WHEN** the app source code is inspected
+- **THEN** no "colorlib" strings exist in apps/jobspot (comments included)
+
+#### Scenario: Placeholder images
+
+- **WHEN** any image is rendered
+- **THEN** the src uses picsum.photos with seed-based URLs
+
+#### Scenario: Google Font loaded
+
+- **WHEN** the page loads
+- **THEN** Source Sans 3 is loaded from Google Fonts
