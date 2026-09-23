@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Background gradient start — deep navy (#1a1a2e). */
+  --color-bg-start: #1a1a2e;
+
+  /* Background gradient end — dark teal (#0f3460). */
+  --color-bg-end: #0f3460;
+
+  /* Card white. */
+  --color-card: #ffffff;
+
+  /* Brand accent — violet (#6c63ff), used for buttons and highlights. */
+  --color-brand: #6c63ff;
+
+  /* Brand hover — darker violet (#5a52d5). */
+  --color-brand-hover: #5a52d5;
+
+  /* Input background — light gray (#f0f0f0). */
+  --color-input: #f0f0f0;
+
+  /* Text color — dark gray (#333333). */
+  --color-ink: #333333;
+
+  /* Caption/link color — medium gray (#888888). */
+  --color-caption: #888888;
+
+  /* Placeholder text color — medium gray (#999999). */
+  --color-placeholder: #999999;
+
+  /* Social button border — light gray (#dddddd). */
+  --color-social-border: #dddddd;
+
+  /* Divider color — light gray (#e0e0e0). */
+  --color-divider: #e0e0e0;
+
+  /* Original font: "Poppins" via Google Fonts (loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
