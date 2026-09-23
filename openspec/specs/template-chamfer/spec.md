@@ -26,6 +26,7 @@ typography.
 ### Screenshot analysis
 
 The preview screenshot shows:
+
 - Full-width hero with a large interior photo background and dark semi-transparent
   overlay; large white condensed heading on the left half
 - Dark navy section with three feature columns below the hero
@@ -42,27 +43,30 @@ The preview screenshot shows:
 ### CSS tokens extracted
 
 **Fonts:**
+
 - Headings (h1–h6): `"Barlow Condensed", sans-serif` (weight 500)
 - Body/paragraph: `"Barlow", sans-serif` (weight 400)
 - Both loaded via Google Fonts: `Barlow+Condensed:200,300,400,500,600,700,800` and `Barlow:300,400,500,600,700`
 
 **Brand colors:**
-| Token           | Hex       | Usage                                      |
-|-----------------|-----------|--------------------------------------------|
-| brand-red       | `#ff1313` | Primary buttons, scroll-to-top, accents    |
-| dark-navy       | `#16161a` | `.black-bg`, dark section backgrounds       |
-| deep-charcoal   | `#0b1416` | `.btn-black` (CTA banner)                  |
-| body-text       | `#10285d` | Paragraph text color                       |
-| link-gray       | `#635c5c` | Anchor default color                       |
-| heading-white   | `#fff`    | Headings on dark backgrounds               |
-| overlay-dark    | `rgba(0,12,32,0.8)` | Hero and banner overlay          |
-| muted-gray      | `#7e7e7e` | Secondary text                             |
-| light-bg        | `#f7f7f7` | `.body-bg` light sections                  |
-| gold-accent     | `#dca73a` | Decorative / icon accent                   |
-| medium-gray     | `#717b9b` | Tertiary text                              |
-| dark-text       | `#383838` | Dark heading text                          |
+
+| Token         | Hex                 | Usage                                   |
+| ------------- | ------------------- | --------------------------------------- |
+| brand-red     | `#ff1313`           | Primary buttons, scroll-to-top, accents |
+| dark-navy     | `#16161a`           | `.black-bg`, dark section backgrounds   |
+| deep-charcoal | `#0b1416`           | `.btn-black` (CTA banner)               |
+| body-text     | `#10285d`           | Paragraph text color                    |
+| link-gray     | `#635c5c`           | Anchor default color                    |
+| heading-white | `#fff`              | Headings on dark backgrounds            |
+| overlay-dark  | `rgba(0,12,32,0.8)` | Hero and banner overlay                 |
+| muted-gray    | `#7e7e7e`           | Secondary text                          |
+| light-bg      | `#f7f7f7`           | `.body-bg` light sections               |
+| gold-accent   | `#dca73a`           | Decorative / icon accent                |
+| medium-gray   | `#717b9b`           | Tertiary text                           |
+| dark-text     | `#383838`           | Dark heading text                       |
 
 **Button styling:**
+
 - `.btn`: background `#ff1313`, uppercase, `font-family: "Barlow Condensed"`,
   `border-radius: 0px`, `padding: 27px 44px`, `letter-spacing: 1px`, `font-size: 16px`
 - Hover: white background slides in via `scaleX(0)→scaleX(1)` transition (cubic-bezier)
@@ -71,6 +75,7 @@ The preview screenshot shows:
 - `.header-btn`: extra padding `30px 53px`
 
 **Section backgrounds:**
+
 - Hero: full-bleed image with dark overlay
 - Our Info: `data-background` image (dark)
 - Professional Services: `data-background` image (dark)
@@ -81,6 +86,7 @@ The preview screenshot shows:
 - Body: `.body-bg` = `#f7f7f7`
 
 **Scroll-to-top:**
+
 - Red circle (`border-radius: 50%`), background `#ff1313`, fixed bottom-right
 
 ## Section order (from preview DOM)
@@ -98,89 +104,139 @@ The preview screenshot shows:
 11. **Blog** — "Our recent news"; 2 blog cards with image, date badge, meta, title, "Read more" link
 12. **Footer** — dark; logo + description + phone; 2 address columns (New York, Japan); Instagram feed (6 images); social links (Twitter, Facebook, Globe, Instagram); copyright
 
-## Gherkin requirements
+## Requirements
 
-### Feature: Chamfer — Interior Design Landing Template
+### Requirement: Header renders navigation and CTA
 
-  Background:
-    Given the template is loaded at the root URL
-    Then the page displays the Chamfer interior design landing
+The header SHALL display a logo, navigation links (Home, About, Services, Gallery, Blog, Contact), and a "Contact Us" button.
 
-  Scenario: Header renders navigation and CTA
-    Given the header is visible
-    Then it contains a logo
-    And navigation links: Home, About, Services, Gallery, Blog, Contact
-    And a "Contact Us" call-to-action button
+#### Scenario: Header renders navigation and CTA
 
-  Scenario: Hero slider displays with dark overlay
-    Given the hero section is visible
-    Then it shows a full-width background image with dark overlay
-    And the heading "Modern Interior & Design" is displayed
-    And a welcome subheading is shown above the heading
-    And a video play icon is present
+- **WHEN** the header is visible
+- **THEN** it contains a logo and navigation links
+- **AND** a "Contact Us" call-to-action button is present
 
-  Scenario: Our Info shows three feature columns
-    Given the Our Info section is visible
-    Then three columns are displayed side by side
-    And each column has a title and description
-    And the section has a dark background image
+### Requirement: Hero slider displays with dark overlay
 
-  Scenario: Professional Services banner with CTA
-    Given the Professional Services section is visible
-    Then a full-width background image is shown
-    And the heading "We will create modern and first class interior" is displayed
-    And a "Discover More About Us" button is shown
+The hero section SHALL show a full-width background image with dark overlay, a welcome subheading, and the heading "Modern Interior & Design".
 
-  Scenario: Services grid shows three service cards
-    Given the Services section is visible
-    Then three service cards are displayed in a row
-    And each card has an icon image, title, and description
-    And the services include Lighting, Interior Design, and Office Decoration
+#### Scenario: Hero slider displays with dark overlay
 
-  Scenario: Gallery shows masonry image grid
-    Given the Gallery section is visible
-    Then six project images are displayed in a masonry-like grid
-    And hovering an image shows a project name overlay and arrow icon
+- **WHEN** the hero section is visible
+- **THEN** a full-width background image with dark overlay is shown
+- **AND** the heading "Modern Interior & Design" is displayed
+- **AND** a video play icon is present
 
-  Scenario: Team section shows three members
-    Given the Team section is visible
-    Then three team member cards are displayed
-    And each card has a photo, name, and role title
+### Requirement: Our Info shows three feature columns
 
-  Scenario: Testimonial carousel displays quotes
-    Given the Testimonial section is visible
-    Then a testimonial carousel is present
-    And each slide shows a quote, company logo, and founder name
-    And dot navigation is available
+The Our Info section SHALL display three columns with titles and descriptions on a dark background.
 
-  Scenario: Brand logos carousel
-    Given the Brand Area section is visible
-    Then a carousel of partner logos is displayed
-    And the logos are greyscale
+#### Scenario: Our Info shows three feature columns
 
-  Scenario: CTA banner with contact action
-    Given the CTA Banner section is visible
-    Then the heading "Are you Searching For a First-Class Consultant?" is displayed
-    And a "Contact Us" button is present
+- **WHEN** the Our Info section is visible
+- **THEN** three columns are displayed side by side
+- **AND** each column has a title and description
 
-  Scenario: Blog section shows recent posts
-    Given the Blog section is visible
-    Then two blog post cards are displayed
-    And each card has an image, date, author, likes, comments count, title, and "Read more" link
+### Requirement: Professional Services banner with CTA
 
-  Scenario: Footer renders contact info and social links
-    Given the footer is visible
-    Then it contains the logo and company description
-    And a phone number and email are shown
-    And two address columns are displayed
-    And an Instagram feed grid of 6 images is shown
-    And social media icon links are present
-    And the copyright text includes "Component Dock"
+The Professional Services section SHALL show a background image, heading, and "Discover More About Us" button.
 
-  Scenario: Scroll-to-top button
-    Given the page is scrolled down
-    Then a circular red scroll-to-top button appears in the bottom-right
-    And clicking it scrolls the page to the top
+#### Scenario: Professional Services banner with CTA
+
+- **WHEN** the Professional Services section is visible
+- **THEN** the heading "We will create modern and first class interior" is displayed
+- **AND** a "Discover More About Us" button is shown
+
+### Requirement: Services grid shows three service cards
+
+The Services section SHALL display three cards (Lighting, Interior Design, Office Decoration) with icons and descriptions.
+
+#### Scenario: Services grid shows three service cards
+
+- **WHEN** the Services section is visible
+- **THEN** three service cards are displayed in a row
+- **AND** each card has an icon, title, and description
+
+### Requirement: Gallery shows masonry image grid
+
+The Gallery section SHALL display six project images in a masonry-like grid with hover overlays.
+
+#### Scenario: Gallery shows masonry image grid
+
+- **WHEN** the Gallery section is visible
+- **THEN** six project images are displayed in a grid
+- **AND** hovering shows a project name overlay and arrow icon
+
+### Requirement: Team section shows three members
+
+The Team section SHALL display three team members with photos, names, and roles.
+
+#### Scenario: Team section shows three members
+
+- **WHEN** the Team section is visible
+- **THEN** three team member cards are displayed
+- **AND** each card has a photo, name, and role title
+
+### Requirement: Testimonial carousel displays quotes
+
+The Testimonial section SHALL display a carousel with quotes, dot navigation, and previous/next controls.
+
+#### Scenario: Testimonial carousel displays quotes
+
+- **WHEN** the Testimonial section is visible
+- **THEN** a testimonial carousel is present with dot navigation
+- **AND** each slide shows a quote and founder name
+
+### Requirement: Brand logos carousel
+
+The Brand Area section SHALL display a row of greyscale partner logos.
+
+#### Scenario: Brand logos carousel
+
+- **WHEN** the Brand Area section is visible
+- **THEN** a carousel of partner logos is displayed
+
+### Requirement: CTA banner with contact action
+
+The CTA Banner section SHALL display a heading and "Contact Us" button.
+
+#### Scenario: CTA banner with contact action
+
+- **WHEN** the CTA Banner section is visible
+- **THEN** the heading "Are you Searching For a First-Class Consultant?" is displayed
+- **AND** a "Contact Us" button is present
+
+### Requirement: Blog section shows recent posts
+
+The Blog section SHALL display two blog post cards with image, date, author, metadata, and "Read more" link.
+
+#### Scenario: Blog section shows recent posts
+
+- **WHEN** the Blog section is visible
+- **THEN** two blog post cards are displayed
+- **AND** each card has an image, date, title, and "Read more" link
+
+### Requirement: Footer renders contact info and Component Dock link
+
+The footer SHALL display logo, description, addresses, Instagram feed, social links, and Component Dock attribution.
+
+#### Scenario: Footer renders contact info and social links
+
+- **WHEN** the footer is visible
+- **THEN** it contains the logo and company description
+- **AND** two address columns are displayed
+- **AND** social media icon links are present
+- **AND** the copyright text includes "Component Dock"
+
+### Requirement: Scroll-to-top button
+
+The page SHALL show a circular red scroll-to-top button when scrolled down.
+
+#### Scenario: Scroll-to-top button
+
+- **WHEN** the page is scrolled down
+- **THEN** a circular red scroll-to-top button appears in the bottom-right
+- **AND** clicking it scrolls the page to the top
 
 ## Verification checklist
 

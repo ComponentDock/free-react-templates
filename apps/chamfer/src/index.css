@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Chamfer brand palette — recreated from the ColorLib "Theinterior" design. */
+  --color-brand-red: #ff1313;
+  --color-brand-red-dark: #d91010;
+  --color-dark-navy: #16161a;
+  --color-deep-charcoal: #0b1416;
+  --color-body-text: #10285d;
+  --color-muted-gray: #7e7e7e;
+  --color-gold-accent: #dca73a;
+  --color-light-bg: #f7f7f7;
+  --color-medium-gray: #717b9b;
+  --color-dark-text: #383838;
+  --color-link-gray: #635c5c;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve to brand red. */
+  --color-primary-50: #fff1f1;
+  --color-primary-100: #ffe0e0;
+  --color-primary-200: #ffc7c7;
+  --color-primary-300: #ffa0a0;
+  --color-primary-400: #ff6868;
+  --color-primary-500: #ff1313;
+  --color-primary-600: #d91010;
+  --color-primary-700: #b10d0d;
+  --color-primary-800: #920f0f;
+  --color-primary-900: #791414;
+
+  /* Fonts: Barlow Condensed (headings) + Barlow (body). */
+  --font-sans: 'Barlow', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Barlow Condensed', ui-sans-serif, system-ui, sans-serif;
+}
