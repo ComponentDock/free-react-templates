@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand color — peach/salmon (#fbceb5). */
+  --color-primary: #fbceb5;
+
+  /* Text on dark — white. */
+  --color-ink: #ffffff;
+
+  /* Semi-transparent text — rgba(255,255,255,0.9). */
+  --color-caption: rgba(255, 255, 255, 0.9);
+
+  /* Glass input background — rgba(255,255,255,0.08). */
+  --color-glass: rgba(255, 255, 255, 0.08);
+
+  /* Glass input border on focus — rgba(255,255,255,0.4). */
+  --color-glass-border: rgba(255, 255, 255, 0.4);
+
+  /* Font: Lato via Google Fonts (loaded in index.html). */
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
