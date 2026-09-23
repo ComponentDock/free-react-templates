@@ -2143,7 +2143,7 @@
 
 ## Login Forms (42)
 
-- [ ] **Creative Login Form** — [colorlib](https://colorlib.com/wp/template/creative-login-form/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/creative-html5-css3-login-form.png)
+[~] **Creative Login Form** — [colorlib](https://colorlib.com/wp/template/creative-login-form/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/creative-html5-css3-login-form.png)
 - [ ] **Login Form 01** — [colorlib](https://colorlib.com/wp/template/login-form-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-01.jpg)
 - [ ] **Login Form 02** — [colorlib](https://colorlib.com/wp/template/login-form-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-02.jpg)
 - [ ] **Login Form 03** — [colorlib](https://colorlib.com/wp/template/login-form-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-03.jpg)
