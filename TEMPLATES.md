@@ -2038,7 +2038,7 @@
 - [x] **Dizzi** — [colorlib](https://colorlib.com/wp/template/dizzi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dizzi-free-template.jpg) · [doflo](https://doflo.free.componentdock.com)
 - [x] **Drimo** — [colorlib](https://colorlib.com/wp/template/drimo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/drimo-free-multi-purpose-template.jpg) · [ripply](https://ripply.free.componentdock.com)
 - [x] **Dup** — [colorlib](https://colorlib.com/wp/template/dup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dup-free-creative-agency-website-template.jpg) · [prism](https://prism.free.componentdock.com)
-- [~] **Easy** — [colorlib](https://colorlib.com/wp/template/easy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/easy-free-template.jpg)
+- [x] **Easy** — [colorlib](https://colorlib.com/wp/template/easy/) · [swiftly](https://swiftly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/easy-free-template.jpg)
 - [x] **Eclipse** — [colorlib](https://colorlib.com/wp/template/eclipse/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eclipse-free-template.jpeg) · [corona](https://corona.free.componentdock.com)
 - [x] **Educature** — [colorlib](https://colorlib.com/wp/template/educature/) · [courselex](https://courselex.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/educature-free-template.jpeg)
 - [x] **Edumark** — [colorlib](https://colorlib.com/wp/template/edumark/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/edumark-free-template.jpg) · [academia](https://academia.free.componentdock.com)
