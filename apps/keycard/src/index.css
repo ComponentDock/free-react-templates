@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand green — sage/olive green from the original ColorLib
+     Creative Login Form (CodePen rxddKy): the background and button color. */
+  --color-brand: #8bc34a;
+
+  /* Card white. */
+  --color-card: #ffffff;
+
+  /* Input border color — light gray. */
+  --color-border: #e0e0e0;
+
+  /* Placeholder text color — medium gray. */
+  --color-placeholder: #999999;
+
+  /* Input text color — dark gray. */
+  --color-ink: #333333;
+
+  /* Original font: "Poppins" via Google Fonts (loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
