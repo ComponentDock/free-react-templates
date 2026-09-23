@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Vertex brand palette — recreated from ColorLib Boxus design tokens:
+     nav #221C5A, body #23214c, green accent #32DB8A, pink hover #ee87a4. */
+  --color-brand: #32db8a;
+  --color-brand-dark: #28b872;
+
+  /* Ink — dark navy body text (#23214c). */
+  --color-ink: #23214c;
+  --color-ink-dark: #1a1839;
+
+  /* Paper — white section background. */
+  --color-paper: #ffffff;
+
+  /* Mist — muted secondary text (#8e8da9). */
+  --color-mist: #8e8da9;
+
+  /* Primary scale for shared Button/ButtonLink primary variants. */
+  --color-primary-50: #eafcf3;
+  --color-primary-100: #c6f7de;
+  --color-primary-200: #8ef0bd;
+  --color-primary-300: #56e89c;
+  --color-primary-400: #32db8a;
+  --color-primary-500: #28b872;
+  --color-primary-600: #1e945a;
+  --color-primary-700: #157042;
+  --color-primary-800: #0c4c2a;
+  --color-primary-900: #032812;
+
+  /* Fonts: Roboto (body) + Montserrat (headings). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
