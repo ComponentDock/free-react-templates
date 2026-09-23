@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Kinetic brand colors — from the ColorLib "Bobsled" preview
+     (https://preview.colorlib.com/theme/bobsled/ + css/main.css):
+     a creative agency theme with a blue #3e69fe primary,
+     a blue→teal gradient (#3e69fe → #4cd4e3), light section
+     backgrounds #f9f9ff, and muted text #777777. */
+  --color-primary-50: #e8eeff;
+  --color-primary-100: #c5d4ff;
+  --color-primary-200: #9db8ff;
+  --color-primary-300: #6e98ff;
+  --color-primary-400: #3e69fe;
+  --color-primary-500: #2b54e0;
+  --color-primary-600: #1e40c0;
+  --color-primary-700: #1530a0;
+  --color-primary-800: #0e2280;
+  --color-primary-900: #081660;
+
+  /* Teal accent (ColorLib .primary-btn gradient endpoint). */
+  --color-teal-300: #7aeaf7;
+  --color-teal-400: #4cd4e3;
+  --color-teal-500: #30b8cc;
+
+  /* Light section background (ColorLib .working-process-area, body). */
+  --color-mist: #f9f9ff;
+
+  /* Body text (ColorLib body #777777). */
+  --color-smoke: #777777;
+
+  /* Headings (ColorLib h1-h6 #222222). */
+  --color-ink: #222222;
+
+  /* Poppins via Google Fonts <link> in index.html. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
