@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-poppins: 'Poppins', sans-serif;
+  --color-page-bg: #d5d5d5;
+  --color-facebook: #4a5568;
+  --color-facebook-hover: #3d4759;
+  --color-twitter: #1da1f2;
+  --color-twitter-hover: #1a91da;
+  --color-btn-dark: #2d2d2d;
+  --color-btn-dark-hover: #1a1a1a;
+  --color-input-bg: #ffffff;
+  --color-input-border: #e0e0e0;
+  --color-heading: #2d2d2d;
+  --color-text-muted: #777777;
+  --color-signup-link: #2d2d2d;
+}
