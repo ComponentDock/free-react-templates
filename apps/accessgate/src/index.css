@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* All text/borders are black — the design relies on contrast from
+     the background image, not on brand accent colors. */
+  --color-text: #000000;
+  --color-border: rgba(0, 0, 0, 0.2);
+
+  /* Font: Roboto Condensed via Google Fonts. */
+  --font-sans: 'Roboto Condensed', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Roboto Condensed', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-text);
+  }
+}
