@@ -1,204 +1,174 @@
-# Template: Loginbreeze (Login Form V18)
+# Template: LoginBreeze (Login Form)
 
 ## Purpose
 
-Recreation of ColorLib **Login Form V18** as a React 19 + Vite + Tailwind 4 + TypeScript template.
+Recreation of ColorLib "Login Form V3" (`login-form-v3`).
+Preview: https://preview.colorlib.com/theme/login-form-v3/ (unreachable — design tokens extracted from screenshot).
+Source page: https://colorlib.com/wp/template/login-form-v3/
 
-- **Source slug:** `login-form-v18`
-- **Preview URL:** https://preview.colorlib.com/theme/login-form-v18/ (404 — using screenshot)
-- **ColorLib page:** https://colorlib.com/wp/template/login-form-v18/
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v18.jpg
-- **New name:** `loginbreeze` (apps/loginbreeze, package @free-react-templates/loginbreeze)
-- **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript strict
+Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript.
 
-## Design tokens (extracted from screenshot — preview unreachable)
+## Design Tokens
 
-### Colors
-
-| Token               | Hex / Value            | Usage                                              |
-| ------------------- | ---------------------- | -------------------------------------------------- |
-| Page background     | `#f0f0f0`              | Full viewport light gray background                |
-| Form background     | `#ffffff`              | Login form card white                              |
-| Brand blue          | `#5b6abf`              | LOGIN button background, checkbox checked state    |
-| Button hover        | `#4a5aa8`              | Login button hover state (darker blue)             |
-| Heading text        | `#333333`              | "Login to continue" heading                        |
-| Label text          | `#999999`              | Field labels (Email, Password)                     |
-| Input text          | `#333333`              | Input field text color                             |
-| Placeholder         | `#cccccc`              | Input placeholder text                             |
-| Link text           | `#999999`              | "Forgot password?" link                            |
-| Link hover          | `#5b6abf`              | Link hover color (matches brand blue)              |
-| Input border        | `#dddddd`              | Input field border                                 |
-| Social icon bg      | `#3b5998`              | Facebook icon circle background (Facebook blue)    |
-| Social icon Twitter | `#1da1f2`              | Twitter icon circle background (Twitter blue)      |
-| Divider text        | `#999999`              | "or sign up using" text                            |
-
-### Fonts
-
-| Token      | Font family          | Usage                                       |
-| ---------- | -------------------- | ------------------------------------------- |
-| Body       | Poppins Regular      | Body text, inputs, labels, links            |
-| Heading    | Poppins Medium       | "Login to continue" heading (~28px)         |
-| Button     | Poppins SemiBold     | "LOGIN" button text (uppercase, ~14px)      |
-| Labels     | Poppins Regular      | Field labels (14px, #999999)                |
-| Placeholder| Poppins Regular      | Input placeholder text (14px, #cccccc)      |
-| Link       | Poppins Regular      | "Forgot password?" (13px, #999999)          |
-| Social     | Poppins Regular      | "or sign up using" (13px, #999999)          |
-
-### Layout & Shapes
-
-- Full viewport height, split layout: left side decorative image, right side form
-- Left panel: ~55% width, background image (office/desk scene with monstera leaves), gray overlay
-- Right panel: ~45% width, white background, vertically centered form content
-- Form inputs: full width, height ~50px, border 1px solid #dddddd, border-radius 4px, padding-left 15px
-- Email input: has a small hand/click icon on the right side
-- LOGIN button: full width, height ~50px, border-radius 25px (pill shape), background #5b6abf, white uppercase text, letter-spacing ~1px
-- "Remember me" checkbox (blue/indigo when checked) on left, "Forgot password?" link on right — same row
-- "or sign up using" divider text below button
-- Social icons: circular buttons, Facebook (#3b5998) and Twitter (#1da1f2), ~40px diameter
-- Responsive: below ~768px, left panel hides or stacks above the form
+- **Card gradient start:** #7c3aed (purple) — left/bottom of gradient card
+- **Card gradient end:** #6366f1 (indigo) — right/top of gradient card
+- **Card border radius:** ~1rem (rounded-2xl)
+- **Background:** City skyline photo with dark overlay (opacity 30%), dark gray base (#1f2937)
+- **Text primary:** white (all text on card is white)
+- **Input underline:** rgba(255,255,255,0.3) — semi-transparent white bottom border
+- **Input placeholder:** white with 50% opacity
+- **Input icons:** white with 60% opacity (user silhouette, lock)
+- **Checkbox accent:** #818cf8 (indigo)
+- **Button background:** white
+- **Button text:** dark gray (#1f2937)
+- **Button shape:** pill (rounded-full), full-width
+- **Forgot Password text:** white with 70% opacity
+- **Logo container:** white circle (90% opacity) with mountain/document icon, centered at top
+- **Font family:** "Poppins", sans-serif
+- **Layout:** Single centered card on full-viewport background
 
 ## Requirements
 
-### Requirement: Renders split layout with image panel and form panel
+### Requirement: Full-viewport background
 
-The login page SHALL display a split layout with a decorative image panel on the left and a login form on the right.
+The page SHALL display a full-viewport city skyline background image with a dark overlay and the login card centered on top.
 
-#### Scenario: Split layout is visible on desktop
+#### Scenario: Background image visible
 
-- **WHEN** the page loads on a viewport wider than 768px
-- **THEN** a left image panel (~55% width) and a right form panel (~45% width) are displayed side by side
+- **WHEN** the user loads the LoginBreeze page
+- **THEN** a full-viewport background image is displayed
+- **AND** the background has a dark overlay effect
+- **AND** the login card is centered both horizontally and vertically
 
-#### Scenario: Responsive stacking on mobile
+#### Scenario: Card centered on viewport
 
-- **WHEN** the page loads on a viewport narrower than 768px
-- **THEN** the image panel and form panel stack vertically
+- **WHEN** the user loads the LoginBreeze page
+- **THEN** the card is centered in the viewport
+- **AND** the card has a purple-to-indigo gradient background
 
-### Requirement: Renders login form heading
+### Requirement: Login card with gradient
 
-The form panel SHALL display a "Login to continue" heading centered above the form fields.
+The login card SHALL display a purple-to-indigo gradient background with rounded corners and centered content.
 
-#### Scenario: Heading is visible
+#### Scenario: Gradient card visible
 
-- **WHEN** the page loads
-- **THEN** the text "Login to continue" is displayed centered above the email input
+- **WHEN** the user loads the LoginBreeze page
+- **THEN** a card with a purple-to-indigo gradient is visible
+- **AND** the card has rounded corners
+- **AND** the card contains the logo, heading, form, and footer link
 
-### Requirement: Renders email input field
+#### Scenario: Logo icon in card
 
-The login form SHALL display a labeled email text input with placeholder text.
+- **WHEN** the user loads the LoginBreeze page
+- **THEN** a white circular logo icon is displayed at the top of the card
+- **AND** the logo contains a mountain/document icon
 
-#### Scenario: Email label is visible
+### Requirement: Form heading
 
-- **WHEN** the page loads
-- **THEN** a label "Email" is displayed above or beside the email field
+The card SHALL display "LOG IN" as a white uppercase heading.
 
-#### Scenario: Email placeholder shows example
+#### Scenario: Heading text
 
-- **WHEN** the email field is empty
-- **THEN** the placeholder "johndoe@example.com" is shown in light gray
+- **WHEN** the user loads the LoginBreeze page
+- **THEN** the heading reads "Log In"
+- **AND** the heading is in white text, bold, uppercase
 
-#### Scenario: Email input accepts text
+### Requirement: Form fields
 
-- **WHEN** the user types into the email field
-- **THEN** the typed text appears in the field
+The form SHALL include Username and Password input fields with underline-style bottom-border-only styling and left icons.
 
-### Requirement: Renders password input field
+#### Scenario: Username field with icon
 
-The login form SHALL display a labeled password input field.
+- **WHEN** the user loads the LoginBreeze page
+- **THEN** a "Username" input field is visible
+- **AND** the input has a user icon on the left
+- **AND** the input has a bottom border only (underline style)
+- **AND** the placeholder text reads "Username"
 
-#### Scenario: Password label is visible
+#### Scenario: Password field with icon
 
-- **WHEN** the page loads
-- **THEN** a label "Password" is displayed above or beside the password field
+- **WHEN** the user loads the LoginBreeze page
+- **THEN** a "Password" input field is visible
+- **AND** the input has a lock icon on the left
+- **AND** the input has a bottom border only (underline style)
+- **AND** the placeholder text reads "Password"
+- **AND** the input type is password (masked characters)
 
-#### Scenario: Password input masks characters
+### Requirement: Remember me checkbox
 
-- **WHEN** the user types into the password field
-- **THEN** the characters are masked (shown as dots or asterisks)
+The form SHALL include a "Remember me" checkbox with an indigo accent color, unchecked by default.
 
-### Requirement: Renders remember me checkbox
+#### Scenario: Remember me checkbox unchecked
 
-The login form SHALL display a "Remember me" checkbox below the password field.
+- **WHEN** the user loads the LoginBreeze page
+- **THEN** a "Remember me" checkbox is visible
+- **AND** the checkbox is unchecked by default
 
-#### Scenario: Checkbox is visible and unchecked by default
-
-- **WHEN** the page loads
-- **THEN** the "Remember me" checkbox is displayed and unchecked
-
-#### Scenario: Checkbox can be toggled
+#### Scenario: Checkbox toggles
 
 - **WHEN** the user clicks the "Remember me" checkbox
-- **THEN** the checkbox toggles between checked and unchecked states
+- **THEN** the checkbox becomes checked
+- **AND** when clicked again, the checkbox becomes unchecked
 
-### Requirement: Renders forgot password link
+### Requirement: Login button
 
-The login form SHALL display a "Forgot password?" link aligned to the right on the same row as the remember me checkbox.
+The form SHALL include a full-width white pill-shaped "Login" button.
 
-#### Scenario: Forgot password link is visible
+#### Scenario: Login button visible
 
-- **WHEN** the page loads
-- **THEN** "Forgot password?" is displayed to the right of the remember me checkbox
+- **WHEN** the user loads the LoginBreeze page
+- **THEN** a "Login" button is visible
+- **AND** the button background is white
+- **AND** the button text is dark gray
+- **AND** the button has a pill shape (rounded-full)
+- **AND** the button is full-width
 
-### Requirement: Renders login button
+### Requirement: Forgot Password link
 
-The login form SHALL display a full-width rounded "LOGIN" button.
+The card SHALL display a "Forgot Password?" link below the form in white text.
 
-#### Scenario: Button is visible with correct label
+#### Scenario: Forgot password link
 
-- **WHEN** the page loads
-- **THEN** a button labeled "LOGIN" is displayed full-width with pill-shaped rounded corners
+- **WHEN** the user loads the LoginBreeze page
+- **THEN** a "Forgot Password?" link is visible
+- **AND** the link is centered below the form
+- **AND** the link has white text
 
-#### Scenario: Button has brand color
+### Requirement: Responsive behavior
 
-- **WHEN** the page loads
-- **THEN** the login button has a blue (#5b6abf) background with white text
+The layout SHALL be centered and responsive on all viewport sizes.
 
-#### Scenario: Button hover effect
+#### Scenario: Mobile layout
 
-- **WHEN** the user hovers over the login button
-- **THEN** the button background darkens slightly
+- **WHEN** the user loads the LoginBreeze page on a mobile device
+- **THEN** the card remains centered
+- **AND** the card has horizontal padding
+- **AND** the form remains fully functional
 
-### Requirement: Renders social login section
+### Requirement: Footer
 
-The login form SHALL display an "or sign up using" text followed by social login icons (Facebook and Twitter).
+The template SHALL include a footer linking to Component Dock.
 
-#### Scenario: Social login text is visible
+#### Scenario: Component Dock link
 
-- **WHEN** the page loads
-- **THEN** the text "or sign up using" is displayed below the login button
+- **WHEN** the user loads the LoginBreeze page
+- **THEN** a footer is visible below the card
+- **AND** the footer contains a link to https://www.componentdock.com/
+- **AND** the link text reads "More templates at Component Dock"
+- **AND** the link opens in a new tab
 
-#### Scenario: Facebook icon is visible
+## Verification Checklist
 
-- **WHEN** the page loads
-- **THEN** a circular Facebook icon button (blue #3b5998 background) is displayed
-
-#### Scenario: Twitter icon is visible
-
-- **WHEN** the page loads
-- **THEN** a circular Twitter icon button (blue #1da1f2 background) is displayed
-
-### Requirement: Footer links to Component Dock
-
-The login page SHALL display a footer with a link to https://www.componentdock.com/.
-
-#### Scenario: Footer is visible
-
-- **WHEN** the page loads
-- **THEN** a footer section with a "Component Dock" link is present
-
-## Verification checklist
-
-- [ ] Split layout renders correctly (image left, form right)
-- [ ] Responsive: stacks on mobile (<768px)
-- [ ] "Login to continue" heading centered
-- [ ] Email input with placeholder "johndoe@example.com"
-- [ ] Password input with masked characters
-- [ ] "Remember me" checkbox toggles
-- [ ] "Forgot password?" link visible and right-aligned
-- [ ] LOGIN button full-width, pill-shaped, brand blue
-- [ ] Button hover darkens
-- [ ] "or sign up using" text visible
-- [ ] Facebook and Twitter circular icon buttons visible
-- [ ] Footer links to Component Dock
+- [ ] Full-viewport city skyline background with dark overlay
+- [ ] Centered gradient card (purple-to-indigo)
+- [ ] White circular logo icon with mountain/document icon
+- [ ] "Log In" heading in white, uppercase
+- [ ] Username input with user icon and underline border
+- [ ] Password input with lock icon and underline border
+- [ ] "Remember me" checkbox with indigo accent
+- [ ] White pill-shaped "Login" button, full-width
+- [ ] "Forgot Password?" link in white
+- [ ] Responsive centering on all viewports
+- [ ] Footer links to https://www.componentdock.com/ ("Component Dock")
 - [ ] No ColorLib references in app code
-- [ ] Tests pass at 100% coverage
-- [ ] No new dependencies added
+- [ ] Tests at 100% coverage

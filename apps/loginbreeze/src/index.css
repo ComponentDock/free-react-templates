@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Card gradient start — purple (#7c3aed). */
+  --color-card-start: #7c3aed;
+
+  /* Card gradient end — indigo (#6366f1). */
+  --color-card-end: #6366f1;
+
+  /* Input underline — rgba white (30% opacity). */
+  --color-input-border: rgba(255, 255, 255, 0.3);
+
+  /* Checkbox accent — indigo (#818cf8). */
+  --color-accent: #818cf8;
+
+  /* Font: Poppins via Google Fonts (loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
