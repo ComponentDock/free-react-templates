@@ -10,142 +10,119 @@ Recreation of ColorLib **Login Form V17** as a React 19 + Vite + Tailwind CSS 4 
 - **New name:** `loginbolt` (app folder `apps/loginbolt`, package `@free-react-templates/loginbolt`)
 - **Deploy URL:** https://loginbolt.free.componentdock.com
 
-## Layout Overview
+## Requirements
 
-Full-viewport split-screen login form:
+### Requirement: Split-screen layout
 
-- **Left half (50%):** White background, centered form content
-- **Right half (50%):** Background image with dark overlay (rgba(0,0,0,0.3))
-- Card is flex row-reverse so the image appears on the right in the DOM order
-- Vertically and horizontally centered on a light gray (#f2f2f2) page background
-- Max card width: 1170px; responsive: stacks vertically on mobile (≤768px)
+The login page SHALL display a split-screen layout with a form panel on the left and an image panel on the right, centered on a light gray (#f2f2f2) background.
 
-## Design Tokens (extracted from source CSS)
+#### Scenario: Desktop layout
 
-| Token | Value | Usage |
-|---|---|---|
-| Brand color (green) | `#00ad5f` | Button background, focus border, accent links, "Sign Up" text |
-| Button hover | `#333333` | Button background on hover |
-| Body text | `#666666` | Input text, paragraph text, base link color |
-| Link hover | `#333333` | Anchor hover color |
-| Placeholder text | `#999999` | Input placeholder color |
-| Title text | `#555555` | Form title "Account Login" |
-| Light text / "Forgot" | `#999999` | "Forgot" label text |
-| Page background | `#f2f2f2` | Full-viewport outer background |
-| Card background | `#ffffff` | White form card |
-| Input border | `#e6e6e6` | Default input border |
-| Input focus border | `#00ad5f` | Green border on focus (animated scale-in) |
-| Error text/border | `#c80000` | Validation alert text and border |
-| Font (body) | Poppins (Regular, Medium, SemiBold, Bold) | All text |
-| Font (button) | Montserrat Bold | Button label only |
-| Button border-radius | `3px` | Nearly square with slight rounding |
-| Button height | `50px` | Full-width button |
-| Input height | `55px` | Text input fields |
-| Input font-size | `18px` | Input placeholder/text |
-| Title font-size | `20px` | Form heading |
-| Title style | Uppercase, letter-spacing 2px | Heading treatment |
-| Button style | Uppercase, letter-spacing 1px, 12px | Button label |
-| Image overlay | `rgba(0,0,0,0.3)` | Dark overlay on right-side image |
-| Focus transition | `0.4s ease` | All interactive transitions |
+- **WHEN** the viewport is wider than 768px
+- **THEN** the card shows a form on the left and an image on the right
+- **AND** the image has a dark semi-transparent overlay (rgba(0,0,0,0.3))
+- **AND** the card is vertically and horizontally centered
 
-## Gherkin Requirements
+#### Scenario: Mobile layout
 
-### Feature: Login Form
+- **WHEN** the viewport is 768px or narrower
+- **THEN** the form and image stack vertically
+- **AND** the form occupies full width
 
-  Background:
-    Given the user is on the login page
-    Then a centered white card is displayed on a light gray background
+### Requirement: Form title
 
-  Scenario: Page layout
-    Given the viewport is wider than 768px
-    Then the card shows a form on the left and an image on the right
-    And the image has a dark semi-transparent overlay
-    And the card is vertically and horizontally centered
+The form SHALL display the title "Account Login" in uppercase with letter spacing (#555555).
 
-  Scenario: Mobile layout
-    Given the viewport is 768px or narrower
-    Then the form and image stack vertically
-    And the form occupies full width
+#### Scenario: Title appearance
 
-  Scenario: Form title
-    Then the form displays the title "Account Login"
-    And the title is uppercase with letter spacing
-    And the title text color is #555555
+- **WHEN** the page loads
+- **THEN** the form displays the title "Account Login"
+- **AND** the title is uppercase with letter spacing
+- **AND** the title text color is #555555
 
-  Scenario: Input fields — side by side on desktop
-    Given the viewport is wider than 576px
-    Then the username and password inputs are displayed side by side
-    And each input occupies 50% of the form width
+### Requirement: Input fields
 
-  Scenario: Input fields — stacked on mobile
-    Given the viewport is 576px or narrower
-    Then the username and password inputs are stacked vertically
+The form SHALL display username and password input fields side by side on desktop and stacked on mobile.
 
-  Scenario: Input field appearance
-    Then each input has a 1px solid #e6e6e6 border
-    And the input height is 55px
-    And the input font is Poppins Regular 18px
-    And the placeholder text color is #999999
-    And there is no visible outline on focus
+#### Scenario: Desktop input layout
 
-  Scenario: Input focus effect
-    When the user focuses an input field
-    Then a green (#00ad5f) border appears around the input
-    And the border animates in with a scale transition over 0.4s
+- **WHEN** the viewport is wider than 576px
+- **THEN** the username and password inputs are displayed side by side
+- **AND** each input occupies 50% of the form width
 
-  Scenario: Sign In button
-    Then a full-width "Sign In" button is displayed below the inputs
-    And the button background is #00ad5f
-    And the button text is white, uppercase, Montserrat Bold 12px
-    And the button has a 3px border radius
-    And the button height is 50px
+#### Scenario: Mobile input layout
 
-  Scenario: Sign In button hover
-    When the user hovers over the Sign In button
-    Then the button background changes to #333333
-    And the transition is 0.4s
+- **WHEN** the viewport is 576px or narrower
+- **THEN** the username and password inputs are stacked vertically
 
-  Scenario: Forgot password link
-    Then a "Forgot" text is displayed in gray (#999999)
-    And a "User name / password?" link follows in green (#00ad5f)
+#### Scenario: Input field appearance
 
-  Scenario: Sign Up link
-    Then a "Sign Up" link is displayed at the bottom of the form
-    And the link text is green (#00ad5f), uppercase
+- **WHEN** the page loads
+- **THEN** each input has a 1px solid #e6e6e6 border
+- **AND** the input height is 55px
+- **AND** the input font is Poppins Regular 18px
+- **AND** the placeholder text color is #999999
 
-  Scenario: Validation — empty username
-    When the user clicks Sign In without entering a username
-    Then a validation message appears near the username input
-    And the message says "Type user name"
+#### Scenario: Input focus effect
 
-  Scenario: Validation — empty password
-    When the user clicks Sign In without entering a password
-    Then a validation message appears near the password input
-    And the message says "Type password"
+- **WHEN** the user focuses an input field
+- **THEN** a green (#00ad5f) border appears around the input
+- **AND** the border animates in with a scale transition over 0.4s
 
-  Scenario: Footer
-    Then the page footer links to https://www.componentdock.com/
-    And the footer text reads "Component Dock"
+### Requirement: Sign In button
 
-## Verification Checklist
+The form SHALL display a full-width "Sign In" button with green background.
 
-- [ ] App folder created at `apps/loginbolt/`
-- [ ] Package name is `@free-react-templates/loginbolt`
-- [ ] `public/CNAME` contains `loginbolt.free.componentdock.com`
-- [ ] `package.json` homepage is `https://loginbolt.free.componentdock.com`
-- [ ] Split-screen layout: form left, image right (row-reverse for DOM order)
-- [ ] Background image with dark overlay on right panel
-- [ ] "Account Login" title: uppercase, letter-spacing, #555555
-- [ ] Username + Password inputs side by side on desktop, stacked on mobile
-- [ ] Input focus: green border animation (scale transition)
-- [ ] Green Sign In button: Montserrat Bold, uppercase, 3px radius
-- [ ] Button hover turns #333333
-- [ ] "Forgot" + "User name / password?" link in correct colors
-- [ ] "Sign Up" link at bottom in green uppercase
-- [ ] Validation messages on empty submit
-- [ ] Footer links to Component Dock
-- [ ] No references to ColorLib in app code
-- [ ] `npm run test:coverage` at 100%
-- [ ] `npm run build` succeeds
-- [ ] `npm run lint` passes
-- [ ] `npm run typecheck` passes
+#### Scenario: Button appearance
+
+- **WHEN** the page loads
+- **THEN** a full-width "Sign In" button is displayed below the inputs
+- **AND** the button background is #00ad5f
+- **AND** the button text is white, uppercase, Montserrat Bold 12px
+- **AND** the button has a 3px border radius
+- **AND** the button height is 50px
+
+#### Scenario: Button hover
+
+- **WHEN** the user hovers over the Sign In button
+- **THEN** the button background changes to #333333
+
+### Requirement: Forgot password and Sign Up links
+
+The form SHALL display a forgot password row and a Sign Up link.
+
+#### Scenario: Forgot password row
+
+- **WHEN** the page loads
+- **THEN** a "Forgot" text is displayed in gray (#999999)
+- **AND** a "User name / password?" link follows in green (#00ad5f)
+
+#### Scenario: Sign Up link
+
+- **WHEN** the page loads
+- **THEN** a "Sign Up" link is displayed at the bottom of the form
+- **AND** the link text is green (#00ad5f), uppercase
+
+### Requirement: Form validation
+
+The form SHALL validate that both username and password are provided before submission.
+
+#### Scenario: Empty username validation
+
+- **WHEN** the user clicks Sign In without entering a username
+- **THEN** a validation message "Type user name" appears near the username input
+
+#### Scenario: Empty password validation
+
+- **WHEN** the user clicks Sign In without entering a password
+- **THEN** a validation message "Type password" appears near the password input
+
+### Requirement: Footer
+
+The page footer SHALL link to Component Dock.
+
+#### Scenario: Footer link
+
+- **WHEN** the page loads
+- **THEN** the page footer links to https://www.componentdock.com/
+- **AND** the footer text reads "Made with Component Dock"
