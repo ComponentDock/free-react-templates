@@ -2208,7 +2208,7 @@
 - [x] **Newsbit** — [colorlib](https://colorlib.com/wp/template/newsbit/) · [bullion](https://bullion.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/newsbit-free-template.jpg)
 - [x] **Newsflex** — [colorlib](https://colorlib.com/wp/template/newsflex/) · [bulletin](https://bulletin.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/newsbox-free-template.jpg)
 - [x] **Newspaper** — [colorlib](https://colorlib.com/wp/template/newspaper/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/newspaper-free-template.jpg) · [broadsheet](https://broadsheet.free.componentdock.com)
-- [~] **Nikki** — [colorlib](https://colorlib.com/wp/template/nikki/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nikki-free-template.jpg)
+- [x] **Nikki** — [colorlib](https://colorlib.com/wp/template/nikki/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nikki-free-template.jpg) · [byline](https://byline.free.componentdock.com)
 - [x] **Quitelight** — [colorlib](https://colorlib.com/wp/template/quitelight/) · [lantern](https://lantern.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/quitelight-free-template.jpg)
 - [x] **Revive** — [colorlib](https://colorlib.com/wp/template/revive/) · [rekindle](https://rekindle.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/revive-free-template-1.jpg)
 - [x] **Sensive** — [colorlib](https://colorlib.com/wp/template/sensive/) · [serif](https://serif.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sensive-free-template.jpg)
