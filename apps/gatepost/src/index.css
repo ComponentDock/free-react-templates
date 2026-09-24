@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand color — warm red-orange (#e65c4a). */
+  --color-primary: #e65c4a;
+
+  /* Text on dark — white. */
+  --color-ink: #ffffff;
+
+  /* Subtitle text — white/70. */
+  --color-caption: rgba(255, 255, 255, 0.7);
+
+  /* Input background — white/10. */
+  --color-glass: rgba(255, 255, 255, 0.1);
+
+  /* Input border on focus — white/40. */
+  --color-glass-border: rgba(255, 255, 255, 0.4);
+
+  /* Font: Poppins via Google Fonts. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
