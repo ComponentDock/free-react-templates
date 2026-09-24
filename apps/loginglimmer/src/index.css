@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-opensans: 'Open Sans', sans-serif;
+  --color-brand: #4272d7;
+  --color-brand-hover: #333333;
+  --color-input-border: #e6e6e6;
+  --color-text-body: #666666;
+  --color-text-title: #555555;
+  --color-text-muted: #999999;
+  --color-link: #4272d7;
+  --color-page-bg: #e9faff;
+  --color-error: #c80000;
+}
