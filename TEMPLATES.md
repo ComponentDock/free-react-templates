@@ -2212,7 +2212,7 @@
 - [x] **Quitelight** — [colorlib](https://colorlib.com/wp/template/quitelight/) · [lantern](https://lantern.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/quitelight-free-template.jpg)
 - [x] **Revive** — [colorlib](https://colorlib.com/wp/template/revive/) · [rekindle](https://rekindle.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/revive-free-template-1.jpg)
 - [x] **Sensive** — [colorlib](https://colorlib.com/wp/template/sensive/) · [serif](https://serif.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sensive-free-template.jpg)
-- [~] **Smashed** — [colorlib](https://colorlib.com/wp/template/smashed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/smashed-free-template.jpg)
+- [x] **Smashed** — [colorlib](https://colorlib.com/wp/template/smashed/) · [shatter](https://shatter.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/smashed-free-template.jpg)
 - [x] **Stuff** — [colorlib](https://colorlib.com/wp/template/stuff/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stuff-free-template.jpg) · [miscellany](https://miscellany.free.componentdock.com)
 - [ ] **Techmag** — [colorlib](https://colorlib.com/wp/template/techmag/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/techmag-free-template.jpg)
 - [ ] **The Hustle Hour** — [colorlib](https://colorlib.com/wp/template/the-hustle-hour/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hustlehour-template-1771943880509.jpg)
