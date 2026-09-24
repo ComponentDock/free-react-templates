@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Healnova brand palette — teal/blue from the ColorLib "Medically" design. */
+  --color-brand: #31b0d5;
+  --color-brand-dark: #2595b8;
+
+  /* Ink — dark headings. */
+  --color-ink: #1a1a2e;
+  --color-ink-dark: #101020;
+
+  /* Paper — light section background (#f7f8f9). */
+  --color-paper: #f7f8f9;
+
+  /* Mist — muted body text. */
+  --color-mist: #6b7280;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the teal/blue. */
+  --color-primary-50: #ecf8fc;
+  --color-primary-100: #d0eef7;
+  --color-primary-200: #a6dfef;
+  --color-primary-300: #6cc9e3;
+  --color-primary-400: #3badd5;
+  --color-primary-500: #31b0d5;
+  --color-primary-600: #2595b8;
+  --color-primary-700: #1f7a99;
+  --color-primary-800: #1c6580;
+  --color-primary-900: #1a536a;
+
+  /* Original fonts: "Open Sans" (body) + "Playfair Display" (headings). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
