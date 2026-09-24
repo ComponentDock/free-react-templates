@@ -2184,7 +2184,7 @@
 - [x] **Login Form V7** — [colorlib](https://colorlib.com/wp/template/login-form-v7/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v7.jpg) · [loginlens](https://loginlens.free.componentdock.com)
 - [x] **Login Form V8** — [colorlib](https://colorlib.com/wp/template/login-form-v8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v8.jpg) · [loginport](https://free-react-templates-loginport.surge.sh)
 - [x] **Login Form V9** — [colorlib](https://colorlib.com/wp/template/login-form-v9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v9.jpg) · [logineclipse](https://logineclipse.free.componentdock.com)
-- [~] **Wordpress Login Customizer** — [colorlib](https://colorlib.com/wp/template/wordpress-login-customizer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/creative-colorlib-login-form.jpg)
+- [x] **Wordpress Login Customizer** — [colorlib](https://colorlib.com/wp/template/wordpress-login-customizer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/creative-colorlib-login-form.jpg) · [logintune](https://logintune.free.componentdock.com)
 
 ## Magazine (34)
 
