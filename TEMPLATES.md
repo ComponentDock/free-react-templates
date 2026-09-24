@@ -2216,7 +2216,7 @@
 - [x] **Stuff** — [colorlib](https://colorlib.com/wp/template/stuff/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stuff-free-template.jpg) · [miscellany](https://miscellany.free.componentdock.com)
 - [x] **Techmag** — [colorlib](https://colorlib.com/wp/template/techmag/) · [bytepress](https://bytepress.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/techmag-free-template.jpg)
 - [ ] **The Hustle Hour** — [colorlib](https://colorlib.com/wp/template/the-hustle-hour/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hustlehour-template-1771943880509.jpg)
-- [~] **Thegazette** — [colorlib](https://colorlib.com/wp/template/thegazette/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thegazette-free-template.jpg)
+- [x] **Thegazette** — [colorlib](https://colorlib.com/wp/template/thegazette/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thegazette-free-template.jpg) · [newsclip](https://newsclip.free.componentdock.com)
 - [x] **Videomag** — [colorlib](https://colorlib.com/wp/template/videomag/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/videomag-free-template.jpg) · [montage](https://montage.free.componentdock.com)
 - [ ] **Viral** — [colorlib](https://colorlib.com/wp/template/viral/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/viralstory-free-template.jpg)
 - [x] **Vizew** — [colorlib](https://colorlib.com/wp/template/vizew/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vizew-free-template.jpg) · [newsline](https://newsline.free.componentdock.com)
