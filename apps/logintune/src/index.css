@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #6ab04c;
+  --color-brand-hover: #5a9e40;
+  --color-bg-page: #6ab04c;
+  --color-bg-card: #ffffff;
+  --color-bg-input: #f0f0f0;
+  --color-text: #333333;
+  --color-text-muted: #999999;
+  --color-text-link: #6ab04c;
+}
