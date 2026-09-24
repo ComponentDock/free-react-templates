@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-ubuntu: 'Ubuntu', sans-serif;
+  --font-josefin: 'Josefin Sans', sans-serif;
+  --color-brand: #57b846;
+  --color-brand-dark: #1b3815;
+  --color-input-bg: #ebebeb;
+  --color-input-text: #1b3815;
+  --color-text-muted: #999999;
+  --color-error: #c80000;
+}
