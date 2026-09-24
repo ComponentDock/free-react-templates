@@ -2226,7 +2226,7 @@
 ## Medical (32)
 
 - [x] **Aesthetic** — [colorlib](https://colorlib.com/wp/template/aesthetic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aesthetic-free-template.jpg) · [vitalis](https://vitalis.free.componentdock.com)
-- [~] **Caremed** — [colorlib](https://colorlib.com/wp/template/caremed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/caremed-free-template.jpg)
+- [x] **Caremed** — [colorlib](https://colorlib.com/wp/template/caremed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/caremed-free-template.jpg) · [carepoint](https://carepoint.free.componentdock.com)
 - [x] **Dentist** · [dentalink](https://dentalink.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/dentist/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-free-template-1.jpg)
 - [x] **Dento** — [colorlib](https://colorlib.com/wp/template/dento/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dento-free-template.jpg) · [dentalyn](https://free-react-templates-dentalyn.surge.sh)
 - [x] **Docmed** — [colorlib](https://colorlib.com/wp/template/docmed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/docmed-free-template.jpg) · [salus](https://salus.free.componentdock.com)
