@@ -1,0 +1,69 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pressly brand palette — recreated from the ColorLib "Magaznpro" template.
+     Design tokens extracted from live CSS analysis:
+     - Brand pink/magenta #ff00dd (#f0d) — primary accent
+     - Heading #000, body #646464, slider date #5E5E5E
+     - Social icon grey #D4D4E1, section title border #E8E9FF
+     - Light section bg #FFF6FE, card borders #f0e9ff
+     - Category badges: teal #00CEB2, blue #0154F7, orange-red #F04506,
+       yellow #FBCE0F, purple #DD00FF
+     - Font: DM Sans (Google Fonts) */
+  --color-accent: #ff00dd;
+  --color-heading: #000000;
+  --color-body: #646464;
+  --color-meta: #5e5e5e;
+  --color-social-grey: #d4d4e1;
+  --color-section-border: #e8e9ff;
+  --color-light-bg: #fff6fe;
+  --color-card-border: #f0e9ff;
+  --color-badge-teal: #00ceb2;
+  --color-badge-blue: #0154f7;
+  --color-badge-orange: #f04506;
+  --color-badge-yellow: #fbce0f;
+  --color-badge-purple: #dd00ff;
+  --color-footer-bg: #1a1a2e;
+
+  /* primary scale so shared Button/ButtonLink (bg-primary-600) render the
+     accent pink fills; 700 = darker hover shade */
+  --color-primary: #ff00dd;
+  --color-primary-50: #fff0fb;
+  --color-primary-100: #ffe0f7;
+  --color-primary-200: #ffc2ef;
+  --color-primary-300: #ff94e3;
+  --color-primary-400: #ff55d1;
+  --color-primary-500: #ff22c3;
+  --color-primary-600: #ff00dd;
+  --color-primary-700: #d400b8;
+  --color-primary-800: #ab0093;
+  --color-primary-900: #7a006a;
+
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #646464;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+/* Hero carousel fade animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-in-out;
+}
