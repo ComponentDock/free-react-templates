@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Page background — light gray (#ebebeb). */
+  --color-page: #ebebeb;
+
+  /* Card background — white. */
+  --color-card: #ffffff;
+
+  /* Text dark — labels, title (#555555). */
+  --color-ink: #555555;
+
+  /* Placeholder / muted text (#999999). */
+  --color-muted: #999999;
+
+  /* Input border — subtle gray (#e6e6e6). */
+  --color-border: #e6e6e6;
+
+  /* Focus / accent green (#57b846). */
+  --color-accent: #57b846;
+
+  /* Button background — dark (#333333). */
+  --color-button: #333333;
+
+  /* Button text — white. */
+  --color-button-text: #ffffff;
+
+  /* Font: Raleway via Google Fonts (loaded in index.html). */
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
