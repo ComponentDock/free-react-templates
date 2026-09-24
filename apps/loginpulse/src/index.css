@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --color-brand-cyan: #00dbde;
+  --color-brand-magenta: #fc00ff;
+  --color-card-bg: #ffffff;
+  --color-text-heading: #555555;
+  --color-text-label: #555555;
+  --color-text-muted: #999999;
+  --color-text-input: #333333;
+  --color-text-placeholder: #555555;
+  --color-input-bg: #f7f7f7;
+  --color-input-border: #e6e6e6;
+  --color-button-bg: #333333;
+  --color-button-text: #ffffff;
+  --color-facebook-blue: #3b5998;
+  --color-focus-border: #fc00ff;
+}
