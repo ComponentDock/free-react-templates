@@ -2199,7 +2199,7 @@
 - [x] **Magazine** — [colorlib](https://colorlib.com/wp/template/magazine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/magazine-free-template.jpg) · [lede](https://lede.free.componentdock.com)
 - [x] **Magaznpro** — [colorlib](https://colorlib.com/wp/template/magaznpro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/magaznpro-free-template.jpg) · [pressly](https://pressly.free.componentdock.com)
 [x] **Magdesign** — [colorlib](https://colorlib.com/wp/template/magdesign/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/magdesign-free-template.jpg) · [newsprint](https://newsprint.free.componentdock.com)
-- [~] **Magnews** — [colorlib](https://colorlib.com/wp/template/magnews/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/magnews-free-template.jpg)
+- [x] **Magnews** — [colorlib](https://colorlib.com/wp/template/magnews/) · [pressbox](https://pressbox.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/magnews-free-template.jpg)
 - [x] **Magnews2** — [colorlib](https://colorlib.com/wp/template/magnews2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/magnews2-free-template.jpg) · [newscope](https://newscope.free.componentdock.com)
 - [x] **Megasis** — [colorlib](https://colorlib.com/wp/template/megasis/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/megasis-colorlib-template.jpg) · [kicker](https://kicker.free.componentdock.com)
 - [ ] **Megazine** — [colorlib](https://colorlib.com/wp/template/megazine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/megazine-free-template.jpg)
