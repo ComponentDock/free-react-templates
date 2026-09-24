@@ -2234,7 +2234,7 @@
 - [x] **Drimo** — [colorlib](https://colorlib.com/wp/template/drimo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/drimo-free-multi-purpose-template.jpg) · [ripply](https://ripply.free.componentdock.com)
 - [x] **Drpro** — [colorlib](https://colorlib.com/wp/template/drpro/) · [![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/drpro-free-template-1.jpg)] · [praxis](https://praxis.free.componentdock.com)
 - [x] **Health** — [colorlib](https://colorlib.com/wp/template/health/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/health-free-template.jpg) · [vitaheal](https://vitaheal.free.componentdock.com)
-- [~] **Healthcare** — [colorlib](https://colorlib.com/wp/template/healthcare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/healthcare-free-template.jpg)
+- [x] **Healthcare** — [colorlib](https://colorlib.com/wp/template/healthcare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/healthcare-free-template.jpg) · [curenova](https://curenova.free.componentdock.com)
 - [x] **Hospice** — [colorlib](https://colorlib.com/wp/template/hospice/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hospice-free-template.jpg) · [sana](https://sana.free.componentdock.com)
 - [ ] **Medart** — [colorlib](https://colorlib.com/wp/template/medart/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medart-free-template.jpg)
 - [x] **Medcare** — [colorlib](https://colorlib.com/wp/template/medcare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medcare-free-template.jpg) · [medwell](https://medwell.free.componentdock.com)
