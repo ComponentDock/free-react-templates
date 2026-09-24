@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --color-brand: #6675df;
+  --color-brand-hover: #333333;
+  --color-input-border: #e6e6e6;
+  --color-input-placeholder: #999999;
+  --color-text-body: #666666;
+  --color-text-title: #333333;
+  --color-text-label: #555555;
+  --color-page-bg: #f2f2f2;
+  --color-form-bg: #f7f7f7;
+  --color-error: #c80000;
+  --color-facebook: #3b5998;
+  --color-twitter: #1da1f2;
+}
