@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+/* LifeClinic brand palette — medical & healthcare template
+   Primary blue #006cff, red CTA #ff0000, dark navy #081f3e,
+   body text #1d1d1d / #57595c, section bg #f5f7f9, footer #020f20.
+   Font: Roboto (Google Fonts). */
+@theme {
+  --color-primary-50: #e6f0ff;
+  --color-primary-100: #b3d1ff;
+  --color-primary-200: #80b3ff;
+  --color-primary-300: #4d94ff;
+  --color-primary-400: #1a75ff;
+  --color-primary-500: #006cff;
+  --color-primary-600: #0056cc;
+  --color-primary-700: #004199;
+  --color-primary-800: #002b66;
+  --color-primary-900: #001633;
+
+  --color-brand: #006cff;
+  --color-brand-hover: #0056cc;
+  --color-cta: #ff0000;
+  --color-cta-hover: #006cff;
+  --color-navy: #081f3e;
+  --color-navy-light: #0a2a4f;
+  --color-footer-bg: #020f20;
+  --color-section-bg: #f5f7f9;
+  --color-heading: #1d1d1d;
+  --color-muted: #57595c;
+  --color-topbar-text: #b5b5b5;
+  --color-card-border: #e9ecef;
+
+  --font-heading: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #1d1d1d;
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background: #006cff;
+    color: #fff;
+  }
+}
