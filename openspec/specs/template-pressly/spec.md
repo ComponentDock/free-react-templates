@@ -1,189 +1,187 @@
-# Template: Pressly (Magazine & News)
+# Template: Pressly (Magazine / News Template)
 
 ## Purpose
 
-Pressly is a magazine/news template — a React recreation of the ColorLib free
-"Magaznpro" template (preview: https://preview.colorlib.com/theme/magaznpro/).
-Built under a different name with the monorepo stack: Vite + React 19 +
-Tailwind CSS 4 + TypeScript.
+Pressly is a single-page magazine / news website template in the
+free-react-templates monorepo. It is a React recreation of the
+ColorLib "Magaznpro" magazine template design (see TEMPLATES.md), built
+under a different name with the monorepo stack: Vite + React 19 + Tailwind
+CSS 4 + TypeScript.
 
-**Source mapping:** `apps/pressly` recreates
-`https://colorlib.com/wp/template/magaznpro/`.
+## Design reference
 
-### Design tokens (from live stylesheet, verified via direct fetch)
+- **Original:** ColorLib "Magaznpro" — free responsive magazine template
+  (source: https://colorlib.com/wp/template/magaznpro/).
+- **Live preview:** https://preview.colorlib.com/theme/magaznpro/
+- **Font:** DM Sans (Google Fonts, weights 400/500/700)
+- **Brand pink/magenta:** `#f0d` (primary accent — buttons, nav bg, links)
+- **Heading color:** `#000`
+- **Body text:** `#646464`
+- **Slider caption date:** `#5E5E5E`
+- **Social icon grey:** `#D4D4E1`
+- **Section title border:** `#E8E9FF`
+- **Light section bg:** `#FFF6FE` (Technology section)
+- **Card borders:** `#f0e9ff`
+- **Category badges:** teal `#00CEB2`, blue `#0154F7`, orange-red `#F04506`, yellow `#FBCE0F`, purple `#DD00FF`
 
-| Token | Value | Use |
-|-------|-------|-----|
-| Font | `"DM Sans"` (Google Fonts, weights 400/500/700) | Body and headings; base 16px |
-| Brand pink | `#f0d` | Primary accent: CTA buttons, header nav bg, links, hover states, back-to-top, blog date badges, header-btn bg |
-| Heading ink | `#000` | h1-h6 color, font-weight 500-700 |
-| Body text | `#646464` | Paragraphs, muted text, 16px/30px line-height |
-| Slider caption text | `#5E5E5E` | Hero carousel caption date/author |
-| Social icon grey | `#D4D4E1` | Header social icons default color |
-| Section title border | `#E8E9FF` | Underline on section headings (1px solid) |
-| Light section bg | `#FFF6FE` | Very light pink background for Technology section |
-| Blog border | `#f0e9ff` | Card borders, sidebar widget borders |
-| Teal badge | `#00CEB2` | Default category badge (small-btn) |
-| Blue badge | `#0154F7` | Trending category badge |
-| Orange-red badge | `#F04506` | Food category badge |
-| Yellow badge | `#FBCE0F` | Entertainment category badge |
-| Purple badge | `#DD00FF` | Fashion category badge |
-| Button radius | `5px` | All buttons: boxed-btn, submit-btn, small-btn, header-btn |
-| Header nav bg | `#f0d` | Sticky navigation bar background, white text |
-| Card radius | `10px` | Hero slider caption card overlay |
-| Section padding | `120px top / 100px bottom` | Standard section spacing (section-padding) |
-| Preloader bg | `#f7f7f7` | Page preloader background |
-| Footer dark | `#3B4855` | Footer bottom bar, active pagination |
-| Back-to-top | `#f0d`, 50% radius | Circular fixed button bottom-right |
+## Structure (section order, 1:1 from original)
 
-### Visual design notes (from screenshot + DOM)
+1. **HEADER (top):** Social icons left (Facebook, Instagram, Twitter, LinkedIn, Tumblr as inline SVGs), center logo "Pressly" wordmark, right: search icon + "Page" dropdown + "Sign in" button
+2. **HEADER (bottom/sticky):** Nav bar with pink `#f0d` background, white text. Links: Home, Lifestyle, Food, Review, Sports, Movie, Fitness, Fashion
+3. **HERO CAROUSEL:** Full-width slider with large image, white overlay card at bottom with rounded corners, category badge pill, headline, date+author
+4. **TRENDING NOW:** "TRENDING NOW" heading with "View All" link. Left: large trending card with image + overlay + category badge. Right: grid of 5 smaller article cards
+5. **WHAT'S NEW:** "What's New" heading with tab row (All, Lifestyle, Travel, Fashion, Photography). Active tab has pink underline. Left: large featured article with image overlay. Right: 3 stacked smaller articles.
+6. **TECHNOLOGY:** Light pink `#FFF6FE` bg. "Technology" heading with "View All". 3-column: left 2 small articles, center large slider with video play icon, right 2 small articles.
+7. **INSTAGRAM STRIP:** Row of 6 square images with hover overlay icon
+8. **FOOTER:** Dark background. 4 columns: Logo+blurb+social icons, Useful links, Top Categories, Subscribe Newsletter form. Bottom: Copyright line with Component Dock credit.
+9. **Back-to-top button:** Floating pink circle
 
-- Full-width hero carousel with large images (678px height desktop), bottom-left
-  caption overlay card (white bg, 10px radius) with category badge + title + date.
-- "Trending Now" grid: 1 large card with overlaid caption (left, col-lg-4) + 5
-  standard cards (image on top, title below, category badge).
-- "What's New" tabbed section: tab nav (All/Lifestyle/Travel/Fashion/Photography),
-  left 6/7 column = image slider with caption, right 5/7 column = 3 stacked
-  post cards with image + title + date.
-- Technology section: light pink `#FFF6FE` bg, 3-column layout — left 2 stacked
-  posts, center large video slider with thumbnails, right 2 stacked posts.
-- Instagram feed: horizontal row of 6 square images with Instagram icon overlay.
-- Footer: 4-column (logo + description + social, Useful Links, Top Categories,
-  Newsletter signup form), dark bottom bar with copyright.
-- Category badges are color-coded pills (teal default, blue for trending, etc.)
-  with 5px radius.
+## Recreation decisions
+
+- Photos → seeded picsum placeholders (`picsum.photos/seed/pressly-<n>/<w>/<h>`)
+- Icons → lucide-react + inline SVGs for social icons (brand icons removed from lucide)
+- Fonts → Google Fonts DM Sans via `<link>` in `index.html`
+- Logo → bold text wordmark "Pressly" in brand pink
+- Footer links Component Dock (`https://www.componentdock.com/`)
+
+Pressly lives in `apps/pressly` and uses shared components from
+`packages/ui` (Button, ButtonLink, cn).
 
 ## Requirements
 
-### Requirement: Header renders with top bar, logo, and sticky navigation
+### Requirement: Header with social icons, logo, and controls
 
-Pressly SHALL render a header with a top bar containing social icons (left),
-centered logo, and a right section with search, page dropdown, and sign-in
-button. Below, a sticky navigation bar with a pink (`#f0d`) background shows
-category links (Home, Lifestyle, Food, Review, Sports, Movie, Fitness, Fashion).
+The system SHALL render a top header with social icon links on the left,
+a centered "Pressly" wordmark, and search + dropdown + sign-in on the right.
 
-#### Scenario: Desktop header displays all elements
+#### Scenario: Top header layout
 
-- **WHEN** the page loads on desktop viewport
-- **THEN** the header shows social icons, logo, search icon, page dropdown, sign-in button
-- **AND** the sticky nav bar displays all 8 category links with white text on pink background
-
-#### Scenario: Mobile header hides logo and shows mobile menu toggle
-
-- **WHEN** the page loads on mobile viewport
-- **THEN** the main logo is hidden and the mobile hamburger menu toggle is visible
-
-#### Scenario: Search input expands on focus
-
-- **WHEN** the user focuses the search input
-- **THEN** the input expands to reveal a text field with a pink bottom border
-
-### Requirement: Hero carousel renders with image slides and caption overlays
-
-Pressly SHALL render a full-width hero carousel with multiple image slides.
-Each slide displays a background image with a bottom-left caption card
-containing a category badge, headline title, and date/author info.
-
-#### Scenario: Hero slides render with captions
-
+- **GIVEN** the Pressly page is rendered
 - **WHEN** the page loads
-- **THEN** at least 3 hero slides are rendered with background images
-- **AND** each slide shows a category badge, title, and date/author text
-- **AND** the caption card has a white background with rounded corners
+- **THEN** the header SHALL show five social icon links (Facebook, Instagram, Twitter, LinkedIn, Tumblr) on the left
+- **AND** the centered wordmark "Pressly" SHALL be displayed
+- **AND** a search icon, "Page" dropdown, and "Sign in" button SHALL appear on the right
 
-#### Scenario: Hero carousel navigates between slides
+### Requirement: Sticky navigation bar
 
-- **WHEN** the user clicks the next/previous carousel arrow
-- **THEN** the carousel transitions to the adjacent slide
+The system SHALL render a pink navigation bar below the header with white nav links.
 
-### Requirement: Trending Now section displays post grid
+#### Scenario: Navigation links
 
-Pressly SHALL render a "Trending Now" section with a heading and a grid of
-post cards. The first card is a large featured post with an overlaid caption.
-Remaining cards show image on top with title and date below.
-
-#### Scenario: Trending section renders heading with View All link
-
+- **GIVEN** the navigation bar is rendered
 - **WHEN** the page loads
-- **THEN** the "Trending Now" heading is displayed with a "View All" link on the right
-- **AND** the heading has a bottom border separator
+- **THEN** the nav bar SHALL have a pink `#f0d` background
+- **AND** eight nav links SHALL be shown: Home, Lifestyle, Food, Review, Sports, Movie, Fitness, Fashion
+- **AND** all nav links SHALL have white text
 
-#### Scenario: Trending posts display with category badges
+### Requirement: Hero carousel
 
+The system SHALL render a full-width hero carousel with large images and white overlay cards.
+
+#### Scenario: Hero slide display
+
+- **GIVEN** the hero carousel is rendered
 - **WHEN** the page loads
-- **THEN** the trending grid shows post cards with images, category badges, titles, and dates
+- **THEN** a full-width image SHALL be displayed
+- **AND** a white overlay card SHALL appear at the bottom with a category badge, headline, date, and author
 
-### Requirement: What's New tabbed section filters posts by category
+#### Scenario: Hero carousel navigation
 
-Pressly SHALL render a "What's New" section with tabbed navigation (All,
-Lifestyle, Travel, Fashion, Photography). The active tab shows a split layout:
-left side has a large image slider with caption, right side has 3 stacked
-post cards.
+- **GIVEN** the hero carousel is displayed
+- **WHEN** the user clicks next/previous controls
+- **THEN** the displayed slide SHALL change
 
-#### Scenario: Tab navigation switches content
+### Requirement: Trending Now section
 
-- **WHEN** the user clicks a category tab
-- **THEN** the tab becomes visually active and the content area updates
+The system SHALL render a "TRENDING NOW" section with a large card and a grid of 5 smaller cards.
 
-#### Scenario: Default tab shows All content
+#### Scenario: Trending layout
 
+- **GIVEN** the trending section is rendered
 - **WHEN** the page loads
-- **THEN** the "All" tab is active by default
-- **AND** a large featured image with caption is shown on the left
-- **AND** 3 post cards are shown on the right
+- **THEN** a "TRENDING NOW" heading SHALL appear with a "View All" link
+- **AND** a large trending card with image, overlay, and category badge SHALL be shown on the left
+- **AND** 5 smaller article cards SHALL be shown in a grid on the right
 
-### Requirement: Technology section with video slider
+### Requirement: What's New section
 
-Pressly SHALL render a "Technology" section with a light pink (`#FFF6FE`)
-background. The layout has 3 columns: left 2 stacked post cards, center
-a large video/image slider with thumbnail navigation, right 2 stacked
-post cards.
+The system SHALL render a tabbed "What's New" section with tabs and articles.
 
-#### Scenario: Technology section renders with light background
+#### Scenario: Tab switching
 
+- **GIVEN** the What's New section is displayed
 - **WHEN** the page loads
-- **THEN** the Technology section has a light pink background
-- **AND** the heading shows "Technology" with a "View All" link
+- **THEN** tabs for All, Lifestyle, Travel, Fashion, Photography SHALL be shown
+- **AND** the "All" tab SHALL be active with a pink underline
 
-#### Scenario: Video slider displays with thumbnails
+#### Scenario: Featured and side articles
 
+- **GIVEN** the What's New section is displayed
 - **WHEN** the page loads
-- **THEN** the center column shows a large image slider with thumbnail navigation
-- **AND** a play button overlay is visible on the current slide
+- **THEN** a large featured article with image overlay SHALL be shown on the left
+- **AND** 3 stacked smaller articles SHALL be shown on the right
 
-### Requirement: Instagram feed row renders image thumbnails
+### Requirement: Technology section
 
-Pressly SHALL render a horizontal row of Instagram-style square image thumbnails
-with an Instagram icon overlay on hover.
+The system SHALL render a Technology section on a light pink background with a 3-column layout.
 
-#### Scenario: Instagram row displays images
+#### Scenario: Technology layout
 
+- **GIVEN** the Technology section is rendered
 - **WHEN** the page loads
-- **THEN** at least 6 square image thumbnails are displayed in a horizontal row
+- **THEN** the section SHALL have a `#FFF6FE` background
+- **AND** a "Technology" heading with "View All" link SHALL appear
+- **AND** 2 small articles SHALL appear on the left, a large slider with video play icon in the center, and 2 small articles on the right
 
-#### Scenario: Instagram images show icon on hover
+### Requirement: Instagram strip
 
-- **WHEN** the user hovers over an Instagram image
-- **THEN** an Instagram icon overlay appears
+The system SHALL render a row of 6 square images with hover overlay.
 
-### Requirement: Footer with branding, links, categories, and newsletter
+#### Scenario: Instagram grid
 
-Pressly SHALL render a footer with 4 columns: logo + description + social
-icons, Useful Links, Top Categories, and Newsletter signup form. Below,
-a dark bottom bar contains the copyright notice.
-
-#### Scenario: Footer renders all sections
-
+- **GIVEN** the Instagram strip is rendered
 - **WHEN** the page loads
-- **THEN** the footer shows the logo, description, social icons, Useful Links list, Top Categories list, and Newsletter form
+- **THEN** 6 square images SHALL be displayed in a row
 
-#### Scenario: Newsletter form accepts email
+### Requirement: Footer
 
-- **WHEN** the user types an email and clicks Subscribe
-- **THEN** the email input is processed (form action)
+The system SHALL render a dark footer with 4 columns and a copyright line.
 
-#### Scenario: Footer links to Component Dock
+#### Scenario: Footer content
 
-- **WHEN** the footer renders
-- **THEN** a link to https://www.componentdock.com/ is present with target="_blank"
-- **AND** the link text says "Component Dock"
+- **GIVEN** the footer is displayed
+- **WHEN** the page loads
+- **THEN** a dark-background footer SHALL show 4 columns: logo+blurb+social icons, Useful links, Top Categories, Subscribe Newsletter
+- **AND** the bottom copyright line SHALL link to https://www.componentdock.com/ branded as "Component Dock"
+
+### Requirement: Back-to-top button
+
+The system SHALL render a floating back-to-top button.
+
+#### Scenario: Back-to-top visibility
+
+- **GIVEN** the page is rendered
+- **WHEN** the user scrolls down
+- **THEN** a floating pink circular back-to-top button SHALL appear
+
+### Requirement: Page composition
+
+The system SHALL compose all sections in a single page with a main landmark and a document title.
+
+#### Scenario: Full page render
+
+- **GIVEN** the Pressly app is rendered
+- **WHEN** the page loads
+- **THEN** the page SHALL compose header, nav, hero, trending, what's new, technology, instagram, and footer in order
+- **AND** the document title SHALL be "Pressly — Magazine Template"
+
+## Verification checklist
+
+- [ ] `npm run spec:validate` passes
+- [ ] App typechecks
+- [ ] Tests at 100% coverage
+- [ ] Build succeeds
+- [ ] Section order matches reference 1:1
+- [ ] Design tokens in `@theme`
+- [ ] Footer links Component Dock
+- [ ] No references to 'colorlib' or 'magaznpro' in app source
