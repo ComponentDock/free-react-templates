@@ -1,230 +1,214 @@
-# Template: LifeClinic (Medical/Healthcare)
+# Template: LifeClinic (Medical & Healthcare Landing)
 
 ## Purpose
 
-Recreation of ColorLib **Medilife** as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
+LifeClinic is a medical & healthcare landing template in the
+free-react-templates monorepo. It is an original React recreation of the
+ColorLib free "Medilife" template
+(preview: https://preview.colorlib.com/theme/medilife/ — medical & healthcare landing),
+built under a different name with the monorepo stack: Vite + React 19 +
+Tailwind CSS 4 + TypeScript.
 
-- **ColorLib source:** https://colorlib.com/wp/template/medilife/
-- **Preview URL:** https://preview.colorlib.com/theme/medilife/
-- **New name:** `lifeclinic` (apps/lifeclinic, @free-react-templates/lifeclinic)
-- **Category:** Medical/Healthcare
-- **Design reference:** Screenshot at https://colorlib.com/wp/wp-content/uploads/sites/2/medilife-free-template.jpg
+Design tokens captured from the original (see docs/replication.md):
 
-## Design tokens
+- Font: Roboto (Google Fonts via `<link>`)
+- Primary brand: `#006cff` (blue — CTA hover, active nav, emergency bg)
+- Top bar bg: `#081f3e` (dark navy)
+- CTA button bg: `#ff0000` (red — emergency CTA)
+- Footer bg: `#020f20` (very dark navy)
+- Light section bg: `#f5f7f9`
+- Body text: `#1d1d1d` / `#57595c`
 
-Extracted from the live preview CSS (`style.css`) and inline styles:
+Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons.
 
-| Token | Value | Notes |
-| --- | --- | --- |
-| Font family | `"Roboto", sans-serif` | Single Google Font throughout |
-| Primary brand | `#006cff` | Blue — CTA button hover, active nav links, hero indicator dots, emergency area bg |
-| Top bar bg | `#081f3e` | Dark navy — top header bar, main header when sticky |
-| Top bar text | `#b5b5b5` | Light gray text in top bar |
-| Top bar accent | `#006cff` | Blue highlight for "Welcome" span text and phone number |
-| CTA button bg | `#ff0000` | Red — appointment CTA button ("For emergencies Click here") |
-| CTA button hover | `#006cff` | Blue — on hover CTA inverts to blue bg + white text |
-| Main header bg (default) | `rgba(0,108,255,0.5)` | Semi-transparent blue overlay |
-| Main header bg (sticky) | `#081f3e` | Solid dark navy on scroll |
-| Body text | `#1d1d1d` / `#57595c` / `#5f5f5f` | Dark gray for headings and body |
-| Light section bg | `#f5f7f9` | Subtle light gray background for sections |
-| Border color | `#536174` / `#b4b4b4` / `#cacaca` | Various grays for form borders, dividers |
-| Footer bg | `#020f20` | Very dark navy, almost black |
-| Emergency area bg | `#006cff` | Full-width blue banner for emergency contact info |
-| Button radius | `0` / `6px` | Sharp corners on CTA button, 6px on form inputs |
-| CTA button height | `50px` | Fixed height, uppercase text |
-| CTA button text | uppercase, `14px`, `font-weight: 500` | Bold uppercase label |
+LifeClinic lives in `apps/lifeclinic` and uses shared components from `packages/ui`
+(cn, Button).
 
-## Gherkin requirements
+## Requirements
 
-### TopBar
+### Requirement: Top bar
 
-```gherkin
-Feature: Top Bar
-  Scenario: Display welcome message and contact info
-    Given the user visits the page
-    Then a dark navy (#081f3e) top bar is visible at the very top
-    And it shows "Welcome to LifeClinic" with "LifeClinic" highlighted in blue (#006cff)
-    And it shows "Opening Hours : Monday to Saturday - 8am to 10pm"
-    And it shows a contact phone number highlighted in blue
+The system SHALL render a dark navy top bar with a welcome message, opening hours, and contact phone number.
 
-  Scenario: Hidden on mobile
-    Given the user is on a viewport < 768px wide
-    Then the top bar text stacks vertically instead of side-by-side
-```
+#### Scenario: Display welcome and contact info
 
-### Navbar
+- **GIVEN** the page is rendered
+- **WHEN** the top bar is displayed
+- **THEN** it SHALL show "Welcome to LifeClinic" with "LifeClinic" highlighted in blue
+- **AND** it SHALL show opening hours "Monday to Saturday - 8am to 10pm"
+- **AND** it SHALL show a contact phone number highlighted in blue
 
-```gherkin
-Feature: Navbar
-  Scenario: Display navigation links
-    Given the user visits the page
-    Then a semi-transparent blue overlay navbar is visible
-    And it shows a logo image on the left
-    And it has nav links: Home, Pages (dropdown), About Us, Services, News, Contact
-    And it has a red (#ff0000) "For emergencies Click here" CTA button on the right
+### Requirement: Navigation bar
 
-  Scenario: Sticky dark navbar on scroll
-    Given the user scrolls past the hero
-    Then the navbar becomes sticky with dark navy (#081f3e) background
-    And it has a shadow effect
-    And the height reduces
+The system SHALL render a semi-transparent blue overlay navbar with logo, navigation links, and a red emergency CTA button. The navbar SHALL become sticky with dark navy background on scroll and SHALL show a hamburger menu on mobile.
 
-  Scenario: Mobile hamburger menu
-    Given the user is on a viewport < 999px wide
-    Then a hamburger toggle button is visible
-    And clicking it expands the nav links vertically
-```
+#### Scenario: Desktop navigation
 
-### Hero
+- **GIVEN** the page is rendered
+- **WHEN** the navbar is displayed
+- **THEN** it SHALL show the brand name "LifeClinic"
+- **AND** it SHALL show nav links: Home, Pages, About Us, Services, News, Contact
+- **AND** it SHALL show a red "For emergencies Click here" CTA button
 
-```gherkin
-Feature: Hero Section
-  Scenario: Carousel hero with background images
-    Given the user visits the page
-    Then a full-width hero carousel is displayed with background images
-    And each slide shows "Medical Services that You can Trust 100%" heading
-    And each slide shows a descriptive paragraph
-    And each slide has a "Discover" CTA link
-    And carousel navigation arrows (left/right) are displayed in dark navy boxes
-    And carousel dots/indicators are shown at the bottom
+#### Scenario: Sticky dark navbar on scroll
 
-  Scenario: Hero carousel auto-plays
-    Given the user stays on the page
-    Then the hero carousel transitions between slides automatically
-    And the active indicator dot is highlighted in blue (#006cff)
-```
+- **GIVEN** the user scrolls past the hero section
+- **WHEN** the navbar detects scroll position
+- **THEN** the navbar SHALL have a dark navy background with shadow
 
-### Appointment Form
+#### Scenario: Mobile hamburger menu
 
-```gherkin
-Feature: Appointment Booking Form
-  Scenario: Display appointment form
-    Given the user scrolls past the hero
-    Then an appointment section is displayed with a dark navy (#081f3e) left panel
-    And the form shows a heading "Make an Appointment"
-    And dropdown fields are provided: Speciality (5 options), Doctors (5 options)
-    And a "Make an Appointment" blue (#006cff) submit button is shown
-    And contact info is displayed on the right side: hours (Mon-Sat 08:00-21:00, Sunday CLOSED), phone, email, address
+- **GIVEN** the user is on a viewport less than 999px wide
+- **WHEN** the hamburger button is clicked
+- **THEN** the mobile nav links SHALL expand vertically
 
-  Scenario: Appointment form fields
-    Given the user interacts with the appointment form
-    Then they can select a speciality from a dropdown
-    And they can select a doctor from a dropdown
-    And they can click the appointment button
-```
+### Requirement: Hero carousel
 
-### About Us
+The system SHALL render a full-width hero carousel with background images, headings, descriptions, and CTAs. The carousel SHALL auto-advance and support manual navigation via arrows and indicator dots.
 
-```gherkin
-Feature: About Us Section
-  Scenario: Display about content with services
-    Given the user scrolls to the about section
-    Then a white section with padding is displayed
-    And it shows "We always put our patients first" heading
-    And it shows a descriptive paragraph
-    And a "View the services +" link is provided
-    And a 2x2 grid of 4 service items is shown: The Best Doctors, Baby Nursery, Laboratory, Emergency Room
-    And each service item has an icon, title, and short description
+#### Scenario: Display carousel slides
 
-  Scenario: Service items hover
-    Given the user hovers over a service item
-    Then the item highlights or transitions smoothly
-```
+- **GIVEN** the page is rendered
+- **WHEN** the hero section is displayed
+- **THEN** it SHALL show a background image from picsum.photos
+- **AND** it SHALL show the heading "Medical Services that You can Trust 100%"
+- **AND** it SHALL show a descriptive paragraph
+- **AND** it SHALL show a "Discover" CTA link
 
-### Cool Facts
+#### Scenario: Carousel navigation
 
-```gherkin
-Feature: Cool Facts / Stats Counter
-  Scenario: Display statistics counters
-    Given the user scrolls to the cool facts section
-    Then a section with 4 statistics is displayed in a row
-    And it shows "5632 Blood donations"
-    And it shows "23 k Patients"
-    And it shows "25 Specialities"
-    And it shows "723 Doctors"
-    And each stat has a number and a label below
-```
+- **GIVEN** the hero carousel is displayed
+- **WHEN** the user clicks the next/previous arrows
+- **THEN** the carousel SHALL transition to the next/previous slide
 
-### Gallery
+#### Scenario: Auto-advance
 
-```gherkin
-Feature: Gallery Carousel
-  Scenario: Display gallery carousel
-    Given the user scrolls to the gallery section
-    Then an owl-carousel gallery is displayed
-    And it shows gallery images in a carousel format
-    And a "See More +" button is overlaid on the gallery
-```
+- **GIVEN** the user stays on the page
+- **WHEN** 5 seconds pass without interaction
+- **THEN** the carousel SHALL advance to the next slide automatically
 
-### Features
+#### Scenario: Indicator dots
 
-```gherkin
-Feature: Features Section
-  Scenario: Display features content
-    Given the user scrolls to the features section
-    Then a section with two columns is displayed
-    And the left column shows a thumbnail image
-    And the right column shows "A new way to treat patients in a revolutionary facility" heading
-    And it shows descriptive paragraphs
-    And a "View the services +" link is provided
-```
+- **GIVEN** the hero carousel is displayed
+- **WHEN** the indicator dots are shown
+- **THEN** the active dot SHALL be highlighted in blue and the user can click a dot to navigate
 
-### Blog
+### Requirement: Appointment booking form
 
-```gherkin
-Feature: Blog Section
-  Scenario: Display blog post cards
-    Given the user scrolls to the blog section
-    Then a section with "Latest News" heading is displayed
-    And a 3-column grid shows 3 blog cards
-    And each card has a thumbnail image with a date overlay (day + month)
-    And each card shows a title, excerpt text, and "3 Comments" link
-    And each card has an author attribution
+The system SHALL render an appointment section with a dark navy left panel containing a form and a right panel with contact information.
 
-  Scenario: Blog card hover
-    Given the user hovers over a blog card image
-    Then the image scales or transitions smoothly
-```
+#### Scenario: Display appointment form
 
-### Emergency / Helpline
+- **GIVEN** the page is rendered
+- **WHEN** the appointment section is displayed
+- **THEN** it SHALL show "Make an Appointment" heading
+- **AND** it SHALL show a speciality dropdown with options
+- **AND** it SHALL show a doctors dropdown with options
+- **AND** it SHALL show a "Make an Appointment" submit button
 
-```gherkin
-Feature: Emergency Helpline Section
-  Scenario: Display emergency contact locations
-    Given the user scrolls to the emergency section
-    Then a full-width blue (#006cff) banner is displayed
-    And it shows "For Emergency calls" heading with a phone icon
-    And it shows the phone number "+12-823-611-8721"
-    And it shows 4 location cards: London, New Castle, Manchester, Bristol
-    And each location card has a phone icon, phone number, email, and address
-```
+#### Scenario: Contact info alongside form
 
-### Footer
+- **GIVEN** the appointment section is displayed
+- **WHEN** the right panel is shown
+- **THEN** it SHALL display opening hours, phone number, email, and address
 
-```gherkin
-Feature: Footer
-  Scenario: Multi-column footer
-    Given the user scrolls to the footer
-    Then a dark navy (#020f20) footer is displayed
-    And it has 4 columns of widgets
-    And the first column shows a footer logo and social icons (4 links)
-    And the second column shows "Latest News" with 3 recent blog post previews
-    And the third column shows a "Contact Form" with input fields
-    And the fourth column shows a "News Letter" subscription form with email input and subscribe button
-    And a bottom bar shows copyright text
+### Requirement: About Us section
 
-  Scenario: Footer social links
-    Given the user views the footer
-    Then 4 social media icon links are displayed below the logo
-```
+The system SHALL render an about section with a heading, description, service link, and a 2x2 grid of service items.
 
-## Verification checklist
+#### Scenario: Display about content
 
-- [ ] Spec folder: `openspec/specs/template-lifeclinic/spec.md`
-- [ ] Docs folder: `docs/templates/lifeclinic/`
-- [ ] No `apps/` code written (prep stream only)
-- [ ] Source slug recorded: `medilife`
-- [ ] Preview URL analyzed: https://preview.colorlib.com/theme/medilife/
-- [ ] Design tokens captured from live CSS
-- [ ] All 10 sections documented in Gherkin scenarios
-- [ ] New name `lifeclinic` has no collision with existing apps/specs
+- **GIVEN** the page is rendered
+- **WHEN** the about section is displayed
+- **THEN** it SHALL show "We always put our patients first" heading
+- **AND** it SHALL show a descriptive paragraph
+- **AND** it SHALL show a "View the services +" link
+- **AND** it SHALL show 4 service items: The Best Doctors, Baby Nursery, Laboratory, Emergency Room
+
+### Requirement: Cool facts statistics
+
+The system SHALL render a statistics section with 4 counters in a row.
+
+#### Scenario: Display statistics
+
+- **GIVEN** the page is rendered
+- **WHEN** the cool facts section is displayed
+- **THEN** it SHALL show "5632 Blood donations"
+- **AND** it SHALL show "23k Patients"
+- **AND** it SHALL show "25 Specialities"
+- **AND** it SHALL show "723 Doctors"
+
+### Requirement: Gallery section
+
+The system SHALL render a gallery grid of images with hover effects and a "See More +" overlay button.
+
+#### Scenario: Display gallery images
+
+- **GIVEN** the page is rendered
+- **WHEN** the gallery section is displayed
+- **THEN** it SHALL show a grid of 6 images from picsum.photos
+- **AND** each image SHALL have a hover effect
+
+### Requirement: Features section
+
+The system SHALL render a features section with two columns: a thumbnail image on the left and descriptive content on the right.
+
+#### Scenario: Display features content
+
+- **GIVEN** the page is rendered
+- **WHEN** the features section is displayed
+- **THEN** it SHALL show a thumbnail image on the left
+- **AND** it SHALL show "A new way to treat patients in a revolutionary facility" heading on the right
+- **AND** it SHALL show descriptive paragraphs
+- **AND** it SHALL show a "View the services +" link
+
+### Requirement: Blog section
+
+The system SHALL render a blog section with "Latest News" heading and a 3-column grid of blog cards with date overlays.
+
+#### Scenario: Display blog cards
+
+- **GIVEN** the page is rendered
+- **WHEN** the blog section is displayed
+- **THEN** it SHALL show "Latest News" heading
+- **AND** it SHALL show 3 blog cards in a grid
+- **AND** each card SHALL have a thumbnail image with date overlay
+- **AND** each card SHALL show a title, excerpt, and "3 Comments" link
+
+### Requirement: Emergency helpline section
+
+The system SHALL render a full-width blue banner with emergency contact information and 4 location cards.
+
+#### Scenario: Display emergency contact
+
+- **GIVEN** the page is rendered
+- **WHEN** the emergency section is displayed
+- **THEN** it SHALL show "For Emergency calls" heading with a phone icon
+- **AND** it SHALL show the phone number "+12-823-611-8721"
+- **AND** it SHALL show 4 location cards: London, New Castle, Manchester, Bristol
+
+### Requirement: Footer
+
+The system SHALL render a dark navy footer with 4 columns and a bottom bar with copyright and Component Dock link.
+
+#### Scenario: Display footer columns
+
+- **GIVEN** the page is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL show a logo and social icons in the first column
+- **AND** it SHALL show "Latest News" in the second column
+- **AND** it SHALL show a contact form in the third column
+- **AND** it SHALL show a newsletter subscription form in the fourth column
+
+#### Scenario: Footer copyright and credit
+
+- **GIVEN** the footer is displayed
+- **WHEN** the bottom bar is shown
+- **THEN** it SHALL show copyright text
+- **AND** it SHALL show "More templates at Component Dock" linking to https://www.componentdock.com/
+
+#### Scenario: Newsletter subscription
+
+- **GIVEN** the newsletter form is displayed
+- **WHEN** the user enters an email and clicks subscribe
+- **THEN** a confirmation message SHALL be shown
