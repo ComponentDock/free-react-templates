@@ -2,176 +2,162 @@
 
 ## Purpose
 
-LoginPort is a single-page LOGIN FORM in the free-react-templates monorepo.
-It is an original React recreation of the ColorLib "Login Form V8" free
-template (source: https://colorlib.com/wp/template/login-form-v8/, preview:
-https://colorlib.com/etc/lf/Login_v8/index.html — live preview reachable;
-screenshot at https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v8.jpg),
-built under a DIFFERENT name (**LoginPort**), with the monorepo stack:
-Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Recreation of ColorLib **Login Form V8** as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
-The original is a single-page login form centered on a full-viewport white
-background. The layout consists of:
-1. A centered 500px-wide white card with rounded corners (border-radius: 20px)
-   and a subtle box shadow
-2. A green (#57b846) header strip at the top of the card with "Sign In" text
-   in JosefinSans-Bold, 30px, white color
-3. Username input — pill-shaped (border-radius: 27px), gray (#ebebeb) bg,
-   55px tall, Ubuntu-Bold 15px, dark green text (#1b3815)
-4. Password input — pill-shaped, same styling as username
-5. Focus expansion effect — input background expands by 20px on focus
-6. "Forgot Username / Password?" link — right-aligned, green (#57b846),
-   Ubuntu-Regular 15px
-7. "Sign in" submit button — pill-shaped (border-radius: 25px), green
-   (#57b846) background, 50px tall, Ubuntu-Bold 15px uppercase, white text
-8. "Don't have an account? / Sign up now" link at bottom center
+- **Source:** https://colorlib.com/wp/template/login-form-v8/
+- **Preview URL:** https://colorlib.com/etc/lf/Login_v8/index.html
+- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v8.jpg
+- **New name:** `loginport` (app folder `apps/loginport`, package `@free-react-templates/loginport`)
+- **Deploy URL:** https://loginport.free.componentdock.com
 
-The aesthetic is clean and minimal with heavily rounded (pill) shapes
-throughout, matching the ColorLib login form series. Typography uses Ubuntu
-(Regular, Bold) and JosefinSans-Bold for the title. The green brand color
-provides the primary accent against the white/gray neutral palette.
+## Requirements
 
-**WHAT MAKES LOGINPORT DISTINCT (signature behaviors):**
+### Requirement: Full-viewport centered layout
 
-1. **Green-branded card.** The card has a colored header strip (#57b846)
-   with white title text, creating a branded look above the form fields.
-2. **Pill-shaped inputs with focus expansion.** Input fields have
-   border-radius: 27px and a focus pseudo-element that expands the visible
-   area by 20px, creating a subtle interaction effect.
-3. **Dual typography system.** Ubuntu for body/inputs and JosefinSans-Bold
-   for the title — giving a distinctive visual hierarchy.
-4. **Green accent throughout.** Brand color #57b846 appears in the header,
-   button, links, and hover states — creating a cohesive green theme.
-5. **Minimal structure.** No header nav, no sidebar, no images — just a
-   centered card with sign-in fields and a sign-up link.
+The login form SHALL render centered on a full-viewport white background.
 
-## Design tokens
+#### Scenario: Page renders
 
-- **Background**: `#ffffff` (full-viewport white, `min-height: 100vh`)
-- **Card**: `width: 500px`, `background: #fff`, `border-radius: 20px`,
-  `box-shadow: 0 3px 20px 0px rgba(0,0,0,0.1)`
-- **Typography**:
-  - Body font: `'Ubuntu', sans-serif` (Google Fonts — Regular 400, Bold 700)
-  - Title font: `'Josefin Sans', sans-serif` (Google Fonts — Bold 700)
-- **Title "Sign In"**: JosefinSans-Bold, 30px, color `#fff`, centered,
-  on `#57b846` background strip (padding: 50px top, 39px bottom),
-  absolute-positioned at card top, full width
-- **Input fields (username, password)**: `background: #ebebeb`,
-  `border-radius: 27px`, `height: 55px`, `padding: 0 35px`,
-  font `Ubuntu-Bold 15px`, color `#1b3815`. No visible border.
-- **Input placeholder**: color `#1b3815` (dark green, same as text)
-- **Focus expansion**: `.focus-input100` pseudo-element, same `#ebebeb` bg,
-  expands to `width: calc(100% + 20px)` on input focus, with 0.4s transition
-- **Submit button**: `background: #57b846`, `border-radius: 25px`,
-  `height: 50px`, `width: 100%`, font `Ubuntu-Bold 15px uppercase`,
-  color `#fff`. Hover: `background: #1b3815`, 0.4s transition.
-- **"Forgot" text (txt1)**: Ubuntu-Regular 15px, color `#999999`
-- **"Username / Password?" link (txt2)**: Ubuntu-Regular 15px, color `#57b846`.
-  Hover: color `#1b3815`.
-- **"Don't have an account?" text**: Ubuntu-Regular 15px, color `#999999`
-- **"Sign up now" link (txt3)**: Ubuntu-Bold 15px, color `#57b846`,
-  `text-transform: uppercase`. Hover: color `#1b3815`.
-- **Error validation**: `border: 1px solid #c80000`, `border-radius: 14px`,
-  `color: #c80000`, font-size 13px, tooltip-style positioned at right of input
-- **General link color**: `#666666`, hover `#1b3815`, transition 0.4s
-- **Box model reset**: `* { margin: 0; padding: 0; box-sizing: border-box; }`
+- **WHEN** the user navigates to LoginPort
+- **THEN** the page background is white (#ffffff) and covers the full viewport height
+- **AND** the login card is centered both horizontally and vertically
 
-## Gherkin requirements
+### Requirement: Login card with green header
 
-### Scenario: Full-viewport white background renders
-Given the user navigates to LoginPort
-Then the page body should display a white (#ffffff) background
-And the background should cover the full viewport height
+The form SHALL be contained in a white card with rounded corners and a green header strip displaying "Sign In".
 
-### Scenario: Login card renders centered
-Given the user navigates to LoginPort
-Then a card should be visible centered on the page
-And the card should have rounded corners (border-radius: 20px)
-And the card should have a subtle box shadow
-And the card should have a white background
+#### Scenario: Card renders
 
-### Scenario: Green header strip with "Sign In" title renders
-Given the user navigates to LoginPort
-Then a green (#57b846) header strip should be visible at the top of the card
-And the text "Sign In" should be displayed in the header
-And the title text should be white and centered
+- **WHEN** the page loads
+- **THEN** a card with width 500px, white background, border-radius 20px, and a subtle box shadow is visible
+- **AND** a green (#57b846) header strip appears at the top of the card
+- **AND** the text "Sign In" is displayed in the header in Josefin Sans Bold, white color, centered
 
-### Scenario: Username input renders
-Given the user navigates to LoginPort
-Then an input field with placeholder "Username" should be visible
-And the input should accept text input
-And the input should be pill-shaped with gray (#ebebeb) background
-And the input should be 55px tall
+#### Scenario: Card responsive layout
 
-### Scenario: Password input renders
-Given the user navigates to LoginPort
-Then a password input with placeholder "Password" should be visible
-And the input should mask typed characters
-And the input should be pill-shaped with gray (#ebebeb) background
+- **WHEN** the viewport is 375px wide
+- **THEN** the card shrinks to fit the viewport width
+- **AND** the card has 15px padding
 
-### Scenario: Input focus expansion effect
-Given the user focuses on a username or password input
-Then the input background area should expand slightly (by 20px width)
-And the expansion should animate with a smooth transition
+### Requirement: Username input field
 
-### Scenario: "Forgot Username / Password?" link renders
-Given the user navigates to LoginPort
-Then text "Forgot" should be visible
-And a link labeled "Username / Password?" should be visible next to it
-And the link should be right-aligned and green (#57b846)
+The form SHALL include a pill-shaped username input field.
 
-### Scenario: Sign in submit button renders
-Given the user navigates to LoginPort
-Then a button labeled "Sign in" should be visible
-And the button should be pill-shaped with green (#57b846) background
-And the button should be full-width and 50px tall
-And the button text should be uppercase and white
+#### Scenario: Username input renders
 
-### Scenario: Sign in button hover effect
-Given the user hovers over the "Sign in" button
-Then the button background should change to dark green (#1b3815)
-And the transition should animate smoothly (0.4s)
+- **WHEN** the page loads
+- **THEN** a text input with placeholder "Username" is visible
+- **AND** the input has a gray (#ebebeb) background
+- **AND** the input is pill-shaped with border-radius 27px
+- **AND** the input is 55px tall
+- **AND** the input text is dark green (#1b3815) in Ubuntu Bold 15px
 
-### Scenario: "Don't have an account?" sign-up section renders
-Given the user navigates to LoginPort
-Then text "Don't have an account?" should be visible at the bottom of the card
-And a link labeled "Sign up now" should be visible below it
-And the link should be uppercase and green (#57b846)
-And clicking the link should be non-navigating (href="#")
+### Requirement: Password input field
 
-### Scenario: Responsive layout on mobile
-Given the user resizes the viewport to 375px width
-Then the form should shrink to fit the viewport width
-And the card should have reduced padding (15px)
-And all inputs, buttons, and links should remain usable
+The form SHALL include a pill-shaped password input field that masks typed characters.
 
-### Scenario: Accessibility - semantic elements
-Given the user navigates to LoginPort
-Then the form should use semantic HTML elements
-And the inputs should have associated labels or placeholders
-And the button should have an accessible name
+#### Scenario: Password input renders
 
-### Scenario: Footer links to Component Dock
-Given the user navigates to LoginPort
-Then the footer should contain a link to "https://www.componentdock.com/"
-And the link text should reference "Component Dock"
+- **WHEN** the page loads
+- **THEN** a password input with placeholder "Password" is visible
+- **AND** the input has a gray (#ebebeb) background
+- **AND** the input is pill-shaped with border-radius 27px
+- **AND** typed characters are masked
 
-## Verification checklist
+### Requirement: Input focus expansion effect
 
-- [ ] Ubuntu font loaded via Google Fonts (Regular, Bold)
-- [ ] Josefin Sans font loaded via Google Fonts (Bold)
-- [ ] Full-viewport white (#ffffff) background
-- [ ] Card: 500px wide, white bg, border-radius 20px, shadow
-- [ ] Green header strip (#57b846) at card top with "Sign In" title
-- [ ] Username input: gray (#ebebeb) bg, pill-shaped, 55px tall
-- [ ] Password input: gray (#ebebeb) bg, pill-shaped, masked
-- [ ] Focus expansion effect on input fields (+20px width, 0.4s transition)
-- [ ] "Forgot Username / Password?" link right-aligned, green
-- [ ] "Sign in" button: green (#57b846), pill-shaped, 50px tall, uppercase
-- [ ] Button hover: dark green (#1b3815), smooth transition
-- [ ] "Don't have an account? / SIGN UP NOW" link centered at bottom
-- [ ] Error validation tooltip style (red border, 14px radius)
-- [ ] Responsive: works at 375px viewport width
-- [ ] Semantic HTML (form, inputs, button, labels/placeholders)
-- [ ] Footer links to https://www.componentdock.com/ (branded "Component Dock")
-- [ ] No ColorLib references in app code (only in spec + TEMPLATES.md)
+Input fields SHALL expand slightly when focused, creating a smooth animation.
+
+#### Scenario: Focus expansion
+
+- **WHEN** the user focuses on the username or password input
+- **THEN** the input background area expands by 20px width
+- **AND** the expansion animates with a smooth 0.4s transition
+
+### Requirement: Forgot password link
+
+The form SHALL display a "Forgot Username / Password?" link right-aligned below the inputs.
+
+#### Scenario: Forgot link renders
+
+- **WHEN** the page loads
+- **THEN** the text "Forgot" is visible in muted gray (#999999)
+- **AND** a link labeled "Username / Password?" appears next to it in green (#57b846)
+- **AND** the link is right-aligned
+
+### Requirement: Sign in submit button
+
+The form SHALL include a full-width green pill-shaped submit button labeled "Sign in".
+
+#### Scenario: Button renders
+
+- **WHEN** the page loads
+- **THEN** a button labeled "Sign in" is visible
+- **AND** the button has green (#57b846) background
+- **AND** the button is pill-shaped with border-radius 25px
+- **AND** the button is full-width and 50px tall
+- **AND** the button text is uppercase and white
+
+#### Scenario: Button hover
+
+- **WHEN** the user hovers over the "Sign in" button
+- **THEN** the button background changes to dark green (#1b3815)
+- **AND** the transition animates smoothly (0.4s)
+
+### Requirement: Sign up section
+
+The form SHALL display a "Don't have an account?" prompt with a "Sign up now" link at the bottom.
+
+#### Scenario: Sign up renders
+
+- **WHEN** the page loads
+- **THEN** text "Don't have an account?" is visible at the bottom of the card in muted gray (#999999)
+- **AND** a link labeled "Sign up now" appears next to it
+- **AND** the link is uppercase and green (#57b846)
+- **AND** clicking the link navigates to "#" (non-navigating)
+
+### Requirement: Form validation
+
+The form SHALL validate that username and password are provided on submit.
+
+#### Scenario: Empty submit shows errors
+
+- **WHEN** the user clicks "Sign in" without entering any values
+- **THEN** an error message "Username is required" appears below the username input
+- **AND** an error message "Password is required" appears below the password input
+
+#### Scenario: Valid submit clears errors
+
+- **WHEN** the user enters a username and password and clicks "Sign in"
+- **THEN** no error messages are displayed
+
+### Requirement: Responsive layout
+
+The form SHALL be fully usable on mobile viewports.
+
+#### Scenario: Mobile layout
+
+- **WHEN** the viewport is resized to 375px width
+- **THEN** the form shrinks to fit the viewport width
+- **AND** all inputs, buttons, and links remain usable
+
+### Requirement: Semantic accessibility
+
+The form SHALL use semantic HTML elements with proper accessibility attributes.
+
+#### Scenario: Accessibility
+
+- **WHEN** the page loads
+- **THEN** the form uses semantic HTML elements
+- **AND** inputs have associated placeholders
+- **AND** the button has an accessible name
+
+### Requirement: Footer links to Component Dock
+
+The page footer SHALL contain a branded link to the Component Dock website.
+
+#### Scenario: Footer link
+
+- **WHEN** the page loads
+- **THEN** the footer contains a link to "https://www.componentdock.com/"
+- **AND** the link text references "Component Dock"
