@@ -17,104 +17,128 @@ Password?" link, and "Create new account" link. Typography uses Roboto
 Condensed. The aesthetic is clean, minimal, and modern with transparent
 UI elements over a photographic background.
 
-**WHAT MAKES ACCESSGATE DISTINCT (signature behaviors):**
+## Requirements
 
-1. **Glassmorphism card.** The login container uses `backdrop-filter: blur(30px)` with a transparent background and `2px solid rgba(0,0,0,.2)` border, `border-radius: 20px`. This gives the frosted-glass effect over the background image.
-2. **Full-screen background image.** The entire viewport is covered by a background image (centered, `no-repeat`, `min-height: 100vh`), with the card centered both horizontally and vertically using flexbox.
-3. **Transparent inputs and button.** All form fields (inputs, button) have transparent backgrounds matching the card, with the same `2px solid rgba(0,0,0,.2)` border and `border-radius: 20px` — creating a cohesive frosted-glass look throughout.
-4. **Minimal layout.** No section header, no logo, no social login — just a centered card with "Login" heading, two inputs, a button, and utility links (remember me, forgot password, create account). The simplicity is the design.
+### Requirement: Full-page background image
 
-## Design tokens
+The page body SHALL display a full-screen background image centered and covering the viewport.
 
-- **Background**: Full-screen background image (`https://picsum.photos/seed/accessgate/1920/1080`), centered, no-repeat, `min-height: 100vh`
-- **Card**: `background: transparent`, `backdrop-filter: blur(30px)`, `border: 2px solid rgba(0,0,0,.2)`, `border-radius: 20px`, `width: 450px`, `padding: 40px 20px`
-- **Typography**: Font family `'Roboto Condensed', sans-serif` (Google Fonts), heading "Login" default size with margin `10px 0`
-- **Input fields**: `padding: 1rem`, `width: 100%`, `border: 2px solid rgba(0,0,0,.2)`, `border-radius: 20px`, `font-size: 20px`, `background: transparent`, `color: black`, placeholder color `black`
-- **Login button**: `padding: 1rem`, `width: 100%`, `border-radius: 20px`, `border: 2px solid rgba(0,0,0,.2)`, `font-size: 20px`, `font-weight: 600`, `margin-top: 30px`, `background: transparent`, `color: black`, `cursor: pointer`
-- **Remember me + Forgot Password row**: `display: flex`, `justify-content: space-evenly`, `margin: 20px 0`, font-size `20px`, color `black`
-- **Register link**: `color: black`, `font-size: 22px`, `margin: 20px 0`, `text-decoration: underline`
-- **Colors**: All text/borders are `black` (or `rgba(0,0,0,.2)` for borders) — the design relies on contrast from the background image, not on brand accent colors
-- **Box model reset**: `* { padding: 0; margin: 0; box-sizing: border-box; text-decoration: none; outline: none; }`
+#### Scenario: Background renders
 
-## Gherkin requirements
+- **WHEN** the user navigates to AccessGate
+- **THEN** the page body SHALL have a background image covering the viewport (min-height: 100vh)
 
-### Scenario: Full-page background renders
-Given the user navigates to AccessGate
-Then the page body should display a full-screen background image
-And the background should be centered and cover the viewport
+### Requirement: Glassmorphism card renders centered
 
-### Scenario: Glassmorphism card renders centered
-Given the user navigates to AccessGate
-Then a frosted-glass card should be centered on the page
-And the card should have a semi-transparent backdrop blur effect
-And the card should have a rounded border
+A frosted-glass card SHALL be centered on the page with a semi-transparent backdrop blur effect and rounded border.
 
-### Scenario: Login heading is visible
-Given the user navigates to AccessGate
-Then a heading "Login" should be visible inside the card
+#### Scenario: Card renders
 
-### Scenario: Email/phone input renders
-Given the user navigates to AccessGate
-Then a text input with placeholder "Email address or phone number" should be visible
-And the input should accept text input
+- **WHEN** the user navigates to AccessGate
+- **THEN** a card with backdrop-filter blur SHALL be visible centered on the page
+- **AND** the card SHALL have a rounded border (border-radius: 20px)
 
-### Scenario: Password input renders
-Given the user navigates to AccessGate
-Then a password input with placeholder "Password" should be visible
-And the input should mask typed characters
+### Requirement: Login heading visible
 
-### Scenario: Login button renders and is clickable
-Given the user navigates to AccessGate
-Then a button labeled "Login" should be visible
-And the button should be clickable
+A heading "Login" SHALL be visible inside the card.
 
-### Scenario: Remember me checkbox renders
-Given the user navigates to AccessGate
-Then a checkbox labeled "Remember me" should be visible
-And clicking the checkbox should toggle its checked state
+#### Scenario: Heading renders
 
-### Scenario: Forgot Password link renders
-Given the user navigates to AccessGate
-Then a link labeled "Forgot Password?" should be visible
-And clicking the link should be non-navigating (href="#")
+- **WHEN** the user navigates to AccessGate
+- **THEN** a heading "Login" SHALL be visible inside the card
 
-### Scenario: Create new account link renders
-Given the user navigates to AccessGate
-Then a link labeled "Create new account" should be visible
-And clicking the link should be non-navigating (href="#")
+### Requirement: Email/phone input renders
 
-### Scenario: Responsive layout on mobile
-Given the user resizes the viewport to 375px width
-Then the card should shrink to fit the viewport width
-And all inputs and button should remain usable
+An input field for email or phone number SHALL be visible with appropriate placeholder text.
 
-### Scenario: Accessibility - semantic elements
-Given the user navigates to AccessGate
-Then the form should use semantic HTML elements
-And the inputs should have associated labels or placeholders
-And the button should have an accessible name
+#### Scenario: Email input renders
 
-### Scenario: Footer links to Component Dock
-Given the user navigates to AccessGate
-Then the footer should contain a link to "https://www.componentdock.com/"
-And the link text should reference "Component Dock"
+- **WHEN** the user navigates to AccessGate
+- **THEN** a text input with placeholder "Email address or phone number" SHALL be visible
+- **AND** the input SHALL accept text input
 
-## Verification checklist
+### Requirement: Password input renders
 
-- [ ] Background image fills viewport (`min-height: 100vh`)
-- [ ] Card is vertically and horizontally centered
-- [ ] Card has `backdrop-filter: blur(30px)` for glassmorphism
-- [ ] Card border is `2px solid rgba(0,0,0,.2)` with `border-radius: 20px`
-- [ ] "Login" heading renders inside the card
-- [ ] Email/phone text input renders with correct placeholder
-- [ ] Password input renders with correct placeholder and masking
-- [ ] Login button renders with transparent style and full width
-- [ ] "Remember me" checkbox toggles on click
-- [ ] "Forgot Password?" link renders and is accessible
-- [ ] "Create new account" link renders and is accessible
-- [ ] Footer links to Component Dock
-- [ ] Responsive on mobile (375px viewport)
-- [ ] Google Fonts (Roboto Condensed) loads via `<link>` in index.html
-- [ ] All Tailwind utilities compile (no `@source` path issues)
-- [ ] 100% test coverage on changed code
-- [ ] No ColorLib references in app code (provenance only in spec)
+A password input SHALL be visible with masked characters.
+
+#### Scenario: Password input renders
+
+- **WHEN** the user navigates to AccessGate
+- **THEN** a password input with placeholder "Password" SHALL be visible
+- **AND** the input SHALL mask typed characters
+
+### Requirement: Login button renders and is clickable
+
+A "Login" button SHALL be visible and clickable as a form submit button.
+
+#### Scenario: Button renders
+
+- **WHEN** the user navigates to AccessGate
+- **THEN** a button labeled "Login" SHALL be visible
+- **AND** clicking the button SHALL submit the form without page reload
+
+### Requirement: Remember me checkbox renders
+
+A checkbox labeled "Remember me" SHALL be visible and toggleable.
+
+#### Scenario: Checkbox renders unchecked
+
+- **WHEN** the user navigates to AccessGate
+- **THEN** a checkbox labeled "Remember me" SHALL be visible
+- **AND** the checkbox SHALL be unchecked by default
+
+#### Scenario: Checkbox toggles
+
+- **WHEN** the user clicks the "Remember me" checkbox
+- **THEN** the checkbox SHALL toggle its checked state
+
+### Requirement: Forgot Password link renders
+
+A link labeled "Forgot Password?" SHALL be visible.
+
+#### Scenario: Link renders
+
+- **WHEN** the user navigates to AccessGate
+- **THEN** a link labeled "Forgot Password?" SHALL be visible
+- **AND** the link SHALL point to "#forgot"
+
+### Requirement: Create new account link renders
+
+A link labeled "Create new account" SHALL be visible.
+
+#### Scenario: Link renders
+
+- **WHEN** the user navigates to AccessGate
+- **THEN** a link labeled "Create new account" SHALL be visible
+- **AND** the link SHALL point to "#register"
+
+### Requirement: Responsive layout on mobile
+
+The card SHALL shrink to fit the viewport width on mobile devices.
+
+#### Scenario: Responsive on 375px
+
+- **WHEN** the user resizes the viewport to 375px width
+- **THEN** the card SHALL fit within the viewport width
+- **AND** all inputs and button SHALL remain usable
+
+### Requirement: Accessibility - semantic elements
+
+The form SHALL use semantic HTML elements with accessible labels.
+
+#### Scenario: Semantic elements
+
+- **WHEN** the user navigates to AccessGate
+- **THEN** the form SHALL use semantic HTML form elements
+- **AND** inputs SHALL have placeholders for context
+- **AND** the button SHALL have an accessible name
+
+### Requirement: Footer links to Component Dock
+
+The footer SHALL contain a link to Component Dock.
+
+#### Scenario: Footer link
+
+- **WHEN** the user navigates to AccessGate
+- **THEN** the footer SHALL contain a link to "https://www.componentdock.com/"
+- **AND** the link text SHALL reference "Component Dock"
