@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Byline brand palette — recreated from the ColorLib Nikki design tokens:
+     accent #d1bb95 (tan/gold), headings #191919, body text #595959. */
+  --color-brand: #d1bb95;
+  --color-brand-dark: #bfa67e;
+
+  /* Ink — near-black headings (#191919 from the original). */
+  --color-ink: #191919;
+  --color-ink-dark: #111111;
+
+  /* Paper — white body background (#ffffff). */
+  --color-paper: #ffffff;
+
+  /* Mist — muted body text (#595959 from the original). */
+  --color-mist: #595959;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the tan accent. */
+  --color-primary-50: #faf6f0;
+  --color-primary-100: #f0e8d8;
+  --color-primary-200: #e5d8bb;
+  --color-primary-300: #d1bb95;
+  --color-primary-400: #bfa67e;
+  --color-primary-500: #b09368;
+  --color-primary-600: #9a7d55;
+  --color-primary-700: #7d6344;
+  --color-primary-800: #5f4a33;
+  --color-primary-900: #423323;
+
+  /* Fonts: Barlow (body) + Work Sans (headings). */
+  --font-sans: 'Barlow', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}
