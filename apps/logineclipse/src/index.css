@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-source: 'Source Sans 3', sans-serif;
+  --color-brand-purple: #bd59d4;
+  --color-brand-purple-dark: #9b24bd;
+  --color-text-deep: #4b2354;
+  --color-text-muted: #999999;
+  --color-fb-blue: #3b5998;
+  --color-validation-error: #fa4251;
+  --color-validation-success: #57b846;
+}
