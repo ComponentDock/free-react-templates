@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Page background — gradient from blue (#0250c5) to pink (#d43f8d). */
+  --color-page-start: #0250c5;
+  --color-page-end: #d43f8d;
+
+  /* Card background — white. */
+  --color-card: #ffffff;
+
+  /* Primary accent — pink/magenta (#d33f8d), used for button, focus, checkbox. */
+  --color-primary: #d33f8d;
+
+  /* Primary hover — dark (#333333). */
+  --color-primary-hover: #333333;
+
+  /* Text color — dark (#333333). */
+  --color-ink: #333333;
+
+  /* Body text — gray (#666666). */
+  --color-body: #666666;
+
+  /* Caption / secondary text — gray (#999999). */
+  --color-caption: #999999;
+
+  /* Input background — light gray (#e6e6e6). */
+  --color-input-bg: #e6e6e6;
+
+  /* Input text — dark gray (#686868). */
+  --color-input-text: #686868;
+
+  /* Placeholder text — gray (#acacac). */
+  --color-placeholder: #acacac;
+
+  /* Social button border — light gray (#e6e6e6). */
+  --color-social-border: #e6e6e6;
+
+  /* Facebook blue. */
+  --color-facebook: #3b5998;
+
+  /* Google gray. */
+  --color-google: #555555;
+
+  /* Error red. */
+  --color-error: #c80000;
+
+  /* Font: Poppins (body) + Raleway (headings/buttons). */
+  --font-body: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
