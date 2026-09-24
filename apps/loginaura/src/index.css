@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Gradient — blue #005bea to cyan #00c6fb. */
+  --color-gradient-start: #005bea;
+  --color-gradient-end: #00c6fb;
+
+  /* Card — transparent (no solid background). */
+  --color-card: transparent;
+
+  /* Button — dark #333333. */
+  --color-btn: #333333;
+  --color-btn-hover: #005bea;
+
+  /* Avatar ring — white. */
+  --color-avatar-ring: #ffffff;
+
+  /* Text colors. */
+  --color-heading: #ffffff;
+  --color-body: #cccccc;
+  --color-link: #cccccc;
+  --color-input: #ffffff;
+  --color-input-text: #333333;
+  --color-placeholder: #999999;
+  --color-icon: #999999;
+  --color-icon-focus: #00c6fb;
+
+  /* Font: Montserrat via Google Fonts. */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
