@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-primary: #1a73e8;
+  --color-brand-primary-dark: #1464cc;
+  --color-brand-hero-overlay: #001c64;
+  --color-brand-emergency: #00abe7;
+  --color-brand-footer: #152538;
+  --color-brand-footer-text: #b8bdc3;
+  --color-brand-heading: #191d34;
+  --color-brand-body: #5c5c5c;
+  --font-heading: 'Work Sans', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-brand-body);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-brand-heading);
+}
