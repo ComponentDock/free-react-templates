@@ -1,217 +1,108 @@
-# Template: Pressbox (Magazine / News Portal)
+# Spec: Pressbox
+
+Recreation of ColorLib **Magnews** — https://colorlib.com/wp/template/magnews/
 
 ## Purpose
 
-Pressbox is a magazine-style news portal template in the free-react-templates
-monorepo. It is a React recreation of the ColorLib "Force" free template
-(source: https://colorlib.com/wp/template/force/), built under a DIFFERENT
-name (**Pressbox**), with the monorepo stack: Vite + React 19 + Tailwind
-CSS 4 + TypeScript.
+Pressbox is a news and magazine website template built with React 19, Tailwind CSS 4, and TypeScript. It recreates the ColorLib Magnews design with a dark navigation bar, red accent color, hero carousel, trending posts grid, newsletter subscription, and footer.
 
-The original is a Bootstrap 4 magazine/news template with a full-width
-carousel hero, an "Editor's Choice" grid, a 2-column news area (main feed +
-sidebar with popular news), a multi-category product list area, and a
-multi-column footer. The design uses Roboto + Open Sans, a hot-pink
-accent (`#ff1857`), light lavender backgrounds (`#f9f9ff`), and clean
-white content sections.
+## Requirements
 
-## Naming
+### Requirement: TopBar with secondary navigation and social links
 
-The ColorLib source name "Force" is FORBIDDEN as the app name. **Pressbox**
-is the new, original name — single lowercase word, kebab-safe, no collision
-with `apps/`, `openspec/specs/`, or `docs/templates/` (verified: zero hits).
-Source slug: `force`. Preview URL:
-https://preview.colorlib.com/theme/force/
+The template SHALL render a top bar containing secondary navigation links (About Us, Contact, Advertisement, Privacy) and social media icon links (Facebook, Twitter, Instagram, YouTube, RSS).
 
-## Design reference (replication findings)
+#### Scenario: TopBar renders navigation and social icons
 
-- **Original:** ColorLib "Force" (page title: "Force"). Listed in
-  TEMPLATES.md under **Magazine (20)** (section header around line 2196;
-  the first unchecked row at line 2197 — `wp/template/force/`). A news /
-  magazine portal template.
+- **WHEN** the page loads
+- **THEN** the secondary navigation is visible with all four links
+- **AND** five social media icon links are present
 
-- **Live preview — REACHABLE (verified 2026-09-24 by direct fetch):**
-  `https://preview.colorlib.com/theme/force/` returns HTTP 200
-  (~44 KB HTML). Stylesheets: `css/bootstrap.css`, `css/style.css`
-  (~54 KB), `css/responsive.css`, `css/font-awesome.min.css`, plus
-  vendor CSS for Owl Carousel, lightbox, nice-select, animate.css,
-  jQuery UI. Scripts: jQuery, Bootstrap, Owl Carousel, lightbox, etc.
-  Fonts: **Roboto** (headings, body) + **Open Sans** (secondary).
+### Requirement: Dark navbar with branding and category navigation
 
-- **Live DOM structure (from the fetched HTML + CSS):**
-  - `header.header_area` → `nav.navbar.navbar-expand-lg`
-    - Top bar (`.top_menu`, bg `#f9f9ff`): left date/info links,
-      right social + search; logo in `.logo_part`.
-    - Main nav: `.main_menu` with Bootstrap navbar, centered
-      container (`.container_inner`, bg `#fff`).
-  - `section.home_banner_area` — full-width Owl Carousel hero
-    (min-height 600px, dark overlay on images). Two slides with
-    centered white text: headline (Roboto 36px bold white), date,
-    category badge (`.date`, bg `#ff1857`). Carousel indicators
-    active = `#ff1857`.
-  - `section.choice_area.p_120` — "Editor's Choice" section
-    (bg `#f9f9ff`). Section title: `.main_title2` (bg `#f9f9ff`,
-    left border 3px solid `#ff1857`). 4-column grid of
-    `.choice_item` cards, each with an image and article title
-    (`.choice_text`, Roboto 18px 500, `#222`).
-  - `section.news_area` — 2-column layout (8/4 Bootstrap grid):
-    - **Main (col-lg-8):** "Latest News" heading + media list of
-      3 recent articles (thumbnail left, title + excerpt + author
-      right). Below: "Travel and food" sub-section with a 2×2 grid
-      of small article cards. Then "Wedding adventure" sub-section
-      with another 2×2 grid of articles. Each sub-section has its
-      own heading (`.main_title2` style).
-    - **Sidebar (col-lg-4):** "Most Popular News" (`.right_sidebar`)
-      with a list of popular articles (thumbnail + title), followed
-      by a "Newsletter" widget (email input + subscribe button).
-  - `section.product_list_area.p_100` — "Best Product Deals" area.
-    3-column category tabs: "Tech Culture", "Brilliant Ideas", etc.
-    Each tab shows a list of 3–4 articles with thumbnails.
-  - `footer.footer-area` — multi-column footer:
-    - "Quick Links" column (Sitemaps, Categories, Archives, etc.)
-    - "Most Viewed News" column (recent popular articles)
-    - Social media widget
-    - Copyright bar at bottom.
+The template SHALL render a dark navigation bar with the "Pressbox 24H" branding, category links (Home, News, Sport, Lifestyle, Fashion, Music, Business), and a search toggle button.
 
-- **Screenshot** (`force-free-template.jpg`, AVIF format; the
-  TEMPLATES.md row embeds a downscaled copy): Shows a magazine-style
-  layout with a dark hero carousel at top, white navigation bar,
-  "Editor's Choice" grid section with lavender background, a 2-column
-  news feed with sidebar, and a dark footer. Clean, editorial
-  aesthetic with hot-pink accent touches on badges and active indicators.
+#### Scenario: Navbar shows branding and categories
 
-## Design tokens
+- **WHEN** the page loads
+- **THEN** the "Pressbox" branding and "24H" badge are visible
+- **AND** the category navigation shows all seven categories
 
-| Token                | Value      | Notes                                                                   |
-| -------------------- | ---------- | ----------------------------------------------------------------------- |
-| `--color-brand`      | `#ff1857`  | Hot-pink accent: nav date badge, carousel indicator active, sidebar hover |
-| `--color-bg-lavender`| `#f9f9ff`  | Light lavender: top menu, section backgrounds, main_title2 bg           |
-| `--color-heading`    | `#222222`  | Headings, article titles, h2/h3                                         |
-| `--color-body`       | `#222222`  | Body text (Open Sans default)                                           |
-| `--color-muted`      | `#777777`  | Meta text, dates, secondary info                                        |
-| `--color-white`      | `#ffffff`  | Content cards, navbar bg, footer sections                               |
-| `--color-dark`       | `#04091e`  | Dark overlay for hero carousel, footer background                       |
-| `--color-border`     | `#eeeeee`  | Card borders, dividers                                                  |
-| `--font-heading`     | Roboto     | Headings, article titles (500 weight)                                   |
-| `--font-body`        | Open Sans  | Body text, meta, secondary                                              |
-| `--radius-card`      | 0          | Bootstrap default — no rounded corners on cards                         |
-| `--radius-badge`     | 0          | Square badges (date/category badges)                                    |
-| `--section-padding`  | 120px      | `.p_120` on choice_area; `.p_100` on product_list_area                  |
+#### Scenario: Search toggle shows and hides search input
 
-## Gherkin requirements
+- **WHEN** the user clicks the search button
+- **THEN** a search input field appears
+- **WHEN** the user clicks the search button again
+- **THEN** the search input field disappears
 
-### Scenario: Navbar renders with logo, links, and search
-```
-Given the user loads the Pressbox homepage
-Then a navigation bar is visible at the top
-And the navbar contains a logo text "Force" replaced with "Pressbox"
-And the navbar contains menu links (Home, Features, etc.)
-And the navbar has a search icon button
-And a top bar shows above the navbar with date info and social links
-```
+### Requirement: Hero carousel with featured articles
 
-### Scenario: Hero carousel displays slides with headlines
-```
-Given the user loads the Pressbox homepage
-Then a full-width carousel hero section is visible
-And the carousel shows at least 2 slides
-And each slide has a background image with dark overlay
-And each slide displays a white headline and subheadline
-And each slide has a category badge in hot-pink (#ff1857)
-And carousel navigation indicators are visible at the bottom
-And the active indicator is colored hot-pink (#ff1857)
-```
+The template SHALL render a full-width hero carousel displaying featured articles with category badge, title, date, and comment count. The carousel SHALL support prev/next navigation and dot indicators with wrap-around behavior.
 
-### Scenario: Editor's Choice section shows article grid
-```
-Given the user scrolls to the Editor's Choice section
-Then a section heading "Editor's Choice" is displayed
-And the heading has a left border accent in hot-pink (#ff1857)
-And 4 article cards are shown in a row
-And each card has a thumbnail image
-And each card has an article title below the image
-```
+#### Scenario: Default state shows first article
 
-### Scenario: News area shows latest articles with sidebar
-```
-Given the user scrolls to the news section
-Then a "Latest News" heading is displayed
-And 3 recent article entries are shown in the main column
-And each entry has a thumbnail, title, excerpt, and author/date info
-And a sidebar column shows "Most Popular News"
-And the sidebar lists popular articles with thumbnails
-```
+- **WHEN** the page loads
+- **THEN** the first featured article is displayed with its title, category, date, and comment count
 
-### Scenario: Travel and food sub-section displays grid
-```
-Given the user scrolls within the news area
-Then a "Travel and food" sub-heading is displayed
-And 4 article cards are shown in a 2×2 grid
-And each card has a thumbnail and title
-```
+#### Scenario: Next and previous navigation
 
-### Scenario: Wedding adventure sub-section displays grid
-```
-Given the user scrolls within the news area
-Then a "Wedding adventure" sub-heading is displayed
-And 4 article cards are shown in a 2×2 grid
-And each card has a thumbnail and title
-```
+- **WHEN** the user clicks the next button
+- **THEN** the next article is displayed
+- **WHEN** the user clicks the previous button
+- **THEN** the previous article is displayed
 
-### Scenario: Newsletter subscription widget in sidebar
-```
-Given the user views the sidebar
-Then a "Newsletter" heading is displayed
-And an email input field is visible
-And a "Subscribe" button is displayed
-```
+#### Scenario: Dot indicator navigation
 
-### Scenario: Best Product Deals section shows category tabs
-```
-Given the user scrolls to the product list area
-Then a "Best Product Deals" heading is displayed
-And 3 category sections are shown: "Tech Culture", "Brilliant Ideas", etc.
-And each category has 3–4 article items with thumbnails and titles
-```
+- **WHEN** the user clicks a dot indicator
+- **THEN** the corresponding article is displayed
 
-### Scenario: Footer renders with multiple columns
-```
-Given the user scrolls to the footer
-Then a multi-column footer is displayed
-And it contains a "Quick Links" column with navigation links
-And it contains a "Most Viewed News" column with popular articles
-And it contains a social media widget
-And it contains a copyright/attribution line
-And the footer links to https://www.componentdock.com/ ("Component Dock")
-```
+#### Scenario: Wrap-around navigation
 
-### Scenario: Responsive layout adapts to mobile
-```
-Given the user views the page on a 375px viewport
-Then the navbar collapses into a hamburger menu
-And the carousel text scales down
-And article grids stack to single column
-And the sidebar moves below the main content
-And the footer columns stack vertically
-```
+- **WHEN** the user is on the last slide and clicks next
+- **THEN** the first slide is displayed
+- **WHEN** the user is on the first slide and clicks previous
+- **THEN** the last slide is displayed
 
-## Verification checklist
+### Requirement: Trending posts and recent articles grid
 
-- [ ] Navbar renders with logo, nav links, and search icon
-- [ ] Top bar shows date and social links above navbar
-- [ ] Hero carousel shows 2+ slides with images, headlines, and badges
-- [ ] Carousel indicators work and active indicator is #ff1857
-- [ ] Editor's Choice section has left-border heading and 4 cards
-- [ ] News area has Latest News feed (3 articles) in 8-col layout
-- [ ] Sidebar has Most Popular News and Newsletter widget
-- [ ] Travel and food sub-section shows 2×2 grid
-- [ ] Wedding adventure sub-section shows 2×2 grid
-- [ ] Product list area shows 3+ category sections with articles
-- [ ] Footer has Quick Links, Most Viewed News, social, copyright
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] All placeholder images use picsum.photos with deterministic seeds
-- [ ] Fonts: Roboto (headings) + Open Sans (body) via Google Fonts link
-- [ ] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
-- [ ] Responsive: stacks to single column on mobile (375px)
-- [ ] Tests: Vitest + Testing Library, 100% coverage
-- [ ] Build: Vite production build succeeds
+The template SHALL render a grid of trending post cards and a separate grid of recent article cards, each with image, category, title, date, and comment count.
+
+#### Scenario: Trending posts section renders
+
+- **WHEN** the page loads
+- **THEN** the "Trending Posts" heading is visible
+- **AND** four trending post cards are displayed
+
+#### Scenario: Recent articles section renders
+
+- **WHEN** the page loads
+- **THEN** the "Recent Articles" heading is visible
+- **AND** three recent article cards are displayed
+
+### Requirement: Newsletter subscription section
+
+The template SHALL render a newsletter subscription section with an email input and subscribe button on a dark background.
+
+#### Scenario: Newsletter form renders
+
+- **WHEN** the page loads
+- **THEN** the "Stay Connected" heading is visible
+- **AND** an email input field and subscribe button are present
+
+#### Scenario: Form submission clears input
+
+- **WHEN** the user types an email address and clicks subscribe
+- **THEN** the email field is cleared
+
+### Requirement: Footer with branding and Component Dock link
+
+The template SHALL render a footer with the site branding, quick links, social media icons, copyright notice, and a "More templates at Component Dock" link pointing to https://www.componentdock.com/.
+
+#### Scenario: Footer renders all elements
+
+- **WHEN** the page loads
+- **THEN** the "Pressbox" branding is visible in the footer
+- **AND** quick links are present
+- **AND** social media icon links are present
+- **AND** the copyright notice is present
+- **AND** a "Component Dock" link points to https://www.componentdock.com/
