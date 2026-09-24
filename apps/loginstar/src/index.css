@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand primary — lavender-purple #827ffe. */
+  --color-brand-primary: #827ffe;
+
+  /* Heading / dark text — dark purple #403866. */
+  --color-brand-heading: #403866;
+
+  /* Input background — light gray #e6e6e6. */
+  --color-brand-input-bg: #e6e6e6;
+
+  /* Placeholder text — #8f8fa1. */
+  --color-brand-placeholder: #8f8fa1;
+
+  /* Muted text — #999999. */
+  --color-brand-muted: #999999;
+
+  /* Body text — #666666. */
+  --color-brand-body: #666666;
+
+  /* Validation error — #c80000. */
+  --color-brand-error: #c80000;
+
+  /* Card background — white. */
+  --color-brand-card: #ffffff;
+
+  /* Font family — Ubuntu. */
+  --font-sans: 'Ubuntu', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Ubuntu', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
