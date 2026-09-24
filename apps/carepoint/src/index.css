@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-roboto: 'Roboto', sans-serif;
+  --color-brand-green: #20d34a;
+  --color-brand-blue: #283290;
+  --color-brand-dark: #1a8a35;
+  --color-body: #696969;
+  --color-dark-text: #232323;
+  --color-footer-bg: #3a3a3a;
+  --color-emergency: #ff0030;
+  --color-link-red: #db5246;
+  --color-gold: #ffb606;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-roboto);
+}
