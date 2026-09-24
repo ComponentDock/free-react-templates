@@ -1,269 +1,189 @@
-# Template: Pressly (News / Magazine Template)
+# Template: Pressly (Magazine & News)
 
 ## Purpose
 
-Pressly is a single-page news / magazine website template in the
-free-react-templates monorepo. It is an original React recreation of the
-ColorLib free "Newsflex" website template design (see TEMPLATES.md), built
-under a different name with the monorepo stack: Vite + React 19 + Tailwind
-CSS 4 + TypeScript.
+Pressly is a magazine/news template — a React recreation of the ColorLib free
+"Magaznpro" template (preview: https://preview.colorlib.com/theme/magaznpro/).
+Built under a different name with the monorepo stack: Vite + React 19 +
+Tailwind CSS 4 + TypeScript.
 
-## Design reference (replication findings)
+**Source mapping:** `apps/pressly` recreates
+`https://colorlib.com/wp/template/magaznpro/`.
 
-- **Original:** ColorLib "Newsflex" — free responsive news website template
-  for online magazines and newspaper-like pages (source:
-  https://colorlib.com/wp/template/newsflex/). TEMPLATES.md has TWO copies of
-  this item (lines 276 in the Blog category and 2207 in the Magazine
-  category — mark BOTH `[x]` when done). NOTE: both TEMPLATES.md rows point
-  at the WRONG screenshot (`newsbox-free-template.jpg` — that file belongs to
-  the separate "Newsbox" template); the real Newsflex screenshot is
-  `newsflex-free-news-magazine-website-template.jpg`.
-- **Demo DOM analyzed:** NOT REACHABLE. `https://preview.colorlib.com/theme/
-newsflex/` returns HTTP 404 "Not Found" (curl + browser verified 2026-08-11).
-  The slug is absent from `preview.colorlib.com/assets/js/products.js`
-  (which hosts the newer Astro templates on `<slug>-colorlib.pages.dev` —
-  `newsflex-colorlib.pages.dev` does NOT resolve, `ERR_NAME_NOT_RESOLVED`).
-  The preview portal normalizes `#newsflex` to `#news` (a different
-  template). Per docs/replication.md, this spec falls back to the screenshot
-  as the sole reference.
-- **Screenshot analyzed:** `newsflex-free-news-magazine-website-template.jpg`
-  (1200×978, verified in a browser with vision analysis; brand colors
-  confirmed by pixel sampling): classic clean news-magazine layout — white
-  page, light-gray trending strip, vivid **red `#ef1c49`** accents
-  (logo, trending label, active tab underline, Subscribe button) and a
-  light **cyan `#74cbe0`** header ad banner. The screenshot crops at the
-  newsletter sidebar, so the FOOTER is not visible in the reference — the
-  footer structure below is INFERRED from the template's category
-  conventions (see "Inferred footer" note).
-- **Visual design (from rendered screenshot + pixel sampling):** clean,
-  content-first news aesthetic. White background, near-black text, brand red
-  `#ef1c49` for CTAs and active states; header with logo left + centered nav
-  - right ad banner; a light-gray trending ticker strip; a 2-column featured
-    article grid (one large lead + two stacked smaller) with dark gradient
-    overlays at the bottom of each image and a small semi-transparent date
-    line above the headline; an "ALL THE NEWS" tabbed section; a light-gray
-    newsletter widget. The demo brands itself "Newsflex"; recreation uses the
-    NEW name **Pressly**.
+### Design tokens (from live stylesheet, verified via direct fetch)
 
-- **Structure (1:1, section order — from the screenshot):**
-  1. Header bar — left: bold dark-red wordmark "Newsflex" (recreated as
-     "Pressly"); center: nav links **International** / **Local News** /
-     **Pages** / **Sport** / **Lifestyle**; right: rectangular ad banner
-     labeled "YOUR ADD HERE" (cyan `#74cbe0` bg in the source — recreated as
-     a neutral placeholder box).
-  2. Trending bar — a light gray (`#f4f4f4`) horizontal strip below the
-     header: a red `#ef1c49` "Trending" label/button followed by placeholder
-     headline text.
-  3. Featured news grid (hero) — two columns: LEFT one large article card
-     (city-street photo, dark gradient overlay, small date line "June 20,
-     2018" above the headline, white headline "Traffic Problems in Time
-     Square"); RIGHT column stacked with TWO smaller article cards (photo +
-     overlay + date + headline: "The best way to spend your holiday" /
-     "Sport results for the weekend games"). On mobile the grid stacks
-     vertically (lead first).
-  4. "ALL THE NEWS" section — small centered heading "ALL THE NEWS"
-     (letter-spaced capitals) + tab row **LATEST** (active: red text + red
-     underline) / **POPULAR** / **INTERNATIONAL** / **LOCAL** + a row of
-     article thumbnail cards below (image + title), side-by-side.
-  5. Newsletter sidebar widget — light-gray (`#f4f4f4`-class) box to the
-     right of the news feed: bold dark heading "Subscribe to our
-     newsletter", an email input (placeholder "Your Email"), and a red
-     `#ef1c49` "Subscribe" button.
-  6. Footer (INFERRED — not visible in the cropped screenshot; follow
-     ColorLib news-magazine conventions as seen in sibling replications
-     like Bullion/Newsbit): dark footer with a brand/About blurb column, a
-     "Popular post" / links column, contact info line, social icon links,
-     and a copyright line with the ColorLib credit. Implementer should pick
-     a reasonable dark-footer layout, note it as inferred in the PR, and
-     keep it consistent with the monorepo's other news templates.
+| Token | Value | Use |
+|-------|-------|-----|
+| Font | `"DM Sans"` (Google Fonts, weights 400/500/700) | Body and headings; base 16px |
+| Brand pink | `#f0d` | Primary accent: CTA buttons, header nav bg, links, hover states, back-to-top, blog date badges, header-btn bg |
+| Heading ink | `#000` | h1-h6 color, font-weight 500-700 |
+| Body text | `#646464` | Paragraphs, muted text, 16px/30px line-height |
+| Slider caption text | `#5E5E5E` | Hero carousel caption date/author |
+| Social icon grey | `#D4D4E1` | Header social icons default color |
+| Section title border | `#E8E9FF` | Underline on section headings (1px solid) |
+| Light section bg | `#FFF6FE` | Very light pink background for Technology section |
+| Blog border | `#f0e9ff` | Card borders, sidebar widget borders |
+| Teal badge | `#00CEB2` | Default category badge (small-btn) |
+| Blue badge | `#0154F7` | Trending category badge |
+| Orange-red badge | `#F04506` | Food category badge |
+| Yellow badge | `#FBCE0F` | Entertainment category badge |
+| Purple badge | `#DD00FF` | Fashion category badge |
+| Button radius | `5px` | All buttons: boxed-btn, submit-btn, small-btn, header-btn |
+| Header nav bg | `#f0d` | Sticky navigation bar background, white text |
+| Card radius | `10px` | Hero slider caption card overlay |
+| Section padding | `120px top / 100px bottom` | Standard section spacing (section-padding) |
+| Preloader bg | `#f7f7f7` | Page preloader background |
+| Footer dark | `#3B4855` | Footer bottom bar, active pagination |
+| Back-to-top | `#f0d`, 50% radius | Circular fixed button bottom-right |
 
-- **Design tokens (from pixel sampling of the real screenshot):**
-  - Brand red **`#ef1c49`** — logo wordmark, "Trending" label, active tab
-    text + underline, Subscribe button fill. Primary CTA color.
-  - Ad-banner cyan **`#74cbe0`** — the header "YOUR ADD HERE" banner (light
-    cyan/blue).
-  - Page background **`#ffffff`**; light gray **`#f4f4f4`** — trending bar
-    and section dividers/newsletter widget.
-  - Text — near-black / dark gray headings, gray muted text for meta
-    (dates, bylines).
-  - Font — clean modern sans-serif (reference renders like Open Sans /
-    Roboto / Helvetica): use Google Fonts (e.g. Open Sans or Roboto) for
-    body + a heavier weight for headlines in the recreation.
-  - Image treatment — every article image has a dark gradient overlay at
-    the bottom; small semi-transparent white date line sits above the
-    headline on the overlay; headline text is white.
-  - Buttons — rectangular, no radius on the red CTA (straight corners in
-    the reference).
-  - Spacing rhythm — generous section padding, white space between the
-    trending bar, hero grid, and news feed; content column is centered with
-    the newsletter widget sitting to the right.
+### Visual design notes (from screenshot + DOM)
 
-- **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/pressly-<n>/<w>/<h>`; hero lead ~800×600-class, small
-  cards ~400×300-class); the "YOUR ADD HERE" banner → a bordered placeholder
-  box (no external ad); icons → lucide-react (e.g. ChevronLeft/ChevronRight
-  for any carousel/tab controls, social icons as inline SVG — lucide-react
-  removed brand glyphs); fonts via Google Fonts `<link>` in `index.html`;
-  logo recreated as a bold text wordmark "Pressly" in brand red.
-
-Pressly lives in `apps/pressly` and uses shared components from
-`packages/ui` (Button, ButtonLink, cn).
+- Full-width hero carousel with large images (678px height desktop), bottom-left
+  caption overlay card (white bg, 10px radius) with category badge + title + date.
+- "Trending Now" grid: 1 large card with overlaid caption (left, col-lg-4) + 5
+  standard cards (image on top, title below, category badge).
+- "What's New" tabbed section: tab nav (All/Lifestyle/Travel/Fashion/Photography),
+  left 6/7 column = image slider with caption, right 5/7 column = 3 stacked
+  post cards with image + title + date.
+- Technology section: light pink `#FFF6FE` bg, 3-column layout — left 2 stacked
+  posts, center large video slider with thumbnails, right 2 stacked posts.
+- Instagram feed: horizontal row of 6 square images with Instagram icon overlay.
+- Footer: 4-column (logo + description + social, Useful Links, Top Categories,
+  Newsletter signup form), dark bottom bar with copyright.
+- Category badges are color-coded pills (teal default, blue for trending, etc.)
+  with 5px radius.
 
 ## Requirements
 
-### Requirement: Header with wordmark, nav links, and ad banner
+### Requirement: Header renders with top bar, logo, and sticky navigation
 
-The system SHALL render a header with a brand-red wordmark on the left,
-five centered nav links, and a placeholder ad banner on the right.
+Pressly SHALL render a header with a top bar containing social icons (left),
+centered logo, and a right section with search, page dropdown, and sign-in
+button. Below, a sticky navigation bar with a pink (`#f0d`) background shows
+category links (Home, Lifestyle, Food, Review, Sports, Movie, Fitness, Fashion).
 
-#### Scenario: Header layout
+#### Scenario: Desktop header displays all elements
 
-- **GIVEN** the Pressly page is rendered
+- **WHEN** the page loads on desktop viewport
+- **THEN** the header shows social icons, logo, search icon, page dropdown, sign-in button
+- **AND** the sticky nav bar displays all 8 category links with white text on pink background
+
+#### Scenario: Mobile header hides logo and shows mobile menu toggle
+
+- **WHEN** the page loads on mobile viewport
+- **THEN** the main logo is hidden and the mobile hamburger menu toggle is visible
+
+#### Scenario: Search input expands on focus
+
+- **WHEN** the user focuses the search input
+- **THEN** the input expands to reveal a text field with a pink bottom border
+
+### Requirement: Hero carousel renders with image slides and caption overlays
+
+Pressly SHALL render a full-width hero carousel with multiple image slides.
+Each slide displays a background image with a bottom-left caption card
+containing a category badge, headline title, and date/author info.
+
+#### Scenario: Hero slides render with captions
+
 - **WHEN** the page loads
-- **THEN** the header SHALL show the wordmark "Pressly" on the left in the
-  brand red `#ef1c49`
-- **AND** five nav links SHALL be shown in the center: International, Local
-  News, Pages, Sport, and Lifestyle
-- **AND** a rectangular placeholder ad banner labeled "YOUR ADD HERE"
-  SHALL be shown on the right
+- **THEN** at least 3 hero slides are rendered with background images
+- **AND** each slide shows a category badge, title, and date/author text
+- **AND** the caption card has a white background with rounded corners
 
-#### Scenario: Mobile header
+#### Scenario: Hero carousel navigates between slides
 
-- **GIVEN** the header is rendered on a narrow viewport
+- **WHEN** the user clicks the next/previous carousel arrow
+- **THEN** the carousel transitions to the adjacent slide
+
+### Requirement: Trending Now section displays post grid
+
+Pressly SHALL render a "Trending Now" section with a heading and a grid of
+post cards. The first card is a large featured post with an overlaid caption.
+Remaining cards show image on top with title and date below.
+
+#### Scenario: Trending section renders heading with View All link
+
 - **WHEN** the page loads
-- **THEN** the nav links SHALL collapse behind a menu toggle (hamburger)
-  that opens the same five links
-- **AND** the ad banner SHALL be hidden or stacked below the header
+- **THEN** the "Trending Now" heading is displayed with a "View All" link on the right
+- **AND** the heading has a bottom border separator
 
-### Requirement: Trending bar
+#### Scenario: Trending posts display with category badges
 
-The system SHALL render a light-gray trending strip below the header with a
-red "Trending" label and placeholder headline text.
-
-#### Scenario: Trending strip
-
-- **GIVEN** the page is rendered
-- **WHEN** the trending bar is displayed
-- **THEN** a light-gray `#f4f4f4` strip SHALL show a red `#ef1c49`
-  "Trending" label followed by a placeholder news headline
-
-### Requirement: Featured news grid
-
-The system SHALL render a two-column featured grid: one large lead article
-on the left and two stacked smaller articles on the right, each with an
-image, a dark gradient overlay, a date line, and a white headline.
-
-#### Scenario: Lead article
-
-- **GIVEN** the featured grid is displayed
 - **WHEN** the page loads
-- **THEN** the left column SHALL show a large article card with an image,
-  a dark gradient overlay, a small date line (e.g. "June 20, 2018"), and
-  the white headline "Traffic Problems in Time Square"
+- **THEN** the trending grid shows post cards with images, category badges, titles, and dates
 
-#### Scenario: Smaller featured articles
+### Requirement: What's New tabbed section filters posts by category
 
-- **GIVEN** the featured grid is displayed
+Pressly SHALL render a "What's New" section with tabbed navigation (All,
+Lifestyle, Travel, Fashion, Photography). The active tab shows a split layout:
+left side has a large image slider with caption, right side has 3 stacked
+post cards.
+
+#### Scenario: Tab navigation switches content
+
+- **WHEN** the user clicks a category tab
+- **THEN** the tab becomes visually active and the content area updates
+
+#### Scenario: Default tab shows All content
+
 - **WHEN** the page loads
-- **THEN** the right column SHALL show two stacked smaller cards with
-  images, overlays, date lines, and the headlines "The best way to spend
-  your holiday" and "Sport results for the weekend games"
+- **THEN** the "All" tab is active by default
+- **AND** a large featured image with caption is shown on the left
+- **AND** 3 post cards are shown on the right
 
-#### Scenario: Mobile featured grid
+### Requirement: Technology section with video slider
 
-- **GIVEN** the featured grid is displayed on a narrow viewport
+Pressly SHALL render a "Technology" section with a light pink (`#FFF6FE`)
+background. The layout has 3 columns: left 2 stacked post cards, center
+a large video/image slider with thumbnail navigation, right 2 stacked
+post cards.
+
+#### Scenario: Technology section renders with light background
+
 - **WHEN** the page loads
-- **THEN** the cards SHALL stack vertically with the lead article first
+- **THEN** the Technology section has a light pink background
+- **AND** the heading shows "Technology" with a "View All" link
 
-### Requirement: "All The News" tabbed section
+#### Scenario: Video slider displays with thumbnails
 
-The system SHALL render an "ALL THE NEWS" heading with a tab row (LATEST
-active, POPULAR, INTERNATIONAL, LOCAL) and a row of article thumbnail cards.
-
-#### Scenario: News tabs
-
-- **GIVEN** the news section is displayed
 - **WHEN** the page loads
-- **THEN** a letter-spaced "ALL THE NEWS" heading SHALL appear
-- **AND** the tabs LATEST, POPULAR, INTERNATIONAL, and LOCAL SHALL be shown
-- **AND** the LATEST tab SHALL be active with red text and a red underline
+- **THEN** the center column shows a large image slider with thumbnail navigation
+- **AND** a play button overlay is visible on the current slide
 
-#### Scenario: Switching tabs
+### Requirement: Instagram feed row renders image thumbnails
 
-- **GIVEN** the news tabs are displayed
-- **WHEN** the user activates a non-active tab (e.g. POPULAR)
-- **THEN** that tab SHALL become active (red text + red underline) and the
-  previously active tab SHALL become inactive
+Pressly SHALL render a horizontal row of Instagram-style square image thumbnails
+with an Instagram icon overlay on hover.
 
-#### Scenario: Article thumbnails
+#### Scenario: Instagram row displays images
 
-- **GIVEN** the news section is displayed
 - **WHEN** the page loads
-- **THEN** at least two article thumbnail cards (image + title) SHALL be
-  shown side by side below the tabs
-- **AND** on a narrow viewport the thumbnails SHALL stack vertically
+- **THEN** at least 6 square image thumbnails are displayed in a horizontal row
 
-### Requirement: Newsletter sidebar widget
+#### Scenario: Instagram images show icon on hover
 
-The system SHALL render a light-gray newsletter box with a bold heading, an
-email input, and a red Subscribe button.
+- **WHEN** the user hovers over an Instagram image
+- **THEN** an Instagram icon overlay appears
 
-#### Scenario: Newsletter form
+### Requirement: Footer with branding, links, categories, and newsletter
 
-- **GIVEN** the newsletter widget is displayed
+Pressly SHALL render a footer with 4 columns: logo + description + social
+icons, Useful Links, Top Categories, and Newsletter signup form. Below,
+a dark bottom bar contains the copyright notice.
+
+#### Scenario: Footer renders all sections
+
 - **WHEN** the page loads
-- **THEN** a light-gray box SHALL show the heading "Subscribe to our
-  newsletter", an email input with placeholder "Your Email", and a red
-  `#ef1c49` "Subscribe" button
+- **THEN** the footer shows the logo, description, social icons, Useful Links list, Top Categories list, and Newsletter form
 
-#### Scenario: Newsletter submit
+#### Scenario: Newsletter form accepts email
 
-- **GIVEN** the newsletter form is displayed
-- **WHEN** the user enters an email and presses Subscribe
-- **THEN** the form SHALL indicate the subscription was received
-- **AND** submitting an invalid email SHALL show a validation error and no
-  success message
+- **WHEN** the user types an email and clicks Subscribe
+- **THEN** the email input is processed (form action)
 
-### Requirement: Footer (inferred)
+#### Scenario: Footer links to Component Dock
 
-The system SHALL render a dark footer with a brand blurb, a links column,
-contact/social info, and a copyright line with the ColorLib credit.
-
-#### Scenario: Footer content
-
-- **GIVEN** the page is rendered
-- **WHEN** the footer is displayed
-- **THEN** it SHALL show a brand/About blurb, a links column, contact or
-  social icon links, and a copyright line crediting ColorLib
-- **AND** the footer SHALL use a dark background consistent with the
-  monorepo's other news templates
-
-### Requirement: Page composition
-
-The system SHALL compose all sections in a single page with a main landmark
-and a document title.
-
-#### Scenario: Full page render
-
-- **GIVEN** the Pressly app is rendered
-- **WHEN** the page loads
-- **THEN** the page SHALL compose the header, trending bar, featured news
-  grid, "All The News" section, newsletter widget, and footer in order
-- **AND** the document title SHALL be "Pressly — News Template"
-
-## Verification checklist
-
-- [ ] `npm run spec:validate` passes for this spec
-- [ ] App typechecks (`npm run typecheck -w @free-react-templates/pressly`)
-- [ ] Tests at 100% coverage (lines/functions/branches/statements) for the app
-- [ ] Build succeeds (`npm run build -w @free-react-templates/pressly`)
-- [ ] Section order matches the reference 1:1 (header → trending bar → featured grid → All The News → newsletter widget → footer)
-- [ ] Design tokens in `@theme` (brand red #ef1c49, ad cyan #74cbe0, page #ffffff, light gray #f4f4f4, sans-serif font stack)
-- [ ] Header: red "Pressly" wordmark left, 5 centered nav links, right ad-banner placeholder; mobile hamburger menu
-- [ ] Trending bar: light-gray strip + red "Trending" label + placeholder headline
-- [ ] Featured grid: large lead card left + two stacked smaller cards right, all with dark gradient overlay, date line, white headline; stacks on mobile
-- [ ] All The News: letter-spaced heading, 4 tabs (LATEST active with red underline), thumbnail cards; tab switching updates active state
-- [ ] Newsletter widget: light-gray box, "Subscribe to our newsletter" heading, "Your Email" input, red Subscribe button; invalid email shows validation error
-- [ ] Footer (inferred from category conventions — flag in PR): dark bg, blurb, links, social icons, ColorLib credit
-- [ ] Document title "Pressly — News Template"
-- [ ] BOTH TEMPLATES.md rows marked `[x]` on completion: line 276 (Blog) and line 2207 (Magazine); fix the wrong screenshot reference (`newsbox-free-template.jpg` → `newsflex-free-news-magazine-website-template.jpg`) in both rows
+- **WHEN** the footer renders
+- **THEN** a link to https://www.componentdock.com/ is present with target="_blank"
+- **AND** the link text says "Component Dock"
