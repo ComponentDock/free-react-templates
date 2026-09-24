@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+/* Medpact brand palette — hospital & clinics template
+   Primary blue #007bff, teal accent #00b894, dark text #2d3436,
+   muted text #636e72, section bg #f8f9fa, footer #2d3436.
+   Headings Poppins, body Open Sans (Google Fonts). */
+@theme {
+  --color-primary-50: #e6f2ff;
+  --color-primary-100: #b3d9ff;
+  --color-primary-200: #80bfff;
+  --color-primary-300: #4da6ff;
+  --color-primary-400: #1a8cff;
+  --color-primary-500: #007bff;
+  --color-primary-600: #0062cc;
+  --color-primary-700: #004a99;
+  --color-primary-800: #003166;
+  --color-primary-900: #001933;
+
+  --color-accent-50: #e6faf5;
+  --color-accent-100: #b3f0e0;
+  --color-accent-200: #80e6cc;
+  --color-accent-300: #4ddcb7;
+  --color-accent-400: #1ad2a3;
+  --color-accent-500: #00b894;
+  --color-accent-600: #009376;
+  --color-accent-700: #006e59;
+  --color-accent-800: #004a3b;
+  --color-accent-900: #00251e;
+
+  --color-brand: #007bff;
+  --color-brand-hover: #0062cc;
+  --color-accent: #00b894;
+  --color-accent-hover: #009376;
+  --color-heading: #2d3436;
+  --color-muted: #636e72;
+  --color-section-bg: #f8f9fa;
+  --color-footer-bg: #2d3436;
+  --color-card-border: #e9ecef;
+
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #2d3436;
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background: #007bff;
+    color: #fff;
+  }
+}
