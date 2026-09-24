@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Headliner brand palette — editorial magazine aesthetic */
+  --color-brand: #e74c3c;
+  --color-brand-dark: #c0392b;
+
+  /* Ink — dark headings (#26282b from the original) */
+  --color-ink: #26282b;
+  --color-ink-dark: #1a1c1e;
+
+  /* Paper — light section backgrounds */
+  --color-paper: #f8f9fa;
+
+  /* Accent blue for top bar (#1a73e8) */
+  --color-accent: #1a73e8;
+
+  /* Mist — muted body text */
+  --color-mist: #999999;
+
+  /* Border color */
+  --color-border: #eeeeee;
+
+  /* Primary scale so shared Button/ButtonLink variants resolve */
+  --color-primary-50: #fdf2f1;
+  --color-primary-100: #fce4e2;
+  --color-primary-200: #f9cdc9;
+  --color-primary-300: #f4a8a2;
+  --color-primary-400: #ec7a71;
+  --color-primary-500: #e74c3c;
+  --color-primary-600: #c0392b;
+  --color-primary-700: #a93226;
+  --color-primary-800: #8d2b22;
+  --color-primary-900: #772820;
+
+  /* Fonts: Playfair Display for headings, Poppins for body */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
