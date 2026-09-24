@@ -2250,7 +2250,7 @@
 - [x] **Medicare** — [colorlib](https://colorlib.com/wp/template/medicare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medicare-free-template.jpg) · [medpact](https://free-react-templates-medpact.surge.sh)
 - [x] **Medicare2** — [colorlib](https://colorlib.com/wp/template/medicare2/) · [vitala](https://free-react-templates-vitala.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medicare2-free-template.jpg)
 - [x] **Medico** — [colorlib](https://colorlib.com/wp/template/medico/) · [medico](https://medico.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medic-free-template.jpg)
-- [~] **Medilife** — [colorlib](https://colorlib.com/wp/template/medilife/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medilife-free-template.jpg)
+- [x] **Medilife** — [colorlib](https://colorlib.com/wp/template/medilife/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medilife-free-template.jpg) · [lifeclinic](https://free-react-templates-lifeclinic.surge.sh)
 - [x] **Medino** — [colorlib](https://colorlib.com/wp/template/medino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/medino-free-template.jpg) · [curale](https://curale.free.componentdock.com)
 - [x] **Mediplus** — [colorlib](https://colorlib.com/wp/template/mediplus/) · [medvista](https://free-react-templates-medvista.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mediplus-free-template.jpg)
 - [x] **Pharma** — [colorlib](https://colorlib.com/wp/template/pharma/) · [elixir](https://elixir.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pharma-free-template.jpg)
