@@ -2289,7 +2289,7 @@
 - [x] **Archirio** — [colorlib](https://colorlib.com/wp/template/archirio/) · [structura](https://structura.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archirio-free-template.jpg)
 - [ ] **Archs** — [colorlib](https://colorlib.com/wp/template/archs/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archs-free-template.jpg)
 - [ ] **Author** — [colorlib](https://colorlib.com/wp/template/author/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/author-free-template.jpg)
-- [ ] **Banker** — [colorlib](https://colorlib.com/wp/template/banker/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/banker-free-template.jpg)
+- [~] **Banker** — [colorlib](https://colorlib.com/wp/template/banker/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/banker-free-template.jpg)
 - [x] **Bizpro** — [colorlib](https://colorlib.com/wp/template/bizpro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bizpro-free-classic-website-template.jpg) · [bizplanner](https://free-react-templates-bizplanner.surge.sh)
 - [ ] **Bobsled** — [colorlib](https://colorlib.com/wp/template/bobsled/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bobsled-creative-website-template.jpg)
 - [x] **Booke** — [colorlib](https://colorlib.com/wp/template/booke/) · [bookcraft](https://bookcraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/booke-website-template.jpeg)
