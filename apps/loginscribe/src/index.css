@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Page background — light gray (#e8e8e8). */
+  --color-page: #e8e8e8;
+
+  /* Card background — white. */
+  --color-card: #ffffff;
+
+  /* Primary gradient start — cyan (#00d2ff). */
+  --color-primary-start: #00d2ff;
+
+  /* Primary gradient end — purple (#a855f7). */
+  --color-primary-end: #a855f7;
+
+  /* Text color — dark (#333333). */
+  --color-ink: #333333;
+
+  /* Heading text — near black (#222222). */
+  --color-heading: #222222;
+
+  /* Caption / label text — gray (#999999). */
+  --color-caption: #999999;
+
+  /* Input underline — light gray (#e0e0e0). */
+  --color-border: #e0e0e0;
+
+  /* Avatar background — charcoal (#3a3a3a). */
+  --color-avatar: #3a3a3a;
+
+  /* Card shadow color. */
+  --color-shadow: rgba(0, 0, 0, 0.1);
+
+  /* Font: Poppins via Google Fonts (loaded in index.html). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
