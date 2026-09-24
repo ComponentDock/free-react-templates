@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* NewsClip brand palette — brand red-pink #ff084e (CTA/accent),
+     dark bg #1d1d1d (header, editorial, footer), light bg #f6f6f6
+     (video section), text primary #3a3a3a, text secondary #9f9f9f. */
+  --color-brand: #ff084e;
+  --color-brand-hover: #e60745;
+  --color-dark-bg: #1d1d1d;
+  --color-light-bg: #f6f6f6;
+  --color-ink: #3a3a3a;
+  --color-meta: #9f9f9f;
+
+  /* Roboto (body) + PT Serif (headings) — Google Fonts via index.html */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'PT Serif', Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #3a3a3a;
+  }
+  ::selection {
+    background: #ff084e;
+    color: #fff;
+  }
+}
