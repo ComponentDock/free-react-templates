@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Medwell brand palette — recreated from the ColorLib "Medcare" design
+     (primary blue #0051d2, body gray #797979, heading dark #020a21). */
+  --color-brand-50: #e6efff;
+  --color-brand-100: #b3cffc;
+  --color-brand-200: #80aff9;
+  --color-brand-300: #4d8ff6;
+  --color-brand-400: #1a6ff3;
+  --color-brand-500: #0051d2;
+  --color-brand-600: #0041a8;
+  --color-brand-700: #00317e;
+  --color-brand-800: #002054;
+  --color-brand-900: #00102a;
+
+  --color-surface: #f7f7f7;
+  --color-body: #797979;
+  --color-heading: #020a21;
+  --color-border: #e8edf1;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
