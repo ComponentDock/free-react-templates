@@ -3,15 +3,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Pressly brand palette — recreated from the ColorLib "Magaznpro" template.
-     Design tokens extracted from live CSS analysis:
-     - Brand pink/magenta #ff00dd (#f0d) — primary accent
-     - Heading #000, body #646464, slider date #5E5E5E
-     - Social icon grey #D4D4E1, section title border #E8E9FF
-     - Light section bg #FFF6FE, card borders #f0e9ff
-     - Category badges: teal #00CEB2, blue #0154F7, orange-red #F04506,
-       yellow #FBCE0F, purple #DD00FF
-     - Font: DM Sans (Google Fonts) */
+  /* Pressly brand palette — tokens: brand pink #f0d, heading #000,
+     body #646464, meta #5E5E5E, social grey #D4D4E1, section border #E8E9FF,
+     light bg #FFF6FE, card border #f0e9ff, badge teal #00CEB2, blue #0154F7,
+     orange-red #F04506, yellow #FBCE0F, purple #DD00FF. Font: DM Sans. */
   --color-accent: #ff00dd;
   --color-heading: #000000;
   --color-body: #646464;
