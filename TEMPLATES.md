@@ -2176,7 +2176,7 @@
 - [x] **Login Form V18** — [colorlib](https://colorlib.com/wp/template/login-form-v18/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v18.jpg) · [loginlume](https://loginlume.free.componentdock.com)
 - [x] **Login Form V19** — [colorlib](https://colorlib.com/wp/template/login-form-v19/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v19.jpg) · [loginglimmer](https://free-react-templates-loginglimmer.surge.sh)
 - [x] **Login Form V2** — [colorlib](https://colorlib.com/wp/template/login-form-v2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v2.jpg) · [loginscribe](https://loginscribe.free.componentdock.com)
-- [ ] **Login Form V20** — [colorlib](https://colorlib.com/wp/template/login-form-v20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v20.jpg)
+- [~] **Login Form V20** — [colorlib](https://colorlib.com/wp/template/login-form-v20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v20.jpg)
 - [ ] **Login Form V3** — [colorlib](https://colorlib.com/wp/template/login-form-v3/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v3.jpg)
 - [ ] **Login Form V4** — [colorlib](https://colorlib.com/wp/template/login-form-v4/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v4.jpg)
 - [ ] **Login Form V5** — [colorlib](https://colorlib.com/wp/template/login-form-v5/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v5.jpg)
