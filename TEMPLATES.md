@@ -2190,7 +2190,7 @@
 
 - [x] **Amin** — [colorlib](https://colorlib.com/wp/template/amin/) · [fragstorm](https://fragstorm.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amin-free-template.jpg)
 - [x] **Avision** — [colorlib](https://colorlib.com/wp/template/avision/) · [dispatch](https://dispatch.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/avision-free-template.jpg)
-- [~] **Awesome Magazine** — [colorlib](https://colorlib.com/wp/template/awesome-magazine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/awesomemagazine-free-template.jpg)
+- [x] **Awesome Magazine** — [colorlib](https://colorlib.com/wp/template/awesome-magazine/) · [headliner](https://headliner.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/awesomemagazine-free-template.jpg)
 - [ ] **Aznews** — [colorlib](https://colorlib.com/wp/template/aznews/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/aznews-free-template.jpg)
 - [x] **Eden** — [colorlib](https://colorlib.com/wp/template/eden/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eden-free-template.jpg) · [glossy](https://glossy.free.componentdock.com)
 - [x] **Erase** — [colorlib](https://colorlib.com/wp/template/erase/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/erase-free-template.jpg) · [pulp](https://pulp.free.componentdock.com)
