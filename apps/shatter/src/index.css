@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Shatter brand palette — recreated from the ColorLib Smashed design tokens:
+     crimson red #ff1857, near-black headings #222222, grey body text #777777. */
+  --color-brand: #ff1857;
+  --color-brand-dark: #e0104d;
+
+  /* Ink — near-black headings (#222222 from the original). */
+  --color-ink: #222222;
+  --color-ink-dark: #111111;
+
+  /* Paper — very light lavender/white background (#f9f9ff from the original). */
+  --color-paper: #f9f9ff;
+
+  /* Mist — muted body text (#777777 from the original). */
+  --color-mist: #777777;
+
+  /* Meta — lighter grey for dates and meta info (#999999). */
+  --color-meta: #999999;
+
+  /* Dark — navbar and footer background (#252525). */
+  --color-dark: #252525;
+  --color-dark-card: #2e2e2e;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the crimson accent. */
+  --color-primary-50: #fff0f4;
+  --color-primary-100: #ffe0e9;
+  --color-primary-200: #ffb3c7;
+  --color-primary-300: #ff80a1;
+  --color-primary-400: #ff4d7b;
+  --color-primary-500: #ff1857;
+  --color-primary-600: #e0104d;
+  --color-primary-700: #b80c40;
+  --color-primary-800: #8f0933;
+  --color-primary-900: #660726;
+
+  /* Fonts: Open Sans (body) + Roboto (headings). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
