@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Purple-to-blue gradient — from left to right. */
+  --color-gradient-start: #6a11cb;
+  --color-gradient-end: #2575fc;
+
+  /* Heading text — near-white. */
+  --color-heading: #fefefe;
+
+  /* Input text — muted gray. */
+  --color-input: #555555;
+
+  /* Input border. */
+  --color-input-border: #e0e0e0;
+
+  /* Label focused — near-black. */
+  --color-label-focus: #111111;
+
+  /* Button background — near-black. */
+  --color-button: #111111;
+
+  /* Button text — white. */
+  --color-button-text: #ffffff;
+
+  /* Forgot password link — light gray. */
+  --color-link: #cccccc;
+
+  /* Validation error — red. */
+  --color-error: #c80000;
+
+  /* Font: Open Sans via Google Fonts. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
