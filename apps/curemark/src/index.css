@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-cyan: #32c8fa;
+  --color-brand-blue: #587de4;
+  --color-brand-accent: #18a3eb;
+  --color-body: #404040;
+  --color-body-light: #757686;
+  --color-section-info: #f0f4f8;
+  --color-section-dept: #f3f3f3;
+  --color-section-testimonial: #eaf1f3;
+  --font-family-heading: 'Raleway', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-family-heading);
+    color: var(--color-body);
+  }
+}
+
+.gradient-bg {
+  background: linear-gradient(270deg, var(--color-brand-cyan) 0%, var(--color-brand-blue) 100%);
+}
