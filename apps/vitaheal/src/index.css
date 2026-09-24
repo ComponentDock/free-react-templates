@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Vitaheal brand palette — design tokens from the medical template.
+     Primary green #32c69a (buttons, nav active, links, selection),
+     coral accent #ffa07f (hover borders, active states),
+     heading text #404040, body text #a5a5a5/#929191,
+     background #FFFFFF. */
+  --color-teal-50: #e6f7f1;
+  --color-teal-100: #b3e8d8;
+  --color-teal-200: #80d9bf;
+  --color-teal-300: #4dcaa6;
+  --color-teal-400: #32c69a;
+  --color-teal-500: #2ab08a;
+  --color-teal-600: #229a78;
+  --color-teal-700: #1a7d60;
+  --color-teal-800: #136049;
+  --color-teal-900: #0b4332;
+
+  --color-coral-300: #ffb999;
+  --color-coral-400: #ffa07f;
+  --color-coral-500: #ff6347;
+
+  /* Neutral surfaces + text */
+  --color-ink-700: #404040;
+  --color-ink-800: #4c4c4c;
+  --color-ink-900: #333333;
+  --color-mute-400: #a5a5a5;
+  --color-mute-500: #929991;
+  --color-mute-600: #838383;
+  --color-band-50: #f7f7f7;
+
+  /* Primary scale for shared ui Button/ButtonLink `primary` variants */
+  --color-primary-50: #e6f7f1;
+  --color-primary-100: #b3e8d8;
+  --color-primary-200: #80d9bf;
+  --color-primary-300: #4dcaa6;
+  --color-primary-400: #32c69a;
+  --color-primary-500: #2ab08a;
+  --color-primary-600: #229a78;
+  --color-primary-700: #1a7d60;
+  --color-primary-800: #136049;
+  --color-primary-900: #0b4332;
+
+  /* Montserrat (body + headings) — Google Fonts via index.html */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
