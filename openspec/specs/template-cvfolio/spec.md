@@ -11,30 +11,23 @@ template with a yellow accent, profile photo, portfolio grid, and work experienc
 
 ## Design tokens (from live preview CSS)
 
-| Token             | Value                     | Usage                                  |
-| ----------------- | ------------------------- | -------------------------------------- |
-| Brand primary     | `#FFA804` / `#FFAD01`     | Header bar, accent underline, links    |
-| Brand secondary   | `#FFA600`                 | `.font-yellow` class (role headings)   |
-| Heading color     | `#333`                    | Body text, h1–h6                       |
-| Paragraph color   | `#777`                    | Body copy                              |
-| Muted text        | `#999` / `#666`          | Subheadings, filter links              |
-| Social icon bg    | `#887392` (purple)        | Social icons before hover              |
-| Social icon hover | `#FFA804`                 | Social icons after hover (scale anim)  |
-| Font family       | Poppins (400–700)         | Body and headings                      |
-| Script font       | Allura (400)              | Loaded but not visible in current page |
-| Button radius     | 4px                       | Download CV button                     |
-| Section underline | 10px tall × 50px wide, 5px radius, `#FFA804` | Section heading accent |
-| Social icon shape | 35px circle, 20px border-radius | Pill icons                  |
-| Profile photo     | 200×200px, 100% border-radius | Circular profile image              |
-| Header background | `#FFAD01`                 | Rounded top bar (border-radius 5px)    |
-| Card bg           | `#fff`                    | Intro card overlay on hero image       |
-| Section padding   | 100px top/bottom          | Between major sections                 |
-
-### Hero background
-
-Full-width background image (`slider-1-1920x1080.jpg`) with a dark overlay
-(`rgba(0,0,0,0.2)`) and a white gradient/transition at the bottom (150px white
-block). The profile photo floats up into the hero via negative margin.
+| Token             | Value                                        | Usage                                 |
+| ----------------- | -------------------------------------------- | ------------------------------------- |
+| Brand primary     | `#FFA804` / `#FFAD01`                        | Header bar, accent underline, links   |
+| Brand secondary   | `#FFA600`                                    | `.font-yellow` class (role headings)  |
+| Heading color     | `#333`                                       | Body text, h1–h6                      |
+| Paragraph color   | `#777`                                       | Body copy                             |
+| Muted text        | `#999` / `#666`                              | Subheadings, filter links             |
+| Social icon bg    | `#887392` (purple)                           | Social icons before hover             |
+| Social icon hover | `#FFA804`                                    | Social icons after hover (scale anim) |
+| Font family       | Poppins (400–700)                            | Body and headings                     |
+| Button radius     | 4px                                          | Download CV button                    |
+| Section underline | 10px tall × 50px wide, 5px radius, `#FFA804` | Section heading accent                |
+| Social icon shape | 35px circle, 20px border-radius              | Pill icons                            |
+| Profile photo     | 200×200px, 100% border-radius                | Circular profile image                |
+| Header background | `#FFAD01`                                    | Rounded top bar (border-radius 5px)   |
+| Card bg           | `#fff`                                       | Intro card overlay on hero image      |
+| Section padding   | 100px top/bottom                             | Between major sections                |
 
 ## Section structure (from live DOM)
 
@@ -55,111 +48,109 @@ block). The profile photo floats up into the hero via negative margin.
 7. **Counter / Stats** — animated number counters (if present in the full DOM).
 8. **Footer** — bottom section with Component Dock link.
 
-## Gherkin requirements
+## Requirements
 
-### Feature: Header contact bar
+### Requirement: Header contact bar
 
-```gherkin
-Scenario: Header displays contact information
-  Given the page is loaded
-  Then a header bar is visible at the top
-  And the header contains address, phone, and email columns
-  And a "Download CV" button is visible in the header
-  And the header background is yellow (#FFAD01)
+The template SHALL display a yellow header bar with contact information and a Download CV button.
 
-Scenario: Header is fixed above hero content
-  Given the page is loaded
-  Then the header sits above the hero background image
-```
+#### Scenario: Header displays contact information
 
-### Feature: Intro / Profile section
+- **WHEN** the page is loaded
+- **THEN** a header bar is visible at the top
+- **AND** the header contains address, phone, and email columns
+- **AND** a "Download CV" button is visible in the header
+- **AND** the header background is yellow (#FFAD01)
 
-```gherkin
-Scenario: Profile displays name and job title
-  Given the page is loaded
-  Then the intro section shows a circular profile photo
-  And a name heading is displayed
-  And a job title subtitle is displayed
+#### Scenario: Header is fixed above hero content
 
-Scenario: Personal info list is shown
-  Given the page is loaded
-  Then a list of personal details (DOB, email, marital status) is visible
+- **WHEN** the page is loaded
+- **THEN** the header sits above the hero background image
 
-Scenario: Social icons row is interactive
-  Given the page is loaded
-  Then 5 social icons are displayed (Pinterest, LinkedIn, Instagram, Facebook, Twitter)
-  And hovering an icon transitions its background to yellow (#FFA804)
-```
+### Requirement: Intro / Profile section
 
-### Feature: Portfolio section
+The template SHALL display a profile section with a circular photo, name, job title, personal info, and social icons.
 
-```gherkin
-Scenario: Portfolio heading with accent underline
-  Given the page is loaded
-  Then a "Portfolio" heading is displayed with "MY WORK" subtitle
-  And a yellow accent bar appears above the heading
+#### Scenario: Profile displays name and job title
 
-Scenario: Filter tabs are rendered
-  Given the page is loaded
-  Then filter tabs are shown: ALL, WEB DESIGN, BRANDING, GRAPHIC DESIGN
-  And "ALL" is the active/default filter
+- **WHEN** the page is loaded
+- **THEN** the intro section shows a circular profile photo
+- **AND** a name heading is displayed
+- **AND** a job title subtitle is displayed
 
-Scenario: Portfolio grid shows images
-  Given the page is loaded
-  Then a masonry-style grid of portfolio images is displayed
-  And items are arranged in 3 columns
-  And some items show 2 stacked images side by side
-```
+#### Scenario: Personal info list is shown
 
-### Feature: About Me section
+- **WHEN** the page is loaded
+- **THEN** a list of personal details (DOB, email, marital status) is visible
 
-```gherkin
-Scenario: About me content and skill bars
-  Given the page is loaded
-  Then an "About me" heading is displayed with "PROFESSIONAL PATH" subtitle
-  And a descriptive paragraph is shown
-  And 4 radial progress bars are displayed (HTML5, Web Design, Java, PHP)
-```
+#### Scenario: Social icons row is interactive
 
-### Feature: Work Experience section
+- **WHEN** the page is loaded
+- **THEN** 5 social icons are displayed (Pinterest, LinkedIn, Instagram, Facebook, Twitter)
+- **AND** hovering an icon transitions its background to yellow (#FFA804)
 
-```gherkin
-Scenario: Experience entries are listed
-  Given the page is loaded
-  Then a "Work Experience" heading is displayed with "PREVIOUS JOBS" subtitle
-  And 2 experience entries are shown
-  And each entry has a job title, company, date range, description, and bullet list
-  And company names are styled in yellow accent color
-```
+### Requirement: Portfolio section
 
-### Feature: Education section
+The template SHALL display a portfolio section with filter tabs and a masonry grid of images.
 
-```gherkin
-Scenario: Education entries are listed
-  Given the page is loaded
-  Then an "Education" heading is displayed with "ACADEMIC CAREER" subtitle
-  And education entries show degree, institution, and graduation info
-```
+#### Scenario: Portfolio heading with accent underline
 
-### Feature: Footer
+- **WHEN** the page is loaded
+- **THEN** a "Portfolio" heading is displayed with "MY WORK" subtitle
+- **AND** a yellow accent bar appears above the heading
 
-```gherkin
-Scenario: Footer contains Component Dock link
-  Given the page is loaded
-  Then a footer is visible at the bottom
-  And it links to https://www.componentdock.com/
-```
+#### Scenario: Filter tabs are rendered
 
-## Verification checklist
+- **WHEN** the page is loaded
+- **THEN** filter tabs are shown: ALL, WEB DESIGN, BRANDING, GRAPHIC DESIGN
+- **AND** "ALL" is the active/default filter
 
-- [ ] Header: 3-column contact bar with yellow background, Download CV button
-- [ ] Intro: circular profile photo, name, title, personal info, social icons with hover
-- [ ] Portfolio: heading with yellow accent, filter tabs, masonry grid
-- [ ] About: heading with accent, paragraph, 4 radial progress circles
-- [ ] Experience: heading with accent, 2 entries with job details and bullets
-- [ ] Education: heading with accent, education entries
-- [ ] Footer: links to Component Dock
-- [ ] Fonts: Poppins loaded via Google Fonts
-- [ ] Brand color: #FFA804 used consistently for accents
-- [ ] Responsive layout works on mobile
-- [ ] 100% test coverage
+#### Scenario: Portfolio grid shows images
+
+- **WHEN** the page is loaded
+- **THEN** a masonry-style grid of portfolio images is displayed
+- **AND** items are arranged in 3 columns
+- **AND** some items show 2 stacked images side by side
+
+### Requirement: About Me section
+
+The template SHALL display an About Me section with a paragraph and 4 radial progress bars.
+
+#### Scenario: About me content and skill bars
+
+- **WHEN** the page is loaded
+- **THEN** an "About me" heading is displayed with "PROFESSIONAL PATH" subtitle
+- **AND** a descriptive paragraph is shown
+- **AND** 4 radial progress bars are displayed (HTML5, Web Design, Java, PHP)
+
+### Requirement: Work Experience section
+
+The template SHALL display a Work Experience section with a dark background and experience entries.
+
+#### Scenario: Experience entries are listed
+
+- **WHEN** the page is loaded
+- **THEN** a "Work Experience" heading is displayed with "PREVIOUS JOBS" subtitle
+- **AND** 2 experience entries are shown
+- **AND** each entry has a job title, company, date range, description, and bullet list
+- **AND** company names are styled in yellow accent color
+
+### Requirement: Education section
+
+The template SHALL display an Education section with degree and institution entries.
+
+#### Scenario: Education entries are listed
+
+- **WHEN** the page is loaded
+- **THEN** an "Education" heading is displayed with "ACADEMIC CAREER" subtitle
+- **AND** education entries show degree, institution, and graduation info
+
+### Requirement: Footer
+
+The template SHALL display a footer with a link to Component Dock.
+
+#### Scenario: Footer contains Component Dock link
+
+- **WHEN** the page is loaded
+- **THEN** a footer is visible at the bottom
+- **AND** it links to https://www.componentdock.com/
