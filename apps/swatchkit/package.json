@@ -1,0 +1,34 @@
+{
+  "name": "@free-react-templates/swatchkit",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A Free UI Kit on Swatchkit Design — component showcase landing page built with React, Tailwind CSS, and TypeScript.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@free-react-templates/ui": "*",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "latest",
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@testing-library/user-event": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@vitejs/plugin-react": "latest",
+    "jsdom": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+  },
+  "homepage": "https://swatchkit.free.componentdock.com"
+}
