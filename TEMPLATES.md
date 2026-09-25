@@ -2307,7 +2307,7 @@
 - [ ] **Create** — [colorlib](https://colorlib.com/wp/template/create/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/create-free-template.jpg)
 - [x] **Creative Agency** — [colorlib](https://colorlib.com/wp/template/creative-agency/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/free-creative-agency-website-template.jpg) · [vivid](https://vivid.free.componentdock.com)
 - [x] **Credo** — [colorlib](https://colorlib.com/wp/template/credo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/credo-free-template.jpg)
-- [ ] **Cvportfolio** — [colorlib](https://colorlib.com/wp/template/cvportfolio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cvportfolio-free-template.jpg)
+- [~] **Cvportfolio** — [colorlib](https://colorlib.com/wp/template/cvportfolio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cvportfolio-free-template.jpg)
 - [x] **Datarc** — [colorlib](https://colorlib.com/wp/template/datarc/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/datarc-digital-agency-free-website-template.jpg) · [bytecraft](https://bytecraft.free.componentdock.com)
 - [x] **Depot** — [colorlib](https://colorlib.com/wp/template/depot/) · [depot](https://depot.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/depot-free-template.jpg)
 - [x] **Digilab** — [colorlib](https://colorlib.com/wp/template/digilab/) · [byteops](https://byteops.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/digilab-free-template.jpg)
