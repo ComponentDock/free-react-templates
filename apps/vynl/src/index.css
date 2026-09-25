@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-gold: #e4ae50;
+  --color-brand-dark: #000000;
+  --color-brand-body: rgba(255, 255, 255, 0.5);
+  --color-brand-footer-text: #737373;
+  --color-brand-footer-link: #999999;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Nunito', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

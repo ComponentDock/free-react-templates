@@ -2262,7 +2262,7 @@
 
 - [x] **Agenda** — [colorlib](https://colorlib.com/wp/template/agenda/) · [lineup](https://lineup.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/agenda-free-template.jpg)
 - [x] **Deejee** — [colorlib](https://colorlib.com/wp/template/deejee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/deejee-free-template.jpg) · [decibel](https://decibel.free.componentdock.com)
-- [ ] **Dj** — [colorlib](https://colorlib.com/wp/template/dj/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dj-free-template.jpg)
+- [~] **Dj** — [colorlib](https://colorlib.com/wp/template/dj/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dj-free-template.jpg)
 - [x] **Djoz** — [colorlib](https://colorlib.com/wp/template/djoz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/djoz-free-template.jpg) · [rhythm](https://rhythm.free.componentdock.com)
 - [ ] **Eighty8** — [colorlib](https://colorlib.com/wp/template/eighty8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/88-free-template.jpg)
 - [ ] **Hnband** — [colorlib](https://colorlib.com/wp/template/hnband/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hnband-free-template.jpg)
