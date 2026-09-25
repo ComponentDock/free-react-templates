@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Vinylspin brand palette — from the ColorLib "Mixtape" preview:
+     dark music/band landing with black bg, white text, red accent. */
+
+  --color-primary-50: #fef2f0;
+  --color-primary-100: #fddbd5;
+  --color-primary-200: #fbb5a8;
+  --color-primary-300: #f5836d;
+  --color-primary-400: #de4f32;
+  --color-primary-500: #c43a20;
+  --color-primary-600: #a32d18;
+  --color-primary-700: #7a2112;
+  --color-primary-800: #52160d;
+  --color-primary-900: #2b0b07;
+
+  /* Salmon accent (ColorLib hover #ffa07f). */
+  --color-accent-300: #ffcdb8;
+  --color-accent-400: #ffa07f;
+  --color-accent-500: #e08060;
+
+  /* Dark backgrounds. */
+  --color-void: #000000;
+  --color-deep: #1a1a1a;
+  --color-surface: #333232;
+
+  /* Muted text on dark. */
+  --color-muted: #888888;
+  --color-subtle: #d3d3d3;
+
+  --color-ink: #ffffff;
+
+  /* Montserrat (geometric sans, Futura-like) via Google Fonts. */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
