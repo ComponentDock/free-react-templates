@@ -2356,7 +2356,7 @@
 - [x] **Rezume** — [colorlib](https://colorlib.com/wp/template/rezume/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rezume-free-template.jpg) · [curriculo](https://curriculo.free.componentdock.com)
 - [x] **Ronaldo** — [colorlib](https://colorlib.com/wp/template/ronaldo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ronaldo-free-template.jpg) · [showcase](https://showcase.free.componentdock.com)
 - [x] **Selling** — [colorlib](https://colorlib.com/wp/template/selling/) · [stall](https://stall.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/selling-free-template.jpg)
-- [~] **Skater** — [colorlib](https://colorlib.com/wp/template/skater/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skater-free-template.jpg)
+- [x] **Skater** — [colorlib](https://colorlib.com/wp/template/skater/) · [ollie](https://ollie.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skater-free-template.jpg)
 - [x] **Slim** — [colorlib](https://colorlib.com/wp/template/slim/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/slim-free-template.jpg) · [flexly](https://flexly.free.componentdock.com)
 - [x] **Snapshot** — [colorlib](https://colorlib.com/wp/template/snapshot/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/snapshot-free-template.jpg) · [focus](https://focus.free.componentdock.com)
 - [x] **Square** — [colorlib](https://colorlib.com/wp/template/square/) · [Facet](https://facet.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/square-free-template.jpg)
