@@ -1,21 +1,14 @@
 @import 'tailwindcss';
 
 @theme {
-  /* White page background — brand palette: #ffffff. */
-  --color-page: #ffffff;
-  /* White accordion card background. */
-  --color-accordion-bg: #ffffff;
-  /* Border between accordion rows — brand palette: #efefef. */
-  --color-border-row: #efefef;
-  /* Header title text — brand palette: #333333. */
-  --color-text-header: #333333;
-  /* Body text inside expanded panel — brand palette: #888888. */
-  --color-text-body: #888888;
-  /* Accent / active indicator — brand palette: #72c02c (green). */
-  --color-accent: #72c02c;
-  /* Muted text (footer). */
-  --color-muted: #999999;
+  --color-brand: #ed1b1b;
+  --color-brand-dark: #c41717;
+  --color-heading: #001d38;
+  --color-body: #727272;
+  --color-link: #1f1f1f;
+  --color-overlay: rgba(0, 0, 0, 0.7);
+  --color-hero-bg: #111111;
 
-  /* Roboto font stack — brand palette. */
-  --font-sans: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Josefin Sans', system-ui, sans-serif;
+  --font-body: 'Muli', 'Josefin Sans', system-ui, sans-serif;
 }

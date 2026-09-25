@@ -1,18 +1,48 @@
-import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import { App } from './App'
 
 describe('App', () => {
-  it('renders the heading "Bootstrap Accordion V14"', () => {
+  it('sets the document title', () => {
     render(<App />)
-    expect(screen.getByRole('heading', { name: /bootstrap accordion v14/i })).toBeInTheDocument()
+    expect(document.title).toBe('Stave — Music Artist Landing Page')
   })
 
-  it('renders all three accordion questions', () => {
+  it('renders the navbar with Stave branding', () => {
     render(<App />)
-    expect(screen.getByText('How to download and register?')).toBeInTheDocument()
-    expect(screen.getByText('How to create your paypal account?')).toBeInTheDocument()
-    expect(screen.getByText('How to link your paypal and bank account?')).toBeInTheDocument()
+    expect(screen.getByRole('navigation', { name: 'Primary' })).toBeInTheDocument()
+    expect(screen.getByText('Stave')).toBeInTheDocument()
+  })
+
+  it('renders all major sections in order', () => {
+    render(<App />)
+
+    // Navbar
+    expect(screen.getByRole('navigation', { name: 'Primary' })).toBeInTheDocument()
+
+    // Hero
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Musician')
+
+    // FeaturedTrack
+    expect(screen.getByText('Frando Kally')).toBeInTheDocument()
+
+    // About
+    expect(screen.getByText('Jack Kalib')).toBeInTheDocument()
+
+    // VideoGallery
+    expect(screen.getByText('Summer Concert 2024')).toBeInTheDocument()
+
+    // LatestTracks
+    expect(screen.getByRole('heading', { name: 'Latest Tracks' })).toBeInTheDocument()
+
+    // Gallery
+    expect(screen.getByRole('heading', { name: 'Image Galleries' })).toBeInTheDocument()
+
+    // ContactCTA
+    expect(screen.getByRole('heading', { name: 'Contact For RSVP' })).toBeInTheDocument()
+
+    // Footer
+    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
   })
 
   it('renders the footer with Component Dock link', () => {
@@ -21,17 +51,9 @@ describe('App', () => {
     expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
   })
 
-  it('sets the document title', () => {
-    render(<App />)
-    expect(document.title).toBe('Stave — Interactive Accordion Template')
-  })
-
-  it('first accordion item is expanded by default', () => {
-    render(<App />)
-    const firstButton = screen.getByRole('button', { name: 'How to download and register?' })
-    expect(firstButton).toHaveAttribute('aria-expanded', 'true')
-    expect(
-      screen.getByRole('region', { name: 'How to download and register?' }),
-    ).toBeInTheDocument()
+  it('contains no reference to colorlib', () => {
+    const { container } = render(<App />)
+    const html = container.innerHTML.toLowerCase()
+    expect(html).not.toContain('colorlib')
   })
 })
