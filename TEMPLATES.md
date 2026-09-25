@@ -2392,7 +2392,7 @@
 - [x] **Elen** — [colorlib](https://colorlib.com/wp/template/elen/) · [jotter](https://jotter.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elen-free-template.jpg)
 - [x] **Evans** — [colorlib](https://colorlib.com/wp/template/evans/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/evans-free-template.jpg) · [imprint](https://free-react-templates-imprint.surge.sh)
 - [x] **Explore** — [colorlib](https://colorlib.com/wp/template/explore/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/explore-free-template.jpg) · [nomad](https://nomad.free.componentdock.com)
-- [ ] **Five Star** — [colorlib](https://colorlib.com/wp/template/five-star/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/five-star-art-crafting-website-template.jpg)
+- [~] **Five Star** — [colorlib](https://colorlib.com/wp/template/five-star/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/five-star-art-crafting-website-template.jpg)
 - [x] **Gilb** — [colorlib](https://colorlib.com/wp/template/gilb/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gilb-free-template.jpg) · [workfolio](https://free-react-templates-workfolio.surge.sh)
 - [x] **Ilene Berg** — [colorlib](https://colorlib.com/wp/template/ilene-berg/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fullscreen-ilene-berg-free-website-template.jpg) · [lumina](https://lumina.free.componentdock.com)
 - [x] **Jackco** — [colorlib](https://colorlib.com/wp/template/jackco/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jackco-colorlib-template.jpg) · [Dossier](https://dossier.free.componentdock.com)
