@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-dark: #221c5a;
+  --color-accent-pink: #e74c78;
+  --color-accent-green: #32db8a;
+  --color-accent-yellow: #ffba42;
+  --color-text-primary: #191919;
+  --color-text-muted: #5b5881;
+  --color-text-light: #8e8da9;
+  --color-white: #ffffff;
+  --font-display: 'Montserrat', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+  --font-accent: 'PT Serif', serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+  }
+}
