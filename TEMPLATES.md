@@ -2265,7 +2265,7 @@
 - [x] **Dj** — [colorlib](https://colorlib.com/wp/template/dj/) · [vynl](https://vynl.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dj-free-template.jpg)
 - [x] **Djoz** — [colorlib](https://colorlib.com/wp/template/djoz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/djoz-free-template.jpg) · [rhythm](https://rhythm.free.componentdock.com)
 - [x] **Eighty8** — [colorlib](https://colorlib.com/wp/template/eighty8/) · [fmbeat](https://fmbeat.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/88-free-template.jpg)
-- [~] **Hnband** — [colorlib](https://colorlib.com/wp/template/hnband/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hnband-free-template.jpg)
+- [x] **Hnband** — [colorlib](https://colorlib.com/wp/template/hnband/) · [groove](https://groove.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hnband-free-template.jpg)
 - [ ] **Mixtape** — [colorlib](https://colorlib.com/wp/template/mixtape/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mixtape-free-template.jpg)
 - [x] **Music** — [colorlib](https://colorlib.com/wp/template/music/) · [ampstat](https://ampstat.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/music-free-fullscreen-musician-website-template.jpg)
 - [ ] **Music 2** — [colorlib](https://colorlib.com/wp/template/music-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/music-free-template.jpg)
