@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Workfolio brand palette — ColorLib Gilb preview
+     (https://preview.colorlib.com/theme/gilb/ + css/style.css):
+     dark navy resume/portfolio template with coral accent. */
+  --color-navy: #0d0f5b;
+  --color-navy-deep: #0a0b4d;
+  --color-coral: #ea5267;
+  --color-coral-hover: #d94558;
+  --color-cream: #fbf9ff;
+  --color-card-border: #f0e9ff;
+  --color-heading: #0a0b4d;
+  --color-body: #5b5b5b;
+  --color-muted: #999999;
+  --color-muted-dark: #777777;
+  --color-icon-bg: #f3f3f7;
+
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
