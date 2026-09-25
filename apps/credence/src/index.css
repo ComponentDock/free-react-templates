@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Credence brand palette — recreated from the ColorLib "Cvportfolio" design:
+     orange #f5a623 accents/buttons/contact bar, white sections, dark gray text. */
+  --color-brand: #f5a623;
+  --color-brand-dark: #e09500;
+  --color-brand-light: #ffe9c4;
+
+  /* Ink — dark gray headings/text (#333 from the original). */
+  --color-ink: #333333;
+  --color-ink-light: #555555;
+
+  /* Mist — muted body text (#999 from the original). */
+  --color-mist: #999999;
+
+  /* Paper — white background. */
+  --color-paper: #ffffff;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the orange. */
+  --color-primary-50: #fff8ed;
+  --color-primary-100: #ffedc8;
+  --color-primary-200: #ffd78a;
+  --color-primary-300: #ffc04d;
+  --color-primary-400: #f5a623;
+  --color-primary-500: #e09500;
+  --color-primary-600: #c27f00;
+  --color-primary-700: #a06900;
+  --color-primary-800: #7d5100;
+  --color-primary-900: #5c3b00;
+
+  /* Original font: "Open Sans" (Google Fonts). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
