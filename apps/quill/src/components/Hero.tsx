@@ -1,44 +1,38 @@
-import { Heart, MessageCircle } from 'lucide-react'
-import { hero } from '../data'
+import { ButtonLink } from '@free-react-templates/ui'
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[85vh] items-center justify-center overflow-hidden">
-      <img
-        src={hero.image}
-        alt={hero.imageAlt}
-        className="absolute inset-0 h-full w-full object-cover"
-      />
-      <div className="brand-gradient absolute inset-0 opacity-60" aria-hidden="true" />
-      <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
-
-      <div className="relative z-10 mx-auto max-w-4xl px-4 pb-28 pt-36 text-center sm:px-6">
-        <h1 className="font-sans text-3xl font-semibold leading-tight text-white sm:text-5xl">
-          {hero.headline}
-        </h1>
-      </div>
-
-      <div className="absolute inset-x-0 bottom-0 z-10 border-t border-white/20 bg-black/40">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-4 text-sm text-white sm:flex-row sm:px-6">
-          <div className="flex items-center gap-6">
-            <span className="flex items-center gap-2">
-              <Heart className="h-4 w-4" aria-hidden="true" />
-              {hero.likes} Likes
-            </span>
-            <span className="flex items-center gap-2">
-              <MessageCircle className="h-4 w-4" aria-hidden="true" />
-              {hero.comments} Comments
-            </span>
+    <section id="home" aria-label="Hero" className="relative min-h-screen bg-navy">
+      <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy-dark to-navy opacity-90" />
+      <div className="relative mx-auto grid min-h-screen max-w-7xl items-center gap-12 px-4 pt-20 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div className="order-2 lg:order-1">
+          <span className="font-display text-sm font-semibold uppercase tracking-widest text-accent-400">
+            Best Seller Book Of The Week
+          </span>
+          <h1 className="mt-4 font-display text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+            Clue Of The Wooden Cottage
+          </h1>
+          <p className="mt-6 max-w-lg text-base leading-relaxed text-white/70">
+            A captivating journey through mystery and wonder. Follow the clues left behind in an
+            ancient cottage hidden deep within the forest, where every page turns to reveal a new
+            secret.
+          </p>
+          <div className="mt-8">
+            <ButtonLink
+              href="#contact"
+              className="inline-block rounded bg-accent-400 px-8 py-3.5 font-display font-semibold text-white transition-colors hover:bg-accent-500"
+            >
+              Buy Now For $22.78
+            </ButtonLink>
           </div>
-          <div className="flex items-center gap-3">
-            <img
-              src={hero.avatar}
-              alt={hero.author}
-              className="h-8 w-8 rounded-full object-cover"
-            />
-            <span className="font-medium">{hero.author}</span>
-            <span className="text-white/70">{hero.date}</span>
-          </div>
+        </div>
+        <div className="order-1 flex justify-center lg:order-2">
+          <img
+            src="https://picsum.photos/seed/quill-hero/480/560"
+            alt="Book cover illustration"
+            className="w-full max-w-sm rounded-lg shadow-2xl lg:max-w-md"
+            loading="eager"
+          />
         </div>
       </div>
     </section>

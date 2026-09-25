@@ -11,10 +11,8 @@
   },
   "dependencies": {
     "@free-react-templates/ui": "*",
-    "lucide-react": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "zod": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
     "@tailwindcss/vite": "latest",
@@ -26,6 +24,7 @@
     "@types/react-dom": "latest",
     "@vitejs/plugin-react": "latest",
     "jsdom": "latest",
+    "lucide-react": "latest",
     "tailwindcss": "latest",
     "typescript": "latest",
     "vite": "latest"

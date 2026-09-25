@@ -1,65 +1,60 @@
-import { describe, expect, it } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { render, screen, act } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { Navbar } from './Navbar'
-import { darkStorageKey, navLinks, pageLinks } from '../data'
 
 describe('Navbar', () => {
-  it('renders the brand, section links and the dark-mode toggle', () => {
+  it('renders brand and navigation links', () => {
     render(<Navbar />)
-    expect(screen.getByRole('link', { name: /quill/i })).toBeInTheDocument()
-    for (const link of navLinks) {
-      expect(screen.getByRole('link', { name: link })).toBeInTheDocument()
-    }
-    expect(screen.getByRole('button', { name: 'Toggle dark mode' })).toBeInTheDocument()
+    expect(screen.getByText('Quill')).toBeInTheDocument()
+    expect(screen.getByRole('navigation', { name: 'Main navigation' })).toBeInTheDocument()
+    const links = screen.getAllByRole('link')
+    expect(links.length).toBeGreaterThanOrEqual(7)
   })
 
-  it('opens and closes the Pages dropdown with the page links', async () => {
+  it('toggles mobile menu on button click', async () => {
     const user = userEvent.setup()
     render(<Navbar />)
-    const pagesButton = screen.getByRole('button', { name: /pages/i })
-    expect(screen.queryByRole('link', { name: 'Single' })).not.toBeInTheDocument()
-
-    await user.click(pagesButton)
-    expect(pagesButton).toHaveAttribute('aria-expanded', 'true')
-    for (const page of pageLinks) {
-      expect(screen.getByRole('link', { name: page })).toBeInTheDocument()
-    }
-
-    await user.click(pagesButton)
-    expect(pagesButton).toHaveAttribute('aria-expanded', 'false')
-    expect(screen.queryByRole('link', { name: 'Single' })).not.toBeInTheDocument()
-  })
-
-  it('toggles the dark class on the document root and persists the choice', async () => {
-    const user = userEvent.setup()
-    render(<Navbar />)
-    const toggle = screen.getByRole('button', { name: 'Toggle dark mode' })
-
-    expect(document.documentElement).not.toHaveClass('dark')
+    const toggle = screen.getByRole('button', { name: 'Toggle navigation' })
     await user.click(toggle)
-    expect(document.documentElement).toHaveClass('dark')
-    expect(window.localStorage.getItem(darkStorageKey)).toBe('dark')
-
+    expect(toggle).toHaveAttribute('aria-expanded', 'true')
     await user.click(toggle)
-    expect(document.documentElement).not.toHaveClass('dark')
-    expect(window.localStorage.getItem(darkStorageKey)).toBe('light')
+    expect(toggle).toHaveAttribute('aria-expanded', 'false')
   })
 
-  it('opens the mobile menu and closes it when a link is chosen', async () => {
+  it('closes mobile menu when a mobile link is clicked', async () => {
     const user = userEvent.setup()
     render(<Navbar />)
-    expect(screen.queryByRole('navigation', { name: 'Mobile' })).not.toBeInTheDocument()
+    const toggle = screen.getByRole('button', { name: 'Toggle navigation' })
+    await user.click(toggle)
+    expect(toggle).toHaveAttribute('aria-expanded', 'true')
+    const mobileAboutLinks = screen.getAllByText('About')
+    const mobileLink = mobileAboutLinks[mobileAboutLinks.length - 1]!
+    await user.click(mobileLink)
+    expect(toggle).toHaveAttribute('aria-expanded', 'false')
+  })
 
-    await user.click(screen.getByRole('button', { name: 'Open menu' }))
-    expect(screen.getByRole('navigation', { name: 'Mobile' })).toBeInTheDocument()
-    expect(screen.getAllByRole('link', { name: 'News' })).toHaveLength(2)
+  it('starts unscrolled', () => {
+    render(<Navbar />)
+    const nav = screen.getByRole('navigation', { name: 'Main navigation' })
+    expect(nav.className).toContain('bg-navy/90')
+    expect(nav.className).not.toContain('shadow-lg')
+  })
 
-    await user.click(screen.getAllByRole('link', { name: 'News' })[1]!)
-    expect(screen.queryByRole('navigation', { name: 'Mobile' })).not.toBeInTheDocument()
+  it('adds scrolled class on scroll', () => {
+    render(<Navbar />)
+    const nav = screen.getByRole('navigation', { name: 'Main navigation' })
+    act(() => {
+      Object.defineProperty(window, 'scrollY', { value: 100, writable: true })
+      window.dispatchEvent(new Event('scroll'))
+    })
+    expect(nav.className).toContain('bg-navy shadow-lg')
+  })
 
-    await user.click(screen.getByRole('button', { name: 'Open menu' }))
-    await user.click(screen.getByRole('link', { name: 'Single' }))
-    expect(screen.queryByRole('navigation', { name: 'Mobile' })).not.toBeInTheDocument()
+  it('removes scroll listener on unmount', () => {
+    const spy = vi.spyOn(window, 'removeEventListener')
+    const { unmount } = render(<Navbar />)
+    unmount()
+    expect(spy).toHaveBeenCalledWith('scroll', expect.any(Function))
+    spy.mockRestore()
   })
 })
