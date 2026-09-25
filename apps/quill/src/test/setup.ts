@@ -1,39 +1,17 @@
 import '@testing-library/jest-dom/vitest'
 
-/* jsdom 30 removed localStorage/sessionStorage (breaking change). The app
-   persists the dark-mode preference via window.localStorage; provide a small
-   in-memory Storage polyfill so tests can exercise persistence. */
-class MemoryStorage implements Storage {
-  private readonly store = new Map<string, string>()
-
-  get length(): number {
-    return this.store.size
+// Mock IntersectionObserver for jsdom
+class MockIntersectionObserver {
+  callback: IntersectionObserverCallback
+  constructor(callback: IntersectionObserverCallback) {
+    this.callback = callback
   }
-
-  clear(): void {
-    this.store.clear()
-  }
-
-  getItem(key: string): string | null {
-    return this.store.get(key) ?? null
-  }
-
-  key(index: number): string | null {
-    return Array.from(this.store.keys())[index] ?? null
-  }
-
-  removeItem(key: string): void {
-    this.store.delete(key)
-  }
-
-  setItem(key: string, value: string): void {
-    this.store.set(key, String(value))
-  }
+  observe() {}
+  unobserve() {}
+  disconnect() {}
 }
 
-if (!window.localStorage) {
-  Object.defineProperty(window, 'localStorage', {
-    value: new MemoryStorage(),
-    configurable: true,
-  })
-}
+Object.defineProperty(globalThis, 'IntersectionObserver', {
+  writable: true,
+  value: MockIntersectionObserver,
+})

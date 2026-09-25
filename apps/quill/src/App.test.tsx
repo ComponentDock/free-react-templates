@@ -1,26 +1,23 @@
-import { describe, expect, it } from 'vitest'
-import { render, screen, within } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { App } from './App'
 
 describe('App', () => {
-  it('sets the document title and composes every section in order', () => {
+  it('renders all sections', () => {
     render(<App />)
-    expect(document.title).toBe('Quill — Blog Template')
-
-    const main = screen.getByRole('main')
-    expect(within(main).getByRole('heading', { level: 1 })).toBeInTheDocument()
-    expect(
-      within(main).getByRole('heading', { name: /Latest News from all categories/i }),
-    ).toBeInTheDocument()
-    expect(
-      within(main).getByRole('heading', { name: /Hot topics from Travel Section/i }),
-    ).toBeInTheDocument()
-    expect(
-      within(main).getByRole('heading', { name: /Fashion News This Week/i }),
-    ).toBeInTheDocument()
-    expect(within(main).getByRole('heading', { name: /About Blogger Team/i })).toBeInTheDocument()
-
-    expect(screen.getByRole('banner')).toBeInTheDocument()
+    expect(screen.getByRole('navigation', { name: 'Main navigation' })).toBeInTheDocument()
+    expect(screen.getByText('Quill')).toBeInTheDocument()
+    expect(screen.getByText('Best Seller Book Of The Week')).toBeInTheDocument()
+    expect(screen.getByText('About The Book')).toBeInTheDocument()
+    expect(screen.getByText("What's Inside The Book")).toBeInTheDocument()
+    expect(screen.getAllByText('Services').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getByText('Kind Words From Readers')).toBeInTheDocument()
+    expect(screen.getByText('Contact Me')).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toBeInTheDocument()
     expect(screen.getByRole('contentinfo')).toBeInTheDocument()
+  })
+
+  it('sets the document title on mount', () => {
+    render(<App />)
+    expect(document.title).toBe('Quill — Author & Book Template')
   })
 })
