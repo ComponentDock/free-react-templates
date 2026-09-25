@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Civic design tokens */
+  --color-primary-50: #f2f7f8;
+  --color-primary-100: #e4eef1;
+  --color-primary-200: #c9dde3;
+  --color-primary-300: #a3c4d0;
+  --color-primary-400: #72a1b5;
+  --color-primary-500: #52859b;
+  --color-primary-600: #476d84;
+  --color-primary-700: #3e5a6d;
+  --color-primary-800: #394c5b;
+  --color-primary-900: #33414d;
+  --color-primary-950: #212a33;
+
+  --color-accent: #ff0f3c;
+  --color-accent-dark: #cc0c30;
+
+  --color-dark: #40424a;
+  --color-muted: #808181;
+  --color-light: #f2f7f8;
+  --color-border: #cacaca;
+
+  --font-sans: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
