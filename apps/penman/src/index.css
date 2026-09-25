@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Penman brand colors — from the ColorLib "Author" preview
+     (https://preview.colorlib.com/theme/author/ + css/style.css):
+     a book/author landing theme with a green #17b978 primary,
+     Bootstrap blue #007bff buttons, light gray #f8f9fa backgrounds,
+     and Raleway + Open Sans font pairing. */
+  --color-primary-50: #e6f7ef;
+  --color-primary-100: #b3e8d2;
+  --color-primary-200: #80d9b5;
+  --color-primary-300: #4dca98;
+  --color-primary-400: #17b978;
+  --color-primary-500: #14a36a;
+  --color-primary-600: #118154;
+  --color-primary-700: #0e6843;
+  --color-primary-800: #0b5033;
+  --color-primary-900: #083823;
+
+  /* Button primary (Bootstrap blue from ColorLib .btn-primary). */
+  --color-btn: #007bff;
+  --color-btn-hover: #0069d9;
+
+  /* Light section backgrounds (ColorLib .bg-light / #f8f9fa). */
+  --color-mist: #f8f9fa;
+
+  /* Muted text (ColorLib #6c757d). */
+  --color-smoke: #6c757d;
+
+  /* Dark ink for headings. */
+  --color-ink: #212529;
+
+  /* Raleway (headings) + Open Sans (body) via Google Fonts. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+}
