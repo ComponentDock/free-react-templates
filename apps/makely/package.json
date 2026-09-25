@@ -1,6 +1,7 @@
 {
   "name": "@free-react-templates/makely",
   "private": true,
+  "homepage": "https://makely.free.componentdock.com",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

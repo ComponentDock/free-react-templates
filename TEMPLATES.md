@@ -2304,7 +2304,7 @@
 - [x] **Coaching** — [colorlib](https://colorlib.com/wp/template/coaching/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coaching-free-template.jpg) · [clarity](https://clarity.free.componentdock.com)
 - [x] **Coinbuzz** — [colorlib](https://colorlib.com/wp/template/coinbuzz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coinbuzz-free-template.jpg) · [coincast](https://coincast.free.componentdock.com)
 - [x] **Consula** — [dictum](https://dictum.free.componentdock.com) · [colorlib](https://colorlib.com/wp/template/consula/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/consula-free-template.jpg)
-- [~] **Create** — [colorlib](https://colorlib.com/wp/template/create/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/create-free-template.jpg)
+- [x] **Create** — [colorlib](https://colorlib.com/wp/template/create/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/create-free-template.jpg) · [makely](https://makely.free.componentdock.com)
 - [x] **Creative Agency** — [colorlib](https://colorlib.com/wp/template/creative-agency/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/free-creative-agency-website-template.jpg) · [vivid](https://vivid.free.componentdock.com)
 - [x] **Credo** — [colorlib](https://colorlib.com/wp/template/credo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/credo-free-template.jpg)
 - [x] **Cvportfolio** — [colorlib](https://colorlib.com/wp/template/cvportfolio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cvportfolio-free-template.jpg) · [credence](https://credence.free.componentdock.com)
