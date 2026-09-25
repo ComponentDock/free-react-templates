@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand primary — #ff5733 from original CSS */
+  --color-brand: #ff5733;
+
+  /* Near-black for headings */
+  --color-ink: #000000;
+
+  /* Light section band */
+  --color-paper: #f8f9fa;
+
+  /* Muted secondary text */
+  --color-mist: #999999;
+  --color-mist-dark: #737373;
+
+  /* Light muted text */
+  --color-light: #cccccc;
+  --color-light-dark: #b3b3b3;
+
+  /* Borders / dividers */
+  --color-line: #dee2e6;
+  --color-line-light: #ced4da;
+
+  /* Footer dark background */
+  --color-coal: #191919;
+
+  /* Brand primary scale for shared UI Button */
+  --color-primary-50: #fff5f1;
+  --color-primary-100: #ffe9e1;
+  --color-primary-200: #ffd3c2;
+  --color-primary-300: #ffb99d;
+  --color-primary-400: #ff7a54;
+  --color-primary-500: #ff5733;
+  --color-primary-600: #e04a2a;
+  --color-primary-700: #c03d22;
+  --color-primary-800: #a0301a;
+  --color-primary-900: #802412;
+
+  /* Nunito Sans from Google Fonts */
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
