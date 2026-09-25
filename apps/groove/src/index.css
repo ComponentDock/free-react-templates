@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Groove brand palette — from the ColorLib "Hnband" preview
+     (https://preview.colorlib.com/theme/hnband/ + css/style.css):
+     a music artist landing theme with a purple #503aca primary,
+     magenta accent #ea34ff, dark backgrounds #0c0617 / #191039,
+     and white text on dark. */
+
+  --color-primary-50: #f0e8ff;
+  --color-primary-100: #d9c4ff;
+  --color-primary-200: #b894ff;
+  --color-primary-300: #8b5cf6;
+  --color-primary-400: #503aca;
+  --color-primary-500: #3b29a8;
+  --color-primary-600: #2a1d7a;
+  --color-primary-700: #1f1560;
+  --color-primary-800: #191039;
+  --color-primary-900: #0c0617;
+
+  /* Accent magenta (ColorLib hover / highlight #ea34ff). */
+  --color-accent-300: #f28fff;
+  --color-accent-400: #ea34ff;
+  --color-accent-500: #c410e0;
+
+  /* Dark backgrounds (ColorLib body / sections). */
+  --color-void: #0c0617;
+  --color-deep: #191039;
+  --color-surface: #231d2d;
+
+  /* Muted text on dark. */
+  --color-muted: #888888;
+  --color-subtle: #c4c4c4;
+
+  --color-ink: #ffffff;
+
+  /* Nunito Sans (body) + Satisfy (script accent) via Google Fonts
+     <link> in index.html — matching the ColorLib font pairing. */
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Satisfy', cursive;
+}
