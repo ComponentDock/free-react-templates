@@ -2269,7 +2269,7 @@
 - [x] **Mixtape** — [colorlib](https://colorlib.com/wp/template/mixtape/) · [vinylspin](https://free-react-templates-vinylspin.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mixtape-free-template.jpg)
 - [x] **Music** — [colorlib](https://colorlib.com/wp/template/music/) · [ampstat](https://ampstat.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/music-free-fullscreen-musician-website-template.jpg)
 - [x] **Music 2** — [colorlib](https://colorlib.com/wp/template/music-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/music-free-template.jpg) · [melodica](https://free-react-templates-melodica.surge.sh)
-- [~] **Musica** — [colorlib](https://colorlib.com/wp/template/musica/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/musica-free-template.jpg)
+- [x] **Musica** — [colorlib](https://colorlib.com/wp/template/musica/) · [cadence](https://cadence.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/musica-free-template.jpg)
 - [x] **Musiclab** — [colorlib](https://colorlib.com/wp/template/musiclab/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/musiclab-colorlib-template.jpg) · [sonority](https://free-react-templates-sonority.surge.sh)
 - [ ] **Musico** — [colorlib](https://colorlib.com/wp/template/musico/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/musico-free-template.jpg)
 - [x] **Mypodcast** — [colorlib](https://colorlib.com/wp/template/mypodcast/) · [podlane](https://podlane.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mypodcast-free-template.jpg)
