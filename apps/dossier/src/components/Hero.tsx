@@ -1,29 +1,35 @@
-import { heroPortrait, heroSubtitle, heroTitle } from '../data'
-import { btnOutlineHero } from './buttonClasses'
+import { ButtonLink } from '@free-react-templates/ui'
 
-/**
- * Full-height neon-green hero (reference: .slider-height). Serif title,
- * intro line, outlined Hire Me button, and a portrait on the right.
- */
 export function Hero() {
   return (
-    <section id="home" aria-label="Hero" className="bg-hero-green">
-      <div className="mx-auto flex h-[900px] max-w-6xl flex-col items-center gap-12 px-4 py-16 lg:flex-row lg:justify-between lg:px-8">
-        <div className="max-w-xl text-center lg:text-left">
-          <h1 className="font-heading text-[56px] font-normal leading-tight text-ink lg:text-[72px]">
-            {heroTitle}
-          </h1>
-          <p className="mt-6 max-w-md text-lg leading-relaxed text-ink/80">{heroSubtitle}</p>
-          <a href="#contact" className={`mt-10 inline-flex ${btnOutlineHero}`}>
+    <section
+      id="home"
+      className="relative flex min-h-screen items-center justify-center bg-gray-800 bg-cover bg-center"
+      style={{
+        backgroundImage: 'url(https://picsum.photos/seed/dossier-hero/1920/1080)',
+      }}
+    >
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/50" />
+
+      <div className="relative z-10 px-4 text-center text-white">
+        <h1 className="mb-4 text-4xl font-bold md:text-6xl">Howdy, I'm Alex Morgan</h1>
+        <p className="mb-8 text-lg text-gray-300 md:text-xl">
+          A Product Designer working at a top tech company.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <ButtonLink
+            href="#about"
+            className="rounded-full bg-leaf-400 px-8 py-3 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-leaf-500"
+          >
+            More On Me
+          </ButtonLink>
+          <ButtonLink
+            href="#contact"
+            className="rounded-full border-2 border-white px-8 py-3 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-white hover:text-gray-900"
+          >
             Hire Me
-          </a>
-        </div>
-        <div className="shrink-0">
-          <img
-            src={heroPortrait}
-            alt="Creative workspace flat lay"
-            className="max-h-[560px] w-auto max-w-full object-cover"
-          />
+          </ButtonLink>
         </div>
       </div>
     </section>

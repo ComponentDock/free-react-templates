@@ -1,30 +1,31 @@
-import { useEffect } from 'react'
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
 import { About } from './components/About'
-import { Expertise } from './components/Expertise'
-import { ResumeSection } from './components/ResumeSection'
-import { QuoteBand } from './components/QuoteBand'
-import { InstagramStrip } from './components/InstagramStrip'
+import { Skills } from './components/Skills'
+import { Testimonials } from './components/Testimonials'
+import { Services } from './components/Services'
+import { Benefits } from './components/Benefits'
+import { Portfolio } from './components/Portfolio'
+import { Resume } from './components/Resume'
+import { Blog } from './components/Blog'
+import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
-import { educationRows, experienceRows } from './data'
 
 export function App() {
-  useEffect(() => {
-    document.title = 'Dossier — Resume & Portfolio Template'
-  }, [])
-
   return (
-    <div className="flex min-h-screen flex-col bg-white font-sans text-ink">
+    <div className="min-h-screen bg-white font-sans text-gray-900">
       <Navbar />
-      <main className="flex-1">
+      <main>
         <Hero />
         <About />
-        <Expertise />
-        <ResumeSection title="Experience" rows={experienceRows} />
-        <QuoteBand />
-        <ResumeSection title="Education" rows={educationRows} />
-        <InstagramStrip />
+        <Skills />
+        <Testimonials />
+        <Services />
+        <Benefits />
+        <Portfolio />
+        <Resume />
+        <Blog />
+        <Contact />
       </main>
       <Footer />
     </div>
