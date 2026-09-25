@@ -2299,7 +2299,7 @@
 - [x] **Celt** — [colorlib](https://colorlib.com/wp/template/celt/) · [buildwell](https://buildwell.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/celt-construction-company-website-template.jpg)
 - [x] **Christian** — [colorlib](https://colorlib.com/wp/template/christian/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/christian-free-template.jpg) · [vesper](https://vesper.free.componentdock.com)
 - [x] **Clark** — [colorlib](https://colorlib.com/wp/template/clark/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/clark-free-template.jpg) · [Maverick](https://maverick.free.componentdock.com)
-- [ ] **Clyde** — [colorlib](https://colorlib.com/wp/template/clyde/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/clyde-free-template.jpg)
+[~] **Clyde** — [colorlib](https://colorlib.com/wp/template/clyde/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/clyde-free-template.jpg)
 - [x] **Coach** — [colorlib](https://colorlib.com/wp/template/coach/) · [northstar](https://northstar.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coach-free-template.jpg)
 - [x] **Coaching** — [colorlib](https://colorlib.com/wp/template/coaching/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coaching-free-template.jpg) · [clarity](https://clarity.free.componentdock.com)
 - [x] **Coinbuzz** — [colorlib](https://colorlib.com/wp/template/coinbuzz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coinbuzz-free-template.jpg) · [coincast](https://coincast.free.componentdock.com)
