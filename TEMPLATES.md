@@ -2336,7 +2336,7 @@
 - [x] **Martxa** — [colorlib](https://colorlib.com/wp/template/martxa/) · [landcraft](https://landcraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/martxa-free-template1.jpg)
 - [x] **Massive** — [colorlib](https://colorlib.com/wp/template/massive/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/massive-free-template.jpg) · [Massive](https://massive.free.componentdock.com)
 - [x] **Me** — [colorlib](https://colorlib.com/wp/template/me/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/me-free-template.jpg) · [vitae](https://vitae.free.componentdock.com)
-- [ ] **Meal** — [colorlib](https://colorlib.com/wp/template/meal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meal-free-template.jpg)
+- [~] **Meal** — [colorlib](https://colorlib.com/wp/template/meal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meal-free-template.jpg)
 - [x] **Mediplus** — [colorlib](https://colorlib.com/wp/template/mediplus/) · [medvista](https://free-react-templates-medvista.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mediplus-free-template.jpg)
 - [x] **Meetup** — [colorlib](https://colorlib.com/wp/template/meetup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meetup-free-template.jpg) · [gatherly](https://gatherly.free.componentdock.com)
 - [x] **Mellisa** — [colorlib](https://colorlib.com/wp/template/mellisa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mellisa-colorlib-template.jpg) · [folio](https://folio.free.componentdock.com)

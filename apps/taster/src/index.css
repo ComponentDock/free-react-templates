@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Coral/orange accent — #FF7A5C from the original css/style.css */
+  --color-brand: #ff7a5c;
+  --color-brand-dark: #e0694d;
+
+  /* Headings dark — #000000 from the original */
+  --color-ink: #000000;
+
+  /* Light section background — #F8F9FA from the original */
+  --color-paper: #f8f9fa;
+
+  /* Muted text — #B3B3B3 from the original */
+  --color-mist: #b3b3b3;
+
+  /* Border gray — #CCCCCC from the original */
+  --color-border: #cccccc;
+
+  /* Primary scale so shared Button/ButtonLink primary variants resolve to the coral */
+  --color-primary-50: #fff5f2;
+  --color-primary-100: #ffe8e0;
+  --color-primary-200: #ffd0c2;
+  --color-primary-300: #ffb09a;
+  --color-primary-400: #ff8c6d;
+  --color-primary-500: #ff7a5c;
+  --color-primary-600: #e0694d;
+  --color-primary-700: #c05540;
+  --color-primary-800: #9e4333;
+  --color-primary-900: #7e3629;
+
+  /* Fonts: Playfair Display (headings) + Open Sans (body) from the original */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
