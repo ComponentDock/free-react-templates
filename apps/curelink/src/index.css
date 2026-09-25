@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Curelink brand colors */
+  --color-primary-50: #e6f2fd;
+  --color-primary-100: #c0def9;
+  --color-primary-200: #96c8f4;
+  --color-primary-300: #5eadee;
+  --color-primary-400: #167ce9;
+  --color-primary-500: #0f6ad4;
+  --color-primary-600: #0b54ab;
+  --color-primary-700: #084082;
+  --color-primary-800: #052d59;
+  --color-primary-900: #031b34;
+
+  /* Dark purple */
+  --color-purple-50: #f0eff5;
+  --color-purple-100: #d5d2e3;
+  --color-purple-200: #b5b0cd;
+  --color-purple-300: #8c86af;
+  --color-purple-400: #5e578a;
+  --color-purple-500: #39345a;
+  --color-purple-600: #2e2a48;
+  --color-purple-700: #231f37;
+  --color-purple-800: #181525;
+  --color-purple-900: #0d0b14;
+
+  /* Teal */
+  --color-teal-50: #edfcf5;
+  --color-teal-100: #d1f8e7;
+  --color-teal-200: #a4f1d1;
+  --color-teal-300: #79efb4;
+  --color-teal-400: #4ee69a;
+  --color-teal-500: #2dd480;
+  --color-teal-600: #1fb868;
+  --color-teal-700: #189a54;
+  --color-teal-800: #147b44;
+  --color-teal-900: #0f5c34;
+
+  /* Light blue */
+  --color-lightblue-50: #f0f9fd;
+  --color-lightblue-100: #dcf0f9;
+  --color-lightblue-200: #bee3f3;
+  --color-lightblue-300: #97d3ed;
+  --color-lightblue-400: #78d5ef;
+  --color-lightblue-500: #55c4e8;
+  --color-lightblue-600: #3badd9;
+  --color-lightblue-700: #2b90b8;
+  --color-lightblue-800: #1f7295;
+  --color-lightblue-900: #155672;
+
+  --color-ink: #1a1a1a;
+
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+}

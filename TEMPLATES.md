@@ -2255,7 +2255,7 @@
 - [x] **Mediplus** — [colorlib](https://colorlib.com/wp/template/mediplus/) · [medvista](https://free-react-templates-medvista.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mediplus-free-template.jpg)
 - [x] **Pharma** — [colorlib](https://colorlib.com/wp/template/pharma/) · [elixir](https://elixir.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pharma-free-template.jpg)
 - [x] **Prodent** — [colorlib](https://colorlib.com/wp/template/prodent/) · [glint](https://glint.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/prodent-free-template.jpg)
-- [ ] **Remedic** — [colorlib](https://colorlib.com/wp/template/remedic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/remedic-free-template.jpg)
+- [~] **Remedic** — [colorlib](https://colorlib.com/wp/template/remedic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/remedic-free-template.jpg)
 - [x] **Wordpress Dentist Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-dentist-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentist-wordpress-themes-1.jpg) · [mintly](https://mintly.free.componentdock.com)
 
 ## Music (19)
