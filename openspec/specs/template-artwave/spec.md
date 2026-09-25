@@ -2,14 +2,15 @@
 
 ## Purpose
 
-Recreation of the ColorLib "Bobsled" creative agency template as a React 19 +
-Vite + Tailwind CSS 4 + TypeScript single-page application.
+ArtWave is a single-page creative agency template in the free-react-templates
+monorepo. It is an original React recreation of the ColorLib "Bobsled" creative
+agency template design, built under a different name (**ArtWave**), with the
+monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 - **Source:** [ColorLib Bobsled](https://colorlib.com/wp/template/bobsled/)
 - **Preview:** https://preview.colorlib.com/theme/bobsled/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/bobsled-creative-website-template.jpg
 - **New name:** `artwave` (apps/artwave, @free-react-templates/artwave)
-- **Stack:** React 19, Vite (latest), Tailwind CSS 4, TypeScript strict
 
 ## Design Tokens
 
@@ -17,197 +18,182 @@ Extracted from the live preview CSS (`css/main.css`) on 2026-09-23:
 
 ### Colors
 
-| Token              | Value                   | Usage                                      |
-| ------------------ | ----------------------- | ------------------------------------------ |
-| Brand gradient     | `#3e69fe` → `#4cd4e3`  | Hero banner bg, featured-area bg, story-area bg, primary-btn overlay, contact-form-area bg |
-| Primary (blue)     | `#3e69fe`              | Primary button solid, icon gradient start  |
-| Accent (cyan)      | `#4cd4e3`              | Icon gradient end, success button          |
-| Heading text        | `#222222`              | All headings (h1–h6)                       |
-| Body text           | `#777777`              | Body copy, links default                   |
-| Light bg            | `#f9f9ff`              | Subscription area, default button, work-icon-box bg |
-| White               | `#fff`                 | Remarkable-area bg, card text on dark sections |
-| Border subtle       | `#eee`                 | Remarkable-area button border              |
+| Token          | Value                 | Usage                                                                                      |
+| -------------- | --------------------- | ------------------------------------------------------------------------------------------ |
+| Brand gradient | `#3e69fe` → `#4cd4e3` | Hero banner bg, featured-area bg, story-area bg, primary-btn overlay, contact-form-area bg |
+| Primary (blue) | `#3e69fe`             | Primary button solid, icon gradient start                                                  |
+| Accent (cyan)  | `#4cd4e3`             | Icon gradient end, success button                                                          |
+| Heading text   | `#222222`             | All headings (h1–h6)                                                                       |
+| Body text      | `#777777`             | Body copy, links default                                                                   |
+| Light bg       | `#f9f9ff`             | Subscription area, default button, work-icon-box bg                                        |
+| White          | `#fff`                | Remarkable-area bg, card text on dark sections                                             |
+| Border subtle  | `#eee`                | Remarkable-area button border                                                              |
 
 ### Typography
 
-| Property       | Value                       |
-| -------------- | --------------------------- |
-| Font family    | `"Poppins", sans-serif`     |
+| Property       | Value                                              |
+| -------------- | -------------------------------------------------- |
+| Font family    | `"Poppins", sans-serif`                            |
 | Font weights   | 300 (body), 500 (headings), 600 (sub-headings, h1) |
-| Body font-size | 14px                        |
-| Line height    | 1.5em                       |
-| h1             | 36px                        |
-| h2             | 30px                        |
-| h3             | 24px                        |
-| h4             | 18px                        |
+| Body font-size | 14px                                               |
+| Line height    | 1.5em                                              |
+| h1             | 36px                                               |
+| h2             | 30px                                               |
+| h3             | 24px                                               |
+| h4             | 18px                                               |
 
 ### Buttons
 
-| Element        | Styles                                                           |
-| -------------- | ---------------------------------------------------------------- |
-| `.primary-btn` | `border-radius: 20px`, `border: 1px solid #fff`, transparent bg, gradient overlay pseudo-element on hover, inline-flex with arrow icon |
-| `.primary-btn span` | white text, z-index above gradient overlay                 |
-| Hover state    | border becomes transparent, gradient overlay opacity: 1         |
+| Element        | Styles                                                                                                    |
+| -------------- | --------------------------------------------------------------------------------------------------------- |
+| `.primary-btn` | `border-radius: 20px`, `border: 1px solid #fff`, transparent bg, gradient overlay pseudo-element on hover |
+| Hover state    | border becomes transparent, gradient overlay opacity: 1                                                   |
 
 ### Section Backgrounds
 
-| Section               | Background                                        |
-| --------------------- | ------------------------------------------------- |
-| `.hero-area`          | Gradient `#3e69fe → #4cd4e3` (linear, 0deg)      |
-| `.working-process`    | White (`#fff`)                                    |
-| `.featured-area`      | Gradient `#3e69fe → #4cd4e3`                      |
-| `.remarkable-area`    | White (`#fff`)                                    |
-| `.story-area`         | Gradient `#3e69fe → #4cd4e3`                      |
-| `.subscription-area`  | Light (`#f9f9ff`)                                 |
-| `.contact-form-area`  | Gradient `#3e69fe → #4cd4e3`                      |
-| `.footer-widget-area` | Transparent (inherits body)                       |
-
-### Other
-
-- Border radius on `.genric-btn.radius`: 3px
-- Border radius on `.genric-btn.circle`: 20px (same as primary-btn)
-- Work-process icon boxes: `border-radius: 8.5px`, bg `#f9f9ff`
-- Feature thumbnails: background-image with rounded corners
-- Remarkable works: alternating left/right image+text rows, no gutters
+| Section               | Background                                  |
+| --------------------- | ------------------------------------------- |
+| `.hero-area`          | Gradient `#3e69fe → #4cd4e3` (linear, 0deg) |
+| `.working-process`    | White (`#fff`)                              |
+| `.featured-area`      | Gradient `#3e69fe → #4cd4e3`                |
+| `.remarkable-area`    | White (`#fff`)                              |
+| `.story-area`         | Gradient `#3e69fe → #4cd4e3`                |
+| `.subscription-area`  | Light (`#f9f9ff`)                           |
+| `.contact-form-area`  | Gradient `#3e69fe → #4cd4e3`                |
+| `.footer-widget-area` | Transparent (inherits body)                 |
 
 ## Section Structure (from live DOM)
 
-1. **Navbar** — Logo left, nav links (Home, Generic, Elements) right, hamburger menu
-2. **Hero / Banner** — Full-width gradient background, h1 headline + paragraph + CTA button ("Get Started" with arrow icon), decorative diagonal element via `:after`
-3. **Working Process** — Centered section title, 4-step horizontal process (Researching → Wireframing → Prototyping → Final Design) with icon boxes + arrow images between steps
-4. **Featured Area** — Dark gradient background, centered section title ("Our Exclusive Features"), 3 equal-width cards each with image thumbnail, title, description, "Read More" button
-5. **Remarkable Works** — White background, centered section title ("Remarkable Works"), 3 alternating rows: image left + text right, then text left + image right, then image left + text right; each with heading, description, "View Project" button
-6. **Story Area** — Gradient background, text block with uppercase subheading ("From the part of beginning"), paragraph, "Get Started" CTA button
-7. **Subscription / Newsletter** — Light background, left-aligned section title + subtitle, right-aligned email input + "Get Started" button
-8. **Contact Form** — Dark gradient background, centered section title ("Keep in Touch"), 2-column form (name + email), full-width textarea, "Send Message" button aligned right
-9. **Footer Widget** — 3-column layout (Address, Email, Phone), each with title + content
-10. **Footer** — Logo, copyright text, social media icons (Facebook, Twitter, Dribbble, Behance)
+1. **Navbar** — Logo left, nav links right, hamburger menu
+2. **Hero / Banner** — Full-width gradient background, h1 headline + paragraph + CTA button
+3. **Working Process** — Centered section title, 4-step horizontal process with icon boxes
+4. **Featured Area** — Dark gradient background, 3 equal-width cards
+5. **Remarkable Works** — White background, 3 alternating image+text rows
+6. **Story Area** — Gradient background, text block with CTA
+7. **Subscription / Newsletter** — Light background, email input + button
+8. **Contact Form** — Dark gradient background, name + email + message form
+9. **Footer Widget** — 3-column layout (Address, Email, Phone)
+10. **Footer** — Logo, copyright with Component Dock link, social icons
 
-## Gherkin Requirements
+## Requirements
 
-### Scenario: Hero banner renders correctly
-```gherkin
-Given the user visits the ArtWave homepage
-When the hero section loads
-Then a gradient background (#3e69fe → #4cd4e3) fills the banner area
-And the banner height is approximately 540px
-And an h1 headline is displayed in white, uppercase, 30px, weight 600
-And a paragraph of supporting text appears below in white
-And a "Get Started" button with arrow icon is visible
-And the button has border-radius 20px and white border
-```
+### Requirement: Hero banner renders correctly
 
-### Scenario: Working process section displays four steps
-```gherkin
-Given the user scrolls to the working process section
-When the section renders
-Then a centered heading "Our Working Process" is displayed
-And four steps are shown horizontally: Researching, Wireframing, Prototyping, Final Design
-And each step has an icon in a rounded box (border-radius 8.5px, bg #f9f9ff)
-And arrow images separate consecutive steps
-```
+The template SHALL display a hero section with a gradient background (#3e69fe → #4cd4e3).
 
-### Scenario: Featured area shows three feature cards
-```gherkin
-Given the user scrolls to the featured area
-When the section renders
-Then the background is a gradient (#3e69fe → #4cd4e3)
-And the section title "Our Exclusive Features" is centered in white
-And three equal-width cards are displayed in a row
-And each card has an image thumbnail at the top
-And each card has a white title, white description, and "Read More" button
-And the button text uses a gradient clip (white-to-white)
-```
+#### Scenario: Hero banner renders correctly
 
-### Scenario: Remarkable works shows alternating layout
-```gherkin
-Given the user scrolls to the remarkable works section
-When the section renders
-Then a centered heading "Remarkable Works" is displayed on white background
-And three project rows are shown
-And row 1 has image on the left (col-lg-7) and text on the right (col-lg-5)
-And row 2 has text on the left (col-lg-7) and image on the right (col-lg-5)
-And row 3 has image on the left (col-lg-7) and text on the right (col-lg-5)
-And each row has a heading, description paragraph, and "View Project" button
-```
+- **WHEN** the user visits the ArtWave homepage
+- **THEN** a gradient background fills the banner area
+- **AND** an h1 headline is displayed in white, uppercase
+- **AND** a paragraph of supporting text appears below in white
+- **AND** a "Get Started" button with arrow icon is visible
+- **AND** the button has border-radius 20px and white border
 
-### Scenario: Story area displays with gradient background
-```gherkin
-Given the user scrolls to the story area
-When the section renders
-Then the background is a gradient (#3e69fe → #4cd4e3)
-And an uppercase subheading "From the part of beginning" is shown
-And a paragraph of text appears below
-And a "Get Started" button with arrow icon is visible
-```
+### Requirement: Working process section displays four steps
 
-### Scenario: Subscription section has email form
-```gherkin
-Given the user scrolls to the subscription section
-When the section renders
-Then the background is light (#f9f9ff)
-And a section title "Subscribe for our Newsletter" is displayed on the left
-And a subtitle text appears below the title
-And an email input field is on the right
-And a "Get Started" button is next to the input
-```
+The template SHALL display a working process section with 4 steps.
 
-### Scenario: Contact form collects user input
-```gherkin
-Given the user scrolls to the contact form section
-When the section renders
-Then the background is a gradient (#3e69fe → #4cd4e3)
-And a centered heading "Keep in Touch" is displayed in white
-And a name input and email input are in a row (col-lg-5 each)
-And a full-width textarea for message is below
-And a "Send Message" button is right-aligned
-And all input placeholders are white text
-```
+#### Scenario: Working process section displays four steps
 
-### Scenario: Footer widget shows contact information
-```gherkin
-Given the user scrolls to the footer widget area
-When the section renders
-Then three columns are displayed: Address, Email, Phone
-And each column has a title and content
-And a copyright bar with logo, text, and social icons is at the bottom
-And social icons include Facebook, Twitter, Dribbble, Behance
-```
+- **WHEN** the user scrolls to the working process section
+- **THEN** a centered heading "Our Working Process" is displayed
+- **AND** four steps are shown: Researching, Wireframing, Prototyping, Final Design
+- **AND** each step has an icon in a rounded box
 
-### Scenario: Navigation is responsive
-```gherkin
-Given the user views the navbar
-When the viewport is desktop (≥992px)
-Then the nav links (Home, Generic, Elements) are visible inline
-And a hamburger menu icon is also visible
-When the viewport is mobile (<992px)
-Then the nav links are hidden
-And the hamburger menu icon is visible for toggling
-```
+### Requirement: Featured area shows three feature cards
 
-### Scenario: Color consistency across all gradient sections
-```gherkin
-Given any section with a gradient background
-When inspected
-Then the gradient is linear from #3e69fe (blue) to #4cd4e3 (cyan)
-And the gradient direction is 0deg (bottom to top)
-```
+The template SHALL display a featured area with 3 cards on gradient background.
+
+#### Scenario: Featured area shows three feature cards
+
+- **WHEN** the user scrolls to the featured area
+- **THEN** the background is a gradient (#3e69fe → #4cd4e3)
+- **AND** the section title "Our Exclusive Features" is centered in white
+- **AND** three cards are displayed with image, title, description, and "Read More" button
+
+### Requirement: Remarkable works shows alternating layout
+
+The template SHALL display remarkable works with 3 alternating image+text rows.
+
+#### Scenario: Remarkable works shows alternating layout
+
+- **WHEN** the user scrolls to the remarkable works section
+- **THEN** a centered heading "Remarkable Works" is displayed on white background
+- **AND** three project rows are shown with alternating image/text positions
+- **AND** each row has a heading, description, and "View Project" button
+
+### Requirement: Story area displays with gradient background
+
+The template SHALL display a story area with gradient background and CTA.
+
+#### Scenario: Story area displays with gradient background
+
+- **WHEN** the user scrolls to the story area
+- **THEN** the background is a gradient (#3e69fe → #4cd4e3)
+- **AND** an uppercase subheading "From the part of beginning" is shown
+- **AND** a "Get Started" button is visible
+
+### Requirement: Subscription section has email form
+
+The template SHALL display a subscription section with email input.
+
+#### Scenario: Subscription section has email form
+
+- **WHEN** the user scrolls to the subscription section
+- **THEN** the background is light (#f9f9ff)
+- **AND** a section title "Subscribe for our Newsletter" is displayed
+- **AND** an email input field and "Get Started" button are present
+
+### Requirement: Contact form collects user input
+
+The template SHALL display a contact form with name, email, and message fields.
+
+#### Scenario: Contact form collects user input
+
+- **WHEN** the user scrolls to the contact form section
+- **THEN** the background is a gradient (#3e69fe → #4cd4e3)
+- **AND** a centered heading "Keep in Touch" is displayed in white
+- **AND** name and email inputs are in a row
+- **AND** a full-width textarea for message is below
+- **AND** a "Send Message" button is right-aligned
+
+### Requirement: Footer widget shows contact information
+
+The template SHALL display a footer widget with 3 columns and copyright bar.
+
+#### Scenario: Footer widget shows contact information
+
+- **WHEN** the user scrolls to the footer widget area
+- **THEN** three columns are displayed: Address, Email, Phone
+- **AND** a copyright bar with social icons is at the bottom
+- **AND** the footer links to https://www.componentdock.com/
+
+### Requirement: Navigation is responsive
+
+The template SHALL display a responsive navigation with hamburger menu on mobile.
+
+#### Scenario: Navigation is responsive
+
+- **WHEN** the viewport is desktop (≥768px)
+- **THEN** the nav links are visible inline
+- **WHEN** the viewport is mobile (<768px)
+- **THEN** a hamburger menu icon is visible for toggling
 
 ## Verification Checklist
 
-- [ ] All sections from the original are present in correct order
-- [ ] Brand gradient (#3e69fe → #4cd4e3) used consistently on hero, featured, story, contact sections
-- [ ] Poppins font loaded via Google Fonts (weights 300, 500, 600)
-- [ ] Primary button has border-radius 20px, white border, gradient overlay on hover
-- [ ] Working process shows 4 steps with icons and arrows
-- [ ] Featured area has 3 cards with image, title, description, button
-- [ ] Remarkable works has 3 alternating image+text rows
-- [ ] Subscription section has email input + button on light background
-- [ ] Contact form has name, email, message fields + send button
-- [ ] Footer has 3-column widget area + copyright bar with social icons
-- [ ] Footer links to https://www.componentdock.com/ (Component Dock)
-- [ ] No ColorLib references in app code (only in spec + TEMPLATES.md)
-- [ ] Placeholder images use picsum.photos with deterministic seeds
-- [ ] Responsive: hamburger nav on mobile, stacked columns
-- [ ] Tests pass with 100% coverage
-- [ ] Build succeeds without errors
+- [x] All sections from the original are present in correct order
+- [x] Brand gradient (#3e69fe → #4cd4e3) used consistently on hero, featured, story, contact sections
+- [x] Poppins font loaded via Google Fonts (weights 300, 500, 600)
+- [x] Working process shows 4 steps with icons and arrows
+- [x] Featured area has 3 cards with image, title, description, button
+- [x] Remarkable works has 3 alternating image+text rows
+- [x] Subscription section has email input + button on light background
+- [x] Contact form has name, email, message fields + send button
+- [x] Footer has 3-column widget area + copyright bar with social icons
+- [x] Footer links to https://www.componentdock.com/ (Component Dock)
+- [x] No ColorLib references in app code (only in spec + TEMPLATES.md)
+- [x] Placeholder images use picsum.photos with deterministic seeds
+- [x] Responsive: hamburger nav on mobile, stacked columns
+- [x] Tests pass with 100% coverage
+- [x] Build succeeds without errors
