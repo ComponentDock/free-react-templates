@@ -1,34 +1,26 @@
 import { useEffect } from 'react'
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
-import { Partners } from './components/Partners'
-import { AboutBook } from './components/AboutBook'
-import { Stats } from './components/Stats'
-import { Chapters } from './components/Chapters'
-import { Services } from './components/Services'
-import { Testimonials } from './components/Testimonials'
-import { AuthorBio } from './components/AuthorBio'
-import { Contact } from './components/Contact'
+import { CategorySection } from './components/CategorySection'
+import { TravelSection } from './components/TravelSection'
+import { FashionSection } from './components/FashionSection'
+import { TeamSection } from './components/TeamSection'
 import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Quill — Author & Book Template'
+    document.title = 'Quill — Blog Template'
   }, [])
 
   return (
-    <div className="flex min-h-screen flex-col bg-white text-gray-900 transition-colors dark:bg-gray-950 dark:text-white">
+    <div className="min-h-screen bg-white font-sans text-muted dark:bg-gray-950 dark:text-gray-300">
       <Navbar />
-      <main className="flex-1">
+      <main>
         <Hero />
-        <Partners />
-        <AboutBook />
-        <Stats />
-        <Chapters />
-        <Services />
-        <Testimonials />
-        <AuthorBio />
-        <Contact />
+        <CategorySection />
+        <TravelSection />
+        <FashionSection />
+        <TeamSection />
       </main>
       <Footer />
     </div>
