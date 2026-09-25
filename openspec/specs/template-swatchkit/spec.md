@@ -67,24 +67,24 @@ screenshot used as sole reference).
 > (https://colorlib.com/wp/wp-content/uploads/sites/2/equip-free-template.jpg)
 > and the ColorLib source page description ("Bootstrap 4 UI Kit").
 
-| Token | Value | Source |
-|-------|-------|--------|
-| Brand primary | `#e91e63` (hot pink/magenta, approx) | Hero CTA, navbar Download button, Default button, filled primary variants |
-| Hero background | Dark cityscape (Shanghai skyline at dusk) | Screenshot — dark purple/blue tones with building silhouettes |
-| Hero overlay | Semi-transparent dark (approx rgba(0,0,0,0.4-0.6)) | Screenshot — text is clearly readable over the cityscape |
-| Body background | Dark navy/purple gradient transitioning to lighter | Screenshot — the gradient below the hero |
-| Section background (elements) | Light/white or very light gray | Screenshot — the "Basic Elements" section has a lighter background |
-| Heading font | Clean sans-serif, large, white, uppercase | Screenshot — "EQUIP UI KIT" heading, geometric sans-serif (likely Poppins or similar) |
-| Body font | Clean sans-serif | Screenshot — subtitle and labels |
-| Button border-radius (Default) | Approx 4-6px (slightly rounded corners) | Screenshot — Default buttons have subtle rounding |
-| Button border-radius (Round) | Full pill (large radius) | Screenshot — Round buttons are fully pill-shaped |
-| Button border-radius (icon-only) | 50% (circle) | Screenshot — heart icon button is circular |
-| Button colors | Primary (#e91e63 pink), Success (green), Danger (red), Warning (yellow), Info (teal), Light (white/gray), Dark (black) | Screenshot — color row |
-| Button sizes | Small, Regular, Large — both filled and outlined variants | Screenshot — size rows |
-| Navbar | Dark transparent, logo left, nav items + download button right | Screenshot — fixed/absolute top bar |
-| CTA buttons (hero) | Two buttons: "Download Tools" (pink filled) + "Components" (dark/outlined) | Screenshot — hero section |
+| Token                            | Value                                                                                                                  | Source                                                                                |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Brand primary                    | `#e91e63` (hot pink/magenta, approx)                                                                                   | Hero CTA, navbar Download button, Default button, filled primary variants             |
+| Hero background                  | Dark cityscape (Shanghai skyline at dusk)                                                                              | Screenshot — dark purple/blue tones with building silhouettes                         |
+| Hero overlay                     | Semi-transparent dark (approx rgba(0,0,0,0.4-0.6))                                                                     | Screenshot — text is clearly readable over the cityscape                              |
+| Body background                  | Dark navy/purple gradient transitioning to lighter                                                                     | Screenshot — the gradient below the hero                                              |
+| Section background (elements)    | Light/white or very light gray                                                                                         | Screenshot — the "Basic Elements" section has a lighter background                    |
+| Heading font                     | Clean sans-serif, large, white, uppercase                                                                              | Screenshot — "EQUIP UI KIT" heading, geometric sans-serif (likely Poppins or similar) |
+| Body font                        | Clean sans-serif                                                                                                       | Screenshot — subtitle and labels                                                      |
+| Button border-radius (Default)   | Approx 4-6px (slightly rounded corners)                                                                                | Screenshot — Default buttons have subtle rounding                                     |
+| Button border-radius (Round)     | Full pill (large radius)                                                                                               | Screenshot — Round buttons are fully pill-shaped                                      |
+| Button border-radius (icon-only) | 50% (circle)                                                                                                           | Screenshot — heart icon button is circular                                            |
+| Button colors                    | Primary (#e91e63 pink), Success (green), Danger (red), Warning (yellow), Info (teal), Light (white/gray), Dark (black) | Screenshot — color row                                                                |
+| Button sizes                     | Small, Regular, Large — both filled and outlined variants                                                              | Screenshot — size rows                                                                |
+| Navbar                           | Dark transparent, logo left, nav items + download button right                                                         | Screenshot — fixed/absolute top bar                                                   |
+| CTA buttons (hero)               | Two buttons: "Download Tools" (pink filled) + "Components" (dark/outlined)                                             | Screenshot — hero section                                                             |
 
-## Gherkin requirements
+## Requirements
 
 ### Requirement: Navigation bar
 
