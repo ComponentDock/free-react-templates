@@ -2377,7 +2377,7 @@
 ## Personal (53)
 
 - [x] **Amplify** — [colorlib](https://colorlib.com/wp/template/amplify/) · [amplify](https://amplify.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amplify-free-template.jpg)
-- [ ] **Author** — [colorlib](https://colorlib.com/wp/template/author/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/author-free-template.jpg)
+- [~] **Author** — [colorlib](https://colorlib.com/wp/template/author/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/author-free-template.jpg)
 - [x] **Axole** — [colorlib](https://colorlib.com/wp/template/axole/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/axole-website-template.jpg) · [inkwell](https://inkwell.free.componentdock.com)
 - [x] **Book** — [colorlib](https://colorlib.com/wp/template/book/) · [liber](https://liber.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/book-free-template.jpg)
 - [x] **Booke** — [colorlib](https://colorlib.com/wp/template/booke/) · [bookcraft](https://bookcraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/booke-website-template.jpeg)
