@@ -2363,7 +2363,7 @@
 - [x] **Stamina** — [colorlib](https://colorlib.com/wp/template/stamina/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stamina-free-template.jpg) · [grit](https://grit.free.componentdock.com)
 - [x] **Stellar** — [colorlib](https://colorlib.com/wp/template/stellar/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stellar-free-template.jpg) · [astra](https://free-react-templates-astra.surge.sh)
 - [x] **Tattooz** — [colorlib](https://colorlib.com/wp/template/tattooz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tattooz-free-template.jpg) · [inkvibe](https://inkvibe.free.componentdock.com)
-- [ ] **Tools Ui Kit** — [colorlib](https://colorlib.com/wp/template/tools-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tools-free-template.jpg)
+- [~] **Tools Ui Kit** — [colorlib](https://colorlib.com/wp/template/tools-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tools-free-template.jpg)
 - [x] **Toothsy** — [colorlib](https://colorlib.com/wp/template/toothsy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/toothsy-free-template.jpg) · [smilewell](https://smilewell.free.componentdock.com)
 - [x] **Transcend** — [colorlib](https://colorlib.com/wp/template/transcend/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/transcend-free-template-1.jpg) · [chroma](https://chroma.free.componentdock.com)
 - [x] **Ultim8** — [colorlib](https://colorlib.com/wp/template/ultim8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ultim8-free-template.jpg) · [prime](https://prime.free.componentdock.com)
