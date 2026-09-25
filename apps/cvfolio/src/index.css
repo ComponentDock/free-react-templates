@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #ffa804;
+  --color-brand-light: #ffad01;
+  --color-heading: #333333;
+  --color-paragraph: #777777;
+  --color-muted: #999999;
+  --color-muted-dark: #666666;
+  --color-social: #887392;
+  --color-social-hover: #ffa804;
+  --color-experience-bg: #28023d;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

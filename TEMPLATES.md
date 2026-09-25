@@ -2388,7 +2388,7 @@
 - [x] **Clark** — [colorlib](https://colorlib.com/wp/template/clark/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/clark-free-template.jpg) · [Maverick](https://maverick.free.componentdock.com)
 - [x] **Clyde** — [colorlib](https://colorlib.com/wp/template/clyde/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/clyde-free-template.jpg) · [palette](https://palette.free.componentdock.com)
 ^- [x] **Cruise** — [colorlib](https://colorlib.com/wp/template/cruise/) · [helm](https://helm.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cruise-free-template.jpg)
-- [ ] **Cvportfolio** — [colorlib](https://colorlib.com/wp/template/cvportfolio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cvportfolio-free-template.jpg)
+- [~] **Cvportfolio** — [colorlib](https://colorlib.com/wp/template/cvportfolio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cvportfolio-free-template.jpg)
 - [x] **Elen** — [colorlib](https://colorlib.com/wp/template/elen/) · [jotter](https://jotter.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elen-free-template.jpg)
 - [x] **Evans** — [colorlib](https://colorlib.com/wp/template/evans/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/evans-free-template.jpg) · [imprint](https://free-react-templates-imprint.surge.sh)
 - [x] **Explore** — [colorlib](https://colorlib.com/wp/template/explore/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/explore-free-template.jpg) · [nomad](https://nomad.free.componentdock.com)
