@@ -2287,7 +2287,7 @@
 - [x] **Amplify** — [colorlib](https://colorlib.com/wp/template/amplify/) · [amplify](https://amplify.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/amplify-free-template.jpg)
 - [x] **Appson** — [colorlib](https://colorlib.com/wp/template/appson/) · [appson](https://appson.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appson-free-template.jpg)
 - [x] **Archirio** — [colorlib](https://colorlib.com/wp/template/archirio/) · [structura](https://structura.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archirio-free-template.jpg)
-- [~] **Archs** — [colorlib](https://colorlib.com/wp/template/archs/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archs-free-template.jpg)
+- [x] **Archs** — [colorlib](https://colorlib.com/wp/template/archs/) · [archcraft](https://archcraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/archs-free-template.jpg)
 - [ ] **Author** — [colorlib](https://colorlib.com/wp/template/author/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/author-free-template.jpg)
 - [x] **Banker** — [colorlib](https://colorlib.com/wp/template/banker/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/banker-free-template.jpg) · [banknote](https://free-react-templates-banknote.surge.sh)
 - [x] **Bizpro** — [colorlib](https://colorlib.com/wp/template/bizpro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bizpro-free-classic-website-template.jpg) · [bizplanner](https://free-react-templates-bizplanner.surge.sh)
