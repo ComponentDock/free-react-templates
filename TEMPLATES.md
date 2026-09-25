@@ -2273,7 +2273,7 @@
 - [x] **Musiclab** — [colorlib](https://colorlib.com/wp/template/musiclab/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/musiclab-colorlib-template.jpg) · [sonority](https://free-react-templates-sonority.surge.sh)
 - [x] **Musico** — [colorlib](https://colorlib.com/wp/template/musico/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/musico-free-template.jpg) · [stave](https://free-react-templates-stave.surge.sh)
 - [x] **Mypodcast** — [colorlib](https://colorlib.com/wp/template/mypodcast/) · [podlane](https://podlane.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mypodcast-free-template.jpg)
-- [~] **Onemusic** — [colorlib](https://colorlib.com/wp/template/onemusic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/one-music-free-template.jpg)
+- [x] **Onemusic** — [colorlib](https://colorlib.com/wp/template/onemusic/) · [groovecraft](https://groovecraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/one-music-free-template.jpg)
 - [ ] **Poca** — [colorlib](https://colorlib.com/wp/template/poca/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/poca-free-template.jpg)
 - [x] **Podcast** — [colorlib](https://colorlib.com/wp/template/podcast/) · [wavecast](https://wavecast.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/podcast-free-template.jpg)
 - [x] **Radios** — [colorlib](https://colorlib.com/wp/template/radios/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/radios-free-template.jpg) · [wavelength](https://wavelength.free.componentdock.com)
