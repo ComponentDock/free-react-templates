@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #ff8b00;
+  --color-brand-dark: #e67e00;
+  --color-green-accent: #71bc42;
+  --color-heading: #1a1a2e;
+  --color-body: #666666;
+  --color-light-bg: #f8f9fa;
+  --color-dark-bg: #111111;
+  --color-border: #e0e0e0;
+
+  --font-heading: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+}
