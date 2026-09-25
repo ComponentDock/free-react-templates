@@ -10,187 +10,112 @@ Recreation of ColorLib "Eighty8" template as a React 19 + Vite + Tailwind 4 + Ty
 - **New name:** fmbeat (package: `@free-react-templates/fmbeat`)
 - **Deploy target:** `fmbeat.free.componentdock.com`
 
-## Design tokens
+## Requirements
 
-Extracted from `https://preview.colorlib.com/theme/eighty8/css/style.css`:
+### Requirement: Header displays logo, navigation, and social icons
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| Brand accent (yellow) | `#ffe400` | Section title underline, hero "UP NEXT" text, site-btn default bg, headings highlight |
-| Dark bg primary | `#212121` | Header, footer-top-section |
-| Dark bg secondary | `#1a1a1a` | Footer bottom bar |
-| Dark bg deep | `#080808` | Hero overlay |
-| Dark bg mid | `#191919` | Section backgrounds |
-| Text white | `#ffffff` / `#fff` | Headings, nav links, promo titles |
-| Text muted | `#a9a9a9` / `#acacac` | Footer links, body text |
-| Text dark | `#1b1b1b` | Site button text (on yellow) |
-| Text gray | `#7e7e7e` | Secondary text |
-| Font primary | Roboto (Google Fonts) | All text |
-| Button radius | 5px | site-btn default |
-| Badge radius | 50% | Circular elements |
-| Pill radius | 60px | Rounded buttons |
+The header SHALL display a dark background bar with the Fmbeat logo, six navigation links, and social media icons.
 
-### Header / Navbar
+#### Scenario: Header renders all elements
 
-- Dark background `#212121`, bottom border `1px solid #fff`
-- Logo image on left
-- Main menu: "Home", "About", "Charts", "DJ's", "Blog", "Contact" — white text, 16px, uppercase-capable
-- Social links on right: Twitter, SoundCloud, Instagram, Google+, Facebook, YouTube (Font Awesome icons)
-- Mobile: hamburger icon toggles menu
+- **WHEN** the user visits the page
+- **THEN** a dark header bar is visible at the top
+- **AND** the site logo "Fmbeat" is displayed on the left
+- **AND** navigation links (Home, About, Charts, DJs, Blog, Contact) are visible
+- **AND** social media icons (Twitter, SoundCloud, Instagram, Facebook, YouTube) are displayed on the right
 
-### Hero Section
+#### Scenario: Header is responsive on mobile
 
-- Dark background image (`bg.jpg`) with overlay
-- Height: 962px (not full viewport)
-- Top: location strip — 6 location badges (Berlin, Bucharest, London, etc.) with small logo icons, hidden on mobile
-- Owl Carousel slider with 3 items:
-  - "UP NEXT" label in yellow (#ffe400), 24px, weight 500
-  - Large heading (e.g. "DJ Khaled Exclusive Interview") on dark semi-transparent bg (`rgba(0,0,0,0.75)` padding 5px 10px)
-  - Slide transition: items fade in from opacity 0 / top 50px to opacity 1 / top 0
+- **WHEN** the user views on a mobile viewport
+- **THEN** a hamburger menu icon is displayed
+- **AND** when the user taps the hamburger icon the navigation menu opens
 
-### Promotion Section
+### Requirement: Hero section displays slider with upcoming events
 
-- 3-column grid of promo boxes (col-md-4)
-- Each box: height 370px, background image with dark overlay (pseudo-element), flex centered content
-- Yellow heading text: "Our DJ's", "Live Streams", "Events"
-- Hover: overlay opacity transition
+The hero section SHALL display a dark background image with location badges and an auto-advancing carousel.
 
-### Latest Podcast Section
+#### Scenario: Hero displays slider with upcoming events
 
-- Dark background `#191919`, generous padding (spad class)
-- Centered section title with yellow underline (4px bar, bottom-aligned)
-- Two-column layout:
-  - Left (col-lg-4): album art image
-  - Right (col-lg-8): track name, audio waveform visualization, "LISTEN LIVE" yellow button
+- **WHEN** the user visits the page
+- **THEN** a hero section with a dark background image is visible
+- **AND** location badges are displayed at the top (hidden on mobile)
+- **AND** a carousel slider shows items with "Up Next" label and event heading
 
-### Charts Section
+#### Scenario: Hero slider transitions smoothly
 
-- Dark background section
-- Centered title "Charts" with yellow underline
-- Background image (`chart-bg.jpg`) with large logo overlay, height 550px
+- **WHEN** 5 seconds elapse
+- **THEN** the slide advances to the next item with a fade animation
 
-### Footer Top Section
+### Requirement: Promotion section displays three category cards
 
-- Dark bg `#212121`, generous padding (100px top, 70px bottom)
-- 4-column layout (col-lg-3):
-  - Locations: list of city names
-  - Top Shows: numbered list (1–5) with show names
-  - Blog: 2 blog items with thumbnail + title + "Continue Reading" link
-  - Contact: address, phone, email, small footer logo
+The promotion section SHALL display three cards in a 3-column grid with background images and overlay headings.
 
-### Footer Bottom Bar
+#### Scenario: Promotion boxes display three category cards
 
-- Darker bg `#1a1a1a`, centered text
-- Copyright with heart icon and Colorlib credit (replace with Component Dock)
+- **WHEN** the user scrolls to the promotion section
+- **THEN** three promo boxes are displayed in a grid
+- **AND** each box shows a background image with a heading overlay ("Our DJ's", "Live Streams", "Events")
 
-## Gherkin scenarios
+### Requirement: Podcast section shows album art and audio player
 
-### Header / Navbar
-```gherkin
-Scenario: Header displays logo, nav links, and social icons
-  Given the user visits the page
-  Then a dark header bar is visible at the top
-  And the site logo is displayed on the left
-  And navigation links (Home, About, Charts, DJs, Blog, Contact) are visible
-  And social media icons (Twitter, SoundCloud, Instagram, etc.) are displayed on the right
+The podcast section SHALL display album art, track information, a waveform visualization, and a call-to-action button.
 
-Scenario: Header is responsive on mobile
-  Given the user views on a mobile viewport
-  Then a hamburger menu icon is displayed
-  When the user taps the hamburger icon
-  Then the navigation menu opens
-```
+#### Scenario: Podcast section shows album art and audio player
 
-### Hero Section
-```gherkin
-Scenario: Hero displays slider with upcoming events
-  Given the user visits the page
-  Then a hero section with a dark background image is visible
-  And location badges are displayed at the top (hidden on mobile)
-  And a carousel slider shows items with "UP NEXT" label and event heading
-  And the slider auto-advances between items
+- **WHEN** the user scrolls to the Latest Podcast section
+- **THEN** a section title "Latest Podcast" with yellow underline is visible
+- **AND** an album art image is displayed on the left
+- **AND** a track name, audio waveform, and "Listen Live" button are visible on the right
 
-Scenario: Hero slider transitions smoothly
-  Given the hero slider is visible
-  When a slide transitions
-  Then the text fades in with an upward animation
-```
+### Requirement: Charts section shows branded banner
 
-### Promotion Section
-```gherkin
-Scenario: Promotion boxes display three category cards
-  Given the user scrolls to the promotion section
-  Then three promo boxes are displayed in a 3-column grid
-  And each box shows a background image with a heading overlay ("Our DJ's", "Live Streams", "Events")
+The charts section SHALL display a section title with a yellow underline and a background image with logo overlay.
 
-Scenario: Promo boxes respond to hover
-  Given the promotion section is visible
-  When the user hovers over a promo box
-  Then the overlay transitions smoothly
-```
+#### Scenario: Charts section shows branded banner
 
-### Latest Podcast
-```gherkin
-Scenario: Podcast section shows album art and audio player
-  Given the user scrolls to the Latest Podcast section
-  Then a section title "Latest Podcast" with yellow underline is visible
-  And an album art image is displayed on the left
-  And a track name, audio waveform, and "LISTEN LIVE" button are visible on the right
+- **WHEN** the user scrolls to the Charts section
+- **THEN** a section title "Charts" with yellow underline is visible
+- **AND** a large background image with logo overlay is displayed
 
-Scenario: Listen Live button is interactive
-  Given the podcast section is visible
-  When the user clicks the "LISTEN LIVE" button
-  Then the audio playback state toggles
-```
+### Requirement: Footer displays four widget columns and copyright
 
-### Charts Section
-```gherkin
-Scenario: Charts section shows branded banner
-  Given the user scrolls to the Charts section
-  Then a section title "Charts" with yellow underline is visible
-  And a large background image with logo overlay is displayed
-```
+The footer SHALL display four columns (Locations, Top Shows, Blog, Contact) and a bottom bar with Component Dock attribution.
 
-### Footer
-```gherkin
-Scenario: Footer displays four widget columns
-  Given the user scrolls to the footer
-  Then a Locations column with city list is visible
-  And a Top Shows column with numbered list is visible
-  And a Blog column with thumbnail previews is visible
-  And a Contact column with address/phone/email is visible
+#### Scenario: Footer displays four widget columns
 
-Scenario: Footer bottom bar shows copyright
-  Given the footer is visible
-  Then a copyright line with Component Dock attribution is displayed
-```
+- **WHEN** the user scrolls to the footer
+- **THEN** a Locations column with city list is visible
+- **AND** a Top Shows column with numbered list is visible
+- **AND** a Blog column with thumbnail previews is visible
+- **AND** a Contact column with address/phone/email is visible
 
-### Responsive Design
-```gherkin
-Scenario: Layout adapts to mobile viewport
-  Given the user views the page on a 375px wide viewport
-  Then the location badges are hidden
-  And the header shows a hamburger menu
-  And promotion boxes stack vertically
-  And the podcast section stacks vertically
-  And footer columns stack vertically
-```
+#### Scenario: Footer bottom bar shows copyright
 
-## Verification checklist
+- **WHEN** the footer is visible
+- **THEN** a copyright line with Component Dock attribution is displayed
+- **AND** the Component Dock link points to https://www.componentdock.com/
 
-- [ ] Header: dark bg (#212121), logo + 6 nav links + social icons, mobile hamburger
-- [ ] Hero: dark bg image, location strip (6 cities), owl-carousel slider with 3 items, "UP NEXT" yellow label
-- [ ] Promotion: 3-column grid, background images with overlay, yellow headings, hover transitions
-- [ ] Latest Podcast: dark bg, section title with yellow underline, album art + track info + waveform + "LISTEN LIVE" button
-- [ ] Charts: section title with yellow underline, background image with logo
-- [ ] Footer Top: 4-column layout (Locations, Top Shows, Blog, Contact), dark bg
-- [ ] Footer Bottom: copyright with Component Dock link
-- [ ] Typography: Roboto font throughout
-- [ ] Colors: yellow #ffe400 accent, dark #212121 bg, white headings, gray #a9a9a9 links
-- [ ] Buttons: yellow bg (#ffe400), dark text, 5px radius
-- [ ] Responsive: mobile-first, stacking columns, hamburger nav
-- [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] Picsum photos used for placeholder images
-- [ ] Lucide-react icons used (not Font Awesome)
-- [ ] 100% test coverage (Vitest + Testing Library)
+### Requirement: Layout adapts to mobile viewport
+
+The template SHALL be responsive and stack columns vertically on mobile viewports.
+
+#### Scenario: Layout adapts to mobile viewport
+
+- **WHEN** the user views the page on a 375px wide viewport
+- **THEN** the location badges are hidden
+- **AND** the header shows a hamburger menu
+- **AND** promotion boxes stack vertically
+- **AND** the podcast section stacks vertically
+- **AND** footer columns stack vertically
+
+### Requirement: Design tokens match original template
+
+The template SHALL use the specified design tokens: brand yellow #ffe400, dark backgrounds, Roboto font, and yellow-accented buttons.
+
+#### Scenario: Colors and typography are correct
+
+- **WHEN** the page renders
+- **THEN** the brand accent color is yellow (#ffe400)
+- **AND** section backgrounds use dark palette (#212121, #191919, #1a1a1a)
+- **AND** the font family is Roboto
+- **AND** section titles have yellow underlines

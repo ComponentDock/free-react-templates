@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-yellow: #ffe400;
+  --color-brand-dark: #212121;
+  --color-brand-dark-deep: #080808;
+  --color-brand-dark-mid: #191919;
+  --color-brand-dark-bottom: #1a1a1a;
+  --color-brand-text: #a9a9a9;
+  --color-brand-text-dark: #1b1b1b;
+  --color-brand-text-gray: #7e7e7e;
+  --font-heading: 'Roboto', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
