@@ -2328,7 +2328,7 @@
 - [x] **Hookup** — [colorlib](https://colorlib.com/wp/template/hookup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hookup-free-template.jpg) · [nuptial](https://nuptial.free.componentdock.com)
 - [x] **Imagine** — [colorlib](https://colorlib.com/wp/template/imagine/) · [imagine](https://imagine.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/imagine-free-template.jpeg)
 - [x] **Inves** — [colorlib](https://colorlib.com/wp/template/inves/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/inves-free-template.jpg) · [equity](https://equity.free.componentdock.com)
-- [ ] **Jackson** — [colorlib](https://colorlib.com/wp/template/jackson/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jackson-free-personal-resume-website-template.jpg)
+- [~] **Jackson** — [colorlib](https://colorlib.com/wp/template/jackson/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jackson-free-personal-resume-website-template.jpg)
 - [ ] **Jellyfish Ui Kit** — [colorlib](https://colorlib.com/wp/template/jellyfish-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jellyfish-ui-kit.jpg)
 - [x] **Knuford** — [colorlib](https://colorlib.com/wp/template/knuford/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/knuford-free-template.jpg) · [Swatch](https://swatch.free.componentdock.com)
 - [x] **Landerz** — [colorlib](https://colorlib.com/wp/template/landerz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/landerz-free-template.jpg) · [liftoff](https://liftoff.free.componentdock.com)
