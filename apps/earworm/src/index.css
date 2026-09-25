@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — recreated from the Poca design tokens:
+     primary red #f55656, headings #232323, body #666666, gray bg #f4f4f4,
+     border #ebebeb, secondary #a6a6a6. */
+  --color-brand: #f55656;
+  --color-brand-dark: #e04848;
+
+  --color-heading: #232323;
+  --color-body: #666666;
+  --color-gray-bg: #f4f4f4;
+  --color-border: #ebebeb;
+  --color-secondary: #a6a6a6;
+
+  --font-sans: 'HK Grotesk', ui-sans-serif, system-ui, sans-serif;
+}
