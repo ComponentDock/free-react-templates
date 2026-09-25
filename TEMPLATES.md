@@ -2293,7 +2293,7 @@
 - [x] **Bizpro** — [colorlib](https://colorlib.com/wp/template/bizpro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bizpro-free-classic-website-template.jpg) · [bizplanner](https://free-react-templates-bizplanner.surge.sh)
 - [x] **Bobsled** — [colorlib](https://colorlib.com/wp/template/bobsled/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bobsled-creative-website-template.jpg) · [artwave](https://artwave.free.componentdock.com)
 - [x] **Booke** — [colorlib](https://colorlib.com/wp/template/booke/) · [bookcraft](https://bookcraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/booke-website-template.jpeg)
-- [~] **Boxus** — [colorlib](https://colorlib.com/wp/template/boxus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boxus-creative-digital-agency-free-website-template.jpg)
+- [x] **Boxus** — [colorlib](https://colorlib.com/wp/template/boxus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boxus-creative-digital-agency-free-website-template.jpg) · [boxpulse](https://boxpulse.free.componentdock.com)
 - [x] **Ca App** — [colorlib](https://colorlib.com/wp/template/ca-app/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ca-app-showcase-website-template.jpg)
 - [x] **Cargo** — [colorlib](https://colorlib.com/wp/template/cargo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cargo-free-template.jpg) · [haulage](https://haulage.free.componentdock.com)
 - [x] **Celt** — [colorlib](https://colorlib.com/wp/template/celt/) · [buildwell](https://buildwell.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/celt-construction-company-website-template.jpg)
