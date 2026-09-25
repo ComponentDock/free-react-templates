@@ -2313,7 +2313,7 @@
 - [x] **Digilab** — [colorlib](https://colorlib.com/wp/template/digilab/) · [byteops](https://byteops.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/digilab-free-template.jpg)
 - [x] **Dogger** — [colorlib](https://colorlib.com/wp/template/dogger/) · [dogger](https://dogger.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dogger-free-template.jpg)
 - [x] **Doglife** — [colorlib](https://colorlib.com/wp/template/doglife/) · [doglife](https://doglife.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/doglife-free-template.jpg)
-- [ ] **Eatwell** — [colorlib](https://colorlib.com/wp/template/eatwell/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eatwell-free-template.jpg)
+- [~] **Eatwell** — [colorlib](https://colorlib.com/wp/template/eatwell/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eatwell-free-template.jpg)
 - [x] **Educrown** — [colorlib](https://colorlib.com/wp/template/educrown/) · [laurel](https://laurel.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/educrown-free-template.jpeg)
 - [ ] **Elit** — [colorlib](https://colorlib.com/wp/template/elit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elit-free-template.jpg)
 - [ ] **Equip Ui Kit** — [colorlib](https://colorlib.com/wp/template/equip-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/equip-free-template.jpg)
