@@ -2316,7 +2316,7 @@
 - [x] **Eatwell** — [colorlib](https://colorlib.com/wp/template/eatwell/) · [tastory](https://tastory.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eatwell-free-template.jpg)
 - [x] **Educrown** — [colorlib](https://colorlib.com/wp/template/educrown/) · [laurel](https://laurel.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/educrown-free-template.jpeg)
 - [x] **Elit** — [colorlib](https://colorlib.com/wp/template/elit/) · [lens](https://lens.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elit-free-template.jpg)
-- [ ] **Equip Ui Kit** — [colorlib](https://colorlib.com/wp/template/equip-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/equip-free-template.jpg)
+- [~] **Equip Ui Kit** — [colorlib](https://colorlib.com/wp/template/equip-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/equip-free-template.jpg)
 - [x] **Eventalk** — [colorlib](https://colorlib.com/wp/template/eventalk/) · [festpoint](https://festpoint.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventalk-free-template.jpg)
 - [x] **Expert** — [colorlib](https://colorlib.com/wp/template/expert/) · [adept](https://free-react-templates-adept.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/expert-free-template.jpg)
 - [x] **Fancy** — [colorlib](https://colorlib.com/wp/template/fancy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fancy-free-creative-business-website-template.jpg) · [flair](https://flair.free.componentdock.com)
@@ -3019,7 +3019,7 @@
 ## Ui Kit (8)
 
 - [ ] **Buildex Ui Kit** — [colorlib](https://colorlib.com/wp/template/buildex-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildex-free-template.jpg)
-- [ ] **Equip Ui Kit** — [colorlib](https://colorlib.com/wp/template/equip-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/equip-free-template.jpg)
+- [~] **Equip Ui Kit** — [colorlib](https://colorlib.com/wp/template/equip-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/equip-free-template.jpg)
 - [ ] **Jellyfish Ui Kit** — [colorlib](https://colorlib.com/wp/template/jellyfish-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jellyfish-ui-kit.jpg)
 - [ ] **Next Ui Kit** — [colorlib](https://colorlib.com/wp/template/next-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/next-free-template.jpg)
 - [ ] **Regen Ui Kit** — [colorlib](https://colorlib.com/wp/template/regen-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/regen-free-template.jpg)
