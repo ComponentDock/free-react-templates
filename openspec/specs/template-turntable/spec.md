@@ -1,158 +1,243 @@
-# Template: Turntable (Testimonials Carousel)
+# Template: Turntable (DJ / Music Event)
 
 ## Purpose
 
-Turntable is a single-section testimonials carousel page in the free-react-templates
-monorepo. It is an original React recreation of the ColorLib free "Carousel 08"
-website template design (see TEMPLATES.md), built under a different name with the
-monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Turntable is a single-page DJ/music event landing page in the
+free-react-templates monorepo. It is an original React recreation of the
+ColorLib "Dj" free template (source:
+https://colorlib.com/wp/template/dj/), built under a DIFFERENT name
+(**Turntable**), with the monorepo stack: Vite + React 19 + Tailwind CSS 4
++ TypeScript.
+
+The original is a Bootstrap 4 single-page template with a dark (black)
+background, gold/amber (`#e4ae50`) brand accent, two Google Fonts
+(Nunito body + Montserrat headings), AOS scroll animations, and a
+multi-section layout: transparent navbar overlaying a hero with a
+background image, Featured Events (3-column cards with date badges),
+Upcoming Events (asymmetric 1+2 grid), a video+text split section, and
+a 3-column dark footer with subscribe form and embedded video.
+
+## Naming
+
+The ColorLib source name "Dj" is FORBIDDEN as the app name. **Turntable**
+is the new, original name — single lowercase word, kebab-case `turntable`,
+no collision with `apps/`, `openspec/specs/`, `docs/templates/`, or any
+TEMPLATES.md name (verified: zero hits for `turntable` in all three).
+Source slug + preview URL recorded in the design reference below.
 
 ## Design reference (replication findings)
 
-- **Original:** ColorLib "Carousel 08" — testimonials carousel component, Carousel
-  category (source: https://colorlib.com/wp/template/carousel-08/).
-- **Preview URL:** `https://preview.colorlib.com/theme/bootstrap/carousel-08/` —
-  HTTP 200, full rendered DOM (15 KB) fetched with curl. Page title: "Carousel 08".
-  Stylesheets: `css/owl.carousel.min.css`, `css/owl.theme.default.min.css`,
-  `css/animate.css`, `css/style.css` (main, 224 KB — includes bundled Bootstrap
-  4.3.1). Fonts are **"Poppins"** (sans-serif, body — 14px/1.8 weight 400) and
-  **"Playfair Display"** (serif, testimonial quotes — 39px weight 700) via
-  Cloudflare Fonts. Carousel powered by Owl Carousel JS.
-- **Screenshot:** `carousel-08.jpg` (from TEMPLATES.md) — shows a centered heading
-  "Carousel #08" with a testimonial card below: left half is a person photo, right
-  half is a white card with a large serif quote and gold author name. Dots below
-  the carousel.
-- **Visual design (from DOM + CSS tokens + screenshot):** Clean, minimal
-  testimonials section on a very light gray `rgba(0, 0, 0, 0.05)` background.
-  Single centered section with generous `7em` vertical padding. Heading is 28px
-  regular-weight Poppins, centered. Carousel cards are full-width within a
-  `col-md-11` column, split 50/50 (image left, text right) with a soft box shadow
-  (`0px 10px 40px -30px rgba(0, 0, 0, 0.42)`). Image side uses a background-image
-  covering 600px height (450px on mobile). Text side is white with centered content:
-  the quote uses Playfair Display 39px bold, author name in brand gold `#dbcc8f`
-  20px medium, and position label in muted gray. Navigation dots are 10px circles
-  with 1px black border; active dot fills with `#dbcc8f`. Arrow navigation is
-  subtle (black 20% opacity, transitions to gold on hover). The original has NO
-  navbar, NO footer — purely a carousel component demo.
+- **Original:** ColorLib "Dj" (page title: "Dj — Colorlib Website
+  Template"). Listed in TEMPLATES.md under the DJ/Music section
+  (first `- [ ]` item at line 2265). Source slug: `dj`.
+- **Source URL:** https://colorlib.com/wp/template/dj/
+- **Preview URL — REACHABLE (verified by direct fetch):**
+  `https://preview.colorlib.com/theme/dj/`
+  HTTP 200, full page HTML retrieved. Stylesheets referenced:
+  `css/bootstrap.min.css`, `css/style.css`, `css/animate.css`,
+  `css/aos.css`, plus icon font `fonts/icomoon/style.css` and
+  `fonts/flaticon/font/flaticon.css`. Scripts: Bootstrap, jQuery, AOS,
+  Owl Carousel, Magnific Popup, mediaelementplayer.
+- **Live DOM structure (from fetched HTML + CSS, verified):**
+  - `div.site-wrap` → `div.site-navbar.mt-4` (absolute, transparent
+    overlay on hero) → `div.site-mobile-menu` (slide-in off-canvas)
+  - `div.site-hero` — full-viewport hero with background image
+    (`images/dj.jpg`), heading "DJ Kathy Music Fest", subtext, CTA
+    button "Join Us" (btn-outline-primary)
+  - `div.site-section` (Featured Events) — centered heading with
+    `.w-border`, 3-column `.event` cards each with image, date badge
+    (`.date` absolute overlay with day+month), title, description, "Info"
+    link
+  - `div.site-section` (Upcoming Events) — `.site-block-retro` asymmetric
+    grid: left column (full height image+title), right column with two
+    stacked image+title blocks
+  - `section.site-section` (Video + About) — split 6/6: left has video
+    image with `.popup-vimeo` play button overlay, right has heading,
+    lead text, paragraphs, "Join Us" primary button
+  - `footer.site-footer` — 3-column: About Us + Navigations, Follow Us
+    (social icons) + Subscribe (email form), Watch Video (embedded
+    video thumbnail with play overlay); copyright bar at bottom
+
+- **Screenshot (`dj-free-template.jpg`):** Dark-themed DJ/music event
+  page. Hero with a dark atmospheric image (turntable/DJ equipment),
+  prominent gold date badge ("25 JUL"), gold heading accent, gold CTA
+  button. Event cards below with overlaid date badges in gold circles.
+  Overall aesthetic: moody nightclub feel, dark backgrounds, gold
+  highlights, white semi-transparent body text.
 
 ## Design tokens
 
-| Token             | Value                                  | Usage                               |
-| ----------------- | -------------------------------------- | ----------------------------------- |
-| Brand color       | `#dbcc8f` (warm gold/tan)              | Links, active dots, author name     |
-| Font — body       | "Poppins", sans-serif                  | Body text, headings, all UI         |
-| Font — accent     | "Playfair Display", serif              | Testimonial quote text (h3)         |
-| Body text color   | `gray` (#808080)                       | Body copy, position labels          |
-| Heading color     | `#000` (black)                         | Section heading, quote text         |
-| Page background   | `rgba(0, 0, 0, 0.05)`                  | Very light gray                     |
-| Card background   | `#fff` (white)                         | Testimonial text panel              |
-| Card shadow       | `0px 10px 40px -30px rgba(0,0,0,0.42)` | Soft elevated shadow                |
-| Card image height | 600px (desktop), 450px (mobile)        | Person photo background-image       |
-| Quote font size   | 39px, weight 700                       | Playfair Display testimonial text   |
-| Author name       | 20px, weight 500, color #dbcc8f        | Attribution name                    |
-| Dot size          | 10px circle, 1px border #000           | Carousel pagination                 |
-| Active dot        | background + border = #dbcc8f          | Current slide indicator             |
-| Arrow color       | rgba(0, 0, 0, 0.2) → #dbcc8f           | Navigation arrows, hover transition |
-| Border radius     | 0 (no rounded corners)                 | Cards, buttons                      |
-| Section padding   | 7em 0                                  | ftco-section vertical rhythm        |
+| Token              | Value                                | Notes                                                                      |
+| ------------------ | ------------------------------------ | -------------------------------------------------------------------------- |
+| `--color-bg`       | `#000` (pure black)                  | Page and section backgrounds — dark theme throughout                       |
+| `--color-brand`    | `#e4ae50` (gold/amber)               | Primary accent: buttons, date badges, links, headings, footer underline    |
+| `--color-text`     | `rgba(255, 255, 255, 0.5)`          | Body text — semi-transparent white on black                                |
+| `--color-text-white` | `#fff`                             | Headings, navbar links, active states                                      |
+| `--color-footer-text` | `#737373`                          | Footer paragraph text                                                      |
+| `--color-footer-link` | `#999`                             | Footer links → hover: white                                                |
+| `--color-form-border` | `#333`                             | Form control border                                                        |
+| `--color-form-focus` | `#e4ae50`                          | Form control focus border                                                  |
+| `--font-body`      | `'Nunito', sans-serif` (400)         | Body text, paragraphs; base 1.1rem, line-height 1.7                        |
+| `--font-heading`   | `'Montserrat', sans-serif` (700)     | Section headings, navbar brand                                             |
+| `--btn`            | uppercase, letter-spacing .2rem      | Padding 15px 20px, border-width 2px; `btn-primary`: white on gold          |
+|                    |                                      | `btn-outline-primary`: gold border + text, hover fills gold                 |
+| `--section-py`     | 40px mobile / 70px desktop           | `.site-section` vertical padding                                           |
+| `--footer-py`      | 4em mobile / 7em desktop             | `.site-footer` vertical padding                                            |
+| `--date-badge`     | Absolute overlay on image            | Gold circle/badge with day+month stacked vertically                        |
+| `--play-btn`       | 70px circle, radius 50%, white bg    | Gold icon, absolute centered on image; `.block-16` video play overlay      |
+| `--navbar-brand`   | White bold, "Dj." with gold dot      | `.text-primary` dot after brand name                                       |
 
-## Gherkin requirements
+## Requirements
 
-### Scenario: Section renders with heading
+### Requirement: Navbar
 
-```gherkin
-Given the page loads
-When the testimonials section is displayed
-Then a centered heading "Carousel #08" (or equivalent) is visible
-And the section has generous vertical padding (~7em)
-And the background is a very light gray
-```
+The system SHALL render a transparent navbar overlaying the hero section
+with brand name, navigation links, and mobile hamburger menu.
 
-### Scenario: Carousel displays testimonial cards
+#### Scenario: Desktop navbar
 
-```gherkin
-Given the testimonials section is rendered
-When the carousel is visible
-Then there are at least 3 testimonial slides
-And each slide contains a 50/50 split layout (image left, text right)
-And each image uses a background-image covering its container
-And each text panel has a white background with centered content
-```
+- **GIVEN** the Turntable app is rendered on a desktop viewport (>992px)
+- **THEN** the navbar SHALL display absolutely positioned over the hero
+  with transparent background
+- **AND** the brand SHALL show "Turntable" in white bold with a gold dot
+  accent
+- **AND** navigation links SHALL be: Home, DJs, Shows (with dropdown),
+  Events, About, Contact
+- **AND** link text SHALL be semi-transparent white, turning full white
+  on hover
+- **AND** the dropdown (for Shows) SHALL show on hover with white
+  background, border, and shadow
 
-### Scenario: Testimonial card content structure
+#### Scenario: Mobile menu
 
-```gherkin
-Given a testimonial card is displayed
-Then the quote text is rendered in a serif font (Playfair Display)
-And the quote text is large (~39px) and bold
-And the author name is displayed below the quote
-And the author name uses the brand gold color (#dbcc8f)
-And the author position/title is shown in muted gray text below the name
-```
+- **GIVEN** a viewport at or below 992px
+- **THEN** a hamburger icon SHALL appear on the right
+- **WHEN** the user taps the hamburger
+- **THEN** a slide-in mobile menu SHALL appear from the right (300px
+  width, white background, off-canvas transform)
+- **AND** a close icon SHALL dismiss the menu
 
-### Scenario: Carousel navigation dots
+### Requirement: Hero section
 
-```gherkin
-Given the carousel has multiple slides
-When the pagination dots are displayed
-Then there is one dot per slide
-And dots are small circles (~10px) with a dark border
-And the active slide's dot is filled with the brand gold color
-And clicking a dot navigates to the corresponding slide
-```
+The system SHALL render a full-width hero with a background image,
+heading, description, and CTA button.
 
-### Scenario: Carousel auto-advances
+#### Scenario: Hero content
 
-```gherkin
-Given the carousel is displayed
-When the user waits
-Then the carousel auto-advances to the next slide after a timeout
-And the transition is smooth (animated)
-```
+- **GIVEN** the Turntable app is rendered
+- **THEN** the hero SHALL display a full-viewport background image
+  (placeholder via picsum.photos)
+- **AND** the heading SHALL be "DJ Kathy Music Fest" (or similar
+  DJ/event headline)
+- **AND** a short description paragraph SHALL appear below the heading
+- **AND** a "Join Us" CTA button (btn-outline-primary) SHALL link to
+  events or signup
 
-### Scenario: Carousel arrow navigation
+### Requirement: Featured Events section
 
-```gherkin
-Given the carousel is displayed
-When the user hovers over the left/right arrow areas
-Then previous/next navigation arrows appear
-And the arrows transition to the brand gold color on hover
-And clicking an arrow navigates to the previous/next slide
-```
+The system SHALL display a 3-column grid of event cards, each with an
+image, date badge, title, description, and info link.
 
-### Scenario: Responsive layout
+#### Scenario: Event card layout
 
-```gherkin
-Given the page is viewed on a mobile device (< 768px)
-Then the testimonial card stacks vertically (image on top, text below)
-And the image height reduces to ~450px
-And carousel controls remain accessible
-And the heading and text remain centered and readable
-```
+- **GIVEN** the Featured Events section is visible
+- **THEN** a centered heading "Featured Events" with a bottom border
+  divider SHALL render
+- **AND** three event cards SHALL display in a 3-column grid (stacking
+  on mobile)
+- **AND** each card SHALL have: a full-width image, an absolute date
+  badge overlay (day + month stacked), a title link, a description
+  paragraph, and an "Info" link
+- **AND** the date badge SHALL use the gold brand color (`#e4ae50`)
 
-### Scenario: No navbar or footer present
+### Requirement: Upcoming Events section
 
-```gherkin
-Given the page loads
-Then there is NO navigation bar
-And there is NO footer section
-And the page consists solely of the testimonials carousel section
-```
+The system SHALL display an asymmetric grid of upcoming events with
+background images and overlaid titles.
+
+#### Scenario: Asymmetric grid layout
+
+- **GIVEN** the Upcoming Events section is visible
+- **THEN** a centered heading "Upcoming Events" SHALL render
+- **AND** the layout SHALL show one large event block on the left
+  (full height) with two smaller blocks stacked on the right
+- **AND** each block SHALL use a background image with an overlaid
+  heading on a gold highlight badge
+
+### Requirement: Video + About section
+
+The system SHALL display a split 6/6 layout with a video thumbnail on
+the left and descriptive text with CTA on the right.
+
+#### Scenario: Split content layout
+
+- **GIVEN** the video/about section is visible
+- **THEN** the left column SHALL show an image with a circular play
+  button overlay (70px white circle, gold icon, centered)
+- **AND** the right column SHALL display the heading "We Love Music",
+  a lead paragraph, body text, and a gold "Join Us" primary button
+
+### Requirement: Footer
+
+The system SHALL render a 3-column dark footer with About Us, social
+links + subscribe form, and a video embed, plus a copyright bar.
+
+#### Scenario: Footer columns
+
+- **GIVEN** the Turntable app is rendered
+- **THEN** the footer SHALL display three columns:
+  1. "About Us" paragraph + "Navigations" link list
+  2. "Follow Us" social icons (Facebook, Twitter, Instagram, LinkedIn) +
+     "Subscribe" email form (input + button)
+  3. "Watch Video" embedded video thumbnail with play button overlay
+- **AND** the footer heading underline SHALL be the gold brand color
+  (`#e4ae50`, 40px wide, 2px height)
+- **AND** a copyright bar at the bottom SHALL link to Component Dock
+
+#### Scenario: Subscribe form
+
+- **GIVEN** the subscribe form is rendered in the footer
+- **THEN** an email input (white border, transparent bg, white
+  placeholder text) SHALL be present
+- **AND** a "Subscribe" button SHALL be attached to the input
+- **AND** the form SHALL NOT submit to a real endpoint (mock only)
+
+### Requirement: Accessibility and semantics
+
+The system SHALL expose accessible semantics with proper landmarks,
+labels, and ARIA attributes.
+
+#### Scenario: Semantic structure
+
+- **GIVEN** the Turntable app is rendered
+- **THEN** the navbar SHALL use `<nav>` with `aria-label`
+- **AND** the hero, events, and video sections SHALL use `<section>`
+  elements
+- **AND** the footer SHALL use `<footer>`
+- **AND** all interactive elements SHALL have visible focus-visible rings
+- **AND** images SHALL have descriptive alt text
+- **AND** the subscribe form SHALL have a labeled email input
+
+### Requirement: Footer — Component Dock credit
+
+#### Scenario: Attribution
+
+- **GIVEN** the Turntable app is rendered
+- **THEN** the footer SHALL link to https://www.componentdock.com/
+  branded as "Component Dock"
 
 ## Verification checklist
 
-- [ ] Heading is centered, 28px, Poppins, regular weight
-- [ ] Background is very light gray rgba(0, 0, 0, 0.05)
-- [ ] Section padding matches ~7em vertical
-- [ ] Carousel displays 3 testimonial slides
-- [ ] Each slide: 50/50 split (image left, text right) inside col-md-11
-- [ ] Image panel: background-image, cover, 600px height (450px mobile)
-- [ ] Text panel: white background, centered, soft box shadow
-- [ ] Quote text: Playfair Display, 39px, weight 700, black
-- [ ] Author name: 20px, weight 500, brand gold #dbcc8f
-- [ ] Position label: muted gray, smaller text
-- [ ] Dots: 10px circles, black border, active = gold fill
-- [ ] Arrow navigation: subtle black → gold on hover
-- [ ] Responsive: mobile stacks vertically, image 450px
-- [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/
+- [ ] `npm run verify:app -- turntable` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] Visual diff vs the live preview at
+      https://preview.colorlib.com/theme/dj/: black `#000` page, gold
+      `#e4ae50` accent, Nunito body font, Montserrat headings, transparent
+      navbar over hero image, 3-column event cards with date badges,
+      asymmetric upcoming events grid, video+text split section, 3-column
+      dark footer with subscribe form.
+- [ ] Behavior check: navbar links work, mobile menu slides in/out,
+      hover states on links and buttons, subscribe form handles input
+      (mock), play button visible on video thumbnails.
+- [ ] Responsive check at 768px: hero stacks, event cards stack to 1
+      column, footer columns stack, no horizontal overflow.
