@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Curriculo brand palette — blue-to-purple gradient (#8490ff → #62bdfc)
+     from the ColorLib Rezume design. */
+  --color-brand-start: #8490ff;
+  --color-brand-end: #62bdfc;
+  --color-brand-primary: #0d6efd;
+
+  /* Nunito Sans — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
