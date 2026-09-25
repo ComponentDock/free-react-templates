@@ -1,7 +1,6 @@
 {
   "name": "@free-react-templates/dossier",
   "private": true,
-  "homepage": "https://dossier.free.componentdock.com",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
@@ -20,6 +19,7 @@
     "@tailwindcss/vite": "latest",
     "@testing-library/jest-dom": "latest",
     "@testing-library/react": "latest",
+    "@testing-library/user-event": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
@@ -28,5 +28,6 @@
     "tailwindcss": "latest",
     "typescript": "latest",
     "vite": "latest"
-  }
+  },
+  "homepage": "https://dossier.free.componentdock.com"
 }

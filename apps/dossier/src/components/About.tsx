@@ -1,53 +1,45 @@
-import { aboutBackground, aboutBio, aboutParagraph, skills } from '../data'
-import { btnSolid } from './buttonClasses'
+import { ButtonLink } from '@free-react-templates/ui'
+import { Download } from 'lucide-react'
 
-/**
- * About section: a floating white card over a desk-photo background with the
- * ABOUT MYSELF label, serif bio, solid-green Download Resume button, and
- * four green progress bars.
- */
 export function About() {
   return (
-    <section
-      id="about"
-      aria-label="About"
-      className="bg-cover bg-center py-32"
-      style={{ backgroundImage: `url(${aboutBackground})` }}
-    >
-      <div className="mx-auto max-w-5xl px-4 lg:px-8">
-        <div className="bg-white p-10 shadow-xl lg:p-[100px]">
-          <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-brand-green">
-            About Myself
-          </p>
-          <h2 className="mb-8 max-w-2xl font-heading text-[40px] font-normal leading-[1.3] text-ink">
-            {aboutBio}
-          </h2>
-          <a href="#contact" className={`mb-10 inline-flex ${btnSolid}`}>
-            Download Resume
-          </a>
-
-          <div className="mb-8 grid gap-x-14 gap-y-8 md:grid-cols-2">
-            {skills.map((skill) => (
-              <div key={skill.label} className="single-skill">
-                <div className="mb-2 flex items-center justify-between text-xs font-bold uppercase tracking-wider">
-                  <span className="text-ink">{skill.label}</span>
-                  <span className="text-ink/60">{skill.value}%</span>
-                </div>
-                <div
-                  role="progressbar"
-                  aria-label={skill.label}
-                  aria-valuenow={skill.value}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                  className="h-2 w-full bg-divider"
-                >
-                  <div className="h-full bg-brand-green" style={{ width: `${skill.value}%` }} />
-                </div>
-              </div>
-            ))}
+    <section id="about" className="py-20">
+      <div className="mx-auto max-w-6xl px-4">
+        <div className="grid items-center gap-12 md:grid-cols-2">
+          <div>
+            <h2 className="mb-6 text-3xl font-bold text-gray-900">About Me</h2>
+            <p className="mb-4 leading-relaxed text-gray-600">
+              I'm a passionate product designer with a keen eye for detail and a love for creating
+              intuitive user experiences. With years of experience in the industry, I've worked with
+              startups and enterprises alike to bring their digital visions to life.
+            </p>
+            <p className="mb-8 leading-relaxed text-gray-600">
+              My approach combines user-centered design principles with modern aesthetics to create
+              products that not only look great but also solve real problems for real people.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <ButtonLink
+                href="#contact"
+                className="rounded-full bg-leaf-400 px-8 py-3 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-leaf-500"
+              >
+                Hire Me
+              </ButtonLink>
+              <a
+                href="#"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-leaf-400 px-8 py-3 text-sm font-semibold uppercase tracking-wider text-leaf-400 transition-colors hover:bg-leaf-400 hover:text-white"
+              >
+                <Download size={16} />
+                Download CV
+              </a>
+            </div>
           </div>
-
-          <p className="max-w-2xl text-sm leading-relaxed text-muted">{aboutParagraph}</p>
+          <div className="flex justify-center">
+            <img
+              src="https://picsum.photos/seed/dossier-about/500/600"
+              alt="Portrait of Alex Morgan"
+              className="w-full max-w-sm rounded-lg object-cover shadow-lg"
+            />
+          </div>
         </div>
       </div>
     </section>

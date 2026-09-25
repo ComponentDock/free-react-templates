@@ -1,30 +1,27 @@
-import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
+import { render, screen } from '@testing-library/react'
 import { Hero } from './Hero'
-import { heroPortrait, heroSubtitle, heroTitle } from '../data'
 
 describe('Hero', () => {
-  it('renders the green hero with title, subtitle, and outlined CTA', () => {
+  it('renders the name heading', () => {
     render(<Hero />)
-    const section = screen.getByRole('region', { name: 'Hero' })
-    expect(section.className).toContain('bg-hero-green')
-    expect(section.querySelector('.h-\\[900px\\]')).toBeTruthy()
-
-    expect(screen.getByRole('heading', { level: 1, name: heroTitle })).toBeInTheDocument()
-    expect(screen.getByText(heroSubtitle)).toBeInTheDocument()
-
-    const hire = screen.getByRole('link', { name: 'Hire Me' })
-    expect(hire).toHaveAttribute('href', '#contact')
-    expect(hire.className).toContain('border-2')
-    expect(hire.className).toContain('border-ink')
-    expect(hire.className).toContain('uppercase')
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent("Howdy, I'm Alex Morgan")
   })
 
-  it('renders the portrait image', () => {
+  it('renders the subtitle', () => {
     render(<Hero />)
-    expect(screen.getByRole('img', { name: 'Creative workspace flat lay' })).toHaveAttribute(
-      'src',
-      heroPortrait,
-    )
+    expect(screen.getByText(/A Product Designer/)).toBeInTheDocument()
+  })
+
+  it('renders CTA buttons', () => {
+    render(<Hero />)
+    expect(screen.getByText('More On Me')).toBeInTheDocument()
+    expect(screen.getByText('Hire Me')).toBeInTheDocument()
+  })
+
+  it('has a dark overlay div', () => {
+    const { container } = render(<Hero />)
+    const overlay = container.querySelector('.bg-black\\/50')
+    expect(overlay).toBeInTheDocument()
   })
 })

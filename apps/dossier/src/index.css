@@ -1,27 +1,23 @@
 @import 'tailwindcss';
 
-/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
-   default prefers-color-scheme media query. */
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Design tokens (recreated, no assets copied):
-     palette: neon green on near-black ink — #01FF56 brand green,
-     #5AFF80 hero green, Shippori Mincho headings + Chivo body. */
-  --color-brand-green: #01ff56;
-  --color-hero-green: #5aff80;
-  --color-ink: #150303;
-  --color-light: #f9f9ff;
-  --color-muted: #656565;
-  --color-date-grey: #928888;
-  --color-divider: #e2e2e2;
-  --color-link-blue: #2845ba;
-  --font-heading: 'Shippori Mincho', ui-serif, Georgia, serif;
-  --font-sans: 'Chivo', ui-sans-serif, system-ui, sans-serif;
-}
+  /* Dossier brand palette — recreated from the ColorLib "Alias" design
+     (green accent #4ebe2a / progress bar #57d131). */
+  --color-leaf-50: #f0fdf0;
+  --color-leaf-100: #dcfce7;
+  --color-leaf-200: #bbf7d0;
+  --color-leaf-300: #86efac;
+  --color-leaf-400: #4ebe2a;
+  --color-leaf-500: #22c55e;
+  --color-leaf-600: #16a34a;
+  --color-leaf-700: #15803d;
+  --color-leaf-800: #166534;
+  --color-leaf-900: #14532d;
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
+  /* Poppins — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
 }
