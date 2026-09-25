@@ -1,78 +1,127 @@
-# Template: Cadence — Modern Monthly Calendar & Event Planner
+# Template: Cadence (Music Artist Landing)
 
 ## Purpose
 
-Recreation of ColorLib "Calendar 04" (https://colorlib.com/wp/template/calendar-04/)
-as "Cadence" — a modern monthly calendar and event planner component built with
-React 19, Tailwind CSS 4, and TypeScript. (Note: Live preview URL `https://preview.colorlib.com/theme/calendar-04/` returned 404; research based on official ColorLib screenshot `https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-04.jpg`).
+Cadence is a music artist landing page in the free-react-templates monorepo.
+It is an original React recreation of the ColorLib "Musica" free template
+(source: https://colorlib.com/wp/template/musica/), built under a DIFFERENT
+name (**Cadence**), with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
+TypeScript.
+
+**Preview URL:** https://preview.colorlib.com/theme/musica/
+**Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/musica-free-template.jpg
 
 ## Requirements
 
-### Requirement: Calendar renders month grid and header
+### Requirement: Navbar with navigation and mobile menu
 
-Users SHALL see a clean monthly calendar view featuring a header with month and year navigation, weekday headers, and a responsive date grid.
+The template SHALL render a sticky navbar with brand name "Cadence", navigation links (Home, About, Shows, Album, Artists, Contact), social icons on desktop, and a hamburger toggle for mobile.
 
-#### Scenario: Page loads with calendar view
+#### Scenario: Renders brand and navigation links
 
-- **WHEN** the page loads
-- **THEN** I see the current month and year in the header
-- **AND** I see weekday headers (Sun–Sat)
-- **AND** I see the date cells for the month
+- **WHEN** the Cadence app is rendered
+- **THEN** the navbar displays "Cadence" as brand text
+- **AND** navigation links include Home, About, Shows, Album, Artists, Contact
 
-### Requirement: Month navigation via arrows
+#### Scenario: Mobile menu toggle
 
-Users SHALL be able to navigate forward and backward between months using left and right chevron buttons.
+- **WHEN** the user clicks the mobile menu toggle button
+- **THEN** the mobile navigation menu becomes visible
+- **WHEN** the user clicks the close button
+- **THEN** the mobile navigation menu becomes hidden
 
-#### Scenario: Navigate to next month
+#### Scenario: Mobile menu closes on link click
 
-- **GIVEN** the calendar shows August 2026
-- **WHEN** I click the next month button
-- **THEN** the calendar updates to show September 2026
+- **WHEN** the mobile navigation menu is open
+- **AND** the user clicks a navigation link
+- **THEN** the mobile navigation menu closes
 
-#### Scenario: Navigate to previous month
+### Requirement: Hero section with background imagery
 
-- **GIVEN** the calendar shows August 2026
-- **WHEN** I click the previous month button
-- **THEN** the calendar updates to show July 2026
+The template SHALL render a full-viewport hero section with a background image, dark purple overlay, gradient bar, watermark text, heading, subtitle, and scroll indicator.
 
-### Requirement: Today's date is highlighted
+#### Scenario: Displays hero content
 
-Today's date cell SHALL feature a distinctive primary brand color highlight.
+- **WHEN** the Cadence app is rendered
+- **THEN** the hero heading shows "Cadence Cadence"
+- **AND** the subtitle shows "Music Theme"
+- **AND** a scroll-down indicator is present
 
-#### Scenario: Today highlight
+### Requirement: Artist Bio section
 
-- **GIVEN** the page loads on today's date
-- **WHEN** I view the calendar grid
-- **THEN** today's date cell has a highlighted background and accessible label
+The template SHALL render a parallax artist bio section with dark overlay, heading, artist image, bio text, and signature.
 
-### Requirement: Event indicators and list view
+#### Scenario: Displays artist information
 
-The calendar SHALL display event badges on specific days and support selecting a date to view scheduled events.
+- **WHEN** the Cadence app is rendered
+- **THEN** the section heading shows "Artist Bio"
+- **AND** the artist image is displayed
+- **AND** bio paragraphs are shown
 
-#### Scenario: Select date with events
+### Requirement: Upcoming Shows section
 
-- **GIVEN** a date has scheduled events
-- **WHEN** I click on that date
-- **THEN** the event details panel updates to show the events for that day
+The template SHALL render a list of upcoming show events with date, image, event name, city, venue, time, and a "Buy Tickets" CTA button.
 
-### Requirement: Footer links to Component Dock
+#### Scenario: Displays all events
 
-The page footer SHALL contain a link to https://www.componentdock.com/ branded as "Component Dock".
+- **WHEN** the Cadence app is rendered
+- **THEN** 4 upcoming shows are displayed
+- **AND** each show has a "Buy Tickets" button
+- **AND** show dates and locations are visible
 
-#### Scenario: Footer link
+### Requirement: Music Player section
 
-- **GIVEN** the page loads
-- **WHEN** I scroll to the footer
-- **THEN** I see "More templates at Component Dock" linking to https://www.componentdock.com/
+The template SHALL render a grid of track cards with album art, play button overlay, track title, and artist name.
 
-## Design Tokens
+#### Scenario: Displays track cards
 
-| Token          | Value               |
-| -------------- | ------------------- |
-| Font family    | Inter / System Sans |
-| Primary accent | #4f46e5 (Indigo)    |
-| Neutral dark   | #1f2937 (Gray 800)  |
-| Neutral light  | #f9fafb (Gray 50)   |
-| Border color   | #e5e7eb (Gray 200)  |
-| Header height  | 60px                |
-| Calendar max-w | 768px               |
+- **WHEN** the Cadence app is rendered
+- **THEN** 4 track cards are displayed
+- **AND** each card has a play button with an accessible label
+
+### Requirement: Featured Album section
+
+The template SHALL render a featured album with cover image, song playlist, "Buy on iTunes" CTA, and a now-playing progress bar.
+
+#### Scenario: Displays album and playlist
+
+- **WHEN** the Cadence app is rendered
+- **THEN** the album title "Love is all Around" is shown
+- **AND** the playlist contains multiple songs
+- **AND** a "Buy on iTunes" link is present
+- **AND** a now-playing bar is shown
+
+### Requirement: Music/Artists Search panels
+
+The template SHALL render two side-by-side panels with background images and dark overlays for music and artist search.
+
+#### Scenario: Displays search panels
+
+- **WHEN** the Cadence app is rendered
+- **THEN** a "Music" heading is displayed
+- **AND** an "Artists" heading is displayed
+- **AND** both panels have background images
+
+### Requirement: Footer with Component Dock link
+
+The template SHALL render a multi-column footer with brand, link columns, newsletter subscribe form, and Component Dock attribution.
+
+#### Scenario: Footer content
+
+- **WHEN** the Cadence app is rendered
+- **THEN** the footer shows "Cadence" brand
+- **AND** footer sections include About, Links, Social, Subscribe
+- **AND** a newsletter subscribe form is present
+- **AND** Component Dock links point to https://www.componentdock.com/
+- **AND** the copyright shows the current year
+
+### Requirement: Design tokens and styling
+
+The template SHALL use the Raleway font family, hot pink to deep purple gradient (#cc1573 to #5722a9), dark navy background (#150430), and appropriate text colors.
+
+#### Scenario: Applies correct design tokens
+
+- **WHEN** the Cadence app is rendered
+- **THEN** the body font is Raleway
+- **AND** gradient buttons use the pink-to-purple gradient
+- **AND** dark sections use the deep navy background

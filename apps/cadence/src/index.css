@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Cadence brand palette — hot pink to deep purple gradient theme */
+  --color-cadence-pink: #cc1573;
+  --color-cadence-purple: #5722a9;
+  --color-cadence-dark: #150430;
+  --color-cadence-overlay: rgba(21, 4, 48, 0.89);
+  --color-cadence-overlay-light: rgba(21, 4, 48, 0.5);
+  --color-cadence-text: #262626;
+  --color-cadence-muted: #6a6a6a;
+  --color-cadence-accent: #c5afd9;
+
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Allura', cursive;
+}
