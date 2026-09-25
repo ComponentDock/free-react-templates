@@ -2277,7 +2277,7 @@
 - [x] **Poca** — [colorlib](https://colorlib.com/wp/template/poca/) · [earworm](https://earworm.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/poca-free-template.jpg)
 - [x] **Podcast** — [colorlib](https://colorlib.com/wp/template/podcast/) · [wavecast](https://wavecast.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/podcast-free-template.jpg)
 - [x] **Radios** — [colorlib](https://colorlib.com/wp/template/radios/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/radios-free-template.jpg) · [wavelength](https://wavelength.free.componentdock.com)
-- [~] **Razo** — [colorlib](https://colorlib.com/wp/template/razo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/razo-free-template.jpg)
+- [x] **Razo** — [colorlib](https://colorlib.com/wp/template/razo/) · [onair](https://onair.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/razo-free-template.jpg)
 - [x] **Solmusic** — [colorlib](https://colorlib.com/wp/template/solmusic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solmusic-free-template.jpg) · [sonata](https://sonata.free.componentdock.com)
 
 ## One Page (91)
