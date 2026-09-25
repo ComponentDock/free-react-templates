@@ -1,129 +1,135 @@
-# Template: Onair (Radio Station)
+# OnAir — Radio & Music Template
+
+Recreation of ColorLib "Razo" (https://colorlib.com/wp/template/razo/)
 
 ## Purpose
 
-Recreation of the ColorLib "Eighty8" radio station template as a React 19 + Vite
-+ Tailwind CSS 4 + TypeScript single-page app.
+OnAir is a free React website template that recreates the ColorLib Razo radio/music
+template as a React 19 + Vite + Tailwind CSS 4 + TypeScript application. It provides
+a radio station website with hero, blog, music charts, video, app download, schedule,
+and news sections.
 
-- **Source slug:** `eighty8`
-- **Source URL:** https://colorlib.com/wp/template/eighty8/
-- **Preview URL:** https://preview.colorlib.com/theme/eighty8/
-- **New app name:** `onair` (apps/onair, @free-react-templates/onair)
-- **Package:** `@free-react-templates/onair`
-- **Deploy target:** https://onair.free.componentdock.com
+## Design Tokens
 
-## Design Tokens (from CSS analysis of preview)
+Extracted from the live preview stylesheet:
 
-| Token             | Value         | Notes                                         |
-| ----------------- | ------------- | --------------------------------------------- |
-| `--brand`         | `#ffe400`     | Bright yellow — accent, buttons, highlights   |
-| `--bg-dark`       | `#191919`     | Primary section backgrounds                   |
-| `--bg-darker`     | `#080808`     | Hero/overlay background                       |
-| `--bg-card`       | `#212121`     | Card/item backgrounds on dark sections         |
-| `--text-light`    | `#ffffff`     | Primary text on dark backgrounds              |
-| `--text-dark`     | `#1b1b1b`     | Text on light/yellow backgrounds              |
-| `--text-muted`    | `#7e7e7e`     | Secondary/meta text                           |
-| `--font-family`   | `Roboto`      | Google Fonts — 400, 500, 700 weights          |
-| `--btn-radius`    | `5px`         | `.site-btn` border-radius                     |
-| `--btn-radius-lg` | `7px`         | Tab-style buttons                             |
-| `--arrow-radius`  | `50%`         | Slider navigation arrows (circular)           |
+- **Primary**: #dc2878 (hot pink — CTAs, accents, price buttons)
+- **Heading**: #191919 (dark gray)
+- **Body text**: #6e6e6e
+- **Gray background**: #e7f2fd
+- **White**: #ffffff
+- **Dark/overlay**: #000000
+- **Border**: #e5e5e5
+- **Secondary**: #a6a6a6
+- **Fonts**: Open Sans (body) + Oswald (headings) via Google Fonts
 
-**Button variants:**
-- Default (`.site-btn`): yellow bg (#ffe400), dark text, border-radius 5px, font-weight 700, 18px
-- Dark (`.sb-dark`): black bg, white text
-- Light (`.sb-light`): white bg, dark text
-- Line (`.sb-line`): transparent bg, 2px solid yellow border, yellow text
+## Requirements
 
-## Section Structure (from live preview DOM)
+### Requirement: Navbar renders with brand and navigation links
 
-1. **Navbar** — Logo + nav links (Home, About, Charts, DJs, Blog, Contact) + social icons (Twitter, SoundCloud, Instagram, Google+, Facebook, YouTube). Dark background, sticky.
-2. **Hero Section** — Full-width image slider/carousel with city names (Berlin, Bucharest, London) as locations, overlay text showing "UP NEXT" + DJ name/track. Yellow circular navigation arrows on sides. Dark background (#080808).
-3. **Promotion Section** — Three equal promo cards side by side: "Our DJs", "Live Streams", "Events". Each with an icon, heading, short description, and "Learn More" link. Yellow accent on hover/active states.
-4. **Latest Podcast Section** — Single featured podcast with heading "Latest Podcast", podcast title (e.g. "Hernan Cataneo - Residence #376"), and "LISTEN LIVE" yellow button. Dark background (#191919).
-5. **Charts Section** — Music charts list: numbered items (1-5) with song name and artist. Tab-style filter buttons at top. Dark background.
-6. **Footer Top** — Four-column grid: Locations (list of cities), Top Shows (numbered list with show names), Blog (2 article cards with title + "Continue Reading"), Contact (address, phone, email).
-7. **Footer Bottom** — Copyright bar with "Made with ❤" and attribution.
+The template SHALL display a sticky navbar with the OnAir brand logo and navigation
+links for Home, Shows, Charts, Podcasts, Events, and Blog.
 
-## Gherkin Requirements
+#### Scenario: Navbar displays brand and all nav links
 
-### Feature: Navbar
+- **WHEN** the page loads
+- **THEN** the navbar shows the "OnAir" brand link
+- **AND** navigation links include Home, Shows, Charts, Podcasts, Events, Blog
 
-  Scenario: Logo and navigation links are visible
-    Given the user loads the page
-    Then the logo is displayed in the navbar
-    And navigation links "Home", "About", "Charts", "DJs", "Blog", "Contact" are visible
+#### Scenario: Mobile menu toggles
 
-  Scenario: Social media icons are present
-    Given the user loads the page
-    Then social media icons (Twitter, SoundCloud, Instagram, Facebook, YouTube) are displayed in the navbar
+- **WHEN** the user clicks the mobile menu toggle button
+- **THEN** the mobile navigation menu becomes visible
+- **AND** clicking the toggle again hides the menu
 
-### Feature: Hero Section
+### Requirement: Hero section displays with CTA
 
-  Scenario: Hero slider displays city and track info
-    Given the user loads the page
-    Then the hero section shows a full-width background image
-    And a city name is displayed (e.g. "Berlin")
-    And "UP NEXT" label with a DJ/track name is shown
+The template SHALL display a full-width hero section with a background image,
+main headline, subtitle, and a "Book Now" call-to-action button.
 
-  Scenario: Slider navigation arrows work
-    Given the hero slider is visible
-    When the user clicks the right arrow
-    Then the next slide is displayed
-    When the user clicks the left arrow
-    Then the previous slide is displayed
+#### Scenario: Hero renders heading and CTA
 
-### Feature: Promotion Section
+- **WHEN** the page loads
+- **THEN** the heading "Designed For Music, Engineered to Last" is visible
+- **AND** a "Book Now" button links to the charts section
 
-  Scenario: Three promo cards are displayed
-    Given the user loads the page
-    Then three promo cards are shown: "Our DJs", "Live Streams", "Events"
-    And each card has an icon, heading, and description text
+### Requirement: Blog section shows featured and trending posts
 
-### Feature: Latest Podcast
+The template SHALL display a two-column blog section with a featured post,
+small posts, and a trending sidebar.
 
-  Scenario: Featured podcast is shown
-    Given the user loads the page
-    Then the "Latest Podcast" heading is visible
-    And a podcast title is displayed
-    And a "LISTEN LIVE" button is visible with yellow styling
+#### Scenario: Blog section renders posts
 
-### Feature: Charts Section
+- **WHEN** the page loads
+- **THEN** the "Blog New" heading is visible
+- **AND** the featured post title is displayed
+- **AND** small blog post titles are displayed
+- **AND** trending post titles are displayed
 
-  Scenario: Charts list displays numbered items
-    Given the user loads the page
-    Then the "Charts" heading is visible
-    And numbered chart items (1-5) are displayed with song name and artist
+### Requirement: Music charts section shows track listings
 
-### Feature: Footer
+The template SHALL display a dark overlay section with music track listings
+including thumbnails, titles, artists, and price buttons.
 
-  Scenario: Footer top has four columns
-    Given the user scrolls to the footer
-    Then "Locations", "Top Shows", "Blog", "Contact" columns are visible
-    And each column contains the relevant content items
+#### Scenario: Music charts renders tracks
 
-  Scenario: Footer bottom shows copyright
-    Given the user scrolls to the footer bottom
-    Then a copyright notice is displayed with "Component Dock" link
+- **WHEN** the page loads
+- **THEN** the "Music Chart" heading is visible
+- **AND** track titles and price buttons are displayed
 
-### Feature: Responsive Design
+### Requirement: Trending video section renders
 
-  Scenario: Mobile view stacks sections vertically
-    Given the user views the page on a mobile viewport
-    Then all sections stack vertically
-    And the navbar collapses to a hamburger menu
+The template SHALL display a video section with a featured video area
+and a grid of video thumbnails.
 
-## Verification Checklist
+#### Scenario: Trending video renders posts
 
-- [ ] All 7 sections rendered in correct order
-- [ ] Design tokens match: brand yellow #ffe400, dark bg #191919, Roboto font
-- [ ] Hero slider cycles through slides with city + track info
-- [ ] Navigation arrows on hero slider are circular with yellow border
-- [ ] Promotion cards display icons + headings + descriptions
-- [ ] Podcast section shows featured episode with "LISTEN LIVE" button
-- [ ] Charts section shows numbered list of tracks
-- [ ] Footer has four-column layout (Locations, Top Shows, Blog, Contact)
-- [ ] Footer bottom links to Component Dock
-- [ ] No ColorLib references in app code (only in spec/TEMPLATES.md)
-- [ ] Responsive: mobile hamburger menu, stacked columns
-- [ ] All images use picsum.photos placeholders
-- [ ] 100% test coverage (lines, functions, branches, statements)
+- **WHEN** the page loads
+- **THEN** the "Trending Video" heading is visible
+- **AND** video post titles are displayed
+
+### Requirement: App download section renders
+
+The template SHALL display a dark overlay section with app download
+information and store buttons.
+
+#### Scenario: App download renders content
+
+- **WHEN** the page loads
+- **THEN** the "Radio Music" heading is visible
+- **AND** download description text is present
+- **AND** Google Play and App Store buttons are shown
+
+### Requirement: Weekly schedule table renders
+
+The template SHALL display a responsive schedule table with day columns
+and show listings.
+
+#### Scenario: Weekly schedule renders table
+
+- **WHEN** the page loads
+- **THEN** the "Weekly Schedule" heading is visible
+- **AND** a table with day column headers is shown
+- **AND** show names and times are displayed
+
+### Requirement: Latest news section renders
+
+The template SHALL display a grid of news posts with background images
+and overlay text.
+
+#### Scenario: Latest news renders posts
+
+- **WHEN** the page loads
+- **THEN** the "Latest News" heading is visible
+- **AND** news post titles are displayed
+
+### Requirement: Footer contains Component Dock link
+
+The template SHALL display a footer with brand, contact info, social feeds,
+and a copyright bar linking to Component Dock.
+
+#### Scenario: Footer credits Component Dock
+
+- **WHEN** the page loads
+- **THEN** the footer shows a "Component Dock" link
+- **AND** the link points to https://www.componentdock.com/

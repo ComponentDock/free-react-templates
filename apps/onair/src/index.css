@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@theme {
+  /* OnAir brand palette — design tokens extracted from the reference
+     template's live preview stylesheet (style.css):
+     - hot pink #dc2878 (primary accent: CTAs, price buttons, hover states)
+     - heading dark #191919 (headings, links)
+     - body text #6e6e6e (paragraphs, secondary text)
+     - light gray bg #e7f2fd (section alternates)
+     - white #ffffff
+     - dark/overlay #000000 (image overlays, dark sections)
+     - border #e5e5e5
+     - secondary #a6a6a6 */
+  --color-brand: #dc2878;
+  --color-brand-dark: #c0206a;
+  --color-heading: #191919;
+  --color-body: #6e6e6e;
+  --color-gray-bg: #e7f2fd;
+  --color-overlay: #000000;
+  --color-border: #e5e5e5;
+  --color-secondary: #a6a6a6;
+
+  /* Open Sans (body) + Oswald (headings) via Google Fonts link in index.html */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #6e6e6e;
+    font-size: 14px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    color: #191919;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+}
