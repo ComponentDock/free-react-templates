@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #df0e62;
+  --color-brand-hover: #c40c56;
+  --color-dark-bg: #1a1a1a;
+  --color-check-green: #8bc34a;
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Quicksand', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+    background-color: #000;
+    color: gray;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-heading);
+  }
+}

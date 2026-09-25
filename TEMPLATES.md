@@ -2315,7 +2315,7 @@
 - [x] **Doglife** — [colorlib](https://colorlib.com/wp/template/doglife/) · [doglife](https://doglife.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/doglife-free-template.jpg)
 - [x] **Eatwell** — [colorlib](https://colorlib.com/wp/template/eatwell/) · [tastory](https://tastory.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eatwell-free-template.jpg)
 - [x] **Educrown** — [colorlib](https://colorlib.com/wp/template/educrown/) · [laurel](https://laurel.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/educrown-free-template.jpeg)
-- [ ] **Elit** — [colorlib](https://colorlib.com/wp/template/elit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elit-free-template.jpg)
+- [~] **Elit** — [colorlib](https://colorlib.com/wp/template/elit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elit-free-template.jpg)
 - [ ] **Equip Ui Kit** — [colorlib](https://colorlib.com/wp/template/equip-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/equip-free-template.jpg)
 - [x] **Eventalk** — [colorlib](https://colorlib.com/wp/template/eventalk/) · [festpoint](https://festpoint.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eventalk-free-template.jpg)
 - [x] **Expert** — [colorlib](https://colorlib.com/wp/template/expert/) · [adept](https://free-react-templates-adept.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/expert-free-template.jpg)
