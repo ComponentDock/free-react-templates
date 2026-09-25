@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* BoldCraft brand palette */
+  --color-brand: #ff8553;
+  --color-brand-hover: #ec703f;
+  --color-brand-light: #ffe7de;
+  --color-brand-overlay: rgba(255, 133, 83, 0.3);
+  --color-brand-social: rgba(255, 133, 83, 0.15);
+  --color-accent-green: #31ff7a;
+  --color-white: #ffffff;
+  --color-testimonial-bg: #fffbf9;
+  --color-text-primary: #000000;
+  --color-text-secondary: #635c5c;
+  --color-text-muted: #7a8290;
+  --color-text-founder: #5e5e5e;
+  --color-bg-light: #f8f8f8;
+  --color-footer-bg: #000000;
+
+  /* Fonts */
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Roboto Condensed', ui-sans-serif, system-ui, sans-serif;
+
+  /* Radii */
+  --radius-gallery: 10px;
+  --radius-testimonial: 12px;
+  --radius-social: 5px;
+  --radius-progress: 4px;
+}
