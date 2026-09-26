@@ -2405,7 +2405,7 @@
 - [x] **Louie** — [colorlib](https://colorlib.com/wp/template/louie/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/louie-free-template.jpg) · [photosnap](https://photosnap.free.componentdock.com)
 - [x] **Maze** — [colorlib](https://colorlib.com/wp/template/maze/) · [aurora](https://aurora.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/maze-bright-free-personal-website-template.jpg)
 - [x] **Me** — [colorlib](https://colorlib.com/wp/template/me/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/me-free-template.jpg) · [vitae](https://vitae.free.componentdock.com)
-- [ ] **Meetme** — [colorlib](https://colorlib.com/wp/template/meetme/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meetme-free-template.jpg)
+- [~] **Meetme** — [colorlib](https://colorlib.com/wp/template/meetme/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meetme-free-template.jpg)
 - [ ] **Melan** — [colorlib](https://colorlib.com/wp/template/melan/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/melan-free-template.jpg)
 - [x] **Mellisa** — [colorlib](https://colorlib.com/wp/template/mellisa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mellisa-colorlib-template.jpg) · [folio](https://folio.free.componentdock.com)
 - [ ] **Mona** — [colorlib](https://colorlib.com/wp/template/mona/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mona-free-template.jpg)
