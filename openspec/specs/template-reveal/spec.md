@@ -1,141 +1,196 @@
-# Template: Reveal (Coming Soon)
+# Template: Reveal
 
 ## Purpose
 
-Recreation of ColorLib "Coming Soon V19" (`04-comming-soon`).
+Recreation of ColorLib "Unfold" — modern one-page portfolio template.
 
-- **Source:** https://colorlib.com/wp/template/04-comming-soon/
-- **Preview (template HTML):** https://preview.colorlib.com/theme/04-comming-soon/ (404 — unreachable)
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-19.jpg
+- **Source:** https://colorlib.com/wp/template/unfold/
+- **Preview:** https://preview.colorlib.com/theme/unfold/
+- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/unfold-free-template.jpeg
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
-- **Category:** Coming Soon / Under Construction
+- **Category:** Personal / Portfolio
 
-### Description from Colorlib
+### Description
 
-> "The best free coming soon website template with a dark design and a split-screen structure that you can quickly improve."
+> "Unfold is a modern, responsive one-page portfolio template perfect for designers, developers, and creative professionals to showcase their work."
+
+Dark-themed single-page portfolio with parallax hero, masonry-style project grid, client logos, about section, services, skills counters, testimonials carousel, blog/journal grid, and contact form.
+
+## Requirements
+
+### Requirement: Navbar displays brand and navigation
+
+The navbar SHALL display "Reveal." as the centered logo with navigation links split on both sides. On mobile, a hamburger menu toggle SHALL be visible.
+
+#### Scenario: Desktop navigation layout
+
+- **GIVEN** a user visits Reveal on a desktop device
+- **WHEN** the page loads
+- **THEN** the navbar displays "Reveal." as the centered logo
+- **AND** navigation links are split on both sides of the logo
+
+#### Scenario: Mobile menu toggle
+
+- **GIVEN** a user visits Reveal on a mobile device
+- **WHEN** the user taps the hamburger menu icon
+- **THEN** the mobile menu expands showing all navigation links
+
+### Requirement: Hero section with background image
+
+The hero SHALL display a full-width background image with the heading "Reveal" and a subtitle describing the designer's role and location.
+
+#### Scenario: Hero renders heading and subtitle
+
+- **GIVEN** a user visits Reveal
+- **WHEN** the hero section is visible
+- **THEN** the heading "Reveal" is centered on the hero
+- **AND** a subtitle describes the designer's role and location
+
+### Requirement: Portfolio grid with 9 items
+
+The portfolio section SHALL display 9 project cards in a 3-column grid with hover overlay showing title, tags, and link icon.
+
+#### Scenario: Portfolio items render
+
+- **GIVEN** a user scrolls to the portfolio section
+- **WHEN** the portfolio section loads
+- **THEN** 9 portfolio items are shown in a 3-column grid
+- **AND** each item shows a project image, title, and tags
+
+### Requirement: Client logos row
+
+The client logos section SHALL display 4 brand logo placeholders in a horizontal row.
+
+#### Scenario: Client logos render
+
+- **GIVEN** a user scrolls to the client logos section
+- **WHEN** the section loads
+- **THEN** 4 client logo placeholders are displayed in a row
+
+### Requirement: About me section
+
+The about section SHALL display a two-column layout with a portrait image on the left and descriptive text on the right, including a "Download my CV" pill button.
+
+#### Scenario: About section content
+
+- **GIVEN** a user scrolls to the about section
+- **WHEN** the section loads
+- **THEN** a portrait image appears on the left
+- **AND** descriptive text appears on the right
+- **AND** a "Download my CV" pill button is shown
+
+### Requirement: Services section with 6 cards
+
+The services section SHALL display 6 service cards in a 3x2 grid, each with an icon, title, and description.
+
+#### Scenario: Services cards render
+
+- **GIVEN** a user scrolls to the services section
+- **WHEN** the section loads
+- **THEN** 6 service cards are shown in a 3x2 grid
+- **AND** each card has an icon, title, and description
+
+### Requirement: Skills section with counters
+
+The skills section SHALL display 4 skill counters on a dark background: WordPress 90%, HTML/CSS 99%, JavaScript 95%, Design 100%.
+
+#### Scenario: Skill counters render
+
+- **GIVEN** a user scrolls to the skills section
+- **WHEN** the section loads
+- **THEN** 4 skill counters are shown with their percentages
+
+### Requirement: Testimonials section
+
+The testimonials section SHALL display 3 testimonial cards, each with a quote, author photo, name, and position.
+
+#### Scenario: Testimonials render
+
+- **GIVEN** a user scrolls to the testimonials section
+- **WHEN** the section loads
+- **THEN** 3 testimonial cards are displayed
+- **AND** each card shows a quote, author photo, name, and position
+
+### Requirement: Blog journal section
+
+The journal section SHALL display 5 blog posts in an asymmetric grid with image, title, author, and read time.
+
+#### Scenario: Blog posts render
+
+- **GIVEN** a user scrolls to the journal section
+- **WHEN** the section loads
+- **THEN** 5 blog posts are shown in an asymmetric grid
+- **AND** each post shows an image, title, author, and read time
+
+### Requirement: Contact section with form
+
+The contact section SHALL display a contact form with name, email, and message fields, a "Send Message" button, and contact info on the right.
+
+#### Scenario: Contact form renders
+
+- **GIVEN** a user scrolls to the contact section
+- **WHEN** the section loads
+- **THEN** a contact form with name, email, and message fields is shown
+- **AND** a "Send Message" button is present
+- **AND** contact info appears on the right
+
+### Requirement: Footer with Component Dock link
+
+The footer SHALL display the "Reveal." logo, social media links, and a "More templates at Component Dock" link pointing to https://www.componentdock.com/.
+
+#### Scenario: Footer renders with required elements
+
+- **GIVEN** a user scrolls to the footer
+- **WHEN** the footer loads
+- **THEN** the footer shows "Reveal." logo
+- **AND** social media links are present
+- **AND** a "More templates at Component Dock" link points to https://www.componentdock.com/
 
 ## Design tokens
 
-Extracted from the preview screenshot (preview URL returned 404; tokens inferred from the visual screenshot and the ColorLib listing page description).
+Extracted from live preview CSS (`css/style.css`).
 
-| Token | Value | Notes |
-|---|---|---|
-| Body font | `'Poppins', sans-serif` | clean sans-serif, weight 400 for body |
-| Heading font | `'Poppins', sans-serif` | bold (700), used for h1 |
-| Background | `#000000` | solid black — full right panel and overall page |
-| Text color | `#ffffff` | white — headings and body text |
-| Body text color | `#b3b3b3` | light gray for description paragraphs |
-| Brand / accent | `#ff6b81` | warm pink/coral — CTA button fill |
-| Hover accent | `#e55a6e` | slightly darker pink for hover state |
-| Button bg | `#ff6b81` | warm pink/coral |
-| Button text | `#ffffff` | white, uppercase |
-| Button border | none | flat fill style |
-| Button radius | `4px` | slight rounding, not pill |
-| Button padding | `12px 28px` | comfortable tap target |
-| Button hover | `#e55a6e` | darker pink |
-| Input bg | `#ffffff` | white input field |
-| Input text | `#999999` | gray placeholder text |
-| Input border | `none` | clean flat look |
-| Input radius | `4px` | matches button |
-| h1 size | `3rem` (48px) | bold, white, centered in right panel |
-| Logo font | `'Poppins', sans-serif` | white text, weight 600 |
-| Layout | Split-screen: ~55% image / ~45% content | `100vh`, flex row |
-| Image | Full-height B&W hero photo | `object-fit: cover` |
-| Social icons | Small inline icons (Facebook, Twitter, Google+, Instagram, Pinterest) | white, footer row |
-| Social label | "Stay in touch :" | white text, left of icons |
+| Token                  | Value                          | Notes                                      |
+| ---------------------- | ------------------------------ | ------------------------------------------ |
+| Body font              | `'Raleway', sans-serif`        | weight 400 body, 500-700 headings          |
+| Background (dark)      | `#000000`                      | hero, nav, footer                          |
+| Background (dark alt)  | `#191919`                      | skills section                             |
+| Background (light)     | `#ffffff`                      | portfolio, about, services, journal        |
+| Background (light alt) | `#f9f9f9`                      | alternating sections                       |
+| Text (on dark)         | `#ffffff`                      | headings, nav links                        |
+| Text (on light)        | `#000000`                      | body text                                  |
+| Text (muted)           | `#666666`                      | descriptions                               |
+| Brand accent           | `#D63447`                      | red — links, hover states                  |
+| Button shape           | `border-radius: 30px`          | pill-shaped outline buttons                |
+| Button style           | `btn-outline-pill`             | white border on dark, dark border on light |
+| Section divider        | decorative line under headings | centered, small width                      |
 
-## Gherkin requirements
+## Sections (in order)
 
-### Background
-Given a user visits Reveal on any device
-Then the page loads a single full-screen coming-soon view
-And no navigation, header, or multi-section layout exists
+1. **Navbar** — centered logo "Reveal." with nav links split on both sides (Home, Portfolio, About, Services | Skills, Testimonials, Journal, Contact). Mobile: logo + hamburger menu.
+2. **Hero** — full-width parallax background image, large "Reveal" heading, subtitle "I'm a Product Designer Based In San Francisco", scroll indicator.
+3. **Portfolio** — "Portfolio" heading, 3-column grid of 9 project cards with hover overlay (title + tags + link icon).
+4. **Client Logos** — horizontal row of 4 brand logo placeholders.
+5. **About Me** — centered heading with divider, two-column layout: left = portrait image, right = heading "We can make it together", descriptive text, "Download my CV" pill button.
+6. **My Services** — centered heading with divider, 3x2 grid of 6 service cards with icon + title + description.
+7. **My Skills** — dark background, centered heading with divider, 4-column counter display.
+8. **My Happy Clients** — centered heading with divider, testimonial cards with quote, author photo, name, position.
+9. **My Journal** — centered heading with divider, asymmetric blog grid: 1 large + 1 small top row, 3 small bottom row.
+10. **Get In Touch** — centered heading with divider, two-column: left = contact form, right = contact info.
+11. **Footer** — centered logo "Reveal.", social links, copyright + "More templates at Component Dock" link.
 
-### Scenario: Split-screen layout renders
-Given the page is loaded
-When the user views the viewport
-Then a split-screen layout is displayed at 100vh height
-And the left side (~55%) shows a full-height hero image
-And the right side (~45%) shows a dark/black content panel
+## Component map
 
-### Scenario: Hero image
-Given the page is loaded
-When the user looks at the left panel
-Then a full-height hero image is displayed
-And the image uses `object-fit: cover` to fill the panel
-And the image is a black-and-white style photograph
-
-### Scenario: Logo
-Given the page is loaded
-When the user looks at the top of the right panel
-Then a logo text is displayed in white
-And the logo is positioned at the top of the content area
-
-### Scenario: Heading
-Given the page is loaded
-When the user reads the right panel
-Then a heading "Under Construction" is displayed
-And the heading is in white, bold, approximately 3rem
-And the heading uses the Poppins font family
-
-### Scenario: Description text
-Given the page is loaded
-When the user reads below the heading
-Then a description paragraph is visible
-And the text says "Our website is currently undergoing scheduled maintenance. We Should be back shortly. Thank you for your patience."
-And the text color is light gray (#b3b3b3 or similar)
-
-### Scenario: Email notification form
-Given the page is loaded
-When the user locates the call-to-action area
-Then an email input field is displayed with placeholder "Enter your email"
-And a "NOTIFY US" button is displayed next to the input
-And the button background is warm pink (#ff6b81)
-And the button text is white and uppercase
-And on hover the button background darkens slightly
-
-### Scenario: Launch notification subtext
-Given the page is loaded
-When the user reads below the email form
-Then a subtext line is displayed
-And the text says "Sign up now to get early notification of our lauch date!"
-And the text color is light gray
-
-### Scenario: Social links footer
-Given the page is loaded
-When the user looks at the bottom of the right panel
-Then a "Stay in touch :" label is displayed
-And social media icons are shown: Facebook, Twitter, Google+, Instagram, Pinterest
-And the icons are white and small
-
-### Scenario: Responsive layout
-Given the page is loaded on a mobile device (≤767px)
-When the user views the content
-Then the split-screen becomes a stacked layout
-And the hero image appears above the content area
-And the content remains readable with appropriate padding
-
-### Scenario: Accessibility
-Given the page is loaded
-When a screen reader processes the page
-Then the heading is semantically an h1 element
-And the email input has an associated label
-And the CTA button is a clickable element
-And social links are rendered as anchor elements
-
-## Verification checklist
-
-- [ ] Split-screen layout: ~55% image / ~45% dark content panel
-- [ ] Full-height hero image with object-fit cover
-- [ ] "Under Construction" heading in Poppins, bold, white, ~3rem
-- [ ] Description paragraph in light gray
-- [ ] Email input with "Enter your email" placeholder (white bg)
-- [ ] "NOTIFY US" button in warm pink (#ff6b81), white uppercase text
-- [ ] Button hover: darker pink state
-- [ ] "Sign up now..." subtext below form
-- [ ] "Stay in touch :" label with 5 social icons (Facebook, Twitter, Google+, Instagram, Pinterest)
-- [ ] Responsive: stacked layout on mobile
-- [ ] No ColorLib references in app code
-- [ ] Footer links to componentdock.com
-- [ ] `public/CNAME` = `reveal.free.componentdock.com`
-- [ ] `homepage` = `https://reveal.free.componentdock.com`
+| Component    | File                              | Description                                                 |
+| ------------ | --------------------------------- | ----------------------------------------------------------- |
+| Navbar       | `src/components/Navbar.tsx`       | Centered logo + split nav + mobile toggle                   |
+| Hero         | `src/components/Hero.tsx`         | Parallax background + heading + subtitle + scroll indicator |
+| Portfolio    | `src/components/Portfolio.tsx`    | 3-col grid of portfolio items with hover overlay            |
+| ClientLogos  | `src/components/ClientLogos.tsx`  | Row of 4 brand logo placeholders                            |
+| About        | `src/components/About.tsx`        | Two-column about section                                    |
+| Services     | `src/components/Services.tsx`     | 3x2 grid of service cards                                   |
+| Skills       | `src/components/Skills.tsx`       | 4-column skill counters on dark bg                          |
+| Testimonials | `src/components/Testimonials.tsx` | Testimonial cards                                           |
+| Blog         | `src/components/Blog.tsx`         | Asymmetric blog post grid                                   |
+| Contact      | `src/components/Contact.tsx`      | Contact form + info                                         |
+| Footer       | `src/components/Footer.tsx`       | Logo + social + copyright + Component Dock                  |

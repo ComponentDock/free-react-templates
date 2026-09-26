@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-raleway: 'Raleway', sans-serif;
+  --color-brand: #d63447;
+  --color-dark: #000;
+  --color-dark-lighter: #191919;
+  --color-light-bg: #f9f9f9;
+  --color-body: #333;
+  --color-muted: #666;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-raleway);
+    color: var(--color-body);
+  }
+}
