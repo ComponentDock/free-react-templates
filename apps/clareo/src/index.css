@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Clareo brand palette — yellow/gold primary (#FFDD00) */
+  --color-brand-50: #fffde6;
+  --color-brand-100: #fff9b3;
+  --color-brand-200: #fff480;
+  --color-brand-300: #ffee4d;
+  --color-brand-400: #ffdd00;
+  --color-brand-500: #e6c500;
+  --color-brand-600: #b39a00;
+  --color-brand-700: #806e00;
+  --color-brand-800: #4d4200;
+  --color-brand-900: #1a1600;
+
+  --color-surface: #f5f5f5;
+  --color-surface-alt: #ffffff;
+
+  --font-sans: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Amatic SC', cursive;
+}
