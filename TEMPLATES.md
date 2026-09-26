@@ -2498,7 +2498,7 @@
 - [x] **Atelier** — [colorlib](https://colorlib.com/wp/template/atelier/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/atelier-template.jpg) · [forma](https://forma.free.componentdock.com)
 - [x] **Avo** — [colorlib](https://colorlib.com/wp/template/avo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/avo-free-templatel.jpg) · [minima](https://free-react-templates-minima.surge.sh)
 - [x] **Bato** — [colorlib](https://colorlib.com/wp/template/bato/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bato-free-template.jpg) · [focal](https://focal.free.componentdock.com)
-- [~] **Beckham** — [colorlib](https://colorlib.com/wp/template/beckham/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/beckham-free-template.jpg)
+- [x] **Beckham** — [colorlib](https://colorlib.com/wp/template/beckham/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/beckham-free-template.jpg) · [echo](https://echo.free.componentdock.com)
 - [x] **Blanca** — [colorlib](https://colorlib.com/wp/template/blanca/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/blanca-free-template.jpg) · [ivory](https://ivory.free.componentdock.com)
 - [x] **Breed2** — [colorlib](https://colorlib.com/wp/template/breed2/) · [brushmark](https://brushmark.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/breed2-free-template.jpg)
 - [ ] **Busicol** — [colorlib](https://colorlib.com/wp/template/busicol/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/busicol-free-template.jpg)
