@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Lumier design tokens — recreated from the source preview CSS.
+     Brand palette: #df0e62 magenta-pink, #000000 black, #1a1a1a dark sections.
+     Font families: Oswald (headings), Quicksand (body). */
+  --color-brand: #df0e62;
+  --color-ink: #ffffff;
+  --color-body: #808080;
+  --color-dark: #1a1a1a;
+  --color-night: #000000;
+  --color-muted: #737373;
+  --color-check: #8bc34a;
+  --font-heading: 'Oswald', arial, sans-serif;
+  --font-sans: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-body);
+    background-color: var(--color-night);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    color: var(--color-ink);
+    font-weight: 700;
+    line-height: 1.3;
+  }
+}
