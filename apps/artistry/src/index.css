@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Artistry brand palette — golden amber accent, dark moody backgrounds */
+  --color-brand: #db9a64;
+  --color-brand-dark: #c48a55;
+
+  /* Secondary accent — orange */
+  --color-accent: #fd8e5e;
+
+  /* Dark backgrounds */
+  --color-dark-navy: #001d38;
+  --color-dark-brown: #311e25;
+  --color-dark-alt: #3b2930;
+
+  /* Text colors */
+  --color-ink: #1f1f1f;
+  --color-muted: #4d4d4d;
+  --color-mist: #7e7e7e;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the golden amber. */
+  --color-primary-50: #fdf6ed;
+  --color-primary-100: #f9e6cc;
+  --color-primary-200: #f2cc99;
+  --color-primary-300: #e8ac66;
+  --color-primary-400: #e09840;
+  --color-primary-500: #db9a64;
+  --color-primary-600: #c48a55;
+  --color-primary-700: #a67245;
+  --color-primary-800: #885b38;
+  --color-primary-900: #6e4a2e;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
