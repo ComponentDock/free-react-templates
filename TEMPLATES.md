@@ -2452,7 +2452,7 @@
 - [x] **Glint** — [colorlib](https://colorlib.com/wp/template/glint/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/glint-simple-website-template.jpeg) · [glint](https://free-react-templates-glint.surge.sh)
 - [x] **Go Crepe** — [colorlib](https://colorlib.com/wp/template/go-crepe/) · [batter](https://batter.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/go-crepe-creative-digital-agency-website-template.jpg)
 - [x] **Halen** — [colorlib](https://colorlib.com/wp/template/halen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/halen-free-template.jpg) · [captura](https://free-react-templates-captura.surge.sh)
-- [ ] **Imahe** — [colorlib](https://colorlib.com/wp/template/imahe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/imahe-free-template-1.jpg)
+- [~] **Imahe** — [colorlib](https://colorlib.com/wp/template/imahe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/imahe-free-template-1.jpg)
 - [x] **Josanclick** — [colorlib](https://colorlib.com/wp/template/josanclick/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/josanclick-colorlib-template.jpg) · [shutterly](https://shutterly.free.componentdock.com)
 - [ ] **Louie** — [colorlib](https://colorlib.com/wp/template/louie/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/louie-free-template.jpg)
 - [ ] **Mostudio** — [colorlib](https://colorlib.com/wp/template/mostudio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mostudio-free-template.jpg)
