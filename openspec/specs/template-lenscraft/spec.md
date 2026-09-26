@@ -1,136 +1,132 @@
-# Template: Lenscraft (Photography)
+# Template: Lenscraft (Photography Portfolio)
 
 ## Purpose
 
-Recreation of the ColorLib "Proshoot" photography template as a single-page React 19 + Vite + Tailwind CSS 4 + TypeScript application.
+Recreation of ColorLib's "Alime" photography portfolio template.
 
-- **Source:** ColorLib Proshoot — https://colorlib.com/wp/template/proshoot/
-- **Preview:** https://preview.colorlib.com/theme/proshoot/
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/proshoot-free-template.jpg
-- **New name:** `lenscraft` (apps/lenscraft, package `@free-react-templates/lenscraft`)
-- **Category:** Photography portfolio / agency
+- **Source slug:** `alime`
+- **ColorLib URL:** https://colorlib.com/wp/template/alime/
+- **Preview URL:** https://preview.colorlib.com/theme/alime/
+- **Stack:** React 19 + Vite + Tailwind CSS 4 + TypeScript
+- **App folder:** `apps/lenscraft`
+- **Package:** `@free-react-templates/lenscraft`
 
-## Design tokens (extracted from preview CSS)
+## Design tokens (from preview stylesheet)
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Brand primary | `#f81c1c` | Red — used for accent text, hover fills, borders, preloader, close icons |
-| Heading color | `#242429` | Dark charcoal — h1–h6, nav links, primary-btn default text |
-| Body text | `#777777` | Medium gray — paragraphs, general text |
-| Heading font | `"Oswald", sans-serif` | Weights: 300, 500, 600 — used for h1–h6, nav, buttons, section titles |
-| Body font | `"Roboto", sans-serif` | Weights: 400, 700 — used for body text, pricing price |
-| Banner background | `#f7f7f7` | Light gray — home-banner-area, pricing list bg |
-| Footer background | `#04091e` | Very dark navy/black |
-| Header background | `#ffffff` | White, with box-shadow on scroll |
-| Button style | Transparent bg, `1px solid #f81c1c` border, `border-radius: 0px`, Oswald 12px 600 uppercase, hover fills red with white text |
-| Card border-radius | `5px` | Work/portfolio item cards |
-| Card overlay | `rgba(255,255,255,0.8)` | Semi-transparent white on portfolio hover |
-| Section spacing | `padding: 140px 0` (section-gap) | Reduced to 70px on mobile (<991px) |
-| Section gap top | `padding-top: 140px` | For stacked sections |
-| Banner h1 size | `120px` line-height `120px` | Oswald 600 uppercase, responsive down to 35px |
-| Pricing price font | Roboto 700, `60px` | Responsive down to 40px |
+| Token              | Value                                                   | Notes                                                         |
+| ------------------ | ------------------------------------------------------- | ------------------------------------------------------------- |
+| Brand color        | `#fc6060`                                               | Coral/red, used on buttons, hover states, accents             |
+| Background (light) | `#f7f7f7`                                               | Section backgrounds                                           |
+| Background (white) | `#ffffff`                                               | Default page background                                       |
+| Text primary       | `#252525`                                               | Dark charcoal                                                 |
+| Text secondary     | `#636363`                                               | Medium gray                                                   |
+| Border / subtle    | `#ebebeb`                                               | Dividers, subtle borders                                      |
+| Font family        | `"Poppins", sans-serif`                                 | Google Fonts, loaded via `<link>`                             |
+| Button shape       | `border-radius: 60px`                                   | Pill/rounded buttons                                          |
+| Button style       | `border: 2px solid #fc6060`, transparent bg, white text | Ghost/outline style; on hover fills `#fc6060` with white text |
+| Button size        | `min-width: 160px`, `height: 46px`, `padding: 0 30px`   | Medium height                                                 |
+| Icon font          | Font Awesome 5 (ti-close, ti-search, ti-facebook, etc.) | Use `lucide-react` instead                                    |
+| Overlay            | `background-color: rgba(0, 0, 0, 0.4)`                  | Dark overlay on hero images                                   |
 
-## Section structure (from live preview DOM)
+## Sections (in order)
 
-1. **Header (Navbar)** — Logo left, nav links right: Home, About, Projects, Pages (dropdown: Elements, Contact, Pricing, Project Details), Blog (dropdown: Blog Home, Blog Single). White background, fixed on scroll with shadow.
-2. **Home Banner Area** — Fullscreen hero, light gray `#f7f7f7` background. Left column (col-lg-4): large uppercase heading "Images matter" with red accent letters, description paragraph, "Explore More" primary-btn CTA. Right column (col-lg-7): banner image. Left-edge social icons strip (facebook, twitter, instagram).
-3. **About Area** — Two columns: left image (col-lg-5), right content (col-lg-5 offset-lg-1): heading "Lets Introduce About Myself", two paragraphs, "Read More" primary-btn CTA. Section gap padding.
-4. **Service Area** — Section title "Our Services" / "What We Offer". Three service cards (col-lg-4): Fashion Photography, Nature Photography, Event Coverage. Each has icon + h4 + description paragraph.
-5. **Work/Portfolio Area** — Section title "Our Portfolio" / "Check Our Work". Filterable masonry grid of work items. Large item (col-lg-8) + smaller items (col-lg-4). Each card: image, hover overlay with title + category label. Rounded corners `5px`.
-6. **Pricing Area** — Section title "Pricing Plan" / "Choose Your Package". Three pricing cards (col-lg-4): Wedding $46, Studio $76, Fashion $96. Each: plan title, criteria text, large price, feature list with check/close icons, "Book Now" primary-btn CTA. Feature list bg `#f7f7f7`.
-7. **Blog Area** — Section title "Our Blog" / "Latest Good Story". One large featured post (col-lg-6, full-width image) + two smaller posts (col-lg-6, side-by-side image + text). Each: image, title, meta (author + date), excerpt.
-8. **Footer** — Dark navy `#04091e` background. Three columns: About Us (text), Newsletter (email input + submit button), Follow Us (social icons: facebook, twitter, dribbble, linkedin). Copyright bar at bottom. Replace Colorlib attribution with "Component Dock" link.
+1. **Navbar** — Fixed top, logo left, nav links center (Home, Pages dropdown, Portfolio dropdown, Blog dropdown, Contact), search icon right. Mobile hamburger menu.
+2. **Hero / Welcome Carousel** — Full-width slider with background images + dark overlay. Each slide: headline ("Hello World"), subtitle paragraph (photography quote), "Get a Quote" CTA button (pill, outline coral), email link. Two slides in original.
+3. **Portfolio Gallery** — Filter menu (All, Nature, People, Animals, Travel) centered. 4-column grid of portfolio items with hover overlay showing a "+" icon. 8 portfolio items with category tags for filtering.
+4. **Instagram Feed** — "Follow Instagram" heading + "@lenscraft" handle. Row of 5-6 Instagram-style images with hover overlay showing Instagram icon.
+5. **Footer** — Copyright text left, logo center, social icons right (Facebook, Twitter, Instagram, LinkedIn).
 
-## Gherkin requirements
+## Gherkin Requirements
 
-### Feature: Lenscraft Photography Template
+### Scenario: Navbar renders with navigation links
 
-```gherkin
-Scenario: Navbar renders with logo and navigation links
-  Given the user loads the Lenscraft page
-  Then the navbar displays a logo on the left
-  And navigation links "Home", "About", "Projects" are visible
-  And "Pages" dropdown contains "Elements", "Contact", "Pricing", "Project Details"
-  And "Blog" dropdown contains "Blog Home", "Blog Single"
-  And the navbar becomes fixed with shadow on scroll
+```
+Given the user visits the Lenscraft homepage
+Then the navbar displays "Lenscraft" logo
+And navigation links: Home, Pages, Portfolio, Blog, Contact
+And a search icon is visible
+```
 
-Scenario: Hero banner displays with heading and CTA
-  Given the user is on the Lenscraft page
-  Then a large uppercase heading "Images matter" is visible
-  And the heading has red (#f81c1c) accent letters on select characters
-  And a description paragraph appears below the heading
-  And an "Explore More" primary button is displayed
-  And a banner image appears to the right of the text content
-  And social icons (Facebook, Twitter, Instagram) appear on the left edge
+### Scenario: Hero carousel displays welcome slides
 
-Scenario: About section displays image and text
-  Given the user scrolls to the About section
-  Then a section heading "Lets Introduce About Myself" is visible
-  And an about image appears on the left
-  And two descriptive paragraphs appear on the right
-  And a "Read More" primary button is displayed
+```
+Given the user visits the homepage
+Then a hero section displays a full-width background image with dark overlay
+And the heading "Hello World" is visible
+And a subtitle quote about photography is visible
+And a "Get a Quote" button is visible with pill shape and coral outline
+And an email contact link is visible
+```
 
-Scenario: Services section displays three service cards
-  Given the user scrolls to the Services section
-  Then a section title "Our Services" / "What We Offer" is visible
-  And three service cards are displayed in a row
-  And each card has an icon, heading, and description
-  And the services are: Fashion Photography, Nature Photography, Event Coverage
+### Scenario: Hero carousel auto-advances slides
 
-Scenario: Portfolio section displays filterable work grid
-  Given the user scrolls to the Portfolio section
-  Then a section title "Our Portfolio" / "Check Our Work" is visible
-  And work items are displayed in a masonry-like grid
-  And hovering a work item shows a white semi-transparent overlay with title and category
+```
+Given the hero carousel is visible
+When 5 seconds pass without interaction
+Then the carousel transitions to the next slide
+And the heading animation changes direction
+```
 
-Scenario: Pricing section displays three pricing cards
-  Given the user scrolls to the Pricing section
-  Then a section title "Pricing Plan" / "Choose Your Package" is visible
-  And three pricing cards are displayed: Wedding ($46), Studio ($76), Fashion ($96)
-  And each card shows a feature list with check and close icons
-  And each card has a "Book Now" primary button
+### Scenario: Portfolio gallery shows filterable items
 
-Scenario: Blog section displays posts
-  Given the user scrolls to the Blog section
-  Then a section title "Our Blog" / "Latest Good Story" is visible
-  And one large featured blog post with image, title, meta, and excerpt is shown
-  And two smaller blog posts with side-by-side image and text layout are shown
+```
+Given the user scrolls to the portfolio section
+Then a filter menu displays: All, Nature, People, Animals, Travel
+And 8 portfolio items display in a 4-column grid
+And each item shows a background image
+And hovering an item reveals a "+" icon overlay
+```
 
-Scenario: Footer displays with three columns
-  Given the user scrolls to the footer
-  Then the footer has a dark navy (#04091e) background
-  And an "About Us" column with text is visible
-  And a "Newsletter" column with email input and submit button is visible
-  And a "Follow Us" column with social icons (Facebook, Twitter, Dribbble, LinkedIn) is visible
-  And a copyright bar links to Component Dock (https://www.componentdock.com/)
+### Scenario: Portfolio filter narrows visible items
 
-Scenario: Primary button hover behavior
-  Given a primary button is rendered
-  When the user hovers over the button
-  Then the background fills with red (#f81c1c)
-  And the text color changes to white
+```
+Given the portfolio gallery is visible
+When the user clicks "Nature" filter
+Then only nature-tagged items remain visible
+And other items are hidden
+```
 
-Scenario: Responsive layout
-  Given the user views the page on a mobile device
-  Then the banner h1 scales down to 35px
-  And section padding reduces to 70px
-  And the grid layouts stack vertically
-  And the navbar menu collapses into a mobile toggle
+### Scenario: Instagram feed section renders
+
+```
+Given the user scrolls to the Instagram section
+Then a "Follow Instagram" heading is visible
+And a handle like "@lenscraft" is visible below
+And 5-6 Instagram-style images display in a row
+And hovering an image shows an Instagram icon overlay
+```
+
+### Scenario: Footer renders with social links
+
+```
+Given the user scrolls to the footer
+Then copyright text is visible
+And a logo is centered
+And social media icon links are visible (Facebook, Twitter, Instagram, LinkedIn)
+And a "Component Dock" attribution link is present
+```
+
+### Scenario: Mobile responsive layout
+
+```
+Given the user views on a mobile viewport (< 768px)
+Then the navbar collapses to a hamburger menu
+And the portfolio grid switches to 1-2 columns
+And the Instagram feed scrolls horizontally
 ```
 
 ## Verification checklist
 
-- [ ] Header renders with logo, nav links, and dropdown menus
-- [ ] Hero banner has correct heading, accent color, CTA, image, social icons
-- [ ] About section has two-column layout with image + text + CTA
-- [ ] Services section shows 3 cards with icons
-- [ ] Portfolio grid shows work items with hover overlay
-- [ ] Pricing section shows 3 cards with prices and feature lists
-- [ ] Blog section shows 1 large + 2 small post cards
-- [ ] Footer has 3 columns (About, Newsletter, Follow) + copyright with Component Dock link
-- [ ] Primary buttons have transparent bg, red border, hover fill effect
-- [ ] Color tokens: #f81c1c (brand), #242429 (headings), #777777 (body), #f7f7f7 (banner bg), #04091e (footer)
-- [ ] Fonts: Oswald for headings/buttons, Roboto for body
-- [ ] Responsive: stacks on mobile, heading scales, padding reduces
+- [ ] Brand color `#fc6060` applied to buttons and accents
+- [ ] Poppins font loaded from Google Fonts
+- [ ] Pill-shaped buttons with 60px border-radius
+- [ ] Hero section with dark overlay on background images
+- [ ] Portfolio grid with 4 columns on desktop
+- [ ] Filter menu with category buttons
+- [ ] Hover effects on portfolio items (overlay + icon)
+- [ ] Instagram feed row with hover overlay
+- [ ] Footer with Component Dock link
+- [ ] Responsive: hamburger nav, 1-2 col grid on mobile
+- [ ] Placeholder images via `picsum.photos/seed/lenscraft-<n>/...`
 - [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/
+- [ ] `npm run test:coverage` passes at 100%
