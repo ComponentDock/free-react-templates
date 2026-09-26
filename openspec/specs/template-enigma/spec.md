@@ -14,107 +14,122 @@ Recreation of ColorLib **Riddle** portfolio template.
 
 Extracted from the live preview CSS (`css/style.css`):
 
-| Token              | Value                          | Usage                                  |
-| ------------------ | ------------------------------ | -------------------------------------- |
-| Font family        | `'Josefin Sans', sans-serif`   | All text (Google Fonts, weights 400, 700) |
-| Brand black        | `#000`                         | Buttons, logo, hover overlay bg        |
-| Dark teal          | `#001418`                      | Nav links, portfolio hover overlay (`rgba(0,20,24,0.8)`) |
-| Gray accent        | `#979797`                      | Filter labels, section-title span, social links, copyright |
-| Light gray bg      | `#efefef`                      | Page background                       |
-| White              | `#fff`                         | Button text, portfolio overlay heading |
-| Dark text          | `#222` / `#333`               | Body text                              |
-| Button style       | Rectangular (no radius), solid `#000` bg, white text, 14px font, 15px vertical padding |
-| Portfolio item height | 600px                        | Grid items, background-position center |
-| Hover overlay      | `rgba(0,20,24,0.8)`          | Semi-transparent dark teal on portfolio items |
-| Hover heading      | opacity 0→1, letter-spacing 10px→0 | "+ See Project" text reveals on hover |
+| Token                 | Value                                                                                  | Usage                                                      |
+| --------------------- | -------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| Font family           | `'Josefin Sans', sans-serif`                                                           | All text (Google Fonts, weights 400, 700)                  |
+| Brand black           | `#000`                                                                                 | Buttons, logo, hover overlay bg                            |
+| Dark teal             | `#001418`                                                                              | Nav links, portfolio hover overlay (`rgba(0,20,24,0.8)`)   |
+| Gray accent           | `#979797`                                                                              | Filter labels, section-title span, social links, copyright |
+| Light gray bg         | `#efefef`                                                                              | Page background                                            |
+| White                 | `#fff`                                                                                 | Button text, portfolio overlay heading                     |
+| Dark text             | `#222` / `#333`                                                                        | Body text                                                  |
+| Button style          | Rectangular (no radius), solid `#000` bg, white text, 14px font, 15px vertical padding |
+| Portfolio item height | 600px                                                                                  | Grid items, background-position center                     |
+| Hover overlay         | `rgba(0,20,24,0.8)`                                                                    | Semi-transparent dark teal on portfolio items              |
+| Hover heading         | opacity 0→1, letter-spacing 10px→0                                                     | "+ See Project" text reveals on hover                      |
 
-## Gherkin Requirements
+## Requirements
 
-### Header Section
+### Requirement: Header SHALL display logo, navigation links, and CTA button
 
-```gherkin
-Scenario: Logo displays in header
-  Given the page is loaded
-  Then a logo text "Enigma" is visible in the header left area
+The header section MUST render the logo, navigation links, and a call-to-action button.
 
-Scenario: Navigation links are present
-  Given the page is loaded
-  Then the header contains navigation links: "Home", "About", "Work", "Contact"
+#### Scenario: Logo displays in header
 
-Scenario: CTA button in header
-  Given the page is loaded
-  Then a "Get in touch" button is visible in the header
+- **WHEN** the page is loaded
+- **THEN** a logo text "Enigma" is visible in the header left area
 
-Scenario: Mobile nav switch
-  Given the viewport is mobile width (< 768px)
-  Then a hamburger menu icon is visible
-  And the main menu is hidden
-```
+#### Scenario: Navigation links are present
 
-### Intro Section
+- **WHEN** the page is loaded
+- **THEN** the header contains navigation links: "Home", "About", "Work", "Contact"
 
-```gherkin
-Scenario: Intro headline displays
-  Given the page is loaded
-  Then a centered intro section is visible
-  And it contains the text "I'm a freelance"
-  And it contains a highlighted span "digital designer"
-  And it contains the text "with +10 years of experience"
+#### Scenario: CTA button in header
 
-Scenario: Intro headline styling
-  Given the page is loaded
-  Then the section title font size is large (60px desktop)
-  And the highlighted span uses gray accent color (#979797)
-```
+- **WHEN** the page is loaded
+- **THEN** a "Get in touch" button is visible in the header
 
-### Portfolio Section
+#### Scenario: Mobile nav switch
 
-```gherkin
-Scenario: Filter tabs are displayed
-  Given the page is loaded
-  Then filter tabs are visible: "All", "Web design", "Digital design", "3D Rendering", "Brand Identity"
+- **WHEN** the viewport is mobile width (< 768px)
+- **THEN** a hamburger menu icon is visible
+- **AND** the main menu is hidden
 
-Scenario: Portfolio grid items are shown
-  Given the page is loaded
-  Then 8 portfolio items are displayed in a grid layout
+### Requirement: Intro section SHALL display headline with highlighted span
 
-Scenario: Portfolio items have hover overlay
-  Given a portfolio item is hovered
-  Then a dark teal overlay appears (rgba(0,20,24,0.8))
-  And "+ See Project" text fades in at bottom-left
+The intro section MUST display a centered headline with a highlighted "digital designer" span.
 
-Scenario: Portfolio filter works
-  Given the user clicks "Web design" filter
-  Then only web-design portfolio items are visible
-  And other items are hidden
+#### Scenario: Intro headline displays
 
-Scenario: Portfolio filter "All" shows all items
-  Given the user clicks "All" filter
-  Then all portfolio items are visible
-```
+- **WHEN** the page is loaded
+- **THEN** a centered intro section is visible
+- **AND** it contains the text "I'm a freelance"
+- **AND** it contains a highlighted span "digital designer"
+- **AND** it contains the text "with +10 years of experience"
 
-### Footer Section
+#### Scenario: Intro headline styling
 
-```gherkin
-Scenario: Footer CTA displays
-  Given the page is loaded
-  Then the footer contains "Let's work together" heading
-  And a "Get in touch" button is visible
+- **WHEN** the page is loaded
+- **THEN** the section title font size is large (60px desktop)
+- **AND** the highlighted span uses gray accent color (#979797)
 
-Scenario: Social links in footer
-  Given the page is loaded
-  Then social links are visible: Pinterest, LinkedIn, Instagram, Facebook, Twitter
+### Requirement: Portfolio section SHALL have filter tabs and hover overlay
 
-Scenario: Copyright in footer
-  Given the page is loaded
-  Then a copyright line is displayed
-  And it links to "https://www.componentdock.com/" (Component Dock)
+The portfolio section MUST display filterable portfolio items with hover overlay effects.
 
-Scenario: Footer has Component Dock branding
-  Given the page is loaded
-  Then the footer copyright area mentions "Component Dock"
-  And no ColorLib attribution is visible
-```
+#### Scenario: Filter tabs are displayed
+
+- **WHEN** the page is loaded
+- **THEN** filter tabs are visible: "All", "Web design", "Digital design", "3D Rendering", "Brand Identity"
+
+#### Scenario: Portfolio grid items are shown
+
+- **WHEN** the page is loaded
+- **THEN** 8 portfolio items are displayed in a grid layout
+
+#### Scenario: Portfolio items have hover overlay
+
+- **WHEN** a portfolio item is hovered
+- **THEN** a dark teal overlay appears (rgba(0,20,24,0.8))
+- **AND** "+ See Project" text fades in at bottom-left
+
+#### Scenario: Portfolio filter works
+
+- **WHEN** the user clicks "Web design" filter
+- **THEN** only web-design portfolio items are visible
+- **AND** other items are hidden
+
+#### Scenario: Portfolio filter "All" shows all items
+
+- **WHEN** the user clicks "All" filter
+- **THEN** all portfolio items are visible
+
+### Requirement: Footer SHALL display CTA, social links, and Component Dock branding
+
+The footer MUST display a call-to-action, social media links, and Component Dock copyright.
+
+#### Scenario: Footer CTA displays
+
+- **WHEN** the page is loaded
+- **THEN** the footer contains "Let's work together" heading
+- **AND** a "Get in touch" button is visible
+
+#### Scenario: Social links in footer
+
+- **WHEN** the page is loaded
+- **THEN** social links are visible: Pinterest, LinkedIn, Instagram, Facebook, Twitter
+
+#### Scenario: Copyright in footer
+
+- **WHEN** the page is loaded
+- **THEN** a copyright line is displayed
+- **AND** it links to "https://www.componentdock.com/" (Component Dock)
+
+#### Scenario: Footer has Component Dock branding
+
+- **WHEN** the page is loaded
+- **THEN** the footer copyright area mentions "Component Dock"
+- **AND** no ColorLib attribution is visible
 
 ## Layout Structure (section order)
 
