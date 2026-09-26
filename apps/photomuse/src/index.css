@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Photomuse brand palette — light blue accent (#78d5ef) */
+  --color-brand-50: #f0f9fd;
+  --color-brand-100: #daf1fa;
+  --color-brand-200: #b8e5f5;
+  --color-brand-300: #78d5ef;
+  --color-brand-400: #4cc4e8;
+  --color-brand-500: #2aaddb;
+  --color-brand-600: #1a8fbf;
+  --color-brand-700: #16739a;
+  --color-brand-800: #165f7f;
+  --color-brand-900: #17506a;
+
+  --color-dark: #343a40;
+  --color-heading: #1f1f1f;
+  --color-body: #212529;
+  --color-muted: #6c757d;
+  --color-tan: #ccb78f;
+  --color-watermark: #ededed;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-signature: 'Herr Von Muellerhoff', cursive;
+}
