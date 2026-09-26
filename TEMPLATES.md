@@ -2485,7 +2485,7 @@
 ## Politics (2)
 
 - [x] **Plataforma** — [colorlib](https://colorlib.com/wp/template/plataforma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/plataforma-free-template.jpg) · [tribune](https://tribune.free.componentdock.com)
-- [~] **Politics** — [colorlib](https://colorlib.com/wp/template/politics/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/politics-free-template-1.jpg)
+- [x] **Politics** — [colorlib](https://colorlib.com/wp/template/politics/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/politics-free-template-1.jpg) · [civicpulse](https://free-react-templates-civicpulse.surge.sh)
 
 ## Portfolio (89)
 
