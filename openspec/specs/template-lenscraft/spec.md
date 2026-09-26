@@ -11,138 +11,133 @@ Recreation of ColorLib's "Proshoot" photography portfolio template.
 - **App folder:** `apps/lenscraft`
 - **Package:** `@free-react-templates/lenscraft`
 
-## Design tokens (from preview stylesheet)
+## Requirements
 
-| Token                  | Value                                                   | Notes                                                         |
-| ---------------------- | ------------------------------------------------------- | ------------------------------------------------------------- |
-| Brand color            | `#fc6060`                                               | Coral/red, used on buttons, hover states, accents             |
-| Background (light)     | `#f7f7f7`                                               | Section backgrounds                                           |
-| Background (white)     | `#ffffff`                                               | Default page background                                       |
-| Text primary           | `#252525`                                               | Dark charcoal                                                 |
-| Text secondary         | `#636363`                                               | Medium gray                                                   |
-| Border / subtle        | `#ebebeb`                                               | Dividers, subtle borders                                      |
-| Font family (headings) | `"Oswald", sans-serif`                                  | Google Fonts, loaded via `<link>`                             |
-| Font family (body)     | `"Roboto", sans-serif`                                  | Google Fonts, loaded via `<link>`                             |
-| Button shape           | `border-radius: 60px`                                   | Pill/rounded buttons                                          |
-| Button style           | `border: 2px solid #fc6060`, transparent bg, white text | Ghost/outline style; on hover fills `#fc6060` with white text |
-| Button size            | `min-width: 160px`, `height: 46px`, `padding: 0 30px`   | Medium height                                                 |
-| Overlay                | `background-color: rgba(0, 0, 0, 0.4)`                  | Dark overlay on hero images                                   |
+### Requirement: Navbar renders with navigation links
 
-## Sections (in order)
+The navbar SHALL display the "Lenscraft" logo and navigation links (Home, About, Projects, Services, Blog). The navbar SHALL collapse to a hamburger menu on mobile viewports.
 
-1. **Navbar** — Fixed top, logo left, nav links center (Home, About, Projects, Pages dropdown, Blog dropdown). Mobile hamburger menu.
-2. **Hero / Banner** — Full-width, left-aligned headline "Images matter", subtitle paragraph, "Explore More" pill button, hero image on right side, social icons sidebar (facebook, twitter, instagram).
-3. **About** — Image left, text right: "Let's Introduce About Myself", description text, "Read More" pill button.
-4. **Services** — "Our Services" / "What We Offer" title. 3-column grid, 6 service cards with icon + title + description (Fashion Photography, Nature Photography, Event Coverage, Property Tours, Multimedia Services, Wedding Photography).
-5. **Portfolio** — "Our Portfolio" / "Check Our Work" title. Asymmetric masonry grid: 2 large (col-8) + 3 small (col-4) items + "View More" button. Hover overlay with title + category.
-6. **Pricing** — "Pricing Plan" / "Choose Your Package" title. 3 pricing cards (Wedding $46, Studio $76, Fashion $96) with feature list, check/close icons, "Book Now" button.
-7. **Blog** — "Our Blog" / "Latest Good Story" title. 1 large featured post (left) + 3 smaller posts (right) with image, title, meta (author, date), excerpt.
-8. **Footer** — 3-column: About Us text, Newsletter signup form, Follow Us social icons. Copyright with Component Dock attribution.
+#### Scenario: Desktop navbar displays links
 
-## Gherkin Requirements
+- **WHEN** the user visits the Lenscraft homepage on a desktop viewport
+- **THEN** the navbar displays "Lenscraft" logo
+- **AND** navigation links: Home, About, Projects, Services, Blog are visible
 
-### Scenario: Navbar renders with navigation links
+#### Scenario: Mobile hamburger menu toggles
 
-```
-Given the user visits the Lenscraft homepage
-Then the navbar displays "Lenscraft" logo
-And navigation links: Home, About, Projects, Pages, Blog
-```
+- **WHEN** the user views on a mobile viewport (< 768px)
+- **AND** clicks the hamburger menu button
+- **THEN** the mobile navigation menu expands
+- **AND** clicking a link closes the menu
 
-### Scenario: Hero banner displays with headline and image
+### Requirement: Hero banner displays with headline and image
 
-```
-Given the user visits the homepage
-Then a hero section displays with headline "Images matter"
-And a subtitle paragraph about photography is visible
-And an "Explore More" pill button is visible
-And a hero image is displayed on the right
-And social media icons are visible on the side
-```
+The hero section SHALL display the headline "Images matter", a subtitle paragraph, an "Explore More" pill button, a hero image on the right, and social media icons on the side.
 
-### Scenario: About section renders with image and text
+#### Scenario: Hero section renders all elements
 
-```
-Given the user scrolls to the about section
-Then a section title "Let's Introduce About Myself" is visible
-And a portrait/photography image is displayed
-And descriptive text about the photographer is visible
-And a "Read More" button is visible
-```
+- **WHEN** the user visits the homepage
+- **THEN** a hero section displays with headline "Images matter"
+- **AND** a subtitle quote about photography is visible
+- **AND** an "Explore More" button is visible with pill shape
+- **AND** a hero image is displayed on the right
+- **AND** social media icons (Facebook, Twitter, Instagram) are visible
 
-### Scenario: Services section displays 6 service cards
+### Requirement: About section renders with image and text
 
-```
-Given the user scrolls to the services section
-Then a "What We Offer" heading is visible
-And 6 service cards display in a 3-column grid
-And each card has an icon, title, and description
-And the services are: Fashion Photography, Nature Photography, Event Coverage, Property Tours, Multimedia Services, Wedding Photography
-```
+The about section SHALL display a title "Let's Introduce About Myself", a portrait image, descriptive text, and a "Read More" button.
 
-### Scenario: Portfolio gallery shows work items
+#### Scenario: About section content
 
-```
-Given the user scrolls to the portfolio section
-Then a "Check Our Work" heading is visible
-And portfolio items display in an asymmetric masonry grid
-And hovering an item reveals a title and category overlay
-And a "View More" button is visible
-```
+- **WHEN** the user scrolls to the about section
+- **THEN** a section title "Let's Introduce About Myself" is visible
+- **AND** a portrait/photography image is displayed
+- **AND** descriptive text about the photographer is visible
+- **AND** a "Read More" button is visible
 
-### Scenario: Pricing section shows 3 packages
+### Requirement: Services section displays 6 service cards
 
-```
-Given the user scrolls to the pricing section
-Then a "Choose Your Package" heading is visible
-And 3 pricing cards display: Wedding ($46), Studio ($76), Fashion ($96)
-And each card shows included/excluded features
-And a "Book Now" button is on each card
-```
+The services section SHALL display a "What We Offer" heading and 6 service cards in a 3-column grid, each with an icon, title, and description.
 
-### Scenario: Blog section shows recent posts
+#### Scenario: Services grid renders all cards
 
-```
-Given the user scrolls to the blog section
-Then a "Latest Good Story" heading is visible
-And 1 large featured blog post is displayed
-And 3 smaller blog posts are displayed
-And each post shows an image, title, author, date, and excerpt
-```
+- **WHEN** the user scrolls to the services section
+- **THEN** a "What We Offer" heading is visible
+- **AND** 6 service cards display in a 3-column grid
+- **AND** each card has an icon, title, and description
+- **AND** the services are: Fashion Photography, Nature Photography, Event Coverage, Property Tours, Multimedia Services, Wedding Photography
 
-### Scenario: Footer renders with Component Dock link
+### Requirement: Portfolio gallery shows work items
 
-```
-Given the user scrolls to the footer
-Then an "About Us" section is visible
-And a newsletter signup form is visible
-And social media follow icons are visible
-And copyright text with "Component Dock" attribution link is present
-```
+The portfolio section SHALL display a "Check Our Work" heading, portfolio items in an asymmetric masonry grid with hover overlays showing title and category, and a "View More" button.
 
-### Scenario: Mobile responsive layout
+#### Scenario: Portfolio grid renders items
 
-```
-Given the user views on a mobile viewport (< 768px)
-Then the navbar collapses to a hamburger menu
-And the hero section stacks vertically
-And the services grid switches to 1 column
-And the portfolio grid switches to 1 column
-```
+- **WHEN** the user scrolls to the portfolio section
+- **THEN** a "Check Our Work" heading is visible
+- **AND** portfolio items display in an asymmetric masonry grid
+- **AND** hovering an item reveals a title and category overlay
+- **AND** a "View More" button is visible
 
-## Verification checklist
+### Requirement: Pricing section shows 3 packages
 
-- [ ] Brand color `#fc6060` applied to buttons and accents
-- [ ] Oswald font for headings, Roboto for body (Google Fonts)
-- [ ] Pill-shaped buttons with 60px border-radius
-- [ ] Hero section with full-width layout and social sidebar
-- [ ] About section with image + text side-by-side
-- [ ] Services grid with 6 cards in 3 columns
-- [ ] Portfolio masonry grid with hover overlays
-- [ ] Pricing cards with feature lists
-- [ ] Blog section with featured + smaller posts
-- [ ] Footer with Component Dock link
-- [ ] Responsive: hamburger nav, stacked layouts on mobile
-- [ ] Placeholder images via `picsum.photos/seed/lenscraft-<n>/...`
-- [ ] No ColorLib references in app code
-- [ ] `npm run test:coverage` passes at 100%
+The pricing section SHALL display a "Choose Your Package" heading and 3 pricing cards (Wedding $46, Studio $76, Fashion $96) with feature lists and "Book Now" buttons.
+
+#### Scenario: Pricing cards render correctly
+
+- **WHEN** the user scrolls to the pricing section
+- **THEN** a "Choose Your Package" heading is visible
+- **AND** 3 pricing cards display: Wedding ($46), Studio ($76), Fashion ($96)
+- **AND** each card shows included/excluded features with check/cross icons
+- **AND** a "Book Now" button is on each card
+
+### Requirement: Blog section shows recent posts
+
+The blog section SHALL display a "Latest Good Story" heading, 1 large featured blog post, and 3 smaller blog posts, each with an image, title, author, date, and excerpt.
+
+#### Scenario: Blog posts render correctly
+
+- **WHEN** the user scrolls to the blog section
+- **THEN** a "Latest Good Story" heading is visible
+- **AND** 1 large featured blog post is displayed
+- **AND** 3 smaller blog posts are displayed
+- **AND** each post shows an image, title, author, date, and excerpt
+
+### Requirement: Footer renders with Component Dock link
+
+The footer SHALL display About Us text, a newsletter signup form, social media follow icons, and copyright text with a "Component Dock" attribution link.
+
+#### Scenario: Footer content and attribution
+
+- **WHEN** the user scrolls to the footer
+- **THEN** an "About Us" section is visible
+- **AND** a newsletter signup form is visible
+- **AND** social media follow icons are visible (Facebook, Twitter, Dribbble, LinkedIn)
+- **AND** copyright text with "Component Dock" attribution link pointing to https://www.componentdock.com/ is present
+
+### Requirement: Mobile responsive layout
+
+The template SHALL be fully responsive with hamburger navigation, stacked layouts, and single-column grids on mobile viewports.
+
+#### Scenario: Mobile viewport layout
+
+- **WHEN** the user views on a mobile viewport (< 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero section stacks vertically
+- **AND** the services grid switches to 1 column
+- **AND** the portfolio grid switches to 1 column
+- **AND** the pricing grid switches to 1 column
+
+### Requirement: Design tokens applied correctly
+
+The template SHALL use brand color #fc6060 for buttons and accents, Oswald for headings, Roboto for body text, and pill-shaped buttons with 60px border-radius.
+
+#### Scenario: Design tokens verification
+
+- **WHEN** the template is rendered
+- **THEN** brand color #fc6060 is applied to buttons and accents
+- **AND** Oswald font is used for headings
+- **AND** Roboto font is used for body text
+- **AND** buttons have pill shape (60px border-radius)
+- **AND** placeholder images use picsum.photos/seed/lenscraft-*
+- **AND** no ColorLib references exist in app code
