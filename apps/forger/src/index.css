@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Forger brand palette — recreated from the ColorLib "Niko" design:
+     brand blue #0075f6, dark ink #000000, light bg #f2f2f2, muted #b3b3b3. */
+  --color-brand: #0075f6;
+  --color-brand-dark: #005ec4;
+
+  --color-ink: #000000;
+  --color-paper: #f2f2f2;
+  --color-mist: #b3b3b3;
+
+  /* Primary scale so shared Button/ButtonLink `primary` resolves to brand blue. */
+  --color-primary-50: #eef6ff;
+  --color-primary-100: #d9ebff;
+  --color-primary-200: #bcd8ff;
+  --color-primary-300: #8ebfff;
+  --color-primary-400: #599cff;
+  --color-primary-500: #0075f6;
+  --color-primary-600: #005ec4;
+  --color-primary-700: #004ba0;
+  --color-primary-800: #003f84;
+  --color-primary-900: #00346d;
+
+  /* Skill bar accent colors */
+  --color-skill-1: #0075f6;
+  --color-skill-2: #20c997;
+  --color-skill-3: #28a745;
+  --color-skill-4: #fd7e14;
+  --color-skill-5: #6f42c1;
+  --color-skill-6: #e83e8c;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
