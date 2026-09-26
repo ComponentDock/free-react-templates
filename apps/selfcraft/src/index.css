@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Selfcraft brand palette — coral/rose pink accent (#F73859),
+     dark navy menu (#283149), medium grey body text (#b3b3b3). */
+  --color-brand: #f73859;
+  --color-brand-light: #f96982;
+  --color-navy: #283149;
+  --color-body-text: #b3b3b3;
+  --color-heading: #000000;
+
+  --font-body: 'Open Sans', Arial, sans-serif;
+  --font-heading: 'Playfair Display', Times, serif;
+}
