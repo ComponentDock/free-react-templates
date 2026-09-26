@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ShotLab brand palette — golden yellow accent (#f3c623) */
+  --color-brand-50: #fefce8;
+  --color-brand-100: #fef9c3;
+  --color-brand-200: #fef08a;
+  --color-brand-300: #fde047;
+  --color-brand-400: #f3c623;
+  --color-brand-500: #eab308;
+  --color-brand-600: #ca8a04;
+  --color-brand-700: #a16207;
+  --color-brand-800: #854d0e;
+  --color-brand-900: #713f12;
+
+  --color-dark: #000000;
+  --color-heading: #ffffff;
+  --color-body: #ffffff;
+  --color-muted: rgba(255, 255, 255, 0.6);
+  --color-subtle: rgba(255, 255, 255, 0.2);
+  --color-light: #ffffff;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Abril Fatface', ui-sans-serif, system-ui, sans-serif;
+}
