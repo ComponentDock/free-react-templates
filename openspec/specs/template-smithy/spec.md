@@ -1,69 +1,85 @@
-# Template: Smithy (Portfolio / Personal)
+# Spec: Smithy
 
 ## Purpose
 
-Recreation of ColorLib Schmidt (`https://colorlib.com/wp/template/schmidt/`), preview URL: `https://preview.colorlib.com/theme/schmidt/`.
-Stack: Vite, React 19, Tailwind CSS 4, TypeScript (strict), Lucide icons.
+Smithy is a personal portfolio and developer landing page template, recreating the design of ColorLib "Satner" (https://colorlib.com/wp/template/satner/) under a new original name. It showcases a developer's profile with sections for introduction, services, portfolio work, testimonials, and contact.
 
-## Design Tokens
+## Requirements
 
-- Brand Primary: `#0d6efd` (Bootstrap Blue) / Dark Neutral `#212529`
-- Font Family: "Poppins", sans-serif
-- Button Style: Rounded / Pill buttons with smooth hover states and icon arrows
-- Background: Clean white/light neutral sections with contrasting hero
+### Requirement: Page renders all sections in correct order
 
-## Requirements & Gherkin Scenarios
+The Smithy page SHALL display the following sections in order: Navbar, Hero, About, Brands, Services, Portfolio, Testimonials, Newsletter, Footer.
 
-### Requirement 1: Navigation Bar
+#### Scenario: All sections are visible on page load
 
-- The template must display a sticky/fixed-top navigation bar with logo ("Smithy.") and links (Home, About, Services, Experiences, Works, Blog, Contact).
-- Scenario: User views header
-  - Given the user loads the page
-  - When they look at the top navigation
-  - Then they see the brand logo "Smithy." and navigation links for Home, About, Services, Experiences, Works, Blog, and Contact.
+- **WHEN** I visit the Smithy page
+- **THEN** I see the Navbar at the top
+- **AND** I see the Hero section with greeting and CTA buttons
+- **AND** I see the About section with image and text
+- **AND** I see the Brands section with logos and stats
+- **AND** I see the Services section with 4 service cards
+- **AND** I see the Portfolio section with filterable grid
+- **AND** I see the Testimonials section with client quotes
+- **AND** I see the Newsletter section with email form
+- **AND** I see the Footer with social links
 
-### Requirement 2: Hero Section
+### Requirement: Navbar provides navigation
 
-- The template must feature a prominent hero section with tagline ("UI/UX Designer & Developer"), headline ("I'm John Smith"), call-to-action buttons ("More About Me", "Hire Me"), and professional portrait showcase.
-- Scenario: User views hero banner
-  - Given the user is on the landing page
-  - When they view the hero section
-  - Then they see the subheading, headline, CTA buttons, and portrait placeholder.
+The Navbar SHALL display the "Smithy" logo and navigation links for Home, About, Services, Portfolio, and Contact. It SHALL include a mobile hamburger toggle.
 
-### Requirement 3: About & Services Section
+#### Scenario: Desktop navigation links are present
 
-- The template must include an About summary and a Services grid detailing professional capabilities.
-- Scenario: User explores services
-  - Given the user scrolls to the services section
-  - When they inspect the service offerings
-  - Then they see structured cards representing design and development services.
+- **WHEN** I view the Navbar on desktop
+- **THEN** I see links for Home, About, Services, Portfolio, Contact
 
-### Requirement 4: Experience & Works Section
+#### Scenario: Mobile menu toggles
 
-- The template must present work experience milestones and a portfolio works gallery.
-- Scenario: User checks portfolio
-  - Given the user views the works section
-  - When they browse portfolio items
-  - Then they see categorized project cards with image previews and titles.
+- **WHEN** I click the hamburger menu button
+- **THEN** the mobile navigation menu opens
+- **AND** clicking it again closes the menu
 
-### Requirement 5: Testimonials & Blog
+### Requirement: Hero section displays developer profile
 
-- The template must feature client testimonials and recent blog articles.
-- Scenario: User reads blog posts
-  - Given the user scrolls through the blog section
-  - When they view article previews
-  - Then they see titles, publication dates, and read-more links.
+The Hero section SHALL display a greeting subtitle, the developer name, role text, and two CTA buttons ("Hire Me" and "Get CV").
 
-### Requirement 6: Contact & Footer
+#### Scenario: Hero content is visible
 
-- The template must provide a contact form and a footer linking to Component Dock (`https://www.componentdock.com/`).
-- Scenario: User checks footer attribution
-  - Given the user reaches the bottom of the page
-  - When they read the footer
-  - Then they see copyright info and a link to Component Dock (`https://www.componentdock.com/`).
+- **WHEN** I view the Hero section
+- **THEN** I see the "Hello" subtitle
+- **AND** I see the name "Alex Smith"
+- **AND** I see the role "Senior Web Developer"
+- **AND** I see a "Hire Me" button
+- **AND** I see a "Get CV" button
 
-## Verification Checklist
+### Requirement: Portfolio section supports filtering
 
-- [ ] OpenSpec validation passes (`npm run spec:validate`)
-- [ ] All sections render correctly with Tailwind CSS v4 tokens
-- [ ] Footer links to Component Dock
+The Portfolio SHALL display filter tabs (all, popular, latest, following, upcoming) that filter the portfolio items.
+
+#### Scenario: Filter tabs filter portfolio items
+
+- **WHEN** I click the "popular" filter tab
+- **THEN** only portfolio items tagged "popular" are displayed
+
+#### Scenario: All tab shows all items
+
+- **WHEN** I click the "all" filter tab after filtering
+- **THEN** all portfolio items are displayed
+
+### Requirement: Newsletter form accepts email input
+
+The Newsletter section SHALL display an email input and a "Get Started" button.
+
+#### Scenario: Email input is functional
+
+- **WHEN** I type an email address in the newsletter input
+- **THEN** the input field shows the typed email
+- **AND** submitting clears the input
+
+### Requirement: Footer links to Component Dock
+
+The Footer SHALL include a link to https://www.componentdock.com/ branded as "Component Dock".
+
+#### Scenario: Component Dock link is present
+
+- **WHEN** I view the Footer
+- **THEN** I see a link to componentdock.com
