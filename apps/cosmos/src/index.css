@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-mulish: 'Mulish', sans-serif;
+  --font-roboto-mono: 'Roboto Mono', monospace;
+  --color-primary: #ff2e63;
+  --color-ink: #1a1a2e;
+  --color-muted: #888888;
+  --color-line: #ebebeb;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-roboto-mono);
+    line-height: 1.6;
+  }
+}
