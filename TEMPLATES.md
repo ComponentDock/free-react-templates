@@ -2468,7 +2468,7 @@
 - [x] **Photosen** — [colorlib](https://colorlib.com/wp/template/photosen/) · [filmstock](https://filmstock.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/photosen-free-template.jpg)
 - [x] **Phozogy** — [colorlib](https://colorlib.com/wp/template/phozogy/) · [reflexly](https://reflexly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/phozogy-free-template.jpg)
 - [x] **Porto** — [colorlib](https://colorlib.com/wp/template/porto/) · [obscura](https://obscura.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/porto-free-template.jpg)
-- [~] **Proshoot** — [colorlib](https://colorlib.com/wp/template/proshoot/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/proshoot-free-template.jpg)
+- [x] **Proshoot** — [colorlib](https://colorlib.com/wp/template/proshoot/) · [lenscraft](https://lenscraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/proshoot-free-template.jpg)
 - [ ] **Rettro** — [colorlib](https://colorlib.com/wp/template/rettro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rettro-free-template.jpg)
 - [x] **Shotgear** — [colorlib](https://colorlib.com/wp/template/shotgear/) · [shotglow](https://shotglow.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shotgear-free-template.jpg)
 - [x] **Shutter** — [colorlib](https://colorlib.com/wp/template/shutter/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/shutter-free-template.jpg) · [expose](https://expose.free.componentdock.com)
