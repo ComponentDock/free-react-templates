@@ -2458,7 +2458,7 @@
 - [x] **Mostudio** — [colorlib](https://colorlib.com/wp/template/mostudio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mostudio-free-template.jpg) · [lumiere](https://lumiere.free.componentdock.com)
 - [x] **Myphotography** — [colorlib](https://colorlib.com/wp/template/myphotography/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/myphotography-free-template.jpg) · [exposure](https://exposure.free.componentdock.com)
 - [x] **Nissa** — [colorlib](https://colorlib.com/wp/template/nissa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nissa-free-template.jpg) · [lensa](https://lensa.free.componentdock.com)
-- [ ] **Pemodule** — [colorlib](https://colorlib.com/wp/template/pemodule/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pemodule-free-photographer-website-template.jpg)
+- [~] **Pemodule** — [colorlib](https://colorlib.com/wp/template/pemodule/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pemodule-free-photographer-website-template.jpg)
 - [x] **Pentax** — [colorlib](https://colorlib.com/wp/template/pentax/) · [bokeh](https://bokeh.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pentax-free-template.jpg)
 - [x] **Photogallery** — [colorlib](https://colorlib.com/wp/template/photogallery/) · [snapfold](https://snapfold.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/photogallery-free-template.jpg)
 - [x] **Photographer** — [colorlib](https://colorlib.com/wp/template/photographer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/photographer-free-template.jpg) · [photofolio](https://photofolio.free.componentdock.com)

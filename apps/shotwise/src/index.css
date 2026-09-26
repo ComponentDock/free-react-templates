@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Shotwise brand palette — purple gradient (#3224b0 → #be5ede)
+     from the Pemodule design. */
+  --color-brand: #be5ede;
+  --color-brand-dark: #3224b0;
+
+  /* Ink — dark headings (#222222). */
+  --color-ink: #222222;
+  --color-ink-dark: #111111;
+
+  /* Paper — light section backgrounds (#f9f9ff). */
+  --color-paper: #f9f9ff;
+
+  /* Mist — muted body text (#777777). */
+  --color-mist: #777777;
+
+  /* Accent green for newsletter (#6cbb23). */
+  --color-accent: #6cbb23;
+
+  /* Primary scale resolving to brand purple. */
+  --color-primary-50: #f3e8ff;
+  --color-primary-100: #e4ccf7;
+  --color-primary-200: #c99aef;
+  --color-primary-300: #ae68e7;
+  --color-primary-400: #be5ede;
+  --color-primary-500: #9a3dd6;
+  --color-primary-600: #7c2db8;
+  --color-primary-700: #5e1d9a;
+  --color-primary-800: #3224b0;
+  --color-primary-900: #1a1060;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
