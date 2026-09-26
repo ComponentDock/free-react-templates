@@ -2546,7 +2546,7 @@
 - [x] **Photosen** — [colorlib](https://colorlib.com/wp/template/photosen/) · [filmstock](https://filmstock.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/photosen-free-template.jpg)
 - [x] **Phozogy** — [colorlib](https://colorlib.com/wp/template/phozogy/) · [reflexly](https://reflexly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/phozogy-free-template.jpg)
 - [x] **Pixel** — [colorlib](https://colorlib.com/wp/template/pixel/) · [flux](https://flux.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pixel-free-template.jpg)
-- [ ] **Po Portfolio** — [colorlib](https://colorlib.com/wp/template/po-portfolio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/po-portfolio-free-template.jpg)
+- [~] **Po Portfolio** — [colorlib](https://colorlib.com/wp/template/po-portfolio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/po-portfolio-free-template.jpg)
 - [x] **Portech** — [colorlib](https://colorlib.com/wp/template/portech/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/portech-colorlib-template.jpg) · [techwise](https://free-react-templates-techwise.surge.sh)
 - [x] **Portfolio** — [colorlib](https://colorlib.com/wp/template/portfolio/) · [curate](https://curate.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/portfolio-free-template.jpg)
 - [x] **Portfolio 2** — [colorlib](https://colorlib.com/wp/template/portfolio-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/portfolio2-free-template.jpg) · [framecast](https://framecast.free.componentdock.com)
