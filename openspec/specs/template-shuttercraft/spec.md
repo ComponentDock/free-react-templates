@@ -1,134 +1,129 @@
-# Template: Shuttercraft (Photography / Photo Studio)
+# Template: Shuttercraft (Photography Portfolio)
 
 ## Purpose
 
-Recreation of ColorLib **Cassi** — a photo studio / photography HTML template.
-- **Source slug:** `cassi`
-- **ColorLib URL:** https://colorlib.com/wp/template/cassi/
-- **Preview URL:** https://preview.colorlib.com/theme/cassi/
-- **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+Recreation of ColorLib Photography (`https://colorlib.com/wp/template/photography/`). A photographer portfolio/personal site featuring a hero carousel with full-bleed background images, about section with portrait + text, dark-themed masonry gallery, call-to-action banner, blog grid, split contact form with image, and a dark footer. Built with React 19, Tailwind CSS 4, and TypeScript.
 
-## Design tokens
+## Requirements
 
-Extracted from the live preview CSS (`css/style.css`) and screenshot analysis.
+### Requirement: Navbar with navigation links
 
-### Colors
+The template SHALL render a navigation bar with the site name "Shuttercraft" and links to Home, About, Gallery, Blog, and Contact sections.
 
-| Token              | Value                        | Usage                                       |
-| ------------------ | ---------------------------- | ------------------------------------------- |
-| `--brand-primary`  | `#242deb` (electric indigo)  | Category badge bg, nav hover, button hover, accent |
-| `--bg-dark`        | `#151515` (near-black)       | Body bg, offcanvas menu, header area        |
-| `--bg-hero`        | `#000`                       | Hero section overlay                        |
-| `--text-primary`   | `#ffffff`                    | Headings, body text on dark bg              |
-| `--text-secondary` | `#bfbfbf` (light gray)       | Body text, descriptions                     |
-| `--text-muted`     | `#969696` (medium gray)      | Copyright, secondary text                   |
-| `--text-body`      | `#333333` (dark gray)        | Body text on light bg                       |
-| `--red-heart`      | `#cc1111`                    | Heart icon in copyright                     |
+#### Scenario: Desktop navigation renders all links
 
-### Typography
+- **GIVEN** the page loads
+- **THEN** the navbar displays the "Shuttercraft" brand name
+- **AND** links to Home, About, Gallery, Blog, and Contact are visible
 
-| Property      | Value                              |
-| ------------- | ---------------------------------- |
-| Font family   | `"Poppins", sans-serif`           |
-| Menu font     | `"Roboto", sans-serif` (offcanvas) |
-| Heading h2    | Display/serif style, large, white  |
-| Category tag  | 14px, weight 500, uppercase        |
-| Button text   | 16px, weight 500, uppercase, letter-spacing 1px |
+#### Scenario: Mobile menu toggle
 
-### Buttons & interactive
+- **GIVEN** the viewport is narrow (mobile)
+- **WHEN** the user clicks the hamburger menu button
+- **THEN** a mobile navigation menu opens with all links
+- **AND** clicking a link closes the mobile menu
 
-| Element       | Style                                                                |
-| ------------- | -------------------------------------------------------------------- |
-| `.ht-btn`     | White text, uppercase, no bg, arrow icon in brand blue (#242deb)     |
-| `.ht-cata`    | Inline-block badge: brand blue bg (#242deb), white text, 5px 18px padding |
-| Nav hover     | Brand blue (#242deb) bg on active/hovered link                       |
-| Hamburger     | White icon, 24px, top-right position                                |
+### Requirement: Hero carousel with slides
 
-### Section backgrounds
+The template SHALL render a hero section with a full-bleed background image carousel containing 3 slides with headings and subtitles, prev/next navigation, and auto-advance.
 
-| Section             | Background                                                     |
-| ------------------- | -------------------------------------------------------------- |
-| Header              | Transparent over hero (logo + hamburger)                       |
-| Hero                | Full-screen image slider (owl-carousel), split: text left / image right |
-| Gallery (inner)     | Black bg with gradient overlay on hover                        |
-| Blog (inner)        | White cards on dark bg                                         |
-| About (inner)       | Dark bg, centered text                                         |
-| Contact (inner)     | Dark bg with map/overlay                                       |
-| Footer              | Dark bg (#151515), social links left, copyright right          |
+#### Scenario: First slide displays by default
 
-### Layout
+- **GIVEN** the page loads
+- **THEN** the hero section shows the heading "Wildlife Photography"
+- **AND** a descriptive subtitle is visible
 
-- **Hero:** Full-viewport height, two-column split — left side dark background with text (category badge + heading + description + CTA button), right side full-bleed hero image. Owl-carousel slider with 3 slides.
-- **Header:** Fixed/absolute, transparent, logo top-left, hamburger top-right. Scrolls to dark header bar.
-- **Footer:** Single row — social links (Facebook, Twitter, Instagram) floated left, copyright floated right. Dark bg.
-- **Gallery grid (inner page):** Masonry-style image grid with hover overlay (gradient from transparent to black) and text label.
+#### Scenario: Navigation between slides
 
-## Gherkin requirements
+- **WHEN** the user clicks the next slide button
+- **THEN** the heading changes to the next slide content
+- **WHEN** the user clicks the previous slide button
+- **THEN** the heading changes to the previous slide content
 
-```gherkin
-Feature: Shuttercraft — Photo Studio Template
+#### Scenario: Auto-advance slides
 
-  Background:
-    Given the user opens the Shuttercraft homepage
+- **GIVEN** the page has loaded
+- **WHEN** 5 seconds pass without interaction
+- **THEN** the slide advances to the next one automatically
 
-  Scenario: Header displays logo and navigation
-    Then a logo text "SHUTTERCRAFT" is visible in the header
-    And a hamburger menu button is visible at the top-right
-    And the header is transparent over the hero section
+### Requirement: About section with portrait and text
 
-  Scenario: Hero section shows photo studio intro
-    Then a hero slider is displayed at full viewport height
-    And the hero has a two-column split layout
-    And the left column shows a category badge
-    And the left column shows the heading "Photo Studio"
-    And the left column shows a description paragraph
-    And the left column shows a "See More" call-to-action button
-    And the right column shows a full-bleed hero image
-    And the hero auto-advances through 3 slides
+The template SHALL render an about section with a portrait image on the left and a heading, description paragraph, and "Hire Me Now" button on the right.
 
-  Scenario: Hero badge uses brand color
-    Then the category badge has a blue (#242deb) background
-    And the badge text is white and uppercase
+#### Scenario: About content renders correctly
 
-  Scenario: See More button interaction
-    When the user clicks the "See More" button
-    Then the page scrolls or navigates appropriately
+- **GIVEN** the page loads
+- **THEN** the about section displays a heading about photography
+- **AND** a descriptive paragraph is visible
+- **AND** a portrait image with alt text is shown
+- **AND** a "Hire Me Now" button links to the contact section
 
-  Scenario: Footer displays social links and copyright
-    Then a footer section is visible
-    And the footer shows Facebook, Twitter, and Instagram social links
-    And the footer shows copyright text
-    And the footer links to Component Dock
+### Requirement: Gallery section with masonry grid
 
-  Scenario: Offcanvas menu opens on hamburger click
-    When the user clicks the hamburger menu button
-    Then an offcanvas menu slides in from the right
-    And the offcanvas menu shows navigation links
-    And the offcanvas menu shows social links
-    And a close button is visible
-    When the user clicks the close button
-    Then the offcanvas menu closes
+The template SHALL render a dark-background gallery section with a heading and a masonry-style grid of 16 images.
 
-  Scenario: Responsive layout on mobile
-    When the viewport width is less than 768px
-    Then the hero section stacks vertically
-    And the hamburger menu is visible
-    And the footer social links and copyright stack vertically
+#### Scenario: Gallery displays all images
 
-  Scenario: Dark theme is consistent
-    Then the body background is dark (#151515)
-    And all text on dark backgrounds is white or light gray
-    And interactive elements use brand blue (#242deb) for accents
-```
+- **GIVEN** the page loads
+- **THEN** the gallery section shows the heading "My Recent Photos"
+- **AND** 16 images are rendered with descriptive alt text
+- **AND** images have lazy loading enabled
 
-## Verification checklist
+### Requirement: Call-to-action banner
 
-- [ ] Header: transparent bg, logo text visible, hamburger icon visible
-- [ ] Hero: full-height two-column split, category badge with brand blue, heading, description, CTA button
-- [ ] Hero slider: 3 slides, auto-advance, navigation arrows
-- [ ] Footer: social links (FB, TW, IG), copyright text, Component Dock link
-- [ ] Offcanvas menu: opens on hamburger, shows nav + socials, closes on X
-- [ ] Design tokens: Poppins font, #242deb brand blue, #151515 dark bg, white text
-- [ ] Responsive: mobile stacks, hamburger visible, footer stacks
-- [ ] No ColorLib references in app code
-- [ ] Footer links to componentdock.com
+The template SHALL render a gradient call-to-action section with a heading and a button.
+
+#### Scenario: CTA section renders
+
+- **GIVEN** the page loads
+- **THEN** a "Let's Work Together" heading is visible
+- **AND** a "Get in Touch" button links to the contact section
+
+### Requirement: Blog section with post cards
+
+The template SHALL render a blog section with a heading and 3 blog post cards, each containing an image, title, excerpt, author info, date, and like/comment counts.
+
+#### Scenario: Blog posts display correctly
+
+- **GIVEN** the page loads
+- **THEN** the blog section shows the heading "Our Recent Blogs"
+- **AND** 3 blog article cards are rendered
+- **AND** each card has a title, excerpt, author name, date, like count, and comment count
+
+### Requirement: Contact section with form
+
+The template SHALL render a contact section with an image on the left and a form on the right with name, email, and message fields.
+
+#### Scenario: Contact form renders all fields
+
+- **GIVEN** the page loads
+- **THEN** a "Send Me a Message" heading is visible
+- **AND** inputs for name, email, and message are present with labels
+- **AND** a "Send Message" submit button is visible
+
+#### Scenario: Form accepts user input
+
+- **WHEN** the user types in the name, email, and message fields
+- **THEN** the field values update to reflect the typed text
+
+### Requirement: Footer with Component Dock link
+
+The template SHALL render a footer with copyright text, a link to Component Dock, and social media icons.
+
+#### Scenario: Footer content renders
+
+- **GIVEN** the page loads
+- **THEN** the footer displays copyright text with the current year
+- **AND** a "Component Dock" link points to https://www.componentdock.com/
+- **AND** the link opens in a new tab with noopener noreferrer
+- **AND** social media icon links are present
+
+### Requirement: App composition and title
+
+The template SHALL compose all sections in the correct order and set the document title.
+
+#### Scenario: All sections render in order
+
+- **GIVEN** the page loads
+- **THEN** Navbar, Hero, About, Gallery, CallToAction, Blog, Contact, and Footer are all rendered
+- **AND** the document title is set to "Shuttercraft — Photography Portfolio"

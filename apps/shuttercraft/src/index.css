@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Shuttercraft brand palette — photography portfolio
+     Purple #7a77ff primary, green #8cfe86 gradient end,
+     dark #222 gallery/footer, light #f9f9ff sections. */
+  --color-brand: #7a77ff;
+  --color-brand-dark: #6560e0;
+  --color-brand-green: #8cfe86;
+
+  --color-ink: #222222;
+  --color-ink-light: #777777;
+
+  --color-paper: #f9f9ff;
+  --color-gallery: #222222;
+
+  --color-primary-50: #f0f0ff;
+  --color-primary-100: #e0e0ff;
+  --color-primary-200: #c4c4ff;
+  --color-primary-300: #a8a8ff;
+  --color-primary-400: #9191ff;
+  --color-primary-500: #7a77ff;
+  --color-primary-600: #6560e0;
+  --color-primary-700: #504bc0;
+  --color-primary-800: #3c37a0;
+  --color-primary-900: #282380;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
