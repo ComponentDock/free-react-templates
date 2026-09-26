@@ -2396,7 +2396,7 @@
 - [x] **Gilb** — [colorlib](https://colorlib.com/wp/template/gilb/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gilb-free-template.jpg) · [workfolio](https://free-react-templates-workfolio.surge.sh)
 - [x] **Ilene Berg** — [colorlib](https://colorlib.com/wp/template/ilene-berg/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fullscreen-ilene-berg-free-website-template.jpg) · [lumina](https://lumina.free.componentdock.com)
 - [x] **Jackco** — [colorlib](https://colorlib.com/wp/template/jackco/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jackco-colorlib-template.jpg) · [Dossier](https://dossier.free.componentdock.com)
-- [ ] **Jackson** — [colorlib](https://colorlib.com/wp/template/jackson/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jackson-free-personal-resume-website-template.jpg)
+- [~] **Jackson** — [colorlib](https://colorlib.com/wp/template/jackson/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jackson-free-personal-resume-website-template.jpg)
 - [ ] **Jonson** — [colorlib](https://colorlib.com/wp/template/jonson/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jonson-free-template.jpg)
 - [ ] **Jony** — [colorlib](https://colorlib.com/wp/template/jony/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jony-free-template.jpg)
 - [x] **Juli** — [colorlib](https://colorlib.com/wp/template/juli/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/juli-free-lifestyle-blog-website-template.jpg) · [petal](https://petal.free.componentdock.com)
