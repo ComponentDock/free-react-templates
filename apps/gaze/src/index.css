@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Gaze brand palette — dark navy from the original "The Look" gallery template. */
+  --color-brand: #081624;
+
+  --color-primary-50: #f0f3f5;
+  --color-primary-100: #d9e0e6;
+  --color-primary-200: #b3c1cd;
+  --color-primary-300: #8da2b4;
+  --color-primary-400: #67839b;
+  --color-primary-500: #416482;
+  --color-primary-600: #345068;
+  --color-primary-700: #273c4e;
+  --color-primary-800: #1a2834;
+  --color-primary-900: #0d141a;
+  --color-primary-950: #081624;
+
+  /* Lato font family (loaded via Google Fonts in index.html) */
+  --font-display: 'Lato', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
