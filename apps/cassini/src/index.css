@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #242deb;
+  --color-dark-bg: #151515;
+  --color-body-text: #333333;
+  --color-muted-text: #bfbfbf;
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  background: var(--color-dark-bg);
+}
