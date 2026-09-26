@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-black: #000000;
+  --color-dark-teal: #001418;
+  --color-gray-accent: #979797;
+  --color-light-gray: #efefef;
+  --color-body-text: #333333;
+  --color-white: #ffffff;
+
+  --font-body: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+}
