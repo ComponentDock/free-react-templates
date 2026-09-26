@@ -2506,7 +2506,7 @@
 - [x] **Cardboard** — [colorlib](https://colorlib.com/wp/template/cardboard/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cardboard-free-template.jpg) · [kraft](https://kraft.free.componentdock.com)
 - [x] **Clyde** — [colorlib](https://colorlib.com/wp/template/clyde/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/clyde-free-template.jpg) · [clydson](https://clydson.free.componentdock.com)
 - [x] **Cocoon** — [colorlib](https://colorlib.com/wp/template/cocoon/) · [weft](https://free-react-templates-weft.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cocoon-free-template.jpg)
-- [~] **Create** — [colorlib](https://colorlib.com/wp/template/create/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/create-free-template.jpg)
+- [x] **Create** — [colorlib](https://colorlib.com/wp/template/create/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/create-free-template.jpg) · [forgehub](https://free-react-templates-forgehub.surge.sh)
 - [x] **Credo** — [colorlib](https://colorlib.com/wp/template/credo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/credo-free-template.jpg)
 - [x] **Cvportfolio** — [colorlib](https://colorlib.com/wp/template/cvportfolio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cvportfolio-free-template.jpg) · [cvfolio](https://cvfolio.free.componentdock.com)
 - [x] **Digilab** — [colorlib](https://colorlib.com/wp/template/digilab/) · [byteops](https://byteops.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/digilab-free-template.jpg)
