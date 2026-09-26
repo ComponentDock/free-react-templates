@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* CivicPulse brand palette — political party template.
+     Primary blue #3898f8, dark top bar #222, light bg #f9f9ff,
+     footer #04091e, body text #777, headings #222. */
+  --color-brand: #3898f8;
+  --color-brand-dark: #2a7cd4;
+
+  --color-ink: #222222;
+  --color-paper: #f9f9ff;
+  --color-mist: #777777;
+
+  --color-topbar: #222222;
+  --color-footer: #04091e;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the blue. */
+  --color-primary-50: #eef6ff;
+  --color-primary-100: #d9ebff;
+  --color-primary-200: #bcd9ff;
+  --color-primary-300: #8ec1ff;
+  --color-primary-400: #599fff;
+  --color-primary-500: #3898f8;
+  --color-primary-600: #2a7cd4;
+  --color-primary-700: #1e63b0;
+  --color-primary-800: #164d8c;
+  --color-primary-900: #0f3a6a;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-serif, Georgia, serif;
+}
