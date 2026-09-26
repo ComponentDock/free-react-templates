@@ -2415,7 +2415,7 @@
 - [x] **Personal** — [colorlib](https://colorlib.com/wp/template/personal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personal-free-template.jpg) · [Solo](https://solo.free.componentdock.com)
 - [x] **Personal Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/personal-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personal-website-templates.jpg) · [persona](https://persona.free.componentdock.com)
 - [x] **Personalportfolio** — [colorlib](https://colorlib.com/wp/template/personalportfolio/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personalportfolio-free-template.jpeg) · [resume](https://resume.free.componentdock.com)
-- [~] **Personify** — [colorlib](https://colorlib.com/wp/template/personify/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personify-free-template.jpg)
+- [x] **Personify** — [colorlib](https://colorlib.com/wp/template/personify/) · [selfcraft](https://selfcraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personify-free-template.jpg)
 - [x] **Philosophy** — [colorlib](https://colorlib.com/wp/template/philosophy/) · [sonder](https://sonder.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/philosophy-free-lifestyle-blog-website-template.jpg)
 - [x] **Plataforma** — [colorlib](https://colorlib.com/wp/template/plataforma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/plataforma-free-template.jpg) · [tribune](https://tribune.free.componentdock.com)
 - [ ] **Portfolio 2** — [colorlib](https://colorlib.com/wp/template/portfolio-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/portfolio2-free-template.jpg)
