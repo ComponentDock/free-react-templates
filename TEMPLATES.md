@@ -2428,7 +2428,7 @@
 - [ ] **Skater** — [colorlib](https://colorlib.com/wp/template/skater/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skater-free-template.jpg)
 - [x] **Space** · [cosmos](https://free-react-templates-cosmos.surge.sh) — [colorlib](https://colorlib.com/wp/template/space/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/space-free-template.jpg)
 - [x] **Suppablog** — [colorlib](https://colorlib.com/wp/template/suppablog/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/suppablog-free-creative-blog-template-for-writters.jpg) · [scribble](https://scribble.free.componentdock.com)
-- [~] **Unfold** — [colorlib](https://colorlib.com/wp/template/unfold/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unfold-free-template.jpeg)
+- [x] **Unfold** — [colorlib](https://colorlib.com/wp/template/unfold/) · [reveal](https://reveal.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unfold-free-template.jpeg)
 
 ## Photography (49)
 
