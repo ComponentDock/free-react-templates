@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pivot brand colors — from the ColorLib "Martin" preview
+     (https://preview.colorlib.com/theme/martin/ + css/style.css):
+     a personal developer portfolio theme with a bright yellow #ffdd00
+     accent, dark nav overlay rgba(0,43,220,0.9) blue, light body
+     background #f7f7f7, and dark text #1a1a1a. */
+  --color-primary-50: #fffde6;
+  --color-primary-100: #fff9b3;
+  --color-primary-200: #fff580;
+  --color-primary-300: #fff14d;
+  --color-primary-400: #ffdd00;
+  --color-primary-500: #e6c700;
+  --color-primary-600: #b39b00;
+  --color-primary-700: #806e00;
+  --color-primary-800: #4d4200;
+  --color-primary-900: #1a1600;
+
+  /* Nav blue overlay (ColorLib #002bdc at 90% opacity). */
+  --color-nav-blue: #002bdc;
+
+  /* Body background (ColorLib #f7f7f7). */
+  --color-surface: #f7f7f7;
+
+  /* Footer dark background (ColorLib .colorlib-footer). */
+  --color-footer-bg: #2b2b2b;
+
+  /* Muted copy (ColorLib rgba(114,114,114,0.8)). */
+  --color-smoke: rgba(114, 114, 114, 0.8);
+
+  --color-ink: #1a1a1a;
+
+  /* Poppins (headings + body) via Google Fonts <link> in index.html —
+     matching the ColorLib font family. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
