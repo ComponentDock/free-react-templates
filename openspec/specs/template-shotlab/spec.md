@@ -14,162 +14,134 @@ ShotLab is a single-page PHOTOGRAPHY PORTFOLIO recreation of ColorLib's "Mostudi
 
 Extracted from the live preview CSS (`css/style.css`) and inline styles:
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| Brand accent | `#f3c623` (golden yellow) | Buttons, hover borders, decorative line, active states |
-| Background primary | `#000000` (black) | Main background, sidebar, portfolio text areas |
-| Text primary | `#ffffff` | Body text, headings, nav links |
-| Text secondary | `rgba(255,255,255,0.6)` | Subheadings, descriptions, pricing labels |
-| Text muted | `rgba(255,255,255,0.2)` | Category labels on portfolio items |
-| Border accent | `#f3c623` | Button borders, hover icon borders |
-| Font heading | `"Abril Fatface", cursive` | Hero headings, portfolio titles, section titles |
-| Font body | `"Poppins", Arial, sans-serif` | Body text, navigation, team names |
-| Button radius | `30px` (fully rounded) | All primary buttons |
-| Button style | Outline on hover: transparent bg + `#f3c623` text/border | Primary CTA buttons |
-| Section padding | `5em 0` (desktop), `3em 0` (mobile) | Standard sections |
-| Overlay opacity | `0.3` on black | Image overlays in pricing/about backgrounds |
+| Token              | Value                                                    | Usage                                                  |
+| ------------------ | -------------------------------------------------------- | ------------------------------------------------------ |
+| Brand accent       | `#f3c623` (golden yellow)                                | Buttons, hover borders, decorative line, active states |
+| Background primary | `#000000` (black)                                        | Main background, sidebar, portfolio text areas         |
+| Text primary       | `#ffffff`                                                | Body text, headings, nav links                         |
+| Text secondary     | `rgba(255,255,255,0.6)`                                  | Subheadings, descriptions, pricing labels              |
+| Text muted         | `rgba(255,255,255,0.2)`                                  | Category labels on portfolio items                     |
+| Border accent      | `#f3c623`                                                | Button borders, hover icon borders                     |
+| Font heading       | `"Abril Fatface", cursive`                               | Hero headings, portfolio titles, section titles        |
+| Font body          | `"Poppins", Arial, sans-serif`                           | Body text, navigation, team names                      |
+| Button radius      | `30px` (fully rounded)                                   | All primary buttons                                    |
+| Button style       | Outline on hover: transparent bg + `#f3c623` text/border | Primary CTA buttons                                    |
+| Section padding    | `5em 0` (desktop), `3em 0` (mobile)                      | Standard sections                                      |
+| Overlay opacity    | `0.3` on black                                           | Image overlays in pricing/about backgrounds            |
 
-## Visual Design Notes (from preview + screenshot)
+## Requirements
 
-The template is a dark, moody photography portfolio with a LEFT SIDEBAR navigation. Key visual characteristics:
+### Requirement: Sidebar Navigation
 
-1. **Sidebar layout:** Fixed left sidebar with logo (background image), nav links, newsletter signup, and copyright. Collapses to hamburger on mobile.
-2. **Portfolio grid:** Full-width alternating rows — each row is 50/50 image + text, alternating left/right. Black background with white text, golden accent.
-3. **Typography:** Large serif headings (Abril Fatface) in white on black, with golden yellow accent on hover. Small uppercase category labels with wide letter-spacing.
-4. **About section:** Full-width image background with dark overlay, white heading with golden span highlight, team member circular photos below.
-5. **Pricing:** 4-column grid of pricing cards on a dark image background with overlay. Each card has a title, price, feature list, and CTA button.
-6. **Contact:** Dark background with form fields (transparent bg, bottom-border only). Send button.
-7. **Footer:** Dark, minimal — copyright line with heart icon.
-8. **Color palette:** Strictly black + white + golden yellow (#f3c623). No other accent colors.
+Desktop sidebar is visible on large screens with logo, nav links, newsletter signup, and copyright.
 
-## Gherkin Requirements
+#### Scenario: Desktop sidebar is visible
 
-### Sidebar Navigation
+- **WHEN** the viewport width is >= 992px
+- **THEN** a fixed left sidebar is displayed with logo, navigation links (Home, Gallery, About, Pricing, Contact), newsletter signup form, and copyright footer
 
-```gherkin
-Feature: Sidebar Navigation
+#### Scenario: Mobile sidebar collapses to hamburger
 
-  Scenario: Desktop sidebar is visible on large screens
-    Given the viewport width is >= 992px
-    When the page loads
-    Then a fixed left sidebar is displayed
-    And the sidebar contains the logo with a background image
-    And the sidebar contains navigation links: Home, Gallery, About, Pricing, Contact
-    And the sidebar contains a newsletter signup form with email input
-    And the sidebar contains a copyright footer
+- **WHEN** the viewport width is < 992px
+- **THEN** the sidebar is hidden and a hamburger toggle button is visible
+- **AND** clicking the hamburger slides the sidebar in from the left
+- **AND** clicking a nav link closes the sidebar
 
-  Scenario: Mobile sidebar collapses to hamburger
-    Given the viewport width is < 992px
-    When the page loads
-    Then the sidebar is hidden off-screen
-    And a hamburger toggle button is visible in the top-left corner
-    When the hamburger is clicked
-    Then the sidebar slides in from the left
-    And clicking a nav link closes the sidebar
+#### Scenario: Active nav link is highlighted
 
-  Scenario: Active nav link is highlighted
-    Given the sidebar is visible
-    Then the current section's nav link has an active class with golden underline
-```
+- **GIVEN** the sidebar is visible
+- **THEN** the current section's nav link has an active class with golden underline
 
-### Portfolio Gallery
+### Requirement: Portfolio Gallery
 
-```gherkin
-Feature: Portfolio Gallery
+Portfolio items display in alternating rows with image on one side and text on the other.
 
-  Scenario: Portfolio items display in alternating rows
-    Given the portfolio section is visible
-    Then there are at least 8 portfolio items
-    And odd items show image on the left and text on the right
-    And even items show image on the right and text on the left
+#### Scenario: Portfolio items display in alternating rows
 
-  Scenario: Each portfolio item has required elements
-    Given a portfolio item is rendered
-    Then it displays a category label (uppercase, wide letter-spacing)
-    And it displays a title in Abril Fatface font
-    And it displays a description paragraph
-    And it displays a "View Portfolio" CTA button with golden border
-    And hovering the image shows a zoom icon overlay
+- **GIVEN** the portfolio section is visible
+- **THEN** there are at least 8 portfolio items
+- **AND** odd items show image on the left and text on the right
+- **AND** even items show image on the right and text on the left
 
-  Scenario: Portfolio text alternates alignment
-    Given odd portfolio items exist
-    Then the text content is left-aligned
-    Given even portfolio items exist
-    Then the text content is right-aligned (text-md-right)
-```
+#### Scenario: Each portfolio item has required elements
 
-### About Section
+- **GIVEN** a portfolio item is rendered
+- **THEN** it displays a category label (uppercase, wide letter-spacing)
+- **AND** it displays a title in Abril Fatface font
+- **AND** it displays a description paragraph
+- **AND** it displays a "View Portfolio" CTA button with golden border
+- **AND** hovering the image shows a zoom icon overlay
 
-```gherkin
-Feature: About Section
+### Requirement: About Section
 
-  Scenario: About section displays founder info
-    Given the about section is visible
-    Then it shows a heading with founder name highlighted in golden yellow
-    And it shows a team section with 3 circular member photos
-    And each team member has a name and role label
+About section displays founder info with team member photos on a dark background.
 
-  Scenario: About section has dark background
-    Given the about section is rendered
-    Then the background is black with a subtle dark image overlay
-    And all text is white
-```
+#### Scenario: About section displays founder info
 
-### Pricing Section
+- **GIVEN** the about section is visible
+- **THEN** it shows a heading with founder name highlighted in golden yellow
+- **AND** it shows a team section with 3 circular member photos
+- **AND** each team member has a name and role label
 
-```gherkin
-Feature: Pricing Section
+#### Scenario: About section has dark background
 
-  Scenario: Pricing section displays 4 plans
-    Given the pricing section is visible
-    Then there are 4 pricing cards displayed in a row
+- **GIVEN** the about section is rendered
+- **THEN** the background is black with a subtle dark image overlay
+- **AND** all text is white
 
-  Scenario: Each pricing card has required elements
-    Given a pricing card is rendered
-    Then it displays a plan title (e.g. "Model Photography")
-    And it displays a price in large bold white text
-    And it displays a list of features
-    And it displays a CTA button with golden border
-```
+### Requirement: Pricing Section
 
-### Contact Section
+Pricing section displays 4 plan cards in a row.
 
-```gherkin
-Feature: Contact Section
+#### Scenario: Pricing section displays 4 plans
 
-  Scenario: Contact form is displayed
-    Given the contact section is visible
-    Then it shows form fields: name, email, subject, message
-    And each field has a transparent background with bottom-border only
-    And there is a "Send Message" button with golden border
+- **GIVEN** the pricing section is visible
+- **THEN** there are 4 pricing cards displayed in a row
 
-  Scenario: Form fields have placeholder text
-    Given the contact form is rendered
-    Then each input has placeholder text in white with reduced opacity
-```
+#### Scenario: Each pricing card has required elements
 
-### Newsletter Sidebar
+- **GIVEN** a pricing card is rendered
+- **THEN** it displays a plan title
+- **AND** it displays a price in large bold white text
+- **AND** it displays a list of features
+- **AND** it displays a CTA button with golden border
 
-```gherkin
-Feature: Newsletter Sidebar
+### Requirement: Contact Section
 
-  Scenario: Newsletter signup form in sidebar
-    Given the sidebar is visible
-    Then a newsletter heading is displayed
-    And an email input field is shown
-    And a submit button with paper-plane icon is present
-```
+Contact form with transparent inputs and bottom-border styling.
 
-### Footer
+#### Scenario: Contact form is displayed
 
-```gherkin
-Feature: Footer
+- **GIVEN** the contact section is visible
+- **THEN** it shows form fields: name, email, subject, message
+- **AND** each field has a transparent background with bottom-border only
+- **AND** there is a "Send Message" button with golden border
 
-  Scenario: Footer displays copyright
-    Given the footer is visible
-    Then it shows copyright text with current year
-    And it links to https://www.componentdock.com/ (Component Dock)
-```
+#### Scenario: Form fields have placeholder text
+
+- **GIVEN** the contact form is rendered
+- **THEN** each input has placeholder text in white with reduced opacity
+
+### Requirement: Newsletter Sidebar
+
+Newsletter signup form in the sidebar.
+
+#### Scenario: Newsletter signup form in sidebar
+
+- **GIVEN** the sidebar is visible
+- **THEN** a newsletter heading is displayed
+- **AND** an email input field is shown
+- **AND** a submit button with paper-plane icon is present
+
+### Requirement: Footer
+
+Footer displays copyright with Component Dock link.
+
+#### Scenario: Footer displays copyright
+
+- **GIVEN** the footer is visible
+- **THEN** it shows copyright text with current year
+- **AND** it links to https://www.componentdock.com/ (Component Dock)
 
 ## Verification Checklist
 
