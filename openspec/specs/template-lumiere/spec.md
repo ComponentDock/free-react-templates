@@ -2,90 +2,80 @@
 
 Recreation of ColorLib **Mostudio** (https://colorlib.com/wp/template/mostudio/).
 
+## Purpose
+
+A free photography portfolio template with sidebar navigation, featuring an alternating zigzag layout of portfolio items (image + text) and a dark sidebar with newsletter subscription.
+
 ## Design Tokens
 
-| Token           | Value                                      |
-| --------------- | ------------------------------------------ |
-| Brand accent    | `#F96D00` (vibrant orange)                 |
-| Sidebar bg      | `#000000` (black) with subtle texture      |
-| Body font       | Poppins (Google Fonts)                     |
-| Display font    | Abril Fatface (Google Fonts)               |
-| Body text color | `#212529`                                  |
-| Muted text      | `#6c757d`                                  |
-| White           | `#ffffff`                                  |
-| Section bg      | `#ffffff` (white)                          |
-| Button style    | Outlined, uppercase, 12px, border on hover |
+| Token           | Value                        |
+| --------------- | ---------------------------- |
+| Brand accent    | `#F96D00` (vibrant orange)   |
+| Sidebar bg      | `#000000` (black)            |
+| Body font       | Poppins (Google Fonts)       |
+| Display font    | Abril Fatface (Google Fonts) |
+| Body text color | `#212529`                    |
+| Muted text      | `#6c757d`                    |
+| White           | `#ffffff`                    |
 
 ## Preview URL
 
 https://preview.colorlib.com/theme/mostudio/
 
-## Fallback
+## Requirements
 
-Preview is reachable; screenshot used for additional visual confirmation.
+### REQ-1: Sidebar Navigation
 
-## Layout
+The sidebar must be a fixed left panel with the brand name, navigation links, newsletter form, and Component Dock attribution.
 
-- **Sidebar** (fixed left, ~280px, dark bg): logo with background image, nav links (Home, Gallery, About, Pricing, Contact), newsletter subscription form, copyright footer
-- **Main content** (right of sidebar): full-width portfolio grid
-  - 9 portfolio items in alternating zigzag layout (image left / text right, then image right / text left)
-  - Each item: large image, category subheading, title, description paragraph, "View Portfolio" button
-  - "Load more" button at bottom
-- **Mobile**: sidebar collapses to top nav; portfolio items stack vertically
+#### Scenario: Sidebar renders brand and navigation
 
-## Sections (in order)
+- GIVEN the page loads
+- WHEN the sidebar is visible
+- THEN it shows the brand name "Lumiere"
+- AND it shows navigation links: Home, Gallery, About, Pricing, Contact
 
-1. **Sidebar** — fixed left panel with brand logo (text), nav links, newsletter form, copyright
-2. **PortfolioGrid** — 9 alternating image+text rows with "Load more" CTA
-3. **Footer** — Component Dock branding (mandatory)
+#### Scenario: Sidebar newsletter form
 
-## Content
+- GIVEN the sidebar newsletter section
+- WHEN the user types an email and clicks subscribe
+- THEN the form prevents default submission
 
-### Sidebar
+#### Scenario: Sidebar Component Dock attribution
 
-- Brand: "Lumiere" (text logo)
-- Nav: Home, Gallery, About, Pricing, Contact
-- Newsletter: "Subscribe for newsletter" heading, email input, submit
-- Copyright: "Made with Component Dock" + year
+- GIVEN the sidebar footer
+- WHEN the page loads
+- THEN it shows a link to https://www.componentdock.com/ branded as "Component Dock"
 
-### Portfolio Items
+### REQ-2: Portfolio Grid
 
-| #   | Category | Title             | Image seed         |
-| --- | -------- | ----------------- | ------------------ |
-| 1   | Portrait | Black & Gold Face | lumiere-portrait-1 |
-| 2   | Nature   | Green Leaves      | lumiere-nature-1   |
-| 3   | Nature   | Coal              | lumiere-nature-2   |
-| 4   | Nature   | Top Leaf          | lumiere-nature-3   |
-| 5   | Portrait | Building          | lumiere-portrait-2 |
-| 6   | Fashion  | Black Girl Model  | lumiere-fashion-1  |
-| 7   | Animals  | Pug Puppy         | lumiere-animals-1  |
-| 8   | Nature   | White Flower      | lumiere-nature-4   |
-| 9   | Animals  | Turtle            | lumiere-animals-2  |
+The main content area must display 9 portfolio items in an alternating left-right zigzag layout.
 
-All descriptions use placeholder text ("Far far away, behind the word mountains...").
+#### Scenario: Portfolio items render
 
-## Scenarios
+- GIVEN the page loads
+- WHEN the portfolio grid is visible
+- THEN it shows 9 portfolio items each with an image, category, title, description, and "View Portfolio" button
 
-### Sidebar renders correctly
+#### Scenario: Alternating layout
 
-- Given the page loads, when the sidebar is visible, then it shows the brand name "Lumiere", all 5 nav links, and the newsletter form.
+- GIVEN the portfolio grid
+- WHEN items are rendered
+- THEN odd items show image on the left and text on the right
+- AND even items show text on the left and image on the right
 
-### Portfolio items render
+#### Scenario: Load more button
 
-- Given the page loads, when the portfolio grid is visible, then it shows 9 portfolio items each with an image, category, title, description, and "View Portfolio" button.
+- GIVEN the portfolio grid
+- WHEN the "Load more" button is visible
+- THEN it has an accessible label and icon
 
-### Alternating layout
+### REQ-3: Footer
 
-- Given the portfolio grid, when items are rendered, then odd items show image on the left and text on the right, and even items show text on the left and image on the right.
+The footer must include Component Dock branding.
 
-### Mobile sidebar collapses
+#### Scenario: Footer renders Component Dock link
 
-- Given the viewport is less than 1024px, when the page loads, then the sidebar is hidden and a mobile nav toggle is shown.
-
-### Load more button
-
-- Given the portfolio grid, when the "Load more" button is visible, then it has an accessible label and icon.
-
-### Newsletter form
-
-- Given the sidebar newsletter, when the user types an email and submits, then the form prevents default submission.
+- GIVEN the page footer
+- WHEN the page loads
+- THEN it shows a link to https://www.componentdock.com/ branded as "Component Dock"
