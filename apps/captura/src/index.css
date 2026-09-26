@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Captura brand palette — blue accent (#48B6FB) */
+  --color-brand-50: #eff9ff;
+  --color-brand-100: #daf1ff;
+  --color-brand-200: #bee7ff;
+  --color-brand-300: #91d9ff;
+  --color-brand-400: #48b6fb;
+  --color-brand-500: #21a0f5;
+  --color-brand-600: #0983e0;
+  --color-brand-700: #0769c8;
+  --color-brand-800: #0a56a3;
+  --color-brand-900: #0f4980;
+
+  --color-dark: #2c2c2c;
+  --color-heading: #1f1f1f;
+  --color-body: #4d4d4d;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
