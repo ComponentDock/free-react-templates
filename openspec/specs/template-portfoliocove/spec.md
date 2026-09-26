@@ -1,109 +1,118 @@
-# Template: PortfolioCove (Portfolio)
+# Template: PortfolioCove (Minimalist Portfolio)
 
 ## Purpose
 
-Recreation of ColorLib "Po Portfolio"
-(source: https://colorlib.com/wp/template/po-portfolio/).
-Preview: https://preview.colorlib.com/theme/po-portfolio/ (unreachable at
-prep time — design derived from screenshot only).
+PortfolioCove is a minimalist portfolio template recreation of ColorLib's "Po Portfolio" template.
 
-Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript.
+- **Source:** https://colorlib.com/wp/template/po-portfolio/
+- **Preview:** https://preview.colorlib.com/theme/po-portfolio/ (unreachable at prep time — design derived from screenshot)
+- **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
+- **Package:** `@free-react-templates/portfoliocove`
+- **Deploy:** `https://portfoliocove.free.componentdock.com`
 
-## Design tokens
+## Design Tokens
 
-| Token          | Value                        | Notes                                    |
-| -------------- | ---------------------------- | ---------------------------------------- |
-| Brand color    | `#ffffff` (white)            | Page background                          |
-| Secondary bg   | `#f5f5f5` (light gray)      | Image card backgrounds, sidebar area     |
-| Text primary   | `#333333` (dark gray)        | Headings, logo                           |
-| Text secondary | `#999999` (mid gray)         | Breadcrumb text                          |
-| Font family    | System sans-serif             | Clean, minimal; fallback to `Inter`      |
-| Grid gap       | ~24px                        | Between portfolio items                  |
-| Border radius  | 0 (square)                   | No visible rounding on cards             |
-| Card shadow    | none                         | Clean flat design                        |
-| Sidebar width  | ~80px                        | Left sidebar, fixed                      |
+| Token              | Value                  | Usage                     |
+| ------------------ | ---------------------- | ------------------------- |
+| Background primary | `#ffffff` (white)      | Page background           |
+| Background card    | `#f5f5f5` (light gray) | Image card backgrounds    |
+| Text primary       | `#333333` (dark gray)  | Headings, logo            |
+| Text secondary     | `#999999` (mid gray)   | Breadcrumb text           |
+| Font family        | `Inter, sans-serif`    | Clean, minimal sans-serif |
+| Grid gap           | `24px`                 | Between portfolio items   |
+| Border radius      | `0` (square)           | No rounding on cards      |
+| Card shadow        | none                   | Clean flat design         |
+| Sidebar width      | `80px`                 | Fixed left sidebar        |
 
-## Layout structure
+## Requirements
 
-The template uses a **fixed left sidebar + main content area** layout:
+### Requirement: Fixed Left Sidebar
 
-1. **Left Sidebar** (fixed, ~80px wide, white background):
-   - Brand logo "Po." at top (bold, dark, large sans-serif)
-   - Hamburger menu icon below (≡, thin lines, dark gray)
-2. **Breadcrumb** (top of main content area):
-   - "Home / Portfolio" — light gray, small text
-3. **Portfolio Grid** (main area):
-   - 4-column masonry-style grid of square/rectangular image cards
-   - Each card: light gray background, centered product/photography image
-   - Images vary in content (plants, typography, objects, abstract)
-   - No hover effects visible in screenshot
-4. **No visible footer** in the screenshot
+The sidebar is fixed to the left side of the viewport with brand logo and navigation toggle.
 
-## Gherkin scenarios
+#### Scenario: Sidebar displays brand logo
 
-### Sidebar
+- **WHEN** the page loads
+- **THEN** the sidebar shows "Plinth." as the brand text
+- **AND** the brand text is bold and dark colored
 
-```gherkin
-Scenario: Sidebar displays brand logo
-  Given the page loads
-  Then the sidebar shows "Po." as the brand text
-  And the brand text is bold and dark colored
+#### Scenario: Sidebar displays hamburger menu
 
-Scenario: Sidebar displays hamburger menu
-  Given the page loads
-  Then the sidebar shows a hamburger menu icon
-  And clicking the hamburger toggles mobile navigation
-```
+- **WHEN** the page loads
+- **THEN** the sidebar shows a hamburger menu icon button
+- **AND** the button has aria-label "Toggle menu"
+- **AND** clicking the button toggles the navigation panel open/closed
 
-### Breadcrumb
+#### Scenario: Sidebar navigation links
 
-```gherkin
-Scenario: Breadcrumb shows current location
-  Given the page loads
-  Then a breadcrumb shows "Home / Portfolio"
-  And "Home" is a clickable link
-  And "Portfolio" is plain text (current page)
-```
+- **WHEN** the hamburger menu is clicked open
+- **THEN** navigation links are displayed (Home, Portfolio, About, Contact)
+- **AND** each link is clickable
 
-### Portfolio Grid
+#### Scenario: Fixed sidebar layout
 
-```gherkin
-Scenario: Portfolio grid displays items
-  Given the page loads
-  Then a 4-column grid of portfolio items is visible
-  And each item shows an image on a light gray background
+- **WHEN** the page loads
+- **THEN** the sidebar is fixed to the left
+- **AND** scrolling does not move the sidebar
+- **AND** the main content area fills the remaining width
 
-Scenario: Portfolio items are responsive
-  Given the viewport is tablet-width
-  Then the grid shows 2 columns
-  Given the viewport is mobile-width
-  Then the grid shows 1 column
+### Requirement: Breadcrumb Navigation
 
-Scenario: Portfolio items are clickable
-  Given the page loads
-  When a user clicks a portfolio item
-  Then a detail view or lightbox opens (or navigates to detail page)
-```
+A breadcrumb shows the current page location at the top of the main content area.
 
-### Layout
+#### Scenario: Breadcrumb shows current location
 
-```gherkin
-Scenario: Fixed sidebar layout
-  Given the page loads
-  Then the sidebar is fixed to the left
-  And scrolling does not move the sidebar
-  And the main content area fills the remaining width
-```
+- **WHEN** the page loads
+- **THEN** a breadcrumb shows "Home / Portfolio"
+- **AND** "Home" is a clickable link with href "/"
+- **AND** "Portfolio" is plain text (current page)
 
-## Verification checklist
+### Requirement: Portfolio Grid
 
-- [ ] Sidebar is fixed left, ~80px wide
-- [ ] "Po." brand text is bold and dark
-- [ ] Hamburger menu is visible and functional
-- [ ] Breadcrumb shows "Home / Portfolio"
-- [ ] Portfolio grid is 4 columns on desktop
-- [ ] Grid is responsive (2 cols tablet, 1 col mobile)
-- [ ] Images have light gray card backgrounds
-- [ ] No ColorLib references in app code
-- [ ] Footer links to componentdock.com
-- [ ] 100% test coverage
+A responsive grid of portfolio items displays images in a clean layout.
+
+#### Scenario: Portfolio grid displays items
+
+- **WHEN** the page loads
+- **THEN** a grid of 12 portfolio items is visible
+- **AND** each item shows an image on a light gray background
+- **AND** each image has descriptive alt text
+
+#### Scenario: Portfolio grid is responsive
+
+- **WHEN** the viewport is desktop-width (>= 1024px)
+- **THEN** the grid shows 4 columns
+- **WHEN** the viewport is tablet-width (>= 640px)
+- **THEN** the grid shows 2 columns
+- **WHEN** the viewport is mobile-width (< 640px)
+- **THEN** the grid shows 1 column
+
+#### Scenario: Portfolio items are interactive
+
+- **WHEN** the page loads
+- **THEN** each portfolio item is a clickable button
+
+### Requirement: Footer with Component Dock Attribution
+
+The footer displays copyright and a Component Dock attribution link.
+
+#### Scenario: Footer renders Component Dock link
+
+- **WHEN** the page loads
+- **THEN** the footer is present with contentinfo role
+- **AND** it contains a link to "https://www.componentdock.com/" labeled "Component Dock"
+- **AND** the link opens in a new tab
+
+#### Scenario: Footer shows copyright
+
+- **WHEN** the page loads
+- **THEN** the footer displays copyright text with "Plinth"
+
+### Requirement: Document Title
+
+The page sets a descriptive title for the browser tab.
+
+#### Scenario: Title is set on mount
+
+- **WHEN** the app renders
+- **THEN** the document title is "Plinth — Minimalist Portfolio Template"
