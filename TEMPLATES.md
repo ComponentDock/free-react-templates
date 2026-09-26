@@ -2463,7 +2463,7 @@
 - [x] **Photogallery** — [colorlib](https://colorlib.com/wp/template/photogallery/) · [snapfold](https://snapfold.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/photogallery-free-template.jpg)
 - [x] **Photographer** — [colorlib](https://colorlib.com/wp/template/photographer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/photographer-free-template.jpg) · [photofolio](https://photofolio.free.componentdock.com)
 - [x] **Photography** — [colorlib](https://colorlib.com/wp/template/photography/) · [shuttercraft](https://shuttercraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/photography-free-photography-website-template.jpg)
-- [~] **Photography 2** — [colorlib](https://colorlib.com/wp/template/photography-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/photography-2-free-template-1.jpg)
+- [x] **Photography 2** — [colorlib](https://colorlib.com/wp/template/photography-2/) · [fotoroll](https://fotoroll.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/photography-2-free-template-1.jpg)
 - [x] **Photon** — [colorlib](https://colorlib.com/wp/template/photon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/photon-free-template.jpg) · [luma](https://free-react-templates-luma.surge.sh)
 - [x] **Photosen** — [colorlib](https://colorlib.com/wp/template/photosen/) · [filmstock](https://filmstock.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/photosen-free-template.jpg)
 - [ ] **Phozogy** — [colorlib](https://colorlib.com/wp/template/phozogy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/phozogy-free-template.jpg)
