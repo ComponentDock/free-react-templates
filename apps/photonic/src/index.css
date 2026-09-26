@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Photonic brand palette — purple/indigo primary (#7971ea) */
+  --color-brand-50: #f0f0fd;
+  --color-brand-100: #e0e0fb;
+  --color-brand-200: #c2c2f7;
+  --color-brand-300: #a3a3f3;
+  --color-brand-400: #7971ea;
+  --color-brand-500: #5a52e0;
+  --color-brand-600: #4540b8;
+  --color-brand-700: #333090;
+  --color-brand-800: #222068;
+  --color-brand-900: #111040;
+
+  --color-surface: #edf0f5;
+  --color-surface-alt: #f4f5f9;
+
+  --font-sans: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+}
