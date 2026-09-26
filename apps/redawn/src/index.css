@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Redawn brand palette — from the ColorLib "Rea" preview
+     (https://preview.colorlib.com/theme/rea/ + style.css):
+     a creative portfolio theme with a pink #f271ab primary,
+     dark gray body text, white background, and light gray accents. */
+  --color-brand: #f271ab;
+  --color-ink: #2f2f2f;
+  --color-muted: #7e7e7e;
+  --color-accent-gray: #cacaca;
+  --color-bg: #ffffff;
+
+  /* Font: Lato 300/400/700 via Google Fonts <link> in index.html. */
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
