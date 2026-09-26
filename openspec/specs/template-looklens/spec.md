@@ -1,110 +1,132 @@
-# Template: Looklens (Photo Gallery)
+# Template: LookLens (Photography Gallery)
 
 ## Purpose
 
-Recreation of ColorLib **TheLook** — a photo gallery / photography showcase
-template. Minimalist dark-accent aesthetic with editorial layout, gallery grid,
-and blog section.
+Recreation of ColorLib **The Look** — a minimalist photography gallery template with dark aesthetic.
 
 - **Source:** https://colorlib.com/wp/template/thelook/
 - **Preview:** https://preview.colorlib.com/theme/thelook/
-- **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
-- **Name rationale:** "Looklens" combines the original "Look" concept with
-  photography/lens imagery. Single lowercase word, kebab-safe.
+- **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
+- **New name:** `looklens` (never reuse source name "thelook")
 
-## Design Tokens (extracted from preview CSS)
+## Design Tokens
 
-| Token             | Value         | Usage                                      |
-| ----------------- | ------------- | ------------------------------------------ |
-| Font family       | Lato (300, 400, 700) | Body + headings via Google Fonts    |
-| Brand color       | #081624       | Headings, nav links, button fill, borders  |
-| Body text         | #5c5c5c       | Paragraphs, descriptions                   |
-| Blog background   | #f6f7f9       | Blog section background                    |
-| Footer background | #222222       | Dark footer                                |
-| Secondary text    | #828282       | Blog dates, categories                     |
-| Muted accent      | #c1c1c1       | Milestone/stat numbers                     |
-| Button style      | Transparent bg, uppercase, arrow icon, no border-radius |
-| Button solid      | #081624 bg, white text                           |
-| Section padding   | 120px top/bottom (spad)                          |
-| Hero height       | 950px         | Full-height carousel slide                  |
-| Hero heading      | 160px font    | Large display heading                       |
-| Grid              | 2-column gallery split (col-md-6)                |
+Extracted from `css/style.css` at preview.colorlib.com/theme/thelook/:
+
+### Colors
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--brand-dark` | `#081624` | Primary dark navy — backgrounds, text |
+| `--white` | `#fff` | White — text on dark, accents |
+| `--text-muted` | `#5c5c5c` | Gray — body text |
+| `--text-light` | `#828282` | Light gray — secondary text |
+| `--text-border` | `#c1c1c1` | Light gray — borders, dividers |
+| `--text-dark` | `#515151` | Dark gray — headings |
+
+### Fonts
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--font-body` | `"Lato", sans-serif` | All text (headings + body) |
+
+### Border Radius
+| Value | Usage |
+|-------|-------|
+| `0` | Most elements — sharp rectangular style |
+| `60px` | Pill-shaped buttons |
+
+### Layout
+- Full-width dark background (#081624) throughout
+- Minimal, clean aesthetic
+- Generous whitespace/padding
+- No accent colors — monochrome dark + white palette
+
+## Section Structure (in page order)
+
+1. **Navbar** — top nav with links: Home, Gallery, Artists, Shop, News, Contact. Logo/brand text.
+2. **Hero Slider** — 3-slide carousel with dark background. Each slide: "The Look Gallery" heading, "John Doe" artist name, "Showcase 23 January - 14 February" subtitle, "Read More" CTA. Full-width with background images.
+3. **Gallery** — quote section ("The camera makes you forget you're there...") + portfolio grid. 6 gallery items in a masonry/grid layout, each with: image, "Red Passion 2017" title, "Artist: John Doe" label, "view gallery" link.
+4. **Blog** — "Latest from the blog" section. 2 blog cards, each with: category tag ("photography"), title, date, excerpt, "Read More" link.
+5. **Contact/Footer** — "Get in touch" section with contact form (message input + "send message" button). Copyright notice with "Made with Component Dock" branding.
 
 ## Gherkin Requirements
 
-### Feature: Looklens — Photo Gallery Template
+### Navbar
+```gherkin
+Scenario: Top navigation with links
+  Given the page loads
+  Then a navigation bar is visible at the top
+  And it shows links: Home, Gallery, Artists, Shop, News, Contact
 
-#### Scenario: Header navigation bar
-- GIVEN the page loads
-- THEN a header is visible with a logo on the left
-- AND a navigation menu on the right with links: Home, Gallery, Artists, Shop, News, Contact
-- AND the nav text is uppercase, 13px, font-weight 700, color #081624
-- AND the header has padding 37px 53px
+Scenario: Navbar remains visible on scroll
+  Given the user scrolls down
+  Then the navbar stays fixed at the top of the viewport
+```
 
-#### Scenario: Hero carousel section
-- GIVEN the page loads
-- THEN a full-width hero carousel is visible below the header
-- AND each slide has a background image covering 70% width on the right
-- AND the slide text shows a heading "The Look Gallery" in 160px font
-- AND a subtext with date/event info in 36px font
-- AND a "Read More" CTA button with right arrow icon
-- AND carousel navigation arrows (prev/next) are at the bottom-right of the image area
-- AND the prev arrow has dark background (#081624), next arrow has white background
+### Hero Slider
+```gherkin
+Scenario: Hero carousel displays 3 slides
+  Given the page loads
+  Then a full-width hero carousel is visible
+  And slide 1 shows "The Look Gallery" heading and "John Doe" artist name
+  And each slide shows "Showcase 23 January - 14 February" subtitle
+  And each slide has a "Read More" CTA button
 
-#### Scenario: Gallery section with quote and items
-- GIVEN the user scrolls past the hero
-- THEN a two-column gallery section is displayed
-- AND the left column contains an italicized pull-quote (large heading)
-- AND below the quote are 3 gallery items (image + title + artist + "view gallery" link)
-- AND the right column shows 3 more gallery items
-- AND a "see all galleries" button appears at the bottom of the right column
-- AND gallery items have consistent spacing (margin-bottom ~123px)
+Scenario: Hero carousel auto-plays
+  Given the hero is visible
+  When 5 seconds pass
+  Then the carousel advances to the next slide automatically
+```
 
-#### Scenario: Blog section
-- GIVEN the user scrolls past the gallery
-- THEN a blog section with light gray background (#f6f7f9) is visible
-- AND a heading "Latest from the blog" in italic style
-- AND the layout has the title on the left (39% width) and blog posts on the right (57%)
-- AND each blog post has a thumbnail image (264px wide) floated left
-- AND each post shows: category label (uppercase, letter-spacing 3px), title, date, excerpt, "Read More" link
-- AND the date and category text use color #828282
+### Gallery
+```gherkin
+Scenario: Gallery section displays portfolio items
+  Given the gallery section scrolls into view
+  Then a quote heading is displayed at the top
+  And 6 gallery items are shown in a grid
+  And each item has a title "Red Passion 2017"
+  And each item shows "Artist: John Doe"
+  And each item has a "view gallery" link
 
-#### Scenario: Footer with contact form
-- GIVEN the user scrolls to the bottom
-- THEN a dark footer (#222222) is displayed
-- AND the left side shows "Get in touch" heading in white italic text with a description paragraph
-- AND the right side contains a contact form with: Name, Email, Subject inputs + Message textarea
-- AND form inputs have transparent background with bottom border (2px solid #656565)
-- AND a "send message" button with white text and right arrow icon
-- AND a copyright line at the bottom
-- AND the footer includes a link to https://www.componentdock.com/ ("Component Dock")
+Scenario: Gallery items respond to hover
+  Given the gallery is visible
+  When the user hovers over a gallery item
+  Then a dark overlay with the title and artist name appears
+```
 
-#### Scenario: Responsive behavior
-- GIVEN the page is viewed on mobile
-- THEN the header collapses to a mobile-friendly layout
-- AND the hero text and heading scale down appropriately
-- AND the gallery switches to single-column layout
-- AND the blog section stacks vertically
-- AND the footer form inputs stack full-width
+### Blog
+```gherkin
+Scenario: Blog section shows 2 articles
+  Given the blog section is in view
+  Then the heading reads "Latest from the blog"
+  And 2 blog cards are displayed
+  And each card has a "photography" category tag
+  And each card shows a title, date, and excerpt
+  And each card has a "Read More" link
+```
 
-#### Scenario: Accessibility
-- GIVEN any page state
-- THEN all images have descriptive alt text
-- AND navigation links are focusable with visible focus indicators
-- AND the contact form has proper labels associated with inputs
-- AND semantic HTML elements are used (header, section, footer, nav)
+### Contact/Footer
+```gherkin
+Scenario: Contact section with form
+  Given the contact section is in view
+  Then the heading reads "Get in touch"
+  And a text input for the message is visible
+  And a "send message" button is present
+
+Scenario: Footer displays copyright
+  Given the footer is visible
+  Then a copyright notice is shown
+  And "Made with Component Dock" branding is present
+```
 
 ## Verification Checklist
 
-- [ ] Header with logo and 6-item nav renders correctly
-- [ ] Hero carousel animates slides with background images and text
-- [ ] Gallery section: 2-column layout, 6 items total, quote text, CTA buttons
-- [ ] Blog section: gray background, 2 posts with thumbnails and metadata
-- [ ] Footer: dark background, contact form with 4 fields + submit button
-- [ ] Footer links to Component Dock
-- [ ] All design tokens match: #081624 brand, Lato font, #f6f7f9 blog bg, #222222 footer
-- [ ] Responsive: mobile-friendly at all breakpoints
-- [ ] Accessibility: alt text, focus states, semantic HTML, form labels
-- [ ] No references to ColorLib in app code
-- [ ] CNAME file: looklens.free.componentdock.com
+- [ ] Navbar: fixed positioning, nav links, responsive
+- [ ] Hero: 3-slide carousel with auto-play, dark overlay, CTAs
+- [ ] Gallery: 6 items in grid, hover overlay, title + artist + link
+- [ ] Blog: 2 article cards with category, title, date, excerpt, CTA
+- [ ] Contact: form with message input and send button
+- [ ] Footer: copyright, Component Dock branding
+- [ ] Design tokens: dark navy (#081624), Lato font, sharp edges + pill buttons
+- [ ] Responsive: stacked layouts on mobile
+- [ ] No ColorLib references in app code
 - [ ] 100% test coverage
