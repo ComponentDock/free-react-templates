@@ -2445,7 +2445,7 @@
 - [x] **Dronephotography** — [colorlib](https://colorlib.com/wp/template/dronephotography/) · [skylens](https://skylens.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dronephotography-free-template.jpg)
 - [x] **Droppler** — [colorlib](https://colorlib.com/wp/template/droppler/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/droppler-photography-blog-website-template.jpg) · [rivulet](https://rivulet.free.componentdock.com)
 - [x] **Elena Voss** — [colorlib](https://colorlib.com/wp/template/elena-voss/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elenavoss-template-1771943801609.jpg) · [shutter](https://shutter.free.componentdock.com)
-- [ ] **Elit** — [colorlib](https://colorlib.com/wp/template/elit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elit-free-template.jpg)
+- [~] **Elit** — [colorlib](https://colorlib.com/wp/template/elit/) · [lumier](https://lumier.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elit-free-template.jpg)
 - [x] **Flash** — [colorlib](https://colorlib.com/wp/template/flash/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/flash-free-template.jpg) · [iris](https://iris.free.componentdock.com)
 - [x] **Foto** — [colorlib](https://colorlib.com/wp/template/foto/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foto-free-template.jpg) · [fotura](https://fotura.free.componentdock.com)
 - [ ] **Fotograp** — [colorlib](https://colorlib.com/wp/template/fotograp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fotograp-free-template.jpg)
