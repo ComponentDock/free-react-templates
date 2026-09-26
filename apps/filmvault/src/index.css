@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — dark navy from Rettro design (#1f2b7b, #071112) */
+  --color-navy-50: #f0f0fa;
+  --color-navy-100: #d8d9ef;
+  --color-navy-200: #b1b3df;
+  --color-navy-300: #8a8dcf;
+  --color-navy-400: #6365bf;
+  --color-navy-500: #1f2b7b;
+  --color-navy-600: #1a2468;
+  --color-navy-700: #141c52;
+  --color-navy-800: #0f153d;
+  --color-navy-900: #071112;
+
+  /* Accent — cyan from Rettro (#4cd3e3) */
+  --color-cyan-50: #e8f9fb;
+  --color-cyan-100: #d1f3f7;
+  --color-cyan-200: #a3e7ef;
+  --color-cyan-300: #75dbe7;
+  --color-cyan-400: #4cd3e3;
+  --color-cyan-500: #22b8cc;
+  --color-cyan-600: #1b93a3;
+  --color-cyan-700: #146e7a;
+  --color-cyan-800: #0d4a52;
+  --color-cyan-900: #072529;
+
+  --font-heading: 'Playfair Display', ui-serif, Georgia, serif;
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
