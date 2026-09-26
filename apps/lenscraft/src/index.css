@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — coral/rose from the Proshoot design (#fc6060) */
+  --color-coral-50: #fef2f2;
+  --color-coral-100: #fde3e3;
+  --color-coral-200: #fccbcb;
+  --color-coral-300: #f9a3a3;
+  --color-coral-400: #fc6060;
+  --color-coral-500: #f53e3e;
+  --color-coral-600: #e22020;
+  --color-coral-700: #be1616;
+  --color-coral-800: #9c1616;
+  --color-coral-900: #821a1a;
+
+  /* Oswald — heading typeface; Roboto — body (Google Fonts via index.html) */
+  --font-heading: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}

@@ -2,131 +2,142 @@
 
 ## Purpose
 
-Recreation of ColorLib's "Alime" photography portfolio template.
+Recreation of ColorLib's "Proshoot" photography portfolio template.
 
-- **Source slug:** `alime`
-- **ColorLib URL:** https://colorlib.com/wp/template/alime/
-- **Preview URL:** https://preview.colorlib.com/theme/alime/
+- **Source slug:** `proshoot`
+- **ColorLib URL:** https://colorlib.com/wp/template/proshoot/
+- **Preview URL:** https://preview.colorlib.com/theme/proshoot/
 - **Stack:** React 19 + Vite + Tailwind CSS 4 + TypeScript
 - **App folder:** `apps/lenscraft`
 - **Package:** `@free-react-templates/lenscraft`
 
-## Design tokens (from preview stylesheet)
+## Requirements
 
-| Token              | Value                                                   | Notes                                                         |
-| ------------------ | ------------------------------------------------------- | ------------------------------------------------------------- |
-| Brand color        | `#fc6060`                                               | Coral/red, used on buttons, hover states, accents             |
-| Background (light) | `#f7f7f7`                                               | Section backgrounds                                           |
-| Background (white) | `#ffffff`                                               | Default page background                                       |
-| Text primary       | `#252525`                                               | Dark charcoal                                                 |
-| Text secondary     | `#636363`                                               | Medium gray                                                   |
-| Border / subtle    | `#ebebeb`                                               | Dividers, subtle borders                                      |
-| Font family        | `"Poppins", sans-serif`                                 | Google Fonts, loaded via `<link>`                             |
-| Button shape       | `border-radius: 60px`                                   | Pill/rounded buttons                                          |
-| Button style       | `border: 2px solid #fc6060`, transparent bg, white text | Ghost/outline style; on hover fills `#fc6060` with white text |
-| Button size        | `min-width: 160px`, `height: 46px`, `padding: 0 30px`   | Medium height                                                 |
-| Icon font          | Font Awesome 5 (ti-close, ti-search, ti-facebook, etc.) | Use `lucide-react` instead                                    |
-| Overlay            | `background-color: rgba(0, 0, 0, 0.4)`                  | Dark overlay on hero images                                   |
+### Requirement: Navbar renders with navigation links
 
-## Sections (in order)
+The navbar SHALL display the "Lenscraft" logo and navigation links (Home, About, Projects, Services, Blog). The navbar SHALL collapse to a hamburger menu on mobile viewports.
 
-1. **Navbar** — Fixed top, logo left, nav links center (Home, Pages dropdown, Portfolio dropdown, Blog dropdown, Contact), search icon right. Mobile hamburger menu.
-2. **Hero / Welcome Carousel** — Full-width slider with background images + dark overlay. Each slide: headline ("Hello World"), subtitle paragraph (photography quote), "Get a Quote" CTA button (pill, outline coral), email link. Two slides in original.
-3. **Portfolio Gallery** — Filter menu (All, Nature, People, Animals, Travel) centered. 4-column grid of portfolio items with hover overlay showing a "+" icon. 8 portfolio items with category tags for filtering.
-4. **Instagram Feed** — "Follow Instagram" heading + "@lenscraft" handle. Row of 5-6 Instagram-style images with hover overlay showing Instagram icon.
-5. **Footer** — Copyright text left, logo center, social icons right (Facebook, Twitter, Instagram, LinkedIn).
+#### Scenario: Desktop navbar displays links
 
-## Gherkin Requirements
+- **WHEN** the user visits the Lenscraft homepage on a desktop viewport
+- **THEN** the navbar displays "Lenscraft" logo
+- **AND** navigation links: Home, About, Projects, Services, Blog are visible
 
-### Scenario: Navbar renders with navigation links
+#### Scenario: Mobile hamburger menu toggles
 
-```
-Given the user visits the Lenscraft homepage
-Then the navbar displays "Lenscraft" logo
-And navigation links: Home, Pages, Portfolio, Blog, Contact
-And a search icon is visible
-```
+- **WHEN** the user views on a mobile viewport (< 768px)
+- **AND** clicks the hamburger menu button
+- **THEN** the mobile navigation menu expands
+- **AND** clicking a link closes the menu
 
-### Scenario: Hero carousel displays welcome slides
+### Requirement: Hero banner displays with headline and image
 
-```
-Given the user visits the homepage
-Then a hero section displays a full-width background image with dark overlay
-And the heading "Hello World" is visible
-And a subtitle quote about photography is visible
-And a "Get a Quote" button is visible with pill shape and coral outline
-And an email contact link is visible
-```
+The hero section SHALL display the headline "Images matter", a subtitle paragraph, an "Explore More" pill button, a hero image on the right, and social media icons on the side.
 
-### Scenario: Hero carousel auto-advances slides
+#### Scenario: Hero section renders all elements
 
-```
-Given the hero carousel is visible
-When 5 seconds pass without interaction
-Then the carousel transitions to the next slide
-And the heading animation changes direction
-```
+- **WHEN** the user visits the homepage
+- **THEN** a hero section displays with headline "Images matter"
+- **AND** a subtitle quote about photography is visible
+- **AND** an "Explore More" button is visible with pill shape
+- **AND** a hero image is displayed on the right
+- **AND** social media icons (Facebook, Twitter, Instagram) are visible
 
-### Scenario: Portfolio gallery shows filterable items
+### Requirement: About section renders with image and text
 
-```
-Given the user scrolls to the portfolio section
-Then a filter menu displays: All, Nature, People, Animals, Travel
-And 8 portfolio items display in a 4-column grid
-And each item shows a background image
-And hovering an item reveals a "+" icon overlay
-```
+The about section SHALL display a title "Let's Introduce About Myself", a portrait image, descriptive text, and a "Read More" button.
 
-### Scenario: Portfolio filter narrows visible items
+#### Scenario: About section content
 
-```
-Given the portfolio gallery is visible
-When the user clicks "Nature" filter
-Then only nature-tagged items remain visible
-And other items are hidden
-```
+- **WHEN** the user scrolls to the about section
+- **THEN** a section title "Let's Introduce About Myself" is visible
+- **AND** a portrait/photography image is displayed
+- **AND** descriptive text about the photographer is visible
+- **AND** a "Read More" button is visible
 
-### Scenario: Instagram feed section renders
+### Requirement: Services section displays 6 service cards
 
-```
-Given the user scrolls to the Instagram section
-Then a "Follow Instagram" heading is visible
-And a handle like "@lenscraft" is visible below
-And 5-6 Instagram-style images display in a row
-And hovering an image shows an Instagram icon overlay
-```
+The services section SHALL display a "What We Offer" heading and 6 service cards in a 3-column grid, each with an icon, title, and description.
 
-### Scenario: Footer renders with social links
+#### Scenario: Services grid renders all cards
 
-```
-Given the user scrolls to the footer
-Then copyright text is visible
-And a logo is centered
-And social media icon links are visible (Facebook, Twitter, Instagram, LinkedIn)
-And a "Component Dock" attribution link is present
-```
+- **WHEN** the user scrolls to the services section
+- **THEN** a "What We Offer" heading is visible
+- **AND** 6 service cards display in a 3-column grid
+- **AND** each card has an icon, title, and description
+- **AND** the services are: Fashion Photography, Nature Photography, Event Coverage, Property Tours, Multimedia Services, Wedding Photography
 
-### Scenario: Mobile responsive layout
+### Requirement: Portfolio gallery shows work items
 
-```
-Given the user views on a mobile viewport (< 768px)
-Then the navbar collapses to a hamburger menu
-And the portfolio grid switches to 1-2 columns
-And the Instagram feed scrolls horizontally
-```
+The portfolio section SHALL display a "Check Our Work" heading, portfolio items in an asymmetric masonry grid with hover overlays showing title and category, and a "View More" button.
 
-## Verification checklist
+#### Scenario: Portfolio grid renders items
 
-- [ ] Brand color `#fc6060` applied to buttons and accents
-- [ ] Poppins font loaded from Google Fonts
-- [ ] Pill-shaped buttons with 60px border-radius
-- [ ] Hero section with dark overlay on background images
-- [ ] Portfolio grid with 4 columns on desktop
-- [ ] Filter menu with category buttons
-- [ ] Hover effects on portfolio items (overlay + icon)
-- [ ] Instagram feed row with hover overlay
-- [ ] Footer with Component Dock link
-- [ ] Responsive: hamburger nav, 1-2 col grid on mobile
-- [ ] Placeholder images via `picsum.photos/seed/lenscraft-<n>/...`
-- [ ] No ColorLib references in app code
-- [ ] `npm run test:coverage` passes at 100%
+- **WHEN** the user scrolls to the portfolio section
+- **THEN** a "Check Our Work" heading is visible
+- **AND** portfolio items display in an asymmetric masonry grid
+- **AND** hovering an item reveals a title and category overlay
+- **AND** a "View More" button is visible
+
+### Requirement: Pricing section shows 3 packages
+
+The pricing section SHALL display a "Choose Your Package" heading and 3 pricing cards (Wedding $46, Studio $76, Fashion $96) with feature lists and "Book Now" buttons.
+
+#### Scenario: Pricing cards render correctly
+
+- **WHEN** the user scrolls to the pricing section
+- **THEN** a "Choose Your Package" heading is visible
+- **AND** 3 pricing cards display: Wedding ($46), Studio ($76), Fashion ($96)
+- **AND** each card shows included/excluded features with check/cross icons
+- **AND** a "Book Now" button is on each card
+
+### Requirement: Blog section shows recent posts
+
+The blog section SHALL display a "Latest Good Story" heading, 1 large featured blog post, and 3 smaller blog posts, each with an image, title, author, date, and excerpt.
+
+#### Scenario: Blog posts render correctly
+
+- **WHEN** the user scrolls to the blog section
+- **THEN** a "Latest Good Story" heading is visible
+- **AND** 1 large featured blog post is displayed
+- **AND** 3 smaller blog posts are displayed
+- **AND** each post shows an image, title, author, date, and excerpt
+
+### Requirement: Footer renders with Component Dock link
+
+The footer SHALL display About Us text, a newsletter signup form, social media follow icons, and copyright text with a "Component Dock" attribution link.
+
+#### Scenario: Footer content and attribution
+
+- **WHEN** the user scrolls to the footer
+- **THEN** an "About Us" section is visible
+- **AND** a newsletter signup form is visible
+- **AND** social media follow icons are visible (Facebook, Twitter, Dribbble, LinkedIn)
+- **AND** copyright text with "Component Dock" attribution link pointing to https://www.componentdock.com/ is present
+
+### Requirement: Mobile responsive layout
+
+The template SHALL be fully responsive with hamburger navigation, stacked layouts, and single-column grids on mobile viewports.
+
+#### Scenario: Mobile viewport layout
+
+- **WHEN** the user views on a mobile viewport (< 768px)
+- **THEN** the navbar collapses to a hamburger menu
+- **AND** the hero section stacks vertically
+- **AND** the services grid switches to 1 column
+- **AND** the portfolio grid switches to 1 column
+- **AND** the pricing grid switches to 1 column
+
+### Requirement: Design tokens applied correctly
+
+The template SHALL use brand color #fc6060 for buttons and accents, Oswald for headings, Roboto for body text, and pill-shaped buttons with 60px border-radius.
+
+#### Scenario: Design tokens verification
+
+- **WHEN** the template is rendered
+- **THEN** brand color #fc6060 is applied to buttons and accents
+- **AND** Oswald font is used for headings
+- **AND** Roboto font is used for body text
+- **AND** buttons have pill shape (60px border-radius)
+- **AND** placeholder images use picsum.photos/seed/lenscraft-*
+- **AND** no ColorLib references exist in app code
