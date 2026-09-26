@@ -1,212 +1,95 @@
-# Template: Captura (Photography Portfolio)
-
 ## Purpose
 
-Recreation of ColorLib's **Bato** template — a photography portfolio website with a full-bleed hero carousel and alternating work gallery entries. Built with React 19, Vite, Tailwind CSS 4, TypeScript.
+Captura is a photography portfolio template recreating the ColorLib "Halen" design. It features a dark hero with blue accent, photography skills showcase, wildlife split section, 3x3 photo gallery with hover overlays, testimonials, team section, contact info with map, Instagram feed, and footer with Component Dock branding.
 
-- **Source:** https://colorlib.com/wp/template/bato/
-- **Preview:** https://preview.colorlib.com/theme/bato/
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/bato-free-template.jpg
-- **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
-- **New name:** captura (apps/captura, @free-react-templates/captura)
+## Requirements
 
-## Design tokens
+### Requirement: Navbar with brand and navigation
 
-Extracted from the live preview CSS (`preview.colorlib.com/theme/bato/css/style.css`):
+Users SHALL see a sticky header with the "Captura" brand, navigation links (Home, About, Albums, Blog, Contact), and social media icons.
 
-| Token            | Value                          | Usage                                    |
-| ---------------- | ------------------------------ | ---------------------------------------- |
-| font-body        | "Karla", sans-serif            | Body text, nav links, descriptions       |
-| font-display     | "Playfair Display", serif      | Logo, hero headings, section titles      |
-| color-accent     | #F9CE00                        | Active nav links, hover states, tag text |
-| color-accent-alt | #FFE9E3                        | Secondary accent (light blush)           |
-| color-bg         | #FFFFFF                        | Page background, header                  |
-| color-text       | #000000                        | Headings, body text                      |
-| color-text-sec   | #333333                        | Secondary text, placeholders             |
-| color-text-muted | #727272 (rgba 114,114,114,0.8) | Muted descriptions                       |
-| color-btn-bg     | #000000                        | CTA button background                    |
-| color-btn-hover  | #F9CE00                        | CTA button hover background              |
-| radius-btn       | 0 (square)                     | Buttons: no border-radius                |
-| radius-toggle    | 2px                            | Nav hamburger toggle                     |
-| hero-split       | 60% / 40%                      | Hero: image left 60%, text right 40%     |
-| tag-spacing      | letter-spacing: 7px            | Hero tag labels ("Welcome", "Discover")  |
-| logo-size        | 24px, uppercase                | Header logo                              |
+#### Scenario: Desktop navbar renders all elements
 
-## Section structure (single-page React recreation)
+- **WHEN** the page loads
+- **THEN** the navbar displays the Captura logo, all five navigation links, and Facebook/Twitter/Instagram social icons
 
-The original template is multi-page (index, work, blog, about, contact). For the React recreation we collapse into a single page with these sections in order:
+### Requirement: Hero section with headline and CTA
 
-1. **Sidebar Navigation** — full-screen overlay with search input, nav links (Home, Work, Blog, About, Contact), and gallery thumbnail grid
-2. **Header / Navbar** — sticky top bar with logo "Captura" (left) and hamburger toggle (right)
-3. **Hero Carousel** — 3 slides, each with a 60/40 split (background image left, text panel right with slide number, tag label, headline, description, CTA button "View Galleries")
-4. **Works Gallery** — "Works" heading, then 5 work entries with alternating layouts (image 60% + text 40%, alternating left/right), each with title, description, and "View Photo" CTA
-5. **Subscribe** — centered section with email input and "Subscribe Now" button
-6. **Footer** — 3-column layout: Office address, Get in Touch (email), Social icons (Facebook, Twitter, Google+, Dribbble) + copyright
+Users SHALL see a full-width dark hero section with centered headline text and an "Explore Work" call-to-action button.
 
-## Gherkin requirements
+#### Scenario: Hero displays headline and CTA
 
-### Sidebar Navigation
+- **WHEN** the page loads
+- **THEN** the hero section shows "Hi, This is Captura, a professional Photographer" and "I Captured Moments" with an "Explore Work" button
 
-```gherkin
-Feature: Sidebar Navigation
-  Scenario: Toggle sidebar visibility
-    Given the user is on the page
-    When the user clicks the hamburger icon in the header
-    Then the sidebar overlay slides in from the left
-    And the sidebar shows a search input with placeholder "Enter any key to search..."
-    And the sidebar shows navigation links: Home, Work, Blog, About, Contact
-    And the sidebar shows a "Gallery" section with 4 thumbnail images
+### Requirement: Photography skills section
 
-  Scenario: Close sidebar
-    Given the sidebar is open
-    When the user clicks the hamburger icon again
-    Then the sidebar overlay slides out and disappears
+Users SHALL see a centered section with title "World class photography skills" and a descriptive paragraph.
 
-  Scenario: Sidebar link navigation
-    Given the sidebar is open
-    When the user clicks a navigation link
-    Then the page scrolls to the corresponding section
-    And the sidebar closes
-```
+#### Scenario: Skills section content
 
-### Header / Navbar
+- **WHEN** the user scrolls past the hero
+- **THEN** the photography skills section displays the title and description text
 
-```gherkin
-Feature: Header
-  Scenario: Logo display
-    Given the user is on the page
-    Then the header shows the logo text "Captura"
-    And the logo uses the Playfair Display font
-    And the logo is uppercase
+### Requirement: Wildlife photography split section
 
-  Scenario: Hamburger toggle
-    Given the user is on the page
-    Then a hamburger toggle button is visible in the header
-    When the user hovers over the hamburger toggle
-    Then the toggle background changes to black
-```
+Users SHALL see a split layout with a wildlife image on one side and title, description, and "Explore Work" button on the other.
 
-### Hero Carousel
+#### Scenario: Wildlife section split layout
 
-```gherkin
-Feature: Hero Carousel
-  Scenario: Display first slide
-    Given the user is on the page
-    Then the hero section fills the viewport height
-    And the left 60% shows a full-bleed background image
-    And the right 40% shows a text panel with:
-      | element    | content                    |
-      | slide num  | 01/03                      |
-      | tag        | Welcome                    |
-      | headline   | Photography is on it's way |
-      | desc       | descriptive paragraph      |
-      | cta        | View Galleries             |
+- **WHEN** the user scrolls to the wildlife section
+- **THEN** an image and text block are displayed side by side with a CTA button
 
-  Scenario: Carousel navigation
-    Given the hero carousel is showing slide 1
-    When the carousel advances to slide 2
-    Then the slide number updates to 02/03
-    And the tag shows "Photography"
-    And the headline shows "Capture interesting things."
-    And a new background image is displayed
+### Requirement: Photo gallery grid
 
-  Scenario: Third slide
-    Given the carousel is on slide 3
-    Then the slide number shows 03/03
-    And the tag shows "Discover"
-    And the headline shows "Discover New Things"
+Users SHALL see a 3x3 grid of photos where each photo shows a hover overlay with album title and category.
 
-  Scenario: CTA button styling
-    Given the hero text panel is visible
-    Then the "View Galleries" button has a black background
-    And the button has no border-radius (square corners)
-    And on hover the button background changes to yellow (#F9CE00)
-    And the button includes a right arrow icon
-```
+#### Scenario: Gallery renders 9 photos
 
-### Works Gallery
+- **WHEN** the gallery section is visible
+- **THEN** 9 photos are displayed in a grid with titles like "Baby album", "Portrait album", and "Nature album"
 
-```gherkin
-Feature: Works Gallery
-  Scenario: Section heading
-    Given the user scrolls to the works section
-    Then a heading "Works" is displayed centered
+### Requirement: Testimonials section
 
-  Scenario: Work entry layout
-    Given the works section is visible
-    Then there are 5 work entries
-    And each entry uses a 60/40 split layout
-    And entries alternate between:
-      | layout           | image position |
-      | text-right       | left 60%       |
-      | text-left        | right 60%      |
-    And each entry has a background image covering the 60% area
+Users SHALL see a centered testimonial with a quote, author name, and avatar image.
 
-  Scenario: Work entry content
-    Given a work entry is visible
-    Then it shows a heading linking to a detail page
-    And it shows a description paragraph
-    And it shows a "View Photo" button
-    And the button has square corners and black background
+#### Scenario: Testimonial displays author and quote
 
-  Scenario: Image hover effect
-    Given a work entry image is visible
-    When the user hovers over the image
-    Then a semi-transparent overlay with a search icon appears
-```
+- **WHEN** the user scrolls to testimonials
+- **THEN** "Our Customers Say" heading, quote text, and "Robert Thomson" author name with avatar are visible
 
-### Subscribe Section
+### Requirement: Team section with member cards
 
-```gherkin
-Feature: Subscribe
-  Scenario: Subscribe form display
-    Given the user scrolls to the subscribe section
-    Then an email input with placeholder "Enter your email" is shown
-    And a "Subscribe Now" button is shown next to the input
-    And the form is centered on the page
+Users SHALL see three team member cards, each with a photo, name, role "Photographer", and social media links.
 
-  Scenario: Subscribe button styling
-    Given the subscribe form is visible
-    Then the "Subscribe Now" button has a black background
-    And the button has square corners
-    And on hover the button background changes to yellow (#F9CE00)
-```
+#### Scenario: Three team members displayed
 
-### Footer
+- **WHEN** the team section loads
+- **THEN** Milani Mou, Jasmine Pinky, and Piya Zosoldos are shown with their photos and social links
 
-```gherkin
-Feature: Footer
-  Scenario: Footer layout
-    Given the user scrolls to the footer
-    Then 3 columns are displayed:
-      | column       | content                                    |
-      | Office       | Address with street and suite               |
-      | Get in Touch | Email link                                 |
-      | Social       | Facebook, Twitter, Google+, Dribbble icons |
+### Requirement: Contact information section
 
-  Scenario: Copyright line
-    Given the footer is visible
-    Then a copyright line shows the current year
-    And it links to Component Dock (https://www.componentdock.com/)
-```
+Users SHALL see a contact section with address, phone, email, social links, and a map placeholder.
 
-## Verification checklist
+#### Scenario: Contact details visible
 
-- [ ] Sidebar navigation toggles open/closed with animation
-- [ ] Sidebar shows search, nav links, and gallery thumbnails
-- [ ] Header shows "Captura" logo in Playfair Display, uppercase
-- [ ] Hero carousel cycles through 3 slides automatically
-- [ ] Each hero slide has 60/40 split layout (image left, text right)
-- [ ] Slide numbers, tags, headlines, descriptions match original
-- [ ] CTA buttons are square (no radius), black bg, yellow hover
-- [ ] Works section has 5 entries with alternating layouts
-- [ ] Work entries have title, description, "View Photo" CTA
-- [ ] Subscribe section with email input and button
-- [ ] Footer has 3 columns + copyright with Component Dock link
-- [ ] All design tokens match: Karla body, Playfair Display headings, #F9CE00 accent
-- [ ] Uses picsum.photos placeholder images (deterministic seeds)
-- [ ] Uses lucide-react for icons (search, arrow, social)
-- [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] public/CNAME contains captura.free.componentdock.com
-- [ ] package.json homepage is https://captura.free.componentdock.com
+- **WHEN** the contact section loads
+- **THEN** the address "200/D, Green lane, Kings street, New York", phone "+10 787 367 2567", and email "contact08@captura.com" are displayed
+
+### Requirement: Instagram feed row
+
+Users SHALL see a horizontal row of 6 photos with hover overlays showing Instagram icons.
+
+#### Scenario: Six Instagram photos rendered
+
+- **WHEN** the Instagram feed section is visible
+- **THEN** 6 photos are displayed in a row with Instagram overlay icons
+
+### Requirement: Footer with Component Dock branding
+
+Users SHALL see a dark footer with copyright text, social icons, and a link to Component Dock.
+
+#### Scenario: Footer renders Component Dock link
+
+- **WHEN** the footer is visible
+- **THEN** the text "Component Dock" links to https://www.componentdock.com/ with target="_blank"
