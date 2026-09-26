@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Reflexly brand palette — photography studio, green accent */
+  --color-brand: #009603;
+  --color-brand-hover: #007a02;
+  --color-brand-light: #e6f5e6;
+
+  --color-white: #ffffff;
+  --color-text-primary: #111111;
+  --color-text-secondary: #666666;
+  --color-text-muted: #999999;
+
+  --color-bg-light: #f5f5f5;
+  --color-bg-dark: #111111;
+  --color-bg-services: #ffffff;
+
+  --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-overlay-hover: rgba(0, 0, 0, 0.7);
+
+  /* Fonts */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Quantico', ui-sans-serif, system-ui, sans-serif;
+
+  /* Radii */
+  --radius-card: 0px;
+  --radius-btn: 0px;
+}
