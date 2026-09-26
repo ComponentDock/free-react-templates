@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-roboto: 'Roboto', sans-serif;
+  --font-rubik: 'Rubik', sans-serif;
+  --color-purple: #4458dc;
+  --color-purple-deep: #854fee;
+  --color-teal: #2ebccd;
+  --color-ink: #000000;
+  --color-body: #777777;
+  --color-heading: #000000;
+  --color-line: #eeeeee;
+  --color-surface: #f9f9fd;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-roboto);
+    color: var(--color-body);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-rubik);
+    color: var(--color-heading);
+  }
+}
