@@ -1,78 +1,135 @@
-# Template: Echo (Business & Creative Agency)
+# Template: Echo (Personal Portfolio)
 
 ## Purpose
 
-Recreation of ColorLib [Repeat](https://colorlib.com/wp/template/repeat/), a modern agency template featuring a bold hero, services overview, statistics counters, about section, and contact footer. Stack: Vite, React 19, Tailwind CSS 4, TypeScript.
+Echo is a single-page personal portfolio template — a creative portfolio
+for web designers and developers. It is an original React recreation of
+the ColorLib free "Beckham" template
+(preview: https://preview.colorlib.com/theme/beckham/ — personal/creative portfolio),
+built under a different name with the monorepo stack: Vite + React 19 +
+Tailwind CSS 4 + TypeScript.
 
-## Source Mapping & Provenance
+Design tokens captured from the original:
 
-- **ColorLib Source:** Repeat (`https://colorlib.com/wp/template/repeat/`)
-- **Live Preview:** `https://preview.colorlib.com/theme/repeat/`
-- **Assigned App Name:** `echo`
-- **Workspace Package:** `@free-react-templates/echo`
+- Font: Montserrat (Google Fonts via `<link>`)
+- Primary accent: #79efb4 (mint green)
+- Dark sidebar/nav: #1a1a1a
+- Light background: #fff (content areas)
+- Counter section: dark background (#222)
+- Footer: dark background (#222)
+- Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons
 
-## Design Tokens
+Echo lives in `apps/echo` and uses shared components from `packages/ui`
+(Button, ButtonLink, cn).
 
-- **Primary Color:** `#ff8e71` (Coral Peach) -> `--color-primary: #ff8e71`
-- **Secondary Color:** `#003a70` (Deep Blue) -> `--color-secondary: #003a70`
-- **Font Family:** `"Roboto", sans-serif`
-- **Section Backgrounds:** Clean white and light gray (`#f8f9fa`) alternate sections.
+## Structure (from ColorLib Beckham preview)
 
-## Requirements & Gherkin Scenarios
+1. **Sidebar Navigation** — dark left sidebar with author photo, numbered menu items (01–06)
+2. **Top Header** — sticky top bar with author photo + name logo
+3. **Hero Slider** — full-height background images with overlay, centered text
+4. **About Section** — split layout: author image left, bio + social links + contact right
+5. **Services Section** — 3-column grid with icons and service lists
+6. **Portfolio Section** — 6 alternating image/text project cards
+7. **Counter Section** — 3 achievement counters (Clients, Projects, Coffee)
+8. **Footer** — dark footer with social links, contact email, copyright
 
-### 1. Navigation & Header
+## Requirements
 
-- **Requirement:** Fixed or sticky top navigation bar with brand logo ("Echo"), navigation links (Home, Services, Pricing, About, Contact Us), and mobile hamburger menu.
-- **Scenario:** User views the navigation bar
-  - Given the user loads the Echo home page
-  - When they view the header
-  - Then they see the "Echo" brand link and menu items for Home, Services, Pricing, About, and Contact Us.
+### Requirement: Sidebar Navigation
 
-### 2. Hero Section
+The system SHALL render a dark sidebar navigation with the site name,
+an author photo, and numbered navigation links (Home, Resume, Services,
+Portfolio, Blog, Contact).
 
-- **Requirement:** High-impact hero section with headline "We are pretty Geek|", subtext, and call-to-action button "Our services".
-- **Scenario:** User views the hero section
-  - Given the user is on the home page
-  - When they look at the hero banner
-  - Then they see the headline "We are pretty Geek", description text, and an "Our services" call-to-action button.
+#### Scenario: Desktop sidebar
 
-### 3. About Section
+- **GIVEN** the page is rendered on desktop
+- **WHEN** the sidebar is displayed
+- **THEN** it SHALL show the site name "Echo"
+- **AND** it SHALL show an author photo
+- **AND** it SHALL show numbered links (01 Home, 02 Resume, 03 Services, 04 Portfolio, 05 Blog, 06 Contact)
 
-- **Requirement:** Multi-column about section highlighting business growth support and company background.
-- **Scenario:** User scrolls to the about section
-  - Given the user is exploring the page
-  - When they view the About Us section
-  - Then they see headings "We are here to help grow your business" and explanatory paragraphs with clean spacing.
+#### Scenario: Mobile menu toggle
 
-### 4. Services / What We Offer Carousel
+- **GIVEN** the page is rendered on mobile
+- **WHEN** the user presses the hamburger toggle
+- **THEN** the mobile menu SHALL become visible
 
-- **Requirement:** Section detailing offerings (Web Design, Graphic Design, etc.) with carousel navigation pagination.
-- **Scenario:** User interacts with the services section
-  - Given the user views "What We Offer"
-  - When they inspect the service cards and pagination controls
-  - Then they can switch between slides and view service details.
+### Requirement: Header
 
-### 5. Statistics Counters
+The system SHALL render a sticky top header with the author photo and site name.
 
-- **Requirement:** Stat counters showing Projects (230), Happy Clients (229), Leadership (8), and Years Experience (15).
-- **Scenario:** User views the statistics section
-  - Given the user scrolls to the Stats section
-  - When they examine the statistics counters
-  - Then all four metrics are displayed clearly with distinct numbers and labels.
+#### Scenario: Header content
 
-### 6. Call To Action & Footer
+- **GIVEN** the header renders
+- **WHEN** I look at the top bar
+- **THEN** I SHALL see the author photo and "Echo" as the site name
 
-- **Requirement:** Bottom call-to-action banner ("Get anything done in one place"), contact info, navigation directory, and footer with Component Dock attribution.
-- **Scenario:** User checks the footer and CTA
-  - Given the user reaches the bottom of the page
-  - When they review the footer
-  - Then they see contact details, links, and the required footer link to `https://www.componentdock.com/` ("Component Dock").
+### Requirement: Hero Section
 
-## Verification Checklist
+The system SHALL render a full-height hero section with a background image,
+overlay, and centered text.
 
-- [ ] TypeScript strict compilation (`npm run typecheck`)
-- [ ] Lint check (`npm run lint`)
-- [ ] 100% test coverage (`npm run test:coverage`)
-- [ ] Production build succeeds (`npm run build`)
-- [ ] Footer links to `https://www.componentdock.com/`
-- [ ] CNAME configured as `echo.free.componentdock.com`
+#### Scenario: Hero content
+
+- **GIVEN** the hero section renders
+- **WHEN** I read the content
+- **THEN** I SHALL see a greeting line ("Hello! I'm")
+- **AND** I SHALL see the name "Echo" in large heading
+
+### Requirement: About Section
+
+The system SHALL render an about section with a split layout:
+author image on the left, bio text on the right.
+
+#### Scenario: About content
+
+- **GIVEN** the about section renders
+- **WHEN** I read the content
+- **THEN** I SHALL see an "About" heading
+- **AND** I SHALL see a bio paragraph
+- **AND** I SHALL see social media links
+- **AND** I SHALL see contact information (email, phone)
+
+### Requirement: Services Section
+
+The system SHALL render a services section with 3 service cards.
+
+#### Scenario: Service cards
+
+- **GIVEN** the services section renders
+- **WHEN** I count the service cards
+- **THEN** I SHALL see 3 service items with icons and lists of sub-services
+
+### Requirement: Portfolio Section
+
+The system SHALL render a portfolio section with 6 project items
+in an alternating image/text layout.
+
+#### Scenario: Portfolio items
+
+- **GIVEN** the portfolio section renders
+- **WHEN** I count the project items
+- **THEN** I SHALL see 6 project items with images, category labels, titles, and descriptions
+
+### Requirement: Counter Section
+
+The system SHALL render a counter section with 3 achievement statistics.
+
+#### Scenario: Counter items
+
+- **GIVEN** the counter section renders
+- **WHEN** I count the statistics
+- **THEN** I SHALL see 3 counter items (Clients, Projects done, Cups of coffee)
+
+### Requirement: Footer
+
+The system SHALL render a dark footer with social links, contact email,
+and a link to https://www.componentdock.com/ branded as "Component Dock".
+
+#### Scenario: Footer attribution
+
+- **GIVEN** the footer renders
+- **WHEN** I look for the attribution
+- **THEN** I SHALL see a link to https://www.componentdock.com/
+- **AND** the link text SHALL mention "Component Dock"

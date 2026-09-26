@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Echo brand palette — recreated from the ColorLib "Beckham" design
+     (css/style.css): mint green #79efb4 accents, dark #1a1a1a sidebar,
+     #222 counter/footer, white content areas. */
+  --color-brand: #79efb4;
+  --color-brand-dark: #57eba1;
+
+  /* Ink — dark text (#212529 from the original). */
+  --color-ink: #212529;
+
+  /* Sidebar dark (#1a1a1a from the original). */
+  --color-sidebar: #1a1a1a;
+
+  /* Counter/footer dark (#222 from the original). */
+  --color-surface-dark: #222222;
+
+  /* Mist — muted body text (#6c757d from the original). */
+  --color-mist: #6c757d;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the mint green. */
+  --color-primary-50: #edfdf5;
+  --color-primary-100: #d3fae5;
+  --color-primary-200: #aaf5d0;
+  --color-primary-300: #79efb4;
+  --color-primary-400: #57eba1;
+  --color-primary-500: #35e78e;
+  --color-primary-600: #22c976;
+  --color-primary-700: #1da360;
+  --color-primary-800: #1b814e;
+  --color-primary-900: #196941;
+
+  /* Original font: "Montserrat" (Google Fonts). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
