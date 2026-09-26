@@ -1,245 +1,98 @@
-# Template: Snaplens (Photography Portfolio)
+# Template: Snaplens
+
+**Source:** ColorLib "Halo" (https://colorlib.com/wp/template/halo/)
+**Preview:** https://preview.colorlib.com/theme/halo/
+**New name:** Snaplens (`apps/snaplens`, `@free-react-templates/snaplens`)
 
 ## Purpose
 
-Recreation of ColorLib **Fotograp** (https://colorlib.com/wp/template/fotograp/)
-via live preview at https://preview.colorlib.com/theme/fotograp/
+Recreate the ColorLib "Halo" photography portfolio template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app. The original is a dark-themed photography portfolio with hero slider, intro section, portfolio grid, milestones counters, services, contact form, and footer. Snaplens faithfully reproduces the section order, layout, typography (Open Sans), and color palette (dark backgrounds, #222121 text, #cc1847 accent) while using placeholder images and inline SVG brand icons.
 
-Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript (strict).
+## Requirements
 
-This is a single-page photography portfolio template featuring a hero cover
-with parallax, profile section, specialty cards, testimonial carousel, photo
-gallery grid, CTA bar, and a dark footer.
+### Requirement: Navbar with logo, navigation links, search, and mobile toggle
 
----
+The app SHALL render a transparent header with the logo "SNAPLENS", desktop navigation links (Home, About, Services, Portfolio, Blog, Contact), a search toggle button, and a hamburger menu toggle for mobile viewports.
 
-## Design Tokens (extracted from live preview CSS)
+#### Scenario: Desktop navbar renders all links
 
-| Token                | Value / Notes                                                                 |
-|----------------------|-------------------------------------------------------------------------------|
-| Font family          | `"Josefin Sans", sans-serif` — weights 300, 400, 700; italic 300 available   |
-| Body text color      | `#4d4d4d`                                                                    |
-| Primary / accent     | `#7971ea` (indigo-purple) — used for active nav, hover states, form focus     |
-| Heading color        | `#000000`                                                                    |
-| Selection background | `#000000` / text `#ffffff`                                                   |
-| Button radius        | `0` (square/sharp corners)                                                    |
-| CTA button           | `btn-danger` → Bootstrap danger red, with `rounded` modifier on CTA           |
-| Section padding      | 2.5em mobile → 5em desktop                                                    |
-| Section heading      | 2.5rem mobile → 3rem desktop, 100px black underline line (1px)               |
-| Border / divider     | `#edf0f5`                                                                     |
-| Footer background    | `#333333`                                                                     |
-| Footer text color    | `#737373`                                                                     |
-| Footer heading color | `#ffffff`                                                                     |
-| Footer link color    | `#999999` → white on hover                                                    |
-| Sub-nav bg (active)  | `#f4f5f9`                                                                     |
-| Parallax / overlay   | Dark semi-transparent overlay on hero + testimonials (`rgba(0,0,0,0.6)`)       |
-| Animation library    | AOS (Animate On Scroll) with `fade-up` and `fade` variants                    |
-| Carousel             | Owl Carousel (testimonials), Swiper referenced in CSS                         |
+- **WHEN** the page loads on a desktop viewport
+- **THEN** the navbar displays the logo and all 6 navigation links
 
----
+#### Scenario: Mobile menu toggles open and closed
 
-## Visual Design (from screenshot)
+- **WHEN** the user clicks the hamburger menu button
+- **THEN** the mobile navigation menu becomes visible with all navigation links
 
-Photography portfolio with a dark moody hero (parallax background image of a
-camera on a tripod, overlay), clean white content sections, a centered profile
-avatar bridging hero and content, specialty cards with side-by-side image+text,
-a full-width parallax testimonial band, a 3-column photo gallery grid with
-hover gradient overlays, a minimal red CTA bar, and a dark gray footer with
-3-column layout (about text, navigation links, social icons).
+#### Scenario: Search input toggles
 
----
+- **WHEN** the user clicks the search icon button
+- **THEN** a search input field appears in the navbar
 
-## Gherkin Requirements
+### Requirement: Hero section with title and subtitle
 
-### Feature: Navbar
+The app SHALL render a full-viewport hero section with a dark background image overlay, the title "Snaplens", and the subtitle "We Create Awesome Photographies and More".
 
-```gherkin
-Scenario: Logo displays correctly
-  Given the page loads
-  Then the logo text "snaplens." is visible
-  And the dot after the logo is rendered in the primary accent color
+#### Scenario: Hero displays title and subtitle
 
-Scenario: Navigation links are visible
-  Given the viewport is >= 1200px wide (xl breakpoint)
-  Then the nav shows links: Home, Photography, Services, About, Contact
+- **WHEN** the page loads
+- **THEN** the hero section shows the heading "Snaplens" and the subtitle text
 
-Scenario: Social icons appear on desktop
-  Given the viewport is >= 1200px wide
-  Then social icons for Facebook, Twitter, Instagram, YouTube are visible in the navbar
+### Requirement: Intro section with heading, text, CTA, and image
 
-Scenario: Mobile hamburger menu
-  Given the viewport is < 1200px wide
-  Then the nav links are hidden
-  And a hamburger menu icon is visible
+The app SHALL render a two-column intro section with "Amazing Studio" subtitle, "We Are So Creative" heading, descriptive paragraph, "Read More" CTA button, and a studio image.
 
-Scenario: Active nav link is accented
-  Given the page is loaded
-  Then the active nav link uses the primary accent color (#7971ea)
-```
+#### Scenario: Intro section renders all elements
 
-### Feature: Hero Cover
+- **WHEN** the page loads
+- **THEN** the intro section shows the heading, paragraph, CTA button, and studio image
 
-```gherkin
-Scenario: Hero section displays with parallax background
-  Given the page loads
-  Then a full-width hero section with a dark overlay background image is visible
-  And the headline "I'm a Professional Photographer" is centered
+### Requirement: Portfolio grid with 7 items and hover overlays
 
-Scenario: Hero has parallax scrolling
-  Given the user scrolls the page
-  Then the hero background scrolls at a different rate than the content
-```
+The app SHALL render a 7-item portfolio grid with masonry-like layout (varying widths), each item showing a background image with a hover overlay containing title and category.
 
-### Feature: Profile Picture
+#### Scenario: Portfolio renders 7 items
 
-```gherkin
-Scenario: Profile avatar appears below the hero
-  Given the hero section is visible
-  Then a centered profile picture is displayed below the hero
-  And clicking it links to the About page
-```
+- **WHEN** the page loads
+- **THEN** the portfolio section displays 7 clickable items with titles and categories
 
-### Feature: Specialties
+### Requirement: Milestones section with 4 stat counters
 
-```gherkin
-Scenario: Section heading displays
-  Given the page loads
-  Then a "My Specialties" heading is visible with a centered underline decoration
+The app SHALL render a dark-background milestones section with 4 statistics: 48 Video Games, 7 Awards Won, 23K Pictures Taken, 19 Video Tutorials.
 
-Scenario: Four specialty cards render
-  Given the specialties section is in view
-  Then 4 specialty cards are shown in a 2-column grid
-  And each card has an image on one side and text on the other
-  And the specialties are: Nature Photography, Portrait Photography, Wedding Photography, Food & Drink Photography
+#### Scenario: Milestones shows all stats
 
-Scenario: Specialty cards are responsive
-  Given the viewport is < 768px wide
-  Then the specialty cards stack vertically (1-column)
-```
+- **WHEN** the page loads
+- **THEN** the milestones section displays all 4 stat values and labels
 
-### Feature: Testimonials
+### Requirement: Services section with 4 service cards
 
-```gherkin
-Scenario: Testimonials section has parallax background
-  Given the page loads
-  Then the testimonials section displays over a parallax background image
-  And the background has a dark overlay
+The app SHALL render a light-background services section with "Amazing Studio" subtitle, "See What We Offer" heading, and 4 service cards (Video Footages, Photo Shootings, Photo Albums, Original Ideas) in a 2-column grid.
 
-Scenario: Testimonials carousel shows quotes
-  Given the testimonials section is visible
-  Then testimonial cards display with an avatar image, quote text, and author name
-  And navigation dots/arrows allow cycling through testimonials
+#### Scenario: Services displays all 4 services
 
-Scenario: Testimonials are accessible
-  Given the testimonials section loads
-  Then each testimonial has an avatar with alt text and a visible author attribution
-```
+- **WHEN** the page loads
+- **THEN** the services section shows all 4 service titles and descriptions
 
-### Feature: Photo Gallery
+### Requirement: Contact section with info and form
 
-```gherkin
-Scenario: Gallery heading displays
-  Given the page loads
-  Then a "My Photography" heading is visible with a centered underline decoration
+The app SHALL render a dark-background contact section with "Stay in Touch" heading, contact information (phone, email, address), and a contact form with name, email, subject, message fields, and Send button.
 
-Scenario: Gallery grid shows 6 items
-  Given the gallery section is in view
-  Then 6 photo items are shown in a 3-column grid
-  And each item has an image, a title, and a "5 photos / Category" caption
+#### Scenario: Contact form renders all fields
 
-Scenario: Gallery items have gradient overlay
-  Given the gallery section loads
-  Then each gallery item shows a gradient overlay on hover with the title visible
+- **WHEN** the page loads
+- **THEN** the contact section displays the heading, contact info, and form with all 4 input fields plus submit button
 
-Scenario: Gallery is responsive
-  Given the viewport is < 768px wide
-  Then the gallery items stack in a 1-column layout
-  Given the viewport is 768px–991px wide
-  Then the gallery items show in a 2-column layout
-```
+#### Scenario: Form submission is prevented
 
-### Feature: CTA Bar
+- **WHEN** the user clicks the Send button
+- **THEN** the form does not reload the page
 
-```gherkin
-Scenario: CTA section displays
-  Given the page loads
-  Then a "Need a photographer?" text is visible on the left
-  And a "Contact Me" button in red (danger) style is visible on the right
-  And the button has square corners with the rounded modifier
+### Requirement: Footer with CTA, email, social icons, and Component Dock link
 
-Scenario: CTA button links to contact
-  Given the CTA section is visible
-  Then clicking the "Contact Me" button navigates to the contact page
-```
+The app SHALL render a dark-background footer with "Let's Work Together!" heading, email address, 4 social icon links, and a "More templates at Component Dock" link pointing to https://www.componentdock.com/.
 
-### Feature: Footer
+#### Scenario: Footer links to Component Dock
 
-```gherkin
-Scenario: Footer has three columns
-  Given the page loads
-  Then the footer displays in 3 columns: About, Navigations, Follow Me
-
-Scenario: Footer about section
-  Given the footer is visible
-  Then the "About" heading is visible with a brief description paragraph
-
-Scenario: Footer navigation links
-  Given the footer is visible
-  Then navigation links include: Home, Photography, Gallery, Services, About Me, Privacy Policy, Contact Me, Terms
-
-Scenario: Footer social links
-  Given the footer is visible
-  Then social links for Facebook, Twitter, Instagram, and LinkedIn are displayed
-
-Scenario: Footer copyright
-  Given the footer is visible
-  Then a copyright notice with "Component Dock" link is shown
-
-Scenario: Footer dark theme
-  Given the footer renders
-  Then the background is #333333
-  And headings are white (#ffffff)
-  And body text is #737373
-  And links are #999999 turning white on hover
-```
-
-### Feature: Responsive Behavior
-
-```gherkin
-Scenario: Mobile layout
-  Given the viewport is < 768px wide
-  Then all section padding is reduced
-  And the hero headline wraps appropriately
-  And the gallery and specialties stack vertically
-
-Scenario: Tablet layout
-  Given the viewport is 768px–991px wide
-  Then the gallery shows 2 columns
-  And specialties remain in 2-column layout
-
-Scenario: Desktop layout
-  Given the viewport is >= 992px wide
-  Then the gallery shows 3 columns
-  And the footer shows 3 columns side by side
-```
-
----
-
-## Verification Checklist
-
-- [ ] Logo "snaplens." displays with accent-colored dot
-- [ ] Nav links visible on xl, hamburger on smaller
-- [ ] Social icons in navbar (desktop only)
-- [ ] Hero with parallax background + overlay + centered headline
-- [ ] Profile picture centered below hero, links to About
-- [ ] Specialties section: heading with underline, 4 cards in 2-col grid
-- [ ] Testimonials: parallax bg, carousel with avatar + quote + author
-- [ ] Photo Gallery: heading with underline, 6 items in 3-col grid, gradient hover
-- [ ] CTA bar: "Need a photographer?" + Contact Me button (red, rounded)
-- [ ] Footer: dark bg, 3 columns, social links, copyright with Component Dock link
-- [ ] All design tokens match reference (#7971ea accent, #333 footer, Josefin Sans)
-- [ ] Responsive: 1-col mobile, 2-col tablet, 3-col desktop
-- [ ] 100% test coverage (lines, functions, branches, statements)
-- [ ] No ColorLib references in app code
-- [ ] CNAME and homepage set for snaplens.free.componentdock.com
-- [ ] `npm install` run to register workspace in package-lock.json
+- **WHEN** the page loads
+- **THEN** the footer contains a link to https://www.componentdock.com/ with target="_blank"
