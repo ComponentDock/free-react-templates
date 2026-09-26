@@ -2434,7 +2434,7 @@
 
 - [x] **Alime** — [colorlib](https://colorlib.com/wp/template/alime/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alime-free-template.jpg) · [crispshot](https://crispshot.free.componentdock.com)
 - [x] **Bato** — [colorlib](https://colorlib.com/wp/template/bato/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bato-free-template.jpg) · [focal](https://focal.free.componentdock.com)
-- [ ] **Bitmap** — [colorlib](https://colorlib.com/wp/template/bitmap/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bitmap-free-template.jpg)
+- [~] **Bitmap** — [colorlib](https://colorlib.com/wp/template/bitmap/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bitmap-free-template.jpg)
 - [x] **Blog Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/blog-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/blog-templates.jpg) · [marginalia](https://marginalia.free.componentdock.com)
 - [x] **Boto** — [colorlib](https://colorlib.com/wp/template/boto/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/boto-photography-website-template.jpeg) · [Framely](https://framely.free.componentdock.com)
 - [x] **Capture** — [colorlib](https://colorlib.com/wp/template/capture/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/capture-free-template.jpg) · [galleryvue](https://galleryvue.free.componentdock.com)
