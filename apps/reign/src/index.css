@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-jost: 'Jost', sans-serif;
+  --color-brand: #f26200;
+  --color-brand-dark: #d45600;
+  --color-text-primary: #000000;
+  --color-text-body: #757575;
+  --color-bg-warm: #f5ecdb;
+  --color-bg-light: #f8f9fa;
+  --color-line: #e8e8e8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-jost);
+    color: var(--color-text-body);
+    line-height: 1.7;
+    font-weight: 300;
+    background: #fff;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-jost);
+    color: var(--color-text-primary);
+  }
+}
