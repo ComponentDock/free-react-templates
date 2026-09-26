@@ -2476,7 +2476,7 @@
 - [x] **Sonar** — [colorlib](https://colorlib.com/wp/template/sonar/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/free-photography-site-templates.jpg) · [exposely](https://exposely.free.componentdock.com)
 - [x] **Studio** — [colorlib](https://colorlib.com/wp/template/studio/) · [studio](https://studio.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/studio-free-photography-studio-html-website-template.jpg)
 - [x] **Sunzine** — [colorlib](https://colorlib.com/wp/template/sunzine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sunzine-free-template.jpg) · [aperture](https://aperture.free.componentdock.com)
-- [ ] **Thelook** — [colorlib](https://colorlib.com/wp/template/thelook/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelook-free-template.jpg)
+- [~] **Thelook** — [colorlib](https://colorlib.com/wp/template/thelook/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelook-free-template.jpg)
 - [x] **Thumber** — [colorlib](https://colorlib.com/wp/template/thumber/) · [shuttervibe](https://shuttervibe.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thumber-free-template.jpg)
 - [x] **Tulen** — [colorlib](https://colorlib.com/wp/template/tulen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tulen-free-template.jpg) · [pana](https://pana.free.componentdock.com)
 - [x] **Yaseen** — [colorlib](https://colorlib.com/wp/template/yaseen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yaseen-creative-photography-website-landing-page-template.jpg) · [pixora](https://pixora.free.componentdock.com)
