@@ -2423,7 +2423,7 @@
 - [x] **Rezume** — [colorlib](https://colorlib.com/wp/template/rezume/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rezume-free-template.jpg) · [curriculo](https://curriculo.free.componentdock.com)
 - [x] **Ronaldo** — [colorlib](https://colorlib.com/wp/template/ronaldo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ronaldo-free-template.jpg) · [showcase](https://showcase.free.componentdock.com)
 - [x] **Ronin** — [colorlib](https://colorlib.com/wp/template/ronin/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ronin-free-template.jpg) · [velox](https://velox.free.componentdock.com)
-- [ ] **Satner** — [colorlib](https://colorlib.com/wp/template/satner/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/satner-free-template.jpg)
+- [~] **Satner** — [colorlib](https://colorlib.com/wp/template/satner/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/satner-free-template.jpg)
 - [ ] **Schmidt** — [colorlib](https://colorlib.com/wp/template/schmidt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/schmidt-free-template.jpg)
 - [ ] **Skater** — [colorlib](https://colorlib.com/wp/template/skater/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skater-free-template.jpg)
 - [ ] **Space** — [colorlib](https://colorlib.com/wp/template/space/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/space-free-template.jpg)
