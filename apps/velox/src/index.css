@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Velox brand palette — recreated from the ColorLib "Ronin" design
+     (periwinkle blue #8490ff, gradient to #62bdfc). */
+  --color-periwinkle-50: #f0f1ff;
+  --color-periwinkle-100: #e0e3ff;
+  --color-periwinkle-200: #c4c8ff;
+  --color-periwinkle-300: #a8adff;
+  --color-periwinkle-400: #8490ff;
+  --color-periwinkle-500: #6b7aef;
+  --color-periwinkle-600: #5463d6;
+  --color-periwinkle-700: #404eb5;
+  --color-periwinkle-800: #343f94;
+  --color-periwinkle-900: #2a3374;
+
+  /* Heebo — the original template's heading typeface */
+  --font-heading: 'Heebo', ui-sans-serif, system-ui, sans-serif;
+  /* Roboto — the original template's body typeface */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
