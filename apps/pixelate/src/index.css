@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pixelate brand palette — recreated from ColorLib Calvin design
+     (style.css): blue #6382e6 accents, coral #FF8553 buttons,
+     light bg #fbf9ff, dark text #000d21. */
+  --color-brand: #6382e6;
+  --color-brand-dark: #4a6ad4;
+
+  /* Accent — coral/orange (#FF8553). */
+  --color-accent: #ff8553;
+  --color-accent-dark: #e06e3e;
+
+  /* Paper — light section background (#fbf9ff). */
+  --color-paper: #fbf9ff;
+
+  /* Ink — dark text (#000d21). */
+  --color-ink: #000d21;
+
+  /* Mist — muted body text. */
+  --color-mist: #666666;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand blue. */
+  --color-primary-50: #eef2fd;
+  --color-primary-100: #d5defa;
+  --color-primary-200: #b3c4f5;
+  --color-primary-300: #8ba5ee;
+  --color-primary-400: #6e8de8;
+  --color-primary-500: #6382e6;
+  --color-primary-600: #4a6ad4;
+  --color-primary-700: #3a55b8;
+  --color-primary-800: #2e4494;
+  --color-primary-900: #263878;
+
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Roboto Condensed', ui-sans-serif, system-ui, sans-serif;
+}
