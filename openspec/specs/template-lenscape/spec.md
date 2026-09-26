@@ -1,237 +1,152 @@
-# Template: Lenscape (Photography Portfolio)
+# Template: Lenscape (Personal Portfolio Template)
 
 ## Purpose
 
-Lenscape is a single-page photography portfolio template in the free-react-templates
-monorepo. It is an original React recreation of the ColorLib "Bato" free template
-(source: https://colorlib.com/wp/template/bato/, preview:
-https://preview.colorlib.com/theme/bato/), built under a DIFFERENT name
-(**Lenscape**), with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
-TypeScript.
+Lenscape is a personal portfolio/developer landing template in the
+free-react-templates monorepo. It is an original React recreation of the
+ColorLib free "Schmidt" design (see TEMPLATES.md), built under the monorepo
+stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-The original is a multi-page jQuery/Bootstrap photography portfolio with Owl
-Carousel for the hero and about sections, Magnific Popup for gallery lightbox,
-and Waypoints for scroll-triggered animations. The index page features a
-full-height hero with a 3/4 image + 1/4 text panel split, a work gallery with
-alternating left/right layouts, newsletter subscribe, and a 3-column footer. The
-about page uses a 50/50 split (image left, text carousel right). The contact
-page has a 3-column address block + form.
+The original is a dark-background portfolio page with a golden accent, hero
+with portrait image, about section with counter stats, skills progress bars,
+service cards, portfolio works grid, testimonials, contact form, and a dark
+footer. Lenscape recreates that structure section-for-section with matching
+layout, colors, typography, and content types (no ColorLib assets copied).
 
-**WHAT MAKES LENSCAPE DISTINCT (signature behaviors):**
+## Design reference (replication findings)
 
-1. **Asymmetric hero carousel (75/25 split).** Each slide is a full-height
-   viewport row with 3/4 width background image and 1/4 width text panel on the
-   right. The text panel contains a large Playfair Display slide number
-   (e.g. "01/03"), an uppercase letter-spaced tag, a Playfair Display heading,
-   body paragraph, and a CTA link. Three slides auto-advance via Owl Carousel.
-   The split ratio (75/25) and the numbered overlay are the template's most
-   recognizable visual signature.
+- **Original:** ColorLib "Schmidt" — free personal portfolio website template
+  (source: https://colorlib.com/wp/template/schmidt/).
+- **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/schmidt/`
+  (HTTP 200). The rendered DOM is the reference below; the
+  TEMPLATES.md screenshot (`schmidt-free-template.jpg`) confirms the
+  visual design (dark hero, golden accents, portrait image).
+- **Section order (1:1):** Navbar → Hero → About → Services → Skills → Works → Testimonials → Contact → Footer.
+- **Design tokens (from css/style.css):**
+  - Primary accent: `#d5c455` (golden yellow — buttons, icons, highlights)
+  - Dark background: `#222222` (navbar, footer)
+  - Body text: `#222222`
+  - Muted text: `#888888`
+  - Light background: `#f8f8f8`
+  - Font family: Poppins (sans-serif, weights 300–800)
+  - Buttons: sharp corners, box-shadow, uppercase, letter-spacing
+- **Colors mapped to Tailwind theme tokens in `src/index.css`.**
 
-2. **Alternating work gallery entries.** Six portfolio entries on the work page
-   use the same 75/25 asymmetric layout but alternate which side the image
-   occupies (odd entries: image right, text left; even entries: image left,
-   text right). Each entry has a bold heading (linked), description paragraph,
-   and "View Photo" CTA. This left-right alternation creates a zigzag visual
-   rhythm that is unique among the ColorLib portfolio templates.
+## Requirements
 
-3. **Split-screen about carousel.** The about section is a 50/50 horizontal
-   split: left half is a full-height background image, right half is an Owl
-   Carousel with 3 slides (About Us / My Story / Career), each containing a
-   category title, heading, body text, and optionally a checklist (Career
-   slide). The carousel-within-a-split-layout is distinctive.
+### Requirement: Navbar with navigation and mobile menu
 
-4. **Yellow (#F9CE00) brand accent throughout.** The bright yellow-gold accent
-   is used for: active nav links, primary buttons (square 2px radius, yellow
-   bg, white text), tag labels, search button, and border highlights. Combined
-   with the white page background and Karla body font, this creates a clean,
-   modern, high-contrast aesthetic.
+Lenscape SHALL display a fixed dark navbar with the "Lenscape." logo (dot in
+golden color) and navigation links: Home, About, Services, Skills, Works,
+Contact. On mobile, a hamburger toggle opens/closes a vertical menu.
 
-5. **Sage green (#b7c2c2) footer.** The footer has a muted sage/teal background
-   with three centered columns (Office address, Get in Touch email, Social
-   icons) plus a copyright line. This color block is the only non-white section
-   background besides the hero images.
+#### Scenario: Desktop navbar renders all links
 
-6. **Minimal header with hamburger nav.** The header is a simple centered logo
-   ("Bato" → "Lenscape") with a small hamburger toggle on the right. The
-   hamburger opens a full-height side navigation panel (white bg) with a search
-   field, nav links (Home, Work, Blog, About, Contact), and a thumbnail
-   gallery. This off-canvas navigation pattern is the primary navigation
-   mechanism.
+- **GIVEN** the page is loaded on a desktop viewport
+- **WHEN** the navbar is visible
+- **THEN** it contains links for Home, About, Services, Skills, Works, Contact
+- **AND** the logo "Lenscape." links to #home-section
 
-## Design Tokens
+#### Scenario: Mobile menu toggles
 
-Extracted from https://preview.colorlib.com/theme/bato/css/style.css:
+- **GIVEN** the page is loaded on a mobile viewport
+- **WHEN** the user taps the hamburger button
+- **THEN** the mobile menu opens with all navigation links
+- **AND** the button label changes to "Close menu"
 
-| Token             | Value                               | Usage                                    |
-| ----------------- | ----------------------------------- | ---------------------------------------- |
-| Font — body       | "Karla", Arial, sans-serif          | All body text, nav, footer               |
-| Font — headings   | "Playfair Display", Georgia, serif  | Hero headings, slide numbers, section h2 |
-| Brand color       | #F9CE00 (bright yellow/gold)        | Active nav, buttons, tags, borders       |
-| Page background   | #fff                                | Main page background                     |
-| Text primary      | #000                                | Headings, nav links, footer              |
-| Text secondary    | #727272 (rgba(114,114,114,0.8))     | Body paragraphs, descriptions            |
-| Text tertiary     | #333333                             | Form inputs, search placeholder          |
-| Light background  | #fcfcfc                             | Subtle section backgrounds               |
-| Footer background | #b7c2c2 (sage/teal)                 | Footer block                             |
-| Button radius     | 2px (square-ish)                    | Primary buttons, nav toggle              |
-| Button bg         | #F9CE00                             | btn-primary background                   |
-| Button text       | #fff                                | btn-primary text color                   |
-| Button hover      | Darken on hover                     | Standard hover state                     |
-| Tag style         | Uppercase, letter-spacing: 7px      | Hero tags ("Welcome", "Photography")     |
-| Hero text panel   | 25% width, white text, dark bg      | Right panel of hero slides               |
-| Slide numbers     | Playfair Display, large font        | "01/03", "02/03", "03/03"               |
-| CTA link          | 13px, letter-spacing: 7px, #000     | "View Galleries →" / "View Photo"        |
+### Requirement: Hero section with portrait and CTAs
 
-## Gherkin Requirements
+Lenscape SHALL display a full-viewport hero with a dark background image,
+golden overlay on the right half (desktop), the heading "I'm Alex Mercer",
+subheading "UI/UX Designer & Developer", and two CTA buttons.
 
-### Feature: Hero Carousel
+#### Scenario: Hero renders main content
 
-  Scenario: Full-height split hero with 3 slides
-    Given the page loads
-    When the hero carousel renders
-    Then there are exactly 3 slides
-    And each slide occupies full viewport height
-    And each slide has a 3/4 width background image
-    And each slide has a 1/4 width text panel on the right
-    And the text panel shows a slide number (01/03, 02/03, 03/03)
-    And the text panel shows an uppercase letter-spaced tag
-    And the text panel shows a Playfair Display heading
-    And the text panel shows a body paragraph
-    And the text panel shows a "View Galleries" CTA link with arrow icon
+- **GIVEN** the page is loaded
+- **WHEN** the hero section is visible
+- **THEN** it shows the heading "I'm Alex Mercer"
+- **AND** it shows the subheading "UI/UX Designer & Developer"
+- **AND** it has "More About Me" and "Hire Me" buttons
 
-  Scenario: Carousel auto-advances
-    Given the hero carousel is visible
-    When 5 seconds elapse without interaction
-    Then the carousel advances to the next slide
-    And the slide number updates accordingly
+### Requirement: About section with counter stats
 
-  Scenario: Manual carousel navigation
-    Given the hero carousel is visible
-    When the user clicks the next/prev navigation control
-    Then the carousel advances to the adjacent slide
+Lenscape SHALL display an about section with counter stats (Years Experience,
+Projects Completed, Clients, Awards Won) and descriptive text.
 
-### Feature: Navigation
+#### Scenario: About stats render correctly
 
-  Scenario: Fixed header with logo and hamburger
-    Given the page loads
-    When the header renders
-    Then there is a centered logo "Lenscape"
-    And there is a hamburger toggle on the right side
+- **GIVEN** the page is loaded
+- **WHEN** the about section is visible
+- **THEN** it shows stat values 12, 350, 200, 15 with their labels
 
-  Scenario: Off-canvas nav panel
-    Given the page loads
-    When the user clicks the hamburger toggle
-    Then a full-height white side panel slides in
-    And the panel contains a search input
-    And the panel contains nav links: Home, Work, About, Contact
-    And the panel contains a thumbnail gallery (4 images)
+### Requirement: Skills section with progress bars
 
-  Scenario: Nav link highlighting
-    Given the nav panel is open
-    When the user views the current section
-    Then the corresponding nav link is highlighted in brand yellow (#F9CE00)
+Lenscape SHALL display a skills section with progress bars for UI/UX, Web
+Development, Branding, Photography, Marketing, and SEO.
 
-### Feature: Work Gallery
+#### Scenario: Skills render with percentages
 
-  Scenario: Alternating left-right layout
-    Given the Work section is visible
-    When the work entries render
-    Then there are 6 work entries
-    And odd-numbered entries have the image on the right
-    And even-numbered entries have the image on the left
-    And each entry has a 3/4 image + 1/4 text split
-    And each text entry has a heading, description, and "View Photo" CTA
+- **GIVEN** the page is loaded
+- **WHEN** the skills section is visible
+- **THEN** it shows all 6 skill names with their percentage values
 
-  Scenario: Entry heading is a link
-    Given a work entry is rendered
-    When the user clicks the heading
-    Then it navigates to the detail view (single page)
+### Requirement: Services section with cards
 
-### Feature: About Section
+Lenscape SHALL display a services section with 6 service cards (UI/UX Design,
+Web Development, Photography, Marketing, SEO, Branding) with icons.
 
-  Scenario: 50/50 split layout
-    Given the About section is visible
-    When it renders
-    Then the left half shows a full-height background image
-    And the right half shows a text carousel with 3 slides
+#### Scenario: Services render all cards
 
-  Scenario: About carousel slides
-    Given the about carousel is visible
-    When the user navigates the carousel
-    Then slide 1 shows "About Us" with heading "Hi! I'm [Name]"
-    And slide 2 shows "My Story" with company history
-    And slide 3 shows "Career" with a checklist of achievements
+- **GIVEN** the page is loaded
+- **WHEN** the services section is visible
+- **THEN** it shows 6 service cards with titles and descriptions
 
-### Feature: Contact Section
+### Requirement: Works/Portfolio section
 
-  Scenario: Contact form with address
-    Given the Contact section is visible
-    When it renders
-    Then there is a 3-column address block (address, phone, email, website)
-    And there is a contact form with Name, Email, Message fields
-    And there is a "Send Message" submit button
+Lenscape SHALL display a works section with 6 portfolio items showing images
+with hover overlays displaying title and category.
 
-  Scenario: Form field placeholders
-    Given the contact form is rendered
-    When the user views the form
-    Then the Name field shows placeholder "Name"
-    And the Email field shows placeholder "Email"
-    And the Message field shows placeholder "Message"
+#### Scenario: Portfolio items render
 
-### Feature: Newsletter Subscribe
+- **GIVEN** the page is loaded
+- **WHEN** the works section is visible
+- **THEN** it shows 6 portfolio items with images and titles
 
-  Scenario: Subscribe section with email input
-    Given the Newsletter section is visible
-    When it renders
-    Then there is a heading "Subscribe Newsletter"
-    And there is a subtitle "Subscribe our newsletter and get latest update"
-    And there is an email input field
-    And there is a "Subscribe Now" yellow button
+### Requirement: Testimonials section
 
-### Feature: Footer
+Lenscape SHALL display a testimonials section with 3 client testimonials
+including avatar, name, role, and quote.
 
-  Scenario: Three-column footer
-    Given the page footer is visible
-    When it renders
-    Then there are 3 centered columns: Office, Get in Touch, Social
-    And the Office column shows an address
-    And the Get in Touch column shows an email link
-    And the Social column shows 4 social icon links
-    And there is a copyright line at the bottom
-    And the footer background is sage (#b7c2c2)
+#### Scenario: Testimonials render
 
-  Scenario: Footer links to Component Dock
-    Given the footer is rendered
-    When the user views the copyright area
-    Then there is a link to https://www.componentdock.com/
+- **GIVEN** the page is loaded
+- **WHEN** the testimonials section is visible
+- **THEN** it shows 3 testimonials with names and quotes
 
-### Feature: Responsive Design
+### Requirement: Contact section with form
 
-  Scenario: Mobile layout
-    Given the viewport width is less than 768px
-    When the page renders
-    Then the hero text panel stacks below the image
-    And work entries stack vertically
-    And the about section stacks vertically
-    And the footer columns stack vertically
+Lenscape SHALL display a contact section with contact info (address, phone,
+email) and a form (name, email, subject, message, submit).
 
-## Verification Checklist
+#### Scenario: Contact form submits successfully
 
-- [ ] Hero carousel renders 3 full-height slides with 75/25 split
-- [ ] Slide numbers, tags, headings, and CTAs render correctly
-- [ ] Carousel auto-advances and supports manual navigation
-- [ ] Header has centered logo and hamburger toggle
-- [ ] Off-canvas nav opens/closes with search, links, and gallery
-- [ ] Work gallery has 6 entries with alternating left/right layout
-- [ ] About section has 50/50 split with 3-slide carousel
-- [ ] Contact section has address block + form with all fields
-- [ ] Newsletter subscribe has email input + yellow button
-- [ ] Footer has 3 columns on sage background
-- [ ] Footer links to Component Dock
-- [ ] Responsive: stacks on mobile viewports
-- [ ] All sections use correct design tokens (fonts, colors, spacing)
-- [ ] No ColorLib references in app code (provenance only in spec)
-- [ ] Placeholder images use picsum.photos/seed/lenscape-N/W/H
-- [ ] Footer links https://www.componentdock.com/
-- [ ] 100% test coverage (Vitest + Testing Library)
-- [ ] TypeScript strict mode, no `any` types
+- **GIVEN** the contact form is filled with valid data
+- **WHEN** the user clicks "Send Message"
+- **THEN** a "Thank you!" message is displayed
+
+#### Scenario: Contact form validates required fields
+
+- **GIVEN** the contact form has empty required fields
+- **WHEN** the form is submitted
+- **THEN** the form remains visible (submission blocked)
+
+### Requirement: Footer with Component Dock link
+
+Lenscape SHALL display a dark footer with copyright text and a "Component
+Dock" link pointing to https://www.componentdock.com/.
+
+#### Scenario: Footer renders Component Dock link
+
+- **GIVEN** the page is loaded
+- **WHEN** the footer is visible
+- **THEN** it contains a link labeled "Component Dock" pointing to https://www.componentdock.com/
