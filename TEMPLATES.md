@@ -2448,7 +2448,7 @@
 - [x] **Elit** — [colorlib](https://colorlib.com/wp/template/elit/) · [lumier](https://lumier.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/elit-free-template.jpg)
 - [x] **Flash** — [colorlib](https://colorlib.com/wp/template/flash/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/flash-free-template.jpg) · [iris](https://iris.free.componentdock.com)
 - [x] **Foto** — [colorlib](https://colorlib.com/wp/template/foto/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foto-free-template.jpg) · [fotura](https://fotura.free.componentdock.com)
-- [ ] **Fotograp** — [colorlib](https://colorlib.com/wp/template/fotograp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fotograp-free-template.jpg)
+- [~] **Fotograp** — [colorlib](https://colorlib.com/wp/template/fotograp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fotograp-free-template.jpg)
 - [x] **Glint** — [colorlib](https://colorlib.com/wp/template/glint/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/glint-simple-website-template.jpeg) · [glint](https://free-react-templates-glint.surge.sh)
 - [x] **Go Crepe** — [colorlib](https://colorlib.com/wp/template/go-crepe/) · [batter](https://batter.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/go-crepe-creative-digital-agency-website-template.jpg)
 - [ ] **Halen** — [colorlib](https://colorlib.com/wp/template/halen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/halen-free-template.jpg)
