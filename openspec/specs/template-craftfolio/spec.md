@@ -1,164 +1,109 @@
-# Template: Craftfolio (Personal Portfolio)
+# Template: Craftfolio (Portfolio / Personal)
 
 ## Purpose
 
-Recreation of ColorLib **Beckham** template as a single-page React 19 + Vite + Tailwind 4 + TypeScript app.
+Recreation of ColorLib's **Steve** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page portfolio app.
 
-- **Source:** ColorLib Beckham
-- **ColorLib URL:** https://colorlib.com/wp/template/beckham/
-- **Preview URL:** https://preview.colorlib.com/theme/beckham/
-- **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript (strict)
-- **Description:** Personal portfolio / freelancer resume template with side navigation, hero slider, about section with author portrait, services, portfolio showcase, stats counters, and dark footer.
+- **Source slug:** `steve`
+- **Preview URL:** https://preview.colorlib.com/theme/steve/
+- **Source screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/steve-free-template.jpg
+- **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+- **Package:** `@free-react-templates/craftfolio`
+- **Deploy target:** `craftfolio.free.componentdock.com`
 
-## Design Tokens (extracted from preview CSS)
+## Design tokens (from preview CSS)
 
-### Colors
-- **Primary brand (links, accents):** `#79efb4` (green/teal — from CSS `--primary`)
-- **Secondary accent (progress bars, service icons, counter numbers):** `#2f89fc` (blue)
-- **Body text:** `#6c757d` (gray)
-- **Headings:** inherit (white on dark, dark on light)
-- **Footer background:** `#121212` (very dark gray/near-black)
-- **Dark section background (ftco-bg-dark):** `#3c312e` (dark brown)
-- **Body background:** `#fff` (white)
-- **Overlay on slider:** semi-transparent black (default overlay class)
-- **Footer social icon circles:** `rgba(255, 255, 255, 0.05)`
-- **Footer text/links:** `rgba(255, 255, 255, 0.5)`
+| Token            | Value                        | Notes                                           |
+| ---------------- | ---------------------------- | ----------------------------------------------- |
+| Brand color      | `#e45447` (warm red)         | CTA buttons, hover states                       |
+| Secondary accent | `#ffd200` (golden yellow)    | Footer background                               |
+| Text primary     | `#222`                       | Body copy                                       |
+| Text secondary   | `#777`                       | Muted / secondary text                          |
+| Background white | `#fff`                       | Card / content areas                            |
+| Background gray  | `#f9f9ff`                    | About section (`.gray-bg`)                      |
+| Font heading     | `"Poppins", sans-serif`      | Headings                                        |
+| Font body        | `"Roboto", sans-serif`       | Body text, buttons                              |
+| Button radius    | `0` (square/rectangular)     | `.primary-btn` — no border-radius               |
+| Button padding   | `12px 34px`                  | Standard CTA button                             |
+| Section spacing  | `120px` vertical             | `.section_gap`                                  |
+| Portfolio grid   | 4-column (`col-lg-3`)        | With 5px radius, black overlay on hover         |
+| Footer bg        | `#ffd200`                    | Golden yellow                                   |
 
-### Typography
-- **Font family:** `"Poppins", sans-serif` (loaded via @font-face in HTML head)
-- **Weights used:** 300 (light), 400 (regular body), 500 (headings), 700 (bold headings, footer h2)
-- **Base font size:** 1rem (16px)
-- **Line height:** 1.5 (body)
-- **Heading section span:** `text-transform: uppercase`, `letter-spacing: 5px`
-- **Heading section h2:** `font-weight: 700`, `font-size: 40px`
-- **Service heading:** `font-size: 22px`
-- **Counter number:** `font-size: 180px` (responsive: 80px on mobile), color `#2f89fc`
-- **Counter label:** `font-size: 18px`, `text-transform: uppercase`, `letter-spacing: .1em`
-- **Footer font-size:** 16px
+## Section structure (from preview DOM)
 
-### Buttons & Links
-- **Primary link color:** `#79efb4` (green/teal)
-- **Link hover color:** `#35e78e`
-- **Footer link hover:** `#fff`
-- **No explicit button styles** — uses text links (e.g., "Checkout my resume", "View Project")
+1. **Navbar** — Fixed top, logo left, links right (Home, About, Portfolio, Pages, Blog, Contact). Mobile hamburger toggle.
+2. **Hero / Banner Carousel** — Fullscreen owl-carousel with 3 slides. Each slide: dark background image, centered h1 name + h3 subtitle + "Hire Me" CTA button (red `#e45447`).
+3. **Portfolio / Work** — 4-column grid of 8 project cards. Each card: image with black overlay + text overlay (title + "Client Project"). Filter bar (All Categories). `border-radius: 5px` on cards.
+4. **About** — Two-column: left image, right text block with h1 heading ("about myself"), two paragraphs, "More Info" CTA button. Gray background (`#f9f9ff`).
+5. **Testimonials** — Two-column: left is owl-carousel of 4 testimonial cards (quote icon, name, 5 stars, paragraph), right is brand logos panel (white card with shadow, 5 logos).
+6. **Newsletter** — Centered section with background image, white h1 ("Join Our Newsletter"), paragraph, email input + "Subscribe" button (dark).
+7. **Footer** — Centered: logo, "Follow Me" heading, 4 social icons (Facebook, Twitter, Dribbble, Behance), copyright line. Golden yellow background (`#ffd200`).
 
-### Borders & Radii
-- **Social link circles:** `border-radius: 50%`, size 60px
-- **Progress bar:** `border-radius: 30px`
-- **Progress bar dot:** `border-radius: 50%`, 10px
-- **About author image:** `border-radius: 50%`
-- **Form control:** `border-radius: 0px` (square)
-- **Section padding:** `.ftco-section { padding: 7em 0 }`
+## Gherkin scenarios
 
-### Section Backgrounds
-- **Hero slider:** full-height background images with dark overlay
-- **About section:** white background, left column = author portrait (bg image), right = text content
-- **Services:** white, centered heading, 3 icon service blocks
-- **Portfolio:** alternating image-text rows (6 portfolio items), images with parallax scroll effect
-- **Counters:** dark section `#3c312e` bg, large blue numbers
-- **Footer:** very dark `#121212`, centered social icons, centered contact info
+### Navbar
+- **Scenario:** Navbar renders all navigation links
+  - Given the page is loaded
+  - Then the navbar displays links: Home, About, Portfolio, Contact
+  - And the navbar has a logo on the left
+  - And on mobile the hamburger button is visible
 
-## Gherkin Requirements
+### Hero
+- **Scenario:** Hero carousel displays name and CTA
+  - Given the page is loaded
+  - Then the hero section shows a heading with a name
+  - And shows a subtitle describing the person
+  - And shows a "Hire Me" CTA button
 
-### Feature: Craftfolio — Personal Portfolio Landing Page
+### Portfolio
+- **Scenario:** Portfolio grid shows project cards
+  - Given the page is loaded
+  - Then 8 project cards are displayed in a grid
+  - And each card shows an image, title, and "Client Project" label
+  - And a filter bar shows "All Categories" as active
+  - And hovering a card shows a dark overlay with text
 
-#### Scenario: Side navigation drawer with author image
-- Given the page loads
-- Then a side navigation drawer is accessible via hamburger toggle
-- And the drawer shows the author's portrait image as background
-- And navigation links are listed: Home (01), Resume (02), Services (03), Portfolio (04), Blog (05), Contact (06)
-- And the "Home" item is marked as active
+### About
+- **Scenario:** About section shows image and text
+  - Given the page is loaded
+  - Then the about section displays an image on the left
+  - And text content on the right with a heading and paragraphs
+  - And a "More Info" CTA button is present
 
-#### Scenario: Header bar with author name and logo
-- Given the page loads
-- Then a fixed header bar is displayed
-- And the author's name "Beckham Muff" appears as the logo with a small portrait image prefix
-- And a hamburger menu toggle is visible on the right
+### Testimonials
+- **Scenario:** Testimonial carousel shows reviews
+  - Given the page is loaded
+  - Then testimonial cards are displayed with a quote icon, name, star rating, and text
+  - And a brand logos panel is shown on the right
 
-#### Scenario: Hero slider displays two slides
-- Given the page loads
-- Then a full-height hero slider is displayed
-- And slide 1 shows "Hello! I'm" subtitle and "Beckham Muff" heading
-- And slide 2 shows "I'm from Berlin" subtitle and "A Web Designer" heading
-- And both slides have a dark overlay background with a background image
+### Newsletter
+- **Scenario:** Newsletter section has email signup
+  - Given the page is loaded
+  - Then a "Join Our Newsletter" heading is displayed
+  - And an email input field is present
+  - And a "Subscribe" button is present
 
-#### Scenario: About section with portrait and bio
-- Given the page loads
-- Then an about section appears with a portrait image on the left (parallax scroll)
-- And "About" heading is displayed in bold
-- And "Hi! I'm Beckham Muff" subheading is shown
-- And a bio paragraph is displayed
-- And a "Checkout my resume" link is visible
-- And social media icons (Twitter, Facebook, Instagram) are shown
-- And contact info (email, phone) is displayed
+### Footer
+- **Scenario:** Footer shows social links and copyright
+  - Given the page is loaded
+  - Then the footer displays social media icon links
+  - And a copyright notice is present
+  - And the footer links to Component Dock
 
-#### Scenario: Services section with three service blocks
-- Given the page loads
-- Then a services section with "What i do" span and "My services" heading is visible
-- And three service blocks are displayed in a row
-- Block 1: icon (layers), services: UI/UX Design, Mobile App Design, Responsive Design
-- Block 2: icon (gears), services: Product Strategy, Design Sprints, UX Strategy
-- Block 3: icon (code), services: HTML/CSS, Prototyping, User Testing
-- And service icons are colored #2f89fc (blue)
+## Verification checklist
 
-#### Scenario: Portfolio section with six project items
-- Given the page loads
-- Then a portfolio section with "Portfolio" span and "Checkout a few of my works" heading is visible
-- And six portfolio items are displayed in alternating layout (image left/text right, then reversed)
-- Each item has: category label (e.g., "Illustration"), project title, description, and "View Project" link
-- And each item has a background image with parallax scroll effect
-- And a search icon overlay appears on hover over the image
-
-#### Scenario: Stats counter section with three metrics
-- Given the page loads
-- Then a dark background counter section is visible
-- And the heading "I love to share my achievements" is displayed
-- And three counter items are shown: "Clients" (420), "Project done" (890), "Cups of coffee" (1000)
-- And counter numbers are large (#2f89fc blue) with labels in uppercase
-
-#### Scenario: Footer with social icons and contact
-- Given the page loads
-- Then a very dark footer (#121212) is displayed
-- And social media icons (Twitter, Facebook, Instagram) are centered in circular containers
-- And "Contact Us" heading with email link "info@email.com" is shown
-- And the copyright bar at the bottom shows "Component Dock" link
-
-#### Scenario: Scroll progress bar
-- Given the page loads and user scrolls
-- Then a progress bar at the top of the page fills as the user scrolls down
-
-#### Scenario: Responsive behavior
-- Given the page is viewed on mobile
-- Then the side navigation becomes a hamburger toggle
-- And the header simplifies
-- And portfolio items stack vertically
-- And counter numbers reduce to 80px font size
-
-#### Scenario: Scroll animations (AOS)
-- Given sections enter the viewport
-- Then elements animate in (fade/slide) via the AOS library
-- And elements have `.ftco-animate` class for animation triggers
-
-## Verification Checklist
-
-- [ ] All sections render in the correct order matching the original
+- [ ] All sections match the original section order 1:1
 - [ ] Design tokens (colors, fonts, radii) match the extracted values
-- [ ] Poppins font loaded via Google Fonts
-- [ ] Primary green (#79efb4) used for links and accents
-- [ ] Secondary blue (#2f89fc) used for service icons and counter numbers
-- [ ] Side navigation drawer with author portrait and numbered menu items
-- [ ] Fixed header with author name/logo and hamburger toggle
-- [ ] Hero slider with two full-height slides (parallax background + overlay)
-- [ ] About section with left portrait (parallax) and right text content
-- [ ] Services section with 3 icon blocks (layers, gears, code)
-- [ ] Portfolio section with 6 alternating image+text items
-- [ ] Counter section with dark bg and 3 large blue numbers
-- [ ] Footer: dark bg, centered social circles, contact info, copyright with Component Dock link
-- [ ] Footer links to https://www.componentdock.com/ (Component Dock)
-- [ ] Footer does NOT reference ColorLib
-- [ ] No ColorLib references anywhere in app code (spec-only provenance)
-- [ ] Responsive: mobile hamburger, stacked layouts, reduced font sizes
-- [ ] 100% test coverage
-- [ ] Vite config has `injectUiSource()` helper
-- [ ] CNAME: `craftfolio.free.componentdock.com`
-- [ ] Homepage: `https://craftfolio.free.componentdock.com`
+- [ ] Hero uses fullscreen carousel layout (3 slides)
+- [ ] Portfolio grid is 4-column with black overlay hover effect
+- [ ] About section has gray background (`#f9f9ff`)
+- [ ] Testimonials split layout (carousel left, logos right)
+- [ ] Newsletter has background image with white text
+- [ ] Footer is golden yellow (`#ffd200`) with social icons
+- [ ] Button style: square corners, red background, white text
+- [ ] No references to ColorLib in app code
+- [ ] Footer links to `https://www.componentdock.com/`
+- [ ] Placeholder images use `https://picsum.photos/seed/craftfolio-<n>/<w>/<h>`
+- [ ] Google Fonts loaded: Poppins (headings) + Roboto (body)
+- [ ] `npm run test:coverage` passes at 100%
+- [ ] `npm run build` succeeds
