@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #00c8a0;
+  --color-brand-dark: #00a885;
+  --color-navy: #103230;
+  --color-text-dark: #111111;
+  --color-text-muted: #666666;
+  --color-bg-light: #f7f7f7;
+  --color-heading: 'Montserrat', sans-serif;
+  --color-body: 'Lato', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--color-body);
+    color: var(--color-text-dark);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--color-heading);
+  }
+}
