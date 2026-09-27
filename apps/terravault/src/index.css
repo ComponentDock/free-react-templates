@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #2cbdb8;
+  --color-brand-dark: #24a6a1;
+  --color-dark: #19191a;
+  --color-gray-text: #707079;
+  --color-light-gray: #aaaab3;
+  --color-off-white: #f2f4f5;
+  --color-heading: 'Poppins', sans-serif;
+  --color-body: 'Poppins', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--color-body);
+    color: #333333;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--color-heading);
+  }
+}
