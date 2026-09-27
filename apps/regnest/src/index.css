@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #8fb8c8;
+  --color-brand-dark: #7aa8ba;
+  --color-card-bg: #ffffff;
+  --color-label: #999999;
+  --color-border: #dddddd;
+  --color-heading: #222222;
+  --color-price: #2d6a4f;
+  --color-button: #222222;
+  --color-button-hover: #333333;
+  --color-terms-link: #3b82f6;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
