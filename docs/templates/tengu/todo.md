@@ -18,6 +18,7 @@ Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/ronin-free-templa
 ## Fidelity Notes
 
 ### Navbar
+
 - Transparent background, absolute positioned over hero
 - Logo image left, nav links right (ml-auto)
 - Text: 12px, uppercase, Roboto, 500 weight, color #222222
@@ -25,12 +26,14 @@ Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/ronin-free-templa
 - Sticky on scroll (background changes)
 
 ### Hero
+
 - Split 50/50: left = portrait image, right = text content
 - Heading "This is me" in Roboto, name in Heebo bold
 - CTA "Discover Now" button: gradient bg (#8490ff → #62bdfc), white text, 5px radius, 13px Roboto 500
 - Banner has background image
 
 ### About
+
 - Light background, centered "About Myself" heading (Heebo, 36px, #222222, uppercase)
 - Bio paragraph in Roboto 16px, #777777
 - 3 stat counters in a row, large numbers
@@ -38,30 +41,35 @@ Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/ronin-free-templa
 - Skill bars: label + percentage, animated on scroll
 
 ### Features
+
 - White background, centered heading
 - 6 cards in 3×2 grid (col-lg-4 col-md-6)
 - Each card: icon (flaticon), title (Heebo), description (Roboto, #777777)
 - Light card borders or subtle shadow
 
 ### Projects
+
 - Light background (#f9f9ff), centered heading
 - 6 project cards in 3×2 grid
 - Each card: project image with hover overlay effect (dark semi-transparent overlay with icon)
 - Title links to project details
 
 ### Testimonials
+
 - White background, centered heading
 - Carousel/slider (owl-carousel style)
 - Each slide: quote text, author name (Heebo, h4), 4.5 star rating
 - Star icons in brand color or gold
 
 ### Blog
+
 - White background, centered heading
 - 3-column grid of blog cards
 - Each card: featured image, title (Heebo), date, "Read More" link
 - Subtle card shadows
 
 ### Footer
+
 - Dark navy background (#04091e)
 - 3 columns: About Me (text + copyright), Newsletter (email input + subscribe), Follow Me (social icons)
 - Copyright links to Component Dock (NOT ColorLib)
