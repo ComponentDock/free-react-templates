@@ -2623,7 +2623,7 @@
 
 ## Registration Forms (37)
 
-- [ ] **Colorlib Regform 1** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-1/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-1.jpg)
+- [~] **Colorlib Regform 1** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-1/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-1.jpg)
 - [ ] **Colorlib Regform 10** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-10.jpg)
 - [ ] **Colorlib Regform 12** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-12/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-12.jpg)
 - [ ] **Colorlib Regform 13** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-13/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-13.jpg)
