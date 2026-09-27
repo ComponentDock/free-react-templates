@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Propwell brand palette — teal accent #30caa0, dark bg #324a4e */
+  --color-teal-50: #f0faf7;
+  --color-teal-100: #d1f1e8;
+  --color-teal-200: #a3e3d1;
+  --color-teal-300: #6ed0b5;
+  --color-teal-400: #30caa0;
+  --color-teal-500: #28a882;
+  --color-teal-600: #208668;
+  --color-teal-700: #196550;
+  --color-teal-800: #124338;
+  --color-teal-900: #0b2220;
+
+  --color-dark-50: #f2f3f4;
+  --color-dark-100: #d5d8da;
+  --color-dark-200: #aab1b5;
+  --color-dark-300: #808a90;
+  --color-dark-400: #56636b;
+  --color-dark-500: #324a4e;
+  --color-dark-600: #2a3e42;
+  --color-dark-700: #213236;
+  --color-dark-800: #17252a;
+  --color-dark-900: #0e191d;
+
+  --color-primary: #30caa0;
+  --color-primary-dark: #28a882;
+  --color-text-dark: #252525;
+  --color-text-gray: #707070;
+  --color-bg-dark: #324a4e;
+
+  --font-sans: 'Source Sans Pro', ui-sans-serif, system-ui, sans-serif;
+}

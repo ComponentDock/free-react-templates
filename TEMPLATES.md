@@ -2598,7 +2598,7 @@
 - [x] **Homofy** — [colorlib](https://colorlib.com/wp/template/homofy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/homofy-colorlib-template.jpg) · [domily](https://domily.free.componentdock.com)
 - [x] **Hus** — [colorlib](https://colorlib.com/wp/template/hus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hus-free-template.jpg) · [residium](https://residium.free.componentdock.com)
 - [x] **Konato** — [colorlib](https://colorlib.com/wp/template/konato/) · [landmark](https://landmark.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/konato-free-template.jpg)
-- [ ] **Leramiz** — [colorlib](https://colorlib.com/wp/template/leramiz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/leramiz-free-template.jpg)
+- [~] **Leramiz** — [colorlib](https://colorlib.com/wp/template/leramiz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/leramiz-free-template.jpg)
 - [x] **Mondy** — [colorlib](https://colorlib.com/wp/template/mondy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mondy-free-template.jpg) · [estately](https://estately.free.componentdock.com)
 - [ ] **Myhome** — [colorlib](https://colorlib.com/wp/template/myhome/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/myhome-free-template.jpg)
 - [x] **Oakberry** — [colorlib](https://colorlib.com/wp/template/oakberry/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/oakberry-free-template.jpg) · [havenridge](https://havenridge.free.componentdock.com)
