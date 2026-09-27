@@ -1,6 +1,7 @@
 {
   "name": "@free-react-templates/fern",
   "private": true,
+  "homepage": "https://fern.free.componentdock.com",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
