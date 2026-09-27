@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Regflux brand palette — light blue background (#c5e4f3). */
+  --color-brand: #c5e4f3;
+
+  /* Blue accent for buttons and toggle (#5ba4cf). */
+  --color-accent: #5ba4cf;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
