@@ -2600,7 +2600,7 @@
 - [x] **Konato** — [colorlib](https://colorlib.com/wp/template/konato/) · [landmark](https://landmark.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/konato-free-template.jpg)
 - [x] **Leramiz** — [colorlib](https://colorlib.com/wp/template/leramiz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/leramiz-free-template.jpg) · [propwell](https://propwell.free.componentdock.com)
 - [x] **Mondy** — [colorlib](https://colorlib.com/wp/template/mondy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mondy-free-template.jpg) · [estately](https://estately.free.componentdock.com)
-- [ ] **Myhome** — [colorlib](https://colorlib.com/wp/template/myhome/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/myhome-free-template.jpg)
+- [~] **Myhome** — [colorlib](https://colorlib.com/wp/template/myhome/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/myhome-free-template.jpg)
 - [x] **Oakberry** — [colorlib](https://colorlib.com/wp/template/oakberry/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/oakberry-free-template.jpg) · [havenridge](https://havenridge.free.componentdock.com)
 - [x] **Props** — [colorlib](https://colorlib.com/wp/template/props/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/props-free-template.jpg) · [quarters](https://free-react-templates-quarters.surge.sh)
 - [ ] **Real Estate** — [colorlib](https://colorlib.com/wp/template/real-estate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/realestate-free-realstate-website-template.jpg)
