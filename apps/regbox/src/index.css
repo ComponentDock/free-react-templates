@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette: light sky blue from the original full-viewport background. */
+  --color-brand-bg: #accffe;
+  --color-brand-primary: #99ccff;
+  --color-brand-primary-hover: rgba(52, 152, 253, 0.25);
+
+  /* Text colors. */
+  --color-heading: #333;
+  --color-input-text: #666;
+  --color-placeholder: #999;
+  --color-icon: #555;
+
+  /* Form card. */
+  --color-form-bg: #fff;
+  --color-input-border: #e6e6e6;
+  --color-input-focus: #accffe;
+
+  /* Fonts: Mulish (successor to Muli from the original). */
+  --font-sans: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    margin: 0;
+  }
+}
