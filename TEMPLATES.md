@@ -2565,7 +2565,7 @@
 - [x] **Skater** — [colorlib](https://colorlib.com/wp/template/skater/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skater-free-template.jpg) · [cruiser](https://free-react-templates-cruiser.surge.sh)
 - [x] **Space** · [cosmos](https://free-react-templates-cosmos.surge.sh) — [colorlib](https://colorlib.com/wp/template/space/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/space-free-template.jpg)
 - [x] **Stellar** — [colorlib](https://colorlib.com/wp/template/stellar/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stellar-free-template.jpg) · [astra](https://free-react-templates-astra.surge.sh)
-- [~] **Steve** — [colorlib](https://colorlib.com/wp/template/steve/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/steve-free-template.jpg)
+- [x] **Steve** — [colorlib](https://colorlib.com/wp/template/steve/) · [craftfolio](https://free-react-templates-craftfolio.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/steve-free-template.jpg)
 - [x] **Strategy** — [colorlib](https://colorlib.com/wp/template/strategy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/strategy-free-template.jpg) · [playbook](https://playbook.free.componentdock.com)
 - [ ] **Sun** — [colorlib](https://colorlib.com/wp/template/sun/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sun-free-template.jpg)
 - [x] **Sunzine** — [colorlib](https://colorlib.com/wp/template/sunzine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sunzine-free-template.jpg) · [aperture](https://aperture.free.componentdock.com)
@@ -2725,7 +2725,7 @@
 - [x] **Ronaldo** — [colorlib](https://colorlib.com/wp/template/ronaldo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ronaldo-free-template.jpg) · [showcase](https://showcase.free.componentdock.com)
 - [x] **Satner** — [colorlib](https://colorlib.com/wp/template/satner/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/satner-free-template.jpg) · [kael](https://kael.free.componentdock.com)
 - [ ] **Schmidt** — [colorlib](https://colorlib.com/wp/template/schmidt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/schmidt-free-template.jpg)
-- [~] **Steve** — [colorlib](https://colorlib.com/wp/template/steve/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/steve-free-template.jpg)
+- [x] **Steve** — [colorlib](https://colorlib.com/wp/template/steve/) · [craftfolio](https://free-react-templates-craftfolio.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/steve-free-template.jpg)
 - [ ] **Vcard** — [colorlib](https://colorlib.com/wp/template/vcard/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vcard-free-template.jpg)
 
 ## Search Form Bar (45)
