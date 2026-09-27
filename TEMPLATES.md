@@ -2585,7 +2585,7 @@
 - [x] **Azenta** — [colorlib](https://colorlib.com/wp/template/azenta/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/azenta-free-template.jpg) · [terravault](https://terravault.free.componentdock.com)
 - [x] **Bluesky** — [colorlib](https://colorlib.com/wp/template/bluesky/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bluesky-free-template.jpg) · [bluecoast](https://bluecoast.free.componentdock.com)
 - [x] **Dreamrs** — [colorlib](https://colorlib.com/wp/template/dreamrs/) · [Skyline](https://skyline.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dreamrs-free-template.jpg)
-- [ ] **Ecoverde** — [colorlib](https://colorlib.com/wp/template/ecoverde/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ecoverde-free-template.jpg)
+- [~] **Ecoverde** — [colorlib](https://colorlib.com/wp/template/ecoverde/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ecoverde-free-template.jpg)
 - [x] **Estate** — [colorlib](https://colorlib.com/wp/template/estate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/estate-free-template.jpg) · [homemark](https://homemark.free.componentdock.com)
 - [x] **Estatehub** — [colorlib](https://colorlib.com/wp/template/estatehub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/estatehub-template-1770211352442.jpg) · [keyhaven](https://keyhaven.free.componentdock.com)
 - [x] **Findstate** — [colorlib](https://colorlib.com/wp/template/findstate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/findstate-free-template.jpg) · [keyhold](https://keyhold.free.componentdock.com)
