@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — warm brown/tan #947054 from the real estate design */
+  --color-tan-50: #faf6f3;
+  --color-tan-100: #f2ebe3;
+  --color-tan-200: #e6d5c6;
+  --color-tan-300: #d4b8a0;
+  --color-tan-400: #c19b7a;
+  --color-tan-500: #947054;
+  --color-tan-600: #7d5d46;
+  --color-tan-700: #664a38;
+  --color-tan-800: #4f382a;
+  --color-tan-900: #38261c;
+
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
