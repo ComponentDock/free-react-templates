@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette: teal-to-purple gradient from the original design. */
+  --color-brand-start: #74ebd5;
+  --color-brand-end: #3f2b96;
+  --color-sidebar-bg: #3e4061;
+  --color-step-active: #4fab40;
+  --color-step-inactive: #cccccc;
+  --color-step-hover: #36782c;
+
+  /* Text colors. */
+  --color-heading: #333333;
+  --color-body: #666666;
+  --color-muted: #999999;
+
+  /* Form card. */
+  --color-card-bg: #ffffff;
+  --color-border: #e5e5e5;
+  --color-plan-inactive: #999999;
+
+  /* Fonts: Open Sans from the original. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    margin: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
