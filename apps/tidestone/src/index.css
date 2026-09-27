@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Tidestone brand palette — gold/amber #cca772 from the original design */
+  --color-brand: #cca772;
+  --color-brand-dark: #b8923f;
+
+  /* Ink — dark text (#222222 from the original) */
+  --color-ink: #222222;
+
+  /* Paper — light section background (#f7f9f9 porcelain) */
+  --color-paper: #f7f9f9;
+
+  /* Mist — muted body text (#777777) */
+  --color-mist: #777777;
+
+  /* Footer dark (#0b1a2a) */
+  --color-footer: #0b1a2a;
+
+  /* Primary scale — gold/amber tones for shared Button/ButtonLink */
+  --color-primary-50: #fdf8ed;
+  --color-primary-100: #f9edcf;
+  --color-primary-200: #f2d99e;
+  --color-primary-300: #e8c16a;
+  --color-primary-400: #d9a945;
+  --color-primary-500: #cca772;
+  --color-primary-600: #b8923f;
+  --color-primary-700: #9a7432;
+  --color-primary-800: #7d5c2b;
+  --color-primary-900: #664b26;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
