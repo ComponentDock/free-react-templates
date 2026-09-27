@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #222222;
+  --color-brand-dark: #333333;
+  --color-card-bg: #ffffff;
+  --color-label: #999999;
+  --color-border: #dddddd;
+  --color-heading: #222222;
+  --color-bg: #e8e8e8;
+  --font-sans: 'Poppins', system-ui, sans-serif;
+}
