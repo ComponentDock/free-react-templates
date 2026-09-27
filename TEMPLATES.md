@@ -2590,7 +2590,7 @@
 - [x] **Estatehub** — [colorlib](https://colorlib.com/wp/template/estatehub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/estatehub-template-1770211352442.jpg) · [keyhaven](https://keyhaven.free.componentdock.com)
 - [x] **Findstate** — [colorlib](https://colorlib.com/wp/template/findstate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/findstate-free-template.jpg) · [keyhold](https://keyhold.free.componentdock.com)
 - [x] **Hamlet** — [colorlib](https://colorlib.com/wp/template/hamlet/) · [hamlin](https://hamlin.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hamlet-free-template-1.jpg)
-- [~] **Holmes** — [colorlib](https://colorlib.com/wp/template/holmes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/holmes-free-template.jpg)
+- [x] **Holmes** — [colorlib](https://colorlib.com/wp/template/holmes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/holmes-free-template.jpg) · [turnkey](https://turnkey.free.componentdock.com)
 - [x] **Homeland** — [colorlib](https://colorlib.com/wp/template/homeland/) · [nestwell](https://nestwell.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/homeland-free-template.jpg)
 - [x] **Homes** — [colorlib](https://colorlib.com/wp/template/homes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/homes-free-template.jpg) · [habitat](https://habitat.free.componentdock.com)
 - [ ] **Homespace** — [colorlib](https://colorlib.com/wp/template/homespace/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/homespace-free-template.jpg)
