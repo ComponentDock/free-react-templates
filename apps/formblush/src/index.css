@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette: soft pink from the original form panel background. */
+  --color-brand: #f5a0b0;
+  --color-brand-dark: #e8899a;
+  --color-brand-light: #fcd5dc;
+
+  /* Heading color: dark text on pink background. */
+  --color-ink: #333;
+
+  /* Body text on pink background. */
+  --color-body: #555;
+
+  /* Input field styling. */
+  --color-input-bg: #ffffff;
+  --color-input-border: #e0e0e0;
+  --color-input-focus: #f5a0b0;
+
+  /* Placeholder color. */
+  --color-placeholder: #999;
+
+  /* Social icon circles. */
+  --color-social: #f5a0b0;
+
+  /* Fonts: Poppins (body/inputs) + Pacifico (decorative heading). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Pacifico', cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-body);
+    margin: 0;
+  }
+}
