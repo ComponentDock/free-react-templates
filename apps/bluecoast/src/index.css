@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-blue: #487fee;
+  --color-brand-green: #32fa95;
+  --color-brand-primary: #3f6fce;
+  --color-accent-green: #2cd983;
+  --color-text-dark: #282828;
+  --color-text-gray: #828282;
+  --color-text-light: #a5a5a5;
+  --color-footer-dark: #282828;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Montserrat', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+    color: var(--color-text-dark);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
