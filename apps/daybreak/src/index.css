@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Daybreak brand colors — from the ColorLib "Sun" preview
+     (https://preview.colorlib.com/theme/sun/ + style.css):
+     a clean minimalist portfolio theme with white background,
+     dark text, and warm orange-red accents. */
+  --color-primary-50: #fef2ee;
+  --color-primary-100: #fde1d9;
+  --color-primary-200: #fac4b3;
+  --color-primary-300: #f69e84;
+  --color-primary-400: #e8491d;
+  --color-primary-500: #d43d14;
+  --color-primary-600: #b5300f;
+  --color-primary-700: #942610;
+  --color-primary-800: #7a2214;
+  --color-primary-900: #662116;
+
+  /* Muted copy text. */
+  --color-smoke: #777777;
+
+  --color-ink: #333333;
+
+  /* Montserrat (headings/nav) + PT Serif (body) via Google Fonts <link> in
+     index.html — matching the ColorLib font pairing. */
+  --font-sans: 'PT Serif', Georgia, serif;
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
