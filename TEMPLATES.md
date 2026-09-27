@@ -2603,7 +2603,7 @@
 - [x] **Myhome** — [colorlib](https://colorlib.com/wp/template/myhome/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/myhome-free-template.jpg) · [homeward](https://homeward.free.componentdock.com)
 - [x] **Oakberry** — [colorlib](https://colorlib.com/wp/template/oakberry/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/oakberry-free-template.jpg) · [havenridge](https://havenridge.free.componentdock.com)
 - [x] **Props** — [colorlib](https://colorlib.com/wp/template/props/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/props-free-template.jpg) · [quarters](https://free-react-templates-quarters.surge.sh)
-- [~] **Real Estate** — [colorlib](https://colorlib.com/wp/template/real-estate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/realestate-free-realstate-website-template.jpg)
+- [x] **Real Estate** — [colorlib](https://colorlib.com/wp/template/real-estate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/realestate-free-realstate-website-template.jpg) · [propwise](https://propwise.free.componentdock.com)
 - [ ] **Real Estate 2** — [colorlib](https://colorlib.com/wp/template/real-estate-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/realestate2-free-template.jpg)
 - [x] **Realtors** — [colorlib](https://colorlib.com/wp/template/realtors/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/realtors-free-template.jpg) · [roost](https://roost.free.componentdock.com)
 - [x] **Rehomes** — [colorlib](https://colorlib.com/wp/template/rehomes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rehomes-free-template.jpg) · [dwellix](https://dwellix.free.componentdock.com)
