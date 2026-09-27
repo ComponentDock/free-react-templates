@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Playbook brand tokens — from the ColorLib "Strategy" preview
+     (https://preview.colorlib.com/theme/strategy/ + css/style.css):
+     a portfolio/creative agency theme with brand red #dc3545,
+     dark text #000, secondary text #495057 / #6c757d, and
+     light gray backgrounds #f8f9fa / #f6f6f6. */
+
+  --color-brand: #dc3545;
+  --color-brand-dark: #c82333;
+  --color-ink: #000000;
+  --color-secondary: #495057;
+  --color-muted: #6c757d;
+  --color-light-text: #b3b3b3;
+  --color-border: #e6e6e6;
+  --color-bg-light: #f8f9fa;
+  --color-bg-form: #f6f6f6;
+  --color-white: #ffffff;
+  --color-footer-border: #f4f4f4;
+
+  /* System font stack — matching the ColorLib Strategy template. */
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
