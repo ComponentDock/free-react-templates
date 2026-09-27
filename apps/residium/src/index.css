@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Residium brand palette — recreated from the ColorLib "Hus" design
+     (red accent #ff2424, orange secondary #ff5e13, navy #415094). */
+  --color-red-50: #fff5f5;
+  --color-red-100: #ffe0e0;
+  --color-red-200: #ffc2c2;
+  --color-red-300: #ff8a8a;
+  --color-red-400: #ff5252;
+  --color-red-500: #ff2424;
+  --color-red-600: #e61e1e;
+  --color-red-700: #b31818;
+  --color-red-800: #8c1414;
+  --color-red-900: #6b1010;
+
+  --color-orange-50: #fff8f3;
+  --color-orange-100: #ffe8d9;
+  --color-orange-200: #ffd1b3;
+  --color-orange-300: #ffb388;
+  --color-orange-400: #ff7e3d;
+  --color-orange-500: #ff5e13;
+  --color-orange-600: #e6550f;
+  --color-orange-700: #b3420c;
+  --color-orange-800: #8c330a;
+  --color-orange-900: #6b2708;
+
+  --color-navy-50: #f0f3fa;
+  --color-navy-100: #d5ddf0;
+  --color-navy-200: #aabadf;
+  --color-navy-300: #8097ce;
+  --color-navy-400: #5b73bd;
+  --color-navy-500: #415094;
+  --color-navy-600: #354379;
+  --color-navy-700: #29335e;
+  --color-navy-800: #1e2545;
+  --color-navy-900: #13182c;
+
+  /* Oswald — the original template's heading typeface */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+}
