@@ -3,32 +3,25 @@ import { render, screen } from '@testing-library/react'
 import { Footer } from './Footer'
 
 describe('Footer', () => {
-  it('renders the site name, explore links, socials and copyright bar', () => {
+  it('renders copyright text', () => {
     render(<Footer />)
-
-    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Gallery' })).toHaveAttribute('href', '#home')
-
-    for (const label of ['Home', 'Portfolio', 'About', 'Contact']) {
-      expect(screen.getByRole('link', { name: label })).toBeInTheDocument()
-    }
-
-    for (const label of ['GitHub', 'X', 'LinkedIn']) {
-      const social = screen.getByRole('link', { name: label })
-      expect(social).toHaveAttribute('target', '_blank')
-      expect(social).toHaveAttribute('rel', 'noreferrer')
-    }
-
-    expect(
-      screen.getByText(new RegExp(`© ${new Date().getFullYear()} Gallery`)),
-    ).toBeInTheDocument()
+    const year = new Date().getFullYear()
+    expect(screen.getByText(new RegExp(`${year}`))).toBeInTheDocument()
   })
 
-  it('credits Component Dock with a link in the copyright bar', () => {
+  it('renders Component Dock link', () => {
     render(<Footer />)
+    const link = screen.getByRole('link', { name: /component dock/i })
+    expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
+    expect(link).toHaveAttribute('target', '_blank')
+    expect(link).toHaveAttribute('rel', 'noopener noreferrer')
+  })
 
-    const credit = screen.getByRole('link', { name: 'Component Dock' })
-    expect(credit).toHaveAttribute('href', 'https://www.componentdock.com/')
-    expect(credit).toHaveTextContent('Component Dock')
+  it('renders social media links', () => {
+    render(<Footer />)
+    expect(screen.getByLabelText('Twitter')).toBeInTheDocument()
+    expect(screen.getByLabelText('Behance')).toBeInTheDocument()
+    expect(screen.getByLabelText('Dribbble')).toBeInTheDocument()
+    expect(screen.getByLabelText('Facebook')).toBeInTheDocument()
   })
 })

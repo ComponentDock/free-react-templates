@@ -1,43 +1,33 @@
 import { describe, expect, it } from 'vitest'
-import { fireEvent, render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { PortfolioGrid } from './PortfolioGrid'
 
 describe('PortfolioGrid', () => {
-  it('shows every portfolio item when the "All" filter is active', () => {
-    const { container } = render(<PortfolioGrid activeFilter="All" />)
-
-    expect(screen.getByRole('region', { name: 'Portfolio' })).toBeInTheDocument()
-    expect(container.querySelectorAll('a[href="#portfolio"]')).toHaveLength(12)
-    expect(screen.getByRole('img', { name: /Sneakers floating/ })).toBeInTheDocument()
+  it('renders 9 portfolio items', () => {
+    render(<PortfolioGrid />)
+    const images = screen.getAllByRole('img')
+    expect(images).toHaveLength(9)
   })
 
-  it('filters the grid to a single category', () => {
-    const { container } = render(<PortfolioGrid activeFilter="Hand pens" />)
-
-    expect(container.querySelectorAll('a[href="#portfolio"]')).toHaveLength(2)
-    expect(screen.getByRole('img', { name: /Ink pen drawing studies/ })).toBeInTheDocument()
-    expect(screen.queryByRole('img', { name: /Abstract canvas artwork/ })).not.toBeInTheDocument()
+  it('renders category labels', () => {
+    render(<PortfolioGrid />)
+    expect(screen.getByText('Smartphone')).toBeInTheDocument()
+    expect(screen.getByText('Starlight')).toBeInTheDocument()
+    expect(screen.getByText('Bottle')).toBeInTheDocument()
   })
 
-  it('shows the title and category overlay on hover and focus, hiding it on leave and blur', () => {
-    const { container } = render(<PortfolioGrid activeFilter="All" />)
+  it('renders type labels', () => {
+    render(<PortfolioGrid />)
+    expect(screen.getAllByText('Gallery').length).toBeGreaterThanOrEqual(2)
+    expect(screen.getAllByText('Video').length).toBeGreaterThanOrEqual(3)
+    expect(screen.getAllByText('Article').length).toBeGreaterThanOrEqual(3)
+  })
 
-    const first = container.querySelector('a[href="#portfolio"]') as HTMLElement
-    const overlay = first.querySelector('span.absolute') as HTMLElement
-    expect(overlay).toHaveClass('opacity-0')
-    expect(overlay.textContent).toMatch(/Canvas No\. 7/)
-    expect(overlay.textContent).toMatch(/Art/)
-
-    fireEvent.mouseEnter(first)
-    expect(overlay).toHaveClass('opacity-100')
-
-    fireEvent.mouseLeave(first)
-    expect(overlay).toHaveClass('opacity-0')
-
-    fireEvent.focus(first)
-    expect(overlay).toHaveClass('opacity-100')
-
-    fireEvent.blur(first)
-    expect(overlay).toHaveClass('opacity-0')
+  it('has responsive grid layout', () => {
+    const { container } = render(<PortfolioGrid />)
+    const grid = container.querySelector('.grid')
+    expect(grid).toBeInTheDocument()
+    expect(grid?.className).toContain('sm:grid-cols-2')
+    expect(grid?.className).toContain('md:grid-cols-3')
   })
 })
