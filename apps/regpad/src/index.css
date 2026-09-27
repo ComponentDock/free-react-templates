@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette: pink-to-purple gradient from the original design. */
+  --color-page-from: #fbc2eb;
+  --color-page-to: #a18cd1;
+
+  /* Card. */
+  --color-card-bg: #000;
+
+  /* Text. */
+  --color-text-white: #fff;
+  --color-placeholder: #ccc;
+  --color-border: rgba(255, 255, 255, 0.2);
+
+  /* Submit button. */
+  --color-btn: #57b846;
+  --color-btn-hover: #4dae3c;
+
+  /* Fonts: Poppins from Google Fonts. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    margin: 0;
+  }
+}
