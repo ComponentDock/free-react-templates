@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #edb77d;
+  --color-brand-dark: #e79e50;
+  --color-form-bg: #111111;
+  --color-body-bg: #ffd9b0;
+  --color-label: #bebebe;
+  --color-input-border: #999999;
+  --color-heading: #ffffff;
+  --color-radio-inactive: #ebebeb;
+  --color-radio-text: #888888;
+  --font-sans: 'Poppins', system-ui, sans-serif;
+}
