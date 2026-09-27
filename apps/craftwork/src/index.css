@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — recreated from the ColorLib Schmidt design:
+     gold #d5c455 accents/buttons, dark #1a1a1a headings, light bgs. */
+  --color-brand: #d5c455;
+  --color-brand-dark: #bfa83a;
+
+  /* Ink — dark headings (#1a1a1a). */
+  --color-ink: #1a1a1a;
+  --color-ink-dark: #111111;
+
+  /* Paper — white section background. */
+  --color-paper: #ffffff;
+
+  /* Cloud — light gray section background (#f8f9fa). */
+  --color-cloud: #f8f9fa;
+
+  /* Mist — muted body text (#666666). */
+  --color-mist: #666666;
+
+  /* Primary scale so shared Button/ButtonLink `primary` variants
+     resolve to the gold. */
+  --color-primary-50: #faf8e8;
+  --color-primary-100: #f3efc6;
+  --color-primary-200: #e8e09e;
+  --color-primary-300: #dccf72;
+  --color-primary-400: #d5c455;
+  --color-primary-500: #bfa83a;
+  --color-primary-600: #a08a28;
+  --color-primary-700: #7a6a1e;
+  --color-primary-800: #544814;
+  --color-primary-900: #3a310e;
+
+  /* Typography — Poppins (same as original). */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
