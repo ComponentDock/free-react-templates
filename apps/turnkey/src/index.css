@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Turnkey design tokens — recreated from the source preview stylesheets
+     (no assets copied):
+     - brand #ea6c5d: primary buttons, selection, form focus, accents.
+     - heading #222222: all headings, card titles.
+     - body #777777: body copy, secondary text.
+     - light #f9f9ff: button default bg.
+     - overlay: dark semi-transparent hero overlay.
+     - font: Poppins (300/400/500/600/700). */
+  --color-brand: #ea6c5d;
+  --color-brand-dark: #d55a4b;
+  --color-heading: #222222;
+  --color-body: #777777;
+  --color-light: #f9f9ff;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.625;
+    color: var(--color-body);
+    background-color: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--color-heading);
+  }
+
+  ::selection {
+    background-color: var(--color-brand);
+    color: #fff;
+  }
+}
