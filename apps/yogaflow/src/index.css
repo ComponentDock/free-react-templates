@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette from the original registration form stylesheet. */
+  --color-brand: #84cde1;
+  --color-brand-hover: #17c8f8;
+
+  /* Body text: #666, headings: #333 — from the original stylesheet. */
+  --color-ink: #333;
+  --color-body: #666;
+
+  /* Input borders and focus ring from the original stylesheet. */
+  --color-border: #e6e6e6;
+  --color-focus: #f4d5cc;
+
+  /* Placeholder color from the original stylesheet. */
+  --color-placeholder: #999;
+
+  /* Fonts: Montserrat (body/inputs) + El Messiri (heading) — via Google Fonts. */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'El Messiri', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-body);
+    margin: 0;
+  }
+}
