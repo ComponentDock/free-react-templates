@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Servhub brand palette — recreated from the ColorLib "Services" design
+     (lime-green accent #C2E54F). */
+  --color-lime-50: #f7fce5;
+  --color-lime-100: #eef9c1;
+  --color-lime-200: #e2f38a;
+  --color-lime-300: #d4ec4f;
+  --color-lime-400: #c2e54f;
+  --color-lime-500: #a8cc2e;
+  --color-lime-600: #83a81e;
+  --color-lime-700: #617f17;
+  --color-lime-800: #4d6516;
+  --color-lime-900: #415517;
+
+  /* Jost — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Jost', ui-sans-serif, system-ui, sans-serif;
+}
