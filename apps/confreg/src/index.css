@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Confreg brand palette — dark green (#3a7d44). */
+  --color-brand: #3a7d44;
+
+  /* Darker green for hover states (#2e7d32). */
+  --color-accent: #2e7d32;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
