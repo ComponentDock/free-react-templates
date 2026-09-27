@@ -2567,7 +2567,7 @@
 - [x] **Stellar** — [colorlib](https://colorlib.com/wp/template/stellar/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/stellar-free-template.jpg) · [astra](https://free-react-templates-astra.surge.sh)
 - [x] **Steve** — [colorlib](https://colorlib.com/wp/template/steve/) · [craftfolio](https://free-react-templates-craftfolio.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/steve-free-template.jpg)
 - [x] **Strategy** — [colorlib](https://colorlib.com/wp/template/strategy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/strategy-free-template.jpg) · [playbook](https://playbook.free.componentdock.com)
-- [~] **Sun** — [colorlib](https://colorlib.com/wp/template/sun/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sun-free-template.jpg)
+- [x] **Sun** — [colorlib](https://colorlib.com/wp/template/sun/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sun-free-template.jpg) · [daybreak](https://daybreak.free.componentdock.com)
 - [x] **Sunzine** — [colorlib](https://colorlib.com/wp/template/sunzine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sunzine-free-template.jpg) · [aperture](https://aperture.free.componentdock.com)
 - [x] **Tough** — [colorlib](https://colorlib.com/wp/template/tough/) · [bastion](https://bastion.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tough-free-template.jpg)
 - [x] **Transcend** — [colorlib](https://colorlib.com/wp/template/transcend/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/transcend-free-template-1.jpg) · [chroma](https://chroma.free.componentdock.com)
