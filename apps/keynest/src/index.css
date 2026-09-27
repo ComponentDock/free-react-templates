@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #0fb45f;
+  --color-primary-dark: #0d9a4f;
+  --color-primary-light: #11e276;
+  --color-heading: #140c40;
+  --color-body: #646d77;
+  --color-mist: #f8f9fa;
+  --font-sans: 'Prompt', ui-sans-serif, system-ui, sans-serif;
+}
