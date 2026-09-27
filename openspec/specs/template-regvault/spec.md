@@ -13,92 +13,130 @@ Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript.
 
 Extracted from the screenshot (preview was 404):
 
-| Token             | Value                              | Notes                                      |
-| ----------------- | ---------------------------------- | ------------------------------------------ |
-| Brand primary     | `#0C1456` (deep navy)             | Left panel background, card background     |
-| Accent / CTA      | `#E88DAA` (pink/coral)            | Heading text, button fill, label color     |
-| Page background   | Gradient `#4B2A7A` → `#C47A94`   | Full-viewport purple-to-mauve diagonal     |
-| Text primary      | `#FFFFFF`                          | Body text on dark backgrounds              |
-| Text secondary    | `#E88DAA`                         | Form labels, headings                      |
-| Button text       | `#FFFFFF`                         | White on pink button                       |
-| Button bg         | `#E88DAA`                         | Pink/coral fill                            |
-| Input border      | `rgba(255,255,255,0.3)`           | Underline-only (bottom border)             |
-| Card radius       | `0` (sharp corners)               | No border-radius on the card               |
-| Button radius     | `4px`                             | Slightly rounded pill shape                |
-| Font family       | Serif display + sans-serif body   | Heading: serif (e.g. Playfair Display); body: sans (e.g. Poppins) |
+| Token           | Value                           | Notes                                                             |
+| --------------- | ------------------------------- | ----------------------------------------------------------------- |
+| Brand primary   | `#0C1456` (deep navy)           | Left panel background, card background                            |
+| Accent / CTA    | `#E88DAA` (pink/coral)          | Heading text, button fill, label color                            |
+| Page background | Gradient `#4B2A7A` → `#C47A94`  | Full-viewport purple-to-mauve diagonal                            |
+| Text primary    | `#FFFFFF`                       | Body text on dark backgrounds                                     |
+| Text secondary  | `#E88DAA`                       | Form labels, headings                                             |
+| Button text     | `#FFFFFF`                       | White on pink button                                              |
+| Button bg       | `#E88DAA`                       | Pink/coral fill                                                   |
+| Input border    | `rgba(255,255,255,0.3)`         | Underline-only (bottom border)                                    |
+| Card radius     | `0` (sharp corners)             | No border-radius on the card                                      |
+| Button radius   | `4px`                           | Slightly rounded pill shape                                       |
+| Font family     | Serif display + sans-serif body | Heading: serif (e.g. Playfair Display); body: sans (e.g. Poppins) |
 
-## Gherkin requirements
+## Requirements
 
-### Background
-Given the page is loaded
-Then a full-viewport gradient background is visible (purple to mauve)
+### Requirement: Card layout
 
-### Scenario: Card layout
-Given the page is loaded
-Then a centered card is visible
-And the card is split into two equal columns
-And the left column has a dark navy background
-And the right column displays an image with an overlay
+The page SHALL display a centered card split into two equal columns on desktop.
 
-### Scenario: Form heading
-Given the card is visible
-Then the heading "Set The Event" appears in pink/coral serif font
-And the heading is left-aligned within the left panel
+#### Scenario: Desktop card layout
 
-### Scenario: Price display
-Given the card is visible
-Then "Price" label is shown with value "$270"
-And the value is displayed as read-only text (not editable)
+- **WHEN** the page is loaded on a desktop viewport
+- **THEN** a centered card is visible
+- **AND** the card is split into two equal columns
+- **AND** the left column has a dark navy background
+- **AND** the right column displays an image with an overlay
 
-### Scenario: People selector
-Given the card is visible
-Then "People" label is shown with a dropdown selector defaulting to "1"
+#### Scenario: Mobile card layout
 
-### Scenario: Name input
-Given the card is visible
-Then a "Name" text input is shown with an underline-only border style
+- **WHEN** the page is viewed on a mobile viewport
+- **THEN** the card stacks vertically (form on top, image below)
+- **AND** the form fields remain accessible and properly sized
 
-### Scenario: Mail input
-Given the card is visible
-Then a "Mail" text input is shown with an underline-only border style
+### Requirement: Form heading
 
-### Scenario: Phone input
-Given the card is visible
-Then a "Phone" text input is shown with an underline-only border style
+The left panel SHALL display a heading "Set The Event" in pink/coral serif font.
 
-### Scenario: Comment input
-Given the card is visible
-Then a "Comment" text input is shown with an underline-only border style
+#### Scenario: Heading display
 
-### Scenario: Submit button
-Given the card is visible
-Then a "Send your booking" button is shown
-And the button has a pink/coral background
-And the button text is white
+- **WHEN** the card is visible
+- **THEN** the heading "Set The Event" appears in pink/coral serif font
+- **AND** the heading is left-aligned within the left panel
 
-### Scenario: Contact info overlay
-Given the card is visible
-Then the right panel shows an overlay at the bottom
-And the overlay displays an address, phone number, and email
+### Requirement: Price display
 
-### Scenario: Responsive behavior
-Given the page is viewed on a mobile viewport
-Then the card stacks vertically (form on top, image below)
-And the form fields remain accessible and properly sized
+The form SHALL display a read-only price field showing "$270".
 
-## Verification checklist
+#### Scenario: Price display
 
-- [ ] Full-viewport gradient background renders correctly
-- [ ] Card is centered and split into two columns on desktop
-- [ ] Left panel: dark navy background with form
-- [ ] Right panel: image with bottom overlay showing contact info
-- [ ] Heading "Set The Event" in pink/coral serif font
-- [ ] Price field displays "$270" as read-only text
-- [ ] People field is a dropdown with options (1, 2, 3, etc.)
-- [ ] Name, Mail, Phone, Comment inputs use underline-only style
-- [ ] Submit button "Send your booking" styled with pink/coral fill
-- [ ] Contact info (address, phone, email) in right panel overlay
-- [ ] Mobile responsive: card stacks vertically
-- [ ] 100% test coverage (lines, functions, branches, statements)
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
+- **WHEN** the card is visible
+- **THEN** "Price" label is shown with value "$270"
+- **AND** the value is displayed as read-only text (not editable)
+
+### Requirement: People selector
+
+The form SHALL include a people dropdown selector defaulting to "1".
+
+#### Scenario: People dropdown
+
+- **WHEN** the card is visible
+- **THEN** "People" label is shown with a dropdown selector defaulting to "1"
+
+### Requirement: Form inputs
+
+The form SHALL include Name, Mail, Phone, and Comment inputs with underline-only border styling.
+
+#### Scenario: Name input
+
+- **WHEN** the card is visible
+- **THEN** a "Name" text input is shown with an underline-only border style
+
+#### Scenario: Mail input
+
+- **WHEN** the card is visible
+- **THEN** a "Mail" text input is shown with an underline-only border style
+
+#### Scenario: Phone input
+
+- **WHEN** the card is visible
+- **THEN** a "Phone" text input is shown with an underline-only border style
+
+#### Scenario: Comment input
+
+- **WHEN** the card is visible
+- **THEN** a "Comment" input is shown with an underline-only border style
+
+### Requirement: Submit button
+
+The form SHALL include a "Send your booking" submit button with pink/coral background.
+
+#### Scenario: Submit button display
+
+- **WHEN** the card is visible
+- **THEN** a "Send your booking" button is shown
+- **AND** the button has a pink/coral background
+- **AND** the button text is white
+
+### Requirement: Contact info overlay
+
+The right panel SHALL display contact information in a semi-transparent overlay at the bottom.
+
+#### Scenario: Contact info display
+
+- **WHEN** the card is visible
+- **THEN** the right panel shows an overlay at the bottom
+- **AND** the overlay displays an address, phone number, and email
+
+### Requirement: Footer
+
+The template SHALL include a footer linking to https://www.componentdock.com/.
+
+#### Scenario: Footer link
+
+- **WHEN** the page is loaded
+- **THEN** a footer is visible with a link to https://www.componentdock.com/
+- **AND** the link text includes "Component Dock"
+
+### Requirement: No ColorLib references
+
+The app code SHALL NOT contain any references to ColorLib.
+
+#### Scenario: Clean source
+
+- **WHEN** the app source files are inspected
+- **THEN** no file contains "colorlib" or "ColorLib" strings
+- **AND** provenance is only in the spec, TEMPLATES.md, and PR
