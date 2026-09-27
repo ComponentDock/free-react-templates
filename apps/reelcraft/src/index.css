@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ReelCraft brand palette — dark cinematic video production design.
+     Brand cyan #00bfe7, dark surfaces #100028 / #0a0119. */
+  --color-brand: #00bfe7;
+  --color-brand-dark: #00a5ca;
+
+  /* Dark surfaces. */
+  --color-surface: #100028;
+  --color-surface-dark: #0a0119;
+
+  /* Ink — body text on light backgrounds. */
+  --color-ink: #ffffff;
+  --color-ink-dark: #e0e0e0;
+
+  /* Paper — light section background. */
+  --color-paper: #1a1a2e;
+
+  /* Mist — muted body text. */
+  --color-mist: #999999;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the cyan. */
+  --color-primary-50: #e6f9fd;
+  --color-primary-100: #b3f0f8;
+  --color-primary-200: #80e7f3;
+  --color-primary-300: #4ddee9;
+  --color-primary-400: #1ad5e0;
+  --color-primary-500: #00bfe7;
+  --color-primary-600: #00a5ca;
+  --color-primary-700: #008bad;
+  --color-primary-800: #007190;
+  --color-primary-900: #005773;
+
+  /* Original fonts: "Play" (headings/buttons) + "Josefin Sans" (body). */
+  --font-sans: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Play', ui-sans-serif, system-ui, sans-serif;
+}
