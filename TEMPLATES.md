@@ -2573,7 +2573,7 @@
 - [x] **Transcend** — [colorlib](https://colorlib.com/wp/template/transcend/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/transcend-free-template-1.jpg) · [chroma](https://chroma.free.componentdock.com)
 - [x] **Tulen** — [colorlib](https://colorlib.com/wp/template/tulen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tulen-free-template.jpg) · [pana](https://pana.free.componentdock.com)
 - [x] **Unfold** — [colorlib](https://colorlib.com/wp/template/unfold/) · [unfurl](https://unfurl.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unfold-free-template.jpeg)
-- [ ] **Vcard2** — [colorlib](https://colorlib.com/wp/template/vcard2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vcard2-free-template.jpg)
+- [~] **Vcard2** — [colorlib](https://colorlib.com/wp/template/vcard2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vcard2-free-template.jpg)
 - [ ] **Videograph** — [colorlib](https://colorlib.com/wp/template/videograph/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/videograph-free-template.jpg)
 - [ ] **Whitespace** — [colorlib](https://colorlib.com/wp/template/whitespace/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/whitespace-free-template.jpg)
 - [ ] **Work** — [colorlib](https://colorlib.com/wp/template/work/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/work-free-template.jpg)
