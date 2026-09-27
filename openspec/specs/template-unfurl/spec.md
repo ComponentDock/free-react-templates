@@ -1,147 +1,149 @@
-# Template: Unfurl (Bootstrap Accordion)
+# Spec: Unfurl — Portfolio & Personal Template
+
+Recreation of ColorLib "Unfold" (https://colorlib.com/wp/template/unfold/).
 
 ## Purpose
 
-Recreation of **ColorLib "Accordion 18"** (source slug: `accordion-18`, preview URL: `https://preview.colorlib.com/theme/accordion-18/` — currently unreachable, fallback to screenshot only).
+A dark-themed portfolio and personal website template for creative professionals, featuring a full-viewport hero, isotope-style portfolio grid, skills progress bars, testimonials, blog journal, and contact form.
 
-Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript (strict).
-Deploy target: `unfurl.free.componentdock.com` (Surge, wildcard CNAME `*.free → na-west1.surge.sh`).
-Footer must link: `https://www.componentdock.com/` ("Component Dock").
+## Requirements
 
-## Design tokens (from screenshot — preview unreachable)
+### Requirement: Navigation
 
-| Token                            | Value                                                                                                          | Source            |
-| -------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------- |
-| **Brand green (expanded)**       | `#28a745` (Bootstrap success green)                                                                            | Screenshot        |
-| **Brand grey (collapsed)**       | `#6c757d` (Bootstrap secondary grey)                                                                           | Screenshot        |
-| **Text primary**                 | `#212529` (Bootstrap dark)                                                                                     | Screenshot        |
-| **Text muted**                   | `#6c757d`                                                                                                      | Screenshot        |
-| **Background**                   | `#ffffff` (white)                                                                                              | Screenshot        |
-| **Border**                       | `#dee2e6` (Bootstrap light border)                                                                             | Screenshot        |
-| **Font family**                  | System UI stack / `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif` | Bootstrap default |
-| **Accordion header font weight** | `600` (semi-bold)                                                                                              | Screenshot        |
-| **Accordion content font size**  | `0.875rem` (14px)                                                                                              | Screenshot        |
-| **Button/icon size**             | `1.25rem` × `1.25rem` (20×20px) square                                                                         | Screenshot        |
-| **Border radius (buttons)**      | `0.25rem` (4px)                                                                                                | Screenshot        |
-| **Spacing rhythm**               | `1rem` (16px) vertical between items                                                                           | Screenshot        |
+The template SHALL display a fixed top navigation bar with the logo "Unfurl", desktop navigation links (Home, Portfolio, About, Services, Skills, Testimonials, Journal, Contact), a dark mode toggle, and a mobile hamburger menu.
 
-> **Note:** Preview URL returned 404; all tokens derived from ColorLib screenshot (`https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-18.jpg`).
+#### Scenario: Desktop navigation renders all links
 
-## Section structure (1:1 from screenshot)
+- **WHEN** the page loads on desktop viewport
+- **THEN** the navbar displays the "Unfurl" logo and all 8 navigation links
 
-1. **Page Title** — centered, bold, dark text: "Bootstrap Accordion #8"
-2. **Accordion List** — vertical stack of 3 accordion items:
-   - Item 1 (expanded): "How to download and register?" + lorem ipsum content
-   - Item 2 (collapsed): "How to create your paypal account?"
-   - Item 3 (collapsed): "How to link your paypal and bank account?"
-3. **Footer** — Component Dock link (mandatory)
+#### Scenario: Mobile menu toggle
 
-## Gherkin requirements + scenarios
+- **WHEN** the user clicks the hamburger menu button on mobile
+- **THEN** the mobile navigation menu opens with all links and a dark mode toggle
 
-### Feature: Accordion component
+#### Scenario: Mobile menu closes on link click
 
-**Scenario: Page renders with title and three accordion items**
+- **WHEN** the mobile menu is open and the user clicks a navigation link
+- **THEN** the mobile menu closes
 
-```
-Given the user opens the page
-When the page loads
-Then the title "Bootstrap Accordion #8" is visible and centered
-And exactly three accordion items are rendered in vertical order
-```
+#### Scenario: Dark mode toggle
 
-**Scenario: First accordion item is expanded by default**
+- **WHEN** the user clicks the dark mode toggle button
+- **THEN** the html element's dark class is toggled
 
-```
-Given the page has loaded
-When the user views the first accordion item
-Then its header reads "How to download and register?"
-And its header text is colored with the brand green (#28a745)
-And its expand icon is an upward-pointing arrow (white on green square)
-And its content panel is visible showing the full lorem ipsum text
-And the content panel has a thin left border in the brand green
-```
+### Requirement: Hero Section
 
-**Scenario: Second and third accordion items are collapsed by default**
+The template SHALL display a full-viewport hero section with a dark background image, the heading "Unfurl", a subtitle describing the designer, and a scroll-down indicator.
 
-```
-Given the page has loaded
-When the user views the second accordion item
-Then its header reads "How to create your paypal account?"
-And its header text is colored with the brand grey (#6c757d)
-And its expand icon is a downward-pointing arrow (white on grey square)
-And its content panel is hidden
-And the third accordion item behaves identically with header "How to link your paypal and bank account?"
-```
+#### Scenario: Hero renders heading and subtitle
 
-**Scenario: Clicking a collapsed header expands it and collapses others (accordion behavior)**
+- **WHEN** the page loads
+- **THEN** the hero section displays "Unfurl" as the heading and the designer subtitle
 
-```
-Given the second accordion item is collapsed
-When the user clicks its header
-Then the second item expands (icon flips upward, content shows)
-And the first item collapses (icon flips downward, content hides)
-And the header text color changes to brand green
-```
+#### Scenario: Scroll indicator links to portfolio
 
-**Scenario: Clicking an expanded header collapses it**
+- **WHEN** the user clicks the scroll indicator
+- **THEN** the page navigates to the portfolio section
 
-```
-Given the first accordion item is expanded
-When the user clicks its header
-Then the first item collapses (icon flips downward, content hides)
-And its header text color changes to brand grey
-```
+### Requirement: Portfolio Grid
 
-**Scenario: Keyboard navigation works for all accordion headers**
+The template SHALL display a 3-column grid of 9 portfolio items, each with an image and a hover overlay showing the title and category tags.
 
-```
-Given the page has loaded
-When the user presses Tab to focus the first accordion header
-Then the header receives a visible focus ring
-When the user presses Enter or Space
-Then the accordion toggles (expands if collapsed, collapses if expanded)
-When the user presses ArrowDown
-Then focus moves to the next accordion header
-When the user presses ArrowUp on the second header
-Then focus moves to the first accordion header
-```
+#### Scenario: Portfolio renders 9 items
 
-**Scenario: Accordion content is accessible to screen readers**
+- **WHEN** the portfolio section is visible
+- **THEN** 9 portfolio items are displayed in a grid
 
-```
-Given the page has loaded
-When a screen reader navigates the accordion
-Then each header has role="button" and aria-expanded reflecting state
-And each content panel has role="region" and aria-labelledby pointing to its header
-And the expanded state is announced correctly
-```
+#### Scenario: Hover overlay appears
 
-### Feature: Footer
+- **WHEN** the user hovers over a portfolio item
+- **THEN** an overlay with the item title and category tags becomes visible
 
-**Scenario: Footer contains Component Dock link**
+#### Scenario: Hover overlay disappears on mouse leave
 
-```
-Given the page has loaded
-When the user scrolls to the footer
-Then a link to https://www.componentdock.com/ with text "Component Dock" is present
-And the link opens in a new tab (target="_blank" rel="noopener")
-```
+- **WHEN** the user moves the mouse away from a portfolio item
+- **THEN** the overlay becomes hidden again
 
-## Verification checklist
+### Requirement: About Section
 
-- [ ] Page title renders centered: "Bootstrap Accordion #8"
-- [ ] Three accordion items in vertical order
-- [ ] Item 1 expanded by default with green styling
-- [ ] Items 2–3 collapsed by default with grey styling
-- [ ] Accordion behavior: click to toggle, only one open at a time
-- [ ] Icons: up arrow (expanded), down arrow (collapsed), white on colored square
-- [ ] Content panel left border matches header color
-- [ ] Keyboard navigation (Tab, Enter, Space, ArrowUp/Down)
-- [ ] ARIA attributes correct (role, aria-expanded, aria-labelledby)
-- [ ] Focus visible rings on interactive elements
-- [ ] Footer link to Component Dock present and correct
-- [ ] Design tokens match screenshot (green #28a745, grey #6c757d, spacing, radii)
-- [ ] 100% test coverage (lines, functions, branches, statements)
-- [ ] TypeScript strict mode passes
-- [ ] Build succeeds
-- [ ] Deploy to `unfurl.free.componentdock.com` works
+The template SHALL display an about section with a heading, description text, a portrait image, and a "Download my CV" button.
+
+#### Scenario: About section renders content
+
+- **WHEN** the about section is visible
+- **THEN** it displays "About Me" heading, description text, and a "Download my CV" button
+
+### Requirement: Services Section
+
+The template SHALL display a 3x2 grid of 6 service cards, each with an icon, title, and description.
+
+#### Scenario: Services renders 6 cards
+
+- **WHEN** the services section is visible
+- **THEN** 6 service cards are displayed with titles: Digital Strategy, Web Design, User Experience, Web Development, WordPress Solutions, Mobile Applications
+
+### Requirement: Skills Section
+
+The template SHALL display progress bars for 4 skills with labels and percentage values.
+
+#### Scenario: Skills renders 4 bars
+
+- **WHEN** the skills section is visible
+- **THEN** 4 skill bars are displayed: WordPress (85%), HTML/CSS (95%), JavaScript (80%), Design (90%)
+
+### Requirement: Testimonials Section
+
+The template SHALL display 3 testimonial cards with a quote, avatar, name, and role.
+
+#### Scenario: Testimonials renders 3 cards
+
+- **WHEN** the testimonials section is visible
+- **THEN** 3 testimonial cards are displayed with names and roles
+
+### Requirement: Journal Section
+
+The template SHALL display 3 blog post cards with an image, title, author, and read time.
+
+#### Scenario: Journal renders 3 posts
+
+- **WHEN** the journal section is visible
+- **THEN** 3 blog post cards are displayed
+
+### Requirement: Contact Section
+
+The template SHALL display a contact form (Name, Email, Message fields with Submit button) and contact information (Email, Phone, Address).
+
+#### Scenario: Contact form renders
+
+- **WHEN** the contact section is visible
+- **THEN** a form with Name, Email, and Message fields and a "Send Message" button is displayed
+
+#### Scenario: Contact form submission
+
+- **WHEN** the user fills in all fields and clicks Submit
+- **THEN** a success message "Your message was sent, thank you!" is displayed
+
+#### Scenario: Contact info displays
+
+- **WHEN** the contact section is visible
+- **THEN** email, phone, and address information are displayed
+
+### Requirement: Footer
+
+The template SHALL display a footer with the logo, social media icons (Facebook, Twitter, Instagram, Dribbble), and a copyright line with a "Made with Component Dock" link.
+
+#### Scenario: Footer renders social links
+
+- **WHEN** the footer is visible
+- **THEN** social media links for Facebook, Twitter, Instagram, and Dribbble are displayed
+
+#### Scenario: Footer links to Component Dock
+
+- **WHEN** the footer is visible
+- **THEN** a link to https://www.componentdock.com/ labeled "Component Dock" is displayed
+
+#### Scenario: Footer shows copyright
+
+- **WHEN** the footer is visible
+- **THEN** the current year and "All rights reserved" text are displayed
