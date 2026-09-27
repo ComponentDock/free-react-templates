@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette: lavender → sky blue gradient background. */
+  --color-brand-bg-start: #e0c3fc;
+  --color-brand-bg-end: #8ec5fc;
+
+  /* Text colors. */
+  --color-heading: #333333;
+  --color-label: #666666;
+  --color-input-text: #333333;
+  --color-placeholder: #999999;
+
+  /* Form card. */
+  --color-form-bg: #ffffff;
+  --color-input-border: #e5e5e5;
+  --color-input-focus: #53c83c;
+
+  /* Register button. */
+  --color-btn-primary: #3b63ca;
+  --color-btn-primary-hover: #3356b0;
+
+  /* Checkbox link. */
+  --color-link: #385cb9;
+
+  /* Fonts: Roboto (matches original). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    margin: 0;
+  }
+}

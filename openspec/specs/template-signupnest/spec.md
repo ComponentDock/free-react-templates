@@ -2,131 +2,129 @@
 
 ## Purpose
 
-Recreation of ColorLib **Regform 28** (https://colorlib.com/wp/template/colorlib-regform-28/).
-Preview: https://preview.colorlib.com/theme/colorlib-regform-28/ (404 at prep time — reference from source ZIP).
-Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-28.jpg
+Recreation of ColorLib **Regform 28** — a split-panel registration form with a hero image on the left and a form on the right, centered on a pastel gradient background.
 
-Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript.
-A split-panel registration form with a hero image on the left and a form on the right,
-centered on a pastel gradient background. Music/subscription themed ("Bring Your Music Along").
+- **Source:** https://colorlib.com/wp/template/colorlib-regform-28/
+- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-28.jpg
+- **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 
-## Design tokens
+## Requirements
 
-| Token | Value | Source |
-|---|---|---|
-| Font family | Roboto (Regular 400, Medium 500, Bold 700, Black 900) | CSS `@font-face` + Google Fonts |
-| Page background | Linear gradient 136deg: `rgb(224,195,252)` → `rgb(142,197,252)` (lavender → sky blue) | `.page-content` |
-| Card background | `#ffffff` | `.form-v2-content` |
-| Card border-radius | `15px` | `.form-v2-content` |
-| Heading color | `#333333` | `.form-detail h2` |
-| Label color | `#666666` | `.form-detail label` |
-| Input text color | `#333333` | `.form-detail input` |
-| Input border | `1px solid #e5e5e5` | `.form-detail input` |
-| Input border-radius | `5px` | `.form-detail input` |
-| Input padding | `14.5px 15px` | `.form-detail input` |
-| Input focus border | `#53c83c` (green) | `.cl-form-row input:focus` |
-| Register button background | `#3b63ca` (blue) | `.register` |
-| Register button hover | `#3356b0` | `.register:hover` |
-| Register button border-radius | `6px` | `.register` |
-| Register button color | `#ffffff` | `.register` |
-| Checkbox link color | `#385cb9` (indigo) | `.form-checkbox a` |
-| Placeholder text | `#999999` | `::-webkit-input-placeholder` |
-| Hero overlay text | `#ffffff` (white, bold) | `.text-1`, `.text-2` |
-| Valid indicator | `#53c83c` (green circle) | `label#valid` |
-| Error indicator | `red` | `label.error` |
+### Requirement: Gradient background
 
-## Structure
+The page SHALL render a full-height gradient background transitioning from lavender (#e0c3fc) to sky blue (#8ec5fc) at approximately 136 degrees.
 
-The template is a single full-viewport centered card with two halves:
+#### Scenario: Gradient background renders
 
-1. **Left panel (hero image)** — full-height background image (`form-v2.jpg`) with
-   overlaid text: headline "Bring Your Music Along" + subline "try Unlimited" +
-   pricing "$9.99 / Month". Text is white, positioned absolute bottom-left and bottom-right.
-2. **Right panel (form)** — white background with:
-   - Heading: "Registration Form"
-   - Field: Full Name (text input, placeholder "ex: Lindsey Wilson")
-   - Field: Your Email (text input, required, email pattern validation)
-   - Field: Password (password input, required)
-   - Field: Confirm Password (password input, required)
-   - Checkbox: "By signing up, you agree to the Play Term of Service" (link styled blue underlined)
-   - Submit button: "Register" (blue rounded, 160px wide)
-3. **Responsive**: stacks vertically at 991px (image on top, form below).
+- **WHEN** I visit the SignupNest page
+- **THEN** I see a gradient background from lavender to sky blue
+- **AND** the content is centered vertically and horizontally on the page
 
-## Gherkin scenarios
+### Requirement: Split-panel card layout
 
-### Scenario: Full-page layout renders correctly
-- GIVEN the user opens the SignupNest page
-- THEN a centered card is visible on a gradient background (lavender → sky blue)
-- AND the card has two halves: left image panel and right form panel
+The page SHALL display a centered card with two halves: a left hero image panel and a right form panel, with 15px border-radius.
 
-### Scenario: Hero panel displays subscription info
-- GIVEN the hero panel is visible
-- THEN the headline "Bring Your Music Along" is shown in white bold text
-- AND the subline "try Unlimited" is shown below it
-- AND the price "$9.99 / Month" is shown at the bottom right of the image
+#### Scenario: Card renders with two panels
 
-### Scenario: Registration form fields render
-- GIVEN the form panel is visible
-- THEN the heading "Registration Form" is displayed
-- AND four input fields are present: Full Name, Your Email, Password, Confirm Password
-- AND each field has a label and a placeholder (Full Name shows "ex: Lindsey Wilson")
+- **WHEN** I visit the SignupNest page
+- **THEN** I see a card with a left image panel and a right white form panel
+- **AND** the card has rounded corners (15px border-radius)
 
-### Scenario: Required field validation
-- GIVEN the user clicks Register without filling any fields
-- THEN the email field shows a validation error (required)
-- AND the password field shows a validation error (required)
-- AND the confirm password field shows a validation error (required)
+#### Scenario: Responsive stacking on mobile
 
-### Scenario: Email format validation
-- GIVEN the user types "invalid-email" in the Email field
-- AND clicks Register
-- THEN the email field shows a format validation error
+- **WHEN** the viewport width is less than 768px
+- **THEN** the card stacks vertically with the hero image on top and form below
 
-### Scenario: Password confirmation match
-- GIVEN the user fills all fields
-- AND types "Password123" in Password and "Password456" in Confirm Password
-- WHEN the form is submitted
-- THEN a mismatch error is indicated
+### Requirement: Hero panel displays subscription info
 
-### Scenario: Terms checkbox must be checked
-- GIVEN the user fills all fields correctly
-- AND does NOT check the Terms of Service checkbox
-- WHEN the form is submitted
-- THEN the form is not submitted (checkbox required)
+The left hero panel SHALL display overlaid white text with the headline "Bring Your Music Along", subline "try Unlimited", and pricing "$9.99 / Month".
 
-### Scenario: Successful registration
-- GIVEN the user fills Full Name, valid Email, matching Passwords
-- AND checks the Terms of Service checkbox
-- WHEN the user clicks Register
-- THEN the form submits successfully
+#### Scenario: Hero text is visible
 
-### Scenario: Responsive layout on mobile
-- GIVEN the viewport width is less than 992px
-- THEN the card stacks vertically with the hero image on top and form below
-- AND form input width adjusts to fill available space
+- **WHEN** I visit the SignupNest page
+- **THEN** I see the headline "Bring Your Music Along" in white bold text
+- **AND** I see "try Unlimited" below the headline
+- **AND** I see "$9.99" with "/ Month" at the bottom right of the image
 
-### Scenario: Input focus styling
-- GIVEN the user clicks into any input field
-- THEN the input border changes to green (#53c83c)
+### Requirement: Registration form fields
 
-### Scenario: Register button hover
-- GIVEN the user hovers over the Register button
-- THEN the button background darkens to #3356b0
+The form SHALL contain four input fields: Full Name, Your Email, Password, and Confirm Password, each with a label.
 
-## Verification checklist
+#### Scenario: All four fields render
 
-- [ ] Gradient background renders (lavender → sky blue, 136deg)
-- [ ] Card is centered with 15px border-radius
-- [ ] Left panel shows hero image with overlaid white text
-- [ ] All four form fields render with correct labels and placeholders
-- [ ] Email field validates format on submit
-- [ ] Password required validation works
-- [ ] Confirm Password required validation works
-- [ ] Terms checkbox is present with "Play Term of Service" link
-- [ ] Register button is styled blue (#3b63ca) with 6px radius
-- [ ] Button hover darkens to #3356b0
-- [ ] Input focus shows green border (#53c83c)
-- [ ] Responsive: stacks vertically below 992px
-- [ ] No ColorLib references in app code (provenance in spec only)
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] 100% test coverage (lines, functions, branches, statements)
+- **WHEN** I visit the SignupNest page
+- **THEN** I see a text input labeled "Full Name:" with placeholder "ex: Lindsey Wilson"
+- **AND** I see an email input labeled "Your Email:"
+- **AND** I see a password input labeled "Password:"
+- **AND** I see a password input labeled "Confirm Password:"
+
+### Requirement: Form validation — required fields
+
+The form SHALL require Email, Password, Confirm Password, and Terms checkbox before submission.
+
+#### Scenario: Empty submission shows errors
+
+- **WHEN** I click the Register button without filling any fields
+- **THEN** I see "Email is required" error message
+- **AND** I see "Password is required" error message
+- **AND** I see "Please confirm your password" error message
+- **AND** I see "You must agree to the terms" error message
+
+### Requirement: Email format validation
+
+The form SHALL validate that the email field contains a valid email address.
+
+#### Scenario: Invalid email shows format error
+
+- **WHEN** I type "invalid-email" in the Email field and click Register
+- **THEN** I see "Invalid email format" error message
+
+### Requirement: Password confirmation match
+
+The form SHALL validate that Password and Confirm Password fields match.
+
+#### Scenario: Mismatched passwords show error
+
+- **WHEN** I fill Password with "Password123" and Confirm Password with "Password456" and click Register
+- **THEN** I see "Passwords do not match" error message
+
+### Requirement: Terms checkbox
+
+The form SHALL include a checkbox for agreeing to the Play Term of Service, with a link to the Component Dock website.
+
+#### Scenario: Unchecked terms blocks submission
+
+- **WHEN** I fill all fields correctly but do NOT check the Terms checkbox and click Register
+- **THEN** I see "You must agree to the terms" error message
+
+#### Scenario: Checked terms allows submission
+
+- **WHEN** I fill all fields correctly and check the Terms checkbox and click Register
+- **THEN** the form submits successfully and shows a success message
+
+### Requirement: Register button styling
+
+The Register button SHALL be styled with blue background (#3b63ca), 6px border-radius, and darken on hover.
+
+#### Scenario: Button renders with correct styling
+
+- **WHEN** I visit the SignupNest page
+- **THEN** I see a "Register" button with blue background
+
+### Requirement: Input focus styling
+
+Input fields SHALL show a green border (#53c83c) when focused.
+
+#### Scenario: Focus shows green border
+
+- **WHEN** I click into any input field
+- **THEN** the input border changes to green
+
+### Requirement: Footer links to Component Dock
+
+The footer SHALL link to https://www.componentdock.com/ branded as "Component Dock".
+
+#### Scenario: Footer link is present
+
+- **WHEN** I visit the SignupNest page
+- **THEN** I see a footer link "More templates at Component Dock" pointing to https://www.componentdock.com/
