@@ -2610,7 +2610,7 @@
 - [x] **Rental** — [colorlib](https://colorlib.com/wp/template/rental/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rental-free-template.jpg) · [rentora](https://rentora.free.componentdock.com)
 - [x] **Rolast** — [colorlib](https://colorlib.com/wp/template/rolast/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rolast-free-template.jpg) · [keynest](https://keynest.free.componentdock.com)
 - [x] **Royalestate** — [colorlib](https://colorlib.com/wp/template/royalestate/) · [homefront](https://homefront.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/royalestate-free-template.jpg)
-- [ ] **Seapalace** — [colorlib](https://colorlib.com/wp/template/seapalace/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/seapalace-free-template.jpg)
+- [~] **Seapalace** — [colorlib](https://colorlib.com/wp/template/seapalace/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/seapalace-free-template.jpg)
 - [ ] **Sel** — [colorlib](https://colorlib.com/wp/template/sel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sel-free-template.jpg)
 - [x] **Sintec** — [colorlib](https://colorlib.com/wp/template/sintec/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sintec-free-template.jpg) · [trowel](https://trowel.free.componentdock.com)
 - [ ] **South** — [colorlib](https://colorlib.com/wp/template/south/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/south-free-template.jpg)
