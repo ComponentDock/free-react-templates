@@ -2594,7 +2594,7 @@
 - [x] **Homeland** — [colorlib](https://colorlib.com/wp/template/homeland/) · [nestwell](https://nestwell.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/homeland-free-template.jpg)
 - [x] **Homes** — [colorlib](https://colorlib.com/wp/template/homes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/homes-free-template.jpg) · [habitat](https://habitat.free.componentdock.com)
 - [x] **Homespace** — [colorlib](https://colorlib.com/wp/template/homespace/) · [domicile](https://domicile.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/homespace-free-template.jpg)
-- [~] **Homey** — [colorlib](https://colorlib.com/wp/template/homey/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/homey-free-template.jpg)
+- [x] **Homey** — [colorlib](https://colorlib.com/wp/template/homey/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/homey-free-template.jpg) · [nestled](https://nestled.free.componentdock.com)
 - [x] **Homofy** — [colorlib](https://colorlib.com/wp/template/homofy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/homofy-colorlib-template.jpg) · [domily](https://domily.free.componentdock.com)
 - [ ] **Hus** — [colorlib](https://colorlib.com/wp/template/hus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hus-free-template.jpg)
 - [x] **Konato** — [colorlib](https://colorlib.com/wp/template/konato/) · [landmark](https://landmark.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/konato-free-template.jpg)
