@@ -1,148 +1,96 @@
-# Template: Keynest (Real Estate Agent)
-
 ## Purpose
 
-Keynest is a full-page real estate agent website in the free-react-templates
-monorepo. It is an original React recreation of the ColorLib "Youragent" free
-template (source: https://colorlib.com/wp/template/youragent/), built under a
-DIFFERENT name (**Keynest**), with the monorepo stack: Vite + React 19 +
-Tailwind CSS 4 + TypeScript.
+Keynest is a free real estate property listing website template that recreates the ColorLib "Rolast" design (https://colorlib.com/wp/template/rolast/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript application. It provides a property listing landing page with a hero search form, property cards, a feature showcase carousel, a 4-step process section, agent profiles, and a newsletter footer.
 
-The original is a Bootstrap 4 real estate agent site with a full-viewport hero
-(image overlay with agent tagline), a contact info sidebar, a property listings
-carousel, a testimonial slider, an about-me section with feature icons, a blog
-grid, and a dark footer with newsletter signup. Fonts: Mukta Mahee (body) +
-Playfair Display (headings). Brand accent: blue `#007bff`. Footer bg:
-`#1a1a1a`.
+## Design Tokens
 
-## Source mapping
+- **Font:** Prompt (Google Fonts), sans-serif
+- **Primary brand:** #0FB45F (green)
+- **Heading color:** #140C40 (dark navy/purple)
+- **Body text:** #646D77 (gray)
+- **Background:** white (#fff) for most sections, light gray (#f8f9fa) for alternate sections
+- **Button style:** green border + text, solid green on hover, uppercase, letter-spacing 3px
 
-- **ColorLib item:** "Youragent" (TEMPLATES.md line 1242).
-- **Source URL:** https://colorlib.com/wp/template/youragent/
-- **Preview URL — REACHABLE (verified 2026-09-15):**
-  `https://preview.colorlib.com/theme/youragent/` (HTTP 200, 22,730 bytes).
-- **Preview CSS:** `css/style.css` (13,847 bytes) — Bootstrap 4 base +
-  custom styles. Fonts: Mukta Mahee + Playfair Display (Google Fonts).
-  Icons: Font Awesome 4, Ionicons → REPLACE with lucide-react, do not ship.
+## Requirements
 
-## Design tokens (extracted from live preview CSS)
+### Requirement: Navigation bar with logo and links
 
-| Token | Value | Source |
-|---|---|---|
-| Accent / brand color | `#007bff` (blue) | `.btn-primary`, `.reviews-star span`, hover states |
-| Footer background | `#1a1a1a` (near-black) | `.footer-section` |
-| Footer text | `rgba(255,255,255,0.7)` | `.footer-section a` |
-| Body font | `"Mukta Mahee", arial, sans-serif` | `--font-family-sans-serif` |
-| Heading font | `"Playfair+Display", times, serif` | `.site-hero-inner .heading`, section headings |
-| Hero heading size | `80px`, bold, white, line-height 1 | `.site-hero-inner .heading` |
-| Hero heading (mobile) | `40px` | media query |
-| Page background | `#fff` | body |
-| Section light bg | `#f8f9fa` / light grey | `.bg-light` |
-| Body text | `#212529` | body |
-| Muted text | `#6c757d` / `#b3b3b3` | visit section heading |
-| Button style | Pill (`border-radius: 50px`), 2px border, uppercase, letter-spacing 0.2em | `.btn`, `.btn.uppercase` |
-| Hero overlay | `rgba(0,0,0,0.15)` | `.site-hero.overlay:before` |
-| Property card shadow | `0 2px 3px 0 rgba(0,0,0,0.2)` | `.visit-section .visit img` |
-| Footer newsletter button | Blue accent bg | `.footer-newsletter button` |
+The template SHALL display a sticky navigation bar with the "Keynest" logo, navigation links (Home, Property, About, Blog, Contact), and a phone number button on the right.
 
-## Section structure (order from live DOM)
+#### Scenario: Navigation content
 
-1. **Site header** — Logo left, nav links right (Home, About, Blog, Contact),
-   hamburger toggle for mobile. Fixed/transparent over hero.
-2. **Contact sidebar** — Left-column overlay on hero: address, phone, email,
-   social links (Twitter, Facebook, Instagram). Visible on desktop.
-3. **Hero** — Full-viewport image background with dark overlay, large white
-   heading "I'm Your Realtor, Get Your Key", sub-heading text, "Get In Touch"
-   + "Download" buttons (pill-shaped, white border), "Scroll Down" indicator.
-4. **Visit/Properties section** — Heading "Popular Properties", carousel of
-   property cards: image, price ($3,450 etc.), address. Owl-carousel style.
-5. **Testimonials** — Heading "Happy Customers", carousel of quotes with
-   author names. Owl-carousel style.
-6. **About Me section** — Two-column: left has agent photo + bio text, right
-   has 3 feature icons: "Deal On Time", "Good Reviews", "24/7 Support" with
-   descriptions.
-7. **Blog section** (bg-light) — Heading "Recent Blog Post", 3 blog cards
-   in a row: image, date, title, excerpt.
-8. **Footer** (bg-primary `#1a1a1a`) — 4 columns: About Us text, Terms &
-   Conditions links, Our Location (address, phone, email), newsletter signup
-   form. Bottom row: copyright with Colorlib attribution → REPLACE with
-   Component Dock.
+- **WHEN** the page loads
+- **THEN** the navbar shows the "Keynest" logo
+- **AND** navigation links (Home, Property, About, Blog, Contact) are visible
+- **AND** a phone number button is displayed on the right
 
-## Gherkin requirements
+### Requirement: Hero section with property search form
 
-### Feature: Keynest Real Estate Agent Template
+The template SHALL display a hero section with a dark background image, heading "Find Your Dream Home", subtitle "We Have Over Million Properties For You", and a tabbed search form with Buy Property / Rent Property tabs containing Location, Property Type, Bedroom fields, and a Search button.
 
-#### Scenario: Header renders with logo and navigation
-  Given the page loads
-  Then the site header displays the logo/brand on the left
-  And navigation links "Home", "About", "Blog", "Contact" are visible
-  And a hamburger menu toggle appears on mobile
+#### Scenario: Hero content
 
-#### Scenario: Contact sidebar displays agent info
-  Given the page loads on desktop
-  Then a contact sidebar is visible with address, phone, and email
-  And social media links (Twitter, Facebook, Instagram) are present
+- **WHEN** the page loads
+- **THEN** the hero shows "Find Your Dream Home" heading
+- **AND** a subtitle text is displayed
+- **AND** Buy Property / Rent Property tabs are visible
 
-#### Scenario: Hero section displays with agent tagline
-  Given the page loads
-  Then a full-viewport hero section is visible
-  And the heading reads "I'm Your Realtor, Get Your Key"
-  And "Get In Touch" and "Download" pill buttons are present
-  And a "Scroll Down" indicator is visible
+#### Scenario: Search form
 
-#### Scenario: Properties section shows listing carousel
-  Given the page loads
-  Then a "Popular Properties" heading is visible
-  And property cards display with image, price, and address
-  And cards are navigable via carousel controls
+- **WHEN** the page loads
+- **THEN** the search form has Location, Property Type, and Bedroom fields
+- **AND** a Search button is displayed
 
-#### Scenario: Testimonials section displays customer quotes
-  Given the page loads
-  Then a "Happy Customers" heading is visible
-  And testimonial cards show quotes with author names
-  And cards are navigable via carousel controls
+### Requirement: Property listings grid
 
-#### Scenario: About section displays agent bio and features
-  Given the page loads
-  Then an "About Me" heading is visible
-  And agent bio text is displayed
-  And 3 feature items are shown: "Deal On Time", "Good Reviews", "24/7 Support"
+The template SHALL display a section titled "Searching for the Best Places?" with 6 property cards in a 3-column grid. Each card has an image, title, location, bed/bath info, and price.
 
-#### Scenario: Blog section shows recent posts
-  Given the page loads on the main page
-  Then a "Recent Blog Post" heading is visible
-  And 3 blog post cards are displayed with image, date, title, excerpt
+#### Scenario: Property cards
 
-#### Scenario: Footer renders with newsletter and contact info
-  Given the page loads
-  Then the footer has a dark (#1a1a1a) background
-  And an "About Us" column with description text is present
-  And contact info (address, phone, email) is displayed
-  And a newsletter signup form with email input and submit button is present
-  And the footer links to "https://www.componentdock.com/"
+- **WHEN** the page loads
+- **THEN** 6 property cards are displayed
+- **AND** each card shows an image, title, location, and price
+- **AND** each card shows bed and bath info
 
-#### Scenario: All sections use consistent design tokens
-  Given the page loads
-  Then headings use "Playfair Display" serif font
-  And body text uses "Mukta Mahee" sans-serif font
-  And buttons are pill-shaped with blue accent (#007bff)
-  And the footer uses dark background with white text
+### Requirement: Feature showcase section
 
-## Verification checklist
+The template SHALL display a split section with text on the left ("Just browse away. It's all here.") and an image carousel on the right, with a "Browse Property" button.
 
-- [ ] Accent color `#007bff` applied consistently via Tailwind theme
-- [ ] Fonts "Mukta Mahee" + "Playfair Display" loaded via Google Fonts
-- [ ] Header: logo, nav links, hamburger toggle for mobile
-- [ ] Contact sidebar: address, phone, email, social links
-- [ ] Hero: full-viewport bg, heading, pill buttons, scroll indicator
-- [ ] Properties: carousel with property cards (image, price, address)
-- [ ] Testimonials: carousel with quotes and author names
-- [ ] About: agent photo, bio, 3 feature icons (lucide-react)
-- [ ] Blog: 3 cards with images, dates, titles, excerpts
-- [ ] Footer: dark bg, 4 columns, newsletter form, Component Dock link
-- [ ] No ColorLib references in app code (provenance only in spec/PR)
-- [ ] Placeholder images via `picsum.photos/seed/keynest-<n>/`
-- [ ] Icons from lucide-react (no Font Awesome or Ionicons)
-- [ ] Responsive: hamburger nav, stacked columns on small screens
-- [ ] 100% test coverage on all components
-- [ ] `npm run verify:app keynest` passes
+#### Scenario: Feature content
+
+- **WHEN** the page loads
+- **THEN** the heading "Just browse away. It's all here." is visible
+- **AND** descriptive text is shown
+- **AND** a "Browse Property" button is displayed
+
+### Requirement: 4-step process section
+
+The template SHALL display a 4-step process section with numbered steps: "Choose a category", "Find real estate", "Take the keys", "Live happy", each with an icon and description.
+
+#### Scenario: Process steps
+
+- **WHEN** the page loads
+- **THEN** 4 steps are displayed in a row
+- **AND** each step shows a number, title, and description
+
+### Requirement: Team/agents section
+
+The template SHALL display a "Meet Our Agents" section with 4 agent cards. Each card shows a photo, social media icons, name, and role.
+
+#### Scenario: Agent cards
+
+- **WHEN** the page loads
+- **THEN** 4 agent cards are shown
+- **AND** each card shows a photo, name, role, and social media icons
+
+### Requirement: Footer with Component Dock link
+
+The template SHALL display a footer with logo, About links, Services links, Newsletter form, and a link to https://www.componentdock.com/ branded as "Component Dock".
+
+#### Scenario: Footer content
+
+- **WHEN** the page loads
+- **THEN** the footer shows the Keynest logo
+- **AND** About and Services link columns are visible
+- **AND** a newsletter subscription form is present
+- **AND** a link to https://www.componentdock.com/ is displayed as "Component Dock"
