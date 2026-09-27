@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* TaskFlow brand palette — orange-red #F75940 from ColorLib Work design */
+  --color-brand-50: #fef2f0;
+  --color-brand-100: #fde1dc;
+  --color-brand-200: #fbc3b9;
+  --color-brand-300: #f8988a;
+  --color-brand-400: #f75940;
+  --color-brand-500: #ef3c22;
+  --color-brand-600: #dc2d15;
+  --color-brand-700: #b9220e;
+  --color-brand-800: #991f11;
+  --color-brand-900: #7f1f15;
+
+  --font-sans: 'Quicksand', Arial, sans-serif;
+}
