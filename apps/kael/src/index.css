@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Kael brand colors — from the Satner portfolio preview
+     (https://preview.colorlib.com/theme/satner/ + css/style.css):
+     a personal portfolio with purple-blue gradient #4458dc -> #854fee,
+     body text #777777, headings #000000, Roboto + Rubik fonts. */
+
+  --color-primary-50: #eef0ff;
+  --color-primary-100: #d8dcff;
+  --color-primary-200: #b1b8ff;
+  --color-primary-300: #854fee;
+  --color-primary-400: #6b5ce0;
+  --color-primary-500: #4458dc;
+  --color-primary-600: #3a4abf;
+  --color-primary-700: #2f3da3;
+  --color-primary-800: #253187;
+  --color-primary-900: #1c256b;
+
+  /* Accent (gradient end / button highlight). */
+  --color-accent-300: #a97cf8;
+  --color-accent-400: #854fee;
+  --color-accent-500: #6d3de0;
+
+  /* Muted copy. */
+  --color-smoke: #777777;
+
+  /* Light section backgrounds. */
+  --color-mist: #f8f8fa;
+
+  --color-ink: #000000;
+
+  /* Roboto (body) + Rubik (headings) via Google Fonts. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Rubik', ui-sans-serif, system-ui, sans-serif;
+}
