@@ -2692,7 +2692,7 @@
 - [x] **Pizza** — [colorlib](https://colorlib.com/wp/template/pizza/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pizza-free-template.jpg) · [pepperoni](https://pepperoni.free.componentdock.com)
 - [x] **Pulse** — [colorlib](https://colorlib.com/wp/template/pulse/) · [pulse](https://pulse.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pulse-free-template.jpg)
 - [x] **Redcayenne** — [colorlib](https://colorlib.com/wp/template/redcayenne/) · [paprika](https://paprika.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/redcayenne-free-template.jpg)
-- [ ] **Resta** — [colorlib](https://colorlib.com/wp/template/resta/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/resta-free-template.jpg)
+- [~] **Resta** — [colorlib](https://colorlib.com/wp/template/resta/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/resta-free-template.jpg)
 - [x] **Restauco** — [colorlib](https://colorlib.com/wp/template/restauco/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/restauco-free-template.jpg) · [bonquet](https://bonquet.free.componentdock.com)
 - [ ] **Restaurant** — [colorlib](https://colorlib.com/wp/template/restaurant/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/restaurant-free-restaurant-website-template.jpg)
 - [ ] **Risotto** — [colorlib](https://colorlib.com/wp/template/risotto/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/risotto-free-restaurant-website-template.jpg)
