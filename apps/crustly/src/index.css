@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Primary brand color — vivid red #f42f2c */
+  --color-brand: #f42f2c;
+  --color-brand-dark: #d42522;
+
+  /* Dark navy / header bg — #04091e */
+  --color-navy: #04091e;
+
+  /* Body text — #777777 */
+  --color-mist: #777777;
+
+  /* Heading text — #222222 */
+  --color-ink: #222222;
+
+  /* Light background — #fafaff */
+  --color-paper: #fafaff;
+
+  /* Input background — #e8e8e8 */
+  --color-input: #e8e8e8;
+
+  /* Border color — #ededed */
+  --color-border: #ededed;
+
+  /* Primary scale so shared Button/ButtonLink primary variants resolve to the brand red */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #f42f2c;
+  --color-primary-600: #d42522;
+  --color-primary-700: #b91c1c;
+  --color-primary-800: #991b1b;
+  --color-primary-900: #7f1d1d;
+
+  /* Fonts: Playfair Display (headings) + Roboto (body) */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
