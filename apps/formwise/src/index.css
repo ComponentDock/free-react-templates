@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #5b8fb9;
+  --color-brand-dark: #4a7da8;
+  --color-surface: #f5f5f5;
+  --color-card: #ffffff;
+  --color-heading: #333333;
+  --color-body: #555555;
+  --color-muted: #999999;
+  --color-border: #dddddd;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+  }
+}
