@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Grillmark brand palette — recreated from the ColorLib Steakshop design.
+     Primary red #f42f2c, gradient endpoint #f48464, headings #222222, body #777777. */
+  --color-brand: #f42f2c;
+  --color-brand-light: #f48464;
+  --color-heading: #222222;
+  --color-body: #777777;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the brand red. */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fde6e6;
+  --color-primary-200: #fcc5c5;
+  --color-primary-300: #f99494;
+  --color-primary-400: #f46060;
+  --color-primary-500: #f42f2c;
+  --color-primary-600: #dc1f1c;
+  --color-primary-700: #b91715;
+  --color-primary-800: #991717;
+  --color-primary-900: #7f1a1a;
+
+  /* Fonts: Pacifico (cursive headings) + Roboto (body). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Pacifico', cursive;
+}
