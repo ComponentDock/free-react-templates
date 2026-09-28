@@ -2701,7 +2701,7 @@
 - [x] **Steak** — [colorlib](https://colorlib.com/wp/template/steak/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/steak-free-template.jpg) · [smokehouse](https://smokehouse.free.componentdock.com)
 - [x] **Steakshop** — [colorlib](https://colorlib.com/wp/template/steakshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/steakshop-free-template.jpg) · [grillmark](https://grillmark.free.componentdock.com)
 - [x] **Tasteit** — [colorlib](https://colorlib.com/wp/template/tasteit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tasteit-free-template.jpg) · [zing](https://zing.free.componentdock.com)
-- [~] **Tasty** — [colorlib](https://colorlib.com/wp/template/tasty/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tasty-free-template.jpg)
+- [x] **Tasty** — [colorlib](https://colorlib.com/wp/template/tasty/) · [bistrox](https://bistrox.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tasty-free-template.jpg)
 - [x] **Thevenue** — [colorlib](https://colorlib.com/wp/template/thevenue/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thevenue-free-template.jpg) · [venuepoint](https://venuepoint.free.componentdock.com)
 - [x] **Wordpress Restaurant Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-restaurant-themes/) · [dining-deck](https://dining-deck.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jevelin-restaurant-website-template.jpg)
 
