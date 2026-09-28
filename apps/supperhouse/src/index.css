@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Supperhouse brand palette — red #f42f2c from the original restaurant design. */
+  --color-brand: #f42f2c;
+  --color-brand-dark: #d42522;
+
+  /* Ink — dark charcoal headings/footer (#222 from the original). */
+  --color-ink: #222222;
+  --color-ink-dark: #111111;
+
+  /* Paper — light section backgrounds. */
+  --color-paper: #f9f9ff;
+
+  /* Mist — muted body text (#777 from the original). */
+  --color-mist: #777777;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the red. */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #f42f2c;
+  --color-primary-600: #d42522;
+  --color-primary-700: #b91c1c;
+  --color-primary-800: #991b1b;
+  --color-primary-900: #7f1d1d;
+
+  /* Font: Poppins for everything. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
