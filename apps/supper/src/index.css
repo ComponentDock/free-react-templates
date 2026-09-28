@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-playfair: 'Playfair Display', serif;
+  --font-opensans: 'Open Sans', sans-serif;
+  --color-coral: #ff7a5c;
+  --color-coral-dark: #e8684a;
+  --color-charcoal: #000000;
+  --color-light-bg: #f8f9fa;
+  --color-muted: #999999;
+  --color-body-text: #666666;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-opensans);
+  }
+}
