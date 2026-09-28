@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Foodnest brand orange — from the original Foody stylesheet: .btn background #ff7404. */
+  --color-brand: #ff7404;
+
+  /* Lighter orange for hover states (#ff9037). */
+  --color-brand-hover: #ff9037;
+
+  /* Light section background (#f8f9fa). */
+  --color-paper: #f8f9fa;
+
+  /* Body text gray (#868e96). */
+  --color-mist: #868e96;
+
+  /* Heading color (#000000). */
+  --color-heading: #000000;
+
+  /* Dark navbar / footer background. */
+  --color-navy: #1a1a1a;
+
+  /* Darker shade for copyright bar. */
+  --color-navy-dark: #111111;
+
+  /* Open Sans via Google Fonts (loaded in index.html). */
+  --font-sans: 'Open Sans', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
