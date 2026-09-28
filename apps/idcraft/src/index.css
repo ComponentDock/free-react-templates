@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Idcraft brand palette — recreated from ColorLib Vcard design
+     (amber accent #ffb016, dark heading #252525, gray text #828282). */
+  --color-amber-brand: #ffb016;
+  --color-dark-heading: #252525;
+  --color-gray-text: #828282;
+  --color-light-bg: #f3f5f8;
+  --color-overlay-dark: rgba(2, 3, 28, 0.9);
+
+  /* Poppins — the original template's typeface (Google Fonts via index.html) */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
