@@ -1,28 +1,18 @@
 import { useEffect } from 'react'
-import { Navbar } from './components/Navbar'
-import { Hero } from './components/Hero'
-import { About } from './components/About'
-import { Discography } from './components/Discography'
-import { Player } from './components/Player'
-import { Video } from './components/Video'
-import { Shows } from './components/Shows'
+import { Background } from './components/Background'
+import { RegisterCard } from './components/RegisterCard'
 import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Groove — Music Artist Landing Template'
+    document.title = 'Groove — Concert Registration Form'
   }, [])
 
   return (
-    <div className="flex min-h-screen flex-col bg-void text-white transition-colors">
-      <Navbar />
-      <main className="flex-1">
-        <Hero />
-        <About />
-        <Discography />
-        <Player />
-        <Video />
-        <Shows />
+    <div className="relative flex min-h-screen flex-col font-sans">
+      <Background />
+      <main className="relative z-10 flex flex-1 items-center justify-center px-4 py-12">
+        <RegisterCard />
       </main>
       <Footer />
     </div>
