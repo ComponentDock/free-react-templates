@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #f96d00;
+  --color-brand-hover: #e06200;
+  --color-brand-light: #ffb400;
+  --color-text-dark: #212529;
+  --color-text-muted: #999999;
+  --color-bg-light: #f8f9fa;
+  --color-border-gray: #cccccc;
+
+  --font-sans: 'Muli', arial, sans-serif;
+  --font-heading: 'Muli', arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
