@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Forkful brand golden-yellow — from the original Foodfun
+     stylesheet: .btn background #ffb606. */
+  --color-brand: #ffb606;
+
+  /* Dark navy — footer and dark sections (#131230). */
+  --color-navy: #131230;
+
+  /* Darker navy for copyright bar (#0d0d27). */
+  --color-navy-dark: #0d0d27;
+
+  /* Light section background (#f9f9ff). */
+  --color-paper: #f9f9ff;
+
+  /* Body text gray (#777). */
+  --color-mist: #777;
+
+  /* Heading color (#131230). */
+  --color-heading: #131230;
+
+  /* Original fonts: "Playfair Display" (display) + "Roboto" (body)
+     via Google Fonts (loaded in index.html). */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
