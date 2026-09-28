@@ -103,7 +103,7 @@ TBD
 
 ## Templates
 
-**Status:** 1494 / 1634 templates recreated · **140 remaining**.
+**Status:** 1495 / 1634 templates recreated · **139 remaining**.
 
 > Updated automatically after every template merge
 > (`node scripts/update-readme-status.mjs`). Each row is an original React
@@ -1607,3 +1607,4 @@ TBD
 | 1492 | **Zestly** ✅         | It provides a visually appealing layout for showcasing recipes, cooking videos, dishes, customer testimonials, and app download links.                 | Food Drinks                                                                      | [zestly.free.componentdock.com](https://free-react-templates-zestly.surge.sh) · [Component Dock](https://componentdock.com/templates/zestly)                         |
 | 1493 | **Zesty** ✅          | Zesty is a minimal food-blog home-page template.                                                                                                       | Blog, Creative, Photography                                                      | [zesty.free.componentdock.com](https://zesty.free.componentdock.com) · [Component Dock](https://componentdock.com/templates/zesty)                                   |
 | 1494 | **Zine** ✅           | Zine is a single-page creative blog template.                                                                                                          | Blog, Creative, Portfolio                                                        | [zine.free.componentdock.com](https://zine.free.componentdock.com) · [Component Dock](https://componentdock.com/templates/zine)                                      |
+| 1495 | **Zing**              | Zing is a restaurant landing page.                                                                                                                     | Restaurant                                                                       | [zing.free.componentdock.com](https://zing.free.componentdock.com) · [Component Dock](https://componentdock.com/templates/zing)                                      |
