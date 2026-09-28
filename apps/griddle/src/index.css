@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Griddle brand palette — recreated from the ColorLib "Burger" design
+     (live demo: https://preview.colorlib.com/theme/burger/):
+     orange-red #F0542C is the primary accent (CTA buttons, accents).
+     Golden yellow #F2C64D is the secondary accent (highlight buttons). */
+  --color-brand: #f0542c;
+  --color-brand-gold: #f2c64d;
+
+  /* Ink — dark overlay color (#040E27). */
+  --color-ink: #040e27;
+
+  /* Heading — near-black (#1F1F1F). */
+  --color-heading: #1f1f1f;
+
+  /* Body — gray body text (#4D4D4D). */
+  --color-body: #4d4d4d;
+
+  /* Light — off-white section background (#f8f9fa). */
+  --color-light: #f8f9fa;
+
+  /* Primary scale — maps brand orange to the shared Button/ButtonLink system. */
+  --color-primary-500: #f47a5e;
+  --color-primary-600: #f0542c;
+  --color-primary-700: #d8401b;
+
+  /* Headings font: Montserrat; body font: Raleway. */
+  --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-sans:
+    'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
