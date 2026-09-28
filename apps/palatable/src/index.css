@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Open Sans', sans-serif;
+  --color-brand: #40ba37;
+  --color-brand-dark: #1c8314;
+  --color-ink: #000000;
+  --color-body: #9b9b9b;
+  --color-link: #474747;
+  --color-input-bg: #f3f5f8;
+  --color-overlay: rgba(10, 12, 18, 0.55);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-body);
+  background: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-ink);
+}
