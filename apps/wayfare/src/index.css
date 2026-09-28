@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #f57224;
+  --color-brand-hover: #e0601a;
+  --color-surface: rgba(30, 30, 30, 0.85);
+  --color-surface-light: rgba(50, 50, 50, 0.6);
+  --font-family-heading: 'Poppins', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
