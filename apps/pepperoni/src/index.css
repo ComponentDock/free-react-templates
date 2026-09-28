@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pepperoni brand palette — recreated from the ColorLib "Pizza" design
+     (css/style.css): cyan #78d5ef accents/buttons, dark #121618 navbar/footer,
+     warm grays for text. */
+  --color-brand: #78d5ef;
+  --color-brand-dark: #56caeb;
+
+  /* Ink — dark text (#212529 from the original). */
+  --color-ink: #212529;
+  --color-ink-light: #495057;
+
+  /* Paper — light section background (#f8f9fa). */
+  --color-paper: #f8f9fa;
+
+  /* Dark surface — navbar/footer (#121618). */
+  --color-surface: #121618;
+  --color-surface-light: #1a1e21;
+
+  /* Mist — muted body text (#666666). */
+  --color-mist: #666666;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the cyan. */
+  --color-primary-50: #ecfaff;
+  --color-primary-100: #d0f3fd;
+  --color-primary-200: #a7e8fb;
+  --color-primary-300: #78d5ef;
+  --color-primary-400: #56caeb;
+  --color-primary-500: #3fc3e8;
+  --color-primary-600: #34c0e7;
+  --color-primary-700: #2bb8e4;
+  --color-primary-800: #28a7de;
+  --color-primary-900: #1a88d4;
+
+  /* Original fonts: "Work Sans" (body) + "Josefin Sans" (brand/logo). */
+  --font-sans: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+}
