@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — orange #f36700 from the original restaurant design. */
+  --color-brand: #f36700;
+  --color-brand-dark: #d45a00;
+
+  /* Ink — dark charcoal headings (#151515 from the original). */
+  --color-ink: #151515;
+
+  /* Paper — light section backgrounds. */
+  --color-paper: #f9f9f9;
+
+  /* Mist — muted body text (#969696 from the original). */
+  --color-mist: #969696;
+
+  /* Border grey. */
+  --color-border: #ececec;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants resolve to the orange. */
+  --color-primary-50: #fff7ed;
+  --color-primary-100: #ffedd5;
+  --color-primary-200: #fed7aa;
+  --color-primary-300: #fdba74;
+  --color-primary-400: #fb923c;
+  --color-primary-500: #f36700;
+  --color-primary-600: #d45a00;
+  --color-primary-700: #c2410c;
+  --color-primary-800: #9a3412;
+  --color-primary-900: #7c2d12;
+
+  /* Fonts: Cabin for body, Quicksand for headings, Dancing Script for display titles. */
+  --font-sans: 'Cabin', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Dancing Script', cursive;
+}
