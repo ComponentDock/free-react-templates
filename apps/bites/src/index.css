@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Roboto', sans-serif;
+  --font-heading: 'Oswald', sans-serif;
+  --color-brand: #f42f2c;
+  --color-brand-dark: #d42824;
+  --color-ink: #222222;
+  --color-body: #777777;
+  --color-light-bg: #f9f9ff;
+  --color-navy: #04091e;
+  --color-border: #eeeeee;
+  --color-white: #ffffff;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-body);
+  background: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-ink);
+  font-family: var(--font-heading);
+}
