@@ -3,31 +3,17 @@ import { render, screen } from '@testing-library/react'
 import { App } from './App'
 
 describe('App', () => {
-  it('composes the navbar, all sections, and footer with the correct title', () => {
+  it('renders the register card, background, and footer, and sets the document title', () => {
     render(<App />)
 
-    expect(document.title).toBe('Groove — Music Artist Landing Template')
+    expect(document.title).toBe('Groove — Concert Registration Form')
 
-    expect(screen.getByRole('banner')).toBeInTheDocument()
-    expect(screen.getByRole('navigation', { name: 'Main navigation' })).toBeInTheDocument()
-
-    const main = screen.getByRole('main')
-    expect(main).toBeInTheDocument()
-
-    // Hero heading
-    const h1 = screen.getByRole('heading', { level: 1 })
-    expect(h1.textContent).toMatch(/Groove Sessions/)
-
-    // Section headings — "newest albums" appears in both Discography and Video
-    expect(screen.getByRole('heading', { level: 2, name: /The electro vibe/ })).toBeInTheDocument()
-    const newestAlbums = screen.getAllByRole('heading', { level: 2, name: /newest albums/ })
-    expect(newestAlbums.length).toBeGreaterThanOrEqual(2)
+    expect(screen.getByRole('main')).toBeInTheDocument()
     expect(
-      screen.getByRole('heading', { level: 2, name: /WHEN WE ALL FALL ASLEEP/ }),
+      screen.getByRole('heading', { level: 2, name: /registration form/i }),
     ).toBeInTheDocument()
-    expect(screen.getByRole('heading', { level: 2, name: /Got a Question/ })).toBeInTheDocument()
-
-    // Footer
+    expect(screen.getByRole('form', { name: /registration form/i })).toBeInTheDocument()
     expect(screen.getByRole('contentinfo')).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: /component dock/i })).toBeInTheDocument()
   })
 })
