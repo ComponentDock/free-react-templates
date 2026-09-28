@@ -2686,7 +2686,7 @@
 - [x] **Luigis** — [colorlib](https://colorlib.com/wp/template/luigis/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/luigis-free-template.jpg) · [pieslice](https://free-react-templates-pieslice.surge.sh)
 - [x] **Luto** — [colorlib](https://colorlib.com/wp/template/luto/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/luto-free-template.jpg) · [flavor](https://flavor.free.componentdock.com)
 - [x] **Marco** — [colorlib](https://colorlib.com/wp/template/marco/) · [sizzle](https://sizzle.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/marco-free-template.jpg)
-- [ ] **Meal** — [colorlib](https://colorlib.com/wp/template/meal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meal-free-template.jpg)
+- [~] **Meal** — [colorlib](https://colorlib.com/wp/template/meal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meal-free-template.jpg)
 - [ ] **Meal2** — [colorlib](https://colorlib.com/wp/template/meal2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meal2-free-template.jpg)
 - [x] **Pato** — [colorlib](https://colorlib.com/wp/template/pato/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pato-free-modern-restuarant-website-template.jpg) · [gastronome](https://gastronome.free.componentdock.com)
 - [ ] **Pizza** — [colorlib](https://colorlib.com/wp/template/pizza/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pizza-free-template.jpg)
