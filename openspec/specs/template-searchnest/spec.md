@@ -1,4 +1,4 @@
-# Template: Lodgewise (Search Form)
+# Template: Searchnest (Search Form)
 
 ## Purpose
 
@@ -11,19 +11,19 @@ Recreation of ColorLib **Search 14** (hotel/booking search form widget).
 
 ## Design tokens (from screenshot)
 
-| Token              | Value                                          |
-|--------------------|------------------------------------------------|
-| Background gradient | peach-to-light-pink gradient (top: ~#f9e4d4, bottom: ~#f5d6cc) |
-| Input background   | white (`#ffffff`)                              |
-| Input border       | light gray, ~1px solid (`#e0e0e0`)             |
-| Input border-radius | 8px (rounded-lg)                              |
-| Search button bg   | warm yellow/gold (`#f0c75e` / `#efc050`)      |
-| Search button text | dark gray/near-black (`#333`)                  |
-| Search button border-radius | 8px (rounded-lg)                    |
-| Label text color   | gray (`#888` / muted)                          |
-| Value text color   | dark (`#333`)                                  |
-| Font family        | Inter or similar sans-serif (system fallback)   |
-| Section layout     | full-width horizontal bar, centered on page     |
+| Token                       | Value                                                          |
+| --------------------------- | -------------------------------------------------------------- |
+| Background gradient         | peach-to-light-pink gradient (top: ~#f9e4d4, bottom: ~#f5d6cc) |
+| Input background            | white (`#ffffff`)                                              |
+| Input border                | light gray, ~1px solid (`#e0e0e0`)                             |
+| Input border-radius         | 8px (rounded-lg)                                               |
+| Search button bg            | warm yellow/gold (`#f0c75e` / `#efc050`)                       |
+| Search button text          | dark gray/near-black (`#333`)                                  |
+| Search button border-radius | 8px (rounded-lg)                                               |
+| Label text color            | gray (`#888` / muted)                                          |
+| Value text color            | dark (`#333`)                                                  |
+| Font family                 | Inter or similar sans-serif (system fallback)                  |
+| Section layout              | full-width horizontal bar, centered on page                    |
 
 ## Sections (order)
 
@@ -39,7 +39,7 @@ Recreation of ColorLib **Search 14** (hotel/booking search form widget).
 ### Scenario: SearchFormBar renders all fields
 
 ```
-Given I visit the Lodgewise page
+Given I visit the Searchnest page
 Then I should see a "GOING TO" text input with placeholder "Destination, hotel name"
 And I should see a "CHECK-IN" date input
 And I should see a "CHECK-OUT" date input
@@ -50,7 +50,7 @@ And I should see a "Search" button
 ### Scenario: Guest count increments and decrements
 
 ```
-Given I visit the Lodgewise page
+Given I visit the Searchnest page
 And the guest count is "2 Guests"
 When I click the "+" button on the guests field
 Then the guest count should show "3 Guests"
@@ -61,7 +61,7 @@ Then the guest count should show "2 Guests"
 ### Scenario: Guest count cannot go below 1
 
 ```
-Given I visit the Lodgewise page
+Given I visit the Searchnest page
 And the guest count is "1 Guest"
 When I click the "-" button on the guests field
 Then the guest count should still show "1 Guest"
@@ -70,7 +70,7 @@ Then the guest count should still show "1 Guest"
 ### Scenario: Search button is clickable
 
 ```
-Given I visit the Lodgewise page
+Given I visit the Searchnest page
 When I click the "Search" button
 Then a search action should be triggered (submit or handler call)
 ```
@@ -82,5 +82,5 @@ Then a search action should be triggered (submit or handler call)
 - [ ] All sections from ColorLib source are included
 - [ ] Section order matches original
 - [ ] Gherkin scenarios cover all interactive elements
-- [ ] Naming: "lodgewise" — no collision with existing apps/specs
+- [ ] Naming: "searchnest" — no collision with existing apps/specs
 - [ ] No references to ColorLib in app code (provenance in spec only)
