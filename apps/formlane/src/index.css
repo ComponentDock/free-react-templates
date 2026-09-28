@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand gradient: blue → green at 136deg from the original CSS. */
+  --color-gradient-start: #009efd;
+  --color-gradient-end: #2af598;
+
+  /* Form panel background: dark blue-gray. */
+  --color-form-panel: #3d5983;
+
+  /* Active tab accent: teal/cyan. */
+  --color-tab-active: #30e1df;
+
+  /* Focus border: green underline on input focus. */
+  --color-focus-border: #53c83c;
+
+  /* Inactive tab text. */
+  --color-tab-inactive: #cccccc;
+
+  /* Text colors. */
+  --color-ink: #333333;
+  --color-on-dark: #ffffff;
+  --color-label-on-dark: #f2f2f2;
+
+  /* Button colors. */
+  --color-btn-bg: #ffffff;
+  --color-btn-text: #333333;
+  --color-btn-hover: #cccccc;
+
+  /* Original font: Source Sans 3 via Google Fonts (loaded in index.html). */
+  --font-sans: 'Source Sans 3', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
