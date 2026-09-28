@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 default is
+   prefers-color-scheme; the app toggles a .dark class instead. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Corkage brand palette — recreated from the ColorLib "Resta" design:
+     warm orange #E8A87C accents/buttons, dark #222222 navbar/footer,
+     serif headings, warm grays for text. */
+  --color-brand: #e8a87c;
+  --color-brand-dark: #d4956a;
+
+  /* Ink — dark text. */
+  --color-ink: #333333;
+  --color-ink-light: #555555;
+
+  /* Paper — light section background. */
+  --color-paper: #ffffff;
+
+  /* Dark surface — navbar/footer (#222222). */
+  --color-surface: #222222;
+  --color-surface-light: #2a2a2a;
+
+  /* Mist — muted body text. */
+  --color-mist: #777777;
+
+  /* Primary scale so shared ui Button/ButtonLink `primary` variants
+     resolve to the warm orange. */
+  --color-primary-50: #fdf5ef;
+  --color-primary-100: #fae8d9;
+  --color-primary-200: #f5d0b3;
+  --color-primary-300: #e8a87c;
+  --color-primary-400: #d4956a;
+  --color-primary-500: #c4824f;
+  --color-primary-600: #b06e3a;
+  --color-primary-700: #9a5c2d;
+  --color-primary-800: #7d4a24;
+  --color-primary-900: #5f381b;
+
+  /* Original fonts: "Open Sans" (body) + "Playfair Display" (headings). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+}
