@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #ff6107;
+  --color-ink: #404044;
+  --color-body-grey: #636363;
+  --color-section: #f8f9fa;
+  --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-footer-bg: #404044;
+  --font-heading: 'Lora', Georgia, serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-body-grey;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading text-ink;
+  }
+}
