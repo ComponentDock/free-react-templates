@@ -2707,7 +2707,7 @@
 
 ## Resume (20)
 
-- [~] **Calvin** — [colorlib](https://colorlib.com/wp/template/calvin/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calvin-free-template.jpg)
+- [x] **Calvin** — [colorlib](https://colorlib.com/wp/template/calvin/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calvin-free-template.jpg) · [calypso](https://calypso.free.componentdock.com)
 - [ ] **Civic** — [colorlib](https://colorlib.com/wp/template/civic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/civic-free-template-1.jpg)
 - [x] **Clark** — [colorlib](https://colorlib.com/wp/template/clark/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/clark-free-template.jpg) · [Maverick](https://maverick.free.componentdock.com)
 - [ ] **Clyde** — [colorlib](https://colorlib.com/wp/template/clyde/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/clyde-free-template.jpg)
