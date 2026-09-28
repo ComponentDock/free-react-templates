@@ -1,273 +1,166 @@
-# Template: Waypoint (Life Coaching / Personal Development)
+# Spec: Waypoint (recreation of ColorLib Search Form V12)
 
 ## Purpose
 
-Recreation of the ColorLib **Coaching** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page website. The original is a personal coaching/life coach landing page with a hero section with typed animation, image slider, about section, training carousel, testimonials, services, blog, contact form, and footer.
+Waypoint is a hotel and travel search form template in the free-react-templates
+monorepo. It is an original React recreation of the ColorLib free "Search Form
+V12" template (source: https://colorlib.com/etc/searchf/colorlib-search-12/),
+built under a DIFFERENT name (Waypoint — a travel/navigation concept; single
+lowercase word, no collision with apps/ or existing specs) per the monorepo
+naming mandate.
 
-- **Source template:** ColorLib Coaching
-- **Source slug:** `coaching`
-- **ColorLib page:** https://colorlib.com/wp/template/coaching/
-- **Live preview:** https://preview.colorlib.com/theme/coaching/
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/coaching-free-template.jpg
-- **New name:** `waypoint`
-- **App path:** `apps/waypoint`
-- **Package:** `@free-react-templates/waypoint`
-- **Deploy target:** `waypoint.free.componentdock.com`
+Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-## Design Tokens
+## Design tokens
 
-Extracted from the live preview CSS (`css/style.css`) at https://preview.colorlib.com/theme/coaching/css/style.css and HTML structure analysis.
+- Font heading: Poppins 700 (Google Fonts)
+- Font body: Lato 400/700/900 (Google Fonts)
+- Background: Full-viewport travel photo with cover/center positioning
+- Form container: linear-gradient(rgba(79,172,254,0.8) 0%, rgba(0,242,254,0.8) 100%),
+  border-radius 10px, max-width 940px, padding 50px 70px 80px
+- Title: "Search Hotels" — Poppins, 36px, bold, #333
+- Active tab: #002c71 (navy) background, white text, bottom triangle arrow
+- Inactive tab: #fff background, #555 text
+- Form inputs: white background, 60px height, 3px border-radius, left icon 48px wide
+- Input labels: 11px, uppercase, 900 weight, #555
+- Input text: 16px, #333
+- Checkboxes: green accent, white label text, 11px uppercase bold
+- Search button: #ff8300 (orange) background, white text, 900 weight, 50px height
+- Search button hover: #e67600
+- Footer: #002c71 (navy) background, white/70 text, Component Dock link
 
-### Colors
+## Requirements
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| Brand primary | `#373a6d` | Hero bg, btn-primary bg, blockquote bg, nav active, focus borders, text-primary icons |
-| Body text | `gray` (default) | Paragraphs, body text |
-| Heading text | `#000` | All headings, .text-black |
-| White | `#fff` | Hero text, button text, footer headings |
-| Footer bg | `#333333` | Footer section (overrides .bg-primary) |
-| Light bg | `#ccc` | bg-light override (training, contact sections) |
-| Card bg | `#fff` | Service cards, blog entries |
-| Post meta | `#b3b3b3` | Blog date text |
-| Testimonial name | `#000` | Testimonial author name |
-| CTA link | `#fd7e14` | Orange accent for hero paragraph links |
-| Button warning | `#ffc107` (Bootstrap) | "Contact Me" hero button |
+### Requirement: Full-viewport hero with travel background image
 
-### Typography
+The template SHALL display a full-viewport hero section with a background travel
+photo (picsum.photos seed placeholder) using cover/center positioning.
 
-| Property | Value |
-|----------|-------|
-| Font family (headings) | `Quicksand`, sans-serif |
-| Font family (blockquote) | `Vollkorn`, serif |
-| Font family (body) | `Quicksand` via CSS inheritance |
-| Weights used | 400 (body), 500 (nav), 700 (bold), 900 (hero h1) |
-| Body size | 1rem (16px) |
-| Body line-height | 1.7 |
-| h1 (hero) | 3rem (48px), mobile: 2rem (32px) |
-| section titles | Bootstrap h2 defaults |
-| Service h3 | 1.2rem |
-| Blog h3 | 1.3rem |
-| Training h3 | 1.5rem |
+#### Scenario: Background image renders
 
-### Button Styles
+- **WHEN** the page loads
+- **THEN** the hero section shows a full-viewport background image
+- **AND** the form is centered within the hero
 
-| Element | Shape | Padding | Radius | Colors |
-|---------|-------|---------|--------|--------|
-| `.btn-primary` | Default Bootstrap | `py-2 px-5` | 5px (Bootstrap default) | bg `#373a6d`, border `#373a6d`, white text; hover → black bg |
-| `.btn-warning` | Default Bootstrap | `px-5 py-3` | 5px | Bootstrap warning (orange), white text; transparent with white border on hover |
-| Newsletter input+btn | Inline | input: default, btn: small | 5px | Transparent input bg with `border-secondary text-white bg-transparent` on footer |
+### Requirement: Search form with gradient overlay
 
-### Section Backgrounds
+The template SHALL display a centered search form with a blue-to-cyan gradient
+background, 10px border-radius, and padding matching the original design.
 
-| Section | Background |
-|---------|------------|
-| Hero/Cover | Solid `#373a6d` (site-blocks-cover bg-color) |
-| About | White (default) |
-| Training | `#ccc` (bg-light override) |
-| Testimonials | White (default) |
-| Services | Bootstrap `.bg-primary` (likely `#373a6d` or Bootstrap default) |
-| Blog | White (default) |
-| Contact | `#ccc` (bg-light override) |
-| Footer | `#333333` (site-footer) |
+#### Scenario: Form container renders
 
-### Spacing
+- **WHEN** the page loads
+- **THEN** the search form is centered on screen
+- **AND** the form has a gradient background from blue to cyan
 
-| Section | Padding |
-|---------|---------|
-| `.site-section` | 2.5em vertical (mobile), 5em (desktop ≥768px) |
-| `.site-footer` | 4em (mobile), 8em (desktop) |
-| Hero | 80vh height, min-height 400px |
+### Requirement: Search Hotels heading
 
-## Requirements (Gherkin)
+The template SHALL display a "Search Hotels" heading above the form fields.
 
-### Feature: Header / Navigation
+#### Scenario: Heading renders
 
-```gherkin
-Scenario: Header renders with logo and navigation links
-  Given the page loads
-  Then a sticky header is visible at the top
-  And the logo text "Coaching." is displayed on the left (with dot in primary color)
-  And navigation links "Home", "About", "Our Training", "Testimonials", "Services", "Blog", "Contact" are present
-  And a hamburger menu icon is visible on mobile/tablet
+- **WHEN** the page loads
+- **THEN** the form shows a heading "Search Hotels" in Poppins bold font
 
-Scenario: Navigation links scroll to sections
-  Given the header is rendered
-  When the user clicks "About"
-  Then the page scrolls to the about section
-```
+### Requirement: Travel type tabs
 
-### Feature: Hero / Cover Section
+The template SHALL display 4 travel type tabs: HOTEL ONLY, HOTEL + FLIGHT,
+HOTEL + FLIGHT + CAR, HOTEL + CAR. The active tab SHALL have a navy background
+with a bottom triangle indicator.
 
-```gherkin
-Scenario: Hero section displays typed animation headline
-  Given the page loads
-  Then a full-height hero section covers 80vh
-  And the background color is navy (#373a6d)
-  And the heading reads "I'm Professional" followed by typed text cycling through "Business Speakers" and "Life Coach"
-  And a subtitle paragraph is below the heading
-  And a "Contact Me" button is displayed with warning/orange style
+#### Scenario: Default active tab
 
-Scenario: Hero button links to contact section
-  Given the hero section is visible
-  When the user clicks "Contact Me"
-  Then the page scrolls to the contact section
-```
+- **WHEN** the page loads
+- **THEN** "HOTEL ONLY" is the active tab with navy background
+- **AND** the other tabs show white background
 
-### Feature: Hero Image Slider
+#### Scenario: Tab selection changes active state
 
-```gherkin
-Scenario: Image carousel displays coaching photos
-  Given the hero slider section is visible
-  Then a carousel shows coaching-related images
-  And the carousel has navigation arrows (prev/next)
-  And the carousel auto-plays between slides
-```
+- **WHEN** the user clicks a different travel type tab
+- **THEN** that tab becomes active (navy background)
+- **AND** the previously active tab returns to white background
 
-### Feature: About Section
+### Requirement: Destination input field
 
-```gherkin
-Scenario: About section displays title and service cards
-  Given the about section is visible
-  Then the heading reads "Welcome To My Website"
-  And two description paragraphs are present
-  And two service cards are displayed: "Means of Living" and "Transform Lives"
-  And each card has an icon, title, and description
+The template SHALL display a "GOING TO" destination input field with a location
+pin icon and placeholder text "Destination, hotel name".
 
-Scenario: About service cards show icons
-  Given the about section is visible
-  Then each service card displays a primary-colored icon
-```
+#### Scenario: Destination input renders
 
-### Feature: Training Section
+- **WHEN** the page loads
+- **THEN** the destination input is visible with placeholder "Destination, hotel name"
+- **AND** the label "GOING TO" is displayed above the input
 
-```gherkin
-Scenario: Training carousel displays training items
-  Given the training section is visible
-  Then the heading reads "Life Coach Training"
-  And a description paragraph is below the heading
-  And a carousel displays training cards with images
-  And each card has an image, title, and description
-  And the section background is light gray
+### Requirement: Check-in and check-out date inputs
 
-Scenario: Training cards have image hover effect
-  Given the training section is visible
-  When the user hovers over a training card image
-  Then the image scales up slightly (1.05x)
-```
+The template SHALL display two date inputs labeled "CHECK-IN" and "CHECK-OUT"
+with calendar icons, arranged side by side.
 
-### Feature: Testimonials Section
+#### Scenario: Date inputs render
 
-```gherkin
-Scenario: Testimonials carousel displays customer quotes
-  Given the testimonials section is visible
-  Then the heading reads "Happy Customers"
-  And a carousel displays testimonial blocks
-  And each block has a blockquote with navy (#373a6d) background
-  And each block shows a circular avatar photo
-  And each block shows the customer name
+- **WHEN** the page loads
+- **THEN** the check-in and check-out date inputs are visible
+- **AND** each has a calendar icon to its left
 
-Scenario: Testimonial blockquote has speech-bubble shape
-  Given the testimonials section is visible
-  Then each blockquote has a triangle pointing down (speech-bubble effect)
-  And the blockquote text is white on navy background
-```
+### Requirement: Travelers select dropdown
 
-### Feature: Services Section
+The template SHALL display a "TRAVELERS" select dropdown with options for
+different traveler counts.
 
-```gherkin
-Scenario: Services carousel displays service cards
-  Given the services section is visible
-  Then the heading reads "Our Services"
-  And a description paragraph is below the heading
-  And a carousel displays white service cards
-  And each card has an icon, title, and description
-  And the section has a primary-colored background
+#### Scenario: Travelers dropdown renders
 
-Scenario: Service cards have icons in primary color
-  Given the services section is visible
-  Then each service card icon is displayed in primary color (#373a6d)
-```
+- **WHEN** the page loads
+- **THEN** the travelers dropdown shows "1 adult" as default
+- **AND** the user can select different options
 
-### Feature: Blog Section
+### Requirement: Add a Flight and Add a Car checkboxes
 
-```gherkin
-Scenario: Blog grid displays blog entries
-  Given the blog section is visible
-  Then the heading reads "Our Blog"
-  And 4 blog entries are displayed in a 2-column grid
-  And each entry has an image thumbnail on the left, title, date, description, and "Read More.." link
+The template SHALL display two checkboxes: "ADD A FLIGHT" (checked by default)
+and "ADD A CAR" (unchecked by default).
 
-Scenario: Blog entry date formatting
-  Given the blog section is visible
-  Then each entry shows a date (e.g. "April 17, 2019") in light gray
-```
+#### Scenario: Checkboxes render with defaults
 
-### Feature: Contact Section
+- **WHEN** the page loads
+- **THEN** "Add a Flight" checkbox is checked
+- **AND** "Add a Car" checkbox is unchecked
 
-```gherkin
-Scenario: Contact form renders with fields
-  Given the contact section is visible
-  Then the heading reads "Contact Me"
-  And contact info shows: Address, Phone, Email Address
-  And the form has: First name input, Last name input (placeholder "First name" for both), Email address input, Message textarea
-  And a "Send Message" button is displayed in primary style
+#### Scenario: Checkboxes toggle
 
-Scenario: Contact form accepts input
-  Given the contact form is visible
-  When the user types in the first name field
-  Then the field accepts text input
-```
+- **WHEN** the user clicks a checkbox
+- **THEN** the checkbox toggles state
 
-### Feature: Footer
+### Requirement: Search button
 
-```gherkin
-Scenario: Footer displays about, links, social, and newsletter
-  Given the footer is visible
-  Then the footer has three columns: "About Coaching", "Quick Links", "Follow Us"
-  And Quick Links includes: About Us, Our Training, Services, Testimonials, Contact Us
-  And social icons for Facebook, Twitter, Instagram, LinkedIn are shown
-  And a "Subscribe Newsletter" section with email input and "Send" button is present
-  And a copyright line is displayed
+The template SHALL display an orange "Search" button that submits the form.
 
-Scenario: Footer links scroll to sections
-  Given the footer is visible
-  When the user clicks "About Us"
-  Then the page scrolls to the about section
-```
+#### Scenario: Search button renders
 
-### Feature: Responsive Design
+- **WHEN** the page loads
+- **THEN** the "Search" button is visible with orange background
 
-```gherkin
-Scenario: Mobile layout shows hamburger menu
-  Given the viewport is narrower than 1200px
-  Then the desktop navigation is hidden
-  And a hamburger menu icon is visible
+#### Scenario: Form submission
 
-Scenario: Mobile hero text scales down
-  Given the viewport is narrower than 992px
-  Then the hero h1 font size reduces to 2rem
+- **WHEN** the user clicks the Search button
+- **THEN** the form submits without page navigation
 
-Scenario: Mobile layout stacks columns
-  Given the viewport is narrower than 768px
-  Then sections stack vertically
-  And padding is reduced to 2.5em
-```
+### Requirement: Footer with Component Dock link
 
-## Verification Checklist
+The template SHALL display a footer with the Component Dock brand link
+(https://www.componentdock.com/) and copyright text.
 
-- [ ] Header: sticky nav with "Coaching." logo, 7 nav links, hamburger on mobile
-- [ ] Hero: navy bg (#373a6d), 80vh, typed animation "I'm Professional [Business Speakers / Life Coach]", "Contact Me" btn-warning
-- [ ] Hero slider: owl-carousel with 2 coaching images, nav arrows
-- [ ] About: "Welcome To My Website" heading, 2 paragraphs, 2 service cards with icons
-- [ ] Training: bg-light (#ccc), "Life Coach Training" heading, carousel of training cards with image zoom hover
-- [ ] Testimonials: "Happy Customers", carousel of blockquotes with navy bg + triangle, circular avatars, names
-- [ ] Services: primary-colored bg, carousel of white service cards with icons
-- [ ] Blog: "Our Blog", 4 entries in 2-col grid, image + title + date + description + "Read More.."
-- [ ] Contact: bg-light, "Contact Me" heading, address/phone/email, form with 2 name inputs + email + textarea + "Send Message" btn-primary
-- [ ] Footer: #333333 bg, "About Coaching" + "Quick Links" + "Follow Us" + newsletter + copyright + Component Dock link
-- [ ] Fonts: Quicksand (Google Fonts) + Vollkorn (for blockquotes)
-- [ ] Colors match extracted tokens
-- [ ] Responsive: hamburger on mobile, scaled hero text, stacked columns
-- [ ] No ColorLib references in app code
-- [ ] Footer links to componentdock.com
+#### Scenario: Footer renders
+
+- **WHEN** the page loads
+- **THEN** the footer shows "Component Dock" as a link to componentdock.com
+- **AND** a copyright notice is displayed
+
+### Requirement: Responsive layout
+
+The template SHALL be responsive, stacking form fields vertically on mobile
+devices.
+
+#### Scenario: Mobile layout
+
+- **WHEN** the viewport width is below 768px
+- **THEN** the date and traveler inputs stack vertically
+- **AND** the form padding reduces

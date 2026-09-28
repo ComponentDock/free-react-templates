@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Waypoint brand palette — recreated from the ColorLib "Search Form V12" template
+     (navy active #002c71, orange CTA #ff8300, gradient blue→cyan). */
+  --color-waypoint-navy: #002c71;
+  --color-waypoint-orange: #ff8300;
+  --color-waypoint-orange-hover: #e67600;
+  --color-waypoint-text: #333333;
+  --color-waypoint-muted: #555555;
+  --color-waypoint-placeholder: #808080;
+
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
