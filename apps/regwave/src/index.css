@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette: cyan background + blue accent from original template. */
+  --color-brand-bg: #75e2e9;
+  --color-brand-primary: #3786bd;
+  --color-brand-primary-hover: #2f73a3;
+  --color-brand-focus: #53c83c;
+
+  /* Text colors. */
+  --color-heading: #333;
+  --color-label: #666;
+  --color-input-text: #333;
+  --color-placeholder: #999;
+
+  /* Form card. */
+  --color-form-bg: #fff;
+  --color-input-border: #e5e5e5;
+  --color-card-shadow: rgba(0, 0, 0, 0.15);
+
+  /* Fonts: Open Sans (from original template). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    margin: 0;
+  }
+}
