@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Open Sans', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --color-brand: #fdb44b;
+  --color-brand-light: #fec97d;
+  --color-ink: #000000;
+  --color-body: #999999;
+  --color-body-light: #b3b3b3;
+  --color-border: #cccccc;
+  --color-hover: #e6e6e6;
+  --color-light-bg: #f2f2f2;
+  --color-near-white: #f7f7f7;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-body);
+  background: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-ink);
+}
