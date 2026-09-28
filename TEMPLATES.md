@@ -2656,7 +2656,7 @@
 - [x] **Colorlib Regform 7** — [formwise](https://formwise.free.componentdock.com) · [colorlib](https://colorlib.com/wp/template/colorlib-regform-7/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-7.jpg)
 - [x] **Colorlib Regform 8** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-8/) · [regify](https://regify.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-8.jpg)
 - [x] **Colorlib Regform 9** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-9.jpg) · [regease](https://regease.free.componentdock.com)
-- [~] **Signup Form 02** — [colorlib](https://colorlib.com/wp/template/signup-form-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-02.jpg)
+- [x] **Signup Form 02** — [colorlib](https://colorlib.com/wp/template/signup-form-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-02.jpg) · [joinbox](https://joinbox.free.componentdock.com)
 - [x] **Signup Form 03** — [colorlib](https://colorlib.com/wp/template/signup-form-03/) · [enroll](https://enroll.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-03.jpg)
 - [ ] **Signup Form 06** — [colorlib](https://colorlib.com/wp/template/signup-form-06/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-06.jpg)
 - [ ] **Signup Form 10** — [colorlib](https://colorlib.com/wp/template/signup-form-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-10.jpg)
