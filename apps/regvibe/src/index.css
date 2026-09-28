@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand gradient start: warm yellow from the original ColorLib CSS
+     (linear-gradient 136deg, rgb(254,225,64) 0%). */
+  --color-gradient-start: #fee140;
+
+  /* Brand gradient end: pink from the original ColorLib CSS
+     (linear-gradient 136deg, ..., rgb(250,112,154) 100%). */
+  --color-gradient-end: #fa709a;
+
+  /* Form label color from the original CSS (#666). */
+  --color-label: #666666;
+
+  /* Input border color from the original CSS (#e5e5e5). */
+  --color-input-border: #e5e5e5;
+
+  /* Input focus border: the pink accent. */
+  --color-input-focus: #fa709a;
+
+  /* Register button green from the original CSS (#6DAB3C). */
+  --color-btn-register: #6dab3c;
+
+  /* Register button hover green. */
+  --color-btn-register-hover: #5f9434;
+
+  /* Card shadow from the original CSS. */
+  --color-card-shadow: rgba(0, 0, 0, 0.15);
+
+  /* Text colors. */
+  --color-ink: #333333;
+  --color-muted: #999999;
+
+  /* Original font: Open Sans via Google Fonts (loaded in index.html). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
