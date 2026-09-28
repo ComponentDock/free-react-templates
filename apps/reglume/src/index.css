@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #3786bd;
+  --color-brand-dark: #2f73a3;
+  --color-page-bg: #5eb2b3;
+  --color-card-bg: #ffffff;
+  --color-input-border: #e5e5e5;
+  --color-input-focus: #b3b3b3;
+  --color-label: #999999;
+  --color-heading: #333333;
+  --color-btn-text: #ffffff;
+  --font-sans: 'Roboto', system-ui, sans-serif;
+}
