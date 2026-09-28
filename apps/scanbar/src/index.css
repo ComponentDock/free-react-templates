@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Scanbar brand palette — recreated from the ColorLib "Search Form 13" template
+     (coral CTA #e84c60, dark navy #1a1a2e, blue sky hero background). */
+  --color-scanbar-coral: #e84c60;
+  --color-scanbar-coral-hover: #d44054;
+  --color-scanbar-navy: #1a1a2e;
+  --color-scanbar-text: #333333;
+  --color-scanbar-muted: #666666;
+  --color-scanbar-placeholder: #999999;
+
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
