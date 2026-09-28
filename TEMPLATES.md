@@ -2726,7 +2726,7 @@
 - [x] **Satner** — [colorlib](https://colorlib.com/wp/template/satner/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/satner-free-template.jpg) · [kael](https://kael.free.componentdock.com)
 - [ ] **Schmidt** — [colorlib](https://colorlib.com/wp/template/schmidt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/schmidt-free-template.jpg)
 - [x] **Steve** — [colorlib](https://colorlib.com/wp/template/steve/) · [craftfolio](https://free-react-templates-craftfolio.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/steve-free-template.jpg)
-- [ ] **Vcard** — [colorlib](https://colorlib.com/wp/template/vcard/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vcard-free-template.jpg)
+- [~] **Vcard** — [colorlib](https://colorlib.com/wp/template/vcard/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vcard-free-template.jpg)
 
 ## Search Form Bar (45)
 
