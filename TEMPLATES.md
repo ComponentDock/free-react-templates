@@ -2698,7 +2698,7 @@
 - [x] **Risotto** — [colorlib](https://colorlib.com/wp/template/risotto/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/risotto-free-restaurant-website-template.jpg) · [polenta](https://polenta.free.componentdock.com)
 - [x] **Rooftop** — [colorlib](https://colorlib.com/wp/template/rooftop/) · [skyline](https://skyline.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/rooftop-free-template-1.jpg)
 - [x] **Sneaky** — [colorlib](https://colorlib.com/wp/template/sneaky/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sneaky-free-template.jpg) · [crave](https://crave.free.componentdock.com)
-- [ ] **Steak** — [colorlib](https://colorlib.com/wp/template/steak/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/steak-free-template.jpg)
+- [~] **Steak** — [colorlib](https://colorlib.com/wp/template/steak/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/steak-free-template.jpg)
 - [ ] **Steakshop** — [colorlib](https://colorlib.com/wp/template/steakshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/steakshop-free-template.jpg)
 - [ ] **Tasteit** — [colorlib](https://colorlib.com/wp/template/tasteit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tasteit-free-template.jpg)
 - [ ] **Tasty** — [colorlib](https://colorlib.com/wp/template/tasty/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tasty-free-template.jpg)
