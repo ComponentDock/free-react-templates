@@ -2679,7 +2679,7 @@
 - [x] **Feliciano** — [colorlib](https://colorlib.com/wp/template/feliciano/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/feliciano-free-template.jpg) · [forno](https://forno.free.componentdock.com)
 - [x] **Foodbar** — [colorlib](https://colorlib.com/wp/template/foodbar/) · [bites](https://bites.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foodbar-free-template.jpg)
 - [x] **Foodfun** — [colorlib](https://colorlib.com/wp/template/foodfun/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foodfun-free-template.jpg) · [forkful](https://forkful.free.componentdock.com)
-- [~] **Foody** — [colorlib](https://colorlib.com/wp/template/foody/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foody-free-template.jpg)
+- [x] **Foody** — [colorlib](https://colorlib.com/wp/template/foody/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foody-free-template.jpg) · [foodnest](https://foodnest.free.componentdock.com)
 - [x] **Gourmet** — [colorlib](https://colorlib.com/wp/template/gourmet/) · [dine](https://dine.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gourmet-free-template.jpg)
 - [x] **Kusina** — [colorlib](https://colorlib.com/wp/template/kusina/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kusina-free-template.jpeg) · [hearth](https://hearth.free.componentdock.com)
 - [x] **Listing** — [colorlib](https://colorlib.com/wp/template/listing/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listing-free-directory-website-template.jpg) · [listnest](https://listnest.free.componentdock.com)
