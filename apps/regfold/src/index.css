@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* RegFold brand palette — pink-to-purple gradient (#fc2c77 → #6c4079). */
+  --color-brand-start: #fc2c77;
+  --color-brand-end: #6c4079;
+
+  /* Blue submit button (#4272d7). */
+  --color-accent: #4272d7;
+  --color-accent-hover: #3868cd;
+
+  /* Input background (#fafafa). */
+  --color-input-bg: #fafafa;
+
+  /* Label text (#666). */
+  --color-label: #666666;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
