@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette — teal green accent. */
+  --color-brand: #38d39f;
+  --color-brand-hover: #29bb8a;
+  --color-brand-focus: rgba(56, 211, 159, 0.25);
+
+  /* Social button colors. */
+  --color-facebook: #3b5998;
+  --color-facebook-hover: #344e86;
+  --color-twitter: #1da1f2;
+  --color-twitter-hover: #0d95e8;
+  --color-google: #ea4335;
+  --color-google-hover: #e82e1e;
+
+  /* Caption / link grey. */
+  --color-caption: #888;
+
+  /* Checkbox unchecked indicator. */
+  --color-checkbox-idle: #e6e6e6;
+  --color-checkbox-hover: #ccc;
+
+  /* Muted text. */
+  --color-muted: #b3b3b3;
+
+  /* Roboto — Google Fonts loaded in index.html (weight 300 body, 400 labels/heading). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #f8fafb;
+  }
+}
