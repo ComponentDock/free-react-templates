@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette: warm orange from the original restaurant template's
+     primary CTA buttons and price highlights. */
+  --color-brand: #e8663d;
+  --color-brand-dark: #c94e28;
+
+  /* Section backgrounds. */
+  --color-dark-bg: #222222;
+  --color-footer-bg: #1a1a1a;
+
+  /* Text colors. */
+  --color-ink: #222222;
+  --color-body: #555555;
+  --color-light-text: #aaaaaa;
+
+  /* Fonts: Open Sans (loaded via Google Fonts in index.html). */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

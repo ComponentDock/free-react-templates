@@ -2683,7 +2683,7 @@
 - [x] **Gourmet** — [colorlib](https://colorlib.com/wp/template/gourmet/) · [dine](https://dine.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gourmet-free-template.jpg)
 - [x] **Kusina** — [colorlib](https://colorlib.com/wp/template/kusina/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kusina-free-template.jpeg) · [hearth](https://hearth.free.componentdock.com)
 - [x] **Listing** — [colorlib](https://colorlib.com/wp/template/listing/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/listing-free-directory-website-template.jpg) · [listnest](https://listnest.free.componentdock.com)
-- [ ] **Luigis** — [colorlib](https://colorlib.com/wp/template/luigis/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/luigis-free-template.jpg)
+- [~] **Luigis** — [colorlib](https://colorlib.com/wp/template/luigis/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/luigis-free-template.jpg)
 - [ ] **Luto** — [colorlib](https://colorlib.com/wp/template/luto/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/luto-free-template.jpg)
 - [x] **Marco** — [colorlib](https://colorlib.com/wp/template/marco/) · [sizzle](https://sizzle.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/marco-free-template.jpg)
 - [ ] **Meal** — [colorlib](https://colorlib.com/wp/template/meal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/meal-free-template.jpg)
