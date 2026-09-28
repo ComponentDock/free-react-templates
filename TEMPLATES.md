@@ -2731,7 +2731,7 @@
 ## Search Form Bar (45)
 
 - [x] **Colorlib Search 1** — [colorlib](https://colorlib.com/wp/template/colorlib-search-1/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-1.jpg) · [seekly](https://seekly.free.componentdock.com)
-- [~] **Colorlib Search 10** — [colorlib](https://colorlib.com/wp/template/colorlib-search-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-10.jpg)
+- [x] **Colorlib Search 10** — [colorlib](https://colorlib.com/wp/template/colorlib-search-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-10.jpg) · [filtera](https://filtera.free.componentdock.com)
 - [ ] **Colorlib Search 11** — [colorlib](https://colorlib.com/wp/template/colorlib-search-11/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-11.jpg)
 - [ ] **Colorlib Search 12** — [colorlib](https://colorlib.com/wp/template/colorlib-search-12/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-12.jpg)
 - [ ] **Colorlib Search 13** — [colorlib](https://colorlib.com/wp/template/colorlib-search-13/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-13.jpg)
