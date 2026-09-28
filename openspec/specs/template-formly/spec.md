@@ -2,253 +2,212 @@
 
 ## Purpose
 
-Recreation of ColorLib "Colorlib Regform 5" — a centered event registration form with a dark header bar, labeled form fields (name, company, email, phone, subject dropdown, customer radio), and a coral submit button on a purple-to-cyan gradient background.
+Recreation of **ColorLib Regform 5** (`colorlib-regform-5`) as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
-- **Source**: https://colorlib.com/wp/template/colorlib-regform-5/
-- **Preview**: https://preview.colorlib.com/theme/colorlib-regform-5/ (unreachable at time of analysis; screenshot used as sole reference)
-- **Stack**: React 19 + Vite + Tailwind CSS 4 + TypeScript
-- **Category**: Registration form (single-card, event-focused)
+- **ColorLib source:** https://colorlib.com/wp/template/colorlib-regform-5/
+- **Preview URL:** https://preview.colorlib.com/theme/colorlib-regform-5/ (unreachable; screenshot used as sole reference)
+- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-5.jpg
+- **Stack:** React 19, Vite (latest), Tailwind CSS 4, TypeScript (strict), Vitest + Testing Library
 
-## Design tokens
+## Design Tokens (extracted from screenshot)
 
-Extracted from screenshot analysis (preview CSS unavailable):
+| Token                  | Value                                             | Usage                             |
+| ---------------------- | ------------------------------------------------- | --------------------------------- |
+| Font family            | Poppins (400, 600, 700)                           | Body text, headings, inputs       |
+| Background gradient    | linear-gradient(135deg, #8B5CF6 0%, #06B6D4 100%) | Full-page purple-to-cyan diagonal |
+| Card header background | #1E1E2E (dark charcoal)                           | Dark bar at top of card           |
+| Card header text       | #FFFFFF white                                     | Title text color                  |
+| Card body background   | #FFFFFF white                                     | Form body area                    |
+| Card border-radius     | 8px                                               | Rounded corners on card           |
+| Card box-shadow        | 0 8px 32px rgba(0,0,0,0.12)                       | Subtle drop shadow                |
+| Card max-width         | 700px                                             | Centered card width               |
+| Label color            | #1F2937 (gray-800)                                | Bold field labels                 |
+| Label font-size        | 14px                                              | Field label size                  |
+| Label font-weight      | 600 semibold                                      | Bold labels                       |
+| Input background       | #E5E7EB (gray-200)                                | Light gray input backgrounds      |
+| Input border           | none                                              | No visible border                 |
+| Input border-radius    | 6px                                               | Rounded input corners             |
+| Input line-height      | 44px                                              | Input height                      |
+| Select arrow color     | #6B7280 (gray-500)                                | Chevron-down arrow                |
+| Radio checked color    | #22C55E (green-500)                               | Green dot when selected           |
+| Radio unchecked bg     | #E5E7EB (gray-200)                                | Unselected radio background       |
+| Radio gap              | 40px                                              | Space between Yes/No options      |
+| Button background      | #EF4444 (red-500)                                 | Coral/red REGISTER button         |
+| Button hover           | #DC2626 (red-600)                                 | Darker on hover                   |
+| Button text            | white                                             | Button label color                |
+| Button padding         | 0 32px, height 44px                               | Button sizing                     |
+| Button border-radius   | 6px                                               | Rounded button corners            |
+| Button text-transform  | uppercase                                         | REGISTER in caps                  |
+| Button letter-spacing  | 0.5px                                             | Slight letter spacing             |
 
-| Token | Value | Source |
-|-------|-------|--------|
-| Background gradient | `linear-gradient(135deg, #8B5CF6 0%, #06B6D4 100%)` | Full-page purple-to-cyan diagonal gradient |
-| Card header background | `#1E1E2E` dark charcoal | Dark bar at top of card |
-| Card header text | `#FFFFFF` white | Title text color |
-| Card header font-size | `24px` | "EVENT REGISTRATION FORM" heading |
-| Card header font-weight | `700` bold | Uppercase heading |
-| Card header padding | `24px 40px` | Dark header bar internal spacing |
-| Card body background | `#FFFFFF` white | Form body area |
-| Card border-radius | `8px` | Rounded corners on card |
-| Card box-shadow | `0 8px 32px rgba(0,0,0,0.12)` | Subtle drop shadow |
-| Card max-width | `700px` | Centered card width |
-| Card body padding | `40px` | Internal padding for form fields |
-| Font family | `"Poppins", sans-serif` | Google Fonts — weights 400, 600, 700 |
-| Label color | `#1F2937` dark gray-800 | Bold field labels |
-| Label font-size | `14px` | Field label size |
-| Label font-weight | `600` semibold | Bold labels |
-| Label margin-bottom | `6px` | Space below label to input |
-| Input background | `#E5E7EB` gray-200 | Light gray input backgrounds |
-| Input border | `none` | No visible border |
-| Input border-radius | `6px` | Rounded input corners |
-| Input padding | `0 16px` | Horizontal input padding |
-| Input font-size | `14px` | Input text size |
-| Input text color | `#6B7280` gray-500 | Placeholder text color |
-| Input line-height | `44px` | Input height |
-| Input group margin-bottom | `20px` | Space between field groups |
-| Placeholder text color | `#9CA3AF` gray-400 | Subtle placeholder text |
-| Column gap | `16px` | Space between side-by-side inputs |
-| Select background | `#E5E7EB` gray-200 | Same as text inputs |
-| Select border-radius | `6px` | Rounded select corners |
-| Select arrow color | `#6B7280` gray-500 | Chevron-down arrow |
-| Select padding | `0 16px` | Same horizontal padding as inputs |
-| Select height | `44px` | Same as text inputs |
-| Radio circle size | `18px` | Custom radio button diameter |
-| Radio checked color | `#22C55E` green-500 | Green dot when selected |
-| Radio unchecked bg | `#E5E7EB` gray-200 | Unselected radio background |
-| Radio text color | `#374151` gray-700 | Radio label text |
-| Radio text font-size | `14px` | Radio label size |
-| Radio gap | `40px` | Space between Yes/No options |
-| Radio group margin-top | `8px` | Space below "Are you an existing customer?" text |
-| Button background | `#EF4444` red-500 | Coral/red REGISTER button |
-| Button hover | `#DC2626` red-600 | Darker on hover |
-| Button text | `#FFFFFF` white | Button label color |
-| Button font-size | `14px` | Button text size |
-| Button font-weight | `600` semibold | Bold button text |
-| Button padding | `0 32px`, height `44px` | Button sizing |
-| Button border-radius | `6px` | Rounded button corners |
-| Button text-transform | `uppercase` | REGISTER in caps |
-| Button letter-spacing | `0.5px` | Slight letter spacing |
-| Button margin-top | `24px` | Space above button from last field |
-| Customer question text | `#1F2937` dark gray-800 | Bold question text |
-| Customer question font-size | `14px` | Question text size |
-| Customer question font-weight | `600` semibold | Bold question text |
-| Customer question margin-top | `16px` | Space above question |
+## Layout Structure
 
-## Visual design notes (from screenshot analysis)
+Single centered card on gradient background:
 
-- Full-page gradient: purple (#8B5CF6) to cyan (#06B6D4) running diagonally from top-left to bottom-right.
-- Centered white card with dark (#1E1E2E) header bar spanning full card width.
-- Header contains "EVENT REGISTRATION FORM" in white, bold, uppercase, ~24px.
-- White card body below header with generous padding (~40px).
-- Form fields are vertically stacked with bold labels above each input.
-- Name field: two side-by-side inputs (First Name / Last Name) with placeholder text.
-- Company: single full-width input.
-- Email: single full-width input.
-- Phone: two side-by-side inputs (Area Code / Phone Number).
-- Subject: full-width dropdown with "Choose option" default, chevron-down icon on right.
-- "Are you an existing customer?" bold question text with Yes/No radio buttons.
-- Yes radio selected by default with green (#22C55E) inner dot.
-- REGISTER button: coral/red (#EF4444), uppercase, rounded, centered below the form.
-- All inputs share the same light gray (#E5E7EB) background with no visible border.
-- Clean, minimal aesthetic — no images, no icons (except dropdown chevron and radio dots).
+1. **Page wrapper** — full viewport, purple-to-cyan diagonal gradient, flex centered
+2. **Card** — max-width 700px, centered, white background, 8px radius, drop shadow
+   - **Header** — dark (#1E1E2E) bar with "Event Registration Form" (h1, white, bold, uppercase)
+   - **Form body** — white, 40px padding
+     - **Name row** — two columns: First Name (text) | Last Name (text)
+     - **Company** — full-width text input
+     - **Email** — full-width email input
+     - **Phone row** — two columns: Area Code (text) | Phone Number (text)
+     - **Subject** — full-width select dropdown with "Choose option" default
+     - **Customer question** — "Are you an existing customer?" with Yes/No radio buttons (Yes default)
+     - **Submit button** — "REGISTER", coral red (#EF4444), uppercase, 6px radius
+3. **Footer** — links to https://www.componentdock.com/
 
 ## Requirements
 
-### Page layout
+### Requirement: Page renders the registration form
 
-```gherkin
-  Scenario: page renders with gradient background
-    When the page loads
-    Then a full-page gradient background is displayed
-    And the gradient goes from purple (#8B5CF6) to cyan (#06B6D4) at 135deg
-    And a centered card is visible on the gradient
+Users SHALL see a centered event registration form with gradient background.
 
-  Scenario: card structure
-    When the page loads
-    Then the card has a dark header bar (#1E1E2E) at the top
-    And the card has a white body below the header
-    And the card has border-radius 8px
-    And the card has a drop shadow (0 8px 32px rgba(0,0,0,0.12))
-    And the card max-width is 700px
-    And the card is horizontally centered on the page
-```
+#### Scenario: Gradient background renders
 
-### Header
+- **WHEN** I visit the registration page
+- **THEN** a full-page gradient background from purple to cyan is displayed
+- **AND** a centered card is visible on the gradient
 
-```gherkin
-  Scenario: header renders with title
-    When the page loads
-    Then the dark header bar displays "EVENT REGISTRATION FORM"
-    And the title text is white (#FFFFFF)
-    And the title is bold, uppercase, ~24px font-size
-    And the header has internal padding (~24px 40px)
-```
+#### Scenario: Card has correct structure
 
-### Name field
+- **WHEN** I visit the registration page
+- **THEN** the card has a dark header bar at the top
+- **AND** the card has a white body below the header
+- **AND** the card is horizontally centered on the page
 
-```gherkin
-  Scenario: name field renders as two-column row
-    When the form loads
-    Then a "Name" label is visible
-    And two input fields are displayed side by side
-    And the left input has placeholder "First Name"
-    And the right input has placeholder "Last Name"
-    And both inputs have light gray (#E5E7EB) background
-    And both inputs have border-radius 6px
-    And both inputs have line-height 44px
-    And the column gap between inputs is 16px
-```
+### Requirement: Header displays title
 
-### Company field
+The dark header SHALL display "Event Registration Form" in white uppercase text.
 
-```gherkin
-  Scenario: company field renders as full-width input
-    When the form loads
-    Then a "Company" label is visible
-    And a single full-width input is displayed below the label
-    And the input has light gray (#E5E7EB) background
-    And the input has border-radius 6px
-```
+#### Scenario: Header renders with title
 
-### Email field
+- **WHEN** I visit the registration page
+- **THEN** I see a heading "Event Registration Form"
+- **AND** the heading is an h1 element
 
-```gherkin
-  Scenario: email field renders as full-width input
-    When the form loads
-    Then an "Email" label is visible
-    And a single full-width input is displayed below the label
-    And the input has light gray (#E5E7EB) background
-```
+### Requirement: Name field renders as two-column row
 
-### Phone field
+The name field SHALL display First Name and Last Name inputs side by side.
 
-```gherkin
-  Scenario: phone field renders as two-column row
-    When the form loads
-    Then a "Phone" label is visible
-    And two input fields are displayed side by side
-    And the left input has placeholder "Area Code"
-    And the right input has placeholder "Phone Number"
-    And both inputs have light gray (#E5E7EB) background
-    And the column gap between inputs is 16px
-```
+#### Scenario: Two name inputs are visible
 
-### Subject dropdown
+- **WHEN** I visit the registration page
+- **THEN** I see a "Name" label
+- **AND** I see a "First Name" placeholder input
+- **AND** I see a "Last Name" placeholder input
 
-```gherkin
-  Scenario: subject dropdown renders with options
-    When the form loads
-    Then a "Subject" label is visible
-    And a dropdown select is displayed below the label
-    And the dropdown shows "Choose option" as the default
-    And the dropdown has a gray (#6B7280) chevron-down arrow on the right
-    And the dropdown background is light gray (#E5E7EB)
-```
+#### Scenario: Name inputs accept text
 
-### Customer radio buttons
+- **WHEN** I type "John" into the First Name field
+- **THEN** the First Name field shows "John"
+- **WHEN** I type "Doe" into the Last Name field
+- **THEN** the Last Name field shows "Doe"
 
-```gherkin
-  Scenario: customer question renders with radio buttons
-    When the form loads
-    Then the text "Are you an existing customer?" is displayed in bold
-    And two radio options are shown: "Yes" and "No"
-    And "Yes" is selected by default with a green (#22C55E) inner dot
-    And "No" is unselected with a gray (#E5E7EB) circle
-    And the radio options have 40px gap between them
-```
+### Requirement: Company field renders as full-width input
 
-### Submit button
+The company field SHALL render as a single full-width text input.
 
-```gherkin
-  Scenario: submit button renders with coral styling
-    When the form loads
-    Then a "REGISTER" button is visible below the customer question
-    And the button has a coral/red background (#EF4444)
-    And the button text is white
-    And the button text is uppercase with letter-spacing 0.5px
-    And the button has border-radius 6px
-    And the button has height 44px and padding 0 32px
+#### Scenario: Company input is visible
 
-  Scenario: submit button hover state
-    When I hover over the "REGISTER" button
-    Then the button background changes to #DC2626
-```
+- **WHEN** I visit the registration page
+- **THEN** I see a "Company" label
+- **AND** I see a full-width text input below it
 
-### Form input styling
+### Requirement: Email field renders as full-width input
 
-```gherkin
-  Scenario: all inputs share consistent styling
-    Given the form is visible
-    Then each text input has a #E5E7EB background
-    And each text input has no visible border
-    And each text input has border-radius 6px
-    And each text input has padding 0 16px
-    And each text input has line-height 44px
-    And each input label is colored #1F2937 with font-size 14px and font-weight 600
-    And each input group has 20px margin-bottom
-```
+The email field SHALL render as a single full-width email input.
 
-### Responsive behavior
+#### Scenario: Email input is visible
 
-```gherkin
-  Scenario: columns stack on mobile
-    Given the viewport is 767px or narrower
-    When the form loads
-    Then all column pairs stack vertically (100% width each)
-    And the card body padding reduces
-```
+- **WHEN** I visit the registration page
+- **THEN** I see an "Email" label
+- **AND** I see a full-width email input below it
 
-## Verification checklist
+### Requirement: Phone field renders as two-column row
 
-- [ ] Full-page gradient background renders (purple #8B5CF6 → cyan #06B6D4, 135deg)
-- [ ] White card centered with correct max-width (700px), 8px radius, drop shadow
-- [ ] Dark header bar (#1E1E2E) with "EVENT REGISTRATION FORM" in white, bold, uppercase, ~24px
-- [ ] Name: two side-by-side inputs (First Name / Last Name) with placeholders
-- [ ] Company: single full-width input
-- [ ] Email: single full-width input
-- [ ] Phone: two side-by-side inputs (Area Code / Phone Number) with placeholders
-- [ ] Subject: dropdown with "Choose option" default and chevron-down arrow
-- [ ] "Are you an existing customer?" bold question with Yes/No radio buttons
-- [ ] Yes selected by default with green #22C55E inner dot
-- [ ] All inputs: #E5E7EB background, no border, 6px radius, 44px height
-- [ ] All labels: #1F2937, 14px, font-weight 600
-- [ ] REGISTER button: coral #EF4444, white text, uppercase, 6px radius, 44px height
-- [ ] REGISTER hover: #DC2626
-- [ ] Responsive: columns stack below 767px, padding reduces
-- [ ] Font: Poppins loaded (weights 400, 600, 700)
-- [ ] Footer: links to https://www.componentdock.com/
-- [ ] No references to ColorLib in app code
+The phone field SHALL display Area Code and Phone Number inputs side by side.
+
+#### Scenario: Two phone inputs are visible
+
+- **WHEN** I visit the registration page
+- **THEN** I see a "Phone" label
+- **AND** I see an "Area Code" placeholder input
+- **AND** I see a "Phone Number" placeholder input
+
+### Requirement: Subject dropdown renders with options
+
+The subject field SHALL render as a dropdown select with a default "Choose option" text.
+
+#### Scenario: Dropdown shows default option
+
+- **WHEN** I visit the registration page
+- **THEN** I see a "Subject" label
+- **AND** I see a dropdown select
+- **AND** the dropdown shows "Choose option" as the default
+
+#### Scenario: Dropdown allows selection
+
+- **WHEN** I select "General Inquiry" from the Subject dropdown
+- **THEN** the dropdown value is "general"
+
+### Requirement: Customer radio buttons render correctly
+
+The customer question SHALL display Yes and No radio buttons with Yes selected by default.
+
+#### Scenario: Yes and No radios are visible
+
+- **WHEN** I visit the registration page
+- **THEN** I see "Are you an existing customer?" text
+- **AND** I see a "Yes" radio button
+- **AND** I see a "No" radio button
+
+#### Scenario: Yes is selected by default
+
+- **WHEN** I visit the registration page
+- **THEN** the "Yes" radio is checked
+- **AND** the "No" radio is unchecked
+
+#### Scenario: Radio buttons can be toggled
+
+- **WHEN** I click the "No" radio
+- **THEN** the "No" radio is checked
+- **AND** the "Yes" radio is unchecked
+- **WHEN** I click the "Yes" radio
+- **THEN** the "Yes" radio is checked
+
+### Requirement: Submit button renders with coral styling
+
+The submit button SHALL display as a coral/red uppercase REGISTER button.
+
+#### Scenario: Register button is visible
+
+- **WHEN** I visit the registration page
+- **THEN** I see a "Register" button
+- **AND** the button has a red background (bg-red-500)
+- **AND** the button text is uppercase
+
+#### Scenario: Submit button works
+
+- **WHEN** I click the Register button
+- **THEN** the form submission is triggered
+
+### Requirement: Footer links to Component Dock
+
+The footer SHALL contain a link to https://www.componentdock.com/.
+
+#### Scenario: Footer has Component Dock link
+
+- **WHEN** I visit the registration page
+- **THEN** I see a link to "Component Dock"
+- **AND** the link points to https://www.componentdock.com/
+
+### Requirement: Responsive layout
+
+Column pairs SHALL stack vertically on narrow viewports.
+
+#### Scenario: Columns stack on mobile
+
+- **WHEN** I view the page on a narrow viewport
+- **THEN** the Name column pair stacks vertically
+- **AND** the Phone column pair stacks vertically
