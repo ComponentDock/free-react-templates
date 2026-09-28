@@ -2645,7 +2645,7 @@
 - [x] **Colorlib Regform 3** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-3/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-3.jpg) · [regpad](https://regpad.free.componentdock.com)
 - [x] **Colorlib Regform 30** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-30/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-30.jpg) · [regwave](https://regwave.free.componentdock.com)
 - [x] **Colorlib Regform 31** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-31/) · [reglume](https://free-react-templates-reglume.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-31.jpg)
-- [ ] **Colorlib Regform 32** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-32/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-32.jpg)
+- [~] **Colorlib Regform 32** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-32/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-32.jpg)
 - [ ] **Colorlib Regform 33** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-33/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-33.jpg)
 - [ ] **Colorlib Regform 34** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-34/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-34.jpg)
 - [ ] **Colorlib Regform 35** — [colorlib](https://colorlib.com/wp/template/colorlib-regform-35/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-35.jpg)
