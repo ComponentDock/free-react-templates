@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #ff5700;
+  --color-primary-dark: #e64e00;
+  --color-secondary: #423f8d;
+  --color-secondary-dark: #343270;
+  --color-text-dark: #071112;
+  --color-text-gray: #7977a2;
+  --color-text-gray-dark: #5e5e5e;
+  --color-bg-light: #f9fafb;
+  --color-footer-bg: #423f8d;
+
+  --font-heading: 'Josefin Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
