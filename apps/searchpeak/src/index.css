@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-searchpeak-bg: #5bc0de;
+  --color-searchpeak-card: #ffffff;
+  --color-searchpeak-text: #555;
+  --color-searchpeak-heading: #999;
+  --color-searchpeak-border: #e0e0e0;
+  --color-searchpeak-btn: #5cb85c;
+  --color-searchpeak-btn-hover: #4cae4c;
+  --color-searchpeak-results: #5cb85c;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
