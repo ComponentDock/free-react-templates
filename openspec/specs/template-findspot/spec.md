@@ -1,143 +1,100 @@
-# Template: FindSpot (Search Form & Bar)
+# Template: Findspot (Search Form)
 
 ## Purpose
 
-Recreation of ColorLib Search Form V15.
-- **Source slug:** `colorlib-search-15`
-- **Preview URL:** `https://preview.colorlib.com/theme/colorlib-search-15/`
-- **ColorLib page:** `https://colorlib.com/wp/template/colorlib-search-15/`
-- **Description:** Free advanced travel search bar with tabbed interface (Hotels / Car / Flight), date pickers, traveller dropdown, add-on checkboxes, and a full-width search button — over a full-viewport background image.
-- **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+Recreation of ColorLib "Search Form 23" — a minimal single-page search form
+template. The original is a full-viewport landing page centered around a single
+search input with a background image.
 
-> **Note:** The live preview at `preview.colorlib.com` returned 404. Spec and tokens
-> are derived from the ColorLib screenshot and the ColorLib description page.
+- **Source template:** ColorLib Search Form 23
+- **ColorLib slug:** `colorlib-search-23`
+- **ColorLib URL:** https://colorlib.com/wp/template/colorlib-search-23/
+- **Preview URL:** https://preview.colorlib.com/theme/colorlib-search-23/ (404 — unreachable at prep time)
+- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-23.jpg
+- **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 
 ## Design tokens
 
-| Token              | Value                         | Source              |
-|--------------------|-------------------------------|---------------------|
-| card-bg            | `#2C3E50` (slate navy, ~90% opacity) | Screenshot card |
-| card-bg-solid      | `#2C3E50`                    | Screenshot card     |
-| brand-green        | `#5CB85C`                    | Screenshot button   |
-| brand-green-hover  | `#4CA74C`                    | Inferred hover      |
-| input-bg           | `#FFFFFF`                    | Screenshot inputs   |
-| input-border       | `#D5D5D5`                    | Screenshot inputs   |
-| input-radius       | `4px`                        | Screenshot inputs   |
-| button-radius      | `4px`                        | Screenshot button   |
-| label-color        | `#888888`                    | Screenshot labels   |
-| placeholder-color  | `#AAAAAA`                    | Screenshot inputs   |
-| tab-active-color   | `#FFFFFF`                    | Screenshot tabs     |
-| tab-inactive-color | `#8899AA`                    | Screenshot tabs     |
-| checkbox-active    | `#5CB85C`                    | Screenshot checkbox |
-| font-family        | `"Open Sans", sans-serif`    | Typical ColorLib    |
-| text-color         | `#FFFFFF` on card            | Screenshot          |
-| background-image   | Full-viewport hero image     | Screenshot          |
+Extracted from screenshot analysis (preview unreachable):
+
+| Token | Value | Notes |
+|-------|-------|-------|
+| Page background | `#ffffff` (white) | Full-viewport white page |
+| Search bar background | `~#e8f0ea` (light sage green) | Pill-shaped container |
+| Search button background | `~#5cb85c` (green) | Right side of search bar, rounded right end |
+| Search button text | `#ffffff` (white) | "SEARCH" label, uppercase |
+| Search icon | `~#666666` (gray) | Magnifying glass, left of input |
+| Placeholder text | `~#999999` (gray) | "What are you looking for?" |
+| Hint text | `~#aaaaaa` (light gray) | "ex. Game, Music, Video, Photography" below bar |
+| Font family | System sans-serif | Clean, modern feel |
+| Search bar shape | Pill / capsule | Large border-radius (~24px) |
+| Background image | Dog photo (bottom-right) | Full-viewport, overlaid on white; replace with picsum placeholder |
+| Search bar position | Centered, upper-third | Horizontally centered, vertically in upper 30-40% |
 
 ## Gherkin requirements
 
-### Background
-Given the FindSpot search form page is loaded
-When  the page renders
-Then  a full-viewport background image is displayed
-And   a centered dark semi-transparent search card is visible
+### Feature: Findspot search form page
 
-### Tab navigation
+#### Scenario: Page renders with full-viewport layout
+  Given the user loads the Findspot page
+  Then the page fills the full viewport
+  And the background is white
+  And a background image covers the lower-right portion of the page
 
-Scenario: Default tab is Hotels
-  Given  the search card is displayed
-  Then   the "Hotels" tab is active and highlighted in white
-  And    the "Car" tab is visible but inactive (muted)
-  And    the "Flight" tab is visible but inactive (muted)
+#### Scenario: Search bar is centered and visible
+  Given the user loads the Findspot page
+  Then a search bar is horizontally centered
+  And the search bar is positioned in the upper third of the page
+  And the search bar has a pill/capsule shape with rounded corners
+  And the search bar background is light sage green
 
-Scenario: Clicking Car tab activates it
-  Given  the "Hotels" tab is active
-  When   the user clicks the "Car" tab
-  Then   the "Car" tab becomes active (white, bold)
-  And    the "Hotels" tab becomes inactive (muted)
+#### Scenario: Search bar contains icon, input, and button
+  Given the user loads the Findspot page
+  Then a magnifying glass icon appears on the left of the search bar
+  And a text input shows placeholder "What are you looking for?"
+  And a green "SEARCH" button appears on the right of the search bar
 
-Scenario: Clicking Flight tab activates it
-  Given  the "Hotels" tab is active
-  When   the user clicks the "Flight" tab
-  Then   the "Flight" tab becomes active (white, bold)
-  And    the "Hotels" tab becomes inactive (muted)
+#### Scenario: Hint text is displayed below the search bar
+  Given the user loads the Findspot page
+  Then hint text "ex. Game, Music, Video, Photography" appears below the search bar
+  And the hint text is in a light gray color
 
-### Hotels tab form fields
+#### Scenario: User can type in the search input
+  Given the user loads the Findspot page
+  When the user clicks the search input
+  And types "photography"
+  Then the input value shows "photography"
 
-Scenario: Going To input is displayed
-  Given  the "Hotels" tab is active
-  Then   an input field labeled "Going To" is visible
-  And    it has a location-pin icon on the left
-  And    placeholder text "DESTINATION, HOTEL NAME"
+#### Scenario: Search button is clickable
+  Given the user loads the Findspot page
+  When the user clicks the SEARCH button
+  Then the button responds to the click (no navigation, form submission handler)
 
-Scenario: Check-In and Check-Out date fields are displayed side by side
-  Given  the "Hotels" tab is active
-  Then   a "Check-In" date input is visible with a calendar icon
-  And    a "Check-Out" date input is visible with a calendar icon
-  And    both have placeholder "MM/DD/YYYY"
-  And    they are displayed in a two-column row
+#### Scenario: Responsive layout on mobile
+  Given the user loads the Findspot page on a 375px wide viewport
+  Then the search bar is still centered
+  And the search bar spans most of the viewport width
+  And the background image adjusts to the viewport
 
-Scenario: Travellers dropdown is displayed
-  Given  the "Hotels" tab is active
-  Then   a "Travellers" dropdown is visible
-  And    it has a person icon on the left
-  And    default value shows "1 ADULT, 0 CHILDREN, 1 ROOM"
-  And    a dropdown chevron is visible on the right
-
-### Checkboxes
-
-Scenario: Add a flight checkbox
-  Given  the "Hotels" tab is active
-  Then   a checkbox labeled "Add a flight" is visible
-  And    it is checked by default (green)
-
-Scenario: Add a car checkbox
-  Given  the "Hotels" tab is active
-  Then   a checkbox labeled "Add a car" is visible
-  And    it is unchecked by default
-
-Scenario: Toggling a checkbox updates its visual state
-  Given  the "Add a car" checkbox is unchecked
-  When   the user clicks it
-  Then   it becomes checked with a green fill
-
-### Search button
-
-Scenario: Search button is displayed
-  Given  the search form is visible
-  Then   a full-width "Search" button is visible at the bottom of the form
-  And    it has a green background (`#5CB85C`)
-  And    white text centered
-
-Scenario: Clicking Search triggers a search action
-  Given  the search form is filled
-  When   the user clicks the "Search" button
-  Then   a search action is triggered (form submit or callback)
-
-### Responsive layout
-
-Scenario: Card is centered on desktop
-  Given  the viewport width is >= 768px
-  Then   the search card is horizontally centered
-  And    the card width is approximately 500-600px
-
-Scenario: Card adapts on mobile
-  Given  the viewport width is < 768px
-  Then   the search card takes full width with padding
-  And    Check-In / Check-Out stack vertically
+#### Scenario: Accessibility basics
+  Given the user loads the Findspot page
+  Then the search input has an associated label or aria-label
+  And the search button has accessible text
+  And the page has a proper document title
 
 ## Verification checklist
 
-- [ ] Background image fills the full viewport
-- [ ] Dark semi-transparent card is centered
-- [ ] Tab navigation works (Hotels / Car / Flight) with active state styling
-- [ ] "Going To" input has location pin icon and correct placeholder
-- [ ] Check-In and Check-Out are side-by-side with calendar icons
-- [ ] Travellers dropdown shows default "1 ADULT, 0 CHILDREN, 1 ROOM"
-- [ ] "Add a flight" checkbox is checked by default
-- [ ] "Add a car" checkbox is unchecked by default
-- [ ] Checkboxes toggle with green fill on check
-- [ ] Green full-width Search button at bottom
-- [ ] Responsive: stacks on mobile
-- [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
+- [ ] Page renders full-viewport with white background
+- [ ] Background image (dog/photo placeholder) covers lower-right
+- [ ] Search bar is centered, pill-shaped, light green background
+- [ ] Magnifying glass icon on left of search bar
+- [ ] Placeholder text "What are you looking for?" in input
+- [ ] Green "SEARCH" button on right
+- [ ] Hint text "ex. Game, Music, Video, Photography" below bar
+- [ ] Responsive on mobile (375px)
+- [ ] Accessible: label/aria-label on input, button text
 - [ ] 100% test coverage
+- [ ] Footer links to componentdock.com
+- [ ] No ColorLib references in app code
+- [ ] CNAME file contains findspot.free.componentdock.com
+- [ ] Homepage in package.json set correctly
