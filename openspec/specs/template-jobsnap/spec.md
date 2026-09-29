@@ -2,108 +2,120 @@
 
 ## Purpose
 
-Recreation of ColorLib **Search Form Bar 19**
-- Source: https://colorlib.com/wp/template/search-form-bar-19/
-- Preview: https://preview.colorlib.com/theme/search-form-bar-19/ (unreachable — design from screenshot)
-- Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript
+Recreation of ColorLib **Search Form Bar 19** — a simple job search template with a header, full-width hero image, and a white search card overlaying the hero bottom. The search card contains a text input with magnifying glass icon, a categories dropdown, and a blue search button in a horizontal layout.
 
-## Design Tokens (from screenshot analysis)
+- **Source slug:** `search-form-bar-19`
+- **Source:** https://colorlib.com/wp/template/search-form-bar-19/
+- **Preview:** https://preview.colorlib.com/theme/search-form-bar-19/ — returned 404 at prep time
+- **Fallback reference:** screenshot at https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-19.jpg
+- **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
+- **Category:** Search Form Bar / Job Search
 
-| Token | Value |
-|-------|-------|
-| Primary color | `#4A90E2` (blue — header links, nav, search button) |
-| Background | `#FFFFFF` (white — page body, search card) |
-| Hero image | Full-width warm-toned photograph (person with hat, neutral/desert tones) |
-| Font | System/sans-serif default (no custom font visible) |
-| Search button | Solid blue background, white text, rounded corners (border-radius ~4px) |
-| Search card | White background, subtle shadow, rounded corners, horizontal layout |
-| Header | White background, flex row with brand left, nav right |
-| Section background | White/transparent |
+## Design tokens
 
-## Gherkin Requirements
+Extracted from the screenshot analysis (preview CSS unavailable).
 
-### Header
+| Token                       | Value                                                                    |
+| --------------------------- | ------------------------------------------------------------------------ |
+| Font family                 | `'Poppins', sans-serif` (weight 400)                                     |
+| Page background             | `#ffffff` (white)                                                        |
+| Header background           | `#ffffff` (white)                                                        |
+| Brand color                 | `#4a90e2` (medium blue — header text, nav links, search button)          |
+| Hero image                  | Full-width warm-toned photograph (person with hat, neutral/desert tones) |
+| Hero height                 | ~420px                                                                   |
+| Search card background      | `#ffffff` (white)                                                        |
+| Search card shadow          | `shadow-lg` (subtle drop shadow)                                         |
+| Search card border-radius   | ~4px (slightly rounded)                                                  |
+| Search card position        | Overlapping bottom of hero, horizontally centered                        |
+| Search input border         | `1px solid #d1d5db` (light gray)                                         |
+| Search input border-radius  | ~4px                                                                     |
+| Search input placeholder    | `#9ca3af` (muted gray)                                                   |
+| Search button background    | `#4a90e2` (medium blue)                                                  |
+| Search button text          | `#ffffff` (white)                                                        |
+| Search button border-radius | ~4px                                                                     |
+| Categories dropdown border  | `1px solid #d1d5db` (light gray)                                         |
+| Footer background           | `#ffffff` (white)                                                        |
+| Footer border               | `1px solid #e5e7eb` (top border)                                         |
 
-```gherkin
-Feature: Header
+## Requirements
 
-  Scenario: Brand name displayed
-    Given the page loads
-    Then the header shows "Brand" as the logo text in blue
+### Requirement: Header renders with brand text and navigation links
 
-  Scenario: Navigation links
-    Given the page loads
-    Then the header shows links: "Home", "About", "Contact"
-    And all nav links are styled in blue
-```
+The header SHALL display a white background with "Brand" text in blue on the left and navigation links ("Home", "About", "Contact") in blue on the right.
 
-### Hero Section
+#### Scenario: Brand name displayed
 
-```gherkin
-Feature: Hero Section
+- **GIVEN** the page loads
+- **THEN** the header shows "Brand" as the logo text in blue (#4a90e2)
 
-  Scenario: Background image renders
-    Given the page loads
-    Then a full-width hero section displays a background image
-    And the hero fills the viewport width
+#### Scenario: Navigation links displayed
 
-  Scenario: Hero has no text overlay
-    Given the page loads
-    Then the hero section has no heading or paragraph text
-```
+- **GIVEN** the page loads
+- **THEN** the header shows links: "Home", "About", "Contact"
+- **AND** all nav links are styled in blue (#4a90e2)
 
-### Search Form Bar
+### Requirement: Hero section displays full-width background image
 
-```gherkin
-Feature: Search Form Bar
+The hero section SHALL render a full-width background image with no text overlay, filling the viewport width at approximately 420px height.
 
-  Scenario: Search bar positioned over hero
-    Given the page loads
-    Then a white search card overlays the bottom of the hero section
-    And the card is horizontally centered
+#### Scenario: Hero background image renders
 
-  Scenario: Text input present
-    Given the page loads
-    Then the search card contains a text input with placeholder "Search Jobs..."
-    And the input has a magnifying glass icon on the left
+- **GIVEN** the page loads
+- **THEN** a full-width hero section displays a background image
+- **AND** the hero fills the viewport width
+- **AND** the hero has no heading or paragraph text overlay
 
-  Scenario: Categories dropdown present
-    Given the page loads
-    Then the search card contains a "Categories" dropdown select
+### Requirement: Search form bar overlays hero bottom
 
-  Scenario: Search button present
-    Given the page loads
-    Then the search card contains a blue "Search" button
-    And the button has white text and rounded corners
+A white search card SHALL overlay the bottom of the hero section, horizontally centered, containing a text input, categories dropdown, and search button in a horizontal row.
 
-  Scenario: Horizontal layout
-    Given the page loads
-    Then the search form elements are laid out in a horizontal row
-    And the text input takes the majority of the width
-    And the dropdown and button sit to the right
-```
+#### Scenario: Search card positioned over hero
 
-### Footer
+- **GIVEN** the page loads
+- **THEN** a white search card overlays the bottom of the hero section
+- **AND** the card is horizontally centered
+- **AND** the card has a subtle drop shadow
 
-```gherkin
-Feature: Footer
+#### Scenario: Text input present
 
-  Scenario: Footer with Component Dock link
-    Given the page loads
-    Then a footer is present at the bottom
-    And the footer links to "https://www.componentdock.com/"
-```
+- **GIVEN** the page loads
+- **THEN** the search card contains a text input with placeholder "Search Jobs..."
+- **AND** the input has a magnifying glass icon on the left
 
-## Verification Checklist
+#### Scenario: Categories dropdown present
 
-- [ ] Header renders with brand text and nav links
-- [ ] Hero section displays full-width background image
-- [ ] Search form bar overlays the hero bottom
-- [ ] Text input, categories dropdown, and search button are all present
-- [ ] Search form uses horizontal layout matching the original
-- [ ] Brand colors match the original (blue primary, white background)
-- [ ] Footer includes Component Dock link
-- [ ] No ColorLib references in app code (provenance only in spec)
-- [ ] `public/CNAME` contains `jobsnap.free.componentdock.com`
-- [ ] `package.json` homepage is `https://jobsnap.free.componentdock.com`
-- [ ] No asset copying — placeholder images via picsum.photos
+- **GIVEN** the page loads
+- **THEN** the search card contains a "Categories" dropdown select
+
+#### Scenario: Search button present
+
+- **GIVEN** the page loads
+- **THEN** the search card contains a blue "Search" button
+- **AND** the button has white text and rounded corners
+
+#### Scenario: Horizontal layout
+
+- **GIVEN** the page loads
+- **THEN** the search form elements are laid out in a horizontal row
+- **AND** the text input takes the majority of the width
+- **AND** the dropdown and button sit to the right
+
+### Requirement: Footer links to Component Dock
+
+The footer SHALL display "Made with Component Dock" with a link to https://www.componentdock.com/.
+
+#### Scenario: Footer with Component Dock link
+
+- **GIVEN** the page loads
+- **THEN** a footer is present at the bottom
+- **AND** the footer contains a link to "https://www.componentdock.com/"
+- **AND** the link text includes "Component Dock"
+
+### Requirement: No ColorLib references in app code
+
+The app source code SHALL NOT contain any references to "ColorLib" or "colorlib.com" — provenance lives only in the spec, TEMPLATES.md, and the PR.
+
+#### Scenario: No ColorLib strings in app
+
+- **GIVEN** the app source files in `apps/jobsnap/`
+- **THEN** no file contains the string "colorlib" (case-insensitive)
