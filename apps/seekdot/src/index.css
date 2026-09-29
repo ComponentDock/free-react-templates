@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-seekdot-bg: #f5f5f5;
+  --color-seekdot-heading: #333333;
+  --color-seekdot-bar-bg: #ffffff;
+  --color-seekdot-bar-shadow: rgba(0, 0, 0, 0.34);
+  --color-seekdot-icon-circle: #e86c5e;
+  --color-seekdot-icon: #ffffff;
+  --color-seekdot-input-text: #333333;
+  --color-seekdot-placeholder: #999999;
+  --color-seekdot-footer: #888888;
+  --color-seekdot-link: #e86c5e;
+  --color-seekdot-link-hover: #d4553f;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
