@@ -2739,7 +2739,7 @@
 - [x] **Colorlib Search 15** — [colorlib](https://colorlib.com/wp/template/colorlib-search-15/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-15.jpg) · [travenzo](https://travenzo.free.componentdock.com)
 - [x] **Colorlib Search 16** — [colorlib](https://colorlib.com/wp/template/colorlib-search-16/) · [spotly](https://spotly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-16.jpg)
 - [x] **Colorlib Search 17** — [colorlib](https://colorlib.com/wp/template/colorlib-search-17/) · [journeybar](https://journeybar.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-17.jpg)
-- [ ] **Colorlib Search 18** — [colorlib](https://colorlib.com/wp/template/colorlib-search-18/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-18.jpg)
+- [~] **Colorlib Search 18** — [colorlib](https://colorlib.com/wp/template/colorlib-search-18/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-18.jpg)
 - [ ] **Colorlib Search 19** — [colorlib](https://colorlib.com/wp/template/colorlib-search-19/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-19.jpg)
 - [ ] **Colorlib Search 2** — [colorlib](https://colorlib.com/wp/template/colorlib-search-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-2.jpg)
 - [ ] **Colorlib Search 20** — [colorlib](https://colorlib.com/wp/template/colorlib-search-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-20.jpg)
