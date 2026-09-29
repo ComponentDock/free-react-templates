@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-searchmint-bg: #fafafa;
+  --color-searchmint-brand: #01d28e;
+  --color-searchmint-brand-hover: #01b87a;
+  --color-searchmint-input-bg: #ffffff;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}

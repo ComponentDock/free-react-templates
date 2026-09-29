@@ -1,125 +1,161 @@
-# Template: SearchMint (Search Form & Bar)
+# Spec: SearchMint
 
 ## Purpose
 
-Recreation of ColorLib's "Search Form/Bar V09" — a minimal, clean search bar
-snippet. No frameworks, no plugins, plain HTML/CSS in the original.
+Recreation of ColorLib **Search Form/Bar V09** — a minimal, clean search bar snippet with a centered heading, white input, and mint-green search button on a light background.
 
-- **Source:** https://colorlib.com/wp/template/search-form-bar-09/
-- **Preview:** https://preview.colorlib.com/theme/bootstrap/search-form-bar-09/
-- **Stack:** React 19 + Vite + Tailwind CSS 4 + TypeScript
+> Source: https://colorlib.com/wp/template/search-form-bar-09/
+> Preview: https://preview.colorlib.com/theme/bootstrap/search-form-bar-09/
+> Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-09.jpg
 
-## Design tokens (from original CSS)
+## Design Tokens
 
-| Token              | Value                                    | Tailwind mapping           |
-| ------------------ | ---------------------------------------- | -------------------------- |
-| Font family        | Poppins, Arial, sans-serif               | `font-poppins` (Google)    |
-| Body background    | #fafafa                                  | `bg-[#fafafa]`             |
-| Body text color    | gray (#808080)                           | `text-gray`                |
-| Heading color      | #000                                     | `text-black`               |
-| Heading font-size  | 28px                                     | `text-[28px]`              |
-| Heading font-weight| 400 (normal)                             | `font-normal`              |
-| Input background   | #fff                                     | `bg-white`                 |
-| Input height       | 50px                                     | `h-[50px]`                 |
-| Input font-size    | 14px                                     | `text-sm` (14px)           |
-| Input border-radius| 2px (very slight rounding)               | `rounded-[2px]`            |
-| Input border       | none                                     | `border-none`              |
-| Input placeholder  | rgba(0, 0, 0, 0.7)                       | `placeholder-black/70`     |
-| Input box-shadow   | 0px 5px 20px -12px rgba(0,0,0,0.2)       | custom shadow class        |
-| Input padding      | 0 15px 0 20px                            | `py-0 pl-5 pr-4`          |
-| Button background  | #01d28e (mint green)                     | `bg-[#01d28e]`             |
-| Button color       | #fff                                     | `text-white`               |
-| Button width       | 90px                                     | `w-[90px]`                 |
-| Button height      | 50px                                     | `h-[50px]`                 |
-| Button border-radius| 2px                                     | `rounded-[2px]`            |
-| Button box-shadow  | 0px 5px 20px -12px rgba(0,0,0,0.34)      | custom shadow class        |
-| Button border      | none                                     | `border-none`              |
-| Section padding    | 7em 0                                    | `py-28`                    |
-| Transition         | 0.3s (form hover)                        | `transition-all duration-300` |
+| Token                | Value                                 | Notes                    |
+| -------------------- | ------------------------------------- | ------------------------ |
+| Font family          | `"Poppins", sans-serif`               | Google Fonts             |
+| Background           | `#fafafa` (light gray)                | Page background          |
+| Heading color        | `#000` (black)                        | Heading text             |
+| Heading font-size    | `28px`                                | Heading size             |
+| Heading weight       | `400` (normal)                        | Heading weight           |
+| Input background     | `#ffffff` (white)                     | Search input field       |
+| Input height         | `50px`                                | Input field height       |
+| Input font-size      | `14px`                                | Input text size          |
+| Input border-radius  | `2px`                                 | Very slight rounding     |
+| Input border         | none                                  | No visible border        |
+| Input placeholder    | `rgba(0, 0, 0, 0.7)`                  | Placeholder text color   |
+| Input box-shadow     | `0px 5px 20px -12px rgba(0,0,0,0.2)`  | Subtle shadow            |
+| Button background    | `#01d28e` (mint green)                | Search button background |
+| Button color         | `#ffffff` (white)                     | Button text              |
+| Button width         | `90px`                                | Fixed button width       |
+| Button height        | `50px`                                | Button height            |
+| Button border-radius | `2px`                                 | Very slight rounding     |
+| Button box-shadow    | `0px 5px 20px -12px rgba(0,0,0,0.34)` | Button shadow            |
+| Section padding      | `7em 0`                               | Vertical spacing         |
+| Transition           | `0.3s`                                | Form hover transition    |
 
-### Layout
+## Requirements
 
-- Centered container (max-width ~720px on md, 960px on lg)
-- Title centered above the form with margin-bottom: 3rem
-- Search form: flex row, space-between alignment
-  - Input takes `calc(100% - 100px)` width
-  - Button is fixed 90px wide
-  - Both have 50px height
-- Entirely responsive: stacks on small screens
+### Requirement: Centered heading
 
-### Visual design (from screenshot)
+The template SHALL display "Find What You Need" in Poppins font, 28px, font-weight 400, color black, centered on the page.
 
-Minimal white page with a centered heading "Search Form/Bar #09" above a
-single-line search form. The form has a white input field on the left with
-"Search..." placeholder and a mint-green (#01d28e) "Search" button on the
-right. Both elements have a subtle drop shadow. Very slight rounded corners
-(2px). Clean, airy layout with generous vertical padding. No other sections,
-no footer, no navigation — purely a search bar snippet.
+#### Scenario: Heading renders correctly
 
-## Requirements (Gherkin)
+- **WHEN** the template is rendered
+- **THEN** a heading "Find What You Need" is visible and centered
+- **AND** the heading uses Poppins font, 28px, font-weight 400, color black
 
-### Scenario: Page renders with centered heading
-  Given a user visits the SearchMint page
-  Then the heading "Find What You Need" is visible and centered
-  And the heading uses Poppins font, 28px, font-weight 400, color #000
+### Requirement: Search input
 
-### Scenario: Search input renders correctly
-  Given a user visits the SearchMint page
-  Then a search input is visible with placeholder text "Search..."
-  And the input has a white background, 50px height, 2px border-radius
-  And the input has no visible border
-  And the input has a subtle box shadow
+The template SHALL render a search input with placeholder "Search...", white background, 50px height, 2px border-radius, no visible border, and a subtle box shadow.
 
-### Scenario: Search button renders correctly
-  Given a user visits the SearchMint page
-  Then a "Search" button is visible to the right of the input
-  And the button has a mint-green (#01d28e) background
-  And the button text is white
-  And the button is 90px wide and 50px tall
-  And the button has a subtle box shadow
+#### Scenario: Input renders with correct styles
 
-### Scenario: Search form layout
-  Given a user visits the SearchMint page
-  Then the search input and button are aligned in a horizontal row
-  And the input and button are vertically centered within the row
-  And the form is centered on the page with max-width ~640px
+- **WHEN** the template is rendered
+- **THEN** a search input is visible with placeholder text "Search..."
+- **AND** the input has a white background, 50px height, 2px border-radius
+- **AND** the input has no visible border
+- **AND** the input has a subtle box shadow
 
-### Scenario: Page background and spacing
-  Given a user visits the SearchMint page
-  Then the page background is #fafafa
-  And the section has generous vertical padding (~7em top and bottom)
+### Requirement: Search button
 
-### Scenario: Hover transition on form
-  Given a user visits the SearchMint page
-  When the user hovers over the search form area
-  Then a smooth 0.3s transition is applied
+The template SHALL render a "Search" submit button with mint-green (#01d28e) background, white text, 90px wide, 50px tall, 2px border-radius, and a subtle box shadow.
 
-### Scenario: Responsive behavior
-  Given a user visits the SearchMint page on a mobile device (width < 768px)
-  Then the search form remains visible and functional
-  And the input and button maintain their horizontal layout
+#### Scenario: Button renders with correct styles
 
-### Scenario: Accessibility
-  Given a user visits the SearchMint page
-  Then the search input has an associated label or aria-label
-  And the search button is a semantic button element
-  And the heading uses a semantic heading tag (h1 or h2)
+- **WHEN** the template is rendered
+- **THEN** a "Search" button is visible to the right of the input
+- **AND** the button has a mint-green (#01d28e) background
+- **AND** the button text is white
+- **AND** the button is 90px wide and 50px tall
+- **AND** the button has a subtle box shadow
 
-### Scenario: Footer link
-  Given a user visits the SearchMint page
-  Then a footer is present with a link to https://www.componentdock.com/
-  And the link text mentions "Component Dock"
+### Requirement: Form layout
 
-## Verification checklist
+The search input and button SHALL be aligned in a horizontal flex row with space-between, centered on the page with max-width ~640px.
 
-- [ ] Heading rendered with correct Poppins font, 28px, normal weight
-- [ ] Search input: white bg, 50px height, 2px radius, no border, shadow
-- [ ] Search button: #01d28e bg, white text, 90px wide, 50px tall, shadow
-- [ ] Form layout: flex row, input + button side-by-side, centered
-- [ ] Page background: #fafafa
-- [ ] Section padding: ~7em vertical
-- [ ] Responsive: works on mobile widths
-- [ ] Accessibility: input label, semantic button, heading tag
-- [ ] Footer: Component Dock link present
-- [ ] No ColorLib references in app code
-- [ ] 100% test coverage
+#### Scenario: Form layout renders correctly
+
+- **WHEN** the template is rendered
+- **THEN** the search input and button are aligned in a horizontal row
+- **AND** the input and button are vertically centered within the row
+- **AND** the form is centered on the page with max-width ~640px
+
+### Requirement: Page background
+
+The page background SHALL be #fafafa.
+
+#### Scenario: Background color is correct
+
+- **WHEN** the template is rendered
+- **THEN** the page background is #fafafa
+
+### Requirement: Section spacing
+
+The section SHALL have generous vertical padding (~7em top and bottom).
+
+#### Scenario: Section has correct padding
+
+- **WHEN** the template is rendered
+- **THEN** the section has generous vertical padding (~7em top and bottom)
+
+### Requirement: Hover transition
+
+The search form SHALL have a smooth 0.3s transition on hover.
+
+#### Scenario: Transition is applied
+
+- **WHEN** the user hovers over the search form area
+- **THEN** a smooth 0.3s transition is applied
+
+### Requirement: Responsive behavior
+
+The search form SHALL remain visible and functional on mobile devices, maintaining horizontal layout.
+
+#### Scenario: Mobile layout
+
+- **WHEN** the template is rendered on a mobile device (width < 768px)
+- **THEN** the search form remains visible and functional
+- **AND** the input and button maintain their horizontal layout
+
+### Requirement: Footer
+
+The template SHALL include a footer linking to https://www.componentdock.com/ branded as "Component Dock".
+
+#### Scenario: Footer renders with link
+
+- **WHEN** the template is rendered
+- **THEN** a footer is present with a link to https://www.componentdock.com/
+- **AND** the link text mentions "Component Dock"
+
+### Requirement: Accessibility
+
+The search input SHALL have an associated aria-label, the search button SHALL be a semantic button element, and the heading SHALL use a semantic heading tag.
+
+#### Scenario: Accessibility attributes present
+
+- **WHEN** the template is rendered
+- **THEN** the search input has an associated aria-label
+- **AND** the search button is a semantic button element
+- **AND** the heading uses a semantic heading tag
+
+### Requirement: Form submission
+
+The search form SHALL call an onSearch callback with the trimmed query on submit, and SHALL NOT call it when the input is empty or whitespace-only.
+
+#### Scenario: Submit with valid query
+
+- **WHEN** the user types "dashboard" in the search input
+- **AND** the user presses Enter
+- **THEN** the onSearch callback is called with "dashboard"
+
+#### Scenario: Submit with empty query
+
+- **WHEN** the user presses Enter without typing
+- **THEN** the onSearch callback is NOT called
+
+#### Scenario: Submit with whitespace only
+
+- **WHEN** the user types " " in the search input
+- **AND** the user presses Enter
+- **THEN** the onSearch callback is NOT called
