@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Seekwell brand palette — recreated from the ColorLib Search 18 template
+     (dark card on beach sunset, purple CTA #6c63ff, white inputs). */
+  --color-seekwell-card: rgba(20, 20, 40, 0.88);
+  --color-seekwell-purple: #6c63ff;
+  --color-seekwell-purple-hover: #5a52e0;
+  --color-seekwell-text: #ffffff;
+  --color-seekwell-muted: rgba(255, 255, 255, 0.55);
+  --color-seekwell-input-bg: #ffffff;
+  --color-seekwell-input-text: #333333;
+  --color-seekwell-input-placeholder: #999999;
+  --color-seekwell-tab-active: #ffffff;
+  --color-seekwell-tab-inactive: rgba(255, 255, 255, 0.5);
+
+  --font-body: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
