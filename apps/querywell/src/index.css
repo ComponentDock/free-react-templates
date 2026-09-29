@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* QueryWell brand palette — fashion search hero with muted earth tones,
+     white text, and dark (#1A1A1A) search bar. Poppins font. */
+
+  --color-search-bg: #1a1a1a;
+  --color-search-placeholder: #aaaaaa;
+  --color-category-bg: rgba(0, 0, 0, 0.4);
+  --color-category-hover: rgba(0, 0, 0, 0.6);
+
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
