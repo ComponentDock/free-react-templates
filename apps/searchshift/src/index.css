@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-searchshift-blue: #2c6dd5;
+  --color-searchshift-red: #ff4b5a;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
