@@ -1,143 +1,94 @@
-# Template: Searchpad (Search Form)
+# Spec: Searchpad
 
 ## Purpose
 
-Recreation of ColorLib "Search 10" — a standalone advanced search form widget
-with a keyword input bar and a panel of filter dropdowns.
+Recreation of ColorLib "Colorlib Search Form V21" — an expandable search form page with two stacked search inputs. The first input is round (pill-shaped) and expands from a 60px circle to full width on focus with a clear button. The second input is square (rounded corners) and expands from a small width to full width on focus. Both inputs sit on a light blue background and are centered vertically and horizontally.
 
-- **Source:** https://colorlib.com/wp/template/colorlib-search-10/
-- **Live preview (archived):** https://colorlib.com/etc/searchf/colorlib-search-10/
-- **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
+> Source: https://colorlib.com/wp/template/colorlib-search-21/
+> Preview: https://colorlib.com/etc/searchf/colorlib-search-21/
 
-## Design tokens
+## Requirements
 
-Extracted from the original `css/style.css` at the archived preview URL.
+### Requirement: Page layout and background
 
-| Token               | Value                                                              |
-| ------------------- | ------------------------------------------------------------------ |
-| Font family         | `'Lato', sans-serif` (Google Fonts)                                |
-| Page background     | `#d9eff5` (light ice-blue)                                         |
-| Search bar gradient | `linear-gradient(to right, #2c6dd5 0%, #2c6dd5 28%, #ff4b5a 91%, #ff4b5a 100%)` — blue (#2c6dd5) to coral-red (#ff4b5a) |
-| Search bar text     | `#fff` (white), 18px                                               |
-| Search bar height   | 70px                                                               |
-| Search bar radius   | 34px (pill)                                                        |
-| Search bar shadow   | `0px 8px 20px 0px rgba(0, 0, 0, 0.15)`                            |
-| Search icon         | White SVG magnifying glass, 34×34, positioned right inside bar     |
-| Advanced panel bg   | `#fff` (white)                                                     |
-| Advanced panel radius| 10px                                                              |
-| Advanced panel shadow| `0px 8px 20px 0px rgba(0, 0, 0, 0.15)`                           |
-| Advanced panel padding| 40px                                                             |
-| "ADVANCED SEARCH" label| `#555`, 14px, uppercase, block, margin-bottom 26px               |
-| Filter dropdown bg  | `#ccc` (gray)                                                      |
-| Filter dropdown radius| 20px (pill)                                                     |
-| Filter dropdown height| 40px                                                             |
-| Filter dropdown text| `#fff` (white), 14px, Lato                                         |
-| Filter dropdown arrow| Custom SVG chevron-down, `#999`, 18×18                            |
-| Result count text   | `#999`, 14px; number span `#333`                                   |
-| RESET button        | Transparent, `#666` text, no radius, 14px, hover → `#000`          |
-| SEARCH button       | Same gradient as bar, `border-radius: 20px` (pill), 40px height, white text, shadow; hover reverses gradient (pink→blue) |
-| Max form width      | 790px                                                              |
-| Responsive breakpoint| 767px — dropdowns stack vertically, padding adjusts               |
+The page SHALL render a centered, full-viewport container with a light blue (#d8f4fe) background and Poppins font.
 
-## Visual description (from screenshot)
+#### Scenario: Page loads with correct background
 
-A full-viewport centered layout on a light ice-blue (#d9eff5) background.
-At the top: a wide pill-shaped search bar with a blue-to-coral gradient,
-white placeholder text "Type Keywords", and a white magnifying-glass icon
-on the right. Below: a white rounded card labeled "ADVANCED SEARCH" with
-a 3×2 grid of gray pill-shaped dropdown selectors (Accessories, Color, Size,
-Sale, Time, Type). At the bottom of the card: "108 results" on the left,
-a plain "RESET" text button and a gradient pill "SEARCH" button on the right.
-Clean, minimal, single-purpose search widget — no navigation, no footer,
-no other sections.
+- **WHEN** the page loads
+- **THEN** the viewport background color is light blue
+- **AND** the form is centered both vertically and horizontally
 
-## Requirements (Gherkin)
+### Requirement: Two stacked search inputs
 
-### Section: Basic search bar
+The form SHALL contain two search inputs stacked vertically with 80px spacing between them.
 
-```gherkin
-Feature: Basic search bar
-  Scenario: Renders keyword input
-    Given the page loads
-    Then a search input with placeholder "Type Keywords" is visible
-    And the input has a gradient background (blue to coral)
-    And the input is 70px tall with pill shape (border-radius 34px)
+#### Scenario: Two inputs are visible
 
-  Scenario: Search icon displayed
-    Given the page loads
-    Then a magnifying-glass SVG icon is visible inside the search bar on the right
+- **WHEN** the page loads
+- **THEN** two search input fields are visible
+- **AND** the inputs are stacked vertically
 
-  Scenario: Typing keywords
-    Given the search bar is visible
-    When the user types "laptop" into the search input
-    Then the input value is "laptop"
-```
+### Requirement: First input is expandable and round
 
-### Section: Advanced search panel
+The first input SHALL start as a 60×60px circle with a search icon, and expand to full width on focus. A clear button SHALL appear when text is entered.
 
-```gherkin
-Feature: Advanced search panel
-  Scenario: Panel visibility
-    Given the page loads
-    Then an "ADVANCED SEARCH" label is visible
-    And a white card with rounded corners (10px) is displayed below the search bar
+#### Scenario: First input starts collapsed
 
-  Scenario: Filter dropdowns
-    Given the advanced search panel is visible
-    Then 6 filter dropdowns are displayed in a 3-column grid
-    And each dropdown shows a default placeholder (Accessories, Color, Size, Sale, Time, Type)
-    And each dropdown has a gray (#ccc) pill-shaped background with a chevron icon
+- **WHEN** the page loads
+- **THEN** the first input is 60px wide with rounded corners (pill shape)
 
-  Scenario: Selecting a filter option
-    Given the advanced search panel is visible
-    When the user selects "Red" from the Color dropdown
-    Then the Color dropdown displays "Red"
+#### Scenario: First input expands on focus
 
-  Scenario: Reset button clears all filters
-    Given the advanced search panel is visible
-    And the user has selected values in some dropdowns
-    When the user clicks the "RESET" button
-    Then all dropdowns revert to their default placeholder values
+- **WHEN** I click on the first input
+- **THEN** the first input expands to the full form width
 
-  Scenario: Search button submits
-    Given the advanced search panel is visible
-    When the user clicks the "SEARCH" button
-    Then a search action is triggered with the current keyword and filter values
-```
+#### Scenario: Clear button appears on input
 
-### Section: Result count
+- **WHEN** I type "hello" into the first input
+- **THEN** the clear button becomes visible
 
-```gherkin
-Feature: Result count
-  Scenario: Displays result count
-    Given the page loads
-    Then "108 results" text is visible at the bottom-left of the advanced panel
-    And the number "108" is in dark text (#333)
-    And the word "results" is in gray text (#999)
-```
+#### Scenario: Clear button removes text
 
-### Section: Responsive layout
+- **GIVEN** I have typed "hello" into the first input
+- **WHEN** I click the clear button
+- **THEN** the first input becomes empty
 
-```gherkin
-Feature: Responsive layout
-  Scenario: Mobile view stacks dropdowns
-    Given the viewport width is less than 768px
-    Then the filter dropdowns stack vertically (one per row)
-    And the advanced panel padding adjusts to 40px 15px
-    And the search bar padding adjusts for mobile
-```
+#### Scenario: First input collapses on blur
 
-## Verification checklist
+- **GIVEN** the first input is focused
+- **WHEN** I click outside the form
+- **THEN** the first input collapses back to 60px
 
-- [ ] Spec reviewed and approved
-- [ ] All Gherkin scenarios have corresponding test files
-- [ ] 100% line/function/branch/statement coverage
-- [ ] Design tokens match the reference (colors, fonts, radii, shadows)
-- [ ] Section order matches the original (search bar → advanced panel → result count)
-- [ ] Responsive behavior at 767px breakpoint
-- [ ] No ColorLib references in app code (provenance only in spec)
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] `public/CNAME` contains `searchpad.free.componentdock.com`
-- [ ] `homepage` in package.json set to `https://searchpad.free.componentdock.com`
-- [ ] Spec folder: `openspec/specs/template-searchpad/`
-- [ ] Docs folder: `docs/templates/searchpad/`
+### Requirement: Second input is expandable and square
+
+The second input SHALL start as a 60px-wide square with a search icon on the right, and expand to full width on focus.
+
+#### Scenario: Second input starts collapsed
+
+- **WHEN** the page loads
+- **THEN** the second input is 60px wide with minimal border radius
+
+#### Scenario: Second input expands on focus
+
+- **WHEN** I click on the second input
+- **THEN** the second input expands to the full form width
+
+### Requirement: Form submission
+
+The form SHALL prevent default submission on Enter key.
+
+#### Scenario: Submitting the form does not reload the page
+
+- **WHEN** I type "query" into any input and press Enter
+- **THEN** the page does not reload
+
+### Requirement: Accessibility
+
+The form SHALL use semantic HTML with proper labels and ARIA attributes.
+
+#### Scenario: Inputs are accessible
+
+- **WHEN** I inspect the form
+- **THEN** each input has a visible label or aria-label
+- **AND** the clear button has an accessible label
