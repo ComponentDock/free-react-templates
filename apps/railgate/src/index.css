@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-sidebar-bg: #32373d;
+  --color-accent: #2f89fc;
+  --color-accent-hover: #0069d9;
+  --color-heading: #000000;
+  --color-body-text: #6c757d;
+  --color-page-bg: #ffffff;
+  --color-sidebar-text: rgba(255, 255, 255, 0.6);
+  --color-sidebar-text-hover: #ffffff;
+  --color-nav-border: rgba(255, 255, 255, 0.05);
+  --color-overlay: rgba(0, 0, 0, 0.3);
+  --color-badge: #dc3545;
+  --font-family-body: 'Poppins', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-family-body);
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
