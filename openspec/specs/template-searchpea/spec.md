@@ -39,149 +39,119 @@ Extracted from the downloaded template's CSS (`css/style.css`).
 | **Hint text**              | `font-size: 15px`, `color: #ccc`, `padding-left: 26px`                                                  |
 | Hint text content          | "ex. Game, Music, Video, Photography"                                                                   |
 
-## Visual description (from downloaded HTML + CSS)
+## Requirements
 
-The page has a background image (positioned bottom-right, scaling to 100%
-width). A floating pill-shaped search card sits in the upper-center of the
-viewport (pushed down 24vh from top):
+### Requirement: Full viewport background
 
-1. **Left side — Input area**: Light mint green (`#d9f1e3`) background
-   containing a dark magnifying glass icon (36×36) on the left and a text
-   input with placeholder "What are you looking for?" in dark text.
+The page SHALL display a full-viewport photographic background image positioned at the bottom-right, scaling to 100% width with no repeat.
 
-2. **Right side — SEARCH button**: Solid green (`#00ad5f`) background with
-   white uppercase "SEARCH" text. On hover, darkens to `#009451`.
+#### Scenario: Background image covers viewport
 
-3. **Below the pill**: A small hint line in light gray (`#ccc`):
-   "ex. Game, Music, Video, Photography"
+- **WHEN** the page loads
+- **THEN** the page has a full-viewport background image
+- **AND** the background is positioned at the bottom-right
+- **AND** the background scales to 100% width
+- **AND** the background does not repeat
 
-The entire card has `border-radius: 34px` (fully rounded ends) and a soft
-drop shadow. The two sections are separated by the natural flex layout — no
-visible divider line.
+### Requirement: Centered pill-shaped search card
 
-## Requirements (Gherkin)
+The page SHALL display a pill-shaped floating search card centered horizontally, positioned approximately 24vh from the top, with a max-width of approximately 790px, rounded corners (~34px radius), and a soft drop shadow.
 
-### Section: Page layout
+#### Scenario: Card renders with correct shape and position
 
-```gherkin
-Feature: Page layout
-  Scenario: Full viewport background
-    Given the page loads
-    Then the page has a full-viewport background image
-    And the background is positioned at the bottom-right
-    And the background scales to 100% width
+- **WHEN** the page loads
+- **THEN** a pill-shaped search card is displayed
+- **AND** the card is centered horizontally
+- **AND** the card is positioned approximately 24vh from the top
+- **AND** the card has a max-width of approximately 790px
+- **AND** the card has rounded corners (border-radius ~34px)
+- **AND** the card has a subtle drop shadow
 
-  Scenario: Centered form card
-    Given the page loads
-    Then a pill-shaped search card is displayed
-    And the card is centered horizontally
-    And the card is positioned approximately 24vh from the top
-    And the card has a max-width of approximately 790px
-    And the card has rounded corners (border-radius ~34px)
-    And the card has a subtle drop shadow
-```
+### Requirement: Search input area
 
-### Section: Search input area
+The left portion of the card SHALL have a light mint green (#d9f1e3) background containing a dark magnifying glass icon (36×36px desktop, 26×26px mobile) and a text input with placeholder "What are you looking for?" in dark text with no visible border.
 
-```gherkin
-Feature: Search input area
-  Scenario: Default state
-    Given the page loads
-    Then the left portion of the card has a light mint green background (#d9f1e3)
-    And a dark magnifying glass icon is displayed on the left
-    And the icon is approximately 36×36px
-    And a text input is visible with placeholder "What are you looking for?"
-    And the input text color is dark (#000)
-    And the input has no visible border
+#### Scenario: Input area renders correctly
 
-  Scenario: Focus state
-    Given the user clicks on the search input
-    Then the input receives focus
-    And no outline or shadow appears on the input
-```
+- **WHEN** the page loads
+- **THEN** the left portion of the card has a light mint green background (#d9f1e3)
+- **AND** a dark magnifying glass icon is displayed on the left
+- **AND** the icon is approximately 36×36px on desktop
+- **AND** a text input is visible with placeholder "What are you looking for?"
+- **AND** the input text color is dark (#000)
+- **AND** the input has no visible border
 
-### Section: Search button
+### Requirement: Search button
 
-```gherkin
-Feature: Search button
-  Scenario: Default state
-    Given the page loads
-    Then a green SEARCH button is displayed on the right side of the card
-    And the button background is #00ad5f
-    And the button text is white and uppercase
-    And the button text reads "SEARCH"
-    And the button has a minimum width of approximately 216px
+A green SEARCH button SHALL be displayed on the right side of the card with white uppercase text, minimum width 216px (desktop) / 100px (mobile), font-weight 300, and a smooth hover transition to dark green (#009451).
 
-  Scenario: Hover state
-    Given the user hovers over the SEARCH button
-    Then the button background darkens to #009451
-    And the transition is smooth (~0.2s)
+#### Scenario: Button renders with correct styling
 
-  Scenario: Click
-    Given the user clicks the SEARCH button
-    Then the form submits (or triggers search action)
-```
+- **WHEN** the page loads
+- **THEN** a green SEARCH button is displayed on the right side of the card
+- **AND** the button background is #00ad5f
+- **AND** the button text is white and uppercase
+- **AND** the button text reads "SEARCH"
+- **AND** the button has a minimum width of approximately 216px
 
-### Section: Hint text
+#### Scenario: Button hover darkens
 
-```gherkin
-Feature: Hint text
-  Scenario: Display
-    Given the page loads
-    Then a hint text is displayed below the search card
-    And the hint text reads "ex. Game, Music, Video, Photography"
-    And the hint text color is light gray (#ccc)
-    And the hint text is left-aligned with padding
-```
+- **WHEN** the user hovers over the SEARCH button
+- **THEN** the button background darkens to #009451
+- **AND** the transition is smooth (~0.2s)
 
-### Section: Responsive behavior
+### Requirement: Hint text
 
-```gherkin
-Feature: Responsive behavior
-  Scenario: Tablet layout
-    Given the page is viewed on a screen narrower than 993px
-    Then the input field height reduces to approximately 50px
+A hint text SHALL be displayed below the search card reading "ex. Game, Music, Video, Photography" in light gray (#ccc) with left padding.
 
-  Scenario: Mobile layout
-    Given the page is viewed on a screen narrower than 768px
-    Then the search icon scales down to approximately 26×26px
-    And the icon wrapper minimum width reduces to 40px
-    And the SEARCH button minimum width reduces to 100px
-    And the button font size reduces to 13px
-```
+#### Scenario: Hint text renders below card
 
-### Section: Accessibility
+- **WHEN** the page loads
+- **THEN** a hint text is displayed below the search card
+- **AND** the hint text reads "ex. Game, Music, Video, Photography"
+- **AND** the hint text color is light gray (#ccc)
+- **AND** the hint text is left-aligned with padding
 
-```gherkin
-Feature: Accessibility
-  Scenario: Keyboard navigation
-    Given the page loads
-    Then the search input is focusable via keyboard
-    And the SEARCH button is focusable via keyboard
-    And focus-visible styling is applied
+### Requirement: Responsive behavior
 
-  Scenario: Screen reader support
-    Given the page loads
-    Then the input has an appropriate aria-label
-    And the SEARCH button has an accessible label
-```
+On screens narrower than 993px, the input field height SHALL reduce to approximately 50px. On screens narrower than 768px, the search icon scales down to 26×26px, the icon wrapper minimum width reduces to 40px, the button minimum width reduces to 100px, and the button font size reduces to 13px.
 
-## Verification checklist
+#### Scenario: Tablet layout
 
-- [ ] Full-viewport background image (bottom-right positioned)
-- [ ] Pill-shaped floating card with rounded corners (34px radius)
-- [ ] Soft drop shadow on the card
-- [ ] Light mint green (#d9f1e3) input area on the left
-- [ ] Dark magnifying glass icon (36×36) in the input area
-- [ ] Text input with "What are you looking for?" placeholder
-- [ ] Green (#00ad5f) SEARCH button on the right
-- [ ] Button hover darkens to #009451
-- [ ] Hint text "ex. Game, Music, Video, Photography" below the card
-- [ ] Poppins font family (weight 400, button 300)
-- [ ] Responsive: shrinks on tablet (50px height) and mobile (smaller icon/button)
-- [ ] Component structure: `src/components/SearchBar.tsx` (or similar)
-- [ ] App.tsx composes the template section(s)
-- [ ] 100% test coverage (Vitest + Testing Library)
-- [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] `public/CNAME` contains `searchpea.free.componentdock.com`
+- **WHEN** the page is viewed on a screen narrower than 993px
+- **THEN** the input field height reduces to approximately 50px
+
+#### Scenario: Mobile layout
+
+- **WHEN** the page is viewed on a screen narrower than 768px
+- **THEN** the search icon scales down to approximately 26×26px
+- **AND** the icon wrapper minimum width reduces to 40px
+- **AND** the SEARCH button minimum width reduces to 100px
+- **AND** the button font size reduces to 13px
+
+### Requirement: Accessibility
+
+The search input and SEARCH button SHALL be focusable via keyboard with focus-visible styling, and SHALL have appropriate aria-labels for screen readers.
+
+#### Scenario: Keyboard navigation works
+
+- **WHEN** the page loads
+- **THEN** the search input is focusable via keyboard
+- **AND** the SEARCH button is focusable via keyboard
+
+#### Scenario: Screen reader labels present
+
+- **WHEN** the page loads
+- **THEN** the input has an appropriate aria-label
+- **AND** the SEARCH button has an accessible label
+
+### Requirement: Footer with Component Dock link
+
+The page SHALL display a footer with a link to https://www.componentdock.com/ labeled "Component Dock".
+
+#### Scenario: Footer renders Component Dock link
+
+- **WHEN** the page loads
+- **THEN** a footer is visible
+- **AND** the footer contains a link to https://www.componentdock.com/
+- **AND** the link text is "Component Dock"

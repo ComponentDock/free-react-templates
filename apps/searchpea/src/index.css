@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-searchpea-mint: #d9f1e3;
+  --color-searchpea-green: #00ad5f;
+  --color-searchpea-green-dark: #009451;
+  --color-searchpea-hint: #cccccc;
+  --color-searchpea-icon: #222222;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
