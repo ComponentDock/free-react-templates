@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-sidebar-bg: #4361ee;
+  --color-sidebar-text: #ffffff;
+  --color-sidebar-hover: #3a56d4;
+  --color-page-bg: #ffffff;
+  --color-heading-text: #212529;
+  --color-body-text: #6c757d;
+  --color-accent: #4361ee;
+  --color-accent-hover: #3a56d4;
+  --font-family-body: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-family-body);
+  }
+}
