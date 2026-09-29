@@ -2813,7 +2813,7 @@
 ## Signup Forms (20)
 
 - [ ] **Signup Form 01** — [colorlib](https://colorlib.com/wp/template/signup-form-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-01.jpg)
-- [ ] **Signup Form 02** — [colorlib](https://colorlib.com/wp/template/signup-form-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-02.jpg)
+- [~] **Signup Form 02** — [colorlib](https://colorlib.com/wp/template/signup-form-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-02.jpg)
 - [x] **Signup Form 03** — [colorlib](https://colorlib.com/wp/template/signup-form-03/) · [enroll](https://enroll.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-03.jpg)
 - [x] **Signup Form 04** — [colorlib](https://colorlib.com/wp/template/signup-form-04/) · [tangerine](https://free-react-templates-tangerine.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-04.jpg)
 - [ ] **Signup Form 05** — [colorlib](https://colorlib.com/wp/template/signup-form-05/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-05.jpg)
