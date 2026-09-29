@@ -2774,7 +2774,7 @@
 - [x] **Search Form Bar 17** — [colorlib](https://colorlib.com/wp/template/search-form-bar-17/) · [queryvane](https://queryvane.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-17.jpg)
 - [x] **Search Form Bar 18** — [colorlib](https://colorlib.com/wp/template/search-form-bar-18/) · [searchflow](https://searchflow.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-18.jpg)
 - [x] **Search Form Bar 19** — [colorlib](https://colorlib.com/wp/template/search-form-bar-19/) · [jobsnap](https://jobsnap.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-19.jpg)
-- [ ] **Search Form Bar 20** — [colorlib](https://colorlib.com/wp/template/search-form-bar-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-20.jpg)
+- [~] **Search Form Bar 20** — [colorlib](https://colorlib.com/wp/template/search-form-bar-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-20.jpg)
 
 ## Seo (8)
 
