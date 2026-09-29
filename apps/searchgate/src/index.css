@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-searchgate-bg: #fafafa;
+  --color-searchgate-brand: #76a21e;
+  --color-searchgate-brand-hover: #6b9319;
+  --color-searchgate-input-bg: #ffffff;
+  --color-searchgate-text: #666666;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
