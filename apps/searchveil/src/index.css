@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette: white overlay with gray accents. Clean, minimal,
+     fullscreen search overlay with Inter font family. */
+  --color-overlay-bg: #ffffff;
+  --color-hint-text: #aaaaaa;
+  --color-input-text: #333333;
+  --color-input-placeholder: #999999;
+  --color-input-border: #e0e0e0;
+  --color-close-icon: #333333;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
