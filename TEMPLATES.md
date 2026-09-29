@@ -2794,7 +2794,7 @@
 - [x] **Bootstrap Sidebar 03** — [colorlib](https://colorlib.com/wp/template/bootstrap-sidebar-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170625.jpg) · [flank](https://free-react-templates-flank.surge.sh)
 - [x] **Bootstrap Sidebar 04** · [panelbar](https://free-react-templates-panelbar.surge.sh) — [colorlib](https://colorlib.com/wp/template/bootstrap-sidebar-04/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170630.jpg)
 - [x] **Bootstrap Sidebar 05** — [colorlib](https://colorlib.com/wp/template/bootstrap-sidebar-05/) · [sidelane](https://free-react-templates-sidelane.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170635.jpg)
-- [ ] **Bootstrap Sidebar 06** — [colorlib](https://colorlib.com/wp/template/bootstrap-sidebar-06/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170649.jpg)
+- [~] **Bootstrap Sidebar 06** — [colorlib](https://colorlib.com/wp/template/bootstrap-sidebar-06/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170649.jpg)
 - [ ] **Bootstrap Sidebar 07** — [colorlib](https://colorlib.com/wp/template/bootstrap-sidebar-07/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170658.jpg)
 - [ ] **Bootstrap Sidebar 08** — [colorlib](https://colorlib.com/wp/template/bootstrap-sidebar-08/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170710.jpg)
 - [ ] **Bootstrap Sidebar 09** — [colorlib](https://colorlib.com/wp/template/bootstrap-sidebar-09/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170718.jpg)

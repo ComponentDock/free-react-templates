@@ -12,97 +12,91 @@ content area.
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170649.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 
-## Design tokens
+## Requirements
 
-Extracted from screenshot analysis (preview unreachable):
+### Requirement: Sidebar renders with brand identity
 
-| Token              | Value                                      | Notes                                      |
-| ------------------ | ------------------------------------------ | ------------------------------------------ |
-| Brand color        | `#9b59b6` (purple) / `#e84393` (pink)     | Gradient overlay on sidebar background     |
-| Sidebar background | Gradient overlay (purple → pink → magenta) | Applied over a landscape/mountain photo     |
-| Text color (side)  | `#ffffff`                                  | All sidebar text is white                  |
-| Text color (body)  | `#333333`                                  | Dark gray body text in content area        |
-| Content background | `#ffffff`                                  | Clean white content area                   |
-| Font family        | `"Poppins", sans-serif`                    | Sans-serif, rounded, modern                |
-| Sidebar width      | ~300px                                     | Fixed left column                          |
-| Nav item style     | Icon + label, semi-transparent hover       | White icons (Lucide), white text           |
-| Newsletter input   | White background, rounded                  | "Enter Email Address" placeholder          |
-| Border radius      | 0 (sidebar edges are straight)             | No rounding on sidebar or content cards    |
+The sidebar SHALL display "Travel" as the brand name and "Travel Agency" as a subtitle in bold white text on a gradient background.
 
-## Gherkin requirements
+#### Scenario: Brand text renders
 
-### Sidebar component
+- **WHEN** the user loads the page
+- **THEN** the sidebar displays "Travel" as the brand name
+- **AND** the sidebar displays "Travel Agency" as a subtitle below the brand
+- **AND** the sidebar text is white
 
-Scenario: Sidebar renders with brand identity
-  Given the user loads the page
-  Then a fixed left sidebar is visible
-  And the sidebar displays "Travel" as the brand name in bold white text
-  And the sidebar displays "Travel Agency" as a subtitle below the brand
+### Requirement: Sidebar navigation items
 
-Scenario: Sidebar navigation items
-  Given the sidebar is visible
-  Then the sidebar contains navigation links: Home, About, Destination, Blog, Services, Contacts
-  And each nav item has an icon to its left
-  And all nav items are white text on the gradient background
+The sidebar SHALL contain six navigation links with icons: Home, About, Destination, Blog, Services, Contacts.
 
-Scenario: Sidebar newsletter section
-  Given the sidebar is visible
-  Then a "Subscribe for newsletter" heading is displayed below the nav
-  And an email input with placeholder "Enter Email Address" is shown
-  And a submit button is present
+#### Scenario: All nav items render
 
-Scenario: Sidebar footer
-  Given the sidebar is visible
-  Then a copyright notice is displayed at the bottom of the sidebar
-  And a link to Component Dock is present in the footer
+- **WHEN** the user loads the page
+- **THEN** the sidebar contains navigation links: Home, About, Destination, Blog, Services, Contacts
+- **AND** each nav item has an icon to its left
+- **AND** all nav items are white text on the gradient background
 
-Scenario: Sidebar gradient background
-  Given the sidebar is visible
-  Then the sidebar has a purple-to-pink gradient overlay
-  And a landscape/mountain image is visible behind the gradient
+### Requirement: Sidebar newsletter section
 
-### Content area
+The sidebar SHALL include a newsletter subscription form with an email input and submit button.
 
-Scenario: Content area layout
-  Given the user loads the page
-  Then a right content area fills the remaining viewport width
-  And the content area has a white background
+#### Scenario: Newsletter form renders
 
-Scenario: Content heading
-  Given the content area is visible
-  Then a heading "Sidebar #06" (or equivalent) is displayed at the top
-  And the heading uses a dark color and large font size
+- **WHEN** the sidebar is visible
+- **THEN** a "Subscribe for newsletter" heading is displayed below the nav
+- **AND** an email input with placeholder "Enter Email Address" is shown
+- **AND** a submit button is present
 
-Scenario: Content body text
-  Given the content area is visible
-  Then body text paragraphs are displayed below the heading
-  And the body text is dark gray on white background
+### Requirement: Sidebar footer
 
-### Responsive behavior
+The sidebar footer SHALL display a copyright notice and a link to Component Dock.
 
-Scenario: Mobile sidebar toggle
-  Given the viewport is narrower than 768px
-  Then the sidebar collapses or becomes a toggleable overlay
-  And a hamburger menu icon appears to toggle the sidebar
+#### Scenario: Footer renders
 
-### Footer / attribution
+- **WHEN** the sidebar footer is visible
+- **THEN** a copyright notice is displayed at the bottom of the sidebar
+- **AND** a link to Component Dock is present in the footer
 
-Scenario: Component Dock link in sidebar footer
-  Given the sidebar footer is visible
-  Then a "Component Dock" link is present pointing to https://www.componentdock.com/
-  And no reference to ColorLib appears in the app code or UI
+### Requirement: Sidebar gradient background
 
-## Verification checklist
+The sidebar SHALL have a purple-to-pink gradient overlay over a landscape image.
 
-- [ ] Sidebar renders with gradient background and landscape image overlay
-- [ ] Brand name "Travel" and subtitle "Travel Agency" display in white
-- [ ] All 6 nav items (Home, About, Destination, Blog, Services, Contacts) render with icons
-- [ ] Newsletter signup section with email input renders
-- [ ] Copyright and Component Dock link in sidebar footer
-- [ ] Content area is white with heading and body paragraphs
-- [ ] Responsive: sidebar collapses on mobile (<768px)
-- [ ] No ColorLib references in app code (provenance only in spec)
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] Tailwind `@theme` defines brand gradient tokens
-- [ ] Tests: 100% coverage (lines, functions, branches, statements)
-- [ ] Build passes: typecheck + lint + vitest + vite build
+#### Scenario: Gradient renders
+
+- **WHEN** the sidebar is visible
+- **THEN** the sidebar has a purple-to-pink gradient overlay
+- **AND** a landscape image is visible behind the gradient
+
+### Requirement: Content area layout
+
+The content area SHALL fill the remaining viewport width to the right of the sidebar with a white background.
+
+#### Scenario: Content area renders
+
+- **WHEN** the user loads the page
+- **THEN** a right content area fills the remaining viewport width
+- **AND** the content area has a white background
+- **AND** a heading is displayed at the top
+- **AND** body text paragraphs are displayed below the heading
+
+### Requirement: Responsive sidebar toggle
+
+The sidebar SHALL collapse on mobile viewports and be toggleable via a hamburger button.
+
+#### Scenario: Mobile toggle works
+
+- **WHEN** the viewport is narrower than 768px
+- **THEN** the sidebar is hidden by default
+- **AND** a hamburger menu icon appears to toggle the sidebar
+- **AND** clicking the hamburger shows the sidebar
+- **AND** clicking the overlay closes the sidebar
+
+### Requirement: Component Dock attribution
+
+The footer SHALL link to https://www.componentdock.com/ branded as "Component Dock". No ColorLib references SHALL appear in app code.
+
+#### Scenario: Footer link renders
+
+- **WHEN** the sidebar footer is visible
+- **THEN** a "Component Dock" link points to https://www.componentdock.com/
+- **AND** no reference to ColorLib appears in the app code or UI
