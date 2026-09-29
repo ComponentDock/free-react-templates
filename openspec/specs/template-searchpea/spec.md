@@ -17,27 +17,27 @@ box shadow, positioned in the upper portion of a full-viewport background.
 
 Extracted from the downloaded template's CSS (`css/style.css`).
 
-| Token                      | Value                                                              |
-| -------------------------- | ------------------------------------------------------------------ |
-| Font family                | `'Poppins', sans-serif` (weight 400, button weight 300)           |
-| Page background            | Background image positioned `bottom right`, `background-size: 100%`, `background-repeat: no-repeat` |
-| Layout                     | Full viewport, flex centered, `padding: 15px`                      |
-| Form max-width             | `790px`                                                            |
-| Form padding-top           | `24vh` (pushed down from top)                                      |
+| Token                      | Value                                                                                                   |
+| -------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Font family                | `'Poppins', sans-serif` (weight 400, button weight 300)                                                 |
+| Page background            | Background image positioned `bottom right`, `background-size: 100%`, `background-repeat: no-repeat`     |
+| Layout                     | Full viewport, flex centered, `padding: 15px`                                                           |
+| Form max-width             | `790px`                                                                                                 |
+| Form padding-top           | `24vh` (pushed down from top)                                                                           |
 | **Inner form (pill card)** | `border-radius: 34px`, `box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.15)`, `overflow: hidden`, flex layout |
-| Input field height         | `68px` (desktop), `50px` (≤992px)                                 |
-| **Input area (left side)** | `background: #d9f1e3` (light mint green), `flex-grow: 1`, flex centered |
-| Input text color           | `#000` (black)                                                     |
-| Placeholder color          | `#222` (dark gray)                                                 |
-| Input font size            | `16px`                                                             |
-| **Search icon**            | SVG magnifying glass, `fill: #222`, `36×36px` (desktop), `26×26px` (mobile) |
-| Icon wrapper min-width     | `80px` (desktop), `40px` (mobile ≤767px)                          |
-| **Search button (right)**  | `min-width: 216px` (desktop), `100px` (mobile), `background: #00ad5f` (green) |
-| Button text                | `#fff` (white), `16px` (desktop), `13px` (mobile), `font-weight: 300`, uppercase |
-| Button hover               | `background: #009451` (darker green)                               |
-| Button transition          | `all .2s ease-out, color .2s ease-out`                             |
-| **Hint text**              | `font-size: 15px`, `color: #ccc`, `padding-left: 26px`            |
-| Hint text content          | "ex. Game, Music, Video, Photography"                              |
+| Input field height         | `68px` (desktop), `50px` (≤992px)                                                                       |
+| **Input area (left side)** | `background: #d9f1e3` (light mint green), `flex-grow: 1`, flex centered                                 |
+| Input text color           | `#000` (black)                                                                                          |
+| Placeholder color          | `#222` (dark gray)                                                                                      |
+| Input font size            | `16px`                                                                                                  |
+| **Search icon**            | SVG magnifying glass, `fill: #222`, `36×36px` (desktop), `26×26px` (mobile)                             |
+| Icon wrapper min-width     | `80px` (desktop), `40px` (mobile ≤767px)                                                                |
+| **Search button (right)**  | `min-width: 216px` (desktop), `100px` (mobile), `background: #00ad5f` (green)                           |
+| Button text                | `#fff` (white), `16px` (desktop), `13px` (mobile), `font-weight: 300`, uppercase                        |
+| Button hover               | `background: #009451` (darker green)                                                                    |
+| Button transition          | `all .2s ease-out, color .2s ease-out`                                                                  |
+| **Hint text**              | `font-size: 15px`, `color: #ccc`, `padding-left: 26px`                                                  |
+| Hint text content          | "ex. Game, Music, Video, Photography"                                                                   |
 
 ## Visual description (from downloaded HTML + CSS)
 
