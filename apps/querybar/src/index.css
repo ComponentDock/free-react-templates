@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* QueryBar brand palette — recreated from the ColorLib Search Form V19 template
+     (purple-to-blue gradient #c949fe→#47a9ff, green CTA #00ad5f, Poppins font). */
+  --color-querybar-gradient-start: #c949fe;
+  --color-querybar-gradient-end: #47a9ff;
+  --color-querybar-green: #00ad5f;
+  --color-querybar-green-hover: #00994b;
+  --color-querybar-text: #666666;
+  --color-querybar-label: #ffffff;
+  --color-querybar-placeholder: #cccccc;
+  --color-querybar-input-bg: #ffffff;
+
+  --font-body: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
