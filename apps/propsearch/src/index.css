@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-propsearch-bg: #fafafa;
+  --color-propsearch-brand: #ff62a5;
+  --color-propsearch-brand-hover: #000000;
+  --color-propsearch-form-bg: #ffffff;
+  --color-propsearch-text: #666666;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
