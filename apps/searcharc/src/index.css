@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* SearchArc brand palette — from the ColorLib "Colorlib Search 3"
+     preview: a lavender/purple background with a white card form,
+     green search button, and Poppins font. */
+
+  /* Lavender background (#a598ee) */
+  --color-lavender: #a598ee;
+
+  /* Search button green (#63c76a) */
+  --color-btn-green: #63c76a;
+  --color-btn-green-hover: #50c058;
+
+  /* Text colors */
+  --color-input-text: #555555;
+  --color-input-placeholder: #888888;
+
+  /* Dropdown arrow */
+  --color-arrow: #e5e5e5;
+
+  /* Font */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
