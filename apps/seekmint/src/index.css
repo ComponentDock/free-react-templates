@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-seekmint-bg: #667eea;
+  --color-seekmint-bg-end: #a855f7;
+  --color-seekmint-heading: #ffffff;
+  --color-seekmint-bar-bg: #ffffff;
+  --color-seekmint-btn-bg: #9333ea;
+  --color-seekmint-btn-hover: #7e22ce;
+  --color-seekmint-btn-icon: #ffffff;
+  --color-seekmint-input-text: #333333;
+  --color-seekmint-placeholder: #999999;
+  --color-seekmint-footer: rgba(255, 255, 255, 0.75);
+  --color-seekmint-link: #ffffff;
+  --color-seekmint-link-hover: #e9d5ff;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
