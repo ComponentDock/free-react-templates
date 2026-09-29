@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-spotly-amber: #e8a838;
+  --color-spotly-amber-hover: #d49530;
+  --color-spotly-dark: #1a1a2e;
+  --color-spotly-muted: #6b7280;
+  --color-spotly-bg: #faf7f2;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
