@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-sidebar-blue: #00b4d8;
+  --color-sidebar-deep: #0077b6;
+  --color-sidebar-dark: #023e8a;
+  --color-toggle-blue: #007bff;
+  --color-content-heading: #212529;
+  --color-content-text: #6c757d;
+  --font-inter: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
