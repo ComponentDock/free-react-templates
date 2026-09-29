@@ -17,24 +17,24 @@ white text, and a semi-transparent white bottom border that brightens on focus.
 
 Extracted from the downloaded template's CSS (`css/style.css`).
 
-| Token                      | Value                                                              |
-| -------------------------- | ------------------------------------------------------------------ |
-| Font family                | `'Montserrat', sans-serif` (weight 500)                           |
-| Page background            | Full-viewport background image (`search-bg.jpg`), `background-size: cover`, `background-position: center` |
-| Layout                     | Full viewport, flexbox centered, `padding: 15px`                   |
-| Form max-width             | `390px`                                                            |
-| Input container height     | `80px` (desktop), `50px` (mobile ≤767px)                          |
-| Input background           | `transparent`                                                      |
-| Input border               | `border-bottom: 2px solid rgba(255, 255, 255, 0.5)` (semi-transparent white) |
-| Input border on focus/hover| `border-bottom-color: #fff` (solid white)                         |
-| Input text color           | `#fff` (white)                                                     |
-| Input font size            | `18px` (desktop), `16px` (mobile)                                 |
-| Input padding              | `10px 32px 10px 70px` (desktop), `10px 16px 10px 45px` (mobile)  |
-| Placeholder color          | `#fff` (white)                                                     |
-| Search icon button         | Absolute left, `width: 70px`, transparent bg, `height: 100%`      |
-| Search icon SVG            | `fill: #fff`, `50×50px` (desktop), `36×36px` (mobile)            |
-| Input focus state          | `box-shadow: none`, `outline: 0`, bottom border turns solid white  |
-| Transition                 | `all .2s ease-out, color .2s ease-out`                            |
+| Token                       | Value                                                                                                     |
+| --------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Font family                 | `'Montserrat', sans-serif` (weight 500)                                                                   |
+| Page background             | Full-viewport background image (`search-bg.jpg`), `background-size: cover`, `background-position: center` |
+| Layout                      | Full viewport, flexbox centered, `padding: 15px`                                                          |
+| Form max-width              | `390px`                                                                                                   |
+| Input container height      | `80px` (desktop), `50px` (mobile ≤767px)                                                                  |
+| Input background            | `transparent`                                                                                             |
+| Input border                | `border-bottom: 2px solid rgba(255, 255, 255, 0.5)` (semi-transparent white)                              |
+| Input border on focus/hover | `border-bottom-color: #fff` (solid white)                                                                 |
+| Input text color            | `#fff` (white)                                                                                            |
+| Input font size             | `18px` (desktop), `16px` (mobile)                                                                         |
+| Input padding               | `10px 32px 10px 70px` (desktop), `10px 16px 10px 45px` (mobile)                                           |
+| Placeholder color           | `#fff` (white)                                                                                            |
+| Search icon button          | Absolute left, `width: 70px`, transparent bg, `height: 100%`                                              |
+| Search icon SVG             | `fill: #fff`, `50×50px` (desktop), `36×36px` (mobile)                                                     |
+| Input focus state           | `box-shadow: none`, `outline: 0`, bottom border turns solid white                                         |
+| Transition                  | `all .2s ease-out, color .2s ease-out`                                                                    |
 
 ## Visual description (from screenshot + downloaded HTML)
 
