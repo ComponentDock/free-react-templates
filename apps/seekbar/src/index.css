@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-seekbar-bg: #2c3e50;
+  --color-seekbar-btn: #5b7fff;
+  --color-seekbar-btn-hover: #4a6de6;
+  --color-seekbar-input-bg: #ffffff;
+  --color-seekbar-placeholder: #999999;
+  --color-seekbar-text: #333333;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
