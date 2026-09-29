@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-sidebar-bg: #1b2a4a;
+  --color-sidebar-text: #ffffff;
+  --color-sidebar-hover: #243656;
+  --color-sidebar-active: #2c3e6b;
+  --color-page-bg: #ffffff;
+  --color-heading-text: #2d3748;
+  --color-body-text: #4a5568;
+  --color-accent: #3b82f6;
+  --color-accent-hover: #2563eb;
+  --color-card-bg: #f7fafc;
+  --color-card-border: #e2e8f0;
+  --font-family-body: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-family-body);
+  }
+}
