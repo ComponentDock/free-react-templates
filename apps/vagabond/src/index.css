@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-sidebar-gradient-start: #9b59b6;
+  --color-sidebar-gradient-mid: #c471ed;
+  --color-sidebar-gradient-end: #e84393;
+  --color-sidebar-text: #ffffff;
+  --color-sidebar-hover: rgba(255, 255, 255, 0.15);
+  --color-body-text: #333333;
+  --color-heading-text: #222222;
+  --color-page-bg: #ffffff;
+  --font-family-body: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --width-sidebar: 300px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-family-body);
+  }
+}
