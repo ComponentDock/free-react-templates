@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-seekgate-bg: #dce9ef;
+  --color-seekgate-card: #ffffff;
+  --color-seekgate-accent: #5fb8c2;
+  --color-seekgate-accent-hover: #4a9faa;
+  --color-seekgate-text: #333333;
+  --color-seekgate-muted: #888888;
+  --color-seekgate-border: #cccccc;
+  --color-seekgate-divider: #5fb8c2;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
