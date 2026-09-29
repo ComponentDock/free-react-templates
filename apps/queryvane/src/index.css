@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand blue — from the original stylesheet: search button background,
+     nav link color, brand text color. */
+  --color-brand: #2563eb;
+
+  /* Search overlay background from the original design. */
+  --color-overlay: #f3f4f6;
+
+  /* Original font: "Inter" (weights 400/500/600/700) via Google Fonts
+     (loaded in index.html). */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
