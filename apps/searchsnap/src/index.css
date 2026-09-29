@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette: light blue/periwinkle border with medium blue accent button.
+     Extracted from screenshot — no preview CSS available. */
+  --color-brand: #4a8cf7;
+  --color-brand-light: #d0e3f7;
+  --color-bg-overlay: #f8f9fa;
+
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
