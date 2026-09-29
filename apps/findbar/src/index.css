@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-findbar-bg: #fafafa;
+  --color-findbar-heading: #000000;
+  --color-findbar-text: #666666;
+  --color-findbar-bar-bg: #ffffff;
+  --color-findbar-bar-shadow: rgba(0, 0, 0, 0.34);
+  --color-findbar-icon: #999999;
+  --color-findbar-placeholder: rgba(0, 0, 0, 0.5);
+  --color-findbar-footer: #888888;
+  --color-findbar-link: #3b82f6;
+  --color-findbar-link-hover: #2563eb;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
