@@ -2763,7 +2763,7 @@
 - [x] **Search Form Bar 06** — [colorlib](https://colorlib.com/wp/template/search-form-bar-06/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-06.jpg) · [searchgate](https://free-react-templates-searchgate.surge.sh)
 - [x] **Search Form Bar 07** — [colorlib](https://colorlib.com/wp/template/search-form-bar-07/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-07.jpg) · [propsearch](https://free-react-templates-propsearch.surge.sh)
 - [x] **Search Form Bar 08** — [colorlib](https://colorlib.com/wp/template/search-form-bar-08/) · [jobpulse](https://free-react-templates-jobpulse.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-08.jpg)
-- [ ] **Search Form Bar 09** — [colorlib](https://colorlib.com/wp/template/search-form-bar-09/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-09.jpg)
+- [~] **Search Form Bar 09** — [colorlib](https://colorlib.com/wp/template/search-form-bar-09/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-09.jpg)
 - [ ] **Search Form Bar 10** — [colorlib](https://colorlib.com/wp/template/search-form-bar-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-10.jpg)
 - [ ] **Search Form Bar 11** — [colorlib](https://colorlib.com/wp/template/search-form-bar-11/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-11.jpg)
 - [ ] **Search Form Bar 12** — [colorlib](https://colorlib.com/wp/template/search-form-bar-12/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-12.jpg)
