@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-findspot-bg: #1a1a2e;
+  --color-findspot-heading: #ffffff;
+  --color-findspot-subtitle: #a0a0b0;
+  --color-findspot-bar-bg: #16213e;
+  --color-findspot-bar-border: #0f3460;
+  --color-findspot-icon: #e94560;
+  --color-findspot-placeholder: rgba(255, 255, 255, 0.4);
+  --color-findspot-btn: #e94560;
+  --color-findspot-btn-hover: #d63851;
+  --color-findspot-footer: #6b7280;
+  --color-findspot-link: #e94560;
+  --color-findspot-link-hover: #ff6b81;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
