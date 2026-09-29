@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-searchglow-bg: #1a1a2e;
+  --color-searchglow-border: rgba(255, 255, 255, 0.5);
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
