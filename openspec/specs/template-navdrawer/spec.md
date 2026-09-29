@@ -1,178 +1,126 @@
-# Template: NavDrawer (Collapsible Sidebar Navigation)
+# Template: Navdrawer (Sidebar Navigation)
 
 ## Purpose
 
-NavDrawer is a single-page sidebar navigation template in the
-free-react-templates monorepo. It is an original React recreation of the
-ColorLib "Bootstrap Sidebar 08" free template (source:
-https://colorlib.com/wp/template/bootstrap-sidebar-08/), built under a
-DIFFERENT name (**NavDrawer**), with the monorepo stack: Vite + React 19 +
-Tailwind CSS 4 + TypeScript.
+Recreation of **ColorLib Bootstrap Sidebar 09** (`bootstrap-sidebar-09`).
+Preview: https://preview.colorlib.com/theme/bootstrap-sidebar-09/ (currently 404 — screenshot used as reference).
+Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170718.jpg
 
-The original is a two-panel layout: a main content area (white background)
-on the left with heading and body text, plus a collapsible sidebar on the
-right (~270px wide) containing hierarchical category navigation with
-dropdown submenus, a tag cloud, and a newsletter subscription form. The
-sidebar uses a clean white design with black text and pink (#fc7fb2)
-accent color.
+Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript.
+This is a **sidebar navigation** template: a fixed left sidebar with profile header and nav links, paired with a main content area.
 
-**WHAT MAKES NAVDRAWER DISTINCT (signature behaviors):**
+## Design tokens
 
-1. **Right-side collapsible sidebar.** Unlike most sidebar templates that
-   place navigation on the left, Sidebar 08 places the sidebar on the
-   RIGHT side of the viewport. The sidebar is 270px wide at desktop and
-   collapses off-screen on mobile (<768px). The main content area fills
-   the remaining width.
-2. **Hierarchical dropdown category navigation.** The sidebar contains
-   top-level categories (Mens Shoes, Accessories, Clothes) that expand
-   into sub-item lists (Casual, Football, Jordan, etc.) via a collapsible
-   accordion pattern. Each category has a dropdown toggle chevron.
-3. **Tag cloud widget.** A section of uppercase pill-shaped tags (e.g.
-   "dish", "menu", "food", "sweet") with 1px gray borders and 4px border
-   radius. Tags highlight pink on hover.
-4. **Newsletter subscription form in sidebar.** An email input with
-   "Enter Email Address" placeholder at the bottom of the sidebar, styled
-   with a transparent border and 44px height.
-5. **Minimal white aesthetic.** The entire template is white-background
-   with black text, pink accent links, and subtle gray borders — no hero
-   images, no parallax, no heavy styling. Purely structural layout.
+Extracted from screenshot analysis (preview unreachable):
 
-## Naming
-
-The ColorLib source name "Bootstrap Sidebar 08" is FORBIDDEN as the app
-name (and "bootstrap" must not be reused). **NavDrawer** is the new,
-original name — single lowercase word, kebab-case `navdrawer`, no
-collision with `apps/`, `openspec/specs/`, `docs/templates/`, or any
-TEMPLATES.md name (verified: zero hits for `navdrawer` in ls apps/ or
-ls openspec/specs/). Source slug: `bootstrap-sidebar-08`. Preview URL:
-https://colorlib.com/etc/bootstrap-sidebar/sidebar-08/ (live, verified
-2026-09-30). Screenshot URL:
-https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170710.jpg
-
-## Design reference (replication findings)
-
-- **Original:** ColorLib "Bootstrap Sidebar 08" (page title: "Sidebar
-  #08"). Listed in TEMPLATES.md under **Bootstrap Sidebars** (section
-  header line ~2790; the row at line 2799 —
-  `wp/template/bootstrap-sidebar-08/`). Sibling templates in the family:
-  Bootstrap Sidebar 01–10 + Colorlib Sidebar V01–V10.
-- **Live preview — REACHABLE (verified 2026-09-30):** The live preview at
-  https://colorlib.com/etc/bootstrap-sidebar/sidebar-08/ returns the full
-  template HTML. The CSS was extracted from
-  `https://colorlib.com/etc/bootstrap-sidebar/sidebar-08/css/style.css`
-  (13,264 bytes). Full design tokens extracted below.
-- **Screenshot analysis (viewed 2026-09-30):** The preview image
-  (bootstrap-sidebar-170710.jpg) is an AVIF image served with a .jpg
-  extension — confirms the two-panel layout with right-side sidebar.
-
-### Design tokens (extracted from live CSS)
-
-| Token | Value | Usage |
+| Token | Value | Notes |
 |---|---|---|
-| Font family | `"Poppins", Arial, sans-serif` | Body and headings (weights 400, 500, 700) |
-| Body font size | `14px` | Base text |
-| Body line-height | `1.8` | Base text |
-| Body text color | `gray` | Paragraph text |
-| Heading color | `#000` | h2, h5 headings |
-| Link/accent color | `#fc7fb2` | Links, active states, hover highlights |
-| Background | `#fff` | Page background |
-| Sidebar width | `270px` (min/max) | Right sidebar |
-| Sidebar border-left | `1px solid rgba(0,0,0,0.05)` | Subtle separator |
-| Sidebar item border | `1px solid rgba(0,0,0,0.05)` | Between nav links |
-| Sidebar active color | `#fc7fb2` | Active menu item text |
-| Tag cloud text | `#000` uppercase | Tag pill text, 11px font |
-| Tag cloud border | `1px solid #ccc` | Pill outline, 4px radius |
-| Tag cloud hover | `background: #fc7fb2; color: #fff; border-color: #fc7fb2` | Pink fill on hover |
-| Form input height | `44px` | Newsletter input |
-| Form input border | `transparent` default, `#000` on focus | Clean look |
-| Form input border-radius | `4px` | Slight rounding |
-| Dropdown chevron | Absolute positioned, `::after` pseudo-element | Right-aligned toggle arrow |
-| Transition | `0.3s all ease` | Links and sidebar toggle |
-| Sub-item indentation | `margin-left: 10px` | Nested list items |
-| Sub-item font size | `13px` | Smaller than parent (14px) |
-| Mobile breakpoint | `767.98px` | Sidebar collapses to 180px max-width |
+| `sidebar-bg` | `#343a40` | Dark charcoal/slate — Bootstrap secondary |
+| `sidebar-text` | `#ffffff` | White text on dark sidebar |
+| `sidebar-divider` | `rgba(255,255,255,0.1)` | Subtle horizontal lines between nav items |
+| `sidebar-hover-bg` | `rgba(255,255,255,0.08)` | Hover highlight on nav items |
+| `accent-blue` | `#007bff` | Toggle button accent — Bootstrap primary |
+| `content-bg` | `#ffffff` | White main content area |
+| `content-heading` | `#212529` | Dark heading text |
+| `content-text` | `#6c757d` | Muted body text |
+| `font-family` | `system-ui, -apple-system, "Segoe UI", sans-serif` | Clean sans-serif (Bootstrap default) |
+| `sidebar-width` | `250px` | Fixed left sidebar width |
+| `profile-img-size` | `~80px` | Circular profile avatar |
+| `sidebar-radius` | `0` | No rounded corners on sidebar |
+| `button-radius` | `0.25rem` | Small radius on toggle button |
 
-## Gherkin requirements
+### Color palette
+
+- Primary dark: `#343a40` (sidebar background)
+- Primary accent: `#007bff` (toggle button, active states)
+- White: `#ffffff` (sidebar text, content background)
+- Muted: `#6c757d` (body text, secondary info)
+- Heading: `#212529` (main content headings)
+
+## Section structure
+
+1. **Sidebar** (fixed left, full height)
+   - Profile header: circular avatar + name + mountain background image
+   - Navigation list: icon + label per item
+   - Items: Home, Download, Gift Code, Top Review, Settings, Support, Sign Out
+   - Subtle dividers between nav groups
+2. **Main content area** (scrollable, fills remaining width)
+   - Toggle button (blue chevron, top-left) to collapse/expand sidebar
+   - Page heading: "Sidebar #09"
+   - Body text: lorem ipsum paragraphs
+3. **No footer** — this is a sidebar component demo, not a full page
+
+## Gherkin scenarios
 
 ```gherkin
-Feature: NavDrawer Template
-  As a visitor to the NavDrawer template page
-  I want to see a two-panel layout with a right-side sidebar
-  So that I can browse categories and subscribe to a newsletter
+Feature: Navdrawer sidebar navigation
 
   Background:
-    Given the page is loaded at "/" 
+    Given the user loads the Navdrawer template
+    Then the sidebar is visible on the left side
 
-  Scenario: Page layout structure
-    Then I should see a main content area on the left
-    And I should see a sidebar on the right
-    And the sidebar should be 270px wide on desktop viewports
+  Scenario: Sidebar displays profile header
+    Given the sidebar is visible
+    Then a circular profile avatar is displayed at the top
+    And a profile name "Catríona Henderson" is displayed below the avatar
+    And the profile area has a mountain background image
+
+  Scenario: Sidebar navigation items
+    Given the sidebar is visible
+    Then the following navigation items are displayed in order:
+      | icon       | label       |
+      | home       | Home        |
+      | download   | Download    |
+      | gift       | Gift Code   |
+      | star       | Top Review  |
+      | settings   | Settings    |
+      | life-buoy  | Support     |
+      | log-out    | Sign Out    |
+    And each item shows an icon on the left and a text label on the right
+    And items are separated by subtle divider lines
+
+  Scenario: Sidebar hover interaction
+    Given the sidebar is visible
+    When the user hovers over a navigation item
+    Then the item background changes to a subtle highlight
+    And the text remains white
+
+  Scenario: Toggle button visibility
+    Given the sidebar is visible
+    Then a blue toggle button is displayed in the top-left of the content area
+    And the button shows a right-pointing chevron icon
 
   Scenario: Main content area
-    Then I should see a heading "Sidebar #08" (or replacement heading)
-    And I should see two paragraphs of body text below the heading
-    And the content area should have white background with generous padding
+    Given the sidebar is visible
+    Then the main content area fills the remaining width to the right of the sidebar
+    And the content area has a white background
+    And a heading "Sidebar #09" is displayed
+    And body text paragraphs are displayed below the heading
 
-  Scenario: Sidebar category navigation
-    Then I should see a "Categories" heading in the sidebar
-    And I should see top-level category links: "Mens Shoes" (x2), "Accessories", "Clothes"
-    And each category should have a dropdown toggle chevron
-    When I click a category toggle
-    Then its sub-items should expand/collapse with animation
-    And sub-items should include sport/lifestyle links (Casual, Football, Jordan, etc.)
+  Scenario: Sidebar collapse toggle
+    Given the sidebar is visible
+    When the user clicks the toggle button
+    Then the sidebar collapses or expands
+    And the main content area adjusts its width accordingly
 
-  Scenario: Sidebar sub-items are indented
-    Then sub-items should be indented ~10px from their parent
-    And sub-item font size should be 13px (vs 14px parent)
-    And each sub-item link should have a chevron-right icon prefix
-
-  Scenario: Tag cloud widget
-    Then I should see a "Tag Cloud" heading in the sidebar
-    And I should see tag pills: "dish", "menu", "food", "sweet", "tasty", "delicious", "desserts", "drinks"
-    And each tag should have uppercase text, 1px gray border, 4px border-radius
-    When I hover a tag
-    Then it should fill with pink (#fc7fb2) background and white text
-
-  Scenario: Newsletter subscription form
-    Then I should see a "Newsletter" heading in the sidebar
-    And I should see an email input with placeholder "Enter Email Address"
-    And the input should be 44px tall with 4px border-radius
-    And the input border should be transparent by default
-    When I focus the input
-    Then the border should turn black (#000)
-
-  Scenario: Color scheme consistency
-    Then all links should be pink (#fc7fb2)
-    And all headings should be black (#000)
-    And body text should be gray
-    And the page background should be white (#fff)
-    And sidebar text should be black
-
-  Scenario: Responsive behavior
-    When the viewport width is less than 768px
-    Then the sidebar should collapse to max-width 180px
-    And the sidebar should have no left border
-
-  Scenario: Accessibility
-    Then all navigation links should be keyboard-focusable
-    And the sidebar should have appropriate ARIA roles
-    And form inputs should have associated labels or placeholders
-    And color contrast should meet WCAG AA standards
+  Scenario: Responsive layout
+    Given the user is on a mobile viewport
+    Then the sidebar may be hidden by default
+    And the toggle button is accessible to reveal the sidebar
 ```
 
 ## Verification checklist
 
-- [ ] Layout: two-panel, right-side sidebar at 270px on desktop
-- [ ] Sidebar collapses on mobile (<768px) to 180px
-- [ ] Category dropdowns expand/collapse with animation
-- [ ] Tag cloud with 8 uppercase pill-style tags
-- [ ] Tag hover fills pink (#fc7fb2)
-- [ ] Newsletter form with 44px input, transparent border, focus state
-- [ ] Poppins font loaded (weights 400, 500, 700)
-- [ ] All links are pink (#fc7fb2), headings black, body gray
-- [ ] Footer links to https://www.componentdock.com/ ("Component Dock")
-- [ ] No references to "ColorLib" in app code (only in spec/TEMPLATES.md)
-- [ ] public/CNAME: navdrawer.free.componentdock.com
-- [ ] package.json homepage: https://navdrawer.free.componentdock.com
-- [ ] 100% test coverage (lines, functions, branches, statements)
-- [ ] Tests cover: layout structure, sidebar toggle, dropdown expand/collapse, tag cloud, form interaction, responsive breakpoint, accessibility
+- [ ] Sidebar renders at 250px width, fixed position, full viewport height
+- [ ] Profile section shows circular avatar (80px) with name
+- [ ] Mountain background image in profile area
+- [ ] 7 navigation items with icons (lucide-react) and labels
+- [ ] Dividers between nav item groups
+- [ ] Hover state on nav items (subtle bg highlight)
+- [ ] Blue toggle button in content area top-left
+- [ ] Main content area fills remaining space
+- [ ] Heading and body text styled correctly
+- [ ] Sidebar collapses/expands on toggle click
+- [ ] No ColorLib references in app code
+- [ ] Footer links to Component Dock
+- [ ] All tests pass at 100% coverage
