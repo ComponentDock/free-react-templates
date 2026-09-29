@@ -2,133 +2,110 @@
 
 ## Purpose
 
-Recreation of **ColorLib Bootstrap Sidebar 10** (`bootstrap-sidebar-10`).
-Preview: https://preview.colorlib.com/theme/bootstrap-sidebar-10/ (currently 404 — screenshot used as reference).
-Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170724.jpg
+Recreation of **ColorLib Bootstrap Sidebar 10** (`bootstrap-sidebar-10`) as a right-side sidebar navigation template with a mountain landscape background, brand header, nav links, newsletter signup, and footer.
 
-Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript.
-This is a **right-side sidebar navigation** template with a mountain landscape background, brand header, nav links, newsletter signup, and footer.
+## Requirements
 
-## Design tokens
+### Requirement: Right sidebar layout
 
-Extracted from screenshot analysis (preview unreachable):
+The template SHALL display a fixed right-side sidebar at approximately 300px width spanning full viewport height.
 
-| Token | Value | Notes |
-|---|---|---|
-| `sidebar-bg` | gradient overlay on mountain image | Blue-teal gradient over landscape photo |
-| `sidebar-gradient-start` | `rgba(0, 180, 216, 0.85)` | Light cyan-blue overlay |
-| `sidebar-gradient-end` | `rgba(0, 119, 182, 0.9)` | Deeper blue overlay |
-| `sidebar-text` | `#ffffff` | White text on gradient |
-| `sidebar-width` | `~300px` | Fixed right sidebar width |
-| `accent-blue` | `#00b4d8` | Primary cyan-blue accent |
-| `content-bg` | `#ffffff` | White main content area |
-| `content-heading` | `#212529` | Dark heading text |
-| `content-text` | `#6c757d` | Muted body text |
-| `font-family` | `system-ui, -apple-system, "Segoe UI", sans-serif` | Clean sans-serif |
-| `brand-font-weight` | `700` | Bold brand name |
-| `input-bg` | `#ffffff` | White newsletter input |
-| `input-border` | `#dee2e6` | Light gray border |
-| `button-radius` | `0.25rem` | Small radius on toggle button |
-| `toggle-btn-bg` | `#007bff` | Bootstrap primary blue for toggle |
+#### Scenario: Sidebar visible on right side
 
-### Color palette
+- **WHEN** the user loads the Rightpane template
+- **THEN** the right sidebar is visible on the right side of the viewport
+- **AND** the main content area occupies the remaining space on the left
 
-- Primary blue: `#00b4d8` (sidebar gradient, accents)
-- Deep blue: `#0077b6` (sidebar gradient end)
-- White: `#ffffff` (sidebar text, content background)
-- Muted: `#6c757d` (body text)
-- Heading: `#212529` (content headings)
-- Toggle: `#007bff` (chevron button)
+### Requirement: Brand header
 
-## Section structure
+The sidebar SHALL display a brand name "Kenitic" in bold white text with a "Blog Agency" subtitle.
 
-1. **Main content area** (left side, scrollable, white background)
-   - Toggle button (blue chevron, top-right corner)
-   - Page heading: "Sidebar #04"
-   - Body text: lorem ipsum paragraphs
-2. **Right sidebar** (fixed right, full height)
-   - Brand header: "Kenitic" bold white text + "Blog Agency" subtitle
-   - Navigation list: icon + label per item
-   - Items: Home, About, Blog, Services, Contacts
-   - Newsletter section: "Subscribe for newsletter" heading + email input
-   - Footer: "Copyright ©2019 All rights reserved |" + attribution
-3. **No page footer** — footer content is inside the sidebar
+#### Scenario: Brand header display
 
-## Gherkin scenarios
+- **WHEN** the sidebar is visible
+- **THEN** "Kenitic" is displayed in bold white text at the top
+- **AND** "Blog Agency" is displayed below the brand name
 
-```gherkin
-Feature: Rightpane right-side sidebar navigation
+### Requirement: Navigation items
 
-  Background:
-    Given the user loads the Rightpane template
-    Then the right sidebar is visible on the right side
-    And the main content area is on the left
+The sidebar SHALL display 5 navigation items (Home, About, Blog, Services, Contacts) each with a lucide-react icon and white text label.
 
-  Scenario: Sidebar displays brand header
-    Given the right sidebar is visible
-    Then a brand name "Kenitic" is displayed in bold white text at the top
-    And a subtitle "Blog Agency" is displayed below the brand name
-    And the sidebar has a mountain landscape background with blue gradient overlay
+#### Scenario: Navigation items rendered
 
-  Scenario: Sidebar navigation items
-    Given the right sidebar is visible
-    Then the following navigation items are displayed in order:
-      | icon    | label    |
-      | home    | Home     |
-      | user    | About    |
-      | file    | Blog     |
-      | gear    | Services |
-      | send    | Contacts |
-    And each item shows an icon on the left and a text label on the right
-    And all items have white text
+- **WHEN** the sidebar is visible
+- **THEN** the following navigation items are displayed in order: Home, About, Blog, Services, Contacts
+- **AND** each item shows an icon on the left and a text label on the right
+- **AND** all items have white text
 
-  Scenario: Sidebar newsletter section
-    Given the right sidebar is visible
-    And the navigation items are displayed
-    Then a "Subscribe for newsletter" heading is displayed below the nav
-    And an email input field with placeholder "Enter Email Address" is shown
+### Requirement: Newsletter section
 
-  Scenario: Sidebar footer
-    Given the right sidebar is visible
-    Then a copyright line "Copyright ©2019 All rights reserved |" is displayed
-    And an attribution line is displayed below
+The sidebar SHALL include a newsletter subscription section with a heading and email input field.
 
-  Scenario: Toggle button visibility
-    Given the right sidebar is visible
-    Then a blue toggle button is displayed in the top-right of the content area
-    And the button shows a right-pointing chevron icon
+#### Scenario: Newsletter form
 
-  Scenario: Main content area
-    Given the right sidebar is visible
-    Then the main content area fills the remaining width to the left of the sidebar
-    And the content area has a white background
-    And a heading "Sidebar #04" is displayed
-    And body text paragraphs are displayed below the heading
+- **WHEN** the sidebar is visible
+- **THEN** a "Subscribe for newsletter" heading is displayed below the navigation
+- **AND** an email input field with placeholder "Enter Email Address" is shown
+- **AND** a subscribe button is displayed
 
-  Scenario: Sidebar collapse toggle
-    Given the right sidebar is visible
-    When the user clicks the toggle button
-    Then the sidebar collapses or expands
-    And the main content area adjusts its width accordingly
+### Requirement: Footer with Component Dock link
 
-  Scenario: Responsive layout
-    Given the user is on a mobile viewport
-    Then the sidebar may be hidden by default
-    And the toggle button is accessible to reveal the sidebar
-```
+The sidebar footer SHALL display copyright text and a link to https://www.componentdock.com/.
 
-## Verification checklist
+#### Scenario: Footer content
 
-- [ ] Right sidebar renders at ~300px width, fixed position, full viewport height
-- [ ] Mountain landscape background with blue gradient overlay
-- [ ] Brand header: "Kenitic" bold + "Blog Agency" subtitle in white
-- [ ] 5 navigation items with lucide-react icons and white labels
-- [ ] Newsletter section with heading + email input
-- [ ] Footer with copyright and attribution text
-- [ ] Blue toggle button in content area top-right
-- [ ] Main content area fills remaining space on the left
-- [ ] Heading and body text styled correctly
-- [ ] Sidebar collapses/expands on toggle click
-- [ ] No ColorLib references in app code
-- [ ] Footer links to Component Dock
-- [ ] All tests pass at 100% coverage
+- **WHEN** the sidebar is visible
+- **THEN** a copyright line "Copyright ©2019 All rights reserved" is displayed
+- **AND** a "More templates at Component Dock" link points to https://www.componentdock.com/
+
+### Requirement: Toggle button
+
+The main content area SHALL include a blue toggle button that collapses or expands the sidebar.
+
+#### Scenario: Toggle sidebar visibility
+
+- **WHEN** the user clicks the toggle button
+- **THEN** the sidebar collapses or expands
+- **AND** the main content area adjusts its width accordingly
+
+### Requirement: Mountain landscape background
+
+The sidebar SHALL display a mountain landscape background image with a blue gradient overlay for text readability.
+
+#### Scenario: Background styling
+
+- **WHEN** the sidebar is visible
+- **THEN** a mountain landscape background is visible behind a blue gradient overlay
+- **AND** all text on the sidebar is readable against the background
+
+### Requirement: Main content area
+
+The main content area SHALL display a heading "Sidebar #04" and body text paragraphs on a white background.
+
+#### Scenario: Content display
+
+- **WHEN** the sidebar is visible
+- **THEN** a heading "Sidebar #04" is displayed
+- **AND** body text paragraphs are shown below the heading
+- **AND** the content area has a white background
+
+### Requirement: Responsive layout
+
+The sidebar SHALL be responsive — on mobile viewports it may be hidden by default with the toggle button accessible to reveal it.
+
+#### Scenario: Mobile viewport
+
+- **WHEN** the user is on a mobile viewport
+- **THEN** the sidebar may be hidden by default
+- **AND** the toggle button is accessible to reveal the sidebar
+
+### Requirement: Accessibility
+
+The sidebar navigation SHALL be accessible with proper ARIA labels and semantic HTML.
+
+#### Scenario: Accessible navigation
+
+- **WHEN** the sidebar renders
+- **THEN** the navigation has an appropriate aria-label
+- **AND** icons have aria-hidden="true"
+- **AND** form inputs have associated labels
