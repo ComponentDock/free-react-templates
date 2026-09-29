@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-searchpad-bg: #d8f4fe;
+  --color-searchpad-icon: #ccc;
+  --color-searchpad-icon-hover: #333;
+  --color-searchpad-placeholder: #ccc;
+  --color-searchpad-placeholder-2: #666;
+  --color-searchpad-input-bg: #fff;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
