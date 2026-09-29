@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Stayquest brand gold — inspired by the original ColorLib Search Form 2
+     (warm gold/tan search button). */
+  --color-brand: #c8a96e;
+
+  --color-primary-50: #faf6ed;
+  --color-primary-100: #f3ebd6;
+  --color-primary-200: #e8d8ad;
+  --color-primary-300: #dbc28e;
+  --color-primary-400: #c8a96e;
+  --color-primary-500: #b8995e;
+  --color-primary-600: #a08040;
+  --color-primary-700: #806030;
+  --color-primary-800: #604820;
+  --color-primary-900: #403010;
+  --color-primary-950: #201808;
+
+  /* Original font: "Poppins" (Google Fonts loaded in index.html). */
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
