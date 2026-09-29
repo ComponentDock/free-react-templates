@@ -2782,7 +2782,7 @@
 - [x] **Echo** — [colorlib](https://colorlib.com/wp/template/echo/) · [resonance](https://resonance.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/echo-free-template.jpg)
 - [x] **Expo** — [colorlib](https://colorlib.com/wp/template/expo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/expo-free-template.jpg) · [expo](https://expo.free.componentdock.com)
 - [x] **Personal Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/personal-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personal-website-templates.jpg) · [persona](https://persona.free.componentdock.com)
-- [~] **Seo** — [colorlib](https://colorlib.com/wp/template/seo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/seo-free-seo-website-template.jpg)
+- [x] **Seo** — [colorlib](https://colorlib.com/wp/template/seo/) · [rankly](https://rankly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/seo-free-seo-website-template.jpg)
 - [ ] **Seogo** — [colorlib](https://colorlib.com/wp/template/seogo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/seogo-free-template.jpg)
 - [ ] **Seos** — [colorlib](https://colorlib.com/wp/template/seos/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/seos-free-template.jpg)
 - [x] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · [wordpressapp](https://wordpressapp.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
