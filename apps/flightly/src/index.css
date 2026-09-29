@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Flightly brand red */
+  --color-brand: #ff4b5a;
+
+  --color-primary-50: #fff1f2;
+  --color-primary-100: #ffe4e6;
+  --color-primary-200: #fecdd3;
+  --color-primary-300: #fda4af;
+  --color-primary-400: #ff4b5a;
+  --color-primary-500: #eb3746;
+  --color-primary-600: #c01220;
+  --color-primary-700: #a01018;
+  --color-primary-800: #841218;
+  --color-primary-900: #72141a;
+  --color-primary-950: #3f050a;
+
+  /* Original font: "Poppins" (Google Fonts loaded in index.html). */
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
