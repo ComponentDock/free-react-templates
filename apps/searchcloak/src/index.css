@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #007bff;
+  --color-primary-hover: #0056b3;
+  --color-border: #dae0e5;
+  --color-body: #212529;
+  --color-muted: #757575;
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-roboto);
+  }
+}
