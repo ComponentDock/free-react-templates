@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens from the original snippet's palette: */
+
+  /* Charcoal page background (darker/bluer than a neutral dark gray). */
+  --color-page: #19191d;
+
+  /* Dark row-card background. */
+  --color-row: #25252b;
+
+  /* Lighter row background for checked/hovered rows (the signature). */
+  --color-row-active: #2e2e36;
+
+  /* White — page heading on the charcoal page. */
+  --color-heading: #ffffff;
+
+  /* White — table header labels (normal case, default bold weight). */
+  --color-header: #ffffff;
+
+  /* Light gray — table body text (rendered at font-weight 300). */
+  --color-muted: #777777;
+
+  /* Gray — occupation sub-blurbs (300 weight, 80% size) and normal row links. */
+  --color-blurb: #b3b3b3;
+  --color-link: #b3b3b3;
+
+  /* White — row links on active/hovered rows. */
+  --color-link-active: #ffffff;
+
+  /* Accent blue — checkbox hover/focus border and checked fill. */
+  --color-checkbox: #007bff;
+
+  /* Dark gray — checkbox unchecked border (NOT the light #ccc variant). */
+  --color-checkbox-border: #3f3f47;
+
+  /* Original font: "Roboto" via Google Fonts (loaded in index.html). */
+  --font-sans:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif;
+}
