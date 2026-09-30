@@ -7,148 +7,146 @@ Preview: `https://preview.colorlib.com/theme/bootstrap/signup-form-08/`.
 
 Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-This is a full-page split-layout signup form — a mirror variant of Signup Form 07.
-The RIGHT half displays an SVG illustration (file sync / cloud theme), and the LEFT
-half contains a registration form with the heading "Sign Up", four input fields
-(Name, Email, Password, Re-type Password), a custom checkbox for Terms & Conditions
-/ Privacy Policy consent, a full-width green "Register" submit button, a divider
+This is a full-page split-layout signup form. The RIGHT half displays an
+illustration (file sync / cloud theme), and the LEFT half contains a registration
+form with the heading "Sign Up", four input fields (Name, Email, Password,
+Re-type Password), a custom checkbox for Terms & Conditions / Privacy Policy
+consent, a full-width green "Register" submit button, a divider
 ("or register using"), and three social login buttons (Facebook, Twitter, Google)
 each as full-width colored blocks.
 
-Key difference from 07: image is on the RIGHT (order-md-2), form fields use
-transparent background with bottom-border only (no filled-bg fields), and brand
-color is green (#38d39f) instead of purple.
+## Requirements
 
-## Design Tokens
+### Requirement: Split layout
 
-Extracted from `css/style.css` and preview HTML:
+The page SHALL display a two-column split layout with the signup form on the
+left and an illustration on the right on desktop viewports.
 
-| Token               | Value                                  | Notes                                       |
-| ------------------- | -------------------------------------- | ------------------------------------------- |
-| brand-primary       | `#38d39f`                              | Green — btn-primary, checkbox checked        |
-| brand-primary-hover | `#29bb8a`                              | Darker green on hover                        |
-| brand-primary-focus | `rgba(53,185,141,0.5)`                | Focus ring shadow                            |
-| text-dark           | `#212529`                              | Headings, body text                          |
-| text-muted          | `#6c757d`                              | Divider text, secondary text                 |
-| input-bg            | `transparent`                          | Form field background (no fill)              |
-| input-border        | `1px solid #ccc`                       | Bottom border on inputs                      |
-| input-focus-border  | `#38d39f`                              | Focus state border color                     |
-| input-radius        | `0`                                    | No border-radius on inputs                   |
-| page-padding        | `7rem 0`                               | Vertical padding on the content section      |
-| btn-radius          | `0.25rem` (4px)                        | Slightly rounded buttons                     |
-| btn-primary-bg      | `#38d39f`                              | Primary button background                    |
-| btn-primary-color   | `#212529`                              | Primary button text (dark on green bg)       |
-| btn-primary-hover-color | `#fff`                             | Button text turns white on hover             |
-| checkbox-bg-unchecked | `#e6e6e6`                           | Checkbox indicator default                   |
-| checkbox-bg-checked | `#38d39f`                              | Checkbox indicator when checked              |
-| facebook-bg         | `#3b5998`                              | Facebook social login button                 |
-| twitter-bg          | `#1da1f2`                              | Twitter social login button                  |
-| google-bg           | `#ea4335`                              | Google social login button                   |
-| heading-font        | Roboto (Google Fonts)                  | Loaded via link in index.html                |
-| body-font           | Roboto, -apple-system, sans-serif      | System font stack fallback                   |
+#### Scenario: Desktop layout
 
-### Font
+- **WHEN** the user views the page on a desktop viewport (>= 1200px)
+- **THEN** the form is shown on the left half and the illustration on the right half
 
-- **Google Font:** Roboto (weights 400, 500, 700)
-- Fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif
-- Loaded in `index.html` via `<link>` to Google Fonts
+#### Scenario: Mobile layout
 
-## Section Structure (from preview HTML)
+- **WHEN** the user views the page on a mobile viewport (< 1200px)
+- **THEN** the form takes the full page width and the illustration is hidden
 
-1. **Full-Page Split Layout** (`.content`)
-   - `7rem` vertical padding, white background
-   - Two-column flexbox layout (`.cl-container > .cl-row`)
-   - Left column (`.cl-col-md-6.contents`): signup form content
-   - Right column (`.cl-col-md-6.cl-order-md-2`): SVG illustration
+### Requirement: Form heading
 
-2. **Right Column — Illustration**
-   - Full-height SVG illustration (file sync / cloud theme)
-   - `cl-order-md-2` class puts it on the RIGHT on desktop
-   - Responsive: hidden on mobile, full-width on desktop right half
-   - Use placeholder image: `https://picsum.photos/seed/signupbloom/800/1200`
+The form SHALL display a "Sign Up" heading and a subtitle paragraph.
 
-3. **Left Column — Signup Form** (`.cl-col-md-8` centered within `.cl-col-md-6`)
-   - **Heading**: h3 "Sign Up" — left-aligned, dark text
-   - **Subtext**: paragraph with lorem ipsum, muted color
-   - **Form** (4 fields, stacked vertically):
-     - **Name** (text input)
-     - **Email** (email input)
-     - **Password** (password input)
-     - **Re-type Password** (password input)
-     - Each field: transparent background, `1px solid #ccc` bottom border
-     - Labels use absolute positioning with translateY(-50%) for floating effect
-   - **Checkbox**: Custom checkbox with Terms & Conditions + Privacy Policy links
-     - Checked by default, `#38d39f` indicator when checked
-   - **Register Button**: Full-width, `#38d39f` background, dark text (`#212529`), 0.25rem radius
-   - **Divider**: "or register using" text in muted color
-   - **Social Login Row** (3 full-width buttons):
-     - Facebook: `#3b5998` background, white icon
-     - Twitter: `#1da1f2` background, white icon
-     - Google: `#ea4335` background, white icon
-     - Each button: full-width, centered icon, 10px margin-bottom
+#### Scenario: Heading present
 
-4. **Responsive Behavior**
-   - Desktop: two-column split (form left, illustration right)
-   - Mobile (<1200px): form takes full width, illustration hidden
-   - Form fields stack vertically on all screen sizes
+- **WHEN** the page loads
+- **THEN** a heading with text "Sign Up" is visible
 
-## Gherkin Scenarios
+#### Scenario: Subtitle present
 
-### Scenario: Page loads with split layout
-  Given the user visits the SignupBloom page
-  Then the page displays a two-column layout
-  And the left column shows the signup form
-  And the right column shows an illustration
+- **WHEN** the page loads
+- **THEN** a subtitle paragraph is visible below the heading
 
-### Scenario: Form displays all required fields
-  Given the user views the signup form
-  Then the form shows a "Sign Up" heading
-  And the form has fields for Name, Email, Password, and Re-type Password
-  And each field has a label and input with a bottom border
+### Requirement: Form fields
 
-### Scenario: Form validates required fields
-  Given the user clicks the Register button without filling any fields
-  Then the browser shows validation messages for required fields
+The form SHALL contain four input fields: Name, Email, Password, and Re-type
+Password. Each field SHALL have a transparent background with a bottom border.
 
-### Scenario: Password mismatch
-  Given the user enters "password123" in the Password field
-  And enters "different456" in the Re-type Password field
-  When the user clicks Register
-  Then the form should indicate the passwords do not match
+#### Scenario: Name field
 
-### Scenario: Terms checkbox
-  Given the user views the signup form
-  Then the Terms & Conditions checkbox is checked by default
-  When the user unchecks the checkbox
-  Then the checkbox indicator changes from green to gray
+- **WHEN** the user views the form
+- **THEN** a text input with placeholder "Name" is present
 
-### Scenario: Social login buttons displayed
-  Given the user views the signup form
-  Then three social login buttons are visible
-  And the Facebook button has a blue (#3b5998) background
-  And the Twitter button has a light blue (#1da1f2) background
-  And the Google button has a red (#ea4335) background
+#### Scenario: Email field
 
-### Scenario: Register button hover
-  Given the user hovers over the Register button
-  Then the button background changes to a darker green (#29bb8a)
-  And the button text changes to white
+- **WHEN** the user views the form
+- **THEN** an email input with placeholder "Email" is present
 
-### Scenario: Responsive layout
-  Given the user views the page on a mobile device (viewport < 1200px)
-  Then the illustration is hidden
-  And the form takes the full page width
+#### Scenario: Password field
 
-## Verification Checklist
+- **WHEN** the user views the form
+- **THEN** a password input with placeholder "Password" is present
 
-- [ ] Two-column split layout with form on left, illustration on right
-- [ ] Brand color `#38d39f` (green) used for primary button, checkbox, focus states
-- [ ] Roboto font loaded from Google Fonts
-- [ ] Four form fields with transparent background and bottom borders
-- [ ] Custom checkbox with green checked state
-- [ ] Full-width "Register" button with hover state (text turns white)
-- [ ] Social login buttons (Facebook, Twitter, Google) with correct brand colors
-- [ ] Responsive: form full-width on mobile, illustration hidden
-- [ ] No ColorLib references in app code (provenance in spec only)
-- [ ] Footer links to `https://www.componentdock.com/`
-- [ ] 100% test coverage (lines, functions, branches, statements)
+#### Scenario: Re-type Password field
+
+- **WHEN** the user views the form
+- **THEN** a password input with placeholder "Re-type Password" is present
+
+### Requirement: Terms checkbox
+
+The form SHALL include a custom checkbox for Terms & Conditions and Privacy
+Policy consent. The checkbox SHALL be checked by default.
+
+#### Scenario: Default checked
+
+- **WHEN** the page loads
+- **THEN** the terms checkbox is checked
+
+#### Scenario: Toggle checkbox
+
+- **WHEN** the user clicks the checkbox
+- **THEN** the checkbox state toggles
+
+### Requirement: Register button
+
+The form SHALL include a full-width "Register" submit button with green
+background (#38d39f) and dark text (#212529). On hover the button background
+SHALL change to a darker green (#29bb8a) and the text SHALL turn white.
+
+#### Scenario: Button present
+
+- **WHEN** the user views the form
+- **THEN** a "Register" button is visible and has type "submit"
+
+#### Scenario: Button hover
+
+- **WHEN** the user hovers over the Register button
+- **THEN** the button background changes to darker green and text turns white
+
+### Requirement: Social login buttons
+
+The form SHALL display three full-width social login buttons: Facebook (blue
+#3b5998), Twitter (light blue #1da1f2), and Google (red #ea4335).
+
+#### Scenario: Facebook button
+
+- **WHEN** the user views the form
+- **THEN** a "Register with Facebook" button with blue background is visible
+
+#### Scenario: Twitter button
+
+- **WHEN** the user views the form
+- **THEN** a "Register with Twitter" button with light blue background is visible
+
+#### Scenario: Google button
+
+- **WHEN** the user views the form
+- **THEN** a "Register with Google" button with red background is visible
+
+### Requirement: Social divider
+
+The form SHALL display a divider with the text "or register using" between the
+Register button and the social login buttons.
+
+#### Scenario: Divider text
+
+- **WHEN** the user views the form
+- **THEN** the text "or register using" is displayed between the button and social logins
+
+### Requirement: Footer
+
+The page footer SHALL link to `https://www.componentdock.com/` branded as
+"Component Dock".
+
+#### Scenario: Component Dock link
+
+- **WHEN** the user views the footer
+- **THEN** a link to Component Dock is present and opens in a new tab
+
+### Requirement: Illustration
+
+The page SHALL display an illustration on the right side of the split layout.
+
+#### Scenario: Illustration visible
+
+- **WHEN** the user views the page on desktop
+- **THEN** an illustration image is visible on the right side
