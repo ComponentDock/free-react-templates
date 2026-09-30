@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens from the paneled data-table snippet palette: */
+
+  /* Near-black ink — page heading and uppercase table header labels. */
+  --color-ink: #212529;
+
+  /* Mid gray — table body text (rendered at font-weight 300). */
+  --color-muted: #777777;
+
+  /* Faint gray — occupation subtext line (80% size, weight 300). */
+  --color-subtle: #b3b3b3;
+
+  /* White — the row-card surface inside the gray panel. */
+  --color-surface: #ffffff;
+
+  /* Accent blue — checkbox hover/focus border, checked fill, name links. */
+  --color-accent: #007bff;
+
+  /* Link hover — darker accent blue. */
+  --color-accent-dark: #0056b3;
+
+  /* White — the page itself; the gray lives ONLY in the panel. */
+  --color-page: #ffffff;
+
+  /* Light-gray rounded panel that wraps the whole table. */
+  --color-panel: #efefef;
+
+  /* Original font: "Roboto" via Google Fonts (loaded in index.html). */
+  --font-sans:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif;
+}
