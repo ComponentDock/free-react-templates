@@ -78,30 +78,30 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
 (extracted from the live preview stylesheet `css/style.css` and verified
 against the screenshot; CSS values are canonical)
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Font family | `"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif` | Google Fonts 300/400 (500 for heading); body 16px/300/1.5 |
-| Page background | `#efefef` | `body` background-color (template override) — the signature light-gray page behind white cards |
-| Heading / ink | `#212529` | body color; h2 20px (overrides Bootstrap's 2rem), font-weight 500 (reboot h2 weight), line-height 1.2 |
-| Table body text | `#777` | `.custom-table tbody th, .custom-table tbody td` — `font-weight: 300` (light) |
-| Occupation sub-blurb | `#b3b3b3` | `.custom-table tbody ... small` — `font-weight: 300`, 80% font-size, `display: block` — "Far far away, behind the word mountains" under each occupation |
-| Header row | borderless | `.custom-table thead tr, .custom-table thead th` → `border-top: none; border-bottom: none !important` — header labels inherit ink `#212529` at default (bold) th weight |
-| Row cards (surface) | `#fff`, `border: none` | `.custom-table tbody tr th, .custom-table tbody tr td` — white cards on the gray page |
-| Card corner radius | `7px` | `.custom-table tbody tr:not(.spacer)` → `border-radius: 7px; overflow: hidden`; first/last cell of each row repeat the 7px corners |
-| Card gaps | 10px transparent spacer rows | `.custom-table tbody tr.spacer td` → `padding: 0; height: 10px; border-radius: 0; background: transparent` — the gray `#efefef` shows through between white cards |
-| Card hover lift | `box-shadow: 0 2px 10px -5px rgba(0,0,0,0.1)` | `.custom-table tbody tr:not(.spacer):hover` — subtle shadow; `transition: .3s all ease` |
-| `active` (checked rows) | NO styling rule | snippet.js toggles class `active` on checked rows but the stylesheet NEVER styles it — checked state is visible ONLY on the checkbox indicator; do NOT add row highlight |
-| Name links | `#007bff`, hover `#0056b3` | Bootstrap defaults; template override: `transition: .3s all ease`, `text-decoration: none !important` (no underline anywhere) |
-| Checkbox unchecked | 20×20px, `border-radius: 4px`, `border: 2px solid #ccc`, transparent bg | `.control__indicator` (native `<input type=checkbox>` visually hidden: `position:absolute; z-index:-1; opacity:0`) |
-| Checkbox hover/focus | `border: 2px solid #007bff` | `.control:hover input ~ .control__indicator, .control input:focus ~ .control__indicator` |
-| Checkbox checked | `border: 2px solid #007bff; background: #007bff` + white checkmark (icomoon `\e5ca` → lucide `Check`) | `.control input:checked ~ .control__indicator` |
-| Checkbox disabled | `background: #e6e6e6; opacity: 0.6; border: 2px solid #ccc` (checked+disabled: `#007bff` @ 0.2 opacity) | `.control input:disabled` |
-| Container | max-width `540px` @576 · `720px` @768 · `960px` @992 · `1140px` @1200; 15px side padding, auto margins | `.cl-container` (Bootstrap-like responsive container) |
-| Table | `width: 100%; min-width: 900px` (`.custom-table`); cell `padding: 0.75rem` horizontal + `20px` top/bottom (custom-table overrides the 0.75rem vertical); `vertical-align: top`; `border-collapse: collapse`; color `#212529` | NO vertical borders; thead borders overridden away |
-| Responsive wrapper | `display: block; width: 100%; overflow-x: auto` | `.cl-table-responsive` — horizontal scroll below the 900px min-width |
-| Content area | `padding: 7rem 0` | `.content` — generous whitespace above/below the table |
-| Heading margin | `margin-bottom: 3rem` (`cl-mb-5`, `!important`) | h2 → table gap |
-| Row transition | `.3s all ease` | card shadow reveal + link color |
+| Token                   | Value                                                                                                                                                                                                                        | Notes                                                                                                                                                                    |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Font family             | `"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif`                                                                                                          | Google Fonts 300/400 (500 for heading); body 16px/300/1.5                                                                                                                |
+| Page background         | `#efefef`                                                                                                                                                                                                                    | `body` background-color (template override) — the signature light-gray page behind white cards                                                                           |
+| Heading / ink           | `#212529`                                                                                                                                                                                                                    | body color; h2 20px (overrides Bootstrap's 2rem), font-weight 500 (reboot h2 weight), line-height 1.2                                                                    |
+| Table body text         | `#777`                                                                                                                                                                                                                       | `.custom-table tbody th, .custom-table tbody td` — `font-weight: 300` (light)                                                                                            |
+| Occupation sub-blurb    | `#b3b3b3`                                                                                                                                                                                                                    | `.custom-table tbody ... small` — `font-weight: 300`, 80% font-size, `display: block` — "Far far away, behind the word mountains" under each occupation                  |
+| Header row              | borderless                                                                                                                                                                                                                   | `.custom-table thead tr, .custom-table thead th` → `border-top: none; border-bottom: none !important` — header labels inherit ink `#212529` at default (bold) th weight  |
+| Row cards (surface)     | `#fff`, `border: none`                                                                                                                                                                                                       | `.custom-table tbody tr th, .custom-table tbody tr td` — white cards on the gray page                                                                                    |
+| Card corner radius      | `7px`                                                                                                                                                                                                                        | `.custom-table tbody tr:not(.spacer)` → `border-radius: 7px; overflow: hidden`; first/last cell of each row repeat the 7px corners                                       |
+| Card gaps               | 10px transparent spacer rows                                                                                                                                                                                                 | `.custom-table tbody tr.spacer td` → `padding: 0; height: 10px; border-radius: 0; background: transparent` — the gray `#efefef` shows through between white cards        |
+| Card hover lift         | `box-shadow: 0 2px 10px -5px rgba(0,0,0,0.1)`                                                                                                                                                                                | `.custom-table tbody tr:not(.spacer):hover` — subtle shadow; `transition: .3s all ease`                                                                                  |
+| `active` (checked rows) | NO styling rule                                                                                                                                                                                                              | snippet.js toggles class `active` on checked rows but the stylesheet NEVER styles it — checked state is visible ONLY on the checkbox indicator; do NOT add row highlight |
+| Name links              | `#007bff`, hover `#0056b3`                                                                                                                                                                                                   | Bootstrap defaults; template override: `transition: .3s all ease`, `text-decoration: none !important` (no underline anywhere)                                            |
+| Checkbox unchecked      | 20×20px, `border-radius: 4px`, `border: 2px solid #ccc`, transparent bg                                                                                                                                                      | `.control__indicator` (native `<input type=checkbox>` visually hidden: `position:absolute; z-index:-1; opacity:0`)                                                       |
+| Checkbox hover/focus    | `border: 2px solid #007bff`                                                                                                                                                                                                  | `.control:hover input ~ .control__indicator, .control input:focus ~ .control__indicator`                                                                                 |
+| Checkbox checked        | `border: 2px solid #007bff; background: #007bff` + white checkmark (icomoon `\e5ca` → lucide `Check`)                                                                                                                        | `.control input:checked ~ .control__indicator`                                                                                                                           |
+| Checkbox disabled       | `background: #e6e6e6; opacity: 0.6; border: 2px solid #ccc` (checked+disabled: `#007bff` @ 0.2 opacity)                                                                                                                      | `.control input:disabled`                                                                                                                                                |
+| Container               | max-width `540px` @576 · `720px` @768 · `960px` @992 · `1140px` @1200; 15px side padding, auto margins                                                                                                                       | `.cl-container` (Bootstrap-like responsive container)                                                                                                                    |
+| Table                   | `width: 100%; min-width: 900px` (`.custom-table`); cell `padding: 0.75rem` horizontal + `20px` top/bottom (custom-table overrides the 0.75rem vertical); `vertical-align: top`; `border-collapse: collapse`; color `#212529` | NO vertical borders; thead borders overridden away                                                                                                                       |
+| Responsive wrapper      | `display: block; width: 100%; overflow-x: auto`                                                                                                                                                                              | `.cl-table-responsive` — horizontal scroll below the 900px min-width                                                                                                     |
+| Content area            | `padding: 7rem 0`                                                                                                                                                                                                            | `.content` — generous whitespace above/below the table                                                                                                                   |
+| Heading margin          | `margin-bottom: 3rem` (`cl-mb-5`, `!important`)                                                                                                                                                                              | h2 → table gap                                                                                                                                                           |
+| Row transition          | `.3s all ease`                                                                                                                                                                                                               | card shadow reveal + link color                                                                                                                                          |
 
 ## Section structure (from the live DOM)
 
@@ -122,7 +122,8 @@ Section order (1:1):
    - **thead (borderless):** 6 columns — `[select-all checkbox]` ·
      `Order` · `Name` · `Occupation` · `Contact` · `Education`; header
      labels in ink `#212529` (default/bold weight), `scope="col"`.
-   - **tbody:** 4 data rows + 4 spacer rows (one after each data row);
+   - **tbody:** 4 data rows + 3 transparent spacer rows (one between
+     each pair of data rows; none after the last row);
      each data row = `th[scope=row]` with a row checkbox + 5 data `td`
      cells; each `tr` cell: `background: #fff; border: none`, cell text
      `#777` at `font-weight: 300`, 20px vertical cell padding;
@@ -143,7 +144,7 @@ Section order (1:1):
    - **Initial state:** all checkboxes unchecked in the DOM; the
      screenshot shows row 2 (Matthew Wasil) checked — visible ONLY as
      the blue-filled checkbox; the row itself keeps the same white card
-     + no shadow (checked rows have NO highlight in this variant).
+     - no shadow (checked rows have NO highlight in this variant).
 5. **Custom checkboxes + select-all** — hidden native input +
    `.control__indicator` visual (see tokens): 20×20 rounded-square, 2px
    `#ccc` border → hover/focus `#007bff` → checked `#007bff` fill + white
@@ -185,11 +186,19 @@ sources are near-identical snippet pages — do NOT copy tokens across:
   Rowglow by the rounded corners + gaps + shadow (Rowglow rows are
   borderless flat rows that turn fully white on hover).
 
-## Gherkin requirements
+## Requirements
 
 ### Requirement: Page shell and heading render
 
+The template SHALL render a light-gray page shell (`#efefef`, Roboto
+everywhere with body text at font-weight 300, content area with about
+7rem vertical padding) centered in a responsive container (max-width
+1140px at desktop with 15px side padding; 540/720/960px at smaller
+breakpoints), with a single h2 heading "Table #4" at font-size 20px,
+font-weight 500, color `#212529`, and about 3rem margin-bottom.
+
 #### Scenario: Shell renders
+
 ```
 Given the user visits the Rowcard home page
 Then the page background is #efefef (light gray)
@@ -199,6 +208,7 @@ And a centered container (max-width 1140px at desktop, 15px side padding; 540/72
 ```
 
 #### Scenario: Heading renders
+
 ```
 Given the page shell is visible
 Then an h2 heading labeled "Table #4" (or a paraphrase of the same short label) is displayed at font-size 20px, font-weight 500, color #212529
@@ -207,7 +217,30 @@ And it has about 3rem margin-bottom above the table
 
 ### Requirement: Data table renders with white row-cards on gray
 
+The template SHALL render a responsive data table (width 100%, min-width
+900px inside an overflow-x-auto wrapper, `border-separate` with zero
+border-spacing so the white cards render as solid surfaces) whose
+borderless header row lists six columns — a select-all checkbox cell,
+Order, Name, Occupation, Contact, Education — and whose four body rows
+each start with a `th[scope=row]` checkbox cell followed by five `td`
+cells. Every body cell SHALL be white (`#fff`) with NO cell borders,
+`#777` text at font-weight 300, 0.75rem horizontal + 20px vertical
+padding, and vertical-align top. Each data row SHALL render as a rounded
+card (`border-radius: 7px` + overflow hidden, corners repeated on the
+first/last cell) with a 10px transparent spacer row between every two
+data rows (the gray page shows through; no spacer after the last row).
+The header row SHALL be borderless with labels in `#212529` at default
+(bold) th weight. Each Occupation cell SHALL carry a block-level
+`#b3b3b3` sub-blurb at font-weight 300 and 80% font-size. Name cells
+SHALL be `#007bff` links (hover `#0056b3`, no underline, ~0.3s ease
+transition). The table SHALL be filled with the same KIND of demo data
+as the source: 4-digit order ids, person names, design/dev occupations,
++CC phone numbers, school names. A checked row SHALL NOT receive any
+extra row styling — the source stylesheet contains no rule for the
+checked "active" row class; only the checkbox indicator changes.
+
 #### Scenario: Table columns and header row
+
 ```
 Given the table is visible
 Then a responsive wrapper (display block, overflow-x auto) holds a table with width 100% and min-width 900px
@@ -217,6 +250,7 @@ And the header row is borderless (no top border, no bottom border) with labels i
 ```
 
 #### Scenario: Data rows render as white rounded cards
+
 ```
 Given the table is visible
 Then four body data rows are displayed
@@ -230,6 +264,7 @@ And cell padding is 0.75rem horizontal, 20px vertical, with vertical-align top
 ```
 
 #### Scenario: Occupation sub-blurb renders
+
 ```
 Given the data rows render
 Then each Occupation cell contains the occupation title and, beneath it, a block-level small blurb in #b3b3b3 at font-weight 300 and 80% font-size
@@ -237,6 +272,7 @@ And the blurb text is the same kind of placeholder sentence in every row (e.g. "
 ```
 
 #### Scenario: Name links render
+
 ```
 Given the data rows render
 Then each Name cell is an anchor link colored #007bff with no underline
@@ -245,6 +281,7 @@ Then it turns #0056b3 (still no underline) with about a 0.3s ease transition
 ```
 
 #### Scenario: Content fidelity
+
 ```
 Given the data rows render
 Then the rows contain the same KIND of demo data as the source: 4-digit order ids, person names, design/dev occupations, +CC-formatted phone numbers, and school names
@@ -253,7 +290,23 @@ And exact strings may be paraphrased while keeping the same structure
 
 ### Requirement: Custom checkboxes with select-all behavior
 
+The template SHALL render custom checkboxes (hidden native input +
+20x20px rounded-square indicator: border-radius 4px, 2px `#ccc` border,
+transparent background; hover/focus `#007bff` border; checked `#007bff`
+fill with a white lucide-react checkmark; disabled `#e6e6e6` at 0.6
+opacity, checked+disabled `#007bff` at 0.2 opacity). The header
+checkbox SHALL toggle all four row checkboxes; row checkboxes SHALL
+toggle independently. Checked state SHALL NOT restyle the row card (the
+source's `active` class has no CSS rule) — the ONLY visible change SHALL
+be the checkbox itself. Hovering a data row SHALL show a subtle
+`0 2px 10px -5px rgba(0,0,0,0.1)` box-shadow lift transitioning over
+about 0.3s ease, and hovering SHALL NOT change any checked state. Every
+checkbox SHALL have an accessible label; the header checkbox SHALL be
+labeled as select-all; row checkboxes SHALL use `th scope="row"`; the
+indicator SHALL be keyboard-focusable with a visible focus state.
+
 #### Scenario: Checkbox visual states
+
 ```
 Given a checkbox is rendered
 Then the native input is visually hidden and a 20x20px rounded-square indicator (border-radius 4px, border 2px solid #ccc, transparent background) is shown
@@ -266,6 +319,7 @@ Then the indicator renders #e6e6e6 at 0.6 opacity with a #ccc border (checked+di
 ```
 
 #### Scenario: Checked state does NOT restyle the row
+
 ```
 Given the table is visible
 And a row's checkbox is checked
@@ -276,6 +330,7 @@ Then the checkbox returns to the transparent/gray-border state and the card is u
 ```
 
 #### Scenario: Row hover shows the card shadow lift
+
 ```
 Given the table is visible
 When the user hovers over any data row
@@ -285,6 +340,7 @@ And hovering does not change any checkbox's checked state
 ```
 
 #### Scenario: Select-all toggles every row
+
 ```
 Given the table is visible
 When the user toggles the header (select-all) checkbox
@@ -295,6 +351,7 @@ And each row checkbox can still be toggled independently
 ```
 
 #### Scenario: Checkbox accessibility
+
 ```
 Given the checkboxes render
 Then every checkbox has an accessible label
@@ -305,7 +362,13 @@ And the indicator is keyboard-focusable with a visible focus state
 
 ### Requirement: Responsive table behavior
 
+The template SHALL keep the table horizontally scrollable within its
+wrapper below the 900px min-width, while the page layout (heading,
+container padding, footer) stays intact and no horizontal overflow
+escapes the wrapper.
+
 #### Scenario: Narrow viewport scrolls horizontally
+
 ```
 Given the viewport is narrower than the table min-width (900px)
 Then the table scrolls horizontally within its wrapper
@@ -315,7 +378,13 @@ And no horizontal overflow escapes the wrapper
 
 ### Requirement: Component Dock attribution footer
 
+The template SHALL render a minimal footer attribution line linking
+https://www.componentdock.com/ branded "Component Dock", and NO
+ColorLib attribution or links SHALL appear anywhere in the page
+(comments included).
+
 #### Scenario: Attribution present
+
 ```
 Given the page footer area is rendered
 Then a minimal attribution line links https://www.componentdock.com/ branded "Component Dock"
@@ -324,7 +393,14 @@ And NO ColorLib attribution or links appear anywhere in the page
 
 ### Requirement: Accessibility (global semantics)
 
+The template SHALL use real table semantics (`thead`/`tbody` with
+`th scope="col"` on headers and `scope="row"` on row headers), a single
+h2 heading, keyboard-reachable checkboxes with visible focus states,
+and SHALL render the demo data as real table content (not presentational
+divs).
+
 #### Scenario: Table and page semantics
+
 ```
 Given the page is rendered
 Then the table uses thead/tbody with th scope="col" on headers and scope="row" on row headers
@@ -350,7 +426,7 @@ And the demo data is rendered as real table content (not presentational divs)
       4 body data rows; cell text `#777` at weight 300; NO cell borders;
       0.75rem horizontal + 20px vertical cell padding
 - [ ] Rows render as white cards: `background: #fff`, `border-radius:
-      7px` + overflow hidden per row (corners on first/last cell), 10px
+    7px` + overflow hidden per row (corners on first/last cell), 10px
       transparent spacer gaps between rows (gray shows through)
 - [ ] Row hover: subtle `box-shadow: 0 2px 10px -5px rgba(0,0,0,0.1)`,
       ~0.3s ease; hover does not alter checked state
