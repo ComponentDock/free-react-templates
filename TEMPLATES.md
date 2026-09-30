@@ -2830,7 +2830,7 @@
 - [x] **Signup Form 16** — [colorlib](https://colorlib.com/wp/template/signup-form-16/) · [joinhub](https://joinhub.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-16.jpg)
 - [x] **Signup Form 17** — [colorlib](https://colorlib.com/wp/template/signup-form-17/) · [rosea](https://rosea.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-17.jpg)
 - [x] **Signup Form 18** — [colorlib](https://colorlib.com/wp/template/signup-form-18/) · [signupflare](https://signupflare.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-18.jpg)
-- [ ] **Signup Form 19** — [colorlib](https://colorlib.com/wp/template/signup-form-19/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-19.jpg)
+- [~] **Signup Form 19** — [colorlib](https://colorlib.com/wp/template/signup-form-19/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-19.jpg)
 - [ ] **Signup Form 20** — [colorlib](https://colorlib.com/wp/template/signup-form-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-20.jpg)
 
 ## Sports (9)
