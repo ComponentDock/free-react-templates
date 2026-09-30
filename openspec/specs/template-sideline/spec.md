@@ -19,7 +19,7 @@ CSS 4 + TypeScript.
 - **Preview (LIVE, verified 2026-09-30 by direct fetch):**
   **https://preview.colorlib.com/theme/sportz/**
   (HTTP 200, 55,944 bytes, `<title>Sportz &mdash; Colorlib Sports Team
-  Template</title>`)
+Template</title>`)
 - **Preview CSS:** `css/bootstrap.min.css` (customized Bootstrap —
   `.btn-primary` / `.bg-primary` overridden to `#f23a2e`) + `css/style.css`
   (23,032 bytes, template block). Template-specific rules include `.btn`
@@ -64,26 +64,26 @@ CSS 4 + TypeScript.
 (extracted from the live preview stylesheet + verified against the
 screenshot; CSS values are canonical)
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Font family | `"Mukta", sans-serif` (Google Fonts 300/400/700) | body 16px/300; headings 700 |
-| Brand red | `#f23a2e` | `.btn-primary` / `.bg-primary` (customized Bootstrap), active nav link, logo shield, `overlay-primary` band rgba(242,58,46,0.9), block-12 card top accent bar 80px×4px |
-| Yellow accent | `#eec60a` (`rgba(238,198,10,0.9)`) | `.overlay-success` override — next-match promo banner overlay |
-| Hero overlay | `rgba(0, 0, 0, 0.4)` | `.bg-image.overlay` on hero slides |
-| Light section bg | `#f8f9fa` | Bootstrap `bg-light` — matches/results section |
-| Dropdown gray | `#edf0f5` bg · hover text `#25262a` · hover bg `#f4f5f9` | nav dropdown panels; `.border-top` also `#edf0f5` |
-| Footer | `#333333` bg · headings `#fff` · links `#999999` → `#fff` hover · body copy `#737373` | `.site-footer` padding 4em 0 |
-| Navbar | `#000` (bg-black) | right-aligned uppercase white menu; active link `#f23a2e` |
-| Body text | `#333333` | `.text-black` = `#000` on headings |
-| Muted | `#999999` | feature-block card copy, footer links; card paragraph `#ccc` |
-| Buttons (`.btn`) | square — NO border-radius (markup `rounded-0`); uppercase; font-weight 300; letter-spacing .2em; 0.2s transition; bg `#f23a2e`, white text | hero CTA `py-3 px-5`, card CTA `px-4 py-2` |
-| Hero slider | ~800px full-bleed (300px mobile); dark 0.4 overlay; white h1 inside a translucent black box; red READ MORE button; white prev/next chevrons bottom-center (padding 20px, font-size 30px, disabled opacity .2) | owl-carousel → React state / scroll-snap |
-| Feature blocks | 3-col bg-image cards, `margin-top: -70px` (overlap hero), z-index 2; hover/focus: card rises 10px + shadow `0 10px 40px -5px rgba(0,0,0,0.4)`, bg image scales 1.1, black rgba(0,0,0,0.9) overlay, text block reveals (white h5 + `#ccc` p + red Read More) | keep text keyboard-reachable; visible state on touch |
-| Matches section | `bg-light #f8f9fa`, section padding 5em 0 (2.5em mobile); left: "Next match" panel — countdown block, home/away square thumbs + names with muted "vs" between, league line ("Brazil Premier League — Round 10"), score "3:2", date/time "10 September / 7:30 AM"; right: "Latest Matches" + Bootstrap `nav nav-pills` tabs (Match 1 / Match 2 / Match 3) + tab panes of fixture rows (team + league label — score — team + league label); plus a rounded promo banner: bg image + yellow rgba(238,198,10,0.9) overlay, stellar parallax | countdown → `useEffect` |
-| Highlights band | `bg-primary #f23a2e` + bg image + `overlay-primary` rgba(242,58,46,0.9), fixed/parallax background; centered white "More Game Highlights" h2 + Vimeo popup play button; carousel of `.block-12` cards: image with bottom gradient, uppercase white date `.meta`, white `.text-inner` box (20px heading black link + excerpt) with 80px×4px `#f23a2e` top accent bar and shadow `0 0 20px -5px rgba(0,0,0,0.3)`; card `.text` pulled up -100px over the image | React carousel; modal or link for video |
-| Latest news | white section; 3 `.post-entry` cards: image, `h5` black title link, uppercase small date "By … • Sep 25, 2018", excerpt | |
-| Footer | `#333333`, 4 columns: About (heading + blurb), Recent Blog (3 linked titles), Quick Menu (Home, Matches, News, Team, About Us, Privacy Policy, Contact Us, Membership), Follow Us (social icons) + Watch Video + Subscribe Newsletter (text + email input + Send button); bottom bar: "© <year> All rights reserved" + **Component Dock link** (replacing the source Colorlib attribution); zero ColorLib references in the app | |
-| Mobile menu | fullscreen dark overlay (`.site-mobile-menu`), close icon, stacked uppercase links | hamburger toggle with aria-expanded |
+| Token            | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Notes                                                                                                                                                                  |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Font family      | `"Mukta", sans-serif` (Google Fonts 300/400/700)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | body 16px/300; headings 700                                                                                                                                            |
+| Brand red        | `#f23a2e`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | `.btn-primary` / `.bg-primary` (customized Bootstrap), active nav link, logo shield, `overlay-primary` band rgba(242,58,46,0.9), block-12 card top accent bar 80px×4px |
+| Yellow accent    | `#eec60a` (`rgba(238,198,10,0.9)`)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | `.overlay-success` override — next-match promo banner overlay                                                                                                          |
+| Hero overlay     | `rgba(0, 0, 0, 0.4)`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | `.bg-image.overlay` on hero slides                                                                                                                                     |
+| Light section bg | `#f8f9fa`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Bootstrap `bg-light` — matches/results section                                                                                                                         |
+| Dropdown gray    | `#edf0f5` bg · hover text `#25262a` · hover bg `#f4f5f9`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | nav dropdown panels; `.border-top` also `#edf0f5`                                                                                                                      |
+| Footer           | `#333333` bg · headings `#fff` · links `#999999` → `#fff` hover · body copy `#737373`                                                                                                                                                                                                                                                                                                                                                                                                                                                   | `.site-footer` padding 4em 0                                                                                                                                           |
+| Navbar           | `#000` (bg-black)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | right-aligned uppercase white menu; active link `#f23a2e`                                                                                                              |
+| Body text        | `#333333`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | `.text-black` = `#000` on headings                                                                                                                                     |
+| Muted            | `#999999`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | feature-block card copy, footer links; card paragraph `#ccc`                                                                                                           |
+| Buttons (`.btn`) | square — NO border-radius (markup `rounded-0`); uppercase; font-weight 300; letter-spacing .2em; 0.2s transition; bg `#f23a2e`, white text                                                                                                                                                                                                                                                                                                                                                                                              | hero CTA `py-3 px-5`, card CTA `px-4 py-2`                                                                                                                             |
+| Hero slider      | ~800px full-bleed (300px mobile); dark 0.4 overlay; white h1 inside a translucent black box; red READ MORE button; white prev/next chevrons bottom-center (padding 20px, font-size 30px, disabled opacity .2)                                                                                                                                                                                                                                                                                                                           | owl-carousel → React state / scroll-snap                                                                                                                               |
+| Feature blocks   | 3-col bg-image cards, `margin-top: -70px` (overlap hero), z-index 2; hover/focus: card rises 10px + shadow `0 10px 40px -5px rgba(0,0,0,0.4)`, bg image scales 1.1, black rgba(0,0,0,0.9) overlay, text block reveals (white h5 + `#ccc` p + red Read More)                                                                                                                                                                                                                                                                             | keep text keyboard-reachable; visible state on touch                                                                                                                   |
+| Matches section  | `bg-light #f8f9fa`, section padding 5em 0 (2.5em mobile); left: "Next match" panel — countdown block, home/away square thumbs + names with muted "vs" between, league line ("Brazil Premier League — Round 10"), score "3:2", date/time "10 September / 7:30 AM"; right: "Latest Matches" + Bootstrap `nav nav-pills` tabs (Match 1 / Match 2 / Match 3) + tab panes of fixture rows (team + league label — score — team + league label); plus a rounded promo banner: bg image + yellow rgba(238,198,10,0.9) overlay, stellar parallax | countdown → `useEffect`                                                                                                                                                |
+| Highlights band  | `bg-primary #f23a2e` + bg image + `overlay-primary` rgba(242,58,46,0.9), fixed/parallax background; centered white "More Game Highlights" h2 + Vimeo popup play button; carousel of `.block-12` cards: image with bottom gradient, uppercase white date `.meta`, white `.text-inner` box (20px heading black link + excerpt) with 80px×4px `#f23a2e` top accent bar and shadow `0 0 20px -5px rgba(0,0,0,0.3)`; card `.text` pulled up -100px over the image                                                                            | React carousel; modal or link for video                                                                                                                                |
+| Latest news      | white section; 3 `.post-entry` cards: image, `h5` black title link, uppercase small date "By … • Sep 25, 2018", excerpt                                                                                                                                                                                                                                                                                                                                                                                                                 |                                                                                                                                                                        |
+| Footer           | `#333333`, 4 columns: About (heading + blurb), Recent Blog (3 linked titles), Quick Menu (Home, Matches, News, Team, About Us, Privacy Policy, Contact Us, Membership), Follow Us (social icons) + Watch Video + Subscribe Newsletter (text + email input + Send button); bottom bar: "© <year> All rights reserved" + **Component Dock link** (replacing the source Colorlib attribution); zero ColorLib references in the app                                                                                                         |                                                                                                                                                                        |
+| Mobile menu      | fullscreen dark overlay (`.site-mobile-menu`), close icon, stacked uppercase links                                                                                                                                                                                                                                                                                                                                                                                                                                                      | hamburger toggle with aria-expanded                                                                                                                                    |
 
 ## Section structure (from the live DOM)
 
@@ -116,11 +116,14 @@ screenshot; CSS values are canonical)
    Menu, Follow Us + Watch Video + Subscribe Newsletter + Send; copyright
    bar with Component Dock attribution.
 
-## Gherkin requirements
+## Requirements
 
 ### Requirement: Header utility bar and black navbar render
 
+The page SHALL render a white utility top row with social icon links on the left and email/phone contact links on the right, and below it a black navbar with a shield logo badge on the left, a right-aligned uppercase menu whose active item is brand red #f23a2e, dropdown panels with #edf0f5 background, #25262a text and #f4f5f9 hover rows, and a mobile hamburger toggle that opens a fullscreen dark overlay menu exposing aria-expanded.
+
 #### Scenario: Desktop header
+
 ```
 Given the user visits the Sideline home page
 Then a white utility top row shows social icon links (Facebook, Instagram, Twitter, LinkedIn) on the left
@@ -136,6 +139,7 @@ Then the panel background is #edf0f5 with #25262a text and #f4f5f9 hover rows
 ```
 
 #### Scenario: Mobile menu toggles
+
 ```
 Given the viewport is mobile-sized
 Then the inline menu is hidden and a hamburger icon button is shown
@@ -148,7 +152,10 @@ Then the menu closes
 
 ### Requirement: Full-bleed hero photo slider
 
+The page SHALL render a full-bleed photographic hero slider (~800px desktop, ~300px mobile) with a dark rgba(0,0,0,0.4) overlay, a translucent black content box showing a white bold headline and a red square Read More button (uppercase, letter-spacing .2em), and white prev/next chevron controls shown bottom-center that are keyboard-focusable and disable (opacity .2) at the ends.
+
 #### Scenario: Hero slide renders
+
 ```
 Given the hero slider is visible
 Then a ~800px full-bleed photographic slide (picsum placeholder, dark rgba(0,0,0,0.4) overlay) fills the width
@@ -156,6 +163,7 @@ And a translucent black content box shows a white bold headline (e.g. "Continent
 ```
 
 #### Scenario: Slider navigation
+
 ```
 Given the hero slider is visible
 Then white prev/next chevron controls are shown bottom-center
@@ -167,7 +175,10 @@ And disabled-direction state (opacity .2) applies at the ends if applicable
 
 ### Requirement: Overlapping hover-reveal feature cards
 
+The page SHALL render three equal background-image feature cards in a row (stacked on mobile) overlapping the hero bottom by about -70px, each showing a white heading, a #ccc paragraph and a red Read More button; on pointer devices hovering or keyboard-focusing a card SHALL lift it 10px, zoom the background to 1.1, add a rgba(0,0,0,0.9) overlay and reveal the text, and the text SHALL remain readable on touch viewports without hover.
+
 #### Scenario: Feature cards render
+
 ```
 Given the feature block row is visible
 Then three equal cards are displayed in a row (stacked on mobile)
@@ -176,6 +187,7 @@ And each card shows a white heading, a #ccc paragraph, and a red "Read More" but
 ```
 
 #### Scenario: Card hover/focus reveal
+
 ```
 Given the feature cards are visible on a pointer device
 When the user hovers (or keyboard-focuses) a card
@@ -187,7 +199,10 @@ And the text remains reachable/readable on touch viewports (no hover-only conten
 
 ### Requirement: Next-match countdown panel
 
+The matches section SHALL render a Next match panel with a countdown to the upcoming fixture that updates every second, home/away square thumbnails and uppercase names around a muted vs, a league line, the score 3:2 and the date/time line; timers SHALL clean up on unmount.
+
 #### Scenario: Next match content
+
 ```
 Given the Matches section is visible
 Then a "Next match" panel displays a countdown to the upcoming fixture
@@ -201,7 +216,10 @@ And timers clean up on unmount
 
 ### Requirement: Tabbed latest matches list
 
+The matches section SHALL render a Latest Matches block with the heading above pill tabs Match 1 / Match 2 / Match 3 implementing the ARIA tabs pattern (aria-selected and tabpanel wiring), where the first pane is active by default and each fixture row shows the home team with a small league label, the score and the away team with a league label; only the active pane SHALL be rendered.
+
 #### Scenario: Tabs render and switch
+
 ```
 Given the Latest Matches block is visible
 Then the heading "Latest Matches" is displayed above pill tabs "Match 1", "Match 2", "Match 3"
@@ -214,7 +232,10 @@ And its fixture rows render
 
 ### Requirement: Yellow-overlay promo banner
 
+The matches section SHALL render a rounded banner with a photographic background and a yellow rgba(238,198,10,0.9) overlay displaying the team matchup text, with a fixed/parallax background treatment.
+
 #### Scenario: Promo banner renders
+
 ```
 Given the Matches section is visible
 Then a rounded banner with a photographic background (picsum) and a yellow rgba(238,198,10,0.9) overlay is displayed
@@ -224,7 +245,10 @@ And the background gets a subtle parallax/fixed treatment
 
 ### Requirement: Red game-highlights band with video popup
 
+The highlights section SHALL render a band with brand red #f23a2e over a photographic background with an rgba(242,58,46,0.9) overlay and a fixed background treatment, a centered white More Game Highlights heading, a play button with aria-label "Play video" that opens a video dialog without layout shift, and a carousel of dated highlight cards whose white text boxes carry an 80px by 4px red top accent bar; carousel controls SHALL move to the next set of cards and disable at the ends.
+
 #### Scenario: Highlights band renders
+
 ```
 Given the highlights section is visible
 Then the band background is brand red #f23a2e over a photographic background with an rgba(242,58,46,0.9) overlay and a fixed/parallax background treatment
@@ -233,6 +257,7 @@ And a circular/square play button (lucide Play icon, aria-label "Play video") is
 ```
 
 #### Scenario: Highlight cards carousel
+
 ```
 Given the highlights carousel is visible
 Then each card shows a photo with a bottom gradient, an uppercase white date meta (e.g. "May 20th 2018"), and a white text box with a 80px×4px red top accent bar, a black 20px title link, and an excerpt
@@ -243,7 +268,10 @@ And the play button opens the video (modal/lightbox or external link) without la
 
 ### Requirement: Latest news grid
 
+The page SHALL render a Latest News section with three post cards in a row (stacked on mobile), each showing an image, a black bold title link that turns brand red #f23a2e on hover, an uppercase date line "By <author> • <date>" and a short excerpt.
+
 #### Scenario: News cards render
+
 ```
 Given the Latest News section is visible
 Then three post cards are displayed in a row (stacked on mobile)
@@ -254,7 +282,10 @@ Then it turns brand red #f23a2e
 
 ### Requirement: Dark footer with newsletter and Component Dock attribution
 
+The footer SHALL render on background #333333 with white column headings, an About column with a #737373 blurb, a Recent Blog column with three linked titles, a Quick Menu column listing Home, Matches, News, Team, About Us, Privacy Policy, Contact Us and Membership, and a Follow Us area with social icon links, a Watch Video link and a Subscribe Newsletter block with an email input and a Send button; footer links SHALL be #999999 and turn white on hover, the bottom bar SHALL show a copyright notice with the current year and a link to https://www.componentdock.com/ branded "Component Dock", and the page SHALL contain no ColorLib attribution or links anywhere.
+
 #### Scenario: Footer content
+
 ```
 Given the footer is visible
 Then the footer background is #333333 with white column headings
@@ -266,6 +297,7 @@ And footer links are #999999 and turn white on hover
 ```
 
 #### Scenario: Component Dock attribution
+
 ```
 Given the footer bottom bar is visible
 Then a copyright notice with the current year is shown
@@ -275,7 +307,10 @@ And NO ColorLib attribution or links appear anywhere in the page
 
 ### Requirement: Responsive layout
 
+At viewports narrower than 768px the layout SHALL adapt: the navbar SHALL collapse to the hamburger menu, the hero slider height SHALL reduce (~300px) with the content box still readable, feature cards SHALL stack vertically with their text content available, the matches panel columns SHALL stack with usable tabs, the highlights carousel SHALL become swipeable or stacked, the news grid SHALL become one column and the footer columns SHALL stack.
+
 #### Scenario: Mobile viewport
+
 ```
 Given the user views the page on a viewport narrower than 768px
 Then the navbar collapses to the hamburger menu
@@ -286,9 +321,12 @@ And the highlights carousel becomes swipeable/stacked and the news grid becomes 
 And the footer columns stack
 ```
 
-### Requirement: Accessibility
+### Requirement: Accessibility of interactive elements
+
+All interactive elements (nav links, dropdowns, slider chevrons, card CTAs, tabs, play button, newsletter form, menu toggle) SHALL be keyboard reachable with visible focus states, icon-only controls SHALL have aria-labels, the mobile menu toggle SHALL expose aria-expanded, the tab list SHALL implement the ARIA tabs pattern, images SHALL have alt text, form inputs SHALL have associated labels, and countdown regions SHALL not trap focus or announce every tick.
 
 #### Scenario: Interactive elements
+
 ```
 Given the page is rendered
 Then all interactive elements (nav links, dropdowns, slider chevrons, card CTAs, tabs, play button, newsletter form, menu toggle) are keyboard reachable with visible focus states
@@ -305,7 +343,7 @@ And countdown/ticker regions do not trap focus or announce every tick
 - [ ] Mukta (300/400/700) loaded via Google Fonts in `index.html`
 - [ ] `@theme` tokens: `--color-brand: #f23a2e`, `--color-accent: #eec60a`,
       `--color-ink: #333333`, `--color-mist: #f8f9fa`, `--color-panel:
-      #edf0f5`, `--color-footer: #333333`
+    #edf0f5`, `--color-footer: #333333`
 - [ ] Header: white utility row (social icons + email + phone) + black
       navbar with inline-SVG shield logo, uppercase menu, red active state,
       `#edf0f5` dropdowns; mobile hamburger + fullscreen dark menu with
