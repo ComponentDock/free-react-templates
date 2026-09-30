@@ -1,153 +1,199 @@
-# Template: Joinhub (Signup Form with Social Login)
+# Template: Joinhub (Split-Layout Signup Form with Social Login)
 
 ## Purpose
 
-Recreation of Colorlib "Signup Form 16" — a split-layout signup form with social login buttons (Google, Facebook, Twitter), terms checkbox, and a left-side image panel with purple overlay.
+Recreation of ColorLib **Signup Form 16** (`https://colorlib.com/wp/template/signup-form-16/`).
+Preview: `https://preview.colorlib.com/theme/bootstrap/signup-form-16/`.
 
-- **Source**: Colorlib Signup Form V16
-- **Source slug**: `signup-form-16`
-- **Source URL**: https://colorlib.com/wp/template/signup-form-16/
-- **Preview URL**: https://preview.colorlib.com/theme/bootstrap/signup-form-16/
-- **Screenshot URL**: https://colorlib.com/wp/wp-content/uploads/sites/2/signup-form-16.jpg
-- **Stack**: React 19 · Vite · Tailwind CSS 4 · TypeScript (strict) · Vitest + Testing Library
+Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-## Design Tokens (from live preview CSS)
+This is a split-layout signup form with a left image panel (purple overlay)
+and a right form panel containing social login buttons, form fields, terms
+checkbox, and a submit button. The left panel shows a background image with
+a purple overlay and welcome text. The right panel has social login circles
+(Google, Facebook, Twitter), an "or" divider, four form fields (Full Name,
+Username in a 2-column row, Email Address, Password), a terms checkbox
+(checked by default), a full-width blue "Create an account" button, and a
+"Sign In" link below.
 
-### Colors
+## Design Tokens
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| Page background | `#ffffff` | Body background |
-| Left panel overlay | `#6807f9` at `opacity: 0.4` | `.cl-text-wrap:after` purple overlay over background image |
-| Card shadow | `0px 10px 34px -15px rgba(0,0,0,0.24)` | `.wrap` card elevation |
-| Card border-radius | `5px` | `.wrap` |
-| Input border | `1px solid #ced4da` | `.cl-form-control` |
-| Input text | `#495057` | Input value text |
-| Input background | `#ffffff` | Input field background |
-| Button background | `#007bff` | `.cl-btn-primary` |
-| Button hover | `#0069d9` | Button hover state |
-| Button focus ring | `0 0 0 0.2rem rgba(38,143,255,0.5)` | Button focus state |
-| Social icon circle | `transparent` with `1px solid rgba(0,0,0,0.05)` border | `.social-icon` |
-| Social icon hover | `#6807f9` background, white icon | `.social-icon:hover` |
-| Social icon text | `#000` | Default social icon color |
-| "or" divider line | `#e6e6e6` | Horizontal rule behind "or" text |
-| Checkbox text | `rgba(0,0,0,0.4)` | Terms checkbox label |
-| Checkmark unchecked | `rgba(0,0,0,0.1)` | Unchecked checkbox icon |
-| Checkmark checked | `#007bff` | Checked checkbox icon |
-| Link color | `#007bff` | "Sign In" link |
-| Link hover | `#0056b3` | Link hover |
-| Heading text | `#000` | Page heading |
-| Left panel text | `#ffffff` at `0.8` opacity | Text over the image panel |
+| Token           | Value                                  | Notes                                          |
+| --------------- | -------------------------------------- | ---------------------------------------------- |
+| brand-purple    | `#6807f9`                              | Purple overlay, social icon hover              |
+| brand-blue      | `#007bff`                              | Button background, checkbox accent, link color |
+| brand-blue-dark | `#0069d9`                              | Button hover state                             |
+| page-bg         | `#ffffff`                              | White page background                          |
+| input-border    | `#ced4da`                              | Input field borders                            |
+| input-text      | `#495057`                              | Input value text color                         |
+| divider         | `#e6e6e6`                              | "or" divider horizontal lines                  |
+| or-text         | `#999999`                              | "or" text color                                |
+| label-text      | `rgba(0,0,0,0.3)`                      | Form label color                               |
+| checkbox-text   | `rgba(0,0,0,0.4)`                      | Terms checkbox label color                     |
+| heading         | `#000000`                              | Page heading color                             |
+| card-shadow     | `0px 10px 34px -15px rgba(0,0,0,0.24)` | Card elevation                                 |
+| card-radius     | `5px`                                  | Card border radius                             |
+| social-hover-bg | `#6807f9`                              | Social button hover background                 |
 
-### Typography
+### Font
 
-| Token | Value |
-|-------|-------|
-| Font family | `'Roboto', Arial, sans-serif` (Google Fonts) |
-| Font weights | 400 (regular) |
-| Page heading ("Sign Up #06") | 28px, weight 500, `#000` |
-| Card heading ("Signup with this services") | 18px, weight 400, `#000`, centered |
-| Left panel heading | 24px, weight 400, white |
-| Left panel paragraph | 14px, weight 400, `rgba(255,255,255,0.8)` |
-| Form label | 14px, weight 500, `rgba(0,0,0,0.3)` |
-| Input text | 16px, weight 400, `#495057` |
-| Checkbox text | 14px, weight 400, `rgba(0,0,0,0.4)` |
-| Button text | 16px, weight 400, `#fff` |
-| "or" text | 14px, weight 400, `#999` |
+- **Google Font:** Roboto, weight 400
+- Fallback: Arial, sans-serif
+- Loaded in `index.html` via `<link>` to Google Fonts
 
-### Layout & Shapes
+## Requirements
 
-| Property | Value |
-|----------|-------|
-| Section padding | `7em 0` |
-| Card border-radius | `5px` |
-| Card shadow | `0px 10px 34px -15px rgba(0,0,0,0.24)` |
-| Desktop split | Left 40% (image + overlay), Right 60% (form) |
-| Mobile layout | Stacks vertically: image on top, form below |
-| Image panel padding | 2rem (desktop), 1.5rem (mobile) |
-| Form panel padding | 2rem (mobile), 2rem (desktop) |
-| Form column layout | Full Name + Username in 2-col row, Email/Password/checkbox full-width |
-| Social icon circles | 40px × 40px, border-radius 50% |
-| "or" divider | 1px line (#e6e6e6) with centered "or" text on white background |
-| Checkbox | Custom styled with FontAwesome icons |
-| Button | Full width, `padding: 1rem`, border-radius `0.25rem` (4px) |
-| Responsive breakpoint | 992px (stacks vertically) |
+### Requirement: Split layout renders two panels
 
-## Gherkin Requirements
+The system SHALL render a horizontal split layout with a left image panel
+(40% width) and a right form panel (60% width) on desktop viewports.
 
-### Feature: Joinhub — Split-layout signup form with social login
+#### Scenario: Desktop split layout
 
-#### Scenario: Desktop split layout renders two panels
-  Given the page loads on a viewport wider than 992px
-  Then a horizontal split layout is displayed
-  And the left panel shows a background image with purple overlay (40% opacity of #6807f9)
-  And the left panel displays "Welcome to signup form" heading and descriptive text in white
-  And the right panel shows the signup form on white background
+- **GIVEN** the page loads on a viewport wider than 992px
+- **THEN** a horizontal split layout SHALL be displayed
+- **AND** the left panel SHALL show a background image with a purple overlay
+  (`#6807f9` at 40% opacity)
+- **AND** the left panel SHALL display "Welcome to signup form" heading
+  and descriptive text in white
+- **AND** the right panel SHALL show the signup form on white background
 
-#### Scenario: Mobile layout stacks panels vertically
-  Given the page loads on a viewport narrower than 992px
-  Then the image panel appears on top
-  And the form panel appears below
+#### Scenario: Mobile vertical layout
 
-#### Scenario: Social login buttons render
-  Given the form panel is visible
-  Then three social login buttons are displayed: Google, Facebook, Twitter
-  And each button is a 40px circle with a thin border
-  And on hover each button gets a purple background (#6807f9) with white icon
+- **GIVEN** the page loads on a viewport narrower than 992px
+- **THEN** the image panel SHALL appear on top
+- **AND** the form panel SHALL appear below
 
-#### Scenario: "or" divider
-  Given the social buttons are visible
-  Then an "or" text divider with horizontal lines appears below the social buttons
+### Requirement: Social login buttons
 
-#### Scenario: Form fields render correctly
-  Given the form is visible
-  Then a "Full Name" text input is shown
-  And a "Username" text input is shown next to Full Name (2-column row)
-  And an "Email Address" text input is shown (full width)
-  And a "Password" input is shown (type=password, full width)
+The form panel SHALL render three circular social login buttons (Google,
+Facebook, Twitter) as 40px circles with thin borders.
 
-#### Scenario: Terms checkbox
-  Given the form is visible
-  Then a checkbox labeled "I agree all statements in terms of service" is displayed
-  And the checkbox is checked by default
+#### Scenario: Social buttons render
 
-#### Scenario: Submit button
-  Given the form is visible
-  Then a "Create an account" button is shown at full width
-  And the button has blue background (#007bff) with white text
-  And on hover the button darkens to #0069d9
+- **GIVEN** the form panel is visible
+- **THEN** three social login buttons SHALL be displayed: Google, Facebook, Twitter
+- **AND** each button SHALL be a 40px circle with a thin border
 
-#### Scenario: Sign-in link
-  Given the form is visible
-  Then "I'm already a member!" text is displayed below the form
-  And "Sign In" is a clickable link styled in #007bff
+#### Scenario: Social button hover
 
-#### Scenario: Form validation
-  Given the user submits the form with empty required fields
-  Then the form prevents submission (HTML5 required validation)
+- **GIVEN** the social buttons are visible
+- **WHEN** a user hovers over a social button
+- **THEN** the button SHALL get a purple background (`#6807f9`) with white icon
 
-#### Scenario: Footer with Component Dock link
-  Given the page is fully loaded
-  Then a footer is present with a link to "https://www.componentdock.com/" branded as "Component Dock"
+### Requirement: Or divider
 
-## Verification Checklist
+The form panel SHALL render an "or" text divider with horizontal lines
+below the social buttons.
 
-- [ ] Roboto font loaded from Google Fonts (400)
-- [ ] Centered page heading "Sign Up #06"
-- [ ] Split layout: image panel 40% left, form 60% right (desktop)
-- [ ] Left panel: background image with purple overlay (#6807f9, 40% opacity)
-- [ ] Left panel: "Welcome to signup form" heading + paragraph text in white
-- [ ] Card shadow: 0px 10px 34px -15px rgba(0,0,0,0.24)
-- [ ] 3 social login buttons (Google, Facebook, Twitter) as 40px circles
-- [ ] Social icons turn purple (#6807f9) on hover
-- [ ] "or" divider with horizontal line
-- [ ] 4 form fields: Full Name, Username (2-col), Email, Password
-- [ ] Custom checkbox with FontAwesome icons for terms agreement
-- [ ] "Create an account" button: full width, #007bff, 4px radius
-- [ ] "I'm already a member! Sign In" link
-- [ ] Responsive: stacks at 992px
-- [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
-- [ ] 100% test coverage (lines/functions/branches/statements)
-- [ ] CNAME: joinhub.free.componentdock.com
-- [ ] Homepage: https://joinhub.free.componentdock.com
+#### Scenario: Or divider visible
+
+- **GIVEN** the social buttons are visible
+- **THEN** an "or" text divider with horizontal lines SHALL appear below
+  the social buttons
+
+### Requirement: Form fields render correctly
+
+The form SHALL contain four input fields: Full Name and Username in a
+2-column row, Email Address full width, and Password full width.
+
+#### Scenario: All form fields present
+
+- **GIVEN** the form is visible
+- **THEN** a "Full Name" text input SHALL be shown
+- **AND** a "Username" text input SHALL be shown next to Full Name (2-column row)
+- **AND** an "Email Address" text input SHALL be shown (full width)
+- **AND** a "Password" input SHALL be shown (type=password, full width)
+
+### Requirement: Terms checkbox
+
+The form SHALL display a checkbox labeled "I agree all statements in terms
+of service" that is checked by default.
+
+#### Scenario: Terms checkbox renders checked
+
+- **GIVEN** the form is visible
+- **THEN** a checkbox labeled "I agree all statements in terms of service"
+  SHALL be displayed
+- **AND** the checkbox SHALL be checked by default
+
+#### Scenario: Terms checkbox toggles
+
+- **GIVEN** the terms checkbox is visible
+- **WHEN** the user clicks the checkbox
+- **THEN** the checkbox SHALL toggle its checked state
+
+### Requirement: Submit button
+
+The form SHALL render a full-width "Create an account" button with blue
+background (`#007bff`) and white text.
+
+#### Scenario: Submit button renders
+
+- **GIVEN** the form is visible
+- **THEN** a "Create an account" button SHALL be shown at full width
+- **AND** the button SHALL have blue background (`#007bff`) with white text
+
+#### Scenario: Submit button hover
+
+- **GIVEN** the submit button is visible
+- **WHEN** a user hovers over the button
+- **THEN** the button SHALL darken to `#0069d9`
+
+### Requirement: Sign-in link
+
+The form SHALL display "I'm already a member!" text with a "Sign In" link
+styled in blue below the form.
+
+#### Scenario: Sign-in link renders
+
+- **GIVEN** the form is visible
+- **THEN** "I'm already a member!" text SHALL be displayed below the form
+- **AND** "Sign In" SHALL be a clickable link styled in `#007bff`
+
+### Requirement: Form validation
+
+The form SHALL prevent submission when required fields are empty (HTML5
+required validation).
+
+#### Scenario: Empty fields blocked
+
+- **GIVEN** the user submits the form with empty required fields
+- **THEN** the form SHALL prevent submission via HTML5 required validation
+
+#### Scenario: Valid form submits
+
+- **GIVEN** the user fills all required fields
+- **WHEN** the user clicks "Create an account"
+- **THEN** the form SHALL submit (preventDefault called, no navigation)
+
+### Requirement: Footer with Component Dock link
+
+The page SHALL include a footer linking to Component Dock.
+
+#### Scenario: Footer renders
+
+- **GIVEN** the page is fully loaded
+- **THEN** a footer SHALL be present with a link to
+  `https://www.componentdock.com/` branded as "Component Dock"
+
+### Requirement: No ColorLib references in app code
+
+The app source files SHALL NOT contain any references to ColorLib in code,
+comments, or data.
+
+#### Scenario: No colorlib strings
+
+- **GIVEN** the joinhub app source is inspected
+- **THEN** there SHALL be no strings containing "colorlib" in any file
+  under `apps/joinhub/src/`
+
+### Requirement: Responsive layout
+
+The layout SHALL be responsive and stack vertically on mobile.
+
+#### Scenario: Mobile stacking
+
+- **GIVEN** the viewport is narrower than 992px
+- **THEN** the split layout SHALL stack vertically
+- **AND** the image panel SHALL appear above the form panel

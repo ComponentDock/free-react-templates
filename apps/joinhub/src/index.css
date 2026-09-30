@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-purple: #6807f9;
+  --color-brand-blue: #007bff;
+  --color-brand-blue-dark: #0069d9;
+  --color-page-bg: #ffffff;
+  --color-input-border: #ced4da;
+  --color-input-text: #495057;
+  --color-divider: #e6e6e6;
+  --color-or-text: #999999;
+  --color-label-text: rgba(0, 0, 0, 0.3);
+  --color-checkbox-text: rgba(0, 0, 0, 0.4);
+  --color-heading: #000000;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+  }
+}
