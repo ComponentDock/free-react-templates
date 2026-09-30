@@ -20,7 +20,7 @@ TypeScript.
 - **Preview (LIVE, verified 2026-09-30 by direct fetch):**
   **https://preview.colorlib.com/theme/started/**
   (HTTP 200, 17,941 bytes, `<title>Started &mdash; Colorlib Website
-  Template</title>`)
+Template</title>`)
 - **Preview CSS:** `css/style.css` (14,223 bytes, hand-written template
   block — carries BOTH fonts and all tokens) + `css/bootstrap.min.css`
   (base layout only; the template body rule lives in style.css, NOT
@@ -42,7 +42,7 @@ TypeScript.
   ~400) + **Roboto Mono** (ALL body copy, nav links, lists; 400). Load
   **Google Fonts `<link>`** in `index.html`. Body rule:
   `font-family: 'Roboto Mono', monospace; font-size: 1rem; line-height:
-  1.7; color: #999999`.
+1.7; color: #999999`.
 - **Assets:** hero background (source `images/hero_2.jpg` — design-book
   product photo), case-study photos (`images/work_1.jpg`, `work_2.jpg`),
   hero author avatar + testimonial avatars (`images/person_1..3.jpg`) —
@@ -69,28 +69,28 @@ TypeScript.
 (extracted from the live preview stylesheet `css/style.css` + verified
 against the screenshot; CSS values are canonical)
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Heading font | `"Oswald", sans-serif` (Google Fonts 400/500/700; logo 700) | applied to `h1, h2, h3, h5, .site-logo`, hero blockquote |
-| Body font | `"Roboto Mono", monospace` (Google Fonts 400) | 1rem, line-height 1.7 — body copy, nav links, service lists, footer |
-| Body color | `#999999` | page background `#fff`; paragraph text muted gray |
-| Brand accent | `#434ba4` (periwinkle indigo) | nav-link hover, dropdown active link, mobile-menu hover, service icon tint (source flaticon SVGs are this indigo — recolor lucide icons with it) |
-| Ink | `#000` | all headings, logo, CTA button fill, `.cta-box` border, footer widget headings + copyright, hero quote |
-| Light section bg | `#f8f9fa` | case-study (work) band background behind the two `.half` rows (screenshot: gray band under the services) |
-| Nav link color | `rgba(0, 0, 0, 0.6)` | `letter-spacing: .05em`; active link `#000`; hover `#434ba4` |
-| Widget body | `rgba(0, 0, 0, 0.5)` | footer paragraph text |
-| Social icon gray | `#ccc` | footer social glyphs |
-| Buttons (`.contact-now`) | black `#000` fill, white text, `padding: 10px 20px`, square corners (no radius), no shadow | hero CTA "Hire Us Now" — sits absolute bottom-left INSIDE the cta-box, flush to its border |
-| Hero quote | Oswald ~3rem, `line-height: 1.0`, black, max-width 500px, absolute left 8% overlapping the photo top; decorative `”` glyph 4rem at left −40px; author row: 50px round avatar + cite (Roboto Mono, normal style) | `.site-hero` has `margin-top: 10rem` |
-| Hero photo | `.bg-img` height 500px, `background-size: cover`, center | design-book product photo |
-| CTA box | absolute right 8%, max-width 300px, `border: 2px solid #000`, white bg, `padding: 30px 30px 70px` (bottom padding clears the overlapping button); `h2` 26px, margin-bottom 30px | "We're Available For Work" card |
-| Section rhythm | `.site-section { padding: 3em 0 }`; `.half { margin-bottom: 50px; min-height: 500px }`; `.half-content { padding: 40px }`; footer `padding: 7rem 0`, font-size 14px | |
-| Work headings | `.half-content h3` 40px black, margin-bottom 30px | "kMix Design", "Dieter Rams" |
-| Service cards | `.service { text-align: center; padding: 20px }`; icon img 60px, margin-bottom 30px; `h3` 20px black, margin-bottom 10px; list items black, centered | 3-up on desktop (col-lg-4) |
-| Testimonials | `.testimonial img` 80px round (`border-radius: 50%`), margin-bottom 30px; `h3` 20px black; role `span` muted; blockquote quoted lorem | 3-up (col-lg-4) |
-| Circles (`50%`) | avatars only (hero author 50px, testimonials 80px) | EVERYTHING else square — no border-radius on buttons, cards, boxes |
-| Dropdowns | white bg, white arrow-top caret, black links, hover/active `#434ba4`; min-width 200px; items 5px 20px padding, `text-transform: none` | nav "Services" |
-| Mobile menu | off-canvas slide-in from right (`translateX`), logo + close X top, stacked links 20px padding / 20px font, hover `#434ba4`; hamburger = icomoon `icon-menu` glyph → lucide `Menu` | `aria-expanded` on the toggle |
+| Token                    | Value                                                                                                                                                                                                           | Notes                                                                                                                                            |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Heading font             | `"Oswald", sans-serif` (Google Fonts 400/500/700; logo 700)                                                                                                                                                     | applied to `h1, h2, h3, h5, .site-logo`, hero blockquote                                                                                         |
+| Body font                | `"Roboto Mono", monospace` (Google Fonts 400)                                                                                                                                                                   | 1rem, line-height 1.7 — body copy, nav links, service lists, footer                                                                              |
+| Body color               | `#999999`                                                                                                                                                                                                       | page background `#fff`; paragraph text muted gray                                                                                                |
+| Brand accent             | `#434ba4` (periwinkle indigo)                                                                                                                                                                                   | nav-link hover, dropdown active link, mobile-menu hover, service icon tint (source flaticon SVGs are this indigo — recolor lucide icons with it) |
+| Ink                      | `#000`                                                                                                                                                                                                          | all headings, logo, CTA button fill, `.cta-box` border, footer widget headings + copyright, hero quote                                           |
+| Light section bg         | `#f8f9fa`                                                                                                                                                                                                       | case-study (work) band background behind the two `.half` rows (screenshot: gray band under the services)                                         |
+| Nav link color           | `rgba(0, 0, 0, 0.6)`                                                                                                                                                                                            | `letter-spacing: .05em`; active link `#000`; hover `#434ba4`                                                                                     |
+| Widget body              | `rgba(0, 0, 0, 0.5)`                                                                                                                                                                                            | footer paragraph text                                                                                                                            |
+| Social icon gray         | `#ccc`                                                                                                                                                                                                          | footer social glyphs                                                                                                                             |
+| Buttons (`.contact-now`) | black `#000` fill, white text, `padding: 10px 20px`, square corners (no radius), no shadow                                                                                                                      | hero CTA "Hire Us Now" — sits absolute bottom-left INSIDE the cta-box, flush to its border                                                       |
+| Hero quote               | Oswald ~3rem, `line-height: 1.0`, black, max-width 500px, absolute left 8% overlapping the photo top; decorative `”` glyph 4rem at left −40px; author row: 50px round avatar + cite (Roboto Mono, normal style) | `.site-hero` has `margin-top: 10rem`                                                                                                             |
+| Hero photo               | `.bg-img` height 500px, `background-size: cover`, center                                                                                                                                                        | design-book product photo                                                                                                                        |
+| CTA box                  | absolute right 8%, max-width 300px, `border: 2px solid #000`, white bg, `padding: 30px 30px 70px` (bottom padding clears the overlapping button); `h2` 26px, margin-bottom 30px                                 | "We're Available For Work" card                                                                                                                  |
+| Section rhythm           | `.site-section { padding: 3em 0 }`; `.half { margin-bottom: 50px; min-height: 500px }`; `.half-content { padding: 40px }`; footer `padding: 7rem 0`, font-size 14px                                             |                                                                                                                                                  |
+| Work headings            | `.half-content h3` 40px black, margin-bottom 30px                                                                                                                                                               | "kMix Design", "Dieter Rams"                                                                                                                     |
+| Service cards            | `.service { text-align: center; padding: 20px }`; icon img 60px, margin-bottom 30px; `h3` 20px black, margin-bottom 10px; list items black, centered                                                            | 3-up on desktop (col-lg-4)                                                                                                                       |
+| Testimonials             | `.testimonial img` 80px round (`border-radius: 50%`), margin-bottom 30px; `h3` 20px black; role `span` muted; blockquote quoted lorem                                                                           | 3-up (col-lg-4)                                                                                                                                  |
+| Circles (`50%`)          | avatars only (hero author 50px, testimonials 80px)                                                                                                                                                              | EVERYTHING else square — no border-radius on buttons, cards, boxes                                                                               |
+| Dropdowns                | white bg, white arrow-top caret, black links, hover/active `#434ba4`; min-width 200px; items 5px 20px padding, `text-transform: none`                                                                           | nav "Services"                                                                                                                                   |
+| Mobile menu              | off-canvas slide-in from right (`translateX`), logo + close X top, stacked links 20px padding / 20px font, hover `#434ba4`; hamburger = icomoon `icon-menu` glyph → lucide `Menu`                               | `aria-expanded` on the toggle                                                                                                                    |
 
 ## Section inventory (DOM order, home page)
 
@@ -127,38 +127,51 @@ against the screenshot; CSS values are canonical)
    (col-lg-3): "About Us" + blurb (rgba(0,0,0,0.5)); "Navigation"
    (Home, Services, About, Contact); "Work" (Dieter Rams, kMix Design);
    "Social" (Facebook, Twitter, Instagram, Linkedin, Youtube — icon span
-   + label rows, icons `#ccc`). Centered copyright bar: "Copyright © All
-   rights reserved | This template is made with ♥ by Colorlib" —
-   **replace attribution with the Component Dock link**
-   ("Made with Component Dock" → https://www.componentdock.com/).
+   - label rows, icons `#ccc`). Centered copyright bar: "Copyright © All
+     rights reserved | This template is made with ♥ by Colorlib" —
+     **replace attribution with the Component Dock link**
+     ("Made with Component Dock" → https://www.componentdock.com/).
 
 Notes: `portfolio.html`, `about.html`, `contact.html` are separate source
 pages — out of scope; keep nav/footer links as anchors on the single home
 page. No carousel, slider, counter, or form exists on the source home
 page — do not invent one.
 
-## Gherkin requirements
+## Requirements
+
+(Gherkin-style scenarios per requirement — each scenario lists Given/When/Then
+steps mirroring the component tests.)
 
 ### Requirement: Navbar renders wordmark, right-aligned menu and Services dropdown
 
+The page SHALL render a white navbar with the Oswald 700 wordmark "Upstart" on the left, a right-aligned Roboto Mono menu (Home active, Portfolio, Services with dropdown, About, Contact) with .05em tracking and rgba(0,0,0,0.6) links, brand-indigo #434ba4 hover states, and a Services dropdown toggle exposing aria-expanded.
+
 #### Scenario: Desktop navigation
+
 ```
 Given the user visits the Upstart home page
-Then a white navbar is displayed with the wordmark "Started" (Oswald 700, 25px, black) on the left
+Then a white navbar is displayed with the wordmark "Upstart" (Oswald 700, 25px, black) on the left
 And the right-aligned menu links are "Home", "Portfolio", "Services", "About", "Contact" in Roboto Mono with .05em letter-spacing and color rgba(0,0,0,0.6)
 And "Home" is the active link, colored black #000
 And "Services" shows a chevron-down glyph indicating a dropdown
 ```
 
 #### Scenario: Services dropdown
+
 ```
 Given the desktop navbar is visible
-When the user hovers (or keyboard-focuses) "Services"
-Then a white dropdown opens (arrow-top caret) with items "Web Design", "WP Development", "Front End", "Sub Menu" (nested chevron)
+When the user activates "Services" (click, tap, or keyboard)
+Then a white dropdown panel opens with items "Web Design", "WP Development", "Front End", "Sub Menu" (nested chevron)
+And the toggle exposes aria-expanded=true
 And dropdown links are black and turn brand indigo #434ba4 on hover/active
+(Implementation note: interaction follows the repo precedent — click/tap/keyboard
+toggle with aria-expanded + conditional render; hover/focus COLOR styling is
+preserved on every link. The source's pure-CSS :hover panel is approximated
+this way for accessibility and testability.)
 ```
 
 #### Scenario: Link hover state
+
 ```
 Given the navbar is visible
 When the user hovers any nav link
@@ -167,12 +180,15 @@ Then the link color becomes #434ba4
 
 ### Requirement: Mobile off-canvas menu
 
+On mobile viewports the page SHALL hide the inline menu and show a hamburger toggle (aria-expanded) that opens an off-canvas panel sliding in from the right with the "Upstart" wordmark, a close button, stacked links, and collapsible Services sub-items.
+
 #### Scenario: Menu toggle
+
 ```
 Given the viewport is mobile-sized
 Then the inline nav links are hidden and a hamburger icon button is shown
 When the user activates the hamburger
-Then an off-canvas menu slides in from the right with the "Started" wordmark, a close (X) button, and stacked links "Home", "Portfolio", "Services" (collapsible sub-items), "About", "Contact"
+Then an off-canvas menu slides in from the right with the "Upstart" wordmark, a close (X) button, and stacked links "Home", "Portfolio", "Services" (collapsible sub-items), "About", "Contact"
 And the toggle exposes aria-expanded=true
 When the user activates the close button
 Then the menu slides out and aria-expanded returns to false
@@ -180,7 +196,10 @@ Then the menu slides out and aria-expanded returns to false
 
 ### Requirement: Hero shows pull-quote over photo with bordered CTA card
 
+The hero SHALL show a 500px cover-photo band with an absolutely positioned Oswald pull-quote overlapping its top-left (decorative right-double-quote glyph + 50px round-avatar author row) and a bordered CTA card overlapping the top-right with a square black "Hire Us Now" button flush at the card’s bottom-left corner.
+
 #### Scenario: Hero quote and photo
+
 ```
 Given the hero is visible
 Then a 500px-tall cover photo band (picsum placeholder upstart-hero) is displayed
@@ -190,6 +209,7 @@ And an author row shows a 50px round avatar with the cite "Steve Jobs" (normal f
 ```
 
 #### Scenario: CTA box
+
 ```
 Given the hero is visible
 Then a bordered card (2px solid #000, max-width 300px, right 8%, overlapping the photo top) shows the Oswald h2 "We're Available For Work" (26px) and a muted lorem blurb
@@ -198,7 +218,10 @@ And a black button "Hire Us Now" (white text, padding 10px 20px, square corners)
 
 ### Requirement: Services grid lists three disciplines
 
+The services section SHALL render three equal columns on white, each with a 60px indigo #434ba4 line icon, a 20px black Oswald title, a muted blurb and a centered black capability list (Mobile Application, E-Commerce, Web Application).
+
 #### Scenario: Three service columns
+
 ```
 Given the services section is visible on white
 Then three equal columns are displayed (stacked on mobile)
@@ -210,7 +233,10 @@ And column 3 is "Web Application" with items "React Web App", "Vue JS Web App", 
 
 ### Requirement: Alternating case-study rows
 
+The work section SHALL render two alternating 50/50 case-study rows (min-height 500px) on the #f8f9fa band — first image left, second image right — each with a 40px black heading, blurb, Client/Date meta lines and a "View Case Study" link.
+
 #### Scenario: First case study (image left)
+
 ```
 Given the work section is visible on the #f8f9fa band
 Then the first row is a 50/50 split (min-height 500px) with a cover photo (picsum upstart-work-1) on the LEFT and content on the RIGHT
@@ -218,6 +244,7 @@ And the content shows the 40px black Oswald heading "kMix Design", a lorem blurb
 ```
 
 #### Scenario: Second case study (image right)
+
 ```
 Given the work section is visible
 Then the second row mirrors the first: content LEFT, cover photo (picsum upstart-work-2) RIGHT
@@ -226,7 +253,10 @@ And the content shows the heading "Dieter Rams", a lorem blurb, "Client: XYZ Inc
 
 ### Requirement: Testimonials render three quoted cards
 
+The testimonials section SHALL render three quoted cards on white, each with an 80px round avatar, a 20px black Oswald name, a muted "Co-Founder" role and a quoted blockquote (Steve Jobs, John Doe, John Smith).
+
 #### Scenario: Testimonial cards
+
 ```
 Given the testimonials section is visible on white
 Then three columns are displayed (stacked on mobile)
@@ -236,7 +266,10 @@ And the names are "Steve Jobs", "John Doe", and "John Smith"
 
 ### Requirement: Footer renders four widgets and Component Dock attribution
 
+The footer SHALL render on white with ~7rem vertical padding and 14px text: four widgets (About Us, Navigation, Work, Social with #ccc icon glyphs) and a centered copyright bar linking "Component Dock" to https://www.componentdock.com/.
+
 #### Scenario: Footer content
+
 ```
 Given the footer is visible
 Then it renders on white with ~7rem vertical padding and 14px text
@@ -249,7 +282,10 @@ And the centered copyright bar shows "Copyright © All rights reserved" plus a "
 
 ### Requirement: Global fidelity and provenance rules
 
+The rendered page SHALL apply the extracted design tokens site-wide (Oswald + Roboto Mono, accent #434ba4, black ink, #999999 body, #f8f9fa band, square corners except 50% avatars), SHALL keep all source-template provenance out of apps/upstart, and SHALL use only picsum.photos/seed/upstart-* placeholders and lucide-react / inline-SVG icons.
+
 #### Scenario: Design tokens applied
+
 ```
 Given the rendered page
 Then the heading font is Oswald and the body font is Roboto Mono (Google Fonts), applied site-wide
@@ -259,6 +295,7 @@ And case-study rows sit on the #f8f9fa band with 50/50 alternating halves
 ```
 
 #### Scenario: No ColorLib provenance in app code
+
 ```
 Given the apps/upstart source tree
 Then no file (code, comments, CSS notes, README) references ColorLib or preview.colorlib.com
@@ -267,6 +304,7 @@ And the footer links https://www.componentdock.com/ as "Component Dock"
 ```
 
 #### Scenario: Placeholder assets only
+
 ```
 Given the rendered page
 Then all images are deterministic picsum.photos/seed/upstart-* placeholders
@@ -282,8 +320,7 @@ And no source template assets or CSS files are copied
       `@free-react-templates/upstart`, CNAME
       `upstart.free.componentdock.com`, homepage set, lockfile registered
       via root `npm install`, `injectUiSource()` in `vite.config.ts`).
-- [ ] Section order matches the source 1:1: navbar (wordmark + right menu
-      + Services dropdown) → hero (pull-quote over 500px photo + bordered
+- [ ] Section order matches the source 1:1: navbar (wordmark + right menu + Services dropdown) → hero (pull-quote over 500px photo + bordered
       CTA card) → 3-column services → 2 alternating case-study halves on
       the #f8f9fa band → 3-up testimonials → 4-widget white footer +
       copyright bar.
