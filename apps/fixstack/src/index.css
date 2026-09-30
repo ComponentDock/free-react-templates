@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens from the original snippet's palette: */
+
+  /* Page gradient — vertical, purple top → pink bottom. */
+  --color-gradient-top: #c471f5;
+  --color-gradient-bottom: #fa71cd;
+
+  /* Table card background. */
+  --color-card: #ffffff;
+
+  /* Header labels — bold uppercase, 14px. */
+  --color-header: #333333;
+
+  /* Fixed first-column body cells (darker gray). */
+  --color-first-col: #666666;
+
+  /* Scrollable-column body cells (lighter gray). */
+  --color-other-col: #999999;
+
+  /* Thin light-gray row separators. */
+  --color-separator: #f2f2f2;
+
+  /* Original fonts: Roboto Medium (500) + Bold (700) via Google Fonts. */
+  --font-sans:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif;
+}
