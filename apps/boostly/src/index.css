@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Boostly (light peach/orange palette);
+   the custom variant is declared so shared ui components that ship `dark:`
+   utilities still compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Boostly design tokens — startup landing palette.
+     Brand orange #FF9100: buttons, hero eyebrow, link hovers, pricing band,
+     plan price, accordion open titles, blog badge, footer heart + links.
+     Gradient mid-tone #DF7E00 for the header Join Us button. Hero peach
+     #FFDDB5 behind the split hero; about strip #FFE0BB; deep plum #2D0A31
+     behind testimonials; ink #000 headings; body copy #5E5E5E; pricing
+     feature list #7977A2; collapsed accordion title #010A44; footer text
+     #949494. Josefin Sans for headings, Roboto for body (Google Fonts via
+     index.html). Buttons: 5px radius, orange fill, black wipe-on-hover;
+     section rhythm 120px top / 100px bottom. */
+  --color-brand: #ff9100;
+  --color-brand-mid: #df7e00;
+  --color-hero: #ffddb5;
+  --color-peach: #ffe0bb;
+  --color-plum: #2d0a31;
+  --color-ink: #000000;
+  --color-body: #5e5e5e;
+  --color-feature: #7977a2;
+  --color-collapsed: #010a44;
+  --color-foot: #949494;
+
+  --font-heading: 'Josefin Sans', ui-sans-serif, sans-serif;
+  --font-body: 'Roboto', ui-sans-serif, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: #fff;
+    color: var(--color-body);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    color: var(--color-ink);
+  }
+}
