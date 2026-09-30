@@ -2841,7 +2841,7 @@
 - [x] **Skater** — [colorlib](https://colorlib.com/wp/template/skater/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skater-free-template.jpg) · [cruiser](https://free-react-templates-cruiser.surge.sh)
 - [x] **Soccer** — [colorlib](https://colorlib.com/wp/template/soccer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/soccer-free-template.jpg) · [striker](https://striker.free.componentdock.com)
 - [x] **Specer** — [colorlib](https://colorlib.com/wp/template/specer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/specer-free-template.jpg) · [pitchside](https://pitchside.free.componentdock.com)
-- [ ] **Sportsteam** — [colorlib](https://colorlib.com/wp/template/sportsteam/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sportsteam-free-template.jpg)
+- [~] **Sportsteam** — [colorlib](https://colorlib.com/wp/template/sportsteam/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sportsteam-free-template.jpg)
 - [ ] **Sportz** — [colorlib](https://colorlib.com/wp/template/sportz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sportz-free-template.jpg)
 - [x] **Thebasketball** — [colorlib](https://colorlib.com/wp/template/thebasketball/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thebasketball-free-template.jpg) · [Hoopside](https://hoopside.free.componentdock.com)
 
