@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette: coral→pink gradient, light gray page */
+  --color-page-bg: #fafafa;
+  --color-brand-from: #f75959;
+  --color-brand-to: #f35587;
+  --color-accent: #f35587;
+  --color-accent-dark: #d63f6e;
+  --color-member-text: #808080;
+  --color-input-bg: rgba(0, 0, 0, 0.03);
+  --color-placeholder: rgba(0, 0, 0, 0.7);
+  --color-card-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Lato', Arial, sans-serif;
+  }
+}
