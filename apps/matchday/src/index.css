@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Matchday (navy/orange sports club
+   palette); the custom variant is declared so shared ui components that ship
+   `dark:` utilities still compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Matchday design tokens — football club palette.
+     Brand orange #ffa54b: buttons, header border, active links, subtitles,
+     countdown chip, counters, CTA strip. Navy #161d4a: header, countdown
+     chip, event/game rows, newsletter input. Deep navy #0a1123 footer,
+     bar #070d1d. Row #242b56 list strips. Mist #d7d9e5 news band + footer
+     values. Live red #ff0410 LIVE badge. VS red #d80033 hero mark. */
+  --color-brand: #ffa54b;
+  --color-navy: #161d4a;
+  --color-navy-alt: #161a42;
+  --color-navy-deep: #0a1123;
+  --color-bar: #070d1d;
+  --color-row: #242b56;
+  --color-mist: #d7d9e5;
+  --color-live: #ff0410;
+  --color-vs: #d80033;
+  --color-ink: #050505;
+
+  /* Roboto for everything (Google Fonts via index.html). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #fff;
+    color: #a5a5a5;
+    font-family: var(--font-sans);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
