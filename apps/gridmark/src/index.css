@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Design tokens from the schedule snippet's final cascade: */
+
+  /* Pure white page — NOT the blue-gray canvas of sibling table pages. */
+  --color-page: #ffffff;
+
+  /* Table ink — the final table rule color. */
+  --color-ink: #212529;
+
+  /* Body text — the final body rule sets `color: gray`. */
+  --color-body-ink: gray;
+
+  /* Near-black — headings, day headers, and month-nav links. */
+  --color-heading: #000000;
+
+  /* Salmon pink — the signature accent (class times, link hovers). */
+  --color-accent: #ffafb0;
+
+  /* Semibold gray — class-card labels. */
+  --color-label: #666666;
+
+  /* White — the table surface. */
+  --color-surface: #ffffff;
+
+  /* Light gray — the 1px table grid borders. */
+  --color-line: #dee2e6;
+
+  /* Whitesmoke — body-cell hover background. */
+  --color-hover: #f5f5f5;
+
+  /* Faint gray — the × "no class" mark. */
+  --color-mark: rgba(0, 0, 0, 0.3);
+
+  /* Original font: "Poppins" weights 400/600/700 (via Google Fonts link). */
+  --font-poppins: 'Poppins', Arial, sans-serif;
+}
