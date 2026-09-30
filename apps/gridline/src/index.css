@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens from the original snippet's palette: */
+
+  /* Near-black ink — page heading and table header labels. */
+  --color-ink: #212529;
+
+  /* Light gray — table body text (rendered at font-weight 300). */
+  --color-muted: #777777;
+
+  /* Row separator lines (1px, horizontal only — no vertical borders). */
+  --color-line: #dee2e6;
+
+  /* Accent blue — checkbox hover/focus border and checked fill. */
+  --color-accent: #007bff;
+
+  /* Page background. */
+  --color-surface: #ffffff;
+
+  /* Original font: "Roboto" via Google Fonts (loaded in index.html). */
+  --font-sans:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif;
+}
