@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens for the dark data-table snippet palette: */
+
+  /* Dark plum-charcoal page — the signature ground of this snippet. */
+  --color-page: #3c373e;
+
+  /* White — the page heading and uppercase table header labels. */
+  --color-heading: #ffffff;
+
+  /* Faint gray — table body text (rendered at font-weight 300). */
+  --color-muted: #777777;
+
+  /* Faint white — default name/details links and the occupation blurb. */
+  --color-faint: rgba(255, 255, 255, 0.3);
+
+  /* Signature yellow — link color on row hover/focus. */
+  --color-highlight: #fdd114;
+
+  /* Original font: "Roboto" via Google Fonts (loaded in index.html). */
+  --font-sans:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif;
+}
