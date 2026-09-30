@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette: Bootstrap-inspired blue. */
+  --color-primary: #007bff;
+  --color-primary-hover: #0069d9;
+
+  /* Text. */
+  --color-body-text: #212529;
+  --color-heading: #212529;
+  --color-placeholder: #6c757d;
+  --color-caption: #888888;
+  --color-link: #007bff;
+  --color-link-hover: #0056b3;
+
+  /* Form controls. */
+  --color-input-border: #ced4da;
+  --color-input-focus: #80bdff;
+
+  /* Checkbox. */
+  --color-checkbox-unchecked: #e6e6e6;
+
+  /* Fonts: Roboto (matches original). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    margin: 0;
+    color: var(--color-body-text);
+  }
+}
