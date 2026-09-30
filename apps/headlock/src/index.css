@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens from the original snippet's palette: */
+
+  /* Page background — white. */
+  --color-surface: #ffffff;
+
+  /* Body cell text — shared across all five variants. */
+  --color-cell: #808080;
+
+  /* Ver1 — periwinkle header / lavender even-row zebra. */
+  --color-head-ver1: #6c7ae0;
+  --color-zebra: #f8f6ff;
+
+  /* Ver2 — red header text. */
+  --color-accent-red: #fa4251;
+
+  /* Ver3 — dark card / rows, green header text. */
+  --color-card-dark: #393939;
+  --color-row-dark: #222222;
+  --color-accent-green: #00ad5f;
+
+  /* Ver4 — blue header text. */
+  --color-accent-blue: #4272d7;
+
+  /* Ver5 — gray header text / gray card-rows / hover. */
+  --color-head-gray: #555555;
+  --color-row-gray: #f7f7f7;
+  --color-row-hover: #ebebeb;
+
+  /* Hairline separators (ver2/ver4 row borders, ver4 underline). */
+  --color-hairline: #f2f2f2;
+
+  /* Muted footer text / near-black hover ink. */
+  --color-muted: #777777;
+  --color-ink: #212529;
+
+  /* Original fonts: Lato Regular (400) + Bold (700) via Google Fonts. */
+  --font-sans:
+    'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif;
+}
