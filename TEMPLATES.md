@@ -2862,7 +2862,7 @@
 - [x] **Started** — [colorlib](https://colorlib.com/wp/template/started/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/started-free-template.jpg) · [upstart](https://free-react-templates-upstart.surge.sh)
 - [x] **Startup 2** — [colorlib](https://colorlib.com/wp/template/startup-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/startup2-free-template.jpg) · [ascent](https://ascent.free.componentdock.com)
 - [x] **Startupbusiness** — [colorlib](https://colorlib.com/wp/template/startupbusiness/) · [venture](https://venture.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/startupbusiness-free-template.jpg)
-[~] **Thestartup** — [colorlib](https://colorlib.com/wp/template/thestartup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thestartup-free-template.jpg)
+[x] **Thestartup** — [colorlib](https://colorlib.com/wp/template/thestartup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thestartup-free-template.jpg) · [boostly](https://free-react-templates-boostly.surge.sh)
 - [x] **Wordpress App Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-app-themes/) · [wordpressapp](https://wordpressapp.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg)
 
 ## Table (25)
