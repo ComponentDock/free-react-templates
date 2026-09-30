@@ -41,33 +41,33 @@
 
 ## Task outline (for the implementer)
 
-- [ ] Scaffold `apps/rowglow` from the simplest existing app; package
+- [x] Scaffold `apps/rowglow` from the simplest existing app; package
       `@free-react-templates/rowglow`; CNAME
       `rowglow.free.componentdock.com`; homepage set; `npm install` at
       repo root (lockfile registration); `injectUiSource()` in
       `vite.config.ts`.
-- [ ] `@theme` tokens in `src/index.css`: ink `#212529`, muted `#777`,
+- [x] `@theme` tokens in `src/index.css`: ink `#212529`, muted `#777`,
       subtext `#b3b3b3`, page `#efefef`, surface `#fff`; Roboto via
       Google Fonts link (300/400) in `index.html`; body text weight 300.
-- [ ] TDD per section (colocated `*.test.tsx`, 100% coverage):
+- [x] TDD per section (colocated `*.test.tsx`, 100% coverage):
       PageShell + heading → DataTable (thead borderless 5 cols, 4 rows,
       borderless body cells, Occupation subtext) → RowHover glow →
       responsive wrapper behavior → ComponentDockFooter attribution.
-- [ ] Table: `min-w-[900px]` inside `overflow-x-auto`; cell text
+- [x] Table: `min-w-[900px]` inside `overflow-x-auto`; cell text
       `#777`/300, `px-3 py-5` (0.75rem / 20px), `align-top`; NO borders
       on body cells; borderless thead (ink labels).
-- [ ] Occupation subtext: `<small>` block line — `text-sm` (80%),
+- [x] Occupation subtext: `<small>` block line — `text-sm` (80%),
       `text-[#b3b3b3]`, weight 300, `block`.
-- [ ] Row-hover glow: `hover:bg-white focus:bg-white
-      transition-colors duration-300 ease-out` on `<tbody>` rows — white
+- [x] Row-hover glow: `hover:bg-white focus:bg-white
+    transition-colors duration-300 ease-out` on `<tbody>` rows — white
       row on the `#efefef` page. Pure CSS, no JS.
-- [ ] NO checkboxes in this template (unlike css-table-11) — plain data
+- [x] NO checkboxes in this template (unlike css-table-11) — plain data
       table only.
-- [ ] Assets: NONE in source — no images needed; no icons at all; no
+- [x] Assets: NONE in source — no images needed; no icons at all; no
       framework CSS — Tailwind utilities + @theme.
-- [ ] Zero ColorLib references in app files (comments included); footer
+- [x] Zero ColorLib references in app files (comments included); footer
       links `https://www.componentdock.com/` branded "Component Dock".
-- [ ] `scripts/verify-app.sh rowglow` green; PR `feat/template-rowglow`
+- [x] `scripts/verify-app.sh rowglow` green; PR `feat/template-rowglow`
       with source slug + preview URL + tokens in the description; squash
       merge immediately; then `[~]`→`[x]` bookkeeping in TEMPLATES.md +
       `npm run readme:status` (implementer's flow — prep never sets
