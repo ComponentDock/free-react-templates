@@ -66,28 +66,28 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
 (extracted from the live preview stylesheet `css/style.css` and verified
 against the screenshot; CSS values are canonical)
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Font family | `"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif` | Google Fonts 300/400 (500 for heading); body 16px/300/1.5 |
-| Page background | `#fff` | `body` background-color |
-| Heading / ink | `#212529` | body color; h2 20px (overrides Bootstrap's 2rem), font-weight 500, line-height 1.2 |
-| Table body text | `#777` | `.custom-table tbody th, .custom-table tbody td` — `font-weight: 300` (light) — the signature light-gray row look |
-| Occupation sub-blurb | `#b3b3b3` | `.custom-table tbody ... small` — `font-weight: 300`, 80% font-size, `display: block` — "Far far away, behind the word mountains" under each occupation |
-| Row separators | `#dee2e6` | `.cl-table th, .cl-table td` → `border-top: 1px solid #dee2e6` (row separators only; no vertical borders) |
-| Header row | borderless | `.custom-table thead tr, .custom-table thead th` → `border-top: none; border-bottom: none !important` — header labels inherit body ink `#212529` at default weight (browser th default = bold, per screenshot: header labels are noticeably darker/bolder than body rows) |
-| Accent blue | `#007bff` | Bootstrap primary — the ONLY accent: checkbox hover/focus border, checked fill, and the 1px row hairlines |
-| Row hover/active background | `rgba(0, 123, 255, 0.03)` | `.custom-table tbody tr:hover th/td, .custom-table tbody tr.active th/td` — very light blue tint |
-| Row hover/active hairlines | `#007bff`, 1px | Each body cell has `:before`/`:after` pseudo-elements (top -1px / bottom -1px) with `background: #007bff; height: 1px; opacity: 0; visibility: hidden` → visible (`opacity: 1`) on row hover AND on `active` (checked) rows; `transition: .3s all ease` |
-| Checkbox unchecked | 20×20px, `border-radius: 4px`, `border: 2px solid #ccc`, transparent bg | `.control__indicator` (native `<input type=checkbox>` visually hidden: `position:absolute; z-index:-1; opacity:0`) |
-| Checkbox hover/focus | `border: 2px solid #007bff` | `.control:hover input ~ .control__indicator, .control input:focus ~ .control__indicator` |
-| Checkbox checked | `border: 2px solid #007bff; background: #007bff` + white checkmark (icomoon `\e5ca` → lucide `Check`) | `.control input:checked ~ .control__indicator` |
-| Checkbox disabled | `background: #e6e6e6; opacity: 0.6; border: 2px solid #ccc` (checked+disabled: `#007bff` @ 0.2 opacity) | `.control input:disabled` |
-| Container | max-width `540px` @576 · `720px` @768 · `960px` @992 · `1140px` @1200; 15px side padding, auto margins | `.cl-container` (Bootstrap-like responsive container) |
-| Table | `width: 100%; min-width: 900px` (`.custom-table`); cell `padding: 0.75rem` horizontal + `20px` top/bottom (custom-table overrides the 0.75rem vertical); `vertical-align: top`; `border-collapse: collapse` | no vertical borders |
-| Responsive wrapper | `display: block; width: 100%; overflow-x: auto` | `.cl-table-responsive` — horizontal scroll below the 900px min-width |
-| Content area | `padding: 7rem 0` | `.content` — generous whitespace above/below the table |
-| Heading margin | `margin-bottom: 3rem` (`cl-mb-5`, `!important`) | h2 → table gap |
-| Row transition | `.3s all ease` | cells' `transition` for background + hairline reveal |
+| Token                       | Value                                                                                                                                                                                                       | Notes                                                                                                                                                                                                                                                                     |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Font family                 | `"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif`                                                                                         | Google Fonts 300/400 (500 for heading); body 16px/300/1.5                                                                                                                                                                                                                 |
+| Page background             | `#fff`                                                                                                                                                                                                      | `body` background-color                                                                                                                                                                                                                                                   |
+| Heading / ink               | `#212529`                                                                                                                                                                                                   | body color; h2 20px (overrides Bootstrap's 2rem), font-weight 500, line-height 1.2                                                                                                                                                                                        |
+| Table body text             | `#777`                                                                                                                                                                                                      | `.custom-table tbody th, .custom-table tbody td` — `font-weight: 300` (light) — the signature light-gray row look                                                                                                                                                         |
+| Occupation sub-blurb        | `#b3b3b3`                                                                                                                                                                                                   | `.custom-table tbody ... small` — `font-weight: 300`, 80% font-size, `display: block` — "Far far away, behind the word mountains" under each occupation                                                                                                                   |
+| Row separators              | `#dee2e6`                                                                                                                                                                                                   | `.cl-table th, .cl-table td` → `border-top: 1px solid #dee2e6` (row separators only; no vertical borders)                                                                                                                                                                 |
+| Header row                  | borderless                                                                                                                                                                                                  | `.custom-table thead tr, .custom-table thead th` → `border-top: none; border-bottom: none !important` — header labels inherit body ink `#212529` at default weight (browser th default = bold, per screenshot: header labels are noticeably darker/bolder than body rows) |
+| Accent blue                 | `#007bff`                                                                                                                                                                                                   | Bootstrap primary — the ONLY accent: checkbox hover/focus border, checked fill, and the 1px row hairlines                                                                                                                                                                 |
+| Row hover/active background | `rgba(0, 123, 255, 0.03)`                                                                                                                                                                                   | `.custom-table tbody tr:hover th/td, .custom-table tbody tr.active th/td` — very light blue tint                                                                                                                                                                          |
+| Row hover/active hairlines  | `#007bff`, 1px                                                                                                                                                                                              | Each body cell has `:before`/`:after` pseudo-elements (top -1px / bottom -1px) with `background: #007bff; height: 1px; opacity: 0; visibility: hidden` → visible (`opacity: 1`) on row hover AND on `active` (checked) rows; `transition: .3s all ease`                   |
+| Checkbox unchecked          | 20×20px, `border-radius: 4px`, `border: 2px solid #ccc`, transparent bg                                                                                                                                     | `.control__indicator` (native `<input type=checkbox>` visually hidden: `position:absolute; z-index:-1; opacity:0`)                                                                                                                                                        |
+| Checkbox hover/focus        | `border: 2px solid #007bff`                                                                                                                                                                                 | `.control:hover input ~ .control__indicator, .control input:focus ~ .control__indicator`                                                                                                                                                                                  |
+| Checkbox checked            | `border: 2px solid #007bff; background: #007bff` + white checkmark (icomoon `\e5ca` → lucide `Check`)                                                                                                       | `.control input:checked ~ .control__indicator`                                                                                                                                                                                                                            |
+| Checkbox disabled           | `background: #e6e6e6; opacity: 0.6; border: 2px solid #ccc` (checked+disabled: `#007bff` @ 0.2 opacity)                                                                                                     | `.control input:disabled`                                                                                                                                                                                                                                                 |
+| Container                   | max-width `540px` @576 · `720px` @768 · `960px` @992 · `1140px` @1200; 15px side padding, auto margins                                                                                                      | `.cl-container` (Bootstrap-like responsive container)                                                                                                                                                                                                                     |
+| Table                       | `width: 100%; min-width: 900px` (`.custom-table`); cell `padding: 0.75rem` horizontal + `20px` top/bottom (custom-table overrides the 0.75rem vertical); `vertical-align: top`; `border-collapse: collapse` | no vertical borders                                                                                                                                                                                                                                                       |
+| Responsive wrapper          | `display: block; width: 100%; overflow-x: auto`                                                                                                                                                             | `.cl-table-responsive` — horizontal scroll below the 900px min-width                                                                                                                                                                                                      |
+| Content area                | `padding: 7rem 0`                                                                                                                                                                                           | `.content` — generous whitespace above/below the table                                                                                                                                                                                                                    |
+| Heading margin              | `margin-bottom: 3rem` (`cl-mb-5`, `!important`)                                                                                                                                                             | h2 → table gap                                                                                                                                                                                                                                                            |
+| Row transition              | `.3s all ease`                                                                                                                                                                                              | cells' `transition` for background + hairline reveal                                                                                                                                                                                                                      |
 
 ## Section structure (from the live DOM)
 
@@ -160,11 +160,19 @@ sources are near-identical snippet pages — do NOT copy tokens across:
   1px `#007bff` hairlines, PLUS the `#b3b3b3` sub-blurb under
   Occupation, 20px vertical cell padding, body weight 300.
 
-## Gherkin requirements
+## Requirements
 
 ### Requirement: Page shell and heading render
 
+The template SHALL render a white page shell (`#fff`, Roboto everywhere
+with body text at font-weight 300, content area with about 7rem vertical
+padding) centered in a responsive container (max-width 1140px at desktop
+with 15px side padding; 540/720/960px at smaller breakpoints), with a
+single h2 heading "Table #3" at font-size 20px, font-weight 500, color
+`#212529`, and about 3rem margin-bottom.
+
 #### Scenario: Shell renders
+
 ```
 Given the user visits the Gridspan home page
 Then the page background is #fff
@@ -174,6 +182,7 @@ And a centered container (max-width 1140px at desktop, 15px side padding; 540/72
 ```
 
 #### Scenario: Heading renders
+
 ```
 Given the page shell is visible
 Then an h2 heading labeled "Table #3" (or a paraphrase of the same short label) is displayed at font-size 20px, font-weight 500, color #212529
@@ -182,7 +191,20 @@ And it has about 3rem margin-bottom above the table
 
 ### Requirement: Data table renders with the source column structure
 
+The template SHALL render a responsive data table (width 100%, min-width
+900px inside an overflow-x-auto wrapper) whose borderless header row
+lists six columns — a select-all checkbox cell, Order, Name, Occupation,
+Contact, Education — and whose four body rows each start with a
+`th[scope=row]` checkbox cell followed by five `td` cells with light
+`#777` text at font-weight 300, 1px `#dee2e6` top separators, 0.75rem
+horizontal + 20px vertical padding, no vertical borders, and a
+block-level `#b3b3b3` sub-blurb under each Occupation at 80% size and
+weight 300, filled with the same KIND of demo data as the source
+(4-digit order ids, person names, design/dev occupations, +CC phone
+numbers, school names).
+
 #### Scenario: Table columns and header row
+
 ```
 Given the table is visible
 Then a responsive wrapper (display block, overflow-x auto) holds a table with width 100% and min-width 900px
@@ -192,6 +214,7 @@ And the header row is borderless (no top border, no bottom border) with labels i
 ```
 
 #### Scenario: Data rows render
+
 ```
 Given the table is visible
 Then four body rows are displayed
@@ -203,6 +226,7 @@ And cell padding is 0.75rem horizontal, 20px vertical, with vertical-align top
 ```
 
 #### Scenario: Occupation sub-blurb renders
+
 ```
 Given the data rows render
 Then each Occupation cell contains the occupation title and, beneath it, a block-level small blurb in #b3b3b3 at font-weight 300 and 80% font-size
@@ -210,6 +234,7 @@ And the blurb text is the same kind of placeholder sentence in every row (e.g. "
 ```
 
 #### Scenario: Content fidelity
+
 ```
 Given the data rows render
 Then the rows contain the same KIND of demo data as the source: 4-digit order ids, person names, design/dev occupations, +CC-formatted phone numbers, and school names
@@ -218,7 +243,20 @@ And exact strings may be paraphrased while keeping the same structure
 
 ### Requirement: Custom checkboxes with select-all behavior and row highlight
 
+The template SHALL render custom checkboxes (hidden native input +
+20x20px rounded-square indicator: border-radius 4px, 2px `#ccc` border,
+transparent background; hover/focus `#007bff` border; checked `#007bff`
+fill with a white lucide-react checkmark; disabled `#e6e6e6` at 0.6
+opacity, checked+disabled `#007bff` at 0.2 opacity). A row SHALL be
+active ⇔ its checkbox is checked; active and hovered rows SHALL show a
+`rgba(0, 123, 255, 0.03)` background with 1px `#007bff` top/bottom
+hairlines, transitioning over about 0.3s ease, and hovering SHALL NOT
+change any checked state. The header checkbox SHALL toggle all four row
+checkboxes and their active state; row checkboxes SHALL toggle
+independently.
+
 #### Scenario: Checkbox visual states
+
 ```
 Given a checkbox is rendered
 Then the native input is visually hidden and a 20x20px rounded-square indicator (border-radius 4px, border 2px solid #ccc, transparent background) is shown
@@ -231,6 +269,7 @@ Then the indicator renders #e6e6e6 at 0.6 opacity with a #ccc border (checked+di
 ```
 
 #### Scenario: Checked rows highlight (active state)
+
 ```
 Given the table is visible
 And a row's checkbox is checked
@@ -242,6 +281,7 @@ And the transition runs over about 0.3s with an ease curve
 ```
 
 #### Scenario: Row hover highlight
+
 ```
 Given the table is visible
 When the user hovers over any body row
@@ -250,6 +290,7 @@ And hovering does not change any checkbox's checked state
 ```
 
 #### Scenario: Select-all toggles every row
+
 ```
 Given the table is visible
 When the user toggles the header (select-all) checkbox
@@ -260,6 +301,7 @@ And each row checkbox can still be toggled independently
 ```
 
 #### Scenario: Checkbox accessibility
+
 ```
 Given the checkboxes render
 Then every checkbox has an accessible label
@@ -270,7 +312,13 @@ And the indicator is keyboard-focusable with a visible focus state
 
 ### Requirement: Responsive table behavior
 
+The template SHALL keep the table horizontally scrollable within its
+wrapper below the 900px min-width, with the page layout (heading,
+container padding, footer) staying intact and no horizontal overflow
+escaping the wrapper.
+
 #### Scenario: Narrow viewport scrolls horizontally
+
 ```
 Given the viewport is narrower than the table min-width (900px)
 Then the table scrolls horizontally within its wrapper
@@ -280,7 +328,12 @@ And no horizontal overflow escapes the wrapper
 
 ### Requirement: Component Dock attribution footer
 
+The template SHALL render a minimal footer attribution line linking
+`https://www.componentdock.com/` branded "Component Dock", with NO
+ColorLib attribution or links anywhere in the page.
+
 #### Scenario: Attribution present
+
 ```
 Given the page footer area is rendered
 Then a minimal attribution line links https://www.componentdock.com/ branded "Component Dock"
@@ -289,7 +342,14 @@ And NO ColorLib attribution or links appear anywhere in the page
 
 ### Requirement: Accessibility (global semantics)
 
+The template SHALL use real table semantics (`thead`/`tbody` with
+`th[scope=col]` headers and `th[scope=row]` row headers), a single h2
+heading, accessible labels on every checkbox (header = select-all),
+keyboard-reachable interactive elements with visible focus states, and
+real table content rather than presentational divs.
+
 #### Scenario: Table and page semantics
+
 ```
 Given the page is rendered
 Then the table uses thead/tbody with th scope="col" on headers and scope="row" on row headers
