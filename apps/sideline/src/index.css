@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Sideline (black/red sports palette);
+   the custom variant is declared so shared ui components that ship `dark:`
+   utilities still compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Sideline design tokens — sports club palette.
+     Brand red #f23a2e: buttons, active nav link, logo shield, highlights
+     band overlay rgba(242,58,46,0.9), card accent bars 80px×4px, news
+     title hover. Yellow accent #eec60a: promo banner overlay
+     rgba(238,198,10,0.9). Hero overlay rgba(0,0,0,0.4). Light section
+     #f8f9fa (matches band). Dropdown panel #edf0f5 / #25262a text /
+     #f4f5f9 hover rows. Footer #333333 (links #999999→#fff, copy
+     #737373). Navbar #000. Muted #999999, card copy #ccc. */
+  --color-brand: #f23a2e;
+  --color-accent: #eec60a;
+  --color-ink: #333333;
+  --color-mist: #f8f9fa;
+  --color-panel: #edf0f5;
+  --color-panel-hover: #f4f5f9;
+  --color-panel-text: #25262a;
+  --color-footer: #333333;
+  --color-muted: #999999;
+  --color-card-copy: #cccccc;
+
+  /* Mukta for everything (Google Fonts via index.html). */
+  --font-sans: 'Mukta', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #fff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-weight: 400;
+  }
+}
