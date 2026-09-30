@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette: blue→pink gradient tint over a photographic backdrop */
+  --color-accent: #1089ff;
+  --color-gradient-from: #0360ed;
+  --color-gradient-to: #ff5db1;
+  --color-card-text: rgba(255, 255, 255, 0.7);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Lato', Arial, sans-serif;
+  }
+}
