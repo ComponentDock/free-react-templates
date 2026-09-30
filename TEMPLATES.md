@@ -2876,7 +2876,7 @@
 - [x] **Css Table 17** — [colorlib](https://colorlib.com/wp/template/css-table-17/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/css-table-17.jpg) · [cellswitch](https://cellswitch.free.componentdock.com)
 - [x] **Css Table 18** — [colorlib](https://colorlib.com/wp/template/css-table-18/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/css-table-18.jpg) · [cellgrid](https://cellgrid.free.componentdock.com)
 - [x] **Css Table 19** — [colorlib](https://colorlib.com/wp/template/css-table-19/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/css-table-19.jpg) · [cellcrew](https://cellcrew.free.componentdock.com)
-- [ ] **Css Table 20** — [colorlib](https://colorlib.com/wp/template/css-table-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/css-table-20.jpg)
+- [~] **Css Table 20** — [colorlib](https://colorlib.com/wp/template/css-table-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/css-table-20.jpg)
 - [ ] **Fixed Column Table** — [colorlib](https://colorlib.com/wp/template/fixed-column-table/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/Table_Fixed_Column.jpg)
 - [ ] **Fixed Header Table** — [colorlib](https://colorlib.com/wp/template/fixed-header-table/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fixed-header-table-example.jpg)
 - [ ] **Responsive Table V1** — [colorlib](https://colorlib.com/wp/template/responsive-table-v1/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/Table_Responsive_v1.jpg)
