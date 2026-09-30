@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Upstart (minimalist white palette);
+   the custom variant is declared so shared ui components that ship `dark:`
+   utilities still compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Upstart design tokens — minimalist design-studio palette.
+     Accent periwinkle indigo #434ba4: nav-link hover, dropdown active
+     link, mobile-menu hover, service icon tint. Ink #000: all headings,
+     wordmark, hero quote, CTA button fill, cta-box 2px border, footer
+     widget headings + copyright. Body muted #999999 (Roboto Mono,
+     1rem/1.7). Case-study band #f8f9fa. Nav links rgba(0,0,0,0.6) with
+     .05em tracking. Footer widget body rgba(0,0,0,0.5); social glyphs
+     #ccc. Square corners everywhere — only avatars use border-radius
+     (50%). */
+  --color-accent: #434ba4;
+  --color-ink: #000000;
+  --color-muted: #999999;
+  --color-band: #f8f9fa;
+
+  /* Oswald for headings/wordmark, Roboto Mono for ALL body copy
+     (Google Fonts via index.html). */
+  --font-heading: 'Oswald', ui-sans-serif, sans-serif;
+  --font-body: 'Roboto Mono', ui-monospace, monospace;
+}
+
+@layer base {
+  body {
+    background-color: #fff;
+    color: var(--color-muted);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  h1,
+  h2,
+  h3,
+  h5 {
+    font-family: var(--font-heading);
+    color: var(--color-ink);
+  }
+}
