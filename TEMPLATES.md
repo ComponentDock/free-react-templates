@@ -2839,7 +2839,7 @@
 - [x] **Knights** — [colorlib](https://colorlib.com/wp/template/knights/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/knights-free-template.jpg) · [kickoff](https://kickoff.free.componentdock.com)
 - [x] **Phoenix** — [colorlib](https://colorlib.com/wp/template/phoenix/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/phoenix-free-template.jpg) · [slugger](https://slugger.free.componentdock.com)
 - [x] **Skater** — [colorlib](https://colorlib.com/wp/template/skater/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/skater-free-template.jpg) · [cruiser](https://free-react-templates-cruiser.surge.sh)
-- [~] **Soccer** — [colorlib](https://colorlib.com/wp/template/soccer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/soccer-free-template.jpg)
+- [x] **Soccer** — [colorlib](https://colorlib.com/wp/template/soccer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/soccer-free-template.jpg) · [striker](https://free-react-templates-striker.surge.sh)
 - [ ] **Specer** — [colorlib](https://colorlib.com/wp/template/specer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/specer-free-template.jpg)
 - [ ] **Sportsteam** — [colorlib](https://colorlib.com/wp/template/sportsteam/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sportsteam-free-template.jpg)
 - [ ] **Sportz** — [colorlib](https://colorlib.com/wp/template/sportz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sportz-free-template.jpg)
