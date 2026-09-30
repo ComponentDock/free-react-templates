@@ -2871,7 +2871,7 @@
 - [x] **Css Table 12** — [colorlib](https://colorlib.com/wp/template/css-table-12/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/css-table-12.jpg) · [rowglow](https://free-react-templates-rowglow.surge.sh)
 - [x] **Css Table 13** — [colorlib](https://colorlib.com/wp/template/css-table-13/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/css-table-13.jpg) · [gridspan](https://free-react-templates-gridspan.surge.sh)
 - [x] **Css Table 14** — [colorlib](https://colorlib.com/wp/template/css-table-14/) · [rowcard](https://rowcard.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/css-table-14.jpg)
-- [ ] **Css Table 15** — [colorlib](https://colorlib.com/wp/template/css-table-15/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/css-table-15.jpg)
+- [~] **Css Table 15** — [colorlib](https://colorlib.com/wp/template/css-table-15/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/css-table-15.jpg)
 - [ ] **Css Table 16** — [colorlib](https://colorlib.com/wp/template/css-table-16/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/css-table-16.jpg)
 - [ ] **Css Table 17** — [colorlib](https://colorlib.com/wp/template/css-table-17/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/css-table-17.jpg)
 - [ ] **Css Table 18** — [colorlib](https://colorlib.com/wp/template/css-table-18/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/css-table-18.jpg)
