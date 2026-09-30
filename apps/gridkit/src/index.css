@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Design tokens from the source snippet's palette: */
+
+  /* Page background — light blue-gray (the signature canvas). */
+  --color-page: #f8f9fd;
+
+  /* Bright blue — the signature table header band. */
+  --color-header-blue: #1089ff;
+
+  /* Body ink — the source's final body rule sets `color: gray`. */
+  --color-body-ink: gray;
+
+  /* Near-black — the centered section heading. */
+  --color-heading: #000000;
+
+  /* White — the table surface. */
+  --color-surface: #ffffff;
+
+  /* Original font: "Poppins" weight 400 (via Google Fonts link). */
+  --font-poppins: 'Poppins', Arial, sans-serif;
+}
