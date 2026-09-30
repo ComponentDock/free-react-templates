@@ -23,7 +23,7 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   red 32%-width title block), `.match-section` (two `.mc-table` columns,
   rows bg `rgba(21,22,24,0.9)`), `.soccer-section` (4-up `.soccer-item`
   cards, 405px, red `.si-tag` badges), `.latest-section` (`.news-item
-  .left-news` big cards + `.points-table` sidebar), `.video-section`
+.left-news` big cards + `.points-table` sidebar), `.video-section`
   (200px `.video-item` thumbs, hover play-btn, `.vi-time` duration chip),
   `.popular-section` (240px overlay `.popular-item` cards with sport-tag
   color variants, `.follow-links` sidebar, `.vote-option` radio poll),
@@ -60,28 +60,28 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 (extracted from the live preview stylesheet + verified against the
 screenshot; CSS values are canonical)
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Font family | `"Roboto", sans-serif` (Google Fonts 300/400/500/700) | body 16px |
-| Brand red | `#dd1515` | header bar, `.primary-btn`, `.si-tag`/`.ni-tag` badges, `.section-title:before` bar, trending title block, `.mc-op` accents, nav dropdown hover, footer social hover |
-| Dark page/sections | `#151618` | trending strip bg, match rows `rgba(21,22,24,0.9)`, dark section treatment |
-| Near-black | `#000` / `#2c2d2f` / `#333` | video section bg, dark widgets, nav search block |
-| Light section bg | `#f2f2f2` | light sections, `.section-title:after` rule, tag pills |
-| Muted grays | `#636363` (body copy on light), `#ababab` (meta on light), `#8a8b8c`/`#ababab` (slider arrows) | |
-| Sport-tag accents | tennis `#0054a6` (blue), football `#e3ce1e` (yellow) | `.ni-tag.tenis` / `.ni-tag.football` on popular cards |
-| Social colors | facebook `#506eaa`, twitter `#55acee`, google `#dd4b39` | `.follow-links` sidebar rows |
-| Heading sizes | h1 70px, h2 36px, h3 30px (section titles render 28px/300), h4 24px, h5 18px, h6 16px | |
-| Body/hero photo | `set-bg` pattern: `background-size: cover; background-position: top center` | dark overlay over photos for text legibility |
-| Buttons | `.primary-btn`: 16px, `#fff` text, solid `#dd1515` bg, weight 500, letter-spacing 1px, padding `14px 36px 12px`, square (no radius), inline-block | hero CTA "More Details" |
-| Section title | h3 28px weight 300 color `#151618`, with `:before` 70px×3px `#dd1515` bar + `:after` full-width 3px `#f2f2f2` rule | "Next Match", "Latest News", "Hot Videos", "Popular Post" |
-| Tag pills | 10px uppercase, weight 500, letter-spacing 1px, padding `3px 9px`, absolute top-left of card | red default; blue/yellow sport variants |
-| Match row | table row bg `rgba(21,22,24,0.9)`, td padding 16px, flag img 50×30px, center column 150px, h4 score weight 700 white | |
-| Soccer card | `.soccer-item` height 405px, text overlay bottom 25px, red tag top-left | 4-column grid |
-| Video item | 200px height, play-btn centered (opacity 0 → 1 on hover), `.vi-time` chip `rgba(0,0,0,0.7)` bottom-right | |
-| Popular card | 240px overlay card, title + meta absolute bottom 16px, white text | |
-| Vote widget | 290px `set-bg`, white radio circles (14px, 2px border, filled when checked) | |
-| Footer | `.footer-section` set-bg photo + dark treatment, `.fs-social` circular icons hover `#dd1515`, copyright bar border-top `#2d2e30`, `#636363` 14px text | |
-| Copyright | border-top `1px solid #2d2e30`, co-text 14px `#636363` | replace attribution with Component Dock link |
+| Token              | Value                                                                                                                                                 | Notes                                                                                                                                                                |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Font family        | `"Roboto", sans-serif` (Google Fonts 300/400/500/700)                                                                                                 | body 16px                                                                                                                                                            |
+| Brand red          | `#dd1515`                                                                                                                                             | header bar, `.primary-btn`, `.si-tag`/`.ni-tag` badges, `.section-title:before` bar, trending title block, `.mc-op` accents, nav dropdown hover, footer social hover |
+| Dark page/sections | `#151618`                                                                                                                                             | trending strip bg, match rows `rgba(21,22,24,0.9)`, dark section treatment                                                                                           |
+| Near-black         | `#000` / `#2c2d2f` / `#333`                                                                                                                           | video section bg, dark widgets, nav search block                                                                                                                     |
+| Light section bg   | `#f2f2f2`                                                                                                                                             | light sections, `.section-title:after` rule, tag pills                                                                                                               |
+| Muted grays        | `#636363` (body copy on light), `#ababab` (meta on light), `#8a8b8c`/`#ababab` (slider arrows)                                                        |                                                                                                                                                                      |
+| Sport-tag accents  | tennis `#0054a6` (blue), football `#e3ce1e` (yellow)                                                                                                  | `.ni-tag.tenis` / `.ni-tag.football` on popular cards                                                                                                                |
+| Social colors      | facebook `#506eaa`, twitter `#55acee`, google `#dd4b39`                                                                                               | `.follow-links` sidebar rows                                                                                                                                         |
+| Heading sizes      | h1 70px, h2 36px, h3 30px (section titles render 28px/300), h4 24px, h5 18px, h6 16px                                                                 |                                                                                                                                                                      |
+| Body/hero photo    | `set-bg` pattern: `background-size: cover; background-position: top center`                                                                           | dark overlay over photos for text legibility                                                                                                                         |
+| Buttons            | `.primary-btn`: 16px, `#fff` text, solid `#dd1515` bg, weight 500, letter-spacing 1px, padding `14px 36px 12px`, square (no radius), inline-block     | hero CTA "More Details"                                                                                                                                              |
+| Section title      | h3 28px weight 300 color `#151618`, with `:before` 70px×3px `#dd1515` bar + `:after` full-width 3px `#f2f2f2` rule                                    | "Next Match", "Latest News", "Hot Videos", "Popular Post"                                                                                                            |
+| Tag pills          | 10px uppercase, weight 500, letter-spacing 1px, padding `3px 9px`, absolute top-left of card                                                          | red default; blue/yellow sport variants                                                                                                                              |
+| Match row          | table row bg `rgba(21,22,24,0.9)`, td padding 16px, flag img 50×30px, center column 150px, h4 score weight 700 white                                  |                                                                                                                                                                      |
+| Soccer card        | `.soccer-item` height 405px, text overlay bottom 25px, red tag top-left                                                                               | 4-column grid                                                                                                                                                        |
+| Video item         | 200px height, play-btn centered (opacity 0 → 1 on hover), `.vi-time` chip `rgba(0,0,0,0.7)` bottom-right                                              |                                                                                                                                                                      |
+| Popular card       | 240px overlay card, title + meta absolute bottom 16px, white text                                                                                     |                                                                                                                                                                      |
+| Vote widget        | 290px `set-bg`, white radio circles (14px, 2px border, filled when checked)                                                                           |                                                                                                                                                                      |
+| Footer             | `.footer-section` set-bg photo + dark treatment, `.fs-social` circular icons hover `#dd1515`, copyright bar border-top `#2d2e30`, `#636363` 14px text |                                                                                                                                                                      |
+| Copyright          | border-top `1px solid #2d2e30`, co-text 14px `#636363`                                                                                                | replace attribution with Component Dock link                                                                                                                         |
 
 ## Section structure (from the live DOM)
 
@@ -149,11 +149,16 @@ screenshot; CSS values are canonical)
    mandatory Component Dock link** ("More templates at Component Dock",
    https://www.componentdock.com/) + small co-widget links right.
 
-## Gherkin requirements
+## Requirements
 
 ### Requirement: Header renders over the light page top with red bar
 
+The page SHALL render a solid brand-red header bar with the club
+wordmark, uppercase navigation links, dropdown menus, a search toggle,
+and a mobile menu.
+
 #### Scenario: Desktop header with wordmark, nav, and search
+
 ```
 Given the user visits the Pitchside home page
 Then a full-width header bar with solid #dd1515 background is displayed at the top
@@ -165,6 +170,7 @@ Then a 2px white underline appears under the link
 ```
 
 #### Scenario: Dropdown menus
+
 ```
 Given the desktop header is visible
 When the user hovers "Sport" (or "Pages")
@@ -175,6 +181,7 @@ Then the link color becomes #dd1515
 ```
 
 #### Scenario: Mobile menu toggles
+
 ```
 Given the viewport is mobile-sized
 Then the inline nav is hidden and a hamburger icon button is shown
@@ -187,7 +194,11 @@ Then the menu closes
 
 ### Requirement: Hero with featured match and CTA
 
+The hero SHALL show a photographic background with a dark overlay, a date
+line, a headline, and a square brand-red call-to-action button.
+
 #### Scenario: Hero content renders
+
 ```
 Given the hero section is visible
 Then a photographic hero background (picsum placeholder night-stadium, dark overlay) fills the 700px-tall section
@@ -197,6 +208,7 @@ And a large white headline ("Airrosten VS Lerenort in London" or paraphrase) is 
 ```
 
 #### Scenario: Hero CTA
+
 ```
 Given the hero is visible
 Then a "More Details" button is displayed with solid #dd1515 background, white 16px/500 text, letter-spacing 1px, and square corners (padding 14px 36px 12px)
@@ -206,7 +218,11 @@ Then the button visibly reacts (hover treatment consistent with the red brand st
 
 ### Requirement: Trending news strip
 
+The trending strip SHALL display a red title block and a headline slider
+with previous/next controls.
+
 #### Scenario: Strip layout
+
 ```
 Given the trending strip is visible
 Then it has a #151618 background spanning full width under the hero
@@ -216,6 +232,7 @@ And prev/next square arrow buttons (1px #8a8b8c border) are shown at the far rig
 ```
 
 #### Scenario: Slider advances
+
 ```
 Given the strip is visible
 When the user clicks the next arrow
@@ -227,7 +244,11 @@ And the controls are keyboard-focusable with aria-labels
 
 ### Requirement: Match fixtures and recent results
 
+The match section SHALL show Next Match and Recent Results columns of
+fixture rows with flags, pairing labels or scores, and dates.
+
 #### Scenario: Two-column match section
+
 ```
 Given the match section is visible
 Then a dark low-poly background (picsum placeholder) fills the section
@@ -236,6 +257,7 @@ And each column heading is a white h4 (24px)
 ```
 
 #### Scenario: Next Match rows
+
 ```
 Given the "Next Match" column is visible
 Then three match rows are displayed
@@ -246,6 +268,7 @@ And the center column shows a small "Ucraina vs England" label, a bold white "VS
 ```
 
 #### Scenario: Recent Results rows
+
 ```
 Given the "Recent Results" column is visible
 Then three result rows are displayed with the same flag/label/date layout
@@ -254,7 +277,11 @@ And the center column shows a bold white score "1 : 2" instead of "VS"
 
 ### Requirement: Soccer feed card grid
 
+The soccer feed SHALL render four photo cards with red tags, titles, and
+pipe-separated meta lines.
+
 #### Scenario: Feed cards render
+
 ```
 Given the Soccer Feed section is visible
 Then the heading "Soccer Feed" (or paraphrase) is shown with the red-bar section-title treatment
@@ -267,7 +294,11 @@ And a meta line under the title shows author/date separated by "|" pipes
 
 ### Requirement: Latest news with Club Ranking sidebar
 
+The latest news section SHALL render a filterable news list beside a club
+ranking table.
+
 #### Scenario: Latest News list
+
 ```
 Given the Latest News section is visible
 Then the section title "Latest News" (or paraphrase) is shown with the red 70px underline bar
@@ -279,6 +310,7 @@ And each card shows a meta row (calendar/edit icons in #dd1515 + #ababab text) a
 ```
 
 #### Scenario: Club Ranking table
+
 ```
 Given the sidebar is visible
 Then a "Club Ranking" heading is shown
@@ -289,7 +321,11 @@ And the table is readable on the light background
 
 ### Requirement: Hot Videos section
 
+The hot videos section SHALL render a thumbnail grid whose play buttons
+open a modal that closes via its close button or the Escape key.
+
 #### Scenario: Video grid renders
+
 ```
 Given the Hot Videos section is visible
 Then the heading "Hot Videos" (or paraphrase) is shown with the red-bar treatment
@@ -298,6 +334,7 @@ And each card shows a thumbnail (picsum placeholder), a white title at the top (
 ```
 
 #### Scenario: Play button reveal and modal
+
 ```
 Given a video card is visible
 When the user hovers the card
@@ -309,7 +346,11 @@ And the modal can be closed (close button + Escape), exposing aria attributes
 
 ### Requirement: Popular Post with Follow Us and Vote widgets
 
+The popular section SHALL render tagged overlay cards beside follow links
+and a vote poll with controlled radio options.
+
 #### Scenario: Popular post cards
+
 ```
 Given the Popular Post section is visible
 Then the section title "Popular Post" (or paraphrase) is shown with the red-bar treatment
@@ -319,6 +360,7 @@ And each card shows a white title (e.g. "England reach World Cup last 16 with ha
 ```
 
 #### Scenario: Follow Us widget
+
 ```
 Given the sidebar Follow Us widget is visible
 Then three full-width social rows are displayed
@@ -327,6 +369,7 @@ And each row shows a white icon, network name, and fan count (e.g. "1.2M")
 ```
 
 #### Scenario: Vote poll widget
+
 ```
 Given the vote widget is visible
 Then a 290px photo background (picsum placeholder) fills the widget
@@ -338,7 +381,11 @@ And selecting an option updates state (controlled radio input)
 
 ### Requirement: Footer
 
+The footer SHALL show the wordmark, social icons, widget columns, and a
+copyright bar linking to Component Dock.
+
 #### Scenario: Footer columns and social icons
+
 ```
 Given the footer is visible
 Then the footer has a dark photo background treatment
@@ -348,6 +395,7 @@ And two widget columns are displayed: "Top Club" (link list) and "Recent News" (
 ```
 
 #### Scenario: Component Dock attribution
+
 ```
 Given the footer is visible
 Then the copyright bar has a 1px #2d2e30 top border
@@ -357,7 +405,11 @@ And NO ColorLib attribution or links appear anywhere in the page
 
 ### Requirement: Responsive layout
 
+The layout SHALL adapt to mobile viewports with a hamburger menu and
+stacked sections.
+
 #### Scenario: Mobile viewport
+
 ```
 Given the user views the page on a viewport narrower than 768px
 Then the header collapses to the hamburger menu
@@ -371,7 +423,12 @@ And the footer widgets stack
 
 ### Requirement: Accessibility
 
+All interactive elements SHALL be keyboard reachable, icon-only controls
+SHALL expose accessible labels, and the video modal SHALL close on
+Escape.
+
 #### Scenario: Interactive elements
+
 ```
 Given the page is rendered
 Then all interactive elements (links, buttons, arrows, menu toggle, search, radio options, modal controls) are keyboard reachable with visible focus states
