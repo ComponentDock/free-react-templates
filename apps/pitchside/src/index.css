@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Pitchside (light template with dark
+   bands); the custom variant is declared so shared ui components that ship
+   `dark:` utilities still compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Pitchside design tokens — sports-news palette.
+     Brand red #dd1515: header bar, primary buttons, tag badges, section
+     title bars, meta icons, footer social hover. Dark #151618: trending
+     strip, match rows, headings on light. Muted #636363 body copy on
+     light; meta #ababab secondary text; tint #f2f2f2 light chips/rules. */
+  --color-brand: #dd1515;
+  --color-dark: #151618;
+  --color-ink: #151618;
+  --color-muted: #636363;
+  --color-meta: #ababab;
+  --color-tint: #f2f2f2;
+
+  /* Roboto for everything (Google Fonts via index.html). */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #fff;
+    color: var(--color-ink);
+  }
+}
