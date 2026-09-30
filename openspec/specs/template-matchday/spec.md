@@ -22,16 +22,16 @@ TypeScript.
   `styles/responsive.css` (6,807 bytes) — Bootstrap 4.1.2 base +
   hand-written template block. Template-specific rules include `body`
   (Roboto 14px/`#a5a5a5` on white), `.header` (fixed, `rgba(22,29,74,0.75)`
-  + 3px `#ffa54b` bottom border), `.header_bar` (top ticker bar),
-  `.home_text` (navy countdown chip + orange number chip), `.next_match_home`
-  / `.next_match_guest` (skewed `skew(37deg)` team chips), `.vs` (118px
-  rotated outlined "VS"), `.breaking_news_*` (orange title block + navy
-  ticker strip), `.results` / `.result_*` (white results band), 
-  `.upcoming_latest` + `.custom_list_a/b` (navy two-column events/games
-  lists), `.milestones` + `.milestone_*` (parallax counters), `.player_*`
-  (player of the month), `.news` + `.news_post_*` (light gray news grid),
-  `.cta_*` (orange join-club strip), `.newsletter_*` + `.footer_*` (dark
-  footer with form), and `.menu_*` (fullscreen mobile menu).
+  - 3px `#ffa54b` bottom border), `.header_bar` (top ticker bar),
+    `.home_text` (navy countdown chip + orange number chip), `.next_match_home`
+    / `.next_match_guest` (skewed `skew(37deg)` team chips), `.vs` (118px
+    rotated outlined "VS"), `.breaking_news_*` (orange title block + navy
+    ticker strip), `.results` / `.result_*` (white results band),
+    `.upcoming_latest` + `.custom_list_a/b` (navy two-column events/games
+    lists), `.milestones` + `.milestone_*` (parallax counters), `.player_*`
+    (player of the month), `.news` + `.news_post_*` (light gray news grid),
+    `.cta_*` (orange join-club strip), `.newsletter_*` + `.footer_*` (dark
+    footer with form), and `.menu_*` (fullscreen mobile menu).
 - **Scripts (source):** jQuery 3.3.1 + owl.carousel 2.3.4 (home slider +
   breaking-news ticker). Reimplement in React: state-driven sliders (or CSS
   scroll-snap) + `useEffect` countdown; do NOT ship jQuery/owl.
@@ -39,8 +39,7 @@ TypeScript.
   lucide-react** (e.g. `Menu`, `X`, `ChevronRight`, `MapPin`, `Phone`,
   `Mail`, `Facebook`, `Twitter`, `Instagram`, `Youtube`), do not ship icon
   fonts.
-- **Fonts:** Roboto — load **Google Fonts `<link>` (300, 400, 500, 700,
-  900)** in `index.html`; weights used: 300 (breaking-news slides), 400
+- **Fonts:** Roboto — load **Google Fonts `<link>` (300, 400, 500, 700, 900)** in `index.html`; weights used: 300 (breaking-news slides), 400
   (body), 500 (nav, list meta, counters), 700 (headings, scores, buttons),
   900 (mobile menu links, `.vs`).
 - **Assets:** hero slider photo (`images/index.jpg` inline backgrounds on
@@ -60,34 +59,34 @@ TypeScript.
 (extracted from the live preview stylesheet + verified against the
 screenshot; CSS values are canonical)
 
-| Token | Value | Notes |
-|-------|-------|-------|
-| Font family | `"Roboto", sans-serif` (Google Fonts 300/400/500/700/900) | body 14px |
-| Body color | `#a5a5a5`, weight 400 | white page background `#FFFFFF` |
-| Brand orange | `#ffa54b` | buttons, header bottom border, active/hover links, `.section_subtitle`, countdown number chip, slider Next button, breaking-news title block, player name, counters, news date day-number, footer contact labels, newsletter button, CTA strip background |
-| Navy primary | `#161d4a` | header bg `rgba(22,29,74,0.75)`, top bar `rgba(28,36,93,0.75)`, countdown text chip, home-vs chip, breaking-news strip, newsletter input, CTA button, button hover fill |
-| Navy alt | `#161a42` | player number chip |
-| List row navy | `#242b56` | upcoming-events + latest-games rows (110px tall, 3px gaps) |
-| Navy section | `#161d4a` | `.upcoming_latest` band bg (padding 92/100) |
-| Footer navy | `#0a1123` (container), `#070d1d` (footer bar) | dark footer |
-| Light blue-gray | `#d7d9e5` | `.news` section bg; footer contact values; newsletter placeholder |
-| LIVE red | `#ff0410` | LIVE badge in top bar |
-| VS red | `#d80033` fill + `#191339` 3px text-stroke | giant rotated "VS" in hero |
-| Heading black | `#050505` | section titles, result scores, news titles |
-| Grays | `#888888` (results title/result team), `#b5b5b5` (results subtitle), `#777b95` / `#737791` (list meta / milestone subtitle), `#dddfe2` (result divider) | |
-| Header | fixed; `rgba(22,29,74,0.75)`; `border-bottom: 3px solid #ffa54b`; top bar 40px `rgba(28,36,93,0.75)` with orange `|` separators (first link orange) | scrolled state: nav row 110px, logo shrinks to 170px and drops 40px |
-| Buttons (`.button`) | sharp rectangles, NO border-radius; 200×64, bg `#ffa54b`, white 18px/700 text; `::after` 3px `#161d4a` bottom bar expands to full height on hover | navy variant `.cta_button`: bg `#161d4a`, white fill on hover |
-| Section titles | uppercase 36px/700 `#050505` (light variant `#FFFFFF` on dark); subtitle 16px/500 `#ffa54b` (gray variant `#b5b5b5`) | |
-| Home slider | full-viewport slides (inline `background-image: url(...)` photos); countdown chip: `#161d4a` block (white 60px/700 "days until the next match") + `#ffa54b` number chip 109×143 (white 100px/700 numeral, `border-top: 9px solid #161d4a`); vs row: home chip `#161d4a` + guest chip `#ffa54b`, both `skew(37deg)` 70px tall with unskewed 30px/500 white text; `.vs` 118px/900 `rotate(-7deg)`; orange 92px square Next button (hover navy) | |
-| Breaking news | 78px strip: left 34.48% `#ffa54b` block with `#161d4a` 30px/500 "Breaking News"; right 65.52% `#161d4a` with rotating white 18px/300 headlines | |
-| Results | white bg, padding 92/100; centered title + gray subtitle + league line; two 50% mirrored blocks: team photo 262px (bottom-aligned), score 72px/700 `#050505`, team name 36px/700 `#888888`, blurb; 2×132px `#dddfe2` divider after first block; "See More Info" orange button | |
-| Events + Games | navy `#161d4a` two-column band; white uppercase titles + orange subtitles; `.custom_list_a` event rows: 110px `#242b56`, photo + title + date + "See More" link; `.custom_list_b` game rows: same row bg, 37%/26%/37% columns — crest 65×55 + white 16px/500 team name (hover orange) both sides; center: league 12px/500 `#777b95`, score 30px white, date 11px/500 `#777b95`; decorative player photo absolute bottom-left behind | |
-| Milestones | parallax band (min-height 400px, dark photo); 4 columns: icon 62px, counter 48px/500 `#ffa54b`, title 18px/500 white, subtitle 11px/500 `#737791` | counters: Team players, Trophies, Medals, Kicks/Match |
-| Player of the month | white bg, padding 104/81; left column: section title, number chip 71×71 `#161a42` (white 48px/500), name 60px/500 `#ffa54b` line-height 0.75, two bio paragraphs; two player photos bottom-anchored to the LEFT half of the viewport (`width: calc(50vw + 55px)`), first with 40px right margin | |
-| News grid | bg `#d7d9e5`, padding 100/61; 3 cards: photo, white 75×75 date badge bottom-left of image (day 36px/500 `#ffa54b` + month 12px uppercase `#050505`), white content area (padding 16/22/32), title 24px/700 `#050505` (hover orange); hover: `box-shadow 0 16px 38px rgba(9,9,9,0.33)` | |
-| CTA strip | bg `#ffa54b` with 1px white top/bottom borders, padding 64/56; text 42px white with `#161d4a` 600 uppercase span ("football club?"); navy "See More Info" button right | |
-| Footer | `#0a1123`; side player photo absolute right; contact list — labels 18px/500 `#ffa54b` (86px column), values 15px `#d7d9e5` lh 1.6; newsletter title 24px `#ffa54b`; input `#161d4a` 56px (placeholder 12px/500 `#d7d9e5`); Submit button 107×56 `#ffa54b` white 16px/500; italic disclaimer 12px `rgba(136,136,136,0.41)`; footer nav links (hover orange); footer bar `#070d1d` 57px — **replace the source "made by Colorlib" attribution with the mandatory Component Dock link** | |
-| Mobile menu | fullscreen overlay `rgba(10,17,35,0.55)`; navy panel; uppercase white 24px/900 links with staggered slide-in, orange hover; hamburger toggle; links: Home, About Us, The Team, News, Contact; user area Sign up / Sign in; GET Tickets + Shop buttons | |
+| Token               | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Notes                                                                                                                                                                                                                                                     |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Font family         | `"Roboto", sans-serif` (Google Fonts 300/400/500/700/900)                                                                                                                                                                                                                                                                                                                                                                                                                            | body 14px                                                                                                                                                                                                                                                 |
+| Body color          | `#a5a5a5`, weight 400                                                                                                                                                                                                                                                                                                                                                                                                                                                                | white page background `#FFFFFF`                                                                                                                                                                                                                           |
+| Brand orange        | `#ffa54b`                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | buttons, header bottom border, active/hover links, `.section_subtitle`, countdown number chip, slider Next button, breaking-news title block, player name, counters, news date day-number, footer contact labels, newsletter button, CTA strip background |
+| Navy primary        | `#161d4a`                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | header bg `rgba(22,29,74,0.75)`, top bar `rgba(28,36,93,0.75)`, countdown text chip, home-vs chip, breaking-news strip, newsletter input, CTA button, button hover fill                                                                                   |
+| Navy alt            | `#161a42`                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | player number chip                                                                                                                                                                                                                                        |
+| List row navy       | `#242b56`                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | upcoming-events + latest-games rows (110px tall, 3px gaps)                                                                                                                                                                                                |
+| Navy section        | `#161d4a`                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | `.upcoming_latest` band bg (padding 92/100)                                                                                                                                                                                                               |
+| Footer navy         | `#0a1123` (container), `#070d1d` (footer bar)                                                                                                                                                                                                                                                                                                                                                                                                                                        | dark footer                                                                                                                                                                                                                                               |
+| Light blue-gray     | `#d7d9e5`                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | `.news` section bg; footer contact values; newsletter placeholder                                                                                                                                                                                         |
+| LIVE red            | `#ff0410`                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | LIVE badge in top bar                                                                                                                                                                                                                                     |
+| VS red              | `#d80033` fill + `#191339` 3px text-stroke                                                                                                                                                                                                                                                                                                                                                                                                                                           | giant rotated "VS" in hero                                                                                                                                                                                                                                |
+| Heading black       | `#050505`                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | section titles, result scores, news titles                                                                                                                                                                                                                |
+| Grays               | `#888888` (results title/result team), `#b5b5b5` (results subtitle), `#777b95` / `#737791` (list meta / milestone subtitle), `#dddfe2` (result divider)                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                           |
+| Header              | fixed; `rgba(22,29,74,0.75)`; `border-bottom: 3px solid #ffa54b`; top bar 40px `rgba(28,36,93,0.75)` with orange `                                                                                                                                                                                                                                                                                                                                                                   | ` separators (first link orange)                                                                                                                                                                                                                          | scrolled state: nav row 110px, logo shrinks to 170px and drops 40px |
+| Buttons (`.button`) | sharp rectangles, NO border-radius; 200×64, bg `#ffa54b`, white 18px/700 text; `::after` 3px `#161d4a` bottom bar expands to full height on hover                                                                                                                                                                                                                                                                                                                                    | navy variant `.cta_button`: bg `#161d4a`, white fill on hover                                                                                                                                                                                             |
+| Section titles      | uppercase 36px/700 `#050505` (light variant `#FFFFFF` on dark); subtitle 16px/500 `#ffa54b` (gray variant `#b5b5b5`)                                                                                                                                                                                                                                                                                                                                                                 |                                                                                                                                                                                                                                                           |
+| Home slider         | full-viewport slides (inline `background-image: url(...)` photos); countdown chip: `#161d4a` block (white 60px/700 "days until the next match") + `#ffa54b` number chip 109×143 (white 100px/700 numeral, `border-top: 9px solid #161d4a`); vs row: home chip `#161d4a` + guest chip `#ffa54b`, both `skew(37deg)` 70px tall with unskewed 30px/500 white text; `.vs` 118px/900 `rotate(-7deg)`; orange 92px square Next button (hover navy)                                         |                                                                                                                                                                                                                                                           |
+| Breaking news       | 78px strip: left 34.48% `#ffa54b` block with `#161d4a` 30px/500 "Breaking News"; right 65.52% `#161d4a` with rotating white 18px/300 headlines                                                                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                           |
+| Results             | white bg, padding 92/100; centered title + gray subtitle + league line; two 50% mirrored blocks: team photo 262px (bottom-aligned), score 72px/700 `#050505`, team name 36px/700 `#888888`, blurb; 2×132px `#dddfe2` divider after first block; "See More Info" orange button                                                                                                                                                                                                        |                                                                                                                                                                                                                                                           |
+| Events + Games      | navy `#161d4a` two-column band; white uppercase titles + orange subtitles; `.custom_list_a` event rows: 110px `#242b56`, photo + title + date + "See More" link; `.custom_list_b` game rows: same row bg, 37%/26%/37% columns — crest 65×55 + white 16px/500 team name (hover orange) both sides; center: league 12px/500 `#777b95`, score 30px white, date 11px/500 `#777b95`; decorative player photo absolute bottom-left behind                                                  |                                                                                                                                                                                                                                                           |
+| Milestones          | parallax band (min-height 400px, dark photo); 4 columns: icon 62px, counter 48px/500 `#ffa54b`, title 18px/500 white, subtitle 11px/500 `#737791`                                                                                                                                                                                                                                                                                                                                    | counters: Team players, Trophies, Medals, Kicks/Match                                                                                                                                                                                                     |
+| Player of the month | white bg, padding 104/81; left column: section title, number chip 71×71 `#161a42` (white 48px/500), name 60px/500 `#ffa54b` line-height 0.75, two bio paragraphs; two player photos bottom-anchored to the LEFT half of the viewport (`width: calc(50vw + 55px)`), first with 40px right margin                                                                                                                                                                                      |                                                                                                                                                                                                                                                           |
+| News grid           | bg `#d7d9e5`, padding 100/61; 3 cards: photo, white 75×75 date badge bottom-left of image (day 36px/500 `#ffa54b` + month 12px uppercase `#050505`), white content area (padding 16/22/32), title 24px/700 `#050505` (hover orange); hover: `box-shadow 0 16px 38px rgba(9,9,9,0.33)`                                                                                                                                                                                                |                                                                                                                                                                                                                                                           |
+| CTA strip           | bg `#ffa54b` with 1px white top/bottom borders, padding 64/56; text 42px white with `#161d4a` 600 uppercase span ("football club?"); navy "See More Info" button right                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                           |
+| Footer              | `#0a1123`; side player photo absolute right; contact list — labels 18px/500 `#ffa54b` (86px column), values 15px `#d7d9e5` lh 1.6; newsletter title 24px `#ffa54b`; input `#161d4a` 56px (placeholder 12px/500 `#d7d9e5`); Submit button 107×56 `#ffa54b` white 16px/500; italic disclaimer 12px `rgba(136,136,136,0.41)`; footer nav links (hover orange); footer bar `#070d1d` 57px — **replace the source "made by Colorlib" attribution with the mandatory Component Dock link** |                                                                                                                                                                                                                                                           |
+| Mobile menu         | fullscreen overlay `rgba(10,17,35,0.55)`; navy panel; uppercase white 24px/900 links with staggered slide-in, orange hover; hamburger toggle; links: Home, About Us, The Team, News, Contact; user area Sign up / Sign in; GET Tickets + Shop buttons                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                           |
 
 ## Section structure (from the live DOM)
 
@@ -131,11 +130,16 @@ screenshot; CSS values are canonical)
     Tickets, News, Contact); footer bar `#070d1d`: copyright + Component
     Dock link (replacing source attribution).
 
-## Gherkin requirements
+## Requirements
 
 ### Requirement: Header renders fixed with top bar and split navigation
 
+The page SHALL render a fixed header with a translucent navy top bar, a
+split navigation around an overhanging club crest, a 3px orange bottom
+border, and a fullscreen mobile menu.
+
 #### Scenario: Desktop header
+
 ```
 Given the user visits the Matchday home page
 Then a fixed header is displayed with a translucent navy background and a 3px orange bottom border
@@ -150,12 +154,14 @@ Then the link color becomes the brand orange #ffa54b
 ```
 
 #### Scenario: Header scrolled state
+
 ```
 Given the page is scrolled beyond the hero threshold
 Then the header compacts: the nav row shrinks (nav height ~110px) and the crest shrinks (~170px) and drops slightly below the header line
 ```
 
 #### Scenario: Mobile menu toggles
+
 ```
 Given the viewport is mobile-sized
 Then the inline nav links are hidden and a hamburger icon button is shown
@@ -169,7 +175,12 @@ Then the menu closes
 
 ### Requirement: Home slider with match countdown and VS chips
 
+The hero SHALL show full-viewport photographic slides with a match
+countdown chip, skewed home/away team chips around a giant VS mark, and
+an orange square Next button that advances the slider.
+
 #### Scenario: Hero slide content
+
 ```
 Given the hero slider is visible
 Then a full-viewport slide shows a photographic background (picsum placeholder, dark overlay) filling the section
@@ -179,6 +190,7 @@ And the chips use skew(37deg) with unskewed inner text
 ```
 
 #### Scenario: Slider navigation
+
 ```
 Given the hero slider is visible
 Then an orange square "Next" button is displayed on the right edge
@@ -189,7 +201,11 @@ And "Next" is keyboard-focusable with a visible focus state
 
 ### Requirement: Breaking news ticker strip
 
+A breaking-news strip SHALL show an orange title block beside a navy strip
+with a rotating white headline.
+
 #### Scenario: Ticker renders
+
 ```
 Given the breaking-news strip is visible
 Then an orange block on the left shows "Breaking News" in bold navy text
@@ -201,7 +217,12 @@ And the ticker does not trap focus or announce every tick (aria-hidden on the ro
 
 ### Requirement: Latest results section
 
+The latest-results section SHALL show a centered title, subtitle and league
+line above two mirrored photo/score result blocks and a brand See More
+Info button.
+
 #### Scenario: Results content
+
 ```
 Given the Latest Results section is visible
 Then the section title "LATEST RESULTS" (uppercase, black) is centered
@@ -214,7 +235,12 @@ And an orange "See More Info" button (200×64, navy 3px bottom bar that fills on
 
 ### Requirement: Upcoming events and latest games lists
 
+The upcoming-events and latest-games section SHALL render a navy two-column
+band of #242b56 rows: event rows with photo, title, date and link; game
+rows with crests, league, score and date.
+
 #### Scenario: Navy two-column band
+
 ```
 Given the Upcoming & Latest section is visible
 Then the band background is navy #161d4a
@@ -224,6 +250,7 @@ And a decorative player photo is positioned absolutely behind the bottom-left of
 ```
 
 #### Scenario: Event list rows
+
 ```
 Given the upcoming events list is visible
 Then at least three event rows are displayed
@@ -232,6 +259,7 @@ And each row shows a photo thumbnail, an event title, a date line ("August 25, 2
 ```
 
 #### Scenario: Games list rows
+
 ```
 Given the latest games list is visible
 Then at least three game rows are displayed in the same 110px #242b56 strips
@@ -241,7 +269,11 @@ And team names are keyboard-focusable links with orange hover
 
 ### Requirement: Milestone counters over parallax band
 
+The milestones section SHALL render four icon counters over a parallax photo
+band that count up from zero when scrolled into view.
+
 #### Scenario: Counters render and count up
+
 ```
 Given the milestones section is visible
 Then a parallax photo band (picsum placeholder, dark treatment) displays four counters: Team players, Trophies, Medals, Kicks/Match
@@ -253,7 +285,12 @@ And the component cleans up any timers/observers on unmount
 
 ### Requirement: Player of the month feature
 
+The player-of-the-month section SHALL show a navy squad-number chip, a huge
+orange player name, bio paragraphs, and two bottom-anchored photos
+spanning the left half of the viewport.
+
 #### Scenario: Player content renders
+
 ```
 Given the Player of the Month section is visible
 Then the section title "PLAYER OF THE MONTH" (uppercase) and an orange subtitle are shown
@@ -265,7 +302,11 @@ And two player photos (picsum) are bottom-anchored, spanning the left half of th
 
 ### Requirement: Latest news grid
 
+The latest-news section SHALL render three cards on a light #d7d9e5 band
+with white date badges, hover shadows and orange hover titles.
+
 #### Scenario: News cards render
+
 ```
 Given the Latest News section is visible
 Then the band background is light #d7d9e5
@@ -277,7 +318,11 @@ And the card casts a soft shadow on hover (0 16px 38px rgba(9,9,9,0.33))
 
 ### Requirement: Join-club CTA strip
 
+The join-club strip SHALL render a brand-orange band with a navy uppercase
+span in the headline and a navy button that fills white on hover.
+
 #### Scenario: CTA renders
+
 ```
 Given the CTA strip is visible
 Then the strip background is brand orange #ffa54b with 1px white top and bottom borders
@@ -289,7 +334,11 @@ Then its fill transitions to white and the text turns navy
 
 ### Requirement: Footer with contact info, newsletter and attribution
 
+The footer SHALL render contact details, a validating newsletter form,
+footer nav links, and a darker bottom bar that links Component Dock.
+
 #### Scenario: Footer content
+
 ```
 Given the footer is visible
 Then the footer background is #0a1123 with a darker #070d1d bottom bar
@@ -300,6 +349,7 @@ And a decorative player photo is positioned on the right side of the footer
 ```
 
 #### Scenario: Component Dock attribution
+
 ```
 Given the footer is visible
 Then the bottom bar shows a copyright notice
@@ -309,7 +359,11 @@ And NO ColorLib attribution or links appear anywhere in the page
 
 ### Requirement: Responsive layout
 
+The layout SHALL stack every section gracefully on viewports narrower than
+768px.
+
 #### Scenario: Mobile viewport
+
 ```
 Given the user views the page on a viewport narrower than 768px
 Then the header collapses to the hamburger menu
@@ -323,7 +377,11 @@ And the footer contact list, newsletter and nav stack
 
 ### Requirement: Accessibility
 
+All interactive elements SHALL be keyboard reachable with visible focus
+states, labelled controls, and non-disruptive rotating/counting regions.
+
 #### Scenario: Interactive elements
+
 ```
 Given the page is rendered
 Then all interactive elements (links, buttons, slider Next, menu toggle, form) are keyboard reachable with visible focus states
