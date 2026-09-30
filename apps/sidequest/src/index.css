@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #66bb6a;
+  --color-brand-dark: #4caf50;
+  --color-content-bg: #5c6370;
+  --color-sidebar-bg: #ffffff;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #b0bec5;
+  --color-text-dark: #212529;
+  --color-text-muted: #757575;
+  --color-progress-track: #e0e0e0;
+  --color-check-green: #4caf50;
+}
+
+body {
+  font-family:
+    'Open Sans',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  margin: 0;
+}
