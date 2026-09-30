@@ -2842,7 +2842,7 @@
 - [x] **Soccer** — [colorlib](https://colorlib.com/wp/template/soccer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/soccer-free-template.jpg) · [striker](https://striker.free.componentdock.com)
 - [x] **Specer** — [colorlib](https://colorlib.com/wp/template/specer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/specer-free-template.jpg) · [pitchside](https://pitchside.free.componentdock.com)
 - [x] **Sportsteam** — [colorlib](https://colorlib.com/wp/template/sportsteam/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sportsteam-free-template.jpg) · [Matchday](https://free-react-templates-matchday.surge.sh)
-- [~] **Sportz** — [colorlib](https://colorlib.com/wp/template/sportz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sportz-free-template.jpg)
+- [x] **Sportz** — [colorlib](https://colorlib.com/wp/template/sportz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sportz-free-template.jpg) · [sideline](https://free-react-templates-sideline.surge.sh)
 - [x] **Thebasketball** — [colorlib](https://colorlib.com/wp/template/thebasketball/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thebasketball-free-template.jpg) · [Hoopside](https://hoopside.free.componentdock.com)
 
 ## Startup (17)
