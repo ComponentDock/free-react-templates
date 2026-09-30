@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens from the original snippet's palette: */
+
+  /* Page background — white data-table page. */
+  --color-surface: #ffffff;
+
+  /* Near-black ink — page heading. */
+  --color-ink: #212529;
+
+  /* Black — table header labels (normal case, default bold weight). */
+  --color-header: #000000;
+
+  /* Light gray — table body text (rendered at font-weight 300). */
+  --color-muted: #777777;
+
+  /* Fainter gray — occupation sub-blurbs (300 weight, 80% size). */
+  --color-blurb: #b3b3b3;
+
+  /* Accent blue — name/Details links and checkbox hover/focus border + checked fill. */
+  --color-accent: #007bff;
+
+  /* Darker blue — link hover state. */
+  --color-link-hover: #0056b3;
+
+  /* Subtle odd-row stripe tint. */
+  --color-stripe: rgba(0, 0, 0, 0.05);
+
+  /* iOS green — the toggle switch ON track (the signature). */
+  --color-switch-on: #4cd964;
+
+  /* Checkbox unchecked border. */
+  --color-checkbox-border: #cccccc;
+
+  /* Toggle switch OFF track border. */
+  --color-switch-border: #dddddd;
+
+  /* Original font: "Roboto" via Google Fonts (loaded in index.html). */
+  --font-sans:
+    'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif;
+}
