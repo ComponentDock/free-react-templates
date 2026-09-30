@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Design tokens from the source snippet's palette: */
+
+  /* Page background — SOLID pale periwinkle (not a gradient). */
+  --color-page: #c4d3f6;
+
+  /* Periwinkle-indigo — table header band background. */
+  --color-header-band: #6c7ae0;
+
+  /* Gray — desktop body-cell text. */
+  --color-cell-ink: #666666;
+
+  /* Light gray — thin row separators (cell border-bottom). */
+  --color-row-line: #f2f2f2;
+
+  /* Pale lavender — row hover tint (applies to EVERY row). */
+  --color-hover-tint: #ececff;
+
+  /* Darker gray — stacked-mode body text (grows to 18px). */
+  --color-stacked-ink: #555555;
+
+  /* Faint gray — stacked-mode :before column labels (12px bold uppercase). */
+  --color-label-ink: #808080;
+
+  /* Original font: "Poppins" weights 400 + 700 (via Google Fonts link). */
+  --font-poppins: 'Poppins', sans-serif;
+}
