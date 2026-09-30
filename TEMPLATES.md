@@ -2808,7 +2808,7 @@
 [x] **Colorlib Sidebar V07** — [colorlib](https://colorlib.com/wp/template/colorlib-sidebar-v07/) · [sidequest](https://sidequest.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-sidebar-v07.jpg)
 - [x] **Colorlib Sidebar V08** — [colorlib](https://colorlib.com/wp/template/colorlib-sidebar-v08/) · [sidegate](https://sidegate.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-sidebar-v08.jpg)
 - [x] **Colorlib Sidebar V09** — [colorlib](https://colorlib.com/wp/template/colorlib-sidebar-v09/) · [sidecar](https://sidecar.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-sidebar-v09.jpg)
-- [~] **Colorlib Sidebar V10** — [colorlib](https://colorlib.com/wp/template/colorlib-sidebar-v10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-sidebar-v10.jpg)
+- [x] **Colorlib Sidebar V10** — [colorlib](https://colorlib.com/wp/template/colorlib-sidebar-v10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-sidebar-v10.jpg) · [marginote](https://marginote.free.componentdock.com)
 
 ## Signup Forms (20)
 
