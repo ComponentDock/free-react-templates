@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Design tokens from the source snippet's palette: */
+
+  /* Page gradient — 45deg blue-violet → magenta diagonal. */
+  --color-brand-from: #4158d0;
+  --color-brand-to: #c850c0;
+
+  /* Dark plum-charcoal — table header row background. */
+  --color-header-plum: #36304a;
+
+  /* Gray — table body cell text. */
+  --color-cell-ink: #808080;
+
+  /* Light gray — zebra striping on even body rows + row hover fill. */
+  --color-zebra: #f5f5f5;
+
+  /* Darker gray — body text on row hover. */
+  --color-hover-ink: #555555;
+
+  /* Faint gray — stacked-mode :before column labels (14px). */
+  --color-label-ink: #999999;
+
+  /* Original font: "Open Sans" weight 400 only (via Google Fonts link). */
+  --font-open-sans: 'Open Sans', sans-serif;
+}
