@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode is not used by Striker (a fully dark club template);
+   the custom variant is declared so shared ui components that ship `dark:`
+   utilities still compile. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Striker design tokens — dark football-club palette.
+     Brand red #ee1e46: buttons, heading bars, widget title bars, play
+     buttons, news caption diagonal, nav hover. Page #222831 dark
+     blue-gray. Card #0d0f13: match-result card. Footer #1a1e25: footer
+     and league-widgets band. */
+  --color-brand: #ee1e46;
+  --color-page: #222831;
+  --color-card: #0d0f13;
+  --color-footer: #1a1e25;
+
+  /* Montserrat for everything (Google Fonts via index.html). */
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-page);
+    color: #fff;
+  }
+}
