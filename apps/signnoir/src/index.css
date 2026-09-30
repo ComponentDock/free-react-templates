@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens: dark charcoal page, violet accent, gray-filled inputs */
+  --color-page-bg: #313131;
+  --color-accent: #6807f9;
+  --color-overlay: #000000;
+  --color-input-fill: rgba(0, 0, 0, 0.03);
+  --color-input-fill-hover: rgba(0, 0, 0, 0.05);
+  --color-divider: #e6e6e6;
+  --shadow-wrap: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+  --shadow-btn: 0px 10px 19px -16px rgba(0, 0, 0, 0.29);
+}
+
+@layer base {
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.8;
+  }
+}
