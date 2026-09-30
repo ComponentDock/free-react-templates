@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #d5c455;
+  --color-brand-dark: #c4b344;
+  --color-facebook: #44629b;
+  --color-twitter: #1dade9;
+  --color-input-shadow: rgba(0, 0, 0, 0.1);
+  --color-input-focus-shadow: rgba(0, 0, 0, 0.17);
+  --color-btn-shadow: rgba(0, 0, 0, 0.29);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+  }
+}
