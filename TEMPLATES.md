@@ -2958,7 +2958,7 @@
 - [x] **Carries** — [colorlib](https://colorlib.com/wp/template/carries/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carries-free-template.jpg) · [packwell](https://packwell.free.componentdock.com)
 - [x] **Depot** — [colorlib](https://colorlib.com/wp/template/depot/) · [depot](https://depot.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/depot-free-template.jpg)
 - [x] **Foundation2** — [colorlib](https://colorlib.com/wp/template/foundation2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foundation2-free-template.jpg) · [consignly](https://consignly.free.componentdock.com)
-- [~] **Freightbroker** — [colorlib](https://colorlib.com/wp/template/freightbroker/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/freightbroker-free-template.jpg)
+- [x] **Freightbroker** — [colorlib](https://colorlib.com/wp/template/freightbroker/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/freightbroker-free-template.jpg) · [drayage](https://free-react-templates-drayage.surge.sh)
 - [x] **Lagoon** — [colorlib](https://colorlib.com/wp/template/lagoon/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lagoon-free-template.jpg) · [cargomate](https://cargomate.free.componentdock.com)
 - [ ] **Logis** — [colorlib](https://colorlib.com/wp/template/logis/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logis-free-template.jpg)
 - [x] **Logistic** — [colorlib](https://colorlib.com/wp/template/logistic/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logistic-free-template.jpg) · [convey](https://convey.free.componentdock.com)
