@@ -2890,7 +2890,7 @@
 - [x] **Table 07** — [colorlib](https://colorlib.com/wp/template/table-07/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/table-07.jpg) · [rowspan](https://free-react-templates-rowspan.surge.sh)
 - [x] **Table 08** — [colorlib](https://colorlib.com/wp/template/table-08/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/table-08.jpg) · [tabula](https://free-react-templates-tabula.surge.sh)
 - [x] **Table 09** — [colorlib](https://colorlib.com/wp/template/table-09/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/table-09.jpg) · [billstack](https://free-react-templates-billstack.surge.sh)
-- [~] **Table 10** — [colorlib](https://colorlib.com/wp/template/table-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/table-10.jpg)
+- [x] **Table 10** — [colorlib](https://colorlib.com/wp/template/table-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/table-10.jpg) · [rowtint](https://free-react-templates-rowtint.surge.sh)
 - [ ] **Table With Vertical Horizontal Highlight** — [colorlib](https://colorlib.com/wp/template/table-with-vertical-horizontal-highlight/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/table-with-vertical-horizontal-highlight.jpg)
 
 ## Tailwind Css (48)
