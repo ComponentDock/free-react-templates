@@ -2935,7 +2935,7 @@
 - [ ] **Solarshift** — [colorlib](https://colorlib.com/wp/template/solarshift/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solarshift-template.jpg)
 - [x] **Solestyle** — [colorlib](https://colorlib.com/wp/template/solestyle/) · [lacecraft](https://lacecraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/solestyle-template-1770211411401.jpg)
 - [x] **Sparkleclean** — [colorlib](https://colorlib.com/wp/template/sparkleclean/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sparkleclean-template.jpg) · [sudsy](https://sudsy.free.componentdock.com)
-- [ ] **Swiftmove** — [colorlib](https://colorlib.com/wp/template/swiftmove/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/swiftmove-template-1771943964825.jpg)
+- [x] **Swiftmove** — [colorlib](https://colorlib.com/wp/template/swiftmove/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/swiftmove-template-1771943964825.jpg) · [movere](https://movere.free.componentdock.com)
 - [x] **The Grand Azure** — [colorlib](https://colorlib.com/wp/template/the-grand-azure/) · [azurepeak](https://azurepeak.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/grandazure-template-1771943856380.jpg)
 - [x] **The Hustle Hour** — [colorlib](https://colorlib.com/wp/template/the-hustle-hour/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hustlehour-template-1771943880509.jpg) · [soundbite](https://free-react-templates-soundbite.surge.sh)
 - [x] **Vitality** — [colorlib](https://colorlib.com/wp/template/vitality/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/vitality-template-1770211473540.jpg) · [cura](https://cura.free.componentdock.com)
@@ -2965,7 +2965,7 @@
 - [ ] **Logisticexpress** — [colorlib](https://colorlib.com/wp/template/logisticexpress/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logisticexpress-free-template.jpg)
 - [x] **Logistico** — [colorlib](https://colorlib.com/wp/template/logistico/) · [logistico](https://logistico.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logistico-free-template.jpg)
 - [x] **Logistics** — [colorlib](https://colorlib.com/wp/template/logistics/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/logistics-free-template.jpg) · [shiply](https://shiply.free.componentdock.com)
-- [ ] **Swiftmove** — [colorlib](https://colorlib.com/wp/template/swiftmove/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/swiftmove-template-1771943964825.jpg)
+- [x] **Swiftmove** — [colorlib](https://colorlib.com/wp/template/swiftmove/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/swiftmove-template-1771943964825.jpg) · [movere](https://movere.free.componentdock.com)
 - [x] **Taxi** — [colorlib](https://colorlib.com/wp/template/taxi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/taxi-free-template.jpg) · [cabspot](https://cabspot.free.componentdock.com)
 - [x] **Thelogistico** — [colorlib](https://colorlib.com/wp/template/thelogistico/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thelogistico-colorlib-template.jpg) · [logistix](https://logistix.free.componentdock.com)
 
