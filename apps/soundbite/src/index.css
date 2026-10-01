@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette: red-600 primary with purple gradient endpoint */
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f87171;
+  --color-primary-500: #ef4444;
+  --color-primary-600: #dc2626;
+  --color-primary-700: #b91c1c;
+  --color-primary-900: #450a0a;
+  --color-primary-950: #1c0505;
+  --color-accent-400: #c084fc;
+  --color-accent-500: #a855f7;
+  --color-accent-600: #9333ea;
+  --font-sans: 'Outfit', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #ffffff;
+  background-color: #030712;
+}
