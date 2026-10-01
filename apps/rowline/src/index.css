@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Design tokens from the source snippet's final cascade: */
+
+  /* Page background — light blue-gray canvas. */
+  --color-page: #f8f9fd;
+
+  /* Table ink — the final table rule color. */
+  --color-ink: #212529;
+
+  /* Body text — the final body rule sets `color: gray`. */
+  --color-body-ink: gray;
+
+  /* Near-black — the centered section headings. */
+  --color-heading: #000000;
+
+  /* Sage/olive green — the signature thead bar + checked checkbox glyph. */
+  --color-sage: #99b19c;
+
+  /* Remove-button × red. */
+  --color-danger: #dc3545;
+
+  /* Faint — the product blurb line. */
+  --color-subtext: rgba(0, 0, 0, 0.3);
+
+  /* Faint — unchecked checkbox glyph. */
+  --color-uncheck: rgba(0, 0, 0, 0.1);
+
+  /* Table drop shadow color. */
+  --color-shadow: rgba(0, 0, 0, 0.29);
+
+  /* Quantity input focus ring (Bootstrap-style). */
+  --color-focus-border: #80bdff;
+  --color-focus-ring: rgba(0, 123, 255, 0.25);
+
+  /* Quantity input base field (reboot form-control). */
+  --color-input: #495057;
+  --color-input-border: #ced4da;
+
+  /* Original font: "Poppins" weights 400/500/700 (via Google Fonts link). */
+  --font-poppins: 'Poppins', Arial, sans-serif;
+}
