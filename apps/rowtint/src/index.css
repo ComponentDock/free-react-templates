@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Design tokens from the source snippet's final cascade: */
+
+  /* Page background — light WARM-gray canvas. */
+  --color-page: #fafafa;
+
+  /* Heading ink — the centered h2 stays black. */
+  --color-heading: #000000;
+
+  /* Body text — the final body rule sets `color: gray` (#808080). */
+  --color-muted: #808080;
+
+  /* Dark header band — charcoal thead background (dark-table family). */
+  --color-headerband: #343a40;
+
+  /* Row tint sequence — solid Bootstrap status bands (primary uses the
+     final override #1089ff, not the reboot's #007bff). */
+  --color-row-primary: #1089ff;
+  --color-row-success: #28a745;
+  --color-row-warning: #ffc107;
+  --color-row-danger: #dc3545;
+  --color-row-info: #17a2b8;
+
+  /* Table cell ink — dark-table rule: ALL cells render white. */
+  --color-celltext: #ffffff;
+
+  /* Table card drop shadow color. */
+  --color-cardshadow: rgba(0, 0, 0, 0.29);
+
+  /* Original font: "Poppins" weights 400/700 (via Google Fonts link). */
+  --font-poppins: 'Poppins', Arial, sans-serif;
+}
