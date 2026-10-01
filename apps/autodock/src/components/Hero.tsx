@@ -5,11 +5,11 @@ import { Button } from '@free-react-templates/ui'
 const LOCATIONS = ['Select', 'Dhaka', 'Comilla', 'Barishal', 'Rangpur']
 const CAR_TYPES = ['Select', 'BMW', 'Audi', 'Lexus']
 
-export function Hero() {
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
-  }
+function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  event.preventDefault()
+}
 
+export function Hero() {
   return (
     <section
       id="home"

@@ -7,12 +7,12 @@ const RECENT_POSTS = [
   'Weekend rental deals you should not miss',
 ]
 
+function handleSubscribe(event: FormEvent<HTMLFormElement>) {
+  event.preventDefault()
+}
+
 export function Footer() {
   const [email, setEmail] = useState('')
-
-  const handleSubscribe = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
-  }
 
   return (
     <footer id="contact" className="bg-carbon text-gray-300">
