@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Design tokens captured from the source snippet's stylesheet. */
+
+  /* Original font: "Montserrat" weights 400 (body) / 500 (headers),
+     loaded via Google Fonts in index.html. */
+  --font-montserrat: 'Montserrat', Arial, sans-serif;
+
+  /* Full-viewport canvas — mid-gray page background. */
+  --color-canvas: #d1d1d1;
+
+  /* Cell ink — muted gray body text. */
+  --color-celltext: #808080;
+
+  /* Header ink — white uppercase labels on every version band. */
+  --color-headtext: #ffffff;
+
+  /* ver1 — plum header, light-gray row/column, indigo cell. */
+  --color-ver1-head: #36304a;
+  --color-ver1-row: #f2f2f2;
+  --color-ver1-colhead: #484848;
+  --color-ver1-cell: #6c7ae0;
+
+  /* ver2 — charcoal header, mint stripes, green hover, deep-green cell. */
+  --color-ver2-head: #333333;
+  --color-ver2-stripe: #eaf8e6;
+  --color-ver2-row: #83d160;
+  --color-ver2-colhead: #484848;
+  --color-ver2-cell: #57b846;
+
+  /* ver3 — indigo header, pale-pink hover, magenta cell, row borders. */
+  --color-ver3-head: #6c7ae0;
+  --color-ver3-row: #fcebf5;
+  --color-ver3-colhead: #7b88e3;
+  --color-ver3-cell: #e03e9c;
+  --color-ver3-border: #e5e5e5;
+
+  /* ver4 — coral header, blush column/cell, text-only row hover. */
+  --color-ver4-head: #fa4251;
+  --color-ver4-col: #ffebed;
+  --color-ver4-colhead: #f95462;
+
+  /* ver5 — dark-teal header, ice stripes, rose accent, border overlays. */
+  --color-ver5-head: #002933;
+  --color-ver5-stripe: #e9faff;
+  --color-ver5-accent: #fe3e64;
+  --color-ver5-colhead: #1a3f48;
+  --color-ver5-side: #f2f2f2;
+
+  /* ver6 — gradient card shell + translucent-white treatments. */
+  --color-ver6-fallback: #7918f2;
+  --color-ver6-head: rgba(255, 255, 255, 0.32);
+  --color-ver6-row: rgba(255, 255, 255, 0.1);
+  --color-ver6-cell: rgba(255, 255, 255, 0.2);
+}
