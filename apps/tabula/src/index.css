@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Design tokens from the source snippet's final cascade: */
+
+  /* Page background — light blue-gray canvas (the signature token). */
+  --color-page: #f8f9fd;
+
+  /* Heading — the centered section headings (black on light gray). */
+  --color-heading: #000;
+
+  /* Body text — the final body rule sets `color: gray`. */
+  --color-muted: #808080;
+
+  /* Cell ink — the table text color inherited by all cells. */
+  --color-cell: #212529;
+
+  /* Rule — 2px row separators and the header underline. */
+  --color-rule: #ececec;
+
+  /* Open row band — the expanded trigger band and closed-row hover. */
+  --color-openrow: #ececec;
+
+  /* Panel — the accordion detail panel background. */
+  --color-panel: #f3f3f3;
+
+  /* Accent — the green chevron color. */
+  --color-accent: #28a745;
+
+  /* Card shadow — soft shadow under the white table card. */
+  --color-cardshadow: rgba(0, 0, 0, 0.29);
+
+  /* Original font: "Poppins" weights 400/700 (via Google Fonts link). */
+  --font-poppins: 'Poppins', Arial, sans-serif;
+}
