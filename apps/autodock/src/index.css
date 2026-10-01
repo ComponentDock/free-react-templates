@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-opensans: 'Open Sans', sans-serif;
+  /* brand palette: golden yellow accents on dark charcoal */
+  --color-brand: #ffd000;
+  --color-brand-deep: #e6bb00;
+  --color-carbon: #1e2228;
+  --color-carbon-deep: #171a1f;
+  --color-ink: #333333;
+  --color-muted: #777777;
+  --color-line: #eaeaea;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-opensans);
+  }
+}
