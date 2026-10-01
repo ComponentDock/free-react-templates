@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Design tokens from the source snippet's final cascade: */
+
+  /* Page background — light blue-gray canvas. */
+  --color-page: #f8f9fd;
+
+  /* Table ink — the final table rule color. */
+  --color-ink: #212529;
+
+  /* Body text — the final body rule sets `color: gray`. */
+  --color-body-ink: gray;
+
+  /* Near-black — the centered section heading. */
+  --color-heading: #000000;
+
+  /* Lavender — the signature 4px header underline. */
+  --color-line: #eceffa;
+
+  /* Status pill — Active palette (light green / green / dot green). */
+  --color-active-bg: #cff6dd;
+  --color-active-text: #1fa750;
+  --color-active-dot: #23bd5a;
+
+  /* Status pill — waiting palette (light amber / dark amber / dot amber). */
+  --color-wait-bg: #fdf5dd;
+  --color-wait-text: #cfa00c;
+  --color-wait-dot: #f2be1d;
+
+  /* Remove-button × red. */
+  --color-danger: #dc3545;
+
+  /* Teal — the checkbox accent. */
+  --color-accent: #40bfc1;
+
+  /* Faint — the added-date line. */
+  --color-subtext: rgba(0, 0, 0, 0.3);
+
+  /* Faint — unchecked checkbox glyph. */
+  --color-uncheck: rgba(0, 0, 0, 0.1);
+
+  /* Table drop shadow color. */
+  --color-shadow: rgba(0, 0, 0, 0.29);
+
+  /* Original font: "Poppins" weights 400/500/700 (via Google Fonts link). */
+  --font-poppins: 'Poppins', Arial, sans-serif;
+}
