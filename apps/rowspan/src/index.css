@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Design tokens from the source snippet's final cascade: */
+
+  /* Page background — dark charcoal canvas (the signature token). */
+  --color-page: #2b3035;
+
+  /* Table panel — the final dark-variant background. */
+  --color-panel: #343a40;
+
+  /* Ink — final dark-variant text color (white). */
+  --color-ink: #ffffff;
+
+  /* Heading — the centered section heading (white on dark). */
+  --color-heading: #ffffff;
+
+  /* Body text — the final body rule sets `color: gray`. */
+  --color-muted: #808080;
+
+  /* Row-gap — page color used for the 3px/4px separation gaps. */
+  --color-gap: #2b3035;
+
+  /* Row hover — the dark-variant hover highlight. */
+  --color-rowhover: rgba(255, 255, 255, 0.075);
+
+  /* Original font: "Poppins" weights 400/700 (via Google Fonts link). */
+  --font-poppins: 'Poppins', Arial, sans-serif;
+}
