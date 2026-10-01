@@ -2889,7 +2889,7 @@
 - [x] **Table 06** — [colorlib](https://colorlib.com/wp/template/table-06/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/table-06.jpg) · [rowline](https://free-react-templates-rowline.surge.sh)
 - [x] **Table 07** — [colorlib](https://colorlib.com/wp/template/table-07/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/table-07.jpg) · [rowspan](https://free-react-templates-rowspan.surge.sh)
 - [x] **Table 08** — [colorlib](https://colorlib.com/wp/template/table-08/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/table-08.jpg) · [tabula](https://free-react-templates-tabula.surge.sh)
-- [ ] **Table 09** — [colorlib](https://colorlib.com/wp/template/table-09/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/table-09.jpg)
+- [~] **Table 09** — [colorlib](https://colorlib.com/wp/template/table-09/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/table-09.jpg)
 - [ ] **Table 10** — [colorlib](https://colorlib.com/wp/template/table-10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/table-10.jpg)
 - [ ] **Table With Vertical Horizontal Highlight** — [colorlib](https://colorlib.com/wp/template/table-with-vertical-horizontal-highlight/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/table-with-vertical-horizontal-highlight.jpg)
 

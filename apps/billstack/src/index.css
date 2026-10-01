@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Design tokens from the source snippet's final cascade: */
+
+  /* Page background — light WARM-gray canvas. */
+  --color-page: #fafafa;
+
+  /* Heading ink — the centered h2 stays black. */
+  --color-heading: #000000;
+
+  /* Body text — the final body rule sets `color: gray` (#808080). */
+  --color-muted: #808080;
+
+  /* Table cell ink — the table rule color (page-level gray never reaches cells). */
+  --color-cell: #212529;
+
+  /* Odd-row stripe — the striped tbody rule shade (odd rows win on specificity). */
+  --color-stripe: rgba(0, 0, 0, 0.05);
+
+  /* Status button variants — Bootstrap success/warning/danger. */
+  --color-success: #28a745;
+  --color-success-hover: #218838;
+  --color-warning: #ffc107;
+  --color-warning-hover: #e0a800;
+  --color-danger: #dc3545;
+  --color-danger-hover: #c82333;
+
+  /* Table card drop shadow color. */
+  --color-cardshadow: rgba(0, 0, 0, 0.29);
+
+  /* Original font: "Poppins" weights 400/700 (via Google Fonts link). */
+  --font-poppins: 'Poppins', Arial, sans-serif;
+}
