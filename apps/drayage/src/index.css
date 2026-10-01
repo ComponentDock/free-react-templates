@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Design tokens captured from the source snippet's stylesheet. */
+
+  /* Display font — headings, buttons, nav, chips (Oswald). */
+  --font-display: 'Oswald', sans-serif;
+
+  /* Body font — paragraphs, forms, meta (Quicksand). */
+  --font-body: 'Quicksand', sans-serif;
+
+  /* Brand orange — CTAs, eyebrows, logo block, counters, chips. */
+  --color-brand: #ff5f2a;
+  --color-brandhover: #e14e1f;
+
+  /* Navy — topbar, section headings, choose-us band, project panels. */
+  --color-navy: #03123b;
+
+  /* Footer navy — slightly darker than the section navy. */
+  --color-footernavy: #09122b;
+
+  /* Grays — body copy, secondary text, meta, form borders, dividers. */
+  --color-body: #7d8184;
+  --color-secondary: #5e6164;
+  --color-meta: #9caaaf;
+  --color-ink: #353535;
+  --color-formborder: #515768;
+  --color-divider: #ebebeb;
+}
