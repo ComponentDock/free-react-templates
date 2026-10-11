@@ -3018,7 +3018,7 @@
 
 ## Ui Kit (8)
 
-- [~] **Buildex Ui Kit** — [colorlib](https://colorlib.com/wp/template/buildex-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildex-free-template.jpg)
+- [x] **Buildex Ui Kit** — [colorlib](https://colorlib.com/wp/template/buildex-ui-kit/) · [buildkit](https://buildkit.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildex-free-template.jpg)
 - [x] **Equip Ui Kit** — [colorlib](https://colorlib.com/wp/template/equip-ui-kit/) · [swatchkit](https://swatchkit.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/equip-free-template.jpg)
 - [x] **Jellyfish Ui Kit** — [colorlib](https://colorlib.com/wp/template/jellyfish-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jellyfish-ui-kit.jpg) · [kaleido](https://kaleido.free.componentdock.com)
 - [ ] **Next Ui Kit** — [colorlib](https://colorlib.com/wp/template/next-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/next-free-template.jpg)
