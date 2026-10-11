@@ -2971,7 +2971,7 @@
 
 ## Travel (44)
 
-- [ ] **Adventure** — [colorlib](https://colorlib.com/wp/template/adventure/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/adventure-free-travel-website-template.jpg)
+- [~] **Adventure** — [colorlib](https://colorlib.com/wp/template/adventure/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/adventure-free-travel-website-template.jpg)
 - [x] **Adventure 2** — [colorlib](https://colorlib.com/wp/template/adventure-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/adventure2-free-template.jpg) · [trailquest](https://trailquest.free.componentdock.com)
 - [ ] **Beyond** — [colorlib](https://colorlib.com/wp/template/beyond/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/beyond-free-template.jpg)
 - [ ] **Deluxe** — [colorlib](https://colorlib.com/wp/template/deluxe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/deluxe-free-template.jpg)
