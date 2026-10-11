@@ -1,0 +1,509 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette: white editorial page anchored by an amber outline-button
+     system and a blue secondary accent. */
+
+  /* Amber — outline-button border, hover fill, price text, footer CTA,
+     blog pagination, link hovers. */
+  --color-gold: #f8b600;
+  /* Star rating gold. */
+  --color-star: #f9af11;
+  /* Blue — video play button, counter-card hover flood, menu link hover,
+     dropdown panel, search submit. */
+  --color-azure: #4681ff;
+
+  /* Text. */
+  --color-heading: #222222;
+  --color-body: #777777;
+
+  /* Surfaces. */
+  --color-lavender: #f9f9ff;
+  --color-ink: #1e1c27;
+  --color-divider: #333333;
+  --color-social: #cccccc;
+
+  --font-sans: 'Roboto', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+@layer base {
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #777777;
+    background-color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #222222;
+    line-height: 1.2;
+  }
+}
+
+/* Section rhythm: 80px vertical padding per band. */
+.section-gap {
+  padding: 80px 0;
+}
+
+/* Section title: large serif heading, capitalize, 30px gap below. */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #222222;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 36px;
+  }
+}
+
+/* Signature button: square amber outline, uppercase letter-spaced label,
+   arrow glyph hanging past the right edge (slides further out on hover). */
+.main-btn {
+  position: relative;
+  display: inline-block;
+  padding: 0 25px;
+  background: transparent;
+  border: 1px solid #f8b600;
+  border-radius: 0;
+  color: #222222;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 46px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.main-btn .btn-arrow {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  transition: right 0.3s ease;
+}
+
+.main-btn:hover,
+.main-btn:focus-visible {
+  background: #f8b600;
+  border-color: #f8b600;
+  color: #222222;
+}
+
+.main-btn:hover .btn-arrow,
+.main-btn:focus-visible .btn-arrow {
+  right: -38px;
+}
+
+/* Package-search submit: blue outline variant. */
+.main-btn-azure {
+  border-color: #4681ff;
+  color: #ffffff;
+}
+
+.main-btn-azure:hover,
+.main-btn-azure:focus-visible {
+  background: #4681ff;
+  border-color: #4681ff;
+  color: #ffffff;
+}
+
+/* Hero variant: white on the mobile photo background, dark on desktop. */
+.main-btn-hero {
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .main-btn-hero {
+    color: #222222;
+  }
+}
+
+/* Newsletter subscribe: same amber outline, arrow hidden. */
+.main-btn-arrowless .btn-arrow {
+  display: none;
+}
+
+/* Off-canvas navigation: fixed hamburger + sliding white panel. */
+.menu-toggle {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px;
+  transition: left 0.3s ease;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #222222;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle[aria-expanded='true'] {
+  left: 50px;
+}
+
+.menu-toggle[aria-expanded='true'] span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded='true'] span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle[aria-expanded='true'] span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -500px;
+  z-index: 50;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  overflow-y: auto;
+  background: #ffffff;
+  padding: 130px 60px;
+  box-shadow: 0 20px 50px rgba(70, 129, 255, 0.1);
+  transition: left 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .side-menu {
+    padding: 130px 115px;
+  }
+}
+
+.side-menu[data-open='true'] {
+  left: 0;
+}
+
+.side-menu-link {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2;
+  color: #222222;
+  transition: color 0.3s ease;
+}
+
+.side-menu-link:hover,
+.side-menu-link:focus-visible {
+  color: #4681ff;
+}
+
+.side-menu-sub {
+  background: #4681ff;
+}
+
+.side-menu-sub a {
+  display: block;
+  padding: 0 18px;
+  font-size: 14px;
+  line-height: 2.2;
+  color: #ffffff;
+}
+
+/* Destination counter cards: 2-up staggered grid, blue flood on hover. */
+.counter-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  max-width: 400px;
+}
+
+.counter-card:nth-child(even) {
+  margin-top: 40px;
+}
+
+@media (max-width: 420px) {
+  .counter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .counter-card:nth-child(even) {
+    margin-top: 0;
+  }
+}
+
+.counter-card {
+  display: flex;
+  height: 180px;
+  width: 165px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #eeeeee;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.counter-card:hover {
+  background: #4681ff;
+  border-color: transparent;
+  color: #ffffff;
+}
+
+.counter-card:hover h4,
+.counter-card:hover p,
+.counter-card:hover svg {
+  color: #ffffff;
+}
+
+/* Package carousel: sliding track (1-up on mobile, 3-up on desktop). */
+.package-track {
+  display: flex;
+  transform: translateX(calc(var(--slide, 0) * -100%));
+  transition: transform 0.4s ease;
+}
+
+@media (min-width: 1024px) {
+  .package-track {
+    transform: translateX(calc(var(--slide, 0) * -33.3333%));
+  }
+}
+
+.package-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.package-overlay {
+  position: absolute;
+  inset: 0;
+  background: #000000;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.package-card:hover .package-overlay,
+.package-card:focus-within .package-overlay {
+  opacity: 0.65;
+}
+
+.package-content {
+  position: absolute;
+  bottom: -20%;
+  left: -10%;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.package-card:hover .package-content,
+.package-card:focus-within .package-content {
+  bottom: 20px;
+  left: 25px;
+  opacity: 1;
+}
+
+/* Circular video play button with a pulsing ring. */
+.play-btn {
+  position: relative;
+  display: flex;
+  width: 74px;
+  height: 74px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #4681ff;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(39, 0, 110, 0.3);
+}
+
+.play-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* Amenity/blog cards: white sheen sweep across the image on hover. */
+.info-card {
+  border: 1px solid #eeeeee;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  border-color: transparent;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.sheen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 110%;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  transition: left 0.5s ease;
+}
+
+.info-card:hover .sheen::before,
+.info-card:focus-within .sheen::before {
+  left: -130%;
+}
+
+/* Dark photo search panel with a black half-overlay. */
+.search-panel {
+  position: relative;
+  isolation: isolate;
+  background-image: url('https://picsum.photos/seed/skybound-11/900/700');
+  background-position: center;
+  background-size: cover;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .search-panel {
+    padding: 70px 50px;
+  }
+}
+
+.search-panel::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #000000;
+  opacity: 0.5;
+}
+
+/* Transparent bottom-border form fields on the dark panel. */
+.search-field {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+  background: transparent;
+  padding: 25px 20px;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.search-field::placeholder {
+  color: #ffffff;
+}
+
+.search-field:focus {
+  outline: none;
+}
+
+.search-field option {
+  color: #222222;
+}
+
+/* Newsletter band: white input group, amber outline subscribe button. */
+.newsletter-input {
+  border: 1px solid #eeeeee;
+  border-right: 0;
+  border-radius: 0;
+  background: #ffffff;
+  padding: 14px 20px;
+  font-size: 14px;
+  color: #222222;
+}
+
+.newsletter-input::placeholder {
+  color: #cccccc;
+}
+
+/* Lavender decorative bands behind the amenity and blog card rows. */
+.amenities-band {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  height: 40%;
+  background: #f9f9ff;
+  z-index: 0;
+}
+
+.blog-band {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 60%;
+  background: #f9f9ff;
+  z-index: 0;
+}
+
+/* Footer: square amber arrow button, gray social icons -> amber on hover. */
+.click-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 0;
+  background: #f8b600;
+  padding: 6px 12px;
+  color: #ffffff;
+}
+
+.footer-link {
+  color: #777777;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover,
+.footer-link:focus-visible {
+  color: #ffffff;
+}
+
+.social-link {
+  color: #cccccc;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  color: #f8b600;
+}
