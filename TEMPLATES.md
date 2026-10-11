@@ -3023,7 +3023,7 @@
 - [x] **Jellyfish Ui Kit** — [colorlib](https://colorlib.com/wp/template/jellyfish-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jellyfish-ui-kit.jpg) · [kaleido](https://kaleido.free.componentdock.com)
 - [x] **Next Ui Kit** — [colorlib](https://colorlib.com/wp/template/next-ui-kit/) · [modkit](https://modkit.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/next-free-template.jpg)
 - [x] **Regen Ui Kit** — [colorlib](https://colorlib.com/wp/template/regen-ui-kit/) · [flairkit](https://flairkit.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/regen-free-template.jpg)
-- [ ] **Smash** — [colorlib](https://colorlib.com/wp/template/smash/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/smash-free-template.jpg)
+- [~] **Smash** — [colorlib](https://colorlib.com/wp/template/smash/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/smash-free-template.jpg)
 - [ ] **Structure Ui Kit** — [colorlib](https://colorlib.com/wp/template/structure-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/structure-ui-kit.jpg)
 - [x] **Tools Ui Kit** — [colorlib](https://colorlib.com/wp/template/tools-ui-kit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tools-free-template.jpg) · [toolkit](https://free-react-templates-toolkit.surge.sh)
 
