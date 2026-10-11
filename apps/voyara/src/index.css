@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand pink — #f62e71, the bottom stop of the signature gradient
+     (hero overlay, primary button, tile hover overlays). */
+  --color-pink: #f62e71;
+
+  /* Brand peach — #f9ab72, the top stop of the same gradient. */
+  --color-peach: #f9ab72;
+
+  /* Hover pink for the up/down slide triggers (#f7427f). */
+  --color-hoverpink: #f7427f;
+
+  /* Deep charcoal: headings, the footer band, and the dark pill button. */
+  --color-ink: #222222;
+
+  /* Body copy grey. */
+  --color-body: #777777;
+
+  /* Light lavender contact band. */
+  --color-lavender: #f9f9ff;
+
+  --font-body: 'Poppins', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625;
+    color: var(--color-body);
+  }
+}
+
+/* Facility icons sit at grey by default; hovering the card paints the icon
+   stroke with the brand gradient defined inline in Facilities.tsx
+   (#voyara-brand-gradient). A CSS rule beats the icon's presentation
+   attribute, so the shared lucide icons keep working unchanged. */
+.facility-card:hover .facility-icon,
+.facility-card:focus-within .facility-icon {
+  stroke: url(#voyara-brand-gradient);
+}
