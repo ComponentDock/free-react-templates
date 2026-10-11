@@ -3030,7 +3030,7 @@
 ## Uncategorized (15)
 
 - [x] **Comingsoon_01** — [colorlib](https://colorlib.com/wp/template/comingsoon_01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-1.jpg) · [debut](https://debut.free.componentdock.com)
-- [ ] **Comingsoon_02** — [colorlib](https://colorlib.com/wp/template/comingsoon_02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-2.jpg)
+- [~] **Comingsoon_02** — [colorlib](https://colorlib.com/wp/template/comingsoon_02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-2.jpg)
 - [ ] **Comingsoon_03** — [colorlib](https://colorlib.com/wp/template/comingsoon_03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-3.jpg)
 - [ ] **Comingsoon_04** — [colorlib](https://colorlib.com/wp/template/comingsoon_04/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-4.jpg)
 - [ ] **Comingsoon_05** — [colorlib](https://colorlib.com/wp/template/comingsoon_05/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-5.jpg)
