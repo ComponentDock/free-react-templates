@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Open Sans', Arial, sans-serif;
+
+  /* brand palette: signature violet ramp (#6b48ff anchor) */
+  --color-primary-50: #f4f1ff;
+  --color-primary-100: #eae4ff;
+  --color-primary-200: #d7cbff;
+  --color-primary-300: #b4a3ff;
+  --color-primary-400: #9179ff;
+  --color-primary-500: #7d5eff;
+  --color-primary-600: #6b48ff;
+  --color-primary-700: #4c22ff;
+  --color-primary-800: #4215ff;
+  --color-primary-900: #35109e;
+  --color-primary-950: #1d0768;
+
+  /* kit spectrum: #6a48ff login gradient stops + solid alert/button colors */
+  --color-primary-deep: #6a48ff;
+  --color-lilac: #b4a3ff;
+  --color-success: #38cd8b;
+  --color-danger: #f2395f;
+  --color-warning: #f89647;
+  --color-info: #29cded;
+  --color-light: #f8f9fa;
+  --color-heading: #3c4858;
+  --color-body: #777777;
+
+  /* material-style button elevation */
+  --shadow-material: 0 10px 20px -6px rgba(0, 0, 0, 0.12);
+  --shadow-material-hover: 0 12px 20px -6px rgba(0, 0, 0, 0.21);
+}
+
+@utility card-login-gradient {
+  background-image: linear-gradient(-45deg, #6a48ff 0%, #b4a3ff 100%);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--color-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: 300;
+    line-height: 1.4;
+    color: var(--color-heading);
+  }
+}
