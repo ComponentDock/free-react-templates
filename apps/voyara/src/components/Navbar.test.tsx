@@ -16,6 +16,7 @@ describe('Navbar', () => {
 
     const toggle = screen.getByRole('button', { name: 'Open menu' })
     expect(toggle).toHaveAttribute('aria-expanded', 'false')
+    expect(toggle.querySelector('svg')?.classList).toContain('lucide-menu')
     expect(screen.queryByRole('link', { name: 'Facilities' })).not.toBeInTheDocument()
   })
 
@@ -25,6 +26,7 @@ describe('Navbar', () => {
 
     const toggle = screen.getByRole('button', { name: 'Close menu' })
     expect(toggle).toHaveAttribute('aria-expanded', 'true')
+    expect(toggle.querySelector('svg')?.classList).toContain('lucide-x')
     expect(screen.getByRole('link', { name: 'Facilities' })).toHaveAttribute('href', '#facilities')
     expect(screen.getByRole('link', { name: 'Service' })).toHaveAttribute('href', '#service')
     expect(screen.getByRole('link', { name: 'Book' })).toHaveAttribute('href', '#book')
