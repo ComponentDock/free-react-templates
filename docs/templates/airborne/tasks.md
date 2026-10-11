@@ -47,7 +47,8 @@ Design notes: `docs/templates/airborne/design-notes.md`.
       copied logo asset)
 - [ ] `Socials.tsx` — wrapping row (`my-[10px]`) of exactly three
       `36×36px` links, `bg-transparent border-2 border-white rounded-[2px]`,
-      22px white lucide `Facebook` / `Twitter` / `Youtube`, `mr-[6px]`,
+      22px white inline SVG brand glyphs (lucide dropped brand icons),
+      `mr-[6px]`,
       `aria-label`s, `transition-all duration-[400ms]`, hover `bg-[#00b26f]`
 - [ ] `BodyBand.tsx` — wrapping `justify-around` row with `pr-[200px]`
       (`p-[15px]` at ≤1400px; `flex-col items-center` at ≤1200px); children:
@@ -74,7 +75,7 @@ Design notes: `docs/templates/airborne/design-notes.md`.
       `linear-gradient(to bottom, black, rgba(0,0,0,0.1))` below) with
       `show .5s linear` / `hide .5s .3s linear`
 - [ ] `NewsletterCard.tsx` — `w-[390px] max-w-full bg-white rounded-[10px]
-      pt-[50px] px-[45px] pb-[18px]` (`px-[15px]` at ≤576px); title
+    pt-[50px] px-[45px] pb-[18px]` (`px-[15px]` at ≤576px); title
       Poppins-Bold 30px/1.2 `#333` UPPERCASE centred `pb-[43px]`; form
       (Name well `mb-[10px]`, Email well `mb-[20px]`), Subscribe button, note
       Poppins-Regular 13px/1.5 `#999` centred `pt-[25px] px-[15px]`
@@ -84,7 +85,7 @@ Design notes: `docs/templates/airborne/design-notes.md`.
       `rgba(0,178,111,0.5)` animating over `.5s ease-in-out` to
       `box-shadow:0 0 80px 30px` with `opacity:0`
 - [ ] `SubscribeButton.tsx` — `w-full h-[50px] px-[20px] bg-[#00b26f]
-      rounded-[25px]` white Poppins-Bold 15px label "Subscribe",
+    rounded-[25px]` white Poppins-Bold 15px label "Subscribe",
       `transition-all duration-[400ms]`, hover `bg-[#333333]`
 - [ ] React-state validation (non-empty Name, e-mail regex
       `/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/`) → white bubble `1px solid #c80000`,

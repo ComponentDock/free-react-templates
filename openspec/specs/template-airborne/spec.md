@@ -217,96 +217,96 @@ text, `#999999` placeholder and note `#999`; validation red `#c80000`.
     centre, no-repeat) on `div.bg-img1.size1.overlay1.p-t-24` with the inline
     background image and 24px of TOP padding only
   - Wash: `.overlay1::before{background:#30bab6; background:linear-gradient(
-    top,#009efd,#2af598); opacity:0.8}`, full-size, `z-index:-1` under the
+top,#009efd,#2af598); opacity:0.8}`, full-size, `z-index:-1` under the
     content, over the photo
   - Top bar: `.flex-w` (wrap) + `.flex-sb-m` (space-between + items-centre) +
     `.p-l-80.p-r-74.p-b-175`; `.respon5` at ≤576px → 20px left / 14px right /
     50px bottom; `.wrappic1{display:block; flex-grow:1}` + `.wrappic1 img{
-    max-width:100%}`; `.m-r-30`, `.m-t-10`, `.m-b-10`
+max-width:100%}`; `.m-r-30`, `.m-t-10`, `.m-b-10`
   - Social buttons: `.size3{width:36px;height:36px}` + `.flex-c-m` (centre both
     axes) + `.how-social{color:#fff;font-size:22px;background-color:transparent;
-    border:2px solid #fff;border-radius:2px}` + `.how-social:hover{
-    background-color:#00b26f;color:#fff}` + `.m-r-6` + `.trans-04`
+border:2px solid #fff;border-radius:2px}` + `.how-social:hover{
+background-color:#00b26f;color:#fff}` + `.m-r-6` + `.trans-04`
   - Body band: `.flex-w.flex-sa` (`justify-content:space-around`) +
     `.p-r-200` (200px right padding) + `.respon1` (≤1400px → `padding:15px`;
     ≤1200px → column + items-centre)
   - Left column: `.p-t-34.p-b-60` + `.respon3` (≤1200px → centred flex column)
   - Eyebrow: `.l1-txt1{font-family:Poppins-Regular; font-size:30px; color:#fff;
-    line-height:1.2; text-transform:uppercase}` + `.p-b-10` + `.respon2`
+line-height:1.2; text-transform:uppercase}` + `.p-b-10` + `.respon2`
     (≤1200px → centred)
   - Headline: `.l1-txt2{font-family:Poppins-Bold; font-size:70px; color:#fff;
-    line-height:1.1; text-transform:uppercase}` + `.p-b-45` + `.respon2` +
+line-height:1.1; text-transform:uppercase}` + `.p-b-45` + `.respon2` +
     `.respon4` (≤576px → 50px)
   - Clock wrapper: `.flip-clock-wrapper{display:flex; flex-wrap:wrap;
-    position:relative; max-width:100%; margin:0; margin-bottom:20px}`
+position:relative; max-width:100%; margin:0; margin-bottom:20px}`
     (≤1200px → `justify-content:center`; ≤576px → `max-width:240px;
-    margin-right:26px`)
+margin-right:26px`)
   - Clock card: `.flip-clock-wrapper ul{position:relative; margin:2px;
-    width:41px; height:54px; font-size:36px; border-radius:3px;
-    background:#0d1629}` with `.flip-clock-wrapper .flip{box-shadow:none;
-    margin-bottom:50px}`; digits `.flip-clock-wrapper ul li a div div.inn{
-    font-family:Aldrich-Regular; color:#fff; font-size:35px; background-color:
-    #0d1629; border-radius:3px; height:200%; display:flex; align-items:center;
-    justify-content:center; position:absolute; left:0; z-index:1; width:100%}`;
+width:41px; height:54px; font-size:36px; border-radius:3px;
+background:#0d1629}` with `.flip-clock-wrapper .flip{box-shadow:none;
+margin-bottom:50px}`; digits `.flip-clock-wrapper ul li a div div.inn{
+font-family:Aldrich-Regular; color:#fff; font-size:35px; background-color:
+#0d1629; border-radius:3px; height:200%; display:flex; align-items:center;
+justify-content:center; position:absolute; left:0; z-index:1; width:100%}`;
     mid seam `.flip-clock-wrapper ul li a div.up:after{display:none}`
   - Clock divider: `.flip-clock-divider{display:block; position:relative;
-    width:26px; height:54px}`; colon `::before{content:":";
-    font-family:Aldrich-Regular; color:#fff; font-size:30px; centred, full
-    size}` — hidden for `.days`; caption `::after{font-family:Poppins-Regular;
-    color:#fff; font-size:12px; text-transform:uppercase; text-align:center;
-    width:90px; position:absolute; left:100%; top:100%; padding-top:16px}`
+width:26px; height:54px}`; colon `::before{content:":";
+font-family:Aldrich-Regular; color:#fff; font-size:30px; centred, full
+size}` — hidden for `.days`; caption `::after{font-family:Poppins-Regular;
+color:#fff; font-size:12px; text-transform:uppercase; text-align:center;
+width:90px; position:absolute; left:100%; top:100%; padding-top:16px}`
     with `content:"days" | "hrs" | "min" | "sec"`; `.flip-clock-divider span{
-    display:none}` hides every inner label/dot span
+display:none}` hides every inner label/dot span
   - Clock flip animation: `asd 0.5s 0.5s linear both` (z-index 2 → 4) on
     `ul.play li.flip-clock-active`; `turn 0.5s 0.5s linear both`
     (`rotateX(90deg)` → `rotateX(0deg)`) on its `.down`; `turn2 0.5s linear
-    both` (`rotateX(0deg)` → `rotateX(-90deg)`) on `ul.play li.flip-clock-before
-    .up`; shadow overlays `linear-gradient(to bottom, rgba(0,0,0,0.1), black)`
+both` (`rotateX(0deg)` → `rotateX(-90deg)`) on `ul.play li.flip-clock-before
+.up`; shadow overlays `linear-gradient(to bottom, rgba(0,0,0,0.1), black)`
     upper / `linear-gradient(to bottom, black, rgba(0,0,0,0.1))` lower animated
     with `show 0.5s linear both` and `hide 0.5s 0.3s linear both` (0.2s in one
     duplicated declaration — the theme's lower-half hide delay)
   - Card: `.bg0{background-color:#fff}` + `.wsize1{width:390px; max-width:100%}`
-    + `.bor1{border-radius:10px}` + `.p-l-45.p-r-45.p-t-50.p-b-18` +
-    `.p-lr-15-sm` (≤576px → 15px side padding)
+    - `.bor1{border-radius:10px}` + `.p-l-45.p-r-45.p-t-50.p-b-18` +
+      `.p-lr-15-sm` (≤576px → 15px side padding)
   - Card title: `.l1-txt3{font-family:Poppins-Bold; font-size:30px; color:#333;
-    line-height:1.2; text-transform:uppercase}` + `.txt-center` + `.p-b-43`
+line-height:1.2; text-transform:uppercase}` + `.txt-center` + `.p-b-43`
   - Input well: `.wrap-input100{position:relative; width:100%; height:50px;
-    z-index:1}` + `.validate-input{position:relative}`; field
+z-index:1}` + `.validate-input{position:relative}`; field
     `.input100{display:block; width:100%; height:100%; background:#f5f5f5;
-    border-radius:25px; padding:0 20px; text-align:center}`; text
+border-radius:25px; padding:0 20px; text-align:center}`; text
     `.s1-txt1{font-family:Poppins-Bold; font-size:15px; color:#555;
-    line-height:1.2}`; placeholder `#999999` (`.placeholder0` webkit/moz/ms
+line-height:1.2}`; placeholder `#999999` (`.placeholder0` webkit/moz/ms
     variants)
   - Input focus bloom: `.focus-input100{position:absolute; bottom:0; left:0;
-    z-index:-1; width:100%; height:100%; border-radius:35px; box-shadow:0px 0px
-    0px 0px; color:rgba(0,178,111,0.5)}` +
+z-index:-1; width:100%; height:100%; border-radius:35px; box-shadow:0px 0px
+0px 0px; color:rgba(0,178,111,0.5)}` +
     `.input100:focus + .focus-input100{animation:anim-shadow 0.5s ease-in-out
-    forwards}` + `@keyframes anim-shadow{to{box-shadow:0px 0px 80px 30px;
-    opacity:0}}`
+forwards}` + `@keyframes anim-shadow{to{box-shadow:0px 0px 80px 30px;
+opacity:0}}`
   - Button: `.size2{width:100%; height:50px}` + `.flex-c-m` + `.s1-txt2{
-    font-family:Poppins-Bold; font-size:15px; color:#fff; line-height:1.2}` +
+font-family:Poppins-Bold; font-size:15px; color:#fff; line-height:1.2}` +
     `.how-btn1{border-radius:25px; background-color:#00b26f; padding-right:20px;
-    padding-left:20px}` + `.how-btn1:hover{background-color:#333333}` +
+padding-left:20px}` + `.how-btn1:hover{background-color:#333333}` +
     `.trans-04` (`all .4s`)
   - Note: `.s1-txt3{font-family:Poppins-Regular; font-size:13px; color:#999;
-    line-height:1.5}` + `.txt-center` + `.p-l-15.p-r-15.p-t-25`
+line-height:1.5}` + `.txt-center` + `.p-l-15.p-r-15.p-t-25`
   - Validation bubble: `.alert-validate::before{content:attr(data-validate);
-    max-width:70%; background-color:#fff; border:1px solid #c80000;
-    border-radius:16px; padding:5px 30px 6px 10px; top:50%;
-    transform:translateY(-50%); right:12px; pointer-events:none;
-    font-family:Poppins-Bold; color:#c80000; font-size:12px; line-height:1.4;
-    text-align:left; visibility:hidden; opacity:0; transition:opacity .4s}` +
+max-width:70%; background-color:#fff; border:1px solid #c80000;
+border-radius:16px; padding:5px 30px 6px 10px; top:50%;
+transform:translateY(-50%); right:12px; pointer-events:none;
+font-family:Poppins-Bold; color:#c80000; font-size:12px; line-height:1.4;
+text-align:left; visibility:hidden; opacity:0; transition:opacity .4s}` +
     `.alert-validate::after{content:"\f06a"; font-family:FontAwesome;
-    display:block; position:absolute; color:#c80000; font-size:16px; top:50%;
-    transform:translateY(-50%); right:18px}` + `.alert-validate:hover:before{
-    visibility:visible; opacity:1}` and, inside `@media (max-width:992px)`,
+display:block; position:absolute; color:#c80000; font-size:16px; top:50%;
+transform:translateY(-50%); right:18px}` + `.alert-validate:hover:before{
+visibility:visible; opacity:1}` and, inside `@media (max-width:992px)`,
     `.alert-validate::before{visibility:visible; opacity:1}` — the recreation
     uses a lucide-react `AlertCircle` instead of the icon-font glyph
   - Base type: `body,html{font-family:Arial,sans-serif; font-size:15px;
-    color:#666666; height:100%; background-color:#fff}` (visible type is
+color:#666666; height:100%; background-color:#fff}` (visible type is
     entirely Poppins/Aldrich); `input,textarea{display:block; outline:none;
-    border:none}`; `button{outline:none; border:none; background:transparent;
-    cursor:pointer}`; `ul,li{margin:0; list-style-type:none}`
+border:none}`; `button{outline:none; border:none; background:transparent;
+cursor:pointer}`; `ul,li{margin:0; list-style-type:none}`
   - Fonts (source, self-hosted woff2): Poppins-Regular (400), Poppins-Bold
     (700) and Aldrich-Regular (400, the clock digits and colons) — the
     recreation loads Poppins (400 / 700) and Aldrich (400) from Google Fonts
@@ -316,10 +316,10 @@ text, `#999999` placeholder and note `#999`; validation red `#c80000`.
   containing, in order:
   1. `div.flex-w.flex-sb-m.p-l-80.p-r-74.p-b-175.respon5` —
      - `div.wrappic1.m-r-30.m-t-10.m-b-10 > a[href="#"] > img[src=
-       images/icons/logo.png][alt=LOGO]` (52×29 white wordmark)
+images/icons/logo.png][alt=LOGO]` (52×29 white wordmark)
      - `div.flex-w.m-t-10.m-b-10` — three
        `a.size3.flex-c-m.how-social.trans-04.m-r-6[href="#"] > i.fa.fa-facebook
-       | fa-twitter | fa-youtube-play` (inlined SVG glyphs)
+| fa-twitter | fa-youtube-play` (inlined SVG glyphs)
   2. `div.flex-w.flex-sa.p-r-200.respon1` —
      - `div.p-t-34.p-b-60.respon3` — `p.l1-txt1.p-b-10.respon2` ("Our website
        is"); `h3.l1-txt2.p-b-45.respon2.respon4` ("Coming Soon");
@@ -334,8 +334,8 @@ text, `#999999` placeholder and note `#999`; validation red `#c80000`.
        `h3.l1-txt3.txt-center.p-b-43` ("Newsletter");
        `form.w-full.validate-form` with
        `div.wrap-input100.validate-input.m-b-10[data-validate="Name is
-       required"] > input.input100.placeholder0.s1-txt1[type=text][name=name]
-       [placeholder=Name] + span.focus-input100`, the same well with `.m-b-20`
+required"] > input.input100.placeholder0.s1-txt1[type=text][name=name]
+[placeholder=Name] + span.focus-input100`, the same well with `.m-b-20`
        and `data-validate="Valid email is required: ex@abc.xyz"`
        (`[name=email][placeholder=Email]`), and
        `button.flex-c-m.size2.s1-txt2.how-btn1.trans-04` — "Subscribe";
@@ -362,47 +362,47 @@ text, `#999999` placeholder and note `#999`; validation red `#c80000`.
 
 ## Design tokens
 
-| Token | Value | Where |
-| --- | --- | --- |
-| wash gradient (page) | `#009efd` (top) → `#2af598` (bottom) — source `linear-gradient(top, #009efd, #2af598)` (legacy `top` = "to bottom") | full-viewport overlay over the photo |
-| wash fallback | `#30bab6` | background-color behind the gradient |
-| wash opacity | `0.8` | overlay layer over the photograph |
-| page photograph | source `images/bg01.jpg` (1900×900 hot-air balloons at sunrise) — recreation uses `https://picsum.photos/seed/airborne-bg/1900/900` | full-viewport background, `cover` centred |
-| brand green | `#00b26f` | Subscribe button fill, social-button hover fill |
-| button hover | `#333333` | Subscribe hover fill |
-| clock card | `#0d1629` | eight flip cards and their digits |
-| card surface | `#fff` | newsletter card |
-| card title | `#333` | "Newsletter" (30px bold uppercase), "Coming Soon" headline is white |
-| input fill | `#f5f5f5` | Name / Email pills |
-| input text | `#555` | typed values (Poppins-Bold 15px) |
-| placeholder / note | `#999999` / `#999` | placeholders and the spam note |
-| eyebrow / headline / clock digits / colons / captions / social icons | `#fff` | left column + top bar over the wash |
-| focus bloom | `rgba(0,178,111,0.5)` ring, animating to `box-shadow:0 0 80px 30px` + `opacity:0` | focused input |
-| error red | `#c80000` | validation bubble border/text/icon |
-| fonts | Poppins-Regular (eyebrow 30px, captions 12px, note 13px), Poppins-Bold (headline 70px→50px, card title 30px, inputs/button 15px, bubble 12px), Aldrich-Regular (digits 35px, colons 30px) | typography |
-| radii | 25px (inputs, button), 3px (flip cards + digits), 10px (newsletter card), 2px (social buttons), 35px (focus bloom ring), 16px (validation bubble) | shapes |
-| screen | `width:100%`, `min-height:100vh`, `padding-top:24px` (NO side/bottom padding), photo `cover` centred + wash overlay at 80% | layout |
-| top bar | wrapping space-between row, items centred, `padding 0 74px 175px 80px` (≤576px `20px / 14px / 50px`); logo wrapper `flex-grow:1` + 30px right margin; social row 6px gaps | top of screen |
-| social button | `36×36px`, `2px solid #fff`, radius 2px, transparent fill, 22px white icon, `transition:all .4s`, hover `background:#00b26f` | top right |
-| body band | wrapping `space-around` row, `padding-right:200px` (≤1400px `padding:15px`; ≤1200px column centred) | middle of screen |
-| left column | `padding:34px 0 60px` (≤1200px centred flex column) | left of the band |
-| eyebrow | Poppins-Regular 30px/1.2 white uppercase, 10px bottom padding | left column |
-| headline | Poppins-Bold 70px/1.1 white uppercase (≤576px 50px), 45px bottom padding | left column |
-| clock wrapper | wrapping flex, `max-width:100%`, `margin:0 0 20px` (≤1200px centred; ≤576px `max-width:240px` + 26px right margin) | left column |
-| clock card | `41×54px`, `margin:2px`, radius 3px, `#0d1629`; wrapper cards `margin-bottom:50px`; no mid seam; Aldrich-Regular 35px white digits, flex-centred | countdown |
-| clock divider | `26×54px` inline block; colon `":"` Aldrich-Regular 30px white centred (absent before the day group); caption Poppins-Regular 12px white uppercase, `width:90px`, positioned at `left:100%; top:100%` with `padding-top:16px` and centred text — `days` / `hrs` / `min` / `sec` | countdown |
-| clock animation | change → `.play`: active lower half `turn 0.5s 0.5s linear both` (`rotateX(90deg)`→`0`), before upper half `turn2 0.5s linear both` (`rotateX(0)`→`-90deg`), z-index `asd 0.5s 0.5s linear both`; shadows `linear-gradient(to bottom, rgba(0,0,0,0.1), black)` / `(to bottom, black, rgba(0,0,0,0.1))` with `show 0.5s` + `hide 0.5s 0.3s linear both` | countdown |
-| clock behaviour | target `now + 35 d + 18 h`; 1 s tick; day pair + `hh`+`mm`+`ss` all 2 digits; only changed cards repaint and re-flip; interval cleared on unmount | countdown |
-| newsletter card | `width:390px` (`max-width:100%`), `background:#fff`, radius 10px, `padding:50px 45px 18px` (≤576px side padding 15px) | right of the band |
-| card title | Poppins-Bold 30px/1.2 `#333` uppercase, centred, 43px bottom padding | card |
-| input well | `width:100%`, `height:50px`, `position:relative`; Name `margin-bottom:10px`, Email `margin-bottom:20px` | card |
-| input field | `width/height:100%`, `background:#f5f5f5`, radius 25px, `padding:0 20px`, TEXT CENTRED, Poppins-Bold 15px/1.2 `#555`, `#999999` placeholder | card |
-| focus bloom | ring `radius:35px`, `color:rgba(0,178,111,0.5)`, `box-shadow:0 0 0 0` → `anim-shadow 0.5s ease-in-out forwards` ending `box-shadow:0 0 80px 30px; opacity:0` | focused field |
-| subscribe button | `width:100%`, `height:50px`, `padding:0 20px`, `background:#00b26f`, radius 25px, white Poppins-Bold 15px/1.2 label, `transition:all .4s`, hover `#333333` | card |
-| spam note | Poppins-Regular 13px/1.5 `#999`, centred, `padding:25px 15px 0` | card footer |
-| validation bubble | white fill, `1px solid #c80000`, radius 16px, `padding:5px 30px 6px 10px`, right 12px, vertically centred, `max-width:70%`, Poppins-Bold 12px/1.4 `#c80000`, opacity over `.4s`; icon 16px `#c80000` at right 18px | error state |
-| validation visibility | hidden by default; shown on field hover; always shown at ≤992px | error state |
-| attribution | Poppins-Regular 12–13px `#999` centred line inside the card, under the note | footer requirement (ADDED vs the reference — the source has no footer credit) |
+| Token                                                                | Value                                                                                                                                                                                                                                                                                                                                                  | Where                                                                         |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
+| wash gradient (page)                                                 | `#009efd` (top) → `#2af598` (bottom) — source `linear-gradient(top, #009efd, #2af598)` (legacy `top` = "to bottom")                                                                                                                                                                                                                                    | full-viewport overlay over the photo                                          |
+| wash fallback                                                        | `#30bab6`                                                                                                                                                                                                                                                                                                                                              | background-color behind the gradient                                          |
+| wash opacity                                                         | `0.8`                                                                                                                                                                                                                                                                                                                                                  | overlay layer over the photograph                                             |
+| page photograph                                                      | source `images/bg01.jpg` (1900×900 hot-air balloons at sunrise) — recreation uses `https://picsum.photos/seed/airborne-bg/1900/900`                                                                                                                                                                                                                    | full-viewport background, `cover` centred                                     |
+| brand green                                                          | `#00b26f`                                                                                                                                                                                                                                                                                                                                              | Subscribe button fill, social-button hover fill                               |
+| button hover                                                         | `#333333`                                                                                                                                                                                                                                                                                                                                              | Subscribe hover fill                                                          |
+| clock card                                                           | `#0d1629`                                                                                                                                                                                                                                                                                                                                              | eight flip cards and their digits                                             |
+| card surface                                                         | `#fff`                                                                                                                                                                                                                                                                                                                                                 | newsletter card                                                               |
+| card title                                                           | `#333`                                                                                                                                                                                                                                                                                                                                                 | "Newsletter" (30px bold uppercase), "Coming Soon" headline is white           |
+| input fill                                                           | `#f5f5f5`                                                                                                                                                                                                                                                                                                                                              | Name / Email pills                                                            |
+| input text                                                           | `#555`                                                                                                                                                                                                                                                                                                                                                 | typed values (Poppins-Bold 15px)                                              |
+| placeholder / note                                                   | `#999999` / `#999`                                                                                                                                                                                                                                                                                                                                     | placeholders and the spam note                                                |
+| eyebrow / headline / clock digits / colons / captions / social icons | `#fff`                                                                                                                                                                                                                                                                                                                                                 | left column + top bar over the wash                                           |
+| focus bloom                                                          | `rgba(0,178,111,0.5)` ring, animating to `box-shadow:0 0 80px 30px` + `opacity:0`                                                                                                                                                                                                                                                                      | focused input                                                                 |
+| error red                                                            | `#c80000`                                                                                                                                                                                                                                                                                                                                              | validation bubble border/text/icon                                            |
+| fonts                                                                | Poppins-Regular (eyebrow 30px, captions 12px, note 13px), Poppins-Bold (headline 70px→50px, card title 30px, inputs/button 15px, bubble 12px), Aldrich-Regular (digits 35px, colons 30px)                                                                                                                                                              | typography                                                                    |
+| radii                                                                | 25px (inputs, button), 3px (flip cards + digits), 10px (newsletter card), 2px (social buttons), 35px (focus bloom ring), 16px (validation bubble)                                                                                                                                                                                                      | shapes                                                                        |
+| screen                                                               | `width:100%`, `min-height:100vh`, `padding-top:24px` (NO side/bottom padding), photo `cover` centred + wash overlay at 80%                                                                                                                                                                                                                             | layout                                                                        |
+| top bar                                                              | wrapping space-between row, items centred, `padding 0 74px 175px 80px` (≤576px `20px / 14px / 50px`); logo wrapper `flex-grow:1` + 30px right margin; social row 6px gaps                                                                                                                                                                              | top of screen                                                                 |
+| social button                                                        | `36×36px`, `2px solid #fff`, radius 2px, transparent fill, 22px white icon, `transition:all .4s`, hover `background:#00b26f`                                                                                                                                                                                                                           | top right                                                                     |
+| body band                                                            | wrapping `space-around` row, `padding-right:200px` (≤1400px `padding:15px`; ≤1200px column centred)                                                                                                                                                                                                                                                    | middle of screen                                                              |
+| left column                                                          | `padding:34px 0 60px` (≤1200px centred flex column)                                                                                                                                                                                                                                                                                                    | left of the band                                                              |
+| eyebrow                                                              | Poppins-Regular 30px/1.2 white uppercase, 10px bottom padding                                                                                                                                                                                                                                                                                          | left column                                                                   |
+| headline                                                             | Poppins-Bold 70px/1.1 white uppercase (≤576px 50px), 45px bottom padding                                                                                                                                                                                                                                                                               | left column                                                                   |
+| clock wrapper                                                        | wrapping flex, `max-width:100%`, `margin:0 0 20px` (≤1200px centred; ≤576px `max-width:240px` + 26px right margin)                                                                                                                                                                                                                                     | left column                                                                   |
+| clock card                                                           | `41×54px`, `margin:2px`, radius 3px, `#0d1629`; wrapper cards `margin-bottom:50px`; no mid seam; Aldrich-Regular 35px white digits, flex-centred                                                                                                                                                                                                       | countdown                                                                     |
+| clock divider                                                        | `26×54px` inline block; colon `":"` Aldrich-Regular 30px white centred (absent before the day group); caption Poppins-Regular 12px white uppercase, `width:90px`, positioned at `left:100%; top:100%` with `padding-top:16px` and centred text — `days` / `hrs` / `min` / `sec`                                                                        | countdown                                                                     |
+| clock animation                                                      | change → `.play`: active lower half `turn 0.5s 0.5s linear both` (`rotateX(90deg)`→`0`), before upper half `turn2 0.5s linear both` (`rotateX(0)`→`-90deg`), z-index `asd 0.5s 0.5s linear both`; shadows `linear-gradient(to bottom, rgba(0,0,0,0.1), black)` / `(to bottom, black, rgba(0,0,0,0.1))` with `show 0.5s` + `hide 0.5s 0.3s linear both` | countdown                                                                     |
+| clock behaviour                                                      | target `now + 35 d + 18 h`; 1 s tick; day pair + `hh`+`mm`+`ss` all 2 digits; only changed cards repaint and re-flip; interval cleared on unmount                                                                                                                                                                                                      | countdown                                                                     |
+| newsletter card                                                      | `width:390px` (`max-width:100%`), `background:#fff`, radius 10px, `padding:50px 45px 18px` (≤576px side padding 15px)                                                                                                                                                                                                                                  | right of the band                                                             |
+| card title                                                           | Poppins-Bold 30px/1.2 `#333` uppercase, centred, 43px bottom padding                                                                                                                                                                                                                                                                                   | card                                                                          |
+| input well                                                           | `width:100%`, `height:50px`, `position:relative`; Name `margin-bottom:10px`, Email `margin-bottom:20px`                                                                                                                                                                                                                                                | card                                                                          |
+| input field                                                          | `width/height:100%`, `background:#f5f5f5`, radius 25px, `padding:0 20px`, TEXT CENTRED, Poppins-Bold 15px/1.2 `#555`, `#999999` placeholder                                                                                                                                                                                                            | card                                                                          |
+| focus bloom                                                          | ring `radius:35px`, `color:rgba(0,178,111,0.5)`, `box-shadow:0 0 0 0` → `anim-shadow 0.5s ease-in-out forwards` ending `box-shadow:0 0 80px 30px; opacity:0`                                                                                                                                                                                           | focused field                                                                 |
+| subscribe button                                                     | `width:100%`, `height:50px`, `padding:0 20px`, `background:#00b26f`, radius 25px, white Poppins-Bold 15px/1.2 label, `transition:all .4s`, hover `#333333`                                                                                                                                                                                             | card                                                                          |
+| spam note                                                            | Poppins-Regular 13px/1.5 `#999`, centred, `padding:25px 15px 0`                                                                                                                                                                                                                                                                                        | card footer                                                                   |
+| validation bubble                                                    | white fill, `1px solid #c80000`, radius 16px, `padding:5px 30px 6px 10px`, right 12px, vertically centred, `max-width:70%`, Poppins-Bold 12px/1.4 `#c80000`, opacity over `.4s`; icon 16px `#c80000` at right 18px                                                                                                                                     | error state                                                                   |
+| validation visibility                                                | hidden by default; shown on field hover; always shown at ≤992px                                                                                                                                                                                                                                                                                        | error state                                                                   |
+| attribution                                                          | Poppins-Regular 12–13px `#999` centred line inside the card, under the note                                                                                                                                                                                                                                                                            | footer requirement (ADDED vs the reference — the source has no footer credit) |
 
 ## Requirements
 
@@ -412,6 +412,7 @@ The page is one screen, not a scrolling site: a background photograph covered by
 an 80%-opacity blue→green gradient with 24px of top padding only.
 
 #### Scenario: Page renders as one washed photo screen
+
 - **Given** the page loads at desktop width
 - **When** the layout renders
 - **Then** a single wrapper occupies `width:100%; min-height:100vh` with 24px of
@@ -431,6 +432,7 @@ The brand mark sits top-left, three square outlined social buttons top-right, on
 one wrapping space-between row.
 
 #### Scenario: Top bar renders the reference row
+
 - **Given** the screen renders
 - **When** the top bar is visible
 - **Then** it renders as ONE wrapping row with
@@ -443,9 +445,11 @@ one wrapping space-between row.
   buttons (`36×36px`), each `background:transparent`,
   `border:2px solid #fff`, `border-radius:2px`, with a 22px white icon and a
   6px right margin
-- **And** each social button carries an `aria-label` (facebook / twitter /
-  youtube) and renders a lucide-react icon (`Facebook`, `Twitter`, `Youtube`)
-  instead of the source FontAwesome/inlined-SVG glyphs
+- **And** each social button carries an `aria-label` (Facebook / Twitter /
+  Youtube) and renders an inline SVG brand glyph instead of the source
+  FontAwesome icon font — lucide-react dropped its brand icons, so the paths
+  live in a local `SocialIcon.tsx` (the same deviation other templates in this
+  repo take)
 - **And** hovering a social button over `.4s` swaps to `background:#00b26f`
   while the icon stays white
 
@@ -454,6 +458,7 @@ one wrapping space-between row.
 An uppercase eyebrow and a heavy uppercase headline in the left column.
 
 #### Scenario: Eyebrow and headline render with the reference typography
+
 - **Given** the screen renders
 - **When** the left column is visible
 - **Then** a line renders "Our website is"-equivalent copy in
@@ -472,6 +477,7 @@ Eight dark navy flip cards with white Aldrich digits, white colon dividers and
 tiny uppercase captions — the family's only flip clock.
 
 #### Scenario: Clock renders the reference cards, colons and captions
+
 - **Given** the screen renders
 - **When** the countdown is visible
 - **Then** it renders as ONE wrapping flex row `max-width:100%` with 20px below
@@ -490,6 +496,7 @@ tiny uppercase captions — the family's only flip clock.
   the clock shows no dots
 
 #### Scenario: Clock flips changed cards and never reads zero
+
 - **Given** the clock renders
 - **When** a second elapses
 - **Then** only the cards whose digit changed are repainted, and each of those
@@ -511,6 +518,7 @@ A white 390px rounded card with two centred pill inputs, a green pill button and
 a spam note.
 
 #### Scenario: Card renders the reference layout
+
 - **Given** the screen renders
 - **When** the card is visible
 - **Then** it is `width:390px` capped at `max-width:100%`, `background:#fff`,
@@ -526,6 +534,7 @@ a spam note.
   stacked-and-centred at ≤1200px)
 
 #### Scenario: Form renders the reference pills
+
 - **Given** the card renders
 - **When** the form is visible
 - **Then** it holds, in order, a Name well, an Email well (10px and 20px bottom
@@ -543,6 +552,7 @@ a spam note.
 - **And** hovering the button over `.4s` switches the fill to `#333333`
 
 #### Scenario: Form validates as in the reference
+
 - **Given** the form renders
 - **When** the user submits with an empty Name or a missing/malformed Email
 - **Then** the offending well reveals a white bubble carrying its message
@@ -565,6 +575,7 @@ The recreation exposes the reference palette and fonts as Tailwind 4 `@theme`
 tokens.
 
 #### Scenario: Theme tokens match the reference
+
 - **Given** the app's `src/index.css` theme
 - **When** the tokens are declared
 - **Then** the palette includes: wash gradient stops `#009efd` / `#2af598` with
@@ -586,6 +597,7 @@ The reference has no footer credit; the monorepo requires a Component Dock
 attribution, so a small line is added as the last element inside the card.
 
 #### Scenario: Attribution links Component Dock
+
 - **Given** the page renders
 - **When** the attribution line is visible
 - **Then** it renders in Poppins-Regular 12–13px `#999`, centred, directly
@@ -607,7 +619,7 @@ attribution, so a small line is added as the last element inside the card.
 - [ ] Block order matches: top bar (wordmark → three social buttons) → left
       column (eyebrow → headline → flip clock) + newsletter card
 - [ ] Top bar: wrapping space-between, items centred, `padding:0 74px 175px
-      80px` (20/14/50 at ≤576px); wordmark is an original text mark (never the
+    80px` (20/14/50 at ≤576px); wordmark is an original text mark (never the
       source PNG), grown with a 30px right margin; three 36×36 `2px solid #fff`
       radius-2px transparent social buttons with 22px white lucide icons, 6px
       gaps, `aria-label`s, hover `#00b26f` over `.4s`
@@ -643,7 +655,7 @@ attribution, so a small line is added as the last element inside the card.
       25px, white Poppins-Bold 15px label "Subscribe", `transition:all .4s`,
       hover `#333333`
 - [ ] Validation: invalid/empty Name or Email → white bubble (`1px solid
-      #c80000`, radius 16px, `padding 5px 30px 6px 10px`, `max-width:70%`, right
+    #c80000`, radius 16px, `padding 5px 30px 6px 10px`, `max-width:70%`, right
       12px, Poppins-Bold 12px `#c80000`) with a lucide `AlertCircle` (16px
       `#c80000`, right 18px); hidden until an invalid submit, then visible on
       field hover and always at ≤992px; cleared on focus; invalid submit never
@@ -652,8 +664,9 @@ attribution, so a small line is added as the last element inside the card.
       25/10/3/2/35/16px; transitions `.4s` (all), `.4s` (opacity), `.5s linear`
       (flip), `.5s ease-in-out` (bloom)
 - [ ] Placeholder photograph used is `picsum.photos/seed/airborne-bg/1900/900`;
-      icons are lucide-react only; no copied assets, logo PNG, photo, font files
-      or CSS; no jQuery, no framework, no CDN runtime
+      social icons are inline SVG brand glyphs and the validation glyph is the
+      lucide `AlertCircle`; no copied assets, logo PNG, photo, font files or
+      CSS; no jQuery, no framework, no CDN runtime
 - [ ] Component Dock attribution links `https://www.componentdock.com/`
       (Poppins-Regular 12–13px `#999`, centred under the note)
 - [ ] Zero `colorlib` / source-demo-title / `comingsoon_06` references anywhere
