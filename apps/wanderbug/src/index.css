@@ -1,0 +1,105 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand navy #00095e — headings, nav links, hero subtext, gradient start. */
+  --color-navy: #00095e;
+
+  /* Deep navy gradient end #0c0c1f — yellow buttons/submenus on hover-flip. */
+  --color-navydeep: #0c0c1f;
+
+  /* Indigo #1f2b7b — bold inline copy accents. */
+  --color-indigo: #1f2b7b;
+
+  /* Periwinkle #7ea0ff — section eyebrows, card prices, FAQ titles, nav
+     hover underline, footer accents. */
+  --color-periwinkle: #7ea0ff;
+
+  /* Signature yellow #ffc800 — phone CTA, hero highlighter bar, solid
+     buttons, instagram hover overlay. */
+  --color-brand: #ffc800;
+
+  /* Footer gradient stops: #1a2d6d → #0c1534 (135deg). */
+  --color-footstart: #1a2d6d;
+  --color-footend: #0c1534;
+
+  /* Body copy grey #677f8b. */
+  --color-body: #677f8b;
+
+  /* Footer paragraph grey #8a8fbe. */
+  --color-foottext: #8a8fbe;
+
+  /* Light panel #f9f9ff — card captions and soft section fills. */
+  --color-panel: #f9f9ff;
+
+  --font-display: 'Josefin Sans', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--color-navy);
+  }
+
+  p {
+    line-height: 1.4;
+  }
+}
+
+/* Navy gradient used by the hero CTA, dropdown panels and the yellow-button
+   hover flip (#00095e → #0c0c1f, top to bottom). Declared with @utility so
+   variants such as hover:gradient-navy work. */
+@utility gradient-navy {
+  background-image: linear-gradient(to bottom, #00095e 0%, #0c0c1f 100%);
+}
+
+/* Footer background (#1a2d6d → #0c1534, 135deg). */
+@utility gradient-footer {
+  background-image: linear-gradient(135deg, #1a2d6d 0%, #0c1534 100%);
+}
+
+/* Neon-yellow wash behind the instagram strip tiles on hover (#ffc800 @ 60%). */
+@utility overlay-brand {
+  background-color: rgb(255 200 0 / 0.6);
+}
+
+/* The camper bus in the hero illustration drifts left and right, as the
+   reference's "running" bus does (10s, alternate). */
+@keyframes nudge {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-100px, 0);
+  }
+  80% {
+    transform: translate(100px, 0);
+  }
+}
+
+@utility bus-running {
+  animation: nudge 10s linear infinite alternate;
+}
