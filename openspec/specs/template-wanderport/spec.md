@@ -30,11 +30,12 @@ centered contact-info cards (Visit Our Office / Let's call us / Let's Email Us
 / Customer Support); a white map + contact-form section (map placeholder
 left, sharp-cornered name/email/message form right with gradient submit); and
 a DARK `#222222` footer with four widgets — About Us, Newsletter (dark input
-+ gradient square arrow button), Instragram Feed (8-thumbnail grid), Follow Us
-(social icons) — closing with a centered bottom line whose accent links are
-aqua `#5cf2ee`. The recreation's footer links Component Dock instead of the
-source attribution, and the screenshot demo brand "TRAVELASIA" (gradient
-triangle-A mark) is never reused.
+
+- gradient square arrow button), Instragram Feed (8-thumbnail grid), Follow Us
+  (social icons) — closing with a centered bottom line whose accent links are
+  aqua `#5cf2ee`. The recreation's footer links Component Dock instead of the
+  source attribution, and the screenshot demo brand "TRAVELASIA" (gradient
+  triangle-A mark) is never reused.
 
 The design is anchored by one signature element — a purple→teal GRADIENT
 `linear-gradient(0deg, #9a52fd 0%, #57ffed 100%)` — used on every primary
@@ -76,62 +77,62 @@ breathe at 120px vertical padding.
   `<link>` in `index.html` (weights 300–700).
 - **Key theme rules (verified in main.css):**
   - `body`: `color: #777; font-family: "Poppins", sans-serif; font-size:
-    14px; font-weight: 300; line-height: 1.625em`; `::selection {
-    background-color: #5cf2ee; color: #fff }`
+14px; font-weight: 300; line-height: 1.625em`; `::selection {
+background-color: #5cf2ee; color: #fff }`
   - `h1, h3, h4, h6`: `"Poppins", sans-serif; color: #222; font-weight:
-    600; line-height: 1.2em`
+600; line-height: 1.2em`
   - Signature gradient: `background-image: linear-gradient(0deg, #9a52fd
-    0%, #57ffed 100%)` — applied to `.primary-btn`, `.primary-btn:after`,
+0%, #57ffed 100%)` — applied to `.primary-btn`, `.primary-btn:after`,
     `.primary-btn2.primary-border:hover`, `.content .content-overlay`
     (package cards), `.single-footer-widget .bb-btn` (newsletter submit);
     ALSO used as gradient-clipped TEXT via `background-clip: text` on
     `.sigle-feature:hover .lnr`, `.about-left h1`, `.footer-social a:hover`
   - `.primary-btn`: `line-height: 42px; padding-left: 30px; padding-right:
-    60px; border-radius: 25px; border: none; color: #fff; font-weight: 500`;
+60px; border-radius: 25px; border: none; color: #fff; font-weight: 500`;
     the arrow `<span>` sits absolute right 30px → slides to 20px on hover
     (both white)
   - `.primary-btn2`: `line-height: 28px; padding: 0 30px; border: 1px solid
-    #222222; font-size: .8em; font-weight: 500`; `.circle { border-radius:
-    20px }`; `.arrow` inline-flex with 10px icon gap — the secondary/outline
+#222222; font-size: .8em; font-weight: 500`; `.circle { border-radius:
+20px }`; `.arrow` inline-flex with 10px icon gap — the secondary/outline
     pill system
   - `.banner-area`: `background: url(../img/header-bg.jpg) no-repeat center
-    center/cover`; `.fullscreen { height: 700px }`; `.overlay-bg {
-    background: rgba(0,0,0,0.8) }`; `.banner-content { margin-top: 100px }`
+center/cover`; `.fullscreen { height: 700px }`; `.overlay-bg {
+background: rgba(0,0,0,0.8) }`; `.banner-content { margin-top: 100px }`
     (col-lg-9); `.banner-content h1 { color: #fff; font-size: 72px;
-    font-weight: 700; line-height: 1.15em }` (45px tablet, 36px mobile,
+font-weight: 700; line-height: 1.15em }` (45px tablet, 36px mobile,
     `<br>` hidden on mobile)
   - `.booking-area { margin-top: -42px }` — the card overlapping the hero;
     `.nav-tabs { border: none }`; `.nav-tabs .nav-link { border-radius: 0;
-    background: #fff3 }`; active `.nav-link` keeps `background: #fff`
+background: #fff3 }`; active `.nav-link` keeps `background: #fff`
   - `.single-in` (booking inputs): `margin-bottom: 30px; border-radius: 0;
-    font-size: 13px; font-weight: 300`
+font-size: 13px; font-weight: 300`
   - `.section-gap { padding: 120px 0 }` — the section rhythm
   - `.sigle-feature .lnr { font-size: 35px; color: #777 }` → gradient-clip
     on hover; `h4 { margin-top: 40px; margin-bottom: 20px }`
   - `.packages-area .header-text { text-align: center }` (col-md-6,
     pb-80); `.packages-area { padding-bottom: 100px }`;
     `.single-packages .title { color: #1a1a1a; text-align: center;
-    margin-bottom: 10px }`; `.content .content-overlay` is the GRADIENT —
+margin-bottom: 10px }`; `.content .content-overlay` is the GRADIENT —
     revealed with the `.fadeIn-bottom` details on hover; `.content-title {
-    font-size: 18px; color: #fff; font-weight: 500 }`
+font-size: 18px; color: #fff; font-weight: 500 }`
   - `.blog-area { background-color: #000 }`; `h1 { color: #fff; text-align:
-    center }`; `.single-blog h4 { color: #fff; text-transform: uppercase;
-    letter-spacing: 3px; margin-top: 35px }`; `.single-blog .bottom {
-    padding: 20px 0; border-top: 1px solid #222; border-bottom: 1px solid
-    #222 }`; meta spans white with 10px left margin; `.f-img:hover {
-    opacity: .5; transform: scale(1.05) }`
+center }`; `.single-blog h4 { color: #fff; text-transform: uppercase;
+letter-spacing: 3px; margin-top: 35px }`; `.single-blog .bottom {
+padding: 20px 0; border-top: 1px solid #222; border-bottom: 1px solid
+#222 }`; meta spans white with 10px left margin; `.f-img:hover {
+opacity: .5; transform: scale(1.05) }`
   - `.about-left { padding-left: 20% }`; `h1` gradient-clipped 25px;
     `.btn-black { background-color: #222; color: #fff; text-transform:
-    uppercase; font-size: 14px; border-radius: 20px; padding: 12px 28px }`
+uppercase; font-size: 14px; border-radius: 20px; padding: 12px 28px }`
     hover → white bg + `#222` text + border
   - `.contact-area { background: #fff }`; `.common-input { border: 1px
-    solid rgba(111,117,152,0.3); line-height: 48px; background:
-    transparent; padding: 0 25px; color: #777 }`; `.common-textarea` same
+solid rgba(111,117,152,0.3); line-height: 48px; background:
+transparent; padding: 0 25px; color: #777 }`; `.common-textarea` same
     border, `height: 150px; padding: 15px 25px; resize: none`;
     `.contact-form { padding: 40px 30px }`
   - `.footer-area { padding-top: 100px; background-color: #222222 }`;
     widget `input { background: #191919; color: #777; line-height: 38px;
-    border: none; padding-left: 20px }`; `.bb-btn` (newsletter submit) the
+border: none; padding-left: 20px }`; `.bb-btn` (newsletter submit) the
     GRADIENT, `color: #fff; border-radius: 0; margin-top: -40px`;
     `.instafeed li { width: 25% }` with `img { margin: 5px }` — 8 thumbs =
     2 rows × 4; `.footer-social i { color: #ccc }` → white on hover with
@@ -154,6 +155,38 @@ breathe at 120px vertical padding.
   ("Stay update with our latest") / Instragram Feed / Follow Us ("Let us be
   social"). Copy is paraphrasable; keep the same KIND of content.
 
+## Implementation notes (2026-10-11 re-verification)
+
+The reference was re-fetched during implementation (preview HTML + `css/main.css`
+
+- the TEMPLATES.md screenshot). Confirmed against the live CSS: the
+  purple→teal gradient `linear-gradient(0deg, #9a52fd 0%, #57ffed 100%)`
+  (purple `#9a52fd` ×6, teal `#57ffed` ×6, aqua `#5cf2ee` ×7, `#777` ×13,
+  `#222` ×8, `#222222` ×2, `#191919`, `#fff3`, `#1a1a1a`, `#000`), the
+  Poppins-only family, `.section-gap { padding: 120px 0 }`,
+  `.booking-area { margin-top: -42px }`, `.primary-btn` (radius 25px,
+  42px line height, 30px/60px padding, arrow sliding 30px → 20px),
+  `.single-in { border-radius: 0 }`, `.footer-area { background-color: #222222 }`
+  and `.footer-text a, .footer-text i { color: #5cf2ee }`.
+
+Fidelity refinements made while implementing (the spec above is authoritative):
+
+1. **Hero subtext is white/extra-light**, not grey — `.banner-content p`
+   sets `color: #fff; font-weight: 100`.
+2. **Nav is hamburger-first at every width** — the reference ships
+   `<nav class="hide">` (`transform: scale(0)`) and relies on its menu bar,
+   which is why the screenshot shows a hamburger at desktop width.
+3. **Feature cards carry a "View Details" outlined pill** (present in the
+   preview DOM, omitted from the first draft of this spec).
+4. **Gradient icons are SVG gradient strokes**, not `background-clip: text` —
+   the reference's icons are font glyphs, so `bg-clip-text` cannot paint a
+   lucide SVG. The gradient stops and direction are identical.
+5. **Footer social hover is white** (`.footer-social a:hover i { color: #fff }`);
+   the gradient clip in the reference lands on the anchor, which carries no
+   text, so the visible change is the white icon.
+6. Blog card titles keep the reference's demo copy ("Summer ware are
+   coming") — demo strings are reproduced, assets are not.
+
 ## Requirements
 
 ### Feature: Navbar
@@ -162,6 +195,7 @@ A white top bar above the hero: gradient triangle logo mark + wordmark left,
 hamburger menu right; anchor links Home / Booking / Packages / Contact.
 
 #### Scenario: Header renders as in the reference
+
 - **Given** the page loads on a desktop viewport
 - **When** the navbar renders above the hero
 - **Then** the bar is WHITE (not transparent), full width, with a gradient
@@ -170,9 +204,12 @@ hamburger menu right; anchor links Home / Booking / Packages / Contact.
   gradient triangle)
 - **And** the links are Home, Booking, Packages, Contact — anchor-scrolling
   to `#home` / `#booking` / `#package` / `#contact` sections
-- **And** on viewports below `lg` the links collapse behind a hamburger
-  button (menu-bar icon, aria-expanded reflecting state) that toggles the
-  link list — matching the screenshot, which shows the hamburger at ~1200px
+- **And** the links sit BEHIND a hamburger button (menu-bar icon,
+  `aria-expanded` reflecting state, `aria-controls` the nav) that reveals
+  them — the source ships its nav with the `hide` class, so the reference at
+  ~1200px shows exactly this: logo left, hamburger right, no visible links.
+  Revealed, the list is a white right-aligned block (stacked panel on small
+  viewports, inline uppercase row from `lg` up)
 
 ### Feature: Hero
 
@@ -180,6 +217,7 @@ A 700px photographic hero under a heavy dark overlay: huge white Poppins
 headline, lorem subtext, gradient pill CTA.
 
 #### Scenario: Hero renders as in the reference
+
 - **Given** the page loads
 - **When** the hero renders
 - **Then** the background is a travel photo (picsum seeded
@@ -189,8 +227,9 @@ headline, lorem subtext, gradient pill CTA.
 - **And** the content column (~75% width, offset 100px from the top) shows
   the white Poppins h1 at 72px/700, line-height 1.15, two lines: "Wherever
   you go" / "it'll inside the World" (45px tablet, 36px mobile)
-- **And** a grey lorem subtext renders below (same kind of copy,
-  paraphrasable)
+- **And** a white, extra-light subtext renders below (the stylesheet's
+  `.banner-content p { color: #fff; font-weight: 100; max-width: 730px }`;
+  same kind of copy, paraphrasable)
 - **And** a pill button with the signature gradient
   (`linear-gradient(0deg, #9a52fd, #57ffed)`), radius 25px, white 500 text
   "See Details" with a right-arrow icon (lucide ArrowRight) that slides
@@ -202,6 +241,7 @@ A white card overlapping the hero's bottom edge with a four-tab strip; each
 tab reveals a 6-field form and a gradient submit.
 
 #### Scenario: Tabs render as in the reference
+
 - **Given** the hero renders
 - **When** the booking card is visible
 - **Then** the card overlaps the hero upward (`margin-top: -42px`),
@@ -213,6 +253,7 @@ tab reveals a 6-field form and a gradient submit.
   panel is active by default
 
 #### Scenario: Each booking form renders as in the reference
+
 - **Given** a tab panel is active
 - **When** the panel renders
 - **Then** it shows the H4 "Book Your Flights" | "Book Your Hotels" |
@@ -229,15 +270,18 @@ tab reveals a 6-field form and a gradient submit.
 Four icon feature cards on white, 120px section padding.
 
 #### Scenario: Feature cards render as in the reference
+
 - **Given** the features section renders
 - **When** the cards are displayed
 - **Then** there are 4 cards in a 4-up desktop grid (2-up tablet, 1-up
   mobile)
 - **And** each card shows a lucide icon at ~35px in grey `#777` that turns
-  gradient-clipped (purple→teal text) on card hover, an H4 with 40px top
-  margin, and a grey blurb: Easy Flight Search, Get Hotel Offers, Holiday
-  Packages, Dedicated Support (blurb pattern "Even the all-powerful Pointing
-  has no control about the blind texts." — paraphrase ok)
+  gradient-filled (purple→teal) on card hover, an H4 with 40px top
+  margin, a grey blurb, and an OUTLINED pill link "View Details"
+  (`.primary-btn2.primary-border.circle`: white fill, grey hairline, 20px
+  radius, uppercase `.8em`, fills with the gradient on hover) — the four
+  reference titles are Easy Flight Search, Get Hotel Offers, Holiday
+  Packages, Dedicated Support (blurb pattern paraphrase ok)
 
 ### Feature: Popular Packages
 
@@ -245,6 +289,7 @@ A centered-title 6-across grid of photo cards with a gradient hover overlay
 revealing a white title.
 
 #### Scenario: Packages grid renders as in the reference
+
 - **Given** the packages section renders
 - **When** the grid is visible
 - **Then** the centered header (col-md-6, pb-80) shows H1 "Popular
@@ -262,6 +307,7 @@ A solid black band with a centered white title and three bordered blog
 cards.
 
 #### Scenario: Blog cards render as in the reference
+
 - **Given** the blog section renders
 - **When** the band is visible
 - **Then** the background is solid `#000` with 120px vertical padding
@@ -280,6 +326,7 @@ cards.
 Gradient-clipped headline + black pill beside a full-bleed photo.
 
 #### Scenario: About block renders as in the reference
+
 - **Given** the about section renders
 - **When** the block is visible
 - **Then** the row is end-aligned: the LEFT column (lg:6, padding-left 20%)
@@ -300,6 +347,7 @@ Gradient-clipped headline + black pill beside a full-bleed photo.
 Four centered info cards on white with 120px section padding.
 
 #### Scenario: Contact-info cards render as in the reference
+
 - **Given** the contact-info section renders
 - **When** the cards are visible
 - **Then** there are 4 centered cards in a 4-up desktop grid (2-up tablet,
@@ -314,6 +362,7 @@ Four centered info cards on white with 120px section padding.
 A white split section: map placeholder left, sharp-cornered form right.
 
 #### Scenario: Contact section renders as in the reference
+
 - **Given** the contact section (`#contact`) renders
 - **When** the section is visible
 - **Then** the background is white
@@ -335,6 +384,7 @@ A dark `#222222` footer with four widgets and a centered aqua-accented
 bottom line whose link points to Component Dock.
 
 #### Scenario: Footer widgets render as in the reference
+
 - **Given** the footer renders
 - **When** the footer is visible
 - **Then** the background is `#222222` with 100px top padding, four
@@ -345,8 +395,9 @@ bottom line whose link points to Component Dock.
   overlapping the input's right edge), Instragram Feed (8 square thumbs in
   a 4-per-row grid, 25% width, 5px margin — picsum seeded
   `wanderport-insta-1..8`), Follow Us ("Let us be social" + 4 social icons
-  — lucide Facebook, Twitter, Dribbble-ish/Instagram, Behance-ish stand-ins —
-  in `#ccc`, turning white on hover with the gradient clipped into the icon)
+  — original inline-SVG Facebook / Twitter / Dribbble / network marks, the
+  brand glyphs having been removed from the icon library — in `#ccc`,
+  turning white on hover)
 - **And** the bottom line is CENTERED with 80px top padding: a copyright
   line whose heart icon and link are aqua `#5cf2ee`
 - **And** the copyright links `https://www.componentdock.com/` branded
@@ -358,6 +409,7 @@ The recreation exposes the reference palette and the Poppins family as
 Tailwind 4 `@theme` tokens.
 
 #### Scenario: Theme tokens match the reference palette
+
 - **Given** the app's `src/index.css` theme
 - **When** the tokens are declared
 - **Then** the palette includes: gradient stops purple `#9a52fd` and teal
@@ -375,56 +427,56 @@ Tailwind 4 `@theme` tokens.
   deliberate contrast with the pill buttons
 - **And** section rhythm is 120px top/bottom (`section-gap`)
 
-## Verification checklist
+## Verification checklist (all verified 2026-10-11)
 
-- [ ] Section order 1:1 with the preview DOM: white navbar → photo hero →
+- [x] Section order 1:1 with the preview DOM: white navbar → photo hero →
       tabbed booking card → features row → Popular Packages → black blog
       band → about split → contact-info cards → map + contact form → dark
       footer
-- [ ] The purple→teal gradient (`linear-gradient(0deg, #9a52fd, #57ffed)`)
+- [x] The purple→teal gradient (`linear-gradient(0deg, #9a52fd, #57ffed)`)
       is the ONLY CTA fill; pill radius 25px on primary buttons; arrow
-      icon slides left on hover; gradient-clip text on feature-icon hover,
-      the about headline, and footer social hover; package hover overlay
+      icon slides left on hover; gradient-clip text on the about headline;
+      gradient icon strokes on feature-card hover; package hover overlay
       and newsletter submit use the same gradient
-- [ ] Typography is Poppins-only: body 300/14px `#777`, headings 600
+- [x] Typography is Poppins-only: body 300/14px `#777`, headings 600
       `#222`; hero h1 white 72px/700 (responsive 45/36); blog H4s white
       uppercase 3px letter-spacing
-- [ ] Navbar is white with an original gradient triangle mark + "wanderport"
+- [x] Navbar is white with an original gradient triangle mark + "wanderport"
       wordmark; hamburger with aria-expanded below `lg`; anchor links
       scroll to the four sections; demo brand "TRAVELASIA" appears nowhere
-- [ ] Booking card overlaps the hero (-42px); 4 tabs (flights / hotels /
+- [x] Booking card overlaps the hero (-42px); 4 tabs (flights / hotels /
       flights+hotels / Holidays) with active = solid white, inactive =
       `#fff3`, radius 0; each panel has its H4 + 6-field form (sharp 13px
       inputs) + right-aligned gradient "Send Message"; submit prevented
-- [ ] Features: 4-up, 35px grey lucide icons → gradient-clip on hover,
+- [x] Features: 4-up, 35px grey lucide icons → gradient-clip on hover,
       the four reference titles
-- [ ] Packages: 6-across grid, gradient overlay + white 18px title
+- [x] Packages: 6-across grid, gradient overlay + white 18px title
       "Resort Holiday package" fade up on hover, centered header, 100px
       bottom padding
-- [ ] Blog band is solid `#000`; 3 cards with dim/zoom hover, uppercase
+- [x] Blog band is solid `#000`; 3 cards with dim/zoom hover, uppercase
       titles, author row + date/likes/comments meta between `#222` rules
-- [ ] About: gradient-clipped 25px three-line headline + grey blurbs +
+- [x] About: gradient-clipped 25px three-line headline + grey blurbs +
       black pill "Make Package of your own" (hover inverts); full-bleed
       photo right; stacks on mobile
-- [ ] Contact-info: 4 centered cards with the four reference titles and
+- [x] Contact-info: 4 centered cards with the four reference titles and
       same-kind paraphrased contact data
-- [ ] Contact form: map placeholder left (~545px), sharp 1px-bordered
+- [x] Contact form: map placeholder left (~545px), sharp 1px-bordered
       inputs right + gradient "Send Message"; no real map API; submit
       prevented
-- [ ] Footer is `#222222` with the 4 widgets (About Us / Newsletter /
+- [x] Footer is `#222222` with the 4 widgets (About Us / Newsletter /
       Instragram Feed 4×2 grid / Follow Us), `#191919` newsletter input +
       square gradient submit, social icons `#ccc` → white/gradient hover;
       centered bottom line with aqua `#5cf2ee` accents linking
       `https://www.componentdock.com/` ("Component Dock")
-- [ ] All images are `picsum.photos/seed/wanderport-*` placeholders; icons
+- [x] All images are `picsum.photos/seed/wanderport-*` placeholders; icons
       from `lucide-react`; no copied assets or CSS; no Bootstrap,
       owl-carousel, magnific-popup, Linearicons/FontAwesome, or jQuery
-- [ ] Zero `colorlib` / "TRAVELASIA" demo-brand references anywhere in
+- [x] Zero `colorlib` / "TRAVELASIA" demo-brand references anywhere in
       `apps/wanderport`
-- [ ] App folder `apps/wanderport`, package
+- [x] App folder `apps/wanderport`, package
       `@free-react-templates/wanderport`, `homepage`
       `https://wanderport.free.componentdock.com`, `public/CNAME`
       `wanderport.free.componentdock.com`, lockfile registers the
       workspace
-- [ ] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
+- [x] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
       `scripts/verify-app.sh wanderport` passes
