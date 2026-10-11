@@ -3002,7 +3002,7 @@
 - [x] **Tralive** — [colorlib](https://colorlib.com/wp/template/tralive/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tralive-free-template.jpg) · [wanderbug](https://wanderbug.free.componentdock.com)
 - [x] **Travel** — [colorlib](https://colorlib.com/wp/template/travel/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travel-free-template.jpg) · [tripquest](https://tripquest.free.componentdock.com)
 - [x] **Travel Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/travel-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travel-wordpress-themes.jpg) · [travelogue](https://travelogue.free.componentdock.com)
-- [ ] **Travel2** — [colorlib](https://colorlib.com/wp/template/travel2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travel2-free-template.jpg)
+- [~] **Travel2** — [colorlib](https://colorlib.com/wp/template/travel2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travel2-free-template.jpg)
 - [x] **Traveland** — [colorlib](https://colorlib.com/wp/template/traveland/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/traveland-free-template.jpg) · [peregrine](https://peregrine.free.componentdock.com)
 - [ ] **Travelasia** — [colorlib](https://colorlib.com/wp/template/travelasia/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelasia-free-creative-travel-agency-booking-template.jpg)
 - [x] **Travelers** — [colorlib](https://colorlib.com/wp/template/travelers/) · [jetpath](https://jetpath.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/travelers-free-template.jpg)
