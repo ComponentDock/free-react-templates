@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Harbor palette — periwinkle indigo accent on a deep navy shell.
+     Brand: #4c57d6 (buttons, links, price lines, icon accents), hover #3d47c4.
+     Navy: #120851 base for the hero/price bands; footer halves #0b052f /
+     #0e0739; header hairline #252163. */
+  --color-brand: #4c57d6;
+  --color-brand-dark: #3d47c4;
+  --color-navy: #120851;
+  --color-navy-900: #0b052f;
+  --color-navy-800: #0e0739;
+  --color-navy-700: #252163;
+  --color-mist: #eeeffb;
+  --color-steel: #62677d;
+  --color-muted: #c4c4c4;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variants
+     resolve to the periwinkle brand colour. */
+  --color-primary-50: #eef0fd;
+  --color-primary-100: #d9defb;
+  --color-primary-200: #b4bbf5;
+  --color-primary-300: #8f97ee;
+  --color-primary-400: #6a74e0;
+  --color-primary-500: #5a63da;
+  --color-primary-600: #4c57d6;
+  --color-primary-700: #3d47c4;
+  --color-primary-800: #2f379c;
+  --color-primary-900: #232a75;
+
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

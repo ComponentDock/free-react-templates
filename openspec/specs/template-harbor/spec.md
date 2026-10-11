@@ -65,8 +65,8 @@ files, no icon paths) and never reuses the source name or copy verbatim.
   white: a centered bold uppercase title "REGISTER YOUR DOMAIN NOW!" with a small
   periwinkle zig-zag underline, a wide **pill domain-search bar** (rounded input
   with a periwinkle 2px border, a ".com ▾" extension control, and a periwinkle
-  pill "SEARCH" button), a centered row of five TLD prices (".com $1.95  .net
-  $1.95  .org $1.95  .us $1.95  .in $1.95" — TLD token in periwinkle, price in
+  pill "SEARCH" button), a centered row of five TLD prices (".com $1.95 .net
+  $1.95 .org $1.95 .us $1.95 .in $1.95" — TLD token in periwinkle, price in
   black), and a short centered grey paragraph.
 - **Section order (measured from the preview DOM, top to bottom):**
   1. `header-section` — top info bar + logo/nav, absolutely positioned over the
@@ -84,7 +84,7 @@ files, no icon paths) and never reuses the source name or copy verbatim.
      columns, socials, copyright).
 - **Hero carousel:** the source is a 1-item loop carousel (`owl-carousel` data
   attr, `dots:true, animateOut:fadeOut, animateIn:fadeIn, smartSpeed:1200,
-  autoplay:true`) with two indistinguishable-background slides. Slide 1:
+autoplay:true`) with two indistinguishable-background slides. Slide 1:
   eyebrow `h5` "Starting At Only $2.80/month", `h1` "Welcome to the best hosting
   company", CTA "Get started now" → pricing. Slide 2: eyebrow `h5` "Free Domain
   For The First Year", `h2` "Fast, secure cloud hosting for every site", CTA
@@ -102,44 +102,44 @@ files, no icon paths) and never reuses the source name or copy verbatim.
 
 ## Design tokens
 
-| Token               | Value                                                                                                       | Where                                              |
-| ------------------- | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
-| brand (primary)     | `#4c57d6` (periwinkle indigo)                                                                                | buttons, links, icon accents, eyebrow/section accents |
-| brand hover/darker  | `#3d47c4`                                                                                                    | button/link hover                                   |
-| navy (dark)         | `#120851`                                                                                                    | hero base, normal header bg, price band, shadows base |
-| navy shades         | `#0b052f` (footer top-left half) · `#0e0739` (footer top-right half) · `#130a5c` · `#252163` (header divider) | footer two-tone band, header hairline               |
-| text dark           | `#111` (headings/body on light) · `#444` (secondary) · `#666` (muted) · `#c4c4c4` (footer muted)             | typography                                          |
-| surfaces (light)    | `#fff` (cards/page) · `#eeeffb` (services bg) · `#f5f5f5` / `#f2f2f2` (alt/secondary button)                 | section + card backgrounds                          |
-| border              | `#e1e1e1` (light) · `1px solid #252163` (header info divider)                                                 | dividers                                            |
-| font family         | `Montserrat, sans-serif`                                                                                     | whole page (`body`)                                 |
-| font weights        | `400` (body) · `500` (price/eyebrow emphasis) · `700` (headings, buttons, prices)                            | typography                                          |
-| base type           | `body` 16px, `-webkit-font-smoothing:antialiased`                                                            | page                                               |
-| primary button      | `display:inline-block; font-size:15px; padding:14px 30px 12px; background:#4c57d6; color:#fff; text-transform:uppercase; font-weight:700; border-radius:50px` | all CTAs          |
-| search button       | `.site-btn` `font-size:14px; padding:13px 30px 12px; background:#4c57d6; color:#fff; font-weight:700; text-transform:uppercase; border-radius:50px` | domain search      |
-| secondary button    | `background:#f2f2f2; color:#111` (pricing "Choose plan" default state)                                        | pricing cards                                       |
-| button radii        | `50px` (pill) on every button; `10px` on cards                                                                | shapes                                              |
-| section title       | `font-weight:700; text-transform:uppercase; color:#111` (white inside the dark work band), centered, `margin-bottom:70px`, with a small centered ~83px underline accent below | every section heading |
-| `.spad` rhythm      | `padding-top:100px; padding-bottom:100px`                                                                     | all body sections                                   |
-| service card        | `background:#fff; padding:40px 45px 20px 40px; border-radius:10px; box-shadow:0 0 10px #12085126; transition:all .3s`; hover `box-shadow:0 8px 30px #12085133` | services section  |
-| service title/price | `h5` `20px/#111/700`; `span` `15px/#4c57d6/500`                                                               | service cards                                       |
-| pricing card        | `background:#fff; padding:22px 20px 20px; box-shadow:0 0 10px #1208511a`; hover shadow `0 8px 30px #12085133` | pricing section                                     |
-| price band          | `h3` `background:#120851; color:#fff; font-weight:700; padding:24px 0 20px; border-radius:10px; margin:0 -30px`; on hover → `#4c57d6`; `span` `16px/400` | pricing cards            |
-| pricing list        | `li` `14px/#444; line-height:40px`                                                                            | pricing cards                                       |
-| pricing toggle      | `border:1px solid #4c57d6; border-radius:50px; height:52px; width:266px`; active label `background:#4c57d6; color:#fff`; label `15px/#444/700 uppercase`; hidden radio + focus ring | pricing section        |
-| domain input        | `height:54px; border:2px solid #4c57d6; border-radius:50px; font-size:14px; color:#111; padding-left:20px`    | register-domain                                     |
-| TLD price row       | `li` `#4c57d6/700/20px`; `span` price `#111`                                                                  | register-domain                                     |
-| counters            | icon `40px #4c57d6`; number `h2 #fff/700`; label `p 16px #fff uppercase`; item `text-align:center`            | achievement band                                    |
-| achievement band    | one set-bg cover photograph (`background-position:top center`), `padding-bottom:450px`                        | achievement section                                 |
-| work band overlap   | `margin-top:-405px; position:relative; z-index:9; border-top:1px solid #62677d`                               | work section pulls up into the achievement band     |
-| work item           | icon `53px #4c57d6`; eyebrow `span 14px #4c57d6`; `h3 700`; `p` + pill "Read More"                            | work section                                        |
-| plan CTA list       | `li` `16px/500/#111`, `line-height:40px`, periwinkle check glyph with `margin-right:5px`                      | choose-plan section                                 |
-| footer top band     | left half `#0b052f`, right half `#0e0739` (two `::before/::after` halves); heading `20px #fff/700`; phone `#4c57d6/700` | footer        |
-| footer widgets      | muted `#c4c4c4` links; hover → `#fff` + underline; info `li` `14px`, periwinkle icon                             | footer                                              |
-| social icons        | Facebook, X, YouTube, Instagram — source uses FontAwesome brand glyphs; recreation uses `lucide-react`        | footer                                              |
-| radii               | `50px` buttons/pills/inputs · `10px` cards & price band · nothing else rounded                                | shapes                                              |
-| Google Fonts map    | `Montserrat:wght@400;500;700` via `<link>` in `index.html`; icons from `lucide-react` (no icon font)          | `index.html`                                        |
-| transitions         | `all .3s` (cards, buttons) · `all .9s ease-out` (hero element entrances)                                      | interaction                                         |
-| attribution         | footer links `https://www.componentdock.com/` ("Component Dock") replacing the source's Colorlib credit       | ADDED vs the reference                              |
+| Token               | Value                                                                                                                                                                               | Where                                                 |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| brand (primary)     | `#4c57d6` (periwinkle indigo)                                                                                                                                                       | buttons, links, icon accents, eyebrow/section accents |
+| brand hover/darker  | `#3d47c4`                                                                                                                                                                           | button/link hover                                     |
+| navy (dark)         | `#120851`                                                                                                                                                                           | hero base, normal header bg, price band, shadows base |
+| navy shades         | `#0b052f` (footer top-left half) · `#0e0739` (footer top-right half) · `#130a5c` · `#252163` (header divider)                                                                       | footer two-tone band, header hairline                 |
+| text dark           | `#111` (headings/body on light) · `#444` (secondary) · `#666` (muted) · `#c4c4c4` (footer muted)                                                                                    | typography                                            |
+| surfaces (light)    | `#fff` (cards/page) · `#eeeffb` (services bg) · `#f5f5f5` / `#f2f2f2` (alt/secondary button)                                                                                        | section + card backgrounds                            |
+| border              | `#e1e1e1` (light) · `1px solid #252163` (header info divider)                                                                                                                       | dividers                                              |
+| font family         | `Montserrat, sans-serif`                                                                                                                                                            | whole page (`body`)                                   |
+| font weights        | `400` (body) · `500` (price/eyebrow emphasis) · `700` (headings, buttons, prices)                                                                                                   | typography                                            |
+| base type           | `body` 16px, `-webkit-font-smoothing:antialiased`                                                                                                                                   | page                                                  |
+| primary button      | `display:inline-block; font-size:15px; padding:14px 30px 12px; background:#4c57d6; color:#fff; text-transform:uppercase; font-weight:700; border-radius:50px`                       | all CTAs                                              |
+| search button       | `.site-btn` `font-size:14px; padding:13px 30px 12px; background:#4c57d6; color:#fff; font-weight:700; text-transform:uppercase; border-radius:50px`                                 | domain search                                         |
+| secondary button    | `background:#f2f2f2; color:#111` (pricing "Choose plan" default state)                                                                                                              | pricing cards                                         |
+| button radii        | `50px` (pill) on every button; `10px` on cards                                                                                                                                      | shapes                                                |
+| section title       | `font-weight:700; text-transform:uppercase; color:#111` (white inside the dark work band), centered, `margin-bottom:70px`, with a small centered ~83px underline accent below       | every section heading                                 |
+| `.spad` rhythm      | `padding-top:100px; padding-bottom:100px`                                                                                                                                           | all body sections                                     |
+| service card        | `background:#fff; padding:40px 45px 20px 40px; border-radius:10px; box-shadow:0 0 10px #12085126; transition:all .3s`; hover `box-shadow:0 8px 30px #12085133`                      | services section                                      |
+| service title/price | `h5` `20px/#111/700`; `span` `15px/#4c57d6/500`                                                                                                                                     | service cards                                         |
+| pricing card        | `background:#fff; padding:22px 20px 20px; box-shadow:0 0 10px #1208511a`; hover shadow `0 8px 30px #12085133`                                                                       | pricing section                                       |
+| price band          | `h3` `background:#120851; color:#fff; font-weight:700; padding:24px 0 20px; border-radius:10px; margin:0 -30px`; on hover → `#4c57d6`; `span` `16px/400`                            | pricing cards                                         |
+| pricing list        | `li` `14px/#444; line-height:40px`                                                                                                                                                  | pricing cards                                         |
+| pricing toggle      | `border:1px solid #4c57d6; border-radius:50px; height:52px; width:266px`; active label `background:#4c57d6; color:#fff`; label `15px/#444/700 uppercase`; hidden radio + focus ring | pricing section                                       |
+| domain input        | `height:54px; border:2px solid #4c57d6; border-radius:50px; font-size:14px; color:#111; padding-left:20px`                                                                          | register-domain                                       |
+| TLD price row       | `li` `#4c57d6/700/20px`; `span` price `#111`                                                                                                                                        | register-domain                                       |
+| counters            | icon `40px #4c57d6`; number `h2 #fff/700`; label `p 16px #fff uppercase`; item `text-align:center`                                                                                  | achievement band                                      |
+| achievement band    | one set-bg cover photograph (`background-position:top center`), `padding-bottom:450px`                                                                                              | achievement section                                   |
+| work band overlap   | `margin-top:-405px; position:relative; z-index:9; border-top:1px solid #62677d`                                                                                                     | work section pulls up into the achievement band       |
+| work item           | icon `53px #4c57d6`; eyebrow `span 14px #4c57d6`; `h3 700`; `p` + pill "Read More"                                                                                                  | work section                                          |
+| plan CTA list       | `li` `16px/500/#111`, `line-height:40px`, periwinkle check glyph with `margin-right:5px`                                                                                            | choose-plan section                                   |
+| footer top band     | left half `#0b052f`, right half `#0e0739` (two `::before/::after` halves); heading `20px #fff/700`; phone `#4c57d6/700`                                                             | footer                                                |
+| footer widgets      | muted `#c4c4c4` links; hover → `#fff` + underline; info `li` `14px`, periwinkle icon                                                                                                | footer                                                |
+| social icons        | Facebook, X, YouTube, Instagram — source uses FontAwesome brand glyphs; recreation uses `lucide-react`                                                                              | footer                                                |
+| radii               | `50px` buttons/pills/inputs · `10px` cards & price band · nothing else rounded                                                                                                      | shapes                                                |
+| Google Fonts map    | `Montserrat:wght@400;500;700` via `<link>` in `index.html`; icons from `lucide-react` (no icon font)                                                                                | `index.html`                                          |
+| transitions         | `all .3s` (cards, buttons) · `all .9s ease-out` (hero element entrances)                                                                                                            | interaction                                           |
+| attribution         | footer links `https://www.componentdock.com/` ("Component Dock") replacing the source's Colorlib credit                                                                             | ADDED vs the reference                                |
 
 ## Requirements
 
@@ -171,7 +171,7 @@ positioned so the hero's navy shows through.
   the secondary links (Pricing, Blog Details, 404)
 - **And** the current item is highlighted with a thin underline
 - **And** the whole header is `position:absolute; left:0; top:0; width:100%;
-  z-index:9` so it overlays the hero rather than pushing it down
+z-index:9` so it overlays the hero rather than pushing it down
 
 ### Feature: Hero (2-slide navy carousel with isometric illustration)
 
@@ -198,8 +198,8 @@ bottom edge.
 - **When** autoplay or the dots are used
 - **Then** slide 2 shows a second eyebrow + heading + CTA pair (a "free domain"
   / "compare plans" pairing matching the source's kinds of content)
-- **And** three dot indicators sit centred near the bottom of the hero, the
-  active dot distinguishable, and each dot is a labelled button
+- **And** one labelled dot per slide (two dots for the two slides) sits centred
+  near the bottom of the hero, the active dot distinguishable
 - **And** slides cross-fade (source `animateIn:fadeIn / animateOut:fadeOut`,
   `smartSpeed:1200`) or otherwise transition without layout shift
 
@@ -220,7 +220,7 @@ bottom edge.
 - **Then** a centered uppercase section title (e.g. "Register your domain now")
   sits above a pill form
 - **And** the form holds a text input (`height:54px`, `border:2px solid
-  #4c57d6`, `border-radius:50px`, `padding-left:20px`), an extension control
+#4c57d6`, `border-radius:50px`, `padding-left:20px`), an extension control
   (a `.com ▾` style TLD selector offering `.com/.net/.org/.us/.in`), and a
   periwinkle pill submit button labelled "Search"
 - **And** the input is associated with a real `<label>` and the TLD control has
@@ -255,7 +255,7 @@ bottom edge.
 - **Then** the section has background `#eeeffb` and a centered uppercase title
   (e.g. "Choose the right hosting solution")
 - **And** exactly six white cards render (`border-radius:10px`, `padding:40px
-  45px 20px 40px`, `box-shadow:0 0 10px #12085126`), three per row on desktop
+45px 20px 40px`, `box-shadow:0 0 10px #12085126`), three per row on desktop
   (`col-lg-4`), two per row at `md`/`sm`
 - **And** each card holds an `h5` title (`20px/#111/700`), a periwinkle price
   line (`span` `15px/#4c57d6/500`), and a short blurb
@@ -292,8 +292,8 @@ bottom edge.
   `box-shadow:0 0 10px #1208511a`), one per column on desktop
 - **And** each holds a tier name (`h4 #111/700`), a **navy price band**
   (`h3 background:#120851; color:#fff; border-radius:10px; padding:24px 0
-  20px`, with a `/ month` suffix in `16px/400`), a feature list (`li 14px/#444;
-  line-height:40px`), and a secondary "Choose plan" button
+20px`, with a `/ month` suffix in `16px/400`), a feature list (`li 14px/#444;
+line-height:40px`), and a secondary "Choose plan" button
 - **And** the tiers are Started `$15.90`, Business `$25.90`, Premium `$35.90`,
   Dedicated `$45.90` (paraphrased copy, source list kinds preserved: web space,
   site tools, free domain, 24/7 support, marketing tool, uptime, money-back)
@@ -316,7 +316,7 @@ bottom edge.
   (`https://picsum.photos/seed/harbor-achievement/1920/900`), never a source
   photo
 - **And** four centred items render (`col-lg-3`), each an icon (`40px #4c57d6`,
-  `lucide-react` equivalents of users / square-pen / copy / settings), a large
+  `lucide-react` equivalents of users / globe / drive / settings), a large
   white bold number, and an uppercase white label
 - **And** the labels read the source's kinds: Clients, Domains, Server, Installs
 
@@ -325,7 +325,7 @@ bottom edge.
 - **Given** the achievement band scrolls into view
 - **When** the animation runs
 - **Then** each number counts up over ~4s (source `data-countup
-  data-duration="4"`) to its target and stops, never re-triggering on scroll-back
+data-duration="4"`) to its target and stops, never re-triggering on scroll-back
 
 ### Feature: Work band (overlapping "how to build" section)
 
@@ -448,8 +448,9 @@ bottom edge.
       surfaces `#fff/#eeeffb/#f5f5f5/#f2f2f2`, border `#e1e1e1`, Montserrat
       400/500/700, radii `50px` (buttons/inputs) and `10px` (cards/price band),
       `.spad` `100px/100px`, card/pricing shadows and hovers
-- [ ] Hero: 2 slides with eyebrow + heading + CTA pairs, autoplay/fade, labelled
-      dot buttons, white scallop divider, own illustration (no source SVG)
+- [ ] Hero: 2 slides with eyebrow + heading + CTA pairs, autoplay/fade, one
+      labelled dot button per slide, white scallop divider, own illustration (no
+      source SVG)
 - [ ] Register domain: pill input with 2px `#4c57d6` border, TLD selector,
       "Search" submit, `role`-correct labels, live-region result, no navigation
 - [ ] Pricing: functional Monthly/Yearly radiogroup swapping the plan set; four
