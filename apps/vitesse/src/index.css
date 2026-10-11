@@ -1,0 +1,116 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette: solid dark navy chrome, single orange accent family. */
+
+  /* Primary orange — buttons ("#ff5f13") with "#e0581e" slide-in hover. */
+  --color-primary: #ff5f13;
+
+  /* Accent orange — eyebrow spans, info icons, team hover, arrow hover. */
+  --color-accent: #f15f22;
+
+  /* Secondary indigo — emphasis tags, quote borders (sparse on the home page). */
+  --color-indigo: #1f2b7b;
+
+  /* Chrome backgrounds. */
+  --color-header: #000c20;
+  --color-footer: #121212;
+  --color-divider: #1a2537;
+
+  /* Text colors. */
+  --color-dark: #2c234d;
+  --color-body: #677294;
+  --color-muted: #717b9b;
+  --color-quote: #a4acc3;
+  --color-footertext: #c4c4c4;
+
+  /* Light surfaces. */
+  --color-infobg: #f9f9f9;
+  --color-lavender: #f9f9ff;
+  --color-soft: #f5f5f5;
+  --color-cardborder: #e1ebf7;
+
+  /* Slider arrow stroke. */
+  --color-arrow: #616373;
+
+  --font-sans: 'Barlow', sans-serif;
+  --font-display: 'Teko', sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #677294;
+    background-color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Teko', sans-serif;
+    color: #2c234d;
+    line-height: 1.2;
+    text-transform: capitalize;
+  }
+}
+
+/* Buttons: radius 5px, uppercase, 1px tracking, orange with a slide-in
+   "#e0581e" overlay on hover (scaleX 0 -> 1 from the left). */
+.btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #ff5f13;
+  color: #ffffff;
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #e0581e;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+
+.btn:hover::before,
+.btn:focus-visible::before {
+  transform: scaleX(1);
+}
+
+.btn > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section rhythm: generous vertical padding on desktop, tighter on mobile. */
+.section-pad {
+  padding: 65px 0 30px;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding: 150px 0 110px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-pad {
+    padding: 195px 0 170px;
+  }
+}
