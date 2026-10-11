@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* brand palette: one purple accent (#846add) over a dark photo, hover #5d43b5 */
+  --font-sans: 'Lato', Arial, sans-serif;
+  --font-heading: 'Poppins', Arial, sans-serif;
+  --font-lato: 'Lato', Arial, sans-serif;
+
+  --color-brand: #846add;
+  --color-brand-hover: #5d43b5;
+  --color-body: #666666;
+  --color-muted: #999999;
+  --color-error: #c80000;
+  --color-overlay: rgba(0, 0, 0, 0.8);
+  --color-glow: rgba(132, 106, 221, 0.5);
+
+  /* shapes: 35px pills (field + button), 16px validation bubble, 50% circles */
+  --radius-pill: 35px;
+  --radius-bubble: 16px;
+
+  /* focus glow: a purple halo that blooms outward once and fades */
+  --animate-glow: premiere-glow 0.5s ease-in-out forwards;
+
+  @keyframes premiere-glow {
+    to {
+      box-shadow: 0 0 80px 30px var(--color-glow);
+      opacity: 0;
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #101014;
+  }
+
+  /* headline face: Poppins, white over the dimmed photo */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    color: #fff;
+  }
+
+  ::placeholder {
+    color: var(--color-muted);
+  }
+}

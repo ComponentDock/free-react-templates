@@ -60,8 +60,8 @@ white on the dimmed photo — headline, sub-line, countdown numbers (all `#fff`)
 - **Original:** ColorLib "Coming Soon 2" (source:
   https://colorlib.com/wp/template/comingsoon_02/). Listed in TEMPLATES.md
   `## Uncategorized (15)` at line 3033; the slug appears exactly once (no
-  duplicate `- [ ]` line). No implementation exists for this item
-  (`apps/premiere` absent, TEMPLATES.md line 3033 still `- [ ]`).
+  duplicate `- [x]` line). No implementation exists for this item
+  (`apps/premiere` absent, TEMPLATES.md line 3033 still `- [x]`).
 - **Preview URL:** https://preview.colorlib.com/theme/comingsoon_02/ →
   **HTTP 404** (verified 2026-10-11). Fallback (documented): the official
   source zip `https://preview.colorlib.com/downloads/free/comingsoon_02.zip`
@@ -95,44 +95,44 @@ white on the dimmed photo — headline, sub-line, countdown numbers (all `#fff`)
     `.how-btn1:hover{background-color:#5d43b5}`
   - Focus glow: `.focus-input100{color:rgba(132,106,221,0.5)}` +
     `.input100:focus + .focus-input100{animation:anim-shadow .5s
-    ease-in-out forwards}` where `anim-shadow{to{box-shadow:0 0 80px 30px;
-    opacity:0}}` — radius 35px, full-size, `z-index:-1`
+ease-in-out forwards}` where `anim-shadow{to{box-shadow:0 0 80px 30px;
+opacity:0}}` — radius 35px, full-size, `z-index:-1`
   - Overlay: `.overlay1::before{background-color:rgba(0,0,0,0.8)}`
     (100% × 100%, `z-index:-1`)
   - Layout: `.size1{width:100%;min-height:100vh}` (page + column);
     `.simpleslide100{position:fixed;top:0;left:0;width:100%;height:100%;
-    z-index:0}` with `.simpleslide100-item{position:absolute;width:100%;
-    height:100%}` and `.bg-img1{background-position:center;
-    background-repeat:no-repeat;background-size:cover}`;
+z-index:0}` with `.simpleslide100-item{position:absolute;width:100%;
+height:100%}` and `.bg-img1{background-position:center;
+background-repeat:no-repeat;background-size:cover}`;
     `.where1{margin:0 5px 20px 5px}` (form row spacing)
   - Countdown circle: `.size2{width:155px;height:155px}` +
     `.bor1{border:1px solid rgba(255,255,255,0.3);border-radius:50%}`;
     cells are `.flex-col-c-m` (column, centred) with 15px side margins
   - Countdown number: `.l2-txt1{font-family:Lato-Bold;font-size:40px;
-    line-height:1;color:#fff}`; label `.s2-txt1{font-family:Lato-Regular;
-    font-size:12px;line-height:1;color:#846add;text-transform:uppercase}`
+line-height:1;color:#fff}`; label `.s2-txt1{font-family:Lato-Regular;
+font-size:12px;line-height:1;color:#846add;text-transform:uppercase}`
   - Headline: `.l1-txt1{font-family:Poppins-Bold;font-size:50px;
-    line-height:1.1;color:#fff;text-transform:uppercase}`
+line-height:1.1;color:#fff;text-transform:uppercase}`
   - Sub-line: `.m2-txt1{font-family:Lato-Light;font-size:25px;
-    line-height:1.2;color:#fff}`
+line-height:1.2;color:#fff}`
   - Input: `.wrap-input100{position:relative;width:500px;
-    max-width:calc(100% - 10px);z-index:1}` +
+max-width:calc(100% - 10px);z-index:1}` +
     `.input100{display:block;width:100%;background:#fff;height:70px;
-    border-radius:35px;padding:0 40px}`; text `.s2-txt2` Lato-Bold 15px/1.4
+border-radius:35px;padding:0 40px}`; text `.s2-txt2` Lato-Bold 15px/1.4
     `#846add`; placeholder `.placeholder0` `#999999`
   - Button: `.size3{min-width:160px;height:70px}` +
     `.how-btn1{border-radius:35px;background-color:#846add;padding:0 20px}` +
     label `.s2-txt3{font-family:Lato-Bold;font-size:15px;line-height:1.4;
-    color:#fff;text-transform:uppercase}` + `.trans-04{transition:all .4s}`
+color:#fff;text-transform:uppercase}` + `.trans-04{transition:all .4s}`
   - Spacing rhythm: `.p-t-50/.p-b-50` (column padding), `.p-b-25` (headline),
     `.p-b-48` (sub-line), `.p-b-33` (countdown row), `.p-b-9` (number),
     `.m-l-15/.m-r-15/.m-b-20` (countdown cells), `.p-l-15/.p-r-15` (column)
   - Validation bubble: `.alert-validate::before{content:attr(data-validate);
-    background-color:#fff;border:1px solid #c80000;border-radius:16px;
-    padding:5px 30px 6px 10px;right:12px;max-width:70%;font-family:Lato-Bold;
-    color:#c80000;font-size:15px;line-height:1.4;transition:opacity .4s}` +
+background-color:#fff;border:1px solid #c80000;border-radius:16px;
+padding:5px 30px 6px 10px;right:12px;max-width:70%;font-family:Lato-Bold;
+color:#c80000;font-size:15px;line-height:1.4;transition:opacity .4s}` +
     `::after{content:"\f06a";font-family:FontAwesome;color:#c80000;
-    font-size:20px;right:18px}` (shown on hover, and always ≤992px) —
+font-size:20px;right:18px}` (shown on hover, and always ≤992px) —
     recreation uses a lucide-react `AlertCircle` instead
   - Fonts (source, self-hosted `@font-face` woff2): Poppins-Bold (headline)
     and Lato-Light / Lato-Regular / Lato-Bold (sub-line, numbers, labels,
@@ -151,8 +151,8 @@ white on the dimmed photo — headline, sub-line, countdown numbers (all `#fff`)
   `span.s2-txt1` label (Days / Hours / Minutes / Seconds) — and
   `form.w-full.flex-w.flex-c-m.validate-form` with
   `div.wrap-input100.validate-input.where1[data-validate="Valid email is
-  required: ex@abc.xyz"]` (`input.input100.placeholder0.s2-txt2[type=text
-  name=email placeholder="Enter Email Address"]` + `span.focus-input100`)
+required: ex@abc.xyz"]` (`input.input100.placeholder0.s2-txt2[type=text
+name=email placeholder="Enter Email Address"]` + `span.focus-input100`)
   and `button.flex-c-m.size3.s2-txt3.how-btn1.trans-04.where1`
   ("Subscribe"). `js/snippet.js` drives three behaviours, all framework-free:
   e-mail validation on submit (bubble class toggled off on focus),
@@ -164,30 +164,30 @@ white on the dimmed photo — headline, sub-line, countdown numbers (all `#fff`)
 
 ## Design tokens
 
-| Token | Value | Where |
-| --- | --- | --- |
-| brand purple | `#846add` | Subscribe fill, countdown labels, input text |
-| brand-hover purple | `#5d43b5` | Subscribe hover background |
-| focus glow | `rgba(132,106,221,0.5)` → `box-shadow 0 0 80px 30px`, opacity 0, `.5s ease-in-out` | input focus ring animation |
-| headline text | `#fff` | `.l1-txt1` (Poppins-Bold 50px, uppercase) |
-| sub-line text | `#fff` | `.m2-txt1` (Lato-Light 25px) |
-| countdown number | `#fff` | `.l2-txt1` (Lato-Bold 40px) |
-| countdown label | `#846add` | `.s2-txt1` (Lato-Regular 12px uppercase) |
-| input text | `#846add` | `.s2-txt2` (Lato-Bold 15px) |
-| muted / placeholder | `#999999` | `.placeholder0` |
-| button label | `#fff` | `.s2-txt3` (Lato-Bold 15px uppercase) |
-| overlay | `rgba(0,0,0,0.8)` | full-screen darkening over the photo |
-| error red | `#c80000` | validation bubble border/text/icon |
-| base body text | `#666666` (over `#212529` reboot) | page text |
-| fonts | Poppins-Bold + Lato-Light/Regular/Bold (source: self-hosted woff2) | headline / body |
-| radii | 35px (input, button), 50% (countdown circles), 16px (validation bubble) | shapes |
-| input pill | `500px` wide (`max-width: calc(100% - 10px)`), `70px` tall, `padding 0 40px` | form |
-| button pill | `min-width:160px`, `70px` tall, `padding 0 20px` | form |
-| countdown circle | `155px`, `1px solid rgba(255,255,255,0.3)`, radius 50% | four circles |
-| page / column | `min-height:100vh`, `padding 50px 15px` | layout |
-| background slideshow | fixed, full viewport, 3 photos, `7 s` interval, `1 s` fade | photo layer |
-| transition | `all .4s` | button, focus glow |
-| spacing rhythm | 25px (headline), 48px (sub-line), 33px (countdown row), 9px (number), 15px/20px (cells), 5px/20px (form row) | padding/margins |
+| Token                | Value                                                                                                        | Where                                        |
+| -------------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
+| brand purple         | `#846add`                                                                                                    | Subscribe fill, countdown labels, input text |
+| brand-hover purple   | `#5d43b5`                                                                                                    | Subscribe hover background                   |
+| focus glow           | `rgba(132,106,221,0.5)` → `box-shadow 0 0 80px 30px`, opacity 0, `.5s ease-in-out`                           | input focus ring animation                   |
+| headline text        | `#fff`                                                                                                       | `.l1-txt1` (Poppins-Bold 50px, uppercase)    |
+| sub-line text        | `#fff`                                                                                                       | `.m2-txt1` (Lato-Light 25px)                 |
+| countdown number     | `#fff`                                                                                                       | `.l2-txt1` (Lato-Bold 40px)                  |
+| countdown label      | `#846add`                                                                                                    | `.s2-txt1` (Lato-Regular 12px uppercase)     |
+| input text           | `#846add`                                                                                                    | `.s2-txt2` (Lato-Bold 15px)                  |
+| muted / placeholder  | `#999999`                                                                                                    | `.placeholder0`                              |
+| button label         | `#fff`                                                                                                       | `.s2-txt3` (Lato-Bold 15px uppercase)        |
+| overlay              | `rgba(0,0,0,0.8)`                                                                                            | full-screen darkening over the photo         |
+| error red            | `#c80000`                                                                                                    | validation bubble border/text/icon           |
+| base body text       | `#666666` (over `#212529` reboot)                                                                            | page text                                    |
+| fonts                | Poppins-Bold + Lato-Light/Regular/Bold (source: self-hosted woff2)                                           | headline / body                              |
+| radii                | 35px (input, button), 50% (countdown circles), 16px (validation bubble)                                      | shapes                                       |
+| input pill           | `500px` wide (`max-width: calc(100% - 10px)`), `70px` tall, `padding 0 40px`                                 | form                                         |
+| button pill          | `min-width:160px`, `70px` tall, `padding 0 20px`                                                             | form                                         |
+| countdown circle     | `155px`, `1px solid rgba(255,255,255,0.3)`, radius 50%                                                       | four circles                                 |
+| page / column        | `min-height:100vh`, `padding 50px 15px`                                                                      | layout                                       |
+| background slideshow | fixed, full viewport, 3 photos, `7 s` interval, `1 s` fade                                                   | photo layer                                  |
+| transition           | `all .4s`                                                                                                    | button, focus glow                           |
+| spacing rhythm       | 25px (headline), 48px (sub-line), 33px (countdown row), 9px (number), 15px/20px (cells), 5px/20px (form row) | padding/margins                              |
 
 ## Requirements
 
@@ -197,6 +197,7 @@ The page is a single full-viewport screen over a fixed, cross-fading photo
 slideshow, dimmed by a heavy dark overlay.
 
 #### Scenario: Page renders as one full-height screen over a photo
+
 - **Given** the page loads at desktop width
 - **When** the layout renders
 - **Then** a single column occupies `min-height:100vh` with 50px vertical and
@@ -215,6 +216,7 @@ slideshow, dimmed by a heavy dark overlay.
 Four translucent circles in one wrapping row, each with a live value.
 
 #### Scenario: Countdown renders and ticks
+
 - **Given** the column renders
 - **When** the countdown is visible
 - **Then** four circles render in a centred wrapping row, each 155px with a
@@ -234,6 +236,7 @@ Four translucent circles in one wrapping row, each with a live value.
 The two centred text blocks above the countdown.
 
 #### Scenario: Copy renders with the reference typography
+
 - **Given** the column renders
 - **When** the text is visible
 - **Then** the headline reads an uppercase coming-soon line (source: "Coming
@@ -249,6 +252,7 @@ The two centred text blocks above the countdown.
 A pill input beside a purple pill Subscribe button, with inline validation.
 
 #### Scenario: Form renders and validates as in the reference
+
 - **Given** the column renders
 - **When** the form is visible
 - **Then** a white pill input renders ("Enter Email Address" placeholder),
@@ -276,6 +280,7 @@ The recreation exposes the reference palette and fonts as Tailwind 4
 `@theme` tokens.
 
 #### Scenario: Theme tokens match the reference
+
 - **Given** the app's `src/index.css` theme
 - **When** the tokens are declared
 - **Then** the palette includes: brand `#846add`, hover `#5d43b5`, focus
@@ -292,6 +297,7 @@ The recreation exposes the reference palette and fonts as Tailwind 4
 A single Component Dock attribution, per the monorepo rule.
 
 #### Scenario: Attribution links Component Dock
+
 - **Given** the page renders
 - **When** the attribution is visible
 - **Then** it reads a Component-Dock attribution (e.g. "Made with ♥ by
@@ -301,42 +307,42 @@ A single Component Dock attribution, per the monorepo rule.
 
 ## Verification checklist
 
-- [ ] Layout 1:1 with the reference: one vertically centred column
+- [x] Layout 1:1 with the reference: one vertically centred column
       (`min-height:100vh`, 50px/15px padding) over a fixed full-viewport
       photo layer with a `rgba(0,0,0,0.8)` overlay; no navbar, no sections
       below the fold
-- [ ] Background slideshow cross-fades three deterministic placeholder photos
+- [x] Background slideshow cross-fades three deterministic placeholder photos
       every 7 s over 1 s, and is skipped under `prefers-reduced-motion:
-      reduce`
-- [ ] Headline: uppercase, Poppins-Bold 50px/1.1 white, 25px bottom padding;
+    reduce`
+- [x] Headline: uppercase, Poppins-Bold 50px/1.1 white, 25px bottom padding;
       sub-line Lato-Light 25px/1.2 white, 48px bottom padding
-- [ ] Countdown: four 155px circles (`1px solid rgba(255,255,255,0.3)`,
+- [x] Countdown: four 155px circles (`1px solid rgba(255,255,255,0.3)`,
       radius 50%) in a centred wrapping row with 15px/20px margins; white
       Lato-Bold 40px numbers above uppercase `#846add` Lato-Regular 12px
       labels (Days/Hours/Minutes/Seconds); live 1-second tick; h/m/s
       zero-padded; past target falls back to now + 35 d + 18 h
-- [ ] Form: white pill input (500px / `calc(100% - 10px)`, 70px, radius 35px,
+- [x] Form: white pill input (500px / `calc(100% - 10px)`, 70px, radius 35px,
       40px padding, `#846add` Lato-Bold 15px, `#999999` placeholder) + purple
       `#846add` pill "Subscribe" (min-width 160px, 70px, radius 35px, 20px
       padding, white uppercase label → `#5d43b5` hover, `.4s`); wrapping
       centred row with `margin 0 5px 20px`
-- [ ] Input focus plays the glow animation (35px-radius layer,
+- [x] Input focus plays the glow animation (35px-radius layer,
       `rgba(132,106,221,0.5)` → `box-shadow 0 0 80px 30px`, opacity 0,
       `.5s ease-in-out`)
-- [ ] Validation: invalid/empty e-mail → white bubble (`1px solid #c80000`,
+- [x] Validation: invalid/empty e-mail → white bubble (`1px solid #c80000`,
       radius 16px, Lato-Bold 15px `#c80000`) with a lucide `AlertCircle`
       glyph, shown on hover and always at ≤992px, cleared on focus; valid
       submit accepted (React state, no navigation)
-- [ ] Poppins (headline) + Lato (body) via Google Fonts `<link>`; radii 35px /
+- [x] Poppins (headline) + Lato (body) via Google Fonts `<link>`; radii 35px /
       50% / 16px; transitions `.5s` / `.4s`
-- [ ] All images are `picsum.photos/seed/premiere-*` placeholders; icons from
+- [x] All images are `picsum.photos/seed/premiere-*` placeholders; icons from
       `lucide-react` (`AlertCircle` replaces the source FontAwesome `\f06a`);
       no copied assets, font files, or CSS; no jQuery, no framework, no CDN
-- [ ] Component Dock attribution links `https://www.componentdock.com/`
-- [ ] Zero `colorlib` / "Coming Soon 2" / "Coming Soon V02" / `comingsoon_02`
+- [x] Component Dock attribution links `https://www.componentdock.com/`
+- [x] Zero `colorlib` / "Coming Soon 2" / "Coming Soon V02" / `comingsoon_02`
       references anywhere in `apps/premiere` (comments included)
-- [ ] App folder `apps/premiere`, package `@free-react-templates/premiere`,
+- [x] App folder `apps/premiere`, package `@free-react-templates/premiere`,
       `homepage` `https://premiere.free.componentdock.com`, `public/CNAME`
       `premiere.free.componentdock.com`, lockfile registers the workspace
-- [ ] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
+- [x] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
       `scripts/verify-app.sh premiere` passes

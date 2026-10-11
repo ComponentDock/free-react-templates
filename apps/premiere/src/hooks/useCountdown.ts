@@ -1,0 +1,25 @@
+import { useEffect, useState } from 'react'
+import type { CountdownParts } from '../lib/countdown'
+import { splitRemaining } from '../lib/countdown'
+
+const SECOND = 1000
+
+/**
+ * Live countdown to `target`, ticking once a second and never reading below
+ * zero. The value is painted immediately, then re-painted on every tick.
+ */
+export function useCountdown(target: number): CountdownParts {
+  const [remaining, setRemaining] = useState(() => Math.max(0, target - Date.now()))
+
+  useEffect(() => {
+    const tick = () => {
+      setRemaining(Math.max(0, target - Date.now()))
+    }
+
+    tick()
+    const timer = setInterval(tick, SECOND)
+    return () => clearInterval(timer)
+  }, [target])
+
+  return splitRemaining(remaining)
+}
