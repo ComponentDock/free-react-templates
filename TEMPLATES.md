@@ -3036,7 +3036,7 @@
 - [x] **Comingsoon_05** — [colorlib](https://colorlib.com/wp/template/comingsoon_05/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-5.jpg) · [advent](https://advent.free.componentdock.com)
 - [x] **Comingsoon_06** — [colorlib](https://colorlib.com/wp/template/comingsoon_06/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-6.jpg) · [airborne](https://airborne.free.componentdock.com)
 - [x] **Comingsoon_07** — [colorlib](https://colorlib.com/wp/template/comingsoon_07/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-7.jpg) · [imminent](https://imminent.free.componentdock.com)
-- [~] **Comingsoon_08** — [colorlib](https://colorlib.com/wp/template/comingsoon_08/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-8.jpg)
+- [x] **Comingsoon_08** — [colorlib](https://colorlib.com/wp/template/comingsoon_08/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-8.jpg) · [forthcoming](https://forthcoming.free.componentdock.com)
 - [ ] **Comingsoon_09** — [colorlib](https://colorlib.com/wp/template/comingsoon_09/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-9.jpg)
 - [ ] **Comingsoon_10** — [colorlib](https://colorlib.com/wp/template/comingsoon_10/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-10.jpg)
 - [ ] **Comingsoon_11** — [colorlib](https://colorlib.com/wp/template/comingsoon_11/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-11.jpg)
