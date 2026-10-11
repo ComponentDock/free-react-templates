@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* brand palette: one purple accent (#846add) over grey neutrals, with dark
+     slate (#333333) tiles and a translucent white card over the photo */
+  --font-sans: 'Barlow', Arial, sans-serif;
+  --font-heading: 'Barlow', Arial, sans-serif;
+
+  --color-brand: #846add;
+  --color-ink: #333333;
+  --color-well: #e6e6e6;
+  --color-muted: #999999;
+  --color-body: #666666;
+  --color-error: #c80000;
+  --color-card: rgba(255, 255, 255, 0.8);
+
+  /* shapes: 18px card, 10px countdown tiles, 5px field + button, 2px bubble */
+  --radius-card: 18px;
+  --radius-tile: 10px;
+  --radius-field: 5px;
+  --radius-bubble: 2px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    background-color: #ffffff;
+  }
+
+  /* wordmark + headline face: Barlow, same family as the body */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+
+  ::placeholder {
+    color: var(--color-muted);
+  }
+}
