@@ -1,0 +1,66 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* palette: a photographic screen under a magenta→indigo wash (#b224ef at the
+     bottom easing into #7579ff at the top, solid #7579ff fallback) at 90%
+     opacity, white type over it, and exactly one saturated action colour —
+     green (#57b846) used by the subscribe button, the social hover and the
+     text typed into the e-mail field */
+  --font-sans: 'Poppins', Arial, sans-serif;
+  --font-heading: 'Poppins', Arial, sans-serif;
+
+  --color-wash: #7579ff;
+  --color-wash-top: #7579ff;
+  --color-wash-bottom: #b224ef;
+  --color-brand: #57b846;
+  --color-ring: rgba(255, 255, 255, 0.3);
+  --color-social: #999999;
+  --color-field-text: #57b846;
+  --color-placeholder: #999999;
+  --color-note: #e5e5e5;
+  --color-bloom: rgba(87, 184, 70, 0.6);
+  --color-error: #c80000;
+
+  /* the field's focus bloom: the ring spreads outward once and fades away */
+  --animate-bloom: imminent-bloom 0.5s ease-in-out forwards;
+
+  @keyframes imminent-bloom {
+    to {
+      box-shadow: 0 0 80px 30px var(--color-bloom);
+      opacity: 0;
+    }
+  }
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    background-color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+
+  input {
+    outline: none;
+    border: none;
+  }
+
+  button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+}
