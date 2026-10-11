@@ -48,9 +48,9 @@ export function Navbar() {
           className="text-ink transition-colors hover:text-pink focus-visible:ring-2 focus-visible:ring-pink"
         >
           {open ? (
-            <Menu className="h-6 w-6" aria-hidden="true" />
-          ) : (
             <X className="h-6 w-6" aria-hidden="true" />
+          ) : (
+            <Menu className="h-6 w-6" aria-hidden="true" />
           )}
         </button>
       </div>
