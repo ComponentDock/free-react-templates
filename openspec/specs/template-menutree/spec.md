@@ -33,22 +33,30 @@ source name.
   item is its first entry at **line 3073**; the slug `website-menu-01` appears
   exactly once in TEMPLATES.md and in no spec on main before this one)
 - **Preview:** `https://preview.colorlib.com/theme/website-menu-01/` returns
-  **HTTP 404** (`Not Found`, 9 B, verified 2026-10-11 with a Chrome UA; the
-  siblings `website-menu-02` and `website-menu-20` return 404 as well, so the
-  whole *Website Menus* family has no live theme page — the ColorLib catalog's own
-  "Preview" button points at `https://preview.colorlib.com/#website-menu-01`, the
-  catalog anchor, not a theme). **Fallback used (documented per
-  `docs/replication.md`):** the snippet's own downloadable archive
+  **HTTP 404** (`Not Found`, 9 B) — the *Website Menus* family does **not** live
+  under the slug-only theme path. The working live preview is
+  **`https://preview.colorlib.com/theme/bootstrap/website-menu-01/`**
+  (**HTTP 200**, `text/html`, **6,103 B**, title `🐴 Website Menu #1`, verified
+  2026-10-11), discovered through the catalog index the preview host itself loads
+  (`https://preview.colorlib.com/assets/js/catalog-products-*.js` — its entry for
+  this slug is `"url":"https://preview.colorlib.com/theme/bootstrap/website-menu-01/"`,
+  `"details":"https://colorlib.com/wp/template/website-menu-01/"`; the sibling
+  entries carry the same `theme/bootstrap/` prefix). Its two assets —
+  `css/style.css?v=f016aacb` (**18,843 B**, `text/css`) and
+  `js/snippet.js?v=d8fd00d5` (**3,537 B**) — are **byte-identical**
+  (sha256 `37126f7940aa…` / `fdfdba1a4543…`) to the copies in the snippet's own
+  downloadable archive
   `https://preview.colorlib.com/downloads/free/website-menu-01.zip`
-  (**HTTP 200**, `application/zip`, **231,882 B** — ColorLib's page calls it
-  "226 KB", down from 2.3 MB before the September 2026 rewrite), which contains
-  the real source of truth:
-  `website-menu-01/index.html` (5,900 B), `website-menu-01/css/style.css`
-  (18,843 B), `website-menu-01/js/snippet.js` (3,537 B), `website-menu-01/README.md`
-  (1,264 B) and six **Open Sans** woff2 subsets (300/400/700, latin + latin-ext)
-  plus an `icomoon-subset.woff2`. The archive ships **no images** and the markup
-  contains **no `<img>`** — the only reference artwork is the wordmark text and
-  inlined SVG icon paths.
+  (**HTTP 200**, `application/zip`, **231,882 B** — ColorLib's page calls the
+  download "226 KB", down from 2.3 MB before the September 2026 rewrite), which is
+  the un-versioned source copy used here: `website-menu-01/index.html` (5,900 B),
+  `website-menu-01/css/style.css`, `website-menu-01/js/snippet.js`,
+  `website-menu-01/README.md` (1,264 B) plus six **Open Sans** woff2 subsets
+  (300/400/700, latin + latin-ext) and an `icomoon-subset.woff2`. Neither the live
+  page nor the archive ships **any image** and the markup contains **no `<img>`** —
+  the only reference artwork is the wordmark text and inlined SVG icon paths. No
+  screenshot-only fallback was needed: the live preview is the primary reference
+  and the archive its readable twin.
 - **Screenshot:**
   https://colorlib.com/wp/wp-content/uploads/sites/2/website-menu-01.jpg
   (HTTP 200, `image/jpeg`, **1200×972**, **30,134 B**, opened and inspected
@@ -79,20 +87,64 @@ source name.
   `cl-d-*`, `cl-text-primary`, `cl-dropdown`, `cl-nav-link`, `cl-collapse`), and
   the sheet is a hand-rolled Bootstrap-4-grid look-alike, **not** a framework
   skin — the recreation uses Tailwind utilities instead and copies nothing.
-- **Preview URL:** `https://preview.colorlib.com/theme/website-menu-01/` →
-  **HTTP 404** (see Purpose). **Reference artifacts (research date 2026-10-11,
-  fallback path):** `/tmp/wm01.html` (the 404 body), `/tmp/wm01.zip` (231,882 B
-  archive), extracted to `/tmp/wm01x/website-menu-01/` → `index.html`,
-  `css/style.css`, `js/snippet.js`; `/tmp/cl-wm01.html` (the ColorLib template
-  page, 108,334 B, HTTP 200, source of the description/author/date/size facts);
-  `/tmp/wm01.jpg` (the 1200×972 screenshot).
+- **Preview URL:** `https://preview.colorlib.com/theme/bootstrap/website-menu-01/`
+  → **HTTP 200**, `text/html`, **6,103 B**, title `🐴 Website Menu #1` (the
+  slug-only `/theme/website-menu-01/` path is the 404; see Purpose).
+  **Reference artifacts (research date 2026-10-11):**
+  `/tmp/live.html` (live preview HTML, 6,103 B), `/tmp/live-style.css`
+  (18,843 B, `text/css`, sha256 `37126f7940aa87d07558c3a72fb3e320ba86d1db9f0a945649a79d517f7c39de`),
+  `/tmp/live-snippet.js` (3,537 B, sha256
+  `fdfdba1a45436129b320091550d64e9bc27099b5e4ff090819597b04406de01b`),
+  `/tmp/wm01.zip` (the 231,882 B archive, extracted to
+  `/tmp/wm01x/website-menu-01/` → `index.html`, `css/style.css`,
+  `js/snippet.js` — byte-identical to the live assets), `/tmp/cl-wm01.html` (the
+  ColorLib template page, 108,334 B, HTTP 200 — source of the
+  description/author/date/download-size facts), `/tmp/catalog.js` (the preview
+  host's 633,990 B catalog index that maps the slug to the `theme/bootstrap/`
+  preview) and `/tmp/wm01.jpg` (the 1200×972 screenshot).
+- **Live render cross-check (2026-10-11, 780×437 viewport):** the live preview was
+  opened in a browser and its computed styles read back, confirming the sheet's
+  values on real elements — `.hero` measures **765×437 = the full viewport** with
+  `background-color: rgb(93, 91, 106)` = **`#5d5b6a`**; `.site-navbar`
+  `position:absolute; top:0; width:765px; z-index:1999`, resting
+  `border-bottom:1px solid rgba(255,255,255,.1)` (the hairline is on the **navbar**,
+  the wrapper itself has no border); `h1.site-logo{font-size:24px;
+  font-weight:500}` with `.cl-text-primary` = `rgb(0,123,255)`;
+  `.site-menu > li > a{font-size:13px; text-transform:uppercase; padding:20px;
+  color:rgba(255,255,255,.7)}`; `li.social > a{padding-left:5px;
+  padding-right:5px}`; `.site-menu-toggle` white with a **28 px** glyph
+  (`.cl-h3` = `1.75rem`); `.has-children .cl-dropdown{background:#fff;
+  border-top:2px solid rgb(0,123,255); margin-top:20px; visibility:hidden;
+  opacity:0; transition:.2s; box-shadow:0 2px 10px -2px rgba(0,0,0,.1)}` with
+  rows `min-width:210px`, row links `9px 20px` / `#000` / 16 px /
+  `text-transform:none`, and the third level at `left:100%; top:0`;
+  `.site-mobile-menu{width:300px; position:fixed; padding-top:20px;
+  box-shadow:-10px 0 20px -10px rgba(0,0,0,.1); transition:.3s ease-in-out;
+  transform:translateX(330px)}` (110 % of 300) whose `.site-mobile-menu-body`
+  measures **385 px** (= `calc(100vh - 52px)`) with `padding:0 20px 150px`;
+  `body` computed family **Open Sans**, 16 px, `color:rgb(33,37,41)`, height
+  **874 px** (= `200vh`); veil `rgba(0,0,0,.5)`. The class-driven states are
+  present as rules (`body.offcanvas-menu::before{opacity:1; visibility:visible}`,
+  `.offcanvas-menu .site-mobile-menu{transform:translateX(0%)}`,
+  `.sticky-wrapper.is-sticky .site-navbar{background:#fff; …}`) and dispatching
+  `scroll` on the live page proves the sticky path end-to-end: the wrapper gains
+  `is-sticky`, the bar receives the inline `position:fixed; top:0; width:765px`,
+  and `.site-menu > li > a` computed flips to **`rgb(0,0,0)`**. Harness caveat:
+  the tab reports `document.hidden === true`, so real scroll events and some style
+  recalcs stall — dispatch the event and re-read instead of concluding the page is
+  broken. The live mobile clone also confirms the a11y gaps recorded above: the
+  cloned `.social a` icons carry **no `aria-label`**, the hamburger has **no
+  accessible name**, and the arrow toggles expose `aria-expanded="false"` +
+  `aria-label="Show submenu"` but **no `aria-controls`**, while the clone's own
+  level sizes measure **20 / 16 / 16 px** at `padding-left` **20 / 40 / 60 px**
+  and the toggles **36 × 36 / `border-radius:50%`**.
 - **Screenshot (1200×972 JPEG):** a browser-chrome mock framing a single flat
   **dark slate** surface (the `#5d5b6a` band) that fills the whole frame. Across
   the top sits the header: a marginally darker/lighter slate strip with a
   **1 px translucent white hairline (`rgba(255,255,255,.1)`) along its bottom
   edge**; at the left the wordmark **"Brand."** in white ≈24 px with its full stop
   in **`#007bff`**; at the right a row of **small uppercase near-white links** —
-  `HOME`, `ABOUT US` with a **caret glyph**, `BLOG`, `CONTACT` — followed by
+  `HOME`, `ABOUT US` with a **caret glyph**, `BLOG`, `CONTACT`, then
   **three small glyph-only social marks** (facebook, twitter, linkedin) in the
   same near-white. Below the header rule the frame is **empty slate** — no
   headline, no cards, no photo, no footer — which is exactly the source's DOM:
@@ -206,7 +258,7 @@ source name.
 | Area | Source | Recreation | Why |
 | --- | --- | --- | --- |
 | Name / wordmark | "Website Menu 01", wordmark "Brand." | `menutree`, own wordmark | new-original-name rule |
-| Nav labels | Home · About Us · Blog · Contact + 3 socials | same *kind* of row (own labels allowed), same order and count | paraphrase rule — keep the row's shape |
+| Nav labels | Home · About Us · Blog · Contact + 3 socials | same *kind* of row (own labels permitted), same order and count | paraphrase rule — keep the row's shape |
 | Dead anchors | ten `#*-section` hrefs with no targets | each target becomes a real labelled panel inside the band | no dead links / a11y |
 | Mobile breakpoint | desktop row hidden <1200 px, panel auto-closes at >768 px | one consistent threshold (`xl`/1200 px) for both the row and the panel | the source's two thresholds contradict each other |
 | Dropdown trigger | CSS `:hover`/`:focus`/`:active` only; no `aria-expanded`, no keyboard traversal of the caret | real button semantics with `aria-expanded`/`aria-haspopup`, `Escape` closes, `aria-controls` on the mobile arrow, focus-visible rings | a11y gates; source has no JS for the desktop dropdown at all |
@@ -220,7 +272,9 @@ source name.
 ## Design tokens
 
 Extracted from the source stylesheet `css/style.css` (18,843 B) of
-`website-menu-01` (fallback reference; live preview 404) and cross-checked
+`website-menu-01` (live preview
+`https://preview.colorlib.com/theme/bootstrap/website-menu-01/` → HTTP 200;
+byte-identical archive copy) and cross-checked
 against the 1200×972 screenshot.
 
 | Token | Value | Used by |
@@ -479,13 +533,16 @@ app's own inline SVG brand paths for facebook/twitter/linkedin, as in
       left, a right-aligned row of **13 px uppercase** near-white links with a
       caret on the "about" item and **three icon-only socials** at the far right,
       and **nothing else in the frame** (the band is deliberately empty)
-- [ ] The preview is documented as unreachable in the spec/PR: the live theme page
-      `https://preview.colorlib.com/theme/website-menu-01/` returns **HTTP 404**
-      (9 B `Not Found`; siblings `-02`/`-20` are 404 too), so the fallback
-      reference was the snippet archive
+- [ ] Preview documented correctly in the spec/PR: the slug-only path
+      `https://preview.colorlib.com/theme/website-menu-01/` is **HTTP 404** (9 B
+      `Not Found`) — the **live preview** is
+      `https://preview.colorlib.com/theme/bootstrap/website-menu-01/`
+      (**HTTP 200**, 6,103 B, title `🐴 Website Menu #1`) with
+      `css/style.css?v=f016aacb` (18,843 B) and `js/snippet.js?v=d8fd00d5`
+      (3,537 B), both **sha256-identical** to the snippet archive
       `https://preview.colorlib.com/downloads/free/website-menu-01.zip`
-      (**HTTP 200**, 231,882 B → `index.html` 5,900 B, `css/style.css` 18,843 B,
-      `js/snippet.js` 3,537 B) plus the 1200×972 screenshot
+      (HTTP 200, 231,882 B → `index.html` 5,900 B), and the 1200×972 screenshot as
+      the visual reference (all verified 2026-10-11)
 - [ ] Token checks reproduce the source: nav links **13 px uppercase** with
       `padding:20px 20px` and hover **`#007bff`**; wordmark **24 px** with the
       accent in **`#007bff`**; the band **`100vh #5d5b6a`**; the resting header
@@ -534,8 +591,9 @@ app's own inline SVG brand paths for facebook/twitter/linkedin, as in
 - [ ] Footer links `https://www.componentdock.com/` exactly once ("Component
       Dock") with a computed current year
 - [ ] PR description includes: source template (ColorLib Website Menu 01),
-      preview status (`https://preview.colorlib.com/theme/website-menu-01/` →
-      **HTTP 404**; fallback archive
+      preview URL (`https://preview.colorlib.com/theme/bootstrap/website-menu-01/`
+      → **HTTP 200**, 6,103 B, title `🐴 Website Menu #1`; the slug-only
+      `/theme/website-menu-01/` path 404s; archive
       `https://preview.colorlib.com/downloads/free/website-menu-01.zip` → HTTP 200,
       231,882 B; screenshot 1200×972), the design tokens used (`#007bff` brand,
       `#0056b3` accent hover, `#5d5b6a` band, `#212529` text, `#fff` /

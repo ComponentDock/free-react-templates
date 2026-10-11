@@ -18,14 +18,17 @@ materialises all ten as labelled panels inside that same band.
 Type is **Open Sans 300/400/700**; the shape language is **square** everywhere
 (the sheet's only `border-radius` is the mobile arrow's `50%`).
 
-Preview: `https://preview.colorlib.com/theme/website-menu-01/` → **HTTP 404**
-(9 B `Not Found`; siblings `-02`/`-20` 404 as well — the whole family has no live
-theme page). **Fallback reference:** the snippet archive
-`https://preview.colorlib.com/downloads/free/website-menu-01.zip`
-(HTTP 200, 231,882 B → `index.html` 5,900 B, `css/style.css` 18,843 B,
-`js/snippet.js` 3,537 B) plus the TEMPLATES.md screenshot
-`website-menu-01.jpg` (HTTP 200, JPEG, 1200×972, 30,134 B).
-Screenshot: a browser-chrome mock of a frame-filling flat slate surface with a
+Preview: the slug-only path
+`https://preview.colorlib.com/theme/website-menu-01/` returns **HTTP 404** —
+the **live preview** is
+`https://preview.colorlib.com/theme/bootstrap/website-menu-01/`
+(**HTTP 200**, 6,103 B, title `🐴 Website Menu #1`; its
+`css/style.css?v=f016aacb` 18,843 B and `js/snippet.js?v=d8fd00d5` 3,537 B are
+**sha256-identical** to the snippet archive
+`https://preview.colorlib.com/downloads/free/website-menu-01.zip`,
+HTTP 200, 231,882 B — the un-versioned source copy).
+Screenshot: `website-menu-01.jpg` (HTTP 200, JPEG, 1200×972, 30,134 B) — a
+browser-chrome mock of a frame-filling flat slate surface with a
 transparent header strip, a white wordmark with a blue accent, four uppercase
 links (one with a caret) and three icon-only socials — and nothing else.
 
