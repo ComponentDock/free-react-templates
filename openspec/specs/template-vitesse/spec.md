@@ -67,57 +67,57 @@ CSS values are canonical over the screenshot.)
 
 ### Global
 
-| Token | Value | Notes |
-| --- | --- | --- |
-| Heading font | **Teko** (all h1–h6) | condensed display sans; Google Fonts via `<link>` |
-| Body/button font | **Barlow** (body, buttons, nav) | `body{font-family:"Barlow",sans-serif;font-weight:normal}` |
-| Hero h1 | Teko **95px / 600 / `#fff`**, capitalize, line-height 95px, mb 40px | scales 50px → 35px on smaller viewports |
-| Accent word in headings | **`#f15f22`** | `.hero-cap span`, `.section-tittle span` |
-| Brand accent | **`#f15f22`** (orange) | section eyebrow spans (18px/600 capitalize), info icons 44px, team-caption hover bg, slider-arrow hover |
-| Button orange | **`#ff5f13`** (`.btn` + `.submit-btn` bg) | hover: slide-in `::before` overlay **`#e0581e`** (scaleX 0→1) |
-| Button shape | border-radius **5px**, `text-transform: uppercase`, `letter-spacing: 1px`, Barlow **14px/400** | `.btn` padding **27px 44px**; `.submit-btn` padding **19px 44px**, width 100%; nav CTA `.header-btn` padding **25px 35px** |
-| Secondary indigo | **`#1f2b7b`** | `genric-btn.primary`, emphasis tags, blockquote border, list bullets/numbers — register as `--color-indigo` (generic utilities; used sparsely on the home page) |
-| Header bg | **`#000c20`** (solid, NOT transparent) | utility bar + main nav; scrolled shadow `0 10px 15px rgba(25,25,25,0.1)` |
-| Footer bg | **`#121212`** | `.footer-area` |
-| Footer divider | **`#1a2537`** | `.footer-heading` border-bottom (pb 51px, mb 82px) |
-| Dark text | **`#2c234d`** | info caption labels 20px/600, team names 20px/700 (hover `#f15f22`), h6 (Teko 500) |
-| Body text | **`#677294`** (16px) | info values, testimonial founder lines |
-| Muted text | **`#717b9b`** | `.section-tittle p` blurbs |
-| Quote text | **`#a4acc3`** | testimonial quote p, 16px/500, mb 50px |
-| Footer text | **`#c4c4c4`** | `.footer-pera .info1` 14px, line-height 1.8 |
-| Link color | **`#635c5c`** | default `a` color |
-| Info bar bg | **`#f9f9f9`** | `.our-info-area` (pt 70 pb 40) |
-| Lavender tint | **`#f9f9ff`** | generic blockquote bg (secondary) |
-| Soft gray | **`#f5f5f5`** | `.contact-form-wrapper` + `.blog-date` badge |
-| Card border | **`#e1ebf7`** | `.single-cat` 1px, radius **6px**, padding **85px 22px** (50px mobile) |
-| Form card | **`#f5f5f5`**, padding **80px**, radius **8px** | `.contact-form-wrapper` |
-| CTA card | **`#fff`**, padding **50px**, radius **10px** | `.testimonial-form` |
-| Blog image | radius **6px**, mb 30px | `.blog-img` |
-| Blog date badge | bg `#f5f5f5`, radius 6px, padding 14px 19px | day large + month small |
-| Slider arrows | 50×50, radius **6px**, border 1px **`#616373`**, color `#616373`, bg none, right 90px bottom 0 | hover border+color `#f15f22` |
-| Hero bg | photographic, min-height **1080px** desktop, cover center | `.slider-height` (source `h1_hero.jpg` — never copied) |
-| Quote/testimonial bg | photographic (source `hero2.jpg`-style), `background-attachment: fixed` on desktop (`fix` class) | white heading text on testimonial; quote card `#f5f5f5` |
-| Section rhythm | `.section-padding30` **195px/170px** desktop → 150/110 → 100/70 → **65px/30px** mobile | generous vertical rhythm |
-| Testimonial padding | **190px/170px** desktop → 60px/40px mobile | `.testimonial-padding` |
-| Footer padding | **105px/50px** desktop → 80px/0 mobile | `.footer-padding` |
-| Team caption | absolute bottom **-36px**, bg **rgba(255,255,255,0.6)**, pt 20px pb 30px | hover: bg `#f15f22`, bottom 0, name white, social icons rise (staggered 0/0.1/0.2/0.3s) |
-| Generic btn palette | primary `#1f2b7b`, success `#4cd3e3`, info `#38a4ff`, warning `#f4e700`, danger `#f44a40` | `genric-btn.*` hover = white bg + colored border/text (register as tokens; sparse use on home) |
-| Icons (source) | flaticon/themify/fontawesome (NEVER copied) | recreation uses `lucide-react` |
+| Token                   | Value                                                                                            | Notes                                                                                                                                                           |
+| ----------------------- | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Heading font            | **Teko** (all h1–h6)                                                                             | condensed display sans; Google Fonts via `<link>`                                                                                                               |
+| Body/button font        | **Barlow** (body, buttons, nav)                                                                  | `body{font-family:"Barlow",sans-serif;font-weight:normal}`                                                                                                      |
+| Hero h1                 | Teko **95px / 600 / `#fff`**, capitalize, line-height 95px, mb 40px                              | scales 50px → 35px on smaller viewports                                                                                                                         |
+| Accent word in headings | **`#f15f22`**                                                                                    | `.hero-cap span`, `.section-tittle span`                                                                                                                        |
+| Brand accent            | **`#f15f22`** (orange)                                                                           | section eyebrow spans (18px/600 capitalize), info icons 44px, team-caption hover bg, slider-arrow hover                                                         |
+| Button orange           | **`#ff5f13`** (`.btn` + `.submit-btn` bg)                                                        | hover: slide-in `::before` overlay **`#e0581e`** (scaleX 0→1)                                                                                                   |
+| Button shape            | border-radius **5px**, `text-transform: uppercase`, `letter-spacing: 1px`, Barlow **14px/400**   | `.btn` padding **27px 44px**; `.submit-btn` padding **19px 44px**, width 100%; nav CTA `.header-btn` padding **25px 35px**                                      |
+| Secondary indigo        | **`#1f2b7b`**                                                                                    | `genric-btn.primary`, emphasis tags, blockquote border, list bullets/numbers — register as `--color-indigo` (generic utilities; used sparsely on the home page) |
+| Header bg               | **`#000c20`** (solid, NOT transparent)                                                           | utility bar + main nav; scrolled shadow `0 10px 15px rgba(25,25,25,0.1)`                                                                                        |
+| Footer bg               | **`#121212`**                                                                                    | `.footer-area`                                                                                                                                                  |
+| Footer divider          | **`#1a2537`**                                                                                    | `.footer-heading` border-bottom (pb 51px, mb 82px)                                                                                                              |
+| Dark text               | **`#2c234d`**                                                                                    | info caption labels 20px/600, team names 20px/700 (hover `#f15f22`), h6 (Teko 500)                                                                              |
+| Body text               | **`#677294`** (16px)                                                                             | info values, testimonial founder lines                                                                                                                          |
+| Muted text              | **`#717b9b`**                                                                                    | `.section-tittle p` blurbs                                                                                                                                      |
+| Quote text              | **`#a4acc3`**                                                                                    | testimonial quote p, 16px/500, mb 50px                                                                                                                          |
+| Footer text             | **`#c4c4c4`**                                                                                    | `.footer-pera .info1` 14px, line-height 1.8                                                                                                                     |
+| Link color              | **`#635c5c`**                                                                                    | default `a` color                                                                                                                                               |
+| Info bar bg             | **`#f9f9f9`**                                                                                    | `.our-info-area` (pt 70 pb 40)                                                                                                                                  |
+| Lavender tint           | **`#f9f9ff`**                                                                                    | generic blockquote bg (secondary)                                                                                                                               |
+| Soft gray               | **`#f5f5f5`**                                                                                    | `.contact-form-wrapper` + `.blog-date` badge                                                                                                                    |
+| Card border             | **`#e1ebf7`**                                                                                    | `.single-cat` 1px, radius **6px**, padding **85px 22px** (50px mobile)                                                                                          |
+| Form card               | **`#f5f5f5`**, padding **80px**, radius **8px**                                                  | `.contact-form-wrapper`                                                                                                                                         |
+| CTA card                | **`#fff`**, padding **50px**, radius **10px**                                                    | `.testimonial-form`                                                                                                                                             |
+| Blog image              | radius **6px**, mb 30px                                                                          | `.blog-img`                                                                                                                                                     |
+| Blog date badge         | bg `#f5f5f5`, radius 6px, padding 14px 19px                                                      | day large + month small                                                                                                                                         |
+| Slider arrows           | 50×50, radius **6px**, border 1px **`#616373`**, color `#616373`, bg none, right 90px bottom 0   | hover border+color `#f15f22`                                                                                                                                    |
+| Hero bg                 | photographic, min-height **1080px** desktop, cover center                                        | `.slider-height` (source `h1_hero.jpg` — never copied)                                                                                                          |
+| Quote/testimonial bg    | photographic (source `hero2.jpg`-style), `background-attachment: fixed` on desktop (`fix` class) | white heading text on testimonial; quote card `#f5f5f5`                                                                                                         |
+| Section rhythm          | `.section-padding30` **195px/170px** desktop → 150/110 → 100/70 → **65px/30px** mobile           | generous vertical rhythm                                                                                                                                        |
+| Testimonial padding     | **190px/170px** desktop → 60px/40px mobile                                                       | `.testimonial-padding`                                                                                                                                          |
+| Footer padding          | **105px/50px** desktop → 80px/0 mobile                                                           | `.footer-padding`                                                                                                                                               |
+| Team caption            | absolute bottom **-36px**, bg **rgba(255,255,255,0.6)**, pt 20px pb 30px                         | hover: bg `#f15f22`, bottom 0, name white, social icons rise (staggered 0/0.1/0.2/0.3s)                                                                         |
+| Generic btn palette     | primary `#1f2b7b`, success `#4cd3e3`, info `#38a4ff`, warning `#f4e700`, danger `#f44a40`        | `genric-btn.*` hover = white bg + colored border/text (register as tokens; sparse use on home)                                                                  |
+| Icons (source)          | flaticon/themify/fontawesome (NEVER copied)                                                      | recreation uses `lucide-react`                                                                                                                                  |
 
 ### Section background map (top → bottom)
 
-| # | Section | Background |
-| --- | --- | --- |
-| 1 | Header (utility bar + nav) | solid `#000c20` |
-| 2 | Hero slider | photo + dark overlay, min-height 1080px desktop |
-| 3 | Info bar | `#f9f9f9` |
-| 4 | Services (3 transport cards) | white |
-| 5 | About | white (layered offset images) |
-| 6 | Request a Free Quote | photo bg (fixed attachment on desktop) + `#f5f5f5` rounded form card |
-| 7 | Team | white |
-| 8 | Testimonials | photo bg (white heading + light quote text) + white rounded CTA card |
-| 9 | Blog | white |
-| 10 | Footer | `#121212` |
+| #   | Section                      | Background                                                           |
+| --- | ---------------------------- | -------------------------------------------------------------------- |
+| 1   | Header (utility bar + nav)   | solid `#000c20`                                                      |
+| 2   | Hero slider                  | photo + dark overlay, min-height 1080px desktop                      |
+| 3   | Info bar                     | `#f9f9f9`                                                            |
+| 4   | Services (3 transport cards) | white                                                                |
+| 5   | About                        | white (layered offset images)                                        |
+| 6   | Request a Free Quote         | photo bg (fixed attachment on desktop) + `#f5f5f5` rounded form card |
+| 7   | Team                         | white                                                                |
+| 8   | Testimonials                 | photo bg (white heading + light quote text) + white rounded CTA card |
+| 9   | Blog                         | white                                                                |
+| 10  | Footer                       | `#121212`                                                            |
 
 ## Requirements
 
@@ -201,10 +201,11 @@ white Teko h1 "Safe & Reliable Logistic Solutions!" with the word
 "Logistic" (or its paraphrase equivalent) in orange `#f15f22`; below
 it a tracking form — white text input ("Your Tracking ID" placeholder
 kind) + orange "Track & Trace" submit button (`.submit-btn` styling)
-+ small italic note ("For order status inquiry" kind). Slider arrows
-(50×50, radius 6px, `#616373` border, hover `#f15f22`) SHALL rotate
-≥2 slides via simple React state (crossfade/auto-advance acceptable;
-a single-slide hero is an acceptable documented simplification).
+
+- small italic note ("For order status inquiry" kind). Slider arrows
+  (50×50, radius 6px, `#616373` border, hover `#f15f22`) SHALL rotate
+  ≥2 slides via simple React state (crossfade/auto-advance acceptable;
+  a single-slide hero is an acceptable documented simplification).
 
 #### Scenario: Hero renders
 
@@ -290,7 +291,7 @@ Free Quote" + a quote form with labeled fields — Name, Email, Contact
 Number, Freight Type (select, 4 options — source options are demo
 "Catagories One–Four"; paraphrase to freight-kind options), City of
 Departure, Incoterms, Weight, Height, Width, Length — plus **4 radio
-buttons** (transport-mode kind: Air/Sea/Land/Rail paraphrase) and an
+Length — plus **4 radio buttons** ("Extra services" kind per the live preview: Freight / Express Delivery / Insurance / Packaging) and an
 orange "Request a Quote" `.submit-btn`. Form SHALL validate
 client-side (required + email format), block submit until valid, and
 show a local-only success state.
@@ -298,7 +299,7 @@ show a local-only success state.
 #### Scenario: Quote form fields
 
 - **GIVEN** the quote form renders
-- **THEN** 10 labeled inputs + 1 select + 4 radios + submit render
+- **THEN** 10 labeled fields (9 text inputs + 1 select) + 4 radios + submit render
   (labels associated via `htmlFor`)
 - **WHEN** required fields are empty or email is malformed
 - **THEN** submit is blocked and per-field errors show
@@ -488,8 +489,7 @@ at 360px.
 - [ ] About: eyebrow + h2 + 2 paragraphs + More About Us btn; layered
       offset image composition (back image top -45px right 0)
 - [ ] Quote form: photo bg (fixed attachment desktop), `#f5f5f5`
-      radius-8px card, 10 labeled fields + freight select + 4 radios
-      + Request a Quote submit; client-side validation + local success
+      radius-8px card, 10 labeled fields + freight select + 4 radios + Request a Quote submit; client-side validation + local success
       state
 - [ ] Team: 3 cards with caption overlay hover (`rgba(255,255,255,0.6)`
       → `#f15f22`, white text, staggered rising social icons)
