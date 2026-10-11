@@ -1,0 +1,119 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Signature turquoise #08d9d6 — every call to action, the section-title
+     underline, offer prices, the counter + CTA bands and the footer's social
+     circles. */
+  --color-brand: #08d9d6;
+
+  /* CTA hover fill #09ede9 (lighter turquoise). */
+  --color-brand-hover: #09ede9;
+
+  /* Play-button hover fill #09f2ee. */
+  --color-brand-alt: #09f2ee;
+
+  /* Light grey #f8f9fa — service cards and the light footer background. */
+  --color-panel: #f8f9fa;
+
+  /* Hairline input border #e9ecef (2px on form controls). */
+  --color-line: #e9ecef;
+
+  /* Footer body copy #888888. */
+  --color-muted: #888888;
+
+  /* Footer links #999999, darkening to black on hover. */
+  --color-footlink: #999999;
+
+  /* Offer location line (rgba(170, 170, 170, 0.8)). */
+  --color-loc: #aaaaaa;
+
+  /* Turquoise scale so shared ui Button/ButtonLink `primary` variants resolve
+     to the brand colour (600 = brand, 700 = hover, 500 = play hover). */
+  --color-primary-50: #e8fdfd;
+  --color-primary-100: #c4f9f8;
+  --color-primary-200: #8df4f2;
+  --color-primary-300: #4ceeeb;
+  --color-primary-400: #22e9e6;
+  --color-primary-500: #09f2ee;
+  --color-primary-600: #08d9d6;
+  --color-primary-700: #09ede9;
+  --color-primary-800: #06b3b1;
+  --color-primary-900: #048b8a;
+
+  /* Reference pairing: Playfair Display on every heading, Lato for body. */
+  --font-display: 'Playfair Display', serif;
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  ::selection {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000000;
+  }
+}
+
+/* Turquoise wash over a destination photo on hover (rgba(8, 217, 214, 0.8)). */
+@utility teal-wash {
+  background-color: rgb(8 217 214 / 0.8);
+}
+
+/* Light wash over the hero photograph (rgba(0, 0, 0, 0.2)). */
+@utility hero-wash {
+  background-color: rgb(0 0 0 / 0.2);
+}
+
+/* White headline with a solid turquoise highlight that bleeds past the
+   glyphs on both sides (the reference's box-shadow 0.5em/-0.5em spread). */
+@utility title-highlight {
+  background-color: #08d9d6;
+  box-shadow:
+    0.5em 0 0 #08d9d6,
+    -0.5em 0 0 #08d9d6;
+}
+
+/* Search card floating over the hero's bottom edge. */
+@utility card-shadow {
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 0.1);
+}
+
+/* White dropdown panel under the header. */
+@utility dropdown-shadow {
+  box-shadow: 0 2px 10px -2px rgb(0 0 0 / 0.1);
+}
+
+/* Turquoise social circles in the footer. */
+@utility social-shadow {
+  box-shadow: 0 5px 10px -2px rgb(0 0 0 / 0.2);
+}
+
+/* Mobile off-canvas panel sliding in from the right. */
+@utility panel-shadow {
+  box-shadow: -10px 0 20px -10px rgb(0 0 0 / 0.1);
+}
