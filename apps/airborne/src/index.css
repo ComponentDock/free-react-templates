@@ -1,0 +1,175 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* palette: a photographic screen under a blue→green wash (#009efd at the top
+     easing into #2af598 at the bottom, solid #30bab6 fallback) at 80% opacity,
+     white type over it, dark navy flip cards with white digits, a white
+     newsletter card and exactly one green action colour */
+  --font-sans: 'Poppins', Arial, sans-serif;
+  --font-heading: 'Poppins', Arial, sans-serif;
+  --font-clock: 'Aldrich', 'Courier New', monospace;
+
+  --color-wash-a: #009efd;
+  --color-wash-b: #2af598;
+  --color-wash: #30bab6;
+  --color-brand: #00b26f;
+  --color-brand-hover: #333333;
+  --color-clock: #0d1629;
+  --color-card: #ffffff;
+  --color-title: #333333;
+  --color-field: #f5f5f5;
+  --color-field-text: #555555;
+  --color-placeholder: #999999;
+  --color-note: #999999;
+  --color-bloom: rgba(0, 178, 111, 0.5);
+  --color-error: #c80000;
+
+  /* shapes: 25px pills (fields, button), 10px card, 3px flip cards and digits,
+     2px social buttons, 35px bloom ring, 16px validation bubble */
+  --radius-pill: 25px;
+  --radius-bubble: 16px;
+  --radius-card: 10px;
+  --radius-clock: 3px;
+  --radius-social: 2px;
+  --radius-bloom: 35px;
+
+  /* the field's focus bloom: the ring spreads outward once and fades away */
+  --animate-bloom: field-bloom 0.5s ease-in-out forwards;
+  /* the flip clock: the old upper half falls, the new lower half rises */
+  --animate-flip-turn: flip-turn 0.5s 0.5s linear both;
+  --animate-flip-turn-back: flip-turn-back 0.5s linear both;
+  --animate-flip-show: flip-show 0.5s linear both;
+  --animate-flip-hide: flip-hide 0.5s 0.3s linear both;
+
+  @keyframes field-bloom {
+    to {
+      box-shadow: 0 0 80px 30px var(--color-bloom);
+      opacity: 0;
+    }
+  }
+
+  @keyframes flip-turn {
+    0% {
+      transform: rotateX(90deg);
+    }
+
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+
+  @keyframes flip-turn-back {
+    0% {
+      transform: rotateX(0deg);
+    }
+
+    100% {
+      transform: rotateX(-90deg);
+    }
+  }
+
+  @keyframes flip-show {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes flip-hide {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    background-color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+
+  input {
+    outline: none;
+    border: none;
+  }
+
+  button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+}
+
+@layer components {
+  /* flip-clock geometry: one 41×54 card split into two 50%-high windows, each
+     holding a 200%-tall flex-centred digit so the seam falls mid-glyph */
+  .flip-half {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-half-up {
+    top: 0;
+    transform-origin: 50% 100%;
+  }
+
+  .flip-half-down {
+    bottom: 0;
+    transform-origin: 50% 0;
+  }
+
+  .flip-digit {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 200%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: var(--color-clock);
+  }
+
+  .flip-half-up > .flip-digit {
+    top: 0;
+  }
+
+  .flip-half-down > .flip-digit {
+    bottom: 0;
+  }
+
+  .flip-shadow {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+  }
+}
