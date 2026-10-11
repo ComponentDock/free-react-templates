@@ -1,0 +1,111 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette: a coral-red travel brand over deep navy surfaces,
+     square corners throughout (circles only for the slider nav arrows
+     and the play button). */
+
+  /* Coral red — buttons, active nav, search block, footer tag pills. */
+  --color-brand: #fe435b;
+  /* Darker coral for hover states. */
+  --color-brand-dark: #eb334a;
+  /* Newsletter submit button. */
+  --color-brand-news: #fe364a;
+  /* Slider nav circles and footer date/link hovers. */
+  --color-brand-nav: #fe3c52;
+  /* Amber watermark behind the hero headline. */
+  --color-amber-ink: #fdaa27;
+
+  /* Deep navy — headings, dark buttons, floating header bar. */
+  --color-navy: #131a2f;
+  /* Nearly black navy — footer background. */
+  --color-navy-deep: #080d1d;
+
+  /* Text tones. */
+  --color-body: #3a3a3a;
+  --color-muted: #7d8293;
+  --color-placeholder: #939393;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variants
+     resolve to the brand coral red. */
+  --color-primary-50: #fff1f3;
+  --color-primary-100: #ffe0e4;
+  --color-primary-200: #ffc6ce;
+  --color-primary-300: #ff9dab;
+  --color-primary-400: #fe6a80;
+  --color-primary-500: #fe435b;
+  --color-primary-600: #fe435b;
+  --color-primary-700: #eb334a;
+  --color-primary-800: #c31f36;
+  --color-primary-900: #a11c30;
+
+  --font-sans: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #3a3a3a;
+    background-color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 300;
+    color: #131a2f;
+  }
+}
+
+/* Signature fields on the dark bands: squared, transparent, white-bordered,
+   coral border tint on hover/focus. */
+.field-dark {
+  height: 56px;
+  width: 100%;
+  border-radius: 0;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  padding: 0 20px;
+  font-size: 13px;
+  color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+.field-dark::placeholder {
+  color: #939393;
+  font-style: italic;
+}
+
+.field-dark:hover,
+.field-dark:focus {
+  border-color: rgba(254, 67, 91, 0.5);
+  outline: none;
+}
+
+.field-dark option {
+  color: #131a2f;
+}
+
+/* Hero watermark: giant amber word behind the white headline. */
+.hero-watermark {
+  font-size: clamp(4.5rem, 18vw, 13.5rem);
+  font-weight: 900;
+  line-height: 0.75;
+  color: #fdaa27;
+  opacity: 0.34;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* Native select reset so the lucide chevron can take over. */
+.select-dark {
+  appearance: none;
+  padding-right: 44px;
+}
