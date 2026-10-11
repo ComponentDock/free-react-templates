@@ -1,0 +1,87 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Signature gradient start — brand pink #ff2f8b. */
+  --color-brand: #ff2f8b;
+
+  /* Signature gradient end — brand purple #9035f9. */
+  --color-grape: #9035f9;
+
+  /* Warm date-badge hover gradient stops (yellow #fff098 → red #f54e71);
+     --color-datehot holds the red end. */
+  --color-datedawn: #fff098;
+  --color-datehot: #f54e71;
+
+  /* Headings, the fixed header bar, and the solid CTA button. */
+  --color-ink: #000000;
+
+  /* Footer navy #04091e. */
+  --color-navy: #04091e;
+
+  /* Body copy grey #777777. */
+  --color-body: #777777;
+
+  /* Illustration panel behind each service card (#f7f9fd). */
+  --color-panel: #f7f9fd;
+
+  /* Card hairline borders (#eeeeee). */
+  --color-hairline: #eeeeee;
+
+  /* Newsletter email input fill (#c251da). */
+  --color-berry: #c251da;
+
+  /* Grey rule under section titles (#dddddd) and footer link grey (#999999). */
+  --color-titlebar: #dddddd;
+  --color-footlink: #999999;
+
+  --font-body: 'Roboto', sans-serif;
+  --font-display: 'Playfair Display', serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: var(--color-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--color-ink);
+  }
+}
+
+/* Pink → purple brand gradient: primary buttons, gradient-clipped section
+   eyebrows, date badges, newsletter submits. Declared with @utility so
+   variants (hover:, group-hover:) work. */
+@utility brand-gradient {
+  background-image: linear-gradient(90deg, #ff2f8b 0%, #9035f9 100%);
+}
+
+@utility brand-gradient-text {
+  background-image: linear-gradient(90deg, #ff2f8b 0%, #9035f9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Warm yellow → red gradient a package date badge swaps to on hover. */
+@utility date-gradient {
+  background-image: linear-gradient(90deg, #fff098 0%, #f54e71 100%);
+}
