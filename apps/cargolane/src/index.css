@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette: single orange accent on a clean white/light page. */
+
+  /* Primary orange — buttons, headings, active nav, focus borders. */
+  --color-primary: #f16821;
+
+  /* Body copy — light corporate gray. */
+  --color-body: #4d4d4d;
+
+  /* Footer background and footer copy. */
+  --color-footer: #333333;
+  --color-footertext: #737373;
+
+  /* Light blue-gray section backgrounds. */
+  --color-light: #edf0f5;
+  --color-lightalt: #f4f5f9;
+
+  /* Success green — checklist bullets. */
+  --color-check: #8bc34a;
+
+  /* Meta gray — blog dates and categories. */
+  --color-meta: #b3b3b3;
+
+  --font-sans: 'Poppins', sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #4d4d4d;
+  }
+}
