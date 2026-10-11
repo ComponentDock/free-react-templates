@@ -1,0 +1,83 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Work Sans', Arial, sans-serif;
+
+  /* brand palette: signature indigo (#5753c9) + the kit's contextual colors */
+  --color-kit-primary: #5753c9;
+  --color-kit-secondary: #6c757d;
+  --color-kit-success: #00ad6c;
+  --color-kit-danger: #ef3536;
+  --color-kit-warning: #ffb800;
+  --color-kit-info: #12d0da;
+  --color-kit-dark: #343a40;
+  --color-kit-light: #f8f9fa;
+  --color-heading: #394a6d;
+  --color-body: #808080;
+  --color-band: #f8f9fa;
+
+  /* hero wash: indigo gradient over the cover photo (315deg) */
+  --gradient-hero: linear-gradient(315deg, #3d4e81 0%, #5753c9 48%, #6e7ff3 100%);
+
+  /* per-color soft button elevation, fading on hover */
+  --shadow-btn-primary: 0 5px 15px -5px rgba(87, 83, 201, 0.8);
+  --shadow-btn-primary-fade: 0 5px 15px -5px rgba(87, 83, 201, 0.1);
+  --shadow-btn-secondary: 0 5px 15px -5px rgba(108, 117, 125, 0.8);
+  --shadow-btn-secondary-fade: 0 5px 15px -5px rgba(108, 117, 125, 0.1);
+  --shadow-btn-success: 0 5px 15px -5px rgba(0, 173, 108, 0.8);
+  --shadow-btn-success-fade: 0 5px 15px -5px rgba(0, 173, 108, 0.1);
+  --shadow-btn-danger: 0 5px 15px -5px rgba(239, 53, 54, 0.8);
+  --shadow-btn-danger-fade: 0 5px 15px -5px rgba(239, 53, 54, 0.1);
+  --shadow-btn-warning: 0 5px 15px -5px rgba(255, 184, 0, 0.8);
+  --shadow-btn-warning-fade: 0 5px 15px -5px rgba(255, 184, 0, 0.1);
+  --shadow-btn-info: 0 5px 15px -5px rgba(18, 208, 218, 0.8);
+  --shadow-btn-info-fade: 0 5px 15px -5px rgba(18, 208, 218, 0.1);
+  --shadow-btn-dark: 0 5px 15px -5px rgba(52, 58, 64, 0.8);
+  --shadow-btn-dark-fade: 0 5px 15px -5px rgba(52, 58, 64, 0.1);
+
+  /* surfaces */
+  --shadow-kit-menu: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+  --shadow-kit-popover: 0 5px 30px -5px rgba(0, 0, 0, 0.4);
+  --shadow-kit-tooltip: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+  --shadow-kit-modal: 0 10px 50px -10px rgba(0, 0, 0, 0.3);
+  --shadow-kit-input: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  --shadow-kit-raised: 0 10px 20px -10px rgba(0, 0, 0, 0.25);
+  --shadow-kit-card: 0 2px 10px 0 rgba(0, 0, 0, 0.06);
+
+  /* tinted demo bars + active pagination pages */
+  --shadow-bar-primary: 0 2px 5px -2px rgba(87, 83, 201, 0.5);
+  --shadow-bar-secondary: 0 2px 5px -2px rgba(108, 117, 125, 0.5);
+  --shadow-bar-success: 0 2px 5px -2px rgba(0, 173, 108, 0.5);
+  --shadow-bar-danger: 0 2px 5px -2px rgba(239, 53, 54, 0.5);
+  --shadow-bar-info: 0 2px 5px -2px rgba(18, 208, 218, 0.5);
+  --shadow-page-primary: 0 2px 5px 0 rgba(87, 83, 201, 0.2);
+  --shadow-page-secondary: 0 2px 5px 0 rgba(108, 117, 125, 0.2);
+  --shadow-page-info: 0 2px 5px 0 rgba(18, 208, 218, 0.2);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--color-body);
+    background-color: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--color-heading);
+  }
+}
