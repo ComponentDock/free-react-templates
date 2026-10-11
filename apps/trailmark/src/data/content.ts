@@ -1,6 +1,6 @@
 export const BRAND = { name: 'trailmark', tagline: 'travel agency' }
 
-export const NAV_LINKS = ['Home', 'About us', 'Offers', 'News', 'Contact']
+export const NAV_LINKS = ['Home', 'About us', 'Offers', 'News', 'Contact'] as const
 
 export interface Destination {
   name: string

@@ -6,7 +6,7 @@ describe('DestinationCard', () => {
   it('renders a linked photo card with its price overlay', () => {
     render(<DestinationCard name="Cinque Terre" price="From $890" seed="trailmark-top-3" />)
     const link = screen.getByRole('link', { name: /cinque terre/i })
-    expect(link).toHaveAttribute('href', '#')
+    expect(link).toHaveAttribute('href', '#home')
     expect(screen.getByText('From $890')).toBeInTheDocument()
     expect(screen.getByRole('img', { name: 'Cinque Terre destination' })).toHaveAttribute(
       'src',
