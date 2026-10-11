@@ -1,0 +1,547 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette: a light white travel-directory page anchored by a coral
+     call-to-action colour and a teal→mint gradient used on the photo bands. */
+
+  /* Coral — search submit, service icons, service-card hover flood, star
+     ratings, hover circle icons, quote badge, nav-CTA hover. */
+  --color-coral: #f85959;
+  /* Teal → mint gradient (photo overlay + newsletter band). */
+  --color-teal: #2ebdc4;
+  --color-mint: #68e5b2;
+  /* Price figures on listing cards. */
+  --color-price: #2f89fc;
+  /* Footer charcoal. */
+  --color-ink: #222831;
+  /* Light section background. */
+  --color-mist: #f8f9fa;
+  /* Text. */
+  --color-body: #4d4d4d;
+  --color-heading: #212529;
+  --color-muted: #6c757d;
+  --color-loc: #999999;
+  --color-tag: #b3b3b3;
+  --color-hair: #e6e6e6;
+
+  --font-sans: 'Poppins', Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #4d4d4d;
+    background-color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #212529;
+    line-height: 1.2;
+  }
+}
+
+/* Section rhythm: the reference uses generous 5em bands. */
+.section-gap {
+  padding: 80px 0;
+}
+
+.section-gap-lg {
+  padding: 120px 0;
+}
+
+/* 14px accent line above every section heading. */
+.subheading {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #f85959;
+  margin-bottom: 8px;
+}
+
+.subheading-light {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* 30px weight-300 section heading with a bold lead word. */
+.section-heading {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.section-heading strong {
+  font-weight: 700;
+}
+
+.section-heading-light {
+  font-size: 40px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/* Pill button: filled coral (primary). */
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f85959;
+  border-radius: 30px;
+  background: #f85959;
+  padding: 12px 26px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.btn-pill:hover,
+.btn-pill:focus-visible {
+  background: transparent;
+  color: #f85959;
+}
+
+/* Pill button: outline coral (secondary). */
+.btn-pill-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f85959;
+  border-radius: 30px;
+  background: transparent;
+  padding: 12px 26px;
+  color: #f85959;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.btn-pill-outline:hover,
+.btn-pill-outline:focus-visible {
+  background: #f85959;
+  color: #ffffff;
+}
+
+/* Navbar outline CTA: translucent white border, fills coral on hover. */
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+  padding: 10px 22px;
+  color: #ffffff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.nav-cta:hover,
+.nav-cta:focus-visible {
+  background: #f85959;
+  border-color: #f85959;
+}
+
+/* Hero photo band with the teal→mint gradient wash. */
+.hero-wrap {
+  position: relative;
+  isolation: isolate;
+  background-image: url('https://picsum.photos/seed/tripforge-hero/1920/1200');
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(-45deg, #2ebdc4 0%, #68e5b2 100%);
+  opacity: 0.7;
+}
+
+/* Hero search fields: square, 52px tall, white. */
+.search-field {
+  height: 52px;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  border-radius: 0;
+  background: #ffffff;
+  padding: 0 16px;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+
+.search-field:focus {
+  outline: none;
+  border-color: #f85959;
+}
+
+.search-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  border: 1px solid #f85959;
+  border-radius: 0;
+  background: #f85959;
+  padding: 0 30px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* White highlight chips under the search bar. */
+.browse-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border-radius: 2px;
+  background: #ffffff;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.browse-chip:hover,
+.browse-chip:focus-visible {
+  background: #f85959;
+  color: #ffffff;
+}
+
+.browse-chip:hover svg,
+.browse-chip:focus-visible svg {
+  color: #ffffff;
+}
+
+/* Services strip: the container is pulled up over the hero bottom. */
+.services-overlap {
+  margin-top: -120px;
+  position: relative;
+  z-index: 2;
+}
+
+.service-card {
+  border-radius: 0;
+  background: #ffffff;
+  padding: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  background: #f85959;
+  color: #ffffff;
+}
+
+.service-card:hover h3,
+.service-card:hover p,
+.service-card:hover svg {
+  color: #ffffff;
+}
+
+/* White listing card with a soft drop shadow. */
+.listing-card {
+  border-radius: 0;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+  height: 100%;
+}
+
+.listing-media {
+  position: relative;
+  overflow: hidden;
+}
+
+.listing-media img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* 60px white circle + coral icon revealed over the image on hover. */
+.hover-circle {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.listing-media:hover .hover-circle,
+.listing-media:focus-within .hover-circle {
+  opacity: 1;
+}
+
+.hover-circle svg {
+  height: 26px;
+  width: 26px;
+  color: #f85959;
+}
+
+.hover-circle-inner {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.rating svg {
+  height: 12px;
+  width: 12px;
+  color: #f85959;
+}
+
+.rating-empty {
+  color: #d8d8d8;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 400;
+  color: #2f89fc;
+}
+
+.days-chip {
+  display: inline-flex;
+  border-radius: 30px;
+  background: #f1f3f5;
+  padding: 4px 16px;
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.loc {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #999999;
+}
+
+.card-divider {
+  border: 0;
+  border-top: 1px solid #f1f1f1;
+  margin: 18px 0;
+}
+
+/* Destination carousel: sliding track. */
+.slide-track {
+  display: flex;
+  transition: transform 0.4s ease;
+  transform: translateX(calc(var(--slide, 0) * -100%));
+}
+
+@media (min-width: 1024px) {
+  .slide-track {
+    transform: translateX(calc(var(--slide, 0) * -33.3333%));
+  }
+}
+
+.slide-item {
+  width: 100%;
+  flex-shrink: 0;
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .slide-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slide-item {
+    width: 33.3333%;
+  }
+}
+
+/* Why-choose-us band: 100px round photo with a 40px coral quote badge. */
+.testimony-photo {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: visible;
+}
+
+.testimony-photo img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quote-badge {
+  position: absolute;
+  right: -6px;
+  bottom: 0;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f85959;
+  color: #ffffff;
+}
+
+.testimony-card {
+  border-radius: 0;
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+/* Photo-backed counter band with a dark wash. */
+.counter-band {
+  position: relative;
+  isolation: isolate;
+  background-image: url('https://picsum.photos/seed/tripforge-band/1920/900');
+  background-position: center;
+  background-size: cover;
+}
+
+.counter-band::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.counter-number {
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/* Blog cards: 250px cover image, grey tag chip, 15px meta row. */
+.blog-image {
+  display: block;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tag-chip {
+  display: inline-flex;
+  background: #f1f3f5;
+  padding: 4px 14px;
+  font-size: 13px;
+  color: #b3b3b3;
+}
+
+.blog-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #6c757d;
+}
+
+/* Newsletter band: teal→mint gradient with a bordered pill-input form. */
+.newsletter-band {
+  position: relative;
+  isolation: isolate;
+  padding: 10em 0;
+  background: linear-gradient(-45deg, #2ebdc4 0%, #68e5b2 100%);
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.newsletter-input {
+  flex: 1;
+  border: 0;
+  border-radius: 30px;
+  background: transparent;
+  padding: 14px 22px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.newsletter-input:focus {
+  outline: none;
+}
+
+.newsletter-submit {
+  border: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 0;
+  background: transparent;
+  padding: 14px 26px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.newsletter-submit:hover,
+.newsletter-submit:focus-visible {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Footer: 50px translucent social circles, white-on-hover links. */
+.footer-heading {
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover,
+.footer-link:focus-visible {
+  color: #ffffff;
+}
+
+.social-circle {
+  display: inline-flex;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.social-circle:hover,
+.social-circle:focus-visible {
+  background: #f85959;
+}
