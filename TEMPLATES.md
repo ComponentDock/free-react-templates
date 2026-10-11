@@ -2989,7 +2989,7 @@
 - [x] **Pacific** — [colorlib](https://colorlib.com/wp/template/pacific/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pacific-free-template.jpg) · [tidal](https://free-react-templates-tidal.surge.sh)
 - [x] **Passport** — [colorlib](https://colorlib.com/wp/template/passport/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/passport-free-template.jpg) · [voyage](https://voyage.free.componentdock.com)
 - [x] **Philosophy** — [colorlib](https://colorlib.com/wp/template/philosophy/) · [sonder](https://sonder.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/philosophy-free-lifestyle-blog-website-template.jpg)
-- [~] **Platina** — [colorlib](https://colorlib.com/wp/template/platina/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/platina-free-travel-agency-website-template.jpg)
+- [x] **Platina** — [colorlib](https://colorlib.com/wp/template/platina/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/platina-free-travel-agency-website-template.jpg) · [voyara](https://voyara.free.componentdock.com)
 - [x] **Roberto** — [colorlib](https://colorlib.com/wp/template/roberto/) · [retreat](https://retreat.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/roberto-free-template-1-1.jpg)
 - [x] **Ruft** — [colorlib](https://colorlib.com/wp/template/ruft/) · [odyssey](https://odyssey.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ruft-free-template.jpg)
 - [x] **Safario** — [colorlib](https://colorlib.com/wp/template/safario/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/safario-free-template.jpg) · [dune](https://dune.free.componentdock.com)
