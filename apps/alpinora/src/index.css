@@ -1,0 +1,171 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette: white page anchored by a vivid purple -> deep indigo
+     gradient (0deg = bottom to top). */
+
+  /* Brand gradient endpoints — primary buttons, feature-card hover flood,
+     video overlay, newsletter button, counter gradient text, social hover. */
+  --color-brand-start: #b21aff;
+  --color-brand-end: #732bde;
+
+  /* Text colors. */
+  --color-heading: #222222;
+  --color-body: #777777;
+
+  /* Surfaces. */
+  --color-lavender: #f9f9ff;
+  --color-ink: #222222;
+  --color-ink-deep: #191919;
+  --color-social: #cccccc;
+
+  --font-sans: 'Poppins', sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #777777;
+    background-color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #222222;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+}
+
+/* Brand gradient fill (0deg: vivid purple at the bottom, deep indigo on
+   top) — buttons, hover floods, video overlay. */
+.bg-brand-gradient {
+  background-image: linear-gradient(0deg, #b21aff 0%, #732bde 100%);
+}
+
+/* Primary pill button: gradient, radius 25px, sliding arrow span. */
+.primary-btn {
+  position: relative;
+  display: inline-block;
+  border-radius: 25px;
+  background-image: linear-gradient(0deg, #b21aff 0%, #732bde 100%);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 42px;
+  padding-left: 30px;
+  padding-right: 60px;
+  transition: all 0.3s ease;
+}
+
+.primary-btn .arrow {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: right 0.3s ease;
+}
+
+.primary-btn:hover .arrow,
+.primary-btn:focus-visible .arrow {
+  right: 20px;
+}
+
+/* Hero CTA pill: white on the photo, shadowed; hollows out on hover. */
+.header-btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #222222;
+  padding: 8px 40px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.header-btn:hover,
+.header-btn:focus-visible {
+  background: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+/* Feature card: lavender flood -> brand gradient on hover. */
+.feature-card {
+  background-color: #f9f9ff;
+  padding: 30px 30px 15px;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  background-image: linear-gradient(0deg, #b21aff 0%, #732bde 100%);
+  color: #ffffff;
+}
+
+.feature-card:hover h4,
+.feature-card:hover p,
+.feature-card:hover svg {
+  color: #ffffff;
+}
+
+/* Gradient text for the stat counters (fill is clipped to the glyphs). */
+.counter-text {
+  background-image: linear-gradient(0deg, #b21aff 0%, #732bde 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Newsletter subscribe button: gradient, square corners. */
+.bb-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(0deg, #b21aff 0%, #732bde 100%);
+  color: #ffffff;
+  font-weight: 300;
+  border-radius: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bb-btn:hover,
+.bb-btn:focus-visible {
+  opacity: 0.9;
+}
+
+/* Footer social icons: idle gray, brand gradient text on hover. */
+.social-link {
+  color: #cccccc;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  background-image: linear-gradient(0deg, #b21aff 0%, #732bde 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Section rhythm. */
+.section-gap {
+  padding: 80px 0;
+}
+
+@media (min-width: 768px) {
+  .section-gap {
+    padding: 120px 0;
+  }
+}
