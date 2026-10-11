@@ -309,9 +309,9 @@ position:relative; background-color:transparent; height:50px; border:2px solid
 rgba(255,255,255,0.5); border-radius:25px}` + `.validate-input
 {position:relative}` + `.where1{margin:20px 5px 0px 5px}`
   - Field input: `.input100{display:block; width:100%; background:transparent}`
-    + `input.input100{height:100%; padding:0 38px 0 38px}` +
-    `.s1-txt1{Poppins-Regular 15px; color:#fff; line-height:1.2}` +
-    `.placeholder0` → `#fff` on all four vendor placeholder variants
+    - `input.input100{height:100%; padding:0 38px 0 38px}` +
+      `.s1-txt1{Poppins-Regular 15px; color:#fff; line-height:1.2}` +
+      `.placeholder0` → `#fff` on all four vendor placeholder variants
   - Focus ring: `.focus-input100{width:calc(100% + 4px);
 height:calc(100% + 4px); top:-2px; left:-2px; border:2px solid #4272d7;
 border-radius:25px; visibility:hidden; opacity:0; transition:all 0.4s;
@@ -342,8 +342,7 @@ cursor:pointer}`; `h3,p{margin:0px}`
   - Fonts (source, self-hosted woff2): Poppins-Light (300), Poppins-Regular
     (400), Poppins-Bold (700), PlayfairDisplay-Regular (400),
     PlayfairDisplay-Italic (italic 400) — NO Aldrich/mono face, and the
-    recreation loads Poppins (300 / 400 / 700) + Playfair Display (400 + italic
-    400) from Google Fonts via `<link>` in `index.html`
+    recreation loads Poppins (300 / 400 / 700) + Playfair Display (400 + italic 400) from Google Fonts via `<link>` in `index.html`
 - **Content map (source DOM):**
   `div.bg-img1.overlay1.size1.flex-w.flex-c-m.p-t-55.p-b-55.p-l-15.p-r-15`
   `[style="background-image:url(images/bg01.jpg)"]` containing a single
@@ -384,39 +383,39 @@ ex@abc.xyz"] > input.s1-txt1.placeholder0.input100[type=text][name=email]
 
 ## Design tokens
 
-| Token                  | Value                                                                                                                                                                                                                                          | Where                                                                          |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| wash gradient (page)   | `#aa076b` (bottom) → `#61045f` (top) — source `linear-gradient(bottom, #aa076b, #61045f)` (legacy `bottom` = "starting at the bottom" ⇒ modern `to top`)                                                                                       | full-viewport overlay over the photo                                           |
-| wash fallback          | `#61045f`                                                                                                                                                                                                                                       | background-color behind the gradient                                           |
-| wash opacity           | `0.9`                                                                                                                                                                                                                                           | first overlay layer                                                            |
-| scrim layer            | `rgba(0,0,0,0.2)`                                                                                                                                                                                                                               | second full-size overlay layer, painted OVER the wash                          |
-| page photograph        | source `images/bg01.jpg` (1900×900 dark green leaf macro, average `rgb(73,104,87)`) — recreation uses `https://picsum.photos/seed/forthcoming-bg/1900/900`                                                                                    | full-viewport background, `cover` centred                                      |
-| brand blue             | `#4272d7`                                                                                                                                                                                                                                       | Notify Me fill, focus-ring border, button hover label colour                   |
-| glyph                  | 60px white outline gift-card glyph (source zmdi inlined SVG) ⇒ lucide `Gift` at 60px `#fff`                                                                                                                                                    | top of the column                                                              |
-| heading                | `#fff` Poppins-Bold 48px/1.2, `text-transform:uppercase`, 22px below                                                                                                                                                                            | column                                                                         |
-| subtitle               | `#fff` PlayfairDisplay-Regular 25px/1.2, 67px below                                                                                                                                                                                            | column                                                                         |
-| clock box              | `border:2px solid rgba(255,255,255,0.35)`, NO radius, `padding:42px 50px 22px`, wrap + space-around + items-centre                                                                                                                              | countdown frame                                                                |
-| clock box (mobile)     | ≤768px: `padding-left/right:15px`, `max-width:340px`, `margin:0 auto`                                                                                                                                                                          | ≤768px                                                                         |
-| clock unit             | `width:100px`, centred column, 20px below                                                                                                                                                                                                      | inside the box                                                                 |
-| clock digits           | `#fff` Poppins-Light 70px/1, 4px below                                                                                                                                                                                                         | inside each unit                                                               |
-| clock colons           | `#fff` Poppins-Light 70px/1, 22px below; the SECOND colon hidden at ≤768px                                                                                                                                                                     | between units                                                                  |
-| clock labels           | `#fff` PlayfairDisplay-Italic 18px/1, sentence case                                                                                                                                                                                            | inside each unit                                                               |
-| field well             | `width:500px`, `max-width:calc(100% - 10px)`, `height:50px`, `border:2px solid rgba(255,255,255,0.5)`, `border-radius:25px`, transparent fill                                                                                                  | form row                                                                       |
-| field input            | transparent fill, `padding:0 38px`, `#fff` text (Poppins-Regular 15px/1.2), `#fff` placeholder (all vendor variants)                                                                                                                           | form row                                                                       |
-| field/focus layout     | `.where1{margin:20px 5px 0px 5px}` on BOTH the well and the button                                                                                                                                                                             | form row                                                                       |
-| focus ring             | 100%+4px box offset −2px, `2px solid #4272d7`, `border-radius:25px`, hidden → `visibility:visible; opacity:1; transform:scale(1)` from `scaleX(1.1) scaleY(1.2)`, transition `all .4s`                                                       | focused field                                                                  |
-| button                 | `min-width:160px`, `height:50px`, `padding:0 20px`, `background:#4272d7`, `border-radius:25px`, label Poppins-Regular 15px/1.2 `#fff`, `transition:all .4s`                                                                                    | form row                                                                       |
-| button hover           | fill → `#fff`, label → `#4272d7`                                                                                                                                                                                                               | over `.4s`                                                                     |
-| validation bubble      | white fill, `1px solid #c80000`, `border-radius:15px`, `padding:4px 25px 4px 10px`, `max-width:70%`, right 12px, vertically centred, Poppins-Regular 14px/1.4 `#c80000`, opacity over `.4s`; icon 14px `#c80000` at right 18px                 | error state                                                                    |
-| validation visibility  | hidden by default; shown on field hover; always shown at ≤992px; cleared on focus                                                                                                                                                              | error state                                                                    |
-| error red              | `#c80000`                                                                                                                                                                                                                                       | bubble border/text/icon                                                        |
-| fonts                  | Poppins-Light (digits + colons 70px), Poppins-Regular (input/button 15px, bubble 14px, base 15px), Poppins-Bold (heading 48px), PlayfairDisplay-Regular (subtitle 25px), PlayfairDisplay-Italic (clock labels 18px)                            | typography                                                                     |
-| radii                  | 25px (field well, focus ring, button), 15px (validation bubble), 0px (countdown box, glyph, headings)                                                                                                                                          | shapes                                                                         |
-| screen                 | `width:100%`, `min-height:100vh`, `padding:55px 15px`, `display:flex; flex-wrap:wrap; justify-content:center; align-items:center`; photo `cover` centred + wash (90%) + scrim (20%)                                                           | layout                                                                         |
-| column                 | `width:790px`, `max-width:100%`                                                                                                                                                                                                                | centred child of the wrapper                                                   |
-| base type              | `body,html{font-family:Arial,sans-serif; font-size:15px; color:#666666; background:#fff}` (all visible type is Poppins/Playfair Display)                                                                                                       | typography                                                                     |
-| countdown behaviour    | target `now + 35 d + 18 h` (the configured `new Date(0,-1,35,…)` is always past); 1 s tick; days raw, h/m/s zero-padded; immediate first paint; interval cleared at 0                                                                          | countdown                                                                      |
-| attribution            | Poppins-Regular 12–13px white/70 centred line below the form                                                                                                                                                                                   | footer requirement (ADDED vs the reference — the source has no footer credit)  |
+| Token                 | Value                                                                                                                                                                                                                          | Where                                                                         |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
+| wash gradient (page)  | `#aa076b` (bottom) → `#61045f` (top) — source `linear-gradient(bottom, #aa076b, #61045f)` (legacy `bottom` = "starting at the bottom" ⇒ modern `to top`)                                                                       | full-viewport overlay over the photo                                          |
+| wash fallback         | `#61045f`                                                                                                                                                                                                                      | background-color behind the gradient                                          |
+| wash opacity          | `0.9`                                                                                                                                                                                                                          | first overlay layer                                                           |
+| scrim layer           | `rgba(0,0,0,0.2)`                                                                                                                                                                                                              | second full-size overlay layer, painted OVER the wash                         |
+| page photograph       | source `images/bg01.jpg` (1900×900 dark green leaf macro, average `rgb(73,104,87)`) — recreation uses `https://picsum.photos/seed/forthcoming-bg/1900/900`                                                                     | full-viewport background, `cover` centred                                     |
+| brand blue            | `#4272d7`                                                                                                                                                                                                                      | Notify Me fill, focus-ring border, button hover label colour                  |
+| glyph                 | 60px white outline gift-card glyph (source zmdi inlined SVG) ⇒ lucide `Gift` at 60px `#fff`                                                                                                                                    | top of the column                                                             |
+| heading               | `#fff` Poppins-Bold 48px/1.2, `text-transform:uppercase`, 22px below                                                                                                                                                           | column                                                                        |
+| subtitle              | `#fff` PlayfairDisplay-Regular 25px/1.2, 67px below                                                                                                                                                                            | column                                                                        |
+| clock box             | `border:2px solid rgba(255,255,255,0.35)`, NO radius, `padding:42px 50px 22px`, wrap + space-around + items-centre                                                                                                             | countdown frame                                                               |
+| clock box (mobile)    | ≤768px: `padding-left/right:15px`, `max-width:340px`, `margin:0 auto`                                                                                                                                                          | ≤768px                                                                        |
+| clock unit            | `width:100px`, centred column, 20px below                                                                                                                                                                                      | inside the box                                                                |
+| clock digits          | `#fff` Poppins-Light 70px/1, 4px below                                                                                                                                                                                         | inside each unit                                                              |
+| clock colons          | `#fff` Poppins-Light 70px/1, 22px below; the SECOND colon hidden at ≤768px                                                                                                                                                     | between units                                                                 |
+| clock labels          | `#fff` PlayfairDisplay-Italic 18px/1, sentence case                                                                                                                                                                            | inside each unit                                                              |
+| field well            | `width:500px`, `max-width:calc(100% - 10px)`, `height:50px`, `border:2px solid rgba(255,255,255,0.5)`, `border-radius:25px`, transparent fill                                                                                  | form row                                                                      |
+| field input           | transparent fill, `padding:0 38px`, `#fff` text (Poppins-Regular 15px/1.2), `#fff` placeholder (all vendor variants)                                                                                                           | form row                                                                      |
+| field/focus layout    | `.where1{margin:20px 5px 0px 5px}` on BOTH the well and the button                                                                                                                                                             | form row                                                                      |
+| focus ring            | 100%+4px box offset −2px, `2px solid #4272d7`, `border-radius:25px`, hidden → `visibility:visible; opacity:1; transform:scale(1)` from `scaleX(1.1) scaleY(1.2)`, transition `all .4s`                                         | focused field                                                                 |
+| button                | `min-width:160px`, `height:50px`, `padding:0 20px`, `background:#4272d7`, `border-radius:25px`, label Poppins-Regular 15px/1.2 `#fff`, `transition:all .4s`                                                                    | form row                                                                      |
+| button hover          | fill → `#fff`, label → `#4272d7`                                                                                                                                                                                               | over `.4s`                                                                    |
+| validation bubble     | white fill, `1px solid #c80000`, `border-radius:15px`, `padding:4px 25px 4px 10px`, `max-width:70%`, right 12px, vertically centred, Poppins-Regular 14px/1.4 `#c80000`, opacity over `.4s`; icon 14px `#c80000` at right 18px | error state                                                                   |
+| validation visibility | hidden by default; shown on field hover; always shown at ≤992px; cleared on focus                                                                                                                                              | error state                                                                   |
+| error red             | `#c80000`                                                                                                                                                                                                                      | bubble border/text/icon                                                       |
+| fonts                 | Poppins-Light (digits + colons 70px), Poppins-Regular (input/button 15px, bubble 14px, base 15px), Poppins-Bold (heading 48px), PlayfairDisplay-Regular (subtitle 25px), PlayfairDisplay-Italic (clock labels 18px)            | typography                                                                    |
+| radii                 | 25px (field well, focus ring, button), 15px (validation bubble), 0px (countdown box, glyph, headings)                                                                                                                          | shapes                                                                        |
+| screen                | `width:100%`, `min-height:100vh`, `padding:55px 15px`, `display:flex; flex-wrap:wrap; justify-content:center; align-items:center`; photo `cover` centred + wash (90%) + scrim (20%)                                            | layout                                                                        |
+| column                | `width:790px`, `max-width:100%`                                                                                                                                                                                                | centred child of the wrapper                                                  |
+| base type             | `body,html{font-family:Arial,sans-serif; font-size:15px; color:#666666; background:#fff}` (all visible type is Poppins/Playfair Display)                                                                                       | typography                                                                    |
+| countdown behaviour   | target `now + 35 d + 18 h` (the configured `new Date(0,-1,35,…)` is always past); 1 s tick; days raw, h/m/s zero-padded; immediate first paint; interval cleared at 0                                                          | countdown                                                                     |
+| attribution           | Poppins-Regular 12–13px white/70 centred line below the form                                                                                                                                                                   | footer requirement (ADDED vs the reference — the source has no footer credit) |
 
 ## Requirements
 
@@ -610,61 +609,86 @@ Component Dock attribution, so a small line is added under the form.
 
 ## Verification checklist
 
-- [ ] Layout 1:1 with the reference: ONE washed wrapper at
+- [x] Layout 1:1 with the reference: ONE washed wrapper at
       `min-h-screen w-full` with `padding:55px 15px`, `flex flex-wrap
 justify-center items-center`, a photo background (`cover`, centred) plus TWO
       overlay layers — a `to top` `#aa076b → #61045f` wash at `opacity:0.9` with
       the `#61045f` fallback and a `rgba(0,0,0,0.2)` scrim ABOVE it; inside, one
       `w-[790px] max-w-full` column; no navbar, no social row, no footer band
-- [ ] Block order matches: 60px white glyph (23px below) → uppercase 48px
+- [x] Block order matches: 60px white glyph (23px below) → uppercase 48px
       Poppins-Bold "Coming Soon"-equivalent h3 (22px below) → 25px
       PlayfairDisplay-Regular subtitle (67px below) → boxed colon countdown →
       one-row pill form → Component Dock attribution
-- [ ] Clock box: wrapping, space-around, items-centred,
+- [x] Clock box: wrapping, space-around, items-centred,
       `border:2px solid rgba(255,255,255,0.35)`, SQUARE corners,
       `padding:42px 50px 22px` (≤768px `max-w-[340px] mx-auto` +
       `px-[15px]`); FOUR `w-[100px]` units as centred columns with 20px below,
       order days → hours → minutes → seconds
-- [ ] Clock typography: digits AND colons Poppins-Light 70px/1 white (digits
+- [x] Clock typography: digits AND colons Poppins-Light 70px/1 white (digits
       `pb-[4px]`, colons `pb-[22px]`), THREE colons present with the SECOND one
       hidden at ≤768px; labels PlayfairDisplay-Italic 18px/1 white in SENTENCE
       case ("Days" / "Hours" / "Minutes" / "Seconds")
-- [ ] Clock behaviour: 1 s tick toward `now + 35 d + 18 h`; days written raw
+- [x] Clock behaviour: 1 s tick toward `now + 35 d + 18 h`; days written raw
       while h/m/s are zero-padded; immediate first paint; interval cleared on
       unmount and at zero remaining
-- [ ] Form row: `w-full` wrapping centre-justified row with `pt-[70px]`; well
+- [x] Form row: `w-full` wrapping centre-justified row with `pt-[70px]`; well
       `w-[500px] max-w-[calc(100%-10px)] h-[50px]` with
       `border-2 border-[rgba(255,255,255,0.5)] rounded-[25px]` and transparent
       fill; BOTH well and button carry `margin:20px 5px 0`; field `h-full px-[38px]`
       with `#fff` text (Poppins-Regular 15px/1.2) and a `#fff` placeholder
-- [ ] Button: `min-w-[160px] h-[50px] px-[20px] bg-[#4272d7] rounded-[25px]`,
+- [x] Button: `min-w-[160px] h-[50px] px-[20px] bg-[#4272d7] rounded-[25px]`,
       Poppins-Regular 15px/1.2 white "Notify Me", `transition-all duration-[400ms]`,
       hover `bg-white` + `text-[#4272d7]`
-- [ ] Focus ring: an outline one border-width larger than the well (offset
+- [x] Focus ring: an outline one border-width larger than the well (offset
       `-2px`), `2px solid #4272d7`, `rounded-[25px]`, hidden until focus, then
       scaling from `scaleX(1.1) scaleY(1.2)` to `scale(1)` with
       visibility/opacity over `.4s` — NOT a box-shadow bloom
-- [ ] Validation: invalid/empty e-mail → white bubble (`1px solid #c80000`,
+- [x] Validation: invalid/empty e-mail → white bubble (`1px solid #c80000`,
       radius 15px, `padding 4px 25px 4px 10px`, `max-width:70%`, right 12px,
       Poppins-Regular 14px `#c80000`) with a lucide `AlertTriangle` (14px
       `#c80000`, right 18px); hidden until an invalid submit, then visible on
       field hover and always at ≤992px; cleared on focus; invalid submit never
       navigates; valid submit shows a React-state confirmation
-- [ ] Poppins (300 / 400 / 700) + Playfair Display (400 + italic 400) via Google
+- [x] Poppins (300 / 400 / 700) + Playfair Display (400 + italic 400) via Google
       Fonts `<link>`; radii 25px / 15px / 0px; transitions `.4s` (all) and `.4s`
       (opacity)
-- [ ] Placeholder photograph used is
+- [x] Placeholder photograph used is
       `picsum.photos/seed/forthcoming-bg/1900/900`; the gift glyph is lucide
       `Gift` at 60px white; icons are lucide-react only; no copied assets, glyph
       SVG, photo, favicon, font files or CSS; no jQuery, no framework, no CDN
       runtime
-- [ ] Component Dock attribution links `https://www.componentdock.com/`
+- [x] Component Dock attribution links `https://www.componentdock.com/`
       (Poppins-Regular 12–13px, centred under the form)
-- [ ] Zero `colorlib` / source-demo-title / `comingsoon_08` references anywhere
+- [x] Zero `colorlib` / source-demo-title / `comingsoon_08` references anywhere
       in `apps/forthcoming` (comments included)
-- [ ] App folder `apps/forthcoming`, package
+- [x] App folder `apps/forthcoming`, package
       `@free-react-templates/forthcoming`, `homepage`
       `https://forthcoming.free.componentdock.com`, `public/CNAME`
       `forthcoming.free.componentdock.com`, lockfile registers the workspace
-- [ ] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
+- [x] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
       `scripts/verify-app.sh forthcoming` passes
+
+## Implementation notes (added with the app)
+
+- **Arbitrary-value class names.** CSS `calc()` requires whitespace around `+`
+  and `-`, so the implementation writes the two calc utilities as
+  `max-w-[calc(100%_-_10px)]` and `h/w-[calc(100%_+_4px)]` (Tailwind turns the
+  underscores into spaces). The rendered CSS is exactly the reference's
+  `calc(100% - 10px)` / `calc(100% + 4px)` — verified in the built stylesheet.
+- **Copy.** The headline reads "We're almost there" and the subtitle "Leave your
+  e-mail and we'll tell you the moment we launch." — both original one-liners, so
+  the headline stays on a single line inside the 790px column as the reference's
+  short uppercase headline does (a longer rephrasing wraps to two lines).
+- **Field fill.** The archived screenshot makes the field look light-filled, but
+  the reference stylesheet is authoritative: `.wrap-input100` is
+  `background-color: transparent` with a `#fff` placeholder, which is what the
+  recreation renders (confirmed in the built page: `rgba(0, 0, 0, 0)` fill).
+- **Verified rendered geometry** (1440×900, built `dist`): wrapper padding
+  `55px 15px`, column 790px, clock box 790px with `2px solid
+rgba(255,255,255,0.35)` / `border-radius: 0` / `justify-content: space-around`
+  / `padding: 42px 50px 22px`, digits 70px weight 300 white, labels italic 18px
+  Playfair Display, wash `linear-gradient(to top, #aa076b, #61045f)` at
+  `opacity: 0.9` over a `rgba(0,0,0,0.2)` scrim, field 500px pill (transparent
+  fill, white placeholder) beside the 160×50px `#4272d7` pill, form row
+  `padding-top: 70px`, and `documentElement.scrollHeight === innerHeight` (a
+  single screen, no scrolling).
