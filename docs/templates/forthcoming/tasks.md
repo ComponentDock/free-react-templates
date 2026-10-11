@@ -19,18 +19,18 @@ Design notes: `docs/templates/forthcoming/design-notes.md`.
 
 ## App setup
 
-- [ ] Copy the simplest existing app scaffold → `apps/forthcoming`
-- [ ] Rename package to `@free-react-templates/forthcoming`; set
+- [x] Copy the simplest existing app scaffold → `apps/forthcoming`
+- [x] Rename package to `@free-react-templates/forthcoming`; set
       `"homepage": "https://forthcoming.free.componentdock.com"`
-- [ ] `public/CNAME` = `forthcoming.free.componentdock.com`
-- [ ] `npm install` at repo root; verify the lockfile registers
+- [x] `public/CNAME` = `forthcoming.free.componentdock.com`
+- [x] `npm install` at repo root; verify the lockfile registers
       `@free-react-templates/forthcoming`
       (`grep -c "free-react-templates/forthcoming" package-lock.json`)
-- [ ] `vite.config.ts` keeps `injectUiSource()` (copy pattern)
-- [ ] Google Fonts `<link>` in `index.html`: Poppins (300 / 400 / 700) +
+- [x] `vite.config.ts` keeps `injectUiSource()` (copy pattern)
+- [x] Google Fonts `<link>` in `index.html`: Poppins (300 / 400 / 700) +
       Playfair Display (400 + italic 400) — this slug needs BOTH families, and
       Poppins-Light 300 for the clock digits
-- [ ] `@theme` tokens in `src/index.css`: wash stops `#aa076b` (bottom) /
+- [x] `@theme` tokens in `src/index.css`: wash stops `#aa076b` (bottom) /
       `#61045f` (top) + solid `#61045f` fallback at `opacity 0.9`; scrim
       `rgba(0,0,0,0.2)`; brand blue `#4272d7`; field border
       `rgba(255,255,255,0.5)`; clock-box border `rgba(255,255,255,0.35)`; white
@@ -39,52 +39,52 @@ Design notes: `docs/templates/forthcoming/design-notes.md`.
 
 ## Sections (component order in `App.tsx`)
 
-- [ ] `ComingSoon.tsx` (page shell) — one `min-h-screen w-full flex flex-wrap
-      items-center justify-center` wrapper with `padding:55px 15px`, background
+- [x] `ComingSoon.tsx` (page shell) — one `min-h-screen w-full flex flex-wrap
+    items-center justify-center` wrapper with `padding:55px 15px`, background
       photo (`bg-cover bg-center bg-no-repeat`,
       `https://picsum.photos/seed/forthcoming-bg/1900/900`) plus TWO overlay
       layers: `bg-[linear-gradient(to_top,#aa076b,#61045f)] bg-[#61045f]
-      opacity-90` and, above it, `bg-black/20`; inside it ONE `w-[790px]
-      max-w-full` column stacking `Glyph` → `Heading` → `Subtitle` →
+    opacity-90` and, above it, `bg-black/20`; inside it ONE `w-[790px]
+    max-w-full` column stacking `Glyph` → `Heading` → `Subtitle` →
       `Countdown` → `FormRow` → `Attribution`; NO navbar, NO social row, NO
       wordmark, NO footer band
-- [ ] `Glyph.tsx` — centred 60px white lucide `Gift` with 23px below it (the
+- [x] `Glyph.tsx` — centred 60px white lucide `Gift` with 23px below it (the
       source glyph is an inlined zmdi "card_giftcard" SVG outline; never copy it)
-- [ ] `Heading.tsx` — `h3` in Poppins-Bold 48px/1.2 white, `uppercase`,
+- [x] `Heading.tsx` — `h3` in Poppins-Bold 48px/1.2 white, `uppercase`,
       `text-center`, 22px below ("Coming Soon"-equivalent copy)
-- [ ] `Subtitle.tsx` — one centred line in PlayfairDisplay-Regular 25px/1.2
+- [x] `Subtitle.tsx` — one centred line in PlayfairDisplay-Regular 25px/1.2
       white with 67px below ("Our website is under construction, follow us for
       update now!"-equivalent)
-- [ ] `Countdown.tsx` — wrapping `justify-around items-center` row framed by
+- [x] `Countdown.tsx` — wrapping `justify-around items-center` row framed by
       `border-2 border-[rgba(255,255,255,0.35)]` (SQUARE corners) with
       `pt-[42px] pb-[22px] px-[50px]` (≤768px `max-w-[340px] mx-auto px-[15px]`),
       rendering FOUR `CountdownUnit`s + three `Colon`s in the exact order unit,
       colon, unit, colon, unit, colon, unit; `useCountdown.ts` (below)
-- [ ] `CountdownUnit.tsx` — `w-[100px] mb-[20px] flex flex-col items-center
-      justify-center`; digit Poppins-Light 70px/1 white `pb-[4px]`; label
+- [x] `CountdownUnit.tsx` — `w-[100px] mb-[20px] flex flex-col items-center
+    justify-center`; digit Poppins-Light 70px/1 white `pb-[4px]`; label
       PlayfairDisplay-Italic 18px/1 white, sentence case ("Days" / "Hours" /
       "Minutes" / "Seconds" — never uppercased)
-- [ ] `Colon.tsx` — a literal `:` in Poppins-Light 70px/1 white with
+- [x] `Colon.tsx` — a literal `:` in Poppins-Light 70px/1 white with
       `pb-[22px]`; the SECOND of the three carries the ≤768px `hidden` treatment
       (`respon2`) while the first and third always render
-- [ ] `useCountdown.ts` — 1 s interval toward `now + 35 days + 18 hours`; days
+- [x] `useCountdown.ts` — 1 s interval toward `now + 35 days + 18 hours`; days
       written RAW (no padding) while hours/minutes/seconds are zero-padded to
       two digits; first paint immediate; interval cleared on unmount and when the
       remaining time reaches 0
-- [ ] `FormRow.tsx` — wrapping `justify-center` row `w-full` with `pt-[70px]`
+- [x] `FormRow.tsx` — wrapping `justify-center` row `w-full` with `pt-[70px]`
       holding `Field` and `NotifyButton`, both with `mt-[20px] mx-[5px]`, i.e.
       ONE centred row of two pills, then the attribution
-- [ ] `Field.tsx` — well `w-[500px] max-w-[calc(100%-10px)] h-[50px]
-      border-2 border-[rgba(255,255,255,0.5)] rounded-[25px] relative
-      bg-transparent`; input `h-full w-full bg-transparent px-[38px]` in
+- [x] `Field.tsx` — well `w-[500px] max-w-[calc(100%-10px)] h-[50px]
+    border-2 border-[rgba(255,255,255,0.5)] rounded-[25px] relative
+    bg-transparent`; input `h-full w-full bg-transparent px-[38px]` in
       Poppins-Regular 15px/1.2 white with a white "Email Address" placeholder;
       plus the sibling focus outline (`2px solid #4272d7`, `rounded-[25px]`,
       `w/h calc(100%+4px)` offset `-2px`, hidden → visible/opacity-1/scale-1 from
       `scaleX(1.1) scaleY(1.2)` over `.4s`)
-- [ ] `NotifyButton.tsx` — `min-w-[160px] h-[50px] px-[20px] bg-[#4272d7]
-      rounded-[25px]` Poppins-Regular 15px/1.2 white "Notify Me",
+- [x] `NotifyButton.tsx` — `min-w-[160px] h-[50px] px-[20px] bg-[#4272d7]
+    rounded-[25px]` Poppins-Regular 15px/1.2 white "Notify Me",
       `transition-all duration-[400ms]`, hover `bg-white` + `text-[#4272d7]`
-- [ ] React-state validation (e-mail regex
+- [x] React-state validation (e-mail regex
       `/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/`) → white bubble `1px solid #c80000`,
       radius 15px, `padding 4px 25px 4px 10px`, `max-w-[70%]`, right 12px,
       vertically centred, Poppins-Regular 14px/1.4 `#c80000`, plus lucide
@@ -92,30 +92,30 @@ Design notes: `docs/templates/forthcoming/design-notes.md`.
       warning TRIANGLE); hidden until an invalid submit, then visible on field
       hover and always at ≤992px; cleared on focus; invalid submit never
       navigates; valid submit shows a React-state confirmation
-- [ ] `Attribution.tsx` — Poppins-Regular 12–13px centred line under the form
+- [x] `Attribution.tsx` — Poppins-Regular 12–13px centred line under the form
       ("More templates at Component Dock") linking
       `https://www.componentdock.com/`
 
 ## Tests (Vitest + Testing Library, 100% coverage)
 
-- [ ] Countdown math (target `now + 35 d + 18 h`, 1 s tick advance, days RAW,
+- [x] Countdown math (target `now + 35 d + 18 h`, 1 s tick advance, days RAW,
       h/m/s zero-padded, immediate first paint, interval cleanup at unmount and
       at zero)
-- [ ] Countdown rendering: exactly four units in the right order, THREE colons,
+- [x] Countdown rendering: exactly four units in the right order, THREE colons,
       the four sentence-case italic labels, digit + label + colon typography
       classes, and the second colon's ≤768px hiding class
-- [ ] Form validation (empty e-mail, malformed e-mail, valid submit; bubble
+- [x] Form validation (empty e-mail, malformed e-mail, valid submit; bubble
       appears and clears on focus; visibility rule; no navigation on invalid;
       confirmation on valid)
-- [ ] One-row form geometry: well `w-[500px] max-w-[calc(100%-10px)]`, button
+- [x] One-row form geometry: well `w-[500px] max-w-[calc(100%-10px)]`, button
       `min-w-[160px]`, both 50px tall with `rounded-[25px]`, both in the same
       centred row
-- [ ] Page shell: two overlay layers present (wash at 90% + `black/20` scrim),
+- [x] Page shell: two overlay layers present (wash at 90% + `black/20` scrim),
       single 790px column, no navbar/social/footer sections; glyph, heading,
       subtitle, placeholder copy and attribution all render
-- [ ] Attribution links Component Dock; no source-brand strings anywhere in
+- [x] Attribution links Component Dock; no source-brand strings anywhere in
       `apps/forthcoming`
-- [ ] `scripts/verify-app.sh forthcoming` passes (typecheck + lint + tests +
+- [x] `scripts/verify-app.sh forthcoming` passes (typecheck + lint + tests +
       build)
 
 ## Notes
@@ -129,16 +129,16 @@ Design notes: `docs/templates/forthcoming/design-notes.md`.
   `rgba(0,0,0,0.2)` scrim painted on top of it. The screenshot's darkness comes
   from that second layer.
 - **The washed wrapper IS padded and centred here** (`p-t-55 p-b-55 p-l-15 p-r-15`
-  + `flex flex-wrap justify-center items-center`), unlike the V07 sibling
-  `imminent` where the padded `min-h-screen` box is a CHILD of an unpadded
-  wrapper.
+  - `flex flex-wrap justify-center items-center`), unlike the V07 sibling
+    `imminent` where the padded `min-h-screen` box is a CHILD of an unpadded
+    wrapper.
 - Wash direction: `linear-gradient(bottom, #aa076b, #61045f)` = MAGENTA at the
   BOTTOM. Do not write `to bottom, #61045f, #aa076b`.
 - The reference photo (`images/bg01.jpg`) is a real dark GREEN leaf macro
   (average `rgb(73,104,87)`) — the purple on screen is entirely the wash + scrim.
   NEVER copy it; use `picsum.photos/seed/forthcoming-bg/1900/900`.
 - **The clock lives inside a bordered SQUARE box** (`2px solid
-  rgba(255,255,255,0.35)`) and its separator is a full-size `:` at the same
+rgba(255,255,255,0.35)`) and its separator is a full-size `:` at the same
   70px as the digits — not rings, not cards, not a flip clock, not a bar.
 - Digits are Poppins-Light 70px (thin), labels are Playfair-Display ITALIC 18px
   in sentence case — neither is uppercase and neither is bold.
