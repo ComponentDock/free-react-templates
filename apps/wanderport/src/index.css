@@ -1,0 +1,125 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Signature purple→teal gradient stops #9a52fd → #57ffed — the single
+     call-to-action fill of this design (buttons, package hover wash,
+     newsletter submit) and, clipped into text, the feature-icon hover, the
+     about headline and the footer social hover. */
+  --color-grad-from: #9a52fd;
+  --color-grad-to: #57ffed;
+
+  /* Accent aqua #5cf2ee — text selection and the footer's accent links. */
+  --color-aqua: #5cf2ee;
+
+  /* Headings #222 / body copy #777. */
+  --color-ink: #222222;
+  --color-body: #777777;
+
+  /* Package card title #1a1a1a. */
+  --color-pkg: #1a1a1a;
+
+  /* Dark band + dark footer backgrounds. */
+  --color-night: #000000;
+  --color-foot: #222222;
+
+  /* Newsletter field #191919 on the dark footer. */
+  --color-field: #191919;
+
+  /* Inactive booking tab (translucent white) and the hairline form border. */
+  --color-tab: #ffffff33;
+  --color-hairline: rgba(111, 117, 152, 0.3);
+
+  /* Purple scale so the shared ui Button/ButtonLink `primary` variants
+     resolve to the signature gradient's purple end. */
+  --color-primary-50: #f4edff;
+  --color-primary-100: #e7d9ff;
+  --color-primary-200: #d0b4fe;
+  --color-primary-300: #b98ffe;
+  --color-primary-400: #a86efe;
+  --color-primary-500: #9a52fd;
+  --color-primary-600: #9a52fd;
+  --color-primary-700: #7f3ae0;
+  --color-primary-800: #662cba;
+  --color-primary-900: #4d2094;
+
+  /* One family only: Poppins for headings and body. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625;
+    color: var(--color-body);
+    background-color: #ffffff;
+  }
+
+  ::selection {
+    background-color: var(--color-aqua);
+    color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--color-ink);
+  }
+
+  input,
+  textarea,
+  button {
+    font-family: inherit;
+  }
+}
+
+/* The signature purple→teal fill, used on every primary button, the package
+   hover wash and the newsletter submit. */
+@utility brand-gradient {
+  background-image: linear-gradient(0deg, #9a52fd 0%, #57ffed 100%);
+}
+
+/* The same gradient clipped into the glyphs (feature-icon hover, about
+   headline, footer social hover). */
+@utility gradient-text {
+  background-image: linear-gradient(0deg, #9a52fd 0%, #57ffed 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Heavy wash over the hero photograph (rgba(0, 0, 0, 0.8)). */
+@utility hero-wash {
+  background-color: rgb(0 0 0 / 0.8);
+}
+
+/* Faint wash over the map placeholder so its marker reads on any photo. */
+@utility map-wash {
+  background-color: rgb(0 0 0 / 0.15);
+}
+
+/* Header / booking-card elevation. */
+@utility card-shadow {
+  box-shadow: -21.213px 21.213px 30px 0px rgb(158 158 158 / 0.3);
+}
+
+/* Section rhythm of the reference: 120px top and bottom. */
+@utility section-gap {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
