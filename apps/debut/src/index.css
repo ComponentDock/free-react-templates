@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* brand palette: one green accent (#57b846) on white, gray (#555555) hover */
+  --font-sans: 'Lato', Arial, sans-serif;
+  --font-heading: 'Poppins', Arial, sans-serif;
+  --font-lato: 'Lato', Arial, sans-serif;
+
+  --color-brand: #57b846;
+  --color-ink: #555555;
+  --color-body: #666666;
+  --color-muted: #999999;
+  --color-line: #e6e6e6;
+  --color-error: #c80000;
+  --color-overlay: rgba(0, 0, 0, 0.8);
+  --color-facebook: #3b5998;
+  --color-twitter: #1da1f2;
+  --color-youtube: #cd201f;
+
+  /* field shapes: 5px inputs/button, round socials + countdown circles */
+  --radius-field: 5px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--color-body);
+    background-color: #fff;
+  }
+
+  /* headline ink: Poppins, charcoal #555555 */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    color: var(--color-ink);
+  }
+
+  ::placeholder {
+    color: var(--color-muted);
+  }
+}
