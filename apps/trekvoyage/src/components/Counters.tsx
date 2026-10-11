@@ -8,6 +8,7 @@ const STATS = [
 ] as const
 
 const COUNT_DURATION = 1200
+const FRAME_MS = 16
 
 interface CounterProps {
   value: number
@@ -43,17 +44,18 @@ function Counter({ value, label }: CounterProps) {
     if (!visible) {
       return
     }
-    let frame = 0
-    const start = performance.now()
-    const step = (now: number) => {
-      const ratio = Math.min((now - start) / COUNT_DURATION, 1)
+    /* Interval-driven rather than requestAnimationFrame so the count-up still
+       completes in throttled/background tabs, where rAF callbacks are paused
+       and the band would otherwise stay pinned at zero. */
+    const start = Date.now()
+    const id = setInterval(() => {
+      const ratio = Math.min((Date.now() - start) / COUNT_DURATION, 1)
       setProgress(ratio)
-      if (ratio < 1) {
-        frame = requestAnimationFrame(step)
+      if (ratio === 1) {
+        clearInterval(id)
       }
-    }
-    frame = requestAnimationFrame(step)
-    return () => cancelAnimationFrame(frame)
+    }, FRAME_MS)
+    return () => clearInterval(id)
   }, [visible])
 
   const shown = canAnimate ? Math.round(value * progress) : value
