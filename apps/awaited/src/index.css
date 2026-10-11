@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* palette: a photographic screen behind a 30%-opacity violet wash — periwinkle
+     #7579ff at the top easing to magenta-violet #b224ef at the bottom, with
+     #7579ff as the solid fallback — under a 40% black scrim; white chrome on
+     top of it */
+  --font-sans: 'Poppins', Arial, sans-serif;
+  --font-heading: 'Poppins', Arial, sans-serif;
+
+  --color-wash-top: #7579ff;
+  --color-wash-bottom: #b224ef;
+  --color-wash: #7579ff;
+  --color-scrim: rgba(0, 0, 0, 0.4);
+  --color-heading: rgba(255, 255, 255, 0.5);
+  --color-pill: #ffffff;
+  --color-pill-label: #555555;
+  --color-pill-hover: #555555;
+  --color-disc-hover: #555555;
+
+  /* shapes: a 25px pill for the call to action, 50% for the social discs, and
+     square corners everywhere else (heading, digits, labels, bars) */
+  --radius-pill: 25px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    background-color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
