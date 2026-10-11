@@ -2975,7 +2975,7 @@
 - [x] **Adventure 2** — [colorlib](https://colorlib.com/wp/template/adventure-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/adventure2-free-template.jpg) · [trailquest](https://trailquest.free.componentdock.com)
 - [x] **Beyond** — [colorlib](https://colorlib.com/wp/template/beyond/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/beyond-free-template.jpg) · [skybound](https://skybound.free.componentdock.com)
 - [ ] **Deluxe** — [colorlib](https://colorlib.com/wp/template/deluxe/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/deluxe-free-template.jpg)
-- [~] **Destino** — [colorlib](https://colorlib.com/wp/template/destino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/destino-free-template-1.jpg)
+- [x] **Destino** — [colorlib](https://colorlib.com/wp/template/destino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/destino-free-template-1.jpg) · [trailmark](https://trailmark.free.componentdock.com)
 - [ ] **Direngine** — [colorlib](https://colorlib.com/wp/template/direngine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/direngine-free-template.jpg)
 - [x] **Dorne** — [colorlib](https://colorlib.com/wp/template/dorne/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dorne-directory-listing-free-template.jpg) · [quest](https://quest.free.componentdock.com)
 - [x] **Ecoho** — [colorlib](https://colorlib.com/wp/template/ecoho/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ecoho-free-template.jpg) · [sunlodge](https://sunlodge.free.componentdock.com)
