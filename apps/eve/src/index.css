@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* brand palette: a three-stop purple→violet gradient (#ac32e4 → #7918f2 →
+     #4801ff, solid #7918f2 fallback) carrying white type, white tiles with
+     grey numbers, and one blue action accent (#3a5dff) inside the dialog */
+  --font-sans: 'Montserrat', Arial, sans-serif;
+  --font-heading: 'Montserrat', Arial, sans-serif;
+
+  --color-grad-a: #ac32e4;
+  --color-grad-b: #7918f2;
+  --color-grad-c: #4801ff;
+  --color-action: #3a5dff;
+  --color-ink: #333333;
+  --color-number: #555555;
+  --color-label: #7d8da6;
+  --color-sub: #555555;
+  --color-muted: #999999;
+  --color-credit: #cccccc;
+  --color-well: #e6e6e6;
+  --color-error: #c80000;
+
+  /* shapes: 25px pills (button, inputs, focus ring), 18px tiles, 5px dialog
+     card, 15px validation bubble */
+  --radius-pill: 25px;
+  --radius-tile: 18px;
+  --radius-card: 5px;
+  --radius-bubble: 15px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    background-color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
