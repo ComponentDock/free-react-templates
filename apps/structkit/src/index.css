@@ -1,0 +1,82 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Montserrat', Arial, sans-serif;
+
+  /* brand palette: signature material red (#f44336) with its hover/press ramp */
+  --color-primary: #f44336;
+  --color-primary-hover: #f22112;
+  --color-primary-dark: #ea1c0d;
+  --color-primary-press: #d2190b;
+
+  /* kit spectrum: contextual solid fills used by buttons, badges and bands */
+  --color-success: #64e291;
+  --color-success-dark: #39da73;
+  --color-info: #03a9f4;
+  --color-info-dark: #0286c2;
+  --color-warning: #f1bc31;
+  --color-warning-dark: #e0a60f;
+  --color-danger: #e63333;
+  --color-danger-dark: #cd1919;
+  --color-secondary: #696464;
+  --color-rose: #e83e8c;
+  --color-dark: #343a40;
+  --color-light: #f8f9fa;
+
+  /* type and surfaces */
+  --color-heading: #2c2c2c;
+  --color-strong: #212529;
+  --color-body: #777777;
+  --color-muted: #6c757d;
+  --color-input: #495057;
+  --color-line: #dee2e6;
+  --color-track: #e9ecef;
+  --color-placeholder: #bfbfbf;
+  --color-hero-end: #1f0000;
+
+  /* floating surfaces + the raised circle image */
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.125);
+  --shadow-menu: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+  --shadow-nav: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  --shadow-popover: 0 5px 30px -5px rgba(0, 0, 0, 0.4);
+  --shadow-tooltip: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+  --shadow-raised: 0 11px 30px -9px rgba(0, 0, 0, 0.15);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--color-body);
+    background-color: #fff;
+  }
+
+  /* headings: 400 weight, 1.4 leading on the charcoal ink */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-heading);
+  }
+
+  ::placeholder {
+    color: var(--color-placeholder);
+  }
+
+  /* native range thumbs pick up the brand red */
+  input[type='range'] {
+    accent-color: var(--color-primary);
+  }
+}

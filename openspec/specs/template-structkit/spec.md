@@ -75,7 +75,7 @@ signature shapes. Sections breathe at 4em (6em for the footer's
 ### Design tokens (verified in `css/style.css`)
 
 - Signature red: `.btn-primary { color: #fff; background-color: #f44336;
-  border-color: #f44336 }`; `a { color: #f44336 }` (all links, including
+border-color: #f44336 }`; `a { color: #f44336 }` (all links, including
   link-style buttons); the stylesheet's darker reds `#ea1c0d`, `#d2190b`,
   `#e63333` serve hover/press and danger states (focus ring analogous,
   `rgba(244,67,54,0.5)`).
@@ -84,14 +84,14 @@ signature shapes. Sections breathe at 4em (6em for the footer's
   Danger `#e63333` (white text) · Warning `#f1bc31` (text `#212529`) ·
   Info `#03A9F4` (white text) · Light `#f8f9fa` · Dark `#343a40` ·
   Secondary gray `#696464`-family · `.btn-white { background: #fff;
-  border: 1px solid #fff; color: #000 }`. Hover/active shades in the
+border: 1px solid #fff; color: #000 }`. Hover/active shades in the
   stylesheet: success `#39da73`, info `#0286c2`, warning `#e0a60f`, danger
   `#cd1919`.
 - Text: body `#777777`; headings h1–h5 `{ line-height: 1.4; color: #2c2c2c;
-  font-weight: 400 }`; strong text `#212529`; muted `#6c757d`; generic
+font-weight: 400 }`; strong text `#212529`; muted `#6c757d`; generic
   `span { color: #bfbfbf }`; borders `#dee2e6` / `#e9ecef`.
 - Font: `body { font-family: "Montserrat", Arial, sans-serif; font-size:
-  16px; line-height: 1.8; font-weight: 400; color: #777777 }` — Montserrat
+16px; line-height: 1.8; font-weight: 400; color: #777777 }` — Montserrat
   everywhere (brand 20px/400).
 - Buttons: flat solid fills (no material shadow), base padding `12px 18px`;
   `.btn.btn-round { border-radius: 40px }` (the pill — hero CTA and "Round"
@@ -102,7 +102,7 @@ signature shapes. Sections breathe at 4em (6em for the footer's
   avatars/circles `50%` (designer avatar 50×50px).
 - Hero: `.hero-wrap` full-height (`height: 800px`, `background-size: cover`)
   photo (`images/bg_1.jpg`, night mountains) + `.overlay { opacity: .6;
-  background: linear-gradient(to bottom, red 0%, red 44%, #1f0000 100%) }`;
+background: linear-gradient(to bottom, red 0%, red 44%, #1f0000 100%) }`;
   recreation uses a picsum placeholder + a red→near-black gradient overlay
   (`from-red-600 via-red-600 to-[#1f0000]`, opacity 0.6). Hero wordmark:
   large white text inside a thin white outlined box (screenshot); subtitle
@@ -110,16 +110,16 @@ signature shapes. Sections breathe at 4em (6em for the footer's
 - Scroll button: `.mouse-icon.rounded-circle.bg-danger` — red circle with a
   light down-arrow, straddling the hero's bottom edge.
 - Sections: `.ftco-section { padding: 4em 0 }`; `.ftco-section.ftco-section-2
-  { padding: 6em 0 }` (footer band). Light bands use `bg-light`
+{ padding: 6em 0 }` (footer band). Light bands use `bg-light`
   (`#f8f9fa`) where the source uses them.
 - Navbar: `navbar-dark` over the hero; brand "Structure." 20px/400 white;
   nav links uppercase 14px with 20px icons (icon color
   `rgba(255,255,255,0.6)`); "Premium" is a white CTA chip (`.btn-white`
   treatment — white bg, red text); mobile toggler labeled "Menu" with
   `aria-expanded`; `.scrolled` state → `position: fixed; background: #fff;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)`.
+box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)`.
 - Badges: `padding: .25em .4em; font-size: 75%; font-weight: 700;
-  border-radius: 0.25rem` — variants Primary / Info / Success / Warning /
+border-radius: 0.25rem` — variants Primary / Info / Success / Warning /
   Danger / Rose (pink).
 - Form controls: `.form-control` standard height, `#495057` text, white
   bg, `#dee2e6` border; focus border `#f44336`; the inputs band uses the
@@ -167,10 +167,11 @@ Kit." / "Structure Free UI Kit." / "Enjoy Free UI Kit made by Structure." —
 demo copy paraphrasable, demo brand never reused); "Completed with examples"
 intro (three pre-built pages copy — paraphrase); Cards — Cards Styles
 (plain), Cards with Image Round ("Special title treatment" + supporting text
-+ "Go somewhere"), Cards with image ("Card title" + supporting text), Cards
-Profile; footer "Copyright © <year> All rights reserved | This template is
-made with ♥ by Colorlib" — the recreation's footer links
-https://www.componentdock.com/ ("Component Dock") instead.
+
+- "Go somewhere"), Cards with image ("Card title" + supporting text), Cards
+  Profile; footer "Copyright © <year> All rights reserved | This template is
+  made with ♥ by Colorlib" — the recreation's footer links
+  https://www.componentdock.com/ ("Component Dock") instead.
 
 ## Requirements
 
@@ -181,6 +182,7 @@ A dark/transparent navbar over the hero: brand wordmark left, icon links
 white-on-photo until the page scrolls, then fixed white with a shadow.
 
 #### Scenario: Header renders as in the reference
+
 - **Given** the page loads on a desktop viewport
 - **When** the navbar renders over the hero
 - **Then** the bar overlays the hero photo with white brand text "Structkit."
@@ -193,11 +195,13 @@ white-on-photo until the page scrolls, then fixed white with a shadow.
   "Documentation" items
 
 #### Scenario: Mobile toggler
+
 - **Given** a viewport below the lg breakpoint
 - **When** the user taps the "Menu" toggler
 - **Then** the toggler exposes `aria-expanded` and reveals the nav links
 
 #### Scenario: Scrolled state
+
 - **When** the page scrolls past the hero top
 - **Then** the navbar becomes fixed with a white background and
   `0 0 10px rgba(0,0,0,0.1)` shadow
@@ -208,6 +212,7 @@ A full-height photographic hero under a red→black gradient wash with a
 centered wordmark, subtitle, designer credit, and a scroll-down button.
 
 #### Scenario: Hero renders as in the reference
+
 - **Given** the page loads on a desktop viewport
 - **When** the hero renders
 - **Then** the band is full viewport height (~800px desktop) with a
@@ -222,6 +227,7 @@ centered wordmark, subtitle, designer credit, and a scroll-down button.
   the source's person credit is NOT copied
 
 #### Scenario: Scroll-down button
+
 - **Then** a red circular button (danger bg, light down-arrow icon,
   aria-label) straddles the hero's bottom edge and scrolls to the elements
   band on activation
@@ -229,6 +235,7 @@ centered wordmark, subtitle, designer credit, and a scroll-down button.
 ### Feature: Basic Elements intro
 
 #### Scenario: Section heading band
+
 - **When** the user scrolls below the hero
 - **Then** a white band shows the heading "Basic Elements" before the
   component showcases, matching the reference order
@@ -240,6 +247,7 @@ sizes, the full color palette (solid + outline), link buttons, disabled
 states, dropdown buttons, and block-level buttons.
 
 #### Scenario: Pick your style
+
 - **Given** the Buttons section renders
 - **When** the user views the "Pick your style" row
 - **Then** it shows five red primary examples in order: "Default" (base
@@ -248,15 +256,18 @@ states, dropdown buttons, and block-level buttons.
   "Simple" (transparent link-style button in `#f44336`)
 
 #### Scenario: Pick your size
+
 - **Then** the "Pick your size" row shows Small / Regular / Large buttons
   (`btn-sm` / base / `btn-lg`)
 
 #### Scenario: Pick your color
+
 - **Then** the "Pick your color" rows show Primary, Success, Danger,
   Warning, Info, Light, Dark as solid buttons AND as outline variants, with
   the verified token colors (see Design tokens)
 
 #### Scenario: Links, disabled, dropdowns, block level
+
 - **Then** link-style buttons appear per color, disabled buttons render
   non-interactive (with `disabled` semantics)
 - **And** dropdown buttons open menus with "Action / Another action /
@@ -267,6 +278,7 @@ states, dropdown buttons, and block-level buttons.
 ### Feature: Inputs
 
 #### Scenario: Floating-label inputs
+
 - **When** the Inputs band renders
 - **Then** it shows "With Floating Label" form groups: a floating label
   above/over each text input, focus border `#f44336`, and helper text where
@@ -275,20 +287,24 @@ states, dropdown buttons, and block-level buttons.
 ### Feature: Selection controls (checkboxes, radios, toggles)
 
 #### Scenario: Checkbox states
+
 - **Then** the Checkboxes area shows Unchecked, Checked, and Disabled
   (checked + unchecked) variants, controlled by React state
 
 #### Scenario: Radio states
+
 - **Then** the Radio Buttons area shows off / on / disabled radios in one
   named group
 
 #### Scenario: Toggle switches
+
 - **Then** the Toggle Buttons area shows an on toggle (labeled ON) and an
   off toggle, flipping state on click
 
 ### Feature: Sliders
 
 #### Scenario: Range sliders
+
 - **When** the Sliders band renders
 - **Then** it shows styled range sliders (native `<input type="range">`)
   with red thumbs/tracks matching `#f44336`
@@ -296,12 +312,14 @@ states, dropdown buttons, and block-level buttons.
 ### Feature: Badges
 
 #### Scenario: Badge palette
+
 - **Then** the Badges row shows Primary, Info, Success, Warning, Danger,
   and Rose badges (75% font-size, bold, `0.25rem` radius)
 
 ### Feature: Progress bars
 
 #### Scenario: Progress values
+
 - **Then** the Progress bars show determinate bars at 40%, 60%, 70%
   ("Complete" labels) plus a success bar at 35%, a warning bar at 20%, and
   a danger bar at 30%
@@ -309,16 +327,19 @@ states, dropdown buttons, and block-level buttons.
 ### Feature: Paginations
 
 #### Scenario: Pagination list
+
 - **Then** a pagination renders « previous, numbered pages 1–5, next »,
   with the active page highlighted in `#f44336` (white text)
 
 ### Feature: Menus
 
 #### Scenario: Menu list
+
 - **Then** the Menu column shows "Menu" with items Menu / Discover
   (marked current) / Profile / Settings
 
 #### Scenario: Menu with icons
+
 - **Then** the Menu with Icons column shows an icon-prefixed list and a
   "Dropdown header" menu with Action / Another action / Something else here
   / Separated link / One more separated link
@@ -326,6 +347,7 @@ states, dropdown buttons, and block-level buttons.
 ### Feature: Navigations
 
 #### Scenario: Colored navbar variants
+
 - **Then** the Navigations area shows navbar patterns in Primary, Success,
   Info, Danger colors (matching the kit palette), each with Discover /
   Profile / Settings links; the ones with dropdowns open Action / Another
@@ -335,16 +357,19 @@ states, dropdown buttons, and block-level buttons.
 ### Feature: Navigation pills and tabs
 
 #### Scenario: Pills
+
 - **Then** the Navigation Pills row shows Home / Profile / Messages with the
   active pill filled `#f44336`
 
 #### Scenario: Tabs
+
 - **Then** the Navigation Tabs component switches panes on click (Home /
   Profile / Messages), each pane showing the sample paragraph copy
 
 ### Feature: Notifications
 
 #### Scenario: Alert variants
+
 - **Then** four alerts render in order: Info (blue), Success (green),
   Warning (yellow), Error (red), each solid-filled with dismissible
   semantics and the kit's quirky demo copy (paraphrase ok, same kind)
@@ -352,6 +377,7 @@ states, dropdown buttons, and block-level buttons.
 ### Feature: Typography
 
 #### Scenario: Type scale
+
 - **Then** headers 1 through 6 render in Montserrat (`#2c2c2c`, weight 400,
   line-height 1.4) with the sample headline treatment
 - **And** small-tag headers (small caps label + larger text) and paragraph
@@ -360,6 +386,7 @@ states, dropdown buttons, and block-level buttons.
 ### Feature: Images
 
 #### Scenario: Image shapes
+
 - **Then** three image examples render in order: Rounded Image, Circle
   Image, Circle Raised (circle + drop shadow), each with a caption line
   (placeholder person name — the source caption name is not copied)
@@ -367,15 +394,18 @@ states, dropdown buttons, and block-level buttons.
 ### Feature: Javascripts components
 
 #### Scenario: Modal
+
 - **When** the user clicks "Launch demo modal"
 - **Then** a dialog opens with a modal title, body paragraph, and Close /
   Save changes actions; it traps focus and closes on Close or overlay click
 
 #### Scenario: Datetime picker
+
 - **Then** the Datetimepickers band shows a "Datetime picker" control
   (native `<input type="datetime-local">` styled to match)
 
 #### Scenario: Popovers and tooltips
+
 - **Then** Popovers show on top / right / bottom / left triggers revealing
   popover cards, and Tooltip triggers show tooltips in the same four
   directions
@@ -383,6 +413,7 @@ states, dropdown buttons, and block-level buttons.
 ### Feature: Carousel
 
 #### Scenario: Slideshow band
+
 - **When** the carousel band renders
 - **Then** it shows three slides, each with a headline ("This is Carousel
   Bootstrap Enjoy Free UI Kit." / "Structure Free UI Kit." / "Enjoy Free UI
@@ -394,12 +425,22 @@ states, dropdown buttons, and block-level buttons.
 ### Feature: Completed with examples intro
 
 #### Scenario: Intro copy
+
 - **Then** a "Completed with examples" heading and intro paragraph
   (three pre-built pages copy — paraphrased) render before the cards
+
+#### Scenario: Card Login band
+
+- **Then** a photographic band (red gradient wash) carries the kit's login
+  card: a "Card Login" header with facebook/twitter/instagram icon buttons,
+  First Name / Email / Password fields with icon prefixes, and a white
+  "Get Started" submit action
+- **And** submitting the form is handled in React (no navigation)
 
 ### Feature: Cards
 
 #### Scenario: Card showcase
+
 - **Then** the Cards area renders in order: "Cards Styles" (plain card),
   "Cards with Image Round" (round image, "Special title treatment" title,
   supporting text, "Go somewhere" link/button), "Cards with image" ("Card
@@ -410,6 +451,7 @@ states, dropdown buttons, and block-level buttons.
 ### Feature: Footer
 
 #### Scenario: Footer renders with Component Dock attribution
+
 - **When** the footer band renders
 - **Then** it is a centered white band (`ftco-section-2` rhythm, ~6em) with
   "Copyright © <year> All rights reserved" and a "made with ♥ by" line
@@ -418,34 +460,34 @@ states, dropdown buttons, and block-level buttons.
 
 ## Verification checklist
 
-- [ ] `openspec/specs/template-structkit/` is the spec of record; no
+- [x] `openspec/specs/template-structkit/` is the spec of record; no
       implementation exists without it
-- [ ] New app folder `apps/structkit`, package
+- [x] New app folder `apps/structkit`, package
       `@free-react-templates/structkit`; name differs from the ColorLib
       source ("Structure" / "Structure Ui Kit") and collides with nothing
-- [ ] Section order matches the preview DOM 1:1 (navbar → hero → Basic
+- [x] Section order matches the preview DOM 1:1 (navbar → hero → Basic
       Elements → buttons → inputs → checkboxes/radios/toggles → sliders →
       badges → progress → pagination → menus → navigations → pills/tabs →
       notifications → typography → images → JS components → carousel →
       examples intro → cards → footer)
-- [ ] Tokens in `@theme`: primary `#f44336` (+ hover/press shades),
+- [x] Tokens in `@theme`: primary `#f44336` (+ hover/press shades),
       success `#64e291`, info `#03A9F4`, warning `#f1bc31`, danger `#e63333`,
       dark `#343a40`, light `#f8f9fa`, heading `#2c2c2c`, body `#777777`,
       hero overlay gradient (`#1f0000` end stop)
-- [ ] Montserrat via Google Fonts `<link>` (weights 300–700)
-- [ ] No ColorLib references anywhere in `apps/structkit` (code, comments,
+- [x] Montserrat via Google Fonts `<link>` (weights 300–700)
+- [x] No ColorLib references anywhere in `apps/structkit` (code, comments,
       READMEs) — provenance lives only in this spec, TEMPLATES.md, the PR
-- [ ] Demo brand "Structure." never reused; wordmark is "Structkit."
-- [ ] Footer links `https://www.componentdock.com/` ("Component Dock")
-- [ ] Placeholder images only (`https://picsum.photos/seed/structkit-N/…`);
+- [x] Demo brand "Structure." never reused; wordmark is "Structkit."
+- [x] Footer links `https://www.componentdock.com/` ("Component Dock")
+- [x] Placeholder images only (`https://picsum.photos/seed/structkit-N/…`);
       icons from `lucide-react`; no copied assets
-- [ ] Responsive recreation (documented deviation from the source's
+- [x] Responsive recreation (documented deviation from the source's
       `min-width: 992px` pin)
-- [ ] TDD: Vitest + Testing Library tests mirroring the scenarios;
+- [x] TDD: Vitest + Testing Library tests mirroring the scenarios;
       100% lines/functions/branches/statements coverage
-- [ ] `scripts/verify-app.sh structkit` passes (typecheck + lint + knip +
+- [x] `scripts/verify-app.sh structkit` passes (typecheck + lint + knip +
       fallow + coverage + build)
-- [ ] `public/CNAME` = `structkit.free.componentdock.com`;
+- [x] `public/CNAME` = `structkit.free.componentdock.com`;
       `"homepage"` = `https://structkit.free.componentdock.com`
-- [ ] `npm install` at repo root registers the workspace in
+- [x] `npm install` at repo root registers the workspace in
       `package-lock.json` before commit
