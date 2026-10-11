@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* brand palette: a pink→coral wash (coral #f77062 at the BOTTOM easing into
+     pink #fe5196 at the TOP, solid #fb5f7e fallback) carrying white type, a
+     white countdown bar with grey numbers over blue-grey labels, and one dark
+     pill action whose hover overlay is a #f65342 → #fb3282 wash */
+  --font-sans: 'Ubuntu', Arial, sans-serif;
+  --font-heading: 'Ubuntu', Arial, sans-serif;
+
+  --color-wash: #fb5f7e;
+  --color-grad-a: #f77062;
+  --color-grad-b: #fe5196;
+  --color-accent-a: #f65342;
+  --color-accent-b: #fb3282;
+  --color-accent-solid: #fb2e57;
+  --color-action: #222222;
+  --color-number: #555555;
+  --color-label: #7d8da6;
+  --color-sub: #555555;
+  --color-muted: #999999;
+  --color-divider: #e6e6e6;
+  --color-error: #c80000;
+
+  /* shapes: 25px pills (inputs, button), 15px countdown-bar bottom corners,
+     15px validation bubble */
+  --radius-pill: 25px;
+  --radius-bar: 15px;
+  --radius-bubble: 15px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    background-color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
