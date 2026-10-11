@@ -91,11 +91,11 @@ white / `bg-light` (`#f8f9fa`).
   "Open Sans" loads via Google Fonts `<link>` in `index.html`.
 - **Key theme rules (verified in style.css / preview DOM):**
   - Signature sky blue `#64c4ed` (56 occurrences): `.btn-primary{background:#64c4ed;
-    border:1px solid #64c4ed;color:#fff}` (hover darker `#36b3e8` /
+border:1px solid #64c4ed;color:#fff}` (hover darker `#36b3e8` /
     `#1faae5`, active `#0286c2`), `.badge-primary{background-color:#64c4ed;
-    color:#212529}` (note DARK text on primary), `.fill-checkbox{--color:#64c4ed}`
+color:#212529}` (note DARK text on primary), `.fill-checkbox{--color:#64c4ed}`
     (custom checkbox/radio/toggle accent), `.blockquote small{text-transform:
-    uppercase;color:#64c4ed}`, focused/valid input borders;
+uppercase;color:#64c4ed}`, focused/valid input borders;
     `.btn-outline-primary{color:#64c4ed;border-color:#64c4ed}`
     (outline borders 2px)
   - Palette: success `#64e291` (hover `#39da73`, dark text), danger
@@ -103,24 +103,24 @@ white / `bg-light` (`#f8f9fa`).
     dark text), info `#03A9F4` (white text), secondary `#696464`
     (white text), rose `#e83e8c` (badge-only 6th color)
   - Hero: `.hero-wrap{height:600px;background-size:cover;background-
-    position:top center}` (sunset photo `images/bg_1.jpg`, NO overlay);
+position:top center}` (sunset photo `images/bg_1.jpg`, NO overlay);
     `.hero-wrap .text h2{font-weight:700;color:#fff;font-size:50px;
-    text-transform:uppercase}`; byline = circular `images/person.jpg`
+text-transform:uppercase}`; byline = circular `images/person.jpg`
     avatar + "Designed by: <brand>"
   - Navbar: `.ftco-navbar-light{background:transparent!important;
-    position:absolute;top:30px;z-index:3}` floating over the hero
+position:absolute;top:30px;z-index:3}` floating over the hero
     (dark text/icons on the photo); on scroll it gains `background:#000`
     — recreation may keep it simple (absolute transparent + dark
     wordmark/icon treatment)
   - Font: `body{font-family:"Open Sans",Arial,sans-serif;font-size:16px;
-    line-height:1.8;font-weight:400;color:#777777}` (headings inherit
+line-height:1.8;font-weight:400;color:#777777}` (headings inherit
     the family; `h1{34px/500}`, `.heading-section{28px/500}` over
     `#212529`)
   - Buttons: base `.btn` 400 weight `#212529` text, default radius
     .25rem; `.btn-round{border-radius:40px}` (pill); `.btn-fab` +
     `.btn-icon{width:40px;height:40px;border-radius:50%}` circle
     icon buttons (white bg on the login card); `.btn-white{background:
-    #fff;border:1px solid #fff;color:#000}` (navbar Download, login
+#fff;border:1px solid #fff;color:#000}` (navbar Download, login
     Get Started); `.btn-outline-*` 2px borders in palette colors;
     `.btn-link` colored text links; hero-card buttons btn-info /
     btn-success / btn-warning
@@ -143,7 +143,7 @@ white / `bg-light` (`#f8f9fa`).
     — the three hero cards overlap the hero/band boundary (negative
     margin / pull-up)
   - Accordion: `.myaccordion .btn{width:100%;color:#000;font-size:20px;
-    text-transform:capitalize;letter-spacing:0}` (borderless, chevron
+text-transform:capitalize;letter-spacing:0}` (borderless, chevron
     toggles)
   - Carousel: `.slider-text{height:750px}` full-bleed photo slides with
     white uppercase-ish h2 + `btn-outline-white btn-round` pill CTA +
@@ -157,35 +157,36 @@ white / `bg-light` (`#f8f9fa`).
 
 ## Design tokens
 
-| Token | Value | Where |
-| --- | --- | --- |
-| brand/primary | `#64c4ed` | primary buttons/badges, focused inputs, fill-checkbox accents, active pagination, hero card 1 icon/button, blockquote small |
-| primary hover/active | `#36b3e8` / `#1faae5` / `#0286c2` | button hover/active states |
-| success | `#64e291` (hover `#39da73`) | success buttons/badges/progress, hero card 2 icon/button |
-| danger | `#eb7070` (`#e54343`) | danger buttons/badges/progress, error input border |
-| warning | `#fec771` (`#feb33e`) | warning buttons/badges/progress, hero card 3 icon/button |
-| info | `#03A9F4` | info buttons/badges/alert, hero card 1 button |
-| secondary | `#696464` | secondary buttons/links (warm gray) |
-| rose | `#e83e8c` | 6th "Rose" badge only |
-| heading text | `#212529` | h1–h6, `.heading-section` (28px/500) |
-| body text | `#777777` | body 16px/1.8/400, blurbs |
-| input text | `#495057` | form controls |
-| muted/disabled | `#aaa` | disabled fill-checkbox |
-| light band | `#f8f9fa` (bg-light) | alternating showcase bands, footer |
-| card shadow | `0 11px 30px -9px rgba(0,0,0,0.05)` (border: none) | feature cards, login card |
-| font family | `"Open Sans", Arial, sans-serif` (Google Fonts) | everywhere |
-| hero type | 50px / 700 / uppercase / `#fff` | hero h2 (`.hero-wrap .text h2`) |
-| button shape | default .25rem; `.btn-round` 40px pill; circle 40px icon buttons | all buttons |
-| button white | `#fff` bg, `#000` text | navbar Download, login Get Started |
-| badge | solid pill `p-2 px-3`; primary/success/warning dark text, info/danger/rose white | badges |
-| progress | 1rem tall, `.25rem` radius, `#e9ecef` track | progress bars |
-| fill-checkbox | accent `#64c4ed`; disabled `#aaa` | checkboxes, radios, toggles |
-| accordion btn | 20px capitalize, black, borderless + chevron | accordion |
-| section rhythm | `.ftco-section` `3em 0`; `.ftco-section-2` `6em 0` | layout |
-| hero photo | sunset over fields/lake (picsum seeded `sorbet-hero`) | hero |
-| login band photo | landscape backdrop (picsum seeded `sorbet-signup`) | login band |
-| carousel photos | 3 full-bleed slides (picsum seeded `sorbet-slide-1..3`) | carousel |
-| portrait | person photo (picsum seeded `sorbet-person`) | images band, hero byline avatar |
+| Token                | Value                                                                                                                                                | Where                                                                                                                       |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| brand/primary        | `#64c4ed`                                                                                                                                            | primary buttons/badges, focused inputs, fill-checkbox accents, active pagination, hero card 1 icon/button, blockquote small |
+| primary button label | `#212529` (dark, hover fill `#42b7e9`)                                                                                                               | `.btn.btn-primary` fills — the base `.btn` sets the dark label; white labels apply to info/danger/rose only                 |
+| primary hover/active | `#36b3e8` / `#1faae5` / `#0286c2`                                                                                                                    | button hover/active states                                                                                                  |
+| success              | `#64e291` (hover `#39da73`)                                                                                                                          | success buttons/badges/progress, hero card 2 icon/button                                                                    |
+| danger               | `#eb7070` (`#e54343`)                                                                                                                                | danger buttons/badges/progress, error input border                                                                          |
+| warning              | `#fec771` (`#feb33e`)                                                                                                                                | warning buttons/badges/progress, hero card 3 icon/button                                                                    |
+| info                 | `#03A9F4`                                                                                                                                            | info buttons/badges/alert, hero card 1 button                                                                               |
+| secondary            | `#696464`                                                                                                                                            | secondary buttons/links (warm gray)                                                                                         |
+| rose                 | `#e83e8c`                                                                                                                                            | 6th "Rose" badge only                                                                                                       |
+| heading text         | `#212529`                                                                                                                                            | h1–h6, `.heading-section` (28px/500)                                                                                        |
+| body text            | `#777777`                                                                                                                                            | body 16px/1.8/400, blurbs                                                                                                   |
+| input text           | `#495057`                                                                                                                                            | form controls                                                                                                               |
+| muted/disabled       | `#aaa`                                                                                                                                               | disabled fill-checkbox                                                                                                      |
+| light band           | `#f8f9fa` (bg-light)                                                                                                                                 | alternating showcase bands, footer                                                                                          |
+| card shadow          | `0 11px 30px -9px rgba(0,0,0,0.05)` (border: none)                                                                                                   | feature cards, login card                                                                                                   |
+| font family          | `"Open Sans", Arial, sans-serif` (Google Fonts)                                                                                                      | everywhere                                                                                                                  |
+| hero type            | 50px / 700 / uppercase / `#fff`                                                                                                                      | hero h2 (`.hero-wrap .text h2`)                                                                                             |
+| button shape         | default .25rem; `.btn-round` 40px pill; circle 40px icon buttons                                                                                     | all buttons                                                                                                                 |
+| button white         | `#fff` bg, `#000` text                                                                                                                               | navbar Download, login Get Started                                                                                          |
+| badge                | solid pill `p-2 px-3`; primary/success/warning dark text, info/danger/rose white                                                                     | badges                                                                                                                      |
+| progress             | 1rem tall in the base `.progress` rule, **5px in this demo** (the preview sets `style="height: 5px"` on every bar), `.25rem` radius, `#e9ecef` track | progress bars                                                                                                               |
+| fill-checkbox        | accent `#64c4ed`; disabled `#aaa`                                                                                                                    | checkboxes, radios, toggles                                                                                                 |
+| accordion btn        | 20px capitalize, black, borderless + chevron                                                                                                         | accordion                                                                                                                   |
+| section rhythm       | `.ftco-section` `3em 0`; `.ftco-section-2` `6em 0`                                                                                                   | layout                                                                                                                      |
+| hero photo           | sunset over fields/lake (picsum seeded `sorbet-hero`)                                                                                                | hero                                                                                                                        |
+| login band photo     | landscape backdrop (picsum seeded `sorbet-signup`)                                                                                                   | login band                                                                                                                  |
+| carousel photos      | 3 full-bleed slides (picsum seeded `sorbet-slide-1..3`)                                                                                              | carousel                                                                                                                    |
+| portrait             | person photo (picsum seeded `sorbet-person`)                                                                                                         | images band, hero byline avatar                                                                                             |
 
 ## Requirements
 
@@ -196,6 +197,7 @@ social icon links, a "Components" dropdown, and a white pill Download
 button.
 
 #### Scenario: Navbar renders as in the reference
+
 - **Given** the page loads
 - **When** the navbar renders
 - **Then** it floats absolutely over the hero photo (transparent
@@ -215,6 +217,7 @@ A 600px photographic sunset hero: bold uppercase white headline and a
 small avatar byline.
 
 #### Scenario: Hero renders as in the reference
+
 - **Given** the page loads
 - **When** the hero renders
 - **Then** the band is 600px tall with a cover/top-center photo (picsum
@@ -232,10 +235,11 @@ Three white cards overlapping the hero's bottom edge into the first
 `bg-light` band, one per palette accent.
 
 #### Scenario: Feature cards render as in the reference
+
 - **Given** the hero is followed by the first light band
 - **When** the cards render
 - **Then** three equal white cards (borderless, `0 11px 30px -9px
-  rgba(0,0,0,0.05)` shadow) straddle the hero/band boundary
+rgba(0,0,0,0.05)` shadow) straddle the hero/band boundary
 - **And** each card has a colored circular icon badge on top (left
   aligned): info-blue, success-green, warning-amber (lucide icons,
   e.g. Target/Settings/Heart)
@@ -249,6 +253,7 @@ Three white cards overlapping the hero's bottom edge into the first
 The showcase opens with a plain section title.
 
 #### Scenario: Heading renders
+
 - **Given** the feature cards band ends
 - **When** the next section renders
 - **Then** it shows the h1 "Basic Elements" (34px/500 `#212529`) with
@@ -259,6 +264,7 @@ The showcase opens with a plain section title.
 Five button styles in a row plus colored text links.
 
 #### Scenario: Button styles render as in the reference
+
 - **Given** the buttons band renders
 - **When** the demo row is visible
 - **Then** the row shows "Default Button" (outline primary, 2px
@@ -276,6 +282,7 @@ Five button styles in a row plus colored text links.
 Four labeled input states: default, valid, invalid, and icon-adorned.
 
 #### Scenario: Input states render as in the reference
+
 - **Given** the inputs band renders
 - **When** the field row is visible
 - **Then** it renders four text inputs with placeholders "Default",
@@ -292,6 +299,7 @@ Custom fill-style checkboxes and radios in checked, unchecked, and
 disabled states.
 
 #### Scenario: Checkbox variants render as in the reference
+
 - **Given** the checkboxes band renders
 - **When** the checkbox group renders
 - **Then** four checkboxes labeled "Unchecked", "Checked", "Disabled
@@ -299,6 +307,7 @@ disabled states.
   (`#aaa` when disabled), and clicking toggles the enabled ones
 
 #### Scenario: Radio variants render as in the reference
+
 - **Given** the radios group renders
 - **When** the radio rows render
 - **Then** four radios labeled "Radio is off", "Radio is on",
@@ -311,6 +320,7 @@ disabled states.
 Switch-style toggles in on and off states.
 
 #### Scenario: Toggles render as in the reference
+
 - **Given** the toggles group renders
 - **When** the switches render
 - **Then** a "Toggle is on" switch renders ON (accent `#64c4ed`) with
@@ -323,6 +333,7 @@ Switch-style toggles in on and off states.
 Range sliders beside the six pill badges.
 
 #### Scenario: Sliders and badges render as in the reference
+
 - **Given** the sliders/badges band renders
 - **When** the content renders
 - **Then** a "Sliders" heading with two draggable range sliders
@@ -337,6 +348,7 @@ Range sliders beside the six pill badges.
 Six labeled progress bars and two pagination rows.
 
 #### Scenario: Progress bars render as in the reference
+
 - **Given** the progress/pagination band renders
 - **When** the progress group renders
 - **Then** three primary bars labeled "40% Complete", "60% Complete",
@@ -346,6 +358,7 @@ Six labeled progress bars and two pagination rows.
 - **And** bars are 1rem tall with `#e9ecef` tracks and .25rem radius
 
 #### Scenario: Paginations render as in the reference
+
 - **Given** the pagination group renders
 - **When** the two rows render
 - **Then** row one is `« 1 2 3 4 5 »` and row two is "Previous 1 2 3 4
@@ -357,6 +370,7 @@ Six labeled progress bars and two pagination rows.
 Four navbar demos in brand colors, one on a photo backdrop.
 
 #### Scenario: Navbar variants render as in the reference
+
 - **Given** the navigations band renders
 - **When** the demo navbars render
 - **Then** four stacked navbars render labeled "Primary Color", "Info
@@ -375,6 +389,7 @@ Four navbar demos in brand colors, one on a photo backdrop.
 Tab-style pills with switching content panels.
 
 #### Scenario: Pills render as in the reference
+
 - **Given** the pills band renders (`bg-light`, `.ftco-section-2`)
 - **When** the tabs render
 - **Then** pills "Home" (active), "Profile", "Messages" render and
@@ -387,6 +402,7 @@ Tab-style pills with switching content panels.
 Four dismissible alerts in the contextual palette.
 
 #### Scenario: Alerts render as in the reference
+
 - **Given** the notifications band renders
 - **When** the alerts render
 - **Then** four alerts render labeled "Info alert:", "Success Alert:",
@@ -399,6 +415,7 @@ Four dismissible alerts in the contextual palette.
 The full type scale with sample copy.
 
 #### Scenario: Type scale renders as in the reference
+
 - **Given** the typography band renders
 - **When** the scale renders
 - **Then** headings 1–6 render "Header <n> Thinking in textures"
@@ -411,6 +428,7 @@ The full type scale with sample copy.
 Three photo treatments with a caption, over a light band.
 
 #### Scenario: Image variants render as in the reference
+
 - **Given** the images band renders (`bg-light`)
 - **When** the image row renders
 - **Then** three variants render labeled "Rounded Image", "Circle
@@ -423,6 +441,7 @@ Interactive demos: modal, datetime picker, popovers, tooltips,
 accordion.
 
 #### Scenario: JS component demos render as in the reference
+
 - **Given** the JS components band renders (`bg-light`,
   `.ftco-section-2`)
 - **When** the demos render
@@ -446,6 +465,7 @@ accordion.
 Three full-bleed photo slides with outline-white pill CTAs.
 
 #### Scenario: Carousel renders as in the reference
+
 - **Given** the carousel band renders (`ftco-no-pt ftco-no-pb`)
 - **When** the slider renders
 - **Then** three photo slides (picsum `sorbet-slide-1..3`) show white
@@ -460,6 +480,7 @@ Three full-bleed photo slides with outline-white pill CTAs.
 A centered copy band introducing pre-built example pages.
 
 #### Scenario: Examples copy renders as in the reference
+
 - **Given** the carousel ends
 - **When** the examples band renders (`.ftco-section-2`)
 - **Then** the heading "Completed with examples" renders above a
@@ -471,6 +492,7 @@ A centered copy band introducing pre-built example pages.
 A photo-backed signup band with a floating login card.
 
 #### Scenario: Login card renders as in the reference
+
 - **Given** the examples band ends
 - **When** the signup band renders (`.ftco-section-2 section-signup`,
   photo backdrop picsum `sorbet-signup`)
@@ -488,6 +510,7 @@ A photo-backed signup band with a floating login card.
 A plain band with a large primary download button.
 
 #### Scenario: CTA renders as in the reference
+
 - **Given** the login band ends
 - **When** the CTA band renders (`.ftco-section-2`, plain background —
   no photo)
@@ -499,6 +522,7 @@ A plain band with a large primary download button.
 A light footer with the attribution line.
 
 #### Scenario: Footer renders as in the reference
+
 - **Given** the CTA band ends
 - **When** the footer renders (`bg-light`, `.ftco-section-2`)
 - **Then** it shows "Copyright © <year> All rights reserved" and an
@@ -512,6 +536,7 @@ The recreation exposes the reference palette and Open Sans as Tailwind
 4 `@theme` tokens.
 
 #### Scenario: Theme tokens match the reference palette
+
 - **Given** the app's `src/index.css` theme
 - **When** the tokens are declared
 - **Then** the palette includes: primary `#64c4ed`, success `#64e291`,
@@ -523,7 +548,7 @@ The recreation exposes the reference palette and Open Sans as Tailwind
   weight 500 `#212529` (hero h2 50px/700 uppercase white)
 - **And** buttons use default .25rem corners, pills radius 40px,
   circles 40px; cards are borderless with `0 11px 30px -9px
-  rgba(0,0,0,0.05)`; badges are solid pills `p-2 px-3`
+rgba(0,0,0,0.05)`; badges are solid pills `p-2 px-3`
 - **And** section rhythm is `3em 0` (wide bands `6em 0`), alternating
   white / `#f8f9fa`; hero is 600px cover/top-center with no overlay
 
@@ -566,8 +591,10 @@ The recreation exposes the reference palette and Open Sans as Tailwind
 - [ ] Sliders: two native range inputs (no nouislider copy)
 - [ ] Badges: six solid pills — Primary/Info/Success/Warning/Danger/
       Rose (`#e83e8c`), `p-2 px-3`
-- [ ] Progress: 40/60/70% primary + 35% success + 20% warning + 30%
-      danger, 1rem tall, `#e9ecef` track, labeled
+- [ ] Progress: 40/60/70% bars (primary / info / warning per the
+      preview's bar classes) + a stacked track carrying 35% success,
+      20% warning and 30% danger; 5px tall in the demo (the base
+      `.progress` rule is 1rem), `#e9ecef` track, `sr-only` labels
 - [ ] Pagination: two rows (`« 1 2 3 4 5 »` and Previous/1…7/Next),
       active filled `#64c4ed`, clickable React state
 - [ ] Navigations: four labeled navbars (Primary/Info/Danger/

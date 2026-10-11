@@ -1,0 +1,64 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Open Sans', Arial, sans-serif;
+
+  /* brand palette: signature sky blue (#64c4ed) with its hover/active ramp */
+  --color-primary-400: #8ed3f2;
+  --color-primary-500: #64c4ed;
+  --color-primary-600: #36b3e8;
+  --color-primary-700: #0286c2;
+
+  /* kit spectrum: contextual solid fills used by buttons, badges and bands */
+  --color-success: #64e291;
+  --color-success-dark: #39da73;
+  --color-danger: #eb7070;
+  --color-danger-dark: #e54343;
+  --color-warning: #fec771;
+  --color-warning-dark: #feb33e;
+  --color-info: #03a9f4;
+  --color-secondary: #696464;
+  --color-rose: #e83e8c;
+
+  /* surfaces and type */
+  --color-light: #f8f9fa;
+  --color-heading: #212529;
+  --color-body: #777777;
+  --color-input: #495057;
+  --color-track: #e9ecef;
+  --color-disabled: #aaaaaa;
+
+  /* soft, borderless card elevation + floating surfaces */
+  --shadow-card: 0 11px 30px -9px rgba(0, 0, 0, 0.05);
+  --shadow-menu: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+  --shadow-popover: 0 5px 30px -5px rgba(0, 0, 0, 0.4);
+  --shadow-tooltip: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--color-body);
+    background-color: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--color-heading);
+  }
+}
