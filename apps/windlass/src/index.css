@@ -1,0 +1,92 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Windlass palette — design tokens for a white rounded card floating on a soft grey page.
+     The page is #fafafa (it is what makes the card read as a card), the card itself is white
+     and turns black below 992px, and the accent is a plain pink #fc7fb2 applied to TEXT only:
+     the label of the row the page is on and the label of the hovered row. The same pink fills
+     a platform circle on hover, with a white glyph inside it. Shape language: the only two
+     rounds on the page are the card's 5px and the circles' 50%. */
+  --color-page: #fafafa;
+  --color-ink: #808080;
+  --color-accent: #fc7fb2;
+  --color-card: #ffffff;
+  --color-card-mobile: #000000;
+  --color-row: #333333;
+  --color-ring: #e6e6e6;
+  --color-glyph: #4d4d4d;
+  --color-toggler: rgba(255, 255, 255, 0.5);
+  --color-panel-row: rgba(255, 255, 255, 0.7);
+
+  --font-sans: 'Poppins', Arial, sans-serif;
+
+  /* The page hands over at 576 / 768 / 992 / 1200 — the four container tiers, the width the
+     heading column halves at, the width the card turns black at, and the width the container
+     takes its widest cap. Re-pointing the scale keeps every utility in step. */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  /* The only rounding on the page: the card's 5px, and 50% on the circles. */
+  --radius-card: 5px;
+
+  /* The card's one soft shadow — the page's only shadow. */
+  --shadow-card: 0 5px 20px -17px rgba(0, 0, 0, 0.34);
+
+  --ease-collapse: ease;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-page);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 0;
+  }
+  /* A row's label turns pink on hover, and the row the page is on wears that same pink at
+     rest — no underline is drawn at any state, so none is carried here either. */
+  a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: var(--color-accent);
+  }
+  h2 {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  button {
+    border-radius: 0;
+  }
+  /* Inline links wear the same pink as the row accent, exactly as the design's own link colour
+     does. */
+  ::selection {
+    background: rgba(252, 127, 178, 0.35);
+  }
+  /* Both transitions on this page are decorative — the panel travelling to its content height
+     and the row and circle colour changes — so under reduced motion they land immediately and
+     nothing is ever gated behind them. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
