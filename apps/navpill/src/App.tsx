@@ -1,0 +1,42 @@
+import { useEffect } from 'react'
+import { Footer } from './components/Footer'
+import { Header } from './components/Header'
+import { Hero } from './components/Hero'
+import { OffCanvas } from './components/OffCanvas'
+import { PAGE_TITLE } from './lib/site'
+import { useOffCanvas } from './lib/use-off-canvas'
+
+/**
+ * Navpill — three regions in the reference's order: the off-canvas panel, the
+ * transparent header floating over the hero band, then the frame-filling
+ * photograph itself. The document is forced to 200vh so the header's scroll-away
+ * is visible, and a single closing strip credits Component Dock.
+ */
+export function App() {
+  const { isOpen, close, toggle, panelRef, toggleRef } = useOffCanvas()
+
+  useEffect(() => {
+    document.title = PAGE_TITLE
+  }, [])
+
+  return (
+    <div id="top" className="flex min-h-[200vh] flex-col bg-white font-sans">
+      <a
+        href="#hero"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-[8px] focus:left-[8px] focus:z-[2100] focus:bg-accent focus:px-4 focus:py-2 focus:font-semibold focus:text-white"
+      >
+        Skip to content
+      </a>
+
+      <OffCanvas isOpen={isOpen} onClose={close} panelRef={panelRef} />
+
+      <Header isOpen={isOpen} onToggle={toggle} toggleRef={toggleRef} />
+
+      <main id="hero">
+        <Hero />
+      </main>
+
+      <Footer />
+    </div>
+  )
+}
