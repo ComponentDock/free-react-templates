@@ -1,0 +1,126 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Gridhost palette — design tokens for a midnight-navy hosting brand with a
+     four-pink action system. The hero band is midnight navy #020230, the
+     scrolled header bar is #010E21, every heading sits in navy #28395a and the
+     services link (with its round arrow medallion) is the deeper navy #10275c.
+     Four pinks live side by side and stay distinct: brand pink #eb566c (every
+     pill action, section eyebrow and its rule, the .01/.02/.03 numerals, the
+     contact cards, the next testimonial arrow, the back-to-top circle), plan
+     pink #ff4f5b (the plan card surface and the active tab), hover pink
+     #f32a48 (the sliding fill under every pill) and medallion pink #ff6b81
+     (the circle behind each contact glyph), with peach #fce0d8 behind the plan
+     rocket and on the idle tab. Surfaces are #ffffff (page, cards, search
+     input, dropdown), #f8f5f2 (the warm layer over the services band's top
+     half) and #fff9f9 (the blog captions). Muted tones are #8ba4b1 (footer
+     copy, links and social rings), #57667e (blog dates, testimonial roles),
+     #636376 (TLD prices), #777777 (search value) and #616875 (its placeholder).
+     Rules are #032a57 (the TLD strip box and its column dividers), #e5e5e5
+     (social rings) and #1c2e4c (the footer bar). The hero's own dot rail keeps
+     its measured cyan pair — idle bars #162e78, the active bar #03a7d2 — and
+     the previous testimonial arrow stays pale #ffe1e3. The shape language is
+     pills: 30px on every action and on the tab pair's outer corners, 50px on
+     the search-bar ends, 10px on the TLD strip and the contact cards, 7px/6px
+     on the blog pieces and circles for both medallions, the social rings and
+     back-to-top. */
+  --color-brand: #eb566c;
+  --color-brand-hover: #f32a48;
+  --color-pricing: #ff4f5b;
+  --color-medallion: #ff6b81;
+  --color-peach: #fce0d8;
+  --color-navy: #020230;
+  --color-navy-heading: #28395a;
+  --color-navy-link: #10275c;
+  --color-navy-quote: #10285d;
+  --color-heading-ink: #0b1c39;
+  --color-header-sticky: #010e21;
+  --color-surface: #ffffff;
+  --color-surface-warm: #f8f5f2;
+  --color-surface-pink: #fff9f9;
+  --color-footer-text: #8ba4b1;
+  --color-muted: #57667e;
+  --color-muted-alt: #636376;
+  --color-input: #777777;
+  --color-placeholder: #616875;
+  --color-rule-strip: #032a57;
+  --color-rule-footer: #1c2e4c;
+  --color-ring: #e5e5e5;
+  --color-support-heading: #f2f2f2;
+  --color-dot-idle: #162e78;
+  --color-dot-active: #03a7d2;
+  --color-arrow-prev: #ffe1e3;
+  --color-hero-rail: #45455f;
+  --color-hero-rail-hover: #f27420;
+  --color-tld-1: #ff7474;
+  --color-tld-2: #ffdd74;
+  --color-tld-3: #74ff9f;
+  --color-tld-4: #748bff;
+  --color-tld-5: #f074ff;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variant resolves
+     to the brand pink accent. */
+  --color-primary-50: #fdeef1;
+  --color-primary-100: #fbd8de;
+  --color-primary-200: #f7b0bc;
+  --color-primary-300: #f28b9b;
+  --color-primary-400: #ee7185;
+  --color-primary-500: #eb566c;
+  --color-primary-600: #eb566c;
+  --color-primary-700: #d13d53;
+  --color-primary-800: #ab2f43;
+  --color-primary-900: #7d2131;
+
+  --font-heading: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+
+  --radius-pill: 30px;
+  --radius-bar: 50px;
+  --radius-tile: 10px;
+  --radius-notch: 7px;
+  --radius-photo: 6px;
+
+  --shadow-search: 0 6px 29px 0 rgba(36, 43, 94, 0.08);
+  --shadow-dropdown: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+  --shadow-header: 0 10px 15px rgba(25, 25, 25, 0.1);
+  --shadow-backtop: 0 0 10px 3px rgba(108, 98, 98, 0.2);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-heading-ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    color: var(--color-navy-heading);
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  ::selection {
+    background: rgba(235, 86, 108, 0.6);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
