@@ -18,7 +18,7 @@ display face is **Rochester** (script) over **Source Sans Pro** body.
 | `css/style.css` | **HTTP 200**, 67,294 B, sha256 `892b1f4a01d30757357ea8ccc9ff093ff3a454eedc98ed2ee2d7c5f4218798e3` |
 | `js/main.js` (+ jQuery, bootstrap, owl.carousel, stellar, waypoints, magnific-popup, animateNumber, easing) | HTTP 200 |
 | TEMPLATES.md screenshot `twohearts-free-template.jpg` | HTTP 200, **AVIF** (87,689 B, 1200 × 946) → converted to PNG and inspected |
-| Google Fonts `Rochester`, `Source+Sans+Pro` | HTTP 200 (probe with a real browser UA) |
+| Google Fonts `Rochester`, `Source+Sans+Pro` | HTTP 200 (probe with a real browser UA) — the shipped link's axes are `Rochester` + `Source+Sans+Pro:wght@300;400;600;700;900` (the `900` faces the three `font-weight:900` eyebrow rules) |
 
 ## Key CSS tokens (from `css/style.css`)
 

@@ -41,9 +41,15 @@ Design notes: `docs/templates/affiance/design-notes.md`.
 - [ ] `vite.config.ts` keeps `injectUiSource()` (copy the pattern from an
       existing app — Tailwind v4.3 drops relative `@source` paths)
 - [ ] Google Fonts `<link>` in `index.html`:
-      `https://fonts.googleapis.com/css2?family=Rochester&family=Source+Sans+Pro:wght@300;400;600;700&display=swap`
+      `https://fonts.googleapis.com/css2?family=Rochester&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap`
       (Rochester = script display/headings/names/countdown numbers; Source Sans
-      Pro = body/UI/nav). Both verified on Google Fonts (HTTP 200). Icons:
+      Pro = body/UI/nav). The **`900`** axis is required — the source ships a
+      real **Source Sans Pro 900** face in its injected `@font-face` set and
+      three live rules ask for it (`.herowrap .text .subheading`, `.date`,
+      `.heading-section .subheading` — the `#d291bc` uppercase eyebrow pills), so
+      a link without `900` renders them lighter than the reference. Both
+      families verified on Google Fonts (HTTP 200), incl.
+      `Source+Sans+Pro:wght@300;400;600;700;900`. Icons:
       `lucide-react` (`Menu`, `X`, `ChevronDown`, `MapPin`, `Phone`,
       `Mail`, `ArrowUp`, `Church`, `Cake`) plus two owner components —
       `RingsBadge` (hero, inline SVG) and `DovesMark` (the theme's two-doves

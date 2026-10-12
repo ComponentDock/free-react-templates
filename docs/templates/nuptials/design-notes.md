@@ -69,7 +69,10 @@ Vendor CSS referenced by the preview (`bootstrap.css`, `font-awesome.min.css`,
 - Accent swatches present in the sheet (secondary palette): #4cd3e3, #f4e700,
   #f44a40, #38a4ff, #73fbaf, #a367e7.
 - Font: **"Poppins", sans-serif** (Google Fonts) for headings and body;
-  hero H1 72px/700 white; `.About-area h1` weight 100 with a 600-weight span.
+  hero H1 72px/700 white; `.About-area h1` weight 100 with a 600-weight span
+  (and the reservation fields at 200), so the `<link>` must request the whole
+  `100;200;300;400;500;600;700` set the reference host injects — a `400;500;700`
+  link would render the thin treatments at 400.
 - Buttons: pill (`border-radius:25px`), white text, gradient fill, line-height
   42px, padding 0 30px.
 - Radii in use: 25px (buttons), 20px (cards), 8.5px/8px/3px (misc), 0 (form fields).

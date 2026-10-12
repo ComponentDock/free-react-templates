@@ -67,6 +67,13 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
 - **Fonts:** the source inlines `@font-face` rules for **Amiri** (400/700 +
   italic) and **Quicksand** (400/700) — not a real `fonts.googleapis.com`
   `<link>`. Our recreation loads both from Google Fonts (see tasks).
+  ⚠️ **Quicksand's Google Fonts axis stops at 700** (`Quicksand:wght@900` →
+  HTTP 400, and one bad axis 400s the *whole* `css2` request, which would kill
+  Amiri too), and the source declares only 400/700 — so the wordmark's
+  `font-weight: 900` is **browser-synthesised faux-bold in the source as well**.
+  Keep `font-weight: 900` (Tailwind `font-black`) on the wordmark with the
+  400;500;700 link loaded and do **not** add a 900 axis; the recreation then
+  synthesises exactly what the reference does.
 - **Screenshot:** TEMPLATES.md `weddingofficiant-free-template.jpg` (HTTP 200,
   served **AVIF** despite the `.jpg` name, 118,200 B, 1200×946 → converted to
   PNG and inspected).
@@ -96,7 +103,9 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
     `js-sticky-header`; `.sticky-wrapper.is-sticky .site-navbar` sets
     `background: #fff`). Left (`col-6 col-xl-3`): the wordmark — **Quicksand,
     `1.2rem`, weight 900, `text-transform: uppercase`, `#000`**, rendered in the
-    source as "Wedding Officiant." — **renamed "Celebrant"** for us. Right
+    source as "Wedding Officiant." — **renamed "Celebrant"** for us. Quicksand
+    ships no 900 (its Google Fonts axis is 300–700), so this weight is
+    **synthesised**; keep the `900` in the class and the `400;500;700` link. Right
     (`col-12 col-md-9`, desktop only, `text-right`): six nav links — **Home ·
     About · Services · FAQ · Blog · Contact** — each `padding: 5px 10px` in
     **`rgba(0,0,0,0.5)`**, with the **active** link in `#000` and a **2 px mint
@@ -216,7 +225,7 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
 | Radii | **30 px** pills (all `.btn`) · 50% circles (icon discs, carousel arrows/dots) · 0 (accordion headers) | `.btn`, `.icon-wrap:before` |
 | Button metrics | `padding: 10px 30px`, `font-size: 16px` | `.btn` |
 | Section rhythm | `padding: 100px 0` (`.site-section`); hero `height: 100vh` / `min-height: 450px`; slider image **500 px** tall; hero wrapper `padding-top: 120px` | `style.css` |
-| Fonts | **"Amiri", serif** (h1, h2, h3, h5 — incl. the italic section titles) · **"Quicksand", sans-serif** (body, nav, logo `1.2rem`/900 uppercase, footer, buttons) | verified on Google Fonts |
+| Fonts | **"Amiri", serif** (h1, h2, h3, h5 — incl. the italic section titles) · **"Quicksand", sans-serif** (body, nav, logo `1.2rem`/900 uppercase, footer, buttons) | verified on Google Fonts (HTTP 200); the Quicksand axis is `400;500;700` — the family has **no 900**, so the wordmark's 900 is synthesised (`wght@900` → HTTP 400, and a bad axis 400s the whole request) |
 
 ## Requirements
 
@@ -252,7 +261,8 @@ nav links, one active link with a mint underline, and a pill CTA.
 - **THEN** the header SHALL be a **white bar** that becomes sticky (`background:
   #fff`) once the user scrolls past it
 - **AND** it SHALL show the **Celebrant** wordmark at the left in **Quicksand,
-  `1.2rem`, weight 900, uppercase, `#000`**
+  `1.2rem`, weight 900, uppercase, `#000`** (a synthesised 900 — Quicksand's
+  Google Fonts axis ends at 700, so the link carries `400;500;700`)
 - **AND** it SHALL show six links — Home · About · Services · FAQ · Blog ·
   Contact — in `rgba(0,0,0,0.5)` with a `#000` hover
 - **AND** the active link SHALL be `#000` with a **2 px `#cae8d5` underline**

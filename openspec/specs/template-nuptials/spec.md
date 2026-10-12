@@ -96,7 +96,9 @@ layout, colors, typography, and content types (no ColorLib assets copied).
   lucide icons and Date/Time/Address meta; reservation form with select,
   number input, and text inputs (client-side only, no submit backend); all
   images picsum-seeded (`picsum.photos/seed/nuptials-N/w/h`); Google Fonts
-  Poppins via `<link>`.
+  Poppins via `<link>` with the axes `100;200;300;400;500;600;700` (the same set
+  the reference host injects — the `100`/`200` weights drive the thin About
+  heading and the reservation fields).
 
 Nuptials lives in `apps/nuptials` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, Badge, cn).
@@ -250,5 +252,6 @@ and a document title.
 - [ ] Brand color #c931ff is in `@theme` and used via Tailwind classes.
 - [ ] Hero headline, date strip, gallery, countdown, info cards, reservation
       form, and footer match the reference content types.
-- [ ] No ColorLib assets copied (all images picsum-seeded, Poppins via link).
+- [ ] No ColorLib assets copied (all images picsum-seeded, Poppins via link
+      with axes `100;200;300;400;500;600;700`).
 - [ ] TEMPLATES.md line 3105 (**Wedding**) marked `[x]` after merge with surge URL (do NOT touch lines 235 / 3109 — those are `wedlock`, already shipped).

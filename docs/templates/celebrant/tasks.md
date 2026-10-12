@@ -43,7 +43,13 @@ espousal · matrimony · **celebrant**). Never reuse the source slug
 - [ ] Google Fonts `<link>` in `index.html`:
       `https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;500;700&display=swap`
       (Amiri = all headings incl. the italic section titles; Quicksand = body,
-      nav, logo, footer, buttons). Both verified on Google Fonts (HTTP 200)
+      nav, logo, footer, buttons). **Keep the Quicksand axes at `400;500;700`** —
+      Quicksand has no 900 on Google Fonts (`wght@900` returns **HTTP 400**, and
+      one invalid axis 400s the entire `css2` request, dropping Amiri as well),
+      so the wordmark's `font-weight: 900` must stay a browser-synthesised
+      faux-bold, exactly as in the source (which declares only Quicksand
+      400/700). The link's plain family probe and this exact URL are both
+      verified on Google Fonts (HTTP 200)
 - [ ] Icons: `lucide-react` (`Menu`, `X`, `ChevronDown`, `ChevronLeft`,
       `ChevronRight`, `Gem`, `Church`, `Home`, `Mail`, `Wine`, `CalendarCheck`,
       `Heart`) plus **inline-SVG brand marks** for `Facebook`, `Twitter`,

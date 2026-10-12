@@ -54,6 +54,11 @@ a mint "Send" pill.
 - The source's font stack is **inlined `@font-face`** (Amiri 400/700 + italic,
   Quicksand 400/700) — there is no `fonts.googleapis.com` `<link>` in the HTML.
   We load both families from Google Fonts instead of copying font files.
+  Quicksand's Google Fonts axis is **300–700**: `Quicksand:wght@900` returns
+  HTTP 400 and a single invalid axis 400s the whole `css2` request (Amiri
+  included), so the link stays `Quicksand:wght@400;500;700` and the wordmark's
+  `font-weight:900` is synthesised — in the live preview too, since the source
+  has no Quicksand 900 face either.
 - Behaviour references (not reimplemented, only noted): `js/jquery.sticky.js`
   (`js-sticky-header`), `js/owl.carousel.min.js`, `js/aos.js`,
   `js/jquery.countdown.min.js` (loaded but unused on this page),
@@ -107,9 +112,11 @@ anchored on-page.
   with a white background (plus a hairline/shadow only if it reads as too flat,
   since the source adds none).
 - Wordmark: `.site-logo` → **Quicksand, `font-size: 1.2rem`, `font-weight: 900`,
-  `text-transform: uppercase`, colour `#000`** (via `.site-logo a`). Source text
-  "Wedding Officiant." → ours **"Celebrant"** (keep the trailing period styling
-  only if it reads well; the source's period is part of its wordmark).
+  `text-transform: uppercase`, colour `#000`** (via `.site-logo a`); 900 is a
+  **synthesised** faux-bold (Quicksand has no 900 — see the fonts note above),
+  so ship it as `font-black`/`font-weight:900` with the 400;500;700 link. Source
+  text "Wedding Officiant." → ours **"Celebrant"** (keep the trailing period
+  styling only if it reads well; the source's period is part of its wordmark).
 - Nav links: `.site-menu > li > a` — `padding: 5px 10px`,
   `color: rgba(0, 0, 0, 0.5)`, no underline, hover `#000`. The **active** item
   (`.active > a`) is `#000` and carries a `:before` **2 px bar, `left: 10px`,
@@ -271,7 +278,7 @@ anchored on-page.
 | Carousel inactive dot | `rgba(0,0,0,0.3)` |
 | Hover surfaces | `#f4f5f9`, `#f8f9fa`, `#e6e6e6` (owl dots in the theme) |
 | Radii | 30 px pills · 50 % circles · 0 accordion headers |
-| Fonts | Amiri (headings, italic section titles) · Quicksand (body/nav/logo/footer) |
+| Fonts | Amiri (headings, italic section titles) · Quicksand (body/nav/logo/footer; **axis 400–700 only** — the logo's 900 is synthesised) |
 
 ## Placeholder assets (nothing copied)
 

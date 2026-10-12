@@ -166,7 +166,7 @@ React 19 + Tailwind CSS 4 + TypeScript.
 | Place glyphs | **`flaticon-church`** `\uf103` (Ceremony) · **`flaticon-cake`** `\uf104` (Reception) | 50 px `#d291bc` inside the 100 px white When-&-Where discs |
 | Radii | **4 px** countdown bar + buttons (`.25rem`) · **2 px** hero tagline pill · **50 %** circles | shape language |
 | Shadow | `0 10px 32px -19px rgba(0,0,0,.15)` | countdown bar |
-| Fonts | **"Rochester", cursive** (all headings, couple names, names, countdown numbers) · **"Source Sans Pro", sans-serif** (body, nav, UI) | both verified on Google Fonts (HTTP 200) |
+| Fonts | **"Rochester", cursive** (all headings, couple names, names, countdown numbers) · **"Source Sans Pro", sans-serif** (body, nav, UI) | link axes `Rochester` + `Source+Sans+Pro:wght@300;400;600;700;900`; the **900** is used by the three `#d291bc` eyebrow pills (`.herowrap .text .subheading`, `.date`, `.heading-section .subheading`) and the source serves a real 900 face — never drop it from the link; both verified on Google Fonts (HTTP 200) |
 | Section rhythm | `.ftco-section { padding: 7em 0 }` (~112 px) desktop | paddings |
 
 ## Requirements
@@ -480,7 +480,8 @@ contentinfo landmarks.
       headings, white links, copyright with a Component Dock link and the
       current year
 - [ ] Tokens: brand `#d291bc` and cell `#cb7fb1` in `@theme`; Rochester +
-      Source Sans Pro loaded from Google Fonts; radii 4 px / 2 px / 50 %
+      Source Sans Pro loaded from Google Fonts (the Source Sans Pro axis
+      **includes `900`** — the eyebrow pills); radii 4 px / 2 px / 50 %
 - [ ] Iconography: the theme's **two-doves motif** (bride/groom blocks, timeline
       panels, gallery discs, greetings discs) and the **church / wedding-cake**
       When-&-Where discs are reproduced at the sizes/colours of the census table

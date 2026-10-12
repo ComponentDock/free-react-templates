@@ -42,7 +42,8 @@
 - **Design tokens:** brand purple **#c931ff**; primary button gradient
   **#ca2fff → #8e96f8 → #53fff0**; light section bg **#f9f9ff**; hero overlay
   **#7f3f3b** @ 0.3; reservation input border **#656463** on transparent
-  fields; font **Poppins** (sans) via Google Fonts; hero H1 72px/700 white;
+  fields; font **Poppins** (sans) via Google Fonts (axes `100;200;300;400;500;600;700`
+  — the 100/200 rules are the thin About heading and reservation fields); hero H1 72px/700 white;
   pill buttons (radius 25px), white text, gradient fill, line-height 42px,
   padding 0 30px; form inputs radius 0, textarea 150px.
 - **Recreation name:** Nuptials. App folder `apps/nuptials`, package
@@ -67,6 +68,15 @@
 
 - [x] Write `openspec/specs/template-nuptials/spec.md` (Gherkin requirements + scenarios + replication findings) — DONE on main (this prep).
 - [ ] Validate spec: `npm run spec:validate`.
+- [ ] Google Fonts `<link>` in `index.html` — load the **whole Poppins set the
+      reference serves** (`100;200;300;400;500;600;700`, exactly the weights the
+      preview host's injected `Poppins` `@font-face` block declares):
+      `https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap`
+      The thin axes are load-bearing: `.About-area h1{font-weight:100}` (with a
+      `span{font-weight:600}`) and `.reservation-area input, textarea` +
+      `.nice-select span{font-weight:200}` are the design's light treatments — a
+      default `400;500;700` link would snap them to 400. Verified on Google
+      Fonts (HTTP 200).
 - [ ] Create `apps/nuptials` (copy `apps/aurora`; rename package to
       `@free-react-templates/nuptials`).
 - [ ] TDD: tests first for Navbar, Hero, About, DateStrip, Gallery,
