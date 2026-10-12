@@ -3057,7 +3057,7 @@
 - [x] **Fastes** — [colorlib](https://colorlib.com/wp/template/fastes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fastes-free-template.jpg) · [presto](https://presto.free.componentdock.com)
 - [x] **Hami** — [colorlib](https://colorlib.com/wp/template/hami/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hami-free-template.jpg) · [upnode](https://upnode.free.componentdock.com)
 - [x] **Hosthub** — [colorlib](https://colorlib.com/wp/template/hosthub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hosthub-free-template.jpg) · [uplink](https://uplink.free.componentdock.com)
-- [~] **Hosting** — [colorlib](https://colorlib.com/wp/template/hosting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hosting-free-hosting-website-template.jpg)
+- [x] **Hosting** — [colorlib](https://colorlib.com/wp/template/hosting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hosting-free-hosting-website-template.jpg) · [skyport](https://skyport.free.componentdock.com)
 - [ ] **Hostspace** — [colorlib](https://colorlib.com/wp/template/hostspace/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hostspace-free-template.jpg)
 - [x] **Hostza** — [colorlib](https://colorlib.com/wp/template/hostza/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hostza-free-template.jpg) · [sitewise](https://sitewise.free.componentdock.com)
 - [x] **Ignite** — [colorlib](https://colorlib.com/wp/template/ignite/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ignite-free-template.jpg) · [skyward](https://skyward.free.componentdock.com)
