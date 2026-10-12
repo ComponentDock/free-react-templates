@@ -89,6 +89,30 @@ Vendor CSS referenced by the preview (`bootstrap.css`, `font-awesome.min.css`,
 - Reservation + contact forms are client-side only (no backend).
 - The "Pages ▾" dropdown (Generic/Elements) is not recreated — those were
   ColorLib's own demo pages, out of scope for a single-page template.
+- **Accessibility (a delta the reference does not supply):** the live page
+  carries **one** aria attribute in total — `aria-hidden="true"` on a
+  decorative `<i class="fa fa-heart-o">`; its mobile toggler
+  `<button class="navbar-toggler" type="button" data-toggle="collapse"
+  data-target="#collapsibleNavbar"><span class="lnr lnr-menu"></span></button>`
+  has no accessible name, no `aria-expanded`, no `aria-controls`; its "Pages"
+  trigger
+  `<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Pages</a>`
+  and its `<div class="dropdown-menu">` carry no `aria-haspopup`/
+  `aria-labelledby`, and the panel opens **only** on CSS hover
+  (`main.css`: `.dropdown .dropdown-menu{display:block; opacity:0;
+  transition:all 200ms}` + `.dropdown:hover .dropdown-menu{opacity:1}` — no
+  handler exists in `js/main.js`, whose non-vendor content is 4.4 KB of
+  carousel/sticky/countdown setup). `main.css` also suppresses focus outlines
+  page-wide (`a, a:focus, a:hover{text-decoration:none; outline:0}`,
+  `.genric-btn:focus{outline:none}`, `.single-input:focus{outline:none}`,
+  `.single-textarea:focus{outline:none}`). The recreation must therefore
+  **add**: accessible names (icons `aria-hidden`), `aria-expanded` (+
+  `aria-controls`) on disclosure controls, a keyboard/click path beside the
+  hover affordance, `Escape`-to-close, visible `focus-visible` rings, a
+  labelled non-`aria-live` countdown (`role="timer"`-style group, ticks off
+  the accessibility tree), and `aria-hidden` on decorative glyphs with
+  non-empty `alt` on meaningful photos. Record each of these in the PR as a
+  renames/deltas item (docs/replication.md).
 
 ## Implementer quick-start
 

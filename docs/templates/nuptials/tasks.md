@@ -81,6 +81,18 @@
       `@free-react-templates/nuptials`).
 - [ ] TDD: tests first for Navbar, Hero, About, DateStrip, Gallery,
       Countdown, InfoCards, Reservation, Footer, App composition; run red.
+- [ ] Accessibility (delta — the reference ships none of it): accessible names
+      on icon-only controls (theme toggle) with the icon `aria-hidden`;
+      `aria-expanded` (+ `aria-controls` where a target exists) on any
+      disclosure control; keyboard-only operation incl. `Escape` to close open
+      overlays; visible `focus-visible` rings on every interactive element
+      (`main.css` suppresses outlines page-wide); the countdown NOT in an
+      `aria-live` region (label it, keep ticks off the a11y tree); decorative
+      glyphs/ornaments `aria-hidden` with non-empty `alt` on meaningful
+      photos. Reference evidence: the live page's only aria attribute is
+      `aria-hidden="true"` on a decorative `<i class="fa fa-heart-o">`, and its
+      toggler `<button class="navbar-toggler" data-toggle="collapse"
+      data-target="#collapsibleNavbar">` has no accessible name at all.
 - [ ] Implement components (green) at 100% coverage.
 - [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.

@@ -87,6 +87,17 @@ layout, colors, typography, and content types (no ColorLib assets copied).
     line-height 42px, padding 0 30px.
   - Reservation form: transparent inputs, 1px borders, radius 0, white text,
     textarea height 150px.
+- **Accessibility delta (measured 2026-10-12, live DOM + `main.css`):** the
+  reference supplies almost no a11y state — one aria attribute on the whole
+  page (`aria-hidden="true"` on a decorative `<i class="fa fa-heart-o">`), a
+  toggler `<button class="navbar-toggler" data-toggle="collapse"
+  data-target="#collapsibleNavbar">` with no accessible name / `aria-expanded`
+  / `aria-controls`, a "Pages" dropdown that opens on CSS `:hover` only (no JS
+  handler in `js/main.js`), and page-wide outline suppression
+  (`a, a:focus, a:hover{outline:0}`, `.genric-btn:focus{outline:none}`,
+  `.single-input:focus{outline:none}`). The recreation therefore adds the
+  state, names, focus rings and keyboard paths itself (see the "Accessible
+  interactive chrome" requirement).
 - **Recreation decisions:** repo-standard Navbar (site name, Home link,
   dark-mode toggle) + Footer chrome; hero = seeded picsum photo + headline;
   about slider (two slides, prev/next arrows) with framed photos; date strip
@@ -243,6 +254,57 @@ and a document title.
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
 - **AND** the document title SHALL be "Nuptials — Wedding Template"
 
+### Requirement: Accessible interactive chrome
+
+The system SHALL make its interactive chrome usable without a mouse. The
+reference has almost no accessibility state to copy: the whole live page
+carries exactly **one** aria attribute — `aria-hidden="true"` on a decorative
+`<i class="fa fa-heart-o">` — its mobile toggler is a bare
+`<button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">`
+with **no** accessible name, `aria-expanded` or `aria-controls`, its "Pages"
+menu opens only on CSS `:hover` (`main.css`:
+`.dropdown .dropdown-menu{display:block; opacity:0}` +
+`.dropdown:hover .dropdown-menu{opacity:1}`, no JS handler at all), and
+`main.css` removes focus outlines page-wide (`a, a:focus, a:hover{outline:0}`,
+`.genric-btn:focus{outline:none}`, `.single-input:focus{outline:none}`). Every
+item below is therefore a documented delta the recreation must supply.
+
+#### Scenario: Icon-only controls expose an accessible name
+
+- **GIVEN** the page is rendered
+- **WHEN** a control has no visible text (the theme toggle, any icon-only button or link)
+- **THEN** it SHALL have an accessible name (`aria-label` or visually hidden text)
+- **AND** its `<svg>`/icon SHALL be `aria-hidden="true"` so the name is announced once, not twice
+
+#### Scenario: Disclosure controls report their state
+
+- **GIVEN** a control shows or hides content (the mobile navigation panel, the theme toggle)
+- **WHEN** its state changes
+- **THEN** it SHALL expose the state via `aria-expanded`
+- **AND** it SHALL point at the element it controls via `aria-controls` when a target element exists
+
+#### Scenario: Keyboard operability and visible focus rings
+
+- **GIVEN** the page is rendered
+- **WHEN** the user navigates with the keyboard alone
+- **THEN** every interactive element SHALL be reachable and operable (activation, and `Escape` to close any open overlay/menu)
+- **AND** every interactive element SHALL show a visible `focus-visible` ring (a delta: the reference suppresses outlines on links, buttons and inputs)
+- **AND** focus order SHALL match the visual order
+
+#### Scenario: The countdown is not a chatty live region
+
+- **GIVEN** the countdown section is rendered
+- **WHEN** the timer updates
+- **THEN** the per-second updates SHALL NOT be pushed into an `aria-live` region
+- **AND** the timer SHALL be a labelled group (`role="timer"` or an equivalent labelled region) whose value stays readable on demand
+
+#### Scenario: Decorative media is hidden, meaningful media is labelled
+
+- **GIVEN** the page is rendered
+- **WHEN** imagery and ornaments are announced
+- **THEN** decorative images, icon glyphs and flourish marks SHALL be `aria-hidden` (the reference's single aria attribute is `aria-hidden="true"` on a decorative heart glyph)
+- **AND** photos that carry meaning SHALL have a non-empty `alt`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for `template-nuptials`.
@@ -254,4 +316,11 @@ and a document title.
       form, and footer match the reference content types.
 - [ ] No ColorLib assets copied (all images picsum-seeded, Poppins via link
       with axes `100;200;300;400;500;600;700`).
+- [ ] Accessibility pass: icon-only controls have accessible names (icons
+      `aria-hidden`), disclosure controls expose `aria-expanded` (+
+      `aria-controls` where a target exists), keyboard-only operation works
+      (activation + `Escape` closes overlays), every interactive element shows
+      a visible `focus-visible` ring, the countdown is not an `aria-live`
+      region, decorative media is `aria-hidden`, meaningful photos have
+      non-empty `alt`.
 - [ ] TEMPLATES.md line 3105 (**Wedding**) marked `[x]` after merge with surge URL (do NOT touch lines 235 / 3109 — those are `wedlock`, already shipped).
