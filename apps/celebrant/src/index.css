@@ -1,0 +1,92 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Celebrant's palette, read off the design's own stylesheet: the mint #cae8d5 paints the cover
+     band behind the hero photograph, the panel that bleeds under the couple slides, the disc behind
+     every card glyph, the underline under the live navigation row and the footer's Send pill;
+     #95d1ab is the base link colour; #343a40 is the wipe both mint fills take on hover; #6c757d is
+     the grey of the header's quote pill. The ink scale runs #000 (active navigation, card titles)
+     → rgba(0,0,0,0.5) (resting navigation) → #808080 (body copy) → rgba(0,0,0,0.8) (card copy).
+     The accordion's cards are ruled in #dee3e2, the footer band is #333333 with #737373 paragraphs
+     and #999999 links, and the carousel's resting dot is rgba(0,0,0,0.3). Shapes: 30px pills,
+     50% circles for the discs and the carousel's arrows and dots, square accordion headers. */
+  --color-brand: #cae8d5;
+  --color-brand-link: #95d1ab;
+  --color-dark: #343a40;
+  --color-cta: #6c757d;
+  --color-cta-hover: #5a6268;
+  --color-ink: #000000;
+  --color-nav: rgba(0, 0, 0, 0.5);
+  --color-body: #808080;
+  --color-card-copy: rgba(0, 0, 0, 0.8);
+  --color-faq: #dee3e2;
+  --color-footer: #333333;
+  --color-footer-text: #737373;
+  --color-footer-link: #999999;
+  --color-footer-line: rgba(255, 255, 255, 0.1);
+  --color-dot: rgba(0, 0, 0, 0.3);
+
+  /* The shared Button reads its `primary` skin from this scale, so the brand mint is what the
+     footer's Send pill paints, and #343a40 is the wipe the design gives it on hover. */
+  --color-primary-400: #d9f0e1;
+  --color-primary-500: #cae8d5;
+  --color-primary-600: #cae8d5;
+  --color-primary-700: #343a40;
+
+  --font-display: 'Amiri', serif;
+  --font-body: 'Quicksand', sans-serif;
+
+  --radius-pill: 30px;
+
+  /* The design was drawn against Bootstrap's four tiers, so the scale is re-pointed at them: the
+     navigation folds away below xl (1200px), exactly where its `d-xl-block` column and the
+     card grid's `col-md-*` columns turn over. */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #ffffff;
+    color: var(--color-body);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h5 {
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  a {
+    color: var(--color-brand-link);
+    transition: all 0.3s ease;
+  }
+  ::selection {
+    background: rgba(202, 232, 213, 0.7);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}

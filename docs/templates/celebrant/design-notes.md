@@ -317,3 +317,21 @@ Never reuse in `apps/`: the source slug `wedding-officiant`, the wordmark
 lorem copy, or the string `Colorlib` (the footer links **Component Dock**
 instead). Nav labels may be reused only as generic, unprotectable words
 (Home / About / Services / FAQ / Blog / Contact).
+
+## Implementation addendum (what shipped)
+
+Built as `apps/celebrant` on `feat/template-celebrant`. The deltas from this research, and the
+frames the placeholder photography actually uses, are recorded in the spec's own
+**Implementation notes** section (`openspec/specs/template-celebrant/spec.md`). In short:
+
+- The heading above the couples band ships as **"Couples I Have Joined"** and the question band as
+  **"Frequently Asked Questions"**: this document's own list of strings the app must not carry
+  includes the design's verbatim heading, and the document title ships as
+  **"Celebrant — Wedding Ceremony Template"** for the same reason.
+- The services rows take the mint wash on hover/focus (the design only paints its `.active` rows),
+  and the services columns carry the design's own 30px gutter.
+- Photography, reviewed on a contact sheet before shipping (the blind picks included a misty railway
+  track for the cover, a rock band and a flat sunset):
+  `celebrant-30` (cover) · `celebrant-7`, `-62`, `-43`, `-38` (service rows) ·
+  `celebrant-3`, `-35`, `-33` (the three couples), with each caption rewritten to describe the frame
+  that loads.

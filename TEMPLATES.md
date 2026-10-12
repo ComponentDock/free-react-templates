@@ -3103,7 +3103,7 @@
 - [x] **Twohearts** — [colorlib](https://colorlib.com/wp/template/twohearts/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/twohearts-free-template.jpg) · [affiance](https://affiance.free.componentdock.com)
 - [x] **Wed** — [colorlib](https://colorlib.com/wp/template/wed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wed-free-template.jpg) · [matrimony](https://matrimony.free.componentdock.com)
 - [x] **Wedding** — [colorlib](https://colorlib.com/wp/template/wedding/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wedding-free-wedding-website-template.jpg) · [nuptials](https://nuptials.free.componentdock.com)
-- [ ] **Wedding Officiant** — [colorlib](https://colorlib.com/wp/template/wedding-officiant/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/weddingofficiant-free-template.jpg)
+- [~] **Wedding Officiant** — [colorlib](https://colorlib.com/wp/template/wedding-officiant/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/weddingofficiant-free-template.jpg)
 - [ ] **Wedding2** — [colorlib](https://colorlib.com/wp/template/wedding2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wedding2-free-template.jpg)
 - [ ] **Weddingdreams** — [colorlib](https://colorlib.com/wp/template/weddingdreams/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/weddingdreams-free-template.jpg)
 - [x] **Wordpress Wedding Themes** — [colorlib](https://colorlib.com/wp/template/wordpress-wedding-themes/) · [wedlock](https://wedlock.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wedding-wordpress-themes.jpg)

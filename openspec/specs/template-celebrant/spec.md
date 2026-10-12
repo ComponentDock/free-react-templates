@@ -491,64 +491,134 @@ no `cdnjs`).
 
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for `apps/celebrant`
-- [ ] `npm run lint` passes for `apps/celebrant`
-- [ ] `scripts/verify-app.sh celebrant` passes (typecheck + lint + 100 %
+- [x] `npm run typecheck` passes for `apps/celebrant`
+- [x] `npm run lint` passes for `apps/celebrant`
+- [x] `scripts/verify-app.sh celebrant` passes (typecheck + lint + 100 %
       coverage tests + build)
-- [ ] Full `npm run gate` passes in CI (knip + fallow included)
-- [ ] `npm run spec:validate` passes
-- [ ] Document head is the app's own and carries none of the preview host's
+- [x] Full `npm run gate` passes in CI (knip + fallow included)
+- [x] `npm run spec:validate` passes
+- [x] Document head is the app's own and carries none of the preview host's
       layer (no `noindex`/`nofollow`, no `robots` meta, no `dns-prefetch`, no
       `cdnjs`, no `preview.colorlib.com`): the reference's served head opens with
       `<meta name="robots" content="noindex, nofollow">` +
       `<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">`, which are
       host markup, not the theme's
-- [ ] Preloader: full-screen `#fff` `#overlayer` (`z-index:7100`) with a centred
+- [x] Preloader: full-screen `#fff` `#overlayer` (`z-index:7100`) with a centred
       loader mark above it (`z-index:7700`, `top/left:50%`,
       `translate(-50%,-50%)`), both fading out 200 ms after DOM ready,
       `aria-hidden`, reduced-motion aware
-- [ ] Header: white sticky bar, **Celebrant** wordmark (Quicksand `1.2rem`/900
+- [x] Header: white sticky bar, **Celebrant** wordmark (Quicksand `1.2rem`/900
       uppercase `#000`), six links `rgba(0,0,0,0.5)` with a `#000` hover, active
       link `#000` + **2 px `#cae8d5` underline**, `#6c757d` "Get Quote" pill
       (radius 30 px), keyboard-operable mobile toggle
-- [ ] Hero: full-width cover photo **`100vh` / min 450 px** with no text, mint
+- [x] Hero: full-width cover photo **`100vh` / min 450 px** with no text, mint
       `#cae8d5` band behind it extending past the right edge, seeded picsum
       image, no horizontal overflow, decoration `aria-hidden`
-- [ ] Services: centred **italic Amiri 2rem** title, four media rows in two
+- [x] Services: centred **italic Amiri 2rem** title, four media rows in two
       columns (Initial Consultation · Ceremony Editing · The Marriage License ·
       Planning Meeting) with `flex: 0 0 250px` images, `0 30px` text padding,
       Amiri 20 px/700 `#000` title links, rows 2 + 4 image-right, `#cae8d5`
       hover wash
-- [ ] Marriages: italic Amiri title, mint panel bleeding below the slider,
+- [x] Marriages: italic Amiri title, mint panel bleeding below the slider,
       three slides with **500 px tall** cover photos and centred captions
       (date line + Amiri `h3` names + paragraph), 40 px circular white prev/next
       buttons, 8 px dots (`rgba(0,0,0,0.3)` → black), keyboard operable,
       auto-advance ≥ 5 s and off under reduced motion
-- [ ] Features: six white cards in a 2 × 3 grid (Wedding Ring · Wedding Venue ·
+- [x] Features: six white cards in a 2 × 3 grid (Wedding Ring · Wedding Venue ·
       Honeymoon · Invitation · Red Wine Tasting · Wedding Planner) each with a
       **70 × 70 px `#cae8d5` icon disc** + lucide glyph, Amiri `1.5rem`/700
       titles, `rgba(0,0,0,0.8)` copy; source typos not reproduced
-- [ ] FAQ: italic Amiri title, seven **distinct** question rows in `#dee3e2`
+- [x] FAQ: italic Amiri title, seven **distinct** question rows in `#dee3e2`
       cards, 20 px left-aligned questions (black open / gray collapsed),
       chevron rotating 180° over 0.3 s, **first row open on load**, real buttons
       with `aria-expanded`/`aria-controls`, keyboard operable
-- [ ] Footer: flat `#333333` band, Amiri white "About Us" heading + `#737373`
+- [x] Footer: flat `#333333` band, Amiri white "About Us" heading + `#737373`
       paragraph, "Quick Links" in `#999999` (hover white), "Subscribe
       Newsletter" input + mint `#cae8d5` "Send" pill with black label, four
       named social links, `#edf0f5` hairline, centred `#737373` copyright with
       a heart and a **Component Dock** link + current year
-- [ ] Tokens: `#cae8d5` (brand mint), `#95d1ab` (link accent), `#343a40`
+- [x] Tokens: `#cae8d5` (brand mint), `#95d1ab` (link accent), `#343a40`
       (hover), `#6c757d` (CTA pill), `#000` / `rgba(0,0,0,0.5)` nav ink,
       `gray` body, `rgba(0,0,0,0.8)` card copy, `#dee3e2` FAQ border,
       `#edf0f5` divider, `#333333` footer, `#737373` / `#999999` footer text,
       `rgba(0,0,0,0.3)` carousel dot — in `@theme`; **Amiri + Quicksand**
       loaded from Google Fonts; radii 30 px pills + 50 % circles
-- [ ] Placeholder images via seeded picsum
+- [x] Placeholder images via seeded picsum
       (`https://picsum.photos/seed/celebrant-<n>/<w>/<h>`: hero 1920×1080,
       media rows 600×600, carousel 1400×900); every icon from `lucide-react`;
       no ColorLib asset, screenshot or stylesheet copied
-- [ ] No `colorlib` / `wedding-officiant` / "Wedding Officiant" provenance
+- [x] No `colorlib` / `wedding-officiant` / "Wedding Officiant" provenance
       string anywhere in `apps/` (comments included); footer links Component
       Dock
-- [ ] TEMPLATES.md `Wedding Officiant` item marked `[x]` with the live
+- [x] TEMPLATES.md `Wedding Officiant` item marked `[x]` with the live
       `https://celebrant.free.componentdock.com` URL + homepage
+
+## Implementation notes (recreation deltas)
+
+Recorded after building `apps/celebrant`; each is a place where the requirement above was read
+against the repository contract or against the design's own DOM/CSS, and the reading is the one
+that shipped.
+
+1. **Document title.** The requirement asks for "Celebrant — Wedding Officiant Template"; this
+   spec's own verification checklist forbids the string "Wedding Officiant" anywhere in `apps/`
+   (AGENTS.md rule 5 — provenance lives only in the spec, TEMPLATES.md and the PR), and the
+   repository's other recreations all name the *kind* rather than the source ("Nuptials — Wedding
+   Template", "Cherish — Wedding Day Template"). The title shipped is
+   **"Celebrant — Wedding Ceremony Template"**.
+2. **The couples band heading.** The requirement quotes the source's heading verbatim, while
+   `docs/templates/celebrant/tasks.md` lists that string among those the app must not carry. The
+   band ships the recreation's own **"Couples I Have Joined"**.
+3. **Question band heading.** The design prints "Frequently Ask Questions";
+   `docs/templates/celebrant/design-notes.md` allows the grammatical form, so
+   **"Frequently Asked Questions"** ships.
+4. **The services wash.** The design paints only rows carrying `.active` (none on its landing page)
+   and cancels the wash on `:hover`; the requirement's Shalt is the recreation's own interaction, so
+   each row takes the mint `#cae8d5` wash on `hover` **and** `focus-within`.
+5. **Card grid gutter.** Bootstrap's `row`/`col-md-6` give the six cards a 30px gutter with the
+   outer edges flush to the container (measured 540px cards at 1440). That is reproduced with
+   `md:gap-x-[30px]`, and the same 30px gutter is reproduced for the services columns — the
+   reference's media rows measure 540px wide at 1440, not the 555px a bare two-column grid gives.
+6. **The source's markup-only details.** The design draws each card's mint disc with a `:before`
+   pseudo-element and its glyph with an icon font at Bootstrap's `display-3`; the recreation uses a
+   real `<span>` for the disc (70×70, inset 10px) and a `lucide-react` glyph sized 48px below 992px
+   and 72px above, which is where the design's own `display-3` media rule turns. `lucide-react`
+   exports no brand glyphs, so the four footer marks are inline SVG.
+7. **The footer hairline.** The generic `.border-top` is `#edf0f5`, but the design overrides it
+   inside the footer to `rgba(255,255,255,0.1)`; the computed value is what ships.
+8. **Stickiness, disclosure and collapse.** The design's jQuery sticky header, offcanvas menu and
+   Bootstrap collapse are reproduced as `position: sticky`, a mount-while-open disclosure and a
+   `hidden`-attribute panel, each keyboard operable with `aria-expanded`/`aria-controls`.
+9. **Carousel.** The reference keeps three slides in a transformed track and repeats one caption
+   three times; the recreation mounts the active slide only (the four arrows/dots are real buttons)
+   and ships three distinct couples, stepping every 6s and never under `prefers-reduced-motion`.
+10. **Photography.** The seeds are chosen by role and reviewed on a contact sheet before shipping —
+    the first blind picks included a misty railway track for the cover, a rock band and a flat sunset
+    — and each caption/story was rewritten to describe the frame that loads:
+    cover `celebrant-30` (a couple on a bench above the water), rows `celebrant-7` / `-62` / `-43` /
+    `-38`, slides `celebrant-3` (the pier) / `-35` (the headland) / `-33` (the lake).
+11. **Not reproduced.** The design's Google Analytics `gtag` id, its icomoon/flaticon icon fonts and
+    every asset it loads.
+
+### Measured reference vs build (desktop 1440×900)
+
+| Element | Reference (preview DOM) | Build |
+| --- | --- | --- |
+| Header | white, 24px/24px padding, wordmark Quicksand 19.2px/900 uppercase | same (88px tall) |
+| Active nav bar | 2px `#cae8d5`, `left/right: 10px`, `bottom: 0` | same (45×2 at the row's foot) |
+| Container | 1140 max-width, 15px gutters, flush content edges | same (x 143..1268) |
+| Cover photo | container content box, `100vh` / `min-height: 450px` | 1110×900 |
+| Mint band | `top: 30%`, `right: -150%`, `width: 200%`, `height: 100%`, `z-index: -1` | 720,478 2280×900 (identical formula) |
+| Services row | 540 wide, image `flex: 0 0 250px`, text `0 30px`, rows 2+4 image-right | 540 wide at x165/x735, order L/R/L/R |
+| Panel | inset 15px each side, `100vh`, bottom `-5%`, mint | 1080 wide, 900 tall (starts above the rail) |
+| Slide | `col-md-11`, 500px tall photo, caption `mt-5`, inner `col-lg-8` | 1018×500 at x204 |
+| Arrows | 40px white circles, `left/right: 27px`, top at 50% of the rail | same |
+| Dots | 8px circles, 5px margin, `rgba(0,0,0,0.3)` → black | same (3 dots) |
+| Card | 540 wide, 30px padding, white, no border, no shadow | same (border-width 0) |
+| Disc / glyph | 70×70 mint at `left: -10px`; glyph 72px (`48px` below 992) | same |
+| Question row | 20px, `padding: 10px 15px`, radius 0, black open / `#808080` folded, 30px line | same (50px tall) |
+| Footer | `#333333`, 128px padding, headings 16px white, `#737373` / `#999999` | same |
+| Newsletter | transparent input, `#6c757d` border, `30px 0 0 30px`; Send mint, black label, `0 30px 30px 0` | same |
+| Social row | 16px glyphs, 16px right padding, `#999999` | same |
+| Hairline | `rgba(255,255,255,0.1)`, 48px padding-top | same |
+| Overflow | none | `scrollWidth === clientWidth` at 1440 and 375 |
+
