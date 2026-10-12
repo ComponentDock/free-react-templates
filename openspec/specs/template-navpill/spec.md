@@ -287,7 +287,7 @@ provenance into app code.
       `@free-react-templates/navpill`, `homepage` +
       `public/CNAME` = `navpill.free.componentdock.com`
 - [ ] `npm install` at the repo root; `grep -c "free-react-templates/navpill"
-    package-lock.json` ≥ 1
+  package-lock.json` ≥ 1
 - [ ] `vite.config.ts` keeps `injectUiSource()`
 - [ ] `@theme` tokens carry the accent `#007bff`, shade `#0056b3`, ink `#212529`,
       dropdown text `#fafafb`/`#343a40`, veil `rgba(0,0,0,.5)` and the Open Sans
@@ -299,7 +299,7 @@ provenance into app code.
 - [ ] Current item is a filled `#007bff` pill (radius 30 px); hover/focus turns
       any label into the same pill over `.3s`
 - [ ] Dropdown opens on hover **and** focus, with the white triangle, `2px
-    #007bff` top border, ≥200 px rows, `#fafafb` hover and a nested right-hand
+  #007bff` top border, ≥200 px rows, `#fafafb` hover and a nested right-hand
       flyout
 - [ ] Off-canvas panel: 300 px, slides from the right over a 50 % veil, lists the
       same rows as the desktop nav with correct indentation, round 36 × 36
@@ -308,3 +308,67 @@ provenance into app code.
 - [ ] 100 % coverage on `npm run verify:app navpill`; no `--no-verify` bypass
 - [ ] No ColorLib reference in `apps/navpill/`; footer links Component Dock
 - [ ] Shipped via PR on `feat/template-navpill`, squash-merged immediately
+
+## Implementation notes (measured against the live preview)
+
+The live preview (`theme/bootstrap/website-menu-03/`, 3,539 B) and my build were
+both driven in a real browser and the same probes run at 375 / 576 / 992 / 1200 /
+1210 / 1440 px. Where the notes below say "measured", the number came from that
+comparison, not from the stylesheet alone.
+
+| Probe                                         | Reference                                                           | Navpill                              |
+| --------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------ |
+| Header box at 1440                            | `0,32,1425×54`, absolute, z 1999                                    | identical                            |
+| Header background / shadow / border           | transparent, `none`, `0px`                                          | identical                            |
+| Wordmark                                      | 24 px `#fff`, weight 500, x 158                                     | identical                            |
+| Container                                     | 1140 px, 15 px gutters, x 143                                       | identical                            |
+| Row                                           | `348,32,920×54`, right-aligned, 6 rows                              | identical                            |
+| Current label pill                            | `5px 20px`, radius 30, `#007bff`, 16px                              | identical                            |
+| Chevron label                                 | `padding-right:30px`                                                | identical                            |
+| Hero band                                     | `0,0,1425×900`, cover, `50% 50%`                                    | identical (`100vh`)                  |
+| Page height                                   | 1800 px (`200vh`)                                                   | 1800 px (`min-h-[200vh]`)            |
+| Off-canvas panel                              | 300 px, `100vh`, pt 20, z 2000, `-10px 0 20px -10px rgba(0,0,0,.1)` | identical                            |
+| Panel body                                    | `calc(100vh - 52px)`, `0 20px 150px`                                | identical                            |
+| Panel row scale                               | 20 / 40 / 60 px indent at 20 / 16 / 16 px                           | identical                            |
+| Panel expander                                | 36 × 36, radius 50 %, top 10, right 0                               | identical                            |
+| Close glyph                                   | 30 px, `#212529`, hover `#f8f9fa`                                   | identical                            |
+| Veil while open                               | `rgba(0,0,0,.5)`, full page                                         | identical (`opacity: 1`, 1440 × 900) |
+| Dropdown open                                 | `margin-top: 0`, `opacity: 1`, 2px `#007bff` top border             | identical                            |
+| Dropdown shadow                               | `0 2px 10px -2px rgba(0,0,0,.1)`                                    | identical                            |
+| Dropdown geometry                             | flush at `y = 86` (32 + 54), rows ≥ 200 px                          | identical                            |
+| Dropdown triangle                             | white, `border-width: 10px`, `left: 20%`, `margin-left: -10px`      | identical                            |
+| Dropdown rows                                 | `9px 20px`, `#343a40`, hover `#fafafb`, current `#007bff`           | identical                            |
+| Toggle at 375                                 | `display:block` at `x=330`, 28 px, `top:3px`, `py:1rem`, `mr:2px`   | identical                            |
+| Row column at 375 / 1200                      | `none` / `block` (1200 inclusive)                                   | identical                            |
+| Container max-width at 375 / 576 / 992 / 1200 | `none` / 540 / 960 / 1140                                           | identical                            |
+
+### Refinements and deliberate deviations
+
+1. **Breakpoints are re-pointed in `@theme`** (`sm/md/lg/xl` → 576/768/992/1200)
+   so the container steps and the 1200 px hand-over are inclusive exactly like the
+   reference's grid; with Tailwind's defaults the row would appear 80 px too late.
+2. **The toggle column carries no 15 px gutter.** The reference's toggle wrapper
+   (`cl-d-inline-block cl-d-xl-none cl-py-3`, no column class) measures 28 px wide
+   at `x=330` on the logo's line at 375 px; adding a column gutter wraps the
+   hamburger onto a second line.
+3. **The panel and the veil stay mounted and are `aria-hidden="true"` + `invisible`
+   while shut** (the reference keeps the panel reachable and only translates it
+   `110%`), so nothing off-canvas is tabbable. The veil is a real element rather
+   than `body:before`, so it can carry `aria-hidden` itself.
+4. **The document is scroll-locked while the panel is open** — the reference lets
+   the page scroll behind the drawer (measured `body` overflow `visible`).
+5. **The panel's current row tone is chosen, not appended.** With `text-ink` and
+   `text-accent` both present the stylesheet order decides and the row renders ink
+   (caught in the browser pass) — `panelRowClass` emits exactly one of them.
+6. **The dropdown's trigger opens on hover, on focus and on click** (the click is
+   idempotent so hovering first cannot cancel it) and `Escape` closes it and
+   returns focus to the trigger; a one-shot guard keeps that hand-back focus from
+   reopening the panel immediately.
+7. **One dropdown row (`Overview`) is current**, which is what exercises the
+   reference's own `.cl-active > a { color: #007bff }` panel rule.
+8. The hero band is empty and `aria-hidden`-free (it carries an `aria-label`), the
+   footer strip is the documented Component Dock improvement, and the placeholder
+   seed `navpill-hero` (a landscape vista at dusk) was checked visually so the top
+   third stays legible for white labels.
+9. The mobile visual pass is reported as measured DOM/computed-style evidence: the
+   headless harness's screenshot channel wedges on the photo-heavy 375 px view.
