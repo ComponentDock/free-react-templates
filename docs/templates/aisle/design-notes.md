@@ -596,6 +596,12 @@ confusing).
   its own images, a correctly spelled author credit, and no repeated note block
   unless the layout needs the pair.
 
+  > **Ship status (2026-10-13):** `aisle` shipped mid-run
+  > (`35b148136` feat + `8f07ed4a5` bookkeeping) **without** either invented
+  > band — `apps/aisle/src/components/` holds no `Rsvp`/`Wedding` component,
+  > so §11.1–11.3 are the reference for a follow-up `feat:`, not an edit the
+  > prep stream makes.
+
   ### 11.3 The two bands' own stylesheets (token authority — read 2026-10-13)
 
   Each page of this theme loads **its own** stylesheet directory; the landing

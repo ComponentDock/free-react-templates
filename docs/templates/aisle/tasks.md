@@ -2,6 +2,12 @@
 
 > Prep artifacts written on `main` by the prep stream. Implementation ships
 > later on `feat/template-aisle`. Nothing here is marked `[~]`/`[x]` by prep.
+>
+> **Ship status (2026-10-13):** the app shipped while this prep's
+> delivery-layer fix was in the push race (`35b148136` + `8f07ed4a5`) **without
+> the two invented destinations** — the RSVP and "The Wedding" tasks below (and
+> their per-page stylesheet tokens, `02-rsvp/css/styles.css` /
+> `03-regular-page/css/styles.css`) are the reference for a follow-up `feat:`.
 
 Recreation of ColorLib **"Wedding2"** (source slug `wedding2`, TEMPLATES.md line
 **3107**, `## Wedding` section) — a **script-and-serif wedding "Save the Date"

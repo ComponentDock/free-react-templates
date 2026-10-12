@@ -736,6 +736,21 @@ the source name, its copy verbatim or its typos.
   copy of `02-rsvp/`, `03-regular-page/` or `common-css/`, no `fluidbox`, no
   `countdown` and no map script (the two inner pages load none of the three)
 
+## Prep status (re-checked 2026-10-13)
+
+`aisle` **shipped mid-run**: `feat: Aisle — wedding day template (ColorLib
+Wedding2) (#1764)` (`35b148136`) and `chore: aisle bookkeeping — mark Wedding2
+[x] + README status` (`8f07ed4a5`) landed on `main` while this prep's
+delivery-layer fix was in the push race, so `TEMPLATES.md` line 3107 is already
+`[x]` and the app exists (`apps/aisle`, `https://aisle.free.componentdock.com`).
+The app as shipped carries **no RSVP band and no "The Wedding" band**
+(`apps/aisle/src/components/` has no `Rsvp`/`Wedding` component; `RSVP` appears
+only in `Footer`/`lib/site.ts`), and its tokens came from the landing sheet —
+so the two sections above (§ the per-page stylesheets, 22 + 23 rules the landing
+sheet lacks) are the reference for a **follow-up `feat:`**, never an edit from
+the prep stream. The landing-sheet tokens it did use are unaffected.
+
+
 ## Fidelity rules
 
 - Match section structure and order 1:1 (header → hero → story → countdown →
