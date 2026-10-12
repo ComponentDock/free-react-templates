@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* palette: a near-black screen — a photographic slideshow on a #000 layer
+     under ONE rgba(0,0,0,0.7) scrim and nothing else. There is no brand accent
+     and no gradient in this design; the chrome is white, the sub-line a soft
+     #cccccc, and the single action a white pill with a #333 italic-serif
+     label that goes translucent on hover. The only other hue is the shared
+     error red. */
+  --font-sans: 'Poppins', Arial, sans-serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
+
+  --color-slideshow: #000000;
+  --color-scrim: rgba(0, 0, 0, 0.7);
+  --color-subline: #cccccc;
+  --color-pill: #ffffff;
+  --color-pill-label: #333333;
+  --color-pill-hover: rgba(255, 255, 255, 0.12);
+  --color-error: #c80000;
+
+  /* shapes: a 25px pill for the single action, square corners everywhere else
+     (e-mail well, submit lane, countdown units, social boxes, error bubble) */
+  --radius-pill: 25px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    background-color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
