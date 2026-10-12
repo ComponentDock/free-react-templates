@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* palette: an opaque white panel beside one static photograph, both sitting
+     over a single 50% scrim that neither panel lets through (the photograph is
+     never darkened). The one brand colour is the yellow subscribe bar; the rest
+     is the near-black type ink, a mid grey, a soft grey, one hairline ring and
+     the shared validation red. */
+  --font-sans: 'Poppins', Arial, sans-serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
+
+  --color-panel: #ffffff;
+  --color-accent: #ffe151;
+  --color-ink: #333333;
+  --color-subline: #999999;
+  --color-glyph: #666666;
+  --color-placeholder: #666666;
+  --color-hairline: #e6e6e6;
+  --color-error: #c80000;
+  --color-body-text: #666666;
+  --color-scrim: rgba(0, 0, 0, 0.5);
+
+  /* shapes: square corners on the subscribe bar, its field, its label tab and
+     the validation bubble — the only radius in the design is the 50% of the
+     three social rings. */
+  --radius-bar: 0px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--color-body-text);
+    background-color: var(--color-panel);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}

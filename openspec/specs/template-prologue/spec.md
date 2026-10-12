@@ -150,84 +150,84 @@ Tailwind CSS 4 + TypeScript.
   - Page row: `.flex-w.flex-str.size1.overlay1` =
     `.flex-w{display:flex; flex-wrap:wrap}` + `.flex-str{align-items:stretch}` +
     `.size1{width:100%; min-height:100vh}` + `.overlay1{position:relative;
-    z-index:1}`
+z-index:1}`
   - Scrim (the ONLY overlay): `.overlay1::after{content:""; display:block;
-    position:absolute; z-index:-1; width:100%; height:100%; top:0; left:0;
-    background:rgba(0,0,0,0.5)}` — `z-index:-1` inside the row's stacking context
+position:absolute; z-index:-1; width:100%; height:100%; top:0; left:0;
+background:rgba(0,0,0,0.5)}` — `z-index:-1` inside the row's stacking context
     puts it BEHIND both children, so `.bg0` (`#fff`) hides it on the left and the
     photo panel's own background paints over it on the right. **Occluded in this
     slug** (pixel-exact check: no darkening).
   - Left panel: `.flex-w.flex-col-sb.wsize1.bg0.p-l-70.p-t-37.p-b-52.p-r-50.respon1`
     = `display:flex; flex-wrap:wrap; flex-direction:column;
-    justify-content:space-between`, `width:37%`, `background-color:#fff`,
+justify-content:space-between`, `width:37%`, `background-color:#fff`,
     `padding:37px 50px 52px 70px`
   - Photo panel: `.wsize2.bg-img1.respon2[style="background-image:
-    url('images/bg01.jpg')"]` = `width:63%`, `.bg-img1{background-position:center;
-    background-repeat:no-repeat; background-size:cover}`
+url('images/bg01.jpg')"]` = `width:63%`, `.bg-img1{background-position:center;
+background-repeat:no-repeat; background-size:cover}`
   - Mark: `.wrappic1{display:block}` + `.wrappic1 img{max-width:100%}` (no
     `flex-grow` here — unlike sibling slugs) around `a > img[src=logo.png]`
   - Hero block: `.w-full.p-t-100.p-b-90.p-l-48.p-l-0-md` =
     `width:100%; padding:100px 0 90px 48px`, `padding-left:0` at ≤768px
   - Heading: `.l1-txt1{font-family:PlayfairDisplay-Regular; font-size:60px;
-    color:#333; line-height:1.1; text-transform:uppercase}` +
+color:#333; line-height:1.1; text-transform:uppercase}` +
     `.p-b-34{padding-bottom:34px}` + `.respon3{font-size:60px}` at ≤576px
     (**a no-op** — the base size is already 60px); `font-weight:500` comes from
     the sheet's `.h3, h3` rule
   - Sub line: `.m2-txt1{font-family:Poppins-Regular; font-size:24px; color:#999;
-    line-height:1.2}` + `.p-b-46{padding-bottom:46px}`
+line-height:1.2}` + `.p-b-46{padding-bottom:46px}`
   - Form: `.contact100-form{max-width:100%}` + `.m-t-10.m-b-10` (10px block
     margins); `.wrap-input100{width:650px; max-width:calc(100% + 110px);
-    position:relative; background-color:transparent; height:80px}`,
+position:relative; background-color:transparent; height:80px}`,
     `max-width:100%` at ≤992px; `.validate-input{position:relative}`
   - Field: `.input100{display:block; width:100%; height:100%; padding:0 80px 0
-    172px; background-color:#ffe151; box-shadow:0 10px 15px 0px rgba(0,0,0,0.1)}`
+172px; background-color:#ffe151; box-shadow:0 10px 15px 0px rgba(0,0,0,0.1)}`
     → `:focus{box-shadow:0 10px 15px 0px rgba(0,0,0,0.2)}`; at ≤576px
     `padding-left:25px; padding-right:60px` (= `0 60px 0 25px`); `.s2-txt1`
     (applied to the field) = `Poppins-Medium 15px #333 line-height:1.2`;
     `.placeholder0::placeholder{color:#666}` (vendor-prefixed rules only — there
     is no standard `::placeholder` selector)
   - Label tab: `.size4{width:172px; height:80px}` + `.ab-t-l{position:absolute;
-    left:0; top:0}` + `.flex-c-m{justify-content:center; align-items:center}` +
+left:0; top:0}` + `.flex-c-m{justify-content:center; align-items:center}` +
     `.bor1{border-left:5px solid #333}` (transparent fill, no other border, no
     radius) with a `Poppins-Medium` 15px `#333` span reading the source's
     `Subcribe Now:`; at ≤576px `.respon4{width:5px}` and `.respon4 span{display:
-    none}` — the tab collapses to its bare 5px black border
+none}` — the tab collapses to its bare 5px black border
   - Arrow button: `.size2{width:80px; height:80px}` + `.ab-t-r{position:absolute;
-    right:0; top:0}` + `.flex-c-m`, transparent button (`button{outline:none;
-    border:none; background:transparent; cursor:pointer}`) holding
+right:0; top:0}` + `.flex-c-m`, transparent button (`button{outline:none;
+border:none; background:transparent; cursor:pointer}`) holding
     `i.zmdi-long-arrow-right` with `.fs-30{font-size:30px}` + `.cl1{color:#333}` +
     `.trans-04{transition:all 0.4s}`; hover `.hov1:hover i{transform:
-    translateX(10px)}`; at ≤576px `.respon5{width:60px}`
+translateX(10px)}`; at ≤576px `.respon5{width:60px}`
   - Socials: `.flex-w.flex-m{align-items:center}` wrapping
     `span.m2-txt2.p-r-40` = `Poppins-Regular 16px #999 line-height:1.2;
-    text-transform:uppercase` + three `a.size3.flex-c-m.how-social.trans-04
-    .m-r-15.m-b-5.m-t-5` = `36px × 36px`, `justify-content:center;
-    align-items:center`, `color:#666; font-size:16px; background-color:
-    transparent; border-radius:50%; border:1px solid #e6e6e6`, hover
+text-transform:uppercase` + three `a.size3.flex-c-m.how-social.trans-04
+.m-r-15.m-b-5.m-t-5` = `36px × 36px`, `justify-content:center;
+align-items:center`, `color:#666; font-size:16px; background-color:
+transparent; border-radius:50%; border:1px solid #e6e6e6`, hover
     `.how-social:hover{background-color:#333; color:#fff}`
   - Validation: `.alert-validate::before{content:attr(data-validate);
-    position:absolute; max-width:70%; background-color:#fff; border:1px solid
-    #c80000; border-radius:0px; padding:4px 25px 4px 10px; top:50%;
-    transform:translateY(-50%); right:72px; pointer-events:none; font-family:
-    Poppins-Medium; color:#c80000; font-size:14px; line-height:1.4;
-    text-align:left; visibility:hidden; opacity:0; transition:opacity 0.4s}`,
+position:absolute; max-width:70%; background-color:#fff; border:1px solid
+#c80000; border-radius:0px; padding:4px 25px 4px 10px; top:50%;
+transform:translateY(-50%); right:72px; pointer-events:none; font-family:
+Poppins-Medium; color:#c80000; font-size:14px; line-height:1.4;
+text-align:left; visibility:hidden; opacity:0; transition:opacity 0.4s}`,
     revealed by `:hover:before` and unconditionally at ≤992px;
     `.alert-validate::after{content:"\f071"; font-family:FontAwesome;
-    display:block; position:absolute; color:#c80000; font-size:14px; top:50%;
-    transform:translateY(-50%); right:78px}`
+display:block; position:absolute; color:#c80000; font-size:14px; top:50%;
+transform:translateY(-50%); right:78px}`
   - Responsive: `@media (max-width:1200px){.respon1{width:60%} .respon2{width:
-    40%}}`; `@media (max-width:992px){.respon1{width:100%; padding-left:15px;
-    padding-right:15px} .respon2{width:100%; height:500px}}`;
+40%}}`; `@media (max-width:992px){.respon1{width:100%; padding-left:15px;
+padding-right:15px} .respon2{width:100%; height:500px}}`;
     `@media (max-width:768px){.p-l-0-md{padding-left:0}}`;
     `@media (max-width:576px){.respon3{font-size:60px} .respon4{width:5px}
-    .respon4 span{display:none} .respon5{width:60px}}`
+.respon4 span{display:none} .respon5{width:60px}}`
   - Base type: `html{box-sizing:border-box; font-family:sans-serif;
-    line-height:1.15}` / `body{margin:0; font-family:-apple-system,
-    BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    font-size:1rem; font-weight:400; line-height:1.5; color:#212529;
-    background-color:#fff}` overridden by the later `body,html{font-family:Arial,
-    sans-serif; font-size:15px; color:#666666; height:100%; background-color:
-    #fff}` — all VISIBLE type is Playfair Display (heading) and Poppins 400/500
+line-height:1.15}` / `body{margin:0; font-family:-apple-system,
+BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+font-size:1rem; font-weight:400; line-height:1.5; color:#212529;
+background-color:#fff}` overridden by the later `body,html{font-family:Arial,
+sans-serif; font-size:15px; color:#666666; height:100%; background-color:
+#fff}` — all VISIBLE type is Playfair Display (heading) and Poppins 400/500
   - Fonts (source, self-hosted woff2): PlayfairDisplay-Regular (heading), Poppins
     Regular + Medium (everything else). **All three faces exist on Google Fonts**,
     so the recreation loads `Playfair+Display:wght@400;500` +
@@ -243,18 +243,18 @@ Tailwind CSS 4 + TypeScript.
        - `p.m2-txt1.p-b-46` — "Follow us for update now!"
        - `form.contact100-form.validate-form.m-t-10.m-b-10` →
          `div.wrap-input100.validate-input.m-lr-auto-lg[data-validate="Email is
-         required: ex@abc.xyz"]` containing, in order: `input.s2-txt1
-         .placeholder0.input100.trans-04[type=text][name=email]
-         [placeholder="Email Address"]`, `button.flex-c-m.ab-t-r.size2.hov1
-         .respon5 > i.zmdi.zmdi-long-arrow-right.fs-30.cl1.trans-04` (inlined
+required: ex@abc.xyz"]` containing, in order: `input.s2-txt1
+.placeholder0.input100.trans-04[type=text][name=email]
+[placeholder="Email Address"]`, `button.flex-c-m.ab-t-r.size2.hov1
+.respon5 > i.zmdi.zmdi-long-arrow-right.fs-30.cl1.trans-04` (inlined
          `svg.cl-icon`, viewBox `0 0 384 512`) and `div.flex-c-m.ab-t-l.s2-txt1
-         .size4.bor1.respon4 > span` ("Subcribe Now:")
+.size4.bor1.respon4 > span` ("Subcribe Now:")
      - `div.flex-w.flex-m` — ← SOCIAL BAND:
        `span.m2-txt2.p-r-40` ("Follow us") + three
        `a[href="#"].size3.flex-c-m.how-social.trans-04.m-r-15.m-b-5.m-t-5`
        wrapping `i.fa.fa-facebook` / `i.fa.fa-twitter` / `i.fa.fa-youtube-play`
   2. `div.wsize2.bg-img1.respon2[style="background-image:
-     url('images/bg01.jpg')"]` — ← PHOTO PANEL (empty element)
+url('images/bg01.jpg')"]` — ← PHOTO PANEL (empty element)
   - `.s2-txt1` is applied twice in the markup (field AND label tab) and IS
     present in the sheet, so both render `Poppins-Medium 15px #333` — the
     opposite situation from the family's V13 sibling, whose `.s2-txt1` rule was
@@ -342,37 +342,48 @@ the ones an implementer must not blur:
 
 ## Design tokens
 
-| Token                | Value                                                                                                                                                                                                                                       | Where                                          |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| page row             | `width:100%`, `min-height:100vh`, `display:flex`, `flex-wrap:wrap`, `align-items:stretch`, `position:relative`, `z-index:1`                                                                                                                  | the whole page (two panels, one row)           |
-| split ratio          | left `37%` / right `63%` at ≥1201px → `60%` / `40%` at ≤1200px → both `100%` at ≤992px (stacked); NEVER 50/50 (that is the V12 sibling)                                                                                                      | the two panels                                 |
-| left panel           | `background:#fff` (opaque), flex column, `justify-content:space-between`, `padding:37px 50px 52px 70px`; `padding:37px 15px 52px` at ≤992px                                                                                                  | left column (3 bands)                          |
-| photo panel          | `width:63%`, `background-image:url(...)`, `background-position:center`, `background-repeat:no-repeat`, `background-size:cover`, empty element; `width:100%; height:500px` at ≤992px; recreation placeholder `https://picsum.photos/seed/prologue-photo/1200/900` | right column (static, no slideshow)            |
-| page scrim           | ONE `rgba(0,0,0,0.5)` layer as the row's `::after` (`position:absolute; z-index:-1; inset:0`) — **occluded by both panels in this slug (invisible; verified pixel-exact)**; no gradient, no second overlay                                 | behind both panels                             |
-| brand mark           | source file is a 35×43 RGBA PNG of a solid `#333` monogram; wrapper `display:block` (no `flex-grow`); recreation renders its OWN wordmark/monogram (`#333`, ≤43px tall, `max-width:100%`)                                                     | left panel, top edge                           |
-| hero block           | `width:100%`, `padding:100px 0 90px 48px`; `padding-left:0` at ≤768px                                                                                                                                                                        | left panel, middle band                        |
-| heading              | Playfair Display **400/500, 60px, `line-height:1.1`, `#333`, `text-transform:uppercase`, no `letter-spacing`, 34px below**; size does NOT change at ≤576px (the source's `respon3` rule is a no-op)                                           | hero block                                     |
-| centre sub-line      | Poppins 400, 24px/1.2, `#999`, 46px below                                                                                                                                                                                                    | hero block                                     |
-| subscribe bar        | `width:650px`, `max-width:calc(100% + 110px)` (= content + 110px, so it overhangs the panel by 60px), `height:80px`, `position:relative`, transparent wrapper, 10px block margins; `max-width:100%` at ≤992px (no overflow once stacked)      | hero block                                     |
-| subscribe field      | `display:block; width:100%; height:100%`, `padding:0 80px 0 172px`, `background:#ffe151`, `border-radius:0`, NO border, `box-shadow:0 10px 15px 0 rgba(0,0,0,0.1)` → `0 10px 15px 0 rgba(0,0,0,0.2)` on focus; `padding:0 60px 0 25px` at ≤576px | subscribe bar                                  |
-| field text           | Poppins 500 (source `Poppins-Medium`), 15px/1.2, `#333`; placeholder `#666`                                                                                                                                                                   | subscribe field                                |
-| label tab            | absolute `left:0; top:0`, `172px × 80px`, transparent fill, NO radius, **`border-left:5px solid #333`** as its only decoration, centred Poppins 500 15px `#333` text; **5px wide with the label hidden at ≤576px** (a bare black tick)        | subscribe bar, left end                        |
-| arrow button         | absolute `right:0; top:0`, `80px × 80px` (60px wide at ≤576px), transparent fill, NO border/radius, centred 30px `#333` long-arrow, `transition:all .4s`, hover slides the glyph `translateX(10px)`; needs an `aria-label` (source has none)  | subscribe bar, right end (over the photograph)  |
-| social band          | `display:flex; flex-wrap:wrap; align-items:center` with a 40px-right-padded caption then three circles                                                                                                                                       | left panel, bottom edge                        |
-| social caption       | Poppins 400, 16px/1.2, `#999`, `text-transform:uppercase` (source "Follow us")                                                                                                                                                               | social band, before the circles                |
-| social circle        | `36px × 36px`, `border-radius:50%`, transparent fill, `border:1px solid #e6e6e6`, centred 16px `#666` glyph, `margin:5px 15px 5px 0`, `transition:all .4s`                                                                                     | social band (×3)                               |
-| social glyphs        | Facebook, Twitter/X and YouTube — source inlines `fa-facebook` / `fa-twitter` / `fa-youtube-play`; the recreation uses `lucide-react` equivalents and NEVER copies the paths                                                                   | social band (×3)                               |
-| social hover         | fill → `#333`, glyph → `#fff`                                                                                                                                                                                                                | over `.4s`                                     |
-| validation bubble    | white box, `1px solid #c80000`, `border-radius:0px`, `padding:4px 25px 4px 10px`, `max-width:70%`, centred via `top:50%; translateY(-50%)`, **`right:72px`**, Poppins 500 14px/1.4 `#c80000`, `pointer-events:none`, `opacity 0 → 1` over `.4s`; message from `data-validate` = "Email is required: ex@abc.xyz" | invalid field                                  |
-| validation glyph     | 14px `#c80000` warning glyph at **`right:78px`**, vertically centred (source: FontAwesome `\f071`)                                                                                                                                            | invalid field                                  |
-| validation visibility| hidden until hover above 992px; ALWAYS visible at ≤992px; cleared on `focus`; `preventDefault()` on invalid submit; no network request                                                                                                        | invalid field                                  |
-| radii                | `0px` on the subscribe bar, its field, the label tab and the bubble; `50%` on the three social circles only                                                                                                                                   | shapes                                         |
-| accent colour        | `#ffe151` (the subscribe bar) — the ONLY brand colour; everything else is white/`#333`/`#999`/`#666`/`#e6e6e6` plus the `#c80000` validation red                                                                                              | palette                                        |
-| fonts                | Playfair Display 400/500 (heading) · Poppins 500 15px (field, label tab, bubble) · Poppins 400 24px/16px (sub-line, caption)                                                                                                                  | typography                                     |
-| Google Fonts mapping | `Playfair+Display:wght@400;500` + `Poppins:wght@400;500` — **no substitution needed** (all three source faces are on Google Fonts); no icon font (lucide-react)                                                                                | `index.html` `<link>`                          |
-| base type            | `body,html{font-family:Arial,sans-serif; font-size:15px; color:#666666; height:100%; background-color:#fff}` (all VISIBLE type is Playfair Display / Poppins)                                                                                  | typography                                     |
-| transitions          | `all .4s` (field, arrow glyph, social circles), `opacity .4s` (validation bubble); box-shadow switches `0.1 → 0.2` alpha on field focus                                                                                                        | interaction                                    |
-| attribution          | a small low-emphasis line linking `https://www.componentdock.com/` ("Component Dock"), pinned absolutely inside the left panel so the three-band `space-between` geometry is untouched                                                          | ADDED vs the reference (the source has no footer credit) |
+| Token                 | Value                                                                                                                                                                                                                                                                                                           | Where                                                    |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| page row              | `width:100%`, `min-height:100vh`, `display:flex`, `flex-wrap:wrap`, `align-items:stretch`, `position:relative`, `z-index:1`                                                                                                                                                                                     | the whole page (two panels, one row)                     |
+| split ratio           | left `37%` / right `63%` at ≥1201px → `60%` / `40%` at ≤1200px → both `100%` at ≤992px (stacked); NEVER 50/50 (that is the V12 sibling)                                                                                                                                                                         | the two panels                                           |
+| left panel            | `background:#fff` (opaque), flex column, `justify-content:space-between`, `padding:37px 50px 52px 70px`; `padding:37px 15px 52px` at ≤992px                                                                                                                                                                     | left column (3 bands)                                    |
+| photo panel           | `width:63%`, `background-image:url(...)`, `background-position:center`, `background-repeat:no-repeat`, `background-size:cover`, empty element; `width:100%; height:500px` at ≤992px; recreation placeholder `https://picsum.photos/seed/prologue-hollow/1200/900`                                               | right column (static, no slideshow)                      |
+| page scrim            | ONE `rgba(0,0,0,0.5)` layer as the row's `::after` (`position:absolute; z-index:-1; inset:0`) — **occluded by both panels in this slug (invisible; verified pixel-exact)**; no gradient, no second overlay                                                                                                      | behind both panels                                       |
+| brand mark            | source file is a 35×43 RGBA PNG of a solid `#333` monogram; wrapper `display:block` (no `flex-grow`); recreation renders its OWN wordmark/monogram (`#333`, ≤43px tall, `max-width:100%`)                                                                                                                       | left panel, top edge                                     |
+| hero block            | `width:100%`, `padding:100px 0 90px 48px`; `padding-left:0` at ≤768px                                                                                                                                                                                                                                           | left panel, middle band                                  |
+| heading               | Playfair Display **400/500, 60px, `line-height:1.1`, `#333`, `text-transform:uppercase`, no `letter-spacing`, 34px below**; size does NOT change at ≤576px (the source's `respon3` rule is a no-op)                                                                                                             | hero block                                               |
+| centre sub-line       | Poppins 400, 24px/1.2, `#999`, 46px below                                                                                                                                                                                                                                                                       | hero block                                               |
+| subscribe bar         | `width:650px`, `max-width:calc(100% + 110px)` (= content + 110px, so it overhangs the panel by 60px), `height:80px`, `position:relative`, transparent wrapper, 10px block margins; `max-width:100%` at ≤992px (no overflow once stacked)                                                                        | hero block                                               |
+| subscribe field       | `display:block; width:100%; height:100%`, `padding:0 80px 0 172px`, `background:#ffe151`, `border-radius:0`, NO border, `box-shadow:0 10px 15px 0 rgba(0,0,0,0.1)` → `0 10px 15px 0 rgba(0,0,0,0.2)` on focus; `padding:0 60px 0 25px` at ≤576px                                                                | subscribe bar                                            |
+| field text            | Poppins 500 (source `Poppins-Medium`), 15px/1.2, `#333`; placeholder `#666`                                                                                                                                                                                                                                     | subscribe field                                          |
+| label tab             | absolute `left:0; top:0`, `172px × 80px`, transparent fill, NO radius, **`border-left:5px solid #333`** as its only decoration, centred Poppins 500 15px `#333` text; **5px wide with the label hidden at ≤576px** (a bare black tick)                                                                          | subscribe bar, left end                                  |
+| arrow button          | absolute `right:0; top:0`, `80px × 80px` (60px wide at ≤576px), transparent fill, NO border/radius, centred 30px `#333` long-arrow, `transition:all .4s`, hover slides the glyph `translateX(10px)`; needs an `aria-label` (source has none)                                                                    | subscribe bar, right end (over the photograph)           |
+| social band           | `display:flex; flex-wrap:wrap; align-items:center` with a 40px-right-padded caption then three circles                                                                                                                                                                                                          | left panel, bottom edge                                  |
+| social caption        | Poppins 400, 16px/1.2, `#999`, `text-transform:uppercase` (source "Follow us")                                                                                                                                                                                                                                  | social band, before the circles                          |
+| social circle         | `36px × 36px`, `border-radius:50%`, transparent fill, `border:1px solid #e6e6e6`, centred 16px `#666` glyph, `margin:5px 15px 5px 0`, `transition:all .4s`                                                                                                                                                      | social band (×3)                                         |
+| social glyphs         | Facebook, Twitter/X and YouTube — source inlines `fa-facebook` / `fa-twitter` / `fa-youtube-play`; the recreation uses `lucide-react` equivalents and NEVER copies the paths                                                                                                                                    | social band (×3)                                         |
+| social hover          | fill → `#333`, glyph → `#fff`                                                                                                                                                                                                                                                                                   | over `.4s`                                               |
+| validation bubble     | white box, `1px solid #c80000`, `border-radius:0px`, `padding:4px 25px 4px 10px`, `max-width:70%`, centred via `top:50%; translateY(-50%)`, **`right:72px`**, Poppins 500 14px/1.4 `#c80000`, `pointer-events:none`, `opacity 0 → 1` over `.4s`; message from `data-validate` = "Email is required: ex@abc.xyz" | invalid field                                            |
+| validation glyph      | 14px `#c80000` warning glyph at **`right:78px`**, vertically centred (source: FontAwesome `\f071`)                                                                                                                                                                                                              | invalid field                                            |
+| validation visibility | hidden until hover above 992px; ALWAYS visible at ≤992px; cleared on `focus`; `preventDefault()` on invalid submit; no network request                                                                                                                                                                          | invalid field                                            |
+| radii                 | `0px` on the subscribe bar, its field, the label tab and the bubble; `50%` on the three social circles only                                                                                                                                                                                                     | shapes                                                   |
+| accent colour         | `#ffe151` (the subscribe bar) — the ONLY brand colour; everything else is white/`#333`/`#999`/`#666`/`#e6e6e6` plus the `#c80000` validation red                                                                                                                                                                | palette                                                  |
+| fonts                 | Playfair Display 400/500 (heading) · Poppins 500 15px (field, label tab, bubble) · Poppins 400 24px/16px (sub-line, caption)                                                                                                                                                                                    | typography                                               |
+| Google Fonts mapping  | `Playfair+Display:wght@400;500` + `Poppins:wght@400;500` — **no substitution needed** (all three source faces are on Google Fonts); no icon font (lucide-react)                                                                                                                                                 | `index.html` `<link>`                                    |
+| base type             | `body,html{font-family:Arial,sans-serif; font-size:15px; color:#666666; height:100%; background-color:#fff}` (all VISIBLE type is Playfair Display / Poppins)                                                                                                                                                   | typography                                               |
+| transitions           | `all .4s` (field, arrow glyph, social circles), `opacity .4s` (validation bubble); box-shadow switches `0.1 → 0.2` alpha on field focus                                                                                                                                                                         | interaction                                              |
+| attribution           | a small low-emphasis line linking `https://www.componentdock.com/` ("Component Dock"), pinned absolutely inside the left panel so the three-band `space-between` geometry is untouched                                                                                                                          | ADDED vs the reference (the source has no footer credit) |
+
+### Placeholder photograph
+
+The recreation never ships a source asset, so the photographic panel carries a
+seeded placeholder (`https://picsum.photos/seed/prologue-hollow/1200/900`). The
+seed was chosen deliberately: several seeds in this family render flat, heavily
+saturated frames (the first candidate returned a near-solid yellow image that
+collided with the `#ffe151` subscribe bar), so the shipped seed is a cool-toned
+outdoor scene closest to the reference's grey-green mountain/forest photograph.
+This is the ONE intentional deviation inside the design reference — every token
+around it is unchanged.
 
 ## Requirements
 
@@ -415,7 +426,7 @@ static photograph — with the family's `rgba(0,0,0,0.5)` scrim behind both.
 - **Then** it occupies `63%` of the row, is an EMPTY element (no children) with
   `background-position:center; background-repeat:no-repeat; background-size:cover`
 - **And** it shows exactly ONE image — the recreation's own placeholder
-  `https://picsum.photos/seed/prologue-photo/1200/900`
+  `https://picsum.photos/seed/prologue-hollow/1200/900`
 - **And** it carries NO slideshow, NO cross-fade, NO interval and NO caption,
   button or overlay of its own
 - **And** it is never the source's `bg01.jpg` file
@@ -618,28 +629,28 @@ subscribe control with its label tab and overhanging arrow button.
       panels (occluded/invisible — the photo must NOT be darkened); no gradient
 - [ ] Photo panel: empty element with
       `bg-[url(...)] bg-cover bg-center bg-no-repeat` using
-      `https://picsum.photos/seed/prologue-photo/1200/900`; NO slideshow, NO
+      `https://picsum.photos/seed/prologue-hollow/1200/900`; NO slideshow, NO
       interval, NO caption; never the source `bg01.jpg`
 - [ ] Panel: `bg-white flex flex-col justify-between pt-[37px] px-[50px] pb-[52px]
-      pl-[70px] max-[992px]:px-[15px]` with THREE children — mark, hero block,
+    pl-[70px] max-[992px]:px-[15px]` with THREE children — mark, hero block,
       social band
 - [ ] Mark: `block` wrapper (NO `flex-1`/`flex-grow`) with the app's own
       wordmark/monogram (`#333`, ≤43px tall, `max-w-full`), never the source PNG
 - [ ] Hero block: `w-full pt-[100px] pb-[90px] pl-[48px] max-[768px]:pl-0`
       holding `Heading` → `SubLine` → `SubscribeBar`
 - [ ] Heading: `h3` Playfair Display `text-[60px] leading-[1.1] font-medium
-      text-[#333] uppercase pb-[34px]`, no `letter-spacing`, NO italic, NO
+    text-[#333] uppercase pb-[34px]`, no `letter-spacing`, NO italic, NO
       weight-900, NO size change at any breakpoint; own copy
 - [ ] Sub-line: Poppins 400 `text-[24px] leading-[1.2] text-[#999] pb-[46px]`;
       own copy
 - [ ] Subscribe bar: `h-[80px] w-[650px] max-w-[calc(100%+110px)] relative
-      my-[10px] max-[992px]:max-w-full`, wrapping the field, the label tab and the
+    my-[10px] max-[992px]:max-w-full`, wrapping the field, the label tab and the
       arrow button; at 1440×900 the bar spans x=118→593 while the split is at 533
 - [ ] Field: `block h-full w-full pt-0 pr-[80px] pb-0 pl-[172px]
-      max-[576px]:pr-[60px] max-[576px]:pl-[25px] rounded-none border-0
-      bg-[#ffe151] shadow-[0_10px_15px_0_rgba(0,0,0,0.1)]
-      focus:shadow-[0_10px_15px_0_rgba(0,0,0,0.2)]`, Poppins 500 `text-[15px]
-      text-[#333]`, `placeholder:text-[#666]`, validated as an e-mail
+    max-[576px]:pr-[60px] max-[576px]:pl-[25px] rounded-none border-0
+    bg-[#ffe151] shadow-[0_10px_15px_0_rgba(0,0,0,0.1)]
+    focus:shadow-[0_10px_15px_0_rgba(0,0,0,0.2)]`, Poppins 500 `text-[15px]
+    text-[#333]`, `placeholder:text-[#666]`, validated as an e-mail
 - [ ] Label tab: absolute `left-0 top-0 h-[80px] w-[172px] max-[576px]:w-[5px]`
       `flex items-center justify-center` with `border-l-[5px] border-l-[#333]`,
       transparent fill, no radius, Poppins 500 15px `#333` caption; the caption
@@ -647,7 +658,7 @@ subscribe control with its label tab and overhanging arrow button.
 - [ ] Arrow button: absolute `right-0 top-0 h-[80px] w-[80px] max-[576px]:w-[60px]`
       `flex items-center justify-center` with no fill/border/radius, a 30px
       `#333` lucide arrow, `group-hover:translate-x-[10px]
-      transition-transform duration-[400ms]`, `aria-label` present; it sits over
+    transition-transform duration-[400ms]`, `aria-label` present; it sits over
       the photograph at ≥1200px
 - [ ] Social band: `flex flex-wrap items-center` with an uppercase Poppins 400
       `text-[16px] text-[#999] pr-[40px]` caption and THREE `size-9` (36×36)
@@ -655,7 +666,7 @@ subscribe control with its label tab and overhanging arrow button.
       links (`my-[5px] mr-[15px]`, `transition-all duration-[400ms]`, hover
       `bg-[#333] text-white`)
 - [ ] Validation: bubble = white, `border border-[#c80000] rounded-none
-      py-[4px] pl-[10px] pr-[25px]`, `max-w-[70%]`, vertically centred,
+    py-[4px] pl-[10px] pr-[25px]`, `max-w-[70%]`, vertically centred,
       `right-[72px]`, Poppins 500 14px/1.4 `#c80000`, `pointer-events-none`,
       opacity transition `400ms`; warning glyph 14px `#c80000` at `right-[78px]`;
       hidden-until-hover above 992px, always visible at ≤992px; cleared on focus;
