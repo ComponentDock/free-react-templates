@@ -600,3 +600,80 @@ contentinfo landmarks.
       the source's `site.webmanifest` / `assets/img/favicon.ico`
 - [ ] TEMPLATES.md `Wed` item marked `[x]` with the live
       `https://matrimony.free.componentdock.com` URL + homepage
+
+## Implementation notes (2026-10-12, implementer stream)
+
+Built as `apps/matrimony` (package `@free-react-templates/matrimony`).
+`bash scripts/verify-app.sh matrimony` green: typecheck + oxlint + 67 tests at
+**100 % statements / branches / functions / lines** + build; `npx knip --workspace
+apps/matrimony` silent; `npx openspec validate template-matrimony --type spec`
+prints `is valid`.
+
+### Measured reference vs. build (both at 1440 px; reference read from the live DOM)
+
+| Parameter | Reference | Build |
+| --- | --- | --- |
+| Bar | 103 px tall, links `39px 19px`, 16 px Barlow 500 `#3c3e48` | 102 px tall, links `39px 19px`, same type/colour |
+| Hero | 980 px (`600` at 780) | `min-height: 980px` (`600px` at 780) |
+| Hero caption | 99 px / `118.8` Playfair white, one line | 99 px / `118.8`, one line |
+| Hero eyebrow | 22 px Barlow, `0.3em`, `padding-left: 50px` | same |
+| Love-story panel | 474 × 583, text inset 150 px, photo `bottom:-51px; left:-30px` | 463 × 583, inset 150 px, offsets `-51px` / `-30px` |
+| Wedding-info band | `195px 0 170px` on `#f9f9f9`; cards 370 wide, `70px 25px`, active `1px solid #ff2828` | same paddings/colours; cards 350 wide (container tier), active border identical |
+| Countdown | strip `top:-73px`; cells 270/170/170/270, `44px` padding, 36 px numerals, 18 px labels | 278/185/185/278, `44px`, 36 px / 18 px |
+| Gallery | `100px 0 170px`; tiles 370/770/770/370 × 565 | `100px 0 170px`; tiles 370/740/740/370 × 565 |
+| Gift band | `120px 0 130px`, heading 70 px white, pill 259 × 60 r30 | identical |
+| RSVP | card `125px 70px 115px`, shadow `0 0 86px rgba(0,0,0,.06)`, heading 30 px, fields 60 px r5 `#d9d9d9`, submit 175 × 60 r30 | card identical; fields/submit identical (176 × 60) |
+| Registry | `0 0 150px`, six ~170 × 171 cards | `70px 0 150px`, six cards in one row from `lg`, scroll-snap row below |
+| Map | 235 px, desaturated | 235 px, `grayscale(1)`, keyless OSM frame |
+| Footer | `135px 0 74px` on `#12151a`, headings 18 px Roboto 500 uppercase white, links 14 px `#cfcfcf` capitalize, hairline `1px solid #26282c`, copyright 16 px centred | identical (`135px 15px 74px` including the container gutter) |
+| Mobile (375) | — | header 90 px with the toggle, hero 500 px, countdown stacked 4 × 330, gallery single column 330 × 300, registry scroll row (1095 vs 330), `scrollWidth === clientWidth === 360` |
+
+### Final placeholder seeds (reviewed on a contact sheet before shipping)
+
+| Role | Seed |
+| --- | --- |
+| Hero 1920 × 1080 | `matrimony-34` (a dark coastline — a calm, dark left third for the white caption) |
+| Love-story photo 900 × 1100 | `matrimony-19` |
+| Gallery 1 (narrow) | `matrimony-20` |
+| Gallery 2 (wide) | `matrimony-27` |
+| Gallery 3 (wide) | `matrimony-38` |
+| Gallery 4 (narrow) | `matrimony-13` |
+
+Twenty prepped/substitute seeds were fetched at 320 × 240 and read as a contact
+sheet; the first picks (a phone-screen flat-lay, a near-solid yellow frame, a
+stadium pitch) were dropped, and every `alt` now describes the frame that
+actually loads.
+
+### Documented deltas
+
+1. **Bar mechanism** — the reference ships `position: static` and its own script
+   swaps in `position: fixed` + the shadow on scroll; a `sticky` bar holds both
+   states with the same measured height and shadow, and needs no page offset.
+2. **Hero slideshow** — the reference runs two identical owl-carousel slides; one
+   static slide (sanctioned by the spec) shows the same first paint without a
+   carousel bundle. Entrance animation is `motion-safe:`, so reduced motion
+   renders the caption already in place.
+3. **Ornaments** — the four PNG flourishes (title rule, eyebrow mark, laurel,
+   gallery corner) are inline SVG redraws at the same scales; icons are
+   `lucide-react` (the reference's flaticon/themify fonts are not copied), and
+   the brand glyphs in the footer are inline paths (lucide ships no brand marks).
+4. **Damask bands** — the four band images are reproduced as two crossed
+   hairline lattices over the band colours (`@utility damask-red/cream/dark`),
+   chosen so no image is copied and the pattern still reads as cloth; the
+   average colours (`#ff3535`, `#f9f9f9`, `#12151a`) are the measured ones.
+5. **Map + head** — keyless OpenStreetMap `output=embed` frame under
+   `grayscale`; the source's keyed Google Maps script, its `gtag`/`UA-` analytics
+   bootstrap, its `site.webmanifest` and its `assets/img/favicon.ico` are never
+   reproduced (the app ships its own favicon + manifest and no third-party tag).
+6. **Copy supersession** — `docs/templates/matrimony/tasks.md` asks that the
+   design's navigation labels and band headings never be reused, while this spec
+   requires exactly those labels (`HOME · ABOUT · GALLERY · GUESTBOOK · BLOG ·
+   CONTACT US`), the band headings, `Are you attending?` and the gallery's
+   `image 01`–`image 04` captions. The validated spec wins: those strings ship,
+   and the provenance guard covers the design's *distinctive* strings only (brand,
+   slug, its couple, its dates, venue, address, phone and the misspelled pill).
+   The one typo the spec corrects is reproduced correctly: `Reserve your seat`.
+7. **Cards bottom-aligned** — idle cards carry `pb-0` (the reference's
+   `.single-card` has `padding-bottom: 0`, only `.active` gets `70px`) and their
+   pill reserves its space at `opacity-0`, so the three cards stagger as in the
+   design and the reveal is hover **and** `focus-within`.

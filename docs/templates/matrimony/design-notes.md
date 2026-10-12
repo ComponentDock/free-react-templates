@@ -344,3 +344,20 @@ All three families resolve on Google Fonts (HTTP 200):
 | Google Analytics (`gtag.js?id=UA-23581568-13`) + inline `dataLayer` bootstrap | nothing — the app ships no third-party tag |
 | `site.webmanifest` + `assets/img/favicon.ico` | an own manifest/favicon (source files never referenced) |
 | Copyright line linking Colorlib | Component Dock link + current year |
+
+## Implementer pass (2026-10-12) — shipped as `apps/matrimony`
+
+The prep research above was reproduced section-for-section. Two things changed
+during implementation and are recorded in the spec's `Implementation notes`:
+
+1. **Final seeds.** The seeds named in "Placeholder assets" were reviewed on a
+   contact sheet of 20 frames and re-seeded: hero `matrimony-34` (a dark
+   coastline — the prepped pick was a flat urban skyline), story photo
+   `matrimony-19`, gallery `matrimony-20 / -27 / -38 / -13`, and every `alt` was
+   rewritten to describe the frame that actually loads.
+2. **Copy supersession.** `tasks.md` (below) forbids the design's navigation
+   labels and band headings; `openspec/specs/template-matrimony/spec.md` requires
+   them. The spec is the validated contract, so the six labels, the band headings
+   and `Are you attending?` ship verbatim, and the provenance guard bans only the
+   design's distinctive strings. `site.webmanifest` / `favicon.ico` are replaced
+   by the app's own `matrimony.webmanifest` + `favicon.svg`.

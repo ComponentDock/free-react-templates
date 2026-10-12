@@ -1,0 +1,155 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Matrimony's palette. The design's canvas is white and its accent is the scarlet #ff2828 that
+     paints the buttons, the active card's border, the link hovers and every section-title flourish;
+     #da1b1b is the darker fill its buttons wipe to on hover; #ff3535 is the average of the two red
+     damask band images (the countdown strip and the gift band, and the love-story panel); the ink
+     scale runs #212121 (band headings) → #2e3c40 (card titles and subtext) → #636363 (body copy) →
+     #212529 (base body); #f9f9f9 is the near-white floral band, #f4f4f4 the 2px rule under each card
+     header, #d9d9d9/#a3a3a3 the field border and placeholder, #3c3e48 the nav ink, #cd0102 the
+     footer's heart glyph, #12151a the near-black footer band, #cfcfcf its links and #26282c its
+     hairline; the hero sits under a very light rgba(0,0,0,0.1) wash. Shapes: 30px pills for every
+     button, 5px on the fields. */
+  --color-brand: #ff2828;
+  --color-brand-dark: #da1b1b;
+  --color-band-red: #ff3535;
+  --color-heart: #cd0102;
+  --color-ink: #212121;
+  --color-ink-card: #2e3c40;
+  --color-body: #212529;
+  --color-muted: #636363;
+  --color-band: #f9f9f9;
+  --color-divider: #f4f4f4;
+  --color-field: #d9d9d9;
+  --color-field-text: #a3a3a3;
+  --color-nav: #3c3e48;
+  --color-footer: #12151a;
+  --color-footer-link: #cfcfcf;
+  --color-footer-line: #26282c;
+  --color-gift-ink: #362d2b;
+  --color-preloader: #f7f7f7;
+  --color-scrim: rgba(0, 0, 0, 0.1);
+  --color-veil: rgba(0, 0, 0, 0.8);
+  --color-frame: rgba(255, 255, 255, 0.35);
+  --color-plate: rgba(0, 0, 0, 0.35);
+
+  /* The shared Button/ButtonLink read their `primary` skin from this scale, so the brand scarlet is
+     what every shared button paints — including the #da1b1b hover wipe. */
+  --color-primary-400: #ff5c5c;
+  --color-primary-500: #ff2828;
+  --color-primary-600: #ff2828;
+  --color-primary-700: #da1b1b;
+
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Roboto', sans-serif;
+  --font-ui: 'Barlow', sans-serif;
+
+  --radius-pill: 30px;
+  --radius-field: 5px;
+
+  --shadow-card: 0 0 9px rgba(131, 93, 248, 0.07);
+  --shadow-card-hover: 0 10px 30px rgba(133, 66, 189, 0.1);
+  --shadow-form: 0 0 86px rgba(0, 0, 0, 0.06);
+  --shadow-header: 0 10px 15px rgba(25, 25, 25, 0.1);
+
+  /* The design was drawn against Bootstrap's four tiers, so the scale is re-pointed at them: the
+     folded menu takes over below lg (992px) and the wider card/band paddings arrive at xl (1200px),
+     exactly where the source's `col-xl-*` columns and its `xl` media rules turn over. */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+/* The three patterned bands. The design paints its bands with damask PNGs; the recreation draws the
+   same treatment with two crossed hairline lattices over the band's own colour, so no asset is
+   copied and the pattern still reads as cloth at page scale. Declared with `@utility` (not
+   `@layer utilities`) so a variant such as `group-hover:` still generates. */
+@utility damask-red {
+  background-color: var(--color-band-red);
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.07) 0 2px, transparent 2px 16px),
+    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.07) 0 2px, transparent 2px 16px);
+}
+
+@utility damask-cream {
+  background-color: var(--color-band);
+  background-image:
+    repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.022) 0 2px, transparent 2px 18px),
+    repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.022) 0 2px, transparent 2px 18px);
+}
+
+@utility damask-dark {
+  background-color: var(--color-footer);
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.03) 0 2px, transparent 2px 18px),
+    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.03) 0 2px, transparent 2px 18px);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #ffffff;
+    color: var(--color-body);
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  ::selection {
+    background: rgba(255, 40, 40, 0.25);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* The first-paint disc's own sweep: the design rotates its ring a full turn every two seconds. */
+@keyframes zoom {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* The hero caption's entrance, the design's fade-in-left in one keyframe set. */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
