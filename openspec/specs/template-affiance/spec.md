@@ -426,6 +426,67 @@ contentinfo landmarks.
   contentinfo landmark
 - **AND** the document title SHALL be "Affiance — Wedding Template"
 
+## Implementation notes (2026-10-12, implementer run)
+
+Everything below is a deliberate, recorded delta between the reference and the shipped
+`apps/affiance`. Everything else was reproduced section-for-section.
+
+- **Own copy everywhere a string is the design's own.** The brand (Affiance), the couple
+  (`Elias & Rosalind`), the hero tagline (`Saying Forever` — the source's pill reads
+  "Are Getting Married"), the two names and their blurbs, the four milestones, the five guest
+  messages, the eight attendants, the venue/address/phone/e-mail and the photography captions are
+  all invented for this recreation. The **layout** words the spec's requirements fix are kept
+  verbatim: the eight navigation labels, the band headings (Bride & Groom · Timeline of Love ·
+  Sweet Messages · Family & Friends · When & Where · Photo Gallery), the eyebrow pills
+  (About Bride & Groom · Love Story · Greetings · Bridesmaid & Groomsmen · Planning · Invitation ·
+  Gallery), `Save the Day`, `Invitation`, `Will You Attend?` and `I am attending`.
+- **Contact column heading:** the source heads it `Have a Questions?` (its own typo). The prepped
+  `docs/templates/affiance/tasks.md` forbids reprinting the source's column headings, so the
+  recreation heads it **`Any Questions?`** — the two generic headings (`Links`, `Services`) are
+  kept. `carriesSourceText` guards the typo'd string so it cannot creep back in.
+- **Hero scrim:** the source stacks four `background` declarations on `.herowrap .overlay`, the last
+  of which is `-webkit-gradient`/`linear-gradient(top, rgba(0,0,0,.4), rgba(239,1,124,.57))`. The
+  spec's requirement and token table name the opaque `rgba(0,0,0,.4)` scrim, so that is what ships
+  (`--color-scrim`); the pink gradient stop is not reproduced.
+- **Two fidelity details the requirement text did not name but the stylesheet carries** are
+  reproduced anyway: the countdown bar's inset `1px dashed #e1b5d2` frame (`#timer:after`,
+  `--color-timer-frame`) and the timeline cards' **double** dashed 1px frame, the two copies
+  tilted in opposite directions (`1deg` / `-1deg`).
+- **The bar's two states are the stylesheet's own, not a "transparent → pink" invention:** over the
+  hero the bar is transparent and `position:absolute`; below the design's 992px turn-over (where the
+  source swaps in a solid `#d291bc` bar) it is brand-pink; once the page is past 60px of scroll it
+  becomes the pinned state — `position:fixed`, `#f0d9e8` background, `0 0 10px rgba(0,0,0,.1)`
+  shadow, black labels and a brand-pink current label (all from `.ftco-navbar-light.scrolled`).
+- **Breakpoints:** the design's media queries are inclusive (`max-width: 767.98px` / `991.98px` /
+  `1199.98px`); Tailwind's `md:` / `lg:` / `xl:` are exclusive (`width < N`). The `@theme` scale is
+  re-pointed at Bootstrap's four tiers (576/768/992/1200), so the two differ only at exactly
+  576/768/992/1200px.
+- **Photography re-seeded after a visual review.** The prep's blind seeds were checked as a contact
+  sheet and replaced: `affiance-26` was a near-solid yellow frame, `affiance-25` a photograph of a
+  phone screen, `affiance-10` a flat-lay of electronic parts, and the portrait/avatar slots held
+  landscapes with no one in them. Shipped seeds — hero `49` (two figures in a misted field),
+  portraits `30` / `4`, milestones `11` / `33` / `19` / `59`, guest cards `46` / `51` / `41` / `60` /
+  `53`, attendants `54` / `52` / `22` / `13` / `37` / `44` / `36` / `48`, bands `29` (love story) and
+  `38` (invitation), gallery `6` / `12` / `18` / `24` / `43` / `15` / `35` / `42`. Every caption was
+  rewritten to describe the frame that actually loads.
+- **The invitation band's wash is white at 80%** (`--color-wash`), which is the source's
+  `.ftco-section .overlay` white gradient at `opacity:.8`; its four fields keep the source's
+  underline-only styling (`border-bottom` only, transparent background, 50px tall, 16px/600 text).
+- **Shared-button overrides need an arbitrary radius.** `cn()`/tailwind-merge does not classify the
+  custom theme radius (`rounded-bar`) into its border-radius group, so a shared `Button`/`ButtonLink`
+  kept its own `rounded-lg` and CSS order decided the result (8px instead of the design's 4px). Both
+  the See Map link and the RSVP submit therefore carry `rounded-[4px]`, which merges cleanly, and the
+  tests assert `rounded-[4px]` plus the absence of `rounded-lg`.
+- **Accessibility beyond the spec:** the countdown's four numbers each carry a screen-reader
+  sentence (`5 seconds`) beside their two-digit display, the folded menu's contents mount only while
+  it is open, the gallery lightbox is a labelled `role="dialog"` with a labelled close control and an
+  `Escape` handler, and every RSVP field carries a `<label>` (visually hidden, because the design's
+  fields show placeholders only).
+- **Provenance guard —** the app's own guard (`src/test/provenance.ts`) bans the design's brand,
+  slug, couple, party, dates, venue, milestone titles, guest card and the typo'd contact heading —
+  assembled from fragments so the guard never spells them out — and runs over both the rendered page
+  and every shipped source file.
+
 ## Verification checklist
 
 - [ ] `npm run typecheck` passes for `apps/affiance`
