@@ -10,7 +10,7 @@ downloadable source zip. Replication therefore used the **official source zip**
 448,688 B, 18 entries) as the DOM/CSS reference, plus the screenshot
 `https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-1.jpg`.
 Reference artifacts: `/tmp/cs01.zip`, extracted to `/tmp/cs01x/comingsoon_01/`
-(`index.html` 5,077 B · `css/style.css` 12,745 B · `js/snippet.js` 3,970 B),
+(`index.html` 5,168 B · `css/style.css` 12,745 B · `js/snippet.js` 3,970 B),
 screenshot converted to `/tmp/cs01.png`. Research date: 2026-10-11.
 
 ## Visual summary (from screenshot)
@@ -169,6 +169,10 @@ Re-verification on 2026-10-11 (fresh clone of the reference, `/tmp/cs01v/`):
 - `https://preview.colorlib.com/downloads/free/comingsoon_01.zip` → **HTTP
   200**, 448,688 B, extracted to `/tmp/cs01v/x/comingsoon_01/` (`index.html`
   5,168 B · `css/style.css` 12,745 B · `js/snippet.js` · `images/bg01.jpg`)
+  - **Corrected 2026-10-12:** the "Reference artifacts" block above said the
+    archive's `index.html` was 5,077 B; the member measures **5,168 B**
+    (sha256 `93303f51…`), and the zip (448,688 B, re-fetched 3× with `curl`)
+    is byte-identical to the one measured here on 2026-10-11.
 - Screenshot `coming-soon-1.jpg` served as AVIF, converted with ImageMagick to
   `/tmp/cs01v/shot.png` and reviewed visually — confirms the split layout
   (white form panel + starry-desert photo panel, diagonal edge, 2×2 countdown

@@ -55,7 +55,7 @@ light-gray input borders `#e6e6e6`. Brand socials keep their own hues
   HTTP 404. Fallback (documented): the official source zip
   `https://preview.colorlib.com/downloads/free/comingsoon_01.zip` (HTTP 200,
   448,688 B) was downloaded and extracted to `/tmp/cs01x/comingsoon_01/`
-  (`index.html`, 5,077 B; `css/style.css`, 12,745 B; `js/snippet.js`,
+  (`index.html`, 5,168 B; `css/style.css`, 12,745 B; `js/snippet.js`,
   3,970 B). Reference artifacts: `/tmp/cs01.zip`, `/tmp/cs01x/`,
   `/tmp/cs01.png` (converted screenshot). Research date: 2026-10-11. The
   source HTML/CSS is authoritative for section structure, copy, and tokens.
