@@ -1,0 +1,81 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Starboard palette — design tokens for a navigation-first page: a transparent
+     header floating over a frame-filling photograph, one white uppercase 16px
+     wordmark, a single white 28px hamburger, and a 300px white sidebar over a
+     rgba(0, 0, 0, .5) veil holding five flat 20px rows that turn #007bff on
+     hover with the current row already blue. The shape language is square
+     everywhere: this page has no rounded or circular control at all. */
+  --color-brand: #007bff;
+  --color-brand-shade: #0056b3;
+  --color-ink: #212529;
+  --color-close-hover: #ced4da;
+  --color-shell: #0b1016;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variant resolves to
+     the page's #007bff accent. */
+  --color-primary-50: #e6f1ff;
+  --color-primary-100: #cce4ff;
+  --color-primary-200: #99c9ff;
+  --color-primary-300: #66adff;
+  --color-primary-400: #3392ff;
+  --color-primary-500: #007bff;
+  --color-primary-600: #007bff;
+  --color-primary-700: #0069d9;
+  --color-primary-800: #0056b3;
+  --color-primary-900: #004085;
+
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+
+  /* The reference steps its container widths and its hand-over at
+     576 / 768 / 992 / 1200 — a grid scale, not Tailwind's default 640 / 768 /
+     1024 / 1280. Re-pointing the breakpoints keeps every utility in step. */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  --shadow-panel: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  ::selection {
+    background: rgba(0, 123, 255, 0.25);
+  }
+  /* Every transition on this page is decorative: the veil fade, the sidebar
+     slide and the row colour all collapse to effectively instant, so no content
+     is ever gated behind motion and the sidebar appears without sliding. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
