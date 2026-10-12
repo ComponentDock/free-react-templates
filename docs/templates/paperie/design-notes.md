@@ -341,8 +341,19 @@ Paperie stays a one-pager; those pages are read for structure and copy kind only
    select styled to the same 60 px skin (chevron 41 px from the right). The
    source's `action="#"` posts nowhere; validate locally and confirm in place.
 8. **Map** — a 500 px `#map` filled by Google Maps with an **API key baked into
-   the page**. Do not reuse it: the repo's existing templates embed either
-   OpenStreetMap or the key-less `maps.google.com/maps?...&output=embed` form.
+   the page** (`<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSy…&callback=initMap">`
+   + an inline `initMap()` / `new google.maps.Map(…)`). Do not reuse it: the repo's
+   existing templates embed either OpenStreetMap or the key-less
+   `maps.google.com/maps?...&output=embed` form.
+   The page also loads **its own analytics** —
+   `<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13">`
+   plus the inline `dataLayer` bootstrap (the preview host's shared UA id).
+   **Neither the key, that script nor the analytics id is reproduced:** the app
+   ships no third-party tag and its guard asserts `maps.googleapis.com`, `AIzaSy`,
+   `gtag` and any `UA-` id are absent. The head's other source-side facts
+   (`<link rel="manifest" href="site.webmanifest">` and
+   `<link rel="shortcut icon" href="assets/img/favicon.ico">`) are never
+   referenced either — the app ships its own favicon/manifest.
 9. **Partners** — `padding:200px 0`; five marks 170 × 171 each, slick autoplay
    (`slidesToShow:5`, 3 at ≤1024, 2 at ≤991/600), no dots, no arrows.
 10. **Footer** — `#f9f7f4`, `padding-top:200px; padding-bottom:74px` (70 px / 0
@@ -369,6 +380,8 @@ Paperie stays a one-pager; those pages are read for structure and copy kind only
 | nice-select overlay hiding the `<select>` | Real `<select>` styled to the same skin |
 | magnific-popup lightbox | `<dialog>`-based lightbox, keyboard operable |
 | Google Maps with an API key | OpenStreetMap embed iframe (no key) |
+| Google Analytics (`gtag.js?id=UA-23581568-13`) + inline `dataLayer` bootstrap | nothing — the app ships no third-party tag |
+| `site.webmanifest` + `assets/img/favicon.ico` | an own manifest/favicon (source files never referenced) |
 | Colorlib credit in the footer | Component Dock link (`https://www.componentdock.com/`) + current year |
 | All photography and sprig / branch PNGs | `picsum.photos/seed/paperie-<n>/<w>/<h>` + inline-SVG sprigs |
 | themify / themify-icons / fontawesome glyphs | `lucide-react` icons |
@@ -397,7 +410,9 @@ stylesheet at 1440 / 1200 / 768 / 375 px.
 1. New brand name **Paperie** (source "Invits" never appears in the app).
 2. Own couple names, dates, schedule titles, venue, footer copy and partner marks.
 3. Photography → seeded picsum; every sprig / branch / line-art shape → inline SVG.
-4. Map → OpenStreetMap embed instead of the source's keyed Google Maps.
+4. Map → OpenStreetMap embed instead of the source's keyed Google Maps; the
+   source's own analytics (`gtag.js?id=UA-23581568-13`) and its manifest/favicon
+   files are dropped entirely.
 5. Accessible substitutes for slicknav / nice-select / magnific-popup behaviour.
 6. Two-slide fade hero keeps the source's copy on both slides, but exposes a
    pause/reduced-motion path the source lacks (it ships `autoplay:false` with no

@@ -16,7 +16,13 @@ implementer ships it and the deploy is live.
 - [ ] `public/CNAME` = `reverie.free.componentdock.com`; `"homepage"` =
       `https://reverie.free.componentdock.com`.
 - [ ] `index.html`: Google Fonts `<link>` for **Cormorant Garamond** (300–700)
-      and **Raleway** (300–700), `<title>`, favicon.
+      and **Raleway** (300–700), plus **our own** head facts — `<title>`,
+      `meta description`, `rel=canonical` (`https://reverie.free.componentdock.com/`),
+      an own SVG favicon and (optionally) own `og:`/`twitter:` tags. The source's
+      head is placeholder data never to be reused: `rel=canonical`
+      `https://your-domain.com/`, `og:image`/`twitter:image` `img/og-image.jpg`, a
+      `Dreams Wedding Planner` JSON-LD block, `meta name=generator`
+      "Wedding Dreams 3.0.2" and a `G-XXXXXXXXXX` analytics script.
 - [ ] `src/index.css`: `@theme` brand tokens (see design-notes token table).
 - [ ] Run `npm install` at the repo root so `package-lock.json` registers the new
       workspace.
@@ -87,8 +93,11 @@ implementer ships it and the deploy is live.
 - [ ] Four fields (Name, Email, Services select, Guest select) 2×2; inputs
       `height:50px`, `1px solid #e1e1e1`, 14 px `#666`.
 - [ ] Square `SEND A REQUEST` button (`#a3a698`/`#111`).
-- [ ] Client-side validation, per-field messages, focus to first invalid field,
-      inline success state (no `php/` post).
+- [ ] Client-side validation, per-field messages, focus to first invalid field.
+      The source has **two** posts — the enquiry card to `php/send-email.php`
+      ("we will reply within one working day") and the footer pill to
+      `php/subscribe.php` ("you are on the list") — so ship **two distinct**
+      inline success states, keyed to the form submitted (no `php/` request).
 
 ## 8. Blog
 
@@ -123,11 +132,21 @@ implementer ships it and the deploy is live.
       the blog cards (`360×240`) and icon images, `loading="lazy"` below the fold,
       the hero image eager, `alt=""` on decorative imagery.
 
-## 12. Verification
+## 12. Document head + source-only third-party surface
+
+- [ ] Own `<title>`/description/canonical/favicon (and own `og:`/`twitter:`/JSON-LD
+      if any) — never the source's placeholder values, host or `img/og-image.jpg`.
+- [ ] No third-party tag: no `gtag`, `dataLayer`, `googletagmanager`, `G-…` id, no
+      CDN script/stylesheet — only the app bundle + the Google Fonts `<link>`.
+- [ ] Guard test: `grep -rE 'gtag|dataLayer|googletagmanager|your-domain\.com|og-image'
+      apps/reverie` is empty.
+
+## 13. Verification
 
 - [ ] `openspec validate template-reverie --type spec` passes.
 - [ ] TDD: tests first, `npm run test:coverage` at 100% for the app.
 - [ ] `scripts/verify-app.sh reverie` passes (typecheck + lint + coverage + build).
-- [ ] No ColorLib string anywhere in `apps/reverie`.
+- [ ] No ColorLib string anywhere in `apps/reverie`; no source head value, no
+      third-party tag, and both forms show their own success state.
 - [ ] README status regenerated (`npm run readme:status`), TEMPLATES.md `[ ]`→`[x]`
       with the surge URL, PR opened and squash-merged.

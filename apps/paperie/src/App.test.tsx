@@ -2,7 +2,8 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import { afterEach, describe, expect, it } from 'vitest'
 import { App } from './App'
 import { COUPLE, NAV, PAGE_TITLE, SECTION_IDS } from './lib/site'
-import { carriesSourceText, SOURCE_PHRASES } from './test/provenance'
+import shell from '../index.html?raw'
+import { carriesSourceText, carriesThirdPartyTag, SOURCE_PHRASES, THIRD_PARTY_PHRASES } from './test/provenance'
 
 /**
  * Every shipped file, read as text. Vite owns the resolution — `import.meta.url` is not a `file:`
@@ -34,6 +35,11 @@ function scrollTo(y: number): void {
 afterEach(() => {
   Object.defineProperty(window, 'scrollY', { value: 0, configurable: true, writable: true })
 })
+
+/** The head's own links, read from the static document rather than the rendered tree. */
+function headLink(href: string): boolean {
+  return shell.includes(`href="${href}"`)
+}
 
 describe('the Paperie page', () => {
   it('names the document after the template', () => {
@@ -114,8 +120,26 @@ describe('the Paperie page', () => {
     expect(offenders).toEqual([])
   })
 
+  it('ships no third-party tag and names its own icon and manifest in the head', () => {
+    render(<App />)
+
+    expect(headLink('/favicon.svg')).toBe(true)
+    expect(headLink('/paperie.webmanifest')).toBe(true)
+    expect(carriesThirdPartyTag(shell)).toBe(false)
+  })
+
+  it('keeps every shipped file free of the third-party tags the design loads', () => {
+    const entries = Object.entries(FILES).filter(([path]) => !path.includes('/test/provenance'))
+    const offenders = entries.filter(([, text]) => carriesThirdPartyTag(text)).map(([path]) => path)
+
+    expect(entries.length).toBeGreaterThan(15)
+    expect(offenders).toEqual([])
+  })
+
   it('proves that guard can fail', () => {
     expect(carriesSourceText(`${SOURCE_PHRASES[0]} weekend`)).toBe(true)
     expect(carriesSourceText('a page about invitations and letters')).toBe(false)
+    expect(carriesThirdPartyTag(`a page loading ${THIRD_PARTY_PHRASES[1]} now`)).toBe(true)
+    expect(carriesThirdPartyTag('a page loading its own icon and manifest')).toBe(false)
   })
 })

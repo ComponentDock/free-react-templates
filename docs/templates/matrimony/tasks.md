@@ -215,7 +215,10 @@ string `Colorlib`, or any copy verbatim.
       styled placeholder if the embed is undesirable), no Google API key, no
       Google script
 - [ ] Guard: assert the src contains no API key, the iframe has a `title`, and
-      it is `loading="lazy"`
+      it is `loading="lazy"`; also assert no third-party tag ships — the
+      source's own analytics (`gtag.js?id=UA-23581568-13` + inline `dataLayer`)
+      is never reproduced (`grep -rE 'gtag|dataLayer|googletagmanager|UA-'
+      apps/matrimony` is empty)
 
 ## Footer (`Footer`) (TDD)
 
@@ -264,7 +267,9 @@ string `Colorlib`, or any copy verbatim.
       slick / magnific-popup / animate / nice-select bundles, no
       `section_bg1–4.png` / `story1.jpg` / `story2.jpg` / `gallery1–4.png` /
       `tittle_img*.png` / `hero_shape*.png` / `shape1.png` / `brand1–6.jpg` /
-      `logo*.png` / flaticon or themify icon fonts, no Google Maps API key
+      `logo*.png` / flaticon or themify icon fonts, no Google Maps API key, no
+      source analytics (`gtag`/`dataLayer`/`UA-` id), no `site.webmanifest` or
+      `assets/img/favicon.ico` reference
 - [ ] PR description lists: source template + slug, preview URL, design tokens
       used (brand `#ff2828`, hover `#da1b1b`, band `#ff3535`, footer band
       `#12151a`, footer link `#cfcfcf`, ink `#212121`/`#2e3c40`/`#636363`, band

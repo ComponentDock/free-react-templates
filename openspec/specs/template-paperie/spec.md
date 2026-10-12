@@ -114,7 +114,14 @@ React 19 + Tailwind CSS 4 + TypeScript.
     right edge) and a 140 px message textarea (label letter-spaced 2 px), then a
     centred magenta submit button.
   - **Map:** a full-width **500 px** map band (the source embeds Google Maps with
-    an API key — the recreation must not reuse that key; see Adaptations).
+    an API key via
+    `<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSy…&callback=initMap">`
+    plus an inline `initMap()` — the recreation must not reuse that key; see
+    Adaptations). The same head also loads the source's **own analytics**
+    (`<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13">`
+    + the inline `dataLayer` bootstrap) and declares a `site.webmanifest` and an
+    `assets/img/favicon.ico` — none of it is reproduced (no third-party tag, an
+    own favicon/manifest).
   - **Our Lovely Partners:** 200 px/200 px, sprig + Playfair 40 px / 700
     uppercase title, then an **auto-scrolling row of five partner marks**
     (170 × 171 each; slick autoplay, 5 up on desktop, 3/2 at the breakpoints).
@@ -341,6 +348,9 @@ The system SHALL render a full-width 500 px map band beneath the RSVP card.
 - **THEN** it SHALL embed a keyboard-reachable, lazily loaded map iframe of
   height 500 px spanning the full width
 - **AND** it SHALL NOT call any map provider that requires an API key
+- **AND** the app SHALL ship no third-party tag: the source's analytics
+  (`gtag.js?id=UA-23581568-13` with its inline `dataLayer` bootstrap) is never
+  reproduced, and no `gtag`/`dataLayer`/`UA-` id appears in `apps/paperie`
 
 ### Requirement: Partners row
 
@@ -462,7 +472,9 @@ contentinfo landmarks, plus a scroll-to-top control.
       title, four corner sprigs, two outer branches, Name / Email / guest select
       / 140 px textarea (60 px fields, 1 px `#d9d9d9`, radius 5 px), local
       confirmation only
-- [x] Map: full-width 500 px lazily loaded iframe, no API key
+- [x] Map: full-width 500 px lazily loaded iframe, no API key; no third-party tag
+      ships (no `gtag`/`dataLayer`/`UA-` id, no `maps.googleapis.com` script) and
+      the head carries the app's own favicon/manifest instead of the source's
 - [x] Partners: sprig + uppercase title, five ~170 px marks, auto-scroll that
       pauses on hover and respects reduced motion
 - [x] Footer: `#f9f7f4`, four columns (blurb + e-mail/phone/address, WEDDING

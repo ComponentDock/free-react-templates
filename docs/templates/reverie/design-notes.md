@@ -159,8 +159,8 @@ no art direction either). The format is carried by `type=` / `type()`.
 | Where | Form | Count | Fallback / notes |
 | --- | --- | --- | --- |
 | Line-art icons + blog cards | `<picture><source srcset="img/…avif" type="image/avif"><img src="img/…png\|jpg" width=… height=… alt="" loading="lazy" decoding="async"></picture>` | **17** blocks — 14 icon wrappers (hero `hi`, both `ti` squiggles, six `si-N`, four `ci-N`) + **3** blog cards (`latest-1..3`, `360×240`) | raster PNG/JPG, `alt=""`, sized + lazy; the hero ornament is the eager one (`fetchpriority="high" decoding="sync"`, no `loading`) |
-| Hero, six feature tiles, counter band | inline `style="background-image: image-set(url('img/x.avif') type('image/avif'), url('img/x.png') type('image/png'))"` on the `.set-bg` element | **8 occurrences / 16 entries** | no `1x`/`2x` descriptor — the entries are `url(...) type(...)` pairs |
-| `css/style.min.css` (decorative PNG ornaments) | `…:before{background:url(../img/icon/x.png); background-image:image-set(url(../img/icon/x.avif) type("image/avif"),url(../img/icon/x.png) type("image/png"))}` | **3 rules** — `.request.request--services .request__form:before`, `…:after`, `.pricing__item:after` | plain PNG declared first in the same rule (a real fallback, unlike the inline bands) |
+| Hero, six feature tiles, counter band | inline `style="background-image: image-set(url('img/hero.avif') type('image/avif'), url('img/hero.png') type('image/png'))"` on the `.set-bg` element | **8 occurrences / 16 entries** | no `1x`/`2x` descriptor — the entries are `url(...) type(...)` pairs |
+| `css/style.min.css` (decorative PNG ornaments) | `…:before{background:url(../img/icon/form-left.png); background-image:image-set(url(../img/icon/form-left.avif) type("image/avif"),url(../img/icon/form-left.png) type("image/png"))}` | **3 rules** — `.request.request--services .request__form:before`, `…:after`, `.pricing__item:after` | plain PNG declared first in the same rule (a real fallback, unlike the inline bands) |
 | Head | `<link rel="preload" as="image" href="img/hero.avif" type="image/avif" fetchpriority="high">` | **1** | an AVIF-only preload — nothing else in the head preloads an image |
 
 The `.counter` computed `background-image` recorded above is therefore the
@@ -202,6 +202,29 @@ sections this one-pager must invent.
 
 None of them is copied; they are read for structure, copy kind and figures.
 
+## Document head + source-only third-party layer (measured 2026-10-12, `curl -sS` basis)
+
+The landing page is the **only** page in this open set that ships a metadata
+layer, and it is entirely **placeholder** data plus its own analytics — nothing
+here is reproduced. The recreation writes its own head facts and its own success
+copy.
+
+| Where | Live value (verbatim) | What the recreation does |
+| --- | --- | --- |
+| `<title>` | `Dreams \| Wedding Planning and Events` | own title (`Reverie — Wedding Planning and Events`-style, **no** "Dreams") |
+| `meta name=description` | "Dreams plans your wedding from the first idea to the last dance: photos and video, makeup, catering, live music, the cak…" | own description, same kind of copy, never the source's brand name |
+| `og:*` set (**5** props) | `og:type=website` · `og:site_name=Dreams` · `og:title` · `og:description` (= the meta description) · `og:image=img/og-image.jpg` | own OG `title`/`description` (+ own placeholder image or none); the source's `img/og-image.jpg` is never referenced or fetched |
+| `twitter:*` set (**4** props) | `twitter:card=summary_large_image` · `twitter:title` · `twitter:description` · `twitter:image=img/og-image.jpg` | same treatment as the `og:*` set |
+| `link rel=canonical` | **`https://your-domain.com/`** (an unrendered placeholder) | own canonical for `https://reverie.free.componentdock.com/` — never the source's placeholder host |
+| `application/ld+json` | a `LocalBusiness` block: name `Dreams Wedding Planner`, description "Wedding planning, photography, catering, music and honeymoon arrangements.", `hello@example.com`, `+1-503-555-0142`, 203 Fake St., Portland | if structured data ships at all it is **our own** (our name, our URL, no `Dreams`, no `hello@example.com`) |
+| `meta name=generator` | `Wedding Dreams 3.0.2` (the same `3.0.2` the asset URLs carry as `?v=`) | not reproduced |
+| `link rel=icon` | `img/favicon.svg` (`type=image/svg+xml`) | an own SVG favicon |
+| analytics | `<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX">` + the inline `dataLayer`/`gtag()` bootstrap — a **placeholder measurement id** | **never reproduced**: no `gtag`, no `dataLayer`, no `G-…` id anywhere in `apps/reverie` |
+| form endpoints (**2**, distinct) | the enquiry card's form `action="php/send-email.php"` (+ `data-kit-form`, `data-success="Thank you! We will reply within one working day."`); the footer pill form `action="php/subscribe.php"` (+ `data-success="Thank you! You are on the list."`); the search overlay form is `action="#"` | both replaced by client-side validation with **two distinct** inline success states, keyed to which form was submitted — the two destinations are not interchangeable |
+
+`curl -sS https://preview.colorlib.com/theme/weddingdreams/` is the basis of
+every value above (the page ships no archive twin and no `/etc/cs/` demo).
+
 ## Section-by-section fidelity notes
 
 1. **Header** — absolute, floats over the hero. White bar, rose-tinted shadow.
@@ -224,8 +247,10 @@ None of them is copied; they are read for structure, copy kind and figures.
    scroll (reduced-motion → static).
 6. **Request** — `margin-top:-235px` pulls the card onto the counter band. Green
    `#5e6350` header (radius top 10 px) + white panel (radius bottom 10 px, rose
-   shadow) with a 2×2 field grid and a square `SEND A REQUEST` button. Source
-   posts to `php/subscribe.php`; recreation validates client-side.
+   shadow) with a 2×2 field grid and a square `SEND A REQUEST` button. Source's
+   enquiry form posts to `php/send-email.php` (its footer pill posts to
+   `php/subscribe.php` — two different destinations); recreation validates
+   client-side and confirms in place.
 7. **Blog** — three cards, italic Cormorant Garamond `#6b705d` meta row, `#111`
    26 px titles.
 8. **Logo strip** — `#f7f8f3` band, ten monochrome vendor wordmarks (placeholders).
@@ -247,7 +272,10 @@ None of them is copied; they are read for structure, copy kind and figures.
 | Bootstrap 5 grid + custom classes | Tailwind 4 utilities + `cn()` |
 | Swiper/owl carousel | small CSS/JS marquee or Swiper only if already a dependency |
 | `js/main.min.js` (mobile menu, search, counter, filter) | React state + `IntersectionObserver` |
-| `php/subscribe.php` post | client-side validation + inline success state |
+| `php/send-email.php` post (enquiry card form — `data-kit-form`) | client-side validation + an inline "We will reply within one working day" success state |
+| `php/subscribe.php` post (footer pill form) | client-side validation + an inline "You are on the list" success state (a **separate** state from the enquiry card's) |
+| head metadata (`og:*` ×5, `twitter:*` ×4, `rel=canonical` → `https://your-domain.com/`, `LocalBusiness` JSON-LD, `meta name=generator "Wedding Dreams 3.0.2"`, `img/og-image.jpg`, `img/favicon.svg`) | own head facts only: own title/description/canonical (the app's `*.free.componentdock.com` URL), own SVG favicon, OG/Twitter/JSON-LD written from our own copy or omitted — **no source value, host or image is reused** |
+| Google Analytics (`gtag.js?id=G-XXXXXXXXXX` + `dataLayer` bootstrap) | nothing — no third-party tag ships; the guard asserts no `gtag`/`dataLayer`/`G-…` id in `apps/reverie` |
 
 ## Deltas (documented improvements over the source)
 
@@ -259,7 +287,15 @@ None of them is copied; they are read for structure, copy kind and figures.
   non-focusable `div`s).
 - **Counter roll-up** respects `prefers-reduced-motion`; hover transitions
   reduced-motion safe.
-- **Form validation** is client-side with per-field messages (source posts to PHP).
+- **Form validation** is client-side with per-field messages; the source's two
+  posts (`php/send-email.php` from the enquiry card, `php/subscribe.php` from the
+  footer pill) become two distinct inline success states.
+- **Head facts are ours, not the source's** — the source ships placeholder
+  metadata (`rel=canonical` → `https://your-domain.com/`, `og:image` →
+  `img/og-image.jpg`, a `Dreams Wedding Planner` JSON-LD block, `generator
+  "Wedding Dreams 3.0.2"`) plus its own analytics (`gtag.js?id=G-XXXXXXXXXX`).
+  The recreation writes its own title/description/canonical/favicon and ships no
+  third-party tag at all.
 - **Skip link** — the source already ships `<a class="skip-link" href="#main">Skip to
   content</a>` (hidden at `top:-100px`, sliding to `top:10px` on `:focus`) pointing
   at `<main id="main" tabindex="-1">`; keep it and keep the `tabindex="-1"` focus
@@ -307,6 +343,35 @@ closed here:
    said `.latest__item → img`, but each of the three blog cards is a
    `<picture>` pair with a `360×240` lazy `img` fallback; the skeleton line now
    reads `picture(img/blog/latest-N.avif|jpg 360×240, lazy)`.
+
+Re-audited the same day with the new **HEAD + THIRD-PARTY** axis
+(`scripts/verify-head-layer.py`, 20 controls). Six gaps were found and closed
+here:
+
+3. **COVERAGE — the head metadata layer was unnamed (5 flags).** The page is the
+   only item in the open set with a metadata layer: a **5-property `og:*`** set
+   (`og:image img/og-image.jpg`), a **4-property `twitter:*`** set,
+   `rel=canonical` → **`https://your-domain.com/`** (a placeholder),
+   an `application/ld+json` **`LocalBusiness`** block and
+   `meta name=generator "Wedding Dreams 3.0.2"` — and the prep named none of
+   them. Every value is source-side placeholder data, so the implementer had no
+   way to know a head layer exists, let alone that it must not be reused. Closed
+   with the "Document head + source-only third-party layer" section above, the
+   spec's `### Feature: Document head metadata and the two source-only form
+   endpoints`, the fidelity-rule and checklist lines.
+4. **ENDPOINT — the wrong endpoint was attributed (1 flag).** The request section
+   said "Source posts to `php/subscribe.php`", but the page has **two** distinct
+   POST destinations: the enquiry card posts to `php/send-email.php`
+   (`data-success="Thank you! We will reply within one working day."`) and only
+   the **footer pill** posts to `php/subscribe.php`
+   (`data-success="Thank you! You are on the list."`); the search overlay's form
+   is `action="#"`. Corrected in the spec scenario, the section notes, the
+   adaptation table and the deltas.
+5. **SILENT (note, not a flag) — the analytics is a placeholder id.** The page
+   loads `gtag.js?id=G-XXXXXXXXXX` (unlike its six siblings' `UA-23581568-13`);
+   the prep never mentions it. It is now named in the head section as
+   never-reproduced, so the app's guard can assert `gtag`/`dataLayer`/`G-…`
+   absence.
 
 Everything else the axis reads re-verified exact on this pass: 17/17 bare
 `srcset` descriptors (no width/density descriptor, no `media=`), zero `sizes`

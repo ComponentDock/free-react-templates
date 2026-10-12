@@ -29,6 +29,26 @@ export const SOURCE_PHRASES = [
   ['magnific-', 'popup'].join(''),
 ]
 
+/**
+ * Third-party tags the design's own head carries — a keyed map script and a shared analytics id.
+ * None of them may ship, and none is spelled out here for the same reason as the phrases above.
+ */
+export const THIRD_PARTY_PHRASES = [
+  ['map', 's.google', 'apis.com'].join(''),
+  ['AI', 'za', 'Sy'].join(''),
+  ['gt', 'ag'].join(''),
+  ['googletag', 'man', 'ager'].join(''),
+  ['U', 'A-'].join(''),
+  ['data', 'Lay', 'er'].join(''),
+]
+
+/** True when the given text carries any of the third-party tags the design loads. */
+export function carriesThirdPartyTag(text: string): boolean {
+  const haystack = text.toLowerCase()
+
+  return THIRD_PARTY_PHRASES.some((phrase) => haystack.includes(phrase.toLowerCase()))
+}
+
 function whole(text: string, needle: string): boolean {
   const escaped = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 
