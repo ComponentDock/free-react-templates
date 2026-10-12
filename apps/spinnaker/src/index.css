@@ -1,0 +1,93 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Spinnaker palette — the tokens for one rounded navy bar, inset inside the page's own container,
+     with the wordmark at its left and four sentence-case rows pushed right by an auto margin that
+     turn amber as they are hovered, and a single white panel as wide as the bar hanging under the
+     last of them with four plain items in its first quarter and three image cards after them. The
+     page is #fafafa with grey #808080 ink, the bar is #1c2938 on wide viewports and #000 below the
+     width its rows fold at, and the accent is a warm #fec771 amber worn by the inline links, a
+     hovered or current row, and the fill of a hovered panel item. The panel's own mobile surface is
+     a near-black #202020. Shape language: the bar is a 5px rounding carrying one soft shadow, the
+     panel a 4px rounding carrying a deeper one, and every row, item and picture stays square. */
+  --color-page: #fafafa;
+  --color-ink: #808080;
+  --color-accent: #fec771;
+  --color-bar: #1c2938;
+  --color-row: #e6e6e6;
+  --color-mega: #202020;
+
+  --font-sans: 'Poppins', Arial, sans-serif;
+
+  /* The chrome hands over at 992 (the bar's own reshape) and its panel grows its image columns at
+     768; the heading's container takes the classic tiers at 576 / 768 / 992 / 1200. Re-pointing the
+     scale keeps every utility in step with the widths the design itself turns at. */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  /* The bar's 5px rounding and the panel's 4px one; the rows, items and pictures are square. */
+  --radius-bar: 5px;
+  --radius-mega: 4px;
+
+  /* The page's two shadows: the shallow one under the bar itself, and the deeper one under the
+     panel a row opens. */
+  --shadow-bar: 0 5px 20px -17px rgba(0, 0, 0, 0.34);
+  --shadow-mega: 0 10px 34px -20px rgba(0, 0, 0, 0.41);
+
+  --ease-collapse: ease;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-page);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 0;
+  }
+  /* The design's own link colour is the page's accent, and it draws no underline in any state; the
+     hover and focus affordances restored on the links themselves are documented deltas. */
+  a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: var(--color-accent);
+  }
+  h2 {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  button {
+    border-radius: 0;
+  }
+  /* A selected run of text wears the page's own accent. */
+  ::selection {
+    background: rgba(254, 199, 113, 0.35);
+  }
+  /* Every transition here is decorative — the panel travelling out of the toggler's fold, the row
+     and item colours — so under reduced motion they land immediately and nothing is ever gated
+     behind them. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
