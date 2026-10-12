@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* palette: a white content panel beside a warm photographic half, both under
+     ONE rgba(0,0,0,0.5) scrim. There is no brand accent and no gradient — the
+     only hues are the near-black chrome (#333, mark #151515), the #999 /
+     #999999 greys, the #ccc social fills that darken to #333 on hover, and the
+     shared validation red (#c80000). */
+  --font-sans: 'Poppins', Arial, sans-serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
+
+  --color-panel: #ffffff;
+  --color-ink: #333333;
+  --color-mark: #151515;
+  --color-subline: #999999;
+  --color-placeholder: #999999;
+  --color-social: #cccccc;
+  --color-social-hover: #333333;
+  --color-error: #c80000;
+  --color-scrim: rgba(0, 0, 0, 0.5);
+
+  /* shapes: square corners everywhere — the e-mail well, its submit lane and
+     the validation bubble are all flat; the only radius in the design is the
+     50% of the three social circles. */
+  --radius-well: 0px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333333;
+    background-color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
