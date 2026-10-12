@@ -1,0 +1,94 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Davit palette — design tokens for a white rounded card floating on a soft grey page, with
+     one amber accent. The page is #fafafa (it is what makes the card read as a card), the card
+     itself is white and turns black below 992px, and the accent is a single amber #fec771 worn
+     as TEXT by the row the page is on and by the hovered row, as the ring and glyph of the
+     circled cart link at the end of the list, and as the fill of a hovered bill item behind
+     that link. Shape language: the page holds exactly three rounds — the card's 5px, the bill
+     list's 4px and the cart circle's 50% — and exactly two shadows, one on the card and one on
+     the list it opens. */
+  --color-page: #fafafa;
+  --color-ink: #808080;
+  --color-accent: #fec771;
+  --color-card: #ffffff;
+  --color-card-mobile: #000000;
+  --color-row: #333333;
+  --color-divider: #e9ecef;
+  --color-toggler: rgba(255, 255, 255, 0.5);
+  --color-panel-row: rgba(255, 255, 255, 0.7);
+
+  --font-sans: 'Poppins', Arial, sans-serif;
+
+  /* The page hands over at 576 / 768 / 992 / 1200 — the four container tiers, the width the
+     heading column halves at, the width the card turns black at, and the width the container
+     takes its widest cap. Re-pointing the scale keeps every utility in step. */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  /* The card's 5px and the bill list's 4px; the cart circle rounds itself at 50%. */
+  --radius-card: 5px;
+  --radius-menu: 4px;
+
+  /* The page's only two shadows: one under the card, one under the list it opens. */
+  --shadow-card: 0 5px 20px -17px rgba(0, 0, 0, 0.34);
+  --shadow-menu: 0 10px 34px -20px rgba(0, 0, 0, 0.41);
+
+  --ease-collapse: ease;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-page);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 0;
+  }
+  /* A row's label turns amber on hover, and the row the page is on wears that same amber at
+     rest — no underline is drawn at any state, so none is carried here either. */
+  a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: var(--color-accent);
+  }
+  h2 {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  button {
+    border-radius: 0;
+  }
+  /* A selected run of text wears the page's own accent, in the amber it is built around. */
+  ::selection {
+    background: rgba(254, 199, 113, 0.35);
+  }
+  /* Both transitions on this page are decorative — the panel travelling to its content height
+     and the colour changes on the rows, the circle and the bill items — so under reduced motion
+     they land immediately and nothing is ever gated behind them. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
