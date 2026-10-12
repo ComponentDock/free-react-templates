@@ -1,0 +1,17 @@
+{
+  "name": "Matrimony — Wedding Template",
+  "short_name": "Matrimony",
+  "description": "A free wedding template recreated in React, Tailwind CSS and TypeScript.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff2828",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    }
+  ]
+}
