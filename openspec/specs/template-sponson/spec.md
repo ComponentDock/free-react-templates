@@ -109,7 +109,7 @@ no text verbatim) and never reuses the source name.
   (the rail, the toggle) and **zero** `sticky` ones. The page contains **only** the rail and the
   content band.
 - **CSS namespace:** the sheet (**13,527 B**, **690** lines, **111** `{` blocks, **13** `@media`
-  blocks (5 width queries + 2 `print` + 4 `prefers-reduced-motion` + 1 `@supports`), **4**
+  blocks (6 width queries + 2 `print` + 5 `prefers-reduced-motion` + 1 `@supports`), **4**
   `@font-face` blocks), self-contained and `cl-`-prefixed for its utilities (`cl-container-fluid`,
   `cl-row`, `cl-col-md-6`, `cl-col-md-12`, `cl-icon`, `cl-mb-4`, `cl-mb-5`, `cl-px-3`, `cl-px-md-0`,
   `cl-pt-4`, `cl-h2`, `cl-h4`, plus the `.nav` base) and is a hand-rolled Bootstrap-4-look-alike —
@@ -129,7 +129,7 @@ no text verbatim) and never reuses the source name.
   `.cl-d-none`/`.cl-d-md-block`, `.cl-col-md-3`, `.cl-ml-auto`) is **entirely absent**; this sheet
   adds instead `#colorlib-aside` / `#colorlib-main` / `#colorlib-page` / `#colorlib-main-menu` /
   `.colorlib-nav-toggle` / `.js-fullheight` / `body.offcanvas`, the `@supports (height:100dvh)`
-  rule, the `a::after` underline animation and **four** `prefers-reduced-motion` blocks; the accent
+  rule, the `a::after` underline animation and **five** `prefers-reduced-motion` blocks; the accent
   swaps **`#fec771` amber → `#ff6768` coral**; the chrome moves from an **inset rounded navy bar**
   (`#1c2938`, `padding:10px`, `border-radius:5px`, a box-shadow) to a **square, shadowless,
   full-height white rail** (`border-radius` and `box-shadow` appear **nowhere** in this sheet); the
@@ -327,8 +327,9 @@ the two sub-blocks. There is **no** container tier (this sheet only ships `cl-co
 10. **The mobile-closed rail surface is `rgba(0,0,0,0.04)`, not `#fff`** (`@media (max-width:991.98px)
     #colorlib-aside{background:rgba(0,0,0,0.04)}`), and it becomes `#fff` only while
     `body.offcanvas`. Do not paint the closed drawer white.
-11. **`prefers-reduced-motion: reduce` is honoured in four separate places** (rail `0.5s`, main
-    `0.5s`, menu link `0.3s`, toggle `0.5s`/`0.2s`) — the recreation must disable these animations
+11. **`prefers-reduced-motion: reduce` is honoured in five separate blocks, covering four rule
+    groups** (rail `0.5s`, main `0.5s`, menu link `0.3s`, and the toggle — whose bars `0.2s` and
+    whose own `0.5s` are two of the five blocks) — the recreation must disable these animations
     too (delta: an implemented concern the source already gets right).
 12. **The sub-blocks stack at `768 px`** (`cl-col-md-6` 50 % → 100 %) while the container's gutters
     vanish at the same breakpoint — both come from `@media (min-width:768px)`, but the stacking is

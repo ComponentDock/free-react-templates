@@ -16,7 +16,8 @@ Fonts: headings **"Arima Madurai", cursive**, body **"Work Sans", sans-serif**.
 Preview: `https://preview.colorlib.com/theme/dreamwed/` (**HTTP 200**, 34,516 B,
 `<title>Dream | Template</title>`); stylesheet
 `https://preview.colorlib.com/theme/dreamwed/css/style.css` (**HTTP 200**,
-30,285 B — 132 rule groups, `@font-face` for Arima Madurai + Work Sans).
+30,285 B — 312 `{` blocks (256 selector rules, 5 `@media` blocks, 1 `@keyframes`), setting the
+`"Arima Madurai", cursive` and `"Work Sans", sans-serif` families).
 Screenshot `dreamwed-free-template.jpg` (HTTP 200, served **AVIF** despite the
 `.jpg` name, 69,828 B → converted to PNG and inspected): white page, ochre
 accents, photo hero with centred white script names + gold flourish + square gold
