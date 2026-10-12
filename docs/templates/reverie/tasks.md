@@ -153,6 +153,13 @@ implementer ships it and the deploy is live.
 
 - [ ] Own `<title>`/description/canonical/favicon (and own `og:`/`twitter:`/JSON-LD
       if any) — never the source's placeholder values, host or `img/og-image.jpg`.
+- [ ] Host layer excluded: the served reference head opens with the preview
+      host's `<meta name="robots" content="noindex, nofollow">` +
+      `<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` pair and
+      answers `x-robots-tag: noindex, nofollow` behind a host `robots.txt`
+      (`Disallow: /`) — none of it in `apps/reverie` (no `noindex`, no `robots`
+      meta, no `dns-prefetch`, no `cdnjs`, no `preview.colorlib.com`); the theme's
+      own head starts *below* that pair.
 - [ ] No third-party tag: no `gtag`, `dataLayer`, `googletagmanager`, `G-…` id, no
       CDN script/stylesheet — only the app bundle + the Google Fonts `<link>`.
 - [ ] Guard test: `grep -rE 'gtag|dataLayer|googletagmanager|your-domain\.com|og-image'

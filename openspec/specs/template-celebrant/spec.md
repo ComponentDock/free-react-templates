@@ -57,6 +57,17 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
   handle does **not** strip, so state the measurement basis (`curl -sS`) beside
   any such number. Fall back
   to the hyphenated form only if the un-hyphenated one ever disappears.
+- **Host layer (NOT the theme, measured 2026-10-12, `curl -sS` basis):** the
+  preview host injects a **two-element block as the first children of `<head>`**
+  — `<meta name="robots" content="noindex, nofollow">` +
+  `<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` — and answers
+  with `x-robots-tag: noindex, nofollow` (plus a `link:` preconnect/dns-prefetch
+  rela set and `speculation-rules: "/cdn-cgi/speculation"`), behind a host-wide
+  `https://preview.colorlib.com/robots.txt` (`User-agent: *` / `Disallow: /`).
+  The theme's own head starts *below* the pair. **Nothing of that layer is
+  reproduced in `apps/celebrant`** (no `noindex`, no `robots.txt`, no
+  `dns-prefetch`, no `cdnjs`, no host URL) — the served head's first children
+  must not be read as the theme's markup.
 - **Stylesheet fetched for tokens:**
   `https://preview.colorlib.com/theme/weddingofficiant/css/style.css` — **HTTP
   200**, 24,244 B, sha256
@@ -456,7 +467,13 @@ newsletter form, social links and a Component Dock copyright bar.
 ### Requirement: Page composition
 
 The system SHALL compose every section in a single page with banner, main and
-contentinfo landmarks.
+contentinfo landmarks, and a document head it owns. The reference's **served**
+head is not the theme's: the preview host injects `<meta name="robots"
+content="noindex, nofollow">` + `<link rel="dns-prefetch"
+href="https://cdnjs.cloudflare.com">` as the first children of `<head>` and
+answers with `x-robots-tag: noindex, nofollow` — host infrastructure the
+recreation SHALL NOT carry (no `noindex`, no `robots.txt`, no `dns-prefetch`,
+no `cdnjs`).
 
 #### Scenario: Full page render
 
@@ -468,6 +485,9 @@ contentinfo landmarks.
 - **AND** the document title SHALL be "Celebrant — Wedding Officiant Template"
 - **AND** the section order SHALL match the source 1:1 (header → hero →
   services → marriages carousel → feature grid → FAQ → footer)
+- **AND** the built document SHALL be indexable and free of the host layer
+  (no `noindex`/`nofollow`, no `robots` meta, no `dns-prefetch`, no `cdnjs`, no
+  `preview.colorlib.com` URL)
 
 ## Verification checklist
 
@@ -477,6 +497,12 @@ contentinfo landmarks.
       coverage tests + build)
 - [x] Full `npm run gate` passes in CI (knip + fallow included)
 - [x] `npm run spec:validate` passes
+- [x] Document head is the app's own and carries none of the preview host's
+      layer (no `noindex`/`nofollow`, no `robots` meta, no `dns-prefetch`, no
+      `cdnjs`, no `preview.colorlib.com`): the reference's served head opens with
+      `<meta name="robots" content="noindex, nofollow">` +
+      `<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">`, which are
+      host markup, not the theme's
 - [x] Preloader: full-screen `#fff` `#overlayer` (`z-index:7100`) with a centred
       loader mark above it (`z-index:7700`, `top/left:50%`,
       `translate(-50%,-50%)`), both fading out 200 ms after DOM ready,

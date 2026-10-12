@@ -6,6 +6,16 @@ sha256 `1d447eb2…`). Live preview is the **sole** DOM/CSS reference — the
 slug-only path is the only one alive (`theme/bootstrap/<slug>/` 404,
 `/downloads/free/<slug>.zip` 404, `colorlib.com/etc/cs/<slug>/` 404).
 
+**Host layer (NOT the theme, measured 2026-10-12):** the served `<head>` opens
+with the preview host's `<meta name="robots" content="noindex, nofollow">` +
+`<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` pair (glued to the
+`<head>` tag), the response carries `x-robots-tag: noindex, nofollow` and the
+host's own `robots.txt` is `User-agent: *` / `Disallow: /`. The theme's own head
+declarations start *below* that pair. Uniquely in the open set this theme also
+injects **no** `/cf-fonts/` `@font-face` block (it self-hosts its woff2 files),
+so the pair is the whole injected markup here. None of it goes into
+`apps/reverie`.
+
 ## DOM skeleton (source)
 
 ```
@@ -224,6 +234,7 @@ copy.
 | `meta name=generator` | `Wedding Dreams 3.0.2` (the same `3.0.2` the asset URLs carry as `?v=`) | not reproduced |
 | `link rel=icon` | `img/favicon.svg` (`type=image/svg+xml`) | an own SVG favicon |
 | analytics | `<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX">` + the inline `dataLayer`/`gtag()` bootstrap — a **placeholder measurement id** | **never reproduced**: no `gtag`, no `dataLayer`, no `G-…` id anywhere in `apps/reverie` |
+| **host layer** (NOT the theme) | the preview host injects a two-element block as the **first** children of `<head>`: `<meta name="robots" content="noindex, nofollow">` + `<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">`; the response carries `x-robots-tag: noindex, nofollow`, a `link:` preconnect/dns-prefetch rela set and `speculation-rules: "/cdn-cgi/speculation"`; the host's own `robots.txt` is `User-agent: *` / `Disallow: /` | **never reproduced**: no `noindex`/`nofollow`, no `robots` meta, no `dns-prefetch`, no `x-robots-tag`, no `cdnjs`, no host URL in `apps/reverie`. The theme's own head declarations start *below* the pair, so the served head's first children must not be read as theme markup |
 | form endpoints (**2**, distinct) | the enquiry card's form `action="php/send-email.php"` (+ `data-kit-form`, `data-success="Thank you! We will reply within one working day."`); the footer pill form `action="php/subscribe.php"` (+ `data-success="Thank you! You are on the list."`); the search overlay form is `action="#"` | both replaced by client-side validation with **two distinct** inline success states, keyed to which form was submitted — the two destinations are not interchangeable |
 
 `curl -sS https://preview.colorlib.com/theme/weddingdreams/` is the basis of

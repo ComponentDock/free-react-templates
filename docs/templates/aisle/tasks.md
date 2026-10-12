@@ -36,6 +36,14 @@ name, 1200×946 — re-measured 2026-10-12; the 892 first recorded came from the
 research:
 `docs/templates/aisle/design-notes.md`.
 
+**Host layer (NOT the theme, measured 2026-10-12):** the served preview's
+`<head>` opens with the host's `<meta name="robots" content="noindex, nofollow">`
++ `<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` pair and the
+response carries `x-robots-tag: noindex, nofollow`, behind the host's own
+`robots.txt` (`User-agent: *` / `Disallow: /`). The theme's own head starts below
+that pair; none of it goes into `apps/aisle` (no `noindex`, no `robots.txt`, no
+`dns-prefetch`, no `cdnjs`).
+
 Spec: `openspec/specs/template-aisle/spec.md`. New name: **aisle** (the wedding
 aisle — single lowercase word; no `apps/`, `openspec/specs/`, `docs/templates/`
 or TEMPLATES.md collision; wedding names already taken: altar · matrimony ·
@@ -57,6 +65,12 @@ paragraph, the address, the phone number, its Google Maps key or the string
       (`grep -c "free-react-templates/aisle" package-lock.json`)
 - [ ] `vite.config.ts` keeps `injectUiSource()` (copy the pattern from an
       existing app — Tailwind v4.3 drops relative `@source` paths)
+- [ ] Document head in `index.html`: the app's **own** `<title>` (the reference's
+      is the unrendered `TITLE`), description and favicon — and none of the
+      preview host's layer (the injected `<meta name="robots"
+      content="noindex, nofollow">` + `<link rel="dns-prefetch"
+      href="https://cdnjs.cloudflare.com">` pair, `x-robots-tag`, `cdnjs`, the
+      host `robots.txt`)
 - [ ] Google Fonts `<link>` in `index.html`:
       `https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&family=Playball&display=swap`
       (Playball 400 = every script heading and both logos; Bitter 400/500 =

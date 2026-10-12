@@ -15,6 +15,22 @@
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/wedding/`
   (HTTP 200, 22.6KB) + stylesheet `css/main.css` (33.0KB). Structure below is
   from the rendered DOM + CSS tokens.
+- **Host layer (NOT the theme, measured 2026-10-12):** the preview host injects
+  a two-element block as the first children of `<head>` —
+  `<meta name="robots" content="noindex, nofollow">` + `<link rel="dns-prefetch"
+  href="https://cdnjs.cloudflare.com">` — adds `x-robots-tag: noindex,
+  nofollow`, `link:` preconnect/dns-prefetch hints and
+  `speculation-rules: "/cdn-cgi/speculation"` to the response headers, and
+  serves a host-wide `robots.txt` (`User-agent: *` / `Disallow: /`). The theme's
+  own head starts *below* that pair, so the served head's first children must
+  not be read as the theme's markup. Nothing of that layer goes into
+  `apps/nuptials` (no `noindex`, no `robots.txt`, no `dns-prefetch`, no
+  `cdnjs`, no host URL).
+- **Theme-authored head declarations:** the theme's own head carries
+  `<meta name="author" content="CodePixar">` plus empty
+  `description`/`keywords` stubs and `<link rel="shortcut icon" href="img/fav.png">`.
+  The recreation writes its own title/description/favicon; the vendor's
+  `author` value is never reproduced.
 - **Screenshot note (this item):**
   `wedding-free-wedding-website-template.jpg` (1200x935 AVIF, converted to PNG
   for inspection): white contact topbar (+880 1234 654 953 ·
@@ -84,6 +100,13 @@
       `.nice-select span{font-weight:200}` are the design's light treatments — a
       default `400;500;700` link would snap them to 400. Verified on Google
       Fonts (HTTP 200).
+- [ ] Document head in `index.html`: the app's **own** `<title>`, description
+      and favicon. Never carry the served reference's host layer (the injected
+      `<meta name="robots" content="noindex, nofollow">` +
+      `<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` pair,
+      `x-robots-tag`, `cdnjs`, the host `robots.txt`) nor the theme's
+      `<meta name="author" content="CodePixar">`; assert the built page is
+      indexable and free of `preview.colorlib.com`.
 - [ ] Create `apps/nuptials` (copy `apps/aurora`; rename package to
       `@free-react-templates/nuptials`).
 - [ ] TDD: tests first for Navbar, Hero, About, DateStrip, Gallery,

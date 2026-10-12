@@ -11,6 +11,23 @@ import {
 } from './lib/site'
 import { carriesSourceText, SOURCE_PHRASES } from './test/provenance'
 
+/** The shell the app ships: the built document's head is generated from this one. */
+import shell from '../index.html?raw'
+
+/**
+ * The preview host's own layer — never the theme's markup and never the recreation's. The served
+ * reference's head opens with a `robots` meta and a `cdnjs` prefetch that belong to the preview
+ * host, and its stylesheet URL carries the host's name; all of it is assembled a piece at a time.
+ */
+const HOST_LAYER_PHRASES = [
+  'noindex',
+  'nofollow',
+  'name="robots"',
+  'dns-prefetch',
+  'cdnjs',
+  ['preview.', 'color', 'lib.com'].join(''),
+]
+
 /**
  * Every shipped source file, read as text. Vite owns the resolution — `import.meta.url` is not a
  * `file:` URL under vitest, and the working directory differs between a run inside the app and one
@@ -94,6 +111,21 @@ describe('the Celebrant page', () => {
     // The design truncated two card headings; the recreation corrects them, and the guard keeps up.
     expect(carriesSourceText('Red Wine Tasting')).toBe(false)
     expect(carriesSourceText('Invitation')).toBe(false)
+  })
+
+  it('owns its document head and carries none of the preview host layer', () => {
+    const head = shell.slice(0, shell.indexOf('</head>'))
+
+    expect(head).toContain(`<title>${PAGE_TITLE}</title>`)
+    expect(head).toContain('name="description"')
+    expect(head).toContain('rel="icon"')
+    expect(HOST_LAYER_PHRASES.some((phrase) => head.includes(phrase))).toBe(false)
+    // The guard would catch the host's own head: this is what the reference actually serves.
+    expect(
+      HOST_LAYER_PHRASES.some((phrase) =>
+        '<meta name="robots" content="noindex, nofollow">'.includes(phrase),
+      ),
+    ).toBe(true)
   })
 
   it('closes on the Component Dock credit the contract requires', () => {

@@ -15,6 +15,7 @@ secondary (visual) reference. No fallback was needed.
 | Preview HTML                        | `https://preview.colorlib.com/theme/wedding2/`                                                  | **HTTP 200**, 14,477 B, `text/html`, `<title>TITLE</title>`            |
 | Preview HTML stability (re-checked 2026-10-12) | strip the injected `<style media="print">` `@font-face` block          | 🔎 **raw page digest is request-unstable** (the host reorders the injected font rules per request; 3 fetches → 3 digests at an identical **14,477 B**) — cite neither a raw hash nor the raw size as a handle: the raw byte count is request-signature-dependent too (re-measured 2026-10-12) — the host likewise appends an extra **361 B** Cloudflare Insights beacon `<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/…">` before `</body>` for some client signatures, so a fetch whose headers differ from a plain `curl -sS <url>` sees **14,838 B**. Canonical handle (strip the injected block **and** the beacon script) is **12,024 B**, sha256 `2fb91a18dc7f5ec5fecfdaa1fa5eafddfe109c7f0de6895e215d82bb88ca3c48` — byte-identical across `curl -sS`, `curl -A <chrome UA>` and `urllib` with a Chrome UA (3 profiles × 3 fetches, 2026-10-12), while a client that additionally sends `Accept`/`Accept-Language` gets a further **416 B** Cloudflare first-party Google-tag script (`google_tags_first_party` / `/s9cc/`) this handle does not strip; state the measurement basis (`curl -sS`) next to any such number |
 | Main stylesheet                     | `https://preview.colorlib.com/theme/wedding2/01-homepage/css/styles.css`                        | **HTTP 200**, 12,286 B (saved `/tmp/wedding2-styles.css`)              |
+| Host layer (measured 2026-10-12, `curl -sS` basis) | `https://preview.colorlib.com/theme/wedding2/` + its response headers + `https://preview.colorlib.com/robots.txt` | 🔎 **not the theme's markup**: the host injects a two-element block as the **first** children of `<head>` — `<meta name="robots" content="noindex, nofollow">` and `<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` — adds `x-robots-tag: noindex, nofollow`, a `link:` preconnect/dns-prefetch rela set and `speculation-rules: "/cdn-cgi/speculation"` to the response headers, and serves a host-wide `robots.txt` (`User-agent: *` / `Disallow: /`). The theme's own head starts *below* the pair (`<title>TITLE</title>`, `X-UA-Compatible`, viewport, charset are its own). **Nothing of this layer is reproduced in `apps/aisle`** — no `noindex`, no `robots.txt`, no `dns-prefetch`, no `cdnjs`   |
 | Responsive stylesheet               | `…/wedding2/01-homepage/css/responsive.css`                                                     | **HTTP 200**, 4,147 B                                                  |
 | Other CSS the page loads (not used) | `common-css/bootstrap.css`, `common-css/font-icon.css`, `common-css/fluidbox.min.css`           | referenced only; the icon font is the source's own                    |
 | Screenshot                          | `https://colorlib.com/wp/wp-content/uploads/sites/2/wedding2-free-template.jpg`                 | **HTTP 200**, 113,016 B, `image/avif` (despite `.jpg`) → `ffmpeg` → PNG, **1200×946** (re-measured 2026-10-12 with `PIL.Image.open().size` + `ffprobe`, 3 fetches, sha256 `c43cec3ac0d4536f1b660ca12783d35f579e77fe84c395d6dc23a603d8a30759`; the 892 the first conversion recorded was a conversion defect, not the file's size) |
@@ -39,6 +40,15 @@ only**, exactly as used: `Playball` (cursive) for `h1,h2,h3` and every script
 accent, `Bitter` (serif) for `body`. `document.fonts` confirmed
 `Playball-400-loaded` and `Bitter-400-loaded`, plus the source's icon font
 `untitled-font-1`.
+
+Host layer (NOT the theme, measured 2026-10-12): the same served page opens its
+`<head>` with the host's `<meta name="robots" content="noindex, nofollow">` +
+`<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` pair, answers with
+`x-robots-tag: noindex, nofollow` and sits behind the host's own `robots.txt`
+(`User-agent: *` / `Disallow: /`). The theme's own head starts below that pair,
+so the served head's first children are not the theme's markup; nothing of that
+layer goes into `apps/aisle` (no `noindex`, no `robots.txt`, no `dns-prefetch`,
+no `cdnjs`).
 
 ## 2. Screenshot (1200×946, browser-chrome mock of the top of the page)
 

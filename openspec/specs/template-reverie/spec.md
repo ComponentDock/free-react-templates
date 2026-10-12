@@ -267,6 +267,16 @@ the source name, its copy verbatim or its typos.
   its **own** title/description/canonical/favicon (canonical = the app's
   `*.free.componentdock.com` URL) and ships **no** third-party tag, no
   `img/og-image.jpg` reference and no source metadata value.
+  ⚠️ **The served head is not the theme's** (host layer, measured 2026-10-12):
+  the preview host injects `<meta name="robots" content="noindex, nofollow">` +
+  `<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` as the **first
+  children of `<head>`** and answers with `x-robots-tag: noindex, nofollow`,
+  behind a host-wide `https://preview.colorlib.com/robots.txt` (`User-agent: *`
+  / `Disallow: /`). The theme's own head declarations start *below* that pair
+  (and, uniquely in the open set, this theme injects **no** `/cf-fonts/` block —
+  it self-hosts its woff2 files). None of the host layer may be reproduced in
+  `apps/reverie` (no `noindex`, no `robots.txt`, no `dns-prefetch`,
+  no `cdnjs`).
 - **Two source form endpoints, not one:** the enquiry card's form posts to
   `php/send-email.php` (`data-success="Thank you! We will reply within one
   working day."`) while the **footer pill** form posts to `php/subscribe.php`
@@ -594,8 +604,10 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
 #### Scenario: The recreation declares its own head metadata
 
 - **Given** the source's head carries a **5-property `og:*`** set (`og:type`, `og:site_name=Dreams`, `og:title`, `og:description`, `og:image=img/og-image.jpg`), a **4-property `twitter:*`** set (`twitter:card=summary_large_image` + title + description + image), a `rel=canonical` pointing at **`https://your-domain.com/`** (an unrendered placeholder), an `application/ld+json` **`LocalBusiness`** block (`Dreams Wedding Planner`, `hello@example.com`, `+1-503-555-0142`, 203 Fake St., Portland), `meta name=generator "Wedding Dreams 3.0.2"` and `rel=icon img/favicon.svg`
+- **And** the **served** head is not the theme's: the preview host injects `<meta name="robots" content="noindex, nofollow">` + `<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` as the first children of `<head>` and answers with `x-robots-tag: noindex, nofollow`, behind a host-wide `robots.txt` (`User-agent: *` / `Disallow: /`); the theme's own head starts below that pair
 - **When** `index.html` is rendered
 - **Then** its `<title>`, `meta description`, `rel=canonical` (the app's own `https://<name>.free.componentdock.com/` URL), favicon and any `og:`/`twitter:`/JSON-LD tags are **the recreation's own** — no source value, host, `generator` string or `img/og-image.jpg` reference appears anywhere in `apps/reverie`
+- **And** the host layer appears nowhere in `apps/reverie` either: no `noindex`/`nofollow`, no `robots` meta, no `dns-prefetch` hint, no `x-robots-tag`, no `cdnjs`, no `preview.colorlib.com` URL
 
 #### Scenario: No third-party tag ships, and the analytics is never reproduced
 
@@ -722,6 +734,12 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
 - [ ] No third-party tag ships: `grep -rE 'gtag|dataLayer|googletagmanager|G-[A-Z0-9]{6,}'
       apps/reverie` is empty, and the two forms show **two distinct** success states
       (enquiry card vs footer pill) with no navigation to a `php/` path.
+- [ ] Host layer excluded: the reference's served head opens with the host's
+      `<meta name="robots" content="noindex, nofollow">` + `<link
+      rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` pair and answers
+      `x-robots-tag: noindex, nofollow` behind a host `robots.txt`
+      (`Disallow: /`) — none of it appears in `apps/reverie` (no `noindex`, no
+      `robots` meta, no `dns-prefetch`, no `cdnjs`, no `preview.colorlib.com`).
 - [ ] `public/CNAME` = `reverie.free.componentdock.com`; `homepage` matches.
 - [ ] Tests: Vitest + Testing Library, 100% lines/functions/branches/statements.
 - [ ] `scripts/verify-app.sh reverie` passes (typecheck + lint + coverage + build).
