@@ -1,5 +1,10 @@
 # Betrothal — design notes (section-by-section fidelity)
 
+> **Superseded (2026-10-12).** Prepared for the ColorLib template `dreamwed`
+> (TEMPLATES.md line 3097). That template shipped as **Cherish** (`apps/cherish`,
+> https://cherish.free.componentdock.com) before this note was found. Do not build
+> an app from it under the name `betrothal`; the checklist line is already `[x]`.
+
 Recreation of ColorLib **"Dreamwed"** (source slug `dreamwed`) — a romantic
 single-page wedding / save-the-date template. Every note below is taken from the
 **live preview** `https://preview.colorlib.com/theme/dreamwed/` and its

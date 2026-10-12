@@ -1,3 +1,10 @@
+> **Superseded (2026-10-12).** This spec was prepped for the ColorLib template `dreamwed`
+> (TEMPLATES.md line 3097). That template has since shipped as **Cherish** (`apps/cherish`,
+> spec `openspec/specs/template-cherish/spec.md`, live at https://cherish.free.componentdock.com),
+> because the implementer stream picked the item before this spec was found — the prepped name was
+> looked up by guessing rather than by grepping the source slug. **No app should be built from this
+> spec under the name `betrothal`**; the checklist line is already `[x]`. Kept only as research.
+
 # Template: Betrothal (Wedding)
 
 ## Purpose
