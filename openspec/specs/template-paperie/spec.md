@@ -393,50 +393,88 @@ contentinfo landmarks, plus a scroll-to-top control.
 - **AND** after 300 px of scroll a magenta `#800098` circular scroll-to-top
   control SHALL fade in at the lower right
 
+## Implementation notes (built 2026-10-12)
+
+- **Nav copy:** the design's own labels are reproduced exactly as this spec's header
+  requirement lists them (`Our Story`, `Location`, `Gallery`, `Guest Book`, `Pages` →
+  `Blog` / `Blog Details` / `Element`, `Contact`) because they are the row the design
+  sets; the footer's three column headings (`WEDDING PLANNER FAQS`, `ABOUT US`,
+  `Instagram`) are likewise the spec's SHALLs. `docs/templates/paperie/tasks.md`
+  asked for those strings to be avoided — **this spec supersedes that bullet**; the
+  provenance guard therefore covers only the design's *distinctive* strings (brand,
+  slug, page title, couple, dates, running order, venue, studio details).
+- **Container width:** the recreation uses the repo's standard 1140px container
+  everywhere. The source's slider band uses a 1200px container of its own, so the
+  hero disc sits at `x = 158` at 1440 against the reference's `128` (30px); every
+  other band's measure matches (`story` photo 530 wide at `x = 165` vs `168`).
+- **Header height:** the design's bar measures **103px**; the recreation's row carries
+  no vertical padding of its own and lands at **102px** (link padding `39px 19px`, and
+  `26px 20px` once pinned), against the source's `15px 0` wrapper + 39px links.
+- **Hero copy:** the names are 13 characters so the line stays ONE line at 65px inside
+  the 450px disc at 992–1199 (measured `headingLines === 1` at 1440/1200/1199/992/991/
+  576/375); the reference's own 14-character line measures 405px.
+- **Pause control:** the source ships slick with `autoplay:false` and no controls at
+  all; this spec requires the slider to be *pausable*, so the recreation adds one
+  labelled disc in the hero's corner (no arrows, no dots — neither is visible).
+- **Dividers:** the gold rule is rendered only between neighbouring columns and is
+  `hidden` below `lg`, matching the sheet's `nth-child(3)` + media-query pair.
+- **Photography:** every seed was reviewed on a contact sheet before shipping; the
+  two frames that rendered near-white (`paperie-3`, `paperie-17`) and the off-tone
+  ones were re-seeded. Final seeds — hero `paperie-7`, `paperie-14`; story
+  `paperie-13`; schedule `paperie-22`, `paperie-18`, `paperie-20`; gallery
+  `paperie-9`, `paperie-12`, `paperie-24`, `paperie-27`, `paperie-8`, `paperie-19`;
+  gift `paperie-15`; foot `paperie-2`, `paperie-5`, `paperie-26`, `paperie-23`,
+  `paperie-28`, `paperie-10`.
+- **Accessible substitutes:** the Pages panel is a disclosure (`aria-expanded` +
+  `aria-hidden`, contents mounted while open in the folded presentation); the
+  nice-select is a real `<select>` on the same 60px skin; the magnific-popup lightbox
+  is a `role="dialog"` panel closed by its own control or Escape; the keyed Google map
+  is a key-less, sandboxed OpenStreetMap embed.
+
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for `apps/paperie`
-- [ ] `npm run lint` passes for `apps/paperie`
-- [ ] `scripts/verify-app.sh paperie` passes (typecheck + lint + 100 % coverage
+- [x] `npm run typecheck` passes for `apps/paperie`
+- [x] `npm run lint` passes for `apps/paperie`
+- [x] `scripts/verify-app.sh paperie` passes (typecheck + lint + 100 % coverage
       tests + build)
-- [ ] Full `npm run gate` passes in CI (knip + fallow included)
-- [ ] `npm run spec:validate` passes
-- [ ] Header: purple `#800098` wordmark with a red `#ff0b0b` full stop, six nav
+- [x] Full `npm run gate` passes in CI (knip + fallow included)
+- [x] `npm run spec:validate` passes
+- [x] Header: purple `#800098` wordmark with a red `#ff0b0b` full stop, six nav
       links in `#002e5b` (Pages dropdown: Blog, Blog Details, Element), hover →
       `#800098`; fixed white sticky bar with shadow + reduced padding on scroll
-- [ ] Mobile menu below 992 px: dark-grey bar, "Menu" button with hamburger, six
+- [x] Mobile menu below 992 px: dark-grey bar, "Menu" button with hamburger, six
       rows, `aria-expanded`
-- [ ] Hero: full-bleed photo + `rgba(0,0,0,.1)` scrim, 540 px purple circle
+- [x] Hero: full-bleed photo + `rgba(0,0,0,.1)` scrim, 540 px purple circle
       `rgba(129,29,146,.85)` with a white dashed ring rotating 30 s, fill-height
       800/750/560/400 px at the breakpoints, two fade slides, the copy's
       staggered `fadeInUp` entrance (.3/.5/.9 s), reduced-motion safe
-- [ ] Story: photo + bottom-left sprig, sprig above the Playfair 40 px / 700
+- [x] Story: photo + bottom-left sprig, sprig above the Playfair 40 px / 700
       uppercase heading, two `#978e98` paragraphs, pale edge ornaments
-- [ ] Schedule: `#fefcfa` band, three columns with 237 px ringed circular photos
+- [x] Schedule: `#fefcfa` band, three columns with 237 px ringed circular photos
       (`10px solid rgba(255,255,255,.8)`), 35 px titles, 20 px dates, blush
       `#daad9e` letter-spaced 10 px times, 2 px `#e09513` dividers
-- [ ] Memories: sprig + uppercase title, 3 × 2 no-gutter grid, hover
+- [x] Memories: sprig + uppercase title, 3 × 2 no-gutter grid, hover
       `rgba(0,0,0,.6)` overlay + 40 px plus circle + 10 px inset, keyboard
       operable lightbox
-- [ ] Gift: photo band with a white bottom-up gradient, 70 px / 700 title, 30 px
+- [x] Gift: photo band with a white bottom-up gradient, 70 px / 700 title, 30 px
       copy, magenta R.S.V.P button (radius 5 px) with the `#620672` sweep hover
-- [ ] RSVP: 570 px white card, `0 0 86px 0 rgba(0,0,0,.06)`, sprig above the
+- [x] RSVP: 570 px white card, `0 0 86px 0 rgba(0,0,0,.06)`, sprig above the
       title, four corner sprigs, two outer branches, Name / Email / guest select
       / 140 px textarea (60 px fields, 1 px `#d9d9d9`, radius 5 px), local
       confirmation only
-- [ ] Map: full-width 500 px lazily loaded iframe, no API key
-- [ ] Partners: sprig + uppercase title, five ~170 px marks, auto-scroll that
+- [x] Map: full-width 500 px lazily loaded iframe, no API key
+- [x] Partners: sprig + uppercase title, five ~170 px marks, auto-scroll that
       pauses on hover and respects reduced motion
-- [ ] Footer: `#f9f7f4`, four columns (blurb + e-mail/phone/address, WEDDING
+- [x] Footer: `#f9f7f4`, four columns (blurb + e-mail/phone/address, WEDDING
       PLANNER FAQS, ABOUT US, 6-image Instagram grid), `#868c98` links with the
       5 px purple hover shift, `#dddddd` rule over the centred copyright with a
       Component Dock link and the current year
-- [ ] Scroll-to-top: 50 px `#800098` circle appears after 300 px of scroll
-- [ ] Tokens: brand `#800098` in `@theme`; Playfair Display + Poppins loaded from
+- [x] Scroll-to-top: 50 px `#800098` circle appears after 300 px of scroll
+- [x] Tokens: brand `#800098` in `@theme`; Playfair Display + Poppins loaded from
       Google Fonts; radii 5 px / 50 % / the `0 37px 0px 24px` dropdown quirk
-- [ ] Placeholder images via seeded picsum (`seed/paperie-<n>/<w>/<h>`); sprigs
+- [x] Placeholder images via seeded picsum (`seed/paperie-<n>/<w>/<h>`); sprigs
       and branch ornaments are inline SVG; no ColorLib asset copied
-- [ ] No `colorlib` / `invits` / "Invits" string anywhere in the app (comments
+- [x] No `colorlib` / `invits` / "Invits" string anywhere in the app (comments
       included); footer links Component Dock
-- [ ] TEMPLATES.md `Invits` item marked `[x]` with the live
+- [x] TEMPLATES.md `Invits` item marked `[x]` with the live
       `https://paperie.free.componentdock.com` URL + homepage

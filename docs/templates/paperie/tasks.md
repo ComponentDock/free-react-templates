@@ -28,6 +28,15 @@ slim header with the purple "Invits." wordmark and a right-hand nav, purple
 circle hero over the couple photo, then the "OUR STORY" band with a sprig above
 the heading.
 
+**Superseded on implementation (2026-10-12):** the spec is the validated contract and it
+makes SHALLs of the design's own row labels (`Our Story`, `Location`, `Gallery`,
+`Guest Book`, `Pages` → `Blog`/`Blog Details`/`Element`, `Contact`) and of the foot's
+three column headings (`WEDDING PLANNER FAQS`, `ABOUT US`, `Instagram`), which the
+never-reuse list below forbids. The spec wins: those strings ship, and the provenance
+guard covers only the design's distinctive strings. See the spec's "Implementation
+notes". The header's height (102px built vs 103px in the design), the container width
+and the hero's added pause control are recorded there too.
+
 Spec: `openspec/specs/template-paperie/spec.md`. New name: **paperie** (a
 stationer's house — the source is an invitation design; keeps the Wedding
 family's naming run: lensly · vows · nuptial · knot · wedlock · nuptials ·

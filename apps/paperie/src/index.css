@@ -1,0 +1,195 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Paperie's palette — a cream-white invitation page. One magenta-purple accent carries every
+     emphasis (the buttons, the hover states, the heart glyph, the back-to-top disc); headings sit in
+     a warm brown-black ink over near-black body copy. #fefcfa is the schedule band's faint cream,
+     #f9f7f4 the foot of the page, #d9d9d9 the field hairline and #dddddd the closing rule. The hero
+     disc is the same magenta at 85% over the photograph, and its ring is white. */
+  --color-brand: #800098;
+  --color-brand-deep: #620672;
+  --color-ink: #362d2b;
+  --color-body-ink: #222222;
+  --color-nav: #002e5b;
+  --color-story: #978e98;
+  --color-placeholder: #a3a3a3;
+  --color-field-line: #d9d9d9;
+  --color-footlink: #868c98;
+  --color-blush: #daad9e;
+  --color-gold: #e09513;
+  --color-dot: #ff0b0b;
+  --color-cream: #fefcfa;
+  --color-foot-bg: #f9f7f4;
+  --color-address: #090908;
+  --color-rule: #dddddd;
+  --color-circle: rgba(129, 29, 146, 0.85);
+  --color-ring: rgba(255, 255, 255, 0.8);
+  --color-menu-bar: #4c4c4c;
+  --color-menu-btn: #222222;
+  --color-submenu-ink: #0b1c39;
+  --color-scrim: rgba(0, 0, 0, 0.1);
+  --color-veil: rgba(0, 0, 0, 0.6);
+
+  /* The shared Button/ButtonLink read their `primary` skin from this scale, so the brand magenta is
+     what every shared button paints (and #620672 is the fill its sweep uncovers). */
+  --color-primary-400: #a43bb8;
+  --color-primary-500: #800098;
+  --color-primary-600: #800098;
+  --color-primary-700: #620672;
+
+  --font-display: 'Playfair Display', serif;
+  --font-sans: 'Poppins', sans-serif;
+
+  --shadow-card: 0 0 86px 0 rgba(0, 0, 0, 0.06);
+  --shadow-sticky: 0 10px 15px rgba(25, 25, 25, 0.1);
+  --shadow-submenu: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+
+  --radius-field: 5px;
+
+  /* The design was drawn against the four-tier scale, so the row gives way to the folded menu at
+     1200px — the same turn the source makes — and the classic breakpoints stay in place. */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #ffffff;
+    color: var(--color-body-ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    font-weight: 500;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  ::selection {
+    background: rgba(128, 0, 152, 0.2);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer components {
+  /* The hero disc's dashed ring: the design rotates a sprite, so the recreation rotates the ring. */
+  .disc-spin {
+    animation: paperie-spin 30s linear infinite;
+  }
+
+  /* The hero's copy rises into place, one block per delay, exactly as the source's own animation
+     layer does — the class is dropped entirely when motion is not wanted. */
+  .copy-rise {
+    animation: paperie-rise 1s both;
+  }
+
+  /* The sticky bar drops in from above the viewport once the page has scrolled. */
+  .bar-drop {
+    animation: paperie-drop 0.5s ease-in-out;
+  }
+
+  /* The magenta button: a darker fill sweeps up from the baseline on hover and on keyboard focus. */
+  .sweep-up {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .sweep-up::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    border-radius: inherit;
+    background-color: var(--color-brand-deep);
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: transform 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  }
+  .sweep-up:hover::before,
+  .sweep-up:focus-visible::before {
+    transform: scaleY(1);
+  }
+
+  /* The gift band's wash: white rising from the bottom edge of the photograph. */
+  .gift-wash {
+    position: relative;
+  }
+  .gift-wash::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(
+      0deg,
+      #ffffff 0%,
+      rgba(215, 215, 215, 0.01) 99%,
+      rgba(215, 215, 215, 0) 100%
+    );
+  }
+
+  /* The partners row drifts slowly and holds still while the pointer is over it. */
+  .partners-track {
+    animation: paperie-drift 28s linear infinite;
+  }
+  .partners-row:hover .partners-track {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes paperie-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes paperie-rise {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes paperie-drop {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes paperie-drift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
