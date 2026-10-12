@@ -44,8 +44,14 @@ the two families are referenced directly from the stylesheet (`@font-face` /
   border-color:#ff2f92`.
 - **Header:** one slim row — a logo mark + wordmark on the left, a 12px
   uppercase nav row (with a Pages dropdown) and a search icon on the right; the
-  active/current link is pink. On scroll it becomes a fixed white bar with
-  `box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.1)`.
+  active/current link is pink. **The header is not sticky** — `header.header_area`
+  is `position:absolute` over the hero (`z-index:99`) and scrolls away. The sheet
+  does carry `.header_area.navbar_fixed .main_menu{position:fixed; …
+  box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.1)}`, but the only code that would add
+  `navbar_fixed` — `navbarFixed()` in `js/theme.js` — is **commented out**
+  (`// navbarFixed();`), so the rule never fires: dead CSS, **not** a behaviour to
+  reproduce. Verified live: `scrollTo(0,1500)` → header `y = -1500`,
+  `position:absolute`, `class="header_area"` unchanged.
 - **Cards/panels:** white with
   `box-shadow: 0px 10px 30px 0px rgba(153,153,153,0.1)` (journey text cards,
   reservation card, arrangement cards). The timer uses a translucent white
@@ -104,14 +110,26 @@ Source markup confirmations (from the fetched DOM):
    icon at the right end. Active/hover link is pink `#ff2f92`; dropdown items
    hover with a pink background and white text. Collapse to an accessible mobile
    disclosure below the small breakpoint (the source uses slicknav/jQuery).
-   Reproduce the fixed-on-scroll white bar with the soft shadow.
+   **Keep the header in flow — it is not sticky.** The source's
+   `.header_area.navbar_fixed` shadow rule is dead (`navbarFixed()` commented
+   out); do not add a scroll state, and drop that shadow token.
 2. **Hero.** `section.home_banner_area` (min-height 800px) with a full-bleed
    background photo (`home-banner.jpg`) and a dark scrim. Centred `banner_content`
    in white: `h5` "The Wedding of" (14px, uppercase, letter-spacing 1.4px), then
    `h3` couple names in **pink `#ff2f92`**, 48px, Playfair Display bold. Two white
    flourish ornament images bracket the names above and below. Placeholder photo:
    `picsum.photos/seed/trousseau-1/1920/1080`; ornament = inline SVG/`Ornament`
-   component (`aria-hidden`).
+   component (`aria-hidden`). **Parallax:** the photo is the source's single
+   `div.overlay.bg-parallax` and the page init runs `$('.bg-parallax').parallax()`
+   — the `jquery.parallax` (odahcam) bundle dropped in as `js/stellar.js`, whose
+   `parallaxTranslate` sets `transform: translateY((scrollTop − elTop) / 2)`
+   (`data-stellar-ratio="0.9"` is a leftover attribute and does nothing; the
+   background itself comes from CSS, not from `data-background`, which is empty).
+   Measured live: `translateY` **185.9 px** at `scrollTop 400` → **253.7 px** at
+   `900`. Reproduce with a scroll-linked transform on the photo layer, disabled
+   under `prefers-reduced-motion: reduce` — needs no dependency (a passive
+   `scroll` listener + `requestAnimationFrame`, or CSS `background-attachment:
+   fixed` as the cheap stand-in for a full-bleed band).
 3. **Story.** `section.story_area.p_120` → `row.story_inner` with three
    `col-lg-4`: framed photo (left), `story_text` (centre, `margin-top:88px`) and
    framed photo (right). `story_text` = `h3` "Cordially Invited" (36px display
@@ -189,12 +207,12 @@ Source markup confirmations (from the fetched DOM):
 | Borders | **`#eeeeee`** / **`#cccccc`** | inputs, selects, dividers |
 | Card shadow | **`0px 10px 30px 0px rgba(153, 153, 153, 0.1)`** | journey cards, reservation card, arrangement cards |
 | Timer panel | **`rgba(255, 255, 255, 0.3)`** | `.timer` (max-width 560px, cells flex 25%) |
-| Header scrolled shadow | **`0px 3px 16px 0px rgba(0, 0, 0, 0.1)`** | fixed header bar |
+| Dead scroll-state shadow (**do not reproduce** — its `navbarFixed()` init is commented out) | **`0px 3px 16px 0px rgba(0, 0, 0, 0.1)`** | `.header_area.navbar_fixed .main_menu` (never applied) |
 | Heading font | **`"Playfair Display", serif`** (600) | h1–h6, hero names, timer numbers/labels |
 | Body font | **`"Roboto", sans-serif`** | body, nav, buttons, form fields |
 | Buttons | `.main_btn` filled `#ff2f92`/`#fff`, uppercase bold, line-height 40px, padding 0 23px; hover transparent bg + pink text/border; **square** | all CTAs |
 | Radii | **square everywhere** — buttons, inputs, selects, cards (`border-radius:0`) | — |
-| Section backgrounds | white for Story / Journey / Moments / Reservation / Arrangement; background-photo + scrim for Hero (`home-banner.jpg`); background-photo for the Timer band (`timer-bg.png`); `#f9f9ff` for the Footer | — |
+| Section backgrounds | white for Story / Journey / Moments / Reservation / Arrangement; background-photo + scrim for Hero (`home-banner.jpg`, the one `bg-parallax` layer — scroll-drift, see §2); background-photo for the Timer band (`timer-bg.png`); `#f9f9ff` for the Footer | — |
 | Generic-only accents | `#f8b600` (amber) and `#4cd3e3` (cyan) appear in the sheet's **elements/generic** styles only — **not** the brand colour | — |
 
 ## Deltas to record in the PR
@@ -217,6 +235,14 @@ Source markup confirmations (from the fetched DOM):
 - Replaced the source's jQuery + `owl.carousel` + `nice-select` + lightbox +
   animate.css machinery with accessible, dependency-light components (accessible
   dropdowns/labels, a static registry row, a `<dialog>`-based gallery lightbox).
+- **Hero parallax reproduced without a dependency** (scroll-linked `translateY`
+  ~half rate, off under `prefers-reduced-motion: reduce`) — the source's
+  `js/stellar.js` bundle is not copied.
+- **Dropped the source's dead scroll-state header shadow**
+  (`0px 3px 16px 0px rgba(0, 0, 0, 0.1)`): it is gated on `navbar_fixed`, which
+  the commented-out `navbarFixed()` never applies, and the live preview's header
+  scrolls away (`position:absolute`). The recreation's header is in flow — the
+  earlier prep wording that promised a "fixed-on-scroll white bar" was wrong.
 - Added the repo-required `https://www.componentdock.com/` ("Component Dock")
   footer link; dropped the "made with ♥ by Colorlib" credit.
 - Fixed the source's misspelling "Arrengement" → "Arrangement" in the

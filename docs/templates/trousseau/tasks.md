@@ -86,8 +86,9 @@ Design notes: `docs/templates/trousseau/design-notes.md`.
       [Bridesmaid, Groomsmen, Elements], Blog, Contact) + a search toggle;
       active link asserts colour **`#ff2f92`**
 - [ ] Green: `<Header>` with a keyboard-operable dropdown + search control;
-      fixed white bar with `box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.1)` on
-      scroll
+      the header stays in flow over the hero (`position:absolute`) and scrolls
+      away — **no** sticky/fixed bar (the source's `navbarFixed()` is commented
+      out, so its `navbar_fixed` shadow rule never fires; verified live)
 - [ ] Guard: assert `aria-expanded` on the dropdown/mobile toggle and a mobile
       collapse at small widths; assert **no** `href="#"` dead anchors
 
@@ -98,9 +99,14 @@ Design notes: `docs/templates/trousseau/design-notes.md`.
       the couple names in a **48px display serif coloured pink `#ff2f92`** —
       bracketed by a white flourish ornament above and below (`aria-hidden`)
 - [ ] Green: `<Hero>` using `https://picsum.photos/seed/trousseau-1/1920/1080`
-      (placeholder — a delta, no ColorLib asset copied) under a dark overlay
+      (placeholder — a delta, no ColorLib asset copied) under a dark overlay;
+      the photo layer drifts against the scroll via a scroll-linked transform
+      (`translateY ≈ scroll/2`, reproducing the source's
+      `$('.bg-parallax').parallax()`), **off** under
+      `prefers-reduced-motion: reduce` — no new dependency
 - [ ] Guard: assert the names are pink `#ff2f92`, the ornaments are decorative,
-      and white copy over the scrim is legible
+      and white copy over the scrim is legible; assert the parallax transform is
+      absent when reduced motion is preferred
 
 ## Story (`Story`) (TDD)
 

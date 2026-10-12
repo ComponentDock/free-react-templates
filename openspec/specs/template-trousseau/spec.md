@@ -61,13 +61,22 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   1. **Header** (`header.header_area`): wordmark + logo left; a centred/right
      uppercase nav — Home, Our Story, Accomodation, Gallery, Pages (dropdown:
      Bridesmaid, Groomsmen, Elements), Blog, Contact — plus a search toggle.
-     Active link pink `#ff2f92`. Fixed-header variant gains a white bar with a
-     shadow on scroll.
+     Active link pink `#ff2f92`. **The header is not sticky:** `header.header_area`
+     is `position:absolute` over the hero and scrolls away with the page (the
+     sheet carries a `.header_area.navbar_fixed .main_menu{position:fixed;
+     box-shadow:0px 3px 16px 0px rgba(0,0,0,0.1)}` rule, but the source's own
+     `navbarFixed()` — the only thing that would add `navbar_fixed` — is
+     **commented out** in `js/theme.js`, so that rule is dead; verified live:
+     after `scrollTo(0,1500)` the header sits at `y = -1500`).
   2. **Hero** (`section.home_banner_area`, bg photo `img/banner/home-banner.jpg`
      + dark scrim): centred copy — `h5` "The Wedding of" (white, uppercase,
      letter-spaced), `h3` couple names in **pink `#ff2f92`** display serif,
      bracketed by two white flourish ornament images (`shap-1.png` above,
-     `shap-2.png` below).
+     `shap-2.png` below). The photo is the source's single **`bg-parallax`
+     overlay** — the page init calls `$('.bg-parallax').parallax()` (the
+     `jquery.parallax` bundle shipped as `js/stellar.js`, which translates the
+     layer by half the scroll distance; `data-stellar-ratio="0.9"` is inert),
+     so the hero photo drifts against the scroll.
   3. **Story** (`section.story_area.p_120`): a `row.story_inner` of three
      `col-lg-4` columns — ornate framed photo · centred `story_text`
      (`h3` "Cordially Invited", a small grey line "On the 13th of may, 2018 /
@@ -180,6 +189,16 @@ row (with a dropdown) and a search toggle.
 - **AND** SHALL show a search toggle control
 - **AND** the active link SHALL be styled in the brand pink `#ff2f92`
 
+#### Scenario: Header is not sticky
+
+- **GIVEN** the page is rendered
+- **WHEN** the visitor scrolls past the hero
+- **THEN** the header SHALL scroll away with the page (it is `position:absolute`
+  over the hero, in normal flow)
+- **AND** SHALL NOT acquire a fixed/sticky state or a scroll shadow — the
+  source's `navbar_fixed` rule is dead because its `navbarFixed()` init is
+  commented out (verified live: header `y = -1500` at `scrollTop = 1500`)
+
 #### Scenario: Mobile menu
 
 - **GIVEN** the page is rendered at a mobile viewport width
@@ -203,6 +222,10 @@ white/pink copy bracketed by white flourish ornaments.
 - **AND** SHALL bracket the names with a decorative white flourish ornament
   above and below (aria-hidden)
 - **AND** the hero SHALL use a full-width background photo under a dark scrim
+- **AND** that photo layer SHALL drift against the scroll (the source's
+  `$('.bg-parallax').parallax()` translates it by half the scroll distance) —
+  via a scroll-linked transform, and SHALL be disabled under
+  `prefers-reduced-motion: reduce`
 
 ### Requirement: Story section
 
@@ -339,10 +362,12 @@ a main landmark and a contentinfo landmark.
 - [ ] `npm run spec:validate` passes
 - [ ] Header: logo + "Trousseau" wordmark, uppercase nav (Home, Our Story,
       Accomodation, Gallery, Pages dropdown, Blog, Contact) + search, active
-      link pink `#ff2f92`, mobile menu with aria-expanded
+      link pink `#ff2f92`, mobile menu with aria-expanded; **not** sticky — the
+      header scrolls away (the source's `navbar_fixed` rule is dead)
 - [ ] Hero: full-width photo + dark scrim, "The Wedding of" line, pink
       `#ff2f92` display-serif couple names bracketed by white flourish
-      ornaments
+      ornaments; the photo layer drifts against the scroll (half-rate
+      translateY) and is off under `prefers-reduced-motion: reduce`
 - [ ] Story: three-column band — framed photo, "Cordially Invited" + date/names/
       venue line + square pink "View Our Story" button, framed photo
 - [ ] Timer: bg-photo band "Until we getting married", translucent white panel
