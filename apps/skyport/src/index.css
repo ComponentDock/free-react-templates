@@ -1,0 +1,68 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Skyport palette — a cloud-hosting brand built on a single azure accent over
+     dark chrome. Design tokens: brand azure #3898f8 (filled buttons, top-bar
+     button, call-action band, counters, link hover, social hover); dark chrome
+     #222222 (utility bar, footer band, square price button) and #111111
+     (footer social chips); soft card surface #f9f9ff with a #f1f1f1 element
+     tint; page surface #ffffff; ink #222222 for headings and nav, #777777 for
+     body copy, #333 for alternate darks and #cccccc for footer social glyphs;
+     hairlines #eeeeee; a single photo-band overlay at rgba(0, 0, 0, .5);
+     Poppins 300/400/500/600/700 throughout; 25px pill radii (azure / white /
+     azure-pill button variants), 20px on the footer input and 0 on the price
+     button, cards and form fields. */
+  --color-brand: #3898f8;
+  --color-brand-deep: #2b86e6;
+  --color-dark: #222222;
+  --color-darkest: #111111;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f9f9ff;
+  --color-surface-tint: #f1f1f1;
+  --color-ink: #222222;
+  --color-copy: #777777;
+  --color-copy-alt: #333333;
+  --color-line: #eeeeee;
+  --color-social: #cccccc;
+  --color-overlay: rgba(0, 0, 0, 0.5);
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variant resolves
+     to the azure brand accent. */
+  --color-primary-50: #eff7ff;
+  --color-primary-100: #d7ebff;
+  --color-primary-200: #b3d9ff;
+  --color-primary-300: #82c2ff;
+  --color-primary-400: #4fabfb;
+  --color-primary-500: #3898f8;
+  --color-primary-600: #3898f8;
+  --color-primary-700: #2b86e6;
+  --color-primary-800: #2070cc;
+  --color-primary-900: #1a5aa3;
+
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-copy);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-ink);
+    font-weight: 600;
+    line-height: 1.2em;
+  }
+}
