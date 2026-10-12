@@ -269,3 +269,22 @@ inventory only.
   footer link; dropped the "made with ♥ by Colorlib" credit.
 - Fixed the source's misspelling "Arrengement" → "Arrangement" in the
   recreation's own heading.
+
+## Post-implementation deltas (2026-10-12)
+
+- **The placeholder seeds were re-picked after the frames were actually looked
+  at.** Every seed named above (and sixteen more) was downloaded to a contact
+  sheet and read: the circle slots' treeline is a bleak misted avenue and the
+  orchard-lunch frame is a frog on green water, neither of them right for a
+  wedding page. The shipped seeds are hero `trousseau-1`, story `trousseau-2` /
+  `trousseau-3`, moments `trousseau-4, 5, 6, 7, 26, 29`, circles
+  `trousseau-35, 30, 22, 25, 33, 14`, arrangement `trousseau-10, 19, 8, 16` and
+  the countdown band `trousseau-23` — the full table and the measured
+  fidelity numbers live in the spec's Implementation notes. The moment captions
+  were rewritten to match the frames they now sit under.
+- **The section heading stays the design's own spelling** ("Arrengement in
+  progress"), because the spec's requirement makes it a `SHALL`; the delta list
+  above proposed respelling it, and the spec wins.
+- The nine inner pages are folded into the one page with the `Pages` dropdown
+  pointing at real in-page bands (`#attendants`, `#groomsmen`, `#registry`), and
+  every nav href on the page is asserted to resolve to an id that exists.

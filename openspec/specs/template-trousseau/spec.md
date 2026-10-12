@@ -180,6 +180,11 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   Icons → lucide-react (Heart, Menu, X, Search, ChevronDown, Expand, Clock,
   MapPin, Calendar, Gift, Facebook, Twitter, Instagram, Send). No assets copied;
   brand pink `#ff2f92` in `@theme`.
+- **Final placeholder seeds** (each one reviewed as an image before shipping —
+  see Implementation notes): hero `trousseau-1`, story `trousseau-2` /
+  `trousseau-3`, moments `trousseau-4, 5, 6, 7, 26, 29`, journey circles
+  `trousseau-35, 30, 22, 25, 33, 14`, arrangement `trousseau-10, 19, 8, 16`,
+  countdown band `trousseau-23`.
 
 Trousseau lives in `apps/trousseau` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, Badge, cn).
@@ -367,41 +372,104 @@ a main landmark and a contentinfo landmark.
 
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for `apps/trousseau`
-- [ ] `npm run lint` passes for `apps/trousseau`
-- [ ] `scripts/verify-app.sh trousseau` passes (typecheck + lint + 100%
+- [x] `npm run typecheck` passes for `apps/trousseau`
+- [x] `npm run lint` passes for `apps/trousseau`
+- [x] `scripts/verify-app.sh trousseau` passes (typecheck + lint + 100%
       coverage tests + build)
-- [ ] Full `npm run gate` passes in CI (knip + fallow included)
-- [ ] `npm run spec:validate` passes
-- [ ] Header: logo + "Trousseau" wordmark, uppercase nav (Home, Our Story,
+- [x] Full `npm run gate` passes in CI (knip + fallow included)
+- [x] `npm run spec:validate` passes
+- [x] Header: logo + "Trousseau" wordmark, uppercase nav (Home, Our Story,
       Accomodation, Gallery, Pages dropdown, Blog, Contact) + search, active
       link pink `#ff2f92`, mobile menu with aria-expanded; **not** sticky — the
       header scrolls away (the source's `navbar_fixed` rule is dead)
-- [ ] Hero: full-width photo + dark scrim, "The Wedding of" line, pink
+- [x] Hero: full-width photo + dark scrim, "The Wedding of" line, pink
       `#ff2f92` display-serif couple names bracketed by white flourish
       ornaments; the photo layer drifts against the scroll (half-rate
       translateY) and is off under `prefers-reduced-motion: reduce`
-- [ ] Story: three-column band — framed photo, "Cordially Invited" + date/names/
+- [x] Story: three-column band — framed photo, "Cordially Invited" + date/names/
       venue line + square pink "View Our Story" button, framed photo
-- [ ] Timer: bg-photo band "Until we getting married", translucent white panel
+- [x] Timer: bg-photo band "Until we getting married", translucent white panel
       with four cells (days/hours/Minutes/seconds), "are remaining" line
-- [ ] Journey: "Our Love Journey" + intro, 3 circular photos (name + role),
+- [x] Journey: "Our Love Journey" + intro, 3 circular photos (name + role),
       4 bordered text cards (title + blurb + corner flourish), 3 more circular
       photos
-- [ ] Moments: "Special Moments Captured" + six-across photo grid with hover
+- [x] Moments: "Special Moments Captured" + six-across photo grid with hover
       overlay + expand affordance
-- [ ] Reservation: white card (max-width 555px, soft shadow) — Name, Email,
+- [x] Reservation: white card (max-width 555px, soft shadow) — Name, Email,
       meal-preferences select, number-of-guests select, pink "Confirm Now"
-- [ ] Arrangement: "Arrengement in progress" + four white cards with photo,
+- [x] Arrangement: "Arrengement in progress" + four white cards with photo,
       title, blurb and Date/Time/Address
-- [ ] Gift Registry: "Gift Registry" + heading + row of 5+ registry marks
+- [x] Gift Registry: "Gift Registry" + heading + row of 5+ registry marks
       (muted → full on hover)
-- [ ] Footer: `#f9f9ff` band, logo + menu row + social row + copyright bar
+- [x] Footer: `#f9f9ff` band, logo + menu row + social row + copyright bar
       (current year) + Component Dock link
-- [ ] No copied ColorLib assets; brand pink `#ff2f92` in `@theme`; everything
+- [x] No copied ColorLib assets; brand pink `#ff2f92` in `@theme`; everything
       square (no border-radius); fonts Playfair Display + Roboto
-- [ ] Placeholder images via seeded picsum (`seed/trousseau-<n>/<w>/<h>`)
-- [ ] No `colorlib` / `honey` / "Honey" / `Colorlib` string anywhere in the
+- [x] Placeholder images via seeded picsum (`seed/trousseau-<n>/<w>/<h>`)
+- [x] No `colorlib` / `honey` / "Honey" / `Colorlib` string anywhere in the
       app (comments included)
-- [ ] TEMPLATES.md `Honey` item marked `[x]` with the live
+- [x] TEMPLATES.md `Honey` item marked `[x]` with the live
       `https://trousseau.free.componentdock.com` URL + homepage
+
+## Implementation notes (filled in while building)
+
+Verified against the built page served from `apps/trousseau/dist` at 1440×900
+and 375×800 (`getComputedStyle` / `getBoundingClientRect` probes, fresh load per
+width):
+
+| Measured | Value | Source rule it reproduces |
+| --- | --- | --- |
+| `header` position / row height | `absolute` / **100px** | `.header_area{position:absolute}` + `font:500 12px/100px` on its links |
+| hero top / min-height | **100px** / **800px** | `.header_area + section{margin-top:100px}`, `.home_banner_area{min-height:800px}` |
+| couple names | `rgb(255,47,146)` · `"Playfair Display", serif` · **48px** | `.banner_content h3{color:#ff2f92;font-size:48px}` |
+| countdown panel | `rgba(255,255,255,0.3)` · max-width **560px** | `.timer_inner .timer{background:rgba(255,255,255,.3);max-width:560px}` |
+| journey card | shadow **`0px 10px 30px 0px rgba(153,153,153,0.1)`** · radius 0 | `.journey_text_items .journey_item` |
+| story button / field radius | **0px** each, background `rgb(255,47,146)` | `.main_btn`, `.reservation_form … input{border-radius:0}` |
+| footer band | `rgb(249,249,255)` | `.footer_inner{background:#f9f9ff}` |
+| header at `scrollTop 1500` | `y = -1500`, still `position:absolute`, no `fixed` class | the source's `navbarFixed()` is commented out, so no scroll state |
+| dropdown panel | 200px wide, 43px rows, opens on hover/click/focus, closes on leave | `.nav-item.submenu ul{min-width:200px}` / `.nav-link{line-height:45px}` |
+| live countdown | `333 days 19h 14m 20s` on 2026-10-12 | counts to 2027-09-11 14:00 UTC |
+
+Deltas and the decisions behind them:
+
+- **Sources that do not exist as separate files:** this band is a single page;
+  the design's nine inner pages (`our-story`, `bridesmaid`, `groomsmen`,
+  `accomodation`, `gallery`, `blog`, `single-blog`, `elements`, `contact`) are
+  folded into it, with the `Pages` dropdown pointing at the bands that carry
+  their content (`#attendants`, `#groomsmen`, `#registry`) and every other nav
+  label at a real band (`#home`, `#story`, `#accomodation`, `#gallery`,
+  `#journey`, `#reservation`). The app test asserts every `href="#…"` on the
+  page resolves to an id that exists, so no link is a dead anchor.
+- **Placeholder photography was reviewed as pictures, not picked blind.** Two of
+  the seeds named in the prep notes rendered frames that fought the page: the
+  treeline the circle slots were pointed at is a bleak misted avenue (off-tone
+  for a wedding portrait), and the frame chosen for the orchard lunch is a frog
+  on green water. All twenty seeds (plus sixteen more) were downloaded to a
+  contact sheet, read, and the two roles re-seeded — the same pass also spread
+  the warmer frames across roles. The seeds listed under "Final placeholder
+  seeds" above are the ones the app ships; `docs/templates/trousseau/` still
+  names the pre-change numbering, which is the only place it survives.
+- **The layout's own headings are reproduced verbatim** (the invitation line,
+  "Until we getting married", "Our Love Journey", "Special Moments Captured",
+  "Reservation Form", "Gift Registry", the nav labels, "View Our Story",
+  "Confirm Now") because the requirements above make them `SHALL`s; what is
+  never reproduced is the design's *personae* — its brand, its couple, its
+  venue, its dates, its party, its card titles. The provenance guard therefore
+  forbids the second group only, as whole phrases, over every shipped file and
+  over the rendered page. `design-notes.md`'s delta list (which also proposed
+  respelling the section heading) is superseded on that one point: the spec's
+  "Arrengement in progress" is kept as written.
+- **The source's dead scroll-state header shadow is not reproduced** —
+  `navbar_fixed` is only ever applied by `navbarFixed()`, which is commented
+  out in the theme's script, and the live header scrolls away. The measured row
+  above is the control.
+- **No carousel, no lightbox dependency, no jQuery:** the registry row is a
+  wrapping flex row, the enlarged photograph is an in-page `role="dialog"` with
+  a labelled close control and an Escape handler, and the countdown is a single
+  `setInterval` reading the wall clock (so it survives a backgrounded tab).
+  The hero's scroll drift is a passive listener with a half-rate transform,
+  switched off entirely under `prefers-reduced-motion: reduce` (the layer then
+  carries no transform at all).
+- **The folded presentation is one tree, not two:** the label row stays mounted
+  for wide viewports and the folded menu's contents mount only while it is
+  open, so the two presentations never hold two copies of the same ids.
