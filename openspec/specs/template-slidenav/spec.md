@@ -40,7 +40,7 @@ source name.
   **HTTP 404** (`Not Found`, 9 B) — as with the whole *Website Menus* family, the
   slug-only theme path does **not** resolve. The working live preview is
   **`https://preview.colorlib.com/theme/bootstrap/website-menu-02/`**
-  (**HTTP 200**, `text/html`, **2,774 B**, title `🐴 Website Menu #2`, verified
+  (**HTTP 200**, `text/html`, **2,774 B**, title `Website Menu #2`, verified
   2026-10-11), confirmed through the catalog index the preview host itself loads
   (`https://preview.colorlib.com/assets/js/catalog-products-20261009-trace-developer.js`,
   **633,990 B**, whose entry for this slug is
@@ -84,6 +84,10 @@ source name.
   its "Brand" wordmark, its `cl-` utility namespace, its `icomoon` glyph
   codepoints and its copy are never reused.
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+- **Evidence audit (2026-10-12):** the source `<title>` recorded in this spec is the plain
+  raw-HTTP string. A leading horse-emoji prefix that an earlier browser pass recorded
+  is added to *every* page title by this container's browser harness (reproduced on
+  `example.com`), not by the source. Nothing else in this evidence block changed.
 
 ## Design reference (replication findings)
 
@@ -106,7 +110,7 @@ source name.
   a framework skin; the recreation uses Tailwind utilities and reuses none of
   those class names.
 - **Preview URL:** `https://preview.colorlib.com/theme/bootstrap/website-menu-02/`
-  → **HTTP 200**, `text/html`, **2,774 B**, title `🐴 Website Menu #2` (the
+  → **HTTP 200**, `text/html`, **2,774 B**, title `Website Menu #2` (the
   slug-only `/theme/website-menu-02/` path is the 404; see Purpose).
   **Reference artifacts (research date 2026-10-11):**
   `/tmp/wm02/live.html` (live preview HTML, 2,774 B),
@@ -504,7 +508,7 @@ byte-identical archive copy) and cross-checked against the live render and the
       `https://preview.colorlib.com/theme/website-menu-02/` is **HTTP 404** (9 B
       `Not Found`) — the **live preview** is
       `https://preview.colorlib.com/theme/bootstrap/website-menu-02/`
-      (**HTTP 200**, 2,774 B, title `🐴 Website Menu #2`) with
+      (**HTTP 200**, 2,774 B, title `Website Menu #2`) with
       `css/style.css?v=05c76b1d` (16,309 B, sha256 `b4086b7b…`) and
       `js/snippet.js?v=863a9219` (2,525 B, sha256 `71830be0…`), both
       **sha256-identical** to the snippet archive
@@ -562,7 +566,7 @@ byte-identical archive copy) and cross-checked against the live render and the
       Dock") with a computed current year
 - [ ] PR description includes: source template (ColorLib Website Menu 02), preview
       URL (`https://preview.colorlib.com/theme/bootstrap/website-menu-02/` →
-      **HTTP 200**, 2,774 B, title `🐴 Website Menu #2`; the slug-only
+      **HTTP 200**, 2,774 B, title `Website Menu #2`; the slug-only
       `/theme/website-menu-02/` path 404s; archive
       `https://preview.colorlib.com/downloads/free/website-menu-02.zip` → HTTP 200,
       230,044 B; screenshot 1200×972), the design tokens used (`#eb4d55` band +

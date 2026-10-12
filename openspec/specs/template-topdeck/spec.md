@@ -38,7 +38,7 @@ paths, no text verbatim) and never reuses the source name.
   **HTTP 404** (`Not Found`, 9 B) — the *Website Menus* family does **not** live
   under the slug-only theme path. The working live preview is
   **`https://preview.colorlib.com/theme/bootstrap/website-menu-07/`**
-  (**HTTP 200**, `text/html`, **11,155 B**, title `🐴 Website Menu #7`, verified
+  (**HTTP 200**, `text/html`, **11,155 B**, title `Website Menu #7`, verified
   2026-10-11), and it is the URL recorded for this slug in the preview host's own
   catalog index
   (`https://preview.colorlib.com/assets/js/catalog-products-20261009-trace-developer.js`,
@@ -79,6 +79,10 @@ paths, no text verbatim) and never reuses the source name.
   name "Website Menu 07", its "Brand" wordmark, its seven labels and its copy are
   never reused.
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+- **Evidence audit (2026-10-12):** the source `<title>` recorded in this spec is the plain
+  raw-HTTP string. A leading horse-emoji prefix that an earlier browser pass recorded
+  is added to *every* page title by this container's browser harness (reproduced on
+  `example.com`), not by the source. Nothing else in this evidence block changed.
 
 ## Design reference (replication findings)
 
@@ -638,7 +642,7 @@ icomoon subset and the inline SVG paths.
 - [ ] PR description includes: source template (ColorLib Website Menu V07),
       preview URL
       (`https://preview.colorlib.com/theme/bootstrap/website-menu-07/` → **HTTP
-      200**, 11,155 B, title `🐴 Website Menu #7`; the slug-only
+      200**, 11,155 B, title `Website Menu #7`; the slug-only
       `/theme/website-menu-07/` path 404s; archive
       `https://preview.colorlib.com/downloads/free/website-menu-07.zip` → HTTP
       200, 653,017 B, sha256-identical `style.css`/`snippet.js`; screenshot

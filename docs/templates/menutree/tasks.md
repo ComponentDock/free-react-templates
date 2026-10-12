@@ -22,7 +22,7 @@ Preview: the slug-only path
 `https://preview.colorlib.com/theme/website-menu-01/` returns **HTTP 404** —
 the **live preview** is
 `https://preview.colorlib.com/theme/bootstrap/website-menu-01/`
-(**HTTP 200**, 6,103 B, title `🐴 Website Menu #1`; its
+(**HTTP 200**, 6,103 B, title `Website Menu #1`; its
 `css/style.css?v=f016aacb` 18,843 B and `js/snippet.js?v=d8fd00d5` 3,537 B are
 **sha256-identical** to the snippet archive
 `https://preview.colorlib.com/downloads/free/website-menu-01.zip`,

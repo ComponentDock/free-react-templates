@@ -22,7 +22,7 @@ submenu expander. Preview: the slug-only path
 `https://preview.colorlib.com/theme/website-menu-07/` returns **HTTP 404** — the
 **live preview** is
 `https://preview.colorlib.com/theme/bootstrap/website-menu-07/`
-(**HTTP 200**, 11,155 B, title `🐴 Website Menu #7`; its
+(**HTTP 200**, 11,155 B, title `Website Menu #7`; its
 `css/style.css?v=b6896cbd` 20,488 B and `js/snippet.js` 3,537 B are
 **sha256-identical** to the snippet archive
 `https://preview.colorlib.com/downloads/free/website-menu-07.zip`, HTTP 200,

@@ -18,7 +18,7 @@ sibling's round arrow toggle never renders). Preview: the slug-only path
 `https://preview.colorlib.com/theme/website-menu-06/` returns **HTTP 404** — the
 **live preview** is
 `https://preview.colorlib.com/theme/bootstrap/website-menu-06/`
-(**HTTP 200**, 2,878 B, title `🐴 Website Menu #6`; its
+(**HTTP 200**, 2,878 B, title `Website Menu #6`; its
 `css/style.css?v=bdd8b5c0` 15,914 B and `js/snippet.js?v=0fd41ac8` 2,525 B are
 **sha256-identical** to the snippet archive
 `https://preview.colorlib.com/downloads/free/website-menu-06.zip`, HTTP 200,

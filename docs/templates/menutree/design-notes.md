@@ -26,7 +26,7 @@ does not sit under the slug-only theme path. The **working live preview** is
 https://preview.colorlib.com/theme/bootstrap/website-menu-01/
 ```
 
-→ **HTTP 200**, `text/html`, **6,103 B**, title `🐴 Website Menu #1`, verified
+→ **HTTP 200**, `text/html`, **6,103 B**, title `Website Menu #1`, verified
 2026-10-11. It was found through the catalog index the preview host loads for
 its own home page:
 `https://preview.colorlib.com/assets/js/catalog-products-*.js` (**633,990 B**)

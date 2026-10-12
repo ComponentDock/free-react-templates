@@ -30,7 +30,7 @@ does not sit under the slug-only theme path. The **working live preview** is
 https://preview.colorlib.com/theme/bootstrap/website-menu-07/
 ```
 
-→ **HTTP 200**, `text/html`, **11,155 B**, title `🐴 Website Menu #7`, verified
+→ **HTTP 200**, `text/html`, **11,155 B**, title `Website Menu #7`, verified
 2026-10-11. It is the URL the preview host itself records for this slug in
 
 ```

@@ -27,7 +27,7 @@ path does not resolve. The **working live preview** is
 https://preview.colorlib.com/theme/bootstrap/website-menu-02/
 ```
 
-→ **HTTP 200**, `text/html`, **2,774 B**, title `🐴 Website Menu #2`, verified
+→ **HTTP 200**, `text/html`, **2,774 B**, title `Website Menu #2`, verified
 2026-10-11. It was found through the catalog index the preview host loads for its
 own home page
 (`https://preview.colorlib.com/assets/js/catalog-products-20261009-trace-developer.js`,

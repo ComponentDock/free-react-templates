@@ -36,7 +36,7 @@ source name.
   **HTTP 404** (`Not Found`, 9 B) — the *Website Menus* family does **not** live
   under the slug-only theme path. The working live preview is
   **`https://preview.colorlib.com/theme/bootstrap/website-menu-01/`**
-  (**HTTP 200**, `text/html`, **6,103 B**, title `🐴 Website Menu #1`, verified
+  (**HTTP 200**, `text/html`, **6,103 B**, title `Website Menu #1`, verified
   2026-10-11), discovered through the catalog index the preview host itself loads
   (`https://preview.colorlib.com/assets/js/catalog-products-*.js` — its entry for
   this slug is `"url":"https://preview.colorlib.com/theme/bootstrap/website-menu-01/"`,
@@ -72,6 +72,10 @@ source name.
   is not a ColorLib source name either. The source name "Website Menu 01", its
   "Brand." wordmark, its icon-font glyphs and its copy are never reused.
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+- **Evidence audit (2026-10-12):** the source `<title>` recorded in this spec is the plain
+  raw-HTTP string. A leading horse-emoji prefix that an earlier browser pass recorded
+  is added to *every* page title by this container's browser harness (reproduced on
+  `example.com`), not by the source. Nothing else in this evidence block changed.
 
 ## Design reference (replication findings)
 
@@ -88,7 +92,7 @@ source name.
   the sheet is a hand-rolled Bootstrap-4-grid look-alike, **not** a framework
   skin — the recreation uses Tailwind utilities instead and copies nothing.
 - **Preview URL:** `https://preview.colorlib.com/theme/bootstrap/website-menu-01/`
-  → **HTTP 200**, `text/html`, **6,103 B**, title `🐴 Website Menu #1` (the
+  → **HTTP 200**, `text/html`, **6,103 B**, title `Website Menu #1` (the
   slug-only `/theme/website-menu-01/` path is the 404; see Purpose).
   **Reference artifacts (research date 2026-10-11):**
   `/tmp/live.html` (live preview HTML, 6,103 B), `/tmp/live-style.css`
@@ -537,7 +541,7 @@ app's own inline SVG brand paths for facebook/twitter/linkedin, as in
       `https://preview.colorlib.com/theme/website-menu-01/` is **HTTP 404** (9 B
       `Not Found`) — the **live preview** is
       `https://preview.colorlib.com/theme/bootstrap/website-menu-01/`
-      (**HTTP 200**, 6,103 B, title `🐴 Website Menu #1`) with
+      (**HTTP 200**, 6,103 B, title `Website Menu #1`) with
       `css/style.css?v=f016aacb` (18,843 B) and `js/snippet.js?v=d8fd00d5`
       (3,537 B), both **sha256-identical** to the snippet archive
       `https://preview.colorlib.com/downloads/free/website-menu-01.zip`
@@ -592,7 +596,7 @@ app's own inline SVG brand paths for facebook/twitter/linkedin, as in
       Dock") with a computed current year
 - [ ] PR description includes: source template (ColorLib Website Menu 01),
       preview URL (`https://preview.colorlib.com/theme/bootstrap/website-menu-01/`
-      → **HTTP 200**, 6,103 B, title `🐴 Website Menu #1`; the slug-only
+      → **HTTP 200**, 6,103 B, title `Website Menu #1`; the slug-only
       `/theme/website-menu-01/` path 404s; archive
       `https://preview.colorlib.com/downloads/free/website-menu-01.zip` → HTTP 200,
       231,882 B; screenshot 1200×972), the design tokens used (`#007bff` brand,

@@ -29,7 +29,7 @@ search-bar ends), 10 px tiles/strips, 6/7 px blog pieces and circles for both
 medallions, the social rings and back-to-top.
 Preview: `https://preview.colorlib.com/theme/webhostingservice/` (HTTP 200,
 47,215 B; `assets/css/style.css` HTTP 200, 64,303 B; title
-`🐴 Web Hosting HTML-5 Template`).
+`Web Hosting HTML-5 Template`).
 Screenshot: `webhostingservice-free-template.jpg` (AVIF, 1200×946, 47,419 B —
 convert with PIL before viewing).
 

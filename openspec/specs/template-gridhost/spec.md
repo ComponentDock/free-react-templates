@@ -39,7 +39,7 @@ copy verbatim.
   TEMPLATES.md and in no spec on main before this one)
 - **Preview:** `https://preview.colorlib.com/theme/webhostingservice/` returns
   **HTTP 200**, `text/html`, **47,215 B**, title
-  `🐴 Web Hosting HTML-5 Template` (verified 2026-10-11). Its DOM was fetched and
+  `Web Hosting HTML-5 Template` (verified 2026-10-11). Its DOM was fetched and
   parsed, and its theme stylesheet
   `.../assets/css/style.css` (HTTP 200, **64,303 B**) was tokenized and
   cross-checked against the **live render** in a browser (computed styles +
@@ -66,6 +66,10 @@ copy verbatim.
   `https://preview.colorlib.com/theme/gridhost/` both return **HTTP 404**, so it
   is not a ColorLib source name either).
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+- **Evidence audit (2026-10-12):** the source `<title>` recorded in this spec is the plain
+  raw-HTTP string. A leading horse-emoji prefix that an earlier browser pass recorded
+  is added to *every* page title by this container's browser harness (reproduced on
+  `example.com`), not by the source. Nothing else in this evidence block changed.
 
 ## Design reference (replication findings)
 

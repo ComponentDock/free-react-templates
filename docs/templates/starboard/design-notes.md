@@ -26,7 +26,7 @@ does not sit under the slug-only theme path. The **working live preview** is
 https://preview.colorlib.com/theme/bootstrap/website-menu-05/
 ```
 
-→ **HTTP 200**, `text/html`, **2,822 B**, title `🐴 Website Menu #5`, verified
+→ **HTTP 200**, `text/html`, **2,822 B**, title `Website Menu #5`, verified
 2026-10-11. It was found through the catalog index the preview host loads for its
 own home page (`https://preview.colorlib.com/assets/js/catalog-products-*.js`),
 which maps the `website-menu-05` key to the `theme/bootstrap/` URL. The live page
@@ -119,11 +119,16 @@ Re-read or dispatch the event before concluding the page is broken.
 - **Palette (whole sheet):** `#007bff` (links, current row, hover), `#0056b3`
   (link hover), `#212529` (body + rows), `#fff` (body/panel/toggle/wordmark),
   `#ced4da` (close-glyph hover), `#000` / `rgba(0,0,0,.7)` (hidden desktop row),
-  `rgba(0,0,0,.5)` (veil), `rgba(0,0,0,.1)` (panel shadow). That is the entire
+  `rgba(0,0,0,.5)` (veil), `rgba(0,0,0,.1)` (panel shadow), plus two colours the
+  sheet declares but that never render here: `#f8f9fa` (`.arrow-collapse:hover`)
+  and `#6c757d` (`.cl-nav-link.disabled`). That is the entire
   colour vocabulary — a blue accent on a white panel over a photo.
-- **Radii:** the only rounding in the sheet is a normalize `button{border-radius:0}`.
-  **Everything is square**, and this variant has **no circular controls at all**
-  (no `.has-children`, so the `-01` arrow toggle never renders) — do not introduce
+- **Radii:** the sheet holds exactly two roundings — a normalize
+  `button{border-radius:0}` and the `50%` of the `36 px`
+  `.site-mobile-menu .site-nav-wrap .arrow-collapse` toggle (whose `#f8f9fa` hover
+  also ships). That toggle is injected only beside a `.has-children` row, and this
+  variant's markup carries **none**, so **no circular control renders**.
+  **Everything visible is square** — do not introduce
   pills or rounded cards.
 - **Shadows used:** `-10px 0 20px -10px rgba(0,0,0,.1)` (off-canvas panel) is the
   only box-shadow. Veil `rgba(0,0,0,.5)`.

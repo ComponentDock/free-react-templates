@@ -35,7 +35,7 @@ source name.
   **HTTP 404** (`Not Found`, 9 B) — the *Website Menus* family does **not** live
   under the slug-only theme path. The working live preview is
   **`https://preview.colorlib.com/theme/bootstrap/website-menu-05/`**
-  (**HTTP 200**, `text/html`, **2,822 B**, title `🐴 Website Menu #5`, verified
+  (**HTTP 200**, `text/html`, **2,822 B**, title `Website Menu #5`, verified
   2026-10-11), discovered through the same catalog index the preview host loads
   (`https://preview.colorlib.com/assets/js/catalog-products-*.js`) whose entry for
   this slug is `"url":"…/theme/bootstrap/website-menu-05/"`. Its two assets —
@@ -67,6 +67,10 @@ source name.
   not a ColorLib source name either. The source name "Website Menu 05", its
   "Brand" wordmark and its copy are never reused.
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+- **Evidence audit (2026-10-12):** the source `<title>` recorded in this spec is the plain
+  raw-HTTP string. A leading horse-emoji prefix that an earlier browser pass recorded
+  is added to *every* page title by this container's browser harness (reproduced on
+  `example.com`), not by the source. Nothing else in this evidence block changed.
 
 ## Design reference (replication findings)
 
@@ -80,7 +84,7 @@ source name.
   and it is a hand-rolled Bootstrap-4-grid look-alike — **not** a framework skin.
   The recreation uses Tailwind utilities and copies nothing.
 - **Preview URL:** `https://preview.colorlib.com/theme/bootstrap/website-menu-05/`
-  → **HTTP 200**, `text/html`, **2,822 B**, title `🐴 Website Menu #5` (the
+  → **HTTP 200**, `text/html`, **2,822 B**, title `Website Menu #5` (the
   slug-only `/theme/website-menu-05/` path is the 404; see Purpose).
   **Reference artifacts (research date 2026-10-11):** `/tmp/wm05b.html` (live
   preview HTML, 2,822 B), `/tmp/wm05-style.css` (15,648 B, `text/css`, sha256
@@ -243,8 +247,10 @@ and the live render.
 | veil | `rgba(0,0,0,.5)`, `.3s ease` fade, `z-index:1` → `1002` | behind the open panel |
 | panel shadow | `-10px 0 20px -10px rgba(0,0,0,.1)` | off-canvas panel |
 | dropdown row hover (unused here) | `#eff1f3` — **not present in this variant** (no dropdowns) | — |
+| toggle hover wash (unused here) | `#f8f9fa` | `.site-nav-wrap .arrow-collapse:hover` — **never renders** (that toggle needs a `.has-children` row; the markup has none) |
+| disabled link (unused here) | `#6c757d` | `.cl-nav-link.disabled` — framework default, no disabled link in the markup |
 | layout | `.cl-container` `15px` gutters, max-widths `540/720/960/1140` at `sm/md/lg/xl`; header `cl-col-3` (25 %) + `cl-col-9` (75 %) | header columns |
-| radii | **0 everywhere**; the only `border-radius` in the sheet is a normalize `button{border-radius:0}` — **no circular controls remain** (this variant has no `.has-children`, so no arrow toggle) | square shape language, no pills |
+| radii | **0 everywhere**; the sheet's two `border-radius` values are a normalize `button{border-radius:0}` and the `50%` of the `36 px` `.site-mobile-menu .site-nav-wrap .arrow-collapse` toggle (its `#f8f9fa` hover ships too) — that toggle is injected only beside a `.has-children` row and **this variant's markup carries none**, so **no circular control renders** | square shape language, no pills |
 | motion | `a{transition:.3s all ease}` site-wide; panel `.3s ease-in-out`; veil `.3s ease` | all interactive transitions |
 | type | `"Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif` — weights **300 / 400 / 700** (six woff2 subsets) | whole page |
 | type scale | body `1rem / 1.5`; `h3, .cl-h3{1.75rem; font-weight:500; line-height:1.2; margin-bottom:.5rem}`; wordmark `.site-logo{font-size:1rem}` + `uppercase` (measured 16 px / 700); desktop menu links **16 px** (measured; `.cl-nav-link{padding:.5rem 1rem}`) with `text-transform:none`; off-canvas level-1 rows **20 px** | wordmark + menu |
@@ -448,9 +454,10 @@ and the live render.
       focus moves in on open and returns to the toggle on close; the 768 px
       resize-close from the source is dropped and that decision is noted in the PR
 - [ ] The shape language is kept square: **no** rounded corners or pills anywhere
-      (this variant has no circular controls at all — the source's only
-      `border-radius` is a normalize `button{border-radius:0}`) — do not
-      "modernise" the panel or rows into pills
+      (this variant renders no circular control: the sheet's only round rule is the
+      `36 px` `50%` `.arrow-collapse` toggle, which needs a `.has-children` row this
+      markup does not have; the other `border-radius` is a normalize
+      `button{border-radius:0}`) — do not "modernise" the panel or rows into pills
 - [ ] One nav source of truth: the same nav definition drives the panel rows
       (mounted, not DOM-cloned) — no hand-maintained duplicate list
 - [ ] The five declared targets resolve to real in-band panels with
@@ -476,7 +483,7 @@ and the live render.
 - [ ] PR description includes: source template (ColorLib Website Menu V05),
       preview URL
       (`https://preview.colorlib.com/theme/bootstrap/website-menu-05/` → **HTTP
-      200**, 2,822 B, title `🐴 Website Menu #5`; the slug-only
+      200**, 2,822 B, title `Website Menu #5`; the slug-only
       `/theme/website-menu-05/` path 404s; archive
       `https://preview.colorlib.com/downloads/free/website-menu-05.zip` → HTTP 200,
       705,301 B; screenshot 1200×972), the design tokens used (`#007bff` brand,
