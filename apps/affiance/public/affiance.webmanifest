@@ -1,0 +1,18 @@
+{
+  "name": "Affiance \u2014 Wedding Template",
+  "short_name": "Affiance",
+  "description": "A free wedding template: a transparent bar over a full-bleed couple photograph, a brand-pink countdown bar pulled up over the hero, an alternating bride & groom band, a four-entry love-story timeline, a guest-message carousel, eight attendant cards, when & where columns, an RSVP form and a no-gutter gallery.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#d291bc",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
