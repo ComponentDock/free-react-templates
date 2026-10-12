@@ -43,7 +43,11 @@ files, no icon paths) and never reuses the source name or copy verbatim.
   appears exactly once (no duplicate `- [ ]` line). No implementation or spec
   existed for this item on main before this one.
 - **Preview URL:** `https://preview.colorlib.com/theme/ecohosting/` → **HTTP
-  200** (38,873 B, `text/html; charset=utf-8`). Main stylesheet
+  200** (38,873 B, `text/html; charset=utf-8`). Re-verified by the implementer on
+  2026-10-12 (same 200/38,873 B; stylesheet 202,978 B): the live DOM shows
+  **four** FAQ questions (not three) and the TLD row as `.com $15.99 .net $10.99
+.org $10.99 .me $10.99` (the screenshot's `.rog` is a typo in the raster; the
+  DOM is authoritative). Both corrections are reflected in the app. Main stylesheet
   `assets/css/style.min.css?v=3.0.0` → HTTP 200, 202,978 B. Reference artifacts
   (research date 2026-10-11): `/tmp/eco.html`, `/tmp/eco.css`, `/tmp/eco.png`
   (1200×946, converted from the AVIF screenshot). Preview HTML/CSS are
@@ -61,7 +65,7 @@ files, no icon paths) and never reuses the source name or copy verbatim.
   the hero, still on plum, a left-aligned "Search new domain" heading + short
   paragraph sits beside a wide **pill domain-search bar** (white rounded input
   with a globe icon and a magenta circular search button); a centered row of TLD
-  prices follows (".com $15.99  .net $10.99  .rog $10.99  .me $10.99" — TLD in
+  prices follows (".com $15.99 .net $10.99 .rog $10.99 .me $10.99" — TLD in
   white, price in magenta). A centered bold white title "Most amazing features"
   heads a feature grid whose first row shows outlined violet icons + white
   captions (Employee Owned, Commitment To Security, Passion For Privacy).
@@ -72,7 +76,7 @@ files, no icon paths) and never reuses the source name or copy verbatim.
      over `#2d0a31`: text column (eyebrow `span`, `h1`, paragraph, gradient pill
      CTA) + `hero__img` illustration column.
   3. `section.domain-search-area.section-bg1` — "Search new domain" + search form
-     + TLD price row (dark).
+     - TLD price row (dark).
   4. `section.team-area.section-padding40.section-bg1` — "Most amazing features"
      centered title + 6 feature cards (`single-cat`: icon + `h5` + blurb).
   5. `section.pricing-card-area.fix` — "Choose plan which fit for you" heading
@@ -83,7 +87,7 @@ files, no icon paths) and never reuses the source name or copy verbatim.
   7. `section.about-area1.pb-bottom` — light split band "Dedicated support"
      (text + image, reversed).
   8. `section.ask-questions.section-bg1.section-padding30.fix` — "Frequently ask
-     questions" title + accordion (3 Q&A).
+     questions" title + accordion (4 Q&A).
   9. `section.testimonial-area.section-bg1` — plum testimonial card
      (`single-testimonial`, `#4c1e51`, radius 12).
   10. `footer-wrappr` → `footer-area.footer-padding` — logo, newsletter form,
@@ -117,11 +121,11 @@ Tailwind 4 `@theme` tokens (map exactly):
   `Open Sans` for paragraphs (`font-family:Poppins,sans-serif` /
   `font-family:Open Sans,sans-serif`). Load both via a `<link>` in `index.html`.
 - **Buttons:** `.btn` = Poppins, `text-transform: capitalize`, `padding: 27px
-  44px`, `color:#fff`, `font-size:15px`, `font-weight:600`, `line-height:1`;
+44px`, `color:#fff`, `font-size:15px`, `font-weight:600`, `line-height:1`;
   base fill is the gradient above (revealed/animated via a `:before` scaleX
   sweep that turns solid `#f067ff` on hover). Pill radius.
 - **Outline pill button** (pricing cards `.borders-btn`): transparent, `1px
-  solid #f067ff`, `border-radius:30px`, `padding:10px 64px`,
+solid #f067ff`, `border-radius:30px`, `padding:10px 64px`,
   `text-transform:uppercase`, `color:#f067ff`; on card hover text turns white
   over the gradient.
 - **Pricing card** (`.single-card`): `background:#fff`, `padding:70px 0`,
@@ -165,14 +169,21 @@ The hero SHALL be a dark plum two-column band with a rotating slide set.
 
 ### Requirement: Domain search
 
+The page SHALL render a dark domain-search band with a heading, a supporting
+paragraph, a pill search form and a row of TLD price chips.
+
 #### Scenario: Search form
 
 - **WHEN** the domain-search band renders on the dark shell
 - **THEN** it shows a "Search new domain" heading, a supporting paragraph, a
   rounded input with a leading globe icon and a circular magenta search button,
-  and a centered row of TLD price chips (.com, .net, .rog, .me).
+  and a centered row of TLD price chips (.com $15.99, .net $10.99, .org $10.99,
+  .me $10.99).
 
 ### Requirement: Features
+
+The feature band SHALL show a centered title over six icon cards in a
+responsive grid.
 
 #### Scenario: Feature grid
 
@@ -181,6 +192,9 @@ The hero SHALL be a dark plum two-column band with a rotating slide set.
   short blurb, laid out in a responsive grid (3 columns on desktop).
 
 ### Requirement: Pricing
+
+The pricing band SHALL overlap three white tier cards on the plum shell, each
+closed by an outline pill button.
 
 #### Scenario: Pricing tiers
 
@@ -191,6 +205,9 @@ The hero SHALL be a dark plum two-column band with a rotating slide set.
 
 ### Requirement: Split content bands
 
+The page SHALL render two light split bands whose image and copy columns
+alternate.
+
 #### Scenario: Global server location & Dedicated support
 
 - **WHEN** the two light split bands render
@@ -199,14 +216,21 @@ The hero SHALL be a dark plum two-column band with a rotating slide set.
 
 ### Requirement: FAQ
 
+The FAQ band SHALL render a title and an accordion of the four source
+questions, with at most one panel open at a time.
+
 #### Scenario: FAQ accordion
 
 - **WHEN** the FAQ band renders
 - **THEN** it shows a "Frequently ask questions" title and an accordion whose
-  items expand/collapse with keyboard support, exposing the three source
-  questions (web-server connection, choosing a domain name, www. vs non-www).
+  expanding/collapsing with keyboard support, exposing the four source
+  questions (web-server connection, choosing a domain name, www. vs non-www,
+  IIS password prompt). Only one panel is open at a time.
 
 ### Requirement: Testimonials
+
+The testimonial band SHALL render a plum rounded card with a quote, an initials
+avatar and the founder's name and role, with one card per testimonial.
 
 #### Scenario: Testimonial card
 
@@ -216,6 +240,9 @@ The hero SHALL be a dark plum two-column band with a rotating slide set.
 
 ### Requirement: Footer
 
+The footer SHALL render the wordmark, a newsletter form, three link columns,
+social icons and a copyright bar that links to https://www.componentdock.com/.
+
 #### Scenario: Footer structure
 
 - **WHEN** the footer renders
@@ -224,6 +251,10 @@ The hero SHALL be a dark plum two-column band with a rotating slide set.
   link to https://www.componentdock.com/ ("Component Dock").
 
 ### Requirement: Conventions
+
+The app SHALL follow the monorepo conventions (React 19 + Tailwind 4 + TS
+strict, shared `packages/ui` components, no provenance strings in app files,
+100% coverage).
 
 #### Scenario: Repo conventions
 
