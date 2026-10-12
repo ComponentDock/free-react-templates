@@ -41,10 +41,17 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
   shuffles that block's rule order per request — three consecutive fetches on
   2026-10-12 returned three different digests at an identical **28,350 B**, so
   the earlier `43f810ba…` value no longer reproduces and no raw page hash is
-  cited here. The reproducible handle, stable across repeated fetches, is the
-  digest of the page **after removing that injected block** (**22,155 B**,
-  sha256 `cfcdf23e08945ebe324f2f8fdba5147658909ac1c04af42540a635a06e9decc9`,
-  verified 3/3 fetches). Fall back
+  cited here. ⚠️ **The raw byte count is not a stable handle either**: the host
+  also appends an extra **361 B** Cloudflare Insights beacon
+  (`<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/…">`)
+  before `</body>` for some client signatures, so a fetch whose headers differ
+  from a plain `curl -sS <url>` sees **28,711 B** — the size is stable only for
+  one request signature. The **signature-independent** handle is the digest of
+  the page after removing **both** that injected block **and** the beacon script
+  (**22,155 B**, sha256
+  `cfcdf23e08945ebe324f2f8fdba5147658909ac1c04af42540a635a06e9decc9`, verified
+  byte-identical across curl default, `curl -A <chrome UA>` and `urllib` with
+  two header profiles — 2026-10-12). Fall back
   to the hyphenated form only if the un-hyphenated one ever disappears.
 - **Stylesheet fetched for tokens:**
   `https://preview.colorlib.com/theme/weddingofficiant/css/style.css` — **HTTP

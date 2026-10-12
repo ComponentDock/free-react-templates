@@ -28,10 +28,19 @@ a mint "Send" pill.
   is request-unstable** — the preview host injects a `media="print"`
   `@font-face` `<style>` block (Amiri + Quicksand from `/cf-fonts/…`) and
   reorders its rules per request, so three consecutive fetches give three
-  digests at an identical **28,350 B** (the byte count *is* stable, so cite that
-  rather than a hash). Reproducible handle: strip that injected block → **22,155
-  B**, sha256 `cfcdf23e08945ebe324f2f8fdba5147658909ac1c04af42540a635a06e9decc9`
-  (3/3 fetches identical). The same instability affects the other four
+  digests at an identical **28,350 B**. ⚠️ **The raw byte count is not a stable
+  handle either** (re-measured 2026-10-12): the host also appends an extra
+  **361 B** Cloudflare Insights beacon
+  (`<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/…"
+  data-cf-beacon='…'>`) before `</body>` for some client signatures, so a fetch
+  whose headers differ from a plain `curl -sS <url>` sees **28,711 B** (python
+  `urllib` + a Chrome UA) — the byte count *is* stable only for a fixed request
+  signature, so cite neither a raw hash nor the raw size. The
+  **signature-independent** handle — sha256 of the page after removing **both**
+  the injected `@font-face` block **and** that beacon script — is **22,155 B**,
+  sha256 `cfcdf23e08945ebe324f2f8fdba5147658909ac1c04af42540a635a06e9decc9`,
+  verified byte-identical across curl default, `curl -A <chrome UA>` and
+  `urllib` with two header profiles. The same instability affects the other four
   Google-Font-driven preps in the wedding tail; the stylesheet
   (`css/style.css`, `e8fb899c…`) is stable and remains the token authority.
 - The stylesheet loads **after** `css/bootstrap/bootstrap.css`, so its `.btn`,
