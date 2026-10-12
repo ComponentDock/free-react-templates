@@ -20,10 +20,24 @@ React 19 + Tailwind CSS 4 + TypeScript.
   **paperie**).
 - Homepage / CNAME: `https://paperie.free.componentdock.com`
 
+- **Source inner pages (live reference, curl-probed 2026-10-12):** the source's
+  file set is **nine-page** even though the landing page is the one-page
+  invitation design — **eight** further pages are live at
+  `https://preview.colorlib.com/theme/invits/<page>`, all **HTTP 200**
+  (`curl -sS` basis): `our_story.html` (23,429 B — "Our Story", "The Best Gift",
+  "OUR MEMORIES", "OUR LOVELY PARTNERS"), `location.html` (17,832 B — "Our
+  Location"), `gallery.html` (18,750 B — "Our Gallery"), `booking.html`
+  (16,180 B — the "Are you attending?" booking/RSVP form), `blog.html`
+  (31,101 B), `single-blog.html` (34,767 B), `elements.html` (38,698 B) and
+  `contact.html` (19,142 B). Paperie stays a one-pager; those pages are read for
+  structure and copy kind only.
+
 ## Design reference (replication findings)
 
-- **Original:** ColorLib "Invits" — a romantic one-page wedding invitation site.
-  Source page `https://colorlib.com/wp/template/invits/` (HTTP 200). Live preview
+- **Original:** ColorLib "Invits" — a romantic wedding-invitation design; the
+  landing page is a one-page invitation, while the source's own file set is
+  nine-page (eight further live inner pages — inventoried at the end of this
+  section). Source page `https://colorlib.com/wp/template/invits/` (HTTP 200). Live preview
   `https://preview.colorlib.com/theme/invits/` returns **HTTP 200** (32,391 B
   HTML, `<title>Wedding HTML-5 Template</title>`). The official archive
   `https://preview.colorlib.com/downloads/free/invits.zip` returns **HTTP 404**

@@ -78,6 +78,19 @@ Vendor CSS referenced by the preview (`bootstrap.css`, `font-awesome.min.css`,
 - Radii in use: 25px (buttons), 20px (cards), 8.5px/8px/3px (misc), 0 (form fields).
 - Form fields: transparent background, 1px #656463 border, radius 0.
 
+## Source inner pages (live, curl-probed 2026-10-12)
+
+The theme ships **two** further pages, both **HTTP 200** at
+`https://preview.colorlib.com/theme/wedding/<page>` (`curl -sS` basis):
+
+| Page | Live (`curl -sS`) | What it holds → what it informs |
+| --- | --- | --- |
+| `generic.html` | **200**, 19,523 B | "The Generic Page" / "Elaboration about Generic Page" / "Our Pre Wedding Photo Gallery" → the theme's inner-page shell and the gallery vocabulary |
+| `elements.html` | **200**, 40,708 B | the theme's own style guide: "Text Sample", "Sample Buttons", left/right-aligned samples, button groups → the button/typography vocabulary the nav and CTA rows use |
+
+The landing page remains the 1:1 reference for the recreation; these two are read
+for the theme's own component vocabulary.
+
 ## Recreation deltas (intentional, documented for the PR)
 
 - Placeholder imagery: `https://picsum.photos/seed/nuptials-<n>/<w>/<h>` — no

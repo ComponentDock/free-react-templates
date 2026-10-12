@@ -103,6 +103,24 @@ Source markup confirmations (from the fetched DOM):
   (facebook/twitter/dribbble/behance/heart), and a copyright bar with
   `document.write(new Date().getFullYear())`.
 
+## Source inner pages (live, curl-probed 2026-10-12)
+
+The source's own `<title>` reads **"Honey Wedding Multi"** and the theme is
+multi-page in fact: **nine** further pages of the same theme are live (**HTTP
+200**, `curl -sS` basis).
+
+| Page | Live (`curl -sS`) | What it holds → what it informs |
+| --- | --- | --- |
+| `our-story.html` | **200**, 14,193 B | "Our Story", "Our Love Journey", "Special Moments Captured", "Gift Registry" → the story/journey/moments bands |
+| `bridesmaid.html` · `groomsmen.html` | **200**, 13,577 B · 13,583 B | the bridal-party grids → the audience cards the one-pager has to stand in for |
+| `accomodation.html` | **200**, 11,830 B | "Accomodation" (the source's own spelling) → the venue/logistics copy kind |
+| `gallery.html` | **200**, 12,640 B | "Image Gallery" grid |
+| `blog.html` · `single-blog.html` | **200**, 32,039 B · 32,683 B | blog grid + post shell |
+| `elements.html` · `contact.html` | **200**, 35,517 B · 12,237 B | style guide + contact shell |
+
+Nothing is copied from these pages: read for structure, copy kind and section
+inventory only.
+
 ## Section-by-section fidelity notes
 
 1. **Header.** Slim single row: logo mark + wordmark on the left, uppercase 12px

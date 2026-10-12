@@ -17,10 +17,24 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   naming run: lensly · vows · nuptial · knot · wedlock · nuptials ·
   **betrothal**).
 
+- **Source inner pages (live reference, curl-probed 2026-10-12):** the source is
+  **not** a single file — its landing page links **six** further pages of the
+  same theme, all **HTTP 200** at
+  `https://preview.colorlib.com/theme/dreamwed/<page>` (`curl -sS` basis). They
+  are the authoritative reference for the sections this one-pager must invent:
+  `story.html` (26,955 B — "Our Story" plus the "Love Story / First Meet"
+  timeline), `gallery.html` (22,236 B — "Our Gallery"), `rsvp.html` (22,423 B —
+  "R.S.V.P", an "Are You Attending?" form and "Where & When"), `guestbook.html`
+  (22,934 B — message cards), `blog.html` (24,617 B) and `blog-details.html`
+  (25,786 B). Betrothal stays a one-pager with in-app anchors; those pages are
+  read for structure and copy kind only — no asset, class or copy is copied.
+
 ## Design reference (replication findings)
 
-- **Original:** ColorLib "Dreamwed" — a romantic single-page wedding /
-  save-the-date site. Source page `https://colorlib.com/wp/template/dreamwed/`;
+- **Original:** ColorLib "Dreamwed" — a romantic wedding / save-the-date
+  **landing page** (the source's own file set is a seven-page theme: six further
+  live inner pages are inventoried at the end of this section). Source page
+  `https://colorlib.com/wp/template/dreamwed/`;
   preview `https://preview.colorlib.com/theme/dreamwed/` returns **HTTP 200**
   (34,516 B HTML, `<title>Dream | Template</title>`). TEMPLATES.md screenshot
   `dreamwed-free-template.jpg` (HTTP 200, served **AVIF** despite the `.jpg`

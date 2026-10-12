@@ -21,7 +21,8 @@ below 767.98 px) carries a **`12 px`/`600`/`#fff` letter-spaced brand** and a **
 burger**. The source has **no cards, no buttons, no forms, no footer, no second view**, it is **exactly
 viewport height at every width** (`scrollHeight === clientHeight` at 1440/991/767/375) and **all 8** of
 its anchors are dead or dead-ending — two `href="#"` plus `index.html` ×3, `about.html`,
-`blog.html`, `contact.html`, and **every one of those pages 404s on the preview host**.
+`blog.html`, `contact.html` — the three that **404 on the preview host** (`curl -sS`, 9 B
+bodies); the three `index.html` links are no-ops to the page itself (**200**, 2,356 B).
 
 The sheet is **16,497 B** (836 lines, 132 `{` blocks, 12 `@media` blocks, **6** `@font-face`, **1**
 `@supports (height:100dvh)`, 29 `!important`) — **2,970 B larger** than the `-19` sibling's because it
@@ -151,7 +152,8 @@ Design notes: `docs/templates/bimini/design-notes.md`.
       `https://picsum.photos/seed/bimini-<n>/<w>/<h>` (**the source ships no images at all**)
 - [ ] Guard: record as deltas that the source is a **single `100vh` page that never scrolls**
       (`scrollHeight === clientHeight` at 1440/991/767/375) and that all **8** of its anchors are dead
-      or 404 (`#` ×2, `index.html` ×3, `about.html`, `blog.html`, `contact.html`)
+      or 404 (`#` ×2; `index.html` ×3 — no-ops to the page itself; `about.html`, `blog.html`,
+      `contact.html` — the 404s)
 
 ## Footer + attribution (TDD)
 

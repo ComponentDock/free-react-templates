@@ -173,8 +173,11 @@ reuses the source name.
   - **Anchors:** the page holds **8** anchors — **two** `href="#"` (both toggles) plus **three**
     `index.html` (overlay logo, overlay `Home`, header logo), one `about.html`, one `blog.html`, one
     `contact.html`. On the preview host **`about.html`, `blog.html` and `contact.html` all return
-    HTTP 404** (`index.html` → 404 too: the preview URL has no directory index for it), so **every**
-    destination is dead; the recreation must materialise all eight.
+    HTTP 404** (`curl -sS`, 9 B bodies), while the three `index.html` links are **no-ops**: they
+    resolve to this very page (`…/bootstrap/website-menu-20/index.html` → **HTTP 200**, 2,356 B,
+    byte-identical to the directory URL — not a 404, and not a missing directory index). Every
+    destination is therefore dead or dead-ending (nothing navigates); the recreation must
+    materialise all eight.
 - **Measurements (live preview, Chromium, DPR 1, read 2026-10-12; the sheet was fetched by curl
   **and** by the browser and the two copies are byte-identical, sha256 `bd6e8d5c…`, so every token
   below is confirmed by the source CSS, and the geometry was **cross-checked against the rendered
@@ -532,8 +535,9 @@ resets.
 #### Scenario: No dead links
 
 - **Then** the recreation renders **zero** `href="#"` links — the source's **8** anchors (two dead
-  `#` plus `index.html` ×3, `about.html`, `blog.html`, `contact.html`, **all of which 404 on the
-  preview host**) all resolve to real targets inside the app
+  `#`, three `index.html` links that resolve to the reference page itself as HTTP 200 no-ops, and
+  `about.html` / `blog.html` / `contact.html`, **which 404 on the preview host**) all resolve to
+  real targets inside the app
 - **And** the brand and the overlay menu rows navigate to their sections, with focus returned to the
   page after the sheet closes
 

@@ -17,10 +17,23 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   lensly · vows · nuptial · knot · wedlock · nuptials · betrothal ·
   **trousseau**).
 
+- **Source inner pages (live reference, curl-probed 2026-10-12):** the source is
+  multi-page in fact — **nine** further pages of the same theme are live at
+  `https://preview.colorlib.com/theme/honey/<page>`, all **HTTP 200**
+  (`curl -sS` basis): `our-story.html` (14,193 B — "Our Story", "Our Love
+  Journey", "Special Moments Captured", "Gift Registry"), `bridesmaid.html`
+  (13,577 B), `groomsmen.html` (13,583 B), `accomodation.html` (11,830 B — the
+  source's own filename spelling), `gallery.html` (12,640 B), `blog.html`
+  (32,039 B), `single-blog.html` (32,683 B), `elements.html` (35,517 B) and
+  `contact.html` (12,237 B). They are the reference for the sections Trousseau
+  must invent (story, journey, moments, bridal party, gallery); nothing from
+  them is copied.
+
 ## Design reference (replication findings)
 
-- **Original:** ColorLib "Honey" — a romantic single-page wedding site (a
-  "Honey Wedding Multi" demo). Source page
+- **Original:** ColorLib "Honey" — a romantic wedding site whose own `<title>`
+  reads **"Honey Wedding Multi"** and whose file set is multi-page (nine further
+  live inner pages — inventoried at the end of this section). Source page
   `https://colorlib.com/wp/template/honey/`; preview
   `https://preview.colorlib.com/theme/honey/` returns **HTTP 200** (22,117 B
   HTML, `<title>Honey Wedding Multi</title>`). TEMPLATES.md screenshot

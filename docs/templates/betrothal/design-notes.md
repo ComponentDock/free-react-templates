@@ -55,6 +55,25 @@ section.wedding-time.spad           ("Location & Time" / "Where & When" + 3 whit
 footer.footer.spad                  (closing heading + logo + social + copyright bar)
 ```
 
+## Source inner pages (live, curl-probed 2026-10-12)
+
+The source is a **seven-page** theme, not a one-file mock: its landing page links
+six further pages of the same theme that the preview host serves live (all
+**HTTP 200**, `curl -sS` basis). They are the authoritative reference for the
+sections our one-pager must invent — and they are why this prep no longer calls
+the source a "single-page site".
+
+| Page | Live (`curl -sS`) | What it holds → what it informs |
+| --- | --- | --- |
+| `story.html` | **200**, 26,955 B | "Our Story" + a "Love Story / First Meet" timeline → the story band's copy kind and order |
+| `gallery.html` | **200**, 22,236 B | "Our Gallery" grid → the gallery band |
+| `rsvp.html` | **200**, 22,423 B | "R.S.V.P" + an "Are You Attending?" form + "Where & When" → the RSVP form fields |
+| `guestbook.html` | **200**, 22,934 B | "Guestbook" message cards |
+| `blog.html` · `blog-details.html` | **200**, 24,617 B · 25,786 B | blog grid + post shell → the type vocabulary reused in cards |
+
+Nothing is copied from these pages (no asset, class, image or copy): they are read
+for structure, copy kind and section inventory only.
+
 ## Section-by-section fidelity notes
 
 0. **Preloader overlay (pre-section).** The source's first body element is

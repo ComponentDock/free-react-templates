@@ -153,6 +153,24 @@ ornament, and the first row of three line-art service cards (Photos & Video,
 Wedding Makeup, Restaurant). Palette impression: white/neutral page, sage-green
 section text, warm rose-tinted shadows, serif display type.
 
+## Source inner pages (live, curl-probed 2026-10-12)
+
+The landing page is the design of record, but the same theme ships **seven**
+further live pages at `https://preview.colorlib.com/theme/weddingdreams/<page>`
+(all **HTTP 200**, `curl -sS` basis) — the authoritative reference for the
+sections this one-pager must invent.
+
+| Page | Live (`curl -sS`) | What it holds → what it informs |
+| --- | --- | --- |
+| `services.html` | **200**, 26,315 B | "Services" cards + a "Pricing Plans" table ($195 / $235 / $335) → the services grid and any pricing band |
+| `portfolio.html` | **200**, 20,585 B | "Portfolio" → the gallery/portfolio vocabulary |
+| `team.html` | **200**, 27,642 B | "OUR PHOTOGRAPHY TEAM" + "Join us" → the team card grid |
+| `about.html` | **200**, 34,416 B | "About" + "Wedding Vendors & Venues We Love!" + the 8365 / 568 / 849 counters → the counter strip's real figures |
+| `blog.html` · `blog-details.html` | **200**, 30,733 B · 33,498 B | "Our blog" trio + post shell |
+| `contact.html` | **200**, 19,993 B | the enquiry/contact shell → the request card's field set |
+
+None of them is copied; they are read for structure, copy kind and figures.
+
 ## Section-by-section fidelity notes
 
 1. **Header** — absolute, floats over the hero. White bar, rose-tinted shadow.

@@ -79,7 +79,7 @@ all return HTTP 404**, so no destination in the source is reachable.
 | Behaviour JS | `…/bootstrap/website-menu-20/js/snippet.js?v=ac5d989a` | **200**, 1,704 B, sha256 `36d0a551…` |
 | Snippet archive | `https://preview.colorlib.com/downloads/free/website-menu-20.zip` | **200**, 256,660 B ("251 KB"), sha256 `1ecf1bcd…`; ships `index.html` 2,153 B, `css/style.css` + `js/snippet.js` **byte-identical** to the live copies, `README.md` 1,264 B, 8 Roboto woff2 (247,856 B = 91.98 %), **no `images/`** |
 | Overlay photo | `…/bootstrap/website-menu-20/images/bg_3.jpg` | **404** (the sheet's only image reference; the archive ships no `images/`) |
-| Second page | `…/bootstrap/website-menu-20/about.html` | **404** (so `blog.html`, `contact.html`, `index.html` are also dead destinations) |
+| Second page | `…/bootstrap/website-menu-20/about.html` | **404** (9 B body) — `blog.html` and `contact.html` too. The three `index.html` links are **not** 404s: they resolve to this page itself (**200**, 2,356 B, byte-identical to the directory URL), i.e. no-op links |
 | Screenshot | `https://colorlib.com/wp/wp-content/uploads/sites/2/website-menu-20.jpg` | **200**, served **AVIF** despite the `.jpg` name, 6,387 B, 1200 × 972, sha256 `6524d0ce…` → PNG 43,095 B, inspected visually |
 | `diff` live ↔ archive `index.html` | — | **head-only** (two `noindex` metas, `cdnjs` `dns-prefetch`, `fetchpriority`, `?v=` busters) — the archive is the live preview's readable twin |
 
@@ -309,8 +309,9 @@ its Bootstrap tiers (`576/768/992/1200`); the overlay sheet itself is `100 % × 
 - New name **bimini** and own brand, headline, lead and menu labels (none of `Company Logo`,
   `Website Menu #10`, `Website menu 08`, "Website Menu V20", `Lorem ipsum dolor sit amet…`, `Home`/
   `About`/`Blog`/`Contact` reused).
-- All **8** dead or 404-ing anchors (`#` ×2; `index.html` ×3, `about.html`, `blog.html`,
-  `contact.html` — every one 404 on the preview host) materialised as real destinations.
+- All **8** dead, no-op or 404-ing anchors (`#` ×2; `index.html` ×3 — links to the page itself,
+  HTTP 200 no-ops; `about.html`, `blog.html`, `contact.html` — the three that 404 on the preview
+  host) materialised as real destinations.
 - A real Google Fonts Poppins `<link>` instead of eight dead self-hosted Roboto woff2 files
   (247,856 B = 91.98 % of the archive).
 - The **900 ms** delay on the close control reproduced or explicitly shortened, plus an accessible

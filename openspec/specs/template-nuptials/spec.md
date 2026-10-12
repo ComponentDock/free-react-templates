@@ -28,6 +28,16 @@ background (meal preferences, guest count, name/email/message), and a simple
 footer. Nuptials recreates that structure section-for-section with matching
 layout, colors, typography, and content types (no ColorLib assets copied).
 
+- **Source inner pages (live reference, curl-probed 2026-10-12):** the theme
+  ships **two** further pages, both **HTTP 200** at
+  `https://preview.colorlib.com/theme/wedding/<page>` (`curl -sS` basis):
+  `generic.html` (19,523 B — "The Generic Page", "Elaboration about Generic
+  Page", "Our Pre Wedding Photo Gallery") and `elements.html` (40,708 B — the
+  theme's own style guide: "Text Sample", "Sample Buttons", left/right-aligned
+  samples, button groups). They are the reference for the inner-page shell and
+  for the theme's button/typography vocabulary; the landing page remains the 1:1
+  reference for the recreation.
+
 ## Design reference (replication findings)
 
 - **Original:** ColorLib **"Wedding"** (source:

@@ -30,7 +30,9 @@ the source name, its copy verbatim or its typos.
   The slug-only path is the only live one — `theme/bootstrap/weddingdreams/`
   returns 404, `/downloads/free/weddingdreams.zip` returns 404 and
   `colorlib.com/etc/cs/weddingdreams/index.html` returns 404, so **the live
-  preview is the sole DOM/CSS reference** (no archive twin to diff).
+  preview is the sole DOM/CSS reference for the landing page** (no archive twin
+  to diff) — the theme's seven inner pages are live as well (inventoried at the
+  end of this section).
   Reference artifacts saved for this prep (research date 2026-10-12):
   `/tmp/weddingdreams/live.html`, `/tmp/weddingdreams/main-style.css`
   (**151,051 B**, sha256
@@ -59,6 +61,18 @@ the source name, its copy verbatim or its typos.
   affiance, betrothal, celebrant, trousseau, paperie, wedlock, nuptia, nuptials,
   troth, espousal, lensly, vows, knot, confetti and chapel.
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+
+- **Source inner pages (live reference, curl-probed 2026-10-12):** the landing
+  page is the design of record, but the same theme ships **seven** further live
+  pages at `https://preview.colorlib.com/theme/weddingdreams/<page>`, all
+  **HTTP 200** (`curl -sS` basis) — and they are the authoritative reference for
+  the sections this one-pager must invent: `services.html` (26,315 B — the "Our
+  services" card grid plus a "Pricing Plans" table with $195 / $235 / $335
+  tiers), `portfolio.html` (20,585 B), `team.html` (27,642 B — "OUR PHOTOGRAPHY
+  TEAM"), `about.html` (34,416 B — "Wedding Vendors & Venues We Love!" plus the
+  8365 / 568 / 849 counters), `blog.html` (30,733 B), `blog-details.html`
+  (33,498 B) and `contact.html` (19,993 B). None of them is copied; they are
+  read for structure, copy kind and figures.
 
 ## Design reference (replication findings)
 

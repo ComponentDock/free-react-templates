@@ -257,6 +257,24 @@ the heading and a portrait photo left; then the schedule band on the faint cream
 watercolour branches outside; a map strip; a partner-logo row; and a cream footer
 with four columns. The thumbnail's section order matches the live DOM exactly.
 
+## Source inner pages (live, curl-probed 2026-10-12)
+
+The source's file set is **nine-page** even though the landing page is the
+one-page invitation design: **eight** further pages are live at
+`https://preview.colorlib.com/theme/invits/<page>` (all **HTTP 200**, `curl -sS`
+basis).
+
+| Page | Live (`curl -sS`) | What it holds → what it informs |
+| --- | --- | --- |
+| `our_story.html` | **200**, 23,429 B | "Our Story", "The Best Gift", "OUR MEMORIES", "OUR LOVELY PARTNERS" → the story / memories / partners bands |
+| `location.html` | **200**, 17,832 B | "Our Location" → the map band's copy kind (the recreation uses a key-less embed) |
+| `gallery.html` | **200**, 18,750 B | "Our Gallery" + "OUR MEMORIES" grid |
+| `booking.html` | **200**, 16,180 B | "Are you attending?" form → the RSVP card's field set |
+| `blog.html` · `single-blog.html` | **200**, 31,101 B · 34,767 B | blog grid + post shell |
+| `elements.html` · `contact.html` | **200**, 38,698 B · 19,142 B | style guide + contact shell |
+
+Paperie stays a one-pager; those pages are read for structure and copy kind only.
+
 ## Section-by-section fidelity notes
 
 1. **Header** — 103 px tall at rest (transparent over the page's white). Links
