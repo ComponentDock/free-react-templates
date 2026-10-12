@@ -6,26 +6,34 @@
 
 ## Design notes
 
-- **Original:** TEMPLATES.md item "Wordpress Wedding Themes" — the ColorLib
-  page is a roundup ("Best Wedding WordPress Themes 2026",
-  https://colorlib.com/wp/template/wordpress-wedding-themes/). The item's
-  preview slug 404s; the concrete single-theme reference is ColorLib
-  "Wedding" (https://colorlib.com/wp/template/wedding/).
+- **Original (corrected 2026-10-12):** TEMPLATES.md line 3105 **"Wedding"**
+  (https://colorlib.com/wp/template/wedding/; preview
+  https://preview.colorlib.com/theme/wedding/ → HTTP 200). The "Wordpress
+  Wedding Themes" roundup entry (lines 235 / 3109) is a DIFFERENT item and is
+  already shipped as `wedlock` — its own preview slug 404s. Earlier revisions
+  of this prep conflated the two.
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/wedding/`
   (HTTP 200, 22.6KB) + stylesheet `css/main.css` (33.0KB). Structure below is
   from the rendered DOM + CSS tokens.
-- **Screenshot note:** `wedding-wordpress-themes.jpg` is the roundup banner —
-  elegant serif headline over a full-bleed wedding photo with a white
-  transparent nav (Our story / Photos / When & Where / Events). Use it for
-  hero mood (large, romantic, photo-forward); the section map comes from the
-  live Wedding preview.
-- **Structure observed (1:1):** navbar (Home / About us / Gallery / Pages ▾
-  [Generic, Elements]) → hero full-screen photo + centered white H1 "James &
-  Julie are Getting Married" (overlay #7f3f3b @ 0.3) → about ("About the
-  Sweet Cute Bride", two framed photos + lead copy) → date strip ("Wedding
+- **Screenshot note (this item):**
+  `wedding-free-wedding-website-template.jpg` (1200x935 AVIF, converted to PNG
+  for inspection): white contact topbar (+880 1234 654 953 ·
+  support@colorlib.com), centered logo, uppercase nav HOME / ABOUT US /
+  GALLERY / PAGES ▾; full-bleed bride-and-groom hero with a purple gradient
+  wash over the right half and a centered white bold headline; white "About
+  the Handsome Groom" section (thin heading, last word bold) with a groom
+  photo right and square prev/next slider arrows. Matches the live DOM.
+- **Structure observed (1:1):** header = contact topbar (+880 1234 654 953 ·
+  support@colorlib.com) + centered logo + nav (Home / About us / Gallery /
+  Pages ▾ [Generic, Elements]) → hero full-screen photo + centered white H1
+  "James & Julie are Getting Married" (overlay #7f3f3b @ 0.3) → about
+  owl-carousel, two slides ("About the Sweet Cute Bride" / "About the
+  Handsome Groom") with 40px white prev/next triggers → date strip ("Wedding
   Day : 20 March 2018 at 19.00 pm") → gallery ("Our Pre Wedding Photo
-  Gallery", filterable grid, 6 photos) → countdown (29 Days / 22 Hours / 23
-  Minutes / 52 Seconds) → info (bg #f9f9ff: "Wedding Information" paragraph
+  Gallery", owl-carousel slider of 6 photos g1–g6, NO filter links) →
+  countdown (29 Days / 22 Hours / 23 Minutes / 52 Seconds; static values in
+  the reference DOM, live timer is our enhancement) → info (bg #f9f9ff:
+  "Wedding Information" paragraph
   - "Main Ceremony" + "Wedding Party" cards with Date: Friday, 20 March 2018
     / Time: 19.00 / Address: 56/8, West Panthapath) → reservation (photo bg:
     "Reservation Form", Meal Preferences select Meal 1/2/3, Number of guests,
@@ -41,8 +49,9 @@
   `@free-react-templates/nuptials` (new name, no collision; never reuse the
   ColorLib source name "wedding"/"wordpress-wedding-themes").
 - **Design approach:** light theme with purple accents; hero = seeded picsum
-  photo + centered headline; about split with framed photos; date strip as
-  centered highlight bar; gallery = filterable grid of seeded picsum photos;
+  photo + centered headline; about slider (two slides + prev/next); date strip
+  as centered highlight bar; gallery = slider of six seeded picsum photos
+  (no filters);
   countdown as live timer (static/test-safe values in tests); info cards with
   lucide icons + Date/Time/Address meta; reservation form client-side only
   (select, number, text inputs; no backend); all images
@@ -65,6 +74,7 @@
 - [ ] Implement components (green) at 100% coverage.
 - [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [ ] Update TEMPLATES.md line 235 status `[~]` → `[x]` after merge
-      (bookkeeping on main, state D).
+- [ ] Update TEMPLATES.md **line 3105 (Wedding)** status `[~]` → `[x]` after
+      merge (bookkeeping on main, state D). Do NOT touch lines 235 / 3109
+      (`wedlock`, already shipped).
 - [ ] Update README structure + `docs/ai-context.md` app list.

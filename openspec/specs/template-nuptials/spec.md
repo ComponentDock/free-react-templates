@@ -4,19 +4,24 @@
 
 Nuptials is a single-page wedding landing template in the
 free-react-templates monorepo. It is an original React recreation of the
-ColorLib "Wordpress Wedding Themes" entry (see TEMPLATES.md), built under the
-monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+ColorLib **"Wedding"** entry (TEMPLATES.md line 3105, source
+`colorlib.com/wp/template/wedding/`, preview
+`https://preview.colorlib.com/theme/wedding/`), built under the monorepo
+stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-The TEMPLATES.md item points to a ColorLib roundup page
-(`colorlib.com/wp/template/wordpress-wedding-themes/`, "Best Wedding WordPress
-Themes 2026") rather than a single theme; the item's own preview slug 404s
-(`preview.colorlib.com/theme/wordpress-wedding-themes/` → HTTP 404), so the
-concrete design reference used here is ColorLib's own single "Wedding" theme
-(`preview.colorlib.com/theme/wedding/`), which is the canonical wedding
-landing behind this roundup and is fully live. That theme is a purple-accent
+**Provenance note (corrected 2026-10-12):** an earlier revision of this spec
+named the ColorLib "Wordpress Wedding Themes" roundup entry
+(`colorlib.com/wp/template/wordpress-wedding-themes/`) as the source. That is
+a *different* TEMPLATES.md item (lines 235 and 3109), it is **already shipped
+as `wedlock`**, and its own preview slug 404s
+(`preview.colorlib.com/theme/wordpress-wedding-themes/` → HTTP 404). Do not
+re-claim those lines. The source of record is the live "Wedding" theme whose
+structure is mapped below. That theme is a purple-accent
 wedding page: a full-screen hero photo ("James & Julie are Getting Married"),
-an about split ("About the Sweet Cute Bride"), a date strip ("Wedding Day: 20
-March 2018 at 19.00 pm"), a filterable pre-wedding photo gallery, a live
+an about slider with two slides ("About the Sweet Cute Bride" / "About the
+Handsome Groom"), a date strip ("Wedding Day: 20
+March 2018 at 19.00 pm"), a pre-wedding photo gallery slider (six photos, no
+filters), a live
 countdown (Days/Hours/Minutes/Seconds), three info cards (Wedding
 Information, Main Ceremony, Wedding Party), a reservation form on a photo
 background (meal preferences, guest count, name/email/message), and a simple
@@ -25,30 +30,41 @@ layout, colors, typography, and content types (no ColorLib assets copied).
 
 ## Design reference (replication findings)
 
-- **Original:** ColorLib "Wedding" theme + the "Wordpress Wedding Themes"
-  roundup item (source:
-  https://colorlib.com/wp/template/wordpress-wedding-themes/; concrete
-  reference: https://colorlib.com/wp/template/wedding/).
+- **Original:** ColorLib **"Wedding"** (source:
+  https://colorlib.com/wp/template/wedding/ — TEMPLATES.md line 3105, the
+  `- [ ]` item this spec covers). The "Wordpress Wedding Themes" roundup
+  entry (lines 235 / 3109) is a separate item, already shipped as `wedlock`.
 - **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/wedding/`
-  (HTTP 200, 22.6KB) + stylesheet `css/main.css` (33.0KB). The item's own
-  slug `https://preview.colorlib.com/theme/wordpress-wedding-themes/`
-  returns HTTP 404 (roundup page, no own preview) — fallback noted. The
-  TEMPLATES.md screenshot (`wedding-wordpress-themes.jpg`) is the roundup
-  banner: elegant serif headline ("Wedding WordPress Themes", Playfair-style)
-  over a full-bleed wedding photo with white transparent nav (Our story /
-  Photos / When & Where / Events) — it informs the hero typography mood but
-  the section map below comes from the live Wedding preview DOM.
+  (HTTP 200, 22,649 bytes) + stylesheet `css/main.css` (33,049 bytes) —
+  both re-fetched and re-verified on 2026-10-12 (the preview's
+  linearicons/font-awesome/bootstrap vendor CSS is ignored; tokens come from
+  `main.css`). The TEMPLATES.md screenshot for THIS item
+  (`wedding-free-wedding-website-template.jpg`, 1200x935 AVIF) shows: a white
+  contact topbar ("+880 1234 654 953" · "support@colorlib.com"), a centered
+  logo with uppercase nav (HOME / ABOUT US / GALLERY / PAGES ▾), a full-bleed
+  bride-and-groom hero carrying a strong purple gradient wash across the right
+  half with a centered white bold headline ("James & Julie are Getting
+  Married"), then a white "About the Handsome Groom" section (light-weight
+  heading, final word bold), body copy, groom photo on the right, and small
+  square prev/next slider arrows at the right edge. This matches the live DOM
+  structure. (The earlier note in this spec describing a Playfair-style
+  roundup banner belonged to the `wedlock` item's screenshot, not this one.)
 - **Section order (1:1):**
-  1. Header/nav: logo + nav (Home, About us, Gallery, Pages ▾ [Generic,
+  1. Header: contact topbar ("+880 1234 654 953" · "support@colorlib.com")
+     above a centered logo + nav (Home, About us, Gallery, Pages ▾ [Generic,
      Elements]).
   2. Hero (`banner-area`): full-screen background photo (header-bg.jpg) with
      dark overlay (#7f3f3b @ 0.3 opacity) and centered white headline
      "James & Julie are Getting Married" (72px, weight 700).
-  3. About (`About-area pt-100 pb-60`): "About the Sweet Cute Bride" split
-     with two framed photos + lead paragraph.
+  3. About (`About-area pt-100 pb-60`): owl-carousel slider with two slides
+     and prev/next triggers (`.carousel-trigger`, 40px white squares) — slide
+     1 "About the Sweet Cute Bride" (`about.png`), slide 2 "About the
+     Handsome Groom" (`about2.png`); each slide = light-weight heading (span
+     word at weight 600) + lead paragraphs + framed photo.
   4. Date strip (`date-area`): "Wedding Day : 20 March 2018 at 19.00 pm".
   5. Gallery (`gallery-area pt-100`): "Our Pre Wedding Photo Gallery" +
-     filterable photo grid (6 photos, filter links).
+     photo slider (`.single-gallery.active-gallery-carusel`, six images
+     g1–g6, no filter/isotope markup) + lead paragraph.
   6. Countdown (`countdown-area pt-100`): live timer 29 Days / 22 Hours /
      23 Minutes / 52 Seconds.
   7. Info (`section-gap info-area`, bg #f9f9ff): "Wedding Information"
@@ -73,8 +89,9 @@ layout, colors, typography, and content types (no ColorLib assets copied).
     textarea height 150px.
 - **Recreation decisions:** repo-standard Navbar (site name, Home link,
   dark-mode toggle) + Footer chrome; hero = seeded picsum photo + headline;
-  about split with framed photos; date strip as centered highlight bar;
-  gallery = filterable grid of seeded picsum photos; countdown as a live
+  about slider (two slides, prev/next arrows) with framed photos; date strip
+  as centered highlight bar;
+  gallery = slider of six seeded picsum photos (no filters); countdown as a live
   timer component (static test-safe values in tests); info cards with
   lucide icons and Date/Time/Address meta; reservation form with select,
   number input, and text inputs (client-side only, no submit backend); all
@@ -141,21 +158,27 @@ The system SHALL render a centered date strip announcing the wedding day.
 
 ### Requirement: Gallery
 
-The system SHALL render a "Our Pre Wedding Photo Gallery" section with a
-grid of photos and filter links.
+The system SHALL render an "Our Pre Wedding Photo Gallery" section with a
+slider of six photos and next/previous controls.
 
 #### Scenario: Gallery content
 
 - **GIVEN** the page is rendered
 - **WHEN** the gallery section is displayed
 - **THEN** it SHALL show the heading "Our Pre Wedding Photo Gallery"
-- **AND** it SHALL render a photo grid with at least six photos
+- **AND** it SHALL render at least six photos
 
-#### Scenario: Gallery filtering
+#### Scenario: Gallery slider navigation
 
 - **GIVEN** the gallery is displayed
-- **WHEN** the user activates a filter link
-- **THEN** the visible photo set SHALL update to match the selected filter
+- **WHEN** the user activates the next control
+- **THEN** the gallery SHALL advance to another photo
+
+#### Scenario: Gallery has no filters
+
+- **GIVEN** the gallery is displayed
+- **THEN** no filter links SHALL be rendered (the reference uses a slider, not
+  a filterable grid)
 
 ### Requirement: Countdown
 
@@ -228,4 +251,4 @@ and a document title.
 - [ ] Hero headline, date strip, gallery, countdown, info cards, reservation
       form, and footer match the reference content types.
 - [ ] No ColorLib assets copied (all images picsum-seeded, Poppins via link).
-- [ ] TEMPLATES.md line 235 marked `[x]` after merge with surge URL.
+- [ ] TEMPLATES.md line 3105 (**Wedding**) marked `[x]` after merge with surge URL (do NOT touch lines 235 / 3109 — those are `wedlock`, already shipped).
