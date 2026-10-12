@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* palette: a luminous cold-season photography screen — a four-photo
+     cross-fading slideshow layer that carries NO backdrop colour of its own
+     (a fade briefly reveals the page body) under exactly ONE rgba(0,0,0,0.5)
+     scrim. All chrome is white: a white pill whose #555 uppercase label flips
+     to a SOLID #555555 fill with a white label on hover, and 36px
+     white-outlined circles that invert to a white disc with a #555 glyph.
+     There is no brand accent colour and no gradient token in this design. */
+  --font-sans: 'Lato', Arial, sans-serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
+
+  --color-scrim: rgba(0, 0, 0, 0.5);
+  --color-pill: #ffffff;
+  --color-pill-label: #555555;
+  --color-pill-hover: #555555;
+  --color-social-glyph: #ffffff;
+  --color-social-glyph-hover: #555555;
+
+  /* shapes: a 25px pill for the single action, 50% circles for the social row;
+     the countdown units and its colons are unboxed (0px). */
+  --radius-pill: 25px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    background-color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
