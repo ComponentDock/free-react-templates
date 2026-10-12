@@ -86,7 +86,9 @@ layout, colors, typography, and content types (no ColorLib assets copied).
      Number of guests + name/email/message fields, on photo background
      (reservation.jpg) with transparent inputs.
   9. Footer: links (Home, About us, Gallery, Reservations) + copyright
-     ("All rights reserved | This template is made with ♥ by Colorlib").
+     ("All rights reserved | This template is made with ♥ by Colorlib"); the
+     copyright's year is produced **at runtime** by the page's own inline
+     `document.write(new Date().getFullYear())` block.
 - **Design tokens extracted from `css/main.css`:**
   - Brand color: **#c931ff** (purple — primary buttons, accents, hovers).
   - Primary button gradient: **#ca2fff → #8e96f8 → #53fff0**.
@@ -245,8 +247,8 @@ preference selector, a guest count input, and name/email/message fields.
 
 ### Requirement: Footer
 
-The system SHALL render a footer with the site name, section links, and
-social links.
+The system SHALL render a footer with the site name, section links, social links
+and a copyright bar carrying the current year.
 
 #### Scenario: Footer content
 
@@ -254,6 +256,15 @@ social links.
 - **WHEN** the footer is displayed
 - **THEN** it SHALL show the site name "Nuptials" and section links (Home, About us, Gallery, Reservations)
 - **AND** it SHALL show social links (GitHub, X, LinkedIn)
+- **AND** it SHALL close with the source's copyright bar — the reference writes it
+  as `Copyright ©<script>document.write(new Date().getFullYear());</script> All
+  rights reserved | This template is made with <i class="fa fa-heart-o"></i> by
+  <a href="https://colorlib.com">Colorlib</a>` inside `p.col-lg-8.col-sm-12.footer-text`
+  (the year is produced **at runtime** by the page's own inline block; the heart
+  is a decorative `aria-hidden` glyph) — so the recreation SHALL render
+  "Copyright © <current year> All rights reserved | This template is made with ♥ by"
+  followed by the **"Component Dock"** link to `https://www.componentdock.com/`
+  (**never** the Colorlib attribution), in the same shape
 
 ### Requirement: Page composition
 
@@ -327,6 +338,10 @@ item below is therefore a documented delta the recreation must supply.
 - [ ] Brand color #c931ff is in `@theme` and used via Tailwind classes.
 - [ ] Hero headline, date strip, gallery, countdown, info cards, reservation
       form, and footer match the reference content types.
+- [ ] Footer copyright bar renders the **computed current year** (the reference
+      writes it with its own inline `document.write(new Date().getFullYear())`)
+      and links **"Component Dock"** → https://www.componentdock.com/ — no
+      `colorlib` attribution, no hardcoded year.
 - [ ] No ColorLib assets copied (all images picsum-seeded, Poppins via link
       with axes `100;200;300;400;500;600;700`).
 - [ ] Accessibility pass: icon-only controls have accessible names (icons

@@ -26,6 +26,8 @@ section#lovestory-section.ftco-section.ftco-love    → LoveStory.tsx (timeline)
 section#greeting-section.ftco-section.testimony-section.bg-light → Greetings.tsx
 section#people-section.ftco-section                 → FamilyFriends.tsx
 section#when-where-section.ftco-section.ftco-no-pt.ftco-no-pb.bg-light → WhenWhere.tsx
+  div.container › div.row › div.col-md-5.ftco-animate.d-flex › div#map.bg-white   (live map panel)
+                             › div.col-md-7.py-5.pl-md-5                           (the two event cards)
 section#rsvp-section.ftco-section.ftco-love.img     → RsvpForm.tsx
 section#gallery-section.ftco-section.ftco-no-pb     → Gallery.tsx
 footer.ftco-footer.ftco-section                     → Footer.tsx
@@ -159,13 +161,27 @@ sibling, as the repo's other templates do.
    role (`#d291bc`); inactive items dimmed.
 7. **Family & Friends** — subheading + script title, eight people cards with
    circular portraits and Groomsmen/Bridesmaid captions.
-8. **When & Where** — `#f8f9fa` band, Ceremony + Reception columns, each topped
-   by a **100 px white disc** (`.place .text .icon`, shadow
-   `0 10px 32px -30px rgba(0,0,0,.75)`, `margin-bottom:10px`) holding a **50 px
-   `#d291bc` glyph** — the **church** (`flaticon-church` = `\uf103`) on The
-   Ceremony and the **wedding cake** (`flaticon-cake` = `\uf104`) on The
-   Reception — then date, time, address, phone and a keyless-map **See Map**
-   link.
+8. **When & Where** — `#f8f9fa` band, **split row**: left `col-md-5`
+   (`ftco-animate d-flex`) holds the **live map panel** `<div id="map"
+   class="bg-white">` (`#map{width:100%}`, `height:300px` at
+   `max-width:767.98px`) filled by the page's own `js/google-map.js` (`init()`
+   via `google.maps.event.addDomListener(window, 'load', init)`, `zoom:7`,
+   `center: LatLng(40.69847032728747, -73.9514422416687)`, `scrollwheel:false`,
+   `administrative.country`/`hue:#ff0000` styles, marker `images/loc.png` from a
+   geocode of "New York"; the API script carries the source's key and **no**
+   `callback`) — the recreation renders the panel with a keyless embed or a
+   static styled placeholder. The same head loads the source's **own analytics**
+   (`<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13">`
+   + the inline `dataLayer` bootstrap; the preview host's shared UA id) and
+   declares no `rel="icon"`/`site.webmanifest`; the app ships **neither** (guard:
+   `grep -rE 'gtag|dataLayer|googletagmanager|UA-' apps/affiance` empty), only
+   its own favicon. Right `col-md-7 py-5 pl-md-5` holds the Ceremony +
+   Reception columns, each topped by a **100 px white disc** (`.place .text
+   .icon`, shadow `0 10px 32px -30px rgba(0,0,0,.75)`, `margin-bottom:10px`)
+   holding a **50 px `#d291bc` glyph** — the **church** (`flaticon-church` =
+   `\uf103`) on The Ceremony and the **wedding cake** (`flaticon-cake` =
+   `\uf104`) on The Reception — then date, time, address, phone and a keyless-map
+   **See Map** link.
 9. **Invitation / RSVP** — fixed photo band + overlay, "Invitation" subheading +
    big script "Will You Attend?" title, form (Name, email, Guest select 1–5,
    Message, brand-pink "I am attending" submit), local-only confirmation.

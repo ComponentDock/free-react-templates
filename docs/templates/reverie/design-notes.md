@@ -260,7 +260,14 @@ every value above (the page ships no archive twin and no `/etc/cs/` demo).
 8. **Logo strip** — `#f7f8f3` band, ten monochrome vendor wordmarks (placeholders).
 9. **Footer** — `#3b3e33`. Newsletter pill (translucent input + flush-right send)
    + four 50 px social discs; four columns; copyright bar. The source's Colorlib
-   credit is replaced by the required **Component Dock** link, same shape.
+   credit is replaced by the required **Component Dock** link, same shape. The
+   bar's **year is a runtime hook, not a literal**: the markup ships
+   `<span class="js-year">2026</span>` and the theme's own `js/main.min.js`
+   fills it on `DOMContentLoaded`
+   (`function O(){let y=String(new Date().getFullYear());
+   document.querySelectorAll(".js-year").forEach(function(w){w.textContent=y})}`,
+   called by `P(){S(),F(),O()}`) — the recreation renders the computed current
+   year in the same slot, never a hardcoded `2026`.
 10. **Search overlay** — full-screen modal with a close control and a Search field.
 
 ## Source → React adaptation table

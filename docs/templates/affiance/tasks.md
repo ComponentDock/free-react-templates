@@ -177,13 +177,18 @@ Design notes: `docs/templates/affiance/design-notes.md`.
 ## When & Where (`WhenWhere`) (TDD)
 
 - [ ] Red: asserts a `#f8f9fa` band with a subheading + script "When & Where"
-      title and two columns (The Ceremony / The Reception), each topped by a
-      **100 px white disc with a 50 px `#d291bc` church / wedding-cake glyph** and
-      carrying date, time, two-line address, phone and a **See Map** link
+      title and a **split row** — left `col-md-5` **map panel** (`#map`,
+      `width:100%`, `height:300px` below `md`) filled by a **keyless** embed or a
+      static styled placeholder (never the source's keyed `maps/api/js?key=…`
+      request or its `images/loc.png` marker) — beside two columns (The Ceremony /
+      The Reception), each topped by a **100 px white disc with a 50 px `#d291bc`
+      church / wedding-cake glyph** and carrying date, time, two-line address,
+      phone and a **See Map** link
 - [ ] Green: `<WhenWhere>` with own events/venues; the **See Map** link opens a
       keyless map (OpenStreetMap embed or `...&output=embed`) in a new tab
-- [ ] Guard: assert the map URL contains no API key and the link has
-      `rel="noreferrer"` + an accessible label
+- [ ] Guard: assert the panel renders exactly one map node, the map URL contains
+      no API key, and the **See Map** link has `rel="noreferrer"` + an accessible
+      label
 
 ## RSVP form (`RsvpForm`) (TDD)
 

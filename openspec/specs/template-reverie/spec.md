@@ -191,7 +191,12 @@ the source name, its copy verbatim or its typos.
     bar closes it: "Copyright © 2026 All rights reserved | This template is made
     with ♥ by …" (left) and Terms & Use · Privacy Policy (right) — the source
     credits Colorlib, **the recreation replaces this with the Component Dock
-    link and keeps the same shape**.
+    link and keeps the same shape**. The `2026` there is not a literal in the
+    design: the markup ships `<span class="js-year">2026</span>` and the theme's
+    own `js/main.min.js` rewrites it on load
+    (`document.querySelectorAll(".js-year").forEach(w => w.textContent =
+    String(new Date().getFullYear()))`, invoked from `P(){S(),F(),O()}`), so the
+    recreation renders the **computed current year** in that slot.
   - **Search overlay:** a full-screen `#search-overlay` modal (`search-model`)
     with a close control and a centred "Search" form (opened by the header
     magnifier).

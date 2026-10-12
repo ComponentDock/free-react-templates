@@ -126,6 +126,9 @@ implementer ships it and the deploy is live.
 - [ ] Copyright bar: same shape, trailing link = **Component Dock**
       (https://www.componentdock.com/) — Colorlib credit never reproduced; Terms &
       Use / Privacy Policy as anchors.
+- [ ] The year in that bar is **computed** (`new Date().getFullYear()`), matching
+      the source's `.js-year` span + `main.min.js` hook — assert no hardcoded
+      `2026` in the component.
 
 ## 11. Image delivery (source-only format layer)
 

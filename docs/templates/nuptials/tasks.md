@@ -38,7 +38,9 @@
     / Time: 19.00 / Address: 56/8, West Panthapath) → reservation (photo bg:
     "Reservation Form", Meal Preferences select Meal 1/2/3, Number of guests,
     name/email/message) → footer (Home / About us / gallery / reservations +
-    copyright).
+    copyright bar rendering the **current year** — the reference writes it with
+    its own inline `document.write(new Date().getFullYear())` — with the
+    Component Dock link).
 - **Design tokens:** brand purple **#c931ff**; primary button gradient
   **#ca2fff → #8e96f8 → #53fff0**; light section bg **#f9f9ff**; hero overlay
   **#7f3f3b** @ 0.3; reservation input border **#656463** on transparent
@@ -81,6 +83,12 @@
       `@free-react-templates/nuptials`).
 - [ ] TDD: tests first for Navbar, Hero, About, DateStrip, Gallery,
       Countdown, InfoCards, Reservation, Footer, App composition; run red.
+- [ ] Footer copyright bar: render `Copyright © <current year> All rights
+      reserved | This template is made with ♥ by <Component Dock link>` — the
+      reference produces its year with its own inline
+      `document.write(new Date().getFullYear())`, so assert a **computed** year
+      (e.g. `new Date().getFullYear()`) and no hardcoded literal; the trailing
+      link is `https://www.componentdock.com/` (AGENTS.md rule 5), never Colorlib.
 - [ ] Accessibility (delta — the reference ships none of it): accessible names
       on icon-only controls (theme toggle) with the icon `aria-hidden`;
       `aria-expanded` (+ `aria-controls` where a target exists) on any

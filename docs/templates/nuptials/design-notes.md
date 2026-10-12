@@ -55,9 +55,19 @@ Vendor CSS referenced by the preview (`bootstrap.css`, `font-awesome.min.css`,
    `input[name=email]`, `textarea[name=message]`, submit button "Confirm now"
    (pill, gradient). Inputs: `border-radius:0; background-color:transparent;
    border:1px solid #656463;` white text; textarea 150px.
-9. `footer` — links Home / About us / gallery / reservations + copyright line
-   (paraphrase it; the repo convention replaces attribution with a
-   "Component Dock" link to https://www.componentdock.com/).
+9. Footer: links (Home, About us, Gallery, Reservations) + copyright — the
+   reference's `footer.footer-area.section-gap` holds `ul.footer-menu` (those
+   four labels, every `href="#"` **dead**) and `div.footer-social`
+   (facebook / twitter / dribbble / behance icon links, also all dead), then
+   `p.col-lg-8.col-sm-12.footer-text` reading
+   `Copyright ©<script>document.write(new Date().getFullYear());</script> All
+   rights reserved | This template is made with <i class="fa fa-heart-o"></i> by
+   <a href="https://colorlib.com">Colorlib</a>` — the year comes from the page's
+   **own 41-byte inline block**, `document.write(new Date().getFullYear())`,
+   which sits inside the sentence; the recreation renders the computed current
+   year the same way (React, no `document.write`), replaces the attribution with
+   a **"Component Dock"** link to https://www.componentdock.com/ and keeps the
+   sentence shape.
 
 ## Design tokens (from `main.css`)
 

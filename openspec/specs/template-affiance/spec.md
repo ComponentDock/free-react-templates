@@ -115,14 +115,33 @@ React 19 + Tailwind CSS 4 + TypeScript.
     Groomsmen: Mark Tomy, John Henceworth, Rey Cooper, Robert Chan; four
     Bridesmaid: Rose Jones, Mary Dell, Alicia Brean, Angel Worth).
   - **When & Where (`.bg-light`, id when-where-section):** a `#f8f9fa` band —
-    "Planning" subheading + script "When & Where" title, then two columns
-    (**The Ceremony** and **The Reception**), each topped by a **100 px white
+    "Planning" subheading + script "When & Where" title, then a **split row**: a
+    left **`col-md-5` map panel** (`<div id="map" class="bg-white">`, the column
+    carrying `ftco-animate d-flex`; `#map{width:100%}`, `height:300px` at
+    `max-width:767.98px`) and a right `col-md-7 py-5 pl-md-5` holding the two
+    columns (**The Ceremony** and **The Reception**), each topped by a **100 px white
     disc holding a 50 px `#d291bc` glyph** (`.place .text .icon`, shadow
     `0 10px 32px -30px rgba(0,0,0,.75)`, `margin-bottom:10px`) — the
     **church** (`flaticon-church` = `\uf103`, on The Ceremony) and the
     **wedding cake** (`flaticon-cake` = `\uf104`, on The Reception) — then a
     date line (Saturday, 28, 2019), a time line (02:00 pm-10:00 pm), a
     two-line street address, a phone number and a **See Map** link.
+    The panel is filled by the page's **own** `js/google-map.js`: `init()` bound
+    with `google.maps.event.addDomListener(window, 'load', init)` (the Maps API
+    script itself is the page's `…/maps/api/js?key=AIzaSy…&sensor=false`, **no**
+    `callback`), constructing `new google.maps.Map(#map, …)` with `zoom:7`,
+    `center: LatLng(40.69847032728747, -73.9514422416687)`, `scrollwheel:false`,
+    an `administrative.country` / `hue:#ff0000` style array and a marker icon
+    `images/loc.png` placed from a geocode of "New York". The recreation renders
+    the same panel with a **keyless** embed (OpenStreetMap) or a static styled
+    placeholder — never the key, never the marker asset.
+    The head also loads the source's **own analytics**
+    (`<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13">`
+    plus the inline `dataLayer` bootstrap — the preview host's shared UA id), and
+    declares no `rel="icon"` or `site.webmanifest` of its own. None of it is
+    reproduced: the app ships no third-party tag (guard:
+    `grep -rE 'gtag|dataLayer|googletagmanager|UA-' apps/affiance` empty) and its
+    own favicon.
   - **Invitation / RSVP (`.ftco-love.img`, id rsvp-section):** a **fixed
     background-photo band** (`bg_3.jpg`) under a light overlay, with a
     left-column (**col-md-5**) heading "Invitation" subheading + a big
@@ -308,8 +327,8 @@ names and roles.
 
 ### Requirement: When & Where section
 
-The system SHALL render two event columns on a light band, each with date, time,
-address, phone and a map link.
+The system SHALL render a split band holding a map panel beside two event columns,
+each with date, time, address, phone and a map link.
 
 #### Scenario: Event content
 
@@ -317,11 +336,16 @@ address, phone and a map link.
 - **WHEN** the when-&-where band is displayed
 - **THEN** it SHALL show a subheading + script "When & Where" title on a
   `#f8f9fa` band
-- **AND** SHALL show two columns — The Ceremony and The Reception — each topped
+- **AND** it SHALL be a split row: a left map panel (`col-md-5`, `#map`,
+  `width:100%`, `height:300px` below the `md` breakpoint) beside a right
+  `col-md-7` column holding **The Ceremony** and **The Reception**, each topped
   by a **100 px white disc with a 50 px `#d291bc` glyph** (a **church** on The
   Ceremony and a **wedding cake** on The Reception; decorative, `aria-hidden`),
   then a date line, a time line, a two-line street address, a phone number and a
   **See Map** link
+- **AND** the map panel SHALL be filled by a **keyless** embed (OpenStreetMap) or
+  a static styled placeholder — the source's keyed `maps/api/js?key=…` request
+  and its `images/loc.png` marker are never reproduced
 - **AND** each **See Map** link SHALL open a keyless map (an OpenStreetMap embed
   or the `output=embed` form) in a new tab
 
@@ -525,10 +549,12 @@ Everything below is a deliberate, recorded delta between the reference and the s
       reduced-opacity inactive items, pausable and reduced-motion safe
 - [ ] Family & Friends: subheading + script title, eight people cards with
       circular portraits, names and Groomsmen/Bridesmaid captions
-- [ ] When & Where: `#f8f9fa` band, two event columns (Ceremony / Reception)
-      each topped by a **100 px white disc with a 50 px `#d291bc` glyph**
-      (church / wedding cake) and carrying date, time, address, phone and a
-      keyless-map **See Map** link
+- [ ] When & Where: `#f8f9fa` band, a **split row** — left `col-md-5` map panel
+      (`#map`, `width:100%`, 300 px below `md`) with a **keyless** embed or a
+      static styled placeholder (never the source's key/marker) — beside two
+      event columns (Ceremony / Reception) each topped by a **100 px white disc
+      with a 50 px `#d291bc` glyph** (church / wedding cake) and carrying date,
+      time, address, phone and a keyless-map **See Map** link
 - [ ] RSVP: photo band + overlay, "Invitation" subheading + 60 px script "Will
       You Attend?" title, Name / email / Guest select (Guest, 1–5) / Message
       textarea / `#d291bc` "I am attending" submit; local confirmation only, no
