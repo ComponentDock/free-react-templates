@@ -1,0 +1,92 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Skyvault palette — design tokens for a violet night-sky hosting brand.
+     Brand mint #1befc5 (search action, middle step badge + halo, service-icon
+     hover, price CTA buttons, footer column titles, every link hover);
+     violet ramp #200e35 (scrolled header bar, hero gradient top, off-canvas
+     panel) → #4d1d85 (hero gradient bottom, pricing header bars) → #715691
+     (step pill, CTA band, contact fields, package prices, credit line) →
+     #7836c6 (TLD chip, pricing-action hover) → #26064c (footer band, CTA-action
+     hover) → #35214d (label colour on mint controls); neutral surfaces
+     #ffffff / #f6f8fb (why-choose band) / #f4f7f8 (floating service chip) /
+     #d5dfe3 (step badge, pricing rules); text #1f1d22 headings, #656566 body
+     copy, #a5a5a5 base body colour, #778990 muted service icons; 12px radii on
+     every control with 50% circles for the step badges and no box-shadows. */
+  --color-mint: #1befc5;
+  --color-night: #200e35;
+  --color-plum: #4d1d85;
+  --color-plum-mid: #715691;
+  --color-plum-bright: #7836c6;
+  --color-plum-deep: #26064c;
+  --color-ink-on-mint: #35214d;
+  --color-surface: #ffffff;
+  --color-surface-cool: #f6f8fb;
+  --color-surface-chip: #f4f7f8;
+  --color-haze: #d5dfe3;
+  --color-ink: #1f1d22;
+  --color-body-copy: #656566;
+  --color-body: #a5a5a5;
+  --color-icon-muted: #778990;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variant resolves
+     to the mint brand accent. */
+  --color-primary-50: #eafdf8;
+  --color-primary-100: #cbfaf0;
+  --color-primary-200: #9df4e2;
+  --color-primary-300: #63e9d3;
+  --color-primary-400: #34d9c1;
+  --color-primary-500: #1befc5;
+  --color-primary-600: #1befc5;
+  --color-primary-700: #12cfab;
+  --color-primary-800: #0fa98c;
+  --color-primary-900: #0b7f6a;
+
+  --font-heading: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+
+  /* Decorative cloud drift: the sprite starts 138px left of the band and
+     travels one viewport width plus its own width, forever. */
+  --animate-cloud: cloud-drift 60s linear infinite;
+
+  @keyframes cloud-drift {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(100vw + 138px));
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-body);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8666;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-ink);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  ::selection {
+    background: rgba(27, 239, 197, 0.75);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
