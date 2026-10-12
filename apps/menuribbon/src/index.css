@@ -1,0 +1,92 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Menuribbon palette — design tokens for a navigation-first page: a #eee
+     contact/social utility bar above a white header, a #007bff uppercase 32px
+     wordmark at the far left, a bare #000 right-aligned row of seven 16px labels
+     that turn #007bff on hover, one white dropdown with a 2px #007bff top border
+     (no pointer triangle) and a nested left-full fly-out, a header that pins to
+     the top on scroll, and a 300px off-canvas panel over a rgba(0, 0, 0, .5)
+     veil. The shape language is squares only — the sole radius is the 50% circle
+     of the mobile sub-row expanders. */
+  --color-accent: #007bff;
+  --color-accent-shade: #0056b3;
+  --color-ink: #212529;
+  --color-topbar: #eee;
+  --color-topbar-link: #666666;
+  --color-soft: #f8f9fa;
+  --color-muted: #ced4da;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variant resolves to
+     the page's #007bff accent. */
+  --color-primary-50: #e6f1ff;
+  --color-primary-100: #cce4ff;
+  --color-primary-200: #99c9ff;
+  --color-primary-300: #66adff;
+  --color-primary-400: #3392ff;
+  --color-primary-500: #007bff;
+  --color-primary-600: #007bff;
+  --color-primary-700: #0069d9;
+  --color-primary-800: #0056b3;
+  --color-primary-900: #004085;
+
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+
+  /* The reference steps its container widths and its desktop/mobile hand-over at
+     576 / 768 / 992 / 1200 — a grid scale, not Tailwind's default 640 / 768 /
+     1024 / 1280. Re-pointing the breakpoints keeps every utility in step: the
+     top-bar labels appear at md (768), the desktop row only exists at lg (992). */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  --shadow-panel: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+  --shadow-dropdown: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
+  --shadow-sticky: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+  ::selection {
+    background: rgba(0, 123, 255, 0.25);
+  }
+  /* Every transition on this page is decorative: the label tint, the dropdown
+     glide, the sticky flip and the 300px panel all collapse to effectively
+     instant, so no content is ever gated behind motion. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
