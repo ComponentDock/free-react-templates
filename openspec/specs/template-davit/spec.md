@@ -147,7 +147,7 @@ icon-font glyphs, no inline SVG `<path>` data, no text verbatim) and never reuse
     `i.fa.fa-shopping-cart` › an inline **SVG** cart glyph (`viewBox="0 0 1664 1792"`, same
     `<g transform>` wrap) plus an empty `<b class="caret"></b>` (the sheet declares **no** `.caret`
     rule — the class is dead markup, and `.cl-dropdown-toggle::after` is explicitly
-    `display:none`), followed by
+    `display:none`), then
     `div.cl-dropdown-menu.cl-dropdown-menu-right[aria-labelledby="dropdown04"]` with **five
     `a.cl-dropdown-item`** — *Action*, *Another action*, *Something else here*, *Separated link*,
     *One more separated link* — separated by **two** `div.cl-dropdown-divider` (after item 3 and
@@ -162,7 +162,7 @@ icon-font glyphs, no inline SVG `<path>` data, no text verbatim) and never reuse
   `getComputedStyle` read taken immediately after a CDP
   `Emulation.setDeviceMetricsOverride` can return a **stale pre-override value** — the brand's
   `color` read `rgb(255,255,255)` on the first desktop pass and `rgb(0,0,0)` on the freshly
-  re-loaded pass, while the screenshot showed black ink both times. **Re-load the page after the
+  re-loaded pass, while the screenshot rendered black ink both times. **Re-load the page after the
   override, and treat screenshot pixels as authority.**)**
   - **`h2`:** 28 px / 400 / `line-height:1.5` (42 px) / `#000` / centred (`.cl-text-center`),
     `margin-bottom:0.5rem` (8 px) + `.cl-mb-5` **48 px**; the `cl-col-md-6` column is
@@ -289,7 +289,7 @@ row list (all from the single `@media (max-width:991.98px)` block).
 1. **The accent is amber `#fec771`, not the `-14` sibling's pink `#fc7fb2`** and not the `-13`
    sibling's teal. Copying a sibling's palette is the single easiest way to break this template.
 2. **Rows are `13 px` and `text-transform:uppercase` with `letter-spacing:1px`** — the only
-   uppercase-rowed sibling in the family so far. Rows measure **61.8 px** (13 × 1.8 = 23.4 lh +
+   sibling in the family so far with uppercase rows. Rows measure **61.8 px** (13 × 1.8 = 23.4 lh +
    19.2 × 2 padding), so the card is **81.8 px**, not the `-14` sibling's 84 px.
 3. **The card is WHITE, `5 px`-rounded and casts a soft shadow on a `#fafafa` page** and keeps its
    radius + shadow on mobile too — only the background flips to `#000` below `992 px`.

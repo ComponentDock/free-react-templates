@@ -58,7 +58,7 @@ Live render cross-checked in a browser at **1440 / 1200 / 992 px** (desktop), **
 (mobile, panel closed and open) and **375 / 320 px** (narrow). ⚠️ A `getComputedStyle` read taken
 immediately after a CDP `Emulation.setDeviceMetricsOverride` returned a **stale pre-override
 value** for the brand colour (`rgb(255,255,255)` on the first desktop pass, `rgb(0,0,0)` after a
-fresh re-load — the 1440 px screenshot showed black ink both times). **Re-load the page after the
+fresh re-load — the 1440 px screenshot rendered black ink both times). **Re-load the page after the
 override and trust the screenshot pixels.**
 
 ## DOM skeleton (live preview, 4,713 B)

@@ -107,7 +107,7 @@ Design notes: `docs/templates/davit/design-notes.md`.
 ## Right-aligned rows with the amber current row (TDD)
 
 - [ ] Tests first: exactly **five** text rows in one list, in order (current, then the four plain
-      ones) followed by the cart item, rendered `display:none` below 992 px and a `flex row` at
+      ones) then the cart item, rendered `display:none` below 992 px and a `flex row` at
       ≥992 px while the toggler is the exact opposite
 - [ ] The list is **`ml-auto mr-4`** (`margin-left:auto` + `margin-right:1rem` at ≥768 px) so it is
       **right-aligned**: it ends **16 px left of the container's content right edge** (measured
