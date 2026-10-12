@@ -3070,7 +3070,7 @@
 
 ## Website Menus (20)
 
-- [ ] **Website Menu 01** — [colorlib](https://colorlib.com/wp/template/website-menu-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/website-menu-01.jpg)
+- [~] **Website Menu 01** — [colorlib](https://colorlib.com/wp/template/website-menu-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/website-menu-01.jpg)
 - [ ] **Website Menu 02** — [colorlib](https://colorlib.com/wp/template/website-menu-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/website-menu-02.jpg)
 - [ ] **Website Menu 03** — [colorlib](https://colorlib.com/wp/template/website-menu-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/website-menu-03.jpg)
 - [ ] **Website Menu 04** — [colorlib](https://colorlib.com/wp/template/website-menu-04/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/website-menu-04.jpg)
