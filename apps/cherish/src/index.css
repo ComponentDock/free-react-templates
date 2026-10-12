@@ -1,0 +1,139 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Cherish palette — the tokens for a gold-on-white wedding page: a full-bleed photograph under a
+     gold flourish, white cards floating on top of it, and hairline-bordered fields inside them.
+     The brand gold #d48f4c carries every button, the nav underline, the countdown colons and the
+     footer credit; #353535 is the ink for headings and hover states; #747e8c is all body copy;
+     #b5b5b5 is a resting nav link; #e1e1e1 draws the field borders, the social rings and the rail
+     the day events sit on; #eaf1f4 is the small dot under each event icon; #cc1111 is the single
+     red accent (the heart in the footer line). Shape language: cards take a 10px radius with a very
+     soft shadow, buttons and fields stay square, and socials are 40px circles. */
+  --color-brand: #d48f4c;
+  --color-ink: #353535;
+  --color-muted: #747e8c;
+  --color-faint: #b5b5b5;
+  --color-hairline: #e1e1e1;
+  --color-wash: #eaf1f4;
+  --color-heart: #cc1111;
+  --color-page: #ffffff;
+  --color-panel: #353535;
+  --color-scrim: rgba(53, 53, 53, 0.35);
+
+  --font-display: 'Arima Madurai', cursive;
+  --font-sans: 'Work Sans', sans-serif;
+
+  --radius-card: 10px;
+  --shadow-card: 0 5px 30px rgba(53, 53, 53, 0.06);
+  --shadow-venue: 0 5px 35px rgba(53, 53, 53, 0.06);
+
+  /* The design turns at the four Bootstrap tiers it was built on, so the scale is re-pointed at
+     them: the nav row gives way to the burger at lg (992px) and the hero's names step down at md. */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-page);
+    color: var(--color-muted);
+    font-family: var(--font-display);
+    font-size: 17px;
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-ink);
+    font-weight: 700;
+  }
+  p {
+    font-family: var(--font-sans);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 0 0 15px;
+  }
+  /* The one red in the design: the heart in the footer's own line. */
+  .footnote-heart {
+    color: var(--color-heart);
+  }
+  ::selection {
+    background: rgba(212, 143, 76, 0.35);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* The nav row's signature: a 2px gold rule held under a label, at rest scaled away to nothing and
+     grown to full width on hover, on the label the page is standing on, and whenever the item is
+     open. Written as one rule so the rest and hover states cannot race in the cascade. */
+  .nav-label::after {
+    content: '';
+    position: absolute;
+    inset-inline: 0;
+    bottom: -2px;
+    height: 2px;
+    background-color: var(--color-brand);
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+  .nav-label:hover::after,
+  .nav-label[aria-current='page']::after,
+  .group:hover > .nav-label::after,
+  .group:focus-within > .nav-label::after {
+    transform: scaleX(1);
+  }
+  /* The day events sit on a single hairline rail drawn 116px down, and each icon's dot rests on it. */
+  /* The gold colon the design sets between its countdown counters — written out here rather than
+     as an arbitrary content utility so the character never has to survive an escape in a class. */
+  .counter-colon::after {
+    content: ':';
+    position: absolute;
+    top: 33px;
+    right: -20px;
+    font-family: var(--font-sans);
+    font-size: 36px;
+    color: var(--color-brand);
+  }
+  @media (max-width: 575px) {
+    .counter-colon::after {
+      content: none;
+    }
+  }
+  .event-rail::before {
+    content: '';
+    position: absolute;
+    inset-inline: 0;
+    top: 116px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .event-dot::after {
+    content: '';
+    position: absolute;
+    inset-inline: 0;
+    bottom: -50px;
+    height: 16px;
+    width: 16px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: var(--color-wash);
+  }
+}
