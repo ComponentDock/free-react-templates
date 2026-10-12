@@ -84,5 +84,32 @@ it was built from a spec with no visual reference).
   `queryByLabelText(...)` is absent instead of checking the input value.
 - The ColorLib preview can be slow/bot-guarded; retry with a browser
   (Browserbase) if curl gets blocked.
+- The **Website Menus** family (`website-menu-*`) does **not** live at
+  `/theme/<slug>/` (that 404s) — its live preview is
+  `https://preview.colorlib.com/theme/bootstrap/<slug>/`, found through the
+  preview host's own catalog index. Verify the preview's CSS byte size +
+  sha256 against the snippet archive (`/downloads/free/<slug>.zip`) before
+  trusting a prep spec's token table.
+- **Off-canvas sidebar + closed panel:** a panel that is `aria-hidden` while
+  shut exposes **no accessible roles** — `getAllByRole('link')` throws. Query
+  the shut state via `getByTestId`/`hidden: true`, or open the panel first, and
+  keep a labelled `button` for the veil (a bare `div` overlay is not operable).
+- **"No rounding" class assertions:** `/rounded/` also matches a legitimate
+  square-language `rounded-none`. Assert the absence of real radii
+  (`rounded-full`, `rounded-lg`, `rounded-md`, `rounded-sm`) or filter the
+  class list for `rounded` tokens other than `-none`.
+- **Class-string assertions:** `not.toContain('text-brand')` also matches
+  `hover:text-brand`. Compare `className.split(' ')` tokens instead.
+- **Declared-but-missing pages:** when the source's menu points at
+  `about.html` etc. that do not exist, materialise each as a real in-band panel
+  with a matching `id` and `scroll-mt-[7rem]`, and keep the first viewport pure
+  image (`pt-[100vh]` inside a `min-h-screen` band) — never ship `href="#"`.
+- **Focus-return hooks:** read refs once at effect start
+  (`panelRef.current as HTMLElement`) and capture the trigger node in the
+  closure so the cleanup can return focus without optional-chaining branches —
+  that keeps 100% branch coverage reachable.
+- **In-page anchor clicks in tests:** attach a native `{ once: true }`
+  `preventDefault` listener before `user.click(anchor)` (see
+  `docs/ai-context.md`) or the click can silently be dropped from the suite.
 - If the preview is unreachable, fall back to the screenshot as the sole
   reference and say so in the PR.
