@@ -1,0 +1,91 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Mizzen palette — the tokens for a fluid chrome row (four social circles, a centred two-line
+     wordmark, a pill search field) sitting above one dark bar whose rows wipe a hairline underline
+     in from the left. The page is #fafafa with grey #808080 ink, the bar is #252525 on wide
+     viewports and #000 below the width its rows fold at, and the accent is a single pure red
+     #ff0000 worn by the current row's label, the hovered row's underline and label, the circle
+     hover fill, the menu item hover fill and the search submit button. Shape language: the field
+     is a 40px pill, the menu is 4px, the circles are round, and every row, the input and the
+     submit are square. One shadow, under the menu alone. */
+  --color-page: #fafafa;
+  --color-ink: #808080;
+  --color-accent: #ff0000;
+  --color-bar: #252525;
+  --color-row: #fff;
+  --color-circle: #e6e6e6;
+  --color-glyph: #4d4d4d;
+
+  --font-sans: 'Poppins', Arial, sans-serif;
+
+  /* The chrome hands over at 768 (its gutters) and 992 (the bar's own reshape); the heading's
+     container takes the classic tiers at 576 / 768 / 992 / 1200. Re-pointing the scale keeps every
+     utility in step with the widths the design itself turns at. */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  /* The pill search field and the menu; everything else on the page is square. */
+  --radius-pill: 40px;
+  --radius-menu: 4px;
+
+  /* The page's one shadow: under the menu a row opens. */
+  --shadow-menu: 0 10px 34px -20px rgba(0, 0, 0, 0.41);
+
+  --ease-collapse: ease;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-page);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 0;
+  }
+  /* The design's own link colour is the page's accent, and it draws no underline in any state; the
+     hover and focus affordances restored on the links themselves are documented deltas. */
+  a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: var(--color-accent);
+  }
+  h2 {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  button {
+    border-radius: 0;
+  }
+  /* A selected run of text wears the page's own accent. */
+  ::selection {
+    background: rgba(255, 0, 0, 0.25);
+  }
+  /* Every transition here is decorative — the panel travelling to its content height, the
+     underline wiping in under a row, the colour changes on rows, circles and menu items — so under
+     reduced motion they land immediately and nothing is ever gated behind them. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
