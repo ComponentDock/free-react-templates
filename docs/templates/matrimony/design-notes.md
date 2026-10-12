@@ -146,8 +146,16 @@ The source's first body element is
 - Cards (`col-xl-4`, `align-items-end`):
   - `.single-card`: white, `padding: 70px 25px 0`, shadow
     `0 0 9px rgba(131,93,248,0.07)`, `border: 1px solid transparent`.
-  - `.card-top`: icon glyph (flaticon/themify) above the title, then
-    `border-bottom: 2px solid #f4f4f4; margin-bottom: 46px`.
+  - `.card-top`: the card glyph (a `50 px` `display:block` span, ink `#212529`)
+    above the title, then `border-bottom: 2px solid #f4f4f4; margin-bottom: 46px`.
+    **The three flaticon class names are misleading — these are the shapes the
+    source actually paints** (verified on the live render, `assets/css/flaticon.css`
+    maps them `chart → \f100`, `project → \f105`, `award → \f106`):
+    Ceremony = `flaticon-chart` = a **magnifier with connected network nodes**
+    (not a bar chart) → lucide `ScanSearch`/`Radar`;
+    Reception = `flaticon-project` = a **rocket with a check mark and a download
+    arrow** (not a clipboard) → lucide `Rocket`;
+    Party = `flaticon-award` = a **ribbon rosette with a star** → lucide `Award`.
   - title `h4`: Playfair 25 px / 700 `#2e3c40`.
   - list rows: `#636363`, weight 300, 16 px, `margin-bottom: 26px`, icon with
     `padding-right: 7px` — date ("April 20, 2016"), time ("5:30 PM"), venue

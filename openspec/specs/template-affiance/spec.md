@@ -59,8 +59,12 @@ React 19 + Tailwind CSS 4 + TypeScript.
     Bridesmaid & Groomsmen · When & Where · RSVP · Gallery).
   - **Hero:** a full-bleed couple photo (700 px tall in the markup,
     `js-fullheight` full-viewport in the source) under a **`rgba(0,0,0,.4)`
-    dark overlay**, with a small **round brand-pink badge** (a two-rings icon)
-    pinned near the top-left of the heading. The couple names
+    dark overlay**, with a **120 px `#d291bc` badge, centred above the names**
+    (`margin:0 auto`, inside the centred `.text` block) — an inset
+    `1.4px dashed rgba(255,255,255,.3)` ring around a **60 px white glyph: two
+    interlocking rings + a diamond + a small heart** (`flaticon-diamond-ring` =
+    `\uf100`; verified on the live render — the badge is **centred above the
+    heading**, not pinned to its left). The couple names
     "Leonardo & Marianna" sit centred in **Rochester script, 8vw, white**, and
     beneath them a **white pill** (radius 2 px) holding an uppercase
     letter-spaced (`letter-spacing:7px`) brand-pink tagline ("ARE GETTING
@@ -78,20 +82,33 @@ React 19 + Tailwind CSS 4 + TypeScript.
     big **Rochester script "Bride & Groom"** title (brand colour). Then two
     alternating rows (groom, then bride): a **400 × 400 photo with a 15 px
     `#f0d9e8` solid frame**, offset to one side, against a right-/left-aligned
-    text column with a **Rochester script name** and a grey paragraph.
-  - **Love Story (`.ftco-love`, id lovestory-section):** a full-bleed
+    text column with a **Rochester script name** and a grey paragraph. Each
+    text block also carries the theme's **100 px `#d291bc` two-doves glyph**
+    (`.bride-groom .text .icon span`, `flaticon-dove-1` = `\uf101`) as a
+    `z-index:-1` decoration pinned to the block's bottom edge — `icon-left` on
+    the right-hand block, `icon-right` on the left-hand one.
+   - **Love Story (`.ftco-love`, id lovestory-section):** a full-bleed
     **fixed/parallax background photo** (`bg_2.jpg`) band — a centred subheading
     over a big script title ("Timeline of Love"), then a **vertical timeline**:
     four entries (First We Meet · First Date · In A Relationship · We're
     Engaged), each an **alternating side panel** (43 % width) with a date, a
-    script heading and a paragraph, and a **120 px circular photo "timeline
+    script heading and a paragraph, a **120 px circular photo "timeline
     badge"** carrying an inset **dashed `rgba(255,255,255,.5)` ring** on the
-    centre line.
+    centre line, and a **120 px `rgba(255,255,255,.3)` two-doves glyph**
+    (`.timeline-panel .icon span`, `flaticon-dove-1` = `\uf101`, `top:20px`,
+    `z-index:-1`, `left:20px` / `right:20px` by the panel's side; 80 px below
+    the `md` breakpoint).
   - **Greetings (`.testimony-section.bg-light`, id greeting-section):** a
     `#f8f9fa` band with a subheading + script title "Sweet Messages", then an
-    **owl-carousel** of message cards (avatar, paragraph, name + role); the
-    source ships the same "Roger Scott / Marketing Manager" card repeated and
-    inactive items at `opacity:.4`.
+    **owl-carousel** of message cards — each a white card (1 px
+    `rgba(0,0,0,.02)` hairline, shadow `0 5px 21px -14px rgba(0,0,0,.14)`)
+    with a **40 px `#d291bc` disc peeking above its top-left corner**
+    (`.testimony-wrap .icon`, `top:-20px; left:20px; z-index:-1`) holding a
+    **30 px white single-dove glyph** (`flaticon-dove` = `\uf105`), then an
+    **80 px avatar photo in a 5 px `#f0d9e8` frame**, a paragraph and a
+    name + role (`#000` name / `#d291bc` role); the source ships the same
+    "Roger Scott / Marketing Manager" card repeated and inactive items at
+    `opacity:.4`.
   - **Family & Friends (id people-section):** a white band — "Bridesmaid &
     Groomsmen" subheading + script "Family & Friends" title, then a row of eight
     people cards: a **circular portrait**, a name and a role caption (four
@@ -99,9 +116,13 @@ React 19 + Tailwind CSS 4 + TypeScript.
     Bridesmaid: Rose Jones, Mary Dell, Alicia Brean, Angel Worth).
   - **When & Where (`.bg-light`, id when-where-section):** a `#f8f9fa` band —
     "Planning" subheading + script "When & Where" title, then two columns
-    (**The Ceremony** and **The Reception**), each with a date line
-    (Saturday, 28, 2019), a time line (02:00 pm-10:00 pm), a two-line street
-    address, a phone number and a **See Map** link.
+    (**The Ceremony** and **The Reception**), each topped by a **100 px white
+    disc holding a 50 px `#d291bc` glyph** (`.place .text .icon`, shadow
+    `0 10px 32px -30px rgba(0,0,0,.75)`, `margin-bottom:10px`) — the
+    **church** (`flaticon-church` = `\uf103`, on The Ceremony) and the
+    **wedding cake** (`flaticon-cake` = `\uf104`, on The Reception) — then a
+    date line (Saturday, 28, 2019), a time line (02:00 pm-10:00 pm), a
+    two-line street address, a phone number and a **See Map** link.
   - **Invitation / RSVP (`.ftco-love.img`, id rsvp-section):** a **fixed
     background-photo band** (`bg_3.jpg`) under a light overlay, with a
     left-column (**col-md-5**) heading "Invitation" subheading + a big
@@ -112,8 +133,12 @@ React 19 + Tailwind CSS 4 + TypeScript.
   - **Gallery (id gallery-section):** a **full-width, no-gutter** band
     (`container-fluid px-0`, `row no-gutters`) — a centred subheading + script
     "Photo Gallery" title, then a **4-column grid of 300 px tiles**. Each tile
-    is a link with a background image; on hover a **`#d291bc` wash** and a
-    **70 px white circle with a plus glyph** fade in (magnific-popup lightbox).
+    is a link with a background image; on hover a **`#d291bc` wash at
+    `opacity:.8`** (`.gallery:after`) and a **70 px white disc holding a 50 px
+    `#d291bc` two-doves glyph** fade in (`.gallery .icon`, `opacity:0 → 1` on
+    `:hover`/`:focus`) for the magnific-popup lightbox — the source paints
+    **`flaticon-dove-1` (`\uf101`), not a plus glyph** (verified on the live
+    render).
   - **Footer (`.ftco-footer`):** a **`#d291bc`** band, `padding:7em 0`, white
     text — the "Twohearts" wordmark + a short blurb, then three link columns
     (**Links**: Home, Groom & Bride, Story, Greetings, People, Where & When,
@@ -135,7 +160,10 @@ React 19 + Tailwind CSS 4 + TypeScript.
 | Muted ink | `rgba(0,0,0,.7)` (light bands) · `rgba(255,255,255,.6)` (footer sub-links) | `.block-23 ul li span`, `.ftco-footer-widget ul li a span`; `#6c757d` exists only inside the inlined Bootstrap block (caption/placeholder), never as a design ink |
 | Overlay scrim | **`rgba(0,0,0,.4)`** | hero dark overlay; lighter wash on the RSVP photo band |
 | Hairline divider | `rgba(255,255,255,.05)` | countdown cell separators |
+| Hero badge | **120 px `#d291bc` disc**, inset `1.4px dashed rgba(255,255,255,.3)` ring, 60 px white glyph | `.herowrap .text .icon` (centred above the names) |
 | Badge ring | `rgba(255,255,255,.5)` dashed | 120 px timeline badge inset ring |
+| Doves motif | **`flaticon-dove-1`** `\uf101` (two doves + hearts) · **`flaticon-dove`** `\uf105` (single) | 100 px `#d291bc` (bride/groom text blocks) · 120 px `rgba(255,255,255,.3)` (timeline panels) · 50 px `#d291bc` (gallery discs) · 30 px white on a 40 px `#d291bc` disc (greetings cards) |
+| Place glyphs | **`flaticon-church`** `\uf103` (Ceremony) · **`flaticon-cake`** `\uf104` (Reception) | 50 px `#d291bc` inside the 100 px white When-&-Where discs |
 | Radii | **4 px** countdown bar + buttons (`.25rem`) · **2 px** hero tagline pill · **50 %** circles | shape language |
 | Shadow | `0 10px 32px -19px rgba(0,0,0,.15)` | countdown bar |
 | Fonts | **"Rochester", cursive** (all headings, couple names, names, countdown numbers) · **"Source Sans Pro", sans-serif** (body, nav, UI) | both verified on Google Fonts (HTTP 200) |
@@ -181,8 +209,9 @@ the couple names in a script face and a white tagline pill.
 - **WHEN** the hero is displayed
 - **THEN** it SHALL show a full-bleed photo under a `rgba(0,0,0,.4)` dark
   overlay
-- **AND** SHALL show a small round brand-pink two-rings badge near the top of
-  the heading
+- **AND** SHALL show a **120 px `#d291bc` disc centred above the names** with an
+  inset `1.4px dashed rgba(255,255,255,.3)` ring carrying a **60 px white
+  two-rings + diamond + heart glyph** (decorative, `aria-hidden`)
 - **AND** SHALL show the couple names centred in **Rochester script, white**
 - **AND** SHALL show a white, 2 px-radius pill beneath the names holding an
   uppercase, letter-spaced (7 px) brand-pink tagline
@@ -222,6 +251,8 @@ title and two framed portraits with names and blurbs.
   (groom, then bride) and a paragraph of muted copy
 - **AND** each row SHALL alternate the side of the photo on desktop and stack on
   mobile
+- **AND** each text column SHALL carry a **100 px `#d291bc` two-doves glyph**
+  pinned to its bottom edge as a `z-index:-1` decoration (`aria-hidden`)
 
 ### Requirement: Love Story timeline
 
@@ -239,6 +270,8 @@ timeline with circular photo badges.
   with a date, a script heading and a paragraph
 - **AND** each entry SHALL show a **120 px circular photo badge** with an inset
   dashed `rgba(255,255,255,.5)` ring centred on the timeline's vertical rule
+- **AND** each panel SHALL paint a **120 px `rgba(255,255,255,.3)` two-doves
+  glyph** at its top corner (decorative, `aria-hidden`, `z-index:-1`)
 - **AND** the parallax SHALL be disabled under `prefers-reduced-motion: reduce`
 
 ### Requirement: Greetings carousel
@@ -251,8 +284,10 @@ The system SHALL render a light band with a carousel of guest-message cards.
 - **WHEN** the greetings band is displayed
 - **THEN** it SHALL show a subheading + script "Sweet Messages" title on a
   `#f8f9fa` band
-- **AND** SHALL show a carousel of message cards, each with an avatar, a
-  paragraph and a name + role
+- **AND** SHALL show a carousel of message cards, each with a **40 px `#d291bc`
+  disc holding a 30 px white single-dove glyph, peeking above its top-left
+  corner**, an 80 px avatar in a 5 px `#f0d9e8` frame, a paragraph and a
+  name + role
 - **AND** inactive items SHALL render at reduced opacity and the carousel SHALL
   be pausable, keyboard-operable and static under `prefers-reduced-motion`
 
@@ -282,8 +317,10 @@ address, phone and a map link.
 - **WHEN** the when-&-where band is displayed
 - **THEN** it SHALL show a subheading + script "When & Where" title on a
   `#f8f9fa` band
-- **AND** SHALL show two columns — The Ceremony and The Reception — each with a
-  date line, a time line, a two-line street address, a phone number and a
+- **AND** SHALL show two columns — The Ceremony and The Reception — each topped
+  by a **100 px white disc with a 50 px `#d291bc` glyph** (a **church** on The
+  Ceremony and a **wedding cake** on The Reception; decorative, `aria-hidden`),
+  then a date line, a time line, a two-line street address, a phone number and a
   **See Map** link
 - **AND** each **See Map** link SHALL open a keyless map (an OpenStreetMap embed
   or the `output=embed` form) in a new tab
@@ -316,7 +353,7 @@ a four-field attendance form.
 ### Requirement: Gallery
 
 The system SHALL render a full-width, no-gutter grid of photo tiles that reveal
-an overlay and a plus affordance on hover.
+an overlay and the theme's two-doves affordance on hover.
 
 #### Scenario: Gallery content
 
@@ -325,8 +362,9 @@ an overlay and a plus affordance on hover.
 - **THEN** it SHALL show a centred subheading + script "Photo Gallery" title
 - **AND** SHALL show a four-column, no-gutter grid of 300 px tiles, reflowing to
   fewer columns at the breakpoints
-- **AND** hovering or focusing a tile SHALL reveal a `#d291bc` wash and a 70 px
-  white circle with a plus glyph
+- **AND** hovering or focusing a tile SHALL reveal a `#d291bc` wash
+  (`opacity:.8`) and a **70 px white disc holding a 50 px `#d291bc` two-doves
+  glyph**
 - **AND** each tile SHALL be operable by keyboard and SHALL open the image in an
   accessible lightbox
 
@@ -413,33 +451,45 @@ contentinfo landmarks.
       white numbers updating once per second
 - [ ] Bride & Groom: dashed `#d291bc` subheading pill + Rochester script title,
       two alternating rows with **400 × 400 photos framed by a 15 px `#f0d9e8`
-      border**, script names and muted paragraphs
+      border**, script names and muted paragraphs, each column carrying the
+      **100 px `#d291bc` two-doves glyph** at its bottom edge
 - [ ] Love Story: parallax photo band, subheading + script title, four
       alternating timeline entries, **120 px circular photo badges** with an
-      inset dashed `rgba(255,255,255,.5)` ring, parallax off under reduced
-      motion
+      inset dashed `rgba(255,255,255,.5)` ring, a **120 px
+      `rgba(255,255,255,.3)` two-doves glyph** at each panel's top corner,
+      parallax off under reduced motion
 - [ ] Greetings: `#f8f9fa` band, subheading + script "Sweet Messages" title,
-      guest-message carousel with reduced-opacity inactive items, pausable and
-      reduced-motion safe
+      guest-message carousel with a **40 px `#d291bc` disc + 30 px white
+      single-dove glyph** above each card's top-left corner,
+      reduced-opacity inactive items, pausable and reduced-motion safe
 - [ ] Family & Friends: subheading + script title, eight people cards with
       circular portraits, names and Groomsmen/Bridesmaid captions
 - [ ] When & Where: `#f8f9fa` band, two event columns (Ceremony / Reception)
-      each with date, time, address, phone and a keyless-map **See Map** link
+      each topped by a **100 px white disc with a 50 px `#d291bc` glyph**
+      (church / wedding cake) and carrying date, time, address, phone and a
+      keyless-map **See Map** link
 - [ ] RSVP: photo band + overlay, "Invitation" subheading + 60 px script "Will
       You Attend?" title, Name / email / Guest select (Guest, 1–5) / Message
       textarea / `#d291bc` "I am attending" submit; local confirmation only, no
       external POST, labelled fields
 - [ ] Gallery: full-width no-gutter grid, ~300 px tiles, 4 columns desktop and
-      fewer below, hover/focus `#d291bc` wash + 70 px white plus circle, keyboard
-      toolbox lightbox
+      fewer below, hover/focus `#d291bc` wash (`opacity:.8`) + 70 px white disc
+      carrying the **50 px two-doves glyph**, keyboard toolbox lightbox
 - [ ] Footer: `#d291bc` band, wordmark + blurb + social row, three columns
       (Links · Services · Have a Questions? contact), 20 px uppercase white
       headings, white links, copyright with a Component Dock link and the
       current year
 - [ ] Tokens: brand `#d291bc` and cell `#cb7fb1` in `@theme`; Rochester +
       Source Sans Pro loaded from Google Fonts; radii 4 px / 2 px / 50 %
+- [ ] Iconography: the theme's **two-doves motif** (bride/groom blocks, timeline
+      panels, gallery discs, greetings discs) and the **church / wedding-cake**
+      When-&-Where discs are reproduced at the sizes/colours of the census table
+      above (no icon-font glyph copied — inline SVG motif + `lucide-react`)
 - [ ] Placeholder images via seeded picsum (`seed/affiance-<n>/<w>/<h>`); the
-      two-rings badge and the plus glyph are inline SVG; no ColorLib asset
+      hero two-rings/diamond badge and the recurring two-doves motif are
+      **inline SVG** (`DovesMark`, decorative), while the church/cake discs use
+      `lucide-react` `Church` / `Cake` and the small UI glyphs `Menu`, `X`,
+      `ChevronDown`, `MapPin`, `Phone`, `Mail`, `ArrowUp`; no ColorLib asset
       copied
 - [ ] No `colorlib` / `twohearts` / "Twohearts" string anywhere in the app
       (comments included); footer links Component Dock

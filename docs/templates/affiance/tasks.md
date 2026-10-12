@@ -44,8 +44,11 @@ Design notes: `docs/templates/affiance/design-notes.md`.
       `https://fonts.googleapis.com/css2?family=Rochester&family=Source+Sans+Pro:wght@300;400;600;700&display=swap`
       (Rochester = script display/headings/names/countdown numbers; Source Sans
       Pro = body/UI/nav). Both verified on Google Fonts (HTTP 200). Icons:
-      `lucide-react` (`Menu`, `X`, `ChevronDown`, `Plus`, `MapPin`, `Phone`,
-      `Mail`, `ArrowUp`)
+      `lucide-react` (`Menu`, `X`, `ChevronDown`, `MapPin`, `Phone`,
+      `Mail`, `ArrowUp`, `Church`, `Cake`) plus two owner components —
+      `RingsBadge` (hero, inline SVG) and `DovesMark` (the theme's two-doves
+      motif, inline SVG); social brand marks are inline SVG paths, **not**
+      lucide (it ships no brand icons)
 - [ ] `@theme` tokens in `src/index.css`: `--color-brand: #d291bc`,
       `--color-brand-cell: #cb7fb1` (countdown "Save the Day" cell),
       `--color-tint: #f0d9e8` (bride/groom photo frame),
@@ -60,7 +63,8 @@ Design notes: `docs/templates/affiance/design-notes.md`.
       `Hero.tsx`, `Countdown.tsx`, `BrideGroom.tsx`, `LoveStory.tsx`,
       `Greetings.tsx`, `FamilyFriends.tsx`, `WhenWhere.tsx`, `RsvpForm.tsx`,
       `Gallery.tsx`, `Footer.tsx`, plus `SectionHeading.tsx` (dashed subheading
-      pill + script title) and `RingsBadge.tsx` (inline-SVG two-rings, decorative)
+      pill + script title), `RingsBadge.tsx` (inline-SVG two-rings + diamond,
+      decorative) and `DovesMark.tsx` (the theme's recurring two-doves motif)
 
 ## Section heading (`SectionHeading`, `RingsBadge`) (TDD)
 
@@ -95,8 +99,10 @@ Design notes: `docs/templates/affiance/design-notes.md`.
 
 ## Hero (`Hero`) (TDD)
 
-- [ ] Red: asserts a full-bleed photo under a `rgba(0,0,0,.4)` overlay, a round
-      brand-pink two-rings badge, the couple names in Rochester script white, and
+- [ ] Red: asserts a full-bleed photo under a `rgba(0,0,0,.4)` overlay, a
+      **120 px `#d291bc` disc centred above the names** with an inset
+      `1.4px dashed rgba(255,255,255,.3)` ring and a 60 px white two-rings +
+      diamond + heart glyph, the couple names in Rochester script white, and
       a white 2 px-radius pill holding an uppercase 7 px-letter-spaced `#d291bc`
       tagline
 - [ ] Green: `<Hero>` with own couple names/tagline; placeholder
@@ -120,8 +126,9 @@ Design notes: `docs/templates/affiance/design-notes.md`.
 
 - [ ] Red: asserts a centred dashed `#d291bc` subheading pill + Rochester script
       "Bride & Groom" title, then two alternating rows — a **400 × 400 photo with
-      a 15 px `#f0d9e8` solid frame** beside a text column with a script name and
-      a muted paragraph
+      a 15 px `#f0d9e8` solid frame** beside a text column with a script name, a
+      muted paragraph and the **100 px `#d291bc` two-doves glyph** at its bottom
+      edge
 - [ ] Green: `<BrideGroom>` with own names/copy; placeholders
       `picsum.photos/seed/affiance-<2..3>/800/800`
 - [ ] Guard: assert the photo alternates sides on desktop, stacks on mobile, and
@@ -131,8 +138,9 @@ Design notes: `docs/templates/affiance/design-notes.md`.
 
 - [ ] Red: asserts a parallax photo band (subheading + script "Timeline of
       Love" title) with four alternating timeline entries (43 % panels), each
-      with a date, a script heading, a paragraph and a **120 px circular photo
-      badge** with an inset dashed `rgba(255,255,255,.5)` ring
+      with a date, a script heading, a paragraph, a **120 px circular photo
+      badge** with an inset dashed `rgba(255,255,255,.5)` ring and a **120 px
+      `rgba(255,255,255,.3)` two-doves glyph** at the panel's top corner
 - [ ] Green: `<LoveStory>` with own milestones; placeholders
       `picsum.photos/seed/affiance-<4..7>/240/240`
 - [ ] Guard: assert the parallax is disabled under `prefers-reduced-motion`,
@@ -141,7 +149,9 @@ Design notes: `docs/templates/affiance/design-notes.md`.
 ## Greetings (`Greetings`) (TDD)
 
 - [ ] Red: asserts a `#f8f9fa` band with a subheading + script "Sweet Messages"
-      title and a carousel of message cards (avatar, paragraph, name + role),
+      title and a carousel of message cards (**40 px `#d291bc` disc + 30 px
+      white single-dove glyph** above each card's top-left corner, 80 px avatar
+      in a 5 px `#f0d9e8` frame, paragraph, name + role),
       inactive items at reduced opacity
 - [ ] Green: `<Greetings>` — a CSS scroll-snap / transform carousel (**no new
       dependency**; avoid owl), pausable and keyboard-operable
@@ -161,8 +171,9 @@ Design notes: `docs/templates/affiance/design-notes.md`.
 ## When & Where (`WhenWhere`) (TDD)
 
 - [ ] Red: asserts a `#f8f9fa` band with a subheading + script "When & Where"
-      title and two columns (The Ceremony / The Reception), each with date, time,
-      two-line address, phone and a **See Map** link
+      title and two columns (The Ceremony / The Reception), each topped by a
+      **100 px white disc with a 50 px `#d291bc` church / wedding-cake glyph** and
+      carrying date, time, two-line address, phone and a **See Map** link
 - [ ] Green: `<WhenWhere>` with own events/venues; the **See Map** link opens a
       keyless map (OpenStreetMap embed or `...&output=embed`) in a new tab
 - [ ] Guard: assert the map URL contains no API key and the link has
@@ -185,9 +196,10 @@ Design notes: `docs/templates/affiance/design-notes.md`.
 
 - [ ] Red: asserts a full-width, no-gutter grid (~300 px tiles), 4 columns
       desktop reflowing to fewer below, where hover/focus reveals a `#d291bc`
-      wash + a 70 px white circle with a plus glyph
+      wash (`opacity:.8`) + a 70 px white disc carrying the **50 px two-doves
+      glyph** (`flaticon-dove-1` — the source has **no** plus glyph here)
 - [ ] Green: `<Gallery>` using `picsum.photos/seed/affiance-<16..23>/600/600`;
-      the plus affordance opens a `<dialog>`-based lightbox (**no new
+      the doves affordance opens a `<dialog>`-based lightbox (**no new
       dependency**)
 - [ ] Guard: assert the grid has no gutters, the overlay appears on hover and
       focus, and the lightbox is keyboard-operable with a labelled close control

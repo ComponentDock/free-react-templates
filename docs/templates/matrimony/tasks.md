@@ -47,7 +47,7 @@ string `Colorlib`, or any copy verbatim.
       footer; Barlow = hero eyebrow + countdown numerals/labels). All three
       verified on Google Fonts (HTTP 200). Icons: `lucide-react` (`Menu`, `X`,
       `ChevronDown`, `Plus`, `CalendarDays`, `Clock`, `MapPin`, `Heart`,
-      `ArrowUp`, `Send`)
+      `ArrowUp`, `Send`, plus the card glyphs `ScanSearch`, `Rocket`, `Award`)
 - [ ] `@theme` tokens in `src/index.css`: `--color-brand: #ff2828`,
       `--color-brand-dark: #da1b1b` (button hover wipe),
       `--color-band-red: #ff3535` (countdown strip + gift band),

@@ -323,9 +323,12 @@ cards, one of them active.
   `padding: 195px 0 170px` and show a centred title, a red flourish divider and
   a grey paragraph
 - **AND** SHALL show three cards — **The Ceremony**, **The Reception**, **The
-  Party** — each white with the card shadow, an icon + **Playfair 25 px
-  `#2e3c40`** title closed by a `2px solid #f4f4f4` rule, and icon rows for
-  date, time, venue and address
+  Party** — each white with the card shadow, a **50 px card glyph above a
+  Playfair 25 px `#2e3c40` title** (a magnifier-with-nodes for The Ceremony, a
+  rocket with a check for The Reception, a ribbon rosette with a star for The
+  Party — the source's `flaticon-chart` / `-project` / `-award` classes do **not**
+  match those shapes), a title closed by a `2px solid #f4f4f4` rule, and icon
+  rows for date, time, venue and address
 - **AND** each card SHALL carry a red **"Check out the map"** link and a red
   pill **GET STARTED** button (radius 30 px)
 - **AND** one card SHALL render in the **active** state (`1px solid #ff2828`,
@@ -528,8 +531,11 @@ contentinfo landmarks.
       white sub-heading and white paragraphs, right photo offset
       `bottom: -51px; left: -30px`, columns stack on mobile
 - [ ] Wedding Info: near-white `#f9f9f9` band (`padding: 195px 0 170px`), three
-      white cards (Ceremony / Reception / Party) with icon + Playfair 25 px
-      `#2e3c40` titles over a `2px solid #f4f4f4` rule, icon rows, red map
+      white cards (Ceremony / Reception / Party) with a **50 px glyph above the
+      Playfair 25 px `#2e3c40` title** (Ceremony = magnifier-with-nodes,
+      Reception = rocket-with-check, Party = ribbon rosette — see the design
+      notes; the source's flaticon class names mislead) over a `2px solid
+      #f4f4f4` rule, icon rows, red map
       links, red GET STARTED pills, one card **active** (`1px solid #ff2828`,
       `padding-bottom: 70px`)
 - [ ] Countdown: red `#ff3535` patterned strip pulled up `-73px`, four

@@ -86,39 +86,91 @@ display face is **Rochester** (script) over **Source Sans Pro** body.
    section ids (`home`, `groom-bride`, `lovestory`, `greeting`, `people`,
    `when-where`, `rsvp`, `gallery`). Collapse to a toggled mobile menu.
 2. **Hero** (`#home.jherowrap`, `js-fullheight`) — full-bleed couple photo,
-   `rgba(0,0,0,.4)` overlay, round brand-pink two-rings badge, couple names in
-   Rochester 8vw white, white pill tagline (`letter-spacing:7px`, brand text).
+   `rgba(0,0,0,.4)` overlay, and a **120 px `#d291bc` disc centred above the
+   names** (`.herowrap .text .icon`, `margin:0 auto`) with an inset
+   `1.4px dashed rgba(255,255,255,.3)` ring holding a **60 px white glyph: two
+   interlocking rings + a diamond + a small heart** (`flaticon-diamond-ring` =
+   `\uf100`), then the couple names in Rochester 8vw white and a white pill
+   tagline (`letter-spacing:7px`, brand text).
 3. **Countdown** (`.ftco-intro` `#timer`) — `#d291bc` bar, `-50px` overlap,
    radius 4 px, shadow, five 20 % cells, `#cb7fb1` first cell, four Rochester
    40 px white numbers, hairline dividers.
 4. **About Bride & Groom** — dashed `#d291bc` subheading pill, script title, two
    alternating rows (groom then bride) with 400 × 400 photos wearing a 15 px
-   `#f0d9e8` frame, script names + muted paragraphs.
+   `#f0d9e8` frame, script names + muted paragraphs. Each text block also paints
+   the theme's **100 px `#d291bc` two-doves glyph** (`.bride-groom .text .icon
+   span`, `flaticon-dove-1` = `\uf101`) as a `z-index:-1` decoration pinned to
+   the block's bottom edge — `icon-left` on the right-hand block, `icon-right`
+   on the left-hand one.
 5. **Love Story** — parallax photo band, subheading + script title, four
    alternating timeline entries, 120 px circular photo badges with a dashed
-   ring, dates and script headings.
-6. **Greetings** — `#f8f9fa` band, guest-message carousel (avatar / paragraph /
-   name + role), inactive items dimmed.
+   ring, dates and script headings. Every panel additionally paints a **120 px
+   `rgba(255,255,255,.3)` two-doves glyph** (`.timeline-panel .icon span`,
+   `top:20px`, `z-index:-1`, `left:20px` / `right:20px` by side; 80 px below
+   `md`).
+6. **Greetings** — `#f8f9fa` band, guest-message carousel: each white card (1 px
+   `rgba(0,0,0,.02)` hairline, shadow `0 5px 21px -14px rgba(0,0,0,.14)`) has a
+   **40 px `#d291bc` disc peeking above its top-left corner**
+   (`.testimony-wrap .icon`, `top:-20px; left:20px; z-index:-1`) holding a
+   **30 px white single-dove glyph** (`flaticon-dove` = `\uf105`), then an 80 px
+   avatar photo in a 5 px `#f0d9e8` frame, a paragraph and a name (`#000`) +
+   role (`#d291bc`); inactive items dimmed.
 7. **Family & Friends** — subheading + script title, eight people cards with
    circular portraits and Groomsmen/Bridesmaid captions.
-8. **When & Where** — `#f8f9fa` band, Ceremony + Reception columns with date,
-   time, address, phone and a keyless-map **See Map** link.
+8. **When & Where** — `#f8f9fa` band, Ceremony + Reception columns, each topped
+   by a **100 px white disc** (`.place .text .icon`, shadow
+   `0 10px 32px -30px rgba(0,0,0,.75)`, `margin-bottom:10px`) holding a **50 px
+   `#d291bc` glyph** — the **church** (`flaticon-church` = `\uf103`) on The
+   Ceremony and the **wedding cake** (`flaticon-cake` = `\uf104`) on The
+   Reception — then date, time, address, phone and a keyless-map **See Map**
+   link.
 9. **Invitation / RSVP** — fixed photo band + overlay, "Invitation" subheading +
    big script "Will You Attend?" title, form (Name, email, Guest select 1–5,
    Message, brand-pink "I am attending" submit), local-only confirmation.
 10. **Gallery** — full-width no-gutter grid of ~300 px tiles, 4 columns desktop,
-    hover/focus `#d291bc` wash + 70 px white plus circle, keyboard lightbox.
+    hover/focus `#d291bc` wash at `opacity:.8` (`.gallery:after`) plus a **70 px
+    white disc carrying a 50 px `#d291bc` two-doves glyph** (`.gallery .icon`,
+    `opacity:0 → 1`) — the source paints `flaticon-dove-1` (`\uf101`), **not a
+    plus glyph** — with a keyboard lightbox.
 11. **Footer** — `#d291bc` band, wordmark + blurb + social row, three columns
     (Links · Services · Have a Questions?), white uppercase headings, copyright
     with a Component Dock link and the current year.
+
+## Iconography census (verified on the live render, 2026-10-12k)
+
+The theme loads **one icon font** (`css/flaticon.css` → `fonts/flaticon/font/Flaticon.*`,
+`[class^="flaticon-"]:before { font-family: Flaticon }`) plus Font Awesome 4.7 from
+the CDN. Every glyph below was read back from the rendered page
+(`getComputedStyle(span, '::before').content` + the box/colour of its wrapper), and
+`flaticon.css` maps `diamond-ring → \uf100`, `dove-1 → \uf101`, `bride → \uf102`,
+`church → \uf103`, `cake → \uf104`, `dove → \uf105`.
+
+| Source class | Codepoint | What it actually draws | Where (count) | Our recreation |
+| --- | --- | --- | --- | --- |
+| `flaticon-diamond-ring` | `\uf100` | two interlocking rings + a diamond + a small heart | hero badge (×1), 60 px white on the 120 px `#d291bc` disc | inline SVG `RingsBadge` (already in the prep) |
+| `flaticon-dove-1` | `\uf101` | **pair of doves with hearts** — the theme's signature motif | bride/groom text blocks (×2, 100 px `#d291bc`), timeline panels (×4, 120 px `rgba(255,255,255,.3)`), all 8 gallery tiles (50 px `#d291bc` in the 70 px white disc) | inline SVG `DovesMark` (decorative, `aria-hidden`) |
+| `flaticon-dove` | `\uf105` | single dove | greetings cards (×5 per slide set, 30 px white on the 40 px `#d291bc` disc) | inline SVG `DoveMark` or lucide `Bird` |
+| `flaticon-church` | `\uf103` | chapel with a cross and a tree | When & Where · The Ceremony (50 px `#d291bc` in a 100 px white disc) | lucide `Church` |
+| `flaticon-cake` | `\uf104` | three-tier wedding cake with a heart | When & Where · The Reception (same disc) | lucide `Cake` |
+| `fa fa-chevron-down` | Font Awesome | chevron | RSVP Guest `<select>` (`17 px #d291bc`, `.select-wrap`) | lucide `ChevronDown` |
+| `fa fa-map-marker` / `fa fa-phone` / `fa fa-paper-plane` | Font Awesome | pin / handset / paper plane | footer contact column (×1 each) | lucide `MapPin` / `Phone` / `Mail` |
+| `fa fa-twitter` / `facebook` / `instagram`, `fa fa-check` | Font Awesome | social marks + tick | footer social row and link bullets | **inline SVG brand marks** with the platform name as the accessible name (lucide-react ships no brand icons — verified) + `Check` |
+| `fa fa-heart` | Font Awesome | heart | the **ColorLib credit line only** — deliberately **not** reproduced (our copyright line links Component Dock) | — |
+
+Placement/geometry (from the same session): hero badge 120 × 120 at `margin:0 auto`
+**centred above the `h1`** (measured: badge centre 383 px vs `h1` centre 382 px — the
+source is *not* top-left as an earlier draft of this file claimed); gallery disc
+70 px, glyph 50 px; greetings disc 40 px at `top:-20px; left:20px`; place discs
+100 px, glyph 50 px.
 
 ## Reuse & placeholders
 
 - Reuse `packages/ui` (`Button`/`ButtonLink`, `cn()`) — no new dependencies.
 - Photography via seeded picsum: `https://picsum.photos/seed/affiance-<n>/<w>/<h>`.
-- The two-rings badge and the gallery plus glyph are inline SVG (lucide-react
-  icons where they fit: `Menu`, `X`, `ChevronDown`, `Plus`, `MapPin`, `Phone`,
-  `Mail`, `ArrowUp`).
+- The two-rings badge and the recurring two-doves motif are inline SVG
+  (lucide-react icons where they fit: `Menu`, `X`, `ChevronDown`, `MapPin`,
+  `Phone`, `Mail`, `ArrowUp`, plus `Church` and `Cake` for the When-&-Where
+  discs — see the iconography census below).
 - **No ColorLib asset is copied** — no `style.css`, no Bootstrap/jQuery/owl/
   stellar/magnific/animate bundles, no `images/bg_*.jpg` / `groom.jpg` /
   `bride.jpg` / `couple-*.jpg` / `person_*.jpg` / `gallery-*.jpg`.
