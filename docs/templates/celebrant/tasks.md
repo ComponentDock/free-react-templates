@@ -20,6 +20,14 @@ Screenshot `weddingofficiant-free-template.jpg` (HTTP 200, **AVIF** despite the
 `.jpg` name, 118,200 B, 1200×946 → converted to PNG and inspected). Full
 research: `docs/templates/celebrant/design-notes.md`.
 
+**Host layer (NOT the theme):** the served preview's `<head>` opens with the
+host's `<meta name="robots" content="noindex, nofollow">` +
+`<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` pair and answers
+with `x-robots-tag: noindex, nofollow` behind a host-wide `robots.txt`
+(`Disallow: /`). The theme's own head starts below that pair — none of the host
+layer goes into `apps/celebrant` (no `noindex`, no `robots.txt`, no
+`dns-prefetch`, no `cdnjs`).
+
 Spec: `openspec/specs/template-celebrant/spec.md`. New name: **celebrant** (the
 professional who officiates a ceremony — single lowercase word, no `apps/` or
 spec-folder collision; extends the Wedding family run: lensly · vows · nuptial ·
@@ -40,6 +48,12 @@ espousal · matrimony · **celebrant**). Never reuse the source slug
       (`grep -c "free-react-templates/celebrant" package-lock.json`)
 - [ ] `vite.config.ts` keeps `injectUiSource()` (copy the pattern from an
       existing app — Tailwind v4.3 drops relative `@source` paths)
+- [ ] Document head in `index.html`: the app's **own** `<title>`, description
+      and favicon — never the served reference's host layer (the injected
+      `<meta name="robots" content="noindex, nofollow">` +
+      `<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` pair,
+      `x-robots-tag`, `cdnjs`, the host `robots.txt`); assert the built page is
+      indexable and free of `preview.colorlib.com`
 - [ ] Google Fonts `<link>` in `index.html`:
       `https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;500;700&display=swap`
       (Amiri = all headings incl. the italic section titles; Quicksand = body,

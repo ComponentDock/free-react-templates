@@ -127,6 +127,21 @@ layout, colors, typography, and content types (no ColorLib assets copied).
   `.single-input:focus{outline:none}`). The recreation therefore adds the
   state, names, focus rings and keyboard paths itself (see the "Accessible
   interactive chrome" requirement).
+- **Host layer (NOT the theme, measured 2026-10-12):** the preview host injects
+  a two-element block as the first children of `<head>` —
+  `<meta name="robots" content="noindex, nofollow">` + `<link rel="dns-prefetch"
+  href="https://cdnjs.cloudflare.com">` — adds `x-robots-tag: noindex,
+  nofollow`, `link:` preconnect/dns-prefetch hints and
+  `speculation-rules: "/cdn-cgi/speculation"` to the response headers, and
+  serves its own `robots.txt` (`User-agent: *` / `Disallow: /`). The theme's own
+  head starts *below* the pair. Nothing of that layer goes into the app — no
+  `noindex`, no `robots.txt`, no `dns-prefetch`, no `cdnjs`, no host URL —
+  and the served head's first children must not be read as the theme's markup.
+- **Theme-authored head declarations:** the theme's own head carries
+  `<meta name="author" content="CodePixar">` plus empty
+  `description`/`keywords` stubs and `<link rel="shortcut icon"
+  href="img/fav.png">`. The recreation writes its **own** title, description and
+  favicon; the vendor's `author` value is never reproduced.
 - **Recreation decisions:** repo-standard Navbar (site name, Home link,
   dark-mode toggle) + Footer chrome; hero = seeded picsum photo + headline;
   about slider (two slides, prev/next arrows) with framed photos; date strip
@@ -300,7 +315,15 @@ and a copyright bar carrying the current year.
 ### Requirement: Page composition
 
 The system SHALL compose all sections in a single page with a main landmark
-and a document title.
+and a document title it owns. The reference's **served** head is not the
+theme's: the preview host injects `<meta name="robots" content="noindex,
+nofollow">` + `<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` as
+the first children of `<head>` and answers with `x-robots-tag: noindex,
+nofollow` — host infrastructure the recreation SHALL NOT carry (its own head
+is indexable and free of host URLs). The theme's own declarations are the
+authorship artefact `<meta name="author" content="CodePixar">` plus empty
+`description`/`keywords` stubs and `img/fav.png`; the recreation replaces all
+of them with its own.
 
 #### Scenario: Full page render
 
@@ -308,6 +331,20 @@ and a document title.
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
 - **AND** the document title SHALL be "Nuptials — Wedding Template"
+
+#### Scenario: The document head is the app's own, never the host layer
+
+- **GIVEN** the served reference head opens with the host's
+  `<meta name="robots" content="noindex, nofollow">` + `<link rel="dns-prefetch"
+  href="https://cdnjs.cloudflare.com">` pair and the theme's own
+  `<meta name="author" content="CodePixar">`
+- **WHEN** the Nuptials document head is rendered
+- **THEN** it SHALL carry its own `<title>`, its own description and its own
+  favicon, and SHALL NOT contain `noindex`, `nofollow`, a `robots` meta, a
+  `dns-prefetch` hint, `x-robots-tag`, `cdnjs`, `preview.colorlib.com` or the
+  vendor's `CodePixar` author value
+- **AND** it SHALL NOT be subject to a `robots.txt` `Disallow: /` (the host's
+  own policy applies to the reference only)
 
 ### Requirement: Accessible interactive chrome
 
@@ -380,6 +417,12 @@ item below is therefore a documented delta the recreation must supply.
       `colorlib` attribution, no hardcoded year.
 - [ ] No ColorLib assets copied (all images picsum-seeded, Poppins via link
       with axes `100;200;300;400;500;600;700`).
+- [ ] Host layer excluded from the app: the served reference's injected
+      `<meta name="robots" content="noindex, nofollow">` + `<link
+      rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` pair,
+      `x-robots-tag`, `cdnjs` and the host `robots.txt` appear nowhere in
+      `apps/nuptials`; the theme's `author` value `CodePixar` is not reproduced
+      (the app's head carries its own title/description/favicon).
 - [ ] Accessibility pass: icon-only controls have accessible names (icons
       `aria-hidden`), disclosure controls expose `aria-expanded` (+
       `aria-controls` where a target exists), keyboard-only operation works

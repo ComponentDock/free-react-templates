@@ -280,6 +280,16 @@ the source name, its copy verbatim or its typos.
     a real title and a real year.
   - The source loads **its own analytics** (`gtag.js`, UA-23581568-13) and
     `maps.googleapis.com` — neither may appear anywhere in the app.
+  - **The served `<head>` is not the theme's** (host layer, measured
+    2026-10-12): the preview host injects `<meta name="robots"
+    content="noindex, nofollow">` + `<link rel="dns-prefetch"
+    href="https://cdnjs.cloudflare.com">` as the **first children of `<head>`**
+    and answers with `x-robots-tag: noindex, nofollow`, behind a host-wide
+    `https://preview.colorlib.com/robots.txt` (`User-agent: *` / `Disallow: /`).
+    The theme's own head starts *below* that pair, so the served head's first
+    children must not be read as the theme's markup; none of that layer may
+    appear in `apps/aisle` (no `noindex`, no `robots.txt`, no `dns-prefetch`,
+    no `cdnjs`).
 - **Interactive behaviour to reproduce (from the reference's markup/scripts):**
   the `#main-menu` toggle at ≤767 px (the `.menu-nav-icon` carries
   `data-nav-menu="#main-menu"` and Bootstrap's `visible-on-click` collapse adds
@@ -621,6 +631,12 @@ the source name, its copy verbatim or its typos.
       `packages/ui` (`Card`/`Button`/`ButtonLink`/`cn`) before new primitives
 - [ ] Fonts loaded via `<link>`: `Playball:wght@400` + `Bitter:wght@400;500`
       (no source font files, no icon font)
+- [ ] Document head is the app's own and excludes the preview host's layer
+      (no `noindex`/`nofollow`, no `robots` meta, no `dns-prefetch`, no
+      `cdnjs`): the reference's served head opens with the host's
+      `<meta name="robots" content="noindex, nofollow">` +
+      `<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` pair,
+      which is not theme markup
 - [ ] Header floats over the hero (`position:absolute; top:20px`,
       `rgba(255,255,255,.2)` hairline), five correct labels, dropdown with the
       nested second level, `#E45F74` hover border, and the ≤767 px in-flow

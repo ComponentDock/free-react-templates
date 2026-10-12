@@ -21,9 +21,20 @@ a mint "Send" pill.
 | Preview — **actual demo** | `https://preview.colorlib.com/theme/weddingofficiant/` | **HTTP 200**, 28,350 B, `<title>Wedding Officiant &mdash; Website by Colorlib</title>`; **no reproducible raw page hash** (see the stability note below) |
 | Stylesheet | `https://preview.colorlib.com/theme/weddingofficiant/css/style.css` | HTTP 200, 24,244 B, sha256 `e8fb899c61fd254d91b06b551ab5f277d71e10f9f664de8ee4b486d41f48072d` |
 | Screenshot | `https://colorlib.com/wp/wp-content/uploads/sites/2/weddingofficiant-free-template.jpg` | HTTP 200, **AVIF** despite `.jpg`, 118,200 B, 1200×946 → converted to PNG and inspected |
+| Host layer (measured 2026-10-12, `curl -sS` basis) | `https://preview.colorlib.com/theme/weddingofficiant/` | 🔎 **not the theme's markup**: the preview host injects a two-element block as the **first** children of `<head>` — `<meta name="robots" content="noindex, nofollow">` and `<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` — adds `x-robots-tag: noindex, nofollow`, a `link:` preconnect/dns-prefetch rela set and `speculation-rules: "/cdn-cgi/speculation"` to the response headers, and serves a host-wide `robots.txt` (`User-agent: *` / `Disallow: /`). The theme's own head starts *below* the pair (`<title>Wedding Officiant &mdash; Website by Colorlib</title>` is its first own element). **Nothing of this layer is reproduced in `apps/celebrant`** — no `noindex`, no `robots.txt`, no `dns-prefetch`, no `cdnjs` |
 
 - The hyphenated preview path **404s**; the real demo is the un-hyphenated one.
   Always confirm the preview before falling back to the screenshot alone.
+- **Host layer (NOT the theme, measured 2026-10-12):** the preview host injects
+  a two-element block as the first children of `<head>` —
+  `<meta name="robots" content="noindex, nofollow">` + `<link rel="dns-prefetch"
+  href="https://cdnjs.cloudflare.com">` — adds `x-robots-tag: noindex,
+  nofollow`, `link:` preconnect/dns-prefetch hints and
+  `speculation-rules: "/cdn-cgi/speculation"` to the response headers, and
+  serves its own `robots.txt` (`User-agent: *` / `Disallow: /`). The theme's own
+  head starts *below* the pair, so the served head's first children must not be
+  read as the theme's markup. Nothing of that layer goes into `apps/celebrant`
+  (no `noindex`, no `robots.txt`, no `dns-prefetch`, no `cdnjs`, no host URL).
 - **Preview HTML stability (re-verified 2026-10-12):** the page's **raw sha256
   is request-unstable** — the preview host injects a `media="print"`
   `@font-face` `<style>` block (Amiri + Quicksand from `/cf-fonts/…`) and
