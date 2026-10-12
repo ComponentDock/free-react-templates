@@ -8,6 +8,40 @@ the **brand-pink `#d291bc` countdown bar pulled up `-50px` over the hero's botto
 edge**, its first cell the darker `#cb7fb1` "Save the Day" script cell; the
 display face is **Rochester** (script) over **Source Sans Pro** body.
 
+## Structure (source document order, live DOM 2026-10-12)
+
+Fetched `https://preview.colorlib.com/theme/twohearts/` (curl, Chrome UA, 34,593 B);
+the class strings below are the live DOM's own, in document order — band order is
+the source of truth for the app's section order:
+
+```
+nav#ftco-navbar.navbar.navbar-expand-lg.navbar-dark.ftco_navbar.bg-dark.ftco-navbar-light.site-navbar-target   → Header.tsx
+  div.container › a.navbar-brand | button.navbar-toggler.js-fh5co-nav-toggle | div#ftco-nav.collapse
+section#home.herowrap.js-fullheight                 → Hero.tsx (transparent nav sits ON it)
+  div.overlay + div.container › div.row.js-fullheight
+section.ftco-intro                                  → Countdown.tsx (the -50px pink bar, NO id)
+  div.container › div.row.justify-content-center
+section#groom-bride-section.ftco-section.bg-section → BrideGroom.tsx
+section#lovestory-section.ftco-section.ftco-love    → LoveStory.tsx (timeline)
+section#greeting-section.ftco-section.testimony-section.bg-light → Greetings.tsx
+section#people-section.ftco-section                 → FamilyFriends.tsx
+section#when-where-section.ftco-section.ftco-no-pt.ftco-no-pb.bg-light → WhenWhere.tsx
+section#rsvp-section.ftco-section.ftco-love.img     → RsvpForm.tsx
+section#gallery-section.ftco-section.ftco-no-pb     → Gallery.tsx
+footer.ftco-footer.ftco-section                     → Footer.tsx
+div#ftco-loader.show.fullscreen                     → the first-paint overlay (Preloader-style)
+```
+
+Two document-order facts worth keeping: the hero's id is **`home`** while the nav's
+first link points at **`#home-section`** — an id no element on the page carries, so
+the source's **"Home" link is dead** (the other seven nav anchors —
+`#groom-bride-section`, `#lovestory-section`, `#greeting-section`, `#people-section`,
+`#when-where-section`, `#rsvp-section`, `#gallery-section` — all resolve to real
+section ids; verified against the live DOM's id set on 2026-10-12). And
+**`#ftco-loader` is the LAST element of the document** (after the footer) even though
+it paints full-screen first — reproduce that order or lift it into a portal-free
+sibling, as the repo's other templates do.
+
 ## Reference availability
 
 | Reference | Status |
@@ -69,8 +103,11 @@ display face is **Rochester** (script) over **Source Sans Pro** body.
 
 ## Section-by-section fidelity notes
 
-0. **Preloader overlay (pre-section)** — `#ftco-loader.show.fullscreen`, the
-   page's first element: a full-screen `#fff` cover holding an inline 48 px SVG
+0. **Preloader overlay (first paint, LAST in the document)** —
+   `#ftco-loader.show.fullscreen` is the **last element of the document**
+   (measured: byte offset 33,219, after `<footer>` at 30,006 and just before
+   `</body>`) even though it is the first thing that *paints* — a full-screen
+   `#fff` cover holding an inline 48 px SVG
    ring (two `r=22` `stroke-width:4` circles — `path-bg` `#eeeeee` under the
    animated `path` **`#F96D00`**). Keyframes: `loader-rotate` (`100% →
    rotate(360deg)`, `2s linear infinite`) and `loader-dash` (`stroke-dasharray
@@ -82,9 +119,14 @@ display face is **Rochester** (script) over **Source Sans Pro** body.
    hydration, not on `load`. Reproduce as a `Preloader` component (the repo
    already ships this pattern — e.g. `apps/clinica`, `apps/cassini`).
 1. **Header** — transparent, floating over the hero. Bold uppercase white
-   "TWOHEARTS" left; eight uppercase white links right. Anchors map to the
-   section ids (`home`, `groom-bride`, `lovestory`, `greeting`, `people`,
-   `when-where`, `rsvp`, `gallery`). Collapse to a toggled mobile menu.
+   "TWOHEARTS" left; eight uppercase white links right. The source's hrefs are
+   `#home-section` · `#groom-bride-section` · `#lovestory-section` ·
+   `#greeting-section` · `#people-section` · `#when-where-section` ·
+   `#rsvp-section` · `#gallery-section` — **all resolve except the first**: the
+   hero's id is `home`, no element carries `home-section`, so the source's
+   "Home" link is dead (our recreation links `#home`; the other seven ids are
+   ours to name, see the spec's Header scenario). Collapse to a toggled mobile
+   menu.
 2. **Hero** (`#home.jherowrap`, `js-fullheight`) — full-bleed couple photo,
    `rgba(0,0,0,.4)` overlay, and a **120 px `#d291bc` disc centred above the
    names** (`.herowrap .text .icon`, `margin:0 auto`) with an inset
