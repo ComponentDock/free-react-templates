@@ -1,0 +1,81 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Rackline palette — design tokens for a lime-and-slate data-centre brand.
+     Brand lime #7cbd1e (filled actions, plan icons, the reason-card SVG stroke
+     and its full-surface hover wash, the active carousel dot, every link
+     hover); slate #343a40 on the flat navigation strip; neutral surfaces
+     #ffffff (page, cards, dropdown, off-canvas panel) and #f8f9fa (the light
+     plan/testimonial bands); the footer band #393e46; text #000 (wordmark,
+     values, card titles, names), #4d4d4d (body copy and card headings),
+     #b3b3b3 (reason-card copy) and #adb5bd (plan sub-lines, utility labels);
+     hairlines #dee2e6 (plan cards), #e6e6e6 (reason cards), #edf0f5 (dropdown
+     edges) and #cccccc (idle carousel dots); the dark nav strip's dim-white
+     link tone; a rgba(0,0,0,.4) photo wash and a rgba(0,0,0,.6) off-canvas
+     veil. The shape language is square: 0 radius on every action, card, band
+     and rule, with 50% only on the 90px avatars and the 8px carousel dots. */
+  --color-lime: #7cbd1e;
+  --color-lime-deep: #6aa318;
+  --color-slate: #343a40;
+  --color-surface: #ffffff;
+  --color-soft: #f8f9fa;
+  --color-footer: #393e46;
+  --color-ink: #000000;
+  --color-copy: #4d4d4d;
+  --color-muted: #b3b3b3;
+  --color-muted-alt: #adb5bd;
+  --color-line: #dee2e6;
+  --color-line-strong: #e6e6e6;
+  --color-line-soft: #edf0f5;
+  --color-dot: #cccccc;
+  --color-ink-soft: #212529;
+  --color-ink-strong: #25262a;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variant resolves
+     to the lime brand accent. */
+  --color-primary-50: #f4fae9;
+  --color-primary-100: #e4f4c8;
+  --color-primary-200: #cbe995;
+  --color-primary-300: #aedb5d;
+  --color-primary-400: #95cc39;
+  --color-primary-500: #7cbd1e;
+  --color-primary-600: #7cbd1e;
+  --color-primary-700: #6aa318;
+  --color-primary-800: #548113;
+  --color-primary-900: #3f610e;
+
+  --font-heading: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-copy);
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-copy);
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  ::selection {
+    background: rgba(124, 189, 30, 0.75);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
