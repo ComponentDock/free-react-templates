@@ -3043,7 +3043,7 @@
 - [x] **Comingsoon_12** — [colorlib](https://colorlib.com/wp/template/comingsoon_12/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-12.jpg) · [looming](https://looming.free.componentdock.com)
 - [x] **Comingsoon_13** — [colorlib](https://colorlib.com/wp/template/comingsoon_13/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-13.jpg) · [pending](https://pending.free.componentdock.com)
 - [x] **Comingsoon_14** — [colorlib](https://colorlib.com/wp/template/comingsoon_14/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-14.jpg) · [prologue](https://prologue.free.componentdock.com)
-- [~] **Comingsoon_15** — [colorlib](https://colorlib.com/wp/template/comingsoon_15/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-15.jpg)
+- [x] **Comingsoon_15** — [colorlib](https://colorlib.com/wp/template/comingsoon_15/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-15.jpg) · [foretaste](https://foretaste.free.componentdock.com)
 
 ## Web Hosting (20)
 
