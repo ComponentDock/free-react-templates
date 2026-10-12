@@ -70,7 +70,7 @@ Design notes: `docs/templates/prologue/design-notes.md`.
 ## Structure (component order in `App.tsx`)
 
 - [ ] `Prologue.tsx` (page shell) — `min-h-screen w-full flex flex-wrap
-      items-stretch relative z-[1]` holding `Scrim` then `ContentPanel` and
+    items-stretch relative z-[1]` holding `Scrim` then `ContentPanel` and
       `PhotoPanel` as its only two rendered children; NO navbar, NO footer band,
       NO second section, no scroll at 1440×900
 - [ ] `Scrim.tsx` — ONE `absolute inset-0 -z-10 bg-black/50` element. It must
@@ -78,12 +78,12 @@ Design notes: `docs/templates/prologue/design-notes.md`.
       it) so the photograph is NOT darkened — the reference render is
       pixel-identical to the raw `bg01.jpg`; no gradient, no second overlay
 - [ ] `ContentPanel.tsx` — `w-[37%] max-[1200px]:w-[60%] max-[992px]:w-full
-      bg-white flex flex-col justify-between pt-[37px] px-[50px] pb-[52px]
-      pl-[70px] max-[992px]:px-[15px]` with exactly THREE children in order:
+    bg-white flex flex-col justify-between pt-[37px] px-[50px] pb-[52px]
+    pl-[70px] max-[992px]:px-[15px]` with exactly THREE children in order:
       `BrandMark` → `HeroBlock` → `SocialBand`
 - [ ] `PhotoPanel.tsx` — `w-[63%] max-[1200px]:w-[40%] max-[992px]:w-full
-      max-[992px]:h-[500px] bg-cover bg-center bg-no-repeat` with
-      `style={{backgroundImage:'url(https://picsum.photos/seed/prologue-photo/1200/900)'}}`,
+    max-[992px]:h-[500px] bg-cover bg-center bg-no-repeat` with
+      `style={{backgroundImage:'url(https://picsum.photos/seed/prologue-hollow/1200/900)'}}`,
       an EMPTY element (no children, no caption, no overlay); NOT a slideshow and
       never the source `bg01.jpg`
 - [ ] `BrandMark.tsx` — `block` wrapper (NO `flex-1`/`flex-grow` — unlike several
@@ -93,33 +93,33 @@ Design notes: `docs/templates/prologue/design-notes.md`.
 - [ ] `HeroBlock.tsx` — `w-full pt-[100px] pb-[90px] pl-[48px] max-[768px]:pl-0`
       holding `Heading` → `SubLine` → `SubscribeBar`
 - [ ] `Heading.tsx` — `h3` Playfair Display `text-[60px] leading-[1.1]
-      font-medium text-[#333] uppercase pb-[34px]`, no `letter-spacing`, NO
+    font-medium text-[#333] uppercase pb-[34px]`, no `letter-spacing`, NO
       italic, NO weight-900, NO size change at any breakpoint (the reference is
       60px at 1440/1180/900/765/600/400); own copy, two lines in a 365px box at
       1440×900
 - [ ] `SubLine.tsx` — Poppins 400 `text-[24px] leading-[1.2] text-[#999]
-      pb-[46px]`; own copy of the same kind ("follow us for updates")
+    pb-[46px]`; own copy of the same kind ("follow us for updates")
 - [ ] `SubscribeBar.tsx` — form `max-w-full my-[10px]` wrapping a
       `h-[80px] w-[650px] max-w-[calc(100%+110px)] relative
-      max-[992px]:max-w-full` container holding `EmailField` + `SubscribeLabel` +
+    max-[992px]:max-w-full` container holding `EmailField` + `SubscribeLabel` +
       `SubmitArrow`. The `calc(100% + 110px)` is what makes the bar overhang the
       panel by 60px at ≥1200px — do not replace it with `w-full` or a bare fixed
       width
 - [ ] `EmailField.tsx` — `block h-full w-full pt-0 pr-[80px] pb-0 pl-[172px]
-      max-[576px]:pr-[60px] max-[576px]:pl-[25px] rounded-none border-0
-      bg-[#ffe151] shadow-[0_10px_15px_0_rgba(0,0,0,0.1)]
-      focus:shadow-[0_10px_15px_0_rgba(0,0,0,0.2)]`, Poppins 500
+    max-[576px]:pr-[60px] max-[576px]:pl-[25px] rounded-none border-0
+    bg-[#ffe151] shadow-[0_10px_15px_0_rgba(0,0,0,0.1)]
+    focus:shadow-[0_10px_15px_0_rgba(0,0,0,0.2)]`, Poppins 500
       `text-[15px] leading-[1.2] text-[#333]`, `placeholder:text-[#666]`, own
       placeholder copy; validated as an e-mail even though the source field is
       `type="text"`
 - [ ] `SubscribeLabel.tsx` — absolute `left-0 top-0 h-[80px] w-[172px]
-      max-[576px]:w-[5px] flex items-center justify-center` with
+    max-[576px]:w-[5px] flex items-center justify-center` with
       `border-l-[5px] border-l-[#333]`, transparent fill, NO radius, NO other
       border, Poppins 500 15px `#333` caption; the caption is hidden at ≤576px
       (`sr-only`/conditional) leaving the bare black tick; own caption copy
       (write "Subscribe Now:" correctly — the source misspells it)
 - [ ] `SubmitArrow.tsx` — absolute `right-0 top-0 h-[80px] w-[80px]
-      max-[576px]:w-[60px] flex items-center justify-center` button, NO
+    max-[576px]:w-[60px] flex items-center justify-center` button, NO
       fill/border/radius, a 30px `#333` lucide long-arrow
       (`group-hover:translate-x-[10px] transition-transform duration-[400ms]`),
       `aria-label` added (the source has none); it submits the form and never
@@ -128,12 +128,12 @@ Design notes: `docs/templates/prologue/design-notes.md`.
       (Poppins 400 `text-[16px] leading-[1.2] text-[#999] uppercase pr-[40px]`,
       own copy) followed by three `SocialLink`s
 - [ ] `SocialLink.tsx` — `size-9` (36×36) `rounded-full border border-[#e6e6e6]
-      bg-transparent text-[#666] text-[16px] flex items-center justify-center
-      my-[5px] mr-[15px] transition-all duration-[400ms]`, hover
+    bg-transparent text-[#666] text-[16px] flex items-center justify-center
+    my-[5px] mr-[15px] transition-all duration-[400ms]`, hover
       `bg-[#333] text-white`; lucide Facebook / Twitter / Youtube glyphs; each with
       an `aria-label` (the source's links are bare `href="#"`)
 - [ ] `ValidationBubble.tsx` — white box, `border border-[#c80000] rounded-none
-      py-[4px] pl-[10px] pr-[25px] max-w-[70%]`, vertically centred,
+    py-[4px] pl-[10px] pr-[25px] max-w-[70%]`, vertically centred,
       `right-[72px]`, Poppins 500 14px/1.4 `#c80000`, `pointer-events-none`,
       opacity transition `400ms`; a 14px `#c80000` warning glyph at
       `right-[78px]`; hidden until hover above 992px and always visible at ≤992px
@@ -144,7 +144,7 @@ Design notes: `docs/templates/prologue/design-notes.md`.
 - [ ] `Attribution.tsx` — a small low-emphasis line linking
       `https://www.componentdock.com/` branded "Component Dock", pinned
       absolutely inside the white panel (e.g. `absolute bottom-1 inset-x-0
-      text-center text-[11px] text-[#999]`) so the three-band `space-between`
+    text-center text-[11px] text-[#999]`) so the three-band `space-between`
       geometry is untouched — the only addition vs the reference
 
 ## Do NOT
