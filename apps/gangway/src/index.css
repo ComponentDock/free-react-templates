@@ -1,0 +1,103 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Gangway palette — design tokens for a single-tier navigation page: one
+     transparent bar floating on a full-bleed photograph, holding a wordmark at
+     the left edge (5%), an xl-only centred 6-row list pinned at 50% with a
+     translate of -50%, two square white dropdowns whose only colour is a 2px
+     green top hairline, and a pair of calls to action at the right edge (5%) —
+     an outline-white secondary and a filled green #89ba16 primary, both on a 4px
+     radius. Navigation is dark-on-photo: inactive labels are 50% white and lift
+     to full white on hover, focus or when current. Below 1200px the same rows live
+     in a 300px off-canvas drawer that slides in from the right over a 50% black
+     veil and expands its sub-lists behind round 36px disclosure arrows. Shape
+     language is square everywhere except the 4px button radius and the round
+     arrows. */
+  --color-brand: #89ba16;
+  --color-brand-hover: #90c317;
+  --color-ink: #212529;
+  --color-flyout-ink: #343a40;
+  --color-flyout-wash: #ebeef0;
+  --color-label: rgba(255, 255, 255, 0.5);
+  --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-arrow-hover: #f8f9fa;
+  --color-close-hover: #dee2e6;
+  --color-shell: #0b1016;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variant resolves to
+     the page's #89ba16 accent. */
+  --color-primary-50: #f7fce8;
+  --color-primary-100: #edf7c8;
+  --color-primary-200: #dcef95;
+  --color-primary-300: #c6e35a;
+  --color-primary-400: #acd129;
+  --color-primary-500: #89ba16;
+  --color-primary-600: #89ba16;
+  --color-primary-700: #6f9a12;
+  --color-primary-800: #55760e;
+  --color-primary-900: #3c530a;
+
+  --font-sans: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+
+  /* The page hands over at 768 / 992 / 1200 — where the row collapses to zero
+     height, where the calls to action join the bar and where the centred list
+     replaces the hamburger. Re-pointing the scale keeps every utility in step. */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  --radius-btn: 4px;
+
+  --shadow-flyout: 0 2px 20px -2px rgba(0, 0, 0, 0.2);
+  --shadow-drawer: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+
+  --ease-drawer: cubic-bezier(0.66, 0.2, 0.48, 0.9);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  /* Navigation labels, drawer rows and the bar's links carry no underline at any
+     state — the surfaces themselves are the affordance. */
+  a {
+    text-decoration: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  ::selection {
+    background: rgba(137, 186, 22, 0.25);
+  }
+  /* Every transition on this page is decorative: the label colour lift, the
+     dropdown slide, the drawer's travel, the veil's fade and the disclosure
+     arrows' rotation all collapse to effectively instant, and no content is ever
+     gated behind motion. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
