@@ -1,0 +1,80 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Slidenav palette — design tokens for a navigation-first page: one flat coral
+     canvas band (#eb4d55) filling the viewport, a transparent header floating on
+     top of it (16px uppercase 700 white wordmark, 15px rgba(255, 255, 255, .7)
+     six-item row) whose items carry a 1px white underline that scales in from
+     scale(0) over .3s. The off-canvas panel is a 300px #ffffff drawer with a
+     -10px 0 20px -10px rgba(0, 0, 0, .1) shadow over a rgba(0, 0, 0, .5) veil,
+     its rows in #212529 turning #eb4d55, its close glyph hovering #ced4da. The
+     accent is #007bff (#0056b3 the darker shade) and the shape language is
+     square — no radius anywhere on the page. */
+  --color-band: #eb4d55;
+  --color-accent: #007bff;
+  --color-accent-shade: #0056b3;
+  --color-ink: #212529;
+  --color-close-hover: #ced4da;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variant resolves
+     to the page's #007bff accent. */
+  --color-primary-50: #e6f1ff;
+  --color-primary-100: #cce4ff;
+  --color-primary-200: #99c9ff;
+  --color-primary-300: #66adff;
+  --color-primary-400: #3392ff;
+  --color-primary-500: #007bff;
+  --color-primary-600: #007bff;
+  --color-primary-700: #0069d9;
+  --color-primary-800: #0056b3;
+  --color-primary-900: #004085;
+
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+
+  /* The row and the drawer hand over at 992px (the reference's own desktop
+     breakpoint), which is not Tailwind's default lg (1024px). */
+  --breakpoint-lg: 992px;
+
+  --shadow-panel: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-band);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  ::selection {
+    background: rgba(255, 255, 255, 0.35);
+  }
+  /* Every transition on this page is decorative: the underline's scale-in, the
+     300px drawer and its veil all collapse to effectively instant, so no content
+     is ever gated behind motion. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
