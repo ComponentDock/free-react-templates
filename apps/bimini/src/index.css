@@ -1,0 +1,114 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Bimini palette — the tokens for a single near-black sheet drawn over the whole viewport, the
+     letterspaced labels it holds, and the charcoal page standing behind it. The page is #fafafa
+     with grey #808080 ink and #000 headings; the sheet is a 99%-opaque black cover with white type
+     on it; the hero behind it is #202020. Two ambers carry the menu: #fec771 is the page's own link
+     colour and the hairline that wipes in under a hovered label, and #f8b500 is the gold worn by
+     the label the page is standing on. Shape language: there is no radius anywhere and no
+     elevation either — the design ships neither — so every surface stays square and flat. */
+  --color-page: #fafafa;
+  --color-ink: #808080;
+  --color-heading: #000000;
+  --color-hero: #202020;
+  --color-sheet: rgba(0, 0, 0, 0.99);
+  --color-scrim: rgba(0, 0, 0, 0.3);
+  --color-accent: #fec771;
+  --color-current-row: #f8b500;
+  --color-on-dark: #ffffff;
+  --color-on-dark-muted: rgba(255, 255, 255, 0.8);
+
+  --font-sans: 'Poppins', Arial, sans-serif;
+
+  /* Four tiers matter — the container steps at 576/768/992/1200 and the sheet's own padding rule
+     turns at 768 — so the scale is re-pointed at the widths the design itself turns at, which keeps
+     every utility in step with it. */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  /* The sheet's grow is springy, not linear: it overshoots full size and settles back, which is
+     what separates this menu from a plain fade. */
+  --ease-sheet: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-page);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 0;
+  }
+  /* The open sheet is also the page lock: while it is up the page itself cannot be scrolled or
+     dragged sideways, so the cover stays exactly one viewport wide and tall. */
+  body.menu-show {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  /* The design's own link colour is the amber accent and it draws no underline in any state; the
+     hover and focus affordances restored on the links themselves are documented deltas. */
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  h1,
+  h2,
+  h3 {
+    color: var(--color-heading);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  /* A selected run of text wears the page's own accent. */
+  ::selection {
+    background: rgba(254, 199, 113, 0.35);
+  }
+  /* Every transition here is decorative — the sheet growing over the page, the amber hairline
+     wiping in under a label, the close control settling in — so under reduced motion they land
+     immediately and nothing is ever gated behind them. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* The design's signature: a 2px amber hairline held under a menu label, `10px` wider than its text
+     on each side. The label the page is standing on keeps its hairline; every other label wipes one
+     in from the left on hover over 0.3s on the sheet's own springy curve. It is written out as one
+     rule rather than two utilities so that the rest state and the hover state cannot race each other
+     in the cascade — the design's own sheet styles these states but never sizes the pseudo-element,
+     so restoring it as a working affordance is a documented delta. */
+  .menu-label-hairline::after {
+    content: '';
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--color-accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s var(--ease-sheet);
+  }
+  a:hover > .menu-label-hairline::after,
+  a[aria-current='page'] > .menu-label-hairline::after {
+    transform: scaleX(1);
+  }
+}
