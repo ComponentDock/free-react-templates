@@ -684,3 +684,47 @@ the source name, its copy verbatim or its typos.
       coverage tests + build); `scripts/verify-app.sh` output pasted in the PR
 - [ ] TEMPLATES.md line 3107 flips to `[x]` **with** the surge URL only after the
       implementer merges (the prep stream never marks it)
+
+## Implementation notes (implementer, 2026-10-13)
+
+Built on `feat/template-aisle` exactly per the requirements above; the deltas below are deliberate
+and each was measured on the built page (`apps/aisle/dist`, served on a local port at the harness's
+780×437 viewport and at an emulated 375×812).
+
+- **The timeline spine only exists because the track was given `flow-root`.** The reference writes
+  `.wedding-details:after{top:0;bottom:0;…}` over a block whose four children are all floats, so the
+  block itself collapses to zero height and the rule would paint 0px tall. `detailsTrackClass`
+  therefore carries `flow-root`: at 780px the track measures 570×891 and the spine 1×891, i.e. the
+  rule spans the cards (first card top 1552, last 2220) instead of vanishing.
+- **The header measures the reference's 66px** because the wordmark is a 40px-tall white Playball
+  block (the reference's `.logo` is a 40px image with `5px 0 20px` margins); nav rows stay 50px tall,
+  `padding:0 15px`, `border:2px solid transparent`, 2px radius, rose on the active row.
+- **The countdown runs, it does not sit at 00.** The reference's `jquery.countdown` targets
+  2017-09-23, so its four circles have read `00` since the day it shipped; the recreation counts to
+  the app's own 12 September 2027 and rests at `00` only once that hour has passed. `role="timer"`
+  with a label replaces the plugin's bare markup.
+- **The venue panel is static, not a keyed embed.** The reference loads
+  `maps.googleapis.com/maps/api/js?key=AIzaSy…` and rendered an empty shell (`#map` held two empty
+  divs, zero iframes); the recreation draws its own map and prints the address beside the pin. No
+  third-party script, no API key, no analytics.
+- **The nav is ours because the reference's is dead.** Every one of its 22 hrefs is a `#`, a `#!`
+  (its two `.drop-down` togglers) or a link to another file of the theme, and its whole id set is
+  `clock` · `main-menu` · `map` — so it has no in-page anchor at all. The five destinations resolve
+  to real section ids, and its three capitalisation slips ("SETPEMBER", "THER WEDDING", "GELLERY")
+  are not reproduced.
+- **The lightbox holds focus and hands it back.** The dialog takes focus on open and returns it to
+  the tile that opened it when it unmounts (`Escape`, the close control, or the tile itself).
+  A Tab-cycling trap was deliberately **not** added: the reference's jQuery Fluidbox has no trap at
+  all, and the dialog owns every control on the page while it is open.
+- **Small measured deltas.** The "View all gallery" button computes 196×48 against the reference's
+  226×46 (its label is set in the design's own tracked capitals, ours in the app's wording), the
+  mobile toggle is 50×50 against 50×60, and Tailwind's `max-md:` (`width < 768px`) is exclusive
+  where the reference's media queries are inclusive — equivalent at the whole-pixel widths the
+  design was drawn against.
+- **Fonts.** `Playball:wght@400` + `Bitter:wght@400;500` arrive through a Google Fonts `<link>` in
+  `index.html`; the reference's proxied `@font-face` rules and its icon font are not copied.
+- Verification: `bash scripts/verify-app.sh aisle` → typecheck, oxlint, **100% coverage**
+  (310/310 statements, 76/76 branches, 67/67 functions, 307/307 lines) and a clean Vite build;
+  `npx openspec validate template-aisle --type spec` → valid; `npx knip --workspace apps/aisle` →
+  silent; `grep -c inline-flex apps/aisle/dist/assets/*.css` → 1 (the `injectUiSource()` path is
+  live). 62 tests in 13 files.
