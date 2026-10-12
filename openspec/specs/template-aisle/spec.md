@@ -113,7 +113,12 @@ the source name, its copy verbatim or its typos.
      **mistakes in the source and must NOT be reproduced**; the nav labels are
      also rewritten as the app's own anchors (a one-pager needs no multi-page
      links, and the source's `03-regular-page.html` / `02-rsvp.html` file links
-     must not survive).
+     must not survive). **Every source href is dead**: `#` ×20 (logo, GELLERY,
+     dropdown and footer/gallery rows) and jQuery's `#!` ×2 on the two
+     `.drop-down` togglers — no element on the page carries `id="!"`, and the
+     live DOM's entire id set is `clock` · `main-menu` · `map`, so the source
+     page has **no in-page anchors at all** and the recreation's five
+     destinations are ours to name and wire (verified 2026-10-12).
   2. `.main-slider` — the hero: `height:100vh`, `position:relative; z-index:1`,
      `background-image` (the reference's `images/slider-1-1600x900.jpg`),
      `background-size:cover`, `color:#fff`, plus a `:after` full-bleed
@@ -356,8 +361,10 @@ the source name, its copy verbatim or its typos.
   50 px-tall items (`padding:0 15px`, `border:2px solid transparent`, 2 px
   radius), and the hovered/current item paints its border `#E45F74`
 - **And** the source's spelling slips ("SETPEMBER", "THER WEDDING",
-  "GELLERY") and its dead file links (`index.html`, `03-regular-page.html`,
-  `02-rsvp.html`) are **not** reproduced: labels are spelled correctly and every
+  "GELLERY") and its dead links (the `index.html` / `03-regular-page.html` /
+  `02-rsvp.html` file links, the bare `#` rows and the two `#!` dropdown
+  togglers — the source page's whole id set is `clock` · `main-menu` · `map`)
+  are **not** reproduced: labels are spelled correctly and every
   entry is a working in-page anchor with a `focus-visible` ring
 
 #### Scenario: "Our Story" item opens a two-level dropdown
@@ -647,6 +654,10 @@ the source name, its copy verbatim or its typos.
 - [ ] Responsive pass at ~1440, 992, 767, 479 and 320 px: `h1`–`h5` follow the
       source ladder, `.section` padding drops to `50px 0 20px`, `p` line-height
       becomes 1.4, and there is no horizontal overflow
+- [ ] No `href="#!"` (or any other unresolvable named anchor) anywhere: the source's
+      two `.drop-down` togglers are jQuery's dead `#!` and the source page's whole id
+      set is `clock` · `main-menu` · `map`, so all five nav destinations are ours and
+      resolve to real section ids (verified against the live DOM, 2026-10-12)
 - [ ] Accessibility: semantic landmarks, one `h1`, ordered headings, focus
       rings on every control, `aria-expanded`/`aria-controls` on the nav toggle,
       labelled form controls, decorative glyphs/patterns `aria-hidden`

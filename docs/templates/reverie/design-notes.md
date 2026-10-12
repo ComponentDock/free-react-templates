@@ -9,6 +9,8 @@ slug-only path is the only one alive (`theme/bootstrap/<slug>/` 404,
 ## DOM skeleton (source)
 
 ```
+a.skip-link[href="#main"]            → "Skip to content" (text node, NOT an image)
+                                       hidden at top:-100px, drops to top:10px on :focus
 header.header
   .container-fluid > .row
     .col-lg-2  .header__logo      → a > img logo.svg (131×23)
@@ -18,6 +20,7 @@ header.header
     .col-lg-2  .header__right     → .header__right__social (4 links)
                                     .header__right__search > button.search-switch
   #mobile-menu-wrap > .slicknav_menu > button.slicknav_btn  (mobile only)
+main#main[tabindex="-1"]          → landmark opens after the header, closes after the logo strip
 section.hero.set-bg               (style bg = img/hero.avif|png)
   .hero__text → picture(img/icon/hi.png 66×51) · h5 · h1 · p
 section.services.spad
@@ -55,6 +58,10 @@ div#search-overlay.search-model → close button + form.search-model-form
 body            { font-family: Raleway, sans-serif }         /* + Cormorant Garamond display */
 .header         { position:absolute; left:0; top:0; width:100%; background:#fff;
                   box-shadow:0 5px 10px #9a57571a }           /* rose-tinted shadow */
+.skip-link      { position:absolute; top:-100px; left:15px; z-index:100000;
+                  padding:10px 18px; background:#111; color:#fff;
+                  font-size:14px; font-weight:600 }           /* off-screen skip link */
+.skip-link:focus{ top:10px; color:#fff }                      /* slides in on focus */
 .header__menu ul li a      { font-size:14px; color:#0d0d0d; text-transform:uppercase;
                              letter-spacing:2px }
 .header__menu ul li a:after{ width:5px; height:5px; background:#0d0d0d; border-radius:50%;
@@ -228,6 +235,11 @@ None of them is copied; they are read for structure, copy kind and figures.
 - **Counter roll-up** respects `prefers-reduced-motion`; hover transitions
   reduced-motion safe.
 - **Form validation** is client-side with per-field messages (source posts to PHP).
+- **Skip link** — the source already ships `<a class="skip-link" href="#main">Skip to
+  content</a>` (hidden at `top:-100px`, sliding to `top:10px` on `:focus`) pointing
+  at `<main id="main" tabindex="-1">`; keep it and keep the `tabindex="-1"` focus
+  target, but note the source's `</main>` closes **before** `<footer>`, so the
+  footer landmark sits outside `main` — reproduce that landmark split.
 - **Footer credit** is the required Component Dock link (source credits Colorlib).
 
 ## Sibling comparison (Wedding family)

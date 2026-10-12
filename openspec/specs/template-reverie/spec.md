@@ -184,16 +184,21 @@ the source name, its copy verbatim or its typos.
     magnifier).
 - **Section order (1:1, measured top-to-bottom; offsets/heights from the live
   pass at 780 px width, page height ≈ 5,678 px):**
-  1. `header.header` — absolute white bar (y 0, ~83 px tall), logo / nav / right cluster.
-  2. `section.hero.set-bg` — y 0, **866 px** (overlapped by the header).
-  3. `section.services.spad` — y 866, **1,186 px** (title + 6 service cards + `spad`).
-  4. `section.features.spad` — y 2,052, **1,143 px** (title + filter row + masonry gallery + View more).
-  5. `div.counter.spad.set-bg` — y 3,196, **667 px** (four counters, extra bottom padding).
-  6. `section.request` — y 3,628, **683 px** (pulled up `margin-top:-235px`, so it overlaps the counter band).
-  7. `section.latest.spad` — y 4,311, **623 px** (three blog cards).
-  8. `div.logo` — y 4,934, **139 px** (light logo carousel strip).
-  9. `footer.footer` — y 5,073, **605 px** (subscribe + social, four columns, copyright bar).
-  10. `div#search-overlay.search-model` — fixed full-screen search modal.
+  1. `a.skip-link[href="#main"]` — the document's **first body element**, immediately
+     before the header ("Skip to content", hidden at `top:-100px`, sliding to
+     `top:10px` on `:focus`); it targets `<main id="main" tabindex="-1">`, which
+     opens after the header and closes after the logo strip.
+  2. `header.header` — absolute white bar (y 0, ~83 px tall), logo / nav / right cluster.
+  3. `section.hero.set-bg` — y 0, **866 px** (overlapped by the header).
+  4. `section.services.spad` — y 866, **1,186 px** (title + 6 service cards + `spad`).
+  5. `section.features.spad` — y 2,052, **1,143 px** (title + filter row + masonry gallery + View more).
+  6. `div.counter.spad.set-bg` — y 3,196, **667 px** (four counters, extra bottom padding).
+  7. `section.request` — y 3,628, **683 px** (pulled up `margin-top:-235px`, so it overlaps the counter band).
+  8. `section.latest.spad` — y 4,311, **623 px** (three blog cards).
+  9. `div.logo` — y 4,934, **139 px** (light logo carousel strip).
+  10. `footer.footer` — y 5,073, **605 px** (subscribe + social, four columns, copyright bar).
+  11. `div#search-overlay.search-model` — fixed full-screen search modal.
+  The `<main id="main">` landmark wraps items 3–9 (header and footer sit outside it).
 
 ## Design tokens
 
@@ -227,6 +232,7 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
 | Card shadows | `0 5px 10px #9a57571a` (header/request), `0 5px 39px #9a57571a` (services hover) | soft rose-tinted shadows |
 | Gallery grid | `grid-template-columns:repeat(3,minmax(0,1fr)); grid-auto-rows:1px; column-gap:15px`; item row-span 268 (253 px), mid 395 (380 px), large 520 (505 px) | masonry |
 | Social disc | 50×50, `border-radius:50%`, `#ffffff1a`, white 18 px glyph, `margin-right:6px` | footer socials |
+| Skip link | `#111` fill, white 14 px/600, `padding:10px 18px`, `top:-100px` → `top:10px` on `:focus`, `z-index:100000` | off-screen "Skip to content" link before the header |
 
 ## Requirements
 
@@ -508,10 +514,26 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
 - **And** `prefers-reduced-motion` disables the counter roll-up and card/tile
   transitions
 
+#### Scenario: A skip link precedes the header and targets the main landmark
+
+- **Given** the source document opens with `<a class="skip-link" href="#main">Skip to
+  content</a>` before the header, and the content column is wrapped in
+  `<main id="main" tabindex="-1">`
+- **When** the page is loaded and then tabbed into
+- **Then** the first focusable element is a "Skip to content" link that is hidden
+  above the viewport until focused (hidden at `top:-100px`, revealed at `top:10px`
+  with `#111` fill, white 14 px/600 text and `10/18 px` padding) and moves focus to
+  the main landmark when activated
+- **And** the recreation's `<main>` carries the `tabindex="-1"` focus target (the repo
+  shell's `id="main"`), the header sits outside the landmark, and the footer landmark
+  sits outside `<main>` too — matching the source's `</main>`-before-`<footer>` split
+
 ## Fidelity rules
 
-- Match the source's section order 1:1 (header → hero → services → features →
-  counter → request → blog → logo strip → footer, plus the search overlay).
+- Match the source's section order 1:1 (skip link → header → hero → services →
+  features → counter → request → blog → logo strip → footer, plus the search
+  overlay), with `<main id="main" tabindex="-1">` wrapping the content sections and
+  the footer landmark outside it.
 - Match the design tokens above; put the brand palette (`#6b705d`, `#a3a698`,
   `#5e6350`, `#9a5757`/rose-tinted shadows, `#111`, `#3b3e33`, `#f7f8f3`) in
   `@theme` and use them via Tailwind classes.
@@ -530,8 +552,13 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
 - [ ] `openspec validate template-reverie --type spec` passes.
 - [ ] `apps/reverie` exists, package is `@free-react-templates/reverie`,
       `vite.config.ts` registers `injectUiSource()`.
-- [ ] Section order matches the source 1:1 (header, hero, services, features,
-      counter, request, blog, logo strip, footer, search overlay).
+- [ ] Section order matches the source 1:1 (skip link, header, hero, services,
+      features, counter, request, blog, logo strip, footer, search overlay), with
+      `<main id="main" tabindex="-1">` wrapping the content sections and the footer
+      landmark outside `<main>`.
+- [ ] A "Skip to content" link is the first focusable element, hidden above the
+      viewport until `:focus` (revealed at `top:10px`, `#111` fill / white 14 px 600),
+      and it moves focus to the main landmark (`tabindex="-1"`).
 - [ ] Header: absolute white bar, six nav items, current-item dot, dark `#111`
       Pages dropdown, mobile toggle, social links and magnifier → search overlay.
 - [ ] Hero: 866 px photo band, curved bottom edge, ornament + "Welcome" h5 + 48 px

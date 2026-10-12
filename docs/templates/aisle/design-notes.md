@@ -91,6 +91,8 @@ harness could not open a 1440 px window — treat the pixel widths below as
     <ul class="main-menu visible-on-click" id="main-menu">
       <li><a href="index.html">HOME</a></li>
       <li class="drop-down"><a href="#!">OUR STORIES<i class="icon icon-caret-down"></i></a>
+        <!-- `#!` is jQuery's dead anchor: no element carries id="!" and the page
+             holds no in-page anchors at all (every href is `#`, `#!` or a file link) -->
         <ul class="drop-down-menu">
           <li><a href="#">FEATURED</a></li>
           <li><a href="#">ABOUT</a></li>
@@ -401,6 +403,17 @@ page — the "rose" only ever appears in type, icons and buttons.
    (`Search or enter website name`), not a URL — the screenshot identifies the
    design by content only, which is why the live preview was used as the primary
    reference.
+8. **The source page has no in-page anchors at all** — its **22** href anchors are
+   all dead or dead-ending: **`#` ×20** (the logo, the GELLERY item, the dropdown
+   rows and the footer/gallery links) and jQuery's **`#!` ×2** (the OUR STORIES
+   and CATEGORIES `.drop-down` togglers — no element carries `id="!"`, and the
+   live DOM's whole id set is `clock` · `main-menu` · `map`). The remaining
+   hrefs leave or drop files: `index.html` (the page itself), the theme's other
+   pages (`03-regular-page.html`, `02-rsvp.html`), the lightbox photo links
+   (`images/gallery-*.jpg` ×6), the `tel:` link and the ColorLib credit. So the
+   recreation's five-item nav is **ours to name** — treat the source's `#!`
+   togglers as dead, never as anchors to copy (verified against the live DOM's
+   id set, 2026-10-12).
 
 ## 6. Breakpoint ladder (`responsive.css`)
 

@@ -99,6 +99,9 @@ paragraph, the address, the phone number, its Google Maps key or the string
       first row border-less) with a **nested second-level panel**; `Escape`
       closes it and focus returns to the trigger; `aria-expanded`/`aria-controls`
       are wired
+- [ ] Guard: no `href="#!"` anywhere (the source's two `.drop-down` togglers use
+      jQuery's dead `#!`; the source page's whole id set is `clock` · `main-menu` ·
+      `map`, so it has **no in-page anchors at all** — every destination is ours)
 
 ## Mobile navigation (≤767 px) (TDD)
 

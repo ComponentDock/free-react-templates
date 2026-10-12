@@ -7,6 +7,10 @@ implementer ships it and the deploy is live.
 
 - [ ] `apps/reverie` copied from the simplest current app; package renamed to
       `@free-react-templates/reverie`.
+- [ ] **Skip link before the header**: `<a href="#main">Skip to content</a>` as the
+      first focusable element (hidden at `top:-100px`, revealing at `top:10px` on
+      `:focus`, `#111` fill / white 14 px 600), targeting a `<main id="main" tabindex="-1">`
+      focus target; the footer landmark stays outside `<main>`.
 - [ ] `vite.config.ts` keeps `injectUiSource()` (absolute `@source` for
       `packages/ui`).
 - [ ] `public/CNAME` = `reverie.free.componentdock.com`; `"homepage"` =
