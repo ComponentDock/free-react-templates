@@ -499,7 +499,7 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
 - Match the source's section order 1:1 (header → hero → services → features →
   counter → request → blog → logo strip → footer, plus the search overlay).
 - Match the design tokens above; put the brand palette (`#6b705d`, `#a3a698`,
-  `#5e6350`, `#9b5757`/rose-tinted shadows, `#111`, `#3b3e33`, `#f7f8f3`) in
+  `#5e6350`, `#9a5757`/rose-tinted shadows, `#111`, `#3b3e33`, `#f7f8f3`) in
   `@theme` and use them via Tailwind classes.
 - Copy text is paraphrased but keeps the same _kind_ of content; the source's own
   copy (headlines, nav labels, service/blog/meta strings, footer contact lines) may
