@@ -3089,7 +3089,7 @@
 - [x] **Website Menu 17** — [colorlib](https://colorlib.com/wp/template/website-menu-17/) · [mizzen](https://mizzen.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/website-menu-17.jpg)
 - [x] **Website Menu 18** — [colorlib](https://colorlib.com/wp/template/website-menu-18/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/website-menu-18.jpg) · [spinnaker](https://spinnaker.free.componentdock.com)
 - [x] **Website Menu 19** — [colorlib](https://colorlib.com/wp/template/website-menu-19/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/website-menu-19.jpg) · [sponson](https://sponson.free.componentdock.com)
-- [~] **Website Menu 20** — [colorlib](https://colorlib.com/wp/template/website-menu-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/website-menu-20.jpg)
+- [x] **Website Menu 20** — [colorlib](https://colorlib.com/wp/template/website-menu-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/website-menu-20.jpg) · [bimini](https://bimini.free.componentdock.com)
 
 ## Wedding (14)
 
