@@ -34,7 +34,16 @@ Everything below comes from the preview itself, not from imagination:
 - the two digital ornaments → `tittle_img.png` (439×17, avg `rgb(255,42,42)`)
   under every section title, `hero_shape1.png` (36×45) beside the hero eyebrow,
   `hero_shape2.png` (80×84) between the couple names, `shape1.png` (108×61) in
-  the gallery captions.
+  the gallery captions;
+- **font delivery → a legacy `@import` on line 1 of `assets/css/style.css`**:
+  `@import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700|Playfair+Display:400,500,600,700,800,900|Roboto:300,400,500,700&display=swap");`
+  — the v1 `css?` form (`|`-separated families, `&display=swap`). **Neither the
+  HTML nor any other sheet carries a `fonts.googleapis.com` reference for these
+  faces, and the only `@font-face` rules on the page belong to the icon fonts**
+  (`Flaticon`, `Font Awesome 5 Free`/`Brands`, `themify`) — all replaced by
+  `lucide-react` glyphs. Our recreation links the same three families from Google
+  Fonts in `index.html` instead, **with `&display=swap`** so first paint matches
+  the reference's swap-in (a link without it blocks text for up to ~3 s).
 
 ## Page skeleton (source DOM order → our section order)
 
@@ -301,6 +310,9 @@ preloader cover      #f7f7f7   .preloader (full-screen, z-index 999999)
 preloader arc        #ff2828   1px top border of the 100px white disc (@keyframes zoom)
 radii                30px pill buttons · 5px inputs
 fonts                "Playfair Display", serif · "Roboto", sans-serif · "Barlow", sans-serif
+                     delivered by the source via the sheet's line-1 legacy `@import`
+                     (v1 `css?` API, `&display=swap`); the only @font-face rules on
+                     the page are the icon fonts — see "Sources of the tokens"
 ```
 
 All three families resolve on Google Fonts (HTTP 200):

@@ -92,7 +92,10 @@
       photos. Reference evidence: the live page's only aria attribute is
       `aria-hidden="true"` on a decorative `<i class="fa fa-heart-o">`, and its
       toggler `<button class="navbar-toggler" data-toggle="collapse"
-      data-target="#collapsibleNavbar">` has no accessible name at all.
+      data-target="#collapsibleNavbar">` has no accessible name at all; that
+      toggler opens the **mobile menu panel**
+      `<div class="collapse navbar-collapse menu-right" id="collapsibleNavbar">`
+      (page-level chrome — reproduce it as a state-driven panel with the same id).
 - [ ] Implement components (green) at 100% coverage.
 - [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.

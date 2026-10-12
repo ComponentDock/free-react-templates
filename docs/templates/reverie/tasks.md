@@ -16,7 +16,12 @@ implementer ships it and the deploy is live.
 - [ ] `public/CNAME` = `reverie.free.componentdock.com`; `"homepage"` =
       `https://reverie.free.componentdock.com`.
 - [ ] `index.html`: Google Fonts `<link>` for **Cormorant Garamond** (300–700)
-      and **Raleway** (300–700), plus **our own** head facts — `<title>`,
+      and **Raleway** (300–700) **with `&display=swap`**:
+      `https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap`
+      — the source's 14 self-hosted design faces all set `font-display: swap`
+      (only its Font Awesome 7 icon face is `block`), so a link without
+      `display=swap` blocks text for up to ~3 s where the reference swaps; no
+      `.woff2` is ever copied. Plus **our own** head facts — `<title>`,
       `meta description`, `rel=canonical` (`https://reverie.free.componentdock.com/`),
       an own SVG favicon and (optionally) own `og:`/`twitter:` tags. The source's
       head is placeholder data never to be reused: `rel=canonical`

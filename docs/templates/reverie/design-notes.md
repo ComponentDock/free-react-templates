@@ -56,6 +56,10 @@ div#search-overlay.search-model → close button + form.search-model-form
 :root  --bs-* Bootstrap 5 breakpoints (sm 576 md 768 lg 992 xl 1200 xxl 1400)
 
 body            { font-family: Raleway, sans-serif }         /* + Cormorant Garamond display */
+/* 15 @font-face in this sheet, all self-hosted: Raleway 300/400/500/600/700 +
+   Cormorant Garamond 400/600 (latin + latin-ext subsets, ../fonts/<fam>/<fam>-<subset>-<w>-normal.woff2,
+   font-display: swap) + Font Awesome 7 Brands (../fonts/fontawesome/fa-brands-400.woff2,
+   font-display: block). No fonts.googleapis.com ref, no /cf-fonts/ proxy. */
 .header         { position:absolute; left:0; top:0; width:100%; background:#fff;
                   box-shadow:0 5px 10px #9a57571a }           /* rose-tinted shadow */
 .skip-link      { position:absolute; top:-100px; left:15px; z-index:100000;
@@ -268,7 +272,7 @@ every value above (the page ships no archive twin and no `/etc/cs/` demo).
 | `img/logo.svg`, `img/footer-logo.svg` (`DREAMS`) | an original serif `REVERIE` wordmark (no image) |
 | `img/icon/{hi,ti,si-N,ci-N}.png` line-art icons | `lucide-react` icons |
 | Font Awesome 7 socials + inline SVG sprite (`#i-send`, `#i-heart`) | **inline-SVG brand marks** for `Facebook`, `Twitter`, `Instagram`, `Dribbble` (lucide-react exports no brand icons) + `lucide-react` `Send`, `Heart` |
-| self-hosted Cormorant Garamond + Raleway `.woff2` | Google Fonts `<link>` (both faces verified 200) |
+| self-hosted Cormorant Garamond + Raleway `.woff2` (14 design files: 5 Raleway weights + 2 Cormorant Garamond weights, `latin` + `latin-ext`, **all `font-display: swap`**) and the self-hosted **Font Awesome 7 Brands** face (`fa-brands-400.woff2`, the page's only `font-display: block`) | Google Fonts `<link>` **with `&display=swap`** (both faces verified 200; the source's own display value, so first paint matches); the icon face becomes inline-SVG brand marks | `index.html` |
 | Bootstrap 5 grid + custom classes | Tailwind 4 utilities + `cn()` |
 | Swiper/owl carousel | small CSS/JS marquee or Swiper only if already a dependency |
 | `js/main.min.js` (mobile menu, search, counter, filter) | React state + `IntersectionObserver` |

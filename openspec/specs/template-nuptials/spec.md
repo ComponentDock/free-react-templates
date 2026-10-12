@@ -102,7 +102,10 @@ layout, colors, typography, and content types (no ColorLib assets copied).
   page (`aria-hidden="true"` on a decorative `<i class="fa fa-heart-o">`), a
   toggler `<button class="navbar-toggler" data-toggle="collapse"
   data-target="#collapsibleNavbar">` with no accessible name / `aria-expanded`
-  / `aria-controls`, a "Pages" dropdown that opens on CSS `:hover` only (no JS
+  / `aria-controls`, targeting the **mobile menu panel**
+  `<div class="collapse navbar-collapse menu-right" id="collapsibleNavbar">`
+  (the page-level off-canvas panel we reproduce as a state-driven panel), a
+  "Pages" dropdown that opens on CSS `:hover` only (no JS
   handler in `js/main.js`), and page-wide outline suppression
   (`a, a:focus, a:hover{outline:0}`, `.genric-btn:focus{outline:none}`,
   `.single-input:focus{outline:none}`). The recreation therefore adds the

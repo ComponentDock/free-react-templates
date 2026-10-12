@@ -94,10 +94,23 @@ the source name, its copy verbatim or its typos.
   viewport (**780×780**) with a full-page height of **5,678 px**, so absolute
   pixel values are labelled with that viewport and the desktop-intent values
   come from the stylesheet.
-- **Fonts (both self-hosted in the source; both served by Google Fonts, so the
-  recreation links the variable face — verified 200 for
-  `css2?family=Cormorant+Garamond:wght@300;400;500;600;700` and
-  `css2?family=Raleway:wght@300;400;500;600;700`)**:
+- **Fonts (both self-hosted in the source as `.woff2` files; both served by
+  Google Fonts, so the recreation links the *variable* faces — the shipped link
+  is verified 200):
+  `https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap`**
+  - **Font delivery (reference fact, re-verified 2026-10-12):** the source's
+    `css/style.min.css` carries **15 `@font-face` rules** — **14 self-hosted
+    design files** (Raleway 300/400/500/600/700 and Cormorant Garamond 400/600,
+    each in `latin` + `latin-ext`, under `../fonts/raleway/…` and
+    `../fonts/cormorant-garamond/…`, **every design face `font-display: swap`**)
+    plus a **Font Awesome 7 Brands** face
+    (`../fonts/fontawesome/fa-brands-400.woff2`) that is the page's only
+    **`font-display: block`**. The page loads **no** `fonts.googleapis.com`
+    reference at all (no `<link>`, no stylesheet `@import`) and no `/cf-fonts/`
+    proxy — the only open Wedding item whose faces are genuinely self-hosted. We
+    therefore link Google Fonts **with `&display=swap`** (the source's own value,
+    so first paint matches) and copy no `.woff2`; the icon face is replaced by
+    inline-SVG brand marks (see the adaptation table).
   - **Cormorant Garamond** (serif display) — headings, the `DREAMS` wordmark,
     section titles, the italic blog meta, the button labels, the counter numbers.
   - **Raleway** (sans body, `body{font-family:Raleway, sans-serif}`) — body
@@ -625,8 +638,9 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
   be reproduced where it is generic, but the source **name**, wordmark and brand
   marks are never reused.
 - Never copy assets — replace every image with a deterministic `picsum.photos`
-  seed, every icon with `lucide-react`, and every self-hosted font with a Google
-  Fonts `<link>` (Cormorant Garamond + Raleway). The source's **format layer**
+  seed, every icon with `lucide-react`, and every self-hosted font (14 `.woff2`
+  design files, all `font-display: swap`) with a Google Fonts `<link>` that keeps
+  `&display=swap` (Cormorant Garamond + Raleway). The source's **format layer**
   (17 `<picture>`/`<source type="image/avif">` pairs + 8 inline
   `image-set(… type(…))` bands + the `<link rel="preload" as="image">` hero
   hint) is source-only infrastructure and is **flattened**, never reproduced.
@@ -668,7 +682,8 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
 - [ ] Footer: `#3b3e33`, newsletter pill + four social discs, four columns, and the
       **Component Dock** credit link.
 - [ ] No ColorLib reference anywhere in `apps/reverie`; assets are placeholders;
-      icons are lucide; fonts via Google Fonts.
+      icons are lucide; fonts via Google Fonts **with `&display=swap`** (no
+      `.woff2` copied, matching the source's `font-display: swap`).
 - [ ] The source's format layer is flattened: no `<picture>`/`<source>`/`srcset`/
       `sizes`/`image-set()` in app code, no `.avif` request, no image preload hint;
       below-the-fold images keep `width`/`height` + `loading="lazy"`, the hero image

@@ -35,6 +35,16 @@ React 19 + Tailwind CSS 4 + TypeScript.
   owl-carousel, slick (brand logo strip), magnific-popup, WOW/animate.css,
   counters, and the `[data-background]` → `background-image` swap used for
   every patterned band).
+- **Font delivery (reference fact, re-verified 2026-10-12):** the source delivers
+  all three design faces **without a single `@font-face` rule of its own and
+  without a `fonts.googleapis.com` `<link>`** — they arrive through a **legacy
+  `@import` on line 1 of the theme's own stylesheet** (`assets/css/style.css`):
+  `@import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700|Playfair+Display:400,500,600,700,800,900|Roboto:300,400,500,700&display=swap");`
+  (the v1 `css?` API form: `|`-separated families, `&display=swap` on the query —
+  which is why the reference's text **swaps in** rather than blocking). The page's
+  only `@font-face` rules belong to its icon fonts (Flaticon, Font Awesome 5
+  Free/Brands, themify) — the recreation draws `lucide-react` glyphs instead, and
+  none of those faces is a design face.
 - **Screenshot:** TEMPLATES.md `wed-free-template.jpg` (HTTP 200, served
   **AVIF** despite the `.jpg` name, 89,139 B, 1200×946 → converted to PNG and
   inspected). Live render (1440 px) and screenshot agree.
@@ -202,7 +212,7 @@ React 19 + Tailwind CSS 4 + TypeScript.
 | Form-card shadow | `0 0 86px rgba(0,0,0,0.06)` | `.form-wrapper` |
 | Header shadow | `0 10px 15px rgba(25,25,25,0.1)` | `.main-header` |
 | Radii | **30 px** pill buttons · **5 px** inputs/select | `.btn`, `.nice-select` |
-| Fonts | **"Playfair Display", serif** (h1–h6, hero names, card/event titles, gift heading) · **"Roboto", sans-serif** (body, nav, footer) · **"Barlow", sans-serif** (hero eyebrow, countdown numerals + labels) | all verified on Google Fonts (HTTP 200) |
+| Fonts | **"Playfair Display", serif** (h1–h6, hero names, card/event titles, gift heading) · **"Roboto", sans-serif** (body, nav, footer) · **"Barlow", sans-serif** (hero eyebrow, countdown numerals + labels) | all verified on Google Fonts (HTTP 200); the reference delivers them through the theme stylesheet's line-1 legacy `@import` (only the icon faces use `@font-face`), `&display=swap` |
 | Section rhythm | Wedding Info `195px 0 170px` · gift `120px 0 130px` · registry `0 0 150px` · footer `135px 0 74px`; hero height 980 px | paddings |
 
 ## Requirements
@@ -577,7 +587,8 @@ contentinfo landmarks.
       `#12151a`, footer link `#cfcfcf`, ink `#212121` / `#2e3c40` / `#636363`,
       band `#f9f9f9`, divider `#f4f4f4`, input `#d9d9d9`/`#a3a3a3`, scrim
       `rgba(0,0,0,0.1)` in `@theme`; Playfair Display + Roboto + Barlow loaded
-      from Google Fonts; radii 30 px / 5 px
+      from Google Fonts **with `&display=swap`** (the reference's own delivery is
+      the stylesheet line-1 legacy `@import` with `display=swap`); radii 30 px / 5 px
 - [ ] Placeholder images via seeded picsum
       (`https://picsum.photos/seed/matrimony-<n>/<w>/<h>`: hero 1920×1080,
       story photo 900×1100, gallery 1200×1400 …); flourish/laurel/corner marks

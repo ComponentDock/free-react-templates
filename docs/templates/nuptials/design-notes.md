@@ -107,7 +107,10 @@ for the theme's own component vocabulary.
   decorative `<i class="fa fa-heart-o">`; its mobile toggler
   `<button class="navbar-toggler" type="button" data-toggle="collapse"
   data-target="#collapsibleNavbar"><span class="lnr lnr-menu"></span></button>`
-  has no accessible name, no `aria-expanded`, no `aria-controls`; its "Pages"
+  has no accessible name, no `aria-expanded`, no `aria-controls`, and the
+  **mobile menu panel** it opens is
+  `<div class="collapse navbar-collapse menu-right" id="collapsibleNavbar">`
+  (page-level chrome we reproduce as a state-driven panel); its "Pages"
   trigger
   `<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Pages</a>`
   and its `<div class="dropdown-menu">` carry no `aria-haspopup`/

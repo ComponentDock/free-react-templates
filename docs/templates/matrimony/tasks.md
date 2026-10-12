@@ -45,7 +45,13 @@ string `Colorlib`, or any copy verbatim.
       `https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Roboto:wght@300;400;500;700&family=Barlow:wght@400;500;600;700&display=swap`
       (Playfair Display = headings/hero/card+gift titles; Roboto = body/nav/
       footer; Barlow = hero eyebrow + countdown numerals/labels). All three
-      verified on Google Fonts (HTTP 200). Icons: `lucide-react` (`Menu`, `X`,
+      verified on Google Fonts (HTTP 200). **Keep `&display=swap`**: the reference
+      delivers the same three faces through a legacy `@import` on line 1 of its
+      own `assets/css/style.css`
+      (`css?family=Barlow:…|Playfair+Display:…|Roboto:…&display=swap` — no
+      `fonts.googleapis.com` `<link>` in its HTML and no design-face `@font-face`
+      at all), so a link without `display=swap` would block text for up to ~3 s
+      where the reference swaps. Icons: `lucide-react` (`Menu`, `X`,
       `ChevronDown`, `Plus`, `CalendarDays`, `Clock`, `MapPin`, `Heart`,
       `ArrowUp`, `Send`, plus the card glyphs `ScanSearch`, `Rocket`, `Award`)
 - [ ] `@theme` tokens in `src/index.css`: `--color-brand: #ff2828`,
