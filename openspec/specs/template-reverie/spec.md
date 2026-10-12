@@ -95,7 +95,7 @@ the source name, its copy verbatim or its typos.
   pixel values are labelled with that viewport and the desktop-intent values
   come from the stylesheet.
 - **Fonts (both self-hosted in the source as `.woff2` files; both served by
-  Google Fonts, so the recreation links the *variable* faces — the shipped link
+  Google Fonts, so the recreation links the _variable_ faces — the shipped link
   is verified 200):
   `https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap`**
   - **Font delivery (reference fact, re-verified 2026-10-12):** the source's
@@ -117,8 +117,8 @@ the source name, its copy verbatim or its typos.
     copy, nav labels, footer text, form controls.
 - **Screenshot / live-render description:**
   - **Header:** a **white absolute bar** across the top (`position:absolute;
-    top:0; left:0; width:100%; background:#fff; box-shadow:0 5px 10px
-    #9a57571a`) holding, left→right: a serif `DREAMS` wordmark (`img/logo.svg`,
+top:0; left:0; width:100%; background:#fff; box-shadow:0 5px 10px
+#9a57571a`) holding, left→right: a serif `DREAMS` wordmark (`img/logo.svg`,
     131×23); a centred, uppercase, letter-spaced-capitals nav — HOME · SERVICES ·
     PORTFOLIO · PAGES · NEWS · CONTACT, the current item carrying a **5 px black
     dot** centred under it; and a right cluster with social links
@@ -127,7 +127,7 @@ the source name, its copy verbatim or its typos.
     **RGBA with fully transparent bottom corners → the band's bottom edge curves
     away**, i.e. the wave is baked into the source image, not a CSS shape),
     `height:866px; padding-top:330px`, `background-size:cover; position:top
-    center`. Centred white overlay type in three registers: a small
+center`. Centred white overlay type in three registers: a small
     **pinecone/leaf ornament** (`img/icon/hi.png`, 66×51), then `h5` "WELCOME TO
     DREAMS" (uppercase, letter-spacing 2 px) and `h1` "PLAN THE PERFECT WEDDING"
     (uppercase, **Cormorant Garamond, 48 px**), then a one-line grey subtext.
@@ -140,13 +140,13 @@ the source name, its copy verbatim or its typos.
     `services__item` (`padding:40px 30px 30px`, `transition:all .5s`, centred)
     with a line-art icon image (≈71×70) above a `h4` title and a lorem blurb;
     on hover the card gains `border-radius:10px` and `box-shadow:0 5px 39px
-    #9a57571a`.
+#9a57571a`.
   - **Features:** white `spad` band with `h2` "OUR WEDDING FEATURE" and a
     **filter row** of six text buttons (All · Couple · Event · Music Live ·
     Honeymoon · Photography, 18 px uppercase `#0d0d0d`, 40 px apart, the active
     one underlined), then a **CSS-grid masonry gallery**: `display:grid;
-    grid-template-columns:repeat(3,minmax(0,1fr)); grid-auto-rows:1px;
-    column-gap:15px`, each `fg__item` spanning rows (`grid-row-end:span 268`
+grid-template-columns:repeat(3,minmax(0,1fr)); grid-auto-rows:1px;
+column-gap:15px`, each `fg__item` spanning rows (`grid-row-end:span 268`
     base — height 253 px; `large_item` 505 px / span 520; `mid_item` 380 px /
     span 395), a photo background with a hover overlay (`:after` full-bleed
     `#000000b3`, fading in) revealing a category span + a white `h2` couple
@@ -162,23 +162,23 @@ the source name, its copy verbatim or its typos.
   - **Request (overlapping card):** the section pulls itself up over the counter
     band (`margin-top:-235px`). Its top block `.request__form .section-title` is
     a **solid olive-green card header** (`background:#5e6350`, `padding:60px 145px
-    40px`, `border-radius:10px 10px 0 0`) with a small white uppercase
+40px`, `border-radius:10px 10px 0 0`) with a small white uppercase
     letter-spaced `span` "LET'S MEET" and a white `h2` "MAKE A REQUEST", then a
     centred subtext ("Should you have any enquiries about Wedding Planner,
     please fill in our enquiry form."). Below it the **white form panel**
     (`background:#fff`, `border-radius:0 0 10px 10px; box-shadow:0 5px 10px
-    #9a57571a; padding:60px 55px 50px`) carries **four fields** in a 2×2 grid —
-    *Name*, *Email*, *Services* (select), *Guest* (select) — and a centred
+#9a57571a; padding:60px 55px 50px`) carries **four fields** in a 2×2 grid —
+    _Name_, _Email_, _Services_ (select), _Guest_ (select) — and a centred
     submit button **"SEND A REQUEST"** (`.site-btn`). Inputs: `height:50px;
-    border:1px solid #e1e1e1; padding-left:20px; font-size:14px; color:#666`.
+border:1px solid #e1e1e1; padding-left:20px; font-size:14px; color:#666`.
     Its two controls are real `<select class="nice-select" name="service">` /
     `name="guests"` elements carrying the source's **own option lists** — a
-    `Services` placeholder then *Photos & Video · Wedding Makeup · Restaurant ·
-    Live Music & DJ · Wedding Cake · Honeymoon*, and a `Guest` placeholder then
-    *Up to 50 · 50 to 100 · 100 to 200 · More than 200* (every real option has
+    `Services` placeholder then _Photos & Video · Wedding Makeup · Restaurant ·
+    Live Music & DJ · Wedding Cake · Honeymoon_, and a `Guest` placeholder then
+    _Up to 50 · 50 to 100 · 100 to 200 · More than 200_ (every real option has
     **no `value` attribute** — its label is the value). The form also ends with a
     **visitor-invisible decoy field** (`<input type="text" name="website"
-    tabindex="-1" autocomplete="off" hidden>`, repeated in the footer pill form)
+tabindex="-1" autocomplete="off" hidden>`, repeated in the footer pill form)
     — see the endpoints bullet below for the delta.
   - **Blog ("latest"):** white `spad` band, `h2` "OUR BLOG" and **three** cards
     — a photo, a meta row (`ul li`: "Inspiration" · "Nov 27, 2019" · "05
@@ -193,7 +193,7 @@ the source name, its copy verbatim or its typos.
     "Sign up and get 10% off your wedding!" + a pill form: a full-width
     translucent email input `#ffffff1a` with a flush-right send button) and a
     right **social row** (four 50 px circles, `#ffffff1a` fill, `border-radius:
-    50%`, white glyphs, 6 px apart). Then four columns (`col-lg-3`): footer logo
+50%`, white glyphs, 6 px apart). Then four columns (`col-lg-3`): footer logo
     (serif `DREAMS`, white), "OPEN TIME" (Mon – Fri: 8:00am – 7:00pm · Closed on
     weekend), "PHONE & EMAIL" (hello@example.com · +1 (503) 555-0142) and
     "ADDRESS" (203 Fake St., Portland, OR 97205, USA). A `footer__copyright`
@@ -204,7 +204,7 @@ the source name, its copy verbatim or its typos.
     design: the markup ships `<span class="js-year">2026</span>` and the theme's
     own `js/main.min.js` rewrites it on load
     (`document.querySelectorAll(".js-year").forEach(w => w.textContent =
-    String(new Date().getFullYear()))`, invoked from `P(){S(),F(),O()}`), so the
+String(new Date().getFullYear()))`, invoked from `P(){S(),F(),O()}`), so the
     recreation renders the **computed current year** in that slot.
   - **Search overlay:** a full-screen `#search-overlay` modal (`search-model`)
     with a close control and a centred "Search" form (opened by the header
@@ -225,7 +225,7 @@ the source name, its copy verbatim or its typos.
   9. `div.logo` — y 4,934, **139 px** (light logo carousel strip).
   10. `footer.footer` — y 5,073, **605 px** (subscribe + social, four columns, copyright bar).
   11. `div#search-overlay.search-model` — fixed full-screen search modal.
-  The `<main id="main">` landmark wraps items 3–9 (header and footer sit outside it).
+      The `<main id="main">` landmark wraps items 3–9 (header and footer sit outside it).
 - **Responsive-format image layer (measured 2026-10-12, `curl -sS` basis) — a
   FORMAT switch, not a resolution one:** the page holds **17 `<picture>` blocks**
   — 14 wrapping the line-art icons (the hero ornament `img/icon/hi.*`, both
@@ -272,20 +272,20 @@ the source name, its copy verbatim or its typos.
   `<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` as the **first
   children of `<head>`** and answers with `x-robots-tag: noindex, nofollow`,
   behind a host-wide `https://preview.colorlib.com/robots.txt` (`User-agent: *`
-  / `Disallow: /`). The theme's own head declarations start *below* that pair
+  / `Disallow: /`). The theme's own head declarations start _below_ that pair
   (and, uniquely in the open set, this theme injects **no** `/cf-fonts/` block —
   it self-hosts its woff2 files). None of the host layer may be reproduced in
   `apps/reverie` (no `noindex`, no `robots.txt`, no `dns-prefetch`,
   no `cdnjs`).
 - **Two source form endpoints, not one:** the enquiry card's form posts to
   `php/send-email.php` (`data-success="Thank you! We will reply within one
-  working day."`) while the **footer pill** form posts to `php/subscribe.php`
+working day."`) while the **footer pill** form posts to `php/subscribe.php`
   (`data-success="Thank you! You are on the list."`); the search overlay's form
   is `action="#"`. Both are replaced by client-side validation with **two
   distinct** inline success states.
 - **Both forms also carry a hidden decoy:** the enquiry form and the footer pill
   each end with `<input type="text" name="website" tabindex="-1"
-  autocomplete="off" hidden>` — an off-screen bot trap with no label, no
+autocomplete="off" hidden>` — an off-screen bot trap with no label, no
   `required` and no visible box. The recreation ships **no** hidden decoy field
   (there is no server-side POST to protect) and keeps only the visible control
   set; this is a documented delta, not an omission.
@@ -295,34 +295,34 @@ the source name, its copy verbatim or its typos.
 Read from `css/style.min.css` (canonical) and confirmed against the live render
 (`getComputedStyle`). Values in `rgba(...)` keep the source's own alpha.
 
-| Token | Value | Use |
-| --- | --- | --- |
-| Accent (sage/olive) | `#6b705d` | blog meta text, text links, `:focus-visible` |
-| Accent (button grey-green) | `#a3a698` | `.site-btn` / `.primary-btn` fill |
-| Request card header | `#5e6350` | `.request__form .section-title` green block |
-| Accent (rose tint, 10% α) | `#9a5757` `1a` → `rgba(154,87,87,.102)` | header + card/request shadow, services hover shadow |
-| Heading ink | `#111` | all `h1–h6`, `.section-title h2`, counter numbers |
-| Body / nav ink | `#0d0d0d` | nav labels, filter buttons |
-| Body copy | `#666` / `#444` | paragraphs / social-link icons |
-| Alt surface | `#f6f7f1` | alternate light sections (testimonial/pricing in sibling pages) |
-| Logo strip surface | `#f7f8f3` | `.logo` band |
-| Footer surface | `#3b3e33` | `.footer` |
-| Dark panel | `#111` | nav dropdown |
-| Hairline / borders | `#e1e1e1`, `#dee2e6` | form input borders |
-| Overlay (gallery) | `#000000b3` → `rgba(0,0,0,.7)` | `.fg__item:after` hover veil |
-| Translucent on dark | `#ffffff1a` → `rgba(255,255,255,.102)` | footer input + social discs |
-| Display font | `Cormorant Garamond`, serif | headings, wordmark, buttons, blog meta (italic), counters |
-| Body font | `Raleway`, sans-serif | body, nav, footer, form controls |
-| Nav label | 14 px, uppercase, `letter-spacing:2px`, `#0d0d0d` | header menu |
-| Section title | uppercase, `#111`, `letter-spacing:4px` | `h2` titles |
-| Primary button | 14 px Cormorant 600, uppercase, `letter-spacing:2px`, `padding:14px 34px 12px`, fill `#a3a698`, text `#111`, **square** | `.site-btn` |
-| Hero | height 866 px, padding-top 330 px, cover/top-center, curved bottom edge (baked into `hero.png`) | hero band |
-| Section rhythm | `.spad` `padding:100px 0` (counter adds `padding-bottom:300px`) | vertical spacing |
-| Card shapes | services hover `border-radius:10px`; request header `10px 10px 0 0`; request form `0 0 10px 10px`; inputs square; slicknav toggle 4 px | radii |
-| Card shadows | `0 5px 10px #9a57571a` (header/request), `0 5px 39px #9a57571a` (services hover) | soft rose-tinted shadows |
-| Gallery grid | `grid-template-columns:repeat(3,minmax(0,1fr)); grid-auto-rows:1px; column-gap:15px`; item row-span 268 (253 px), mid 395 (380 px), large 520 (505 px) | masonry |
-| Social disc | 50×50, `border-radius:50%`, `#ffffff1a`, white 18 px glyph, `margin-right:6px` | footer socials |
-| Skip link | `#111` fill, white 14 px/600, `padding:10px 18px`, `top:-100px` → `top:10px` on `:focus`, `z-index:100000` | off-screen "Skip to content" link before the header |
+| Token                      | Value                                                                                                                                                  | Use                                                             |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------- |
+| Accent (sage/olive)        | `#6b705d`                                                                                                                                              | blog meta text, text links, `:focus-visible`                    |
+| Accent (button grey-green) | `#a3a698`                                                                                                                                              | `.site-btn` / `.primary-btn` fill                               |
+| Request card header        | `#5e6350`                                                                                                                                              | `.request__form .section-title` green block                     |
+| Accent (rose tint, 10% α)  | `#9a5757` `1a` → `rgba(154,87,87,.102)`                                                                                                                | header + card/request shadow, services hover shadow             |
+| Heading ink                | `#111`                                                                                                                                                 | all `h1–h6`, `.section-title h2`, counter numbers               |
+| Body / nav ink             | `#0d0d0d`                                                                                                                                              | nav labels, filter buttons                                      |
+| Body copy                  | `#666` / `#444`                                                                                                                                        | paragraphs / social-link icons                                  |
+| Alt surface                | `#f6f7f1`                                                                                                                                              | alternate light sections (testimonial/pricing in sibling pages) |
+| Logo strip surface         | `#f7f8f3`                                                                                                                                              | `.logo` band                                                    |
+| Footer surface             | `#3b3e33`                                                                                                                                              | `.footer`                                                       |
+| Dark panel                 | `#111`                                                                                                                                                 | nav dropdown                                                    |
+| Hairline / borders         | `#e1e1e1`, `#dee2e6`                                                                                                                                   | form input borders                                              |
+| Overlay (gallery)          | `#000000b3` → `rgba(0,0,0,.7)`                                                                                                                         | `.fg__item:after` hover veil                                    |
+| Translucent on dark        | `#ffffff1a` → `rgba(255,255,255,.102)`                                                                                                                 | footer input + social discs                                     |
+| Display font               | `Cormorant Garamond`, serif                                                                                                                            | headings, wordmark, buttons, blog meta (italic), counters       |
+| Body font                  | `Raleway`, sans-serif                                                                                                                                  | body, nav, footer, form controls                                |
+| Nav label                  | 14 px, uppercase, `letter-spacing:2px`, `#0d0d0d`                                                                                                      | header menu                                                     |
+| Section title              | uppercase, `#111`, `letter-spacing:4px`                                                                                                                | `h2` titles                                                     |
+| Primary button             | 14 px Cormorant 600, uppercase, `letter-spacing:2px`, `padding:14px 34px 12px`, fill `#a3a698`, text `#111`, **square**                                | `.site-btn`                                                     |
+| Hero                       | height 866 px, padding-top 330 px, cover/top-center, curved bottom edge (baked into `hero.png`)                                                        | hero band                                                       |
+| Section rhythm             | `.spad` `padding:100px 0` (counter adds `padding-bottom:300px`)                                                                                        | vertical spacing                                                |
+| Card shapes                | services hover `border-radius:10px`; request header `10px 10px 0 0`; request form `0 0 10px 10px`; inputs square; slicknav toggle 4 px                 | radii                                                           |
+| Card shadows               | `0 5px 10px #9a57571a` (header/request), `0 5px 39px #9a57571a` (services hover)                                                                       | soft rose-tinted shadows                                        |
+| Gallery grid               | `grid-template-columns:repeat(3,minmax(0,1fr)); grid-auto-rows:1px; column-gap:15px`; item row-span 268 (253 px), mid 395 (380 px), large 520 (505 px) | masonry                                                         |
+| Social disc                | 50×50, `border-radius:50%`, `#ffffff1a`, white 18 px glyph, `margin-right:6px`                                                                         | footer socials                                                  |
+| Skip link                  | `#111` fill, white 14 px/600, `padding:10px 18px`, `top:-100px` → `top:10px` on `:focus`, `z-index:100000`                                             | off-screen "Skip to content" link before the header             |
 
 ## Requirements
 
@@ -350,7 +350,7 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
 - **Given** the desktop nav is visible
 - **When** the "Pages" item is hovered or focused
 - **Then** a `#111` panel appears under it (`width:140px; left:0; top:50px;
-  padding:2px 0`, `transition:all .5s`) with three block rows — About, Team,
+padding:2px 0`, `transition:all .5s`) with three block rows — About, Team,
   Blog Details — as white 12 px/500 `capitalize` links (`padding:8px 20px`)
 - **And** the panel is keyboard operable (`Escape` closes it; the trigger reports
   `aria-expanded`; focus order matches the visual order), the source binds hover
@@ -425,7 +425,7 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
 - **Given** a service card is rendered
 - **When** it is hovered
 - **Then** it gains `border-radius:10px` and `box-shadow:0 5px 39px
-  rgba(154,87,87,.102)` with a `.5s` transition, matching the source
+rgba(154,87,87,.102)` with a `.5s` transition, matching the source
 - **And** the same treatment is reachable via `:focus-within`/keyboard and is
   reduced-motion safe
 
@@ -440,7 +440,7 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
   at 18 px uppercase `#0d0d0d`, spaced `margin-right:40px`, the active one marked
   with an underline
 - **And** the gallery is a CSS-grid masonry (`grid-template-columns:
-  repeat(3,minmax(0,1fr)); grid-auto-rows:1px; column-gap:15px`) of **six** tiles
+repeat(3,minmax(0,1fr)); grid-auto-rows:1px; column-gap:15px`) of **six** tiles
   whose row spans vary (base 253 px, mid 380 px, large 505 px) to recreate the
   source's staggered layout
 - **And** each tile is a placeholder photo with a category span and a white
@@ -510,7 +510,7 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
   letter-spaced span "LET'S MEET" and a white `h2` "MAKE A REQUEST", plus a centred
   subtext
 - **And** below it a white panel (`border-radius:0 0 10px 10px; box-shadow:
-  0 5px 10px rgba(154,87,87,.102); padding:60px 55px 50px`) holds **four** fields
+0 5px 10px rgba(154,87,87,.102); padding:60px 55px 50px`) holds **four** fields
   in a 2×2 grid — Name, Email, Services (select) and Guest (select) — plus a
   centred **"SEND A REQUEST"** submit button
 - **And** inputs are `height:50px`, `border:1px solid #e1e1e1`, `padding-left:20px`,
@@ -650,7 +650,7 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
 #### Scenario: A skip link precedes the header and targets the main landmark
 
 - **Given** the source document opens with `<a class="skip-link" href="#main">Skip to
-  content</a>` before the header, and the content column is wrapped in
+content</a>` before the header, and the content column is wrapped in
   `<main id="main" tabindex="-1">`
 - **When** the page is loaded and then tabbed into
 - **Then** the first focusable element is a "Skip to content" link that is hidden
@@ -692,54 +692,121 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
 
 ## Verification checklist
 
-- [ ] `openspec validate template-reverie --type spec` passes.
-- [ ] `apps/reverie` exists, package is `@free-react-templates/reverie`,
+- [x] `openspec validate template-reverie --type spec` passes.
+- [x] `apps/reverie` exists, package is `@free-react-templates/reverie`,
       `vite.config.ts` registers `injectUiSource()`.
-- [ ] Section order matches the source 1:1 (skip link, header, hero, services,
+- [x] Section order matches the source 1:1 (skip link, header, hero, services,
       features, counter, request, blog, logo strip, footer, search overlay), with
       `<main id="main" tabindex="-1">` wrapping the content sections and the footer
       landmark outside `<main>`.
-- [ ] A "Skip to content" link is the first focusable element, hidden above the
+- [x] A "Skip to content" link is the first focusable element, hidden above the
       viewport until `:focus` (revealed at `top:10px`, `#111` fill / white 14 px 600),
       and it moves focus to the main landmark (`tabindex="-1"`).
-- [ ] Header: absolute white bar, six nav items, current-item dot, dark `#111`
+- [x] Header: absolute white bar, six nav items, current-item dot, dark `#111`
       Pages dropdown, mobile toggle, social links and magnifier → search overlay.
-- [ ] Hero: 866 px photo band, curved bottom edge, ornament + "Welcome" h5 + 48 px
+- [x] Hero: 866 px photo band, curved bottom edge, ornament + "Welcome" h5 + 48 px
       uppercase h1 + subtext, no CTA.
-- [ ] Services: six cards (Photos & Video … Honeymoons) with lucide icons and the
+- [x] Services: six cards (Photos & Video … Honeymoons) with lucide icons and the
       `10px`/rose-shadow hover lift.
-- [ ] Features: six filter buttons + six-tile CSS-grid masonry (253/380/505 px
+- [x] Features: six filter buttons + six-tile CSS-grid masonry (253/380/505 px
       spans) with dark hover overlays and a "View more" link.
-- [ ] Counter: photo band, four counters (8365/568/849/2574) counting up once and
+- [x] Counter: photo band, four counters (8365/568/849/2574) counting up once and
       reduced-motion safe.
-- [ ] Request: `-235px` overlap, `#5e6350` green header card, white 4-field form
+- [x] Request: `-235px` overlap, `#5e6350` green header card, white 4-field form
       (Name, Email, Services, Guest) with `SEND A REQUEST` and inline validation.
-- [ ] Request selects carry the source's own options (services list + the guest
+- [x] Request selects carry the source's own options (services list + the guest
       bands Up to 50 / 50 to 100 / 100 to 200 / More than 200), and **no** hidden
       `name="website"` decoy field ships (documented delta).
-- [ ] Blog: three cards with the italic `#6b705d` meta row and `#111` titles.
-- [ ] Logo strip: `#f7f8f3` band with ten placeholder wordmarks.
-- [ ] Footer: `#3b3e33`, newsletter pill + four social discs, four columns, and the
+- [x] Blog: three cards with the italic `#6b705d` meta row and `#111` titles.
+- [x] Logo strip: `#f7f8f3` band with ten placeholder wordmarks.
+- [x] Footer: `#3b3e33`, newsletter pill + four social discs, four columns, and the
       **Component Dock** credit link.
-- [ ] No ColorLib reference anywhere in `apps/reverie`; assets are placeholders;
+- [x] No ColorLib reference anywhere in `apps/reverie`; assets are placeholders;
       icons are lucide; fonts via Google Fonts **with `&display=swap`** (no
       `.woff2` copied, matching the source's `font-display: swap`).
-- [ ] The source's format layer is flattened: no `<picture>`/`<source>`/`srcset`/
+- [x] The source's format layer is flattened: no `<picture>`/`<source>`/`srcset`/
       `sizes`/`image-set()` in app code, no `.avif` request, no image preload hint;
       below-the-fold images keep `width`/`height` + `loading="lazy"`, the hero image
       stays eager, decorative images use `alt=""`.
-- [ ] Head facts are the app's own `<title>`/description/canonical/favicon and (if
+- [x] Head facts are the app's own `<title>`/description/canonical/favicon and (if
       present) its own `og:`/`twitter:`/JSON-LD — no `your-domain.com`, no
       `Dreams`/`Wedding Dreams` string, no `img/og-image.jpg`, no `generator` meta.
-- [ ] No third-party tag ships: `grep -rE 'gtag|dataLayer|googletagmanager|G-[A-Z0-9]{6,}'
-      apps/reverie` is empty, and the two forms show **two distinct** success states
+- [x] No third-party tag ships: `grep -rE 'gtag|dataLayer|googletagmanager|G-[A-Z0-9]{6,}'
+    apps/reverie` is empty, and the two forms show **two distinct** success states
       (enquiry card vs footer pill) with no navigation to a `php/` path.
-- [ ] Host layer excluded: the reference's served head opens with the host's
+- [x] Host layer excluded: the reference's served head opens with the host's
       `<meta name="robots" content="noindex, nofollow">` + `<link
-      rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` pair and answers
+    rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` pair and answers
       `x-robots-tag: noindex, nofollow` behind a host `robots.txt`
       (`Disallow: /`) — none of it appears in `apps/reverie` (no `noindex`, no
       `robots` meta, no `dns-prefetch`, no `cdnjs`, no `preview.colorlib.com`).
-- [ ] `public/CNAME` = `reverie.free.componentdock.com`; `homepage` matches.
-- [ ] Tests: Vitest + Testing Library, 100% lines/functions/branches/statements.
-- [ ] `scripts/verify-app.sh reverie` passes (typecheck + lint + coverage + build).
+- [x] `public/CNAME` = `reverie.free.componentdock.com`; `homepage` matches.
+- [x] Tests: Vitest + Testing Library, 100% lines/functions/branches/statements.
+- [x] `scripts/verify-app.sh reverie` passes (typecheck + lint + coverage + build).
+
+## Implementation notes (implementer, 2026-10-13)
+
+Built on `feat/template-reverie` exactly per the requirements above; the deltas below are deliberate
+and each was measured on the built page (`apps/reverie/dist`, served on a local port at the harness's
+780×437 viewport).
+
+- **The hero's curve is a `clip-path`, not a copied image.** The reference bakes its wave into
+  `hero.png` (1923×866, RGBA, transparent bottom corners), so `heroPhotoClass` carries
+  `[clip-path:ellipse(150%_100%_at_50%_0%)]` on the photo layer: the band measures 866px and its
+  bottom edge dips 5.7% lower at the centre than at the corners, which is the shape the RGBA frame
+  produced — with no image of the reference on the page.
+- **A scrim was added under white type** (`rgba(17,17,17,0.34)` over the photograph). The reference
+  has none because its own frame happens to be light; over a seeded placeholder the headline would
+  otherwise fail contrast. Recorded as a delta in the design notes.
+- **The counter band's figure of record is the design's, and both paths were measured.** The four
+  values render exactly as `8365 / 568 / 849 / 2574`; under emulated
+  `prefers-reduced-motion: reduce` the built page prints all four at once (measured in the browser),
+  and the animated path is the `IntersectionObserver` → `requestAnimationFrame` chain the app's own
+  tests drive frame by frame. Under the harness the tab reports
+  `document.visibilityState === "hidden"`, so Chromium delivers **no** intersection callbacks at all
+  — an independent probe against the same node (top −83, height 181, viewport 437) never fired
+  either, which is why the browser check used the reduced-motion route.
+- **The request card overlaps by exactly 235px** (`counter` block top 3754 / height 802 with a 300px
+  bottom pad, `request` section top 4322 → 235px of the green header rides on the photo), and its
+  tokens compute as the reference's: header `rgb(94,99,80)` at `padding:60px 145px 40px` with a 10px
+  top radius, panel `#fff` with a 10px bottom radius and `rgba(154,87,87,0.1) 0 5px 10px`, submit
+  `rgb(163,166,152)` on `rgb(17,17,17)` **square** (`border-radius: 0`).
+- **The gallery is the reference's CSS-grid masonry**, not a script: two 337.5px columns at 780px
+  with tiles measuring 505 / 253 / 380 / 380 / 253 / 253 px through `auto-rows-[1px]` and
+  `row-end-[span_*]`. Every frame stays in the document and the filter row toggles `hidden`, which is
+  what the reference's own `hide()` does; the veil computes `rgba(0,0,0,0.7)` at rest opacity 0 and
+  the two captions sit at opacity 0 until the frame is hovered or focused.
+- **The tiles are links, and they lead somewhere.** The reference's frames are non-focusable `div`s;
+  here each is an `<a>` whose accessible name is its caption + couple line, resolving to the enquiry
+  band — the one place on the page a visitor can act from.
+- **The nav panel is click/keyboard, not hover-only.** `Pages` opens on hover, click and focus,
+  reports `aria-expanded`, closes on `Escape` and on `mouseleave`, and its three inner-page rows
+  (About / Team / Blog Details) resolve to the bands this one-pager actually ships, so the page holds
+  no dead anchor. The mobile turn is the design's 992px, served by a lucide toggle instead of the
+  reference's slicknav (its class name is in the provenance guard); the folded panel mounts only
+  while it is open.
+- **Two forms, two distinct confirmations.** The enrolment card's four checks live in
+  `validateRequest` (the form is `noValidate`, focus lands on the first field that needs fixing) and
+  confirm with the enquiry line, while the footer pill validates its own field and confirms with a
+  separate line — the reference's two POST destinations (`send-email.php`, `subscribe.php`) are not
+  interchangeable, and neither is reproduced. The `<select>` controls carry the design's own option
+  lists with the label as the value, and the visitor-invisible `name="website"` decoy the reference
+  repeats in both forms is not shipped.
+- **Head facts, analytics and the host layer are all absent.** `index.html` writes its own title,
+  description, canonical (`https://reverie.free.componentdock.com/`), favicon and two `og:` facts —
+  none of the reference's placeholder metadata (`your-domain.com`, `og-image.jpg`,
+  `generator "… 3.0.2"`), no `gtag`/`dataLayer`, and none of the preview host's `noindex` +
+  `dns-prefetch` pair. The format layer (17 `<picture>`/`srcset` pairs, 8 inline `image-set()` bands,
+  3 sheet rules, the AVIF hero preload) is flattened: one URL per image, `loading="lazy"` and
+  explicit `width`/`height` below the fold, an eager hero frame, `alt=""` on decorative imagery.
+- **Small measured deltas.** The vendor band's ten wordmarks are invented and its track carries them
+  twice (`logo-marquee`, 32s, `group-hover:[animation-play-state:paused]`) so the drift has no seam;
+  the footer's socials resolve inside the page, which keeps the Component Dock credit the document's
+  only outbound link; the copyright year is read from the clock (measured as 2026 on the day of the
+  run); the skip link precedes the header and `<main id="main" tabindex="-1">` closes before the
+  footer, matching the reference's landmark split.
+- Verification: `bash scripts/verify-app.sh reverie` → typecheck, oxlint, **100% coverage**
+  (360/360 statements, 87/87 branches, 71/71 functions, 358/358 lines) and a clean Vite build;
+  `npx openspec validate template-reverie --type spec` → valid; `npx knip --workspace apps/reverie` →
+  silent; `grep -c inline-flex apps/reverie/dist/assets/*.css` → 1 (the `injectUiSource()` path is
+  live); `grep -c "free-react-templates/reverie" package-lock.json` → 2. 57 tests in 13 files.
