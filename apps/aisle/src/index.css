@@ -1,0 +1,116 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Aisle's palette, read off the design's own stylesheet: one warm rose carries the whole page —
+     the heart between the names, the detail icons, the ornament star, the nav hover border, the
+     phone link and the call-to-action underline — with a second, near-identical rose reserved for
+     the newsletter's circular submit. The ink scale runs #333 (body, titles) → #555 (paragraphs,
+     copyright); the rules are #aaa (heading rules, dot and circle outlines) and #ccc (the timeline
+     spine); the two dark chrome tones are #333 for the dropdown and mobile menu panels with #444
+     between their rows; and the only light colour on the photograph bands is the white hairline
+     (rgba(255,255,255,.2), .1 once the header sits flush at the top on a narrow screen). */
+  --color-brand: #e45f74;
+  --color-brand-2: #e55d73;
+  --color-ink: #333333;
+  --color-copy: #555555;
+  --color-rule: #aaaaaa;
+  --color-spine: #cccccc;
+  --color-panel: #333333;
+  --color-panel-rule: #444444;
+  --color-panel-rule-light: #cccccc;
+  --color-hairline: rgba(255, 255, 255, 0.2);
+  --color-hairline-flush: rgba(255, 255, 255, 0.1);
+  --color-scrim: rgba(0, 0, 0, 0.3);
+  --color-lightbox: rgba(0, 0, 0, 0.8);
+
+  /* The shared Button reads its `primary` skin from this scale, so the rose is what the newsletter's
+     submit paints and the black of the design's hover is where it goes. */
+  --color-primary-400: #ef8b9b;
+  --color-primary-500: #e45f74;
+  --color-primary-600: #e55d73;
+  --color-primary-700: #000000;
+
+  --shadow-contact: 1px 10px 40px rgba(0, 0, 0, 0.4);
+  --shadow-pill: 1px 10px 30px rgba(0, 0, 0, 0.2);
+  --shadow-pill-focus: 1px 15px 30px rgba(0, 0, 0, 0.3);
+  --shadow-panel: 0 3px 10px rgba(0, 0, 0, 0.3);
+
+  --font-display: 'Playball', cursive;
+  --font-body: 'Bitter', serif;
+
+  /* The design was drawn against Bootstrap's four tiers, and its navigation turns over at 768px —
+     the `md:` step below — with the heading ladder stepping at 768 and 992. */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+/* The faint concentric rings the design tiles behind its story band and its footer, redrawn as a
+   repeating radial gradient at the same low contrast. Declared as a utility so the class travels
+   with the element and stays greppable. */
+@utility ring-pattern {
+  background-image: repeating-radial-gradient(
+    circle at 50% 0%,
+    rgba(170, 170, 170, 0.35) 0 1px,
+    rgba(170, 170, 170, 0) 1px 26px
+  );
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    background-color: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+  @media (max-width: 479px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    margin: 0;
+  }
+  h4,
+  h5,
+  h6 {
+    font-weight: 400;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  a {
+    color: inherit;
+    transition: all 0.2s ease;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  ::selection {
+    background: rgba(228, 95, 116, 0.25);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
