@@ -225,6 +225,10 @@ Source markup confirmations (from the fetched DOM):
   Wolfe`/`Mathilda Moss`/`Blake Hunter`/`Norman Ramsey`/`Tommy Phillips`,
   `Love at first sight`/`First Kissing`/`Living Together`/`Cherished Proposal`,
   the `Date: Friday, 20 May 2018` block, or the placeholder blurbs reused).
+- **Section headings stay the source's own strings** — including its
+  `Arrengement in progress` typo, kept verbatim (the spec's Arrangement scenario
+  says SHALL) — while the card titles, times and addresses inside each section
+  are ours.
 - Placeholder photography via `https://picsum.photos/seed/trousseau-<n>/<w>/<h>`
   for the hero, the two framed story photos, the six journey circles, the six
   moment-grid images and the four arrangement photos (no ColorLib asset copied).

@@ -173,7 +173,8 @@ Design notes: `docs/templates/trousseau/design-notes.md`.
 
 ## Arrangement (`Arrangement`) (TDD)
 
-- [ ] Red: asserts `SectionTitle` "Arrangement in progress" + intro, then
+- [ ] Red: asserts `SectionTitle` "Arrengement in progress" (the source's own
+      typo, kept verbatim per the spec) + intro, then
       **four white cards** (shadow `0px 10px 30px 0px rgba(153,153,153,0.1)`) —
       each a photo, an `h4` title (18px display bold, hovers pink), a blurb, and
       a **Date / Time / Address** block
