@@ -18,6 +18,7 @@ secondary (visual) reference. No fallback was needed.
 | Host layer (measured 2026-10-12, `curl -sS` basis) | `https://preview.colorlib.com/theme/wedding2/` + its response headers + `https://preview.colorlib.com/robots.txt` | 🔎 **not the theme's markup**: the host injects a two-element block as the **first** children of `<head>` — `<meta name="robots" content="noindex, nofollow">` and `<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">` — adds `x-robots-tag: noindex, nofollow`, a `link:` preconnect/dns-prefetch rela set and `speculation-rules: "/cdn-cgi/speculation"` to the response headers, and serves a host-wide `robots.txt` (`User-agent: *` / `Disallow: /`). The theme's own head starts *below* the pair (`<title>TITLE</title>`, `X-UA-Compatible`, viewport, charset are its own). **Nothing of this layer is reproduced in `apps/aisle`** — no `noindex`, no `robots.txt`, no `dns-prefetch`, no `cdnjs`   |
 | Responsive stylesheet               | `…/wedding2/01-homepage/css/responsive.css`                                                     | **HTTP 200**, 4,147 B                                                  |
 | Other CSS the page loads (not used) | `common-css/bootstrap.css`, `common-css/font-icon.css`, `common-css/fluidbox.min.css`           | referenced only; the icon font is the source's own                    |
+| Per-page stylesheets (**each page of this theme carries its own** — re-measured 2026-10-13, see §11.3) | `02-rsvp/css/styles.css` · `02-rsvp/css/responsive.css` · `03-regular-page/css/styles.css` · `03-regular-page/css/responsive.css` | **HTTP 200**, **10,030 B** · **3,437 B** · **10,036 B** · **3,597 B** — the token authority for the two invented bands (the landing `01-homepage/` pair is not: **22** + **23** of their rules are exclusive to them); only the landing page also links `common-css/fluidbox.min.css` and loads the `countdown` / `fluidbox` / Google-Maps scripts |
 | Screenshot                          | `https://colorlib.com/wp/wp-content/uploads/sites/2/wedding2-free-template.jpg`                 | **HTTP 200**, 113,016 B, `image/avif` (despite `.jpg`) → `ffmpeg` → PNG, **1200×946** (re-measured 2026-10-12 with `PIL.Image.open().size` + `ffprobe`, 3 fetches, sha256 `c43cec3ac0d4536f1b660ca12783d35f579e77fe84c395d6dc23a603d8a30759`; the 892 the first conversion recorded was a conversion defect, not the file's size) |
 | Live render                         | browser pass on the preview                                                                     | computed styles + `getBoundingClientRect`; **only viewport available was 780×437** |
 
@@ -594,4 +595,54 @@ confusing).
   Deltas the recreation owes: the app's own copy for the story/note/quote blocks,
   its own images, a correctly spelled author credit, and no repeated note block
   unless the layout needs the pair.
+
+  ### 11.3 The two bands' own stylesheets (token authority — read 2026-10-13)
+
+  Each page of this theme loads **its own** stylesheet directory; the landing
+  sheet the rest of these notes quote (`01-homepage/css/styles.css`) carries
+  **neither** band. A band built from the landing numbers is therefore measurably
+  wrong, so both invented destinations take their geometry from these sheets:
+
+  | Band | Its own stylesheet (`curl -sS`, 2026-10-13) | Rules exclusive to it (vs the landing sheet) | Representative rule |
+  | --- | --- | --- | --- |
+  | RSVP (`02-rsvp.html`) | `02-rsvp/css/styles.css` **HTTP 200**, **10,030 B** + `02-rsvp/css/responsive.css` **3,437 B** | **22** | `.contact-area .contact-form{padding: 50px 40px; border-radius: 5px; box-shadow: 1px 15px 40px rgba(0,0,0,.3); background: #fff;}` |
+  | "The Wedding" (`03-regular-page.html`) | `03-regular-page/css/styles.css` **HTTP 200**, **10,036 B** + `03-regular-page/css/responsive.css` **3,597 B** | **23** | `.regular-area .content{padding: 40px 70px; box-shadow: 2px 10px 20px rgba(0,0,0,.2); background: #fff;}` |
+
+  RSVP card grammar (`02-rsvp/css/styles.css`): `.contact-area .contact-form`
+  (`padding: 50px 40px`, `border-radius: 5px`, `box-shadow: 1px 15px 40px
+  rgba(0,0,0,.3)`, `background: #fff`), `.contact-form input, .contact-form
+  select` (`line-height: 45px; height: 45px; padding: 0 15px`),
+  `.contact-form .btn` (`padding: 0 30px; line-height: 43px; height: 45px;
+  margin-top: 10px; border-radius: 2px`), `.contact-area:after` (`opacity: .8`
+  over `url(../../images/Background_Circle.png)`), `.contact-area .phone` /
+  `.email` (`margin: 10px 0; color: #E45F74` — the landing sheet's `2em` phone
+  size is *not* repeated) and `.contact-form .pre-title` (`color: #E45F74`).
+
+  Text-band grammar (`03-regular-page/css/styles.css`): `.regular-area`
+  (`padding: 0 0 100px 0; margin-top: -50px; z-index: 10`),
+  `.regular-area .content` (`padding: 40px 70px`, `box-shadow: 2px 10px 20px
+  rgba(0,0,0,.2)`, white), `.content .margin-top-btm` (`margin: 20px 0`),
+  `.content .img-wrapper` (`margin: 30px 0`), `.content .quoto-area`
+  (`padding-left: 50px`) with `.quoto` (`font-size: 2em`) and its
+  `rotate(180deg)` `#E45F74` glyph, `.content .quoto-area .name`
+  (`color: #666`), and `.content .braidmaids-name li:before` (a `10px × 10px`
+  `border-radius: 10px` bullet, `border: 1px solid #888`).
+
+  Per-page deviations from the landing ladder (both sheets): `h1
+  { font-size: 5.5em }` vs landing `5em`, `h2 { font-size: 3em }` vs `3.5em`,
+  `.section .heading { padding-bottom: 30px }` vs `40px`, `header { top: 15px }`
+  with a `rgba(255,255,255,.1)` hairline vs `20px` / `rgba(255,255,255,.2)`,
+  `.main-slider { height: 500px; background-image:
+  url(../../images/counter-1-1600x600.jpg) }` vs `100vh` /
+  `slider-1-1600x900.jpg`. New palette/radius literals the landing sheet does
+  not carry: `#666`, `#888` (both regular page) and radius `5px` (RSVP card);
+  `10px` (the bullet) is the regular page's other new radius.
+
+  Delivery deltas (the treatment `apps/aisle` owes): the app ships **one**
+  bundle, so all of the above becomes Tailwind tokens/utilities in
+  `src/index.css` + section components — no `02-rsvp/`, `03-regular-page/` or
+  `common-css/` file, no `fluidbox.min.css`, no `countdown`, no `fluidbox` and
+  no Google-Maps script (the two inner pages load none of those three, and only
+  the landing page does); the `Background_Circle.png` pattern becomes an own
+  CSS/SVG ring.
 

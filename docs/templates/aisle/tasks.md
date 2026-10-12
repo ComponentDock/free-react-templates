@@ -282,7 +282,8 @@ paragraph, the address, the phone number, its Google Maps key or the string
 - [ ] `npm run verify:app aisle` green (typecheck + lint + knip + fallow + 100 %
       coverage tests + build); paste the `scripts/verify-app.sh` output in the PR
 - [ ] Build the two invented destinations from the source's own inner pages
-      (both live, `curl -sS` basis, read 2026-10-12): the **RSVP band** from
+      (both live, `curl -sS` basis, read 2026-10-12; their **own stylesheets**
+      read 2026-10-13): the **RSVP band** from
       `02-rsvp.html` (9,789 B — RSVP kicker + "Be Our Guest" heading + the
       contact split whose right column is the "Are you getting?" / "RSVP HERE!"
       form with Full Name, Email, a Guest select 00–04 and an Event select) and
@@ -292,6 +293,21 @@ paragraph, the address, the phone number, its Google Maps key or the string
       real submit control, distinct select `name`s and unique option values; do
       not copy the source's misspelled author credit, its duplicated
       `name="option"` selects or its `TITLE` placeholder
+- [ ] Take each invented band's **tokens from its own page's stylesheet**, not
+      from the landing sheet: `02-rsvp/css/styles.css` (10,030 B) carries the
+      RSVP card's `padding: 50px 40px`, `border-radius: 5px`,
+      `1px 15px 40px rgba(0,0,0,.3)` shadow and 45 px controls with a
+      `border-radius: 2px` submit; `03-regular-page/css/styles.css` (10,036 B)
+      carries the text band's `padding: 40px 70px`, `2px 10px 20px
+      rgba(0,0,0,.2)` shadow, `2em` pull quote and the `10px` `#888` bullet —
+      22 and 23 rules the landing `01-homepage/css/styles.css` does not have.
+      Both sheets also deviate from the landing ladder (`h1 5.5em` vs `5em`,
+      `h2 3em` vs `3.5em`, `.section .heading` 30 px vs 40 px, `header
+      top: 15px` vs `20px`, `.main-slider` 500 px vs `100vh`): honour them or
+      normalise them deliberately and say which in the PR. Still ship **one**
+      CSS bundle (no `02-rsvp/`, `03-regular-page/` or `common-css/` file), and
+      note that neither inner page loads `fluidbox`, `countdown` or the map
+      script
 - [ ] PR description: source template + slug, preview URL, tokens used, and what
       differs (new name, own placeholders, own pattern/map, no analytics)
 - [ ] After merge: `[~]`→`[x]` on TEMPLATES.md line **3107** with the surge URL

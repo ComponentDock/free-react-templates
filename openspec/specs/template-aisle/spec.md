@@ -37,6 +37,21 @@ the source name, its copy verbatim or its typos.
   `common-css/bootstrap.css`, `common-css/font-icon.css` (the source's icon
   font), `common-css/fluidbox.min.css` (gallery lightbox). The live preview is
   the primary reference; **no fallback was needed**.
+- **Per-page stylesheets — each page of this theme carries its OWN**
+  (re-measured 2026-10-13, `curl -sS` basis; every page is a real page of the
+  theme, not a variant of the landing page): `02-rsvp.html` links
+  `02-rsvp/css/styles.css` (HTTP 200, **10,030 B**) +
+  `02-rsvp/css/responsive.css` (HTTP 200, **3,437 B**) and
+  `03-regular-page.html` links `03-regular-page/css/styles.css` (HTTP 200,
+  **10,036 B**) + `03-regular-page/css/responsive.css` (HTTP 200,
+  **3,597 B**) — each in place of the landing page's `01-homepage/` pair. All
+  three pages share `common-css/bootstrap.css` + `common-css/font-icon.css`;
+  only the landing page links `common-css/fluidbox.min.css` and loads
+  `common-js/jquery.countdown.min.js`, `common-js/jquery.fluidbox.min.js` and
+  the Google-Maps script (the two inner pages load neither). So the landing
+  sheet is **not** the token authority for the two bands the nav points at —
+  the per-page sheets are (their rules are in `## Design reference` below and
+  in `docs/templates/aisle/design-notes.md` §11).
 - **Screenshot:**
   https://colorlib.com/wp/wp-content/uploads/sites/2/wedding2-free-template.jpg
   (HTTP 200, **113,016 B**, served as **AVIF** → decoded to PNG with
@@ -333,6 +348,41 @@ the source name, its copy verbatim or its typos.
     **Shooting Flowers and Bouquets**, an `h3` pull quote ("Love recognizes no
     barriers…") credited through an `h5`, and `h4` **Quick Note About the Gifts**
     twice — then a `section.quoto-area` and the newsletter footer.
+  - **Their own stylesheets are the token authority for those two bands**
+    (re-measured 2026-10-13; the landing sheet `01-homepage/css/styles.css`
+    carries neither band — 0 of these rules): `02-rsvp/css/styles.css`
+    (**10,030 B**) holds the whole RSVP card grammar —
+    `.contact-area .contact-form { padding: 50px 40px; border-radius: 5px;
+    box-shadow: 1px 15px 40px rgba(0,0,0,.3); background: #fff }`,
+    `.contact-form input, .contact-form select { line-height: 45px;
+    height: 45px; padding: 0 15px }`, `.contact-form .btn { padding: 0 30px;
+    line-height: 43px; height: 45px; margin-top: 10px; border-radius: 2px }`,
+    `.contact-area:after { opacity: .8; background:
+    url(../../images/Background_Circle.png) }`, `.contact-area .phone` /
+    `.email { margin: 10px 0; color: #E45F74 }` (the landing sheet's
+    2 em phone size is *not* repeated here) — **22 rules the landing sheet
+    lacks**; `03-regular-page/css/styles.css` (**10,036 B**) holds the text
+    band's shell — `.regular-area { padding: 0 0 100px 0; margin-top: -50px;
+    position: relative; z-index: 10 }`, `.regular-area .content
+    { padding: 40px 70px; box-shadow: 2px 10px 20px rgba(0,0,0,.2);
+    background: #fff }`, `.content .quoto-area { padding-left: 50px }` with
+    `.quoto { font-size: 2em }` and its `rotate(180deg)` rose quote glyph,
+    `.content .quoto-area .name { margin-top: 20px; color: #666 }`,
+    `.content .braidmaids-name li:before { 10px bullet, border: 1px solid #888 }`,
+    `.content .margin-top-btm { margin: 20px 0 }`, `.content .img-wrapper
+    { margin: 30px 0 }` — **23 rules the landing sheet lacks**.
+  - **Both per-page sheets also deviate from the landing ladder** (so a band
+    built from the landing sheet's numbers is measurably wrong): `h1
+    { font-size: 5.5em }` vs the landing `5em`, `h2 { font-size: 3em }` vs
+    `3.5em`, `.section .heading { padding-bottom: 30px }` vs `40px`,
+    `header { top: 15px }` with a `rgba(255,255,255,.1)` hairline vs `20px` /
+    `.2`, and `.main-slider { height: 500px; background-image:
+    url(../../images/counter-1-1600x600.jpg) }` vs the landing `100vh` /
+    `slider-1-1600x900.jpg`. The RSVP card introduces `border-radius: 5px`; the
+    regular page's bullet introduces `border-radius: 10px` and the two greys
+    **`#666`** (pull-quote credit) and **`#888`** (bullet border), which the
+    landing sheet's palette does not carry. Each page's own `responsive.css`
+    carries its own breakpoint overrides on top of the landing ladder.
   - **Source defects that must NOT be reproduced:** the RSVP form gives *both*
     selects the same `name="option"` and repeats `value="3"` across its options,
     and it carries **no submit control** at all; the regular page's author credit
@@ -663,6 +713,29 @@ the source name, its copy verbatim or its typos.
 - **And** the source's misspelled author credit and its placeholder title are
   not reproduced
 
+#### Scenario: Both invented destinations take their tokens from their own page's stylesheet
+
+- **Given** the live theme serves a **per-page stylesheet** for each destination
+  (`02-rsvp/css/styles.css` 10,030 B + `02-rsvp/css/responsive.css`,
+  `03-regular-page/css/styles.css` 10,036 B +
+  `03-regular-page/css/responsive.css` — none of them loaded by the landing
+  page, whose own `01-homepage/css/styles.css` carries neither band)
+- **When** the RSVP band and the "The Wedding" band render
+- **Then** their geometry comes from those per-page sheets and not from the
+  landing sheet — the RSVP card's `padding: 50px 40px`, `border-radius: 5px`
+  and `1px 15px 40px rgba(0,0,0,.3)` shadow with 45 px controls and a
+  `border-radius: 2px` submit, and the text band's `padding: 40px 70px` white
+  card with its `2px 10px 20px rgba(0,0,0,.2)` shadow, `2em` pull quote and
+  `10px` `#888` bullet before each list row
+- **And** the per-page ladder deviations are either honoured (`h1 5.5em`,
+  `h2 3em`, `.section .heading { padding-bottom: 30px }`,
+  `header { top: 15px }` with its `rgba(255,255,255,.1)` hairline) or
+  deliberately normalised onto the app's single rhythm — and whichever way, the
+  choice is recorded in the PR rather than taken silently from the landing sheet
+- **And** the app ships **one** bundled stylesheet: no per-page CSS file, no
+  copy of `02-rsvp/`, `03-regular-page/` or `common-css/`, no `fluidbox`, no
+  `countdown` and no map script (the two inner pages load none of the three)
+
 ## Fidelity rules
 
 - Match section structure and order 1:1 (header → hero → story → countdown →
@@ -700,6 +773,19 @@ the source name, its copy verbatim or its typos.
       `https://www.componentdock.com/`
 - [ ] `vite.config.ts` registers `injectUiSource()`; shared UI comes from
       `packages/ui` (`Card`/`Button`/`ButtonLink`/`cn`) before new primitives
+- [ ] The RSVP band's card geometry matches `02-rsvp/css/styles.css`
+      (`padding: 50px 40px`, `border-radius: 5px`, `box-shadow:
+      1px 15px 40px rgba(0,0,0,.3)`, 45 px controls, `border-radius: 2px`
+      submit) and the "The Wedding" band matches
+      `03-regular-page/css/styles.css` (`padding: 40px 70px`, `box-shadow:
+      2px 10px 20px rgba(0,0,0,.2)`, `2em` quote, `10px` `#888` bullet) — the
+      landing sheet `01-homepage/css/styles.css` carries neither band's rules
+      (22 and 23 rules respectively are exclusive to the per-page sheets)
+- [ ] The app ships exactly **one** CSS bundle: no `02-rsvp/`,
+      `03-regular-page/`, `common-css/`, `fluidbox`, `countdown` or
+      `maps.googleapis.com` file/string anywhere in `apps/aisle`, and the two
+      greys `#666`/`#888` and the `5px`/`10px` radii appear only as Tailwind
+      tokens/utilities if the app needs them
 - [ ] Fonts loaded via `<link>`: `Playball:wght@400` + `Bitter:wght@400;500`
       (no source font files, no icon font)
 - [ ] Document head is the app's own and excludes the preview host's layer
