@@ -3066,7 +3066,7 @@
 - [x] **Raptor** — [colorlib](https://colorlib.com/wp/template/raptor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/raptor-free-template.jpg) · [soar](https://soar.free.componentdock.com)
 - [x] **Server** — [colorlib](https://colorlib.com/wp/template/server/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/server-free-template.jpg) · [rackline](https://rackline.free.componentdock.com)
 - [x] **Webhost** — [colorlib](https://colorlib.com/wp/template/webhost/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webhost-free-template-1.jpg) · [netrise](https://netrise.free.componentdock.com)
-- [ ] **Webhostingservice** — [colorlib](https://colorlib.com/wp/template/webhostingservice/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webhostingservice-free-template.jpg)
+- [~] **Webhostingservice** — [colorlib](https://colorlib.com/wp/template/webhostingservice/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/webhostingservice-free-template.jpg)
 
 ## Website Menus (20)
 
