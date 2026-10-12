@@ -43,6 +43,7 @@ stylesheet `css/style.css`, cross-checked against the TEMPLATES.md screenshot.
 ## Structure (source document order)
 
 ```
+#preloder > .loader                (full-screen white first-paint overlay, 40 px ring, fades 200 ms after load)
 header.header                       (centred logo + centred nav + search)
 section.hero.spad.set-bg            (bg photo hero-bg.jpg + scrim)
 section.story.spad                  ("Save The Date" / "Our Story Wedding" + 2 circular portraits + centre photo)
@@ -56,6 +57,18 @@ footer.footer.spad                  (closing heading + logo + social + copyright
 
 ## Section-by-section fidelity notes
 
+0. **Preloader overlay (pre-section).** The source's first body element is
+   `<div id="preloder"><div class="loader"></div></div>` — the id carries the
+   source's own spelling. `style.css`: `#preloder{position:fixed;width:100%;
+   height:100%;top:0;left:0;z-index:999999;background:#ffffff}` and
+   `.loader{width:40px;height:40px;position:absolute;top:50%;left:50%;
+   margin-top:-13px;margin-left:-13px;border-radius:60px;animation:loader .8s
+   linear infinite}` with `@keyframes loader` alternating a `4px solid #f44336`
+   border (transparent left) through `#673ab7` at 50 %. `js/main.js` (3,723 B)
+   runs it on `$(window).on('load')`: `$(".loader").fadeOut();
+   $("#preloder").delay(200).fadeOut("slow")`. Reproduce as a `Preloader`
+   component (the repo already ships this pattern — e.g. `apps/clinica`,
+   `apps/cassini`) mounted above the header.
 1. **Header.** Centred stack: ring mark → wordmark → centred nav row. Nav items
    Home · Wedding Plans · Photo Album · Blog · Pages (dropdown: Story, Gallery,
    Rsvp, Guestbook, Blog Details) + a search toggle. The current/active item is
@@ -120,6 +133,8 @@ footer.footer.spad                  (closing heading + logo + social + copyright
 | Surface | **`#ffffff`** | page + card backgrounds |
 | Card shadow | **`rgba(53, 53, 53, 0.06)`** (`0px 5px 30px` / `0px 5px 35px`) | forms + time cards |
 | Gallery overlay | **`rgba(53, 53, 53, 0.7)`** | `gallery__text` hover overlay |
+| Preloader overlay | **`#ffffff`** fill, `z-index:999999` | `#preloder` (first paint) |
+| Preloader ring | **`#f44336`** → **`#673ab7`** → `#f44336`, `4px` solid, 40 × 40 px, `0.8s linear infinite` | `.loader` + `@keyframes loader` |
 | Heading font | **`"Arima Madurai", cursive`** | wordmark, H2s, hero names |
 | Body font | **`"Work Sans", sans-serif`** | body, nav, buttons, form fields |
 | Buttons | filled `#d48f4c`/`#fff`, `padding:14px 35px 10px`, `font-weight:700`; outline `1px solid #d48f4c`, ink `#353535` | all CTAs |

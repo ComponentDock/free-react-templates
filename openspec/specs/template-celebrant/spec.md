@@ -79,6 +79,18 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
   image/text rows) → "Marriages I Officiate" carousel on a mint panel → six
   icon feature cards → "Frequently Ask Questions" accordion (7 items) → dark
   `#333333` footer**.
+  - **First paint (overlayer + loader):** the source's first two body elements
+    are `<div id="overlayer"></div><div class="loader"><img
+    src="images/loader.gif" alt="Loader"></div>` — both **before** `.site-wrap`.
+    `style.css`: `#overlayer{width:100%;height:100%;position:fixed;
+    z-index:7100;background:#fff;top:0;left:0;right:0;bottom:0}` and
+    `.loader{z-index:7700;position:fixed;top:50%;left:50%;
+    transform:translate(-50%,-50%)}`. `js/main.js` (7,490 B) fades **both** out
+    200 ms after DOM ready, inside `jQuery(document).ready(...)`:
+    `$(".loader").delay(200).fadeOut("slow"); $("#overlayer").delay(200).fadeOut("slow");`
+    — so the page is a white cover with a centred animated GIF that leaves
+    ~200 ms after the DOM is ready. Our recreation ships this as a `Preloader`
+    component above the header.
   - **Header (`.site-navbar.py-4.js-sticky-header`, Bootstrap grid inside a
     `.container`):** a **white bar** (the source makes it sticky via
     `js-sticky-header`; `.sticky-wrapper.is-sticky .site-navbar` sets
@@ -207,6 +219,26 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
 | Fonts | **"Amiri", serif** (h1, h2, h3, h5 — incl. the italic section titles) · **"Quicksand", sans-serif** (body, nav, logo `1.2rem`/900 uppercase, footer, buttons) | verified on Google Fonts |
 
 ## Requirements
+
+### Requirement: First-paint overlay and loader
+
+The system SHALL reproduce the source's first-paint cover (`#overlayer` plus
+`.loader`), which the source's own script fades out 200 ms after DOM ready, so
+that first paint matches the reference.
+
+#### Scenario: Preloader overlay
+
+- **GIVEN** the Celebrant app is rendered
+- **WHEN** the page first paints
+- **THEN** a full-screen **`#fff`** cover SHALL fill the viewport
+  (`position:fixed`, inset `0`, `z-index:7100`)
+- **AND** a centred loader mark SHALL sit above it at `z-index:7700`, in the top
+  half of the viewport, transformed `translate(-50%,-50%)` from `top:50%` /
+  `left:50%`
+- **AND** on DOM ready both SHALL fade out **200 ms later** (the source's
+  `$(".loader").delay(200).fadeOut("slow"); $("#overlayer").delay(200).fadeOut("slow")`)
+- **AND** both SHALL be `aria-hidden`, hold no focusable element, and under
+  `prefers-reduced-motion: reduce` SHALL hide without the fade
 
 ### Requirement: Sticky header and navigation
 
@@ -435,6 +467,10 @@ contentinfo landmarks.
       coverage tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)
 - [ ] `npm run spec:validate` passes
+- [ ] Preloader: full-screen `#fff` `#overlayer` (`z-index:7100`) with a centred
+      loader mark above it (`z-index:7700`, `top/left:50%`,
+      `translate(-50%,-50%)`), both fading out 200 ms after DOM ready,
+      `aria-hidden`, reduced-motion aware
 - [ ] Header: white sticky bar, **Celebrant** wordmark (Quicksand `1.2rem`/900
       uppercase `#000`), six links `rgba(0,0,0,0.5)` with a `#000` hover, active
       link `#000` + **2 px `#cae8d5` underline**, `#6c757d` "Get Quote" pill

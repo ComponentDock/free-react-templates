@@ -59,6 +59,17 @@ espousal · matrimony · **celebrant**). Never reuse the source slug
 - [ ] Sanity pass at 320 / 768 / 1440 px for horizontal overflow (the source's
       `100vh` hero + `overflow: hidden` band is the risky part)
 
+## Preloader (`Preloader`) (TDD)
+
+- [ ] Red: asserts a full-screen `#fff` cover on first paint with an
+      `aria-hidden`, `role`-free wrapper and a centred loader mark above it
+- [ ] Green: `<Preloader />` — `fixed inset-0 z-[7100] bg-white` cover plus a
+      centred mark at `z-[7700] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`
+      (an inline animated SVG stands in for the source's `images/loader.gif`),
+      both removed **200 ms after DOM ready**
+- [ ] Guard: assert neither layer is focusable and that `prefers-reduced-motion`
+      collapses the fade to an instant hide
+
 ## Header (`Header`) (TDD)
 
 - [ ] Red: asserts a **white sticky** bar with the **Celebrant** wordmark

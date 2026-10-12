@@ -48,6 +48,21 @@ React 19 + Tailwind CSS 4 + TypeScript.
   love story → wedding info cards (+ countdown strip pulled up `-73px`) →
   photo gallery → red gift band → RSVP form card → registry-gift logo strip →
   grayscale map band → dark patterned footer**.
+  - **First paint (preloader overlay):** the source's first body element is
+    `<div id="preloader-active">` → `.preloader` → `.preloader-inner` →
+    `.preloader-circle` + `.preloader-img.pere-text` (the source logo `<img>`,
+    `max-width:55px`). `style.css`: `.preloader{background-color:#f7f7f7;
+    width:100%;height:100%;position:fixed;top:0;left:0;right:0;bottom:0;
+    z-index:999999;transition:.6s}` and `.preloader .preloader-circle{width:
+    100px;height:100px;border-width:1px;border-top-color:#ff2828;
+    border-{bottom,left,right}-color:transparent;border-radius:50%;
+    background-color:#ffffff;box-shadow:0 1px 5px 0 rgba(35,181,185,0.15);
+    animation:zoom 2000ms infinite ease}` with `@keyframes zoom` rotating
+    `0 → 360deg`. `assets/js/main.js` (7,712 B) runs on `$(window).on('load')`:
+    `$('#preloader-active').delay(450).fadeOut('slow')` plus
+    `$('body').delay(450).css({'overflow':'visible'})` (inert — nothing ever
+    sets the body's overflow to `hidden`). Our recreation ships this as a
+    `Preloader` component above the header.
   - **Header (`.main-header`):** a **white fixed bar** (`position: fixed`,
     `padding: 15px 0`, shadow `0 10px 15px rgba(25,25,25,0.1)`), NOT
     transparent over the hero — the source ships it solid. Left: the "WED"
@@ -184,6 +199,30 @@ React 19 + Tailwind CSS 4 + TypeScript.
 | Section rhythm | Wedding Info `195px 0 170px` · gift `120px 0 130px` · registry `0 0 150px` · footer `135px 0 74px`; hero height 980 px | paddings |
 
 ## Requirements
+
+### Requirement: First-paint preloader overlay
+
+The system SHALL reproduce the source's first-paint preloader
+(`#preloader-active`), which the source's own script fades out 450 ms after
+`window.load`, so that first paint matches the reference.
+
+#### Scenario: Preloader overlay
+
+- **GIVEN** the Matrimony app is rendered
+- **WHEN** the page first paints
+- **THEN** a full-screen **`#f7f7f7`** cover SHALL fill the viewport
+  (`position:fixed`, inset `0`, `z-index:999999`)
+- **AND** it SHALL centre a **100 px white circle** (radius `50%`,
+  `background:#fff`, `1px` solid border with only the **top** border coloured
+  **`#ff2828`** and the rest transparent, shadow `0 1px 5px 0
+  rgba(35,181,185,0.15)`) rotating `0 → 360deg` over a `2000ms … infinite`
+  cycle (`@keyframes zoom`)
+- **AND** the circle SHALL hold the logo mark (source `<img>`, `max-width:55px`)
+  vertically centred in it
+- **AND** on `window.load` the cover SHALL fade out **450 ms later** (the
+  source's `$('#preloader-active').delay(450).fadeOut('slow')`)
+- **AND** the cover SHALL be `aria-hidden`, hold no focusable element, and
+  under `prefers-reduced-motion: reduce` SHALL hide without the rotation/fade
 
 ### Requirement: Fixed header and navigation
 
@@ -472,6 +511,10 @@ contentinfo landmarks.
       coverage tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)
 - [ ] `npm run spec:validate` passes
+- [ ] Preloader: full-screen `#f7f7f7` cover (`z-index:999999`) with a 100 px
+      white circle carrying the `#ff2828` top-border arc (`zoom` 2000 ms infinite
+      rotation) + the logo mark inside it, fading out 450 ms after load,
+      `aria-hidden`, reduced-motion aware
 - [ ] Header: **white fixed bar** (`padding: 15px 0`, shadow
       `0 10px 15px rgba(25,25,25,0.1)`), wordmark + red laurel mark, six
       uppercase links (`#3c3e48`, hover `#ff2828`), BLOG dropdown with

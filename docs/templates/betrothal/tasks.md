@@ -72,6 +72,17 @@ Design notes: `docs/templates/betrothal/design-notes.md`.
       divider element; centred by default, `align="left"` variant for the
       Story/RSVP text blocks
 
+## Preloader (`Preloader`) (TDD)
+
+- [ ] Red: asserts a full-screen overlay is present on first paint with a
+      `role`-free, `aria-hidden` wrapper and a 40 px ring element
+- [ ] Green: `<Preloader />` — `fixed inset-0 z-[999999] bg-white` wrapper +
+      40 px ring (`border-4 border-[#f44336] border-l-transparent rounded-full`
+      animating through `#673ab7` over `0.8s linear infinite`), hidden via
+      `window` `load` **plus a 200 ms delay** (the source's `delay(200)`)
+- [ ] Guard: assert the overlay is `aria-hidden`, holds no focusable node, and
+      that `prefers-reduced-motion` collapses the fade to an instant hide
+
 ## Header (`Header`) (TDD)
 
 - [ ] Red: header asserts a centred layout — ring mark + wordmark "Betrothal"

@@ -63,8 +63,14 @@ a mint "Send" pill.
 
 ## Page skeleton (source DOM order → our section order)
 
-Source (single `<body>`, all inside `<div class="site-wrap">`):
+Source (single `<body>`; `div#overlayer` + `div.loader` precede `.site-wrap`):
 
+0. `div#overlayer` + `div.loader > img[src=images/loader.gif]` — the first-paint
+   cover: a full-screen `#fff` sheet (`position:fixed`, `z-index:7100`) with the
+   loader mark centred above it (`position:fixed`, `z-index:7700`, `top:50%`,
+   `left:50%`, `translate(-50%,-50%)`); `js/main.js` fades **both** out 200 ms
+   after `jQuery(document).ready` (`$(".loader").delay(200).fadeOut("slow");
+   $("#overlayer").delay(200).fadeOut("slow")`)
 1. `header.site-navbar.py-4.js-sticky-header` — logo + `nav.site-navigation`
    (Home · About · Services · FAQ · Blog · Contact · "Get Quote" pill) +
    `a.site-menu-toggle` for mobile

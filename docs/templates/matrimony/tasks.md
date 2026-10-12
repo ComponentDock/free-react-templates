@@ -81,6 +81,17 @@ string `Colorlib`, or any copy verbatim.
 - [ ] Green: reusable heading component + inline-SVG flourish variants (no
       ColorLib image copied)
 
+## Preloader (`Preloader`) (TDD)
+
+- [ ] Red: asserts a full-screen cover on first paint — `aria-hidden`, `role`-free
+      wrapper + a 100 px disc carrying the `#ff2828` top-border arc and the logo mark
+- [ ] Green: `<Preloader />` — `fixed inset-0 z-[999999] bg-[#f7f7f7]` wrapper, 100 px
+      `rounded-full bg-white border border-t-[#ff2828]` disc inside
+      `animate-[spin_2s_linear_infinite]`, logo mark (`max-width:55px` equivalent)
+      centred in the disc; hidden 450 ms after `load` (source `delay(450).fadeOut('slow')`)
+- [ ] Guard: assert the wrapper is `aria-hidden`, holds no focusable node, and that
+      `prefers-reduced-motion` stops the rotation and collapses the fade
+
 ## Header (`Header`) (TDD)
 
 - [ ] Red: asserts a **white fixed bar** (`padding: 15px 0`, shadow

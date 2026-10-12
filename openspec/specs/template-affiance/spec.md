@@ -41,6 +41,18 @@ React 19 + Tailwind CSS 4 + TypeScript.
   and every heading, a warm full-bleed couple hero under a dark scrim, and a
   **pink countdown band overlapping the hero's bottom edge**.
 - **Visual design (live render + screenshot, verified 1200 px):**
+  - **First paint (loader overlay):** before the header the source paints
+    `<div id="ftco-loader" class="show fullscreen">` — a **full-screen `#fff`
+    cover** (`#ftco-loader.fullscreen{width/height:100%;transform:none;
+    background-color:#fff;border-radius:0;box-shadow:none}`) holding an inline
+    **48 px SVG ring** (two `r=22`, `stroke-width:4` circles: `path-bg`
+    `#eeeeee` under the animated `path` **`#F96D00`**, spinning with
+    `loader-rotate 2s linear infinite` and `loader-dash 1.5s ease-in-out
+    infinite`). `js/main.js` (6,360 B) runs `var loader = function() { setTimeout(
+    function(){ if($('#ftco-loader').length > 0) { $('#ftco-loader').removeClass('show'); } }, 1); }; loader();`
+    — i.e. it drops the `.show` class 1 ms after the script runs, so the cover
+    leaves on the `opacity .4s ease-out` transition. Our recreation ships this
+    as a `Preloader` component above the header.
   - **Header:** a slim **transparent navbar floating over the hero** — a
     bold uppercase white wordmark "TWOHEARTS" at the left and eight uppercase
     white nav links at the right (Home · Groom & Bride · Our Story · Greetings ·
@@ -337,6 +349,30 @@ a copyright bar.
   `https://www.componentdock.com/` ("Component Dock") and show the computed
   current year
 
+### Requirement: First-paint loader overlay
+
+The system SHALL reproduce the source's first-paint loader cover
+(`#ftco-loader.show.fullscreen`), which the source's own script removes 1 ms
+after it runs, so that first paint matches the reference.
+
+#### Scenario: Loader overlay
+
+- **GIVEN** the Affiance app is rendered
+- **WHEN** the page first paints
+- **THEN** a full-screen **`#fff` cover** SHALL fill the viewport
+  (`position:fixed`, `width/height:100%`, `transform:none`, square corners,
+  no shadow)
+- **AND** it SHALL centre an **inline 48 px SVG ring** — a `4px` `#eeeeee`
+  track (`path-bg`, `r=22`) under a **`#F96D00`** arc (`path`, `r=22`,
+  `stroke-linecap:round`, `miterlimit:10`)
+- **AND** the ring SHALL animate (`2s linear infinite` rotation plus a
+  `1.5s ease-in-out infinite` dash sweep)
+- **AND** the cover SHALL be removed on mount (the source drops `.show` 1 ms
+  after its script runs) and leave on an **`opacity .4s ease-out`** transition
+  (`visibility` switching immediately)
+- **AND** the cover SHALL be `aria-hidden`, hold no focusable element, and
+  under `prefers-reduced-motion: reduce` SHALL leave without the fade
+
 ### Requirement: Page composition
 
 The system SHALL compose every section in a single page with banner, main and
@@ -360,6 +396,10 @@ contentinfo landmarks.
       tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)
 - [ ] `npm run spec:validate` passes
+- [ ] Preloader: full-screen `#fff` cover with a 48 px inline SVG ring
+      (`#eeeeee` track + `#F96D00` arc), `2s` rotation + `1.5s` dash animation,
+      removed on mount and leaving on an `opacity .4s ease-out` transition,
+      `aria-hidden`, reduced-motion aware
 - [ ] Header: transparent uppercase navbar over the hero, "AFFIANCE" wordmark +
       eight uppercase white links (Home · Groom & Bride · Our Story · Greetings ·
       Bridesmaid & Groomsmen · When & Where · RSVP · Gallery), keyboard-operable

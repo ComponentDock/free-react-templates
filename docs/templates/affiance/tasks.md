@@ -70,6 +70,18 @@ Design notes: `docs/templates/affiance/design-notes.md`.
 - [ ] Green: small **inline SVG** two-rings badge (hero) and a reusable heading
       component used by every band. **No ColorLib asset copied**
 
+## Preloader (`Preloader`) (TDD)
+
+- [ ] Red: asserts a full-screen cover is present on first paint with an
+      `aria-hidden`, `role`-free wrapper and an SVG ring carrying the `#F96D00`
+      arc over a `#eeeeee` track
+- [ ] Green: `<Preloader />` — `fixed inset-0 bg-white` wrapper + inline 48 px
+      SVG (two `r=22` circles, `strokeWidth 4`, round cap) animated with a `2s`
+      linear rotation and a `1.5s` dash sweep; cover removed on mount and leaves
+      on an `opacity .4s ease-out` transition
+- [ ] Guard: assert the wrapper is `aria-hidden`, holds no focusable node, and
+      that `prefers-reduced-motion` collapses the fade to an instant hide
+
 ## Header (`Header`) (TDD)
 
 - [ ] Red: asserts a transparent navbar floating over the hero — bold uppercase

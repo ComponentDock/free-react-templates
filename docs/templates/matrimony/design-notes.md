@@ -40,6 +40,7 @@ Everything below comes from the preview itself, not from imagination:
 
 | # | Source block | Our component | Notes |
 | --- | --- | --- | --- |
+| 0 | `#preloader-active > .preloader` | `Preloader.tsx` | full-screen `#f7f7f7` cover, 100 px white circle + logo mark, fades 450 ms after `load` |
 | 1 | `.main-header` (white, fixed) | `Header.tsx` | wordmark left, 6 uppercase links, BLOG submenu |
 | 2 | `.slider-area .single-slider` ×2 | `Hero.tsx` | owl-carousel with two identical slides → we ship one static slide |
 | 3 | love story block | `LoveStory.tsx` | panel + offset photo |
@@ -54,6 +55,33 @@ Everything below comes from the preview itself, not from imagination:
 | 12 | back-to-top (live render) | `BackToTop.tsx` | red circle bottom-right |
 
 ## Section-by-section fidelity notes
+
+### 0. Preloader overlay
+
+The source's first body element is
+`<div id="preloader-active"><div class="preloader d-flex align-items-center justify-content-center">`
+`<div class="preloader-inner position-relative"><div class="preloader-circle"></div>`
+`<div class="preloader-img pere-text"><img src="assets/img/logo/logo.png" alt=""></div></div></div></div>`.
+
+- `.preloader{background-color:#f7f7f7; width:100%; height:100%; position:fixed;
+  top:0; left:0; right:0; bottom:0; z-index:999999; transition:.6s; margin:0 auto}`
+- `.preloader .preloader-circle{width:100px; height:100px; border-style:solid;
+  border-width:1px; border-top-color:#ff2828; border-{bottom,left,right}-color:transparent;
+  border-radius:50%; background-color:#ffffff; box-shadow:0 1px 5px 0 rgba(35,181,185,0.15);
+  animation:zoom 2000ms infinite ease}` with `@keyframes zoom{0%{rotate(0deg)}100%{rotate(360deg)}}`
+  — a **1 px `#ff2828` arc** on an otherwise white disc, so the ring reads as a thin red sweep.
+- `.preloader .preloader-img{position:absolute; top:50%; left/right:0; margin:0 auto;
+  transform:translateY(-50%); padding-top:6px}` and `.preloader-img img{max-width:55px}` —
+  the logo sits inside the disc.
+- `.preloader .pere-text strong{font-weight:800; color:#dca73a; text-transform:uppercase}`
+  styles a `strong` the markup does **not** contain (dead rule — don't ship a gold caption).
+- `assets/js/main.js` (7,712 B): `$(window).on('load', function () { $('#preloader-active').delay(450).fadeOut('slow'); $('body').delay(450).css({'overflow':'visible'}); });`
+  The `overflow:'visible'` write is **inert** — nothing in the page ever sets the
+  body's overflow to `hidden` (no inline `body{overflow:hidden}` in the head).
+- React: ship the repo's existing `Preloader` pattern (`apps/clinica`, `apps/cassini`) —
+  `fixed inset-0 z-[999999] bg-[#f7f7f7]`, a 100 px white disc with a `1px` `#ff2828`
+  top-border arc (`animate-[spin_2s_linear_infinite]`) and the Matrimony mark inside it,
+  removed 450 ms after load, `aria-hidden`, reduced-motion aware.
 
 ### 1. Header
 
@@ -250,6 +278,8 @@ hero scrim           rgba(0,0,0,0.1)
 card shadow          0 0 9px rgba(131,93,248,0.07)  /  hover 0 10px 30px rgba(133,66,189,0.1)
 form-card shadow     0 0 86px rgba(0,0,0,0.06)
 header shadow        0 10px 15px rgba(25,25,25,0.1)
+preloader cover      #f7f7f7   .preloader (full-screen, z-index 999999)
+preloader arc        #ff2828   1px top border of the 100px white disc (@keyframes zoom)
 radii                30px pill buttons · 5px inputs
 fonts                "Playfair Display", serif · "Roboto", sans-serif · "Barlow", sans-serif
 ```

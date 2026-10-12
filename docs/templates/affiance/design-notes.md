@@ -52,11 +52,35 @@ display face is **Rochester** (script) over **Source Sans Pro** body.
 - **Footer:** `.ftco-footer { background:#d291bc; padding:7em 0; color:
   rgba(255,255,255,.9) }`; `.ftco-footer-widget h2 { color:#fff; font-size:20px;
   font-weight:700; text-transform:uppercase; margin-bottom:40px }`; links `#fff`.
+- **Loader cover:** `#ftco-loader { position: fixed; width: 96px; height: 96px;
+  left: 50%; top: 50%; transform: translate(-50%,-50%); background-color:
+  rgba(255,255,255,.9); box-shadow: 0px 24px 64px rgba(0,0,0,.24) }` plus the
+  fullscreen variant `#ftco-loader.fullscreen { padding: 0; left: 0; top: 0;
+  width: 100%; height: 100%; transform: none; background-color: #fff;
+  border-radius: 0; box-shadow: none }` — the source ships `class="show
+  fullscreen"`, so the **`#fff` full-bleed cover wins**. Ring: `#ftco-loader
+  .circular { animation: loader-rotate 2s linear infinite; left/top:
+  calc(50% - 24px) }`; `#ftco-loader .path { stroke-dasharray: 1,200;
+  animation: loader-dash 1.5s ease-in-out infinite; stroke-linecap: round }`.
+  The SVG's inline strokes are `#eeeeee` (`path-bg`) and **`#F96D00`** (`path`)
+  — the ring orange is the **only** place that hex appears in the theme.
 - **Buttons/inputs:** `.btn { border-radius: .25rem }`; `.form-control {
   border: 1px solid #ced4da; border-radius: .25rem }`.
 
 ## Section-by-section fidelity notes
 
+0. **Preloader overlay (pre-section)** — `#ftco-loader.show.fullscreen`, the
+   page's first element: a full-screen `#fff` cover holding an inline 48 px SVG
+   ring (two `r=22` `stroke-width:4` circles — `path-bg` `#eeeeee` under the
+   animated `path` **`#F96D00`**). Keyframes: `loader-rotate` (`100% →
+   rotate(360deg)`, `2s linear infinite`) and `loader-dash` (`stroke-dasharray
+   1,200 → 89,200` with `stroke-dashoffset 0 → -35px → -136px`, `1.5s
+   ease-in-out infinite`). `#ftco-loader.show{transition:opacity .4s ease-out,
+   visibility 0s linear 0s; visibility:visible; opacity:1}`. `js/main.js` runs
+   `loader()` immediately: a `setTimeout(…, 1)` that does
+   `$('#ftco-loader').removeClass('show')` — so the cover fades out ~1 ms after
+   hydration, not on `load`. Reproduce as a `Preloader` component (the repo
+   already ships this pattern — e.g. `apps/clinica`, `apps/cassini`).
 1. **Header** — transparent, floating over the hero. Bold uppercase white
    "TWOHEARTS" left; eight uppercase white links right. Anchors map to the
    section ids (`home`, `groom-bride`, `lovestory`, `greeting`, `people`,

@@ -41,6 +41,12 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   mostly white; the **gallery** and **RSVP** bands are background photos with a
   dark overlay. Cards/forms are white with a soft diffuse shadow. Buttons are
   **square (no radius)**, gold-filled or gold-outlined.
+- **First paint:** before any section the source paints a **full-screen white
+  overlay** (`#preloder` — the source's own spelling — holding a 40 px `.loader`
+  ring whose 4 px border alternates `#f44336` → `#673ab7` on a `0.8s linear
+  infinite` spin) and fades it out 200 ms after `window.load`
+  (`js/main.js`: `$(".loader").fadeOut(); $("#preloder").delay(200).fadeOut("slow")`).
+  Nothing else is visible on first paint.
 - **Section order (1:1):**
   1. **Header** (`header`, centred): ring/logo mark + wordmark; centred nav —
      Home, Wedding Plans, Photo Album, Blog, Pages (dropdown: Story, Gallery,
@@ -264,6 +270,27 @@ a social row and a copyright bar.
 - **AND** SHALL show a copyright bar with the computed current year
 - **AND** SHALL link `https://www.componentdock.com/` ("Component Dock")
 
+### Requirement: First-paint preloader overlay
+
+The system SHALL reproduce the source's first-paint overlay (`#preloder` in the
+source markup — its own spelling — wrapping a 40 px `.loader` ring), which the
+source's own script fades out on `window.load`, so that first paint matches the
+reference.
+
+#### Scenario: Preloader overlay
+
+- **GIVEN** the Betrothal app is rendered
+- **WHEN** the page first paints
+- **THEN** a full-screen overlay SHALL cover the viewport (`position:fixed`,
+  `width/height:100%`, `background:#fff`, `z-index:999999`)
+- **AND** it SHALL hold a **40 px round ring** (`border-radius:50%`,
+  `border:4px solid #f44336` with a transparent left border, animating over
+  `0.8s linear infinite` through `#673ab7` at 50 % and back to `#f44336`)
+- **AND** on `window.load` the ring SHALL hide and the overlay SHALL fade out
+  **200 ms later** (the source's `fadeOut()` + `delay(200).fadeOut("slow")`)
+- **AND** the overlay SHALL be `aria-hidden`, contain no focusable element, and
+  under `prefers-reduced-motion: reduce` SHALL hide without the fade
+
 ### Requirement: Page composition
 
 The system SHALL compose all sections in a single page with a banner landmark,
@@ -285,6 +312,9 @@ a main landmark and a contentinfo landmark.
       coverage tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)
 - [ ] `npm run spec:validate` passes
+- [ ] Preloader: full-screen `#fff` overlay (`z-index:999999`) with a 40 px ring
+      alternating `#f44336`/`#673ab7` (`0.8s` linear spin), fades out 200 ms after
+      load, `aria-hidden`, no focus trap, reduced-motion aware
 - [ ] Header: ring mark + "Betrothal" wordmark, centred nav (Home, Wedding
       Plans, Photo Album, Blog, Pages dropdown, search), active link ochre
       `#d48f4c` underlined, mobile menu with aria-expanded
