@@ -199,6 +199,32 @@ the source name, its copy verbatim or its typos.
   10. `footer.footer` — y 5,073, **605 px** (subscribe + social, four columns, copyright bar).
   11. `div#search-overlay.search-model` — fixed full-screen search modal.
   The `<main id="main">` landmark wraps items 3–9 (header and footer sit outside it).
+- **Responsive-format image layer (measured 2026-10-12, `curl -sS` basis) — a
+  FORMAT switch, not a resolution one:** the page holds **17 `<picture>` blocks**
+  — 14 wrapping the line-art icons (the hero ornament `img/icon/hi.*`, both
+  `ti.*` title squiggles, the six `si-N.*` service icons, the four `ci-N.*`
+  counter icons) and **3** wrapping the blog cards (`img/blog/latest-1..3.*`) —
+  each one a `<source srcset="img/…avif" type="image/avif">` over a raster
+  fallback `<img src="img/…png|jpg" width=… height=… alt="" loading=… decoding=…>`
+  (the hero's ornament is the eager one: `fetchpriority="high" decoding="sync"`,
+  no `loading`). The `srcset` values are **bare** — no `600w` width descriptor,
+  no `2x` density descriptor, **no `sizes` attribute and no `media=` art
+  direction anywhere on the page**; the format is carried by `type=`, and every
+  image is served twice (`.avif` + raster). Eight further bands — the hero, the
+  six feature tiles and the counter band — carry the same switch in an **inline
+  `style` attribute** on the `.set-bg` element:
+  `background-image: image-set(url('img/x.avif') type('image/avif'), url('img/x.png') type('image/png'))`
+  (again `type()` descriptors, never `1x`/`2x`), and `css/style.min.css`
+  declares three more for decorative PNG ornaments
+  (`.request.request--services .request__form:before` / `:after`,
+  `.pricing__item:after`), each preceded by a plain `background:url(…png)`
+  fallback. The head also preloads the AVIF hero
+  (`<link rel="preload" as="image" href="img/hero.avif" type="image/avif" fetchpriority="high">`).
+  **The layer is source-only and is NOT reproduced:** every photograph becomes a
+  seeded `picsum.photos` placeholder and every line-art icon a `lucide-react`
+  glyph, so each image renders as a single element with one URL — no `<picture>`,
+  `srcset`, `type=` or `image-set()` in app code and no request to a ColorLib
+  host (`img/hero.avif` is never fetched).
 
 ## Design tokens
 
@@ -488,6 +514,21 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
 - **And** the right side lists Terms & Use and Privacy Policy as real in-page
   anchors
 
+### Feature: Image delivery and the source-only format layer
+
+#### Scenario: The recreation flattens the source's `<picture>` / `image-set` layer
+
+- **Given** the source wraps **17** images in `<picture><source srcset="img/…avif" type="image/avif">` pairs and paints **8** bands with an inline `image-set(… type(…))` format switch
+- **When** a photograph or a line-art icon renders
+- **Then** it is a single element with one URL (photograph: seeded `picsum.photos` placeholder; icon: `lucide-react` component) — the recreation ships **no** `<picture>`, `<source>`, `srcset`, `sizes` or `image-set()` markup, because a single placeholder URL cannot carry a format layer
+- **And** no app file requests a `.avif` asset or a `preview.colorlib.com` URL, and nothing preloads one
+
+#### Scenario: Photographs keep the source's delivery attributes
+
+- **Given** the source's fallback `<img>` elements carry `width`/`height` (e.g. the blog card at `360×240`), `alt=""` (they are decorative) and `loading="lazy" decoding="async"`, while the hero ornament is eager (`fetchpriority="high" decoding="sync"`, no `loading`)
+- **When** the recreation renders the hero, service/counter icons and blog imagery
+- **Then** below-the-fold images keep explicit `width`/`height` plus `loading="lazy"`, the hero image stays eager, and decorative images use an empty `alt` so the layout does not shift
+
 ### Feature: Shared shell, accessibility and reuse
 
 #### Scenario: The app uses the monorepo shell correctly
@@ -543,9 +584,13 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
   marks are never reused.
 - Never copy assets — replace every image with a deterministic `picsum.photos`
   seed, every icon with `lucide-react`, and every self-hosted font with a Google
-  Fonts `<link>` (Cormorant Garamond + Raleway).
+  Fonts `<link>` (Cormorant Garamond + Raleway). The source's **format layer**
+  (17 `<picture>`/`<source type="image/avif">` pairs + 8 inline
+  `image-set(… type(…))` bands + the `<link rel="preload" as="image">` hero
+  hint) is source-only infrastructure and is **flattened**, never reproduced.
 - Document deltas (curved-hero implementation, click/keyboard dropdown, focusable
-  tiles, form validation, Component Dock footer credit) in the design notes.
+  tiles, form validation, Component Dock footer credit, the flattened format
+  layer) in the design notes.
 
 ## Verification checklist
 
@@ -577,6 +622,10 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
       **Component Dock** credit link.
 - [ ] No ColorLib reference anywhere in `apps/reverie`; assets are placeholders;
       icons are lucide; fonts via Google Fonts.
+- [ ] The source's format layer is flattened: no `<picture>`/`<source>`/`srcset`/
+      `sizes`/`image-set()` in app code, no `.avif` request, no image preload hint;
+      below-the-fold images keep `width`/`height` + `loading="lazy"`, the hero image
+      stays eager, decorative images use `alt=""`.
 - [ ] `public/CNAME` = `reverie.free.componentdock.com`; `homepage` matches.
 - [ ] Tests: Vitest + Testing Library, 100% lines/functions/branches/statements.
 - [ ] `scripts/verify-app.sh reverie` passes (typecheck + lint + coverage + build).

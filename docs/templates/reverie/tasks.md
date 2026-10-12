@@ -113,7 +113,17 @@ implementer ships it and the deploy is live.
       (https://www.componentdock.com/) — Colorlib credit never reproduced; Terms &
       Use / Privacy Policy as anchors.
 
-## 11. Verification
+## 11. Image delivery (source-only format layer)
+
+- [ ] Every photograph = one seeded `picsum.photos` URL, every line-art icon = a
+      `lucide-react` glyph — **flatten the source's format layer**: no `<picture>`,
+      `<source>`, `srcset`, `sizes` or `image-set()` in app code, no `.avif`
+      request, no image `<link rel="preload">` in `index.html`.
+- [ ] Keep the source's fallback delivery attributes: explicit `width`/`height` on
+      the blog cards (`360×240`) and icon images, `loading="lazy"` below the fold,
+      the hero image eager, `alt=""` on decorative imagery.
+
+## 12. Verification
 
 - [ ] `openspec validate template-reverie --type spec` passes.
 - [ ] TDD: tests first, `npm run test:coverage` at 100% for the app.

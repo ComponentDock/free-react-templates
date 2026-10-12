@@ -40,7 +40,7 @@ section.request
     form → 4 fields (2×2) + button.site-btn
 section.latest.spad
   .section-title → h2
-  3 × .col-lg-4 > .latest__item → img · ul(3 li) · h4 a
+  3 × .col-lg-4 > .latest__item → picture(img/blog/latest-N.avif|jpg 360×240, lazy) · ul(3 li) · h4 a
 div.logo
   .logo__carousel.owl-carousel → 10 × .logo__item
 footer.footer
@@ -149,6 +149,30 @@ Computed-style spot checks in the same pass: `body{font-family:Raleway, sans-ser
 `.request__form form{background-color:#fff; border-radius:0 0 10px 10px}`,
 `.counter{background-image: image-set(url(...counter-bg.avif/jpg))}`.
 
+## Responsive-format image layer (source-only; measured 2026-10-12, `curl -sS` basis)
+
+The source ships a **format** switch, not a resolution one: no width descriptor
+(`600w`) and no density descriptor (`2x`) appears anywhere on the page, there is
+no `sizes` attribute, and no `<source>` carries a `media=` condition (so there is
+no art direction either). The format is carried by `type=` / `type()`.
+
+| Where | Form | Count | Fallback / notes |
+| --- | --- | --- | --- |
+| Line-art icons + blog cards | `<picture><source srcset="img/…avif" type="image/avif"><img src="img/…png\|jpg" width=… height=… alt="" loading="lazy" decoding="async"></picture>` | **17** blocks — 14 icon wrappers (hero `hi`, both `ti` squiggles, six `si-N`, four `ci-N`) + **3** blog cards (`latest-1..3`, `360×240`) | raster PNG/JPG, `alt=""`, sized + lazy; the hero ornament is the eager one (`fetchpriority="high" decoding="sync"`, no `loading`) |
+| Hero, six feature tiles, counter band | inline `style="background-image: image-set(url('img/x.avif') type('image/avif'), url('img/x.png') type('image/png'))"` on the `.set-bg` element | **8 occurrences / 16 entries** | no `1x`/`2x` descriptor — the entries are `url(...) type(...)` pairs |
+| `css/style.min.css` (decorative PNG ornaments) | `…:before{background:url(../img/icon/x.png); background-image:image-set(url(../img/icon/x.avif) type("image/avif"),url(../img/icon/x.png) type("image/png"))}` | **3 rules** — `.request.request--services .request__form:before`, `…:after`, `.pricing__item:after` | plain PNG declared first in the same rule (a real fallback, unlike the inline bands) |
+| Head | `<link rel="preload" as="image" href="img/hero.avif" type="image/avif" fetchpriority="high">` | **1** | an AVIF-only preload — nothing else in the head preloads an image |
+
+The `.counter` computed `background-image` recorded above is therefore the
+**inline** `image-set()` on `div.counter.set-bg`, and this layer is **source-only
+infrastructure**: the recreation replaces every photograph with a seeded
+`picsum.photos` URL and every line-art icon with a `lucide-react` glyph, so each
+image is a single element with one URL — no `<picture>`, `<source>`, `srcset`,
+`sizes`, `type=` or `image-set()` in app code, no `.avif` request to a ColorLib
+host, and no image preload hint in our `<head>`. Only the delivery attributes are
+kept: explicit `width`/`height`, `loading="lazy"` below the fold, eager hero,
+`alt=""` on decorative imagery.
+
 ## Screenshot analysis (1200×946 JPEG → PNG)
 
 Browser-chrome mock of the top of the page: white header with the serif `DREAMS`
@@ -215,6 +239,7 @@ None of them is copied; they are read for structure, copy kind and figures.
 | Source | Recreation |
 | --- | --- |
 | `img/hero.avif|png`, `features/feature-N.*`, `counter-bg.*`, blog/logo images | `https://picsum.photos/seed/reverie-<n>/<w>/<h>` placeholders |
+| the format layer (17 `<picture>`/`<source type="image/avif">` pairs + 8 inline `image-set()` bands + the `<link rel="preload" as="image">` hero hint) | **flattened** — one URL per image; no `<picture>`/`srcset`/`sizes`/`image-set()` in app code, no `.avif` request, no image preload |
 | `img/logo.svg`, `img/footer-logo.svg` (`DREAMS`) | an original serif `REVERIE` wordmark (no image) |
 | `img/icon/{hi,ti,si-N,ci-N}.png` line-art icons | `lucide-react` icons |
 | Font Awesome 7 socials + inline SVG sprite (`#i-send`, `#i-heart`) | **inline-SVG brand marks** for `Facebook`, `Twitter`, `Instagram`, `Dribbble` (lucide-react exports no brand icons) + `lucide-react` `Send`, `Heart` |
@@ -261,3 +286,29 @@ this slug's live stylesheet.
 - Decide whether the logo strip uses a minimal marquee or Swiper if already present.
 - Keep the source's generic copy (service/blog labels, contact lines) or lightly
   paraphrase; never reuse the source name/wordmark.
+
+## Prep status (re-verified 2026-10-12)
+
+Audited with the new **RESPONSIVE-GRAMMAR** axis
+(`scripts/verify-responsive-grammar.py`, 18 controls). Two gaps were found and
+closed here:
+
+1. **COVERAGE — the format layer was unnamed.** The prep named `avif` only inside
+   filenames (`hero.avif|png`) and the wrapper only as `picture(...)` in the DOM
+   skeleton, so nothing in the spec/tasks/design-notes told the implementer that
+   the page carries **17 `<picture>` + `<source srcset=… type="image/avif">`**
+   pairs, **8 inline `image-set(… type(…))`** bands, **3** sheet `image-set()`
+   rules and an **AVIF image preload** in the head — or what to do with them. The
+   new "Responsive-format image layer" section above + the spec's
+   `### Feature: Image delivery and the source-only format layer` +
+   the fidelity-rule and checklist lines carry the census and the **flatten**
+   instruction.
+2. **PIC-MISS — the blog skeleton understated the wrapper.** The DOM skeleton
+   said `.latest__item → img`, but each of the three blog cards is a
+   `<picture>` pair with a `360×240` lazy `img` fallback; the skeleton line now
+   reads `picture(img/blog/latest-N.avif|jpg 360×240, lazy)`.
+
+Everything else the axis reads re-verified exact on this pass: 17/17 bare
+`srcset` descriptors (no width/density descriptor, no `media=`), zero `sizes`
+attributes on the page, `image/avif` on all 17 sources, and the 8+3 `image-set()`
+loci with `type()` descriptors.
