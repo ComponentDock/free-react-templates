@@ -22,6 +22,22 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
   lensly · vows · nuptial · knot · wedlock · nuptials · betrothal · trousseau ·
   paperie · affiance · troth · espousal · matrimony · **celebrant**).
 - Homepage / CNAME: `https://celebrant.free.componentdock.com`
+- **Source inner pages (live reference, curl-probed 2026-10-12):** the landing
+  page is the design of record, but the same theme ships **four** further live
+  pages under `https://preview.colorlib.com/theme/weddingofficiant/<page>`, all
+  **HTTP 200** on the `curl -sS` basis — `services.html` (**18,829 B**) and
+  `faq.html` (**19,902 B**), whose only headings the landing page already
+  carries (its "Our Services" rows and its `#accordion-v1` FAQ), and
+  `about.html` (**17,361 B**) and `contact.html` (**15,178 B**), which carry
+  content the landing page has **no band for** (an about/history band with the
+  team, and a contact band with a real contact form). The source's own menu
+  links all four (`About` → `about.html`, `Services` → `services.html`, `FAQ` →
+  `faq.html`, `Blog` → `faq.html`, `Contact` and the `Get Quote` pill →
+  `contact.html`), so the About and Contact destinations this one-pager invents
+  take their structure from those two pages. The full reading is in
+  `## Design reference` and `docs/templates/celebrant/design-notes.md`; nothing
+  is copied.
+
 
 ## Design reference (replication findings)
 
@@ -200,6 +216,33 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
     (`#737373`) with a heart glyph; the source credits ColorLib here — our
     recreation links **https://www.componentdock.com/ ("Component Dock")**
     instead (AGENTS.md rule 5).
+- **Inner-page reference for the two invented bands (live, curl-probed
+  2026-10-12 — the landing page carries no about band and no contact band, while
+  the source's own menu links both pages):**
+  - `about.html` (**200**, 17,361 B, `<title>` identical to the landing page's):
+    `h1` **About Us** over a `section.site-section` history band — `h2` **Our
+    History** with body copy and a second `h2`, plus two photos — and a
+    `section.site-section pt-0` team band: `h2` **Our Team** with **eight** `h3`
+    person cards (Celia Bennett · Manha Sumner · Ammarah Rosario · Beau Dolan ·
+    Gus Payne · Noel Justice · Vihaan Prince · Evie-Mae Ridley) over the
+    source's `images/person_1..8.jpg`.
+  - `contact.html` (**200**, 15,178 B, same `<title>`): `h1` **Contact** over a
+    `section.site-section pb-5` that pairs five `h3` detail rows — **Opening
+    Hour** ("7:00 AM — 5:00 PM"), **Address**, **Email** (`mailto:`), **Phone**
+    (`tel:`) and **Website** — with a real contact `<form action="#">`: **Name**
+    (`input type="text"`), **Email** (`input type="email"`), **Subject**
+    (`input type="text"`), **Message** (`textarea` 30×10) and a
+    `input[type=submit].btn.btn-secondary` labelled **Send Message**. The
+    landing page's only form is the footer newsletter, so this is the source's
+    whole contact-form grammar.
+  - **Source facts that must NOT be reproduced:** both pages reuse the landing
+    page's `mydomain.com` e-mail, its `tel://12 345 6788 010` phone and its
+    `www.mydomainname.com` website placeholder, its `site-footer` copy, its logo
+    and its eight person photos; `contact.html`'s form has `action="#"`, no
+    `name` attributes and no validation. The recreation ships its own contact
+    data, its own team card copy (or an equally sized card grid) and a real,
+    locally validated form — and it keeps the `Blog` entry pointing at the FAQ
+    band only because the source's own `Blog` link hrefs `faq.html`.
 - **Tokens are the source's own** (`css/style.css`), not invented: brand mint
   **`#cae8d5`** (button fill, active-nav underline, `.media-v37.active` wash,
   both decorative hero/slider bands, the 70 px icon discs, the carousel active
@@ -489,6 +532,42 @@ no `cdnjs`).
   (no `noindex`/`nofollow`, no `robots` meta, no `dns-prefetch`, no `cdnjs`, no
   `preview.colorlib.com` URL)
 
+### Requirement: Invented About and Contact bands (source inner pages)
+
+Where the source's multi-page shell carries content the landing page has no band
+for, the recreation SHALL build that band from the source's own page of the same
+kind — `about.html` (history band + an eight-card team grid) for the nav's
+**About** destination and `contact.html` (five detail rows + the contact form)
+for **Contact** and the `Get Quote` pill — and SHALL NOT carry over the source's
+`mydomain.com` e-mail, its `tel://12 345 6788 010` phone number, its
+`www.mydomainname.com` website placeholder, its `action="#"` form, the landing
+page's `About Us` / `Quick Links` / `Subscribe Newsletter` / `Follow Us` footer
+headings or its person photographs.
+
+#### Scenario: The About destination follows the source's about page
+
+- **GIVEN** the app's nav carries an About entry (the source's menu links
+  `about.html`, whose band the landing page does not carry)
+- **WHEN** the About band renders
+- **THEN** it follows that page's structure — an "About Us"-class page title over
+  a history band (story heading + copy + imagery) and a team band with a
+  **team heading and eight person cards**, each a photo, a name heading and a
+  short role blurb in the app's own copy
+- **AND** the source's own person photographs and its footer wording are not
+  reproduced
+
+#### Scenario: The Contact destination follows the source's contact page
+
+- **GIVEN** the app's nav carries Contact and Get Quote entries (the source's
+  menu links `contact.html` for both)
+- **WHEN** the Contact band renders
+- **THEN** it follows that page's structure — five labelled detail rows (opening
+  hours, address, e-mail, phone, website) with the app's own values, beside a
+  contact form whose field kinds match the source's: **Name**, **Email**,
+  **Subject**, a multiline **Message** and a **Send** submit
+- **AND** the form is labelled, validated locally, never posts anywhere, and
+  carries none of the source's placeholder contact data
+
 ## Verification checklist
 
 - [x] `npm run typecheck` passes for `apps/celebrant`
@@ -550,6 +629,15 @@ no `cdnjs`).
 - [x] No `colorlib` / `wedding-officiant` / "Wedding Officiant" provenance
       string anywhere in `apps/` (comments included); footer links Component
       Dock
+- [ ] The invented About and Contact bands are built from the source's own inner
+      pages (`about.html`, 17,361 B — the history band plus the "Our Team" grid
+      of eight person cards; `contact.html`, 15,178 B — the five labelled detail
+      rows beside the Name/Email/Subject/Message/Send form), with the app's own
+      contact data, copy and imagery instead of the source's `mydomain.com`
+      placeholders, `tel://` number, `action="#"` form and person photos —
+      **follow-up for the implementer stream**: the app shipped 2026-10-12 with
+      `About` anchored to `#services` and `Contact` / `Get Quote` to `#contact`
+      (the footer block), so neither band exists yet
 - [x] TEMPLATES.md `Wedding Officiant` item marked `[x]` with the live
       `https://celebrant.free.componentdock.com` URL + homepage
 

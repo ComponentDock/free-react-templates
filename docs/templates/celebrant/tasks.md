@@ -212,7 +212,17 @@ espousal · matrimony · **celebrant**). Never reuse the source slug
 - [ ] No copied assets: no `css/style.css`, no Bootstrap/jQuery/owl.carousel /
       AOS / fancybox / jquery.sticky bundles, no `hero_1–4.jpg` / `img_1–4.jpg`,
       no icomoon or flaticon icon fonts, no `weddingofficiant-*` files
-- [ ] PR description lists: source template + slug, preview URL (**note the
+- [ ] Build the invented **About** and **Contact** bands from the source's own
+      inner pages (both live, `curl -sS` basis, read 2026-10-12): the About band
+      from `about.html` (17,361 B — history band + the "Our Team" grid of eight
+      person cards) and the Contact band from `contact.html` (15,178 B — the five
+      labelled detail rows beside the Name/Email/Subject/Message/Send form).
+      Ship the app's own contact data, copy and imagery — never the source's
+      `mydomain.com` / `tel://12 345 6788 010` / `www.mydomainname.com`
+      placeholders, its `action="#"` form or its `images/person_1..8.jpg`.
+      `services.html` and `faq.html` need nothing new: their headings are the
+      landing page's own bands
+- [ ] PR description: source template + slug, preview URL (**note the
       hyphenated slug 404s; the demo is `…/theme/weddingofficiant/`**), design
       tokens used (mint `#cae8d5`, link `#95d1ab`, hover `#343a40`, CTA
       `#6c757d`, ink `#000` / `rgba(0,0,0,0.5)`, body `#808080`, card copy

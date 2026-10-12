@@ -113,6 +113,73 @@ Source (single `<body>`; `div#overlayer` + `div.loader` precede `.site-wrap`):
 Our recreation renders exactly that order, single-page, with every nav entry
 anchored on-page.
 
+> State at 2026-10-12: the app has **shipped** (`apps/celebrant`) without an
+> About band and without a Contact band — its `About` entry anchors to
+> `#services` and `Contact` / `Get Quote` to the footer's `#contact` block. The
+> reading below is therefore the reference for a **follow-up `feat:`** for the
+> implementer stream (the prep stream never edits `apps/`).
+
+## Source inner pages (live, curl-probed 2026-10-12)
+
+The landing page is the design of record, but the same theme ships **four**
+further live pages at `https://preview.colorlib.com/theme/weddingofficiant/<page>`
+(all **HTTP 200**, `curl -sS` basis). Two of them mirror bands the landing page
+already carries; two carry content the landing page has **no band for** — and
+those are the reference for the bands this one-pager has to invent.
+
+| Page | Live (`curl -sS`) | What it holds → what it informs |
+| --- | --- | --- |
+| `about.html` | **200**, 17,361 B | `h1` **About Us** + a history band (`h2` **Our History** + copy + photos) + `h2` **Our Team** with **eight** `h3` person cards (Celia Bennett · Manha Sumner · Ammarah Rosario · Beau Dolan · Gus Payne · Noel Justice · Vihaan Prince · Evie-Mae Ridley) over `images/person_1..8.jpg` → the **invented About band** |
+| `contact.html` | **200**, 15,178 B | `h1` **Contact** + five `h3` detail rows (**Opening Hour**, **Address**, **Email**, **Phone**, **Website**) beside a `<form action="#">` (**Name**, **Email**, **Subject**, **Message** textarea, submit **Send Message**) → the **invented Contact band** and the contact-form field set |
+| `services.html` | **200**, 18,829 B | the same four service rows as the landing page's "Our Services" band (every heading already on the landing page) → nothing new to invent |
+| `faq.html` | **200**, 19,902 B | the same `#accordion-v1` FAQ the landing page carries → nothing new to invent |
+
+The source's own menu links all four (`About` → `about.html`, `Services` →
+`services.html`, `FAQ` → `faq.html`, `Blog` → `faq.html`, `Contact` and the
+`Get Quote` pill → `contact.html`), which is why our `Blog` entry may point at
+the FAQ band: the source points it at `faq.html` itself.
+
+### `about.html` — DOM skeleton (as served)
+
+```html
+<h1>About Us</h1>
+<section class="site-section">
+  <h2>Our History</h2> …copy… <h2>Wedding Officiant</h2> …copy…
+  <img src="images/hero_1.jpg"> <img src="images/hero_2.jpg">
+</section>
+<section class="site-section pt-0">
+  <h2>Our Team</h2>
+  <h3>Celia Bennett</h3>   <!-- ×8, images/person_1..8.jpg -->
+  …
+</section>
+<footer class="site-footer"> <!-- the landing page's footer, verbatim --> </footer>
+```
+
+### `contact.html` — DOM skeleton (as served)
+
+```html
+<h1>Contact</h1>
+<section class="site-section pb-5">
+  <h3>Opening Hour</h3> <p>7:00 AM — 5:00 PM</p>
+  <h3>Address</h3>      <p>2878 Meadowview Drive, Fredericksburg, VA, Virginia, 22401</p>
+  <h3>Email</h3>        <p><a href="mailto:info@mydomain.com">info@mydomain.com</a></p>
+  <h3>Phone</h3>        <p><a href="tel://12 345 6788 010">+12 345 6788 010</a></p>
+  <h3>Website</h3>      <p><a href="#">www.mydomainname.com</a></p>
+  <form action="#">                     <!-- the source's ONLY contact form -->
+    <label for="name">Name</label>      <input type="text"  id="name"    class="form-control">
+    <label for="email">Email</label>    <input type="email" id="email"   class="form-control">
+    <label for="subject">Subject</label><input type="text"  id="subject" class="form-control">
+    <label for="message">Message</label><textarea id="message" cols="30" rows="10"></textarea>
+    <input type="submit" class="btn btn-secondary" value="Send Message">
+  </form>
+</section>
+```
+
+Both pages reuse the landing page's `<title>`, its `site-footer` block, its logo
+and (in `contact.html`) its `mydomain.com` placeholders — none of it may reach
+`apps/celebrant`, and the contact form needs the app's own values plus local
+validation.
+
 ## Section-by-section fidelity notes
 
 ### 1. Header

@@ -281,6 +281,17 @@ paragraph, the address, the phone number, its Google Maps key or the string
       entrance motion skipped
 - [ ] `npm run verify:app aisle` green (typecheck + lint + knip + fallow + 100 %
       coverage tests + build); paste the `scripts/verify-app.sh` output in the PR
+- [ ] Build the two invented destinations from the source's own inner pages
+      (both live, `curl -sS` basis, read 2026-10-12): the **RSVP band** from
+      `02-rsvp.html` (9,789 B — RSVP kicker + "Be Our Guest" heading + the
+      contact split whose right column is the "Are you getting?" / "RSVP HERE!"
+      form with Full Name, Email, a Guest select 00–04 and an Event select) and
+      the **"The Wedding" band** from `03-regular-page.html` (10,860 B — the
+      "Regular Page" text band with the trip/flowers story blocks, the note pair
+      and the pull quote). Ship the app's own copy, contact data and images, a
+      real submit control, distinct select `name`s and unique option values; do
+      not copy the source's misspelled author credit, its duplicated
+      `name="option"` selects or its `TITLE` placeholder
 - [ ] PR description: source template + slug, preview URL, tokens used, and what
       differs (new name, own placeholders, own pattern/map, no analytics)
 - [ ] After merge: `[~]`→`[x]` on TEMPLATES.md line **3107** with the surge URL

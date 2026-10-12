@@ -45,6 +45,17 @@ the source name, its copy verbatim or its typos.
   `PIL.Image.open().size` **and** `ffprobe` — both report 1200×946, so the
   892 recorded by the first conversion is a defect of that conversion, not of
   the file).
+- **Source inner pages (live reference, curl-probed 2026-10-12):** the landing
+  page is the design of record, but the same theme ships **two** further live
+  pages under `https://preview.colorlib.com/theme/wedding2/<page>`, both
+  **HTTP 200** on the `curl -sS` basis — `02-rsvp.html` (**9,789 B**) and
+  `03-regular-page.html` (**10,860 B**). The landing page carries **neither** of
+  their bands, yet its own menu points at both (its `RSVP` entry hrefs
+  `02-rsvp.html` and its `THER WEDDING` entry hrefs `03-regular-page.html`), so
+  those pages are the authoritative reference for the two destinations this
+  one-pager has to invent. Neither page is copied; both are read for structure
+  and copy kind (the full reading is in `## Design reference` and
+  `docs/templates/aisle/design-notes.md`).
 - **New name:** `aisle` (apps/aisle, `@free-react-templates/aisle`) — from the
   wedding-aisle motif of the design; the source name "Wedding2", its wordmark,
   its logo files, its photos, its icon font and its copy are never reused.
@@ -299,6 +310,36 @@ the source name, its copy verbatim or its typos.
   `#flavorOverlay` at `rgba(0,0,0,.8)`), the **countdown**, and the newsletter
   form (the reference posts nowhere — the recreation keeps it local-only with
   validation).
+- **Inner-page reference for the two invented destinations (live, curl-probed
+  2026-10-12 — the landing page has no RSVP band and no regular-page band, while
+  the source's own menu links both pages):**
+  - `02-rsvp.html` (**200**, 9,789 B, `<title>TITLE</title>` — the same
+    unrendered placeholder title as the landing page): an `h3` kicker **RSVP**
+    over an `h1` **Be Our Guest**, then a `section.contact-area` that reuses the
+    landing page's 50/50 split. The left column (`.display-table-cell`) holds a
+    `.heading` with `h2.title` **Contact Us** above the same date and venue lines
+    ("On the 25 September 2017", "Join us as we celebrate life and love.",
+    "14 Baria street 133/2, New York City, US"), **two** phone links (`h3 > a.phone`,
+    `tel:` — the landing page's number **plus** a second one) and an
+    `h5 > a.email` (`mailto:`); the right column (`.contact-form`) holds
+    `h2.center-text` **Are you getting?** over `h4.pre-title.center-text`
+    **RSVP HERE!** and a `<form method="post">` whose grammar is **Full Name**
+    (`input.name-input`), **Email** (`input.email-input`, typed `text` in the
+    source) and **two** `<select class="event-select" name="option">` menus —
+    **Guest** (`00`–`04`) and **Event** (`All Events`, `Option 1`–`Option 3`).
+  - `03-regular-page.html` (**200**, 10,860 B, `<title>TITLE</title>`): an `h1`
+    **Regular Page** over a `section.regular-area` text band with four content
+    images and a post-like stack — `h2` **Planning Honeymoon Trip**, `h4`
+    **Shooting Flowers and Bouquets**, an `h3` pull quote ("Love recognizes no
+    barriers…") credited through an `h5`, and `h4` **Quick Note About the Gifts**
+    twice — then a `section.quoto-area` and the newsletter footer.
+  - **Source defects that must NOT be reproduced:** the RSVP form gives *both*
+    selects the same `name="option"` and repeats `value="3"` across its options,
+    and it carries **no submit control** at all; the regular page's author credit
+    is misspelled; both pages reuse the landing page's phone numbers, e-mail
+    address, venue address and logo files. The recreation ships its own contact
+    data, its own copy, a real submit control, distinct select `name`s and unique
+    option values.
 - **Brand colour census (`01-homepage/css/styles.css`, by frequency):**
   `#fff` (14), **`#E45F74` (14)**, `#aaa` (3), **`#E55D73` (2)**, `#444` (2),
   `#333` (2), `#ccc` (1), `#555` (1), `#000` (1), plus the function colours
@@ -592,6 +633,36 @@ the source name, its copy verbatim or its typos.
   `https://www.componentdock.com/` ("Component Dock") replacing the source's
   Colorlib credit
 
+### Feature: The two invented destinations (RSVP band and "The Wedding" band)
+
+#### Scenario: The RSVP destination follows the source's RSVP page
+
+- **Given** the app's nav carries an RSVP entry (the source's menu links
+  `02-rsvp.html`, whose band the landing page does not carry)
+- **When** the RSVP band renders
+- **Then** it follows that page's structure — an RSVP kicker over a large
+  "Be Our Guest"-class invitation heading, then a 50/50 split whose left column
+  repeats the invitation/contact block (date line, invitation line, two phone
+  links and an e-mail link, all the app's own) and whose right column is the
+  RSVP form with **Full Name**, **Email**, a **Guest** count select and an
+  **Event** select
+- **And** the form ships a real submit control (the source's has none), gives
+  each select a **distinct** `name`, repeats no option `value`, validates
+  locally, never posts to a third party, is fully labelled for assistive
+  technology, and copies none of the source's contact data, its duplicated
+  `name="option"` selects or its `TITLE` placeholder
+
+#### Scenario: The "The Wedding" destination follows the source's regular page
+
+- **Given** the app's nav carries a "The Wedding" entry (the source's menu links
+  `03-regular-page.html`, whose band the landing page does not carry)
+- **When** that band renders
+- **Then** it follows the page's shell — a titled text band with a lead story
+  line, a two-column note pair and a credited pull quote — in the app's own copy
+  and with the app's own images
+- **And** the source's misspelled author credit and its placeholder title are
+  not reproduced
+
 ## Fidelity rules
 
 - Match section structure and order 1:1 (header → hero → story → countdown →
@@ -682,5 +753,13 @@ the source name, its copy verbatim or its typos.
       labelled form controls, decorative glyphs/patterns `aria-hidden`
 - [ ] `npm run verify:app aisle` green (typecheck + lint + knip + fallow + 100 %
       coverage tests + build); `scripts/verify-app.sh` output pasted in the PR
+- [ ] The two invented destinations are built from the source's own inner pages:
+      `02-rsvp.html` (9,789 B — the RSVP kicker, the "Be Our Guest" heading and
+      the contact split with the "Are you getting?" / "RSVP HERE!" form) and
+      `03-regular-page.html` (10,860 B — the "Regular Page" text band with the
+      trip/flowers story blocks, the note pair and the pulled quote) — with the
+      app's own copy, contact data and images, a real submit control, distinct
+      select `name`s and no repeated option `value` (the source ships none of
+      those)
 - [ ] TEMPLATES.md line 3107 flips to `[x]` **with** the surge URL only after the
       implementer merges (the prep stream never marks it)

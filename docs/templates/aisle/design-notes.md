@@ -522,3 +522,76 @@ confusing).
   `srcset`, `<picture>` or modern-format layer anywhere on this theme). Our
   recreation keeps seeded `picsum` photos with `loading="lazy"` below the
   first tile (already required by the spec's gallery scenario).
+
+  ## 11. Source inner pages (live, curl-probed 2026-10-12)
+
+  The landing page is the design of record, but the same theme ships **two**
+  further live pages at `https://preview.colorlib.com/theme/wedding2/<page>` (both
+  **HTTP 200**, `curl -sS` basis) — the authoritative reference for the two
+  destinations this one-pager has to invent, because the landing page carries
+  **neither** band while the source's own menu links **both**.
+
+  | Page | Live (`curl -sS`) | What it holds → what it informs |
+  | --- | --- | --- |
+  | `02-rsvp.html` | **200**, 9,789 B | `h3` **RSVP** + `h1` **Be Our Guest**, then a `section.contact-area` 50/50 split: left = `.heading` `h2.title` **Contact Us** + date/venue lines + **two** `tel:` phone links + a `mailto:` link; right = `.contact-form` with `h2.center-text` **Are you getting?**, `h4.pre-title.center-text` **RSVP HERE!** and a `<form method="post">` (Full Name, Email, Guest select 00–04, Event select All Events/Option 1–3) → the **RSVP band** the nav's RSVP entry needs |
+  | `03-regular-page.html` | **200**, 10,860 B | `h1` **Regular Page** over `section.regular-area`: four content images and the post-like stack `h2` **Planning Honeymoon Trip**, `h4` **Shooting Flowers and Bouquets**, an `h3` pull quote plus its `h5` credit, `h4` **Quick Note About the Gifts** twice → the band the nav's "The Wedding" entry needs |
+
+  Both pages reuse the landing page's `<title>TITLE</title>` placeholder, its
+  phone numbers, its e-mail address, its venue line and its two logo files. None
+  of that is copied: the recreation reads **structure and copy kind** only.
+
+  ### 11.1 `02-rsvp.html` — DOM skeleton (as served)
+
+  ```html
+  <h3>RSVP</h3>                     <!-- kicker above the page title -->
+  <h1>Be Our Guest</h1>
+  <section class="section contact-area">
+    <div class="col-sm-12 col-md-4 col-lg-6">
+      <div class="margin-bottom display-table"><div class="display-table-cell">
+        <div class="heading"><h2 class="title">Contact Us</h2> …</div>
+        <p>On the 25 September 2017</p>
+        <p>Join us as we celebrate life and love.</p>
+        <h3><a href="tel:…" class="phone">…</a></h3>   <!-- TWO phone links -->
+        <h5><a href="mailto:…" class="email">…</a></h5>
+        <p>14 Baria street 133/2, New York City, US</p>
+      </div></div>
+    </div>
+    <div class="col-sm-12 col-md-8 col-lg-6">
+      <div class="contact-form margin-bottom">
+        <h2 class="center-text">Are you getting?</h2>
+        <h4 class="pre-title center-text">RSVP HERE!</h4>
+        <form method="post">
+          <label>Full Name</label><input class="name-input" type="text">
+          <label>Email</label>    <input class="email-input" type="text">
+          <label>Guest</label>    <select class="event-select" name="option">00…04</select>
+          <label>Event</label>    <select class="event-select" name="option">All Events, Option 1…3</select>
+          <!-- no submit control in the source -->
+        </form>
+      </div>
+    </div>
+  </section>
+  ```
+
+  Deltas the recreation owes: a **submit** control, **distinct** `name`s for the
+  two selects, unique option `value`s (the source repeats `value="3"`), its own
+  phone/e-mail/venue data, and labels wired with `id`/`htmlFor`.
+
+  ### 11.2 `03-regular-page.html` — DOM skeleton (as served)
+
+  ```html
+  <h1>Regular Page</h1>
+  <section class="regular-area">    <!-- four content images: regular-content-1..4 -->
+    <h2>Planning Honeymoon Trip</h2>
+    <h4>Shooting Flowers and Bouquets</h4>
+    <h3>“Love recognizes no barriers. It jumps hurdles, leaps fences …”</h3>
+    <h5>Maya Angeluo</h5>            <!-- the source's misspelling of the author -->
+    <h4>Quick Note About the Gifts</h4>
+    <h4>Quick Note About the Gifts</h4>   <!-- the source repeats the note -->
+  </section>
+  <section class="quoto-area margin-top-btm">…</section>
+  ```
+
+  Deltas the recreation owes: the app's own copy for the story/note/quote blocks,
+  its own images, a correctly spelled author credit, and no repeated note block
+  unless the layout needs the pair.
+
