@@ -36,7 +36,7 @@ export function DigitTile({ digit, className }: DigitTileProps) {
     <li
       data-testid="digit-tile"
       className={cn(
-        'mx-[3px] my-[3px] flex h-[120px] w-[90px] items-center justify-center',
+        'mx-[3px] mt-[3px] mb-[80px] flex h-[120px] w-[90px] items-center justify-center',
         'rounded-[10px] bg-tile font-digit text-[120px] leading-none text-white',
         flipping && 'animate-turn',
         className,
