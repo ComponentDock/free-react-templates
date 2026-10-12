@@ -1,0 +1,101 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Ensign palette — design tokens for one full-bleed solid-colour bar in normal
+     flow: a saturated brand blue carrying a left-pinned uppercase white wordmark and
+     a single right-aligned list of seven tracked destinations whose last row is a
+     solid orange block filling the bar's full height. Below 992px the same bar turns
+     black and the list folds into a collapsing panel whose only rounded element is
+     that orange row. Shape language is square everywhere else — the bar, its rows,
+     the desktop CTA and the collapse carry no radius, and the bar itself carries no
+     shadow. */
+  --color-brand: #1089ff;
+  --color-brand-deep: #0b6fd4;
+  --color-cta: #ff7315;
+  --color-cta-deep: #e05f08;
+  --color-bar-mobile: #000000;
+  --color-page: #fafafa;
+  --color-ink: #808080;
+  --color-toggler: rgba(255, 255, 255, 0.5);
+  --color-panel-row: rgba(255, 255, 255, 0.7);
+  --color-panel-item: rgba(255, 255, 255, 0.8);
+  --color-hairline: rgba(255, 255, 255, 0.3);
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variant resolves to
+     the page's #1089ff accent. */
+  --color-primary-50: #eaf4ff;
+  --color-primary-100: #d3e9ff;
+  --color-primary-200: #a7d3ff;
+  --color-primary-300: #6fb6ff;
+  --color-primary-400: #3a9cff;
+  --color-primary-500: #1089ff;
+  --color-primary-600: #1089ff;
+  --color-primary-700: #0b6fd4;
+  --color-primary-800: #0857a6;
+  --color-primary-900: #063f78;
+
+  --font-sans: 'Poppins', Arial, sans-serif;
+
+  /* The page hands over at 576 / 768 / 992 / 1200 — the four container tiers, the
+     width where the bar's list becomes a row, and the width where the container
+     takes its widest cap. Re-pointing the scale keeps every utility in step. */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  --shadow-panel: 0 10px 34px -20px rgba(0, 0, 0, 0.41);
+
+  --ease-collapse: ease;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-page);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 0;
+  }
+  /* Every destination on this page is a row on the bar or a card in the content —
+     none of them carries an underline at any state. */
+  a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  h2 {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  button {
+    border-radius: 0;
+  }
+  ::selection {
+    background: rgba(16, 137, 255, 0.25);
+  }
+  /* Every transition on this page is decorative: the label colour lifts, the
+     collapse's short travel and the panel's fade all collapse to effectively
+     instant, and no destination is ever gated behind motion. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}

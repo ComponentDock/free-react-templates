@@ -737,3 +737,49 @@ and `ChevronDown` (the dropdown caret, replacing the CSS `::after` triangle).
       the source has `#fff` on `#fff`, focus management on `Escape`, the dead
       `cl-bg-dark`/`cl-navbar-dark`/Bootstrap-default rules dropped, reduced-motion
       handling, the 371 px filler page replaced by real content, and the added footer)
+
+## Implementation notes (built, measured over CDP)
+
+Refinements made while implementing, and the numbers measured on the built app
+(`apps/ensign/dist`, served over plain HTTP and probed at 1440/1280/1200/1199/992/991/768/
+576/375/320 px with transitions disabled so the end state reads honestly):
+
+- **The band's own heading is kept to ONE line** — `One bar, seven ways in`. The design's
+  rhythm depends on it: a longer first draft wrapped to two 42 px lines in the 540 px column
+  and pushed the bar from `y = 210` down to `252`. Measured after the fix: heading
+  `540 × 42` at `y = 112`, bar at `y = 210`, exactly the source's numbers, at every width
+  from 375 px up (at 320 px the 275 px column wraps it to two lines, as the design's own
+  heading would).
+- **Every row id carries a per-presentation suffix** (`-wide` / `-folded`). The wide list is
+  in the DOM at every width, so once the folded panel is mounted the same row would exist
+  twice and two elements would share one `id`, which breaks `aria-controls` for assistive
+  tech. Each presentation now owns its ids and each trigger controls its own panel; the app
+  carries **zero** duplicate ids with both presentations mounted.
+- **A row is the positioning context of its own panel** (`position: relative`). Without it
+  the wide panel hangs from the bar's own left edge — measured `x = 77.5` instead of its
+  trigger's `585.3` at 1280 px — while everything else about it was already exact.
+- **The folded sub-list takes a flex line of its own** (`flex-wrap` on the row plus
+  `basis-full` on the panel): as a flex sibling of its trigger it was squeezed to `165 px`
+  instead of the panel's full width. It now measures the list's own `330 px` — the 15 px
+  difference from the design's 345 px is the probe harness's scrollbar, not the layout.
+- **The toggler's word is own copy** (`Browse`, on `line-height: 1`) — the design's own
+  label is one of the seven strings this app may not reuse, and `leading-none` brings the
+  control to `24 px` tall against the design's `24.72 px`.
+- **The resting-pointer path drives the wide bar only.** Inside the folded panel a resting
+  pointer is rare and a stray one fights the tap, so the folded disclosure is click- and
+  keyboard-driven; both paths remain in the wide presentation, exactly as the design binds
+  them.
+
+Measured on the build — bar `1265 × 67.8` at `y = 210`, `rgb(16,137,255)`, `position:
+relative`, `z-index: 3`, `padding: 0`, no border, no radius, no shadow; container `1140`;
+wordmark `70.61 × 46`; list `693.33` ending flush with the container's inner right edge,
+rows `67.8` tall at `11px / 500 / 2px` tracking, the open one carrying the inset underline;
+the orange block `162.47 × 67.8`, `border-radius: 0`, ending on that same edge; wide panel
+`160 × 134.38` at its trigger's own `x`, 2 px under the bar, `4px` radius, shadow
+`0 10px 34px -20px rgba(0,0,0,.41)`, rows `29.59px` at `12px`; below 992 px the bar turns
+`rgb(0,0,0)`, `66px` tall with the design's `10px 15px`; at 375 px the folded panel is
+`330 × 350.05` at `x = 15, y = 266` (bar `210 → 416.05`), rows `48.58px`, the open block
+`#ff7315` at a `5px` radius, and the opened sub-list sits in the flow `330` wide on black
+behind the 1 px hairline, 2 px under its trigger; `grid-template-rows` transitions over
+`0.35s ease` and collapses to `0.01ms` under `prefers-reduced-motion`; `scroll-margin-top:
+80px` on all eleven destinations; no horizontal overflow at 320 px; **zero** `href="#"`.
