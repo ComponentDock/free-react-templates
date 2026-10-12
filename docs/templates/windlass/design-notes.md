@@ -158,7 +158,8 @@ to the right of centre, and **four circular outline buttons** at the card's righ
 ⚠️ The four marks come from the *pre-rebuild* build: the current live preview ships **no icon
 font**, so its `span.fa` glyphs render **0 × 0 px** (measured with the same Poppins/ Arial stack —
 no `@font-face` for Font Awesome exists in the sheet, and no `fonts/icomoon*` file is in the
-archive). The recreation must draw its own `lucide-react` icons inside the same circles.
+archive). The recreation must draw its own **inline-SVG brand marks** inside the same circles
+(lucide-react exports no brand icons).
 
 ## Section-by-section
 
@@ -229,8 +230,9 @@ archive). The recreation must draw its own `lucide-react` icons inside the same 
   1199–1238` (4 px gaps → a 176 px block ending flush with the card's inner right edge).
 - Mobile: **`30 × 30`**, `border-color:#fff`, glyph `#fff` — and the block **stays inline in the
   header row** (it is `order:13` only ≥992 px; below that it is the card's second child).
-- The glyph spans render 0 × 0 px in the live preview (no icon font) → use `lucide-react`
-  `Facebook` / `Twitter` / `Instagram` / `Dribbble`, each link carrying the platform name (the
+- The glyph spans render 0 × 0 px in the live preview (no icon font) → use **inline-SVG brand marks** for
+  `Facebook` / `Twitter` / `Instagram` / `Dribbble` (lucide-react exports none), each link
+  carrying the platform name (the
   source's names live in `<i class="cl-sr-only">`).
 
 ### 6 — Toggler (`button.cl-navbar-toggler`)
@@ -283,7 +285,7 @@ genuinely scrolls away, and adds a minimal footer linking `https://www.component
 | `nav.ftco-navbar-light` — white, `padding:10px`, `5px` radius, shadow | `bg-white p-[10px] rounded-[5px] shadow-[0_5px_20px_-17px_rgba(0,0,0,0.34)] relative z-[3] max-lg:bg-black max-lg:p-[10px_15px]` |
 | `a.cl-navbar-brand` — `Digital`, 20px/700/uppercase, `#000` | own brand, `text-[20px] font-bold uppercase text-black max-lg:text-white py-[5px] mr-4` |
 | 5 × `.cl-nav-item > .cl-nav-link` — 14px `#333`, `19.2px 20px`, hover/current `#fc7fb2` | one `navItems` data array → `ul.ml-auto mr-4` with `text-[14px] text-[#333333] px-5 py-[19.2px] hover:text-[#fc7fb2]`, current row `#fc7fb2` + `aria-current="page"` (mobile `#fff`) |
-| `div.social-media` + 4 × `a > span.fa` (0 × 0 px glyphs) | `ul.flex order-last` with `lucide-react` `Facebook`/`Twitter`/`Instagram`/`Dribbble` in `size-10 max-lg:size-[30px] rounded-full border border-[#e6e6e6] max-lg:border-white text-[#4d4d4d] max-lg:text-white hover:bg-[#fc7fb2] hover:border-[#fc7fb2] hover:text-white` |
+| `div.social-media` + 4 × `a > span.fa` (0 × 0 px glyphs) | `ul.flex order-last` with **inline-SVG brand marks** for `Facebook`/`Twitter`/`Instagram`/`Dribbble` (lucide-react exports none) in `size-10 max-lg:size-[30px] rounded-full border border-[#e6e6e6] max-lg:border-white text-[#4d4d4d] max-lg:text-white hover:bg-[#fc7fb2] hover:border-[#fc7fb2] hover:text-white` |
 | `button.cl-navbar-toggler` — inline SVG bars + `Menu`, `rgba(255,255,255,.5)` | real `<button>` + `lucide` `Menu` 16 px + uppercase 16 px label `tracking-[0.1em]`, `aria-expanded`/`aria-controls`, `0.35s` height panel, rows `rgba(255,255,255,.7)` |
 | 9 × dead `href="#"` | 5 in-app destinations + 4 external profiles (`target="_blank" rel="noreferrer"`) |
 | 8 × Roboto woff2 (247,856 B, never render) + no Poppins webfont | one Google Fonts `<link>` for Poppins 400/500/700 |

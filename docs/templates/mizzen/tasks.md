@@ -70,7 +70,9 @@ Design notes: `docs/templates/mizzen/design-notes.md`.
       `https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap`
       (a **delta**: the source loads **no** webfont and renders Arial; its eight self-hosted Roboto
       files are dead weight and are never copied). Icons: `lucide-react` (`Search`, `Menu` bars,
-      `ChevronDown` for the caret, plus `Facebook`/`Twitter`/`Instagram`/`Dribbble`-style circles —
+      `ChevronDown` for the caret) plus **inline-SVG brand marks** for
+      `Facebook`/`Twitter`/`Instagram`/`Dribbble` (lucide-react exports no brand
+      icons) in circles —
       substitute generic icons if a brand glyph is unavailable)
 - [ ] `@theme` tokens in `src/index.css`: `--color-accent: #ff0000`, `--color-page: #fafafa`,
       `--color-bar: #252525`, `--color-bar-mobile: #000`, `--color-row: #fff`,

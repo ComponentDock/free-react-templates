@@ -370,7 +370,7 @@ The system SHALL render six white cards, each with a mint icon disc, in a
   Wedding Venue · Honeymoon · Invitation · Red Wine Tasting · Wedding Planner**
 - **AND** each card SHALL be a white `#fff` block with `30px` padding, an
   **icon disc** (a `70 × 70 px` `#cae8d5` circle, offset 10 px to the left)
-  containing a black line-art glyph from **`lucide-react`** (e.g. `Gem`/`Ring`
+  containing a black line-art glyph from **`lucide-react`** (e.g. `Gem`/`CircleDot`
   substitute, `Church`, `Home`, `Mail`, `Wine`, `CalendarCheck`), and an
   **Amiri `1.5rem` / 700 `#000`** title over a `rgba(0,0,0,0.8)` paragraph
 - **AND** SHALL NOT reproduce the source's typos ("Inivitation", "Red Wine

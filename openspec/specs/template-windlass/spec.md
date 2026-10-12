@@ -205,7 +205,7 @@ icon-font glyphs, no inline SVG `<path>` data, no text verbatim) and never reuse
     preview ships **no icon font** (`.fa` is only `display:inline-block; line-height:1; font-size:inherit`),
     the four `span.fa` glyphs render **0 × 0 px** in the live preview — the pre-rebuild look, with
     real Facebook/Twitter/Instagram/Dribbble marks, survives **only** in ColorLib's marketing
-    screenshot. The recreation must draw its own icons (`lucide-react`) inside the same 40 px
+    screenshot. The recreation must draw its own **inline-SVG brand marks** inside the same 40 px
     circles and keep the platform names as accessible labels.
   - **Toggler (`button.cl-navbar-toggler`):** `border:none`, **`color:rgba(255,255,255,0.5)
     !important`**, `cursor:pointer`, `padding-right:0`, `text-transform:uppercase`,
@@ -290,8 +290,9 @@ row list (all from the single `@media (max-width:991.98px)` block).
    CSS that this variant does not ship).
 7. **The social circles are the only place a real icon is needed, and the source's preview renders
    them 0 × 0 px** (`.fa` spans with no Font Awesome `/` not even a webfont — only ColorLib's
-   screenshot shows the marks). Recreation: `lucide-react` `Facebook`, `Twitter`, `Instagram`,
-   `Dribbble` inside 40 px / 30 px circles, each link carrying the platform name as its accessible
+   screenshot shows the marks). Recreation: **inline-SVG brand marks** (`Facebook`,
+   `Twitter`, `Instagram`, `Dribbble` — lucide-react ships **no** brand icons) inside the same
+   40 px / 30 px circles, each link carrying the platform name as its accessible
    name (the source's names live in `<i class="cl-sr-only">` inside the glyph span).
 8. **Circle geometry changes at the breakpoint:** `40 px` boxes with a **`1px #e6e6e6`** ring and
    `#4d4d4d` glyphs ≥992 px; **`30 px`** boxes with a **`1px #fff`** ring and **white** glyphs
@@ -422,7 +423,7 @@ row list (all from the single `@media (max-width:991.98px)` block).
 
 #### Scenario: Real icons, real destinations
 
-- **Then** each link carries a real `lucide-react` platform icon (the source's `span.fa` glyphs
+- **Then** each link carries a real **inline-SVG brand mark** (the source's `span.fa` glyphs
   render **0 × 0 px** because the preview ships no icon font)
 - **And** each link carries its platform as an accessible name and points at a real external
   profile, opening in a new tab with `rel="noreferrer"`
@@ -500,7 +501,7 @@ row list (all from the single `@media (max-width:991.98px)` block).
 - [ ] Social: **four** circles in order, `40 px` / `1px #e6e6e6` / `#4d4d4d` at ≥992 px and
       `30 px` / `1px #fff` / `#fff` below, `margin-right:4px`, `border-radius:50%`, block last on
       desktop; hover fills `#fc7fb2` border **and** background with a white glyph; real
-      `lucide-react` icons with platform accessible names and real external hrefs
+      **inline-SVG brand marks** with platform accessible names and real external hrefs
       (`target="_blank" rel="noreferrer"`)
 - [ ] Mobile <992 px: card `rgb(0,0,0)`, **66 px** (91 px at ≤~420 px), wordmark + glyphs white,
       toggler **third in DOM** (`rgba(255,255,255,.5)`, `16 px`, `letter-spacing:.1em`, `border:none`),
@@ -542,7 +543,7 @@ row list (all from the single `@media (max-width:991.98px)` block).
 - **Nine dead `href="#"` materialised** as five real in-app destinations with `scroll-margin-top`
   plus four real external platform profiles; the source's blank `#fafafa` below the card becomes
   real content.
-- **Real icons:** `lucide-react` platform marks inside the same 40 px / 30 px circles — the source's
+- **Real icons:** inline-SVG platform marks inside the same 40 px / 30 px circles — the source's
   `span.fa` glyphs render 0 × 0 px in the live preview (no icon font, no `@font-face` for
   Font Awesome) and only its marketing screenshot shows the marks.
 - **A real webfont:** one Google Fonts `<link>` for **Poppins 400/500/700** — the source declares

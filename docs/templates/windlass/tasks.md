@@ -53,8 +53,9 @@ or any copy verbatim. Design notes: `docs/templates/windlass/design-notes.md`.
 - [ ] Google Fonts `<link>` in `index.html`:
       `https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap`
       (a **delta**: the source loads **no** webfont and renders Arial; its eight self-hosted Roboto
-      files are dead weight and are never copied). Icons: `lucide-react` (`Menu` bars glyph,
-      `Facebook`, `Twitter`, `Instagram`, `Dribbble`)
+      files are dead weight and are never copied). Icons: `lucide-react` (`Menu` bars glyph) plus **inline-SVG brand marks**
+      for `Facebook`, `Twitter`, `Instagram`, `Dribbble` (lucide-react exports no
+      brand icons)
 - [ ] `@theme` tokens in `src/index.css`: `--color-accent: #fc7fb2`, `--color-page: #fafafa`,
       `--color-card: #fff`, `--color-card-mobile: #000`, `--color-row: #333333`,
       `--color-row-mobile: rgba(255,255,255,0.7)`, `--color-ring: #e6e6e6`,
@@ -125,7 +126,7 @@ or any copy verbatim. Design notes: `docs/templates/windlass/design-notes.md`.
 - [ ] Tests: each link is a **real external destination** (`target="_blank" rel="noreferrer"`) and
       carries the platform name as its accessible name — the source buries the name in
       `<i class="cl-sr-only">` inside a **0 × 0 px** Font-Awesome span (the preview ships no icon
-      font), so the recreation draws real `lucide-react` icons in the same circles
+      font), so the recreation draws real **inline-SVG brand marks** in the same circles
 
 ## Mobile card + full-width collapse panel (TDD)
 
@@ -188,7 +189,7 @@ or any copy verbatim. Design notes: `docs/templates/windlass/design-notes.md`.
       (`#007bff`/`#0056b3`/`#6c757d`/`#212529`/`#f8f9fa`), the `cl-collapsed` class the sheet never
       styles, the system `Roboto` body stack, and all Roboto woff2 files
 - [ ] Documented deltas recorded in the PR: new name + own wordmark, own five labels and four icon
-      links, the nine dead `href="#"` materialised, real `lucide-react` icons instead of the
+      links, the nine dead `href="#"` materialised, real inline-SVG platform marks instead of the
       0 × 0 px Font-Awesome spans, a real Google Fonts Poppins `<link>` instead of eight dead
       self-hosted Roboto files, restored hover/`focus-visible` affordances, `aria-current` on the
       current row, reduced-motion handling, the blank filler page replaced with real content, and

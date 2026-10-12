@@ -47,8 +47,9 @@ Design notes: `docs/templates/betrothal/design-notes.md`.
 - [ ] Google Fonts `<link>` in `index.html`:
       `https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;500;700&family=Work+Sans:wght@400;500;600;700&display=swap`
       (Arima Madurai = headings/display, Work Sans = body/UI). Icons:
-      `lucide-react` (`Ring`/`Heart`, `Menu`, `X`, `Search`, `ChevronDown`,
-      `Clock`, `MapPin`, `Camera`, `Church`, `Send`, plus social glyphs)
+      `lucide-react` (`Gem`/`Heart`, `Menu`, `X`, `Search`, `ChevronDown`,
+      `Clock`, `MapPin`, `Camera`, `Church`, `Send` — lucide has **no** `Ring`
+      glyph — plus **inline-SVG brand marks** for the socials)
 - [ ] `@theme` tokens in `src/index.css`: `--color-brand: #d48f4c`
       (buttons, active nav underline, eyebrows, ornaments),
       `--color-body: #747e8c` (body/paragraph ink), `--color-ink:
@@ -68,7 +69,7 @@ Design notes: `docs/templates/betrothal/design-notes.md`.
 - [ ] Red: `SectionTitle` asserts a small **uppercase gold `#d48f4c`** eyebrow
       over a **dark serif H2** (`--font-display`) with a **gold wave ornament**
       divider beneath; the ornament is decorative only (`aria-hidden`)
-- [ ] Green: `<SectionTitle eyebrow heading />` reusing a lucide/`Ornament`
+- [ ] Green: `<SectionTitle eyebrow heading />` reusing a lucide glyph inside an `Ornament`
       divider element; centred by default, `align="left"` variant for the
       Story/RSVP text blocks
 
@@ -89,7 +90,7 @@ Design notes: `docs/templates/betrothal/design-notes.md`.
       above a centred nav row; nav has Home, Wedding Plans, Photo Album, Blog,
       Pages (dropdown: Story, Gallery, Rsvp, Guestbook, Blog Details) + a
       search toggle; active link asserts colour **`#d48f4c`** with an underline
-- [ ] Green: `<Header>` with the ring logo (`Ring`/`Heart` lucide icon),
+- [ ] Green: `<Header>` with the ring logo (`Gem`/`Heart` lucide icon — no lucide `Ring` exists),
       wordmark, nav and a keyboard-operable dropdown + search control
 - [ ] Guard: assert `aria-expanded` on the dropdown/mobile toggle and a mobile
       collapse at small widths; assert **no** `href="#"` dead anchors

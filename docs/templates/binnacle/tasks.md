@@ -64,7 +64,9 @@ Design notes: `docs/templates/binnacle/design-notes.md`.
       `https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap`
       (a **delta**: the source loads **no** webfont and renders Arial; its eight self-hosted Roboto
       files are dead weight and are never copied). Icons: `lucide-react` (`Phone`, `Search`, `Menu`
-      bars, `ChevronDown` for the caret, plus `Facebook`/`Twitter`/`Instagram`/`Dribbble`-style
+      bars, `ChevronDown` for the caret) plus **inline-SVG brand marks** for
+      `Facebook`/`Twitter`/`Instagram`/`Dribbble` (lucide-react exports no brand
+      icons, so it cannot supply these) in the
       tiles — substitute generic icons if a brand glyph is unavailable)
 - [ ] `@theme` tokens in `src/index.css`: `--color-accent: #f1bc31`, `--color-page: #fafafa`,
       `--color-strip: #202020`, `--color-tile: #4d4d4d`, `--color-bar: #fff`, `--color-row: #4d4d4d`,

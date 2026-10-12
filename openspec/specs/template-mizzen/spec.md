@@ -240,7 +240,7 @@ glyphs, no inline SVG `<path>` data, no text verbatim) and never reuses the sour
     **no** icon font, and the markup puts only an `<i class="cl-sr-only">Facebook</i>`-style label
     inside each `span.fa` — measured **0 × 0** (each span's box sits at the circle's centre, e.g.
     `68, 230` for the first). The source therefore shows **four blank grey-outlined circles**; the
-    recreation must supply real `lucide-react` glyphs (delta).
+    recreation must supply real inline-SVG brand marks (delta).
   - **Brand column (inner `div.cl-col-md-6.cl-text-center`):** `flex:0 0 50%; max-width:50%`,
     `text-align:center`; measured **458 px at `x = 491`** (1440 px) / **378** (1200) / **308.7**
     (992/991) / **234** (768) / full width below 768.
@@ -433,7 +433,8 @@ scroll. With the mobile panel expanded at 767 px the document grows to **933 px*
    measurably shrinks to **278.7 px** and at 768 px to **204 px**.
 10. **The circles do not render glyphs**: no icon font ships, no `.fa-*` rule exists, and each span
     holds only an `sr-only` label → the source shows **four blank outlined circles** (measured
-    `0 × 0` glyphs). Real `lucide-react` glyphs (Facebook/Twitter/Instagram/Dribbble equivalents or
+    `0 × 0` glyphs). Real glyphs — **inline-SVG brand marks** for the socials (lucide-react exports
+none) or
     generic icons) are a **delta**, and the accessible names must stay (`aria-label` on each circle).
     The **toggler's** bars glyph *does* render (inline SVG, 13.7 × 16) — handle the two differently.
 11. **The social row is top-aligned, not vertically centred**: the `33.33 %` column is a flex
@@ -520,7 +521,7 @@ scroll. With the mobile panel expanded at 767 px the document grows to **933 px*
   with the chrome row (not vertically centred)
 - **And** the first circle sits flush with the container's content left edge (**48 px** at ≥768 px)
 - **And** hovering a circle fills it **`#ff0000`** (border too) with a **white** glyph
-- **And** each circle shows a real `lucide-react` glyph (the source ships no icon font and renders
+- **And** each circle shows a real inline-SVG brand mark (the source ships no icon font and renders
   **blank** `0 × 0` glyphs — a documented delta) with an accessible name (`aria-label`/`sr-only`),
   and each is a real destination with a `focus-visible` ring
 
@@ -663,7 +664,7 @@ scroll. With the mobile panel expanded at 767 px the document grows to **933 px*
   ≈ **147 × 48**, own strings
 - [ ] Social row: **four `40 × 40` circles**, `1px solid #e6e6e6`, `border-radius:50%`, no
   background, `4 px` apart, **top-aligned** at the container's content left edge (`x = 48` at
-  1440 px), hover fill `#ff0000` + white glyph; real `lucide-react` glyphs with accessible names
+  1440 px), hover fill `#ff0000` + white glyph; real glyphs (lucide + inline-SVG brand marks) with accessible names
   (the source's are **blank** — delta)
 - [ ] Search field: **`300 × 50`** at ≥992 px (clamped below), `border-radius:40px`,
   `overflow:hidden`, `1px solid rgba(255,255,255,0.1)` ring, input `calc(100% - 50px)`/`50 px`/
@@ -707,7 +708,7 @@ scroll. With the mobile panel expanded at 767 px the document grows to **933 px*
   `.cl-dropdown-menu-right` / `.cl-nav-link.disabled` rules, the `cl-order-lg-last` class on the
   search form, the `[data-toggle="panel-collapse"]` script branch, and all Roboto woff2 files
 - [ ] Documented deltas recorded in the PR: new name + own wordmark, own row labels and dropdown
-  menu, the thirteen dead `href="#"` materialised, real `lucide-react` icons (socials, magnifier,
+  menu, the thirteen dead `href="#"` materialised, real glyphs (inline-SVG socials, lucide magnifier,
   bars, caret) instead of the inline SVG paths and the missing icon font, a real Google Fonts
   Poppins `<link>` instead of eight dead self-hosted Roboto files, restored hover/`focus-visible`
   affordances, `aria-current` on the current row, keyboard dropdown support, reduced-motion

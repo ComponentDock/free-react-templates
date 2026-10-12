@@ -277,8 +277,9 @@ anchored on-page.
 
 - Images: `https://picsum.photos/seed/celebrant-<n>/<w>/<h>` — hero 1920×1080,
   the four service rows 600×600, the three carousel slides 1400×900.
-- Icons: `lucide-react` only (nav toggle, phone/social glyphs, the six card
-  glyphs, the carousel arrows + chevron, the footer heart).
+- Icons: `lucide-react` for the nav toggle, the phone glyph, the six card
+  glyphs, the carousel arrows + chevron and the footer heart; the four social
+  brand marks are **inline SVG** (lucide-react exports no brand icons).
 - Fonts: Google Fonts `<link>` (Amiri + Quicksand).
 - Decorative mint bands and discs are CSS/`@theme` colours, not images.
 

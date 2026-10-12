@@ -209,7 +209,7 @@ icon-font glyphs, no inline SVG `<path>` data, no text verbatim) and never reuse
     edge (**1275**). **The glyphs do not render:** the sheet declares **no** `.fa-*` font rules and
     ships **no** icon font, and the markup puts only an `<i class="cl-sr-only">Facebook</i>`-style
     label inside each `span.fa` — measured **0 × 0**. The source therefore shows **four blank grey
-    squares**; the recreation must supply real `lucide-react` glyphs (delta).
+    squares**; the recreation must supply real inline-SVG brand marks (delta).
   - **The bar (`nav.ftco-navbar-light`):** **`background:#fff !important`**, `z-index:3`,
     **`padding:0`**, `box-shadow:0px 5px 20px -17px rgba(0,0,0,0.34)`, `position:relative`
     (**not sticky** — the sheet contains **zero** `sticky`/`fixed`). Measured **1440 × 83.8 at
@@ -389,7 +389,7 @@ wrap and the `-15` sibling's 66 px no-wrap are both different shapes).
    substitute.
 10. **The social glyphs are dead**: no icon font ships, no `.fa-*` rule exists, and each span holds
     only an `sr-only` label → the source renders **four blank grey squares**. Real
-    `lucide-react` glyphs (Facebook/Twitter/Instagram/Dribbble equivalents or generic icons) are a
+    **inline-SVG brand marks** for the socials (lucide-react exports **no** brand icons) are a
     **delta**, and the accessible names must stay (`aria-label` on each tile).
 11. **The phone glyph is grey `#808080` while the phone number is white** — a currentColor
     inheritance accident from `body{color:gray}`. Either reproduce it or normalise both to white
@@ -695,7 +695,7 @@ wrap and the `-15` sibling's 66 px no-wrap are both different shapes).
       `cl-bg-dark`/`cl-navbar-dark` colour layers, the unused `.fade` and disabled-link rules, the
       `order-sm-start` class, and all Roboto woff2 files
 - [ ] Documented deltas recorded in the PR: new name + own wordmark, own row labels and dropdown
-      menu, the fourteen dead `href="#"` materialised, real `lucide-react` icons (phone, socials,
+      menu, the fourteen dead `href="#"` materialised, real glyphs (lucide phone/search + inline-SVG socials,
       magnifier, bars) instead of the inline SVG paths and the missing icon font, a real Google
       Fonts Poppins `<link>` instead of eight dead self-hosted Roboto files, restored hover/
       `focus-visible` affordances, `aria-current` on the current row, keyboard dropdown support,

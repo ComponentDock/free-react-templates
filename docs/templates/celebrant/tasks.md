@@ -46,7 +46,8 @@ espousal · matrimony · **celebrant**). Never reuse the source slug
       nav, logo, footer, buttons). Both verified on Google Fonts (HTTP 200)
 - [ ] Icons: `lucide-react` (`Menu`, `X`, `ChevronDown`, `ChevronLeft`,
       `ChevronRight`, `Gem`, `Church`, `Home`, `Mail`, `Wine`, `CalendarCheck`,
-      `Heart`, `Facebook`, `Twitter`, `Instagram`, `Linkedin`)
+      `Heart`) plus **inline-SVG brand marks** for `Facebook`, `Twitter`,
+      `Instagram`, `LinkedIn` (lucide-react exports no brand icons)
 - [ ] `@theme` tokens in `src/index.css`: `--color-brand: #cae8d5`,
       `--color-brand-link: #95d1ab`, `--color-dark: #343a40`,
       `--color-cta: #6c757d` (Get Quote pill), `--color-ink: #000`,

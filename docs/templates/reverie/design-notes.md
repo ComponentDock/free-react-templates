@@ -192,7 +192,7 @@ section text, warm rose-tinted shadows, serif display type.
 | `img/hero.avif|png`, `features/feature-N.*`, `counter-bg.*`, blog/logo images | `https://picsum.photos/seed/reverie-<n>/<w>/<h>` placeholders |
 | `img/logo.svg`, `img/footer-logo.svg` (`DREAMS`) | an original serif `REVERIE` wordmark (no image) |
 | `img/icon/{hi,ti,si-N,ci-N}.png` line-art icons | `lucide-react` icons |
-| Font Awesome 7 socials + inline SVG sprite (`#i-send`, `#i-heart`) | `lucide-react` (`Facebook`, `Twitter`, `Instagram`, `Dribbble`, `Send`, `Heart`) |
+| Font Awesome 7 socials + inline SVG sprite (`#i-send`, `#i-heart`) | **inline-SVG brand marks** for `Facebook`, `Twitter`, `Instagram`, `Dribbble` (lucide-react exports no brand icons) + `lucide-react` `Send`, `Heart` |
 | self-hosted Cormorant Garamond + Raleway `.woff2` | Google Fonts `<link>` (both faces verified 200) |
 | Bootstrap 5 grid + custom classes | Tailwind 4 utilities + `cn()` |
 | Swiper/owl carousel | small CSS/JS marquee or Swiper only if already a dependency |

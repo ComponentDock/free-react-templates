@@ -62,8 +62,9 @@ paragraph, the address, the phone number, its Google Maps key or the string
 - [ ] Icons: `lucide-react` — `Menu`, `X`, `ChevronDown`, `ChevronRight`,
       `Heart`, `Ribbon`/`Gem` (tie/bow glyph), `Star` (section ornaments),
       `Church`, `Wine`, `Cake`, `Camera`, `Phone`, `MapPin`, `Send`/`ArrowRight`,
-      `Facebook`, `Twitter`, `Instagram`, `Pinterest`, plus the lightbox's
-      `ChevronLeft`/`ChevronRight`
+      plus the lightbox's `ChevronLeft`/`ChevronRight`. The four social brand marks
+      (`Facebook`, `Twitter`, `Instagram`, `Pinterest`) are **inline SVG** —
+      lucide-react exports no brand icons
 - [ ] `@theme` tokens in `src/index.css`: `--color-brand: #E45F74`,
       `--color-brand-2: #E55D73`, `--color-ink: #333`, `--color-copy: #555`,
       `--color-rule: #aaa`, `--color-spine: #ccc`, `--color-panel: #333`,
