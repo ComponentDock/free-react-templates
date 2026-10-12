@@ -3094,7 +3094,7 @@
 ## Wedding (14)
 
 - [x] **Capture 2** — [colorlib](https://colorlib.com/wp/template/capture-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/capture2-free-template.jpg) · [lensly](https://lensly.free.componentdock.com)
-- [~] **Dreamwed** — [colorlib](https://colorlib.com/wp/template/dreamwed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dreamwed-free-template.jpg)
+- [x] **Dreamwed** — [colorlib](https://colorlib.com/wp/template/dreamwed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dreamwed-free-template.jpg) · [cherish](https://cherish.free.componentdock.com)
 - [x] **Forever Always** — [colorlib](https://colorlib.com/wp/template/forever-always/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foreveralways-template-1771943944925.jpg) · [vows](https://vows.free.componentdock.com)
 - [ ] **Honey** — [colorlib](https://colorlib.com/wp/template/honey/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/honey-free-template.jpg)
 - [x] **Hookup** — [colorlib](https://colorlib.com/wp/template/hookup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hookup-free-template.jpg) · [nuptial](https://nuptial.free.componentdock.com)
