@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* palette: one photographic skyline under a single violet→periwinkle brand
+     gradient at 80% opacity. Every glyph on the page is white; the only other
+     surface colour is the near-navy of the countdown tiles. */
+  --font-sans: 'Montserrat', Arial, sans-serif;
+  --font-heading: 'Montserrat', Arial, sans-serif;
+  --font-digit: 'Quantico', Arial, sans-serif;
+
+  --color-brand-from: #b224ef;
+  --color-brand-to: #7579ff;
+  --color-tile: #0d1629;
+  --color-hairline: #ffffff;
+
+  /* the flip a changed digit plays: half a turn out and back. */
+  --animate-turn: turn 500ms linear;
+
+  @keyframes turn {
+    0% {
+      transform: rotateX(0deg);
+    }
+    50% {
+      transform: rotateX(-90deg);
+    }
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.5;
+    color: #212529;
+  }
+}
