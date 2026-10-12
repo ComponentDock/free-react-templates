@@ -1,0 +1,18 @@
+{
+  "name": "Paperie — Wedding Template",
+  "short_name": "Paperie",
+  "description": "A free wedding invitation template: a photograph hero under a translucent magenta disc, a story band, the running order of the day, a gallery, a guest book and a map.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#800098",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
