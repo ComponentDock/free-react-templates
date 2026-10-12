@@ -171,6 +171,15 @@ the source name, its copy verbatim or its typos.
     *Name*, *Email*, *Services* (select), *Guest* (select) — and a centred
     submit button **"SEND A REQUEST"** (`.site-btn`). Inputs: `height:50px;
     border:1px solid #e1e1e1; padding-left:20px; font-size:14px; color:#666`.
+    Its two controls are real `<select class="nice-select" name="service">` /
+    `name="guests"` elements carrying the source's **own option lists** — a
+    `Services` placeholder then *Photos & Video · Wedding Makeup · Restaurant ·
+    Live Music & DJ · Wedding Cake · Honeymoon*, and a `Guest` placeholder then
+    *Up to 50 · 50 to 100 · 100 to 200 · More than 200* (every real option has
+    **no `value` attribute** — its label is the value). The form also ends with a
+    **visitor-invisible decoy field** (`<input type="text" name="website"
+    tabindex="-1" autocomplete="off" hidden>`, repeated in the footer pill form)
+    — see the endpoints bullet below for the delta.
   - **Blog ("latest"):** white `spad` band, `h2` "OUR BLOG" and **three** cards
     — a photo, a meta row (`ul li`: "Inspiration" · "Nov 27, 2019" · "05
     Comments", 17 px **italic Cormorant Garamond `#6b705d`**, 25 px apart), and
@@ -264,6 +273,12 @@ the source name, its copy verbatim or its typos.
   (`data-success="Thank you! You are on the list."`); the search overlay's form
   is `action="#"`. Both are replaced by client-side validation with **two
   distinct** inline success states.
+- **Both forms also carry a hidden decoy:** the enquiry form and the footer pill
+  each end with `<input type="text" name="website" tabindex="-1"
+  autocomplete="off" hidden>` — an off-screen bot trap with no label, no
+  `required` and no visible box. The recreation ships **no** hidden decoy field
+  (there is no server-side POST to protect) and keeps only the visible control
+  set; this is a documented delta, not an omission.
 
 ## Design tokens
 
@@ -501,7 +516,12 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
   enquiry card posts to `php/send-email.php` — a different destination from the
   footer pill's `php/subscribe.php`, so the copy is not interchangeable)
 - **And** labels are associated with every control (`<label htmlFor>`), the selects
-  have real option lists, and focus moves to the first invalid field on submit
+  carry the source's option lists (services: Photos & Video · Wedding Makeup ·
+  Restaurant · Live Music & DJ · Wedding Cake · Honeymoon; guests: Up to 50 ·
+  50 to 100 · 100 to 200 · More than 200), and focus moves to the first invalid
+  field on submit
+- **And** no visitor-invisible decoy field ships — the source's `name="website"`
+  bot trap is named in the endpoints bullet above and intentionally dropped
 
 ### Feature: Blog (three-card "Latest" trio)
 
@@ -682,6 +702,9 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
       reduced-motion safe.
 - [ ] Request: `-235px` overlap, `#5e6350` green header card, white 4-field form
       (Name, Email, Services, Guest) with `SEND A REQUEST` and inline validation.
+- [ ] Request selects carry the source's own options (services list + the guest
+      bands Up to 50 / 50 to 100 / 100 to 200 / More than 200), and **no** hidden
+      `name="website"` decoy field ships (documented delta).
 - [ ] Blog: three cards with the italic `#6b705d` meta row and `#111` titles.
 - [ ] Logo strip: `#f7f8f3` band with ten placeholder wordmarks.
 - [ ] Footer: `#3b3e33`, newsletter pill + four social discs, four columns, and the

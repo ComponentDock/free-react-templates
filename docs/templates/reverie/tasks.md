@@ -97,6 +97,15 @@ implementer ships it and the deploy is live.
       rgba(154,87,87,.102)`, `padding:60px 55px 50px`).
 - [ ] Four fields (Name, Email, Services select, Guest select) 2×2; inputs
       `height:50px`, `1px solid #e1e1e1`, 14 px `#666`.
+- [ ] Real `<select name="service">` / `<select name="guests">` carrying the
+      source's options — Services · Photos & Video · Wedding Makeup · Restaurant ·
+      Live Music & DJ · Wedding Cake · Honeymoon, and Guest · Up to 50 ·
+      50 to 100 · 100 to 200 · More than 200 (the source sets no `value` on them,
+      so the label is the value).
+- [ ] **No hidden decoy field:** the source's enquiry *and* footer forms each end
+      with `<input type="text" name="website" tabindex="-1" autocomplete="off"
+      hidden>` (a bot trap). Ship nothing of the kind — a documented delta, since
+      a client-side form has no server-side POST to protect.
 - [ ] Square `SEND A REQUEST` button (`#a3a698`/`#111`).
 - [ ] Client-side validation, per-field messages, focus to first invalid field.
       The source has **two** posts — the enquiry card to `php/send-email.php`

@@ -55,6 +55,21 @@ Vendor CSS referenced by the preview (`bootstrap.css`, `font-awesome.min.css`,
    `input[name=email]`, `textarea[name=message]`, submit button "Confirm now"
    (pill, gradient). Inputs: `border-radius:0; background-color:transparent;
    border:1px solid #656463;` white text; textarea 150px.
+   The form element itself is `<form class="booking-form" id="myForm" action="">`
+   — **empty `action`, no `method`** (a GET self-post; nothing is ever sent
+   anywhere) — and the two "selects" above are jQuery nice-select **divs**
+   (`.nice-select.app-select.form-control` + `<ul class="list"><li data-value=…>`),
+   not `<select>` elements. All three fields carry `required=""` and the email
+   field carries
+   `pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"`; each field
+   blanks its placeholder on focus (`onfocus="this.placeholder = ''"`) and
+   restores it `onblur`; the submit button
+   `class="submit-btn primary-btn mt-20 text-uppercase"` has **no `type`**
+   (default submit) and is followed by `<div class="alert-msg">`, the source's
+   message target. The same placeholder swap appears on the theme's own
+   style-guide form (`elements.html`, `name="first_name"`/`name="last_name"`
+   `required`), so it is the theme's house field pattern — and, being native
+   markup with no `action`, the source form never leaves the page.
 9. Footer: links (Home, About us, Gallery, Reservations) + copyright — the
    reference's `footer.footer-area.section-gap` holds `ul.footer-menu` (those
    four labels, every `href="#"` **dead**) and `div.footer-social`
@@ -109,7 +124,15 @@ for the theme's own component vocabulary.
 - Chrome: repo-standard Navbar (site name, Home link, dark-mode toggle) and
   Footer (Component Dock link) replace the ColorLib topbar/attribution.
 - Countdown: renders a live timer; tests assert the static/test-safe values.
-- Reservation + contact forms are client-side only (no backend).
+- Reservation form is client-side only (no backend). The source's landing page
+  carries **exactly one** form — `#myForm.booking-form` with `action=""` and no
+  `method` — and the theme has **no contact form**: `contact.html` → 404,
+  `generic.html` carries none, and `elements.html` only its style-guide demo
+  `<form action="#">` (`first_name`/`last_name`, the same `onfocus`/`onblur`
+  swap). The recreation therefore validates client-side with per-field errors
+  (the source leans on the browser's native `required` + the email `pattern`),
+  keeps the placeholder visible on focus where the source blanks it, and posts
+  nowhere — both recorded as deltas.
 - The "Pages ▾" dropdown (Generic/Elements) is not recreated — those were
   ColorLib's own demo pages, out of scope for a single-page template.
 - **Accessibility (a delta the reference does not supply):** the live page

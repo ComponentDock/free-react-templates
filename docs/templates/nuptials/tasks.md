@@ -36,8 +36,12 @@
   "Wedding Information" paragraph
   - "Main Ceremony" + "Wedding Party" cards with Date: Friday, 20 March 2018
     / Time: 19.00 / Address: 56/8, West Panthapath) → reservation (photo bg:
-    "Reservation Form", Meal Preferences select Meal 1/2/3, Number of guests,
-    name/email/message) → footer (Home / About us / gallery / reservations +
+    "Reservation Form", Meal Preferences selector Meal 1/2/3, Number of guests
+    1/2/3 (both jQuery nice-select divs, `data-value` 1/2/3), name/email/message
+    fields in `#myForm.booking-form` with `action=""` and **no** `method`, all
+    three `required` + an email `pattern`, `onfocus`/`onblur` placeholder swap,
+    and a `.alert-msg` message target) → footer (Home / About us / gallery /
+    reservations +
     copyright bar rendering the **current year** — the reference writes it with
     its own inline `document.write(new Date().getFullYear())` — with the
     Component Dock link).
@@ -57,7 +61,8 @@
   (no filters);
   countdown as live timer (static/test-safe values in tests); info cards with
   lucide icons + Date/Time/Address meta; reservation form client-side only
-  (select, number, text inputs; no backend); all images
+  (two nice-select-style selectors, three `required` text/email/textarea fields,
+  an email `pattern` check, per-field errors, no backend and no POST); all images
   picsum-seeded (`picsum.photos/seed/nuptials-N/w/h`); Google Fonts Poppins
   via `<link>`.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
@@ -83,6 +88,15 @@
       `@free-react-templates/nuptials`).
 - [ ] TDD: tests first for Navbar, Hero, About, DateStrip, Gallery,
       Countdown, InfoCards, Reservation, Footer, App composition; run red.
+- [ ] `Reservation.tsx`: two nice-select-look selectors (Meal 1/2/3, guests
+      1/2/3), name/email/message fields and a "Confirm now" submit; reproduce the
+      source's native semantics client-side — `required` on all three fields and
+      the email check `[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$` — with
+      per-field errors, values preserved on an invalid submit, focus to the first
+      invalid field, and **no** POST (`action=""`, no `method`, the source's
+      `.alert-msg` slot becomes the inline error/success region). Delta: the
+      source blanks each placeholder on focus (`onfocus`/`onblur`); the
+      recreation keeps it visible and relies on its labels.
 - [ ] Footer copyright bar: render `Copyright © <current year> All rights
       reserved | This template is made with ♥ by <Component Dock link>` — the
       reference produces its year with its own inline

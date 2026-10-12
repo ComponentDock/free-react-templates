@@ -254,7 +254,13 @@ every value above (the page ships no archive twin and no `/etc/cs/` demo).
    shadow) with a 2×2 field grid and a square `SEND A REQUEST` button. Source's
    enquiry form posts to `php/send-email.php` (its footer pill posts to
    `php/subscribe.php` — two different destinations); recreation validates
-   client-side and confirms in place.
+   client-side and confirms in place. The two `<select class="nice-select"`
+   controls carry the source's own option lists — service: Photos & Video ·
+   Wedding Makeup · Restaurant · Live Music & DJ · Wedding Cake · Honeymoon;
+   guests: Up to 50 · 50 to 100 · 100 to 200 · More than 200 (no `value`
+   attribute on any of them, so the label is the value) — and each form ends with
+   a hidden decoy `<input type="text" name="website" tabindex="-1"
+   autocomplete="off" hidden>` that the recreation drops.
 7. **Blog** — three cards, italic Cormorant Garamond `#6b705d` meta row, `#111`
    26 px titles.
 8. **Logo strip** — `#f7f8f3` band, ten monochrome vendor wordmarks (placeholders).
@@ -285,6 +291,8 @@ every value above (the page ships no archive twin and no `/etc/cs/` demo).
 | `js/main.min.js` (mobile menu, search, counter, filter) | React state + `IntersectionObserver` |
 | `php/send-email.php` post (enquiry card form — `data-kit-form`) | client-side validation + an inline "We will reply within one working day" success state |
 | `php/subscribe.php` post (footer pill form) | client-side validation + an inline "You are on the list" success state (a **separate** state from the enquiry card's) |
+| hidden decoy `<input type="text" name="website" tabindex="-1" autocomplete="off" hidden>` (spam trap, in **both** forms) | **dropped** — a client-side form has no server-side POST to protect; the visible control set is unchanged |
+| the `service` / `guests` option lists (`Photos & Video … Honeymoon`; `Up to 50 / 50 to 100 / 100 to 200 / More than 200`, no `value` attributes) | reproduced as real `<select>` option lists with the same labels (the labels double as the services cards' titles) |
 | head metadata (`og:*` ×5, `twitter:*` ×4, `rel=canonical` → `https://your-domain.com/`, `LocalBusiness` JSON-LD, `meta name=generator "Wedding Dreams 3.0.2"`, `img/og-image.jpg`, `img/favicon.svg`) | own head facts only: own title/description/canonical (the app's `*.free.componentdock.com` URL), own SVG favicon, OG/Twitter/JSON-LD written from our own copy or omitted — **no source value, host or image is reused** |
 | Google Analytics (`gtag.js?id=G-XXXXXXXXXX` + `dataLayer` bootstrap) | nothing — no third-party tag ships; the guard asserts no `gtag`/`dataLayer`/`G-…` id in `apps/reverie` |
 

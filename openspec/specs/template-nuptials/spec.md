@@ -83,8 +83,22 @@ layout, colors, typography, and content types (no ColorLib assets copied).
      Panthapath).
   8. Reservation (`reservation-area section-gap`): "Reservation Form" +
      intro copy + Meal Preferences select (Meal 1 / Meal 2 / Meal 3) +
-     Number of guests + name/email/message fields, on photo background
-     (reservation.jpg) with transparent inputs.
+     Number of guests (1 / 2 / 3) + name/email/message fields, on photo
+     background (reservation.jpg) with transparent inputs. The live form is
+     `<form class="booking-form" id="myForm" action="">` — an **empty `action`
+     and no `method`** (a GET self-post that never leaves the page); its two
+     "selects" are jQuery **nice-select** divs
+     (`.nice-select.app-select.form-control` + a `<ul>` whose `<li>` options carry
+     `data-value` 1, 2 or 3),
+     not `<select>` elements; all three fields carry native `required` and the
+     email field carries the source's own email `pattern` (quoted in full in the
+     Requirement below); every field blanks its placeholder on focus
+     (`onfocus="this.placeholder = ''"`, restored `onblur`); a `.alert-msg` div
+     sits under the `class="submit-btn primary-btn mt-20 text-uppercase"`
+     "Confirm now" button as the source's message target. It is the theme's
+     **only** form — `contact.html` 404s, `generic.html` has none, and
+     `elements.html` only its style-guide demo (`<form action="#">` with
+     `first_name`/`last_name`, the same placeholder swap).
   9. Footer: links (Home, About us, Gallery, Reservations) + copyright
      ("All rights reserved | This template is made with ♥ by Colorlib"); the
      copyright's year is produced **at runtime** by the page's own inline
@@ -235,15 +249,32 @@ and address meta.
 ### Requirement: Reservation form
 
 The system SHALL render a reservation section with a heading, a meal
-preference selector, a guest count input, and name/email/message fields.
+preference selector, a guest count selector, and name/email/message fields with
+client-side validation. The reference form is
+`<form class="booking-form" id="myForm" action="">` — an empty `action` and
+**no** `method` (the browser would GET the page itself; the source never posts
+anywhere) — and its two selectors are jQuery **nice-select** divs
+(`.nice-select.app-select.form-control` + a `<ul>` of `<li>` options carrying
+`data-value` 1, 2 or 3) rather
+than `<select>` elements.
 
 #### Scenario: Reservation form content
 
 - **GIVEN** the page is rendered
 - **WHEN** the reservation section is displayed
 - **THEN** it SHALL show the heading "Reservation Form"
-- **AND** it SHALL render a meal preferences select (Meal 1, Meal 2, Meal 3)
-- **AND** it SHALL render name, email, and message fields
+- **AND** it SHALL render a meal preferences selector (Meal 1, Meal 2, Meal 3)
+- **AND** it SHALL render a number-of-guests selector (1, 2, 3)
+- **AND** it SHALL render name, email and message fields and a **"Confirm now"** submit control
+
+#### Scenario: Reservation form validation and field behaviour
+
+- **GIVEN** the reservation form is displayed
+- **WHEN** the user submits with a missing or invalid field
+- **THEN** submission SHALL be blocked with per-field errors, and the entered values SHALL be preserved
+- **AND** the email field SHALL reject any address the source's own pattern rejects — `pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"` on all three fields' `required=""` (the source leans on the browser's native validation and shows its message in the `<div class="alert-msg">` under the submit button)
+- **AND** no navigation or POST SHALL occur (the source's form has an empty `action` and no `method`)
+- **AND** the placeholder behaviour SHALL be a documented delta: the source clears each placeholder on focus (`onfocus="this.placeholder = ''"`) and restores it `onblur`, while the recreation keeps the placeholder visible and relies on its associated labels
 
 ### Requirement: Footer
 
@@ -338,6 +369,11 @@ item below is therefore a documented delta the recreation must supply.
 - [ ] Brand color #c931ff is in `@theme` and used via Tailwind classes.
 - [ ] Hero headline, date strip, gallery, countdown, info cards, reservation
       form, and footer match the reference content types.
+- [ ] Reservation form: meal + guest selectors (nice-select look, `data-value`
+      1/2/3), name/email/message fields, a "Confirm now" submit, and the source's
+      own validation semantics — `required` on all three fields and the email
+      `pattern` — reproduced client-side with no POST (`action=""`, no `method`);
+      the placeholder-swap delta is documented.
 - [ ] Footer copyright bar renders the **computed current year** (the reference
       writes it with its own inline `document.write(new Date().getFullYear())`)
       and links **"Component Dock"** → https://www.componentdock.com/ — no
