@@ -1,0 +1,38 @@
+import { cn } from '@free-react-templates/ui'
+import { DOCK_LABEL, DOCK_URL, FOOTER_NOTE, SITE_NAME } from '../lib/site'
+import { containerClass } from '../lib/styles'
+
+/**
+ * The closing strip below the last section: a pale surface under a hairline, the
+ * page's own line and its one outbound credit, next to a year computed as it renders.
+ * The design stops at the photograph — this footer is the app shell's addition, and
+ * the credit is the only link on the page that leaves it.
+ */
+export function Footer() {
+  return (
+    <footer className="border-t border-black/10 bg-shell">
+      <div
+        className={cn(
+          containerClass,
+          'flex flex-col gap-2 py-6 sm:flex-row sm:items-center sm:justify-between',
+        )}
+      >
+        <p className="text-[14px] text-ink/70">
+          {SITE_NAME} — {FOOTER_NOTE}
+        </p>
+        <p className="text-[14px] text-ink/70">
+          More templates at{' '}
+          <a
+            href={DOCK_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="font-semibold text-brand underline transition-colors duration-300 hover:text-brand-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          >
+            {DOCK_LABEL}
+          </a>{' '}
+          · © {new Date().getFullYear()}
+        </p>
+      </div>
+    </footer>
+  )
+}

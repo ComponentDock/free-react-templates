@@ -1,0 +1,92 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Halyard palette — design tokens for a solid, single-tier navigation bar in
+     normal flow: an opaque white surface whose three-column grid holds six
+     destinations as two mirrored groups around a centred lowercase wordmark.
+     Every label rests in black with the destination already open in the brand
+     green; the bar itself is square, flat and carries no shadow at any state.
+     Below 992px the same six rows live in a 300px off-canvas drawer that slides
+     in from the right over a 50% black veil. Shape language is square
+     everywhere — the bar, the drawer and every row. */
+  --color-brand: #89ba16;
+  --color-brand-hover: #78a312;
+  --color-ink: #212529;
+  --color-label: #000000;
+  --color-close-hover: #ced4da;
+  --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-shell: #f4f5f3;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variant resolves to
+     the page's #89ba16 accent. */
+  --color-primary-50: #f7fce8;
+  --color-primary-100: #edf7c8;
+  --color-primary-200: #dcef95;
+  --color-primary-300: #c6e35a;
+  --color-primary-400: #acd129;
+  --color-primary-500: #89ba16;
+  --color-primary-600: #89ba16;
+  --color-primary-700: #6f9a12;
+  --color-primary-800: #55760e;
+  --color-primary-900: #3c530a;
+
+  --font-sans: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+
+  /* The page hands over at 576 / 768 / 992 / 1200 — the four container tiers, the
+     width where the two lists become a row and the width where the container takes
+     its widest cap. Re-pointing the scale keeps every utility in step. */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  --shadow-drawer: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+
+  --ease-drawer: ease-in-out;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  /* The bar's labels, the drawer's rows and every link on the page carry no
+     underline at any state — the colour change is the affordance. */
+  a {
+    text-decoration: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  ::selection {
+    background: rgba(137, 186, 22, 0.25);
+  }
+  /* Every transition on this page is decorative: the label colour lift, the
+     drawer's travel and the veil's fade all collapse to effectively instant, and
+     no content is ever gated behind motion. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
