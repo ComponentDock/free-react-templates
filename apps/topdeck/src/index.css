@@ -1,0 +1,90 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Topdeck palette — design tokens for a two-tier navigation page: a transparent
+     utility bar (mail + phone, four social glyphs, a 1px white hairline at 40%
+     under it) above a nav row that floats on a full-bleed photograph, paints
+     itself #007bff once it is pinned, opens a 200px white 4px-radius flyout with a
+     10px white triangle, and hands the small breakpoint over to a 300px white
+     panel sliding in from the right with a 36px round submenu toggle. Shape
+     language is mixed on purpose: square everywhere except the flyout surfaces
+     and that one control. */
+  --color-brand: #007bff;
+  --color-brand-shade: #0056b3;
+  --color-ink: #212529;
+  --color-ink-soft: #343a40;
+  --color-flyout-hover: #ebeef0;
+  --color-close-hover: #dee2e6;
+  --color-arrow-hover: #f8f9fa;
+  --color-hairline: rgba(255, 255, 255, 0.4);
+  --color-shell: #0b1016;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variant resolves to
+     the page's #007bff accent. */
+  --color-primary-50: #e6f1ff;
+  --color-primary-100: #cce4ff;
+  --color-primary-200: #99c9ff;
+  --color-primary-300: #66adff;
+  --color-primary-400: #3392ff;
+  --color-primary-500: #007bff;
+  --color-primary-600: #007bff;
+  --color-primary-700: #0069d9;
+  --color-primary-800: #0056b3;
+  --color-primary-900: #004085;
+
+  --font-sans: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+
+  /* The source steps its container widths and its hand-over at
+     576 / 768 / 992 / 1200 — a grid scale, not Tailwind's default 640 / 768 /
+     1024 / 1280. Re-pointing the breakpoints keeps every utility in step. */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  --radius-flyout: 4px;
+
+  --shadow-flyout: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  --shadow-panel: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  ::selection {
+    background: rgba(0, 123, 255, 0.25);
+  }
+  /* Every transition on this page is decorative: the pinned bar's background, the
+     flyout offset and the panel slide all collapse to effectively instant, so no
+     content is ever gated behind motion and the panel appears without sliding. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
