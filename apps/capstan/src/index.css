@@ -1,0 +1,93 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Capstan palette — design tokens for a single quiet strip over a white page. The strip
+     is transparent with a hairline top and bottom rule (rgba(0,0,0,0.05)); it turns black
+     below 992px. The accent is a teal #40bfc1 that shows as a 1px underline wiping under
+     the hovered row and as the sub-list's hover fill. Shape language is square: the strip,
+     its rows and the sub-list carry no radius, and the only rounding anywhere is the 4px
+     find field and the 4px panel. The strip carries no shadow; only the panel does. */
+  --color-page: #ffffff;
+  --color-ink: #808080;
+  --color-accent: #40bfc1;
+  --color-bar-dark: #000000;
+  --color-hairline: rgba(0, 0, 0, 0.05);
+  --color-field-hairline: rgba(255, 255, 255, 0.1);
+  --color-toggler: rgba(255, 255, 255, 0.5);
+  --color-panel-row: rgba(255, 255, 255, 0.7);
+  --color-panel-item: rgba(255, 255, 255, 0.8);
+  --color-panel-rule: rgba(255, 255, 255, 0.3);
+  --color-search-ink: rgba(0, 0, 0, 0.7);
+
+  --font-sans: 'Poppins', Arial, sans-serif;
+
+  /* The page hands over at 576 / 768 / 992 / 1200 — the four container tiers, the width
+     where the field disappears, the width where the rows become a bar, and the width where
+     the container takes its widest cap. Re-pointing the scale keeps every utility in step. */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  /* The only rounding in the chrome: 4px on the find field, 4px on the panel. */
+  --radius-field: 4px;
+  --radius-panel: 4px;
+
+  --shadow-panel: 0 10px 34px -20px rgba(0, 0, 0, 0.41);
+
+  --ease-collapse: ease;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-page);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 0;
+  }
+  /* Every destination on this page is a row on the strip or a card in the content — none of
+     them carries an underline at any state. */
+  a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: var(--color-accent);
+  }
+  h2 {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  button {
+    border-radius: 0;
+  }
+  /* Inline links wear the same teal as the row underline, exactly as the design's own link
+     colour does. */
+  ::selection {
+    background: rgba(64, 191, 193, 0.35);
+  }
+  /* Both transitions on this page are decorative — the underline wiping under a row and the
+     panel travelling to its content height — so under reduced motion they land immediately
+     and nothing is ever gated behind them. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
