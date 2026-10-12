@@ -291,7 +291,15 @@ Paperie stays a one-pager; those pages are read for structure and copy kind only
 2. **Hero** — 800 px at 1200–1600 px, 750 / 560 / 400 below that (the sheet's
    base value is 940 px, never reached at these widths). Two slides, identical
    copy, `fade:true`, and **no arrows and no dots** (`autoplay:false` too) — so on
-   desktop the source effectively shows slide 1 forever. The circle is
+   desktop the source effectively shows slide 1 forever. **Copy entrance:** each
+   slide's three blocks carry `data-animation="fadeInUp"` + `data-delay` (`.3s` /
+   `.5s` / `.9s` on the span, `h1`, `p`) and `main.js` `doAnimations()` — called
+   from slick's `init` and `beforeChange` — adds the `animated fadeInUp` classes
+   (verified live: the static HTML has **no** class, the running DOM does, and
+   `animate.min.css` gives `.animated` a 1 s duration with
+   `@keyframes fadeInUp{0%{opacity:0;translate3d(0,100%,0)} to{opacity:1;translateZ(0)}}`).
+   Reproduce as a CSS keyframe with the same three delays, off under
+   `prefers-reduced-motion: reduce`. The circle is
    `hero__caption.caption-bg` (540 × 540, captioned content centred at 405 × 208);
    per-breakpoint disc sizes 540 / 450 / 350 / 220. The date line's dashes are
    `::before`/`::after` 57 × 2 px white bars at ±76 px, hidden below 768 px.
@@ -356,6 +364,7 @@ Paperie stays a one-pager; those pages are read for structure and copy kind only
 | Rotating `hero_circle.png` sprite | CSS circle `rgba(129,29,146,.85)` + dashed white ring + 30 s rotation |
 | `logo.png` sprite wordmark | Text wordmark: "Paperie" in `#800098` + a `#ff0b0b` full stop |
 | `data-background` jQuery script | Inline `style={{ backgroundImage }}` or a Tailwind arbitrary background |
+| slick `doAnimations()` reading `[data-animation]`/`data-delay` on slide change | CSS keyframe (`fadeInUp`, .3/.5/.9 s) triggered per slide, off under reduced motion |
 | slicknav mobile bar (cloned DOM) | Accessible disclosure (`aria-expanded`, focusable rows) |
 | nice-select overlay hiding the `<select>` | Real `<select>` styled to the same skin |
 | magnific-popup lightbox | `<dialog>`-based lightbox, keyboard operable |

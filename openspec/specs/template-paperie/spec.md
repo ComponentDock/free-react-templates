@@ -69,7 +69,14 @@ React 19 + Tailwind CSS 4 + TypeScript.
     sprite). Inside, centred: a white uppercase 23 px date line flanked by two
     white 57 × 2 px dashes, the couple names in **Playfair Display 65 px /
     700**, then a white uppercase 23 px "we are getting married" line. Two slides
-    cross-**fade** (slick, `autoplay:false`, `arrows:false`, `dots:false`).
+    cross-**fade** (slick, `autoplay:false`, `arrows:false`, `dots:false`). The
+    three copy blocks of each slide **enter with a staggered `fadeInUp`** — the
+    source's `main.js` `doAnimations()` reads every `[data-animation]` /
+    `data-delay` inside the incoming slide on slick's `init`/`beforeChange` and
+    applies `animated <name>`, so the date line (`.3s`), the names (`.5s`) and
+    the tagline (`.9s`) rise 100 % from below while fading in over 1 s
+    (`animate.min.css`: `.animated{animation-duration:1s;animation-fill-mode:both}`,
+    `@keyframes fadeInUp{0%{opacity:0;transform:translate3d(0,100%,0)} to{opacity:1;transform:translateZ(0)}}`).
   - **Our Story:** a 200 px/100 px band, two columns — a portrait photo
     (530 × 625) with a **watercolour sprig (215 × 302) at its bottom-left**, and
     the text column with a small sprig image (106 × 61) above the **Playfair
@@ -211,6 +218,10 @@ carrying the wedding date, the couple names and a tagline.
 - **AND** inside the circle it SHALL show the date line in white uppercase with a
   57 × 2 px white dash on each side, the couple names in Playfair Display 65 px /
   700 white, and a white uppercase tagline beneath
+- **AND** the three copy blocks SHALL enter with a staggered `fadeInUp`
+  (`opacity 0 → 1`, `translateY(100%) → 0`, 1 s) at the source's delays — date
+  `0.3 s`, names `0.5 s`, tagline `0.9 s` — and that entrance SHALL be
+  suppressed under `prefers-reduced-motion: reduce`
 - **AND** the circle SHALL rotate continuously (30 s linear) unless the user
   requests reduced motion
 
@@ -397,7 +408,8 @@ contentinfo landmarks, plus a scroll-to-top control.
       rows, `aria-expanded`
 - [ ] Hero: full-bleed photo + `rgba(0,0,0,.1)` scrim, 540 px purple circle
       `rgba(129,29,146,.85)` with a white dashed ring rotating 30 s, fill-height
-      800/750/560/400 px at the breakpoints, two fade slides, reduced-motion safe
+      800/750/560/400 px at the breakpoints, two fade slides, the copy's
+      staggered `fadeInUp` entrance (.3/.5/.9 s), reduced-motion safe
 - [ ] Story: photo + bottom-left sprig, sprig above the Playfair 40 px / 700
       uppercase heading, two `#978e98` paragraphs, pale edge ornaments
 - [ ] Schedule: `#fefcfa` band, three columns with 237 px ringed circular photos

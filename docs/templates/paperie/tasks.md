@@ -119,14 +119,17 @@ Design notes: `docs/templates/paperie/design-notes.md`.
       (disabled under `prefers-reduced-motion`); inside — a white uppercase 23 px
       date line flanked by two 57 × 2 px white dashes at ±76 px, the couple names
       in Playfair Display 65 px / 700 white capitalize, a white uppercase 23 px
-      tagline
+      tagline, and a staggered `fadeInUp` entrance (.3/.5/.9 s: opacity 0 → 1,
+      `translateY(100%)` → 0, 1 s — the source's `[data-animation]`/`data-delay`
+      hooks applied on slick's `init`/`beforeChange`)
 - [ ] Green: `<Hero>` — two slides that cross-**fade** (slick shipped
       `autoplay:false, fade:true, arrows:false, dots:false`, so no controls are
       visible); placeholders
       `picsum.photos/seed/paperie-1/1920/1080` and `seed/paperie-2/1920/1080`
-- [ ] Guard: assert the circle ring is dashed, the rotation is suppressed under
-      reduced motion, the slider is pause-able and keyboard/touch operable, and
-      the copy is legible over the scrim
+- [ ] Guard: assert the circle ring is dashed, the rotation **and** the copy's
+      `fadeInUp` entrance are suppressed under reduced motion, the slider is
+      pause-able and keyboard/touch operable, and the copy is legible over the
+      scrim
 
 ## Our Story (`OurStory`) (TDD)
 
