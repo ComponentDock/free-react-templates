@@ -22,9 +22,12 @@ TypeScript.
   the primary overridden) — implementers do NOT need to re-fetch
   anything.
 - **Preview screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/logis-free-template.jpg
-  — ⚠️ served as a **REAL AVIF 1200×946** despite the `.jpg` extension
-  (54,325 bytes; converted to PNG locally for vision analysis,
-  2026-10-01). Shows the hero (parcel-scanner warehouse photo, white
+  — ⚠️ at prep time (2026-10-01) served as a **REAL AVIF 1200×946** despite the
+  `.jpg` extension (54,325 bytes; converted to PNG locally for vision analysis).
+  **Re-measured 2026-10-13 the same URL answers `image/jpeg`** (110,385 B, body
+  signature `ffd8ffe0`, JFIF) — the CDN rotates the stored variant, so decode the
+  bytes you actually receive instead of trusting the extension or the old reading.
+  Shows the hero (parcel-scanner warehouse photo, white
   "WE MAKE SHIPPING" h1, orange GET STARTED! button) and the About Us
   section below. NOTE: the screenshot's navbar shows only 6 links
   (Home, About Us, Services, Industries, Blog, Contact) — the LIVE

@@ -8,7 +8,7 @@
 | Recreation name | **Billstack** (NEW — stacked bill/invoice rows; single lowercase word) |
 | Slug | `table-09` |
 | Source page | https://colorlib.com/wp/template/table-09/ |
-| Live preview | https://preview.colorlib.com/theme/bootstrap/table-09/ (HTTP 200, 3,206 bytes, `<title>Table 09</title>`; slug-only URL 404s — `bootstrap/` path required, same as table-01…08) |
+| Live preview | https://preview.colorlib.com/theme/bootstrap/table-09/ — ⚠️ **re-measured 2026-10-13 it answers 404 (9 B `Not Found`, the host's own body)**, after being HTTP 200, 3,206 bytes with `<title>Table 09</title>` at prep time (2026-10-01); the slug-only URL has always 404'd (the `bootstrap/` path is the family rule, table-01…08). The demo page is withdrawn, so the prep-time DOM + ZIP are the reference |
 | Stylesheet | `https://preview.colorlib.com/theme/bootstrap/table-09/css/style.css?v=6a783924` — HTTP 200, 12,619 bytes, self-contained ("Every style this snippet uses, and nothing else. No framework, no build step."). ⚠️ The `table-09/` path segment before `css/` is required. Fetchable at prep time (2026-10-01). Byte-identical (same SHA-256 `3235ade3c556323801330732a9783657ff837d70f5ba4b4276052d23c0201cf9`) to `css/style.css` inside the source ZIP — CSS values canonical |
 | Source ZIP | https://preview.colorlib.com/downloads/free/table-09.zip — HTTP 200, 254,645 bytes (index.html + css/style.css + Roboto woff2 fonts 100/300/400/700 latin & latin-ext + README.md — **NO js/ directory**) |
 | Preview JS | **NONE** — the live DOM loads zero `<script>` tags (verified 2026-10-01). **This template is entirely static** (like table-06/07 — NOT like table-08's JS accordion) |

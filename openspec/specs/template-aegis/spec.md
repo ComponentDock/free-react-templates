@@ -27,11 +27,19 @@ TypeScript.
 - **Original:** ColorLib "Shieldnet" — cybersecurity / threat protection
   platform landing template (source: https://colorlib.com/wp/template/shieldnet/).
 - **Preview DOM analyzed:** `https://preview.colorlib.com/theme/shieldnet/`
-  returns 404; the ColorLib preview portal hosts the demo at
-  `https://shieldnet-colorlib.pages.dev/` (HTTP 200, ~73 KB HTML +
-  `/_astro/Base.D-cq-pmO.css` ~68 KB parsed for tokens — same
-  `<slug>-colorlib.pages.dev` pattern as Coverly/Dealflow/Freightly). The
-  TEMPLATES.md screenshot (`shieldnet-template-1771944037639.jpg`) is the
+  **now returns HTTP 200** (84,204 B, `text/html; charset=utf-8`, byte-identical
+  to its `/index.html` — re-verified **2026-10-13**; at prep time this slug-only
+  path answered 404 and the demo was reached through the Cloudflare Pages mirror
+  `https://shieldnet-colorlib.pages.dev/`, HTTP 200, ~73 KB HTML +
+  `/_astro/Base.D-cq-pmO.css` ~68 KB parsed for tokens — the
+  `<slug>-colorlib.pages.dev` pattern shared with Coverly/Dealflow/Freightly).
+  ⚠️ **That mirror is gone** (NXDOMAIN as of 2026-10-13, like every other
+  `*-colorlib.pages.dev` host these preps cite), so **the ColorLib preview host is
+  now the reference**: its DOM carries the demo below the host-injected
+  `<meta name="robots" content="noindex, nofollow">` + `dns-prefetch` pair, and the
+  `/index.html` URL is a no-op (200, the page itself). ⚠️ **Post-ship delta:** the
+  shipped `apps/aegis` was built from the mirror's tokens, before this migration.
+  The TEMPLATES.md screenshot (`shieldnet-template-1771944037639.jpg`) is the
   visual reference: stark white page, vibrant rose/red (#e11d48) primary for
   CTAs/logo/stats, dark-mode dashboard mockup graphic in the hero, pill
   buttons, Inter typography, dark gray footer.

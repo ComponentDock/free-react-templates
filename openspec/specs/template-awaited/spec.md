@@ -48,8 +48,11 @@ TypeScript.
   screenshot.
 - **Screenshot:**
   https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-9.jpg
-  (HTTP 200, 125,303 B, served as `image/jpeg` — NOT AVIF for this slug —
-  1200×972, reviewed visually 2026-10-11)
+  — ⚠️ **the CDN re-encodes this object:** read as `image/jpeg` at prep time
+  (2026-10-11, 125,303 B) and **re-measured 2026-10-13 as `image/avif`, 40,808 B**
+  (body signature `ftypavif`), 1200×972 either way, reviewed visually 2026-10-11.
+  Fetch the bytes and decode what you get (`ffmpeg`/PIL handle both variants);
+  never trust the `.jpg` extension or any single reading
 - **New name:** `awaited` (apps/awaited, `@free-react-templates/awaited`) — the
   source demo title "Coming Soon 9", its `bg01.jpg`/`bg02.jpg` photographs, its
   "OCEAN" wordmark image, its inlined fa-brand SVG icons, its "Sign Up" label,
@@ -209,8 +212,9 @@ hover fill `#555`), and white-outline social discs (hover fill `#fff`, glyph
   `/tmp/cs09/src09.html` (the ColorLib page). Research date: 2026-10-11. The
   source HTML/CSS/JS is authoritative for section structure, copy, tokens, and
   behaviour.
-- **Screenshot:** `coming-soon-9.jpg` (served as `image/jpeg`, reviewed visually
-  2026-10-11) confirms the layout: the background reads as a soft, sandy
+- **Screenshot:** `coming-soon-9.jpg` (served as `image/jpeg` at prep time,
+  `image/avif` when re-measured 2026-10-13 — see the Screenshot bullet above;
+  reviewed visually 2026-10-11) confirms the layout: the background reads as a soft, sandy
   lavender/mauve surface with faint photographic texture (the site's own beach
   photo under a low-opacity violet wash + 40% black scrim), fading light at the
   top and warmer in the lower half; top-left a small white wordmark; top-right a

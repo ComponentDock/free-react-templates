@@ -187,7 +187,14 @@ host, and no image preload hint in our `<head>`. Only the delivery attributes ar
 kept: explicit `width`/`height`, `loading="lazy"` below the fold, eager hero,
 `alt=""` on decorative imagery.
 
-## Screenshot analysis (1200×946 JPEG → PNG)
+## Screenshot analysis (1200×946; served JPEG then, `image/avif` now → PNG)
+
+⚠️ **Type-drift note (2026-10-13):** the TEMPLATES.md screenshot URL is
+`.../weddingdreams-free-template.jpg`, but the host now answers **`image/avif`**
+(80,979 B; `vary: Accept, accept-encoding`) while the prep-time fetch got the
+**JPEG** variant (133,536 B, `ffd8ff`). Always decode the fetched file
+(`ffmpeg -y -i shot.raw shot.png`) instead of reading the extension — see the
+spec's Screenshot bullet for the two measured readings.
 
 Browser-chrome mock of the top of the page: white header with the serif `DREAMS`
 wordmark; uppercase letter-spaced nav with a dot under HOME and a magnifier at the

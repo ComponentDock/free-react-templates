@@ -46,9 +46,11 @@ CSS 4 + TypeScript.
   back to the screenshot; here the ZIP is the actual downloadable
   source, so it (plus the screenshot) is the canonical reference.
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/table-with-vertical-horizontal-highlight.jpg
-  — ⚠️ served as a **REAL JPEG 1200×560** progressive JFIF (37,079
-  bytes) despite the `.jpg` extension — no AVIF conversion needed.
-  Analyzed 2026-10-01 with vision: mid-gray `#d1d1d1` canvas; the
+  — ⚠️ at prep time (2026-10-01) served as a **REAL JPEG 1200×560** progressive
+  JFIF (37,079 bytes) despite the `.jpg` extension. **Re-measured 2026-10-13 the
+  same URL answers `image/avif` (14,408 B, body signature `ftypavif`)**, so decode
+  the received bytes (`ffmpeg`/PIL) instead of trusting the extension or the old
+  reading. Analyzed 2026-10-01 with vision: mid-gray `#d1d1d1` canvas; the
   FIRST table (ver1) shown in its hover state — dark plum header band
   with white uppercase day labels, muted gray name/time cells, the
   hovered column (Tuesday) shaded light gray, the hovered row (Beverly

@@ -10,11 +10,14 @@
 
 - **Original:** ColorLib "Shieldnet" — cybersecurity / threat protection
   platform landing Astro template.
-- **Demo DOM analyzed:** https://shieldnet-colorlib.pages.dev/ (HTTP 200,
-  ~73 KB HTML + `/_astro/Base.D-cq-pmO.css` ~68 KB parsed for tokens; the
-  official `https://preview.colorlib.com/theme/shieldnet/` returns 404 —
-  demo hosted on Cloudflare Pages per the ColorLib preview portal, same
-  pattern as Coverly/Dealflow/Freightly).
+- **Demo DOM analyzed:** `https://shieldnet-colorlib.pages.dev/` (the Cloudflare
+  Pages mirror the ColorLib preview portal used at prep time — HTTP 200, ~73 KB
+  HTML + `/_astro/Base.D-cq-pmO.css` ~68 KB parsed for tokens; the same
+  `<slug>-colorlib.pages.dev` pattern as Coverly/Dealflow/Freightly). ⚠️
+  **Re-verified 2026-10-13:** that mirror no longer resolves (NXDOMAIN) **and**
+  the official `https://preview.colorlib.com/theme/shieldnet/` now returns
+  **HTTP 200** (84,204 B, `text/html; charset=utf-8`) — the ColorLib preview host
+  is the reference from here on, and the shipped app predates that migration.
 - **Visual design (screenshot `shieldnet-template-1771944037639.jpg`):**
   stark white page, vibrant rose/red (#e11d48) primary for CTAs, logo,
   stats and the H1 highlight word; dark-mode "Threat Dashboard" mockup in

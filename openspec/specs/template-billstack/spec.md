@@ -23,11 +23,14 @@ stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 - **Preview — REACHABLE at a NON-STANDARD path (verified 2026-10-01
   by direct fetch):** the slug-only URL
   https://preview.colorlib.com/theme/table-09/ returns **HTTP 404
-  "Not Found"** (9-byte body). The live preview lives at:
-  **https://preview.colorlib.com/theme/bootstrap/table-09/**
-  (HTTP 200, 3,206 bytes, HTML `<title>Table 09</title>`). Implementers
-  must use the `bootstrap/` path — do not re-derive the slug-only URL.
-  (Same non-standard layout as table-01…08 and css-table-11/12/16.)
+  "Not Found"** (9-byte body). At prep time the live preview was at
+  **https://preview.colorlib.com/theme/bootstrap/table-09/** — ⚠️ **re-measured
+  2026-10-13 that path also answers 404** (host body, 9 B `Not Found`, not a CDN
+  block), while at prep time it was HTTP 200, 3,206 bytes, HTML
+  `<title>Table 09</title>` and that is the URL the recreation was built from. So
+  no live demo URL reproduces now — the prep-time DOM, the source ZIP and this
+  spec are the reference, and the `bootstrap/` path must not be re-derived as a
+  "live" URL. (Same non-standard layout as table-01…08 and css-table-11/12/16.)
 - **Preview CSS:** the DOM references `css/style.css?v=6a783924`
   (relative to the `bootstrap/` preview path). ⚠️ The correct full URL
   is
@@ -75,9 +78,12 @@ stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   nowhere; the recreation SHALL render them as `<button type="button">`
   (monorepo a11y semantics; identical visuals).
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/table-09.jpg
-  — ⚠️ note: unlike table-05/07/08 this one is served as a **REAL JPEG
-  1200×972** (JFIF, progressive) despite the `.jpg` extension — no
-  AVIF conversion needed. Analyzed 2026-10-01: light warm-gray canvas
+  — ⚠️ note: at prep time (2026-10-01) this one was served as a **REAL JPEG
+  1200×972** (JFIF, progressive) despite the `.jpg` extension — unlike
+  table-05/07/08. **Re-measured 2026-10-13 the same URL answers `image/avif`
+  (13,588 B, body signature `ftypavif`)**, so the object has been re-encoded since:
+  fetch it and decode whatever you get (`ffmpeg`/PIL handle both) instead of
+  trusting the extension or the old reading. Analyzed 2026-10-01: light warm-gray canvas
   `#fafafa`, centered black "Table #09" heading, one white table card
   with the soft shadow, uppercase gray-black header labels (INVOCE ·
   CUSTOMER · SHIP · PRICE · PRUCHASED PRICE · STATUS), 8 data rows —

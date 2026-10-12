@@ -14,7 +14,9 @@ variant either). Replication therefore used the **official source zip**
 (HTTP 200, 436,524 B, `application/zip`) — the real template's own files — as the
 DOM/CSS/behaviour reference, plus the screenshot
 `https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-9.jpg`
-(HTTP 200, 125,303 B, served as `image/jpeg` — NOT AVIF for this slug, 1200×972).
+(HTTP 200, 125,303 B, served as `image/jpeg` — 1200×972 at prep time;
+  ⚠️ re-measured 2026-10-13 it answers `image/avif`, 40,808 B, so decode the
+  fetched bytes rather than trusting the extension).
 
 Reference artifacts: `/tmp/cs09/cs09.zip`, extracted to
 `/tmp/cs09/out/comingsoon_09/` (`index.html` 4,568 B · `css/style.css` 8,825 B ·

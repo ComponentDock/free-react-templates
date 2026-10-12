@@ -33,21 +33,31 @@ the source name, its copy verbatim or its typos.
   preview is the sole DOM/CSS reference for the landing page** (no archive twin
   to diff) — the theme's seven inner pages are live as well (inventoried at the
   end of this section).
-  Reference artifacts saved for this prep (research date 2026-10-12):
-  `/tmp/weddingdreams/live.html`, `/tmp/weddingdreams/main-style.css`
-  (**151,051 B**, sha256
-  `b5f88b0d5015582c93d77966ee10ec414fd94c4fc22988f10ff2e43d48d01601`),
-  `/tmp/weddingdreams/swiper.css` (14,615 B, sha256 `f4760c4f…`),
-  `/tmp/weddingdreams/main.js` (**50,273 B**, sha256
-  `5aac3584284fddf69f8084fe77fdc4e90725185ed2d34e0367ed35c05393c17c`),
+  Reference artifacts saved for this prep (research date 2026-10-12), each with
+  the live path it is a copy of — the basenames below are LOCAL, they are not the
+  source's own filenames: `/tmp/weddingdreams/live.html` ←
+  `https://preview.colorlib.com/theme/weddingdreams/`;
+  `/tmp/weddingdreams/main-style.css` ← `css/style.min.css` (**151,051 B**, sha256
+  `b5f88b0d5015582c93d77966ee10ec414fd94c4fc22988f10ff2e43d48d01601`);
+  `/tmp/weddingdreams/swiper.css` ← `vendor/swiper/14.3.0/swiper-bundle.min.css`
+  (14,615 B, sha256 `f4760c4f…`);
+  `/tmp/weddingdreams/main.js` ← `js/main.min.js` (**50,273 B**, sha256
+  `5aac3584284fddf69f8084fe77fdc4e90725185ed2d34e0367ed35c05393c17c`) — note the
+  host serves a *different*, unminified `js/main.js` (**4,753 B**), so never
+  resolve this artifact by its local name;
   `/tmp/weddingdreams/shot.png` (screenshot, 1200×946) and the live scroll
   captures under `/tmp/weddingdreams/live/`.
 - **Screenshot:**
   https://colorlib.com/wp/wp-content/uploads/sites/2/weddingdreams-free-template.jpg
-  (HTTP 200, **133,536 B**, served as **JPEG** → decoded to PNG with
-  `ffmpeg -y -i shot.raw shot.png`, 1200×946, reviewed visually 2026-10-12). It
-  is a browser-chrome mock of the top of the page (header + hero + the first
-  services row).
+  — **now served as `image/avif`** (HTTP 200, **80,979 B**, re-measured
+  2026-10-13 across five client profiles; `content-type: image/avif`, `vary:
+  Accept, accept-encoding`, body signature `ftypavif`). The prep-time fetch
+  (2026-10-12) got the **JPEG** variant of the same URL (**133,536 B** — its saved
+  `/tmp/weddingdreams/shot.raw` starts `ffd8ff`, JFIF), i.e. the CDN re-encoded the
+  stored object: **never trust the `.jpg` extension or a single reading** — fetch
+  it, then decode with `ffmpeg -y -i shot.raw shot.png` (verified to handle both
+  variants), 1200×946, reviewed visually 2026-10-12. It is a browser-chrome mock of
+  the top of the page (header + hero + the first services row).
 - **New name:** `reverie` (apps/reverie, `@free-react-templates/reverie`) — the
   dream motif of the design (the source titles itself "Dreams"); the source name
   "Weddingdreams"/"Dreams", its `logo.svg`/`footer-logo.svg` wordmarks, its
