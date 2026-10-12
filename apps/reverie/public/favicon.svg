@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Reverie">
+  <rect width="64" height="64" rx="14" fill="#5e6350" />
+  <path d="M32 12c6 8 10 14 10 21a10 10 0 0 1-20 0c0-7 4-13 10-21z" fill="#f7f8f3" />
+  <path d="M32 30v18" stroke="#a3a698" stroke-width="2.5" stroke-linecap="round" />
+</svg>
