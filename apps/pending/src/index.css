@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* palette: white type and hairlines over a full-screen photographic
+     slideshow that is washed by ONE 50% black scrim. There is no brand accent
+     and no gradient — the only hues are the white type/pill border/play disc,
+     the muted #999 glyphs and arrow, the #999999 placeholder, the near-black
+     #333 play glyph, the #555 hovered pill label, the translucent white
+     hairlines (10% on the field underline and the social rings, 5% as the
+     field's focus wash), the #c80000 validation red and the #000 slideshow
+     backdrop. */
+  --font-sans: 'Montserrat', Arial, sans-serif;
+  --font-script: 'Kaushan Script', cursive;
+
+  --color-ink: #333333;
+  --color-hover-ink: #555555;
+  --color-muted: #999999;
+  --color-placeholder: #999999;
+  --color-error: #c80000;
+
+  /* shapes: square corners on the field and the validation bubble, a 25px
+     pill for the outline CTA, and 50% on the play disc and the social rings. */
+  --radius-pill: 25px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    background-color: #000000;
+  }
+}
