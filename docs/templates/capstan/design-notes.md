@@ -179,3 +179,16 @@ everywhere the source says `outline:none`; `aria-current` on the current row; a 
 `aria-expanded`; `Escape` focus management; reduced-motion handling for the `.5s` wipe and `.35s`
 collapse; Google Fonts Poppins instead of eight dead self-hosted Roboto files; the blank filler page
 replaced with real content; and the added footer.
+
+## Prep status (re-verified 2026-10-12)
+
+This prep's spec **failed `openspec validate template-capstan --type spec`** ("Spec must have a
+Requirements section") because its requirements used the older `## Requirements (Gherkin)` header
+with bullet-only `- **Scenario: …**` entries. The requirements section was rewritten to the house
+form (`## Requirements` + `### Requirement:` + `#### Scenario:` with `GIVEN/WHEN/THEN/AND`
+bullets) and now validates clean. **No design fact changed** — every token, measurement, section
+and delta above is unchanged from the original run.
+
+Audit context: with **0** un-prepped `- [ ]` items left on main, the prep stream audits existing
+preps instead of writing new ones. All 30 open-item specs were validated in this sweep; capstan was
+the only failure, and its `tasks.md` + `design-notes.md` are present.

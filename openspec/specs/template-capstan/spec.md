@@ -291,34 +291,53 @@ form still shows at 780 px (it only vanishes below `768 px`).
     `:where(html) … all: revert` reset, the system `Roboto` body stack, and all eight Roboto
     woff2 files.
 
-## Requirements (Gherkin)
+## Requirements
 
 ### Requirement: Heading band
 
-The template SHALL open with the source's heading band — a `section` with `112 px` vertical
-padding over a `#fff` page, holding a centred `28 px` heading in a `50 %`-wide (≥768 px) column
-with a `48 px` bottom margin, so the bar's top edge lands exactly `210 px` below the page top.
+The template SHALL open with the source's heading band - a `section` with `112 px` vertical padding
+over a `#fff` page, holding a centred `28 px` heading in a `50 %`-wide (>=768 px) column with a
+`48 px` bottom margin, so the bar's top edge lands exactly `210 px` below the page top.
 
-- **Scenario: band spacing** — Given a viewport ≥ 768 px, Then the heading is **28 px / 400 /
-  line-height 42 px / #000**, centred, and the strip's top edge is at **y = 210** (112 + 42 + 8
-  + 48); the page background is **`#fff`**.
-- **Scenario: heading is own copy** — Then the string `Website menu #03` never renders, and the
-  app contains **zero** `colorlib`/`website-menu-13` strings.
+#### Scenario: Band spacing
+
+- **GIVEN** a viewport of at least 768 px
+- **WHEN** the heading band renders
+- **THEN** the heading is **28 px / 400 / line-height 42 px / #000**, centred
+- **AND** the strip's top edge is at **y = 210** (112 + 42 + 8 + 48)
+- **AND** the page background is **`#fff`**
+
+#### Scenario: Heading is own copy
+
+- **GIVEN** the built app
+- **THEN** the source string `Website menu #03` never renders
+- **AND** the app contains **zero** `colorlib` / `website-menu-13` strings
 
 ### Requirement: Transparent hairline strip
 
 The header SHALL be a **non-sticky**, **full-bleed** bar whose desktop background is
 **transparent** over the `#fff` page, bounded by **`1px solid rgba(0,0,0,0.05)`** top and bottom
-rules, `z-index:3`, containing one `cl-container` (1140 px at ≥1200 px) with the brand, the list
+rules, `z-index:3`, containing one `cl-container` (1140 px at >=1200 px) with the brand, the list
 and the search form.
 
-- **Scenario: desktop chrome** — Given ≥ 992 px, Then the bar's background is transparent (the
-  page `#fff` shows through), it has the two hairline borders and **no** radius/shadow, and it
-  measures ≈ **63.77 px** tall at `y = 210`.
-- **Scenario: no sticky** — Then scrolling moves the bar out of the viewport (assert a negative
-  `y` after scroll); the sheet contains no `sticky`/`fixed` navigation rule.
-- **Scenario: container tiers** — Then the container is **1140 px** at ≥1200 px, **960 px** at
-  ≥992 px, **720 px** at ≥768 px, with `15 px` gutters removed below `992 px`.
+#### Scenario: Desktop chrome
+
+- **GIVEN** a viewport of at least 992 px
+- **THEN** the bar's background is transparent (the page `#fff` shows through)
+- **AND** it has the two hairline borders and **no** radius or shadow
+- **AND** it measures about **63.77 px** tall at `y = 210`
+
+#### Scenario: No sticky
+
+- **WHEN** the user scrolls down
+- **THEN** the bar moves out of the viewport (assert a negative `y` after scroll)
+- **AND** the sheet contains no `sticky`/`fixed` navigation rule
+
+#### Scenario: Container tiers
+
+- **THEN** the container is **1140 px** at >=1200 px, **960 px** at >=992 px, **720 px** at
+  >=768 px
+- **AND** the `15 px` gutters are removed below `992 px`
 
 ### Requirement: Single-line wordmark
 
@@ -326,29 +345,43 @@ The bar SHALL carry a **single-line**, `text-transform:uppercase`, `20 px` wordm
 left, `#000` on desktop and **`#fff`** below `992 px`, with `padding:5px 0`, `margin-right:16px`,
 pointing at the top of the page, with **no hover colour change**.
 
-- **Scenario: wordmark** — Then the link is own copy (never `Magz.`), uppercase, ≈ `63 × 46` in
-  the 62 px line, `#000` at ≥992 px and `#fff` below, and its colour is identical at rest and on
-  hover.
+#### Scenario: Wordmark
+
+- **THEN** the link is own copy (never `Magz.`), uppercase, about `63 x 46` in the 62 px line
+- **AND** it is `#000` at >=992 px and `#fff` below
+- **AND** its colour is identical at rest and on hover
 
 ### Requirement: Centred six-row list with the teal underline wipe
 
-The bar SHALL render **six** rows in source order — `Home` (current, dropdown-less), `Page`
-(dropdown of four items), `Catalog`, `Work`, `Blog`, `Contact` — inside a list centred by
+The bar SHALL render **six** rows in source order - `Home` (current, dropdown-less), `Page`
+(dropdown of four items), `Catalog`, `Work`, `Blog`, `Contact` - inside a list centred by
 `margin:auto`, each row `13 px / 400 / #808080` with `padding:19.2px 20px` (62 px tall), whose
 label turns `#40bfc1` on hover while a **`1px` full-width `#40bfc1` underline** at `bottom:-1px`
-wipes `scaleX(0) → scaleX(1)` over `0.5s`; the current row keeps the underline permanently and
+wipes `scaleX(0) -> scaleX(1)` over `0.5s`; the current row keeps the underline permanently and
 its label is **`#000`** on desktop.
 
-- **Scenario: rows** — Then exactly six rows render in the given order; the list is `display:none`
-  below `992 px` and `margin:auto` in the middle of the bar at ≥992 px.
-- **Scenario: hover wipe** — Given a hovered non-current row, Then its label is `#40bfc1`, its
-  underline is at `scaleX(1)`, and hovering another row moves it there; at rest it is
-  `scaleX(0)` / hidden.
-- **Scenario: current row** — Then its underline is visible at rest, its desktop label is
-  `#000`, `aria-current="page"` is set, and a visible `focus-visible` ring exists (the source
-  sets `outline:none !important`).
-- **Scenario: reduced motion** — Given `prefers-reduced-motion: reduce`, Then the `0.5s` wipe is
-  disabled.
+#### Scenario: Rows
+
+- **THEN** exactly six rows render in the given order
+- **AND** the list is `display:none` below `992 px` and `margin:auto` in the middle of the bar at
+  >=992 px
+
+#### Scenario: Hover wipe
+
+- **GIVEN** a hovered non-current row
+- **THEN** its label is `#40bfc1`, its underline is at `scaleX(1)`, and hovering another row moves
+  the wipe there
+- **AND** at rest the underline is `scaleX(0)` / hidden
+
+#### Scenario: Current row
+
+- **THEN** its underline is visible at rest, its desktop label is `#000`, `aria-current="page"` is
+  set, and a visible `focus-visible` ring exists (the source sets `outline:none !important`)
+
+#### Scenario: Reduced motion
+
+- **GIVEN** `prefers-reduced-motion: reduce`
+- **THEN** the `0.5s` wipe is disabled
 
 ### Requirement: Dropdown (hover + keyboard)
 
@@ -357,74 +390,117 @@ with four items (`12 px`, `#000`, `padding:4px 24px`) that fill **`#40bfc1` with
 hover/focus, opened on `mouseenter` and on click, navigable by keyboard, and closed on
 `mouseleave`, outside click or `Escape`.
 
-- **Scenario: open/close** — Then `mouseenter` opens (`aria-expanded="true"`), `mouseleave`
-  closes, a click toggles, and an outside click closes it.
-- **Scenario: items** — Then exactly four items render, each own copy (never `Page 1`…`Page 4`),
-  each a real destination, with a **visible** teal hover/focus fill.
-- **Scenario: keyboard** — Then `ArrowDown` on the trigger opens and focuses the first item;
-  ArrowUp/ArrowDown step focus inside the panel; `Escape` closes and returns focus to the
-  trigger; opening a second dropdown closes the first.
-- **Scenario: viewport guard** — Then the panel flips to the left edge (`left:auto; right:0`)
-  rather than overflowing the viewport on the right, and never leaves the viewport at 320 px.
+#### Scenario: Open and close
+
+- **THEN** `mouseenter` opens (`aria-expanded="true"`), `mouseleave` closes, a click toggles, and an
+  outside click closes it
+
+#### Scenario: Items
+
+- **THEN** exactly four items render, each own copy (never the source's `Page 1` to `Page 4`
+  labels), each a real destination, with a **visible** teal hover/focus fill
+
+#### Scenario: Keyboard
+
+- **THEN** `ArrowDown` on the trigger opens and focuses the first item
+- **AND** ArrowUp/ArrowDown step focus inside the panel
+- **AND** `Escape` closes and returns focus to the trigger
+- **AND** opening a second dropdown closes the first
+
+#### Scenario: Viewport guard
+
+- **THEN** the panel flips to the left edge (`left:auto; right:0`) rather than overflowing the
+  viewport on the right
+- **AND** it never leaves the viewport at 320 px
 
 ### Requirement: Search form
 
-The bar SHALL carry a `257 × 46` search field with a `4 px` radius at its right end on desktop
-(≥768 px), holding a `209 px` white `14 px` input (`padding:6px 12px 6px 16px`, ink
-`rgba(0,0,0,.7)`) and a `46 × 46` white submit button with a `16 px` magnifier, **hidden entirely
+The bar SHALL carry a `257 x 46` search field with a `4 px` radius at its right end on desktop
+(>=768 px), holding a `209 px` white `14 px` input (`padding:6px 12px 6px 16px`, ink
+`rgba(0,0,0,.7)`) and a `46 x 46` white submit button with a `16 px` magnifier, **hidden entirely
 below `768 px`**.
 
-- **Scenario: field geometry** — Given ≥ 992 px, Then the field is ≈ `257 × 46`, radius `4 px`,
-  hairline `rgba(255,255,255,.1)` (left edge `rgba(0,0,0,.05)`), and its right edge sits on the
-  container's inner right edge.
-- **Scenario: hidden on small screens** — Given < 768 px, Then the form is not rendered/visible.
-- **Scenario: accessible + real submit** — Then the input is **labelled** (the source has a bare
-  placeholder only), the button has an accessible name, the form has `role="search"` and
-  `preventDefault()`s a real submit handler instead of `action="#"`, and a visible `focus-visible`
-  ring exists (the source removes all outlines).
+#### Scenario: Field geometry
 
-### Requirement: Mobile strip + collapse
+- **GIVEN** a viewport of at least 992 px
+- **THEN** the field is about `257 x 46` with radius `4 px`
+- **AND** its hairline is `rgba(255,255,255,.1)` with a `rgba(0,0,0,.05)` left edge
+- **AND** its right edge sits on the container's inner right edge
+
+#### Scenario: Hidden on small screens
+
+- **GIVEN** a viewport below 768 px
+- **THEN** the form is not rendered or visible
+
+#### Scenario: Accessible and real submit
+
+- **THEN** the input is **labelled** (the source has a bare placeholder only) and the button has an
+  accessible name
+- **AND** the form has `role="search"` and `preventDefault()`s a real submit handler instead of
+  `action="#"`, and the URL hash does not change on submit
+- **AND** a visible `focus-visible` ring exists (the source removes all outlines)
+
+### Requirement: Mobile strip and collapse
 
 Below `992 px` the bar SHALL turn **`#000`** (`padding:10px 15px`, `68 px`), the wordmark `#fff`,
-show a toggler (**third in DOM**, `◫ Menu`, `rgba(255,255,255,0.5)`, uppercase `16 px`,
+show a toggler (**third in DOM**, `bars Menu`, `rgba(255,255,255,0.5)`, uppercase `16 px`,
 `letter-spacing:.1em`) that reveals a collapsing height-animated panel of the six rows
 (`rgba(255,255,255,.7)`, hover `#fff`, **current row `#40bfc1`**, underline disabled), whose
 `Page` sub-list is **always expanded** in flow (`#000`, `1px rgba(255,255,255,.3)` left rule,
 items `rgba(255,255,255,.8)`).
 
-- **Scenario: mobile chrome** — Given < 992 px, Then the bar is `rgb(0,0,0)`, `68 px` tall, the
-  wordmark is white, the toggler is visible and the list is not shown as rows until activated.
-- **Scenario: collapse** — Then activating the toggler reveals the panel with a `0.35s ease`
-  height animation and `aria-expanded="true"`; a second activation hides it (`aria-expanded`
-  `false`); hidden rows are not focusable.
-- **Scenario: mobile dropdown** — Then the sub-list is expanded in flow (`display:block`),
-  `#000`, with a left rule, and the trigger's `aria-expanded` is **consistent** with that
-  visible state (or a real disclosure control is provided instead — never a closed marker over a
-  visible list).
-- **Scenario: mobile current row** — Then the current row's label is `#40bfc1` and its underline
-  is disabled.
+#### Scenario: Mobile chrome
+
+- **GIVEN** a viewport below 992 px
+- **THEN** the bar is `rgb(0,0,0)` and `68 px` tall, the wordmark is white, the toggler is visible
+  and the list is not shown as rows until activated
+
+#### Scenario: Collapse
+
+- **THEN** activating the toggler reveals the panel with a `0.35s ease` height animation and sets
+  `aria-expanded="true"`
+- **AND** a second activation hides it (`aria-expanded="false"`)
+- **AND** hidden rows are not focusable
+
+#### Scenario: Mobile dropdown
+
+- **THEN** the sub-list is expanded in flow (`display:block`), `#000`, with a left rule
+- **AND** the trigger's `aria-expanded` is **consistent** with that visible state (or a real
+  disclosure control is provided instead - never a closed marker over a visible list)
+
+#### Scenario: Mobile current row
+
+- **THEN** the current row's label is `#40bfc1` and its underline is disabled
 
 ### Requirement: Materialised destinations
 
-The recreation SHALL turn the source's **ten dead `href="#"`** anchors (six rows + four dropdown
-items) into **ten real in-app destinations** with `scroll-margin-top`, and SHALL contain **zero**
-`href="#"`.
+The recreation SHALL turn the source's **ten dead `href="#"`** anchors (six rows plus four
+dropdown items) into **ten real in-app destinations** with `scroll-margin-top`, and SHALL contain
+**zero** `href="#"`.
 
-- **Scenario: no dead links** — Then the app contains no `href="#"`, and each of the ten
-  destinations resolves to a real `id`/route.
-- **Scenario: real content** — Then the source's blank `112 px` of `#fff` below the strip is
-  replaced by real sections of the source's *kinds* (home/intro for the wordmark, a current-page
-  block, a pages group for the four dropdown items, blocks for the three plain rows), so the page
-  is taller than the viewport and the non-sticky bar genuinely scrolls away. Imagery (optional;
-  the source ships none) uses `https://picsum.photos/seed/capstan-<n>/<w>/<h>`.
+#### Scenario: No dead links
 
-### Requirement: Footer + attribution
+- **THEN** the app contains no `href="#"`, and each of the ten destinations resolves to a real
+  `id` or route
+
+#### Scenario: Real content
+
+- **THEN** the source's blank `112 px` of `#fff` below the strip is replaced by real sections of
+  the source's *kinds* (home/intro for the wordmark, a current-page block, a pages group for the
+  four dropdown items, blocks for the three plain rows), so the page is taller than the viewport
+  and the non-sticky bar genuinely scrolls away
+- **AND** imagery (optional; the source ships none) uses
+  `https://picsum.photos/seed/capstan-<n>/<w>/<h>`
+
+### Requirement: Footer and attribution
 
 Every template SHALL end with a footer linking **`https://www.componentdock.com/`** ("Component
-Dock") with a computed current year — a documented delta, since the source has no footer.
+Dock") with a computed current year - a documented delta, since the source has no footer.
 
-- **Scenario: attribution** — Then exactly one `https://www.componentdock.com/` link branded
-  "Component Dock" (new tab, `rel="noreferrer"`) and a computed year render in the footer.
+#### Scenario: Attribution
+
+- **THEN** exactly one `https://www.componentdock.com/` link branded "Component Dock" (new tab,
+  `rel="noreferrer"`) and a computed year render in the footer
 
 ## Verification checklist
 
@@ -510,3 +586,25 @@ Dock") with a computed current year — a documented delta, since the source has
 - **Reduced-motion handling** for the `.5s` underline wipe and the `.35s` collapse.
 - **An added footer** linking `https://www.componentdock.com/` ("Component Dock") with a computed
   year — the source has no footer at all.
+
+## Prep status (re-verified 2026-10-12)
+
+Re-verified during the prep-queue audit (the scan reports **0** remaining `- [ ]` items without a
+spec on main, so this run audited the 30 open items instead of inventing new ones).
+
+**Fixed — this spec did not validate.** Its requirements were written as `## Requirements
+(Gherkin)` with bullet-only `- **Scenario: …**` entries, which the OpenSpec validator rejects
+(`Spec must have a Requirements section. Expected headers: "## Purpose" and "## Requirements"`).
+Rewritten to the house form: the literal `## Requirements` header, **9** `### Requirement:`
+blocks and **24** `#### Scenario:` blocks, each with `- **GIVEN/WHEN/THEN/AND**` bullets. The other
+29 open-item specs were validated in the same sweep and all pass.
+
+```
+openspec validate template-capstan --type spec
+→ Specification 'template-capstan' is valid
+```
+
+No research fact changed: the preview/stylesheet/archive hashes and every measured token in this
+spec are the ones captured in the original prep run (see the reference table above). The remaining
+validator output is a single `[INFO]` about one long requirement paragraph, which the family's
+other specs share.
