@@ -144,8 +144,15 @@ React 19 + Tailwind CSS 4 + TypeScript.
     Our recreation renders six neutral placeholder marks (no copied logos).
   - **Map band (`.contact-sections` → `.d-area`):** a **235 px** Google-Maps
     embed, grayscaled in the source (`saturation: -90`, `lightness: 50`;
-    lat/lng `-31.197, 150.744`, zoom 9). Our recreation uses a **keyless
+    lat/lng `-31.197, 150.744`, zoom 9), filled by
+    `<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSy…&callback=initMap">`
+    + the page's inline `initMap()`. Our recreation uses a **keyless
     OpenStreetMap embed** with a light grayscale CSS filter (no Google API key).
+  - **Source-only head facts:** the page loads **its own analytics**
+    (`<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13">`
+    + the inline `dataLayer` bootstrap) and declares a `site.webmanifest` and an
+    `assets/img/favicon.ico`. None of it is reproduced: the app ships no
+    third-party tag and its own favicon/manifest.
   - **Footer (`.footer-main`):** a **near-black patterned band**
     (`[data-background]` `section_bg4.png`, 1920 × 630, average RGB
     `18,21,25` → `#12151a`; `padding: 135px 0 74px`) with a dark damask
@@ -454,6 +461,10 @@ Google Maps embed.
   desaturated treatment
 - **AND** it SHALL be exposed with an accessible name (e.g. `title` /
   `aria-label` "Map of the venue") and SHALL NOT require an API key
+- **AND** the app SHALL ship no third-party tag or script — the source's
+  analytics (`gtag.js?id=UA-23581568-13` with its inline `dataLayer` bootstrap)
+  and its keyed `maps.googleapis.com` script are never reproduced, so no
+  `gtag`/`dataLayer`/`UA-` id appears in `apps/matrimony`
 
 ### Requirement: Footer
 
@@ -573,5 +584,8 @@ contentinfo landmarks.
       and the plus glyph are inline SVG; no ColorLib asset or logo copied
 - [ ] No `colorlib` / `wed` / "Wed" provenance string anywhere in `apps/`
       (comments included); footer links Component Dock
+- [ ] No third-party tag or script: no `gtag`/`dataLayer`/`UA-` id, no
+      `maps.googleapis.com`; head carries an own favicon (+ manifest) instead of
+      the source's `site.webmanifest` / `assets/img/favicon.ico`
 - [ ] TEMPLATES.md `Wed` item marked `[x]` with the live
       `https://matrimony.free.componentdock.com` URL + homepage

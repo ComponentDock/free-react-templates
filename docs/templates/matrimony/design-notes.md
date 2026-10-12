@@ -233,11 +233,22 @@ The source's first body element is
 ### 10. Map band
 
 - `.d-area #map` = 235 px Google Maps, grayscaled
-  (`saturation: -90`, `lightness: 50`, center `-31.197, 150.744`, zoom 9),
-  `scrollwheel: false`. In the live render the embed fails on a keyless load
-  ("Oops! Something went wrong.") — proof the source needs an API key.
+  (`saturation: -90`, `lightness: 50`, center `-31.197, 150.744`, zoom 9,
+  `scrollwheel: false`), filled by
+  `<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSy…&callback=initMap">`
+  plus the page's own inline `initMap()` / `new google.maps.Map(…)`.
+  In the live render the embed fails on a keyless load ("Oops! Something went
+  wrong.") — proof the source needs an API key.
+- The same head loads the source's **own analytics**
+  (`<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13">`
+  + the inline `dataLayer` bootstrap — the preview host's shared UA id); the
+  head also declares `<link rel="manifest" href="site.webmanifest">` and
+  `<link rel="shortcut icon" href="assets/img/favicon.ico">`.
 - Our version: keyless OpenStreetMap iframe (~235 px) + `filter: grayscale`
-  and an accessible name; no API key, no external Google script.
+  and an accessible name; no API key, no external Google script, and **no
+  third-party tag of any kind** — the source's analytics id, its key, its
+  manifest and its favicon are all dropped, with an own favicon shipped instead
+  (guard: `grep -rE 'gtag|dataLayer|googletagmanager|UA-' apps/matrimony` empty).
 
 ### 11. Footer
 
@@ -318,4 +329,6 @@ All three families resolve on Google Fonts (HTTP 200):
 | Footer columns "WEDDING INFO / ABOUT US / LOCATION" + filler rows | same column *kinds*, our own filler |
 | "resarve your Seat" (typo) | "Reserve your seat" |
 | Google Maps embed (API key) | keyless OpenStreetMap embed |
+| Google Analytics (`gtag.js?id=UA-23581568-13`) + inline `dataLayer` bootstrap | nothing — the app ships no third-party tag |
+| `site.webmanifest` + `assets/img/favicon.ico` | an own manifest/favicon (source files never referenced) |
 | Copyright line linking Colorlib | Component Dock link + current year |

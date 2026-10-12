@@ -213,7 +213,7 @@ the source name, its copy verbatim or its typos.
   image is served twice (`.avif` + raster). Eight further bands — the hero, the
   six feature tiles and the counter band — carry the same switch in an **inline
   `style` attribute** on the `.set-bg` element:
-  `background-image: image-set(url('img/x.avif') type('image/avif'), url('img/x.png') type('image/png'))`
+  `background-image: image-set(url('img/hero.avif') type('image/avif'), url('img/hero.png') type('image/png'))` (the same form on `img/features/feature-N.avif|jpg` and `img/counter-bg.avif|jpg`)
   (again `type()` descriptors, never `1x`/`2x`), and `css/style.min.css`
   declares three more for decorative PNG ornaments
   (`.request.request--services .request__form:before` / `:after`,
@@ -225,6 +225,27 @@ the source name, its copy verbatim or its typos.
   glyph, so each image renders as a single element with one URL — no `<picture>`,
   `srcset`, `type=` or `image-set()` in app code and no request to a ColorLib
   host (`img/hero.avif` is never fetched).
+- **Document head + source-only third-party layer (measured 2026-10-12,
+  `curl -sS` basis):** this page is the only item in the open set that ships a
+  metadata layer, and all of it is **placeholder** data — a **5-property `og:*`**
+  set (`og:type=website`, `og:site_name=Dreams`, `og:title`,
+  `og:description` = the meta description, `og:image=img/og-image.jpg`), a
+  **4-property `twitter:*`** set (`twitter:card=summary_large_image` + title +
+  description + image), `rel=canonical` → **`https://your-domain.com/`**,
+  an `application/ld+json` **`LocalBusiness`** block (`Dreams Wedding Planner`,
+  `hello@example.com`, `+1-503-555-0142`, 203 Fake St., Portland),
+  `meta name=generator "Wedding Dreams 3.0.2"` and `rel=icon img/favicon.svg`.
+  It also loads **its own analytics** (`gtag.js?id=G-XXXXXXXXXX` — a
+  placeholder id — plus the inline `dataLayer` bootstrap). The recreation writes
+  its **own** title/description/canonical/favicon (canonical = the app's
+  `*.free.componentdock.com` URL) and ships **no** third-party tag, no
+  `img/og-image.jpg` reference and no source metadata value.
+- **Two source form endpoints, not one:** the enquiry card's form posts to
+  `php/send-email.php` (`data-success="Thank you! We will reply within one
+  working day."`) while the **footer pill** form posts to `php/subscribe.php`
+  (`data-success="Thank you! You are on the list."`); the search overlay's form
+  is `action="#"`. Both are replaced by client-side validation with **two
+  distinct** inline success states.
 
 ## Design tokens
 
@@ -458,8 +479,9 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
 - **Given** the request form is rendered
 - **When** the user submits with missing/invalid fields
 - **Then** per-field validation messages appear and submission is blocked until the
-  form is valid (the source posts to `php/subscribe.php`; the recreation keeps it
-  client-side and shows an inline success state)
+  form is valid, then an inline success state replaces the form (the source's
+  enquiry card posts to `php/send-email.php` — a different destination from the
+  footer pill's `php/subscribe.php`, so the copy is not interchangeable)
 - **And** labels are associated with every control (`<label htmlFor>`), the selects
   have real option lists, and focus moves to the first invalid field on submit
 
@@ -529,6 +551,26 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
 - **When** the recreation renders the hero, service/counter icons and blog imagery
 - **Then** below-the-fold images keep explicit `width`/`height` plus `loading="lazy"`, the hero image stays eager, and decorative images use an empty `alt` so the layout does not shift
 
+### Feature: Document head metadata and the two source-only form endpoints
+
+#### Scenario: The recreation declares its own head metadata
+
+- **Given** the source's head carries a **5-property `og:*`** set (`og:type`, `og:site_name=Dreams`, `og:title`, `og:description`, `og:image=img/og-image.jpg`), a **4-property `twitter:*`** set (`twitter:card=summary_large_image` + title + description + image), a `rel=canonical` pointing at **`https://your-domain.com/`** (an unrendered placeholder), an `application/ld+json` **`LocalBusiness`** block (`Dreams Wedding Planner`, `hello@example.com`, `+1-503-555-0142`, 203 Fake St., Portland), `meta name=generator "Wedding Dreams 3.0.2"` and `rel=icon img/favicon.svg`
+- **When** `index.html` is rendered
+- **Then** its `<title>`, `meta description`, `rel=canonical` (the app's own `https://<name>.free.componentdock.com/` URL), favicon and any `og:`/`twitter:`/JSON-LD tags are **the recreation's own** — no source value, host, `generator` string or `img/og-image.jpg` reference appears anywhere in `apps/reverie`
+
+#### Scenario: No third-party tag ships, and the analytics is never reproduced
+
+- **Given** the source loads its own analytics (`<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX">` plus an inline `dataLayer`/`gtag()` bootstrap, with a placeholder measurement id)
+- **When** the app builds and runs
+- **Then** `apps/reverie` contains no `gtag`, `dataLayer`, `googletagmanager` or `G-…` id, no third-party script or stylesheet host, and the app loads only its own bundle plus the Google Fonts `<link>`
+
+#### Scenario: The two source form endpoints become two distinct success states
+
+- **Given** the source's enquiry card posts to `php/send-email.php` and its footer pill form posts to `php/subscribe.php` (each carrying its own `data-success` message)
+- **When** either form is submitted with valid fields
+- **Then** the enquiry card shows its own "thank you, we will reply within one working day" state and the footer pill shows a **separate** "you are on the list" state, both in place (no navigation, no `php/` request)
+
 ### Feature: Shared shell, accessibility and reuse
 
 #### Scenario: The app uses the monorepo shell correctly
@@ -590,7 +632,12 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
   hint) is source-only infrastructure and is **flattened**, never reproduced.
 - Document deltas (curved-hero implementation, click/keyboard dropdown, focusable
   tiles, form validation, Component Dock footer credit, the flattened format
-  layer) in the design notes.
+  layer, the source-only head metadata) in the design notes.
+- The **head metadata layer** (5 `og:*` + 4 `twitter:*` properties, `rel=canonical`
+  → `https://your-domain.com/`, a `Dreams Wedding Planner` JSON-LD block,
+  `meta name=generator`, `img/og-image.jpg`, `img/favicon.svg`) and the source's
+  analytics (`gtag.js?id=G-XXXXXXXXXX`) are **source-only**: the app writes its own
+  head facts, ships no third-party tag, and never references a source host or asset.
 
 ## Verification checklist
 
@@ -626,6 +673,12 @@ Read from `css/style.min.css` (canonical) and confirmed against the live render
       `sizes`/`image-set()` in app code, no `.avif` request, no image preload hint;
       below-the-fold images keep `width`/`height` + `loading="lazy"`, the hero image
       stays eager, decorative images use `alt=""`.
+- [ ] Head facts are the app's own `<title>`/description/canonical/favicon and (if
+      present) its own `og:`/`twitter:`/JSON-LD — no `your-domain.com`, no
+      `Dreams`/`Wedding Dreams` string, no `img/og-image.jpg`, no `generator` meta.
+- [ ] No third-party tag ships: `grep -rE 'gtag|dataLayer|googletagmanager|G-[A-Z0-9]{6,}'
+      apps/reverie` is empty, and the two forms show **two distinct** success states
+      (enquiry card vs footer pill) with no navigation to a `php/` path.
 - [ ] `public/CNAME` = `reverie.free.componentdock.com`; `homepage` matches.
 - [ ] Tests: Vitest + Testing Library, 100% lines/functions/branches/statements.
 - [ ] `scripts/verify-app.sh reverie` passes (typecheck + lint + coverage + build).

@@ -213,7 +213,9 @@ Design notes: `docs/templates/paperie/design-notes.md`.
       provider; the repo's existing templates use either an OSM embed or the
       key-less `maps.google.com/...&output=embed` form)
 - [ ] Guard: assert the iframe has a `title`, `loading="lazy"` and no API key in
-      the URL
+      the URL, and that no third-party tag ships: the source's own analytics
+      (`gtag.js?id=UA-23581568-13` + inline `dataLayer`) is never reproduced, so
+      `grep -rE 'gtag|dataLayer|googletagmanager|UA-' apps/paperie` is empty.
 
 ## Partners (`Partners`) (TDD)
 
