@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Locale's palette, read off the design's stylesheet: the primary blue #4DB7FE paints the buttons,
+     the links and every active state; #304CBB is the fill of the selected category pill and the
+     button hover sweep; #1A213D is the heading navy and the translucent bar/dropdown surface;
+     #140C40 is the search input's text; #FF6F00 is the rating orange; #F1F6F9 is the pale blue-grey
+     of the interest grid, the how-it-works band and the quote card; #F1FBFF is the footer wrapper;
+     #6B5A5A is the section subtext, #A4A6AE the footer body copy, #68696E the testimonial role and
+     #677F8B the contact/social glyphs. Hairlines are #DEE0E5. */
+  --color-brand: #4db7fe;
+  --color-deep: #304cbb;
+  --color-navy: #1a213d;
+  --color-ink: #140c40;
+  --color-orange: #ff6f00;
+  --color-section: #f1f6f9;
+  --color-footerbg: #f1fbff;
+  --color-muted: #6b5a5a;
+  --color-footertext: #a4a6ae;
+  --color-roletext: #68696e;
+  --color-socials: #677f8b;
+  --color-edge: #dee0e5;
+  --color-paper: #ffffff;
+
+  /* The shared Button/ButtonLink read their `primary` skin from this scale, so the design's blue is
+     what the search submit, the CTA and any in-form action paints. */
+  --color-primary-400: #7fcbfe;
+  --color-primary-500: #4db7fe;
+  --color-primary-600: #4db7fe;
+  --color-primary-700: #304cbb;
+
+  --font-display: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Mulish', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@keyframes rotateme {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* The slowly turning 2px dotted ring the destination circles reveal on hover. */
+.animate-ring {
+  animation: rotateme 30s linear infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
