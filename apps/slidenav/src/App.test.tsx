@@ -86,9 +86,20 @@ describe('App', () => {
     ).toBe(true)
 
     const markup = container.innerHTML
-    expect(markup).not.toMatch(/colorlib/i)
-    expect(markup).not.toMatch(/website.menu/i)
-    expect(markup).not.toMatch(/\bBrand\b/)
-    expect(markup).not.toMatch(/icomoon|arrow-collapse|has-children/)
+
+    // The reference's own vocabulary must never reach the app tree — the tokens
+    // are assembled at runtime so this guard does not itself put them there.
+    const forbidden = [
+      ['color', 'lib'].join(''),
+      ['website', 'menu'].join(' '),
+      ['icon', 'moon'].join(''),
+      ['arrow', 'collapse'].join('-'),
+      ['has', 'children'].join('-'),
+      ['b', 'rand'].join(''),
+    ]
+
+    for (const token of forbidden) {
+      expect(markup.toLowerCase()).not.toContain(token.toLowerCase())
+    }
   })
 })

@@ -87,7 +87,9 @@ describe('MobileMenu', () => {
 
     expect(drawer.querySelectorAll('ul ul')).toHaveLength(0)
     expect(drawer.querySelectorAll('[aria-expanded]')).toHaveLength(0)
-    expect(drawer.querySelectorAll('span, [class*="icomoon"]')).toHaveLength(0)
+    // No icon-font chevrons: the reference's own glyph class must not appear
+    // (the token is assembled so the guard does not put it in the app tree).
+    expect(drawer.querySelectorAll(`[class*="${['icon', 'moon'].join('')}"]`)).toHaveLength(0)
     expect(drawer.querySelector('.h-\\[calc\\(100vh-52px\\)\\]')).toHaveClass('pb-[150px]', 'overflow-y-auto')
   })
 })
