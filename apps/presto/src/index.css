@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Presto palette — a hosting brand built on a coral accent over a deep-violet
+     wave hero. Brand: coral #FA8F77 (filled CTAs, links, back-to-top) with the
+     deeper #ee7b61 hover fill; outline coral #FD8F5F for outline pills and
+     prices; peach #FFBF81 for the circular hero search button; violet
+     #73469F → #3B2774 for the hero gradient and footer band; lilac #C57EFC for
+     the support chips; ink #140C40 headings on light bands, translucent white on
+     the dark ones; #F8FCFF quiet help band; Poppins throughout. */
+  --color-brand: #fa8f77;
+  --color-brand-deep: #ee7b61;
+  --color-coral: #fd8f5f;
+  --color-peach: #ffbf81;
+  --color-violet: #73469f;
+  --color-violet-deep: #3b2774;
+  --color-lilac: #c57efc;
+  --color-ink: #140c40;
+  --color-ink-muted: #3b4855;
+  --color-copy: #646d77;
+  --color-copy-muted: #717081;
+  --color-copy-soft: #838a9b;
+  --color-title-muted: #7a8290;
+  --color-footer-link: #c2c5db;
+  --color-footer-border: #695cae;
+  --color-line: #e7e6eb;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f8fcff;
+
+  /* Hero TLD accents — the four coloured extension tokens in the price row. */
+  --color-tld-com: #ff7474;
+  --color-tld-net: #ffdd74;
+  --color-tld-org: #74ff9f;
+  --color-tld-me: #748bff;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variants resolve
+     to the coral brand accent. */
+  --color-primary-50: #fff5f1;
+  --color-primary-100: #ffe3da;
+  --color-primary-200: #fdc9b9;
+  --color-primary-300: #fcb09a;
+  --color-primary-400: #fb9f86;
+  --color-primary-500: #fa9781;
+  --color-primary-600: #fa8f77;
+  --color-primary-700: #ee7b61;
+  --color-primary-800: #d9634a;
+  --color-primary-900: #a8462f;
+
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+  }
+}
