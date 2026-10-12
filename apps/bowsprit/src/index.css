@@ -1,0 +1,86 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Bowsprit palette — design tokens for a single-tier navigation page: one
+     transparent bar floating on a full-bleed photograph, a wordmark at the left,
+     five 16px labels in 80% white (the current one fully white) with a hover
+     dropdown 182px wide, and a square 12.8px uppercase #007bff call-to-action
+     block that inverts to white on hover. Below 768px the same row becomes a
+     #000 bar with a 56x40px hamburger whose list expands inline. Shape language
+     is square except 4px: the dropdown surface and the hamburger button. */
+  --color-brand: #007bff;
+  --color-brand-shade: #0056b3;
+  --color-ink: #212529;
+  --color-ink-soft: #343a40;
+  --color-bar: #000000;
+  --color-shell: #0b1016;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variant resolves to
+     the page's #007bff accent. */
+  --color-primary-50: #e6f1ff;
+  --color-primary-100: #cce4ff;
+  --color-primary-200: #99c9ff;
+  --color-primary-300: #66adff;
+  --color-primary-400: #3392ff;
+  --color-primary-500: #007bff;
+  --color-primary-600: #007bff;
+  --color-primary-700: #0069d9;
+  --color-primary-800: #0056b3;
+  --color-primary-900: #004085;
+
+  --font-sans: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+
+  /* The page steps its container widths and its hand-over at 576 / 768 / 992 /
+     1200 — a grid scale, not Tailwind's default 640 / 768 / 1024 / 1280.
+     Re-pointing the breakpoints keeps every utility in step with the design. */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  --radius-flyout: 4px;
+
+  --shadow-flyout: 0 2px 30px 0 rgba(0, 0, 0, 0.2);
+  --shadow-cta: 2px 0 30px -5px rgba(0, 0, 0, 0.2);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  ::selection {
+    background: rgba(0, 123, 255, 0.25);
+  }
+  /* Every transition on this page is decorative: the label colour lift, the
+     call-to-action inversion and the mobile list's height all collapse to
+     effectively instant, so no content is ever gated behind motion. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
