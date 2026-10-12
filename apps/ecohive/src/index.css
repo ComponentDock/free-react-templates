@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Ecohive palette — a premium hosting mood: deep plum/aubergine shell with
+     magenta accents. Brand: #2d0a31 shell; #f067ff magenta accent (nav hover,
+     prices, outline buttons); #a838bf deeper magenta; the button gradient runs
+     #7346d6 → #a136b8; violet eyebrow #9f78ff; muted lavender body on dark
+     #a5a7c5; off-white content bands #f9f9ff; ink #4c1e51 for light-band
+     headings and the testimonial card; #140c40 dark kicker; #6785ff feature
+     index. */
+  --color-shell: #2d0a31;
+  --color-shell-soft: #4c1e51;
+  --color-accent: #f067ff;
+  --color-accent-strong: #a838bf;
+  --color-gradient-from: #7346d6;
+  --color-gradient-to: #a136b8;
+  --color-eyebrow: #9f78ff;
+  --color-muted: #a5a7c5;
+  --color-surface: #f9f9ff;
+  --color-ink: #4c1e51;
+  --color-ink-kicker: #140c40;
+  --color-body-light: #636a8a;
+  --color-feature-index: #6785ff;
+
+  /* Primary scale so the shared ui Button/ButtonLink `primary` variants resolve
+     to the magenta accent. */
+  --color-primary-50: #fdf0ff;
+  --color-primary-100: #fbe0ff;
+  --color-primary-200: #f6bfff;
+  --color-primary-300: #f19fff;
+  --color-primary-400: #f483ff;
+  --color-primary-500: #f067ff;
+  --color-primary-600: #dc4ff0;
+  --color-primary-700: #a838bf;
+  --color-primary-800: #7d2891;
+  --color-primary-900: #4c1e51;
+
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+  }
+}
