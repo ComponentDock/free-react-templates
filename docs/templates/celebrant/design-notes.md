@@ -18,12 +18,22 @@ a mint "Send" pill.
 | --- | --- | --- |
 | Source (ColorLib) page | `https://colorlib.com/wp/template/wedding-officiant/` | HTTP 200 |
 | Preview — canonical slug | `https://preview.colorlib.com/theme/wedding-officiant/` | **HTTP 404** |
-| Preview — **actual demo** | `https://preview.colorlib.com/theme/weddingofficiant/` | **HTTP 200**, 28,350 B, `<title>Wedding Officiant &mdash; Website by Colorlib</title>`, sha256 `43f810ba0a5973dec92791d8c086b2715a89c485980b5b092a68feaf70291434` |
+| Preview — **actual demo** | `https://preview.colorlib.com/theme/weddingofficiant/` | **HTTP 200**, 28,350 B, `<title>Wedding Officiant &mdash; Website by Colorlib</title>`; **no reproducible raw page hash** (see the stability note below) |
 | Stylesheet | `https://preview.colorlib.com/theme/weddingofficiant/css/style.css` | HTTP 200, 24,244 B, sha256 `e8fb899c61fd254d91b06b551ab5f277d71e10f9f664de8ee4b486d41f48072d` |
 | Screenshot | `https://colorlib.com/wp/wp-content/uploads/sites/2/weddingofficiant-free-template.jpg` | HTTP 200, **AVIF** despite `.jpg`, 118,200 B, 1200×946 → converted to PNG and inspected |
 
 - The hyphenated preview path **404s**; the real demo is the un-hyphenated one.
   Always confirm the preview before falling back to the screenshot alone.
+- **Preview HTML stability (re-verified 2026-10-12):** the page's **raw sha256
+  is request-unstable** — the preview host injects a `media="print"`
+  `@font-face` `<style>` block (Amiri + Quicksand from `/cf-fonts/…`) and
+  reorders its rules per request, so three consecutive fetches give three
+  digests at an identical **28,350 B** (the byte count *is* stable, so cite that
+  rather than a hash). Reproducible handle: strip that injected block → **22,155
+  B**, sha256 `cfcdf23e08945ebe324f2f8fdba5147658909ac1c04af42540a635a06e9decc9`
+  (3/3 fetches identical). The same instability affects the other four
+  Google-Font-driven preps in the wedding tail; the stylesheet
+  (`css/style.css`, `e8fb899c…`) is stable and remains the token authority.
 - The stylesheet loads **after** `css/bootstrap/bootstrap.css`, so its `.btn`,
   `.site-section`, `.border-top` etc. are overrides of Bootstrap 4 defaults.
   Anything not re-declared (e.g. `.btn.btn-secondary`) stays Bootstrap's own

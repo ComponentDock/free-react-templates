@@ -36,8 +36,15 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
   the live demo actually lives at
   **`https://preview.colorlib.com/theme/weddingofficiant/`** (no hyphen) —
   **HTTP 200**, 28,350 B HTML, `<title>Wedding Officiant &mdash; Website by
-  Colorlib</title>`, sha256
-  `43f810ba0a5973dec92791d8c086b2715a89c485980b5b092a68feaf70291434`. Fall back
+  Colorlib</title>`. ⚠️ **The page's raw sha256 is request-unstable**: the
+  preview host injects a `media="print"` `@font-face` `<style>` block and
+  shuffles that block's rule order per request — three consecutive fetches on
+  2026-10-12 returned three different digests at an identical **28,350 B**, so
+  the earlier `43f810ba…` value no longer reproduces and no raw page hash is
+  cited here. The reproducible handle, stable across repeated fetches, is the
+  digest of the page **after removing that injected block** (**22,155 B**,
+  sha256 `cfcdf23e08945ebe324f2f8fdba5147658909ac1c04af42540a635a06e9decc9`,
+  verified 3/3 fetches). Fall back
   to the hyphenated form only if the un-hyphenated one ever disappears.
 - **Stylesheet fetched for tokens:**
   `https://preview.colorlib.com/theme/weddingofficiant/css/style.css` — **HTTP

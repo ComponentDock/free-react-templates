@@ -14,6 +14,7 @@ https://preview.colorlib.com/theme/wedding/ · screenshot
 | Artifact | Result |
 | --- | --- |
 | `GET https://preview.colorlib.com/theme/wedding/` | HTTP 200, 22,649 bytes, `<title>Wedding</title>` |
+| Preview HTML stability (re-checked 2026-10-12) | 🔎 the **raw page digest is request-unstable** — the preview host injects a `<style media="print">` `@font-face` block and reorders its rules per request (3 fetches → 3 digests at an identical **22,649 bytes**), so cite the byte count rather than a page hash. Stable reproducible handle after stripping that block: **16,120 B**, sha256 `b45c9e08ee1416e14088932f63fe1a2076a6f4d16e87f23efe39c5a6226af176` |
 | `GET .../theme/wordpress-wedding-themes/` | HTTP 404 (roundup entry, not this template) |
 | `GET .../theme/wedding/css/main.css` | HTTP 200, 33,049 bytes |
 | Screenshot | `wedding-free-wedding-website-template.jpg` (AVIF 1200x935) → converted with ImageMagick to PNG and inspected visually |

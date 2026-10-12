@@ -11,6 +11,7 @@ stylesheet `css/style.css`, cross-checked against the TEMPLATES.md screenshot.
 | --- | --- | --- |
 | ColorLib page | `https://colorlib.com/wp/template/dreamwed/` | **200** — source article for the template |
 | Preview (live DOM) | `https://preview.colorlib.com/theme/dreamwed/` | **200**, 34,516 B, `<title>Dream \| Template</title>` |
+| Preview HTML stability (re-checked 2026-10-12) | strip the preview host's injected `<style type="text/css" media="print" onload=…>` `@font-face` block | 🔎 the **raw page digest is request-unstable** — Cloudflare reorders that block's font rules per request, so 3 consecutive fetches gave 3 digests at an identical **34,516 B**. Cite the byte count, not a page hash. Stable reproducible handle after stripping the block: **23,164 B**, sha256 `9ec3a0e9d497db6902fafc2bb242e3f8320d667dcd5d9f85f0cfe6cdab71fd86` |
 | Stylesheet | `…/dreamwed/css/style.css` | **200**, 30,285 B — brand colour, fonts, buttons, section backgrounds |
 | Supporting CSS | `css/bootstrap.min.css`, `css/elegant-icons.css`, `css/nice-select.css`, `css/owl.carousel.min.css`, `css/slicknav.min.css` | referenced by the preview (framework + icon + carousel + mobile-nav) |
 | Screenshot | `https://colorlib.com/wp/wp-content/uploads/sites/2/dreamwed-free-template.jpg` | **200**, served **AVIF** despite the `.jpg` name, 69,828 B → converted to PNG and inspected visually |
