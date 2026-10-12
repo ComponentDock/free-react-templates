@@ -58,6 +58,10 @@ the source name, its copy verbatim or its typos.
   it, then decode with `ffmpeg -y -i shot.raw shot.png` (verified to handle both
   variants), 1200×946, reviewed visually 2026-10-12. It is a browser-chrome mock of
   the top of the page (header + hero + the first services row).
+  ⚠️ **Ship status (2026-10-13):** `apps/reverie` shipped in `77eec3572` (the item is
+  `[x]` at line 3108) from this prep *before* the re-measurement above; the app
+  copies no asset (it uses `picsum.photos` placeholders and its provenance test
+  asserts no ColorLib/`.avif` reference), so the type drift is documentation only.
 - **New name:** `reverie` (apps/reverie, `@free-react-templates/reverie`) — the
   dream motif of the design (the source titles itself "Dreams"); the source name
   "Weddingdreams"/"Dreams", its `logo.svg`/`footer-logo.svg` wordmarks, its
