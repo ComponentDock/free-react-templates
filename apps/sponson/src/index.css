@@ -1,0 +1,82 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Sponson palette — the tokens for one square, shadowless white column pinned to the left edge of
+     a soft page, holding six labels whose current row is painted coral under a coral rule, and the
+     content column that stands beside it. The page is #fafafa with grey #808080 ink and #000
+     headings; the rail is #fff on wide viewports, a barely-there rgba(0,0,0,0.04) sheet while it
+     sits off the left edge on narrow ones, and #fff again once it is pulled back in. The accent is
+     a coral #ff6768 worn by the page's own links, the current row's label and the rule that wipes
+     in under a hovered or current row. The burger's three bars are #000. Shape language: there is
+     no rounding and no shadow anywhere — the sheet declares neither — so the tokens stay square. */
+  --color-page: #fafafa;
+  --color-ink: #808080;
+  --color-accent: #ff6768;
+  --color-rail: #ffffff;
+  --color-drawer: rgba(0, 0, 0, 0.04);
+  --color-heading: #000000;
+  --color-label: #000000;
+  --color-toggle: #000000;
+
+  --font-sans: 'Poppins', Arial, sans-serif;
+
+  /* Two widths matter: the rail leaves its 20% slot for a 270px drawer and the burger appears below
+     992, and the content band's gutters vanish and its two sub-blocks stack from 768 up.
+     Re-pointing the scale keeps every utility in step with the widths the design itself turns at. */
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+
+  /* The rail's own 0.3s tween is springy, not linear: the rule under a label overshoots and settles
+     back, which is what separates this menu from a plain colour fade. */
+  --ease-underline: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-page);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 0;
+    /* The drawer pushes the content column sideways rather than covering it, so nothing may ever
+       scroll sideways with it. */
+    overflow-x: hidden;
+  }
+  /* The design's own link colour is the page's accent and it draws no underline in any state; the
+     hover and focus affordances restored on the links themselves are documented deltas. */
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  h1,
+  h2,
+  h3 {
+    color: var(--color-heading);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  /* A selected run of text wears the page's own accent. */
+  ::selection {
+    background: rgba(255, 103, 104, 0.3);
+  }
+  /* Every transition here is decorative — the rail and the column travelling beside it, the rule
+     wiping in under a label, the burger folding into an X — so under reduced motion they land
+     immediately and nothing is ever gated behind them. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
