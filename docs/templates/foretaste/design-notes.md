@@ -64,36 +64,36 @@ form, no footer text.
 
 ## Measured tokens (live render + stylesheet)
 
-| What | Value |
-| ---- | ----- |
-| shell background | `background-image:url(bg01.jpg)`, `center / no-repeat / cover`, `min-height:100vh`, `width:100%`, `padding:0 15px 35px` |
-| gradient wash | `.overlay1::before` → `linear-gradient(top, #b224ef, #7579ff)`, `opacity:0.8`, `position:absolute; inset:0; z-index:-1` (computed `linear-gradient(rgb(178,36,239), rgb(117,121,255))`) |
-| column | `.flex-col-c` → `display:flex; flex-direction:column; align-items:center`, `padding:160px 0 215px` (`80px 0 100px` at ≤576px via `.respon1`) |
-| monogram | `.wrappic1` → `display:block; flex-grow:1`, `img { max-width:100% }`; source PNG 101×44 white monogram |
-| headline | `.l1-txt1` → `Montserrat-Thin 50px / 1.1`, `#fff`, `uppercase`, `letter-spacing:10px`, `padding:30px 0 100px`, `text-align:center` |
-| countdown wrapper | `.flip-clock-wrapper` → `display:flex; flex-wrap:wrap; justify-content:center`, `width:100%; max-width:100%; margin-bottom:20px`; `max-width:470px; margin-right:10px` at ≤1200px; `max-width:210px; margin-right:10px` at ≤576px |
-| digit tile | `90×120`, `border-radius:10px`, `background:#0d1629`, `margin:3px` |
-| digit glyph | `Quantico-Regular 120px`, `#fff`, flex-centred (computed `120px Quantico-Regular rgb(255,255,255)`) |
-| colon divider | `.flip-clock-divider` → `68px × 120px`; `::before` = `content:":"`, `Quantico-Regular 120px`, `#fff`; first divider `width:0` and no colon; `10px` (days+minutes) at ≤1200px with the minutes colon hidden; all `10px` and no colon at ≤576px |
-| group captions | `.flip-clock-divider::after` → `days`/`hrs`/`min`/`sec`, `Montserrat-Bold 14px`, `letter-spacing:3px`, `uppercase`, `#fff`, `width:193px`, `left:100%; top:100%; padding-top:23px`, centered |
-| social circle | `.how-social` → `36×36` (`.size3`), `border-radius:50%`, `border:1px solid #fff`, `background:transparent`, glyph `18px #fff`; hover `background:#fff; color:#0d1629`; `transition: all .4s` (`.trans-04`); margins `3px` sides, `5px` bottom |
-| social row | `.flex-w.flex-c-m.p-b-35` → `flex-wrap:wrap; justify-content:center; align-items:center; padding-bottom:35px` |
-| radii | `10px` (digit tiles and their shadow layers), `50%` (social circles) — nothing else rounded |
-| fonts | `Montserrat-Thin` (headline) · `Montserrat-Bold` (captions) · `Quantico-Regular` (digits + colons) — all three on Google Fonts (Montserrat 100/700, Quantico 400) |
-| base type | source `body` = system stack `-apple-system,… Arial, sans-serif`, `1rem/1.5`, `#212529`; but every visible glyph is one of the three webfonts |
+| What              | Value                                                                                                                                                                                                                                                         |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| shell background  | `background-image:url(bg01.jpg)`, `center / no-repeat / cover`, `min-height:100vh`, `width:100%`, `padding:0 15px 35px`                                                                                                                                       |
+| gradient wash     | `.overlay1::before` → `linear-gradient(top, #b224ef, #7579ff)`, `opacity:0.8`, `position:absolute; inset:0; z-index:-1` (computed `linear-gradient(rgb(178,36,239), rgb(117,121,255))`)                                                                       |
+| column            | `.flex-col-c` → `display:flex; flex-direction:column; align-items:center`, `padding:160px 0 215px` (`80px 0 100px` at ≤576px via `.respon1`)                                                                                                                  |
+| monogram          | `.wrappic1` → `display:block; flex-grow:1`, `img { max-width:100% }`; source PNG 101×44 white monogram                                                                                                                                                        |
+| headline          | `.l1-txt1` → `Montserrat-Thin 50px / 1.1`, `#fff`, `uppercase`, `letter-spacing:10px`, `padding:30px 0 100px`, `text-align:center`                                                                                                                            |
+| countdown wrapper | `.flip-clock-wrapper` → `display:flex; flex-wrap:wrap; justify-content:center`, `width:100%; max-width:100%; margin-bottom:20px`; `max-width:470px; margin-right:10px` at ≤1200px; `max-width:210px; margin-right:10px` at ≤576px                             |
+| digit tile        | `90×120`, `border-radius:10px`, `background:#0d1629`, `margin:3px`, plus `.flip-clock-wrapper .flip { margin-bottom:80px }` — the 80px bottom margin is the band the group captions hang in once the groups wrap (row step 203px: `y389` → `y592` at 765×437) |
+| digit glyph       | `Quantico-Regular 120px`, `#fff`, flex-centred (computed `120px Quantico-Regular rgb(255,255,255)`)                                                                                                                                                           |
+| colon divider     | `.flip-clock-divider` → `68px × 120px`; `::before` = `content:":"`, `Quantico-Regular 120px`, `#fff`; first divider `width:0` and no colon; `10px` (days+minutes) at ≤1200px with the minutes colon hidden; all `10px` and no colon at ≤576px                 |
+| group captions    | `.flip-clock-divider::after` → `days`/`hrs`/`min`/`sec`, `Montserrat-Bold 14px`, `letter-spacing:3px`, `uppercase`, `#fff`, `width:193px`, `left:100%; top:100%; padding-top:23px`, centered                                                                  |
+| social circle     | `.how-social` → `36×36` (`.size3`), `border-radius:50%`, `border:1px solid #fff`, `background:transparent`, glyph `18px #fff`; hover `background:#fff; color:#0d1629`; `transition: all .4s` (`.trans-04`); margins `3px` sides, `5px` bottom                 |
+| social row        | `.flex-w.flex-c-m.p-b-35` → `flex-wrap:wrap; justify-content:center; align-items:center; padding-bottom:35px`                                                                                                                                                 |
+| radii             | `10px` (digit tiles and their shadow layers), `50%` (social circles) — nothing else rounded                                                                                                                                                                   |
+| fonts             | `Montserrat-Thin` (headline) · `Montserrat-Bold` (captions) · `Quantico-Regular` (digits + colons) — all three on Google Fonts (Montserrat 100/700, Quantico 400)                                                                                             |
+| base type         | source `body` = system stack `-apple-system,… Arial, sans-serif`, `1rem/1.5`, `#212529`; but every visible glyph is one of the three webfonts                                                                                                                 |
 
 ## Measured geometry (Chrome, 1440×900, deviceScaleFactor 1)
 
-| Element | Rect |
-| ------- | ---- |
-| shell `.bg-img1` | `x0 y0 w1425 h938` — `scrollHeight 938` vs `clientHeight 900` → 38px scroll (shell `padding-bottom:35px`) |
-| column `.flex-col-c` | `x15 y0 w1395 h827` |
-| monogram `.wrappic1` | `x662 y160 w101 h44` |
-| headline `.l1-txt1` | `x468 y204 w490 h185` (185 = 30 + 55 + 100) |
-| countdown wrapper | `x15 y389 w1395 h203` |
-| tiles (8) | `x230 x326` days · `x490 x586` hrs · `x750 x846` min · `x1010 x1106` sec — all `y392 w90 h120`, 6px between a pair |
-| colon dividers | `68×120`, e.g. the hours divider at `x419 y389`; the days divider is `w0` |
-| social row | `x15 y827 w1395 h76`; first circle `x653 y827 36×36` |
+| Element              | Rect                                                                                                               |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| shell `.bg-img1`     | `x0 y0 w1425 h938` — `scrollHeight 938` vs `clientHeight 900` → 38px scroll (shell `padding-bottom:35px`)          |
+| column `.flex-col-c` | `x15 y0 w1395 h827`                                                                                                |
+| monogram `.wrappic1` | `x662 y160 w101 h44`                                                                                               |
+| headline `.l1-txt1`  | `x468 y204 w490 h185` (185 = 30 + 55 + 100)                                                                        |
+| countdown wrapper    | `x15 y389 w1395 h203`                                                                                              |
+| tiles (8)            | `x230 x326` days · `x490 x586` hrs · `x750 x846` min · `x1010 x1106` sec — all `y392 w90 h120`, 6px between a pair |
+| colon dividers       | `68×120`, e.g. the hours divider at `x419 y389`; the days divider is `w0`                                          |
+| social row           | `x15 y827 w1395 h76`; first circle `x653 y827 36×36`                                                               |
 
 At a 765×437 window the ≤1200px branch applies: the countdown wrapper measures
 `470px` wide and the layout is otherwise identical (tiles still `90×120`).
@@ -101,8 +101,8 @@ At a 765×437 window the ≤1200px branch applies: the countdown wrapper measure
 ## Behaviour (`js/snippet.js`, verbatim logic)
 
 ```js
-var FLIP = {"D":35,"h":18};                      // 35 days 18 hours from load
-var end = Date.now() + FLIP.D*864e5 + FLIP.h*36e5;
+var FLIP = { D: 35, h: 18 } // 35 days 18 hours from load
+var end = Date.now() + FLIP.D * 864e5 + FLIP.h * 36e5
 // every 1000ms: d|h|m|s = remaining, zero-padded to 2 digits each, then
 // for each card whose visible digit differs: copy the old digit into
 // .flip-clock-before, write the new one into .flip-clock-active, and

@@ -12,6 +12,8 @@ describe('DigitTile', () => {
 
     expect(screen.getByTestId('digit-tile')).toHaveTextContent('0')
     expect(screen.getByTestId('digit-tile')).toHaveClass(
+      'mx-[3px]',
+      'mt-[3px]',
       'bg-tile',
       'h-[120px]',
       'w-[90px]',
@@ -20,6 +22,12 @@ describe('DigitTile', () => {
       'text-[120px]',
       'text-white',
     )
+  })
+
+  it('reserves the 80px row gap the captions hang in', () => {
+    render(<DigitTile digit="0" />)
+
+    expect(screen.getByTestId('digit-tile')).toHaveClass('mb-[80px]')
   })
 
   it('leaves a digit that did not change alone', () => {

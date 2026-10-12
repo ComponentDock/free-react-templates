@@ -115,7 +115,9 @@ Tailwind CSS 4 + TypeScript.
   - countdown wrapper `.flip-clock-wrapper`: `x15 y389 w1395 h203` (full width,
     `display:flex; flex-wrap:wrap; justify-content:center`, 100px of it is the
     `ul` `margin-bottom:80px`)
-  - digit tiles (90×120, `border-radius:10px`, `background:#0d1629`) at
+  - digit tiles (90×120, `border-radius:10px`, `background:#0d1629`,
+    `margin:3px 3px 80px` — the 80px bottom margin is what spaces wrapped rows
+    into the reference's 203px row step, `y389` → `y592` at 765×437) at
     `x230 x326` (days), `x490 x586` (hrs), `x750 x846` (min), `x1010 x1106`
     (sec) — 6px between the pair (3px margins), `y392`
   - the 68px colon dividers sit between the pairs: hours divider at `x419`
@@ -149,31 +151,31 @@ Tailwind CSS 4 + TypeScript.
 
 ## Design tokens
 
-| Token             | Value                                                                                                                                                       | Where                                    |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| page shell        | `width:100%`, `min-height:100vh`, `padding:0 15px 35px`, `background-image:url(...)`, `background-position:center`, `background-repeat:no-repeat`, `background-size:cover`, `position:relative`, `z-index:1` | the whole page (one screen)              |
-| gradient overlay  | ONE `.overlay1::before` layer: `linear-gradient(top, #b224ef, #7579ff)` at **`opacity:0.8`**, `position:absolute; inset:0; z-index:-1` (measured computed `linear-gradient(rgb(178,36,239), rgb(117,121,255))`, `opacity 0.8`) | over the photograph                      |
-| brand gradient    | `#b224ef` (magenta-violet) → `#7579ff` (periwinkle) — the ONLY brand colour; flat `#7579ff` fallback where gradients are unsupported                        | overlay, CTA-free palette                |
-| photograph        | ONE static cover image, `center`, no-repeat, never the source's `1900×900` `bg01.jpg`; recreation placeholder `https://picsum.photos/seed/foretaste-skyline/1900/900` | page background                          |
-| content column    | `display:flex; flex-direction:column; align-items:center`, `padding:160px 0 215px`; `80px 0 100px` at ≤576px (source `.respon1`)                              | the single centred column                |
-| monogram lockup   | wrapper `display:block`, `flex-grow:1` (inert), `img { max-width:100% }`; the source PNG is **101×44** white letters — the recreation renders its OWN wordmark/monogram in white, ≤44px tall | column, top band                         |
-| headline          | **Montserrat Thin (100), 50px, `line-height:1.1`, `#fff`, `text-transform:uppercase`, `letter-spacing:10px`**, `padding:30px 0 100px`; size does NOT change at ≤576px (the source re-declares 50px) | column, middle band                      |
-| countdown wrapper | `display:flex; flex-wrap:wrap; justify-content:center`, `width:100%`, `max-width:100%`, `margin-bottom:20px`; `max-width:470px; margin-right:10px` at ≤1200px; `max-width:210px; margin-right:10px` at ≤576px | column, under the headline               |
-| digit tile        | `90×120`, `border-radius:10px`, `background:#0d1629`, `margin:3px`, four groups of two tiles (= 8 tiles)                                                       | countdown                                |
-| digit glyph       | **Quantico 400, 120px, `#fff`**, centred in the tile, `line-height` unset/flex-centred; zero-padded two digits per group                                      | inside each tile                         |
-| colon separator   | `.flip-clock-divider`, `68px × 120px`, `::before` `content:":"` in **Quantico 400, 120px, `#fff`**, flex-centred; the FIRST divider (days) keeps `width:0` and renders no colon; `width:10px` at ≤1200px for the days+minutes dividers (minutes colon hidden) and for ALL dividers at ≤576px (all colons hidden) | between the four groups                  |
-| group captions    | `::after` content `"days" / "hrs" / "min" / "sec"`, **Montserrat Bold (700), 14px, `#fff`, `text-transform:uppercase`, `letter-spacing:3px`**, box `193px` wide, `position:absolute; left:100%; top:100%; padding-top:23px`, centred | under the colons                         |
-| social row        | `display:flex; flex-wrap:wrap; justify-content:center; align-items:center`, `padding-bottom:35px`                                                            | column, bottom band                      |
-| social circle     | `36px × 36px`, `border-radius:50%`, transparent fill, `border:1px solid #fff`, centred 18px `#fff` glyph, `margin:0 3px 5px`, `transition:all .4s`           | social row (×3)                          |
-| social hover      | fill → `#fff`, glyph → `#0d1629`                                                                                                                             | over `.4s`                               |
-| social glyphs     | Facebook, Twitter/X and YouTube — source inlines `fa-facebook` / `fa-twitter` / `fa-youtube-play` SVG paths; the recreation uses `lucide-react` equivalents and NEVER copies the paths | social row (×3)                          |
-| countdown logic   | target = `now + 35 days + 18 hours` (source `FLIP = {"D":35,"h":18}`), recomputed every **1000ms**, each changed digit flips its card with a 0.5s turn animation; digits zero-padded, `Math.max(0, …)` clamp at zero | countdown                                |
-| radii             | `10px` on every digit tile and its shadow layer; `50%` on the three social circles only; nothing else is rounded                                              | shapes                                   |
-| fonts             | Montserrat **100** (headline) · Montserrat **700** (group captions) · Quantico **400** (digits + colons) — no other face on the page                         | typography                               |
-| Google Fonts map  | `Montserrat:wght@100;700` + `Quantico:wght@400` via `<link>` — **no substitution needed** (all three source faces are on Google Fonts); no icon font (lucide-react) | `index.html` `<link>`                    |
-| base type         | source `body` is the system stack (`-apple-system, … Arial, sans-serif`) 1rem/1.5 `#212529` — but every VISIBLE glyph is Montserrat Thin, Montserrat Bold or Quantico | typography                               |
-| transitions       | `all .4s` (social circles); the flip animation is `turn`/`turn2` 0.5s linear, retriggered per changed digit                                             | interaction                              |
-| attribution       | a small low-emphasis line linking `https://www.componentdock.com/` ("Component Dock"), pinned absolutely near the bottom edge of the shell so the three-band stack is untouched | ADDED vs the reference (the source has no credit) |
+| Token             | Value                                                                                                                                                                                                                                                                                                            | Where                                             |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| page shell        | `width:100%`, `min-height:100vh`, `padding:0 15px 35px`, `background-image:url(...)`, `background-position:center`, `background-repeat:no-repeat`, `background-size:cover`, `position:relative`, `z-index:1`                                                                                                     | the whole page (one screen)                       |
+| gradient overlay  | ONE `.overlay1::before` layer: `linear-gradient(top, #b224ef, #7579ff)` at **`opacity:0.8`**, `position:absolute; inset:0; z-index:-1` (measured computed `linear-gradient(rgb(178,36,239), rgb(117,121,255))`, `opacity 0.8`)                                                                                   | over the photograph                               |
+| brand gradient    | `#b224ef` (magenta-violet) → `#7579ff` (periwinkle) — the ONLY brand colour; flat `#7579ff` fallback where gradients are unsupported                                                                                                                                                                             | overlay, CTA-free palette                         |
+| photograph        | ONE static cover image, `center`, no-repeat, never the source's `1900×900` `bg01.jpg`; recreation placeholder `https://picsum.photos/seed/foretaste-skyline/1900/900`                                                                                                                                            | page background                                   |
+| content column    | `display:flex; flex-direction:column; align-items:center`, `padding:160px 0 215px`; `80px 0 100px` at ≤576px (source `.respon1`)                                                                                                                                                                                 | the single centred column                         |
+| monogram lockup   | wrapper `display:block`, `flex-grow:1` (inert), `img { max-width:100% }`; the source PNG is **101×44** white letters — the recreation renders its OWN wordmark/monogram in white, ≤44px tall                                                                                                                     | column, top band                                  |
+| headline          | **Montserrat Thin (100), 50px, `line-height:1.1`, `#fff`, `text-transform:uppercase`, `letter-spacing:10px`**, `padding:30px 0 100px`; size does NOT change at ≤576px (the source re-declares 50px)                                                                                                              | column, middle band                               |
+| countdown wrapper | `display:flex; flex-wrap:wrap; justify-content:center`, `width:100%`, `max-width:100%`, `margin-bottom:20px`; `max-width:470px; margin-right:10px` at ≤1200px; `max-width:210px; margin-right:10px` at ≤576px                                                                                                    | column, under the headline                        |
+| digit tile        | `90×120`, `border-radius:10px`, `background:#0d1629`, `margin:3px 3px 80px` (the 80px bottom margin is the band the group captions hang in once the groups wrap), four groups of two tiles (= 8 tiles)                                                                                                           | countdown                                         |
+| digit glyph       | **Quantico 400, 120px, `#fff`**, centred in the tile, `line-height` unset/flex-centred; zero-padded two digits per group                                                                                                                                                                                         | inside each tile                                  |
+| colon separator   | `.flip-clock-divider`, `68px × 120px`, `::before` `content:":"` in **Quantico 400, 120px, `#fff`**, flex-centred; the FIRST divider (days) keeps `width:0` and renders no colon; `width:10px` at ≤1200px for the days+minutes dividers (minutes colon hidden) and for ALL dividers at ≤576px (all colons hidden) | between the four groups                           |
+| group captions    | `::after` content `"days" / "hrs" / "min" / "sec"`, **Montserrat Bold (700), 14px, `#fff`, `text-transform:uppercase`, `letter-spacing:3px`**, box `193px` wide, `position:absolute; left:100%; top:100%; padding-top:23px`, centred                                                                             | under the colons                                  |
+| social row        | `display:flex; flex-wrap:wrap; justify-content:center; align-items:center`, `padding-bottom:35px`                                                                                                                                                                                                                | column, bottom band                               |
+| social circle     | `36px × 36px`, `border-radius:50%`, transparent fill, `border:1px solid #fff`, centred 18px `#fff` glyph, `margin:0 3px 5px`, `transition:all .4s`                                                                                                                                                               | social row (×3)                                   |
+| social hover      | fill → `#fff`, glyph → `#0d1629`                                                                                                                                                                                                                                                                                 | over `.4s`                                        |
+| social glyphs     | Facebook, Twitter/X and YouTube — source inlines `fa-facebook` / `fa-twitter` / `fa-youtube-play` SVG paths; the recreation uses `lucide-react` equivalents and NEVER copies the paths                                                                                                                           | social row (×3)                                   |
+| countdown logic   | target = `now + 35 days + 18 hours` (source `FLIP = {"D":35,"h":18}`), recomputed every **1000ms**, each changed digit flips its card with a 0.5s turn animation; digits zero-padded, `Math.max(0, …)` clamp at zero                                                                                             | countdown                                         |
+| radii             | `10px` on every digit tile and its shadow layer; `50%` on the three social circles only; nothing else is rounded                                                                                                                                                                                                 | shapes                                            |
+| fonts             | Montserrat **100** (headline) · Montserrat **700** (group captions) · Quantico **400** (digits + colons) — no other face on the page                                                                                                                                                                             | typography                                        |
+| Google Fonts map  | `Montserrat:wght@100;700` + `Quantico:wght@400` via `<link>` — **no substitution needed** (all three source faces are on Google Fonts); no icon font (lucide-react)                                                                                                                                              | `index.html` `<link>`                             |
+| base type         | source `body` is the system stack (`-apple-system, … Arial, sans-serif`) 1rem/1.5 `#212529` — but every VISIBLE glyph is Montserrat Thin, Montserrat Bold or Quantico                                                                                                                                            | typography                                        |
+| transitions       | `all .4s` (social circles); the flip animation is `turn`/`turn2` 0.5s linear, retriggered per changed digit                                                                                                                                                                                                      | interaction                                       |
+| attribution       | a small low-emphasis line linking `https://www.componentdock.com/` ("Component Dock"), pinned absolutely near the bottom edge of the shell so the three-band stack is untouched                                                                                                                                  | ADDED vs the reference (the source has no credit) |
 
 ## Requirements
 
@@ -271,12 +273,12 @@ oversized Quantico colons with a bold uppercase caption beneath each group.
 - **Given** the page renders at 1440×900
 - **When** the countdown is inspected
 - **Then** it is one flex wrapper (`flex-wrap:wrap; justify-content:center;
-  width:100%; margin-bottom:20px`) containing eight digit tiles of exactly
-  `90×120`, `border-radius:10px`, `background:#0d1629`, `margin:3px`
+width:100%; margin-bottom:20px`) containing eight digit tiles of exactly
+  `90×120`, `border-radius:10px`, `background:#0d1629`, `margin:3px 3px 80px`
 - **And** the tiles read, left to right, two digits for days, two for hours, two
   for minutes, two for seconds — zero-padded at all times
 - **And** each digit is `font-family:"Quantico"; font-weight:400; font-size:120px;
-  color:#fff`, flex-centred inside its tile
+color:#fff`, flex-centred inside its tile
 
 #### Scenario: Groups are separated by oversized colon glyphs
 
@@ -324,7 +326,7 @@ Three `36×36` transparent circles ringed in white, centred under the countdown.
 - **Given** the page renders
 - **When** the social row is inspected
 - **Then** it is a flex row (`flex-wrap:wrap; justify-content:center;
-  align-items:center; padding-bottom:35px`) holding exactly three links
+align-items:center; padding-bottom:35px`) holding exactly three links
 - **And** each link is `36×36`, `border-radius:50%`, transparent fill,
   `border:1px solid #fff`, with a centred 18px `#fff` glyph and
   `transition:all .4s`
@@ -375,8 +377,7 @@ Only two breakpoints move anything: ≤1200px and ≤576px.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for `template-foretaste`
-- [ ] `scripts/verify-app.sh foretaste` passes: typecheck + lint + knip + fallow
-      + vitest at 100% coverage + build (~2–3 min)
+- [ ] `scripts/verify-app.sh foretaste` passes: typecheck + lint + knip + fallow + vitest at 100% coverage + build (~2–3 min)
 - [ ] Every scenario above has at least one matching test (scenario-style `it`
       blocks), with 100% lines/functions/branches/statements on the app
 - [ ] Screenshot match against `coming-soon-15.jpg` (1200×972): violet→periwinkle
@@ -394,7 +395,7 @@ Only two breakpoints move anything: ≤1200px and ≤576px.
       `opacity .8`, tile `#0d1629`, radii `10px` (tiles) / `50%` (circles),
       Montserrat 100 (headline, 50px, `letter-spacing:10px`), Montserrat 700
       14px/3px (captions), Quantico 400 120px (digits and colons), `1px solid
-      #fff` rings, `transition:all .4s`
+    #fff` rings, `transition:all .4s`
 - [ ] Responsive check: ≤1200px wrapper `470px`, ≤576px wrapper `210px` +
       column `80px 0 100px` + all colons hidden; headline 50px and tiles
       `90×120` at every width
