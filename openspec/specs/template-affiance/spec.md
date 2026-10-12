@@ -119,8 +119,8 @@ React 19 + Tailwind CSS 4 + TypeScript.
 | Pale pink tint | **`#f0d9e8`** | 15 px solid frame around the bride/groom photos |
 | Light band | `#f8f9fa` | `.bg-light` sections (Greetings, When & Where) |
 | Page / surface | `#fff` | page + white bands |
-| Body ink | `#212529` | body copy |
-| Muted ink | `#6c757d` | secondary copy, timestamps |
+| Body ink | **`#999999`** (grey) | body copy — the theme's own `body { font-family:"Source Sans Pro"; …; color:#999999 }` block, which sits **after** the inlined Bootstrap 4.5.0 and wins (live-verified: `document.body`, every body `p` and `li` render `rgb(153,153,153)`). The framework's `body{color:#212529}` is beaten — do **not** use it |
+| Muted ink | `rgba(0,0,0,.7)` (light bands) · `rgba(255,255,255,.6)` (footer sub-links) | `.block-23 ul li span`, `.ftco-footer-widget ul li a span`; `#6c757d` exists only inside the inlined Bootstrap block (caption/placeholder), never as a design ink |
 | Overlay scrim | **`rgba(0,0,0,.4)`** | hero dark overlay; lighter wash on the RSVP photo band |
 | Hairline divider | `rgba(255,255,255,.05)` | countdown cell separators |
 | Badge ring | `rgba(255,255,255,.5)` dashed | 120 px timeline badge inset ring |

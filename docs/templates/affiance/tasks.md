@@ -49,8 +49,10 @@ Design notes: `docs/templates/affiance/design-notes.md`.
 - [ ] `@theme` tokens in `src/index.css`: `--color-brand: #d291bc`,
       `--color-brand-cell: #cb7fb1` (countdown "Save the Day" cell),
       `--color-tint: #f0d9e8` (bride/groom photo frame),
-      `--color-band: #f8f9fa` (light bands), `--color-ink: #212529`,
-      `--color-muted: #6c757d`, `--color-scrim: rgba(0,0,0,0.4)`,
+      `--color-band: #f8f9fa` (light bands), `--color-ink: #999999`
+      (body copy — the theme's own final `body{color:#999999}`; not the
+      framework's beaten `#212529`), `--color-muted: rgba(0,0,0,0.7)`,
+      `--color-scrim: rgba(0,0,0,0.4)`,
       `--radius-bar: 4px`, `--radius-pill: 2px`; fonts
       `--font-script: "Rochester", cursive` and
       `--font-body: "Source Sans Pro", sans-serif`

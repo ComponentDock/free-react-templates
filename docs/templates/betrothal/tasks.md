@@ -50,8 +50,10 @@ Design notes: `docs/templates/betrothal/design-notes.md`.
       `lucide-react` (`Ring`/`Heart`, `Menu`, `X`, `Search`, `ChevronDown`,
       `Clock`, `MapPin`, `Camera`, `Church`, `Send`, plus social glyphs)
 - [ ] `@theme` tokens in `src/index.css`: `--color-brand: #d48f4c`
-      (buttons, active nav underline, eyebrows, ornaments), `--color-ink:
-      #353535`, `--color-surface: #ffffff`, `--color-card-shadow: rgba(53, 53,
+      (buttons, active nav underline, eyebrows, ornaments),
+      `--color-body: #747e8c` (body/paragraph ink), `--color-ink:
+      #353535` (headings/emphasis), `--color-surface: #ffffff`,
+      `--color-card-shadow: rgba(53, 53,
       53, 0.06)`, `--color-overlay: rgba(53, 53, 53, 0.7)`; radii
       `--radius-gallery: 5px`; fonts `--font-display: "Arima Madurai", cursive`
       and `--font-body: "Work Sans", sans-serif`
@@ -175,7 +177,8 @@ Design notes: `docs/templates/betrothal/design-notes.md`.
       `owl.carousel`/`nice-select`/`slicknav` CSS/JS files, no `hero-bg.jpg` /
       `rsvp.jpg` / `gallery-title.jpg` / `icon_2.png`, no jQuery
 - [ ] PR description lists: source template + slug, preview URL, design tokens
-      used (brand `#d48f4c`, ink `#353535`, white surfaces, card shadow
+      used (brand `#d48f4c`, body ink `#747e8c`, heading ink `#353535`, white
+      surfaces, card shadow
       `rgba(53,53,53,0.06)`, overlay `rgba(53,53,53,0.7)`, gallery radius 5px,
       circular portraits, square buttons, fonts Arima Madurai + Work Sans), and
       every delta (own name/brand/couple/copy, placeholder photography,

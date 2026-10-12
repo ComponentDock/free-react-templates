@@ -24,7 +24,9 @@ stylesheet `css/style.css`, cross-checked against the TEMPLATES.md screenshot.
   composition, soft diffuse shadows on white cards.
 - **Type:** **"Arima Madurai", cursive** for display/headings (the wordmark and
   the hero couple names read as a rounded display serif), **"Work Sans",
-  sans-serif** for body and UI. Headings are near-black `#353535`.
+  sans-serif** for body and UI. Headings are near-black `#353535`; body copy is
+  the lighter **blue-grey `#747e8c`** (the two are separate sheet tokens — see
+  the table below).
 - **Signature motif:** each section heading is a small **uppercase gold
   eyebrow** over a **dark serif H2**, followed by a small **gold wave ornament
   image** (`img/icon/icon_2.png`) that divides the title from the body copy.
@@ -113,7 +115,8 @@ footer.footer.spad                  (closing heading + logo + social + copyright
 | Token | Value | Where |
 | --- | --- | --- |
 | Brand accent (ochre/gold) | **`#d48f4c`** | buttons, active nav underline, eyebrows, ornaments |
-| Ink / body text | **`#353535`** | headings + body copy |
+| Body / paragraph ink | **`#747e8c`** (blue-grey, 33 rules) | `p`, `.section-title span` eyebrows, `.countdown__item p`, `.event__item span`, form inputs + placeholders, `.wedding__time__item li`, `.footer__social a` |
+| Heading / emphasis ink | **`#353535`** (near-black, 32 rules) | `.section-title h2`, story/event `h3`, active nav item, count-up digits, `.nice-select` text/arrow |
 | Surface | **`#ffffff`** | page + card backgrounds |
 | Card shadow | **`rgba(53, 53, 53, 0.06)`** (`0px 5px 30px` / `0px 5px 35px`) | forms + time cards |
 | Gallery overlay | **`rgba(53, 53, 53, 0.7)`** | `gallery__text` hover overlay |

@@ -90,7 +90,16 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   `owl.carousel.min.css`, `slicknav.min.css`):
   - Brand accent (warm ochre/gold): **`#d48f4c`** — buttons, active nav
     underline, eyebrow labels, ornaments.
-  - Ink / body text: **`#353535`** (near-black); white surfaces **`#ffffff`**.
+  - **Two inks — do not merge them** (measured on the live sheet: `#747e8c` in
+    33 rules, `#353535` in 32): **body/paragraph ink `#747e8c`** (blue-grey) for
+    `p`, `.section-title span` eyebrows, `.countdown__item p`,
+    `.event__item span`, form inputs **and** their placeholders,
+    `.wedding__time__item li` and `.footer__social a`; **heading/emphasis ink
+    `#353535`** (near-black) for `.section-title h2`, story/event `h3`, the
+    active nav item, the count-up digits and the `.nice-select` text/arrow.
+    Live-verified: `.section-title span` renders `rgb(116, 126, 140)` =
+    `#747e8c` while `.section-title h2` renders `rgb(53, 53, 53)` = `#353535`.
+    White surfaces **`#ffffff`**.
   - Card shadow: **`0px 5px 30px rgba(53, 53, 53, 0.06)`** (forms) /
     **`0px 5px 35px rgba(53, 53, 53, 0.06)`** (time cards, gallery overlay
     `rgba(53, 53, 53, 0.7)`).
