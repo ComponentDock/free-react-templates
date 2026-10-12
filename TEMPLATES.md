@@ -3100,7 +3100,7 @@
 - [x] **Hookup** — [colorlib](https://colorlib.com/wp/template/hookup/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hookup-free-template.jpg) · [nuptial](https://nuptial.free.componentdock.com)
 - [x] **Invits** — [colorlib](https://colorlib.com/wp/template/invits/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/invits-free-template.jpg) · [paperie](https://paperie.free.componentdock.com)
 - [x] **Sunshine** — [colorlib](https://colorlib.com/wp/template/sunshine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sunshine-free-template.jpg) · [knot](https://knot.free.componentdock.com)
-- [~] **Twohearts** — [colorlib](https://colorlib.com/wp/template/twohearts/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/twohearts-free-template.jpg)
+- [x] **Twohearts** — [colorlib](https://colorlib.com/wp/template/twohearts/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/twohearts-free-template.jpg) · [affiance](https://affiance.free.componentdock.com)
 - [ ] **Wed** — [colorlib](https://colorlib.com/wp/template/wed/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wed-free-template.jpg)
 - [ ] **Wedding** — [colorlib](https://colorlib.com/wp/template/wedding/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/wedding-free-wedding-website-template.jpg)
 - [ ] **Wedding Officiant** — [colorlib](https://colorlib.com/wp/template/wedding-officiant/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/weddingofficiant-free-template.jpg)
