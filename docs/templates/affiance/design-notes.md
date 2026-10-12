@@ -232,3 +232,15 @@ source is *not* top-left as an earlier draft of this file claimed); gallery disc
 - **No ColorLib asset is copied** — no `style.css`, no Bootstrap/jQuery/owl/
   stellar/magnific/animate bundles, no `images/bg_*.jpg` / `groom.jpg` /
   `bride.jpg` / `couple-*.jpg` / `person_*.jpg` / `gallery-*.jpg`.
+
+## Follow-up: the shipped app predates the map-panel finding
+
+`apps/affiance` merged (`fac03c6f8`) **before** the 2026-10-12z inline-script
+audit added the `#map` panel to this prep, so the shipped `When & Where`
+(`src/components/WhenWhere.tsx`) renders the two event cards and the **See Map**
+link but **no map panel** — the source's split row is
+`col-md-5` (`<div id="map" class="bg-white">`) beside `col-md-7`.  The prep,
+spec and tasks above now carry the panel (keyless embed or a static styled
+placeholder, `width:100%`, 300 px below the `md` breakpoint); bringing the app in
+line is a follow-up `fix:` change, not part of this docs commit.
+
