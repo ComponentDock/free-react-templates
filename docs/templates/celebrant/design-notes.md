@@ -36,11 +36,15 @@ a mint "Send" pill.
   whose headers differ from a plain `curl -sS <url>` sees **28,711 B** (python
   `urllib` + a Chrome UA) — the byte count *is* stable only for a fixed request
   signature, so cite neither a raw hash nor the raw size. The
-  **signature-independent** handle — sha256 of the page after removing **both**
+  canonical handle — sha256 of the page after removing **both**
   the injected `@font-face` block **and** that beacon script — is **22,155 B**,
-  sha256 `cfcdf23e08945ebe324f2f8fdba5147658909ac1c04af42540a635a06e9decc9`,
-  verified byte-identical across curl default, `curl -A <chrome UA>` and
-  `urllib` with two header profiles. The same instability affects the other four
+  sha256 `cfcdf23e08945ebe324f2f8fdba5147658909ac1c04af42540a635a06e9decc9` —
+  byte-identical across `curl -sS`, `curl -A <chrome UA>` and `urllib` with a
+  Chrome UA (3 profiles × 3 fetches, 2026-10-12). A client that *additionally*
+  sends `Accept`/`Accept-Language` receives a further **416 B** Cloudflare
+  first-party Google-tag script (`google_tags_first_party` / `/s9cc/`,
+  `gtag('config', 'G-…')`) that this handle does **not** strip, so always state
+  the measurement basis (`curl -sS`) beside any such number. The same instability affects the other four
   Google-Font-driven preps in the wedding tail; the stylesheet
   (`css/style.css`, `e8fb899c…`) is stable and remains the token authority.
 - The stylesheet loads **after** `css/bootstrap/bootstrap.css`, so its `.btn`,

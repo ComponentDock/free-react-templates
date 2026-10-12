@@ -46,12 +46,16 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
   (`<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/…">`)
   before `</body>` for some client signatures, so a fetch whose headers differ
   from a plain `curl -sS <url>` sees **28,711 B** — the size is stable only for
-  one request signature. The **signature-independent** handle is the digest of
+  one request signature. The **canonical** handle is the digest of
   the page after removing **both** that injected block **and** the beacon script
   (**22,155 B**, sha256
-  `cfcdf23e08945ebe324f2f8fdba5147658909ac1c04af42540a635a06e9decc9`, verified
-  byte-identical across curl default, `curl -A <chrome UA>` and `urllib` with
-  two header profiles — 2026-10-12). Fall back
+  `cfcdf23e08945ebe324f2f8fdba5147658909ac1c04af42540a635a06e9decc9`) — and it
+  is byte-identical across `curl -sS`, `curl -A <chrome UA>` and `urllib` with a
+  Chrome UA (3 profiles × 3 fetches, 2026-10-12). A client that *additionally*
+  sends `Accept`/`Accept-Language` receives a further **416 B** Cloudflare
+  first-party Google-tag script (`google_tags_first_party` / `/s9cc/`) that this
+  handle does **not** strip, so state the measurement basis (`curl -sS`) beside
+  any such number. Fall back
   to the hyphenated form only if the un-hyphenated one ever disappears.
 - **Stylesheet fetched for tokens:**
   `https://preview.colorlib.com/theme/weddingofficiant/css/style.css` — **HTTP
