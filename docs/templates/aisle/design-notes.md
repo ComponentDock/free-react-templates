@@ -17,7 +17,7 @@ secondary (visual) reference. No fallback was needed.
 | Main stylesheet                     | `https://preview.colorlib.com/theme/wedding2/01-homepage/css/styles.css`                        | **HTTP 200**, 12,286 B (saved `/tmp/wedding2-styles.css`)              |
 | Responsive stylesheet               | `…/wedding2/01-homepage/css/responsive.css`                                                     | **HTTP 200**, 4,147 B                                                  |
 | Other CSS the page loads (not used) | `common-css/bootstrap.css`, `common-css/font-icon.css`, `common-css/fluidbox.min.css`           | referenced only; the icon font is the source's own                    |
-| Screenshot                          | `https://colorlib.com/wp/wp-content/uploads/sites/2/wedding2-free-template.jpg`                 | **HTTP 200**, 113,016 B, `image/avif` (despite `.jpg`) → `ffmpeg` → PNG, 1200×892 |
+| Screenshot                          | `https://colorlib.com/wp/wp-content/uploads/sites/2/wedding2-free-template.jpg`                 | **HTTP 200**, 113,016 B, `image/avif` (despite `.jpg`) → `ffmpeg` → PNG, **1200×946** (re-measured 2026-10-12 with `PIL.Image.open().size` + `ffprobe`, 3 fetches, sha256 `c43cec3ac0d4536f1b660ca12783d35f579e77fe84c395d6dc23a603d8a30759`; the 892 the first conversion recorded was a conversion defect, not the file's size) |
 | Live render                         | browser pass on the preview                                                                     | computed styles + `getBoundingClientRect`; **only viewport available was 780×437** |
 
 Local copies: `/tmp/wedding2.html`, `/tmp/wedding2-styles.css`,
@@ -40,7 +40,7 @@ accent, `Bitter` (serif) for `body`. `document.fonts` confirmed
 `Playball-400-loaded` and `Bitter-400-loaded`, plus the source's icon font
 `untitled-font-1`.
 
-## 2. Screenshot (1200×892, browser-chrome mock of the top of the page)
+## 2. Screenshot (1200×946, browser-chrome mock of the top of the page)
 
 - **Header, floating, no background:** the wordmark "Wedding" set in a white
   **cursive script** at the left; the menu at the right in small, thin,
@@ -491,3 +491,24 @@ confusing).
   script-written copyright year; keep the year live instead.
 - No `colorlib.com`, no `maps.googleapis.com`, no `gtag`, no `UA-` id anywhere
   in `apps/aisle`; the footer links `https://www.componentdock.com/`.
+
+## 10. Prep re-verification (2026-10-12, image-facts axis)
+
+- The TEMPLATES.md thumbnail's pixel size was re-measured with `curl -sS` +
+  `PIL.Image.open().size` and `ffprobe`: **1200×946** (113,016 B, `image/avif`,
+  3 fetches byte-identical, sha256
+  `c43cec3ac0d4536f1b660ca12783d35f579e77fe84c395d6dc23a603d8a30759`). The
+  prep previously stated 1200×892 in four places (spec ×2, this file ×2,
+  `tasks.md`); both figures describe the same fetch, so the earlier number was
+  a conversion artifact, not a different file. Corrected. The other nine open
+  items' thumbnails were measured the same way and every one matches the size
+  its prep states.
+- The image-delivery layer was measured on the live page and is **unnamed in
+  this prep**, deliberately recorded here rather than added as requirements
+  (it is delivery mechanics, not layout): the reference lazy-loads 6 of its 8
+  `<img>` (`loading="lazy" decoding="async"`), leaves the header wordmark and
+  the first gallery tile eager (`fetchpriority="high" decoding="sync"`), and
+  paints the hero, both CTA bands and the map as CSS `background-image` (no
+  `srcset`, `<picture>` or modern-format layer anywhere on this theme). Our
+  recreation keeps seeded `picsum` photos with `loading="lazy"` below the
+  first tile (already required by the spec's gallery scenario).

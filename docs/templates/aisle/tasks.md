@@ -31,7 +31,9 @@ Preview: `https://preview.colorlib.com/theme/wedding2/` (**HTTP 200**, 14,477 B,
 also loads `common-css/bootstrap.css`, `common-css/font-icon.css` (its icon
 font) and `common-css/fluidbox.min.css` (gallery lightbox). Screenshot
 `wedding2-free-template.jpg` (HTTP 200, 113,016 B, **AVIF** despite the `.jpg`
-name, 1200×892 → converted to PNG with `ffmpeg` and inspected). Full research:
+name, 1200×946 — re-measured 2026-10-12; the 892 first recorded came from the
+`ffmpeg` conversion, not the file → converted to PNG and inspected). Full
+research:
 `docs/templates/aisle/design-notes.md`.
 
 Spec: `openspec/specs/template-aisle/spec.md`. New name: **aisle** (the wedding

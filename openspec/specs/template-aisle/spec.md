@@ -40,8 +40,11 @@ the source name, its copy verbatim or its typos.
 - **Screenshot:**
   https://colorlib.com/wp/wp-content/uploads/sites/2/wedding2-free-template.jpg
   (HTTP 200, **113,016 B**, served as **AVIF** → decoded to PNG with
-  `ffmpeg -i wedding2-shot.jpg wedding2-shot.png`, 1200×892, reviewed visually
-  2026-10-12).
+  `ffmpeg -i wedding2-shot.jpg wedding2-shot.png`, **1200×946**, reviewed
+  visually 2026-10-12; the pixel size was re-measured 2026-10-12 with
+  `PIL.Image.open().size` **and** `ffprobe` — both report 1200×946, so the
+  892 recorded by the first conversion is a defect of that conversion, not of
+  the file).
 - **New name:** `aisle` (apps/aisle, `@free-react-templates/aisle`) — from the
   wedding-aisle motif of the design; the source name "Wedding2", its wordmark,
   its logo files, its photos, its icon font and its copy are never reused.
@@ -69,7 +72,7 @@ the source name, its copy verbatim or its typos.
   the browser pass ran at the only viewport available to the harness
   (**780×437**), so absolute pixel measurements below are labelled with that
   viewport and the desktop-intent values come from the stylesheet.
-- **Screenshot (1200×892, browser-chrome mock of the top of the page):**
+- **Screenshot (1200×946, browser-chrome mock of the top of the page):**
   - the header floats over the hero with **no background**: the wordmark
     "Wedding" is set in a **white cursive script** at the left; the menu sits at
     the right in small, thin, letter-spaced capitals — HOME · OUR STORIES ▾ ·
