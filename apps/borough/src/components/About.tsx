@@ -3,14 +3,16 @@ import { aboutParagraphs, aboutSubheading, aboutTitle, counters } from '../data'
 
 function Counter({ target, label }: { target: number; label: string }) {
   const [value, setValue] = useState(0)
+  /* jsdom has no IntersectionObserver — nothing triggers the count-up, so
+     the final figure is derived during render instead of being written
+     back from the effect. */
+  const shown = typeof IntersectionObserver === 'undefined' ? target : value
+
   const nodeRef = useRef<HTMLSpanElement>(null)
   const frameRef = useRef<number>(0)
 
   useEffect(() => {
-    // jsdom has no IntersectionObserver — fall back to the final value so
-    // the static render still shows correct numbers.
     if (typeof IntersectionObserver === 'undefined') {
-      setValue(target)
       return
     }
 
@@ -47,7 +49,7 @@ function Counter({ target, label }: { target: number; label: string }) {
   return (
     <div className="rounded-[4px] bg-black/5 px-5 py-[30px] text-center">
       <span ref={nodeRef} className="text-[40px] font-semibold text-black">
-        {value}
+        {shown}
       </span>
       <p className="mt-2 text-[15px] text-neutral-600">{label}</p>
     </div>

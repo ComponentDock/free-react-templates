@@ -17,12 +17,16 @@ const milestones: Milestone[] = [
 function Counter({ value, label }: Milestone) {
   const [display, setDisplay] = useState(0)
   const [started, setStarted] = useState(false)
+  /* Without IntersectionObserver (jsdom included) nothing ever triggers the
+     count-up, so the final figures are derived during render instead of
+     being written back from the effect. */
+  const shown = typeof IntersectionObserver === 'undefined' ? value : display
+
   const startRef = useRef<number | null>(null)
   const frameRef = useRef<number>(0)
 
   useEffect(() => {
     if (typeof IntersectionObserver === 'undefined') {
-      setDisplay(value)
       return
     }
     const observer = new IntersectionObserver((entries) => {
@@ -35,7 +39,7 @@ function Counter({ value, label }: Milestone) {
     })
     observer.observe(document.getElementById(`counter-${label}`)!)
     return () => observer.disconnect()
-  }, [value, label])
+  }, [label])
 
   useEffect(() => {
     if (!started) {
@@ -57,7 +61,7 @@ function Counter({ value, label }: Milestone) {
 
   return (
     <div id={`counter-${label}`} className="text-center lg:text-left">
-      <div className="font-display text-7xl font-bold text-brand">{display}</div>
+      <div className="font-display text-7xl font-bold text-brand">{shown}</div>
       <div className="mt-3 text-lg font-medium text-ink">{label}</div>
     </div>
   )

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { X } from 'lucide-react'
 import { appointmentDepartments, appointmentDoctors } from '../data'
 
@@ -10,9 +10,14 @@ interface AppointmentModalProps {
 export function AppointmentModal({ open, onClose }: AppointmentModalProps) {
   const [submitted, setSubmitted] = useState(false)
 
-  useEffect(() => {
-    if (open) setSubmitted(false)
-  }, [open])
+  /* Adjusting state when a prop changes: reopening the modal invalidates the
+     previous submission, so the confirmation resets during render instead of
+     through an effect on `open`. */
+  const [wasOpen, setWasOpen] = useState(open)
+  if (wasOpen !== open) {
+    setWasOpen(open)
+    setSubmitted(false)
+  }
 
   if (!open) return null
 

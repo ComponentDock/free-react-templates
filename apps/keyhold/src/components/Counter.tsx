@@ -18,11 +18,14 @@ const STEP_MS = 20
 export function Counter() {
   const sectionRef = useRef<HTMLElement>(null)
   const [display, setDisplay] = useState<number[]>(() => stats.map(() => 0))
+  /* Without IntersectionObserver (jsdom included) nothing ever triggers the
+     count-up, so the final figures are derived during render instead of
+     being written back from the effect. */
+  const shown =
+    typeof IntersectionObserver === 'undefined' ? stats.map((stat) => stat.value) : display
 
   useEffect(() => {
     if (typeof IntersectionObserver === 'undefined') {
-      // No observer support (e.g. very old browsers): show final values.
-      setDisplay(stats.map((stat) => stat.value))
       return
     }
 
@@ -71,7 +74,7 @@ export function Counter() {
       <div className="relative mx-auto grid max-w-6xl grid-cols-2 gap-10 px-4 text-center lg:grid-cols-4 lg:px-8">
         {stats.map((stat, index) => (
           <div key={stat.label}>
-            <p className="text-5xl font-light text-brand">{display[index]}</p>
+            <p className="text-5xl font-light text-brand">{shown[index]}</p>
             <p className="mt-2 text-lg text-soft">{stat.label}</p>
           </div>
         ))}

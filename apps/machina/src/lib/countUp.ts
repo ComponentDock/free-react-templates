@@ -12,7 +12,6 @@ export function useCountUp(target: number, duration = 1400): number {
 
   useEffect(() => {
     let current = 0
-    setValue(0)
     const increment = target / (duration / STEP_MS)
     const id = setInterval(() => {
       current += increment
