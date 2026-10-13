@@ -175,7 +175,7 @@
 
 ## Automotive (8)
 
-- [x] **Automotive** — [colorlib](https://colorlib.com/wp/template/automotive/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/automotive-free-template.jpg) · [veloce](https://veloce.free.componentdock.com)
+- [x] **Automotive** — [colorlib](https://colorlib.com/wp/template/automotive/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/automotive-free-template.jpg) · [motorly](https://motorly.free.componentdock.com)
 - [x] **Autorepair** — [colorlib](https://colorlib.com/wp/template/autorepair/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autorepair-free-template.jpg) · [torquely](https://torquely.free.componentdock.com)
 - [x] **Autoroad** — [colorlib](https://colorlib.com/wp/template/autoroad/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/autoraod-free-template.jpg) · [roadly](https://roadly.free.componentdock.com)
 - [x] **Carbook** — [colorlib](https://colorlib.com/wp/template/carbook/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carbook-free-template.jpg) · [rently](https://rently.free.componentdock.com)
@@ -648,7 +648,7 @@
 - [x] **Accordion 10** — [colorlib](https://colorlib.com/wp/template/accordion-10/) · [gather](https://gather.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-10.jpg)
 - [x] **Accordion 11** — [colorlib](https://colorlib.com/wp/template/accordion-11/) · [ripples](https://ripples.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-11.jpg)
 - [x] **Accordion 12** — [colorlib](https://colorlib.com/wp/template/accordion-12/) · [plisse](https://plisse.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-12.jpg)
- · [creel](https://creel.free.componentdock.com)
+- [x] **Accordion 12** — [colorlib](https://colorlib.com/wp/template/accordion-12/) · [creel](https://creel.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-12.jpg)
 - [x] **Accordion 13** — [colorlib](https://colorlib.com/wp/template/accordion-13/) · [pleat](https://pleat.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-13.jpg)
 - [x] **Accordion 14** — [colorlib](https://colorlib.com/wp/template/accordion-14/) · [stave](https://stave.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-14.jpg)
 - [x] **Accordion 15** — [colorlib](https://colorlib.com/wp/template/accordion-15/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-15.jpg) · [foldkit](https://foldkit.free.componentdock.com)
