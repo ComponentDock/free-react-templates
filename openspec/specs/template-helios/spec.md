@@ -24,28 +24,28 @@ TypeScript.
   CSS. Features a savings calculator, product showcases, ROI charts, and
   financing comparisons").
 - **Preview DOM analyzed:** the official preview
-  (`https://preview.colorlib.com/theme/solarshift/`) returns 404; the
+  (`https://preview.colorlib.com/theme/solarshift/`) returned 404 at prep time; the
   ColorLib preview portal hosts the demo at
-  `https://solarshift-colorlib.pages.dev/` (HTTP 200, ~85 KB HTML +
+  `https://solarshift-colorlib.pages.dev/` (HTTP 200 at prep time, ~85 KB HTML +
   `/_astro/Base.DGIjEtFT.css` ~59 KB parsed for tokens). Same
   Cloudflare-Pages hosting pattern as Saasify→Zenith / Serenite→Sooth.
   The TEMPLATES.md screenshot (`solarshift-template.jpg`) shows the
   design visually (light, green-accented, flat minimal).
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://solarshift-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/solarshift/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/helios` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/solarshift/` answers **HTTP 200**,
+95,843 B `text/html; charset=utf-8` (85,938 B, sha256 `2ffd94b4ab94…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/solarshift/_astro/Base.KUABgugQ.css` is
+59,355 B sha256 `089af0126b89…` and carries all 20 hex tokens recorded below
+(Manrope), so the live build matches the design the mirror served (the
+sheet's Astro hash differs from the mirror's prep-time `Base.DGIjEtFT.css` —
+a rebuild). The Cloudflare Pages mirror
+`https://solarshift-colorlib.pages.dev` is still **NXDOMAIN** (re-checked
+2026-10-13d). ⚠️ `apps/helios` was built from the mirror's tokens before the
+migration, so it follows the mirror, not today's preview host.
 - **Section order (1:1, from live demo DOM):**
   1. Navbar: "SolarShift" logo (sun icon + wordmark), links About,
      Products, Services (dropdown: Residential Solar, Commercial Solar,

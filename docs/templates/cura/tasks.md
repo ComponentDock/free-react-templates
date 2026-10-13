@@ -10,13 +10,26 @@
   Astro, Health & Fitness, Tailwind CSS; released March 2026; License
   CC BY 3.0; images from Unsplash).
 - **Preview UNREACHABLE:** `https://preview.colorlib.com/theme/vitality/`
-  returns 404; the hub link is `https://preview.colorlib.com/#vitality`;
+  returned 404 at prep time; the hub link is `https://preview.colorlib.com/#vitality`;
   `https://vitality-colorlib.pages.dev/` → NXDOMAIN (no pages.dev demo for
   this slug; `preview.colorlib.com/assets/js/products.js` no longer lists
   it); no Wayback snapshot. **Sole references: TEMPLATES.md screenshot**
   (`vitality-template-1770211473540.jpg`, 2400×1892, analyzed in 3 bands)
   **+ the ColorLib product page feature list** (authoritative section
   inventory).
+
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo IS reachable on the ColorLib preview host —
+`https://preview.colorlib.com/theme/vitality/` answers **HTTP 200**, 76,733
+B `text/html; charset=utf-8` (64,404 B, sha256 `6a757fa7aca1…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon), with its own stylesheet
+`https://preview.colorlib.com/theme/vitality/_astro/Base.BvdG4YB3.css` at
+35,243 B sha256 `ac60e1608b41…` (10 of the 20 hex tokens recorded below are
+present in it). This supersedes the "preview UNREACHABLE — the screenshot is
+the sole reference" finding — the live demo is now the authoritative DOM/CSS
+reference. ⚠️ `apps/cura` shipped before this re-probe, so it follows the
+screenshot/mirror evidence, not today's live page.
 - **Visual design (screenshot):** white + blues healthcare landing. Dark
   blue top info bar (phone + hours left, emergency right); white sticky
   navbar (medical-cross logo "MediCare / HEALTHCARE CENTER" → brand **Cura**,

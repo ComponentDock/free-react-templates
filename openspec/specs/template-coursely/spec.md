@@ -24,10 +24,10 @@ TypeScript.
   Learn Without Limits") with top categories, popular courses, instructor
   cards, testimonials, and 3-tier pricing with a billing toggle.
 - **Preview DOM analyzed:** the official preview
-  (`https://preview.colorlib.com/theme/learnhub/`) returns HTTP 404
+  (`https://preview.colorlib.com/theme/learnhub/`) returned HTTP 404 at prep time
   (confirmed 2026-08-08, 9 bytes "Not Found"); the ColorLib preview portal
   hosts demos on Cloudflare Pages at
-  `https://learnhub-colorlib.pages.dev/` (HTTP 200, ~88 KB HTML +
+  `https://learnhub-colorlib.pages.dev/` (HTTP 200 at prep time, ~88 KB HTML +
   `/_astro/Base.DLlC-awY.css` ~57 KB parsed for tokens). The TEMPLATES.md
   screenshot (`learnhub-template-1770211181840.jpg`, 2400×1892) shows the
   ORIGINAL visual design (see "Visual design" below) and differs from the
@@ -37,16 +37,19 @@ TypeScript.
   authoritative structure reference; the screenshot records the original
   aesthetic intent.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://learnhub-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo itself moved onto the ColorLib preview host
-`https://preview.colorlib.com/theme/learnhub/`. It answered **HTTP 200**,
-84,204 B `text/html; charset=utf-8`, in the 2026-10-13b census of moved demos
-(hand-verified for `shieldnet`). ⚠️ `apps/coursely` was built from the
-mirror's tokens before this migration, so the app follows the mirror, not
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/learnhub/` answers **HTTP 200**, 100,121
+B `text/html; charset=utf-8` (87,792 B, sha256 `991bdb0c3166…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/learnhub/_astro/Base.BcV1dLiE.css` is
+56,662 B sha256 `ca75d826e3d5…` and carries all 17 hex tokens recorded
+below, so the live build matches the design the mirror served (the sheet's
+Astro hash differs from the mirror's prep-time `Base.DLlC-awY.css` — a
+rebuild). The Cloudflare Pages mirror `https://learnhub-colorlib.pages.dev`
+is still **NXDOMAIN** (re-checked 2026-10-13d). ⚠️ `apps/coursely` was built
+from the mirror's tokens before the migration, so it follows the mirror, not
 today's preview host.
 - **Section order (1:1, from live demo DOM):**
   1. Navbar: Coursely logo (graduation-cap icon), links Courses,

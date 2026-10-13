@@ -22,6 +22,19 @@
   Butter", "Sunday Brunch: Spaghetti and Eggs Recipe"). Source zip (for
   reference only — NEVER copy assets):
   `https://github.com/themewagon/yummy2/archive/refs/tags/v1.0.0.zip`.
+
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo IS reachable on the ColorLib preview host —
+`https://preview.colorlib.com/theme/yummy/` answers **HTTP 200**, 21,709 B
+`text/html; charset=utf-8` (19,422 B, sha256 `2ab681eb2005…` after stripping
+the injected print-media `@font-face` block and the Insights beacon), with
+its own stylesheet `https://preview.colorlib.com/theme/yummy/css/style.css`
+at 42,720 B sha256 `d08c771dd457…` (7 of the 8 hex tokens recorded below are
+present in it). This supersedes the "no official demo — the screenshot + the
+ThemeWagon mirror are the reference" finding — the live demo is now the
+authoritative DOM/CSS reference. ⚠️ `apps/umami` shipped before this
+re-probe, so it follows the screenshot/mirror evidence, not today's live
+page.
 - **Visual design (screenshot + mirror):** clean minimal white food-magazine
   look. Centered serif-italic wordmark + "FOOD BLOG" tagline; centered nav
   with pink-underlined active link + search icon; hero = 3-column grid

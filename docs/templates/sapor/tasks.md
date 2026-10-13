@@ -9,25 +9,26 @@
   1781, 2913; mark ALL `[x]` when done).
 - **Source URL:** https://colorlib.com/wp/template/flavor-6/
 - **Preview URL:** https://flavor-colorlib.pages.dev/
-  (HTTP 200, ~47 KB DOM — live, analyzed 2026-08-08). NOTE:
-  `preview.colorlib.com/theme/flavor-6/` returns 404 — the ColorLib preview
+  (HTTP 200 at prep time, ~47 KB DOM — live, analyzed 2026-08-08). NOTE:
+  `preview.colorlib.com/theme/flavor-6/` returned 404 at prep time — the ColorLib preview
   portal maps this slug to `flavor-colorlib.pages.dev/`. Do not redo this
   lookup.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://flavor-colorlib.pages.dev/` **no longer resolves** — DNS **NXDOMAIN**
-(`EAI_NONAME`), re-checked 2026-10-13c; all 48 `<slug>-colorlib.pages.dev`
-hosts this family of preps cites are gone. The DOM/CSS evidence below was
-measured from that mirror at prep time and stays the fidelity reference. The
-demo family now answers from the ColorLib preview host
-`https://preview.colorlib.com/theme/flavor-6/` (this prep recorded a **404**
-on that path at prep time — the move onto the preview host happened after it,
-so treat the path as unverified). The host answered the provider's bot wall
-(**403**, 17 B `text/plain`, Cloudflare error 1106) while this note was
-written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/sapor` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/flavor/` answers **HTTP 200**, 59,552 B
+`text/html; charset=utf-8` (47,339 B, sha256 `961c805191f7…` after stripping
+the injected print-media `@font-face` block and the Insights beacon); its
+stylesheet
+`https://preview.colorlib.com/theme/flavor/_astro/Base.Cdu-mown.css` is
+45,097 B sha256 `07d43ef09429…`; 15 of the 16 hex tokens recorded below are
+present in it (Inter, Playfair Display) and the remaining 1 are absent from
+both the live sheet and the live page — re-check the token table before
+reusing them (the sheet's Astro hash differs from the mirror's prep-time
+`Base.DA4xZmk2.css` — a rebuild). The Cloudflare Pages mirror
+`https://flavor-colorlib.pages.dev` is still **NXDOMAIN** (re-checked
+2026-10-13d). ⚠️ `apps/sapor` was built from the mirror's tokens before the
+migration, so it follows the mirror, not today's preview host.
 - **Preview CSS:** `https://flavor-colorlib.pages.dev/_astro/Base.DA4xZmk2.css`
   (Tailwind v4 output, ~45 KB; tokens extracted below).
 

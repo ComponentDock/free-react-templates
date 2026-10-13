@@ -21,9 +21,9 @@ CSS 4 + TypeScript.
   category). The demo's internal brand is "WorkHub" — the recreation brands
   itself **Deskly**.
 - **Demo DOM analyzed (verified 2026-08-09):**
-  `https://workhub-colorlib.pages.dev/` (HTTP 200, ~91 KB HTML +
+  `https://workhub-colorlib.pages.dev/` (HTTP 200 at prep time, ~91 KB HTML +
   `/_astro/Base.DgxC-Pxf.css` ~62 KB parsed for tokens;
-  `https://preview.colorlib.com/theme/workhub/` returns 404 — the preview
+  `https://preview.colorlib.com/theme/workhub/` returned 404 at prep time — the preview
   portal loads Astro-category demos from `<slug>-colorlib.pages.dev` per
   `preview.colorlib.com/assets/js/products.js`, same pattern as
   Serenite→Sooth / Saasify→Zenith / Swiftmove→Haulio). The TEMPLATES.md
@@ -31,20 +31,21 @@ CSS 4 + TypeScript.
   the live demo: warm cream hero, amber accents, sage-green secondary button,
   stats row, coworking-interior photo.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://workhub-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/workhub/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/deskly` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/workhub/` answers **HTTP 200**, 99,485 B
+`text/html; charset=utf-8` (91,740 B, sha256 `38c1d5371768…` after stripping
+the injected print-media `@font-face` block and the Insights beacon); its
+stylesheet
+`https://preview.colorlib.com/theme/workhub/_astro/Base.BmJJs_gh.css` is
+62,014 B sha256 `fe1d78230239…`; 17 of the 19 hex tokens recorded below are
+present in it (Plus Jakarta Sans) and the remaining 2 are absent from both
+the live sheet and the live page — re-check the token table before reusing
+them (the sheet's Astro hash differs from the mirror's prep-time
+`Base.DgxC-Pxf.css` — a rebuild). The Cloudflare Pages mirror
+`https://workhub-colorlib.pages.dev` is still **NXDOMAIN** (re-checked
+2026-10-13d). ⚠️ `apps/deskly` was built from the mirror's tokens before the
+migration, so it follows the mirror, not today's preview host.
 - **Visual design (screenshot + live render):** modern, minimalist,
   professional; warm cream/off-white hero background (`#fdfbf7` feel via
   `from-primary-50 to-white` gradient), **amber/orange** brand accents

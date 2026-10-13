@@ -20,28 +20,28 @@ with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   website template (source: https://colorlib.com/wp/template/neuralflow/,
   category "Tailwind CSS / Astro").
 - **Preview DOM analyzed:** the official preview
-  (`https://preview.colorlib.com/theme/neuralflow/`) returns 404; the
+  (`https://preview.colorlib.com/theme/neuralflow/`) returned 404 at prep time; the
   ColorLib preview portal (`https://preview.colorlib.com/#neuralflow`)
   hosts the demo in an iframe at `https://neuralflow-colorlib.pages.dev/`
-  (HTTP 200, ~89 KB HTML + `/_astro/Base.CBdnxI3u.css` ~70 KB parsed for
+  (HTTP 200 at prep time, ~89 KB HTML + `/_astro/Base.CBdnxI3u.css` ~70 KB parsed for
   tokens). The TEMPLATES.md screenshot
   (`neuralflow-template-1771943830583.jpg`) matches this live demo. Same
   Cloudflare-Pages hosting pattern as Logitrans→Freightly.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://neuralflow-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/neuralflow/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/sentient` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/neuralflow/` answers **HTTP 200**,
+109,802 B `text/html; charset=utf-8` (88,844 B, sha256 `84bc58581230…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/neuralflow/_astro/Base.BNSIsLS6.css` is
+70,731 B sha256 `249c4e8252f8…` and carries all 24 hex tokens recorded below
+(Space Grotesk, JetBrains Mono), so the live build matches the design the
+mirror served (the sheet's Astro hash differs from the mirror's prep-time
+`Base.CBdnxI3u.css` — a rebuild). The Cloudflare Pages mirror
+`https://neuralflow-colorlib.pages.dev` is still **NXDOMAIN** (re-checked
+2026-10-13d). ⚠️ `apps/sentient` was built from the mirror's tokens before
+the migration, so it follows the mirror, not today's preview host.
 - **Section order (1:1, from live demo DOM):**
   1. Navbar: "NeuralFlow" logo (icon + wordmark), links About,
      Capabilities, How It Works, Use Cases, Pricing, Developers,

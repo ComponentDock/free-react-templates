@@ -16,20 +16,20 @@ ButtonLink, Badge, Card, cn).
   (preview.colorlib.com/theme/youthconnect/ is 404 — Astro category, demos
   live on `<slug>-colorlib.pages.dev`).
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://youthconnect-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/youthconnect/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/ignite` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/youthconnect/` answers **HTTP 200**,
+60,605 B `text/html; charset=utf-8` (53,470 B, sha256 `b092e2b31435…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/youthconnect/_astro/Base.Cam9DSxY.css`
+is 64,295 B sha256 `724fb38dde2e…` and carries all 15 hex tokens recorded
+below (Plus Jakarta Sans, Bebas Neue), so the live build matches the design
+the mirror served (the sheet's Astro hash differs from the mirror's
+prep-time `Base.DGxUKMky.css` — a rebuild). The Cloudflare Pages mirror
+`https://youthconnect-colorlib.pages.dev` is still **NXDOMAIN** (re-checked
+2026-10-13d). ⚠️ `apps/ignite` was built from the mirror's tokens before the
+migration, so it follows the mirror, not today's preview host.
 - Screenshot: TEMPLATES.md row `youthconnect-template-1770211452999.jpg`.
 - Stylesheet tokens: `/_astro/Base.DGxUKMky.css` (cyan #06b6d4, navy
   #080716/#0f0d24, orange #f97316, Bebas Neue + Plus Jakarta Sans, pill

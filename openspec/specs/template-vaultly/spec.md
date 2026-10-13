@@ -25,20 +25,21 @@ brand) per the monorepo naming mandate, with the monorepo stack: Vite + React
   `/_astro/Base.DLOtl97a.css`, 63,714 bytes), cross-checked against the
   TEMPLATES.md screenshot (`wealthwise-template-1770211049269.jpg`).
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://wealthwise-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/wealthwise/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/vaultly` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/wealthwise/` answers **HTTP 200**,
+97,232 B `text/html; charset=utf-8` (81,463 B, sha256 `9fe7f8457fbe…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/wealthwise/_astro/Base.D9egupjO.css` is
+63,320 B sha256 `9ebde5e223fa…`; 6 of the 16 hex tokens recorded below are
+present in it and the remaining 10 are absent from both the live sheet and
+the live page — re-check the token table before reusing them (the sheet's
+Astro hash differs from the mirror's prep-time `Base.DLOtl97a.css` — a
+rebuild). The Cloudflare Pages mirror
+`https://wealthwise-colorlib.pages.dev` is still **NXDOMAIN** (re-checked
+2026-10-13d). ⚠️ `apps/vaultly` was built from the mirror's tokens before
+the migration, so it follows the mirror, not today's preview host.
 - **Visual design (screenshot + live demo):** modern, clean fintech landing
   on a **purple + teal** palette. Fixed navbar with backdrop blur; hero with
   a large bold headline, two CTAs, a stats row (Assets Advised, Happy Users,
@@ -364,7 +365,7 @@ and a document title.
       Plus Jakarta Sans display + Inter body + JetBrains Mono, `rounded-lg`
       CTAs, `py-24` rhythm, alternating gray-50/white sections, purple
       gradient CTA band) in `@theme`
-- [ ] Official `preview.colorlib.com/theme/wealthwise/` returns 404; reference
+- [ ] Official `preview.colorlib.com/theme/wealthwise/` returned 404 at prep time; reference
       used = the reachable official Cloudflare Pages demo
       `https://wealthwise-colorlib.pages.dev/` (same design; content matches
       the TEMPLATES.md screenshot) — PR description must state this per

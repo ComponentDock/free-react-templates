@@ -13,22 +13,24 @@ CSS 4 + TypeScript.
 - **Original:** ColorLib "Agentforge" — AI agent platform template
   (source: https://colorlib.com/wp/template/agentforge/).
 - **Demo DOM analyzed:** https://agentforge-colorlib.pages.dev/
-  (HTTP 200; `https://preview.colorlib.com/theme/agentforge/` returns 404 —
-  demo hosted on Cloudflare Pages per the ColorLib preview portal). The
+  (HTTP 200 at prep time; `https://preview.colorlib.com/theme/agentforge/` returned 404 at prep time —
+  demo was hosted on Cloudflare Pages per the ColorLib preview portal). The
   TEMPLATES.md screenshot (`agentforge-template-1771944000058.jpg`) shows a
   dark AI-platform landing with emerald accents; the section-by-section
   structure below is taken from the live DOM + bundled CSS.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://agentforge-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo itself moved onto the ColorLib preview host
-`https://preview.colorlib.com/theme/agentforge/`. It answered **HTTP 200**,
-84,204 B `text/html; charset=utf-8`, in the 2026-10-13b census of moved demos
-(hand-verified for `shieldnet`). ⚠️ `apps/cortex` was built from the mirror's
-tokens before this migration, so the app follows the mirror, not today's
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/agentforge/` answers **HTTP 200**,
+80,888 B `text/html; charset=utf-8` (70,983 B, sha256 `d55de8d6d0f3…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/agentforge/_astro/Base.Doq5tvlT.css` is
+64,808 B sha256 `d40abb483f98…` and carries all 7 hex tokens recorded below
+(Manrope), so the live build matches the design the mirror served. The
+Cloudflare Pages mirror `https://agentforge-colorlib.pages.dev` is still
+**NXDOMAIN** (re-checked 2026-10-13d). ⚠️ `apps/cortex` was built from the
+mirror's tokens before the migration, so it follows the mirror, not today's
 preview host.
 - **Section order (1:1, from the DOM):**
   1. Navbar: logo + Platform, Pricing, Integrations, About, Blog, Contact,

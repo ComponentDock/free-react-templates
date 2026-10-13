@@ -8,22 +8,20 @@
 - **Original:** ColorLib "Creativex 3" — creative agency template
   (source: https://colorlib.com/wp/template/creativex-3/).
 - **Demo DOM analyzed:** https://creativex-colorlib.pages.dev/
-  (HTTP 200; `https://preview.colorlib.com/theme/creativex-3/` returns 404 —
-  demo hosted on Cloudflare Pages per the ColorLib preview portal).
+  (HTTP 200 at prep time; `https://preview.colorlib.com/theme/creativex-3/` returned 404 at prep time —
+  demo was hosted on Cloudflare Pages per the ColorLib preview portal).
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://creativex-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/creativex-3/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. The app for this template has not shipped yet, so the
-migration can still be taken into account when it is built.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/creativex/` answers **HTTP 200**, 67,351
+B `text/html; charset=utf-8` (58,342 B, sha256 `fda6e3ec7a53…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/creativex/_astro/Base.D2FQB9Bi.css` is
+40,578 B sha256 `6c3bf736cb46…` (Inter). The Cloudflare Pages mirror
+`https://creativex-colorlib.pages.dev` is still **NXDOMAIN** (re-checked
+2026-10-13d). The app for this template has not shipped yet, so this live
+path is the authoritative reference to build against.
 - **Visual design (from DOM + Tailwind classes):** creative agency landing
   with **yellow** accents (`yellow-400`), Inter font, "We Create Bold
   Digital Experiences" hero, a "What We Do" services grid (Web Design,

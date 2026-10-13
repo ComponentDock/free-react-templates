@@ -20,22 +20,25 @@ with seeded placeholder images (no assets copied).
   template (source: https://colorlib.com/wp/template/pawpal/).
 - **Live demo DOM analyzed:** `https://pawpal-colorlib.pages.dev/` (HTTP
   200, fetched 2026-08-04). Note: the classic preview portal
-  (`preview.colorlib.com/theme/pawpal/` and variants) returns 404 — the
+  (`preview.colorlib.com/theme/pawpal/` and variants) returned 404 at prep time — the
   ColorLib preview portal's `products.js` manifest maps `#pawpal` to this
   Cloudflare Pages demo, which is the reference. Stylesheet:
   `/_astro/Base.BfUsFLRD.css` (Tailwind-based).
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://pawpal-colorlib.pages.dev/` **no longer resolves** — DNS **NXDOMAIN**
-(`EAI_NONAME`), re-checked 2026-10-13c; all 48 `<slug>-colorlib.pages.dev`
-hosts this family of preps cites are gone. The DOM/CSS evidence below was
-measured from that mirror at prep time and stays the fidelity reference. The
-demo itself moved onto the ColorLib preview host
-`https://preview.colorlib.com/theme/pawpal/`. It answered **HTTP 200**, 84,204
-B `text/html; charset=utf-8`, in the 2026-10-13b census of moved demos
-(hand-verified for `shieldnet`). ⚠️ `apps/pawpal` was built from the mirror's
-tokens before this migration, so the app follows the mirror, not today's
-preview host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/pawpal/` answers **HTTP 200**, 81,509 B
+`text/html; charset=utf-8` (57,048 B, sha256 `d0f2ef7475bf…` after stripping
+the injected print-media `@font-face` block and the Insights beacon); its
+stylesheet
+`https://preview.colorlib.com/theme/pawpal/_astro/Base.DR44RTSu.css` is
+36,398 B sha256 `9d8f8d8ad717…` and carries all 10 hex tokens recorded below
+(Poppins, Lora), so the live build matches the design the mirror served (the
+sheet's Astro hash differs from the mirror's prep-time `Base.BfUsFLRD.css` —
+a rebuild). The Cloudflare Pages mirror `https://pawpal-colorlib.pages.dev`
+is still **NXDOMAIN** (re-checked 2026-10-13d). ⚠️ `apps/pawpal` was built
+from the mirror's tokens before the migration, so it follows the mirror, not
+today's preview host.
 - **Structure (1:1, section order):**
   1. Header — fixed top nav (transparent → solid): Services, About, Gallery,
      Team, Contact + "Book Now" button. (Team/Contact are separate pages on

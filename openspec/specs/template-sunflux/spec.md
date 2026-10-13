@@ -9,18 +9,20 @@ Recreation of the ColorLib **SolarShift** template as a React 19 + Vite + Tailwi
 - **ColorLib page:** https://colorlib.com/wp/template/solarshift/
 - **Preview URL (live):** https://solarshift-colorlib.pages.dev/
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://solarshift-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo itself moved onto the ColorLib preview host
-`https://preview.colorlib.com/theme/solarshift/`. The host answered the
-provider's bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while
-this note was written, so its own reading could not be re-taken this run —
-re-probe it before relying on it. ⚠️ `apps/sunflux` was built from the
-mirror's tokens before this migration, so the app follows the mirror, not
-today's preview host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/solarshift/` answers **HTTP 200**,
+95,843 B `text/html; charset=utf-8` (85,938 B, sha256 `2ffd94b4ab94…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/solarshift/_astro/Base.KUABgugQ.css` is
+59,355 B sha256 `089af0126b89…` and carries all 6 hex tokens recorded below
+(Manrope), so the live build matches the design the mirror served (the
+sheet's Astro hash differs from the mirror's prep-time `Base.KUABgugQ.css` —
+a rebuild). The Cloudflare Pages mirror
+`https://solarshift-colorlib.pages.dev` is still **NXDOMAIN** (re-checked
+2026-10-13d). ⚠️ `apps/sunflux` was built from the mirror's tokens before
+the migration, so it follows the mirror, not today's preview host.
 - **Original stack:** Astro 7 + Tailwind CSS 4.x
 - **Our stack:** React 19 + Vite (latest) + Tailwind CSS 4 + TypeScript (strict)
 

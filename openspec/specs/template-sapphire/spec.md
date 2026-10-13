@@ -25,28 +25,22 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   Astro and Tailwind CSS"). Demo internal brand: "The Grand Azure" (Miami
   Beach resort); the recreation brands itself **Sapphire**.
 - **Preview DOM analyzed:** the official preview
-  (`https://preview.colorlib.com/theme/the-grand-azure/`) returns 404; the
+  (`https://preview.colorlib.com/theme/the-grand-azure/`) returned 404 at prep time; the
   ColorLib preview portal hosts the demo at
-  `https://grandazure-colorlib.pages.dev/` (HTTP 200, ~77 KB HTML +
+  `https://grandazure-colorlib.pages.dev/` (HTTP 200 at prep time, ~77 KB HTML +
   `/_astro/Base.Exk2XG8Q.css` ~66 KB parsed for tokens; the pages.dev slug
   is `grandazure` per `preview.colorlib.com/assets/js/products.js`). Same
   Cloudflare-Pages hosting pattern as Serenite→Sooth / Saasify→Zenith.
   The TEMPLATES.md screenshot (`grandazure-template-1771943856380.jpg`,
   2400×1892, fetched + visually analyzed) matches the live demo.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://grandazure-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/the-grand-azure/` (this prep recorded
-a **404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. The app for this template has not shipped yet, so the
-migration can still be taken into account when it is built.
+⚠️ **Pointer status — re-probed 2026-10-13d (bot wall lifted):** the
+slug-only preview path `https://preview.colorlib.com/theme/the-grand-azure/`
+still answers **HTTP 404** (9 B, `text/plain`) and the Cloudflare Pages
+mirror `https://grandazure-colorlib.pages.dev` is still **NXDOMAIN**
+(`getent hosts`, 2026-10-13d), so this item has no live reference today —
+the mirror's prep-time DOM/CSS evidence recorded above stays the fidelity
+reference. ⚠️ `apps/sapphire` was built from the mirror's tokens.
 - **Visual design (screenshot + live render):** full-screen hero photo of a
   luxury overwater-bungalow resort (wooden deck, pool, loungers —
   Maldives/Bora Bora vibe) under a dark gradient overlay; white + gold serif

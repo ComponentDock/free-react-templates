@@ -18,19 +18,21 @@
   2400×1892): above-the-fold matches 1:1 (announcement bar, LUXE wordmark +
   bag logo, nav, hero photo/headline/CTAs/stats).
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://shopper-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/shopper/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/moda` was built from the mirror's tokens before
-this migration, so the app follows the mirror, not today's preview host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/shopper/` answers **HTTP 200**, 119,475
+B `text/html; charset=utf-8` (109,642 B, sha256 `c4a569e327c0…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/shopper/_astro/Base.ZZmJ7T3G.css` is
+46,604 B sha256 `b5f8576f354d…`; 13 of the 16 hex tokens recorded below are
+present in it and the remaining 3 are absent from both the live sheet and
+the live page — re-check the token table before reusing them (the sheet's
+Astro hash differs from the mirror's prep-time `Base.Dc8UlFQE.css` — a
+rebuild). The Cloudflare Pages mirror `https://shopper-colorlib.pages.dev`
+is still **NXDOMAIN** (re-checked 2026-10-13d). ⚠️ `apps/moda` was built
+from the mirror's tokens before the migration, so it follows the mirror, not
+today's preview host.
 - **Visual design:** clean modern minimalist fashion e-commerce. Fuchsia
   brand accent (`#C026D3`) on white/gray; thin fuchsia announcement bar;
   sticky white header; full-bleed hero photo of a boutique store with

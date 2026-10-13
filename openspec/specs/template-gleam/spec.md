@@ -26,29 +26,29 @@ Tailwind CSS 4 + TypeScript.
   recreation brands itself **Gleam** instead, but keeps the same section
   structure and copy kinds.
 - **Preview DOM analyzed:** the official preview
-  (`https://preview.colorlib.com/theme/sparkleclean/`) returns 404; the
+  (`https://preview.colorlib.com/theme/sparkleclean/`) returned 404 at prep time; the
   ColorLib preview portal loads demos from `<slug>-colorlib.pages.dev`
   (confirmed via `preview.colorlib.com/assets/js/products.js`). Live demo
-  fetched at `https://sparkleclean-colorlib.pages.dev/` (HTTP 200, ~91 KB
+  fetched at `https://sparkleclean-colorlib.pages.dev/` (HTTP 200 at prep time at prep time, ~91 KB
   HTML + `/_astro/Base.qZrVslZM.css` ~60 KB parsed for tokens). The
   TEMPLATES.md screenshot (`sparkleclean-template.jpg`, HTTP 200) matches
   the live demo: light theme, split hero with a teal "Instant Quote"
   calculator card, teal accents, trust icon row, big faint stat numbers.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://sparkleclean-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/sparkleclean/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/gleam` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/sparkleclean/` answers **HTTP 200**,
+102,931 B `text/html; charset=utf-8` (92,138 B, sha256 `ae60bc7af1ad…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/sparkleclean/_astro/Base.CDoKgQ11.css`
+is 59,876 B sha256 `8787f5451481…` and carries all 19 hex tokens recorded
+below (Inter), so the live build matches the design the mirror served (the
+sheet's Astro hash differs from the mirror's prep-time `Base.qZrVslZM.css` —
+a rebuild). The Cloudflare Pages mirror
+`https://sparkleclean-colorlib.pages.dev` is still **NXDOMAIN** (re-checked
+2026-10-13d). ⚠️ `apps/gleam` was built from the mirror's tokens before the
+migration, so it follows the mirror, not today's preview host.
 - **Section order (1:1, from live demo DOM):**
   1. Navbar (sticky, white/95 blur, border-b): "SparkleClean Pro" logo
      (sparkle icon + wordmark), links About, Services, Pricing, Blog,

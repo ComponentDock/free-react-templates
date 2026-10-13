@@ -13,10 +13,10 @@ TypeScript.
 
 - **Original:** ColorLib "Financeflow" — trading education template
   (source: https://colorlib.com/wp/template/financeflow/).
-- **Preview URL:** `https://preview.colorlib.com/theme/financeflow/` returns
-  HTTP 404 (confirmed 2026-08-08 — returns "Not Found", 9 bytes). The live
+- **Preview URL:** `https://preview.colorlib.com/theme/financeflow/` returned
+  HTTP 404 at prep time (confirmed 2026-08-08 — returns "Not Found", 9 bytes). The live
   rendered demo is hosted on Cloudflare Pages:
-  `https://financeflow-colorlib.pages.dev/` (HTTP 200, ~155 KB HTML; Astro
+  `https://financeflow-colorlib.pages.dev/` (HTTP 200 at prep time, ~155 KB HTML; Astro
   stylesheet `/_astro/Base.BbxbqmCU.css` ~56 KB parsed for tokens).
   TEMPLATES.md screenshot (`financeflow-template-1770211224122.jpg`,
   2400×1892) viewed in the browser; the pages.dev demo matches the
@@ -24,20 +24,21 @@ TypeScript.
   highlights, top ticker bar, "Live Portfolio" glass card in the hero,
   "TradeMaster Pro"-style brand in the nav).
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://financeflow-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/financeflow/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/ticker` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/financeflow/` answers **HTTP 200**,
+173,497 B `text/html; charset=utf-8` (158,536 B, sha256 `07753c6c8fcd…`
+after stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/financeflow/_astro/Base.KX0sDdux.css` is
+55,018 B sha256 `e5b4aa3bf2e4…`; 6 of the 20 hex tokens recorded below are
+present in it and the remaining 14 are absent from both the live sheet and
+the live page — re-check the token table before reusing them (the sheet's
+Astro hash differs from the mirror's prep-time `Base.BbxbqmCU.css` — a
+rebuild). The Cloudflare Pages mirror
+`https://financeflow-colorlib.pages.dev` is still **NXDOMAIN** (re-checked
+2026-10-13d). ⚠️ `apps/ticker` was built from the mirror's tokens before the
+migration, so it follows the mirror, not today's preview host.
 - **Visual design (from screenshot + live demo):** premium dark-mode trading
   education landing page. `<html lang="en" class="dark">` — **dark is the
   DEFAULT** (light mode available via a theme toggle that persists to

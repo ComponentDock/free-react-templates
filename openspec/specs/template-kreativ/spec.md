@@ -16,25 +16,25 @@ name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   TEMPLATES.md has **THREE copies** of this item (lines 138, 1459, 2907 —
   mark ALL of them `[x]` when done).
 - **Preview URL:** https://creativex-colorlib.pages.dev/
-  (HTTP 200, 58 KB DOM, fetched 2026-08-08). NOTE: the usual
+  (HTTP 200 at prep time, 58 KB DOM, fetched 2026-08-08). NOTE: the usual
   `preview.colorlib.com/theme/creativex-3/` URL 404s; `products.js`
   (`preview.colorlib.com/assets/js/products.js`) maps the slug to
   `creativex-colorlib.pages.dev/`. The live DOM is the primary reference.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://creativex-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/creativex-3/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/kreativ` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/creativex/` answers **HTTP 200**, 67,351
+B `text/html; charset=utf-8` (58,342 B, sha256 `fda6e3ec7a53…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/creativex/_astro/Base.D2FQB9Bi.css` is
+40,578 B sha256 `6c3bf736cb46…` and carries all 17 hex tokens recorded below
+(Inter), so the live build matches the design the mirror served (the sheet's
+Astro hash differs from the mirror's prep-time `Base.BjbRLE8f.css` — a
+rebuild). The Cloudflare Pages mirror `https://creativex-colorlib.pages.dev`
+is still **NXDOMAIN** (re-checked 2026-10-13d). ⚠️ `apps/kreativ` was built
+from the mirror's tokens before the migration, so it follows the mirror, not
+today's preview host.
 - **Screenshot:** `creativex-template-1770211073725.jpg` (2400×1892, verified
   via browser vision). Matches the live DOM: white header with pink "P" logo
   icon + "Pixel Studio" wordmark, centered nav (Work, Services, About,

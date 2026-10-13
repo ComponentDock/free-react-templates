@@ -22,9 +22,9 @@ CSS 4 + TypeScript.
   3.0, author Aigars Silkalns). The demo's internal brand is "SwiftMove" —
   the recreation brands itself **Movere**.
 - **Demo DOM analyzed (verified 2026-08-09):**
-  `https://swiftmove-colorlib.pages.dev/` (HTTP 200, ~97 KB HTML +
+  `https://swiftmove-colorlib.pages.dev/` (HTTP 200 at prep time, ~97 KB HTML +
   `/_astro/Base.Ce97irTr.css` ~65 KB parsed for tokens; the official
-  `https://preview.colorlib.com/theme/swiftmove/` returns 404 — the preview
+  `https://preview.colorlib.com/theme/swiftmove/` returned 404 at prep time — the preview
   portal loads Astro-category demos from `<slug>-colorlib.pages.dev` (the
   LIVE PREVIEW link on the Colorlib page resolves to
   `https://preview.colorlib.com/#swiftmove`, whose iframe src is
@@ -34,20 +34,21 @@ CSS 4 + TypeScript.
   matches the live demo: split hero, blue/white palette with orange CTA,
   stats row, moving-crew photo.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://swiftmove-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/swiftmove/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/movere` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/swiftmove/` answers **HTTP 200**,
+101,172 B `text/html; charset=utf-8` (97,171 B, sha256 `2e8379fe9fcb…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/swiftmove/_astro/Base.AIHddLy-.css` is
+65,082 B sha256 `864160f581ec…`; 25 of the 27 hex tokens recorded below are
+present in it (Outfit) and the remaining 2 are absent from both the live
+sheet and the live page — re-check the token table before reusing them (the
+sheet's Astro hash differs from the mirror's prep-time `Base.Ce97irTr.css` —
+a rebuild). The Cloudflare Pages mirror
+`https://swiftmove-colorlib.pages.dev` is still **NXDOMAIN** (re-checked
+2026-10-13d). ⚠️ `apps/movere` was built from the mirror's tokens before the
+migration, so it follows the mirror, not today's preview host.
 - **Visual design (screenshot + live render):** clean, modern, corporate
   yet approachable; white hero with a soft blue gradient (from-primary-50 to
   white), **blue primary** (#2563eb) + **orange accent** (#f97316) two-tone

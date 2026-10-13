@@ -13,26 +13,25 @@ CSS 4 + TypeScript.
 - **Original:** ColorLib "Apiforge" — API platform template
   (source: https://colorlib.com/wp/template/apiforge/).
 - **Preview URL analyzed:** https://apiforge-colorlib.pages.dev/
-  (HTTP 200; `https://preview.colorlib.com/theme/apiforge/` returns 404 —
-  demo hosted on Cloudflare Pages per the ColorLib preview portal). The
+  (HTTP 200 at prep time; `https://preview.colorlib.com/theme/apiforge/` returned 404 at prep time —
+  demo was hosted on Cloudflare Pages per the ColorLib preview portal). The
   TEMPLATES.md screenshot (`apiforge-template-1771944059634.jpg`) is the
   visual reference; the live DOM + Tailwind classes below are the design
   source of truth.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://apiforge-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/apiforge/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/endpoint` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/apiforge/` answers **HTTP 200**, 73,032
+B `text/html; charset=utf-8` (69,031 B, sha256 `d53f79d6e882…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/apiforge/_astro/Base.mMnpPx9A.css` is
+69,535 B sha256 `f103be96fd37…` and carries all 16 hex tokens recorded below
+(Outfit), so the live build matches the design the mirror served. The
+Cloudflare Pages mirror `https://apiforge-colorlib.pages.dev` is still
+**NXDOMAIN** (re-checked 2026-10-13d). ⚠️ `apps/endpoint` was built from the
+mirror's tokens before the migration, so it follows the mirror, not today's
+preview host.
 - **Section order (1:1, from the live demo DOM):**
   1. Header (`<header>` sticky, white/80 backdrop-blur, dark variant
      gray-950/80): logo wordmark, nav links Products / Pricing / About /

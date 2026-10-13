@@ -12,23 +12,22 @@
   from `<slug>-colorlib.pages.dev` (verified in
   `preview.colorlib.com/assets/js/products.js`: `hopehand` →
   `hopehand-colorlib.pages.dev/`). Live demo used as the DOM reference:
-  https://hopehand-colorlib.pages.dev/ (HTTP 200, ~66 KB, Astro build with
+  https://hopehand-colorlib.pages.dev/ (HTTP 200 at prep time at prep time at prep time, ~66 KB, Astro build with
   Tailwind utility markup + compiled `/_astro/Base.DxjIFQs1.css`).
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://hopehand-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/hopehand/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/uplift` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/hopehand/` answers **HTTP 200**, 76,687
+B `text/html; charset=utf-8` (66,782 B, sha256 `a64e15424257…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/hopehand/_astro/Base.i0ON5Ovl.css` is
+64,542 B sha256 `fd1f2aa6481d…` and carries all 7 hex tokens recorded below
+(Manrope), so the live build matches the design the mirror served. The
+Cloudflare Pages mirror `https://hopehand-colorlib.pages.dev` is still
+**NXDOMAIN** (re-checked 2026-10-13d). ⚠️ `apps/uplift` was built from the
+mirror's tokens before the migration, so it follows the mirror, not today's
+preview host.
 - **TEMPLATES.md screenshot:** `hopehand-template-1771943776003.jpg`
   (2400×1892) — reviewed via browser vision.
 - **NEW name:** Uplift → `apps/uplift`, package

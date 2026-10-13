@@ -13,26 +13,24 @@ CSS 4 + TypeScript.
 - **Original:** ColorLib "Ai Summit" — AI conference template
   (source: https://colorlib.com/wp/template/ai-summit/).
 - **Demo DOM analyzed:** https://aisummit-colorlib.pages.dev/
-  (HTTP 200; `https://preview.colorlib.com/theme/ai-summit/` returns 404 —
-  demo hosted on Cloudflare Pages per the ColorLib preview portal). The
+  (HTTP 200 at prep time; `https://preview.colorlib.com/theme/ai-summit/` returned 404 at prep time —
+  demo was hosted on Cloudflare Pages per the ColorLib preview portal). The
   TEMPLATES.md screenshot (`aisummit-template-1770211095695.jpg`) is the
   visual reference; the section-by-section structure below is taken from the
   live DOM + bundled CSS.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://aisummit-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/ai-summit/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/keynote` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/aisummit/` answers **HTTP 200**, 110,070
+B `text/html; charset=utf-8` (110,070 B, sha256 `88ad882723a5…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/aisummit/_astro/index.Dbq_dtys.css` is
+44,737 B sha256 `ea44ccd13c7c…` (Space Grotesk, JetBrains Mono, Outfit). The
+Cloudflare Pages mirror `https://aisummit-colorlib.pages.dev` is still
+**NXDOMAIN** (re-checked 2026-10-13d). ⚠️ `apps/keynote` was built from the
+mirror's tokens before the migration, so it follows the mirror, not today's
+preview host.
 - **Section order (1:1, from the DOM):**
   1. Navbar: Speakers, Tracks, Schedule, Tickets, Venue + "Get Your Ticket"
      CTA.

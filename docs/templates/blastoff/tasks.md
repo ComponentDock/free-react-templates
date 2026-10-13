@@ -10,22 +10,25 @@
 - **Original:** ColorLib "Launchpad" — startup / dev-platform (CI-CD,
   deploy, analytics) SaaS landing template (category: Startup per the
   ColorLib preview portal).
-- **Demo DOM analyzed:** https://launchpad-colorlib.pages.dev/ (HTTP 200,
+- **Demo DOM analyzed:** https://launchpad-colorlib.pages.dev/ (HTTP 200 at prep time,
   ~91 KB HTML + `/_astro/Base.Dq6-tIhe.css` ~68 KB parsed for tokens; the
-  official `https://preview.colorlib.com/theme/launchpad/` returns 404 —
-  demo hosted on Cloudflare Pages per the ColorLib preview portal).
+  official `https://preview.colorlib.com/theme/launchpad/` returned 404 at prep time —
+  demo was hosted on Cloudflare Pages per the ColorLib preview portal).
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://launchpad-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo itself moved onto the ColorLib preview host
-`https://preview.colorlib.com/theme/launchpad/`. It answered **HTTP 200**,
-84,204 B `text/html; charset=utf-8`, in the 2026-10-13b census of moved demos
-(hand-verified for `shieldnet`). ⚠️ `apps/blastoff` was built from the
-mirror's tokens before this migration, so the app follows the mirror, not
-today's preview host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/launchpad/` answers **HTTP 200**,
+101,019 B `text/html; charset=utf-8` (91,114 B, sha256 `af5acf384793…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/launchpad/_astro/Base.Cum6yTEv.css` is
+68,035 B sha256 `1f78e6cdee39…` and carries all 20 hex tokens recorded below
+(Manrope), so the live build matches the design the mirror served (the
+sheet's Astro hash differs from the mirror's prep-time `Base.Dq6-tIhe.css` —
+a rebuild). The Cloudflare Pages mirror
+`https://launchpad-colorlib.pages.dev` is still **NXDOMAIN** (re-checked
+2026-10-13d). ⚠️ `apps/blastoff` was built from the mirror's tokens before
+the migration, so it follows the mirror, not today's preview host.
 - **Visual design (screenshot `launchpad-template-1771943657968.jpg`):**
   the ORIGINAL design — sticky white nav with rocket logo, center links
   (About, Features, How it works, Pricing, Testimonials, FAQ, Integrations,

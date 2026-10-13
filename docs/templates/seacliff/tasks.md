@@ -13,9 +13,9 @@
   3.0, Aigars Silkalns). Demo's internal brand is "The Grand Azure"; the
   recreation brands itself **Seacliff**.
 - **Demo DOM analyzed (verified 2026-08-09):**
-  `https://grandazure-colorlib.pages.dev/` (HTTP 200, ~77 KB HTML +
+  `https://grandazure-colorlib.pages.dev/` (HTTP 200 at prep time, ~77 KB HTML +
   `/_astro/Base.Exk2XG8Q.css` ~66 KB parsed for tokens; the official
-  `https://preview.colorlib.com/theme/the-grand-azure/` returns 404 — Astro
+  `https://preview.colorlib.com/theme/the-grand-azure/` returned 404 at prep time — Astro
   demos are hosted on Cloudflare Pages, confirmed via
   `preview.colorlib.com/assets/js/products.js`: slug `grandazure` →
   `https://grandazure-colorlib.pages.dev/`, same pattern as
@@ -23,20 +23,13 @@
   TEMPLATES.md screenshot (`grandazure-template-1771943856380.jpg`,
   2400×1892, viewed in browser) matches the live demo.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://grandazure-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/the-grand-azure/` (this prep recorded
-a **404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/seacliff` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+⚠️ **Pointer status — re-probed 2026-10-13d (bot wall lifted):** the
+slug-only preview path `https://preview.colorlib.com/theme/the-grand-azure/`
+still answers **HTTP 404** (9 B, `text/plain`) and the Cloudflare Pages
+mirror `https://grandazure-colorlib.pages.dev` is still **NXDOMAIN**
+(`getent hosts`, 2026-10-13d), so this item has no live reference today —
+the mirror's prep-time DOM/CSS evidence recorded above stays the fidelity
+reference. ⚠️ `apps/seacliff` was built from the mirror's tokens.
 - **Visual design (screenshot + live render):** luxury, tropical,
   sophisticated 5-star resort aesthetic. Full-viewport hero photo of an
   oceanfront pool resort with dark navy gradient overlay

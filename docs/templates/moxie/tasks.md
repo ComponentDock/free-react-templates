@@ -8,26 +8,27 @@
 - **ColorLib item:** "Creativex 3" (TEMPLATES.md line 138 under the creative
   section; mark `[x]` when done — whole-line replace).
 - **Source URL:** https://colorlib.com/wp/template/creativex-3/
-- **Preview URL:** https://creativex-colorlib.pages.dev/ (HTTP 200, 58.1 KB
+- **Preview URL:** https://creativex-colorlib.pages.dev/ (HTTP 200 at prep time, 58.1 KB
   DOM — live, analyzed 2026-08-08). The classic preview
   `https://preview.colorlib.com/theme/creativex-3/` is **404** — the template
   migrated to a Cloudflare Pages mirror (products.js maps `creativex` →
   `creativex-colorlib.pages.dev`). The pages.dev site is the canonical live
   reference.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://creativex-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/creativex-3/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. The app for this template has not shipped yet, so the
-migration can still be taken into account when it is built.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/creativex/` answers **HTTP 200**, 67,351
+B `text/html; charset=utf-8` (58,342 B, sha256 `fda6e3ec7a53…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/creativex/_astro/Base.D2FQB9Bi.css` is
+40,578 B sha256 `6c3bf736cb46…` and carries all 17 hex tokens recorded below
+(Inter), so the live build matches the design the mirror served (the sheet's
+Astro hash differs from the mirror's prep-time `Base.BjbRLE8f.css` — a
+rebuild). The Cloudflare Pages mirror `https://creativex-colorlib.pages.dev`
+is still **NXDOMAIN** (re-checked 2026-10-13d). The app for this template
+has not shipped yet, so this live path is the authoritative reference to
+build against.
 - **Preview CSS:** `https://creativex-colorlib.pages.dev/_astro/Base.BjbRLE8f.css`
   (41 KB, Tailwind v4; custom `.btn-primary`, `.card`, `.text-gradient`).
 

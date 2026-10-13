@@ -13,22 +13,24 @@ CSS 4 + TypeScript.
 - **Original:** ColorLib "Buildcraft" — construction company template
   (source: https://colorlib.com/wp/template/buildcraft/).
 - **Demo DOM analyzed:** https://buildcraft-colorlib.pages.dev/
-  (HTTP 200; `https://preview.colorlib.com/theme/buildcraft/` returns 404 —
-  demo hosted on Cloudflare Pages per the ColorLib preview portal). The
+  (HTTP 200 at prep time; `https://preview.colorlib.com/theme/buildcraft/` returned 404 at prep time —
+  demo was hosted on Cloudflare Pages per the ColorLib preview portal). The
   TEMPLATES.md screenshot (`buildcraft-template-1771943678540.jpg`) is the
   visual reference; the design below is reconstructed from the live DOM
   structure and the `_astro/Base.*.css` stylesheet (62 KB parsed for tokens).
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://buildcraft-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo itself moved onto the ColorLib preview host
-`https://preview.colorlib.com/theme/buildcraft/`. It answered **HTTP 200**,
-84,204 B `text/html; charset=utf-8`, in the 2026-10-13b census of moved demos
-(hand-verified for `shieldnet`). ⚠️ `apps/parapet` was built from the mirror's
-tokens before this migration, so the app follows the mirror, not today's
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/buildcraft/` answers **HTTP 200**,
+90,728 B `text/html; charset=utf-8` (86,727 B, sha256 `b43c9d330831…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/buildcraft/_astro/Base.BXLcODiI.css` is
+61,883 B sha256 `ed1a848cf75c…` and carries all 11 hex tokens recorded below
+(Outfit), so the live build matches the design the mirror served. The
+Cloudflare Pages mirror `https://buildcraft-colorlib.pages.dev` is still
+**NXDOMAIN** (re-checked 2026-10-13d). ⚠️ `apps/parapet` was built from the
+mirror's tokens before the migration, so it follows the mirror, not today's
 preview host.
 - **Section order (1:1):** Navbar (sticky, blur; links Services, Projects,
   Process, About, Pricing, Blog, Contact; "Get a Quote" button, dark toggle)

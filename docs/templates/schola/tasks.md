@@ -9,22 +9,21 @@
 - **Original:** ColorLib "Academix" — education template
   (source: https://colorlib.com/wp/template/academix/).
 - **Demo DOM analyzed:** https://academix-colorlib.pages.dev/
-  (HTTP 200; `https://preview.colorlib.com/theme/academix/` returns 404 —
-  demo hosted on Cloudflare Pages per the ColorLib preview portal).
+  (HTTP 200 at prep time; `https://preview.colorlib.com/theme/academix/` returned 404 at prep time —
+  demo was hosted on Cloudflare Pages per the ColorLib preview portal).
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://academix-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/academix/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/schola` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/academix/` answers **HTTP 200**, 124,316
+B `text/html; charset=utf-8` (118,600 B, sha256 `a41fd198a4de…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/academix/_astro/Base.C0cRSdWV.css` is
+60,932 B sha256 `d689871f3179…` and carries all 2 hex tokens recorded below,
+so the live build matches the design the mirror served. The Cloudflare Pages
+mirror `https://academix-colorlib.pages.dev` is still **NXDOMAIN**
+(re-checked 2026-10-13d). ⚠️ `apps/schola` was built from the mirror's
+tokens before the migration, so it follows the mirror, not today's preview
 host.
 - **Visual design (from DOM + Tailwind classes):** modern education landing
   — light gray neutrals with dark-mode support, DM Sans + Space Grotesk

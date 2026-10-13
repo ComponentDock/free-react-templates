@@ -9,22 +9,26 @@
   147, 1270, 2916; mark ALL `[x]` when done).
 - **Source URL:** https://colorlib.com/wp/template/hopefoundation/
 - **Preview URL:** https://hopefoundation-colorlib.pages.dev/
-  (HTTP 200, ~45 KB DOM — live, analyzed 2026-08-08). NOTE:
-  `preview.colorlib.com/theme/hopefoundation/` returns 404 — the ColorLib
+  (HTTP 200 at prep time, ~45 KB DOM — live, analyzed 2026-08-08). NOTE:
+  `preview.colorlib.com/theme/hopefoundation/` returned 404 at prep time — the ColorLib
   preview portal maps this slug to `hopefoundation-colorlib.pages.dev/`. Do
   not redo this lookup.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://hopefoundation-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo itself moved onto the ColorLib preview host
-`https://preview.colorlib.com/theme/hopefoundation/`. It answered **HTTP
-200**, 84,204 B `text/html; charset=utf-8`, in the 2026-10-13b census of moved
-demos (hand-verified for `shieldnet`). ⚠️ `apps/congregate` was built from the
-mirror's tokens before this migration, so the app follows the mirror, not
-today's preview host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/hopefoundation/` answers **HTTP 200**,
+49,631 B `text/html; charset=utf-8` (45,630 B, sha256 `a1da310273ba…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/hopefoundation/_astro/Base.CWHfKze-.css`
+is 45,227 B sha256 `fb595f78cd33…` and carries all 16 hex tokens recorded
+below (Outfit), so the live build matches the design the mirror served (the
+sheet's Astro hash differs from the mirror's prep-time `Base.9L0KyljF.css` —
+a rebuild). The Cloudflare Pages mirror
+`https://hopefoundation-colorlib.pages.dev` is still **NXDOMAIN**
+(re-checked 2026-10-13d). ⚠️ `apps/congregate` was built from the mirror's
+tokens before the migration, so it follows the mirror, not today's preview
+host.
 - **Preview CSS:** `https://hopefoundation-colorlib.pages.dev/_astro/Base.9L0KyljF.css`
   (Tailwind v4 output; tokens extracted below).
 

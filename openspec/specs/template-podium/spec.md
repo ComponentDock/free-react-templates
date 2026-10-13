@@ -12,29 +12,28 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 - **Original:** ColorLib "Eventor" — tech conference/event template
   (source: https://colorlib.com/wp/template/eventor/).
-- **Preview URL:** `https://preview.colorlib.com/theme/eventor/` returns
-  HTTP 404 (confirmed 2026-08-08). The live rendered demo is hosted on
-  Cloudflare Pages: `https://eventor-colorlib.pages.dev/` (HTTP 200, ~102 KB
+- **Preview URL:** `https://preview.colorlib.com/theme/eventor/` returned
+  HTTP 404 at prep time (confirmed 2026-08-08). The live rendered demo is hosted on
+  Cloudflare Pages: `https://eventor-colorlib.pages.dev/` (HTTP 200 at prep time, ~102 KB
   HTML; Astro stylesheet `/_astro/index@_@astro.DkeXIFjA.css` ~42 KB parsed
   for tokens). TEMPLATES.md screenshot
   (`eventor-template-1770211156837.jpg`, 2400×1892) viewed in the browser;
   the pages.dev demo matches the screenshot 1:1 (same aurora hero gradient,
   violet→rose CTAs, countdown, layout).
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://eventor-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/eventor/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/podium` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/eventor/` answers **HTTP 200**, 106,807
+B `text/html; charset=utf-8` (102,714 B, sha256 `50def223f8e8…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/eventor/_astro/index.K91MFDzv.css` is
+42,072 B sha256 `32e32344af82…` and carries all 20 hex tokens recorded below
+(Space Grotesk), so the live build matches the design the mirror served. The
+Cloudflare Pages mirror `https://eventor-colorlib.pages.dev` is still
+**NXDOMAIN** (re-checked 2026-10-13d). ⚠️ `apps/podium` was built from the
+mirror's tokens before the migration, so it follows the mirror, not today's
+preview host.
 - **Visual design (from screenshot + live demo):** dark-themed tech
   conference landing page. Hero = deep near-black (`bg-gray-950`) with an
   "aurora" mesh: `bg-gradient-to-br from-primary-950 via-gray-950

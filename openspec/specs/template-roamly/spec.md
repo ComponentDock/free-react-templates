@@ -28,20 +28,20 @@ CSS 4 + TypeScript.
   same hero photo with rowboat, same headline with gradient accent word, same
   two CTAs, same stats row, same floating search widget).
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://wanderlust-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/wanderlust/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/roamly` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/wanderlust/` answers **HTTP 200**,
+77,428 B `text/html; charset=utf-8` (66,635 B, sha256 `2750f1821cf5…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/wanderlust/_astro/Base.BnAJDKUQ.css` is
+44,541 B sha256 `bd760dd9fcb6…` and carries all 8 hex tokens recorded below
+(Inter), so the live build matches the design the mirror served (the sheet's
+Astro hash differs from the mirror's prep-time `Base.CY7cTYTJ.css` — a
+rebuild). The Cloudflare Pages mirror
+`https://wanderlust-colorlib.pages.dev` is still **NXDOMAIN** (re-checked
+2026-10-13d). ⚠️ `apps/roamly` was built from the mirror's tokens before the
+migration, so it follows the mirror, not today's preview host.
 - **Visual design (screenshot + live demo):** modern, clean travel-agency
   landing. Teal (`#0d9488`) brand accent on white/gray; sticky white
   translucent header (layered-mountain logo mark + bold wordmark, centered
@@ -456,7 +456,7 @@ features.
       tokens from this spec (teal `#0d9488` primary, yellow `#eab308`
       gradient accent, gray scale, Inter 300–800, `rounded-lg` CTAs,
       `aspect-[4/3]` destination images) in `@theme`
-- [ ] Official `preview.colorlib.com/theme/wanderlust/` returns 404; reference
+- [ ] Official `preview.colorlib.com/theme/wanderlust/` returned 404 at prep time; reference
       used = the reachable official Cloudflare Pages demo
       `https://wanderlust-colorlib.pages.dev/` (same design; content matches
       the TEMPLATES.md screenshot above-the-fold) — PR description must state

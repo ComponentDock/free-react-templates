@@ -9,25 +9,25 @@
   2445, 2908; mark ALL `[x]` when done).
 - **Source URL:** https://colorlib.com/wp/template/elena-voss/
 - **Preview URL:** https://elenavoss-colorlib.pages.dev/
-  (HTTP 200, ~69 KB DOM — live, analyzed 2026-08-08). NOTE:
-  `preview.colorlib.com/theme/elena-voss/` returns 404 — the ColorLib preview
+  (HTTP 200 at prep time, ~69 KB DOM — live, analyzed 2026-08-08). NOTE:
+  `preview.colorlib.com/theme/elena-voss/` returned 404 at prep time — the ColorLib preview
   portal maps this slug to `elenavoss-colorlib.pages.dev/`. Do not redo this
   lookup.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://elenavoss-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/elena-voss/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/shutter` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/elenavoss/` answers **HTTP 200**, 77,449
+B `text/html; charset=utf-8` (69,896 B, sha256 `f8fcdf12e06a…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/elenavoss/_astro/Base.UfbsfXhY.css` is
+63,624 B sha256 `852833330729…` and carries all 24 hex tokens recorded below
+(DM Sans, Fraunces), so the live build matches the design the mirror served
+(the sheet's Astro hash differs from the mirror's prep-time
+`Base.s_bAeOkz.css` — a rebuild). The Cloudflare Pages mirror
+`https://elenavoss-colorlib.pages.dev` is still **NXDOMAIN** (re-checked
+2026-10-13d). ⚠️ `apps/shutter` was built from the mirror's tokens before
+the migration, so it follows the mirror, not today's preview host.
 - **Preview CSS:** `https://elenavoss-colorlib.pages.dev/_astro/Base.s_bAeOkz.css`
   (Tailwind v4 output; tokens extracted below).
 

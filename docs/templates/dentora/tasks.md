@@ -9,26 +9,26 @@
 - **Original:** ColorLib "Brightsmile" — dental clinic template
   (source: https://colorlib.com/wp/template/brightsmile/).
 - **Preview DOM analyzed:** `https://preview.colorlib.com/theme/brightsmile/`
-  returns 404; the live demo is https://brightsmile-colorlib.pages.dev/
-  (HTTP 200, Astro + Tailwind, `_astro/Base.*.css` 62 KB parsed for tokens).
+  returned 404 at prep time; the live demo is https://brightsmile-colorlib.pages.dev/
+  (HTTP 200 at prep time, Astro + Tailwind, `_astro/Base.*.css` 62 KB parsed for tokens).
   Screenshot `brightsmile-template-1771943701965.jpg` viewed in browser
   (2400×1892): confirms teal/seafoam primary, white navbar, centered hero,
   pill buttons, stats row.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://brightsmile-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/brightsmile/` (this prep recorded a
-**404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/dentora` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/brightsmile/` answers **HTTP 200**,
+98,660 B `text/html; charset=utf-8` (90,915 B, sha256 `52f279e7a284…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/brightsmile/_astro/Base.C5WGEIoF.css` is
+62,334 B sha256 `eecacaeac5e9…`; 6 of the 7 hex tokens recorded below are
+present in it (Plus Jakarta Sans) and the remaining 1 are absent from both
+the live sheet and the live page — re-check the token table before reusing
+them. The Cloudflare Pages mirror `https://brightsmile-colorlib.pages.dev`
+is still **NXDOMAIN** (re-checked 2026-10-13d). ⚠️ `apps/dentora` was built
+from the mirror's tokens before the migration, so it follows the mirror, not
+today's preview host.
 - **Design tokens:**
   - Brand teal scale (Tailwind teal): 50 `#f0fdfa`, 100 `#ccfbf1`, 400
     `#2dd4bf`, 500 `#14b8a6`, 600 `#0d9488` (buttons), 700 `#0f766e`,

@@ -25,7 +25,7 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   this recreation covers the **home page (index.html)** as a single-page
   landing per repo convention.
 - **Preview DOM analyzed:** the official preview
-  (`https://preview.colorlib.com/theme/yummy-2/`) returns "Not Found" (404);
+  (`https://preview.colorlib.com/theme/yummy-2/`) returned "Not Found" (404) at prep time;
   the ColorLib preview portal hub link is
   `https://preview.colorlib.com/#yummy-2` (JS hub, no direct demo URL);
   `https://yummy-2-colorlib.pages.dev/` → NXDOMAIN (no pages.dev demo for
@@ -39,8 +39,21 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   design tokens below are extracted from that live demo + its `css/style.css`
   (real values, not approximations), cross-checked against the TEMPLATES.md
   screenshot (`yummy-free-template.jpg`, AVIF 1200×946, converted and
-  visually analyzed). If the official preview becomes reachable, re-verify
-  quickly but expect no surprises — the screenshot and mirror match 1:1.
+  visually analyzed). The official preview is reachable as of the re-probe below
+  (2026-10-13d) — the screenshot and mirror match 1:1.
+
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo IS reachable on the ColorLib preview host —
+`https://preview.colorlib.com/theme/yummy/` answers **HTTP 200**, 21,709 B
+`text/html; charset=utf-8` (19,422 B, sha256 `2ab681eb2005…` after stripping
+the injected print-media `@font-face` block and the Insights beacon), with
+its own stylesheet `https://preview.colorlib.com/theme/yummy/css/style.css`
+at 42,720 B sha256 `d08c771dd457…` (7 of the 8 hex tokens recorded below are
+present in it). This supersedes the "no official demo — the screenshot + the
+ThemeWagon mirror are the reference" finding — the live demo is now the
+authoritative DOM/CSS reference. ⚠️ `apps/umami` shipped before this
+re-probe, so it follows the screenshot/mirror evidence, not today's live
+page.
 - **Visual design (screenshot + demo):** clean, minimal, white food magazine
   aesthetic. Centered serif-italic wordmark logo ("Yummy" + small "FOOD
   BLOG"-style subtitle, cooking-pot icon — screenshot; the demo uses

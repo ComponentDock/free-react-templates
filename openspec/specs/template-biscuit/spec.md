@@ -13,22 +13,25 @@ React 19 + Tailwind CSS 4 + TypeScript.
 - **Original:** ColorLib "PawPal" — pet grooming, daycare & boarding
   (source: https://colorlib.com/wp/template/pawpal/; live site title "Paws &
   Play").
-- **Demo DOM analyzed:** `https://preview.colorlib.com/theme/pawpal/` returns
-  404, so the ColorLib preview-gallery deployment was used instead:
-  **https://pawpal-colorlib.pages.dev/** (HTTP 200, full rendered DOM +
+- **Demo DOM analyzed:** `https://preview.colorlib.com/theme/pawpal/` returned
+  404 at prep time, so the ColorLib preview-gallery deployment was used instead:
+  **https://pawpal-colorlib.pages.dev/** (HTTP 200 at prep time, full rendered DOM +
   `/_astro/Base.*.css` (36.5KB, Tailwind-based) extracted). The TEMPLATES.md
   screenshot (`pawpal-template-1770211334322.jpg`) is the visual reference.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://pawpal-colorlib.pages.dev/` **no longer resolves** — DNS **NXDOMAIN**
-(`EAI_NONAME`), re-checked 2026-10-13c; all 48 `<slug>-colorlib.pages.dev`
-hosts this family of preps cites are gone. The DOM/CSS evidence below was
-measured from that mirror at prep time and stays the fidelity reference. The
-demo itself moved onto the ColorLib preview host
-`https://preview.colorlib.com/theme/pawpal/`. It answered **HTTP 200**, 84,204
-B `text/html; charset=utf-8`, in the 2026-10-13b census of moved demos
-(hand-verified for `shieldnet`). The app for this template has not shipped
-yet, so the migration can still be taken into account when it is built.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/pawpal/` answers **HTTP 200**, 81,509 B
+`text/html; charset=utf-8` (57,048 B, sha256 `d0f2ef7475bf…` after stripping
+the injected print-media `@font-face` block and the Insights beacon); its
+stylesheet
+`https://preview.colorlib.com/theme/pawpal/_astro/Base.DR44RTSu.css` is
+36,398 B sha256 `9d8f8d8ad717…` and carries all 4 hex tokens recorded below
+(Poppins, Lora), so the live build matches the design the mirror served. The
+Cloudflare Pages mirror `https://pawpal-colorlib.pages.dev` is still
+**NXDOMAIN** (re-checked 2026-10-13d). The app for this template has not
+shipped yet, so this live path is the authoritative reference to build
+against.
 - **Section order (1:1):** Navbar (Services, About, Gallery, Team, Contact +
   Book Now) → Hero ("Where Every Pet Gets the Royal Treatment" + Book an
   Appointment / View Services + stats: 10K+ Happy Pets, 8+ Years Experience,

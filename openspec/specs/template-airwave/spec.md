@@ -23,29 +23,22 @@ with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   template (category "Podcast"; built with Astro + Tailwind CSS). Demo
   internal brand: "The Hustle Hour"; the recreation brands itself **Airwave**.
 - **Preview DOM analyzed:** the official preview
-  (`https://preview.colorlib.com/theme/the-hustle-hour/`) returns 404; the
+  (`https://preview.colorlib.com/theme/the-hustle-hour/`) returned 404 at prep time; the
   ColorLib preview portal hosts the demo at
-  `https://hustlehour-colorlib.pages.dev/` (HTTP 200, ~79 KB HTML +
+  `https://hustlehour-colorlib.pages.dev/` (HTTP 200 at prep time, ~79 KB HTML +
   `/_astro/Base.fzo6El3r.css` ~66 KB parsed for tokens; the pages.dev slug is
   `hustlehour` per `preview.colorlib.com/assets/js/products.js`). Same
   Cloudflare-Pages hosting pattern as Serenite→Sooth / The Grand Azure→Sapphire.
   The TEMPLATES.md screenshot (`hustlehour-template-1771943880509.jpg`,
   2400×1892, fetched + visually analyzed) matches the live demo.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://hustlehour-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/the-hustle-hour/` (this prep recorded
-a **404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/airwave` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
-host.
+⚠️ **Pointer status — re-probed 2026-10-13d (bot wall lifted):** the
+slug-only preview path `https://preview.colorlib.com/theme/the-hustle-hour/`
+still answers **HTTP 404** (9 B, `text/plain`) and the Cloudflare Pages
+mirror `https://hustlehour-colorlib.pages.dev` is still **NXDOMAIN**
+(`getent hosts`, 2026-10-13d), so this item has no live reference today —
+the mirror's prep-time DOM/CSS evidence recorded above stays the fidelity
+reference. ⚠️ `apps/airwave` was built from the mirror's tokens.
 - **Visual design (screenshot + live render):** bold dark-first podcast
   landing. Near-black (`#030712`) hero with a small red pill badge ("New
   Episode Every Tuesday"), huge white headline where the second line

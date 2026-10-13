@@ -9,24 +9,25 @@
   142, 1296, 2911; mark ALL `[x]` when done).
 - **Source URL:** https://colorlib.com/wp/template/faithcommunity/
 - **Preview URL:** https://faithcommunity-colorlib.pages.dev/
-  (HTTP 200, ~50 KB DOM — live, analyzed 2026-08-08). NOTE:
-  `preview.colorlib.com/theme/faithcommunity/` returns 404 — the ColorLib
+  (HTTP 200 at prep time, ~50 KB DOM — live, analyzed 2026-08-08). NOTE:
+  `preview.colorlib.com/theme/faithcommunity/` returned 404 at prep time — the ColorLib
   preview portal maps this slug to `faithcommunity-colorlib.pages.dev/`.
   Do not redo this lookup.
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://faithcommunity-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo family now answers from the ColorLib preview
-host `https://preview.colorlib.com/theme/faithcommunity/` (this prep recorded
-a **404** on that path at prep time — the move onto the preview host happened
-after it, so treat the path as unverified). The host answered the provider's
-bot wall (**403**, 17 B `text/plain`, Cloudflare error 1106) while this note
-was written, so its own reading could not be re-taken this run — re-probe it
-before relying on it. ⚠️ `apps/sanctuary` was built from the mirror's tokens
-before this migration, so the app follows the mirror, not today's preview
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/faithcommunity/` answers **HTTP 200**,
+67,898 B `text/html; charset=utf-8` (51,077 B, sha256 `d4c243282247…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/faithcommunity/_astro/Base.DMbVHkoj.css`
+is 39,269 B sha256 `9be1764a71c2…` and carries all 19 hex tokens recorded
+below (Inter, Lora), so the live build matches the design the mirror served
+(the sheet's Astro hash differs from the mirror's prep-time
+`Base.E9qOMqaj.css` — a rebuild). The Cloudflare Pages mirror
+`https://faithcommunity-colorlib.pages.dev` is still **NXDOMAIN**
+(re-checked 2026-10-13d). ⚠️ `apps/sanctuary` was built from the mirror's
+tokens before the migration, so it follows the mirror, not today's preview
 host.
 - **Preview CSS:** `https://faithcommunity-colorlib.pages.dev/_astro/Base.E9qOMqaj.css`
   (Tailwind v4 output; tokens extracted below).

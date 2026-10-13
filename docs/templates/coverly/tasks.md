@@ -11,23 +11,27 @@
 
 - **Original:** ColorLib "Shieldguard" — insurance company landing Astro
   template.
-- **Demo DOM analyzed:** https://shieldguard-colorlib.pages.dev/ (HTTP 200,
+- **Demo DOM analyzed:** https://shieldguard-colorlib.pages.dev/ (HTTP 200 at prep time,
   ~79 KB HTML + `/_astro/Base.BZ-9KC9t.css` ~63 KB parsed for tokens; the
-  official `https://preview.colorlib.com/theme/shieldguard/` returns 404 —
-  demo hosted on Cloudflare Pages per the ColorLib preview portal, same
+  official `https://preview.colorlib.com/theme/shieldguard/` returned 404 at prep time —
+  demo was hosted on Cloudflare Pages per the ColorLib preview portal, same
   pattern as Dealflow/Freightly).
 
-⚠️ **Pointer status (re-verified 2026-10-13c):** the Cloudflare Pages mirror
-`https://shieldguard-colorlib.pages.dev/` **no longer resolves** — DNS
-**NXDOMAIN** (`EAI_NONAME`), re-checked 2026-10-13c; all 48
-`<slug>-colorlib.pages.dev` hosts this family of preps cites are gone. The
-DOM/CSS evidence below was measured from that mirror at prep time and stays
-the fidelity reference. The demo itself moved onto the ColorLib preview host
-`https://preview.colorlib.com/theme/shieldguard/`. It answered **HTTP 200**,
-84,204 B `text/html; charset=utf-8`, in the 2026-10-13b census of moved demos
-(hand-verified for `shieldnet`). ⚠️ `apps/coverly` was built from the mirror's
-tokens before this migration, so the app follows the mirror, not today's
-preview host.
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo is served by the ColorLib preview host —
+`https://preview.colorlib.com/theme/shieldguard/` answers **HTTP 200**,
+89,631 B `text/html; charset=utf-8` (79,726 B, sha256 `063408831720…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon); its stylesheet
+`https://preview.colorlib.com/theme/shieldguard/_astro/Base.BP2GuE7t.css` is
+63,346 B sha256 `f8f3cd60bb24…`; 21 of the 22 hex tokens recorded below are
+present in it (Manrope) and the remaining 1 are absent from both the live
+sheet and the live page — re-check the token table before reusing them (the
+sheet's Astro hash differs from the mirror's prep-time `Base.BZ-9KC9t.css` —
+a rebuild). The Cloudflare Pages mirror
+`https://shieldguard-colorlib.pages.dev` is still **NXDOMAIN** (re-checked
+2026-10-13d). ⚠️ `apps/coverly` was built from the mirror's tokens before
+the migration, so it follows the mirror, not today's preview host.
 - **Visual design (screenshot `shieldguard-template-1771943902281.jpg`):**
   clean, airy insurance landing — white-to-ice-blue gradient hero (subtle,
   not heavy), corporate blue (#2563eb) primary CTAs and stats, vibrant green

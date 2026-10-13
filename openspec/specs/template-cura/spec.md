@@ -26,18 +26,31 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   Unsplash; built with Astro 6 + Tailwind CSS 4.x). Demo internal brand:
   "MediCare / HEALTHCARE CENTER"; the recreation brands itself **Cura**.
 - **Preview DOM analyzed:** the official preview
-  (`https://preview.colorlib.com/theme/vitality/`) returns 404; the
+  (`https://preview.colorlib.com/theme/vitality/`) returned 404 at prep time; the
   ColorLib preview portal hub link is `https://preview.colorlib.com/#vitality`
   (JS hub, does not expose a direct demo URL for this slug).
   `https://vitality-colorlib.pages.dev/` → NXDOMAIN (the pages.dev demo does
   not exist for this slug; verified against
   `preview.colorlib.com/assets/js/products.js` which no longer lists it).
   The Wayback Machine has no archived snapshot of the preview. **The preview
-  is UNREACHABLE — per docs/replication.md the TEMPLATES.md screenshot is
+  was UNREACHABLE at prep time — per docs/replication.md the TEMPLATES.md screenshot is
   the sole reference** (`vitality-template-1770211473540.jpg`, 2400×1892,
   fetched + visually analyzed in three bands) **plus the ColorLib product
   page's official feature list** (paraphrased below), which is authoritative
   for the section inventory.
+
+✅ **Pointer status — live reference re-probed 2026-10-13d (bot wall
+lifted):** the demo IS reachable on the ColorLib preview host —
+`https://preview.colorlib.com/theme/vitality/` answers **HTTP 200**, 76,733
+B `text/html; charset=utf-8` (64,404 B, sha256 `6a757fa7aca1…` after
+stripping the injected print-media `@font-face` block and the Insights
+beacon), with its own stylesheet
+`https://preview.colorlib.com/theme/vitality/_astro/Base.BvdG4YB3.css` at
+35,243 B sha256 `ac60e1608b41…` (10 of the 20 hex tokens recorded below are
+present in it). This supersedes the "preview UNREACHABLE — the screenshot is
+the sole reference" finding — the live demo is now the authoritative DOM/CSS
+reference. ⚠️ `apps/cura` shipped before this re-probe, so it follows the
+screenshot/mirror evidence, not today's live page.
 - **Visual design (screenshot):** clean, trustworthy medical landing in
   white + blues + a pink/red emergency accent + green success accent. Dark
   blue top info bar; white sticky navbar; light hero (near-white with a
